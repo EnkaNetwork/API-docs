@@ -1,15 +1,71 @@
 # Enka.Network - API
 
-## PropMap - Definitions
+## Getting Started
+
+You can fetch JSON-data by doing request via URL - `https://enka.network/u/[UID]/__data.json` <br />
+For example https://enka.network/u/700378769/__data.json
+
+## Data Structure Info
+
+| Name | Description |
+| :--- | :---------- |
+| [playerInfo](#playerinfo) | Profile Info |
+| [avatarInfoList](#avatarinfolist) | List of detailed information for every character from showcase |
+
+### playerInfo
+
+| Name | Description |
+| :--- | :--------- | 
+| nickname | Player Nickname |
+| signature | Profile Signature |
+| worldLevel | Player World Level |
+| namecardId | Profile Namecard ID |
+| finishAchievementNum | Number of Completed Achievements |
+| towerFloorIndex | Abyss Floor |
+| towerLevelIndex | Abyss Floor's Level |
+| [showAvatarInfoList](#showavatarinfolist) | List of Character IDs and Levels |
+| showNameCardIdList | List of Namecard IDs |
+| profilePicture.avatarID | Character ID of Profile Picture |
+
+#### showAvatarInfoList
+
+| Name | Description |
+| :--- | :--------- | 
+| avatarId | Character ID |
+| level | Character Level |
+
+### avatarInfoList
+
+| Name | Description |
+| :--- | :---------- |
+| avatarID | Character ID |
+| [propMap](#propmap) | Character Info Properties List |
+| fightPropMap | Map of Character's Combat Properties  `{id: value}`. [Definitions for IDs](#fightprop)|
+| skillDepotId | Charater Skill Set ID. [Additional Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"id"`|
+| inherentProudSkillList | List of Unlocked Skill Ids. [Additional Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` | 
+
+### propMap
+
+| Name | Description |
+| :--- | :--------- |
+| type | ID of Property Type, Check the [Definitions for IDs](#prop) |
+| ival | Ignore it |
+| val  | Value of Property |
+
+## Definitions
+
+### Prop
+
 | Type | Description |
-| :-: | :- |
+| :--: | :---------- |
 | 1001 | XP |
 | 1002 | Ascension | 
 | 4001 | Level |
 
-## FightPropMap - Definitons
+### FightProp
+
 | Type | Description |
-| :-: | :- |
+| :--: | :---------- |
 | 1 | Base HP |
 | 4 | Base ATK |
 | 7 | Base DEF |
