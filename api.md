@@ -1,15 +1,46 @@
 # Enka.Network - API
 
-## PropMap - Definitions
+## Getting Started
+
+You can fetch JSON-data by doing request via URL - `https://enka.network/u/[UID]/__data.json` <br />
+For example https://enka.network/u/700378769/__data.json
+
+## Data Structure Info
+
+| Name | Description |
+| :--- | :---------- |
+| [playerInfo](#playerinfo) | Profile Info |
+| [avatarInfoList](#avatarinfolist) | List of detailed information for every character from showcase |
+
+### playerInfo
+
+| Name | Desciption |
+| :--- | :--------- | 
+| nickname | Player Nickname |
+| signature | Profile Signature |
+| worldLevel | Player World Level |
+| namecardId | Profile Namecard ID |
+| finishAchievementNum | Number of Completed Achievments |
+| towerFloorIndex | Abyss Floor |
+| towerLevelIndex | Abyss Floor's Level |
+| showAvatarInfoList | List of Charaters ID and Level |
+| showNameCardIdList | List of Namecards ID |
+| profilePicture.avatarID | Charater ID of Profile Picture |
+
+## Definitions
+
+### PropMap
+
 | Type | Description |
-| :-: | :- |
+| :--: | :---------- |
 | 1001 | XP |
 | 1002 | Ascension | 
 | 4001 | Level |
 
-## FightPropMap - Definitons
+### FightPropMap
+
 | Type | Description |
-| :-: | :- |
+| :--: | :---------- |
 | 1 | Base HP |
 | 4 | Base ATK |
 | 7 | Base DEF |
