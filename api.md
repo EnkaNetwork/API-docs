@@ -75,14 +75,14 @@ For any additional info, check the [Characters Data](https://github.com/Dimbreat
 | affixMap | Weapon Refinement Level `[0-4]` |
 
 
-### reliquary
+#### reliquary
 
 | Name | Description |
 | :--- | :---------- |
 | level | Artifact Level `[1-21]` |
 | mainPropId | Artifact Main Stat ID <br /> [MainProps Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/ReliquaryMainPropExcelConfigData.json) |
 
-### flat
+#### flat
 
 For any additional info about names, descriptions and etc, check the [TextMap Data](https://github.com/Dimbreath/GenshinData/tree/master/TextMap), includes any languages supported by game.
 
