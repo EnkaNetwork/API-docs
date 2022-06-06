@@ -14,22 +14,93 @@ For example https://enka.network/u/700378769/__data.json
 
 ### playerInfo
 
-| Name | Desciption |
+For any additional info, check the [Characters Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarExcelConfigData.json), includes IDs and other stuff.
+
+| Name | Description |
 | :--- | :--------- | 
 | nickname | Player Nickname |
 | signature | Profile Signature |
 | worldLevel | Player World Level |
 | namecardId | Profile Namecard ID |
-| finishAchievementNum | Number of Completed Achievments |
+| finishAchievementNum | Number of Completed Achievements |
 | towerFloorIndex | Abyss Floor |
 | towerLevelIndex | Abyss Floor's Level |
-| showAvatarInfoList | List of Charaters ID and Level |
-| showNameCardIdList | List of Namecards ID |
-| profilePicture.avatarID | Charater ID of Profile Picture |
+| [showAvatarInfoList](#showavatarinfolist-avatarinfo) | List of Character IDs and Levels |
+| showNameCardIdList | List of Namecard IDs |
+| profilePicture.avatarID | Character ID of Profile Picture |
+
+#### showAvatarInfoList - AvatarInfo
+
+| Name | Description |
+| :--- | :--------- | 
+| avatarId | Character ID |
+| level | Character Level |
+
+### avatarInfoList
+
+| Name | Description |
+| :--- | :---------- |
+| avatarID | Character ID |
+| [propMap](#propmap) | Character Info Properties List |
+| fightPropMap -> `{id: value}` |  Map of Character's Combat Properties. <br />Check the [Definitions for IDs](#fightprop)|
+| skillDepotId | Character Skill Set ID <br />[Skills Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) ->     `"id"`|
+| inherentProudSkillList | List of Unlocked Skill Ids <br />[Skills Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` | 
+| skillLevelMap -> `{skill_id: level}`| Map of Skill Levels <br /> [Skills Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` |
+| [equipList](#equiplist-equip) | List of Equipments: Weapon, Ariftacts |
+| fetterInfo.expLevel  | Character Friendship Level |
+
+#### propMap
+
+| Name | Description |
+| :--- | :--------- |
+| type | ID of Property Type, Check the [Definitions for IDs](#prop) |
+| ival | Ignore it |
+| val  | Value of Property |
+
+#### equipList - Equip
+
+| Name | Description |
+| :--- | :--------- |
+| itemId | Equipment ID <br /> [Equipments Data](https://raw.githubusercontent.com/Dimbreath/GenshinData/master/ExcelBinOutput/GadgetExcelConfigData.json) -> `"id"` |
+| [weapon](#weapon) `[Weapon Only]` | Weapon Base Info  |
+| [reliquary](#reliquary) `[Artifact Only]` | Artifact Base Info  |
+| [flat](#flat) | Detailed Info of Equipment |
+
+#### weapon
+
+| Name | Description |
+| :--- | :---------- |
+| level | Weapon Level |
+| promoteLevel | Weapon Ascension Level |
+| affixMap | Weapon Refinement Level `[0-4]` |
+
+
+#### reliquary
+
+| Name | Description |
+| :--- | :---------- |
+| level | Artifact Level `[1-21]` |
+| mainPropId | Artifact Main Stat ID <br /> [MainProps Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/ReliquaryMainPropExcelConfigData.json) |
+
+#### flat
+
+For any additional info about names, descriptions and etc, check the [TextMap Data](https://github.com/Dimbreath/GenshinData/tree/master/TextMap), includes any languages supported by game.
+
+| Name | Description |
+| :--- | :---------- |
+| nameTextHashMap | Hash for Equipment Name |
+| setNameTextHashMap `[Artifact Only]`| Hash for Artifact Set Name |
+| rankLevel | Rarity Level of Equipment |
+| weaponStats `[Weapon Only]`| Weapon Stats |
+| reliquaryMainstat `[Artifact Only]` | Artifact Main Stat |
+| reliquarySubstats `[Artifact Only]` | Arifact Substats |
+| itemType | Equipment Type: Weapon or Artifact|
+| icon | Equipment Icon Name |
+| [equipType](#equiptype) `[Artifact Only]` | Artifact Type |
 
 ## Definitions
 
-### PropMap
+### Prop
 
 | Type | Description |
 | :--: | :---------- |
@@ -37,7 +108,7 @@ For example https://enka.network/u/700378769/__data.json
 | 1002 | Ascension | 
 | 4001 | Level |
 
-### FightPropMap
+### FightProp
 
 | Type | Description |
 | :--: | :---------- |
@@ -75,3 +146,5 @@ For example https://enka.network/u/700378769/__data.json
 | 2000 | Max HP |
 | 2001 | ATK |
 | 2002 | DEF |
+
+### EquipType
