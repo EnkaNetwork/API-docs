@@ -91,7 +91,6 @@ For any additional info about names, descriptions and etc, check the [TextMap Da
 | nameTextHashMap | Hash for Equipment Name |
 | setNameTextHashMap `[Artifact Only]`| Hash for Artifact Set Name |
 | rankLevel | Rarity Level of Equipment |
-| weaponStats `[Weapon Only]`| Weapon Stats |
 | [reliquaryMainstat](#reliquarymainstat-reliquarysubstats-weaponstats) `[Artifact Only]` | Artifact Main Stat |
 | [reliquarySubstats](#reliquarymainstat-reliquarysubstats-weaponstats) `[Artifact Only]` | List of Artifact Substats |
 | [weaponStats](#reliquarymainstat-reliquarysubstats-weaponstats) `[Weapon Only]`| List of Weapon Stat: Base ATK, Substat |
