@@ -7,14 +7,18 @@ For example https://enka.network/u/700378769/__data.json
 
 ## Data Structure Info
 
-| Name | Description |
+| Name | Description
 | :--- | :---------- |
 | [playerInfo](#playerinfo) | Profile Info |
 | [avatarInfoList](#avatarinfolist) | List of detailed information for every character from showcase |
 
 ### playerInfo
 
+<<<<<<< HEAD
 For any additional info, check the [Characters Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarExcelConfigData.json), includes IDs and other stuff.
+=======
+For any additional info, check the [Characters Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarExcelConfigData.json) incuding IDs and other stuff.
+>>>>>>> 1ba0ef77a3de712e407310a05facb9f39253fda5
 
 | Name | Description |
 | :--- | :--------- | 
@@ -84,7 +88,11 @@ For any additional info, check the [Characters Data](https://github.com/Dimbreat
 
 ### flat
 
+<<<<<<< HEAD
 For any additional info about names, descriptions and etc, check the [TextMap Data](https://github.com/Dimbreath/GenshinData/tree/master/TextMap), includes any languages supported by game.
+=======
+For any additional info about names, descriptions and etc, check the [TextMap Data](https://github.com/Dimbreath/GenshinData/tree/master/TextMap) including any languages supported by game.
+>>>>>>> 1ba0ef77a3de712e407310a05facb9f39253fda5
 
 | Name | Description |
 | :--- | :---------- |
