@@ -7,12 +7,14 @@ For example https://enka.network/u/700378769/__data.json
 
 ## Data Structure Info
 
-| Name | Description |
+| Name | Description
 | :--- | :---------- |
 | [playerInfo](#playerinfo) | Profile Info |
 | [avatarInfoList](#avatarinfolist) | List of detailed information for every character from showcase |
 
 ### playerInfo
+
+For any additional info, check the [Characters Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarExcelConfigData.json) incuding IDs and other stuff.
 
 | Name | Description |
 | :--- | :--------- | 
@@ -23,11 +25,11 @@ For example https://enka.network/u/700378769/__data.json
 | finishAchievementNum | Number of Completed Achievements |
 | towerFloorIndex | Abyss Floor |
 | towerLevelIndex | Abyss Floor's Level |
-| [showAvatarInfoList](#showavatarinfolist) | List of Character IDs and Levels |
+| [showAvatarInfoList](#showavatarinfolist-avatarinfo) | List of Character IDs and Levels |
 | showNameCardIdList | List of Namecard IDs |
 | profilePicture.avatarID | Character ID of Profile Picture |
 
-#### showAvatarInfoList
+#### showAvatarInfoList - AvatarInfo
 
 | Name | Description |
 | :--- | :--------- | 
@@ -40,17 +42,61 @@ For example https://enka.network/u/700378769/__data.json
 | :--- | :---------- |
 | avatarID | Character ID |
 | [propMap](#propmap) | Character Info Properties List |
-| fightPropMap | Map of Character's Combat Properties  `{id: value}`. [Definitions for IDs](#fightprop)|
-| skillDepotId | Charater Skill Set ID. [Additional Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"id"`|
-| inherentProudSkillList | List of Unlocked Skill Ids. [Additional Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` | 
+| fightPropMap -> `{id: value}` |  Map of Character's Combat Properties. <br />Check the [Definitions for IDs](#fightprop)|
+| skillDepotId | Character Skill Set ID <br />[Skills Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) ->     `"id"`|
+| inherentProudSkillList | List of Unlocked Skill Ids <br />[Skills Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` | 
+| skillLevelMap -> `{skill_id: level}`| Map of Skill Levels <br /> [Skills Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` |
+| [equipList](#equiplist-equip) | List of Equipments: Weapon, Ariftacts |
+| fetterInfo.expLevel  | Character Friendship Level |
 
-### propMap
+#### propMap
 
 | Name | Description |
 | :--- | :--------- |
 | type | ID of Property Type, Check the [Definitions for IDs](#prop) |
 | ival | Ignore it |
 | val  | Value of Property |
+
+#### equipList - Equip
+
+| Name | Description |
+| :--- | :--------- |
+| itemId | Equipment ID <br /> [Equipments Data](https://raw.githubusercontent.com/Dimbreath/GenshinData/master/ExcelBinOutput/GadgetExcelConfigData.json) -> `"id"` |
+| [weapon](#weapon) `[Weapon Only]` | Weapon Base Info  |
+| [reliquary](#reliquary) `[Artifact Only]` | Artifact Base Info  |
+| [flat](#flat) | Detailed Info of Equipment |
+
+#### weapon
+
+| Name | Description |
+| :--- | :---------- |
+| level | Weapon Level |
+| promoteLevel | Weapon Ascension Level |
+| affixMap | Weapon Refinement Level `[0-4]` |
+
+
+### reliquary
+
+| Name | Description |
+| :--- | :---------- |
+| level | Artifact Level `[1-21]` |
+| mainPropId | Artifact Main Stat ID <br /> [MainProps Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/ReliquaryMainPropExcelConfigData.json) |
+
+### flat
+
+For any additional info about names, descriptions and etc, check the [TextMap Data](https://github.com/Dimbreath/GenshinData/tree/master/TextMap) including any languages supported by game.
+
+| Name | Description |
+| :--- | :---------- |
+| nameTextHashMap | Hash for Equipment Name |
+| setNameTextHashMap `[Artifact Only]`| Hash for Artifact Set Name |
+| rankLevel | Rarity Level of Equipment |
+| weaponStats `[Weapon Only]`| Weapon Stats |
+| reliquaryMainstat `[Artifact Only]` | Artifact Main Stat |
+| reliquarySubstats `[Artifact Only]` | Arifact Substats |
+| itemType | Equipment Type: Weapon or Artifact|
+| icon | Equipment Icon Name |
+| [equipType](#equiptype) `[Artifact Only]` | Artifact Type |
 
 ## Definitions
 
@@ -100,3 +146,5 @@ For example https://enka.network/u/700378769/__data.json
 | 2000 | Max HP |
 | 2001 | ATK |
 | 2002 | DEF |
+
+### EquipType
