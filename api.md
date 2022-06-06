@@ -7,7 +7,7 @@ For example https://enka.network/u/700378769/__data.json
 
 ## Data Structure Info
 
-| Name | Description
+| Name | Description |
 | :--- | :---------- |
 | [playerInfo](#playerinfo) | Profile Info |
 | [avatarInfoList](#avatarinfolist) | List of detailed information for every character from showcase |
