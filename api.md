@@ -14,22 +14,47 @@ For example https://enka.network/u/700378769/__data.json
 
 ### playerInfo
 
-| Name | Desciption |
+| Name | Description |
 | :--- | :--------- | 
 | nickname | Player Nickname |
 | signature | Profile Signature |
 | worldLevel | Player World Level |
 | namecardId | Profile Namecard ID |
-| finishAchievementNum | Number of Completed Achievments |
+| finishAchievementNum | Number of Completed Achievements |
 | towerFloorIndex | Abyss Floor |
 | towerLevelIndex | Abyss Floor's Level |
-| showAvatarInfoList | List of Charaters ID and Level |
-| showNameCardIdList | List of Namecards ID |
-| profilePicture.avatarID | Charater ID of Profile Picture |
+| [showAvatarInfoList](#showavatarinfolist) | List of Character IDs and Levels |
+| showNameCardIdList | List of Namecard IDs |
+| profilePicture.avatarID | Character ID of Profile Picture |
+
+#### showAvatarInfoList
+
+| Name | Description |
+| :--- | :--------- | 
+| avatarId | Character ID |
+| level | Character Level |
+
+### avatarInfoList
+
+| Name | Description |
+| :--- | :---------- |
+| avatarID | Character ID |
+| [propMap](#propmap) | Character Info Properties List |
+| fightPropMap | Map of Character's Combat Properties  `{id: value}`. [Definitions for IDs](#fightprop)|
+| skillDepotId | Charater Skill Set ID. [Additional Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"id"`|
+| inherentProudSkillList | List of Unlocked Skill Ids. [Additional Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` | 
+
+### propMap
+
+| Name | Description |
+| :--- | :--------- |
+| type | ID of Property Type, Check the [Definitions for IDs](#prop) |
+| ival | Ignore it |
+| val  | Value of Property |
 
 ## Definitions
 
-### PropMap
+### Prop
 
 | Type | Description |
 | :--: | :---------- |
@@ -37,7 +62,7 @@ For example https://enka.network/u/700378769/__data.json
 | 1002 | Ascension | 
 | 4001 | Level |
 
-### FightPropMap
+### FightProp
 
 | Type | Description |
 | :--: | :---------- |
