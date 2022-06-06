@@ -25,18 +25,18 @@ For any additional info, check the [Characters Data](https://github.com/Dimbreat
 | finishAchievementNum | Number of Completed Achievements |
 | towerFloorIndex | Abyss Floor |
 | towerLevelIndex | Abyss Floor's Level |
-| [showAvatarInfoList](#showavatarinfolist-avatarinfo) | List of Character IDs and Levels |
+| [showAvatarInfoList](#showavatarinfolist-showavatarinfo) | List of Character IDs and Levels |
 | showNameCardIdList | List of Namecard IDs |
 | profilePicture.avatarID | Character ID of Profile Picture |
 
-#### showAvatarInfoList - AvatarInfo
+#### showAvatarInfoList - ShowAvatarInfo
 
 | Name | Description |
 | :--- | :--------- | 
 | avatarId | Character ID |
 | level | Character Level |
 
-### avatarInfoList
+### avatarInfoList - AvatarInfo
 
 | Name | Description |
 | :--- | :---------- |
@@ -92,11 +92,20 @@ For any additional info about names, descriptions and etc, check the [TextMap Da
 | setNameTextHashMap `[Artifact Only]`| Hash for Artifact Set Name |
 | rankLevel | Rarity Level of Equipment |
 | weaponStats `[Weapon Only]`| Weapon Stats |
-| reliquaryMainstat `[Artifact Only]` | Artifact Main Stat |
-| reliquarySubstats `[Artifact Only]` | Arifact Substats |
-| itemType | Equipment Type: Weapon or Artifact|
+| [reliquaryMainstat](#reliquarymainstat-reliquarysubstats-weaponstats) `[Artifact Only]` | Artifact Main Stat |
+| [reliquarySubstats](#reliquarymainstat-reliquarysubstats-weaponstats) `[Artifact Only]` | List of Artifact Substats |
+| [weaponStats](#reliquarymainstat-reliquarysubstats-weaponstats) `[Weapon Only]`| List of Weapon Stat: Base ATK, Substat |
+| [itemType](#itemtype) | Equipment Type: Weapon or Artifact|
 | icon | Equipment Icon Name |
 | [equipType](#equiptype) `[Artifact Only]` | Artifact Type |
+
+#### reliquaryMainstat, reliquarySubstats, weaponStats
+
+| Name | Description |
+| :--- | :---------- |
+| mainPropId / appendPropID | Equipment Append Property Name. Check the [Definitions for Names](#appendprop)|
+| propValue | Property Value |
+
 
 ## Definitions
 
@@ -147,4 +156,43 @@ For any additional info about names, descriptions and etc, check the [TextMap Da
 | 2001 | ATK |
 | 2002 | DEF |
 
+### ItemType
+
+| Name | Description |
+| :--- | :---------- |
+| ITEM_WEAPON | Weapon |
+| ITEM_RELIQUARY | Artifact |
+
 ### EquipType
+
+| Name | Description |
+| :--- | :---------- |
+| EQUIP_BRACER | Flower |
+| EQUIP_NECKLACE | Feather |
+| EQUIP_SHOES | Sands | 
+| EQUIP_RING | Goblet |
+| EQUIP_DRESS | Circlet |
+
+### AppendProp
+
+| Name | Description |
+| :--- | :---------- |
+| FIGHT_PROP_BASE_ATTACK `[Weapon]` | Base ATK |
+| FIGHT_PROP_HP | Flat HP |
+| FIGHT_PROP_ATTACK | Flat ATK |
+| FIGHT_PROP_DEFENSE | Flat DEF |
+| FIGHT_PROP_HP_PERCENT | HP% |
+| FIGHT_PROP_ATTACK_PERCENT | ATK% |
+| FIGHT_PROP_DEFENSE_PERCENT | DEF% | 
+| FIGHT_PROP_CRITICAL | Crit RATE |
+| FIGHT_PROP_CRITICAL_HURT | Crit DMG |
+| FIGHT_PROP_CHARGE_EFFICIENCY | Energy Recharge |
+| FIGHT_PROP_HEAL_ADD | Healing Bonus |
+| FIGHT_PROP_ELEMENT_MASTERY | Elemental Mastery |
+| FIGHT_PROP_PHYSICAL_ADD_HURT | Physical DMG Bonus |
+| FIGHT_PROP_FIRE_ADD_HURT | Pyro DMG Bonus |
+| FIGHT_PROP_ELEC_ADD_HURT | Electro DMG Bonus |
+| FIGHT_PROP_WATER_ADD_HURT | Hydro DMG Bonus |
+| FIGHT_PROP_WIND_ADD_HURT | Anemo DMG Bonus |
+| FIGHT_PROP_ICE_ADD_HURT |  Cryo DMG Bonus |
+| FIGHT_PROP_ROCK_ADD_HURT | Geo DMG Bonus |
