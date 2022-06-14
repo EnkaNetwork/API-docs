@@ -1,5 +1,12 @@
 # Enka.Network - API
 
+## Table of Content
+
+- [Getting Started](#getting-started)
+- [Data Structure Info](#data-structure-info)
+- [Definitions](#definitions)
+- [Icons and Images](#icons-and-images)
+
 ## Getting Started
 
 You can fetch JSON-data by doing request via URL - `https://enka.network/u/[UID]/__data.json` <br />
@@ -14,7 +21,8 @@ For example https://enka.network/u/700378769/__data.json
 
 ### playerInfo
 
-For any additional info, check the [Characters Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarExcelConfigData.json), includes IDs and other stuff.
+For basic data of characters by ID, go to [store/characters.json](/store/characters.json).  <br />
+For any additional info, check the [Characters Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarExcelConfigData.json).
 
 | Name | Description |
 | :--- | :--------- | 
@@ -24,19 +32,19 @@ For any additional info, check the [Characters Data](https://github.com/Dimbreat
 | namecardId | Profile Namecard ID |
 | finishAchievementNum | Number of Completed Achievements |
 | towerFloorIndex | Abyss Floor |
-| towerLevelIndex | Abyss Floor's Level |
-| [showAvatarInfoList](#showavatarinfolist-showavatarinfo) | List of Character IDs and Levels |
+| towerLevelIndex | Abyss Floor's Chamber |
+| [showAvatarInfoList](#showavatarinfolist) | List of Character IDs and Levels |
 | showNameCardIdList | List of Namecard IDs |
 | profilePicture.avatarID | Character ID of Profile Picture |
 
-#### showAvatarInfoList - ShowAvatarInfo
+#### showAvatarInfoList
 
 | Name | Description |
 | :--- | :--------- | 
 | avatarId | Character ID |
 | level | Character Level |
 
-### avatarInfoList - AvatarInfo
+### avatarInfoList
 
 | Name | Description |
 | :--- | :---------- |
@@ -46,7 +54,7 @@ For any additional info, check the [Characters Data](https://github.com/Dimbreat
 | skillDepotId | Character Skill Set ID <br />[Skills Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) ->     `"id"`|
 | inherentProudSkillList | List of Unlocked Skill Ids <br />[Skills Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` | 
 | skillLevelMap -> `{skill_id: level}`| Map of Skill Levels <br /> [Skills Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` |
-| [equipList](#equiplist-equip) | List of Equipments: Weapon, Ariftacts |
+| [equipList](#equiplist) | List of Equipments: Weapon, Ariftacts |
 | fetterInfo.expLevel  | Character Friendship Level |
 
 #### propMap
@@ -57,16 +65,18 @@ For any additional info, check the [Characters Data](https://github.com/Dimbreat
 | ival | Ignore it |
 | val  | Value of Property |
 
-#### equipList - Equip
+#### equipList
 
 | Name | Description |
 | :--- | :--------- |
-| itemId | Equipment ID <br /> [Equipments Data](https://raw.githubusercontent.com/Dimbreath/GenshinData/master/ExcelBinOutput/GadgetExcelConfigData.json) -> `"id"` |
+| itemId | Equipment ID <br /> [Artifacts Data](https://raw.githubusercontent.com/Dimbreath/GenshinData/master/ExcelBinOutput/ReliquaryExcelConfigData.json) -> `"id"` <br /> [Weapons Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/WeaponExcelConfigData.json) -> `"id"` |
 | [weapon](#weapon) `[Weapon Only]` | Weapon Base Info  |
 | [reliquary](#reliquary) `[Artifact Only]` | Artifact Base Info  |
 | [flat](#flat) | Detailed Info of Equipment |
 
 #### weapon
+
+For any additional info about weapons, check the [Weapons Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/WeaponExcelConfigData.json)
 
 | Name | Description |
 | :--- | :---------- |
@@ -77,6 +87,8 @@ For any additional info, check the [Characters Data](https://github.com/Dimbreat
 
 #### reliquary
 
+For any additional info about artifacts, check the [Artifacts Data](https://raw.githubusercontent.com/Dimbreath/GenshinData/master/ExcelBinOutput/ReliquaryExcelConfigData.json)
+
 | Name | Description |
 | :--- | :---------- |
 | level | Artifact Level `[1-21]` |
@@ -84,7 +96,7 @@ For any additional info, check the [Characters Data](https://github.com/Dimbreat
 
 #### flat
 
-For any additional info about names, descriptions and etc, check the [TextMap Data](https://github.com/Dimbreath/GenshinData/tree/master/TextMap), includes any languages supported by game.
+For any additional info about names, descriptions and etc, check the [TextMap Data](https://github.com/Dimbreath/GenshinData/tree/master/TextMap), includes any language supported by game.
 
 | Name | Description |
 | :--- | :---------- |
@@ -94,8 +106,8 @@ For any additional info about names, descriptions and etc, check the [TextMap Da
 | [reliquaryMainstat](#reliquarymainstat-reliquarysubstats-weaponstats) `[Artifact Only]` | Artifact Main Stat |
 | [reliquarySubstats](#reliquarymainstat-reliquarysubstats-weaponstats) `[Artifact Only]` | List of Artifact Substats |
 | [weaponStats](#reliquarymainstat-reliquarysubstats-weaponstats) `[Weapon Only]`| List of Weapon Stat: Base ATK, Substat |
-| [itemType](#itemtype) | Equipment Type: Weapon or Artifact|
-| icon | Equipment Icon Name |
+| [itemType](#itemtype) | Equipment Type: Weapon or Artifact |
+| icon | Equipment Icon Name <br /> [Icon name usage](#icons-and-images)|
 | [equipType](#equiptype) `[Artifact Only]` | Artifact Type |
 
 #### reliquaryMainstat, reliquarySubstats, weaponStats
@@ -104,7 +116,6 @@ For any additional info about names, descriptions and etc, check the [TextMap Da
 | :--- | :---------- |
 | mainPropId / appendPropID | Equipment Append Property Name. Check the [Definitions for Names](#appendprop)|
 | propValue | Property Value |
-
 
 ## Definitions
 
@@ -195,3 +206,17 @@ For any additional info about names, descriptions and etc, check the [TextMap Da
 | FIGHT_PROP_WIND_ADD_HURT | Anemo DMG Bonus |
 | FIGHT_PROP_ICE_ADD_HURT |  Cryo DMG Bonus |
 | FIGHT_PROP_ROCK_ADD_HURT | Geo DMG Bonus |
+
+## Icons and Images
+
+You can get icons of characters, weapons and artifacts via Enka, by URL `https://enka.network/ui/[icon_name].png`.  
+Usually icon name starts with `"UI_"` or `"Skill_"` for [characters talents](#characters-talents-and-consts).  
+For example https://enka.network/ui/UI_AvatarIcon_Side_Ambor.png.
+
+### Weapons and Artifacts
+
+Go to [flat](#flat) and look for `icon`.
+
+### Characters, Talents and Consts
+
+Go to [store/characters.json](/store/characters.json) and look for anything related to "UI_XXXXXX" or "Skill_XXXXXX" by character ID.
