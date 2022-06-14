@@ -6,6 +6,7 @@
 - [Data Structure Info](#data-structure-info)
 - [Definitions](#definitions)
 - [Icons and Images](#icons-and-images)
+- [Localizations](#localizations)
 
 ## Getting Started
 
@@ -96,12 +97,10 @@ For any additional info about artifacts, check the [Artifacts Data](https://raw.
 
 #### flat
 
-For any additional info about names, descriptions and etc, check the [TextMap Data](https://github.com/Dimbreath/GenshinData/tree/master/TextMap), includes any language supported by game.
-
 | Name | Description |
 | :--- | :---------- |
-| nameTextHashMap | Hash for Equipment Name |
-| setNameTextHashMap `[Artifact Only]`| Hash for Artifact Set Name |
+| nameTextHashMap | Hash for Equipment Name <br /> Check [Localizations](#localizations) |
+| setNameTextHashMap `[Artifact Only]`| Hash for Artifact Set Name <br /> Check [Localizations](#localizations)|
 | rankLevel | Rarity Level of Equipment |
 | [reliquaryMainstat](#reliquarymainstat-reliquarysubstats-weaponstats) `[Artifact Only]` | Artifact Main Stat |
 | [reliquarySubstats](#reliquarymainstat-reliquarysubstats-weaponstats) `[Artifact Only]` | List of Artifact Substats |
@@ -220,3 +219,11 @@ Go to [flat](#flat) and look for `icon`.
 ### Characters, Talents and Consts
 
 Go to [store/characters.json](/store/characters.json) and look for anything related to "UI_XXXXXX" or "Skill_XXXXXX" by character ID.
+
+## Localizations
+
+You may notice `"NameTextMapHash"` in [store/characters.json](/store/characters.json), `"nameTextHashMap"` and `"setNameTextHashMap"` at [flat](#flat) that could be used as a key to get basic localization data of characters, weapons and artifacts from [store/loc.json](/store/loc.json).  
+Also you can get localization data of [AppendProp](#appendprop) by using property name as a key - `"FIGHT_PROP_HP"`, `"FIGHT_PROP_HEAL_ADD"` etc.
+
+For any additional info about names, descriptions and etc, check the [TextMap Data](https://github.com/Dimbreath/GenshinData/tree/master/TextMap), only includes languages supported by game. 
+
