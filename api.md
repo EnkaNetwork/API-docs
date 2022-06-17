@@ -44,12 +44,17 @@ For any additional info, check the [Characters Data](https://github.com/Dimbreat
 | :--- | :--------- | 
 | avatarId | Character ID |
 | level | Character Level |
+| costumeId | ID of character's skin. Check `"Costumes"` in [store/characters.json](/store/characters.json) |
 
 ### avatarInfoList
+
+For basic data of characters by ID, go to [store/characters.json](/store/characters.json).  <br />
+For any additional info, check the [Characters Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarExcelConfigData.json).
 
 | Name | Description |
 | :--- | :---------- |
 | avatarID | Character ID |
+| talentIdList | List of Constellation IDs <br /> There is no data if 0 Constellation |
 | [propMap](#propmap) | Character Info Properties List |
 | fightPropMap -> `{id: value}` |  Map of Character's Combat Properties. <br />Check the [Definitions for IDs](#fightprop)|
 | skillDepotId | Character Skill Set ID <br />[Skills Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) ->     `"id"`|
