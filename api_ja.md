@@ -78,9 +78,7 @@ ID別の文字の基本データについては、[store/characters.json](/store
 
 | 名前 | 説明 |
 | :--- | :--------- |
-| itemId | 識別ID <br /> 
-[聖遺物情報](https://raw.githubusercontent.com/Dimbreath/GenshinData/master/ExcelBinOutput/ReliquaryExcelConfigData.json) -> `"id"` <br />
-[武器情報](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/WeaponExcelConfigData.json) -> `"id"` |
+| itemId | 識別ID <br /> [聖遺物情報](https://raw.githubusercontent.com/Dimbreath/GenshinData/master/ExcelBinOutput/ReliquaryExcelConfigData.json) -> `"id"` <br />[武器情報](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/WeaponExcelConfigData.json) -> `"id"` |
 | [weapon](#weapon) `[Weapon Only]` | 武器の基本情報  |
 | [reliquary](#reliquary) `[Artifact Only]` | 聖遺物の基本情報  |
 | [flat](#flat) | このアイテムの詳細情報 |
