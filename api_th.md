@@ -48,7 +48,7 @@
 | :--- | :--------- | 
 | avatarId |ไอดีตัวละคร |
 | level | เลเวลตัวละคร |
-| costumeId | ID ชุดคอสตูมของตัวละคร ตรวจสอบได้ที่ `"Costumes"` ใน [store/characters.json](/store/characters.json) |
+| costumeId | ไอดีชุดคอสตูมของตัวละคร ตรวจสอบได้ที่ `"Costumes"` ใน [store/characters.json](/store/characters.json) |
 
 ### avatarInfoList
 
@@ -60,7 +60,7 @@
 | avatarID | ไอดีตัวละคร |
 | talentIdList | ลำดับกลุ่มดาว <br /> หากเป็น 0 ก็คือไม่มีข้อมูล  |
 | [propMap](#propmap) | คุณสมบัติของตัวละคร |
-| fightPropMap -> `{id: value}` | ข้อมูลตัวละคร <br />โปรดตรวจสอบได้ที่ [Definitions for IDs](#fightprop)|
+| fightPropMap -> `{id: value}` | ข้อมูลตัวละคร <br />โปรดตรวจสอบได้ที่ [คำนิยามสำหรับไอดี](#fightprop)|
 | skillDepotId | เซ็ทไอดีสกิลตัวละคร <br />[Skills Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) ->     `"id"`|
 | inherentProudSkillList | ระดับการปลดล็อกพรรสวรรค์ <br />[Skills Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` | 
 | skillLevelMap -> `{skill_id: level}`| เลเวลพรรสวรรค์ <br /> [Skills Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` |
