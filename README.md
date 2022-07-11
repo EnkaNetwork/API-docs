@@ -5,3 +5,4 @@
 
 
 [API docs](/api.md)
+[APIドキュメント](/api_ja.md)
