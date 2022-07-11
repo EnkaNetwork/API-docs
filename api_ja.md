@@ -5,10 +5,10 @@
 
 ## 目次
 
-- [入門](#getting-started)
-- [データ構造情報](#data-structure-info)
-- [定義](#definitions)
-- [アイコンと画像](#icons-and-images)
+- [入門](#入門)
+- [データ構造情報](#データ構造情報)
+- [定義](#定義)
+- [アイコンと画像](#アイコンと画像)
 - [言語情報](#localizations)
 
 ## 入門
