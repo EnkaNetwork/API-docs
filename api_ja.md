@@ -39,7 +39,7 @@ ID別の文字の基本データについては、[store/characters.json](/store
 | towerLevelIndex | 深境螺旋：間 |
 | [showAvatarInfoList](#showavatarinfolist) | キャラクターIDとレベルのリスト |
 | showNameCardIdList | 飾られた名刺のリスト |
-| profilePicture.avatarID | プロフィールキャラクターのID |
+| profilePicture.avatarId | プロフィールキャラクターのID |
 
 #### showAvatarInfoList
 
