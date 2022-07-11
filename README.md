@@ -5,4 +5,6 @@
 
 
 * [API docs](/api.md)
-* [APIドキュメント](/api_ja.md)
+* [JA | APIドキュメント](/api_ja.md)
+* [ES | Documentación de la API](/api_es.md)
+* [TH | เอกสาร API](/api_th.md)
