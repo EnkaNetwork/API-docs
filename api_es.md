@@ -25,7 +25,7 @@ Por ejemplo https://enka.network/u/700378769/__data.json
 
 ### playerInfo
 
-Para obtener datos básicos de personajes por la ID, ve a [store/characters.json](/store/characters.json).  <br />
+Para obtener datos básicos de personajes por la ID, ve a [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json).  <br />
 Para obtener información adicional, revisa los [Datos de Personajes](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarExcelConfigData.json).
 
 | Nombre | Descripción |
@@ -47,11 +47,11 @@ Para obtener información adicional, revisa los [Datos de Personajes](https://gi
 | :--- | :--------- | 
 | avatarId | ID del personaje |
 | level | Nivel del personaje |
-| costumeId | ID de la skin del personaje. Revisa `"Costumes"` en [store/characters.json](/store/characters.json) |
+| costumeId | ID de la skin del personaje. Revisa `"Costumes"` en [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json) |
 
 ### avatarInfoList
 
-Para obtener datos básicos de personajes por la ID, ve a [store/characters.json](/store/characters.json).  <br />
+Para obtener datos básicos de personajes por la ID, ve a [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json).  <br />
 Para obtener información adicional, revisa los [Datos de Personajes](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarExcelConfigData.json).
 
 | Nombre | Descripción |
@@ -226,11 +226,11 @@ Ve a [flat](#flat) y busca por el `icon`.
 
 ### Personajes, Talentos y Constelaciones
 
-Ve a [store/characters.json](/store/characters.json) y busca por algo relacionado con "UI_XXXXXX" o "Skill_XXXXXX" por la ID del personaje.
+Ve a [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json) y busca por algo relacionado con "UI_XXXXXX" o "Skill_XXXXXX" por la ID del personaje.
 
 ## Localizaciones
 
-A lo mejor notas que `"NameTextMapHash"` en [store/characters.json](/store/characters.json), `"nameTextHashMap"` y `"setNameTextHashMap"` en [flat](#flat) podrían ser usados como llave para obtener la localización básica de los datos de personajes, armas y artefactos de [store/loc.json](/store/loc.json).  
+A lo mejor notas que `"NameTextMapHash"` en [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json), `"nameTextHashMap"` y `"setNameTextHashMap"` en [flat](#flat) podrían ser usados como llave para obtener la localización básica de los datos de personajes, armas y artefactos de [store/loc.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/loc.json).  
 También puedes obtener la localización de los datos de [AppendProp](#appendprop) usando la propiedad como llave - `"FIGHT_PROP_HP"`, `"FIGHT_PROP_HEAL_ADD"` etc.
 
 Para obtener información adicional sobre nombres, descripciones, etc, revisa los [Datos de los TextMap](https://github.com/Dimbreath/GenshinData/tree/master/TextMap), solo incluye idiomas soportados dentro del juego. 

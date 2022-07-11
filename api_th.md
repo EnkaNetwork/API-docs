@@ -25,7 +25,7 @@
 
 ### playerInfo
 
-สำหรับข้อมูลเบื้องต้นของตัวละครโดยไอดีนั้น, ไปที่ [store/characters.json](/store/characters.json).  <br />
+สำหรับข้อมูลเบื้องต้นของตัวละครโดยไอดีนั้น, ไปที่ [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json).  <br />
 สำหรับข้อมูลเพิ่มเติม ตรวจสอบได้ที่ [Characters Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarExcelConfigData.json).
 
 
@@ -48,11 +48,11 @@
 | :--- | :--------- | 
 | avatarId |ไอดีตัวละคร |
 | level | เลเวลตัวละคร |
-| costumeId | ไอดีชุดคอสตูมของตัวละคร ตรวจสอบได้ที่ `"Costumes"` ใน [store/characters.json](/store/characters.json) |
+| costumeId | ไอดีชุดคอสตูมของตัวละคร ตรวจสอบได้ที่ `"Costumes"` ใน [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json) |
 
 ### avatarInfoList
 
-สำหรับข้อมูลเบื้องต้นของตัวละครโดยไอดีนั้น, ไปที่ [store/characters.json](/store/characters.json).  <br />
+สำหรับข้อมูลเบื้องต้นของตัวละครโดยไอดีนั้น, ไปที่ [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json).  <br />
 สำหรับข้อมูลเพิ่มเติม ตรวจสอบได้ที่ [Characters Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarExcelConfigData.json).
 
 | ชื่อ   | คำอธิบาย     |
@@ -227,11 +227,11 @@
 
 ### ตัวละคร, พรรสวรรค์ และกลุ่มดาว
 
-ไปที่ [store/characters.json](/store/characters.json) และมองหาข้อมูลสิ่งที่เกี่ยวข้องอย่าง "UI_XXXXXX" หรือ "Skill_XXXXXX" จากไอดีตัวละคร
+ไปที่ [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json) และมองหาข้อมูลสิ่งที่เกี่ยวข้องอย่าง "UI_XXXXXX" หรือ "Skill_XXXXXX" จากไอดีตัวละคร
 
 ## ภาษา
 
-คุณอางสังเกตุเห็นว่า `"NameTextMapHash"` ในข้อมูล [store/characters.json](/store/characters.json), `"nameTextHashMap"` และ `"setNameTextHashMap"` จาก [flat](#flat) นั้นที่จะสามารถใช้เป็นคีย์สำหรับในการหาข้อมูลภาษาจากตัวละคร, อาวุธ และ อาติแฟสจาก [store/loc.json](/store/loc.json).  
+คุณอางสังเกตุเห็นว่า `"NameTextMapHash"` ในข้อมูล [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json), `"nameTextHashMap"` และ `"setNameTextHashMap"` จาก [flat](#flat) นั้นที่จะสามารถใช้เป็นคีย์สำหรับในการหาข้อมูลภาษาจากตัวละคร, อาวุธ และ อาติแฟสจาก [store/loc.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/loc.json).  
 นอกจากนี้คุณยังสามารถดึงข้อมูลภาษาจาก [AppendProp](#appendprop) โดยใช้ชื่อคีย์คุณสมบัติอย่าง - `"FIGHT_PROP_HP"`, `"FIGHT_PROP_HEAL_ADD"` และอิ่น ๆ 
 
 
