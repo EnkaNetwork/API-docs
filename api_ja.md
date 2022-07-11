@@ -5,10 +5,10 @@
 
 ## 目次
 
-- [入門](#getting-started)
-- [データ構造情報](#data-structure-info)
-- [定義](#definitions)
-- [アイコンと画像](#icons-and-images)
+- [入門](#入門)
+- [データ構造情報](#データ構造情報)
+- [定義](#定義)
+- [アイコンと画像](#アイコンと画像)
 - [言語情報](#localizations)
 
 ## 入門
@@ -25,7 +25,7 @@
 
 ### playerInfo
 
-ID別の文字の基本データについては、[store/characters.json](/store/characters.json)にアクセスしてください。  
+ID別の文字の基本データについては、[store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)にアクセスしてください。  
 追加情報については、[キャラクターデータ](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarExcelConfigData.json)を確認してください。
 
 | 名前 | 説明 |
@@ -47,11 +47,11 @@ ID別の文字の基本データについては、[store/characters.json](/store
 | :--- | :--------- | 
 | avatarId | キャラクターID |
 | level | キャラクターLv |
-| costumeId | キャラクター衣装ID 詳細は[store/characters.json](/store/characters.json)内の`"Costumes"`に定義されています  |
+| costumeId | キャラクター衣装ID 詳細は[store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)内の`"Costumes"`に定義されています  |
 
 ### avatarInfoList
 
-ID別の文字の基本データについては、[store/characters.json](/store/characters.json)にアクセスしてください。  
+ID別の文字の基本データについては、[store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)にアクセスしてください。  
 追加情報については、[キャラクターデータ](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarExcelConfigData.json)を確認してください。
 
 | 名前 | 説明 |
@@ -226,11 +226,11 @@ ID別の文字の基本データについては、[store/characters.json](/store
 
 ### キャラクターと天賦
 
-[store/characters.json](/store/characters.json)から"UI_XXXXXX"または"Skill_XXXXXX"を探します
+[store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)から"UI_XXXXXX"または"Skill_XXXXXX"を探します
 
 ## Localizations
 
-You may notice `"NameTextMapHash"` in [store/characters.json](/store/characters.json), `"nameTextHashMap"` and `"setNameTextHashMap"` at [flat](#flat) that could be used as a key to get basic localization data of characters, weapons and artifacts from [store/loc.json](/store/loc.json).  
+You may notice `"NameTextMapHash"` in [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json), `"nameTextHashMap"` and `"setNameTextHashMap"` at [flat](#flat) that could be used as a key to get basic localization data of characters, weapons and artifacts from [store/loc.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/loc.json).  
 Also you can get localization data of [AppendProp](#appendprop) by using property name as a key - `"FIGHT_PROP_HP"`, `"FIGHT_PROP_HEAL_ADD"` etc.
 
 For any additional info about names, descriptions and etc, check the [TextMap Data](https://github.com/Dimbreath/GenshinData/tree/master/TextMap), only includes languages supported by game. 
