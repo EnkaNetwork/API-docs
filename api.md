@@ -36,7 +36,7 @@ For any additional info, check the [Characters Data](https://github.com/Dimbreat
 | towerLevelIndex | Abyss Floor's Chamber |
 | [showAvatarInfoList](#showavatarinfolist) | List of Character IDs and Levels |
 | showNameCardIdList | List of Namecard IDs |
-| profilePicture.avatarID | Character ID of Profile Picture |
+| profilePicture.avatarId | Character ID of Profile Picture |
 
 #### showAvatarInfoList
 
