@@ -103,6 +103,7 @@
 | :--- | :---------- |
 | level | เลเวลอาติแฟส `[1-21]` |
 | mainPropId | Stats อาติแฟสหลัก <br /> [MainProps Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/ReliquaryMainPropExcelConfigData.json) |
+| appendPropIdList | ลิสไอดี Stats อาติแฟสรอง <br /> [AppendProp Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/ReliquaryAffixExcelConfigData.json) |
 
 #### flat
 
