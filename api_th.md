@@ -13,7 +13,7 @@
 
 ## เริ่มต้นการใช้งาน
 
-คุณสามารถดึงข้อมูล JSON จากลิ้งก์ - `https://enka.network/u/[UID]/__data.json` <br />
+คุณสามารถดึงข้อมูล JSON โดยการเข้าจากลิ้งก์ - `https://enka.network/u/[UID]/__data.json` <br />
 ยกตัวอย่างเช่น https://enka.network/u/700378769/__data.json
 
 ## โครงสร้างข้อมูล
@@ -195,7 +195,7 @@
 
 | ชื่อ   | คำอธิบาย    |
 | :--- | :---------- |
-| FIGHT_PROP_BASE_ATTACK `[Weapon]` | พลังชีวิตพื้นฐาน |
+| FIGHT_PROP_BASE_ATTACK `[Weapon]` | พลังโจมตีพื้นฐาน |
 | FIGHT_PROP_HP | พลังชีวิต |
 | FIGHT_PROP_ATTACK | พลังโจมตี |
 | FIGHT_PROP_DEFENSE | พลังป้องกัน |
