@@ -231,9 +231,8 @@
 
 ## ภาษา
 
-คุณอางสังเกตุเห็นว่า `"NameTextMapHash"` ในข้อมูล [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json), `"nameTextHashMap"` และ `"setNameTextHashMap"` จาก [flat](#flat) นั้นที่จะสามารถใช้เป็นคีย์สำหรับในการหาข้อมูลภาษาจากตัวละคร, อาวุธ และ อาติแฟสจาก [store/loc.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/loc.json).  
-นอกจากนี้คุณยังสามารถดึงข้อมูลภาษาจาก [AppendProp](#appendprop) โดยใช้ชื่อคีย์คุณสมบัติอย่าง - `"FIGHT_PROP_HP"`, `"FIGHT_PROP_HEAL_ADD"` และอิ่น ๆ 
-
+คุณอางสังเกตุเห็น `"NameTextMapHash"` ในข้อมูล [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json), `"nameTextHashMap"` และ `"setNameTextHashMap"` จาก [flat](#flat) นั้นที่จะสามารถใช้เป็นคีย์สำหรับในการหาข้อมูลภาษาจากตัวละคร, อาวุธ และ อาติแฟสจาก [store/loc.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/loc.json).  
+นอกจากนี้คุณยังสามารถใช้ข้อมูลภาษาจาก [AppendProp](#appendprop) โดยใช้ชื่อคีย์คุณสมบัติอย่าง - `"FIGHT_PROP_HP"`, `"FIGHT_PROP_HEAL_ADD"` และอิ่น ๆ 
 
 สำหรับข้อมูลเพิ่มเติมเกี่ยวกับชื่อ, คำอธิบาย และ อื่น ๆ นั้น ตรวจสอบได้ที่ [TextMap Data](https://github.com/Dimbreath/GenshinData/tree/master/TextMap) เฉพาะภาษาที่เกมส์รองรับเท่านั้น
 
