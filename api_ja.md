@@ -102,6 +102,7 @@ ID別の文字の基本データについては、[store/characters.json](https:
 | :--- | :---------- |
 | level | 聖遺物Lv `[1-21]` |
 | mainPropId | 聖遺物メインステータスID<br /> [MainProps Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/ReliquaryMainPropExcelConfigData.json) |
+| appendPropIdList | 聖遺物サブステータスIDのリスト<br /> [AppendProp Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/ReliquaryAffixExcelConfigData.json) |
 
 #### flat
 
