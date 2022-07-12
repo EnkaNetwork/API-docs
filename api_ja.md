@@ -9,7 +9,7 @@
 - [データ構造情報](#データ構造情報)
 - [定義](#定義)
 - [アイコンと画像](#アイコンと画像)
-- [言語情報](#localizations)
+- [言語情報](#言語情報)
 
 ## 入門
 
@@ -101,7 +101,7 @@ ID別の文字の基本データについては、[store/characters.json](https:
 | 名前 | 説明 |
 | :--- | :---------- |
 | level | 聖遺物Lv `[1-21]` |
-| mainPropId | 聖遺物メインステータスID(?)<br /> [MainProps Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/ReliquaryMainPropExcelConfigData.json) |
+| mainPropId | 聖遺物メインステータスID<br /> [MainProps Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/ReliquaryMainPropExcelConfigData.json) |
 
 #### flat
 
@@ -228,9 +228,12 @@ ID別の文字の基本データについては、[store/characters.json](https:
 
 [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)から"UI_XXXXXX"または"Skill_XXXXXX"を探します
 
-## Localizations
+## 言語情報
+[store/loc.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/loc.json)で各言語の翻訳文字列を得る事が出来ます。  
+この時使用されるキー文字列は
+* [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)内の`"NameTextMapHash"`  
+* [flat](#flat)の`"nameTextHashMap"` `"setNameTextHashMap"`
+* [AppendProp](#appendprop) の名前。例：`"FIGHT_PROP_HP"` `"FIGHT_PROP_HEAL_ADD"`
+等です
 
-You may notice `"NameTextMapHash"` in [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json), `"nameTextHashMap"` and `"setNameTextHashMap"` at [flat](#flat) that could be used as a key to get basic localization data of characters, weapons and artifacts from [store/loc.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/loc.json).  
-Also you can get localization data of [AppendProp](#appendprop) by using property name as a key - `"FIGHT_PROP_HP"`, `"FIGHT_PROP_HEAL_ADD"` etc.
-
-For any additional info about names, descriptions and etc, check the [TextMap Data](https://github.com/Dimbreath/GenshinData/tree/master/TextMap), only includes languages supported by game. 
+その他の追加情報を[TextMap Data](https://github.com/Dimbreath/GenshinData/tree/master/TextMap)で得る事が出来ます。ゲームでサポートされている言語のみが含まれます。
