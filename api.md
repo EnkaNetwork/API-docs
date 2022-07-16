@@ -99,6 +99,7 @@ For any additional info about artifacts, check the [Artifacts Data](https://raw.
 | :--- | :---------- |
 | level | Artifact Level `[1-21]` |
 | mainPropId | Artifact Main Stat ID <br /> [MainProps Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/ReliquaryMainPropExcelConfigData.json) |
+| appendPropIdList | List of IDs of the artifact substats <br /> [AppendProp Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/ReliquaryAffixExcelConfigData.json) |
 
 #### flat
 
