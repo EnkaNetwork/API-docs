@@ -102,6 +102,7 @@ Para obtener información adicional sobre los artefactos, revisa los [Datos de l
 | :--- | :---------- |
 | level | Nivel del artefacto `[1-21]` |
 | mainPropId | ID del stat principal <br /> [Datos de los MainProps](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/ReliquaryMainPropExcelConfigData.json) |
+| appendPropIdList | Lista de ids de los stats secundarios del artefacto <br /> [Datos de los AppendProp](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/ReliquaryAffixExcelConfigData.json) |
 
 #### flat
 

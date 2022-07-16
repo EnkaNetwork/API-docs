@@ -1,0 +1,18 @@
+name: Build locally and deploy
+on:
+  push:
+    branches:
+      - master
+      - main
+      - develop
+
+
+jobs:
+
+  build-and-deploy:
+    runs-on: [self-hosted, enka-contabo]
+    steps:
+      - name: Do the pull
+        run: |
+          cd /home/enka/API-docs
+          git pull
