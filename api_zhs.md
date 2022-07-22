@@ -110,7 +110,7 @@
 | :--- | :---------- |
 | nameTextHashMap | 装备名的哈希值 <br /> 请查看 [本地化](#localizations) |
 | setNameTextHashMap `[Artifact Only]`| 圣遗物套装的名称的哈希值 <br /> 请查看 [本地化](#localizations)|
-| rankLevel | 装备强化等级 |
+| rankLevel | 装备稀有度 |
 | [reliquaryMainstat](#reliquarymainstat-reliquarysubstats-weaponstats) `[Artifact Only]` | 圣遗物主属性 |
 | [reliquarySubstats](#reliquarymainstat-reliquarysubstats-weaponstats) `[Artifact Only]` | 圣遗物副属性列表 |
 | [weaponStats](#reliquarymainstat-reliquarysubstats-weaponstats) `[Weapon Only]`| 武器属性列表：基础攻击力、副属性 |
