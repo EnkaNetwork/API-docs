@@ -51,13 +51,13 @@
 
 ### avatarInfoList
 
-有关通过 ID 获取角色的基本信息，请前往 [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)。  <br />
+对于通过 ID 获取角色的基本信息，请前往 [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)。  <br />
 有关任何其他信息，请查看 [Characters Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarExcelConfigData.json)。
 
 | 名称 | 描述 |
 | :--- | :---------- |
 | avatarID | 角色 ID |
-| talentIdList | 命之座 ID 列表 <br /> 如果命之座个数为 0 则此数据不存在 |
+| talentIdList | 命之座 ID 列表 <br /> 如果未解锁任何命之座则此数据不存在 |
 | [propMap](#propmap) | 角色属性列表 |
 | fightPropMap -> `{id: value}` |  角色战斗属性 Map <br />请查看 [ID 定义](#fightprop)|
 | skillDepotId | 角色天赋 ID <br />[Skills Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) ->     `"id"`|
@@ -85,7 +85,7 @@
 
 #### weapon
 
-有关武器的其他信息, 请查看 [Weapons Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/WeaponExcelConfigData.json)
+有关武器的任何其他信息, 请查看 [Weapons Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/WeaponExcelConfigData.json)
 
 | 名称 | 描述 |
 | :--- | :---------- |
@@ -96,7 +96,7 @@
 
 #### reliquary
 
-有关圣遗物的其他信息, 请查看 [Artifacts Data](https://raw.githubusercontent.com/Dimbreath/GenshinData/master/ExcelBinOutput/ReliquaryExcelConfigData.json)
+有关圣遗物的任何其他信息, 请查看 [Artifacts Data](https://raw.githubusercontent.com/Dimbreath/GenshinData/master/ExcelBinOutput/ReliquaryExcelConfigData.json)
 
 | 名称 | 描述 |
 | :--- | :---------- |
@@ -218,7 +218,7 @@
 ## 图标和图片
 
 您可以通过 Enka 获取角色、武器和圣遗物的图标，通过 URL `https://enka.network/ui/[icon_name].png`。  
-对于[角色](#characters-talents-and-consts)，通常图标名称以 `"UI_"` 或 `"Skill_"` 为前缀。  
+通常图标名称以 `"UI_"` 或 `"Skill_"`（对于[角色天赋](#characters-talents-and-consts)）为前缀。  
 例如 https://enka.network/ui/UI_AvatarIcon_Side_Ambor.png
 
 
@@ -228,12 +228,12 @@
 
 ### 角色，天赋和命座
 
-前往 [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json) 并通过角色 ID 寻找与 "UI_XXXXXX" or "Skill_XXXXXX" 相关的数据。
+前往 [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json) 并通过角色 ID 寻找与 "UI_XXXXXX" 或 "Skill_XXXXXX" 相关的数据。
 
 ## 本地化
 
 您可能会注意到 [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json) 中的 `"NameTextMapHash"`、[flat](#flat) 中的 `"nameTextHashMap"` 和 `"setNameTextHashMap"`，它们可以用作从 [store/loc.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/loc.json) 获取角色、武器和圣遗物的基本的本地化数据的键。  
 
-您还可以通过使用属性名称作为键来获取 [AppendProp](#appendprop) 中的本地化数据 —— `"FIGHT_PROP_HP"`、`"FIGHT_PROP_HEAL_ADD"` 等。
+您还可以通过使用属性名称作为键来获取 [AppendProp](#appendprop) 中的本地化数据 —— 例如 `"FIGHT_PROP_HP"`、`"FIGHT_PROP_HEAL_ADD"` 等。
 
 有关名称、描述等的任何其他信息，请查看 [TextMap Data](https://github.com/Dimbreath/GenshinData/tree/master/TextMap)，仅包括游戏支持的语言。
