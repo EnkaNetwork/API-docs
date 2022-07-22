@@ -13,7 +13,7 @@
 
 ## 入门
 
-你可以通过请求这个 URL 获取 JSON 数据 - `https://enka.network/u/[UID]/__data.json` <br />
+你可以通过请求这个 URL 获取 JSON 数据 —— `https://enka.network/u/[UID]/__data.json` <br />
 例如 https://enka.network/u/700378769/__data.json
 
 ## 数据结构
@@ -115,7 +115,7 @@
 | [reliquarySubstats](#reliquarymainstat-reliquarysubstats-weaponstats) `[Artifact Only]` | 圣遗物副属性列表 |
 | [weaponStats](#reliquarymainstat-reliquarysubstats-weaponstats) `[Weapon Only]`| 武器属性列表：基础攻击力、副属性 |
 | [itemType](#itemtype) | 装备类别：武器、圣遗物 |
-| icon | 装备图标 <br /> [图标名称使用方法](#icons-and-images)|
+| icon | 装备图标名称 <br /> [图标名称使用方法](#icons-and-images)|
 | [equipType](#equiptype) `[Artifact Only]` | 圣遗物类型 |
 
 #### reliquaryMainstat, reliquarySubstats, weaponStats
