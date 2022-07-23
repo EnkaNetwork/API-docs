@@ -20,7 +20,7 @@
 
 | 名称 | 描述 |
 | :--- | :---------- |
-| [playerInfo](#playerinfo) | 档案信息 |
+| [playerInfo](#playerinfo) | 玩家资料信息 |
 | [avatarInfoList](#avatarinfolist) | 正在展示的每个角色的详细信息列表 |
 
 ### playerInfo
@@ -33,7 +33,7 @@
 | nickname | 名称 |
 | signature | 签名 |
 | worldLevel | 世界等级 |
-| namecardId | 档案名片 ID |
+| namecardId | 资料名片 ID |
 | finishAchievementNum | 已解锁成就数 |
 | towerFloorIndex | 深境螺旋层数 |
 | towerLevelIndex | 深境螺旋间数 |
