@@ -5,11 +5,11 @@
 
 ## 目录
 
-- [入门](#getting-started)
-- [数据结构](#data-structure-info)
-- [定义](#definitions)
-- [图标和图片](#icons-and-images)
-- [本地化](#localizations)
+- [入门](#入门)
+- [数据结构](#数据结构)
+- [定义](#定义)
+- [图标和图片](#图标和图片)
+- [本地化](#本地化)
 
 ## 入门
 
@@ -108,14 +108,14 @@
 
 | 名称 | 描述 |
 | :--- | :---------- |
-| nameTextHashMap | 装备名的哈希值 <br /> 请查看 [本地化](#localizations) |
-| setNameTextHashMap `[Artifact Only]`| 圣遗物套装的名称的哈希值 <br /> 请查看 [本地化](#localizations)|
+| nameTextHashMap | 装备名的哈希值 <br /> 请查看 [本地化](#本地化) |
+| setNameTextHashMap `[Artifact Only]`| 圣遗物套装的名称的哈希值 <br /> 请查看 [本地化](#本地化)|
 | rankLevel | 装备稀有度 |
 | [reliquaryMainstat](#reliquarymainstat-reliquarysubstats-weaponstats) `[Artifact Only]` | 圣遗物主属性 |
 | [reliquarySubstats](#reliquarymainstat-reliquarysubstats-weaponstats) `[Artifact Only]` | 圣遗物副属性列表 |
 | [weaponStats](#reliquarymainstat-reliquarysubstats-weaponstats) `[Weapon Only]`| 武器属性列表：基础攻击力、副属性 |
 | [itemType](#itemtype) | 装备类别：武器、圣遗物 |
-| icon | 装备图标名称 <br /> [图标名称使用方法](#icons-and-images)|
+| icon | 装备图标名称 <br /> [图标名称使用方法](#图标和图片)|
 | [equipType](#equiptype) `[Artifact Only]` | 圣遗物类型 |
 
 #### reliquaryMainstat, reliquarySubstats, weaponStats
