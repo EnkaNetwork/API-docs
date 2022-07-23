@@ -131,7 +131,7 @@
 
 | 类型 | 描述 |
 | :--: | :---------- |
-| 1001 | 经验 |
+| 1001 | 经验值 |
 | 1002 | 突破 | 
 | 4001 | 等级 |
 
@@ -148,8 +148,8 @@
 | 26 | 治疗加成 |
 | 27 | 受治疗加成 |
 | 28 | 元素充能效率 |
-| 29 | 冷却缩减 |
-| 30 | 护盾强效 |
+| 29 | 物理抗性 |
+| 30 | 物理伤害加成 |
 | 40 | 火元素伤害加成 |
 | 41 | 雷元素伤害加成 |
 | 42 | 水元素伤害加成 |
@@ -195,10 +195,10 @@
 
 | 名称 | 描述 |
 | :--- | :---------- |
-| FIGHT_PROP_BASE_ATTACK `[Weapon]` | 攻击力 |
+| FIGHT_PROP_BASE_ATTACK `[Weapon]` | 基础攻击力 |
 | FIGHT_PROP_HP | 生命值 |
-| FIGHT_PROP_ATTACK | 普通攻击 |
-| FIGHT_PROP_DEFENSE | 普通防御 |
+| FIGHT_PROP_ATTACK | 攻击力 |
+| FIGHT_PROP_DEFENSE | 防御力 |
 | FIGHT_PROP_HP_PERCENT | 生命值百分比 |
 | FIGHT_PROP_ATTACK_PERCENT | 攻击力百分比 |
 | FIGHT_PROP_DEFENSE_PERCENT | 防御力百分比 | 
