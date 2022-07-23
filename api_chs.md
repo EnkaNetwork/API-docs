@@ -35,10 +35,10 @@
 | worldLevel | 世界等级 |
 | namecardId | 资料名片 ID |
 | finishAchievementNum | 已解锁成就数 |
-| towerFloorIndex | 深境螺旋层数 |
-| towerLevelIndex | 深境螺旋间数 |
+| towerFloorIndex | 本期深境螺旋层数 |
+| towerLevelIndex | 本期深境螺旋间数 |
 | [showAvatarInfoList](#showavatarinfolist) | 角色 ID 与等级的列表 |
-| showNameCardIdList | 已拥有名片 ID 列表 |
+| showNameCardIdList | 正在展示的名片 ID 列表 |
 | profilePicture.avatarId | 玩家头像的角色 ID |
 
 #### showAvatarInfoList
