@@ -211,6 +211,7 @@ For any additional info about artifacts, check the [Artifacts Data](https://raw.
 | FIGHT_PROP_WIND_ADD_HURT | Anemo DMG Bonus |
 | FIGHT_PROP_ICE_ADD_HURT |  Cryo DMG Bonus |
 | FIGHT_PROP_ROCK_ADD_HURT | Geo DMG Bonus |
+| FIGHT_PROP_GRASS_ADD_HURT | Dendro DMG Bonus |
 
 ## Icons and Images
 
