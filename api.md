@@ -99,6 +99,7 @@ For any additional info about artifacts, check the [Artifacts Data](https://raw.
 | :--- | :---------- |
 | level | Artifact Level `[1-21]` |
 | mainPropId | Artifact Main Stat ID <br /> [MainProps Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/ReliquaryMainPropExcelConfigData.json) |
+| appendPropIdList | List of IDs of the artifact substats <br /> [AppendProp Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/ReliquaryAffixExcelConfigData.json) |
 
 #### flat
 
@@ -210,6 +211,7 @@ For any additional info about artifacts, check the [Artifacts Data](https://raw.
 | FIGHT_PROP_WIND_ADD_HURT | Anemo DMG Bonus |
 | FIGHT_PROP_ICE_ADD_HURT |  Cryo DMG Bonus |
 | FIGHT_PROP_ROCK_ADD_HURT | Geo DMG Bonus |
+| FIGHT_PROP_GRASS_ADD_HURT | Dendro DMG Bonus |
 
 ## Icons and Images
 

@@ -8,3 +8,4 @@
 * [JA | APIドキュメント](/api_ja.md)
 * [ES | Documentación de la API](/api_es.md)
 * [TH | เอกสาร API](/api_th.md)
+* [CHS | API 文档](/api_chs.md)
