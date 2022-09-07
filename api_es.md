@@ -153,6 +153,7 @@ Para obtener información adicional sobre los artefactos, revisa los [Datos de l
 | 40 | Bono de Daño Pyro |
 | 41 | Bono de Daño Electro |
 | 42 | Bono de Daño Hydro |
+| 43 | Bono de Daño Dendro |
 | 44 | Bono de Daño Anemo |
 | 45 | Bono de Daño Geo |
 | 46 | Bono de Daño Cryo |
@@ -214,6 +215,7 @@ Para obtener información adicional sobre los artefactos, revisa los [Datos de l
 | FIGHT_PROP_WIND_ADD_HURT | Bono de Daño Anemo |
 | FIGHT_PROP_ICE_ADD_HURT |  Bono de Daño Cryo |
 | FIGHT_PROP_ROCK_ADD_HURT | Bono de Daño Geo |
+| FIGHT_PROP_GRASS_ADD_HURT | Bono de Daño Dendro |
 
 ## Iconos e Imágenes
 
