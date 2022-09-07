@@ -153,13 +153,14 @@ ID別の文字の基本データについては、[store/characters.json](https:
 | 40 | 炎元素ダメージ |
 | 41 | 雷元素ダメージ |
 | 42 | 水元素ダメージ |
+| 43 | 草元素ダメージ |
 | 44 | 風元素ダメージ |
 | 45 | 岩元素ダメージ |
 | 46 | 氷元素ダメージ |
 | 50 | 炎元素耐性 |
 | 51 | 雷元素耐性 |
 | 52 | 水元素耐性 |
-| 53 | Dendro RES |
+| 53 | 草元素耐性 |
 | 54 | 風元素耐性 |
 | 55 | 岩元素耐性 |
 | 56 | 氷元素耐性 |
@@ -214,6 +215,7 @@ ID別の文字の基本データについては、[store/characters.json](https:
 | FIGHT_PROP_WIND_ADD_HURT | 風元素ダメージ |
 | FIGHT_PROP_ICE_ADD_HURT |  氷元素ダメージ |
 | FIGHT_PROP_ROCK_ADD_HURT | 岩元素ダメージ |
+| FIGHT_PROP_GRASS_ADD_HURT | 草元素ダメージ |
 
 ## アイコンと画像
 
