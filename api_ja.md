@@ -115,7 +115,7 @@ ID別の文字の基本データについては、[store/characters.json](https:
 | [reliquarySubstats](#reliquarymainstat-reliquarysubstats-weaponstats) `[Artifact Only]` | 聖遺物のサブステータス |
 | [weaponStats](#reliquarymainstat-reliquarysubstats-weaponstats) `[Weapon Only]`| 武器の基礎攻撃力とサブステータス |
 | [itemType](#itemtype) | 種別(武器：`Weapon`,聖遺物：`Artifact`) |
-| icon | アイテムアイコン名 <br /> [アイコン名の使用法](#icons-and-images)|
+| icon | アイテムアイコン名 <br /> [アイコン名の使用法](#アイコンと画像)|
 | [equipType](#equiptype) `[Artifact Only]` | 聖遺物種別 |
 
 #### reliquaryMainstat, reliquarySubstats, weaponStats
