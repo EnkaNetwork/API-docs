@@ -108,8 +108,8 @@ ID別の文字の基本データについては、[store/characters.json](https:
 
 | 名前 | 説明 |
 | :--- | :---------- |
-| nameTextHashMap | 表示名の識別番号 <br /> 参照：[言語情報](#localizations) |
-| setNameTextHashMap `[Artifact Only]`| セット効果の識別番号<br /> 参照：[言語情報](#localizations)|
+| nameTextHashMap | 表示名の識別番号 <br /> 参照：[言語情報](#言語情報) |
+| setNameTextHashMap `[Artifact Only]`| セット効果の識別番号<br /> 参照：[言語情報](#言語情報)|
 | rankLevel | レアリティ |
 | [reliquaryMainstat](#reliquarymainstat-reliquarysubstats-weaponstats) `[Artifact Only]` | 聖遺物のメインステータス |
 | [reliquarySubstats](#reliquarymainstat-reliquarysubstats-weaponstats) `[Artifact Only]` | 聖遺物のサブステータス |
