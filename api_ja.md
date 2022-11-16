@@ -108,14 +108,14 @@ ID別の文字の基本データについては、[store/characters.json](https:
 
 | 名前 | 説明 |
 | :--- | :---------- |
-| nameTextHashMap | 表示名の識別番号 <br /> 参照：[言語情報](#localizations) |
-| setNameTextHashMap `[Artifact Only]`| セット効果の識別番号<br /> 参照：[言語情報](#localizations)|
+| nameTextHashMap | 表示名の識別番号 <br /> 参照：[言語情報](#言語情報) |
+| setNameTextHashMap `[Artifact Only]`| セット効果の識別番号<br /> 参照：[言語情報](#言語情報)|
 | rankLevel | レアリティ |
 | [reliquaryMainstat](#reliquarymainstat-reliquarysubstats-weaponstats) `[Artifact Only]` | 聖遺物のメインステータス |
 | [reliquarySubstats](#reliquarymainstat-reliquarysubstats-weaponstats) `[Artifact Only]` | 聖遺物のサブステータス |
 | [weaponStats](#reliquarymainstat-reliquarysubstats-weaponstats) `[Weapon Only]`| 武器の基礎攻撃力とサブステータス |
 | [itemType](#itemtype) | 種別(武器：`Weapon`,聖遺物：`Artifact`) |
-| icon | アイテムアイコン名 <br /> [アイコン名の使用法](#icons-and-images)|
+| icon | アイテムアイコン名 <br /> [アイコン名の使用法](#アイコンと画像)|
 | [equipType](#equiptype) `[Artifact Only]` | 聖遺物種別 |
 
 #### reliquaryMainstat, reliquarySubstats, weaponStats
