@@ -137,8 +137,16 @@ For any additional info about artifacts, check the [Artifacts Data](https://raw.
 | Type | Description |
 | :--: | :---------- |
 | 1 | Base HP |
+| 2 | HP |
+| 3 | HP% |
 | 4 | Base ATK |
+| 5 | ATK |
+| 6 | ATK% |
 | 7 | Base DEF |
+| 8 | DEF |
+| 9 | DEF% |
+| 10 | Base SPD |
+| 11 | SPD% |
 | 20 | CRIT Rate |
 | 22 | CRIT DMG |
 | 23 | Energy Recharge |
@@ -167,9 +175,42 @@ For any additional info about artifacts, check the [Artifacts Data](https://raw.
 | 74 | Anemo Energy Cost |
 | 75 | Cryo Energy Cost |
 | 76 | Geo Energy Cost |
+| 80 | Cooldown reduction |
+| 81 | Shield Strength |
+| 1000 | Current Pyro Energy |
+| 1001 | Current Electro Energy |
+| 1002 | Current Hydro Energy |
+| 1003 | Current Dendro Energy |
+| 1004 | Current Anemo Energy |
+| 1005 | Current Cryo Energy |
+| 1006 | Current Geo Energy |
+| 1010 | Current HP |
 | 2000 | Max HP |
 | 2001 | ATK |
 | 2002 | DEF |
+| 2003 | SPD |
+| 3025 | Elemental reaction CRIT Rate |
+| 3026 | Elemental reaction CRIT DMG |
+| 3027 | Elemental reaction (Overloaded) CRIT Rate |
+| 3028 | Elemental reaction (Overloaded) CRIT DMG |
+| 3029 | Elemental reaction (Swirl) CRIT Rate |
+| 3030 | Elemental reaction (Swirl) CRIT DMG |
+| 3031 | Elemental reaction (Electro-Charged) CRIT Rate |
+| 3032 | Elemental reaction (Electro-Charged) CRIT DMG |
+| 3033 | Elemental reaction (Superconduct) CRIT Rate |
+| 3034 | Elemental reaction (Superconduct) CRIT DMG |
+| 3035 | Elemental reaction (Burn) CRIT Rate |
+| 3036 | Elemental reaction (Burn) CRIT Rate |
+| 3037 | Elemental reaction (Frozen (Shattered)) CRIT Rate |
+| 3038 | Elemental reaction (Frozen (Shattered)) CRIT DMG |
+| 3039 | Elemental reaction (Bloom) CRIT Rate |
+| 3040 | Elemental reaction (Bloom) CRIT Rate |
+| 3041 | Elemental reaction (Burgeon) CRIT Rate |
+| 3042 | Elemental reaction (Burgeon) CRIT Rate |
+| 3043 | Elemental reaction (Hyperbloom) CRIT Rate |
+| 3044 | Elemental reaction (Hyperbloom) CRIT Rate |
+| 3045 | Base Elemental reaction CRIT Rate |
+| 3046 | Base Elemental reaction CRIT DMG |
 
 ### ItemType
 
