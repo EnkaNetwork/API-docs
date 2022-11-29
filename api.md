@@ -200,15 +200,15 @@ For any additional info about artifacts, check the [Artifacts Data](https://raw.
 | 3033 | Elemental reaction (Superconduct) CRIT Rate |
 | 3034 | Elemental reaction (Superconduct) CRIT DMG |
 | 3035 | Elemental reaction (Burn) CRIT Rate |
-| 3036 | Elemental reaction (Burn) CRIT Rate |
+| 3036 | Elemental reaction (Burn) CRIT DMG |
 | 3037 | Elemental reaction (Frozen (Shattered)) CRIT Rate |
 | 3038 | Elemental reaction (Frozen (Shattered)) CRIT DMG |
 | 3039 | Elemental reaction (Bloom) CRIT Rate |
-| 3040 | Elemental reaction (Bloom) CRIT Rate |
+| 3040 | Elemental reaction (Bloom) CRIT DMG |
 | 3041 | Elemental reaction (Burgeon) CRIT Rate |
-| 3042 | Elemental reaction (Burgeon) CRIT Rate |
+| 3042 | Elemental reaction (Burgeon) CRIT DMG |
 | 3043 | Elemental reaction (Hyperbloom) CRIT Rate |
-| 3044 | Elemental reaction (Hyperbloom) CRIT Rate |
+| 3044 | Elemental reaction (Hyperbloom) CRIT DMG |
 | 3045 | Base Elemental reaction CRIT Rate |
 | 3046 | Base Elemental reaction CRIT DMG |
 
