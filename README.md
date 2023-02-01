@@ -10,3 +10,4 @@
 * [TH | เอกสาร API](/api_th.md)
 * [CHS | API 文档](/api_chs.md)
 * [NL | API-documentatie](/api_nl.md)
+* [ID | Dokumentasi API](/api_id.md)
