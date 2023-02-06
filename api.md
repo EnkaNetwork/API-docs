@@ -36,7 +36,7 @@ If you have difficulties working with the data, hop on the [Discord server](http
 
 > https://enka.network/api/uid/618285856/
 
-The response will contain `playerInfo` and `avatarInfoList`. `playerInfo` is the basic data about the game account. If `playerInfo` is missing, that means the Showcase of this account is either closed or not populated with characters.
+The response will contain `playerInfo` and `avatarInfoList`. `playerInfo` is the basic data about the game account. If `avatarInfoList` is missing, that means the Showcase of this account is either closed or not populated with characters.
 
 
 #### Get only player info
