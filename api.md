@@ -38,6 +38,7 @@ If you have difficulties working with the data, hop on the [Discord server](http
 
 The response will contain `playerInfo` and `avatarInfoList`. `playerInfo` is the basic data about the game account. If `playerInfo` is missing, that means the Showcase of this account is either closed or not populated with characters.
 
+
 #### Get only player info
 
 > https://enka.network/api/uid/618285856/?info
@@ -52,6 +53,18 @@ In addition, this response will contain an `owner` object if:
 4. The user set its visibility to "public"
 
 More info on user accounts below.
+
+#### HTTP response codes
+
+Please make sure to handle these in your app appropriately.
+```
+400 = Wrong UID format
+404 = Player does not exist (MHY server said that)
+424 = Game maintenance / everything is broken after the game update
+429 = Rate-limited (either by my server or by MHY server)
+500 = General server error
+503 = I screwed up massively
+```
 
 ### Profile endpoints
 
