@@ -45,7 +45,7 @@ The response will contain `playerInfo` and `avatarInfoList`. `playerInfo` is the
 
 By attaching `?info` to the request, you are requesting only `playerInfo`. The main request always tries to get `avatarInfoList` as well; if you only need `playerInfo`, please use this endpoint - it will be much faster than getting the full data.
 
-In addition, this response will contain an `owner` object if:
+In addition, both responses will contain an `owner` object if:
 
 1. The user has an account on the site
 2. The user added their UID to the profile
@@ -357,4 +357,6 @@ You may notice `"NameTextMapHash"` in [store/characters.json](https://github.com
 Also you can get localization data of [AppendProp](#appendprop) by using property name as a key - `"FIGHT_PROP_HP"`, `"FIGHT_PROP_HEAL_ADD"` etc.
 
 For any additional info about names, descriptions and etc, check the [TextMap Data](https://github.com/Dimbreath/GenshinData/tree/master/TextMap), only includes languages supported by game. 
+
+## Wrappers
 
