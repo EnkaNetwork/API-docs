@@ -360,3 +360,4 @@ For any additional info about names, descriptions and etc, check the [TextMap Da
 
 ## Wrappers
 
+TS/JS - https://www.npmjs.com/package/enkanetwork.js - [Jelosus1](https://github.com/Jelosus2)
