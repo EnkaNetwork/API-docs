@@ -361,3 +361,5 @@ For any additional info about names, descriptions and etc, check the [TextMap Da
 ## Wrappers
 
 TS/JS - https://www.npmjs.com/package/enkanetwork.js - [Jelosus1](https://github.com/Jelosus2)
+
+TS/JS - https://github.com/yuko1101/enka-network-api - [yuko1101](https://github.com/yuko1101)
