@@ -241,6 +241,7 @@ For any additional info about artifacts, check the [Artifacts Data](https://raw.
 | 40 | Pyro DMG Bonus |
 | 41 | Electro DMG Bonus |
 | 42 | Hydro DMG Bonus |
+| 43 | Dendro DMG Bonus |
 | 44 | Anemo DMG Bonus |
 | 45 | Geo DMG Bonus |
 | 46 | Cryo DMG Bonus |
