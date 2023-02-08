@@ -10,8 +10,8 @@
 
 ## Aan de slag
 
-U kunt JSON-gegevens ophalen door een verzoek te doen aan de URL - `https://enka.network/u/[UID]/__data.json` <br />
-Als voorbeeld https://enka.network/u/700378769/__data.json
+U kunt JSON-gegevens ophalen door een verzoek te doen aan de URL - `https://enka.network/api/uid/[UID]` <br />
+Als voorbeeld https://enka.network/api/uid/700378769. Deze haalt de informatie van de speler en de karakters. Wilt u alleen de informatie van het profiel van de speler? Doe dan `?info` aan uw verzoek toe. Als voorbeeld `https://enka.network/api/uid/700378769?info`
 
 ## Informatie over gegevensstructuur
 

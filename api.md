@@ -241,6 +241,7 @@ For any additional info about artifacts, check the [Artifacts Data](https://raw.
 | 40 | Pyro DMG Bonus |
 | 41 | Electro DMG Bonus |
 | 42 | Hydro DMG Bonus |
+| 43 | Dendro DMG Bonus |
 | 44 | Anemo DMG Bonus |
 | 45 | Geo DMG Bonus |
 | 46 | Cryo DMG Bonus |
@@ -365,3 +366,5 @@ TS/JS - https://www.npmjs.com/package/enkanetwork.js - [Jelosus1](https://github
 TS/JS - https://github.com/yuko1101/enka-network-api - [yuko1101](https://github.com/yuko1101)
 
 Rust - https://github.com/eratou/enkanetwork-rs - [eratou](https://github.com/eratou)
+
+Python - https://github.com/mrwan200/enkanetwork.py - [mrwan200](https://github.com/mrwan200)
