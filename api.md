@@ -72,19 +72,19 @@ It is possible to create an account (profile) on the website and attach several 
 
 Users can "snapshot" builds under custom names, referred as "saved builds".
 
-> https://dev.enka.network/api/profile/Algoinde/
+> https://enka.network/api/profile/Algoinde/
 
 Gets the user info.
 
-> https://dev.enka.network/api/profile/Algoinde/hoyos/
+> https://enka.network/api/profile/Algoinde/hoyos/
 
 Gets a list of "hoyos" - Genshin accounts and their metadata. This only returns accounts that are `verified` and `public` (users can hide accounts; unverified accounts are hidden by default). Each key in the response is a unique identifier of a hoyo which you need to use for the subsequent requests to actually get the characters/builds information.
 
-> https://dev.enka.network/api/profile/Algoinde/hoyos/4Wjv2e/
+> https://enka.network/api/profile/Algoinde/hoyos/4Wjv2e/
 
 Returns metadata for a single hoyo.
 
-> https://dev.enka.network/api/profile/Algoinde/hoyos/4Wjv2e/builds/
+> https://enka.network/api/profile/Algoinde/hoyos/4Wjv2e/builds/
 
 Returns saved builds for a given hoyo. This is an object of arrays, where the key is `avatarId` of the character, and objects in arrays are different builds for a given character, in no particular order (but they do have an `order` field you need to order by for display).
 
@@ -92,7 +92,7 @@ If a build has a `live: true` field, that means it's not a "saved" build, but si
 
 As outlined in [UID endpoints](#uid-endpoints), when you make a UID request, you could get an `owner` object. You can construct the URL using these fields in the object:
 
-`https://dev.enka.network/api/profile/{owner.username}/hoyos/{owner.hash}/builds/`
+`https://enka.network/api/profile/{owner.username}/hoyos/{owner.hash}/builds/`
 
 
 

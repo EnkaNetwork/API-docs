@@ -75,19 +75,19 @@
 
 用户可以以自定义名称“快照”配装，或者说“已保存的配装”。
 
-> https://dev.enka.network/api/profile/Algoinde/
+> https://enka.network/api/profile/Algoinde/
 
 获取用户信息。
 
-> https://dev.enka.network/api/profile/Algoinde/hoyos/
+> https://enka.network/api/profile/Algoinde/hoyos/
 
 获取“hoyo”的列表 - 原神账号与其元数据。仅返回已验证和公开的账号（用户可以隐藏账号，未验证的账号默认隐藏），返回的每个键都是一个 hoyo 的唯一标识，在后面的请求中您需要它们来获取其角色/配装信息。
 
-> https://dev.enka.network/api/profile/Algoinde/hoyos/4Wjv2e/
+> https://enka.network/api/profile/Algoinde/hoyos/4Wjv2e/
 
 返回单个 hoyo 的元数据。
 
-> https://dev.enka.network/api/profile/Algoinde/hoyos/4Wjv2e/builds/
+> https://enka.network/api/profile/Algoinde/hoyos/4Wjv2e/builds/
 
 返回给定 hoyo 保存的配装。根是一个值为数组的对象，键是该角色的 `avatarId`，数组中的对象是此角色的不同配装（未经排序，不过其中有 `order` 可供排序显示）。
 
@@ -95,7 +95,7 @@
 
 在 [UID 端点](#uid-端点) 章节提到过，发送 UID 请求时会得到 `owner` 对象，您可以用此对象中的字段构造URL：
 
-`https://dev.enka.network/api/profile/{owner.username}/hoyos/{owner.hash}/builds/`
+`https://enka.network/api/profile/{owner.username}/hoyos/{owner.hash}/builds/`
 
 
 
