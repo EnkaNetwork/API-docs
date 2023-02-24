@@ -60,7 +60,7 @@
 ```
 400 = รูปแบบ UID ไม่ถูกต้อง
 404 = ไม่พบผู้เล่น (เซิฟ MHY บอกแบบนี้อ่ะนะ)
-424 = บำรุงรักษาเกมส์ / ทุกอย่างจะพังลงหลังจากเกมส์
+424 = บำรุงรักษาเกมส์ / ทุกอย่างจะพังลงหลังจากอัพเดตตัวเกมส์
 429 = ถูกจำกัด (ทั้งเซิฟของฉันและเซิฟ MHY)
 500 = ข้อผิดพลาดทั่วไป
 503 = ฉันเมามากมาย
@@ -322,5 +322,7 @@
 TS/JS - https://www.npmjs.com/package/enkanetwork.js - [Jelosus1](https://github.com/Jelosus2)
 
 TS/JS - https://github.com/yuko1101/enka-network-api - [yuko1101](https://github.com/yuko1101)
+
+Rust - https://github.com/eratou/enkanetwork-rs - [eratou](https://github.com/eratou)
 
 Python - https://github.com/mrwan200/enkanetwork.py - [mrwan200](https://github.com/mrwan200)
