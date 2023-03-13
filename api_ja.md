@@ -13,8 +13,89 @@
 
 ## 入門
 
-特定のURLに対してGETリクエストを行うことでJSONデータを取得できます-`https://enka.network/u/[UID]/__data.json`  
-例：https://enka.network/u/700378769/__data.json
+他の人が作ったラッパーを利用してもいいし、APIを直接使っても良いと思います。
+非常にシンプルなので、レスポンスをもとに独自のデータロジックを作成するのは全く難しくありません。
+
+最大の課題は、データマイニングされたゲームデータをナビゲートし、適切な方法で返されたデータを使用することです。
+
+様々な言語のラッパーについては、[Wrappers](#wrappers)を参照してください。
+## 利用する前に
+
+APIを使用する際のいくつかのルールです。
+
+1. UIDを列挙したり、データベースを埋めるために大量のリクエストを実行しようとしないでください。UIDは何億もあり、このAPIでこれを実行することはできません。後日、バッチデータを提供することがあります。
+
+2. リクエストにはカスタムした`User-Agent` ヘッダを設定してください。そうすることで、リクエストをより良く追跡し、必要に応じてあなたを助けることができます。
+
+3. UIDのエンドポイントには動的な速度制限があります。あまりに速くリクエストすると、応答時間が遅くなり、最終的にはステータスコード429が返されます。この場合、速度を落とすか、私に連絡してレートリミットを増やすことが可能かどうかを確認する必要があります。殆どの場合、これは必要ではなく、最適化されていないコードが原因です。
+
+4. 全てのUIDリクエストには`ttl`というフィールドを返します。このフィールドは「リクエストされたUIDに対して次の更新(Showcase)が行われるまでの秒数」です。このフィールドがなくなるまで、エンドポイントはキャッシュされたデータを返しますが、繰り返しヒットするとレートリミットを消費してしまいます。リクエスト時に`ttl`のタイムアウトを設けてデータをキャッシュするか、`ttl`が切れるまでそのUIDへのリクエストを行わないようにすることを試してみてください。これにはRedisをお勧めします。
+
+もしデータの扱いに困ったら、[Discordサーバー](https://discord.gg/PcSZr5sbn3)でヘルプを受けられます。
+
+## API一覧
+### UIDエンドポイント
+#### キャラ情報を含む全ての情報を取得
+
+> https://enka.network/api/uid/618285856/
+
+レスポンスには `playerInfo` と `avatarInfoList` が含まれます。`playerInfo`はゲームアカウントに関する基本的なデータです。もし `avatarInfoList` が見つからない場合は、このゲームアカウントはプロフィールが非公開に設定されているか、キャラクターが設定されていないことを意味します。
+
+#### プレイヤー情報をのみを取得
+
+> https://enka.network/api/uid/618285856/?info
+
+リクエストに `?info` を付けることで、`playerInfo` のみをリクエストすることができます。もし `playerInfo` だけが必要であれば、このエンドポイントを使用してください。全てのデータを取得するよりもずっと速く取得する事が出来ます。
+
+さらに、以下の場合にのみ、両方のレスポンスに `owner` オブジェクトが含まれます。
+
+1. ユーザがこのサイトにアカウントを持っている。
+2. ユーザーが自分のUIDをプロファイルに追加した。
+3. ユーザーが認証を行った。
+4. ユーザーがその可視性を"公開"に設定した。
+
+`owner` オブジェクトに関する詳細は以下を参照ください。
+
+#### HTTPレスポンスコード
+
+アプリ内でこれらが適切に処理されるようにしてください。
+
+```
+400 = UIDのフォーマットが合っていない
+404 = 対象のプレイヤーが存在しない (これはmihoyoサーバーからのレスポンスです)
+424 = ゲームメンテナンス(更新等) / ゲームアップデート後にシステムが破壊的な影響を受けた
+429 = レートリミット(EnkaNetWorkかmihoyoサーバーのどちらか)
+500 = EnkaNetWorkサーバーのエラー
+503 = EnkaNetWorkサーバーの一時停止中
+```
+
+### プロファイルエンドポイント
+
+ウェブサイト上でアカウント（プロフィール）を作成し、そのアカウントに複数のゲームアカウントを設定することが可能です。ユーザーは、認証ページに記載された認証コードによって、そのアカウントが自分のものであることを証明する必要があります。
+
+ユーザーは、好きな名称でビルドを「スナップショット」することができ、「セーブドビルド」と呼ばれています。
+
+> https://enka.network/api/profile/Algoinde/
+
+ユーザー情報を取得します。
+
+> https://enka.network/api/profile/Algoinde/hoyos/
+
+「hoyos」-　ゲームアカウントとそのメタデータのリストを取得します。これは `認証状態` 且つ `公開状態` であるアカウントのみを返します。 (ユーザーはアカウントを隠すことができます。認証されていないアカウントはデフォルトで隠されます。)。レスポンスの各キーはmihoyoの一意な識別子であり、この識別子を使って後続のリクエストで実際にキャラクター/ビルドの情報を取得する必要があります。
+
+> https://enka.network/api/profile/Algoinde/hoyos/4Wjv2e/
+
+1つのゲームアカウントのメタデータを返します。
+
+> https://enka.network/api/profile/Algoinde/hoyos/4Wjv2e/builds/
+
+指定されたゲームアカウントの保存されたビルドを返します。これは配列のオブジェクトで、キーはキャラクターの `avatarId` で、配列のオブジェクトは与えられたキャラクターの異なるビルドを順不同で表します（ただし、表示の為に並べる必要のある `order` フィールドを持ちます）。
+
+ビルドに `live:　true` フィールドがある場合、それは「保存」されたビルドではなく、単に「更新」をクリックしたときにショーケースから取得されたものであることを意味します。更新すると、古い`live`ビルドはすべて削除され、新しいビルドが作成されます。この更新をいつ行うかは、ユーザーだけが決めることができます。
+
+[UID エンド ポイント](#UIDエンドポイント)で説明したように、UIDリクエストを行うと、`owner`オブジェクトを取得することができます。このオブジェクトのフィールドを使用して、URLを作成することができます。
+
+`https://enka.network/api/profile/{owner.username}/hoyos/{owner.hash}/builds/`
 
 ## データ構造情報
 
@@ -25,11 +106,11 @@
 
 ### playerInfo
 
-ID別の文字の基本データについては、[store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)にアクセスしてください。  
+ID別の文字の基本データについては、[store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)にアクセスしてください。
 追加情報については、[キャラクターデータ](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarExcelConfigData.json)を確認してください。
 
 | 名前 | 説明 |
-| :--- | :--------- | 
+| :--- | :--------- |
 | nickname | プレイヤーのニックネーム |
 | signature | ゲーム内ステータスメッセージ |
 | worldLevel | 世界ランク |
@@ -44,14 +125,14 @@ ID別の文字の基本データについては、[store/characters.json](https:
 #### showAvatarInfoList
 
 | 名前 | 説明 |
-| :--- | :--------- | 
+| :--- | :--------- |
 | avatarId | キャラクターID |
 | level | キャラクターLv |
 | costumeId | キャラクター衣装ID 詳細は[store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)内の`"Costumes"`に定義されています  |
 
 ### avatarInfoList
 
-ID別の文字の基本データについては、[store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)にアクセスしてください。  
+ID別の文字の基本データについては、[store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)にアクセスしてください。
 追加情報については、[キャラクターデータ](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarExcelConfigData.json)を確認してください。
 
 | 名前 | 説明 |
@@ -61,7 +142,7 @@ ID別の文字の基本データについては、[store/characters.json](https:
 | [propMap](#propmap) | 文字情報プロパティ一覧 |
 | fightPropMap -> `{id: value}` |  キャラクターの戦闘プロパティのマップ。<br>[IDの定義](#fightprop)を確認してください |
 | skillDepotId | キャラクタースキルセットID <br />[Skills Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) ->     `"id"`|
-| inherentProudSkillList | 解放された固有天賦のIDリスト<br />[詳細情報](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` | 
+| inherentProudSkillList | 解放された固有天賦のIDリスト<br />[詳細情報](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` |
 | skillLevelMap -> `{skill_id: level}`| スキルレベルのマップ <br /> [詳細情報](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` |
 | [equipList](#equiplist) | 武器と聖遺物のリスト |
 | fetterInfo.expLevel  | 好感度Lv |
@@ -71,7 +152,7 @@ ID別の文字の基本データについては、[store/characters.json](https:
 | 名前 | 説明 |
 | :--- | :--------- |
 | type | プロパティタイプのID 詳細は[IDの定義](#prop)を参照してください |
-| ival | 無効な値(これを無視してください) |
+| ival | 無効な値(これは無視してください) |
 | val  | プロパティの値 |
 
 #### equipList
@@ -132,7 +213,7 @@ ID別の文字の基本データについては、[store/characters.json](https:
 | ID | 説明 |
 | :--: | :---------- |
 | 1001 | 経験値 |
-| 1002 | 突破段階 | 
+| 1002 | 突破段階 |
 | 4001 | レベル |
 
 ### FightProp
@@ -229,7 +310,7 @@ ID別の文字の基本データについては、[store/characters.json](https:
 | :--- | :---------- |
 | EQUIP_BRACER | 花 |
 | EQUIP_NECKLACE | 羽 |
-| EQUIP_SHOES | 時計 | 
+| EQUIP_SHOES | 時計 |
 | EQUIP_RING | 杯 |
 | EQUIP_DRESS | 冠 |
 
@@ -243,7 +324,7 @@ ID別の文字の基本データについては、[store/characters.json](https:
 | FIGHT_PROP_DEFENSE | 防御力固定値 |
 | FIGHT_PROP_HP_PERCENT | HP% |
 | FIGHT_PROP_ATTACK_PERCENT | 攻撃力% |
-| FIGHT_PROP_DEFENSE_PERCENT | 防御力% | 
+| FIGHT_PROP_DEFENSE_PERCENT | 防御力% |
 | FIGHT_PROP_CRITICAL | 会心率 |
 | FIGHT_PROP_CRITICAL_HURT | 会心ダメージ |
 | FIGHT_PROP_CHARGE_EFFICIENCY | 元素チャージ効率 |
@@ -260,8 +341,8 @@ ID別の文字の基本データについては、[store/characters.json](https:
 
 ## アイコンと画像
 
-`https://enka.network/ui/[icon_name].png`でキャラクター、武器、聖遺物のアイコンを得られます  
-通常、アイコン名は`"UI_"`または`"Skill_"`で始まる[characters talents](#キャラクターと天賦)を表します  
+`https://enka.network/ui/[icon_name].png`でキャラクター、武器、聖遺物のアイコンを得られます
+通常、アイコン名は`"UI_"`または`"Skill_"`で始まる[characters talents](#キャラクターと天賦)を表します
 例： https://enka.network/ui/UI_AvatarIcon_Side_Ambor.png
 
 ### 武器と聖遺物
@@ -273,11 +354,21 @@ ID別の文字の基本データについては、[store/characters.json](https:
 [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)から"UI_XXXXXX"または"Skill_XXXXXX"を探します
 
 ## 言語情報
-[store/loc.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/loc.json)で各言語の翻訳文字列を得る事が出来ます。  
+[store/loc.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/loc.json)で各言語の翻訳文字列を得る事が出来ます。
 この時使用されるキー文字列は
-* [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)内の`"NameTextMapHash"`  
+* [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)内の`"NameTextMapHash"`
 * [flat](#flat)の`"nameTextHashMap"` `"setNameTextHashMap"`
 * [AppendProp](#appendprop) の名前。例：`"FIGHT_PROP_HP"` `"FIGHT_PROP_HEAL_ADD"`
 等です
 
 その他の追加情報を[TextMap Data](https://github.com/Dimbreath/GenshinData/tree/master/TextMap)で得る事が出来ます。ゲームでサポートされている言語のみが含まれます。
+
+## Wrappers
+
+TS/JS - https://www.npmjs.com/package/enkanetwork.js - [Jelosus1](https://github.com/Jelosus2)
+
+TS/JS - https://github.com/yuko1101/enka-network-api - [yuko1101](https://github.com/yuko1101)
+
+Rust - https://github.com/eratou/enkanetwork-rs - [eratou](https://github.com/eratou)
+
+Python - https://github.com/mrwan200/enkanetwork.py - [mrwan200](https://github.com/mrwan200)
