@@ -26,7 +26,7 @@ Por ejemplo https://enka.network/u/700378769/__data.json
 ### playerInfo
 
 Para obtener datos básicos de personajes por la ID, ve a [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json).  <br />
-Para obtener información adicional, revisa los [Datos de Personajes](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarExcelConfigData.json).
+Para obtener información adicional, revisa los [Datos de Personajes](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarExcelConfigData.json).
 
 | Nombre | Descripción |
 | :--- | :--------- | 
@@ -52,7 +52,7 @@ Para obtener información adicional, revisa los [Datos de Personajes](https://gi
 ### avatarInfoList
 
 Para obtener datos básicos de personajes por la ID, ve a [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json).  <br />
-Para obtener información adicional, revisa los [Datos de Personajes](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarExcelConfigData.json).
+Para obtener información adicional, revisa los [Datos de Personajes](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarExcelConfigData.json).
 
 | Nombre | Descripción |
 | :--- | :---------- |
@@ -60,9 +60,9 @@ Para obtener información adicional, revisa los [Datos de Personajes](https://gi
 | talentIdList | Lista de las IDs de las constelaciones <br /> No hay datos si la constelación es 0 |
 | [propMap](#propmap) | Lista de propiedades de información del personaje |
 | fightPropMap -> `{id: value}` |  Mapa de las propiedades de combate del personaje. <br />Revisa la [Definición de las IDs](#fightprop)|
-| skillDepotId | ID del conjunto de habilidades del personaje <br />[Datos de las Habilidades](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) ->     `"id"`|
-| inherentProudSkillList | Lista de IDs de la habilidad desbloqueada <br />[Datos de las Habilidades](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` | 
-| skillLevelMap -> `{skill_id: level}`| Mapa de los niveles de las habilidades <br /> [Datos de las Habilidades](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` |
+| skillDepotId | ID del conjunto de habilidades del personaje <br />[Datos de las Habilidades](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) ->     `"id"`|
+| inherentProudSkillList | Lista de IDs de la habilidad desbloqueada <br />[Datos de las Habilidades](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` | 
+| skillLevelMap -> `{skill_id: level}`| Mapa de los niveles de las habilidades <br /> [Datos de las Habilidades](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` |
 | [equipList](#equiplist) | Lista del equipo: Arma y Artefactos |
 | fetterInfo.expLevel  | Nivel de amistad del personaje |
 
@@ -78,14 +78,14 @@ Para obtener información adicional, revisa los [Datos de Personajes](https://gi
 
 | Nombre | Descripción |
 | :--- | :--------- |
-| itemId | ID del quipo <br /> [Datos de los Artefactos](https://raw.githubusercontent.com/Dimbreath/GenshinData/master/ExcelBinOutput/ReliquaryExcelConfigData.json) -> `"id"` <br /> [Datos de las Armas](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/WeaponExcelConfigData.json) -> `"id"` |
+| itemId | ID del quipo <br /> [Datos de los Artefactos](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryExcelConfigData.json) -> `"id"` <br /> [Datos de las Armas](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/WeaponExcelConfigData.json) -> `"id"` |
 | [weapon](#weapon) `[Solo Armas]` | Información base del arma |
 | [reliquary](#reliquary) `[Solo Artefactos]` | Información base del artefacto |
 | [flat](#flat) | Información detallada del equipo |
 
 #### weapon
 
-Para obtener información adicional sobre las armas, revisa los [Datos de las Armas](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/WeaponExcelConfigData.json)
+Para obtener información adicional sobre las armas, revisa los [Datos de las Armas](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/WeaponExcelConfigData.json)
 
 | Nombre | Descripción |
 | :--- | :---------- |
@@ -96,13 +96,13 @@ Para obtener información adicional sobre las armas, revisa los [Datos de las Ar
 
 #### reliquary
 
-Para obtener información adicional sobre los artefactos, revisa los [Datos de los Artefactos](https://raw.githubusercontent.com/Dimbreath/GenshinData/master/ExcelBinOutput/ReliquaryExcelConfigData.json)
+Para obtener información adicional sobre los artefactos, revisa los [Datos de los Artefactos](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryExcelConfigData.json)
 
 | Nombre | Descripción |
 | :--- | :---------- |
 | level | Nivel del artefacto `[1-21]` |
-| mainPropId | ID del stat principal <br /> [Datos de los MainProps](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/ReliquaryMainPropExcelConfigData.json) |
-| appendPropIdList | Lista de ids de los stats secundarios del artefacto <br /> [Datos de los AppendProp](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/ReliquaryAffixExcelConfigData.json) |
+| mainPropId | ID del stat principal <br /> [Datos de los MainProps](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryMainPropExcelConfigData.json) |
+| appendPropIdList | Lista de ids de los stats secundarios del artefacto <br /> [Datos de los AppendProp](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryAffixExcelConfigData.json) |
 
 #### flat
 
@@ -236,5 +236,5 @@ Ve a [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master
 A lo mejor notas que `"NameTextMapHash"` en [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json), `"nameTextHashMap"` y `"setNameTextHashMap"` en [flat](#flat) podrían ser usados como llave para obtener la localización básica de los datos de personajes, armas y artefactos de [store/loc.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/loc.json).  
 También puedes obtener la localización de los datos de [AppendProp](#appendprop) usando la propiedad como llave - `"FIGHT_PROP_HP"`, `"FIGHT_PROP_HEAL_ADD"` etc.
 
-Para obtener información adicional sobre nombres, descripciones, etc, revisa los [Datos de los TextMap](https://github.com/Dimbreath/GenshinData/tree/master/TextMap), solo incluye idiomas soportados dentro del juego. 
+Para obtener información adicional sobre nombres, descripciones, etc, revisa los [Datos de los TextMap](https://gitlab.com/Dimbreath/AnimeGameData/-/tree/master/TextMap), solo incluye idiomas soportados dentro del juego. 
 
