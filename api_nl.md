@@ -23,7 +23,7 @@ Als voorbeeld https://enka.network/api/uid/700378769. Deze haalt de informatie v
 ### playerInfo
 
 Voor basisgegevens van karakters op ID ga naar [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json).  <br />
-Kijk voor meer informatie op de [Personages gegevens](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarExcelConfigData.json).
+Kijk voor meer informatie op de [Personages gegevens](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarExcelConfigData.json).
 
 | Naam                                      | Beschrijving                        |
 |:------------------------------------------|:------------------------------------| 
@@ -49,7 +49,7 @@ Kijk voor meer informatie op de [Personages gegevens](https://github.com/Dimbrea
 ### avatarInfoList
 
 Voor basisgegevens van personages op ID kijk naar [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json).  <br />
-Kijk voor meer informatie in de [Personages gegevens](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarExcelConfigData.json).
+Kijk voor meer informatie in de [Personages gegevens](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarExcelConfigData.json).
 
 | Naam                                 | Beschrijving                                                                                                                                                                                                    |
 |:-------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -57,9 +57,9 @@ Kijk voor meer informatie in de [Personages gegevens](https://github.com/Dimbrea
 | talentIdList                         | Lijst met constellaties-ID's <br /> Er zijn geen gegevens als er 0 constellaties zijn                                                                                                                           |
 | [propMap](#propmap)                  | Eigenschappenlijst van de personage                                                                                                                                                                             |
 | fightPropMap -> `{id: value}`        | Kaart met gevechtseigenschappen van personages. <br />Bekijk de [Definitions for IDs](#fightprop)                                                                                                               |
-| skillDepotId                         | ID van de vaardighedenset van het personage <br />[Vaardigheden gegevens](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) ->     `"id"`               |
-| inherentProudSkillList               | Lijst met ontgrendelde vaardigheids-ID's <br />[Vaardigheden gegevens](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` | 
-| skillLevelMap -> `{skill_id: level}` | Kaart met vaardigheidsniveaus <br /> [Vaardigheden gegevens](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"`           |
+| skillDepotId                         | ID van de vaardighedenset van het personage <br />[Vaardigheden gegevens](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) ->     `"id"`               |
+| inherentProudSkillList               | Lijst met ontgrendelde vaardigheids-ID's <br />[Vaardigheden gegevens](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` | 
+| skillLevelMap -> `{skill_id: level}` | Kaart met vaardigheidsniveaus <br /> [Vaardigheden gegevens](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"`           |
 | [equipList](#equiplist)              | Lijst met uitrustingen: Wapen, Artefacts                                                                                                                                                                        |
 | fetterInfo.expLevel                  | Personage vriendschapniveau                                                                                                                                                                                     |
 
@@ -75,14 +75,14 @@ Kijk voor meer informatie in de [Personages gegevens](https://github.com/Dimbrea
 
 | Naam                                             | Beschrijving                                                                                                                                                                                                                                                                                           |
 |:-------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| itemId                                           | Uitrusting-ID <br /> [Gegevens over artefacten](https://raw.githubusercontent.com/Dimbreath/GenshinData/master/ExcelBinOutput/ReliquaryExcelConfigData.json) -> `"id"` <br /> [Weapons Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/WeaponExcelConfigData.json) -> `"id"` |
+| itemId                                           | Uitrusting-ID <br /> [Gegevens over artefacten](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryExcelConfigData.json) -> `"id"` <br /> [Weapons Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/WeaponExcelConfigData.json) -> `"id"` |
 | [weapon](#weapon) `[Alleen voor wapen]`          | Wapenbasis informatie                                                                                                                                                                                                                                                                                  |
 | [reliquary](#reliquary) `[Alleen voor artefact]` | Artefactenbasis informatie                                                                                                                                                                                                                                                                             |
 | [flat](#flat)                                    | Gedetailleerde informatie over de uitrusting                                                                                                                                                                                                                                                           |
 
 #### weapon
 
-Voor meer informatie over wapens kijk in de [Gegevens over wapens](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/WeaponExcelConfigData.json)
+Voor meer informatie over wapens kijk in de [Gegevens over wapens](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/WeaponExcelConfigData.json)
 
 | Naam         | Beschrijving                     |
 |:-------------|:---------------------------------|
@@ -93,13 +93,13 @@ Voor meer informatie over wapens kijk in de [Gegevens over wapens](https://githu
 
 #### reliquary
 
-Voor meer informatie over artefacten kijk in de [Gegevens over artefacten](https://raw.githubusercontent.com/Dimbreath/GenshinData/master/ExcelBinOutput/ReliquaryExcelConfigData.json)
+Voor meer informatie over artefacten kijk in de [Gegevens over artefacten](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryExcelConfigData.json)
 
 | Naam             | Beschrijving                                                                                                                                                          |
 |:-----------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | level            | Artefact level `[1-21]`                                                                                                                                               |
-| mainPropId       | Artefact hoofdstatistieken-ID <br /> [MainProps Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/ReliquaryMainPropExcelConfigData.json)              |
-| appendPropIdList | Lijst met ID's van de artefact-substatistieken <br /> [AppendProp Data](https://github.com/Dimbreath/GenshinData/blob/master/ExcelBinOutput/ReliquaryAffixExcelConfigData.json) |
+| mainPropId       | Artefact hoofdstatistieken-ID <br /> [MainProps Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryMainPropExcelConfigData.json)              |
+| appendPropIdList | Lijst met ID's van de artefact-substatistieken <br /> [AppendProp Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryAffixExcelConfigData.json) |
 
 #### flat
 
@@ -273,5 +273,5 @@ Ga naar [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/mas
 Mogelijk ziet u `"NameTextMapHash"` in [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json), `"nameTextHashMap"` en `" setNameTextHashMap"` op [flat](#flat) die kan worden gebruikt als sleutel om basis lokalisatie gegevens van personages, wapens en artefacten op te halen uit [store/loc.json](https://github.com/EnkaNetwork/API- docs/blob/master/store/loc.json).
 U kunt ook lokalisatiegegevens van [AppendProp](#appendprop) verkrijgen door de eigenschapnaam als sleutel te gebruiken - `"FIGHT_PROP_HP"`, `"FIGHT_PROP_HEAL_ADD"` enz.
 
-Raadpleeg voor aanvullende informatie over namen, beschrijvingen en dergelijke de [TextMap Data](https://github.com/Dimbreath/GenshinData/tree/master/TextMap), bevat alleen talen die door het spel worden ondersteund.
+Raadpleeg voor aanvullende informatie over namen, beschrijvingen en dergelijke de [TextMap Data](https://gitlab.com/Dimbreath/AnimeGameData/-/tree/master/TextMap), bevat alleen talen die door het spel worden ondersteund.
 
