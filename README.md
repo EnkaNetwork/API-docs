@@ -14,3 +14,4 @@ Select your preferred language:
 * [CHS | API 文档](/api_chs.md)
 * [NL | API-documentatie](/api_nl.md)
 * [KR | API 문서](/api_kr.md)
+* [RU | API-документация](/api_ru.md)
