@@ -370,3 +370,5 @@ TS/JS - https://www.npmjs.com/package/enkanetwork.js - [Jelosus1](https://github
 TS/JS - https://github.com/yuko1101/enka-network-api - [yuko1101](https://github.com/yuko1101)
 
 Python - https://github.com/mrwan200/enkanetwork.py - [mrwan200](https://github.com/mrwan200)
+
+Java - https://github.com/kazuryyx/EnkaNetworkAPI - [kazury](https://github.com/kazuryyx)

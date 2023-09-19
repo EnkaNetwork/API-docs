@@ -368,3 +368,5 @@ TS/JS - https://github.com/yuko1101/enka-network-api - [yuko1101](https://github
 Rust - https://github.com/eratou/enkanetwork-rs - [eratou](https://github.com/eratou)
 
 Python - https://github.com/mrwan200/enkanetwork.py - [mrwan200](https://github.com/mrwan200)
+
+Java - https://github.com/kazuryyx/EnkaNetworkAPI - [kazury](https://github.com/kazuryyx)

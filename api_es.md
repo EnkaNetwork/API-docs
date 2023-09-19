@@ -238,3 +238,14 @@ También puedes obtener la localización de los datos de [AppendProp](#appendpro
 
 Para obtener información adicional sobre nombres, descripciones, etc, revisa los [Datos de los TextMap](https://gitlab.com/Dimbreath/AnimeGameData/-/tree/master/TextMap), solo incluye idiomas soportados dentro del juego. 
 
+## Wrappers
+
+TS/JS - https://www.npmjs.com/package/enkanetwork.js - [Jelosus1](https://github.com/Jelosus2)
+
+TS/JS - https://github.com/yuko1101/enka-network-api - [yuko1101](https://github.com/yuko1101)
+
+Rust - https://github.com/eratou/enkanetwork-rs - [eratou](https://github.com/eratou)
+
+Python - https://github.com/mrwan200/enkanetwork.py - [mrwan200](https://github.com/mrwan200)
+
+Java - https://github.com/kazuryyx/EnkaNetworkAPI - [kazury](https://github.com/kazuryyx)
