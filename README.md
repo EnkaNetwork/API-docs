@@ -15,3 +15,4 @@ Select your preferred language:
 * [NL | API-documentatie](/api_nl.md)
 * [KR | API 문서](/api_kr.md)
 * [RU | API-документация](/api_ru.md)
+* [ID | Dokumentasi API](/api_id.md)
