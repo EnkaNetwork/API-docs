@@ -4,8 +4,11 @@ Enka.Network is a service that allows to fetch (full) player data using an easy 
 
 The responses will have the original data structure of the showcase, with some additional fields to provide more data or context.
 
-Select your preferred language:
+### [Live API status](http://status.enka.network/)
 
+-----
+
+Select your preferred language:
 
 * [API docs](/api.md)
 * [JA | APIドキュメント](/api_ja.md)
