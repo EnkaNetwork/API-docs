@@ -207,7 +207,7 @@ Para obtener información adicional sobre los artefactos, revisa los [Datos de l
 | FIGHT_PROP_CRITICAL_HURT | Daño Crítico |
 | FIGHT_PROP_CHARGE_EFFICIENCY | Recarga de Energía |
 | FIGHT_PROP_HEAL_ADD | Bono de Curación |
-| FIGHT_PROP_ELEMENT_mainY | Maestría Elemental |
+| FIGHT_PROP_ELEMENT_MASTERY | Maestría Elemental |
 | FIGHT_PROP_PHYSICAL_ADD_HURT | Bono de Daño Físico |
 | FIGHT_PROP_FIRE_ADD_HURT | Bono de Daño Pyro |
 | FIGHT_PROP_ELEC_ADD_HURT | Bono de Daño Electro |

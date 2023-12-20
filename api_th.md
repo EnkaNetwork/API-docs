@@ -286,7 +286,7 @@
 | FIGHT_PROP_CRITICAL_HURT | ความแรงคริ |
 | FIGHT_PROP_CHARGE_EFFICIENCY | ฟื้นฟูพลังงาน |
 | FIGHT_PROP_HEAL_ADD | โบนัสรักษา |
-| FIGHT_PROP_ELEMENT_mainY | ความชำนาญธาตุ |
+| FIGHT_PROP_ELEMENT_MASTERY | ความชำนาญธาตุ |
 | FIGHT_PROP_PHYSICAL_ADD_HURT | โบนัสความเสียหายกายภาพ |
 | FIGHT_PROP_FIRE_ADD_HURT | โบนัสความเสียหายไฟ |
 | FIGHT_PROP_ELEC_ADD_HURT | โบนัสความเสียหายไฟฟ้า |

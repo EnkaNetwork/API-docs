@@ -328,7 +328,7 @@ For any additional info about artifacts, check the [Artifacts Data](https://gitl
 | FIGHT_PROP_CRITICAL_HURT | Crit DMG |
 | FIGHT_PROP_CHARGE_EFFICIENCY | Energy Recharge |
 | FIGHT_PROP_HEAL_ADD | Healing Bonus |
-| FIGHT_PROP_ELEMENT_mainY | Elemental mainy |
+| FIGHT_PROP_ELEMENT_MASTERY | Elemental mainy |
 | FIGHT_PROP_PHYSICAL_ADD_HURT | Physical DMG Bonus |
 | FIGHT_PROP_FIRE_ADD_HURT | Pyro DMG Bonus |
 | FIGHT_PROP_ELEC_ADD_HURT | Electro DMG Bonus |

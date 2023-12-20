@@ -325,7 +325,7 @@
 | FIGHT_PROP_CRITICAL_HURT | Крит. урон |
 | FIGHT_PROP_CHARGE_EFFICIENCY | Восст. энергии |
 | FIGHT_PROP_HEAL_ADD | Бонус лечения |
-| FIGHT_PROP_ELEMENT_mainY | Мастерсто стихий |
+| FIGHT_PROP_ELEMENT_MASTERY | Мастерсто стихий |
 | FIGHT_PROP_PHYSICAL_ADD_HURT | Бонус физ. урона |
 | FIGHT_PROP_FIRE_ADD_HURT | Бонус Пиро урона |
 | FIGHT_PROP_ELEC_ADD_HURT | Бонус Электро урона |

@@ -244,7 +244,7 @@ Voor meer informatie over artefacten kijk in de [Gegevens over artefacten](https
 | FIGHT_PROP_CRITICAL_HURT         | Crit DMG                |
 | FIGHT_PROP_CHARGE_EFFICIENCY     | Energie opladen         |
 | FIGHT_PROP_HEAL_ADD              | Genezingsbonus          |
-| FIGHT_PROP_ELEMENT_mainY       | Elementair meesterschap |
+| FIGHT_PROP_ELEMENT_MASTERY       | Elementair meesterschap |
 | FIGHT_PROP_PHYSICAL_ADD_HURT     | Fysieke DMG-bonus       |
 | FIGHT_PROP_FIRE_ADD_HURT         | Pyro DMG-bonus          |
 | FIGHT_PROP_ELEC_ADD_HURT         | Electro DMG-bonus       |
