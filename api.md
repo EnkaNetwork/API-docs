@@ -217,84 +217,84 @@ For any additional info about artifacts, check the [Artifacts Data](https://gitl
 
 ### FightProp
 
-| Type | Description |
-| :--: | :---------- |
-| 1 | Base HP |
-| 2 | HP |
-| 3 | HP% |
-| 4 | Base ATK |
-| 5 | ATK |
-| 6 | ATK% |
-| 7 | Base DEF |
-| 8 | DEF |
-| 9 | DEF% |
-| 10 | Base SPD |
-| 11 | SPD% |
-| 20 | CRIT Rate |
-| 22 | CRIT DMG |
-| 23 | Energy Recharge |
-| 26 | Healing Bonus |
-| 27 | Incoming Healing Bonus |
-| 28 | Elemental mainy |
-| 29 | Physical RES |
-| 30 | Physical DMG Bonus |
-| 40 | Pyro DMG Bonus |
-| 41 | Electro DMG Bonus |
-| 42 | Hydro DMG Bonus |
-| 43 | Dendro DMG Bonus |
-| 44 | Anemo DMG Bonus |
-| 45 | Geo DMG Bonus |
-| 46 | Cryo DMG Bonus |
-| 50 | Pyro RES |
-| 51 | Electro RES |
-| 52 | Hydro RES |
-| 53 | Dendro RES |
-| 54 | Anemo RES |
-| 55 | Geo RES |
-| 56 | Cryo RES |
-| 70 | Pyro Enegry Cost |
-| 71 | Electro Energy Cost |
-| 72 | Hydro Energy Cost |
-| 73 | Dendro Energy Cost |
-| 74 | Anemo Energy Cost |
-| 75 | Cryo Energy Cost |
-| 76 | Geo Energy Cost |
-| 80 | Cooldown reduction |
-| 81 | Shield Strength |
-| 1000 | Current Pyro Energy |
-| 1001 | Current Electro Energy |
-| 1002 | Current Hydro Energy |
-| 1003 | Current Dendro Energy |
-| 1004 | Current Anemo Energy |
-| 1005 | Current Cryo Energy |
-| 1006 | Current Geo Energy |
-| 1010 | Current HP |
-| 2000 | Max HP |
-| 2001 | ATK |
-| 2002 | DEF |
-| 2003 | SPD |
-| 3025 | Elemental reaction CRIT Rate |
-| 3026 | Elemental reaction CRIT DMG |
-| 3027 | Elemental reaction (Overloaded) CRIT Rate |
-| 3028 | Elemental reaction (Overloaded) CRIT DMG |
-| 3029 | Elemental reaction (Swirl) CRIT Rate |
-| 3030 | Elemental reaction (Swirl) CRIT DMG |
-| 3031 | Elemental reaction (Electro-Charged) CRIT Rate |
-| 3032 | Elemental reaction (Electro-Charged) CRIT DMG |
-| 3033 | Elemental reaction (Superconduct) CRIT Rate |
-| 3034 | Elemental reaction (Superconduct) CRIT DMG |
-| 3035 | Elemental reaction (Burn) CRIT Rate |
-| 3036 | Elemental reaction (Burn) CRIT DMG |
+| Type | Description                                       |
+| :--: |:--------------------------------------------------|
+| 1 | Base HP                                           |
+| 2 | HP                                                |
+| 3 | HP%                                               |
+| 4 | Base ATK                                          |
+| 5 | ATK                                               |
+| 6 | ATK%                                              |
+| 7 | Base DEF                                          |
+| 8 | DEF                                               |
+| 9 | DEF%                                              |
+| 10 | Base SPD                                          |
+| 11 | SPD%                                              |
+| 20 | CRIT Rate                                         |
+| 22 | CRIT DMG                                          |
+| 23 | Energy Recharge                                   |
+| 26 | Healing Bonus                                     |
+| 27 | Incoming Healing Bonus                            |
+| 28 | Elemental Mastery                                 |
+| 29 | Physical RES                                      |
+| 30 | Physical DMG Bonus                                |
+| 40 | Pyro DMG Bonus                                    |
+| 41 | Electro DMG Bonus                                 |
+| 42 | Hydro DMG Bonus                                   |
+| 43 | Dendro DMG Bonus                                  |
+| 44 | Anemo DMG Bonus                                   |
+| 45 | Geo DMG Bonus                                     |
+| 46 | Cryo DMG Bonus                                    |
+| 50 | Pyro RES                                          |
+| 51 | Electro RES                                       |
+| 52 | Hydro RES                                         |
+| 53 | Dendro RES                                        |
+| 54 | Anemo RES                                         |
+| 55 | Geo RES                                           |
+| 56 | Cryo RES                                          |
+| 70 | Pyro Enegry Cost                                  |
+| 71 | Electro Energy Cost                               |
+| 72 | Hydro Energy Cost                                 |
+| 73 | Dendro Energy Cost                                |
+| 74 | Anemo Energy Cost                                 |
+| 75 | Cryo Energy Cost                                  |
+| 76 | Geo Energy Cost                                   |
+| 80 | Cooldown reduction                                |
+| 81 | Shield Strength                                   |
+| 1000 | Current Pyro Energy                               |
+| 1001 | Current Electro Energy                            |
+| 1002 | Current Hydro Energy                              |
+| 1003 | Current Dendro Energy                             |
+| 1004 | Current Anemo Energy                              |
+| 1005 | Current Cryo Energy                               |
+| 1006 | Current Geo Energy                                |
+| 1010 | Current HP                                        |
+| 2000 | Max HP                                            |
+| 2001 | ATK                                               |
+| 2002 | DEF                                               |
+| 2003 | SPD                                               |
+| 3025 | Elemental reaction CRIT Rate                      |
+| 3026 | Elemental reaction CRIT DMG                       |
+| 3027 | Elemental reaction (Overloaded) CRIT Rate         |
+| 3028 | Elemental reaction (Overloaded) CRIT DMG          |
+| 3029 | Elemental reaction (Swirl) CRIT Rate              |
+| 3030 | Elemental reaction (Swirl) CRIT DMG               |
+| 3031 | Elemental reaction (Electro-Charged) CRIT Rate    |
+| 3032 | Elemental reaction (Electro-Charged) CRIT DMG     |
+| 3033 | Elemental reaction (Superconduct) CRIT Rate       |
+| 3034 | Elemental reaction (Superconduct) CRIT DMG        |
+| 3035 | Elemental reaction (Burn) CRIT Rate               |
+| 3036 | Elemental reaction (Burn) CRIT DMG                |
 | 3037 | Elemental reaction (Frozen (Shattered)) CRIT Rate |
-| 3038 | Elemental reaction (Frozen (Shattered)) CRIT DMG |
-| 3039 | Elemental reaction (Bloom) CRIT Rate |
-| 3040 | Elemental reaction (Bloom) CRIT DMG |
-| 3041 | Elemental reaction (Burgeon) CRIT Rate |
-| 3042 | Elemental reaction (Burgeon) CRIT DMG |
-| 3043 | Elemental reaction (Hyperbloom) CRIT Rate |
-| 3044 | Elemental reaction (Hyperbloom) CRIT DMG |
-| 3045 | Base Elemental reaction CRIT Rate |
-| 3046 | Base Elemental reaction CRIT DMG |
+| 3038 | Elemental reaction (Frozen (Shattered)) CRIT DMG  |
+| 3039 | Elemental reaction (Bloom) CRIT Rate              |
+| 3040 | Elemental reaction (Bloom) CRIT DMG               |
+| 3041 | Elemental reaction (Burgeon) CRIT Rate            |
+| 3042 | Elemental reaction (Burgeon) CRIT DMG             |
+| 3043 | Elemental reaction (Hyperbloom) CRIT Rate         |
+| 3044 | Elemental reaction (Hyperbloom) CRIT DMG          |
+| 3045 | Base Elemental reaction CRIT Rate                 |
+| 3046 | Base Elemental reaction CRIT DMG                  |
 
 ### ItemType
 
@@ -315,28 +315,28 @@ For any additional info about artifacts, check the [Artifacts Data](https://gitl
 
 ### AppendProp
 
-| Name | Description |
-| :--- | :---------- |
-| FIGHT_PROP_BASE_ATTACK `[Weapon]` | Base ATK |
-| FIGHT_PROP_HP | Flat HP |
-| FIGHT_PROP_ATTACK | Flat ATK |
-| FIGHT_PROP_DEFENSE | Flat DEF |
-| FIGHT_PROP_HP_PERCENT | HP% |
-| FIGHT_PROP_ATTACK_PERCENT | ATK% |
-| FIGHT_PROP_DEFENSE_PERCENT | DEF% | 
-| FIGHT_PROP_CRITICAL | Crit RATE |
-| FIGHT_PROP_CRITICAL_HURT | Crit DMG |
-| FIGHT_PROP_CHARGE_EFFICIENCY | Energy Recharge |
-| FIGHT_PROP_HEAL_ADD | Healing Bonus |
-| FIGHT_PROP_ELEMENT_MASTERY | Elemental mainy |
+| Name | Description        |
+| :--- |:-------------------|
+| FIGHT_PROP_BASE_ATTACK `[Weapon]` | Base ATK           |
+| FIGHT_PROP_HP | Flat HP            |
+| FIGHT_PROP_ATTACK | Flat ATK           |
+| FIGHT_PROP_DEFENSE | Flat DEF           |
+| FIGHT_PROP_HP_PERCENT | HP%                |
+| FIGHT_PROP_ATTACK_PERCENT | ATK%               |
+| FIGHT_PROP_DEFENSE_PERCENT | DEF%               | 
+| FIGHT_PROP_CRITICAL | Crit RATE          |
+| FIGHT_PROP_CRITICAL_HURT | Crit DMG           |
+| FIGHT_PROP_CHARGE_EFFICIENCY | Energy Recharge    |
+| FIGHT_PROP_HEAL_ADD | Healing Bonus      |
+| FIGHT_PROP_ELEMENT_MASTERY | Elemental Mastery  |
 | FIGHT_PROP_PHYSICAL_ADD_HURT | Physical DMG Bonus |
-| FIGHT_PROP_FIRE_ADD_HURT | Pyro DMG Bonus |
-| FIGHT_PROP_ELEC_ADD_HURT | Electro DMG Bonus |
-| FIGHT_PROP_WATER_ADD_HURT | Hydro DMG Bonus |
-| FIGHT_PROP_WIND_ADD_HURT | Anemo DMG Bonus |
-| FIGHT_PROP_ICE_ADD_HURT |  Cryo DMG Bonus |
-| FIGHT_PROP_ROCK_ADD_HURT | Geo DMG Bonus |
-| FIGHT_PROP_GRASS_ADD_HURT | Dendro DMG Bonus |
+| FIGHT_PROP_FIRE_ADD_HURT | Pyro DMG Bonus     |
+| FIGHT_PROP_ELEC_ADD_HURT | Electro DMG Bonus  |
+| FIGHT_PROP_WATER_ADD_HURT | Hydro DMG Bonus    |
+| FIGHT_PROP_WIND_ADD_HURT | Anemo DMG Bonus    |
+| FIGHT_PROP_ICE_ADD_HURT | Cryo DMG Bonus     |
+| FIGHT_PROP_ROCK_ADD_HURT | Geo DMG Bonus      |
+| FIGHT_PROP_GRASS_ADD_HURT | Dendro DMG Bonus   |
 
 ## Icons and Images
 
