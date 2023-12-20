@@ -106,7 +106,7 @@ As outlined in [UID endpoints](#uid-endpoints), when you make a UID request, you
 ### playerInfo
 
 For basic data of characters by ID, go to [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json).  <br />
-For any additional info, check the [Characters Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarExcelConfigData.json).
+For any additional info, check the [Characters Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarExcelConfigData.json).
 
 | Name | Description |
 | :--- | :--------- | 
@@ -132,19 +132,19 @@ For any additional info, check the [Characters Data](https://gitlab.com/Dimbreat
 ### avatarInfoList
 
 For basic data of characters by ID, go to [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json).  <br />
-For any additional info, check the [Characters Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarExcelConfigData.json).
+For any additional info, check the [Characters Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarExcelConfigData.json).
 
-| Name | Description |
-| :--- | :---------- |
-| avatarID | Character ID |
-| talentIdList | List of Constellation IDs <br /> There is no data if 0 Constellation |
-| [propMap](#propmap) | Character Info Properties List |
-| fightPropMap -> `{id: value}` |  Map of Character's Combat Properties. <br />Check the [Definitions for IDs](#fightprop)|
-| skillDepotId | Character Skill Set ID <br />[Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) ->     `"id"`|
-| inherentProudSkillList | List of Unlocked Skill Ids <br />[Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` | 
-| skillLevelMap -> `{skill_id: level}`| Map of Skill Levels <br /> [Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` |
-| [equipList](#equiplist) | List of Equipments: Weapon, Ariftacts |
-| fetterInfo.expLevel  | Character Friendship Level |
+| Name | Description                                                                                                                                                                               |
+| :--- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| avatarID | Character ID                                                                                                                                                                              |
+| talentIdList | List of Constellation IDs <br /> There is no data if 0 Constellation                                                                                                                      |
+| [propMap](#propmap) | Character Info Properties List                                                                                                                                                            |
+| fightPropMap -> `{id: value}` | Map of Character's Combat Properties. <br />Check the [Definitions for IDs](#fightprop)                                                                                                   |
+| skillDepotId | Character Skill Set ID <br />[Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) ->     `"id"`                      |
+| inherentProudSkillList | List of Unlocked Skill Ids <br />[Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` | 
+| skillLevelMap -> `{skill_id: level}`| Map of Skill Levels <br /> [Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"`     |
+| [equipList](#equiplist) | List of Equipments: Weapon, Ariftacts                                                                                                                                                     |
+| fetterInfo.expLevel  | Character Friendship Level                                                                                                                                                                |
 
 #### propMap
 
@@ -158,14 +158,14 @@ For any additional info, check the [Characters Data](https://gitlab.com/Dimbreat
 
 | Name | Description |
 | :--- | :--------- |
-| itemId | Equipment ID <br /> [Artifacts Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryExcelConfigData.json) -> `"id"` <br /> [Weapons Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/WeaponExcelConfigData.json) -> `"id"` |
+| itemId | Equipment ID <br /> [Artifacts Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/ReliquaryExcelConfigData.json) -> `"id"` <br /> [Weapons Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/WeaponExcelConfigData.json) -> `"id"` |
 | [weapon](#weapon) `[Weapon Only]` | Weapon Base Info  |
 | [reliquary](#reliquary) `[Artifact Only]` | Artifact Base Info  |
 | [flat](#flat) | Detailed Info of Equipment |
 
 #### weapon
 
-For any additional info about weapons, check the [Weapons Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/WeaponExcelConfigData.json)
+For any additional info about weapons, check the [Weapons Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/WeaponExcelConfigData.json)
 
 | Name | Description |
 | :--- | :---------- |
@@ -176,13 +176,13 @@ For any additional info about weapons, check the [Weapons Data](https://gitlab.c
 
 #### reliquary
 
-For any additional info about artifacts, check the [Artifacts Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryExcelConfigData.json)
+For any additional info about artifacts, check the [Artifacts Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/ReliquaryExcelConfigData.json)
 
 | Name | Description |
 | :--- | :---------- |
 | level | Artifact Level `[1-21]` |
-| mainPropId | Artifact Main Stat ID <br /> [MainProps Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryMainPropExcelConfigData.json) |
-| appendPropIdList | List of IDs of the artifact substats <br /> [AppendProp Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryAffixExcelConfigData.json) |
+| mainPropId | Artifact Main Stat ID <br /> [MainProps Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/ReliquaryMainPropExcelConfigData.json) |
+| appendPropIdList | List of IDs of the artifact substats <br /> [AppendProp Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/ReliquaryAffixExcelConfigData.json) |
 
 #### flat
 
@@ -235,7 +235,7 @@ For any additional info about artifacts, check the [Artifacts Data](https://gitl
 | 23 | Energy Recharge |
 | 26 | Healing Bonus |
 | 27 | Incoming Healing Bonus |
-| 28 | Elemental Mastery |
+| 28 | Elemental mainy |
 | 29 | Physical RES |
 | 30 | Physical DMG Bonus |
 | 40 | Pyro DMG Bonus |
@@ -328,7 +328,7 @@ For any additional info about artifacts, check the [Artifacts Data](https://gitl
 | FIGHT_PROP_CRITICAL_HURT | Crit DMG |
 | FIGHT_PROP_CHARGE_EFFICIENCY | Energy Recharge |
 | FIGHT_PROP_HEAL_ADD | Healing Bonus |
-| FIGHT_PROP_ELEMENT_MASTERY | Elemental Mastery |
+| FIGHT_PROP_ELEMENT_mainY | Elemental mainy |
 | FIGHT_PROP_PHYSICAL_ADD_HURT | Physical DMG Bonus |
 | FIGHT_PROP_FIRE_ADD_HURT | Pyro DMG Bonus |
 | FIGHT_PROP_ELEC_ADD_HURT | Electro DMG Bonus |
@@ -357,7 +357,7 @@ Go to [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/maste
 You may notice `"NameTextMapHash"` in [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json), `"nameTextHashMap"` and `"setNameTextHashMap"` at [flat](#flat) that could be used as a key to get basic localization data of characters, weapons and artifacts from [store/loc.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/loc.json).  
 Also you can get localization data of [AppendProp](#appendprop) by using property name as a key - `"FIGHT_PROP_HP"`, `"FIGHT_PROP_HEAL_ADD"` etc.
 
-For any additional info about names, descriptions and etc, check the [TextMap Data](https://gitlab.com/Dimbreath/AnimeGameData/-/tree/master/TextMap), only includes languages supported by game.
+For any additional info about names, descriptions and etc, check the [TextMap Data](https://gitlab.com/Dimbreath/AnimeGameData/-/tree/main/TextMap), only includes languages supported by game.
 
 ## Wrappers
 
