@@ -109,7 +109,7 @@
 ### playerInfo
 
 对于通过 ID 获取角色的基本信息，请前往 [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)。  <br />
-有关任何其他信息，请查看 [Characters Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarExcelConfigData.json)。
+有关任何其他信息，请查看 [Characters Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarExcelConfigData.json)。
 
 | 名称 | 描述 |
 | :--- | :--------- | 
@@ -135,19 +135,19 @@
 ### avatarInfoList
 
 对于通过 ID 获取角色的基本信息，请前往 [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)。  <br />
-有关任何其他信息，请查看 [Characters Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarExcelConfigData.json)。
+有关任何其他信息，请查看 [Characters Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarExcelConfigData.json)。
 
-| 名称 | 描述 |
-| :--- | :---------- |
-| avatarID | 角色 ID |
-| talentIdList | 命之座 ID 列表 <br /> 如果未解锁任何命之座则此数据不存在 |
-| [propMap](#propmap) | 角色属性列表 |
-| fightPropMap -> `{id: value}` |  角色战斗属性 Map <br />请查看 [ID 定义](#fightprop)|
-| skillDepotId | 角色天赋 ID <br />[Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) ->     `"id"`|
-| inherentProudSkillList | 固定天赋列表 ID <br />[Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` | 
-| skillLevelMap -> `{skill_id: level}`| 天赋等级 Map <br /> [Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` |
-| [equipList](#equiplist) | 装备列表：武器、圣遗物 |
-| fetterInfo.expLevel  | 角色好感等级 |
+| 名称 | 描述                                                                                                                                                                       |
+| :--- |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| avatarID | 角色 ID                                                                                                                                                                    |
+| talentIdList | 命之座 ID 列表 <br /> 如果未解锁任何命之座则此数据不存在                                                                                                                                       |
+| [propMap](#propmap) | 角色属性列表                                                                                                                                                                   |
+| fightPropMap -> `{id: value}` | 角色战斗属性 Map <br />请查看 [ID 定义](#fightprop)                                                                                                                                 |
+| skillDepotId | 角色天赋 ID <br />[Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) ->     `"id"`                    |
+| inherentProudSkillList | 固定天赋列表 ID <br />[Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` | 
+| skillLevelMap -> `{skill_id: level}`| 天赋等级 Map <br /> [Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` |
+| [equipList](#equiplist) | 装备列表：武器、圣遗物                                                                                                                                                              |
+| fetterInfo.expLevel  | 角色好感等级                                                                                                                                                                   |
 
 #### propMap
 
@@ -159,16 +159,16 @@
 
 #### equipList
 
-| 名称 | 描述 |
-| :--- | :--------- |
-| itemId | 装备 ID <br /> [Artifacts Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryExcelConfigData.json) -> `"id"` <br /> [Weapons Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/WeaponExcelConfigData.json) -> `"id"` |
-| [weapon](#weapon) `[Weapon Only]` | 武器基本信息  |
-| [reliquary](#reliquary) `[Artifact Only]` | 圣遗物基本信息  |
-| [flat](#flat) | 装备详细信息 |
+| 名称 | 描述                                                                                                                                                                                                                                                                               |
+| :--- |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| itemId | 装备 ID <br /> [Artifacts Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/ReliquaryExcelConfigData.json) -> `"id"` <br /> [Weapons Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/WeaponExcelConfigData.json) -> `"id"` |
+| [weapon](#weapon) `[Weapon Only]` | 武器基本信息                                                                                                                                                                                                                                                                           |
+| [reliquary](#reliquary) `[Artifact Only]` | 圣遗物基本信息                                                                                                                                                                                                                                                                          |
+| [flat](#flat) | 装备详细信息                                                                                                                                                                                                                                                                           |
 
 #### weapon
 
-有关武器的任何其他信息，请查看 [Weapons Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/WeaponExcelConfigData.json)
+有关武器的任何其他信息，请查看 [Weapons Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/WeaponExcelConfigData.json)
 
 | 名称 | 描述 |
 | :--- | :---------- |
@@ -179,13 +179,13 @@
 
 #### reliquary
 
-有关圣遗物的任何其他信息，请查看 [Artifacts Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryExcelConfigData.json)
+有关圣遗物的任何其他信息，请查看 [Artifacts Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/ReliquaryExcelConfigData.json)
 
 | 名称 | 描述 |
 | :--- | :---------- |
 | level | 圣遗物等级 `[1-21]` |
-| mainPropId | 圣遗物主属性 ID <br /> [MainProps Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryMainPropExcelConfigData.json) |
-| appendPropIdList | 圣遗物副属性 ID 列表 <br /> [AppendProp Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryAffixExcelConfigData.json) |
+| mainPropId | 圣遗物主属性 ID <br /> [MainProps Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/ReliquaryMainPropExcelConfigData.json) |
+| appendPropIdList | 圣遗物副属性 ID 列表 <br /> [AppendProp Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/ReliquaryAffixExcelConfigData.json) |
 
 #### flat
 
@@ -361,7 +361,7 @@
 
 您还可以通过使用属性名称作为键来获取 [AppendProp](#appendprop) 中的本地化数据 —— 例如 `"FIGHT_PROP_HP"`、`"FIGHT_PROP_HEAL_ADD"` 等。
 
-有关名称、描述等的任何其他信息，请查看 [TextMap Data](https://gitlab.com/Dimbreath/AnimeGameData/-/tree/master/TextMap)，仅包括游戏支持的语言。
+有关名称、描述等的任何其他信息，请查看 [TextMap Data](https://gitlab.com/Dimbreath/AnimeGameData/-/tree/main/TextMap)，仅包括游戏支持的语言。
 
 ## 封装
 

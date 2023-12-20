@@ -106,7 +106,7 @@ As outlined in [UID endpoints](#uid-endpoints), when you make a UID request, you
 ### playerInfo
 
 For basic data of characters by ID, go to [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json).  <br />
-For any additional info, check the [Characters Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarExcelConfigData.json).
+For any additional info, check the [Characters Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarExcelConfigData.json).
 
 | Name | Description |
 | :--- | :--------- | 
@@ -132,19 +132,19 @@ For any additional info, check the [Characters Data](https://gitlab.com/Dimbreat
 ### avatarInfoList
 
 For basic data of characters by ID, go to [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json).  <br />
-For any additional info, check the [Characters Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarExcelConfigData.json).
+For any additional info, check the [Characters Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarExcelConfigData.json).
 
-| Name | Description |
-| :--- | :---------- |
-| avatarID | Character ID |
-| talentIdList | List of Constellation IDs <br /> There is no data if 0 Constellation |
-| [propMap](#propmap) | Character Info Properties List |
-| fightPropMap -> `{id: value}` |  Map of Character's Combat Properties. <br />Check the [Definitions for IDs](#fightprop)|
-| skillDepotId | Character Skill Set ID <br />[Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) ->     `"id"`|
-| inherentProudSkillList | List of Unlocked Skill Ids <br />[Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` | 
-| skillLevelMap -> `{skill_id: level}`| Map of Skill Levels <br /> [Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` |
-| [equipList](#equiplist) | List of Equipments: Weapon, Ariftacts |
-| fetterInfo.expLevel  | Character Friendship Level |
+| Name | Description                                                                                                                                                                               |
+| :--- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| avatarID | Character ID                                                                                                                                                                              |
+| talentIdList | List of Constellation IDs <br /> There is no data if 0 Constellation                                                                                                                      |
+| [propMap](#propmap) | Character Info Properties List                                                                                                                                                            |
+| fightPropMap -> `{id: value}` | Map of Character's Combat Properties. <br />Check the [Definitions for IDs](#fightprop)                                                                                                   |
+| skillDepotId | Character Skill Set ID <br />[Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) ->     `"id"`                      |
+| inherentProudSkillList | List of Unlocked Skill Ids <br />[Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` | 
+| skillLevelMap -> `{skill_id: level}`| Map of Skill Levels <br /> [Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"`     |
+| [equipList](#equiplist) | List of Equipments: Weapon, Ariftacts                                                                                                                                                     |
+| fetterInfo.expLevel  | Character Friendship Level                                                                                                                                                                |
 
 #### propMap
 
@@ -158,14 +158,14 @@ For any additional info, check the [Characters Data](https://gitlab.com/Dimbreat
 
 | Name | Description |
 | :--- | :--------- |
-| itemId | Equipment ID <br /> [Artifacts Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryExcelConfigData.json) -> `"id"` <br /> [Weapons Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/WeaponExcelConfigData.json) -> `"id"` |
+| itemId | Equipment ID <br /> [Artifacts Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/ReliquaryExcelConfigData.json) -> `"id"` <br /> [Weapons Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/WeaponExcelConfigData.json) -> `"id"` |
 | [weapon](#weapon) `[Weapon Only]` | Weapon Base Info  |
 | [reliquary](#reliquary) `[Artifact Only]` | Artifact Base Info  |
 | [flat](#flat) | Detailed Info of Equipment |
 
 #### weapon
 
-For any additional info about weapons, check the [Weapons Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/WeaponExcelConfigData.json)
+For any additional info about weapons, check the [Weapons Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/WeaponExcelConfigData.json)
 
 | Name | Description |
 | :--- | :---------- |
@@ -176,13 +176,13 @@ For any additional info about weapons, check the [Weapons Data](https://gitlab.c
 
 #### reliquary
 
-For any additional info about artifacts, check the [Artifacts Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryExcelConfigData.json)
+For any additional info about artifacts, check the [Artifacts Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/ReliquaryExcelConfigData.json)
 
 | Name | Description |
 | :--- | :---------- |
 | level | Artifact Level `[1-21]` |
-| mainPropId | Artifact Main Stat ID <br /> [MainProps Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryMainPropExcelConfigData.json) |
-| appendPropIdList | List of IDs of the artifact substats <br /> [AppendProp Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryAffixExcelConfigData.json) |
+| mainPropId | Artifact Main Stat ID <br /> [MainProps Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/ReliquaryMainPropExcelConfigData.json) |
+| appendPropIdList | List of IDs of the artifact substats <br /> [AppendProp Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/ReliquaryAffixExcelConfigData.json) |
 
 #### flat
 
@@ -217,84 +217,84 @@ For any additional info about artifacts, check the [Artifacts Data](https://gitl
 
 ### FightProp
 
-| Type | Description |
-| :--: | :---------- |
-| 1 | Base HP |
-| 2 | HP |
-| 3 | HP% |
-| 4 | Base ATK |
-| 5 | ATK |
-| 6 | ATK% |
-| 7 | Base DEF |
-| 8 | DEF |
-| 9 | DEF% |
-| 10 | Base SPD |
-| 11 | SPD% |
-| 20 | CRIT Rate |
-| 22 | CRIT DMG |
-| 23 | Energy Recharge |
-| 26 | Healing Bonus |
-| 27 | Incoming Healing Bonus |
-| 28 | Elemental Mastery |
-| 29 | Physical RES |
-| 30 | Physical DMG Bonus |
-| 40 | Pyro DMG Bonus |
-| 41 | Electro DMG Bonus |
-| 42 | Hydro DMG Bonus |
-| 43 | Dendro DMG Bonus |
-| 44 | Anemo DMG Bonus |
-| 45 | Geo DMG Bonus |
-| 46 | Cryo DMG Bonus |
-| 50 | Pyro RES |
-| 51 | Electro RES |
-| 52 | Hydro RES |
-| 53 | Dendro RES |
-| 54 | Anemo RES |
-| 55 | Geo RES |
-| 56 | Cryo RES |
-| 70 | Pyro Enegry Cost |
-| 71 | Electro Energy Cost |
-| 72 | Hydro Energy Cost |
-| 73 | Dendro Energy Cost |
-| 74 | Anemo Energy Cost |
-| 75 | Cryo Energy Cost |
-| 76 | Geo Energy Cost |
-| 80 | Cooldown reduction |
-| 81 | Shield Strength |
-| 1000 | Current Pyro Energy |
-| 1001 | Current Electro Energy |
-| 1002 | Current Hydro Energy |
-| 1003 | Current Dendro Energy |
-| 1004 | Current Anemo Energy |
-| 1005 | Current Cryo Energy |
-| 1006 | Current Geo Energy |
-| 1010 | Current HP |
-| 2000 | Max HP |
-| 2001 | ATK |
-| 2002 | DEF |
-| 2003 | SPD |
-| 3025 | Elemental reaction CRIT Rate |
-| 3026 | Elemental reaction CRIT DMG |
-| 3027 | Elemental reaction (Overloaded) CRIT Rate |
-| 3028 | Elemental reaction (Overloaded) CRIT DMG |
-| 3029 | Elemental reaction (Swirl) CRIT Rate |
-| 3030 | Elemental reaction (Swirl) CRIT DMG |
-| 3031 | Elemental reaction (Electro-Charged) CRIT Rate |
-| 3032 | Elemental reaction (Electro-Charged) CRIT DMG |
-| 3033 | Elemental reaction (Superconduct) CRIT Rate |
-| 3034 | Elemental reaction (Superconduct) CRIT DMG |
-| 3035 | Elemental reaction (Burn) CRIT Rate |
-| 3036 | Elemental reaction (Burn) CRIT DMG |
+| Type | Description                                       |
+| :--: |:--------------------------------------------------|
+| 1 | Base HP                                           |
+| 2 | HP                                                |
+| 3 | HP%                                               |
+| 4 | Base ATK                                          |
+| 5 | ATK                                               |
+| 6 | ATK%                                              |
+| 7 | Base DEF                                          |
+| 8 | DEF                                               |
+| 9 | DEF%                                              |
+| 10 | Base SPD                                          |
+| 11 | SPD%                                              |
+| 20 | CRIT Rate                                         |
+| 22 | CRIT DMG                                          |
+| 23 | Energy Recharge                                   |
+| 26 | Healing Bonus                                     |
+| 27 | Incoming Healing Bonus                            |
+| 28 | Elemental Mastery                                 |
+| 29 | Physical RES                                      |
+| 30 | Physical DMG Bonus                                |
+| 40 | Pyro DMG Bonus                                    |
+| 41 | Electro DMG Bonus                                 |
+| 42 | Hydro DMG Bonus                                   |
+| 43 | Dendro DMG Bonus                                  |
+| 44 | Anemo DMG Bonus                                   |
+| 45 | Geo DMG Bonus                                     |
+| 46 | Cryo DMG Bonus                                    |
+| 50 | Pyro RES                                          |
+| 51 | Electro RES                                       |
+| 52 | Hydro RES                                         |
+| 53 | Dendro RES                                        |
+| 54 | Anemo RES                                         |
+| 55 | Geo RES                                           |
+| 56 | Cryo RES                                          |
+| 70 | Pyro Enegry Cost                                  |
+| 71 | Electro Energy Cost                               |
+| 72 | Hydro Energy Cost                                 |
+| 73 | Dendro Energy Cost                                |
+| 74 | Anemo Energy Cost                                 |
+| 75 | Cryo Energy Cost                                  |
+| 76 | Geo Energy Cost                                   |
+| 80 | Cooldown reduction                                |
+| 81 | Shield Strength                                   |
+| 1000 | Current Pyro Energy                               |
+| 1001 | Current Electro Energy                            |
+| 1002 | Current Hydro Energy                              |
+| 1003 | Current Dendro Energy                             |
+| 1004 | Current Anemo Energy                              |
+| 1005 | Current Cryo Energy                               |
+| 1006 | Current Geo Energy                                |
+| 1010 | Current HP                                        |
+| 2000 | Max HP                                            |
+| 2001 | ATK                                               |
+| 2002 | DEF                                               |
+| 2003 | SPD                                               |
+| 3025 | Elemental reaction CRIT Rate                      |
+| 3026 | Elemental reaction CRIT DMG                       |
+| 3027 | Elemental reaction (Overloaded) CRIT Rate         |
+| 3028 | Elemental reaction (Overloaded) CRIT DMG          |
+| 3029 | Elemental reaction (Swirl) CRIT Rate              |
+| 3030 | Elemental reaction (Swirl) CRIT DMG               |
+| 3031 | Elemental reaction (Electro-Charged) CRIT Rate    |
+| 3032 | Elemental reaction (Electro-Charged) CRIT DMG     |
+| 3033 | Elemental reaction (Superconduct) CRIT Rate       |
+| 3034 | Elemental reaction (Superconduct) CRIT DMG        |
+| 3035 | Elemental reaction (Burn) CRIT Rate               |
+| 3036 | Elemental reaction (Burn) CRIT DMG                |
 | 3037 | Elemental reaction (Frozen (Shattered)) CRIT Rate |
-| 3038 | Elemental reaction (Frozen (Shattered)) CRIT DMG |
-| 3039 | Elemental reaction (Bloom) CRIT Rate |
-| 3040 | Elemental reaction (Bloom) CRIT DMG |
-| 3041 | Elemental reaction (Burgeon) CRIT Rate |
-| 3042 | Elemental reaction (Burgeon) CRIT DMG |
-| 3043 | Elemental reaction (Hyperbloom) CRIT Rate |
-| 3044 | Elemental reaction (Hyperbloom) CRIT DMG |
-| 3045 | Base Elemental reaction CRIT Rate |
-| 3046 | Base Elemental reaction CRIT DMG |
+| 3038 | Elemental reaction (Frozen (Shattered)) CRIT DMG  |
+| 3039 | Elemental reaction (Bloom) CRIT Rate              |
+| 3040 | Elemental reaction (Bloom) CRIT DMG               |
+| 3041 | Elemental reaction (Burgeon) CRIT Rate            |
+| 3042 | Elemental reaction (Burgeon) CRIT DMG             |
+| 3043 | Elemental reaction (Hyperbloom) CRIT Rate         |
+| 3044 | Elemental reaction (Hyperbloom) CRIT DMG          |
+| 3045 | Base Elemental reaction CRIT Rate                 |
+| 3046 | Base Elemental reaction CRIT DMG                  |
 
 ### ItemType
 
@@ -315,28 +315,28 @@ For any additional info about artifacts, check the [Artifacts Data](https://gitl
 
 ### AppendProp
 
-| Name | Description |
-| :--- | :---------- |
-| FIGHT_PROP_BASE_ATTACK `[Weapon]` | Base ATK |
-| FIGHT_PROP_HP | Flat HP |
-| FIGHT_PROP_ATTACK | Flat ATK |
-| FIGHT_PROP_DEFENSE | Flat DEF |
-| FIGHT_PROP_HP_PERCENT | HP% |
-| FIGHT_PROP_ATTACK_PERCENT | ATK% |
-| FIGHT_PROP_DEFENSE_PERCENT | DEF% | 
-| FIGHT_PROP_CRITICAL | Crit RATE |
-| FIGHT_PROP_CRITICAL_HURT | Crit DMG |
-| FIGHT_PROP_CHARGE_EFFICIENCY | Energy Recharge |
-| FIGHT_PROP_HEAL_ADD | Healing Bonus |
-| FIGHT_PROP_ELEMENT_MASTERY | Elemental Mastery |
+| Name | Description        |
+| :--- |:-------------------|
+| FIGHT_PROP_BASE_ATTACK `[Weapon]` | Base ATK           |
+| FIGHT_PROP_HP | Flat HP            |
+| FIGHT_PROP_ATTACK | Flat ATK           |
+| FIGHT_PROP_DEFENSE | Flat DEF           |
+| FIGHT_PROP_HP_PERCENT | HP%                |
+| FIGHT_PROP_ATTACK_PERCENT | ATK%               |
+| FIGHT_PROP_DEFENSE_PERCENT | DEF%               | 
+| FIGHT_PROP_CRITICAL | Crit RATE          |
+| FIGHT_PROP_CRITICAL_HURT | Crit DMG           |
+| FIGHT_PROP_CHARGE_EFFICIENCY | Energy Recharge    |
+| FIGHT_PROP_HEAL_ADD | Healing Bonus      |
+| FIGHT_PROP_ELEMENT_MASTERY | Elemental Mastery  |
 | FIGHT_PROP_PHYSICAL_ADD_HURT | Physical DMG Bonus |
-| FIGHT_PROP_FIRE_ADD_HURT | Pyro DMG Bonus |
-| FIGHT_PROP_ELEC_ADD_HURT | Electro DMG Bonus |
-| FIGHT_PROP_WATER_ADD_HURT | Hydro DMG Bonus |
-| FIGHT_PROP_WIND_ADD_HURT | Anemo DMG Bonus |
-| FIGHT_PROP_ICE_ADD_HURT |  Cryo DMG Bonus |
-| FIGHT_PROP_ROCK_ADD_HURT | Geo DMG Bonus |
-| FIGHT_PROP_GRASS_ADD_HURT | Dendro DMG Bonus |
+| FIGHT_PROP_FIRE_ADD_HURT | Pyro DMG Bonus     |
+| FIGHT_PROP_ELEC_ADD_HURT | Electro DMG Bonus  |
+| FIGHT_PROP_WATER_ADD_HURT | Hydro DMG Bonus    |
+| FIGHT_PROP_WIND_ADD_HURT | Anemo DMG Bonus    |
+| FIGHT_PROP_ICE_ADD_HURT | Cryo DMG Bonus     |
+| FIGHT_PROP_ROCK_ADD_HURT | Geo DMG Bonus      |
+| FIGHT_PROP_GRASS_ADD_HURT | Dendro DMG Bonus   |
 
 ## Icons and Images
 
@@ -357,7 +357,7 @@ Go to [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/maste
 You may notice `"NameTextMapHash"` in [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json), `"nameTextHashMap"` and `"setNameTextHashMap"` at [flat](#flat) that could be used as a key to get basic localization data of characters, weapons and artifacts from [store/loc.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/loc.json).  
 Also you can get localization data of [AppendProp](#appendprop) by using property name as a key - `"FIGHT_PROP_HP"`, `"FIGHT_PROP_HEAL_ADD"` etc.
 
-For any additional info about names, descriptions and etc, check the [TextMap Data](https://gitlab.com/Dimbreath/AnimeGameData/-/tree/master/TextMap), only includes languages supported by game.
+For any additional info about names, descriptions and etc, check the [TextMap Data](https://gitlab.com/Dimbreath/AnimeGameData/-/tree/main/TextMap), only includes languages supported by game.
 
 ## Wrappers
 
