@@ -368,4 +368,6 @@ Rust - https://github.com/eratou/enkanetwork-rs - [eratou](https://github.com/er
 
 Python - https://github.com/mrwan200/enkanetwork.py - [mrwan200](https://github.com/mrwan200)
 
+Python - https://github.com/seriaati/enka-py - [seriaati](https://github.com/seriaati)
+
 Java - https://github.com/kazuryyx/EnkaNetworkAPI - [kazury](https://github.com/kazuryyx)
