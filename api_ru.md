@@ -104,7 +104,7 @@
 ### playerInfo
 
 Базовые данные персонажей по ID можно получить из [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json).  <br />
-Для дополнительной информации можно обратиться к [данным персонажей](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarExcelConfigData.json).
+Для дополнительной информации можно обратиться к [данным персонажей](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarExcelConfigData.json).
 
 | Название | Описание |
 | :--- | :--------- |
@@ -130,7 +130,7 @@
 ### avatarInfoList
 
 Базовые данные персонажей по ID можно получить из [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json).  <br />
-Для дополнительной информации можно обратиться к [данным персонажей](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarExcelConfigData.json).
+Для дополнительной информации можно обратиться к [данным персонажей](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarExcelConfigData.json).
 
 | Название | Описание                                                                                                                                                                                              |
 | :--- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -138,9 +138,9 @@
 | talentIdList | Список ID созвездий <br /> Нет данных, если 0 созвездий                                                                                                                                               |
 | [propMap](#propmap) | Список свойств информации о персонаже                                                                                                                                                                 |
 | fightPropMap -> `{id: value}` | `Map` боевых свойств персонажа. <br />Смотрите [определения для ID](#fightprop)                                                                                                                       |
-| skillDepotId | ID набора навыков персонажа <br />[Данные умений](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) ->     `"id"`                           |
-| inherentProudSkillList | Список разблокированных ID навыков <br />[Данные умений](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` |
-| skillLevelMap -> `{skill_id: level}`| `Map` уровней навыков <br /> [Данные умений](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"`             |
+| skillDepotId | ID набора навыков персонажа <br />[Данные умений](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) ->     `"id"`                           |
+| inherentProudSkillList | Список разблокированных ID навыков <br />[Данные умений](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` |
+| skillLevelMap -> `{skill_id: level}`| `Map` уровней навыков <br /> [Данные умений](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"`             |
 | [equipList](#equiplist) | Список снаряжения: Оружие, Артефакты                                                                                                                                                                  |
 | fetterInfo.expLevel  | Уровень дружбы персонажа                                                                                                                                                                              |
 
@@ -156,14 +156,14 @@
 
 | Название | Описание |
 | :--- | :--------- |
-| itemId | ID оружия <br /> [Данные артефактов](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/ReliquaryExcelConfigData.json) -> `"id"` <br /> [Данные оружия](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/WeaponExcelConfigData.json) -> `"id"` |
+| itemId | ID оружия <br /> [Данные артефактов](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryExcelConfigData.json) -> `"id"` <br /> [Данные оружия](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/WeaponExcelConfigData.json) -> `"id"` |
 | [weapon](#weapon) `[Только оружие]` | Базовая информация об оружии  |
 | [reliquary](#reliquary) `[Только артефакт]` | Базовая информация об артефакте  |
 | [flat](#flat) | Дополнительная распарсенная информация |
 
 #### weapon
 
-Для получения дополнительной информации об оружии можно обратиться к [данным оружий](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/WeaponExcelConfigData.json)
+Для получения дополнительной информации об оружии можно обратиться к [данным оружий](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/WeaponExcelConfigData.json)
 
 | Название | Описание |
 | :--- | :---------- |
@@ -173,13 +173,13 @@
 
 #### reliquary
 
-Для получения дополнительной информации об артефактах можно обратиться к [данным артефактов](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/ReliquaryExcelConfigData.json)
+Для получения дополнительной информации об артефактах можно обратиться к [данным артефактов](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryExcelConfigData.json)
 
 | Название | Описание |
 | :--- | :---------- |
 | level | Уровень артефакта `[1-21]` |
-| mainPropId | ID основного стата артефакта <br /> [Данные основных статов](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/ReliquaryMainPropExcelConfigData.json) |
-| appendPropIdList | Список ID подстатов артефакта <br /> [Данные подстатов](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/ReliquaryAffixExcelConfigData.json) |
+| mainPropId | ID основного стата артефакта <br /> [Данные основных статов](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryMainPropExcelConfigData.json) |
+| appendPropIdList | Список ID подстатов артефакта <br /> [Данные подстатов](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryAffixExcelConfigData.json) |
 
 #### flat
 
@@ -354,7 +354,7 @@
 `"NameTextMapHash"` в [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json), `"nameTextHashMap"` и `"setNameTextHashMap"` в [flat](#flat) используется в качестве ключа для получения локализованных названий предметов из [store/loc.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/loc.json).  
 Также можно взять локализацию для [AppendProp](#appendprop) используя имя свойства в качестве ключа - `"FIGHT_PROP_HP"`, `"FIGHT_PROP_HEAL_ADD"` и так далее.
 
-Дополнительные локализованные строки можно взять из [TextMap Data](https://gitlab.com/Dimbreath/AnimeGameData/-/tree/main/TextMap) (включает только языки, поддерживаемые игрой).
+Дополнительные локализованные строки можно взять из [TextMap Data](https://gitlab.com/Dimbreath/AnimeGameData/-/tree/master/TextMap) (включает только языки, поддерживаемые игрой).
 
 ## Библиотеки-врапперы
 

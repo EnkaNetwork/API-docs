@@ -126,7 +126,7 @@ UIDは何億もあり、このAPIでこれを実行することはできませ�
 ### playerInfo
 
 ID別の文字の基本データについては、[store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)にアクセスしてください。
-追加情報については、[キャラクターデータ](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarExcelConfigData.json)を確認してください。
+追加情報については、[キャラクターデータ](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarExcelConfigData.json)を確認してください。
 
 | 名前 | 説明 |
 | :--- | :--------- |
@@ -152,7 +152,7 @@ ID別の文字の基本データについては、[store/characters.json](https:
 ### avatarInfoList
 
 ID別の文字の基本データについては、[store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)にアクセスしてください。
-追加情報については、[キャラクターデータ](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarExcelConfigData.json)を確認してください。
+追加情報については、[キャラクターデータ](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarExcelConfigData.json)を確認してください。
 
 | 名前 | 説明                                                                                                                                                                       |
 | :--- |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -160,9 +160,9 @@ ID別の文字の基本データについては、[store/characters.json](https:
 | talentIdList | 命ノ星座IDのリスト<br>0重の場合はデータがありません                                                                                                                                            |
 | [propMap](#propmap) | 文字情報プロパティ一覧                                                                                                                                                              |
 | fightPropMap -> `{id: value}` | キャラクターの戦闘プロパティのマップ。<br>[IDの定義](#fightprop)を確認してください                                                                                                                      |
-| skillDepotId | キャラクタースキルセットID <br />[Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) ->     `"id"`             |
-| inherentProudSkillList | 解放された固有天賦のIDリスト<br />[詳細情報](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` |
-| skillLevelMap -> `{skill_id: level}`| スキルレベルのマップ <br /> [詳細情報](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"`    |
+| skillDepotId | キャラクタースキルセットID <br />[Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) ->     `"id"`             |
+| inherentProudSkillList | 解放された固有天賦のIDリスト<br />[詳細情報](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` |
+| skillLevelMap -> `{skill_id: level}`| スキルレベルのマップ <br /> [詳細情報](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"`    |
 | [equipList](#equiplist) | 武器と聖遺物のリスト                                                                                                                                                               |
 | fetterInfo.expLevel  | 好感度Lv                                                                                                                                                                    |
 
@@ -178,14 +178,14 @@ ID別の文字の基本データについては、[store/characters.json](https:
 
 | 名前 | 説明 |
 | :--- | :--------- |
-| itemId | 識別ID <br /> [聖遺物情報](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/ReliquaryExcelConfigData.json) -> `"id"` <br />[武器情報](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/WeaponExcelConfigData.json) -> `"id"` |
+| itemId | 識別ID <br /> [聖遺物情報](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryExcelConfigData.json) -> `"id"` <br />[武器情報](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/WeaponExcelConfigData.json) -> `"id"` |
 | [weapon](#weapon) `[Weapon Only]` | 武器の基本情報  |
 | [reliquary](#reliquary) `[Artifact Only]` | 聖遺物の基本情報  |
 | [flat](#flat) | このアイテムの詳細情報 |
 
 #### weapon
 
-武器に関する追加情報については、[武器データ](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/WeaponExcelConfigData.json)を確認してください
+武器に関する追加情報については、[武器データ](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/WeaponExcelConfigData.json)を確認してください
 
 | 名前 | 説明 |
 | :--- | :---------- |
@@ -196,13 +196,13 @@ ID別の文字の基本データについては、[store/characters.json](https:
 
 #### reliquary
 
-聖遺物に関する追加情報については、[聖遺物情報](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/ReliquaryExcelConfigData.json)を確認してください
+聖遺物に関する追加情報については、[聖遺物情報](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryExcelConfigData.json)を確認してください
 
 | 名前 | 説明 |
 | :--- | :---------- |
 | level | 聖遺物Lv `[1-21]` |
-| mainPropId | 聖遺物メインステータスID<br /> [MainProps Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/ReliquaryMainPropExcelConfigData.json) |
-| appendPropIdList | 聖遺物サブステータスIDのリスト<br /> [AppendProp Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/ReliquaryAffixExcelConfigData.json) |
+| mainPropId | 聖遺物メインステータスID<br /> [MainProps Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryMainPropExcelConfigData.json) |
+| appendPropIdList | 聖遺物サブステータスIDのリスト<br /> [AppendProp Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryAffixExcelConfigData.json) |
 
 #### flat
 
@@ -380,7 +380,7 @@ ID別の文字の基本データについては、[store/characters.json](https:
 * [AppendProp](#appendprop) の名前。例：`"FIGHT_PROP_HP"` `"FIGHT_PROP_HEAL_ADD"`
 等です
 
-その他の追加情報を[TextMap Data](https://gitlab.com/Dimbreath/AnimeGameData/-/tree/main/TextMap)で得る事が出来ます。ゲームでサポートされている言語のみが含まれます。
+その他の追加情報を[TextMap Data](https://gitlab.com/Dimbreath/AnimeGameData/-/tree/master/TextMap)で得る事が出来ます。ゲームでサポートされている言語のみが含まれます。
 
 ## Wrappers
 

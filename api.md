@@ -357,7 +357,7 @@ Go to [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/maste
 You may notice `"NameTextMapHash"` in [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json), `"nameTextHashMap"` and `"setNameTextHashMap"` at [flat](#flat) that could be used as a key to get basic localization data of characters, weapons and artifacts from [store/loc.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/loc.json).  
 Also you can get localization data of [AppendProp](#appendprop) by using property name as a key - `"FIGHT_PROP_HP"`, `"FIGHT_PROP_HEAL_ADD"` etc.
 
-For any additional info about names, descriptions and etc, check the [TextMap Data](https://gitlab.com/Dimbreath/AnimeGameData/-/tree/main/TextMap), only includes languages supported by game.
+For any additional info about names, descriptions and etc, check the [TextMap Data](https://gitlab.com/Dimbreath/AnimeGameData/-/tree/master/TextMap), only includes languages supported by game.
 
 ## Wrappers
 

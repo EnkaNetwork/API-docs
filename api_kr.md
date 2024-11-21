@@ -105,7 +105,7 @@ hoyo에 대한 저장된 빌드를 반환합니다. 이것은 객체 형식으�
 ### playerInfo
 
 캐릭터 ID별 기본적인 데이터는 [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)을 참고하세요. <br />
-더 상세한 정보는 [Characters Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarExcelConfigData.json)을 참고하세요.
+더 상세한 정보는 [Characters Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarExcelConfigData.json)을 참고하세요.
 
 | Name | Description |
 | :--- | :--------- | 
@@ -131,7 +131,7 @@ hoyo에 대한 저장된 빌드를 반환합니다. 이것은 객체 형식으�
 ### avatarInfoList
 
 캐릭터 ID별 기본적인 데이터는 [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)을 참고하세요. <br />
-더 상세한 정보는 [Characters Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarExcelConfigData.json)을 참고하세요.
+더 상세한 정보는 [Characters Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarExcelConfigData.json)을 참고하세요.
 
 | Name | Description                                                                                                                                                              |
 | :--- |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -139,9 +139,9 @@ hoyo에 대한 저장된 빌드를 반환합니다. 이것은 객체 형식으�
 | talentIdList | 운명의 자리 ID 목록. <br /> 해금된 운명의 자리가 없으면 항목이 비어 있습니다.                                                                                                                        |
 | [propMap](#propmap) | 캐릭터 속성 맵                                                                                                                                                                 |
 | fightPropMap -> `{id: value}` | 캐릭터의 전투 능력치에 대한 맵. <br />[ID 정의](#fightprop)를 참고하세요.                                                                                                                     |
-| skillDepotId | 캐릭터 스킬셋 ID <br />[Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) ->     `"id"`                 |
-| inherentProudSkillList | 해금된 특성 목록 <br />[Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` | 
-| skillLevelMap -> `{skill_id: level}`| 스킬 레벨 맵 <br /> [Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"`  |
+| skillDepotId | 캐릭터 스킬셋 ID <br />[Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) ->     `"id"`                 |
+| inherentProudSkillList | 해금된 특성 목록 <br />[Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` | 
+| skillLevelMap -> `{skill_id: level}`| 스킬 레벨 맵 <br /> [Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"`  |
 | [equipList](#equiplist) | 장착한 무기, 성유물 목록                                                                                                                                                           |
 | fetterInfo.expLevel  | 캐릭터 호감도 레벨                                                                                                                                                               |
 
@@ -157,14 +157,14 @@ hoyo에 대한 저장된 빌드를 반환합니다. 이것은 객체 형식으�
 
 | Name | Description |
 | :--- | :--------- |
-| itemId | 장비 ID <br /> [Artifacts Data(성유물 데이터)](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/ReliquaryExcelConfigData.json) -> `"id"` <br /> [Weapons Data(무기 데이터)](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/WeaponExcelConfigData.json) -> `"id"` |
+| itemId | 장비 ID <br /> [Artifacts Data(성유물 데이터)](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryExcelConfigData.json) -> `"id"` <br /> [Weapons Data(무기 데이터)](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/WeaponExcelConfigData.json) -> `"id"` |
 | [weapon](#weapon) `[무기 전용]` | 무기 정보 |
 | [reliquary](#reliquary) `[성유물 전용]` | 성유물 정보 |
 | [flat](#flat) | 장비 상세 정보 |
 
 #### weapon
 
-무기에 대한 자세한 정보는 [Weapons Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/WeaponExcelConfigData.json)을 참고하세요.
+무기에 대한 자세한 정보는 [Weapons Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/WeaponExcelConfigData.json)을 참고하세요.
 
 | Name | Description |
 | :--- | :---------- |
@@ -175,13 +175,13 @@ hoyo에 대한 저장된 빌드를 반환합니다. 이것은 객체 형식으�
 
 #### reliquary
 
-성유물에 대한 자세한 정보는 [Artifacts Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/ReliquaryExcelConfigData.json)을 참고하세요.
+성유물에 대한 자세한 정보는 [Artifacts Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryExcelConfigData.json)을 참고하세요.
 
 | Name | Description |
 | :--- | :---------- |
 | level | 성유물 레벨 `[1-21]` |
-| mainPropId | 성유물 주 옵션 ID <br /> [MainProps Data(주 옵션 데이터)](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/ReliquaryMainPropExcelConfigData.json) |
-| appendPropIdList | 성유물 부 옵션 ID 목록 <br /> [AppendProp Data(부 옵션 데이터)](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/ReliquaryAffixExcelConfigData.json) |
+| mainPropId | 성유물 주 옵션 ID <br /> [MainProps Data(주 옵션 데이터)](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryMainPropExcelConfigData.json) |
+| appendPropIdList | 성유물 부 옵션 ID 목록 <br /> [AppendProp Data(부 옵션 데이터)](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryAffixExcelConfigData.json) |
 
 #### flat
 
@@ -356,7 +356,7 @@ hoyo에 대한 저장된 빌드를 반환합니다. 이것은 객체 형식으�
 [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)에서 `"NameTextMapHash"`, [flat](#flat)에서 `"nameTextHashMap"` 또는 `"setNameTextHashMap"`가 존재할 수 있으며 이는 캐릭터, 무기 및 성유물의 현지화 데이터를 가져오는 키로 사용할 수 있습니다.
 또한 전투 능력치 이름을 키로 사용하여 [AppendProp](#appendprop)의 현지화 데이터를 얻을 수 있습니다. (`"FIGHT_PROP_HP"`, `"FIGHT_PROP_HEAL_ADD"` 등)
 
-이름, 설명 등 현지화된 텍스트에 대한 자세한 정보는 [TextMap Data](https://gitlab.com/Dimbreath/AnimeGameData/-/tree/main/TextMap)를 참고하세요.
+이름, 설명 등 현지화된 텍스트에 대한 자세한 정보는 [TextMap Data](https://gitlab.com/Dimbreath/AnimeGameData/-/tree/master/TextMap)를 참고하세요.
 
 ## 패키지
 
