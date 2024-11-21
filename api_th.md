@@ -104,7 +104,7 @@
 ### playerInfo
 
 สำหรับข้อมูลเบื้องต้นของตัวละครโดยไอดีนั้น, ไปที่ [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json).  <br />
-สำหรับข้อมูลเพิ่มเติม ตรวจสอบได้ที่ [Characters Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarExcelConfigData.json).
+สำหรับข้อมูลเพิ่มเติม ตรวจสอบได้ที่ [Characters Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarExcelConfigData.json).
 
 
 | ชื่อ   | คำอธิบาย |
@@ -131,7 +131,7 @@
 ### avatarInfoList
 
 สำหรับข้อมูลเบื้องต้นของตัวละครโดยไอดีนั้น, ไปที่ [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json).  <br />
-สำหรับข้อมูลเพิ่มเติม ตรวจสอบได้ที่ [Characters Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarExcelConfigData.json).
+สำหรับข้อมูลเพิ่มเติม ตรวจสอบได้ที่ [Characters Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarExcelConfigData.json).
 
 | ชื่อ   | คำอธิบาย                                                                                                                                                                                |
 | :--- |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -139,9 +139,9 @@
 | talentIdList | ลำดับกลุ่มดาว <br /> หากเป็น 0 ก็คือไม่มีข้อมูล                                                                                                                                         |
 | [propMap](#propmap) | คุณสมบัติของตัวละคร                                                                                                                                                                     |
 | fightPropMap -> `{id: value}` | ข้อมูลตัวละคร <br />โปรดตรวจสอบได้ที่ [คำนิยามสำหรับไอดี](#fightprop)                                                                                                                   |
-| skillDepotId | เซ็ทไอดีสกิลตัวละคร <br />[Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) ->     `"id"`                       |
-| inherentProudSkillList | ระดับการปลดล็อกพรรสวรรค์ <br />[Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` |
-| skillLevelMap -> `{skill_id: level}`| เลเวลพรรสวรรค์ <br /> [Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"`          |
+| skillDepotId | เซ็ทไอดีสกิลตัวละคร <br />[Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) ->     `"id"`                       |
+| inherentProudSkillList | ระดับการปลดล็อกพรรสวรรค์ <br />[Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` |
+| skillLevelMap -> `{skill_id: level}`| เลเวลพรรสวรรค์ <br /> [Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"`          |
 | [equipList](#equiplist) | รายชื่ออาวุธและอาติแฟส                                                                                                                                                                  |
 | fetterInfo.expLevel  | เลเวลความประทับใจของตัวละคร                                                                                                                                                             |
 
@@ -157,14 +157,14 @@
 
 | ชื่อ   | คำอธิบาย                                                                                                                                                                                                                                                                           |
 | :--- |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| itemId | ไอดีไอเทม <br /> [Artifacts Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/ReliquaryExcelConfigData.json) -> `"id"` <br /> [Weapons Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/WeaponExcelConfigData.json) -> `"id"` |
+| itemId | ไอดีไอเทม <br /> [Artifacts Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryExcelConfigData.json) -> `"id"` <br /> [Weapons Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/WeaponExcelConfigData.json) -> `"id"` |
 | [weapon](#weapon) `[Weapon Only]` | ข้อมูลพื้นฐานของอาวุธ                                                                                                                                                                                                                                                              |
 | [reliquary](#reliquary) `[Artifact Only]` | ข้อมูลพื้นฐานของอาติแฟส                                                                                                                                                                                                                                                            |
 | [flat](#flat) | รายละเอียดข้อมูลของไอเทม                                                                                                                                                                                                                                                           |
 
 #### weapon
 
-สำหรับข้อมูลเพิ่มเติมเกี่ยวกับอาวุธนั้น ตรวจสอบได้ที่ [Weapons Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/WeaponExcelConfigData.json)
+สำหรับข้อมูลเพิ่มเติมเกี่ยวกับอาวุธนั้น ตรวจสอบได้ที่ [Weapons Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/WeaponExcelConfigData.json)
 
 | ชื่อ   | คำอธิบาย      |
 | :--- | :---------- |
@@ -175,13 +175,13 @@
 
 #### reliquary
 
-สำหรับข้อมูลเพิ่มเติมเกี่ยวกับอาติแฟสนั้น ตรวจสอบได้ที่ [Artifacts Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/ReliquaryExcelConfigData.json)
+สำหรับข้อมูลเพิ่มเติมเกี่ยวกับอาติแฟสนั้น ตรวจสอบได้ที่ [Artifacts Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryExcelConfigData.json)
 
 | ชื่อ   | คำอธิบาย     |
 | :--- | :---------- |
 | level | เลเวลอาติแฟส `[1-21]` |
-| mainPropId | Stats อาติแฟสหลัก <br /> [MainProps Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/ReliquaryMainPropExcelConfigData.json) |
-| appendPropIdList | ลิสไอดี Stats อาติแฟสรอง <br /> [AppendProp Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/main/ExcelBinOutput/ReliquaryAffixExcelConfigData.json) |
+| mainPropId | Stats อาติแฟสหลัก <br /> [MainProps Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryMainPropExcelConfigData.json) |
+| appendPropIdList | ลิสไอดี Stats อาติแฟสรอง <br /> [AppendProp Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryAffixExcelConfigData.json) |
 
 #### flat
 
@@ -315,7 +315,7 @@
 คุณอางสังเกตุเห็น `"NameTextMapHash"` ในข้อมูล [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json), `"nameTextHashMap"` และ `"setNameTextHashMap"` จาก [flat](#flat) นั้นที่จะสามารถใช้เป็นคีย์สำหรับในการหาข้อมูลภาษาจากตัวละคร, อาวุธ และ อาติแฟสจาก [store/loc.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/loc.json).  
 นอกจากนี้คุณยังสามารถใช้ข้อมูลภาษาจาก [AppendProp](#appendprop) โดยใช้ชื่อคีย์คุณสมบัติอย่าง - `"FIGHT_PROP_HP"`, `"FIGHT_PROP_HEAL_ADD"` และอิ่น ๆ 
 
-สำหรับข้อมูลเพิ่มเติมเกี่ยวกับชื่อ, คำอธิบาย และ อื่น ๆ นั้น ตรวจสอบได้ที่ [TextMap Data](https://gitlab.com/Dimbreath/AnimeGameData/-/tree/main/TextMap) เฉพาะภาษาที่เกมส์รองรับเท่านั้น
+สำหรับข้อมูลเพิ่มเติมเกี่ยวกับชื่อ, คำอธิบาย และ อื่น ๆ นั้น ตรวจสอบได้ที่ [TextMap Data](https://gitlab.com/Dimbreath/AnimeGameData/-/tree/master/TextMap) เฉพาะภาษาที่เกมส์รองรับเท่านั้น
 
 ## Wrappers
 
