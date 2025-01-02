@@ -252,13 +252,15 @@ For any additional info about artifacts, check the [Artifacts Data](https://gitl
 | 54 | Anemo RES                                         |
 | 55 | Geo RES                                           |
 | 56 | Cryo RES                                          |
-| 70 | Pyro Enegry Cost                                  |
+| 70 | Pyro Energy Cost                                  |
 | 71 | Electro Energy Cost                               |
 | 72 | Hydro Energy Cost                                 |
 | 73 | Dendro Energy Cost                                |
 | 74 | Anemo Energy Cost                                 |
 | 75 | Cryo Energy Cost                                  |
 | 76 | Geo Energy Cost                                   |
+| 77 | Fighting Spirit Limit                             |
+| 78 | Fighting Spirit required for Ultimate             | 
 | 80 | Cooldown reduction                                |
 | 81 | Shield Strength                                   |
 | 1000 | Current Pyro Energy                               |
