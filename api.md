@@ -252,13 +252,15 @@ For any additional info about artifacts, check the [Artifacts Data](https://gitl
 | 54 | Anemo RES                                         |
 | 55 | Geo RES                                           |
 | 56 | Cryo RES                                          |
-| 70 | Pyro Enegry Cost                                  |
+| 70 | Pyro Energy Cost                                  |
 | 71 | Electro Energy Cost                               |
 | 72 | Hydro Energy Cost                                 |
 | 73 | Dendro Energy Cost                                |
 | 74 | Anemo Energy Cost                                 |
 | 75 | Cryo Energy Cost                                  |
 | 76 | Geo Energy Cost                                   |
+| 77 | Maximum Special Energy                            |
+| 78 | Special Energy Cost                               |
 | 80 | Cooldown reduction                                |
 | 81 | Shield Strength                                   |
 | 1000 | Current Pyro Energy                               |
@@ -268,6 +270,7 @@ For any additional info about artifacts, check the [Artifacts Data](https://gitl
 | 1004 | Current Anemo Energy                              |
 | 1005 | Current Cryo Energy                               |
 | 1006 | Current Geo Energy                                |
+| 1007 | Current Special Energy                            |
 | 1010 | Current HP                                        |
 | 2000 | Max HP                                            |
 | 2001 | ATK                                               |
