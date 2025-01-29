@@ -89,3 +89,18 @@ If a build has a `live: true` field, that means it's not a "saved" build, but si
 As outlined in [UID endpoints](#uid-endpoints), when you make a UID request, you could get an `owner` object. You can construct the URL using these fields in the object:
 
 `https://enka.network/api/profile/{owner.username}/hoyos/{owner.hash}/builds/`
+
+
+## Wrappers
+
+TS/JS - https://www.npmjs.com/package/enkanetwork.js - [Jelosus1](https://github.com/Jelosus2)
+
+TS/JS - https://github.com/yuko1101/enka-network-api - [yuko1101](https://github.com/yuko1101)
+
+Rust - https://github.com/eratou/enkanetwork-rs - [eratou](https://github.com/eratou)
+
+Python - https://github.com/mrwan200/enkanetwork.py - [mrwan200](https://github.com/mrwan200)
+
+Python - https://github.com/seriaati/enka-py - [seriaati](https://github.com/seriaati)
+
+Java - https://github.com/kazuryyx/EnkaNetworkAPI - [kazury](https://github.com/kazuryyx)
