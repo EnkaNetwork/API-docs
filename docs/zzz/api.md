@@ -123,43 +123,43 @@ Refer to the table below and [store/zzz/property.json](https://raw.githubusercon
 
 | Type | Description|
 | :--- | :--------- | 
-| 11101 | Base HP |
+| 11101 | HP `[Base]` |
 | 11102 | HP% |
-| 11103 | Flat HP |
-| 12101 | Base ATK |
+| 11103 | HP `[Flat]` |
+| 12101 | ATK `[Base]` |
 | 12102 | ATK% |
-| 12103 | Flat ATK |
-| 12201 | Base Impact |
+| 12103 | ATK `[Flat]` |
+| 12201 | Impact `[Base]` |
 | 12202 | Break% |
-| 13101 | Base Def |
+| 13101 | Def `[Base]` |
 | 13102 | Def% |
-| 13103 | Flat Def |
-| 20101 | Base Crit Rate |
-| 20103 | Flat Crit Rate |
-| 21101 | Base Crit DMG |
-| 21103 | Flat CritDMG |
-| 23101 | Base Pen Ratio |
-| 23103 | Flat Pen Ratio |
-| 23201 | Base PEN  |
-| 23203 | Flat PEN |
-| 30501 | Base Energy Regen |
+| 13103 | Def `[Flat]` |
+| 20101 | Crit Rate `[Base]` |
+| 20103 | Crit Rate `[Flat]` |
+| 21101 | Crit DMG `[Base]` |
+| 21103 | CritDMG `[Flat]` |
+| 23101 | Pen Ratio `[Base]` |
+| 23103 | Pen Ratio `[Flat]` |
+| 23201 | PEN  `[Base]` |
+| 23203 | PEN `[Flat]` |
+| 30501 | Energy Regen `[Base]` |
 | 30502 | Energy Regen% |
-| 30503 | Flat Energy Regen |
-| 31201 | Base Anomaly Power |
-| 31203 | Flat Anomaly Power |
-| 31401 | Base Anomaly Mastery |
+| 30503 | Energy Regen `[Flat]` |
+| 31201 | Anomaly Power `[Base]` |
+| 31203 | Anomaly Power `[Flat]` |
+| 31401 | Anomaly Mastery `[Base]` |
 | 31402 | Amonaly Mastery% |
-| 31403 | Flat Anomaly Mastery |
-| 31501 | Base Physical DMG Bonus |
-| 31503 | Flat Physical DMG Bonus |
-| 31601 | Base Fire DMG Bonus |
-| 31603 | Flat Fire DMG Bouns |
-| 31701 | Base Ice DMG Bonus |
-| 31703 | Flat Ice DMG Bonus |
-| 31801 | Base Electric DMG Bonus |
-| 31803 | Flat Electric DMG Bonus |
-| 31901 | Base Ether DMG Bonus |
-| 31903 | Flat Ether DMG Bonus |
+| 31403 | Anomaly Mastery `[Flat]` |
+| 31501 | Physical DMG Bonus `[Base]` |
+| 31503 | Physical DMG Bonus `[Flat]` |
+| 31601 | Fire DMG Bonus `[Base]` |
+| 31603 | Fire DMG Bouns `[Flat]` |
+| 31701 | Ice DMG Bonus `[Base]` |
+| 31703 | Ice DMG Bonus `[Flat]` |
+| 31801 | Electric DMG Bonus `[Base]` |
+| 31803 | Electric DMG Bonus `[Flat]` |
+| 31901 | Ether DMG Bonus `[Base]` |
+| 31903 | Ether DMG Bonus `[Flat]` |
 
 ### Rarity
 
