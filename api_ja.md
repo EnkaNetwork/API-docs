@@ -5,7 +5,7 @@
 ## 目次
 
 - [入門](#入門)
-- [API一覧](#API一覧)
+- [API一覧](#api一覧)
 - [データ構造情報](#データ構造情報)
 - [定義](#定義)
 - [アイコンと画像](#アイコンと画像)
@@ -27,7 +27,7 @@ APIを使用する際のいくつかのルールです。
 UIDは何億もあり、このAPIでこれを実行することはできません。後日、バッチデータを提供することがあります。
 
 2. リクエストにはカスタムした`User-Agent` ヘッダを設定してください。
-そうすることで、リクエストをより良く追跡し、必要に応じてあなたを助けることができます。
+そうすることで、リクエストの追跡が簡単になり、必要に応じてあなたを助けることもできます。
 
 3. UIDのエンドポイントには動的な速度制限があります。
 あまりに速く再リクエストすると、応答時間が遅くなり、最終的にはステータスコード429が返されます。
@@ -60,7 +60,7 @@ UIDは何億もあり、このAPIでこれを実行することはできませ�
 もし `playerInfo` だけが必要であれば、このエンドポイントを使用してください。
 全てのデータを取得するよりもずっと速く取得する事が出来ます。
 
-さらに、以下の場合にのみ、両方のレスポンスに `owner` オブジェクトが含まれます。
+さらに、以下の条件を満たす場合、両方のレスポンスに `owner` オブジェクトが含まれます。
 
 1. ユーザがこのサイトにアカウントを持っている。
 2. ユーザーが自分のUIDをプロファイルに追加した。
@@ -111,7 +111,7 @@ UIDは何億もあり、このAPIでこれを実行することはできませ�
 ビルドに `live:　true` フィールドがある場合、それは「保存」されたビルドではなく、単に「更新」をクリックした時に取得されたものであることを意味します。
 更新すると、古い`live`ビルドはすべて削除され、新しいビルドが作成されます。この更新をいつ行うかは、ユーザーだけが決めることができます。
 
-[UID エンド ポイント](#UIDエンドポイント)で説明したように、UIDリクエストを行うと、`owner`オブジェクトを取得することができます。
+[UIDエンドポイント](#uidエンドポイント)で説明したように、UIDリクエストを行うと、`owner`オブジェクトを取得することができます。
 このオブジェクトのフィールドを使用して、URLを作成することができます。
 
 `https://enka.network/api/profile/{owner.username}/hoyos/{owner.hash}/builds/`
@@ -125,63 +125,63 @@ UIDは何億もあり、このAPIでこれを実行することはできませ�
 
 ### playerInfo
 
-ID別の文字の基本データについては、[store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)にアクセスしてください。
-追加情報については、[キャラクターデータ](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarExcelConfigData.json)を確認してください。
+キャラクターのID別の基本データについては、[store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)を参照。
+より詳細な情報については、[キャラクターデータ](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarExcelConfigData.json)を参照。
 
 | 名前 | 説明 |
 | :--- | :--------- |
 | nickname | プレイヤーのニックネーム |
 | signature | ゲーム内ステータスメッセージ |
 | worldLevel | 世界ランク |
-| namecardId | 名刺ID |
+| namecardId | メインで設定された名刺ID |
 | finishAchievementNum | 達成したアチーブメント数 |
-| towerFloorIndex | 深境螺旋：層 |
-| towerLevelIndex | 深境螺旋：間 |
-| [showAvatarInfoList](#showavatarinfolist) | キャラクターIDとレベルのリスト |
-| showNameCardIdList | 飾られた名刺のリスト |
-| profilePicture.avatarId | プロフィールキャラクターのID |
+| towerFloorIndex | クリアした深境螺旋の層数 |
+| towerLevelIndex | クリアした深境螺旋の間数 |
+| [showAvatarInfoList](#showavatarinfolist) | 展示されたキャラクターIDとレべルのリスト |
+| showNameCardIdList | 展示された名刺のリスト |
+| profilePicture.avatarId | プロフィール画像のID |
 
 #### showAvatarInfoList
 
 | 名前 | 説明 |
 | :--- | :--------- |
 | avatarId | キャラクターID |
-| level | キャラクターLv |
-| costumeId | キャラクター衣装ID 詳細は[store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)内の`"Costumes"`に定義されています  |
+| level | キャラクターレべル |
+| costumeId | キャラクター衣装ID<br>詳細は[store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)内の`"Costumes"`を参照  |
 
 ### avatarInfoList
 
-ID別の文字の基本データについては、[store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)にアクセスしてください。
-追加情報については、[キャラクターデータ](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarExcelConfigData.json)を確認してください。
+キャラクターのID別の基本データについては、[store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)を参照。
+追加情報については、[キャラクターデータ](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarExcelConfigData.json)を参照。
 
-| 名前 | 説明                                                                                                                                                                       |
+| 名前 | 説明 |
 | :--- |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | avatarID | キャラクターID                                                                                                                                                                 |
-| talentIdList | 命ノ星座IDのリスト<br>0重の場合はデータがありません                                                                                                                                            |
-| [propMap](#propmap) | 文字情報プロパティ一覧                                                                                                                                                              |
-| fightPropMap -> `{id: value}` | キャラクターの戦闘プロパティのマップ。<br>[IDの定義](#fightprop)を確認してください                                                                                                                      |
-| skillDepotId | キャラクタースキルセットID <br />[Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) ->     `"id"`             |
-| inherentProudSkillList | 解放された固有天賦のIDリスト<br />[詳細情報](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` |
+| talentIdList | 解放済みの命ノ星座IDのリスト<br>C0の場合はこの項目はundefined                                                                                                                                            |
+| [propMap](#propmap) | キャラクター情報のプロパティ                                                                                                                                                              |
+| fightPropMap -> `{id: value}` | キャラクターの戦闘ステータスのMap。<br>[FightPropの定義](#fightprop)を確認してください                                                                                                                      |
+| skillDepotId | キャラクタースキルID <br />[Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) ->     `"id"`             |
+| inherentProudSkillList | 解放された天賦のIDリスト<br />[詳細情報](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` |
 | skillLevelMap -> `{skill_id: level}`| スキルレベルのマップ <br /> [詳細情報](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"`    |
-| [equipList](#equiplist) | 武器と聖遺物のリスト                                                                                                                                                               |
-| fetterInfo.expLevel  | 好感度Lv                                                                                                                                                                    |
+| [equipList](#equiplist) | 装備済の武器と聖遺物のリスト                                                                                                                                                               |
+| fetterInfo.expLevel  | 好感度レべル                                                                                                                                                                    |
 
 #### propMap
 
 | 名前 | 説明 |
 | :--- | :--------- |
 | type | プロパティタイプのID 詳細は[IDの定義](#prop)を参照してください |
-| ival | 無効な値(これは無視してください) |
+| ival | 無効な値 (これは使用しないでください) |
 | val  | プロパティの値 |
 
 #### equipList
 
 | 名前 | 説明 |
 | :--- | :--------- |
-| itemId | 識別ID <br /> [聖遺物情報](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryExcelConfigData.json) -> `"id"` <br />[武器情報](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/WeaponExcelConfigData.json) -> `"id"` |
+| itemId | 装備品のID <br /> [聖遺物情報](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/ReliquaryExcelConfigData.json) -> `"id"` <br />[武器情報](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/WeaponExcelConfigData.json) -> `"id"` |
 | [weapon](#weapon) `[Weapon Only]` | 武器の基本情報  |
 | [reliquary](#reliquary) `[Artifact Only]` | 聖遺物の基本情報  |
-| [flat](#flat) | このアイテムの詳細情報 |
+| [flat](#flat) | 各装備品の詳細情報 |
 
 #### weapon
 
@@ -189,7 +189,7 @@ ID別の文字の基本データについては、[store/characters.json](https:
 
 | 名前 | 説明 |
 | :--- | :---------- |
-| level | 武器Lv |
+| level | 武器レべル |
 | promoteLevel | 突破段階 |
 | affixMap | 精錬ランク `[0-4]` |
 
@@ -373,8 +373,8 @@ ID別の文字の基本データについては、[store/characters.json](https:
 [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)から"UI_XXXXXX"または"Skill_XXXXXX"を探します
 
 ## 言語情報
-[store/loc.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/loc.json)で各言語の翻訳文字列を得る事が出来ます。
-この時使用されるキー文字列は
+[store/loc.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/loc.json)でIDから各言語に対応した文字列を得る事が出来ます。
+この時に使用されるキーとなるIDは
 * [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json)内の`"NameTextMapHash"`
 * [flat](#flat)の`"nameTextHashMap"` `"setNameTextHashMap"`
 * [AppendProp](#appendprop) の名前。例：`"FIGHT_PROP_HP"` `"FIGHT_PROP_HEAL_ADD"`
