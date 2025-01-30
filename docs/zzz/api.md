@@ -65,7 +65,7 @@
 | PromotionLevel | Agent promotion level |
 | TalentLevel | Agent mindscape level |
 | SkinId | Agent Skin ID |
-| CoreSkillEnhancement | Core Skill Unlocked Enhancements - A, B, C, D, F, G |
+| CoreSkillEnhancement | Core Skill Unlocked Enhancements - A, B, C, D, E, F |
 | TalentToggleList | Mindscape Cinema visual toggles |
 | WeaponEffectState | W-Engine signature special effect state `[0: OFF, 1: ON]` |
 | ClaimedRewardList | Agent promotion rewards |

@@ -65,7 +65,7 @@
 | PromotionLevel | Agent Beförderungsstufe |
 | TalentLevel | Agent Sinnbild level |
 | SkinId | Agent Skin ID |
-| CoreSkillEnhancement | Freigeschaltete Verbesserungen der Kernfähigkeit - A, B, C, D, F, G |
+| CoreSkillEnhancement | Freigeschaltete Verbesserungen der Kernfähigkeit - A, B, C, D, E, F |
 | TalentToggleList | Sinnbild Filmdarstellung Einstellungenzzz |
 | WeaponEffectState | W-Engine Signatur Special Effekt Status `[0: AUS, 1: AN]` |
 | ClaimedRewardList | Agent Beförderungsbelohnungen |
