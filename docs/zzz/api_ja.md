@@ -93,7 +93,12 @@
 | UpgradeLevel | 音動機の突破レベル |
 
 #### EquipmentList
+| キー | 説明 |
+| :--- | :--------- | 
+| Slot | スロット位置 |
+| [Equipment](#equipment) | 装備品データ |
 
+#### Equipment
 | キー | 説明 |
 | :--- | :--------- | 
 | Uid | ドライバディスクUID |
