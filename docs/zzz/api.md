@@ -143,7 +143,7 @@ Refer to the table below and [store/zzz/property.json](https://raw.githubusercon
 | 20101 | Crit Rate `[Base]` |
 | 20103 | Crit Rate `[Flat]` |
 | 21101 | Crit DMG `[Base]` |
-| 21103 | CritDMG `[Flat]` |
+| 21103 | Crit DMG `[Flat]` |
 | 23101 | Pen Ratio `[Base]` |
 | 23103 | Pen Ratio `[Flat]` |
 | 23201 | PEN  `[Base]` |
