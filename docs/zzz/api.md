@@ -105,7 +105,7 @@ For more info, refer to [store/zzz/weapons.json](https://raw.githubusercontent.c
 | Exp | Exp |
 | Level | Drive Disc Level `[0-15]` |
 | BreakLevel | Amount of random stat procs |
-| IsLocked | Lockelock marked state of Drive Disc |
+| IsLocked | Locked marked state of Drive Disc |
 | IsAvailable | Available state of Drive Disc |
 | IsTrash | Trash marked state of Drive Disc |
 | MainStatList | Drive Disc Main Stat, check [Stat](#Stat) for additional info |
@@ -143,7 +143,7 @@ Refer to the table below and [store/zzz/property.json](https://raw.githubusercon
 | 20101 | Crit Rate `[Base]` |
 | 20103 | Crit Rate `[Flat]` |
 | 21101 | Crit DMG `[Base]` |
-| 21103 | CritDMG `[Flat]` |
+| 21103 | Crit DMG `[Flat]` |
 | 23101 | Pen Ratio `[Base]` |
 | 23103 | Pen Ratio `[Flat]` |
 | 23201 | PEN  `[Base]` |
@@ -151,15 +151,15 @@ Refer to the table below and [store/zzz/property.json](https://raw.githubusercon
 | 30501 | Energy Regen `[Base]` |
 | 30502 | Energy Regen% |
 | 30503 | Energy Regen `[Flat]` |
-| 31201 | Anomaly Power `[Base]` |
-| 31203 | Anomaly Power `[Flat]` |
+| 31201 | Anomaly Proficiency `[Base]` |
+| 31203 | Anomaly Proficiency `[Flat]` |
 | 31401 | Anomaly Mastery `[Base]` |
 | 31402 | Amonaly Mastery% |
 | 31403 | Anomaly Mastery `[Flat]` |
 | 31501 | Physical DMG Bonus `[Base]` |
 | 31503 | Physical DMG Bonus `[Flat]` |
 | 31601 | Fire DMG Bonus `[Base]` |
-| 31603 | Fire DMG Bouns `[Flat]` |
+| 31603 | Fire DMG Bonus `[Flat]` |
 | 31701 | Ice DMG Bonus `[Base]` |
 | 31703 | Ice DMG Bonus `[Flat]` |
 | 31801 | Electric DMG Bonus `[Base]` |
@@ -221,7 +221,7 @@ For any additional info, check the [ZenlessData](https://git.mero.moe/dimbreath/
 
 For the names used in Enka.Network, refer to [store/zzz/locs.json](https://raw.githubusercontent.com/EnkaNetwork/API-docs/refs/heads/master/store/zzz/locs.json)
 
-For any additional info about names, descriptions and etc, check the [TextMap Data](https://git.mero.moe/dimbreath/ZenlessData/src/branch/master/TextMap), only includes languages supported by the game.
+For any additional info about names, descriptions, etc., check the [TextMap Data](https://git.mero.moe/dimbreath/ZenlessData/src/branch/master/TextMap), only includes languages supported by the game.
 
 ## Wrappers
 
