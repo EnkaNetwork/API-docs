@@ -91,6 +91,12 @@ For more info, refer to [store/zzz/weapons.json](https://raw.githubusercontent.c
 | UpgradeLevel | W-Engine Phase Level |
 
 #### EquipmentList
+| Name | Description |
+| :--- | :--------- | 
+| Slot | Slot index |
+| [Equipment](#equipment) | Equipment data |
+
+#### Equipment
 
 | Name | Description |
 | :--- | :--------- | 
