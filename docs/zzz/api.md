@@ -159,7 +159,7 @@ Refer to the table below and [store/zzz/property.json](https://raw.githubusercon
 | 31501 | Physical DMG Bonus `[Base]` |
 | 31503 | Physical DMG Bonus `[Flat]` |
 | 31601 | Fire DMG Bonus `[Base]` |
-| 31603 | Fire DMG Bouns `[Flat]` |
+| 31603 | Fire DMG Bonus `[Flat]` |
 | 31701 | Ice DMG Bonus `[Base]` |
 | 31703 | Ice DMG Bonus `[Flat]` |
 | 31801 | Electric DMG Bonus `[Base]` |
