@@ -194,7 +194,7 @@ Orientiere dich an der Tabelle unten und [store/zzz/property.json](https://raw.g
 ```Ergebnis = PropertyValue * PropertyLevel```
 
 #### Rarity Scales
-| Rarity | Scale |
+| Rarität | Skalierung |
 | :----- | :------ |
 | 4 | 0.2 |
 | 3 | 0.25 |
