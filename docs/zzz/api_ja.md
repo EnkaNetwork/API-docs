@@ -6,7 +6,7 @@
 - [定義](#定義)
 - [計算式](#計算式)
 - [アイコンと画像](#アイコンと画像)
-- [言語情報](#げ言語情報)
+- [言語情報](#言語情報)
 
 ## データ構造情報
 
@@ -213,9 +213,9 @@
 
 ## 言語情報
 
-For the names used in Enka.Network, refer to [store/zzz/locs.json](https://raw.githubusercontent.com/EnkaNetwork/API-docs/refs/heads/master/store/zzz/locs.json)
+[store/zzz/locs.json](https://raw.githubusercontent.com/EnkaNetwork/API-docs/refs/heads/master/store/zzz/locs.json) でIDから各言語に対応した文字列を得る事が出来ます。
 
-For any additional info about names, descriptions and etc, check the [TextMap Data](https://git.mero.moe/dimbreath/ZenlessData/src/branch/master/TextMap), only includes languages supported by the game.
+その他の追加情報を[TextMap Data](https://git.mero.moe/dimbreath/ZenlessData/src/branch/master/TextMap)で得る事が出来ます。ゲームでサポートされている言語のみが含まれます。
 
 ## ラッパー
-まだありません。
+ラッパーはまだありません。
