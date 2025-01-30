@@ -67,7 +67,7 @@
 | promotionLevel | エージェント昇格レべル |
 | TalentLevel | エージェント心象映画レべル |
 | SkinId | エージェントスキンID |
-| CoreSkillEnhancment | コアスキルの開放状況 - A, B, C, D, F, G |
+| CoreSkillEnhancement | コアスキルの開放状況 - A, B, C, D, F, G |
 | TalentToggles | 心象映画の外観のトグル状態 |
 | WeaponEffectState | モチーフ音動機のエフェクトのトグル状態 `[0: OFF, 1: ON]` |
 | ClaimedRewards | エージェント昇格報酬の受取状況 |
