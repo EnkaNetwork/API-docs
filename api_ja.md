@@ -4,8 +4,8 @@
 
 ## 各ゲームのAPIドキュメント
 
-- [原神](docs_ja/gi/api.md)
-- [ゼンレスゾーンゼロ](docs_ja/zzz/api.md)
+- [原神](docs/gi/api_ja.md)
+- [ゼンレスゾーンゼロ](docs/zzz/api_ja.md)
 
 
 ## はじめに
