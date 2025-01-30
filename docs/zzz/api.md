@@ -62,17 +62,17 @@
 | :--- | :--------- | 
 | Exp | Agent Exp |
 | Level | Agent Level |
-| promotionLevel | Agent promotion level |
+| PromotionLevel | Agent promotion level |
 | TalentLevel | Agent mindscape level |
 | SkinId | Agent Skin ID |
-| CoreSkillEnhancement | Core Skill Unlocked Enchancements - A, B, C, D, F, G |
+| CoreSkillEnhancement | Core Skill Unlocked Enhancements - A, B, C, D, F, G |
 | TalentToggles | Mindscape Cinema visual toggles |
 | WeaponEffectState | W-Engine signature special effect state `[0: OFF, 1: ON]` |
-| ClaimedRewards | Agent promotion rewards |
+| ClaimedRewardList | Agent promotion rewards |
 | ObtainmentTimestamp | Agent obtainment timestamp |
 | [Weapon](#weapon) | Equipped W-Engine | 
 | SkillLevelList | Agent skill level dict, check the definitions for indexes |
-| [EquippedList](#EquipmentList) | List of Disc Drives with UID |
+| [EquippedList](#EquippedList) | List of Disc Drives with UID |
 
 #### Weapon
 
@@ -90,7 +90,7 @@ For more info, refer to [store/zzz/weapons.json](https://raw.githubusercontent.c
 | IsLocked | Locked state of W-Engine |
 | UpgradeLevel | W-Engine Phase Level |
 
-#### EquipmentList
+#### EquippedList
 | Name | Description |
 | :--- | :--------- | 
 | Slot | Slot index |

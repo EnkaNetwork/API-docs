@@ -64,17 +64,17 @@
 | :--- | :--------- | 
 | Exp | エージェント経験値 |
 | Level | エージェントレべル |
-| promotionLevel | エージェント昇格レべル |
+| PromotionLevel | エージェント昇格レべル |
 | TalentLevel | エージェント心象映画レべル |
 | SkinId | エージェントスキンID |
 | CoreSkillEnhancement | コアスキルの開放状況 - A, B, C, D, F, G |
-| TalentToggles | 心象映画の外観のトグル状態 |
+| TalentToggleList | 心象映画の外観のトグル状態 |
 | WeaponEffectState | モチーフ音動機のエフェクトのトグル状態 `[0: OFF, 1: ON]` |
-| ClaimedRewards | エージェント昇格報酬の受取状況 |
+| ClaimedRewardList | エージェント昇格報酬の受取状況 |
 | ObtainmentTimestamp | エージェント獲得日時のタイムスタンプ |
 | [Weapon](#weapon) | 装備した音動機 | 
 | SkillLevelList | スキルレベルのリスト、インデックスは定義ファイルを参照 |
-| [EquippedList](#EquipmentList) | UIDを含むドライバディスクのリスト |
+| [EquippedList](#EquippedList) | UIDを含むドライバディスクのリスト |
 
 #### Weapon
 
@@ -92,7 +92,7 @@
 | IsLocked | 音動機が保護ロックされているか |
 | UpgradeLevel | 音動機の突破レベル |
 
-#### EquipmentList
+#### EquippedList
 | キー | 説明 |
 | :--- | :--------- | 
 | Slot | スロット位置 |
