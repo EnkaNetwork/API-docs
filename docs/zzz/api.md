@@ -105,7 +105,7 @@ For more info, refer to [store/zzz/weapons.json](https://raw.githubusercontent.c
 | Exp | Exp |
 | Level | Drive Disc Level `[0-15]` |
 | BreakLevel | Amount of random stat procs |
-| IsLocked | Lockelock marked state of Drive Disc |
+| IsLocked | Locked marked state of Drive Disc |
 | IsAvailable | Available state of Drive Disc |
 | IsTrash | Trash marked state of Drive Disc |
 | MainStatList | Drive Disc Main Stat, check [Stat](#Stat) for additional info |
