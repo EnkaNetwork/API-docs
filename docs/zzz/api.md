@@ -221,7 +221,7 @@ For any additional info, check the [ZenlessData](https://git.mero.moe/dimbreath/
 
 For the names used in Enka.Network, refer to [store/zzz/locs.json](https://raw.githubusercontent.com/EnkaNetwork/API-docs/refs/heads/master/store/zzz/locs.json)
 
-For any additional info about names, descriptions and etc, check the [TextMap Data](https://git.mero.moe/dimbreath/ZenlessData/src/branch/master/TextMap), only includes languages supported by the game.
+For any additional info about names, descriptions, etc., check the [TextMap Data](https://git.mero.moe/dimbreath/ZenlessData/src/branch/master/TextMap), only includes languages supported by the game.
 
 ## Wrappers
 
