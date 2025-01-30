@@ -151,8 +151,8 @@ Refer to the table below and [store/zzz/property.json](https://raw.githubusercon
 | 30501 | Energy Regen `[Base]` |
 | 30502 | Energy Regen% |
 | 30503 | Energy Regen `[Flat]` |
-| 31201 | Anomaly Power `[Base]` |
-| 31203 | Anomaly Power `[Flat]` |
+| 31201 | Anomaly Proficiency `[Base]` |
+| 31203 | Anomaly Proficiency `[Flat]` |
 | 31401 | Anomaly Mastery `[Base]` |
 | 31402 | Amonaly Mastery% |
 | 31403 | Anomaly Mastery `[Flat]` |
