@@ -49,7 +49,7 @@
 | ProfileId | プロフ画像のID |
 | Level | インターノットレベル | 
 | Title | 称号ID |
-| CallingCallId | 名刺ID |
+| CallingCardId | 名刺ID |
 | AvatarId | メインキャラID (アキラまたはリン) |
 
 #### ShowcaseDetail

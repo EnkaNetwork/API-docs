@@ -47,7 +47,7 @@
 | ProfileId | Profile Picture ID |
 | Level | Inter-Knot Level | 
 | Title | TitleId |
-| CallingCallId | Namecard ID |
+| CallingCardId | Namecard ID |
 | AvatarId | Main Character ID (Wise or Belle) |
 
 #### ShowcaseDetail
