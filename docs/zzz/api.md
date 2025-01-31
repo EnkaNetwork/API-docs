@@ -189,7 +189,7 @@ Refer to the table below and [store/zzz/property.json](https://raw.githubusercon
 ### Drive Disc
 
 #### Main Stat
-```Result = MainStat.PropertyValue * (MainStat.PropertyValue * Level * RarityScale)```
+```Result = MainStat.PropertyValue + (MainStat.PropertyValue * Level * RarityScale)```
 #### Sub Stat
 ```Result = PropertyValue * PropertyLevel```
 
