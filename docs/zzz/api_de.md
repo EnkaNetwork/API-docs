@@ -86,7 +86,7 @@
 | WeaponUid | W-Motor UID |
 | [Weapon](#weapon) | Ausgerüsteter W-Motor | 
 | SkillLevelList | Agent Skill Level Dictionary, überprüfe die Definitionen für Indexe |
-| [EquippedList](#EquippedList) | Liste von ausgerüsteten Antriebsschienen |
+| [EquippedList](#EquippedList) | Liste von ausgerüsteten Antriebsscheiben |
 
 #### Weapon
 
@@ -251,9 +251,9 @@ Um mit W-Motor-Statistiken zu arbeiten, musst du die folgenden JSONs benutzen:
 
 **NOTIZ:** Der W-Motor **Stahlpfote** `[14102]` wurde in diesem Beispiel benutzt.  
 
-#### Antriebsschiene
+#### Antriebsscheibe
 
-Um mit Antriebsschienenstatistiken zu arbeiten, musst du [EquipmentLevelTemplateTb.json](https://git.mero.moe/dimbreath/ZenlessData/src/branch/master/FileCfg/EquipmentLevelTemplateTb.json) benutzen.
+Um mit Antriebsscheibenstatistiken zu arbeiten, musst du [EquipmentLevelTemplateTb.json](https://git.mero.moe/dimbreath/ZenlessData/src/branch/master/FileCfg/EquipmentLevelTemplateTb.json) benutzen.
 
 Diese Datei gibt den Wert basierend auf seinem Level und seiner Rarität an.
 
@@ -272,7 +272,7 @@ Diese Datei gibt den Wert basierend auf seinem Level und seiner Rarität an.
 - **Zweitattribut:**  
     `Ergebnis = SubStat.BaseValue * (1 + 0.3 * BreakLevel)`  
 
-#### Antriebsschiene
+#### Antriebsscheibe
 
 - **Hauptattribut:**  
 `Ergebnis = MainStat.PropertyValue + (MainStat.PropertyValue * Level * RarityScale)`
