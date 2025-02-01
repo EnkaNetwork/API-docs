@@ -224,7 +224,7 @@ Um die Basisstats von einem Agent auszurechnen, musst du [store/zzz/avatars.json
 - **Wachstum:**  
   `GrowthValue = (GrowthProps[PropertyId] * (Avatar.Level - 1)) / 10000`  
 - **Beförderung:**  
-  `PromotionValue = PromotionProps[Avatar.PromotionLevel][PropertyId]`  
+  `PromotionValue = PromotionProps[Avatar.PromotionLevel - 1][PropertyId]`  
 - **Kernverbesserung:**  
   `CoreEnhancementValue = CoreEnhancementProps[Avatar.CoreSkillEnhancement][PropertyId]`  
 

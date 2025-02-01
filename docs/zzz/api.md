@@ -224,7 +224,7 @@ To calculate the base stats of an Agent, you need to use
 - **Growth:**  
   `GrowthValue = (GrowthProps[PropertyId] * (Avatar.Level - 1)) / 10000`  
 - **Promotion:**  
-  `PromotionValue = PromotionProps[Avatar.PromotionLevel][PropertyId]`  
+  `PromotionValue = PromotionProps[Avatar.PromotionLevel - 1][PropertyId]`  
 - **Core Enhancement:**  
   `CoreEnhancementValue = CoreEnhancementProps[Avatar.CoreSkillEnhancement][PropertyId]`  
 
