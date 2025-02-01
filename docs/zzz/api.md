@@ -71,6 +71,7 @@
 
 | Name | Description |
 | :--- | :--------- | 
+| Id | Agent ID |
 | Exp | Agent Exp |
 | Level | Agent Level |
 | PromotionLevel | Agent promotion level |
@@ -78,7 +79,7 @@
 | SkinId | Agent Skin ID |
 | CoreSkillEnhancement | Core Skill Unlocked Enhancements - A, B, C, D, E, F |
 | TalentToggleList | Mindscape Cinema visual toggles |
-| WeaponEffectState | W-Engine signature special effect state `[0: OFF, 1: ON]` |
+| WeaponEffectState | W-Engine signature special effect state `[0: None, 1: OFF, 2: ON]` |
 | IsHidden | Hidden state of Agent |
 | ClaimedRewardList | Agent promotion rewards |
 | ObtainmentTimestamp | Agent obtainment timestamp |
@@ -200,7 +201,7 @@ Refer to the table below and [store/zzz/property.json](https://raw.githubusercon
 
 ### Skills
 
-| Type | Description|
+| Index | Description|
 | :--- | :--------- |
 | 0 | Basic Attack |
 | 1 | Special Attack |
