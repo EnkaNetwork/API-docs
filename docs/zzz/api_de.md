@@ -91,7 +91,7 @@
 #### Weapon
 
 Unter [Formeln](#formeln) erfahren sie, wie man tatsächliche Werte aus den Basiswerten kriegt
-Für mehr Info, gehe zu [store/zzz/weapons.json](https://raw.githubusercontent.com/EnkaNetwork/API-docs/refs/heads/master/store/zzz/weapons.json)
+Für mehr Informationen, gehe zu [store/zzz/weapons.json](https://raw.githubusercontent.com/EnkaNetwork/API-docs/refs/heads/master/store/zzz/weapons.json)
 
 | Name | Beschreibung |
 | :--- | :--------- | 
