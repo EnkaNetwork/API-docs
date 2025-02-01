@@ -2,11 +2,20 @@
 
 ## Table of Content
 
+- [Wichtige Notizen](#wichtige-notizen)
 - [Datenstruktur](#datenstruktur)
 - [Definitionen](#definitions)
 - [Formeln](#formeln)
 - [Icons und Bilder](#icons-und-bilder)
 - [Lokalisierungen](#lokalisierungen)
+
+## Wichtige Notizen
+
+- UIDs für Waffen sowie Antriebsscheiben sind für den jeweiligen Gegenstand in einem Spielkonto einzigartig. Sie bleiben bei Verbesserungen der Antriebsscheibe/Waffe bestehen und können verwendet werden, um sie über mehrere Abfragen hinweg zu deduplizieren, wenn Sie den Überblick aller Ausrüstungen behalten möchten, die im Schaukasten angezeigt werden.
+
+- API Antworten werden immer die minimale Anzahl an Daten haben. Um Informationen zu kriegen, müssen sie mit den JSONs in [API-docs/store/zzz](https://github.com/EnkaNetwork/API-docs/tree/master/store/zzz) arbeiten. Wenn sie noch mehr Daten brauchen, gehen sie zu der [ZenlessData](https://git.mero.moe/dimbreath/ZenlessData), gepflegt von Dimbreath.
+
+- Während sie mit Charakter, Waffen und Antriebsscheiben Statistiken arbeiten, sollten sie zu [Formeln](#formeln) gehen. Großes Dankeschön an Mero für das Reverse Engineering um die Verwendung der Formeln zu kriegen.
 
 ---
 
