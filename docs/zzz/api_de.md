@@ -8,6 +8,8 @@
 - [Icons und Bilder](#icons-und-bilder)
 - [Lokalisierungen](#lokalisierungen)
 
+---
+
 ## Datenstruktur
 
 | Name | Beschreibung |
@@ -60,6 +62,7 @@
 
 | Name | Beschreibung |
 | :--- | :--------- | 
+| Id | Agent ID |
 | Exp | Agent Erfahrung |
 | Level | Agent Level |
 | PromotionLevel | Agent Beförderungsstufe |
@@ -67,12 +70,14 @@
 | SkinId | Agent Skin ID |
 | CoreSkillEnhancement | Freigeschaltete Verbesserungen der Kernfähigkeit - A, B, C, D, E, F |
 | TalentToggleList | Sinnbild Filmdarstellung Einstellungen |
-| WeaponEffectState | W-Engine Signatur Special Effekt Status `[0: AUS, 1: AN]` |
+| WeaponEffectState | W-Motor Signatur Special Effekt Status `[0: AUS, 1: AN]` |
+| IsHidden | ... |
 | ClaimedRewardList | Agent Beförderungsbelohnungen |
 | ObtainmentTimestamp | Agent erhalten Datum |
-| [Weapon](#weapon) | Ausgerüstete W-Engine | 
+| WeaponUid | W-Motor UID |
+| [Weapon](#weapon) | Ausgerüstete W-Motor | 
 | SkillLevelList | Agent skill level dict, überprüfe die Definitionen für Indexe |
-| [EquippedList](#EquippedList) | Liste von Disc Laufwerke mit UID |
+| [EquippedList](#EquippedList) | Liste von Disc Laufwerke |
 
 #### Weapon
 
@@ -81,14 +86,14 @@ Für mehr Info, gehe zu [store/zzz/weapons.json](https://raw.githubusercontent.c
 
 | Name | Beschreibung |
 | :--- | :--------- | 
-| Uid | W-Engine UID |
-| Id | W-Engine ID |
-| Exp | W-Engine Exp |
-| Level | W-Engine Level |
-| BreakLevel | W-Engine Modifikationslevel |
-| IsAvailable | Antriebsscheibe vorhanden |
-| IsLocked | Gesperrtstatus der W-Engine |
-| UpgradeLevel | W-Engine Levelphase |
+| Uid | W-Motor UID |
+| Id | W-Motor ID |
+| Exp | W-Motor Exp |
+| Level | W-Motor Level |
+| BreakLevel | W-Motor Modifikationslevel |
+| UpgradeLevel | W-Motor Levelphase |
+| IsAvailable | W-Motor vorhanden |
+| IsLocked | Gesperrtstatus der W-Motor |
 
 #### EquippedList
 | Name | Beschreibung |
@@ -121,6 +126,8 @@ Für mehr Info, gehe zu [store/zzz/weapons.json](https://raw.githubusercontent.c
 | PropertyId | Property ID, überprüfe die [Definitionen](#property-id) für IDs |
 | PropertyLevel | Anzahl der Rolls bei einem Substat |
 
+---
+
 ## Definitionen
 
 ### Property Id
@@ -136,7 +143,7 @@ Orientiere dich an der Tabelle unten und [store/zzz/property.json](https://raw.g
 | 12102 | ANG% |
 | 12103 | ANG `[Flat]` |
 | 12201 | Stoßkraft `[Base]` |
-| 12202 | Break% |
+| 12202 | Stoßkraft% |
 | 13101 | Def `[Base]` |
 | 13102 | Def% |
 | 13103 | Def `[Flat]` |
@@ -184,32 +191,33 @@ Orientiere dich an der Tabelle unten und [store/zzz/property.json](https://raw.g
 | 3 | Gefährlicher Überfall |
 | 4 | Unendliches Gefecht – Sackgasse | 
 
+---
+
 ## Formeln
 
-### Antriebsscheibe
+#### W-Motor 
 
-#### Hauptattribut
-```Ergebnis = MainStat.PropertyValue * (MainStat.PropertyValue * Level * RarityScale)```
-#### Subattribut
-```Ergebnis = PropertyValue * PropertyLevel```
+- Hauptattribut
+`Ergebnis = MainStat.BaseValue * (1 + 0.1568166666666667 * Level + 0.8922 * BreakLevel)`
+
+- Subattribut
+`Ergebnis = SubStat.BaseValue * (1 + 0.3 * BreakLevel)`
+
+#### Antriebsscheibe
+
+- Hauptattribut  
+`Ergebnis = MainStat.PropertyValue + (MainStat.PropertyValue * Level * RarityScale)`
+- Subattribut  
+`Ergebnis = PropertyValue * PropertyLevel`
 
 #### Rarity Scales
 | Rarität | Skalierung |
 | :----- | :------ |
 | 4 | 0.2 |
 | 3 | 0.25 |
-| 2 | 0.2 |
+| 2 | 0.3 |
 
-
-### W-Engine 
-
-#### Hauptattribut
-
-```Ergebnis = MainStat.BaseValue * (1 + 0.1568166666666667 * Level + 0.8922 * BreakLevel)```
-
-#### Subattribut
-
-```Ergebnis = SubStat.BaseValue * (1 + 0.3 * BreakLevel) ```
+---
 
 ## Icons und Bilder
 

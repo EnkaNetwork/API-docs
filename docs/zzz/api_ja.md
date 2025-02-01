@@ -62,6 +62,7 @@
 
 | キー | 説明 |
 | :--- | :--------- | 
+| Id | エージェントID |
 | Exp | エージェント経験値 |
 | Level | エージェントレべル |
 | PromotionLevel | エージェント昇格レべル |
@@ -70,6 +71,7 @@
 | CoreSkillEnhancement | コアスキルの開放状況 - A, B, C, D, E, F |
 | TalentToggleList | 心象映画の外観のトグル状態 |
 | WeaponEffectState | モチーフ音動機のエフェクトのトグル状態 `[0: OFF, 1: ON]` |
+| IsHidden | ... |
 | ClaimedRewardList | エージェント昇格報酬の受取状況 |
 | ObtainmentTimestamp | エージェント獲得日時のタイムスタンプ |
 | [Weapon](#weapon) | 装備した音動機 | 
@@ -88,9 +90,9 @@
 | Exp | 音動機の経験値 |
 | Level | 音動機のレベル |
 | BreakLevel | 音動機の更新レベル |
+| UpgradeLevel | 音動機の突破レベル |
 | IsAvailable | 音動機が利用可能かどうか |
 | IsLocked | 音動機が保護ロックされているか |
-| UpgradeLevel | 音動機の突破レベル |
 
 #### EquippedList
 | キー | 説明 |
@@ -187,30 +189,25 @@
 
 ## 計算式
 
-### ドライバディスク
+#### 音動機 
 
-#### メインステータス
-```値 = MainStat.PropertyValue * (MainStat.PropertyValue * Level * RarityScale)```
-#### サブステータス
-```値 = PropertyValue * PropertyLevel```
+- メインステータス  
+`値 = MainStat.BaseValue * (1 + 0.1568166666666667 * Level + 0.8922 * BreakLevel)`
+- サブステータス  
+`値 = SubStat.BaseValue * (1 + 0.3 * BreakLevel)`
 
-#### Rarity Scales
+#### ドライバディスク
+
+- メインステータス  
+`値 = MainStat.PropertyValue + (MainStat.PropertyValue * Level * RarityScale)`
+- サブステータス  
+`値 = PropertyValue * PropertyLevel`
+- Rarity Scales
 | レア度 | スケール |
 | :----- | :------ |
 | 4 | 0.2 |
 | 3 | 0.25 |
-| 2 | 0.2 |
-
-
-### 音動機 
-
-#### メインステータス
-
-```値 = MainStat.BaseValue * (1 + 0.1568166666666667 * Level + 0.8922 * BreakLevel)```
-
-#### サブステータス
-
-```値 = SubStat.BaseValue * (1 + 0.3 * BreakLevel) ```
+| 2 | 0.3 |
 
 ## アイコンと画像
 
