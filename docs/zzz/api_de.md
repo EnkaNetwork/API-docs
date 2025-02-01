@@ -15,7 +15,7 @@
 
 - API Antworten werden immer die minimale Anzahl an Daten haben. Um Informationen zu kriegen, müssen sie mit den JSONs in [API-docs/store/zzz](https://github.com/EnkaNetwork/API-docs/tree/master/store/zzz) arbeiten. Wenn sie noch mehr Daten brauchen, gehen sie zu der [ZenlessData](https://git.mero.moe/dimbreath/ZenlessData), gepflegt von Dimbreath.
 
-- Während sie mit Charakter, Waffen und Antriebsscheiben Statistiken arbeiten, sollten sie zu [Formeln](#formeln) gehen. Großes Dankeschön an Mero für das Reverse Engineering um die Verwendung der Formeln zu kriegen.
+- Während sie mit Charakter, Waffen und Antriebsscheiben Statistiken arbeiten, sollten sie zu [Formeln](#formeln) gehen. Großes Dankeschön an Mero für das Reverse Engineering um die Formeln zu kriegen.
 
 ---
 
@@ -75,18 +75,18 @@
 | Exp | Agent Erfahrung |
 | Level | Agent Level |
 | PromotionLevel | Agent Beförderungsstufe |
-| TalentLevel | Agent Sinnbild level |
+| TalentLevel | Agent Sinnbild Level |
 | SkinId | Agent Skin ID |
 | CoreSkillEnhancement | Freigeschaltete Verbesserungen der Kernfähigkeit - A, B, C, D, E, F |
-| TalentToggleList | Sinnbild Filmdarstellung Einstellungen |
-| WeaponEffectState | W-Motor Signatur Special Effekt Status `[0: AUS, 1: AN]` |
-| IsHidden | ... |
+| TalentToggleList | Sinnbild Filmdarstellungseinstellungen |
+| WeaponEffectState | W-Motor Signatureffektstatus `[0: Kein Effektstatus vorhanden, 1: AUS, 2: AN]` |
+| IsHidden | Verstecktstatus des Agenten |
 | ClaimedRewardList | Agent Beförderungsbelohnungen |
 | ObtainmentTimestamp | Agent erhalten Datum |
 | WeaponUid | W-Motor UID |
-| [Weapon](#weapon) | Ausgerüstete W-Motor | 
-| SkillLevelList | Agent skill level dict, überprüfe die Definitionen für Indexe |
-| [EquippedList](#EquippedList) | Liste von Disc Laufwerke |
+| [Weapon](#weapon) | Ausgerüsteter W-Motor | 
+| SkillLevelList | Agent Skill Level Dictionary, überprüfe die Definitionen für Indexe |
+| [EquippedList](#EquippedList) | Liste von ausgerüsteten Antriebsschienen |
 
 #### Weapon
 
@@ -102,19 +102,19 @@ Für mehr Info, gehe zu [store/zzz/weapons.json](https://raw.githubusercontent.c
 | BreakLevel | W-Motor Modifikationslevel |
 | UpgradeLevel | W-Motor Levelphase |
 | IsAvailable | W-Motor vorhanden |
-| IsLocked | Gesperrtstatus der W-Motor |
+| IsLocked | Gesperrtstatus des W-Motor |
 
 #### EquippedList
 | Name | Beschreibung |
 | :--- | :--------- | 
 | Slot | Slot index |
-| [Equipment](#equipment) | Equipment Daten |
+| [Equipment](#equipment) | Ausrüstungsdaten |
 
 #### Equipment
 
 | Name | Beschreibung |
 | :--- | :--------- | 
-| Uid | Drive Laufwerk UID |
+| Uid | Antriebsscheibe UID |
 | Id | Antriebsscheibe ID |
 | Exp | Exp |
 | Level | Antriebsscheibe Level `[0-15]` |
@@ -200,26 +200,83 @@ Orientiere dich an der Tabelle unten und [store/zzz/property.json](https://raw.g
 | 3 | Gefährlicher Überfall |
 | 4 | Unendliches Gefecht – Sackgasse | 
 
+### Skills
+
+| Index | Beschreibung |
+| :--- | :--------- |
+| 0 | Standardattacke |
+| 1 | Spezialattacke |
+| 2 | Dash  |
+| 3 | Ultimativ |
+| 5 | Kernattacke |
+| 6 | Unterstützung |
+
 ---
 
 ## Formeln
 
+#### Agentstatistiken
+
+Um die Basisstats von einem Agent auszurechnen, musst du [store/zzz/avatars.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/zzz/avatars.json) benutzen.  
+
+- **Totaler Basiswert:**  
+  `BaseTotalValue = BaseProps[PropertyId] + GrowthValue + PromotionValue + CoreEnhancementValue`  
+- **Wachstum:**  
+  `GrowthValue = (GrowthProps[PropertyId] * (Avatar.Level - 1)) / 10000`  
+- **Beförderung:**  
+  `PromotionValue = PromotionProps[Avatar.PromotionLevel][PropertyId]`  
+- **Kernverbesserung:**  
+  `CoreEnhancementValue = CoreEnhancementProps[Avatar.CoreSkillEnhancement][PropertyId]`  
+
+**NOTIZ:** Es ist empfohlen, die Ergebnisse runter zu runden bevor sie mit anderen Quellen addiert werden. 
+
+### Spielakkurat  
+
+#### W-Motor
+
+Um mit W-Motor-Statistiken zu arbeiten, musst du die folgenden JSONs benutzen:
+  \- [WeaponLevelTemplateTb.json](https://git.mero.moe/dimbreath/ZenlessData/src/branch/master/FileCfg/WeaponLevelTemplateTb.json)  
+  \- [WeaponStarTemplateTb.json](https://git.mero.moe/dimbreath/ZenlessData/src/branch/master/FileCfg/WeaponStarTemplateTb.json)  
+
+
+- **Hauptattribut:**  
+  `Ergebnis = MainStat.BaseValue * (1 + WeaponLevel.FIELD_XXX / 10000 + WeaponStar.FIELD_YYY / 10000)`  
+  **Beispiel (Level 60, BreakLevel 5):**  
+  `684 = 46 * (1 + 94090 / 10000 + 44610 / 10000)`  
+
+- **Zweitattribut:**  
+  `Ergebnis = MainStat.BaseValue * (1 + WeaponStar.FIELD_ZZZ / 10000)`  
+  **Beispiel (BreakLevel 5):**  
+  `2400 = 960 * (1 + 15000 / 10000)`  
+
+**NOTIZ:** Der W-Motor **Stahlpfote** `[14102]` wurde in diesem Beispiel benutzt.  
+
+#### Antriebsschiene
+
+Um mit Antriebsschienenstatistiken zu arbeiten, musst du [EquipmentLevelTemplateTb.json](https://git.mero.moe/dimbreath/ZenlessData/src/branch/master/FileCfg/EquipmentLevelTemplateTb.json) benutzen.
+
+Diese Datei gibt den Wert basierend auf seinem Level und seiner Rarität an.
+
+- **Hauptattribut:**  
+  `Ergebnis = MainStat.PropertyValue * (1 + EquipmentLevel.Field_XXX)`  
+  **Beispiel (Level 14, Rarität 4):**  
+  `2090 = 550 * (1 + 28000 / 10000)`  
+
+### Ungefähr
+
 #### W-Motor 
 
-- Hauptattribut
-`Ergebnis = MainStat.BaseValue * (1 + 0.1568166666666667 * Level + 0.8922 * BreakLevel)`
+- **Hauptattribut:**  
+    `Ergebnis = MainStat.BaseValue * (1 + 0.1568166666666667 * Level + 0.8922 * BreakLevel)`  
 
-- Subattribut
-`Ergebnis = SubStat.BaseValue * (1 + 0.3 * BreakLevel)`
+- **Zweitattribut:**  
+    `Ergebnis = SubStat.BaseValue * (1 + 0.3 * BreakLevel)`  
 
-#### Antriebsscheibe
+#### Antriebsschiene
 
-- Hauptattribut  
+- **Hauptattribut:**  
 `Ergebnis = MainStat.PropertyValue + (MainStat.PropertyValue * Level * RarityScale)`
-- Subattribut  
-`Ergebnis = PropertyValue * PropertyLevel`
-
-#### Rarity Scales
+- **Rarity Scales**
 | Rarität | Skalierung |
 | :----- | :------ |
 | 4 | 0.2 |
