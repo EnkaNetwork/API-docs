@@ -240,12 +240,12 @@ Um mit W-Motor-Statistiken zu arbeiten, musst du die folgenden JSONs benutzen:
 
 
 - **Hauptattribut:**  
-  `Ergebnis = MainStat.BaseValue * (1 + WeaponLevel.FIELD_XXX / 10000 + WeaponStar.FIELD_YYY / 10000)`  
+  `Ergebnis = MainStat.PropertyValue * (1 + WeaponLevel.FIELD_XXX / 10000 + WeaponStar.FIELD_YYY / 10000)`  
   **Beispiel (Level 60, BreakLevel 5):**  
   `684 = 46 * (1 + 94090 / 10000 + 44610 / 10000)`  
 
 - **Zweitattribut:**  
-  `Ergebnis = MainStat.BaseValue * (1 + WeaponStar.FIELD_ZZZ / 10000)`  
+  `Ergebnis = SecondaryStat.PropertyValue * (1 + WeaponStar.FIELD_ZZZ / 10000)`  
   **Beispiel (BreakLevel 5):**  
   `2400 = 960 * (1 + 15000 / 10000)`  
 
@@ -267,10 +267,10 @@ Diese Datei gibt den Wert basierend auf seinem Level und seiner Rarität an.
 #### W-Motor 
 
 - **Hauptattribut:**  
-    `Ergebnis = MainStat.BaseValue * (1 + 0.1568166666666667 * Level + 0.8922 * BreakLevel)`  
+    `Ergebnis = MainStat.PropertyValue * (1 + 0.1568166666666667 * Level + 0.8922 * BreakLevel)`  
 
 - **Zweitattribut:**  
-    `Ergebnis = SubStat.BaseValue * (1 + 0.3 * BreakLevel)`  
+    `Ergebnis = SecondaryStat.PropertyValue * (1 + 0.3 * BreakLevel)`  
 
 #### Antriebsscheibe
 

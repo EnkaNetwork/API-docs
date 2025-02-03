@@ -240,12 +240,12 @@ To work with W-Engine stats, you need to use:
 
 
 - **Main Stat:**  
-  `Result = MainStat.BaseValue * (1 + WeaponLevel.FIELD_XXX / 10000 + WeaponStar.FIELD_YYY / 10000)`  
+  `Result = MainStat.PropertyValue * (1 + WeaponLevel.FIELD_XXX / 10000 + WeaponStar.FIELD_YYY / 10000)`  
   **Example (Level 60, BreakLevel 5):**  
   `684 = 46 * (1 + 94090 / 10000 + 44610 / 10000)`  
 
 - **Secondary Stat:**  
-  `Result = MainStat.BaseValue * (1 + WeaponStar.FIELD_ZZZ / 10000)`  
+  `Result = SecondaryStat.PropertyValue * (1 + WeaponStar.FIELD_ZZZ / 10000)`  
   **Example (BreakLevel 5):**  
   `2400 = 960 * (1 + 15000 / 10000)`  
 
@@ -266,10 +266,10 @@ This file determines the Drive Disc value based on its level and rarity.
 #### W-Engine 
 
 - **Main Stat:**  
-    `Result = MainStat.BaseValue * (1 + 0.1568166666666667 * Level + 0.8922 * BreakLevel)`  
+    `Result = MainStat.PropertyValue * (1 + 0.1568166666666667 * Level + 0.8922 * BreakLevel)`  
 
 - **Secondary Stat:**  
-    `Result = SubStat.BaseValue * (1 + 0.3 * BreakLevel)`  
+    `Result = SecondaryStat.PropertyValue * (1 + 0.3 * BreakLevel)`  
 
 #### Drive Disc
 
