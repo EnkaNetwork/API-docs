@@ -257,7 +257,7 @@ To work with Drive Disc stats, you need to use [EquipmentLevelTemplateTb.json](h
 This file determines the Drive Disc value based on its level and rarity.  
 
 - **Main Stat:**  
-  `Result = MainStat.PropertyValue * (1 + EquipmentLevel.Field_XXX)`  
+  `Result = MainStat.PropertyValue * (1 + EquipmentLevel.Field_XXX / 10000)`  
   **Example (Level 14, Rarity 4):**  
   `2090 = 550 * (1 + 28000 / 10000)`  
 
