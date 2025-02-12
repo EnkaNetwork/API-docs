@@ -169,7 +169,7 @@ Refer to the table below and [store/zzz/property.json](https://raw.githubusercon
 | 31201 | Anomaly Proficiency `[Base]` |
 | 31203 | Anomaly Proficiency `[Flat]` |
 | 31401 | Anomaly Mastery `[Base]` |
-| 31402 | Amonaly Mastery% |
+| 31402 | Anomaly Mastery% |
 | 31403 | Anomaly Mastery `[Flat]` |
 | 31501 | Physical DMG Bonus `[Base]` |
 | 31503 | Physical DMG Bonus `[Flat]` |
