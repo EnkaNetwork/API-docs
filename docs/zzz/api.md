@@ -87,6 +87,8 @@
 | SkillLevelList | Agent skill level dict, check the [definitions](#skills) for indexes |
 | [EquippedList](#EquippedList) | List of Drive Discs |
 
+Note: If the agent has unlocked mindscape 3, increase all skill levels by 2. If the agent has unlocked mindscape 5, increase all skill levels by 2 on the base of the previous increase (4 total).
+
 #### Weapon
 
 Check [Formulas](#formulas) to see how to get actual values from base values
@@ -123,6 +125,8 @@ For more info, refer to [store/zzz/weapons.json](https://raw.githubusercontent.c
 | IsTrash | Trash marked state of Drive Disc |
 | MainStatList | Drive Disc Main Stat, check [Stat](#Stat) for additional info |
 | RandomPropertyList | Drive Disc Substat List, check [Stat](#Stat) for additional info |
+
+Note: Rarity of drive discs can be found in [store/zzz/equipment.json](https://github.com/seriaati/API-docs/blob/master/store/zzz/equipments.json).
 
 #### Stat
 
