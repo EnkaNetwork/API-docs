@@ -87,6 +87,7 @@
 | [Weapon](#weapon) | Ausgerüsteter W-Motor | 
 | SkillLevelList | Agent Skill Level Dictionary, überprüfe die Definitionen für Indexe |
 | [EquippedList](#EquippedList) | Liste von ausgerüsteten Antriebsscheiben |
+
 Notiz: Wenn der Agent Sinnbild Level 3 freigeschaltet hat, füge 2 zu allen Talenten hinzu. Wenn der Agent Sinnbild Level 5 freigeschaltet hat, füge 2 zu den bereits 2 hinzugefügten zu (4 insgesamt).
 
 #### Weapon
