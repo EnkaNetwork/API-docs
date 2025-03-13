@@ -125,6 +125,7 @@ Für mehr Informationen, gehe zu [store/zzz/weapons.json](https://raw.githubuser
 | IsTrash | Müllstatus der Antriebsscheibe |
 | MainStatList | Antriebsscheibe Hauptstat, überprüfe [Stat](#Stat) für mehr Informationen |
 | RandomPropertyList | Antriebsscheiben Substat List, überprüfe [Stat](#Stat) für mehr Informationen |
+
 Notiz: Rarität von Antriebsscheiben kann unter [store/zzz/equipment.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/zzz/equipments.json) gefunden werden.
 
 #### Stat
