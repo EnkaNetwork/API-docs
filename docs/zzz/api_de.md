@@ -87,6 +87,7 @@
 | [Weapon](#weapon) | Ausgerüsteter W-Motor | 
 | SkillLevelList | Agent Skill Level Dictionary, überprüfe die Definitionen für Indexe |
 | [EquippedList](#EquippedList) | Liste von ausgerüsteten Antriebsscheiben |
+Notiz: Wenn der Agent Sinnbild Level 3 freigeschaltet hat, füge 2 zu allen Talenten hinzu. Wenn der Agent Sinnbild Level 5 freigeschaltet hat, füge 2 zu den bereits 2 hinzugefügten zu (4 insgesamt).
 
 #### Weapon
 
@@ -124,6 +125,7 @@ Für mehr Informationen, gehe zu [store/zzz/weapons.json](https://raw.githubuser
 | IsTrash | Müllstatus der Antriebsscheibe |
 | MainStatList | Antriebsscheibe Hauptstat, überprüfe [Stat](#Stat) für mehr Informationen |
 | RandomPropertyList | Antriebsscheiben Substat List, überprüfe [Stat](#Stat) für mehr Informationen |
+Notiz: Rarität von Antriebsscheiben kann unter [store/zzz/equipment.json](https://github.com/seriaati/API-docs/blob/master/store/zzz/equipments.json) gefunden werden.
 
 #### Stat
 
