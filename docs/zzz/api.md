@@ -126,7 +126,7 @@ For more info, refer to [store/zzz/weapons.json](https://raw.githubusercontent.c
 | MainStatList | Drive Disc Main Stat, check [Stat](#Stat) for additional info |
 | RandomPropertyList | Drive Disc Substat List, check [Stat](#Stat) for additional info |
 
-Note: Rarity of drive discs can be found in [store/zzz/equipment.json](https://github.com/seriaati/API-docs/blob/master/store/zzz/equipments.json).
+Note: Rarity of drive discs can be found in [store/zzz/equipment.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/zzz/equipments.json).
 
 #### Stat
 
