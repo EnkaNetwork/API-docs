@@ -18,4 +18,5 @@ Select your preferred language:
 * [NL | API-documentatie](/api_nl.md)
 * [KR | API 문서](/api_kr.md)
 * [RU | API-документация](/api_ru.md)
+* [PT | Documentação da API](/api_pt.md)
 * [ID | Dokumentasi API](/api_id.md)
