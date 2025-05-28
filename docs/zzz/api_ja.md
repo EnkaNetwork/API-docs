@@ -223,4 +223,6 @@
 
 ## ラッパー
 
+Python - https://github.com/seriaati/enka-py - [seriaati](https://github.com/seriaati)
+
 C# - https://github.com/aliafuji/EnkaDotnet - [aliafuji](https://github.com/aliafuji)
