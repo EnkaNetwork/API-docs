@@ -374,3 +374,7 @@ Python - https://github.com/mrwan200/enkanetwork.py - [mrwan200](https://github.
 Python - https://github.com/seriaati/enka-py - [seriaati](https://github.com/seriaati)
 
 Java - https://github.com/kazuryyx/EnkaNetworkAPI - [kazury](https://github.com/kazuryyx)
+
+C# - https://github.com/aliafuji/EnkaDotnet - [aliafuji](https://github.com/aliafuji)
+
+C# - https://github.com/Carried520/EnkaSharp - [Carried520](https://github.com/Carried520)

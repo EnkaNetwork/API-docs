@@ -304,4 +304,4 @@ For any additional info about names, descriptions, etc., check the [TextMap Data
 
 ## Wrappers
 
-Currently none
+C# - https://github.com/aliafuji/EnkaDotnet - [aliafuji](https://github.com/aliafuji)

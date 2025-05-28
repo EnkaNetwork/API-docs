@@ -303,4 +303,4 @@ Für weitere Informationen über Namen, Beschreibung, etc. Überprüfe die [Text
 
 ## Wrappers
 
-Aktuell keine
+C# - https://github.com/aliafuji/EnkaDotnet - [aliafuji](https://github.com/aliafuji)
