@@ -130,3 +130,5 @@ Java - https://github.com/kazuryyx/EnkaNetworkAPI - [kazury](https://github.com/
 C# - https://github.com/aliafuji/EnkaDotnet - [aliafuji](https://github.com/aliafuji)
 
 C# - https://github.com/Carried520/EnkaSharp - [Carried520](https://github.com/Carried520)
+
+Go - https://github.com/kirinyoku/enkanetwork-go - [kirinyoku](https://github.com/kirinyoku)
