@@ -222,4 +222,7 @@
 その他の追加情報を[TextMap Data](https://git.mero.moe/dimbreath/ZenlessData/src/branch/master/TextMap)で得る事が出来ます。ゲームでサポートされている言語のみが含まれます。
 
 ## ラッパー
-ラッパーはまだありません。
+
+Python - https://github.com/seriaati/enka-py - [seriaati](https://github.com/seriaati)
+
+C# - https://github.com/aliafuji/EnkaDotnet - [aliafuji](https://github.com/aliafuji)

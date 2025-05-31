@@ -303,4 +303,6 @@ Für weitere Informationen über Namen, Beschreibung, etc. Überprüfe die [Text
 
 ## Wrappers
 
-Aktuell keine
+Python - https://github.com/seriaati/enka-py - [seriaati](https://github.com/seriaati)
+
+C# - https://github.com/aliafuji/EnkaDotnet - [aliafuji](https://github.com/aliafuji)

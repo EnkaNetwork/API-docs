@@ -304,4 +304,6 @@ For any additional info about names, descriptions, etc., check the [TextMap Data
 
 ## Wrappers
 
-Currently none
+Python - https://github.com/seriaati/enka-py - [seriaati](https://github.com/seriaati)
+
+C# - https://github.com/aliafuji/EnkaDotnet - [aliafuji](https://github.com/aliafuji)
