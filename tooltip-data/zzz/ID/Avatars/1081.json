@@ -1,0 +1,419 @@
+{
+    "Name": "Billy",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Dazzling Entrance",
+            "Description": "Saat <color=#FFFFFF>Dash Attack</color> atau <color=#FFFFFF>Dodge Counter</color> Billy mengenai musuh, dia akan memulihkan 2,7 poin Energy tambahan. Efek ini dapat dipicu sekali setiap 5 detik.",
+            "Lore": "\"Kalian terlalu polos untuk jadi orang jahat!\"\n\"Berbaris rapi, kayak karakter NPC di tempat latihan menembak saja!\""
+        },
+        "2": {
+            "Title": "Roaming Gunslinger",
+            "Description": "DMG yang diakibatkan <color=#FFFFFF>Dodge Counter</color> meningkat 25%. \nRolling Shot selama melancarkan <color=#FFFFFF>Basic Attack</color> akan dianggap sebagai Dodge, membuat Billy menjadi kebal selama Skill dilancarkan, serta dapat memicu <color=#FFFFFF>Perfect Dodge</color>.\nSaat Rolling Shot memicu <color=#FFFFFF>Perfect Dodge</color>, akan otomatis melancarkan <color=#FFFFFF>Dodge Counter</color>.",
+            "Lore": "\"Starlight Knight tidak akan pernah lari dari bahaya, ini namanya tembakan jitu!\"\n— User bernama \"Kak Monica Wangi\" dalam forum Starlight Radiance."
+        },
+        "3": {
+            "Title": "Teachings of the Starlight Knights",
+            "Description": "Level <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, dan <color=#FFFFFF>Chain Attack</color> +2.",
+            "Lore": "Tidak akan malas latihan dan tidak akan berhenti untuk berkembang! Ini adalah prinsip yang dianut oleh Starlight Knight. Billy benar-benar percaya dan dia benar-benar menjalankannya."
+        },
+        "4": {
+            "Title": "Starlight Ballistics",
+            "Description": "Saat <color=#FFFFFF>EX Special Attack</color> Billy mengenai musuh, CRIT Rate dari Skill ini akan meningkat berdasarkan jarak antara diri sendiri dari target. Semakin dekat jarak Billy dengan target, semakin tinggi efek peningkatan. Maks. peningkatan hingga 32%.",
+            "Lore": "Peluru eksplosif ciptaan Billy.\nSangat kuat ketika digunakan dalam jarak dekat, dan bahkan melampaui ekspektasi Billy yang awalnya hanya memodifikasinya agar terlihat lebih keren."
+        },
+        "5": {
+            "Title": "Lost Technological Construct",
+            "Description": "Level <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, dan <color=#FFFFFF>Chain Attack</color> +2.",
+            "Lore": "Komponen presisi yang tidak diketahui dan desain yang unik memberikan performa yang luar biasa kepada Billy... Tapi, biaya perawatannya juga tinggi."
+        },
+        "6": {
+            "Title": "Starlight Hero",
+            "Description": "Saat serangan Billy mengenai musuh sebanyak 10 kali atau memicu <color=#FFFFFF>Perfect Dodge</color>, DMG yang diakibatkan akan meningkat 6%. Dapat ditumpuk maks. 5 lapis. Efek buff akan direset jika Billy dipukul mundur atau terhempas oleh serangan musuh.",
+            "Lore": "\"Hooo~ Mantap! Anby, minggir dulu, sekarang giliranku!\"\n\"Yo, Anby, bantu putar lagu OST Starlight Knight dong.\"\n— Salah satu kalimat dari \"10 Kalimat Terlarang di Cunning Hares\" yang ditulis Anby"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Core Passive: Steady Shot",
+            "DescriptionByLevel": {
+                "1": "Setelah Billy memasuki posisi Crouching Shot saat melancarkan <color=#FFFFFF>Basic Attack</color>, DMG yang diakibatkan meningkat <color=#2BAD00>25%</color>. Efek buff akan berakhir jika Billy bergerak, kembali ke posisi standby, dipukul mundur, atau terhempas.",
+                "2": "Setelah Billy memasuki posisi Crouching Shot saat melancarkan <color=#FFFFFF>Basic Attack</color>, DMG yang diakibatkan meningkat <color=#2BAD00>29,1%</color>. Efek buff akan berakhir jika Billy bergerak, kembali ke posisi standby, dipukul mundur, atau terhempas.",
+                "3": "Setelah Billy memasuki posisi Crouching Shot saat melancarkan <color=#FFFFFF>Basic Attack</color>, DMG yang diakibatkan meningkat <color=#2BAD00>33,3%</color>. Efek buff akan berakhir jika Billy bergerak, kembali ke posisi standby, dipukul mundur, atau terhempas.",
+                "4": "Setelah Billy memasuki posisi Crouching Shot saat melancarkan <color=#FFFFFF>Basic Attack</color>, DMG yang diakibatkan meningkat <color=#2BAD00>37,5%</color>. Efek buff akan berakhir jika Billy bergerak, kembali ke posisi standby, dipukul mundur, atau terhempas.",
+                "5": "Setelah Billy memasuki posisi Crouching Shot saat melancarkan <color=#FFFFFF>Basic Attack</color>, DMG yang diakibatkan meningkat <color=#2BAD00>41,6%</color>. Efek buff akan berakhir jika Billy bergerak, kembali ke posisi standby, dipukul mundur, atau terhempas.",
+                "6": "Setelah Billy memasuki posisi Crouching Shot saat melancarkan <color=#FFFFFF>Basic Attack</color>, DMG yang diakibatkan meningkat <color=#2BAD00>45,8%</color>. Efek buff akan berakhir jika Billy bergerak, kembali ke posisi standby, dipukul mundur, atau terhempas.",
+                "7": "Setelah Billy memasuki posisi Crouching Shot saat melancarkan <color=#FFFFFF>Basic Attack</color>, DMG yang diakibatkan meningkat <color=#2BAD00>50%</color>. Efek buff akan berakhir jika Billy bergerak, kembali ke posisi standby, dipukul mundur, atau terhempas."
+            }
+        },
+        "MathSkill": {
+            "Title": "Additional Ability: Team Starlight",
+            "Description": "Berlaku jika terdapat Agen yang memiliki Atribut yang sama atau berasal dari faksi yang sama di dalam tim:\nSetelah Billy melancarkan <color=#FFFFFF>Chain Attack</color>, DMG dari <color=#FFFFFF>Ultimate</color> selanjutnya yang dilancarkan akan meningkat 50%. Efek ini dapat ditumpuk maks. 2 lapis, dan akan direset setelah Billy melancarkan <color=#FFFFFF>Ultimate</color>."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "108100001": {
+                "Title": "Basic Attack: Full Firepower",
+                "Description": "Tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMelancarkan Pierce terhadap musuh di depan dan mengakibatkan <color=#F0D12B>Physical DMG</color>.\nTahan atau tekan tombol terus-menerus untuk memasuki Crouching Shot dan memperpanjang durasi serangan.\nGerakkan {LAYOUT_CONSOLECONTROLLER#tuas}{LAYOUT_FALLBACK#<IconMap:Icon_JoyStick>} saat menembak dalam Crouching Shot untuk melancarkan Rolling Shot, mengatur posisi tubuh, dan mengakibatkan <color=#F0D12B>Physical DMG</color>.\nSaat menembak dalam Crouching Shot, berhenti menekan atau melepas tombol akan melancarkan Finishing Shot terhadap musuh di depan dan mengakibatkan <color=#F0D12B>Physical DMG</color>."
+            },
+            "108110001": {
+                "Title": "Basic Attack: Full Firepower"
+            },
+            "108110002": {
+                "Description": "Kelipatan DMG - Standing Shot",
+                "Param": "{Skill:1081002, Prop:1001}"
+            },
+            "108110003": {
+                "Description": "Kelipatan DMG - Standing Bullet",
+                "Param": "{Skill:1081003, Prop:1001}"
+            },
+            "108110004": {
+                "Description": "Kelipatan DMG - Crouching Shot",
+                "Param": "{Skill:1081004, Prop:1001}"
+            },
+            "108110005": {
+                "Description": "Kelipatan DMG - Crouching Bullet",
+                "Param": "{Skill:1081007, Prop:1001}"
+            },
+            "108110006": {
+                "Description": "Kelipatan DMG - Rolling Shot",
+                "Param": "{Skill:1081004, Prop:1001}"
+            },
+            "108110007": {
+                "Description": "Kelipatan DMG - Finishing Shot",
+                "Param": "{Skill:1081008, Prop:1001}"
+            },
+            "108110008": {
+                "Description": "Kelipatan Daze - Standing Shot",
+                "Param": "{Skill:1081002, Prop:1002}"
+            },
+            "108110009": {
+                "Description": "Kelipatan Daze - Standing Bullet",
+                "Param": "{Skill:1081003, Prop:1002}"
+            },
+            "108110010": {
+                "Description": "Kelipatan Daze - Crouching Shot",
+                "Param": "{Skill:1081004, Prop:1002}"
+            },
+            "108110011": {
+                "Description": "Kelipatan Daze - Crouching Bullet",
+                "Param": "{Skill:1081007, Prop:1002}"
+            },
+            "108110012": {
+                "Description": "Kelipatan Daze - Rolling Shot",
+                "Param": "{Skill:1081004, Prop:1002}"
+            },
+            "108110013": {
+                "Description": "Kelipatan Daze - Finishing Shot",
+                "Param": "{Skill:1081008, Prop:1002}"
+            }
+        },
+        "1": {
+            "108100002": {
+                "Title": "Special Attack: Stand Still",
+                "Description": "Tekan <IconMap:Icon_Special> untuk melancarkan Skill ini.\nMelancarkan Pierce hingga 3 tahap dalam garis lurus ke depan dan mengakibatkan <color=#F0D12B>Physical DMG</color>.\nLevel Anti-Interrupt akan meningkat selama melancarkan Skill ini."
+            },
+            "108100003": {
+                "Title": "EX Special Attack: Clearance Time",
+                "Description": "Saat Energy Billy sudah cukup, tekan <IconMap:Icon_SpecialReady> untuk melancarkan Skill ini.\nMelancarkan Pierce yang kuat ke depan dalam garis lurus dan mengakibatkan <color=#F0D12B>Physical DMG</color> dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "108110014": {
+                "Title": "Special Attack: Stand Still"
+            },
+            "108110015": {
+                "Description": "Kelipatan DMG: Tahap 1",
+                "Param": "{Skill:1081010, Prop:1001}"
+            },
+            "108110016": {
+                "Description": "Kelipatan DMG: Tahap 2",
+                "Param": "{Skill:1081011, Prop:1001}"
+            },
+            "108110017": {
+                "Description": "Kelipatan DMG: Tahap 3",
+                "Param": "{Skill:1081012, Prop:1001}"
+            },
+            "108110018": {
+                "Description": "Kelipatan Daze: Tahap 1",
+                "Param": "{Skill:1081010, Prop:1002}"
+            },
+            "108110019": {
+                "Description": "Kelipatan Daze: Tahap 2",
+                "Param": "{Skill:1081011, Prop:1002}"
+            },
+            "108110020": {
+                "Description": "Kelipatan Daze: Tahap 3",
+                "Param": "{Skill:1081012, Prop:1002}"
+            },
+            "108110021": {
+                "Title": "EX Special Attack: Clearance Time"
+            },
+            "108110022": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1081013, Prop:1001}"
+            },
+            "108110023": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1081013, Prop:1002}"
+            },
+            "108110024": {
+                "Description": "Konsumsi Energy",
+                "Param": "60 poin"
+            }
+        },
+        "2": {
+            "108100004": {
+                "Title": "Dodge: Risky Business",
+                "Description": "Tekan <IconMap:Icon_Evade> untuk melakukan Dodge.\nMelakukan Dodge dengan cepat.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "108100005": {
+                "Title": "Dash Attack: Starlight Sanction",
+                "Description": "Tekan <IconMap:Icon_Normal> saat melakukan Dodge sambil menggerakkan {LAYOUT_CONSOLECONTROLLER#tuas}{LAYOUT_FALLBACK#<IconMap:Icon_JoyStick>} untuk melancarkan Skill ini:\nMelancarkan serangan Pierce terhadap musuh dalam area besar di sekitar dan mengakibatkan <color=#F0D12B>Physical DMG</color>.\n\nTekan <IconMap:Icon_Normal> saat melakukan Dodge tanpa menggerakkan {LAYOUT_CONSOLECONTROLLER#tuas}{LAYOUT_FALLBACK#<IconMap:Icon_JoyStick>} untuk melancarkan Skill ini:\nMelancarkan serangan Pierce dalam garis lurus ke depan dan mengakibatkan <color=#F0D12B>Physical DMG</color>."
+            },
+            "108100006": {
+                "Title": "Dodge Counter: Fair Fight",
+                "Description": "Tekan <IconMap:Icon_Normal> setelah melakukan <color=#FFFFFF>Perfect Dodge</color> untuk melancarkan Skill ini.\nMelancarkan Pierce terhadap musuh di depan dan mengakibatkan <color=#F0D12B>Physical DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "108110025": {
+                "Title": "Dash Attack: Starlight Sanction"
+            },
+            "108110026": {
+                "Description": "Kelipatan DMG - 360-degree Shot",
+                "Param": "{Skill:1081016, Prop:1001}"
+            },
+            "108110027": {
+                "Description": "Kelipatan DMG - Straight Shot",
+                "Param": "{Skill:1081014, Prop:1001}"
+            },
+            "108110028": {
+                "Description": "Kelipatan Daze - 360-degree Shot",
+                "Param": "{Skill:1081016, Prop:1002}"
+            },
+            "108110029": {
+                "Description": "Kelipatan Daze - Straight Shot",
+                "Param": "{Skill:1081014, Prop:1002}"
+            },
+            "108110030": {
+                "Title": "Dodge Counter: Fair Fight"
+            },
+            "108110031": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1081017, Prop:1001}"
+            },
+            "108110032": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1081017, Prop:1002}"
+            }
+        },
+        "3": {
+            "108100007": {
+                "Title": "Chain Attack: Starlight Mirage",
+                "Description": "Saat <color=#FFFFFF>Chain Attack</color> terpicu, pilih Billy untuk melancarkan Skill ini.\nMelancarkan Pierce yang kuat terhadap musuh dalam area besar dan mengakibatkan <color=#F0D12B>Physical DMG</color> dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "108100008": {
+                "Title": "Ultimate: Starlight, Shine Bright",
+                "Description": "Saat Decibel Rating mencapai <color=#FFFFFF>Maximum</color>, tekan <IconMap:Icon_UltimateReady> untuk melancarkan Skill ini.\nMelancarkan Pierce yang kuat terhadap musuh dalam area besar dan mengakibatkan <color=#F0D12B>Physical DMG</color> dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "108110033": {
+                "Title": "Chain Attack: Starlight Mirage"
+            },
+            "108110034": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1081018, Prop:1001}"
+            },
+            "108110035": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1081018, Prop:1002}"
+            },
+            "108110036": {
+                "Title": "Ultimate: Starlight, Shine Bright"
+            },
+            "108110037": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1081019, Prop:1001}"
+            },
+            "108110038": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1081019, Prop:1002}"
+            }
+        },
+        "6": {
+            "108100010": {
+                "Title": "Quick Assist: Power of Teamwork",
+                "Description": "Saat Agen yang Dikendalikan terhempas, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nMelancarkan Pierce terhadap musuh di depan dan mengakibatkan <color=#F0D12B>Physical DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "108100011": {
+                "Title": "Evasive Assist: Flash Spin",
+                "Description": "Tepat sebelum Agen aktif diserang, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nMenghindari serangan musuh dan memicu <color=#FFFFFF>Vital View</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "108100012": {
+                "Title": "Assist Follow-Up: Fatal Shot",
+                "Description": "Setelah melancarkan <color=#FFFFFF>Evasive Assist</color>, tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMelancarkan Pierce ke depan dalam area yang besar dan mengakibatkan <color=#F0D12B>Physical DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "108110039": {
+                "Title": "Quick Assist: Power of Teamwork"
+            },
+            "108110040": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1081020, Prop:1001}"
+            },
+            "108110041": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1081020, Prop:1002}"
+            },
+            "108110042": {
+                "Title": "Assist Follow-Up: Fatal Shot"
+            },
+            "108110043": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1081021, Prop:1001}"
+            },
+            "108110044": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1081021, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1081001": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1081002": {
+            "DamageValue": 6800,
+            "DamageGrowth": 620,
+            "DazeValue": 5440,
+            "DazeGrowth": 250
+        },
+        "1081003": {
+            "DamageValue": 760,
+            "DamageGrowth": 70,
+            "DazeValue": 610,
+            "DazeGrowth": 30
+        },
+        "1081004": {
+            "DamageValue": 6180,
+            "DamageGrowth": 570,
+            "DazeValue": 5470,
+            "DazeGrowth": 250
+        },
+        "1081005": {
+            "DamageValue": 6180,
+            "DamageGrowth": 570,
+            "DazeValue": 5470,
+            "DazeGrowth": 250
+        },
+        "1081006": {
+            "DamageValue": 6180,
+            "DamageGrowth": 570,
+            "DazeValue": 5470,
+            "DazeGrowth": 250
+        },
+        "1081007": {
+            "DamageValue": 1270,
+            "DamageGrowth": 120,
+            "DazeValue": 890,
+            "DazeGrowth": 50
+        },
+        "1081008": {
+            "DamageValue": 4950,
+            "DamageGrowth": 450,
+            "DazeValue": 5520,
+            "DazeGrowth": 260
+        },
+        "1081009": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1081010": {
+            "DamageValue": 2420,
+            "DamageGrowth": 220,
+            "DazeValue": 2420,
+            "DazeGrowth": 110
+        },
+        "1081011": {
+            "DamageValue": 5170,
+            "DamageGrowth": 470,
+            "DazeValue": 5170,
+            "DazeGrowth": 240
+        },
+        "1081012": {
+            "DamageValue": 5010,
+            "DamageGrowth": 460,
+            "DazeValue": 5010,
+            "DazeGrowth": 230
+        },
+        "1081013": {
+            "DamageValue": 54380,
+            "DamageGrowth": 4950,
+            "DazeValue": 43950,
+            "DazeGrowth": 2000
+        },
+        "1081014": {
+            "DamageValue": 3900,
+            "DamageGrowth": 360,
+            "DazeValue": 1950,
+            "DazeGrowth": 90
+        },
+        "1081015": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1081016": {
+            "DamageValue": 6300,
+            "DamageGrowth": 580,
+            "DazeValue": 6300,
+            "DazeGrowth": 290
+        },
+        "1081017": {
+            "DamageValue": 22140,
+            "DamageGrowth": 2020,
+            "DazeValue": 19340,
+            "DazeGrowth": 880
+        },
+        "1081018": {
+            "DamageValue": 73520,
+            "DamageGrowth": 6690,
+            "DazeValue": 19660,
+            "DazeGrowth": 900
+        },
+        "1081019": {
+            "DamageValue": 159770,
+            "DamageGrowth": 14530,
+            "DazeValue": 19060,
+            "DazeGrowth": 870
+        },
+        "1081020": {
+            "DamageValue": 9340,
+            "DamageGrowth": 850,
+            "DazeValue": 9340,
+            "DazeGrowth": 430
+        },
+        "1081021": {
+            "DamageValue": 38880,
+            "DamageGrowth": 3540,
+            "DazeValue": 34120,
+            "DazeGrowth": 1560
+        },
+        "1081023": {
+            "DamageValue": 15070,
+            "DamageGrowth": 1370,
+            "DazeValue": 4260,
+            "DazeGrowth": 200
+        },
+        "1081025": {
+            "DamageValue": 108750,
+            "DamageGrowth": 9890,
+            "DazeValue": 46330,
+            "DazeGrowth": 2110
+        }
+    }
+}

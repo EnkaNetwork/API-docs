@@ -1,0 +1,523 @@
+{
+    "Name": "雅",
+    "ElementTypes": [
+        "Ice"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "雪上加霜",
+            "Description": "在<color=#FFFFFF>[霜月架势]</color>期间，每消耗1点<color=#FFFFFF>[落霜]</color>，<color=#FFFFFF>[普通攻击：霜月]</color>将无视目标6%防御力，最多叠加6层，退出<color=#FFFFFF>[霜月架势]</color>后增益效果结束；在<color=#FFFFFF>[普通攻击：霜月]</color>中进行三段蓄力，斩击命中处于<color=#FFFFFF>[霜灼]</color>状态下的敌人时，可以立即消除目标的<color=#FFFFFF>[霜灼]</color>状态，并使全队角色属性异常积蓄效率提升20%，持续10秒。",
+            "Lore": "雅自幼起便喜欢吟诵霜雪相关的诗句。\n即使初见时不能完全理解，但她依旧日复一日地思索着。\n不知不觉间，她已明悟出其中的真意。\n不是在某个清朗的雪夜，而是在刀刃相向的战场上。"
+        },
+        "2": {
+            "Title": "吐纳法",
+            "Description": "<color=#FFFFFF>[普通攻击：风花]</color>和<color=#FFFFFF>[闪避反击]</color>造成的伤害提升30%；第五段<color=#FFFFFF>[普通攻击：风花]</color>最后一击命中敌人时，星见雅获得1点<color=#FFFFFF>[落霜]</color>；进入战场时，星见雅立刻获得6点<color=#FFFFFF>[落霜]</color>，自身暴击率提升15%。",
+            "Lore": "「刀刃如常，心亦如是。」这是星见流剑术的训诫之一。\n击倒敌人只是致胜的第一步，在战斗中不失从容之心、\n保持毫不懈怠的仪态始终如一，才是武者的修行之道。"
+        },
+        "3": {
+            "Title": "武者修养",
+            "Description": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[连携技]</color> 技能等级+2",
+            "Lore": "武家出身的雅有着极好锻炼习惯，剑术修行是不能断的。什么？要开会？那就翘掉开会。"
+        },
+        "4": {
+            "Title": "皲裂",
+            "Description": "<color=#FFFFFF>[霜灼·破]</color>造成的伤害提升30%，触发<color=#FFFFFF>[霜灼·破]</color>时，星见雅额外获得250点喧响值。",
+            "Lore": "战斗时轻吟诗句，可以调节呼吸的节律。\n无论是心境还是呼吸，少女都时刻保持在盛开前的最佳状态。"
+        },
+        "5": {
+            "Title": "纪念日",
+            "Description": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[连携技]</color> 技能等级+2",
+            "Lore": "少女带着鲜花来到那个熟悉的地方，呼出的气化作白雾，融化在冰冷的空气里。\n她的指尖轻轻抚过纪念碑上的那个名字。\n周围的一切都很安静，如同最沉默的见证者。"
+        },
+        "6": {
+            "Title": "天资卓越",
+            "Description": "在<color=#FFFFFF>[霜月架势]</color>期间，星见雅将获得<color=#FFFFFF>[极意]</color>效果，使<color=#FFFFFF>[普通攻击：霜月]</color>造成的伤害提升30%，获得<color=#FFFFFF>[极意]</color>效果后，消耗<color=#FFFFFF>[落霜]</color>时，星见雅会根据当前蓄力段数，自动拔刀向前方发动强力斩击；在<color=#FFFFFF>[落霜]</color>耗尽前，拔刀斩击不会打断<color=#FFFFFF>[霜月架势]</color>下的蓄力进度；在一次<color=#FFFFFF>[霜月架势]</color>期间，最多连续发动3次拔刀斩击。",
+            "Lore": "经历的战斗数量越多，越是能让外人察觉到一个事实：若是有刀剑的神灵存在，那他们一定颇为偏爱星见雅。"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "核心被动：寒炎",
+            "DescriptionByLevel": {
+                "1": "星见雅对敌人造成<color=#98EFF0>烈霜伤害</color>时，将会为目标附着<color=#FFFFFF>[冰焰]</color>，持续30秒；对附着<color=#FFFFFF>[冰焰]</color>的敌人累积<color=#98EFF0>烈霜异常积蓄值</color>时，会基于星见雅暴击率的100%提升<color=#98EFF0>烈霜异常积蓄效率</color>，最多提升80%；星见雅累积<color=#98EFF0>烈霜异常积蓄值</color>时，具有独立的属性异常积蓄槽，随之触发的<color=#98EFF0>[冻结]</color>、<color=#98EFF0>[碎冰]</color>和<color=#98EFF0>[霜寒]</color>效果，可以与包括<color=#98EFF0>冰属性异常效果</color>在内的其他属性异常效果互相结算<color=#FFFFFF>[紊乱]</color>；\n星见雅对附着<color=#FFFFFF>[冰焰]</color>的敌人施加<color=#98EFF0>[霜寒]</color>效果时，将会消除<color=#FFFFFF>[冰焰]</color>并触发<color=#FFFFFF>[霜灼·破]</color>，对目标造成星见雅<color=#2BAD00>750%</color>攻击力的<color=#98EFF0>烈霜伤害</color>，同时使目标进入<color=#FFFFFF>[霜灼]</color>状态；<color=#FFFFFF>[霜灼]</color>状态下，所有单位对目标累积的属性异常积蓄值提升<color=#2BAD00>14%</color>，但星见雅无法再次为其附着<color=#FFFFFF>[冰焰]</color>；<color=#FFFFFF>[霜灼]</color>状态将会随本次<color=#98EFF0>[霜寒]</color>效果一起结束，状态持续期间，对敌人重新施加属性异常效果可以覆盖<color=#98EFF0>[霜寒]</color>并消除<color=#FFFFFF>[霜灼]</color>；\n触发<color=#FFFFFF>[霜灼·破]</color>时，星见雅获得1点<color=#FFFFFF>[落霜]</color>，10秒内最多触发一次。",
+                "2": "星见雅对敌人造成<color=#98EFF0>烈霜伤害</color>时，将会为目标附着<color=#FFFFFF>[冰焰]</color>，持续30秒；对附着<color=#FFFFFF>[冰焰]</color>的敌人累积<color=#98EFF0>烈霜异常积蓄值</color>时，会基于星见雅暴击率的100%提升<color=#98EFF0>烈霜异常积蓄效率</color>，最多提升80%；星见雅累积<color=#98EFF0>烈霜异常积蓄值</color>时，具有独立的属性异常积蓄槽，随之触发的<color=#98EFF0>[冻结]</color>、<color=#98EFF0>[碎冰]</color>和<color=#98EFF0>[霜寒]</color>效果，可以与包括<color=#98EFF0>冰属性异常效果</color>在内的其他属性异常效果互相结算<color=#FFFFFF>[紊乱]</color>；\n星见雅对附着<color=#FFFFFF>[冰焰]</color>的敌人施加<color=#98EFF0>[霜寒]</color>效果时，将会消除<color=#FFFFFF>[冰焰]</color>并触发<color=#FFFFFF>[霜灼·破]</color>，对目标造成星见雅<color=#2BAD00>875%</color>攻击力的<color=#98EFF0>烈霜伤害</color>，同时使目标进入<color=#FFFFFF>[霜灼]</color>状态；<color=#FFFFFF>[霜灼]</color>状态下，所有单位对目标累积的属性异常积蓄值提升<color=#2BAD00>15%</color>，但星见雅无法再次为其附着<color=#FFFFFF>[冰焰]</color>；<color=#FFFFFF>[霜灼]</color>状态将会随本次<color=#98EFF0>[霜寒]</color>效果一起结束，状态持续期间，对敌人重新施加属性异常效果可以覆盖<color=#98EFF0>[霜寒]</color>并消除<color=#FFFFFF>[霜灼]</color>；\n触发<color=#FFFFFF>[霜灼·破]</color>时，星见雅获得1点<color=#FFFFFF>[落霜]</color>，10秒内最多触发一次。",
+                "3": "星见雅对敌人造成<color=#98EFF0>烈霜伤害</color>时，将会为目标附着<color=#FFFFFF>[冰焰]</color>，持续30秒；对附着<color=#FFFFFF>[冰焰]</color>的敌人累积<color=#98EFF0>烈霜异常积蓄值</color>时，会基于星见雅暴击率的100%提升<color=#98EFF0>烈霜异常积蓄效率</color>，最多提升80%；星见雅累积<color=#98EFF0>烈霜异常积蓄值</color>时，具有独立的属性异常积蓄槽，随之触发的<color=#98EFF0>[冻结]</color>、<color=#98EFF0>[碎冰]</color>和<color=#98EFF0>[霜寒]</color>效果，可以与包括<color=#98EFF0>冰属性异常效果</color>在内的其他属性异常效果互相结算<color=#FFFFFF>[紊乱]</color>；\n星见雅对附着<color=#FFFFFF>[冰焰]</color>的敌人施加<color=#98EFF0>[霜寒]</color>效果时，将会消除<color=#FFFFFF>[冰焰]</color>并触发<color=#FFFFFF>[霜灼·破]</color>，对目标造成星见雅<color=#2BAD00>1000%</color>攻击力的<color=#98EFF0>烈霜伤害</color>，同时使目标进入<color=#FFFFFF>[霜灼]</color>状态；<color=#FFFFFF>[霜灼]</color>状态下，所有单位对目标累积的属性异常积蓄值提升<color=#2BAD00>16%</color>，但星见雅无法再次为其附着<color=#FFFFFF>[冰焰]</color>；<color=#FFFFFF>[霜灼]</color>状态将会随本次<color=#98EFF0>[霜寒]</color>效果一起结束，状态持续期间，对敌人重新施加属性异常效果可以覆盖<color=#98EFF0>[霜寒]</color>并消除<color=#FFFFFF>[霜灼]</color>；\n触发<color=#FFFFFF>[霜灼·破]</color>时，星见雅获得1点<color=#FFFFFF>[落霜]</color>，10秒内最多触发一次。",
+                "4": "星见雅对敌人造成<color=#98EFF0>烈霜伤害</color>时，将会为目标附着<color=#FFFFFF>[冰焰]</color>，持续30秒；对附着<color=#FFFFFF>[冰焰]</color>的敌人累积<color=#98EFF0>烈霜异常积蓄值</color>时，会基于星见雅暴击率的100%提升<color=#98EFF0>烈霜异常积蓄效率</color>，最多提升80%；星见雅累积<color=#98EFF0>烈霜异常积蓄值</color>时，具有独立的属性异常积蓄槽，随之触发的<color=#98EFF0>[冻结]</color>、<color=#98EFF0>[碎冰]</color>和<color=#98EFF0>[霜寒]</color>效果，可以与包括<color=#98EFF0>冰属性异常效果</color>在内的其他属性异常效果互相结算<color=#FFFFFF>[紊乱]</color>；\n星见雅对附着<color=#FFFFFF>[冰焰]</color>的敌人施加<color=#98EFF0>[霜寒]</color>效果时，将会消除<color=#FFFFFF>[冰焰]</color>并触发<color=#FFFFFF>[霜灼·破]</color>，对目标造成星见雅<color=#2BAD00>1125%</color>攻击力的<color=#98EFF0>烈霜伤害</color>，同时使目标进入<color=#FFFFFF>[霜灼]</color>状态；<color=#FFFFFF>[霜灼]</color>状态下，所有单位对目标累积的属性异常积蓄值提升<color=#2BAD00>17%</color>，但星见雅无法再次为其附着<color=#FFFFFF>[冰焰]</color>；<color=#FFFFFF>[霜灼]</color>状态将会随本次<color=#98EFF0>[霜寒]</color>效果一起结束，状态持续期间，对敌人重新施加属性异常效果可以覆盖<color=#98EFF0>[霜寒]</color>并消除<color=#FFFFFF>[霜灼]</color>；\n触发<color=#FFFFFF>[霜灼·破]</color>时，星见雅获得1点<color=#FFFFFF>[落霜]</color>，10秒内最多触发一次。",
+                "5": "星见雅对敌人造成<color=#98EFF0>烈霜伤害</color>时，将会为目标附着<color=#FFFFFF>[冰焰]</color>，持续30秒；对附着<color=#FFFFFF>[冰焰]</color>的敌人累积<color=#98EFF0>烈霜异常积蓄值</color>时，会基于星见雅暴击率的100%提升<color=#98EFF0>烈霜异常积蓄效率</color>，最多提升80%；星见雅累积<color=#98EFF0>烈霜异常积蓄值</color>时，具有独立的属性异常积蓄槽，随之触发的<color=#98EFF0>[冻结]</color>、<color=#98EFF0>[碎冰]</color>和<color=#98EFF0>[霜寒]</color>效果，可以与包括<color=#98EFF0>冰属性异常效果</color>在内的其他属性异常效果互相结算<color=#FFFFFF>[紊乱]</color>；\n星见雅对附着<color=#FFFFFF>[冰焰]</color>的敌人施加<color=#98EFF0>[霜寒]</color>效果时，将会消除<color=#FFFFFF>[冰焰]</color>并触发<color=#FFFFFF>[霜灼·破]</color>，对目标造成星见雅<color=#2BAD00>1250%</color>攻击力的<color=#98EFF0>烈霜伤害</color>，同时使目标进入<color=#FFFFFF>[霜灼]</color>状态；<color=#FFFFFF>[霜灼]</color>状态下，所有单位对目标累积的属性异常积蓄值提升<color=#2BAD00>18%</color>，但星见雅无法再次为其附着<color=#FFFFFF>[冰焰]</color>；<color=#FFFFFF>[霜灼]</color>状态将会随本次<color=#98EFF0>[霜寒]</color>效果一起结束，状态持续期间，对敌人重新施加属性异常效果可以覆盖<color=#98EFF0>[霜寒]</color>并消除<color=#FFFFFF>[霜灼]</color>；\n触发<color=#FFFFFF>[霜灼·破]</color>时，星见雅获得1点<color=#FFFFFF>[落霜]</color>，10秒内最多触发一次。",
+                "6": "星见雅对敌人造成<color=#98EFF0>烈霜伤害</color>时，将会为目标附着<color=#FFFFFF>[冰焰]</color>，持续30秒；对附着<color=#FFFFFF>[冰焰]</color>的敌人累积<color=#98EFF0>烈霜异常积蓄值</color>时，会基于星见雅暴击率的100%提升<color=#98EFF0>烈霜异常积蓄效率</color>，最多提升80%；星见雅累积<color=#98EFF0>烈霜异常积蓄值</color>时，具有独立的属性异常积蓄槽，随之触发的<color=#98EFF0>[冻结]</color>、<color=#98EFF0>[碎冰]</color>和<color=#98EFF0>[霜寒]</color>效果，可以与包括<color=#98EFF0>冰属性异常效果</color>在内的其他属性异常效果互相结算<color=#FFFFFF>[紊乱]</color>；\n星见雅对附着<color=#FFFFFF>[冰焰]</color>的敌人施加<color=#98EFF0>[霜寒]</color>效果时，将会消除<color=#FFFFFF>[冰焰]</color>并触发<color=#FFFFFF>[霜灼·破]</color>，对目标造成星见雅<color=#2BAD00>1375%</color>攻击力的<color=#98EFF0>烈霜伤害</color>，同时使目标进入<color=#FFFFFF>[霜灼]</color>状态；<color=#FFFFFF>[霜灼]</color>状态下，所有单位对目标累积的属性异常积蓄值提升<color=#2BAD00>19%</color>，但星见雅无法再次为其附着<color=#FFFFFF>[冰焰]</color>；<color=#FFFFFF>[霜灼]</color>状态将会随本次<color=#98EFF0>[霜寒]</color>效果一起结束，状态持续期间，对敌人重新施加属性异常效果可以覆盖<color=#98EFF0>[霜寒]</color>并消除<color=#FFFFFF>[霜灼]</color>；\n触发<color=#FFFFFF>[霜灼·破]</color>时，星见雅获得1点<color=#FFFFFF>[落霜]</color>，10秒内最多触发一次。",
+                "7": "星见雅对敌人造成<color=#98EFF0>烈霜伤害</color>时，将会为目标附着<color=#FFFFFF>[冰焰]</color>，持续30秒；对附着<color=#FFFFFF>[冰焰]</color>的敌人累积<color=#98EFF0>烈霜异常积蓄值</color>时，会基于星见雅暴击率的100%提升<color=#98EFF0>烈霜异常积蓄效率</color>，最多提升80%；星见雅累积<color=#98EFF0>烈霜异常积蓄值</color>时，具有独立的属性异常积蓄槽，随之触发的<color=#98EFF0>[冻结]</color>、<color=#98EFF0>[碎冰]</color>和<color=#98EFF0>[霜寒]</color>效果，可以与包括<color=#98EFF0>冰属性异常效果</color>在内的其他属性异常效果互相结算<color=#FFFFFF>[紊乱]</color>；\n星见雅对附着<color=#FFFFFF>[冰焰]</color>的敌人施加<color=#98EFF0>[霜寒]</color>效果时，将会消除<color=#FFFFFF>[冰焰]</color>并触发<color=#FFFFFF>[霜灼·破]</color>，对目标造成星见雅<color=#2BAD00>1500%</color>攻击力的<color=#98EFF0>烈霜伤害</color>，同时使目标进入<color=#FFFFFF>[霜灼]</color>状态；<color=#FFFFFF>[霜灼]</color>状态下，所有单位对目标累积的属性异常积蓄值提升<color=#2BAD00>20%</color>，但星见雅无法再次为其附着<color=#FFFFFF>[冰焰]</color>；<color=#FFFFFF>[霜灼]</color>状态将会随本次<color=#98EFF0>[霜寒]</color>效果一起结束，状态持续期间，对敌人重新施加属性异常效果可以覆盖<color=#98EFF0>[霜寒]</color>并消除<color=#FFFFFF>[霜灼]</color>；\n触发<color=#FFFFFF>[霜灼·破]</color>时，星见雅获得1点<color=#FFFFFF>[落霜]</color>，10秒内最多触发一次。"
+            }
+        },
+        "MathSkill": {
+            "Title": "额外能力：同沐霜雪",
+            "Description": "队伍中存在<color=#FFFFFF>[支援]</color>角色或与自身阵营相同的角色时触发：\n<color=#FFFFFF>[普通攻击：霜月]</color>造成的伤害提升60%；队伍中任意角色触发<color=#FFFFFF>[紊乱]</color>效果时，星见雅获得2点<color=#FFFFFF>[落霜]</color>，且在下一次<color=#FFFFFF>[霜月架势]</color>期间，<color=#FFFFFF>[普通攻击：霜月]</color>将无视目标30%<color=#98EFF0>冰属性伤害抗性</color>。"
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "109100001": {
+                "Title": "普通攻击：风花",
+                "Description": "点按 <IconMap:Icon_Normal> 发动：\n向前方进行至多五段的斩击，前两段造成<color=#F0D12B>物理伤害</color>，后三段造成<color=#98EFF0>烈霜伤害</color>；\n第五段<color=#FFFFFF>[普通攻击]</color>发动期间可以格挡敌人的攻击。"
+            },
+            "109100002": {
+                "Title": "普通攻击：霜月",
+                "Description": "拥有2点或以上<color=#FFFFFF>[落霜]</color>时，长按 <IconMap:Icon_Normal> 发动：\n星见雅收刀进入<color=#FFFFFF>[霜月架势]</color>并开始蓄力，每段蓄力会消耗2点<color=#FFFFFF>[落霜]</color>，最多可以进行三段蓄力，松开 <IconMap:Icon_Normal> 或<color=#FFFFFF>[落霜]</color>耗尽时，星见雅将根据当前蓄力段数，拔刀向前方发动强力斩击，造成大量<color=#98EFF0>烈霜伤害</color>，随后退出<color=#FFFFFF>[霜月架势]</color>；\n<color=#FFFFFF>[霜月架势]</color>期间拥有无敌效果；\n星见雅最多拥有6点<color=#FFFFFF>[落霜]</color>，进入战场时，星见雅立刻获得3点<color=#FFFFFF>[落霜]</color>。"
+            },
+            "109110001": {
+                "Title": "普通攻击：风花"
+            },
+            "109110002": {
+                "Description": "一段伤害倍率",
+                "Param": "{Skill:1091001, Prop:1001}"
+            },
+            "109110003": {
+                "Description": "二段伤害倍率",
+                "Param": "{Skill:1091002, Prop:1001}"
+            },
+            "109110004": {
+                "Description": "三段伤害倍率",
+                "Param": "{Skill:1091003, Prop:1001}"
+            },
+            "109110005": {
+                "Description": "四段伤害倍率",
+                "Param": "{Skill:1091004, Prop:1001}"
+            },
+            "109110006": {
+                "Description": "五段伤害倍率",
+                "Param": "{Skill:1091005, Prop:1001}"
+            },
+            "109110007": {
+                "Description": "一段失衡倍率",
+                "Param": "{Skill:1091001, Prop:1002}"
+            },
+            "109110008": {
+                "Description": "二段失衡倍率",
+                "Param": "{Skill:1091002, Prop:1002}"
+            },
+            "109110009": {
+                "Description": "三段失衡倍率",
+                "Param": "{Skill:1091003, Prop:1002}"
+            },
+            "109110010": {
+                "Description": "四段失衡倍率",
+                "Param": "{Skill:1091004, Prop:1002}"
+            },
+            "109110011": {
+                "Description": "五段失衡倍率",
+                "Param": "{Skill:1091005, Prop:1002}"
+            },
+            "109110047": {
+                "Title": "普通攻击：霜月"
+            },
+            "109110048": {
+                "Description": "一段蓄力斩击伤害倍率",
+                "Param": "{Skill:1091027, Prop:1001}"
+            },
+            "109110049": {
+                "Description": "二段蓄力斩击伤害倍率",
+                "Param": "{Skill:1091028, Prop:1001}"
+            },
+            "109110050": {
+                "Description": "三段蓄力斩击伤害倍率",
+                "Param": "{Skill:1091029, Prop:1001}"
+            },
+            "109110051": {
+                "Description": "一段蓄力斩击失衡倍率",
+                "Param": "{Skill:1091027, Prop:1002}"
+            },
+            "109110052": {
+                "Description": "二段蓄力斩击失衡倍率",
+                "Param": "{Skill:1091028, Prop:1002}"
+            },
+            "109110053": {
+                "Description": "三段蓄力斩击失衡倍率",
+                "Param": "{Skill:1091029, Prop:1002}"
+            }
+        },
+        "1": {
+            "109100003": {
+                "Title": "特殊技：深雪",
+                "Description": "点按 <IconMap:Icon_Special> 发动：\n快速拔刀向前方进行斩击，造成<color=#98EFF0>烈霜伤害</color>；\n招式发动期间抗打断等级提升。"
+            },
+            "109100004": {
+                "Title": "强化特殊技：飞雪",
+                "Description": "能量足够时，点按 <IconMap:Icon_SpecialReady> 发动：\n快速突进，对路径上的敌人发动强力斩击，造成大量<color=#98EFF0>烈霜伤害</color>；\n招式发动时，获得2点<color=#FFFFFF>[落霜]</color>；\n招式发动期间拥有无敌效果。\n招式发动后，能量足够时，再次点按 <IconMap:Icon_SpecialReady> 发动：\n额外消耗能量，对前方范围内的敌人发动强力追击，造成大量<color=#98EFF0>烈霜伤害</color>；\n招式发动时，获得2点<color=#FFFFFF>[落霜]</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "109110015": {
+                "Title": "特殊技：深雪"
+            },
+            "109110016": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1091008, Prop:1001}"
+            },
+            "109110017": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1091008, Prop:1002}"
+            },
+            "109110018": {
+                "Title": "强化特殊技：飞雪"
+            },
+            "109110019": {
+                "Description": "斩击伤害倍率",
+                "Param": "{{Skill:1091009, Prop:1001} + {Skill:1091010, Prop:1001}}"
+            },
+            "109110020": {
+                "Description": "追击伤害倍率",
+                "Param": "{{Skill:1091011, Prop:1001} + {Skill:1091012, Prop:1001}}"
+            },
+            "109110021": {
+                "Description": "斩击失衡倍率",
+                "Param": "{{Skill:1091009, Prop:1002} + {Skill:1091010, Prop:1002}}"
+            },
+            "109110022": {
+                "Description": "追击失衡倍率",
+                "Param": "{{Skill:1091011, Prop:1002} + {Skill:1091012, Prop:1002}}"
+            },
+            "109110023": {
+                "Description": "斩击能量消耗",
+                "Param": "40点"
+            },
+            "109110024": {
+                "Description": "追击能量消耗",
+                "Param": "40点"
+            }
+        },
+        "2": {
+            "109100005": {
+                "Title": "闪避：水鸟",
+                "Description": "点按 <IconMap:Icon_Evade> 发动：\n快速的冲刺闪避；\n招式发动期间拥有无敌效果。\n闪避时，连点或长按 <IconMap:Icon_Evade> 发动：\n长距离的冲刺闪避；\n招式发动期间拥有无敌效果。"
+            },
+            "109100006": {
+                "Title": "冲刺攻击：冬蜂",
+                "Description": "闪避时，点按 <IconMap:Icon_Normal> 发动：\n向前方进行斩击，造成<color=#F0D12B>物理伤害</color>；"
+            },
+            "109100007": {
+                "Title": "闪避反击：寒雀",
+                "Description": "触发<color=#FFFFFF>[极限闪避]</color>后，点按 <IconMap:Icon_Normal> 发动：\n对前方敌人发动斩击，造成<color=#98EFF0>烈霜伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "109110025": {
+                "Title": "冲刺攻击：冬蜂"
+            },
+            "109110026": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1091013, Prop:1001}"
+            },
+            "109110027": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1091013, Prop:1002}"
+            },
+            "109110028": {
+                "Title": "闪避反击：寒雀"
+            },
+            "109110029": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1091014, Prop:1001}"
+            },
+            "109110030": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1091014, Prop:1002}"
+            }
+        },
+        "3": {
+            "109100008": {
+                "Title": "连携技：春临",
+                "Description": "触发<color=#FFFFFF>[连携技]</color>时，选择对应角色发动：\n对前方大范围敌人发动强力斩击，造成大量<color=#98EFF0>烈霜伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "109100009": {
+                "Title": "终结技：名残雪",
+                "Description": "喧响等级达到<color=#FFFFFF>[极]</color>时，点按 <IconMap:Icon_UltimateReady> 发动：\n对前方大范围敌人发动强力斩击，略作延迟后发动终结一击，造成大量<color=#98EFF0>烈霜伤害</color>；\n招式发动时，获得3点<color=#FFFFFF>[落霜]</color>，自身造成的<color=#98EFF0>冰属性伤害</color>提升30%，持续12秒；\n招式发动期间拥有无敌效果。"
+            },
+            "109110031": {
+                "Title": "连携技：春临"
+            },
+            "109110032": {
+                "Description": "伤害倍率",
+                "Param": "{{Skill:1091015, Prop:1001} + {Skill:1091016, Prop:1001} + {Skill:1091017, Prop:1001}}"
+            },
+            "109110033": {
+                "Description": "失衡倍率",
+                "Param": "{{Skill:1091015, Prop:1002} + {Skill:1091016, Prop:1002} + {Skill:1091017, Prop:1002}}"
+            },
+            "109110034": {
+                "Title": "终结技：名残雪"
+            },
+            "109110035": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1091018, Prop:1001}"
+            },
+            "109110036": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1091018, Prop:1002}"
+            }
+        },
+        "6": {
+            "109100011": {
+                "Title": "快速支援：花信风",
+                "Description": "当前操作中的角色被击飞时，点按 <IconMap:Icon_Switch> 发动：\n对前方敌人发动斩击，造成<color=#98EFF0>烈霜伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "109100012": {
+                "Title": "招架支援：花筏",
+                "Description": "前场角色即将被攻击时，点按 <IconMap:Icon_Switch> 发动：\n招架敌人的攻击，累积大量失衡值；\n招式发动期间拥有无敌效果。"
+            },
+            "109100013": {
+                "Title": "支援突击：花辞",
+                "Description": "发动<color=#FFFFFF>[招架支援]</color>后，点按 <IconMap:Icon_Normal> 发动：\n对前方敌人发动突进斩击，造成<color=#98EFF0>烈霜伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "109110037": {
+                "Title": "快速支援：花信风"
+            },
+            "109110038": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1091021, Prop:1001}"
+            },
+            "109110039": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1091021, Prop:1002}"
+            },
+            "109110040": {
+                "Title": "招架支援：花筏"
+            },
+            "109110041": {
+                "Description": "轻招架失衡倍率",
+                "Param": "{Skill:1091022, Prop:1002}"
+            },
+            "109110042": {
+                "Description": "重招架失衡倍率",
+                "Param": "{Skill:1091023, Prop:1002}"
+            },
+            "109110043": {
+                "Description": "连续招架失衡倍率",
+                "Param": "{Skill:1091024, Prop:1002}"
+            },
+            "109110044": {
+                "Title": "支援突击：花辞"
+            },
+            "109110045": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1091025, Prop:1001}"
+            },
+            "109110046": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1091025, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1091001": {
+            "DamageValue": 2690,
+            "DamageGrowth": 250,
+            "DazeValue": 1350,
+            "DazeGrowth": 70
+        },
+        "1091002": {
+            "DamageValue": 2960,
+            "DamageGrowth": 270,
+            "DazeValue": 2690,
+            "DazeGrowth": 130
+        },
+        "1091003": {
+            "DamageValue": 6280,
+            "DamageGrowth": 580,
+            "DazeValue": 4640,
+            "DazeGrowth": 220
+        },
+        "1091004": {
+            "DamageValue": 9650,
+            "DamageGrowth": 880,
+            "DazeValue": 8210,
+            "DazeGrowth": 380
+        },
+        "1091005": {
+            "DamageValue": 12900,
+            "DamageGrowth": 1180,
+            "DazeValue": 13100,
+            "DazeGrowth": 600
+        },
+        "1091006": {
+            "DamageValue": 6280,
+            "DamageGrowth": 580,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1091007": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1091008": {
+            "DamageValue": 3580,
+            "DamageGrowth": 330,
+            "DazeValue": 3580,
+            "DazeGrowth": 170
+        },
+        "1091009": {
+            "DamageValue": 15740,
+            "DamageGrowth": 1440,
+            "DazeValue": 12870,
+            "DazeGrowth": 590
+        },
+        "1091010": {
+            "DamageValue": 23600,
+            "DamageGrowth": 2150,
+            "DazeValue": 19300,
+            "DazeGrowth": 880
+        },
+        "1091011": {
+            "DamageValue": 19330,
+            "DamageGrowth": 1760,
+            "DazeValue": 16200,
+            "DazeGrowth": 740
+        },
+        "1091012": {
+            "DamageValue": 28990,
+            "DamageGrowth": 2640,
+            "DazeValue": 24300,
+            "DazeGrowth": 1110
+        },
+        "1091013": {
+            "DamageValue": 2580,
+            "DamageGrowth": 240,
+            "DazeValue": 1290,
+            "DazeGrowth": 60
+        },
+        "1091014": {
+            "DamageValue": 24590,
+            "DamageGrowth": 2240,
+            "DazeValue": 21450,
+            "DazeGrowth": 980
+        },
+        "1091015": {
+            "DamageValue": 18840,
+            "DamageGrowth": 1720,
+            "DazeValue": 5670,
+            "DazeGrowth": 260
+        },
+        "1091016": {
+            "DamageValue": 18840,
+            "DamageGrowth": 1720,
+            "DazeValue": 5670,
+            "DazeGrowth": 260
+        },
+        "1091017": {
+            "DamageValue": 25120,
+            "DamageGrowth": 2290,
+            "DazeValue": 7560,
+            "DazeGrowth": 350
+        },
+        "1091018": {
+            "DamageValue": 238800,
+            "DamageGrowth": 21710,
+            "DazeValue": 37040,
+            "DazeGrowth": 1690
+        },
+        "1091019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1091020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1091021": {
+            "DamageValue": 10450,
+            "DamageGrowth": 950,
+            "DazeValue": 10450,
+            "DazeGrowth": 480
+        },
+        "1091022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1091023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1091024": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 12830,
+            "DazeGrowth": 590
+        },
+        "1091025": {
+            "DamageValue": 33780,
+            "DamageGrowth": 3080,
+            "DazeValue": 29190,
+            "DazeGrowth": 1330
+        },
+        "1091026": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1091027": {
+            "DamageValue": 45470,
+            "DamageGrowth": 4140,
+            "DazeValue": 4400,
+            "DazeGrowth": 200
+        },
+        "1091028": {
+            "DamageValue": 85810,
+            "DamageGrowth": 7810,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1091029": {
+            "DamageValue": 214110,
+            "DamageGrowth": 19470,
+            "DazeValue": 37780,
+            "DazeGrowth": 1720
+        },
+        "1091030": {
+            "DamageValue": 11730,
+            "DamageGrowth": 1070,
+            "DazeValue": 5870,
+            "DazeGrowth": 270
+        },
+        "1091031": {
+            "DamageValue": 33170,
+            "DamageGrowth": 3020,
+            "DazeValue": 14030,
+            "DazeGrowth": 640
+        },
+        "1091032": {
+            "DamageValue": 33170,
+            "DamageGrowth": 3020,
+            "DazeValue": 70130,
+            "DazeGrowth": 3190
+        },
+        "1091033": {
+            "DamageValue": 17050,
+            "DamageGrowth": 1550,
+            "DazeValue": 17050,
+            "DazeGrowth": 780
+        },
+        "1091034": {
+            "DamageValue": 17050,
+            "DamageGrowth": 1550,
+            "DazeValue": 85250,
+            "DazeGrowth": 3880
+        },
+        "1091035": {
+            "DamageValue": 72000,
+            "DamageGrowth": 0,
+            "DazeValue": 4400,
+            "DazeGrowth": 0
+        },
+        "1091036": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

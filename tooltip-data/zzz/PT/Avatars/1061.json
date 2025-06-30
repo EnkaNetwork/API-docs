@@ -1,0 +1,502 @@
+{
+    "Name": "Corin",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Ferida Aberta",
+            "Description": "Quando o <color=#FFFFFF>Ataque em Cadeia</color> ou o <color=#FFFFFF>Supremo</color> de Corin atinge um inimigo, causa 12% mais dano ao alvo por 15s.",
+            "Lore": "\"A jovem sempre disse que, se vale a pena fazer alguma coisa, vale a pena se concentrar nela.\"\n\"Venho praticando e agora consigo fazer!\"\n\"Mas... você está me observando?\""
+        },
+        "2": {
+            "Title": "Efeito de Fissuração",
+            "Description": "Quando o <color=#FFFFFF>Ataque Especial Reforçado</color>, o <color=#FFFFFF>Ataque em Cadeia</color> ou o <color=#FFFFFF>Supremo</color> de Corin atinge um inimigo, a <color=#F0D12B>Resistência a Físico</color> do alvo diminui 0,5% por 5s. Pode acumular até 20 vezes. A duração de cada acúmulo é calculada separadamente.",
+            "Lore": "\"Desculpa, Sr. Etéreo ou Sra. Etérea!\"\n\"Mas tenho trabalho a fazer... Perdão!\"\nSentindo-se culpada, Corin se desculpa sinceramente com o monstro, erguendo sua motosserra e cortando os inimigos no caminho."
+        },
+        "3": {
+            "Title": "Governanta Amadora",
+            "Description": "Obtém +2 níveis de <color=#FFFFFF>Ataque Básico</color>, <color=#FFFFFF>Esquiva</color>, <color=#FFFFFF>Ataque de Assistência</color>, <color=#FFFFFF>Ataque Especial</color> e <color=#FFFFFF>Ataque em Cadeia</color>",
+            "Lore": "\"Vo... vou fazer o melhor que puder para me tornar uma boa governanta!\", disse Corin, caminhando na direção dos Etéreos com a motosserra em punho."
+        },
+        "4": {
+            "Title": "Guardiã de Combate",
+            "Description": "Quando Corin usa uma <color=#FFFFFF>Assistência Reativa</color>, <color=#FFFFFF>uma Assistência Defensiva</color> ou um <color=#FFFFFF>Ataque em Cadeia</color>, ela recupera 7,2 de Energia. Este efeito pode ser ativado uma vez a cada 16s.",
+            "Lore": "Corin, uma jovem governanta, séria e empenhada, se dedica de coração e alma em tudo que faz.\nÉ claro que isso inclui dar cabo dos inimigos em combate."
+        },
+        "5": {
+            "Title": "Governanta de Operações Especiais",
+            "Description": "Obtém +2 níveis de <color=#FFFFFF>Ataque Básico</color>, <color=#FFFFFF>Esquiva</color>, <color=#FFFFFF>Ataque de Assistência</color>, <color=#FFFFFF>Ataque Especial</color> e <color=#FFFFFF>Ataque em Cadeia</color>",
+            "Lore": "\"Ah... desculpe a falta de jeito. Nunca consigo fazer os cortes ficarem uniformes\", disse Corin, observando os pedaços de Etéreo espalhados pelo chão."
+        },
+        "6": {
+            "Title": "Liberação de Acúmulo",
+            "Description": "Quando o corte prolongado de Corin atinge um inimigo, ela ganha um acúmulo de Carga (máximo de 40 acúmulos). Ao atingir um inimigo com a explosão da motosserra durante uma <color=#FFFFFF>Contraesquiva</color>, um <color=#FFFFFF>Ataque Especial</color>, um <color=#FFFFFF>Ataque Especial Reforçado</color>, uma <color=#FFFFFF>Assistência Reativa</color> ou uma <color=#FFFFFF>Assistência Imediata</color>, todos os acúmulos de Carga são consumidos. Cada acúmulo consumido faz o ataque causar dano adicional equivalente a 3% do ATQ.",
+            "Lore": "Corin sabe que não é a mais poderosa das governantas nem a mais inteligente, mas espera se tornar a mais dedicada.\nEla faz bom uso de tudo que aprendeu."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passiva Principal: Hiperfoco",
+            "DescriptionByLevel": {
+                "1": "Após manter pressionado ou pressionar repetidamente, quando Corin usa um corte prolongado com a motosserra, o dano aumenta<color=#2BAD00> 18,7%</color>.",
+                "2": "Após manter pressionado ou pressionar repetidamente, quando Corin usa um corte prolongado com a motosserra, o dano aumenta<color=#2BAD00> 21,8%</color>.",
+                "3": "Após manter pressionado ou pressionar repetidamente, quando Corin usa um corte prolongado com a motosserra, o dano aumenta<color=#2BAD00> 25%</color>.",
+                "4": "Após manter pressionado ou pressionar repetidamente, quando Corin usa um corte prolongado com a motosserra, o dano aumenta<color=#2BAD00> 28,1%</color>.",
+                "5": "Após manter pressionado ou pressionar repetidamente, quando Corin usa um corte prolongado com a motosserra, o dano aumenta<color=#2BAD00> 31,2%</color>.",
+                "6": "Após manter pressionado ou pressionar repetidamente, quando Corin usa um corte prolongado com a motosserra, o dano aumenta<color=#2BAD00> 34,3%</color>.",
+                "7": "Após manter pressionado ou pressionar repetidamente, quando Corin usa um corte prolongado com a motosserra, o dano aumenta<color=#2BAD00> 37,5%</color>."
+            }
+        },
+        "MathSkill": {
+            "Title": "Habilidade Extra: Assistência de Limpeza",
+            "Description": "Quando outro personagem na sua equipe compartilha do mesmo atributo ou facção:\nCorin causa 35% mais dano a inimigos Atordoados."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "106100001": {
+                "Title": "Ataque Básico: Limpeza Total",
+                "Description": "Pressione <IconMap:Icon_Normal> para ativar:\nExecuta até cinco cortes, causando <color=#F0D12B>Dano Físico</color>.\nPressione repetidamente ou mantenha o botão pressionado durante o terceiro e o quinto ataques para prolongar a duração do ataque da motosserra."
+            },
+            "106110001": {
+                "Title": "Ataque Básico: Limpeza Total"
+            },
+            "106110002": {
+                "Description": "Multiplicador de Dano de 1º Golpe",
+                "Param": "{Skill:1061001, Prop:1001}"
+            },
+            "106110003": {
+                "Description": "Multiplicador de Dano de 2º Golpe",
+                "Param": "{Skill:1061002, Prop:1001}"
+            },
+            "106110004": {
+                "Description": "Multiplicador de Dano de 3º Golpe",
+                "Param": "{Skill:1061003, Prop:1001}"
+            },
+            "106110005": {
+                "Description": "Multiplicador de Dano de 4º Golpe",
+                "Param": "{Skill:1061004, Prop:1001}"
+            },
+            "106110006": {
+                "Description": "Multiplicador de Dano de 5º Golpe",
+                "Param": "{Skill:1061006, Prop:1001}"
+            },
+            "106110007": {
+                "Description": "Multiplicador de Atordoamento de 1º Golpe",
+                "Param": "{Skill:1061001, Prop:1002}"
+            },
+            "106110008": {
+                "Description": "Multiplicador de Atordoamento de 2º Golpe",
+                "Param": "{Skill:1061002, Prop:1002}"
+            },
+            "106110009": {
+                "Description": "Multiplicador de Atordoamento de 3º Golpe",
+                "Param": "{Skill:1061003, Prop:1002}"
+            },
+            "106110010": {
+                "Description": "Multiplicador de Atordoamento de 4º Golpe",
+                "Param": "{Skill:1061004, Prop:1002}"
+            },
+            "106110011": {
+                "Description": "Multiplicador de Atordoamento de 5º Golpe",
+                "Param": "{Skill:1061006, Prop:1002}"
+            }
+        },
+        "1": {
+            "106100002": {
+                "Title": "Ataque Especial: Varredura Poderosa",
+                "Description": "Pressione <IconMap:Icon_Special> para ativar:\nDesfere uma série de cortes contra inimigos à frente antes de detonar a motosserra, causando <color=#F0D12B>Dano Físico</color>.\nPressione repetidamente ou mantenha o botão pressionado para prolongar a duração do ataque da motosserra.\nDurante sua execução, o nível de Anti-Interrupção aumenta. O dano sofrido reduz 40%."
+            },
+            "106100003": {
+                "Title": "Ataque Especial Reforçado: Cuidado com a Saia",
+                "Description": "Quando Corin tiver Energia suficiente, pressione <IconMap:Icon_SpecialReady> para ativar:\nDesfere uma série de cortes contra inimigos à frente antes de detonar a motosserra, causando <color=#F0D12B>Dano Físico</color> muito alto.\nPressione repetidamente ou mantenha o botão pressionado para prolongar a duração do ataque da motosserra com custo de Energia se o ataque acertar.\nA personagem fica invulnerável durante o corte extendido.\nDurante sua execução, o nível de Anti-Interrupção aumenta. O dano sofrido reduz 40%."
+            },
+            "106110012": {
+                "Title": "Ataque Especial: Varredura Poderosa"
+            },
+            "106110013": {
+                "Description": "Multiplicador de Dano de Corte Ciclônico",
+                "Param": "{Skill:1061008, Prop:1001}"
+            },
+            "106110014": {
+                "Description": "Multiplicador de Dano de Corte Ciclônico Prolongado",
+                "Param": "{Skill:1061009, Prop:1001}"
+            },
+            "106110015": {
+                "Description": "Multiplicador de Dano de Explosão",
+                "Param": "{Skill:1061010, Prop:1001}"
+            },
+            "106110016": {
+                "Description": "Multiplicador de Atordoamento de Corte Ciclônico",
+                "Param": "{Skill:1061008, Prop:1002}"
+            },
+            "106110017": {
+                "Description": "Multiplicador de Atordoamento de Corte Ciclônico Prolongado",
+                "Param": "{Skill:1061009, Prop:1002}"
+            },
+            "106110018": {
+                "Description": "Multiplicador de Atordoamento de Explosão",
+                "Param": "{Skill:1061010, Prop:1002}"
+            },
+            "106110019": {
+                "Title": "Ataque Especial Reforçado: Cuidado com a Saia"
+            },
+            "106110020": {
+                "Description": "Multiplicador de Dano de Corte Ciclônico",
+                "Param": "{Skill:1061011, Prop:1001}"
+            },
+            "106110021": {
+                "Description": "Multiplicador de Dano de Corte Ciclônico Prolongado",
+                "Param": "{Skill:1061012, Prop:1001}"
+            },
+            "106110022": {
+                "Description": "Multiplicador de Dano de Explosão",
+                "Param": "{Skill:1061013, Prop:1001}"
+            },
+            "106110023": {
+                "Description": "Multiplicador de Atordoamento de Corte Ciclônico",
+                "Param": "{Skill:1061011, Prop:1002}"
+            },
+            "106110024": {
+                "Description": "Multiplicador de Atordoamento de Corte Ciclônico Prolongado",
+                "Param": "{Skill:1061012, Prop:1002}"
+            },
+            "106110025": {
+                "Description": "Multiplicador de Atordoamento de Explosão",
+                "Param": "{Skill:1061013, Prop:1002}"
+            },
+            "106110026": {
+                "Description": "Custo de Energia de Corte Ciclônico",
+                "Param": "20"
+            },
+            "106110027": {
+                "Description": "Custo de Energia de Corte Ciclônico Prolongado",
+                "Param": "40"
+            },
+            "106110028": {
+                "Description": "Custo de Energia de Explosão",
+                "Param": "20"
+            }
+        },
+        "2": {
+            "106100004": {
+                "Title": "Esquiva: Xô!",
+                "Description": "Pressione <IconMap:Icon_Evade> para ativar:\nUma esquiva rápida.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "106100005": {
+                "Title": "Ataque Rápido: Carambolas!",
+                "Description": "Pressione <IconMap:Icon_Normal> durante uma esquiva para ativar:\nCorta inimigos à frente, causando <color=#F0D12B>Dano Físico</color>.\nPressione repetidamente ou mantenha o botão pressionado para prolongar a duração do ataque da motosserra."
+            },
+            "106100006": {
+                "Title": "Contraesquiva: Não Vai Rolar!",
+                "Description": "Pressione <IconMap:Icon_Normal> durante uma <color=#FFFFFF>Esquiva Perfeita</color> para ativar:\nCorta inimigos à frente antes de detonar a motosserra, causando <color=#F0D12B>Dano Físico</color>.\nPressione repetidamente ou mantenha o botão pressionado para prolongar a duração do ataque da motosserra.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "106110029": {
+                "Title": "Ataque Rápido: Carambolas!"
+            },
+            "106110030": {
+                "Description": "Multiplicador de Dano Máximo",
+                "Param": "{Skill:1061014, Prop:1001}"
+            },
+            "106110031": {
+                "Description": "Multiplicador de Atordoamento Máximo",
+                "Param": "{Skill:1061014, Prop:1002}"
+            },
+            "106110032": {
+                "Title": "Contraesquiva: Não Vai Rolar!"
+            },
+            "106110033": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{{Skill:1061015, Prop:1001} + {Skill:1061016, Prop:1001}}"
+            },
+            "106110034": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{{Skill:1061015, Prop:1002} + {Skill:1061016, Prop:1002}}"
+            }
+        },
+        "3": {
+            "106100007": {
+                "Title": "Ataque em Cadeia: Perdão...",
+                "Description": "Quando um <color=#FFFFFF>Ataque em Cadeia</color> é acionado, selecione a personagem para ativar:\nDesencadeia um poderoso corte ascendente em inimigos em uma área pequena, causando <color=#F0D12B>Dano Físico</color> muito alto.\nPressione repetidamente ou mantenha o botão pressionado para aumentar a duração do ataque da motosserra.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "106100008": {
+                "Title": "Supremo: Mil Perdões!",
+                "Description": "Quando o Índice de dB estiver no <color=#FFFFFF>Máximo</color>, pressione <IconMap:Icon_UltimateReady> para ativar:\nDesfere um corte poderoso nos inimigos em uma área pequena, causando <color=#F0D12B>Dano Físico</color> muito alto.\nPressione repetidamente ou mantenha o botão pressionado para prolongar a duração do ataque da motosserra.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "106110035": {
+                "Title": "Ataque em Cadeia: Perdão..."
+            },
+            "106110036": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1061017, Prop:1001}"
+            },
+            "106110037": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1061017, Prop:1002}"
+            },
+            "106110038": {
+                "Title": "Supremo: Mil Perdões!"
+            },
+            "106110039": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1061018, Prop:1001}"
+            },
+            "106110040": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1061018, Prop:1002}"
+            }
+        },
+        "6": {
+            "106100010": {
+                "Title": "Assistência Reativa: Medidas de Emergência",
+                "Description": "Quando a personagem em uso for lançada para trás, pressione <IconMap:Icon_Switch> para ativar:\nCorta inimigos à frente antes de detonar a motosserra, causando <color=#F0D12B>Dano Físico</color>.\nPressione repetidamente ou mantenha o botão pressionado para prolongar a duração do ataque da motosserra.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "106100011": {
+                "Title": "Assistência Defensiva: P-Permita-me!",
+                "Description": "Quando o personagem em campo está prestes a sofrer um ataque, pressione <IconMap:Icon_Switch> para ativar:\nDefende o ataque inimigo e causa muito Atordoamento.\nEsta habilidade é ideal para aparar ataques inimigos e reduz o consumo de <color=#FFFFFF>Pontos de Assistência</color> quando a personagem sofre uma sequência intensa de ataques.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "106100012": {
+                "Title": "Assistência Imediata: Limpeza Rápida",
+                "Description": "Pressione <IconMap:Icon_Normal> após uma <color=#FFFFFF>Assistência Defensiva</color> para ativar:\nDesfere uma série de cortes contra inimigos à frente, seguidos por uma motosserra explosiva, causando <color=#F0D12B>Dano Físico</color>.\nPressione repetidamente ou mantenha pressionado para continuar cortando inimigos com a motosserra.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "106110041": {
+                "Title": "Assistência Reativa: Medidas de Emergência"
+            },
+            "106110042": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{{Skill:1061019, Prop:1001} + {Skill:1061020, Prop:1001}}"
+            },
+            "106110043": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{{Skill:1061019, Prop:1002} + {Skill:1061020, Prop:1002}}"
+            },
+            "106110044": {
+                "Title": "Assistência Defensiva: P-Permita-me!"
+            },
+            "106110045": {
+                "Description": "Multiplicador de Atordoamento de Defensiva Leve",
+                "Param": "{Skill:1061021, Prop:1002}"
+            },
+            "106110046": {
+                "Description": "Multiplicador de Atordoamento de Defensiva Pesada",
+                "Param": "{Skill:1061022, Prop:1002}"
+            },
+            "106110047": {
+                "Description": "Multiplicador de Atordoamento de Defensiva em Cadeia",
+                "Param": "{Skill:1061023, Prop:1002}"
+            },
+            "106110048": {
+                "Title": "Assistência Imediata: Limpeza Rápida"
+            },
+            "106110049": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1061024, Prop:1001}"
+            },
+            "106110050": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1061024, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1061001": {
+            "DamageValue": 8200,
+            "DamageGrowth": 750,
+            "DazeValue": 4100,
+            "DazeGrowth": 190
+        },
+        "1061002": {
+            "DamageValue": 7660,
+            "DamageGrowth": 700,
+            "DazeValue": 7020,
+            "DazeGrowth": 320
+        },
+        "1061003": {
+            "DamageValue": 17920,
+            "DamageGrowth": 1630,
+            "DazeValue": 12380,
+            "DazeGrowth": 570
+        },
+        "1061004": {
+            "DamageValue": 23340,
+            "DamageGrowth": 2130,
+            "DazeValue": 18640,
+            "DazeGrowth": 850
+        },
+        "1061005": {
+            "DamageValue": 11690,
+            "DamageGrowth": 1070,
+            "DazeValue": 8630,
+            "DazeGrowth": 400
+        },
+        "1061006": {
+            "DamageValue": 42120,
+            "DamageGrowth": 3830,
+            "DazeValue": 34200,
+            "DazeGrowth": 1560
+        },
+        "1061007": {
+            "DamageValue": 12460,
+            "DamageGrowth": 1140,
+            "DazeValue": 9580,
+            "DazeGrowth": 440
+        },
+        "1061008": {
+            "DamageValue": 6670,
+            "DamageGrowth": 610,
+            "DazeValue": 6670,
+            "DazeGrowth": 310
+        },
+        "1061009": {
+            "DamageValue": 3750,
+            "DamageGrowth": 350,
+            "DazeValue": 3750,
+            "DazeGrowth": 180
+        },
+        "1061010": {
+            "DamageValue": 2500,
+            "DamageGrowth": 230,
+            "DazeValue": 2500,
+            "DazeGrowth": 120
+        },
+        "1061011": {
+            "DamageValue": 34510,
+            "DamageGrowth": 3140,
+            "DazeValue": 20640,
+            "DazeGrowth": 940
+        },
+        "1061012": {
+            "DamageValue": 103520,
+            "DamageGrowth": 9420,
+            "DazeValue": 61900,
+            "DazeGrowth": 2820
+        },
+        "1061013": {
+            "DamageValue": 34510,
+            "DamageGrowth": 3140,
+            "DazeValue": 20640,
+            "DazeGrowth": 940
+        },
+        "1061014": {
+            "DamageValue": 9670,
+            "DamageGrowth": 880,
+            "DazeValue": 4840,
+            "DazeGrowth": 220
+        },
+        "1061015": {
+            "DamageValue": 13560,
+            "DamageGrowth": 1240,
+            "DazeValue": 6590,
+            "DazeGrowth": 300
+        },
+        "1061016": {
+            "DamageValue": 13560,
+            "DamageGrowth": 1240,
+            "DazeValue": 6590,
+            "DazeGrowth": 300
+        },
+        "1061017": {
+            "DamageValue": 68730,
+            "DamageGrowth": 6250,
+            "DazeValue": 28830,
+            "DazeGrowth": 1320
+        },
+        "1061018": {
+            "DamageValue": 202880,
+            "DamageGrowth": 18450,
+            "DazeValue": 40680,
+            "DazeGrowth": 1850
+        },
+        "1061019": {
+            "DamageValue": 13170,
+            "DamageGrowth": 1200,
+            "DazeValue": 13170,
+            "DazeGrowth": 600
+        },
+        "1061020": {
+            "DamageValue": 8330,
+            "DamageGrowth": 760,
+            "DazeValue": 8330,
+            "DazeGrowth": 380
+        },
+        "1061021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 24670,
+            "DazeGrowth": 1130
+        },
+        "1061022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 31170,
+            "DazeGrowth": 1420
+        },
+        "1061023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15170,
+            "DazeGrowth": 690
+        },
+        "1061024": {
+            "DamageValue": 54750,
+            "DamageGrowth": 4980,
+            "DazeValue": 48860,
+            "DazeGrowth": 2230
+        },
+        "1061025": {
+            "DamageValue": 23330,
+            "DamageGrowth": 2130,
+            "DazeValue": 5840,
+            "DazeGrowth": 270
+        },
+        "1061026": {
+            "DamageValue": 43000,
+            "DamageGrowth": 3910,
+            "DazeValue": 10750,
+            "DazeGrowth": 490
+        },
+        "1061027": {
+            "DamageValue": 24350,
+            "DamageGrowth": 2220,
+            "DazeValue": 6090,
+            "DazeGrowth": 280
+        },
+        "1061028": {
+            "DamageValue": 36250,
+            "DamageGrowth": 3300,
+            "DazeValue": 10990,
+            "DazeGrowth": 500
+        },
+        "1061029": {
+            "DamageValue": 72500,
+            "DamageGrowth": 6600,
+            "DazeValue": 21970,
+            "DazeGrowth": 1000
+        },
+        "1061030": {
+            "DamageValue": 72500,
+            "DamageGrowth": 6600,
+            "DazeValue": 21970,
+            "DazeGrowth": 1000
+        },
+        "1061031": {
+            "DamageValue": 36250,
+            "DamageGrowth": 3300,
+            "DazeValue": 10990,
+            "DazeGrowth": 500
+        },
+        "1061032": {
+            "DamageValue": 14040,
+            "DamageGrowth": 0,
+            "DazeValue": 10800,
+            "DazeGrowth": 0
+        },
+        "1061033": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

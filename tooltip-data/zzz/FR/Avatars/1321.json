@@ -1,0 +1,512 @@
+{
+    "Name": "Évelyne",
+    "ElementTypes": [
+        "Fire"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Tisse-rêve",
+            "Description": "En entrant sur le champ de bataille, Évelyne obtient immédiatement 1 500 décibels. Les ennemis souffrant de <color=#FFFFFF>Ligotage</color> seront <color=#FFFFFF>Attachés</color>. Les attaques d'Évelyne ignorent 12 % de la DÉF des ennemis <color=#FFFFFF>Attachés</color>. Lorsque Évelyne lance <color=#FFFFFF>Attaque spéciale : Cocon de confinement – Première forme</color> ou <color=#FFFFFF>Attaque spéciale EX : Cocon de confinement – Forme finale</color>, l'effet <color=#FFFFFF>Attaché</color> se propage à tous les ennemis touchés par la compétence. Cet effet <color=#FFFFFF>Attaché</color> propagé dure 10 s.",
+            "Lore": "Cette lumière fuyante et floue était comme un rêve qu'elle avait façonné, un futur inaccessible. Il ne s'agissait pas de rédemption, mais de la volonté d'être libre.\n« C'est ce que tu veux, toi aussi, non ? Une vraie vie. » demanda un jour une de ses collègues à Évelyne."
+        },
+        "2": {
+            "Title": "Danse de feu",
+            "Description": "L'ATQ d'Évelyne augmente de 15 %. Lorsque Évelyne lance <color=#FFFFFF>Attaque normale : Lacet étrangleur – Première forme</color> ou <color=#FFFFFF>Attaque normale : Lacet étrangleur – Deuxième forme</color>, les <color=#FFFFFF>Braises incandescentes</color> consommées seront remboursées. Cet effet peut être déclenché une fois toutes les 25 s. Lorsque Évelyne consomme des points d'<color=#FFFFFF>Entrave brûlante</color> pour déclencher <color=#FFFFFF>Enchaînement : Lunalux – Collet</color>, le niveau d'interruption de la compétence augmente.",
+            "Lore": "« Pour moi, sa lumière était inhabituelle, elle représentait quelque chose que je devais éviter. Mais elle a brisé toutes mes barrières, comme si elle avait voulu me rappeler qu'au-delà des ténèbres, il y a des choses qui en valent la peine. »\nLorsque Évelyne raconte sa première rencontre avec Astra Yao, une douceur inhabituelle enveloppe sa voix."
+        },
+        "3": {
+            "Title": "Hors du cocon",
+            "Description": "Niv. d'<color=#FFFFFF>attaque normale</color>, d'<color=#FFFFFF>esquive</color>, de <color=#FFFFFF>soutien</color>, d'<color=#FFFFFF>attaque spéciale</color> et d'<color=#FFFFFF>enchaînement</color> +2",
+            "Lore": "À cet instant, elle se libère de ses contraintes et se montre telle qu'elle est vraiment. Les cordes tendues se rompent, et les chaînes se transforment en un cocon brisé. Évelyne est sur le point de renaître, et dans son regard froid et acéré, on peut déceler une faible lueur douce."
+        },
+        "4": {
+            "Title": "Mélodie du destin",
+            "Description": "Après avoir lancé un <color=#FFFFFF>enchaînement</color> ou un <color=#FFFFFF>ultime</color>, Évelyne obtient immédiatement un bouclier équivalent à 10 % de ses PV max. Tant que ce bouclier est actif, les DGT CRIT d'Évelyne augmentent de 40 %.",
+            "Lore": "« Tu sais, Ève. À chaque fois que je rencontre quelqu'un qui compte pour moi, mon cœur fait \"boum-boum\" ! »\nÉvelyne soupire pour signifier que l'heure tourne, puis Astra attache en vitesse le dos de sa robe et part dans la précipitation.\nRestée seule dans la loge, Évelyne se murmure : « Boum-boum »."
+        },
+        "5": {
+            "Title": "Des cordes rouges comme l'aube",
+            "Description": "Niv. d'<color=#FFFFFF>attaque normale</color>, d'<color=#FFFFFF>esquive</color>, de <color=#FFFFFF>soutien</color>, d'<color=#FFFFFF>attaque spéciale</color> et d'<color=#FFFFFF>enchaînement</color> +2",
+            "Lore": "Ses cordes, teintes en rouge comme les nuages à l'aube.\nAprès chacune de ses attaques, elle tourne avec élégance et répand des flammes semblables aux lueurs du matin. Les mots sont superflus. La protection d'Évelyne est comme une flamme brillante."
+        },
+        "6": {
+            "Title": "Ombre et lumière entremêlées",
+            "Description": "Lors de l'utilisation de son <color=#FFFFFF>enchaînement</color> ou son <color=#FFFFFF>ultime</color>, Évelyne obtient l'effet <color=#FFFFFF>Corde ténébreuse</color> pendant 20 s. Lorsque <color=#FFFFFF>Corde ténébreuse</color> est active, lorsque Évelyne touche sa cible principale avec une <color=#FFFFFF>attaque normale</color>, une <color=#FFFFFF>attaque de bond</color>, une <color=#FFFFFF>attaque spéciale</color> ou une <color=#FFFFFF>attaque spéciale EX</color>, elle lance une attaque de suivi supplémentaire avec <color=#FFFFFF>Lacet Lunalux</color>, infligeant des <color=#FF5521>DGT de feu</color> équivalents à 375 % de l'ATQ d'Évelyne aux ennemis dans la zone. Ces DGT sont considérés comme des DGT d'<color=#FFFFFF>enchaînement</color> et peuvent être déclenchés 16 fois. Le nombre de déclenchements sera réinitialisé à chaque fois que vous obtenez l'effet <color=#FFFFFF>Corde ténébreuse</color>.",
+            "Lore": "Là où il y a de la lumière, il y aura toujours de l'ombre.\nElle se cache, silencieuse, suit le chemin de la lumière, protège chacun de ses éclats. L'ombre ne cherche jamais à voler le rayonnement de la lumière, mais à chaque tournant, elle remplit chaque coin que la lumière ne peut atteindre. Ce binôme n'a jamais été séparé, et ne peut pas l'âtre. La lumière n'est lumière que grâce à l'ombre, et l'ombre n'existe que grâce à la lumière. Il s'agit d'une poursuite éternelle, d'un lien indescriptible."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passif principal : Ficelé",
+            "DescriptionByLevel": {
+                "1": "En entrant dans l'état <color=#FFFFFF>Ligotage</color>, le taux CRIT d'Évelyne augmente de <color=#2BAD00>12,5 %</color>. Après être sortie de l'état <color=#FFFFFF>Ligotage</color>, Évelyne conserve cette amélioration pendant 10 s. Si Évelyne change avec un autre personnage dans l'état <color=#FFFFFF>Ligotage</color>, elle enchaîne directement par <color=#FFFFFF>Attaque spéciale : Cocon de confinement – Première forme</color>.",
+                "2": "En entrant dans l'état <color=#FFFFFF>Ligotage</color>, le taux CRIT d'Évelyne augmente de <color=#2BAD00>14,6 %</color>. Après être sortie de l'état <color=#FFFFFF>Ligotage</color>, Évelyne conserve cette amélioration pendant 10 s. Si Évelyne change avec un autre personnage dans l'état <color=#FFFFFF>Ligotage</color>, elle enchaîne directement par <color=#FFFFFF>Attaque spéciale : Cocon de confinement – Première forme</color>.",
+                "3": "En entrant dans l'état <color=#FFFFFF>Ligotage</color>, le taux CRIT d'Évelyne augmente de <color=#2BAD00>16,7 %</color>. Après être sortie de l'état <color=#FFFFFF>Ligotage</color>, Évelyne conserve cette amélioration pendant 10 s. Si Évelyne change avec un autre personnage dans l'état <color=#FFFFFF>Ligotage</color>, elle enchaîne directement par <color=#FFFFFF>Attaque spéciale : Cocon de confinement – Première forme</color>.",
+                "4": "En entrant dans l'état <color=#FFFFFF>Ligotage</color>, le taux CRIT d'Évelyne augmente de <color=#2BAD00>18,8 %</color>. Après être sortie de l'état <color=#FFFFFF>Ligotage</color>, Évelyne conserve cette amélioration pendant 10 s. Si Évelyne change avec un autre personnage dans l'état <color=#FFFFFF>Ligotage</color>, elle enchaîne directement par <color=#FFFFFF>Attaque spéciale : Cocon de confinement – Première forme</color>.",
+                "5": "En entrant dans l'état <color=#FFFFFF>Ligotage</color>, le taux CRIT d'Évelyne augmente de <color=#2BAD00>20,8 %</color>. Après être sortie de l'état <color=#FFFFFF>Ligotage</color>, Évelyne conserve cette amélioration pendant 10 s. Si Évelyne change avec un autre personnage dans l'état <color=#FFFFFF>Ligotage</color>, elle enchaîne directement par <color=#FFFFFF>Attaque spéciale : Cocon de confinement – Première forme</color>.",
+                "6": "En entrant dans l'état <color=#FFFFFF>Ligotage</color>, le taux CRIT d'Évelyne augmente de <color=#2BAD00>23 %</color>. Après être sortie de l'état <color=#FFFFFF>Ligotage</color>, Évelyne conserve cette amélioration pendant 10 s. Si Évelyne change avec un autre personnage dans l'état <color=#FFFFFF>Ligotage</color>, elle enchaîne directement par <color=#FFFFFF>Attaque spéciale : Cocon de confinement – Première forme</color>.",
+                "7": "En entrant dans l'état <color=#FFFFFF>Ligotage</color>, le taux CRIT d'Évelyne augmente de <color=#2BAD00>25 %</color>. Après être sortie de l'état <color=#FFFFFF>Ligotage</color>, Évelyne conserve cette amélioration pendant 10 s. Si Évelyne change avec un autre personnage dans l'état <color=#FFFFFF>Ligotage</color>, elle enchaîne directement par <color=#FFFFFF>Attaque spéciale : Cocon de confinement – Première forme</color>."
+            }
+        },
+        "MathSkill": {
+            "Title": "Capacité supplémentaire : Point d'embuscade",
+            "Description": "Lorsqu'il y a un autre personnage <color=#FFFFFF>Confusion</color> ou <color=#FFFFFF>Soutien</color> dans votre escouade :\nLes DGT d'<color=#FFFFFF>enchaînement</color> et d'<color=#FFFFFF>ultime</color> d'Évelyne augmentent de 30 %. Lorsque le taux CRIT d'Évelyne est égal ou supérieur à 80 %, le multiplicateur de DGT d'<color=#FFFFFF>Enchaînement : Lunalux – Collet</color>, d'<color=#FFFFFF>Ultime : Lacet Lunalux – Timbre</color> et d'<color=#FFFFFF>Ultime : Lacet Lunalux – Ombre</color> augmente à 125 % de sa valeur originelle."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "132100001": {
+                "Title": "Attaque normale : Fil barbelé",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pour activer :\nAssène jusqu'à 5 attaques frontales, qui infligent des <color=#F0D12B>DGT physiques</color> et des <color=#FF5521>DGT de feu</color>.\nLorsque le 5e coup touche un ennemi, Évelyne utilise son <color=#FFFFFF>Lacet Lunalux</color> pour ligoter la cible principale et entre dans l'état <color=#FFFFFF>Ligotage</color>."
+            },
+            "132100002": {
+                "Title": "Passif : Lien",
+                "Description": "Lorsque Évelyne utilise ses compétences pour infliger des DGT aux ennemis, elle accumule des <color=#FFFFFF>Braises incandescentes</color>.\nLorsque Évelyne consomme des <color=#FFFFFF>Braises incandescentes</color> pour lancer <color=#FFFFFF>Lacet étrangleur</color> ou des <color=#FFFFFF>décibels</color> pour lancer un <color=#FFFFFF>ultime</color>, elle obtient 1 point d'<color=#FFFFFF>Entrave brûlante</color>.\nLorsque Évelyne possède 3 points d'<color=#FFFFFF>Entrave brûlante</color>, sa prochaine utilisation de <color=#FFFFFF>Lacet étrangleur</color> consommera tous les points d'<color=#FFFFFF>Entrave brûlante</color> pour lancer à la place une version d'<color=#FFFFFF>Enchaînement : Lunalux — Collet</color> avec un niveau d'Interruption moins élevé."
+            },
+            "132100003": {
+                "Title": "Attaque normale : Lacet étrangleur – Première forme",
+                "Description": "Lorsque les <color=#FFFFFF>Braises incandescentes</color> sont supérieures ou égales à 50 %, maintenez <IconMap:Icon_Normal> ou <IconMap:Icon_Special> enfoncé pour activer :\nConsomme 50 % de <color=#FFFFFF>Braises incandescentes</color> pour lancer un entaille avec <color=#FFFFFF>Lacet Lunalux</color> qui inflige des <color=#FF5521>DGT de feu</color>.\nLors de l'utilisation de la compétence, le niveau de RÉS à l'interruption augmente, et les DGT subis sont réduits de 40 %.\nAprès le lancement de la compétence, elle obtient 1 point d'<color=#FFFFFF>Entrave brûlante</color>."
+            },
+            "132100004": {
+                "Title": "Attaque normale : Lacet étrangleur – Deuxième forme",
+                "Description": "Lorsque les <color=#FFFFFF>Braises incandescentes</color> sont supérieures ou égales à 50 %, après avoir lancé <color=#FFFFFF>Attaque normale : Lacet étrangleur – Première forme</color>, continuez à maintenir <IconMap:Icon_Normal> ou <IconMap:Icon_Special> enfoncé pour activer :\nConsomme 50 % de <color=#FFFFFF>Braises incandescentes</color> pour lancer une attaque de suivi avec <color=#FFFFFF>Lacet Lunalux</color>, qui inflige des <color=#FF5521>DGT de feu</color>.\nLors de l'utilisation de la compétence, le niveau de RÉS à l'interruption augmente, et les DGT subis sont réduits de 40 %.\nAprès le lancement de la compétence, elle obtient 1 point d'<color=#FFFFFF>Entrave brûlante</color>."
+            },
+            "132110001": {
+                "Title": "Attaque normale : Fil barbelé"
+            },
+            "132110002": {
+                "Description": "Multiplicateur de DGT du 1er coup",
+                "Param": "{Skill:1321001, Prop:1001}"
+            },
+            "132110003": {
+                "Description": "Multiplicateur de DGT du 2e coup",
+                "Param": "{Skill:1321002, Prop:1001}"
+            },
+            "132110004": {
+                "Description": "Multiplicateur de DGT du 3e coup",
+                "Param": "{Skill:1321003, Prop:1001}"
+            },
+            "132110005": {
+                "Description": "Multiplicateur de DGT du 4e coup",
+                "Param": "{Skill:1321004, Prop:1001}"
+            },
+            "132110006": {
+                "Description": "Multiplicateur de DGT du 5e coup",
+                "Param": "{Skill:1321005, Prop:1001}"
+            },
+            "132110007": {
+                "Description": "Multiplicateur de confusion du 1er coup",
+                "Param": "{Skill:1321001, Prop:1002}"
+            },
+            "132110008": {
+                "Description": "Multiplicateur de confusion du 2e coup",
+                "Param": "{Skill:1321002, Prop:1002}"
+            },
+            "132110009": {
+                "Description": "Multiplicateur de confusion du 3e coup",
+                "Param": "{Skill:1321003, Prop:1002}"
+            },
+            "132110010": {
+                "Description": "Multiplicateur de confusion du 4e coup",
+                "Param": "{Skill:1321004, Prop:1002}"
+            },
+            "132110011": {
+                "Description": "Multiplicateur de confusion du 5e coup",
+                "Param": "{Skill:1321005, Prop:1002}"
+            },
+            "132110012": {
+                "Title": "Attaque normale : Lacet étrangleur – Première forme"
+            },
+            "132110013": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1321006, Prop:1001}"
+            },
+            "132110014": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1321006, Prop:1002}"
+            },
+            "132110015": {
+                "Title": "Attaque normale : Lacet étrangleur – Deuxième forme"
+            },
+            "132110016": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1321007, Prop:1001}"
+            },
+            "132110017": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1321007, Prop:1002}"
+            }
+        },
+        "1": {
+            "132100005": {
+                "Title": "Attaque spéciale : Blocage",
+                "Description": "Avant d'entrer dans l'état <color=#FFFFFF>Ligotage</color>, appuyez sur <IconMap:Icon_Special> ou <IconMap:Icon_SpecialReady> pour activer :\nLance <color=#FFFFFF>Lacet Lunalux</color> pour attirer l'ennemi, et fonce en avant pour asséner un coup de pied qui inflige des <color=#FF5521>DGT de feu</color>.\nLorsque l'attaque touche un ennemi, Évelyne ligote la cible principale à l'aide du <color=#FFFFFF>Lacet Lunalux</color> et entrera dans l'état <color=#FFFFFF>Ligotage</color>.\nLe niveau de RÉS à l'interruption augmente lors de l'utilisation de cette compétence."
+            },
+            "132100006": {
+                "Title": "Attaque spéciale : Cocon de confinement – Première forme",
+                "Description": "Dans l'état <color=#FFFFFF>Ligotage</color>, appuyez sur <IconMap:Icon_Special> ou maintenez le bouton enfoncé pour activer :\nAutour de la cible souffrant de <color=#FFFFFF>Ligotage</color>, entrave les ennemis et déclenche une explosion qui inflige des <color=#FF5521>DGT de feu</color>. L'effet <color=#FFFFFF>Ligotage</color> prend fin après l'explosion.\nEsquive les attaques ennemies au lancement de la compétence. Si une <color=#FFFFFF>esquive parfaite</color> est ainsi déclenchée, vous obtenez 25 % de <color=#FFFFFF>Braises incandescentes</color> supplémentaires.\nAprès avoir entravé les ennemis alentours, appuyez sur <IconMap:Icon_Normal> pour annuler l'explosion et enchaîner immédiatement sur le 3e coup de l'<color=#FFFFFF>attaque normale</color>.\nLe niveau de RÉS à l'interruption augmente lors de l'utilisation de cette compétence."
+            },
+            "132100007": {
+                "Title": "Attaque spéciale EX : Cocon de confinement – Forme finale",
+                "Description": "Dans l'état <color=#FFFFFF>Ligotage</color> et avec suffisamment d'énergie, appuyez sur <IconMap:Icon_SpecialReady> ou maintenez le bouton enfoncé pour activer :\nAutour de la cible souffrant de <color=#FFFFFF>Ligotage</color>, entrave les ennemis et déclenche une explosion qui inflige d'importants <color=#FF5521>DGT de feu</color>. L'effet <color=#FFFFFF>Ligotage</color> prend fin après l'explosion.\nEsquive les attaques ennemies au lancement de la compétence. Si une <color=#FFFFFF>esquive parfaite</color> est ainsi déclenchée, vous obtenez 25 % de <color=#FFFFFF>Braises incandescentes</color> supplémentaires.\nAprès avoir entravé les ennemis alentours, appuyez sur <IconMap:Icon_Normal> pour annuler l'explosion et enchaîner immédiatement sur le 3e coup de l'<color=#FFFFFF>attaque normale</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "132110018": {
+                "Title": "Attaque spéciale : Blocage"
+            },
+            "132110019": {
+                "Description": "Multiplicateur de DGT du 1er coup",
+                "Param": "{Skill:1321008, Prop:1001}"
+            },
+            "132110020": {
+                "Description": "Multiplicateur de confusion du 1er coup",
+                "Param": "{Skill:1321008, Prop:1002}"
+            },
+            "132110021": {
+                "Title": "Attaque spéciale : Cocon de confinement – Première forme"
+            },
+            "132110022": {
+                "Description": "Multiplicateur de DGT d'enroulement",
+                "Param": "{Skill:1321009, Prop:1001}"
+            },
+            "132110023": {
+                "Description": "Multiplicateur de DGT d'explosion",
+                "Param": "{Skill:1321010, Prop:1001}"
+            },
+            "132110024": {
+                "Description": "Multiplicateur de confusion d'enroulement",
+                "Param": "{Skill:1321009, Prop:1002}"
+            },
+            "132110025": {
+                "Description": "Multiplicateur de confusion d'explosion",
+                "Param": "{Skill:1321010, Prop:1002}"
+            },
+            "132110026": {
+                "Title": "Attaque spéciale EX : Cocon de confinement – Forme finale"
+            },
+            "132110027": {
+                "Description": "Multiplicateur de DGT d'enroulement",
+                "Param": "{Skill:1321011, Prop:1001}"
+            },
+            "132110028": {
+                "Description": "Multiplicateur de DGT d'explosion",
+                "Param": "{Skill:1321012, Prop:1001}"
+            },
+            "132110029": {
+                "Description": "Multiplicateur de confusion d'enroulement",
+                "Param": "{Skill:1321011, Prop:1002}"
+            },
+            "132110030": {
+                "Description": "Multiplicateur de confusion d'explosion",
+                "Param": "{Skill:1321012, Prop:1002}"
+            },
+            "132110031": {
+                "Description": "Coût en énergie",
+                "Param": "60"
+            }
+        },
+        "2": {
+            "132100008": {
+                "Title": "Esquive : Foxtrot",
+                "Description": "Appuyez sur <IconMap:Icon_Evade> pour activer :\nUne esquive rapide.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "132100009": {
+                "Title": "Attaque de bond : Embuscade perforante",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pendant une esquive pour activer :\nAssène un coup de pied frontal, infligeant des <color=#F0D12B>DGT physiques</color>."
+            },
+            "132100010": {
+                "Title": "Contre d'esquive : Étranglement renversé",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> lors d'une <color=#FFFFFF>esquive parfaite</color> pour activer :\nEntaille les ennemis à proximité à l'aide du <color=#FFFFFF>Lacet Lunalux</color>, infligeant des <color=#FF5521>DGT de feu</color>.\nLorsque l'attaque touche un ennemi, Évelyne ligote la cible principale à l'aide du <color=#FFFFFF>Lacet Lunalux</color> et entrera dans l'état <color=#FFFFFF>Ligotage</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "132110032": {
+                "Title": "Attaque de bond : Embuscade perforante"
+            },
+            "132110033": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1321013, Prop:1001}"
+            },
+            "132110034": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1321013, Prop:1002}"
+            },
+            "132110035": {
+                "Title": "Contre d'esquive : Étranglement renversé"
+            },
+            "132110036": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1321014, Prop:1001}"
+            },
+            "132110037": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1321014, Prop:1002}"
+            }
+        },
+        "3": {
+            "132100011": {
+                "Title": "Enchaînement : Lunalux – Collet",
+                "Description": "Lors du déclenchement d'un <color=#FFFFFF>enchaînement</color>, sélectionnez le personnage pour activer :\nÉvelyne lance des entailles frontales à l'aide de multiples <color=#FFFFFF>Lacets Lunalux</color> et déclenche une explosion, infligeant d'importants <color=#FF5521>DGT de feu</color> aux ennemis dans la zone.\nLorsque l'attaque touche un ennemi, Évelyne ligote la cible principale à l'aide du <color=#FFFFFF>Lacet Lunalux</color> et entrera dans l'état <color=#FFFFFF>Ligotage</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "132100012": {
+                "Title": "Ultime : Lacet Lunalux – Timbre",
+                "Description": "Lorsque le niveau de décibels est au <color=#FFFFFF>Maximum</color>, appuyez sur <IconMap:Icon_UltimateReady> pour activer :\nÉvelyne lance des entailles frontales à l'aide de multiples <color=#FFFFFF>Lacets Lunalux</color> et déclenche une explosion, infligeant d'importants <color=#FF5521>DGT de feu</color> aux ennemis dans la zone.\nAu lancement de la compétence, Évelyne retire sa veste et entre dans l'état <color=#FFFFFF>Danse du feu éveillé</color>. Dans l'état <color=#FFFFFF>Danse du feu éveillé</color>, lorsque Évelyne consomme des points d'<color=#FFFFFF>Entrave brûlante</color> pour lancer <color=#FFFFFF>Enchaînement : Lunalux – Collet</color>, elle conserve 1 point d'<color=#FFFFFF>Entrave brûlante</color>.\nLorsque l'attaque touche un ennemi, Évelyne ligote la cible principale à l'aide du <color=#FFFFFF>Lacet Lunalux</color> et entrera dans l'état <color=#FFFFFF>Ligotage</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence.\nAprès cette compétence, vous obtenez 1 point d'<color=#FFFFFF>Entrave brûlante</color>."
+            },
+            "132100013": {
+                "Title": "Ultime : Lacet Lunalux – Ombre",
+                "Description": "Dans l'état <color=#FFFFFF>Danse du feu éveillé</color>, et lorsque le niveau de décibels est au <color=#FFFFFF>Maximum</color>, appuyez sur <IconMap:Icon_UltimateReady> pour activer :\nÉvelyne lance des entailles frontales à l'aide de multiples <color=#FFFFFF>Lacets Lunalux</color> et déclenche une explosion, infligeant d'importants <color=#FF5521>DGT de feu</color> aux ennemis dans la zone.\nLorsque l'attaque touche un ennemi, Évelyne attache la cible principale à l'aide du <color=#FFFFFF>Lacet Lunalux</color> et entrera dans l'état <color=#FFFFFF>Ligotage</color>.\nAprès cette compétence, vous obtenez 1 point d'<color=#FFFFFF>Entrave brûlante</color>."
+            },
+            "132110038": {
+                "Title": "Enchaînement : Lunalux – Collet"
+            },
+            "132110039": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1321015, Prop:1001}"
+            },
+            "132110040": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1321015, Prop:1002}"
+            },
+            "132110041": {
+                "Title": "Ultime : Lacet Lunalux – Timbre"
+            },
+            "132110042": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1321016, Prop:1001}"
+            },
+            "132110043": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1321016, Prop:1002}"
+            },
+            "132110044": {
+                "Title": "Ultime : Lacet Lunalux – Ombre"
+            },
+            "132110045": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1321016, Prop:1001}"
+            },
+            "132110046": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1321016, Prop:1002}"
+            }
+        },
+        "6": {
+            "132100015": {
+                "Title": "Soutien rapide : Lame féroce",
+                "Description": "Lorsque le personnage contrôlé est repoussé, appuyez sur <IconMap:Icon_Switch> pour activer :\nEntaille les ennemis à proximité à l'aide du <color=#FFFFFF>Lacet Lunalux</color>, infligeant des <color=#FF5521>DGT de feu</color>.\nLorsque l'attaque touche un ennemi, Évelyne ligote la cible principale à l'aide du <color=#FFFFFF>Lacet Lunalux</color> et entrera dans l'état <color=#FFFFFF>Ligotage</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "132100016": {
+                "Title": "Soutien défensif : Chaperonne silencieuse",
+                "Description": "Lorsque le personnage sur le terrain est sur le point d'être attaqué, appuyez sur <IconMap:Icon_Switch> pour activer :\nPare l'attaque de l'ennemi et inflige une confusion importante.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "132100017": {
+                "Title": "Soutien de suivi : Déflexion de trajectoire",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> après un <color=#FFFFFF>soutien défensif</color> pour activer :\nÉvelyne lance des entailles à l'aide du <color=#FFFFFF>Lacet Lunalux</color>, puis déclenche une explosion en face, infligeant des <color=#FF5521>DGT de feu</color>.\nLorsque l'attaque touche un ennemi, Évelyne ligote la cible principale à l'aide du <color=#FFFFFF>Lacet Lunalux</color> et entrera dans l'état <color=#FFFFFF>Ligotage</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "132110047": {
+                "Title": "Soutien rapide : Lame féroce"
+            },
+            "132110048": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1321017, Prop:1001}"
+            },
+            "132110049": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1321017, Prop:1002}"
+            },
+            "132110050": {
+                "Title": "Soutien défensif : Chaperonne silencieuse"
+            },
+            "132110051": {
+                "Description": "Multiplicateur de confusion de défense légère",
+                "Param": "{Skill:1321018, Prop:1002}"
+            },
+            "132110052": {
+                "Description": "Multiplicateur de confusion de défense lourde",
+                "Param": "{Skill:1321019, Prop:1002}"
+            },
+            "132110053": {
+                "Description": "Multiplicateur de confusion de défense en chaîne",
+                "Param": "{Skill:1321020, Prop:1002}"
+            },
+            "132110054": {
+                "Title": "Soutien de suivi : Déflexion de trajectoire"
+            },
+            "132110055": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1321021, Prop:1001}"
+            },
+            "132110056": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1321021, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1321001": {
+            "DamageValue": 5120,
+            "DamageGrowth": 470,
+            "DazeValue": 2560,
+            "DazeGrowth": 120
+        },
+        "1321002": {
+            "DamageValue": 6210,
+            "DamageGrowth": 570,
+            "DazeValue": 5380,
+            "DazeGrowth": 250
+        },
+        "1321003": {
+            "DamageValue": 7820,
+            "DamageGrowth": 720,
+            "DazeValue": 6210,
+            "DazeGrowth": 290
+        },
+        "1321004": {
+            "DamageValue": 18670,
+            "DamageGrowth": 1700,
+            "DazeValue": 15300,
+            "DazeGrowth": 700
+        },
+        "1321005": {
+            "DamageValue": 22340,
+            "DamageGrowth": 2040,
+            "DazeValue": 16830,
+            "DazeGrowth": 770
+        },
+        "1321006": {
+            "DamageValue": 22640,
+            "DamageGrowth": 2060,
+            "DazeValue": 12110,
+            "DazeGrowth": 560
+        },
+        "1321007": {
+            "DamageValue": 24520,
+            "DamageGrowth": 2230,
+            "DazeValue": 12480,
+            "DazeGrowth": 570
+        },
+        "1321008": {
+            "DamageValue": 5230,
+            "DamageGrowth": 480,
+            "DazeValue": 5230,
+            "DazeGrowth": 240
+        },
+        "1321009": {
+            "DamageValue": 4040,
+            "DamageGrowth": 370,
+            "DazeValue": 4040,
+            "DazeGrowth": 190
+        },
+        "1321010": {
+            "DamageValue": 3400,
+            "DamageGrowth": 310,
+            "DazeValue": 3400,
+            "DazeGrowth": 160
+        },
+        "1321011": {
+            "DamageValue": 54120,
+            "DamageGrowth": 4920,
+            "DazeValue": 43710,
+            "DazeGrowth": 1990
+        },
+        "1321012": {
+            "DamageValue": 5960,
+            "DamageGrowth": 550,
+            "DazeValue": 5960,
+            "DazeGrowth": 280
+        },
+        "1321013": {
+            "DamageValue": 6050,
+            "DamageGrowth": 550,
+            "DazeValue": 3030,
+            "DazeGrowth": 140
+        },
+        "1321014": {
+            "DamageValue": 21020,
+            "DamageGrowth": 1920,
+            "DazeValue": 18710,
+            "DazeGrowth": 860
+        },
+        "1321015": {
+            "DamageValue": 82930,
+            "DamageGrowth": 7540,
+            "DazeValue": 23660,
+            "DazeGrowth": 1080
+        },
+        "1321016": {
+            "DamageValue": 198850,
+            "DamageGrowth": 18080,
+            "DazeValue": 26040,
+            "DazeGrowth": 1190
+        },
+        "1321017": {
+            "DamageValue": 7710,
+            "DamageGrowth": 710,
+            "DazeValue": 7710,
+            "DazeGrowth": 360
+        },
+        "1321018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1321019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1321020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1321021": {
+            "DamageValue": 29160,
+            "DamageGrowth": 2660,
+            "DazeValue": 24900,
+            "DazeGrowth": 1140
+        },
+        "1321022": {
+            "DamageValue": 7820,
+            "DamageGrowth": 720,
+            "DazeValue": 6210,
+            "DazeGrowth": 290
+        },
+        "1321023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1321024": {
+            "DamageValue": 103660,
+            "DamageGrowth": 9430,
+            "DazeValue": 23660,
+            "DazeGrowth": 1080
+        },
+        "1321025": {
+            "DamageValue": 248570,
+            "DamageGrowth": 22600,
+            "DazeValue": 26040,
+            "DazeGrowth": 1190
+        },
+        "1321026": {
+            "DamageValue": 57210,
+            "DamageGrowth": 5210,
+            "DazeValue": 22010,
+            "DazeGrowth": 1010
+        },
+        "1321027": {
+            "DamageValue": 71520,
+            "DamageGrowth": 6510,
+            "DazeValue": 22010,
+            "DazeGrowth": 1010
+        },
+        "1321028": {
+            "DamageValue": 39600,
+            "DamageGrowth": 3600,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

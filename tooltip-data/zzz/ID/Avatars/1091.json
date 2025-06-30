@@ -1,0 +1,523 @@
+{
+    "Name": "Miyabi",
+    "ElementTypes": [
+        "Ice"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Frost Atop the Snow",
+            "Description": "Saat berada dalam <color=#FFFFFF>posisi Shimotsuki</color>, <color=#FFFFFF>Basic Attack: Shimotsuki</color> akan mengabaikan 6% DEF target untuk setiap 1 poin <color=#FFFFFF>Fallen Frost</color> yang dikonsumsi (dapat ditumpuk hingga 6 lapis). Efek buff ini akan berakhir setelah Miyabi keluar dari <color=#FFFFFF>posisi Shimotsuki</color>. Saat Slash dari <color=#FFFFFF>Basic Attack: Shimotsuki</color> charge tahap ketiga mengenai musuh yang terpengaruh <color=#FFFFFF>Frostburn</color>, maka status <color=#FFFFFF>Frostburn</color> target akan langsung dihapus, dan Anomaly Buildup Rate semua Agen dalam tim akan meningkat 20% selama 10 detik.",
+            "Lore": "Sejak kecil, Miyabi suka melafalkan haiku tentang salju.\nMeski dia awalnya tidak paham, tapi dia terus merenungkannya maknanya setiap hari.\nTanpa dia sadar, dia sekarang sudah memahaminya.\nDia tercerahkan bukan di malam salju yang tenang, melainkan saat bertempur di medan perang."
+        },
+        "2": {
+            "Title": "Breath Technique",
+            "Description": "DMG yang diakibatkan dari <color=#FFFFFF>Basic Attack: Kazahana</color> dan <color=#FFFFFF>Dodge Counter</color> meningkat 30%. Saat serangan terakhir dari tahap kelima <color=#FFFFFF>Basic Attack: Kazahana</color> mengenai musuh, Miyabi akan mendapatkan 1 poin <color=#FFFFFF>Fallen Frost</color>. Saat memulai pertarungan, Miyabi akan langsung mendapatkan 6 poin <color=#FFFFFF>Fallen Frost</color> dan CRIT Rate-nya akan meningkat 15%.",
+            "Lore": "\"Pedang yang kau pegang mencerminkan hati yang kau miliki.\"\nIni adalah salah satu ajaran ilmu pedang di sekolah Hoshimi. Mengalahkan musuh hanya langkah pertama menuju kemenangan, dan menjaga kewaspadaan setiap saat adalah jalan sejati seorang prajurit."
+        },
+        "3": {
+            "Title": "Martial Discipline",
+            "Description": "Level <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, dan <color=#FFFFFF>Chain Attack</color> +2.",
+            "Lore": "Miyabi berasal dari keluarga bela diri. Dia memiliki kebiasaan latihan yang sangat baik dan dia tidak pernah bolos untuk latihan pedangnya. Apa? Ada rapat? Kalau rapat, dia tidak akan hadir."
+        },
+        "4": {
+            "Title": "Rupture",
+            "Description": "DMG yang diakibatkan dari <color=#FFFFFF>Frostburn - Break</color> meningkat 30%. Saat memicu <color=#FFFFFF>Frostburn - Break</color>, Miyabi akan mendapatkan 250 poin Decibel tambahan.",
+            "Lore": "Melafalkan haiku saat kombat bisa membantu dalam mengatur ritme pernapasan.\nMiyabi selalu tetap tenang, baik dalam pikiran maupun pernapasannya."
+        },
+        "5": {
+            "Title": "Anniversary",
+            "Description": "Level <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, dan <color=#FFFFFF>Chain Attack</color> +2.",
+            "Lore": "Gadis itu tiba di tempat yang familier dengan bunga di tangan, embusan napasnya berubah menjadi kabut, yang kemudian sirna dalam udara yang dingin.\nJemarinya memoles nama itu yang ada di atas monumen.\nSemuanya tenang, seperti saksi yang bisu."
+        },
+        "6": {
+            "Title": "Prodigious Talent",
+            "Description": "Selama berada dalam <color=#FFFFFF>posisi Shimotsuki</color>, Miyabi akan mendapatkan efek <color=#FFFFFF>Polar</color> yang meningkatkan DMG dari <color=#FFFFFF>Basic Attack: Shimotsuki</color> sebesar 30%. Setelah mendapatkan efek <color=#FFFFFF>Polar</color>, Miyabi akan menghunuskan pedangnya dan melancarkan Slash kuat ke depan berdasarkan jumlah tahap Charge-nya saat mengonsumsi <color=#FFFFFF>Fallen Frost</color>. Sebelum <color=#FFFFFF>Fallen Frost</color> habis terkonsumsi, gerakan menghunus pedang dan Slash tidak akan mengganggu progres Charge dalam <color=#FFFFFF>posisi Shimotsuki</color>. Dalam satu periode <color=#FFFFFF>posisi Shimotsuki</color>, maks. dapat melancarkan 3 kali gerakan menghunus pedang dan Slash.",
+            "Lore": "Semakin banyak pertarungan yang dilalui, semakin orang lain merasa: Jika dewa pedang benar-benar nyata, mereka pasti sangat sayang pada Hoshimi Miyabi."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Core Passive: Searing Cold",
+            "DescriptionByLevel": {
+                "1": "Saat Miyabi mengakibatkan <color=#98EFF0>Frost DMG</color> terhadap musuh, dia juga akan memberikan <color=#FFFFFF>Icefire</color> yang berlangsung selama 30 detik kepada target tersebut. \n\nSaat mengakumulasi <color=#98EFF0>Frost Anomaly Buildup</color> terhadap musuh yang terpengaruh <color=#FFFFFF>Icefire</color>, <color=#98EFF0>Frost Anomaly Buildup Rate</color> akan meningkat sebesar 100% CRIT Rate Miyabi, maks. dapat meningkat hingga 80%. \n\nSaat Miyabi mengakumulasi <color=#98EFF0>Frost Anomaly Buildup</color>, dia akan memiliki indikator Anomaly Buildup tersendiri dan bisa memicu efek <color=#98EFF0>Freeze</color>, <color=#98EFF0>Shatter</color>, dan <color=#98EFF0>Frostbite</color> yang dapat bereaksi dengan efek Attribute Anomaly lainnya (termasuk <color=#98EFF0>efek Ice Attribute Anomaly</color>) untuk memicu <color=#FFFFFF>Disorder</color>.\n\nSaat Miyabi mengakibatkan efek <color=#98EFF0>Frostbite</color> terhadap musuh yang terpengaruh <color=#FFFFFF>Icefire</color>, maka <color=#FFFFFF>Icefire</color> akan dikonsumsi untuk memicu <color=#FFFFFF>Frostburn - Break</color>, mengakibatkan <color=#98EFF0>Frost DMG</color> sebesar <color=#2BAD00>750%</color> ATK Miyabi terhadap target. Selain itu, juga akan memberikan status <color=#FFFFFF>Frostburn</color> kepada musuh.\n\nAnomaly Buildup yang diakumulasi oleh semua unit terhadap target dalam status <color=#FFFFFF>Frostburn</color> akan meningkat <color=#2BAD00>14%</color>, tetapi Miyabi tidak dapat mengakibatkan <color=#FFFFFF>Icefire</color> lagi kepada target tersebut. Status <color=#FFFFFF>Frostburn</color> akan berakhir saat efek <color=#98EFF0>Frostbite</color> selesai. Jika memicu efek Attribute Anomaly lainnya terhadap musuh selama status ini berlangsung, maka efek <color=#98EFF0>Frostbite</color> akan ditimpa dan status <color=#FFFFFF>Frostburn</color> akan dihapus.\n\nSaat memicu <color=#FFFFFF>Frostburn - Break</color>, Miyabi akan mendapatkan 1 poin <color=#FFFFFF>Fallen Frost</color>. Efek ini dapat dipicu sekali setiap 10 detik.",
+                "2": "Saat Miyabi mengakibatkan <color=#98EFF0>Frost DMG</color> terhadap musuh, dia juga akan memberikan <color=#FFFFFF>Icefire</color> yang berlangsung selama 30 detik kepada target tersebut. \n\nSaat mengakumulasi <color=#98EFF0>Frost Anomaly Buildup</color> terhadap musuh yang terpengaruh <color=#FFFFFF>Icefire</color>, <color=#98EFF0>Frost Anomaly Buildup Rate</color> akan meningkat sebesar 100% CRIT Rate Miyabi, maks. dapat meningkat hingga 80%. \n\nSaat Miyabi mengakumulasi <color=#98EFF0>Frost Anomaly Buildup</color>, dia akan memiliki indikator Anomaly Buildup tersendiri dan bisa memicu efek <color=#98EFF0>Freeze</color>, <color=#98EFF0>Shatter</color>, dan <color=#98EFF0>Frostbite</color> yang dapat bereaksi dengan efek Attribute Anomaly lainnya (termasuk <color=#98EFF0>efek Ice Attribute Anomaly</color>) untuk memicu <color=#FFFFFF>Disorder</color>.\n\nSaat Miyabi mengakibatkan efek <color=#98EFF0>Frostbite</color> terhadap musuh yang terpengaruh <color=#FFFFFF>Icefire</color>, maka <color=#FFFFFF>Icefire</color> akan dikonsumsi untuk memicu <color=#FFFFFF>Frostburn - Break</color>, mengakibatkan <color=#98EFF0>Frost DMG</color> sebesar <color=#2BAD00>875%</color> ATK Miyabi terhadap target. Selain itu, juga akan memberikan status <color=#FFFFFF>Frostburn</color> kepada musuh.\n\nAnomaly Buildup yang diakumulasi oleh semua unit terhadap target dalam status <color=#FFFFFF>Frostburn</color> akan meningkat <color=#2BAD00>15%</color>, tetapi Miyabi tidak dapat mengakibatkan <color=#FFFFFF>Icefire</color> lagi kepada target tersebut. Status <color=#FFFFFF>Frostburn</color> akan berakhir saat efek <color=#98EFF0>Frostbite</color> selesai. Jika memicu efek Attribute Anomaly lainnya terhadap musuh selama status ini berlangsung, maka efek <color=#98EFF0>Frostbite</color> akan ditimpa dan status <color=#FFFFFF>Frostburn</color> akan dihapus.\n\nSaat memicu <color=#FFFFFF>Frostburn - Break</color>, Miyabi akan mendapatkan 1 poin <color=#FFFFFF>Fallen Frost</color>. Efek ini dapat dipicu sekali setiap 10 detik.",
+                "3": "Saat Miyabi mengakibatkan <color=#98EFF0>Frost DMG</color> terhadap musuh, dia juga akan memberikan <color=#FFFFFF>Icefire</color> yang berlangsung selama 30 detik kepada target tersebut. \n\nSaat mengakumulasi <color=#98EFF0>Frost Anomaly Buildup</color> terhadap musuh yang terpengaruh <color=#FFFFFF>Icefire</color>, <color=#98EFF0>Frost Anomaly Buildup Rate</color> akan meningkat sebesar 100% CRIT Rate Miyabi, maks. dapat meningkat hingga 80%. \n\nSaat Miyabi mengakumulasi <color=#98EFF0>Frost Anomaly Buildup</color>, dia akan memiliki indikator Anomaly Buildup tersendiri dan bisa memicu efek <color=#98EFF0>Freeze</color>, <color=#98EFF0>Shatter</color>, dan <color=#98EFF0>Frostbite</color> yang dapat bereaksi dengan efek Attribute Anomaly lainnya (termasuk <color=#98EFF0>efek Ice Attribute Anomaly</color>) untuk memicu <color=#FFFFFF>Disorder</color>.\n\nSaat Miyabi mengakibatkan efek <color=#98EFF0>Frostbite</color> terhadap musuh yang terpengaruh <color=#FFFFFF>Icefire</color>, maka <color=#FFFFFF>Icefire</color> akan dikonsumsi untuk memicu <color=#FFFFFF>Frostburn - Break</color>, mengakibatkan <color=#98EFF0>Frost DMG</color> sebesar <color=#2BAD00>1000%</color> ATK Miyabi terhadap target. Selain itu, juga akan memberikan status <color=#FFFFFF>Frostburn</color> kepada musuh.\n\nAnomaly Buildup yang diakumulasi oleh semua unit terhadap target dalam status <color=#FFFFFF>Frostburn</color> akan meningkat <color=#2BAD00>16%</color>, tetapi Miyabi tidak dapat mengakibatkan <color=#FFFFFF>Icefire</color> lagi kepada target tersebut. Status <color=#FFFFFF>Frostburn</color> akan berakhir saat efek <color=#98EFF0>Frostbite</color> selesai. Jika memicu efek Attribute Anomaly lainnya terhadap musuh selama status ini berlangsung, maka efek <color=#98EFF0>Frostbite</color> akan ditimpa dan status <color=#FFFFFF>Frostburn</color> akan dihapus.\n\nSaat memicu <color=#FFFFFF>Frostburn - Break</color>, Miyabi akan mendapatkan 1 poin <color=#FFFFFF>Fallen Frost</color>. Efek ini dapat dipicu sekali setiap 10 detik.",
+                "4": "Saat Miyabi mengakibatkan <color=#98EFF0>Frost DMG</color> terhadap musuh, dia juga akan memberikan <color=#FFFFFF>Icefire</color> yang berlangsung selama 30 detik kepada target tersebut. \n\nSaat mengakumulasi <color=#98EFF0>Frost Anomaly Buildup</color> terhadap musuh yang terpengaruh <color=#FFFFFF>Icefire</color>, <color=#98EFF0>Frost Anomaly Buildup Rate</color> akan meningkat sebesar 100% CRIT Rate Miyabi, maks. dapat meningkat hingga 80%. \n\nSaat Miyabi mengakumulasi <color=#98EFF0>Frost Anomaly Buildup</color>, dia akan memiliki indikator Anomaly Buildup tersendiri dan bisa memicu efek <color=#98EFF0>Freeze</color>, <color=#98EFF0>Shatter</color>, dan <color=#98EFF0>Frostbite</color> yang dapat bereaksi dengan efek Attribute Anomaly lainnya (termasuk <color=#98EFF0>efek Ice Attribute Anomaly</color>) untuk memicu <color=#FFFFFF>Disorder</color>.\n\nSaat Miyabi mengakibatkan efek <color=#98EFF0>Frostbite</color> terhadap musuh yang terpengaruh <color=#FFFFFF>Icefire</color>, maka <color=#FFFFFF>Icefire</color> akan dikonsumsi untuk memicu <color=#FFFFFF>Frostburn - Break</color>, mengakibatkan <color=#98EFF0>Frost DMG</color> sebesar <color=#2BAD00>1125%</color> ATK Miyabi terhadap target. Selain itu, juga akan memberikan status <color=#FFFFFF>Frostburn</color> kepada musuh.\n\nAnomaly Buildup yang diakumulasi oleh semua unit terhadap target dalam status <color=#FFFFFF>Frostburn</color> akan meningkat <color=#2BAD00>17%</color>, tetapi Miyabi tidak dapat mengakibatkan <color=#FFFFFF>Icefire</color> lagi kepada target tersebut. Status <color=#FFFFFF>Frostburn</color> akan berakhir saat efek <color=#98EFF0>Frostbite</color> selesai. Jika memicu efek Attribute Anomaly lainnya terhadap musuh selama status ini berlangsung, maka efek <color=#98EFF0>Frostbite</color> akan ditimpa dan status <color=#FFFFFF>Frostburn</color> akan dihapus.\n\nSaat memicu <color=#FFFFFF>Frostburn - Break</color>, Miyabi akan mendapatkan 1 poin <color=#FFFFFF>Fallen Frost</color>. Efek ini dapat dipicu sekali setiap 10 detik.",
+                "5": "Saat Miyabi mengakibatkan <color=#98EFF0>Frost DMG</color> terhadap musuh, dia juga akan memberikan <color=#FFFFFF>Icefire</color> yang berlangsung selama 30 detik kepada target tersebut. \n\nSaat mengakumulasi <color=#98EFF0>Frost Anomaly Buildup</color> terhadap musuh yang terpengaruh <color=#FFFFFF>Icefire</color>, <color=#98EFF0>Frost Anomaly Buildup Rate</color> akan meningkat sebesar 100% CRIT Rate Miyabi, maks. dapat meningkat hingga 80%. \n\nSaat Miyabi mengakumulasi <color=#98EFF0>Frost Anomaly Buildup</color>, dia akan memiliki indikator Anomaly Buildup tersendiri dan bisa memicu efek <color=#98EFF0>Freeze</color>, <color=#98EFF0>Shatter</color>, dan <color=#98EFF0>Frostbite</color> yang dapat bereaksi dengan efek Attribute Anomaly lainnya (termasuk <color=#98EFF0>efek Ice Attribute Anomaly</color>) untuk memicu <color=#FFFFFF>Disorder</color>.\n\nSaat Miyabi mengakibatkan efek <color=#98EFF0>Frostbite</color> terhadap musuh yang terpengaruh <color=#FFFFFF>Icefire</color>, maka <color=#FFFFFF>Icefire</color> akan dikonsumsi untuk memicu <color=#FFFFFF>Frostburn - Break</color>, mengakibatkan <color=#98EFF0>Frost DMG</color> sebesar <color=#2BAD00>1250%</color> ATK Miyabi terhadap target. Selain itu, juga akan memberikan status <color=#FFFFFF>Frostburn</color> kepada musuh.\n\nAnomaly Buildup yang diakumulasi oleh semua unit terhadap target dalam status <color=#FFFFFF>Frostburn</color> akan meningkat <color=#2BAD00>18%</color>, tetapi Miyabi tidak dapat mengakibatkan <color=#FFFFFF>Icefire</color> lagi kepada target tersebut. Status <color=#FFFFFF>Frostburn</color> akan berakhir saat efek <color=#98EFF0>Frostbite</color> selesai. Jika memicu efek Attribute Anomaly lainnya terhadap musuh selama status ini berlangsung, maka efek <color=#98EFF0>Frostbite</color> akan ditimpa dan status <color=#FFFFFF>Frostburn</color> akan dihapus.\n\nSaat memicu <color=#FFFFFF>Frostburn - Break</color>, Miyabi akan mendapatkan 1 poin <color=#FFFFFF>Fallen Frost</color>. Efek ini dapat dipicu sekali setiap 10 detik.",
+                "6": "Saat Miyabi mengakibatkan <color=#98EFF0>Frost DMG</color> terhadap musuh, dia juga akan memberikan <color=#FFFFFF>Icefire</color> yang berlangsung selama 30 detik kepada target tersebut. \n\nSaat mengakumulasi <color=#98EFF0>Frost Anomaly Buildup</color> terhadap musuh yang terpengaruh <color=#FFFFFF>Icefire</color>, <color=#98EFF0>Frost Anomaly Buildup Rate</color> akan meningkat sebesar 100% CRIT Rate Miyabi, maks. dapat meningkat hingga 80%. \n\nSaat Miyabi mengakumulasi <color=#98EFF0>Frost Anomaly Buildup</color>, dia akan memiliki indikator Anomaly Buildup tersendiri dan bisa memicu efek <color=#98EFF0>Freeze</color>, <color=#98EFF0>Shatter</color>, dan <color=#98EFF0>Frostbite</color> yang dapat bereaksi dengan efek Attribute Anomaly lainnya (termasuk <color=#98EFF0>efek Ice Attribute Anomaly</color>) untuk memicu <color=#FFFFFF>Disorder</color>.\n\nSaat Miyabi mengakibatkan efek <color=#98EFF0>Frostbite</color> terhadap musuh yang terpengaruh <color=#FFFFFF>Icefire</color>, maka <color=#FFFFFF>Icefire</color> akan dikonsumsi untuk memicu <color=#FFFFFF>Frostburn - Break</color>, mengakibatkan <color=#98EFF0>Frost DMG</color> sebesar <color=#2BAD00>1375%</color> ATK Miyabi terhadap target. Selain itu, juga akan memberikan status <color=#FFFFFF>Frostburn</color> kepada musuh.\n\nAnomaly Buildup yang diakumulasi oleh semua unit terhadap target dalam status <color=#FFFFFF>Frostburn</color> akan meningkat <color=#2BAD00>19%</color>, tetapi Miyabi tidak dapat mengakibatkan <color=#FFFFFF>Icefire</color> lagi kepada target tersebut. Status <color=#FFFFFF>Frostburn</color> akan berakhir saat efek <color=#98EFF0>Frostbite</color> selesai. Jika memicu efek Attribute Anomaly lainnya terhadap musuh selama status ini berlangsung, maka efek <color=#98EFF0>Frostbite</color> akan ditimpa dan status <color=#FFFFFF>Frostburn</color> akan dihapus.\n\nSaat memicu <color=#FFFFFF>Frostburn - Break</color>, Miyabi akan mendapatkan 1 poin <color=#FFFFFF>Fallen Frost</color>. Efek ini dapat dipicu sekali setiap 10 detik.",
+                "7": "Saat Miyabi mengakibatkan <color=#98EFF0>Frost DMG</color> terhadap musuh, dia juga akan memberikan <color=#FFFFFF>Icefire</color> yang berlangsung selama 30 detik kepada target tersebut. \n\nSaat mengakumulasi <color=#98EFF0>Frost Anomaly Buildup</color> terhadap musuh yang terpengaruh <color=#FFFFFF>Icefire</color>, <color=#98EFF0>Frost Anomaly Buildup Rate</color> akan meningkat sebesar 100% CRIT Rate Miyabi, maks. dapat meningkat hingga 80%. \n\nSaat Miyabi mengakumulasi <color=#98EFF0>Frost Anomaly Buildup</color>, dia akan memiliki indikator Anomaly Buildup tersendiri dan bisa memicu efek <color=#98EFF0>Freeze</color>, <color=#98EFF0>Shatter</color>, dan <color=#98EFF0>Frostbite</color> yang dapat bereaksi dengan efek Attribute Anomaly lainnya (termasuk <color=#98EFF0>efek Ice Attribute Anomaly</color>) untuk memicu <color=#FFFFFF>Disorder</color>.\n\nSaat Miyabi mengakibatkan efek <color=#98EFF0>Frostbite</color> terhadap musuh yang terpengaruh <color=#FFFFFF>Icefire</color>, maka <color=#FFFFFF>Icefire</color> akan dikonsumsi untuk memicu <color=#FFFFFF>Frostburn - Break</color>, mengakibatkan <color=#98EFF0>Frost DMG</color> sebesar <color=#2BAD00>1500%</color> ATK Miyabi terhadap target. Selain itu, juga akan memberikan status <color=#FFFFFF>Frostburn</color> kepada musuh.\n\nAnomaly Buildup yang diakumulasi oleh semua unit terhadap target dalam status <color=#FFFFFF>Frostburn</color> akan meningkat <color=#2BAD00>20%</color>, tetapi Miyabi tidak dapat mengakibatkan <color=#FFFFFF>Icefire</color> lagi kepada target tersebut. Status <color=#FFFFFF>Frostburn</color> akan berakhir saat efek <color=#98EFF0>Frostbite</color> selesai. Jika memicu efek Attribute Anomaly lainnya terhadap musuh selama status ini berlangsung, maka efek <color=#98EFF0>Frostbite</color> akan ditimpa dan status <color=#FFFFFF>Frostburn</color> akan dihapus.\n\nSaat memicu <color=#FFFFFF>Frostburn - Break</color>, Miyabi akan mendapatkan 1 poin <color=#FFFFFF>Fallen Frost</color>. Efek ini dapat dipicu sekali setiap 10 detik."
+            }
+        },
+        "MathSkill": {
+            "Title": "Additional Ability: Bask in Frost",
+            "Description": "Berlaku jika terdapat Agen <color=#FFFFFF>Support</color> atau Agen yang berasal dari faksi yang sama di dalam tim:\nDMG yang diakibatkan dari <color=#FFFFFF>Basic Attack: Shimotsuki</color> meningkat 60%.\nSaat salah satu anggota tim memicu efek <color=#FFFFFF>Disorder</color>, Miyabi akan mendapatkan 2 poin <color=#FFFFFF>Fallen Frost</color>, dan <color=#FFFFFF>Basic Attack: Shimotsuki</color> yang dilancarkan berikutnya selama berada dalam <color=#FFFFFF>posisi Shimotsuki</color> akan mengabaikan 30% <color=#98EFF0>ketahanan Ice DMG</color> target."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "109100001": {
+                "Title": "Basic Attack: Kazahana",
+                "Description": "Tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMelancarkan hingga lima tahap serangan Slash ke depan. Dua tahap pertama akan mengakibatkan <color=#F0D12B>Physical DMG</color>, sementara serangan tahap ketiga dan seterusnya akan mengakibatkan <color=#98EFF0>Frost DMG</color>.\nSaat melancarkan <color=#FFFFFF>Basic Attack</color> tahap kelima, Miyabi dapat menangkis serangan musuh."
+            },
+            "109100002": {
+                "Title": "Basic Attack: Shimotsuki",
+                "Description": "Tahan <IconMap:Icon_Normal> saat memiliki setidaknya 2 poin <color=#FFFFFF>Fallen Frost</color> untuk melancarkan Skill ini.\nMiyabi menyarungkan pedangnya, memasuki <color=#FFFFFF>posisi Shimotsuki</color>, dan mulai melakukan Charge. Setiap tahap Charge akan mengonsumsi 2 poin <color=#FFFFFF>Fallen Frost</color>, maks. dapat melakukan Charge hingga tiga tahap.\nJika <IconMap:Icon_Normal> dilepas, atau <color=#FFFFFF>Fallen Frost</color> habis terkonsumsi, Miyabi akan menghunuskan pedangnya dan melancarkan Slash kuat ke depan berdasarkan tahap Charge saat ini, mengakibatkan <color=#98EFF0>Frost DMG</color> dalam jumlah besar. Setelah itu, dia akan mengakhiri <color=#FFFFFF>posisi Shimotsuki</color>.\nKarakter akan menjadi kebal selama dalam <color=#FFFFFF>posisi Shimotsuki</color>.\nMiyabi dapat memiliki maks. 6 poin <color=#FFFFFF>Fallen Frost</color>. Saat memulai pertarungan, Miyabi akan langsung mendapatkan 3 poin <color=#FFFFFF>Fallen Frost</color>."
+            },
+            "109110001": {
+                "Title": "Basic Attack: Kazahana"
+            },
+            "109110002": {
+                "Description": "Kelipatan DMG: Tahap 1",
+                "Param": "{Skill:1091001, Prop:1001}"
+            },
+            "109110003": {
+                "Description": "Kelipatan DMG: Tahap 2",
+                "Param": "{Skill:1091002, Prop:1001}"
+            },
+            "109110004": {
+                "Description": "Kelipatan DMG: Tahap 3",
+                "Param": "{Skill:1091003, Prop:1001}"
+            },
+            "109110005": {
+                "Description": "Kelipatan DMG: Tahap 4",
+                "Param": "{Skill:1091004, Prop:1001}"
+            },
+            "109110006": {
+                "Description": "Kelipatan DMG: Tahap 5",
+                "Param": "{Skill:1091005, Prop:1001}"
+            },
+            "109110007": {
+                "Description": "Kelipatan Daze: Tahap 1",
+                "Param": "{Skill:1091001, Prop:1002}"
+            },
+            "109110008": {
+                "Description": "Kelipatan Daze: Tahap 2",
+                "Param": "{Skill:1091002, Prop:1002}"
+            },
+            "109110009": {
+                "Description": "Kelipatan Daze: Tahap 3",
+                "Param": "{Skill:1091003, Prop:1002}"
+            },
+            "109110010": {
+                "Description": "Kelipatan Daze: Tahap 4",
+                "Param": "{Skill:1091004, Prop:1002}"
+            },
+            "109110011": {
+                "Description": "Kelipatan Daze: Tahap 5",
+                "Param": "{Skill:1091005, Prop:1002}"
+            },
+            "109110047": {
+                "Title": "Basic Attack: Shimotsuki"
+            },
+            "109110048": {
+                "Description": "Kelipatan DMG - Slash: Charge Tahap 1",
+                "Param": "{Skill:1091027, Prop:1001}"
+            },
+            "109110049": {
+                "Description": "Kelipatan DMG - Slash: Charge Tahap 2",
+                "Param": "{Skill:1091028, Prop:1001}"
+            },
+            "109110050": {
+                "Description": "Kelipatan DMG - Slash: Charge Tahap 3",
+                "Param": "{Skill:1091029, Prop:1001}"
+            },
+            "109110051": {
+                "Description": "Kelipatan Daze - Slash: Charge Tahap 1",
+                "Param": "{Skill:1091027, Prop:1002}"
+            },
+            "109110052": {
+                "Description": "Kelipatan Daze - Slash: Charge Tahap 2",
+                "Param": "{Skill:1091028, Prop:1002}"
+            },
+            "109110053": {
+                "Description": "Kelipatan Daze - Slash: Charge Tahap 3",
+                "Param": "{Skill:1091029, Prop:1002}"
+            }
+        },
+        "1": {
+            "109100003": {
+                "Title": "Special Attack: Miyuki",
+                "Description": "Tekan <IconMap:Icon_Special> untuk melancarkan Skill ini.\nMenghunuskan pedangnya dengan cepat dan melancarkan Slash ke depan, mengakibatkan <color=#98EFF0>Frost DMG</color>.\nLevel Anti-Interrupt akan meningkat selama melancarkan Skill ini."
+            },
+            "109100004": {
+                "Title": "EX Special Attack: Hisetsu",
+                "Description": "Saat Energy Miyabi sudah cukup, tekan <IconMap:Icon_SpecialReady> untuk melancarkan Skill ini.\nMenerjang ke depan dengan cepat dan melancarkan Slash kuat terhadap musuh di jalannya, mengakibatkan <color=#98EFF0>Frost DMG</color> dalam jumlah besar.\nSaat melancarkan Skill ini, Miyabi akan mendapatkan 2 poin <color=#FFFFFF>Fallen Frost</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini.\n\nSetelah melancarkan Skill ini, jika Energy Miyabi masih cukup, tekan <IconMap:Icon_SpecialReady> sekali lagi untuk mengonsumsi Energy tambahan dan melancarkan serangan lanjutan yang kuat terhadap musuh di area depannya, mengakibatkan <color=#98EFF0>Frost DMG</color> dalam jumlah besar.\nSaat melancarkan serangan ini, Miyabi akan mendapatkan 2 poin <color=#FFFFFF>Fallen Frost</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "109110015": {
+                "Title": "Special Attack: Miyuki"
+            },
+            "109110016": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1091008, Prop:1001}"
+            },
+            "109110017": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1091008, Prop:1002}"
+            },
+            "109110018": {
+                "Title": "EX Special Attack: Hisetsu"
+            },
+            "109110019": {
+                "Description": "Kelipatan DMG - Slash",
+                "Param": "{{Skill:1091009, Prop:1001} + {Skill:1091010, Prop:1001}}"
+            },
+            "109110020": {
+                "Description": "Kelipatan DMG - Serangan Lanjutan",
+                "Param": "{{Skill:1091011, Prop:1001} + {Skill:1091012, Prop:1001}}"
+            },
+            "109110021": {
+                "Description": "Kelipatan Daze - Slash",
+                "Param": "{{Skill:1091009, Prop:1002} + {Skill:1091010, Prop:1002}}"
+            },
+            "109110022": {
+                "Description": "Kelipatan Daze - Serangan Lanjutan",
+                "Param": "{{Skill:1091011, Prop:1002} + {Skill:1091012, Prop:1002}}"
+            },
+            "109110023": {
+                "Description": "Konsumsi Energy - Slash",
+                "Param": "40 poin"
+            },
+            "109110024": {
+                "Description": "Konsumsi Energy - Serangan Lanjutan",
+                "Param": "40 poin"
+            }
+        },
+        "2": {
+            "109100005": {
+                "Title": "Dodge: Mizutori",
+                "Description": "Tekan <IconMap:Icon_Evade> untuk melakukan Dodge.:\nMelakukan Dodge dengan cepat.\nKarakter akan menjadi kebal selama melancarkan Skill ini.\n\nSaat melakukan Dodge, tahan atau tekan <IconMap:Icon_Evade> berulang kali untuk melancarkan Skill ini:\nMelakukan Dodge jarak jauh.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "109100006": {
+                "Title": "Dash Attack: Fuyubachi",
+                "Description": "Tekan <IconMap:Icon_Normal> saat melakukan Dodge untuk melancarkan Skill ini.\nMelancarkan Slash terhadap musuh di depan dan mengakibatkan <color=#F0D12B>Physical DMG</color>."
+            },
+            "109100007": {
+                "Title": "Dodge Counter: Kan Suzume",
+                "Description": "Tekan <IconMap:Icon_Normal> setelah melakukan <color=#FFFFFF>Perfect Dodge</color> untuk melancarkan Skill ini.\nMelancarkan Slash terhadap musuh di depan dan mengakibatkan <color=#98EFF0>Frost DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "109110025": {
+                "Title": "Dash Attack: Fuyubachi"
+            },
+            "109110026": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1091013, Prop:1001}"
+            },
+            "109110027": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1091013, Prop:1002}"
+            },
+            "109110028": {
+                "Title": "Dodge Counter: Kan Suzume"
+            },
+            "109110029": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1091014, Prop:1001}"
+            },
+            "109110030": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1091014, Prop:1002}"
+            }
+        },
+        "3": {
+            "109100008": {
+                "Title": "Chain Attack: Spring's Call",
+                "Description": "Saat <color=#FFFFFF>Chain Attack</color> terpicu, pilih Miyabi untuk melancarkan Skill ini.\nMelancarkan Slash kuat terhadap musuh dalam area besar di depan dan mengakibatkan <color=#98EFF0>Frost DMG</color> dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "109100009": {
+                "Title": "Ultimate: Lingering Snow",
+                "Description": "Saat Decibel Rating mencapai <color=#FFFFFF>Maximum</color>, tekan <IconMap:Icon_UltimateReady> untuk melancarkan Skill ini.\nMelancarkan Slash kuat terhadap musuh dalam area besar di depan. Setelah penundaan singkat, Miyabi akan melancarkan serangan terakhir dan mengakibatkan <color=#98EFF0>Frost DMG</color> dalam jumlah besar.\nSaat melancarkan Skill ini, Miyabi akan mendapatkan 3 poin <color=#FFFFFF>Fallen Frost</color>, dan <color=#98EFF0>Ice DMG</color> yang diakibatkannya meningkat 30% selama 12 detik.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "109110031": {
+                "Title": "Chain Attack: Spring's Call"
+            },
+            "109110032": {
+                "Description": "Kelipatan DMG",
+                "Param": "{{Skill:1091015, Prop:1001} + {Skill:1091016, Prop:1001} + {Skill:1091017, Prop:1001}}"
+            },
+            "109110033": {
+                "Description": "Kelipatan Daze",
+                "Param": "{{Skill:1091015, Prop:1002} + {Skill:1091016, Prop:1002} + {Skill:1091017, Prop:1002}}"
+            },
+            "109110034": {
+                "Title": "Ultimate: Lingering Snow"
+            },
+            "109110035": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1091018, Prop:1001}"
+            },
+            "109110036": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1091018, Prop:1002}"
+            }
+        },
+        "6": {
+            "109100011": {
+                "Title": "Quick Assist: Dancing Petals",
+                "Description": "Saat Agen yang Dikendalikan terhempas, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nMelancarkan Slash terhadap musuh di depan dan mengakibatkan <color=#98EFF0>Frost DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "109100012": {
+                "Title": "Defensive Assist: Drifting Petals",
+                "Description": "Tepat sebelum Agen aktif diserang, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nMenangkis serangan musuh dan menghasilkan Daze dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "109100013": {
+                "Title": "Assist Follow-Up: Falling Petals",
+                "Description": "Setelah melancarkan <color=#FFFFFF>Defensive Assist</color>, tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMelancarkan Slash ke depan dan mengakibatkan <color=#98EFF0>Frost DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "109110037": {
+                "Title": "Quick Assist: Dancing Petals"
+            },
+            "109110038": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1091021, Prop:1001}"
+            },
+            "109110039": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1091021, Prop:1002}"
+            },
+            "109110040": {
+                "Title": "Defensive Assist: Drifting Petals"
+            },
+            "109110041": {
+                "Description": "Kelipatan Daze - Light Defensive",
+                "Param": "{Skill:1091022, Prop:1002}"
+            },
+            "109110042": {
+                "Description": "Kelipatan Daze - Heavy Defensive",
+                "Param": "{Skill:1091023, Prop:1002}"
+            },
+            "109110043": {
+                "Description": "Kelipatan Daze - Chain Defensive",
+                "Param": "{Skill:1091024, Prop:1002}"
+            },
+            "109110044": {
+                "Title": "Assist Follow-Up: Falling Petals"
+            },
+            "109110045": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1091025, Prop:1001}"
+            },
+            "109110046": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1091025, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1091001": {
+            "DamageValue": 2690,
+            "DamageGrowth": 250,
+            "DazeValue": 1350,
+            "DazeGrowth": 70
+        },
+        "1091002": {
+            "DamageValue": 2960,
+            "DamageGrowth": 270,
+            "DazeValue": 2690,
+            "DazeGrowth": 130
+        },
+        "1091003": {
+            "DamageValue": 6280,
+            "DamageGrowth": 580,
+            "DazeValue": 4640,
+            "DazeGrowth": 220
+        },
+        "1091004": {
+            "DamageValue": 9650,
+            "DamageGrowth": 880,
+            "DazeValue": 8210,
+            "DazeGrowth": 380
+        },
+        "1091005": {
+            "DamageValue": 12900,
+            "DamageGrowth": 1180,
+            "DazeValue": 13100,
+            "DazeGrowth": 600
+        },
+        "1091006": {
+            "DamageValue": 6280,
+            "DamageGrowth": 580,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1091007": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1091008": {
+            "DamageValue": 3580,
+            "DamageGrowth": 330,
+            "DazeValue": 3580,
+            "DazeGrowth": 170
+        },
+        "1091009": {
+            "DamageValue": 15740,
+            "DamageGrowth": 1440,
+            "DazeValue": 12870,
+            "DazeGrowth": 590
+        },
+        "1091010": {
+            "DamageValue": 23600,
+            "DamageGrowth": 2150,
+            "DazeValue": 19300,
+            "DazeGrowth": 880
+        },
+        "1091011": {
+            "DamageValue": 19330,
+            "DamageGrowth": 1760,
+            "DazeValue": 16200,
+            "DazeGrowth": 740
+        },
+        "1091012": {
+            "DamageValue": 28990,
+            "DamageGrowth": 2640,
+            "DazeValue": 24300,
+            "DazeGrowth": 1110
+        },
+        "1091013": {
+            "DamageValue": 2580,
+            "DamageGrowth": 240,
+            "DazeValue": 1290,
+            "DazeGrowth": 60
+        },
+        "1091014": {
+            "DamageValue": 24590,
+            "DamageGrowth": 2240,
+            "DazeValue": 21450,
+            "DazeGrowth": 980
+        },
+        "1091015": {
+            "DamageValue": 18840,
+            "DamageGrowth": 1720,
+            "DazeValue": 5670,
+            "DazeGrowth": 260
+        },
+        "1091016": {
+            "DamageValue": 18840,
+            "DamageGrowth": 1720,
+            "DazeValue": 5670,
+            "DazeGrowth": 260
+        },
+        "1091017": {
+            "DamageValue": 25120,
+            "DamageGrowth": 2290,
+            "DazeValue": 7560,
+            "DazeGrowth": 350
+        },
+        "1091018": {
+            "DamageValue": 238800,
+            "DamageGrowth": 21710,
+            "DazeValue": 37040,
+            "DazeGrowth": 1690
+        },
+        "1091019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1091020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1091021": {
+            "DamageValue": 10450,
+            "DamageGrowth": 950,
+            "DazeValue": 10450,
+            "DazeGrowth": 480
+        },
+        "1091022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1091023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1091024": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 12830,
+            "DazeGrowth": 590
+        },
+        "1091025": {
+            "DamageValue": 33780,
+            "DamageGrowth": 3080,
+            "DazeValue": 29190,
+            "DazeGrowth": 1330
+        },
+        "1091026": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1091027": {
+            "DamageValue": 45470,
+            "DamageGrowth": 4140,
+            "DazeValue": 4400,
+            "DazeGrowth": 200
+        },
+        "1091028": {
+            "DamageValue": 85810,
+            "DamageGrowth": 7810,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1091029": {
+            "DamageValue": 214110,
+            "DamageGrowth": 19470,
+            "DazeValue": 37780,
+            "DazeGrowth": 1720
+        },
+        "1091030": {
+            "DamageValue": 11730,
+            "DamageGrowth": 1070,
+            "DazeValue": 5870,
+            "DazeGrowth": 270
+        },
+        "1091031": {
+            "DamageValue": 33170,
+            "DamageGrowth": 3020,
+            "DazeValue": 14030,
+            "DazeGrowth": 640
+        },
+        "1091032": {
+            "DamageValue": 33170,
+            "DamageGrowth": 3020,
+            "DazeValue": 70130,
+            "DazeGrowth": 3190
+        },
+        "1091033": {
+            "DamageValue": 17050,
+            "DamageGrowth": 1550,
+            "DazeValue": 17050,
+            "DazeGrowth": 780
+        },
+        "1091034": {
+            "DamageValue": 17050,
+            "DamageGrowth": 1550,
+            "DazeValue": 85250,
+            "DazeGrowth": 3880
+        },
+        "1091035": {
+            "DamageValue": 72000,
+            "DamageGrowth": 0,
+            "DazeValue": 4400,
+            "DazeGrowth": 0
+        },
+        "1091036": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

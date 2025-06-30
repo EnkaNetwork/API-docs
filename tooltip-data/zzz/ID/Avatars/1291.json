@@ -1,0 +1,491 @@
+{
+    "Name": "Hugo",
+    "ElementTypes": [
+        "Ice"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Child of Hatred",
+            "Description": "Saat berada dalam status <color=#FFFFFF>Dark Abyss Reverb</color>, jika memicu efek <color=#FFFFFF>Totalize</color>, maka peningkatan CRIT Rate dari Skill bertambah 12% dan CRIT DMG bertambah 30%.",
+            "Lore": "\"Jangan menyangkal keinginanmu sendiri, jangan membantah ambisimu sendiri. Ini adalah bakat yang kamu bawa sejak lahir, anugerah terbaik yang pernah diberikan takdir kepadamu!\"\n\"Akuilah, jauh di dalam hatimu tersembunyi sebuah percikan api, ingin menyalakan kobaran api yang akan membakar segalanya—\"\n\"Dan aku... adalah percikan api itu.\"\n\n\"Iya, aku tahu. Aku sudah tahu sejak lama.\""
+        },
+        "2": {
+            "Title": "The Child Within",
+            "Description": "Saat <color=#FFFFFF>Ultimate: Blaspheme</color> memicu efek <color=#FFFFFF>Totalize</color>, tidak akan mengakhiri status Stun musuh. Selain itu, Skill akan mengabaikan 15% DEF musuh tersebut jika memicu efek <color=#FFFFFF>Totalize</color>.",
+            "Lore": "\"Keluarga adalah kutukan abadi yang terukir pada diri seseorang dan tidak dapat dihindari.\"\n\"Tidak peduli sudah seberapa kuat kamu tumbuh, dan ke mana pun kamu pergi, kutukan itu tetap akan mengikutimu seperti bayangan.\"\n\"Ketika kamu jatuh ke titik terendah atau mendaki mencapai puncak, hal itu akan muncul, mengubahmu kembali menjadi anak yang tidak berdaya, dan tidak bisa berbuat apa-apa selain bersembunyi di dalam lemari dan menangis.\"\n\n\"Kecuali kalau kamu benar-benar melihatnya, dan memeluknya.\"\nSebagian luka hanya bisa disembuhkan ketika dilihat dan diterima."
+        },
+        "3": {
+            "Title": "Fruit of the Poisonous Tree",
+            "Description": "Level <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, dan <color=#FFFFFF>Chain Attack</color> +2.",
+            "Lore": "Mereka bilang bunga yang mekar di jurang selalu dibasahi dengan kebencian, seperti pohon beracun yang tidak bisa menghasilkan buah yang bersih dari racun.\nTapi semua buah akan matang pada waktunya.\nJadi, dia menghancurkan dirinya, menjadi hujan kepingan-kepingan.\nHujan itu menutupi bumi, dan setiap tetes embun memantulkan fajar baru yang segar."
+        },
+        "4": {
+            "Title": "Dramatic Theory",
+            "Description": "Setelah Charged Shot mengenai musuh, serangan Hugo terhadap musuh tersebut akan mengabaikan 12% <color=#98EFF0>ketahanan Ice DMG</color> musuh selama 15 detik. Memicu ulang akan memperbarui durasi.",
+            "Lore": "Keadilan, kejahatan, kegilaan, rasionalitas, pesona, kekeraskepalaan.\nDia terbentuk dari wajah yang tak terhitung jumlahnya.\n\"Jadi, yang mana dirimu yang sebenarnya?\"\n\"Itu tidak penting. Bagaimana kalau, sebagai gantinya, kamu beritahu aku, Lycaon—\"\n\"Orang seperti apa yang kamu lihat dalam diriku?\""
+        },
+        "5": {
+            "Title": "Nirvana",
+            "Description": "Level <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, dan <color=#FFFFFF>Chain Attack</color> +2.",
+            "Lore": "Dunia tidak perlu dihancurkan dan dibangun kembali, dan tidak ada yang berhak melakukan hal seperti itu.\nTapi ada orang yang bisa.\nJadi, dia menghancurkan dirinya sendiri dan terlahir kembali.\n\"Jika aku harus jatuh, biarkan aku jatuh. Sosok yang ditakdirkan menjadi diriku pasti akan menangkapku.\""
+        },
+        "6": {
+            "Title": "Crown of Thorns",
+            "Description": "Semua serangan jarak yang mengenai musuh akan memicu status <color=#FFFFFF>Dark Abyss Reverb</color>, dapat berlangsung maksimum hingga 6 detik. Memicu ulang akan memperbarui durasi. Selain itu, jika Skill mana pun memicu efek <color=#FFFFFF>Totalize</color>, maka DMG dari Skill tersebut akan meningkat lagi sebesar 60%. Saat serangan terakhir dari <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> mengenai musuh yang tidak berada dalam status Stun, juga dapat memicu efek <color=#FFFFFF>Totalize</color>. \"Kelipatan DMG - Serangan Terakhir\" dari serangan ini akan meningkat 1000%.",
+            "Lore": "Dia berjalan dengan suka rela menuju jurang tanpa batas, membiarkan duri di tanah membesit lukanya.\nDi mana darah bercucuran, martabat dan kekeraskepalaan yang hancur mulai tumbuh dari luka-luka.\nDia mengambil duri berlumuran darah untuk memahkotai dirinya sendiri.\n\"Hanya diriku sendiri yang bisa membunuhku dan menyelamatkanku.\""
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Core Passive: Terminating Verdict",
+            "DescriptionByLevel": {
+                "1": "Saat <color=#FFFFFF>Chain Attack: Trick of Fate</color> mengenai musuh atau saat serangan Hugo mengakibatkan Stun terhadap musuh, Hugo akan mendapatkan status <color=#FFFFFF>Dark Abyss Reverb</color> selama 6 detik. Memicu ulang akan memperbarui durasi. Dalam status ini, CRIT Rate Hugo meningkat 12% dan CRIT DMG meningkat 25%.\nJika terdapat 1/2 Agen <color=#FFFFFF>Stun</color> di dalam tim, ATK Hugo akan meningkat <color=#2BAD00>25</color>/<color=#2BAD00>75</color> poin.\nSaat serangan terakhir dari <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> atau <color=#FFFFFF>Ultimate: Blaspheme</color> mengenai musuh, jika musuh tersebut dalam status Stun, maka akan memicu efek <color=#FFFFFF>Totalize</color> terhadap musuh tersebut, meningkatkan \"Kelipatan DMG - Serangan Terakhir\" dari Skill terkait sebesar <color=#2BAD00>500%</color>. Selain itu, efek <color=#FFFFFF>Totalize</color> juga akan memberikan peningkatan Kelipatan DMG tambahan untuk Skill tersebut berdasarkan sisa durasi Stun musuh saat efek ini terpicu. \nJika durasi Stun musuh tersisa 5 detik (atau lebih sedikit), Kelipatan DMG akan meningkat <color=#2BAD00>140%</color> untuk setiap 1 detik yang tersisa.\nJika durasi Stun musuh tersisa 5 sampai 15 detik, Kelipatan DMG akan meningkat <color=#2BAD00>50%</color> untuk setiap 1 detik yang tersisa, maksimum dapat meningkatkan <color=#2BAD00>1700%</color> Kelipatan DMG.\nSetelah Hugo memicu efek <color=#FFFFFF>Totalize</color>, status Stun musuh akan langsung berakhir dan langsung mengakumulasi sejumlah Daze berdasarkan sisa durasi status Stun musuh tersebut saat efek <color=#FFFFFF>Totalize</color> terpicu. Setiap 1 detik dari durasi Stun yang tersisa, akan mengakumulasi 5% Daze. Maksimum dapat mengakumulasi Daze senilai 25% dari maks. Daze musuh.\nSaat <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> mengenai musuh, jika musuh tersebut tidak berada dalam status Stun, maka perolehan Daze dari Skill tersebut akan meningkat 20%.",
+                "2": "Saat <color=#FFFFFF>Chain Attack: Trick of Fate</color> mengenai musuh atau saat serangan Hugo mengakibatkan Stun terhadap musuh, Hugo akan mendapatkan status <color=#FFFFFF>Dark Abyss Reverb</color> selama 6 detik. Memicu ulang akan memperbarui durasi. Dalam status ini, CRIT Rate Hugo meningkat 12% dan CRIT DMG meningkat 25%.\nJika terdapat 1/2 Agen <color=#FFFFFF>Stun</color> di dalam tim, ATK Hugo akan meningkat <color=#2BAD00>50</color>/<color=#2BAD00>150</color> poin.\nSaat serangan terakhir dari <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> atau <color=#FFFFFF>Ultimate: Blaspheme</color> mengenai musuh, jika musuh tersebut dalam status Stun, maka akan memicu efek <color=#FFFFFF>Totalize</color> terhadap musuh tersebut, meningkatkan \"Kelipatan DMG - Serangan Terakhir\" dari Skill terkait sebesar <color=#2BAD00>583%</color>. Selain itu, efek <color=#FFFFFF>Totalize</color> juga akan memberikan peningkatan Kelipatan DMG tambahan untuk Skill tersebut berdasarkan sisa durasi Stun musuh saat efek ini terpicu. \nJika durasi Stun musuh tersisa 5 detik (atau lebih sedikit), Kelipatan DMG akan meningkat <color=#2BAD00>163%</color> untuk setiap 1 detik yang tersisa.\nJika durasi Stun musuh tersisa 5 sampai 15 detik, Kelipatan DMG akan meningkat <color=#2BAD00>58%</color> untuk setiap 1 detik yang tersisa, maksimum dapat meningkatkan <color=#2BAD00>1978%</color> Kelipatan DMG.\nSetelah Hugo memicu efek <color=#FFFFFF>Totalize</color>, status Stun musuh akan langsung berakhir dan langsung mengakumulasi sejumlah Daze berdasarkan sisa durasi status Stun musuh tersebut saat efek <color=#FFFFFF>Totalize</color> terpicu. Setiap 1 detik dari durasi Stun yang tersisa, akan mengakumulasi 5% Daze. Maksimum dapat mengakumulasi Daze senilai 25% dari maks. Daze musuh.\nSaat <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> mengenai musuh, jika musuh tersebut tidak berada dalam status Stun, maka perolehan Daze dari Skill tersebut akan meningkat 20%.",
+                "3": "Saat <color=#FFFFFF>Chain Attack: Trick of Fate</color> mengenai musuh atau saat serangan Hugo mengakibatkan Stun terhadap musuh, Hugo akan mendapatkan status <color=#FFFFFF>Dark Abyss Reverb</color> selama 6 detik. Memicu ulang akan memperbarui durasi. Dalam status ini, CRIT Rate Hugo meningkat 12% dan CRIT DMG meningkat 25%.\nJika terdapat 1/2 Agen <color=#FFFFFF>Stun</color> di dalam tim, ATK Hugo akan meningkat <color=#2BAD00>80</color>/<color=#2BAD00>240</color> poin.\nSaat serangan terakhir dari <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> atau <color=#FFFFFF>Ultimate: Blaspheme</color> mengenai musuh, jika musuh tersebut dalam status Stun, maka akan memicu efek <color=#FFFFFF>Totalize</color> terhadap musuh tersebut, meningkatkan \"Kelipatan DMG - Serangan Terakhir\" dari Skill terkait sebesar <color=#2BAD00>667%</color>. Selain itu, efek <color=#FFFFFF>Totalize</color> juga akan memberikan peningkatan Kelipatan DMG tambahan untuk Skill tersebut berdasarkan sisa durasi Stun musuh saat efek ini terpicu. \nJika durasi Stun musuh tersisa 5 detik (atau lebih sedikit), Kelipatan DMG akan meningkat <color=#2BAD00>187%</color> untuk setiap 1 detik yang tersisa.\nJika durasi Stun musuh tersisa 5 sampai 15 detik, Kelipatan DMG akan meningkat <color=#2BAD00>67%</color> untuk setiap 1 detik yang tersisa, maksimum dapat meningkatkan <color=#2BAD00>2272%</color> Kelipatan DMG.\nSetelah Hugo memicu efek <color=#FFFFFF>Totalize</color>, status Stun musuh akan langsung berakhir dan langsung mengakumulasi sejumlah Daze berdasarkan sisa durasi status Stun musuh tersebut saat efek <color=#FFFFFF>Totalize</color> terpicu. Setiap 1 detik dari durasi Stun yang tersisa, akan mengakumulasi 5% Daze. Maksimum dapat mengakumulasi Daze senilai 25% dari maks. Daze musuh.\nSaat <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> mengenai musuh, jika musuh tersebut tidak berada dalam status Stun, maka perolehan Daze dari Skill tersebut akan meningkat 20%.",
+                "4": "Saat <color=#FFFFFF>Chain Attack: Trick of Fate</color> mengenai musuh atau saat serangan Hugo mengakibatkan Stun terhadap musuh, Hugo akan mendapatkan status <color=#FFFFFF>Dark Abyss Reverb</color> selama 6 detik. Memicu ulang akan memperbarui durasi. Dalam status ini, CRIT Rate Hugo meningkat 12% dan CRIT DMG meningkat 25%.\nJika terdapat 1/2 Agen <color=#FFFFFF>Stun</color> di dalam tim, ATK Hugo akan meningkat <color=#2BAD00>120</color>/<color=#2BAD00>360</color> poin.\nSaat serangan terakhir dari <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> atau <color=#FFFFFF>Ultimate: Blaspheme</color> mengenai musuh, jika musuh tersebut dalam status Stun, maka akan memicu efek <color=#FFFFFF>Totalize</color> terhadap musuh tersebut, meningkatkan \"Kelipatan DMG - Serangan Terakhir\" dari Skill terkait sebesar <color=#2BAD00>750%</color>. Selain itu, efek <color=#FFFFFF>Totalize</color> juga akan memberikan peningkatan Kelipatan DMG tambahan untuk Skill tersebut berdasarkan sisa durasi Stun musuh saat efek ini terpicu. \nJika durasi Stun musuh tersisa 5 detik (atau lebih sedikit), Kelipatan DMG akan meningkat <color=#2BAD00>210%</color> untuk setiap 1 detik yang tersisa.\nJika durasi Stun musuh tersisa 5 sampai 15 detik, Kelipatan DMG akan meningkat <color=#2BAD00>75%</color> untuk setiap 1 detik yang tersisa, maksimum dapat meningkatkan <color=#2BAD00>2550%</color> Kelipatan DMG.\nSetelah Hugo memicu efek <color=#FFFFFF>Totalize</color>, status Stun musuh akan langsung berakhir dan langsung mengakumulasi sejumlah Daze berdasarkan sisa durasi status Stun musuh tersebut saat efek <color=#FFFFFF>Totalize</color> terpicu. Setiap 1 detik dari durasi Stun yang tersisa, akan mengakumulasi 5% Daze. Maksimum dapat mengakumulasi Daze senilai 25% dari maks. Daze musuh.\nSaat <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> mengenai musuh, jika musuh tersebut tidak berada dalam status Stun, maka perolehan Daze dari Skill tersebut akan meningkat 20%.",
+                "5": "Saat <color=#FFFFFF>Chain Attack: Trick of Fate</color> mengenai musuh atau saat serangan Hugo mengakibatkan Stun terhadap musuh, Hugo akan mendapatkan status <color=#FFFFFF>Dark Abyss Reverb</color> selama 6 detik. Memicu ulang akan memperbarui durasi. Dalam status ini, CRIT Rate Hugo meningkat 12% dan CRIT DMG meningkat 25%.\nJika terdapat 1/2 Agen <color=#FFFFFF>Stun</color> di dalam tim, ATK Hugo akan meningkat <color=#2BAD00>180</color>/<color=#2BAD00>540</color> poin.\nSaat serangan terakhir dari <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> atau <color=#FFFFFF>Ultimate: Blaspheme</color> mengenai musuh, jika musuh tersebut dalam status Stun, maka akan memicu efek <color=#FFFFFF>Totalize</color> terhadap musuh tersebut, meningkatkan \"Kelipatan DMG - Serangan Terakhir\" dari Skill terkait sebesar <color=#2BAD00>833%</color>. Selain itu, efek <color=#FFFFFF>Totalize</color> juga akan memberikan peningkatan Kelipatan DMG tambahan untuk Skill tersebut berdasarkan sisa durasi Stun musuh saat efek ini terpicu. \nJika durasi Stun musuh tersisa 5 detik (atau lebih sedikit), Kelipatan DMG akan meningkat <color=#2BAD00>233%</color> untuk setiap 1 detik yang tersisa.\nJika durasi Stun musuh tersisa 5 sampai 15 detik, Kelipatan DMG akan meningkat <color=#2BAD00>83%</color> untuk setiap 1 detik yang tersisa, maksimum dapat meningkatkan <color=#2BAD00>2828%</color> Kelipatan DMG.\nSetelah Hugo memicu efek <color=#FFFFFF>Totalize</color>, status Stun musuh akan langsung berakhir dan langsung mengakumulasi sejumlah Daze berdasarkan sisa durasi status Stun musuh tersebut saat efek <color=#FFFFFF>Totalize</color> terpicu. Setiap 1 detik dari durasi Stun yang tersisa, akan mengakumulasi 5% Daze. Maksimum dapat mengakumulasi Daze senilai 25% dari maks. Daze musuh.\nSaat <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> mengenai musuh, jika musuh tersebut tidak berada dalam status Stun, maka perolehan Daze dari Skill tersebut akan meningkat 20%.",
+                "6": "Saat <color=#FFFFFF>Chain Attack: Trick of Fate</color> mengenai musuh atau saat serangan Hugo mengakibatkan Stun terhadap musuh, Hugo akan mendapatkan status <color=#FFFFFF>Dark Abyss Reverb</color> selama 6 detik. Memicu ulang akan memperbarui durasi. Dalam status ini, CRIT Rate Hugo meningkat 12% dan CRIT DMG meningkat 25%.\nJika terdapat 1/2 Agen <color=#FFFFFF>Stun</color> di dalam tim, ATK Hugo akan meningkat <color=#2BAD00>270</color>/<color=#2BAD00>810</color> poin.\nSaat serangan terakhir dari <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> atau <color=#FFFFFF>Ultimate: Blaspheme</color> mengenai musuh, jika musuh tersebut dalam status Stun, maka akan memicu efek <color=#FFFFFF>Totalize</color> terhadap musuh tersebut, meningkatkan \"Kelipatan DMG - Serangan Terakhir\" dari Skill terkait sebesar <color=#2BAD00>917%</color>. Selain itu, efek <color=#FFFFFF>Totalize</color> juga akan memberikan peningkatan Kelipatan DMG tambahan untuk Skill tersebut berdasarkan sisa durasi Stun musuh saat efek ini terpicu. \nJika durasi Stun musuh tersisa 5 detik (atau lebih sedikit), Kelipatan DMG akan meningkat <color=#2BAD00>257%</color> untuk setiap 1 detik yang tersisa.\nJika durasi Stun musuh tersisa 5 sampai 15 detik, Kelipatan DMG akan meningkat <color=#2BAD00>92%</color> untuk setiap 1 detik yang tersisa, maksimum dapat meningkatkan <color=#2BAD00>3122%</color> Kelipatan DMG.\nSetelah Hugo memicu efek <color=#FFFFFF>Totalize</color>, status Stun musuh akan langsung berakhir dan langsung mengakumulasi sejumlah Daze berdasarkan sisa durasi status Stun musuh tersebut saat efek <color=#FFFFFF>Totalize</color> terpicu. Setiap 1 detik dari durasi Stun yang tersisa, akan mengakumulasi 5% Daze. Maksimum dapat mengakumulasi Daze senilai 25% dari maks. Daze musuh.\nSaat <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> mengenai musuh, jika musuh tersebut tidak berada dalam status Stun, maka perolehan Daze dari Skill tersebut akan meningkat 20%.",
+                "7": "Saat <color=#FFFFFF>Chain Attack: Trick of Fate</color> mengenai musuh atau saat serangan Hugo mengakibatkan Stun terhadap musuh, Hugo akan mendapatkan status <color=#FFFFFF>Dark Abyss Reverb</color> selama 6 detik. Memicu ulang akan memperbarui durasi. Dalam status ini, CRIT Rate Hugo meningkat 12% dan CRIT DMG meningkat 25%.\nJika terdapat 1/2 Agen <color=#FFFFFF>Stun</color> di dalam tim, ATK Hugo akan meningkat <color=#2BAD00>300</color>/<color=#2BAD00>900</color> poin.\nSaat serangan terakhir dari <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> atau <color=#FFFFFF>Ultimate: Blaspheme</color> mengenai musuh, jika musuh tersebut dalam status Stun, maka akan memicu efek <color=#FFFFFF>Totalize</color> terhadap musuh tersebut, meningkatkan \"Kelipatan DMG - Serangan Terakhir\" dari Skill terkait sebesar <color=#2BAD00>1000%</color>. Selain itu, efek <color=#FFFFFF>Totalize</color> juga akan memberikan peningkatan Kelipatan DMG tambahan untuk Skill tersebut berdasarkan sisa durasi Stun musuh saat efek ini terpicu. \nJika durasi Stun musuh tersisa 5 detik (atau lebih sedikit), Kelipatan DMG akan meningkat <color=#2BAD00>280%</color> untuk setiap 1 detik yang tersisa.\nJika durasi Stun musuh tersisa 5 sampai 15 detik, Kelipatan DMG akan meningkat <color=#2BAD00>100%</color> untuk setiap 1 detik yang tersisa, maksimum dapat meningkatkan <color=#2BAD00>3400%</color> Kelipatan DMG.\nSetelah Hugo memicu efek <color=#FFFFFF>Totalize</color>, status Stun musuh akan langsung berakhir dan langsung mengakumulasi sejumlah Daze berdasarkan sisa durasi status Stun musuh tersebut saat efek <color=#FFFFFF>Totalize</color> terpicu. Setiap 1 detik dari durasi Stun yang tersisa, akan mengakumulasi 5% Daze. Maksimum dapat mengakumulasi Daze senilai 25% dari maks. Daze musuh.\nSaat <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> mengenai musuh, jika musuh tersebut tidak berada dalam status Stun, maka perolehan Daze dari Skill tersebut akan meningkat 20%."
+            }
+        },
+        "MathSkill": {
+            "Title": "Additional Ability: Prelude to Finality",
+            "Description": "Berlaku jika terdapat Agen <color=#FFFFFF>Stun</color> atau Agen yang memiliki Atribut yang sama di dalam tim:\nDMG yang diakibatkan <color=#FFFFFF>Chain Attack: Trick of Fate</color> meningkat 15%.\nDMG yang diakibatkan terhadap musuh normal mendapatkan peningkatan tambahan sebesar 35%.\nSaat memicu <color=#FFFFFF>Totalize</color>, DMG yang diakibatkan meningkat 40%.\nSaat <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> memicu efek <color=#FFFFFF>Totalize</color> terhadap musuh normal, akan memulihkan 20 poin Energy tambahan.\nEfek pemulihan Energy dapat dipicu sekali setiap 30 detik."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "129100001": {
+                "Title": "Basic Attack: Dark Abyss Quartet",
+                "Description": "Tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMelancarkan hingga empat tahap serangan ke depan, mengakibatkan <color=#F0D12B>Physical DMG</color> dan <color=#98EFF0>Ice DMG</color>.\nSerangan tahap keempat dalam Skill ini adalah serangan menembak. Saat melancarkan serangan menembak, tahan <IconMap:Icon_Normal> untuk melakukan Charge dan melancarkan Charged Shot.\nSelama melancarkan serangan tahap keempat, level Anti-Interrupt akan meningkat, dan DMG yang diterima akan berkurang 40%."
+            },
+            "129100002": {
+                "Title": "Basic Attack: Dark Abyss Concerto",
+                "Description": "Setelah melancarkan <color=#FFFFFF>Basic Attack: Dark Abyss Quartet</color> tahap keempat, serangan menembak dari <color=#FFFFFF>Dodge Counter: Phantasm - Slash</color>, atau serangan menembak dari <color=#FFFFFF>Quick Assist: Elegy</color>, tekan atau tahan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMelemparkan sabit ke depan untuk melancarkan Slash, dan dilanjuti dengan melancarkan serangan menembak, mengakibatkan <color=#98EFF0>Ice DMG</color>;\nSaat melancarkan serangan menembak, tahan <IconMap:Icon_Normal> untuk melakukan Charge dan melancarkan Charged Shot;\nSelama melancarkan Skill ini, level Anti-Interrupt akan meningkat, dan DMG yang diterima akan berkurang 40%."
+            },
+            "129100014": {
+                "Title": "Basic Attack: Dark Abyss Quartet"
+            },
+            "129100015": {
+                "Description": "Kelipatan DMG: Tahap 1",
+                "Param": "{Skill:1291001, Prop:1001}"
+            },
+            "129100016": {
+                "Description": "Kelipatan DMG: Tahap 2",
+                "Param": "{Skill:1291002, Prop:1001}"
+            },
+            "129100017": {
+                "Description": "Kelipatan DMG: Tahap 3",
+                "Param": "{Skill:1291003, Prop:1001}"
+            },
+            "129100018": {
+                "Description": "Kelipatan DMG - Slash",
+                "Param": "{Skill:1291004, Prop:1001}"
+            },
+            "129100019": {
+                "Description": "Kelipatan DMG - Serangan Tembakan",
+                "Param": "{Skill:1291005, Prop:1001}"
+            },
+            "129100020": {
+                "Description": "Kelipatan DMG - Serangan Charged Shot",
+                "Param": "{Skill:1291006, Prop:1001}"
+            },
+            "129100021": {
+                "Description": "Kelipatan Daze: Tahap 1",
+                "Param": "{Skill:1291001, Prop:1002}"
+            },
+            "129100022": {
+                "Description": "Kelipatan Daze: Tahap 2",
+                "Param": "{Skill:1291002, Prop:1002}"
+            },
+            "129100023": {
+                "Description": "Kelipatan Daze: Tahap 3",
+                "Param": "{Skill:1291003, Prop:1002}"
+            },
+            "129100024": {
+                "Description": "Kelipatan Daze - Slash",
+                "Param": "{Skill:1291004, Prop:1002}"
+            },
+            "129100025": {
+                "Description": "Kelipatan Daze - Serangan Tembakan",
+                "Param": "{Skill:1291005, Prop:1002}"
+            },
+            "129100026": {
+                "Description": "Kelipatan Daze - Serangan Charged Shot",
+                "Param": "{Skill:1291006, Prop:1002}"
+            },
+            "129100027": {
+                "Title": "Basic Attack: Dark Abyss Concerto"
+            },
+            "129100028": {
+                "Description": "Kelipatan DMG - Slash",
+                "Param": "{Skill:1291024, Prop:1001}"
+            },
+            "129100029": {
+                "Description": "Kelipatan DMG - Serangan Tembakan",
+                "Param": "{Skill:1291025, Prop:1001}"
+            },
+            "129100030": {
+                "Description": "Kelipatan DMG - Serangan Charged Shot",
+                "Param": "{Skill:1291026, Prop:1001}"
+            },
+            "129100031": {
+                "Description": "Kelipatan Daze - Slash",
+                "Param": "{Skill:1291024, Prop:1002}"
+            },
+            "129100032": {
+                "Description": "Kelipatan Daze - Serangan Tembakan",
+                "Param": "{Skill:1291025, Prop:1002}"
+            },
+            "129100033": {
+                "Description": "Kelipatan Daze - Serangan Charged Shot",
+                "Param": "{Skill:1291026, Prop:1002}"
+            }
+        },
+        "1": {
+            "129100003": {
+                "Title": "Special Attack: Soul Hunter - Judgment",
+                "Description": "Tekan <IconMap:Icon_Special> untuk melancarkan Skill ini.\nMemutarkan sabitnya dan melancarkan Slash ke depan, mengakibatkan <color=#98EFF0>Ice DMG</color>.\nLevel Anti-Interrupt akan meningkat selama melancarkan Skill ini."
+            },
+            "129100004": {
+                "Title": "EX Special Attack: Soul Hunter - Punishment",
+                "Description": "Saat Energy Hugo sudah cukup, tekan <IconMap:Icon_SpecialReady> untuk melancarkan Skill ini.\nMemutarkan sabitnya untuk melancarkan serangan, kemudian diikuti dengan Serangan Terakhir yang mengakibatkan <color=#98EFF0>Ice DMG</color> dalam jumlah besar.\nSkill ini tidak dianggap sebagai serangan kuat.\nSetelah melancarkan Skill ini, Hugo dapat langsung melanjutkan serangannya dengan <color=#FFFFFF>Basic Attack: Dark Abyss Quartet</color> tahap keempat.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "129100037": {
+                "Title": "Special Attack: Soul Hunter - Judgment"
+            },
+            "129100038": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1291008, Prop:1001}"
+            },
+            "129100039": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1291008, Prop:1002}"
+            },
+            "129100040": {
+                "Title": "EX Special Attack: Soul Hunter - Punishment"
+            },
+            "129100041": {
+                "Description": "Kelipatan DMG",
+                "Param": "{{Skill:1291009, Prop:1001} + {Skill:1291010, Prop:1001}}"
+            },
+            "129100042": {
+                "Description": "Kelipatan Daze",
+                "Param": "{{Skill:1291009, Prop:1002} + {Skill:1291010, Prop:1002}}"
+            },
+            "129100043": {
+                "Description": "Konsumsi Energy",
+                "Param": "40 poin"
+            }
+        },
+        "2": {
+            "129100005": {
+                "Title": "Dodge: Phantasm",
+                "Description": "Tekan <IconMap:Icon_Evade> untuk melakukan Dodge.\nMelakukan Dodge dengan cepat.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "129100006": {
+                "Title": "Dash Attack: Phantasm - Shatter",
+                "Description": "Tekan <IconMap:Icon_Normal> saat melakukan Dodge untuk melancarkan Skill ini.\nMelancarkan serangan menerjang ke depan dan mengakibatkan <color=#F0D12B>Physical DMG</color>."
+            },
+            "129100007": {
+                "Title": "Dodge Counter: Phantasm - Slash",
+                "Description": "Tekan <IconMap:Icon_Normal> setelah melakukan <color=#FFFFFF>Perfect Dodge</color> untuk melancarkan Skill ini.\nMelancarkan serangan beruntun terhadap musuh di depan dan mengakibatkan <color=#98EFF0>Ice DMG</color>.\nSaat melancarkan Skill, tahan <IconMap:Icon_Normal> untuk melancarkan serangan menembak.\nSaat melancarkan serangan menembak, tahan <IconMap:Icon_Normal> untuk melakukan Charge dan melancarkan Charged Shot.\nSerangan menembak yang dilancarkan akan dianggap sebagai satu kali Basic Attack dan DMG yang diakibatkan akan dianggap sebagai DMG dari Basic Attack.\nSetelah melancarkan Skill ini, Hugo dapat langsung melanjutkan serangannya dengan <color=#FFFFFF>Basic Attack: Dark Abyss Quartet</color> tahap keempat.\nSelama melancarkan serangan menembak, level Anti-Interrupt akan meningkat, dan DMG yang diterima akan berkurang 40%.\nKarakter akan menjadi kebal selama melancarkan Slash dan selama terdorong mundur oleh recoil tembakan dari Skill ini."
+            },
+            "129100044": {
+                "Title": "Dash Attack: Phantasm - Shatter"
+            },
+            "129100045": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1291011, Prop:1001}"
+            },
+            "129100046": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1291011, Prop:1002}"
+            },
+            "129100047": {
+                "Title": "Dodge Counter: Phantasm - Slash"
+            },
+            "129100048": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1291012, Prop:1001}"
+            },
+            "129100049": {
+                "Description": "Kelipatan DMG - Serangan Tembakan Alternatif",
+                "Param": "{Skill:1291013, Prop:1001}"
+            },
+            "129100050": {
+                "Description": "Kelipatan DMG - Serangan Charged Shot Alternatif",
+                "Param": "{Skill:1291014, Prop:1001}"
+            },
+            "129100051": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1291012, Prop:1002}"
+            },
+            "129100052": {
+                "Description": "Kelipatan Daze - Serangan Tembakan Alternatif",
+                "Param": "{Skill:1291013, Prop:1002}"
+            },
+            "129100053": {
+                "Description": "Kelipatan Daze - Serangan Charged Shot Alternatif",
+                "Param": "{Skill:1291014, Prop:1002}"
+            }
+        },
+        "3": {
+            "129100008": {
+                "Title": "Chain Attack: Trick of Fate",
+                "Description": "Saat <color=#FFFFFF>Chain Attack</color> terpicu, pilih Hugo untuk melancarkan Skill ini.\nMenerjang ke depan dengan cepat dan melancarkan Slash dalam area luas, lalu dilanjuti dengan serangan menembak, mengakibatkan <color=#98EFF0>Ice DMG</color> dalam jumlah besar.\nSerangan menembak dari Skill ini akan dianggap sebagai Charged Shot.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "129100009": {
+                "Title": "Ultimate: Blaspheme",
+                "Description": "Saat Decibel Rating mencapai <color=#FFFFFF>Maximum</color>, tekan <IconMap:Icon_UltimateReady> untuk melancarkan Skill ini.\nMemutar dan melemparkan sabitnya untuk melancarkan serangan berputar yang kuat terhadap musuh di depan, kemudian dilanjuti dengan Serangan Terakhir, mengakibatkan <color=#98EFF0>Ice DMG</color> dalam jumlah besar.\nSkill ini tidak dianggap sebagai serangan kuat.\nSetelah melancarkan Skill ini, Hugo dapat langsung melanjutkan serangannya dengan <color=#FFFFFF>Basic Attack: Dark Abyss Quartet</color> tahap keempat.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "129100054": {
+                "Title": "Chain Attack: Trick of Fate"
+            },
+            "129100055": {
+                "Description": "Kelipatan DMG - Slash",
+                "Param": "{Skill:1291015, Prop:1001}"
+            },
+            "129100056": {
+                "Description": "Kelipatan Daze - Slash",
+                "Param": "{Skill:1291015, Prop:1002}"
+            },
+            "129100057": {
+                "Title": "Ultimate: Blaspheme"
+            },
+            "129100058": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1291018, Prop:1001}"
+            },
+            "129100059": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1291018, Prop:1002}"
+            }
+        },
+        "6": {
+            "129100011": {
+                "Title": "Quick Assist: Elegy",
+                "Description": "Saat Agen yang Dikendalikan terhempas, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nMelancarkan serangan beruntun terhadap musuh di depan dan mengakibatkan <color=#98EFF0>Ice DMG</color>.\nSaat melancarkan Skill, tahan <IconMap:Icon_Normal> untuk melancarkan serangan menembak. Saat melancarkan serangan menembak, tahan <IconMap:Icon_Normal> untuk melakukan Charge dan melancarkan Charged Shot.\nSerangan menembak yang dilancarkan akan dianggap sebagai satu kali Basic Attack dan DMG yang diakibatkan akan dianggap sebagai DMG dari Basic Attack.\nSetelah melancarkan Skill ini, Hugo dapat langsung melanjutkan serangannya dengan <color=#FFFFFF>Basic Attack: Dark Abyss Quartet</color> tahap keempat.\nSelama melancarkan serangan menembak, level Anti-Interrupt akan meningkat, dan DMG yang diterima akan berkurang 40%.\nKarakter akan menjadi kebal selama melancarkan Slash dan selama terdorong mundur oleh recoil tembakan dari Skill ini."
+            },
+            "129100012": {
+                "Title": "Defensive Assist: The End Has Not Come",
+                "Description": "Tepat sebelum Agen aktif diserang, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nMenangkis serangan musuh dan menghasilkan Daze dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "129100013": {
+                "Title": "Assist Follow-Up: Ace Reversal",
+                "Description": "Setelah melancarkan <color=#FFFFFF>Defensive Assist</color>, tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMenerjang ke depan dengan cepat dan melancarkan Slash dua kali, mengakibatkan <color=#98EFF0>Ice DMG</color>.\nSetelah melancarkan Skill ini, Hugo dapat langsung melanjutkan serangannya dengan <color=#FFFFFF>Basic Attack: Dark Abyss Quartet</color> tahap keempat.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "129100060": {
+                "Title": "Quick Assist: Elegy"
+            },
+            "129100061": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1291019, Prop:1001}"
+            },
+            "129100062": {
+                "Description": "Kelipatan DMG - Serangan Tembakan Alternatif",
+                "Param": "{Skill:1291027, Prop:1001}"
+            },
+            "129100063": {
+                "Description": "Kelipatan DMG - Serangan Charged Shot Alternatif",
+                "Param": "{Skill:1291028, Prop:1001}"
+            },
+            "129100064": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1291019, Prop:1002}"
+            },
+            "129100065": {
+                "Description": "Kelipatan Daze - Serangan Tembakan Alternatif",
+                "Param": "{Skill:1291027, Prop:1002}"
+            },
+            "129100066": {
+                "Description": "Kelipatan Daze - Serangan Charged Shot Alternatif",
+                "Param": "{Skill:1291028, Prop:1002}"
+            },
+            "129100067": {
+                "Title": "Defensive Assist: The End Has Not Come"
+            },
+            "129100068": {
+                "Description": "Kelipatan Daze - Light Defensive",
+                "Param": "{Skill:1291020, Prop:1002}"
+            },
+            "129100069": {
+                "Description": "Kelipatan Daze - Heavy Defensive",
+                "Param": "{Skill:1291021, Prop:1002}"
+            },
+            "129100070": {
+                "Description": "Kelipatan Daze - Chain Defensive",
+                "Param": "{Skill:1291022, Prop:1002}"
+            },
+            "129100071": {
+                "Title": "Assist Follow-Up: Ace Reversal"
+            },
+            "129100072": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1291023, Prop:1001}"
+            },
+            "129100073": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1291023, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1291001": {
+            "DamageValue": 4310,
+            "DamageGrowth": 400,
+            "DazeValue": 2160,
+            "DazeGrowth": 100
+        },
+        "1291002": {
+            "DamageValue": 7410,
+            "DamageGrowth": 680,
+            "DazeValue": 5490,
+            "DazeGrowth": 250
+        },
+        "1291003": {
+            "DamageValue": 16960,
+            "DamageGrowth": 1550,
+            "DazeValue": 12810,
+            "DazeGrowth": 590
+        },
+        "1291004": {
+            "DamageValue": 14910,
+            "DamageGrowth": 1360,
+            "DazeValue": 12580,
+            "DazeGrowth": 580
+        },
+        "1291005": {
+            "DamageValue": 5860,
+            "DamageGrowth": 540,
+            "DazeValue": 5010,
+            "DazeGrowth": 230
+        },
+        "1291006": {
+            "DamageValue": 11800,
+            "DamageGrowth": 1080,
+            "DazeValue": 9570,
+            "DazeGrowth": 440
+        },
+        "1291007": {
+            "DamageValue": 7000,
+            "DamageGrowth": 640,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1291008": {
+            "DamageValue": 8530,
+            "DamageGrowth": 780,
+            "DazeValue": 8530,
+            "DazeGrowth": 390
+        },
+        "1291009": {
+            "DamageValue": 1870,
+            "DamageGrowth": 170,
+            "DazeValue": 43240,
+            "DazeGrowth": 1970
+        },
+        "1291010": {
+            "DamageValue": 35450,
+            "DamageGrowth": 3230,
+            "DazeValue": 2280,
+            "DazeGrowth": 110
+        },
+        "1291011": {
+            "DamageValue": 9350,
+            "DamageGrowth": 850,
+            "DazeValue": 4680,
+            "DazeGrowth": 220
+        },
+        "1291012": {
+            "DamageValue": 24590,
+            "DamageGrowth": 2240,
+            "DazeValue": 21450,
+            "DazeGrowth": 980
+        },
+        "1291013": {
+            "DamageValue": 16210,
+            "DamageGrowth": 1480,
+            "DazeValue": 12470,
+            "DazeGrowth": 570
+        },
+        "1291014": {
+            "DamageValue": 21210,
+            "DamageGrowth": 1930,
+            "DazeValue": 16320,
+            "DazeGrowth": 750
+        },
+        "1291015": {
+            "DamageValue": 70110,
+            "DamageGrowth": 6380,
+            "DazeValue": 26220,
+            "DazeGrowth": 1200
+        },
+        "1291018": {
+            "DamageValue": 152710,
+            "DamageGrowth": 13890,
+            "DazeValue": 26420,
+            "DazeGrowth": 1210
+        },
+        "1291019": {
+            "DamageValue": 10450,
+            "DamageGrowth": 950,
+            "DazeValue": 5230,
+            "DazeGrowth": 240
+        },
+        "1291020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1291021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1291022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1291023": {
+            "DamageValue": 29170,
+            "DamageGrowth": 2660,
+            "DazeValue": 24910,
+            "DazeGrowth": 1140
+        },
+        "1291024": {
+            "DamageValue": 14340,
+            "DamageGrowth": 1310,
+            "DazeValue": 11030,
+            "DazeGrowth": 510
+        },
+        "1291025": {
+            "DamageValue": 8670,
+            "DamageGrowth": 790,
+            "DazeValue": 6670,
+            "DazeGrowth": 310
+        },
+        "1291026": {
+            "DamageValue": 17060,
+            "DamageGrowth": 1560,
+            "DazeValue": 13120,
+            "DazeGrowth": 600
+        },
+        "1291027": {
+            "DamageValue": 12470,
+            "DamageGrowth": 1140,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1291028": {
+            "DamageValue": 16320,
+            "DamageGrowth": 1490,
+            "DazeValue": 8160,
+            "DazeGrowth": 380
+        }
+    }
+}

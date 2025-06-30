@@ -1,0 +1,381 @@
+{
+    "Name": "Nekomata",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Chasse avienne",
+            "Description": "Lorsque Nekomata touche un ennemi en l'attaquant par derrière, elle ignore 16 % de la <color=#F0D12B>RÉS physique</color> de sa cible. Si l'ennemi est étourdi, toutes les attaques de Nekomata contre la cible sont considérées comme des attaques par derrière.",
+            "Lore": "Bien que Nekomata puisse manquer de force en raison de sa petite taille, elle dispose de suffisamment de perspicacité et d'agilité pour repérer les points faibles de ses ennemis et s'en servir à son avantage."
+        },
+        "2": {
+            "Title": "Le chat et la souris",
+            "Description": "Lorsqu'il n'y a qu'un ennemi sur le terrain et que Nekomata est en combat, son taux de production d'énergie augmente de 25 %.",
+            "Lore": "Les chats préfèrent toujours s'amuser avec leur proie.\nS'il reste une souris en combat, le champ de bataille se transformera en véritable terrain de jeu pour Nekomata."
+        },
+        "3": {
+            "Title": "Queue gauche curieuse",
+            "Description": "Niv. d'<color=#FFFFFF>attaque normale</color>, d'<color=#FFFFFF>esquive</color>, de <color=#FFFFFF>soutien</color>, d'<color=#FFFFFF>attaque spéciale</color> et d'<color=#FFFFFF>enchaînement</color> +2",
+            "Lore": "Selon les légendes de l'ancienne civilisation, chaque queue représente une des nombreuses vies du chat et renferme des années de sagesse et d'expérience... Bien que cette légende ne soit pas réelle, les expériences que Nekomata a accumulées dans la rue au cours de sa vie, elles, le sont."
+        },
+        "4": {
+            "Title": "Griffes acérées",
+            "Description": "Quand Nekomata utilise son <color=#FFFFFF>attaque spéciale EX</color>, son taux CRIT augmente de 7 % pendant 15 s. Cumulable 2 fois maximum. La durée de chaque cumul est calculée séparément.",
+            "Lore": "« PLUS, donnez-m'en plus ! Je peux tout manger ! »\nSes yeux étincellent tandis qu'elle se lèche le dos des pattes."
+        },
+        "5": {
+            "Title": "Queue droite chanceuse",
+            "Description": "Niv. d'<color=#FFFFFF>attaque normale</color>, d'<color=#FFFFFF>esquive</color>, de <color=#FFFFFF>soutien</color>, d'<color=#FFFFFF>attaque spéciale</color> et d'<color=#FFFFFF>enchaînement</color> +2",
+            "Lore": "Selon les légendes de l'ancienne civilisation, chaque queue représente une des nombreuses vies d'un chat et renferme des années de sagesse et d'expérience... Parfois, Nekomata se demande si une autre queue finira par lui pousser si elle continue de survivre."
+        },
+        "6": {
+            "Title": "Prédatrice née",
+            "Description": "Lorsque Nekomata lance un <color=#FFFFFF>enchaînement</color> ou utilise son <color=#FFFFFF>ultime</color>, ses DGT CRIT augmentent de 18 %. Cumulable 3 fois maximum. Cet effet expire lorsqu'elle n'est plus au combat. Les cumuls atteignent leur maximum lorsque Nekomata élimine un ennemi.",
+            "Lore": "« Lorsqu'un thirien félin obtient un avantage grâce à son comportement agressif, son animalité innée a tendance à ressortir.\nFort heureusement, cette tendance n'est pas permanente... »\n-Extrait du <i>Manuel de recherche incomplète sur les thiriens félins</i>"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passif principal : Pattes furtives",
+            "DescriptionByLevel": {
+                "1": "Après avoir touché un ennemi avec son <color=#FFFFFF>contre d'esquive</color> ou son <color=#FFFFFF>soutien rapide</color>, les DGT infligés par Nekomata augmentent de <color=#2BAD00>30 %</color> pendant 6 s.",
+                "2": "Après avoir touché un ennemi avec son <color=#FFFFFF>contre d'esquive</color> ou son <color=#FFFFFF>soutien rapide</color>, les DGT infligés par Nekomata augmentent de <color=#2BAD00>35 %</color> pendant 6 s.",
+                "3": "Après avoir touché un ennemi avec son <color=#FFFFFF>contre d'esquive</color> ou son <color=#FFFFFF>soutien rapide</color>, les DGT infligés par Nekomata augmentent de <color=#2BAD00>40 %</color> pendant 6 s.",
+                "4": "Après avoir touché un ennemi avec son <color=#FFFFFF>contre d'esquive</color> ou son <color=#FFFFFF>soutien rapide</color>, les DGT infligés par Nekomata augmentent de <color=#2BAD00>45 %</color> pendant 6 s.",
+                "5": "Après avoir touché un ennemi avec son <color=#FFFFFF>contre d'esquive</color> ou son <color=#FFFFFF>soutien rapide</color>, les DGT infligés par Nekomata augmentent de <color=#2BAD00>50 %</color> pendant 6 s.",
+                "6": "Après avoir touché un ennemi avec son <color=#FFFFFF>contre d'esquive</color> ou son <color=#FFFFFF>soutien rapide</color>, les DGT infligés par Nekomata augmentent de <color=#2BAD00>55 %</color> pendant 6 s.",
+                "7": "Après avoir touché un ennemi avec son <color=#FFFFFF>contre d'esquive</color> ou son <color=#FFFFFF>soutien rapide</color>, les DGT infligés par Nekomata augmentent de <color=#2BAD00>60 %</color> pendant 6 s."
+            }
+        },
+        "MathSkill": {
+            "Title": "Capacité supplémentaire : Pas feutrés",
+            "Description": "Lorsqu'un autre personnage de votre escouade est du même attribut ou de la même faction que Nekomata :\nLorsque n'importe quel membre de l'escouade inflige <color=#F0D12B>Assaut</color> à un ennemi, les DGT de la prochaine <color=#FFFFFF>attaque spéciale EX</color> de Nekomata augmentent de 35 %. Effet cumulable 2 fois."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "102100001": {
+                "Title": "Attaque normale : Entaille féline",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pour activer :\nDéclenche jusqu'à 5 entailles, infligeant des <color=#F0D12B>DGT physiques</color>.\nLorsque le dernier coup est asséné, il a 33,33 % des chances d'être répété 3 fois."
+            },
+            "102100002": {
+                "Title": "Attaque normale : Lame cramoisie",
+                "Description": "Maintenez <IconMap:Icon_Normal> appuyé pendant les 3 premiers coups de l'<color=#FFFFFF>attaque normale</color> de Nekomata pour activer :\nEntaille les ennemis situés en face tout en les traversant, et inflige des <color=#F0D12B>DGT physiques</color>.\nLorsque cette attaque est lancée, elle a 33,33 % de chance d'être répétée 3 fois."
+            },
+            "102110001": {
+                "Title": "Attaque normale : Entaille féline"
+            },
+            "102110002": {
+                "Description": "Multiplicateur de DGT du 1er coup",
+                "Param": "{Skill:1021001, Prop:1001}"
+            },
+            "102110003": {
+                "Description": "Multiplicateur de DGT du 2e coup",
+                "Param": "{Skill:1021002, Prop:1001}"
+            },
+            "102110004": {
+                "Description": "Multiplicateur de DGT du 3e coup",
+                "Param": "{Skill:1021003, Prop:1001}"
+            },
+            "102110005": {
+                "Description": "Multiplicateur de DGT du 4e coup",
+                "Param": "{Skill:1021004, Prop:1001}"
+            },
+            "102110006": {
+                "Description": "Multiplicateur de DGT du 5e coup",
+                "Param": "{Skill:1021005, Prop:1001}"
+            },
+            "102110007": {
+                "Description": "Multiplicateur de confusion du 1er coup",
+                "Param": "{Skill:1021001, Prop:1002}"
+            },
+            "102110008": {
+                "Description": "Multiplicateur de confusion du 2e coup",
+                "Param": "{Skill:1021002, Prop:1002}"
+            },
+            "102110009": {
+                "Description": "Multiplicateur de confusion du 3e coup",
+                "Param": "{Skill:1021003, Prop:1002}"
+            },
+            "102110010": {
+                "Description": "Multiplicateur de confusion du 4e coup",
+                "Param": "{Skill:1021004, Prop:1002}"
+            },
+            "102110011": {
+                "Description": "Multiplicateur de confusion du 5e coup",
+                "Param": "{Skill:1021005, Prop:1002}"
+            },
+            "102110012": {
+                "Title": "Attaque normale : Lame cramoisie"
+            },
+            "102110013": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1021006, Prop:1001}"
+            },
+            "102110014": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1021006, Prop:1002}"
+            }
+        },
+        "1": {
+            "102100003": {
+                "Title": "Attaque spéciale : Attaque-surprise",
+                "Description": "Appuyez sur <IconMap:Icon_Special> pour activer :\nDéclenche une frappe descendante qui inflige des <color=#F0D12B>DGT physiques</color>.\nLe niveau de la RÉS à l'interruption est augmenté pendant l'utilisation de cette compétence."
+            },
+            "102100004": {
+                "Title": "Attaque spéciale EX : Super attaque-surprise !",
+                "Description": "Avec suffisamment d'énergie, appuyez sur <IconMap:Icon_SpecialReady> pour activer :\nLance une puissante entaille descendante qui inflige d'importants <color=#F0D12B>DGT physiques</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "102110015": {
+                "Title": "Attaque spéciale : Attaque-surprise"
+            },
+            "102110016": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1021007, Prop:1001}"
+            },
+            "102110017": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1021007, Prop:1002}"
+            },
+            "102110018": {
+                "Title": "Attaque spéciale EX : Super attaque-surprise !"
+            },
+            "102110019": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1021008, Prop:1001}"
+            },
+            "102110020": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1021008, Prop:1002}"
+            },
+            "102110021": {
+                "Description": "Coût en énergie",
+                "Param": "40 pts"
+            }
+        },
+        "2": {
+            "102100005": {
+                "Title": "Esquive : Attrape-miaou si tu peux~",
+                "Description": "Appuyez sur <IconMap:Icon_Evade> pour activer :\nUne esquive rapide.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "102100006": {
+                "Title": "Attaque de bond : Par ici !",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pendant une esquive pour activer :\nEntaille les ennemis situés en face, infligeant des <color=#F0D12B>DGT physiques</color>."
+            },
+            "102100007": {
+                "Title": "Contre d'esquive : Griffes spectrales",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pendant une <color=#FFFFFF>esquive parfaite</color> pour activer :\nEntaille les ennemis situés en face, infligeant des <color=#F0D12B>DGT physiques</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "102110022": {
+                "Title": "Attaque de bond : Par ici !"
+            },
+            "102110023": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1021009, Prop:1001}"
+            },
+            "102110024": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1021009, Prop:1002}"
+            },
+            "102110025": {
+                "Title": "Contre d'esquive : Griffes spectrales"
+            },
+            "102110026": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1021010, Prop:1001}"
+            },
+            "102110027": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1021010, Prop:1002}"
+            }
+        },
+        "3": {
+            "102100008": {
+                "Title": "Enchaînement : Cercle de griffes",
+                "Description": "Lors du déclenchement d'un <color=#FFFFFF>enchaînement</color>, sélectionnez le personnage pour activer :\nLance de puissantes entailles sur les ennemis situés dans une large zone en face, infligeant d'importants <color=#F0D12B>DGT physiques</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "102100009": {
+                "Title": "Ultime : Déferlante de griffes",
+                "Description": "Lorsque le niveau de décibels est au <color=#FFFFFF>Maximum</color>, appuyez sur <IconMap:Icon_UltimateReady> pour activer :\nDéclenche de puissantes entailles sur les ennemis situés dans une large zone en face, infligeant d'importants <color=#F0D12B>DGT physiques</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "102110028": {
+                "Title": "Enchaînement : Cercle de griffes"
+            },
+            "102110029": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1021011, Prop:1001}"
+            },
+            "102110030": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1021011, Prop:1002}"
+            },
+            "102110031": {
+                "Title": "Ultime : Déferlante de griffes"
+            },
+            "102110032": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1021012, Prop:1001}"
+            },
+            "102110033": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1021012, Prop:1002}"
+            }
+        },
+        "6": {
+            "102100011": {
+                "Title": "Soutien rapide : Patoune",
+                "Description": "Lorsque le personnage contrôlé est projeté, appuyez sur <IconMap:Icon_Switch> pour activer :\nEntaille les ennemis situés en face, infligeant des <color=#F0D12B>DGT physiques</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "102100012": {
+                "Title": "Soutien défensif : Défense acharnée",
+                "Description": "Lorsque le personnage sur le terrain est sur le point d'être attaqué, appuyez sur <IconMap:Icon_Switch> pour activer :\nPare l'attaque de l'ennemi et provoque une confusion importante.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "102100013": {
+                "Title": "Soutien de suivi : Frappe d'ombre",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> après un <color=#FFFFFF>soutien défensif</color> pour activer :\nFonce et entaille les ennemis situés en face, infligeant des <color=#F0D12B>DGT physiques</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "102110034": {
+                "Title": "Soutien rapide : Patoune"
+            },
+            "102110035": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1021013, Prop:1001}"
+            },
+            "102110036": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1021013, Prop:1002}"
+            },
+            "102110037": {
+                "Title": "Soutien défensif : Défense acharnée"
+            },
+            "102110038": {
+                "Description": "Multiplicateur de confusion de défense légère",
+                "Param": "{Skill:1021014, Prop:1002}"
+            },
+            "102110039": {
+                "Description": "Multiplicateur de confusion de défense lourde",
+                "Param": "{Skill:1021015, Prop:1002}"
+            },
+            "102110040": {
+                "Description": "Multiplicateur de confusion de défense en chaîne",
+                "Param": "{Skill:1021016, Prop:1002}"
+            },
+            "102110041": {
+                "Title": "Soutien de suivi : Frappe d'ombre"
+            },
+            "102110042": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1021017, Prop:1001}"
+            },
+            "102110043": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1021017, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1021001": {
+            "DamageValue": 5520,
+            "DamageGrowth": 510,
+            "DazeValue": 1800,
+            "DazeGrowth": 90
+        },
+        "1021002": {
+            "DamageValue": 6260,
+            "DamageGrowth": 570,
+            "DazeValue": 3710,
+            "DazeGrowth": 170
+        },
+        "1021003": {
+            "DamageValue": 7270,
+            "DamageGrowth": 670,
+            "DazeValue": 4670,
+            "DazeGrowth": 220
+        },
+        "1021004": {
+            "DamageValue": 17020,
+            "DamageGrowth": 1550,
+            "DazeValue": 10370,
+            "DazeGrowth": 480
+        },
+        "1021005": {
+            "DamageValue": 12360,
+            "DamageGrowth": 1130,
+            "DazeValue": 5890,
+            "DazeGrowth": 270
+        },
+        "1021006": {
+            "DamageValue": 7180,
+            "DamageGrowth": 660,
+            "DazeValue": 5890,
+            "DazeGrowth": 270
+        },
+        "1021007": {
+            "DamageValue": 4730,
+            "DamageGrowth": 430,
+            "DazeValue": 4730,
+            "DazeGrowth": 220
+        },
+        "1021008": {
+            "DamageValue": 53970,
+            "DamageGrowth": 4910,
+            "DazeValue": 45540,
+            "DazeGrowth": 2070
+        },
+        "1021009": {
+            "DamageValue": 3510,
+            "DamageGrowth": 320,
+            "DazeValue": 1760,
+            "DazeGrowth": 80
+        },
+        "1021010": {
+            "DamageValue": 22790,
+            "DamageGrowth": 2080,
+            "DazeValue": 19950,
+            "DazeGrowth": 910
+        },
+        "1021011": {
+            "DamageValue": 53620,
+            "DamageGrowth": 4880,
+            "DazeValue": 15920,
+            "DazeGrowth": 730
+        },
+        "1021012": {
+            "DamageValue": 157110,
+            "DamageGrowth": 14290,
+            "DazeValue": 11810,
+            "DazeGrowth": 540
+        },
+        "1021013": {
+            "DamageValue": 9450,
+            "DamageGrowth": 860,
+            "DazeValue": 9450,
+            "DazeGrowth": 430
+        },
+        "1021014": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 25900,
+            "DazeGrowth": 1180
+        },
+        "1021015": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 32730,
+            "DazeGrowth": 1490
+        },
+        "1021016": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15930,
+            "DazeGrowth": 730
+        },
+        "1021017": {
+            "DamageValue": 30040,
+            "DamageGrowth": 2740,
+            "DazeValue": 25810,
+            "DazeGrowth": 1180
+        }
+    }
+}

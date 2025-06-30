@@ -1,0 +1,419 @@
+{
+    "Name": "比利",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "閃亮登場",
+            "Description": "<color=#FFFFFF>[衝刺攻擊]</color>或<color=#FFFFFF>[閃避反擊]</color>命中敵人時，比利額外回復2.7點能量，5秒內最多觸發一次。",
+            "Lore": "「身為反派，你們也太老實了！」\n「就像為了配合主角的登場，故意安排的固定標靶一樣！」"
+        },
+        "2": {
+            "Title": "遊鬥射術",
+            "Description": "<color=#FFFFFF>[閃避反擊]</color>造成的傷害提升25%。<color=#FFFFFF>[普通攻擊]</color>中的翻滾射擊將被視為閃避動作，在招式發動期間獲得無敵效果，並且能夠觸發<color=#FFFFFF>[極限閃避]</color>。翻滾射擊觸發<color=#FFFFFF>[極限閃避]</color>時，將自動銜接<color=#FFFFFF>[閃避反擊]</color>。",
+            "Lore": "「星徽騎士從來不會逃避危險，那叫做戰術遊走射擊！」\n——星徽閃耀-交流區，會員「哦夢中的莫妮卡」留言。"
+        },
+        "3": {
+            "Title": "星徽騎士的教導",
+            "Description": "<color=#FFFFFF>[普通攻擊]</color>、<color=#FFFFFF>[閃避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[連攜技]</color>技能等級+2",
+            "Lore": "絕不懈怠訓練，絕不停止進步！這是星徽騎士宣導的精神。比利真的相信，而且真的在遵守。"
+        },
+        "4": {
+            "Title": "星徽-懲戒彈藥",
+            "Description": "<color=#FFFFFF>[強化特殊技]</color>命中敵人時，招式的暴擊率隨自身與目標之間的距離而提升。比利與目標距離越近，提升效果越顯著，最高提升32%。",
+            "Lore": "比利獨創的爆破型子彈，\n在近身戰時有著驚人的威力。\n不過比利改造子彈的本意，是讓開槍時的效果表現更加帥氣。"
+        },
+        "5": {
+            "Title": "失落技術構造體",
+            "Description": "<color=#FFFFFF>[普通攻擊]</color>、<color=#FFFFFF>[閃避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[連攜技]</color>技能等級+2",
+            "Lore": "未知的精密元件和獨特的構造設計帶給了比利遠超同儕的性能……和維修保養費用。"
+        },
+        "6": {
+            "Title": "星徽-英雄時刻",
+            "Description": "累計命中敵人10次或觸發<color=#FFFFFF>[極限閃避]</color>時，比利造成的傷害提升6%，最多疊加5層，被敵方擊退或擊飛後增益效果重置。",
+            "Lore": "「呼~感覺來了！安比你讓開，現在是我的主場！」\n「呃，安比，能幫忙放一下星徽騎士的片頭曲嗎？」\n——狡兔屋內部「十大禁句」評選，安比的提案。"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "核心被動：穩定持槍",
+            "DescriptionByLevel": {
+                "1": "比利在<color=#FFFFFF>[普通攻擊]</color>中進入蹲姿射擊後，自身造成的傷害提升<color=#2BAD00>25%</color>，進行移動、回到待機、被擊退或被擊飛時增益效果結束。",
+                "2": "比利在<color=#FFFFFF>[普通攻擊]</color>中進入蹲姿射擊後，自身造成的傷害提升<color=#2BAD00>29.1%</color>，進行移動、回到待機、被擊退或被擊飛時增益效果結束。",
+                "3": "比利在<color=#FFFFFF>[普通攻擊]</color>中進入蹲姿射擊後，自身造成的傷害提升<color=#2BAD00>33.3%</color>，進行移動、回到待機、被擊退或被擊飛時增益效果結束。",
+                "4": "比利在<color=#FFFFFF>[普通攻擊]</color>中進入蹲姿射擊後，自身造成的傷害提升<color=#2BAD00>37.5%</color>，進行移動、回到待機、被擊退或被擊飛時增益效果結束。",
+                "5": "比利在<color=#FFFFFF>[普通攻擊]</color>中進入蹲姿射擊後，自身造成的傷害提升<color=#2BAD00>41.6%</color>，進行移動、回到待機、被擊退或被擊飛時增益效果結束。",
+                "6": "比利在<color=#FFFFFF>[普通攻擊]</color>中進入蹲姿射擊後，自身造成的傷害提升<color=#2BAD00>45.8%</color>，進行移動、回到待機、被擊退或被擊飛時增益效果結束。",
+                "7": "比利在<color=#FFFFFF>[普通攻擊]</color>中進入蹲姿射擊後，自身造成的傷害提升<color=#2BAD00>50%</color>，進行移動、回到待機、被擊退或被擊飛時增益效果結束。"
+            }
+        },
+        "MathSkill": {
+            "Title": "額外能力：騎士戰隊",
+            "Description": "隊伍中包含與自身屬性或陣營相同的角色時觸發：\n比利發動<color=#FFFFFF>[連攜技]</color>後，下次發動<color=#FFFFFF>[終結技]</color>時，招式造成的傷害提升50%，最多疊加2次，發動<color=#FFFFFF>[終結技]</color>後效果重置。"
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "108100001": {
+                "Title": "普通攻擊：火力全開",
+                "Description": "點按 <IconMap:Icon_Normal> 發動：\n對前方敵人發動穿透攻擊，造成<color=#F0D12B>物理傷害</color>。\n連點或長按時，可以進入蹲姿射擊，延長射擊的持續時間。\n蹲姿射擊途中拖曳{LAYOUT_CONSOLECONTROLLER#操作桿}{LAYOUT_FALLBACK#搖桿}時，可以發動翻滾射擊，調整身位並造成<color=#F0D12B>物理傷害</color>。\n蹲姿射擊途中停止連點或鬆開長按時，對前方敵人發動終結射擊，造成<color=#F0D12B>物理傷害</color>。"
+            },
+            "108110001": {
+                "Title": "普通攻擊：火力全開"
+            },
+            "108110002": {
+                "Description": "站姿開火傷害倍率",
+                "Param": "{Skill:1081002, Prop:1001}"
+            },
+            "108110003": {
+                "Description": "站姿子彈傷害倍率",
+                "Param": "{Skill:1081003, Prop:1001}"
+            },
+            "108110004": {
+                "Description": "蹲姿開火傷害倍率",
+                "Param": "{Skill:1081004, Prop:1001}"
+            },
+            "108110005": {
+                "Description": "蹲姿子彈傷害倍率",
+                "Param": "{Skill:1081007, Prop:1001}"
+            },
+            "108110006": {
+                "Description": "翻滾射擊傷害倍率",
+                "Param": "{Skill:1081004, Prop:1001}"
+            },
+            "108110007": {
+                "Description": "終結射擊傷害倍率",
+                "Param": "{Skill:1081008, Prop:1001}"
+            },
+            "108110008": {
+                "Description": "站姿開火失衡倍率",
+                "Param": "{Skill:1081002, Prop:1002}"
+            },
+            "108110009": {
+                "Description": "站姿子彈失衡倍率",
+                "Param": "{Skill:1081003, Prop:1002}"
+            },
+            "108110010": {
+                "Description": "蹲姿開火失衡倍率",
+                "Param": "{Skill:1081004, Prop:1002}"
+            },
+            "108110011": {
+                "Description": "蹲姿子彈失衡倍率",
+                "Param": "{Skill:1081007, Prop:1002}"
+            },
+            "108110012": {
+                "Description": "翻滾射擊失衡倍率",
+                "Param": "{Skill:1081004, Prop:1002}"
+            },
+            "108110013": {
+                "Description": "終結射擊失衡倍率",
+                "Param": "{Skill:1081008, Prop:1002}"
+            }
+        },
+        "1": {
+            "108100002": {
+                "Title": "特殊技：乖乖站好",
+                "Description": "點按 <IconMap:Icon_Special> 發動：\n向前方直線區域進行至多三段的穿透攻擊，造成<color=#F0D12B>物理傷害</color>。\n招式發動期間抗打斷等級提升。"
+            },
+            "108100003": {
+                "Title": "強化特殊技：清場時間",
+                "Description": "能量足夠時，點按 <IconMap:Icon_SpecialReady> 發動：\n向前方直線區域進行強力穿透攻擊，造成大量<color=#F0D12B>物理傷害</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "108110014": {
+                "Title": "特殊技：乖乖站好"
+            },
+            "108110015": {
+                "Description": "一段傷害倍率",
+                "Param": "{Skill:1081010, Prop:1001}"
+            },
+            "108110016": {
+                "Description": "二段傷害倍率",
+                "Param": "{Skill:1081011, Prop:1001}"
+            },
+            "108110017": {
+                "Description": "三段傷害倍率",
+                "Param": "{Skill:1081012, Prop:1001}"
+            },
+            "108110018": {
+                "Description": "一段失衡倍率",
+                "Param": "{Skill:1081010, Prop:1002}"
+            },
+            "108110019": {
+                "Description": "二段失衡倍率",
+                "Param": "{Skill:1081011, Prop:1002}"
+            },
+            "108110020": {
+                "Description": "三段失衡倍率",
+                "Param": "{Skill:1081012, Prop:1002}"
+            },
+            "108110021": {
+                "Title": "強化特殊技：清場時間"
+            },
+            "108110022": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1081013, Prop:1001}"
+            },
+            "108110023": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1081013, Prop:1002}"
+            },
+            "108110024": {
+                "Description": "能量消耗",
+                "Param": "60點"
+            }
+        },
+        "2": {
+            "108100004": {
+                "Title": "閃避：好險好險",
+                "Description": "點按 <IconMap:Icon_Evade> 發動：\n快速地衝刺閃避。\n招式發動期間擁有無敵效果。"
+            },
+            "108100005": {
+                "Title": "衝刺攻擊：星-徽-制-裁",
+                "Description": "拖曳{LAYOUT_CONSOLECONTROLLER#操作桿}{LAYOUT_FALLBACK#搖桿}發動閃避後，點按 <IconMap:Icon_Normal> 發動：\n向周圍大範圍區域進行穿透攻擊，造成<color=#F0D12B>物理傷害</color>。\n未拖曳{LAYOUT_CONSOLECONTROLLER#操作桿}{LAYOUT_FALLBACK#搖桿}發動閃避後，點按 <IconMap:Icon_Normal> 發動：\n向前方直線區域進行穿透攻擊，造成<color=#F0D12B>物理傷害</color>。"
+            },
+            "108100006": {
+                "Title": "閃避反擊：公平決鬥",
+                "Description": "觸發<color=#FFFFFF>[極限閃避]</color>後，點按 <IconMap:Icon_Normal> 發動：\n對前方敵人發動穿透攻擊，造成<color=#F0D12B>物理傷害</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "108110025": {
+                "Title": "衝刺攻擊：星-徽-制-裁"
+            },
+            "108110026": {
+                "Description": "周身射擊傷害倍率",
+                "Param": "{Skill:1081016, Prop:1001}"
+            },
+            "108110027": {
+                "Description": "直線射擊傷害倍率",
+                "Param": "{Skill:1081014, Prop:1001}"
+            },
+            "108110028": {
+                "Description": "周身射擊失衡倍率",
+                "Param": "{Skill:1081016, Prop:1002}"
+            },
+            "108110029": {
+                "Description": "直線射擊失衡倍率",
+                "Param": "{Skill:1081014, Prop:1002}"
+            },
+            "108110030": {
+                "Title": "閃避反擊：公平決鬥"
+            },
+            "108110031": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1081017, Prop:1001}"
+            },
+            "108110032": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1081017, Prop:1002}"
+            }
+        },
+        "3": {
+            "108100007": {
+                "Title": "連攜技：星徽榮耀幻影",
+                "Description": "觸發<color=#FFFFFF>[連攜技]</color>時，選擇對應角色發動：\n對周圍大範圍敵人發動強力穿透攻擊，造成大量<color=#F0D12B>物理傷害</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "108100008": {
+                "Title": "終結技：星徽在此閃耀",
+                "Description": "喧響等級達到<color=#FFFFFF>[極]</color>時，點按 <IconMap:Icon_UltimateReady> 發動：\n對周圍大範圍敵人發動強力穿透攻擊，造成大量<color=#F0D12B>物理傷害</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "108110033": {
+                "Title": "連攜技：星徽榮耀幻影"
+            },
+            "108110034": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1081018, Prop:1001}"
+            },
+            "108110035": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1081018, Prop:1002}"
+            },
+            "108110036": {
+                "Title": "終結技：星徽在此閃耀"
+            },
+            "108110037": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1081019, Prop:1001}"
+            },
+            "108110038": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1081019, Prop:1002}"
+            }
+        },
+        "6": {
+            "108100010": {
+                "Title": "快速支援：星徽-同伴之力",
+                "Description": "目前操作中的角色被擊飛時，點按 <IconMap:Icon_Switch> 發動：\n對前方敵人發動穿透攻擊，造成<color=#F0D12B>物理傷害</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "108100011": {
+                "Title": "回避支援：閃轉步伐",
+                "Description": "前場角色即將被攻擊時，點按 <IconMap:Icon_Switch> 發動：\n回避敵人的攻擊，並觸發<color=#FFFFFF>[極限視域]</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "108100012": {
+                "Title": "支援突擊：要害射擊",
+                "Description": "發動<color=#FFFFFF>[回避支援]</color>後，點按 <IconMap:Icon_Normal> 發動：\n對前方大範圍敵人發動穿透攻擊，造成<color=#F0D12B>物理傷害</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "108110039": {
+                "Title": "快速支援：星徽-同伴之力"
+            },
+            "108110040": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1081020, Prop:1001}"
+            },
+            "108110041": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1081020, Prop:1002}"
+            },
+            "108110042": {
+                "Title": "支援突擊：要害射擊"
+            },
+            "108110043": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1081021, Prop:1001}"
+            },
+            "108110044": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1081021, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1081001": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1081002": {
+            "DamageValue": 6800,
+            "DamageGrowth": 620,
+            "DazeValue": 5440,
+            "DazeGrowth": 250
+        },
+        "1081003": {
+            "DamageValue": 760,
+            "DamageGrowth": 70,
+            "DazeValue": 610,
+            "DazeGrowth": 30
+        },
+        "1081004": {
+            "DamageValue": 6180,
+            "DamageGrowth": 570,
+            "DazeValue": 5470,
+            "DazeGrowth": 250
+        },
+        "1081005": {
+            "DamageValue": 6180,
+            "DamageGrowth": 570,
+            "DazeValue": 5470,
+            "DazeGrowth": 250
+        },
+        "1081006": {
+            "DamageValue": 6180,
+            "DamageGrowth": 570,
+            "DazeValue": 5470,
+            "DazeGrowth": 250
+        },
+        "1081007": {
+            "DamageValue": 1270,
+            "DamageGrowth": 120,
+            "DazeValue": 890,
+            "DazeGrowth": 50
+        },
+        "1081008": {
+            "DamageValue": 4950,
+            "DamageGrowth": 450,
+            "DazeValue": 5520,
+            "DazeGrowth": 260
+        },
+        "1081009": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1081010": {
+            "DamageValue": 2420,
+            "DamageGrowth": 220,
+            "DazeValue": 2420,
+            "DazeGrowth": 110
+        },
+        "1081011": {
+            "DamageValue": 5170,
+            "DamageGrowth": 470,
+            "DazeValue": 5170,
+            "DazeGrowth": 240
+        },
+        "1081012": {
+            "DamageValue": 5010,
+            "DamageGrowth": 460,
+            "DazeValue": 5010,
+            "DazeGrowth": 230
+        },
+        "1081013": {
+            "DamageValue": 54380,
+            "DamageGrowth": 4950,
+            "DazeValue": 43950,
+            "DazeGrowth": 2000
+        },
+        "1081014": {
+            "DamageValue": 3900,
+            "DamageGrowth": 360,
+            "DazeValue": 1950,
+            "DazeGrowth": 90
+        },
+        "1081015": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1081016": {
+            "DamageValue": 6300,
+            "DamageGrowth": 580,
+            "DazeValue": 6300,
+            "DazeGrowth": 290
+        },
+        "1081017": {
+            "DamageValue": 22140,
+            "DamageGrowth": 2020,
+            "DazeValue": 19340,
+            "DazeGrowth": 880
+        },
+        "1081018": {
+            "DamageValue": 73520,
+            "DamageGrowth": 6690,
+            "DazeValue": 19660,
+            "DazeGrowth": 900
+        },
+        "1081019": {
+            "DamageValue": 159770,
+            "DamageGrowth": 14530,
+            "DazeValue": 19060,
+            "DazeGrowth": 870
+        },
+        "1081020": {
+            "DamageValue": 9340,
+            "DamageGrowth": 850,
+            "DazeValue": 9340,
+            "DazeGrowth": 430
+        },
+        "1081021": {
+            "DamageValue": 38880,
+            "DamageGrowth": 3540,
+            "DazeValue": 34120,
+            "DazeGrowth": 1560
+        },
+        "1081023": {
+            "DamageValue": 15070,
+            "DamageGrowth": 1370,
+            "DazeValue": 4260,
+            "DazeGrowth": 200
+        },
+        "1081025": {
+            "DamageValue": 108750,
+            "DamageGrowth": 9890,
+            "DazeValue": 46330,
+            "DazeGrowth": 2110
+        }
+    }
+}

@@ -1,0 +1,367 @@
+{
+    "Name": "Anby",
+    "ElementTypes": [
+        "Elec"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Rapid Charge Mode",
+            "Description": "เมื่อ Slash ของการ <color=#FFFFFF>[โจมตีปกติ]</color> ขั้นที่ 4 ถูกศัตรู\nประสิทธิภาพการรับพลังงาน ของ Anby จะเพิ่มขึ้น 12% ต่อเนื่อง 30 วินาที",
+            "Lore": "\"ชาร์จด่วนหนึ่งนาที ลุยได้ครึ่งชั่วโมง!\"\nผู้เชี่ยวชาญด้านการพัฒนาฟังก์ชันโมดูลให้อาวุธ รับประกันไว้ว่าอย่างนี้...\nแล้วผลการใช้งานก็เป็นจริงอย่างที่เขาพูด"
+        },
+        "2": {
+            "Title": "Precision Discharge",
+            "Description": "เมื่อ <color=#FFFFFF>[โจมตีปกติ: Thunderbolt]</color> ถูกศัตรูที่อยู่ในสภาวะสตั๊น\nการโจมตีจะสร้างความเสียหายเพิ่มขึ้น 30%;\nเมื่อ <color=#FFFFFF>[สกิลพิเศษ-EX]</color> ถูกศัตรูที่ไม่ได้อยู่ในสภาวะสตั๊น\nการโจมตีจะสร้าง Daze เพิ่มขึ้น 10%",
+            "Lore": "\"ถ้าโดนไฟช็อต จะสลบเอานะ\"\nหญิงสาวมองศัตรูที่สลบอยู่ตรงหน้าด้วยสีหน้าเฉยชา และพูดขึ้นมาอีกประโยคหนึ่งว่า:\n\"ในหนังก็แสดงกันแบบนี้แหละ\""
+        },
+        "3": {
+            "Title": "Well-Disciplined",
+            "Description": "การ <color=#FFFFFF>[โจมตีปกติ]</color>, <color=#FFFFFF>[หลบหลีก]</color>, <color=#FFFFFF>[สกิลซัปพอร์ต]</color>, <color=#FFFFFF>[สกิลพิเศษ]</color>, <color=#FFFFFF>[สกิลต่อเนื่อง]</color> มีเลเวลสกิล +2",
+            "Lore": "วิ่ง ควงอาวุธ เคลื่อนไหวราวกับฟ้าผ่า เด็กสาวไม่ใช่นักสำรวจ Hollow มือใหม่ แต่เป็นผู้เชี่ยวชาญในเรื่องนี้"
+        },
+        "4": {
+            "Title": "Conducting Charge",
+            "Description": "เมื่อปล่อย <color=#FFFFFF>[สกิลต่อเนื่อง]</color> หรือ <color=#FFFFFF>[สกิลอัลติเมท]</color>\nจะฟื้นฟูพลังงานให้ตัวละครธาตุไฟฟ้าที่อยู่นอกสนาม 3 แต้ม;\nทุก 12% ของประสิทธิภาพการรับพลังงานของ Anby จะทำให้ปริมาณการฟื้นฟูเพิ่มขึ้นอีก 2 แต้ม (เพิ่มขึ้นได้มากสุด 6 แต้ม)",
+            "Lore": "การต่อสู้เพียงลำพังไม่ใช่วิธีแก้ปัญหาระยะยาว Hollow Raider ที่มีประสบการณ์จะสร้างโอกาส ให้เพื่อนร่วมทีมในเวลาที่เหมาะสมระหว่างการต่อสู้"
+        },
+        "5": {
+            "Title": "Street Experience",
+            "Description": "การ <color=#FFFFFF>[โจมตีปกติ]</color>, <color=#FFFFFF>[หลบหลีก]</color>, <color=#FFFFFF>[สกิลซัปพอร์ต]</color>, <color=#FFFFFF>[สกิลพิเศษ]</color>, <color=#FFFFFF>[สกิลต่อเนื่อง]</color> มีเลเวลสกิล +2",
+            "Lore": "งานของ Cunning Hares นั้นไม่เพียงแต่ช่วยยกระดับคุณภาพจิตใจ แต่ยัง (ถูกบังคับ) ให้เพิ่มสมรรถภาพทางกายด้วย"
+        },
+        "6": {
+            "Title": "Charging Field",
+            "Description": "เมื่อปล่อย <color=#FFFFFF>[สกิลพิเศษ-EX]</color> Anby จะได้รับ Charge 8 ชั้น\n(สูงสุด 8 ชั้น);\nเมื่อการ <color=#FFFFFF>[โจมตีปกติ]</color> หรือ <color=#FFFFFF>[พุ่งโจมตี]</color> ถูกศัตรู\nจะใช้ Charge 1 ชั้น เพื่อทำให้ความเสียหายที่เกิดจาก\nท่าในขณะนั้นเพิ่มขึ้น 45% แต้ม",
+            "Lore": "ประกายสายฟ้าระยิบระยับที่ปลายนิ้วมือของหญิงสาว\nหญิงสาวเงยหน้าขึ้น ในแววตาเต็มไปด้วยความมุ่งมั่นที่เกินอายุของตัวเอง\nสักวันหนึ่ง เธออาจจะได้เป็นคนที่ ควบคุมประกายสายฟ้าเหล่านี้อย่างถ่องแท้ก็ได้"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "พาสซีฟหลัก: Fluctuating Voltage",
+            "DescriptionByLevel": {
+                "1": "หลังจาก Anby ใช้การ <color=#FFFFFF>[โจมตีปกติ]</color> ขั้นที่ 3\nเมื่อปล่อย <color=#FFFFFF>[โจมตีปกติ: Thunderbolt]</color>, <color=#FFFFFF>[สกิลพิเศษ]</color> หรือ <color=#FFFFFF>[สกิลพิเศษ-EX]</color>\nท่าจะสร้าง Daze เพิ่มขึ้น <color=#2BAD00>32%</color>",
+                "2": "หลังจาก Anby ใช้การ <color=#FFFFFF>[โจมตีปกติ]</color> ขั้นที่ 3\nเมื่อปล่อย <color=#FFFFFF>[โจมตีปกติ: Thunderbolt]</color>, <color=#FFFFFF>[สกิลพิเศษ]</color> หรือ <color=#FFFFFF>[สกิลพิเศษ-EX]</color>\nท่าจะสร้าง Daze เพิ่มขึ้น <color=#2BAD00>37.3%</color>",
+                "3": "หลังจาก Anby ใช้การ <color=#FFFFFF>[โจมตีปกติ]</color> ขั้นที่ 3\nเมื่อปล่อย <color=#FFFFFF>[โจมตีปกติ: Thunderbolt]</color>, <color=#FFFFFF>[สกิลพิเศษ]</color> หรือ <color=#FFFFFF>[สกิลพิเศษ-EX]</color>\nท่าจะสร้าง Daze เพิ่มขึ้น <color=#2BAD00>42.6%</color>",
+                "4": "หลังจาก Anby ใช้การ <color=#FFFFFF>[โจมตีปกติ]</color> ขั้นที่ 3\nเมื่อปล่อย <color=#FFFFFF>[โจมตีปกติ: Thunderbolt]</color>, <color=#FFFFFF>[สกิลพิเศษ]</color> หรือ <color=#FFFFFF>[สกิลพิเศษ-EX]</color>\nท่าจะสร้าง Daze เพิ่มขึ้น <color=#2BAD00>48%</color>",
+                "5": "หลังจาก Anby ใช้การ <color=#FFFFFF>[โจมตีปกติ]</color> ขั้นที่ 3\nเมื่อปล่อย <color=#FFFFFF>[โจมตีปกติ: Thunderbolt]</color>, <color=#FFFFFF>[สกิลพิเศษ]</color> หรือ <color=#FFFFFF>[สกิลพิเศษ-EX]</color>\nท่าจะสร้าง Daze เพิ่มขึ้น <color=#2BAD00>53.3%</color>",
+                "6": "หลังจาก Anby ใช้การ <color=#FFFFFF>[โจมตีปกติ]</color> ขั้นที่ 3\nเมื่อปล่อย <color=#FFFFFF>[โจมตีปกติ: Thunderbolt]</color>, <color=#FFFFFF>[สกิลพิเศษ]</color> หรือ <color=#FFFFFF>[สกิลพิเศษ-EX]</color>\nท่าจะสร้าง Daze เพิ่มขึ้น <color=#2BAD00>58.6%</color>",
+                "7": "หลังจาก Anby ใช้การ <color=#FFFFFF>[โจมตีปกติ]</color> ขั้นที่ 3\nเมื่อปล่อย <color=#FFFFFF>[โจมตีปกติ: Thunderbolt]</color>, <color=#FFFFFF>[สกิลพิเศษ]</color> หรือ <color=#FFFFFF>[สกิลพิเศษ-EX]</color>\nท่าจะสร้าง Daze เพิ่มขึ้น <color=#2BAD00>64%</color>"
+            }
+        },
+        "MathSkill": {
+            "Title": "ความสามารถเพิ่มเติม: Parallel Connection",
+            "Description": "เมื่อในทีมมีตัวละครธาตุเดียวกัน หรืออยู่ฝ่ายเดียวกันกับตัวเอง:\nเมื่อ Anby ใช้ <color=#FFFFFF>[หลบหลีกสวนกลับ]</color> ถูกศัตรู จะฟื้นฟูพลังงานเพิ่มเติม 7.2 แต้ม โดยที่ภายใน 5 วินาที จะเกิดขึ้นได้มากสุดหนึ่งครั้ง"
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "101100001": {
+                "Title": "โจมตีปกติ: Turbo Volt",
+                "Description": "กด <IconMap:Icon_Normal> เพื่อ\nใช้ Slash ไปข้างหน้ามากสุด 4 ขั้น โดยที่สามขั้นแรก จะสร้าง<color=#F0D12B>ความเสียหายกายภาพ</color>\nและขั้นที่ 4 จะสร้าง<color=#2EB6FF>ความเสียหายธาตุไฟฟ้า</color>"
+            },
+            "101100002": {
+                "Title": "โจมตีปกติ: Thunderbolt",
+                "Description": "หลังจากใช้การ <color=#FFFFFF>[โจมตีปกติ]</color> ขั้นที่ 3 กดค้าง หรือหยุดชั่วคราวแล้วกด <IconMap:Icon_Normal> เพื่อ\nใช้ Downward Strike ไปข้างหน้า \nเพื่อสร้าง<color=#2EB6FF>ความเสียหายธาตุไฟฟ้า</color>;\nขณะที่ใช้ท่านี้ เลเวล Anti-Interrupt จะเพิ่มขึ้น"
+            },
+            "101110001": {
+                "Title": "โจมตีปกติ: Turbo Volt"
+            },
+            "101110002": {
+                "Description": "ตัวคูณ DMG ขั้นที่ 1",
+                "Param": "{Skill:1011001, Prop:1001}"
+            },
+            "101110003": {
+                "Description": "ตัวคูณ DMG ขั้นที่ 2",
+                "Param": "{Skill:1011002, Prop:1001}"
+            },
+            "101110004": {
+                "Description": "ตัวคูณ DMG ขั้นที่ 3",
+                "Param": "{Skill:1011003, Prop:1001}"
+            },
+            "101110005": {
+                "Description": "ตัวคูณ DMG ขั้นที่ 4",
+                "Param": "{Skill:1011004, Prop:1001}"
+            },
+            "101110006": {
+                "Description": "ตัวคูณ Daze ขั้นที่ 1",
+                "Param": "{Skill:1011001, Prop:1002}"
+            },
+            "101110007": {
+                "Description": "ตัวคูณ Daze ขั้นที่ 2",
+                "Param": "{Skill:1011002, Prop:1002}"
+            },
+            "101110008": {
+                "Description": "ตัวคูณ Daze ขั้นที่ 3",
+                "Param": "{Skill:1011003, Prop:1002}"
+            },
+            "101110009": {
+                "Description": "ตัวคูณ Daze ขั้นที่ 4",
+                "Param": "{Skill:1011004, Prop:1002}"
+            },
+            "101110010": {
+                "Title": "โจมตีปกติ: Thunderbolt"
+            },
+            "101110011": {
+                "Description": "ตัวคูณ DMG",
+                "Param": "{Skill:1011005, Prop:1001}"
+            },
+            "101110012": {
+                "Description": "ตัวคูณ Daze",
+                "Param": "{Skill:1011005, Prop:1002}"
+            }
+        },
+        "1": {
+            "101100003": {
+                "Title": "สกิลพิเศษ: Fork Lightning",
+                "Description": "กด <IconMap:Icon_Special> เพื่อ\nใช้ Upward Slash ไปข้างหน้า\nเพื่อสร้าง<color=#2EB6FF>ความเสียหายธาตุไฟฟ้า</color>;\nโดยหากต่อเนื่องจากการ <color=#FFFFFF>[โจมตีปกติ]</color> ขั้นที่ 3 หรือ <color=#FFFFFF>[โจมตีปกติ: Thunderbolt]</color> จะสามารถปล่อยได้เร็วยิ่งขึ้น;\nขณะที่ใช้ท่านี้ เลเวล Anti-Interrupt จะเพิ่มขึ้น"
+            },
+            "101100004": {
+                "Title": "สกิลพิเศษ-EX: Lightning Bolt",
+                "Description": "เมื่อมีพลังงานมากพอ กด <IconMap:Icon_SpecialReady> เพื่อ\nใช้ Upward Slash อย่างรุนแรงไปข้างหน้า\nเพื่อสร้าง<color=#2EB6FF>ความเสียหายธาตุไฟฟ้า</color>ปริมาณมาก;\nโดยหากต่อเนื่องจากการ <color=#FFFFFF>[โจมตีปกติ]</color> ขั้นที่ 3 หรือ <color=#FFFFFF>[โจมตีปกติ: Thunderbolt]</color> จะสามารถปล่อยได้เร็วยิ่งขึ้น;\nขณะที่ใช้ท่านี้ จะมีเอฟเฟกต์ Invulnerable"
+            },
+            "101110013": {
+                "Title": "สกิลพิเศษ: Fork Lightning"
+            },
+            "101110014": {
+                "Description": "ตัวคูณ DMG",
+                "Param": "{Skill:1011006, Prop:1001}"
+            },
+            "101110015": {
+                "Description": "ตัวคูณ Daze",
+                "Param": "{Skill:1011006, Prop:1002}"
+            },
+            "101110016": {
+                "Title": "สกิลพิเศษ-EX: Lightning Bolt"
+            },
+            "101110017": {
+                "Description": "ตัวคูณ DMG",
+                "Param": "{Skill:1011007, Prop:1001}"
+            },
+            "101110018": {
+                "Description": "ตัวคูณ Daze",
+                "Param": "{Skill:1011007, Prop:1002}"
+            },
+            "101110019": {
+                "Description": "ใช้พลังงาน",
+                "Param": "60 แต้ม"
+            }
+        },
+        "2": {
+            "101100005": {
+                "Title": "หลบหลีก: Slide",
+                "Description": "กด <IconMap:Icon_Evade> เพื่อ\nพุ่งหลบอย่างรวดเร็ว;\nขณะที่ใช้ท่านี้ จะมีเอฟเฟกต์ Invulnerable"
+            },
+            "101100006": {
+                "Title": "พุ่งโจมตี: Taser Blast",
+                "Description": "ขณะหลบหลีก กด <IconMap:Icon_Normal> เพื่อ\nใช้ Slash ไปยังบริเวณรอบตัว\nเพื่อสร้าง<color=#F0D12B>ความเสียหายกายภาพ</color>"
+            },
+            "101100007": {
+                "Title": "หลบหลีกสวนกลับ: Thunderclap",
+                "Description": "หลังใช้ <color=#FFFFFF>[หลบหลีกสมบูรณ์]</color> กด <IconMap:Icon_Normal> เพื่อ\nใช้ Slash ใส่ศัตรูที่อยู่ข้างหน้า เพื่อสร้าง<color=#2EB6FF>ความเสียหายธาตุไฟฟ้า</color>;\nขณะที่ใช้ท่านี้ จะมีเอฟเฟกต์ Invulnerable"
+            },
+            "101110020": {
+                "Title": "พุ่งโจมตี: Taser Blast"
+            },
+            "101110021": {
+                "Description": "ตัวคูณ DMG",
+                "Param": "{Skill:1011008, Prop:1001}"
+            },
+            "101110022": {
+                "Description": "ตัวคูณ Daze",
+                "Param": "{Skill:1011008, Prop:1002}"
+            },
+            "101110023": {
+                "Title": "หลบหลีกสวนกลับ: Thunderclap"
+            },
+            "101110024": {
+                "Description": "ตัวคูณ DMG",
+                "Param": "{Skill:1011009, Prop:1001}"
+            },
+            "101110025": {
+                "Description": "ตัวคูณ Daze",
+                "Param": "{Skill:1011009, Prop:1002}"
+            }
+        },
+        "3": {
+            "101100008": {
+                "Title": "สกิลต่อเนื่อง: Electro Engine",
+                "Description": "เมื่อเกิด <color=#FFFFFF>[สกิลต่อเนื่อง]</color> เลือกตัวละครที่สอดคล้องเพื่อ\nใช้ Upward Slash อย่างรุนแรงไปยังศัตรูข้างหน้า ที่อยู่ในพื้นที่วงแคบ\nเพื่อสร้าง<color=#2EB6FF>ความเสียหายธาตุไฟฟ้า</color>ปริมาณมาก;\nขณะที่ใช้ท่านี้ จะมีเอฟเฟกต์ Invulnerable"
+            },
+            "101100009": {
+                "Title": "สกิลอัลติเมท: Overdrive Engine",
+                "Description": "เมื่อ Decibel Rating ถึง <color=#FFFFFF>[Maximum]</color> กด <IconMap:Icon_UltimateReady> เพื่อ\nใช้ Upward Slash อย่างรุนแรง ไปยังศัตรูข้างหน้า\nที่อยู่ในพื้นที่วงแคบ และตามด้วยการโจมตีพุ่งลง\nเพื่อสร้าง<color=#2EB6FF>ความเสียหายธาตุไฟฟ้า</color>ปริมาณมาก;\nขณะที่ใช้ท่านี้ จะมีเอฟเฟกต์ Invulnerable"
+            },
+            "101110026": {
+                "Title": "สกิลต่อเนื่อง: Electro Engine"
+            },
+            "101110027": {
+                "Description": "ตัวคูณ DMG",
+                "Param": "{Skill:1011010, Prop:1001}"
+            },
+            "101110028": {
+                "Description": "ตัวคูณ Daze",
+                "Param": "{Skill:1011010, Prop:1002}"
+            },
+            "101110029": {
+                "Title": "สกิลอัลติเมท: Overdrive Engine"
+            },
+            "101110030": {
+                "Description": "ตัวคูณ DMG",
+                "Param": "{Skill:1011011, Prop:1001}"
+            },
+            "101110031": {
+                "Description": "ตัวคูณ Daze",
+                "Param": "{Skill:1011011, Prop:1002}"
+            }
+        },
+        "6": {
+            "101100011": {
+                "Title": "ซัปพอร์ตอย่างรวดเร็ว: Thunderfall",
+                "Description": "เมื่อตัวละครที่ควบคุมอยู่ในขณะนั้นถูกตีกระเด็น กด <IconMap:Icon_Switch> เพื่อ\nใช้ Slash ใส่ศัตรูที่อยู่เบื้องหน้า\nเพื่อสร้าง<color=#2EB6FF>ความเสียหายธาตุไฟฟ้า</color>;\nขณะที่ใช้ท่านี้ จะมีเอฟเฟกต์ Invulnerable"
+            },
+            "101100012": {
+                "Title": "ซัปพอร์ตตั้งรับ: Flash",
+                "Description": "เมื่อตัวละครที่อยู่ในสนาม กำลังจะถูกโจมตี กด <IconMap:Icon_Switch> เพื่อ\nตั้งรับการโจมตีของศัตรู และสะสม Daze ปริมาณมาก;\nขณะที่ใช้ท่านี้ จะมีเอฟเฟกต์ Invulnerable"
+            },
+            "101100013": {
+                "Title": "ซัปพอร์ตจู่โจม: Lightning Whirl",
+                "Description": "หลังจากใช้ <color=#FFFFFF>[ซัปพอร์ตตั้งรับ]</color> กด <IconMap:Icon_Normal> เพื่อ\nใช้ Cyclone Slash ใส่ศัตรูที่อยู่ข้างหน้า เพื่อสร้าง<color=#2EB6FF>ความเสียหายธาตุไฟฟ้า</color>;\nขณะที่ใช้ท่านี้ จะมีเอฟเฟกต์ Invulnerable"
+            },
+            "101110032": {
+                "Title": "ซัปพอร์ตอย่างรวดเร็ว: Thunderfall"
+            },
+            "101110033": {
+                "Description": "ตัวคูณ DMG",
+                "Param": "{Skill:1011012, Prop:1001}"
+            },
+            "101110034": {
+                "Description": "ตัวคูณ Daze",
+                "Param": "{Skill:1011012, Prop:1002}"
+            },
+            "101110035": {
+                "Title": "ซัปพอร์ตตั้งรับ: Flash"
+            },
+            "101110036": {
+                "Description": "ตัวคูณ Daze ตั้งรับเบา",
+                "Param": "{Skill:1011013, Prop:1002}"
+            },
+            "101110037": {
+                "Description": "ตัวคูณ Daze ตั้งรับหนัก",
+                "Param": "{Skill:1011014, Prop:1002}"
+            },
+            "101110038": {
+                "Description": "ตัวคูณ Daze ตั้งรับต่อเนื่อง",
+                "Param": "{Skill:1011015, Prop:1002}"
+            },
+            "101110039": {
+                "Title": "ซัปพอร์ตจู่โจม: Lightning Whirl"
+            },
+            "101110040": {
+                "Description": "ตัวคูณ DMG",
+                "Param": "{Skill:1011016, Prop:1001}"
+            },
+            "101110041": {
+                "Description": "ตัวคูณ Daze",
+                "Param": "{Skill:1011016, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1011001": {
+            "DamageValue": 3120,
+            "DamageGrowth": 290,
+            "DazeValue": 1560,
+            "DazeGrowth": 80
+        },
+        "1011002": {
+            "DamageValue": 3370,
+            "DamageGrowth": 310,
+            "DazeValue": 2870,
+            "DazeGrowth": 140
+        },
+        "1011003": {
+            "DamageValue": 11360,
+            "DamageGrowth": 1040,
+            "DazeValue": 8960,
+            "DazeGrowth": 410
+        },
+        "1011004": {
+            "DamageValue": 23910,
+            "DamageGrowth": 2180,
+            "DazeValue": 18740,
+            "DazeGrowth": 860
+        },
+        "1011005": {
+            "DamageValue": 32860,
+            "DamageGrowth": 2990,
+            "DazeValue": 14240,
+            "DazeGrowth": 650
+        },
+        "1011006": {
+            "DamageValue": 9340,
+            "DamageGrowth": 850,
+            "DazeValue": 9340,
+            "DazeGrowth": 430
+        },
+        "1011007": {
+            "DamageValue": 58300,
+            "DamageGrowth": 5300,
+            "DazeValue": 48180,
+            "DazeGrowth": 2190
+        },
+        "1011008": {
+            "DamageValue": 5670,
+            "DamageGrowth": 520,
+            "DazeValue": 2840,
+            "DazeGrowth": 130
+        },
+        "1011009": {
+            "DamageValue": 18020,
+            "DamageGrowth": 1640,
+            "DazeValue": 16170,
+            "DazeGrowth": 740
+        },
+        "1011010": {
+            "DamageValue": 54240,
+            "DamageGrowth": 4940,
+            "DazeValue": 14340,
+            "DazeGrowth": 660
+        },
+        "1011011": {
+            "DamageValue": 151260,
+            "DamageGrowth": 13760,
+            "DazeValue": 99160,
+            "DazeGrowth": 4510
+        },
+        "1011012": {
+            "DamageValue": 6170,
+            "DamageGrowth": 570,
+            "DazeValue": 6170,
+            "DazeGrowth": 290
+        },
+        "1011013": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 24670,
+            "DazeGrowth": 1130
+        },
+        "1011014": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 31170,
+            "DazeGrowth": 1420
+        },
+        "1011015": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15170,
+            "DazeGrowth": 690
+        },
+        "1011016": {
+            "DamageValue": 33520,
+            "DamageGrowth": 3050,
+            "DazeValue": 29140,
+            "DazeGrowth": 1330
+        }
+    }
+}

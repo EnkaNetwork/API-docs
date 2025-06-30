@@ -1,0 +1,534 @@
+{
+    "Name": "제인",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "범죄 고문",
+            "Description": "<color=#FFFFFF>[일반 공격: 살코 점프]</color>의 사용 가능 횟수 최대치가 1회 증가한다. <color=#FFFFFF>[열광]</color> 상태에서 제인의 <color=#F0D12B>물리 이상 축적 효율</color>이 추가로 15% 증가하며, 동시에 이상 마스터리 1pt마다 자신이 주는 피해가 0.1% 증가한다. 최대 증가: 30%",
+            "Lore": "「범죄 고문은 범죄행동학을 연구하는 거지, 범죄에 정통한 사람이 아니야」\n제인이 갑자기 다가와 눈을 찡긋한다.\n「물론, 알고 싶은 게 후자라면… 반대하지 않을게~」"
+        },
+        "2": {
+            "Title": "근주자적",
+            "Description": "제인의 공격이 <color=#FFFFFF>[갉힘]</color> 상태인 적에게 명중하거나 파티 내 임의의 캐릭터가 <color=#FFFFFF>[갉힘]</color> 상태인 적에게 <color=#F0D12B>[강타]</color> 발동 시, 해당 적의 방어력을 15% 무시하고 <color=#F0D12B>[강타]</color> 피해가 치명타를 발동하면 해당 치명타 피해가 추가로 50% 증가한다.",
+            "Lore": "「심연을 바라보면 심연도 나를 바라본다. 이게 첫 번째 단계이다」\n「그것에 다가가, 안으로 들어가고, 이해하는 것, 이것은 두 번째 단계이다」\n「마지막은… 심연이 되지 않는 것이다」"
+        },
+        "3": {
+            "Title": "무명인",
+            "Description": "<color=#FFFFFF>[일반 공격]</color>, <color=#FFFFFF>[회피]</color>, <color=#FFFFFF>[지원 스킬]</color>, <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[콤보 스킬]</color>의 스킬 레벨+2",
+            "Lore": "「무명인이라는 건, 난 무엇이든 될 수 있다는 걸 의미해. 예를 들면 네가 제일 좋아하는 사람이랄까~」\n「아니면, 네가 제일 두려워하는 사람은 어때?」"
+        },
+        "4": {
+            "Title": "유연한 리드",
+            "Description": "파티 내 임의의 캐릭터가 <color=#F0D12B>[강타]</color> 혹은 <color=#FFFFFF>[혼돈]</color> 효과 발동 시 파티 내 모든 캐릭터가 주는 속성 이상 피해가 18% 증가한다. 지속 시간: 15초",
+            "Lore": "「사냥꾼이 될 것인가, 사냥감이 될 것인가? 이런 문제는 네가 선택한 관점에 따라 결정되곤 하지. 근데 난 더 간단한 판단 방식을 좋아해——」\n「지는 사람이 사냥감이야」"
+        },
+        "5": {
+            "Title": "비축하는 습관",
+            "Description": "<color=#FFFFFF>[일반 공격]</color>, <color=#FFFFFF>[회피]</color>, <color=#FFFFFF>[지원 스킬]</color>, <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[콤보 스킬]</color>의 스킬 레벨+2",
+            "Lore": "제인의 방에는 항상 각종 물건이 쌓여 있는데 그중 가장 많은 건 인스턴트식품이다.\n「어때, 손만 뻗으면 음식이 닿으니까 너무 좋지~?」"
+        },
+        "6": {
+            "Title": "「지저분한」 수단",
+            "Description": "<color=#FFFFFF>[열광]</color> 상태에서 제인의 치명타 확률이 20% 증가하고, 치명타 피해가 40% 증가한다. 파티 내 임의의 캐릭터가 적에게 <color=#F0D12B>[강타]</color> 효과 부여 시 제인은 바로 <color=#FFFFFF>[열광]</color> 상태에 진입하고 <color=#FFFFFF>[열광적 몰입]</color>이 최대치까지 회복되며, 이번 <color=#F0D12B>[강타]</color> 피해가 치명타를 발동할 시 추가로 타깃을 한 번 더 공격해 제인 이상 마스터리의 1600%에 해당하는 <color=#F0D12B>물리 피해</color>를 준다.",
+            "Lore": "거리에서는 수단의 고결성보다 승패의 결과를 더 중요시한다.\n「가장 어두운 욕망을 똑똑히 들여다봐야만, 가장 고통스러운 약점을 알아낼 수 있어」"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "핵심 패시브: 통찰",
+            "DescriptionByLevel": {
+                "1": "제인의 공격이 적에게 명중 시 해당 적은 <color=#FFFFFF>[갉힘]</color> 상태에 빠진다. 지속 시간: 10초\n파티 내 임의의 캐릭터가 <color=#FFFFFF>[갉힘]</color> 상태인 적에게 <color=#F0D12B>[강타]</color>를 발동하고 <color=#F0D12B>[위축]</color> 효과를 부여할 시 <color=#F0D12B>[위축]</color> 효과의 지속 시간이 5초 증가한다. <color=#FFFFFF>[갉힘]</color> 상태인 적에게 주는 <color=#F0D12B>[강타]</color> 피해가 확률적으로 치명타를 발동한다. 기본 치명타 확률은 <color=#2BAD00>20%</color>, 치명타 피해는 50%이며 제인의 이상 마스터리 1pt마다 해당 효과의 치명타 확률이 추가로 <color=#2BAD00>0.1%</color> 증가한다.",
+                "2": "제인의 공격이 적에게 명중 시 해당 적은 <color=#FFFFFF>[갉힘]</color> 상태에 빠진다. 지속 시간: 10초\n파티 내 임의의 캐릭터가 <color=#FFFFFF>[갉힘]</color> 상태인 적에게 <color=#F0D12B>[강타]</color>를 발동하고 <color=#F0D12B>[위축]</color> 효과를 부여할 시 <color=#F0D12B>[위축]</color> 효과의 지속 시간이 5초 증가한다. <color=#FFFFFF>[갉힘]</color> 상태인 적에게 주는 <color=#F0D12B>[강타]</color> 피해가 확률적으로 치명타를 발동한다. 기본 치명타 확률은 <color=#2BAD00>25%</color>, 치명타 피해는 50%이며 제인의 이상 마스터리 1pt마다 해당 효과의 치명타 확률이 추가로 <color=#2BAD00>0.11%</color> 증가한다.",
+                "3": "제인의 공격이 적에게 명중 시 해당 적은 <color=#FFFFFF>[갉힘]</color> 상태에 빠진다. 지속 시간: 10초\n파티 내 임의의 캐릭터가 <color=#FFFFFF>[갉힘]</color> 상태인 적에게 <color=#F0D12B>[강타]</color>를 발동하고 <color=#F0D12B>[위축]</color> 효과를 부여할 시 <color=#F0D12B>[위축]</color> 효과의 지속 시간이 5초 증가한다. <color=#FFFFFF>[갉힘]</color> 상태인 적에게 주는 <color=#F0D12B>[강타]</color> 피해가 확률적으로 치명타를 발동한다. 기본 치명타 확률은 <color=#2BAD00>28%</color>, 치명타 피해는 50%이며 제인의 이상 마스터리 1pt마다 해당 효과의 치명타 확률이 추가로 <color=#2BAD00>0.12%</color> 증가한다.",
+                "4": "제인의 공격이 적에게 명중 시 해당 적은 <color=#FFFFFF>[갉힘]</color> 상태에 빠진다. 지속 시간: 10초\n파티 내 임의의 캐릭터가 <color=#FFFFFF>[갉힘]</color> 상태인 적에게 <color=#F0D12B>[강타]</color>를 발동하고 <color=#F0D12B>[위축]</color> 효과를 부여할 시 <color=#F0D12B>[위축]</color> 효과의 지속 시간이 5초 증가한다. <color=#FFFFFF>[갉힘]</color> 상태인 적에게 주는 <color=#F0D12B>[강타]</color> 피해가 확률적으로 치명타를 발동한다. 기본 치명타 확률은 <color=#2BAD00>31%</color>, 치명타 피해는 50%이며 제인의 이상 마스터리 1pt마다 해당 효과의 치명타 확률이 추가로 <color=#2BAD00>0.13%</color> 증가한다.",
+                "5": "제인의 공격이 적에게 명중 시 해당 적은 <color=#FFFFFF>[갉힘]</color> 상태에 빠진다. 지속 시간: 10초\n파티 내 임의의 캐릭터가 <color=#FFFFFF>[갉힘]</color> 상태인 적에게 <color=#F0D12B>[강타]</color>를 발동하고 <color=#F0D12B>[위축]</color> 효과를 부여할 시 <color=#F0D12B>[위축]</color> 효과의 지속 시간이 5초 증가한다. <color=#FFFFFF>[갉힘]</color> 상태인 적에게 주는 <color=#F0D12B>[강타]</color> 피해가 확률적으로 치명타를 발동한다. 기본 치명타 확률은 <color=#2BAD00>34%</color>, 치명타 피해는 50%이며 제인의 이상 마스터리 1pt마다 해당 효과의 치명타 확률이 추가로 <color=#2BAD00>0.14%</color> 증가한다.",
+                "6": "제인의 공격이 적에게 명중 시 해당 적은 <color=#FFFFFF>[갉힘]</color> 상태에 빠진다. 지속 시간: 10초\n파티 내 임의의 캐릭터가 <color=#FFFFFF>[갉힘]</color> 상태인 적에게 <color=#F0D12B>[강타]</color>를 발동하고 <color=#F0D12B>[위축]</color> 효과를 부여할 시 <color=#F0D12B>[위축]</color> 효과의 지속 시간이 5초 증가한다. <color=#FFFFFF>[갉힘]</color> 상태인 적에게 주는 <color=#F0D12B>[강타]</color> 피해가 확률적으로 치명타를 발동한다. 기본 치명타 확률은 <color=#2BAD00>37%</color>, 치명타 피해는 50%이며 제인의 이상 마스터리 1pt마다 해당 효과의 치명타 확률이 추가로 <color=#2BAD00>0.15%</color> 증가한다.",
+                "7": "제인의 공격이 적에게 명중 시 해당 적은 <color=#FFFFFF>[갉힘]</color> 상태에 빠진다. 지속 시간: 10초\n파티 내 임의의 캐릭터가 <color=#FFFFFF>[갉힘]</color> 상태인 적에게 <color=#F0D12B>[강타]</color>를 발동하고 <color=#F0D12B>[위축]</color> 효과를 부여할 시 <color=#F0D12B>[위축]</color> 효과의 지속 시간이 5초 증가한다. <color=#FFFFFF>[갉힘]</color> 상태인 적에게 주는 <color=#F0D12B>[강타]</color> 피해가 확률적으로 치명타를 발동한다. 기본 치명타 확률은 <color=#2BAD00>40%</color>, 치명타 피해는 50%이며 제인의 이상 마스터리 1pt마다 해당 효과의 치명타 확률이 추가로 <color=#2BAD00>0.16%</color> 증가한다."
+            }
+        },
+        "MathSkill": {
+            "Title": "추가 능력: 통점",
+            "Description": "파티에 다른 <color=#FFFFFF>[이상]</color> 캐릭터 혹은 자신과 진영이 같은 캐릭터가 존재할 시 발동:\n제인의 <color=#F0D12B>물리 이상 축적 효율</color>이 20% 증가한다. 적이 이미 속성 이상 상태인 경우, 제인이 해당 적에게 누적하는 <color=#F0D12B>물리 이상 축적치</color>가 추가로 15% 증가한다."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "126100001": {
+                "Title": "일반 공격: 춤추는 칼날",
+                "Description": "<IconMap:Icon_Normal>을 짧게 탭하여 시전:\n전방을 향해 최대 6단까지 공격을 펼쳐 <color=#F0D12B>물리 피해</color>를 준다."
+            },
+            "126100002": {
+                "Title": "열광",
+                "Description": "제인이 발동한 <color=#FFFFFF>[극한 회피]</color>, <color=#FFFFFF>[패링 지원]</color> 혹은 시전한 스킬이 적에게 피해를 줄 시 <color=#FFFFFF>[열광적 몰입]</color>을 누적한다. <color=#FFFFFF>[열광적 몰입]</color>이 최대치까지 누적되면 제인이 <color=#FFFFFF>[열광]</color> 상태에 진입한다.\n<color=#FFFFFF>[열광]</color> 상태에서 제인의 <color=#F0D12B>물리 이상 축적 효율</color>이 25% 증가하며, 제인의 이상 마스터리가 120pt보다 높으면 초과한 이상 마스터리 1pt당 자신의 공격력이 2pt 증가한다. 해당 방식을 통해 자신의 공격력은 최대 600pt 증가한다.\n제인이 <color=#FFFFFF>[열광]</color> 상태에서 시전한 스킬이 피해를 줄 시 <color=#FFFFFF>[열광적 몰입]</color>을 소모하며, <color=#FFFFFF>[극한 회피]</color> 혹은 <color=#FFFFFF>[패링 지원]</color>을 발동할 시 <color=#FFFFFF>[열광적 몰입]</color>을 회복할 수 있다. <color=#FFFFFF>[열광적 몰입]</color>을 소진하면 <color=#FFFFFF>[열광]</color> 상태가 종료된다."
+            },
+            "126100003": {
+                "Title": "일반 공격: 살코 점프",
+                "Description": "<color=#FFFFFF>[열광]</color> 상태 진입 시 제인이 <color=#FFFFFF>[일반 공격: 살코 점프]</color>의 사용 가능 횟수를 1회 획득한다.\n사용 가능 횟수가 있을 때 <IconMap:Icon_Normal>을 홀드해 시전:\n전방을 향해 빠르게 연속 공격한 후, 종결의 일격으로 <color=#F0D12B>물리 피해</color>를 준다.\n연속 공격 중에 홀드를 유지하면 스킬의 지속 시간을 연장할 수 있으며, <IconMap:Icon_Normal>에서 손을 떼면 미리 종결의 일격을 시전할 수 있다.\n연속 공격 중에는 경직 저항 레벨이 증가하고, 받는 피해가 40% 감소한다. 종결의 일격을 시전하는 동안 무적 효과를 보유한다.\n<color=#FFFFFF>[열광]</color> 상태에서 시전한 <color=#FFFFFF>[일반 공격: 살코 점프]</color>가 적에게 피해를 줄 시 <color=#FFFFFF>[열광적 몰입]</color>을 회복할 수 있다."
+            },
+            "126100018": {
+                "Title": "일반 공격: 춤추는 칼날"
+            },
+            "126100019": {
+                "Description": "1단 피해 배율",
+                "Param": "{Skill:1261001, Prop:1001}"
+            },
+            "126100020": {
+                "Description": "2단 피해 배율",
+                "Param": "{Skill:1261002, Prop:1001}"
+            },
+            "126100021": {
+                "Description": "3단 피해 배율",
+                "Param": "{Skill:1261003, Prop:1001}"
+            },
+            "126100022": {
+                "Description": "4단 피해 배율",
+                "Param": "{Skill:1261004, Prop:1001}"
+            },
+            "126100023": {
+                "Description": "5단 피해 배율",
+                "Param": "{Skill:1261005, Prop:1001}"
+            },
+            "126100024": {
+                "Description": "6단 피해 배율",
+                "Param": "{Skill:1261006, Prop:1001}"
+            },
+            "126100025": {
+                "Description": "1단 그로기 배율",
+                "Param": "{Skill:1261001, Prop:1002}"
+            },
+            "126100026": {
+                "Description": "2단 그로기 배율",
+                "Param": "{Skill:1261002, Prop:1002}"
+            },
+            "126100027": {
+                "Description": "3단 그로기 배율",
+                "Param": "{Skill:1261003, Prop:1002}"
+            },
+            "126100028": {
+                "Description": "4단 그로기 배율",
+                "Param": "{Skill:1261004, Prop:1002}"
+            },
+            "126100029": {
+                "Description": "5단 그로기 배율",
+                "Param": "{Skill:1261005, Prop:1002}"
+            },
+            "126100030": {
+                "Description": "6단 그로기 배율",
+                "Param": "{Skill:1261006, Prop:1002}"
+            },
+            "126100031": {
+                "Title": "일반 공격: 살코 점프"
+            },
+            "126100032": {
+                "Description": "연속 공격 피해 배율",
+                "Param": "{Skill:1261007, Prop:1001}"
+            },
+            "126100033": {
+                "Description": "종결의 일격 피해 배율",
+                "Param": "{Skill:1261008, Prop:1001}"
+            },
+            "126100034": {
+                "Description": "연속 공격 그로기 배율",
+                "Param": "{Skill:1261007, Prop:1002}"
+            },
+            "126100035": {
+                "Description": "종결의 일격 그로기 배율",
+                "Param": "{Skill:1261008, Prop:1002}"
+            }
+        },
+        "1": {
+            "126100004": {
+                "Title": "특수 스킬: 공중 도약",
+                "Description": "<IconMap:Icon_Special>을 짧게 탭하여 시전:\n공중으로 도약해 전방에 연속 발차기 후 휩쓸어 <color=#F0D12B>물리 피해</color>를 준다.\n스킬을 시전하는 동안 경직 저항 레벨이 증가한다."
+            },
+            "126100005": {
+                "Title": "강화 특수 스킬: 공중 도약-휩쓸기",
+                "Description": "에너지가 충분한 상태에서 <IconMap:Icon_SpecialReady>을 짧게 탭하여 시전:\n공중으로 도약해 전방에 여러 차례 연속 발차기 후 휩쓸어 대량의 <color=#F0D12B>물리 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "126100036": {
+                "Title": "특수 스킬: 공중 도약"
+            },
+            "126100037": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1261009, Prop:1001}"
+            },
+            "126100038": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1261009, Prop:1002}"
+            },
+            "126100039": {
+                "Title": "강화 특수 스킬: 공중 도약-휩쓸기"
+            },
+            "126100040": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1261010, Prop:1001}"
+            },
+            "126100041": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1261010, Prop:1002}"
+            },
+            "126100042": {
+                "Description": "에너지 소모",
+                "Param": "60pt"
+            }
+        },
+        "2": {
+            "126100006": {
+                "Title": "회피: 잔영",
+                "Description": "<IconMap:Icon_Evade>을 짧게 탭하여 시전:\n빠른 슬라이드 스텝으로 회피한다.\n스킬을 시전하는 동안 무적 효과를 보유한다.\n제인은 회피 횟수를 추가로 1회 보유하며, <color=#FFFFFF>[열광]</color> 상태 진입 전에는 두 가지 회피를 번갈아 사용하고, <color=#FFFFFF>[열광]</color> 상태 진입 후에는 회피 시 전방의 적을 뚫고 지나갈 수 있다."
+            },
+            "126100007": {
+                "Title": "대시 공격: 에지 점프",
+                "Description": "회피 시 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n1단 회피에 이어서 사용하면, 전방 올려 베기로 <color=#F0D12B>물리 피해</color>를 준다.\n2단 회피에 이어서 사용하면, 전방 연속 베기로 <color=#F0D12B>물리 피해</color>를 준다."
+            },
+            "126100008": {
+                "Title": "대시 공격: 허상 찌르기",
+                "Description": "<color=#FFFFFF>[열광]</color> 상태에서 회피 시 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n전방을 향해 세 번의 빠른 돌진 베기로 <color=#F0D12B>물리 피해</color>를 준다."
+            },
+            "126100009": {
+                "Title": "회피 반격: 재빠른 그림자",
+                "Description": "<color=#FFFFFF>[극한 회피]</color> 발동 후 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n1단 회피에 이어서 사용하면, 전방의 적을 여러 차례 벤 후 아래로 찔러 <color=#F0D12B>물리 피해</color>를 준다.\n2단 회피에 이어서 사용하면, 도약 후 전방의 적에게 세 차례 연속 공격으로 <color=#F0D12B>물리 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "126100010": {
+                "Title": "회피 반격: 재빠른 그림자의 춤",
+                "Description": "<color=#FFFFFF>[열광]</color> 상태에서 <color=#FFFFFF>[극한 회피]</color> 발동 후 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n전방의 적을 여러 차례 빠르게 베어 <color=#F0D12B>물리 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "126100043": {
+                "Title": "대시 공격: 에지 점프"
+            },
+            "126100044": {
+                "Description": "1단 피해 배율",
+                "Param": "{Skill:1261011, Prop:1001}"
+            },
+            "126100045": {
+                "Description": "1단 그로기 배율",
+                "Param": "{Skill:1261011, Prop:1002}"
+            },
+            "126100046": {
+                "Description": "2단 피해 배율",
+                "Param": "{Skill:1261012, Prop:1001}"
+            },
+            "126100047": {
+                "Description": "2단 그로기 배율",
+                "Param": "{Skill:1261012, Prop:1002}"
+            },
+            "126100048": {
+                "Title": "대시 공격: 허상 찌르기"
+            },
+            "126100049": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1261013, Prop:1001}"
+            },
+            "126100050": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1261013, Prop:1002}"
+            },
+            "126100051": {
+                "Title": "회피 반격: 재빠른 그림자"
+            },
+            "126100052": {
+                "Description": "1단 피해 배율",
+                "Param": "{Skill:1261014, Prop:1001}"
+            },
+            "126100053": {
+                "Description": "1단 그로기 배율",
+                "Param": "{Skill:1261014, Prop:1002}"
+            },
+            "126100054": {
+                "Description": "2단 피해 배율",
+                "Param": "{Skill:1261015, Prop:1001}"
+            },
+            "126100055": {
+                "Description": "2단 그로기 배율",
+                "Param": "{Skill:1261015, Prop:1002}"
+            },
+            "126100056": {
+                "Title": "회피 반격: 재빠른 그림자의 춤"
+            },
+            "126100057": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1261016, Prop:1001}"
+            },
+            "126100058": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1261016, Prop:1002}"
+            }
+        },
+        "3": {
+            "126100011": {
+                "Title": "콤보 스킬: 죄악의 꽃",
+                "Description": "<color=#FFFFFF>[콤보 스킬]</color> 발동 시 해당 캐릭터를 선택해 시전:\n전방 넓은 범위 내 적에게 왕복 베기로 대량의 <color=#F0D12B>물리 피해</color>를 준다.\n스킬 시전 시 제인은 바로 <color=#FFFFFF>[열광]</color> 상태에 진입하고, <color=#FFFFFF>[열광적 몰입]</color>을 최대치까지 회복한다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "126100012": {
+                "Title": "궁극기: 피날레",
+                "Description": "데시벨 레벨 <color=#FFFFFF>[Maximum]</color> 달성 시 <IconMap:Icon_UltimateReady>을 짧게 탭하여 시전:\n전방 넓은 범위 내 적에게 강력한 왕복 베기 후, 종결의 일격으로 대량의 <color=#F0D12B>물리 피해</color>를 준다.\n스킬 시전 시 제인은 바로 <color=#FFFFFF>[열광]</color> 상태에 진입하고, <color=#FFFFFF>[열광적 몰입]</color>을 최대치까지 회복한다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "126100059": {
+                "Title": "콤보 스킬: 죄악의 꽃"
+            },
+            "126100060": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1261017, Prop:1001}"
+            },
+            "126100061": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1261017, Prop:1002}"
+            },
+            "126100062": {
+                "Title": "궁극기: 피날레"
+            },
+            "126100063": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1261018, Prop:1001}"
+            },
+            "126100064": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1261018, Prop:1002}"
+            }
+        },
+        "6": {
+            "126100014": {
+                "Title": "빠른 지원: 검은 가시",
+                "Description": "현재 조작 중인 캐릭터가 넉업되면 <IconMap:Icon_Switch>을 짧게 탭하여 시전:\n전방의 적을 여러 차례 벤 후 아래로 찔러 <color=#F0D12B>물리 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "126100015": {
+                "Title": "빠른 지원: 루츠 점프",
+                "Description": "<color=#FFFFFF>[열광]</color> 상태에서 현재 조작 중인 캐릭터가 넉업되면 <IconMap:Icon_Switch>을 짧게 탭하여 시전:\n전방의 적을 빠르게 여러 차례 베어 <color=#F0D12B>물리 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "126100016": {
+                "Title": "패링 지원: 마지막 방어선",
+                "Description": "출전 캐릭터 피격 직전에 <IconMap:Icon_Switch>을 짧게 탭하여 시전:\n적의 공격을 패링하고 대량의 그로기 수치를 누적한다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "126100017": {
+                "Title": "지원 돌격: 돌풍 휩쓸기",
+                "Description": "<color=#FFFFFF>[패링 지원]</color> 시전 후 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n공중으로 도약하여 적을 빠르게 벤 후, 전방 넓은 범위에 다시 휩쓸어 베기로 <color=#F0D12B>물리 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "126100065": {
+                "Title": "빠른 지원: 검은 가시"
+            },
+            "126100066": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1261019, Prop:1001}"
+            },
+            "126100067": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1261019, Prop:1002}"
+            },
+            "126100068": {
+                "Title": "빠른 지원: 루츠 점프"
+            },
+            "126100069": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1261020, Prop:1001}"
+            },
+            "126100070": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1261020, Prop:1002}"
+            },
+            "126100071": {
+                "Title": "패링 지원: 마지막 방어선"
+            },
+            "126100072": {
+                "Description": "가벼운 패링 그로기 배율",
+                "Param": "{Skill:1261021, Prop:1002}"
+            },
+            "126100073": {
+                "Description": "강한 패링 그로기 배율",
+                "Param": "{Skill:1261022, Prop:1002}"
+            },
+            "126100074": {
+                "Description": "연속 패링 그로기 배율",
+                "Param": "{Skill:1261023, Prop:1002}"
+            },
+            "126100075": {
+                "Title": "지원 돌격: 돌풍 휩쓸기"
+            },
+            "126100076": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1261024, Prop:1001}"
+            },
+            "126100077": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1261024, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1261001": {
+            "DamageValue": 3610,
+            "DamageGrowth": 330,
+            "DazeValue": 1530,
+            "DazeGrowth": 70
+        },
+        "1261002": {
+            "DamageValue": 6230,
+            "DamageGrowth": 570,
+            "DazeValue": 4430,
+            "DazeGrowth": 210
+        },
+        "1261003": {
+            "DamageValue": 8350,
+            "DamageGrowth": 760,
+            "DazeValue": 5950,
+            "DazeGrowth": 280
+        },
+        "1261004": {
+            "DamageValue": 16340,
+            "DamageGrowth": 1490,
+            "DazeValue": 10970,
+            "DazeGrowth": 500
+        },
+        "1261005": {
+            "DamageValue": 9880,
+            "DamageGrowth": 900,
+            "DazeValue": 6870,
+            "DazeGrowth": 320
+        },
+        "1261006": {
+            "DamageValue": 29130,
+            "DamageGrowth": 2650,
+            "DazeValue": 20000,
+            "DazeGrowth": 910
+        },
+        "1261007": {
+            "DamageValue": 30080,
+            "DamageGrowth": 2740,
+            "DazeValue": 22920,
+            "DazeGrowth": 1050
+        },
+        "1261008": {
+            "DamageValue": 16130,
+            "DamageGrowth": 1470,
+            "DazeValue": 12290,
+            "DazeGrowth": 560
+        },
+        "1261009": {
+            "DamageValue": 5780,
+            "DamageGrowth": 530,
+            "DazeValue": 5780,
+            "DazeGrowth": 270
+        },
+        "1261010": {
+            "DamageValue": 57470,
+            "DamageGrowth": 5230,
+            "DazeValue": 46810,
+            "DazeGrowth": 2130
+        },
+        "1261011": {
+            "DamageValue": 7150,
+            "DamageGrowth": 650,
+            "DazeValue": 3580,
+            "DazeGrowth": 170
+        },
+        "1261012": {
+            "DamageValue": 7150,
+            "DamageGrowth": 650,
+            "DazeValue": 3580,
+            "DazeGrowth": 170
+        },
+        "1261013": {
+            "DamageValue": 10450,
+            "DamageGrowth": 950,
+            "DazeValue": 5230,
+            "DazeGrowth": 240
+        },
+        "1261014": {
+            "DamageValue": 34120,
+            "DamageGrowth": 3110,
+            "DazeValue": 22920,
+            "DazeGrowth": 1050
+        },
+        "1261015": {
+            "DamageValue": 34120,
+            "DamageGrowth": 3110,
+            "DazeValue": 22920,
+            "DazeGrowth": 1050
+        },
+        "1261016": {
+            "DamageValue": 38700,
+            "DamageGrowth": 3520,
+            "DazeValue": 24750,
+            "DazeGrowth": 1130
+        },
+        "1261017": {
+            "DamageValue": 63260,
+            "DamageGrowth": 5760,
+            "DazeValue": 23760,
+            "DazeGrowth": 1080
+        },
+        "1261018": {
+            "DamageValue": 147060,
+            "DamageGrowth": 13370,
+            "DazeValue": 18650,
+            "DazeGrowth": 850
+        },
+        "1261019": {
+            "DamageValue": 11920,
+            "DamageGrowth": 1090,
+            "DazeValue": 11920,
+            "DazeGrowth": 550
+        },
+        "1261020": {
+            "DamageValue": 13750,
+            "DamageGrowth": 1250,
+            "DazeValue": 13750,
+            "DazeGrowth": 630
+        },
+        "1261021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1261022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1261023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1261024": {
+            "DamageValue": 34550,
+            "DamageGrowth": 3150,
+            "DazeValue": 29900,
+            "DazeGrowth": 1360
+        },
+        "1261025": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1261026": {
+            "DamageValue": 35630,
+            "DamageGrowth": 3240,
+            "DazeValue": 13580,
+            "DazeGrowth": 620
+        },
+        "1261027": {
+            "DamageValue": 138020,
+            "DamageGrowth": 12550,
+            "DazeValue": 57530,
+            "DazeGrowth": 2620
+        },
+        "1261028": {
+            "DamageValue": 6000,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1261029": {
+            "DamageValue": 60000,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

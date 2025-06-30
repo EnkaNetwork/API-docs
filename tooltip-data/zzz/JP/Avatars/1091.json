@@ -1,0 +1,523 @@
+{
+    "Name": "星見雅",
+    "ElementTypes": [
+        "Ice"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "雪上に霜を加う",
+            "Description": "<color=#FFFFFF>「霜月の構え」</color>中、<color=#FFFFFF>「落霜」</color>を1Pt消費するたびに、<color=#FFFFFF>『通常攻撃：霜月』</color>がターゲットの防御力を6%無視する、最大6重まで重ね掛け可能、<color=#FFFFFF>「霜月の構え」</color>を解くと上記バフ効果が終了する。<color=#FFFFFF>『通常攻撃：霜月』</color>でチャージを3段階目まで上げて、<color=#FFFFFF>「霜灼」</color>状態の敵に斬撃を放つと、即座にターゲットの<color=#FFFFFF>「霜灼」</color>状態を打ち消し、メンバー全員の状態異常蓄積効率+20%、継続時間10秒。",
+            "Lore": "雅は、幼い頃から霜雪にまつわる句を詠むのが好きだった。\n初めはよく理解できなかった彼女だが、来る日も来る日も、頭の中で句を反芻し続けた。\nある日、彼女はふとその真意を悟ったが…\nそれは雪降る晴れた夜ではなく、刀と刀がぶつかり合う戦場でだった。"
+        },
+        "2": {
+            "Title": "吐納法",
+            "Description": "<color=#FFFFFF>『通常攻撃：風花』</color>と<color=#FFFFFF>『回避反撃』</color>の与ダメージ+30%。<color=#FFFFFF>『通常攻撃：風花』</color>5段目の最後の一撃が敵に命中した時、星見雅が<color=#FFFFFF>「落霜」</color>を1Pt獲得する。フィールド入場時、星見雅は即座に<color=#FFFFFF>「落霜」</color>を6Pt獲得し、自身の会心率+15%。",
+            "Lore": "「刀剣常の如し、心もまた是の如し。」——星見流剣術の訓戒の1つである。\n武士の修行において、敵を倒すことはその道の初歩に過ぎない。\n勝利するには、百戦に弛まず、いかなる時も平常の心を持つべし。"
+        },
+        "3": {
+            "Title": "武芸者の素養",
+            "Description": "<color=#FFFFFF>『通常攻撃』</color>、<color=#FFFFFF>『回避』</color>、<color=#FFFFFF>『支援スキル』</color>、<color=#FFFFFF>『特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>のスキルレベル+2",
+            "Lore": "武家の出である雅だが、彼女の鍛錬の習慣は群を抜いている。\n剣術の稽古は、一日たりとも欠かしてはならぬもの…\nなに？会議？出なくともよいだろう。"
+        },
+        "4": {
+            "Title": "皸裂",
+            "Description": "<color=#FFFFFF>「霜灼・破」</color>の与ダメージ+30%、<color=#FFFFFF>「霜灼・破」</color>発動時、星見雅がデシベル値を追加で250Pt獲得する。",
+            "Lore": "戦いの最中であっても、心静かに句を詠み、呼吸の律動を整える。\n少女の心と気息は、咲くを待つ蕾の如く…共に最高の状態となる。"
+        },
+        "5": {
+            "Title": "記憶されるべき日",
+            "Description": "<color=#FFFFFF>『通常攻撃』</color>、<color=#FFFFFF>『回避』</color>、<color=#FFFFFF>『支援スキル』</color>、<color=#FFFFFF>『特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>のスキルレベル+2",
+            "Lore": "少女は花束を手に、いつもの場所を訪れた。\n白い吐息が冷たい空気に溶けて消える。\n慰霊碑に刻まれた名前を指でなぞる彼女を、\nまるで見守っているかのように…何もかもが静かだった。"
+        },
+        "6": {
+            "Title": "天賦の才",
+            "Description": "<color=#FFFFFF>「霜月の構え」</color>中、星見雅は<color=#FFFFFF>「極意」</color>効果を得る、それにより<color=#FFFFFF>『通常攻撃：霜月』</color>の与ダメージ+30%。<color=#FFFFFF>「極意」</color>効果を得た後、星見雅が<color=#FFFFFF>「落霜」</color>を消費した時、現在のチャージ段階に応じて自動で刀を抜き、前方に強力な斬撃を放つ。<color=#FFFFFF>「落霜」</color>が尽きない限り、抜刀斬撃は<color=#FFFFFF>「霜月の構え」</color>でのチャージ進捗を中断しない。1回の<color=#FFFFFF>「霜月の構え」</color>中に連続で発動できる抜刀斬撃は最大で3回。",
+            "Lore": "幾度にもわたる戦いの果てに、人々は確信を持つようになった——\nもしこの世に刀剣の神が存在するのなら、\nそれは星見雅を寵愛しているに違いない、と。"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "コアパッシブ：寒炎",
+            "DescriptionByLevel": {
+                "1": "星見雅が敵に<color=#98EFF0>霜烈属性ダメージ</color>を与えた時、ターゲットに<color=#FFFFFF>「氷焔」</color>を付与する、継続時間30秒。<color=#FFFFFF>「氷焔」</color>を付与された敵に<color=#98EFF0>霜烈属性の状態異常蓄積値</color>を蓄積させると、<color=#98EFF0>霜烈属性の状態異常蓄積効率</color>が星見雅の会心率100%分アップする、最大80%アップできる。星見雅が<color=#98EFF0>霜烈属性の状態異常蓄積値</color>を蓄積させると、霜烈属性専用の状態異常ゲージが溜まる。それによる<color=#98EFF0>「凍結」</color>もしくは<color=#98EFF0>「砕氷」</color>、および<color=#98EFF0>「霜寒」</color>効果は、<color=#98EFF0>氷属性</color>を含む別属性の状態異常効果と共に<color=#FFFFFF>「混沌」</color>を発動させることが可能。\n<color=#FFFFFF>「氷焔」</color>を付与された敵に<color=#98EFF0>「霜寒」</color>効果を与えると、<color=#FFFFFF>「氷焔」</color>が打ち消され、<color=#FFFFFF>「霜灼・破」</color>を発動する。<color=#FFFFFF>「霜灼・破」</color>を発動すると、ターゲットに対して星見雅の攻撃力<color=#2BAD00>750%</color>分の<color=#98EFF0>霜烈属性ダメージ</color>を与えると同時に、ターゲットを<color=#FFFFFF>「霜灼」</color>状態にする。<color=#FFFFFF>「霜灼」</color>状態の敵に対し、全ユニットによる状態異常蓄積値が<color=#2BAD00>14%</color>アップするが、今回の「霜灼」状態が終了するまで該当ターゲットに再び<color=#FFFFFF>「氷焔」</color>を付与することはできない。<color=#FFFFFF>「霜灼」</color>状態は、今回の<color=#98EFF0>「霜寒」</color>効果と共に終了する。上記状態継続中、敵に再び状態異常効果を与えると、<color=#98EFF0>「霜寒」</color>が上書きされると共に、<color=#FFFFFF>「霜灼」</color>が打ち消される。\n<color=#FFFFFF>「霜灼・破」</color>発動時、星見雅が<color=#FFFFFF>「落霜」</color>を1Pt獲得する、10秒に1回のみ発動可能。",
+                "2": "星見雅が敵に<color=#98EFF0>霜烈属性ダメージ</color>を与えた時、ターゲットに<color=#FFFFFF>「氷焔」</color>を付与する、継続時間30秒。<color=#FFFFFF>「氷焔」</color>を付与された敵に<color=#98EFF0>霜烈属性の状態異常蓄積値</color>を蓄積させると、<color=#98EFF0>霜烈属性の状態異常蓄積効率</color>が星見雅の会心率100%分アップする、最大80%アップできる。星見雅が<color=#98EFF0>霜烈属性の状態異常蓄積値</color>を蓄積させると、霜烈属性専用の状態異常ゲージが溜まる。それによる<color=#98EFF0>「凍結」</color>もしくは<color=#98EFF0>「砕氷」</color>、および<color=#98EFF0>「霜寒」</color>効果は、<color=#98EFF0>氷属性</color>を含む別属性の状態異常効果と共に<color=#FFFFFF>「混沌」</color>を発動させることが可能。\n<color=#FFFFFF>「氷焔」</color>を付与された敵に<color=#98EFF0>「霜寒」</color>効果を与えると、<color=#FFFFFF>「氷焔」</color>が打ち消され、<color=#FFFFFF>「霜灼・破」</color>を発動する。<color=#FFFFFF>「霜灼・破」</color>を発動すると、ターゲットに対して星見雅の攻撃力<color=#2BAD00>875%</color>分の<color=#98EFF0>霜烈属性ダメージ</color>を与えると同時に、ターゲットを<color=#FFFFFF>「霜灼」</color>状態にする。<color=#FFFFFF>「霜灼」</color>状態の敵に対し、全ユニットによる状態異常蓄積値が<color=#2BAD00>15%</color>アップするが、今回の「霜灼」状態が終了するまで該当ターゲットに再び<color=#FFFFFF>「氷焔」</color>を付与することはできない。<color=#FFFFFF>「霜灼」</color>状態は、今回の<color=#98EFF0>「霜寒」</color>効果と共に終了する。上記状態継続中、敵に再び状態異常効果を与えると、<color=#98EFF0>「霜寒」</color>が上書きされると共に、<color=#FFFFFF>「霜灼」</color>が打ち消される。\n<color=#FFFFFF>「霜灼・破」</color>発動時、星見雅が<color=#FFFFFF>「落霜」</color>を1Pt獲得する、10秒に1回のみ発動可能。",
+                "3": "星見雅が敵に<color=#98EFF0>霜烈属性ダメージ</color>を与えた時、ターゲットに<color=#FFFFFF>「氷焔」</color>を付与する、継続時間30秒。<color=#FFFFFF>「氷焔」</color>を付与された敵に<color=#98EFF0>霜烈属性の状態異常蓄積値</color>を蓄積させると、<color=#98EFF0>霜烈属性の状態異常蓄積効率</color>が星見雅の会心率100%分アップする、最大80%アップできる。星見雅が<color=#98EFF0>霜烈属性の状態異常蓄積値</color>を蓄積させると、霜烈属性専用の状態異常ゲージが溜まる。それによる<color=#98EFF0>「凍結」</color>もしくは<color=#98EFF0>「砕氷」</color>、および<color=#98EFF0>「霜寒」</color>効果は、<color=#98EFF0>氷属性</color>を含む別属性の状態異常効果と共に<color=#FFFFFF>「混沌」</color>を発動させることが可能。\n<color=#FFFFFF>「氷焔」</color>を付与された敵に<color=#98EFF0>「霜寒」</color>効果を与えると、<color=#FFFFFF>「氷焔」</color>が打ち消され、<color=#FFFFFF>「霜灼・破」</color>を発動する。<color=#FFFFFF>「霜灼・破」</color>を発動すると、ターゲットに対して星見雅の攻撃力<color=#2BAD00>1000%</color>分の<color=#98EFF0>霜烈属性ダメージ</color>を与えると同時に、ターゲットを<color=#FFFFFF>「霜灼」</color>状態にする。<color=#FFFFFF>「霜灼」</color>状態の敵に対し、全ユニットによる状態異常蓄積値が<color=#2BAD00>16%</color>アップするが、今回の「霜灼」状態が終了するまで該当ターゲットに再び<color=#FFFFFF>「氷焔」</color>を付与することはできない。<color=#FFFFFF>「霜灼」</color>状態は、今回の<color=#98EFF0>「霜寒」</color>効果と共に終了する。上記状態継続中、敵に再び状態異常効果を与えると、<color=#98EFF0>「霜寒」</color>が上書きされると共に、<color=#FFFFFF>「霜灼」</color>が打ち消される。\n<color=#FFFFFF>「霜灼・破」</color>発動時、星見雅が<color=#FFFFFF>「落霜」</color>を1Pt獲得する、10秒に1回のみ発動可能。",
+                "4": "星見雅が敵に<color=#98EFF0>霜烈属性ダメージ</color>を与えた時、ターゲットに<color=#FFFFFF>「氷焔」</color>を付与する、継続時間30秒。<color=#FFFFFF>「氷焔」</color>を付与された敵に<color=#98EFF0>霜烈属性の状態異常蓄積値</color>を蓄積させると、<color=#98EFF0>霜烈属性の状態異常蓄積効率</color>が星見雅の会心率100%分アップする、最大80%アップできる。星見雅が<color=#98EFF0>霜烈属性の状態異常蓄積値</color>を蓄積させると、霜烈属性専用の状態異常ゲージが溜まる。それによる<color=#98EFF0>「凍結」</color>もしくは<color=#98EFF0>「砕氷」</color>、および<color=#98EFF0>「霜寒」</color>効果は、<color=#98EFF0>氷属性</color>を含む別属性の状態異常効果と共に<color=#FFFFFF>「混沌」</color>を発動させることが可能。\n<color=#FFFFFF>「氷焔」</color>を付与された敵に<color=#98EFF0>「霜寒」</color>効果を与えると、<color=#FFFFFF>「氷焔」</color>が打ち消され、<color=#FFFFFF>「霜灼・破」</color>を発動する。<color=#FFFFFF>「霜灼・破」</color>を発動すると、ターゲットに対して星見雅の攻撃力<color=#2BAD00>1125%</color>分の<color=#98EFF0>霜烈属性ダメージ</color>を与えると同時に、ターゲットを<color=#FFFFFF>「霜灼」</color>状態にする。<color=#FFFFFF>「霜灼」</color>状態の敵に対し、全ユニットによる状態異常蓄積値が<color=#2BAD00>17%</color>アップするが、今回の「霜灼」状態が終了するまで該当ターゲットに再び<color=#FFFFFF>「氷焔」</color>を付与することはできない。<color=#FFFFFF>「霜灼」</color>状態は、今回の<color=#98EFF0>「霜寒」</color>効果と共に終了する。上記状態継続中、敵に再び状態異常効果を与えると、<color=#98EFF0>「霜寒」</color>が上書きされると共に、<color=#FFFFFF>「霜灼」</color>が打ち消される。\n<color=#FFFFFF>「霜灼・破」</color>発動時、星見雅が<color=#FFFFFF>「落霜」</color>を1Pt獲得する、10秒に1回のみ発動可能。",
+                "5": "星見雅が敵に<color=#98EFF0>霜烈属性ダメージ</color>を与えた時、ターゲットに<color=#FFFFFF>「氷焔」</color>を付与する、継続時間30秒。<color=#FFFFFF>「氷焔」</color>を付与された敵に<color=#98EFF0>霜烈属性の状態異常蓄積値</color>を蓄積させると、<color=#98EFF0>霜烈属性の状態異常蓄積効率</color>が星見雅の会心率100%分アップする、最大80%アップできる。星見雅が<color=#98EFF0>霜烈属性の状態異常蓄積値</color>を蓄積させると、霜烈属性専用の状態異常ゲージが溜まる。それによる<color=#98EFF0>「凍結」</color>もしくは<color=#98EFF0>「砕氷」</color>、および<color=#98EFF0>「霜寒」</color>効果は、<color=#98EFF0>氷属性</color>を含む別属性の状態異常効果と共に<color=#FFFFFF>「混沌」</color>を発動させることが可能。\n<color=#FFFFFF>「氷焔」</color>を付与された敵に<color=#98EFF0>「霜寒」</color>効果を与えると、<color=#FFFFFF>「氷焔」</color>が打ち消され、<color=#FFFFFF>「霜灼・破」</color>を発動する。<color=#FFFFFF>「霜灼・破」</color>を発動すると、ターゲットに対して星見雅の攻撃力<color=#2BAD00>1250%</color>分の<color=#98EFF0>霜烈属性ダメージ</color>を与えると同時に、ターゲットを<color=#FFFFFF>「霜灼」</color>状態にする。<color=#FFFFFF>「霜灼」</color>状態の敵に対し、全ユニットによる状態異常蓄積値が<color=#2BAD00>18%</color>アップするが、今回の「霜灼」状態が終了するまで該当ターゲットに再び<color=#FFFFFF>「氷焔」</color>を付与することはできない。<color=#FFFFFF>「霜灼」</color>状態は、今回の<color=#98EFF0>「霜寒」</color>効果と共に終了する。上記状態継続中、敵に再び状態異常効果を与えると、<color=#98EFF0>「霜寒」</color>が上書きされると共に、<color=#FFFFFF>「霜灼」</color>が打ち消される。\n<color=#FFFFFF>「霜灼・破」</color>発動時、星見雅が<color=#FFFFFF>「落霜」</color>を1Pt獲得する、10秒に1回のみ発動可能。",
+                "6": "星見雅が敵に<color=#98EFF0>霜烈属性ダメージ</color>を与えた時、ターゲットに<color=#FFFFFF>「氷焔」</color>を付与する、継続時間30秒。<color=#FFFFFF>「氷焔」</color>を付与された敵に<color=#98EFF0>霜烈属性の状態異常蓄積値</color>を蓄積させると、<color=#98EFF0>霜烈属性の状態異常蓄積効率</color>が星見雅の会心率100%分アップする、最大80%アップできる。星見雅が<color=#98EFF0>霜烈属性の状態異常蓄積値</color>を蓄積させると、霜烈属性専用の状態異常ゲージが溜まる。それによる<color=#98EFF0>「凍結」</color>もしくは<color=#98EFF0>「砕氷」</color>、および<color=#98EFF0>「霜寒」</color>効果は、<color=#98EFF0>氷属性</color>を含む別属性の状態異常効果と共に<color=#FFFFFF>「混沌」</color>を発動させることが可能。\n<color=#FFFFFF>「氷焔」</color>を付与された敵に<color=#98EFF0>「霜寒」</color>効果を与えると、<color=#FFFFFF>「氷焔」</color>が打ち消され、<color=#FFFFFF>「霜灼・破」</color>を発動する。<color=#FFFFFF>「霜灼・破」</color>を発動すると、ターゲットに対して星見雅の攻撃力<color=#2BAD00>1375%</color>分の<color=#98EFF0>霜烈属性ダメージ</color>を与えると同時に、ターゲットを<color=#FFFFFF>「霜灼」</color>状態にする。<color=#FFFFFF>「霜灼」</color>状態の敵に対し、全ユニットによる状態異常蓄積値が<color=#2BAD00>19%</color>アップするが、今回の「霜灼」状態が終了するまで該当ターゲットに再び<color=#FFFFFF>「氷焔」</color>を付与することはできない。<color=#FFFFFF>「霜灼」</color>状態は、今回の<color=#98EFF0>「霜寒」</color>効果と共に終了する。上記状態継続中、敵に再び状態異常効果を与えると、<color=#98EFF0>「霜寒」</color>が上書きされると共に、<color=#FFFFFF>「霜灼」</color>が打ち消される。\n<color=#FFFFFF>「霜灼・破」</color>発動時、星見雅が<color=#FFFFFF>「落霜」</color>を1Pt獲得する、10秒に1回のみ発動可能。",
+                "7": "星見雅が敵に<color=#98EFF0>霜烈属性ダメージ</color>を与えた時、ターゲットに<color=#FFFFFF>「氷焔」</color>を付与する、継続時間30秒。<color=#FFFFFF>「氷焔」</color>を付与された敵に<color=#98EFF0>霜烈属性の状態異常蓄積値</color>を蓄積させると、<color=#98EFF0>霜烈属性の状態異常蓄積効率</color>が星見雅の会心率100%分アップする、最大80%アップできる。星見雅が<color=#98EFF0>霜烈属性の状態異常蓄積値</color>を蓄積させると、霜烈属性専用の状態異常ゲージが溜まる。それによる<color=#98EFF0>「凍結」</color>もしくは<color=#98EFF0>「砕氷」</color>、および<color=#98EFF0>「霜寒」</color>効果は、<color=#98EFF0>氷属性</color>を含む別属性の状態異常効果と共に<color=#FFFFFF>「混沌」</color>を発動させることが可能。\n<color=#FFFFFF>「氷焔」</color>を付与された敵に<color=#98EFF0>「霜寒」</color>効果を与えると、<color=#FFFFFF>「氷焔」</color>が打ち消され、<color=#FFFFFF>「霜灼・破」</color>を発動する。<color=#FFFFFF>「霜灼・破」</color>を発動すると、ターゲットに対して星見雅の攻撃力<color=#2BAD00>1500%</color>分の<color=#98EFF0>霜烈属性ダメージ</color>を与えると同時に、ターゲットを<color=#FFFFFF>「霜灼」</color>状態にする。<color=#FFFFFF>「霜灼」</color>状態の敵に対し、全ユニットによる状態異常蓄積値が<color=#2BAD00>20%</color>アップするが、今回の「霜灼」状態が終了するまで該当ターゲットに再び<color=#FFFFFF>「氷焔」</color>を付与することはできない。<color=#FFFFFF>「霜灼」</color>状態は、今回の<color=#98EFF0>「霜寒」</color>効果と共に終了する。上記状態継続中、敵に再び状態異常効果を与えると、<color=#98EFF0>「霜寒」</color>が上書きされると共に、<color=#FFFFFF>「霜灼」</color>が打ち消される。\n<color=#FFFFFF>「霜灼・破」</color>発動時、星見雅が<color=#FFFFFF>「落霜」</color>を1Pt獲得する、10秒に1回のみ発動可能。"
+            }
+        },
+        "MathSkill": {
+            "Title": "追加能力：霜雪を共に沐し",
+            "Description": "チームに<color=#FFFFFF>[支援]</color>メンバーまたは自身と同じ陣営のメンバーがいる時に発動：\n<color=#FFFFFF>『通常攻撃：霜月』</color>の与ダメージ+60%。任意のメンバーが<color=#FFFFFF>「混沌」</color>効果を発動した時、星見雅が<color=#FFFFFF>「落霜」</color>を2Pt獲得し、次の<color=#FFFFFF>「霜月の構え」</color>中、<color=#FFFFFF>『通常攻撃：霜月』</color>がターゲットの<color=#98EFF0>氷属性ダメージ耐性</color>を30%無視する。"
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "109100001": {
+                "Title": "通常攻撃：風花",
+                "Description": " <IconMap:Icon_Normal> を押して発動：\n前方に最大5段の斬撃を放つ。最初の2段は<color=#F0D12B>物理属性ダメージ</color>を与え、以降の3段は<color=#98EFF0>霜烈属性ダメージ</color>を与える。\n5段目の<color=#FFFFFF>『通常攻撃』</color>発動中、敵の攻撃をガードできる。"
+            },
+            "109100002": {
+                "Title": "通常攻撃：霜月",
+                "Description": "<color=#FFFFFF>「落霜」</color>を2Pt以上所持している時に <IconMap:Icon_Normal> を長押しして発動：\n星見雅は刀を収めて<color=#FFFFFF>「霜月の構え」</color>を取り、チャージ状態に入る。1段階分のチャージで<color=#FFFFFF>「落霜」</color>を2Pt消費する、チャージ段階は最大で3段階まで上がる。\n<color=#FFFFFF>「落霜」</color>が尽きた時、または <IconMap:Icon_Normal> を離した時、星見雅は刀を抜き、現在のチャージ段階に応じて前方に強力な斬撃を放ち、<color=#98EFF0>霜烈属性ダメージ</color>を大量に与え、その後<color=#FFFFFF>「霜月の構え」</color>を解く。\n<color=#FFFFFF>「霜月の構え」</color>中、無敵効果を得る。\n星見雅は最大で<color=#FFFFFF>「落霜」</color>を6Pt所持できる。フィールド入場時、星見雅は即座に<color=#FFFFFF>「落霜」</color>を3Pt獲得する。"
+            },
+            "109110001": {
+                "Title": "通常攻撃：風花"
+            },
+            "109110002": {
+                "Description": "1段ダメージ倍率",
+                "Param": "{Skill:1091001, Prop:1001}"
+            },
+            "109110003": {
+                "Description": "2段ダメージ倍率",
+                "Param": "{Skill:1091002, Prop:1001}"
+            },
+            "109110004": {
+                "Description": "3段ダメージ倍率",
+                "Param": "{Skill:1091003, Prop:1001}"
+            },
+            "109110005": {
+                "Description": "4段ダメージ倍率",
+                "Param": "{Skill:1091004, Prop:1001}"
+            },
+            "109110006": {
+                "Description": "5段ダメージ倍率",
+                "Param": "{Skill:1091005, Prop:1001}"
+            },
+            "109110007": {
+                "Description": "1段ブレイク倍率",
+                "Param": "{Skill:1091001, Prop:1002}"
+            },
+            "109110008": {
+                "Description": "2段ブレイク倍率",
+                "Param": "{Skill:1091002, Prop:1002}"
+            },
+            "109110009": {
+                "Description": "3段ブレイク倍率",
+                "Param": "{Skill:1091003, Prop:1002}"
+            },
+            "109110010": {
+                "Description": "4段ブレイク倍率",
+                "Param": "{Skill:1091004, Prop:1002}"
+            },
+            "109110011": {
+                "Description": "5段ブレイク倍率",
+                "Param": "{Skill:1091005, Prop:1002}"
+            },
+            "109110047": {
+                "Title": "通常攻撃：霜月"
+            },
+            "109110048": {
+                "Description": "1段階チャージ斬撃ダメージ倍率",
+                "Param": "{Skill:1091027, Prop:1001}"
+            },
+            "109110049": {
+                "Description": "2段階チャージ斬撃ダメージ倍率",
+                "Param": "{Skill:1091028, Prop:1001}"
+            },
+            "109110050": {
+                "Description": "3段階チャージ斬撃ダメージ倍率",
+                "Param": "{Skill:1091029, Prop:1001}"
+            },
+            "109110051": {
+                "Description": "1段階チャージ斬撃ブレイク倍率",
+                "Param": "{Skill:1091027, Prop:1002}"
+            },
+            "109110052": {
+                "Description": "2段階チャージ斬撃ブレイク倍率",
+                "Param": "{Skill:1091028, Prop:1002}"
+            },
+            "109110053": {
+                "Description": "3段階チャージ斬撃ブレイク倍率",
+                "Param": "{Skill:1091029, Prop:1002}"
+            }
+        },
+        "1": {
+            "109100003": {
+                "Title": "特殊スキル：深雪",
+                "Description": " <IconMap:Icon_Special> を押して発動：\n素早く刀を抜いて前方に斬撃を放ち、<color=#98EFF0>霜烈属性ダメージ</color>を与える。\nスキル発動中、中断耐性レベルがアップする。"
+            },
+            "109100004": {
+                "Title": "強化特殊スキル：飛雪",
+                "Description": "エネルギーが溜まっている状態で <IconMap:Icon_SpecialReady> を押して発動：\n一瞬で間合いを詰めて、進路上の敵に強力な斬撃を放ち、<color=#98EFF0>霜烈属性ダメージ</color>を大量に与える。\nスキル発動時、<color=#FFFFFF>「落霜」</color>を2Pt獲得する。\nスキル発動中、無敵効果を得る。\nスキル発動後、エネルギーが溜まっている状態で再び <IconMap:Icon_SpecialReady> を押して発動：\nエネルギーを追加で消費し、前方範囲内の敵に強力な追撃を発動し、<color=#98EFF0>霜烈属性ダメージ</color>を大量に与える。\nスキル発動時、<color=#FFFFFF>「落霜」</color>を2Pt獲得する。\nスキル発動中、無敵効果を得る。"
+            },
+            "109110015": {
+                "Title": "特殊スキル：深雪"
+            },
+            "109110016": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1091008, Prop:1001}"
+            },
+            "109110017": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1091008, Prop:1002}"
+            },
+            "109110018": {
+                "Title": "強化特殊スキル：飛雪"
+            },
+            "109110019": {
+                "Description": "斬撃ダメージ倍率",
+                "Param": "{{Skill:1091009, Prop:1001} + {Skill:1091010, Prop:1001}}"
+            },
+            "109110020": {
+                "Description": "追撃ダメージ倍率",
+                "Param": "{{Skill:1091011, Prop:1001} + {Skill:1091012, Prop:1001}}"
+            },
+            "109110021": {
+                "Description": "斬撃ブレイク倍率",
+                "Param": "{{Skill:1091009, Prop:1002} + {Skill:1091010, Prop:1002}}"
+            },
+            "109110022": {
+                "Description": "追撃ブレイク倍率",
+                "Param": "{{Skill:1091011, Prop:1002} + {Skill:1091012, Prop:1002}}"
+            },
+            "109110023": {
+                "Description": "斬撃エネルギー消費",
+                "Param": "40Pt"
+            },
+            "109110024": {
+                "Description": "追撃エネルギー消費",
+                "Param": "40Pt"
+            }
+        },
+        "2": {
+            "109100005": {
+                "Title": "回避：水鳥",
+                "Description": " <IconMap:Icon_Evade> を押して発動：\nダッシュで高速回避する。\nスキル発動中、無敵効果を得る。\n回避時に <IconMap:Icon_Evade> を連打または長押しして発動：\nダッシュで長距離の回避を行う。\nスキル発動中、無敵効果を得る。"
+            },
+            "109100006": {
+                "Title": "ダッシュ攻撃：冬蜂",
+                "Description": "回避時に <IconMap:Icon_Normal> を押して発動：\n前方に斬撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。"
+            },
+            "109100007": {
+                "Title": "回避反撃：寒雀",
+                "Description": "<color=#FFFFFF>『極限回避』</color>後に <IconMap:Icon_Normal> を押して発動：\n前方の敵に斬撃を放ち、<color=#98EFF0>霜烈属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。"
+            },
+            "109110025": {
+                "Title": "ダッシュ攻撃：冬蜂"
+            },
+            "109110026": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1091013, Prop:1001}"
+            },
+            "109110027": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1091013, Prop:1002}"
+            },
+            "109110028": {
+                "Title": "回避反撃：寒雀"
+            },
+            "109110029": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1091014, Prop:1001}"
+            },
+            "109110030": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1091014, Prop:1002}"
+            }
+        },
+        "3": {
+            "109100008": {
+                "Title": "連携スキル：春来たる",
+                "Description": "<color=#FFFFFF>『連携スキル』</color>開始時に、対応するエージェントを選択して発動：\n前方広範囲の敵に強力な斬撃を放ち、<color=#98EFF0>霜烈属性ダメージ</color>を大量に与える。\nスキル発動中、無敵効果を得る。"
+            },
+            "109100009": {
+                "Title": "終結スキル：なごり雪",
+                "Description": "デシベルレートが<color=#FFFFFF>『Maximum』</color>に達した時に <IconMap:Icon_UltimateReady> を押して発動：\n前方広範囲の敵に強力な斬撃を行い、少し間をおいてとどめの一撃を放ち、<color=#98EFF0>霜烈属性ダメージ</color>を大量に与える。\nスキル発動時、<color=#FFFFFF>「落霜」</color>を3Pt獲得し、自身の与える<color=#98EFF0>氷属性ダメージ</color>+30%、継続時間12秒。\nスキル発動中、無敵効果を得る。"
+            },
+            "109110031": {
+                "Title": "連携スキル：春来たる"
+            },
+            "109110032": {
+                "Description": "ダメージ倍率",
+                "Param": "{{Skill:1091015, Prop:1001} + {Skill:1091016, Prop:1001} + {Skill:1091017, Prop:1001}}"
+            },
+            "109110033": {
+                "Description": "ブレイク倍率",
+                "Param": "{{Skill:1091015, Prop:1002} + {Skill:1091016, Prop:1002} + {Skill:1091017, Prop:1002}}"
+            },
+            "109110034": {
+                "Title": "終結スキル：なごり雪"
+            },
+            "109110035": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1091018, Prop:1001}"
+            },
+            "109110036": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1091018, Prop:1002}"
+            }
+        },
+        "6": {
+            "109100011": {
+                "Title": "クイック支援：花信風",
+                "Description": "操作しているメンバーが吹き飛ばされた時に、 <IconMap:Icon_Switch> を押して発動：\n前方の敵に斬撃を放ち、<color=#98EFF0>霜烈属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。"
+            },
+            "109100012": {
+                "Title": "パリィ支援：花筏",
+                "Description": "出場中のメンバーが攻撃されそうになった時に、 <IconMap:Icon_Switch> を押して発動：\n敵の攻撃をパリィし、ブレイク値を大量に蓄積する。\nスキル発動中、無敵効果を得る。"
+            },
+            "109100013": {
+                "Title": "支援突撃：帰り花",
+                "Description": "<color=#FFFFFF>『パリィ支援』</color>発動後、 <IconMap:Icon_Normal> を押して発動：\n前方の敵に突進斬撃を放ち、<color=#98EFF0>霜烈属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。"
+            },
+            "109110037": {
+                "Title": "クイック支援：花信風"
+            },
+            "109110038": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1091021, Prop:1001}"
+            },
+            "109110039": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1091021, Prop:1002}"
+            },
+            "109110040": {
+                "Title": "パリィ支援：花筏"
+            },
+            "109110041": {
+                "Description": "パリィ・軽 ブレイク倍率",
+                "Param": "{Skill:1091022, Prop:1002}"
+            },
+            "109110042": {
+                "Description": "パリィ・重 ブレイク倍率",
+                "Param": "{Skill:1091023, Prop:1002}"
+            },
+            "109110043": {
+                "Description": "パリィ・連続 ブレイク倍率",
+                "Param": "{Skill:1091024, Prop:1002}"
+            },
+            "109110044": {
+                "Title": "支援突撃：帰り花"
+            },
+            "109110045": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1091025, Prop:1001}"
+            },
+            "109110046": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1091025, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1091001": {
+            "DamageValue": 2690,
+            "DamageGrowth": 250,
+            "DazeValue": 1350,
+            "DazeGrowth": 70
+        },
+        "1091002": {
+            "DamageValue": 2960,
+            "DamageGrowth": 270,
+            "DazeValue": 2690,
+            "DazeGrowth": 130
+        },
+        "1091003": {
+            "DamageValue": 6280,
+            "DamageGrowth": 580,
+            "DazeValue": 4640,
+            "DazeGrowth": 220
+        },
+        "1091004": {
+            "DamageValue": 9650,
+            "DamageGrowth": 880,
+            "DazeValue": 8210,
+            "DazeGrowth": 380
+        },
+        "1091005": {
+            "DamageValue": 12900,
+            "DamageGrowth": 1180,
+            "DazeValue": 13100,
+            "DazeGrowth": 600
+        },
+        "1091006": {
+            "DamageValue": 6280,
+            "DamageGrowth": 580,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1091007": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1091008": {
+            "DamageValue": 3580,
+            "DamageGrowth": 330,
+            "DazeValue": 3580,
+            "DazeGrowth": 170
+        },
+        "1091009": {
+            "DamageValue": 15740,
+            "DamageGrowth": 1440,
+            "DazeValue": 12870,
+            "DazeGrowth": 590
+        },
+        "1091010": {
+            "DamageValue": 23600,
+            "DamageGrowth": 2150,
+            "DazeValue": 19300,
+            "DazeGrowth": 880
+        },
+        "1091011": {
+            "DamageValue": 19330,
+            "DamageGrowth": 1760,
+            "DazeValue": 16200,
+            "DazeGrowth": 740
+        },
+        "1091012": {
+            "DamageValue": 28990,
+            "DamageGrowth": 2640,
+            "DazeValue": 24300,
+            "DazeGrowth": 1110
+        },
+        "1091013": {
+            "DamageValue": 2580,
+            "DamageGrowth": 240,
+            "DazeValue": 1290,
+            "DazeGrowth": 60
+        },
+        "1091014": {
+            "DamageValue": 24590,
+            "DamageGrowth": 2240,
+            "DazeValue": 21450,
+            "DazeGrowth": 980
+        },
+        "1091015": {
+            "DamageValue": 18840,
+            "DamageGrowth": 1720,
+            "DazeValue": 5670,
+            "DazeGrowth": 260
+        },
+        "1091016": {
+            "DamageValue": 18840,
+            "DamageGrowth": 1720,
+            "DazeValue": 5670,
+            "DazeGrowth": 260
+        },
+        "1091017": {
+            "DamageValue": 25120,
+            "DamageGrowth": 2290,
+            "DazeValue": 7560,
+            "DazeGrowth": 350
+        },
+        "1091018": {
+            "DamageValue": 238800,
+            "DamageGrowth": 21710,
+            "DazeValue": 37040,
+            "DazeGrowth": 1690
+        },
+        "1091019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1091020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1091021": {
+            "DamageValue": 10450,
+            "DamageGrowth": 950,
+            "DazeValue": 10450,
+            "DazeGrowth": 480
+        },
+        "1091022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1091023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1091024": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 12830,
+            "DazeGrowth": 590
+        },
+        "1091025": {
+            "DamageValue": 33780,
+            "DamageGrowth": 3080,
+            "DazeValue": 29190,
+            "DazeGrowth": 1330
+        },
+        "1091026": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1091027": {
+            "DamageValue": 45470,
+            "DamageGrowth": 4140,
+            "DazeValue": 4400,
+            "DazeGrowth": 200
+        },
+        "1091028": {
+            "DamageValue": 85810,
+            "DamageGrowth": 7810,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1091029": {
+            "DamageValue": 214110,
+            "DamageGrowth": 19470,
+            "DazeValue": 37780,
+            "DazeGrowth": 1720
+        },
+        "1091030": {
+            "DamageValue": 11730,
+            "DamageGrowth": 1070,
+            "DazeValue": 5870,
+            "DazeGrowth": 270
+        },
+        "1091031": {
+            "DamageValue": 33170,
+            "DamageGrowth": 3020,
+            "DazeValue": 14030,
+            "DazeGrowth": 640
+        },
+        "1091032": {
+            "DamageValue": 33170,
+            "DamageGrowth": 3020,
+            "DazeValue": 70130,
+            "DazeGrowth": 3190
+        },
+        "1091033": {
+            "DamageValue": 17050,
+            "DamageGrowth": 1550,
+            "DazeValue": 17050,
+            "DazeGrowth": 780
+        },
+        "1091034": {
+            "DamageValue": 17050,
+            "DamageGrowth": 1550,
+            "DazeValue": 85250,
+            "DazeGrowth": 3880
+        },
+        "1091035": {
+            "DamageValue": 72000,
+            "DamageGrowth": 0,
+            "DazeValue": 4400,
+            "DazeGrowth": 0
+        },
+        "1091036": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

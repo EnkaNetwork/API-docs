@@ -1,0 +1,532 @@
+{
+    "Name": "라이터",
+    "ElementTypes": [
+        "Fire"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "무패의 챔피언",
+            "Description": "<color=#FFFFFF>[핵심 패시브: 조연제]</color>에서 부여한 디버프 효과 중 <color=#FFFFFF>[궤멸]</color> 효과가 그로기 상태 지속 시간을 5초 증가시키며, <color=#98EFF0>얼음 속성 피해 저항</color> 및 <color=#FF5521>불 속성 피해 저항</color>이 추가로 10% 감소한다. 라이트 펀치 혹은 잽 러시 기간에 <color=#FFFFFF>[사기]</color>를 소진하고 자동으로 이어서 강력한 종결의 일격을 시전할 시, 강력한 종결의 일격으로 주는 피해가 30% 증가한다.",
+            "Lore": "무패의 챔피언의 승리는 중요하다. 단장을 대신해 위협을 처리하기 위해——그리고 팀에 사기를 불어넣기 위해, \n가장 강력한 적과 결투를 벌인다.\n그에겐 오직 승리만이 칭송할 만한 가치를 가진다.\n「무패의 챔피언은 쓰러지지 않아」"
+        },
+        "2": {
+            "Title": "빨간 스카프",
+            "Description": "<color=#FFFFFF>[핵심 패시브: 조연제]</color>를 통해 타깃에게 <color=#FFFFFF>[궤멸]</color> 효과 부여 시, 타깃의 그로기 약체화 배율이 25% 증가한다. <color=#FFFFFF>[추가 능력: 드높은 투지]</color> 중 <color=#FFFFFF>[격앙]</color>이 제공하는 <color=#98EFF0>얼음 속성 피해</color> 및 <color=#FF5521>불 속성 피해</color> 버프 효과가 기존의 120%까지 증가한다.",
+            "Lore": "칼리돈의 자손의 「빨간 스카프」, 라이터는 외환선에서 유명세를 떨치고 있다.\n이는 그의 주먹뿐만 아니라 특유의 말투 때문이기도 하다…\n「나도 한가한 게 좋긴 한데… 내가 없어도 괜찮겠어?」"
+        },
+        "3": {
+            "Title": "용병 단장",
+            "Description": "<color=#FFFFFF>[일반 공격]</color>, <color=#FFFFFF>[회피]</color>, <color=#FFFFFF>[지원 스킬]</color>, <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[콤보 스킬]</color>의 스킬 레벨+2",
+            "Lore": "「아마 세상에서 나만큼 단장 자리에 안 맞는 사람도 없을 거야」"
+        },
+        "4": {
+            "Title": "선글라스",
+            "Description": "라이터가 대기 캐릭터일 때 출전 캐릭터의 에너지 자동 회복 효율이 10% 증가한다. 라이터가 <color=#FFFFFF>[사기 분출]</color> 상태에 진입할 시 대기 캐릭터의 에너지를 4pt 회복한다. 18초 동안 최대 1회 발동한다.",
+            "Lore": "「왜 선글라스를 쓰냐고? 음… 피를 보면 어지럽거든. 아마도?」"
+        },
+        "5": {
+            "Title": "결정권자",
+            "Description": "<color=#FFFFFF>[일반 공격]</color>, <color=#FFFFFF>[회피]</color>, <color=#FFFFFF>[지원 스킬]</color>, <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[콤보 스킬]</color>의 스킬 레벨+2",
+            "Lore": "「명령을 내리면 내가 수행할게. 간단하지?」\n라이터는 선글라스를 치켜올리곤 무심한 미소를 짓는다.\n「더 이상 내가 결정하게 하지만 마」"
+        },
+        "6": {
+            "Title": "생존자",
+            "Description": "라이터의 <color=#FFFFFF>[사기]</color> 회복 효율이 기존의 200%까지 증가한다. 라이터의 <color=#FFFFFF>[일반 공격]</color>, <color=#FFFFFF>[회피 반격]</color>, <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[강화 특수 스킬]</color>, <color=#FFFFFF>[빠른 지원]</color>, <color=#FFFFFF>[지원 돌격]</color>, <color=#FFFFFF>[콤보 스킬]</color>, <color=#FFFFFF>[궁극기]</color> 중 시전한 강공격이 적에게 명중 시 <color=#FFFFFF>[화염 폭발]</color> 효과를 발동하여 공격력의 250%에 해당하는 <color=#FF5521>불 속성 피해</color>를 준다. 적마다 8초 동안 최대 1회 발동한다. 라이터의 충격력이 170pt보다 높을 시 초과한 충격력 1pt당 <color=#FFFFFF>[화염 폭발]</color>의 배율이 추가로 5% 증가한다. 최대 증가: 500%. 라이트 펀치 혹은 잽 러시 기간 동안 <color=#FFFFFF>[사기]</color>를 소진하고 자동으로 이어서 시전한 강력한 종결의 일격이 적에게 명중 시, 재사용 대기시간을 무시하고 추가로 <color=#FFFFFF>[화염 폭발]</color> 효과를 1회 발동할 수 있다.",
+            "Lore": "다시 돌아간다면 그는 절대 유일한 생존자가 되는 것을 선택하지 않을 것이다.\n하지만 운명은 선택할 수 없다."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "핵심 패시브: 조연제",
+            "DescriptionByLevel": {
+                "1": "라이터가 시간에 따라 자동으로 <color=#FFFFFF>[사기]</color>를 획득하며 1초마다 2.9pt를 회복한다. 파티 중 임의의 캐릭터가 에너지를 1pt 소모할 때마다 라이터가 추가로 <color=#FFFFFF>[사기]</color>를 0.26pt 회복하며, 최대 100pt의 <color=#FFFFFF>[사기]</color>를 보유할 수 있다. <color=#FFFFFF>[사기]</color>가 80pt까지 회복되면 다음번 교체 출전 시 바로 <color=#FFFFFF>[빠른 지원]</color>을 시전한다. <color=#FFFFFF>[사기]</color>가 80pt 이상일 때 라이터가 다섯 번째 <color=#FFFFFF>[일반 공격]</color> 시전 시, <color=#FFFFFF>[사기 분출]</color> 상태에 진입하며 다섯 번째 <color=#FFFFFF>[일반 공격]</color> 중 라이트 펀치, 잽 러시 및 종결의 일격의 위력이 증가한다. 위력 증가 후 스킬이 적에게 명중 시 지속적으로 <color=#FFFFFF>[사기]</color>를 소모하며, <color=#FFFFFF>[사기]</color>를 10pt 소모할 때마다 라이터의 충격력이 <color=#2BAD00>1%</color> 증가한다. 최대 증가: <color=#2BAD00>10%</color>, 지속 시간: 6초\n<color=#FFFFFF>[사기 분출]</color> 상태에서는 시간에 따라 자동으로 <color=#FFFFFF>[사기]</color>를 획득할 수 없으며 라이트 펀치 혹은 잽 러시 기간 동안 <color=#FFFFFF>[사기]</color> 소진 시, 자동으로 더 강력한 종결의 일격을 바로 이어서 시전한다.\n<color=#FFFFFF>[사기 분출]</color> 상태에서 라이트 펀치 혹은 잽 러시가 적에게 명중 시 타깃의 <color=#98EFF0>얼음 속성 피해 저항</color> 및 <color=#FF5521>불 속성 피해 저항</color>이 15% 감소한다. 지속 시간: 30초\n<color=#FFFFFF>[사기 분출]</color> 상태에서 종결의 일격이 적에게 명중 시 타깃에게 <color=#FFFFFF>[궤멸]</color> 효과를 부여하며, 해당 타깃이 그로기 상태에 진입한 후의 그로기 상태 지속 시간이 3초 증가한다. 그로기 상태에서 회복되기 전까지 <color=#FFFFFF>[궤멸]</color> 효과는 동일한 타깃에게 최대 1회 발동된다.\n다섯 번째 <color=#FFFFFF>[일반 공격]</color>의 종결의 일격이 적에게 명중하거나, 대기 상태로 복귀 혹은 <color=#FFFFFF>[사기]</color> 소진 시 <color=#FFFFFF>[사기 분출]</color> 상태가 종료되며, 아직 소모하지 않은 <color=#FFFFFF>[사기]</color>는 보류된다.",
+                "2": "라이터가 시간에 따라 자동으로 <color=#FFFFFF>[사기]</color>를 획득하며 1초마다 2.9pt를 회복한다. 파티 중 임의의 캐릭터가 에너지를 1pt 소모할 때마다 라이터가 추가로 <color=#FFFFFF>[사기]</color>를 0.26pt 회복하며, 최대 100pt의 <color=#FFFFFF>[사기]</color>를 보유할 수 있다. <color=#FFFFFF>[사기]</color>가 80pt까지 회복되면 다음번 교체 출전 시 바로 <color=#FFFFFF>[빠른 지원]</color>을 시전한다. <color=#FFFFFF>[사기]</color>가 80pt 이상일 때 라이터가 다섯 번째 <color=#FFFFFF>[일반 공격]</color> 시전 시, <color=#FFFFFF>[사기 분출]</color> 상태에 진입하며 다섯 번째 <color=#FFFFFF>[일반 공격]</color> 중 라이트 펀치, 잽 러시 및 종결의 일격의 위력이 증가한다. 위력 증가 후 스킬이 적에게 명중 시 지속적으로 <color=#FFFFFF>[사기]</color>를 소모하며, <color=#FFFFFF>[사기]</color>를 10pt 소모할 때마다 라이터의 충격력이 <color=#2BAD00>1.17%</color> 증가한다. 최대 증가: <color=#2BAD00>11.7%</color>, 지속 시간: 6초\n<color=#FFFFFF>[사기 분출]</color> 상태에서는 시간에 따라 자동으로 <color=#FFFFFF>[사기]</color>를 획득할 수 없으며 라이트 펀치 혹은 잽 러시 기간 동안 <color=#FFFFFF>[사기]</color> 소진 시, 자동으로 더 강력한 종결의 일격을 바로 이어서 시전한다.\n<color=#FFFFFF>[사기 분출]</color> 상태에서 라이트 펀치 혹은 잽 러시가 적에게 명중 시 타깃의 <color=#98EFF0>얼음 속성 피해 저항</color> 및 <color=#FF5521>불 속성 피해 저항</color>이 15% 감소한다. 지속 시간: 30초\n<color=#FFFFFF>[사기 분출]</color> 상태에서 종결의 일격이 적에게 명중 시 타깃에게 <color=#FFFFFF>[궤멸]</color> 효과를 부여하며, 해당 타깃이 그로기 상태에 진입한 후의 그로기 상태 지속 시간이 3초 증가한다. 그로기 상태에서 회복되기 전까지 <color=#FFFFFF>[궤멸]</color> 효과는 동일한 타깃에게 최대 1회 발동된다.\n다섯 번째 <color=#FFFFFF>[일반 공격]</color>의 종결의 일격이 적에게 명중하거나, 대기 상태로 복귀 혹은 <color=#FFFFFF>[사기]</color> 소진 시 <color=#FFFFFF>[사기 분출]</color> 상태가 종료되며, 아직 소모하지 않은 <color=#FFFFFF>[사기]</color>는 보류된다.",
+                "3": "라이터가 시간에 따라 자동으로 <color=#FFFFFF>[사기]</color>를 획득하며 1초마다 2.9pt를 회복한다. 파티 중 임의의 캐릭터가 에너지를 1pt 소모할 때마다 라이터가 추가로 <color=#FFFFFF>[사기]</color>를 0.26pt 회복하며, 최대 100pt의 <color=#FFFFFF>[사기]</color>를 보유할 수 있다. <color=#FFFFFF>[사기]</color>가 80pt까지 회복되면 다음번 교체 출전 시 바로 <color=#FFFFFF>[빠른 지원]</color>을 시전한다. <color=#FFFFFF>[사기]</color>가 80pt 이상일 때 라이터가 다섯 번째 <color=#FFFFFF>[일반 공격]</color> 시전 시, <color=#FFFFFF>[사기 분출]</color> 상태에 진입하며 다섯 번째 <color=#FFFFFF>[일반 공격]</color> 중 라이트 펀치, 잽 러시 및 종결의 일격의 위력이 증가한다. 위력 증가 후 스킬이 적에게 명중 시 지속적으로 <color=#FFFFFF>[사기]</color>를 소모하며, <color=#FFFFFF>[사기]</color>를 10pt 소모할 때마다 라이터의 충격력이 <color=#2BAD00>1.33%</color> 증가한다. 최대 증가: <color=#2BAD00>13.3%</color>, 지속 시간: 6초\n<color=#FFFFFF>[사기 분출]</color> 상태에서는 시간에 따라 자동으로 <color=#FFFFFF>[사기]</color>를 획득할 수 없으며 라이트 펀치 혹은 잽 러시 기간 동안 <color=#FFFFFF>[사기]</color> 소진 시, 자동으로 더 강력한 종결의 일격을 바로 이어서 시전한다.\n<color=#FFFFFF>[사기 분출]</color> 상태에서 라이트 펀치 혹은 잽 러시가 적에게 명중 시 타깃의 <color=#98EFF0>얼음 속성 피해 저항</color> 및 <color=#FF5521>불 속성 피해 저항</color>이 15% 감소한다. 지속 시간: 30초\n<color=#FFFFFF>[사기 분출]</color> 상태에서 종결의 일격이 적에게 명중 시 타깃에게 <color=#FFFFFF>[궤멸]</color> 효과를 부여하며, 해당 타깃이 그로기 상태에 진입한 후의 그로기 상태 지속 시간이 3초 증가한다. 그로기 상태에서 회복되기 전까지 <color=#FFFFFF>[궤멸]</color> 효과는 동일한 타깃에게 최대 1회 발동된다.\n다섯 번째 <color=#FFFFFF>[일반 공격]</color>의 종결의 일격이 적에게 명중하거나, 대기 상태로 복귀 혹은 <color=#FFFFFF>[사기]</color> 소진 시 <color=#FFFFFF>[사기 분출]</color> 상태가 종료되며, 아직 소모하지 않은 <color=#FFFFFF>[사기]</color>는 보류된다.",
+                "4": "라이터가 시간에 따라 자동으로 <color=#FFFFFF>[사기]</color>를 획득하며 1초마다 2.9pt를 회복한다. 파티 중 임의의 캐릭터가 에너지를 1pt 소모할 때마다 라이터가 추가로 <color=#FFFFFF>[사기]</color>를 0.26pt 회복하며, 최대 100pt의 <color=#FFFFFF>[사기]</color>를 보유할 수 있다. <color=#FFFFFF>[사기]</color>가 80pt까지 회복되면 다음번 교체 출전 시 바로 <color=#FFFFFF>[빠른 지원]</color>을 시전한다. <color=#FFFFFF>[사기]</color>가 80pt 이상일 때 라이터가 다섯 번째 <color=#FFFFFF>[일반 공격]</color> 시전 시, <color=#FFFFFF>[사기 분출]</color> 상태에 진입하며 다섯 번째 <color=#FFFFFF>[일반 공격]</color> 중 라이트 펀치, 잽 러시 및 종결의 일격의 위력이 증가한다. 위력 증가 후 스킬이 적에게 명중 시 지속적으로 <color=#FFFFFF>[사기]</color>를 소모하며, <color=#FFFFFF>[사기]</color>를 10pt 소모할 때마다 라이터의 충격력이 <color=#2BAD00>1.5%</color> 증가한다. 최대 증가: <color=#2BAD00>15%</color>, 지속 시간: 6초\n<color=#FFFFFF>[사기 분출]</color> 상태에서는 시간에 따라 자동으로 <color=#FFFFFF>[사기]</color>를 획득할 수 없으며 라이트 펀치 혹은 잽 러시 기간 동안 <color=#FFFFFF>[사기]</color> 소진 시, 자동으로 더 강력한 종결의 일격을 바로 이어서 시전한다.\n<color=#FFFFFF>[사기 분출]</color> 상태에서 라이트 펀치 혹은 잽 러시가 적에게 명중 시 타깃의 <color=#98EFF0>얼음 속성 피해 저항</color> 및 <color=#FF5521>불 속성 피해 저항</color>이 15% 감소한다. 지속 시간: 30초\n<color=#FFFFFF>[사기 분출]</color> 상태에서 종결의 일격이 적에게 명중 시 타깃에게 <color=#FFFFFF>[궤멸]</color> 효과를 부여하며, 해당 타깃이 그로기 상태에 진입한 후의 그로기 상태 지속 시간이 3초 증가한다. 그로기 상태에서 회복되기 전까지 <color=#FFFFFF>[궤멸]</color> 효과는 동일한 타깃에게 최대 1회 발동된다.\n다섯 번째 <color=#FFFFFF>[일반 공격]</color>의 종결의 일격이 적에게 명중하거나, 대기 상태로 복귀 혹은 <color=#FFFFFF>[사기]</color> 소진 시 <color=#FFFFFF>[사기 분출]</color> 상태가 종료되며, 아직 소모하지 않은 <color=#FFFFFF>[사기]</color>는 보류된다.",
+                "5": "라이터가 시간에 따라 자동으로 <color=#FFFFFF>[사기]</color>를 획득하며 1초마다 2.9pt를 회복한다. 파티 중 임의의 캐릭터가 에너지를 1pt 소모할 때마다 라이터가 추가로 <color=#FFFFFF>[사기]</color>를 0.26pt 회복하며, 최대 100pt의 <color=#FFFFFF>[사기]</color>를 보유할 수 있다. <color=#FFFFFF>[사기]</color>가 80pt까지 회복되면 다음번 교체 출전 시 바로 <color=#FFFFFF>[빠른 지원]</color>을 시전한다. <color=#FFFFFF>[사기]</color>가 80pt 이상일 때 라이터가 다섯 번째 <color=#FFFFFF>[일반 공격]</color> 시전 시, <color=#FFFFFF>[사기 분출]</color> 상태에 진입하며 다섯 번째 <color=#FFFFFF>[일반 공격]</color> 중 라이트 펀치, 잽 러시 및 종결의 일격의 위력이 증가한다. 위력 증가 후 스킬이 적에게 명중 시 지속적으로 <color=#FFFFFF>[사기]</color>를 소모하며, <color=#FFFFFF>[사기]</color>를 10pt 소모할 때마다 라이터의 충격력이 <color=#2BAD00>1.67%</color> 증가한다. 최대 증가: <color=#2BAD00>16.7%</color>, 지속 시간: 6초\n<color=#FFFFFF>[사기 분출]</color> 상태에서는 시간에 따라 자동으로 <color=#FFFFFF>[사기]</color>를 획득할 수 없으며 라이트 펀치 혹은 잽 러시 기간 동안 <color=#FFFFFF>[사기]</color> 소진 시, 자동으로 더 강력한 종결의 일격을 바로 이어서 시전한다.\n<color=#FFFFFF>[사기 분출]</color> 상태에서 라이트 펀치 혹은 잽 러시가 적에게 명중 시 타깃의 <color=#98EFF0>얼음 속성 피해 저항</color> 및 <color=#FF5521>불 속성 피해 저항</color>이 15% 감소한다. 지속 시간: 30초\n<color=#FFFFFF>[사기 분출]</color> 상태에서 종결의 일격이 적에게 명중 시 타깃에게 <color=#FFFFFF>[궤멸]</color> 효과를 부여하며, 해당 타깃이 그로기 상태에 진입한 후의 그로기 상태 지속 시간이 3초 증가한다. 그로기 상태에서 회복되기 전까지 <color=#FFFFFF>[궤멸]</color> 효과는 동일한 타깃에게 최대 1회 발동된다.\n다섯 번째 <color=#FFFFFF>[일반 공격]</color>의 종결의 일격이 적에게 명중하거나, 대기 상태로 복귀 혹은 <color=#FFFFFF>[사기]</color> 소진 시 <color=#FFFFFF>[사기 분출]</color> 상태가 종료되며, 아직 소모하지 않은 <color=#FFFFFF>[사기]</color>는 보류된다.",
+                "6": "라이터가 시간에 따라 자동으로 <color=#FFFFFF>[사기]</color>를 획득하며 1초마다 2.9pt를 회복한다. 파티 중 임의의 캐릭터가 에너지를 1pt 소모할 때마다 라이터가 추가로 <color=#FFFFFF>[사기]</color>를 0.26pt 회복하며, 최대 100pt의 <color=#FFFFFF>[사기]</color>를 보유할 수 있다. <color=#FFFFFF>[사기]</color>가 80pt까지 회복되면 다음번 교체 출전 시 바로 <color=#FFFFFF>[빠른 지원]</color>을 시전한다. <color=#FFFFFF>[사기]</color>가 80pt 이상일 때 라이터가 다섯 번째 <color=#FFFFFF>[일반 공격]</color> 시전 시, <color=#FFFFFF>[사기 분출]</color> 상태에 진입하며 다섯 번째 <color=#FFFFFF>[일반 공격]</color> 중 라이트 펀치, 잽 러시 및 종결의 일격의 위력이 증가한다. 위력 증가 후 스킬이 적에게 명중 시 지속적으로 <color=#FFFFFF>[사기]</color>를 소모하며, <color=#FFFFFF>[사기]</color>를 10pt 소모할 때마다 라이터의 충격력이 <color=#2BAD00>1.83%</color> 증가한다. 최대 증가: <color=#2BAD00>18.3%</color>, 지속 시간: 6초\n<color=#FFFFFF>[사기 분출]</color> 상태에서는 시간에 따라 자동으로 <color=#FFFFFF>[사기]</color>를 획득할 수 없으며 라이트 펀치 혹은 잽 러시 기간 동안 <color=#FFFFFF>[사기]</color> 소진 시, 자동으로 더 강력한 종결의 일격을 바로 이어서 시전한다.\n<color=#FFFFFF>[사기 분출]</color> 상태에서 라이트 펀치 혹은 잽 러시가 적에게 명중 시 타깃의 <color=#98EFF0>얼음 속성 피해 저항</color> 및 <color=#FF5521>불 속성 피해 저항</color>이 15% 감소한다. 지속 시간: 30초\n<color=#FFFFFF>[사기 분출]</color> 상태에서 종결의 일격이 적에게 명중 시 타깃에게 <color=#FFFFFF>[궤멸]</color> 효과를 부여하며, 해당 타깃이 그로기 상태에 진입한 후의 그로기 상태 지속 시간이 3초 증가한다. 그로기 상태에서 회복되기 전까지 <color=#FFFFFF>[궤멸]</color> 효과는 동일한 타깃에게 최대 1회 발동된다.\n다섯 번째 <color=#FFFFFF>[일반 공격]</color>의 종결의 일격이 적에게 명중하거나, 대기 상태로 복귀 혹은 <color=#FFFFFF>[사기]</color> 소진 시 <color=#FFFFFF>[사기 분출]</color> 상태가 종료되며, 아직 소모하지 않은 <color=#FFFFFF>[사기]</color>는 보류된다.",
+                "7": "라이터가 시간에 따라 자동으로 <color=#FFFFFF>[사기]</color>를 획득하며 1초마다 2.9pt를 회복한다. 파티 중 임의의 캐릭터가 에너지를 1pt 소모할 때마다 라이터가 추가로 <color=#FFFFFF>[사기]</color>를 0.26pt 회복하며, 최대 100pt의 <color=#FFFFFF>[사기]</color>를 보유할 수 있다. <color=#FFFFFF>[사기]</color>가 80pt까지 회복되면 다음번 교체 출전 시 바로 <color=#FFFFFF>[빠른 지원]</color>을 시전한다. <color=#FFFFFF>[사기]</color>가 80pt 이상일 때 라이터가 다섯 번째 <color=#FFFFFF>[일반 공격]</color> 시전 시, <color=#FFFFFF>[사기 분출]</color> 상태에 진입하며 다섯 번째 <color=#FFFFFF>[일반 공격]</color> 중 라이트 펀치, 잽 러시 및 종결의 일격의 위력이 증가한다. 위력 증가 후 스킬이 적에게 명중 시 지속적으로 <color=#FFFFFF>[사기]</color>를 소모하며, <color=#FFFFFF>[사기]</color>를 10pt 소모할 때마다 라이터의 충격력이 <color=#2BAD00>2%</color> 증가한다. 최대 증가: <color=#2BAD00>20%</color>, 지속 시간: 6초\n<color=#FFFFFF>[사기 분출]</color> 상태에서는 시간에 따라 자동으로 <color=#FFFFFF>[사기]</color>를 획득할 수 없으며 라이트 펀치 혹은 잽 러시 기간 동안 <color=#FFFFFF>[사기]</color> 소진 시, 자동으로 더 강력한 종결의 일격을 바로 이어서 시전한다.\n<color=#FFFFFF>[사기 분출]</color> 상태에서 라이트 펀치 혹은 잽 러시가 적에게 명중 시 타깃의 <color=#98EFF0>얼음 속성 피해 저항</color> 및 <color=#FF5521>불 속성 피해 저항</color>이 15% 감소한다. 지속 시간: 30초\n<color=#FFFFFF>[사기 분출]</color> 상태에서 종결의 일격이 적에게 명중 시 타깃에게 <color=#FFFFFF>[궤멸]</color> 효과를 부여하며, 해당 타깃이 그로기 상태에 진입한 후의 그로기 상태 지속 시간이 3초 증가한다. 그로기 상태에서 회복되기 전까지 <color=#FFFFFF>[궤멸]</color> 효과는 동일한 타깃에게 최대 1회 발동된다.\n다섯 번째 <color=#FFFFFF>[일반 공격]</color>의 종결의 일격이 적에게 명중하거나, 대기 상태로 복귀 혹은 <color=#FFFFFF>[사기]</color> 소진 시 <color=#FFFFFF>[사기 분출]</color> 상태가 종료되며, 아직 소모하지 않은 <color=#FFFFFF>[사기]</color>는 보류된다."
+            }
+        },
+        "MathSkill": {
+            "Title": "추가 능력: 드높은 투지",
+            "Description": "파티에 <color=#FFFFFF>[강공]</color> 캐릭터 혹은 자신과 진영이 같은 캐릭터가 존재할 시 발동:\n<color=#FFFFFF>[사기 분출]</color> 상태에서 라이터의 다섯 번째 <color=#FFFFFF>[일반 공격]</color>이 적에게 명중 시, 파티 내 모든 캐릭터가 <color=#FFFFFF>[격앙]</color>을 1스택 획득한다. 최대 중첩: 20스택, 지속 시간: 30초, 중복 발동 시 지속 시간이 갱신된다. 보유한 <color=#FFFFFF>[격앙]</color> 1스택마다 에이전트가 주는 <color=#98EFF0>얼음 속성 피해</color> 및 <color=#FF5521>불 속성 피해</color>가 1.25% 증가한다. <color=#FFFFFF>[격앙]</color>을 획득했을 때, 만약 라이터의 충격력이 170pt보다 높으면 초과한 충격력 10pt당 <color=#FFFFFF>[격앙]</color> 스택마다 제공하는 버프 효과가 추가로 0.25% 증가한다. 파티 내 임의의 캐릭터가 <color=#FFFFFF>[콤보 스킬]</color> 시전 시, 파티 내 모든 캐릭터의 <color=#FFFFFF>[격앙]</color> 지속 시간이 갱신된다. <color=#FFFFFF>[격앙]</color>은 에이전트가 주는 <color=#98EFF0>얼음 속성 피해</color> 및 <color=#FF5521>불 속성 피해</color>를 최대 75% 증가시킨다."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "116100001": {
+                "Title": "일반 공격: L식 포효하는 주먹",
+                "Description": "<IconMap:Icon_Normal>을 짧게 탭하거나 홀드하여 시전:\n전방을 향해 최대 5단까지 타격을 펼쳐 <color=#F0D12B>물리 피해</color> 및 <color=#FF5521>불 속성 피해</color>를 준다.\n세 번째 <color=#FFFFFF>[일반 공격]</color> 시전 기간에 {LAYOUT_CONSOLECONTROLLER#스틱을}{LAYOUT_FALLBACK#방향키를} 드래그하는 동시에 <IconMap:Icon_Normal>을 연타 혹은 홀드할 경우, 연속 체술 추가 공격을 지속 시전할 수 있으며, {LAYOUT_CONSOLECONTROLLER#스틱}{LAYOUT_FALLBACK#방향키}에서 손을 떼면 바로 네 번째 <color=#FFFFFF>[일반 공격]</color>으로 이어진다.\n다섯 번째 <color=#FFFFFF>[일반 공격]</color> 라이트 펀치 시전 기간에 {LAYOUT_CONSOLECONTROLLER#스틱을}{LAYOUT_FALLBACK#방향키를} 드래그하는 동시에 <IconMap:Icon_Normal>을 연타 혹은 홀드할 경우, 라이트 펀치와 네 번째 <color=#FFFFFF>[일반 공격]</color>을 순환하여 시전할 수 있으며, {LAYOUT_CONSOLECONTROLLER#스틱}{LAYOUT_FALLBACK#방향키}에서 손을 떼면 바로 잽 러시로 이어진다.\n<IconMap:Icon_Normal>의 연타 혹은 홀드를 유지할 경우, 잽 러시의 지속 시간을 연장할 수 있다.\n<IconMap:Icon_Normal>의 연타 혹은 홀드를 멈추거나 잽 러시의 지속 시간이 끝나면 전방을 향해 종결의 일격을 시전한다. 종결의 일격 기간 동안 무적 효과를 보유한다.\n<color=#FFFFFF>[일반 공격]</color> 다섯 번째 시전 기간 동안 라이터가 받는 피해가 40% 감소한다.\n<color=#FFFFFF>[사기 분출]</color> 상태에서 다섯 번째 <color=#FFFFFF>[일반 공격]</color> 시전 기간 동안 경직 저항 레벨이 증가하고, 피해 감소 효과가 80%까지 증가한다."
+            },
+            "116110001": {
+                "Title": "일반 공격: L식 포효하는 주먹"
+            },
+            "116110002": {
+                "Description": "1단 피해 배율",
+                "Param": "{Skill:1161001, Prop:1001}"
+            },
+            "116110003": {
+                "Description": "2단 피해 배율",
+                "Param": "{Skill:1161002, Prop:1001}"
+            },
+            "116110004": {
+                "Description": "3단 피해 배율",
+                "Param": "{Skill:1161003, Prop:1001}"
+            },
+            "116110005": {
+                "Description": "추가 공격 1단 피해 배율",
+                "Param": "{Skill:1161004, Prop:1001}"
+            },
+            "116110006": {
+                "Description": "추가 공격 2단 피해 배율",
+                "Param": "{Skill:1161005, Prop:1001}"
+            },
+            "116110007": {
+                "Description": "추가 공격 3단 피해 배율",
+                "Param": "{Skill:1161006, Prop:1001}"
+            },
+            "116110008": {
+                "Description": "추가 공격 4단 피해 배율",
+                "Param": "{Skill:1161007, Prop:1001}"
+            },
+            "116110009": {
+                "Description": "추가 공격 5단 피해 배율",
+                "Param": "{Skill:1161008, Prop:1001}"
+            },
+            "116110010": {
+                "Description": "4단 피해 배율",
+                "Param": "{Skill:1161009, Prop:1001}"
+            },
+            "116110011": {
+                "Description": "5단 라이트 펀치 피해 배율",
+                "Param": "{Skill:1161010, Prop:1001}"
+            },
+            "116110012": {
+                "Description": "5단 러시 피해 배율",
+                "Param": "{Skill:1161011, Prop:1001}"
+            },
+            "116110013": {
+                "Description": "5단 종결 피해 배율",
+                "Param": "{Skill:1161012, Prop:1001}"
+            },
+            "116110014": {
+                "Description": "5단 라이트 펀치 피해 배율(사기 분출 상태)",
+                "Param": "{Skill:1161026, Prop:1001}"
+            },
+            "116110015": {
+                "Description": "5단 러시 피해 배율(사기 분출 상태)",
+                "Param": "{Skill:1161027, Prop:1001}"
+            },
+            "116110016": {
+                "Description": "5단 종결 피해 배율(사기 분출 상태)",
+                "Param": "{Skill:1161028, Prop:1001}"
+            },
+            "116110017": {
+                "Description": "5단 강력한 종결 피해 배율(사기 분출 상태)",
+                "Param": "{Skill:1161025, Prop:1001}"
+            },
+            "116110018": {
+                "Description": "1단 그로기 배율",
+                "Param": "{Skill:1161001, Prop:1002}"
+            },
+            "116110019": {
+                "Description": "2단 그로기 배율",
+                "Param": "{Skill:1161002, Prop:1002}"
+            },
+            "116110020": {
+                "Description": "3단 그로기 배율",
+                "Param": "{Skill:1161003, Prop:1002}"
+            },
+            "116110021": {
+                "Description": "추가 공격 1단 그로기 배율",
+                "Param": "{Skill:1161004, Prop:1002}"
+            },
+            "116110022": {
+                "Description": "추가 공격 2단 그로기 배율",
+                "Param": "{Skill:1161005, Prop:1002}"
+            },
+            "116110023": {
+                "Description": "추가 공격 3단 그로기 배율",
+                "Param": "{Skill:1161006, Prop:1002}"
+            },
+            "116110024": {
+                "Description": "추가 공격 4단 그로기 배율",
+                "Param": "{Skill:1161007, Prop:1002}"
+            },
+            "116110025": {
+                "Description": "추가 공격 5단 그로기 배율",
+                "Param": "{Skill:1161008, Prop:1002}"
+            },
+            "116110026": {
+                "Description": "4단 그로기 배율",
+                "Param": "{Skill:1161009, Prop:1002}"
+            },
+            "116110027": {
+                "Description": "5단 라이트 펀치 그로기 배율",
+                "Param": "{Skill:1161010, Prop:1002}"
+            },
+            "116110028": {
+                "Description": "5단 러시 그로기 배율",
+                "Param": "{Skill:1161011, Prop:1002}"
+            },
+            "116110029": {
+                "Description": "5단 종결 그로기 배율",
+                "Param": "{Skill:1161012, Prop:1002}"
+            },
+            "116110030": {
+                "Description": "5단 라이트 펀치 그로기 배율(사기 분출 상태)",
+                "Param": "{Skill:1161026, Prop:1002}"
+            },
+            "116110031": {
+                "Description": "5단 러시 그로기 배율(사기 분출 상태)",
+                "Param": "{Skill:1161027, Prop:1002}"
+            },
+            "116110032": {
+                "Description": "5단 종결 그로기 배율(사기 분출 상태)",
+                "Param": "{Skill:1161028, Prop:1002}"
+            },
+            "116110033": {
+                "Description": "5단 강력한 종결 그로기 배율(사기 분출 상태)",
+                "Param": "{Skill:1161025, Prop:1002}"
+            }
+        },
+        "1": {
+            "116100002": {
+                "Title": "특수 스킬: V식 태양 승권",
+                "Description": "<IconMap:Icon_Special>을 짧게 탭하여 시전:\n어퍼컷으로 전방을 타격해 <color=#FF5521>불 속성 피해</color>를 준다.\n스킬을 시전하는 동안 경직 저항 레벨이 증가한다.\n스텝 회피 기간 동안 <IconMap:Icon_Special>을 짧게 탭하여 시전:\n콤비네이션 블로로 전방을 타격해 <color=#FF5521>불 속성 피해</color>를 준다.\n해당 스킬 시전 시 <color=#FFFFFF>[일반 공격]</color>의 연격 횟수가 끊기지 않는다.\n스킬을 시전하는 동안 경직 저항 레벨이 증가한다."
+            },
+            "116100003": {
+                "Title": "강화 특수 스킬: V식 태양 승권-풀파워",
+                "Description": "에너지가 충분한 상태에서 <IconMap:Icon_SpecialReady>을 짧게 탭하여 시전:\n어퍼컷으로 도약하며 전방을 강력하게 타격해 대량의 <color=#FF5521>불 속성 피해</color>를 준다.\n스킬 시전 기간에 <IconMap:Icon_SpecialReady>을 다시 탭하면 추가로 에너지를 소모해 강력한 추가 공격을 시전하여 대량의 <color=#FF5521>불 속성 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다.\n스킬 시전 후 <IconMap:Icon_Normal>을 탭 혹은 홀드해 네 번째 <color=#FFFFFF>[일반 공격]</color>을 바로 이어서 시전할 수 있다.\n스텝 회피 기간 동안 에너지가 충분한 상태에서 <IconMap:Icon_SpecialReady>을 탭하여 시전:\n콤비네이션 블로로 전방을 강력하게 타격해 대량의 <color=#FF5521>불 속성 피해</color>를 준다.\n해당 스킬을 시전해도 <color=#FFFFFF>[일반 공격]</color>의 연격 횟수가 끊기지 않는다.\n스킬을 시전하는 동안 무적 효과를 보유한다.\n스킬 시전 후, <IconMap:Icon_Normal>을 탭 혹은 홀드해 다섯 번째 <color=#FFFFFF>[일반 공격]</color>을 바로 이어서 시전할 수 있다."
+            },
+            "116110034": {
+                "Title": "특수 스킬: V식 태양 승권"
+            },
+            "116110035": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1161013, Prop:1001}"
+            },
+            "116110036": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1161013, Prop:1002}"
+            },
+            "116110037": {
+                "Title": "강화 특수 스킬: V식 태양 승권-풀파워"
+            },
+            "116110038": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1161014, Prop:1001}"
+            },
+            "116110039": {
+                "Description": "추가 공격 피해 배율",
+                "Param": "{Skill:1161015, Prop:1001}"
+            },
+            "116110040": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1161014, Prop:1002}"
+            },
+            "116110041": {
+                "Description": "추가 공격 그로기 배율",
+                "Param": "{Skill:1161015, Prop:1002}"
+            },
+            "116110042": {
+                "Description": "시전 에너지 소모",
+                "Param": "40pt"
+            },
+            "116110043": {
+                "Description": "추가 공격 에너지 소모",
+                "Param": "20pt"
+            }
+        },
+        "2": {
+            "116100004": {
+                "Title": "회피: 쉐도우 스텝",
+                "Description": "<IconMap:Icon_Evade>을 짧게 탭하여 시전:\n빠른 대시로 회피한다.\n스킬을 시전하는 동안 무적 효과를 보유한다.\n캐릭터가 공격하는 동안 <IconMap:Icon_Evade>을 짧게 탭하여 시전:\n{LAYOUT_CONSOLECONTROLLER#스틱}{LAYOUT_FALLBACK#방향키} 방향으로 스텝 회피를 시전한다.\n해당 스킬 시전 시 <color=#FFFFFF>[일반 공격]</color>의 연격 횟수가 끊기지 않는다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "116100005": {
+                "Title": "대시 공격: 분쇄 주먹",
+                "Description": "회피 시 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n전방을 빠르게 타격해 <color=#F0D12B>물리 피해</color>를 준다."
+            },
+            "116100006": {
+                "Title": "회피 반격: 섬광",
+                "Description": "<color=#FFFFFF>[극한 회피]</color> 발동 후 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n전방의 적을 타격해 <color=#FF5521>불 속성 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다.\n스킬 시전 후 <IconMap:Icon_Normal>을 탭 혹은 홀드하여 다섯 번째 <color=#FFFFFF>[일반 공격]</color>을 바로 이어서 시전할 수 있다."
+            },
+            "116110044": {
+                "Title": "대시 공격: 분쇄 주먹"
+            },
+            "116110045": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1161016, Prop:1001}"
+            },
+            "116110046": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1161016, Prop:1002}"
+            },
+            "116110047": {
+                "Title": "회피 반격: 섬광"
+            },
+            "116110048": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1161017, Prop:1001}"
+            },
+            "116110049": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1161017, Prop:1002}"
+            }
+        },
+        "3": {
+            "116100007": {
+                "Title": "콤보 스킬: V식 작열하는 태양",
+                "Description": "<color=#FFFFFF>[콤보 스킬]</color> 발동 시 해당 캐릭터를 선택해 시전:\n전방 작은 범위 내 적에게 강력한 타격으로 대량의 <color=#FF5521>불 속성 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "116100008": {
+                "Title": "궁극기: W식 챔피언의 염화",
+                "Description": "데시벨 레벨 [Maximum] 달성 시 <IconMap:Icon_UltimateReady>을 짧게 탭하여 시전:\n주변 넓은 범위 내 적에게 강력한 타격으로 대량의 <color=#FF5521>불 속성 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "116110050": {
+                "Title": "콤보 스킬: V식 작열하는 태양"
+            },
+            "116110051": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1161018, Prop:1001}"
+            },
+            "116110052": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1161018, Prop:1002}"
+            },
+            "116110053": {
+                "Title": "궁극기: W식 챔피언의 염화"
+            },
+            "116110054": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1161019, Prop:1001}"
+            },
+            "116110055": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1161019, Prop:1002}"
+            }
+        },
+        "6": {
+            "116100010": {
+                "Title": "빠른 지원: 섬광-수비",
+                "Description": "현재 조작 중인 캐릭터가 넉업되면 <IconMap:Icon_Switch>을 짧게 탭하여 시전:\n전방의 적을 타격해 <color=#FF5521>불 속성 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다.\n스킬 시전 후 <IconMap:Icon_Normal>을 탭 혹은 홀드하여 다섯 번째 <color=#FFFFFF>[일반 공격]</color>을 바로 이어서 시전할 수 있다."
+            },
+            "116100011": {
+                "Title": "패링 지원: 순간 파괴",
+                "Description": "출전 캐릭터 피격 직전에 <IconMap:Icon_Switch>을 짧게 탭하여 시전:\n적의 공격을 패링하고 대량의 그로기 수치를 누적한다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "116100012": {
+                "Title": "지원 돌격: 분쇄 주먹-찌르기",
+                "Description": "<color=#FFFFFF>[패링 지원]</color> 시전 후 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n전방의 적을 타격해 <color=#FF5521>불 속성 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다.\n스킬 시전 후 <IconMap:Icon_Normal>을 탭 혹은 홀드하여 다섯 번째 <color=#FFFFFF>[일반 공격]</color>을 바로 이어서 시전할 수 있다."
+            },
+            "116110056": {
+                "Title": "빠른 지원: 섬광-수비"
+            },
+            "116110057": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1161020, Prop:1001}"
+            },
+            "116110058": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1161020, Prop:1002}"
+            },
+            "116110059": {
+                "Title": "패링 지원: 순간 파괴"
+            },
+            "116110060": {
+                "Description": "가벼운 패링 그로기 배율",
+                "Param": "{Skill:1161021, Prop:1002}"
+            },
+            "116110061": {
+                "Description": "강한 패링 그로기 배율",
+                "Param": "{Skill:1161022, Prop:1002}"
+            },
+            "116110062": {
+                "Description": "연속 패링 그로기 배율",
+                "Param": "{Skill:1161023, Prop:1002}"
+            },
+            "116110063": {
+                "Title": "지원 돌격: 분쇄 주먹-찌르기"
+            },
+            "116110064": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1161024, Prop:1001}"
+            },
+            "116110065": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1161024, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1161001": {
+            "DamageValue": 3920,
+            "DamageGrowth": 360,
+            "DazeValue": 1960,
+            "DazeGrowth": 90
+        },
+        "1161002": {
+            "DamageValue": 4800,
+            "DamageGrowth": 440,
+            "DazeValue": 3290,
+            "DazeGrowth": 150
+        },
+        "1161003": {
+            "DamageValue": 5530,
+            "DamageGrowth": 510,
+            "DazeValue": 4670,
+            "DazeGrowth": 220
+        },
+        "1161004": {
+            "DamageValue": 8690,
+            "DamageGrowth": 790,
+            "DazeValue": 6050,
+            "DazeGrowth": 280
+        },
+        "1161005": {
+            "DamageValue": 4770,
+            "DamageGrowth": 440,
+            "DazeValue": 3320,
+            "DazeGrowth": 160
+        },
+        "1161006": {
+            "DamageValue": 5810,
+            "DamageGrowth": 530,
+            "DazeValue": 4040,
+            "DazeGrowth": 190
+        },
+        "1161007": {
+            "DamageValue": 3280,
+            "DamageGrowth": 300,
+            "DazeValue": 2280,
+            "DazeGrowth": 110
+        },
+        "1161008": {
+            "DamageValue": 8900,
+            "DamageGrowth": 810,
+            "DazeValue": 6190,
+            "DazeGrowth": 290
+        },
+        "1161009": {
+            "DamageValue": 7890,
+            "DamageGrowth": 720,
+            "DazeValue": 7610,
+            "DazeGrowth": 350
+        },
+        "1161010": {
+            "DamageValue": 16360,
+            "DamageGrowth": 1490,
+            "DazeValue": 12950,
+            "DazeGrowth": 590
+        },
+        "1161011": {
+            "DamageValue": 12290,
+            "DamageGrowth": 1120,
+            "DazeValue": 8130,
+            "DazeGrowth": 370
+        },
+        "1161012": {
+            "DamageValue": 10460,
+            "DamageGrowth": 960,
+            "DazeValue": 7950,
+            "DazeGrowth": 370
+        },
+        "1161013": {
+            "DamageValue": 3630,
+            "DamageGrowth": 330,
+            "DazeValue": 3630,
+            "DazeGrowth": 170
+        },
+        "1161014": {
+            "DamageValue": 48630,
+            "DamageGrowth": 4430,
+            "DazeValue": 40350,
+            "DazeGrowth": 1840
+        },
+        "1161015": {
+            "DamageValue": 29270,
+            "DamageGrowth": 2670,
+            "DazeValue": 24770,
+            "DazeGrowth": 1130
+        },
+        "1161016": {
+            "DamageValue": 8990,
+            "DamageGrowth": 820,
+            "DazeValue": 4500,
+            "DazeGrowth": 210
+        },
+        "1161017": {
+            "DamageValue": 18630,
+            "DamageGrowth": 1700,
+            "DazeValue": 16870,
+            "DazeGrowth": 770
+        },
+        "1161018": {
+            "DamageValue": 71210,
+            "DamageGrowth": 6480,
+            "DazeValue": 27320,
+            "DazeGrowth": 1250
+        },
+        "1161019": {
+            "DamageValue": 150800,
+            "DamageGrowth": 13710,
+            "DazeValue": 94740,
+            "DazeGrowth": 4310
+        },
+        "1161020": {
+            "DamageValue": 6970,
+            "DamageGrowth": 640,
+            "DazeValue": 6970,
+            "DazeGrowth": 320
+        },
+        "1161021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1161022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1161023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1161024": {
+            "DamageValue": 21980,
+            "DamageGrowth": 2000,
+            "DazeValue": 18230,
+            "DazeGrowth": 830
+        },
+        "1161025": {
+            "DamageValue": 43540,
+            "DamageGrowth": 3960,
+            "DazeValue": 13240,
+            "DazeGrowth": 610
+        },
+        "1161026": {
+            "DamageValue": 17720,
+            "DamageGrowth": 1620,
+            "DazeValue": 13630,
+            "DazeGrowth": 620
+        },
+        "1161027": {
+            "DamageValue": 36430,
+            "DamageGrowth": 3320,
+            "DazeValue": 8550,
+            "DazeGrowth": 390
+        },
+        "1161028": {
+            "DamageValue": 11970,
+            "DamageGrowth": 1090,
+            "DazeValue": 9210,
+            "DazeGrowth": 420
+        }
+    }
+}

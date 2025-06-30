@@ -1,0 +1,532 @@
+{
+    "Name": "Lighter",
+    "ElementTypes": [
+        "Fire"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "The Champion",
+            "Description": "Debuff musuh yang diberikan dari <color=#FFFFFF>Core Passive: Accelerant</color> mendapatkan peningkatan sebagai berikut: Durasi efek <color=#FFFFFF>Collapse</color> akan membuat status Stun diperpanjang 5 detik. <color=#98EFF0>Ketahanan Ice DMG</color> dan <color=#FF5521>Ketahanan Fire DMG</color> akan mendapatkan pengurangan tambahan sebesar 10%. Saat Lighter lanjut melancarkan serangan terakhir yang kuat (setelah mengonsumsi <color=#FFFFFF>Morale</color> hingga habis saat melancarkan serangan tinju ringan atau kombo tinju jab) secara otomatis, DMG yang diakibatkan serangan terakhir meningkat 30%.",
+            "Lore": "Kemenangan itu sangat krusial bagi sang juara yang tak terkalahkan. Tidak hanya karena dia harus berduel melawan petarung terkuat dari tim oposisi dan mengeliminasi ancaman untuk ketua timnya, tetapi kemenangannya juga akan memberikan anggota tim lainnya dukungan moral yang luar biasa.\nBaginya, hanya kemenangan yang pantas dipuji.\n\"Juara tak terkalahkan tidak boleh gugur.\""
+        },
+        "2": {
+            "Title": "Red Scarf",
+            "Description": "Saat mengakibatkan efek <color=#FFFFFF>Collapse</color> melalui <color=#FFFFFF>Core Passive: Accelerant</color> terhadap musuh, Kelipatan Stun DMG target tersebut akan meningkat sebesar 25%. Selain itu, efek buff untuk <color=#98EFF0>Ice DMG</color> dan <color=#FF5521>Fire DMG</color> yang diberikan <color=#FFFFFF>Elation</color> dari <color=#FFFFFF>Additional Ability: Fighting Spirit</color> akan meningkat sebesar 120% dari nilai awalnya.",
+            "Lore": "Sebagai sang \"Syal Merah\" dari Sons of Calydon, Lighter adalah sosok yang amat terkenal di Outer Ring.\nDia terkenal bukan hanya karena tinjunya, tetapi juga karena... cara bicaranya yang unik.\n\"Meski aku memang suka bersantai-santai, tapi kalian juga tidak sanggup kalau tidak ada aku, kan?\""
+        },
+        "3": {
+            "Title": "Mercenary Leader",
+            "Description": "Level <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, dan <color=#FFFFFF>Chain Attack</color> +2.",
+            "Lore": "\"Aku mungkin orang yang paling tidak cocok untuk jadi seorang pemimpin.\""
+        },
+        "4": {
+            "Title": "Sunglasses",
+            "Description": "Saat Lighter sedang tidak aktif, Energy Regen untuk karakter aktif akan meningkat sebesar 10%. Saat Lighter memasuki status <color=#FFFFFF>Morale Burst</color>, akan memulihkan 4 poin Energy untuk anggota tim yang tidak aktif. Efek ini dapat dipicu sekali setiap 18 detik.",
+            "Lore": "\"Mau tahu kenapa aku selalu pakai kacamata hitam? Ehm... karena aku pusing kalau lihat darah. Kira-kira begitu deh.\""
+        },
+        "5": {
+            "Title": "Decision Maker",
+            "Description": "Level <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, dan <color=#FFFFFF>Chain Attack</color> +2.",
+            "Lore": "\"Beri aku perintah, dan aku akan laksanakan. Simpel, kan?\"\nLighter membetulkan kacamata hitamnya dengan senyuman yang acuh tak acuh.\n\"Tapi intinya, jangan suruh aku yang kasih perintah.\""
+        },
+        "6": {
+            "Title": "Survivor",
+            "Description": "Efek pemulihan dari <color=#FFFFFF>Morale</color> Lighter meningkat hingga 200% nilai awalnya. Jika Lighter mengenai musuh dengan serangan kuat saat melancarkan <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge Counter</color>, <color=#FFFFFF>Special Attack</color>, <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Quick Assist</color>, <color=#FFFFFF>Assist Follow-Up</color>, <color=#FFFFFF>Chain Attack</color>, atau <color=#FFFFFF>Ultimate</color>, maka efek <color=#FFFFFF>Blazing Impact</color> akan terpicu, mengakibatkan 250% ATK sebagai <color=#FF5521>Fire DMG</color>. Efek ini dapat dipicu sekali setiap 8 detik terhadap setiap musuh.\nUntuk setiap 1 poin Impact Lighter yang lebih dari 170 poin, kelipatan dari <color=#FFFFFF>Blazing Impact</color> akan meningkat sebanyak 5% (maks. meningkat 500%). Saat mengonsumsi habis <color=#FFFFFF>Morale</color> ketika melancarkan tinju ringan atau kombo tinju jab, Lighter akan langsung melanjutkan serangannya dengan serangan terakhir yang kuat. Jika serangan terakhir ini mengenai musuh, maka CD efek akan terabaikan, dan <color=#FFFFFF>Blazing Impact</color> bisa dipicu sekali lagi.",
+            "Lore": "Jika diberi kesempatan sekali lagi, dia pasti tidak akan memilih untuk menjadi satu-satunya yang selamat.\nNamun sayangnya, takdir adalah hal yang tidak bisa dipilih."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Core Passive: Accelerant",
+            "DescriptionByLevel": {
+                "1": "Lighter akan otomatis memulihkan 2,9 poin <color=#FFFFFF>Morale</color> setiap detik. Saat Agen mana pun di dalam tim mengonsumsi 1 poin Energy, Lighter akan memulihkan 0,26 poin <color=#FFFFFF>Morale</color> tambahan (Lighter maks. dapat memiliki 100 poin <color=#FFFFFF>Morale</color>).\n\nSaat <color=#FFFFFF>Morale</color> mencapai 80 poin, Lighter akan langsung melancarkan <color=#FFFFFF>Quick Assist</color> saat memasuki medan pertarungan di kali berikutnya.\nSetelah <color=#FFFFFF>Morale</color> mencapai 80 poin atau lebih, jika Lighter melancarkan <color=#FFFFFF>Basic Attack</color> tahap kelima, maka dia akan memasuki status <color=#FFFFFF>Morale Burst</color> yang akan meningkatkan kekuatan tinju ringan, kombo tinju jab, dan serangan terakhir dari <color=#FFFFFF>Basic Attack</color> tahap kelima. Saat serangan yang ditingkatkan mengenai musuh, Lighter akan mengonsumsi <color=#FFFFFF>Morale</color> secara terus-menerus. Setiap 10 poin <color=#FFFFFF>Morale</color> yang dikonsumsi, Impact Lighter akan meningkat sebesar <color=#2BAD00>1%</color> selama 6 detik (maks. meningkat hingga <color=#2BAD00>10%</color>).\n\nSaat berada dalam status <color=#FFFFFF>Morale Burst</color>, Lighter tidak akan lagi memulihkan <color=#FFFFFF>Morale</color> secara otomatis. Jika <color=#FFFFFF>Morale</color> yang dimiliki habis terkonsumsi saat melancarkan tinju ringan atau kombo tinju jab, Lighter akan lanjut melancarkan serangan terakhir yang lebih kuat secara otomatis.\nSaat berada dalam status <color=#FFFFFF>Morale Burst</color>, jika serangan tinju ringan atau kombo tinju jab mengenai musuh, <color=#98EFF0>Ketahanan Ice DMG</color> dan <color=#FF5521>Ketahanan Fire DMG</color> musuh tersebut akan berkurang 15% selama 30 detik.\nSaat berada dalam status <color=#FFFFFF>Morale Burst</color>, jika serangan terakhir mengenai musuh, Lighter akan mengakibatkan efek <color=#FFFFFF>Collapse</color> terhadap target. Efek ini akan memperpanjang durasi status Stun selama 3 detik. Efek <color=#FFFFFF>Collapse</color> hanya dapat terpicu satu kali terhadap target yang sama sebelum target tersebut pulih dari status Stun.\n\nSaat serangan terakhir <color=#FFFFFF>Basic Attack</color> tahap kelima mengenai musuh, berganti Agen, atau <color=#FFFFFF>Morale</color> habis terkonsumsi, Lighter akan mengakhiri status <color=#FFFFFF>Morale Burst</color>. <color=#FFFFFF>Morale</color> yang belum terkonsumsi akan tersimpan.",
+                "2": "Lighter akan otomatis memulihkan 2,9 poin <color=#FFFFFF>Morale</color> setiap detik. Saat Agen mana pun di dalam tim mengonsumsi 1 poin Energy, Lighter akan memulihkan 0,26 poin <color=#FFFFFF>Morale</color> tambahan (Lighter maks. dapat memiliki 100 poin <color=#FFFFFF>Morale</color>).\n\nSaat <color=#FFFFFF>Morale</color> mencapai 80 poin, Lighter akan langsung melancarkan <color=#FFFFFF>Quick Assist</color> saat memasuki medan pertarungan di kali berikutnya.\nSetelah <color=#FFFFFF>Morale</color> mencapai 80 poin atau lebih, jika Lighter melancarkan <color=#FFFFFF>Basic Attack</color> tahap kelima, maka dia akan memasuki status <color=#FFFFFF>Morale Burst</color> yang akan meningkatkan kekuatan tinju ringan, kombo tinju jab, dan serangan terakhir dari <color=#FFFFFF>Basic Attack</color> tahap kelima. Saat serangan yang ditingkatkan mengenai musuh, Lighter akan mengonsumsi <color=#FFFFFF>Morale</color> secara terus-menerus. Setiap 10 poin <color=#FFFFFF>Morale</color> yang dikonsumsi, Impact Lighter akan meningkat sebesar <color=#2BAD00>1,17%</color> selama 6 detik (maks. meningkat hingga <color=#2BAD00>11,7%</color>).\n\nSaat berada dalam status <color=#FFFFFF>Morale Burst</color>, Lighter tidak akan lagi memulihkan <color=#FFFFFF>Morale</color> secara otomatis. Jika <color=#FFFFFF>Morale</color> yang dimiliki habis terkonsumsi saat melancarkan tinju ringan atau kombo tinju jab, Lighter akan lanjut melancarkan serangan terakhir yang lebih kuat secara otomatis.\nSaat berada dalam status <color=#FFFFFF>Morale Burst</color>, jika serangan tinju ringan atau kombo tinju jab mengenai musuh, <color=#98EFF0>Ketahanan Ice DMG</color> dan <color=#FF5521>Ketahanan Fire DMG</color> musuh tersebut akan berkurang 15% selama 30 detik.\nSaat berada dalam status <color=#FFFFFF>Morale Burst</color>, jika serangan terakhir mengenai musuh, Lighter akan mengakibatkan efek <color=#FFFFFF>Collapse</color> terhadap target. Efek ini akan memperpanjang durasi status Stun selama 3 detik. Efek <color=#FFFFFF>Collapse</color> hanya dapat terpicu satu kali terhadap target yang sama sebelum target tersebut pulih dari status Stun.\n\nSaat serangan terakhir <color=#FFFFFF>Basic Attack</color> tahap kelima mengenai musuh, berganti Agen, atau <color=#FFFFFF>Morale</color> habis terkonsumsi, Lighter akan mengakhiri status <color=#FFFFFF>Morale Burst</color>. <color=#FFFFFF>Morale</color> yang belum terkonsumsi akan tersimpan.",
+                "3": "Lighter akan otomatis memulihkan 2,9 poin <color=#FFFFFF>Morale</color> setiap detik. Saat Agen mana pun di dalam tim mengonsumsi 1 poin Energy, Lighter akan memulihkan 0,26 poin <color=#FFFFFF>Morale</color> tambahan (Lighter maks. dapat memiliki 100 poin <color=#FFFFFF>Morale</color>).\n\nSaat <color=#FFFFFF>Morale</color> mencapai 80 poin, Lighter akan langsung melancarkan <color=#FFFFFF>Quick Assist</color> saat memasuki medan pertarungan di kali berikutnya.\nSetelah <color=#FFFFFF>Morale</color> mencapai 80 poin atau lebih, jika Lighter melancarkan <color=#FFFFFF>Basic Attack</color> tahap kelima, maka dia akan memasuki status <color=#FFFFFF>Morale Burst</color> yang akan meningkatkan kekuatan tinju ringan, kombo tinju jab, dan serangan terakhir dari <color=#FFFFFF>Basic Attack</color> tahap kelima. Saat serangan yang ditingkatkan mengenai musuh, Lighter akan mengonsumsi <color=#FFFFFF>Morale</color> secara terus-menerus. Setiap 10 poin <color=#FFFFFF>Morale</color> yang dikonsumsi, Impact Lighter akan meningkat sebesar <color=#2BAD00>1,33%</color> selama 6 detik (maks. meningkat hingga <color=#2BAD00>13,3%</color>).\n\nSaat berada dalam status <color=#FFFFFF>Morale Burst</color>, Lighter tidak akan lagi memulihkan <color=#FFFFFF>Morale</color> secara otomatis. Jika <color=#FFFFFF>Morale</color> yang dimiliki habis terkonsumsi saat melancarkan tinju ringan atau kombo tinju jab, Lighter akan lanjut melancarkan serangan terakhir yang lebih kuat secara otomatis.\nSaat berada dalam status <color=#FFFFFF>Morale Burst</color>, jika serangan tinju ringan atau kombo tinju jab mengenai musuh, <color=#98EFF0>Ketahanan Ice DMG</color> dan <color=#FF5521>Ketahanan Fire DMG</color> musuh tersebut akan berkurang 15% selama 30 detik.\nSaat berada dalam status <color=#FFFFFF>Morale Burst</color>, jika serangan terakhir mengenai musuh, Lighter akan mengakibatkan efek <color=#FFFFFF>Collapse</color> terhadap target. Efek ini akan memperpanjang durasi status Stun selama 3 detik. Efek <color=#FFFFFF>Collapse</color> hanya dapat terpicu satu kali terhadap target yang sama sebelum target tersebut pulih dari status Stun.\n\nSaat serangan terakhir <color=#FFFFFF>Basic Attack</color> tahap kelima mengenai musuh, berganti Agen, atau <color=#FFFFFF>Morale</color> habis terkonsumsi, Lighter akan mengakhiri status <color=#FFFFFF>Morale Burst</color>. <color=#FFFFFF>Morale</color> yang belum terkonsumsi akan tersimpan.",
+                "4": "Lighter akan otomatis memulihkan 2,9 poin <color=#FFFFFF>Morale</color> setiap detik. Saat Agen mana pun di dalam tim mengonsumsi 1 poin Energy, Lighter akan memulihkan 0,26 poin <color=#FFFFFF>Morale</color> tambahan (Lighter maks. dapat memiliki 100 poin <color=#FFFFFF>Morale</color>).\n\nSaat <color=#FFFFFF>Morale</color> mencapai 80 poin, Lighter akan langsung melancarkan <color=#FFFFFF>Quick Assist</color> saat memasuki medan pertarungan di kali berikutnya.\nSetelah <color=#FFFFFF>Morale</color> mencapai 80 poin atau lebih, jika Lighter melancarkan <color=#FFFFFF>Basic Attack</color> tahap kelima, maka dia akan memasuki status <color=#FFFFFF>Morale Burst</color> yang akan meningkatkan kekuatan tinju ringan, kombo tinju jab, dan serangan terakhir dari <color=#FFFFFF>Basic Attack</color> tahap kelima. Saat serangan yang ditingkatkan mengenai musuh, Lighter akan mengonsumsi <color=#FFFFFF>Morale</color> secara terus-menerus. Setiap 10 poin <color=#FFFFFF>Morale</color> yang dikonsumsi, Impact Lighter akan meningkat sebesar <color=#2BAD00>1,5%</color> selama 6 detik (maks. meningkat hingga <color=#2BAD00>15%</color>).\n\nSaat berada dalam status <color=#FFFFFF>Morale Burst</color>, Lighter tidak akan lagi memulihkan <color=#FFFFFF>Morale</color> secara otomatis. Jika <color=#FFFFFF>Morale</color> yang dimiliki habis terkonsumsi saat melancarkan tinju ringan atau kombo tinju jab, Lighter akan lanjut melancarkan serangan terakhir yang lebih kuat secara otomatis.\nSaat berada dalam status <color=#FFFFFF>Morale Burst</color>, jika serangan tinju ringan atau kombo tinju jab mengenai musuh, <color=#98EFF0>Ketahanan Ice DMG</color> dan <color=#FF5521>Ketahanan Fire DMG</color> musuh tersebut akan berkurang 15% selama 30 detik.\nSaat berada dalam status <color=#FFFFFF>Morale Burst</color>, jika serangan terakhir mengenai musuh, Lighter akan mengakibatkan efek <color=#FFFFFF>Collapse</color> terhadap target. Efek ini akan memperpanjang durasi status Stun selama 3 detik. Efek <color=#FFFFFF>Collapse</color> hanya dapat terpicu satu kali terhadap target yang sama sebelum target tersebut pulih dari status Stun.\n\nSaat serangan terakhir <color=#FFFFFF>Basic Attack</color> tahap kelima mengenai musuh, berganti Agen, atau <color=#FFFFFF>Morale</color> habis terkonsumsi, Lighter akan mengakhiri status <color=#FFFFFF>Morale Burst</color>. <color=#FFFFFF>Morale</color> yang belum terkonsumsi akan tersimpan.",
+                "5": "Lighter akan otomatis memulihkan 2,9 poin <color=#FFFFFF>Morale</color> setiap detik. Saat Agen mana pun di dalam tim mengonsumsi 1 poin Energy, Lighter akan memulihkan 0,26 poin <color=#FFFFFF>Morale</color> tambahan (Lighter maks. dapat memiliki 100 poin <color=#FFFFFF>Morale</color>).\n\nSaat <color=#FFFFFF>Morale</color> mencapai 80 poin, Lighter akan langsung melancarkan <color=#FFFFFF>Quick Assist</color> saat memasuki medan pertarungan di kali berikutnya.\nSetelah <color=#FFFFFF>Morale</color> mencapai 80 poin atau lebih, jika Lighter melancarkan <color=#FFFFFF>Basic Attack</color> tahap kelima, maka dia akan memasuki status <color=#FFFFFF>Morale Burst</color> yang akan meningkatkan kekuatan tinju ringan, kombo tinju jab, dan serangan terakhir dari <color=#FFFFFF>Basic Attack</color> tahap kelima. Saat serangan yang ditingkatkan mengenai musuh, Lighter akan mengonsumsi <color=#FFFFFF>Morale</color> secara terus-menerus. Setiap 10 poin <color=#FFFFFF>Morale</color> yang dikonsumsi, Impact Lighter akan meningkat sebesar <color=#2BAD00>1,67%</color> selama 6 detik (maks. meningkat hingga <color=#2BAD00>16,7%</color>).\n\nSaat berada dalam status <color=#FFFFFF>Morale Burst</color>, Lighter tidak akan lagi memulihkan <color=#FFFFFF>Morale</color> secara otomatis. Jika <color=#FFFFFF>Morale</color> yang dimiliki habis terkonsumsi saat melancarkan tinju ringan atau kombo tinju jab, Lighter akan lanjut melancarkan serangan terakhir yang lebih kuat secara otomatis.\nSaat berada dalam status <color=#FFFFFF>Morale Burst</color>, jika serangan tinju ringan atau kombo tinju jab mengenai musuh, <color=#98EFF0>Ketahanan Ice DMG</color> dan <color=#FF5521>Ketahanan Fire DMG</color> musuh tersebut akan berkurang 15% selama 30 detik.\nSaat berada dalam status <color=#FFFFFF>Morale Burst</color>, jika serangan terakhir mengenai musuh, Lighter akan mengakibatkan efek <color=#FFFFFF>Collapse</color> terhadap target. Efek ini akan memperpanjang durasi status Stun selama 3 detik. Efek <color=#FFFFFF>Collapse</color> hanya dapat terpicu satu kali terhadap target yang sama sebelum target tersebut pulih dari status Stun.\n\nSaat serangan terakhir <color=#FFFFFF>Basic Attack</color> tahap kelima mengenai musuh, berganti Agen, atau <color=#FFFFFF>Morale</color> habis terkonsumsi, Lighter akan mengakhiri status <color=#FFFFFF>Morale Burst</color>. <color=#FFFFFF>Morale</color> yang belum terkonsumsi akan tersimpan.",
+                "6": "Lighter akan otomatis memulihkan 2,9 poin <color=#FFFFFF>Morale</color> setiap detik. Saat Agen mana pun di dalam tim mengonsumsi 1 poin Energy, Lighter akan memulihkan 0,26 poin <color=#FFFFFF>Morale</color> tambahan (Lighter maks. dapat memiliki 100 poin <color=#FFFFFF>Morale</color>).\n\nSaat <color=#FFFFFF>Morale</color> mencapai 80 poin, Lighter akan langsung melancarkan <color=#FFFFFF>Quick Assist</color> saat memasuki medan pertarungan di kali berikutnya.\nSetelah <color=#FFFFFF>Morale</color> mencapai 80 poin atau lebih, jika Lighter melancarkan <color=#FFFFFF>Basic Attack</color> tahap kelima, maka dia akan memasuki status <color=#FFFFFF>Morale Burst</color> yang akan meningkatkan kekuatan tinju ringan, kombo tinju jab, dan serangan terakhir dari <color=#FFFFFF>Basic Attack</color> tahap kelima. Saat serangan yang ditingkatkan mengenai musuh, Lighter akan mengonsumsi <color=#FFFFFF>Morale</color> secara terus-menerus. Setiap 10 poin <color=#FFFFFF>Morale</color> yang dikonsumsi, Impact Lighter akan meningkat sebesar <color=#2BAD00>1,83%</color> selama 6 detik (maks. meningkat hingga <color=#2BAD00>18,3%</color>).\n\nSaat berada dalam status <color=#FFFFFF>Morale Burst</color>, Lighter tidak akan lagi memulihkan <color=#FFFFFF>Morale</color> secara otomatis. Jika <color=#FFFFFF>Morale</color> yang dimiliki habis terkonsumsi saat melancarkan tinju ringan atau kombo tinju jab, Lighter akan lanjut melancarkan serangan terakhir yang lebih kuat secara otomatis.\nSaat berada dalam status <color=#FFFFFF>Morale Burst</color>, jika serangan tinju ringan atau kombo tinju jab mengenai musuh, <color=#98EFF0>Ketahanan Ice DMG</color> dan <color=#FF5521>Ketahanan Fire DMG</color> musuh tersebut akan berkurang 15% selama 30 detik.\nSaat berada dalam status <color=#FFFFFF>Morale Burst</color>, jika serangan terakhir mengenai musuh, Lighter akan mengakibatkan efek <color=#FFFFFF>Collapse</color> terhadap target. Efek ini akan memperpanjang durasi status Stun selama 3 detik. Efek <color=#FFFFFF>Collapse</color> hanya dapat terpicu satu kali terhadap target yang sama sebelum target tersebut pulih dari status Stun.\n\nSaat serangan terakhir <color=#FFFFFF>Basic Attack</color> tahap kelima mengenai musuh, berganti Agen, atau <color=#FFFFFF>Morale</color> habis terkonsumsi, Lighter akan mengakhiri status <color=#FFFFFF>Morale Burst</color>. <color=#FFFFFF>Morale</color> yang belum terkonsumsi akan tersimpan.",
+                "7": "Lighter akan otomatis memulihkan 2,9 poin <color=#FFFFFF>Morale</color> setiap detik. Saat Agen mana pun di dalam tim mengonsumsi 1 poin Energy, Lighter akan memulihkan 0,26 poin <color=#FFFFFF>Morale</color> tambahan (Lighter maks. dapat memiliki 100 poin <color=#FFFFFF>Morale</color>).\n\nSaat <color=#FFFFFF>Morale</color> mencapai 80 poin, Lighter akan langsung melancarkan <color=#FFFFFF>Quick Assist</color> saat memasuki medan pertarungan di kali berikutnya.\nSetelah <color=#FFFFFF>Morale</color> mencapai 80 poin atau lebih, jika Lighter melancarkan <color=#FFFFFF>Basic Attack</color> tahap kelima, maka dia akan memasuki status <color=#FFFFFF>Morale Burst</color> yang akan meningkatkan kekuatan tinju ringan, kombo tinju jab, dan serangan terakhir dari <color=#FFFFFF>Basic Attack</color> tahap kelima. Saat serangan yang ditingkatkan mengenai musuh, Lighter akan mengonsumsi <color=#FFFFFF>Morale</color> secara terus-menerus. Setiap 10 poin <color=#FFFFFF>Morale</color> yang dikonsumsi, Impact Lighter akan meningkat sebesar <color=#2BAD00>2%</color> selama 6 detik (maks. meningkat hingga <color=#2BAD00>20%</color>).\n\nSaat berada dalam status <color=#FFFFFF>Morale Burst</color>, Lighter tidak akan lagi memulihkan <color=#FFFFFF>Morale</color> secara otomatis. Jika <color=#FFFFFF>Morale</color> yang dimiliki habis terkonsumsi saat melancarkan tinju ringan atau kombo tinju jab, Lighter akan lanjut melancarkan serangan terakhir yang lebih kuat secara otomatis.\nSaat berada dalam status <color=#FFFFFF>Morale Burst</color>, jika serangan tinju ringan atau kombo tinju jab mengenai musuh, <color=#98EFF0>Ketahanan Ice DMG</color> dan <color=#FF5521>Ketahanan Fire DMG</color> musuh tersebut akan berkurang 15% selama 30 detik.\nSaat berada dalam status <color=#FFFFFF>Morale Burst</color>, jika serangan terakhir mengenai musuh, Lighter akan mengakibatkan efek <color=#FFFFFF>Collapse</color> terhadap target. Efek ini akan memperpanjang durasi status Stun selama 3 detik. Efek <color=#FFFFFF>Collapse</color> hanya dapat terpicu satu kali terhadap target yang sama sebelum target tersebut pulih dari status Stun.\n\nSaat serangan terakhir <color=#FFFFFF>Basic Attack</color> tahap kelima mengenai musuh, berganti Agen, atau <color=#FFFFFF>Morale</color> habis terkonsumsi, Lighter akan mengakhiri status <color=#FFFFFF>Morale Burst</color>. <color=#FFFFFF>Morale</color> yang belum terkonsumsi akan tersimpan."
+            }
+        },
+        "MathSkill": {
+            "Title": "Additional Ability: Fighting Spirit",
+            "Description": "Berlaku jika terdapat Agen <color=#FFFFFF>Attack</color> atau Agen yang berasal dari faksi yang sama di dalam tim:\nDalam status <color=#FFFFFF>Morale Burst</color>, saat <color=#FFFFFF>Basic Attack</color> tahap kelima Lighter mengenai musuh, maka semua Agen dalam tim akan mendapatkan satu lapis <color=#FFFFFF>Elation</color> selama 30 detik (maks. 20 lapis). Memicu ulang akan memperbarui durasi. Untuk setiap lapis <color=#FFFFFF>Elation</color>, <color=#98EFF0>Ice DMG</color> dan <color=#FF5521>Fire DMG</color> yang diakibatkan Agen akan meningkat sebesar 1,25%.\n\nSaat mendapatkan buff <color=#FFFFFF>Elation</color>, untuk setiap 10 poin Impact Lighter yang melebihi 170 poin, setiap lapis efek <color=#FFFFFF>Elation</color> akan memberikan peningkatan tambahan sebesar 0,25%. Saat anggota tim mana pun melancarkan <color=#FFFFFF>Chain Attack</color>, durasi efek <color=#FFFFFF>Elation</color> untuk semua Agen dalam tim akan diperbarui. <color=#FFFFFF>Elation</color> dapat meningkatkan <color=#98EFF0>Ice DMG</color> dan <color=#FF5521>Fire DMG</color> yang diakibatkan Agen maks. sebesar 75%."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "116100001": {
+                "Title": "Basic Attack: L-Form Thundering Fist",
+                "Description": "Tahan atau tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMelancarkan hingga lima serangan Strike ke depan, mengakibatkan <color=#F0D12B>Physical DMG</color> dan <color=#FF5521>Fire DMG</color>.\n\nSaat melancarkan <color=#FFFFFF>Basic Attack</color> tahap ketiga, gerakkan {LAYOUT_CONSOLECONTROLLER#tuas}{LAYOUT_FALLBACK#<IconMap:Icon_JoyStick_Fairy>}, dan tahan atau tekan <IconMap:Icon_Normal> berulang kali pada saat bersamaan untuk melancarkan serangkaian serangan lanjutan jarak dekat. Lepaskan {LAYOUT_CONSOLECONTROLLER#tuas}{LAYOUT_FALLBACK#<IconMap:Icon_JoyStick_Fairy>} untuk lanjut melancarkan serangan <color=#FFFFFF>Basic Attack</color> tahap keempat.\n\nSaat melancarkan serangan tinju ringan pada <color=#FFFFFF>Basic Attack</color> tahap kelima, gerakkan {LAYOUT_CONSOLECONTROLLER#tuas}{LAYOUT_FALLBACK#<IconMap:Icon_JoyStick_Fairy>}, dan tahan atau tekan <IconMap:Icon_Normal> berulang kali pada saat bersamaan untuk bergantian melancarkan serangan kombo tinju jab dan serangan <color=#FFFFFF>Basic Attack</color> tahap keempat. Lepaskan {LAYOUT_CONSOLECONTROLLER#tuas}{LAYOUT_FALLBACK#<IconMap:Icon_JoyStick_Fairy>} untuk lanjut melancarkan serangan kombo tinju jab.\n\nJika tombol <IconMap:Icon_Normal> terus ditekan/ditahan, dapat memperpanjang durasi serangan kombo tinju jab.\nJika tombol <IconMap:Icon_Normal> berhenti ditekan/ditahan atau durasi serangan sudah mencapai batas, Lighter akan melancarkan serangan akhir ke depan. Karakter akan menjadi kebal selama melancarkan serangan terakhir.\nSaat melancarkan <color=#FFFFFF>Basic Attack</color> tahap kelima, DMG yang diterima Lighter akan berkurang sebesar 40%.\nSelama berada dalam status <color=#FFFFFF>Morale Burst</color>, Level Anti-Interrupt akan meningkat saat melancarkan <color=#FFFFFF>Basic Attack</color> tahap kelima, dan efek pengurangan DMG meningkat hingga 80%."
+            },
+            "116110001": {
+                "Title": "Basic Attack: L-Form Thundering Fist"
+            },
+            "116110002": {
+                "Description": "Kelipatan DMG: Tahap 1",
+                "Param": "{Skill:1161001, Prop:1001}"
+            },
+            "116110003": {
+                "Description": "Kelipatan DMG: Tahap 2",
+                "Param": "{Skill:1161002, Prop:1001}"
+            },
+            "116110004": {
+                "Description": "Kelipatan DMG: Tahap 3",
+                "Param": "{Skill:1161003, Prop:1001}"
+            },
+            "116110005": {
+                "Description": "Kelipatan DMG: Tahap 1 - Serangan Lanjutan",
+                "Param": "{Skill:1161004, Prop:1001}"
+            },
+            "116110006": {
+                "Description": "Kelipatan DMG: Tahap 2 - Serangan Lanjutan",
+                "Param": "{Skill:1161005, Prop:1001}"
+            },
+            "116110007": {
+                "Description": "Kelipatan DMG: Tahap 3 - Serangan Lanjutan",
+                "Param": "{Skill:1161006, Prop:1001}"
+            },
+            "116110008": {
+                "Description": "Kelipatan DMG: Tahap 4 - Serangan Lanjutan",
+                "Param": "{Skill:1161007, Prop:1001}"
+            },
+            "116110009": {
+                "Description": "Kelipatan DMG: Tahap 5 - Serangan Lanjutan",
+                "Param": "{Skill:1161008, Prop:1001}"
+            },
+            "116110010": {
+                "Description": "Kelipatan DMG: Tahap 4",
+                "Param": "{Skill:1161009, Prop:1001}"
+            },
+            "116110011": {
+                "Description": "Kelipatan DMG: Tahap 5 - Tinju Ringan",
+                "Param": "{Skill:1161010, Prop:1001}"
+            },
+            "116110012": {
+                "Description": "Kelipatan DMG: Tahap 5 - Kombo Tinju Jab",
+                "Param": "{Skill:1161011, Prop:1001}"
+            },
+            "116110013": {
+                "Description": "Kelipatan DMG: Tahap 5 - Serangan Terakhir",
+                "Param": "{Skill:1161012, Prop:1001}"
+            },
+            "116110014": {
+                "Description": "Kelipatan DMG: Tahap 5 - Tinju Ringan (Morale Burst)",
+                "Param": "{Skill:1161026, Prop:1001}"
+            },
+            "116110015": {
+                "Description": "Kelipatan DMG: Tahap 5 - Kombo Tinju Jab (Morale Burst)",
+                "Param": "{Skill:1161027, Prop:1001}"
+            },
+            "116110016": {
+                "Description": "Kelipatan DMG: Tahap 5 - Serangan Akhir (Morale Burst)",
+                "Param": "{Skill:1161028, Prop:1001}"
+            },
+            "116110017": {
+                "Description": "Kelipatan DMG: Tahap 5 - Serangan Akhir Kuat (Morale Burst)",
+                "Param": "{Skill:1161025, Prop:1001}"
+            },
+            "116110018": {
+                "Description": "Kelipatan Daze: Tahap 1",
+                "Param": "{Skill:1161001, Prop:1002}"
+            },
+            "116110019": {
+                "Description": "Kelipatan Daze: Tahap 2",
+                "Param": "{Skill:1161002, Prop:1002}"
+            },
+            "116110020": {
+                "Description": "Kelipatan Daze: Tahap 3",
+                "Param": "{Skill:1161003, Prop:1002}"
+            },
+            "116110021": {
+                "Description": "Kelipatan Daze: Tahap 1 - Serangan Lanjutan",
+                "Param": "{Skill:1161004, Prop:1002}"
+            },
+            "116110022": {
+                "Description": "Kelipatan Daze: Tahap 2 - Serangan Lanjutan",
+                "Param": "{Skill:1161005, Prop:1002}"
+            },
+            "116110023": {
+                "Description": "Kelipatan Daze: Tahap 3 - Serangan Lanjutan",
+                "Param": "{Skill:1161006, Prop:1002}"
+            },
+            "116110024": {
+                "Description": "Kelipatan Daze: Tahap 4 - Serangan Lanjutan",
+                "Param": "{Skill:1161007, Prop:1002}"
+            },
+            "116110025": {
+                "Description": "Kelipatan Daze: Tahap 5 - Serangan Lanjutan",
+                "Param": "{Skill:1161008, Prop:1002}"
+            },
+            "116110026": {
+                "Description": "Kelipatan Daze: Tahap 4",
+                "Param": "{Skill:1161009, Prop:1002}"
+            },
+            "116110027": {
+                "Description": "Kelipatan Daze: Tahap 5 - Tinju Ringan",
+                "Param": "{Skill:1161010, Prop:1002}"
+            },
+            "116110028": {
+                "Description": "Kelipatan Daze: Tahap 5 - Kombo Tinju Jab",
+                "Param": "{Skill:1161011, Prop:1002}"
+            },
+            "116110029": {
+                "Description": "Kelipatan Daze: Tahap 5 - Serangan Terakhir",
+                "Param": "{Skill:1161012, Prop:1002}"
+            },
+            "116110030": {
+                "Description": "Kelipatan Daze: Tahap 5 - Tinju Ringan (Morale Burst)",
+                "Param": "{Skill:1161026, Prop:1002}"
+            },
+            "116110031": {
+                "Description": "Kelipatan Daze: Tahap 5 - Kombo Tinju Jab (Morale Burst)",
+                "Param": "{Skill:1161027, Prop:1002}"
+            },
+            "116110032": {
+                "Description": "Kelipatan Daze: Tahap 5 - Serangan Akhir (Morale Burst)",
+                "Param": "{Skill:1161028, Prop:1002}"
+            },
+            "116110033": {
+                "Description": "Kelipatan Daze: Tahap 5 - Serangan Akhir Kuat (Morale Burst)",
+                "Param": "{Skill:1161025, Prop:1002}"
+            }
+        },
+        "1": {
+            "116100002": {
+                "Title": "Special Attack: V-Form Sunrise Uppercut",
+                "Description": "Tekan <IconMap:Icon_Special> untuk melancarkan Skill ini.\nMelancarkan serangan Strike dengan tinju uppercut ke depan dan mengakibatkan <color=#FF5521>Fire DMG</color>.\nLevel Anti-Interrupt akan meningkat selama melancarkan Skill ini.\n\nSaat melakukan Shuffle Dodge, tekan <IconMap:Icon_Special> untuk melancarkan Skill ini.\nMelancarkan serangan Strike dengan tinju gabungan dan mengakibatkan <color=#FF5521>Fire DMG</color>.\nMelancarkan Skill ini tidak akan memutus jumlah kombo <color=#FFFFFF>Basic Attack</color>.\nLevel Anti-Interrupt akan meningkat selama melancarkan Skill ini."
+            },
+            "116100003": {
+                "Title": "EX Special Attack: V-Form Sunrise Uppercut - Full Distance",
+                "Description": "Saat Energy Lighter sudah cukup, tekan <IconMap:Icon_SpecialReady> untuk melancarkan Skill ini.\nMelancarkan serangan Strike kuat dengan tinju uppercut ke depan sambil melompat ke udara, mengakibatkan <color=#FF5521>Fire DMG</color> dalam jumlah besar.\nSaat melancarkan Skill ini, tekan <IconMap:Icon_SpecialReady> sekali lagi untuk mengonsumsi Energy tambahan dan melancarkan serangan lanjutan yang kuat, mengakibatkan <color=#FF5521>Fire DMG</color> dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini.\nSetelah melancarkan Skill ini, tekan atau tahan <IconMap:Icon_Normal> untuk langsung lanjut melancarkan serangan <color=#FFFFFF>Basic Attack</color> tahap keempat.\n\nSaat Energy Lighter sudah cukup, tekan <IconMap:Icon_SpecialReady> saat melakukan Dodge ke samping untuk melancarkan Skill ini.\nMelancarkan serangan Strike kuat ke depan dengan tinju gabungannya dan mengakibatkan <color=#FF5521>Fire DMG</color> dalam jumlah besar.\nMelancarkan Skill ini tidak akan memutus jumlah kombo <color=#FFFFFF>Basic Attack</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini.\nSetelah melancarkan Skill ini, tekan atau tahan <IconMap:Icon_Normal> untuk langsung lanjut melancarkan serangan <color=#FFFFFF>Basic Attack</color> tahap kelima."
+            },
+            "116110034": {
+                "Title": "Special Attack: V-Form Sunrise Uppercut"
+            },
+            "116110035": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1161013, Prop:1001}"
+            },
+            "116110036": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1161013, Prop:1002}"
+            },
+            "116110037": {
+                "Title": "EX Special Attack: V-Form Sunrise Uppercut - Full Distance"
+            },
+            "116110038": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1161014, Prop:1001}"
+            },
+            "116110039": {
+                "Description": "Kelipatan DMG - Serangan Lanjutan",
+                "Param": "{Skill:1161015, Prop:1001}"
+            },
+            "116110040": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1161014, Prop:1002}"
+            },
+            "116110041": {
+                "Description": "Kelipatan Daze - Serangan Lanjutan",
+                "Param": "{Skill:1161015, Prop:1002}"
+            },
+            "116110042": {
+                "Description": "Konsumsi Energy",
+                "Param": "40 poin"
+            },
+            "116110043": {
+                "Description": "Konsumsi Energy - Serangan Lanjutan",
+                "Param": "20 poin"
+            }
+        },
+        "2": {
+            "116100004": {
+                "Title": "Dodge: Shadowed Slide",
+                "Description": "Tekan <IconMap:Icon_Evade> untuk melancarkan Skill ini.\nMelakukan Dodge dengan cepat.\nKarakter akan menjadi kebal selama melancarkan Skill ini.\nSaat Agen melancarkan serangan, tekan <IconMap:Icon_Evade> untuk melancarkan Skill ini.\nMelakukan Shuffle Dodge, yaitu Dodge ke arah yang sesuai dengan arah saat menggerakkan {LAYOUT_CONSOLECONTROLLER#tuas}{LAYOUT_FALLBACK#<IconMap:Icon_JoyStick>}.\nMelancarkan Skill ini tidak akan memutus jumlah kombo <color=#FFFFFF>Basic Attack</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "116100005": {
+                "Title": "Dash Attack: Charging Slam",
+                "Description": "Tekan <IconMap:Icon_Normal> saat melakukan Dodge untuk melancarkan Skill ini.\nMelancarkan Strike cepat terhadap musuh di depan dan mengakibatkan <color=#F0D12B>Physical DMG</color>."
+            },
+            "116100006": {
+                "Title": "Dodge Counter: Blazing Flash",
+                "Description": "Tekan <IconMap:Icon_Normal> setelah melakukan <color=#FFFFFF>Perfect Dodge</color> untuk melancarkan Skill ini.\nMelancarkan Strike terhadap musuh di depan dan mengakibatkan <color=#FF5521>Fire DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini.\nSetelah melancarkan Skill ini, tekan atau tahan <IconMap:Icon_Normal> untuk langsung lanjut melancarkan serangan <color=#FFFFFF>Basic Attack</color> tahap kelima."
+            },
+            "116110044": {
+                "Title": "Dash Attack: Charging Slam"
+            },
+            "116110045": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1161016, Prop:1001}"
+            },
+            "116110046": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1161016, Prop:1002}"
+            },
+            "116110047": {
+                "Title": "Dodge Counter: Blazing Flash"
+            },
+            "116110048": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1161017, Prop:1001}"
+            },
+            "116110049": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1161017, Prop:1002}"
+            }
+        },
+        "3": {
+            "116100007": {
+                "Title": "Chain Attack: V-Form Scorching Sun",
+                "Description": "Saat <color=#FFFFFF>Chain Attack</color> terpicu, pilih Lighter untuk melancarkan Skill ini.\nMelancarkan Strike yang kuat terhadap musuh dalam area kecil di depan dan mengakibatkan <color=#FF5521>Fire DMG</color> dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "116100008": {
+                "Title": "Ultimate: W-Form Crowned Inferno",
+                "Description": "Saat Decibel Rating mencapai Maximum, tekan <IconMap:Icon_UltimateReady> untuk melancarkan Skill ini.\nMelancarkan Strike yang kuat terhadap musuh di sekitar dalam area besar dan mengakibatkan <color=#FF5521>Fire DMG</color> dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "116110050": {
+                "Title": "Chain Attack: V-Form Scorching Sun"
+            },
+            "116110051": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1161018, Prop:1001}"
+            },
+            "116110052": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1161018, Prop:1002}"
+            },
+            "116110053": {
+                "Title": "Ultimate: W-Form Crowned Inferno"
+            },
+            "116110054": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1161019, Prop:1001}"
+            },
+            "116110055": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1161019, Prop:1002}"
+            }
+        },
+        "6": {
+            "116100010": {
+                "Title": "Quick Assist: Blazing Flash - Guard",
+                "Description": "Saat Agen yang Dikendalikan terhempas, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nMelancarkan Strike terhadap musuh di depan dan mengakibatkan <color=#FF5521>Fire DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini.\nSetelah melancarkan Skill ini, tekan atau tahan <IconMap:Icon_Normal> untuk langsung lanjut melancarkan serangan <color=#FFFFFF>Basic Attack</color> tahap kelima."
+            },
+            "116100011": {
+                "Title": "Defensive Assist: Swift Break",
+                "Description": "Tepat sebelum Agen aktif diserang, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nMenangkis serangan musuh dan menghasilkan Daze dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "116100012": {
+                "Title": "Assist Follow-Up: Charging Slam - Stab",
+                "Description": "Setelah melancarkan <color=#FFFFFF>Defensive Assist</color>, tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMelancarkan Strike terhadap musuh di depan dan mengakibatkan <color=#FF5521>Fire DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini.\nSetelah melancarkan Skill ini, tekan atau tahan <IconMap:Icon_Normal> untuk langsung lanjut melancarkan serangan <color=#FFFFFF>Basic Attack</color> tahap kelima."
+            },
+            "116110056": {
+                "Title": "Quick Assist: Blazing Flash - Guard"
+            },
+            "116110057": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1161020, Prop:1001}"
+            },
+            "116110058": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1161020, Prop:1002}"
+            },
+            "116110059": {
+                "Title": "Defensive Assist: Swift Break"
+            },
+            "116110060": {
+                "Description": "Kelipatan Daze - Light Defensive",
+                "Param": "{Skill:1161021, Prop:1002}"
+            },
+            "116110061": {
+                "Description": "Kelipatan Daze - Heavy Defensive",
+                "Param": "{Skill:1161022, Prop:1002}"
+            },
+            "116110062": {
+                "Description": "Kelipatan Daze - Chain Defensive",
+                "Param": "{Skill:1161023, Prop:1002}"
+            },
+            "116110063": {
+                "Title": "Assist Follow-Up: Charging Slam - Stab"
+            },
+            "116110064": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1161024, Prop:1001}"
+            },
+            "116110065": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1161024, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1161001": {
+            "DamageValue": 3920,
+            "DamageGrowth": 360,
+            "DazeValue": 1960,
+            "DazeGrowth": 90
+        },
+        "1161002": {
+            "DamageValue": 4800,
+            "DamageGrowth": 440,
+            "DazeValue": 3290,
+            "DazeGrowth": 150
+        },
+        "1161003": {
+            "DamageValue": 5530,
+            "DamageGrowth": 510,
+            "DazeValue": 4670,
+            "DazeGrowth": 220
+        },
+        "1161004": {
+            "DamageValue": 8690,
+            "DamageGrowth": 790,
+            "DazeValue": 6050,
+            "DazeGrowth": 280
+        },
+        "1161005": {
+            "DamageValue": 4770,
+            "DamageGrowth": 440,
+            "DazeValue": 3320,
+            "DazeGrowth": 160
+        },
+        "1161006": {
+            "DamageValue": 5810,
+            "DamageGrowth": 530,
+            "DazeValue": 4040,
+            "DazeGrowth": 190
+        },
+        "1161007": {
+            "DamageValue": 3280,
+            "DamageGrowth": 300,
+            "DazeValue": 2280,
+            "DazeGrowth": 110
+        },
+        "1161008": {
+            "DamageValue": 8900,
+            "DamageGrowth": 810,
+            "DazeValue": 6190,
+            "DazeGrowth": 290
+        },
+        "1161009": {
+            "DamageValue": 7890,
+            "DamageGrowth": 720,
+            "DazeValue": 7610,
+            "DazeGrowth": 350
+        },
+        "1161010": {
+            "DamageValue": 16360,
+            "DamageGrowth": 1490,
+            "DazeValue": 12950,
+            "DazeGrowth": 590
+        },
+        "1161011": {
+            "DamageValue": 12290,
+            "DamageGrowth": 1120,
+            "DazeValue": 8130,
+            "DazeGrowth": 370
+        },
+        "1161012": {
+            "DamageValue": 10460,
+            "DamageGrowth": 960,
+            "DazeValue": 7950,
+            "DazeGrowth": 370
+        },
+        "1161013": {
+            "DamageValue": 3630,
+            "DamageGrowth": 330,
+            "DazeValue": 3630,
+            "DazeGrowth": 170
+        },
+        "1161014": {
+            "DamageValue": 48630,
+            "DamageGrowth": 4430,
+            "DazeValue": 40350,
+            "DazeGrowth": 1840
+        },
+        "1161015": {
+            "DamageValue": 29270,
+            "DamageGrowth": 2670,
+            "DazeValue": 24770,
+            "DazeGrowth": 1130
+        },
+        "1161016": {
+            "DamageValue": 8990,
+            "DamageGrowth": 820,
+            "DazeValue": 4500,
+            "DazeGrowth": 210
+        },
+        "1161017": {
+            "DamageValue": 18630,
+            "DamageGrowth": 1700,
+            "DazeValue": 16870,
+            "DazeGrowth": 770
+        },
+        "1161018": {
+            "DamageValue": 71210,
+            "DamageGrowth": 6480,
+            "DazeValue": 27320,
+            "DazeGrowth": 1250
+        },
+        "1161019": {
+            "DamageValue": 150800,
+            "DamageGrowth": 13710,
+            "DazeValue": 94740,
+            "DazeGrowth": 4310
+        },
+        "1161020": {
+            "DamageValue": 6970,
+            "DamageGrowth": 640,
+            "DazeValue": 6970,
+            "DazeGrowth": 320
+        },
+        "1161021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1161022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1161023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1161024": {
+            "DamageValue": 21980,
+            "DamageGrowth": 2000,
+            "DazeValue": 18230,
+            "DazeGrowth": 830
+        },
+        "1161025": {
+            "DamageValue": 43540,
+            "DamageGrowth": 3960,
+            "DazeValue": 13240,
+            "DazeGrowth": 610
+        },
+        "1161026": {
+            "DamageValue": 17720,
+            "DamageGrowth": 1620,
+            "DazeValue": 13630,
+            "DazeGrowth": 620
+        },
+        "1161027": {
+            "DamageValue": 36430,
+            "DamageGrowth": 3320,
+            "DazeValue": 8550,
+            "DazeGrowth": 390
+        },
+        "1161028": {
+            "DamageValue": 11970,
+            "DamageGrowth": 1090,
+            "DazeValue": 9210,
+            "DazeGrowth": 420
+        }
+    }
+}

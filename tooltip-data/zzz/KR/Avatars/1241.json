@@ -1,0 +1,489 @@
+{
+    "Name": "주연",
+    "ElementTypes": [
+        "Ether"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "빠른 장전",
+            "Description": "주연이 <color=#FFFFFF>[콤보 스킬]</color>/<color=#FFFFFF>[궁극기]</color>를 시전하면 <color=#FFFFFF>[빠른 장전]</color> 효과를 획득한다. 주연이 <color=#FFFFFF>[빠른 장전]</color> 효과를 보유한 경우, 모든 <color=#FFFFFF>[강화 산탄]</color>을 소진하면 <color=#FFFFFF>[빠른 장전]</color> 효과를 소모해 즉시 <color=#FFFFFF>[강화 산탄]</color> 6/9발을 획득한다.",
+            "Lore": "주연은 과거 야누스 구역 치안관 능력 대회에 참가해 마술과도 같은 장전 스킬로 1등을 차지한 적이 있다.\n동료는 이에 대해 이렇게 평가했다. 「엄청난 연습의 산물인 거지」"
+        },
+        "2": {
+            "Title": "에테르 잔해",
+            "Description": "<color=#FFFFFF>[제압 모드]</color>에서 주연의 경직 저항 레벨이 증가하고, 받는 피해가 10% 감소한다. <color=#FFFFFF>[강화 산탄]</color>을 소모한 공격이 적에게 명중 시 <color=#FFFFFF>[일반 공격: 저항 금지]</color> 및 <color=#FFFFFF>[대시 공격: 화력 제압]</color>으로 주는 <color=#FE437E>에테르 피해</color>가 10% 증가한다. 최대 중첩: 5스택, 지속 시간: 5초, 발포할 때마다 최대 1스택의 효과를 획득하며 중복 발동 시 지속 시간이 갱신된다.",
+            "Lore": "주연이 사용하는 치안국 특제 에테르 총알이 적에게 명중하면 적은 되돌릴 수 없는 침식 피해를 받는다.\n그래서 주연이 총을 쏘기 전에 저항을 멈추고 얌전히 투항하라고 외치는 건 정말 상대방의 안전을 위해서다…"
+        },
+        "3": {
+            "Title": "치안관 특훈",
+            "Description": "<color=#FFFFFF>[일반 공격]</color>, <color=#FFFFFF>[회피]</color>, <color=#FFFFFF>[지원 스킬]</color>, <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[콤보 스킬]</color>의 스킬 레벨+2",
+            "Lore": "엘리트 치안관으로서 주연이 훈련을 받는 목적은 단 하나다.\n공동 내 각종 작전 능력을 전면적으로 향상시켜 모든 무법자들을 제압하는 것."
+        },
+        "4": {
+            "Title": "에테르 침투",
+            "Description": "주연이 <color=#FFFFFF>[강화 산탄]</color>을 소모한 공격이 적에게 명중 시 <color=#FFFFFF>[일반 공격: 저항 금지]</color> 및 <color=#FFFFFF>[대시 공격: 화력 제압]</color>이 타깃의 <color=#FE437E>에테르 피해 저항</color>을 25% 무시한다.",
+            "Lore": "공동의 갱단들은 교전 시 상대방의 총알이 얼마나 남았는지 은밀히 계산하는 것을 좋아한다.\n하지만 그들은 주연이 가진 특제 탄창이 주변의 에테르를 이용해 지속적으로 전력을 공급한다는 걸 꿈에도 모를 것이다."
+        },
+        "5": {
+            "Title": "특근 경력",
+            "Description": "<color=#FFFFFF>[일반 공격]</color>, <color=#FFFFFF>[회피]</color>, <color=#FFFFFF>[지원 스킬]</color>, <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[콤보 스킬]</color>의 스킬 레벨+2",
+            "Lore": "노련한 특수팀 치안관으로서 상황을 파악하여 효율적으로 작전 능력을 발휘한다.\n때로는 위압감 넘치는 눈빛만으로도 적이 저항을 포기하게 만들 때도 있다."
+        },
+        "6": {
+            "Title": "확장 에너지팩-3형",
+            "Description": "주연이 <color=#FFFFFF>[강화 산탄]</color>을 누적 12발 소모할 시 <color=#FFFFFF>[에테르 잔열]</color> 효과를 획득하고 다음번에 시전하는 <color=#FFFFFF>[강화 특수 스킬]</color>의 에너지 소모가 30pt 감소한다. <color=#FFFFFF>[강화 특수 스킬]</color> 시전 시 <color=#FFFFFF>[에테르 잔열]</color> 효과를 소모해 총 4발의 에테르 벅샷을 추가로 발사한다. 추가로 발사되는 에테르 벅샷은 각각 주연 공격력의 220%에 해당하는 피해를 준다.",
+            "Lore": "주연은 항상 자신이 장착한 장비의 남은 배터리를 신경 쓰는데, 장비의 배터리가 빨간색까지 떨어질 경우 긴장하며 일부러 배터리를 절약하기도 한다.\n치안국에서 그녀를 위해 초대용량 지속 에너지팩을 지급한 뒤에야 이러한 고민을 완전히 해결할 수 있었다."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "핵심 패시브: 특수 탄약",
+            "DescriptionByLevel": {
+                "1": "주연이 <color=#FFFFFF>[제압 모드]</color>에서 <color=#FFFFFF>[강화 산탄]</color>을 소모해 공격 시 스킬로 주는 피해가 <color=#2BAD00>20%</color> 증가하고, 공격이 그로기 상태인 적에게 명중 시 해당 버프 효과가 추가로 <color=#2BAD00>20%</color> 증가한다. 전장 진입 시 주연은 즉시 <color=#FFFFFF>[강화 산탄]</color>을 6발 획득한다.",
+                "2": "주연이 <color=#FFFFFF>[제압 모드]</color>에서 <color=#FFFFFF>[강화 산탄]</color>을 소모해 공격 시 스킬로 주는 피해가 <color=#2BAD00>23.3%</color> 증가하고, 공격이 그로기 상태인 적에게 명중 시 해당 버프 효과가 추가로 <color=#2BAD00>23.3%</color> 증가한다. 전장 진입 시 주연은 즉시 <color=#FFFFFF>[강화 산탄]</color>을 6발 획득한다.",
+                "3": "주연이 <color=#FFFFFF>[제압 모드]</color>에서 <color=#FFFFFF>[강화 산탄]</color>을 소모해 공격 시 스킬로 주는 피해가 <color=#2BAD00>26.6%</color> 증가하고, 공격이 그로기 상태인 적에게 명중 시 해당 버프 효과가 추가로 <color=#2BAD00>26.6%</color> 증가한다. 전장 진입 시 주연은 즉시 <color=#FFFFFF>[강화 산탄]</color>을 6발 획득한다.",
+                "4": "주연이 <color=#FFFFFF>[제압 모드]</color>에서 <color=#FFFFFF>[강화 산탄]</color>을 소모해 공격 시 스킬로 주는 피해가 <color=#2BAD00>30%</color> 증가하고, 공격이 그로기 상태인 적에게 명중 시 해당 버프 효과가 추가로 <color=#2BAD00>30%</color> 증가한다. 전장 진입 시 주연은 즉시 <color=#FFFFFF>[강화 산탄]</color>을 6발 획득한다.",
+                "5": "주연이 <color=#FFFFFF>[제압 모드]</color>에서 <color=#FFFFFF>[강화 산탄]</color>을 소모해 공격 시 스킬로 주는 피해가 <color=#2BAD00>33.3%</color> 증가하고, 공격이 그로기 상태인 적에게 명중 시 해당 버프 효과가 추가로 <color=#2BAD00>33.3%</color> 증가한다. 전장 진입 시 주연은 즉시 <color=#FFFFFF>[강화 산탄]</color>을 6발 획득한다.",
+                "6": "주연이 <color=#FFFFFF>[제압 모드]</color>에서 <color=#FFFFFF>[강화 산탄]</color>을 소모해 공격 시 스킬로 주는 피해가 <color=#2BAD00>36.6%</color> 증가하고, 공격이 그로기 상태인 적에게 명중 시 해당 버프 효과가 추가로 <color=#2BAD00>36.6%</color> 증가한다. 전장 진입 시 주연은 즉시 <color=#FFFFFF>[강화 산탄]</color>을 6발 획득한다.",
+                "7": "주연이 <color=#FFFFFF>[제압 모드]</color>에서 <color=#FFFFFF>[강화 산탄]</color>을 소모해 공격 시 스킬로 주는 피해가 <color=#2BAD00>40%</color> 증가하고, 공격이 그로기 상태인 적에게 명중 시 해당 버프 효과가 추가로 <color=#2BAD00>40%</color> 증가한다. 전장 진입 시 주연은 즉시 <color=#FFFFFF>[강화 산탄]</color>을 6발 획득한다."
+            }
+        },
+        "MathSkill": {
+            "Title": "추가 능력: 무장 협력",
+            "Description": "파티 내 <color=#FFFFFF>[지원]</color> 캐릭터 혹은 자신과 진영이 같은 캐릭터 존재 시 발동:\n주연이 <color=#FFFFFF>[강화 특수 스킬]</color>, <color=#FFFFFF>[콤보 스킬]</color> 혹은 <color=#FFFFFF>[궁극기]</color> 시전 시, 자신의 치명타 확률이 30% 증가한다. 지속 시간: 10초"
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "124100001": {
+                "Title": "일반 공격: 꼼짝 마!",
+                "Description": "<color=#FFFFFF>[돌격 모드]</color>\n<IconMap:Icon_Normal>을 짧게 탭하여 시전:\n체술과 권총, 에테르 벅샷을 번갈아 쓰며 전방을 향해 최대 5단까지 공격을 펼쳐 <color=#F0D12B>물리 피해</color> 및 <color=#FE437E>에테르 피해</color>를 준다.\n네 번째, 다섯 번째 공격이 적에게 명중 시 <color=#FFFFFF>[강화 산탄]</color>을 1발 획득한다. 동일한 공격 한 번에 최대 1발만 획득할 수 있다.\n스킬을 시전하는 동안 {LAYOUT_CONSOLECONTROLLER#스틱을}{LAYOUT_FALLBACK#방향키를} 움직이며 <IconMap:Icon_Normal>을 짧게 탭하면 <color=#FFFFFF>[대시 공격: 화력 기습]</color>을 시전하고 상응하는 방향으로 위치를 조정할 수 있다.\n<color=#FFFFFF>[돌격 모드]</color>에서 <IconMap:Icon_Normal>을 홀드하면 공격 방식을 전환해 <color=#FFFFFF>[제압 모드]</color>에 진입한다."
+            },
+            "124100002": {
+                "Title": "일반 공격: 저항 금지",
+                "Description": "<color=#FFFFFF>[제압 모드]</color>\n<IconMap:Icon_Normal>을 홀드해 시전:\n샷건으로 전방을 향해 최대 3단까지 꿰뚫기 사격을 펼쳐 <color=#F0D12B>물리 피해</color>를 준다. 발포 시 <color=#FFFFFF>[강화 산탄]</color>을 보유하고 있으면 <color=#FFFFFF>[강화 산탄]</color>을 1발 소모해 대량의 <color=#FE437E>에테르 피해</color>를 준다.\n스킬을 시전하는 동안 {LAYOUT_CONSOLECONTROLLER#스틱을}{LAYOUT_FALLBACK#방향키를} 움직이면 <color=#FFFFFF>[대시 공격: 화력 제압]</color>을 시전하고 상응하는 방향으로 위치를 조정할 수 있다.\n<color=#FFFFFF>[제압 모드]</color> 중 <IconMap:Icon_Normal>에서 손을 떼면 공격 방식을 전환해 <color=#FFFFFF>[돌격 모드]</color>로 돌아온다."
+            },
+            "124110001": {
+                "Title": "일반 공격: 꼼짝 마!"
+            },
+            "124110002": {
+                "Description": "1단 피해 배율",
+                "Param": "{Skill:1241001, Prop:1001}"
+            },
+            "124110003": {
+                "Description": "2단 피해 배율",
+                "Param": "{Skill:1241002, Prop:1001}"
+            },
+            "124110004": {
+                "Description": "3단 피해 배율",
+                "Param": "{Skill:1241003, Prop:1001}"
+            },
+            "124110005": {
+                "Description": "4단 피해 배율",
+                "Param": "{Skill:1241004, Prop:1001}"
+            },
+            "124110006": {
+                "Description": "5단 피해 배율",
+                "Param": "{Skill:1241005, Prop:1001}"
+            },
+            "124110007": {
+                "Description": "1단 그로기 배율",
+                "Param": "{Skill:1241001, Prop:1002}"
+            },
+            "124110008": {
+                "Description": "2단 그로기 배율",
+                "Param": "{Skill:1241002, Prop:1002}"
+            },
+            "124110009": {
+                "Description": "3단 그로기 배율",
+                "Param": "{Skill:1241003, Prop:1002}"
+            },
+            "124110010": {
+                "Description": "4단 그로기 배율",
+                "Param": "{Skill:1241004, Prop:1002}"
+            },
+            "124110011": {
+                "Description": "5단 그로기 배율",
+                "Param": "{Skill:1241005, Prop:1002}"
+            },
+            "124110012": {
+                "Title": "일반 공격: 저항 금지"
+            },
+            "124110013": {
+                "Description": "1단 피해 배율(물리)",
+                "Param": "{Skill:1241006, Prop:1001}"
+            },
+            "124110014": {
+                "Description": "2단 피해 배율(물리)",
+                "Param": "{Skill:1241007, Prop:1001}"
+            },
+            "124110015": {
+                "Description": "3단 피해 배율(물리)",
+                "Param": "{Skill:1241008, Prop:1001}"
+            },
+            "124110016": {
+                "Description": "1단 그로기 배율(물리)",
+                "Param": "{Skill:1241006, Prop:1002}"
+            },
+            "124110017": {
+                "Description": "2단 그로기 배율(물리)",
+                "Param": "{Skill:1241007, Prop:1002}"
+            },
+            "124110018": {
+                "Description": "3단 그로기 배율(물리)",
+                "Param": "{Skill:1241008, Prop:1002}"
+            },
+            "124110019": {
+                "Description": "1단 피해 배율(에테르)",
+                "Param": "{Skill:1241010, Prop:1001}"
+            },
+            "124110020": {
+                "Description": "2단 피해 배율(에테르)",
+                "Param": "{Skill:1241011, Prop:1001}"
+            },
+            "124110021": {
+                "Description": "3단 피해 배율(에테르)",
+                "Param": "{Skill:1241012, Prop:1001}"
+            },
+            "124110022": {
+                "Description": "1단 그로기 배율(에테르)",
+                "Param": "{Skill:1241010, Prop:1002}"
+            },
+            "124110023": {
+                "Description": "2단 그로기 배율(에테르)",
+                "Param": "{Skill:1241011, Prop:1002}"
+            },
+            "124110024": {
+                "Description": "3단 그로기 배율(에테르)",
+                "Param": "{Skill:1241012, Prop:1002}"
+            }
+        },
+        "1": {
+            "124100003": {
+                "Title": "특수 스킬: 벅샷 사격",
+                "Description": "<IconMap:Icon_Special>을 짧게 탭하여 시전:\n에테르 벅샷으로 사격해 <color=#FE437E>에테르 피해</color>를 준다. <IconMap:Icon_Special>을 연속으로 짧게 탭하면 3회 중복 사격이 가능하다.\n스킬을 시전하는 동안 경직 저항 레벨이 증가한다."
+            },
+            "124100004": {
+                "Title": "강화 특수 스킬: 벅샷 연사",
+                "Description": "에너지가 충분한 상태에서 <IconMap:Icon_SpecialReady>을 짧게 탭하여 시전:\n에테르 벅샷으로 연속 사격해 대량의 <color=#FE437E>에테르 피해</color>를 준다.\n스킬 시전 시 <color=#FFFFFF>[강화 산탄]</color>을 3발 획득한다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "124110025": {
+                "Title": "특수 스킬: 벅샷 사격"
+            },
+            "124110026": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1241015, Prop:1001}"
+            },
+            "124110027": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1241015, Prop:1002}"
+            },
+            "124110028": {
+                "Title": "강화 특수 스킬: 벅샷 연사"
+            },
+            "124110029": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1241016, Prop:1001}"
+            },
+            "124110030": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1241016, Prop:1002}"
+            },
+            "124110031": {
+                "Description": "에너지 소모",
+                "Param": "60pt"
+            }
+        },
+        "2": {
+            "124100005": {
+                "Title": "회피: 우회",
+                "Description": "<IconMap:Icon_Evade>을 짧게 탭하여 시전:\n빠른 대시로 회피한다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "124100006": {
+                "Title": "대시 공격: 화력 기습",
+                "Description": "<color=#FFFFFF>[돌격 모드]</color>\n회피 시 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n권총으로 사격해 <color=#FE437E>에테르 피해</color>를 준다."
+            },
+            "124100007": {
+                "Title": "대시 공격: 화력 제압",
+                "Description": "<color=#FFFFFF>[제압 모드]</color>\n<color=#FFFFFF>[일반 공격: 저항 금지]</color>를 시전하는 동안 {LAYOUT_CONSOLECONTROLLER#스틱을}{LAYOUT_FALLBACK#방향키를} 움직여 시전:\n샷건으로 꿰뚫기 사격을 시전해 <color=#F0D12B>물리 피해</color>를 준다. 발포 시 <color=#FFFFFF>[강화 산탄]</color>을 보유하고 있으면 <color=#FFFFFF>[강화 산탄]</color>을 1발 소모해 대량의 <color=#FE437E>에테르 피해</color>를 준다."
+            },
+            "124100008": {
+                "Title": "회피 반격: 화력 폭발",
+                "Description": "<color=#FFFFFF>[극한 회피]</color> 발동 후 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n에테르 벅샷으로 전방의 적을 사격해 <color=#FE437E>에테르 피해</color>를 준다.\n스킬 시전 시 <color=#FFFFFF>[강화 산탄]</color>을 1발 획득한다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "124110032": {
+                "Title": "대시 공격: 화력 기습"
+            },
+            "124110033": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1241017, Prop:1001}"
+            },
+            "124110034": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1241017, Prop:1002}"
+            },
+            "124110035": {
+                "Title": "대시 공격: 화력 제압"
+            },
+            "124110036": {
+                "Description": "피해 배율(물리)",
+                "Param": "{Skill:1241018, Prop:1001}"
+            },
+            "124110037": {
+                "Description": "그로기 배율(물리)",
+                "Param": "{Skill:1241018, Prop:1002}"
+            },
+            "124110038": {
+                "Description": "피해 배율(에테르)",
+                "Param": "{Skill:1241019, Prop:1001}"
+            },
+            "124110039": {
+                "Description": "그로기 배율(에테르)",
+                "Param": "{Skill:1241019, Prop:1002}"
+            },
+            "124110040": {
+                "Title": "회피 반격: 화력 폭발"
+            },
+            "124110041": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1241020, Prop:1001}"
+            },
+            "124110042": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1241020, Prop:1002}"
+            }
+        },
+        "3": {
+            "124100009": {
+                "Title": "콤보 스킬: 섬멸 모드",
+                "Description": "<color=#FFFFFF>[콤보 스킬]</color> 발동 시 해당 캐릭터를 선택해 시전:\n완전 변형 무기로 포화 공격을 시전하고 직선 레이저 및 추적 미사일을 발사해 대량의 <color=#FE437E>에테르 피해</color>를 준다.\n스킬 시전 시 <color=#FFFFFF>[강화 산탄]</color>을 3발 획득한다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "124100010": {
+                "Title": "궁극기: 섬멸 모드 MAX",
+                "Description": "데시벨 레벨 <color=#FFFFFF>[Maximum]</color> 달성 시 <IconMap:Icon_UltimateReady>을 짧게 탭하여 시전:\n완전 변형 무기로 포화 공격을 시전하고 직선 레이저 및 추적 미사일을 발사해 대량의 <color=#FE437E>에테르 피해</color>를 준다.\n스킬 시전 시 <color=#FFFFFF>[강화 산탄]</color>을 3발 획득한다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "124110043": {
+                "Title": "콤보 스킬: 섬멸 모드"
+            },
+            "124110044": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1241022, Prop:1001}"
+            },
+            "124110045": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1241022, Prop:1002}"
+            },
+            "124110046": {
+                "Title": "궁극기: 섬멸 모드 MAX"
+            },
+            "124110047": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1241023, Prop:1001}"
+            },
+            "124110048": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1241023, Prop:1002}"
+            }
+        },
+        "6": {
+            "124100012": {
+                "Title": "빠른 지원: 엄호 사격",
+                "Description": "현재 조작 중인 캐릭터가 넉업되면 <IconMap:Icon_Switch>을 짧게 탭하여 시전:\n에테르 벅샷으로 전방의 적을 사격해 <color=#FE437E>에테르 피해</color>를 준다.\n스킬 시전 시 <color=#FFFFFF>[강화 산탄]</color>을 1발 획득한다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "124100013": {
+                "Title": "회피 지원: 경계 지원",
+                "Description": "출전 캐릭터 피격 직전에 <IconMap:Icon_Switch>을 짧게 탭하여 시전:\n적의 공격을 회피하고 <color=#FFFFFF>[극한 시야]</color>를 발동한다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "124100014": {
+                "Title": "지원 돌격: 정당방위",
+                "Description": "<color=#FFFFFF>[회피 지원]</color> 시전 후 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n체술과 샷건을 번갈아 쓰며 공격해 <color=#F0D12B>물리 피해</color> 및 <color=#FE437E>에테르 피해</color>를 준다.\n스킬 시전 시 <color=#FFFFFF>[강화 산탄]</color>을 3발 획득한다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "124110049": {
+                "Title": "빠른 지원: 엄호 사격"
+            },
+            "124110050": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1241024, Prop:1001}"
+            },
+            "124110051": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1241024, Prop:1002}"
+            },
+            "124110052": {
+                "Title": "지원 돌격: 정당방위"
+            },
+            "124110053": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1241025, Prop:1001}"
+            },
+            "124110054": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1241025, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1241001": {
+            "DamageValue": 4310,
+            "DamageGrowth": 400,
+            "DazeValue": 2160,
+            "DazeGrowth": 100
+        },
+        "1241002": {
+            "DamageValue": 12640,
+            "DamageGrowth": 1150,
+            "DazeValue": 9730,
+            "DazeGrowth": 450
+        },
+        "1241003": {
+            "DamageValue": 13730,
+            "DamageGrowth": 1250,
+            "DazeValue": 9470,
+            "DazeGrowth": 440
+        },
+        "1241004": {
+            "DamageValue": 15100,
+            "DamageGrowth": 1380,
+            "DazeValue": 12430,
+            "DazeGrowth": 570
+        },
+        "1241005": {
+            "DamageValue": 16220,
+            "DamageGrowth": 1480,
+            "DazeValue": 13920,
+            "DazeGrowth": 640
+        },
+        "1241006": {
+            "DamageValue": 5370,
+            "DamageGrowth": 490,
+            "DazeValue": 5960,
+            "DazeGrowth": 280
+        },
+        "1241007": {
+            "DamageValue": 5370,
+            "DamageGrowth": 490,
+            "DazeValue": 5960,
+            "DazeGrowth": 280
+        },
+        "1241008": {
+            "DamageValue": 16090,
+            "DamageGrowth": 1470,
+            "DazeValue": 17870,
+            "DazeGrowth": 820
+        },
+        "1241009": {
+            "DamageValue": 5370,
+            "DamageGrowth": 490,
+            "DazeValue": 5960,
+            "DazeGrowth": 280
+        },
+        "1241010": {
+            "DamageValue": 13590,
+            "DamageGrowth": 1240,
+            "DazeValue": 5960,
+            "DazeGrowth": 280
+        },
+        "1241011": {
+            "DamageValue": 13590,
+            "DamageGrowth": 1240,
+            "DazeValue": 5960,
+            "DazeGrowth": 280
+        },
+        "1241012": {
+            "DamageValue": 40770,
+            "DamageGrowth": 3710,
+            "DazeValue": 17870,
+            "DazeGrowth": 820
+        },
+        "1241013": {
+            "DamageValue": 13590,
+            "DamageGrowth": 1240,
+            "DazeValue": 5960,
+            "DazeGrowth": 280
+        },
+        "1241014": {
+            "DamageValue": 7890,
+            "DamageGrowth": 720,
+            "DazeValue": 7890,
+            "DazeGrowth": 360
+        },
+        "1241015": {
+            "DamageValue": 1840,
+            "DamageGrowth": 170,
+            "DazeValue": 1840,
+            "DazeGrowth": 90
+        },
+        "1241016": {
+            "DamageValue": 58740,
+            "DamageGrowth": 5340,
+            "DazeValue": 48000,
+            "DazeGrowth": 2190
+        },
+        "1241017": {
+            "DamageValue": 5510,
+            "DamageGrowth": 510,
+            "DazeValue": 2760,
+            "DazeGrowth": 130
+        },
+        "1241018": {
+            "DamageValue": 5370,
+            "DamageGrowth": 490,
+            "DazeValue": 5960,
+            "DazeGrowth": 280
+        },
+        "1241019": {
+            "DamageValue": 13590,
+            "DamageGrowth": 1240,
+            "DazeValue": 5960,
+            "DazeGrowth": 280
+        },
+        "1241020": {
+            "DamageValue": 17680,
+            "DamageGrowth": 1610,
+            "DazeValue": 16140,
+            "DazeGrowth": 740
+        },
+        "1241021": {
+            "DamageValue": 17570,
+            "DamageGrowth": 1600,
+            "DazeValue": 11550,
+            "DazeGrowth": 530
+        },
+        "1241022": {
+            "DamageValue": 58750,
+            "DamageGrowth": 5350,
+            "DazeValue": 14860,
+            "DazeGrowth": 680
+        },
+        "1241023": {
+            "DamageValue": 197760,
+            "DamageGrowth": 17980,
+            "DazeValue": 12510,
+            "DazeGrowth": 627
+        },
+        "1241024": {
+            "DamageValue": 5140,
+            "DamageGrowth": 470,
+            "DazeValue": 5140,
+            "DazeGrowth": 240
+        },
+        "1241025": {
+            "DamageValue": 35580,
+            "DamageGrowth": 3240,
+            "DazeValue": 30860,
+            "DazeGrowth": 1410
+        },
+        "1241026": {
+            "DamageValue": 11010,
+            "DamageGrowth": 1010,
+            "DazeValue": 5510,
+            "DazeGrowth": 260
+        },
+        "1241027": {
+            "DamageValue": 88000,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

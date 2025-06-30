@@ -1,0 +1,491 @@
+{
+    "Name": "Hugo",
+    "ElementTypes": [
+        "Ice"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Vástago del odio",
+            "Description": "En el estado de <color=#FFFFFF>eco del abismo</color>, al activar <color=#FFFFFF>término</color>, la Probabilidad de Crítico y el Daño Crítico de la habilidad aumentan adicionalmente en un 12 % y en un 30 % respectivamente.",
+            "Lore": "«Así que no niegues tus deseos. No te resistas a tu propia ambición. Ese es tu talento innato, ¡es el mejor regalo que el destino te ha dado!».\n«Admítelo, hay una mecha en tu interior que anhela prender fuego a todo y reducir el mundo a cenizas».\n«Yo soy esa mecha».\n\n«Sí, lo sé. Siempre lo he sabido»."
+        },
+        "2": {
+            "Title": "Niño interior",
+            "Description": "Cuando la <color=#FFFFFF>técnica definitiva: Blasfemo</color> activa <color=#FFFFFF>término</color>, no pone fin al Aturdimiento del enemigo. Además, al activar <color=#FFFFFF>término</color>, la habilidad ignora un 15 % de su Defensa.",
+            "Lore": "«La familia es una maldición eterna e ineludible».\n«No importa a dónde vayas, o en lo que te conviertas, esa maldición te perseguirá como una sombra».\n«Y cuando toques fondo o alcances la cima, tu familia estará ahí, y te convertirás en ese niño desamparado e indefenso que solo sabe esconderse y llorar».\n\n«A menos que lo veas y lo aceptes realmente».\nA veces el dolor solo se puede curar cuando se ve y se acepta."
+        },
+        "3": {
+            "Title": "Fruto del árbol venenoso",
+            "Description": "Nivel de <color=#FFFFFF>ataque normal</color>, <color=#FFFFFF>evasión</color>, <color=#FFFFFF>técnica de apoyo</color>, <color=#FFFFFF>técnica especial</color> y <color=#FFFFFF>técnica en cadena</color> +2",
+            "Lore": "Dicen que las flores que brotan en el abismo están imbuidas de maldad, al igual que un árbol envenenado no puede dar un fruto puro.\nPero todos los frutos acaban cayendo.\nAsí que él cayó como una lluvia de fragmentos rotos.\nLa lluvia empapó la tierra, y cada gota de rocío reflejaba un nuevo amanecer."
+        },
+        "4": {
+            "Title": "Dramaturgia",
+            "Description": "Al golpear a un enemigo con un disparo cargado, el ataque de Hugo ignora un 12 % de la <color=#98EFF0>resistencia glacial</color> del objetivo durante 15 s. La duración se reinicia con cada activación.",
+            "Lore": "Justicia, maldad, locura, razón, sofisticación, obstinación...\nEstá compuesto por miles de caras.\n«Entonces, ¿cuál es tu verdadero yo?»\n«Eso no importa. ¿Por qué no me lo dices tú, Lycaon?»\n«A tus ojos, ¿qué clase de persona soy?»"
+        },
+        "5": {
+            "Title": "Nirvana",
+            "Description": "Nivel de <color=#FFFFFF>ataque normal</color>, <color=#FFFFFF>evasión</color>, <color=#FFFFFF>técnica de apoyo</color>, <color=#FFFFFF>técnica especial</color> y <color=#FFFFFF>técnica en cadena</color> +2",
+            "Lore": "El mundo no necesita ser destruido y reconstruido, y tampoco hay nadie con derecho a hacerlo.\nPero una persona sí que puede.\nAsí que se destruyó a sí mismo y renació.\n«Si debo caer, caeré. La persona en la que me convertiré seguro que me aceptará.»"
+        },
+        "6": {
+            "Title": "Corona de espinas",
+            "Description": "Todos los disparos que golpean a un enemigo pueden activar el estado de <color=#FFFFFF>eco del abismo</color>, hasta un máximo de 6 s. La duración se reinicia con cada activación. Además, cuando cualquier habilidad activa <color=#FFFFFF>término</color>, dicho daño infligido aumenta en un 60 % adicional. Cuando el ataque final de la <color=#FFFFFF>técnica especial EX: Cazador de almas - Castigo</color> golpea a un enemigo que no está afectado por Aturdimiento, también activa <color=#FFFFFF>término</color>, lo que aumenta el multiplicador de daño del ataque final de la habilidad en un 1000 %.",
+            "Lore": "Caminó deliberadamente hacia el abismo sin fin, y dejó que las espinas del suelo abrieran en él heridas.\nAllá donde se extendía la sangre, la dignidad y la obsesión fracturadas brotaban de sus heridas.\nRecogió las espinas empapadas en sangre y se coronó a sí mismo con ellas.\n«Solo existe una persona capaz de matarme o salvarme... Y ese soy yo.»"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Técnica pasiva: Veredicto final",
+            "DescriptionByLevel": {
+                "1": "Cuando Hugo golpea a un enemigo con la <color=#FFFFFF>técnica en cadena: Truco del destino</color> o provoca Aturdimiento sobre un enemigo con uno de sus ataques, Hugo entra en el estado de <color=#FFFFFF>eco del abismo</color> durante 6 s. La duración se reinicia con cada activación. En ese estado, la Probabilidad de Crítico de Hugo aumenta en un 12 %, y su Daño Crítico aumenta en un 25 %.\nCuando en el equipo hay 1/2 personajes <color=#FFFFFF>aturdidores</color>, el Ataque de Hugo aumenta en <color=#2BAD00>25</color>/<color=#2BAD00>75</color> ptos.\nAl golpear a un enemigo con el ataque final de la <color=#FFFFFF>técnica definitiva: Blasfemo</color> o la <color=#FFFFFF>técnica especial EX: Cazador de almas - Castigo</color>, si el enemigo está afectado por Aturdimiento, se activa el efecto de <color=#FFFFFF>término</color>, que aumenta el multiplicador de daño del ataque final en un <color=#2BAD00>500 %</color>. Además, el efecto de <color=#FFFFFF>término</color> aumenta aún más el multiplicador de daño de la habilidad según el tiempo restante de Aturdimiento del enemigo en el momento de la activación. Si el tiempo restante de Aturdimiento del enemigo es igual o inferior a 5 s, el multiplicador de daño de la habilidad aumenta en un <color=#2BAD00>140 %</color> por cada segundo restante. Cuando el tiempo restante de Aturdimiento del enemigo es de entre 5 s y 15 s, el multiplicador de daño de la habilidad aumenta en un <color=#2BAD00>50 %</color> por cada segundo restante. El aumento total del multiplicador de daño de la habilidad puede ser de hasta un máximo de un <color=#2BAD00>1700 %</color>. Cuando Hugo activa <color=#FFFFFF>término</color>, el Aturdimiento del enemigo termina inmediatamente, y acumula una cierta cantidad de Aturdimiento según el tiempo restante de Aturdimiento del enemigo en el momento de activación de <color=#FFFFFF>término</color>. Por cada segundo restante, acumula un 5 % de Aturdimiento, hasta un máximo del 25 % del Aturdimiento máximo del enemigo.\nAl golpear a un enemigo que no esté afectado por Aturdimiento con la <color=#FFFFFF>técnica especial EX: Cazador de almas - Castigo</color>, la acumulación de Aturdimiento de la habilidad aumenta en un 20 %.",
+                "2": "Cuando Hugo golpea a un enemigo con la <color=#FFFFFF>técnica en cadena: Truco del destino</color> o provoca Aturdimiento sobre un enemigo con uno de sus ataques, Hugo entra en el estado de <color=#FFFFFF>eco del abismo</color> durante 6 s. La duración se reinicia con cada activación. En ese estado, la Probabilidad de Crítico de Hugo aumenta en un 12 %, y su Daño Crítico aumenta en un 25 %.\nCuando en el equipo hay 1/2 personajes <color=#FFFFFF>aturdidores</color>, el Ataque de Hugo aumenta en <color=#2BAD00>50</color>/<color=#2BAD00>150</color> ptos.\nAl golpear a un enemigo con el ataque final de la <color=#FFFFFF>técnica definitiva: Blasfemo</color> o la <color=#FFFFFF>técnica especial EX: Cazador de almas - Castigo</color>, si el enemigo está afectado por Aturdimiento, se activa el efecto de <color=#FFFFFF>término</color>, que aumenta el multiplicador de daño del ataque final en un <color=#2BAD00>583 %</color>. Además, el efecto de <color=#FFFFFF>término</color> aumenta aún más el multiplicador de daño de la habilidad según el tiempo restante de Aturdimiento del enemigo en el momento de la activación. Si el tiempo restante de Aturdimiento del enemigo es igual o inferior a 5 s, el multiplicador de daño de la habilidad aumenta en un <color=#2BAD00>163 %</color> por cada segundo restante. Cuando el tiempo restante de Aturdimiento del enemigo es de entre 5 s y 15 s, el multiplicador de daño de la habilidad aumenta en un <color=#2BAD00>58 %</color> por cada segundo restante. El aumento total del multiplicador de daño de la habilidad puede ser de hasta un máximo de un <color=#2BAD00>1978 %</color>. Cuando Hugo activa <color=#FFFFFF>término</color>, el Aturdimiento del enemigo termina inmediatamente, y acumula una cierta cantidad de Aturdimiento según el tiempo restante de Aturdimiento del enemigo en el momento de activación de <color=#FFFFFF>término</color>. Por cada segundo restante, acumula un 5 % de Aturdimiento, hasta un máximo del 25 % del Aturdimiento máximo del enemigo.\nAl golpear a un enemigo que no esté afectado por Aturdimiento con la <color=#FFFFFF>técnica especial EX: Cazador de almas - Castigo</color>, la acumulación de Aturdimiento de la habilidad aumenta en un 20 %.",
+                "3": "Cuando Hugo golpea a un enemigo con la <color=#FFFFFF>técnica en cadena: Truco del destino</color> o provoca Aturdimiento sobre un enemigo con uno de sus ataques, Hugo entra en el estado de <color=#FFFFFF>eco del abismo</color> durante 6 s. La duración se reinicia con cada activación. En ese estado, la Probabilidad de Crítico de Hugo aumenta en un 12 %, y su Daño Crítico aumenta en un 25 %.\nCuando en el equipo hay 1/2 personajes <color=#FFFFFF>aturdidores</color>, el Ataque de Hugo aumenta en <color=#2BAD00>80</color>/<color=#2BAD00>240</color> ptos.\nAl golpear a un enemigo con el ataque final de la <color=#FFFFFF>técnica definitiva: Blasfemo</color> o la <color=#FFFFFF>técnica especial EX: Cazador de almas - Castigo</color>, si el enemigo está afectado por Aturdimiento, se activa el efecto de <color=#FFFFFF>término</color>, que aumenta el multiplicador de daño del ataque final en un <color=#2BAD00>667 %</color>. Además, el efecto de <color=#FFFFFF>término</color> aumenta aún más el multiplicador de daño de la habilidad según el tiempo restante de Aturdimiento del enemigo en el momento de la activación. Si el tiempo restante de Aturdimiento del enemigo es igual o inferior a 5 s, el multiplicador de daño de la habilidad aumenta en un <color=#2BAD00>187 %</color> por cada segundo restante. Cuando el tiempo restante de Aturdimiento del enemigo es de entre 5 s y 15 s, el multiplicador de daño de la habilidad aumenta en un <color=#2BAD00>67 %</color> por cada segundo restante. El aumento total del multiplicador de daño de la habilidad puede ser de hasta un máximo de un <color=#2BAD00>2272 %</color>. Cuando Hugo activa <color=#FFFFFF>término</color>, el Aturdimiento del enemigo termina inmediatamente, y acumula una cierta cantidad de Aturdimiento según el tiempo restante de Aturdimiento del enemigo en el momento de activación de <color=#FFFFFF>término</color>. Por cada segundo restante, acumula un 5 % de Aturdimiento, hasta un máximo del 25 % del Aturdimiento máximo del enemigo.\nAl golpear a un enemigo que no esté afectado por Aturdimiento con la <color=#FFFFFF>técnica especial EX: Cazador de almas - Castigo</color>, la acumulación de Aturdimiento de la habilidad aumenta en un 20 %.",
+                "4": "Cuando Hugo golpea a un enemigo con la <color=#FFFFFF>técnica en cadena: Truco del destino</color> o provoca Aturdimiento sobre un enemigo con uno de sus ataques, Hugo entra en el estado de <color=#FFFFFF>eco del abismo</color> durante 6 s. La duración se reinicia con cada activación. En ese estado, la Probabilidad de Crítico de Hugo aumenta en un 12 %, y su Daño Crítico aumenta en un 25 %.\nCuando en el equipo hay 1/2 personajes <color=#FFFFFF>aturdidores</color>, el Ataque de Hugo aumenta en <color=#2BAD00>120</color>/<color=#2BAD00>360</color> ptos.\nAl golpear a un enemigo con el ataque final de la <color=#FFFFFF>técnica definitiva: Blasfemo</color> o la <color=#FFFFFF>técnica especial EX: Cazador de almas - Castigo</color>, si el enemigo está afectado por Aturdimiento, se activa el efecto de <color=#FFFFFF>término</color>, que aumenta el multiplicador de daño del ataque final en un <color=#2BAD00>750 %</color>. Además, el efecto de <color=#FFFFFF>término</color> aumenta aún más el multiplicador de daño de la habilidad según el tiempo restante de Aturdimiento del enemigo en el momento de la activación. Si el tiempo restante de Aturdimiento del enemigo es igual o inferior a 5 s, el multiplicador de daño de la habilidad aumenta en un <color=#2BAD00>210 %</color> por cada segundo restante. Cuando el tiempo restante de Aturdimiento del enemigo es de entre 5 s y 15 s, el multiplicador de daño de la habilidad aumenta en un <color=#2BAD00>75 %</color> por cada segundo restante. El aumento total del multiplicador de daño de la habilidad puede ser de hasta un máximo de un <color=#2BAD00>2550 %</color>. Cuando Hugo activa <color=#FFFFFF>término</color>, el Aturdimiento del enemigo termina inmediatamente, y acumula una cierta cantidad de Aturdimiento según el tiempo restante de Aturdimiento del enemigo en el momento de activación de <color=#FFFFFF>término</color>. Por cada segundo restante, acumula un 5 % de Aturdimiento, hasta un máximo del 25 % del Aturdimiento máximo del enemigo.\nAl golpear a un enemigo que no esté afectado por Aturdimiento con la <color=#FFFFFF>técnica especial EX: Cazador de almas - Castigo</color>, la acumulación de Aturdimiento de la habilidad aumenta en un 20 %.",
+                "5": "Cuando Hugo golpea a un enemigo con la <color=#FFFFFF>técnica en cadena: Truco del destino</color> o provoca Aturdimiento sobre un enemigo con uno de sus ataques, Hugo entra en el estado de <color=#FFFFFF>eco del abismo</color> durante 6 s. La duración se reinicia con cada activación. En ese estado, la Probabilidad de Crítico de Hugo aumenta en un 12 %, y su Daño Crítico aumenta en un 25 %.\nCuando en el equipo hay 1/2 personajes <color=#FFFFFF>aturdidores</color>, el Ataque de Hugo aumenta en <color=#2BAD00>180</color>/<color=#2BAD00>540</color> ptos.\nAl golpear a un enemigo con el ataque final de la <color=#FFFFFF>técnica definitiva: Blasfemo</color> o la <color=#FFFFFF>técnica especial EX: Cazador de almas - Castigo</color>, si el enemigo está afectado por Aturdimiento, se activa el efecto de <color=#FFFFFF>término</color>, que aumenta el multiplicador de daño del ataque final en un <color=#2BAD00>833 %</color>. Además, el efecto de <color=#FFFFFF>término</color> aumenta aún más el multiplicador de daño de la habilidad según el tiempo restante de Aturdimiento del enemigo en el momento de la activación. Si el tiempo restante de Aturdimiento del enemigo es igual o inferior a 5 s, el multiplicador de daño de la habilidad aumenta en un <color=#2BAD00>233 %</color> por cada segundo restante. Cuando el tiempo restante de Aturdimiento del enemigo es de entre 5 s y 15 s, el multiplicador de daño de la habilidad aumenta en un <color=#2BAD00>83 %</color> por cada segundo restante. El aumento total del multiplicador de daño de la habilidad puede ser de hasta un máximo de un <color=#2BAD00>2828 %</color>. Cuando Hugo activa <color=#FFFFFF>término</color>, el Aturdimiento del enemigo termina inmediatamente, y acumula una cierta cantidad de Aturdimiento según el tiempo restante de Aturdimiento del enemigo en el momento de activación de <color=#FFFFFF>término</color>. Por cada segundo restante, acumula un 5 % de Aturdimiento, hasta un máximo del 25 % del Aturdimiento máximo del enemigo.\nAl golpear a un enemigo que no esté afectado por Aturdimiento con la <color=#FFFFFF>técnica especial EX: Cazador de almas - Castigo</color>, la acumulación de Aturdimiento de la habilidad aumenta en un 20 %.",
+                "6": "Cuando Hugo golpea a un enemigo con la <color=#FFFFFF>técnica en cadena: Truco del destino</color> o provoca Aturdimiento sobre un enemigo con uno de sus ataques, Hugo entra en el estado de <color=#FFFFFF>eco del abismo</color> durante 6 s. La duración se reinicia con cada activación. En ese estado, la Probabilidad de Crítico de Hugo aumenta en un 12 %, y su Daño Crítico aumenta en un 25 %.\nCuando en el equipo hay 1/2 personajes <color=#FFFFFF>aturdidores</color>, el Ataque de Hugo aumenta en <color=#2BAD00>270</color>/<color=#2BAD00>810</color> ptos.\nAl golpear a un enemigo con el ataque final de la <color=#FFFFFF>técnica definitiva: Blasfemo</color> o la <color=#FFFFFF>técnica especial EX: Cazador de almas - Castigo</color>, si el enemigo está afectado por Aturdimiento, se activa el efecto de <color=#FFFFFF>término</color>, que aumenta el multiplicador de daño del ataque final en un <color=#2BAD00>917 %</color>. Además, el efecto de <color=#FFFFFF>término</color> aumenta aún más el multiplicador de daño de la habilidad según el tiempo restante de Aturdimiento del enemigo en el momento de la activación. Si el tiempo restante de Aturdimiento del enemigo es igual o inferior a 5 s, el multiplicador de daño de la habilidad aumenta en un <color=#2BAD00>257 %</color> por cada segundo restante. Cuando el tiempo restante de Aturdimiento del enemigo es de entre 5 s y 15 s, el multiplicador de daño de la habilidad aumenta en un <color=#2BAD00>92 %</color> por cada segundo restante. El aumento total del multiplicador de daño de la habilidad puede ser de hasta un máximo de un <color=#2BAD00>3122 %</color>. Cuando Hugo activa <color=#FFFFFF>término</color>, el Aturdimiento del enemigo termina inmediatamente, y acumula una cierta cantidad de Aturdimiento según el tiempo restante de Aturdimiento del enemigo en el momento de activación de <color=#FFFFFF>término</color>. Por cada segundo restante, acumula un 5 % de Aturdimiento, hasta un máximo del 25 % del Aturdimiento máximo del enemigo.\nAl golpear a un enemigo que no esté afectado por Aturdimiento con la <color=#FFFFFF>técnica especial EX: Cazador de almas - Castigo</color>, la acumulación de Aturdimiento de la habilidad aumenta en un 20 %.",
+                "7": "Cuando Hugo golpea a un enemigo con la <color=#FFFFFF>técnica en cadena: Truco del destino</color> o provoca Aturdimiento sobre un enemigo con uno de sus ataques, Hugo entra en el estado de <color=#FFFFFF>eco del abismo</color> durante 6 s. La duración se reinicia con cada activación. En ese estado, la Probabilidad de Crítico de Hugo aumenta en un 12 %, y su Daño Crítico aumenta en un 25 %.\nCuando en el equipo hay 1/2 personajes <color=#FFFFFF>aturdidores</color>, el Ataque de Hugo aumenta en <color=#2BAD00>300</color>/<color=#2BAD00>900</color> ptos.\nAl golpear a un enemigo con el ataque final de la <color=#FFFFFF>técnica definitiva: Blasfemo</color> o la <color=#FFFFFF>técnica especial EX: Cazador de almas - Castigo</color>, si el enemigo está afectado por Aturdimiento, se activa el efecto de <color=#FFFFFF>término</color>, que aumenta el multiplicador de daño del ataque final en un <color=#2BAD00>1000 %</color>. Además, el efecto de <color=#FFFFFF>término</color> aumenta aún más el multiplicador de daño de la habilidad según el tiempo restante de Aturdimiento del enemigo en el momento de la activación. Si el tiempo restante de Aturdimiento del enemigo es igual o inferior a 5 s, el multiplicador de daño de la habilidad aumenta en un <color=#2BAD00>280 %</color> por cada segundo restante. Cuando el tiempo restante de Aturdimiento del enemigo es de entre 5 s y 15 s, el multiplicador de daño de la habilidad aumenta en un <color=#2BAD00>100 %</color> por cada segundo restante. El aumento total del multiplicador de daño de la habilidad puede ser de hasta un máximo de un <color=#2BAD00>3400 %</color>. Cuando Hugo activa <color=#FFFFFF>término</color>, el Aturdimiento del enemigo termina inmediatamente, y acumula una cierta cantidad de Aturdimiento según el tiempo restante de Aturdimiento del enemigo en el momento de activación de <color=#FFFFFF>término</color>. Por cada segundo restante, acumula un 5 % de Aturdimiento, hasta un máximo del 25 % del Aturdimiento máximo del enemigo.\nAl golpear a un enemigo que no esté afectado por Aturdimiento con la <color=#FFFFFF>técnica especial EX: Cazador de almas - Castigo</color>, la acumulación de Aturdimiento de la habilidad aumenta en un 20 %."
+            }
+        },
+        "MathSkill": {
+            "Title": "Técnica adicional: Preludio del fin",
+            "Description": "Si en el equipo hay un personaje <color=#FFFFFF>aturdidor</color> o del mismo atributo que él, el daño que inflige la <color=#FFFFFF>técnica en cadena: Truco del destino</color> aumenta en un 15 %. El daño contra enemigos normales aumenta en un 35 % adicional. Al activar <color=#FFFFFF>término</color>, el daño infligido por la habilidad aumenta en un 40 %. Cuando la <color=#FFFFFF>técnica especial EX: Cazador de almas - Castigo</color> activa <color=#FFFFFF>término</color> sobre un enemigo normal, recupera 20 ptos. de energía adicionales. El efecto de Producción de Energía puede activarse un máximo de una vez cada 30 s."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "129100001": {
+                "Title": "Ataque normal: Cuarteto del abismo",
+                "Description": "Pulsa <IconMap:Icon_Normal> para usarlo.\nEjecuta hasta cuatro ataques hacia delante que infligen <color=#F0D12B>daño físico</color> y <color=#98EFF0>daño glacial</color>.\nEl cuarto ataque es un disparo. Al mantener pulsado <IconMap:Icon_Normal> durante la ejecución del disparo, se puede acumular fuerza para ejecutar un disparo cargado.\nDurante su ejecución, el nivel de resistencia a interrupción aumenta. El daño recibido se reduce en un 40 %."
+            },
+            "129100002": {
+                "Title": "Ataque normal: Concierto del abismo",
+                "Description": "Después de ejecutar el cuarto ataque del <color=#FFFFFF>ataque normal: Cuarteto del abismo</color>, al ejecutar el disparo del <color=#FFFFFF>contraataque: Sombra fantasmal - Corte</color> o el disparo del <color=#FFFFFF>apoyo rápido: Elegía</color>, pulsa o mantén pulsado <IconMap:Icon_Normal> para usarlo.\nLanza su guadaña hacia delante para ejecutar un corte seguido de un disparo, lo que inflige <color=#98EFF0>daño glacial</color>.\nMantén pulsado <IconMap:Icon_Normal> durante el disparo para acumular fuerza y ejecutar un disparo cargado.\nDurante su ejecución, el nivel de resistencia a interrupción aumenta. El daño recibido se reduce en un 40 %."
+            },
+            "129100014": {
+                "Title": "Ataque normal: Cuarteto del abismo"
+            },
+            "129100015": {
+                "Description": "Multiplicador de daño de 1.er golpe",
+                "Param": "{Skill:1291001, Prop:1001}"
+            },
+            "129100016": {
+                "Description": "Multiplicador de daño de 2.º golpe",
+                "Param": "{Skill:1291002, Prop:1001}"
+            },
+            "129100017": {
+                "Description": "Multiplicador de daño de 3.er golpe",
+                "Param": "{Skill:1291003, Prop:1001}"
+            },
+            "129100018": {
+                "Description": "Multiplicador de daño de corte",
+                "Param": "{Skill:1291004, Prop:1001}"
+            },
+            "129100019": {
+                "Description": "Multiplicador de daño de disparo",
+                "Param": "{Skill:1291005, Prop:1001}"
+            },
+            "129100020": {
+                "Description": "Multiplicador de daño de disparo cargado",
+                "Param": "{Skill:1291006, Prop:1001}"
+            },
+            "129100021": {
+                "Description": "Multiplicador de Aturdimiento de 1.er golpe",
+                "Param": "{Skill:1291001, Prop:1002}"
+            },
+            "129100022": {
+                "Description": "Multiplicador de Aturdimiento de 2.º golpe",
+                "Param": "{Skill:1291002, Prop:1002}"
+            },
+            "129100023": {
+                "Description": "Multiplicador de Aturdimiento de 3.er golpe",
+                "Param": "{Skill:1291003, Prop:1002}"
+            },
+            "129100024": {
+                "Description": "Multiplicador de Aturdimiento de corte",
+                "Param": "{Skill:1291004, Prop:1002}"
+            },
+            "129100025": {
+                "Description": "Multiplicador de Aturdimiento de disparo",
+                "Param": "{Skill:1291005, Prop:1002}"
+            },
+            "129100026": {
+                "Description": "Multiplicador de Aturdimiento de disparo cargado",
+                "Param": "{Skill:1291006, Prop:1002}"
+            },
+            "129100027": {
+                "Title": "Ataque normal: Concierto del abismo"
+            },
+            "129100028": {
+                "Description": "Multiplicador de daño de corte",
+                "Param": "{Skill:1291024, Prop:1001}"
+            },
+            "129100029": {
+                "Description": "Multiplicador de daño de disparo",
+                "Param": "{Skill:1291025, Prop:1001}"
+            },
+            "129100030": {
+                "Description": "Multiplicador de daño de disparo cargado",
+                "Param": "{Skill:1291026, Prop:1001}"
+            },
+            "129100031": {
+                "Description": "Multiplicador de Aturdimiento de corte",
+                "Param": "{Skill:1291024, Prop:1002}"
+            },
+            "129100032": {
+                "Description": "Multiplicador de Aturdimiento de disparo",
+                "Param": "{Skill:1291025, Prop:1002}"
+            },
+            "129100033": {
+                "Description": "Multiplicador de Aturdimiento de disparo cargado",
+                "Param": "{Skill:1291026, Prop:1002}"
+            }
+        },
+        "1": {
+            "129100003": {
+                "Title": "Técnica especial: Cazador de almas - Veredicto",
+                "Description": "Pulsa <IconMap:Icon_Special> para usarla:\nDespués de girar la guadaña, ejecuta un corte hacia delante que inflige <color=#98EFF0>daño glacial</color>.\nDurante su ejecución, aumenta el nivel de resistencia a interrupción."
+            },
+            "129100004": {
+                "Title": "Técnica especial EX: Cazador de almas - Castigo",
+                "Description": "Al contar con energía suficiente, pulsa <IconMap:Icon_SpecialReady> para usarla.\nDespués de girar la guadaña, ejecuta un ataque final que inflige una gran cantidad de <color=#98EFF0>daño glacial</color>.\nEsta habilidad no se considera un ataque pesado.\nTras su ejecución, se puede enlazar directamente con el cuarto ataque del <color=#FFFFFF>ataque normal: Cuarteto del abismo</color>\nDurante su ejecución, el agente se vuelve invulnerable."
+            },
+            "129100037": {
+                "Title": "Técnica especial: Cazador de almas - Veredicto"
+            },
+            "129100038": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1291008, Prop:1001}"
+            },
+            "129100039": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1291008, Prop:1002}"
+            },
+            "129100040": {
+                "Title": "Técnica especial EX: Cazador de almas - Castigo"
+            },
+            "129100041": {
+                "Description": "Multiplicador de daño",
+                "Param": "{{Skill:1291009, Prop:1001} + {Skill:1291010, Prop:1001}}"
+            },
+            "129100042": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{{Skill:1291009, Prop:1002} + {Skill:1291010, Prop:1002}}"
+            },
+            "129100043": {
+                "Description": "Consumo de energía",
+                "Param": "40 ptos."
+            }
+        },
+        "2": {
+            "129100005": {
+                "Title": "Evasión: Sombra fantasmal",
+                "Description": "Pulsa <IconMap:Icon_Evade> para usarla.\nEjecuta un rápido esprint evasivo.\nDurante su ejecución, el agente se vuelve invulnerable."
+            },
+            "129100006": {
+                "Title": "Ataque rápido: Sombra fantasmal - Ruptura",
+                "Description": "Pulsa <IconMap:Icon_Normal> durante una evasión para usarlo.\nEjecuta un ataque con impulso hacia delante, lo que inflige <color=#F0D12B>daño físico</color>."
+            },
+            "129100007": {
+                "Title": "Contraataque: Sombra fantasmal - Corte",
+                "Description": "Pulsa <IconMap:Icon_Normal> después de una <color=#FFFFFF>evasión perfecta</color> para usarlo.\nEjecuta ataques consecutivos contra los enemigos frente a él, lo que inflige <color=#98EFF0>daño glacial</color>.\nDurante su ejecución, mantén pulsado <IconMap:Icon_Normal> para ejecutar un disparo. Durante la ejecución del disparo, mantén pulsado <IconMap:Icon_Normal> para acumular fuerza y ejecutar un disparo cargado.\nEl disparo se considera un ataque normal, y su daño se considera daño de ataque normal.\nTras su ejecución, se puede enlazar directamente con el cuarto ataque del <color=#FFFFFF>ataque normal: Cuarteto del abismo</color>.\nDurante la duración del disparo, el nivel de resistencia a interrupción aumenta y el daño recibido se reduce en un 40 %.\nDurante la ejecución del corte y la retirada que sigue al disparo, el agente se vuelve invulnerable."
+            },
+            "129100044": {
+                "Title": "Ataque rápido: Sombra fantasmal - Ruptura"
+            },
+            "129100045": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1291011, Prop:1001}"
+            },
+            "129100046": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1291011, Prop:1002}"
+            },
+            "129100047": {
+                "Title": "Contraataque: Sombra fantasmal - Corte"
+            },
+            "129100048": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1291012, Prop:1001}"
+            },
+            "129100049": {
+                "Description": "Multiplicador de daño de disparo alternativo",
+                "Param": "{Skill:1291013, Prop:1001}"
+            },
+            "129100050": {
+                "Description": "Multiplicador de daño de disparo cargado alternativo",
+                "Param": "{Skill:1291014, Prop:1001}"
+            },
+            "129100051": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1291012, Prop:1002}"
+            },
+            "129100052": {
+                "Description": "Multiplicador de Aturdimiento de disparo alternativo",
+                "Param": "{Skill:1291013, Prop:1002}"
+            },
+            "129100053": {
+                "Description": "Multiplicador de Aturdimiento de disparo cargado alternativo",
+                "Param": "{Skill:1291014, Prop:1002}"
+            }
+        },
+        "3": {
+            "129100008": {
+                "Title": "Técnica en cadena: Truco del destino",
+                "Description": "Elige el avatar de agente al ejecutar una <color=#FFFFFF>técnica en cadena</color> para usarla.\nSe impulsa hacia delante para ejecutar un corte en un área grande seguido de un disparo, lo que inflige una gran cantidad de <color=#98EFF0>daño glacial</color>.\nEl disparo ejecutado durante la habilidad se considera un disparo cargado.\nDurante su ejecución, el agente se vuelve invulnerable."
+            },
+            "129100009": {
+                "Title": "Técnica definitiva: Blasfemo",
+                "Description": "Pulsa <IconMap:Icon_UltimateReady> cuando los dB llegan a su nivel <color=#FFFFFF>máximo</color> para usarla.\nLanza la guadaña contra los enemigos frente a él para ejecutar un poderoso ataque giratorio, seguido de un ataque final que inflige una gran cantidad de <color=#98EFF0>daño glacial</color>.\nEsta habilidad no se considera un ataque pesado.\nTras su ejecución, se puede enlazar directamente con el cuarto ataque del <color=#FFFFFF>ataque normal: Cuarteto del abismo</color>.\nDurante su ejecución, el agente se vuelve invulnerable."
+            },
+            "129100054": {
+                "Title": "Técnica en cadena: Truco del destino"
+            },
+            "129100055": {
+                "Description": "Multiplicador de daño de corte",
+                "Param": "{Skill:1291015, Prop:1001}"
+            },
+            "129100056": {
+                "Description": "Multiplicador de Aturdimiento de corte",
+                "Param": "{Skill:1291015, Prop:1002}"
+            },
+            "129100057": {
+                "Title": "Técnica definitiva: Blasfemo"
+            },
+            "129100058": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1291018, Prop:1001}"
+            },
+            "129100059": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1291018, Prop:1002}"
+            }
+        },
+        "6": {
+            "129100011": {
+                "Title": "Apoyo rápido: Elegía",
+                "Description": "Pulsa <IconMap:Icon_Switch> cuando el agente activo es lanzado por los aires para usarlo.\nEjecuta ataques consecutivos contra los enemigos frente a él, lo que inflige <color=#98EFF0>daño glacial</color>.\nDurante su ejecución, mantén pulsado <IconMap:Icon_Normal> para ejecutar un disparo. Durante la ejecución del disparo, mantén pulsado <IconMap:Icon_Normal> para acumular fuerza y ejecutar un disparo cargado.\nEl disparo se considera un ataque normal, y su daño se considera daño de ataque normal.\nTras su ejecución, se puede enlazar directamente con el cuarto ataque del <color=#FFFFFF>ataque normal: Cuarteto del abismo</color>.\nDurante la duración del disparo, el nivel de resistencia a interrupción aumenta y el daño recibido se reduce en un 40 %.\nDurante la ejecución del corte y la retirada que sigue al disparo, el agente se vuelve invulnerable."
+            },
+            "129100012": {
+                "Title": "Apoyo defensivo: Aún no es hora de morir",
+                "Description": "Pulsa <IconMap:Icon_Switch> para usarlo cuando el agente activo esté a punto de recibir un golpe.\nBloquea el ataque enemigo, provocando una gran cantidad de Aturdimiento.\nDurante su ejecución, el agente se vuelve invulnerable."
+            },
+            "129100013": {
+                "Title": "Ataque sucesivo: As invertido",
+                "Description": "Pulsa <IconMap:Icon_Normal> después de un <color=#FFFFFF>apoyo defensivo</color> para usarlo.\nSe impulsa hacia delante rápidamente y ejecuta dos cortes, lo que inflige <color=#98EFF0>daño glacial</color>.\nTras su ejecución, se puede enlazar directamente con el cuarto ataque del <color=#FFFFFF>ataque normal: Cuarteto del abismo</color>.\nDurante su ejecución, el agente se vuelve invulnerable."
+            },
+            "129100060": {
+                "Title": "Apoyo rápido: Elegía"
+            },
+            "129100061": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1291019, Prop:1001}"
+            },
+            "129100062": {
+                "Description": "Multiplicador de daño de disparo alternativo",
+                "Param": "{Skill:1291027, Prop:1001}"
+            },
+            "129100063": {
+                "Description": "Multiplicador de daño de disparo cargado alternativo",
+                "Param": "{Skill:1291028, Prop:1001}"
+            },
+            "129100064": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1291019, Prop:1002}"
+            },
+            "129100065": {
+                "Description": "Multiplicador de Aturdimiento de disparo alternativo",
+                "Param": "{Skill:1291027, Prop:1002}"
+            },
+            "129100066": {
+                "Description": "Multiplicador de Aturdimiento de disparo cargado alternativo",
+                "Param": "{Skill:1291028, Prop:1002}"
+            },
+            "129100067": {
+                "Title": "Apoyo defensivo: Aún no es hora de morir"
+            },
+            "129100068": {
+                "Description": "Multiplicador de Aturdimiento defensivo ligero",
+                "Param": "{Skill:1291020, Prop:1002}"
+            },
+            "129100069": {
+                "Description": "Multiplicador de Aturdimiento defensivo fuerte",
+                "Param": "{Skill:1291021, Prop:1002}"
+            },
+            "129100070": {
+                "Description": "Multiplicador de Aturdimiento defensivo continuo",
+                "Param": "{Skill:1291022, Prop:1002}"
+            },
+            "129100071": {
+                "Title": "Ataque sucesivo: As invertido"
+            },
+            "129100072": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1291023, Prop:1001}"
+            },
+            "129100073": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1291023, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1291001": {
+            "DamageValue": 4310,
+            "DamageGrowth": 400,
+            "DazeValue": 2160,
+            "DazeGrowth": 100
+        },
+        "1291002": {
+            "DamageValue": 7410,
+            "DamageGrowth": 680,
+            "DazeValue": 5490,
+            "DazeGrowth": 250
+        },
+        "1291003": {
+            "DamageValue": 16960,
+            "DamageGrowth": 1550,
+            "DazeValue": 12810,
+            "DazeGrowth": 590
+        },
+        "1291004": {
+            "DamageValue": 14910,
+            "DamageGrowth": 1360,
+            "DazeValue": 12580,
+            "DazeGrowth": 580
+        },
+        "1291005": {
+            "DamageValue": 5860,
+            "DamageGrowth": 540,
+            "DazeValue": 5010,
+            "DazeGrowth": 230
+        },
+        "1291006": {
+            "DamageValue": 11800,
+            "DamageGrowth": 1080,
+            "DazeValue": 9570,
+            "DazeGrowth": 440
+        },
+        "1291007": {
+            "DamageValue": 7000,
+            "DamageGrowth": 640,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1291008": {
+            "DamageValue": 8530,
+            "DamageGrowth": 780,
+            "DazeValue": 8530,
+            "DazeGrowth": 390
+        },
+        "1291009": {
+            "DamageValue": 1870,
+            "DamageGrowth": 170,
+            "DazeValue": 43240,
+            "DazeGrowth": 1970
+        },
+        "1291010": {
+            "DamageValue": 35450,
+            "DamageGrowth": 3230,
+            "DazeValue": 2280,
+            "DazeGrowth": 110
+        },
+        "1291011": {
+            "DamageValue": 9350,
+            "DamageGrowth": 850,
+            "DazeValue": 4680,
+            "DazeGrowth": 220
+        },
+        "1291012": {
+            "DamageValue": 24590,
+            "DamageGrowth": 2240,
+            "DazeValue": 21450,
+            "DazeGrowth": 980
+        },
+        "1291013": {
+            "DamageValue": 16210,
+            "DamageGrowth": 1480,
+            "DazeValue": 12470,
+            "DazeGrowth": 570
+        },
+        "1291014": {
+            "DamageValue": 21210,
+            "DamageGrowth": 1930,
+            "DazeValue": 16320,
+            "DazeGrowth": 750
+        },
+        "1291015": {
+            "DamageValue": 70110,
+            "DamageGrowth": 6380,
+            "DazeValue": 26220,
+            "DazeGrowth": 1200
+        },
+        "1291018": {
+            "DamageValue": 152710,
+            "DamageGrowth": 13890,
+            "DazeValue": 26420,
+            "DazeGrowth": 1210
+        },
+        "1291019": {
+            "DamageValue": 10450,
+            "DamageGrowth": 950,
+            "DazeValue": 5230,
+            "DazeGrowth": 240
+        },
+        "1291020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1291021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1291022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1291023": {
+            "DamageValue": 29170,
+            "DamageGrowth": 2660,
+            "DazeValue": 24910,
+            "DazeGrowth": 1140
+        },
+        "1291024": {
+            "DamageValue": 14340,
+            "DamageGrowth": 1310,
+            "DazeValue": 11030,
+            "DazeGrowth": 510
+        },
+        "1291025": {
+            "DamageValue": 8670,
+            "DamageGrowth": 790,
+            "DazeValue": 6670,
+            "DazeGrowth": 310
+        },
+        "1291026": {
+            "DamageValue": 17060,
+            "DamageGrowth": 1560,
+            "DazeValue": 13120,
+            "DazeGrowth": 600
+        },
+        "1291027": {
+            "DamageValue": 12470,
+            "DamageGrowth": 1140,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1291028": {
+            "DamageValue": 16320,
+            "DamageGrowth": 1490,
+            "DazeValue": 8160,
+            "DazeGrowth": 380
+        }
+    }
+}

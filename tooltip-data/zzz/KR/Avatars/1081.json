@@ -1,0 +1,419 @@
+{
+    "Name": "빌리",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "깜짝 등장",
+            "Description": "<color=#FFFFFF>[대시 공격]</color> 혹은 <color=#FFFFFF>[회피 반격]</color>이 적에게 명중 시 빌리가 에너지를 추가로 2.7pt 회복한다. 5초 동안 최대 1회 발동한다.",
+            "Lore": "「악역 치고 너무 정직하잖아!」\n「주인공을 위해 설치한 움직이지 않는 과녁처럼!」"
+        },
+        "2": {
+            "Title": "무빙 사격술",
+            "Description": "<color=#FFFFFF>[회피 반격]</color>으로 주는 피해가 25% 증가한다. <color=#FFFFFF>[일반 공격]</color> 중 구르기 사격이 회피 동작으로 간주되며 스킬을 시전하는 동안 무적 효과를 획득하고 <color=#FFFFFF>[극한 회피]</color>를 발동할 수 있다. 구르기 사격으로 <color=#FFFFFF>[극한 회피]</color> 발동 시 <color=#FFFFFF>[회피 반격]</color>을 자동으로 이어서 시전한다.",
+            "Lore": "「별빛 기사는 위험을 피하지 않아. 그건 도망이 아니라 게릴라 작전이라고!」\n——스타라이트-커뮤니티, 회원 「꿈속의 모니카」의 댓글"
+        },
+        "3": {
+            "Title": "별빛 기사의 가르침",
+            "Description": "<color=#FFFFFF>[일반 공격]</color>, <color=#FFFFFF>[회피]</color>, <color=#FFFFFF>[지원 스킬]</color>, <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[콤보 스킬]</color>의 스킬 레벨+2",
+            "Lore": "훈련을 게을리하지 말고, 발전을 멈추지 않는 것.\n이것이야말로 별빛 기사가 주장하는 정신이다. 빌리는 이 말을 곧이곧대로 믿고 그렇게 따르고 있다."
+        },
+        "4": {
+            "Title": "스타라이트-징벌의 탄약",
+            "Description": "<color=#FFFFFF>[강화 특수 스킬]</color>이 적에게 명중 시 스킬의 치명타 확률이 자신과 타깃의 거리에 따라 증가한다. 빌리와 타깃의 거리가 가까울수록 증가 효과가 두드러진다. 최대 증가: 32%",
+            "Lore": "빌리의 특제 폭발형 총알은 근접전에서 놀라운 위력을 가진다.\n사실 빌리가 총알을 개조한 목적은 더 멋져 보이기 위해서이다."
+        },
+        "5": {
+            "Title": "사라진 기술 구조체",
+            "Description": "<color=#FFFFFF>[일반 공격]</color>, <color=#FFFFFF>[회피]</color>, <color=#FFFFFF>[지원 스킬]</color>, <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[콤보 스킬]</color>의 스킬 레벨+2",
+            "Lore": "미지의 정밀한 부품과 독자적인 구조 설계로 인해 빌리는 동급의 로봇보다 훨씬 뛰어난 성능을 가지게 되었다.\n물론 수리 및 유지 보수 비용도 높아졌지만 말이다."
+        },
+        "6": {
+            "Title": "스타라이트-영웅의 순간",
+            "Description": "적에게 누적 10회 명중하거나 <color=#FFFFFF>[극한 회피]</color> 발동 시 빌리가 주는 피해가 6% 증가한다. 최대 중첩: 5스택, 적에 의해 넉백 혹은 넉업되면 버프 효과가 초기화된다.",
+            "Lore": "「오~ 느낌이 와! 엔비, 비켜. 이제 여기는 내 홈그라운드니까!」\n「어, 엔비, 별빛 기사 오프닝곡 좀 틀어줄래?」\n——교활한 토끼굴 「10대 금기어」 선정, 엔비 상정"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "핵심 패시브: 안정 사격",
+            "DescriptionByLevel": {
+                "1": "빌리가 <color=#FFFFFF>[일반 공격]</color> 중 무릎쏴 사격에 돌입한 후 자신이 주는 피해가 <color=#2BAD00>25%</color> 증가한다. 빌리가 이동하거나 대기 모션에 진입 혹은 넉백/넉업되면 버프 효과가 종료된다.",
+                "2": "빌리가 <color=#FFFFFF>[일반 공격]</color> 중 무릎쏴 사격에 돌입한 후 자신이 주는 피해가 <color=#2BAD00>29.1%</color> 증가한다. 빌리가 이동하거나 대기 모션에 진입 혹은 넉백/넉업되면 버프 효과가 종료된다.",
+                "3": "빌리가 <color=#FFFFFF>[일반 공격]</color> 중 무릎쏴 사격에 돌입한 후 자신이 주는 피해가 <color=#2BAD00>33.3%</color> 증가한다. 빌리가 이동하거나 대기 모션에 진입 혹은 넉백/넉업되면 버프 효과가 종료된다.",
+                "4": "빌리가 <color=#FFFFFF>[일반 공격]</color> 중 무릎쏴 사격에 돌입한 후 자신이 주는 피해가 <color=#2BAD00>37.5%</color> 증가한다. 빌리가 이동하거나 대기 모션에 진입 혹은 넉백/넉업되면 버프 효과가 종료된다.",
+                "5": "빌리가 <color=#FFFFFF>[일반 공격]</color> 중 무릎쏴 사격에 돌입한 후 자신이 주는 피해가 <color=#2BAD00>41.6%</color> 증가한다. 빌리가 이동하거나 대기 모션에 진입 혹은 넉백/넉업되면 버프 효과가 종료된다.",
+                "6": "빌리가 <color=#FFFFFF>[일반 공격]</color> 중 무릎쏴 사격에 돌입한 후 자신이 주는 피해가 <color=#2BAD00>45.8%</color> 증가한다. 빌리가 이동하거나 대기 모션에 진입 혹은 넉백/넉업되면 버프 효과가 종료된다.",
+                "7": "빌리가 <color=#FFFFFF>[일반 공격]</color> 중 무릎쏴 사격에 돌입한 후 자신이 주는 피해가 <color=#2BAD00>50%</color> 증가한다. 빌리가 이동하거나 대기 모션에 진입 혹은 넉백/넉업되면 버프 효과가 종료된다."
+            }
+        },
+        "MathSkill": {
+            "Title": "추가 능력: 기사 클랜",
+            "Description": "파티에 자신과 속성 혹은 진영이 같은 캐릭터가 존재할 시 발동:\n빌리가 <color=#FFFFFF>[콤보 스킬]</color> 시전 후 다음번에 <color=#FFFFFF>[궁극기]</color> 시전 시 스킬로 주는 피해가 50% 증가한다. 최대 중첩: 2회, <color=#FFFFFF>[궁극기]</color> 시전 후 효과가 초기화된다."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "108100001": {
+                "Title": "일반 공격: 화력 전개",
+                "Description": "<IconMap:Icon_Normal>을 짧게 탭하여 시전:\n전방의 적을 꿰뚫어 <color=#F0D12B>물리 피해</color>를 준다.\n연타 혹은 홀드 시 무릎쏴 사격에 돌입해 사격 지속 시간을 연장할 수 있다.\n무릎쏴 사격 도중 {LAYOUT_CONSOLECONTROLLER#스틱을}{LAYOUT_FALLBACK#방향키를} 움직이면 구르기 사격을 시전해 위치를 조정하고 <color=#F0D12B>물리 피해</color>를 줄 수 있다.\n무릎쏴 사격 도중 연타를 멈추거나 홀드를 풀면 전방의 적에게 종결 사격을 시전해 <color=#F0D12B>물리 피해</color>를 준다."
+            },
+            "108110001": {
+                "Title": "일반 공격: 화력 전개"
+            },
+            "108110002": {
+                "Description": "스탠딩 사격 발포 피해 배율",
+                "Param": "{Skill:1081002, Prop:1001}"
+            },
+            "108110003": {
+                "Description": "스탠딩 사격 총알 피해 배율",
+                "Param": "{Skill:1081003, Prop:1001}"
+            },
+            "108110004": {
+                "Description": "무릎 사격 발포 피해 배율",
+                "Param": "{Skill:1081004, Prop:1001}"
+            },
+            "108110005": {
+                "Description": "무릎 사격 총알 피해 배율",
+                "Param": "{Skill:1081007, Prop:1001}"
+            },
+            "108110006": {
+                "Description": "구르기 사격 피해 배율",
+                "Param": "{Skill:1081004, Prop:1001}"
+            },
+            "108110007": {
+                "Description": "종결 사격 피해 배율",
+                "Param": "{Skill:1081008, Prop:1001}"
+            },
+            "108110008": {
+                "Description": "스탠딩 사격 발포 그로기 배율",
+                "Param": "{Skill:1081002, Prop:1002}"
+            },
+            "108110009": {
+                "Description": "스탠딩 사격 총알 그로기 배율",
+                "Param": "{Skill:1081003, Prop:1002}"
+            },
+            "108110010": {
+                "Description": "무릎 사격 발포 그로기 배율",
+                "Param": "{Skill:1081004, Prop:1002}"
+            },
+            "108110011": {
+                "Description": "무릎 사격 총알 그로기 배율",
+                "Param": "{Skill:1081007, Prop:1002}"
+            },
+            "108110012": {
+                "Description": "구르기 사격 그로기 배율",
+                "Param": "{Skill:1081004, Prop:1002}"
+            },
+            "108110013": {
+                "Description": "종결 사격 그로기 배율",
+                "Param": "{Skill:1081008, Prop:1002}"
+            }
+        },
+        "1": {
+            "108100002": {
+                "Title": "특수 스킬: 얌전히 있어",
+                "Description": "<IconMap:Icon_Special>을 짧게 탭하여 시전:\n전방 직선 구역을 향해 최대 3단까지 꿰뚫기 공격을 펼쳐 <color=#F0D12B>물리 피해</color>를 준다.\n스킬을 시전하는 동안 경직 저항 레벨이 증가한다."
+            },
+            "108100003": {
+                "Title": "강화 특수 스킬: 스위퍼 타임",
+                "Description": "에너지가 충분한 상태에서 <IconMap:Icon_SpecialReady>을 짧게 탭하여 시전:\n전방 직선 구역을 강력하게 꿰뚫어 대량의 <color=#F0D12B>물리 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "108110014": {
+                "Title": "특수 스킬: 얌전히 있어"
+            },
+            "108110015": {
+                "Description": "1단 피해 배율",
+                "Param": "{Skill:1081010, Prop:1001}"
+            },
+            "108110016": {
+                "Description": "2단 피해 배율",
+                "Param": "{Skill:1081011, Prop:1001}"
+            },
+            "108110017": {
+                "Description": "3단 피해 배율",
+                "Param": "{Skill:1081012, Prop:1001}"
+            },
+            "108110018": {
+                "Description": "1단 그로기 배율",
+                "Param": "{Skill:1081010, Prop:1002}"
+            },
+            "108110019": {
+                "Description": "2단 그로기 배율",
+                "Param": "{Skill:1081011, Prop:1002}"
+            },
+            "108110020": {
+                "Description": "3단 그로기 배율",
+                "Param": "{Skill:1081012, Prop:1002}"
+            },
+            "108110021": {
+                "Title": "강화 특수 스킬: 스위퍼 타임"
+            },
+            "108110022": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1081013, Prop:1001}"
+            },
+            "108110023": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1081013, Prop:1002}"
+            },
+            "108110024": {
+                "Description": "에너지 소모",
+                "Param": "60pt"
+            }
+        },
+        "2": {
+            "108100004": {
+                "Title": "회피: 아슬아슬했어",
+                "Description": "<IconMap:Icon_Evade>을 짧게 탭하여 시전:\n빠른 대시로 회피한다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "108100005": {
+                "Title": "대시 공격: 별-빛-제-재",
+                "Description": "{LAYOUT_CONSOLECONTROLLER#스틱을}{LAYOUT_FALLBACK#방향키를} 움직여 회피 시전 후 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n주변 넓은 범위를 꿰뚫어 <color=#F0D12B>물리 피해</color>를 준다.\n{LAYOUT_CONSOLECONTROLLER#스틱을}{LAYOUT_FALLBACK#방향키를} 움직이지 않고 회피 시전 후 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n전방 직선 구역을 꿰뚫어 <color=#F0D12B>물리 피해</color>를 준다."
+            },
+            "108100006": {
+                "Title": "회피 반격: 공평한 결투",
+                "Description": "<color=#FFFFFF>[극한 회피]</color> 발동 후 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n전방의 적을 꿰뚫어 <color=#F0D12B>물리 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "108110025": {
+                "Title": "대시 공격: 별-빛-제-재"
+            },
+            "108110026": {
+                "Description": "주변 사격 피해 배율",
+                "Param": "{Skill:1081016, Prop:1001}"
+            },
+            "108110027": {
+                "Description": "직선 사격 피해 배율",
+                "Param": "{Skill:1081014, Prop:1001}"
+            },
+            "108110028": {
+                "Description": "주변 사격 그로기 배율",
+                "Param": "{Skill:1081016, Prop:1002}"
+            },
+            "108110029": {
+                "Description": "직선 사격 그로기 배율",
+                "Param": "{Skill:1081014, Prop:1002}"
+            },
+            "108110030": {
+                "Title": "회피 반격: 공평한 결투"
+            },
+            "108110031": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1081017, Prop:1001}"
+            },
+            "108110032": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1081017, Prop:1002}"
+            }
+        },
+        "3": {
+            "108100007": {
+                "Title": "콤보 스킬: 스타라이트, 영광의 환영",
+                "Description": "<color=#FFFFFF>[콤보 스킬]</color> 발동 시 해당 캐릭터를 선택해 시전:\n주변 넓은 범위 내 적을 강력하게 꿰뚫어 대량의 <color=#F0D12B>물리 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "108100008": {
+                "Title": "궁극기: 스타라이트, 여기서 반짝인다!",
+                "Description": "데시벨 레벨 <color=#FFFFFF>[Maximum]</color> 달성 시 <IconMap:Icon_UltimateReady>을 짧게 탭하여 시전:\n주변 넓은 범위 내 적을 강력하게 꿰뚫어 대량의 <color=#F0D12B>물리 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "108110033": {
+                "Title": "콤보 스킬: 스타라이트, 영광의 환영"
+            },
+            "108110034": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1081018, Prop:1001}"
+            },
+            "108110035": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1081018, Prop:1002}"
+            },
+            "108110036": {
+                "Title": "궁극기: 스타라이트, 여기서 반짝인다!"
+            },
+            "108110037": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1081019, Prop:1001}"
+            },
+            "108110038": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1081019, Prop:1002}"
+            }
+        },
+        "6": {
+            "108100010": {
+                "Title": "빠른 지원: 스타라이트-파트너의 힘",
+                "Description": "현재 조작 중인 캐릭터가 넉업되면 <IconMap:Icon_Switch>을 짧게 탭하여 시전:\n전방의 적을 꿰뚫어 <color=#F0D12B>물리 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "108100011": {
+                "Title": "회피 지원: 플래시 스텝",
+                "Description": "출전 캐릭터 피격 직전에 <IconMap:Icon_Switch>을 짧게 탭하여 시전:\n적의 공격을 회피하고 <color=#FFFFFF>[극한 시야]</color>를 발동한다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "108100012": {
+                "Title": "지원 돌격: 급소 사격",
+                "Description": "<color=#FFFFFF>[회피 지원]</color> 시전 후 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n전방 넓은 범위 내 적을 꿰뚫어 <color=#F0D12B>물리 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "108110039": {
+                "Title": "빠른 지원: 스타라이트-파트너의 힘"
+            },
+            "108110040": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1081020, Prop:1001}"
+            },
+            "108110041": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1081020, Prop:1002}"
+            },
+            "108110042": {
+                "Title": "지원 돌격: 급소 사격"
+            },
+            "108110043": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1081021, Prop:1001}"
+            },
+            "108110044": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1081021, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1081001": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1081002": {
+            "DamageValue": 6800,
+            "DamageGrowth": 620,
+            "DazeValue": 5440,
+            "DazeGrowth": 250
+        },
+        "1081003": {
+            "DamageValue": 760,
+            "DamageGrowth": 70,
+            "DazeValue": 610,
+            "DazeGrowth": 30
+        },
+        "1081004": {
+            "DamageValue": 6180,
+            "DamageGrowth": 570,
+            "DazeValue": 5470,
+            "DazeGrowth": 250
+        },
+        "1081005": {
+            "DamageValue": 6180,
+            "DamageGrowth": 570,
+            "DazeValue": 5470,
+            "DazeGrowth": 250
+        },
+        "1081006": {
+            "DamageValue": 6180,
+            "DamageGrowth": 570,
+            "DazeValue": 5470,
+            "DazeGrowth": 250
+        },
+        "1081007": {
+            "DamageValue": 1270,
+            "DamageGrowth": 120,
+            "DazeValue": 890,
+            "DazeGrowth": 50
+        },
+        "1081008": {
+            "DamageValue": 4950,
+            "DamageGrowth": 450,
+            "DazeValue": 5520,
+            "DazeGrowth": 260
+        },
+        "1081009": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1081010": {
+            "DamageValue": 2420,
+            "DamageGrowth": 220,
+            "DazeValue": 2420,
+            "DazeGrowth": 110
+        },
+        "1081011": {
+            "DamageValue": 5170,
+            "DamageGrowth": 470,
+            "DazeValue": 5170,
+            "DazeGrowth": 240
+        },
+        "1081012": {
+            "DamageValue": 5010,
+            "DamageGrowth": 460,
+            "DazeValue": 5010,
+            "DazeGrowth": 230
+        },
+        "1081013": {
+            "DamageValue": 54380,
+            "DamageGrowth": 4950,
+            "DazeValue": 43950,
+            "DazeGrowth": 2000
+        },
+        "1081014": {
+            "DamageValue": 3900,
+            "DamageGrowth": 360,
+            "DazeValue": 1950,
+            "DazeGrowth": 90
+        },
+        "1081015": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1081016": {
+            "DamageValue": 6300,
+            "DamageGrowth": 580,
+            "DazeValue": 6300,
+            "DazeGrowth": 290
+        },
+        "1081017": {
+            "DamageValue": 22140,
+            "DamageGrowth": 2020,
+            "DazeValue": 19340,
+            "DazeGrowth": 880
+        },
+        "1081018": {
+            "DamageValue": 73520,
+            "DamageGrowth": 6690,
+            "DazeValue": 19660,
+            "DazeGrowth": 900
+        },
+        "1081019": {
+            "DamageValue": 159770,
+            "DamageGrowth": 14530,
+            "DazeValue": 19060,
+            "DazeGrowth": 870
+        },
+        "1081020": {
+            "DamageValue": 9340,
+            "DamageGrowth": 850,
+            "DazeValue": 9340,
+            "DazeGrowth": 430
+        },
+        "1081021": {
+            "DamageValue": 38880,
+            "DamageGrowth": 3540,
+            "DazeValue": 34120,
+            "DazeGrowth": 1560
+        },
+        "1081023": {
+            "DamageValue": 15070,
+            "DamageGrowth": 1370,
+            "DazeValue": 4260,
+            "DazeGrowth": 200
+        },
+        "1081025": {
+            "DamageValue": 108750,
+            "DamageGrowth": 9890,
+            "DazeValue": 46330,
+            "DazeGrowth": 2110
+        }
+    }
+}

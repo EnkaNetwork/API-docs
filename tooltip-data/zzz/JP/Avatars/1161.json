@@ -1,0 +1,532 @@
+{
+    "Name": "ライト",
+    "ElementTypes": [
+        "Fire"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "無敗のチャンピオン",
+            "Description": "<color=#FFFFFF>『コアパッシブ：アクセレラント』</color>によって付与できるデバフ効果のうち：<color=#FFFFFF>「壊滅」</color>効果によりブレイク継続時間が5秒延長されるようになる。<color=#98EFF0>氷属性ダメージ耐性</color>および<color=#FF5521>炎属性ダメージ耐性</color>が追加で-10%。開幕ジャブまたはストレートラッシュ中に<color=#FFFFFF>「士気」</color>が尽き、強力なとどめの一撃が自動で発動された時、その与ダメージ+30%。",
+            "Lore": "無敗のチャンピオンにとって、勝つことが重要であることは説くまでもない。\nライバルチームの「最強」を下すことで、大将にとっての脅威を排除し、\nチーム全体の士気を最高潮まで高める…彼にとっては、勝利だけが称賛されるに値する。\n「チャンピオンは決して倒れない」"
+        },
+        "2": {
+            "Title": "赤いマフラー",
+            "Description": "<color=#FFFFFF>『コアパッシブ：アクセレラント』</color>によって敵に<color=#FFFFFF>「壊滅」</color>効果を付与した時、ターゲットのブレイク弱体倍率+25%。<color=#FFFFFF>『追加能力：燃える闘志』</color>で獲得できる<color=#FFFFFF>「高揚」</color>による、<color=#98EFF0>氷属性ダメージ</color>および<color=#FF5521>炎属性ダメージ</color>のバフ効果が本来の120%になる。",
+            "Lore": "カリュドーンの子の「赤いマフラー」は、郊外においてちょっとした有名人だ。\n彼の強烈なパンチは勿論、その独特な言い回しもまた印象に残るからだろう。\n「ヒマになるのは歓迎だが…あんたら、俺抜きでやれるか？」"
+        },
+        "3": {
+            "Title": "傭兵団の団長",
+            "Description": "<color=#FFFFFF>『通常攻撃』</color>、<color=#FFFFFF>『回避』</color>、<color=#FFFFFF>『支援スキル』</color>、<color=#FFFFFF>『特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>のスキルレベル+2",
+            "Lore": "「俺ほど団長に相応しくない人間も、この世にいないだろうな」"
+        },
+        "4": {
+            "Title": "グラサン",
+            "Description": "ライトが控えにいる時、出場中のメンバーのエネルギー自動回復効率+10%。ライトが<color=#FFFFFF>「士気奮発」</color>状態に突入した時、控えのメンバーのエネルギーを4Pt回復する、18秒に1回のみ発動可能。",
+            "Lore": "「どうしてグラサンを引っかけてるのかって？血が苦手だからさ。多分な」"
+        },
+        "5": {
+            "Title": "決断を下す者",
+            "Description": "<color=#FFFFFF>『通常攻撃』</color>、<color=#FFFFFF>『回避』</color>、<color=#FFFFFF>『支援スキル』</color>、<color=#FFFFFF>『特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>のスキルレベル+2",
+            "Lore": "「シンプルな話だ。あんたが『やる』と決めたなら、俺はその通りにする——」\nライトはグラサンを押し上げ、なんでもなさそうに笑う。\n「悪いことは言わん。俺に決めさせようなんて思うな」"
+        },
+        "6": {
+            "Title": "生き残り",
+            "Description": "ライトの<color=#FFFFFF>「士気」</color>の回復効率が本来の200%になる。ライトの<color=#FFFFFF>『通常攻撃』</color>、<color=#FFFFFF>『回避反撃』</color>、<color=#FFFFFF>『特殊スキル』</color>、<color=#FFFFFF>『強化特殊スキル』</color>、<color=#FFFFFF>『クイック支援』</color>、<color=#FFFFFF>『支援突撃』</color>、<color=#FFFFFF>『連携スキル』</color>、<color=#FFFFFF>『終結スキル』</color>の重撃が敵に命中した時、<color=#FFFFFF>「インパクトファイア」</color>効果が発動し、攻撃力250%分の<color=#FF5521>炎属性ダメージ</color>を与える、同じ敵に対して8秒に1回のみ発動可能。ライトの衝撃力が170Ptを上回る場合、1Pt上回るごとに<color=#FFFFFF>「インパクトファイア」</color>のダメージ倍率が追加で+5%、最大+500%。開幕ジャブまたはストレートラッシュ中に<color=#FFFFFF>「士気」</color>が尽き、強力なとどめの一撃が自動で発動された時、クールタイムを無視して追加で<color=#FFFFFF>「インパクトファイア」</color>効果を1回発動できる。",
+            "Lore": "もう一度やり直すことができるのなら、彼はきっと\n「唯一の生き残り」となる選択を決して選ばないだろう…\n惜しいかな、運命を選ぶことなどできはしない。"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "コアパッシブ：アクセレラント",
+            "DescriptionByLevel": {
+                "1": "ライトは時間と共に自動で<color=#FFFFFF>「士気」</color>を獲得する。1秒に回復できる<color=#FFFFFF>「士気」</color>は2.9Pt。任意のメンバーがエネルギー値を1Pt消費するたびに、ライトの<color=#FFFFFF>「士気」</color>が追加で0.26Pt回復する。<color=#FFFFFF>「士気」</color>の上限は100Pt。<color=#FFFFFF>「士気」</color>が80Ptまで溜まると、その次にライトが出場した時、直接<color=#FFFFFF>『クイック支援』</color>を発動する。<color=#FFFFFF>「士気」</color>が80Pt以上に達した後に<color=#FFFFFF>『通常攻撃』</color>5段目を発動した時、<color=#FFFFFF>「士気奮発」</color>状態に突入し、<color=#FFFFFF>『通常攻撃』</color>5段目の開幕ジャブ全般、ストレートラッシュおよびとどめの一撃の威力がアップする。威力がアップした後の攻撃が敵に命中すると、<color=#FFFFFF>「士気」</color>を持続的に消費する。<color=#FFFFFF>「士気」</color>を10Pt消費するたびに、ライトの衝撃力が<color=#2BAD00>1%</color>アップする、最大<color=#2BAD00>10%</color>アップできる、継続時間6秒。\n<color=#FFFFFF>「士気奮発」</color>状態にある時、ライトは時間と共に自動で<color=#FFFFFF>「士気」</color>を獲得しなくなる、開幕ジャブまたはストレートラッシュ中に<color=#FFFFFF>「士気」</color>が尽きると、その後より強力なとどめの一撃が自動で発動される。\n<color=#FFFFFF>「士気奮発」</color>状態にある時、開幕ジャブまたはストレートラッシュが敵に命中すると、ターゲットの<color=#98EFF0>氷属性ダメージ耐性</color>および<color=#FF5521>炎属性ダメージ耐性</color>が15%ダウンする、継続時間30秒。\n<color=#FFFFFF>「士気奮発」</color>状態にある時、とどめの一撃が敵に命中すると、ターゲットに<color=#FFFFFF>「壊滅」</color>効果を付与する。ターゲットがブレイク状態になると、<color=#FFFFFF>「壊滅」</color>効果によりブレイク継続時間が3秒延長される。ブレイク状態から復帰するまで、<color=#FFFFFF>「壊滅」</color>效果は同じターゲットに対して1回のみ発動可能。\n<color=#FFFFFF>『通常攻撃』</color>5段目のとどめの一撃が敵に命中した時・ライトが退場した時・<color=#FFFFFF>「士気」</color>が尽きた時、<color=#FFFFFF>「士気奮発」</color>状態は終了する。その際、残りの<color=#FFFFFF>「士気」</color>はリセットされない。",
+                "2": "ライトは時間と共に自動で<color=#FFFFFF>「士気」</color>を獲得する。1秒に回復できる<color=#FFFFFF>「士気」</color>は2.9Pt。任意のメンバーがエネルギー値を1Pt消費するたびに、ライトの<color=#FFFFFF>「士気」</color>が追加で0.26Pt回復する。<color=#FFFFFF>「士気」</color>の上限は100Pt。<color=#FFFFFF>「士気」</color>が80Ptまで溜まると、その次にライトが出場した時、直接<color=#FFFFFF>『クイック支援』</color>を発動する。<color=#FFFFFF>「士気」</color>が80Pt以上に達した後に<color=#FFFFFF>『通常攻撃』</color>5段目を発動した時、<color=#FFFFFF>「士気奮発」</color>状態に突入し、<color=#FFFFFF>『通常攻撃』</color>5段目の開幕ジャブ全般、ストレートラッシュおよびとどめの一撃の威力がアップする。威力がアップした後の攻撃が敵に命中すると、<color=#FFFFFF>「士気」</color>を持続的に消費する。<color=#FFFFFF>「士気」</color>を10Pt消費するたびに、ライトの衝撃力が<color=#2BAD00>1.17%</color>アップする、最大<color=#2BAD00>11.7%</color>アップできる、継続時間6秒。\n<color=#FFFFFF>「士気奮発」</color>状態にある時、ライトは時間と共に自動で<color=#FFFFFF>「士気」</color>を獲得しなくなる、開幕ジャブまたはストレートラッシュ中に<color=#FFFFFF>「士気」</color>が尽きると、その後より強力なとどめの一撃が自動で発動される。\n<color=#FFFFFF>「士気奮発」</color>状態にある時、開幕ジャブまたはストレートラッシュが敵に命中すると、ターゲットの<color=#98EFF0>氷属性ダメージ耐性</color>および<color=#FF5521>炎属性ダメージ耐性</color>が15%ダウンする、継続時間30秒。\n<color=#FFFFFF>「士気奮発」</color>状態にある時、とどめの一撃が敵に命中すると、ターゲットに<color=#FFFFFF>「壊滅」</color>効果を付与する。ターゲットがブレイク状態になると、<color=#FFFFFF>「壊滅」</color>効果によりブレイク継続時間が3秒延長される。ブレイク状態から復帰するまで、<color=#FFFFFF>「壊滅」</color>效果は同じターゲットに対して1回のみ発動可能。\n<color=#FFFFFF>『通常攻撃』</color>5段目のとどめの一撃が敵に命中した時・ライトが退場した時・<color=#FFFFFF>「士気」</color>が尽きた時、<color=#FFFFFF>「士気奮発」</color>状態は終了する。その際、残りの<color=#FFFFFF>「士気」</color>はリセットされない。",
+                "3": "ライトは時間と共に自動で<color=#FFFFFF>「士気」</color>を獲得する。1秒に回復できる<color=#FFFFFF>「士気」</color>は2.9Pt。任意のメンバーがエネルギー値を1Pt消費するたびに、ライトの<color=#FFFFFF>「士気」</color>が追加で0.26Pt回復する。<color=#FFFFFF>「士気」</color>の上限は100Pt。<color=#FFFFFF>「士気」</color>が80Ptまで溜まると、その次にライトが出場した時、直接<color=#FFFFFF>『クイック支援』</color>を発動する。<color=#FFFFFF>「士気」</color>が80Pt以上に達した後に<color=#FFFFFF>『通常攻撃』</color>5段目を発動した時、<color=#FFFFFF>「士気奮発」</color>状態に突入し、<color=#FFFFFF>『通常攻撃』</color>5段目の開幕ジャブ全般、ストレートラッシュおよびとどめの一撃の威力がアップする。威力がアップした後の攻撃が敵に命中すると、<color=#FFFFFF>「士気」</color>を持続的に消費する。<color=#FFFFFF>「士気」</color>を10Pt消費するたびに、ライトの衝撃力が<color=#2BAD00>1.33%</color>アップする、最大<color=#2BAD00>13.3%</color>アップできる、継続時間6秒。\n<color=#FFFFFF>「士気奮発」</color>状態にある時、ライトは時間と共に自動で<color=#FFFFFF>「士気」</color>を獲得しなくなる、開幕ジャブまたはストレートラッシュ中に<color=#FFFFFF>「士気」</color>が尽きると、その後より強力なとどめの一撃が自動で発動される。\n<color=#FFFFFF>「士気奮発」</color>状態にある時、開幕ジャブまたはストレートラッシュが敵に命中すると、ターゲットの<color=#98EFF0>氷属性ダメージ耐性</color>および<color=#FF5521>炎属性ダメージ耐性</color>が15%ダウンする、継続時間30秒。\n<color=#FFFFFF>「士気奮発」</color>状態にある時、とどめの一撃が敵に命中すると、ターゲットに<color=#FFFFFF>「壊滅」</color>効果を付与する。ターゲットがブレイク状態になると、<color=#FFFFFF>「壊滅」</color>効果によりブレイク継続時間が3秒延長される。ブレイク状態から復帰するまで、<color=#FFFFFF>「壊滅」</color>效果は同じターゲットに対して1回のみ発動可能。\n<color=#FFFFFF>『通常攻撃』</color>5段目のとどめの一撃が敵に命中した時・ライトが退場した時・<color=#FFFFFF>「士気」</color>が尽きた時、<color=#FFFFFF>「士気奮発」</color>状態は終了する。その際、残りの<color=#FFFFFF>「士気」</color>はリセットされない。",
+                "4": "ライトは時間と共に自動で<color=#FFFFFF>「士気」</color>を獲得する。1秒に回復できる<color=#FFFFFF>「士気」</color>は2.9Pt。任意のメンバーがエネルギー値を1Pt消費するたびに、ライトの<color=#FFFFFF>「士気」</color>が追加で0.26Pt回復する。<color=#FFFFFF>「士気」</color>の上限は100Pt。<color=#FFFFFF>「士気」</color>が80Ptまで溜まると、その次にライトが出場した時、直接<color=#FFFFFF>『クイック支援』</color>を発動する。<color=#FFFFFF>「士気」</color>が80Pt以上に達した後に<color=#FFFFFF>『通常攻撃』</color>5段目を発動した時、<color=#FFFFFF>「士気奮発」</color>状態に突入し、<color=#FFFFFF>『通常攻撃』</color>5段目の開幕ジャブ全般、ストレートラッシュおよびとどめの一撃の威力がアップする。威力がアップした後の攻撃が敵に命中すると、<color=#FFFFFF>「士気」</color>を持続的に消費する。<color=#FFFFFF>「士気」</color>を10Pt消費するたびに、ライトの衝撃力が<color=#2BAD00>1.5%</color>アップする、最大<color=#2BAD00>15%</color>アップできる、継続時間6秒。\n<color=#FFFFFF>「士気奮発」</color>状態にある時、ライトは時間と共に自動で<color=#FFFFFF>「士気」</color>を獲得しなくなる、開幕ジャブまたはストレートラッシュ中に<color=#FFFFFF>「士気」</color>が尽きると、その後より強力なとどめの一撃が自動で発動される。\n<color=#FFFFFF>「士気奮発」</color>状態にある時、開幕ジャブまたはストレートラッシュが敵に命中すると、ターゲットの<color=#98EFF0>氷属性ダメージ耐性</color>および<color=#FF5521>炎属性ダメージ耐性</color>が15%ダウンする、継続時間30秒。\n<color=#FFFFFF>「士気奮発」</color>状態にある時、とどめの一撃が敵に命中すると、ターゲットに<color=#FFFFFF>「壊滅」</color>効果を付与する。ターゲットがブレイク状態になると、<color=#FFFFFF>「壊滅」</color>効果によりブレイク継続時間が3秒延長される。ブレイク状態から復帰するまで、<color=#FFFFFF>「壊滅」</color>效果は同じターゲットに対して1回のみ発動可能。\n<color=#FFFFFF>『通常攻撃』</color>5段目のとどめの一撃が敵に命中した時・ライトが退場した時・<color=#FFFFFF>「士気」</color>が尽きた時、<color=#FFFFFF>「士気奮発」</color>状態は終了する。その際、残りの<color=#FFFFFF>「士気」</color>はリセットされない。",
+                "5": "ライトは時間と共に自動で<color=#FFFFFF>「士気」</color>を獲得する。1秒に回復できる<color=#FFFFFF>「士気」</color>は2.9Pt。任意のメンバーがエネルギー値を1Pt消費するたびに、ライトの<color=#FFFFFF>「士気」</color>が追加で0.26Pt回復する。<color=#FFFFFF>「士気」</color>の上限は100Pt。<color=#FFFFFF>「士気」</color>が80Ptまで溜まると、その次にライトが出場した時、直接<color=#FFFFFF>『クイック支援』</color>を発動する。<color=#FFFFFF>「士気」</color>が80Pt以上に達した後に<color=#FFFFFF>『通常攻撃』</color>5段目を発動した時、<color=#FFFFFF>「士気奮発」</color>状態に突入し、<color=#FFFFFF>『通常攻撃』</color>5段目の開幕ジャブ全般、ストレートラッシュおよびとどめの一撃の威力がアップする。威力がアップした後の攻撃が敵に命中すると、<color=#FFFFFF>「士気」</color>を持続的に消費する。<color=#FFFFFF>「士気」</color>を10Pt消費するたびに、ライトの衝撃力が<color=#2BAD00>1.67%</color>アップする、最大<color=#2BAD00>16.7%</color>アップできる、継続時間6秒。\n<color=#FFFFFF>「士気奮発」</color>状態にある時、ライトは時間と共に自動で<color=#FFFFFF>「士気」</color>を獲得しなくなる、開幕ジャブまたはストレートラッシュ中に<color=#FFFFFF>「士気」</color>が尽きると、その後より強力なとどめの一撃が自動で発動される。\n<color=#FFFFFF>「士気奮発」</color>状態にある時、開幕ジャブまたはストレートラッシュが敵に命中すると、ターゲットの<color=#98EFF0>氷属性ダメージ耐性</color>および<color=#FF5521>炎属性ダメージ耐性</color>が15%ダウンする、継続時間30秒。\n<color=#FFFFFF>「士気奮発」</color>状態にある時、とどめの一撃が敵に命中すると、ターゲットに<color=#FFFFFF>「壊滅」</color>効果を付与する。ターゲットがブレイク状態になると、<color=#FFFFFF>「壊滅」</color>効果によりブレイク継続時間が3秒延長される。ブレイク状態から復帰するまで、<color=#FFFFFF>「壊滅」</color>效果は同じターゲットに対して1回のみ発動可能。\n<color=#FFFFFF>『通常攻撃』</color>5段目のとどめの一撃が敵に命中した時・ライトが退場した時・<color=#FFFFFF>「士気」</color>が尽きた時、<color=#FFFFFF>「士気奮発」</color>状態は終了する。その際、残りの<color=#FFFFFF>「士気」</color>はリセットされない。",
+                "6": "ライトは時間と共に自動で<color=#FFFFFF>「士気」</color>を獲得する。1秒に回復できる<color=#FFFFFF>「士気」</color>は2.9Pt。任意のメンバーがエネルギー値を1Pt消費するたびに、ライトの<color=#FFFFFF>「士気」</color>が追加で0.26Pt回復する。<color=#FFFFFF>「士気」</color>の上限は100Pt。<color=#FFFFFF>「士気」</color>が80Ptまで溜まると、その次にライトが出場した時、直接<color=#FFFFFF>『クイック支援』</color>を発動する。<color=#FFFFFF>「士気」</color>が80Pt以上に達した後に<color=#FFFFFF>『通常攻撃』</color>5段目を発動した時、<color=#FFFFFF>「士気奮発」</color>状態に突入し、<color=#FFFFFF>『通常攻撃』</color>5段目の開幕ジャブ全般、ストレートラッシュおよびとどめの一撃の威力がアップする。威力がアップした後の攻撃が敵に命中すると、<color=#FFFFFF>「士気」</color>を持続的に消費する。<color=#FFFFFF>「士気」</color>を10Pt消費するたびに、ライトの衝撃力が<color=#2BAD00>1.83%</color>アップする、最大<color=#2BAD00>18.3%</color>アップできる、継続時間6秒。\n<color=#FFFFFF>「士気奮発」</color>状態にある時、ライトは時間と共に自動で<color=#FFFFFF>「士気」</color>を獲得しなくなる、開幕ジャブまたはストレートラッシュ中に<color=#FFFFFF>「士気」</color>が尽きると、その後より強力なとどめの一撃が自動で発動される。\n<color=#FFFFFF>「士気奮発」</color>状態にある時、開幕ジャブまたはストレートラッシュが敵に命中すると、ターゲットの<color=#98EFF0>氷属性ダメージ耐性</color>および<color=#FF5521>炎属性ダメージ耐性</color>が15%ダウンする、継続時間30秒。\n<color=#FFFFFF>「士気奮発」</color>状態にある時、とどめの一撃が敵に命中すると、ターゲットに<color=#FFFFFF>「壊滅」</color>効果を付与する。ターゲットがブレイク状態になると、<color=#FFFFFF>「壊滅」</color>効果によりブレイク継続時間が3秒延長される。ブレイク状態から復帰するまで、<color=#FFFFFF>「壊滅」</color>效果は同じターゲットに対して1回のみ発動可能。\n<color=#FFFFFF>『通常攻撃』</color>5段目のとどめの一撃が敵に命中した時・ライトが退場した時・<color=#FFFFFF>「士気」</color>が尽きた時、<color=#FFFFFF>「士気奮発」</color>状態は終了する。その際、残りの<color=#FFFFFF>「士気」</color>はリセットされない。",
+                "7": "ライトは時間と共に自動で<color=#FFFFFF>「士気」</color>を獲得する。1秒に回復できる<color=#FFFFFF>「士気」</color>は2.9Pt。任意のメンバーがエネルギー値を1Pt消費するたびに、ライトの<color=#FFFFFF>「士気」</color>が追加で0.26Pt回復する。<color=#FFFFFF>「士気」</color>の上限は100Pt。<color=#FFFFFF>「士気」</color>が80Ptまで溜まると、その次にライトが出場した時、直接<color=#FFFFFF>『クイック支援』</color>を発動する。<color=#FFFFFF>「士気」</color>が80Pt以上に達した後に<color=#FFFFFF>『通常攻撃』</color>5段目を発動した時、<color=#FFFFFF>「士気奮発」</color>状態に突入し、<color=#FFFFFF>『通常攻撃』</color>5段目の開幕ジャブ全般、ストレートラッシュおよびとどめの一撃の威力がアップする。威力がアップした後の攻撃が敵に命中すると、<color=#FFFFFF>「士気」</color>を持続的に消費する。<color=#FFFFFF>「士気」</color>を10Pt消費するたびに、ライトの衝撃力が<color=#2BAD00>2%</color>アップする、最大<color=#2BAD00>20%</color>アップできる、継続時間6秒。\n<color=#FFFFFF>「士気奮発」</color>状態にある時、ライトは時間と共に自動で<color=#FFFFFF>「士気」</color>を獲得しなくなる、開幕ジャブまたはストレートラッシュ中に<color=#FFFFFF>「士気」</color>が尽きると、その後より強力なとどめの一撃が自動で発動される。\n<color=#FFFFFF>「士気奮発」</color>状態にある時、開幕ジャブまたはストレートラッシュが敵に命中すると、ターゲットの<color=#98EFF0>氷属性ダメージ耐性</color>および<color=#FF5521>炎属性ダメージ耐性</color>が15%ダウンする、継続時間30秒。\n<color=#FFFFFF>「士気奮発」</color>状態にある時、とどめの一撃が敵に命中すると、ターゲットに<color=#FFFFFF>「壊滅」</color>効果を付与する。ターゲットがブレイク状態になると、<color=#FFFFFF>「壊滅」</color>効果によりブレイク継続時間が3秒延長される。ブレイク状態から復帰するまで、<color=#FFFFFF>「壊滅」</color>效果は同じターゲットに対して1回のみ発動可能。\n<color=#FFFFFF>『通常攻撃』</color>5段目のとどめの一撃が敵に命中した時・ライトが退場した時・<color=#FFFFFF>「士気」</color>が尽きた時、<color=#FFFFFF>「士気奮発」</color>状態は終了する。その際、残りの<color=#FFFFFF>「士気」</color>はリセットされない。"
+            }
+        },
+        "MathSkill": {
+            "Title": "追加能力：燃える闘志",
+            "Description": "チームに<color=#FFFFFF>[強攻]</color>のメンバーまたは自身と同じ陣営のメンバーがいる時に発動：\n<color=#FFFFFF>「士気奮発」</color>状態にある時、ライトの<color=#FFFFFF>『通常攻撃』</color>5段目が敵に命中すると、メンバー全員が<color=#FFFFFF>「高揚」</color>を1重獲得する、最大20重まで重ね掛け可能、継続時間30秒。重複して発動すると継続時間が更新される。<color=#FFFFFF>「高揚」</color>1重につき、エージェントの与える<color=#98EFF0>氷属性ダメージ</color>と<color=#FF5521>炎属性ダメージ</color>+1.25%。\n<color=#FFFFFF>「高揚」</color>を獲得した時、ライトの衝撃力が170Ptを上回る場合、10Pt上回るごとに<color=#FFFFFF>「高揚」</color>1重ごとのバフ効果が追加で+0.25%。任意のメンバーが<color=#FFFFFF>『連携スキル』</color>を発動した時、メンバー全員の<color=#FFFFFF>「高揚」</color>の継続時間が更新される。<color=#FFFFFF>「高揚」</color>によってアップできるエージェントの<color=#98EFF0>氷属性与ダメージ</color>と<color=#FF5521>炎属性与ダメージ</color>は最大75%まで。"
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "116100001": {
+                "Title": "通常攻撃：L式グラウリング・フィスト",
+                "Description": "<IconMap:Icon_Normal> を短押しまたは長押しして発動：\n前方に最大5段の打撃を放ち、<color=#F0D12B>物理属性ダメージ</color>と<color=#FF5521>炎属性ダメージ</color>を与える。\n<color=#FFFFFF>『通常攻撃』</color>3段目の発動中に{LAYOUT_CONSOLECONTROLLER#スティック}{LAYOUT_FALLBACK#スティック}を入力しながら <IconMap:Icon_Normal> を連打または長押しすると、体術の連続追撃を持続的に発動できる。\n{LAYOUT_CONSOLECONTROLLER#スティック}{LAYOUT_FALLBACK#スティック}を離すと、そのまま<color=#FFFFFF>『通常攻撃』</color>4段目に繋げることが可能。\n<color=#FFFFFF>『通常攻撃』</color>5段目の開幕ジャブ中に{LAYOUT_CONSOLECONTROLLER#スティック}{LAYOUT_FALLBACK#スティック}を入力しながら <IconMap:Icon_Normal> を連打または長押しすると、開幕ジャブと<color=#FFFFFF>『通常攻撃』</color>4段目を繰り返し発動することが可能。{LAYOUT_CONSOLECONTROLLER#スティック}{LAYOUT_FALLBACK#スティック}を離すと、そのままストレートラッシュに繋げることが可能。\n<IconMap:Icon_Normal> の連打または長押しを続けると、ストレートラッシュの継続時間が延長される。\n<IconMap:Icon_Normal> の連打または長押しをやめた後、あるいはストレートラッシュが継続時間の上限に達した後、前方にとどめの一撃を放つ。とどめの一撃発動中、無敵効果を得る。\n<color=#FFFFFF>『通常攻撃』</color>5段目発動中、ライトの被ダメージ-40%。\n<color=#FFFFFF>「士気奮発」</color>状態にある時、<color=#FFFFFF>『通常攻撃』</color>5段目発動中に中断耐性レベルがアップし、被ダメージダウン効果が80%になる。"
+            },
+            "116110001": {
+                "Title": "通常攻撃：L式グラウリング・フィスト"
+            },
+            "116110002": {
+                "Description": "1段ダメージ倍率",
+                "Param": "{Skill:1161001, Prop:1001}"
+            },
+            "116110003": {
+                "Description": "2段ダメージ倍率",
+                "Param": "{Skill:1161002, Prop:1001}"
+            },
+            "116110004": {
+                "Description": "3段ダメージ倍率",
+                "Param": "{Skill:1161003, Prop:1001}"
+            },
+            "116110005": {
+                "Description": "追撃1段ダメージ倍率",
+                "Param": "{Skill:1161004, Prop:1001}"
+            },
+            "116110006": {
+                "Description": "追撃2段ダメージ倍率",
+                "Param": "{Skill:1161005, Prop:1001}"
+            },
+            "116110007": {
+                "Description": "追撃3段ダメージ倍率",
+                "Param": "{Skill:1161006, Prop:1001}"
+            },
+            "116110008": {
+                "Description": "追撃4段ダメージ倍率",
+                "Param": "{Skill:1161007, Prop:1001}"
+            },
+            "116110009": {
+                "Description": "追撃5段ダメージ倍率",
+                "Param": "{Skill:1161008, Prop:1001}"
+            },
+            "116110010": {
+                "Description": "4段ダメージ倍率",
+                "Param": "{Skill:1161009, Prop:1001}"
+            },
+            "116110011": {
+                "Description": "5段開幕ジャブダメージ倍率",
+                "Param": "{Skill:1161010, Prop:1001}"
+            },
+            "116110012": {
+                "Description": "5段ラッシュダメージ倍率",
+                "Param": "{Skill:1161011, Prop:1001}"
+            },
+            "116110013": {
+                "Description": "5段とどめダメージ倍率",
+                "Param": "{Skill:1161012, Prop:1001}"
+            },
+            "116110014": {
+                "Description": "5段開幕ジャブダメージ倍率（士気奮発状態）",
+                "Param": "{Skill:1161026, Prop:1001}"
+            },
+            "116110015": {
+                "Description": "5段ラッシュダメージ倍率（士気奮発状態）",
+                "Param": "{Skill:1161027, Prop:1001}"
+            },
+            "116110016": {
+                "Description": "5段とどめダメージ倍率（士気奮発状態）",
+                "Param": "{Skill:1161028, Prop:1001}"
+            },
+            "116110017": {
+                "Description": "5段強力とどめダメージ倍率（士気奮発状態）",
+                "Param": "{Skill:1161025, Prop:1001}"
+            },
+            "116110018": {
+                "Description": "1段ブレイク倍率",
+                "Param": "{Skill:1161001, Prop:1002}"
+            },
+            "116110019": {
+                "Description": "2段ブレイク倍率",
+                "Param": "{Skill:1161002, Prop:1002}"
+            },
+            "116110020": {
+                "Description": "3段ブレイク倍率",
+                "Param": "{Skill:1161003, Prop:1002}"
+            },
+            "116110021": {
+                "Description": "追撃1段ブレイク倍率",
+                "Param": "{Skill:1161004, Prop:1002}"
+            },
+            "116110022": {
+                "Description": "追撃2段ブレイク倍率",
+                "Param": "{Skill:1161005, Prop:1002}"
+            },
+            "116110023": {
+                "Description": "追撃3段ブレイク倍率",
+                "Param": "{Skill:1161006, Prop:1002}"
+            },
+            "116110024": {
+                "Description": "追撃4段ブレイク倍率",
+                "Param": "{Skill:1161007, Prop:1002}"
+            },
+            "116110025": {
+                "Description": "追撃5段ブレイク倍率",
+                "Param": "{Skill:1161008, Prop:1002}"
+            },
+            "116110026": {
+                "Description": "4段ブレイク倍率",
+                "Param": "{Skill:1161009, Prop:1002}"
+            },
+            "116110027": {
+                "Description": "5段開幕ジャブブレイク倍率",
+                "Param": "{Skill:1161010, Prop:1002}"
+            },
+            "116110028": {
+                "Description": "5段ラッシュブレイク倍率",
+                "Param": "{Skill:1161011, Prop:1002}"
+            },
+            "116110029": {
+                "Description": "5段とどめブレイク倍率",
+                "Param": "{Skill:1161012, Prop:1002}"
+            },
+            "116110030": {
+                "Description": "5段開幕ジャブブレイク倍率（士気奮発状態）",
+                "Param": "{Skill:1161026, Prop:1002}"
+            },
+            "116110031": {
+                "Description": "5段ラッシュブレイク倍率（士気奮発状態）",
+                "Param": "{Skill:1161027, Prop:1002}"
+            },
+            "116110032": {
+                "Description": "5段とどめブレイク倍率（士気奮発状態）",
+                "Param": "{Skill:1161028, Prop:1002}"
+            },
+            "116110033": {
+                "Description": "5段強力とどめブレイク倍率（士気奮発状態）",
+                "Param": "{Skill:1161025, Prop:1002}"
+            }
+        },
+        "1": {
+            "116100002": {
+                "Title": "特殊スキル：V式サンライズ・アッパー",
+                "Description": " <IconMap:Icon_Special> を押して発動：\nアッパーで前方に打撃を放ち、<color=#FF5521>炎属性ダメージ</color>を与える。\nスキル発動中、中断耐性レベルがアップする。\nサイドステップ回避中、<IconMap:Icon_Special> を押して発動：\nコンビネーションブローで前方に打撃を放ち、<color=#FF5521>炎属性ダメージ</color>を与える。\nこの時、<color=#FFFFFF>『通常攻撃』</color>のコンボは中断されない。\nスキル発動中、中断耐性レベルがアップする。"
+            },
+            "116100003": {
+                "Title": "強化特殊スキル：V式サンライズ・アッパー-フルストローク",
+                "Description": "エネルギーが溜まっている状態で <IconMap:Icon_SpecialReady> を押して発動：\n飛び上がり、アッパーで前方に強力な打撃を叩き込み、<color=#FF5521>炎属性ダメージ</color>を大量に与える。\nスキル発動中に再び <IconMap:Icon_SpecialReady> を押すと、追加でエネルギーを消費して強力な追撃を放ち、<color=#FF5521>炎属性ダメージ</color>を大量に与える。\nスキル発動中、無敵効果を得る。\nスキル発動後、<IconMap:Icon_Normal> を短押しまたは長押しすると、そのまま<color=#FFFFFF>『通常攻撃』</color>4段目に繋げることが可能。\nサイドステップ回避中、エネルギーが溜まっている状態で <IconMap:Icon_SpecialReady> を押して発動：\nコンビネーションブローで前方に強力な打撃を放ち、<color=#FF5521>炎属性ダメージ</color>を大量に与える。\nこの時、<color=#FFFFFF>『通常攻撃』</color>のコンボは中断されない。\nスキル発動中、無敵効果を得る。\nスキル発動後、<IconMap:Icon_Normal> を短押しまたは長押しすると、そのまま<color=#FFFFFF>『通常攻撃』</color>5段目に繋げることが可能。"
+            },
+            "116110034": {
+                "Title": "特殊スキル：V式サンライズ・アッパー"
+            },
+            "116110035": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1161013, Prop:1001}"
+            },
+            "116110036": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1161013, Prop:1002}"
+            },
+            "116110037": {
+                "Title": "強化特殊スキル：V式サンライズ・アッパー-フルストローク"
+            },
+            "116110038": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1161014, Prop:1001}"
+            },
+            "116110039": {
+                "Description": "追撃ダメージ倍率",
+                "Param": "{Skill:1161015, Prop:1001}"
+            },
+            "116110040": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1161014, Prop:1002}"
+            },
+            "116110041": {
+                "Description": "追撃ブレイク倍率",
+                "Param": "{Skill:1161015, Prop:1002}"
+            },
+            "116110042": {
+                "Description": "発動時エネルギー消費",
+                "Param": "40Pt"
+            },
+            "116110043": {
+                "Description": "追撃エネルギー消費",
+                "Param": "20Pt"
+            }
+        },
+        "2": {
+            "116100004": {
+                "Title": "回避：シャドーステップ",
+                "Description": " <IconMap:Icon_Evade> を押して発動：\nダッシュで高速回避する。\nスキル発動中、無敵効果を得る。\n攻撃中、<IconMap:Icon_Evade> を押して発動：\n{LAYOUT_CONSOLECONTROLLER#スティック}{LAYOUT_FALLBACK#スティック}を入力した方向にサイドステップで回避する。\nこの時、<color=#FFFFFF>『通常攻撃』</color>のコンボは中断されない。\nスキル発動中、無敵効果を得る。"
+            },
+            "116100005": {
+                "Title": "ダッシュ攻撃：ムクロ・スラスト",
+                "Description": "回避時に <IconMap:Icon_Normal> を押して発動：\n前方に素早く打撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。"
+            },
+            "116100006": {
+                "Title": "回避反撃：ブレイジングドライブ",
+                "Description": "<color=#FFFFFF>『極限回避』</color>後に <IconMap:Icon_Normal> を押して発動：\n前方の敵に打撃を放ち、<color=#FF5521>炎属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。\nスキル発動後、<IconMap:Icon_Normal> を短押しまたは長押しすると、そのまま<color=#FFFFFF>『通常攻撃』</color>5段目に繋げることが可能。"
+            },
+            "116110044": {
+                "Title": "ダッシュ攻撃：ムクロ・スラスト"
+            },
+            "116110045": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1161016, Prop:1001}"
+            },
+            "116110046": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1161016, Prop:1002}"
+            },
+            "116110047": {
+                "Title": "回避反撃：ブレイジングドライブ"
+            },
+            "116110048": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1161017, Prop:1001}"
+            },
+            "116110049": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1161017, Prop:1002}"
+            }
+        },
+        "3": {
+            "116100007": {
+                "Title": "連携スキル：V式スコーチド・サン",
+                "Description": "<color=#FFFFFF>『連携スキル』</color>開始時に、対応するエージェントを選択して発動：\n前方小範囲の敵に強力な打撃を放ち、<color=#FF5521>炎属性ダメージ</color>を大量に与える。\nスキル発動中、無敵効果を得る。"
+            },
+            "116100008": {
+                "Title": "終結スキル：W式クラウン・インフェルノ",
+                "Description": "デシベルレートが『Maximum』に達した時に <IconMap:Icon_UltimateReady> を押して発動：\n周囲広範囲の敵に強力な打撃を放ち、<color=#FF5521>炎属性ダメージ</color>を大量に与える。\nスキル発動中、無敵効果を得る。"
+            },
+            "116110050": {
+                "Title": "連携スキル：V式スコーチド・サン"
+            },
+            "116110051": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1161018, Prop:1001}"
+            },
+            "116110052": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1161018, Prop:1002}"
+            },
+            "116110053": {
+                "Title": "終結スキル：W式クラウン・インフェルノ"
+            },
+            "116110054": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1161019, Prop:1001}"
+            },
+            "116110055": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1161019, Prop:1002}"
+            }
+        },
+        "6": {
+            "116100010": {
+                "Title": "クイック支援：ブレイジングドライブ-守",
+                "Description": "操作しているメンバーが吹き飛ばされた時に、<IconMap:Icon_Switch> を押して発動：\n前方の敵に打撃を放ち、<color=#FF5521>炎属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。\nスキル発動後、<IconMap:Icon_Normal> を短押しまたは長押しすると、そのまま<color=#FFFFFF>『通常攻撃』</color>5段目に繋げることが可能。"
+            },
+            "116100011": {
+                "Title": "パリィ支援：スウィフト・ブレイク",
+                "Description": "出場中のメンバーが攻撃されそうになった時に、<IconMap:Icon_Switch> を押して発動：\n敵の攻撃をパリィし、ブレイク値を大量に蓄積させる。\nスキル発動中、無敵効果を得る。"
+            },
+            "116100012": {
+                "Title": "支援突撃：ムクロ・スラスト-刺",
+                "Description": "<color=#FFFFFF>『パリィ支援』</color>発動後に <IconMap:Icon_Normal> を押して発動：\n前方の敵に打撃を放ち、<color=#FF5521>炎属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。\nスキル発動後、<IconMap:Icon_Normal> を短押しまたは長押しすると、そのまま<color=#FFFFFF>『通常攻撃』</color>5段目に繋げることが可能。"
+            },
+            "116110056": {
+                "Title": "クイック支援：ブレイジングドライブ-守"
+            },
+            "116110057": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1161020, Prop:1001}"
+            },
+            "116110058": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1161020, Prop:1002}"
+            },
+            "116110059": {
+                "Title": "パリィ支援：スウィフト・ブレイク"
+            },
+            "116110060": {
+                "Description": "パリィ・軽 ブレイク倍率",
+                "Param": "{Skill:1161021, Prop:1002}"
+            },
+            "116110061": {
+                "Description": "パリィ・重 ブレイク倍率",
+                "Param": "{Skill:1161022, Prop:1002}"
+            },
+            "116110062": {
+                "Description": "パリィ・連続 ブレイク倍率",
+                "Param": "{Skill:1161023, Prop:1002}"
+            },
+            "116110063": {
+                "Title": "支援突撃：ムクロ・スラスト-刺"
+            },
+            "116110064": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1161024, Prop:1001}"
+            },
+            "116110065": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1161024, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1161001": {
+            "DamageValue": 3920,
+            "DamageGrowth": 360,
+            "DazeValue": 1960,
+            "DazeGrowth": 90
+        },
+        "1161002": {
+            "DamageValue": 4800,
+            "DamageGrowth": 440,
+            "DazeValue": 3290,
+            "DazeGrowth": 150
+        },
+        "1161003": {
+            "DamageValue": 5530,
+            "DamageGrowth": 510,
+            "DazeValue": 4670,
+            "DazeGrowth": 220
+        },
+        "1161004": {
+            "DamageValue": 8690,
+            "DamageGrowth": 790,
+            "DazeValue": 6050,
+            "DazeGrowth": 280
+        },
+        "1161005": {
+            "DamageValue": 4770,
+            "DamageGrowth": 440,
+            "DazeValue": 3320,
+            "DazeGrowth": 160
+        },
+        "1161006": {
+            "DamageValue": 5810,
+            "DamageGrowth": 530,
+            "DazeValue": 4040,
+            "DazeGrowth": 190
+        },
+        "1161007": {
+            "DamageValue": 3280,
+            "DamageGrowth": 300,
+            "DazeValue": 2280,
+            "DazeGrowth": 110
+        },
+        "1161008": {
+            "DamageValue": 8900,
+            "DamageGrowth": 810,
+            "DazeValue": 6190,
+            "DazeGrowth": 290
+        },
+        "1161009": {
+            "DamageValue": 7890,
+            "DamageGrowth": 720,
+            "DazeValue": 7610,
+            "DazeGrowth": 350
+        },
+        "1161010": {
+            "DamageValue": 16360,
+            "DamageGrowth": 1490,
+            "DazeValue": 12950,
+            "DazeGrowth": 590
+        },
+        "1161011": {
+            "DamageValue": 12290,
+            "DamageGrowth": 1120,
+            "DazeValue": 8130,
+            "DazeGrowth": 370
+        },
+        "1161012": {
+            "DamageValue": 10460,
+            "DamageGrowth": 960,
+            "DazeValue": 7950,
+            "DazeGrowth": 370
+        },
+        "1161013": {
+            "DamageValue": 3630,
+            "DamageGrowth": 330,
+            "DazeValue": 3630,
+            "DazeGrowth": 170
+        },
+        "1161014": {
+            "DamageValue": 48630,
+            "DamageGrowth": 4430,
+            "DazeValue": 40350,
+            "DazeGrowth": 1840
+        },
+        "1161015": {
+            "DamageValue": 29270,
+            "DamageGrowth": 2670,
+            "DazeValue": 24770,
+            "DazeGrowth": 1130
+        },
+        "1161016": {
+            "DamageValue": 8990,
+            "DamageGrowth": 820,
+            "DazeValue": 4500,
+            "DazeGrowth": 210
+        },
+        "1161017": {
+            "DamageValue": 18630,
+            "DamageGrowth": 1700,
+            "DazeValue": 16870,
+            "DazeGrowth": 770
+        },
+        "1161018": {
+            "DamageValue": 71210,
+            "DamageGrowth": 6480,
+            "DazeValue": 27320,
+            "DazeGrowth": 1250
+        },
+        "1161019": {
+            "DamageValue": 150800,
+            "DamageGrowth": 13710,
+            "DazeValue": 94740,
+            "DazeGrowth": 4310
+        },
+        "1161020": {
+            "DamageValue": 6970,
+            "DamageGrowth": 640,
+            "DazeValue": 6970,
+            "DazeGrowth": 320
+        },
+        "1161021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1161022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1161023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1161024": {
+            "DamageValue": 21980,
+            "DamageGrowth": 2000,
+            "DazeValue": 18230,
+            "DazeGrowth": 830
+        },
+        "1161025": {
+            "DamageValue": 43540,
+            "DamageGrowth": 3960,
+            "DazeValue": 13240,
+            "DazeGrowth": 610
+        },
+        "1161026": {
+            "DamageValue": 17720,
+            "DamageGrowth": 1620,
+            "DazeValue": 13630,
+            "DazeGrowth": 620
+        },
+        "1161027": {
+            "DamageValue": 36430,
+            "DamageGrowth": 3320,
+            "DazeValue": 8550,
+            "DazeGrowth": 390
+        },
+        "1161028": {
+            "DamageValue": 11970,
+            "DamageGrowth": 1090,
+            "DazeValue": 9210,
+            "DazeGrowth": 420
+        }
+    }
+}

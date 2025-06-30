@@ -1,0 +1,491 @@
+{
+    "Name": "Hugo",
+    "ElementTypes": [
+        "Ice"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Child of Hatred",
+            "Description": "When triggering the <color=#FFFFFF>Totalize</color> effect in the <color=#FFFFFF>Dark Abyss Reverb</color> state, the skill's CRIT Rate is increased by an additional 12%, and CRIT DMG by 30%.",
+            "Lore": "\"So, do not deny your own desires, do not resist your own ambition. This is the talent you were born with, the best gift fate has ever given you!\"\n\"Admit it, deep within your heart lies a spark, yearning to ignite a raging inferno that will burn everything down—\"\n\"And I, am that spark.\"\n\n\"Yeah, I know. I've always known.\""
+        },
+        "2": {
+            "Title": "The Child Within",
+            "Description": "When <color=#FFFFFF>Ultimate: Blaspheme</color> triggers <color=#FFFFFF>Totalize</color>, it will not end the enemy's Stunned state. Additionally, when <color=#FFFFFF>Totalize</color> is triggered, the skill will ignore 15% of the enemy's DEF.",
+            "Lore": "\"Family is an everlasting, unavoidable curse placed upon a person.\"\n\"No matter how much you grow, no matter where you go, that curse will forever follow you like a shadow.\"\n\"When you fall to rock bottom or climb to your peak, it will appear, turning you back into that helpless, powerless child who can do nothing but hide in the closet and weep.\"\n\n\"Unless you truly see him, embrace him.\"\nSome pain can only be healed when it is seen and accepted."
+        },
+        "3": {
+            "Title": "Fruit of the Poisonous Tree",
+            "Description": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2",
+            "Lore": "They say that the flowers that bloom in the abyss are always soaked in malice, just like how a poisonous tree can't bear safe fruit.\nBut all fruit falls.\nSo, he broke himself into a rain of shattered pieces.\nThe rain covered the earth, and each dewdrop reflected a fresh new dawn."
+        },
+        "4": {
+            "Title": "Dramatic Theory",
+            "Description": "After a Charged Shot hits an enemy, Hugo's attacks against that target will ignore 12% of that target's <color=#98EFF0>Ice RES</color> for 15s, repeated triggers reset the duration.",
+            "Lore": "Justice, evil, madness, reason, charm, stubbornness.\nHe's composed of countless faces.\n\"So, which is the real you?\"\n\"That's not important. How about, instead, you tell me, Lycaon—\"\n\"What kind of person do you see in me?\""
+        },
+        "5": {
+            "Title": "Nirvana",
+            "Description": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2",
+            "Lore": "The world doesn't need to be destroyed and rebuilt, and no one has the right to do such.\nBut a person can.\nSo, he shattered himself and was reborn.\n\"If I must fall, let me fall. The person I am meant to become will surely catch me.\""
+        },
+        "6": {
+            "Title": "Crown of Thorns",
+            "Description": "All shooting attacks that hit enemies trigger the <color=#FFFFFF>Dark Abyss Reverb</color> state, lasting up to 6s, and repeated triggers reset the duration. Additionally, whenever any skill triggers the <color=#FFFFFF>Totalize</color> effect, that DMG is further increased by 60%. The Finishing Move of <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> also triggers the <color=#FFFFFF>Totalize</color> effect when hitting an enemy that isn't Stunned, boosting the DMG multiplier of the Finishing Move by a fixed 1,000 %.",
+            "Lore": "He walked willingly toward the endless abyss, letting the thorns on the ground tear at his wounds.\nWhere the blood spread, broken dignity and stubbornness began to sprout from the wounds.\nHe picked up the blood-soaked thorns to crown himself.\n\"There's only ever been one person who can kill me or save me... And that is me.\""
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Core Passive: Terminating Verdict",
+            "DescriptionByLevel": {
+                "1": "When <color=#FFFFFF>Chain Attack: Trick of Fate</color> hits an enemy or Hugo's attacks Stun an enemy, Hugo gains the <color=#FFFFFF>Dark Abyss Reverb</color> state for 6s, and repeated triggers reset the duration. During this state, Hugo's CRIT Rate increases by 12% and CRIT DMG increases by 25%.\nWhen there are 1/2 <color=#FFFFFF>Stun</color> characters in your squad, Hugo's ATK increases by <color=#2BAD00>25</color>/<color=#2BAD00>75</color>.\nWhen the Finishing Move of <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> or <color=#FFFFFF>Ultimate: Blaspheme</color> hits an enemy while they are Stunned, it triggers the <color=#FFFFFF>Totalize</color> effect, increasing the DMG Multiplier of the skill's Finishing Move by <color=#2BAD00>500%</color>. Additionally, the <color=#FFFFFF>Totalize</color> effect further increases the skill's DMG multiplier based on the remaining Stun time of the enemy when triggered: for each remaining second of Stun time from the portion that is less than or equal to 5s, the skill's DMG multiplier increases by <color=#2BAD00>140%</color>; for each remaining second of Stun time from the portion between 5 and 15s, the skill's DMG multiplier increases by <color=#2BAD00>50%</color>. The total increase can raise the skill's DMG multiplier by a maximum of <color=#2BAD00>1,700%</color>.\nAfter Hugo triggers the <color=#FFFFFF>Totalize</color> effect, the enemy's Stunned state will immediately end. Based on the remaining Stun time at the moment <color=#FFFFFF>Totalize</color> is triggered, a certain amount of Daze will be accumulated. For every second of Stun time remaining, 5% Daze is accumulated, up to a maximum Daze equivalent to 25% of the enemy's maximum Daze.\nWhen <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> hits an enemy, if the enemy is not Stunned, the Daze accumulated by the skill increases by 20%.",
+                "2": "When <color=#FFFFFF>Chain Attack: Trick of Fate</color> hits an enemy or Hugo's attacks Stun an enemy, Hugo gains the <color=#FFFFFF>Dark Abyss Reverb</color> state for 6s, and repeated triggers reset the duration. During this state, Hugo's CRIT Rate increases by 12% and CRIT DMG increases by 25%.\nWhen there are 1/2 <color=#FFFFFF>Stun</color> characters in your squad, Hugo's ATK increases by <color=#2BAD00>50</color>/<color=#2BAD00>150</color>.\nWhen the Finishing Move of <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> or <color=#FFFFFF>Ultimate: Blaspheme</color> hits an enemy while they are Stunned, it triggers the <color=#FFFFFF>Totalize</color> effect, increasing the DMG Multiplier of the skill's Finishing Move by <color=#2BAD00>583%</color>. Additionally, the <color=#FFFFFF>Totalize</color> effect further increases the skill's DMG multiplier based on the remaining Stun time of the enemy when triggered: for each remaining second of Stun time from the portion that is less than or equal to 5s, the skill's DMG multiplier increases by <color=#2BAD00>163%</color>; for each remaining second of Stun time from the portion between 5 and 15s, the skill's DMG multiplier increases by <color=#2BAD00>58%</color>. The total increase can raise the skill's DMG multiplier by a maximum of <color=#2BAD00>1,978%</color>.\nAfter Hugo triggers the <color=#FFFFFF>Totalize</color> effect, the enemy's Stunned state will immediately end. Based on the remaining Stun time at the moment <color=#FFFFFF>Totalize</color> is triggered, a certain amount of Daze will be accumulated. For every second of Stun time remaining, 5% Daze is accumulated, up to a maximum Daze equivalent to 25% of the enemy's maximum Daze.\nWhen <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> hits an enemy, if the enemy is not Stunned, the Daze accumulated by the skill increases by 20%.",
+                "3": "When <color=#FFFFFF>Chain Attack: Trick of Fate</color> hits an enemy or Hugo's attacks Stun an enemy, Hugo gains the <color=#FFFFFF>Dark Abyss Reverb</color> state for 6s, and repeated triggers reset the duration. During this state, Hugo's CRIT Rate increases by 12% and CRIT DMG increases by 25%.\nWhen there are 1/2 <color=#FFFFFF>Stun</color> characters in your squad, Hugo's ATK increases by <color=#2BAD00>80</color>/<color=#2BAD00>240</color>.\nWhen the Finishing Move of <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> or <color=#FFFFFF>Ultimate: Blaspheme</color> hits an enemy while they are Stunned, it triggers the <color=#FFFFFF>Totalize</color> effect, increasing the DMG Multiplier of the skill's Finishing Move by <color=#2BAD00>667%</color>. Additionally, the <color=#FFFFFF>Totalize</color> effect further increases the skill's DMG multiplier based on the remaining Stun time of the enemy when triggered: for each remaining second of Stun time from the portion that is less than or equal to 5s, the skill's DMG multiplier increases by <color=#2BAD00>187%</color>; for each remaining second of Stun time from the portion between 5 and 15s, the skill's DMG multiplier increases by <color=#2BAD00>67%</color>. The total increase can raise the skill's DMG multiplier by a maximum of <color=#2BAD00>2,272%</color>.\nAfter Hugo triggers the <color=#FFFFFF>Totalize</color> effect, the enemy's Stunned state will immediately end. Based on the remaining Stun time at the moment <color=#FFFFFF>Totalize</color> is triggered, a certain amount of Daze will be accumulated. For every second of Stun time remaining, 5% Daze is accumulated, up to a maximum Daze equivalent to 25% of the enemy's maximum Daze.\nWhen <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> hits an enemy, if the enemy is not Stunned, the Daze accumulated by the skill increases by 20%.",
+                "4": "When <color=#FFFFFF>Chain Attack: Trick of Fate</color> hits an enemy or Hugo's attacks Stun an enemy, Hugo gains the <color=#FFFFFF>Dark Abyss Reverb</color> state for 6s, and repeated triggers reset the duration. During this state, Hugo's CRIT Rate increases by 12% and CRIT DMG increases by 25%.\nWhen there are 1/2 <color=#FFFFFF>Stun</color> characters in your squad, Hugo's ATK increases by <color=#2BAD00>120</color>/<color=#2BAD00>360</color>.\nWhen the Finishing Move of <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> or <color=#FFFFFF>Ultimate: Blaspheme</color> hits an enemy while they are Stunned, it triggers the <color=#FFFFFF>Totalize</color> effect, increasing the DMG Multiplier of the skill's Finishing Move by <color=#2BAD00>750%</color>. Additionally, the <color=#FFFFFF>Totalize</color> effect further increases the skill's DMG multiplier based on the remaining Stun time of the enemy when triggered: for each remaining second of Stun time from the portion that is less than or equal to 5s, the skill's DMG multiplier increases by <color=#2BAD00>210%</color>; for each remaining second of Stun time from the portion between 5 and 15s, the skill's DMG multiplier increases by <color=#2BAD00>75%</color>. The total increase can raise the skill's DMG multiplier by a maximum of <color=#2BAD00>2,550%</color>.\nAfter Hugo triggers the <color=#FFFFFF>Totalize</color> effect, the enemy's Stunned state will immediately end. Based on the remaining Stun time at the moment <color=#FFFFFF>Totalize</color> is triggered, a certain amount of Daze will be accumulated. For every second of Stun time remaining, 5% Daze is accumulated, up to a maximum Daze equivalent to 25% of the enemy's maximum Daze.\nWhen <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> hits an enemy, if the enemy is not Stunned, the Daze accumulated by the skill increases by 20%.",
+                "5": "When <color=#FFFFFF>Chain Attack: Trick of Fate</color> hits an enemy or Hugo's attacks Stun an enemy, Hugo gains the <color=#FFFFFF>Dark Abyss Reverb</color> state for 6s, and repeated triggers reset the duration. During this state, Hugo's CRIT Rate increases by 12% and CRIT DMG increases by 25%.\nWhen there are 1/2 <color=#FFFFFF>Stun</color> characters in your squad, Hugo's ATK increases by <color=#2BAD00>180</color>/<color=#2BAD00>540</color>.\nWhen the Finishing Move of <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> or <color=#FFFFFF>Ultimate: Blaspheme</color> hits an enemy while they are Stunned, it triggers the <color=#FFFFFF>Totalize</color> effect, increasing the DMG Multiplier of the skill's Finishing Move by <color=#2BAD00>833%</color>. Additionally, the <color=#FFFFFF>Totalize</color> effect further increases the skill's DMG multiplier based on the remaining Stun time of the enemy when triggered: for each remaining second of Stun time from the portion that is less than or equal to 5s, the skill's DMG multiplier increases by <color=#2BAD00>233%</color>; for each remaining second of Stun time from the portion between 5 and 15s, the skill's DMG multiplier increases by <color=#2BAD00>83%</color>. The total increase can raise the skill's DMG multiplier by a maximum of <color=#2BAD00>2,828%</color>.\nAfter Hugo triggers the <color=#FFFFFF>Totalize</color> effect, the enemy's Stunned state will immediately end. Based on the remaining Stun time at the moment <color=#FFFFFF>Totalize</color> is triggered, a certain amount of Daze will be accumulated. For every second of Stun time remaining, 5% Daze is accumulated, up to a maximum Daze equivalent to 25% of the enemy's maximum Daze.\nWhen <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> hits an enemy, if the enemy is not Stunned, the Daze accumulated by the skill increases by 20%.",
+                "6": "When <color=#FFFFFF>Chain Attack: Trick of Fate</color> hits an enemy or Hugo's attacks Stun an enemy, Hugo gains the <color=#FFFFFF>Dark Abyss Reverb</color> state for 6s, and repeated triggers reset the duration. During this state, Hugo's CRIT Rate increases by 12% and CRIT DMG increases by 25%.\nWhen there are 1/2 <color=#FFFFFF>Stun</color> characters in your squad, Hugo's ATK increases by <color=#2BAD00>270</color>/<color=#2BAD00>810</color>.\nWhen the Finishing Move of <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> or <color=#FFFFFF>Ultimate: Blaspheme</color> hits an enemy while they are Stunned, it triggers the <color=#FFFFFF>Totalize</color> effect, increasing the DMG Multiplier of the skill's Finishing Move by <color=#2BAD00>917%</color>. Additionally, the <color=#FFFFFF>Totalize</color> effect further increases the skill's DMG multiplier based on the remaining Stun time of the enemy when triggered: for each remaining second of Stun time from the portion that is less than or equal to 5s, the skill's DMG multiplier increases by <color=#2BAD00>257%</color>; for each remaining second of Stun time from the portion between 5 and 15s, the skill's DMG multiplier increases by <color=#2BAD00>92%</color>. The total increase can raise the skill's DMG multiplier by a maximum of <color=#2BAD00>3,122%</color>.\nAfter Hugo triggers the <color=#FFFFFF>Totalize</color> effect, the enemy's Stunned state will immediately end. Based on the remaining Stun time at the moment <color=#FFFFFF>Totalize</color> is triggered, a certain amount of Daze will be accumulated. For every second of Stun time remaining, 5% Daze is accumulated, up to a maximum Daze equivalent to 25% of the enemy's maximum Daze.\nWhen <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> hits an enemy, if the enemy is not Stunned, the Daze accumulated by the skill increases by 20%.",
+                "7": "When <color=#FFFFFF>Chain Attack: Trick of Fate</color> hits an enemy or Hugo's attacks Stun an enemy, Hugo gains the <color=#FFFFFF>Dark Abyss Reverb</color> state for 6s, and repeated triggers reset the duration. During this state, Hugo's CRIT Rate increases by 12% and CRIT DMG increases by 25%.\nWhen there are 1/2 <color=#FFFFFF>Stun</color> characters in your squad, Hugo's ATK increases by <color=#2BAD00>300</color>/<color=#2BAD00>900</color>.\nWhen the Finishing Move of <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> or <color=#FFFFFF>Ultimate: Blaspheme</color> hits an enemy while they are Stunned, it triggers the <color=#FFFFFF>Totalize</color> effect, increasing the DMG Multiplier of the skill's Finishing Move by <color=#2BAD00>1,000%</color>. Additionally, the <color=#FFFFFF>Totalize</color> effect further increases the skill's DMG multiplier based on the remaining Stun time of the enemy when triggered: for each remaining second of Stun time from the portion that is less than or equal to 5s, the skill's DMG multiplier increases by <color=#2BAD00>280%</color>; for each remaining second of Stun time from the portion between 5 and 15s, the skill's DMG multiplier increases by <color=#2BAD00>100%</color>. The total increase can raise the skill's DMG multiplier by a maximum of <color=#2BAD00>3,400%</color>.\nAfter Hugo triggers the <color=#FFFFFF>Totalize</color> effect, the enemy's Stunned state will immediately end. Based on the remaining Stun time at the moment <color=#FFFFFF>Totalize</color> is triggered, a certain amount of Daze will be accumulated. For every second of Stun time remaining, 5% Daze is accumulated, up to a maximum Daze equivalent to 25% of the enemy's maximum Daze.\nWhen <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> hits an enemy, if the enemy is not Stunned, the Daze accumulated by the skill increases by 20%."
+            }
+        },
+        "MathSkill": {
+            "Title": "Additional Ability: Prelude to Finality",
+            "Description": "When another character in your squad is a <color=#FFFFFF>Stun</color> character or shares the same attribute:\n<color=#FFFFFF>Chain Attack: Trick of Fate</color>'s DMG increases by 15%, with a further increase of 35% against normal enemies. When <color=#FFFFFF>Totalize</color> is triggered, the DMG dealt by the skill increases by 40%. <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> generates an additional 20 Energy when triggering <color=#FFFFFF>Totalize</color> on normal enemies. The Energy generation effect can trigger once every 30s."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "129100001": {
+                "Title": "Basic Attack: Dark Abyss Quartet",
+                "Description": "Press <IconMap:Icon_Normal> to activate:\nPerform up to four attacks forward, dealing <color=#F0D12B>Physical DMG</color> and <color=#98EFF0>Ice DMG</color>.\nThe fourth attack is a shot. During this attack, hold <IconMap:Icon_Normal> to charge and perform a charged shot.\nAnti-Interrupt level is increased during the fourth attack, and DMG received is reduced by 40%."
+            },
+            "129100002": {
+                "Title": "Basic Attack: Dark Abyss Concerto",
+                "Description": "After the 4th hit of <color=#FFFFFF>Basic Attack: Dark Abyss Quartet</color>, the shot of <color=#FFFFFF>Dodge Counter: Phantasm - Slash</color>, or the shot of <color=#FFFFFF>Quick Assist: Elegy</color>, press or hold <IconMap:Icon_Normal> to activate:\nThrow the scythe forward to perform a slash, followed by a shot, dealing <color=#98EFF0>Ice DMG</color>.\nDuring the shot, hold <IconMap:Icon_Normal> to charge and perform a charged shot.\nDuring this skill, Anti-Interrupt level is increased, and DMG received is reduced by 40%."
+            },
+            "129100014": {
+                "Title": "Basic Attack: Dark Abyss Quartet"
+            },
+            "129100015": {
+                "Description": "1st-Hit DMG Multiplier",
+                "Param": "{Skill:1291001, Prop:1001}"
+            },
+            "129100016": {
+                "Description": "2nd-Hit DMG Multiplier",
+                "Param": "{Skill:1291002, Prop:1001}"
+            },
+            "129100017": {
+                "Description": "3rd-Hit DMG Multiplier",
+                "Param": "{Skill:1291003, Prop:1001}"
+            },
+            "129100018": {
+                "Description": "Slash DMG Multiplier",
+                "Param": "{Skill:1291004, Prop:1001}"
+            },
+            "129100019": {
+                "Description": "Shot DMG Multiplier",
+                "Param": "{Skill:1291005, Prop:1001}"
+            },
+            "129100020": {
+                "Description": "Charged Shot DMG Multiplier",
+                "Param": "{Skill:1291006, Prop:1001}"
+            },
+            "129100021": {
+                "Description": "1st-Hit Daze Multiplier",
+                "Param": "{Skill:1291001, Prop:1002}"
+            },
+            "129100022": {
+                "Description": "2nd-Hit Daze Multiplier",
+                "Param": "{Skill:1291002, Prop:1002}"
+            },
+            "129100023": {
+                "Description": "3rd-Hit Daze Multiplier",
+                "Param": "{Skill:1291003, Prop:1002}"
+            },
+            "129100024": {
+                "Description": "Slash Daze Multiplier",
+                "Param": "{Skill:1291004, Prop:1002}"
+            },
+            "129100025": {
+                "Description": "Shot Daze Multiplier",
+                "Param": "{Skill:1291005, Prop:1002}"
+            },
+            "129100026": {
+                "Description": "Charged Shot Daze Multiplier",
+                "Param": "{Skill:1291006, Prop:1002}"
+            },
+            "129100027": {
+                "Title": "Basic Attack: Dark Abyss Concerto"
+            },
+            "129100028": {
+                "Description": "Slash DMG Multiplier",
+                "Param": "{Skill:1291024, Prop:1001}"
+            },
+            "129100029": {
+                "Description": "Shot DMG Multiplier",
+                "Param": "{Skill:1291025, Prop:1001}"
+            },
+            "129100030": {
+                "Description": "Charged Shot DMG Multiplier",
+                "Param": "{Skill:1291026, Prop:1001}"
+            },
+            "129100031": {
+                "Description": "Slash Daze Multiplier",
+                "Param": "{Skill:1291024, Prop:1002}"
+            },
+            "129100032": {
+                "Description": "Shot Daze Multiplier",
+                "Param": "{Skill:1291025, Prop:1002}"
+            },
+            "129100033": {
+                "Description": "Charged Shot Daze Multiplier",
+                "Param": "{Skill:1291026, Prop:1002}"
+            }
+        },
+        "1": {
+            "129100003": {
+                "Title": "Special Attack: Soul Hunter - Judgment",
+                "Description": "Press <IconMap:Icon_Special> to activate:\nSpins the scythe and then unleashes a forward slash, dealing <color=#98EFF0>Ice DMG</color>.\nAnti-Interrupt level is increased while using this skill."
+            },
+            "129100004": {
+                "Title": "EX Special Attack: Soul Hunter - Punishment",
+                "Description": "With enough Energy, press <IconMap:Icon_SpecialReady> to activate:\nSpins the scythe to attack and then executes a powerful Finishing Move, dealing massive <color=#98EFF0>Ice DMG</color>.\nThis skill is not counted as a heavy attack.\nAfter the skill is used, it can be directly followed up with the 4th hit of <color=#FFFFFF>Basic Attack: Dark Abyss Quartet</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "129100037": {
+                "Title": "Special Attack: Soul Hunter - Judgment"
+            },
+            "129100038": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1291008, Prop:1001}"
+            },
+            "129100039": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1291008, Prop:1002}"
+            },
+            "129100040": {
+                "Title": "EX Special Attack: Soul Hunter - Punishment"
+            },
+            "129100041": {
+                "Description": "DMG Multiplier",
+                "Param": "{{Skill:1291009, Prop:1001} + {Skill:1291010, Prop:1001}}"
+            },
+            "129100042": {
+                "Description": "Daze Multiplier",
+                "Param": "{{Skill:1291009, Prop:1002} + {Skill:1291010, Prop:1002}}"
+            },
+            "129100043": {
+                "Description": "Energy Cost",
+                "Param": "40"
+            }
+        },
+        "2": {
+            "129100005": {
+                "Title": "Dodge: Phantasm",
+                "Description": "Press <IconMap:Icon_Evade> to activate:\nA quick dash dodge.\nCharacter is invulnerable while using this skill."
+            },
+            "129100006": {
+                "Title": "Dash Attack: Phantasm - Shatter",
+                "Description": "Press <IconMap:Icon_Normal> during a dodge to activate:\nLaunch a dashing attack at enemies in front, dealing <color=#F0D12B>Physical DMG</color>."
+            },
+            "129100007": {
+                "Title": "Dodge Counter: Phantasm - Slash",
+                "Description": "Press <IconMap:Icon_Normal> during a <color=#FFFFFF>Perfect Dodge</color> to activate:\nPerforms a series of attacks on enemies in front, dealing <color=#98EFF0>Ice DMG</color>.\nDuring the skill, hold <IconMap:Icon_Normal> to launch a shot. During the shot, hold <IconMap:Icon_Normal> to charge and perform a charged shot.\nThe shot is considered a Basic Attack, with its DMG treated as Basic Attack DMG.\nAfter the skill is used, it can be directly followed up with the 4th hit of <color=#FFFFFF>Basic Attack: Dark Abyss Quartet</color>.\nDuring the skill's ranged phase, Anti-Interrupt level is increased, and DMG received is reduced by 40%.\nInvulnerable during the slashes and ranged retreat of the skill."
+            },
+            "129100044": {
+                "Title": "Dash Attack: Phantasm - Shatter"
+            },
+            "129100045": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1291011, Prop:1001}"
+            },
+            "129100046": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1291011, Prop:1002}"
+            },
+            "129100047": {
+                "Title": "Dodge Counter: Phantasm - Slash"
+            },
+            "129100048": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1291012, Prop:1001}"
+            },
+            "129100049": {
+                "Description": "ALT Shot DMG Multiplier",
+                "Param": "{Skill:1291013, Prop:1001}"
+            },
+            "129100050": {
+                "Description": "ALT Charged Shot DMG Multiplier",
+                "Param": "{Skill:1291014, Prop:1001}"
+            },
+            "129100051": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1291012, Prop:1002}"
+            },
+            "129100052": {
+                "Description": "ALT Shot Daze Multiplier",
+                "Param": "{Skill:1291013, Prop:1002}"
+            },
+            "129100053": {
+                "Description": "ALT Charged Shot Daze Multiplier",
+                "Param": "{Skill:1291014, Prop:1002}"
+            }
+        },
+        "3": {
+            "129100008": {
+                "Title": "Chain Attack: Trick of Fate",
+                "Description": "When a <color=#FFFFFF>Chain Attack</color> is triggered, select the character to activate:\nDash forward to perform a slash across a large area, then launch a shot, dealing massive <color=#98EFF0>Ice DMG</color>.\nThe shot activated by this skill is considered a charged shot.\nCharacter is invulnerable while using this skill."
+            },
+            "129100009": {
+                "Title": "Ultimate: Blaspheme",
+                "Description": "When Decibel Rating is at <color=#FFFFFF>Maximum</color>, press <IconMap:Icon_UltimateReady> to activate:\nThrows the scythe in a powerful spinning attack, then launches a Finishing Move, dealing massive <color=#98EFF0>Ice DMG</color>.\nThis skill is not counted as a heavy attack.\nAfter the skill is used, it can be directly followed up with the 4th hit of <color=#FFFFFF>Basic Attack: Dark Abyss Quartet</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "129100054": {
+                "Title": "Chain Attack: Trick of Fate"
+            },
+            "129100055": {
+                "Description": "Slash DMG Multiplier",
+                "Param": "{Skill:1291015, Prop:1001}"
+            },
+            "129100056": {
+                "Description": "Slash Daze Multiplier",
+                "Param": "{Skill:1291015, Prop:1002}"
+            },
+            "129100057": {
+                "Title": "Ultimate: Blaspheme"
+            },
+            "129100058": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1291018, Prop:1001}"
+            },
+            "129100059": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1291018, Prop:1002}"
+            }
+        },
+        "6": {
+            "129100011": {
+                "Title": "Quick Assist: Elegy",
+                "Description": "When the active character is launched, press <IconMap:Icon_Switch> to activate:\nPerforms a series of attacks on enemies in front, dealing <color=#98EFF0>Ice DMG</color>.\nDuring the skill, hold <IconMap:Icon_Normal> to launch a shot. During the shot, hold <IconMap:Icon_Normal> to charge and perform a charged shot.\nThe shot is considered a Basic Attack, with its DMG treated as Basic Attack DMG.\nAfter the skill is used, it can be directly followed up with the 4th hit of <color=#FFFFFF>Basic Attack: Dark Abyss Quartet</color>.\nDuring the skill's ranged phase, Anti-Interrupt Level is increased, and DMG received is reduced by 40%.\nInvulnerable during the slashes and ranged retreat of the skill."
+            },
+            "129100012": {
+                "Title": "Defensive Assist: The End Has Not Come",
+                "Description": "When the on-field character is about to be attacked, press <IconMap:Icon_Switch> to activate:\nParries the enemy's attack, dealing massive Daze.\nCharacter is invulnerable while using this skill."
+            },
+            "129100013": {
+                "Title": "Assist Follow-Up: Ace Reversal",
+                "Description": "Press <IconMap:Icon_Normal> after a <color=#FFFFFF>Defensive Assist</color> to activate:\nDash forward and perform two slashes, dealing <color=#98EFF0>Ice DMG</color>.\nAfter the skill is used, it can be directly followed up with the 4th hit of <color=#FFFFFF>Basic Attack: Dark Abyss Quartet</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "129100060": {
+                "Title": "Quick Assist: Elegy"
+            },
+            "129100061": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1291019, Prop:1001}"
+            },
+            "129100062": {
+                "Description": "ALT Shot DMG Multiplier",
+                "Param": "{Skill:1291027, Prop:1001}"
+            },
+            "129100063": {
+                "Description": "ALT Charged Shot DMG Multiplier",
+                "Param": "{Skill:1291028, Prop:1001}"
+            },
+            "129100064": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1291019, Prop:1002}"
+            },
+            "129100065": {
+                "Description": "ALT Shot Daze Multiplier",
+                "Param": "{Skill:1291027, Prop:1002}"
+            },
+            "129100066": {
+                "Description": "ALT Charged Shot Daze Multiplier",
+                "Param": "{Skill:1291028, Prop:1002}"
+            },
+            "129100067": {
+                "Title": "Defensive Assist: The End Has Not Come"
+            },
+            "129100068": {
+                "Description": "Light Defensive Daze Multiplier",
+                "Param": "{Skill:1291020, Prop:1002}"
+            },
+            "129100069": {
+                "Description": "Heavy Defensive Daze Multiplier",
+                "Param": "{Skill:1291021, Prop:1002}"
+            },
+            "129100070": {
+                "Description": "Chain Defensive Daze Multiplier",
+                "Param": "{Skill:1291022, Prop:1002}"
+            },
+            "129100071": {
+                "Title": "Assist Follow-Up: Ace Reversal"
+            },
+            "129100072": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1291023, Prop:1001}"
+            },
+            "129100073": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1291023, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1291001": {
+            "DamageValue": 4310,
+            "DamageGrowth": 400,
+            "DazeValue": 2160,
+            "DazeGrowth": 100
+        },
+        "1291002": {
+            "DamageValue": 7410,
+            "DamageGrowth": 680,
+            "DazeValue": 5490,
+            "DazeGrowth": 250
+        },
+        "1291003": {
+            "DamageValue": 16960,
+            "DamageGrowth": 1550,
+            "DazeValue": 12810,
+            "DazeGrowth": 590
+        },
+        "1291004": {
+            "DamageValue": 14910,
+            "DamageGrowth": 1360,
+            "DazeValue": 12580,
+            "DazeGrowth": 580
+        },
+        "1291005": {
+            "DamageValue": 5860,
+            "DamageGrowth": 540,
+            "DazeValue": 5010,
+            "DazeGrowth": 230
+        },
+        "1291006": {
+            "DamageValue": 11800,
+            "DamageGrowth": 1080,
+            "DazeValue": 9570,
+            "DazeGrowth": 440
+        },
+        "1291007": {
+            "DamageValue": 7000,
+            "DamageGrowth": 640,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1291008": {
+            "DamageValue": 8530,
+            "DamageGrowth": 780,
+            "DazeValue": 8530,
+            "DazeGrowth": 390
+        },
+        "1291009": {
+            "DamageValue": 1870,
+            "DamageGrowth": 170,
+            "DazeValue": 43240,
+            "DazeGrowth": 1970
+        },
+        "1291010": {
+            "DamageValue": 35450,
+            "DamageGrowth": 3230,
+            "DazeValue": 2280,
+            "DazeGrowth": 110
+        },
+        "1291011": {
+            "DamageValue": 9350,
+            "DamageGrowth": 850,
+            "DazeValue": 4680,
+            "DazeGrowth": 220
+        },
+        "1291012": {
+            "DamageValue": 24590,
+            "DamageGrowth": 2240,
+            "DazeValue": 21450,
+            "DazeGrowth": 980
+        },
+        "1291013": {
+            "DamageValue": 16210,
+            "DamageGrowth": 1480,
+            "DazeValue": 12470,
+            "DazeGrowth": 570
+        },
+        "1291014": {
+            "DamageValue": 21210,
+            "DamageGrowth": 1930,
+            "DazeValue": 16320,
+            "DazeGrowth": 750
+        },
+        "1291015": {
+            "DamageValue": 70110,
+            "DamageGrowth": 6380,
+            "DazeValue": 26220,
+            "DazeGrowth": 1200
+        },
+        "1291018": {
+            "DamageValue": 152710,
+            "DamageGrowth": 13890,
+            "DazeValue": 26420,
+            "DazeGrowth": 1210
+        },
+        "1291019": {
+            "DamageValue": 10450,
+            "DamageGrowth": 950,
+            "DazeValue": 5230,
+            "DazeGrowth": 240
+        },
+        "1291020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1291021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1291022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1291023": {
+            "DamageValue": 29170,
+            "DamageGrowth": 2660,
+            "DazeValue": 24910,
+            "DazeGrowth": 1140
+        },
+        "1291024": {
+            "DamageValue": 14340,
+            "DamageGrowth": 1310,
+            "DazeValue": 11030,
+            "DazeGrowth": 510
+        },
+        "1291025": {
+            "DamageValue": 8670,
+            "DamageGrowth": 790,
+            "DazeValue": 6670,
+            "DazeGrowth": 310
+        },
+        "1291026": {
+            "DamageValue": 17060,
+            "DamageGrowth": 1560,
+            "DazeValue": 13120,
+            "DazeGrowth": 600
+        },
+        "1291027": {
+            "DamageValue": 12470,
+            "DamageGrowth": 1140,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1291028": {
+            "DamageValue": 16320,
+            "DamageGrowth": 1490,
+            "DazeValue": 8160,
+            "DazeGrowth": 380
+        }
+    }
+}

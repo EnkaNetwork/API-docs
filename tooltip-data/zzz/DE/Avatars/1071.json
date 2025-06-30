@@ -1,0 +1,512 @@
+{
+    "Name": "Caesar",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Verkeilter Vorstoß",
+            "Description": "Wenn Caesar dem Kampf beitritt oder aufs Feld eingewechselt wird, erhalten alle Truppenmitglieder sofort <color=#FFFFFF>Ägis des Ruhms</color>, 300 s Abklingzeit. Solange <color=#FFFFFF>Ägis des Ruhms</color> aktiv ist, erleiden Gegner innerhalb eines Radius von 5 m eine Verringerung des Attribut-SCH-WDS von 15 %.",
+            "Lore": "„Big Daddy hat mir beigebracht, dass man in solchen Situationen eine keilartige Formation mit mächtigen Kämpfern bilden und die Schwachstelle des Gegners angreifen muss ...“\n„Ich führe die Formation natürlich von ganz vorn an!“"
+        },
+        "2": {
+            "Title": "Vermächtnis der Ferne",
+            "Description": "Während der Dauer von <color=#FFFFFF>Ägis des Ruhms</color> durch die <color=#FFFFFF>passive Kernfähigkeit: Belastbare Barriere</color>, erhöht sich Caesars Energie-Generationsrate um 10 % und der ANG-Erhöhungseffekt des Trägers erhöht sich auf 150 % des ursprünglichen Werts.",
+            "Lore": "Caesars Kampfstil sticht im Vergleich zu anderen Leuten aus New Eridu oder der Außenzone heraus und basiert auf Techniken der talentiertesten Krieger unter den Wanderern.\nZu wissen, wann man sich zurückhalten sollte und wann man entschlossen angreifen muss ... das war schon immer die Überlebensweise der Wanderer. Und Caesar war schon immer eine gute Schülerin dieser Philosophie."
+        },
+        "3": {
+            "Title": "Absolutes Vertrauen",
+            "Description": "Fähigkeitsstufe von <color=#FFFFFF>Basisangriff</color>, <color=#FFFFFF>Ausweichen</color>, <color=#FFFFFF>Hilfe</color>, <color=#FFFFFF>Spezialangriff</color> und <color=#FFFFFF>Kettenangriff</color> +2",
+            "Lore": "Sobald Caesar jemanden als Verbündeten ansieht, akzeptiert sie diese Person vollständig als Teil ihres engsten Freundeskreises. Sie vertraut ihr bedingungslos und hütet sich in keinster Weise ...\nGenau wie sie es bei dir getan hat."
+        },
+        "4": {
+            "Title": "Ares’ Rammbock",
+            "Description": "Verwendet Caesar einen <color=#FFFFFF>Kettenangriff</color> oder ihr <color=#FFFFFF>Ultimate</color>, erhält sie 3 zusätzliche <color=#FFFFFF>Hilfspunkte</color>. Hat sie weniger als 20 Pkt. Energie, kann sie <color=#FFFFFF>verstärkter Spezialangriff: Überwältigender Schildhieb</color> mit 1 <color=#FFFFFF>Hilfspunkt</color> aktivieren. Dieser Ersatzeffekt hat eine 5 s Abklingzeit.",
+            "Lore": "Eine der Techniken, die Caesar unter der Leitung der Wanderer gemeistert hat.\n„Egal, was kommt, ich kämpfe weiter bis zum letzten Moment!“"
+        },
+        "5": {
+            "Title": "Romantische Eroberung",
+            "Description": "Fähigkeitsstufe von <color=#FFFFFF>Basisangriff</color>, <color=#FFFFFF>Ausweichen</color>, <color=#FFFFFF>Hilfe</color>, <color=#FFFFFF>Spezialangriff</color> und <color=#FFFFFF>Kettenangriff</color> +2",
+            "Lore": "Hinter Caesars gelassenem und ungeschliffenem Äußeren versteckt sich eine hoffnungslose Romantikerin.\nSie ist immer neugierig über Liebesgeschichten.\nWenn man sie etwas mehr über das Thema ausfragt ... sieht man sie vielleicht erröten."
+        },
+        "6": {
+            "Title": "Wille der Oberherrin",
+            "Description": "<color=#FFFFFF>Verstärkter Spezialangriff: Überwältigender Schildhieb</color> und <color=#FFFFFF>Sukzessive Hilfe: Unterstützende Klinge</color> lösen garantiert KT aus. Der durch diese Fähigkeiten verursachte SCH wird um 50 % erhöht und beim Hauptziel wird der verursachte SCH zusätzlich um 50 % erhöht. Verwendet Caesar <color=#FFFFFF>Verstärkter Spezialangriff: Überwältigender Schildhieb</color> oder <color=#FFFFFF>Sukzessive Hilfe: Unterstützende Klinge</color>, erhöht sich ihre KRIT-Rate um 30 % und ihr KRIT-SCH um 60 %, hält 15 s.",
+            "Lore": "„Früher habe ich immer nur direkt nach vorn geblickt und dachte, ich sei stark genug, um es mit allem aufzunehmen.“\n„Aber eine gute Oberherrin braucht mehr als nur rohe Kraft.“\n„Ich muss meine Freunde, die hinter mir stehen, beschützen. Sie sind der Grund, warum ich immer weitermachen kann.“"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passive Kernfähigkeit: Belastbare Barriere",
+            "DescriptionByLevel": {
+                "1": "Führt Caesar den <color=#FFFFFF>verstärkten Spezialangriff: Abwehrkonter</color>, <color=#FFFFFF>Kettenangriff</color> oder ihren <color=#FFFFFF>Ultimate</color> aus, oder aktiviert den <color=#FFFFFF>verstärkten Spezialangriff: Überwältigender Schildhieb</color> durch <color=#FFFFFF>Gegenschlag</color>, versieht sie alle Truppenmitglieder mit <color=#FFFFFF>Ägis des Ruhms</color>, einem Schild in Höhe von <color=#2BAD00>300 %</color> ihrer anfänglichen Stoßkraft + <color=#2BAD00>200</color>. Der Schild <color=#FFFFFF>Ägis des Ruhms</color> hält 60 s und wird von der derzeit gesteuerten Figur angelegt, doch der Schildwert wird von allen Truppenmitgliedern geteilt. Auf einmal erlittener SCH wird den Schildwert nicht übersteigen.\nSolange <color=#FFFFFF>Ägis des Ruhms</color> aktiv ist, wird die Stufe des Unterbrechungs-WDS des Schildträgers erhöht und der ANG des Schildträgers wird um <color=#2BAD00>40</color> Pkt. erhöht. Wenn <color=#FFFFFF>Ägis des Ruhms</color> endet, bleibt der Bonuseffekt für weitere 5 s aktiv.",
+                "2": "Führt Caesar den <color=#FFFFFF>verstärkten Spezialangriff: Abwehrkonter</color>, <color=#FFFFFF>Kettenangriff</color> oder ihren <color=#FFFFFF>Ultimate</color> aus, oder aktiviert den <color=#FFFFFF>verstärkten Spezialangriff: Überwältigender Schildhieb</color> durch <color=#FFFFFF>Gegenschlag</color>, versieht sie alle Truppenmitglieder mit <color=#FFFFFF>Ägis des Ruhms</color>, einem Schild in Höhe von <color=#2BAD00>500 %</color> ihrer anfänglichen Stoßkraft + <color=#2BAD00>400</color>. Der Schild <color=#FFFFFF>Ägis des Ruhms</color> hält 60 s und wird von der derzeit gesteuerten Figur angelegt, doch der Schildwert wird von allen Truppenmitgliedern geteilt. Auf einmal erlittener SCH wird den Schildwert nicht übersteigen.\nSolange <color=#FFFFFF>Ägis des Ruhms</color> aktiv ist, wird die Stufe des Unterbrechungs-WDS des Schildträgers erhöht und der ANG des Schildträgers wird um <color=#2BAD00>135</color> Pkt. erhöht. Wenn <color=#FFFFFF>Ägis des Ruhms</color> endet, bleibt der Bonuseffekt für weitere 5 s aktiv.",
+                "3": "Führt Caesar den <color=#FFFFFF>verstärkten Spezialangriff: Abwehrkonter</color>, <color=#FFFFFF>Kettenangriff</color> oder ihren <color=#FFFFFF>Ultimate</color> aus, oder aktiviert den <color=#FFFFFF>verstärkten Spezialangriff: Überwältigender Schildhieb</color> durch <color=#FFFFFF>Gegenschlag</color>, versieht sie alle Truppenmitglieder mit <color=#FFFFFF>Ägis des Ruhms</color>, einem Schild in Höhe von <color=#2BAD00>700 %</color> ihrer anfänglichen Stoßkraft + <color=#2BAD00>700</color>. Der Schild <color=#FFFFFF>Ägis des Ruhms</color> hält 60 s und wird von der derzeit gesteuerten Figur angelegt, doch der Schildwert wird von allen Truppenmitgliedern geteilt. Auf einmal erlittener SCH wird den Schildwert nicht übersteigen.\nSolange <color=#FFFFFF>Ägis des Ruhms</color> aktiv ist, wird die Stufe des Unterbrechungs-WDS des Schildträgers erhöht und der ANG des Schildträgers wird um <color=#2BAD00>240</color> Pkt. erhöht. Wenn <color=#FFFFFF>Ägis des Ruhms</color> endet, bleibt der Bonuseffekt für weitere 5 s aktiv.",
+                "4": "Führt Caesar den <color=#FFFFFF>verstärkten Spezialangriff: Abwehrkonter</color>, <color=#FFFFFF>Kettenangriff</color> oder ihren <color=#FFFFFF>Ultimate</color> aus, oder aktiviert den <color=#FFFFFF>verstärkten Spezialangriff: Überwältigender Schildhieb</color> durch <color=#FFFFFF>Gegenschlag</color>, versieht sie alle Truppenmitglieder mit <color=#FFFFFF>Ägis des Ruhms</color>, einem Schild in Höhe von <color=#2BAD00>900 %</color> ihrer anfänglichen Stoßkraft + <color=#2BAD00>900</color>. Der Schild <color=#FFFFFF>Ägis des Ruhms</color> hält 60 s und wird von der derzeit gesteuerten Figur angelegt, doch der Schildwert wird von allen Truppenmitgliedern geteilt. Auf einmal erlittener SCH wird den Schildwert nicht übersteigen.\nSolange <color=#FFFFFF>Ägis des Ruhms</color> aktiv ist, wird die Stufe des Unterbrechungs-WDS des Schildträgers erhöht und der ANG des Schildträgers wird um <color=#2BAD00>400</color> Pkt. erhöht. Wenn <color=#FFFFFF>Ägis des Ruhms</color> endet, bleibt der Bonuseffekt für weitere 5 s aktiv.",
+                "5": "Führt Caesar den <color=#FFFFFF>verstärkten Spezialangriff: Abwehrkonter</color>, <color=#FFFFFF>Kettenangriff</color> oder ihren <color=#FFFFFF>Ultimate</color> aus, oder aktiviert den <color=#FFFFFF>verstärkten Spezialangriff: Überwältigender Schildhieb</color> durch <color=#FFFFFF>Gegenschlag</color>, versieht sie alle Truppenmitglieder mit <color=#FFFFFF>Ägis des Ruhms</color>, einem Schild in Höhe von <color=#2BAD00>1.100 %</color> ihrer anfänglichen Stoßkraft + <color=#2BAD00>1.100</color>. Der Schild <color=#FFFFFF>Ägis des Ruhms</color> hält 60 s und wird von der derzeit gesteuerten Figur angelegt, doch der Schildwert wird von allen Truppenmitgliedern geteilt. Auf einmal erlittener SCH wird den Schildwert nicht übersteigen.\nSolange <color=#FFFFFF>Ägis des Ruhms</color> aktiv ist, wird die Stufe des Unterbrechungs-WDS des Schildträgers erhöht und der ANG des Schildträgers wird um <color=#2BAD00>650</color> Pkt. erhöht. Wenn <color=#FFFFFF>Ägis des Ruhms</color> endet, bleibt der Bonuseffekt für weitere 5 s aktiv.",
+                "6": "Führt Caesar den <color=#FFFFFF>verstärkten Spezialangriff: Abwehrkonter</color>, <color=#FFFFFF>Kettenangriff</color> oder ihren <color=#FFFFFF>Ultimate</color> aus, oder aktiviert den <color=#FFFFFF>verstärkten Spezialangriff: Überwältigender Schildhieb</color> durch <color=#FFFFFF>Gegenschlag</color>, versieht sie alle Truppenmitglieder mit <color=#FFFFFF>Ägis des Ruhms</color>, einem Schild in Höhe von <color=#2BAD00>1.300 %</color> ihrer anfänglichen Stoßkraft + <color=#2BAD00>1.300</color>. Der Schild <color=#FFFFFF>Ägis des Ruhms</color> hält 60 s und wird von der derzeit gesteuerten Figur angelegt, doch der Schildwert wird von allen Truppenmitgliedern geteilt. Auf einmal erlittener SCH wird den Schildwert nicht übersteigen.\nSolange <color=#FFFFFF>Ägis des Ruhms</color> aktiv ist, wird die Stufe des Unterbrechungs-WDS des Schildträgers erhöht und der ANG des Schildträgers wird um <color=#2BAD00>900</color> Pkt. erhöht. Wenn <color=#FFFFFF>Ägis des Ruhms</color> endet, bleibt der Bonuseffekt für weitere 5 s aktiv.",
+                "7": "Führt Caesar den <color=#FFFFFF>verstärkten Spezialangriff: Abwehrkonter</color>, <color=#FFFFFF>Kettenangriff</color> oder ihren <color=#FFFFFF>Ultimate</color> aus, oder aktiviert den <color=#FFFFFF>verstärkten Spezialangriff: Überwältigender Schildhieb</color> durch <color=#FFFFFF>Gegenschlag</color>, versieht sie alle Truppenmitglieder mit <color=#FFFFFF>Ägis des Ruhms</color>, einem Schild in Höhe von <color=#2BAD00>1.400 %</color> ihrer anfänglichen Stoßkraft + <color=#2BAD00>1.400</color>. Der Schild <color=#FFFFFF>Ägis des Ruhms</color> hält 60 s und wird von der derzeit gesteuerten Figur angelegt, doch der Schildwert wird von allen Truppenmitgliedern geteilt. Auf einmal erlittener SCH wird den Schildwert nicht übersteigen.\nSolange <color=#FFFFFF>Ägis des Ruhms</color> aktiv ist, wird die Stufe des Unterbrechungs-WDS des Schildträgers erhöht und der ANG des Schildträgers wird um <color=#2BAD00>1.000</color> Pkt. erhöht. Wenn <color=#FFFFFF>Ägis des Ruhms</color> endet, bleibt der Bonuseffekt für weitere 5 s aktiv."
+            }
+        },
+        "MathSkill": {
+            "Title": "Zusatzfähigkeit: Kampfgeist",
+            "Description": "Wenn sich in der Truppe eine andere Figur befindet, die <color=#FFFFFF>Defensivhilfe</color> auslösen kann oder eine andere Figur derselben Fraktion angehört:\nWenn Caesar <color=#FFFFFF>Perfekte Parade</color>, <color=#FFFFFF>Gegenschlag</color>, <color=#FFFFFF>Defensivhilfe</color> oder <color=#FFFFFF>Basisangriff: Sackgasse!</color> auslöst, erhalten alle Gegner in einer Reichweite von 7 m einen Maluseffekt und erleiden 25 % mehr SCH durch alle Truppenfiguren, hält 30 s."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "107100001": {
+                "Title": "Basisangriff: Tobender Hieb",
+                "Description": "Drücke <IconMap:Icon_Normal> zum Anwenden:\nFührt bis zu 6 Hiebe nach vorn aus und verursacht dabei <color=#F0D12B>phys. SCH</color>."
+            },
+            "107100002": {
+                "Title": "Basisangriff: Sackgasse!",
+                "Description": "Halte bei ausreichenden <color=#FFFFFF>Hilfspunkten</color> <IconMap:Icon_Normal> gedrückt zum Anwenden:\nVerbraucht 1 <color=#FFFFFF>Hilfspunkt</color>, wirft ihren Schild und greift umliegende Gegner an, wobei sie <color=#F0D12B>phys. SCH</color> verursacht.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "107110001": {
+                "Title": "Basisangriff: Tobender Hieb"
+            },
+            "107110002": {
+                "Description": "SCH-Multiplikator des 1. Angriffs",
+                "Param": "{Skill:1071001, Prop:1001}"
+            },
+            "107110003": {
+                "Description": "SCH-Multiplikator des 2. Angriffs",
+                "Param": "{Skill:1071002, Prop:1001}"
+            },
+            "107110004": {
+                "Description": "SCH-Multiplikator des 3. Angriffs",
+                "Param": "{Skill:1071003, Prop:1001}"
+            },
+            "107110005": {
+                "Description": "SCH-Multiplikator des 3. Angriffs (alternativ)",
+                "Param": "{Skill:1071008, Prop:1001}"
+            },
+            "107110006": {
+                "Description": "SCH-Multiplikator des 4. Angriffs",
+                "Param": "{Skill:1071004, Prop:1001}"
+            },
+            "107110007": {
+                "Description": "SCH-Multiplikator des 5. Angriffs",
+                "Param": "{Skill:1071005, Prop:1001}"
+            },
+            "107110008": {
+                "Description": "SCH-Multiplikator des 6. Angriffs",
+                "Param": "{Skill:1071006, Prop:1001}"
+            },
+            "107110009": {
+                "Description": "Benommenheit-Multiplikator des 1. Angriffs",
+                "Param": "{Skill:1071001, Prop:1002}"
+            },
+            "107110010": {
+                "Description": "Benommenheit-Multiplikator des 2. Angriffs",
+                "Param": "{Skill:1071002, Prop:1002}"
+            },
+            "107110011": {
+                "Description": "Benommenheit-Multiplikator des 3. Angriffs",
+                "Param": "{Skill:1071003, Prop:1002}"
+            },
+            "107110012": {
+                "Description": "Benommenheit-Multiplikator des 3. Angriffs (alternativ)",
+                "Param": "{Skill:1071008, Prop:1002}"
+            },
+            "107110013": {
+                "Description": "Benommenheit-Multiplikator des 4. Angriffs",
+                "Param": "{Skill:1071004, Prop:1002}"
+            },
+            "107110014": {
+                "Description": "Benommenheit-Multiplikator des 5. Angriffs",
+                "Param": "{Skill:1071005, Prop:1002}"
+            },
+            "107110015": {
+                "Description": "Benommenheit-Multiplikator des 6. Angriffs",
+                "Param": "{Skill:1071006, Prop:1002}"
+            },
+            "107110016": {
+                "Title": "Basisangriff: Sackgasse!"
+            },
+            "107110017": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1071007, Prop:1001}"
+            },
+            "107110018": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1071007, Prop:1002}"
+            },
+            "107110019": {
+                "Description": "Verbrauch von Hilfspunkten",
+                "Param": "1 Pkt."
+            }
+        },
+        "1": {
+            "107100003": {
+                "Title": "Spezialangriff: Schockwellen-Schildhieb",
+                "Description": "Drücke <IconMap:Icon_Special> zum Anwenden:\nSchlägt mit dem Schild nach vorn und verursacht <color=#F0D12B>phys. SCH</color>.\nWird Caesar zu Beginn der Aktivierung dieser Fähigkeit von einem Gegner getroffen, wird eine <color=#FFFFFF>perfekte Parade</color> ausgelöst, welche den diesmal erlittenen SCH negiert, und führt dann automatisch den <color=#FFFFFF>Spezialangriff: Tosender Stoß</color> aus.\nNach Anwenden der Fähigkeit wechselt Caesar in die Defensivstellung und verringert den selbst erlittenen SCH um 40 %. Wird Caesar von einem Gegner angegriffen, blockt sie mit dem Schild und wird etwas zurückgedrängt. Drücke anschließend <IconMap:Icon_Special> oder <IconMap:Icon_SpecialReady>, um <color=#FFFFFF>Gegenschlag</color> auszulösen und den <color=#FFFFFF>Spezialangriff: Tosender Stoß</color> oder den <color=#FFFFFF>verstärkten Spezialangriff: Überwältigender Schildhieb</color> zu aktivieren.\nWenn <color=#FFFFFF>Gegenschlag</color> ausgelöst ist, ist Caesar beim Einsatz dieser Fähigkeit unverwundbar."
+            },
+            "107100004": {
+                "Title": "Spezialangriff: Tosender Stoß",
+                "Description": "Drücke nach Auslösen von <color=#FFFFFF>Spezialangriff: Schockwellen-Schildhieb</color> <IconMap:Icon_Special> zum Anwenden:\nStößt nach vorn und verursacht dabei <color=#F0D12B>phys. SCH</color>.\nBeim Anwenden dieser Fähigkeit erhöht sich die Stufe des Unterbrechungs-WDS, wenn <color=#FFFFFF>perfekte Parade</color> oder <color=#FFFFFF>Gegenschlag</color> nicht ausgelöst werden.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar, wenn <color=#FFFFFF>perfekte Parade</color> oder <color=#FFFFFF>Gegenschlag</color> ausgelöst werden."
+            },
+            "107100005": {
+                "Title": "Verstärkter Spezialangriff: Abwehrkonter",
+                "Description": "Drücke bei ausreichender Energie <IconMap:Icon_SpecialReady> zum Anwenden:\nSchlägt mit dem Schild nach vorn, gefolgt von einem kraftvollen Stoß und verursacht dabei hohen <color=#F0D12B>phys. SCH</color>.\nWird Caesar zu Beginn der Aktivierung dieser Fähigkeit von einem Gegner getroffen oder wird ein <color=#FFFFFF>Unterbruch</color> mit Schildschlag ausgelöst, so wird eine <color=#FFFFFF>perfekte Parade</color> ausgeführt, welche den diesmal erlittenen SCH negiert und mit Schild kontert. Drücke nach Auslösen einer <color=#FFFFFF>perfekten Parade</color> <IconMap:Icon_SpecialReady>, um den <color=#FFFFFF>verstärkten Spezialangriff: Überwältigender Schildhieb</color> auszulösen, ohne Energie zu verbrauchen.\nNach Anwenden der Fähigkeit wechselt Caesar in die Defensivstellung und verringert den selbst erlittenen SCH um 40 %. Wird Caesar von einem Gegner angegriffen, blockt sie mit dem Schild und wird etwas zurückgedrängt. Drücke anschließend <IconMap:Icon_Special> oder <IconMap:Icon_SpecialReady>, um <color=#FFFFFF>Gegenschlag</color> auszulösen und den <color=#FFFFFF>Spezialangriff: Tosender Stoß</color> oder den <color=#FFFFFF>verstärkten Spezialangriff: Überwältigender Schildhieb</color> zu aktivieren.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "107100006": {
+                "Title": "Verstärkter Spezialangriff: Überwältigender Schildhieb",
+                "Description": "Drücke nach Auslösen des <color=#FFFFFF>verstärkten Spezialangriffs: Abwehrkonter</color> bei ausreichender Energie <IconMap:Icon_SpecialReady> zum Anwenden:\nSchlägt mit dem Schild nach vorn und verursacht hohen <color=#F0D12B>phys. SCH</color>.\nWird Caesar zu Beginn der Aktivierung dieser Fähigkeit von einem Gegner getroffen oder wird ein <color=#FFFFFF>Unterbruch</color> mit Schildschlag ausgelöst, so wird eine <color=#FFFFFF>perfekte Parade</color> ausgeführt, welche den diesmal erlittenen SCH negiert und die Energie, die zum Aktivieren der Fähigkeit verbraucht wurde, wird wiederhergestellt.\nWird die Fähigkeit durch <color=#FFFFFF>perfekte Parade</color> oder <color=#FFFFFF>Gegenschlag</color> ausgelöst, so kann <color=#FFFFFF>perfekte Parade</color> nicht erneut ausgeführt werden.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "107100007": {
+                "Title": "Stellungswechsel",
+                "Description": "Führt Caesar eine <color=#FFFFFF>perfekte Parade</color>, einen <color=#FFFFFF>Gegenschlag</color> oder eine <color=#FFFFFF>Defensivhilfe</color> aus, wird ihre Stoßkraft um <color=#2BAD00>{CAL:8+AvatarSkillLevel(1)*1,1,2}</color> % erhöht, hält 3 s."
+            },
+            "107110020": {
+                "Title": "Stellungswechsel"
+            },
+            "107110021": {
+                "Description": "Stoßkraft-Erhöhung",
+                "Param": "{CAL:8+AvatarSkillLevel(1)*1,1,2} %"
+            },
+            "107110022": {
+                "Title": "Spezialangriff: Schockwellen-Schildhieb"
+            },
+            "107110023": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1071009, Prop:1001}"
+            },
+            "107110024": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1071009, Prop:1002}"
+            },
+            "107110025": {
+                "Description": "Benommenheit-Multiplikator für perfekte Parade",
+                "Param": "{Skill:1071014, Prop:1002}"
+            },
+            "107110026": {
+                "Title": "Spezialangriff: Tosender Stoß"
+            },
+            "107110027": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1071010, Prop:1001}"
+            },
+            "107110028": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1071010, Prop:1002}"
+            },
+            "107110029": {
+                "Title": "Verstärkter Spezialangriff: Abwehrkonter"
+            },
+            "107110030": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1071011, Prop:1001}"
+            },
+            "107110031": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1071011, Prop:1002}"
+            },
+            "107110032": {
+                "Description": "Benommenheit-Multiplikator für perfekte Parade",
+                "Param": "{Skill:1071015, Prop:1002}"
+            },
+            "107110033": {
+                "Description": "Konter-SCH-Multiplikator für perfekte Parade",
+                "Param": "{Skill:1071012, Prop:1001}"
+            },
+            "107110034": {
+                "Description": "Konter-Benommenheit-Multiplikator für perfekte Parade",
+                "Param": "{Skill:1071012, Prop:1002}"
+            },
+            "107110035": {
+                "Description": "Energiekosten",
+                "Param": "40 Pkt."
+            },
+            "107110036": {
+                "Title": "Verstärkter Spezialangriff: Überwältigender Schildhieb"
+            },
+            "107110037": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1071013, Prop:1001}"
+            },
+            "107110038": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1071013, Prop:1002}"
+            },
+            "107110039": {
+                "Description": "Benommenheit-Multiplikator für perfekte Parade",
+                "Param": "{Skill:1071015, Prop:1002}"
+            },
+            "107110040": {
+                "Description": "Energiekosten für die Anwendung durch Drücken",
+                "Param": "20 Pkt."
+            }
+        },
+        "2": {
+            "107100008": {
+                "Title": "Ausweichen: Driften",
+                "Description": "Drücke <IconMap:Icon_Evade> zum Anwenden:\nEin blitzschnelles Sprintausweichen.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "107100009": {
+                "Title": "Sprintangriff: Unaufhaltsames Vorstürmen",
+                "Description": "Drücke beim Ausweichen <IconMap:Icon_Normal> zum Anwenden:\nSchlägt mit dem Schild nach vorn und verursacht <color=#F0D12B>phys. SCH</color>.\nBeim Anwenden der Fähigkeit wird der erlittene SCH um 40 % verringert. Wird Caesar von einem Gegner angegriffen, blockt sie mit dem Schild und wird etwas zurückgedrängt. Drücke anschließend <IconMap:Icon_Special> oder <IconMap:Icon_SpecialReady>, um <color=#FFFFFF>Gegenschlag</color> auszulösen und den <color=#FFFFFF>Spezialangriff: Tosender Stoß</color> oder den <color=#FFFFFF>verstärkten Spezialangriff: Überwältigender Schildhieb</color> zu aktivieren."
+            },
+            "107100010": {
+                "Title": "Ausweichkonter: Auge um Auge",
+                "Description": "Drücke nach Auslösen eines <color=#FFFFFF>perfekten Ausweichens</color> <IconMap:Icon_Normal> zum Anwenden:\nFührt einen Stoß gegen Gegner vor sich aus und verursacht dabei <color=#F0D12B>phys. SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "107110041": {
+                "Title": "Sprintangriff: Unaufhaltsames Vorstürmen"
+            },
+            "107110042": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1071016, Prop:1001}"
+            },
+            "107110043": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1071016, Prop:1002}"
+            },
+            "107110044": {
+                "Title": "Ausweichkonter: Auge um Auge"
+            },
+            "107110045": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1071017, Prop:1001}"
+            },
+            "107110046": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1071017, Prop:1002}"
+            }
+        },
+        "3": {
+            "107100011": {
+                "Title": "Kettenangriff: Knall in Straßenwut",
+                "Description": "Wähle beim Auslösen eines <color=#FFFFFF>Kettenangriffs</color> die entsprechende Figur zum Anwenden:\nFührt einen kraftvollen Abwärtsschlag gegen Gegner vor sich aus und verursacht dabei hohen <color=#F0D12B>phys. SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "107100012": {
+                "Title": "Ultimate: Wilder Aufprall",
+                "Description": "Drücke beim Erreichen der Dezibelstufe <color=#FFFFFF>Maximum</color> <IconMap:Icon_UltimateReady> zum Anwenden:\nWirft den Schild nach vorn und führt kraftvolle Wirbelangriffe gegen Gegner vor sich aus, führt dann einen Abwärtsschlag aus und verursacht dabei hohen <color=#F0D12B>phys. SCH</color>.\nWerden Gegner, die einen Schild tragen, getroffen, wird die verursachte Benommenheit um <color=#2BAD00>{CAL:40+AvatarSkillLevel(3)*5,1,2} %</color> erhöht.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "107110047": {
+                "Title": "Kettenangriff: Knall in Straßenwut"
+            },
+            "107110048": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1071018, Prop:1001}"
+            },
+            "107110049": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1071018, Prop:1002}"
+            },
+            "107110050": {
+                "Title": "Ultimate: Wilder Aufprall"
+            },
+            "107110051": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1071019, Prop:1001}"
+            },
+            "107110052": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1071019, Prop:1002}"
+            },
+            "107110053": {
+                "Description": "Benommenheit-Erhöhung",
+                "Param": "{CAL:40+AvatarSkillLevel(3)*5,1,2} %"
+            }
+        },
+        "6": {
+            "107100014": {
+                "Title": "Schnelle Hilfe: Spurwechsel",
+                "Description": "Drücke, wenn die gesteuerte Figur weggeschleudert wird, <IconMap:Icon_Switch> zum Anwenden:\nFührt einen Stoß gegen Gegner vor sich aus und verursacht dabei <color=#F0D12B>phys. SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "107100015": {
+                "Title": "Defensivhilfe: Ägis-Schild",
+                "Description": "Drücke, wenn die Figur auf dem Feld gleich angegriffen wird, <IconMap:Icon_Switch> zum Anwenden:\nWehrt gegnerische Angriffe ab und verursacht eine große Menge Benommenheit.\nDiese Fähigkeit eignet sich hervorragend zur Abwehr gegnerischer Angriffe und reduziert den Verbrauch von <color=#FFFFFF>Hilfspunkten</color>, wenn die Figur intensiven Angriffen ausgesetzt ist.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "107100016": {
+                "Title": "Sukzessive Hilfe: Unterstützende Klinge",
+                "Description": "Drücke nach Auslösen einer <color=#FFFFFF>Defensivhilfe</color> <IconMap:Icon_Normal> zum Anwenden:\nWirft den Schild nach vorn und führt kraftvolle Wirbelangriffe gegen Gegner vor sich aus, führt dann einen Hieb aus und verursacht <color=#F0D12B>phys. SCH</color>.\nDrücke nach Anwenden der Fähigkeit <IconMap:Icon_Special> oder <IconMap:Icon_SpecialReady>, um den <color=#FFFFFF>Gegenschlag</color> auszulösen und den <color=#FFFFFF>Spezialangriff: Tosender Stoß</color> oder den <color=#FFFFFF>verstärkten Spezialangriff: Überwältigender Schildhieb</color> zu aktivieren.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "107110054": {
+                "Title": "Schnelle Hilfe: Spurwechsel"
+            },
+            "107110055": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1071020, Prop:1001}"
+            },
+            "107110056": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1071020, Prop:1002}"
+            },
+            "107110057": {
+                "Title": "Defensivhilfe: Ägis-Schild"
+            },
+            "107110058": {
+                "Description": "Benommenheit-Multiplikator für leichte Defensive",
+                "Param": "{Skill:1071021, Prop:1002}"
+            },
+            "107110059": {
+                "Description": "Benommenheit-Multiplikator für schwere Defensive",
+                "Param": "{Skill:1071022, Prop:1002}"
+            },
+            "107110060": {
+                "Description": "Benommenheit-Multiplikator für Kettendefensive",
+                "Param": "{Skill:1071023, Prop:1002}"
+            },
+            "107110061": {
+                "Title": "Sukzessive Hilfe: Unterstützende Klinge"
+            },
+            "107110062": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1071024, Prop:1001}"
+            },
+            "107110063": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1071024, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1071001": {
+            "DamageValue": 4720,
+            "DamageGrowth": 430,
+            "DazeValue": 2130,
+            "DazeGrowth": 100
+        },
+        "1071002": {
+            "DamageValue": 4090,
+            "DamageGrowth": 380,
+            "DazeValue": 3380,
+            "DazeGrowth": 160
+        },
+        "1071003": {
+            "DamageValue": 14830,
+            "DamageGrowth": 1350,
+            "DazeValue": 11000,
+            "DazeGrowth": 500
+        },
+        "1071004": {
+            "DamageValue": 7880,
+            "DamageGrowth": 720,
+            "DazeValue": 6750,
+            "DazeGrowth": 310
+        },
+        "1071005": {
+            "DamageValue": 19860,
+            "DamageGrowth": 1810,
+            "DazeValue": 13750,
+            "DazeGrowth": 630
+        },
+        "1071006": {
+            "DamageValue": 39990,
+            "DamageGrowth": 3640,
+            "DazeValue": 26260,
+            "DazeGrowth": 1200
+        },
+        "1071007": {
+            "DamageValue": 12630,
+            "DamageGrowth": 1150,
+            "DazeValue": 9320,
+            "DazeGrowth": 430
+        },
+        "1071008": {
+            "DamageValue": 11840,
+            "DamageGrowth": 1080,
+            "DazeValue": 7360,
+            "DazeGrowth": 340
+        },
+        "1071009": {
+            "DamageValue": 5330,
+            "DamageGrowth": 490,
+            "DazeValue": 2400,
+            "DazeGrowth": 110
+        },
+        "1071010": {
+            "DamageValue": 5880,
+            "DamageGrowth": 540,
+            "DazeValue": 2650,
+            "DazeGrowth": 130
+        },
+        "1071011": {
+            "DamageValue": 38720,
+            "DamageGrowth": 3520,
+            "DazeValue": 25260,
+            "DazeGrowth": 1150
+        },
+        "1071012": {
+            "DamageValue": 38720,
+            "DamageGrowth": 3520,
+            "DazeValue": 25260,
+            "DazeGrowth": 1150
+        },
+        "1071013": {
+            "DamageValue": 42570,
+            "DamageGrowth": 3870,
+            "DazeValue": 28840,
+            "DazeGrowth": 1320
+        },
+        "1071014": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 7700,
+            "DazeGrowth": 350
+        },
+        "1071015": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15400,
+            "DazeGrowth": 700
+        },
+        "1071016": {
+            "DamageValue": 6230,
+            "DamageGrowth": 570,
+            "DazeValue": 3120,
+            "DazeGrowth": 150
+        },
+        "1071017": {
+            "DamageValue": 19350,
+            "DamageGrowth": 1760,
+            "DazeValue": 17420,
+            "DazeGrowth": 800
+        },
+        "1071018": {
+            "DamageValue": 63880,
+            "DamageGrowth": 5810,
+            "DazeValue": 19990,
+            "DazeGrowth": 910
+        },
+        "1071019": {
+            "DamageValue": 201230,
+            "DamageGrowth": 18300,
+            "DazeValue": 27870,
+            "DazeGrowth": 1270
+        },
+        "1071020": {
+            "DamageValue": 6420,
+            "DamageGrowth": 590,
+            "DazeValue": 6420,
+            "DazeGrowth": 300
+        },
+        "1071021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1071022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34530,
+            "DazeGrowth": 1570
+        },
+        "1071023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16930,
+            "DazeGrowth": 770
+        },
+        "1071024": {
+            "DamageValue": 40720,
+            "DamageGrowth": 3710,
+            "DazeValue": 35630,
+            "DazeGrowth": 1620
+        }
+    }
+}

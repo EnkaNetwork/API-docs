@@ -1,0 +1,469 @@
+{
+    "Name": "Gatillo",
+    "ElementTypes": [
+        "Elec"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Sentidos aguzados",
+            "Description": "La tasa de vulnerabilidad aplicada por la <color=#FFFFFF>técnica pasiva: Mirada introspectiva</color> aumenta en un 20 % adicional. Al ejecutar el <color=#FFFFFF>ataque normal: Ejecución armonizada</color>, el TdE se reduce a 2 s. Al golpear a un enemigo con una ráfaga de disparos o un contraataque cargado en la <color=#FFFFFF>postura de francotiradora</color>, la obtención de <color=#FFFFFF>purga</color> aumenta en un 25 %. El límite máximo de <color=#FFFFFF>purga</color> aumenta a 125 ptos.",
+            "Lore": "Un oído capaz de distinguir cada sutil cambio en la brisa, un tacto que percibe toda vibración del suelo... Para compensar sus limitaciones visuales, la joven ha afinado el resto de sus sentidos hasta el extremo.\n«No tengo ningún otro talento al margen de ser una excelente francotiradora... Pero, al menos en eso, no pienso perder contra nadie.»"
+        },
+        "2": {
+            "Title": "Visión etérea",
+            "Description": "Al activar una <color=#FFFFFF>réplica</color>, Gatillo obtiene 1 carga de <color=#FFFFFF>vista de cazadora</color>. Al ejecutar un ataque final en la <color=#FFFFFF>postura de francotiradora</color>, Gatillo obtiene 2 cargas de <color=#FFFFFF>vista de cazadora</color>. Por cada carga de <color=#FFFFFF>vista de cazadora</color>, el Daño Crítico de todos los personajes del equipo aumenta en un 6 % durante 10 s. Pueden acumularse hasta 4 cargas. La duración se reinicia con cada activación.",
+            "Lore": "Cuando se encuentra en la Cavidad, todas las fluctuaciones etéreas a su alrededor se convierten en una ayuda para su observación espacial.\n«Antes pensaba que estos ojos eran una maldición que solo me causaba dolor.»\n«Pero ahora... sé que son la clave para alcanzar mis objetivos, y la prueba de que no he olvidado mi pasado.»"
+        },
+        "3": {
+            "Title": "Regreso a casa",
+            "Description": "Nivel de <color=#FFFFFF>ataque normal</color>, <color=#FFFFFF>evasión</color>, <color=#FFFFFF>técnica de apoyo</color>, <color=#FFFFFF>técnica especial</color> y <color=#FFFFFF>técnica en cadena</color> +2",
+            "Lore": "El hogar al que podía regresar quedó sepultado en el ayer.\nSus labios fríos se apoyan en la armónica, cuya solitaria melodía es el único vestigio que queda de sus recuerdos."
+        },
+        "4": {
+            "Title": "Sin dejar rastro",
+            "Description": "Después de que Gatillo entre en o prolongue el estado de <color=#FFFFFF>asistencia coordinada</color>, durante la duración de este estado, la siguiente vez que otro personaje del equipo activa el <color=#FFFFFF>ataque normal: Ejecución armonizada</color> o el <color=#FFFFFF>ataque normal: Ejecución armonizada - Tártaro</color> y golpea a un enemigo, se activa el efecto de <color=#FFFFFF>desconexión</color>, el cual inflige daño adicional equivalente a un 200 % del Ataque de Gatillo y provoca Aturdimiento equivalente a un 120 % del Impacto de Gatillo. Esta habilidad tiene un alto nivel de interrupción.",
+            "Lore": "Pasos, respiración, latidos. Suprime cada rastro de su presencia hasta que su figura se funde por completo con el entorno y se desliza por el campo de batalla como una parca invisible.\nSin embargo, fuera del campo de batalla, estos sigilosos movimientos fueron prohibidos después de que asustara con ellos a sus compañeros en varias ocasiones.\nPor supuesto, seguro que nunca ha usado esta técnica para observar el videoclub desde los alrededores cuando no tiene la oportunidad de encontrarse con alguien allí... ¿Verdad?"
+        },
+        "5": {
+            "Title": "Voluntad inquebrantable",
+            "Description": "Nivel de <color=#FFFFFF>ataque normal</color>, <color=#FFFFFF>evasión</color>, <color=#FFFFFF>técnica de apoyo</color>, <color=#FFFFFF>técnica especial</color> y <color=#FFFFFF>técnica en cadena</color> +2",
+            "Lore": "Una vez fijado el objetivo, aunque su cuerpo esté destrozado y su dolor sea insoportable, jamás apartará la mira. Ya sea el objetivo de su venganza o alguien a quien desea proteger; ya sea un enemigo o un aliado... Esa es la voluntad de una francotiradora.\nSin embargo, con {M#cierto}{F#cierta} proxy que se convirtió en la luz que alumbraba sus momentos más oscuros, más que fijar la mira, se siente atraída hacia su objetivo. Aunque no encuentre razón alguna para mantener los ojos puestos en él, no piensa desviar la mira. Esa es la voluntad de una joven."
+        },
+        "6": {
+            "Title": "Más allá del río Estigia",
+            "Description": "Al entrar en combate, Gatillo obtiene 5 <color=#FFFFFF>balas de ruptura de armadura</color>. Por cada 25 ptos. de <color=#FFFFFF>purga</color> consumidos, Gatillo obtiene 1 <color=#FFFFFF>bala de ruptura de armadura</color> adicional, hasta un máximo de 5. Mientras tenga <color=#FFFFFF>balas de ruptura de armadura</color>, cuando Gatillo golpea a un objetivo en la <color=#FFFFFF>postura de francotiradora</color>, consume 1 <color=#FFFFFF>bala de ruptura de armadura</color> e inflige <color=#2EB6FF>daño eléctrico</color> adicional contra el objetivo equivalente a un 1200 % de su Ataque. El daño que inflige la <color=#FFFFFF>bala de ruptura de armadura</color> aumenta en un 50 % adicional. Este efecto puede activarse un máximo de una vez cada 0.2 s.",
+            "Lore": "«¿Sabes? Aquellos que se manchan las manos de sangre en la batalla solo pueden ir al inframundo tras su muerte.»\n«Más allá del río Estigia, seguro que aguarda un paisaje de belleza incomparable. Las flores rojas florecerán a mi alrededor, y rostros conocidos me acompañarán hasta mi destino final, el lugar de mi descanso eterno.»\n«Pero... gracias a ti, gracias a que tengo algo que proteger, quizás preferiría que ese día no llegase tan pronto.»"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Técnica pasiva: Mirada introspectiva",
+            "DescriptionByLevel": {
+                "1": "Cuando Gatillo golpea al enemigo con una <color=#FFFFFF>réplica</color>, la tasa de vulnerabilidad del objetivo aumenta en un <color=#2BAD00>20 %</color> durante 5 s. Este aumento de la tasa de vulnerabilidad se aplica incluso cuando el objetivo no está afectado por Aturdimiento.",
+                "2": "Cuando Gatillo golpea al enemigo con una <color=#FFFFFF>réplica</color>, la tasa de vulnerabilidad del objetivo aumenta en un <color=#2BAD00>22.5 %</color> durante 5 s. Este aumento de la tasa de vulnerabilidad se aplica incluso cuando el objetivo no está afectado por Aturdimiento.",
+                "3": "Cuando Gatillo golpea al enemigo con una <color=#FFFFFF>réplica</color>, la tasa de vulnerabilidad del objetivo aumenta en un <color=#2BAD00>25 %</color> durante 5 s. Este aumento de la tasa de vulnerabilidad se aplica incluso cuando el objetivo no está afectado por Aturdimiento.",
+                "4": "Cuando Gatillo golpea al enemigo con una <color=#FFFFFF>réplica</color>, la tasa de vulnerabilidad del objetivo aumenta en un <color=#2BAD00>27.5 %</color> durante 5 s. Este aumento de la tasa de vulnerabilidad se aplica incluso cuando el objetivo no está afectado por Aturdimiento.",
+                "5": "Cuando Gatillo golpea al enemigo con una <color=#FFFFFF>réplica</color>, la tasa de vulnerabilidad del objetivo aumenta en un <color=#2BAD00>30 %</color> durante 5 s. Este aumento de la tasa de vulnerabilidad se aplica incluso cuando el objetivo no está afectado por Aturdimiento.",
+                "6": "Cuando Gatillo golpea al enemigo con una <color=#FFFFFF>réplica</color>, la tasa de vulnerabilidad del objetivo aumenta en un <color=#2BAD00>32.5 %</color> durante 5 s. Este aumento de la tasa de vulnerabilidad se aplica incluso cuando el objetivo no está afectado por Aturdimiento.",
+                "7": "Cuando Gatillo golpea al enemigo con una <color=#FFFFFF>réplica</color>, la tasa de vulnerabilidad del objetivo aumenta en un <color=#2BAD00>35 %</color> durante 5 s. Este aumento de la tasa de vulnerabilidad se aplica incluso cuando el objetivo no está afectado por Aturdimiento."
+            }
+        },
+        "MathSkill": {
+            "Title": "Técnica adicional: Mirada espectral del farol plateado",
+            "Description": "Si en el equipo hay un agente <color=#FFFFFF>atacante</color> o del mismo atributo que ella, cuando la Probabilidad de Crítico de Gatillo supera el 40 %, por cada 1 % adicional, el Aturdimiento provocado por la <color=#FFFFFF>réplica</color> aumenta en un 1.5 %, hasta un máximo del 75 %."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "136100001": {
+                "Title": "Ataque normal: Disparo con cañón frío",
+                "Description": "Pulsa <IconMap:Icon_Normal> para usarlo.\nEjecuta hasta cuatro disparos hacia delante. Los tres primeros disparos infligen <color=#F0D12B>daño físico</color>. El cuarto disparo inflige <color=#2EB6FF>daño eléctrico</color>."
+            },
+            "136100002": {
+                "Title": "Ataque normal: Ejecución con silenciador",
+                "Description": "Mantén pulsado <IconMap:Icon_Normal> para usarlo.\nGatillo adopta la <color=#FFFFFF>postura de francotiradora</color> y dispara continuamente hacia delante, infligiendo <color=#2EB6FF>daño eléctrico</color>.\nDurante la ráfaga de disparos, al recibir un ataque enemigo, Gatillo lo evade automáticamente. Este efecto Puede activarse un máximo de una vez cada 8 s.\nDurante la ráfaga de disparos, puedes {LAYOUT_CONSOLECONTROLLER#mover}{LAYOUT_FALLBACK#mover} el joystick para ajustar la posición de la agente hacia la izquierda, la derecha o hacia atrás.\nAl evadir automáticamente o ajustar la posición justo antes de recibir un ataque, se activa una <color=#FFFFFF>evasión perfecta</color> seguida de un contraataque cargado.\nTras soltar <IconMap:Icon_Normal>, Gatillo retrocede, prepara su arma y lanza un ataque final, abandonando la <color=#FFFFFF>postura de francotiradora</color>.\nDurante el contraataque cargado y el ataque final, la agente se vuelve invulnerable.\nAl golpear a un enemigo con una ráfaga de disparos o un contraataque cargado, Gatillo obtiene 25 ptos. de <color=#FFFFFF>purga</color>. Puede obtener hasta un máximo de 100 ptos.\nCuando golpea a un enemigo con el ataque final, se activa el <color=#FFFFFF>apoyo rápido</color> del agente anterior en el equipo. Solo se puede ejecutar un <color=#FFFFFF>apoyo rápido</color> una vez cada 25 s de esta forma."
+            },
+            "136100003": {
+                "Title": "Ataque normal: Ejecución armonizada",
+                "Description": "Cuando Gatillo tiene ptos. de <color=#FFFFFF>purga</color>, si otro agente activo del equipo golpea a un enemigo con un <color=#FFFFFF>ataque normal</color>, un <color=#FFFFFF>ataque rápido</color>, un <color=#FFFFFF>contraataque</color>, una <color=#FFFFFF>técnica especial</color> o un <color=#FFFFFF>apoyo rápido</color>, rodea al objetivo y ejecuta dos disparos rápidos consecutivos, infligiendo <color=#2EB6FF>daño eléctrico</color>.\nDurante su ejecución, consume 3 ptos. de <color=#FFFFFF>purga</color>.\nDurante su ejecución, la agente se vuelve invulnerable.\nEl <color=#FFFFFF>ataque normal: Ejecución armonizada</color> se considera una <color=#FFFFFF>réplica</color>.\nTodos los miembros del equipo pueden activar el <color=#FFFFFF>ataque normal: Ejecución armonizada</color> un máximo de 1 vez cada 3 s."
+            },
+            "136100004": {
+                "Title": "Ataque normal: Ejecución armonizada - Tártaro",
+                "Description": "Cuando Gatillo tiene ptos. de <color=#FFFFFF>purga</color>, cuando el agente activo golpea al enemigo con una <color=#FFFFFF>técnica especial EX</color>, un <color=#FFFFFF>ataque sucesivo</color> o el ataque pesado de la <color=#FFFFFF>técnica definitiva</color>, Gatillo rodea al objetivo y ejecuta tres disparos rápidos consecutivos, seguidos de un ataque final, infligiendo <color=#2EB6FF>daño eléctrico</color>.\nDurante su ejecución, consume 5 ptos. de <color=#FFFFFF>purga</color>.\nDurante su ejecución, la agente se vuelve invulnerable.\nEl <color=#FFFFFF>ataque normal: Ejecución armonizada - Tártaro</color> se considera una <color=#FFFFFF>réplica</color>.\nLas habilidades del mismo tipo solo permiten a todos los miembros del equipo activar el <color=#FFFFFF>ataque normal: Ejecución armonizada - Tártaro</color> un máximo de 2 veces cada 20 s.\nSi durante la ejecución del <color=#FFFFFF>ataque normal: Ejecución armonizada</color> se activa el <color=#FFFFFF>ataque normal: Ejecución armonizada - Tártaro</color> este último se ejecuta inmediatamente."
+            },
+            "136100016": {
+                "Title": "Ataque normal: Disparo con cañón frío"
+            },
+            "136100017": {
+                "Description": "Multiplicador de daño de 1.er golpe",
+                "Param": "{Skill:1361001, Prop:1001}"
+            },
+            "136100018": {
+                "Description": "Multiplicador de daño de 2.º golpe",
+                "Param": "{Skill:1361002, Prop:1001}"
+            },
+            "136100019": {
+                "Description": "Multiplicador de daño de 3.er golpe",
+                "Param": "{Skill:1361003, Prop:1001}"
+            },
+            "136100020": {
+                "Description": "Multiplicador de daño de 4.º golpe",
+                "Param": "{Skill:1361004, Prop:1001}"
+            },
+            "136100021": {
+                "Description": "Multiplicador de Aturdimiento de 1.er golpe",
+                "Param": "{Skill:1361001, Prop:1002}"
+            },
+            "136100022": {
+                "Description": "Multiplicador de Aturdimiento de 2.º golpe",
+                "Param": "{Skill:1361002, Prop:1002}"
+            },
+            "136100023": {
+                "Description": "Multiplicador de Aturdimiento de 3.er golpe",
+                "Param": "{Skill:1361003, Prop:1002}"
+            },
+            "136100024": {
+                "Description": "Multiplicador de Aturdimiento de 4.º golpe",
+                "Param": "{Skill:1361004, Prop:1002}"
+            },
+            "136100025": {
+                "Title": "Ataque normal: Ejecución con silenciador"
+            },
+            "136100026": {
+                "Description": "Multiplicador de daño de disparo",
+                "Param": "{Skill:1361005, Prop:1001}"
+            },
+            "136100027": {
+                "Description": "Multiplicador de daño de contraataque",
+                "Param": "{Skill:1361006, Prop:1001}"
+            },
+            "136100028": {
+                "Description": "Multiplicador de daño de golpe final",
+                "Param": "{Skill:1361007, Prop:1001}"
+            },
+            "136100029": {
+                "Description": "Multiplicador de Aturdimiento de disparo",
+                "Param": "{Skill:1361005, Prop:1002}"
+            },
+            "136100030": {
+                "Description": "Multiplicador de Aturdimiento de contraataque",
+                "Param": "{Skill:1361006, Prop:1002}"
+            },
+            "136100031": {
+                "Description": "Multiplicador de Aturdimiento de golpe final",
+                "Param": "{Skill:1361007, Prop:1002}"
+            },
+            "136100032": {
+                "Title": "Ataque normal: Ejecución armonizada"
+            },
+            "136100033": {
+                "Description": "Multiplicador de daño de disparos continuos",
+                "Param": "{Skill:1361008, Prop:1001}*2"
+            },
+            "136100034": {
+                "Description": "Multiplicador de Aturdimiento de disparos continuos",
+                "Param": "{Skill:1361008, Prop:1002}*2"
+            },
+            "136100035": {
+                "Title": "Ataque normal: Ejecución armonizada - Tártaro"
+            },
+            "136100036": {
+                "Description": "Multiplicador de daño de disparos continuos",
+                "Param": "{Skill:1361020, Prop:1001}*3"
+            },
+            "136100037": {
+                "Description": "Multiplicador de daño de golpe final",
+                "Param": "{Skill:1361022, Prop:1001}"
+            },
+            "136100038": {
+                "Description": "Multiplicador de Aturdimiento de disparos continuos",
+                "Param": "{Skill:1361020, Prop:1002}*3"
+            },
+            "136100039": {
+                "Description": "Multiplicador de Aturdimiento de golpe final",
+                "Param": "{Skill:1361022, Prop:1002}"
+            }
+        },
+        "1": {
+            "136100005": {
+                "Title": "Técnica especial: Resplandor espectral",
+                "Description": "Mantén pulsado <IconMap:Icon_Special> para usarla.\nEjecuta un corte con impulso hacia delante, infligiendo <color=#2EB6FF>daño eléctrico</color>.\nDurante su ejecución, el nivel de resistencia a interrupción aumenta."
+            },
+            "136100006": {
+                "Title": "Técnica especial EX: Resplandor sepulcral",
+                "Description": "Al contar con energía suficiente, pulsa <IconMap:Icon_SpecialReady> para usarla.\nEjecuta un corte con impulso hacia delante y, tras saltar, ejecuta un potente disparo hacia el suelo, infligiendo una gran cantidad de <color=#2EB6FF>daño eléctrico</color>.\nDurante su ejecución, la agente se vuelve invulnerable.\nAl golpear a un enemigo con esta habilidad, activa el <color=#FFFFFF>apoyo rápido</color> del personaje anterior en el equipo.\nAl golpear a un enemigo con esta habilidad, Gatillo entra en el estado de <color=#FFFFFF>asistencia coordinada</color>. En este estado, cuando otro agente activo del equipo golpea a un enemigo con cualquier ataque, activa el <color=#FFFFFF>ataque normal: Ejecución armonizada</color> sin consumir ptos. de <color=#FFFFFF>purga</color> ni verse limitado por el TdE. Este estado dura 8 s y el efecto puede activarse 4 veces. Al entrar de nuevo en el estado de <color=#FFFFFF>asistencia coordinada</color>, se extiende su duración y aumenta el número de activaciones posibles, hasta un máximo de 20 s y 10 activaciones."
+            },
+            "136100040": {
+                "Title": "Técnica especial: Resplandor espectral"
+            },
+            "136100041": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1361009, Prop:1001}"
+            },
+            "136100042": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1361009, Prop:1002}"
+            },
+            "136100043": {
+                "Title": "Técnica especial EX: Resplandor sepulcral"
+            },
+            "136100044": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1361010, Prop:1001}"
+            },
+            "136100045": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1361010, Prop:1002}"
+            },
+            "136100046": {
+                "Description": "Consumo de energía",
+                "Param": "60 ptos."
+            }
+        },
+        "2": {
+            "136100007": {
+                "Title": "Evasión: Soterramiento del ánima",
+                "Description": "Pulsa <IconMap:Icon_Evade> para usarla.\nEjecuta un rápido esprint evasivo.\nDurante su ejecución, la agente se vuelve invulnerable."
+            },
+            "136100008": {
+                "Title": "Ataque rápido: Espectro vengativo",
+                "Description": "Pulsa <IconMap:Icon_Normal> durante una evasión para usarlo.\nLevanta el arma rápidamente para ejecutar un disparo, infligiendo <color=#F0D12B>daño físico</color>."
+            },
+            "136100009": {
+                "Title": "Contraataque: Alma condenada",
+                "Description": "Pulsa <IconMap:Icon_Normal> después de una <color=#FFFFFF>evasión perfecta</color> para usarlo.\nGira y ejecuta un disparo rápido, infligiendo <color=#2EB6FF>daño eléctrico</color> contra los enemigos frente a ella.\nDurante su ejecución, la agente se vuelve invulnerable."
+            },
+            "136100047": {
+                "Title": "Ataque rápido: Espectro vengativo"
+            },
+            "136100048": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1361011, Prop:1001}"
+            },
+            "136100049": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1361011, Prop:1002}"
+            },
+            "136100050": {
+                "Title": "Contraataque: Alma condenada"
+            },
+            "136100051": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1361012, Prop:1001}"
+            },
+            "136100052": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1361012, Prop:1002}"
+            }
+        },
+        "3": {
+            "136100010": {
+                "Title": "Técnica en cadena: Barquera del río Estigia",
+                "Description": "Elige el avatar de agente correspondiente al activar una <color=#FFFFFF>técnica en cadena</color> para usarla.\nEjecuta una ráfaga de poderosos disparos hacia delante, infligiendo una gran cantidad de <color=#2EB6FF>daño eléctrico</color>.\nDurante su ejecución, la agente se vuelve invulnerable."
+            },
+            "136100011": {
+                "Title": "Técnica definitiva: Elegía del inframundo",
+                "Description": "Cuando los dB llegan a su nivel <color=#FFFFFF>máximo</color>, pulsa <IconMap:Icon_UltimateReady> para usarla.\nEjecuta un poderoso disparo contra los enemigos que hay en un área grande frente a ella, infligiendo una gran cantidad de <color=#2EB6FF>daño eléctrico</color>.\nDurante su ejecución, la agente se vuelve invulnerable.\nAl golpear a un enemigo con esta habilidad, activa el <color=#FFFFFF>apoyo rápido</color> del personaje anterior en el equipo.\nAl golpear a un enemigo con esta habilidad, Gatillo entra en el estado de <color=#FFFFFF>asistencia coordinada</color>. En este estado, cuando otro agente activo del equipo golpea a un enemigo con cualquier ataque, activa el <color=#FFFFFF>ataque normal: Ejecución armonizada</color> sin consumir ptos. de <color=#FFFFFF>purga</color> ni verse limitado por el TdE. Este estado dura 12 s y el efecto puede activarse 6 veces. Al entrar de nuevo en el estado de <color=#FFFFFF>asistencia coordinada</color>, se extiende su duración y aumenta el número de activaciones posibles, hasta un máximo de 20 s y 10 activaciones."
+            },
+            "136100053": {
+                "Title": "Técnica en cadena: Barquera del río Estigia"
+            },
+            "136100054": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1361013, Prop:1001}"
+            },
+            "136100055": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1361013, Prop:1002}"
+            },
+            "136100056": {
+                "Title": "Técnica definitiva: Elegía del inframundo"
+            },
+            "136100057": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1361014, Prop:1001}"
+            },
+            "136100058": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1361014, Prop:1002}"
+            }
+        },
+        "6": {
+            "136100013": {
+                "Title": "Apoyo rápido: Fuego de cobertura con cañón frío",
+                "Description": "Pulsa <IconMap:Icon_Switch> para usarlo cuando el agente activo sea lanzado por los aires.\nGira y ejecuta un disparo rápido contra los enemigos frente a ella, infligiendo <color=#2EB6FF>daño eléctrico</color>.\nDurante su ejecución, la agente se vuelve invulnerable."
+            },
+            "136100014": {
+                "Title": "Apoyo defensivo: Aplazamiento del óbito",
+                "Description": "Pulsa <IconMap:Icon_Switch> para usarlo cuando el agente activo esté a punto de recibir un golpe.\nBloquea el ataque enemigo, provocando una gran cantidad de Aturdimiento.\nDurante su ejecución, la agente se vuelve invulnerable."
+            },
+            "136100015": {
+                "Title": "Ataque sucesivo: Refucilo horadador",
+                "Description": "Pulsa <IconMap:Icon_Normal> después de un <color=#FFFFFF>apoyo defensivo</color> para usarlo.\nEjecuta una serie de cortes continuos contra los enemigos frente a ella y acumula fuerza al aterrizar para realizar un potente disparo adicional, infligiendo <color=#2EB6FF>daño eléctrico</color>.\nDurante su ejecución, la agente se vuelve invulnerable."
+            },
+            "136100059": {
+                "Title": "Apoyo rápido: Fuego de cobertura con cañón frío"
+            },
+            "136100060": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1361015, Prop:1001}"
+            },
+            "136100061": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1361015, Prop:1002}"
+            },
+            "136100062": {
+                "Title": "Apoyo defensivo: Aplazamiento del óbito"
+            },
+            "136100063": {
+                "Description": "Multiplicador de Aturdimiento defensivo ligero",
+                "Param": "{Skill:1361016, Prop:1002}"
+            },
+            "136100064": {
+                "Description": "Multiplicador de Aturdimiento defensivo fuerte",
+                "Param": "{Skill:1361017, Prop:1002}"
+            },
+            "136100065": {
+                "Description": "Multiplicador de Aturdimiento defensivo continuo",
+                "Param": "{Skill:1361018, Prop:1002}"
+            },
+            "136100066": {
+                "Title": "Ataque sucesivo: Refucilo horadador"
+            },
+            "136100067": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1361019, Prop:1001}"
+            },
+            "136100068": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1361019, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1361001": {
+            "DamageValue": 3450,
+            "DamageGrowth": 320,
+            "DazeValue": 1730,
+            "DazeGrowth": 80
+        },
+        "1361002": {
+            "DamageValue": 5690,
+            "DamageGrowth": 520,
+            "DazeValue": 2850,
+            "DazeGrowth": 130
+        },
+        "1361003": {
+            "DamageValue": 11090,
+            "DamageGrowth": 1010,
+            "DazeValue": 6080,
+            "DazeGrowth": 280
+        },
+        "1361004": {
+            "DamageValue": 24300,
+            "DamageGrowth": 2210,
+            "DazeValue": 17690,
+            "DazeGrowth": 810
+        },
+        "1361005": {
+            "DamageValue": 4760,
+            "DamageGrowth": 440,
+            "DazeValue": 2380,
+            "DazeGrowth": 110
+        },
+        "1361006": {
+            "DamageValue": 23390,
+            "DamageGrowth": 2130,
+            "DazeValue": 14880,
+            "DazeGrowth": 680
+        },
+        "1361007": {
+            "DamageValue": 13120,
+            "DamageGrowth": 1200,
+            "DazeValue": 6560,
+            "DazeGrowth": 300
+        },
+        "1361008": {
+            "DamageValue": 4790,
+            "DamageGrowth": 440,
+            "DazeValue": 3590,
+            "DazeGrowth": 170
+        },
+        "1361009": {
+            "DamageValue": 7150,
+            "DamageGrowth": 650,
+            "DazeValue": 7150,
+            "DazeGrowth": 330
+        },
+        "1361010": {
+            "DamageValue": 63440,
+            "DamageGrowth": 5770,
+            "DazeValue": 43270,
+            "DazeGrowth": 1970
+        },
+        "1361011": {
+            "DamageValue": 5140,
+            "DamageGrowth": 470,
+            "DazeValue": 2570,
+            "DazeGrowth": 120
+        },
+        "1361012": {
+            "DamageValue": 21970,
+            "DamageGrowth": 2000,
+            "DazeValue": 19440,
+            "DazeGrowth": 890
+        },
+        "1361013": {
+            "DamageValue": 57470,
+            "DamageGrowth": 5230,
+            "DazeValue": 13580,
+            "DazeGrowth": 620
+        },
+        "1361014": {
+            "DamageValue": 148050,
+            "DamageGrowth": 13460,
+            "DazeValue": 92200,
+            "DazeGrowth": 4200
+        },
+        "1361015": {
+            "DamageValue": 8440,
+            "DamageGrowth": 770,
+            "DazeValue": 8440,
+            "DazeGrowth": 390
+        },
+        "1361016": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1361017": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1361018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1361019": {
+            "DamageValue": 43290,
+            "DamageGrowth": 3940,
+            "DazeValue": 32740,
+            "DazeGrowth": 1490
+        },
+        "1361020": {
+            "DamageValue": 2260,
+            "DamageGrowth": 210,
+            "DazeValue": 1700,
+            "DazeGrowth": 80
+        },
+        "1361021": {
+            "DamageValue": 4790,
+            "DamageGrowth": 440,
+            "DazeValue": 3590,
+            "DazeGrowth": 170
+        },
+        "1361022": {
+            "DamageValue": 4520,
+            "DamageGrowth": 420,
+            "DazeValue": 3400,
+            "DazeGrowth": 160
+        },
+        "1361023": {
+            "DamageValue": 20000,
+            "DamageGrowth": 0,
+            "DazeValue": 12000,
+            "DazeGrowth": 0
+        },
+        "1361024": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

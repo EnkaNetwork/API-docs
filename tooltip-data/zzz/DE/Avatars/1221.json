@@ -1,0 +1,485 @@
+{
+    "Name": "Yanagi",
+    "ElementTypes": [
+        "Elec"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Kenn deinen Feind und kenn dich selbst",
+            "Description": "Wenn eine Truppenfigur einem Gegner eine Attributanomalie zufügt, erhält Yanagi 1 Stapelung <color=#FFFFFF>Klarheit</color>, hält 15 s, max. 3-fach stapelbar. Beim wiederholten Auslösen wird die Dauer aktualisiert. Wird Yanagi von einem Gegner getroffen, verbraucht sie 1 Stapelung <color=#FFFFFF>Klarheit</color> und wird 1 s lang unverwundbar. Wenn Yanagi 1 oder mehr Stapelungen <color=#FFFFFF>Klarheit</color> hat, erhöht sich ihre Anomaliekunde um 80 Pkt.",
+            "Lore": "„Die Schwächen des Gegners klar zu erkennen, bedeutet, mehr Sicherheit zu erlangen ... und die Siegeschancen zu verbessern.“\nYanagi richtet ihre Brille und ist ruhig wie eh und je, obwohl der Sieg bereits garantiert ist."
+        },
+        "2": {
+            "Title": "Erstklassige Anpassungsfähigkeit",
+            "Description": "Die durch Yanagis schnellen Stoß des <color=#FFFFFF>verstärkten Spezialangriffs</color> angehäufte <color=#2EB6FF>Elektro-Anomalieansammlung</color> erhöht sich um 20 %. Halte die Spezialangriffs-Taste gedrückt, nachdem ein Gegner vom schnellen Stoß getroffen wurde, um zusätzlich 10 Pkt. Energie zu verbrauchen und einen weiteren Stoßangriff auszuführen. Wenn die Energie unzureichend ist oder du mit dem Gedrückthalten der Taste aufhörst, wird automatisch im Anschluss ein Abwärtsangriff ausgeführt. Wenn der Abwärtsangriff einen Gegner trifft, der an einer Anomalie leidet, und den Effekt <color=#FFFFFF>Polaritätsunordnung</color> auslöst, erhöht sich der SCH-Multiplikator auf 20 % des ursprünglichen <color=#FFFFFF>Unordnungseffekts</color>. Für jeden zusätzlich ausgeführten Stoßangriff erhöht sich dieser Multiplikator zusätzlich um 15 %. Dieser zusätzliche Erhöhungseffekt des SCH-Multiplikators kann max. 2-mal ausgelöst werden.",
+            "Lore": "„Yanagi kann es mit jeglichen seltsamen Umständen aufnehmen, mit denen sie es zu tun bekommt.“\n„Ich glaube mehr an sie als an mich selbst.“\n– Eine Kämpferin, die gerade das „Schneiden fallender Blätter“ übt."
+        },
+        "3": {
+            "Title": "Management nach Tsukishiro-Art",
+            "Description": "Fähigkeitsstufe von <color=#FFFFFF>Basisangriff</color>, <color=#FFFFFF>Ausweichen</color>, <color=#FFFFFF>Hilfe</color>, <color=#FFFFFF>Spezialangriff</color> und <color=#FFFFFF>Kettenangriff</color> +2",
+            "Lore": "Alle sagen, dass Sektion 6 ein Haufen Spinner und Genies ist und dass Tsukishiro Yanagi die einzige „normalen Person“ sei.\nDoch es ist gerade ihre Anwesenheit, die die Spinner und Genies zusammenhält."
+        },
+        "4": {
+            "Title": "Schachmeisterin",
+            "Description": "Wenn Tsukishiro Yanagi einem Gegner Attributanomalie-SCH zufügt, erleidet dieser den Effekt <color=#FFFFFF>Durchschaut</color>, hält 15 s. Die Durchschlagsrate von Angriffen auf Gegner, die an dem Effekt <color=#FFFFFF>Durchschaut</color> leiden, erhöht sich um 16 %.",
+            "Lore": "Unabhängig von der Situation kann Tsukishiro Yanagi immer alle vorhandenen Informationen schnell auffassen und dementsprechend die angemessenste Entscheidung fällen."
+        },
+        "5": {
+            "Title": "Oni-„Mutter“",
+            "Description": "Fähigkeitsstufe von <color=#FFFFFF>Basisangriff</color>, <color=#FFFFFF>Ausweichen</color>, <color=#FFFFFF>Hilfe</color>, <color=#FFFFFF>Spezialangriff</color> und <color=#FFFFFF>Kettenangriff</color> +2",
+            "Lore": "Im Moment ist Tsukishiro Yanagi der einzige Vormund für Soukaku.\n„Soukaku, das ist das Reisbällchen der Leiterin, das darfst du nicht essen ... Vergiss es, komm, ich mache es für dich warm.“\n„Wir können der Leiterin später einfach ein neues kaufen ...“"
+        },
+        "6": {
+            "Title": "Nichtmenschliches Blut",
+            "Description": "Nachdem Yanagi den Stoßangriff ihres <color=#FFFFFF>verstärkten Spezialangriffs</color> ausgeführt hat, verlängert sich die Dauer des Zustands <color=#FFFFFF>Shinrabanshou</color> auf 30 s. Während der Dauer dieses Zustands wird der SCH ihres <color=#FFFFFF>verstärkten Spezialangriffs</color> um 20 % erhöht. Die max. Anzahl, wie oft der zusätzliche Erhöhungseffekt des SCH-Multiplikators von <color=#FFFFFF>Polaritätsunordnung</color> aus dem Sinnbild <color=#FFFFFF>Erstklassige Anpassungsfähigkeit</color> ausgelöst werden kann, wird auf 4 erhöht, und die Energiekosten der ersten 4 zusätzlich ausgeführten Stoßangriffe werden halbiert.",
+            "Lore": "Ein Teil des Blutes, das durch Tsukishiro Yanagis Körper fließt, ist nicht ihr eigenes.\nDieses Blut hat ihr einst nach einem Unfall neues Leben gegeben und auch bestimmte besondere Kräfte.\n„Aber wie du weißt, hat alles, was nicht wirklich mir gehört ... seinen Preis.“"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passive Kernfähigkeit: Mondfinsternis",
+            "DescriptionByLevel": {
+                "1": "Wenn Yanagi ihren <color=#FFFFFF>verstärkten Spezialangriff</color> angewendet hat und eine Truppenfigur einem Gegner <color=#FFFFFF>Unordnung</color> zufügt, erhöht sich der SCH-Multiplikator von <color=#FFFFFF>Unordnung</color> um <color=#2BAD00>125 %</color>, hält 15 s. Beim Treffen von Gegnern mit ihrem <color=#FFFFFF>verstärkten Spezialangriff</color> erhöht sich der von Yanagi beim Ziel verursachte <color=#2EB6FF>Elektro-SCH</color> um <color=#2BAD00>10 %</color>, hält 15 s.",
+                "2": "Wenn Yanagi ihren <color=#FFFFFF>verstärkten Spezialangriff</color> angewendet hat und eine Truppenfigur einem Gegner <color=#FFFFFF>Unordnung</color> zufügt, erhöht sich der SCH-Multiplikator von <color=#FFFFFF>Unordnung</color> um <color=#2BAD00>145 %</color>, hält 15 s. Beim Treffen von Gegnern mit ihrem <color=#FFFFFF>verstärkten Spezialangriff</color> erhöht sich der von Yanagi beim Ziel verursachte <color=#2EB6FF>Elektro-SCH</color> um <color=#2BAD00>11,6 %</color>, hält 15 s.",
+                "3": "Wenn Yanagi ihren <color=#FFFFFF>verstärkten Spezialangriff</color> angewendet hat und eine Truppenfigur einem Gegner <color=#FFFFFF>Unordnung</color> zufügt, erhöht sich der SCH-Multiplikator von <color=#FFFFFF>Unordnung</color> um <color=#2BAD00>166 %</color>, hält 15 s. Beim Treffen von Gegnern mit ihrem <color=#FFFFFF>verstärkten Spezialangriff</color> erhöht sich der von Yanagi beim Ziel verursachte <color=#2EB6FF>Elektro-SCH</color> um <color=#2BAD00>13,3 %</color>, hält 15 s.",
+                "4": "Wenn Yanagi ihren <color=#FFFFFF>verstärkten Spezialangriff</color> angewendet hat und eine Truppenfigur einem Gegner <color=#FFFFFF>Unordnung</color> zufügt, erhöht sich der SCH-Multiplikator von <color=#FFFFFF>Unordnung</color> um <color=#2BAD00>188 %</color>, hält 15 s. Beim Treffen von Gegnern mit ihrem <color=#FFFFFF>verstärkten Spezialangriff</color> erhöht sich der von Yanagi beim Ziel verursachte <color=#2EB6FF>Elektro-SCH</color> um <color=#2BAD00>15 %</color>, hält 15 s.",
+                "5": "Wenn Yanagi ihren <color=#FFFFFF>verstärkten Spezialangriff</color> angewendet hat und eine Truppenfigur einem Gegner <color=#FFFFFF>Unordnung</color> zufügt, erhöht sich der SCH-Multiplikator von <color=#FFFFFF>Unordnung</color> um <color=#2BAD00>208 %</color>, hält 15 s. Beim Treffen von Gegnern mit ihrem <color=#FFFFFF>verstärkten Spezialangriff</color> erhöht sich der von Yanagi beim Ziel verursachte <color=#2EB6FF>Elektro-SCH</color> um <color=#2BAD00>16,6 %</color>, hält 15 s.",
+                "6": "Wenn Yanagi ihren <color=#FFFFFF>verstärkten Spezialangriff</color> angewendet hat und eine Truppenfigur einem Gegner <color=#FFFFFF>Unordnung</color> zufügt, erhöht sich der SCH-Multiplikator von <color=#FFFFFF>Unordnung</color> um <color=#2BAD00>230 %</color>, hält 15 s. Beim Treffen von Gegnern mit ihrem <color=#FFFFFF>verstärkten Spezialangriff</color> erhöht sich der von Yanagi beim Ziel verursachte <color=#2EB6FF>Elektro-SCH</color> um <color=#2BAD00>18,3 %</color>, hält 15 s.",
+                "7": "Wenn Yanagi ihren <color=#FFFFFF>verstärkten Spezialangriff</color> angewendet hat und eine Truppenfigur einem Gegner <color=#FFFFFF>Unordnung</color> zufügt, erhöht sich der SCH-Multiplikator von <color=#FFFFFF>Unordnung</color> um <color=#2BAD00>250 %</color>, hält 15 s. Beim Treffen von Gegnern mit ihrem <color=#FFFFFF>verstärkten Spezialangriff</color> erhöht sich der von Yanagi beim Ziel verursachte <color=#2EB6FF>Elektro-SCH</color> um <color=#2BAD00>20 %</color>, hält 15 s."
+            }
+        },
+        "MathSkill": {
+            "Title": "Zusatzfähigkeit: Gessou",
+            "Description": "Wenn sich in der Truppe eine weitere <color=#FFFFFF>Anomalie</color>-Figur oder eine Figur mit demselben Attribut befindet:\nNach dem Haltungswechsel, wenn Tsukishiro Yanagi einen Gegner mit ihrem <color=#FFFFFF>Basisangriff: Tsukuyomi Kagura</color> trifft, erhöht sich die angehäufte <color=#2EB6FF>Elektro-Anomalieansammlung</color> um 45 %, hält 8 s."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "122100001": {
+                "Title": "Basisangriff: Tsukuyomi Kagura",
+                "Description": "Yanagi hat zwei Haltungen, <color=#FFFFFF>Jougen</color> und <color=#FFFFFF>Kagen</color>.\nDrücke <IconMap:Icon_Normal> zum Anwenden:\nFührt basierend auf der aktuellen Haltung bis zu fünf Hiebe nach vorn aus und verursacht <color=#F0D12B>phys. SCH</color> und <color=#2EB6FF>Elektro-SCH</color>.\nIm Kampf erhält Tsukishiro Yanagi basierend auf ihrem aktuellen Haltungstyp den entsprechenden Haltungsbonus:\nHaltungsbonus für <color=#FFFFFF>Jougen</color>: <color=#2EB6FF>Elektro-SCH</color> von Yanagi wird um 10 % erhöht. Die Stufe des Unterbrechungs-WDS wird beim Anwenden des <color=#FFFFFF>Basisangriffs</color> erhöht.\nHaltungsbonus für <color=#FFFFFF>Kagen</color>: Durchschlagsrate von Yanagi wird um 10 % erhöht. Die Unterbrechungsstufe des <color=#FFFFFF>Basisangriffs</color> wird erhöht.\nYanagi behält nach dem Haltungswechsel den Bonus der vorigen Haltung 8 s lang bei."
+            },
+            "122110001": {
+                "Title": "Haltung: Jougen"
+            },
+            "122110002": {
+                "Description": "SCH-Multiplikator des 1. Angriffs",
+                "Param": "{Skill:1221001, Prop:1001}"
+            },
+            "122110003": {
+                "Description": "SCH-Multiplikator des 2. Angriffs",
+                "Param": "{Skill:1221002, Prop:1001}"
+            },
+            "122110004": {
+                "Description": "SCH-Multiplikator des 3. Angriffs",
+                "Param": "{Skill:1221003, Prop:1001}"
+            },
+            "122110005": {
+                "Description": "SCH-Multiplikator des 4. Angriffs",
+                "Param": "{Skill:1221004, Prop:1001}"
+            },
+            "122110006": {
+                "Description": "SCH-Multiplikator des 5. Angriffs",
+                "Param": "{Skill:1221005, Prop:1001}"
+            },
+            "122110007": {
+                "Description": "Benommenheit-Multiplikator des 1. Angriffs",
+                "Param": "{Skill:1221001, Prop:1002}"
+            },
+            "122110008": {
+                "Description": "Benommenheit-Multiplikator des 2. Angriffs",
+                "Param": "{Skill:1221002, Prop:1002}"
+            },
+            "122110009": {
+                "Description": "Benommenheit-Multiplikator des 3. Angriffs",
+                "Param": "{Skill:1221003, Prop:1002}"
+            },
+            "122110010": {
+                "Description": "Benommenheit-Multiplikator des 4. Angriffs",
+                "Param": "{Skill:1221004, Prop:1002}"
+            },
+            "122110011": {
+                "Description": "Benommenheit-Multiplikator des 5. Angriffs",
+                "Param": "{Skill:1221005, Prop:1002}"
+            },
+            "122110012": {
+                "Title": "Haltung: Kagen"
+            },
+            "122110013": {
+                "Description": "SCH-Multiplikator des 1. Angriffs",
+                "Param": "{Skill:1221006, Prop:1001}"
+            },
+            "122110014": {
+                "Description": "SCH-Multiplikator des 2. Angriffs",
+                "Param": "{Skill:1221007, Prop:1001}"
+            },
+            "122110015": {
+                "Description": "SCH-Multiplikator des 3. Angriffs",
+                "Param": "{Skill:1221008, Prop:1001}"
+            },
+            "122110016": {
+                "Description": "SCH-Multiplikator des 4. Angriffs",
+                "Param": "{Skill:1221009, Prop:1001}"
+            },
+            "122110017": {
+                "Description": "SCH-Multiplikator des 5. Angriffs",
+                "Param": "{Skill:1221010, Prop:1001}"
+            },
+            "122110018": {
+                "Description": "Benommenheit-Multiplikator des 1. Angriffs",
+                "Param": "{Skill:1221006, Prop:1002}"
+            },
+            "122110019": {
+                "Description": "Benommenheit-Multiplikator des 2. Angriffs",
+                "Param": "{Skill:1221007, Prop:1002}"
+            },
+            "122110020": {
+                "Description": "Benommenheit-Multiplikator des 3. Angriffs",
+                "Param": "{Skill:1221008, Prop:1002}"
+            },
+            "122110021": {
+                "Description": "Benommenheit-Multiplikator des 4. Angriffs",
+                "Param": "{Skill:1221009, Prop:1002}"
+            },
+            "122110022": {
+                "Description": "Benommenheit-Multiplikator des 5. Angriffs",
+                "Param": "{Skill:1221010, Prop:1002}"
+            }
+        },
+        "1": {
+            "122100002": {
+                "Title": "Spezialangriff: Ruten",
+                "Description": "Drücke <IconMap:Icon_Special> zum Anwenden:\nFührt einen Hieb nach vorn aus, verursacht <color=#2EB6FF>Elektro-SCH</color> und wechselt die Haltung.\nBeim Anwenden dieser Fähigkeit erhöht sich die Stufe des Unterbrechungs-WDS.\nBeim Anwenden dieser Fähigkeit nach dem 3., 4. oder 5. Angriff des <color=#FFFFFF>Basisangriffs</color> wird <color=#FFFFFF>Schnell-Ruten</color> ausgelöst, wodurch die Figur schneller Hiebe ausführt und die aktuelle Haltung wechselt.\nBeim Anwenden von <color=#FFFFFF>Schnell-Ruten</color> können gegnerische Angriffe pariert werden.\nNachdem <color=#FFFFFF>Schnell-Ruten</color> aktiviert wurde, kann direkt im Anschluss der 3. Angriff des <color=#FFFFFF>Basisangriffs</color> in der derzeitigen Haltung ausgeführt werden."
+            },
+            "122100003": {
+                "Title": "Verstärkter Spezialangriff: Gekka Ruten",
+                "Description": "Halte bei ausreichender Energie <IconMap:Icon_SpecialReady> gedrückt zum Anwenden:\nLädt Energie auf, führt einen schnellen Stoß nach vorn und anschließend einen Abwärtsangriff aus, um hohen <color=#2EB6FF>Elektro-SCH</color> zu verursachen.\nBeim Ausführen des Stoßes wechselt Tsukishiro Yanagi die Haltung und versetzt sich in den Zustand <color=#FFFFFF>Shinrabanshou</color>, hält 15 s. Wenn, während dieser Zustand aktiv ist, nach dem 5. Angriff des <color=#FFFFFF>Basisangriffs</color> oder einer anderen Fähigkeit gleich im Anschluss ein nachfolgender <color=#FFFFFF>Basisangriff</color> ausgeführt wird, wird direkt der 3. Angriff des <color=#FFFFFF>Basisangriffs</color> ausgelöst.\nTrifft der Abwärtsangriff einen Gegner, der an einer Anomalie leidet, wird ein spezieller <color=#FFFFFF>Unordnungseffekt</color> namens <color=#FFFFFF>Polaritätsunordnung</color> ausgelöst. Dieser verursacht SCH in Höhe von 15 % des ursprünglichen <color=#FFFFFF>Unordnungseffekts</color>, wobei noch zusätzlicher SCH in Höhe von <color=#2BAD00>{CAL:5+AvatarSkillLevel(1)*2.25,100,2} %</color> von Yanagis Anomaliekunde bewirkt wird. Der Effekt <color=#FFFFFF>Polaritätsunordnung</color> entfernt den Anomaliezustand des Ziels nicht.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "122110023": {
+                "Title": "Spezialangriff: Ruten"
+            },
+            "122110024": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1221011, Prop:1001}"
+            },
+            "122110025": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1221011, Prop:1002}"
+            },
+            "122110026": {
+                "Title": "Verstärkter Spezialangriff: Gekka Ruten"
+            },
+            "122110029": {
+                "Description": "Energiekosten",
+                "Param": "40"
+            },
+            "122110053": {
+                "Description": "SCH-Multiplikator für Stoßangriffe",
+                "Param": "{Skill:1221022, Prop:1001}"
+            },
+            "122110054": {
+                "Description": "Benommenheit-Multiplikator für Stoßangriffe",
+                "Param": "{Skill:1221022, Prop:1002}"
+            },
+            "122110055": {
+                "Description": "SCH-Multiplikator für Abwärtsangriffe",
+                "Param": "{Skill:1221023, Prop:1001}"
+            },
+            "122110056": {
+                "Description": "Benommenheit-Multiplikator für Abwärtsangriffe",
+                "Param": "{Skill:1221023, Prop:1002}"
+            },
+            "122110057": {
+                "Description": "Zusätzlicher SCH-Multiplikator",
+                "Param": "{CAL:5+AvatarSkillLevel(1)*2.25,100,2} %"
+            }
+        },
+        "2": {
+            "122100004": {
+                "Title": "Ausweichen: Wandelnder Wind",
+                "Description": "Drücke <IconMap:Icon_Evade> zum Anwenden:\nEin blitzschnelles Sprintausweichen.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "122100005": {
+                "Title": "Sprintangriff: Flüchtiger Flug",
+                "Description": "Drücke beim Ausweichen <IconMap:Icon_Normal> zum Anwenden:\nFührt Hiebe nach vorn aus, die <color=#F0D12B>phys. SCH</color> verursachen."
+            },
+            "122100006": {
+                "Title": "Ausweichkonter: Rasante Vergeltung",
+                "Description": "Drücke nach Auslösen eines <color=#FFFFFF>perfekten Ausweichens</color> <IconMap:Icon_Normal> zum Anwenden:\nFührt Hiebe gegen Gegner vor sich aus und verursacht dabei <color=#2EB6FF>Elektro-SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar.\nNach Anwenden der Fähigkeit kann gleich im Anschluss der 3. Angriff des <color=#FFFFFF>Basisangriffs</color> in der derzeitigen Haltung ausgeführt werden."
+            },
+            "122110030": {
+                "Title": "Sprintangriff: Flüchtiger Flug"
+            },
+            "122110031": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1221013, Prop:1001}"
+            },
+            "122110032": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1221013, Prop:1002}"
+            },
+            "122110033": {
+                "Title": "Ausweichkonter: Rasante Vergeltung"
+            },
+            "122110034": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1221014, Prop:1001}"
+            },
+            "122110035": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1221014, Prop:1002}"
+            }
+        },
+        "3": {
+            "122100007": {
+                "Title": "Kettenangriff: Himmlische Harmonie",
+                "Description": "Wähle beim Auslösen eines <color=#FFFFFF>Kettenangriffs</color> die entsprechende Figur zum Anwenden:\nWechselt die Haltung, führt einen kraftvollen Hieb gegen Gegner vor sich aus und verursacht hohen <color=#2EB6FF>Elektro-SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar.\nNach Anwenden der Fähigkeit kann direkt im Anschluss der 3. Angriff des <color=#FFFFFF>Basisangriffs</color> in der derzeitigen Haltung ausgeführt werden."
+            },
+            "122100008": {
+                "Title": "Ultimate: Raiei Tenge",
+                "Description": "Drücke beim Erreichen der Dezibelstufe <color=#FFFFFF>Maximum</color> <IconMap:Icon_UltimateReady> zum Anwenden:\nYanagi entfesselt ihr Potenzial, um innerhalb kurzer Zeit kraftvolle Hiebe mit großer Reichweite gegen Gegner vor sich auszuführen, gefolgt von einem zusätzlichen Blitzangriff, wobei hoher <color=#2EB6FF>Elektro-SCH</color> verursacht wird.\nWenn der Blitzangriff einen von der Attributanomalie betroffenen Gegner trifft, wird ein spezieller <color=#FFFFFF>Unordnungseffekt</color> namens <color=#FFFFFF>Polaritätsunordnung</color> ausgelöst. Dieser verursacht SCH in Höhe von 15 % des ursprünglichen <color=#FFFFFF>Unordnungseffekts</color>, wobei noch zusätzlicher SCH in Höhe von <color=#2BAD00>{CAL:5+AvatarSkillLevel(3)*2.25,100,2} %</color> von Yanagis Anomaliekunde bewirkt wird. Der Effekt <color=#FFFFFF>Polaritätsunordnung</color> entfernt den Anomaliezustand des Ziels nicht.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar.\nNach Anwenden der Fähigkeit kann direkt im Anschluss der 3. Angriff des <color=#FFFFFF>Basisangriffs</color> in der derzeitigen Haltung ausgeführt werden."
+            },
+            "122110036": {
+                "Title": "Kettenangriff: Himmlische Harmonie"
+            },
+            "122110037": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1221015, Prop:1001}"
+            },
+            "122110038": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1221015, Prop:1002}"
+            },
+            "122110039": {
+                "Title": "Ultimate: Raiei Tenge"
+            },
+            "122110040": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1221016, Prop:1001}"
+            },
+            "122110041": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1221016, Prop:1002}"
+            },
+            "122110052": {
+                "Description": "Zusätzlicher SCH-Multiplikator",
+                "Param": "{CAL:5+AvatarSkillLevel(3)*2.25,100,2} %"
+            }
+        },
+        "6": {
+            "122100010": {
+                "Title": "Schnelle Hilfe: Klinge der Eleganz",
+                "Description": "Drücke, wenn die gesteuerte Figur weggeschleudert wird, <IconMap:Icon_Switch> zum Anwenden:\nFührt Hiebe gegen Gegner vor sich aus und verursacht dabei <color=#2EB6FF>Elektro-SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar.\nNach Anwenden der Fähigkeit kann gleich im Anschluss der 3. Angriff des <color=#FFFFFF>Basisangriffs</color> in der derzeitigen Haltung ausgeführt werden."
+            },
+            "122100011": {
+                "Title": "Defensivhilfe: Strahlende Umkehrung",
+                "Description": "Drücke, wenn die Figur auf dem Feld gleich angegriffen wird, <IconMap:Icon_Switch> zum Anwenden:\nWehrt gegnerische Angriffe ab und verursacht eine große Menge Benommenheit.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "122100012": {
+                "Title": "Sukzessive Hilfe: Stechende Trauerweide",
+                "Description": "Drücke nach Auslösen einer <color=#FFFFFF>Defensivhilfe</color> <IconMap:Icon_Normal> zum Anwenden:\nWechselt die Haltung und führt schnell mehrere Hiebe gegen Gegner vor sich aus, die <color=#2EB6FF>Elektro-SCH</color> verursachen.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar.\nNach Anwenden der Fähigkeit kann gleich im Anschluss der 3. Angriff des <color=#FFFFFF>Basisangriffs</color> in der derzeitigen Haltung ausgeführt werden."
+            },
+            "122110042": {
+                "Title": "Schnelle Hilfe: Klinge der Eleganz"
+            },
+            "122110043": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1221017, Prop:1001}"
+            },
+            "122110044": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1221017, Prop:1002}"
+            },
+            "122110045": {
+                "Title": "Defensivhilfe: Strahlende Umkehrung"
+            },
+            "122110046": {
+                "Description": "Benommenheit-Multiplikator für leichte Defensive",
+                "Param": "{Skill:1221018, Prop:1002}"
+            },
+            "122110047": {
+                "Description": "Benommenheit-Multiplikator für schwere Defensive",
+                "Param": "{Skill:1221019, Prop:1002}"
+            },
+            "122110048": {
+                "Description": "Benommenheit-Multiplikator für Kettendefensive",
+                "Param": "{Skill:1221020, Prop:1002}"
+            },
+            "122110049": {
+                "Title": "Sukzessive Hilfe: Stechende Trauerweide"
+            },
+            "122110050": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1221021, Prop:1001}"
+            },
+            "122110051": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1221021, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1221001": {
+            "DamageValue": 5660,
+            "DamageGrowth": 520,
+            "DazeValue": 2780,
+            "DazeGrowth": 130
+        },
+        "1221002": {
+            "DamageValue": 9970,
+            "DamageGrowth": 910,
+            "DazeValue": 6810,
+            "DazeGrowth": 310
+        },
+        "1221003": {
+            "DamageValue": 11310,
+            "DamageGrowth": 1030,
+            "DazeValue": 6940,
+            "DazeGrowth": 320
+        },
+        "1221004": {
+            "DamageValue": 12660,
+            "DamageGrowth": 1160,
+            "DazeValue": 7760,
+            "DazeGrowth": 360
+        },
+        "1221005": {
+            "DamageValue": 23690,
+            "DamageGrowth": 2160,
+            "DazeValue": 14520,
+            "DazeGrowth": 660
+        },
+        "1221006": {
+            "DamageValue": 11310,
+            "DamageGrowth": 1030,
+            "DazeValue": 5550,
+            "DazeGrowth": 260
+        },
+        "1221007": {
+            "DamageValue": 12920,
+            "DamageGrowth": 1180,
+            "DazeValue": 9310,
+            "DazeGrowth": 430
+        },
+        "1221008": {
+            "DamageValue": 7280,
+            "DamageGrowth": 670,
+            "DazeValue": 4460,
+            "DazeGrowth": 210
+        },
+        "1221009": {
+            "DamageValue": 10770,
+            "DamageGrowth": 980,
+            "DazeValue": 6610,
+            "DazeGrowth": 310
+        },
+        "1221010": {
+            "DamageValue": 27180,
+            "DamageGrowth": 2480,
+            "DazeValue": 16670,
+            "DazeGrowth": 760
+        },
+        "1221011": {
+            "DamageValue": 11740,
+            "DamageGrowth": 1070,
+            "DazeValue": 10570,
+            "DazeGrowth": 490
+        },
+        "1221012": {
+            "DamageValue": 62330,
+            "DamageGrowth": 5670,
+            "DazeValue": 51330,
+            "DazeGrowth": 2340
+        },
+        "1221013": {
+            "DamageValue": 5040,
+            "DamageGrowth": 460,
+            "DazeValue": 4540,
+            "DazeGrowth": 210
+        },
+        "1221014": {
+            "DamageValue": 23160,
+            "DamageGrowth": 2110,
+            "DazeValue": 18320,
+            "DazeGrowth": 840
+        },
+        "1221015": {
+            "DamageValue": 59310,
+            "DamageGrowth": 5400,
+            "DazeValue": 17830,
+            "DazeGrowth": 820
+        },
+        "1221016": {
+            "DamageValue": 151180,
+            "DamageGrowth": 13750,
+            "DazeValue": 9750,
+            "DazeGrowth": 450
+        },
+        "1221017": {
+            "DamageValue": 9360,
+            "DamageGrowth": 860,
+            "DazeValue": 8420,
+            "DazeGrowth": 390
+        },
+        "1221018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 24420,
+            "DazeGrowth": 1110
+        },
+        "1221019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 30860,
+            "DazeGrowth": 1410
+        },
+        "1221020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15020,
+            "DazeGrowth": 690
+        },
+        "1221021": {
+            "DamageValue": 40710,
+            "DamageGrowth": 3710,
+            "DazeValue": 32060,
+            "DazeGrowth": 1460
+        },
+        "1221022": {
+            "DamageValue": 16380,
+            "DamageGrowth": 1490,
+            "DazeValue": 12710,
+            "DazeGrowth": 580
+        },
+        "1221023": {
+            "DamageValue": 37780,
+            "DamageGrowth": 3440,
+            "DazeValue": 10960,
+            "DazeGrowth": 500
+        },
+        "1221024": {
+            "DamageValue": 4770,
+            "DamageGrowth": 440,
+            "DazeValue": 1890,
+            "DazeGrowth": 90
+        },
+        "1221025": {
+            "DamageValue": 22600,
+            "DamageGrowth": 2060,
+            "DazeValue": 5730,
+            "DazeGrowth": 270
+        },
+        "1221026": {
+            "DamageValue": 37780,
+            "DamageGrowth": 3440,
+            "DazeValue": 10960,
+            "DazeGrowth": 500
+        },
+        "1221027": {
+            "DamageValue": 144000,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

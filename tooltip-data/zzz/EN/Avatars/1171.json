@@ -1,0 +1,490 @@
+{
+    "Name": "Burnice",
+    "ElementTypes": [
+        "Fire"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Kindred Flames",
+            "Description": "Increases the limit of <color=#FFFFFF>Heat</color> from 100 to 140. Upon entering the battlefield, Burnice accumulates an additional 40 <color=#FFFFFF>Heat</color>. Increases the DMG Multiplier of the <color=#FFFFFF>Afterburn</color> effect by 100% of Burnice's ATK. Additionally, the accumulated <color=#FF5521>Fire Anomaly Buildup</color> from the <color=#FFFFFF>Afterburn</color> effect is increased by 25%.",
+            "Lore": "\"Everyone has rough times; it's perfectly normal!\"\n\"Cheer up, Caesar! How about a Nitro-Fuel special? I added a ton of sugar!\""
+        },
+        "2": {
+            "Title": "Extra at No Additional Charge",
+            "Description": "When triggering the <color=#FFFFFF>Afterburn</color> effect, <color=#FFFFFF>Thermal Penetration</color> is applied to the enemy, stacking up to 5 times and lasting 6s. Repeated triggers reset the duration. When any allied unit in the squad hits the enemy, the attack's PEN Ratio is increased by 4% for each stack of <color=#FFFFFF>Thermal Penetration</color>, up to a max of 20%.",
+            "Lore": "As the mixologist for the Sons of Calydon, Burnice takes great pleasure in crafting the best Nitro-Fuel drinks in New Eridu for her friends.\nOf course, if you happen to be her enemy... you might have the opportunity to try a new and unique flavor too.\n\"It's a once-in-a-lifetime, absolutely exquisite taste!\""
+        },
+        "3": {
+            "Title": "Optimistic by Nature",
+            "Description": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2",
+            "Lore": "\"That Burnice, she's always so full of energy! Even right after waking up! I have no idea where she gets all that energy...\"\n\"What's even scarier is that she can get everyone around her to be just as enthusiastic! It's almost like she's some kind of monster!\"\n\"But... I don't really dislike it, to be honest...\"\n— From a boar manager who wishes to remain unnamed"
+        },
+        "4": {
+            "Title": "Ultimate Fuel Supply",
+            "Description": "When an <color=#FFFFFF>EX Special Attack</color> or <color=#FFFFFF>Assist Attack</color> hits an enemy, the move's CRIT Rate increases by 30%. The max flame spray duration of <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color> is increased by 1s.",
+            "Lore": "\"You like the drink I mixed? Thanks! Steeltusk likes them too~ That guy can drink 200 liters in one go!\"\n\"Oh, Steeltusk is our big truck!\"\n\"Wanna try some of its special fuel? It's pretty fiery~\""
+        },
+        "5": {
+            "Title": "Dance of Fire and Ice",
+            "Description": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2",
+            "Lore": "When mixing drinks, ice is a crucial element.\nWithout an intense chill, the intense heat just doesn't stand out.\n\"That fusion of fire and ice~ It's truly captivating!\""
+        },
+        "6": {
+            "Title": "Burning Invitation",
+            "Description": "When Burnice hits an enemy with <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>, it triggers an additional special <color=#FFFFFF>Afterburn</color> effect, dealing 60% of Burnice's ATK as <color=#FF5521>Fire DMG</color> to the target. This effect can trigger once every 0.5s and does not consume <color=#FFFFFF>Heat</color>. After hitting an enemy with <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>, while the move is active, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>, special <color=#FFFFFF>Afterburn</color> effects, and <color=#FF5521>Burn</color> effects will ignore 25% of the target's <color=#FF5521>Fire RES</color>. When <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>'s fire blast hits an enemy, if that enemy is <color=#FF5521>Burned</color>, trigger an additional instance of <color=#FF5521>Burn</color> DMG equal to 1,800% of the original DMG. This effect can trigger once every 20s for each target.",
+            "Lore": "It seems like no one has ever seen Burnice truly angry.\n\"Trust me, you don't want to see it.\"\n— From a driver getting ready to sleep atop Steeltusk"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Core Passive: Nitro-Fuel Cocktail",
+            "DescriptionByLevel": {
+                "1": "When Burnice expends Energy, she accumulates <color=#FFFFFF>Heat</color>, up to a max of 100. She gains 1.4 <color=#FFFFFF>Heat</color> for each 1 point of Energy consumed. At 50 <color=#FFFFFF>Heat</color>, she enters the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state until all <color=#FFFFFF>Heat</color> is expended. Upon entering the battlefield, Burnice instantly accumulates 100 <color=#FFFFFF>Heat</color>.\nWhile in the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state, when Burnice hits an enemy with a <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>, <color=#FFFFFF>Chain Attack: Fuel-Fed Flame</color>, or <color=#FFFFFF>Ultimate: Glorious Inferno</color>, she applies the <color=#FFFFFF>Scorched</color> effect to the target until she exits the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state. When other squad members hit enemies under the <color=#FFFFFF>Scorched</color> status, it triggers the <color=#FFFFFF>Afterburn</color> effect, expending 8 <color=#FFFFFF>Heat</color> to deal <color=#FF5521>Fire DMG</color> equal to <color=#2BAD00>175%</color> of Burnice's ATK and accumulate <color=#FF5521>Fire Anomaly Buildup</color>. This effect can trigger once every 1.5s. For every 10 Anomaly Proficiency, <color=#FFFFFF>Afterburn</color> DMG increases by 1%, up to a max of 30%. DMG from the <color=#FFFFFF>Afterburn</color> effect is considered <color=#FFFFFF>Assist Attack</color> DMG.",
+                "2": "When Burnice expends Energy, she accumulates <color=#FFFFFF>Heat</color>, up to a max of 100. She gains 1.4 <color=#FFFFFF>Heat</color> for each 1 point of Energy consumed. At 50 <color=#FFFFFF>Heat</color>, she enters the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state until all <color=#FFFFFF>Heat</color> is expended. Upon entering the battlefield, Burnice instantly accumulates 100 <color=#FFFFFF>Heat</color>.\nWhile in the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state, when Burnice hits an enemy with a <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>, <color=#FFFFFF>Chain Attack: Fuel-Fed Flame</color>, or <color=#FFFFFF>Ultimate: Glorious Inferno</color>, she applies the <color=#FFFFFF>Scorched</color> effect to the target until she exits the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state. When other squad members hit enemies under the <color=#FFFFFF>Scorched</color> status, it triggers the <color=#FFFFFF>Afterburn</color> effect, expending 8 <color=#FFFFFF>Heat</color> to deal <color=#FF5521>Fire DMG</color> equal to <color=#2BAD00>205%</color> of Burnice's ATK and accumulate <color=#FF5521>Fire Anomaly Buildup</color>. This effect can trigger once every 1.5s. For every 10 Anomaly Proficiency, <color=#FFFFFF>Afterburn</color> DMG increases by 1%, up to a max of 30%. DMG from the <color=#FFFFFF>Afterburn</color> effect is considered <color=#FFFFFF>Assist Attack</color> DMG.",
+                "3": "When Burnice expends Energy, she accumulates <color=#FFFFFF>Heat</color>, up to a max of 100. She gains 1.4 <color=#FFFFFF>Heat</color> for each 1 point of Energy consumed. At 50 <color=#FFFFFF>Heat</color>, she enters the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state until all <color=#FFFFFF>Heat</color> is expended. Upon entering the battlefield, Burnice instantly accumulates 100 <color=#FFFFFF>Heat</color>.\nWhile in the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state, when Burnice hits an enemy with a <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>, <color=#FFFFFF>Chain Attack: Fuel-Fed Flame</color>, or <color=#FFFFFF>Ultimate: Glorious Inferno</color>, she applies the <color=#FFFFFF>Scorched</color> effect to the target until she exits the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state. When other squad members hit enemies under the <color=#FFFFFF>Scorched</color> status, it triggers the <color=#FFFFFF>Afterburn</color> effect, expending 8 <color=#FFFFFF>Heat</color> to deal <color=#FF5521>Fire DMG</color> equal to <color=#2BAD00>235%</color> of Burnice's ATK and accumulate <color=#FF5521>Fire Anomaly Buildup</color>. This effect can trigger once every 1.5s. For every 10 Anomaly Proficiency, <color=#FFFFFF>Afterburn</color> DMG increases by 1%, up to a max of 30%. DMG from the <color=#FFFFFF>Afterburn</color> effect is considered <color=#FFFFFF>Assist Attack</color> DMG.",
+                "4": "When Burnice expends Energy, she accumulates <color=#FFFFFF>Heat</color>, up to a max of 100. She gains 1.4 <color=#FFFFFF>Heat</color> for each 1 point of Energy consumed. At 50 <color=#FFFFFF>Heat</color>, she enters the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state until all <color=#FFFFFF>Heat</color> is expended. Upon entering the battlefield, Burnice instantly accumulates 100 <color=#FFFFFF>Heat</color>.\nWhile in the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state, when Burnice hits an enemy with a <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>, <color=#FFFFFF>Chain Attack: Fuel-Fed Flame</color>, or <color=#FFFFFF>Ultimate: Glorious Inferno</color>, she applies the <color=#FFFFFF>Scorched</color> effect to the target until she exits the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state. When other squad members hit enemies under the <color=#FFFFFF>Scorched</color> status, it triggers the <color=#FFFFFF>Afterburn</color> effect, expending 8 <color=#FFFFFF>Heat</color> to deal <color=#FF5521>Fire DMG</color> equal to <color=#2BAD00>262%</color> of Burnice's ATK and accumulate <color=#FF5521>Fire Anomaly Buildup</color>. This effect can trigger once every 1.5s. For every 10 Anomaly Proficiency, <color=#FFFFFF>Afterburn</color> DMG increases by 1%, up to a max of 30%. DMG from the <color=#FFFFFF>Afterburn</color> effect is considered <color=#FFFFFF>Assist Attack</color> DMG.",
+                "5": "When Burnice expends Energy, she accumulates <color=#FFFFFF>Heat</color>, up to a max of 100. She gains 1.4 <color=#FFFFFF>Heat</color> for each 1 point of Energy consumed. At 50 <color=#FFFFFF>Heat</color>, she enters the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state until all <color=#FFFFFF>Heat</color> is expended. Upon entering the battlefield, Burnice instantly accumulates 100 <color=#FFFFFF>Heat</color>.\nWhile in the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state, when Burnice hits an enemy with a <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>, <color=#FFFFFF>Chain Attack: Fuel-Fed Flame</color>, or <color=#FFFFFF>Ultimate: Glorious Inferno</color>, she applies the <color=#FFFFFF>Scorched</color> effect to the target until she exits the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state. When other squad members hit enemies under the <color=#FFFFFF>Scorched</color> status, it triggers the <color=#FFFFFF>Afterburn</color> effect, expending 8 <color=#FFFFFF>Heat</color> to deal <color=#FF5521>Fire DMG</color> equal to <color=#2BAD00>290%</color> of Burnice's ATK and accumulate <color=#FF5521>Fire Anomaly Buildup</color>. This effect can trigger once every 1.5s. For every 10 Anomaly Proficiency, <color=#FFFFFF>Afterburn</color> DMG increases by 1%, up to a max of 30%. DMG from the <color=#FFFFFF>Afterburn</color> effect is considered <color=#FFFFFF>Assist Attack</color> DMG.",
+                "6": "When Burnice expends Energy, she accumulates <color=#FFFFFF>Heat</color>, up to a max of 100. She gains 1.4 <color=#FFFFFF>Heat</color> for each 1 point of Energy consumed. At 50 <color=#FFFFFF>Heat</color>, she enters the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state until all <color=#FFFFFF>Heat</color> is expended. Upon entering the battlefield, Burnice instantly accumulates 100 <color=#FFFFFF>Heat</color>.\nWhile in the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state, when Burnice hits an enemy with a <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>, <color=#FFFFFF>Chain Attack: Fuel-Fed Flame</color>, or <color=#FFFFFF>Ultimate: Glorious Inferno</color>, she applies the <color=#FFFFFF>Scorched</color> effect to the target until she exits the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state. When other squad members hit enemies under the <color=#FFFFFF>Scorched</color> status, it triggers the <color=#FFFFFF>Afterburn</color> effect, expending 8 <color=#FFFFFF>Heat</color> to deal <color=#FF5521>Fire DMG</color> equal to <color=#2BAD00>320%</color> of Burnice's ATK and accumulate <color=#FF5521>Fire Anomaly Buildup</color>. This effect can trigger once every 1.5s. For every 10 Anomaly Proficiency, <color=#FFFFFF>Afterburn</color> DMG increases by 1%, up to a max of 30%. DMG from the <color=#FFFFFF>Afterburn</color> effect is considered <color=#FFFFFF>Assist Attack</color> DMG.",
+                "7": "When Burnice expends Energy, she accumulates <color=#FFFFFF>Heat</color>, up to a max of 100. She gains 1.4 <color=#FFFFFF>Heat</color> for each 1 point of Energy consumed. At 50 <color=#FFFFFF>Heat</color>, she enters the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state until all <color=#FFFFFF>Heat</color> is expended. Upon entering the battlefield, Burnice instantly accumulates 100 <color=#FFFFFF>Heat</color>.\nWhile in the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state, when Burnice hits an enemy with a <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>, <color=#FFFFFF>Chain Attack: Fuel-Fed Flame</color>, or <color=#FFFFFF>Ultimate: Glorious Inferno</color>, she applies the <color=#FFFFFF>Scorched</color> effect to the target until she exits the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state. When other squad members hit enemies under the <color=#FFFFFF>Scorched</color> status, it triggers the <color=#FFFFFF>Afterburn</color> effect, expending 8 <color=#FFFFFF>Heat</color> to deal <color=#FF5521>Fire DMG</color> equal to <color=#2BAD00>350%</color> of Burnice's ATK and accumulate <color=#FF5521>Fire Anomaly Buildup</color>. This effect can trigger once every 1.5s. For every 10 Anomaly Proficiency, <color=#FFFFFF>Afterburn</color> DMG increases by 1%, up to a max of 30%. DMG from the <color=#FFFFFF>Afterburn</color> effect is considered <color=#FFFFFF>Assist Attack</color> DMG."
+            }
+        },
+        "MathSkill": {
+            "Title": "Additional Ability: Fire Kindling",
+            "Description": "When another character in your squad is an <color=#FFFFFF>Anomaly</color> character or shares the same Faction:\nWhen Burnice's <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color> or <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color> hits an enemy, or when the <color=#FFFFFF>Afterburn</color> effect is triggered, the move's accumulated <color=#FF5521>Fire Anomaly Buildup</color> increases by 65%. When any squad member applies the <color=#FF5521>Burn</color> effect to an enemy, the duration of that effect is extended by 3s."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "117100001": {
+                "Title": "Basic Attack: Direct Flame Blend",
+                "Description": "Press <IconMap:Icon_Normal> to activate:\nUnleashes up to 5 attacks in front, dealing <color=#F0D12B>Physical DMG</color> and <color=#FF5521>Fire DMG</color>."
+            },
+            "117100002": {
+                "Title": "Basic Attack: Mixed Flame Blend",
+                "Description": "In the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state, hold <IconMap:Icon_Normal> to activate:\nSpin continuously while spraying flames around, followed by a Finishing Move that inflicts <color=#FF5521>Fire DMG</color>. Continuing to hold extends the flame-spraying duration.\nWhen the move is activated, it consumes 20 <color=#FFFFFF>Heat</color>;\nAnti-Interrupt level is increased while using this skill.\nAfter executing the Finishing Move, press <IconMap:Icon_SpecialReady> to immediately follow up with <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>."
+            },
+            "117100015": {
+                "Title": "Basic Attack: Direct Flame Blend"
+            },
+            "117100016": {
+                "Description": "1st-Hit DMG Multiplier",
+                "Param": "{Skill:1171001, Prop:1001}"
+            },
+            "117100017": {
+                "Description": "2nd-Hit DMG Multiplier",
+                "Param": "{Skill:1171002, Prop:1001}"
+            },
+            "117100018": {
+                "Description": "3rd-Hit DMG Multiplier",
+                "Param": "{Skill:1171003, Prop:1001}"
+            },
+            "117100019": {
+                "Description": "4th-Hit DMG Multiplier",
+                "Param": "{Skill:1171004, Prop:1001}"
+            },
+            "117100020": {
+                "Description": "5th-Hit DMG Multiplier",
+                "Param": "{Skill:1171005, Prop:1001}"
+            },
+            "117100021": {
+                "Description": "1st-Hit Daze Multiplier",
+                "Param": "{Skill:1171001, Prop:1002}"
+            },
+            "117100022": {
+                "Description": "2nd-Hit Daze Multiplier",
+                "Param": "{Skill:1171002, Prop:1002}"
+            },
+            "117100023": {
+                "Description": "3rd-Hit Daze Multiplier",
+                "Param": "{Skill:1171003, Prop:1002}"
+            },
+            "117100024": {
+                "Description": "4th-Hit Daze Multiplier",
+                "Param": "{Skill:1171004, Prop:1002}"
+            },
+            "117100025": {
+                "Description": "5th-Hit Daze Multiplier",
+                "Param": "{Skill:1171005, Prop:1002}"
+            },
+            "117100026": {
+                "Title": "Basic Attack: Mixed Flame Blend"
+            },
+            "117100027": {
+                "Description": "Continuous Spray DMG Multiplier",
+                "Param": "{Skill:1171006, Prop:1001}"
+            },
+            "117100028": {
+                "Description": "Finishing Move DMG Multiplier",
+                "Param": "{Skill:1171007, Prop:1001}"
+            },
+            "117100029": {
+                "Description": "Continuous Spray Daze Multiplier",
+                "Param": "{Skill:1171006, Prop:1002}"
+            },
+            "117100030": {
+                "Description": "Finishing Move Daze Multiplier",
+                "Param": "{Skill:1171007, Prop:1002}"
+            }
+        },
+        "1": {
+            "117100003": {
+                "Title": "Special Attack: Intense Heat Aging Method",
+                "Description": "Press <IconMap:Icon_Special> to activate:\nUnleash a fire blast forward, inflicting <color=#FF5521>Fire DMG</color>;\nPress and hold <IconMap:Icon_Special> to charge, boosting the move's power.\nAnti-Interrupt level is increased while using this skill."
+            },
+            "117100004": {
+                "Title": "EX Special Attack: Intense Heat Stirring Method",
+                "Description": "With enough energy, press <IconMap:Icon_SpecialReady> to activate:\nContinuously spray flames with a one-handed flamethrower, then release a fire blast in a straight line ahead, dealing massive <color=#FF5521>Fire DMG</color>. Continue holding to steadily consume energy and extend the spray's duration.\nWhile continuously spraying, drag the {LAYOUT_CONSOLECONTROLLER#stick}{LAYOUT_FALLBACK#joystick} to execute a sidestep dodge, adjusting your position in the corresponding direction.\nAnti-Interrupt Level is increased while continuously spraying, and DMG taken is reduced by 40%.\nCharacter is invulnerable during sidestep dodge and fire blast."
+            },
+            "117100005": {
+                "Title": "EX Special Attack: Intense Heat Stirring Method - Double Shot",
+                "Description": "While using <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color>, with enough Energy, press <IconMap:Icon_SpecialReady> to activate:\nUse both flamethrowers to continuously spray flames, followed by a fire blast in a front line, dealing massive <color=#FF5521>Fire DMG</color>. Keep holding to continue consuming Energy and extend the spray's duration.\nCharacter is invulnerable during the moment the spray is activated and during the activation of the fire blast.\nAnti-Interrupt Level is increased while spraying, and DMG received is reduced by 40%."
+            },
+            "117100031": {
+                "Title": "Special Attack: Intense Heat Aging Method"
+            },
+            "117100032": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1171008, Prop:1001}"
+            },
+            "117100033": {
+                "Description": "Charged Attack DMG Multiplier",
+                "Param": "{Skill:1171009, Prop:1001}"
+            },
+            "117100034": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1171008, Prop:1002}"
+            },
+            "117100035": {
+                "Description": "Charged Daze Multiplier",
+                "Param": "{Skill:1171009, Prop:1002}"
+            },
+            "117100036": {
+                "Title": "EX Special Attack: Intense Heat Stirring Method"
+            },
+            "117100037": {
+                "Description": "Continuous Spray DMG Multiplier",
+                "Param": "{Skill:1171010, Prop:1001}"
+            },
+            "117100038": {
+                "Description": "Continuous Spray Daze Multiplier",
+                "Param": "{Skill:1171010, Prop:1002}"
+            },
+            "117100039": {
+                "Description": "Fire Blast DMG Multiplier",
+                "Param": "{Skill:1171011, Prop:1001}"
+            },
+            "117100040": {
+                "Description": "Fire Blast Daze Multiplier",
+                "Param": "{Skill:1171011, Prop:1002}"
+            },
+            "117100041": {
+                "Description": "Energy Cost to Use",
+                "Param": "40"
+            },
+            "117100042": {
+                "Description": "Continuous Spray Energy Cost",
+                "Param": "12.5/s"
+            },
+            "117100043": {
+                "Description": "Fire Blast Energy Cost",
+                "Param": "5"
+            },
+            "117100044": {
+                "Title": "EX Special Attack: Intense Heat Stirring Method - Double Shot"
+            },
+            "117100045": {
+                "Description": "Continuous Spray DMG Multiplier",
+                "Param": "{Skill:1171012, Prop:1001}"
+            },
+            "117100046": {
+                "Description": "Continuous Spray Daze Multiplier",
+                "Param": "{Skill:1171012, Prop:1002}"
+            },
+            "117100047": {
+                "Description": "Fire Blast DMG Multiplier",
+                "Param": "{Skill:1171013, Prop:1001}"
+            },
+            "117100048": {
+                "Description": "Fire Blast Daze Multiplier",
+                "Param": "{Skill:1171013, Prop:1002}"
+            },
+            "117100049": {
+                "Description": "Energy Cost to Use",
+                "Param": "10"
+            },
+            "117100050": {
+                "Description": "Continuous Spray Energy Cost",
+                "Param": "25/s"
+            },
+            "117100051": {
+                "Description": "Fire Blast Energy Cost",
+                "Param": "10"
+            }
+        },
+        "2": {
+            "117100006": {
+                "Title": "Dodge: Fiery Phantom Dash",
+                "Description": "Press <IconMap:Icon_Evade> to activate:\nA quick dash dodge.\nCharacter is invulnerable while using this skill."
+            },
+            "117100007": {
+                "Title": "Dash Attack: Dangerous Fermentation",
+                "Description": "Press <IconMap:Icon_Normal> during a dodge to activate:\nPerform a forward rush attack with the flamethrower, dealing <color=#FF5521>Fire DMG</color>."
+            },
+            "117100008": {
+                "Title": "Dodge Counter: Fluttering Steps",
+                "Description": "Press <IconMap:Icon_Normal> during a <color=#FFFFFF>Perfect Dodge</color> to activate:\nLaunch a series of attacks on enemies in front while spraying flames, dealing <color=#F0D12B>Physical DMG</color> and <color=#FF5521>Fire DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "117100052": {
+                "Title": "Dash Attack: Dangerous Fermentation"
+            },
+            "117100053": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1171014, Prop:1001}"
+            },
+            "117100054": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1171014, Prop:1002}"
+            },
+            "117100055": {
+                "Title": "Dodge Counter: Fluttering Steps"
+            },
+            "117100056": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1171015, Prop:1001}"
+            },
+            "117100057": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1171015, Prop:1002}"
+            }
+        },
+        "3": {
+            "117100009": {
+                "Title": "Chain Attack: Fuel-Fed Flame",
+                "Description": "When a <color=#FFFFFF>Chain Attack</color> is triggered, select the character to activate:\nQuickly dash forward while spraying flames in all directions, then launch a fire blast in a fan-shaped area ahead, dealing massive <color=#FF5521>Fire DMG</color>.\nCharacter is invulnerable while using this skill.\nAfter using the skill, press <IconMap:Icon_SpecialReady> to immediately follow up with <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>."
+            },
+            "117100010": {
+                "Title": "Ultimate: Glorious Inferno",
+                "Description": "When Decibel Rating is at <color=#FFFFFF>Maximum</color>, press <IconMap:Icon_UltimateReady> to activate:\nDash forward quickly, then leap into the air and continuously spray flames over a wide area ahead, dealing massive <color=#FF5521>Fire DMG</color>.\nWhen leaping into the air, a <color=#FFFFFF>Quick Assist</color> will be triggered. If the <color=#FFFFFF>Quick Assist</color> is activated, Burnice will extend the duration of her flame spray.\nUpon activation, recover 50 <color=#FFFFFF>Heat</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "117100058": {
+                "Title": "Chain Attack: Fuel-Fed Flame"
+            },
+            "117100059": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1171016, Prop:1001}"
+            },
+            "117100060": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1171016, Prop:1002}"
+            },
+            "117100061": {
+                "Title": "Ultimate: Glorious Inferno"
+            },
+            "117100062": {
+                "Description": "Maximum DMG Multiplier",
+                "Param": "{Skill:1171017, Prop:1001}"
+            },
+            "117100063": {
+                "Description": "Maximum Daze Multiplier",
+                "Param": "{Skill:1171017, Prop:1002}"
+            }
+        },
+        "6": {
+            "117100012": {
+                "Title": "Quick Assist: Energizing Specialty Drink",
+                "Description": "When the active character is launched, press <IconMap:Icon_Switch> to activate:\nUnleash a flurry of attacks on enemies in front while spraying flames, dealing <color=#F0D12B>Physical DMG</color> and <color=#FF5521>Fire DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "117100013": {
+                "Title": "Defensive Assist: Smoky Cauldron",
+                "Description": "When the character on field is about to be attacked, press <IconMap:Icon_Switch> to activate:\nParries the enemy's attack, dealing massive Daze.\nCharacter is invulnerable while using this skill."
+            },
+            "117100014": {
+                "Title": "Assist Follow-Up: Scorching Dew",
+                "Description": "Press <IconMap:Icon_Normal> after a <color=#FFFFFF>Defensive Assist</color> to activate:\nLeap into the air and quickly spin forward while spraying flames in all directions, dealing <color=#FF5521>Fire DMG</color>.\nCharacter is invulnerable while using this skill.\nAfter using the skill, press <IconMap:Icon_SpecialReady> to immediately follow up with <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>."
+            },
+            "117100064": {
+                "Title": "Quick Assist: Energizing Specialty Drink"
+            },
+            "117100065": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1171018, Prop:1001}"
+            },
+            "117100066": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1171018, Prop:1002}"
+            },
+            "117100067": {
+                "Title": "Defensive Assist: Smoky Cauldron"
+            },
+            "117100068": {
+                "Description": "Light Defensive Daze Multiplier",
+                "Param": "{Skill:1171019, Prop:1002}"
+            },
+            "117100069": {
+                "Description": "Heavy Defensive Daze Multiplier",
+                "Param": "{Skill:1171020, Prop:1002}"
+            },
+            "117100070": {
+                "Description": "Chain Defensive Daze Multiplier",
+                "Param": "{Skill:1171021, Prop:1002}"
+            },
+            "117100071": {
+                "Title": "Assist Follow-Up: Scorching Dew"
+            },
+            "117100072": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1171022, Prop:1001}"
+            },
+            "117100073": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1171022, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1171001": {
+            "DamageValue": 4480,
+            "DamageGrowth": 410,
+            "DazeValue": 1870,
+            "DazeGrowth": 90
+        },
+        "1171002": {
+            "DamageValue": 4350,
+            "DamageGrowth": 400,
+            "DazeValue": 3080,
+            "DazeGrowth": 140
+        },
+        "1171003": {
+            "DamageValue": 7170,
+            "DamageGrowth": 660,
+            "DazeValue": 4780,
+            "DazeGrowth": 220
+        },
+        "1171004": {
+            "DamageValue": 6660,
+            "DamageGrowth": 610,
+            "DazeValue": 3040,
+            "DazeGrowth": 140
+        },
+        "1171005": {
+            "DamageValue": 9630,
+            "DamageGrowth": 880,
+            "DazeValue": 5200,
+            "DazeGrowth": 240
+        },
+        "1171006": {
+            "DamageValue": 12540,
+            "DamageGrowth": 1140,
+            "DazeValue": 9650,
+            "DazeGrowth": 440
+        },
+        "1171007": {
+            "DamageValue": 23280,
+            "DamageGrowth": 2120,
+            "DazeValue": 17910,
+            "DazeGrowth": 820
+        },
+        "1171008": {
+            "DamageValue": 5780,
+            "DamageGrowth": 530,
+            "DazeValue": 5780,
+            "DazeGrowth": 270
+        },
+        "1171009": {
+            "DamageValue": 6240,
+            "DamageGrowth": 570,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1171010": {
+            "DamageValue": 54380,
+            "DamageGrowth": 4950,
+            "DazeValue": 37860,
+            "DazeGrowth": 1730
+        },
+        "1171011": {
+            "DamageValue": 9670,
+            "DamageGrowth": 880,
+            "DazeValue": 6570,
+            "DazeGrowth": 300
+        },
+        "1171012": {
+            "DamageValue": 95810,
+            "DamageGrowth": 8710,
+            "DazeValue": 58570,
+            "DazeGrowth": 2670
+        },
+        "1171013": {
+            "DamageValue": 28710,
+            "DamageGrowth": 2610,
+            "DazeValue": 20780,
+            "DazeGrowth": 950
+        },
+        "1171014": {
+            "DamageValue": 6790,
+            "DamageGrowth": 620,
+            "DazeValue": 3400,
+            "DazeGrowth": 160
+        },
+        "1171015": {
+            "DamageValue": 21970,
+            "DamageGrowth": 2000,
+            "DazeValue": 19440,
+            "DazeGrowth": 890
+        },
+        "1171016": {
+            "DamageValue": 68090,
+            "DamageGrowth": 6190,
+            "DazeValue": 24200,
+            "DazeGrowth": 1100
+        },
+        "1171017": {
+            "DamageValue": 201220,
+            "DamageGrowth": 18300,
+            "DazeValue": 10640,
+            "DazeGrowth": 490
+        },
+        "1171018": {
+            "DamageValue": 8440,
+            "DamageGrowth": 770,
+            "DazeValue": 8440,
+            "DazeGrowth": 390
+        },
+        "1171019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1171020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1171021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1171022": {
+            "DamageValue": 32760,
+            "DamageGrowth": 2980,
+            "DazeValue": 28240,
+            "DazeGrowth": 1290
+        },
+        "1171023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1171024": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

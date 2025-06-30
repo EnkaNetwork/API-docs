@@ -1,0 +1,448 @@
+{
+    "Name": "Soldat 11",
+    "ElementTypes": [
+        "Fire"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Réchauffement brusque",
+            "Description": "Lorsque Soldat 11 entre ou prend le relai en combat avec moins de 40 pts d'énergie, son énergie remonte immédiatement à 80 pts. Cet effet peut être déclenché une fois toutes les 50 s.",
+            "Lore": "Le long et intense entraînement au combat que suit Soldat 11 lui permet de maîtriser complètement ses systèmes de régulation.\nElle s'efforce toujours de s'assurer qu'elle est dans la meilleure forme possible avant chaque combat."
+        },
+        "2": {
+            "Title": "Convergence ardente",
+            "Description": "Lors du déclenchement de <color=#FFFFFF>Répression ardente</color>, les DGT des <color=#FFFFFF>attaques normales</color>, des <color=#FFFFFF>attaques de bond</color> et des <color=#FFFFFF>contres d'esquive</color> augmentent de 3 % pendant 15 s. Cumulable jusqu'à 12 fois. La durée de chaque cumul est calculée séparément.",
+            "Lore": "« Elle peut sembler froide et dure, comme la glace... Mais en réalité, elle brûle à l'intérieur, comme un feu ardent. »\n– Soldat anonyme de la Division obsidienne"
+        },
+        "3": {
+            "Title": "Soldat d'élite",
+            "Description": "Niv. d'<color=#FFFFFF>attaque normale</color>, d'<color=#FFFFFF>esquive</color>, de <color=#FFFFFF>soutien</color>, d'<color=#FFFFFF>attaque spéciale</color> et d'<color=#FFFFFF>enchaînement</color> +2",
+            "Lore": "Soldat 11 se donne toujours au maximum, que ce soit à l'entraînement ou au combat. C'est ainsi qu'elle maintient ses prouesses au combat."
+        },
+        "4": {
+            "Title": "Feu nourri",
+            "Description": "Lorsque <color=#FFFFFF>Répression ardente</color> est déclenchée lors du 1er, 2e ou 3e coup de l'<color=#FFFFFF>attaque normale</color> de Soldat 11 ou encore lors de son <color=#FFFFFF>attaque de bond</color>, la RÉS à l'interruption augmente et les DGT subis diminuent de 18 % pendant le déclenchement de la compétence.\nSi <color=#FFFFFF>Répression ardente</color> est déclenchée lors du 4e coup de son <color=#FFFFFF>attaque normale</color>, Soldat 11 est invulnérable lors du déclenchement de la compétence.",
+            "Lore": "Elle envie le feu. Et ces flammes ardentes l'aideront toujours."
+        },
+        "5": {
+            "Title": "Le soldat parfait",
+            "Description": "Niv. d'<color=#FFFFFF>attaque normale</color>, d'<color=#FFFFFF>esquive</color>, de <color=#FFFFFF>soutien</color>, d'<color=#FFFFFF>attaque spéciale</color> et d'<color=#FFFFFF>enchaînement</color> +2",
+            "Lore": "Le chemin qui mène de l'élite à l'exemplaire est long et difficile, mais Soldat 11 serre les dents et persévère, comme si quelque chose la poussait vers l'objectif de devenir le soldat parfait..."
+        },
+        "6": {
+            "Title": "Flux ardent",
+            "Description": "Lorsque Soldat 11 utilise son <color=#FFFFFF>attaque spéciale EX</color>, son <color=#FFFFFF>enchaînement</color>, ou son <color=#FFFFFF>ultime</color>, elle gagne 8 cumuls de charge (la limite est de 8 cumuls).\nLorsque <color=#FFFFFF>Répression ardente</color> est déclenchée, 1 cumul de charge est consommé pour permettre à la compétence en cours d'ignorer 25 % de la <color=#FF5521>RÉS au feu</color> de la cible.",
+            "Lore": "Par leur chaleur, les flammes de l'épée déformaient l'air. Ses mouvements étaient de plus en plus passionnés, comme si cette chaleur s'infiltrait dans son esprit à chaque respiration, enflammant ses pensées."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passif principal : Vague de chaleur",
+            "DescriptionByLevel": {
+                "1": "Lors du déclenchement de <color=#FFFFFF>Répression ardente</color> au cours d'une <color=#FFFFFF>attaque normale</color> ou d'une <color=#FFFFFF>attaque de bond</color>, les DGT infligés par cette attaque augmentent de <color=#2BAD00>35 %</color>.",
+                "2": "Lors du déclenchement de <color=#FFFFFF>Répression ardente</color> au cours d'une <color=#FFFFFF>attaque normale</color> ou d'une <color=#FFFFFF>attaque de bond</color>, les DGT infligés par cette attaque augmentent de <color=#2BAD00>40,8 %</color>.",
+                "3": "Lors du déclenchement de <color=#FFFFFF>Répression ardente</color> au cours d'une <color=#FFFFFF>attaque normale</color> ou d'une <color=#FFFFFF>attaque de bond</color>, les DGT infligés par cette attaque augmentent de <color=#2BAD00>46,6 %</color>.",
+                "4": "Lors du déclenchement de <color=#FFFFFF>Répression ardente</color> au cours d'une <color=#FFFFFF>attaque normale</color> ou d'une <color=#FFFFFF>attaque de bond</color>, les DGT infligés par cette attaque augmentent de <color=#2BAD00>52,5 %</color>.",
+                "5": "Lors du déclenchement de <color=#FFFFFF>Répression ardente</color> au cours d'une <color=#FFFFFF>attaque normale</color> ou d'une <color=#FFFFFF>attaque de bond</color>, les DGT infligés par cette attaque augmentent de <color=#2BAD00>58,3 %</color>.",
+                "6": "Lors du déclenchement de <color=#FFFFFF>Répression ardente</color> au cours d'une <color=#FFFFFF>attaque normale</color> ou d'une <color=#FFFFFF>attaque de bond</color>, les DGT infligés par cette attaque augmentent de <color=#2BAD00>64,1 %</color>.",
+                "7": "Lors du déclenchement de <color=#FFFFFF>Répression ardente</color> au cours d'une <color=#FFFFFF>attaque normale</color> ou d'une <color=#FFFFFF>attaque de bond</color>, les DGT infligés par cette attaque augmentent de <color=#2BAD00>70 %</color>."
+            }
+        },
+        "MathSkill": {
+            "Title": "Capacité supplémentaire : Terre brûlée",
+            "Description": "Lorsqu'un autre personnage de votre escouade est du même attribut ou de la même faction que Soldat 11 :\nLes <color=#FF5521>DGT de feu</color> de Soldat 11 augmentent de 10 %. Contre les ennemis étourdis, ces DGT augmentent de 22,5 % supplémentaires."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "104100001": {
+                "Title": "Attaque normale : Étincelles d'échauffement",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pour activer :\nDéclenche jusqu'à 4 entailles, infligeant des <color=#F0D12B>DGT physiques</color>."
+            },
+            "104100002": {
+                "Title": "Attaque normale : Répression ardente",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> au bon moment pour activer :\nDéclenche des entailles plus puissantes, infligeant des <color=#FF5521>DGT de feu</color>."
+            },
+            "104110001": {
+                "Title": "Attaque normale : Étincelles d'échauffement"
+            },
+            "104110002": {
+                "Description": "Multiplicateur de DGT du 1er coup",
+                "Param": "{Skill:1041001, Prop:1001}"
+            },
+            "104110003": {
+                "Description": "Multiplicateur de DGT du 2e coup",
+                "Param": "{Skill:1041003, Prop:1001}"
+            },
+            "104110004": {
+                "Description": "Multiplicateur de DGT du 3e coup",
+                "Param": "{Skill:1041005, Prop:1001}"
+            },
+            "104110005": {
+                "Description": "Multiplicateur de DGT du 4e coup",
+                "Param": "{Skill:1041007, Prop:1001}"
+            },
+            "104110006": {
+                "Description": "Multiplicateur de confusion du 1er coup",
+                "Param": "{Skill:1041001, Prop:1002}"
+            },
+            "104110007": {
+                "Description": "Multiplicateur de confusion du 2e coup",
+                "Param": "{Skill:1041003, Prop:1002}"
+            },
+            "104110008": {
+                "Description": "Multiplicateur de confusion du 3e coup",
+                "Param": "{Skill:1041005, Prop:1002}"
+            },
+            "104110009": {
+                "Description": "Multiplicateur de confusion du 4e coup",
+                "Param": "{Skill:1041007, Prop:1002}"
+            },
+            "104110010": {
+                "Title": "Attaque normale : Répression ardente"
+            },
+            "104110011": {
+                "Description": "Multiplicateur de DGT du 1er coup",
+                "Param": "{Skill:1041002, Prop:1001}"
+            },
+            "104110012": {
+                "Description": "Multiplicateur de DGT du 2e coup",
+                "Param": "{Skill:1041004, Prop:1001}"
+            },
+            "104110013": {
+                "Description": "Multiplicateur de DGT du 3e coup",
+                "Param": "{Skill:1041006, Prop:1001}"
+            },
+            "104110014": {
+                "Description": "Multiplicateur de DGT du 4e coup",
+                "Param": "{Skill:1041008, Prop:1001}"
+            },
+            "104110015": {
+                "Description": "Multiplicateur de confusion du 1er coup",
+                "Param": "{Skill:1041002, Prop:1002}"
+            },
+            "104110016": {
+                "Description": "Multiplicateur de confusion du 2e coup",
+                "Param": "{Skill:1041004, Prop:1002}"
+            },
+            "104110017": {
+                "Description": "Multiplicateur de confusion du 3e coup",
+                "Param": "{Skill:1041006, Prop:1002}"
+            },
+            "104110018": {
+                "Description": "Multiplicateur de confusion du 4e coup",
+                "Param": "{Skill:1041008, Prop:1002}"
+            }
+        },
+        "1": {
+            "104100003": {
+                "Title": "Attaque spéciale : Feu ardent",
+                "Description": "Appuyez sur <IconMap:Icon_Special> pour activer :\nEntaille les ennemis proches et leur inflige des <color=#FF5521>DGT de feu</color>.\nLe niveau de la RÉS à l'interruption augmente pendant l'utilisation de cette compétence."
+            },
+            "104100004": {
+                "Title": "Attaque spéciale EX : Feu dévastateur",
+                "Description": "Avec suffisamment d'énergie, appuyez sur <IconMap:Icon_SpecialReady> pour activer :\nEntaille les ennemis à proximité et inflige d'importants <color=#FF5521>DGT de feu</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence.\nAprès avoir utilisé cette compétence, les <color=#FFFFFF>attaques normales</color> et les <color=#FFFFFF>attaques de bond</color> déclencheront <color=#FFFFFF>Répression ardente</color>, cet effet pouvant durer 15 s ou être déclenché jusqu'à 8 fois."
+            },
+            "104110019": {
+                "Title": "Attaque spéciale : Feu ardent"
+            },
+            "104110020": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1041010, Prop:1001}"
+            },
+            "104110021": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1041010, Prop:1002}"
+            },
+            "104110022": {
+                "Title": "Attaque spéciale EX : Feu dévastateur"
+            },
+            "104110023": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1041011, Prop:1001}"
+            },
+            "104110024": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1041011, Prop:1002}"
+            },
+            "104110025": {
+                "Description": "Coût en énergie",
+                "Param": "80 pts"
+            }
+        },
+        "2": {
+            "104100005": {
+                "Title": "Esquive : Feu contrôlé",
+                "Description": "Appuyez sur <IconMap:Icon_Evade> pour activer :\nUne esquive rapide.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "104100006": {
+                "Title": "Attaque de bond : Brasier",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pendant une esquive pour activer :\nEntaille les ennemis situés en face, infligeant des <color=#F0D12B>DGT physiques</color>."
+            },
+            "104100007": {
+                "Title": "Attaque de bond : Répression ardente",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pendant une esquive pour activer :\nEntaille les ennemis situés en face, infligeant d'importants <color=#FF5521>DGT de feu</color>."
+            },
+            "104100008": {
+                "Title": "Contre d'esquive : Retour de flamme",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pendant une <color=#FFFFFF>esquive parfaite</color> pour activer :\nLance une puissante entaille sur les ennemis situés en face, infligeant d'importants <color=#FF5521>DGT de feu</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "104110026": {
+                "Title": "Attaque de bond : Brasier"
+            },
+            "104110027": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1041012, Prop:1001}"
+            },
+            "104110028": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1041012, Prop:1002}"
+            },
+            "104110029": {
+                "Title": "Attaque de bond : Répression ardente"
+            },
+            "104110030": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1041013, Prop:1001}"
+            },
+            "104110031": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1041013, Prop:1002}"
+            },
+            "104110032": {
+                "Title": "Contre d'esquive : Retour de flamme"
+            },
+            "104110033": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1041015, Prop:1001}"
+            },
+            "104110034": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1041015, Prop:1002}"
+            }
+        },
+        "3": {
+            "104100009": {
+                "Title": "Enchaînement : Flamme édifiante",
+                "Description": "Lors du déclenchement d'un <color=#FFFFFF>enchaînement</color>, sélectionnez le personnage pour activer :\nLance une puissante entaille ascendante sur les ennemis dans une petite zone en face, infligeant d'importants <color=#FF5521>DGT de feu</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence.\nAprès avoir utilisé cette compétence, les <color=#FFFFFF>attaques normales</color> et les <color=#FFFFFF>attaques de bond</color> déclencheront <color=#FFFFFF>Répression ardente</color>, cet effet pouvant durer 15 s ou être déclenché jusqu'à 8 fois."
+            },
+            "104100010": {
+                "Title": "Ultime : Flamme hurlante",
+                "Description": "Lorsque le niveau de décibels est au <color=#FFFFFF>Maximum</color>, appuyez sur <IconMap:Icon_UltimateReady> pour activer :\nLance une puissante entaille ascendante sur les ennemis dans une petite zone, qui inflige d'importants <color=#FF5521>DGT de feu</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence.\nAprès avoir utilisé cette compétence, les <color=#FFFFFF>attaques normales</color> et les <color=#FFFFFF>attaques de bond</color> déclencheront <color=#FFFFFF>Répression ardente</color>, cet effet pouvant durer 15 s ou être déclenché jusqu'à 8 fois."
+            },
+            "104110035": {
+                "Title": "Enchaînement : Flamme édifiante"
+            },
+            "104110036": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1041016, Prop:1001}"
+            },
+            "104110037": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1041016, Prop:1002}"
+            },
+            "104110038": {
+                "Title": "Ultime : Flamme hurlante"
+            },
+            "104110039": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1041017, Prop:1001}"
+            },
+            "104110040": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1041017, Prop:1002}"
+            }
+        },
+        "6": {
+            "104100012": {
+                "Title": "Soutien rapide : Feu de couverture",
+                "Description": "Lorsque le personnage contrôlé est projeté, appuyez sur <IconMap:Icon_Switch> pour activer :\nEntaille les ennemis situés en face, infligeant des <color=#FF5521>DGT de feu</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "104100013": {
+                "Title": "Soutien défensif : Tenir la position",
+                "Description": "Lorsque le personnage sur le terrain est sur le point d'être attaqué, appuyez sur <IconMap:Icon_Switch> pour activer :\nPare l'attaque de l'ennemi et provoque une confusion importante.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "104100014": {
+                "Title": "Soutien de suivi : Rallumage",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> après un <color=#FFFFFF>soutien défensif</color> pour activer :\nFonce et entaille les ennemis situés en face, infligeant des <color=#FF5521>DGT de feu</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "104110041": {
+                "Title": "Soutien rapide : Feu de couverture"
+            },
+            "104110042": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1041019, Prop:1001}"
+            },
+            "104110043": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1041019, Prop:1002}"
+            },
+            "104110044": {
+                "Title": "Soutien défensif : Tenir la position"
+            },
+            "104110045": {
+                "Description": "Multiplicateur de confusion de défense légère",
+                "Param": "{Skill:1041020, Prop:1002}"
+            },
+            "104110046": {
+                "Description": "Multiplicateur de confusion de défense lourde",
+                "Param": "{Skill:1041021, Prop:1002}"
+            },
+            "104110047": {
+                "Description": "Multiplicateur de confusion de défense en chaîne",
+                "Param": "{Skill:1041022, Prop:1002}"
+            },
+            "104110048": {
+                "Title": "Soutien de suivi : Rallumage"
+            },
+            "104110049": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1041023, Prop:1001}"
+            },
+            "104110050": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1041023, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1041001": {
+            "DamageValue": 3440,
+            "DamageGrowth": 320,
+            "DazeValue": 1720,
+            "DazeGrowth": 80
+        },
+        "1041002": {
+            "DamageValue": 5510,
+            "DamageGrowth": 510,
+            "DazeValue": 1800,
+            "DazeGrowth": 90
+        },
+        "1041003": {
+            "DamageValue": 4120,
+            "DamageGrowth": 380,
+            "DazeValue": 3440,
+            "DazeGrowth": 160
+        },
+        "1041004": {
+            "DamageValue": 5720,
+            "DamageGrowth": 520,
+            "DazeValue": 3360,
+            "DazeGrowth": 160
+        },
+        "1041005": {
+            "DamageValue": 10280,
+            "DamageGrowth": 940,
+            "DazeValue": 8230,
+            "DazeGrowth": 380
+        },
+        "1041006": {
+            "DamageValue": 13200,
+            "DamageGrowth": 1200,
+            "DazeValue": 7520,
+            "DazeGrowth": 350
+        },
+        "1041007": {
+            "DamageValue": 21340,
+            "DamageGrowth": 1940,
+            "DazeValue": 16760,
+            "DazeGrowth": 770
+        },
+        "1041008": {
+            "DamageValue": 34070,
+            "DamageGrowth": 3100,
+            "DazeValue": 19200,
+            "DazeGrowth": 880
+        },
+        "1041009": {
+            "DamageValue": 9280,
+            "DamageGrowth": 850,
+            "DazeValue": 9280,
+            "DazeGrowth": 430
+        },
+        "1041010": {
+            "DamageValue": 5260,
+            "DamageGrowth": 480,
+            "DazeValue": 5260,
+            "DazeGrowth": 240
+        },
+        "1041011": {
+            "DamageValue": 67500,
+            "DamageGrowth": 6140,
+            "DazeValue": 54350,
+            "DazeGrowth": 2480
+        },
+        "1041012": {
+            "DamageValue": 6830,
+            "DamageGrowth": 630,
+            "DazeValue": 3420,
+            "DazeGrowth": 160
+        },
+        "1041013": {
+            "DamageValue": 7880,
+            "DamageGrowth": 720,
+            "DazeValue": 7880,
+            "DazeGrowth": 360
+        },
+        "1041014": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1041015": {
+            "DamageValue": 26200,
+            "DamageGrowth": 2390,
+            "DazeValue": 22580,
+            "DazeGrowth": 1030
+        },
+        "1041016": {
+            "DamageValue": 63250,
+            "DamageGrowth": 5750,
+            "DazeValue": 21360,
+            "DazeGrowth": 980
+        },
+        "1041017": {
+            "DamageValue": 210300,
+            "DamageGrowth": 19120,
+            "DazeValue": 28500,
+            "DazeGrowth": 1300
+        },
+        "1041018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1041019": {
+            "DamageValue": 12080,
+            "DamageGrowth": 1100,
+            "DazeValue": 12080,
+            "DazeGrowth": 550
+        },
+        "1041020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 25900,
+            "DazeGrowth": 1180
+        },
+        "1041021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 32730,
+            "DazeGrowth": 1490
+        },
+        "1041022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15930,
+            "DazeGrowth": 730
+        },
+        "1041023": {
+            "DamageValue": 38370,
+            "DamageGrowth": 3490,
+            "DazeValue": 33550,
+            "DazeGrowth": 1530
+        }
+    }
+}

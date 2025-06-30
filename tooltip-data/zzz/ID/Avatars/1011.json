@@ -1,0 +1,367 @@
+{
+    "Name": "Anby",
+    "ElementTypes": [
+        "Elec"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Rapid Charge Mode",
+            "Description": "Saat Slash dari <color=#FFFFFF>Basic Attack</color> tahap keempat Anby mengenai musuh, Energy Generation Rate Anby akan meningkat 12% selama 30 detik.",
+            "Lore": "\"Isi daya 1 menit, lanjut tebas 30 menit!\"\nItulah yang ditulis di promosi modul ekstensi senjata ini, dan efek nyatanya benar-benar sesuai dengan yang dipromosikan...!"
+        },
+        "2": {
+            "Title": "Precision Discharge",
+            "Description": "Saat <color=#FFFFFF>Basic Attack: Thunderbolt</color> mengenai musuh yang berada dalam status Stun, DMG yang diakibatkan Skill ini akan meningkat 30%.\nSaat <color=#FFFFFF>EX Special Attack</color> mengenai musuh yang tidak berada dalam status Stun, Daze yang diakibatkan Skill ini akan meningkat 10%.",
+            "Lore": "\"Kalau musuh disetrum listrik, mereka akan pingsan.\"\nGadis itu menatap musuh yang di lantai dengan ekspresi yang datar, lalu menambahkan:\n\"Setidaknya, itu yang biasanya terjadi di film.\""
+        },
+        "3": {
+            "Title": "Well-Disciplined",
+            "Description": "Level <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, dan <color=#FFFFFF>Chain Attack</color> +2.",
+            "Lore": "Mengayunkan pedangnya sambil berlari, dan bergerak secepat kilat.\nGadis muda ini bukanlah pemula dalam menjelajahi Hollow, melainkan seorang ahli di bidangnya."
+        },
+        "4": {
+            "Title": "Conducting Charge",
+            "Description": "Saat melancarkan <color=#FFFFFF>Chain Attack</color> atau <color=#FFFFFF>Ultimate</color>, akan memulihkan 3 poin Energy karakter Electric yang tidak aktif.\nUntuk setiap 12% Energy Generation Rate yang dimiliki Anby, akan memulihkan 2 poin tambahan, maks. dapat bertambah 6 poin.",
+            "Lore": "Bertarung sendirian bukanlah solusi jangka panjang. Seorang Hollow Raider berpengalaman harus mampu menciptakan peluang bagi rekan timnya saat bertarung."
+        },
+        "5": {
+            "Title": "Street Experience",
+            "Description": "Level <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, dan <color=#FFFFFF>Chain Attack</color> +2.",
+            "Lore": "Pekerjaan di Cunning Hares tidak hanya melatih mental, tapi juga membantu (atau lebih tepatnya memaksa) melatih fisik."
+        },
+        "6": {
+            "Title": "Charging Field",
+            "Description": "Saat melancarkan <color=#FFFFFF>EX Special Attack</color>, Anby akan mendapatkan 8 lapis Charge (maks. 8 lapis).\nSaat <color=#FFFFFF>Basic Attack</color> atau <color=#FFFFFF>Dash Attack</color> mengenai musuh, 1 lapis Charge akan dikonsumsi, dan DMG yang diakibatkan Skill tersebut meningkat 45%.",
+            "Lore": "Cahaya listrik menyala-nyala di ujung jari gadis itu.\nAnby mengangkat kepalanya, dan matanya mencerminkan ambisinya yang besar.\nMungkin suatu hari nanti, dia akan menguasai cara menggunakan kekuatan listrik sepenuhnya."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Core Passive: Fluctuating Voltage",
+            "DescriptionByLevel": {
+                "1": "Saat Anby melancarkan <color=#FFFFFF>Basic Attack: Thunderbolt</color>, <color=#FFFFFF>Special Attack</color>, atau <color=#FFFFFF>EX Special Attack</color> setelah <color=#FFFFFF>Basic Attack</color> tahap ketiga, Daze yang diakibatkan akan meningkat <color=#2BAD00>32%</color>.",
+                "2": "Saat Anby melancarkan <color=#FFFFFF>Basic Attack: Thunderbolt</color>, <color=#FFFFFF>Special Attack</color>, atau <color=#FFFFFF>EX Special Attack</color> setelah <color=#FFFFFF>Basic Attack</color> tahap ketiga, Daze yang diakibatkan akan meningkat <color=#2BAD00>37,3%</color>.",
+                "3": "Saat Anby melancarkan <color=#FFFFFF>Basic Attack: Thunderbolt</color>, <color=#FFFFFF>Special Attack</color>, atau <color=#FFFFFF>EX Special Attack</color> setelah <color=#FFFFFF>Basic Attack</color> tahap ketiga, Daze yang diakibatkan akan meningkat <color=#2BAD00>42,6%</color>.",
+                "4": "Saat Anby melancarkan <color=#FFFFFF>Basic Attack: Thunderbolt</color>, <color=#FFFFFF>Special Attack</color>, atau <color=#FFFFFF>EX Special Attack</color> setelah <color=#FFFFFF>Basic Attack</color> tahap ketiga, Daze yang diakibatkan akan meningkat <color=#2BAD00>48%</color>.",
+                "5": "Saat Anby melancarkan <color=#FFFFFF>Basic Attack: Thunderbolt</color>, <color=#FFFFFF>Special Attack</color>, atau <color=#FFFFFF>EX Special Attack</color> setelah <color=#FFFFFF>Basic Attack</color> tahap ketiga, Daze yang diakibatkan akan meningkat <color=#2BAD00>53,3%</color>.",
+                "6": "Saat Anby melancarkan <color=#FFFFFF>Basic Attack: Thunderbolt</color>, <color=#FFFFFF>Special Attack</color>, atau <color=#FFFFFF>EX Special Attack</color> setelah <color=#FFFFFF>Basic Attack</color> tahap ketiga, Daze yang diakibatkan akan meningkat <color=#2BAD00>58,6%</color>.",
+                "7": "Saat Anby melancarkan <color=#FFFFFF>Basic Attack: Thunderbolt</color>, <color=#FFFFFF>Special Attack</color>, atau <color=#FFFFFF>EX Special Attack</color> setelah <color=#FFFFFF>Basic Attack</color> tahap ketiga, Daze yang diakibatkan akan meningkat <color=#2BAD00>64%</color>."
+            }
+        },
+        "MathSkill": {
+            "Title": "Additional Ability: Parallel Connection",
+            "Description": "Berlaku jika terdapat Agen di dalam tim yang memiliki Atribut yang sama atau berasal dari faksi yang sama:\nSaat <color=#FFFFFF>Dodge Counter</color> mengenai musuh, Anby akan memulihkan 7,2 poin Energy. Efek ini dapat dipicu sekali setiap 5 detik."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "101100001": {
+                "Title": "Basic Attack: Turbo Volt",
+                "Description": "Tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMelancarkan hingga empat tahap serangan Slash ke depan. Tiga tahap pertama akan mengakibatkan <color=#F0D12B>Physical DMG</color>, sementara serangan tahap keempat akan mengakibatkan <color=#2EB6FF>Electric DMG</color>."
+            },
+            "101100002": {
+                "Title": "Basic Attack: Thunderbolt",
+                "Description": "Setelah <color=#FFFFFF>Basic Attack</color> tahap ketiga, tahan <IconMap:Icon_Normal> atau tekan <IconMap:Icon_Normal> setelah berhenti sejenak untuk melancarkan Skill ini.\nMelancarkan Strike ke bawah terhadap musuh di depan dan mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nLevel Anti-Interrupt akan meningkat selama melancarkan Skill ini."
+            },
+            "101110001": {
+                "Title": "Basic Attack: Turbo Volt"
+            },
+            "101110002": {
+                "Description": "Kelipatan DMG: Tahap 1",
+                "Param": "{Skill:1011001, Prop:1001}"
+            },
+            "101110003": {
+                "Description": "Kelipatan DMG: Tahap 2",
+                "Param": "{Skill:1011002, Prop:1001}"
+            },
+            "101110004": {
+                "Description": "Kelipatan DMG: Tahap 3",
+                "Param": "{Skill:1011003, Prop:1001}"
+            },
+            "101110005": {
+                "Description": "Kelipatan DMG: Tahap 4",
+                "Param": "{Skill:1011004, Prop:1001}"
+            },
+            "101110006": {
+                "Description": "Kelipatan Daze: Tahap 1",
+                "Param": "{Skill:1011001, Prop:1002}"
+            },
+            "101110007": {
+                "Description": "Kelipatan Daze: Tahap 2",
+                "Param": "{Skill:1011002, Prop:1002}"
+            },
+            "101110008": {
+                "Description": "Kelipatan Daze: Tahap 3",
+                "Param": "{Skill:1011003, Prop:1002}"
+            },
+            "101110009": {
+                "Description": "Kelipatan Daze: Tahap 4",
+                "Param": "{Skill:1011004, Prop:1002}"
+            },
+            "101110010": {
+                "Title": "Basic Attack: Thunderbolt"
+            },
+            "101110011": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1011005, Prop:1001}"
+            },
+            "101110012": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1011005, Prop:1002}"
+            }
+        },
+        "1": {
+            "101100003": {
+                "Title": "Special Attack: Fork Lightning",
+                "Description": "Tekan <IconMap:Icon_Special> untuk melancarkan Skill ini.\nMelancarkan Slash ke atas terhadap musuh di depan dan mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nJika dilancarkan setelah tahap ketiga <color=#FFFFFF>Basic Attack</color> atau <color=#FFFFFF>Basic Attack: Thunderbolt</color>, Skill ini akan dilancarkan lebih cepat.\nLevel Anti-Interrupt akan meningkat selama melancarkan Skill ini."
+            },
+            "101100004": {
+                "Title": "EX Special Attack: Lightning Bolt",
+                "Description": "Saat Energy Anby sudah cukup, tekan <IconMap:Icon_SpecialReady> untuk melancarkan Skill ini.\nMelancarkan Slash ke atas terhadap musuh di depan dan mengakibatkan <color=#2EB6FF>Electric DMG</color> dalam jumlah besar.\nJika dilancarkan setelah melancarkan <color=#FFFFFF>Basic Attack</color> tahap ketiga atau <color=#FFFFFF>Basic Attack: Thunderbolt</color>, Skill ini akan dilancarkan lebih cepat.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "101110013": {
+                "Title": "Special Attack: Fork Lightning"
+            },
+            "101110014": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1011006, Prop:1001}"
+            },
+            "101110015": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1011006, Prop:1002}"
+            },
+            "101110016": {
+                "Title": "EX Special Attack: Lightning Bolt"
+            },
+            "101110017": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1011007, Prop:1001}"
+            },
+            "101110018": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1011007, Prop:1002}"
+            },
+            "101110019": {
+                "Description": "Konsumsi Energy",
+                "Param": "60 poin"
+            }
+        },
+        "2": {
+            "101100005": {
+                "Title": "Dodge: Slide",
+                "Description": "Tekan <IconMap:Icon_Evade> untuk melakukan Dodge.\nMelakukan Dodge dengan cepat.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "101100006": {
+                "Title": "Dash Attack: Taser Blast",
+                "Description": "Tekan <IconMap:Icon_Normal> saat melakukan Dodge untuk melancarkan Skill ini.\nMelancarkan Slash terhadap musuh di sekitar dan mengakibatkan <color=#F0D12B>Physical DMG</color>."
+            },
+            "101100007": {
+                "Title": "Dodge Counter: Thunderclap",
+                "Description": "Tekan <IconMap:Icon_Normal> setelah melakukan <color=#FFFFFF>Perfect Dodge</color> untuk melancarkan Skill ini.\nMelancarkan Slash terhadap musuh di depan dan mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "101110020": {
+                "Title": "Dash Attack: Taser Blast"
+            },
+            "101110021": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1011008, Prop:1001}"
+            },
+            "101110022": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1011008, Prop:1002}"
+            },
+            "101110023": {
+                "Title": "Dodge Counter: Thunderclap"
+            },
+            "101110024": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1011009, Prop:1001}"
+            },
+            "101110025": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1011009, Prop:1002}"
+            }
+        },
+        "3": {
+            "101100008": {
+                "Title": "Chain Attack: Electro Engine",
+                "Description": "Saat <color=#FFFFFF>Chain Attack</color> terpicu, pilih Anby untuk melancarkan Skill ini.\nMelancarkan Slash ke atas yang kuat terhadap musuh dalam area kecil dan mengakibatkan <color=#2EB6FF>Electric DMG</color> dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "101100009": {
+                "Title": "Ultimate: Overdrive Engine",
+                "Description": "Saat Decibel Rating mencapai <color=#FFFFFF>Maximum</color>, tekan <IconMap:Icon_UltimateReady> untuk melancarkan Skill ini.\nMelancarkan Slash ke atas yang kuat terhadap musuh dalam area kecil, lalu diikuti dengan serangan ke bawah yang mengakibatkan <color=#2EB6FF>Electric DMG</color> dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "101110026": {
+                "Title": "Chain Attack: Electro Engine"
+            },
+            "101110027": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1011010, Prop:1001}"
+            },
+            "101110028": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1011010, Prop:1002}"
+            },
+            "101110029": {
+                "Title": "Ultimate: Overdrive Engine"
+            },
+            "101110030": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1011011, Prop:1001}"
+            },
+            "101110031": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1011011, Prop:1002}"
+            }
+        },
+        "6": {
+            "101100011": {
+                "Title": "Quick Assist: Thunderfall",
+                "Description": "Saat Agen yang Dikendalikan terhempas, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nMelancarkan Slash terhadap musuh di depan dan mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "101100012": {
+                "Title": "Defensive Assist: Flash",
+                "Description": "Tepat sebelum Agen aktif diserang, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nMenangkis serangan musuh dan menghasilkan Daze dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "101100013": {
+                "Title": "Assist Follow-Up: Lightning Whirl",
+                "Description": "Setelah melancarkan <color=#FFFFFF>Defensive Assist</color>, tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMelancarkan Slash berputar terhadap musuh di depan dan mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "101110032": {
+                "Title": "Quick Assist: Thunderfall"
+            },
+            "101110033": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1011012, Prop:1001}"
+            },
+            "101110034": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1011012, Prop:1002}"
+            },
+            "101110035": {
+                "Title": "Defensive Assist: Flash"
+            },
+            "101110036": {
+                "Description": "Kelipatan Daze - Light Defensive",
+                "Param": "{Skill:1011013, Prop:1002}"
+            },
+            "101110037": {
+                "Description": "Kelipatan Daze - Heavy Defensive",
+                "Param": "{Skill:1011014, Prop:1002}"
+            },
+            "101110038": {
+                "Description": "Kelipatan Daze - Chain Defensive",
+                "Param": "{Skill:1011015, Prop:1002}"
+            },
+            "101110039": {
+                "Title": "Assist Follow-Up: Lightning Whirl"
+            },
+            "101110040": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1011016, Prop:1001}"
+            },
+            "101110041": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1011016, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1011001": {
+            "DamageValue": 3120,
+            "DamageGrowth": 290,
+            "DazeValue": 1560,
+            "DazeGrowth": 80
+        },
+        "1011002": {
+            "DamageValue": 3370,
+            "DamageGrowth": 310,
+            "DazeValue": 2870,
+            "DazeGrowth": 140
+        },
+        "1011003": {
+            "DamageValue": 11360,
+            "DamageGrowth": 1040,
+            "DazeValue": 8960,
+            "DazeGrowth": 410
+        },
+        "1011004": {
+            "DamageValue": 23910,
+            "DamageGrowth": 2180,
+            "DazeValue": 18740,
+            "DazeGrowth": 860
+        },
+        "1011005": {
+            "DamageValue": 32860,
+            "DamageGrowth": 2990,
+            "DazeValue": 14240,
+            "DazeGrowth": 650
+        },
+        "1011006": {
+            "DamageValue": 9340,
+            "DamageGrowth": 850,
+            "DazeValue": 9340,
+            "DazeGrowth": 430
+        },
+        "1011007": {
+            "DamageValue": 58300,
+            "DamageGrowth": 5300,
+            "DazeValue": 48180,
+            "DazeGrowth": 2190
+        },
+        "1011008": {
+            "DamageValue": 5670,
+            "DamageGrowth": 520,
+            "DazeValue": 2840,
+            "DazeGrowth": 130
+        },
+        "1011009": {
+            "DamageValue": 18020,
+            "DamageGrowth": 1640,
+            "DazeValue": 16170,
+            "DazeGrowth": 740
+        },
+        "1011010": {
+            "DamageValue": 54240,
+            "DamageGrowth": 4940,
+            "DazeValue": 14340,
+            "DazeGrowth": 660
+        },
+        "1011011": {
+            "DamageValue": 151260,
+            "DamageGrowth": 13760,
+            "DazeValue": 99160,
+            "DazeGrowth": 4510
+        },
+        "1011012": {
+            "DamageValue": 6170,
+            "DamageGrowth": 570,
+            "DazeValue": 6170,
+            "DazeGrowth": 290
+        },
+        "1011013": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 24670,
+            "DazeGrowth": 1130
+        },
+        "1011014": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 31170,
+            "DazeGrowth": 1420
+        },
+        "1011015": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15170,
+            "DazeGrowth": 690
+        },
+        "1011016": {
+            "DamageValue": 33520,
+            "DamageGrowth": 3050,
+            "DazeValue": 29140,
+            "DazeGrowth": 1330
+        }
+    }
+}

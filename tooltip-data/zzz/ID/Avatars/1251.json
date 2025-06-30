@@ -1,0 +1,450 @@
+{
+    "Name": "Qingyi",
+    "ElementTypes": [
+        "Elec"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Insulation Breakdown",
+            "Description": "Saat memulai pertarungan, Qingyi akan langsung memulihkan <color=#FFFFFF>Flash Connect Voltage</color> ke nilai maksimum, dan efisiensi akumulasinya meningkat 30%. Saat melancarkan <color=#FFFFFF>Basic Attack: Enchanted Moonlit Blossoms</color>, jika <color=#FFFFFF>Flash Connect Voltage</color> sudah diakumulasi hingga nilai maksimum, serangannya akan menurunkan 15% DEF milik musuh yang terkena. Selain itu, CRIT Rate Qingyi terhadap target tersebut juga akan meningkat 20% selama 15 detik.",
+            "Lore": "\"Walaupun nyawamu tidak dalam bahaya, namun lebih bijak jika kamu tidak melawan...\"\nArah dan intensitas arus listrik telah dihitung secara presisi agar setiap tersangka dijamin akan menerima sengatan listrik yang masih tergolong aman."
+        },
+        "2": {
+            "Title": "Minimal Effort, Maximum Impact",
+            "Description": "Efek peningkatan Kelipatan Stun DMG yang diberikan setiap lapis <color=#FFFFFF>Subjugation</color> dari <color=#FFFFFF>Core Passive: Eternal Seasons</color> akan ditingkatkan hingga 135% dari nilai awal. Saat serangan Qingyi mengenai musuh, jika jumlah lapisan <color=#FFFFFF>Subjugation</color> musuh tersebut sudah mencapai jumlah maksimum, maka Daze yang diakibatkan Qingyi terhadap musuh tersebut meningkat 15%.",
+            "Lore": "Sebuah teknik bertarung kuno yang tercatat dalam teks peradaban kuno. Awalnya terlihat seperti teknik bela diri tangan kosong dan bukan teknik menggunakan senjata tongkat.\n\"Jangan terlalu menahan diri, sebenarnya lengan juga bisa dianggap seperti semacam tongkat dengan tiga bagian, ya kan?\""
+        },
+        "3": {
+            "Title": "Drink Hot Water",
+            "Description": "Level <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, dan <color=#FFFFFF>Chain Attack</color> +2.",
+            "Lore": "\"Anak muda harus menjaga kesehatannya. Harus banyak minum air hangat.\"\nSetiap kali Qingyi minum dari termosnya, orang lain yang melihatnya pun juga merasa hangat dan nyaman. Tapi hati-hati kalau ingin menerima air \"hangat\" darinya—\n\"Air mendidih dengan temperatur 100 derajat celsius sekalipun bisa dia minum seolah tidak ada apa-apa...\" —Catatan seorang petugas PubSec yang pernah menjadi korban."
+        },
+        "4": {
+            "Title": "Stable Arc Barrier",
+            "Description": "Saat memasuki atau mengakhiri status <color=#FFFFFF>Flash Connect</color>, akan mendapatkan Shield senilai 10% Max HP Qingyi. Saat efek Shield diperbarui dan jika Shield yang diperoleh sebelumnya masih aktif, Qingyi akan memperoleh 5 poin Energy. Efek Energy Generation ini dapat dipicu sekali setiap 10 detik.",
+            "Lore": "Dengan melakukan rekayasa balik Automaton dari peradaban kuno, White Star Institute berhasil mengembangkan Penghalang Melengkung, sebuah teknologi yang menggabungkan pertahanan, serangan, dan konversi energi listrik.\n\"Pepatah mengatakan: Air bisa membawa kapal mengapung atau tenggelam. Ilmu fisika mengatakan: Arus listrik mengalir seperti air. Oleh sebab itu: Arus listrik dapat digunakan untuk menyerang dan bertahan. Sungguh kombinasi yang luar biasa.\""
+        },
+        "5": {
+            "Title": "Youthful Spirit",
+            "Description": "Level <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, dan <color=#FFFFFF>Chain Attack</color> +2.",
+            "Lore": "\"Bagus, anak muda memang harus berani mencoba hal-hal baru. Semangat ya!\"\nMeskipun terkadang ucapan motivasi Qingyi terasa sedikit malas dan mengejek, tapi kalau kamu benar-benar ada masalah, kamu selalu bisa bergantung padanya.\nBagaimanapun juga, dia sudah hidup ratusan tahun dan bisa menangani apa pun."
+        },
+        "6": {
+            "Title": "Eight Meridians",
+            "Description": "Level Interrupt <color=#FFFFFF>Basic Attack: Enchanted Moonlit Blossoms</color> meningkat drastis. CRIT DMG yang diakibatkan Skill meningkat 100%. Saat <color=#FFFFFF>Basic Attack: Enchanted Moonlit Blossoms</color> mengenai musuh, ketahanan target untuk semua DMG Atribut berkurang 20% selama 15 detik.",
+            "Lore": "Sebuah teori tentang sistem sirkulasi tubuh manusia yang tercatat di buku peradaban kuno menyatakan: Siapa pun yang bisa menguasai teori ini, mereka akan memiliki kemampuan untuk langsung melumpuhkan lawannya.\n\"Lain kali kita coba di titik saraf geli ya? Siapa yang mau jadi kelinci percobaan? Manajer? Atau Zhu Yuan?\""
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Core Passive: Eternal Seasons",
+            "DescriptionByLevel": {
+                "1": "Saat serangan terakhir dari <color=#FFFFFF>Basic Attack: Enchanted Moonlit Blossoms</color> yang dilancarkan Qingyi mengenai musuh, akan memberikan 5 lapis <color=#FFFFFF>Subjugation</color> kepada musuh yang dapat ditumpuk hingga 20 lapis. Setiap lapis <color=#FFFFFF>Subjugation</color> dapat meningkatkan Kelipatan Stun DMG terhadap target sebesar <color=#2BAD00>2%</color>.\nSetiap kali melancarkan serangan menerjang dari <color=#FFFFFF>Basic Attack: Enchanted Moonlit Blossoms</color>, serangan terakhirnya akan mengakibatkan 1 lapis <color=#FFFFFF>Subjugation</color> tambahan.\nSaat melancarkan serangan terakhir, jika Qingyi memicu <color=#FFFFFF>Perfect Dodge</color>, maka akan langsung memberikan {CAL:5+5,1,2} lapis <color=#FFFFFF>Subjugation</color>.\nSaat mengakibatkan Subjugation terhadap musuh normal atau musuh elite, jumlah lapisan yang diberikan akan berlipat ganda. Saat target sudah pulih dari status Stun, jumlah lapisan <color=#FFFFFF>Subjugation</color> akan direset.",
+                "2": "Saat serangan terakhir dari <color=#FFFFFF>Basic Attack: Enchanted Moonlit Blossoms</color> yang dilancarkan Qingyi mengenai musuh, akan memberikan 5 lapis <color=#FFFFFF>Subjugation</color> kepada musuh yang dapat ditumpuk hingga 20 lapis. Setiap lapis <color=#FFFFFF>Subjugation</color> dapat meningkatkan Kelipatan Stun DMG terhadap target sebesar <color=#2BAD00>2,4%</color>.\nSetiap kali melancarkan serangan menerjang dari <color=#FFFFFF>Basic Attack: Enchanted Moonlit Blossoms</color>, serangan terakhirnya akan mengakibatkan 1 lapis <color=#FFFFFF>Subjugation</color> tambahan.\nSaat melancarkan serangan terakhir, jika Qingyi memicu <color=#FFFFFF>Perfect Dodge</color>, maka akan langsung memberikan {CAL:5+5,1,2} lapis <color=#FFFFFF>Subjugation</color>.\nSaat mengakibatkan Subjugation terhadap musuh normal atau musuh elite, jumlah lapisan yang diberikan akan berlipat ganda. Saat target sudah pulih dari status Stun, jumlah lapisan <color=#FFFFFF>Subjugation</color> akan direset.",
+                "3": "Saat serangan terakhir dari <color=#FFFFFF>Basic Attack: Enchanted Moonlit Blossoms</color> yang dilancarkan Qingyi mengenai musuh, akan memberikan 5 lapis <color=#FFFFFF>Subjugation</color> kepada musuh yang dapat ditumpuk hingga 20 lapis. Setiap lapis <color=#FFFFFF>Subjugation</color> dapat meningkatkan Kelipatan Stun DMG terhadap target sebesar <color=#2BAD00>2,7%</color>.\nSetiap kali melancarkan serangan menerjang dari <color=#FFFFFF>Basic Attack: Enchanted Moonlit Blossoms</color>, serangan terakhirnya akan mengakibatkan 1 lapis <color=#FFFFFF>Subjugation</color> tambahan.\nSaat melancarkan serangan terakhir, jika Qingyi memicu <color=#FFFFFF>Perfect Dodge</color>, maka akan langsung memberikan {CAL:5+5,1,2} lapis <color=#FFFFFF>Subjugation</color>.\nSaat mengakibatkan Subjugation terhadap musuh normal atau musuh elite, jumlah lapisan yang diberikan akan berlipat ganda. Saat target sudah pulih dari status Stun, jumlah lapisan <color=#FFFFFF>Subjugation</color> akan direset.",
+                "4": "Saat serangan terakhir dari <color=#FFFFFF>Basic Attack: Enchanted Moonlit Blossoms</color> yang dilancarkan Qingyi mengenai musuh, akan memberikan 5 lapis <color=#FFFFFF>Subjugation</color> kepada musuh yang dapat ditumpuk hingga 20 lapis. Setiap lapis <color=#FFFFFF>Subjugation</color> dapat meningkatkan Kelipatan Stun DMG terhadap target sebesar <color=#2BAD00>3%</color>.\nSetiap kali melancarkan serangan menerjang dari <color=#FFFFFF>Basic Attack: Enchanted Moonlit Blossoms</color>, serangan terakhirnya akan mengakibatkan 1 lapis <color=#FFFFFF>Subjugation</color> tambahan.\nSaat melancarkan serangan terakhir, jika Qingyi memicu <color=#FFFFFF>Perfect Dodge</color>, maka akan langsung memberikan {CAL:5+5,1,2} lapis <color=#FFFFFF>Subjugation</color>.\nSaat mengakibatkan Subjugation terhadap musuh normal atau musuh elite, jumlah lapisan yang diberikan akan berlipat ganda. Saat target sudah pulih dari status Stun, jumlah lapisan <color=#FFFFFF>Subjugation</color> akan direset.",
+                "5": "Saat serangan terakhir dari <color=#FFFFFF>Basic Attack: Enchanted Moonlit Blossoms</color> yang dilancarkan Qingyi mengenai musuh, akan memberikan 5 lapis <color=#FFFFFF>Subjugation</color> kepada musuh yang dapat ditumpuk hingga 20 lapis. Setiap lapis <color=#FFFFFF>Subjugation</color> dapat meningkatkan Kelipatan Stun DMG terhadap target sebesar <color=#2BAD00>3,4%</color>.\nSetiap kali melancarkan serangan menerjang dari <color=#FFFFFF>Basic Attack: Enchanted Moonlit Blossoms</color>, serangan terakhirnya akan mengakibatkan 1 lapis <color=#FFFFFF>Subjugation</color> tambahan.\nSaat melancarkan serangan terakhir, jika Qingyi memicu <color=#FFFFFF>Perfect Dodge</color>, maka akan langsung memberikan {CAL:5+5,1,2} lapis <color=#FFFFFF>Subjugation</color>.\nSaat mengakibatkan Subjugation terhadap musuh normal atau musuh elite, jumlah lapisan yang diberikan akan berlipat ganda. Saat target sudah pulih dari status Stun, jumlah lapisan <color=#FFFFFF>Subjugation</color> akan direset.",
+                "6": "Saat serangan terakhir dari <color=#FFFFFF>Basic Attack: Enchanted Moonlit Blossoms</color> yang dilancarkan Qingyi mengenai musuh, akan memberikan 5 lapis <color=#FFFFFF>Subjugation</color> kepada musuh yang dapat ditumpuk hingga 20 lapis. Setiap lapis <color=#FFFFFF>Subjugation</color> dapat meningkatkan Kelipatan Stun DMG terhadap target sebesar <color=#2BAD00>3,7%</color>.\nSetiap kali melancarkan serangan menerjang dari <color=#FFFFFF>Basic Attack: Enchanted Moonlit Blossoms</color>, serangan terakhirnya akan mengakibatkan 1 lapis <color=#FFFFFF>Subjugation</color> tambahan.\nSaat melancarkan serangan terakhir, jika Qingyi memicu <color=#FFFFFF>Perfect Dodge</color>, maka akan langsung memberikan {CAL:5+5,1,2} lapis <color=#FFFFFF>Subjugation</color>.\nSaat mengakibatkan Subjugation terhadap musuh normal atau musuh elite, jumlah lapisan yang diberikan akan berlipat ganda. Saat target sudah pulih dari status Stun, jumlah lapisan <color=#FFFFFF>Subjugation</color> akan direset.",
+                "7": "Saat serangan terakhir dari <color=#FFFFFF>Basic Attack: Enchanted Moonlit Blossoms</color> yang dilancarkan Qingyi mengenai musuh, akan memberikan 5 lapis <color=#FFFFFF>Subjugation</color> kepada musuh yang dapat ditumpuk hingga 20 lapis. Setiap lapis <color=#FFFFFF>Subjugation</color> dapat meningkatkan Kelipatan Stun DMG terhadap target sebesar <color=#2BAD00>4%</color>.\nSetiap kali melancarkan serangan menerjang dari <color=#FFFFFF>Basic Attack: Enchanted Moonlit Blossoms</color>, serangan terakhirnya akan mengakibatkan 1 lapis <color=#FFFFFF>Subjugation</color> tambahan.\nSaat melancarkan serangan terakhir, jika Qingyi memicu <color=#FFFFFF>Perfect Dodge</color>, maka akan langsung memberikan {CAL:5+5,1,2} lapis <color=#FFFFFF>Subjugation</color>.\nSaat mengakibatkan Subjugation terhadap musuh normal atau musuh elite, jumlah lapisan yang diberikan akan berlipat ganda. Saat target sudah pulih dari status Stun, jumlah lapisan <color=#FFFFFF>Subjugation</color> akan direset."
+            }
+        },
+        "MathSkill": {
+            "Title": "Additional Ability: Three Verses of Farewell at Yang Pass",
+            "Description": "Berlaku jika terdapat Agen <color=#FFFFFF>Attack</color> atau Agen yang berasal dari faksi yang sama di dalam tim:\nDaze yang diakibatkan dari <color=#FFFFFF>Basic Attack</color> meningkat 20%. Selain itu, jika Impact Qingyi melebihi 120 poin, setiap 1 poin yang melebihinya akan meningkatkan ATK Qingyi sebesar 6 poin. Peningkatan melalui cara ini dapat meningkatkan ATK sebanyak maks. 600 poin."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "125100001": {
+                "Title": "Basic Attack: Penultimate",
+                "Description": "Tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMelancarkan hingga empat tahap serangan Strike ke depan, mengakibatkan <color=#F0D12B>Physical DMG</color> dan <color=#2EB6FF>Electric DMG</color>.\nTekan <IconMap:Icon_Normal> berulang kali pada serangan tahap ketiga untuk melanjutkan kombo dan melancarkan Strike beruntun. Jika melakukan <color=#FFFFFF>Dodge</color> saat serangan ini berlangsung, kombo <color=#FFFFFF>Basic Attack</color> tidak akan terhentikan.\nJika berhenti menekan <IconMap:Icon_Normal> pada serangan tahap ketiga, maka kombo juga akan terhenti dan serangan akan lanjut ke tahap keempat. Jika kombo berlangsung selama batas waktu tertentu, serangan tahap keempat akan diperkuat.\nLevel Anti-Interrupt akan meningkat selama melancarkan serangan tahap ketiga dan keempat dan DMG yang diterima berkurang 40%."
+            },
+            "125100002": {
+                "Title": "Basic Attack: Enchanted Blossoms",
+                "Description": "Tahan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMelancarkan satu serangan menerjang ke depan dan mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nLevel Anti-Interrupt akan meningkat selama melancarkan Skill ini."
+            },
+            "125100003": {
+                "Title": "Flash Connect",
+                "Description": "Saat melancarkan Skill dan mengakibatkan <color=#2EB6FF>Electric DMG</color>, Qingyi akan mengakumulasi <color=#FFFFFF>Flash Connect Voltage</color>. Saat nilai akumulasi <color=#FFFFFF>Flash Connect Voltage</color> mencapai 75%, Qingyi akan memasuki status <color=#FFFFFF>Flash Connect</color>.\nSaat melancarkan <color=#FFFFFF>Basic Attack: Enchanted Moonlit Blossoms</color>, Qingyi akan menggunakan semua <color=#FFFFFF>Flash Connect Voltage</color> dan keluar dari status <color=#FFFFFF>Flash Connect</color>. Setiap 1% pengonsumsian <color=#FFFFFF>Flash Connect Voltage</color> yang melebihi 75% akan meningkatkan DMG/Daze yang diakibatkan dari Skill ini sebesar 1%/0,5%.\nElectric DMG yang diakibatkan dari <color=#FFFFFF>Basic Attack: Enchanted Moonlit Blossoms</color> tidak akan mengakumulasi <color=#FFFFFF>Flash Connect Voltage</color>."
+            },
+            "125100004": {
+                "Title": "Basic Attack: Enchanted Moonlit Blossoms",
+                "Description": "Selama <color=#FFFFFF>Flash Connect</color> berlangsung, tahan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMelancarkan lima kali serangan menerjang ke depan secara beruntun, sebelum melancarkan serangan terakhirnya dan mengakibatkan <color=#2EB6FF>Electric DMG</color> dalam jumlah besar.\nLepas <IconMap:Icon_Normal> selama Skill ini berlangsung untuk melancarkan serangan terakhir lebih awal.\nJika Qingyi melancarkan serangan terakhir tepat sebelum dirinya diserang, dia akan memicu <color=#FFFFFF>Perfect Dodge</color>.\nLevel Anti-Interrupt akan meningkat saat melancarkan serangan menerjang dan DMG yang diterima berkurang 40%. Qingyi akan menjadi kebal selama melancarkan serangan terakhir."
+            },
+            "125100016": {
+                "Title": "Basic Attack: Penultimate"
+            },
+            "125100017": {
+                "Description": "Kelipatan DMG: Tahap 1",
+                "Param": "{Skill:1251001, Prop:1001}"
+            },
+            "125100018": {
+                "Description": "Kelipatan DMG: Tahap 1 (Alternatif)",
+                "Param": "{Skill:1251002, Prop:1001}"
+            },
+            "125100019": {
+                "Description": "Kelipatan DMG: Tahap 2",
+                "Param": "{Skill:1251003, Prop:1001}"
+            },
+            "125100020": {
+                "Description": "Kelipatan DMG: Tahap 3",
+                "Param": "{Skill:1251004, Prop:1001}"
+            },
+            "125100021": {
+                "Description": "Kelipatan DMG: Tahap 4",
+                "Param": "{Skill:1251005, Prop:1001}"
+            },
+            "125100022": {
+                "Description": "Kelipatan DMG: Tahap 4 (Diperkuat)",
+                "Param": "{Skill:1251006, Prop:1001}"
+            },
+            "125100023": {
+                "Description": "Kelipatan Daze: Tahap 1",
+                "Param": "{Skill:1251001, Prop:1002}"
+            },
+            "125100024": {
+                "Description": "Kelipatan Daze: Tahap 1 (Alternatif)",
+                "Param": "{Skill:1251002, Prop:1002}"
+            },
+            "125100025": {
+                "Description": "Kelipatan Daze: Tahap 2",
+                "Param": "{Skill:1251003, Prop:1002}"
+            },
+            "125100026": {
+                "Description": "Kelipatan Daze: Tahap 3",
+                "Param": "{Skill:1251004, Prop:1002}"
+            },
+            "125100027": {
+                "Description": "Kelipatan Daze: Tahap 4",
+                "Param": "{Skill:1251005, Prop:1002}"
+            },
+            "125100028": {
+                "Description": "Kelipatan Daze: Tahap 4 (Diperkuat)",
+                "Param": "{Skill:1251006, Prop:1002}"
+            },
+            "125100029": {
+                "Title": "Basic Attack: Enchanted Blossoms"
+            },
+            "125100030": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1251007, Prop:1001}"
+            },
+            "125100031": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1251007, Prop:1002}"
+            },
+            "125100032": {
+                "Title": "Basic Attack: Enchanted Moonlit Blossoms"
+            },
+            "125100033": {
+                "Description": "Kelipatan DMG - Serangan Menerjang",
+                "Param": "{Skill:1251008, Prop:1001}"
+            },
+            "125100034": {
+                "Description": "Kelipatan DMG - Serangan Terakhir",
+                "Param": "{Skill:1251009, Prop:1001}"
+            },
+            "125100035": {
+                "Description": "Kelipatan Daze - Serangan Menerjang",
+                "Param": "{Skill:1251008, Prop:1002}"
+            },
+            "125100036": {
+                "Description": "Kelipatan Daze - Serangan Terakhir",
+                "Param": "{Skill:1251009, Prop:1002}"
+            }
+        },
+        "1": {
+            "125100005": {
+                "Title": "Special Attack: Sunlit Glory",
+                "Description": "Tekan <IconMap:Icon_Special> untuk melancarkan Skill ini.\nMenerjang ke atas sebelum melancarkan hantaman ke bawah, mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nLevel Anti-Interrupt akan meningkat selama melancarkan Skill ini."
+            },
+            "125100006": {
+                "Title": "EX Special Attack: Moonlit Begonia",
+                "Description": "Saat Energy Qingyi sudah cukup, tekan <IconMap:Icon_SpecialReady> untuk melancarkan Skill ini.\nMenerjang ke atas dan melompat tinggi, lalu berputar dan melancarkan serangan beruntun sebelum melancarkan hantaman kuat ke bawah, mengakibatkan <color=#2EB6FF>Electric DMG</color> dalam jumlah besar.\nSaat menahan <IconMap:Icon_SpecialReady>, Qingyi akan mengonsumsi Energy tambahan dan meningkatkan jumlah serangan beruntun saat berputar.\nKarakter akan menjadi kebal selama melancarkan Skill ini.\nSetelah melancarkan Skill ini, Qingyi dapat langsung melanjutkan serangannya dengan <color=#FFFFFF>Basic Attack</color> tahap ketiga."
+            },
+            "125100037": {
+                "Title": "Special Attack: Sunlit Glory"
+            },
+            "125100038": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1251010, Prop:1001}"
+            },
+            "125100039": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1251010, Prop:1002}"
+            },
+            "125100040": {
+                "Title": "EX Special Attack: Moonlit Begonia"
+            },
+            "125100041": {
+                "Description": "Kelipatan DMG",
+                "Param": "{{Skill:1251011, Prop:1001} + {Skill:1251021, Prop:1001} + {Skill:1251022, Prop:1001}}"
+            },
+            "125100042": {
+                "Description": "Kelipatan Daze",
+                "Param": "{{Skill:1251011, Prop:1002} + {Skill:1251021, Prop:1002} + {Skill:1251022, Prop:1002}}"
+            },
+            "125100043": {
+                "Description": "Konsumsi Energy",
+                "Param": "60 poin"
+            },
+            "125100044": {
+                "Description": "Konsumsi Energy Tambahan",
+                "Param": "20 poin"
+            }
+        },
+        "2": {
+            "125100007": {
+                "Title": "Dodge: Swan Song",
+                "Description": "Tekan <IconMap:Icon_Evade> untuk melakukan Dodge.\nMelakukan Dodge dengan cepat.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "125100008": {
+                "Title": "Dash Attack: Breach",
+                "Description": "Tekan <IconMap:Icon_Normal> saat melakukan Dodge untuk melancarkan Skill ini.\nMenerjang ke depan dan melancarkan serangan ke atas, mengakibatkan <color=#F0D12B>Physical DMG</color>."
+            },
+            "125100009": {
+                "Title": "Dodge Counter: Lingering Sentiments",
+                "Description": "Tekan <IconMap:Icon_Normal> setelah melakukan <color=#FFFFFF>Perfect Dodge</color> untuk melancarkan Skill ini.\nMelompat tinggi dan melancarkan serangan ke bawah, mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "125100045": {
+                "Title": "Dash Attack: Breach"
+            },
+            "125100046": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1251012, Prop:1001}"
+            },
+            "125100047": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1251012, Prop:1002}"
+            },
+            "125100048": {
+                "Title": "Dodge Counter: Lingering Sentiments"
+            },
+            "125100049": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1251013, Prop:1001}"
+            },
+            "125100050": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1251013, Prop:1002}"
+            }
+        },
+        "3": {
+            "125100010": {
+                "Title": "Chain Attack: Tranquil Serenade",
+                "Description": "Saat <color=#FFFFFF>Chain Attack</color> terpicu, pilih Qingyi untuk melancarkan Skill ini.\nMelancarkan Strike beruntun yang kuat ke area besar di depan dan mengakibatkan <color=#2EB6FF>Electric DMG</color> dalam jumlah besar.\nSaat serangan mengenai musuh, untuk setiap lapis <color=#FFFFFF>Subjugation</color> dari <color=#FFFFFF>Core Passive: Eternal Seasons</color> yang dimiliki target, DMG yang diakibatkan Skill ini akan meningkat 3% terhadap target tersebut.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "125100011": {
+                "Title": "Ultimate: Eight Sounds of Ganzhou",
+                "Description": "Saat Decibel Rating mencapai <color=#FFFFFF>Maximum</color>, tekan <IconMap:Icon_UltimateReady> untuk melancarkan Skill ini.\nMelancarkan Strike beruntun yang kuat dalam area besar sebelum melancarkan serangan terakhirnya, mengakibatkan <color=#2EB6FF>Electric DMG</color> dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "125100051": {
+                "Title": "Chain Attack: Tranquil Serenade"
+            },
+            "125100052": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1251014, Prop:1001}"
+            },
+            "125100053": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1251014, Prop:1002}"
+            },
+            "125100054": {
+                "Title": "Ultimate: Eight Sounds of Ganzhou"
+            },
+            "125100055": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1251015, Prop:1001}"
+            },
+            "125100056": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1251015, Prop:1002}"
+            }
+        },
+        "6": {
+            "125100013": {
+                "Title": "Quick Assist: Wind Through the Pines",
+                "Description": "Saat Agen yang Dikendalikan terhempas, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nMelompat tinggi dan melancarkan serangan ke bawah, mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "125100014": {
+                "Title": "Defensive Assist: Graceful Embellishment",
+                "Description": "Tepat sebelum Agen aktif diserang, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nMenangkis serangan musuh dan menghasilkan Daze dalam jumlah besar.\nSkill ini memiliki kemampuan menangkis yang luar biasa. Saat menerima serangan kuat, <color=#FFFFFF>Assist Point</color> yang dikonsumsi akan berkurang.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "125100015": {
+                "Title": "Assist Follow-Up: Song of the Clear River",
+                "Description": "Setelah melancarkan <color=#FFFFFF>Defensive Assist</color>, tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMenerjang ke depan dengan cepat untuk menyerang dan menancapkan energi listrik ke tanah yang akan kemudian meledak, mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "125100057": {
+                "Title": "Quick Assist: Wind Through the Pines"
+            },
+            "125100058": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1251016, Prop:1001}"
+            },
+            "125100059": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1251016, Prop:1002}"
+            },
+            "125100060": {
+                "Title": "Defensive Assist: Graceful Embellishment"
+            },
+            "125100061": {
+                "Description": "Kelipatan Daze - Light Defensive",
+                "Param": "{Skill:1251017, Prop:1002}"
+            },
+            "125100062": {
+                "Description": "Kelipatan Daze - Heavy Defensive",
+                "Param": "{Skill:1251018, Prop:1002}"
+            },
+            "125100063": {
+                "Description": "Kelipatan Daze - Chain Defensive",
+                "Param": "{Skill:1251019, Prop:1002}"
+            },
+            "125100064": {
+                "Title": "Assist Follow-Up: Song of the Clear River"
+            },
+            "125100065": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1251020, Prop:1001}"
+            },
+            "125100066": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1251020, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1251001": {
+            "DamageValue": 4720,
+            "DamageGrowth": 430,
+            "DazeValue": 2360,
+            "DazeGrowth": 110
+        },
+        "1251002": {
+            "DamageValue": 11030,
+            "DamageGrowth": 1010,
+            "DazeValue": 5520,
+            "DazeGrowth": 260
+        },
+        "1251003": {
+            "DamageValue": 12210,
+            "DamageGrowth": 1110,
+            "DazeValue": 8220,
+            "DazeGrowth": 380
+        },
+        "1251004": {
+            "DamageValue": 1760,
+            "DamageGrowth": 160,
+            "DazeValue": 1910,
+            "DazeGrowth": 90
+        },
+        "1251005": {
+            "DamageValue": 10640,
+            "DamageGrowth": 970,
+            "DazeValue": 10630,
+            "DazeGrowth": 490
+        },
+        "1251006": {
+            "DamageValue": 23440,
+            "DamageGrowth": 2140,
+            "DazeValue": 20470,
+            "DazeGrowth": 940
+        },
+        "1251007": {
+            "DamageValue": 8560,
+            "DamageGrowth": 780,
+            "DazeValue": 8560,
+            "DazeGrowth": 390
+        },
+        "1251008": {
+            "DamageValue": 44870,
+            "DamageGrowth": 4080,
+            "DazeValue": 27190,
+            "DazeGrowth": 1240
+        },
+        "1251009": {
+            "DamageValue": 39440,
+            "DamageGrowth": 3590,
+            "DazeValue": 21760,
+            "DazeGrowth": 990
+        },
+        "1251010": {
+            "DamageValue": 6240,
+            "DamageGrowth": 570,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1251011": {
+            "DamageValue": 15070,
+            "DamageGrowth": 1370,
+            "DazeValue": 11110,
+            "DazeGrowth": 510
+        },
+        "1251012": {
+            "DamageValue": 4950,
+            "DamageGrowth": 450,
+            "DazeValue": 2480,
+            "DazeGrowth": 120
+        },
+        "1251013": {
+            "DamageValue": 28400,
+            "DamageGrowth": 2590,
+            "DazeValue": 19040,
+            "DazeGrowth": 870
+        },
+        "1251014": {
+            "DamageValue": 64790,
+            "DamageGrowth": 5890,
+            "DazeValue": 20900,
+            "DazeGrowth": 950
+        },
+        "1251015": {
+            "DamageValue": 167070,
+            "DamageGrowth": 15190,
+            "DazeValue": 109710,
+            "DazeGrowth": 4990
+        },
+        "1251016": {
+            "DamageValue": 13390,
+            "DamageGrowth": 1220,
+            "DazeValue": 13390,
+            "DazeGrowth": 610
+        },
+        "1251017": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 24930,
+            "DazeGrowth": 1140
+        },
+        "1251018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 30430,
+            "DazeGrowth": 1390
+        },
+        "1251019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 12830,
+            "DazeGrowth": 590
+        },
+        "1251020": {
+            "DamageValue": 37640,
+            "DamageGrowth": 3430,
+            "DazeValue": 27900,
+            "DazeGrowth": 1270
+        },
+        "1251021": {
+            "DamageValue": 21100,
+            "DamageGrowth": 1920,
+            "DazeValue": 15550,
+            "DazeGrowth": 710
+        },
+        "1251022": {
+            "DamageValue": 24110,
+            "DamageGrowth": 2200,
+            "DazeValue": 17770,
+            "DazeGrowth": 810
+        }
+    }
+}

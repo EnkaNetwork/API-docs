@@ -1,0 +1,491 @@
+{
+    "Name": "雨果",
+    "ElementTypes": [
+        "Ice"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "仇恨之子",
+            "Description": "<color=#FFFFFF>[暗渊回响]</color>状态下，触发<color=#FFFFFF>[决算]</color>效果时招式的暴击率额外提升12%，暴击伤害额外提升30%。",
+            "Lore": "「不要否认你的欲望，不要抗拒你的野心。那是你与生俱来的天赋，是命运送给你最好的礼物！」\n「承认吧，你的内心埋着一枚火种，它早就迫不及待地想要点燃一场熊熊大火，将一切燃烧殆尽——」\n「我就是那颗种子。」\n\n「嗯，我知道。我一直都知道。」"
+        },
+        "2": {
+            "Title": "内在小孩",
+            "Description": "<color=#FFFFFF>[终结技：渎神者]</color>触发<color=#FFFFFF>[决算]</color>效果时不会使敌人的失衡状态结束；此外，触发<color=#FFFFFF>[决算]</color>效果时招式将会无视其15%防御力。",
+            "Lore": "「家族是刻在一个人身上永恒不灭的诅咒。」\n「无论你成长为何种模样，无论你去往何处，这份诅咒终将如影随形。」\n「在你跌入谷底，亦或是爬上巅峰的时候，它总会突然出现，把你变回那个无力的，无能的，只敢躲在衣柜里颤抖哭泣的孩子。」\n\n「除非你真正地看见他，拥抱他。」\n有些痛苦只有被看见，被接受，才会消弭。"
+        },
+        "3": {
+            "Title": "毒树之果",
+            "Description": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[连携技]</color> 技能等级+2",
+            "Lore": "他们说，深渊里开出的花必然浸透恶意，就像有毒的树上结不出无毒的果。\n但所有果实都会坠落。\n于是，他把自己摔成一场破碎的雨。\n雨水浸没大地，在每一颗露珠上折射崭新的黎明。"
+        },
+        "4": {
+            "Title": "拟剧论",
+            "Description": "蓄力射击命中敌人后，雨果的攻击对该目标无视12%<color=#98EFF0>冰属性伤害抗性</color>，持续15秒，重复触发时刷新持续时间。",
+            "Lore": "正义，邪恶，疯狂，理智，圆滑，固执。\n他由千万重面相组成。\n「那么，真正的你在哪里？」\n「这不重要。不如由你来告诉我，莱卡恩——」\n「你眼里看到的，又是怎样的我？」"
+        },
+        "5": {
+            "Title": "涅槃",
+            "Description": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[连携技]</color> 技能等级+2",
+            "Lore": "世界不需要被毁灭再重建，也没有谁有资格这么做。\n但人可以。\n所以，他将自己打碎再重生。\n「如果必须坠落，就让我坠落。我会成为的那个人，一定会接住我。」"
+        },
+        "6": {
+            "Title": "荆棘王冠",
+            "Description": "所有射击攻击命中敌人时，均可触发<color=#FFFFFF>[暗渊回响]</color>状态，最多持续6秒，重复触发时刷新持续时间；此外，任意招式触发<color=#FFFFFF>[决算]</color>效果时，此次伤害额外提升60%；<color=#FFFFFF>[强化特殊技：魂狩·惩戒]</color>的终结一击命中非失衡状态下的敌人时也可触发<color=#FFFFFF>[决算]</color>效果，使得招式的终结一击伤害倍率固定提升1000%。",
+            "Lore": "他欣然走向无尽深渊，任由满地荆棘划破伤口。\n血色蔓延处，破碎的尊严与执念自创口抽芽。\n而他捡起浸满血渍的荆棘，为自己加冕。\n「能杀我的人，能救我的人，从来都只有我自己。」"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "核心被动：终末裁决",
+            "DescriptionByLevel": {
+                "1": "<color=#FFFFFF>[连携技：命运戏法]</color>命中敌人或雨果的攻击使敌人失衡时，雨果获得<color=#FFFFFF>[暗渊回响]</color>状态，持续6秒，重复触发时刷新持续时间，该状态下雨果的暴击率提升12%，暴击伤害提升25%；\n队伍中存在其他1/2名<color=#FFFFFF>[击破]</color>角色时，雨果的攻击力提升<color=#2BAD00>25</color>/<color=#2BAD00>75</color>点；\n<color=#FFFFFF>[强化特殊技：魂狩·惩戒]</color>或<color=#FFFFFF>[终结技：渎神者]</color>的终结一击命中敌人时，若敌人处于失衡状态，会对其触发<color=#FFFFFF>[决算]</color>效果，使得招式的终结一击伤害倍率提升<color=#2BAD00>500%</color>，此外<color=#FFFFFF>[决算]</color>效果会根据触发时敌人剩余的失衡时间，使得该招式伤害倍率进一步提升：敌人失衡时间小于等于5秒的部分，每剩余1秒，招式伤害倍率提升<color=#2BAD00>140%</color>，5秒到15秒的部分，每剩余1秒，招式伤害倍率提升<color=#2BAD00>50%</color>，总共最多可以提升<color=#2BAD00>1700%</color>的招式伤害倍率；\n雨果触发<color=#FFFFFF>[决算]</color>效果后，敌人的失衡状态会立即结束，并且根据<color=#FFFFFF>[决算]</color>效果触发时该敌人剩余的失衡时间立即累积一定失衡值，失衡时间每剩余1秒，则积累5%失衡值，最多累积等同于敌人失衡值上限25%的失衡值；\n<color=#FFFFFF>[强化特殊技：魂狩·惩戒]</color>命中敌人时，若敌人处于非失衡状态，招式累积的失衡值提升20%。",
+                "2": "<color=#FFFFFF>[连携技：命运戏法]</color>命中敌人或雨果的攻击使敌人失衡时，雨果获得<color=#FFFFFF>[暗渊回响]</color>状态，持续6秒，重复触发时刷新持续时间，该状态下雨果的暴击率提升12%，暴击伤害提升25%；\n队伍中存在其他1/2名<color=#FFFFFF>[击破]</color>角色时，雨果的攻击力提升<color=#2BAD00>50</color>/<color=#2BAD00>150</color>点；\n<color=#FFFFFF>[强化特殊技：魂狩·惩戒]</color>或<color=#FFFFFF>[终结技：渎神者]</color>的终结一击命中敌人时，若敌人处于失衡状态，会对其触发<color=#FFFFFF>[决算]</color>效果，使得招式的终结一击伤害倍率提升<color=#2BAD00>583%</color>，此外<color=#FFFFFF>[决算]</color>效果会根据触发时敌人剩余的失衡时间，使得该招式伤害倍率进一步提升：敌人失衡时间小于等于5秒的部分，每剩余1秒，招式伤害倍率提升<color=#2BAD00>163%</color>，5秒到15秒的部分，每剩余1秒，招式伤害倍率提升<color=#2BAD00>58%</color>，总共最多可以提升<color=#2BAD00>1978%</color>的招式伤害倍率；\n雨果触发<color=#FFFFFF>[决算]</color>效果后，敌人的失衡状态会立即结束，并且根据<color=#FFFFFF>[决算]</color>效果触发时该敌人剩余的失衡时间立即累积一定失衡值，失衡时间每剩余1秒，则积累5%失衡值，最多累积等同于敌人失衡值上限25%的失衡值；\n<color=#FFFFFF>[强化特殊技：魂狩·惩戒]</color>命中敌人时，若敌人处于非失衡状态，招式累积的失衡值提升20%。",
+                "3": "<color=#FFFFFF>[连携技：命运戏法]</color>命中敌人或雨果的攻击使敌人失衡时，雨果获得<color=#FFFFFF>[暗渊回响]</color>状态，持续6秒，重复触发时刷新持续时间，该状态下雨果的暴击率提升12%，暴击伤害提升25%；\n队伍中存在其他1/2名<color=#FFFFFF>[击破]</color>角色时，雨果的攻击力提升<color=#2BAD00>80</color>/<color=#2BAD00>240</color>点；\n<color=#FFFFFF>[强化特殊技：魂狩·惩戒]</color>或<color=#FFFFFF>[终结技：渎神者]</color>的终结一击命中敌人时，若敌人处于失衡状态，会对其触发<color=#FFFFFF>[决算]</color>效果，使得招式的终结一击伤害倍率提升<color=#2BAD00>667%</color>，此外<color=#FFFFFF>[决算]</color>效果会根据触发时敌人剩余的失衡时间，使得该招式伤害倍率进一步提升：敌人失衡时间小于等于5秒的部分，每剩余1秒，招式伤害倍率提升<color=#2BAD00>187%</color>，5秒到15秒的部分，每剩余1秒，招式伤害倍率提升<color=#2BAD00>67%</color>，总共最多可以提升<color=#2BAD00>2272%</color>的招式伤害倍率；\n雨果触发<color=#FFFFFF>[决算]</color>效果后，敌人的失衡状态会立即结束，并且根据<color=#FFFFFF>[决算]</color>效果触发时该敌人剩余的失衡时间立即累积一定失衡值，失衡时间每剩余1秒，则积累5%失衡值，最多累积等同于敌人失衡值上限25%的失衡值；\n<color=#FFFFFF>[强化特殊技：魂狩·惩戒]</color>命中敌人时，若敌人处于非失衡状态，招式累积的失衡值提升20%。",
+                "4": "<color=#FFFFFF>[连携技：命运戏法]</color>命中敌人或雨果的攻击使敌人失衡时，雨果获得<color=#FFFFFF>[暗渊回响]</color>状态，持续6秒，重复触发时刷新持续时间，该状态下雨果的暴击率提升12%，暴击伤害提升25%；\n队伍中存在其他1/2名<color=#FFFFFF>[击破]</color>角色时，雨果的攻击力提升<color=#2BAD00>120</color>/<color=#2BAD00>360</color>点；\n<color=#FFFFFF>[强化特殊技：魂狩·惩戒]</color>或<color=#FFFFFF>[终结技：渎神者]</color>的终结一击命中敌人时，若敌人处于失衡状态，会对其触发<color=#FFFFFF>[决算]</color>效果，使得招式的终结一击伤害倍率提升<color=#2BAD00>750%</color>，此外<color=#FFFFFF>[决算]</color>效果会根据触发时敌人剩余的失衡时间，使得该招式伤害倍率进一步提升：敌人失衡时间小于等于5秒的部分，每剩余1秒，招式伤害倍率提升<color=#2BAD00>210%</color>，5秒到15秒的部分，每剩余1秒，招式伤害倍率提升<color=#2BAD00>75%</color>，总共最多可以提升<color=#2BAD00>2550%</color>的招式伤害倍率；\n雨果触发<color=#FFFFFF>[决算]</color>效果后，敌人的失衡状态会立即结束，并且根据<color=#FFFFFF>[决算]</color>效果触发时该敌人剩余的失衡时间立即累积一定失衡值，失衡时间每剩余1秒，则积累5%失衡值，最多累积等同于敌人失衡值上限25%的失衡值；\n<color=#FFFFFF>[强化特殊技：魂狩·惩戒]</color>命中敌人时，若敌人处于非失衡状态，招式累积的失衡值提升20%。",
+                "5": "<color=#FFFFFF>[连携技：命运戏法]</color>命中敌人或雨果的攻击使敌人失衡时，雨果获得<color=#FFFFFF>[暗渊回响]</color>状态，持续6秒，重复触发时刷新持续时间，该状态下雨果的暴击率提升12%，暴击伤害提升25%；\n队伍中存在其他1/2名<color=#FFFFFF>[击破]</color>角色时，雨果的攻击力提升<color=#2BAD00>180</color>/<color=#2BAD00>540</color>点；\n<color=#FFFFFF>[强化特殊技：魂狩·惩戒]</color>或<color=#FFFFFF>[终结技：渎神者]</color>的终结一击命中敌人时，若敌人处于失衡状态，会对其触发<color=#FFFFFF>[决算]</color>效果，使得招式的终结一击伤害倍率提升<color=#2BAD00>833%</color>，此外<color=#FFFFFF>[决算]</color>效果会根据触发时敌人剩余的失衡时间，使得该招式伤害倍率进一步提升：敌人失衡时间小于等于5秒的部分，每剩余1秒，招式伤害倍率提升<color=#2BAD00>233%</color>，5秒到15秒的部分，每剩余1秒，招式伤害倍率提升<color=#2BAD00>83%</color>，总共最多可以提升<color=#2BAD00>2828%</color>的招式伤害倍率；\n雨果触发<color=#FFFFFF>[决算]</color>效果后，敌人的失衡状态会立即结束，并且根据<color=#FFFFFF>[决算]</color>效果触发时该敌人剩余的失衡时间立即累积一定失衡值，失衡时间每剩余1秒，则积累5%失衡值，最多累积等同于敌人失衡值上限25%的失衡值；\n<color=#FFFFFF>[强化特殊技：魂狩·惩戒]</color>命中敌人时，若敌人处于非失衡状态，招式累积的失衡值提升20%。",
+                "6": "<color=#FFFFFF>[连携技：命运戏法]</color>命中敌人或雨果的攻击使敌人失衡时，雨果获得<color=#FFFFFF>[暗渊回响]</color>状态，持续6秒，重复触发时刷新持续时间，该状态下雨果的暴击率提升12%，暴击伤害提升25%；\n队伍中存在其他1/2名<color=#FFFFFF>[击破]</color>角色时，雨果的攻击力提升<color=#2BAD00>270</color>/<color=#2BAD00>810</color>点；\n<color=#FFFFFF>[强化特殊技：魂狩·惩戒]</color>或<color=#FFFFFF>[终结技：渎神者]</color>的终结一击命中敌人时，若敌人处于失衡状态，会对其触发<color=#FFFFFF>[决算]</color>效果，使得招式的终结一击伤害倍率提升<color=#2BAD00>917%</color>，此外<color=#FFFFFF>[决算]</color>效果会根据触发时敌人剩余的失衡时间，使得该招式伤害倍率进一步提升：敌人失衡时间小于等于5秒的部分，每剩余1秒，招式伤害倍率提升<color=#2BAD00>257%</color>，5秒到15秒的部分，每剩余1秒，招式伤害倍率提升<color=#2BAD00>92%</color>，总共最多可以提升<color=#2BAD00>3122%</color>的招式伤害倍率；\n雨果触发<color=#FFFFFF>[决算]</color>效果后，敌人的失衡状态会立即结束，并且根据<color=#FFFFFF>[决算]</color>效果触发时该敌人剩余的失衡时间立即累积一定失衡值，失衡时间每剩余1秒，则积累5%失衡值，最多累积等同于敌人失衡值上限25%的失衡值；\n<color=#FFFFFF>[强化特殊技：魂狩·惩戒]</color>命中敌人时，若敌人处于非失衡状态，招式累积的失衡值提升20%。",
+                "7": "<color=#FFFFFF>[连携技：命运戏法]</color>命中敌人或雨果的攻击使敌人失衡时，雨果获得<color=#FFFFFF>[暗渊回响]</color>状态，持续6秒，重复触发时刷新持续时间，该状态下雨果的暴击率提升12%，暴击伤害提升25%；\n队伍中存在其他1/2名<color=#FFFFFF>[击破]</color>角色时，雨果的攻击力提升<color=#2BAD00>300</color>/<color=#2BAD00>900</color>点；\n<color=#FFFFFF>[强化特殊技：魂狩·惩戒]</color>或<color=#FFFFFF>[终结技：渎神者]</color>的终结一击命中敌人时，若敌人处于失衡状态，会对其触发<color=#FFFFFF>[决算]</color>效果，使得招式的终结一击伤害倍率提升<color=#2BAD00>1000%</color>，此外<color=#FFFFFF>[决算]</color>效果会根据触发时敌人剩余的失衡时间，使得该招式伤害倍率进一步提升：敌人失衡时间小于等于5秒的部分，每剩余1秒，招式伤害倍率提升<color=#2BAD00>280%</color>，5秒到15秒的部分，每剩余1秒，招式伤害倍率提升<color=#2BAD00>100%</color>，总共最多可以提升<color=#2BAD00>3400%</color>的招式伤害倍率；\n雨果触发<color=#FFFFFF>[决算]</color>效果后，敌人的失衡状态会立即结束，并且根据<color=#FFFFFF>[决算]</color>效果触发时该敌人剩余的失衡时间立即累积一定失衡值，失衡时间每剩余1秒，则积累5%失衡值，最多累积等同于敌人失衡值上限25%的失衡值；\n<color=#FFFFFF>[强化特殊技：魂狩·惩戒]</color>命中敌人时，若敌人处于非失衡状态，招式累积的失衡值提升20%。"
+            }
+        },
+        "MathSkill": {
+            "Title": "额外能力：终焉序曲",
+            "Description": "队伍中存在其他<color=#FFFFFF>[击破]</color>角色或与自身属性相同的角色时触发：\n<color=#FFFFFF>[连携技：命运戏法]</color>造成的伤害提升15%，对普通敌人造成的伤害额外提升35%；触发<color=#FFFFFF>[决算]</color>时，招式造成的伤害提升40%，<color=#FFFFFF>[强化特殊技：魂狩·惩戒]</color>对普通敌人触发<color=#FFFFFF>[决算]</color>效果时额外回复20点能量，能量回复效果30秒内最多触发一次。"
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "129100001": {
+                "Title": "普通攻击：暗渊四重奏",
+                "Description": "点按 <IconMap:Icon_Normal> 发动：\n向前方进行至多四段的攻击，造成<color=#F0D12B>物理伤害</color>和<color=#98EFF0>冰属性伤害</color>；\n招式第四段攻击为射击攻击，射击攻击发动期间长按<IconMap:Icon_Normal>可以进行蓄力，从而发动蓄力射击；\n第四段攻击招式发动期间抗打断等级提升，受到的伤害降低40%。"
+            },
+            "129100002": {
+                "Title": "普通攻击：暗渊协奏曲",
+                "Description": "发动<color=#FFFFFF>[普通攻击：暗渊四重奏]</color>第四段后、发动<color=#FFFFFF>[闪避反击：诡影·斩]</color>的射击攻击后、发动<color=#FFFFFF>[快速支援：葬歌]</color>的射击攻击后，点按或长按 <IconMap:Icon_Normal> 发动：\n扔出镰刀向前方发动斩击，随后发动射击攻击，造成<color=#98EFF0>冰属性伤害</color>；\n射击攻击期间长按<IconMap:Icon_Normal>可以进行蓄力，从而发动蓄力射击；\n招式发动期间抗打断等级提升，受到的伤害降低40%。"
+            },
+            "129100014": {
+                "Title": "普通攻击：暗渊四重奏"
+            },
+            "129100015": {
+                "Description": "一段伤害倍率",
+                "Param": "{Skill:1291001, Prop:1001}"
+            },
+            "129100016": {
+                "Description": "二段伤害倍率",
+                "Param": "{Skill:1291002, Prop:1001}"
+            },
+            "129100017": {
+                "Description": "三段伤害倍率",
+                "Param": "{Skill:1291003, Prop:1001}"
+            },
+            "129100018": {
+                "Description": "斩击伤害倍率",
+                "Param": "{Skill:1291004, Prop:1001}"
+            },
+            "129100019": {
+                "Description": "射击伤害倍率",
+                "Param": "{Skill:1291005, Prop:1001}"
+            },
+            "129100020": {
+                "Description": "蓄力射击伤害倍率",
+                "Param": "{Skill:1291006, Prop:1001}"
+            },
+            "129100021": {
+                "Description": "一段失衡倍率",
+                "Param": "{Skill:1291001, Prop:1002}"
+            },
+            "129100022": {
+                "Description": "二段失衡倍率",
+                "Param": "{Skill:1291002, Prop:1002}"
+            },
+            "129100023": {
+                "Description": "三段失衡倍率",
+                "Param": "{Skill:1291003, Prop:1002}"
+            },
+            "129100024": {
+                "Description": "斩击失衡倍率",
+                "Param": "{Skill:1291004, Prop:1002}"
+            },
+            "129100025": {
+                "Description": "射击失衡倍率",
+                "Param": "{Skill:1291005, Prop:1002}"
+            },
+            "129100026": {
+                "Description": "蓄力射击失衡倍率",
+                "Param": "{Skill:1291006, Prop:1002}"
+            },
+            "129100027": {
+                "Title": "普通攻击：暗渊协奏曲"
+            },
+            "129100028": {
+                "Description": "斩击伤害倍率",
+                "Param": "{Skill:1291024, Prop:1001}"
+            },
+            "129100029": {
+                "Description": "射击伤害倍率",
+                "Param": "{Skill:1291025, Prop:1001}"
+            },
+            "129100030": {
+                "Description": "蓄力射击伤害倍率",
+                "Param": "{Skill:1291026, Prop:1001}"
+            },
+            "129100031": {
+                "Description": "斩击失衡倍率",
+                "Param": "{Skill:1291024, Prop:1002}"
+            },
+            "129100032": {
+                "Description": "射击失衡倍率",
+                "Param": "{Skill:1291025, Prop:1002}"
+            },
+            "129100033": {
+                "Description": "蓄力射击失衡倍率",
+                "Param": "{Skill:1291026, Prop:1002}"
+            }
+        },
+        "1": {
+            "129100003": {
+                "Title": "特殊技：魂狩·断罪",
+                "Description": "点按 <IconMap:Icon_Special> 发动：\n旋转镰刀后向前方发动斩击，造成<color=#98EFF0>冰属性伤害</color>；\n招式发动期间抗打断等级提升。"
+            },
+            "129100004": {
+                "Title": "强化特殊技：魂狩·惩戒",
+                "Description": "能量足够时，点按 <IconMap:Icon_SpecialReady> 发动：\n旋转镰刀攻击，随后进行终结一击，造成大量<color=#98EFF0>冰属性伤害</color>；\n招式视为非重击；\n招式发动后可直接衔接<color=#FFFFFF>[普通攻击：暗渊四重奏]</color>的第四段攻击；\n招式发动期间拥有无敌效果。"
+            },
+            "129100037": {
+                "Title": "特殊技：魂狩·断罪"
+            },
+            "129100038": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1291008, Prop:1001}"
+            },
+            "129100039": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1291008, Prop:1002}"
+            },
+            "129100040": {
+                "Title": "强化特殊技：魂狩·惩戒"
+            },
+            "129100041": {
+                "Description": "伤害倍率",
+                "Param": "{{Skill:1291009, Prop:1001} + {Skill:1291010, Prop:1001}}"
+            },
+            "129100042": {
+                "Description": "失衡倍率",
+                "Param": "{{Skill:1291009, Prop:1002} + {Skill:1291010, Prop:1002}}"
+            },
+            "129100043": {
+                "Description": "能量消耗",
+                "Param": "40点"
+            }
+        },
+        "2": {
+            "129100005": {
+                "Title": "闪避：诡影",
+                "Description": "点按 <IconMap:Icon_Evade> 发动：\n快速的冲刺闪避；\n招式发动期间拥有无敌效果。"
+            },
+            "129100006": {
+                "Title": "冲刺攻击：诡影·破",
+                "Description": "闪避时，点按 <IconMap:Icon_Normal> 发动：\n向前方进行突进攻击，造成<color=#F0D12B>物理伤害</color>。"
+            },
+            "129100007": {
+                "Title": "闪避反击：诡影·斩",
+                "Description": "触发<color=#FFFFFF>[极限闪避]</color>后，点按 <IconMap:Icon_Normal> 发动：\n对前方敌人发动连续攻击，造成<color=#98EFF0>冰属性伤害</color>；\n招式发动期间长按 <IconMap:Icon_Normal> 可以发动射击攻击，射击攻击期间长按<IconMap:Icon_Normal>可以进行蓄力，从而发动蓄力射击；\n发动射击攻击视为发动一次普通攻击，伤害视为普通攻击伤害；\n招式发动后可直接衔接<color=#FFFFFF>[普通攻击：暗渊四重奏]</color>的第四段攻击；\n招式射击期间抗打断等级提升，受到的伤害降低40%;\n招式斩击期间与射击后撤期间拥有无敌效果。"
+            },
+            "129100044": {
+                "Title": "冲刺攻击：诡影·破"
+            },
+            "129100045": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1291011, Prop:1001}"
+            },
+            "129100046": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1291011, Prop:1002}"
+            },
+            "129100047": {
+                "Title": "闪避反击：诡影·斩"
+            },
+            "129100048": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1291012, Prop:1001}"
+            },
+            "129100049": {
+                "Description": "派生射击伤害倍率",
+                "Param": "{Skill:1291013, Prop:1001}"
+            },
+            "129100050": {
+                "Description": "派生蓄力射击伤害倍率",
+                "Param": "{Skill:1291014, Prop:1001}"
+            },
+            "129100051": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1291012, Prop:1002}"
+            },
+            "129100052": {
+                "Description": "派生射击失衡倍率",
+                "Param": "{Skill:1291013, Prop:1002}"
+            },
+            "129100053": {
+                "Description": "派生蓄力射击失衡倍率",
+                "Param": "{Skill:1291014, Prop:1002}"
+            }
+        },
+        "3": {
+            "129100008": {
+                "Title": "连携技：命运戏法",
+                "Description": "触发<color=#FFFFFF>[连携技]</color>时，选择对应角色发动：\n快速突进向前方发动大范围斩击，随后发动射击攻击，造成大量<color=#98EFF0>冰属性伤害</color>；\n招式发动的射击攻击视为蓄力射击；\n招式发动期间拥有无敌效果。"
+            },
+            "129100009": {
+                "Title": "终结技：渎神者",
+                "Description": "喧响等级达到<color=#FFFFFF>[极]</color>时，点按 <IconMap:Icon_UltimateReady> 发动：\n丢出镰刀对前方敌人发动强力旋转攻击，随后进行终结一击，造成大量<color=#98EFF0>冰属性伤害</color>；\n招式视为非重击；\n招式发动后可直接衔接<color=#FFFFFF>[普通攻击：暗渊四重奏]</color>的第四段攻击；\n招式发动期间拥有无敌效果。"
+            },
+            "129100054": {
+                "Title": "连携技：命运戏法"
+            },
+            "129100055": {
+                "Description": "斩击伤害倍率",
+                "Param": "{Skill:1291015, Prop:1001}"
+            },
+            "129100056": {
+                "Description": "斩击失衡倍率",
+                "Param": "{Skill:1291015, Prop:1002}"
+            },
+            "129100057": {
+                "Title": "终结技：渎神者"
+            },
+            "129100058": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1291018, Prop:1001}"
+            },
+            "129100059": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1291018, Prop:1002}"
+            }
+        },
+        "6": {
+            "129100011": {
+                "Title": "快速支援：葬歌",
+                "Description": "当前操作中的角色被击飞时，点按 <IconMap:Icon_Switch> 发动：\n对前方敌人发动连续攻击，造成<color=#98EFF0>冰属性伤害</color>；\n招式发动期间长按 <IconMap:Icon_Normal> 可以发动射击攻击，射击攻击期间长按<IconMap:Icon_Normal>可以进行蓄力，从而发动蓄力射击；\n发动射击攻击视为发动一次普通攻击，伤害视为普通攻击伤害；\n招式发动后可直接衔接<color=#FFFFFF>[普通攻击：暗渊四重奏]</color>的第四段攻击；\n招式射击期间抗打断等级提升，受到的伤害降低40%;\n招式斩击期间与射击后撤期间拥有无敌效果。"
+            },
+            "129100012": {
+                "Title": "招架支援：死期未至",
+                "Description": "前场角色即将被攻击时，点按 <IconMap:Icon_Switch> 发动：\n招架敌人的攻击，累积大量失衡值；\n招式发动期间拥有无敌效果。"
+            },
+            "129100013": {
+                "Title": "支援突击：王牌反转",
+                "Description": "发动<color=#FFFFFF>[招架支援]</color>后，点按 <IconMap:Icon_Normal> 发动：\n快速突进并发动两次斩击，造成<color=#98EFF0>冰属性伤害</color>；\n招式发动后可直接衔接<color=#FFFFFF>[普通攻击：暗渊四重奏]</color>的第四段攻击；\n招式发动期间拥有无敌效果。"
+            },
+            "129100060": {
+                "Title": "快速支援：葬歌"
+            },
+            "129100061": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1291019, Prop:1001}"
+            },
+            "129100062": {
+                "Description": "派生射击伤害倍率",
+                "Param": "{Skill:1291027, Prop:1001}"
+            },
+            "129100063": {
+                "Description": "派生蓄力射击伤害倍率",
+                "Param": "{Skill:1291028, Prop:1001}"
+            },
+            "129100064": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1291019, Prop:1002}"
+            },
+            "129100065": {
+                "Description": "派生射击失衡倍率",
+                "Param": "{Skill:1291027, Prop:1002}"
+            },
+            "129100066": {
+                "Description": "派生蓄力射击失衡倍率",
+                "Param": "{Skill:1291028, Prop:1002}"
+            },
+            "129100067": {
+                "Title": "招架支援：死期未至"
+            },
+            "129100068": {
+                "Description": "轻招架失衡倍率",
+                "Param": "{Skill:1291020, Prop:1002}"
+            },
+            "129100069": {
+                "Description": "重招架失衡倍率",
+                "Param": "{Skill:1291021, Prop:1002}"
+            },
+            "129100070": {
+                "Description": "连续招架失衡倍率",
+                "Param": "{Skill:1291022, Prop:1002}"
+            },
+            "129100071": {
+                "Title": "支援突击：王牌反转"
+            },
+            "129100072": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1291023, Prop:1001}"
+            },
+            "129100073": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1291023, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1291001": {
+            "DamageValue": 4310,
+            "DamageGrowth": 400,
+            "DazeValue": 2160,
+            "DazeGrowth": 100
+        },
+        "1291002": {
+            "DamageValue": 7410,
+            "DamageGrowth": 680,
+            "DazeValue": 5490,
+            "DazeGrowth": 250
+        },
+        "1291003": {
+            "DamageValue": 16960,
+            "DamageGrowth": 1550,
+            "DazeValue": 12810,
+            "DazeGrowth": 590
+        },
+        "1291004": {
+            "DamageValue": 14910,
+            "DamageGrowth": 1360,
+            "DazeValue": 12580,
+            "DazeGrowth": 580
+        },
+        "1291005": {
+            "DamageValue": 5860,
+            "DamageGrowth": 540,
+            "DazeValue": 5010,
+            "DazeGrowth": 230
+        },
+        "1291006": {
+            "DamageValue": 11800,
+            "DamageGrowth": 1080,
+            "DazeValue": 9570,
+            "DazeGrowth": 440
+        },
+        "1291007": {
+            "DamageValue": 7000,
+            "DamageGrowth": 640,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1291008": {
+            "DamageValue": 8530,
+            "DamageGrowth": 780,
+            "DazeValue": 8530,
+            "DazeGrowth": 390
+        },
+        "1291009": {
+            "DamageValue": 1870,
+            "DamageGrowth": 170,
+            "DazeValue": 43240,
+            "DazeGrowth": 1970
+        },
+        "1291010": {
+            "DamageValue": 35450,
+            "DamageGrowth": 3230,
+            "DazeValue": 2280,
+            "DazeGrowth": 110
+        },
+        "1291011": {
+            "DamageValue": 9350,
+            "DamageGrowth": 850,
+            "DazeValue": 4680,
+            "DazeGrowth": 220
+        },
+        "1291012": {
+            "DamageValue": 24590,
+            "DamageGrowth": 2240,
+            "DazeValue": 21450,
+            "DazeGrowth": 980
+        },
+        "1291013": {
+            "DamageValue": 16210,
+            "DamageGrowth": 1480,
+            "DazeValue": 12470,
+            "DazeGrowth": 570
+        },
+        "1291014": {
+            "DamageValue": 21210,
+            "DamageGrowth": 1930,
+            "DazeValue": 16320,
+            "DazeGrowth": 750
+        },
+        "1291015": {
+            "DamageValue": 70110,
+            "DamageGrowth": 6380,
+            "DazeValue": 26220,
+            "DazeGrowth": 1200
+        },
+        "1291018": {
+            "DamageValue": 152710,
+            "DamageGrowth": 13890,
+            "DazeValue": 26420,
+            "DazeGrowth": 1210
+        },
+        "1291019": {
+            "DamageValue": 10450,
+            "DamageGrowth": 950,
+            "DazeValue": 5230,
+            "DazeGrowth": 240
+        },
+        "1291020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1291021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1291022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1291023": {
+            "DamageValue": 29170,
+            "DamageGrowth": 2660,
+            "DazeValue": 24910,
+            "DazeGrowth": 1140
+        },
+        "1291024": {
+            "DamageValue": 14340,
+            "DamageGrowth": 1310,
+            "DazeValue": 11030,
+            "DazeGrowth": 510
+        },
+        "1291025": {
+            "DamageValue": 8670,
+            "DamageGrowth": 790,
+            "DazeValue": 6670,
+            "DazeGrowth": 310
+        },
+        "1291026": {
+            "DamageValue": 17060,
+            "DamageGrowth": 1560,
+            "DazeValue": 13120,
+            "DazeGrowth": 600
+        },
+        "1291027": {
+            "DamageValue": 12470,
+            "DamageGrowth": 1140,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1291028": {
+            "DamageValue": 16320,
+            "DamageGrowth": 1490,
+            "DazeValue": 8160,
+            "DazeGrowth": 380
+        }
+    }
+}

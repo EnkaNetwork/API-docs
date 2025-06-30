@@ -1,0 +1,534 @@
+{
+    "Name": "ジェーン",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "犯罪のプロ",
+            "Description": "ジェーンの<color=#FFFFFF>『通常攻撃：サルコウ・ジャンプ』</color>最大発動可能回数が1回増える。<color=#FFFFFF>「熱狂」</color>状態にある時、ジェーンの<color=#F0D12B>物理属性の状態異常蓄積効率</color>が追加で+15%、また異常マスタリー1Ptにつき、自身の与ダメージ+0.1%、最大+30%。",
+            "Lore": "「あくまで犯罪行動学のプロだから、悪いことをするプロじゃないの」\nそう言うとふいにジェーンは顔を近づけ、息のかかる距離でまばたきをした。\n「もちろん、アンタが後者だって思いたいなら…アタイは別にいいけど」"
+        },
+        "2": {
+            "Title": "朱に交われば赤くなる",
+            "Description": "ジェーンの攻撃が<color=#FFFFFF>「噛み傷」</color>状態の敵に命中、または任意のメンバーが<color=#FFFFFF>「噛み傷」</color>状態の敵に<color=#F0D12B>「強撃」</color>効果を発動した時、ターゲットの防御力を15%無視する。<color=#F0D12B>「強撃」</color>ダメージで会心が出た時、会心ダメージが追加で+50%。",
+            "Lore": "深淵をのぞくとき、深淵と目が合うのは、ほんの第一歩にすぎない。\n「深淵に近づいて、浸かって、理解するの。これが第二歩」\n「最後の一歩は…深淵に『なって』しまわないこと」"
+        },
+        "3": {
+            "Title": "名無し",
+            "Description": "<color=#FFFFFF>『通常攻撃』</color>、<color=#FFFFFF>『回避』</color>、<color=#FFFFFF>『支援スキル』</color>、<color=#FFFFFF>『特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>のスキルレベル+2",
+            "Lore": "「名前が無いから、誰にだってなれるの。\n例えば、アンタがいちばん好きな人とか…」\n「…いちばん怖い人、とか」"
+        },
+        "4": {
+            "Title": "秤の傾くほう",
+            "Description": "任意のメンバーが<color=#F0D12B>「強撃」</color>または<color=#FFFFFF>「混沌」</color>効果を発動した時、メンバー全員の与える状態異常ダメージ+18%、継続時間15秒。",
+            "Lore": "「どっちが獲物で狩人かなんて、そんなの見方によるわ。\nでもアタイは…もっとシンプルに決めたいの」\n「——負けた方が、獲物」"
+        },
+        "5": {
+            "Title": "ためこみ癖",
+            "Description": "<color=#FFFFFF>『通常攻撃』</color>、<color=#FFFFFF>『回避』</color>、<color=#FFFFFF>『支援スキル』</color>、<color=#FFFFFF>『特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>のスキルレベル+2",
+            "Lore": "ジェーンの部屋には、ありとあらゆる物がため込まれている。\nその大半を占めるのはインスタント食品だ。\n「どう？手の届くところに食べ物があるって、すっごくいいわよね～」"
+        },
+        "6": {
+            "Title": "「汚い」やり方",
+            "Description": "<color=#FFFFFF>「熱狂」</color>状態にある時、ジェーンの会心率+20%、会心ダメージ+40%。任意のメンバーが敵に<color=#F0D12B>「強撃」</color>効果を発動した時、ジェーンはそのまま<color=#FFFFFF>「熱狂」</color>状態に入り、<color=#FFFFFF>「熱狂フロウ」</color>が最大まで溜まる。今回の<color=#F0D12B>『強撃』</color>ダメージで会心が出ると、さらにターゲットに対して追加攻撃を1回行い、ジェーンの異常マスタリー1600%分の<color=#F0D12B>物理属性ダメージ</color>を与える。",
+            "Lore": "ストリートで勝利という結果を掴むためなら、あらゆる手段は肯定される。\n「いちばん暗いところの欲望を見透かしてあげるの…\nだって、そこがいちばん弱いんだから」"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "コアパッシブ：洞察",
+            "DescriptionByLevel": {
+                "1": "ジェーンの攻撃が命中した敵は<color=#FFFFFF>「噛み傷」</color>状態に入る、継続時間10秒。任意のメンバーが<color=#FFFFFF>「噛み傷」</color>状態の敵に<color=#F0D12B>「強撃」</color>効果を発動し、<color=#F0D12B>「畏縮」</color>効果を付与した時、<color=#F0D12B>「畏縮」</color>効果の持続時間が5秒延長される。<color=#FFFFFF>「噛み傷」</color>状態にある敵に与える<color=#F0D12B>「強撃」</color>ダメージが確率で会心を出すようになる、基礎会心率は<color=#2BAD00>20%</color>、会心ダメージは50%。ジェーンの異常マスタリー1Ptにつき、この効果の会心率が追加で+<color=#2BAD00>0.1%</color>。",
+                "2": "ジェーンの攻撃が命中した敵は<color=#FFFFFF>「噛み傷」</color>状態に入る、継続時間10秒。任意のメンバーが<color=#FFFFFF>「噛み傷」</color>状態の敵に<color=#F0D12B>「強撃」</color>効果を発動し、<color=#F0D12B>「畏縮」</color>効果を付与した時、<color=#F0D12B>「畏縮」</color>効果の持続時間が5秒延長される。<color=#FFFFFF>「噛み傷」</color>状態にある敵に与える<color=#F0D12B>「強撃」</color>ダメージが確率で会心を出すようになる、基礎会心率は<color=#2BAD00>25%</color>、会心ダメージは50%。ジェーンの異常マスタリー1Ptにつき、この効果の会心率が追加で+<color=#2BAD00>0.11%</color>。",
+                "3": "ジェーンの攻撃が命中した敵は<color=#FFFFFF>「噛み傷」</color>状態に入る、継続時間10秒。任意のメンバーが<color=#FFFFFF>「噛み傷」</color>状態の敵に<color=#F0D12B>「強撃」</color>効果を発動し、<color=#F0D12B>「畏縮」</color>効果を付与した時、<color=#F0D12B>「畏縮」</color>効果の持続時間が5秒延長される。<color=#FFFFFF>「噛み傷」</color>状態にある敵に与える<color=#F0D12B>「強撃」</color>ダメージが確率で会心を出すようになる、基礎会心率は<color=#2BAD00>28%</color>、会心ダメージは50%。ジェーンの異常マスタリー1Ptにつき、この効果の会心率が追加で+<color=#2BAD00>0.12%</color>。",
+                "4": "ジェーンの攻撃が命中した敵は<color=#FFFFFF>「噛み傷」</color>状態に入る、継続時間10秒。任意のメンバーが<color=#FFFFFF>「噛み傷」</color>状態の敵に<color=#F0D12B>「強撃」</color>効果を発動し、<color=#F0D12B>「畏縮」</color>効果を付与した時、<color=#F0D12B>「畏縮」</color>効果の持続時間が5秒延長される。<color=#FFFFFF>「噛み傷」</color>状態にある敵に与える<color=#F0D12B>「強撃」</color>ダメージが確率で会心を出すようになる、基礎会心率は<color=#2BAD00>31%</color>、会心ダメージは50%。ジェーンの異常マスタリー1Ptにつき、この効果の会心率が追加で+<color=#2BAD00>0.13%</color>。",
+                "5": "ジェーンの攻撃が命中した敵は<color=#FFFFFF>「噛み傷」</color>状態に入る、継続時間10秒。任意のメンバーが<color=#FFFFFF>「噛み傷」</color>状態の敵に<color=#F0D12B>「強撃」</color>効果を発動し、<color=#F0D12B>「畏縮」</color>効果を付与した時、<color=#F0D12B>「畏縮」</color>効果の持続時間が5秒延長される。<color=#FFFFFF>「噛み傷」</color>状態にある敵に与える<color=#F0D12B>「強撃」</color>ダメージが確率で会心を出すようになる、基礎会心率は<color=#2BAD00>34%</color>、会心ダメージは50%。ジェーンの異常マスタリー1Ptにつき、この効果の会心率が追加で+<color=#2BAD00>0.14%</color>。",
+                "6": "ジェーンの攻撃が命中した敵は<color=#FFFFFF>「噛み傷」</color>状態に入る、継続時間10秒。任意のメンバーが<color=#FFFFFF>「噛み傷」</color>状態の敵に<color=#F0D12B>「強撃」</color>効果を発動し、<color=#F0D12B>「畏縮」</color>効果を付与した時、<color=#F0D12B>「畏縮」</color>効果の持続時間が5秒延長される。<color=#FFFFFF>「噛み傷」</color>状態にある敵に与える<color=#F0D12B>「強撃」</color>ダメージが確率で会心を出すようになる、基礎会心率は<color=#2BAD00>37%</color>、会心ダメージは50%。ジェーンの異常マスタリー1Ptにつき、この効果の会心率が追加で+<color=#2BAD00>0.15%</color>。",
+                "7": "ジェーンの攻撃が命中した敵は<color=#FFFFFF>「噛み傷」</color>状態に入る、継続時間10秒。任意のメンバーが<color=#FFFFFF>「噛み傷」</color>状態の敵に<color=#F0D12B>「強撃」</color>効果を発動し、<color=#F0D12B>「畏縮」</color>効果を付与した時、<color=#F0D12B>「畏縮」</color>効果の持続時間が5秒延長される。<color=#FFFFFF>「噛み傷」</color>状態にある敵に与える<color=#F0D12B>「強撃」</color>ダメージが確率で会心を出すようになる、基礎会心率は<color=#2BAD00>40%</color>、会心ダメージは50%。ジェーンの異常マスタリー1Ptにつき、この効果の会心率が追加で+<color=#2BAD00>0.16%</color>。"
+            }
+        },
+        "MathSkill": {
+            "Title": "追加能力：痛点",
+            "Description": "チームに他の<color=#FFFFFF>[異常]</color>メンバーまたは自身と同じ陣営のメンバーがいる時に発動：\nジェーンの<color=#F0D12B>物理属性の状態異常蓄積効率</color>+20%。状態異常の敵に対し、ジェーンの攻撃による<color=#F0D12B>物理属性の状態異常蓄積値</color>が追加で+15%。"
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "126100001": {
+                "Title": "通常攻撃：ダンシング・ナイフ",
+                "Description": " <IconMap:Icon_Normal> を押して発動：\n前方に最大6段の攻撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。"
+            },
+            "126100002": {
+                "Title": "熱狂",
+                "Description": "ジェーンが<color=#FFFFFF>『極限回避』</color>、<color=#FFFFFF>『パリィ支援』</color>を発動、またはスキルを発動して敵にダメージを与えた時、<color=#FFFFFF>「熱狂フロウ」</color>が溜まる。<color=#FFFFFF>「熱狂フロウ」</color>が最大まで溜まると<color=#FFFFFF>「熱狂」</color>状態に入る。\n<color=#FFFFFF>「熱狂」</color>状態にある時、ジェーンの<color=#F0D12B>物理属性の状態異常蓄積効率</color>+25%。また、ジェーンの異常マスタリーが120Ptを上回る場合、1Pt上回るごとに自身の攻撃力+2Pt、この効果によってアップできる攻撃力は最大600Ptまで。\nジェーンが<color=#FFFFFF>「熱狂」</color>状態中にスキルを発動してダメージを与えると<color=#FFFFFF>「熱狂フロウ」</color>を消費し、<color=#FFFFFF>『極限回避』</color>または<color=#FFFFFF>『パリィ支援』</color>を発動した時は<color=#FFFFFF>「熱狂フロウ」</color>を回復できる。<color=#FFFFFF>「熱狂フロウ」</color>が尽きると、<color=#FFFFFF>「熱狂」</color>状態は終了する。"
+            },
+            "126100003": {
+                "Title": "通常攻撃：サルコウ・ジャンプ",
+                "Description": "<color=#FFFFFF>「熱狂」</color>状態突入時、ジェーンは<color=#FFFFFF>『通常攻撃：サルコウ・ジャンプ』</color>の発動可能回数を1回獲得する。\n発動可能回数が0でない時に、 <IconMap:Icon_Normal> を長押しして発動：\n前方に素早く連続攻撃を行い、その後とどめの一撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。\n連続攻撃中に長押しを続けると、スキルの継続時間を延長できる。<IconMap:Icon_Normal> を離すと、とどめの一撃を早めに発動できる。\n連続攻撃発動中、中断耐性レベルがアップし、被ダメージ-40%。とどめの一撃発動中、無敵効果を得る。\n<color=#FFFFFF>「熱狂」</color>状態中に<color=#FFFFFF>『通常攻撃：サルコウ・ジャンプ』</color>を発動して敵にダメージを与えると、<color=#FFFFFF>「熱狂フロウ」</color>を回復できる。"
+            },
+            "126100018": {
+                "Title": "通常攻撃：ダンシング・ナイフ"
+            },
+            "126100019": {
+                "Description": "1段ダメージ倍率",
+                "Param": "{Skill:1261001, Prop:1001}"
+            },
+            "126100020": {
+                "Description": "2段ダメージ倍率",
+                "Param": "{Skill:1261002, Prop:1001}"
+            },
+            "126100021": {
+                "Description": "3段ダメージ倍率",
+                "Param": "{Skill:1261003, Prop:1001}"
+            },
+            "126100022": {
+                "Description": "4段ダメージ倍率",
+                "Param": "{Skill:1261004, Prop:1001}"
+            },
+            "126100023": {
+                "Description": "5段ダメージ倍率",
+                "Param": "{Skill:1261005, Prop:1001}"
+            },
+            "126100024": {
+                "Description": "6段ダメージ倍率",
+                "Param": "{Skill:1261006, Prop:1001}"
+            },
+            "126100025": {
+                "Description": "1段ブレイク倍率",
+                "Param": "{Skill:1261001, Prop:1002}"
+            },
+            "126100026": {
+                "Description": "2段ブレイク倍率",
+                "Param": "{Skill:1261002, Prop:1002}"
+            },
+            "126100027": {
+                "Description": "3段ブレイク倍率",
+                "Param": "{Skill:1261003, Prop:1002}"
+            },
+            "126100028": {
+                "Description": "4段ブレイク倍率",
+                "Param": "{Skill:1261004, Prop:1002}"
+            },
+            "126100029": {
+                "Description": "5段ブレイク倍率",
+                "Param": "{Skill:1261005, Prop:1002}"
+            },
+            "126100030": {
+                "Description": "6段ブレイク倍率",
+                "Param": "{Skill:1261006, Prop:1002}"
+            },
+            "126100031": {
+                "Title": "通常攻撃：サルコウ・ジャンプ"
+            },
+            "126100032": {
+                "Description": "連続攻撃ダメージ倍率",
+                "Param": "{Skill:1261007, Prop:1001}"
+            },
+            "126100033": {
+                "Description": "とどめの一撃ダメージ倍率",
+                "Param": "{Skill:1261008, Prop:1001}"
+            },
+            "126100034": {
+                "Description": "連続攻撃ブレイク倍率",
+                "Param": "{Skill:1261007, Prop:1002}"
+            },
+            "126100035": {
+                "Description": "とどめの一撃ブレイク倍率",
+                "Param": "{Skill:1261008, Prop:1002}"
+            }
+        },
+        "1": {
+            "126100004": {
+                "Title": "特殊スキル：空を掠める",
+                "Description": " <IconMap:Icon_Special> を押して発動：\n飛び上がった後、前方に連続蹴りからのなぎ払い蹴りを放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。\nスキル発動中、中断耐性レベルがアップする。"
+            },
+            "126100005": {
+                "Title": "強化特殊スキル：空を掠める・一掃",
+                "Description": "エネルギーが溜まっている状態で <IconMap:Icon_SpecialReady> を押して発動：\n飛び上がった後、前方に複数回の連続蹴りからのなぎ払い蹴りを放ち、<color=#F0D12B>物理属性ダメージ</color>を大量に与える。\nスキル発動中、無敵効果を得る。"
+            },
+            "126100036": {
+                "Title": "特殊スキル：空を掠める"
+            },
+            "126100037": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1261009, Prop:1001}"
+            },
+            "126100038": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1261009, Prop:1002}"
+            },
+            "126100039": {
+                "Title": "強化特殊スキル：空を掠める・一掃"
+            },
+            "126100040": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1261010, Prop:1001}"
+            },
+            "126100041": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1261010, Prop:1002}"
+            },
+            "126100042": {
+                "Description": "エネルギー消費",
+                "Param": "60Pt"
+            }
+        },
+        "2": {
+            "126100006": {
+                "Title": "回避：残影",
+                "Description": " <IconMap:Icon_Evade> を押して発動：\nスウェーで高速回避する。\nスキル発動中、無敵効果を得る。\nジェーンは回避後、さらにもう一度回避を発動することができる。<color=#FFFFFF>「熱狂」</color>状態突入前、ジェーンは2段の回避を交互に繰り出す。<color=#FFFFFF>「熱狂」</color>状態突入後、ジェーンは回避時に前方の敵をすり抜けられる。"
+            },
+            "126100007": {
+                "Title": "ダッシュ攻撃：エッジ・ジャンプ",
+                "Description": "回避時に <IconMap:Icon_Normal> を押して発動：\n1段目の回避の後に繋げた場合、前方に打ち上げ斬撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。\n2段目の回避の後に繋げた場合、前方に連続斬撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。"
+            },
+            "126100008": {
+                "Title": "ダッシュ攻撃：虚像のつらぬき",
+                "Description": "<color=#FFFFFF>「熱狂」</color>状態で回避時に <IconMap:Icon_Normal> を押して発動：\n前方に素早く突進斬撃を3回放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。"
+            },
+            "126100009": {
+                "Title": "回避反撃：疾影",
+                "Description": "<color=#FFFFFF>『極限回避』</color>後に <IconMap:Icon_Normal> を押して発動：\n1段目の回避の後に繋げた場合、前方の敵に複数回の斬撃を行った後、落下刺突を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。\n2段目の回避の後に繋げた場合、飛び上がってから前方の敵に3回の連続攻撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。"
+            },
+            "126100010": {
+                "Title": "回避反撃：疾影の舞",
+                "Description": "<color=#FFFFFF>「熱狂」</color>状態で<color=#FFFFFF>『極限回避』</color>後に <IconMap:Icon_Normal> を押して発動：\n前方の敵に複数回の高速斬撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。"
+            },
+            "126100043": {
+                "Title": "ダッシュ攻撃：エッジ・ジャンプ"
+            },
+            "126100044": {
+                "Description": "1段ダメージ倍率",
+                "Param": "{Skill:1261011, Prop:1001}"
+            },
+            "126100045": {
+                "Description": "1段ブレイク倍率",
+                "Param": "{Skill:1261011, Prop:1002}"
+            },
+            "126100046": {
+                "Description": "2段ダメージ倍率",
+                "Param": "{Skill:1261012, Prop:1001}"
+            },
+            "126100047": {
+                "Description": "2段ブレイク倍率",
+                "Param": "{Skill:1261012, Prop:1002}"
+            },
+            "126100048": {
+                "Title": "ダッシュ攻撃：虚像のつらぬき"
+            },
+            "126100049": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1261013, Prop:1001}"
+            },
+            "126100050": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1261013, Prop:1002}"
+            },
+            "126100051": {
+                "Title": "回避反撃：疾影"
+            },
+            "126100052": {
+                "Description": "1段ダメージ倍率",
+                "Param": "{Skill:1261014, Prop:1001}"
+            },
+            "126100053": {
+                "Description": "1段ブレイク倍率",
+                "Param": "{Skill:1261014, Prop:1002}"
+            },
+            "126100054": {
+                "Description": "2段ダメージ倍率",
+                "Param": "{Skill:1261015, Prop:1001}"
+            },
+            "126100055": {
+                "Description": "2段ブレイク倍率",
+                "Param": "{Skill:1261015, Prop:1002}"
+            },
+            "126100056": {
+                "Title": "回避反撃：疾影の舞"
+            },
+            "126100057": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1261016, Prop:1001}"
+            },
+            "126100058": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1261016, Prop:1002}"
+            }
+        },
+        "3": {
+            "126100011": {
+                "Title": "連携スキル：罪悪の華",
+                "Description": "<color=#FFFFFF>『連携スキル』</color>開始時に、対応するエージェントを選択して発動：\n前方広範囲の敵に周回斬撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を大量に与える。\nスキル発動時、そのまま<color=#FFFFFF>「熱狂」</color>状態に入り、<color=#FFFFFF>「熱狂フロウ」</color>が最大まで溜まる。\nスキル発動中、無敵効果を得る。"
+            },
+            "126100012": {
+                "Title": "終結スキル：フィナーレ",
+                "Description": "デシベルレートが<color=#FFFFFF>『Maximum』</color>に達した時に <IconMap:Icon_UltimateReady> を押して発動：\n前方広範囲の敵に強力な周回斬撃を行った後、とどめの一撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を大量に与える。\nスキル発動時、そのまま<color=#FFFFFF>「熱狂」</color>状態に入り、<color=#FFFFFF>「熱狂フロウ」</color>が最大まで溜まる。\nスキル発動中、無敵効果を得る。"
+            },
+            "126100059": {
+                "Title": "連携スキル：罪悪の華"
+            },
+            "126100060": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1261017, Prop:1001}"
+            },
+            "126100061": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1261017, Prop:1002}"
+            },
+            "126100062": {
+                "Title": "終結スキル：フィナーレ"
+            },
+            "126100063": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1261018, Prop:1001}"
+            },
+            "126100064": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1261018, Prop:1002}"
+            }
+        },
+        "6": {
+            "126100014": {
+                "Title": "クイック支援：黒茨",
+                "Description": "操作しているメンバーが吹き飛ばされた時に、 <IconMap:Icon_Switch> を押して発動：\n前方の敵に複数回の斬撃を行った後、落下刺突を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。"
+            },
+            "126100015": {
+                "Title": "クイック支援：ルッツ・ジャンプ",
+                "Description": "<color=#FFFFFF>「熱狂」</color>状態で操作しているメンバーが吹き飛ばされた時に、 <IconMap:Icon_Switch> を押して発動：\n前方の敵に複数回の高速斬撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。"
+            },
+            "126100016": {
+                "Title": "パリィ支援：最後の一線",
+                "Description": "出場中のメンバーが攻撃されそうになった時に、 <IconMap:Icon_Switch> を押して発動：\n敵の攻撃をパリィし、ブレイク値を大量に蓄積させる。\nスキル発動中、無敵効果を得る。"
+            },
+            "126100017": {
+                "Title": "支援突撃：薙ぎ払う疾風",
+                "Description": "<color=#FFFFFF>『パリィ支援』</color>発動後、 <IconMap:Icon_Normal> を押して発動：\n飛び上がってから高速斬撃を行った後、さらに前方広範囲になぎ払い斬撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。"
+            },
+            "126100065": {
+                "Title": "クイック支援：黒茨"
+            },
+            "126100066": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1261019, Prop:1001}"
+            },
+            "126100067": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1261019, Prop:1002}"
+            },
+            "126100068": {
+                "Title": "クイック支援：ルッツ・ジャンプ"
+            },
+            "126100069": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1261020, Prop:1001}"
+            },
+            "126100070": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1261020, Prop:1002}"
+            },
+            "126100071": {
+                "Title": "パリィ支援：最後の一線"
+            },
+            "126100072": {
+                "Description": "パリィ・軽 ブレイク倍率",
+                "Param": "{Skill:1261021, Prop:1002}"
+            },
+            "126100073": {
+                "Description": "パリィ・重 ブレイク倍率",
+                "Param": "{Skill:1261022, Prop:1002}"
+            },
+            "126100074": {
+                "Description": "パリィ・連続 ブレイク倍率",
+                "Param": "{Skill:1261023, Prop:1002}"
+            },
+            "126100075": {
+                "Title": "支援突撃：薙ぎ払う疾風"
+            },
+            "126100076": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1261024, Prop:1001}"
+            },
+            "126100077": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1261024, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1261001": {
+            "DamageValue": 3610,
+            "DamageGrowth": 330,
+            "DazeValue": 1530,
+            "DazeGrowth": 70
+        },
+        "1261002": {
+            "DamageValue": 6230,
+            "DamageGrowth": 570,
+            "DazeValue": 4430,
+            "DazeGrowth": 210
+        },
+        "1261003": {
+            "DamageValue": 8350,
+            "DamageGrowth": 760,
+            "DazeValue": 5950,
+            "DazeGrowth": 280
+        },
+        "1261004": {
+            "DamageValue": 16340,
+            "DamageGrowth": 1490,
+            "DazeValue": 10970,
+            "DazeGrowth": 500
+        },
+        "1261005": {
+            "DamageValue": 9880,
+            "DamageGrowth": 900,
+            "DazeValue": 6870,
+            "DazeGrowth": 320
+        },
+        "1261006": {
+            "DamageValue": 29130,
+            "DamageGrowth": 2650,
+            "DazeValue": 20000,
+            "DazeGrowth": 910
+        },
+        "1261007": {
+            "DamageValue": 30080,
+            "DamageGrowth": 2740,
+            "DazeValue": 22920,
+            "DazeGrowth": 1050
+        },
+        "1261008": {
+            "DamageValue": 16130,
+            "DamageGrowth": 1470,
+            "DazeValue": 12290,
+            "DazeGrowth": 560
+        },
+        "1261009": {
+            "DamageValue": 5780,
+            "DamageGrowth": 530,
+            "DazeValue": 5780,
+            "DazeGrowth": 270
+        },
+        "1261010": {
+            "DamageValue": 57470,
+            "DamageGrowth": 5230,
+            "DazeValue": 46810,
+            "DazeGrowth": 2130
+        },
+        "1261011": {
+            "DamageValue": 7150,
+            "DamageGrowth": 650,
+            "DazeValue": 3580,
+            "DazeGrowth": 170
+        },
+        "1261012": {
+            "DamageValue": 7150,
+            "DamageGrowth": 650,
+            "DazeValue": 3580,
+            "DazeGrowth": 170
+        },
+        "1261013": {
+            "DamageValue": 10450,
+            "DamageGrowth": 950,
+            "DazeValue": 5230,
+            "DazeGrowth": 240
+        },
+        "1261014": {
+            "DamageValue": 34120,
+            "DamageGrowth": 3110,
+            "DazeValue": 22920,
+            "DazeGrowth": 1050
+        },
+        "1261015": {
+            "DamageValue": 34120,
+            "DamageGrowth": 3110,
+            "DazeValue": 22920,
+            "DazeGrowth": 1050
+        },
+        "1261016": {
+            "DamageValue": 38700,
+            "DamageGrowth": 3520,
+            "DazeValue": 24750,
+            "DazeGrowth": 1130
+        },
+        "1261017": {
+            "DamageValue": 63260,
+            "DamageGrowth": 5760,
+            "DazeValue": 23760,
+            "DazeGrowth": 1080
+        },
+        "1261018": {
+            "DamageValue": 147060,
+            "DamageGrowth": 13370,
+            "DazeValue": 18650,
+            "DazeGrowth": 850
+        },
+        "1261019": {
+            "DamageValue": 11920,
+            "DamageGrowth": 1090,
+            "DazeValue": 11920,
+            "DazeGrowth": 550
+        },
+        "1261020": {
+            "DamageValue": 13750,
+            "DamageGrowth": 1250,
+            "DazeValue": 13750,
+            "DazeGrowth": 630
+        },
+        "1261021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1261022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1261023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1261024": {
+            "DamageValue": 34550,
+            "DamageGrowth": 3150,
+            "DazeValue": 29900,
+            "DazeGrowth": 1360
+        },
+        "1261025": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1261026": {
+            "DamageValue": 35630,
+            "DamageGrowth": 3240,
+            "DazeValue": 13580,
+            "DazeGrowth": 620
+        },
+        "1261027": {
+            "DamageValue": 138020,
+            "DamageGrowth": 12550,
+            "DazeValue": 57530,
+            "DazeGrowth": 2620
+        },
+        "1261028": {
+            "DamageValue": 6000,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1261029": {
+            "DamageValue": 60000,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

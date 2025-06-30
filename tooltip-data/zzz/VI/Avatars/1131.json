@@ -1,0 +1,501 @@
+{
+    "Name": "Soukaku",
+    "ElementTypes": [
+        "Ice"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Hội Tụ Hứng Khởi",
+            "Description": "Khi Soukaku kích hoạt <color=#FFFFFF>Bị Động Cốt Lõi: Chiến Kỳ Trợ Uy</color> hoặc <color=#FFFFFF>Năng Lực Thêm: Combo Bữa Ăn Tập Thể</color>, thời gian duy trì hiệu quả buff tăng 8s.",
+            "Lore": "Sau khi hoàn thành tụ năng, mô đun nạp năng lượng đặc biệt có thể hình thành luồng gió năng lượng Ether, giúp sạc năng lượng các thiết bị Ether xung quanh.\nVới Soukaku mà nói, chuyện này cũng giống như khoảnh khắc liên hoan mà cô ấy yêu thích.\n\"Mọi người~ Cùng đến ăn buffet nào!\""
+        },
+        "2": {
+            "Title": "Mô Đun Nạp Năng Lượng Thí Nghiệm",
+            "Description": "Khi <color=#FFFFFF>Tấn Công Thường</color>, <color=#FFFFFF>Tấn Công Lướt</color>, <color=#FFFFFF>Phản Kích Khi Né</color>, <color=#FFFFFF>Hỗ Trợ Nhanh</color> đánh trúng kẻ địch, Soukaku có 15% tỷ lệ nhận được 1 tầng <color=#FFFFFF>Dòng Xoáy</color>, mỗi giây tối đa kích hoạt 1 lần. Khi số tầng <color=#FFFFFF>Dòng Xoáy</color> đạt giới hạn, nếu tiếp tục nhận được <color=#FFFFFF>Dòng Xoáy</color>, sẽ đổi thành hồi phục 1,2 điểm Năng Lượng cho Soukaku.",
+            "Lore": "Mô-đun có thể liên tục tích trữ năng lượng trong trận chiến. Do đó, nó được bộ phận phát triển coi là một vũ khí chiến thuật khái niệm mới trong thời đại tác chiến.\nNhưng đối với Soukaku mà nói, hoàn thành tích trữ năng lượng chỉ mang ý nghĩa là đã đến giờ ăn rồi."
+        },
+        "3": {
+            "Title": "Bữa Ăn Chuyên Cần",
+            "Description": "Cấp kỹ năng <color=#FFFFFF>Tấn Công Thường</color>, <color=#FFFFFF>Né</color>, <color=#FFFFFF>Kỹ Năng Chi Viện</color>, <color=#FFFFFF>Chiến Kỹ</color>, <color=#FFFFFF>Liên Kích</color> +2",
+            "Lore": "Cách để khích lệ Soukaku chăm chỉ tập luyện rất đơn giản: Chỉ cần tăng tiêu chuẩn chu cấp bữa ăn khi ra ngoài làm việc là được."
+        },
+        "4": {
+            "Title": "Hạ Thân Nhiệt",
+            "Description": "<color=#FFFFFF>Cờ Lệnh</color> khi tấn công trúng kẻ địch, <color=#98EFF0>Kháng DMG Băng</color> của mục tiêu giảm 10%, duy trì 8s.",
+            "Lore": "Vũ khí đặc biệt Cờ Chiến Quỷ có thiết bị làm lạnh mạnh mẽ bên trong, sinh ra chất xúc tác hơi lạnh có chứa vật chất Ether, gây sát thương sâu sắc cho kẻ địch bị trúng đòn."
+        },
+        "5": {
+            "Title": "Phúc Lợi Ăn Đêm",
+            "Description": "Cấp kỹ năng <color=#FFFFFF>Tấn Công Thường</color>, <color=#FFFFFF>Né</color>, <color=#FFFFFF>Kỹ Năng Chi Viện</color>, <color=#FFFFFF>Chiến Kỹ</color>, <color=#FFFFFF>Liên Kích</color> +2",
+            "Lore": "Cách để khích lệ Soukaku nỗ lực tập luyện hơn nữa vô cùng đơn giản: Hãy thêm một bữa ăn đêm ngoài bữa ăn chuyên cần."
+        },
+        "6": {
+            "Title": "Tập Kích Ngược Gió",
+            "Description": "Ở trạng thái <color=#FFFFFF>Cờ Băng</color>, số lần có thể phát động <color=#FFFFFF>Tấn Công Thường</color> cường hóa và <color=#FFFFFF>Tấn Công Lướt</color> cường hóa tăng đến 12 lần, đồng thời tăng 45% sát thương chiêu thức gây ra.",
+            "Lore": "Mở thiết bị an toàn trong lá cờ, khiến cho vũ khí vận hành với công suất tối đa. Không chỉ chiến đấu trơn tru, mà tiện thể... dùng để làm nguội bento cũng hay."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Bị Động Cốt Lõi: Chiến Kỳ Trợ Uy",
+            "DescriptionByLevel": {
+                "1": "Khi Soukaku phát động <color=#FFFFFF>Cờ Lệnh</color>, sẽ tăng tấn công của bản thân, mức tăng tương đương với <color=#2BAD00>10%</color> tấn công ban đầu của Soukaku, tối đa không vượt quá 500 điểm, duy trì 22s. Khi phát động <color=#FFFFFF>Cờ Lệnh</color> và tiêu hao <color=#FFFFFF>Dòng Xoáy</color>, hiệu quả buff này tăng gấp đôi, tối đa không vượt quá 1000 điểm. Khi nhân vật khác trong đội vào sân thông qua <color=#FFFFFF>Hỗ Trợ Nhanh</color> hoặc <color=#FFFFFF>Liên Kích</color> do <color=#FFFFFF>Cờ Lệnh</color> kích hoạt, hiệu quả buff này sẽ chuyển sang nhân vật tương ứng và tạo mới thời gian duy trì.",
+                "2": "Khi Soukaku phát động <color=#FFFFFF>Cờ Lệnh</color>, sẽ tăng tấn công của bản thân, mức tăng tương đương với <color=#2BAD00>12,5%</color> tấn công ban đầu của Soukaku, tối đa không vượt quá 500 điểm, duy trì 22s. Khi phát động <color=#FFFFFF>Cờ Lệnh</color> và tiêu hao <color=#FFFFFF>Dòng Xoáy</color>, hiệu quả buff này tăng gấp đôi, tối đa không vượt quá 1000 điểm. Khi nhân vật khác trong đội vào sân thông qua <color=#FFFFFF>Hỗ Trợ Nhanh</color> hoặc <color=#FFFFFF>Liên Kích</color> do <color=#FFFFFF>Cờ Lệnh</color> kích hoạt, hiệu quả buff này sẽ chuyển sang nhân vật tương ứng và tạo mới thời gian duy trì.",
+                "3": "Khi Soukaku phát động <color=#FFFFFF>Cờ Lệnh</color>, sẽ tăng tấn công của bản thân, mức tăng tương đương với <color=#2BAD00>15%</color> tấn công ban đầu của Soukaku, tối đa không vượt quá 500 điểm, duy trì 22s. Khi phát động <color=#FFFFFF>Cờ Lệnh</color> và tiêu hao <color=#FFFFFF>Dòng Xoáy</color>, hiệu quả buff này tăng gấp đôi, tối đa không vượt quá 1000 điểm. Khi nhân vật khác trong đội vào sân thông qua <color=#FFFFFF>Hỗ Trợ Nhanh</color> hoặc <color=#FFFFFF>Liên Kích</color> do <color=#FFFFFF>Cờ Lệnh</color> kích hoạt, hiệu quả buff này sẽ chuyển sang nhân vật tương ứng và tạo mới thời gian duy trì.",
+                "4": "Khi Soukaku phát động <color=#FFFFFF>Cờ Lệnh</color>, sẽ tăng tấn công của bản thân, mức tăng tương đương với <color=#2BAD00>17%</color> tấn công ban đầu của Soukaku, tối đa không vượt quá 500 điểm, duy trì 22s. Khi phát động <color=#FFFFFF>Cờ Lệnh</color> và tiêu hao <color=#FFFFFF>Dòng Xoáy</color>, hiệu quả buff này tăng gấp đôi, tối đa không vượt quá 1000 điểm. Khi nhân vật khác trong đội vào sân thông qua <color=#FFFFFF>Hỗ Trợ Nhanh</color> hoặc <color=#FFFFFF>Liên Kích</color> do <color=#FFFFFF>Cờ Lệnh</color> kích hoạt, hiệu quả buff này sẽ chuyển sang nhân vật tương ứng và tạo mới thời gian duy trì.",
+                "5": "Khi Soukaku phát động <color=#FFFFFF>Cờ Lệnh</color>, sẽ tăng tấn công của bản thân, mức tăng tương đương với <color=#2BAD00>18%</color> tấn công ban đầu của Soukaku, tối đa không vượt quá 500 điểm, duy trì 22s. Khi phát động <color=#FFFFFF>Cờ Lệnh</color> và tiêu hao <color=#FFFFFF>Dòng Xoáy</color>, hiệu quả buff này tăng gấp đôi, tối đa không vượt quá 1000 điểm. Khi nhân vật khác trong đội vào sân thông qua <color=#FFFFFF>Hỗ Trợ Nhanh</color> hoặc <color=#FFFFFF>Liên Kích</color> do <color=#FFFFFF>Cờ Lệnh</color> kích hoạt, hiệu quả buff này sẽ chuyển sang nhân vật tương ứng và tạo mới thời gian duy trì.",
+                "6": "Khi Soukaku phát động <color=#FFFFFF>Cờ Lệnh</color>, sẽ tăng tấn công của bản thân, mức tăng tương đương với <color=#2BAD00>19%</color> tấn công ban đầu của Soukaku, tối đa không vượt quá 500 điểm, duy trì 22s. Khi phát động <color=#FFFFFF>Cờ Lệnh</color> và tiêu hao <color=#FFFFFF>Dòng Xoáy</color>, hiệu quả buff này tăng gấp đôi, tối đa không vượt quá 1000 điểm. Khi nhân vật khác trong đội vào sân thông qua <color=#FFFFFF>Hỗ Trợ Nhanh</color> hoặc <color=#FFFFFF>Liên Kích</color> do <color=#FFFFFF>Cờ Lệnh</color> kích hoạt, hiệu quả buff này sẽ chuyển sang nhân vật tương ứng và tạo mới thời gian duy trì.",
+                "7": "Khi Soukaku phát động <color=#FFFFFF>Cờ Lệnh</color>, sẽ tăng tấn công của bản thân, mức tăng tương đương với <color=#2BAD00>20%</color> tấn công ban đầu của Soukaku, tối đa không vượt quá 500 điểm, duy trì 22s. Khi phát động <color=#FFFFFF>Cờ Lệnh</color> và tiêu hao <color=#FFFFFF>Dòng Xoáy</color>, hiệu quả buff này tăng gấp đôi, tối đa không vượt quá 1000 điểm. Khi nhân vật khác trong đội vào sân thông qua <color=#FFFFFF>Hỗ Trợ Nhanh</color> hoặc <color=#FFFFFF>Liên Kích</color> do <color=#FFFFFF>Cờ Lệnh</color> kích hoạt, hiệu quả buff này sẽ chuyển sang nhân vật tương ứng và tạo mới thời gian duy trì."
+            }
+        },
+        "MathSkill": {
+            "Title": "Năng Lực Thêm: Combo Bữa Ăn Tập Thể",
+            "Description": "Khi trong đội có nhân vật cùng phe hoặc thuộc tính giống bản thân sẽ kích hoạt:\nKhi Soukaku tiêu hao <color=#FFFFFF>Dòng Xoáy</color> phát động <color=#FFFFFF>Cờ Lệnh</color>, <color=#98EFF0>DMG Băng</color> do nhân vật toàn đội gây ra tăng 20%, duy trì 22s."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "113100001": {
+                "Title": "Tấn Công Thường: Làm Bánh Gạo",
+                "Description": "Nhấn <IconMap:Icon_Normal> phát động:\nThực hiện tối đa 3 đòn tấn công về phía trước, gây <color=#F0D12B>DMG Vật Lý</color>."
+            },
+            "113100002": {
+                "Title": "Tấn Công Thường: Làm Bánh Gạo (Cờ Băng)",
+                "Description": "Trong trạng thái <color=#FFFFFF>Cờ Băng</color>, nhấn <IconMap:Icon_Normal> phát động:\nNhanh chóng thực hiện tối đa 3 đòn tấn công về phía trước, gây <color=#98EFF0>DMG Băng</color>."
+            },
+            "113110001": {
+                "Title": "Tấn Công Thường: Làm Bánh Gạo"
+            },
+            "113110002": {
+                "Description": "Bội Số DMG Đòn 1",
+                "Param": "{Skill:1131001, Prop:1001}"
+            },
+            "113110003": {
+                "Description": "Bội Số DMG Đòn 2",
+                "Param": "{Skill:1131002, Prop:1001}"
+            },
+            "113110004": {
+                "Description": "Bội Số DMG Đòn 3",
+                "Param": "{Skill:1131003, Prop:1001}"
+            },
+            "113110005": {
+                "Description": "Bội Số Choáng Đòn 1",
+                "Param": "{Skill:1131001, Prop:1002}"
+            },
+            "113110006": {
+                "Description": "Bội Số Choáng Đòn 2",
+                "Param": "{Skill:1131002, Prop:1002}"
+            },
+            "113110007": {
+                "Description": "Bội Số Choáng Đòn 3",
+                "Param": "{Skill:1131003, Prop:1002}"
+            },
+            "113110008": {
+                "Title": "Tấn Công Thường: Làm Bánh Gạo (Cờ Băng)"
+            },
+            "113110009": {
+                "Description": "Bội Số DMG Đòn 1",
+                "Param": "{Skill:1131004, Prop:1001}"
+            },
+            "113110010": {
+                "Description": "Bội Số DMG Đòn 2",
+                "Param": "{Skill:1131005, Prop:1001}"
+            },
+            "113110011": {
+                "Description": "Bội Số DMG Đòn 3",
+                "Param": "{Skill:1131006, Prop:1001}"
+            },
+            "113110012": {
+                "Description": "Bội Số Choáng Đòn 1",
+                "Param": "{Skill:1131004, Prop:1002}"
+            },
+            "113110013": {
+                "Description": "Bội Số Choáng Đòn 2",
+                "Param": "{Skill:1131005, Prop:1002}"
+            },
+            "113110014": {
+                "Description": "Bội Số Choáng Đòn 3",
+                "Param": "{Skill:1131006, Prop:1002}"
+            }
+        },
+        "1": {
+            "113100003": {
+                "Title": "Chiến Kỹ: Làm Nguội Bento",
+                "Description": "Nhấn <IconMap:Icon_Special> phát động:\nTạo gió lốc ở phía trước, sau đó thi triển đòn kết thúc, gây <color=#98EFF0>DMG Băng</color>.\nChiêu thức khi phát động sẽ tăng cấp Kháng Gián Đoạn, sát thương phải chịu giảm 40%.\nTrong thời gian phát động chiêu thức, nhấn giữ <IconMap:Icon_Special> có thể nhanh chóng thực hiện tấn công <color=#FFFFFF>Cờ Lệnh</color> ngay sau đó."
+            },
+            "113100004": {
+                "Title": "Siêu Chiến Kỹ: Thổi Bay Côn Trùng",
+                "Description": "Khi đủ Năng Lượng, nhấn <IconMap:Icon_SpecialReady> phát động:\nTạo gió lốc phạm vi xa hơn ở phía trước, gây lượng lớn <color=#98EFF0>DMG Băng</color>.\nNhấn nhiều lần có thể liên tục phát động chiêu thức, mỗi lần phát động sẽ tiêu hao số Năng Lượng nhất định. Khi không đủ Năng Lượng hoặc ngừng nhấn sẽ tự động thi triển đòn kết thúc, gây lượng lớn <color=#98EFF0>DMG Băng</color>.\nChiêu thức khi phát động sẽ tăng cấp Kháng Gián Đoạn, sát thương phải chịu giảm 40%.\nTrong thời gian phát động chiêu thức, nhấn giữ <IconMap:Icon_Special> có thể nhanh chóng thực hiện tấn công <color=#FFFFFF>Cờ Lệnh</color> ngay sau đó."
+            },
+            "113100005": {
+                "Title": "Chiến Kỹ: Tập Hợp Nào!",
+                "Description": "Nhấn giữ <IconMap:Icon_Special> phát động:\nCắm vũ khí lên mặt đất sẽ biến thành ngọn cờ, phát động tấn công <color=#FFFFFF>Cờ Lệnh</color>, gây <color=#98EFF0>DMG Băng</color>. Khi <color=#FFFFFF>Cờ Lệnh</color> đánh trúng kẻ địch, sẽ kích hoạt <color=#FFFFFF>Hỗ Trợ Nhanh</color>.\nSau khi tấn công <color=#FFFFFF>Cờ Lệnh</color>, nhấn lần nữa <IconMap:Icon_Normal> hoặc <IconMap:Icon_Special> sẽ phát động một lần tấn công Thu Cờ đặc biệt, gây <color=#98EFF0>DMG Băng</color>.\nKhi phát động tấn công <color=#FFFFFF>Cờ Lệnh</color>, nếu có 3 tầng <color=#FFFFFF>Dòng Xoáy</color>, sẽ tiêu hao tất cả <color=#FFFFFF>Dòng Xoáy</color>, vào trạng thái <color=#FFFFFF>Cờ Băng</color>. Trong trạng thái <color=#FFFFFF>Cờ Băng</color>, Soukaku có thể phát động <color=#FFFFFF>Tấn Công Thường</color> cường hóa và <color=#FFFFFF>Tấn Công Lướt</color> cường hóa, gây lượng lớn <color=#98EFF0>DMG Băng</color>, tối đa duy trì 45s hoặc kích hoạt 6 lần.\nVũ khí của Soukaku trong các trường hợp sau sẽ nhận được <color=#FFFFFF>Dòng Xoáy</color>:\nKhi phát động <color=#FFFFFF>Siêu Chiến Kỹ</color>, nhận 1 tầng <color=#FFFFFF>Dòng Xoáy</color>.\nKhi phát động <color=#FFFFFF>Liên Kích</color>, nhận 1 tầng <color=#FFFFFF>Dòng Xoáy</color>.\nKhi phát động <color=#FFFFFF>Tuyệt Kỹ</color>, nhận 3 tầng <color=#FFFFFF>Dòng Xoáy</color>.\nGiới hạn của <color=#FFFFFF>Dòng Xoáy</color> là 3 tầng."
+            },
+            "113110015": {
+                "Title": "Chiến Kỹ: Làm Nguội Bento"
+            },
+            "113110016": {
+                "Description": "Bội Số DMG Đòn 1",
+                "Param": "{Skill:1131008, Prop:1001}"
+            },
+            "113110017": {
+                "Description": "Bội Số DMG Đòn Kết Thúc",
+                "Param": "{Skill:1131009, Prop:1001}"
+            },
+            "113110018": {
+                "Description": "Bội Số Choáng Đòn 1",
+                "Param": "{Skill:1131008, Prop:1002}"
+            },
+            "113110019": {
+                "Description": "Bội Số Choáng Đòn Kết Thúc",
+                "Param": "{Skill:1131009, Prop:1002}"
+            },
+            "113110020": {
+                "Title": "Siêu Chiến Kỹ: Thổi Bay Côn Trùng"
+            },
+            "113110021": {
+                "Description": "Bội Số DMG Liên Kích",
+                "Param": "{{Skill:1131011, Prop:1001}/2}"
+            },
+            "113110022": {
+                "Description": "Bội Số DMG Gió Lốc",
+                "Param": "{Skill:1131010, Prop:1001}"
+            },
+            "113110023": {
+                "Description": "Bội Số Choáng Liên Kích",
+                "Param": "{{Skill:1131011, Prop:1002}/2}"
+            },
+            "113110024": {
+                "Description": "Bội Số Choáng Gió Lốc",
+                "Param": "{Skill:1131010, Prop:1002}"
+            },
+            "113110025": {
+                "Description": "Phát Động Cần Năng Lượng",
+                "Param": "60 điểm"
+            },
+            "113110026": {
+                "Description": "Năng Lượng Tiêu Hao Mỗi Lần Tấn Công",
+                "Param": "30 điểm"
+            },
+            "113110027": {
+                "Title": "Chiến Kỹ: Tập Hợp Nào!"
+            },
+            "113110028": {
+                "Description": "Bội Số DMG Cờ Lệnh",
+                "Param": "{Skill:1131012, Prop:1001}"
+            },
+            "113110029": {
+                "Description": "Bội Số DMG Cờ Lệnh Tấn Công Nhanh",
+                "Param": "{Skill:1131013, Prop:1001}"
+            },
+            "113110030": {
+                "Description": "Bội Số DMG Thu Cờ",
+                "Param": "{Skill:1131014, Prop:1001}"
+            },
+            "113110031": {
+                "Description": "Bội Số Choáng Cờ Lệnh",
+                "Param": "{Skill:1131012, Prop:1002}"
+            },
+            "113110032": {
+                "Description": "Bội Số Choáng Cờ Lệnh Tấn Công Nhanh",
+                "Param": "{Skill:1131013, Prop:1002}"
+            },
+            "113110033": {
+                "Description": "Bội Số Choáng Thu Cờ",
+                "Param": "{Skill:1131014, Prop:1002}"
+            }
+        },
+        "2": {
+            "113100006": {
+                "Title": "Né: Giành Ăn",
+                "Description": "Nhấn <IconMap:Icon_Evade> phát động:\nNhanh chóng né tránh.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "113100007": {
+                "Title": "Tấn Công Lướt: 50/50",
+                "Description": "Khi né, nhấn <IconMap:Icon_Normal> phát động:\nChém về phía trước, gây <color=#F0D12B>DMG Vật Lý</color>."
+            },
+            "113100008": {
+                "Title": "Tấn Công Lướt: 50/50 (Cờ Băng)",
+                "Description": "Trong trạng thái <color=#FFFFFF>Cờ Băng</color>, khi né, nhấn <IconMap:Icon_Normal> phát động:\nChém về phía trước, gây <color=#98EFF0>DMG Băng</color>."
+            },
+            "113100009": {
+                "Title": "Phản Kích Khi Né: Đừng Giành Đồ Ăn",
+                "Description": "Sau khi kích hoạt <color=#FFFFFF>Né Hoàn Hảo</color>, nhấn <IconMap:Icon_Normal> phát động:\nChém kẻ địch phía trước, gây <color=#98EFF0>DMG Băng</color>.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "113110034": {
+                "Title": "Tấn Công Lướt: 50/50"
+            },
+            "113110035": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1131015, Prop:1001}"
+            },
+            "113110036": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1131015, Prop:1002}"
+            },
+            "113110037": {
+                "Title": "Tấn Công Lướt: 50/50 (Cờ Băng)"
+            },
+            "113110038": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1131016, Prop:1001}"
+            },
+            "113110039": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1131016, Prop:1002}"
+            },
+            "113110040": {
+                "Title": "Phản Kích Khi Né: Đừng Giành Đồ Ăn"
+            },
+            "113110041": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1131017, Prop:1001}"
+            },
+            "113110042": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1131017, Prop:1002}"
+            }
+        },
+        "3": {
+            "113100010": {
+                "Title": "Liên Kích: Gà Ngỗng Chặt",
+                "Description": "Khi kích hoạt <color=#FFFFFF>Liên Kích</color>, chọn nhân vật tương ứng phát động:\nNhanh chóng đánh nhiều lần vào kẻ địch phía trước, sau đó tiến hành ngay tấn công <color=#FFFFFF>Cờ Lệnh</color>, gây lượng lớn <color=#98EFF0>DMG Băng</color>.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "113100011": {
+                "Title": "Tuyệt Kỹ: Gà Ngỗng Chặt Phần Lớn",
+                "Description": "Khi Cấp Decibel đạt <color=#FFFFFF>Cực Hạn</color>, nhấn <IconMap:Icon_UltimateReady> phát động:\nNhanh chóng đánh nhiều lần vào kẻ địch phía trước, sau đó tiến hành ngay tấn công <color=#FFFFFF>Cờ Lệnh</color>, gây lượng lớn <color=#98EFF0>DMG Băng</color>.\nKhi phát động chiêu thức, Soukaku sẽ vào trạng thái <color=#FFFFFF>Mặt Quỷ</color>, khiến bản thân tăng 15% Tỷ Lệ Bạo Kích, duy trì 15s.\nKhi phát động chiêu thức, nhân vật khác trong đội hồi 10 điểm Năng Lượng, nhân vật tiếp theo đổi vào sân sẽ hồi thêm 20 điểm Năng Lượng.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "113110043": {
+                "Title": "Liên Kích: Gà Ngỗng Chặt"
+            },
+            "113110044": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1131018, Prop:1001}"
+            },
+            "113110045": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1131018, Prop:1002}"
+            },
+            "113110046": {
+                "Title": "Tuyệt Kỹ: Gà Ngỗng Chặt Phần Lớn"
+            },
+            "113110047": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1131019, Prop:1001}"
+            },
+            "113110048": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1131019, Prop:1002}"
+            }
+        },
+        "6": {
+            "113100013": {
+                "Title": "Hỗ Trợ Nhanh: Combo Hai Người",
+                "Description": "Khi nhân vật đang thao tác bị đánh bay, nhấn <IconMap:Icon_Switch> phát động:\nChém kẻ địch phía trước, gây <color=#98EFF0>DMG Băng</color>.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "113100014": {
+                "Title": "Hỗ Trợ Chống Đỡ: Chiến Thuật Phòng Thủ",
+                "Description": "Khi nhân vật trong sân sắp bị tấn công, nhấn <IconMap:Icon_Switch> phát động:\nChống đỡ tấn công của kẻ địch, tích lũy lượng lớn Điểm Choáng.\nCó khả năng chống đỡ rất tốt, khi chịu phải tấn công cường độ cao, sẽ giảm tiêu hao <color=#FFFFFF>Điểm Chi Viện</color>.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "113100015": {
+                "Title": "Đột Kích Chi Viện: Đả Kích Cuốn Qua",
+                "Description": "Sau khi kích hoạt <color=#FFFFFF>Hỗ Trợ Chống Đỡ</color>, nhấn <IconMap:Icon_Normal> phát động:\nLao đến đánh vào kẻ địch phía trước, gây <color=#98EFF0>DMG Băng</color>.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch.\nTrong thời gian phát động chiêu thức, nhấn giữ <IconMap:Icon_Normal> có thể nhanh chóng thực hiện tấn công <color=#FFFFFF>Cờ Lệnh</color>."
+            },
+            "113110049": {
+                "Title": "Hỗ Trợ Nhanh: Combo Hai Người"
+            },
+            "113110050": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1131020, Prop:1001}"
+            },
+            "113110051": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1131020, Prop:1002}"
+            },
+            "113110052": {
+                "Title": "Hỗ Trợ Chống Đỡ: Chiến Thuật Phòng Thủ"
+            },
+            "113110053": {
+                "Description": "Bội Số Đỡ Choáng Nhẹ",
+                "Param": "{Skill:1131021, Prop:1002}"
+            },
+            "113110054": {
+                "Description": "Bội Số Đỡ Choáng Mạnh",
+                "Param": "{Skill:1131022, Prop:1002}"
+            },
+            "113110055": {
+                "Description": "Bội Số Đỡ Choáng Liên Tục",
+                "Param": "{Skill:1131023, Prop:1002}"
+            },
+            "113110056": {
+                "Title": "Đột Kích Chi Viện: Đả Kích Cuốn Qua"
+            },
+            "113110057": {
+                "Description": "Bội Số DMG",
+                "Param": "{{Skill:1131024, Prop:1001} + {Skill:1131026, Prop:1001}}"
+            },
+            "113110058": {
+                "Description": "Bội Số Choáng",
+                "Param": "{{Skill:1131024, Prop:1002} + {Skill:1131026, Prop:1002}}"
+            }
+        }
+    },
+    "Skills": {
+        "1131001": {
+            "DamageValue": 6620,
+            "DamageGrowth": 610,
+            "DazeValue": 3310,
+            "DazeGrowth": 160
+        },
+        "1131002": {
+            "DamageValue": 21630,
+            "DamageGrowth": 1970,
+            "DazeValue": 18800,
+            "DazeGrowth": 860
+        },
+        "1131003": {
+            "DamageValue": 29310,
+            "DamageGrowth": 2670,
+            "DazeValue": 22170,
+            "DazeGrowth": 1010
+        },
+        "1131004": {
+            "DamageValue": 7660,
+            "DamageGrowth": 700,
+            "DazeValue": 4660,
+            "DazeGrowth": 220
+        },
+        "1131005": {
+            "DamageValue": 22850,
+            "DamageGrowth": 2080,
+            "DazeValue": 12750,
+            "DazeGrowth": 580
+        },
+        "1131006": {
+            "DamageValue": 51140,
+            "DamageGrowth": 4650,
+            "DazeValue": 26330,
+            "DazeGrowth": 1200
+        },
+        "1131007": {
+            "DamageValue": 12750,
+            "DamageGrowth": 1160,
+            "DazeValue": 12750,
+            "DazeGrowth": 580
+        },
+        "1131008": {
+            "DamageValue": 2840,
+            "DamageGrowth": 260,
+            "DazeValue": 2840,
+            "DazeGrowth": 130
+        },
+        "1131009": {
+            "DamageValue": 10010,
+            "DamageGrowth": 910,
+            "DazeValue": 10010,
+            "DazeGrowth": 460
+        },
+        "1131010": {
+            "DamageValue": 10210,
+            "DamageGrowth": 930,
+            "DazeValue": 8790,
+            "DazeGrowth": 400
+        },
+        "1131011": {
+            "DamageValue": 26240,
+            "DamageGrowth": 2390,
+            "DazeValue": 22580,
+            "DazeGrowth": 1030
+        },
+        "1131012": {
+            "DamageValue": 25010,
+            "DamageGrowth": 2280,
+            "DazeValue": 27510,
+            "DazeGrowth": 1260
+        },
+        "1131013": {
+            "DamageValue": 14010,
+            "DamageGrowth": 1280,
+            "DazeValue": 14010,
+            "DazeGrowth": 640
+        },
+        "1131014": {
+            "DamageValue": 24500,
+            "DamageGrowth": 2230,
+            "DazeValue": 24500,
+            "DazeGrowth": 1120
+        },
+        "1131015": {
+            "DamageValue": 7670,
+            "DamageGrowth": 700,
+            "DazeValue": 3840,
+            "DazeGrowth": 180
+        },
+        "1131016": {
+            "DamageValue": 13150,
+            "DamageGrowth": 1200,
+            "DazeValue": 8010,
+            "DazeGrowth": 370
+        },
+        "1131017": {
+            "DamageValue": 24730,
+            "DamageGrowth": 2250,
+            "DazeValue": 21340,
+            "DazeGrowth": 970
+        },
+        "1131018": {
+            "DamageValue": 74580,
+            "DamageGrowth": 6780,
+            "DazeValue": 34680,
+            "DazeGrowth": 1580
+        },
+        "1131019": {
+            "DamageValue": 198980,
+            "DamageGrowth": 18090,
+            "DazeValue": 37680,
+            "DazeGrowth": 1720
+        },
+        "1131020": {
+            "DamageValue": 11340,
+            "DamageGrowth": 1040,
+            "DazeValue": 11340,
+            "DazeGrowth": 520
+        },
+        "1131021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 24670,
+            "DazeGrowth": 1130
+        },
+        "1131022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 31170,
+            "DazeGrowth": 1420
+        },
+        "1131023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15170,
+            "DazeGrowth": 690
+        },
+        "1131024": {
+            "DamageValue": 26400,
+            "DamageGrowth": 2400,
+            "DazeValue": 23130,
+            "DazeGrowth": 1060
+        },
+        "1131025": {
+            "DamageValue": 11320,
+            "DamageGrowth": 1030,
+            "DazeValue": 9910,
+            "DazeGrowth": 460
+        },
+        "1131026": {
+            "DamageValue": 11320,
+            "DamageGrowth": 1030,
+            "DazeValue": 9910,
+            "DazeGrowth": 460
+        }
+    }
+}

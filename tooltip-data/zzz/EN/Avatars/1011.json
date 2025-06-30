@@ -1,0 +1,367 @@
+{
+    "Name": "Anby",
+    "ElementTypes": [
+        "Elec"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Rapid Charge Mode",
+            "Description": "When the 4th hit of Anby's <color=#FFFFFF>Basic Attack</color> hits an enemy, her Energy Generation Rate is increased by 12% for 30s.",
+            "Lore": "\"Charge up for just a minute, and you're set to fight for an hour!\" That's the sales pitch for these weapon expansion modules.\nAnd they deliver exactly that."
+        },
+        "2": {
+            "Title": "Precision Discharge",
+            "Description": "When <color=#FFFFFF>Basic Attack: Thunderbolt</color> hits a Stunned enemy, its DMG is increased by 30%. When Anby's <color=#FFFFFF>EX Special Attack</color> hits an enemy that is not Stunned, the Daze inflicted is increased by 10%.",
+            "Lore": "\"Electric shocks will knock you out cold.\"\nLooking at the enemy out cold at her feet, she added:\n\"At least, that's what happens in the movies.\""
+        },
+        "3": {
+            "Title": "Well-Disciplined",
+            "Description": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2",
+            "Lore": "Run, slash, move like lightning. She is no amateur when it comes to Hollows—she's an expert."
+        },
+        "4": {
+            "Title": "Conducting Charge",
+            "Description": "When Anby launches a <color=#FFFFFF>Chain Attack</color> or uses her <color=#FFFFFF>Ultimate</color>, off-field Electric Agents recover 3 Energy.\nFor every 12% Energy Generation Rate Anby has, recover an additional 2 Energy, up to a maximum of 6.",
+            "Lore": "You won't last long fighting solo. An experienced Hollow Raider knows how to create opportunities for their teammates."
+        },
+        "5": {
+            "Title": "Street Experience",
+            "Description": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2",
+            "Lore": "Working for the Cunning Hares not only builds your mental toughness but also helps (or rather, forces) you to get in shape."
+        },
+        "6": {
+            "Title": "Charging Field",
+            "Description": "When Anby uses her <color=#FFFFFF>EX Special Attack</color>, she gains 8 stacks of Charge (max 8 stacks). When she hits an enemy with her <color=#FFFFFF>Basic Attack</color> or <color=#FFFFFF>Dash Attack</color>, 1 stack of Charge is consumed, increasing that attack's DMG by 45%.",
+            "Lore": "Coils of electricity flickered over her fingertips.\nAnby raised her head, eyes brimming with determination beyond her years.\nPerhaps, one day, she will be the one with total mastery over electricity."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Core Passive: Fluctuating Voltage",
+            "DescriptionByLevel": {
+                "1": "Launch a <color=#FFFFFF>Basic Attack: Thunderbolt</color>, <color=#FFFFFF>Special Attack</color>, or <color=#FFFFFF>EX Special Attack</color> after the 3rd hit of Anby's <color=#FFFFFF>Basic Attack</color> for an extra <color=#2BAD00>32%</color> Daze.",
+                "2": "Launch a <color=#FFFFFF>Basic Attack: Thunderbolt</color>, <color=#FFFFFF>Special Attack</color>, or <color=#FFFFFF>EX Special Attack</color> after the 3rd hit of Anby's <color=#FFFFFF>Basic Attack</color> for an extra <color=#2BAD00>37.3%</color> Daze.",
+                "3": "Launch a <color=#FFFFFF>Basic Attack: Thunderbolt</color>, <color=#FFFFFF>Special Attack</color>, or <color=#FFFFFF>EX Special Attack</color> after the 3rd hit of Anby's <color=#FFFFFF>Basic Attack</color> for an extra <color=#2BAD00>42.6%</color> Daze.",
+                "4": "Launch a <color=#FFFFFF>Basic Attack: Thunderbolt</color>, <color=#FFFFFF>Special Attack</color>, or <color=#FFFFFF>EX Special Attack</color> after the 3rd hit of Anby's <color=#FFFFFF>Basic Attack</color> for an extra <color=#2BAD00>48%</color> Daze.",
+                "5": "Launch a <color=#FFFFFF>Basic Attack: Thunderbolt</color>, <color=#FFFFFF>Special Attack</color>, or <color=#FFFFFF>EX Special Attack</color> after the 3rd hit of Anby's <color=#FFFFFF>Basic Attack</color> for an extra <color=#2BAD00>53.3%</color> Daze.",
+                "6": "Launch a <color=#FFFFFF>Basic Attack: Thunderbolt</color>, <color=#FFFFFF>Special Attack</color>, or <color=#FFFFFF>EX Special Attack</color> after the 3rd hit of Anby's <color=#FFFFFF>Basic Attack</color> for an extra <color=#2BAD00>58.6%</color> Daze.",
+                "7": "Launch a <color=#FFFFFF>Basic Attack: Thunderbolt</color>, <color=#FFFFFF>Special Attack</color>, or <color=#FFFFFF>EX Special Attack</color> after the 3rd hit of Anby's <color=#FFFFFF>Basic Attack</color> for an extra <color=#2BAD00>64%</color> Daze."
+            }
+        },
+        "MathSkill": {
+            "Title": "Additional Ability: Parallel Connection",
+            "Description": "When another character in your squad shares the same Attribute or Faction:\nWhen Anby's <color=#FFFFFF>Dodge Counter</color> hits an enemy, she gains an extra 7.2 Energy. This effect can trigger once every 5s."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "101100001": {
+                "Title": "Basic Attack: Turbo Volt",
+                "Description": "Press <IconMap:Icon_Normal> to activate:\nUnleashes up to 4 slashes. The first 3 hits deal <color=#F0D12B>Physical DMG</color>, the 4th hit deals <color=#2EB6FF>Electric DMG</color>."
+            },
+            "101100002": {
+                "Title": "Basic Attack: Thunderbolt",
+                "Description": "After unleashing the 3rd hit of the <color=#FFFFFF>Basic Attack</color>, hold down or pause for a short while, and then press <IconMap:Icon_Normal> to activate:\nUnleashes a downward strike that deals <color=#2EB6FF>Electric DMG</color>.\nAnti-Interrupt level is increased while using this skill."
+            },
+            "101110001": {
+                "Title": "Basic Attack: Turbo Volt"
+            },
+            "101110002": {
+                "Description": "1st-Hit DMG Multiplier",
+                "Param": "{Skill:1011001, Prop:1001}"
+            },
+            "101110003": {
+                "Description": "2nd-Hit DMG Multiplier",
+                "Param": "{Skill:1011002, Prop:1001}"
+            },
+            "101110004": {
+                "Description": "3rd-Hit DMG Multiplier",
+                "Param": "{Skill:1011003, Prop:1001}"
+            },
+            "101110005": {
+                "Description": "4th-Hit DMG Multiplier",
+                "Param": "{Skill:1011004, Prop:1001}"
+            },
+            "101110006": {
+                "Description": "1st-Hit Daze Multiplier",
+                "Param": "{Skill:1011001, Prop:1002}"
+            },
+            "101110007": {
+                "Description": "2nd-Hit Daze Multiplier",
+                "Param": "{Skill:1011002, Prop:1002}"
+            },
+            "101110008": {
+                "Description": "3rd-Hit Daze Multiplier",
+                "Param": "{Skill:1011003, Prop:1002}"
+            },
+            "101110009": {
+                "Description": "4th-Hit Daze Multiplier",
+                "Param": "{Skill:1011004, Prop:1002}"
+            },
+            "101110010": {
+                "Title": "Basic Attack: Thunderbolt"
+            },
+            "101110011": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1011005, Prop:1001}"
+            },
+            "101110012": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1011005, Prop:1002}"
+            }
+        },
+        "1": {
+            "101100003": {
+                "Title": "Special Attack: Fork Lightning",
+                "Description": "Press <IconMap:Icon_Special> to activate:\nUnleashes an upward slash that deals <color=#2EB6FF>Electric DMG</color>.\nThis attack launches faster when used after the 3rd hit of the <color=#FFFFFF>Basic Attack</color> or <color=#FFFFFF>Basic Attack: Thunderbolt</color>.\nAnti-Interrupt level is increased while using this skill."
+            },
+            "101100004": {
+                "Title": "EX Special Attack: Lightning Bolt",
+                "Description": "With enough Energy, press <IconMap:Icon_SpecialReady> to activate:\nUnleashes a powerful upward slash that deals massive <color=#2EB6FF>Electric DMG</color>.\nThis attack launches faster when used after the 3rd hit of her <color=#FFFFFF>Basic Attack</color> or <color=#FFFFFF>Basic Attack: Thunderbolt</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "101110013": {
+                "Title": "Special Attack: Fork Lightning"
+            },
+            "101110014": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1011006, Prop:1001}"
+            },
+            "101110015": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1011006, Prop:1002}"
+            },
+            "101110016": {
+                "Title": "EX Special Attack: Lightning Bolt"
+            },
+            "101110017": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1011007, Prop:1001}"
+            },
+            "101110018": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1011007, Prop:1002}"
+            },
+            "101110019": {
+                "Description": "Energy Cost",
+                "Param": "60"
+            }
+        },
+        "2": {
+            "101100005": {
+                "Title": "Dodge: Slide",
+                "Description": "Press <IconMap:Icon_Evade> to activate:\nA quick dash dodge.\nCharacter is invulnerable while using this skill."
+            },
+            "101100006": {
+                "Title": "Dash Attack: Taser Blast",
+                "Description": "Press <IconMap:Icon_Normal> during a dodge to activate:\nSlashes all nearby enemies, dealing <color=#F0D12B>Physical DMG</color>."
+            },
+            "101100007": {
+                "Title": "Dodge Counter: Thunderclap",
+                "Description": "Press <IconMap:Icon_Normal> during a <color=#FFFFFF>Perfect Dodge</color> to activate:\nSlashes enemies in front, dealing <color=#2EB6FF>Electric DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "101110020": {
+                "Title": "Dash Attack: Taser Blast"
+            },
+            "101110021": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1011008, Prop:1001}"
+            },
+            "101110022": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1011008, Prop:1002}"
+            },
+            "101110023": {
+                "Title": "Dodge Counter: Thunderclap"
+            },
+            "101110024": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1011009, Prop:1001}"
+            },
+            "101110025": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1011009, Prop:1002}"
+            }
+        },
+        "3": {
+            "101100008": {
+                "Title": "Chain Attack: Electro Engine",
+                "Description": "When a <color=#FFFFFF>Chain Attack</color> is triggered, select the character to activate:\nUnleashes a powerful upwards slash at enemies in a small area, dealing massive <color=#2EB6FF>Electric DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "101100009": {
+                "Title": "Ultimate: Overdrive Engine",
+                "Description": "When Decibel Rating is at <color=#FFFFFF>Maximum</color>, press <IconMap:Icon_UltimateReady> to activate:\nUnleashes a powerful upward slash at enemies in a small area followed by several downward strikes, dealing massive <color=#2EB6FF>Electric DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "101110026": {
+                "Title": "Chain Attack: Electro Engine"
+            },
+            "101110027": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1011010, Prop:1001}"
+            },
+            "101110028": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1011010, Prop:1002}"
+            },
+            "101110029": {
+                "Title": "Ultimate: Overdrive Engine"
+            },
+            "101110030": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1011011, Prop:1001}"
+            },
+            "101110031": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1011011, Prop:1002}"
+            }
+        },
+        "6": {
+            "101100011": {
+                "Title": "Quick Assist: Thunderfall",
+                "Description": "When the active character is launched, press <IconMap:Icon_Switch> to activate:\nSlashes enemies in front, dealing <color=#2EB6FF>Electric DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "101100012": {
+                "Title": "Defensive Assist: Flash",
+                "Description": "When the character on field is about to be attacked, press <IconMap:Icon_Switch> to activate:\nParries the enemy's attack, dealing massive Daze.\nCharacter is invulnerable while using this skill."
+            },
+            "101100013": {
+                "Title": "Assist Follow-Up: Lightning Whirl",
+                "Description": "Press <IconMap:Icon_Normal> after a <color=#FFFFFF>Defensive Assist</color> to activate:\nPerform a spinning slash against enemies in front, dealing <color=#2EB6FF>Electric DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "101110032": {
+                "Title": "Quick Assist: Thunderfall"
+            },
+            "101110033": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1011012, Prop:1001}"
+            },
+            "101110034": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1011012, Prop:1002}"
+            },
+            "101110035": {
+                "Title": "Defensive Assist: Flash"
+            },
+            "101110036": {
+                "Description": "Light Defensive Daze Multiplier",
+                "Param": "{Skill:1011013, Prop:1002}"
+            },
+            "101110037": {
+                "Description": "Heavy Defensive Daze Multiplier",
+                "Param": "{Skill:1011014, Prop:1002}"
+            },
+            "101110038": {
+                "Description": "Chain Defensive Daze Multiplier",
+                "Param": "{Skill:1011015, Prop:1002}"
+            },
+            "101110039": {
+                "Title": "Assist Follow-Up: Lightning Whirl"
+            },
+            "101110040": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1011016, Prop:1001}"
+            },
+            "101110041": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1011016, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1011001": {
+            "DamageValue": 3120,
+            "DamageGrowth": 290,
+            "DazeValue": 1560,
+            "DazeGrowth": 80
+        },
+        "1011002": {
+            "DamageValue": 3370,
+            "DamageGrowth": 310,
+            "DazeValue": 2870,
+            "DazeGrowth": 140
+        },
+        "1011003": {
+            "DamageValue": 11360,
+            "DamageGrowth": 1040,
+            "DazeValue": 8960,
+            "DazeGrowth": 410
+        },
+        "1011004": {
+            "DamageValue": 23910,
+            "DamageGrowth": 2180,
+            "DazeValue": 18740,
+            "DazeGrowth": 860
+        },
+        "1011005": {
+            "DamageValue": 32860,
+            "DamageGrowth": 2990,
+            "DazeValue": 14240,
+            "DazeGrowth": 650
+        },
+        "1011006": {
+            "DamageValue": 9340,
+            "DamageGrowth": 850,
+            "DazeValue": 9340,
+            "DazeGrowth": 430
+        },
+        "1011007": {
+            "DamageValue": 58300,
+            "DamageGrowth": 5300,
+            "DazeValue": 48180,
+            "DazeGrowth": 2190
+        },
+        "1011008": {
+            "DamageValue": 5670,
+            "DamageGrowth": 520,
+            "DazeValue": 2840,
+            "DazeGrowth": 130
+        },
+        "1011009": {
+            "DamageValue": 18020,
+            "DamageGrowth": 1640,
+            "DazeValue": 16170,
+            "DazeGrowth": 740
+        },
+        "1011010": {
+            "DamageValue": 54240,
+            "DamageGrowth": 4940,
+            "DazeValue": 14340,
+            "DazeGrowth": 660
+        },
+        "1011011": {
+            "DamageValue": 151260,
+            "DamageGrowth": 13760,
+            "DazeValue": 99160,
+            "DazeGrowth": 4510
+        },
+        "1011012": {
+            "DamageValue": 6170,
+            "DamageGrowth": 570,
+            "DazeValue": 6170,
+            "DazeGrowth": 290
+        },
+        "1011013": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 24670,
+            "DazeGrowth": 1130
+        },
+        "1011014": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 31170,
+            "DazeGrowth": 1420
+        },
+        "1011015": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15170,
+            "DazeGrowth": 690
+        },
+        "1011016": {
+            "DamageValue": 33520,
+            "DamageGrowth": 3050,
+            "DazeValue": 29140,
+            "DazeGrowth": 1330
+        }
+    }
+}

@@ -1,0 +1,450 @@
+{
+    "Name": "Qingyi",
+    "ElementTypes": [
+        "Elec"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Rompedora de Isolamento",
+            "Description": "Ao entrar em combate, a <color=#FFFFFF>Voltagem de Conexão Brilhante</color> de Qingyi é restaurada ao máximo e a taxa de acúmulo aumenta 30%. Ao usar o <color=#FFFFFF>Ataque Básico: Flores Mágicas do Luar</color>, quando a <color=#FFFFFF>Voltagem de Conexão Brilhante</color> estiver no máximo, o ataque reduz 15% da DEF do inimigo e aumenta 20% da Taxa CRIT de Qingyi contra esse inimigo por 15s.",
+            "Lore": "\"Enquanto não houver vidas em perigo, peço que não resista à prisão...\"\nA direção e a intensidade da corrente foram precisamente calculadas para assegurar que cada suspeito leve uma experiência segura de choque elétrico."
+        },
+        "2": {
+            "Title": "Esforço Mínimo, Impacto Máximo",
+            "Description": "O efeito de aumento do Multiplicador de Dano de Atordoamento obtido para cada acúmulo de <color=#FFFFFF>Domínio</color> na <color=#FFFFFF>Passiva Principal: Mil Anos</color> aumenta para 135% do seu valor original. Quando o ataque de Qingyi atinge um inimigo, caso o número de acúmulos de <color=#FFFFFF>Domínio</color> do alvo tenha chegado ao limite máximo, o Atordoamento causado aumenta 15%.",
+            "Lore": "Uma técnica de combate antiga, mencionada em velhos textos. Originalmente, devia ser um tipo de arte marcial sem bastão.\n\"Não se preocupe, o braço também pode ser usado como um bastão, hum?!\""
+        },
+        "3": {
+            "Title": "Beba Água Quente",
+            "Description": "Obtém +2 níveis de <color=#FFFFFF>Ataque Básico</color>, <color=#FFFFFF>Esquiva</color>, <color=#FFFFFF>Ataque de Assistência</color>, <color=#FFFFFF>Ataque Especial</color> e <color=#FFFFFF>Ataque em Cadeia</color>",
+            "Lore": "\"Os jovens devem estar atentos à sua saúde, e beber mais água quente é um bom começo.\"\nQingyi sempre parece animada quando bebe da garrafa térmica. Mas tome cuidado se ela lhe oferecer uma bebida:\n\"Mesmo água fervente a 100 °C não a incomoda...\" Um oficial da segurança pública que passou por isso deixou esse aviso."
+        },
+        "4": {
+            "Title": "Barreira de Arco Estável",
+            "Description": "Ao entrar ou sair do estado de <color=#FFFFFF>Conexão Brilhante</color>, obtém um Escudo equivalente a 10% do Máx. de PV de Qingyi. Se já houver um Escudo ativado quando o efeito de Escudo for atualizado, Qingyi gera 5 de Energia. O efeito de Recuperação de Energia pode ser ativado uma vez a cada 10s.",
+            "Lore": "Através da Engenharia reversa de autômatos da civilização antiga, o Instituto Estrela Branca desenvolveu a Barreira de Arco, uma tecnologia que combina defesa, ataque e conversão de energia elétrica.\n\"O ditado diz: água pode fazer um barco flutuar, ou afundar. A Física diz: corrente elétrica flui como água. Então, a corrente pode ser usada tanto para defender, quanto para atacar. Uma combinação esplêndida!\""
+        },
+        "5": {
+            "Title": "Espírito da Juventude",
+            "Description": "Obtém +2 níveis de <color=#FFFFFF>Ataque Básico</color>, <color=#FFFFFF>Esquiva</color>, <color=#FFFFFF>Ataque de Assistência</color>, <color=#FFFFFF>Ataque Especial</color> e <color=#FFFFFF>Ataque em Cadeia</color>",
+            "Lore": "\"Pessoas jovens têm que ter coragem e experimentar coisas novas. Continue assim!\"\nO incentivo da Qingyi parece preguiçoso e implicante, mas, se precisar, dá para contar com ela.\nAfinal, ela tem séculos de vida e pode lidar com qualquer coisa."
+        },
+        "6": {
+            "Title": "Oito Meridianos",
+            "Description": "Aumenta muito o Nível de Interrupção do <color=#FFFFFF>Ataque Básico: Flores Mágicas do Luar</color>, e o Dano CRIT aumenta mais 100%. Quando Qingyi atinge um inimigo com o <color=#FFFFFF>Ataque Básico: Flores Mágicas do Luar</color>, a Resistência do alvo a todos os Danos de Atributo reduz 20% por 15s.",
+            "Lore": "Uma teoria sobre o sistema circulatório humano documentada em textos da civilização antiga. Dizem que quem a domina consegue imobilizar um oponente em combate instantaneamente.\n\"E se a gente tentasse tocar os pontos de pressão de cócegas? Quem vai ser a cobaia? Gerente? Zhu Yuan?\""
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passiva Principal: Mil Anos",
+            "DescriptionByLevel": {
+                "1": "Quando Qingyi atinge um inimigo com o Golpe Final de seu <color=#FFFFFF>Ataque Básico: Flores Mágicas do Luar</color>, ela aplica 5 acúmulos de <color=#FFFFFF>Domínio</color> no inimigo, até o máximo de 20 acúmulos. Cada acúmulo de <color=#FFFFFF>Domínio</color> aumenta <color=#2BAD00>2%</color> do Multiplicador de Dano de Atordoamento do alvo. Para cada Ataque Vigoroso durante o <color=#FFFFFF>Ataque Básico: Flores Mágicas do Luar</color>, o Golpe Final aplica 1 acúmulo extra de <color=#FFFFFF>Domínio</color>. Caso a <color=#FFFFFF>Esquiva Perfeita</color> seja ativada ao lançar o Golpe Final, adiciona {CAL:5+5,1,2} acúmulos extras de <color=#FFFFFF>Domínio</color> diretamente. A quantidade de acúmulos de Domínio aplicados é o dobro em inimigos normais ou de elite. Quando o alvo se recupera do Atordoamento, os acúmulos correspondentes de <color=#FFFFFF>Domínio</color> são redefinidos.",
+                "2": "Quando Qingyi atinge um inimigo com o Golpe Final de seu <color=#FFFFFF>Ataque Básico: Flores Mágicas do Luar</color>, ela aplica 5 acúmulos de <color=#FFFFFF>Domínio</color> no inimigo, até o máximo de 20 acúmulos. Cada acúmulo de <color=#FFFFFF>Domínio</color> aumenta <color=#2BAD00>2,4%</color> do Multiplicador de Dano de Atordoamento do alvo. Para cada Ataque Vigoroso durante o <color=#FFFFFF>Ataque Básico: Flores Mágicas do Luar</color>, o Golpe Final aplica 1 acúmulo extra de <color=#FFFFFF>Domínio</color>. Caso a <color=#FFFFFF>Esquiva Perfeita</color> seja ativada ao lançar o Golpe Final, adiciona {CAL:5+5,1,2} acúmulos extras de <color=#FFFFFF>Domínio</color> diretamente. A quantidade de acúmulos de Domínio aplicados é o dobro em inimigos normais ou de elite. Quando o alvo se recupera do Atordoamento, os acúmulos correspondentes de <color=#FFFFFF>Domínio</color> são redefinidos.",
+                "3": "Quando Qingyi atinge um inimigo com o Golpe Final de seu <color=#FFFFFF>Ataque Básico: Flores Mágicas do Luar</color>, ela aplica 5 acúmulos de <color=#FFFFFF>Domínio</color> no inimigo, até o máximo de 20 acúmulos. Cada acúmulo de <color=#FFFFFF>Domínio</color> aumenta <color=#2BAD00>2,7%</color> do Multiplicador de Dano de Atordoamento do alvo. Para cada Ataque Vigoroso durante o <color=#FFFFFF>Ataque Básico: Flores Mágicas do Luar</color>, o Golpe Final aplica 1 acúmulo extra de <color=#FFFFFF>Domínio</color>. Caso a <color=#FFFFFF>Esquiva Perfeita</color> seja ativada ao lançar o Golpe Final, adiciona {CAL:5+5,1,2} acúmulos extras de <color=#FFFFFF>Domínio</color> diretamente. A quantidade de acúmulos de Domínio aplicados é o dobro em inimigos normais ou de elite. Quando o alvo se recupera do Atordoamento, os acúmulos correspondentes de <color=#FFFFFF>Domínio</color> são redefinidos.",
+                "4": "Quando Qingyi atinge um inimigo com o Golpe Final de seu <color=#FFFFFF>Ataque Básico: Flores Mágicas do Luar</color>, ela aplica 5 acúmulos de <color=#FFFFFF>Domínio</color> no inimigo, até o máximo de 20 acúmulos. Cada acúmulo de <color=#FFFFFF>Domínio</color> aumenta <color=#2BAD00>3%</color> do Multiplicador de Dano de Atordoamento do alvo. Para cada Ataque Vigoroso durante o <color=#FFFFFF>Ataque Básico: Flores Mágicas do Luar</color>, o Golpe Final aplica 1 acúmulo extra de <color=#FFFFFF>Domínio</color>. Caso a <color=#FFFFFF>Esquiva Perfeita</color> seja ativada ao lançar o Golpe Final, adiciona {CAL:5+5,1,2} acúmulos extras de <color=#FFFFFF>Domínio</color> diretamente. A quantidade de acúmulos de Domínio aplicados é o dobro em inimigos normais ou de elite. Quando o alvo se recupera do Atordoamento, os acúmulos correspondentes de <color=#FFFFFF>Domínio</color> são redefinidos.",
+                "5": "Quando Qingyi atinge um inimigo com o Golpe Final de seu <color=#FFFFFF>Ataque Básico: Flores Mágicas do Luar</color>, ela aplica 5 acúmulos de <color=#FFFFFF>Domínio</color> no inimigo, até o máximo de 20 acúmulos. Cada acúmulo de <color=#FFFFFF>Domínio</color> aumenta <color=#2BAD00>3,4%</color> do Multiplicador de Dano de Atordoamento do alvo. Para cada Ataque Vigoroso durante o <color=#FFFFFF>Ataque Básico: Flores Mágicas do Luar</color>, o Golpe Final aplica 1 acúmulo extra de <color=#FFFFFF>Domínio</color>. Caso a <color=#FFFFFF>Esquiva Perfeita</color> seja ativada ao lançar o Golpe Final, adiciona {CAL:5+5,1,2} acúmulos extras de <color=#FFFFFF>Domínio</color> diretamente. A quantidade de acúmulos de Domínio aplicados é o dobro em inimigos normais ou de elite. Quando o alvo se recupera do Atordoamento, os acúmulos correspondentes de <color=#FFFFFF>Domínio</color> são redefinidos.",
+                "6": "Quando Qingyi atinge um inimigo com o Golpe Final de seu <color=#FFFFFF>Ataque Básico: Flores Mágicas do Luar</color>, ela aplica 5 acúmulos de <color=#FFFFFF>Domínio</color> no inimigo, até o máximo de 20 acúmulos. Cada acúmulo de <color=#FFFFFF>Domínio</color> aumenta <color=#2BAD00>3,7%</color> do Multiplicador de Dano de Atordoamento do alvo. Para cada Ataque Vigoroso durante o <color=#FFFFFF>Ataque Básico: Flores Mágicas do Luar</color>, o Golpe Final aplica 1 acúmulo extra de <color=#FFFFFF>Domínio</color>. Caso a <color=#FFFFFF>Esquiva Perfeita</color> seja ativada ao lançar o Golpe Final, adiciona {CAL:5+5,1,2} acúmulos extras de <color=#FFFFFF>Domínio</color> diretamente. A quantidade de acúmulos de Domínio aplicados é o dobro em inimigos normais ou de elite. Quando o alvo se recupera do Atordoamento, os acúmulos correspondentes de <color=#FFFFFF>Domínio</color> são redefinidos.",
+                "7": "Quando Qingyi atinge um inimigo com o Golpe Final de seu <color=#FFFFFF>Ataque Básico: Flores Mágicas do Luar</color>, ela aplica 5 acúmulos de <color=#FFFFFF>Domínio</color> no inimigo, até o máximo de 20 acúmulos. Cada acúmulo de <color=#FFFFFF>Domínio</color> aumenta <color=#2BAD00>4%</color> do Multiplicador de Dano de Atordoamento do alvo. Para cada Ataque Vigoroso durante o <color=#FFFFFF>Ataque Básico: Flores Mágicas do Luar</color>, o Golpe Final aplica 1 acúmulo extra de <color=#FFFFFF>Domínio</color>. Caso a <color=#FFFFFF>Esquiva Perfeita</color> seja ativada ao lançar o Golpe Final, adiciona {CAL:5+5,1,2} acúmulos extras de <color=#FFFFFF>Domínio</color> diretamente. A quantidade de acúmulos de Domínio aplicados é o dobro em inimigos normais ou de elite. Quando o alvo se recupera do Atordoamento, os acúmulos correspondentes de <color=#FFFFFF>Domínio</color> são redefinidos."
+            }
+        },
+        "MathSkill": {
+            "Title": "Habilidade Extra: Despedida na Rota da Seda",
+            "Description": "Quando há ao menos um personagem <color=#FFFFFF>Atacante</color> ou um personagem da mesma facção em sua equipe:\n<color=#FFFFFF>Ataques Básicos</color> causam 20% mais Atordoamento. Se o Impacto de Qingyi for maior que 120, seu ATQ aumenta 6 a cada ponto adicional, até um máximo de 600."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "125100001": {
+                "Title": "Ataque Básico: Penúltimo",
+                "Description": "Pressione <IconMap:Icon_Normal> para ativar:\nLança até quatro ataques dianteiros, causando <color=#F0D12B>Dano Físico</color> e <color=#2EB6FF>Dano Elétrico</color>.\nDurante o 3º golpe, pressione <IconMap:Icon_Normal> continuamente para continuar o ataque e bater mais no inimigo. Usar a <color=#FFFFFF>Esquiva</color> não interrompe a contagem de combo do <color=#FFFFFF>Ataque Básico</color> da Qingyi.\nDurante o 3º golpe, pare de pressionar <IconMap:Icon_Normal> para interromper o combo e passar automaticamente para o 4º golpe. Se o combo durar certo tempo, o 4º ataque será aprimorado.\nDurante o terceiro e quarto golpes, o nível de Anti-Interrupção aumenta, e o dano sofrido é 40% menor."
+            },
+            "125100002": {
+                "Title": "Ataque Básico: Florescer Encantado",
+                "Description": "Mantenha pressionado <IconMap:Icon_Normal> para ativar:\nRealiza um Ataque Vigoroso para frente e causa <color=#2EB6FF>Dano Elétrico</color>.\nDurante sua execução, o nível de Anti-Interrupção aumenta."
+            },
+            "125100003": {
+                "Title": "Conexão Brilhante",
+                "Description": "Quando Qingyi causa <color=#2EB6FF>Dano Elétrico</color> com uma habilidade, ela acumula <color=#FFFFFF>Voltagem de Conexão Brilhante</color>. Quando a <color=#FFFFFF>Voltagem de Conexão Brilhante</color> atinge 75%, Qingyi entra no estado de <color=#FFFFFF>Conexão Brilhante</color>. Ao usar o <color=#FFFFFF>Ataque Básico: Flores Mágicas do Luar</color>, Qingyi consome toda a <color=#FFFFFF>Voltagem de Conexão Brilhante</color> e sai do estado de <color=#FFFFFF>Conexão Brilhante</color>. A cada 1% de <color=#FFFFFF>Voltagem de Conexão Brilhante</color> consumido acima de 75%, o Dano/Atordoamento causados por essa habilidade aumentam 1%/0,5%. O <color=#FFFFFF>Ataque Básico: Flores Mágicas do Luar</color> não acumula <color=#FFFFFF>Voltagem de Conexão Brilhante</color> por si só."
+            },
+            "125100004": {
+                "Title": "Ataque Básico: Flores Mágicas do Luar",
+                "Description": "Durante a <color=#FFFFFF>Conexão Brilhante</color>, mantenha <IconMap:Icon_Normal> pressionado para ativar:\nRealiza cinco Ataques Rápidos consecutivos e um Golpe Final que causa <color=#2EB6FF>Dano Elétrico</color> intenso. Solte o botão <IconMap:Icon_Normal> durante o movimento, para lançar o Golpe Final antes.\nAtive o Golpe Final um momento antes de a personagem ser atacada para ativar a <color=#FFFFFF>Esquiva Perfeita</color>.\nDurante a execução do Ataque Rápido, o nível de Anti-Interrupção aumenta, o dano sofrido é 40% menor e Qingyi fica invulnerável durante o Golpe Final."
+            },
+            "125100016": {
+                "Title": "Ataque Básico: Penúltimo"
+            },
+            "125100017": {
+                "Description": "Multiplicador de Dano de 1º Golpe",
+                "Param": "{Skill:1251001, Prop:1001}"
+            },
+            "125100018": {
+                "Description": "Multiplicador de Dano de 1º Golpe (ALT)",
+                "Param": "{Skill:1251002, Prop:1001}"
+            },
+            "125100019": {
+                "Description": "Multiplicador de Dano de 2º Golpe",
+                "Param": "{Skill:1251003, Prop:1001}"
+            },
+            "125100020": {
+                "Description": "Multiplicador de Dano de 3º Golpe",
+                "Param": "{Skill:1251004, Prop:1001}"
+            },
+            "125100021": {
+                "Description": "Multiplicador de Dano de 4º Golpe",
+                "Param": "{Skill:1251005, Prop:1001}"
+            },
+            "125100022": {
+                "Description": "Multiplicador de Dano de 4º Golpe (Aprimorado)",
+                "Param": "{Skill:1251006, Prop:1001}"
+            },
+            "125100023": {
+                "Description": "Multiplicador de Atordoamento de 1º Golpe",
+                "Param": "{Skill:1251001, Prop:1002}"
+            },
+            "125100024": {
+                "Description": "Multiplicador de Atordoamento de 1º Golpe (ALT)",
+                "Param": "{Skill:1251002, Prop:1002}"
+            },
+            "125100025": {
+                "Description": "Multiplicador de Atordoamento de 2º Golpe",
+                "Param": "{Skill:1251003, Prop:1002}"
+            },
+            "125100026": {
+                "Description": "Multiplicador de Atordoamento de 3º Golpe",
+                "Param": "{Skill:1251004, Prop:1002}"
+            },
+            "125100027": {
+                "Description": "Multiplicador de Atordoamento de 4º Golpe",
+                "Param": "{Skill:1251005, Prop:1002}"
+            },
+            "125100028": {
+                "Description": "Multiplicador de Atordoamento de 4º Golpe (Aprimorado)",
+                "Param": "{Skill:1251006, Prop:1002}"
+            },
+            "125100029": {
+                "Title": "Ataque Básico: Florescer Encantado"
+            },
+            "125100030": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1251007, Prop:1001}"
+            },
+            "125100031": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1251007, Prop:1002}"
+            },
+            "125100032": {
+                "Title": "Ataque Básico: Flores Mágicas do Luar"
+            },
+            "125100033": {
+                "Description": "Multiplicador de Dano de Ataques Vigorosos",
+                "Param": "{Skill:1251008, Prop:1001}"
+            },
+            "125100034": {
+                "Description": "Multiplicador de Dano de Golpe Final",
+                "Param": "{Skill:1251009, Prop:1001}"
+            },
+            "125100035": {
+                "Description": "Multiplicador de Atordoamento de Ataques Vigorosos",
+                "Param": "{Skill:1251008, Prop:1002}"
+            },
+            "125100036": {
+                "Description": "Multiplicador de Atordoamento de Golpe Final",
+                "Param": "{Skill:1251009, Prop:1002}"
+            }
+        },
+        "1": {
+            "125100005": {
+                "Title": "Ataque Especial: Memorial ao Passado",
+                "Description": "Pressione <IconMap:Icon_Special> para ativar:\nExecuta um golpe para cima e um para baixo logo em seguida, causando <color=#2EB6FF>Dano Elétrico</color>.\nDurante sua execução, o nível de Anti-Interrupção aumenta."
+            },
+            "125100006": {
+                "Title": "Ataque Especial Reforçado: Begônias ao Luar",
+                "Description": "Quando Qingyi tiver Energia suficiente, pressione <IconMap:Icon_SpecialReady> para ativar:\nGolpeia rapidamente para cima e salta no ar, virando-se e lançando uma série de ataques, seguidos de um poderoso golpe para baixo, que causa muito <color=#2EB6FF>Dano Elétrico</color>. Mantenha <IconMap:Icon_SpecialReady> pressionado para consumir energia adicional e aumentar o combo de golpes na série.\nA personagem fica invulnerável ao usar esta habilidade.\nApós executar essa habilidade, você pode conectar diretamente com o terceiro golpe do <color=#FFFFFF>Ataque Básico</color>."
+            },
+            "125100037": {
+                "Title": "Ataque Especial: Memorial ao Passado"
+            },
+            "125100038": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1251010, Prop:1001}"
+            },
+            "125100039": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1251010, Prop:1002}"
+            },
+            "125100040": {
+                "Title": "Ataque Especial Reforçado: Begônias ao Luar"
+            },
+            "125100041": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{{Skill:1251011, Prop:1001} + {Skill:1251021, Prop:1001} + {Skill:1251022, Prop:1001}}"
+            },
+            "125100042": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{{Skill:1251011, Prop:1002} + {Skill:1251021, Prop:1002} + {Skill:1251022, Prop:1002}}"
+            },
+            "125100043": {
+                "Description": "Custo de Energia",
+                "Param": "60"
+            },
+            "125100044": {
+                "Description": "Consumo de Energia Adicional",
+                "Param": "20"
+            }
+        },
+        "2": {
+            "125100007": {
+                "Title": "Esquiva: Canção dos Cisnes",
+                "Description": "Pressione <IconMap:Icon_Evade> para ativar:\nUma esquiva rápida.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "125100008": {
+                "Title": "Ataque Rápido: Perfurante",
+                "Description": "Pressione <IconMap:Icon_Normal> durante uma esquiva para ativar:\nAvança nos inimigos à frente, executa um golpe para cima e causa <color=#F0D12B>Dano Físico</color>."
+            },
+            "125100009": {
+                "Title": "Contraesquiva: Entre Linhas Tortas",
+                "Description": "Pressione <IconMap:Icon_Normal> durante uma <color=#FFFFFF>Esquiva Perfeita</color> para ativar:\nSalta no ar, realiza um golpe para baixo e causa <color=#2EB6FF>Dano Elétrico</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "125100045": {
+                "Title": "Ataque Rápido: Perfurante"
+            },
+            "125100046": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1251012, Prop:1001}"
+            },
+            "125100047": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1251012, Prop:1002}"
+            },
+            "125100048": {
+                "Title": "Contraesquiva: Entre Linhas Tortas"
+            },
+            "125100049": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1251013, Prop:1001}"
+            },
+            "125100050": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1251013, Prop:1002}"
+            }
+        },
+        "3": {
+            "125100010": {
+                "Title": "Ataque em Cadeia: Comando de Paz",
+                "Description": "Quando um <color=#FFFFFF>Ataque em Cadeia</color> for acionado, selecione o personagem correspondente para ativar:\nLança uma série de golpes poderosos em uma grande área à sua frente e causa muito <color=#2EB6FF>Dano Elétrico</color>.\nAo atingir um inimigo, para cada acúmulo de <color=#FFFFFF>Domínio</color> da <color=#FFFFFF>Passiva Principal: Mil Anos</color> que o alvo possui, o dano causado pela habilidade aumenta 3%\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "125100011": {
+                "Title": "Supremo: Oito Sons de Ganzhou",
+                "Description": "Quando o Índice de dB estiver no <color=#FFFFFF>Máximo</color>, pressione <IconMap:Icon_UltimateReady> para ativar:\nLança vários golpes poderosos em uma área grande à frente, finaliza com um Golpe Final e causa <color=#2EB6FF>Dano Elétrico</color> muito alto.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "125100051": {
+                "Title": "Ataque em Cadeia: Comando de Paz"
+            },
+            "125100052": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1251014, Prop:1001}"
+            },
+            "125100053": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1251014, Prop:1002}"
+            },
+            "125100054": {
+                "Title": "Supremo: Oito Sons de Ganzhou"
+            },
+            "125100055": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1251015, Prop:1001}"
+            },
+            "125100056": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1251015, Prop:1002}"
+            }
+        },
+        "6": {
+            "125100013": {
+                "Title": "Assistência Reativa: Vento nos Pinheiros",
+                "Description": "Quando o personagem em combate é lançado para o alto, pressione <IconMap:Icon_Switch> para ativar:\nSalta no ar, realiza um golpe para baixo e causa <color=#2EB6FF>Dano Elétrico</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "125100014": {
+                "Title": "Assistência Defensiva: Seda Bordada",
+                "Description": "Quando o personagem em campo está prestes a sofrer um ataque, pressione <IconMap:Icon_Switch> para ativar:\nDefende o ataque inimigo e causa muito Atordoamento.\nEsta habilidade é ideal para aparar ataques inimigos e reduz o consumo de <color=#FFFFFF>Pontos de Assistência</color> quando a personagem sofre uma sequência intensa de ataques.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "125100015": {
+                "Title": "Assistência Imediata: Canção das Águas Claras",
+                "Description": "Pressione <IconMap:Icon_Normal> após uma <color=#FFFFFF>Assistência Defensiva</color> para ativar:\nFaz um Ataque Vigoroso para a frente rapidamente, injetando energia elétrica no solo e retorna para trás, causando uma explosão e <color=#2EB6FF>Dano Elétrico</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "125100057": {
+                "Title": "Assistência Reativa: Vento nos Pinheiros"
+            },
+            "125100058": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1251016, Prop:1001}"
+            },
+            "125100059": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1251016, Prop:1002}"
+            },
+            "125100060": {
+                "Title": "Assistência Defensiva: Seda Bordada"
+            },
+            "125100061": {
+                "Description": "Multiplicador de Atordoamento de Defensiva Leve",
+                "Param": "{Skill:1251017, Prop:1002}"
+            },
+            "125100062": {
+                "Description": "Multiplicador de Atordoamento de Defensiva Pesada",
+                "Param": "{Skill:1251018, Prop:1002}"
+            },
+            "125100063": {
+                "Description": "Multiplicador de Atordoamento de Defensiva em Cadeia",
+                "Param": "{Skill:1251019, Prop:1002}"
+            },
+            "125100064": {
+                "Title": "Assistência Imediata: Canção das Águas Claras"
+            },
+            "125100065": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1251020, Prop:1001}"
+            },
+            "125100066": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1251020, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1251001": {
+            "DamageValue": 4720,
+            "DamageGrowth": 430,
+            "DazeValue": 2360,
+            "DazeGrowth": 110
+        },
+        "1251002": {
+            "DamageValue": 11030,
+            "DamageGrowth": 1010,
+            "DazeValue": 5520,
+            "DazeGrowth": 260
+        },
+        "1251003": {
+            "DamageValue": 12210,
+            "DamageGrowth": 1110,
+            "DazeValue": 8220,
+            "DazeGrowth": 380
+        },
+        "1251004": {
+            "DamageValue": 1760,
+            "DamageGrowth": 160,
+            "DazeValue": 1910,
+            "DazeGrowth": 90
+        },
+        "1251005": {
+            "DamageValue": 10640,
+            "DamageGrowth": 970,
+            "DazeValue": 10630,
+            "DazeGrowth": 490
+        },
+        "1251006": {
+            "DamageValue": 23440,
+            "DamageGrowth": 2140,
+            "DazeValue": 20470,
+            "DazeGrowth": 940
+        },
+        "1251007": {
+            "DamageValue": 8560,
+            "DamageGrowth": 780,
+            "DazeValue": 8560,
+            "DazeGrowth": 390
+        },
+        "1251008": {
+            "DamageValue": 44870,
+            "DamageGrowth": 4080,
+            "DazeValue": 27190,
+            "DazeGrowth": 1240
+        },
+        "1251009": {
+            "DamageValue": 39440,
+            "DamageGrowth": 3590,
+            "DazeValue": 21760,
+            "DazeGrowth": 990
+        },
+        "1251010": {
+            "DamageValue": 6240,
+            "DamageGrowth": 570,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1251011": {
+            "DamageValue": 15070,
+            "DamageGrowth": 1370,
+            "DazeValue": 11110,
+            "DazeGrowth": 510
+        },
+        "1251012": {
+            "DamageValue": 4950,
+            "DamageGrowth": 450,
+            "DazeValue": 2480,
+            "DazeGrowth": 120
+        },
+        "1251013": {
+            "DamageValue": 28400,
+            "DamageGrowth": 2590,
+            "DazeValue": 19040,
+            "DazeGrowth": 870
+        },
+        "1251014": {
+            "DamageValue": 64790,
+            "DamageGrowth": 5890,
+            "DazeValue": 20900,
+            "DazeGrowth": 950
+        },
+        "1251015": {
+            "DamageValue": 167070,
+            "DamageGrowth": 15190,
+            "DazeValue": 109710,
+            "DazeGrowth": 4990
+        },
+        "1251016": {
+            "DamageValue": 13390,
+            "DamageGrowth": 1220,
+            "DazeValue": 13390,
+            "DazeGrowth": 610
+        },
+        "1251017": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 24930,
+            "DazeGrowth": 1140
+        },
+        "1251018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 30430,
+            "DazeGrowth": 1390
+        },
+        "1251019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 12830,
+            "DazeGrowth": 590
+        },
+        "1251020": {
+            "DamageValue": 37640,
+            "DamageGrowth": 3430,
+            "DazeValue": 27900,
+            "DazeGrowth": 1270
+        },
+        "1251021": {
+            "DamageValue": 21100,
+            "DamageGrowth": 1920,
+            "DazeValue": 15550,
+            "DazeGrowth": 710
+        },
+        "1251022": {
+            "DamageValue": 24110,
+            "DamageGrowth": 2200,
+            "DazeValue": 17770,
+            "DazeGrowth": 810
+        }
+    }
+}

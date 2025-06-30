@@ -1,0 +1,512 @@
+{
+    "Name": "凯撒",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "楔式进军",
+            "Description": "进入接战状态或者换入前场时，凯撒立即为全队提供<color=#FFFFFF>[荣光之盾]</color>，300秒内最多触发一次；<color=#FFFFFF>[荣光之盾]</color>存在期间，持有者附近5米范围内敌人的全属性伤害抗性降低15%。",
+            "Lore": "「大老爹教过我，这时候就该以强大的兵力构成楔子般的队形，向敌方最薄弱之处进行攻击——」\n「当然，是由我来打头阵！」"
+        },
+        "2": {
+            "Title": "异域传承",
+            "Description": "<color=#FFFFFF>[核心被动：坚韧之壁]</color>中，<color=#FFFFFF>[荣光之盾]</color>存在期间，凯撒的能量获得效率提升10%，持有者的攻击力提升效果提升至原本的150%。",
+            "Lore": "凯撒的战斗方式与新艾利都或是外环的风格都略有不同，继承成自流浪者集团最厉害的武者们。\n在恰当的时候收敛锋芒，在恰当的时候一击毙命——这向来是流浪者们的生存之道。\n而凯撒一直是个好学生。"
+        },
+        "3": {
+            "Title": "绝对信任",
+            "Description": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[连携技]</color> 技能等级+2",
+            "Lore": "一旦认可某个人之后，凯撒就会把对方划到自己的麾下，并予以其绝对的信任，毫不设防…\n一如她现在对待你那样。"
+        },
+        "4": {
+            "Title": "阿瑞斯攻城锤",
+            "Description": "凯撒发动<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>时，额外回复3点<color=#FFFFFF>[支援点数]</color>；凯撒的能量值不足20点时，可以消耗1点<color=#FFFFFF>[支援点数]</color>作为代替，发动<color=#FFFFFF>[强化特殊技：超强力盾击]</color>，代替效果5秒内最多触发一次。",
+            "Lore": "凯撒在流浪者集团导师教育下学会的战术之一。\n「无论如何，我会战到最后一刻！」"
+        },
+        "5": {
+            "Title": "浪漫征伐",
+            "Description": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[连携技]</color> 技能等级+2",
+            "Lore": "与外表不同，凯撒拥有特别的浪漫情怀。\n例如她总是对一些恋爱戏码充满了好奇心。\n但如果你和她更「深入」地聊这个话题…凯撒则会难得红了脸。"
+        },
+        "6": {
+            "Title": "霸主之志",
+            "Description": "<color=#FFFFFF>[强化特殊技：超强力盾击]</color>和<color=#FFFFFF>[支援突击：支援之锋]</color>必定触发暴击，招式造成的伤害提升50%，对主要目标造成的伤害额外提升50%；凯撒发动<color=#FFFFFF>[强化特殊技：超强力盾击]</color>或<color=#FFFFFF>[支援突击：支援之锋]</color>时，自身暴击率提升30%，暴击伤害提升60%，持续15秒。",
+            "Lore": "「我曾只看向前方。我以为只要自己够强，就没有办不到的事。」\n「但要成为优秀的霸主，这还远远不够。」\n「我还需要守护好后方的同伴——他们才是我最大的底气。」"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "核心被动：坚韧之壁",
+            "DescriptionByLevel": {
+                "1": "凯撒发动<color=#FFFFFF>[强化特殊技：招架反击]</color>、<color=#FFFFFF>[连携技]</color>、<color=#FFFFFF>[终结技]</color>或以<color=#FFFFFF>[防御反击]</color>的方式发动<color=#FFFFFF>[强化特殊技：超强力盾击]</color>时，为全队提供等同于自身<color=#2BAD00>300%</color>初始冲击力+<color=#2BAD00>200</color>点的护盾<color=#FFFFFF>[荣光之盾]</color>，持续60秒，<color=#FFFFFF>[荣光之盾]</color>由当前操作中的角色持有，护盾值为全队共享，单次受到的伤害不会超过护盾值；\n<color=#FFFFFF>[荣光之盾]</color>存在期间，持有者的抗打断等级提升；\n<color=#FFFFFF>[荣光之盾]</color>存在期间，持有者的攻击力提升<color=#2BAD00>40</color>点，<color=#FFFFFF>[荣光之盾]</color>效果结束后，该增益效果仍然保留，持续5秒。",
+                "2": "凯撒发动<color=#FFFFFF>[强化特殊技：招架反击]</color>、<color=#FFFFFF>[连携技]</color>、<color=#FFFFFF>[终结技]</color>或以<color=#FFFFFF>[防御反击]</color>的方式发动<color=#FFFFFF>[强化特殊技：超强力盾击]</color>时，为全队提供等同于自身<color=#2BAD00>500%</color>初始冲击力+<color=#2BAD00>400</color>点的护盾<color=#FFFFFF>[荣光之盾]</color>，持续60秒，<color=#FFFFFF>[荣光之盾]</color>由当前操作中的角色持有，护盾值为全队共享，单次受到的伤害不会超过护盾值；\n<color=#FFFFFF>[荣光之盾]</color>存在期间，持有者的抗打断等级提升；\n<color=#FFFFFF>[荣光之盾]</color>存在期间，持有者的攻击力提升<color=#2BAD00>135</color>点，<color=#FFFFFF>[荣光之盾]</color>效果结束后，该增益效果仍然保留，持续5秒。",
+                "3": "凯撒发动<color=#FFFFFF>[强化特殊技：招架反击]</color>、<color=#FFFFFF>[连携技]</color>、<color=#FFFFFF>[终结技]</color>或以<color=#FFFFFF>[防御反击]</color>的方式发动<color=#FFFFFF>[强化特殊技：超强力盾击]</color>时，为全队提供等同于自身<color=#2BAD00>700%</color>初始冲击力+<color=#2BAD00>700</color>点的护盾<color=#FFFFFF>[荣光之盾]</color>，持续60秒，<color=#FFFFFF>[荣光之盾]</color>由当前操作中的角色持有，护盾值为全队共享，单次受到的伤害不会超过护盾值；\n<color=#FFFFFF>[荣光之盾]</color>存在期间，持有者的抗打断等级提升；\n<color=#FFFFFF>[荣光之盾]</color>存在期间，持有者的攻击力提升<color=#2BAD00>240</color>点，<color=#FFFFFF>[荣光之盾]</color>效果结束后，该增益效果仍然保留，持续5秒。",
+                "4": "凯撒发动<color=#FFFFFF>[强化特殊技：招架反击]</color>、<color=#FFFFFF>[连携技]</color>、<color=#FFFFFF>[终结技]</color>或以<color=#FFFFFF>[防御反击]</color>的方式发动<color=#FFFFFF>[强化特殊技：超强力盾击]</color>时，为全队提供等同于自身<color=#2BAD00>900%</color>初始冲击力+<color=#2BAD00>900</color>点的护盾<color=#FFFFFF>[荣光之盾]</color>，持续60秒，<color=#FFFFFF>[荣光之盾]</color>由当前操作中的角色持有，护盾值为全队共享，单次受到的伤害不会超过护盾值；\n<color=#FFFFFF>[荣光之盾]</color>存在期间，持有者的抗打断等级提升；\n<color=#FFFFFF>[荣光之盾]</color>存在期间，持有者的攻击力提升<color=#2BAD00>400</color>点，<color=#FFFFFF>[荣光之盾]</color>效果结束后，该增益效果仍然保留，持续5秒。",
+                "5": "凯撒发动<color=#FFFFFF>[强化特殊技：招架反击]</color>、<color=#FFFFFF>[连携技]</color>、<color=#FFFFFF>[终结技]</color>或以<color=#FFFFFF>[防御反击]</color>的方式发动<color=#FFFFFF>[强化特殊技：超强力盾击]</color>时，为全队提供等同于自身<color=#2BAD00>1100%</color>初始冲击力+<color=#2BAD00>1100</color>点的护盾<color=#FFFFFF>[荣光之盾]</color>，持续60秒，<color=#FFFFFF>[荣光之盾]</color>由当前操作中的角色持有，护盾值为全队共享，单次受到的伤害不会超过护盾值；\n<color=#FFFFFF>[荣光之盾]</color>存在期间，持有者的抗打断等级提升；\n<color=#FFFFFF>[荣光之盾]</color>存在期间，持有者的攻击力提升<color=#2BAD00>650</color>点，<color=#FFFFFF>[荣光之盾]</color>效果结束后，该增益效果仍然保留，持续5秒。",
+                "6": "凯撒发动<color=#FFFFFF>[强化特殊技：招架反击]</color>、<color=#FFFFFF>[连携技]</color>、<color=#FFFFFF>[终结技]</color>或以<color=#FFFFFF>[防御反击]</color>的方式发动<color=#FFFFFF>[强化特殊技：超强力盾击]</color>时，为全队提供等同于自身<color=#2BAD00>1300%</color>初始冲击力+<color=#2BAD00>1300</color>点的护盾<color=#FFFFFF>[荣光之盾]</color>，持续60秒，<color=#FFFFFF>[荣光之盾]</color>由当前操作中的角色持有，护盾值为全队共享，单次受到的伤害不会超过护盾值；\n<color=#FFFFFF>[荣光之盾]</color>存在期间，持有者的抗打断等级提升；\n<color=#FFFFFF>[荣光之盾]</color>存在期间，持有者的攻击力提升<color=#2BAD00>900</color>点，<color=#FFFFFF>[荣光之盾]</color>效果结束后，该增益效果仍然保留，持续5秒。",
+                "7": "凯撒发动<color=#FFFFFF>[强化特殊技：招架反击]</color>、<color=#FFFFFF>[连携技]</color>、<color=#FFFFFF>[终结技]</color>或以<color=#FFFFFF>[防御反击]</color>的方式发动<color=#FFFFFF>[强化特殊技：超强力盾击]</color>时，为全队提供等同于自身<color=#2BAD00>1400%</color>初始冲击力+<color=#2BAD00>1400</color>点的护盾<color=#FFFFFF>[荣光之盾]</color>，持续60秒，<color=#FFFFFF>[荣光之盾]</color>由当前操作中的角色持有，护盾值为全队共享，单次受到的伤害不会超过护盾值；\n<color=#FFFFFF>[荣光之盾]</color>存在期间，持有者的抗打断等级提升；\n<color=#FFFFFF>[荣光之盾]</color>存在期间，持有者的攻击力提升<color=#2BAD00>1000</color>点，<color=#FFFFFF>[荣光之盾]</color>效果结束后，该增益效果仍然保留，持续5秒。"
+            }
+        },
+        "MathSkill": {
+            "Title": "额外能力：战意激昂",
+            "Description": "队伍中存在其他可发动<color=#FFFFFF>[招架支援]</color>的角色或与自身阵营相同的角色时触发：\n凯撒触发<color=#FFFFFF>[精准格挡]</color>、<color=#FFFFFF>[防御反击]</color>、<color=#FFFFFF>[招架支援]</color>或发动<color=#FFFFFF>[普通攻击：此路不通！]</color>时，对自身附近7米范围内的敌人施加减益效果，使全队角色对其造成的伤害提升25%，持续30秒。"
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "107100001": {
+                "Title": "普通攻击：横行斩打",
+                "Description": "点按 <IconMap:Icon_Normal> 发动：\n向前方进行至多六段的斩击，造成<color=#F0D12B>物理伤害</color>。"
+            },
+            "107100002": {
+                "Title": "普通攻击：此路不通！",
+                "Description": "<color=#FFFFFF>[支援点数]</color>足够时，长按 <IconMap:Icon_Normal> 发动：\n消耗1点<color=#FFFFFF>[支援点数]</color>，丢出手中的盾牌对四周进行攻击，造成<color=#F0D12B>物理伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "107110001": {
+                "Title": "普通攻击：横行斩打"
+            },
+            "107110002": {
+                "Description": "一段伤害倍率",
+                "Param": "{Skill:1071001, Prop:1001}"
+            },
+            "107110003": {
+                "Description": "二段伤害倍率",
+                "Param": "{Skill:1071002, Prop:1001}"
+            },
+            "107110004": {
+                "Description": "三段伤害倍率",
+                "Param": "{Skill:1071003, Prop:1001}"
+            },
+            "107110005": {
+                "Description": "三段（派生）伤害倍率",
+                "Param": "{Skill:1071008, Prop:1001}"
+            },
+            "107110006": {
+                "Description": "四段伤害倍率",
+                "Param": "{Skill:1071004, Prop:1001}"
+            },
+            "107110007": {
+                "Description": "五段伤害倍率",
+                "Param": "{Skill:1071005, Prop:1001}"
+            },
+            "107110008": {
+                "Description": "六段伤害倍率",
+                "Param": "{Skill:1071006, Prop:1001}"
+            },
+            "107110009": {
+                "Description": "一段失衡倍率",
+                "Param": "{Skill:1071001, Prop:1002}"
+            },
+            "107110010": {
+                "Description": "二段失衡倍率",
+                "Param": "{Skill:1071002, Prop:1002}"
+            },
+            "107110011": {
+                "Description": "三段失衡倍率",
+                "Param": "{Skill:1071003, Prop:1002}"
+            },
+            "107110012": {
+                "Description": "三段（派生）失衡倍率",
+                "Param": "{Skill:1071008, Prop:1002}"
+            },
+            "107110013": {
+                "Description": "四段失衡倍率",
+                "Param": "{Skill:1071004, Prop:1002}"
+            },
+            "107110014": {
+                "Description": "五段失衡倍率",
+                "Param": "{Skill:1071005, Prop:1002}"
+            },
+            "107110015": {
+                "Description": "六段失衡倍率",
+                "Param": "{Skill:1071006, Prop:1002}"
+            },
+            "107110016": {
+                "Title": "普通攻击：此路不通！"
+            },
+            "107110017": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1071007, Prop:1001}"
+            },
+            "107110018": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1071007, Prop:1002}"
+            },
+            "107110019": {
+                "Description": "支援点数消耗",
+                "Param": "1点"
+            }
+        },
+        "1": {
+            "107100003": {
+                "Title": "特殊技：震荡盾击",
+                "Description": "点按 <IconMap:Icon_Special> 发动：\n使用盾牌向前方进行打击，造成<color=#F0D12B>物理伤害</color>；\n若在招式发动初期的较短时间内受到敌方攻击，将触发<color=#FFFFFF>[精准格挡]</color>，抵挡此次攻击伤害，并自动衔接发动<color=#FFFFFF>[特殊技：喧嚣直刺]</color>；\n招式发动后，凯撒将进入格挡架势，期间自身受到的伤害降低40%，受到敌人攻击时将持盾格挡并被击退，随后点按 <IconMap:Icon_Special> 或 <IconMap:Icon_SpecialReady> ，可以触发<color=#FFFFFF>[防御反击]</color>，发动<color=#FFFFFF>[特殊技：喧嚣直刺]</color>或<color=#FFFFFF>[强化特殊技：超强力盾击]</color>；\n触发<color=#FFFFFF>[防御反击]</color>时，招式发动期间拥有无敌效果。"
+            },
+            "107100004": {
+                "Title": "特殊技：喧嚣直刺",
+                "Description": "<color=#FFFFFF>[特殊技：震荡盾击]</color>发动后，点按 <IconMap:Icon_Special> 发动：\n向前方进行刺击，造成<color=#F0D12B>物理伤害</color>；\n未触发<color=#FFFFFF>[精准格挡]</color>和<color=#FFFFFF>[防御反击]</color>时，招式发动期间抗打断等级提升；\n触发<color=#FFFFFF>[精准格挡]</color>或<color=#FFFFFF>[防御反击]</color>时，招式发动期间拥有无敌效果。"
+            },
+            "107100005": {
+                "Title": "强化特殊技：招架反击",
+                "Description": "能量足够时，点按 <IconMap:Icon_SpecialReady> 发动：\n使用盾牌向前方进行打击，随后发动强力刺击，造成大量<color=#F0D12B>物理伤害</color>；\n若在招式发动初期受到敌方攻击，或通过盾牌打击触发<color=#FFFFFF>[破招]</color>时，将触发<color=#FFFFFF>[精准格挡]</color>，抵挡此次攻击伤害，并挥盾反击；触发<color=#FFFFFF>[精准格挡]</color>后，点按 <IconMap:Icon_SpecialReady> ，可以发动<color=#FFFFFF>[强化特殊技：超强力盾击]</color>，且无需消耗能量；\n招式发动后，凯撒将进入格挡架势，期间自身受到的伤害降低40%，受到敌人攻击时将持盾格挡并被击退，随后点按 <IconMap:Icon_Special> 或 <IconMap:Icon_SpecialReady> ，可以触发<color=#FFFFFF>[防御反击]</color>，发动<color=#FFFFFF>[特殊技：喧嚣直刺]</color>或<color=#FFFFFF>[强化特殊技：超强力盾击]</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "107100006": {
+                "Title": "强化特殊技：超强力盾击",
+                "Description": "<color=#FFFFFF>[强化特殊技：招架反击]</color>发动后，能量足够时，点按 <IconMap:Icon_SpecialReady> 发动：\n使用盾牌向前方进行打击，造成大量<color=#F0D12B>物理伤害</color>；\n若在招式发动初期受到敌方攻击，或通过盾牌打击触发<color=#FFFFFF>[破招]</color>时，将触发<color=#FFFFFF>[精准格挡]</color>，抵挡此次攻击伤害，并返还发动招式所消耗的能量；\n以<color=#FFFFFF>[精准格挡]</color>或<color=#FFFFFF>[防御反击]</color>的方式发动时，无法再次触发<color=#FFFFFF>[精准格挡]</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "107100007": {
+                "Title": "攻防转换",
+                "Description": "凯撒触发<color=#FFFFFF>[精准格挡]</color>、<color=#FFFFFF>[防御反击]</color>或<color=#FFFFFF>[招架支援]</color>时，自身冲击力提升<color=#2BAD00>{CAL:8+AvatarSkillLevel(1)*1,1,2}</color>%，持续3秒。"
+            },
+            "107110020": {
+                "Title": "攻防转换"
+            },
+            "107110021": {
+                "Description": "冲击力提升",
+                "Param": "{CAL:8+AvatarSkillLevel(1)*1,1,2}%"
+            },
+            "107110022": {
+                "Title": "特殊技：震荡盾击"
+            },
+            "107110023": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1071009, Prop:1001}"
+            },
+            "107110024": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1071009, Prop:1002}"
+            },
+            "107110025": {
+                "Description": "[精准格挡]失衡倍率",
+                "Param": "{Skill:1071014, Prop:1002}"
+            },
+            "107110026": {
+                "Title": "特殊技：喧嚣直刺"
+            },
+            "107110027": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1071010, Prop:1001}"
+            },
+            "107110028": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1071010, Prop:1002}"
+            },
+            "107110029": {
+                "Title": "强化特殊技：招架反击"
+            },
+            "107110030": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1071011, Prop:1001}"
+            },
+            "107110031": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1071011, Prop:1002}"
+            },
+            "107110032": {
+                "Description": "[精准格挡]失衡倍率",
+                "Param": "{Skill:1071015, Prop:1002}"
+            },
+            "107110033": {
+                "Description": "[精准格挡]反击伤害倍率",
+                "Param": "{Skill:1071012, Prop:1001}"
+            },
+            "107110034": {
+                "Description": "[精准格挡]反击失衡倍率",
+                "Param": "{Skill:1071012, Prop:1002}"
+            },
+            "107110035": {
+                "Description": "能量消耗",
+                "Param": "40点"
+            },
+            "107110036": {
+                "Title": "强化特殊技：超强力盾击"
+            },
+            "107110037": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1071013, Prop:1001}"
+            },
+            "107110038": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1071013, Prop:1002}"
+            },
+            "107110039": {
+                "Description": "[精准格挡]失衡倍率",
+                "Param": "{Skill:1071015, Prop:1002}"
+            },
+            "107110040": {
+                "Description": "点按发动能量消耗",
+                "Param": "20点"
+            }
+        },
+        "2": {
+            "107100008": {
+                "Title": "闪避：漂移",
+                "Description": "点按 <IconMap:Icon_Evade> 发动：\n快速的冲刺闪避；\n招式发动期间拥有无敌效果。"
+            },
+            "107100009": {
+                "Title": "冲刺攻击：猪突猛进",
+                "Description": "闪避时，点按 <IconMap:Icon_Normal> 发动：\n使用盾牌向前方进行打击，造成<color=#F0D12B>物理伤害</color>。\n招式发动期间自身受到的伤害降低40%，受到敌人攻击时将持盾格挡并被击退，随后点按 <IconMap:Icon_Special> 或 <IconMap:Icon_SpecialReady> ，可以触发<color=#FFFFFF>[防御反击]</color>，发动<color=#FFFFFF>[特殊技：喧嚣直刺]</color>或<color=#FFFFFF>[强化特殊技：超强力盾击]</color>。"
+            },
+            "107100010": {
+                "Title": "闪避反击：以牙还牙",
+                "Description": "触发<color=#FFFFFF>[极限闪避]</color>后，点按 <IconMap:Icon_Normal> 发动：\n对前方敌人发动刺击，造成<color=#F0D12B>物理伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "107110041": {
+                "Title": "冲刺攻击：猪突猛进"
+            },
+            "107110042": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1071016, Prop:1001}"
+            },
+            "107110043": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1071016, Prop:1002}"
+            },
+            "107110044": {
+                "Title": "闪避反击：以牙还牙"
+            },
+            "107110045": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1071017, Prop:1001}"
+            },
+            "107110046": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1071017, Prop:1002}"
+            }
+        },
+        "3": {
+            "107100011": {
+                "Title": "连携技：路怒震打",
+                "Description": "触发<color=#FFFFFF>[连携技]</color>时，选择对应角色发动：\n对前方范围敌人发动强力下落打击，造成大量<color=#F0D12B>物理伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "107100012": {
+                "Title": "终结技：暴君猛击",
+                "Description": "喧响等级达到<color=#FFFFFF>[极]</color>时，点按 <IconMap:Icon_UltimateReady> 发动：\n丢出手中的盾牌对前方敌人发动强力旋转攻击，随后发动下落打击，造成大量<color=#F0D12B>物理伤害</color>；\n命中持有护盾的敌人时，招式造成的失衡值提升<color=#2BAD00>{CAL:40+AvatarSkillLevel(3)*5,1,2}%</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "107110047": {
+                "Title": "连携技：路怒震打"
+            },
+            "107110048": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1071018, Prop:1001}"
+            },
+            "107110049": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1071018, Prop:1002}"
+            },
+            "107110050": {
+                "Title": "终结技：暴君猛击"
+            },
+            "107110051": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1071019, Prop:1001}"
+            },
+            "107110052": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1071019, Prop:1002}"
+            },
+            "107110053": {
+                "Description": "失衡值提升",
+                "Param": "{CAL:40+AvatarSkillLevel(3)*5,1,2}%"
+            }
+        },
+        "6": {
+            "107100014": {
+                "Title": "快速支援：变道支援",
+                "Description": "当前操作中的角色被击飞时，点按 <IconMap:Icon_Switch> 发动：\n对前方敌人发动刺击，造成<color=#F0D12B>物理伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "107100015": {
+                "Title": "招架支援：守御之盾",
+                "Description": "前场角色即将被攻击时，点按 <IconMap:Icon_Switch> 发动：\n招架敌人的攻击，累积大量失衡值；\n具有较为优秀的招架性能，承受高强度攻击时<color=#FFFFFF>[支援点数]</color>的消耗量降低；\n招式发动期间拥有无敌效果。"
+            },
+            "107100016": {
+                "Title": "支援突击：支援之锋",
+                "Description": "发动<color=#FFFFFF>[招架支援]</color>后，点按 <IconMap:Icon_Normal> 发动：\n丢出手中的盾牌对前方敌人发动强力旋转攻击，随后发动斩击，造成<color=#F0D12B>物理伤害</color>；\n招式发动后点按 <IconMap:Icon_Special> 或 <IconMap:Icon_SpecialReady> ，可以触发<color=#FFFFFF>[防御反击]</color>，发动<color=#FFFFFF>[特殊技：喧嚣直刺]</color>或<color=#FFFFFF>[强化特殊技：超强力盾击]</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "107110054": {
+                "Title": "快速支援：变道支援"
+            },
+            "107110055": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1071020, Prop:1001}"
+            },
+            "107110056": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1071020, Prop:1002}"
+            },
+            "107110057": {
+                "Title": "招架支援：守御之盾"
+            },
+            "107110058": {
+                "Description": "轻招架失衡倍率",
+                "Param": "{Skill:1071021, Prop:1002}"
+            },
+            "107110059": {
+                "Description": "重招架失衡倍率",
+                "Param": "{Skill:1071022, Prop:1002}"
+            },
+            "107110060": {
+                "Description": "连续招架失衡倍率",
+                "Param": "{Skill:1071023, Prop:1002}"
+            },
+            "107110061": {
+                "Title": "支援突击：支援之锋"
+            },
+            "107110062": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1071024, Prop:1001}"
+            },
+            "107110063": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1071024, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1071001": {
+            "DamageValue": 4720,
+            "DamageGrowth": 430,
+            "DazeValue": 2130,
+            "DazeGrowth": 100
+        },
+        "1071002": {
+            "DamageValue": 4090,
+            "DamageGrowth": 380,
+            "DazeValue": 3380,
+            "DazeGrowth": 160
+        },
+        "1071003": {
+            "DamageValue": 14830,
+            "DamageGrowth": 1350,
+            "DazeValue": 11000,
+            "DazeGrowth": 500
+        },
+        "1071004": {
+            "DamageValue": 7880,
+            "DamageGrowth": 720,
+            "DazeValue": 6750,
+            "DazeGrowth": 310
+        },
+        "1071005": {
+            "DamageValue": 19860,
+            "DamageGrowth": 1810,
+            "DazeValue": 13750,
+            "DazeGrowth": 630
+        },
+        "1071006": {
+            "DamageValue": 39990,
+            "DamageGrowth": 3640,
+            "DazeValue": 26260,
+            "DazeGrowth": 1200
+        },
+        "1071007": {
+            "DamageValue": 12630,
+            "DamageGrowth": 1150,
+            "DazeValue": 9320,
+            "DazeGrowth": 430
+        },
+        "1071008": {
+            "DamageValue": 11840,
+            "DamageGrowth": 1080,
+            "DazeValue": 7360,
+            "DazeGrowth": 340
+        },
+        "1071009": {
+            "DamageValue": 5330,
+            "DamageGrowth": 490,
+            "DazeValue": 2400,
+            "DazeGrowth": 110
+        },
+        "1071010": {
+            "DamageValue": 5880,
+            "DamageGrowth": 540,
+            "DazeValue": 2650,
+            "DazeGrowth": 130
+        },
+        "1071011": {
+            "DamageValue": 38720,
+            "DamageGrowth": 3520,
+            "DazeValue": 25260,
+            "DazeGrowth": 1150
+        },
+        "1071012": {
+            "DamageValue": 38720,
+            "DamageGrowth": 3520,
+            "DazeValue": 25260,
+            "DazeGrowth": 1150
+        },
+        "1071013": {
+            "DamageValue": 42570,
+            "DamageGrowth": 3870,
+            "DazeValue": 28840,
+            "DazeGrowth": 1320
+        },
+        "1071014": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 7700,
+            "DazeGrowth": 350
+        },
+        "1071015": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15400,
+            "DazeGrowth": 700
+        },
+        "1071016": {
+            "DamageValue": 6230,
+            "DamageGrowth": 570,
+            "DazeValue": 3120,
+            "DazeGrowth": 150
+        },
+        "1071017": {
+            "DamageValue": 19350,
+            "DamageGrowth": 1760,
+            "DazeValue": 17420,
+            "DazeGrowth": 800
+        },
+        "1071018": {
+            "DamageValue": 63880,
+            "DamageGrowth": 5810,
+            "DazeValue": 19990,
+            "DazeGrowth": 910
+        },
+        "1071019": {
+            "DamageValue": 201230,
+            "DamageGrowth": 18300,
+            "DazeValue": 27870,
+            "DazeGrowth": 1270
+        },
+        "1071020": {
+            "DamageValue": 6420,
+            "DamageGrowth": 590,
+            "DazeValue": 6420,
+            "DazeGrowth": 300
+        },
+        "1071021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1071022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34530,
+            "DazeGrowth": 1570
+        },
+        "1071023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16930,
+            "DazeGrowth": 770
+        },
+        "1071024": {
+            "DamageValue": 40720,
+            "DamageGrowth": 3710,
+            "DazeValue": 35630,
+            "DazeGrowth": 1620
+        }
+    }
+}

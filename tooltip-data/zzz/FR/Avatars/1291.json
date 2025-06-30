@@ -1,0 +1,491 @@
+{
+    "Name": "Hugo",
+    "ElementTypes": [
+        "Ice"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Enfant de la haine",
+            "Description": "Lors du déclenchement de l'effet <color=#FFFFFF>Somme finale</color> dans l'état <color=#FFFFFF>Écho de l'abîme ténébreux</color>, le taux CRIT de la compétence augmente de 12 % supplémentaires et les DGT CRIT de 30 % supplémentaires.",
+            "Lore": "« Alors, ne renie pas tes désirs, ne résiste pas à tes ambitions ! C'est ton talent inné, le plus beau cadeau que le destin t'ait fait !\nAdmets-le, au plus profond de ton cœur brille une étincelle prête à enflammer un brasier infernal qui détruira tout sur son passage...\nCette étincelle, c'est moi.\n\n— Oui, je le sais. Je l'ai toujours su. »"
+        },
+        "2": {
+            "Title": "L'enfant à l'intérieur",
+            "Description": "Lorsque <color=#FFFFFF>Ultime : Blasphème</color> déclenche l'effet <color=#FFFFFF>Somme finale</color>, l'étourdissement de l'ennemi n'est plus annulé. De plus, lors du déclenchement de l'effet <color=#FFFFFF>Somme finale</color>, l'attaque ignore 15 % de la DÉF de l'ennemi.",
+            "Lore": "« La famille est une malédiction éternelle et inévitable.\nQui que vous deveniez et où que vous alliez, cette malédiction vous suivra toujours comme votre ombre.\nQue vous touchiez le fond ou atteigniez des sommets, elle apparaîtra, vous faisant redevenir cet enfant sans défense et impuissant, qui n'a d'autre choix que de se cacher dans un placard et pleurer.\n\n— Jusqu'à ce qu'on le voit, et qu'on l'accepte. »\nCertaines souffrances peuvent être guéries uniquement lorsqu'on les reconnaît et les accepte."
+        },
+        "3": {
+            "Title": "Fruit d'un arbre empoisonné",
+            "Description": "Niv. d'<color=#FFFFFF>attaque normale</color>, d'<color=#FFFFFF>esquive</color>, de <color=#FFFFFF>soutien</color>, d'<color=#FFFFFF>attaque spéciale</color> et d'<color=#FFFFFF>enchaînement</color> +2",
+            "Lore": "On dit que les fleurs qui s'épanouissent dans l'abîme sont toujours empreintes de malveillance, tout comme un arbre empoisonné ne peut pas porter de fruit sans danger.\nMais tous les fruits finissent par tomber de leurs branches...\nAlors, il se brisa en une pluie de morceaux.\nCette pluie recouvrit la terre, et chaque goutte de rosée refléta un nouveau jour."
+        },
+        "4": {
+            "Title": "Théorie dramatique",
+            "Description": "Lorsqu'un tir chargé touche un ennemi, les attaques de Hugo contre cet ennemi ignorent 12 % de sa <color=#98EFF0>RÉS à la glace</color> pendant 15 s. Les déclenchements répétés réinitialisent la durée.",
+            "Lore": "Justicier, criminel, fou, stratège, charmeur, obstiné.\nIl est constitué d'innombrables visages.\n« Dis-moi, lequel est ton vrai visage ?\n— Ça n'a aucune espèce d'importance. Dis-moi plutôt, Lycaon...\nQuel genre de personne vois-tu quand tu me regardes ? »"
+        },
+        "5": {
+            "Title": "Nirvana",
+            "Description": "Niv. d'<color=#FFFFFF>attaque normale</color>, d'<color=#FFFFFF>esquive</color>, de <color=#FFFFFF>soutien</color>, d'<color=#FFFFFF>attaque spéciale</color> et d'<color=#FFFFFF>enchaînement</color> +2",
+            "Lore": "Il n'est pas nécessaire de détruire le monde pour le reconstruire, et personne n'a le droit de le décider.\nMais une personne peut le faire pour elle-même.\nAlors, il s'est brisé pour mieux renaître.\n« Si je dois tomber, que je tombe. La personne que je suis censé devenir sera sûrement là pour me rattraper. »"
+        },
+        "6": {
+            "Title": "Couronne d'épines",
+            "Description": "Tous les tirs qui touchent un ennemi peuvent déclencher l'état <color=#FFFFFF>Écho de l'abîme ténébreux</color> qui dure un maximum de 6 s, les déclenchements répétés réinitialisent la durée. De plus, lors du déclenchement de <color=#FFFFFF>Somme finale</color> par n'importe quelle compétence, cette instance de DGT augmente de 60 % supplémentaires. Le coup final d'<color=#FFFFFF>Attaque spéciale EX : Chasseur d'âmes - Châtiment</color> qui touche un ennemi non étourdi peut aussi déclencher l'effet <color=#FFFFFF>Somme finale</color>, augmentant le multiplicateur de DGT du coup final d'un taux fixe de 1 000 %.",
+            "Lore": "Il avança volontairement vers l'abîme sans fin, laissant les épines au sol se planter dans ses blessures.\nLe sang coulait de ses plaies, et avec lui commencèrent à germer sa dignité brisée et son obstination.\nEnfin, il ramassa les épines ensanglantées pour s'en faire une couronne.\n« La seule et unique personne qui puisse me tuer ou me sauver... c'est moi et personne d'autre. »"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passif principal : Verdict sans appel",
+            "DescriptionByLevel": {
+                "1": "Lorsque <color=#FFFFFF>Enchaînement : Farce du destin</color> touche un ennemi ou qu'une attaque de Hugo étourdit un ennemi, Hugo obtient l'effet <color=#FFFFFF>Écho de l'abîme ténébreux</color> pendant 6 s, les déclenchements répétés réinitialisent la durée. Dans cet état, le taux CRIT de Hugo augmente de 12 % et les DGT CRIT de 25 %.\nLorsqu'il y a 1/2 personnages <color=#FFFFFF>Confusion</color> dans votre escouade, l'ATQ de Hugo augmente de <color=#2BAD00>25</color>/<color=#2BAD00>75</color>.\nLorsque le coup final d'<color=#FFFFFF>Attaque spéciale EX : Chasseur d'âmes - Châtiment</color> ou d'<color=#FFFFFF>Ultime : Blasphème</color> touche un ennemi étourdi, l'effet <color=#FFFFFF>Somme finale</color> est déclenché sur l'ennemi, augmentant le multiplicateur de DGT du coup final de la compétence de <color=#2BAD00>500 %</color>. De plus, l'effet <color=#FFFFFF>Somme finale</color> augmente davantage le multiplicateur de DGT de l'attaque en fonction de la durée d'étourdissement restante de l'ennemi lors du déclenchement de l'effet. Pour l'intervalle 0 à 5 s (5 s comprise), le multiplicateur de DGT de l'attaque augmente de <color=#2BAD00>140 %</color> pour chaque seconde restante dans cet intervalle ; pour l'intervalle 5 à 15 s, le multiplicateur de DGT de l'attaque augmente de <color=#2BAD00>50 %</color> pour chaque seconde restante dans cet intervalle. L'augmentation totale du multiplicateur de DGT peut atteindre un maximum de <color=#2BAD00>1 700 %</color>.\nLorsque Hugo déclenche l'effet <color=#FFFFFF>Somme finale</color>, l'étourdissement de l'ennemi prend fin immédiatement et une certaine quantité de confusion est également infligée en fonction de la durée d'étourdissement restante de l'ennemi lors du déclenchement de l'effet : 5 % de confusion est infligée pour chaque seconde restante, jusqu'à une valeur maximale équivalente à 25 % de la limite de confusion de l'ennemi.\nLorsque <color=#FFFFFF>Attaque spéciale EX : Chasseur d'âmes - Châtiment</color> touche un ennemi qui n'est pas étourdi, la confusion infligée par la compétence augmente de 20 %.",
+                "2": "Lorsque <color=#FFFFFF>Enchaînement : Farce du destin</color> touche un ennemi ou qu'une attaque de Hugo étourdit un ennemi, Hugo obtient l'effet <color=#FFFFFF>Écho de l'abîme ténébreux</color> pendant 6 s, les déclenchements répétés réinitialisent la durée. Dans cet état, le taux CRIT de Hugo augmente de 12 % et les DGT CRIT de 25 %.\nLorsqu'il y a 1/2 personnages <color=#FFFFFF>Confusion</color> dans votre escouade, l'ATQ de Hugo augmente de <color=#2BAD00>50</color>/<color=#2BAD00>150</color>.\nLorsque le coup final d'<color=#FFFFFF>Attaque spéciale EX : Chasseur d'âmes - Châtiment</color> ou d'<color=#FFFFFF>Ultime : Blasphème</color> touche un ennemi étourdi, l'effet <color=#FFFFFF>Somme finale</color> est déclenché sur l'ennemi, augmentant le multiplicateur de DGT du coup final de la compétence de <color=#2BAD00>583 %</color>. De plus, l'effet <color=#FFFFFF>Somme finale</color> augmente davantage le multiplicateur de DGT de l'attaque en fonction de la durée d'étourdissement restante de l'ennemi lors du déclenchement de l'effet. Pour l'intervalle 0 à 5 s (5 s comprise), le multiplicateur de DGT de l'attaque augmente de <color=#2BAD00>163 %</color> pour chaque seconde restante dans cet intervalle ; pour l'intervalle 5 à 15 s, le multiplicateur de DGT de l'attaque augmente de <color=#2BAD00>58 %</color> pour chaque seconde restante dans cet intervalle. L'augmentation totale du multiplicateur de DGT peut atteindre un maximum de <color=#2BAD00>1 978 %</color>.\nLorsque Hugo déclenche l'effet <color=#FFFFFF>Somme finale</color>, l'étourdissement de l'ennemi prend fin immédiatement et une certaine quantité de confusion est également infligée en fonction de la durée d'étourdissement restante de l'ennemi lors du déclenchement de l'effet : 5 % de confusion est infligée pour chaque seconde restante, jusqu'à une valeur maximale équivalente à 25 % de la limite de confusion de l'ennemi.\nLorsque <color=#FFFFFF>Attaque spéciale EX : Chasseur d'âmes - Châtiment</color> touche un ennemi qui n'est pas étourdi, la confusion infligée par la compétence augmente de 20 %.",
+                "3": "Lorsque <color=#FFFFFF>Enchaînement : Farce du destin</color> touche un ennemi ou qu'une attaque de Hugo étourdit un ennemi, Hugo obtient l'effet <color=#FFFFFF>Écho de l'abîme ténébreux</color> pendant 6 s, les déclenchements répétés réinitialisent la durée. Dans cet état, le taux CRIT de Hugo augmente de 12 % et les DGT CRIT de 25 %.\nLorsqu'il y a 1/2 personnages <color=#FFFFFF>Confusion</color> dans votre escouade, l'ATQ de Hugo augmente de <color=#2BAD00>80</color>/<color=#2BAD00>240</color>.\nLorsque le coup final d'<color=#FFFFFF>Attaque spéciale EX : Chasseur d'âmes - Châtiment</color> ou d'<color=#FFFFFF>Ultime : Blasphème</color> touche un ennemi étourdi, l'effet <color=#FFFFFF>Somme finale</color> est déclenché sur l'ennemi, augmentant le multiplicateur de DGT du coup final de la compétence de <color=#2BAD00>667 %</color>. De plus, l'effet <color=#FFFFFF>Somme finale</color> augmente davantage le multiplicateur de DGT de l'attaque en fonction de la durée d'étourdissement restante de l'ennemi lors du déclenchement de l'effet. Pour l'intervalle 0 à 5 s (5 s comprise), le multiplicateur de DGT de l'attaque augmente de <color=#2BAD00>187 %</color> pour chaque seconde restante dans cet intervalle ; pour l'intervalle 5 à 15 s, le multiplicateur de DGT de l'attaque augmente de <color=#2BAD00>67 %</color> pour chaque seconde restante dans cet intervalle. L'augmentation totale du multiplicateur de DGT peut atteindre un maximum de <color=#2BAD00>2 272 %</color>.\nLorsque Hugo déclenche l'effet <color=#FFFFFF>Somme finale</color>, l'étourdissement de l'ennemi prend fin immédiatement et une certaine quantité de confusion est également infligée en fonction de la durée d'étourdissement restante de l'ennemi lors du déclenchement de l'effet : 5 % de confusion est infligée pour chaque seconde restante, jusqu'à une valeur maximale équivalente à 25 % de la limite de confusion de l'ennemi.\nLorsque <color=#FFFFFF>Attaque spéciale EX : Chasseur d'âmes - Châtiment</color> touche un ennemi qui n'est pas étourdi, la confusion infligée par la compétence augmente de 20 %.",
+                "4": "Lorsque <color=#FFFFFF>Enchaînement : Farce du destin</color> touche un ennemi ou qu'une attaque de Hugo étourdit un ennemi, Hugo obtient l'effet <color=#FFFFFF>Écho de l'abîme ténébreux</color> pendant 6 s, les déclenchements répétés réinitialisent la durée. Dans cet état, le taux CRIT de Hugo augmente de 12 % et les DGT CRIT de 25 %.\nLorsqu'il y a 1/2 personnages <color=#FFFFFF>Confusion</color> dans votre escouade, l'ATQ de Hugo augmente de <color=#2BAD00>120</color>/<color=#2BAD00>360</color>.\nLorsque le coup final d'<color=#FFFFFF>Attaque spéciale EX : Chasseur d'âmes - Châtiment</color> ou d'<color=#FFFFFF>Ultime : Blasphème</color> touche un ennemi étourdi, l'effet <color=#FFFFFF>Somme finale</color> est déclenché sur l'ennemi, augmentant le multiplicateur de DGT du coup final de la compétence de <color=#2BAD00>750 %</color>. De plus, l'effet <color=#FFFFFF>Somme finale</color> augmente davantage le multiplicateur de DGT de l'attaque en fonction de la durée d'étourdissement restante de l'ennemi lors du déclenchement de l'effet. Pour l'intervalle 0 à 5 s (5 s comprise), le multiplicateur de DGT de l'attaque augmente de <color=#2BAD00>210 %</color> pour chaque seconde restante dans cet intervalle ; pour l'intervalle 5 à 15 s, le multiplicateur de DGT de l'attaque augmente de <color=#2BAD00>75 %</color> pour chaque seconde restante dans cet intervalle. L'augmentation totale du multiplicateur de DGT peut atteindre un maximum de <color=#2BAD00>2 550 %</color>.\nLorsque Hugo déclenche l'effet <color=#FFFFFF>Somme finale</color>, l'étourdissement de l'ennemi prend fin immédiatement et une certaine quantité de confusion est également infligée en fonction de la durée d'étourdissement restante de l'ennemi lors du déclenchement de l'effet : 5 % de confusion est infligée pour chaque seconde restante, jusqu'à une valeur maximale équivalente à 25 % de la limite de confusion de l'ennemi.\nLorsque <color=#FFFFFF>Attaque spéciale EX : Chasseur d'âmes - Châtiment</color> touche un ennemi qui n'est pas étourdi, la confusion infligée par la compétence augmente de 20 %.",
+                "5": "Lorsque <color=#FFFFFF>Enchaînement : Farce du destin</color> touche un ennemi ou qu'une attaque de Hugo étourdit un ennemi, Hugo obtient l'effet <color=#FFFFFF>Écho de l'abîme ténébreux</color> pendant 6 s, les déclenchements répétés réinitialisent la durée. Dans cet état, le taux CRIT de Hugo augmente de 12 % et les DGT CRIT de 25 %.\nLorsqu'il y a 1/2 personnages <color=#FFFFFF>Confusion</color> dans votre escouade, l'ATQ de Hugo augmente de <color=#2BAD00>180</color>/<color=#2BAD00>540</color>.\nLorsque le coup final d'<color=#FFFFFF>Attaque spéciale EX : Chasseur d'âmes - Châtiment</color> ou d'<color=#FFFFFF>Ultime : Blasphème</color> touche un ennemi étourdi, l'effet <color=#FFFFFF>Somme finale</color> est déclenché sur l'ennemi, augmentant le multiplicateur de DGT du coup final de la compétence de <color=#2BAD00>833 %</color>. De plus, l'effet <color=#FFFFFF>Somme finale</color> augmente davantage le multiplicateur de DGT de l'attaque en fonction de la durée d'étourdissement restante de l'ennemi lors du déclenchement de l'effet. Pour l'intervalle 0 à 5 s (5 s comprise), le multiplicateur de DGT de l'attaque augmente de <color=#2BAD00>233 %</color> pour chaque seconde restante dans cet intervalle ; pour l'intervalle 5 à 15 s, le multiplicateur de DGT de l'attaque augmente de <color=#2BAD00>83 %</color> pour chaque seconde restante dans cet intervalle. L'augmentation totale du multiplicateur de DGT peut atteindre un maximum de <color=#2BAD00>2 828 %</color>.\nLorsque Hugo déclenche l'effet <color=#FFFFFF>Somme finale</color>, l'étourdissement de l'ennemi prend fin immédiatement et une certaine quantité de confusion est également infligée en fonction de la durée d'étourdissement restante de l'ennemi lors du déclenchement de l'effet : 5 % de confusion est infligée pour chaque seconde restante, jusqu'à une valeur maximale équivalente à 25 % de la limite de confusion de l'ennemi.\nLorsque <color=#FFFFFF>Attaque spéciale EX : Chasseur d'âmes - Châtiment</color> touche un ennemi qui n'est pas étourdi, la confusion infligée par la compétence augmente de 20 %.",
+                "6": "Lorsque <color=#FFFFFF>Enchaînement : Farce du destin</color> touche un ennemi ou qu'une attaque de Hugo étourdit un ennemi, Hugo obtient l'effet <color=#FFFFFF>Écho de l'abîme ténébreux</color> pendant 6 s, les déclenchements répétés réinitialisent la durée. Dans cet état, le taux CRIT de Hugo augmente de 12 % et les DGT CRIT de 25 %.\nLorsqu'il y a 1/2 personnages <color=#FFFFFF>Confusion</color> dans votre escouade, l'ATQ de Hugo augmente de <color=#2BAD00>270</color>/<color=#2BAD00>810</color>.\nLorsque le coup final d'<color=#FFFFFF>Attaque spéciale EX : Chasseur d'âmes - Châtiment</color> ou d'<color=#FFFFFF>Ultime : Blasphème</color> touche un ennemi étourdi, l'effet <color=#FFFFFF>Somme finale</color> est déclenché sur l'ennemi, augmentant le multiplicateur de DGT du coup final de la compétence de <color=#2BAD00>917 %</color>. De plus, l'effet <color=#FFFFFF>Somme finale</color> augmente davantage le multiplicateur de DGT de l'attaque en fonction de la durée d'étourdissement restante de l'ennemi lors du déclenchement de l'effet. Pour l'intervalle 0 à 5 s (5 s comprise), le multiplicateur de DGT de l'attaque augmente de <color=#2BAD00>257 %</color> pour chaque seconde restante dans cet intervalle ; pour l'intervalle 5 à 15 s, le multiplicateur de DGT de l'attaque augmente de <color=#2BAD00>92 %</color> pour chaque seconde restante dans cet intervalle. L'augmentation totale du multiplicateur de DGT peut atteindre un maximum de <color=#2BAD00>3 122 %</color>.\nLorsque Hugo déclenche l'effet <color=#FFFFFF>Somme finale</color>, l'étourdissement de l'ennemi prend fin immédiatement et une certaine quantité de confusion est également infligée en fonction de la durée d'étourdissement restante de l'ennemi lors du déclenchement de l'effet : 5 % de confusion est infligée pour chaque seconde restante, jusqu'à une valeur maximale équivalente à 25 % de la limite de confusion de l'ennemi.\nLorsque <color=#FFFFFF>Attaque spéciale EX : Chasseur d'âmes - Châtiment</color> touche un ennemi qui n'est pas étourdi, la confusion infligée par la compétence augmente de 20 %.",
+                "7": "Lorsque <color=#FFFFFF>Enchaînement : Farce du destin</color> touche un ennemi ou qu'une attaque de Hugo étourdit un ennemi, Hugo obtient l'effet <color=#FFFFFF>Écho de l'abîme ténébreux</color> pendant 6 s, les déclenchements répétés réinitialisent la durée. Dans cet état, le taux CRIT de Hugo augmente de 12 % et les DGT CRIT de 25 %.\nLorsqu'il y a 1/2 personnages <color=#FFFFFF>Confusion</color> dans votre escouade, l'ATQ de Hugo augmente de <color=#2BAD00>300</color>/<color=#2BAD00>900</color>.\nLorsque le coup final d'<color=#FFFFFF>Attaque spéciale EX : Chasseur d'âmes - Châtiment</color> ou d'<color=#FFFFFF>Ultime : Blasphème</color> touche un ennemi étourdi, l'effet <color=#FFFFFF>Somme finale</color> est déclenché sur l'ennemi, augmentant le multiplicateur de DGT du coup final de la compétence de <color=#2BAD00>1 000 %</color>. De plus, l'effet <color=#FFFFFF>Somme finale</color> augmente davantage le multiplicateur de DGT de l'attaque en fonction de la durée d'étourdissement restante de l'ennemi lors du déclenchement de l'effet. Pour l'intervalle 0 à 5 s (5 s comprise), le multiplicateur de DGT de l'attaque augmente de <color=#2BAD00>280 %</color> pour chaque seconde restante dans cet intervalle ; pour l'intervalle 5 à 15 s, le multiplicateur de DGT de l'attaque augmente de <color=#2BAD00>100 %</color> pour chaque seconde restante dans cet intervalle. L'augmentation totale du multiplicateur de DGT peut atteindre un maximum de <color=#2BAD00>3 400 %</color>.\nLorsque Hugo déclenche l'effet <color=#FFFFFF>Somme finale</color>, l'étourdissement de l'ennemi prend fin immédiatement et une certaine quantité de confusion est également infligée en fonction de la durée d'étourdissement restante de l'ennemi lors du déclenchement de l'effet : 5 % de confusion est infligée pour chaque seconde restante, jusqu'à une valeur maximale équivalente à 25 % de la limite de confusion de l'ennemi.\nLorsque <color=#FFFFFF>Attaque spéciale EX : Chasseur d'âmes - Châtiment</color> touche un ennemi qui n'est pas étourdi, la confusion infligée par la compétence augmente de 20 %."
+            }
+        },
+        "MathSkill": {
+            "Title": "Capacité supplémentaire : Prélude à la fin",
+            "Description": "Lorsqu'il y a un autre personnage <color=#FFFFFF>Confusion</color> ou du même attribut que Hugo dans votre escouade :\nLes DGT infligés par <color=#FFFFFF>Enchaînement : Farce du destin</color> augmentent de 15 %, et de 35 % supplémentaires contre les ennemis normaux. Lorsque l'effet <color=#FFFFFF>Somme finale</color> est déclenché, les DGT infligés par la compétence augmentent de 40 %. <color=#FFFFFF>Attaque spéciale EX : Chasseur d'âmes - Châtiment</color> génère 20 pts d'énergie supplémentaires lorsqu'elle déclenche <color=#FFFFFF>Somme finale</color> sur des ennemis normaux. Cet effet de récupération d'énergie peut être déclenché une fois toutes les 30 s."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "129100001": {
+                "Title": "Attaque normale : Quatuor de l'abîme ténébreux",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pour activer :\nAssène jusqu'à 4 attaques frontales, infligeant des <color=#F0D12B>DGT physiques</color> et des <color=#98EFF0>DGT de glace</color>.\nLe 4e coup est un tir. Pendant cette attaque, vous pouvez maintenir <IconMap:Icon_Normal> enfoncé pour charger votre tir et effectuer un tir chargé.\nLors du 4e coup, le niveau de RÉS à l'interruption augmente et les DGT subis diminuent de 40 %."
+            },
+            "129100002": {
+                "Title": "Attaque normale : Concerto de l'abîme ténébreux",
+                "Description": "Après le 4e coup de l'<color=#FFFFFF>Attaque normale : Quatuor de l'abîme ténébreux</color>, le tir du <color=#FFFFFF>Contre d'esquive : Fantasmagorie - Entaille</color>, ou le tir du <color=#FFFFFF>Soutien rapide : Élégie</color>, appuyez sur <IconMap:Icon_Normal> ou maintenez ce bouton enfoncé pour activer :\nLance la faux en avant pour effectuer une entaille, suivie d'un tir, infligeant des <color=#98EFF0>DGT de glace</color>.\nPendant le tir, vous pouvez maintenir <IconMap:Icon_Normal> enfoncé pour charger le tir et effectuer un tir chargé.\nLe niveau de RÉS à l'interruption augmente lors de l'utilisation de cette compétence et les DGT subis diminuent de 40 %."
+            },
+            "129100014": {
+                "Title": "Attaque normale : Quatuor de l'abîme ténébreux"
+            },
+            "129100015": {
+                "Description": "Multiplicateur de DGT du 1er coup",
+                "Param": "{Skill:1291001, Prop:1001}"
+            },
+            "129100016": {
+                "Description": "Multiplicateur de DGT du 2e coup",
+                "Param": "{Skill:1291002, Prop:1001}"
+            },
+            "129100017": {
+                "Description": "Multiplicateur de DGT du 3e coup",
+                "Param": "{Skill:1291003, Prop:1001}"
+            },
+            "129100018": {
+                "Description": "Multiplicateur de DGT de l'entaille",
+                "Param": "{Skill:1291004, Prop:1001}"
+            },
+            "129100019": {
+                "Description": "Multiplicateur de DGT du tir",
+                "Param": "{Skill:1291005, Prop:1001}"
+            },
+            "129100020": {
+                "Description": "Multiplicateur de DGT du tir chargé",
+                "Param": "{Skill:1291006, Prop:1001}"
+            },
+            "129100021": {
+                "Description": "Multiplicateur de confusion du 1er coup",
+                "Param": "{Skill:1291001, Prop:1002}"
+            },
+            "129100022": {
+                "Description": "Multiplicateur de confusion du 2e coup",
+                "Param": "{Skill:1291002, Prop:1002}"
+            },
+            "129100023": {
+                "Description": "Multiplicateur de confusion du 3e coup",
+                "Param": "{Skill:1291003, Prop:1002}"
+            },
+            "129100024": {
+                "Description": "Multiplicateur de confusion de l'entaille",
+                "Param": "{Skill:1291004, Prop:1002}"
+            },
+            "129100025": {
+                "Description": "Multiplicateur de confusion du tir",
+                "Param": "{Skill:1291005, Prop:1002}"
+            },
+            "129100026": {
+                "Description": "Multiplicateur de confusion du tir chargé",
+                "Param": "{Skill:1291006, Prop:1002}"
+            },
+            "129100027": {
+                "Title": "Attaque normale : Concerto de l'abîme ténébreux"
+            },
+            "129100028": {
+                "Description": "Multiplicateur de DGT de l'entaille",
+                "Param": "{Skill:1291024, Prop:1001}"
+            },
+            "129100029": {
+                "Description": "Multiplicateur de DGT du tir",
+                "Param": "{Skill:1291025, Prop:1001}"
+            },
+            "129100030": {
+                "Description": "Multiplicateur de DGT du tir chargé",
+                "Param": "{Skill:1291026, Prop:1001}"
+            },
+            "129100031": {
+                "Description": "Multiplicateur de confusion de l'entaille",
+                "Param": "{Skill:1291024, Prop:1002}"
+            },
+            "129100032": {
+                "Description": "Multiplicateur de confusion du tir",
+                "Param": "{Skill:1291025, Prop:1002}"
+            },
+            "129100033": {
+                "Description": "Multiplicateur de confusion du tir chargé",
+                "Param": "{Skill:1291026, Prop:1002}"
+            }
+        },
+        "1": {
+            "129100003": {
+                "Title": "Attaque spéciale : Chasseur d'âmes - Jugement",
+                "Description": "Appuyez sur <IconMap:Icon_Special> pour activer :\nFait tournoyer la faux, puis assène une entaille frontale, infligeant des <color=#98EFF0>DGT de glace</color>.\nLe niveau de RÉS à l'interruption augmente lors de l'utilisation de cette compétence."
+            },
+            "129100004": {
+                "Title": "Attaque spéciale EX : Chasseur d'âmes - Châtiment",
+                "Description": "Avec suffisamment d'énergie, appuyez sur <IconMap:Icon_SpecialReady> pour activer :\nFait tournoyer la faux, puis assène un puissant coup final, infligeant d'importants <color=#98EFF0>DGT de glace</color>.\nCette compétence n'est pas considérée comme une attaque lourde.\nAprès l'utilisation de la compétence, vous pouvez enchaîner directement avec le 4e coup d'<color=#FFFFFF>Attaque normale : Quatuor de l'abîme ténébreux</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "129100037": {
+                "Title": "Attaque spéciale : Chasseur d'âmes - Jugement"
+            },
+            "129100038": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1291008, Prop:1001}"
+            },
+            "129100039": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1291008, Prop:1002}"
+            },
+            "129100040": {
+                "Title": "Attaque spéciale EX : Chasseur d'âmes - Châtiment"
+            },
+            "129100041": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{{Skill:1291009, Prop:1001} + {Skill:1291010, Prop:1001}}"
+            },
+            "129100042": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{{Skill:1291009, Prop:1002} + {Skill:1291010, Prop:1002}}"
+            },
+            "129100043": {
+                "Description": "Coût en énergie",
+                "Param": "40 pts"
+            }
+        },
+        "2": {
+            "129100005": {
+                "Title": "Esquive : Fantasmagorie",
+                "Description": "Appuyez sur <IconMap:Icon_Evade> pour activer :\nUne esquive rapide.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "129100006": {
+                "Title": "Attaque de bond : Fantasmagorie - Rupture",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pendant une esquive pour activer :\nBondit sur les ennemis en face pour les attaquer, infligeant des <color=#F0D12B>DGT physiques</color>."
+            },
+            "129100007": {
+                "Title": "Contre d'esquive : Fantasmagorie - Entaille",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pendant une <color=#FFFFFF>esquive parfaite</color> pour activer :\nLance une série d'attaques sur les ennemis situés en face, leur infligeant des <color=#98EFF0>DGT de glace</color>.\nMaintenez <IconMap:Icon_Normal> enfoncé pendant le lancement de la compétence pour effectuer un tir. Pendant le tir, vous pouvez maintenir <IconMap:Icon_Normal> enfoncé pour charger le tir et effectuer un tir chargé.\nLe tir est considéré comme une attaque normale et ses DGT sont considérés comme des DGT d'attaque normale.\nAprès l'utilisation de la compétence, vous pouvez enchaîner directement avec le 4e coup d'<color=#FFFFFF>Attaque normale : Quatuor de l'abîme ténébreux</color>.\nPendant le tir de la compétence, le niveau de RÉS à l'interruption augmente et les DGT subis diminuent de 40 %. \nLe personnage est invulnérable pendant les entailles et la retraite du tir de la compétence."
+            },
+            "129100044": {
+                "Title": "Attaque de bond : Fantasmagorie - Rupture"
+            },
+            "129100045": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1291011, Prop:1001}"
+            },
+            "129100046": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1291011, Prop:1002}"
+            },
+            "129100047": {
+                "Title": "Contre d'esquive : Fantasmagorie - Entaille"
+            },
+            "129100048": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1291012, Prop:1001}"
+            },
+            "129100049": {
+                "Description": "Multiplicateur de DGT du tir alternatif",
+                "Param": "{Skill:1291013, Prop:1001}"
+            },
+            "129100050": {
+                "Description": "Multiplicateur de DGT du tir chargé alternatif",
+                "Param": "{Skill:1291014, Prop:1001}"
+            },
+            "129100051": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1291012, Prop:1002}"
+            },
+            "129100052": {
+                "Description": "Multiplicateur de confusion du tir alternatif",
+                "Param": "{Skill:1291013, Prop:1002}"
+            },
+            "129100053": {
+                "Description": "Multiplicateur de confusion du tir chargé alternatif",
+                "Param": "{Skill:1291014, Prop:1002}"
+            }
+        },
+        "3": {
+            "129100008": {
+                "Title": "Enchaînement : Farce du destin",
+                "Description": "Lors du déclenchement d'un <color=#FFFFFF>enchaînement</color>, sélectionnez le personnage pour activer :\nFonce en avant et assène des entailles dans une vaste zone, puis lance un tir, infligeant d'importants <color=#98EFF0>DGT de glace</color>.\nLe tir activé par cette compétence est considéré comme un tir chargé.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "129100009": {
+                "Title": "Ultime : Blasphème",
+                "Description": "Lorsque le niveau de décibels est au <color=#FFFFFF>Maximum</color>, appuyez sur <IconMap:Icon_UltimateReady> pour activer :\nLance la faux pour asséner une puissante attaque tournoyante aux ennemis en face, suivie d'un coup final, infligeant d'importants <color=#98EFF0>DGT de glace</color>.\nCette compétence n'est pas considérée comme une attaque lourde.\nAprès l'utilisation de la compétence, vous pouvez enchaîner directement avec le 4e coup d'<color=#FFFFFF>Attaque normale : Quatuor de l'abîme ténébreux</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "129100054": {
+                "Title": "Enchaînement : Farce du destin"
+            },
+            "129100055": {
+                "Description": "Multiplicateur de DGT de l'entaille",
+                "Param": "{Skill:1291015, Prop:1001}"
+            },
+            "129100056": {
+                "Description": "Multiplicateur de confusion de l'entaille",
+                "Param": "{Skill:1291015, Prop:1002}"
+            },
+            "129100057": {
+                "Title": "Ultime : Blasphème"
+            },
+            "129100058": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1291018, Prop:1001}"
+            },
+            "129100059": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1291018, Prop:1002}"
+            }
+        },
+        "6": {
+            "129100011": {
+                "Title": "Soutien rapide : Élégie",
+                "Description": "Lorsque le personnage contrôlé est projeté, appuyez sur <IconMap:Icon_Switch> pour activer :\nLance une série d'attaques sur les ennemis situés en face, leur infligeant des <color=#98EFF0>DGT de glace</color>.\nMaintenez <IconMap:Icon_Normal> enfoncé pendant le lancement de la compétence pour effectuer un tir. Pendant le tir, vous pouvez maintenir <IconMap:Icon_Normal> enfoncé pour charger le tir et effectuer un tir chargé.\nLe tir est considéré comme une attaque normale et ses DGT sont considérés comme des DGT d'attaque normale.\nAprès l'utilisation de la compétence, vous pouvez enchaîner directement avec le 4e coup d'<color=#FFFFFF>Attaque normale : Quatuor de l'abîme ténébreux</color>.\nPendant le tir de la compétence, le niveau de RÉS à l'interruption augmente et les DGT subis diminuent de 40 %.\nLe personnage est invulnérable pendant les entailles et la retraite du tir de la compétence."
+            },
+            "129100012": {
+                "Title": "Soutien défensif : Son heure n'est pas venue",
+                "Description": "Lorsque le personnage sur le terrain est sur le point d'être attaqué, appuyez sur <IconMap:Icon_Switch> pour activer :\nPare l'attaque de l'ennemi et inflige une confusion importante.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "129100013": {
+                "Title": "Soutien de suivi : Inversion des atouts",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> après un <color=#FFFFFF>soutien défensif</color> pour activer :\nFonce en avant et assène deux entailles, infligeant des <color=#98EFF0>DGT de glace</color>.\nAprès l'utilisation de la compétence, vous pouvez enchaîner directement avec le 4e coup d'<color=#FFFFFF>Attaque normale : Quatuor de l'abîme ténébreux</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "129100060": {
+                "Title": "Soutien rapide : Élégie"
+            },
+            "129100061": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1291019, Prop:1001}"
+            },
+            "129100062": {
+                "Description": "Multiplicateur de DGT du tir alternatif",
+                "Param": "{Skill:1291027, Prop:1001}"
+            },
+            "129100063": {
+                "Description": "Multiplicateur de DGT du tir chargé alternatif",
+                "Param": "{Skill:1291028, Prop:1001}"
+            },
+            "129100064": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1291019, Prop:1002}"
+            },
+            "129100065": {
+                "Description": "Multiplicateur de confusion du tir alternatif",
+                "Param": "{Skill:1291027, Prop:1002}"
+            },
+            "129100066": {
+                "Description": "Multiplicateur de confusion du tir chargé alternatif",
+                "Param": "{Skill:1291028, Prop:1002}"
+            },
+            "129100067": {
+                "Title": "Soutien défensif : Son heure n'est pas venue"
+            },
+            "129100068": {
+                "Description": "Multiplicateur de confusion de défense légère",
+                "Param": "{Skill:1291020, Prop:1002}"
+            },
+            "129100069": {
+                "Description": "Multiplicateur de confusion de défense lourde",
+                "Param": "{Skill:1291021, Prop:1002}"
+            },
+            "129100070": {
+                "Description": "Multiplicateur de confusion de défense en chaîne",
+                "Param": "{Skill:1291022, Prop:1002}"
+            },
+            "129100071": {
+                "Title": "Soutien de suivi : Inversion des atouts"
+            },
+            "129100072": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1291023, Prop:1001}"
+            },
+            "129100073": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1291023, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1291001": {
+            "DamageValue": 4310,
+            "DamageGrowth": 400,
+            "DazeValue": 2160,
+            "DazeGrowth": 100
+        },
+        "1291002": {
+            "DamageValue": 7410,
+            "DamageGrowth": 680,
+            "DazeValue": 5490,
+            "DazeGrowth": 250
+        },
+        "1291003": {
+            "DamageValue": 16960,
+            "DamageGrowth": 1550,
+            "DazeValue": 12810,
+            "DazeGrowth": 590
+        },
+        "1291004": {
+            "DamageValue": 14910,
+            "DamageGrowth": 1360,
+            "DazeValue": 12580,
+            "DazeGrowth": 580
+        },
+        "1291005": {
+            "DamageValue": 5860,
+            "DamageGrowth": 540,
+            "DazeValue": 5010,
+            "DazeGrowth": 230
+        },
+        "1291006": {
+            "DamageValue": 11800,
+            "DamageGrowth": 1080,
+            "DazeValue": 9570,
+            "DazeGrowth": 440
+        },
+        "1291007": {
+            "DamageValue": 7000,
+            "DamageGrowth": 640,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1291008": {
+            "DamageValue": 8530,
+            "DamageGrowth": 780,
+            "DazeValue": 8530,
+            "DazeGrowth": 390
+        },
+        "1291009": {
+            "DamageValue": 1870,
+            "DamageGrowth": 170,
+            "DazeValue": 43240,
+            "DazeGrowth": 1970
+        },
+        "1291010": {
+            "DamageValue": 35450,
+            "DamageGrowth": 3230,
+            "DazeValue": 2280,
+            "DazeGrowth": 110
+        },
+        "1291011": {
+            "DamageValue": 9350,
+            "DamageGrowth": 850,
+            "DazeValue": 4680,
+            "DazeGrowth": 220
+        },
+        "1291012": {
+            "DamageValue": 24590,
+            "DamageGrowth": 2240,
+            "DazeValue": 21450,
+            "DazeGrowth": 980
+        },
+        "1291013": {
+            "DamageValue": 16210,
+            "DamageGrowth": 1480,
+            "DazeValue": 12470,
+            "DazeGrowth": 570
+        },
+        "1291014": {
+            "DamageValue": 21210,
+            "DamageGrowth": 1930,
+            "DazeValue": 16320,
+            "DazeGrowth": 750
+        },
+        "1291015": {
+            "DamageValue": 70110,
+            "DamageGrowth": 6380,
+            "DazeValue": 26220,
+            "DazeGrowth": 1200
+        },
+        "1291018": {
+            "DamageValue": 152710,
+            "DamageGrowth": 13890,
+            "DazeValue": 26420,
+            "DazeGrowth": 1210
+        },
+        "1291019": {
+            "DamageValue": 10450,
+            "DamageGrowth": 950,
+            "DazeValue": 5230,
+            "DazeGrowth": 240
+        },
+        "1291020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1291021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1291022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1291023": {
+            "DamageValue": 29170,
+            "DamageGrowth": 2660,
+            "DazeValue": 24910,
+            "DazeGrowth": 1140
+        },
+        "1291024": {
+            "DamageValue": 14340,
+            "DamageGrowth": 1310,
+            "DazeValue": 11030,
+            "DazeGrowth": 510
+        },
+        "1291025": {
+            "DamageValue": 8670,
+            "DamageGrowth": 790,
+            "DazeValue": 6670,
+            "DazeGrowth": 310
+        },
+        "1291026": {
+            "DamageValue": 17060,
+            "DamageGrowth": 1560,
+            "DazeValue": 13120,
+            "DazeGrowth": 600
+        },
+        "1291027": {
+            "DamageValue": 12470,
+            "DamageGrowth": 1140,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1291028": {
+            "DamageValue": 16320,
+            "DamageGrowth": 1490,
+            "DazeValue": 8160,
+            "DazeGrowth": 380
+        }
+    }
+}

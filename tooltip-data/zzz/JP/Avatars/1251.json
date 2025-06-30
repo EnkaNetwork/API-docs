@@ -1,0 +1,450 @@
+{
+    "Name": "青衣",
+    "ElementTypes": [
+        "Elec"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "誘電破壊",
+            "Description": "青衣のフィールド入場時、即座に<color=#FFFFFF>「閃絡電圧」</color>が最大まで溜まり、その後の蓄積効率+30%。<color=#FFFFFF>『通常攻撃：酔花月雲転』</color>を発動した時、すでに<color=#FFFFFF>「閃絡電圧」</color>が最大まで溜まっている場合、今回のスキルが命中した敵の防御力-15%、さらに自身の該当ターゲットに対する会心率+20%、継続時間15秒。",
+            "Lore": "「命の危険はあらねど…努々、抵抗しようなどと考えぬことだ…」\n向き・強度ともに精密に計算された電流で、\n容疑者全員に安心安全な電気ショック体験をご提供。"
+        },
+        "2": {
+            "Title": "四両で千斤をはじく",
+            "Description": "<color=#FFFFFF>『コアパッシブ：千秋万歳』</color>によって付与した<color=#FFFFFF>「征服」</color>1重につき、ブレイク弱体倍率アップの効果が本来の135%になる。青衣の攻撃が敵に命中した時、敵の<color=#FFFFFF>「征服」</color>が重数の上限まで重ね掛けされている場合、自身が該当ターゲットに与えるブレイク値+15%。",
+            "Lore": "旧文明の書物に記載されている武術の技巧。それは当初棍術ではなく、拳法だったという。\n「末節に拘泥するでない。見方を変えれば、腕も三節の棍であろ」"
+        },
+        "3": {
+            "Title": "白湯は万病に効く",
+            "Description": "<color=#FFFFFF>『通常攻撃』</color>、<color=#FFFFFF>『回避』</color>、<color=#FFFFFF>『支援スキル』</color>、<color=#FFFFFF>『特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>のスキルレベル+2",
+            "Lore": "「若者よ、養生に努め、白湯をたんと飲むが良い」\n魔法瓶をあおる青衣がどれだけほんわかとして見えても、\n彼女から手渡された白湯には要注意だ——\n「先輩は、100度の熱湯でも眉一つ動かさずに飲みますからね…」\nかつて痛い目を見た治安官はこう語る。"
+        },
+        "4": {
+            "Title": "定常電弧の障壁",
+            "Description": "<color=#FFFFFF>「閃絡」</color>状態突入または終了時、青衣はHP上限10%分のシールドを生成する。シールド効果が更新された時、前回生成されたシールドがまだ存在している場合、青衣のエネルギーが5Pt回復する、エネルギー回復効果は10秒に1回のみ発動可能。",
+            "Lore": "ホワイトスター学会が、旧文明の玉偶をリバースエンジニアリングして\n開発した電弧障壁。防御、攻撃、電気エネルギー転換の集大成と言える技術。\n「『水は船を載せ、また覆す』とは古人のことば。\n一方『電流とは水の流れの如し』とは物理学のことば。\nつまり『電流とは攻守一体』…見事な融合といえよう」"
+        },
+        "5": {
+            "Title": "童心不滅",
+            "Description": "<color=#FFFFFF>『通常攻撃』</color>、<color=#FFFFFF>『回避』</color>、<color=#FFFFFF>『支援スキル』</color>、<color=#FFFFFF>『特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>のスキルレベル+2",
+            "Lore": "「若人よ、新しきことには果敢に取り組むが吉。精進せい！」\n青衣の鼓舞は時に投げやりで、\n時にからかっているように感じられることもある。\nしかし実際に困難に直面した時、彼女ほど頼れる人物はいないだろう。\n伊達に何百、何千年と生きてはいないということだ。"
+        },
+        "6": {
+            "Title": "奇経八脈",
+            "Description": "<color=#FFFFFF>『通常攻撃：酔花月雲転』</color>の中断レベルが大幅にアップし、スキルの与える会心ダメージ+100%。青衣の<color=#FFFFFF>『通常攻撃：酔花月雲転』</color>が敵に命中すると、ターゲットの全属性ダメージ耐性-20%、継続時間15秒。",
+            "Lore": "旧文明の書物に記されている、人体の循環器形に関する学説。\nこれを完全に習得すれば、一瞬にして敵を行動不能にすることが可能だという。\n「次回は、こそばゆくなるツボを押してみるとしよう。\nして、誰で試したものか…店長どのか、それとも朱鳶か…」"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "コアパッシブ：千秋万歳",
+            "DescriptionByLevel": {
+                "1": "<color=#FFFFFF>『通常攻撃：酔花月雲転』</color>のとどめの一撃が敵に命中した時、敵に<color=#FFFFFF>「征服」</color>を5重付与する、最大20重まで。<color=#FFFFFF>「征服」</color>1重につき、ターゲットのブレイク弱体倍率+<color=#2BAD00>2%</color>。<color=#FFFFFF>『通常攻撃：酔花月雲転』</color>の突進攻撃を1回発動するたびに、とどめの一撃が追加で<color=#FFFFFF>「征服」</color>を1重付与する。とどめの一撃の際に<color=#FFFFFF>『極限回避』</color>が発動した場合、即座に<color=#FFFFFF>「征服」</color>を{CAL:5+5,1,2}重付与する。通常エネミーまたは精鋭エネミーに対しては、付与する「征服」の重数が2倍になる。ターゲットがブレイク状態から復帰した時、<color=#FFFFFF>「征服」</color>の重数がリセットされる。",
+                "2": "<color=#FFFFFF>『通常攻撃：酔花月雲転』</color>のとどめの一撃が敵に命中した時、敵に<color=#FFFFFF>「征服」</color>を5重付与する、最大20重まで。<color=#FFFFFF>「征服」</color>1重につき、ターゲットのブレイク弱体倍率+<color=#2BAD00>2.4%</color>。<color=#FFFFFF>『通常攻撃：酔花月雲転』</color>の突進攻撃を1回発動するたびに、とどめの一撃が追加で<color=#FFFFFF>「征服」</color>を1重付与する。とどめの一撃の際に<color=#FFFFFF>『極限回避』</color>が発動した場合、即座に<color=#FFFFFF>「征服」</color>を{CAL:5+5,1,2}重付与する。通常エネミーまたは精鋭エネミーに対しては、付与する「征服」の重数が2倍になる。ターゲットがブレイク状態から復帰した時、<color=#FFFFFF>「征服」</color>の重数がリセットされる。",
+                "3": "<color=#FFFFFF>『通常攻撃：酔花月雲転』</color>のとどめの一撃が敵に命中した時、敵に<color=#FFFFFF>「征服」</color>を5重付与する、最大20重まで。<color=#FFFFFF>「征服」</color>1重につき、ターゲットのブレイク弱体倍率+<color=#2BAD00>2.7%</color>。<color=#FFFFFF>『通常攻撃：酔花月雲転』</color>の突進攻撃を1回発動するたびに、とどめの一撃が追加で<color=#FFFFFF>「征服」</color>を1重付与する。とどめの一撃の際に<color=#FFFFFF>『極限回避』</color>が発動した場合、即座に<color=#FFFFFF>「征服」</color>を{CAL:5+5,1,2}重付与する。通常エネミーまたは精鋭エネミーに対しては、付与する「征服」の重数が2倍になる。ターゲットがブレイク状態から復帰した時、<color=#FFFFFF>「征服」</color>の重数がリセットされる。",
+                "4": "<color=#FFFFFF>『通常攻撃：酔花月雲転』</color>のとどめの一撃が敵に命中した時、敵に<color=#FFFFFF>「征服」</color>を5重付与する、最大20重まで。<color=#FFFFFF>「征服」</color>1重につき、ターゲットのブレイク弱体倍率+<color=#2BAD00>3%</color>。<color=#FFFFFF>『通常攻撃：酔花月雲転』</color>の突進攻撃を1回発動するたびに、とどめの一撃が追加で<color=#FFFFFF>「征服」</color>を1重付与する。とどめの一撃の際に<color=#FFFFFF>『極限回避』</color>が発動した場合、即座に<color=#FFFFFF>「征服」</color>を{CAL:5+5,1,2}重付与する。通常エネミーまたは精鋭エネミーに対しては、付与する「征服」の重数が2倍になる。ターゲットがブレイク状態から復帰した時、<color=#FFFFFF>「征服」</color>の重数がリセットされる。",
+                "5": "<color=#FFFFFF>『通常攻撃：酔花月雲転』</color>のとどめの一撃が敵に命中した時、敵に<color=#FFFFFF>「征服」</color>を5重付与する、最大20重まで。<color=#FFFFFF>「征服」</color>1重につき、ターゲットのブレイク弱体倍率+<color=#2BAD00>3.4%</color>。<color=#FFFFFF>『通常攻撃：酔花月雲転』</color>の突進攻撃を1回発動するたびに、とどめの一撃が追加で<color=#FFFFFF>「征服」</color>を1重付与する。とどめの一撃の際に<color=#FFFFFF>『極限回避』</color>が発動した場合、即座に<color=#FFFFFF>「征服」</color>を{CAL:5+5,1,2}重付与する。通常エネミーまたは精鋭エネミーに対しては、付与する「征服」の重数が2倍になる。ターゲットがブレイク状態から復帰した時、<color=#FFFFFF>「征服」</color>の重数がリセットされる。",
+                "6": "<color=#FFFFFF>『通常攻撃：酔花月雲転』</color>のとどめの一撃が敵に命中した時、敵に<color=#FFFFFF>「征服」</color>を5重付与する、最大20重まで。<color=#FFFFFF>「征服」</color>1重につき、ターゲットのブレイク弱体倍率+<color=#2BAD00>3.7%</color>。<color=#FFFFFF>『通常攻撃：酔花月雲転』</color>の突進攻撃を1回発動するたびに、とどめの一撃が追加で<color=#FFFFFF>「征服」</color>を1重付与する。とどめの一撃の際に<color=#FFFFFF>『極限回避』</color>が発動した場合、即座に<color=#FFFFFF>「征服」</color>を{CAL:5+5,1,2}重付与する。通常エネミーまたは精鋭エネミーに対しては、付与する「征服」の重数が2倍になる。ターゲットがブレイク状態から復帰した時、<color=#FFFFFF>「征服」</color>の重数がリセットされる。",
+                "7": "<color=#FFFFFF>『通常攻撃：酔花月雲転』</color>のとどめの一撃が敵に命中した時、敵に<color=#FFFFFF>「征服」</color>を5重付与する、最大20重まで。<color=#FFFFFF>「征服」</color>1重につき、ターゲットのブレイク弱体倍率+<color=#2BAD00>4%</color>。<color=#FFFFFF>『通常攻撃：酔花月雲転』</color>の突進攻撃を1回発動するたびに、とどめの一撃が追加で<color=#FFFFFF>「征服」</color>を1重付与する。とどめの一撃の際に<color=#FFFFFF>『極限回避』</color>が発動した場合、即座に<color=#FFFFFF>「征服」</color>を{CAL:5+5,1,2}重付与する。通常エネミーまたは精鋭エネミーに対しては、付与する「征服」の重数が2倍になる。ターゲットがブレイク状態から復帰した時、<color=#FFFFFF>「征服」</color>の重数がリセットされる。"
+            }
+        },
+        "MathSkill": {
+            "Title": "追加能力：陽関三畳",
+            "Description": "チームに<color=#FFFFFF>[強攻]</color>のメンバーまたは自身と同じ陣営のメンバーがいる時に発動：\n<color=#FFFFFF>『通常攻撃』</color>の与えるブレイク値+20%。また、青衣の衝撃力が120Ptを上回る場合、1Pt上回るごとに自身の攻撃力+6Pt、この効果によってアップできる攻撃力は最大600Ptまで。"
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "125100001": {
+                "Title": "通常攻撃：一刹",
+                "Description": " <IconMap:Icon_Normal> を押して発動：\n前方に最大4段の打撃を放ち、<color=#F0D12B>物理属性ダメージ</color>と<color=#2EB6FF>電気属性ダメージ</color>を与える。\n3段目の最中に <IconMap:Icon_Normal> を連打するとコンボを継続でき、持続的に打撃を与えられる。その間に<color=#FFFFFF>『回避』</color>を挟んでも、<color=#FFFFFF>『通常攻撃』</color>のコンボは継続する。\n3段目の最中に <IconMap:Icon_Normal> を離すとコンボを中断でき、自動で4段目の攻撃に繋げることが可能。コンボが一定時間継続した場合、4段目の攻撃が強化される。\n3段目および4段目の攻撃中、中断耐性レベルがアップし、被ダメージ-40%。"
+            },
+            "125100002": {
+                "Title": "通常攻撃：酔花雲",
+                "Description": " <IconMap:Icon_Normal> を長押しして発動：\n前方に突進攻撃を一回行い、<color=#2EB6FF>電気属性ダメージ</color>を与える。\nスキル発動中、中断耐性レベルがアップする。"
+            },
+            "125100003": {
+                "Title": "閃絡",
+                "Description": "青衣がスキルを発動して<color=#2EB6FF>電気属性ダメージ</color>を与えると、<color=#FFFFFF>「閃絡電圧」</color>が溜まる。<color=#FFFFFF>「閃絡電圧」</color>が75%まで溜まると、<color=#FFFFFF>「閃絡」</color>状態に入る。<color=#FFFFFF>『通常攻撃：酔花月雲転』</color>を発動した時、<color=#FFFFFF>「閃絡」</color>状態が終わると共に全ての<color=#FFFFFF>「閃絡電圧」</color>を消費する、そのうち75%を超えた部分は1%につき、今回のスキルによる与ダメージ/ブレイク値が追加で+1%/0.5%。なお、<color=#FFFFFF>『通常攻撃：酔花月雲転』</color>では<color=#FFFFFF>「閃絡電圧」</color>が溜まらない。"
+            },
+            "125100004": {
+                "Title": "通常攻撃：酔花月雲転",
+                "Description": "<color=#FFFFFF>「閃絡」</color>状態で <IconMap:Icon_Normal> を長押しして発動：\n前方に突進攻撃を連続で5回発動した後、とどめの一撃を放ち、<color=#2EB6FF>電気属性ダメージ</color>を大量に与える。スキル発動中に <IconMap:Icon_Normal> を離すと、とどめの一撃を早めに発動できる。\nエージェントが攻撃されそうになった瞬間にとどめの一撃を放つと<color=#FFFFFF>『極限回避』</color>を発動できる。\n突進攻撃発動中、中断耐性レベルがアップし、被ダメージ-40%。とどめの一撃発動中、無敵効果を得る。"
+            },
+            "125100016": {
+                "Title": "通常攻撃：一刹"
+            },
+            "125100017": {
+                "Description": "1段ダメージ倍率",
+                "Param": "{Skill:1251001, Prop:1001}"
+            },
+            "125100018": {
+                "Description": "1段ダメージ倍率（派生）",
+                "Param": "{Skill:1251002, Prop:1001}"
+            },
+            "125100019": {
+                "Description": "2段ダメージ倍率",
+                "Param": "{Skill:1251003, Prop:1001}"
+            },
+            "125100020": {
+                "Description": "3段ダメージ倍率",
+                "Param": "{Skill:1251004, Prop:1001}"
+            },
+            "125100021": {
+                "Description": "4段ダメージ倍率",
+                "Param": "{Skill:1251005, Prop:1001}"
+            },
+            "125100022": {
+                "Description": "4段ダメージ倍率（強化）",
+                "Param": "{Skill:1251006, Prop:1001}"
+            },
+            "125100023": {
+                "Description": "1段ブレイク倍率",
+                "Param": "{Skill:1251001, Prop:1002}"
+            },
+            "125100024": {
+                "Description": "1段ブレイク倍率（派生）",
+                "Param": "{Skill:1251002, Prop:1002}"
+            },
+            "125100025": {
+                "Description": "2段ブレイク倍率",
+                "Param": "{Skill:1251003, Prop:1002}"
+            },
+            "125100026": {
+                "Description": "3段ブレイク倍率",
+                "Param": "{Skill:1251004, Prop:1002}"
+            },
+            "125100027": {
+                "Description": "4段ブレイク倍率",
+                "Param": "{Skill:1251005, Prop:1002}"
+            },
+            "125100028": {
+                "Description": "4段ブレイク倍率（強化）",
+                "Param": "{Skill:1251006, Prop:1002}"
+            },
+            "125100029": {
+                "Title": "通常攻撃：酔花雲"
+            },
+            "125100030": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1251007, Prop:1001}"
+            },
+            "125100031": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1251007, Prop:1002}"
+            },
+            "125100032": {
+                "Title": "通常攻撃：酔花月雲転"
+            },
+            "125100033": {
+                "Description": "突進攻撃ダメージ倍率",
+                "Param": "{Skill:1251008, Prop:1001}"
+            },
+            "125100034": {
+                "Description": "とどめの一撃ダメージ倍率",
+                "Param": "{Skill:1251009, Prop:1001}"
+            },
+            "125100035": {
+                "Description": "突進攻撃ブレイク倍率",
+                "Param": "{Skill:1251008, Prop:1002}"
+            },
+            "125100036": {
+                "Description": "とどめの一撃ブレイク倍率",
+                "Param": "{Skill:1251009, Prop:1002}"
+            }
+        },
+        "1": {
+            "125100005": {
+                "Title": "特殊スキル：昼錦堂",
+                "Description": " <IconMap:Icon_Special> を押して発動：\n前方に素早く打ち上げ攻撃を行った後、振り下ろし攻撃を放ち、<color=#2EB6FF>電気属性ダメージ</color>を与える。\nスキル発動中、中断耐性レベルがアップする。"
+            },
+            "125100006": {
+                "Title": "強化特殊スキル：月上海棠",
+                "Description": "エネルギーが溜まっている状態で <IconMap:Icon_SpecialReady> を押して発動：\n前方に素早く打ち上げ攻撃を行った後に飛び上がり、身を翻して連続攻撃した後に強力な振り下ろし攻撃を放ち、<color=#2EB6FF>電気属性ダメージ</color>を大量に与える。\n <IconMap:Icon_SpecialReady> を長押しした時、エネルギーを追加で消費して、身を翻して連続攻撃できる回数を増やす。\nスキル発動中、無敵効果を得る。\nスキル発動後、そのまま<color=#FFFFFF>『通常攻撃』</color>の3段目に繋げることが可能。"
+            },
+            "125100037": {
+                "Title": "特殊スキル：昼錦堂"
+            },
+            "125100038": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1251010, Prop:1001}"
+            },
+            "125100039": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1251010, Prop:1002}"
+            },
+            "125100040": {
+                "Title": "強化特殊スキル：月上海棠"
+            },
+            "125100041": {
+                "Description": "ダメージ倍率",
+                "Param": "{{Skill:1251011, Prop:1001} + {Skill:1251021, Prop:1001} + {Skill:1251022, Prop:1001}}"
+            },
+            "125100042": {
+                "Description": "ブレイク倍率",
+                "Param": "{{Skill:1251011, Prop:1002} + {Skill:1251021, Prop:1002} + {Skill:1251022, Prop:1002}}"
+            },
+            "125100043": {
+                "Description": "エネルギー消費",
+                "Param": "60Pt"
+            },
+            "125100044": {
+                "Description": "エネルギー追加消費",
+                "Param": "20Pt"
+            }
+        },
+        "2": {
+            "125100007": {
+                "Title": "回避：雁の聲",
+                "Description": " <IconMap:Icon_Evade> を押して発動：\nダッシュで高速回避する。\nスキル発動中、無敵効果を得る。"
+            },
+            "125100008": {
+                "Title": "ダッシュ攻撃：入破",
+                "Description": "回避時に <IconMap:Icon_Normal> を押して発動：\n前方に突進した後、打ち上げ攻撃を行い、<color=#F0D12B>物理属性ダメージ</color>を与える。"
+            },
+            "125100009": {
+                "Title": "回避反撃：意、不尽",
+                "Description": "<color=#FFFFFF>『極限回避』</color>後に <IconMap:Icon_Normal> を押して発動：\n飛び上がった後に落下攻撃を放ち、<color=#2EB6FF>電気属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。"
+            },
+            "125100045": {
+                "Title": "ダッシュ攻撃：入破"
+            },
+            "125100046": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1251012, Prop:1001}"
+            },
+            "125100047": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1251012, Prop:1002}"
+            },
+            "125100048": {
+                "Title": "回避反撃：意、不尽"
+            },
+            "125100049": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1251013, Prop:1001}"
+            },
+            "125100050": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1251013, Prop:1002}"
+            }
+        },
+        "3": {
+            "125100010": {
+                "Title": "連携スキル：太平令",
+                "Description": "<color=#FFFFFF>『連携スキル』</color>開始時に、対応するエージェントを選択して発動：\n前方広範囲に強力な連続打撃を放ち、<color=#2EB6FF>電気属性ダメージ</color>を大量に与える。\n攻撃が命中した敵が<color=#FFFFFF>『コアパッシブ：千秋万歳』</color>による<color=#FFFFFF>「征服」</color>を1重所持するごとに、スキルがその敵に与えるダメージ+3%。\nスキル発動中、無敵効果を得る。"
+            },
+            "125100011": {
+                "Title": "終結スキル：八声甘州",
+                "Description": "デシベルレートが<color=#FFFFFF>『Maximum』</color>に達した時に <IconMap:Icon_UltimateReady> を押して発動：\n前方広範囲に強力な連続打撃を行った後、とどめの一撃を放ち、<color=#2EB6FF>電気属性ダメージ</color>を大量に与える。\nスキル発動中、無敵効果を得る。"
+            },
+            "125100051": {
+                "Title": "連携スキル：太平令"
+            },
+            "125100052": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1251014, Prop:1001}"
+            },
+            "125100053": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1251014, Prop:1002}"
+            },
+            "125100054": {
+                "Title": "終結スキル：八声甘州"
+            },
+            "125100055": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1251015, Prop:1001}"
+            },
+            "125100056": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1251015, Prop:1002}"
+            }
+        },
+        "6": {
+            "125100013": {
+                "Title": "クイック支援：風入松",
+                "Description": "操作しているメンバーが吹き飛ばされた時に、 <IconMap:Icon_Switch> を押して発動：\n飛び上がった後に落下攻撃を放ち、<color=#2EB6FF>電気属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。"
+            },
+            "125100014": {
+                "Title": "パリィ支援：錦上の花",
+                "Description": "出場中のメンバーが攻撃されそうになった時に、 <IconMap:Icon_Switch> を押して発動：\n敵の攻撃をパリィし、ブレイク値を大量に蓄積させる。\nパリィ性能はかなり高い。激しい攻撃を受けている際は、<color=#FFFFFF>「支援ポイント」</color>の消費量が減少する。\nスキル発動中、無敵効果を得る。"
+            },
+            "125100015": {
+                "Title": "支援突撃：清江引",
+                "Description": "<color=#FFFFFF>『パリィ支援』</color>発動後、 <IconMap:Icon_Normal> を押して発動：\n前方に素早く突進攻撃を放ち、地面に電流を流す。その後爆発を起こし、<color=#2EB6FF>電気属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。"
+            },
+            "125100057": {
+                "Title": "クイック支援：風入松"
+            },
+            "125100058": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1251016, Prop:1001}"
+            },
+            "125100059": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1251016, Prop:1002}"
+            },
+            "125100060": {
+                "Title": "パリィ支援：錦上の花"
+            },
+            "125100061": {
+                "Description": "パリィ・軽 ブレイク倍率",
+                "Param": "{Skill:1251017, Prop:1002}"
+            },
+            "125100062": {
+                "Description": "パリィ・重 ブレイク倍率",
+                "Param": "{Skill:1251018, Prop:1002}"
+            },
+            "125100063": {
+                "Description": "パリィ・連続 ブレイク倍率",
+                "Param": "{Skill:1251019, Prop:1002}"
+            },
+            "125100064": {
+                "Title": "支援突撃：清江引"
+            },
+            "125100065": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1251020, Prop:1001}"
+            },
+            "125100066": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1251020, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1251001": {
+            "DamageValue": 4720,
+            "DamageGrowth": 430,
+            "DazeValue": 2360,
+            "DazeGrowth": 110
+        },
+        "1251002": {
+            "DamageValue": 11030,
+            "DamageGrowth": 1010,
+            "DazeValue": 5520,
+            "DazeGrowth": 260
+        },
+        "1251003": {
+            "DamageValue": 12210,
+            "DamageGrowth": 1110,
+            "DazeValue": 8220,
+            "DazeGrowth": 380
+        },
+        "1251004": {
+            "DamageValue": 1760,
+            "DamageGrowth": 160,
+            "DazeValue": 1910,
+            "DazeGrowth": 90
+        },
+        "1251005": {
+            "DamageValue": 10640,
+            "DamageGrowth": 970,
+            "DazeValue": 10630,
+            "DazeGrowth": 490
+        },
+        "1251006": {
+            "DamageValue": 23440,
+            "DamageGrowth": 2140,
+            "DazeValue": 20470,
+            "DazeGrowth": 940
+        },
+        "1251007": {
+            "DamageValue": 8560,
+            "DamageGrowth": 780,
+            "DazeValue": 8560,
+            "DazeGrowth": 390
+        },
+        "1251008": {
+            "DamageValue": 44870,
+            "DamageGrowth": 4080,
+            "DazeValue": 27190,
+            "DazeGrowth": 1240
+        },
+        "1251009": {
+            "DamageValue": 39440,
+            "DamageGrowth": 3590,
+            "DazeValue": 21760,
+            "DazeGrowth": 990
+        },
+        "1251010": {
+            "DamageValue": 6240,
+            "DamageGrowth": 570,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1251011": {
+            "DamageValue": 15070,
+            "DamageGrowth": 1370,
+            "DazeValue": 11110,
+            "DazeGrowth": 510
+        },
+        "1251012": {
+            "DamageValue": 4950,
+            "DamageGrowth": 450,
+            "DazeValue": 2480,
+            "DazeGrowth": 120
+        },
+        "1251013": {
+            "DamageValue": 28400,
+            "DamageGrowth": 2590,
+            "DazeValue": 19040,
+            "DazeGrowth": 870
+        },
+        "1251014": {
+            "DamageValue": 64790,
+            "DamageGrowth": 5890,
+            "DazeValue": 20900,
+            "DazeGrowth": 950
+        },
+        "1251015": {
+            "DamageValue": 167070,
+            "DamageGrowth": 15190,
+            "DazeValue": 109710,
+            "DazeGrowth": 4990
+        },
+        "1251016": {
+            "DamageValue": 13390,
+            "DamageGrowth": 1220,
+            "DazeValue": 13390,
+            "DazeGrowth": 610
+        },
+        "1251017": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 24930,
+            "DazeGrowth": 1140
+        },
+        "1251018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 30430,
+            "DazeGrowth": 1390
+        },
+        "1251019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 12830,
+            "DazeGrowth": 590
+        },
+        "1251020": {
+            "DamageValue": 37640,
+            "DamageGrowth": 3430,
+            "DazeValue": 27900,
+            "DazeGrowth": 1270
+        },
+        "1251021": {
+            "DamageValue": 21100,
+            "DamageGrowth": 1920,
+            "DazeValue": 15550,
+            "DazeGrowth": 710
+        },
+        "1251022": {
+            "DamageValue": 24110,
+            "DamageGrowth": 2200,
+            "DazeValue": 17770,
+            "DazeGrowth": 810
+        }
+    }
+}

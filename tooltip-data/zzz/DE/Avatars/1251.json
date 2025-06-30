@@ -1,0 +1,450 @@
+{
+    "Name": "Qingyi",
+    "ElementTypes": [
+        "Elec"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Dämmungsdurchbruch",
+            "Description": "Beim Betreten des Kampffelds wird Qingyis <color=#FFFFFF>Überschlagsspannung</color> sofort auf den maximalen Wert wiederhergestellt und deren Ansammlungsrate wird um 30 % erhöht. Wenn <color=#FFFFFF>Überschlagsspannung</color> beim Anwenden des <color=#FFFFFF>Basisangriffs: Entzückende Mondscheinblüten</color> auf dem maximalen Wert liegt, verringert sich die VTD des durch diesen Angriff getroffenen Gegners um 15 % und Qingyis KRIT-Rate gegen diesen Gegner erhöht sich um 20 %, hält 15 s.",
+            "Lore": "„Auch wenn dein Leben nicht in Gefahr sein wird, bitten wir dich freundlich, dich nicht der Festnahme zu widersetzen ...“\nDie Richtung und Intensität des Stroms wurden präzise berechnet, um sicherzustellen, dass jeder Verdächtige ein gefahrloses Erlebnis mit Stromschlägen hat."
+        },
+        "2": {
+            "Title": "Minimale Anstrengung, maximale Wirkung",
+            "Description": "Erhöht den Benommenheit-SCH-Multiplikator-Bonus jeder einzelnen Stapelung <color=#FFFFFF>Bezwingung</color> der <color=#FFFFFF>passiven Kernfähigkeit: Ewige Jahreszeiten</color> auf 135 % ihres ursprünglichen Werts. Wenn Qingyis Angriff ein Ziel trifft und die ihm verliehenen Stapelungen von <color=#FFFFFF>Bezwingung</color> bereits die maximale Anzahl erreicht haben, wird die von ihr bei diesem Ziel verursachte Benommenheit um 15 % erhöht.",
+            "Lore": "Eine uralte Kampftechnik, die in antiken Schriften aus der alten Zivilisation erwähnt wird. Am Anfang war es vermutlich eher eine Technik für den Faustkampf als für die Stabswaffe.\n„Sei nicht so verkrampft, auch der Arm kann wie ein Dreistock verwendet werden, mhm.“"
+        },
+        "3": {
+            "Title": "Trink viel heißes Wasser",
+            "Description": "Fähigkeitsstufe von <color=#FFFFFF>Basisangriff</color>, <color=#FFFFFF>Ausweichen</color>, <color=#FFFFFF>Hilfe</color>, <color=#FFFFFF>Spezialangriff</color> und <color=#FFFFFF>Kettenangriff</color> +2",
+            "Lore": "„Junge Leute sollten auf ihre Gesundheit achten und mehr heißes Wasser zu trinken ist ein guter Anfang.“\nQingyi scheint sich immer wohlzufühlen, wenn sie aus ihrer Thermoskanne trinkt. Aber sei vorsichtig, wenn sie dir einen Schluck anbietet. „Selbst 100 Grad Celsius kochendes Wasser macht ihr nichts aus ...“\nEine solche Notiz wurde von einer Offizierin hinterlassen, die die Erfahrung machte."
+        },
+        "4": {
+            "Title": "Stabile Lichtbogenbarriere",
+            "Description": "Wenn Qingyi den Zustand <color=#FFFFFF>Überschlag</color> betritt oder verlässt, erhält sie einen Schild, dessen Wert 10 % ihrer max. LP entspricht. Wenn der vorherige Schild beim Aktualisieren des Schildeffekts noch aktiv ist, regeneriert Qingyi 5 Pkt. Energie. Dieser Energie-Generationseffekt hat eine Abklingzeit von 10 s.",
+            "Lore": "Indem sie Automaten der alten Zivilisation rückentwickelten, entwickelte das White-Star-Institut die Lichtbogenbarriere. Diese Technologie vereint die Funktionen Verteidigung, Angriff und Umwandlung elektrischer Energie.\n„Wie man so schön sagt: Wasser kann ein Boot tragen, kann es aber auch versenken. In der Physik gibt es auch das Sprichwort: Der Strom der Elektrizität ist dem Strom des Wassers gleich. Daher kann Stromenergie sowohl offensiv als auch defensiv verwendet werden. Es ist eine tolle Kombination.“"
+        },
+        "5": {
+            "Title": "Jugendliches Gemüt",
+            "Description": "Fähigkeitsstufe von <color=#FFFFFF>Basisangriff</color>, <color=#FFFFFF>Ausweichen</color>, <color=#FFFFFF>Hilfe</color>, <color=#FFFFFF>Spezialangriff</color> und <color=#FFFFFF>Kettenangriff</color> +2",
+            "Lore": "„Sehr gut, junge Leute sollte mutig sein und neue Dinge ausprobieren. Weiter so!“\nManchmal fühlt sich Qingyis Ermutigung etwas faul und stichelnd an, aber wenn man wirklich in Schwierigkeiten steckt, kann man sich auf sie verlassen.\nImmerhin lebt sie bereits seit vielen Jahrhunderten und kann mit allem klarkommen."
+        },
+        "6": {
+            "Title": "Acht Meridiane",
+            "Description": "Die Unterbrechungsstufe des <color=#FFFFFF>Basisangriffs: Entzückende Mondscheinblüten</color> wird erheblich erhöht und der KRIT-SCH wird zusätzlich um 100 % erhöht. Wenn Qingyi einen Gegner mit dem <color=#FFFFFF>Basisangriff: Entzückende Mondscheinblüten</color> trifft, verringert sich der WDS des Ziels gegen allen Attribut-SCH um 20 %, hält 15 s.",
+            "Lore": "In den antiken Schriften der alten Zivilisation gibt es eine Theorie über das menschliche Kreislaufsystem. Dort steht geschrieben, dass jene, die diese Theorie meistern, einen Gegner im Kampf unverzüglich ausschalten können.\n„Sollte ich beim nächsten Mal die Akupunkte ausprobieren, die Juckreiz verursachen? Hm, wer soll das Versuchskaninchen sein ... {M#der Chef}{F#die Chefin} oder Zhu Yuan?“"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passive Kernfähigkeit: Ewige Jahreszeiten",
+            "DescriptionByLevel": {
+                "1": "Wenn Qingyi einen Gegner mit dem Gnadenstoß ihres <color=#FFFFFF>Basisangriffs: Entzückende Mondscheinblüten</color> trifft, wird diesem 5 Stapelungen <color=#FFFFFF>Bezwingung</color> verliehen, max. 20-fach stapelbar. Mit jeder Stapelung <color=#FFFFFF>Bezwingung</color> erhöht sich der Benommenheit-SCH-Multiplikator des Ziels um <color=#2BAD00>2 %</color>. Für jeden Vorstoßangriff, der während des <color=#FFFFFF>Basisangriffs: Entzückende Mondscheinblüten</color> ausgeführt wird, verleiht der Gnadenstoß dem Ziel zusätzlich 1 Stapelung <color=#FFFFFF>Bezwingung</color>. Wenn beim Anwenden des Gnadenstoßes ein <color=#FFFFFF>perfektes Ausweichen</color> ausgelöst wird, können direkt {CAL:5+5,1,2} Stapelungen <color=#FFFFFF>Bezwingung</color> verliehen werden. Wenn Bezwingung einem normalen oder Elitegegner verliehen wird, wird die Anzahl der verliehenen Stapelungen verdoppelt. Wenn sich das Ziel von Benommenheit erholt, wird die Anzahl der Stapelungen von <color=#FFFFFF>Bezwingung</color> zurückgesetzt.",
+                "2": "Wenn Qingyi einen Gegner mit dem Gnadenstoß ihres <color=#FFFFFF>Basisangriffs: Entzückende Mondscheinblüten</color> trifft, wird diesem 5 Stapelungen <color=#FFFFFF>Bezwingung</color> verliehen, max. 20-fach stapelbar. Mit jeder Stapelung <color=#FFFFFF>Bezwingung</color> erhöht sich der Benommenheit-SCH-Multiplikator des Ziels um <color=#2BAD00>2,4 %</color>. Für jeden Vorstoßangriff, der während des <color=#FFFFFF>Basisangriffs: Entzückende Mondscheinblüten</color> ausgeführt wird, verleiht der Gnadenstoß dem Ziel zusätzlich 1 Stapelung <color=#FFFFFF>Bezwingung</color>. Wenn beim Anwenden des Gnadenstoßes ein <color=#FFFFFF>perfektes Ausweichen</color> ausgelöst wird, können direkt {CAL:5+5,1,2} Stapelungen <color=#FFFFFF>Bezwingung</color> verliehen werden. Wenn Bezwingung einem normalen oder Elitegegner verliehen wird, wird die Anzahl der verliehenen Stapelungen verdoppelt. Wenn sich das Ziel von Benommenheit erholt, wird die Anzahl der Stapelungen von <color=#FFFFFF>Bezwingung</color> zurückgesetzt.",
+                "3": "Wenn Qingyi einen Gegner mit dem Gnadenstoß ihres <color=#FFFFFF>Basisangriffs: Entzückende Mondscheinblüten</color> trifft, wird diesem 5 Stapelungen <color=#FFFFFF>Bezwingung</color> verliehen, max. 20-fach stapelbar. Mit jeder Stapelung <color=#FFFFFF>Bezwingung</color> erhöht sich der Benommenheit-SCH-Multiplikator des Ziels um <color=#2BAD00>2,7 %</color>. Für jeden Vorstoßangriff, der während des <color=#FFFFFF>Basisangriffs: Entzückende Mondscheinblüten</color> ausgeführt wird, verleiht der Gnadenstoß dem Ziel zusätzlich 1 Stapelung <color=#FFFFFF>Bezwingung</color>. Wenn beim Anwenden des Gnadenstoßes ein <color=#FFFFFF>perfektes Ausweichen</color> ausgelöst wird, können direkt {CAL:5+5,1,2} Stapelungen <color=#FFFFFF>Bezwingung</color> verliehen werden. Wenn Bezwingung einem normalen oder Elitegegner verliehen wird, wird die Anzahl der verliehenen Stapelungen verdoppelt. Wenn sich das Ziel von Benommenheit erholt, wird die Anzahl der Stapelungen von <color=#FFFFFF>Bezwingung</color> zurückgesetzt.",
+                "4": "Wenn Qingyi einen Gegner mit dem Gnadenstoß ihres <color=#FFFFFF>Basisangriffs: Entzückende Mondscheinblüten</color> trifft, wird diesem 5 Stapelungen <color=#FFFFFF>Bezwingung</color> verliehen, max. 20-fach stapelbar. Mit jeder Stapelung <color=#FFFFFF>Bezwingung</color> erhöht sich der Benommenheit-SCH-Multiplikator des Ziels um <color=#2BAD00>3 %</color>. Für jeden Vorstoßangriff, der während des <color=#FFFFFF>Basisangriffs: Entzückende Mondscheinblüten</color> ausgeführt wird, verleiht der Gnadenstoß dem Ziel zusätzlich 1 Stapelung <color=#FFFFFF>Bezwingung</color>. Wenn beim Anwenden des Gnadenstoßes ein <color=#FFFFFF>perfektes Ausweichen</color> ausgelöst wird, können direkt {CAL:5+5,1,2} Stapelungen <color=#FFFFFF>Bezwingung</color> verliehen werden. Wenn Bezwingung einem normalen oder Elitegegner verliehen wird, wird die Anzahl der verliehenen Stapelungen verdoppelt. Wenn sich das Ziel von Benommenheit erholt, wird die Anzahl der Stapelungen von <color=#FFFFFF>Bezwingung</color> zurückgesetzt.",
+                "5": "Wenn Qingyi einen Gegner mit dem Gnadenstoß ihres <color=#FFFFFF>Basisangriffs: Entzückende Mondscheinblüten</color> trifft, wird diesem 5 Stapelungen <color=#FFFFFF>Bezwingung</color> verliehen, max. 20-fach stapelbar. Mit jeder Stapelung <color=#FFFFFF>Bezwingung</color> erhöht sich der Benommenheit-SCH-Multiplikator des Ziels um <color=#2BAD00>3,4 %</color>. Für jeden Vorstoßangriff, der während des <color=#FFFFFF>Basisangriffs: Entzückende Mondscheinblüten</color> ausgeführt wird, verleiht der Gnadenstoß dem Ziel zusätzlich 1 Stapelung <color=#FFFFFF>Bezwingung</color>. Wenn beim Anwenden des Gnadenstoßes ein <color=#FFFFFF>perfektes Ausweichen</color> ausgelöst wird, können direkt {CAL:5+5,1,2} Stapelungen <color=#FFFFFF>Bezwingung</color> verliehen werden. Wenn Bezwingung einem normalen oder Elitegegner verliehen wird, wird die Anzahl der verliehenen Stapelungen verdoppelt. Wenn sich das Ziel von Benommenheit erholt, wird die Anzahl der Stapelungen von <color=#FFFFFF>Bezwingung</color> zurückgesetzt.",
+                "6": "Wenn Qingyi einen Gegner mit dem Gnadenstoß ihres <color=#FFFFFF>Basisangriffs: Entzückende Mondscheinblüten</color> trifft, wird diesem 5 Stapelungen <color=#FFFFFF>Bezwingung</color> verliehen, max. 20-fach stapelbar. Mit jeder Stapelung <color=#FFFFFF>Bezwingung</color> erhöht sich der Benommenheit-SCH-Multiplikator des Ziels um <color=#2BAD00>3,7 %</color>. Für jeden Vorstoßangriff, der während des <color=#FFFFFF>Basisangriffs: Entzückende Mondscheinblüten</color> ausgeführt wird, verleiht der Gnadenstoß dem Ziel zusätzlich 1 Stapelung <color=#FFFFFF>Bezwingung</color>. Wenn beim Anwenden des Gnadenstoßes ein <color=#FFFFFF>perfektes Ausweichen</color> ausgelöst wird, können direkt {CAL:5+5,1,2} Stapelungen <color=#FFFFFF>Bezwingung</color> verliehen werden. Wenn Bezwingung einem normalen oder Elitegegner verliehen wird, wird die Anzahl der verliehenen Stapelungen verdoppelt. Wenn sich das Ziel von Benommenheit erholt, wird die Anzahl der Stapelungen von <color=#FFFFFF>Bezwingung</color> zurückgesetzt.",
+                "7": "Wenn Qingyi einen Gegner mit dem Gnadenstoß ihres <color=#FFFFFF>Basisangriffs: Entzückende Mondscheinblüten</color> trifft, wird diesem 5 Stapelungen <color=#FFFFFF>Bezwingung</color> verliehen, max. 20-fach stapelbar. Mit jeder Stapelung <color=#FFFFFF>Bezwingung</color> erhöht sich der Benommenheit-SCH-Multiplikator des Ziels um <color=#2BAD00>4 %</color>. Für jeden Vorstoßangriff, der während des <color=#FFFFFF>Basisangriffs: Entzückende Mondscheinblüten</color> ausgeführt wird, verleiht der Gnadenstoß dem Ziel zusätzlich 1 Stapelung <color=#FFFFFF>Bezwingung</color>. Wenn beim Anwenden des Gnadenstoßes ein <color=#FFFFFF>perfektes Ausweichen</color> ausgelöst wird, können direkt {CAL:5+5,1,2} Stapelungen <color=#FFFFFF>Bezwingung</color> verliehen werden. Wenn Bezwingung einem normalen oder Elitegegner verliehen wird, wird die Anzahl der verliehenen Stapelungen verdoppelt. Wenn sich das Ziel von Benommenheit erholt, wird die Anzahl der Stapelungen von <color=#FFFFFF>Bezwingung</color> zurückgesetzt."
+            }
+        },
+        "MathSkill": {
+            "Title": "Zusatzfähigkeit: Drei Abschiedsverse am Yang-Pass",
+            "Description": "Wenn sich in der Truppe eine <color=#FFFFFF>Attacke</color>-Figur befindet oder eine andere Figur derselben Fraktion wie Qingyi angehört:\nErhöht die durch <color=#FFFFFF>Basisangriffe</color> verursachte Benommenheit um 20 %. Wenn Qingyis Stoßkraft mehr als 120 Pkt. beträgt, erhöht sich ihr ANG für jeden Punkt Stoßkraft über diesen Wert um 6 Pkt. Auf diese Weise kann ihr ANG um max. 600 Pkt. erhöht werden."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "125100001": {
+                "Title": "Basisangriff: Vorletzt",
+                "Description": "Drücke <IconMap:Icon_Normal> zum Anwenden:\nFührt bis zu 4 Angriffe nach vorn aus und verursacht dabei <color=#F0D12B>phys. SCH</color> und <color=#2EB6FF>Elektro-SCH</color>.\nDrücke während des 3. Angriffs wiederholt <IconMap:Icon_Normal>, um den Gegner fortlaufend anzugreifen. Wenn zur gleichen Zeit ein <color=#FFFFFF>Ausweichen</color> ausgelöst wird, wird die Kombo des <color=#FFFFFF>Basisangriffs</color> nicht dadurch unterbrochen.\nLass während des 3. Angriffs <IconMap:Icon_Normal> los, um die Kombo zu unterbrechen, dann wird der 4. Angriff automatisch ausgeführt. Wenn die Kombo eine bestimmte Zeit lang anhält, wird der 4. Angriff verstärkt.\nWährend des 3. und 4. Angriffs erhöht sich die Stufe des Unterbrechungs-WDS und der erlittene SCH verringert sich um 40 %."
+            },
+            "125100002": {
+                "Title": "Basisangriff: Entzückende Blüten",
+                "Description": "Halte <IconMap:Icon_Normal> gedrückt zum Anwenden:\nFührt einen Vorstoßangriff nach vorne aus und verursacht dabei <color=#2EB6FF>Elektro-SCH</color>.\nBeim Anwenden dieser Fähigkeit erhöht sich die Stufe des Unterbrechungs-WDS."
+            },
+            "125100003": {
+                "Title": "Überschlag",
+                "Description": "Wenn Qingyi eine Fähigkeit anwendet und <color=#2EB6FF>Elektro-SCH</color> verursacht, sammelt sie <color=#FFFFFF>Überschlagsspannung</color> an. Wenn <color=#FFFFFF>Überschlagsspannung</color> 75 % erreicht, versetzt sie sich in den Zustand <color=#FFFFFF>Überschlag</color>. Beim Anwenden von <color=#FFFFFF>Basisangriff: Entzückende Mondscheinblüten</color> verbraucht Qingyi alle <color=#FFFFFF>Überschlagsspannung</color> und verlässt den Zustand <color=#FFFFFF>Überschlag</color>. Für je 1 % der verbrauchten <color=#FFFFFF>Überschlagsspannung</color>, das über dem Schwellenwert von 75 % liegt, erhöht sich der verursachte Schaden und die verursachte Benommenheit durch diese Fähigkeit zusätzlich um jeweils 1 % und 0,5 %. <color=#FFFFFF>Basisangriff: Entzückende Mondscheinblüten</color> selbst sammelt keine <color=#FFFFFF>Überschlagsspannung</color> an."
+            },
+            "125100004": {
+                "Title": "Basisangriff: Entzückende Mondscheinblüten",
+                "Description": "Halte im Zustand <color=#FFFFFF>Überschlag</color> <IconMap:Icon_Normal> gedrückt zum Anwenden:\nFührt 5 Vorstoßangriffe nach vorn in Folge aus und dann einen Gnadenstoß, der hohen <color=#2EB6FF>Elektro-SCH</color> verursacht. Lass <IconMap:Icon_Normal> beim Anwenden dieser Fähigkeit los, um den Gnadenstoß früher auszuführen.\nAktiviere den Gnadenstoß kurz bevor die Figur angegriffen wird, um ein <color=#FFFFFF>perfektes Ausweichen</color> auszulösen.\nBeim Anwenden des Vorstoßangriffs erhöht sich die Stufe des Unterbrechungs-WDS und der erlittene SCH verringert sich um 40 %. Beim Anwenden des Gnadenstoßes ist die Figur unverwundbar."
+            },
+            "125100016": {
+                "Title": "Basisangriff: Vorletzt"
+            },
+            "125100017": {
+                "Description": "SCH-Multiplikator des 1. Angriffs",
+                "Param": "{Skill:1251001, Prop:1001}"
+            },
+            "125100018": {
+                "Description": "SCH-Multiplikator des 1. Angriffs (alternativ)",
+                "Param": "{Skill:1251002, Prop:1001}"
+            },
+            "125100019": {
+                "Description": "SCH-Multiplikator des 2. Angriffs",
+                "Param": "{Skill:1251003, Prop:1001}"
+            },
+            "125100020": {
+                "Description": "SCH-Multiplikator des 3. Angriffs",
+                "Param": "{Skill:1251004, Prop:1001}"
+            },
+            "125100021": {
+                "Description": "SCH-Multiplikator des 4. Angriffs",
+                "Param": "{Skill:1251005, Prop:1001}"
+            },
+            "125100022": {
+                "Description": "SCH-Multiplikator des 4. Angriffs (verstärkt)",
+                "Param": "{Skill:1251006, Prop:1001}"
+            },
+            "125100023": {
+                "Description": "Benommenheit-Multiplikator des 1. Angriffs",
+                "Param": "{Skill:1251001, Prop:1002}"
+            },
+            "125100024": {
+                "Description": "Benommenheit-Multiplikator des 1. Angriffs (alternativ)",
+                "Param": "{Skill:1251002, Prop:1002}"
+            },
+            "125100025": {
+                "Description": "Benommenheit-Multiplikator des 2. Angriffs",
+                "Param": "{Skill:1251003, Prop:1002}"
+            },
+            "125100026": {
+                "Description": "Benommenheit-Multiplikator des 3. Angriffs",
+                "Param": "{Skill:1251004, Prop:1002}"
+            },
+            "125100027": {
+                "Description": "Benommenheit-Multiplikator des 4. Angriffs",
+                "Param": "{Skill:1251005, Prop:1002}"
+            },
+            "125100028": {
+                "Description": "Benommenheit-Multiplikator des 4. Angriffs (verstärkt)",
+                "Param": "{Skill:1251006, Prop:1002}"
+            },
+            "125100029": {
+                "Title": "Basisangriff: Entzückende Blüten"
+            },
+            "125100030": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1251007, Prop:1001}"
+            },
+            "125100031": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1251007, Prop:1002}"
+            },
+            "125100032": {
+                "Title": "Basisangriff: Entzückende Mondscheinblüten"
+            },
+            "125100033": {
+                "Description": "SCH-Multiplikator für Vorstoßangriffe",
+                "Param": "{Skill:1251008, Prop:1001}"
+            },
+            "125100034": {
+                "Description": "SCH-Multiplikator für Gnadenstöße",
+                "Param": "{Skill:1251009, Prop:1001}"
+            },
+            "125100035": {
+                "Description": "Benommenheit-Multiplikator für Vorstoßangriffe",
+                "Param": "{Skill:1251008, Prop:1002}"
+            },
+            "125100036": {
+                "Description": "Benommenheit-Multiplikator für Gnadenstöße",
+                "Param": "{Skill:1251009, Prop:1002}"
+            }
+        },
+        "1": {
+            "125100005": {
+                "Title": "Spezialangriff: Sonnenbeschienene Glorie",
+                "Description": "Drücke <IconMap:Icon_Special> zum Anwenden:\nFührt einen nach oben gerichteten Angriff aus, gefolgt von einem Sturzangriff und verursacht dabei <color=#2EB6FF>Elektro-SCH</color>.\nBeim Anwenden dieser Fähigkeit erhöht sich die Stufe des Unterbrechungs-WDS."
+            },
+            "125100006": {
+                "Title": "Verstärkter Spezialangriff: Mondbeschienene Begonien",
+                "Description": "Drücke bei ausreichender Energie <IconMap:Icon_SpecialReady> zum Anwenden:\nFührt einen nach oben gerichteten Angriff aus und springt in die Luft, dreht sich dann um, um eine Reihe von Angriffen auszuführen, gefolgt von einem kraftvollen Sturzangriff und verursacht dabei hohen <color=#2EB6FF>Elektro-SCH</color>. Halte <IconMap:Icon_SpecialReady> gedrückt, um zusätzliche Energie zu verbrauchen und die Anzahl aufeinanderfolgender Angriffe beim Drehen zu erhöhen.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar.\nNach Anwenden der Fähigkeit kann der 3. Angriff des <color=#FFFFFF>Basisangriffs</color> direkt eingesetzt werden."
+            },
+            "125100037": {
+                "Title": "Spezialangriff: Sonnenbeschienene Glorie"
+            },
+            "125100038": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1251010, Prop:1001}"
+            },
+            "125100039": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1251010, Prop:1002}"
+            },
+            "125100040": {
+                "Title": "Verstärkter Spezialangriff: Mondbeschienene Begonien"
+            },
+            "125100041": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{{Skill:1251011, Prop:1001} + {Skill:1251021, Prop:1001} + {Skill:1251022, Prop:1001}}"
+            },
+            "125100042": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{{Skill:1251011, Prop:1002} + {Skill:1251021, Prop:1002} + {Skill:1251022, Prop:1002}}"
+            },
+            "125100043": {
+                "Description": "Energiekosten",
+                "Param": "60 Pkt."
+            },
+            "125100044": {
+                "Description": "Zusätzliche Energiekosten",
+                "Param": "20 Pkt."
+            }
+        },
+        "2": {
+            "125100007": {
+                "Title": "Ausweichen: Schwanengesang",
+                "Description": "Drücke <IconMap:Icon_Evade> zum Anwenden:\nEin blitzschnelles Sprintausweichen.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "125100008": {
+                "Title": "Sprintangriff: Bruch",
+                "Description": "Drücke beim Ausweichen <IconMap:Icon_Normal> zum Anwenden:\nSprintet nach vorne, führt einen nach oben gerichteten Hieb aus und verursacht dabei <color=#F0D12B>phys. SCH</color>."
+            },
+            "125100009": {
+                "Title": "Ausweichkonter: Verweilende Gefühle",
+                "Description": "Drücke nach Auslösen eines <color=#FFFFFF>perfekten Ausweichens</color> <IconMap:Icon_Normal> zum Anwenden:\nSpringt in die Luft, führt einen Abwärtsangriff aus und verursacht dabei <color=#2EB6FF>Elektro-SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "125100045": {
+                "Title": "Sprintangriff: Bruch"
+            },
+            "125100046": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1251012, Prop:1001}"
+            },
+            "125100047": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1251012, Prop:1002}"
+            },
+            "125100048": {
+                "Title": "Ausweichkonter: Verweilende Gefühle"
+            },
+            "125100049": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1251013, Prop:1001}"
+            },
+            "125100050": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1251013, Prop:1002}"
+            }
+        },
+        "3": {
+            "125100010": {
+                "Title": "Kettenangriff: Friedliche Serenade",
+                "Description": "Wähle beim Auslösen eines <color=#FFFFFF>Kettenangriffs</color> die entsprechende Figur zum Anwenden:\nFührt eine Reihe kraftvoller Schläge auf einen großen Bereich vor sich aus und verursacht dabei hohen <color=#2EB6FF>Elektro-SCH</color>.\nWenn ein Gegner getroffen wird, erhöht sich der SCH, den diese Fähigkeit bei ihm verursacht, für jede Stapelung von <color=#FFFFFF>Bezwingung</color> der <color=#FFFFFF>passiven Kernfähigkeit: Ewige Jahreszeiten</color> im Besitz um 3 %.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "125100011": {
+                "Title": "Ultimate: Acht Klänge von Ganzhou",
+                "Description": "Drücke beim Erreichen der Dezibelstufe <color=#FFFFFF>Maximum</color> <IconMap:Icon_UltimateReady> zum Anwenden:\nFührt eine Reihe kraftvoller Schläge auf einen großen Bereich vor sich aus, wendet dann den Gnadenstoß an und verursacht dabei hohen <color=#2EB6FF>Elektro-SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "125100051": {
+                "Title": "Kettenangriff: Friedliche Serenade"
+            },
+            "125100052": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1251014, Prop:1001}"
+            },
+            "125100053": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1251014, Prop:1002}"
+            },
+            "125100054": {
+                "Title": "Ultimate: Acht Klänge von Ganzhou"
+            },
+            "125100055": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1251015, Prop:1001}"
+            },
+            "125100056": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1251015, Prop:1002}"
+            }
+        },
+        "6": {
+            "125100013": {
+                "Title": "Schnelle Hilfe: Wind durch die Kiefern",
+                "Description": "Drücke, wenn die gesteuerte Figur weggeschleudert wird, <IconMap:Icon_Switch> zum Anwenden:\nSpringt in die Luft, führt einen Abwärtsangriff aus und verursacht dabei <color=#2EB6FF>Elektro-SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "125100014": {
+                "Title": "Defensivhilfe: Blühendes Seidenbrokat",
+                "Description": "Drücke, wenn die Figur auf dem Feld gleich angegriffen wird, <IconMap:Icon_Switch> zum Anwenden:\nWehrt gegnerische Angriffe ab und verursacht eine große Menge Benommenheit.\nDiese Fähigkeit eignet sich hervorragend zur Abwehr gegnerischer Angriffe und reduziert den Verbrauch von <color=#FFFFFF>Hilfspunkten</color>, wenn die Figur intensiven Angriffen ausgesetzt ist.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "125100015": {
+                "Title": "Sukzessive Hilfe: Gesang des klaren Wassers",
+                "Description": "Drücke nach einer <color=#FFFFFF>Defensivhilfe</color> <IconMap:Icon_Normal> zum Anwenden:\nSprintet schnell nach vorne, verabreicht dem Boden Stromenergie und zieht sich dann zurück, um eine Explosion auszulösen und verursacht dabei <color=#2EB6FF>Elektro-SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "125100057": {
+                "Title": "Schnelle Hilfe: Wind durch die Kiefern"
+            },
+            "125100058": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1251016, Prop:1001}"
+            },
+            "125100059": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1251016, Prop:1002}"
+            },
+            "125100060": {
+                "Title": "Defensivhilfe: Blühendes Seidenbrokat"
+            },
+            "125100061": {
+                "Description": "Benommenheit-Multiplikator für leichte Defensive",
+                "Param": "{Skill:1251017, Prop:1002}"
+            },
+            "125100062": {
+                "Description": "Benommenheit-Multiplikator für schwere Defensive",
+                "Param": "{Skill:1251018, Prop:1002}"
+            },
+            "125100063": {
+                "Description": "Benommenheit-Multiplikator für Kettendefensive",
+                "Param": "{Skill:1251019, Prop:1002}"
+            },
+            "125100064": {
+                "Title": "Sukzessive Hilfe: Gesang des klaren Wassers"
+            },
+            "125100065": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1251020, Prop:1001}"
+            },
+            "125100066": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1251020, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1251001": {
+            "DamageValue": 4720,
+            "DamageGrowth": 430,
+            "DazeValue": 2360,
+            "DazeGrowth": 110
+        },
+        "1251002": {
+            "DamageValue": 11030,
+            "DamageGrowth": 1010,
+            "DazeValue": 5520,
+            "DazeGrowth": 260
+        },
+        "1251003": {
+            "DamageValue": 12210,
+            "DamageGrowth": 1110,
+            "DazeValue": 8220,
+            "DazeGrowth": 380
+        },
+        "1251004": {
+            "DamageValue": 1760,
+            "DamageGrowth": 160,
+            "DazeValue": 1910,
+            "DazeGrowth": 90
+        },
+        "1251005": {
+            "DamageValue": 10640,
+            "DamageGrowth": 970,
+            "DazeValue": 10630,
+            "DazeGrowth": 490
+        },
+        "1251006": {
+            "DamageValue": 23440,
+            "DamageGrowth": 2140,
+            "DazeValue": 20470,
+            "DazeGrowth": 940
+        },
+        "1251007": {
+            "DamageValue": 8560,
+            "DamageGrowth": 780,
+            "DazeValue": 8560,
+            "DazeGrowth": 390
+        },
+        "1251008": {
+            "DamageValue": 44870,
+            "DamageGrowth": 4080,
+            "DazeValue": 27190,
+            "DazeGrowth": 1240
+        },
+        "1251009": {
+            "DamageValue": 39440,
+            "DamageGrowth": 3590,
+            "DazeValue": 21760,
+            "DazeGrowth": 990
+        },
+        "1251010": {
+            "DamageValue": 6240,
+            "DamageGrowth": 570,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1251011": {
+            "DamageValue": 15070,
+            "DamageGrowth": 1370,
+            "DazeValue": 11110,
+            "DazeGrowth": 510
+        },
+        "1251012": {
+            "DamageValue": 4950,
+            "DamageGrowth": 450,
+            "DazeValue": 2480,
+            "DazeGrowth": 120
+        },
+        "1251013": {
+            "DamageValue": 28400,
+            "DamageGrowth": 2590,
+            "DazeValue": 19040,
+            "DazeGrowth": 870
+        },
+        "1251014": {
+            "DamageValue": 64790,
+            "DamageGrowth": 5890,
+            "DazeValue": 20900,
+            "DazeGrowth": 950
+        },
+        "1251015": {
+            "DamageValue": 167070,
+            "DamageGrowth": 15190,
+            "DazeValue": 109710,
+            "DazeGrowth": 4990
+        },
+        "1251016": {
+            "DamageValue": 13390,
+            "DamageGrowth": 1220,
+            "DazeValue": 13390,
+            "DazeGrowth": 610
+        },
+        "1251017": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 24930,
+            "DazeGrowth": 1140
+        },
+        "1251018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 30430,
+            "DazeGrowth": 1390
+        },
+        "1251019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 12830,
+            "DazeGrowth": 590
+        },
+        "1251020": {
+            "DamageValue": 37640,
+            "DamageGrowth": 3430,
+            "DazeValue": 27900,
+            "DazeGrowth": 1270
+        },
+        "1251021": {
+            "DamageValue": 21100,
+            "DamageGrowth": 1920,
+            "DazeValue": 15550,
+            "DazeGrowth": 710
+        },
+        "1251022": {
+            "DamageValue": 24110,
+            "DamageGrowth": 2200,
+            "DazeValue": 17770,
+            "DazeGrowth": 810
+        }
+    }
+}

@@ -1,0 +1,502 @@
+{
+    "Name": "可琳",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "开放性创伤",
+            "Description": "<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>命中敌人时，可琳对目标造成的伤害提升12%，持续15秒。",
+            "Lore": "「大小姐说，做事情的时候一定要专注，不能被周围影响。」\n「可琳练习了很久，终于可以做到了！」\n「可是…你看到了吗，大小姐…」"
+        },
+        "2": {
+            "Title": "裂解效应",
+            "Description": "<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>命中敌人时，目标的<color=#F0D12B>物理伤害抗性</color>下降0.5%，最多叠加20层，持续5秒，每层效果单独结算持续时间。",
+            "Lore": "「对不起，以骸先生或者以骸女士！」\n「但是可琳需要完成自己的任务…真的很抱歉！」\n少女真诚而愧疚地对着面前的怪物道歉——\n一边挥动着手上的电锯，将面前的敌人们尽数消灭。"
+        },
+        "3": {
+            "Title": "初级女仆",
+            "Description": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[连携技]</color> 技能等级+2",
+            "Lore": "「为、为了成为能独当一面的女仆，可琳会加油努力的！」\n——可琳手持锯子，一边走向以骸一边说道"
+        },
+        "4": {
+            "Title": "战场随侍",
+            "Description": "发动<color=#FFFFFF>[快速支援]</color>、<color=#FFFFFF>[招架支援]</color>或<color=#FFFFFF>[连携技]</color>时，可琳回复7.2点能量，16秒内最多触发一次。",
+            "Lore": "勤恳认真的女仆小姐，对待任何事情都是一心一意的。\n当然，也包括在战场上面对敌人的时候。"
+        },
+        "5": {
+            "Title": "特勤女仆",
+            "Description": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[连携技]</color> 技能等级+2",
+            "Lore": "「唔…对、对不起，可琳笨手笨脚的，没办法把东西切得很均匀…」\n——看着脚下遍布的以骸残块，可琳沮丧地说道"
+        },
+        "6": {
+            "Title": "厚积薄发",
+            "Description": "持续斩击命中敌人时，可琳获得1层充能（最多40层）；在<color=#FFFFFF>[闪避反击]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[快速支援]</color>、<color=#FFFFFF>[支援突击]</color>中，引爆电锯命中敌人时，消耗所有充能，每层充能使本次攻击额外造成可琳3%攻击力的伤害。",
+            "Lore": "可琳知道，自己并不是最厉害的女仆，也不是最聪明的女仆。\n但她希望能成为最努力的女仆。\n过去积累的每一份努力，都有存在的意义。"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "核心被动：专注",
+            "DescriptionByLevel": {
+                "1": "连点或长按后，可琳使用电锯持续斩击敌人时，招式造成的伤害提升<color=#2BAD00>18.7%</color>。",
+                "2": "连点或长按后，可琳使用电锯持续斩击敌人时，招式造成的伤害提升<color=#2BAD00>21.8%</color>。",
+                "3": "连点或长按后，可琳使用电锯持续斩击敌人时，招式造成的伤害提升<color=#2BAD00>25%</color>。",
+                "4": "连点或长按后，可琳使用电锯持续斩击敌人时，招式造成的伤害提升<color=#2BAD00>28.1%</color>。",
+                "5": "连点或长按后，可琳使用电锯持续斩击敌人时，招式造成的伤害提升<color=#2BAD00>31.2%</color>。",
+                "6": "连点或长按后，可琳使用电锯持续斩击敌人时，招式造成的伤害提升<color=#2BAD00>34.3%</color>。",
+                "7": "连点或长按后，可琳使用电锯持续斩击敌人时，招式造成的伤害提升<color=#2BAD00>37.5%</color>。"
+            }
+        },
+        "MathSkill": {
+            "Title": "额外能力：扫除帮手",
+            "Description": "队伍中存在与自身属性或阵营相同的角色时触发：\n可琳攻击命中处于失衡状态下的敌人时，自身造成的伤害提升35%。"
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "106100001": {
+                "Title": "普通攻击：扫除开始",
+                "Description": "点按 <IconMap:Icon_Normal> 发动：\n向前方进行至多五段的斩击，造成<color=#F0D12B>物理伤害</color>；\n在第三、第五段中连点或长按时，可以使用电锯持续斩击敌人。"
+            },
+            "106110001": {
+                "Title": "普通攻击：扫除开始"
+            },
+            "106110002": {
+                "Description": "一段伤害倍率",
+                "Param": "{Skill:1061001, Prop:1001}"
+            },
+            "106110003": {
+                "Description": "二段伤害倍率",
+                "Param": "{Skill:1061002, Prop:1001}"
+            },
+            "106110004": {
+                "Description": "三段伤害倍率",
+                "Param": "{Skill:1061003, Prop:1001}"
+            },
+            "106110005": {
+                "Description": "四段伤害倍率",
+                "Param": "{Skill:1061004, Prop:1001}"
+            },
+            "106110006": {
+                "Description": "五段伤害倍率",
+                "Param": "{Skill:1061006, Prop:1001}"
+            },
+            "106110007": {
+                "Description": "一段失衡倍率",
+                "Param": "{Skill:1061001, Prop:1002}"
+            },
+            "106110008": {
+                "Description": "二段失衡倍率",
+                "Param": "{Skill:1061002, Prop:1002}"
+            },
+            "106110009": {
+                "Description": "三段失衡倍率",
+                "Param": "{Skill:1061003, Prop:1002}"
+            },
+            "106110010": {
+                "Description": "四段失衡倍率",
+                "Param": "{Skill:1061004, Prop:1002}"
+            },
+            "106110011": {
+                "Description": "五段失衡倍率",
+                "Param": "{Skill:1061006, Prop:1002}"
+            }
+        },
+        "1": {
+            "106100002": {
+                "Title": "特殊技：强力清扫",
+                "Description": "点按 <IconMap:Icon_Special> 发动：\n向前方进行持续斩击，随后引爆电锯，造成<color=#F0D12B>物理伤害</color>；\n连点或长按时，可以使用电锯持续斩击敌人；\n招式发动期间抗打断等级提升，受到的伤害降低40%。"
+            },
+            "106100003": {
+                "Title": "强化特殊技：小心裙角",
+                "Description": "能量足够时，点按 <IconMap:Icon_SpecialReady> 发动：\n向前方进行持续强力斩击，随后引爆电锯，造成大量<color=#F0D12B>物理伤害</color>；\n连点或长按时，可以使用电锯持续斩击敌人，并随招式命中目标，逐渐消耗能量；\n回旋斩击期间拥有无敌效果；\n持续斩击期间抗打断等级提升，受到的伤害降低40%。"
+            },
+            "106110012": {
+                "Title": "特殊技：强力清扫"
+            },
+            "106110013": {
+                "Description": "回旋斩击伤害倍率",
+                "Param": "{Skill:1061008, Prop:1001}"
+            },
+            "106110014": {
+                "Description": "持续斩击最大伤害倍率",
+                "Param": "{Skill:1061009, Prop:1001}"
+            },
+            "106110015": {
+                "Description": "爆炸伤害倍率",
+                "Param": "{Skill:1061010, Prop:1001}"
+            },
+            "106110016": {
+                "Description": "回旋斩击失衡倍率",
+                "Param": "{Skill:1061008, Prop:1002}"
+            },
+            "106110017": {
+                "Description": "持续斩击最大失衡倍率",
+                "Param": "{Skill:1061009, Prop:1002}"
+            },
+            "106110018": {
+                "Description": "爆炸失衡倍率",
+                "Param": "{Skill:1061010, Prop:1002}"
+            },
+            "106110019": {
+                "Title": "强化特殊技：小心裙角"
+            },
+            "106110020": {
+                "Description": "回旋斩击伤害倍率",
+                "Param": "{Skill:1061011, Prop:1001}"
+            },
+            "106110021": {
+                "Description": "持续斩击最大伤害倍率",
+                "Param": "{Skill:1061012, Prop:1001}"
+            },
+            "106110022": {
+                "Description": "爆炸伤害倍率",
+                "Param": "{Skill:1061013, Prop:1001}"
+            },
+            "106110023": {
+                "Description": "回旋斩击失衡倍率",
+                "Param": "{Skill:1061011, Prop:1002}"
+            },
+            "106110024": {
+                "Description": "持续斩击最大失衡倍率",
+                "Param": "{Skill:1061012, Prop:1002}"
+            },
+            "106110025": {
+                "Description": "爆炸失衡倍率",
+                "Param": "{Skill:1061013, Prop:1002}"
+            },
+            "106110026": {
+                "Description": "回旋斩击能量消耗",
+                "Param": "20点"
+            },
+            "106110027": {
+                "Description": "持续斩击最大能量消耗",
+                "Param": "40点"
+            },
+            "106110028": {
+                "Description": "引爆能量消耗",
+                "Param": "20点"
+            }
+        },
+        "2": {
+            "106100004": {
+                "Title": "闪避：[离]",
+                "Description": "点按 <IconMap:Icon_Evade> 发动：\n快速的冲刺闪避；\n招式发动期间拥有无敌效果。"
+            },
+            "106100005": {
+                "Title": "冲刺攻击：[断]",
+                "Description": "闪避时，点按 <IconMap:Icon_Normal> 发动：\n向前方发动斩击，造成<color=#F0D12B>物理伤害</color>；\n连点或长按时，可以使用电锯持续斩击敌人。"
+            },
+            "106100006": {
+                "Title": "闪避反击：[舍]",
+                "Description": "触发<color=#FFFFFF>[极限闪避]</color>后，点按 <IconMap:Icon_Normal> 发动：\n对前方敌人发动斩击，随后引爆电锯，造成<color=#F0D12B>物理伤害</color>；\n连点或长按时，可以使用电锯持续斩击敌人；\n招式发动期间拥有无敌效果。"
+            },
+            "106110029": {
+                "Title": "冲刺攻击：[断]"
+            },
+            "106110030": {
+                "Description": "最大伤害倍率",
+                "Param": "{Skill:1061014, Prop:1001}"
+            },
+            "106110031": {
+                "Description": "最大失衡倍率",
+                "Param": "{Skill:1061014, Prop:1002}"
+            },
+            "106110032": {
+                "Title": "闪避反击：[舍]"
+            },
+            "106110033": {
+                "Description": "伤害倍率",
+                "Param": "{{Skill:1061015, Prop:1001} + {Skill:1061016, Prop:1001}}"
+            },
+            "106110034": {
+                "Description": "失衡倍率",
+                "Param": "{{Skill:1061015, Prop:1002} + {Skill:1061016, Prop:1002}}"
+            }
+        },
+        "3": {
+            "106100007": {
+                "Title": "连携技：抱歉…",
+                "Description": "触发<color=#FFFFFF>[连携技]</color>时，选择对应角色发动：\n对前方小范围敌人发动强力斩击，造成大量<color=#F0D12B>物理伤害</color>；\n连点或长按时，可以使用电锯持续斩击敌人；\n招式发动期间拥有无敌效果。"
+            },
+            "106100008": {
+                "Title": "终结技：非、非常抱歉！",
+                "Description": "喧响等级达到<color=#FFFFFF>[极]</color>时，点按 <IconMap:Icon_UltimateReady> 发动：\n对前方小范围敌人发动强力斩击，造成大量<color=#F0D12B>物理伤害</color>；\n连点或长按时，可以使用电锯持续斩击敌人；\n招式发动期间拥有无敌效果。"
+            },
+            "106110035": {
+                "Title": "连携技：抱歉…"
+            },
+            "106110036": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1061017, Prop:1001}"
+            },
+            "106110037": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1061017, Prop:1002}"
+            },
+            "106110038": {
+                "Title": "终结技：非、非常抱歉！"
+            },
+            "106110039": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1061018, Prop:1001}"
+            },
+            "106110040": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1061018, Prop:1002}"
+            }
+        },
+        "6": {
+            "106100010": {
+                "Title": "快速支援：应急措施",
+                "Description": "当前操作中的角色被击飞时，点按 <IconMap:Icon_Switch> 发动：\n对前方敌人发动斩击，随后引爆电锯，造成<color=#F0D12B>物理伤害</color>；\n连点或长按时，可以使用电锯持续斩击敌人；\n招式发动期间拥有无敌效果。"
+            },
+            "106100011": {
+                "Title": "招架支援：请、请让我来！",
+                "Description": "前场角色即将被攻击时，点按 <IconMap:Icon_Switch> 发动：\n招架敌人的攻击，累积大量失衡值；\n具有较为优秀的招架性能，承受高强度攻击时<color=#FFFFFF>[支援点数]</color>的消耗量降低；\n招式发动期间拥有无敌效果。"
+            },
+            "106100012": {
+                "Title": "支援突击：快速清扫",
+                "Description": "发动<color=#FFFFFF>[招架支援]</color>后，点按 <IconMap:Icon_Normal> 发动：\n对前方敌人发动连续斩击，随后引爆电锯，造成<color=#F0D12B>物理伤害</color>；\n连点或长按时，可以使用电锯持续斩击敌人；\n招式发动期间拥有无敌效果。"
+            },
+            "106110041": {
+                "Title": "快速支援：应急措施"
+            },
+            "106110042": {
+                "Description": "伤害倍率",
+                "Param": "{{Skill:1061019, Prop:1001} + {Skill:1061020, Prop:1001}}"
+            },
+            "106110043": {
+                "Description": "失衡倍率",
+                "Param": "{{Skill:1061019, Prop:1002} + {Skill:1061020, Prop:1002}}"
+            },
+            "106110044": {
+                "Title": "招架支援：请、请让我来！"
+            },
+            "106110045": {
+                "Description": "轻招架失衡倍率",
+                "Param": "{Skill:1061021, Prop:1002}"
+            },
+            "106110046": {
+                "Description": "重招架失衡倍率",
+                "Param": "{Skill:1061022, Prop:1002}"
+            },
+            "106110047": {
+                "Description": "连续招架失衡倍率",
+                "Param": "{Skill:1061023, Prop:1002}"
+            },
+            "106110048": {
+                "Title": "支援突击：快速清扫"
+            },
+            "106110049": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1061024, Prop:1001}"
+            },
+            "106110050": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1061024, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1061001": {
+            "DamageValue": 8200,
+            "DamageGrowth": 750,
+            "DazeValue": 4100,
+            "DazeGrowth": 190
+        },
+        "1061002": {
+            "DamageValue": 7660,
+            "DamageGrowth": 700,
+            "DazeValue": 7020,
+            "DazeGrowth": 320
+        },
+        "1061003": {
+            "DamageValue": 17920,
+            "DamageGrowth": 1630,
+            "DazeValue": 12380,
+            "DazeGrowth": 570
+        },
+        "1061004": {
+            "DamageValue": 23340,
+            "DamageGrowth": 2130,
+            "DazeValue": 18640,
+            "DazeGrowth": 850
+        },
+        "1061005": {
+            "DamageValue": 11690,
+            "DamageGrowth": 1070,
+            "DazeValue": 8630,
+            "DazeGrowth": 400
+        },
+        "1061006": {
+            "DamageValue": 42120,
+            "DamageGrowth": 3830,
+            "DazeValue": 34200,
+            "DazeGrowth": 1560
+        },
+        "1061007": {
+            "DamageValue": 12460,
+            "DamageGrowth": 1140,
+            "DazeValue": 9580,
+            "DazeGrowth": 440
+        },
+        "1061008": {
+            "DamageValue": 6670,
+            "DamageGrowth": 610,
+            "DazeValue": 6670,
+            "DazeGrowth": 310
+        },
+        "1061009": {
+            "DamageValue": 3750,
+            "DamageGrowth": 350,
+            "DazeValue": 3750,
+            "DazeGrowth": 180
+        },
+        "1061010": {
+            "DamageValue": 2500,
+            "DamageGrowth": 230,
+            "DazeValue": 2500,
+            "DazeGrowth": 120
+        },
+        "1061011": {
+            "DamageValue": 34510,
+            "DamageGrowth": 3140,
+            "DazeValue": 20640,
+            "DazeGrowth": 940
+        },
+        "1061012": {
+            "DamageValue": 103520,
+            "DamageGrowth": 9420,
+            "DazeValue": 61900,
+            "DazeGrowth": 2820
+        },
+        "1061013": {
+            "DamageValue": 34510,
+            "DamageGrowth": 3140,
+            "DazeValue": 20640,
+            "DazeGrowth": 940
+        },
+        "1061014": {
+            "DamageValue": 9670,
+            "DamageGrowth": 880,
+            "DazeValue": 4840,
+            "DazeGrowth": 220
+        },
+        "1061015": {
+            "DamageValue": 13560,
+            "DamageGrowth": 1240,
+            "DazeValue": 6590,
+            "DazeGrowth": 300
+        },
+        "1061016": {
+            "DamageValue": 13560,
+            "DamageGrowth": 1240,
+            "DazeValue": 6590,
+            "DazeGrowth": 300
+        },
+        "1061017": {
+            "DamageValue": 68730,
+            "DamageGrowth": 6250,
+            "DazeValue": 28830,
+            "DazeGrowth": 1320
+        },
+        "1061018": {
+            "DamageValue": 202880,
+            "DamageGrowth": 18450,
+            "DazeValue": 40680,
+            "DazeGrowth": 1850
+        },
+        "1061019": {
+            "DamageValue": 13170,
+            "DamageGrowth": 1200,
+            "DazeValue": 13170,
+            "DazeGrowth": 600
+        },
+        "1061020": {
+            "DamageValue": 8330,
+            "DamageGrowth": 760,
+            "DazeValue": 8330,
+            "DazeGrowth": 380
+        },
+        "1061021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 24670,
+            "DazeGrowth": 1130
+        },
+        "1061022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 31170,
+            "DazeGrowth": 1420
+        },
+        "1061023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15170,
+            "DazeGrowth": 690
+        },
+        "1061024": {
+            "DamageValue": 54750,
+            "DamageGrowth": 4980,
+            "DazeValue": 48860,
+            "DazeGrowth": 2230
+        },
+        "1061025": {
+            "DamageValue": 23330,
+            "DamageGrowth": 2130,
+            "DazeValue": 5840,
+            "DazeGrowth": 270
+        },
+        "1061026": {
+            "DamageValue": 43000,
+            "DamageGrowth": 3910,
+            "DazeValue": 10750,
+            "DazeGrowth": 490
+        },
+        "1061027": {
+            "DamageValue": 24350,
+            "DamageGrowth": 2220,
+            "DazeValue": 6090,
+            "DazeGrowth": 280
+        },
+        "1061028": {
+            "DamageValue": 36250,
+            "DamageGrowth": 3300,
+            "DazeValue": 10990,
+            "DazeGrowth": 500
+        },
+        "1061029": {
+            "DamageValue": 72500,
+            "DamageGrowth": 6600,
+            "DazeValue": 21970,
+            "DazeGrowth": 1000
+        },
+        "1061030": {
+            "DamageValue": 72500,
+            "DamageGrowth": 6600,
+            "DazeValue": 21970,
+            "DazeGrowth": 1000
+        },
+        "1061031": {
+            "DamageValue": 36250,
+            "DamageGrowth": 3300,
+            "DazeValue": 10990,
+            "DazeGrowth": 500
+        },
+        "1061032": {
+            "DamageValue": 14040,
+            "DamageGrowth": 0,
+            "DazeValue": 10800,
+            "DazeGrowth": 0
+        },
+        "1061033": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

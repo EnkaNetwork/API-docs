@@ -1,0 +1,512 @@
+{
+    "Name": "Caesar",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Spearhead Advance",
+            "Description": "Saat memasuki pertarungan atau beralih menjadi Agen aktif, Caesar akan langsung memberikan <color=#FFFFFF>Radiant Aegis</color> kepada semua anggota tim. Efek ini dapat dipicu sekali setiap 300 detik. Selama <color=#FFFFFF>Radiant Aegis</color> berlangsung, musuh yang berada dalam radius 5m dari Agen yang memiliki Shield akan menerima pengurangan ketahanan untuk semua DMG Atribut sebesar 15%.",
+            "Lore": "\"Big Daddy yang ngajarin aku untuk bikin formasi berbentuk V untuk serang titik paling lemah musuh.\"\n\"Tentu saja, aku yang bakal pimpin formasi V itu!!\""
+        },
+        "2": {
+            "Title": "Legacy of the Far Lands",
+            "Description": "Selama <color=#FFFFFF>Radiant Aegis</color> yang didapatkan setelah melancarkan <color=#FFFFFF>Core Passive: Barrier of Resilience</color> masih aktif, Energy Generation Rate Caesar akan meningkat 10%, dan efek peningkatan ATK pengguna Shield akan meningkat hingga 150% dari nilai awal.",
+            "Lore": "Gaya bertarung Caesar sedikit berbeda dengan orang-orang di New Eridu maupun di Outer Ring, karena dia mewarisi teknik bertarung para pengembara yang paling terampil. \nTahu kapan harus menahan diri dan kapan harus menyerang dengan pasti, itulah yang selalu menjadi cara bertahan hidup para pengembara, dan Caesar merupakan seorang murid yang baik dalam filosofi ini."
+        },
+        "3": {
+            "Title": "Absolute Trust",
+            "Description": "Level <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, dan <color=#FFFFFF>Chain Attack</color> +2.",
+            "Lore": "Setelah Caesar mengakui seseorang, maka dia akan sepenuhnya menerima mereka sebagai bagian dari lingkaran dalamnya. Dia akan memberikan mereka kepercayaan mutlak, dan kewaspadaan terhadap mereka akan hilang begitu saja...\nDan kamulah salah satu dari orang yang dia akui."
+        },
+        "4": {
+            "Title": "Aries the Battering-Ram",
+            "Description": "Saat melancarkan <color=#FFFFFF>Chain Attack</color> atau <color=#FFFFFF>Ultimate</color>, Caesar akan memulihkan 3 poin <color=#FFFFFF>Assist Point</color> tambahan. Saat Energy Caesar tidak melebihi 20 poin, dia dapat mengonsumsi 1 poin <color=#FFFFFF>Assist Point</color> sebagai pengganti untuk melancarkan <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color>. Efek pengganti ini dapat dipicu sekali setiap 5 detik.",
+            "Lore": "Ini adalah salah satu taktik yang dipelajari Caesar di bawah bimbingan para pengembara.\n\"Gimanapun caranya, aku bakal berjuang sampai detik terakhir!\""
+        },
+        "5": {
+            "Title": "Romantic Conquest",
+            "Description": "Level <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, dan <color=#FFFFFF>Chain Attack</color> +2.",
+            "Lore": "Berbeda dengan penampilannya, Caesar sebenarnya adalah seseorang yang romantis.\nDia selalu penasaran dengan kisah-kisah cinta.\nDan jika kamu membahas topik ini dengan mendalam dengannya... kamu mungkin akan melihat sosok Caesar yang tersipu malu."
+        },
+        "6": {
+            "Title": "Overlord's Will",
+            "Description": "<color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> dan <color=#FFFFFF>Assist Follow-Up: Aiding Blade</color> pasti akan memicu CRIT. DMG yang diakibatkan Skill akan meningkat 50% (DMG yang diakibatkan terhadap target utama mendapat peningkatan tambahan sebesar 50%). Saat melancarkan <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> atau <color=#FFFFFF>Assist Follow-Up: Aiding Blade</color>, CRIT Rate Caesar meningkat 30% dan CRIT DMG meningkat 60% selama 15 detik.",
+            "Lore": "\"Aku dari dulu selalu fokus ke apa yang di depan, kirain... asalkan aku cukup kuat, yang lain beres.\"\n\"Tapi jadi pemimpin hebat itu enggak cuma butuh kekuatan.\"\n\"Aku juga harus lindungi rekan-rekan di belakangku, karena mereka adalah alasan aku tetap maju.\""
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Core Passive: Barrier of Resilience",
+            "DescriptionByLevel": {
+                "1": "Saat melancarkan <color=#FFFFFF>EX Special Attack: Parry Counter</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Ultimate</color>, atau melancarkan <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> melalui <color=#FFFFFF>Retaliation</color>, maka Caesar akan memberikan Shield <color=#FFFFFF>Radiant Aegis</color> kepada semua anggota tim senilai <color=#2BAD00>300%</color> dari nilai awal Impact Caesar + <color=#2BAD00>200</color> poin. <color=#FFFFFF>Radiant Aegis</color> berlangsung selama 60 detik dan dikenakan oleh Agen yang dikendalikan. Nilai Shield ini digunakan bersama oleh semua anggota tim. DMG yang diterima dalam satu serangan tidak akan melebihi nilai Shield.\nSaat <color=#FFFFFF>Radiant Aegis</color> sedang aktif, Level Anti-Interrupt Agen yang menggunakannya akan meningkat.\nSaat <color=#FFFFFF>Radiant Aegis</color> sedang aktif, ATK Agen yang menggunakannya akan meningkat <color=#2BAD00>40</color> poin. Setelah efek <color=#FFFFFF>Radiant Aegis</color> berakhir, efek buff ini masih akan tetap berlaku selama 5 detik.",
+                "2": "Saat melancarkan <color=#FFFFFF>EX Special Attack: Parry Counter</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Ultimate</color>, atau melancarkan <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> melalui <color=#FFFFFF>Retaliation</color>, maka Caesar akan memberikan Shield <color=#FFFFFF>Radiant Aegis</color> kepada semua anggota tim senilai <color=#2BAD00>500%</color> dari nilai awal Impact Caesar + <color=#2BAD00>400</color> poin. <color=#FFFFFF>Radiant Aegis</color> berlangsung selama 60 detik dan dikenakan oleh Agen yang dikendalikan. Nilai Shield ini digunakan bersama oleh semua anggota tim. DMG yang diterima dalam satu serangan tidak akan melebihi nilai Shield.\nSaat <color=#FFFFFF>Radiant Aegis</color> sedang aktif, Level Anti-Interrupt Agen yang menggunakannya akan meningkat.\nSaat <color=#FFFFFF>Radiant Aegis</color> sedang aktif, ATK Agen yang menggunakannya akan meningkat <color=#2BAD00>135</color> poin. Setelah efek <color=#FFFFFF>Radiant Aegis</color> berakhir, efek buff ini masih akan tetap berlaku selama 5 detik.",
+                "3": "Saat melancarkan <color=#FFFFFF>EX Special Attack: Parry Counter</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Ultimate</color>, atau melancarkan <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> melalui <color=#FFFFFF>Retaliation</color>, maka Caesar akan memberikan Shield <color=#FFFFFF>Radiant Aegis</color> kepada semua anggota tim senilai <color=#2BAD00>700%</color> dari nilai awal Impact Caesar + <color=#2BAD00>700</color> poin. <color=#FFFFFF>Radiant Aegis</color> berlangsung selama 60 detik dan dikenakan oleh Agen yang dikendalikan. Nilai Shield ini digunakan bersama oleh semua anggota tim. DMG yang diterima dalam satu serangan tidak akan melebihi nilai Shield.\nSaat <color=#FFFFFF>Radiant Aegis</color> sedang aktif, Level Anti-Interrupt Agen yang menggunakannya akan meningkat.\nSaat <color=#FFFFFF>Radiant Aegis</color> sedang aktif, ATK Agen yang menggunakannya akan meningkat <color=#2BAD00>240</color> poin. Setelah efek <color=#FFFFFF>Radiant Aegis</color> berakhir, efek buff ini masih akan tetap berlaku selama 5 detik.",
+                "4": "Saat melancarkan <color=#FFFFFF>EX Special Attack: Parry Counter</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Ultimate</color>, atau melancarkan <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> melalui <color=#FFFFFF>Retaliation</color>, maka Caesar akan memberikan Shield <color=#FFFFFF>Radiant Aegis</color> kepada semua anggota tim senilai <color=#2BAD00>900%</color> dari nilai awal Impact Caesar + <color=#2BAD00>900</color> poin. <color=#FFFFFF>Radiant Aegis</color> berlangsung selama 60 detik dan dikenakan oleh Agen yang dikendalikan. Nilai Shield ini digunakan bersama oleh semua anggota tim. DMG yang diterima dalam satu serangan tidak akan melebihi nilai Shield.\nSaat <color=#FFFFFF>Radiant Aegis</color> sedang aktif, Level Anti-Interrupt Agen yang menggunakannya akan meningkat.\nSaat <color=#FFFFFF>Radiant Aegis</color> sedang aktif, ATK Agen yang menggunakannya akan meningkat <color=#2BAD00>400</color> poin. Setelah efek <color=#FFFFFF>Radiant Aegis</color> berakhir, efek buff ini masih akan tetap berlaku selama 5 detik.",
+                "5": "Saat melancarkan <color=#FFFFFF>EX Special Attack: Parry Counter</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Ultimate</color>, atau melancarkan <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> melalui <color=#FFFFFF>Retaliation</color>, maka Caesar akan memberikan Shield <color=#FFFFFF>Radiant Aegis</color> kepada semua anggota tim senilai <color=#2BAD00>1100%</color> dari nilai awal Impact Caesar + <color=#2BAD00>1100</color> poin. <color=#FFFFFF>Radiant Aegis</color> berlangsung selama 60 detik dan dikenakan oleh Agen yang dikendalikan. Nilai Shield ini digunakan bersama oleh semua anggota tim. DMG yang diterima dalam satu serangan tidak akan melebihi nilai Shield.\nSaat <color=#FFFFFF>Radiant Aegis</color> sedang aktif, Level Anti-Interrupt Agen yang menggunakannya akan meningkat.\nSaat <color=#FFFFFF>Radiant Aegis</color> sedang aktif, ATK Agen yang menggunakannya akan meningkat <color=#2BAD00>650</color> poin. Setelah efek <color=#FFFFFF>Radiant Aegis</color> berakhir, efek buff ini masih akan tetap berlaku selama 5 detik.",
+                "6": "Saat melancarkan <color=#FFFFFF>EX Special Attack: Parry Counter</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Ultimate</color>, atau melancarkan <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> melalui <color=#FFFFFF>Retaliation</color>, maka Caesar akan memberikan Shield <color=#FFFFFF>Radiant Aegis</color> kepada semua anggota tim senilai <color=#2BAD00>1300%</color> dari nilai awal Impact Caesar + <color=#2BAD00>1300</color> poin. <color=#FFFFFF>Radiant Aegis</color> berlangsung selama 60 detik dan dikenakan oleh Agen yang dikendalikan. Nilai Shield ini digunakan bersama oleh semua anggota tim. DMG yang diterima dalam satu serangan tidak akan melebihi nilai Shield.\nSaat <color=#FFFFFF>Radiant Aegis</color> sedang aktif, Level Anti-Interrupt Agen yang menggunakannya akan meningkat.\nSaat <color=#FFFFFF>Radiant Aegis</color> sedang aktif, ATK Agen yang menggunakannya akan meningkat <color=#2BAD00>900</color> poin. Setelah efek <color=#FFFFFF>Radiant Aegis</color> berakhir, efek buff ini masih akan tetap berlaku selama 5 detik.",
+                "7": "Saat melancarkan <color=#FFFFFF>EX Special Attack: Parry Counter</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Ultimate</color>, atau melancarkan <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> melalui <color=#FFFFFF>Retaliation</color>, maka Caesar akan memberikan Shield <color=#FFFFFF>Radiant Aegis</color> kepada semua anggota tim senilai <color=#2BAD00>1400%</color> dari nilai awal Impact Caesar + <color=#2BAD00>1400</color> poin. <color=#FFFFFF>Radiant Aegis</color> berlangsung selama 60 detik dan dikenakan oleh Agen yang dikendalikan. Nilai Shield ini digunakan bersama oleh semua anggota tim. DMG yang diterima dalam satu serangan tidak akan melebihi nilai Shield.\nSaat <color=#FFFFFF>Radiant Aegis</color> sedang aktif, Level Anti-Interrupt Agen yang menggunakannya akan meningkat.\nSaat <color=#FFFFFF>Radiant Aegis</color> sedang aktif, ATK Agen yang menggunakannya akan meningkat <color=#2BAD00>1000</color> poin. Setelah efek <color=#FFFFFF>Radiant Aegis</color> berakhir, efek buff ini masih akan tetap berlaku selama 5 detik."
+            }
+        },
+        "MathSkill": {
+            "Title": "Additional Ability: Battle Spirit",
+            "Description": "Berlaku jika terdapat Agen lain yang dapat melancarkan <color=#FFFFFF>Defensive Assist</color> atau Agen yang berasal dari faksi yang sama di dalam tim:\nSaat Caesar memicu <color=#FFFFFF>Perfect Block</color>, <color=#FFFFFF>Retaliation</color>, <color=#FFFFFF>Defensive Assist</color>, atau melancarkan <color=#FFFFFF>Basic Attack: Dead End</color>, dia akan memberikan efek debuff terhadap musuh yang berada dalam radius 7m darinya, meningkatkan DMG yang diakibatkan semua Agen dalam tim terhadap musuh tersebut sebesar 25% selama 30 detik."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "107100001": {
+                "Title": "Basic Attack: Rampaging Slash",
+                "Description": "Tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMelancarkan hingga enam serangan Slash ke depan dan mengakibatkan <color=#F0D12B>Physical DMG</color>."
+            },
+            "107100002": {
+                "Title": "Basic Attack: Dead End",
+                "Description": "Saat <color=#FFFFFF>Assist Point</color> cukup, tahan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMengonsumsi 1 poin <color=#FFFFFF>Assist Point</color> untuk menyerang musuh di sekitar dengan melemparkan perisai di tangannya dan mengakibatkan <color=#F0D12B>Physical DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "107110001": {
+                "Title": "Basic Attack: Rampaging Slash"
+            },
+            "107110002": {
+                "Description": "Kelipatan DMG: Tahap 1",
+                "Param": "{Skill:1071001, Prop:1001}"
+            },
+            "107110003": {
+                "Description": "Kelipatan DMG: Tahap 2",
+                "Param": "{Skill:1071002, Prop:1001}"
+            },
+            "107110004": {
+                "Description": "Kelipatan DMG: Tahap 3",
+                "Param": "{Skill:1071003, Prop:1001}"
+            },
+            "107110005": {
+                "Description": "Kelipatan DMG: Tahap 3 (Alternatif)",
+                "Param": "{Skill:1071008, Prop:1001}"
+            },
+            "107110006": {
+                "Description": "Kelipatan DMG: Tahap 4",
+                "Param": "{Skill:1071004, Prop:1001}"
+            },
+            "107110007": {
+                "Description": "Kelipatan DMG: Tahap 5",
+                "Param": "{Skill:1071005, Prop:1001}"
+            },
+            "107110008": {
+                "Description": "Kelipatan DMG: Tahap 6",
+                "Param": "{Skill:1071006, Prop:1001}"
+            },
+            "107110009": {
+                "Description": "Kelipatan Daze: Tahap 1",
+                "Param": "{Skill:1071001, Prop:1002}"
+            },
+            "107110010": {
+                "Description": "Kelipatan Daze: Tahap 2",
+                "Param": "{Skill:1071002, Prop:1002}"
+            },
+            "107110011": {
+                "Description": "Kelipatan Daze: Tahap 3",
+                "Param": "{Skill:1071003, Prop:1002}"
+            },
+            "107110012": {
+                "Description": "Kelipatan Daze: Tahap 3 (Alternatif)",
+                "Param": "{Skill:1071008, Prop:1002}"
+            },
+            "107110013": {
+                "Description": "Kelipatan Daze: Tahap 4",
+                "Param": "{Skill:1071004, Prop:1002}"
+            },
+            "107110014": {
+                "Description": "Kelipatan Daze: Tahap 5",
+                "Param": "{Skill:1071005, Prop:1002}"
+            },
+            "107110015": {
+                "Description": "Kelipatan Daze: Tahap 6",
+                "Param": "{Skill:1071006, Prop:1002}"
+            },
+            "107110016": {
+                "Title": "Basic Attack: Dead End"
+            },
+            "107110017": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1071007, Prop:1001}"
+            },
+            "107110018": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1071007, Prop:1002}"
+            },
+            "107110019": {
+                "Description": "Konsumsi Assist Point",
+                "Param": "1 poin"
+            }
+        },
+        "1": {
+            "107100003": {
+                "Title": "Special Attack: Shockwave Shield Bash",
+                "Description": "Tekan <IconMap:Icon_Special> untuk melancarkan Skill ini.\nMelancarkan Strike ke depan menggunakan perisai dan mengakibatkan <color=#F0D12B>Physical DMG</color>.\n\nJika Caesar menerima serangan dari musuh sesaat setelah Skill ini dilancarkan, <color=#FFFFFF>Perfect Block</color> akan terpicu untuk menangkis DMG dari serangan tersebut, lalu melanjutkan serangannya dengan <color=#FFFFFF>Special Attack: Roaring Thrust</color> secara otomatis.\n\nSetelah melancarkan Skill ini, Caesar akan memasuki posisi bertahan dan akan mengurangi DMG yang diterima sebesar 40%. Saat menerima serangan dari musuh, Caesar akan menangkis dengan perisainya dan terhempas sedikit ke belakang. Tekan <IconMap:Icon_Special> atau <IconMap:Icon_SpecialReady> setelah terhempas ke belakang untuk memicu <color=#FFFFFF>Retaliation</color>, yang akan melancarkan <color=#FFFFFF>Special Attack: Roaring Thrust</color> atau <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color>.\nSaat memicu <color=#FFFFFF>Retaliation</color>, Karakter akan menjadi kebal selama melancarkan Skill."
+            },
+            "107100004": {
+                "Title": "Special Attack: Roaring Thrust",
+                "Description": "Setelah melancarkan <color=#FFFFFF>Special Attack: Shockwave Shield Bash</color>, tekan <IconMap:Icon_Special> untuk melancarkan Skill ini.\nMelancarkan serangan menusuk ke depan dan mengakibatkan <color=#F0D12B>Physical DMG</color>.\nJika tidak memicu <color=#FFFFFF>Perfect Block</color> atau <color=#FFFFFF>Retaliation</color>, Level Anti-Interrupt akan meningkat selama melancarkan Skill ini.\nJika memicu <color=#FFFFFF>Perfect Block</color> atau <color=#FFFFFF>Retaliation</color>, Karakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "107100005": {
+                "Title": "EX Special Attack: Parry Counter",
+                "Description": "Saat Energy Caesar sudah cukup, tekan <IconMap:Icon_SpecialReady> untuk melancarkan Skill ini.\nMelancarkan Strike ke depan menggunakan perisainya, dilanjutkan dengan serangan menusuk yang kuat, mengakibatkan <color=#F0D12B>Physical DMG</color> dalam jumlah besar.\n\nJika Caesar menerima serangan dari musuh sesaat setelah Skill ini dilancarkan atau memicu <color=#FFFFFF>Interrupt</color> melalui serangan Strike menggunakan perisai, maka dia akan memicu <color=#FFFFFF>Perfect Block</color> yang akan menangkis DMG dari serangan tersebut dan melancarkan serangan balik menggunakan perisai. Setelah memicu <color=#FFFFFF>Perfect Block</color>, tekan <IconMap:Icon_SpecialReady> untuk melancarkan <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> tanpa mengonsumsi Energy.\n\nSetelah melancarkan Skill ini, Caesar akan memasuki posisi bertahan dan akan mengurangi DMG yang diterima sebesar 40%. Saat menerima serangan dari musuh, Caesar akan menangkis dengan perisainya dan terhempas sedikit ke belakang. Tekan <IconMap:Icon_Special> atau <IconMap:Icon_SpecialReady> setelah terhempas ke belakang untuk memicu <color=#FFFFFF>Retaliation</color>, yang akan melancarkan <color=#FFFFFF>Special Attack: Roaring Thrust</color> atau <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color>.\nKarakter akan menjadi kebal selama melancarkan Skill."
+            },
+            "107100006": {
+                "Title": "EX Special Attack: Overpowered Shield Bash",
+                "Description": "Saat Energy Caesar sudah cukup, tekan <IconMap:Icon_SpecialReady> setelah melancarkan <color=#FFFFFF>EX Special Attack: Parry Counter</color> untuk melancarkan Skill ini.\nMelancarkan Strike ke depan menggunakan perisai dan mengakibatkan <color=#F0D12B>Physical DMG</color> dalam jumlah besar.\n\nJika Caesar menerima serangan dari musuh sesaat setelah Skill ini dilancarkan atau memicu <color=#FFFFFF>Interrupt</color> melalui serangan Strike menggunakan perisai, maka dia akan memicu <color=#FFFFFF>Perfect Block</color> yang akan menangkis DMG dari serangan tersebut dan memulihkan kembali Energy yang dikonsumsi untuk melancarkan Skill ini.\n\nJika dilancarkan melalui <color=#FFFFFF>Perfect Block</color> atau <color=#FFFFFF>Retaliation</color>, maka dia tidak dapat memicu <color=#FFFFFF>Perfect Block</color> lagi.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "107100007": {
+                "Title": "Stance Switch",
+                "Description": "Saat Caesar memicu <color=#FFFFFF>Perfect Block</color>, <color=#FFFFFF>Retaliation</color>, atau <color=#FFFFFF>Defensive Assist</color>, maka Impact yang dimilikinya meningkat <color=#2BAD00>{CAL:8+AvatarSkillLevel(1)*1,1,2}%</color> selama 3 detik."
+            },
+            "107110020": {
+                "Title": "Stance Switch"
+            },
+            "107110021": {
+                "Description": "Meningkatkan Impact",
+                "Param": "{CAL:8+AvatarSkillLevel(1)*1,1,2}%"
+            },
+            "107110022": {
+                "Title": "Special Attack: Shockwave Shield Bash"
+            },
+            "107110023": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1071009, Prop:1001}"
+            },
+            "107110024": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1071009, Prop:1002}"
+            },
+            "107110025": {
+                "Description": "Kelipatan Daze - Perfect Block",
+                "Param": "{Skill:1071014, Prop:1002}"
+            },
+            "107110026": {
+                "Title": "Special Attack: Roaring Thrust"
+            },
+            "107110027": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1071010, Prop:1001}"
+            },
+            "107110028": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1071010, Prop:1002}"
+            },
+            "107110029": {
+                "Title": "EX Special Attack: Parry Counter"
+            },
+            "107110030": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1071011, Prop:1001}"
+            },
+            "107110031": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1071011, Prop:1002}"
+            },
+            "107110032": {
+                "Description": "Kelipatan Daze - Perfect Block",
+                "Param": "{Skill:1071015, Prop:1002}"
+            },
+            "107110033": {
+                "Description": "Kelipatan DMG - Serangan Balik Perfect Block",
+                "Param": "{Skill:1071012, Prop:1001}"
+            },
+            "107110034": {
+                "Description": "Kelipatan Daze - Serangan Balik Perfect Block",
+                "Param": "{Skill:1071012, Prop:1002}"
+            },
+            "107110035": {
+                "Description": "Konsumsi Energy",
+                "Param": "40 poin"
+            },
+            "107110036": {
+                "Title": "EX Special Attack: Overpowered Shield Bash"
+            },
+            "107110037": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1071013, Prop:1001}"
+            },
+            "107110038": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1071013, Prop:1002}"
+            },
+            "107110039": {
+                "Description": "Kelipatan Daze - Perfect Block",
+                "Param": "{Skill:1071015, Prop:1002}"
+            },
+            "107110040": {
+                "Description": "Konsumsi Energy - Tekan",
+                "Param": "20 poin"
+            }
+        },
+        "2": {
+            "107100008": {
+                "Title": "Dodge: Adrift",
+                "Description": "Tekan <IconMap:Icon_Evade> untuk melakukan Dodge.\nMelakukan Dodge dengan cepat.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "107100009": {
+                "Title": "Dash Attack: Hog Rush",
+                "Description": "Tekan <IconMap:Icon_Normal> saat melakukan Dodge untuk melancarkan Skill ini.\nMelancarkan Strike ke depan menggunakan perisai dan mengakibatkan <color=#F0D12B>Physical DMG</color>.\nSelama Skill berlangsung, DMG yang diterima Caesar akan berkurang 40%. Saat menerima serangan dari musuh, Caesar akan menangkis dengan perisainya dan terhempas sedikit ke belakang. Tekan <IconMap:Icon_Special> atau <IconMap:Icon_SpecialReady> setelah terhempas ke belakang untuk memicu <color=#FFFFFF>Retaliation</color>, yang akan melancarkan <color=#FFFFFF>Special Attack: Roaring Thrust</color> atau <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color>."
+            },
+            "107100010": {
+                "Title": "Dodge Counter: Eye For an Eye",
+                "Description": "Tekan <IconMap:Icon_Normal> setelah melakukan <color=#FFFFFF>Perfect Dodge</color> untuk melancarkan Skill ini.\nMelancarkan serangan menusuk terhadap musuh di depan dan mengakibatkan <color=#F0D12B>Physical DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "107110041": {
+                "Title": "Dash Attack: Hog Rush"
+            },
+            "107110042": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1071016, Prop:1001}"
+            },
+            "107110043": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1071016, Prop:1002}"
+            },
+            "107110044": {
+                "Title": "Dodge Counter: Eye For an Eye"
+            },
+            "107110045": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1071017, Prop:1001}"
+            },
+            "107110046": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1071017, Prop:1002}"
+            }
+        },
+        "3": {
+            "107100011": {
+                "Title": "Chain Attack: Road Rage Slam",
+                "Description": "Saat <color=#FFFFFF>Chain Attack</color> terpicu, pilih Caesar untuk melancarkan Skill ini.\nMelancarkan Strike ke bawah yang kuat terhadap musuh di depan dan mengakibatkan <color=#F0D12B>Physical DMG</color> dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "107100012": {
+                "Title": "Ultimate: Savage Smash",
+                "Description": "Saat Decibel Rating mencapai <color=#FFFFFF>Maximum</color>, tekan <IconMap:Icon_UltimateReady> untuk melancarkan Skill ini.\nMelancarkan serangan berputar yang kuat terhadap musuh di depan dengan melemparkan perisai di tangannya, lalu dilanjutkan dengan Strike ke bawah, mengakibatkan <color=#F0D12B>Physical DMG</color> dalam jumlah besar.\nSaat mengenai musuh yang memiliki Shield, Daze yang diakibatkan Skill ini meningkat <color=#2BAD00>{CAL:40+AvatarSkillLevel(3)*5,1,2}%</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "107110047": {
+                "Title": "Chain Attack: Road Rage Slam"
+            },
+            "107110048": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1071018, Prop:1001}"
+            },
+            "107110049": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1071018, Prop:1002}"
+            },
+            "107110050": {
+                "Title": "Ultimate: Savage Smash"
+            },
+            "107110051": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1071019, Prop:1001}"
+            },
+            "107110052": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1071019, Prop:1002}"
+            },
+            "107110053": {
+                "Description": "Meningkatkan Daze",
+                "Param": "{CAL:40+AvatarSkillLevel(3)*5,1,2}%"
+            }
+        },
+        "6": {
+            "107100014": {
+                "Title": "Quick Assist: Lane Change",
+                "Description": "Saat Agen yang Dikendalikan terhempas, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nMelancarkan serangan menusuk terhadap musuh di depan dan mengakibatkan <color=#F0D12B>Physical DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "107100015": {
+                "Title": "Defensive Assist: Aegis Shield",
+                "Description": "Tepat sebelum Agen aktif diserang, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nMenangkis serangan musuh dan menghasilkan Daze dalam jumlah besar.\nSkill ini memiliki kemampuan menangkis yang luar biasa. Saat menerima serangan kuat, <color=#FFFFFF>Assist Point</color> yang dikonsumsi akan berkurang.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "107100016": {
+                "Title": "Assist Follow-Up: Aiding Blade",
+                "Description": "Setelah melancarkan <color=#FFFFFF>Defensive Assist</color>, tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMelancarkan serangan berputar yang kuat terhadap musuh di depan dengan melemparkan perisai di tangannya, lalu melanjutkannya dengan serangan Slash yang mengakibatkan <color=#F0D12B>Physical DMG</color>.\nSetelah melancarkan Skill ini, tekan <IconMap:Icon_Special> atau <IconMap:Icon_SpecialReady> untuk memicu <color=#FFFFFF>Retaliation</color>, yang akan melancarkan <color=#FFFFFF>Special Attack: Roaring Thrust</color> atau <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "107110054": {
+                "Title": "Quick Assist: Lane Change"
+            },
+            "107110055": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1071020, Prop:1001}"
+            },
+            "107110056": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1071020, Prop:1002}"
+            },
+            "107110057": {
+                "Title": "Defensive Assist: Aegis Shield"
+            },
+            "107110058": {
+                "Description": "Kelipatan Daze - Light Defensive",
+                "Param": "{Skill:1071021, Prop:1002}"
+            },
+            "107110059": {
+                "Description": "Kelipatan Daze - Heavy Defensive",
+                "Param": "{Skill:1071022, Prop:1002}"
+            },
+            "107110060": {
+                "Description": "Kelipatan Daze - Chain Defensive",
+                "Param": "{Skill:1071023, Prop:1002}"
+            },
+            "107110061": {
+                "Title": "Assist Follow-Up: Aiding Blade"
+            },
+            "107110062": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1071024, Prop:1001}"
+            },
+            "107110063": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1071024, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1071001": {
+            "DamageValue": 4720,
+            "DamageGrowth": 430,
+            "DazeValue": 2130,
+            "DazeGrowth": 100
+        },
+        "1071002": {
+            "DamageValue": 4090,
+            "DamageGrowth": 380,
+            "DazeValue": 3380,
+            "DazeGrowth": 160
+        },
+        "1071003": {
+            "DamageValue": 14830,
+            "DamageGrowth": 1350,
+            "DazeValue": 11000,
+            "DazeGrowth": 500
+        },
+        "1071004": {
+            "DamageValue": 7880,
+            "DamageGrowth": 720,
+            "DazeValue": 6750,
+            "DazeGrowth": 310
+        },
+        "1071005": {
+            "DamageValue": 19860,
+            "DamageGrowth": 1810,
+            "DazeValue": 13750,
+            "DazeGrowth": 630
+        },
+        "1071006": {
+            "DamageValue": 39990,
+            "DamageGrowth": 3640,
+            "DazeValue": 26260,
+            "DazeGrowth": 1200
+        },
+        "1071007": {
+            "DamageValue": 12630,
+            "DamageGrowth": 1150,
+            "DazeValue": 9320,
+            "DazeGrowth": 430
+        },
+        "1071008": {
+            "DamageValue": 11840,
+            "DamageGrowth": 1080,
+            "DazeValue": 7360,
+            "DazeGrowth": 340
+        },
+        "1071009": {
+            "DamageValue": 5330,
+            "DamageGrowth": 490,
+            "DazeValue": 2400,
+            "DazeGrowth": 110
+        },
+        "1071010": {
+            "DamageValue": 5880,
+            "DamageGrowth": 540,
+            "DazeValue": 2650,
+            "DazeGrowth": 130
+        },
+        "1071011": {
+            "DamageValue": 38720,
+            "DamageGrowth": 3520,
+            "DazeValue": 25260,
+            "DazeGrowth": 1150
+        },
+        "1071012": {
+            "DamageValue": 38720,
+            "DamageGrowth": 3520,
+            "DazeValue": 25260,
+            "DazeGrowth": 1150
+        },
+        "1071013": {
+            "DamageValue": 42570,
+            "DamageGrowth": 3870,
+            "DazeValue": 28840,
+            "DazeGrowth": 1320
+        },
+        "1071014": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 7700,
+            "DazeGrowth": 350
+        },
+        "1071015": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15400,
+            "DazeGrowth": 700
+        },
+        "1071016": {
+            "DamageValue": 6230,
+            "DamageGrowth": 570,
+            "DazeValue": 3120,
+            "DazeGrowth": 150
+        },
+        "1071017": {
+            "DamageValue": 19350,
+            "DamageGrowth": 1760,
+            "DazeValue": 17420,
+            "DazeGrowth": 800
+        },
+        "1071018": {
+            "DamageValue": 63880,
+            "DamageGrowth": 5810,
+            "DazeValue": 19990,
+            "DazeGrowth": 910
+        },
+        "1071019": {
+            "DamageValue": 201230,
+            "DamageGrowth": 18300,
+            "DazeValue": 27870,
+            "DazeGrowth": 1270
+        },
+        "1071020": {
+            "DamageValue": 6420,
+            "DamageGrowth": 590,
+            "DazeValue": 6420,
+            "DazeGrowth": 300
+        },
+        "1071021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1071022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34530,
+            "DazeGrowth": 1570
+        },
+        "1071023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16930,
+            "DazeGrowth": 770
+        },
+        "1071024": {
+            "DamageValue": 40720,
+            "DamageGrowth": 3710,
+            "DazeValue": 35630,
+            "DazeGrowth": 1620
+        }
+    }
+}

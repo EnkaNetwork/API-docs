@@ -1,0 +1,419 @@
+{
+    "Name": "Billy",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Entrada espectacular",
+            "Description": "Al golpear a un enemigo con un <color=#FFFFFF>ataque rápido</color> o un <color=#FFFFFF>contraataque</color>, Billy recupera 2.7 ptos. adicionales de energía. Puede activarse una vez cada 5 s.",
+            "Lore": "«¡Para ser maleantes, se portan muy bien! ¡Son como los agentes secundarios que acompañan al protagonista y que saltan para detener la bala!»"
+        },
+        "2": {
+            "Title": "Pistolero errante",
+            "Description": "Al ejecutar un <color=#FFFFFF>contraataque</color>, aumenta el daño infligido en un 25 %.\nLos disparos al rodar durante un <color=#FFFFFF>ataque normal</color> se consideran evasiones. Durante su ejecución, el agente se vuelve invulnerable y puede activar <color=#FFFFFF>evasiones perfectas</color>. Al activar una <color=#FFFFFF>evasión perfecta</color> por medio de un disparo al rodar, provoca de inmediato un <color=#FFFFFF>contraataque</color>.",
+            "Lore": "«Los Caballeros Estelares nunca huyen del peligro. ¡Son lo que yo llamo \"pistoleros errantes\"!»\n—Usuario «MónicaDeMisSueños», en un foro de los Caballeros Estelares"
+        },
+        "3": {
+            "Title": "Enseñanzas del Caballero Estelar",
+            "Description": "Nivel de <color=#FFFFFF>ataque normal</color>, <color=#FFFFFF>evasión</color>, <color=#FFFFFF>técnica de apoyo</color>, <color=#FFFFFF>técnica especial</color> y <color=#FFFFFF>técnica en cadena</color> +2",
+            "Lore": "No reniegues de tu entrenamiento, ¡y no dejes de mejorar! Ese es el espíritu de los Caballeros Estelares, y Billy lo sigue al pie de la letra."
+        },
+        "4": {
+            "Title": "Bala justiciera estelar",
+            "Description": "Al golpear al enemigo con una <color=#FFFFFF>técnica especial EX</color>, aumenta la Probabilidad de Crítico en función de la distancia entre el agente y el objetivo. Cuanto más cerca esté Billy del objetivo, mayor es el efecto. Puede aumentar hasta en un 32 %.",
+            "Lore": "Estas balas explosivas creadas por el propio Billy son extremadamente letales de cerca...\n... Aunque la intención original de Billy era simplemente inspirar asombro."
+        },
+        "5": {
+            "Title": "Tecnología perdida",
+            "Description": "Nivel de <color=#FFFFFF>ataque normal</color>, <color=#FFFFFF>evasión</color>, <color=#FFFFFF>técnica de apoyo</color>, <color=#FFFFFF>técnica especial</color> y <color=#FFFFFF>técnica en cadena</color> +2",
+            "Lore": "Unos componentes de precisión desconocidos y un diseño estructural único le conceden a Billy un rendimiento muy superior al de sus compañeros... Aunque también una factura elevada por mantenimiento."
+        },
+        "6": {
+            "Title": "Héroe estelar",
+            "Description": "Al golpear al enemigo 10 veces o al activar una <color=#FFFFFF>evasión perfecta</color>, aumenta el daño infligido de Billy en un 6 %. Pueden acumularse hasta 5 cargas. Este efecto se reinicia al recibir un golpe o ser arrojado por los aires.",
+            "Lore": "«Uff, ¡me siento estupendo! A un lado, Anby, ¡es mi hora de brillar!»\n«Oye, Anby, ¿puedes poner el tema de los Caballeros Estelares?»\n—«10 frases estrictamente prohibidas en las Liebres Astutas», por Anby Demara"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Técnica pasiva: Pulso firme",
+            "DescriptionByLevel": {
+                "1": "Cuando Billy se pone en cuclillas durante un <color=#FFFFFF>ataque normal</color>, aumenta el daño infligido en un <color=#2BAD00>25 %</color>. El efecto termina si Billy se mueve, pasa a estar inactivo o es arrojado por los aires.",
+                "2": "Cuando Billy se pone en cuclillas durante un <color=#FFFFFF>ataque normal</color>, aumenta el daño infligido en un <color=#2BAD00>29.1 %</color>. El efecto termina si Billy se mueve, pasa a estar inactivo o es arrojado por los aires.",
+                "3": "Cuando Billy se pone en cuclillas durante un <color=#FFFFFF>ataque normal</color>, aumenta el daño infligido en un <color=#2BAD00>33.3 %</color>. El efecto termina si Billy se mueve, pasa a estar inactivo o es arrojado por los aires.",
+                "4": "Cuando Billy se pone en cuclillas durante un <color=#FFFFFF>ataque normal</color>, aumenta el daño infligido en un <color=#2BAD00>37.5 %</color>. El efecto termina si Billy se mueve, pasa a estar inactivo o es arrojado por los aires.",
+                "5": "Cuando Billy se pone en cuclillas durante un <color=#FFFFFF>ataque normal</color>, aumenta el daño infligido en un <color=#2BAD00>41.6 %</color>. El efecto termina si Billy se mueve, pasa a estar inactivo o es arrojado por los aires.",
+                "6": "Cuando Billy se pone en cuclillas durante un <color=#FFFFFF>ataque normal</color>, aumenta el daño infligido en un <color=#2BAD00>45.8 %</color>. El efecto termina si Billy se mueve, pasa a estar inactivo o es arrojado por los aires.",
+                "7": "Cuando Billy se pone en cuclillas durante un <color=#FFFFFF>ataque normal</color>, aumenta el daño infligido en un <color=#2BAD00>50 %</color>. El efecto termina si Billy se mueve, pasa a estar inactivo o es arrojado por los aires."
+            }
+        },
+        "MathSkill": {
+            "Title": "Técnica adicional: Equipo estelar",
+            "Description": "Si en el equipo hay miembros del mismo Atributo o la misma afiliación que él:\nCuando Billy ejecuta una <color=#FFFFFF>técnica en cadena</color>, aumenta el daño infligido por su siguiente <color=#FFFFFF>técnica definitiva</color> en un 50 %. Pueden acumularse hasta 2 cargas. Este efecto se reinicia al ejecutar una <color=#FFFFFF>técnica definitiva</color>."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "108100001": {
+                "Title": "Ataque normal: Fuego abierto",
+                "Description": "{LAYOUT_MOBILE#Pulsa}{LAYOUT_CONTROLLER#Presiona}{LAYOUT_KEYBOARD#Pulsa}{LAYOUT_CONSOLECONTROLLER#Presiona}{LAYOUT_FALLBACK#Presiona} <IconMap:Icon_Normal> para atacar.\nEjecuta un ataque perforante que inflige <color=#F0D12B>daño físico</color> a los enemigos frente a él.\nAl {LAYOUT_MOBILE#pulsar}{LAYOUT_CONTROLLER#presionar}{LAYOUT_KEYBOARD#pulsar}{LAYOUT_CONSOLECONTROLLER#presionar}{LAYOUT_FALLBACK#presionar} repetidas veces o mantener {LAYOUT_MOBILE#pulsado}{LAYOUT_CONTROLLER#presionado}{LAYOUT_KEYBOARD#pulsado}{LAYOUT_CONSOLECONTROLLER#presionado}{LAYOUT_FALLBACK#presionado}, se pone en cuclillas, extendiendo la duración del ataque.\nAl {LAYOUT_MOBILE#deslizar}{LAYOUT_CONTROLLER#mover}{LAYOUT_KEYBOARD#deslizar}{LAYOUT_CONSOLECONTROLLER#mover}{LAYOUT_FALLBACK#mover} el joystick estando en cuclillas, ejecuta un disparo mientras rueda y ajusta su posición, infligiendo <color=#F0D12B>daño físico</color>.\nAl encontrarse en cuclillas y dejar de {LAYOUT_MOBILE#pulsar}{LAYOUT_CONTROLLER#presionar}{LAYOUT_KEYBOARD#pulsar}{LAYOUT_CONSOLECONTROLLER#presionar}{LAYOUT_FALLBACK#presionar}, ejecuta un disparo final que inflige <color=#F0D12B>daño físico</color>."
+            },
+            "108110001": {
+                "Title": "Ataque normal: Fuego abierto"
+            },
+            "108110002": {
+                "Description": "Multiplicador de daño de disparo de pie",
+                "Param": "{Skill:1081002, Prop:1001}"
+            },
+            "108110003": {
+                "Description": "Multiplicador de daño de bala de pie",
+                "Param": "{Skill:1081003, Prop:1001}"
+            },
+            "108110004": {
+                "Description": "Multiplicador de daño de disparo en cuclillas",
+                "Param": "{Skill:1081004, Prop:1001}"
+            },
+            "108110005": {
+                "Description": "Multiplicador de daño de bala en cuclillas",
+                "Param": "{Skill:1081007, Prop:1001}"
+            },
+            "108110006": {
+                "Description": "Multiplicador de daño de disparo al rodar",
+                "Param": "{Skill:1081004, Prop:1001}"
+            },
+            "108110007": {
+                "Description": "Multiplicador de daño de disparo final",
+                "Param": "{Skill:1081008, Prop:1001}"
+            },
+            "108110008": {
+                "Description": "Multiplicador de Aturdimiento de disparo de pie",
+                "Param": "{Skill:1081002, Prop:1002}"
+            },
+            "108110009": {
+                "Description": "Multiplicador de Aturdimiento de bala de pie",
+                "Param": "{Skill:1081003, Prop:1002}"
+            },
+            "108110010": {
+                "Description": "Multiplicador de Aturdimiento de disparo en cuclillas",
+                "Param": "{Skill:1081004, Prop:1002}"
+            },
+            "108110011": {
+                "Description": "Multiplicador de Aturdimiento de bala en cuclillas",
+                "Param": "{Skill:1081007, Prop:1002}"
+            },
+            "108110012": {
+                "Description": "Multiplicador de Aturdimiento de disparo al rodar",
+                "Param": "{Skill:1081004, Prop:1002}"
+            },
+            "108110013": {
+                "Description": "Multiplicador de Aturdimiento de disparo final",
+                "Param": "{Skill:1081008, Prop:1002}"
+            }
+        },
+        "1": {
+            "108100002": {
+                "Title": "Técnica especial: Quédate donde estás",
+                "Description": "{LAYOUT_MOBILE#Pulsa}{LAYOUT_CONTROLLER#Presiona}{LAYOUT_KEYBOARD#Pulsa} <IconMap:Icon_Special> para usarla.\nLanza 3 ráfagas perforadoras en línea recta que infligen <color=#F0D12B>daño físico</color>.\nDurante su ejecución, aumenta el nivel de resistencia a interrupción."
+            },
+            "108100003": {
+                "Title": "Técnica especial EX: ¡A ahuecar el ala!",
+                "Description": "Al contar con energía suficiente, {LAYOUT_MOBILE#pulsa}{LAYOUT_CONTROLLER#presiona}{LAYOUT_KEYBOARD#pulsa}{LAYOUT_CONSOLECONTROLLER#presiona}{LAYOUT_FALLBACK#presiona} <IconMap:Icon_SpecialReady> para usarla.\nLanza una poderosa ráfaga perforadora en línea recta que inflige una gran cantidad de <color=#F0D12B>daño físico</color>.\nDurante su ejecución, el agente se vuelve invulnerable."
+            },
+            "108110014": {
+                "Title": "Técnica especial: Quédate donde estás"
+            },
+            "108110015": {
+                "Description": "Multiplicador de daño de 1.er golpe",
+                "Param": "{Skill:1081010, Prop:1001}"
+            },
+            "108110016": {
+                "Description": "Multiplicador de daño de 2.º golpe",
+                "Param": "{Skill:1081011, Prop:1001}"
+            },
+            "108110017": {
+                "Description": "Multiplicador de daño de 3.er golpe",
+                "Param": "{Skill:1081012, Prop:1001}"
+            },
+            "108110018": {
+                "Description": "Multiplicador de Aturdimiento de 1.er golpe",
+                "Param": "{Skill:1081010, Prop:1002}"
+            },
+            "108110019": {
+                "Description": "Multiplicador de Aturdimiento de 2.º golpe",
+                "Param": "{Skill:1081011, Prop:1002}"
+            },
+            "108110020": {
+                "Description": "Multiplicador de Aturdimiento de 3.er golpe",
+                "Param": "{Skill:1081012, Prop:1002}"
+            },
+            "108110021": {
+                "Title": "Técnica especial EX: ¡A ahuecar el ala!"
+            },
+            "108110022": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1081013, Prop:1001}"
+            },
+            "108110023": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1081013, Prop:1002}"
+            },
+            "108110024": {
+                "Description": "Consumo de energía",
+                "Param": "60 ptos."
+            }
+        },
+        "2": {
+            "108100004": {
+                "Title": "Evasión: ¡Peligro! ¡Peligro!",
+                "Description": "{LAYOUT_MOBILE#Pulsa}{LAYOUT_CONTROLLER#Presiona}{LAYOUT_KEYBOARD#Pulsa}{LAYOUT_FALLBACK#Presiona} <IconMap:Icon_Evade> para usarla.\nEjecuta un rápido esprint evasivo.\nDurante su ejecución, el agente se vuelve invulnerable."
+            },
+            "108100005": {
+                "Title": "Ataque rápido: Juicio estelar",
+                "Description": "Mueve el {LAYOUT_CONSOLECONTROLLER#joystick}{LAYOUT_FALLBACK#joystick} y pulsa <IconMap:Icon_Normal> después de una evasión:\nLanza una ráfaga perforante que inflige <color=#F0D12B>daño físico</color> a los enemigos cercanos en un área grande.\nPulsa <IconMap:Icon_Normal> sin mover el {LAYOUT_CONSOLECONTROLLER#joystick}{LAYOUT_FALLBACK#joystick} después de una evasión:\nLanza una ráfaga perforadora en línea recta que inflige <color=#F0D12B>daño físico</color>."
+            },
+            "108100006": {
+                "Title": "Contraataque: Combate justo",
+                "Description": "{LAYOUT_MOBILE#Pulsa}{LAYOUT_CONTROLLER#Presiona}{LAYOUT_KEYBOARD#Pulsa}{LAYOUT_CONSOLECONTROLLER#Presiona}{LAYOUT_FALLBACK#Presiona} <IconMap:Icon_Normal> después de una <color=#FFFFFF>evasión perfecta</color> para usarlo.\nLanza una ráfaga perforadora que inflige <color=#F0D12B>daño físico</color> a los enemigos frente a él.\nDurante su ejecución, el agente se vuelve invulnerable."
+            },
+            "108110025": {
+                "Title": "Ataque rápido: Juicio estelar"
+            },
+            "108110026": {
+                "Description": "Multiplicador de daño de disparo en 360°",
+                "Param": "{Skill:1081016, Prop:1001}"
+            },
+            "108110027": {
+                "Description": "Multiplicador de daño de disparo en línea recta",
+                "Param": "{Skill:1081014, Prop:1001}"
+            },
+            "108110028": {
+                "Description": "Multiplicador de Aturdimiento de disparo en 360°",
+                "Param": "{Skill:1081016, Prop:1002}"
+            },
+            "108110029": {
+                "Description": "Multiplicador de Aturdimiento de disparo en línea recta",
+                "Param": "{Skill:1081014, Prop:1002}"
+            },
+            "108110030": {
+                "Title": "Contraataque: Combate justo"
+            },
+            "108110031": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1081017, Prop:1001}"
+            },
+            "108110032": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1081017, Prop:1002}"
+            }
+        },
+        "3": {
+            "108100007": {
+                "Title": "Técnica en cadena: Espejismo estelar",
+                "Description": "Elige el avatar de agente al ejecutar una <color=#FFFFFF>técnica en cadena</color> para usarla.\nLanza una ráfaga perforante que inflige una gran cantidad de <color=#F0D12B>daño físico</color> a los enemigos cercanos en un AdE grande.\nDurante su ejecución, el agente se vuelve invulnerable."
+            },
+            "108100008": {
+                "Title": "Técnica definitiva: Destello estelar",
+                "Description": "Cuando los dB llegan a su nivel <color=#FFFFFF>máximo</color>, {LAYOUT_MOBILE#pulsa}{LAYOUT_CONTROLLER#presiona}{LAYOUT_KEYBOARD#pulsa}{LAYOUT_CONSOLECONTROLLER#presiona}{LAYOUT_FALLBACK#presiona} <IconMap:Icon_UltimateReady> para usarla.\nEjecuta un poderoso ataque perforador que inflige una gran cantidad de <color=#F0D12B>daño físico</color> a los enemigos cercanos en un AdE grande.\nDurante su ejecución, el agente se vuelve invulnerable."
+            },
+            "108110033": {
+                "Title": "Técnica en cadena: Espejismo estelar"
+            },
+            "108110034": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1081018, Prop:1001}"
+            },
+            "108110035": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1081018, Prop:1002}"
+            },
+            "108110036": {
+                "Title": "Técnica definitiva: Destello estelar"
+            },
+            "108110037": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1081019, Prop:1001}"
+            },
+            "108110038": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1081019, Prop:1002}"
+            }
+        },
+        "6": {
+            "108100010": {
+                "Title": "Apoyo rápido: ¡El poder estelar de la amistad!",
+                "Description": "Pulsa <IconMap:Icon_Switch> para ejecutarlo cuando el agente activo sea lanzado por los aires.\nEjecuta un ataque perforante contra los enemigos frente a él, infligiendo <color=#F0D12B>daño físico</color>.\nDurante su ejecución, el agente se vuelve invulnerable."
+            },
+            "108100011": {
+                "Title": "Apoyo evasivo: Giro dinámico",
+                "Description": "{LAYOUT_MOBILE#Pulsa}{LAYOUT_CONTROLLER#Presiona}{LAYOUT_KEYBOARD#pulsa}{LAYOUT_CONSOLECONTROLLER#Presiona}{LAYOUT_FALLBACK#Presiona} <IconMap:Icon_Switch> para usarlo cuando el agente activo esté a punto de recibir un golpe.\nEvade el ataque enemigo y activa la <color=#FFFFFF>visión extrema</color>.\nDurante su ejecución, el agente se vuelve invulnerable."
+            },
+            "108100012": {
+                "Title": "Ataque sucesivo: Disparo fatídico",
+                "Description": "{LAYOUT_MOBILE#Pulsa}{LAYOUT_CONTROLLER#Presiona}{LAYOUT_KEYBOARD#Pulsa}{LAYOUT_CONSOLECONTROLLER#Presiona}{LAYOUT_FALLBACK#Presiona} <IconMap:Icon_Normal> después de un <color=#FFFFFF>apoyo evasivo</color> para usarlo.\nEjecuta un ataque perforante que inflige <color=#F0D12B>daño físico</color> a los enemigos frente a él en un AdE grande.\nDurante su ejecución, el agente se vuelve invulnerable."
+            },
+            "108110039": {
+                "Title": "Apoyo rápido: ¡El poder estelar de la amistad!"
+            },
+            "108110040": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1081020, Prop:1001}"
+            },
+            "108110041": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1081020, Prop:1002}"
+            },
+            "108110042": {
+                "Title": "Ataque sucesivo: Disparo fatídico"
+            },
+            "108110043": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1081021, Prop:1001}"
+            },
+            "108110044": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1081021, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1081001": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1081002": {
+            "DamageValue": 6800,
+            "DamageGrowth": 620,
+            "DazeValue": 5440,
+            "DazeGrowth": 250
+        },
+        "1081003": {
+            "DamageValue": 760,
+            "DamageGrowth": 70,
+            "DazeValue": 610,
+            "DazeGrowth": 30
+        },
+        "1081004": {
+            "DamageValue": 6180,
+            "DamageGrowth": 570,
+            "DazeValue": 5470,
+            "DazeGrowth": 250
+        },
+        "1081005": {
+            "DamageValue": 6180,
+            "DamageGrowth": 570,
+            "DazeValue": 5470,
+            "DazeGrowth": 250
+        },
+        "1081006": {
+            "DamageValue": 6180,
+            "DamageGrowth": 570,
+            "DazeValue": 5470,
+            "DazeGrowth": 250
+        },
+        "1081007": {
+            "DamageValue": 1270,
+            "DamageGrowth": 120,
+            "DazeValue": 890,
+            "DazeGrowth": 50
+        },
+        "1081008": {
+            "DamageValue": 4950,
+            "DamageGrowth": 450,
+            "DazeValue": 5520,
+            "DazeGrowth": 260
+        },
+        "1081009": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1081010": {
+            "DamageValue": 2420,
+            "DamageGrowth": 220,
+            "DazeValue": 2420,
+            "DazeGrowth": 110
+        },
+        "1081011": {
+            "DamageValue": 5170,
+            "DamageGrowth": 470,
+            "DazeValue": 5170,
+            "DazeGrowth": 240
+        },
+        "1081012": {
+            "DamageValue": 5010,
+            "DamageGrowth": 460,
+            "DazeValue": 5010,
+            "DazeGrowth": 230
+        },
+        "1081013": {
+            "DamageValue": 54380,
+            "DamageGrowth": 4950,
+            "DazeValue": 43950,
+            "DazeGrowth": 2000
+        },
+        "1081014": {
+            "DamageValue": 3900,
+            "DamageGrowth": 360,
+            "DazeValue": 1950,
+            "DazeGrowth": 90
+        },
+        "1081015": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1081016": {
+            "DamageValue": 6300,
+            "DamageGrowth": 580,
+            "DazeValue": 6300,
+            "DazeGrowth": 290
+        },
+        "1081017": {
+            "DamageValue": 22140,
+            "DamageGrowth": 2020,
+            "DazeValue": 19340,
+            "DazeGrowth": 880
+        },
+        "1081018": {
+            "DamageValue": 73520,
+            "DamageGrowth": 6690,
+            "DazeValue": 19660,
+            "DazeGrowth": 900
+        },
+        "1081019": {
+            "DamageValue": 159770,
+            "DamageGrowth": 14530,
+            "DazeValue": 19060,
+            "DazeGrowth": 870
+        },
+        "1081020": {
+            "DamageValue": 9340,
+            "DamageGrowth": 850,
+            "DazeValue": 9340,
+            "DazeGrowth": 430
+        },
+        "1081021": {
+            "DamageValue": 38880,
+            "DamageGrowth": 3540,
+            "DazeValue": 34120,
+            "DazeGrowth": 1560
+        },
+        "1081023": {
+            "DamageValue": 15070,
+            "DamageGrowth": 1370,
+            "DazeValue": 4260,
+            "DazeGrowth": 200
+        },
+        "1081025": {
+            "DamageValue": 108750,
+            "DamageGrowth": 9890,
+            "DazeValue": 46330,
+            "DazeGrowth": 2110
+        }
+    }
+}

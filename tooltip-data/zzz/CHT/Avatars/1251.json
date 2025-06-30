@@ -1,0 +1,450 @@
+{
+    "Name": "青衣",
+    "ElementTypes": [
+        "Elec"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "介電擊穿",
+            "Description": "青衣進入戰場時，立即使<color=#FFFFFF>[閃絡電壓]</color>回復至上限，並使其後繼累積效率提升30%。發動<color=#FFFFFF>[普通攻擊：醉花月雲轉]</color>時，若<color=#FFFFFF>[閃絡電壓]</color>已累積至上限，則使本次招式命中的敵人防禦力降低15%，且自身對該目標的暴擊率提升20%，持續15秒。",
+            "Lore": "「雖然不會有生命危險，不過還請不要拒捕……」\n電流的方向和強度都經過精密的計算，保證每位嫌疑犯都能獲得安全的電擊體驗。"
+        },
+        "2": {
+            "Title": "四兩撥千斤",
+            "Description": "<color=#FFFFFF>[核心被動：千秋歲]</color>中每層<color=#FFFFFF>[羈服]</color>提供的失衡易傷倍率提升效果提升至原本的135%；青衣攻擊命中敵人時，若對其施加的<color=#FFFFFF>[羈服]</color>已疊加至層數上限，則自身對其造成的失衡值提升15%。",
+            "Lore": "舊文明典籍中記載的一種搏擊技術，起初似乎是一種拳術而非棍術的技巧。\n「不必拘泥，其實手臂也是一種三節棍，嗯。」"
+        },
+        "3": {
+            "Title": "多喝熱水",
+            "Description": "<color=#FFFFFF>[普通攻擊]</color>、<color=#FFFFFF>[閃避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[連攜技]</color>技能等級+2",
+            "Lore": "「年輕人要注意養生，還是多喝熱水吧。」\n每次青衣捧著保溫杯啜飲的時候，都給人以非常溫暖的感受。但接過她遞上的熱水時一定要小心——\n「就算是100度的開水前輩也能不動聲色地喝下……」某位中過招的治安官留下了這樣的紀錄。"
+        },
+        "4": {
+            "Title": "穩態電弧屏障",
+            "Description": "進入或退出<color=#FFFFFF>[閃絡]</color>狀態時，獲得等同於青衣10%生命值上限的護盾。護盾效果更新時，如果上一次獲得的護盾仍然存在，則為青衣回復5點能量，能量回復效果10秒內最多觸發一次。",
+            "Lore": "懷斯塔學會逆向研究舊文明的鈺偶而開發出的電弧屏障，是集防禦、攻擊、電能轉換於一體的技術。\n「俗話說：水能載舟，亦能覆舟。物理學俗話又說：電流如水流。並聯得到：電流進可攻退可守。真是相當好的結合。」"
+        },
+        "5": {
+            "Title": "童心未泯",
+            "Description": "<color=#FFFFFF>[普通攻擊]</color>、<color=#FFFFFF>[閃避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[連攜技]</color>技能等級+2",
+            "Lore": "「善，年輕人就要勇於嘗試新的事物，加油！」\n雖然有時候會覺得青衣的鼓勵裡帶著幾分摸魚、幾分捉弄。但如果真的不幸捅了婁子，只要信賴她就可以了。\n畢竟是活了幾百上千年的老傢伙了，什麼都能擺平。"
+        },
+        "6": {
+            "Title": "奇經八脈",
+            "Description": "<color=#FFFFFF>[普通攻擊：醉花月雲轉]</color>的打斷等級大幅提升，招式的暴擊傷害額外提升100%。青衣<color=#FFFFFF>[普通攻擊：醉花月雲轉]</color>命中敵人時，目標的全屬性傷害抗性降低20%，持續15秒。",
+            "Lore": "舊文明典籍中記載的對人體循環系統的一種學說，據說完整掌握這一理論後，可以在搏擊中瞬間讓對手失去行動能力。\n「下次試試讓人發癢的穴位吧，找誰來試驗呢？店長？還是朱鳶？」"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "核心被動：千秋歲",
+            "DescriptionByLevel": {
+                "1": "青衣在<color=#FFFFFF>[普通攻擊：醉花月雲轉]</color>中發動終結一擊命中敵人時，會對敵人施加5層<color=#FFFFFF>[羈服]</color>，最多疊加20層，每層<color=#FFFFFF>[羈服]</color>能夠使目標的失衡易傷倍率提升<color=#2BAD00>2%</color>；在<color=#FFFFFF>[普通攻擊：醉花月雲轉]</color>中每發動一次突進攻擊，終結一擊將額外施加1層<color=#FFFFFF>[羈服]</color>，在發動終結一擊時，若觸發<color=#FFFFFF>[極限閃避]</color>，可以直接施加{CAL:5+5,1,2}層<color=#FFFFFF>[羈服]</color>；對普通或菁英敵人施加[羈服]時，施加的層數翻倍；目標從失衡狀態恢復時，對應<color=#FFFFFF>[羈服]</color>層數重置。",
+                "2": "青衣在<color=#FFFFFF>[普通攻擊：醉花月雲轉]</color>中發動終結一擊命中敵人時，會對敵人施加5層<color=#FFFFFF>[羈服]</color>，最多疊加20層，每層<color=#FFFFFF>[羈服]</color>能夠使目標的失衡易傷倍率提升<color=#2BAD00>2.4%</color>；在<color=#FFFFFF>[普通攻擊：醉花月雲轉]</color>中每發動一次突進攻擊，終結一擊將額外施加1層<color=#FFFFFF>[羈服]</color>，在發動終結一擊時，若觸發<color=#FFFFFF>[極限閃避]</color>，可以直接施加{CAL:5+5,1,2}層<color=#FFFFFF>[羈服]</color>；對普通或菁英敵人施加[羈服]時，施加的層數翻倍；目標從失衡狀態恢復時，對應<color=#FFFFFF>[羈服]</color>層數重置。",
+                "3": "青衣在<color=#FFFFFF>[普通攻擊：醉花月雲轉]</color>中發動終結一擊命中敵人時，會對敵人施加5層<color=#FFFFFF>[羈服]</color>，最多疊加20層，每層<color=#FFFFFF>[羈服]</color>能夠使目標的失衡易傷倍率提升<color=#2BAD00>2.7%</color>；在<color=#FFFFFF>[普通攻擊：醉花月雲轉]</color>中每發動一次突進攻擊，終結一擊將額外施加1層<color=#FFFFFF>[羈服]</color>，在發動終結一擊時，若觸發<color=#FFFFFF>[極限閃避]</color>，可以直接施加{CAL:5+5,1,2}層<color=#FFFFFF>[羈服]</color>；對普通或菁英敵人施加[羈服]時，施加的層數翻倍；目標從失衡狀態恢復時，對應<color=#FFFFFF>[羈服]</color>層數重置。",
+                "4": "青衣在<color=#FFFFFF>[普通攻擊：醉花月雲轉]</color>中發動終結一擊命中敵人時，會對敵人施加5層<color=#FFFFFF>[羈服]</color>，最多疊加20層，每層<color=#FFFFFF>[羈服]</color>能夠使目標的失衡易傷倍率提升<color=#2BAD00>3%</color>；在<color=#FFFFFF>[普通攻擊：醉花月雲轉]</color>中每發動一次突進攻擊，終結一擊將額外施加1層<color=#FFFFFF>[羈服]</color>，在發動終結一擊時，若觸發<color=#FFFFFF>[極限閃避]</color>，可以直接施加{CAL:5+5,1,2}層<color=#FFFFFF>[羈服]</color>；對普通或菁英敵人施加[羈服]時，施加的層數翻倍；目標從失衡狀態恢復時，對應<color=#FFFFFF>[羈服]</color>層數重置。",
+                "5": "青衣在<color=#FFFFFF>[普通攻擊：醉花月雲轉]</color>中發動終結一擊命中敵人時，會對敵人施加5層<color=#FFFFFF>[羈服]</color>，最多疊加20層，每層<color=#FFFFFF>[羈服]</color>能夠使目標的失衡易傷倍率提升<color=#2BAD00>3.4%</color>；在<color=#FFFFFF>[普通攻擊：醉花月雲轉]</color>中每發動一次突進攻擊，終結一擊將額外施加1層<color=#FFFFFF>[羈服]</color>，在發動終結一擊時，若觸發<color=#FFFFFF>[極限閃避]</color>，可以直接施加{CAL:5+5,1,2}層<color=#FFFFFF>[羈服]</color>；對普通或菁英敵人施加[羈服]時，施加的層數翻倍；目標從失衡狀態恢復時，對應<color=#FFFFFF>[羈服]</color>層數重置。",
+                "6": "青衣在<color=#FFFFFF>[普通攻擊：醉花月雲轉]</color>中發動終結一擊命中敵人時，會對敵人施加5層<color=#FFFFFF>[羈服]</color>，最多疊加20層，每層<color=#FFFFFF>[羈服]</color>能夠使目標的失衡易傷倍率提升<color=#2BAD00>3.7%</color>；在<color=#FFFFFF>[普通攻擊：醉花月雲轉]</color>中每發動一次突進攻擊，終結一擊將額外施加1層<color=#FFFFFF>[羈服]</color>，在發動終結一擊時，若觸發<color=#FFFFFF>[極限閃避]</color>，可以直接施加{CAL:5+5,1,2}層<color=#FFFFFF>[羈服]</color>；對普通或菁英敵人施加[羈服]時，施加的層數翻倍；目標從失衡狀態恢復時，對應<color=#FFFFFF>[羈服]</color>層數重置。",
+                "7": "青衣在<color=#FFFFFF>[普通攻擊：醉花月雲轉]</color>中發動終結一擊命中敵人時，會對敵人施加5層<color=#FFFFFF>[羈服]</color>，最多疊加20層，每層<color=#FFFFFF>[羈服]</color>能夠使目標的失衡易傷倍率提升<color=#2BAD00>4%</color>；在<color=#FFFFFF>[普通攻擊：醉花月雲轉]</color>中每發動一次突進攻擊，終結一擊將額外施加1層<color=#FFFFFF>[羈服]</color>，在發動終結一擊時，若觸發<color=#FFFFFF>[極限閃避]</color>，可以直接施加{CAL:5+5,1,2}層<color=#FFFFFF>[羈服]</color>；對普通或菁英敵人施加[羈服]時，施加的層數翻倍；目標從失衡狀態恢復時，對應<color=#FFFFFF>[羈服]</color>層數重置。"
+            }
+        },
+        "MathSkill": {
+            "Title": "額外能力：陽關三疊",
+            "Description": "隊伍中包含<color=#FFFFFF>[強攻]</color>角色或與自身陣營相同的角色時觸發：\n<color=#FFFFFF>[普通攻擊]</color>造成的失衡值提升20%。此外，若青衣的衝擊力高於120點，則每超過1點衝擊力便使自身的攻擊力提升6點，最多藉此使自身的攻擊力提升600點。"
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "125100001": {
+                "Title": "普通攻擊：一煞",
+                "Description": "點按 <IconMap:Icon_Normal> 發動：\n向前方進行至多四段的打擊，造成<color=#F0D12B>物理傷害</color>和<color=#2EB6FF>電屬性傷害</color>；\n第三段攻擊期間，連續點按 <IconMap:Icon_Normal> 可以維持連擊，持續打擊敵人，在此期間發動<color=#FFFFFF>[閃避]</color>，不會打斷<color=#FFFFFF>[普通攻擊]</color>的連擊段數；\n第三段攻擊期間，停止點按 <IconMap:Icon_Normal> 將會中斷連擊，自動銜接第四段攻擊，維持連擊超過一定時間後，第四段攻擊將會得到強化；\n第三、第四段攻擊期間抗打斷等級提升，受到的傷害降低40%。"
+            },
+            "125100002": {
+                "Title": "普通攻擊：醉花雲",
+                "Description": "長按 <IconMap:Icon_Normal> 發動：\n向前方發動一次突進攻擊，造成<color=#2EB6FF>電屬性傷害</color>。\n招式發動期間抗打斷等級提升。"
+            },
+            "125100003": {
+                "Title": "閃絡",
+                "Description": "青衣發動招式造成<color=#2EB6FF>電屬性傷害</color>時，會累積<color=#FFFFFF>[閃絡電壓]</color>，當<color=#FFFFFF>[閃絡電壓]</color>累積至75%時，青衣將進入<color=#FFFFFF>[閃絡]</color>狀態。發動<color=#FFFFFF>[普通攻擊：醉花月雲轉]</color>時，青衣會消耗所有<color=#FFFFFF>[閃絡電壓]</color>並退出<color=#FFFFFF>[閃絡]</color>狀態，所消耗的<color=#FFFFFF>[閃絡電壓]</color>中超過75%的部分，每1%能夠使本次招式造成的傷害/失衡值額外提升1%/0.5%。<color=#FFFFFF>[普通攻擊：醉花月雲轉]</color>本身不會累積<color=#FFFFFF>[閃絡電壓]</color>。"
+            },
+            "125100004": {
+                "Title": "普通攻擊：醉花月雲轉",
+                "Description": "<color=#FFFFFF>[閃絡]</color>狀態下，長按 <IconMap:Icon_Normal> 發動：\n向前方連續發動五次突進攻擊，隨後發動終結一擊，造成大量<color=#2EB6FF>電屬性傷害</color>，招式發動期間鬆開 <IconMap:Icon_Normal> ，可以提前發動終結一擊；\n在角色即將受到攻擊時發動終結一擊，可以觸發<color=#FFFFFF>[極限閃避]</color>；\n突進攻擊發動期間抗打斷等級提升，受到的傷害降低40%，終結一擊發動期間具有無敵效果。"
+            },
+            "125100016": {
+                "Title": "普通攻擊：一煞"
+            },
+            "125100017": {
+                "Description": "一段傷害倍率",
+                "Param": "{Skill:1251001, Prop:1001}"
+            },
+            "125100018": {
+                "Description": "一段傷害倍率（派生）",
+                "Param": "{Skill:1251002, Prop:1001}"
+            },
+            "125100019": {
+                "Description": "二段傷害倍率",
+                "Param": "{Skill:1251003, Prop:1001}"
+            },
+            "125100020": {
+                "Description": "三段傷害倍率",
+                "Param": "{Skill:1251004, Prop:1001}"
+            },
+            "125100021": {
+                "Description": "四段傷害倍率",
+                "Param": "{Skill:1251005, Prop:1001}"
+            },
+            "125100022": {
+                "Description": "四段傷害倍率（強化）",
+                "Param": "{Skill:1251006, Prop:1001}"
+            },
+            "125100023": {
+                "Description": "一段失衡倍率",
+                "Param": "{Skill:1251001, Prop:1002}"
+            },
+            "125100024": {
+                "Description": "一段失衡倍率（派生）",
+                "Param": "{Skill:1251002, Prop:1002}"
+            },
+            "125100025": {
+                "Description": "二段失衡倍率",
+                "Param": "{Skill:1251003, Prop:1002}"
+            },
+            "125100026": {
+                "Description": "三段失衡倍率",
+                "Param": "{Skill:1251004, Prop:1002}"
+            },
+            "125100027": {
+                "Description": "四段失衡倍率",
+                "Param": "{Skill:1251005, Prop:1002}"
+            },
+            "125100028": {
+                "Description": "四段失衡倍率（強化）",
+                "Param": "{Skill:1251006, Prop:1002}"
+            },
+            "125100029": {
+                "Title": "普通攻擊：醉花雲"
+            },
+            "125100030": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1251007, Prop:1001}"
+            },
+            "125100031": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1251007, Prop:1002}"
+            },
+            "125100032": {
+                "Title": "普通攻擊：醉花月雲轉"
+            },
+            "125100033": {
+                "Description": "突進攻擊傷害倍率",
+                "Param": "{Skill:1251008, Prop:1001}"
+            },
+            "125100034": {
+                "Description": "終結一擊傷害倍率",
+                "Param": "{Skill:1251009, Prop:1001}"
+            },
+            "125100035": {
+                "Description": "突進攻擊失衡倍率",
+                "Param": "{Skill:1251008, Prop:1002}"
+            },
+            "125100036": {
+                "Description": "終結一擊失衡倍率",
+                "Param": "{Skill:1251009, Prop:1002}"
+            }
+        },
+        "1": {
+            "125100005": {
+                "Title": "特殊技：晝錦堂",
+                "Description": "點按 <IconMap:Icon_Special> 發動：\n向前方快速上挑，隨後發動下砸攻擊，造成<color=#2EB6FF>電屬性傷害</color>。\n招式發動期間抗打斷等級提升。"
+            },
+            "125100006": {
+                "Title": "強化特殊技：月上海棠",
+                "Description": "能量足夠時，點按 <IconMap:Icon_SpecialReady> 發動：\n向前方快速上挑後騰空躍起，轉身連打後發動強力的下砸攻擊，造成大量<color=#2EB6FF>電屬性傷害</color>，長按 <IconMap:Icon_SpecialReady> 時，可以額外消耗能量，提升轉身連打的攻擊次數。\n招式發動期間擁有無敵效果。\n招式發動後，可直接銜接第三段<color=#FFFFFF>[普通攻擊]</color>。"
+            },
+            "125100037": {
+                "Title": "特殊技：晝錦堂"
+            },
+            "125100038": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1251010, Prop:1001}"
+            },
+            "125100039": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1251010, Prop:1002}"
+            },
+            "125100040": {
+                "Title": "強化特殊技：月上海棠"
+            },
+            "125100041": {
+                "Description": "傷害倍率",
+                "Param": "{{Skill:1251011, Prop:1001} + {Skill:1251021, Prop:1001} + {Skill:1251022, Prop:1001}}"
+            },
+            "125100042": {
+                "Description": "失衡倍率",
+                "Param": "{{Skill:1251011, Prop:1002} + {Skill:1251021, Prop:1002} + {Skill:1251022, Prop:1002}}"
+            },
+            "125100043": {
+                "Description": "能量消耗",
+                "Param": "60點"
+            },
+            "125100044": {
+                "Description": "額外能量消耗",
+                "Param": "20點"
+            }
+        },
+        "2": {
+            "125100007": {
+                "Title": "閃避：雁過聲",
+                "Description": "點按 <IconMap:Icon_Evade> 發動：\n快速地衝刺閃避。\n招式發動期間擁有無敵效果。"
+            },
+            "125100008": {
+                "Title": "衝刺攻擊：入破",
+                "Description": "閃避時，點按 <IconMap:Icon_Normal> 發動：\n向前突進後發動上挑攻擊，造成<color=#F0D12B>物理傷害</color>。"
+            },
+            "125100009": {
+                "Title": "閃避反擊：意不盡",
+                "Description": "觸發<color=#FFFFFF>[極限閃避]</color>後，點按 <IconMap:Icon_Normal> 發動：\n騰空躍起後發動下落攻擊，造成<color=#2EB6FF>電屬性傷害</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "125100045": {
+                "Title": "衝刺攻擊：入破"
+            },
+            "125100046": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1251012, Prop:1001}"
+            },
+            "125100047": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1251012, Prop:1002}"
+            },
+            "125100048": {
+                "Title": "閃避反擊：意不盡"
+            },
+            "125100049": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1251013, Prop:1001}"
+            },
+            "125100050": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1251013, Prop:1002}"
+            }
+        },
+        "3": {
+            "125100010": {
+                "Title": "連攜技：太平令",
+                "Description": "觸發<color=#FFFFFF>[連攜技]</color>時，選擇對應角色發動：\n對前方大範圍區域發動強力連續打擊，造成大量<color=#2EB6FF>電屬性傷害</color>。\n攻擊命中敵人時，目標每擁有一層<color=#FFFFFF>[核心被動：千秋歲]</color>中的<color=#FFFFFF>[羈服]</color>，招式對其造成的傷害提升3%。\n招式發動期間擁有無敵效果。"
+            },
+            "125100011": {
+                "Title": "終結技：八聲甘州",
+                "Description": "喧響等級達到<color=#FFFFFF>[極]</color>時，點按 <IconMap:Icon_UltimateReady> 發動：\n對前方大範圍區域發動強力連續打擊，隨後發動終結一擊，造成大量<color=#2EB6FF>電屬性傷害</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "125100051": {
+                "Title": "連攜技：太平令"
+            },
+            "125100052": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1251014, Prop:1001}"
+            },
+            "125100053": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1251014, Prop:1002}"
+            },
+            "125100054": {
+                "Title": "終結技：八聲甘州"
+            },
+            "125100055": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1251015, Prop:1001}"
+            },
+            "125100056": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1251015, Prop:1002}"
+            }
+        },
+        "6": {
+            "125100013": {
+                "Title": "快速支援：風入松",
+                "Description": "目前操作中的角色被擊飛時，點按 <IconMap:Icon_Switch> 發動：\n騰空躍起後發動下落攻擊，造成<color=#2EB6FF>電屬性傷害</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "125100014": {
+                "Title": "招架支援：錦上花",
+                "Description": "前場角色即將被攻擊時，點按 <IconMap:Icon_Switch> 發動：\n招架敵人的攻擊，累積大量失衡值。\n具有較為優秀的招架效能，承受高強度攻擊時<color=#FFFFFF>[支援點數]</color>的消耗量降低。\n招式發動期間擁有無敵效果。"
+            },
+            "125100015": {
+                "Title": "支援突擊：清江引",
+                "Description": "發動<color=#FFFFFF>[招架支援]</color>後，點按 <IconMap:Icon_Normal> 發動：\n向前方快速突進攻擊並向地面注入電能，隨後拔起引發爆炸，造成<color=#2EB6FF>電屬性傷害</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "125100057": {
+                "Title": "快速支援：風入松"
+            },
+            "125100058": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1251016, Prop:1001}"
+            },
+            "125100059": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1251016, Prop:1002}"
+            },
+            "125100060": {
+                "Title": "招架支援：錦上花"
+            },
+            "125100061": {
+                "Description": "輕招架失衡倍率",
+                "Param": "{Skill:1251017, Prop:1002}"
+            },
+            "125100062": {
+                "Description": "重招架失衡倍率",
+                "Param": "{Skill:1251018, Prop:1002}"
+            },
+            "125100063": {
+                "Description": "連續招架失衡倍率",
+                "Param": "{Skill:1251019, Prop:1002}"
+            },
+            "125100064": {
+                "Title": "支援突擊：清江引"
+            },
+            "125100065": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1251020, Prop:1001}"
+            },
+            "125100066": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1251020, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1251001": {
+            "DamageValue": 4720,
+            "DamageGrowth": 430,
+            "DazeValue": 2360,
+            "DazeGrowth": 110
+        },
+        "1251002": {
+            "DamageValue": 11030,
+            "DamageGrowth": 1010,
+            "DazeValue": 5520,
+            "DazeGrowth": 260
+        },
+        "1251003": {
+            "DamageValue": 12210,
+            "DamageGrowth": 1110,
+            "DazeValue": 8220,
+            "DazeGrowth": 380
+        },
+        "1251004": {
+            "DamageValue": 1760,
+            "DamageGrowth": 160,
+            "DazeValue": 1910,
+            "DazeGrowth": 90
+        },
+        "1251005": {
+            "DamageValue": 10640,
+            "DamageGrowth": 970,
+            "DazeValue": 10630,
+            "DazeGrowth": 490
+        },
+        "1251006": {
+            "DamageValue": 23440,
+            "DamageGrowth": 2140,
+            "DazeValue": 20470,
+            "DazeGrowth": 940
+        },
+        "1251007": {
+            "DamageValue": 8560,
+            "DamageGrowth": 780,
+            "DazeValue": 8560,
+            "DazeGrowth": 390
+        },
+        "1251008": {
+            "DamageValue": 44870,
+            "DamageGrowth": 4080,
+            "DazeValue": 27190,
+            "DazeGrowth": 1240
+        },
+        "1251009": {
+            "DamageValue": 39440,
+            "DamageGrowth": 3590,
+            "DazeValue": 21760,
+            "DazeGrowth": 990
+        },
+        "1251010": {
+            "DamageValue": 6240,
+            "DamageGrowth": 570,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1251011": {
+            "DamageValue": 15070,
+            "DamageGrowth": 1370,
+            "DazeValue": 11110,
+            "DazeGrowth": 510
+        },
+        "1251012": {
+            "DamageValue": 4950,
+            "DamageGrowth": 450,
+            "DazeValue": 2480,
+            "DazeGrowth": 120
+        },
+        "1251013": {
+            "DamageValue": 28400,
+            "DamageGrowth": 2590,
+            "DazeValue": 19040,
+            "DazeGrowth": 870
+        },
+        "1251014": {
+            "DamageValue": 64790,
+            "DamageGrowth": 5890,
+            "DazeValue": 20900,
+            "DazeGrowth": 950
+        },
+        "1251015": {
+            "DamageValue": 167070,
+            "DamageGrowth": 15190,
+            "DazeValue": 109710,
+            "DazeGrowth": 4990
+        },
+        "1251016": {
+            "DamageValue": 13390,
+            "DamageGrowth": 1220,
+            "DazeValue": 13390,
+            "DazeGrowth": 610
+        },
+        "1251017": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 24930,
+            "DazeGrowth": 1140
+        },
+        "1251018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 30430,
+            "DazeGrowth": 1390
+        },
+        "1251019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 12830,
+            "DazeGrowth": 590
+        },
+        "1251020": {
+            "DamageValue": 37640,
+            "DamageGrowth": 3430,
+            "DazeValue": 27900,
+            "DazeGrowth": 1270
+        },
+        "1251021": {
+            "DamageValue": 21100,
+            "DamageGrowth": 1920,
+            "DazeValue": 15550,
+            "DazeGrowth": 710
+        },
+        "1251022": {
+            "DamageValue": 24110,
+            "DamageGrowth": 2200,
+            "DazeValue": 17770,
+            "DazeGrowth": 810
+        }
+    }
+}

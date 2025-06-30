@@ -1,0 +1,419 @@
+{
+    "Name": "Billy",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Entrée fracassante",
+            "Description": "Lorsque Billy touche un ennemi avec une <color=#FFFFFF>attaque de bond</color> ou un <color=#FFFFFF>contre d'esquive</color>, il gagne 2,7 pts d'énergie supplémentaires. Peut être déclenché une fois toutes les 5 s.",
+            "Lore": "« Vous êtes bien trop honnêtes pour être des méchants ! »\n« Tous alignés, comme des PNJ au stand de tir ! »"
+        },
+        "2": {
+            "Title": "Pistolero errant",
+            "Description": "Les DGT infligés par le <color=#FFFFFF>contre d'esquive</color> de Billy augmentent de 25 %.\nLes Tirs en roulade effectués au cours de ses <color=#FFFFFF>attaques normales</color> sont considérés comme des esquives, pendant lesquelles Billy est invulnérable et peut déclencher des <color=#FFFFFF>esquives parfaites</color>.\nLorsqu'un Tir en roulade déclenche une <color=#FFFFFF>esquive parfaite</color>, celle-ci sera automatiquement suivie d'un <color=#FFFFFF>contre d'esquive</color>.",
+            "Lore": "« Un Chevalier stellaire ne fuit jamais le danger. Ça, c'est ce qui s'appelle savoir tirer ! »\n– Utilisateur « Dreamgirl Monica », depuis la messagerie d'Éclat stellaire."
+        },
+        "3": {
+            "Title": "Enseignements des Chevaliers stellaires",
+            "Description": "Niv. d'<color=#FFFFFF>attaque normale</color>, d'<color=#FFFFFF>esquive</color>, de <color=#FFFFFF>soutien</color>, d'<color=#FFFFFF>attaque spéciale</color> et d'<color=#FFFFFF>enchaînement</color> +2",
+            "Lore": "Ne jamais négliger son entraînement et toujours chercher à s'améliorer, telle est la philosophie des Chevaliers stellaires. Billy y adhère de tout cœur, et la pratique passionnément."
+        },
+        "4": {
+            "Title": "Balistique stellaire",
+            "Description": "Lorsque Billy touche un ennemi avec son <color=#FFFFFF>attaque spéciale EX</color>, le taux CRIT de la compétence augmente selon la distance entre Billy et l'ennemi. Plus il est proche de la cible, plus l'effet est important, jusqu'à une augmentation maximale de 32 %.",
+            "Lore": "Ces balles explosives inventées par Billy sont incroyablement efficaces à courte portée.\nPourtant, l'intention initiale de Billy était simplement de rendre ses tirs plus cools."
+        },
+        "5": {
+            "Title": "Technologie perdue",
+            "Description": "Niv. d'<color=#FFFFFF>attaque normale</color>, d'<color=#FFFFFF>esquive</color>, de <color=#FFFFFF>soutien</color>, d'<color=#FFFFFF>attaque spéciale</color> et d'<color=#FFFFFF>enchaînement</color> +2",
+            "Lore": "Des composants de précision inconnus et une conception de structure unique ont permis à Billy d'obtenir des performances bien supérieures à celles de ses homologues... Tout comme ses coûts d'entretien."
+        },
+        "6": {
+            "Title": "Héros stellaire",
+            "Description": "Lorsque Billy touche les ennemis 10 fois ou déclenche une <color=#FFFFFF>esquive parfaite</color>, ses DGT augmentent de 6 %. Cet effet est cumulable jusqu'à 5 fois et est réinitialisé après que Billy est repoussé ou projeté par une attaque ennemie.",
+            "Lore": "« Ouah ! J'ai la patate ! Écarte-toi, Anby, c'est à moi de briller ! »\n« Hé, Anby, tu peux lancer le thème du Chevalier stellaire ? »\n– Lièvres rusés, les 10 phrases interdites sélectionnées par Anby"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passif principal : Tir assuré",
+            "DescriptionByLevel": {
+                "1": "Les DGT infligés par Billy augmentent de <color=#2BAD00>25 %</color> lorsqu'il entre dans la position Tir accroupi durant son <color=#FFFFFF>attaque normale</color>. L'effet prend fin s'il bouge, redevient inactif, est repoussé ou projeté par une attaque.",
+                "2": "Les DGT infligés par Billy augmentent de <color=#2BAD00>29,1 %</color> lorsqu'il entre dans la position Tir accroupi durant son <color=#FFFFFF>attaque normale</color>. L'effet prend fin s'il bouge, redevient inactif, est repoussé ou projeté par une attaque.",
+                "3": "Les DGT infligés par Billy augmentent de <color=#2BAD00>33,3 %</color> lorsqu'il entre dans la position Tir accroupi durant son <color=#FFFFFF>attaque normale</color>. L'effet prend fin s'il bouge, redevient inactif, est repoussé ou projeté par une attaque.",
+                "4": "Les DGT infligés par Billy augmentent de <color=#2BAD00>37,5 %</color> lorsqu'il entre dans la position Tir accroupi durant son <color=#FFFFFF>attaque normale</color>. L'effet prend fin s'il bouge, redevient inactif, est repoussé ou projeté par une attaque.",
+                "5": "Les DGT infligés par Billy augmentent de <color=#2BAD00>41,6 %</color> lorsqu'il entre dans la position Tir accroupi durant son <color=#FFFFFF>attaque normale</color>. L'effet prend fin s'il bouge, redevient inactif, est repoussé ou projeté par une attaque.",
+                "6": "Les DGT infligés par Billy augmentent de <color=#2BAD00>45,8 %</color> lorsqu'il entre dans la position Tir accroupi durant son <color=#FFFFFF>attaque normale</color>. L'effet prend fin s'il bouge, redevient inactif, est repoussé ou projeté par une attaque.",
+                "7": "Les DGT infligés par Billy augmentent de <color=#2BAD00>50 %</color> lorsqu'il entre dans la position Tir accroupi durant son <color=#FFFFFF>attaque normale</color>. L'effet prend fin s'il bouge, redevient inactif, est repoussé ou projeté par une attaque."
+            }
+        },
+        "MathSkill": {
+            "Title": "Capacité supplémentaire : Équipe stellaire",
+            "Description": "Lorsqu'un autre personnage de votre escouade est du même attribut ou de la même faction que Billy :\nAprès avoir lancé un <color=#FFFFFF>enchaînement</color> avec Billy, les DGT de son prochain <color=#FFFFFF>ultime</color> augmentent de 50 %. Effet cumulable 2 fois. Cet effet est réinitialisé après le lancement de l'<color=#FFFFFF>ultime</color>."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "108100001": {
+                "Title": "Attaque normale : Puissance de feu maximale",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pour activer :\nLance une attaque perforante sur les ennemis, infligeant des <color=#F0D12B>DGT physiques</color>.\nAppuyez de façon répétée ou maintenez pour entrer en Tir accroupi et prolonger la durée de l'attaque.\nBougez le {LAYOUT_XBOXCONTROLLER#stick}{LAYOUT_FALLBACK#joystick} pendant le Tir accroupi pour lancer un Tir en roulade et ajuster la position du personnage, tout en infligeant des <color=#F0D12B>DGT physiques</color>.\nArrêtez de marteler ou relâchez durant le Tir accroupi pour déclencher le Tir final sur les ennemis en face et infliger des <color=#F0D12B>DGT physiques</color>."
+            },
+            "108110001": {
+                "Title": "Attaque normale : Puissance de feu maximale"
+            },
+            "108110002": {
+                "Description": "Multiplicateur de DGT d'ouverture du feu en position debout",
+                "Param": "{Skill:1081002, Prop:1001}"
+            },
+            "108110003": {
+                "Description": "Multiplicateur de DGT de balle en position debout",
+                "Param": "{Skill:1081003, Prop:1001}"
+            },
+            "108110004": {
+                "Description": "Multiplicateur de DGT d'ouverture du feu en position accroupie",
+                "Param": "{Skill:1081004, Prop:1001}"
+            },
+            "108110005": {
+                "Description": "Multiplicateur de DGT de balle en position accroupie",
+                "Param": "{Skill:1081007, Prop:1001}"
+            },
+            "108110006": {
+                "Description": "Multiplicateur de DGT de tir en roulade",
+                "Param": "{Skill:1081004, Prop:1001}"
+            },
+            "108110007": {
+                "Description": "Multiplicateur de DGT de tir final",
+                "Param": "{Skill:1081008, Prop:1001}"
+            },
+            "108110008": {
+                "Description": "Multiplicateur de confusion d'ouverture du feu en position debout",
+                "Param": "{Skill:1081002, Prop:1002}"
+            },
+            "108110009": {
+                "Description": "Multiplicateur de confusion de balle en position debout",
+                "Param": "{Skill:1081003, Prop:1002}"
+            },
+            "108110010": {
+                "Description": "Multiplicateur de confusion d'ouverture du feu en position accroupie",
+                "Param": "{Skill:1081004, Prop:1002}"
+            },
+            "108110011": {
+                "Description": "Multiplicateur de confusion de balle en position accroupie",
+                "Param": "{Skill:1081007, Prop:1002}"
+            },
+            "108110012": {
+                "Description": "Multiplicateur de confusion de tir en roulade",
+                "Param": "{Skill:1081004, Prop:1002}"
+            },
+            "108110013": {
+                "Description": "Multiplicateur de confusion de tir final",
+                "Param": "{Skill:1081008, Prop:1002}"
+            }
+        },
+        "1": {
+            "108100002": {
+                "Title": "Attaque spéciale : Pas un geste",
+                "Description": "Appuyez sur <IconMap:Icon_Special> pour activer :\nLance jusqu'à 3 attaques perforantes en ligne droite, qui infligent des <color=#F0D12B>DGT physiques</color>.\nLe niveau de la RÉS à l'interruption est augmenté pendant l'utilisation de cette compétence."
+            },
+            "108100003": {
+                "Title": "Attaque spéciale EX : L'heure du ménage",
+                "Description": "Avec suffisamment d'énergie, appuyez sur <IconMap:Icon_SpecialReady> pour activer :\nLance une puissante attaque perforante en ligne droite qui inflige d'importants <color=#F0D12B>DGT physiques</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "108110014": {
+                "Title": "Attaque spéciale : Pas un geste"
+            },
+            "108110015": {
+                "Description": "Multiplicateur de DGT du 1er coup",
+                "Param": "{Skill:1081010, Prop:1001}"
+            },
+            "108110016": {
+                "Description": "Multiplicateur de DGT du 2e coup",
+                "Param": "{Skill:1081011, Prop:1001}"
+            },
+            "108110017": {
+                "Description": "Multiplicateur de DGT du 3e coup",
+                "Param": "{Skill:1081012, Prop:1001}"
+            },
+            "108110018": {
+                "Description": "Multiplicateur de confusion du 1er coup",
+                "Param": "{Skill:1081010, Prop:1002}"
+            },
+            "108110019": {
+                "Description": "Multiplicateur de confusion du 2e coup",
+                "Param": "{Skill:1081011, Prop:1002}"
+            },
+            "108110020": {
+                "Description": "Multiplicateur de confusion du 3e coup",
+                "Param": "{Skill:1081012, Prop:1002}"
+            },
+            "108110021": {
+                "Title": "Attaque spéciale EX : L'heure du ménage"
+            },
+            "108110022": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1081013, Prop:1001}"
+            },
+            "108110023": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1081013, Prop:1002}"
+            },
+            "108110024": {
+                "Description": "Coût en énergie",
+                "Param": "60 pts"
+            }
+        },
+        "2": {
+            "108100004": {
+                "Title": "Esquive : Affaire risquée",
+                "Description": "Appuyez sur <IconMap:Icon_Evade> pour activer :\nUne esquive rapide.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "108100005": {
+                "Title": "Attaque de bond : Châtiment stellaire",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> en bougeant le {LAYOUT_XBOXCONTROLLER#stick}{LAYOUT_FALLBACK#joystick} pendant une esquive :\nLance une attaque perforante sur les ennemis aux alentours dans une large zone, qui inflige des <color=#F0D12B>DGT physiques</color>.\nAppuyez sur <IconMap:Icon_Normal> sans bouger le {LAYOUT_XBOXCONTROLLER#stick}{LAYOUT_FALLBACK#joystick} pendant une esquive :\nLance une attaque perforante sur les ennemis en ligne droite, qui inflige des <color=#F0D12B>DGT physiques</color>."
+            },
+            "108100006": {
+                "Title": "Contre d'esquive : À la loyale",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pendant une <color=#FFFFFF>esquive parfaite</color> pour activer :\nLance une attaque perforante sur les ennemis situés en face, qui inflige des <color=#F0D12B>DGT physiques</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "108110025": {
+                "Title": "Attaque de bond : Châtiment stellaire"
+            },
+            "108110026": {
+                "Description": "Multiplicateur de DGT de tir à 360 degrés",
+                "Param": "{Skill:1081016, Prop:1001}"
+            },
+            "108110027": {
+                "Description": "Multiplicateur de DGT de tir droit",
+                "Param": "{Skill:1081014, Prop:1001}"
+            },
+            "108110028": {
+                "Description": "Multiplicateur de confusion de tir à 360 degrés",
+                "Param": "{Skill:1081016, Prop:1002}"
+            },
+            "108110029": {
+                "Description": "Multiplicateur de confusion de tir droit",
+                "Param": "{Skill:1081014, Prop:1002}"
+            },
+            "108110030": {
+                "Title": "Contre d'esquive : À la loyale"
+            },
+            "108110031": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1081017, Prop:1001}"
+            },
+            "108110032": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1081017, Prop:1002}"
+            }
+        },
+        "3": {
+            "108100007": {
+                "Title": "Enchaînement : Mirage stellaire",
+                "Description": "Lors du déclenchement d'un <color=#FFFFFF>enchaînement</color>, sélectionnez le personnage pour activer :\nLance une puissante attaque perforante sur les ennemis aux alentours situés dans une vaste zone, qui inflige d'importants <color=#F0D12B>DGT physiques</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "108100008": {
+                "Title": "Ultime : Étoile, brille de mille feux !",
+                "Description": "Lorsque le niveau de décibels est au <color=#FFFFFF>Maximum</color>, appuyez sur <IconMap:Icon_UltimateReady> pour activer :\nLance une puissante attaque perforante sur les ennemis aux alentours dans une vaste zone, qui inflige d'importants <color=#F0D12B>DGT physiques</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "108110033": {
+                "Title": "Enchaînement : Mirage stellaire"
+            },
+            "108110034": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1081018, Prop:1001}"
+            },
+            "108110035": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1081018, Prop:1002}"
+            },
+            "108110036": {
+                "Title": "Ultime : Étoile, brille de mille feux !"
+            },
+            "108110037": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1081019, Prop:1001}"
+            },
+            "108110038": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1081019, Prop:1002}"
+            }
+        },
+        "6": {
+            "108100010": {
+                "Title": "Soutien rapide : La force du travail d'équipe",
+                "Description": "Lorsque le personnage contrôlé est projeté, appuyez sur <IconMap:Icon_Switch> pour activer :\nLance une attaque perforante sur les ennemis situés en face, qui inflige des <color=#F0D12B>DGT physiques</color>.\nLe personnage est invulnérable pendant cette attaque."
+            },
+            "108100011": {
+                "Title": "Soutien d'esquive : Tournoiement éclair",
+                "Description": "Lorsque le personnage sur le terrain est sur le point d'être attaqué, appuyez sur <IconMap:Icon_Switch> pour activer :\nEsquive l'attaque de l'ennemi et déclenche <color=#FFFFFF>Œil de lynx</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "108100012": {
+                "Title": "Soutien de suivi : Tir mortel",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> après avoir déclenché un <color=#FFFFFF>soutien d'esquive</color> pour activer :\nLance une attaque perforante aux ennemis situés dans une large zone en face, qui inflige des <color=#F0D12B>DGT physiques</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "108110039": {
+                "Title": "Soutien rapide : La force du travail d'équipe"
+            },
+            "108110040": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1081020, Prop:1001}"
+            },
+            "108110041": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1081020, Prop:1002}"
+            },
+            "108110042": {
+                "Title": "Soutien de suivi : Tir mortel"
+            },
+            "108110043": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1081021, Prop:1001}"
+            },
+            "108110044": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1081021, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1081001": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1081002": {
+            "DamageValue": 6800,
+            "DamageGrowth": 620,
+            "DazeValue": 5440,
+            "DazeGrowth": 250
+        },
+        "1081003": {
+            "DamageValue": 760,
+            "DamageGrowth": 70,
+            "DazeValue": 610,
+            "DazeGrowth": 30
+        },
+        "1081004": {
+            "DamageValue": 6180,
+            "DamageGrowth": 570,
+            "DazeValue": 5470,
+            "DazeGrowth": 250
+        },
+        "1081005": {
+            "DamageValue": 6180,
+            "DamageGrowth": 570,
+            "DazeValue": 5470,
+            "DazeGrowth": 250
+        },
+        "1081006": {
+            "DamageValue": 6180,
+            "DamageGrowth": 570,
+            "DazeValue": 5470,
+            "DazeGrowth": 250
+        },
+        "1081007": {
+            "DamageValue": 1270,
+            "DamageGrowth": 120,
+            "DazeValue": 890,
+            "DazeGrowth": 50
+        },
+        "1081008": {
+            "DamageValue": 4950,
+            "DamageGrowth": 450,
+            "DazeValue": 5520,
+            "DazeGrowth": 260
+        },
+        "1081009": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1081010": {
+            "DamageValue": 2420,
+            "DamageGrowth": 220,
+            "DazeValue": 2420,
+            "DazeGrowth": 110
+        },
+        "1081011": {
+            "DamageValue": 5170,
+            "DamageGrowth": 470,
+            "DazeValue": 5170,
+            "DazeGrowth": 240
+        },
+        "1081012": {
+            "DamageValue": 5010,
+            "DamageGrowth": 460,
+            "DazeValue": 5010,
+            "DazeGrowth": 230
+        },
+        "1081013": {
+            "DamageValue": 54380,
+            "DamageGrowth": 4950,
+            "DazeValue": 43950,
+            "DazeGrowth": 2000
+        },
+        "1081014": {
+            "DamageValue": 3900,
+            "DamageGrowth": 360,
+            "DazeValue": 1950,
+            "DazeGrowth": 90
+        },
+        "1081015": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1081016": {
+            "DamageValue": 6300,
+            "DamageGrowth": 580,
+            "DazeValue": 6300,
+            "DazeGrowth": 290
+        },
+        "1081017": {
+            "DamageValue": 22140,
+            "DamageGrowth": 2020,
+            "DazeValue": 19340,
+            "DazeGrowth": 880
+        },
+        "1081018": {
+            "DamageValue": 73520,
+            "DamageGrowth": 6690,
+            "DazeValue": 19660,
+            "DazeGrowth": 900
+        },
+        "1081019": {
+            "DamageValue": 159770,
+            "DamageGrowth": 14530,
+            "DazeValue": 19060,
+            "DazeGrowth": 870
+        },
+        "1081020": {
+            "DamageValue": 9340,
+            "DamageGrowth": 850,
+            "DazeValue": 9340,
+            "DazeGrowth": 430
+        },
+        "1081021": {
+            "DamageValue": 38880,
+            "DamageGrowth": 3540,
+            "DazeValue": 34120,
+            "DazeGrowth": 1560
+        },
+        "1081023": {
+            "DamageValue": 15070,
+            "DamageGrowth": 1370,
+            "DazeValue": 4260,
+            "DazeGrowth": 200
+        },
+        "1081025": {
+            "DamageValue": 108750,
+            "DamageGrowth": 9890,
+            "DazeValue": 46330,
+            "DazeGrowth": 2110
+        }
+    }
+}

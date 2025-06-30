@@ -1,0 +1,450 @@
+{
+    "Name": "Qingyi",
+    "ElementTypes": [
+        "Elec"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Perforación dieléctrica",
+            "Description": "Al entrar en combate, se recupera el máximo de <color=#FFFFFF>voltaje de conexión súbita</color> y su acumulación aumenta en un 30 %. Al ejecutar el <color=#FFFFFF>ataque normal: Nimbo floreciente lunar</color>, si el <color=#FFFFFF>voltaje de conexión súbita</color> ha llegado al máximo, la Defensa del objetivo disminuye en un 15 % y la Probabilidad de Crítico de Qingyi contra dicho objetivo aumenta en un 20 % durante 15 s.",
+            "Lore": "«Aunque no corra peligro de muerte, le rogamos que no se resista a la detención...»\nLa dirección y la intensidad de la corriente eléctrica se calculan con precisión para garantizar que todos los sospechosos reciban una descarga segura."
+        },
+        "2": {
+            "Title": "Mínimo esfuerzo, máximo rendimiento",
+            "Description": "El efecto de aumento de la tasa de vulnerabilidad otorgado por cada carga de <color=#FFFFFF>sometimiento</color> de la <color=#FFFFFF>técnica pasiva: Estaciones sempiternas</color> aumenta a un 135 % de su valor original. Cuando Qingyi golpea al enemigo, si el objetivo acumula el número máximo de cargas de <color=#FFFFFF>sometimiento</color>, el Aturdimiento provocado por Qingyi sobre el objetivo aumenta en un 15 %.",
+            "Lore": "Una técnica de combate mencionada en los textos de una antigua civilización. Al parecer, originalmente se usaba en las artes marciales y no requería vara alguna.\n«No te limites. Los brazos son como varas trisecada»."
+        },
+        "3": {
+            "Title": "Los beneficios del agua caliente",
+            "Description": "Nivel de <color=#FFFFFF>ataque normal</color>, <color=#FFFFFF>evasión</color>, <color=#FFFFFF>técnica de apoyo</color>, <color=#FFFFFF>técnica especial</color> y <color=#FFFFFF>técnica en cadena</color> +2",
+            "Lore": "«Los jóvenes deben cuidar su salud y beber más agua caliente».\nCada vez que Qingyi bebe de su termo, transmite una sensación reconfortante. Pero ten cuidado con el agua caliente que te ofrece...\n«Aunque sea agua a 100 °C, la bebe sin inmutarse...»\n—Mensaje de un oficial de seguridad."
+        },
+        "4": {
+            "Title": "Barrera de arco eléctrico",
+            "Description": "Al entrar o salir del estado de <color=#FFFFFF>conexión súbita</color>, Qingyi obtiene un escudo equivalente al 10 % de sus PV máx. Al reiniciarse el escudo, si el escudo anterior aún está activo, Qingyi produce 5 ptos. de energía. Este efecto de Producción de Energía solo puede activarse una vez cada 10 s.",
+            "Lore": "Una barrera de arco eléctrico desarrollada por el Instituto Estrella Blanca aplicando ingeniería inversa a los autómatas de las civilizaciones antiguas. Es una tecnología que combina la defensa, el ataque y la conversión de energía eléctrica.\n«Como dice el refrán, el agua que hace que el barco flote es la misma que lo hunde. En física, también se dice que la corriente eléctrica es como el agua. Si unimos ambos conceptos, la corriente eléctrica puede ser tanto ofensiva como defensiva. ¡Una combinación fantástica!»."
+        },
+        "5": {
+            "Title": "Eterna inocencia",
+            "Description": "Nivel de <color=#FFFFFF>ataque normal</color>, <color=#FFFFFF>evasión</color>, <color=#FFFFFF>técnica de apoyo</color>, <color=#FFFFFF>técnica especial</color> y <color=#FFFFFF>técnica en cadena</color> +2",
+            "Lore": "«¡Genial, los jóvenes tienen que tener el valor de probar cosas nuevas!».\nAunque a veces parece que las palabras de ánimo de Qingyi son indolentes y provocadoras, siempre puedes contar con ella si te metes en líos.\nDespués de todo, ha vivido cientos de años. Es capaz de solucionar cualquier problema."
+        },
+        "6": {
+            "Title": "Ocho meridianos",
+            "Description": "El nivel de interrupción del <color=#FFFFFF>ataque normal: Nimbo floreciente lunar</color> aumenta considerablemente y el Daño Crítico aumenta en un 100 %. Cuando Qingyi golpea a un enemigo con el <color=#FFFFFF>ataque normal: Nimbo floreciente lunar</color>, la resistencia a todos los tipos de daño del objetivo disminuye en un 20 % durante 15 s.",
+            "Lore": "Hay una teoría sobre el sistema circulatorio del cuerpo humano mencionada en los textos de la antigua civilización. Se dice que, una vez que se domine por completo, puede provocar que un oponente pierda inmediatamente la capacidad de moverse durante el combate.\n«La próxima vez, intentaré oprimir los puntos de presión que provocan cosquillas. ¿Quién podría ser mi conejillo de indias? ¿{M#Wise}{F#Belle}? ¿O Zhu Yuan?»."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Técnica pasiva: Estaciones sempiternas",
+            "DescriptionByLevel": {
+                "1": "Cuando Qingyi golpea a un enemigo con el ataque final del <color=#FFFFFF>ataque normal: Nimbo floreciente lunar</color>, le aplica 5 carga(s) de <color=#FFFFFF>sometimiento</color> al enemigo. Pueden acumularse hasta 20 cargas. Con cada carga de <color=#FFFFFF>sometimiento</color>, la tasa de vulnerabilidad del objetivo aumenta en un <color=#2BAD00>2 %</color>. Cada ataque con impulso durante el <color=#FFFFFF>ataque normal: Nimbo floreciente lunar</color> le aplica 1 carga adicional de <color=#FFFFFF>sometimiento</color>. Al ejecutar el ataque final, si ha activado una <color=#FFFFFF>evasión perfecta</color>, aplica directamente {CAL:5+5,1,2} cargas de <color=#FFFFFF>sometimiento</color>.\nAl aplicar cargas de sometimiento a enemigos normales o de élite, el número de cargas que aplica se duplica. Cuando el objetivo se recupera del Aturdimiento, se restablecen las cargas de <color=#FFFFFF>sometimiento</color> correspondientes.",
+                "2": "Cuando Qingyi golpea a un enemigo con el ataque final del <color=#FFFFFF>ataque normal: Nimbo floreciente lunar</color>, le aplica 5 carga(s) de <color=#FFFFFF>sometimiento</color> al enemigo. Pueden acumularse hasta 20 cargas. Con cada carga de <color=#FFFFFF>sometimiento</color>, la tasa de vulnerabilidad del objetivo aumenta en un <color=#2BAD00>2.4 %</color>. Cada ataque con impulso durante el <color=#FFFFFF>ataque normal: Nimbo floreciente lunar</color> le aplica 1 carga adicional de <color=#FFFFFF>sometimiento</color>. Al ejecutar el ataque final, si ha activado una <color=#FFFFFF>evasión perfecta</color>, aplica directamente {CAL:5+5,1,2} cargas de <color=#FFFFFF>sometimiento</color>.\nAl aplicar cargas de sometimiento a enemigos normales o de élite, el número de cargas que aplica se duplica. Cuando el objetivo se recupera del Aturdimiento, se restablecen las cargas de <color=#FFFFFF>sometimiento</color> correspondientes.",
+                "3": "Cuando Qingyi golpea a un enemigo con el ataque final del <color=#FFFFFF>ataque normal: Nimbo floreciente lunar</color>, le aplica 5 carga(s) de <color=#FFFFFF>sometimiento</color> al enemigo. Pueden acumularse hasta 20 cargas. Con cada carga de <color=#FFFFFF>sometimiento</color>, la tasa de vulnerabilidad del objetivo aumenta en un <color=#2BAD00>2.7 %</color>. Cada ataque con impulso durante el <color=#FFFFFF>ataque normal: Nimbo floreciente lunar</color> le aplica 1 carga adicional de <color=#FFFFFF>sometimiento</color>. Al ejecutar el ataque final, si ha activado una <color=#FFFFFF>evasión perfecta</color>, aplica directamente {CAL:5+5,1,2} cargas de <color=#FFFFFF>sometimiento</color>.\nAl aplicar cargas de sometimiento a enemigos normales o de élite, el número de cargas que aplica se duplica. Cuando el objetivo se recupera del Aturdimiento, se restablecen las cargas de <color=#FFFFFF>sometimiento</color> correspondientes.",
+                "4": "Cuando Qingyi golpea a un enemigo con el ataque final del <color=#FFFFFF>ataque normal: Nimbo floreciente lunar</color>, le aplica 5 carga(s) de <color=#FFFFFF>sometimiento</color> al enemigo. Pueden acumularse hasta 20 cargas. Con cada carga de <color=#FFFFFF>sometimiento</color>, la tasa de vulnerabilidad del objetivo aumenta en un <color=#2BAD00>3 %</color>. Cada ataque con impulso durante el <color=#FFFFFF>ataque normal: Nimbo floreciente lunar</color> le aplica 1 carga adicional de <color=#FFFFFF>sometimiento</color>. Al ejecutar el ataque final, si ha activado una <color=#FFFFFF>evasión perfecta</color>, aplica directamente {CAL:5+5,1,2} cargas de <color=#FFFFFF>sometimiento</color>.\nAl aplicar cargas de sometimiento a enemigos normales o de élite, el número de cargas que aplica se duplica. Cuando el objetivo se recupera del Aturdimiento, se restablecen las cargas de <color=#FFFFFF>sometimiento</color> correspondientes.",
+                "5": "Cuando Qingyi golpea a un enemigo con el ataque final del <color=#FFFFFF>ataque normal: Nimbo floreciente lunar</color>, le aplica 5 carga(s) de <color=#FFFFFF>sometimiento</color> al enemigo. Pueden acumularse hasta 20 cargas. Con cada carga de <color=#FFFFFF>sometimiento</color>, la tasa de vulnerabilidad del objetivo aumenta en un <color=#2BAD00>3.4 %</color>. Cada ataque con impulso durante el <color=#FFFFFF>ataque normal: Nimbo floreciente lunar</color> le aplica 1 carga adicional de <color=#FFFFFF>sometimiento</color>. Al ejecutar el ataque final, si ha activado una <color=#FFFFFF>evasión perfecta</color>, aplica directamente {CAL:5+5,1,2} cargas de <color=#FFFFFF>sometimiento</color>.\nAl aplicar cargas de sometimiento a enemigos normales o de élite, el número de cargas que aplica se duplica. Cuando el objetivo se recupera del Aturdimiento, se restablecen las cargas de <color=#FFFFFF>sometimiento</color> correspondientes.",
+                "6": "Cuando Qingyi golpea a un enemigo con el ataque final del <color=#FFFFFF>ataque normal: Nimbo floreciente lunar</color>, le aplica 5 carga(s) de <color=#FFFFFF>sometimiento</color> al enemigo. Pueden acumularse hasta 20 cargas. Con cada carga de <color=#FFFFFF>sometimiento</color>, la tasa de vulnerabilidad del objetivo aumenta en un <color=#2BAD00>3.7 %</color>. Cada ataque con impulso durante el <color=#FFFFFF>ataque normal: Nimbo floreciente lunar</color> le aplica 1 carga adicional de <color=#FFFFFF>sometimiento</color>. Al ejecutar el ataque final, si ha activado una <color=#FFFFFF>evasión perfecta</color>, aplica directamente {CAL:5+5,1,2} cargas de <color=#FFFFFF>sometimiento</color>.\nAl aplicar cargas de sometimiento a enemigos normales o de élite, el número de cargas que aplica se duplica. Cuando el objetivo se recupera del Aturdimiento, se restablecen las cargas de <color=#FFFFFF>sometimiento</color> correspondientes.",
+                "7": "Cuando Qingyi golpea a un enemigo con el ataque final del <color=#FFFFFF>ataque normal: Nimbo floreciente lunar</color>, le aplica 5 carga(s) de <color=#FFFFFF>sometimiento</color> al enemigo. Pueden acumularse hasta 20 cargas. Con cada carga de <color=#FFFFFF>sometimiento</color>, la tasa de vulnerabilidad del objetivo aumenta en un <color=#2BAD00>4 %</color>. Cada ataque con impulso durante el <color=#FFFFFF>ataque normal: Nimbo floreciente lunar</color> le aplica 1 carga adicional de <color=#FFFFFF>sometimiento</color>. Al ejecutar el ataque final, si ha activado una <color=#FFFFFF>evasión perfecta</color>, aplica directamente {CAL:5+5,1,2} cargas de <color=#FFFFFF>sometimiento</color>.\nAl aplicar cargas de sometimiento a enemigos normales o de élite, el número de cargas que aplica se duplica. Cuando el objetivo se recupera del Aturdimiento, se restablecen las cargas de <color=#FFFFFF>sometimiento</color> correspondientes."
+            }
+        },
+        "MathSkill": {
+            "Title": "Técnica adicional: Tres versos de despedida del Paso Yang",
+            "Description": "Cuando en el equipo hay al menos un agente <color=#FFFFFF>atacante</color> o un agente de la misma afiliación, el Aturdimiento provocado por el <color=#FFFFFF>ataque normal</color> aumenta en un 20 %. Además, si el Impacto de Qingyi supera los 120 ptos., por cada punto de Impacto adicional, su Ataque aumenta en 6 ptos. El Ataque puede aumentar hasta un máximo de 600 ptos. de esta manera."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "125100001": {
+                "Title": "Ataque normal: Penúltimo",
+                "Description": "Pulsa <IconMap:Icon_Normal> para usarlo.\nEjecuta hasta cuatro golpes hacia delante que infligen <color=#F0D12B>daño físico</color> y <color=#2EB6FF>daño eléctrico</color>.\nPulsa repetidamente <IconMap:Icon_Normal> durante el tercer golpe para continuar golpeando al enemigo. Durante este tiempo, al ejecutar una <color=#FFFFFF>evasión</color>, no se interrumpe la secuencia de golpes del <color=#FFFFFF>ataque normal</color>.\nAl dejar de pulsar <IconMap:Icon_Normal> durante el tercer golpe, se interrumpe la secuencia de golpes y lo enlaza automáticamente con el cuarto golpe. Si la cadena de golpes alcanza cierta duración, el cuarto golpe será un golpe reforzado.\nDurante la ejecución del tercer y cuarto ataque, el nivel de resistencia a interrupción aumenta y el daño recibido disminuye en un 40 %."
+            },
+            "125100002": {
+                "Title": "Ataque normal: Nimbo floreciente",
+                "Description": "Mantén pulsado <IconMap:Icon_Normal> para usarlo.\nEjecuta un ataque con impulso que inflige <color=#2EB6FF>daño eléctrico</color>.\nDurante su ejecución, el nivel de resistencia a interrupción aumenta."
+            },
+            "125100003": {
+                "Title": "Conexión súbita",
+                "Description": "Cuando Qingyi inflige <color=#2EB6FF>daño eléctrico</color> con una habilidad, acumula <color=#FFFFFF>voltaje de conexión súbita</color>. Cuando el <color=#FFFFFF>voltaje de conexión súbita</color> alcanza el 75 %, Qingyi entra en el estado de <color=#FFFFFF>conexión súbita</color>. Al ejecutar el <color=#FFFFFF>ataque normal: Nimbo floreciente lunar</color>, Qingyi consume todo el <color=#FFFFFF>voltaje de conexión súbita</color> y abandona el estado de <color=#FFFFFF>conexión súbita</color>. Por cada 1 % de <color=#FFFFFF>voltaje de conexión súbita</color> consumido por encima del 75 %, el daño infligido y el Aturdimiento provocado por esta habilidad aumentan en un 1 % y 0.5 % respectivamente. El <color=#FFFFFF>ataque normal: Nimbo floreciente lunar</color> no acumula <color=#FFFFFF>voltaje de conexión súbita</color> por sí solo."
+            },
+            "125100004": {
+                "Title": "Ataque normal: Nimbo floreciente lunar",
+                "Description": "Al encontrarse en el estado de <color=#FFFFFF>conexión súbita</color>, mantén pulsado <IconMap:Icon_Normal> para usarlo.\nEjecuta cinco ataques con impulso seguidos de un ataque final, infligiendo una gran cantidad de <color=#2EB6FF>daño eléctrico</color>. Durante su ejecución, suelta <IconMap:Icon_Normal> para ejecutar antes el ataque final.\nCuando la agente esté a punto de recibir un ataque, ejecuta el ataque final para activar una <color=#FFFFFF>evasión perfecta</color>.\nDurante la ejecución de los ataques con impulso, el nivel de resistencia a interrupción de la agente aumenta. El daño recibido disminuye en un 40 %. Durante el ataque final, la agente se vuelve invulnerable."
+            },
+            "125100016": {
+                "Title": "Ataque normal: Penúltimo"
+            },
+            "125100017": {
+                "Description": "Multiplicador de daño de 1.er golpe",
+                "Param": "{Skill:1251001, Prop:1001}"
+            },
+            "125100018": {
+                "Description": "Multiplicador de daño de 1.er golpe alternativo",
+                "Param": "{Skill:1251002, Prop:1001}"
+            },
+            "125100019": {
+                "Description": "Multiplicador de daño de 2.º golpe",
+                "Param": "{Skill:1251003, Prop:1001}"
+            },
+            "125100020": {
+                "Description": "Multiplicador de daño de 3.er golpe",
+                "Param": "{Skill:1251004, Prop:1001}"
+            },
+            "125100021": {
+                "Description": "Multiplicador de daño de 4.º golpe",
+                "Param": "{Skill:1251005, Prop:1001}"
+            },
+            "125100022": {
+                "Description": "Multiplicador de daño de 4.º golpe reforzado",
+                "Param": "{Skill:1251006, Prop:1001}"
+            },
+            "125100023": {
+                "Description": "Multiplicador de Aturdimiento de 1.er golpe",
+                "Param": "{Skill:1251001, Prop:1002}"
+            },
+            "125100024": {
+                "Description": "Multiplicador de Aturdimiento de 1.er golpe alternativo",
+                "Param": "{Skill:1251002, Prop:1002}"
+            },
+            "125100025": {
+                "Description": "Multiplicador de Aturdimiento de 2.º golpe",
+                "Param": "{Skill:1251003, Prop:1002}"
+            },
+            "125100026": {
+                "Description": "Multiplicador de Aturdimiento de 3.er golpe",
+                "Param": "{Skill:1251004, Prop:1002}"
+            },
+            "125100027": {
+                "Description": "Multiplicador de Aturdimiento de 4.º golpe",
+                "Param": "{Skill:1251005, Prop:1002}"
+            },
+            "125100028": {
+                "Description": "Multiplicador de Aturdimiento de 4.º golpe reforzado",
+                "Param": "{Skill:1251006, Prop:1002}"
+            },
+            "125100029": {
+                "Title": "Ataque normal: Nimbo floreciente"
+            },
+            "125100030": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1251007, Prop:1001}"
+            },
+            "125100031": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1251007, Prop:1002}"
+            },
+            "125100032": {
+                "Title": "Ataque normal: Nimbo floreciente lunar"
+            },
+            "125100033": {
+                "Description": "Multiplicador de daño de ataque con impulso",
+                "Param": "{Skill:1251008, Prop:1001}"
+            },
+            "125100034": {
+                "Description": "Multiplicador de daño de ataque final",
+                "Param": "{Skill:1251009, Prop:1001}"
+            },
+            "125100035": {
+                "Description": "Multiplicador de Aturdimiento de ataque con impulso",
+                "Param": "{Skill:1251008, Prop:1002}"
+            },
+            "125100036": {
+                "Description": "Multiplicador de Aturdimiento de ataque final",
+                "Param": "{Skill:1251009, Prop:1002}"
+            }
+        },
+        "1": {
+            "125100005": {
+                "Title": "Técnica especial: Gloria solana",
+                "Description": "Pulsa <IconMap:Icon_Special> para usarla.\nEjecuta un golpe ascendente hacia delante seguido de un ataque descendente destructivo que inflige <color=#2EB6FF>daño eléctrico</color>.\nDurante su ejecución, el nivel de resistencia a interrupción aumenta."
+            },
+            "125100006": {
+                "Title": "Técnica especial EX: Begonia lunaria",
+                "Description": "Al contar con energía suficiente, pulsa <IconMap:Icon_SpecialReady> para usarla.\nEjecuta un golpe ascendente hacia delante, seguido de un gran salto para ejecutar una serie de ataques continuos giratorios. A continuación, realiza un poderoso ataque descendente destructivo, infligiendo gran cantidad de <color=#2EB6FF>daño eléctrico</color>.\nMantén pulsado <IconMap:Icon_SpecialReady> para consumir energía adicional y aumentar el número de ataques continuos giratorios.\nDurante su ejecución, la agente se vuelve invulnerable.\nTras su ejecución, puede enlazarse con el tercer golpe del <color=#FFFFFF>ataque normal</color>."
+            },
+            "125100037": {
+                "Title": "Técnica especial: Gloria solana"
+            },
+            "125100038": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1251010, Prop:1001}"
+            },
+            "125100039": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1251010, Prop:1002}"
+            },
+            "125100040": {
+                "Title": "Técnica especial EX: Begonia lunaria"
+            },
+            "125100041": {
+                "Description": "Multiplicador de daño",
+                "Param": "{{Skill:1251011, Prop:1001} + {Skill:1251021, Prop:1001} + {Skill:1251022, Prop:1001}}"
+            },
+            "125100042": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{{Skill:1251011, Prop:1002} + {Skill:1251021, Prop:1002} + {Skill:1251022, Prop:1002}}"
+            },
+            "125100043": {
+                "Description": "Consumo de energía",
+                "Param": "60 ptos."
+            },
+            "125100044": {
+                "Description": "Consumo de energía adicional",
+                "Param": "20 ptos."
+            }
+        },
+        "2": {
+            "125100007": {
+                "Title": "Evasión: Voznado del cisne",
+                "Description": "Pulsa <IconMap:Icon_Evade> para usarla.\nEjecuta un rápido esprint evasivo.\nDurante su ejecución, la agente se vuelve invulnerable."
+            },
+            "125100008": {
+                "Title": "Ataque rápido: Ruptura",
+                "Description": "Pulsa <IconMap:Icon_Normal> durante una evasión para usarlo.\nSe abalanza hacia delante y ejecuta un ataque ascendente que inflige <color=#F0D12B>daño físico</color>."
+            },
+            "125100009": {
+                "Title": "Contraataque: Espiral de pensamiento",
+                "Description": "Pulsa <IconMap:Icon_Normal> después de una <color=#FFFFFF>evasión perfecta</color> para usarlo.\nDa un gran salto y ejecuta un ataque en picado que inflige <color=#2EB6FF>daño eléctrico</color>.\nDurante su ejecución, la agente se vuelve invulnerable."
+            },
+            "125100045": {
+                "Title": "Ataque rápido: Ruptura"
+            },
+            "125100046": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1251012, Prop:1001}"
+            },
+            "125100047": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1251012, Prop:1002}"
+            },
+            "125100048": {
+                "Title": "Contraataque: Espiral de pensamiento"
+            },
+            "125100049": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1251013, Prop:1001}"
+            },
+            "125100050": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1251013, Prop:1002}"
+            }
+        },
+        "3": {
+            "125100010": {
+                "Title": "Técnica en cadena: Mandato de paz",
+                "Description": "Elige el avatar de agente al ejecutar una <color=#FFFFFF>técnica en cadena</color> para usarla.\nEjecuta una serie de poderosos golpes en un área grande frente a ella, infligiendo una gran cantidad de <color=#2EB6FF>daño eléctrico</color>.\nAl golpear al enemigo, por cada carga de <color=#FFFFFF>sometimiento</color> de la <color=#FFFFFF>técnica pasiva: Estaciones sempiternas</color> que tenga el objetivo, el daño infligido por medio de esta técnica aumenta en un 3 %.\nDurante su ejecución, la agente se vuelve invulnerable."
+            },
+            "125100011": {
+                "Title": "Técnica definitiva: Ocho ecos de Ganzhou",
+                "Description": "Cuando los dB llegan a su nivel <color=#FFFFFF>máximo</color>, pulsa <IconMap:Icon_UltimateReady> para usarla.\nEjecuta una serie de poderosos golpes continuos en un área grande frente a ella, seguidos de un ataque final, infligiendo una gran cantidad de <color=#2EB6FF>daño eléctrico</color>.\nDurante su ejecución, la agente se vuelve invulnerable."
+            },
+            "125100051": {
+                "Title": "Técnica en cadena: Mandato de paz"
+            },
+            "125100052": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1251014, Prop:1001}"
+            },
+            "125100053": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1251014, Prop:1002}"
+            },
+            "125100054": {
+                "Title": "Técnica definitiva: Ocho ecos de Ganzhou"
+            },
+            "125100055": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1251015, Prop:1001}"
+            },
+            "125100056": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1251015, Prop:1002}"
+            }
+        },
+        "6": {
+            "125100013": {
+                "Title": "Apoyo rápido: Brisa en el pinar",
+                "Description": "Pulsa <IconMap:Icon_Switch> para usarlo cuando el agente activo sea arrojado por los aires.\nDa un gran salto y ejecuta un ataque en picado, infligiendo <color=#2EB6FF>daño eléctrico</color>.\nDurante su ejecución, la agente se vuelve invulnerable."
+            },
+            "125100014": {
+                "Title": "Apoyo defensivo: Distinguida ornamentación",
+                "Description": "{LAYOUT_MOBILE#Pulsa}{LAYOUT_CONTROLLER#Presiona}{LAYOUT_KEYBOARD#Pulsa}{LAYOUT_CONSOLECONTROLLER#Presiona}{LAYOUT_FALLBACK#Presiona} <IconMap:Icon_Switch> para usarlo cuando el agente activo esté a punto de recibir un golpe.\nBloquea el ataque enemigo, provocando una gran cantidad de Aturdimiento.\nAdquiere una gran capacidad de resistencia, por lo que, al recibir un golpe fuerte, reduce los <color=#FFFFFF>puntos de apoyo</color> consumidos.\nDurante su ejecución, la agente se vuelve invulnerable."
+            },
+            "125100015": {
+                "Title": "Ataque sucesivo: Melodía del río cristalino",
+                "Description": "Pulsa <IconMap:Icon_Normal> después de un <color=#FFFFFF>apoyo defensivo</color> para usarlo.\nEjecuta un ataque con impulso hacia delante e infunde energía eléctrica en el suelo. Justo después, la libera y causa una explosión, infligiendo <color=#2EB6FF>daño eléctrico</color>.\nDurante su ejecución, la agente se vuelve invulnerable."
+            },
+            "125100057": {
+                "Title": "Apoyo rápido: Brisa en el pinar"
+            },
+            "125100058": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1251016, Prop:1001}"
+            },
+            "125100059": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1251016, Prop:1002}"
+            },
+            "125100060": {
+                "Title": "Apoyo defensivo: Distinguida ornamentación"
+            },
+            "125100061": {
+                "Description": "Multiplicador de Aturdimiento defensivo ligero",
+                "Param": "{Skill:1251017, Prop:1002}"
+            },
+            "125100062": {
+                "Description": "Multiplicador de Aturdimiento defensivo fuerte",
+                "Param": "{Skill:1251018, Prop:1002}"
+            },
+            "125100063": {
+                "Description": "Multiplicador de Aturdimiento defensivo continuo",
+                "Param": "{Skill:1251019, Prop:1002}"
+            },
+            "125100064": {
+                "Title": "Ataque sucesivo: Melodía del río cristalino"
+            },
+            "125100065": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1251020, Prop:1001}"
+            },
+            "125100066": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1251020, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1251001": {
+            "DamageValue": 4720,
+            "DamageGrowth": 430,
+            "DazeValue": 2360,
+            "DazeGrowth": 110
+        },
+        "1251002": {
+            "DamageValue": 11030,
+            "DamageGrowth": 1010,
+            "DazeValue": 5520,
+            "DazeGrowth": 260
+        },
+        "1251003": {
+            "DamageValue": 12210,
+            "DamageGrowth": 1110,
+            "DazeValue": 8220,
+            "DazeGrowth": 380
+        },
+        "1251004": {
+            "DamageValue": 1760,
+            "DamageGrowth": 160,
+            "DazeValue": 1910,
+            "DazeGrowth": 90
+        },
+        "1251005": {
+            "DamageValue": 10640,
+            "DamageGrowth": 970,
+            "DazeValue": 10630,
+            "DazeGrowth": 490
+        },
+        "1251006": {
+            "DamageValue": 23440,
+            "DamageGrowth": 2140,
+            "DazeValue": 20470,
+            "DazeGrowth": 940
+        },
+        "1251007": {
+            "DamageValue": 8560,
+            "DamageGrowth": 780,
+            "DazeValue": 8560,
+            "DazeGrowth": 390
+        },
+        "1251008": {
+            "DamageValue": 44870,
+            "DamageGrowth": 4080,
+            "DazeValue": 27190,
+            "DazeGrowth": 1240
+        },
+        "1251009": {
+            "DamageValue": 39440,
+            "DamageGrowth": 3590,
+            "DazeValue": 21760,
+            "DazeGrowth": 990
+        },
+        "1251010": {
+            "DamageValue": 6240,
+            "DamageGrowth": 570,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1251011": {
+            "DamageValue": 15070,
+            "DamageGrowth": 1370,
+            "DazeValue": 11110,
+            "DazeGrowth": 510
+        },
+        "1251012": {
+            "DamageValue": 4950,
+            "DamageGrowth": 450,
+            "DazeValue": 2480,
+            "DazeGrowth": 120
+        },
+        "1251013": {
+            "DamageValue": 28400,
+            "DamageGrowth": 2590,
+            "DazeValue": 19040,
+            "DazeGrowth": 870
+        },
+        "1251014": {
+            "DamageValue": 64790,
+            "DamageGrowth": 5890,
+            "DazeValue": 20900,
+            "DazeGrowth": 950
+        },
+        "1251015": {
+            "DamageValue": 167070,
+            "DamageGrowth": 15190,
+            "DazeValue": 109710,
+            "DazeGrowth": 4990
+        },
+        "1251016": {
+            "DamageValue": 13390,
+            "DamageGrowth": 1220,
+            "DazeValue": 13390,
+            "DazeGrowth": 610
+        },
+        "1251017": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 24930,
+            "DazeGrowth": 1140
+        },
+        "1251018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 30430,
+            "DazeGrowth": 1390
+        },
+        "1251019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 12830,
+            "DazeGrowth": 590
+        },
+        "1251020": {
+            "DamageValue": 37640,
+            "DamageGrowth": 3430,
+            "DazeValue": 27900,
+            "DazeGrowth": 1270
+        },
+        "1251021": {
+            "DamageValue": 21100,
+            "DamageGrowth": 1920,
+            "DazeValue": 15550,
+            "DazeGrowth": 710
+        },
+        "1251022": {
+            "DamageValue": 24110,
+            "DamageGrowth": 2200,
+            "DazeValue": 17770,
+            "DazeGrowth": 810
+        }
+    }
+}

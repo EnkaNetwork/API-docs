@@ -1,0 +1,485 @@
+{
+    "Name": "月城柳",
+    "ElementTypes": [
+        "Elec"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "敵を知り、己を知る",
+            "Description": "任意のメンバーが敵を状態異常にした時、月城柳は<color=#FFFFFF>「洞察力」</color>を1重獲得する、継続時間15秒、最大3重まで重ね掛け可能、重複して発動すると継続時間が更新される。敵の攻撃を受けた時、月城柳は<color=#FFFFFF>「洞察力」</color>を1重消費して無敵効果を得る、継続時間1秒。<color=#FFFFFF>「洞察力」</color>を1重以上所持している時、月城柳の異常マスタリー+80Pt。",
+            "Lore": "「敵の弱点を知ることは自身への保険であり、勝率向上のためでもあります」\n柳は眼鏡をクイっと上げる。\nどれほど勝算があろうと、彼女の声音はいつもどおり冷静なままだ。"
+        },
+        "2": {
+            "Title": "卓越した適性",
+            "Description": "<color=#FFFFFF>『強化特殊スキル』</color>の高速突き刺しによる<color=#2EB6FF>電気属性の状態異常蓄積値</color>+20%。高速突き刺しが敵に命中した時、「特殊攻撃」ボタンを長押しし続けると、追加でエネルギーを10Pt消費して再び突き刺し攻撃を放つ、エネルギーが尽きるか長押しをやめると、そのまま落下攻撃を発動する。落下攻撃が状態異常の敵に命中、かつ<color=#FFFFFF>「極性混沌」</color>効果が発動した時、ターゲットに対するダメージ倍率が本来の<color=#FFFFFF>「混沌」</color>効果の20%になる。突き刺し攻撃を追加で1回発動するたびに、該当ダメージ倍率が追加で+15%。ダメージ倍率追加アップ効果は最大2回まで発動可能。",
+            "Lore": "「いかに尋常ならざる環境へ放り込まれようと、柳ならば対処できるだろう」\n「私は己を信じる以上に、柳を信じている」\n——「目に映る落ち葉をすべて断ち切る」修行に励む武芸者"
+        },
+        "3": {
+            "Title": "月城さんのマネジメント術",
+            "Description": "<color=#FFFFFF>『通常攻撃』</color>、<color=#FFFFFF>『回避』</color>、<color=#FFFFFF>『支援スキル』</color>、<color=#FFFFFF>『特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>のスキルレベル+2",
+            "Lore": "人は対ホロウ六課を、天才という名の変人の集まりだと口を揃えて言う。\nそんな中、唯一「まとも」と言えるのが月城柳だ。\n変人の集まりを天才の集団たらしめているのは、彼女の手腕である。"
+        },
+        "4": {
+            "Title": "盤上の支配者",
+            "Description": "月城柳が敵に状態異常ダメージを与えた時、ターゲットに<color=#FFFFFF>「暴露」</color>効果を付与する、継続時間15秒。<color=#FFFFFF>「暴露」</color>効果を付与された敵が攻撃を受けた時、今回の攻撃の貫通率+16%。",
+            "Lore": "いついかなる場合でも、月城柳はあらゆる情報を最速で把握し、最適な判断を下すことができる。"
+        },
+        "5": {
+            "Title": "鬼「ママ」",
+            "Description": "<color=#FFFFFF>『通常攻撃』</color>、<color=#FFFFFF>『回避』</color>、<color=#FFFFFF>『支援スキル』</color>、<color=#FFFFFF>『特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>のスキルレベル+2",
+            "Lore": "月城柳は現在、蒼角の唯一の指定後見人である。\n「蒼角、それは課長のおにぎりですよ。勝手に食べちゃ——\nはぁ…仕方がないですね。温めてあげますから、こちらへ来てください。」\n「後で同じものを買って、返しておきましょう…」"
+        },
+        "6": {
+            "Title": "人ならざる血",
+            "Description": "<color=#FFFFFF>『強化特殊スキル』</color>の突き刺し攻撃を発動した後、<color=#FFFFFF>「森羅万象」</color>状態の継続時間が30秒まで延長される。状態継続中、<color=#FFFFFF>『強化特殊スキル』</color>の与ダメージ+20%。<color=#FFFFFF>「卓越した適性」</color>による<color=#FFFFFF>「極性混沌」</color>ダメージ倍率追加アップ効果の最大発動可能回数が4回になる。最初の4回の突き刺し攻撃追加発動時に消費されるエネルギーが半減する。",
+            "Lore": "月城柳の体内には、彼女のものではない血が流れている。\nその血はかつて絶望に直面した彼女を救い、特別な力を授けた。\n「ですがご存知の通り…私のものではない以上、いつかは代償を払う時が来るでしょう」"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "コアパッシブ：月蝕",
+            "DescriptionByLevel": {
+                "1": "月城柳が<color=#FFFFFF>『強化特殊スキル』</color>を発動した後、任意のメンバーが敵に<color=#FFFFFF>「混沌」</color>効果を付与した時、<color=#FFFFFF>「混沌」</color>効果のダメージ倍率+<color=#2BAD00>125%</color>、継続時間15秒。<color=#FFFFFF>『強化特殊スキル』</color>が敵に命中した時、月城柳がターゲットに与える<color=#2EB6FF>電気属性ダメージ</color>+<color=#2BAD00>10%</color>、継続時間15秒。",
+                "2": "月城柳が<color=#FFFFFF>『強化特殊スキル』</color>を発動した後、任意のメンバーが敵に<color=#FFFFFF>「混沌」</color>効果を付与した時、<color=#FFFFFF>「混沌」</color>効果のダメージ倍率+<color=#2BAD00>145%</color>、継続時間15秒。<color=#FFFFFF>『強化特殊スキル』</color>が敵に命中した時、月城柳がターゲットに与える<color=#2EB6FF>電気属性ダメージ</color>+<color=#2BAD00>11.6%</color>、継続時間15秒。",
+                "3": "月城柳が<color=#FFFFFF>『強化特殊スキル』</color>を発動した後、任意のメンバーが敵に<color=#FFFFFF>「混沌」</color>効果を付与した時、<color=#FFFFFF>「混沌」</color>効果のダメージ倍率+<color=#2BAD00>166%</color>、継続時間15秒。<color=#FFFFFF>『強化特殊スキル』</color>が敵に命中した時、月城柳がターゲットに与える<color=#2EB6FF>電気属性ダメージ</color>+<color=#2BAD00>13.3%</color>、継続時間15秒。",
+                "4": "月城柳が<color=#FFFFFF>『強化特殊スキル』</color>を発動した後、任意のメンバーが敵に<color=#FFFFFF>「混沌」</color>効果を付与した時、<color=#FFFFFF>「混沌」</color>効果のダメージ倍率+<color=#2BAD00>188%</color>、継続時間15秒。<color=#FFFFFF>『強化特殊スキル』</color>が敵に命中した時、月城柳がターゲットに与える<color=#2EB6FF>電気属性ダメージ</color>+<color=#2BAD00>15%</color>、継続時間15秒。",
+                "5": "月城柳が<color=#FFFFFF>『強化特殊スキル』</color>を発動した後、任意のメンバーが敵に<color=#FFFFFF>「混沌」</color>効果を付与した時、<color=#FFFFFF>「混沌」</color>効果のダメージ倍率+<color=#2BAD00>208%</color>、継続時間15秒。<color=#FFFFFF>『強化特殊スキル』</color>が敵に命中した時、月城柳がターゲットに与える<color=#2EB6FF>電気属性ダメージ</color>+<color=#2BAD00>16.6%</color>、継続時間15秒。",
+                "6": "月城柳が<color=#FFFFFF>『強化特殊スキル』</color>を発動した後、任意のメンバーが敵に<color=#FFFFFF>「混沌」</color>効果を付与した時、<color=#FFFFFF>「混沌」</color>効果のダメージ倍率+<color=#2BAD00>230%</color>、継続時間15秒。<color=#FFFFFF>『強化特殊スキル』</color>が敵に命中した時、月城柳がターゲットに与える<color=#2EB6FF>電気属性ダメージ</color>+<color=#2BAD00>18.3%</color>、継続時間15秒。",
+                "7": "月城柳が<color=#FFFFFF>『強化特殊スキル』</color>を発動した後、任意のメンバーが敵に<color=#FFFFFF>「混沌」</color>効果を付与した時、<color=#FFFFFF>「混沌」</color>効果のダメージ倍率+<color=#2BAD00>250%</color>、継続時間15秒。<color=#FFFFFF>『強化特殊スキル』</color>が敵に命中した時、月城柳がターゲットに与える<color=#2EB6FF>電気属性ダメージ</color>+<color=#2BAD00>20%</color>、継続時間15秒。"
+            }
+        },
+        "MathSkill": {
+            "Title": "追加能力：月相",
+            "Description": "チームに他の<color=#FFFFFF>[異常]</color>メンバーまたは自身と同じ属性のメンバーがいる時に発動：\n構えを切り替えた後、月城柳の<color=#FFFFFF>『通常攻撃：月夜見神楽』</color>が敵に命中した時、今回の攻撃による<color=#2EB6FF>電気属性の状態異常蓄積値</color>+45%、継続時間8秒。"
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "122100001": {
+                "Title": "通常攻撃：月夜見神楽",
+                "Description": "月城柳は<color=#FFFFFF>「上弦」</color>と<color=#FFFFFF>「下弦」</color>、二種類の構えを持っている。\n <IconMap:Icon_Normal> を押して発動：\n現在の構えに応じて、前方に最大5段の斬撃を放ち、<color=#F0D12B>物理属性ダメージ</color>と<color=#2EB6FF>電気属性ダメージ</color>を与える。\n戦闘中、月城柳は現在の構えによって、それぞれ異なるバフ効果を得る：\n<color=#FFFFFF>「上弦」</color>の構えで得るバフ効果：自身の与える<color=#2EB6FF>電気属性ダメージ</color>+10%。<color=#FFFFFF>『通常攻撃』</color>発動中、中断耐性レベルがアップする。\n<color=#FFFFFF>「下弦」</color>の構えで得るバフ効果：自身の貫通率+10%。<color=#FFFFFF>『通常攻撃』</color>の中断レベルがアップする。\n月城柳の構えが切り替わってからの8秒間、直前の構えで得たバフ効果は継続する。"
+            },
+            "122110001": {
+                "Title": "構え：上弦"
+            },
+            "122110002": {
+                "Description": "1段ダメージ倍率",
+                "Param": "{Skill:1221001, Prop:1001}"
+            },
+            "122110003": {
+                "Description": "2段ダメージ倍率",
+                "Param": "{Skill:1221002, Prop:1001}"
+            },
+            "122110004": {
+                "Description": "3段ダメージ倍率",
+                "Param": "{Skill:1221003, Prop:1001}"
+            },
+            "122110005": {
+                "Description": "4段ダメージ倍率",
+                "Param": "{Skill:1221004, Prop:1001}"
+            },
+            "122110006": {
+                "Description": "5段ダメージ倍率",
+                "Param": "{Skill:1221005, Prop:1001}"
+            },
+            "122110007": {
+                "Description": "1段ブレイク倍率",
+                "Param": "{Skill:1221001, Prop:1002}"
+            },
+            "122110008": {
+                "Description": "2段ブレイク倍率",
+                "Param": "{Skill:1221002, Prop:1002}"
+            },
+            "122110009": {
+                "Description": "3段ブレイク倍率",
+                "Param": "{Skill:1221003, Prop:1002}"
+            },
+            "122110010": {
+                "Description": "4段ブレイク倍率",
+                "Param": "{Skill:1221004, Prop:1002}"
+            },
+            "122110011": {
+                "Description": "5段ブレイク倍率",
+                "Param": "{Skill:1221005, Prop:1002}"
+            },
+            "122110012": {
+                "Title": "構え：下弦"
+            },
+            "122110013": {
+                "Description": "1段ダメージ倍率",
+                "Param": "{Skill:1221006, Prop:1001}"
+            },
+            "122110014": {
+                "Description": "2段ダメージ倍率",
+                "Param": "{Skill:1221007, Prop:1001}"
+            },
+            "122110015": {
+                "Description": "3段ダメージ倍率",
+                "Param": "{Skill:1221008, Prop:1001}"
+            },
+            "122110016": {
+                "Description": "4段ダメージ倍率",
+                "Param": "{Skill:1221009, Prop:1001}"
+            },
+            "122110017": {
+                "Description": "5段ダメージ倍率",
+                "Param": "{Skill:1221010, Prop:1001}"
+            },
+            "122110018": {
+                "Description": "1段ブレイク倍率",
+                "Param": "{Skill:1221006, Prop:1002}"
+            },
+            "122110019": {
+                "Description": "2段ブレイク倍率",
+                "Param": "{Skill:1221007, Prop:1002}"
+            },
+            "122110020": {
+                "Description": "3段ブレイク倍率",
+                "Param": "{Skill:1221008, Prop:1002}"
+            },
+            "122110021": {
+                "Description": "4段ブレイク倍率",
+                "Param": "{Skill:1221009, Prop:1002}"
+            },
+            "122110022": {
+                "Description": "5段ブレイク倍率",
+                "Param": "{Skill:1221010, Prop:1002}"
+            }
+        },
+        "1": {
+            "122100002": {
+                "Title": "特殊スキル：流転",
+                "Description": " <IconMap:Icon_Special> を押して発動：\n前方に斬撃を放ち、<color=#2EB6FF>電気属性ダメージ</color>を与え、構えを切り替える。\nスキル発動中、中断耐性レベルがアップする\n<color=#FFFFFF>『通常攻撃』</color>3段目、4段目、5段目のいずれかの後に発動すると、<color=#FFFFFF>「疾速の流転」</color>によって斬撃をより早く放ち、より素早く構えを切り替えることが可能。\n<color=#FFFFFF>「疾速の流転」</color>発動中、敵の攻撃をガードできる。\n<color=#FFFFFF>「疾速の流転」</color>発動後、そのまま現在の構えの<color=#FFFFFF>『通常攻撃』</color>3段目に繋げることが可能。"
+            },
+            "122100003": {
+                "Title": "強化特殊スキル：月華流転",
+                "Description": "エネルギーが溜まっている状態で <IconMap:Icon_SpecialReady> を長押しして発動：\nチャージしてから前方を高速で突き刺し、その後落下攻撃を放って、<color=#2EB6FF>電気属性ダメージ</color>を大量に与える。\n突き刺しを発動した時、月城柳は構えを切り替えつつ、<color=#FFFFFF>「森羅万象」</color>状態に突入する、継続時間15秒。状態継続中、<color=#FFFFFF>『通常攻撃』</color>5段目または他のスキルの後に<color=#FFFFFF>『通常攻撃』</color>を発動した時、そのまま<color=#FFFFFF>『通常攻撃』</color>3段目に繋がる。\n落下攻撃が状態異常の敵に命中した時、特殊な<color=#FFFFFF>「混沌」</color>効果——<color=#FFFFFF>「極性混沌」</color>が発動し、ターゲットに対して本来の<color=#FFFFFF>「混沌」</color>効果の15%分のダメージを与えると同時に、月城柳の異常マスタリー<color=#2BAD00>{CAL:5+AvatarSkillLevel(1)*2.25,100,2}%</color>分のダメージを追加で与える。<color=#FFFFFF>「極性混沌」</color>が発動しても、ターゲットの状態異常は打ち消されない。\nスキル発動中、無敵効果を得る。"
+            },
+            "122110023": {
+                "Title": "特殊スキル：流転"
+            },
+            "122110024": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1221011, Prop:1001}"
+            },
+            "122110025": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1221011, Prop:1002}"
+            },
+            "122110026": {
+                "Title": "強化特殊スキル：月華流転"
+            },
+            "122110029": {
+                "Description": "エネルギー消費",
+                "Param": "40"
+            },
+            "122110053": {
+                "Description": "突き刺しダメージ倍率",
+                "Param": "{Skill:1221022, Prop:1001}"
+            },
+            "122110054": {
+                "Description": "突き刺しブレイク倍率",
+                "Param": "{Skill:1221022, Prop:1002}"
+            },
+            "122110055": {
+                "Description": "落下攻撃ダメージ倍率",
+                "Param": "{Skill:1221023, Prop:1001}"
+            },
+            "122110056": {
+                "Description": "落下攻撃ブレイク倍率",
+                "Param": "{Skill:1221023, Prop:1002}"
+            },
+            "122110057": {
+                "Description": "追加ダメージ倍率",
+                "Param": "{CAL:5+AvatarSkillLevel(1)*2.25,100,2}%"
+            }
+        },
+        "2": {
+            "122100004": {
+                "Title": "回避：ながれ嵐",
+                "Description": " <IconMap:Icon_Evade> を押して発動：\nダッシュで高速回避する。\nスキル発動中、無敵効果を得る。"
+            },
+            "122100005": {
+                "Title": "ダッシュ攻撃：掠め飛ぶ",
+                "Description": "回避時に <IconMap:Icon_Normal> を押して発動：\n前方に斬撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。"
+            },
+            "122100006": {
+                "Title": "回避反撃：速返し",
+                "Description": "<color=#FFFFFF>『極限回避』</color>後に <IconMap:Icon_Normal> を押して発動：\n前方の敵に斬撃を放ち、<color=#2EB6FF>電気属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。\nスキル発動後、そのまま現在の構えの<color=#FFFFFF>『通常攻撃』</color>3段目に繋げることが可能。"
+            },
+            "122110030": {
+                "Title": "ダッシュ攻撃：掠め飛ぶ"
+            },
+            "122110031": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1221013, Prop:1001}"
+            },
+            "122110032": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1221013, Prop:1002}"
+            },
+            "122110033": {
+                "Title": "回避反撃：速返し"
+            },
+            "122110034": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1221014, Prop:1001}"
+            },
+            "122110035": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1221014, Prop:1002}"
+            }
+        },
+        "3": {
+            "122100007": {
+                "Title": "連携スキル：月は星とともに",
+                "Description": "<color=#FFFFFF>『連携スキル』</color>開始時に、対応するエージェントを選択して発動：\n構えを切り替えて、前方の敵に強力な斬撃を放ち、<color=#2EB6FF>電気属性ダメージ</color>を大量に与える。\nスキル発動中、無敵効果を得る。\nスキル発動後、そのまま現在の構えの<color=#FFFFFF>『通常攻撃』</color>3段目に繋げることが可能。"
+            },
+            "122100008": {
+                "Title": "終結スキル：雷影天華",
+                "Description": "デシベルレートが<color=#FFFFFF>『Maximum』</color>に達した時に <IconMap:Icon_UltimateReady> を押して発動：\n自身のポテンシャルを引き出し、一瞬の間に前方広範囲の敵に強力な斬撃を放った後、追加で落雷攻撃を行い、<color=#2EB6FF>電気属性ダメージ</color>を大量に与える。\n落雷攻撃が状態異常の敵に命中した時、特殊な<color=#FFFFFF>「混沌」</color>効果——<color=#FFFFFF>「極性混沌」</color>が発動し、ターゲットに対して本来の<color=#FFFFFF>「混沌」</color>効果の15%分のダメージを与えると同時に、月城柳の異常マスタリー<color=#2BAD00>{CAL:5+AvatarSkillLevel(3)*2.25,100,2}%</color>分のダメージを追加で与える。<color=#FFFFFF>「極性混沌」</color>が発動しても、ターゲットの状態異常は打ち消されない。\nスキル発動中、無敵効果を得る。\nスキル発動後、そのまま現在の構えの<color=#FFFFFF>『通常攻撃』</color>3段目に繋げることが可能。"
+            },
+            "122110036": {
+                "Title": "連携スキル：月は星とともに"
+            },
+            "122110037": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1221015, Prop:1001}"
+            },
+            "122110038": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1221015, Prop:1002}"
+            },
+            "122110039": {
+                "Title": "終結スキル：雷影天華"
+            },
+            "122110040": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1221016, Prop:1001}"
+            },
+            "122110041": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1221016, Prop:1002}"
+            },
+            "122110052": {
+                "Description": "追加ダメージ倍率",
+                "Param": "{CAL:5+AvatarSkillLevel(3)*2.25,100,2}%"
+            }
+        },
+        "6": {
+            "122100010": {
+                "Title": "クイック支援：風花斬り",
+                "Description": "操作しているメンバーが吹き飛ばされた時に、 <IconMap:Icon_Switch> を押して発動：\n前方の敵に斬撃を放ち、<color=#2EB6FF>電気属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。\nスキル発動後、そのまま現在の構えの<color=#FFFFFF>『通常攻撃』</color>3段目に繋げることが可能。"
+            },
+            "122100011": {
+                "Title": "パリィ支援：流光の逆飛び",
+                "Description": "出場中のメンバーが攻撃されそうになった時に、 <IconMap:Icon_Switch> を押して発動：\n敵の攻撃をパリィし、ブレイク値を大量に蓄積させる。\nスキル発動中、無敵効果を得る。"
+            },
+            "122100012": {
+                "Title": "支援突撃：飛絮の刺し",
+                "Description": "<color=#FFFFFF>『パリィ支援』</color>発動後に <IconMap:Icon_Normal> を押して発動：\n構えを切り替えて、前方の敵に高速斬撃を複数段放ち、<color=#2EB6FF>電気属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。\nスキル発動後、そのまま現在の構えの<color=#FFFFFF>『通常攻撃』</color>3段目に繋げることが可能。"
+            },
+            "122110042": {
+                "Title": "クイック支援：風花斬り"
+            },
+            "122110043": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1221017, Prop:1001}"
+            },
+            "122110044": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1221017, Prop:1002}"
+            },
+            "122110045": {
+                "Title": "パリィ支援：流光の逆飛び"
+            },
+            "122110046": {
+                "Description": "パリィ・軽 ブレイク倍率",
+                "Param": "{Skill:1221018, Prop:1002}"
+            },
+            "122110047": {
+                "Description": "パリィ・重 ブレイク倍率",
+                "Param": "{Skill:1221019, Prop:1002}"
+            },
+            "122110048": {
+                "Description": "パリィ・連続 ブレイク倍率",
+                "Param": "{Skill:1221020, Prop:1002}"
+            },
+            "122110049": {
+                "Title": "支援突撃：飛絮の刺し"
+            },
+            "122110050": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1221021, Prop:1001}"
+            },
+            "122110051": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1221021, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1221001": {
+            "DamageValue": 5660,
+            "DamageGrowth": 520,
+            "DazeValue": 2780,
+            "DazeGrowth": 130
+        },
+        "1221002": {
+            "DamageValue": 9970,
+            "DamageGrowth": 910,
+            "DazeValue": 6810,
+            "DazeGrowth": 310
+        },
+        "1221003": {
+            "DamageValue": 11310,
+            "DamageGrowth": 1030,
+            "DazeValue": 6940,
+            "DazeGrowth": 320
+        },
+        "1221004": {
+            "DamageValue": 12660,
+            "DamageGrowth": 1160,
+            "DazeValue": 7760,
+            "DazeGrowth": 360
+        },
+        "1221005": {
+            "DamageValue": 23690,
+            "DamageGrowth": 2160,
+            "DazeValue": 14520,
+            "DazeGrowth": 660
+        },
+        "1221006": {
+            "DamageValue": 11310,
+            "DamageGrowth": 1030,
+            "DazeValue": 5550,
+            "DazeGrowth": 260
+        },
+        "1221007": {
+            "DamageValue": 12920,
+            "DamageGrowth": 1180,
+            "DazeValue": 9310,
+            "DazeGrowth": 430
+        },
+        "1221008": {
+            "DamageValue": 7280,
+            "DamageGrowth": 670,
+            "DazeValue": 4460,
+            "DazeGrowth": 210
+        },
+        "1221009": {
+            "DamageValue": 10770,
+            "DamageGrowth": 980,
+            "DazeValue": 6610,
+            "DazeGrowth": 310
+        },
+        "1221010": {
+            "DamageValue": 27180,
+            "DamageGrowth": 2480,
+            "DazeValue": 16670,
+            "DazeGrowth": 760
+        },
+        "1221011": {
+            "DamageValue": 11740,
+            "DamageGrowth": 1070,
+            "DazeValue": 10570,
+            "DazeGrowth": 490
+        },
+        "1221012": {
+            "DamageValue": 62330,
+            "DamageGrowth": 5670,
+            "DazeValue": 51330,
+            "DazeGrowth": 2340
+        },
+        "1221013": {
+            "DamageValue": 5040,
+            "DamageGrowth": 460,
+            "DazeValue": 4540,
+            "DazeGrowth": 210
+        },
+        "1221014": {
+            "DamageValue": 23160,
+            "DamageGrowth": 2110,
+            "DazeValue": 18320,
+            "DazeGrowth": 840
+        },
+        "1221015": {
+            "DamageValue": 59310,
+            "DamageGrowth": 5400,
+            "DazeValue": 17830,
+            "DazeGrowth": 820
+        },
+        "1221016": {
+            "DamageValue": 151180,
+            "DamageGrowth": 13750,
+            "DazeValue": 9750,
+            "DazeGrowth": 450
+        },
+        "1221017": {
+            "DamageValue": 9360,
+            "DamageGrowth": 860,
+            "DazeValue": 8420,
+            "DazeGrowth": 390
+        },
+        "1221018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 24420,
+            "DazeGrowth": 1110
+        },
+        "1221019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 30860,
+            "DazeGrowth": 1410
+        },
+        "1221020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15020,
+            "DazeGrowth": 690
+        },
+        "1221021": {
+            "DamageValue": 40710,
+            "DamageGrowth": 3710,
+            "DazeValue": 32060,
+            "DazeGrowth": 1460
+        },
+        "1221022": {
+            "DamageValue": 16380,
+            "DamageGrowth": 1490,
+            "DazeValue": 12710,
+            "DazeGrowth": 580
+        },
+        "1221023": {
+            "DamageValue": 37780,
+            "DamageGrowth": 3440,
+            "DazeValue": 10960,
+            "DazeGrowth": 500
+        },
+        "1221024": {
+            "DamageValue": 4770,
+            "DamageGrowth": 440,
+            "DazeValue": 1890,
+            "DazeGrowth": 90
+        },
+        "1221025": {
+            "DamageValue": 22600,
+            "DamageGrowth": 2060,
+            "DazeValue": 5730,
+            "DazeGrowth": 270
+        },
+        "1221026": {
+            "DamageValue": 37780,
+            "DamageGrowth": 3440,
+            "DazeValue": 10960,
+            "DazeGrowth": 500
+        },
+        "1221027": {
+            "DamageValue": 144000,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

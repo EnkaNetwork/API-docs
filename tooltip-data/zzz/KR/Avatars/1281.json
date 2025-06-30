@@ -1,0 +1,420 @@
+{
+    "Name": "파이퍼",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "여유 시간",
+            "Description": "파이퍼가 <color=#FFFFFF>[특수 스킬: 타이어 스핀]</color>, <color=#FFFFFF>[강화 특수 스킬: 엔진 스핀]</color> 혹은 <color=#FFFFFF>[궁극기]</color> 중 시전한 스핀 베기가 적에게 명중 시 50% 확률로 <color=#FFFFFF>[동력]</color>을 1스택 추가로 획득하고, <color=#FFFFFF>[동력]</color>의 중첩 스택 최대치가 30스택까지 증가한다.",
+            "Lore": "칼리돈의 자손의 어느 평범한 아침, 파이퍼가 느긋하게 하품을 한다.\n「좋은 아침——」\n「오늘도 여유롭게 보낼 수 있겠지? 건강을 잘 챙겨야지, 안 그러면 과로로 죽을지도 몰라——」"
+        },
+        "2": {
+            "Title": "향상심",
+            "Description": "<color=#FFFFFF>[특수 스킬: 타이어 스핀]</color> 및 <color=#FFFFFF>[강화 특수 스킬: 엔진 스핀]</color>을 시전하는 동안 파이퍼의 이동 속도가 증가한다. <color=#FFFFFF>[특수 스킬: 아주 무거워]</color>, <color=#FFFFFF>[강화 특수 스킬: 아주아주 무거워]</color>, <color=#FFFFFF>[궁극기]</color> 중 시전한 내려찍기가 적에게 명중 시 스킬로 주는 <color=#F0D12B>물리 피해</color>가 10% 증가한다. 보유한 <color=#FFFFFF>[동력]</color> 스택당 해당 버프 효과가 추가로 1% 증가한다.",
+            "Lore": "잠깐의 노력은 더 긴 휴식을 위해서다.\n물론, 계속 노력하지 않아도 된다면 가장 좋겠지만——기지개를 켠 파이퍼가 트럭의 푹신한 침대를 톡톡 두드리더니 눕는다."
+        },
+        "3": {
+            "Title": "트럭 전문가",
+            "Description": "<color=#FFFFFF>[일반 공격]</color>, <color=#FFFFFF>[회피]</color>, <color=#FFFFFF>[지원 스킬]</color>, <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[콤보 스킬]</color>의 스킬 레벨+2",
+            "Lore": "파이퍼는 트럭과 관련된 모든 것에 흥미를 느낀다.\n깊게 잠이 든 상태에서도 엔진 소리가 들려오면 바로 깨어날 정도로…\n「100마력, 적재량 5톤, 이건… 쓰리게이트에서 새로 발매한 소형 트럭이네!」"
+        },
+        "4": {
+            "Title": "숙련된 기교",
+            "Description": "파티 내 임의의 캐릭터가 적에게 속성 이상 효과 부여 시 파이퍼가 에너지를 20pt 회복한다. 30초 동안 최대 1회 발동한다.",
+            "Lore": "파이퍼의 승객이 되는 건 두려운 일이다.\n그녀가 느긋하게 「꽉~ 잡아~」라고 말할 때면, 「꽉」이라는 단어가 끝나기도 전에 트럭은 이미 무서운 속도를 내고 있기 때문이다.\n물론, 그녀는 언제나 가장 빠른 시간 안에 당신을 안전하게 목적지까지 데려다줄 수 있다——그 안에 정신적인 피해는 포함되지 않지만 말이다."
+        },
+        "5": {
+            "Title": "개인적인 취미",
+            "Description": "<color=#FFFFFF>[일반 공격]</color>, <color=#FFFFFF>[회피]</color>, <color=#FFFFFF>[지원 스킬]</color>, <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[콤보 스킬]</color>의 스킬 레벨+2",
+            "Lore": "파이퍼는 외모와는 어울리지 않는 취미를 가진 듯하다.\n「이 말은 엄청 잘 달릴 것 같은데… 음, 근데 사는 사람이 별로 없어. 역시 저 말의 승률이 더 높은 거겠지…」\n「끄억——니트로 퓨엘… 별로 안 마셨거든… 한 잔 더!」"
+        },
+        "6": {
+            "Title": "가벼운 설렘",
+            "Description": "<color=#FFFFFF>[강화 특수 스킬: 엔진 스핀]</color>의 지속 시간 최대치가 2초 증가하고, <color=#FFFFFF>[동력]</color>의 지속 시간이 4초 증가한다.",
+            "Lore": "당신이 아는 것처럼, 파이퍼의 가장 큰 소원은 영원히 한가한 날들을 보내는 것이다.\n하지만 이 순간, 늘 반쯤 닫혀 있던 소녀의 두 눈이 놀랍게도 반짝반짝 빛난다.\n「너를 위해서라면… 조금 노력해 볼 수 있을지도~」"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "핵심 패시브: 파워 차지",
+            "DescriptionByLevel": {
+                "1": "파이퍼가 <color=#FFFFFF>[강화 특수 스킬: 엔진 스핀]</color> 혹은 <color=#FFFFFF>[궁극기]</color> 중 시전한 스핀 베기가 적에게 명중 시 <color=#FFFFFF>[동력]</color>을 1스택 획득한다. 최대 중첩: 20스택, 지속 시간: 12초, 중복 발동 시 지속 시간이 갱신된다. 보유한 <color=#FFFFFF>[동력]</color> 스택당 파이퍼의 <color=#F0D12B>물리 이상 축적 효율</color>이 <color=#2BAD00>2%</color> 증가한다.",
+                "2": "파이퍼가 <color=#FFFFFF>[강화 특수 스킬: 엔진 스핀]</color> 혹은 <color=#FFFFFF>[궁극기]</color> 중 시전한 스핀 베기가 적에게 명중 시 <color=#FFFFFF>[동력]</color>을 1스택 획득한다. 최대 중첩: 20스택, 지속 시간: 12초, 중복 발동 시 지속 시간이 갱신된다. 보유한 <color=#FFFFFF>[동력]</color> 스택당 파이퍼의 <color=#F0D12B>물리 이상 축적 효율</color>이 <color=#2BAD00>2.3%</color> 증가한다.",
+                "3": "파이퍼가 <color=#FFFFFF>[강화 특수 스킬: 엔진 스핀]</color> 혹은 <color=#FFFFFF>[궁극기]</color> 중 시전한 스핀 베기가 적에게 명중 시 <color=#FFFFFF>[동력]</color>을 1스택 획득한다. 최대 중첩: 20스택, 지속 시간: 12초, 중복 발동 시 지속 시간이 갱신된다. 보유한 <color=#FFFFFF>[동력]</color> 스택당 파이퍼의 <color=#F0D12B>물리 이상 축적 효율</color>이 <color=#2BAD00>2.6%</color> 증가한다.",
+                "4": "파이퍼가 <color=#FFFFFF>[강화 특수 스킬: 엔진 스핀]</color> 혹은 <color=#FFFFFF>[궁극기]</color> 중 시전한 스핀 베기가 적에게 명중 시 <color=#FFFFFF>[동력]</color>을 1스택 획득한다. 최대 중첩: 20스택, 지속 시간: 12초, 중복 발동 시 지속 시간이 갱신된다. 보유한 <color=#FFFFFF>[동력]</color> 스택당 파이퍼의 <color=#F0D12B>물리 이상 축적 효율</color>이 <color=#2BAD00>3%</color> 증가한다.",
+                "5": "파이퍼가 <color=#FFFFFF>[강화 특수 스킬: 엔진 스핀]</color> 혹은 <color=#FFFFFF>[궁극기]</color> 중 시전한 스핀 베기가 적에게 명중 시 <color=#FFFFFF>[동력]</color>을 1스택 획득한다. 최대 중첩: 20스택, 지속 시간: 12초, 중복 발동 시 지속 시간이 갱신된다. 보유한 <color=#FFFFFF>[동력]</color> 스택당 파이퍼의 <color=#F0D12B>물리 이상 축적 효율</color>이 <color=#2BAD00>3.3%</color> 증가한다.",
+                "6": "파이퍼가 <color=#FFFFFF>[강화 특수 스킬: 엔진 스핀]</color> 혹은 <color=#FFFFFF>[궁극기]</color> 중 시전한 스핀 베기가 적에게 명중 시 <color=#FFFFFF>[동력]</color>을 1스택 획득한다. 최대 중첩: 20스택, 지속 시간: 12초, 중복 발동 시 지속 시간이 갱신된다. 보유한 <color=#FFFFFF>[동력]</color> 스택당 파이퍼의 <color=#F0D12B>물리 이상 축적 효율</color>이 <color=#2BAD00>3.6%</color> 증가한다.",
+                "7": "파이퍼가 <color=#FFFFFF>[강화 특수 스킬: 엔진 스핀]</color> 혹은 <color=#FFFFFF>[궁극기]</color> 중 시전한 스핀 베기가 적에게 명중 시 <color=#FFFFFF>[동력]</color>을 1스택 획득한다. 최대 중첩: 20스택, 지속 시간: 12초, 중복 발동 시 지속 시간이 갱신된다. 보유한 <color=#FFFFFF>[동력]</color> 스택당 파이퍼의 <color=#F0D12B>물리 이상 축적 효율</color>이 <color=#2BAD00>4%</color> 증가한다."
+            }
+        },
+        "MathSkill": {
+            "Title": "추가 능력: 함께 질주하자",
+            "Description": "파티에 자신과 속성 혹은 진영이 같은 캐릭터가 존재할 시 발동:\n파이퍼가 <color=#FFFFFF>[동력]</color>을 20스택 이상 보유하면, 파티 내 모든 캐릭터가 주는 피해가 18% 증가한다."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "128100001": {
+                "Title": "일반 공격: 운전 준비",
+                "Description": "<IconMap:Icon_Normal>을 짧게 탭하여 시전:\n전방을 향해 최대 4단까지 베기를 펼쳐 <color=#F0D12B>물리 피해</color>를 준다."
+            },
+            "128110001": {
+                "Title": "일반 공격: 운전 준비"
+            },
+            "128110002": {
+                "Description": "1단 피해 배율",
+                "Param": "{Skill:1281001, Prop:1001}"
+            },
+            "128110003": {
+                "Description": "2단 피해 배율",
+                "Param": "{Skill:1281002, Prop:1001}"
+            },
+            "128110004": {
+                "Description": "3단 피해 배율",
+                "Param": "{Skill:1281003, Prop:1001}"
+            },
+            "128110005": {
+                "Description": "4단 피해 배율",
+                "Param": "{Skill:1281004, Prop:1001}"
+            },
+            "128110006": {
+                "Description": "1단 그로기 배율",
+                "Param": "{Skill:1281001, Prop:1002}"
+            },
+            "128110007": {
+                "Description": "2단 그로기 배율",
+                "Param": "{Skill:1281002, Prop:1002}"
+            },
+            "128110008": {
+                "Description": "3단 그로기 배율",
+                "Param": "{Skill:1281003, Prop:1002}"
+            },
+            "128110009": {
+                "Description": "4단 그로기 배율",
+                "Param": "{Skill:1281004, Prop:1002}"
+            }
+        },
+        "1": {
+            "128100002": {
+                "Title": "특수 스킬: 타이어 스핀",
+                "Description": "<IconMap:Icon_Special>을 짧게 탭하여 시전:\n몸을 회전해 주변에 스핀 베기로 <color=#F0D12B>물리 피해</color>를 준다.\n<IconMap:Icon_Special>을 홀드하면 스킬의 지속 시간을 연장해 더욱 강력해지는 스핀 베기를 시전할 수 있다. 또한 스킬의 차지 레벨이 증가한다. 최대 증가: 2회\n초반 3단 <color=#FFFFFF>[일반 공격]</color>, <color=#FFFFFF>[대시 공격]</color> 혹은 <color=#FFFFFF>[회피 반격]</color>에 이어서 사용할 경우, 증가 후의 차지 레벨로 빠르게 <color=#FFFFFF>[특수 스킬: 타이어 스핀]</color>을 시전할 수 있다.\n스킬을 시전하는 동안 경직 저항 레벨이 증가하고, 받는 피해가 40% 감소한다."
+            },
+            "128100003": {
+                "Title": "특수 스킬: 아주 무거워",
+                "Description": "<color=#FFFFFF>[특수 스킬: 타이어 스핀]</color>을 시전하는 동안 <IconMap:Icon_Special>에서 손을 떼 시전:\n<color=#FFFFFF>[특수 스킬: 타이어 스핀]</color>의 차지 레벨에 따라 전방을 내려찍어 <color=#F0D12B>물리 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "128100004": {
+                "Title": "강화 특수 스킬: 엔진 스핀",
+                "Description": "에너지가 충분한 상태에서 <color=#FFFFFF>[특수 스킬: 타이어 스핀]</color>이 최고 차지 레벨에 도달하면 <IconMap:Icon_SpecialReady>을 계속 홀드해 시전:\n빠르게 몸을 회전해 주변에 스핀 베기로 대량의 <color=#F0D12B>물리 피해</color>를 준다.\n시전하는 동안 지속해서 에너지를 소모한다. 최대 지속 시간: 3초\n스킬을 시전하는 동안 경직 저항 레벨이 증가하고, 받는 피해가 40% 감소한다."
+            },
+            "128100005": {
+                "Title": "강화 특수 스킬: 아주아주 무거워",
+                "Description": "<color=#FFFFFF>[강화 특수 스킬: 엔진 스핀]</color>을 시전하는 동안 <IconMap:Icon_SpecialReady>에서 손을 떼 시전:\n전방을 강력하게 내려찍어 대량의 <color=#F0D12B>물리 피해</color>를 준다.\n<color=#FFFFFF>[강화 특수 스킬: 엔진 스핀]</color>을 시전하는 동안 지속 시간이 최대치에 도달하거나 에너지가 20pt까지 떨어지면 자동으로 <color=#FFFFFF>[강화 특수 스킬: 아주아주 무거워]</color>를 시전한다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "128110010": {
+                "Title": "특수 스킬: 타이어 스핀"
+            },
+            "128110011": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1281005, Prop:1001}"
+            },
+            "128110012": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1281005, Prop:1002}"
+            },
+            "128110013": {
+                "Title": "특수 스킬: 아주 무거워"
+            },
+            "128110014": {
+                "Description": "Lv.1 차지 피해 배율",
+                "Param": "{Skill:1281006, Prop:1001}"
+            },
+            "128110015": {
+                "Description": "Lv.2 차지 피해 배율",
+                "Param": "{Skill:1281007, Prop:1001}"
+            },
+            "128110016": {
+                "Description": "Lv.3 차지 피해 배율",
+                "Param": "{Skill:1281008, Prop:1001}"
+            },
+            "128110017": {
+                "Description": "Lv.1 차지 그로기 배율",
+                "Param": "{Skill:1281006, Prop:1002}"
+            },
+            "128110018": {
+                "Description": "Lv.2 차지 그로기 배율",
+                "Param": "{Skill:1281007, Prop:1002}"
+            },
+            "128110019": {
+                "Description": "Lv.3 차지 그로기 배율",
+                "Param": "{Skill:1281008, Prop:1002}"
+            },
+            "128110020": {
+                "Title": "강화 특수 스킬: 엔진 스핀"
+            },
+            "128110021": {
+                "Description": "스핀 한 바퀴당 피해 배율",
+                "Param": "{{Skill:1281010, Prop:1001}/2}"
+            },
+            "128110022": {
+                "Description": "스핀 한 바퀴당 그로기 배율",
+                "Param": "{{Skill:1281010, Prop:1002}/2}"
+            },
+            "128110023": {
+                "Description": "에너지 소모",
+                "Param": "20pt/초"
+            },
+            "128110024": {
+                "Title": "강화 특수 스킬: 아주아주 무거워"
+            },
+            "128110025": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1281009, Prop:1001}"
+            },
+            "128110026": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1281009, Prop:1002}"
+            },
+            "128110027": {
+                "Description": "에너지 소모",
+                "Param": "20pt"
+            }
+        },
+        "2": {
+            "128100006": {
+                "Title": "회피: 핸드 브레이크 드리프트",
+                "Description": "<IconMap:Icon_Evade>을 짧게 탭하여 시전:\n빠른 대시로 회피한다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "128100007": {
+                "Title": "대시 공격: 가속 페달",
+                "Description": "회피 시 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n전방을 베어 <color=#F0D12B>물리 피해</color>를 준다."
+            },
+            "128100008": {
+                "Title": "회피 반격: 파워 드리프트",
+                "Description": "<color=#FFFFFF>[극한 회피]</color> 발동 후 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n전방의 적을 내려찍어 <color=#F0D12B>물리 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "128110028": {
+                "Title": "대시 공격: 가속 페달"
+            },
+            "128110029": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1281011, Prop:1001}"
+            },
+            "128110030": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1281011, Prop:1002}"
+            },
+            "128110031": {
+                "Title": "회피 반격: 파워 드리프트"
+            },
+            "128110032": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1281012, Prop:1001}"
+            },
+            "128110033": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1281012, Prop:1002}"
+            }
+        },
+        "3": {
+            "128100009": {
+                "Title": "콤보 스킬: 안전벨트는 필수",
+                "Description": "<color=#FFFFFF>[콤보 스킬]</color> 발동 시 해당 캐릭터를 선택해 시전:\n전방의 적을 강력하게 내려찍어 대량의 <color=#F0D12B>물리 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "128100010": {
+                "Title": "궁극기: 꽉~ 잡아~",
+                "Description": "데시벨 레벨 <color=#FFFFFF>[Maximum]</color> 달성 시 <IconMap:Icon_UltimateReady>을 짧게 탭하여 시전:\n빠르게 몸을 회전해 전방 넓은 범위 내 적에게 강력한 스핀 베기를 시전한 후 내려찍기로 대량의 <color=#F0D12B>물리 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "128110034": {
+                "Title": "콤보 스킬: 안전벨트는 필수"
+            },
+            "128110035": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1281013, Prop:1001}"
+            },
+            "128110036": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1281013, Prop:1002}"
+            },
+            "128110037": {
+                "Title": "궁극기: 꽉~ 잡아~"
+            },
+            "128110038": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1281014, Prop:1001}"
+            },
+            "128110039": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1281014, Prop:1002}"
+            }
+        },
+        "6": {
+            "128100012": {
+                "Title": "빠른 지원: 탭 브레이크",
+                "Description": "현재 조작 중인 캐릭터가 넉업되면 <IconMap:Icon_Switch>을 짧게 탭하여 시전:\n전방의 적을 내려찍어 <color=#F0D12B>물리 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "128100013": {
+                "Title": "패링 지원: 급브레이크",
+                "Description": "출전 캐릭터 피격 직전에 <IconMap:Icon_Switch>을 짧게 탭하여 시전:\n적의 공격을 패링하고 대량의 그로기 수치를 누적한다.\n우수한 패링 능력을 갖추고 있어 고강도 공격 패링 시 <color=#FFFFFF>[지원 포인트]</color>의 소모량이 감소한다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "128100014": {
+                "Title": "지원 돌격: 코너 추월",
+                "Description": "<color=#FFFFFF>[패링 지원]</color> 시전 후 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n전방의 적에게 돌진 베기로 <color=#F0D12B>물리 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "128110040": {
+                "Title": "빠른 지원: 탭 브레이크"
+            },
+            "128110041": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1281015, Prop:1001}"
+            },
+            "128110042": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1281015, Prop:1002}"
+            },
+            "128110043": {
+                "Title": "패링 지원: 급브레이크"
+            },
+            "128110044": {
+                "Description": "가벼운 패링 그로기 배율",
+                "Param": "{Skill:1281016, Prop:1002}"
+            },
+            "128110045": {
+                "Description": "강한 패링 그로기 배율",
+                "Param": "{Skill:1281017, Prop:1002}"
+            },
+            "128110046": {
+                "Description": "연속 패링 그로기 배율",
+                "Param": "{Skill:1281018, Prop:1002}"
+            },
+            "128110047": {
+                "Title": "지원 돌격: 코너 추월"
+            },
+            "128110048": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1281019, Prop:1001}"
+            },
+            "128110049": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1281019, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1281001": {
+            "DamageValue": 5900,
+            "DamageGrowth": 540,
+            "DazeValue": 2950,
+            "DazeGrowth": 140
+        },
+        "1281002": {
+            "DamageValue": 7880,
+            "DamageGrowth": 720,
+            "DazeValue": 6450,
+            "DazeGrowth": 300
+        },
+        "1281003": {
+            "DamageValue": 15010,
+            "DamageGrowth": 1370,
+            "DazeValue": 12190,
+            "DazeGrowth": 560
+        },
+        "1281004": {
+            "DamageValue": 32060,
+            "DamageGrowth": 2920,
+            "DazeValue": 25220,
+            "DazeGrowth": 1150
+        },
+        "1281005": {
+            "DamageValue": 27170,
+            "DamageGrowth": 2470,
+            "DazeValue": 27170,
+            "DazeGrowth": 1240
+        },
+        "1281006": {
+            "DamageValue": 9340,
+            "DamageGrowth": 850,
+            "DazeValue": 9340,
+            "DazeGrowth": 430
+        },
+        "1281007": {
+            "DamageValue": 10340,
+            "DamageGrowth": 940,
+            "DazeValue": 10340,
+            "DazeGrowth": 470
+        },
+        "1281008": {
+            "DamageValue": 23500,
+            "DamageGrowth": 2140,
+            "DazeValue": 23500,
+            "DazeGrowth": 1070
+        },
+        "1281009": {
+            "DamageValue": 61290,
+            "DamageGrowth": 5580,
+            "DazeValue": 39680,
+            "DazeGrowth": 1810
+        },
+        "1281010": {
+            "DamageValue": 18710,
+            "DamageGrowth": 1710,
+            "DazeValue": 10960,
+            "DazeGrowth": 500
+        },
+        "1281011": {
+            "DamageValue": 9010,
+            "DamageGrowth": 820,
+            "DazeValue": 4510,
+            "DazeGrowth": 210
+        },
+        "1281012": {
+            "DamageValue": 26900,
+            "DamageGrowth": 2450,
+            "DazeValue": 23000,
+            "DazeGrowth": 1050
+        },
+        "1281013": {
+            "DamageValue": 65230,
+            "DamageGrowth": 5930,
+            "DazeValue": 25330,
+            "DazeGrowth": 1160
+        },
+        "1281014": {
+            "DamageValue": 166040,
+            "DamageGrowth": 15100,
+            "DazeValue": 32830,
+            "DazeGrowth": 1500
+        },
+        "1281015": {
+            "DamageValue": 13000,
+            "DamageGrowth": 1190,
+            "DazeValue": 13000,
+            "DazeGrowth": 600
+        },
+        "1281016": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 24670,
+            "DazeGrowth": 1130
+        },
+        "1281017": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 31170,
+            "DazeGrowth": 1420
+        },
+        "1281018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15170,
+            "DazeGrowth": 690
+        },
+        "1281019": {
+            "DamageValue": 40050,
+            "DamageGrowth": 3650,
+            "DazeValue": 35200,
+            "DazeGrowth": 1600
+        }
+    }
+}

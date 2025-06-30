@@ -1,0 +1,534 @@
+{
+    "Name": "Jane",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Cố Vấn Tội Phạm",
+            "Description": "Giới hạn số lần sử dụng <color=#FFFFFF>Tấn Công Thường: Cú Nhảy Salchow</color> tăng thêm 1 lần. Trong trạng thái <color=#FFFFFF>Cuồng Nhiệt</color>, <color=#F0D12B>Hiệu Suất Tích Lũy Dị Thường Vật Lý</color> của Jane tăng thêm 15%, đồng thời mỗi một điểm Tinh Thông Dị Thường của Jane sẽ giúp tăng thêm 0,1% sát thương bản thân gây ra, tối đa tăng 30%.",
+            "Lore": "\"Cố vấn tội phạm, có nghĩa là cố vấn nghiên cứu hành vi tội phạm, chứ không phải cố vấn tinh thông cách làm thế nào để phạm tội.\"\nJane đột nhiên áp sát, chớp chớp mắt.\n\"Đương nhiên, nếu muốn hiểu theo cách sau... thì tôi cũng không phản đối.\""
+        },
+        "2": {
+            "Title": "Gần Đèn Thì Sáng",
+            "Description": "Jane tấn công trúng kẻ địch đang trong trạng thái <color=#FFFFFF>Gặm Nhấm</color>, hoặc nhân vật bất kỳ trong đội kích hoạt <color=#F0D12B>Cường Kích</color> lên kẻ địch trong trạng thái <color=#FFFFFF>Gặm Nhấm</color>, sẽ bỏ qua 15% Phòng Thủ của mục tiêu, khi sát thương <color=#F0D12B>Cường Kích</color> kích hoạt bạo kích, DMG Bạo Kích tăng thêm 50%.",
+            "Lore": "Khi ta nhìn chăm chú vào vực sâu sẽ bị vực sâu nhìn lại, đây là bước đầu tiên.\n\"Sau đó đến gần nó, đi vào nó, thấu hiểu nó, đây là bước thứ hai.\"\n\"Bước cuối cùng... đừng trở thành nó.\""
+        },
+        "3": {
+            "Title": "Vô Danh Tính",
+            "Description": "Cấp kỹ năng <color=#FFFFFF>Tấn Công Thường</color>, <color=#FFFFFF>Né</color>, <color=#FFFFFF>Kỹ Năng Chi Viện</color>, <color=#FFFFFF>Chiến Kỹ</color>, <color=#FFFFFF>Liên Kích</color> +2",
+            "Lore": "\"Vô danh tính, cũng có nghĩa là tôi có thể trở thành bất cứ ai. Chẳng hạn như người bạn thích nhất~\"\n\"Hoặc có thể là... người bạn sợ nhất?\""
+        },
+        "4": {
+            "Title": "Tùy Cơ Ứng Biến",
+            "Description": "Khi nhân vật bất kỳ trong đội kích hoạt hiệu quả <color=#F0D12B>Cường Kích</color> hoặc <color=#FFFFFF>Hỗn Loạn</color>, sát thương Thuộc Tính Dị Thường do nhân vật toàn đội gây ra tăng 18%, duy trì 15s.",
+            "Lore": "\"Là thợ săn hay con mồi, điều này phụ thuộc vào góc nhìn mà bạn chọn. Nhưng, tôi thì thích một cách phán đoán đơn giản hơn.\"\n\"Người thua cuộc, chính là con mồi.\""
+        },
+        "5": {
+            "Title": "Sở Thích Tích Trữ",
+            "Description": "Cấp kỹ năng <color=#FFFFFF>Tấn Công Thường</color>, <color=#FFFFFF>Né</color>, <color=#FFFFFF>Kỹ Năng Chi Viện</color>, <color=#FFFFFF>Chiến Kỹ</color>, <color=#FFFFFF>Liên Kích</color> +2",
+            "Lore": "Trong phòng của Jane luôn nhét đầy các thứ, trong đó nhiều nhất là thức ăn nhanh.\n\"Ở đây tuyệt lắm phải không? Khắp nơi đều là đồ ăn, chỉ cần giơ tay là có ngay~\""
+        },
+        "6": {
+            "Title": "Thủ Thuật \"Bẩn Thỉu\"",
+            "Description": "Trong trạng thái <color=#FFFFFF>Cuồng Nhiệt</color>, Tỷ Lệ Bạo Kích của Jane tăng 20%, DMG Bạo Kích tăng 40%. Khi nhân vật bất kỳ trong đội thi triển hiệu quả <color=#F0D12B>Cường Kích</color> lên kẻ địch, Jane sẽ trực tiếp vào trạng thái <color=#FFFFFF>Cuồng Nhiệt</color>, và hồi phục <color=#FFFFFF>Dòng Chảy Cuồng Nhiệt</color> đến tối đa. Khi sát thương <color=#F0D12B>Cường Kích</color> lần này kích hoạt bạo kích, sẽ phát động thêm một lần tấn công lên mục tiêu, gây <color=#F0D12B>DMG Vật Lý</color> bằng với 1600% Tinh Thông Dị Thường của Jane.",
+            "Lore": "Nơi đường phố sẽ không quan tâm thủ đoạn có dơ bẩn hay không, chỉ quan tâm kết quả thắng hay thua.\n\"Nhìn ra được ham muốn đen tối nhất, mới có thể suy luận ra điểm yếu đau đớn nhất.\""
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Bị Động Cốt Lõi: Quan Sát",
+            "DescriptionByLevel": {
+                "1": "Khi Jane tấn công trúng kẻ địch, sẽ khiến kẻ địch rơi vào trạng thái <color=#FFFFFF>Gặm Nhấm</color>, duy trì 10s. Khi nhân vật bất kỳ trong đội kích hoạt <color=#F0D12B>Cường Kích</color> và gán hiệu quả <color=#F0D12B>Sợ Hãi</color> cho kẻ địch đang trong trạng thái <color=#FFFFFF>Gặm Nhấm</color>, thì thời gian duy trì hiệu quả <color=#F0D12B>Sợ Hãi</color> tăng 5s. Sát thương <color=#F0D12B>Cường Kích</color> gây ra cho kẻ địch ở trạng thái <color=#FFFFFF>Gặm Nhấm</color> có tỷ lệ kích hoạt bạo kích, Tỷ Lệ Bạo Kích cơ bản là <color=#2BAD00>20%</color>, DMG Bạo Kích là 50%, mỗi một điểm Tinh Thông Dị Thường của Jane sẽ khiến Tỷ Lệ Bạo Kích của hiệu quả này tăng thêm <color=#2BAD00>0,1%</color>.",
+                "2": "Khi Jane tấn công trúng kẻ địch, sẽ khiến kẻ địch rơi vào trạng thái <color=#FFFFFF>Gặm Nhấm</color>, duy trì 10s. Khi nhân vật bất kỳ trong đội kích hoạt <color=#F0D12B>Cường Kích</color> và gán hiệu quả <color=#F0D12B>Sợ Hãi</color> cho kẻ địch đang trong trạng thái <color=#FFFFFF>Gặm Nhấm</color>, thì thời gian duy trì hiệu quả <color=#F0D12B>Sợ Hãi</color> tăng 5s. Sát thương <color=#F0D12B>Cường Kích</color> gây ra cho kẻ địch ở trạng thái <color=#FFFFFF>Gặm Nhấm</color> có tỷ lệ kích hoạt bạo kích, Tỷ Lệ Bạo Kích cơ bản là <color=#2BAD00>25%</color>, DMG Bạo Kích là 50%, mỗi một điểm Tinh Thông Dị Thường của Jane sẽ khiến Tỷ Lệ Bạo Kích của hiệu quả này tăng thêm <color=#2BAD00>0,11%</color>.",
+                "3": "Khi Jane tấn công trúng kẻ địch, sẽ khiến kẻ địch rơi vào trạng thái <color=#FFFFFF>Gặm Nhấm</color>, duy trì 10s. Khi nhân vật bất kỳ trong đội kích hoạt <color=#F0D12B>Cường Kích</color> và gán hiệu quả <color=#F0D12B>Sợ Hãi</color> cho kẻ địch đang trong trạng thái <color=#FFFFFF>Gặm Nhấm</color>, thì thời gian duy trì hiệu quả <color=#F0D12B>Sợ Hãi</color> tăng 5s. Sát thương <color=#F0D12B>Cường Kích</color> gây ra cho kẻ địch ở trạng thái <color=#FFFFFF>Gặm Nhấm</color> có tỷ lệ kích hoạt bạo kích, Tỷ Lệ Bạo Kích cơ bản là <color=#2BAD00>28%</color>, DMG Bạo Kích là 50%, mỗi một điểm Tinh Thông Dị Thường của Jane sẽ khiến Tỷ Lệ Bạo Kích của hiệu quả này tăng thêm <color=#2BAD00>0,12%</color>.",
+                "4": "Khi Jane tấn công trúng kẻ địch, sẽ khiến kẻ địch rơi vào trạng thái <color=#FFFFFF>Gặm Nhấm</color>, duy trì 10s. Khi nhân vật bất kỳ trong đội kích hoạt <color=#F0D12B>Cường Kích</color> và gán hiệu quả <color=#F0D12B>Sợ Hãi</color> cho kẻ địch đang trong trạng thái <color=#FFFFFF>Gặm Nhấm</color>, thì thời gian duy trì hiệu quả <color=#F0D12B>Sợ Hãi</color> tăng 5s. Sát thương <color=#F0D12B>Cường Kích</color> gây ra cho kẻ địch ở trạng thái <color=#FFFFFF>Gặm Nhấm</color> có tỷ lệ kích hoạt bạo kích, Tỷ Lệ Bạo Kích cơ bản là <color=#2BAD00>31%</color>, DMG Bạo Kích là 50%, mỗi một điểm Tinh Thông Dị Thường của Jane sẽ khiến Tỷ Lệ Bạo Kích của hiệu quả này tăng thêm <color=#2BAD00>0,13%</color>.",
+                "5": "Khi Jane tấn công trúng kẻ địch, sẽ khiến kẻ địch rơi vào trạng thái <color=#FFFFFF>Gặm Nhấm</color>, duy trì 10s. Khi nhân vật bất kỳ trong đội kích hoạt <color=#F0D12B>Cường Kích</color> và gán hiệu quả <color=#F0D12B>Sợ Hãi</color> cho kẻ địch đang trong trạng thái <color=#FFFFFF>Gặm Nhấm</color>, thì thời gian duy trì hiệu quả <color=#F0D12B>Sợ Hãi</color> tăng 5s. Sát thương <color=#F0D12B>Cường Kích</color> gây ra cho kẻ địch ở trạng thái <color=#FFFFFF>Gặm Nhấm</color> có tỷ lệ kích hoạt bạo kích, Tỷ Lệ Bạo Kích cơ bản là <color=#2BAD00>34%</color>, DMG Bạo Kích là 50%, mỗi một điểm Tinh Thông Dị Thường của Jane sẽ khiến Tỷ Lệ Bạo Kích của hiệu quả này tăng thêm <color=#2BAD00>0,14%</color>.",
+                "6": "Khi Jane tấn công trúng kẻ địch, sẽ khiến kẻ địch rơi vào trạng thái <color=#FFFFFF>Gặm Nhấm</color>, duy trì 10s. Khi nhân vật bất kỳ trong đội kích hoạt <color=#F0D12B>Cường Kích</color> và gán hiệu quả <color=#F0D12B>Sợ Hãi</color> cho kẻ địch đang trong trạng thái <color=#FFFFFF>Gặm Nhấm</color>, thì thời gian duy trì hiệu quả <color=#F0D12B>Sợ Hãi</color> tăng 5s. Sát thương <color=#F0D12B>Cường Kích</color> gây ra cho kẻ địch ở trạng thái <color=#FFFFFF>Gặm Nhấm</color> có tỷ lệ kích hoạt bạo kích, Tỷ Lệ Bạo Kích cơ bản là <color=#2BAD00>37%</color>, DMG Bạo Kích là 50%, mỗi một điểm Tinh Thông Dị Thường của Jane sẽ khiến Tỷ Lệ Bạo Kích của hiệu quả này tăng thêm <color=#2BAD00>0,15%</color>.",
+                "7": "Khi Jane tấn công trúng kẻ địch, sẽ khiến kẻ địch rơi vào trạng thái <color=#FFFFFF>Gặm Nhấm</color>, duy trì 10s. Khi nhân vật bất kỳ trong đội kích hoạt <color=#F0D12B>Cường Kích</color> và gán hiệu quả <color=#F0D12B>Sợ Hãi</color> cho kẻ địch đang trong trạng thái <color=#FFFFFF>Gặm Nhấm</color>, thì thời gian duy trì hiệu quả <color=#F0D12B>Sợ Hãi</color> tăng 5s. Sát thương <color=#F0D12B>Cường Kích</color> gây ra cho kẻ địch ở trạng thái <color=#FFFFFF>Gặm Nhấm</color> có tỷ lệ kích hoạt bạo kích, Tỷ Lệ Bạo Kích cơ bản là <color=#2BAD00>40%</color>, DMG Bạo Kích là 50%, mỗi một điểm Tinh Thông Dị Thường của Jane sẽ khiến Tỷ Lệ Bạo Kích của hiệu quả này tăng thêm <color=#2BAD00>0,16%</color>."
+            }
+        },
+        "MathSkill": {
+            "Title": "Năng Lực Thêm: Điểm Đau",
+            "Description": "Khi trong đội có nhân vật <color=#FFFFFF>Dị Thường</color> khác hoặc nhân vật cùng phe với bản thân sẽ kích hoạt:\nJane tăng 20% <color=#F0D12B>Hiệu Suất Tích Lũy Dị Thường Vật Lý</color>. Khi kẻ địch đã trong trạng thái Thuộc Tính Dị Thường, <color=#F0D12B>Chỉ Số Tích Lũy Dị Thường Vật Lý</color> mà Jane tích lũy lên mục tiêu sẽ tăng thêm 15%."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "126100001": {
+                "Title": "Tấn Công Thường: Vũ Điệu Sắc Bén",
+                "Description": "Nhấn <IconMap:Icon_Normal> phát động:\nThực hiện tối đa 6 đòn tấn công về phía trước, gây <color=#F0D12B>DMG Vật Lý</color>."
+            },
+            "126100002": {
+                "Title": "Cuồng Nhiệt",
+                "Description": "Khi Jane phát động <color=#FFFFFF>Né Hoàn Hảo</color>, <color=#FFFFFF>Hỗ Trợ Chống Đỡ</color> hoặc phát động chiêu thức gây sát thương cho kẻ địch, sẽ tích lũy <color=#FFFFFF>Dòng Chảy Cuồng Nhiệt</color>, khi <color=#FFFFFF>Dòng Chảy Cuồng Nhiệt</color> tích lũy đến tối đa, Jane sẽ vào trạng thái <color=#FFFFFF>Cuồng Nhiệt</color>.\nTrong trạng thái <color=#FFFFFF>Cuồng Nhiệt</color>, Jane sẽ tăng 25% <color=#F0D12B>Hiệu Suất Tích Lũy Dị Thường Vật Lý</color>. Ngoài ra, nếu Tinh Thông Dị Thường của Jane cao hơn 120 điểm, mỗi 1 điểm Tinh Thông Dị Thường vượt mức này sẽ giúp tấn công của bản thân tăng 2 điểm, thông qua cách này tối đa sẽ tăng 600 điểm tấn công của bản thân.\nKhi Jane phát động chiêu thức gây sát thương trong trạng thái <color=#FFFFFF>Cuồng Nhiệt</color>, sẽ tiêu hao <color=#FFFFFF>Dòng Chảy Cuồng Nhiệt</color>, khi kích hoạt <color=#FFFFFF>Né Hoàn Hảo</color> hoặc <color=#FFFFFF>Hỗ Trợ Chống Đỡ</color>, có thể hồi phục <color=#FFFFFF>Dòng Chảy Cuồng Nhiệt</color>, khi tiêu hao hết <color=#FFFFFF>Dòng Chảy Cuồng Nhiệt</color>, sẽ thoát trạng thái <color=#FFFFFF>Cuồng Nhiệt</color>."
+            },
+            "126100003": {
+                "Title": "Tấn Công Thường: Cú Nhảy Salchow",
+                "Description": "Khi vào trạng thái <color=#FFFFFF>Cuồng Nhiệt</color>, Jane sẽ nhận được 1 lần sử dụng <color=#FFFFFF>Tấn Công Thường: Cú Nhảy Salchow</color>.\nKhi có số lần sử dụng, nhấn giữ <IconMap:Icon_Normal> phát động:\nPhát động tấn công nhanh liên tục về phía trước, sau đó phát động đòn kết thúc, gây <color=#F0D12B>DMG Vật Lý</color>.\nTrong thời gian tấn công liên tục, duy trì nhấn giữ có thể kéo dài thời gian duy trì của chiêu thức, thả <IconMap:Icon_Normal> có thể phát động sớm đòn kết thúc.\nTrong thời gian phát động tấn công liên tục sẽ tăng cấp Kháng Gián Đoạn, sát thương phải chịu giảm 40%, trong thời gian phát động đòn kết thúc sẽ có hiệu quả Vô Địch.\nTrong trạng thái <color=#FFFFFF>Cuồng Nhiệt</color>, khi phát động <color=#FFFFFF>Tấn Công Thường: Cú Nhảy Salchow</color> gây sát thương cho kẻ địch, có thể hồi phục <color=#FFFFFF>Dòng Chảy Cuồng Nhiệt</color>."
+            },
+            "126100018": {
+                "Title": "Tấn Công Thường: Vũ Điệu Sắc Bén"
+            },
+            "126100019": {
+                "Description": "Bội Số DMG Đòn 1",
+                "Param": "{Skill:1261001, Prop:1001}"
+            },
+            "126100020": {
+                "Description": "Bội Số DMG Đòn 2",
+                "Param": "{Skill:1261002, Prop:1001}"
+            },
+            "126100021": {
+                "Description": "Bội Số DMG Đòn 3",
+                "Param": "{Skill:1261003, Prop:1001}"
+            },
+            "126100022": {
+                "Description": "Bội Số DMG Đòn 4",
+                "Param": "{Skill:1261004, Prop:1001}"
+            },
+            "126100023": {
+                "Description": "Bội Số DMG Đòn 5",
+                "Param": "{Skill:1261005, Prop:1001}"
+            },
+            "126100024": {
+                "Description": "Bội Số DMG Đòn 6",
+                "Param": "{Skill:1261006, Prop:1001}"
+            },
+            "126100025": {
+                "Description": "Bội Số Choáng Đòn 1",
+                "Param": "{Skill:1261001, Prop:1002}"
+            },
+            "126100026": {
+                "Description": "Bội Số Choáng Đòn 2",
+                "Param": "{Skill:1261002, Prop:1002}"
+            },
+            "126100027": {
+                "Description": "Bội Số Choáng Đòn 3",
+                "Param": "{Skill:1261003, Prop:1002}"
+            },
+            "126100028": {
+                "Description": "Bội Số Choáng Đòn 4",
+                "Param": "{Skill:1261004, Prop:1002}"
+            },
+            "126100029": {
+                "Description": "Bội Số Choáng Đòn 5",
+                "Param": "{Skill:1261005, Prop:1002}"
+            },
+            "126100030": {
+                "Description": "Bội Số Choáng Đòn 6",
+                "Param": "{Skill:1261006, Prop:1002}"
+            },
+            "126100031": {
+                "Title": "Tấn Công Thường: Cú Nhảy Salchow"
+            },
+            "126100032": {
+                "Description": "Bội Số DMG Tấn Công Liên Tục",
+                "Param": "{Skill:1261007, Prop:1001}"
+            },
+            "126100033": {
+                "Description": "Bội Số DMG Đòn Kết Thúc",
+                "Param": "{Skill:1261008, Prop:1001}"
+            },
+            "126100034": {
+                "Description": "Bội Số Choáng Tấn Công Liên Tục",
+                "Param": "{Skill:1261007, Prop:1002}"
+            },
+            "126100035": {
+                "Description": "Bội Số Choáng Đòn Kết Thúc",
+                "Param": "{Skill:1261008, Prop:1002}"
+            }
+        },
+        "1": {
+            "126100004": {
+                "Title": "Chiến Kỹ: Càn Quét Không Trung",
+                "Description": "Nhấn <IconMap:Icon_Special> phát động.\nNhảy lên không trung, sau khi đá liên tục về phía trước sẽ thực hiện đòn quét ngang, gây <color=#F0D12B>DMG Vật Lý</color>.\nChiêu thức khi phát động sẽ tăng cấp Kháng Gián Đoạn."
+            },
+            "126100005": {
+                "Title": "Siêu Chiến Kỹ: Càn Quét Không Trung - Quét Sạch",
+                "Description": "Khi đủ Năng Lượng, nhấn <IconMap:Icon_SpecialReady> phát động:\nNhảy lên không trung, sau khi đá liên tục nhiều lần về phía trước sẽ thực hiện đòn quét ngang, gây lượng lớn <color=#F0D12B>DMG Vật Lý</color>.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "126100036": {
+                "Title": "Chiến Kỹ: Càn Quét Không Trung"
+            },
+            "126100037": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1261009, Prop:1001}"
+            },
+            "126100038": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1261009, Prop:1002}"
+            },
+            "126100039": {
+                "Title": "Siêu Chiến Kỹ: Càn Quét Không Trung - Quét Sạch"
+            },
+            "126100040": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1261010, Prop:1001}"
+            },
+            "126100041": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1261010, Prop:1002}"
+            },
+            "126100042": {
+                "Description": "Tiêu Hao Năng Lượng",
+                "Param": "60 điểm"
+            }
+        },
+        "2": {
+            "126100006": {
+                "Title": "Né: Tàn Ảnh",
+                "Description": "Nhấn <IconMap:Icon_Evade> phát động:\nTrượt nhanh để né tránh.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch.\nJane có thêm 1 lần Né, trước khi vào trạng thái <color=#FFFFFF>Cuồng Nhiệt</color>, Jane sẽ hoán đổi sử dụng hai loại Né. Sau khi vào trạng thái <color=#FFFFFF>Cuồng Nhiệt</color>, khi Né, Jane có thể xuyên qua kẻ địch trước mặt."
+            },
+            "126100007": {
+                "Title": "Tấn Công Lướt: Cú Nhảy Edge",
+                "Description": "Khi Né, nhấn <IconMap:Icon_Normal> phát động:\nNếu thực hiện ngay sau cú Né thứ nhất, sẽ thực hiện đòn chém hướng lên về phía trước, gây <color=#F0D12B>DMG Vật Lý</color>.\nNếu thực hiện ngay sau cú Né thứ hai, sẽ thực hiện chém liên tục về phía trước, gây <color=#F0D12B>DMG Vật Lý</color>."
+            },
+            "126100008": {
+                "Title": "Tấn Công Lướt: Hư Ảnh Đột Kích",
+                "Description": "Trong trạng thái <color=#FFFFFF>Cuồng Nhiệt</color>, khi Né nhấn <IconMap:Icon_Normal> phát động:\nThực hiện ba nhát chém đột ngột và nhanh chóng về phía trước, gây <color=#F0D12B>DMG Vật Lý</color>."
+            },
+            "126100009": {
+                "Title": "Phản Kích Khi Né: Lướt Bóng",
+                "Description": "Sau khi kích hoạt <color=#FFFFFF>Né Hoàn Hảo</color>, nhấn <IconMap:Icon_Normal> phát động:\nNếu thực hiện ngay sau cú Né thứ nhất, sẽ phát động chém nhiều lần vào kẻ địch phía trước, sau đó đột ngột đâm từ trên xuống, gây <color=#F0D12B>DMG Vật Lý</color>.\nNếu thực hiện ngay sau cú Né thứ hai, sẽ nhảy lên và phát động 3 lần tấn công liên tục vào kẻ địch phía trước, gây <color=#F0D12B>DMG Vật Lý</color>.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "126100010": {
+                "Title": "Phản Kích Khi Né: Điệu Nhảy Lướt Bóng",
+                "Description": "Trong trạng thái <color=#FFFFFF>Cuồng Nhiệt</color>, sau khi kích hoạt <color=#FFFFFF>Né Hoàn Hảo</color>, nhấn <IconMap:Icon_Normal> phát động:\nPhát động nhanh chóng chém nhiều lần vào kẻ địch phía trước, gây <color=#F0D12B>DMG Vật Lý</color>.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "126100043": {
+                "Title": "Tấn Công Lướt: Cú Nhảy Edge"
+            },
+            "126100044": {
+                "Description": "Bội Số DMG Đòn 1",
+                "Param": "{Skill:1261011, Prop:1001}"
+            },
+            "126100045": {
+                "Description": "Bội Số Choáng Đòn 1",
+                "Param": "{Skill:1261011, Prop:1002}"
+            },
+            "126100046": {
+                "Description": "Bội Số DMG Đòn 2",
+                "Param": "{Skill:1261012, Prop:1001}"
+            },
+            "126100047": {
+                "Description": "Bội Số Choáng Đòn 2",
+                "Param": "{Skill:1261012, Prop:1002}"
+            },
+            "126100048": {
+                "Title": "Tấn Công Lướt: Hư Ảnh Đột Kích"
+            },
+            "126100049": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1261013, Prop:1001}"
+            },
+            "126100050": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1261013, Prop:1002}"
+            },
+            "126100051": {
+                "Title": "Phản Kích Khi Né: Lướt Bóng"
+            },
+            "126100052": {
+                "Description": "Bội Số DMG Đòn 1",
+                "Param": "{Skill:1261014, Prop:1001}"
+            },
+            "126100053": {
+                "Description": "Bội Số Choáng Đòn 1",
+                "Param": "{Skill:1261014, Prop:1002}"
+            },
+            "126100054": {
+                "Description": "Bội Số DMG Đòn 2",
+                "Param": "{Skill:1261015, Prop:1001}"
+            },
+            "126100055": {
+                "Description": "Bội Số Choáng Đòn 2",
+                "Param": "{Skill:1261015, Prop:1002}"
+            },
+            "126100056": {
+                "Title": "Phản Kích Khi Né: Điệu Nhảy Lướt Bóng"
+            },
+            "126100057": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1261016, Prop:1001}"
+            },
+            "126100058": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1261016, Prop:1002}"
+            }
+        },
+        "3": {
+            "126100011": {
+                "Title": "Liên Kích: Đóa Hoa Tội Lỗi",
+                "Description": "Khi kích hoạt <color=#FFFFFF>Liên Kích</color>, chọn nhân vật tương ứng phát động:\nChém xuyên qua kẻ địch trong phạm vi lớn phía trước, gây lượng lớn <color=#F0D12B>DMG Vật Lý</color>.\nKhi phát động chiêu thức, Jane sẽ trực tiếp vào trạng thái <color=#FFFFFF>Cuồng Nhiệt</color>, và hồi phục <color=#FFFFFF>Dòng Chảy Cuồng Nhiệt</color> đến tối đa.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "126100012": {
+                "Title": "Tuyệt Kỹ: Cảnh Diễn Hạ Màn",
+                "Description": "Khi cấp Decibel đạt <color=#FFFFFF>Cực Hạn</color>, nhấn <IconMap:Icon_UltimateReady> phát động:\nChém mạnh xuyên qua kẻ địch trong phạm vi lớn phía trước, sau đó phát động đòn kết thúc, gây lượng lớn <color=#F0D12B>DMG Vật Lý</color>.\nKhi phát động chiêu thức, Jane sẽ trực tiếp vào trạng thái <color=#FFFFFF>Cuồng Nhiệt</color>, và hồi phục <color=#FFFFFF>Dòng Chảy Cuồng Nhiệt</color> đến tối đa.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "126100059": {
+                "Title": "Liên Kích: Đóa Hoa Tội Lỗi"
+            },
+            "126100060": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1261017, Prop:1001}"
+            },
+            "126100061": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1261017, Prop:1002}"
+            },
+            "126100062": {
+                "Title": "Tuyệt Kỹ: Cảnh Diễn Hạ Màn"
+            },
+            "126100063": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1261018, Prop:1001}"
+            },
+            "126100064": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1261018, Prop:1002}"
+            }
+        },
+        "6": {
+            "126100014": {
+                "Title": "Hỗ Trợ Nhanh: Gai Nhọn Đen Tối",
+                "Description": "Khi nhân vật đang thao tác bị đánh bay, nhấn <IconMap:Icon_Switch> phát động:\nPhát động chém nhiều lần vào kẻ địch phía trước, sau đó đột ngột đâm từ trên xuống, gây <color=#F0D12B>DMG Vật Lý</color>.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "126100015": {
+                "Title": "Hỗ Trợ Nhanh: Cú Nhảy Lutz",
+                "Description": "Trong trạng thái <color=#FFFFFF>Cuồng Nhiệt</color>, khi nhân vật đang thao tác bị đánh bay, nhấn <IconMap:Icon_Switch> phát động:\nPhát động nhanh chóng chém nhiều lần vào kẻ địch phía trước, gây <color=#F0D12B>DMG Vật Lý</color>.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "126100016": {
+                "Title": "Hỗ Trợ Chống Đỡ: Phòng Tuyến Cuối Cùng",
+                "Description": "Khi nhân vật trong sân sắp bị tấn công, nhấn <IconMap:Icon_Switch> phát động:\nChống đỡ tấn công của kẻ địch, tích lũy lượng lớn Điểm Choáng.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "126100017": {
+                "Title": "Đột Kích Chi Viện: Lốc Quét",
+                "Description": "Sau khi phát động <color=#FFFFFF>Hỗ Trợ Chống Đỡ</color>, nhấn <IconMap:Icon_Normal> phát động:\nSau khi nhảy lên cao sẽ chém nhanh vào kẻ địch, sau đó phát động chém quét trong phạm vi lớn trước mặt, gây <color=#F0D12B>DMG Vật Lý</color>.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "126100065": {
+                "Title": "Hỗ Trợ Nhanh: Gai Nhọn Đen Tối"
+            },
+            "126100066": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1261019, Prop:1001}"
+            },
+            "126100067": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1261019, Prop:1002}"
+            },
+            "126100068": {
+                "Title": "Hỗ Trợ Nhanh: Cú Nhảy Lutz"
+            },
+            "126100069": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1261020, Prop:1001}"
+            },
+            "126100070": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1261020, Prop:1002}"
+            },
+            "126100071": {
+                "Title": "Hỗ Trợ Chống Đỡ: Phòng Tuyến Cuối Cùng"
+            },
+            "126100072": {
+                "Description": "Bội Số Đỡ Choáng Nhẹ",
+                "Param": "{Skill:1261021, Prop:1002}"
+            },
+            "126100073": {
+                "Description": "Bội Số Đỡ Choáng Mạnh",
+                "Param": "{Skill:1261022, Prop:1002}"
+            },
+            "126100074": {
+                "Description": "Bội Số Đỡ Choáng Liên Tục",
+                "Param": "{Skill:1261023, Prop:1002}"
+            },
+            "126100075": {
+                "Title": "Đột Kích Chi Viện: Lốc Quét"
+            },
+            "126100076": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1261024, Prop:1001}"
+            },
+            "126100077": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1261024, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1261001": {
+            "DamageValue": 3610,
+            "DamageGrowth": 330,
+            "DazeValue": 1530,
+            "DazeGrowth": 70
+        },
+        "1261002": {
+            "DamageValue": 6230,
+            "DamageGrowth": 570,
+            "DazeValue": 4430,
+            "DazeGrowth": 210
+        },
+        "1261003": {
+            "DamageValue": 8350,
+            "DamageGrowth": 760,
+            "DazeValue": 5950,
+            "DazeGrowth": 280
+        },
+        "1261004": {
+            "DamageValue": 16340,
+            "DamageGrowth": 1490,
+            "DazeValue": 10970,
+            "DazeGrowth": 500
+        },
+        "1261005": {
+            "DamageValue": 9880,
+            "DamageGrowth": 900,
+            "DazeValue": 6870,
+            "DazeGrowth": 320
+        },
+        "1261006": {
+            "DamageValue": 29130,
+            "DamageGrowth": 2650,
+            "DazeValue": 20000,
+            "DazeGrowth": 910
+        },
+        "1261007": {
+            "DamageValue": 30080,
+            "DamageGrowth": 2740,
+            "DazeValue": 22920,
+            "DazeGrowth": 1050
+        },
+        "1261008": {
+            "DamageValue": 16130,
+            "DamageGrowth": 1470,
+            "DazeValue": 12290,
+            "DazeGrowth": 560
+        },
+        "1261009": {
+            "DamageValue": 5780,
+            "DamageGrowth": 530,
+            "DazeValue": 5780,
+            "DazeGrowth": 270
+        },
+        "1261010": {
+            "DamageValue": 57470,
+            "DamageGrowth": 5230,
+            "DazeValue": 46810,
+            "DazeGrowth": 2130
+        },
+        "1261011": {
+            "DamageValue": 7150,
+            "DamageGrowth": 650,
+            "DazeValue": 3580,
+            "DazeGrowth": 170
+        },
+        "1261012": {
+            "DamageValue": 7150,
+            "DamageGrowth": 650,
+            "DazeValue": 3580,
+            "DazeGrowth": 170
+        },
+        "1261013": {
+            "DamageValue": 10450,
+            "DamageGrowth": 950,
+            "DazeValue": 5230,
+            "DazeGrowth": 240
+        },
+        "1261014": {
+            "DamageValue": 34120,
+            "DamageGrowth": 3110,
+            "DazeValue": 22920,
+            "DazeGrowth": 1050
+        },
+        "1261015": {
+            "DamageValue": 34120,
+            "DamageGrowth": 3110,
+            "DazeValue": 22920,
+            "DazeGrowth": 1050
+        },
+        "1261016": {
+            "DamageValue": 38700,
+            "DamageGrowth": 3520,
+            "DazeValue": 24750,
+            "DazeGrowth": 1130
+        },
+        "1261017": {
+            "DamageValue": 63260,
+            "DamageGrowth": 5760,
+            "DazeValue": 23760,
+            "DazeGrowth": 1080
+        },
+        "1261018": {
+            "DamageValue": 147060,
+            "DamageGrowth": 13370,
+            "DazeValue": 18650,
+            "DazeGrowth": 850
+        },
+        "1261019": {
+            "DamageValue": 11920,
+            "DamageGrowth": 1090,
+            "DazeValue": 11920,
+            "DazeGrowth": 550
+        },
+        "1261020": {
+            "DamageValue": 13750,
+            "DamageGrowth": 1250,
+            "DazeValue": 13750,
+            "DazeGrowth": 630
+        },
+        "1261021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1261022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1261023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1261024": {
+            "DamageValue": 34550,
+            "DamageGrowth": 3150,
+            "DazeValue": 29900,
+            "DazeGrowth": 1360
+        },
+        "1261025": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1261026": {
+            "DamageValue": 35630,
+            "DamageGrowth": 3240,
+            "DazeValue": 13580,
+            "DazeGrowth": 620
+        },
+        "1261027": {
+            "DamageValue": 138020,
+            "DamageGrowth": 12550,
+            "DazeValue": 57530,
+            "DazeGrowth": 2620
+        },
+        "1261028": {
+            "DamageValue": 6000,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1261029": {
+            "DamageValue": 60000,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

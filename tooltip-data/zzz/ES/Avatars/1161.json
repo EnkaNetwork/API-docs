@@ -1,0 +1,532 @@
+{
+    "Name": "Lighter",
+    "ElementTypes": [
+        "Fire"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "El campeón invicto",
+            "Description": "Entre los efectos negativos provocados por la <color=#FFFFFF>técnica pasiva: Acelerador</color>, la duración del Aturdimiento provocado por el efecto de <color=#FFFFFF>derrota</color> aumenta a 5 s. Además, la <color=#98EFF0>resistencia glacial</color> y la <color=#FF5521>resistencia ígnea</color> se reducen en un 10 % adicional. Si durante la ejecución del puñetazo suave o el combo de puñetazos directos, Lighter agota su <color=#FFFFFF>confianza</color>, enlaza automáticamente con la ejecución de un poderoso ataque final que inflige un 30 % de daño adicional.",
+            "Lore": "Para el campeón, ganar es de suma importancia. Enfrentarse al más fuerte de los adversarios y derrotarlo le permite eliminar esta amenaza para la líder, además de inspirar una tremenda confianza en todos los miembros de la banda.\nPara él, solo la victoria es digna de elogio.\n«Un campeón no puede caer derrotado.»"
+        },
+        "2": {
+            "Title": "Pañuelo Encarnado",
+            "Description": "Al aplicar el efecto de <color=#FFFFFF>derrota</color> sobre los enemigos mediante la <color=#FFFFFF>técnica pasiva: Acelerador</color>, la tasa de vulnerabilidad del objetivo aumenta en un 25 %. El efecto de aumento del <color=#98EFF0>daño glacial</color> y el <color=#FF5521>daño ígneo</color> otorgado por el efecto de <color=#FFFFFF>euforia</color> de la <color=#FFFFFF>técnica adicional: Espíritu combativo</color> aumenta a un 120 % de su valor original.",
+            "Lore": "Lighter, conocido como el Pañuelo Encarnado de los Hijos de Calidón, es muy conocido en la Periferia. No solo por sus puños, sino también por su... singular forma de hablar.\n«Me gusta tomarme las cosas con calma... Pero ¿qué harían sin mí?»"
+        },
+        "3": {
+            "Title": "Cabecilla mercenario",
+            "Description": "Nivel de <color=#FFFFFF>ataque normal</color>, <color=#FFFFFF>evasión</color>, <color=#FFFFFF>técnica de apoyo</color>, <color=#FFFFFF>técnica especial</color> y <color=#FFFFFF>técnica en cadena</color> +2",
+            "Lore": "«Supongo que no soy la persona más adecuada para ser cabecilla de nada.»"
+        },
+        "4": {
+            "Title": "Gafas de sol",
+            "Description": "Cuando Lighter está inactivo, la Recuperación de Energía del agente activo aumenta en un 10 %. Cuando Lighter entra en el estado de <color=#FFFFFF>subidón de confianza</color>, todos los agentes inactivos recuperan 4 ptos. de energía. Este efecto puede activarse una vez cada 18 s.",
+            "Lore": "«¿Que por qué llevo gafas de sol? Humm... Supongo que es porque me mareo al ver sangre.»"
+        },
+        "5": {
+            "Title": "Toma de decisiones",
+            "Description": "Nivel de <color=#FFFFFF>ataque normal</color>, <color=#FFFFFF>evasión</color>, <color=#FFFFFF>técnica de apoyo</color>, <color=#FFFFFF>técnica especial</color> y <color=#FFFFFF>técnica en cadena</color> +2",
+            "Lore": "«Dime qué hacer y lo haré. Así de fácil.»\nLighter se ajusta las gafas de sol con una sonrisa despreocupada.\n«Eso sí, no hagas que yo tome las decisiones.»"
+        },
+        "6": {
+            "Title": "Superviviente",
+            "Description": "El efecto de recuperación de <color=#FFFFFF>confianza</color> de Lighter aumenta a un 200 % de su valor original. Cuando Lighter golpea a un enemigo con un ataque pesado del <color=#FFFFFF>ataque normal</color>, el <color=#FFFFFF>contraataque</color>, la <color=#FFFFFF>técnica especial</color>, la <color=#FFFFFF>técnica especial EX</color>, el <color=#FFFFFF>apoyo rápido</color>, el <color=#FFFFFF>ataque sucesivo</color>, la <color=#FFFFFF>técnica en cadena</color> o la <color=#FFFFFF>técnica definitiva</color>, Lighter activa el efecto de <color=#FFFFFF>estallido de fuego</color>, infligiendo <color=#FF5521>daño ígneo</color> equivalente al 250 % del Ataque. Este efecto puede activarse una vez cada 8 s contra cada enemigo. Si el Impacto de Lighter supera los 170 ptos., por cada punto adicional, el multiplicador de <color=#FFFFFF>estallido de fuego</color> aumenta en un 5 % adicional hasta un máximo de un 500 %. Si durante la ejecución del puñetazo suave o el combo de puñetazos directos, Lighter agota sus puntos de <color=#FFFFFF>confianza</color>, enlaza automáticamente con la ejecución de un poderoso ataque final. Al golpear a un enemigo con este ataque final, Lighter puede ignorar el TdE y activar el efecto de <color=#FFFFFF>estallido de fuego</color> de forma adicional una vez más.",
+            "Lore": "Si pudiera volver atrás en el tiempo, Lighter no volvería a escoger convertirse en el único superviviente.\nDesafortunadamente, el destino rara vez atiende a decisiones."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Técnica pasiva: Acelerador",
+            "DescriptionByLevel": {
+                "1": "Lighter obtiene <color=#FFFFFF>confianza</color> automáticamente con el tiempo, recuperando 2.9 ptos. por segundo. Por cada punto de energía que consuma cualquier miembro del equipo, Lighter recupera 0.26 ptos. de <color=#FFFFFF>confianza</color> adicionales. Puede tener hasta un máximo de 100 ptos. de <color=#FFFFFF>confianza</color>. Al acumular 80 ptos. de <color=#FFFFFF>confianza</color>, la próxima vez que Lighter entre en combate, activará un <color=#FFFFFF>apoyo rápido</color>. Cuando Lighter tiene 80 ptos. o más de <color=#FFFFFF>confianza</color>, al ejecutar el quinto golpe de su <color=#FFFFFF>ataque normal</color>, entra en el estado de <color=#FFFFFF>subidón de confianza</color>, lo que aumenta la fuerza del ataque del puñetazo suave de inicio, el combo de puñetazos directos y el ataque final del quinto golpe del <color=#FFFFFF>ataque normal</color>. Tras aumentar su poder, al golpear a un enemigo con esta habilidad, Lighter consume continuamente <color=#FFFFFF>confianza</color>. Por cada 10 ptos. de <color=#FFFFFF>confianza</color> consumidos, el Impacto de Lighter aumenta en un <color=#2BAD00>1 %</color> hasta un máximo de un <color=#2BAD00>10 %</color> durante 6 s.\nEn el estado de <color=#FFFFFF>subidón de confianza</color>, Lighter ya no obtiene <color=#FFFFFF>confianza</color> automáticamente con el tiempo. Si durante la ejecución del puñetazo suave de inicio o el combo de puñetazos directos, Lighter agota sus puntos de <color=#FFFFFF>confianza</color>, enlaza automáticamente un ataque final más poderoso.\nEn el estado de <color=#FFFFFF>subidón de confianza</color>, al golpear a un enemigo con un puñetazo suave o un combo de puñetazos directos, la <color=#98EFF0>resistencia glacial</color> y la <color=#FF5521>resistencia ígnea</color> del objetivo se reducen en un 15 % durante 30 s.\nEn el estado de <color=#FFFFFF>subidón de confianza</color>, al golpear a un enemigo con el ataque final, provoca sobre el objetivo el efecto de <color=#FFFFFF>derrota</color>. Cuando el enemigo está afectado por Aturdimiento, este efecto aumenta la duración del Aturdimiento en 3 s. Antes de que finalice el estado de Aturdimiento, solo se puede provocar el efecto de <color=#FFFFFF>derrota</color> una vez sobre el mismo objetivo.\nAl golpear a un enemigo con el ataque final durante el quinto golpe del <color=#FFFFFF>ataque normal</color>, al pasar a estar inactivo o al consumir toda la <color=#FFFFFF>confianza</color>, Lighter sale del estado de <color=#FFFFFF>subidón de confianza </color> y conserva los puntos de <color=#FFFFFF>confianza</color> que no haya consumido.",
+                "2": "Lighter obtiene <color=#FFFFFF>confianza</color> automáticamente con el tiempo, recuperando 2.9 ptos. por segundo. Por cada punto de energía que consuma cualquier miembro del equipo, Lighter recupera 0.26 ptos. de <color=#FFFFFF>confianza</color> adicionales. Puede tener hasta un máximo de 100 ptos. de <color=#FFFFFF>confianza</color>. Al acumular 80 ptos. de <color=#FFFFFF>confianza</color>, la próxima vez que Lighter entre en combate, activará un <color=#FFFFFF>apoyo rápido</color>. Cuando Lighter tiene 80 ptos. o más de <color=#FFFFFF>confianza</color>, al ejecutar el quinto golpe de su <color=#FFFFFF>ataque normal</color>, entra en el estado de <color=#FFFFFF>subidón de confianza</color>, lo que aumenta la fuerza del ataque del puñetazo suave de inicio, el combo de puñetazos directos y el ataque final del quinto golpe del <color=#FFFFFF>ataque normal</color>. Tras aumentar su poder, al golpear a un enemigo con esta habilidad, Lighter consume continuamente <color=#FFFFFF>confianza</color>. Por cada 10 ptos. de <color=#FFFFFF>confianza</color> consumidos, el Impacto de Lighter aumenta en un <color=#2BAD00>1.17 %</color> hasta un máximo de un <color=#2BAD00>11.7 %</color> durante 6 s.\nEn el estado de <color=#FFFFFF>subidón de confianza</color>, Lighter ya no obtiene <color=#FFFFFF>confianza</color> automáticamente con el tiempo. Si durante la ejecución del puñetazo suave de inicio o el combo de puñetazos directos, Lighter agota sus puntos de <color=#FFFFFF>confianza</color>, enlaza automáticamente un ataque final más poderoso.\nEn el estado de <color=#FFFFFF>subidón de confianza</color>, al golpear a un enemigo con un puñetazo suave o un combo de puñetazos directos, la <color=#98EFF0>resistencia glacial</color> y la <color=#FF5521>resistencia ígnea</color> del objetivo se reducen en un 15 % durante 30 s.\nEn el estado de <color=#FFFFFF>subidón de confianza</color>, al golpear a un enemigo con el ataque final, provoca sobre el objetivo el efecto de <color=#FFFFFF>derrota</color>. Cuando el enemigo está afectado por Aturdimiento, este efecto aumenta la duración del Aturdimiento en 3 s. Antes de que finalice el estado de Aturdimiento, solo se puede provocar el efecto de <color=#FFFFFF>derrota</color> una vez sobre el mismo objetivo.\nAl golpear a un enemigo con el ataque final durante el quinto golpe del <color=#FFFFFF>ataque normal</color>, al pasar a estar inactivo o al consumir toda la <color=#FFFFFF>confianza</color>, Lighter sale del estado de <color=#FFFFFF>subidón de confianza </color> y conserva los puntos de <color=#FFFFFF>confianza</color> que no haya consumido.",
+                "3": "Lighter obtiene <color=#FFFFFF>confianza</color> automáticamente con el tiempo, recuperando 2.9 ptos. por segundo. Por cada punto de energía que consuma cualquier miembro del equipo, Lighter recupera 0.26 ptos. de <color=#FFFFFF>confianza</color> adicionales. Puede tener hasta un máximo de 100 ptos. de <color=#FFFFFF>confianza</color>. Al acumular 80 ptos. de <color=#FFFFFF>confianza</color>, la próxima vez que Lighter entre en combate, activará un <color=#FFFFFF>apoyo rápido</color>. Cuando Lighter tiene 80 ptos. o más de <color=#FFFFFF>confianza</color>, al ejecutar el quinto golpe de su <color=#FFFFFF>ataque normal</color>, entra en el estado de <color=#FFFFFF>subidón de confianza</color>, lo que aumenta la fuerza del ataque del puñetazo suave de inicio, el combo de puñetazos directos y el ataque final del quinto golpe del <color=#FFFFFF>ataque normal</color>. Tras aumentar su poder, al golpear a un enemigo con esta habilidad, Lighter consume continuamente <color=#FFFFFF>confianza</color>. Por cada 10 ptos. de <color=#FFFFFF>confianza</color> consumidos, el Impacto de Lighter aumenta en un <color=#2BAD00>1.33 %</color> hasta un máximo de un <color=#2BAD00>13.3 %</color> durante 6 s.\nEn el estado de <color=#FFFFFF>subidón de confianza</color>, Lighter ya no obtiene <color=#FFFFFF>confianza</color> automáticamente con el tiempo. Si durante la ejecución del puñetazo suave de inicio o el combo de puñetazos directos, Lighter agota sus puntos de <color=#FFFFFF>confianza</color>, enlaza automáticamente un ataque final más poderoso.\nEn el estado de <color=#FFFFFF>subidón de confianza</color>, al golpear a un enemigo con un puñetazo suave o un combo de puñetazos directos, la <color=#98EFF0>resistencia glacial</color> y la <color=#FF5521>resistencia ígnea</color> del objetivo se reducen en un 15 % durante 30 s.\nEn el estado de <color=#FFFFFF>subidón de confianza</color>, al golpear a un enemigo con el ataque final, provoca sobre el objetivo el efecto de <color=#FFFFFF>derrota</color>. Cuando el enemigo está afectado por Aturdimiento, este efecto aumenta la duración del Aturdimiento en 3 s. Antes de que finalice el estado de Aturdimiento, solo se puede provocar el efecto de <color=#FFFFFF>derrota</color> una vez sobre el mismo objetivo.\nAl golpear a un enemigo con el ataque final durante el quinto golpe del <color=#FFFFFF>ataque normal</color>, al pasar a estar inactivo o al consumir toda la <color=#FFFFFF>confianza</color>, Lighter sale del estado de <color=#FFFFFF>subidón de confianza </color> y conserva los puntos de <color=#FFFFFF>confianza</color> que no haya consumido.",
+                "4": "Lighter obtiene <color=#FFFFFF>confianza</color> automáticamente con el tiempo, recuperando 2.9 ptos. por segundo. Por cada punto de energía que consuma cualquier miembro del equipo, Lighter recupera 0.26 ptos. de <color=#FFFFFF>confianza</color> adicionales. Puede tener hasta un máximo de 100 ptos. de <color=#FFFFFF>confianza</color>. Al acumular 80 ptos. de <color=#FFFFFF>confianza</color>, la próxima vez que Lighter entre en combate, activará un <color=#FFFFFF>apoyo rápido</color>. Cuando Lighter tiene 80 ptos. o más de <color=#FFFFFF>confianza</color>, al ejecutar el quinto golpe de su <color=#FFFFFF>ataque normal</color>, entra en el estado de <color=#FFFFFF>subidón de confianza</color>, lo que aumenta la fuerza del ataque del puñetazo suave de inicio, el combo de puñetazos directos y el ataque final del quinto golpe del <color=#FFFFFF>ataque normal</color>. Tras aumentar su poder, al golpear a un enemigo con esta habilidad, Lighter consume continuamente <color=#FFFFFF>confianza</color>. Por cada 10 ptos. de <color=#FFFFFF>confianza</color> consumidos, el Impacto de Lighter aumenta en un <color=#2BAD00>1.5 %</color> hasta un máximo de un <color=#2BAD00>15 %</color> durante 6 s.\nEn el estado de <color=#FFFFFF>subidón de confianza</color>, Lighter ya no obtiene <color=#FFFFFF>confianza</color> automáticamente con el tiempo. Si durante la ejecución del puñetazo suave de inicio o el combo de puñetazos directos, Lighter agota sus puntos de <color=#FFFFFF>confianza</color>, enlaza automáticamente un ataque final más poderoso.\nEn el estado de <color=#FFFFFF>subidón de confianza</color>, al golpear a un enemigo con un puñetazo suave o un combo de puñetazos directos, la <color=#98EFF0>resistencia glacial</color> y la <color=#FF5521>resistencia ígnea</color> del objetivo se reducen en un 15 % durante 30 s.\nEn el estado de <color=#FFFFFF>subidón de confianza</color>, al golpear a un enemigo con el ataque final, provoca sobre el objetivo el efecto de <color=#FFFFFF>derrota</color>. Cuando el enemigo está afectado por Aturdimiento, este efecto aumenta la duración del Aturdimiento en 3 s. Antes de que finalice el estado de Aturdimiento, solo se puede provocar el efecto de <color=#FFFFFF>derrota</color> una vez sobre el mismo objetivo.\nAl golpear a un enemigo con el ataque final durante el quinto golpe del <color=#FFFFFF>ataque normal</color>, al pasar a estar inactivo o al consumir toda la <color=#FFFFFF>confianza</color>, Lighter sale del estado de <color=#FFFFFF>subidón de confianza </color> y conserva los puntos de <color=#FFFFFF>confianza</color> que no haya consumido.",
+                "5": "Lighter obtiene <color=#FFFFFF>confianza</color> automáticamente con el tiempo, recuperando 2.9 ptos. por segundo. Por cada punto de energía que consuma cualquier miembro del equipo, Lighter recupera 0.26 ptos. de <color=#FFFFFF>confianza</color> adicionales. Puede tener hasta un máximo de 100 ptos. de <color=#FFFFFF>confianza</color>. Al acumular 80 ptos. de <color=#FFFFFF>confianza</color>, la próxima vez que Lighter entre en combate, activará un <color=#FFFFFF>apoyo rápido</color>. Cuando Lighter tiene 80 ptos. o más de <color=#FFFFFF>confianza</color>, al ejecutar el quinto golpe de su <color=#FFFFFF>ataque normal</color>, entra en el estado de <color=#FFFFFF>subidón de confianza</color>, lo que aumenta la fuerza del ataque del puñetazo suave de inicio, el combo de puñetazos directos y el ataque final del quinto golpe del <color=#FFFFFF>ataque normal</color>. Tras aumentar su poder, al golpear a un enemigo con esta habilidad, Lighter consume continuamente <color=#FFFFFF>confianza</color>. Por cada 10 ptos. de <color=#FFFFFF>confianza</color> consumidos, el Impacto de Lighter aumenta en un <color=#2BAD00>1.67 %</color> hasta un máximo de un <color=#2BAD00>16.7 %</color> durante 6 s.\nEn el estado de <color=#FFFFFF>subidón de confianza</color>, Lighter ya no obtiene <color=#FFFFFF>confianza</color> automáticamente con el tiempo. Si durante la ejecución del puñetazo suave de inicio o el combo de puñetazos directos, Lighter agota sus puntos de <color=#FFFFFF>confianza</color>, enlaza automáticamente un ataque final más poderoso.\nEn el estado de <color=#FFFFFF>subidón de confianza</color>, al golpear a un enemigo con un puñetazo suave o un combo de puñetazos directos, la <color=#98EFF0>resistencia glacial</color> y la <color=#FF5521>resistencia ígnea</color> del objetivo se reducen en un 15 % durante 30 s.\nEn el estado de <color=#FFFFFF>subidón de confianza</color>, al golpear a un enemigo con el ataque final, provoca sobre el objetivo el efecto de <color=#FFFFFF>derrota</color>. Cuando el enemigo está afectado por Aturdimiento, este efecto aumenta la duración del Aturdimiento en 3 s. Antes de que finalice el estado de Aturdimiento, solo se puede provocar el efecto de <color=#FFFFFF>derrota</color> una vez sobre el mismo objetivo.\nAl golpear a un enemigo con el ataque final durante el quinto golpe del <color=#FFFFFF>ataque normal</color>, al pasar a estar inactivo o al consumir toda la <color=#FFFFFF>confianza</color>, Lighter sale del estado de <color=#FFFFFF>subidón de confianza </color> y conserva los puntos de <color=#FFFFFF>confianza</color> que no haya consumido.",
+                "6": "Lighter obtiene <color=#FFFFFF>confianza</color> automáticamente con el tiempo, recuperando 2.9 ptos. por segundo. Por cada punto de energía que consuma cualquier miembro del equipo, Lighter recupera 0.26 ptos. de <color=#FFFFFF>confianza</color> adicionales. Puede tener hasta un máximo de 100 ptos. de <color=#FFFFFF>confianza</color>. Al acumular 80 ptos. de <color=#FFFFFF>confianza</color>, la próxima vez que Lighter entre en combate, activará un <color=#FFFFFF>apoyo rápido</color>. Cuando Lighter tiene 80 ptos. o más de <color=#FFFFFF>confianza</color>, al ejecutar el quinto golpe de su <color=#FFFFFF>ataque normal</color>, entra en el estado de <color=#FFFFFF>subidón de confianza</color>, lo que aumenta la fuerza del ataque del puñetazo suave de inicio, el combo de puñetazos directos y el ataque final del quinto golpe del <color=#FFFFFF>ataque normal</color>. Tras aumentar su poder, al golpear a un enemigo con esta habilidad, Lighter consume continuamente <color=#FFFFFF>confianza</color>. Por cada 10 ptos. de <color=#FFFFFF>confianza</color> consumidos, el Impacto de Lighter aumenta en un <color=#2BAD00>1.83 %</color> hasta un máximo de un <color=#2BAD00>18.3 %</color> durante 6 s.\nEn el estado de <color=#FFFFFF>subidón de confianza</color>, Lighter ya no obtiene <color=#FFFFFF>confianza</color> automáticamente con el tiempo. Si durante la ejecución del puñetazo suave de inicio o el combo de puñetazos directos, Lighter agota sus puntos de <color=#FFFFFF>confianza</color>, enlaza automáticamente un ataque final más poderoso.\nEn el estado de <color=#FFFFFF>subidón de confianza</color>, al golpear a un enemigo con un puñetazo suave o un combo de puñetazos directos, la <color=#98EFF0>resistencia glacial</color> y la <color=#FF5521>resistencia ígnea</color> del objetivo se reducen en un 15 % durante 30 s.\nEn el estado de <color=#FFFFFF>subidón de confianza</color>, al golpear a un enemigo con el ataque final, provoca sobre el objetivo el efecto de <color=#FFFFFF>derrota</color>. Cuando el enemigo está afectado por Aturdimiento, este efecto aumenta la duración del Aturdimiento en 3 s. Antes de que finalice el estado de Aturdimiento, solo se puede provocar el efecto de <color=#FFFFFF>derrota</color> una vez sobre el mismo objetivo.\nAl golpear a un enemigo con el ataque final durante el quinto golpe del <color=#FFFFFF>ataque normal</color>, al pasar a estar inactivo o al consumir toda la <color=#FFFFFF>confianza</color>, Lighter sale del estado de <color=#FFFFFF>subidón de confianza </color> y conserva los puntos de <color=#FFFFFF>confianza</color> que no haya consumido.",
+                "7": "Lighter obtiene <color=#FFFFFF>confianza</color> automáticamente con el tiempo, recuperando 2.9 ptos. por segundo. Por cada punto de energía que consuma cualquier miembro del equipo, Lighter recupera 0.26 ptos. de <color=#FFFFFF>confianza</color> adicionales. Puede tener hasta un máximo de 100 ptos. de <color=#FFFFFF>confianza</color>. Al acumular 80 ptos. de <color=#FFFFFF>confianza</color>, la próxima vez que Lighter entre en combate, activará un <color=#FFFFFF>apoyo rápido</color>. Cuando Lighter tiene 80 ptos. o más de <color=#FFFFFF>confianza</color>, al ejecutar el quinto golpe de su <color=#FFFFFF>ataque normal</color>, entra en el estado de <color=#FFFFFF>subidón de confianza</color>, lo que aumenta la fuerza del ataque del puñetazo suave de inicio, el combo de puñetazos directos y el ataque final del quinto golpe del <color=#FFFFFF>ataque normal</color>. Tras aumentar su poder, al golpear a un enemigo con esta habilidad, Lighter consume continuamente <color=#FFFFFF>confianza</color>. Por cada 10 ptos. de <color=#FFFFFF>confianza</color> consumidos, el Impacto de Lighter aumenta en un <color=#2BAD00>2 %</color> hasta un máximo de un <color=#2BAD00>20 %</color> durante 6 s.\nEn el estado de <color=#FFFFFF>subidón de confianza</color>, Lighter ya no obtiene <color=#FFFFFF>confianza</color> automáticamente con el tiempo. Si durante la ejecución del puñetazo suave de inicio o el combo de puñetazos directos, Lighter agota sus puntos de <color=#FFFFFF>confianza</color>, enlaza automáticamente un ataque final más poderoso.\nEn el estado de <color=#FFFFFF>subidón de confianza</color>, al golpear a un enemigo con un puñetazo suave o un combo de puñetazos directos, la <color=#98EFF0>resistencia glacial</color> y la <color=#FF5521>resistencia ígnea</color> del objetivo se reducen en un 15 % durante 30 s.\nEn el estado de <color=#FFFFFF>subidón de confianza</color>, al golpear a un enemigo con el ataque final, provoca sobre el objetivo el efecto de <color=#FFFFFF>derrota</color>. Cuando el enemigo está afectado por Aturdimiento, este efecto aumenta la duración del Aturdimiento en 3 s. Antes de que finalice el estado de Aturdimiento, solo se puede provocar el efecto de <color=#FFFFFF>derrota</color> una vez sobre el mismo objetivo.\nAl golpear a un enemigo con el ataque final durante el quinto golpe del <color=#FFFFFF>ataque normal</color>, al pasar a estar inactivo o al consumir toda la <color=#FFFFFF>confianza</color>, Lighter sale del estado de <color=#FFFFFF>subidón de confianza </color> y conserva los puntos de <color=#FFFFFF>confianza</color> que no haya consumido."
+            }
+        },
+        "MathSkill": {
+            "Title": "Técnica adicional: Espíritu combativo",
+            "Description": "Si en el equipo hay otro agente <color=#FFFFFF>atacante</color> o de la misma afiliación, cuando Lighter golpea a un enemigo con el quinto golpe del <color=#FFFFFF>ataque normal</color> en el estado de <color=#FFFFFF>subidón de confianza</color>, todos los personajes del equipo obtienen una carga de <color=#FFFFFF>euforia</color> durante 30 s. Pueden acumularse hasta 20 cargas. La duración se reinicia con cada activación. Por cada carga de <color=#FFFFFF>euforia</color>, el <color=#98EFF0>daño glacial</color> y el <color=#FF5521>daño ígneo</color> que inflige un agente aumentan en un 1.25 %. Al obtener cargas de <color=#FFFFFF>euforia</color>, si el Impacto de Lighter es superior a 170 ptos., por cada 10 ptos. adicionales de Impacto, el efecto de aumento que otorga cada carga de <color=#FFFFFF>euforia</color> aumenta en un 0.25 % adicional. Cuando cualquier personaje del equipo ejecuta una <color=#FFFFFF>técnica en cadena</color>, la duración de <color=#FFFFFF>euforia</color> de todos los personajes del equipo se reinicia. Cuando se activa el efecto de <color=#FFFFFF>euforia</color>, el <color=#98EFF0>daño glacial</color> y el <color=#FF5521>daño ígneo</color> que infligen los agentes pueden aumentar hasta un máximo de un 75 %."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "116100001": {
+                "Title": "Ataque normal: Puño atronador en L",
+                "Description": "Pulsa o mantén pulsado <IconMap:Icon_Normal> para usarlo.\nEjecuta hasta 5 golpes hacia delante, infligiendo <color=#F0D12B>daño físico</color> y <color=#FF5521>daño ígneo</color>.\nDurante la ejecución del tercer golpe del <color=#FFFFFF>ataque normal</color>, mueve el {LAYOUT_CONSOLECONTROLLER#joystick}{LAYOUT_FALLBACK#joystick} y, al mismo tiempo, pulsa repetidamente o mantén pulsado <IconMap:Icon_Normal> para ejecutar una serie de ataques subsiguientes cuerpo a cuerpo.\nSuelta el {LAYOUT_CONSOLECONTROLLER#joystick}{LAYOUT_FALLBACK#joystick} para enlazar el cuarto golpe del <color=#FFFFFF>ataque normal</color>.\nDurante el puñetazo suave de inicio del quinto golpe del <color=#FFFFFF>ataque normal</color>, mueve el {LAYOUT_CONSOLECONTROLLER#joystick}{LAYOUT_FALLBACK#joystick} y, al mismo tiempo, pulsa repetidamente o mantén pulsado <IconMap:Icon_Normal> para alternar entre un puñetazo suave de inicio y el cuarto golpe del <color=#FFFFFF>ataque normal</color>. Suelta el {LAYOUT_CONSOLECONTROLLER#joystick}{LAYOUT_FALLBACK#joystick} para ejecutar un combo de puñetazos directos.\nSigue pulsando repetidamente o manteniendo pulsado <IconMap:Icon_Normal> para extender la duración del combo de puñetazos directos.\nTras dejar de pulsar <IconMap:Icon_Normal> o cuando el combo de puñetazos directos alcance su duración máxima, ejecuta un ataque final hacia delante. Durante la ejecución de este ataque final, el agente se vuelve invulnerable.\nDurante el quinto golpe del <color=#FFFFFF>ataque normal</color>, el daño que recibe Lighter se reduce en un 40 %.\nEn el estado de <color=#FFFFFF>subidón de confianza</color>, el nivel de resistencia a interrupción aumenta durante la ejecución del quinto golpe del <color=#FFFFFF>ataque normal</color>, y el efecto de reducción de daño aumenta a un 80 %."
+            },
+            "116110001": {
+                "Title": "Ataque normal: Puño atronador en L"
+            },
+            "116110002": {
+                "Description": "Multiplicador de daño de 1.er golpe",
+                "Param": "{Skill:1161001, Prop:1001}"
+            },
+            "116110003": {
+                "Description": "Multiplicador de daño de 2.º golpe",
+                "Param": "{Skill:1161002, Prop:1001}"
+            },
+            "116110004": {
+                "Description": "Multiplicador de daño de 3.er golpe",
+                "Param": "{Skill:1161003, Prop:1001}"
+            },
+            "116110005": {
+                "Description": "Multiplicador de daño del 1.er ataque subsiguiente",
+                "Param": "{Skill:1161004, Prop:1001}"
+            },
+            "116110006": {
+                "Description": "Multiplicador de daño del 2.º ataque subsiguiente",
+                "Param": "{Skill:1161005, Prop:1001}"
+            },
+            "116110007": {
+                "Description": "Multiplicador de daño del 3.er ataque subsiguiente",
+                "Param": "{Skill:1161006, Prop:1001}"
+            },
+            "116110008": {
+                "Description": "Multiplicador de daño del 4.º ataque subsiguiente",
+                "Param": "{Skill:1161007, Prop:1001}"
+            },
+            "116110009": {
+                "Description": "Multiplicador de daño del 5.º ataque subsiguiente",
+                "Param": "{Skill:1161008, Prop:1001}"
+            },
+            "116110010": {
+                "Description": "Multiplicador de daño de 4.º golpe",
+                "Param": "{Skill:1161009, Prop:1001}"
+            },
+            "116110011": {
+                "Description": "Multiplicador de daño de inicio de 5.º golpe",
+                "Param": "{Skill:1161010, Prop:1001}"
+            },
+            "116110012": {
+                "Description": "Multiplicador de daño de combo de 5.º golpe",
+                "Param": "{Skill:1161011, Prop:1001}"
+            },
+            "116110013": {
+                "Description": "Multiplicador de daño final de 5.º golpe",
+                "Param": "{Skill:1161012, Prop:1001}"
+            },
+            "116110014": {
+                "Description": "Multiplicador de daño de inicio de 5.º golpe (subidón de confianza)",
+                "Param": "{Skill:1161026, Prop:1001}"
+            },
+            "116110015": {
+                "Description": "Multiplicador de daño de combo de 5.º golpe (subidón de confianza)",
+                "Param": "{Skill:1161027, Prop:1001}"
+            },
+            "116110016": {
+                "Description": "Multiplicador de daño del ataque final del 5.º golpe (subidón de confianza)",
+                "Param": "{Skill:1161028, Prop:1001}"
+            },
+            "116110017": {
+                "Description": "Multiplicador de daño del ataque final poderoso del 5.º golpe (subidón de confianza)",
+                "Param": "{Skill:1161025, Prop:1001}"
+            },
+            "116110018": {
+                "Description": "Multiplicador de Aturdimiento de 1.er golpe",
+                "Param": "{Skill:1161001, Prop:1002}"
+            },
+            "116110019": {
+                "Description": "Multiplicador de Aturdimiento de 2.º golpe",
+                "Param": "{Skill:1161002, Prop:1002}"
+            },
+            "116110020": {
+                "Description": "Multiplicador de Aturdimiento de 3.er golpe",
+                "Param": "{Skill:1161003, Prop:1002}"
+            },
+            "116110021": {
+                "Description": "Multiplicador de Aturdimiento del 1.er ataque subsiguiente",
+                "Param": "{Skill:1161004, Prop:1002}"
+            },
+            "116110022": {
+                "Description": "Multiplicador de Aturdimiento del 2.º ataque subsiguiente",
+                "Param": "{Skill:1161005, Prop:1002}"
+            },
+            "116110023": {
+                "Description": "Multiplicador de Aturdimiento del 3.er ataque subsiguiente",
+                "Param": "{Skill:1161006, Prop:1002}"
+            },
+            "116110024": {
+                "Description": "Multiplicador de Aturdimiento del 4.º ataque subsiguiente",
+                "Param": "{Skill:1161007, Prop:1002}"
+            },
+            "116110025": {
+                "Description": "Multiplicador de Aturdimiento del 5.º ataque subsiguiente",
+                "Param": "{Skill:1161008, Prop:1002}"
+            },
+            "116110026": {
+                "Description": "Multiplicador de Aturdimiento de 4.º golpe",
+                "Param": "{Skill:1161009, Prop:1002}"
+            },
+            "116110027": {
+                "Description": "Multiplicador de Aturdimiento de inicio de 5.º golpe",
+                "Param": "{Skill:1161010, Prop:1002}"
+            },
+            "116110028": {
+                "Description": "Multiplicador de Aturdimiento de combo de 5.º golpe",
+                "Param": "{Skill:1161011, Prop:1002}"
+            },
+            "116110029": {
+                "Description": "Multiplicador de Aturdimiento final de 5.º golpe",
+                "Param": "{Skill:1161012, Prop:1002}"
+            },
+            "116110030": {
+                "Description": "Multiplicador de Aturdimiento de inicio de 5.º golpe (subidón de confianza)",
+                "Param": "{Skill:1161026, Prop:1002}"
+            },
+            "116110031": {
+                "Description": "Multiplicador de Aturdimiento de combo de 5.º golpe (subidón de confianza)",
+                "Param": "{Skill:1161027, Prop:1002}"
+            },
+            "116110032": {
+                "Description": "Multiplicador de Aturdimiento del ataque final del 5.º golpe (subidón de confianza)",
+                "Param": "{Skill:1161028, Prop:1002}"
+            },
+            "116110033": {
+                "Description": "Multiplicador de Aturdimiento del ataque final poderoso del 5.º golpe (subidón de confianza)",
+                "Param": "{Skill:1161025, Prop:1002}"
+            }
+        },
+        "1": {
+            "116100002": {
+                "Title": "Técnica especial: Gancho del albor en V",
+                "Description": "Pulsa <IconMap:Icon_Special> para usarla.\nEjecuta un gancho ascendente hacia delante, infligiendo <color=#FF5521>daño ígneo</color>.\nDurante su ejecución, el nivel de resistencia a interrupción aumenta.\nDurante un paso deslizado, pulsa <IconMap:Icon_Special> para usarla.\nEjecuta una combinación de puñetazos hacia delante, infligiendo <color=#FF5521>daño ígneo</color>.\nEjecutar esta habilidad no interrumpe la secuencia de golpes del combo del <color=#FFFFFF>ataque normal</color>.\nDurante su ejecución, el nivel de resistencia a interrupción aumenta."
+            },
+            "116100003": {
+                "Title": "Técnica especial EX: Gancho del albor en V a máxima potencia",
+                "Description": "Al contar con energía suficiente, pulsa <IconMap:Icon_SpecialReady> para usarla.\nUsa un gancho ascendente para dar un salto y ejecutar un poderoso golpe hacia delante, infligiendo una gran cantidad de <color=#FF5521>daño ígneo</color>.\nDurante su ejecución, pulsa <IconMap:Icon_SpecialReady> de nuevo para consumir energía adicional y ejecutar un poderoso ataque subsiguiente, infligiendo una gran cantidad de <color=#FF5521>daño ígneo</color>.\nDurante su ejecución, el agente se vuelve invulnerable.\nTras su ejecución, pulsa o mantén pulsado <IconMap:Icon_Normal> para enlazar directamente con la ejecución del cuarto golpe del <color=#FFFFFF>ataque normal</color>.\nDurante un paso deslizado, al contar con energía suficiente, pulsa <IconMap:Icon_SpecialReady> para activarla.\nEjecuta golpes hacia delante con una combinación de puñetazos, infligiendo una gran cantidad de <color=#FF5521>daño ígneo</color>.\nEjecutar esta habilidad no interrumpe la secuencia de golpes del combo del <color=#FFFFFF>ataque normal</color>.\nDurante su ejecución, el agente se vuelve invulnerable.\nTras su ejecución, pulsa o mantén pulsado <IconMap:Icon_Normal> para enlazar directamente con la ejecución del quinto golpe del <color=#FFFFFF>ataque normal</color>."
+            },
+            "116110034": {
+                "Title": "Técnica especial: Gancho del albor en V"
+            },
+            "116110035": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1161013, Prop:1001}"
+            },
+            "116110036": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1161013, Prop:1002}"
+            },
+            "116110037": {
+                "Title": "Técnica especial EX: Gancho del albor en V a máxima potencia"
+            },
+            "116110038": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1161014, Prop:1001}"
+            },
+            "116110039": {
+                "Description": "Multiplicador de daño del ataque subsiguiente",
+                "Param": "{Skill:1161015, Prop:1001}"
+            },
+            "116110040": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1161014, Prop:1002}"
+            },
+            "116110041": {
+                "Description": "Multiplicador de Aturdimiento del ataque subsiguiente",
+                "Param": "{Skill:1161015, Prop:1002}"
+            },
+            "116110042": {
+                "Description": "Consumo de energía de activación",
+                "Param": "40 ptos."
+            },
+            "116110043": {
+                "Description": "Consumo de energía del ataque subsiguiente",
+                "Param": "20 ptos."
+            }
+        },
+        "2": {
+            "116100004": {
+                "Title": "Evasión: Zancada sombría",
+                "Description": "Pulsa <IconMap:Icon_Evade> para usarla.\nEjecuta un rápido esprint evasivo.\nDurante su ejecución, el agente se vuelve invulnerable.\nMientras el agente ejecuta un ataque, pulsa <IconMap:Icon_Evade> para activarla.\nEjecuta un paso deslizado en la dirección del {LAYOUT_CONSOLECONTROLLER#joystick}{LAYOUT_FALLBACK#joystick}.\nEjecutar esta habilidad no interrumpe la secuencia de golpes del combo del <color=#FFFFFF>ataque normal</color>.\nDurante su ejecución, el agente se vuelve invulnerable."
+            },
+            "116100005": {
+                "Title": "Ataque rápido: Carga lesiva",
+                "Description": "Pulsa <IconMap:Icon_Normal> durante una evasión para usarlo.\nEjecuta un golpe rápido hacia delante, infligiendo <color=#F0D12B>daño físico</color>."
+            },
+            "116100006": {
+                "Title": "Contraataque: Destello flameante",
+                "Description": "Pulsa <IconMap:Icon_Normal> después de una <color=#FFFFFF>evasión perfecta</color> para usarlo.\nEjecuta un golpe contra los enemigos frente a él, infligiendo <color=#FF5521>daño ígneo</color>.\nDurante su ejecución, el agente se vuelve invulnerable.\nTras su ejecución, pulsa o mantén pulsado <IconMap:Icon_Normal> para enlazar directamente con la ejecución del quinto golpe del <color=#FFFFFF>ataque normal</color>."
+            },
+            "116110044": {
+                "Title": "Ataque rápido: Carga lesiva"
+            },
+            "116110045": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1161016, Prop:1001}"
+            },
+            "116110046": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1161016, Prop:1002}"
+            },
+            "116110047": {
+                "Title": "Contraataque: Destello flameante"
+            },
+            "116110048": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1161017, Prop:1001}"
+            },
+            "116110049": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1161017, Prop:1002}"
+            }
+        },
+        "3": {
+            "116100007": {
+                "Title": "Técnica en cadena: Sol abrasador en V",
+                "Description": "Elige el avatar de agente correspondiente al activar una <color=#FFFFFF>técnica en cadena</color> para usarla.\nEjecuta un poderoso golpe contra los enemigos frente a él en un área pequeña, infligiendo una gran cantidad de <color=#FF5521>daño ígneo</color>.\nDurante su ejecución, el agente se vuelve invulnerable."
+            },
+            "116100008": {
+                "Title": "Técnica definitiva: Averno triunfal en W",
+                "Description": "Cuando los dB llegan a su nivel máximo, pulsa <IconMap:Icon_UltimateReady> para usarla.\nEjecuta un poderoso golpe contra los enemigos que hay en un área grande a su alrededor, infligiendo una gran cantidad de <color=#FF5521>daño ígneo</color>.\nDurante su ejecución, el agente se vuelve invulnerable."
+            },
+            "116110050": {
+                "Title": "Técnica en cadena: Sol abrasador en V"
+            },
+            "116110051": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1161018, Prop:1001}"
+            },
+            "116110052": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1161018, Prop:1002}"
+            },
+            "116110053": {
+                "Title": "Técnica definitiva: Averno triunfal en W"
+            },
+            "116110054": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1161019, Prop:1001}"
+            },
+            "116110055": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1161019, Prop:1002}"
+            }
+        },
+        "6": {
+            "116100010": {
+                "Title": "Apoyo rápido: Destello flameante protector",
+                "Description": "Pulsa <IconMap:Icon_Switch> para usarlo cuando el agente activo sea lanzado por los aires.\nEjecuta un golpe contra los enemigos frente a él, infligiendo <color=#FF5521>daño ígneo</color>.\nDurante su ejecución, el agente se vuelve invulnerable.\nTras su ejecución, pulsa o mantén pulsado <IconMap:Icon_Normal> para enlazar directamente con la ejecución del quinto golpe del <color=#FFFFFF>ataque normal</color>."
+            },
+            "116100011": {
+                "Title": "Apoyo defensivo: Fractura súbita",
+                "Description": "Pulsa <IconMap:Icon_Switch> para usarlo cuando el agente activo esté a punto de recibir un golpe.\nBloquea el ataque enemigo, provocando una gran cantidad de Aturdimiento.\nDurante su ejecución, el agente se vuelve invulnerable."
+            },
+            "116100012": {
+                "Title": "Ataque sucesivo: Carga lesiva con apuñalamiento",
+                "Description": "Pulsa <IconMap:Icon_Normal> después de un <color=#FFFFFF>apoyo defensivo</color> para usarlo.\nEjecuta un golpe contra los enemigos frente a él, infligiendo <color=#FF5521>daño ígneo</color>.\nDurante su ejecución, el agente se vuelve invulnerable.\nTras su ejecución, pulsa o mantén pulsado <IconMap:Icon_Normal> para enlazar directamente con la ejecución del quinto golpe del <color=#FFFFFF>ataque normal</color>."
+            },
+            "116110056": {
+                "Title": "Apoyo rápido: Destello flameante protector"
+            },
+            "116110057": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1161020, Prop:1001}"
+            },
+            "116110058": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1161020, Prop:1002}"
+            },
+            "116110059": {
+                "Title": "Apoyo defensivo: Fractura súbita"
+            },
+            "116110060": {
+                "Description": "Multiplicador de Aturdimiento defensivo ligero",
+                "Param": "{Skill:1161021, Prop:1002}"
+            },
+            "116110061": {
+                "Description": "Multiplicador de Aturdimiento defensivo fuerte",
+                "Param": "{Skill:1161022, Prop:1002}"
+            },
+            "116110062": {
+                "Description": "Multiplicador de Aturdimiento defensivo continuo",
+                "Param": "{Skill:1161023, Prop:1002}"
+            },
+            "116110063": {
+                "Title": "Ataque sucesivo: Carga lesiva con apuñalamiento"
+            },
+            "116110064": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1161024, Prop:1001}"
+            },
+            "116110065": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1161024, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1161001": {
+            "DamageValue": 3920,
+            "DamageGrowth": 360,
+            "DazeValue": 1960,
+            "DazeGrowth": 90
+        },
+        "1161002": {
+            "DamageValue": 4800,
+            "DamageGrowth": 440,
+            "DazeValue": 3290,
+            "DazeGrowth": 150
+        },
+        "1161003": {
+            "DamageValue": 5530,
+            "DamageGrowth": 510,
+            "DazeValue": 4670,
+            "DazeGrowth": 220
+        },
+        "1161004": {
+            "DamageValue": 8690,
+            "DamageGrowth": 790,
+            "DazeValue": 6050,
+            "DazeGrowth": 280
+        },
+        "1161005": {
+            "DamageValue": 4770,
+            "DamageGrowth": 440,
+            "DazeValue": 3320,
+            "DazeGrowth": 160
+        },
+        "1161006": {
+            "DamageValue": 5810,
+            "DamageGrowth": 530,
+            "DazeValue": 4040,
+            "DazeGrowth": 190
+        },
+        "1161007": {
+            "DamageValue": 3280,
+            "DamageGrowth": 300,
+            "DazeValue": 2280,
+            "DazeGrowth": 110
+        },
+        "1161008": {
+            "DamageValue": 8900,
+            "DamageGrowth": 810,
+            "DazeValue": 6190,
+            "DazeGrowth": 290
+        },
+        "1161009": {
+            "DamageValue": 7890,
+            "DamageGrowth": 720,
+            "DazeValue": 7610,
+            "DazeGrowth": 350
+        },
+        "1161010": {
+            "DamageValue": 16360,
+            "DamageGrowth": 1490,
+            "DazeValue": 12950,
+            "DazeGrowth": 590
+        },
+        "1161011": {
+            "DamageValue": 12290,
+            "DamageGrowth": 1120,
+            "DazeValue": 8130,
+            "DazeGrowth": 370
+        },
+        "1161012": {
+            "DamageValue": 10460,
+            "DamageGrowth": 960,
+            "DazeValue": 7950,
+            "DazeGrowth": 370
+        },
+        "1161013": {
+            "DamageValue": 3630,
+            "DamageGrowth": 330,
+            "DazeValue": 3630,
+            "DazeGrowth": 170
+        },
+        "1161014": {
+            "DamageValue": 48630,
+            "DamageGrowth": 4430,
+            "DazeValue": 40350,
+            "DazeGrowth": 1840
+        },
+        "1161015": {
+            "DamageValue": 29270,
+            "DamageGrowth": 2670,
+            "DazeValue": 24770,
+            "DazeGrowth": 1130
+        },
+        "1161016": {
+            "DamageValue": 8990,
+            "DamageGrowth": 820,
+            "DazeValue": 4500,
+            "DazeGrowth": 210
+        },
+        "1161017": {
+            "DamageValue": 18630,
+            "DamageGrowth": 1700,
+            "DazeValue": 16870,
+            "DazeGrowth": 770
+        },
+        "1161018": {
+            "DamageValue": 71210,
+            "DamageGrowth": 6480,
+            "DazeValue": 27320,
+            "DazeGrowth": 1250
+        },
+        "1161019": {
+            "DamageValue": 150800,
+            "DamageGrowth": 13710,
+            "DazeValue": 94740,
+            "DazeGrowth": 4310
+        },
+        "1161020": {
+            "DamageValue": 6970,
+            "DamageGrowth": 640,
+            "DazeValue": 6970,
+            "DazeGrowth": 320
+        },
+        "1161021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1161022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1161023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1161024": {
+            "DamageValue": 21980,
+            "DamageGrowth": 2000,
+            "DazeValue": 18230,
+            "DazeGrowth": 830
+        },
+        "1161025": {
+            "DamageValue": 43540,
+            "DamageGrowth": 3960,
+            "DazeValue": 13240,
+            "DazeGrowth": 610
+        },
+        "1161026": {
+            "DamageValue": 17720,
+            "DamageGrowth": 1620,
+            "DazeValue": 13630,
+            "DazeGrowth": 620
+        },
+        "1161027": {
+            "DamageValue": 36430,
+            "DamageGrowth": 3320,
+            "DazeValue": 8550,
+            "DazeGrowth": 390
+        },
+        "1161028": {
+            "DamageValue": 11970,
+            "DamageGrowth": 1090,
+            "DazeValue": 9210,
+            "DazeGrowth": 420
+        }
+    }
+}

@@ -1,0 +1,469 @@
+{
+    "Name": "Trigger",
+    "ElementTypes": [
+        "Elec"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Sharpened Senses",
+            "Description": "Kelipatan Stun DMG dari <color=#FFFFFF>Core Passive: Soul-Searching Gaze</color> meningkat 20%. Saat melancarkan <color=#FFFFFF>Basic Attack: Harmonizing Shot</color>, CD berkurang menjadi 2 detik. Saat dalam <color=#FFFFFF>posisi membidik</color>, <color=#FFFFFF>Purge</color> yang didapatkan dari tembakan beruntun atau serangan balik Charge yang mengenai musuh akan meningkat 25%, dan batas maksimal <color=#FFFFFF>Purge</color> meningkat menjadi 125 poin.",
+            "Lore": "Pendengaran yang dapat membedakan setiap perubahan angin yang berembus, dan sentuhan yang dapat merasakan setiap getaran di tanah. Untuk mengimbangi kekurangan penglihatannya, sang gadis telah melatih indra lainnya hingga mencapai tingkat tertinggi.\n\n\"Selain jadi penembak jitu, aku tidak punya keahlian lain... Setidaknya dalam hal menembak, aku tidak ingin kalah dari siapa pun.\""
+        },
+        "2": {
+            "Title": "\"Ether Vision\"",
+            "Description": "Saat melancarkan <color=#FFFFFF>Aftershock</color>, Trigger akan mendapatkan 1 lapis <color=#FFFFFF>Hunter's Gaze</color>. Saat melancarkan serangan terakhir dalam <color=#FFFFFF>posisi membidik</color>, Trigger akan mendapatkan 2 lapis <color=#FFFFFF>Hunter's Gaze</color>. Setiap 1 lapis <color=#FFFFFF>Hunter's Gaze</color> yang dimiliki, CRIT DMG semua Agen dalam tim akan meningkat 6%. Maks. dapat ditumpuk hingga 4 lapis dan berlangsung selama 10 detik. Memicu ulang akan memperbarui durasi.",
+            "Lore": "Saat berada di dalam Hollow, semua fluktuasi Ether di sekitarnya akan membantunya mengamati lingkungan.\n\"Dulu aku selalu merasa ini adalah sepasang mata yang penuh penderitaan dan terkutuk.\"\n\"Tapi sekarang... mata ini adalah tiket untuk mencapai targetku, dan juga bukti bahwa aku tidak pernah melupakan masa lalu.\""
+        },
+        "3": {
+            "Title": "\"Homecoming\"",
+            "Description": "Level <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, dan <color=#FFFFFF>Chain Attack</color> +2.",
+            "Lore": "Rumah tempat dia pulang kini telah terkubur dalam masa lalu.\nBibirnya yang dingin menyentuh harmonika, melodi sepi itu menjadi satu-satunya bukti yang terukir dalam ingatannya."
+        },
+        "4": {
+            "Title": "Concealment",
+            "Description": "Setelah Trigger memasuki atau memperpanjang <color=#FFFFFF>Coordinated Support</color>, jika Agen lain di dalam tim memicu <color=#FFFFFF>Basic Attack: Harmonizing Shot</color> atau <color=#FFFFFF>Basic Attack: Harmonizing Shot - Tartarus</color> berikutnya selama status ini berlangsung, maka efek <color=#FFFFFF>Disconnect</color> akan terpicu saat serangan mengenai musuh, mengakibatkan DMG tambahan senilai 200% dari ATK Trigger, dan juga mengakibatkan Daze senilai 120% dari Impact Trigger. Skill ini memiliki Level Interrupt yang cukup tinggi.",
+            "Lore": "Langkah kaki, napas, detak jantung. Dia menutupi semua aspek keberadaannya hingga seluruh sosoknya menyatu sempurna dengan lingkungan. Pergerakannya di medan perang bagai malaikat maut yang muncul dan menghilang tanpa jejak.\nNamun di luar medan perang, cara bergerak yang senyap ini telah dilarang keras karena dia sering mengejutkan rekan-rekannya.\nTentu saja, dia seharusnya... tidak pernah menggunakan keterampilan ini untuk mengamati toko video karena tidak bisa bertemu seseorang secara langsung, iya kan?"
+        },
+        "5": {
+            "Title": "Locked In",
+            "Description": "Level <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, dan <color=#FFFFFF>Chain Attack</color> +2.",
+            "Lore": "Setelah target terkunci, meski tubuhnya sudah rusak dan membusuk, meski rasa sakit dan kelelahan mendera, garis bidiknya tidak akan pernah bergeser. Dari target balas dendam hingga target yang dilindungi, dari musuh hingga rekan —inilah tekad seorang penembak jitu.\nTapi untuk Proxy yang telah menerangi kegelapannya dengan cahaya, ini lebih dari sekadar mengunci target. Meskipun tidak ada alasan untuk terus memandang, garis bidiknya tak akan pernah bergeser —inilah tekad seorang gadis muda."
+        },
+        "6": {
+            "Title": "Beyond the River of the Dead",
+            "Description": "Saat memulai pertarungan, Trigger akan mendapatkan 5 <color=#FFFFFF>Armor Break Round</color>. Setiap mengonsumsi 25 poin <color=#FFFFFF>Purge</color>, Trigger akan mendapatkan 1 <color=#FFFFFF>Armor Break Round</color> tambahan, hingga maks. 5. Saat memiliki <color=#FFFFFF>Armor Break Bullet</color>, jika serangan Trigger mengenai target saat dalam <color=#FFFFFF>posisi membidik</color>, maka dia akan mengonsumsi 1 <color=#FFFFFF>Armor Break Round</color> dan mengakibatkan <color=#2EB6FF>Electric DMG</color> tambahan sebesar 1200% dari ATK Trigger. Selain itu, DMG tambahan yang diakibatkan dari <color=#FFFFFF>Armor Break Round</color> juga meningkat sebesar 50%. Efek ini dapat dipicu sekali setiap 0,2 detik.",
+            "Lore": "\"Apa kamu tahu? Mereka yang berlumuran darah dalam pertarungan, setelah mati hanya bisa pergi ke alam baka.\"\n\"Di seberang sungai kematian, masih ada pemandangan yang sangat indah. Bunga bakung yang mekar mengelilingiku, dan orang-orang yang kukenal menemaniku menuju kedamaian dan tempat peristirahatan terakhir.\"\n\"Tapi... karena ada kamu, karena ada hal yang ingin kulindungi, mungkin aku belum ingin hari itu datang terlalu cepat.\""
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Core Passive: Soul-Searching Gaze",
+            "DescriptionByLevel": {
+                "1": "Saat <color=#FFFFFF>Aftershock</color> yang dilancarkan Trigger mengenai musuh, Kelipatan Stun DMG target meningkat <color=#2BAD00>20%</color> selama 5 detik. Efek peningkatan Kelipatan Stun DMG melalui cara ini juga berlaku saat target belum memasuki status Stun.",
+                "2": "Saat <color=#FFFFFF>Aftershock</color> yang dilancarkan Trigger mengenai musuh, Kelipatan Stun DMG target meningkat <color=#2BAD00>22,5%</color> selama 5 detik. Efek peningkatan Kelipatan Stun DMG melalui cara ini juga berlaku saat target belum memasuki status Stun.",
+                "3": "Saat <color=#FFFFFF>Aftershock</color> yang dilancarkan Trigger mengenai musuh, Kelipatan Stun DMG target meningkat <color=#2BAD00>25%</color> selama 5 detik. Efek peningkatan Kelipatan Stun DMG melalui cara ini juga berlaku saat target belum memasuki status Stun.",
+                "4": "Saat <color=#FFFFFF>Aftershock</color> yang dilancarkan Trigger mengenai musuh, Kelipatan Stun DMG target meningkat <color=#2BAD00>27,5%</color> selama 5 detik. Efek peningkatan Kelipatan Stun DMG melalui cara ini juga berlaku saat target belum memasuki status Stun.",
+                "5": "Saat <color=#FFFFFF>Aftershock</color> yang dilancarkan Trigger mengenai musuh, Kelipatan Stun DMG target meningkat <color=#2BAD00>30%</color> selama 5 detik. Efek peningkatan Kelipatan Stun DMG melalui cara ini juga berlaku saat target belum memasuki status Stun.",
+                "6": "Saat <color=#FFFFFF>Aftershock</color> yang dilancarkan Trigger mengenai musuh, Kelipatan Stun DMG target meningkat <color=#2BAD00>32,5%</color> selama 5 detik. Efek peningkatan Kelipatan Stun DMG melalui cara ini juga berlaku saat target belum memasuki status Stun.",
+                "7": "Saat <color=#FFFFFF>Aftershock</color> yang dilancarkan Trigger mengenai musuh, Kelipatan Stun DMG target meningkat <color=#2BAD00>35%</color> selama 5 detik. Efek peningkatan Kelipatan Stun DMG melalui cara ini juga berlaku saat target belum memasuki status Stun."
+            }
+        },
+        "MathSkill": {
+            "Title": "Additional Ability: Silver Lantern's Gaze",
+            "Description": "Berlaku jika terdapat Agen <color=#FFFFFF>Attack</color> atau Agen yang memiliki Atribut yang sama di dalam tim:\nSaat CRIT Rate Trigger melebihi 40%, setiap 1% CRIT Rate yang melebihinya akan meningkatkan Daze yang diakibatkan dari <color=#FFFFFF>Aftershock</color> yang dilancarkannya sebesar 1,5%, maks. dapat meningkat hingga 75%."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "136100001": {
+                "Title": "Basic Attack: Cold-Bore Shot",
+                "Description": "Tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMelancarkan hingga empat tahap serangan menembak ke depan. Tiga tahap pertama akan mengakibatkan <color=#F0D12B>Physical DMG</color>, sementara serangan tahap keempat akan mengakibatkan <color=#2EB6FF>Electric DMG</color>."
+            },
+            "136100002": {
+                "Title": "Basic Attack: Silenced Shot",
+                "Description": "Tahan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nTrigger memasuki <color=#FFFFFF>posisi membidik</color>, menembak ke depan secara beruntun, dan mengakibatkan <color=#2EB6FF>Electric DMG</color>.\n\nSelama menembak secara beruntun, jika menerima serangan musuh, Trigger akan menghindari serangan tersebut secara otomatis. Efek ini dapat dipicu sekali setiap 8 detik.\nSelama menembak secara beruntun, kamu dapat menggeser {LAYOUT_CONSOLECONTROLLER#tuas}{LAYOUT_FALLBACK#<IconMap:Icon_JoyStick>} untuk menyesuaikan posisi ke kiri/kanan/belakang.\nMenghindari serangan secara otomatis atau menyesuaikan posisi tepat sebelum terkena serangan akan memicu <color=#FFFFFF>Perfect Dodge</color>, yang akan dilanjutkan dengan serangan balik Charge secara otomatis.\nSetelah melepas <IconMap:Icon_Normal>, Trigger akan mempersiapkan senjatanya dan melancarkan serangan terakhir, lalu keluar dari <color=#FFFFFF>posisi membidik</color>.\n\nKarakter akan menjadi kebal selama melancarkan serangan balik Charge dan serangan terakhir.\nSaat menembak secara beruntun atau serangan balik Charge mengenai musuh, Trigger akan mendapatkan 25 poin <color=#FFFFFF>Purge</color>, dengan batas maksimal 100 poin <color=#FFFFFF>Purge</color>.\nSaat serangan terakhir mengenai musuh, <color=#FFFFFF>Quick Assist</color> dari Agen sebelumnya di dalam tim akan terpicu. <color=#FFFFFF>Quick Assist</color> yang dilancarkan melalui cara ini dapat dipicu sekali setiap 25 detik."
+            },
+            "136100003": {
+                "Title": "Basic Attack: Harmonizing Shot",
+                "Description": "Jika Trigger memiliki <color=#FFFFFF>Purge</color>, saat Agen yang Dikendalikan lainnya dalam tim melancarkan <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dash Attack</color>, <color=#FFFFFF>Dodge Counter</color>, <color=#FFFFFF>Special Attack</color>, atau <color=#FFFFFF>Quick Assist</color> dan mengenai musuh, akan memicu:\n\nMengitari musuh dan melancarkan tembakan cepat dua kali secara beruntun, mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nSaat melancarkan Skill ini, akan mengonsumsi 3 poin <color=#FFFFFF>Purge</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini.\n<color=#FFFFFF>Basic Attack: Harmonizing Shot</color> dianggap sebagai <color=#FFFFFF>Aftershock</color>.\n<color=#FFFFFF>Basic Attack: Harmonizing Shot</color> hanya dapat dipicu 1 kali setiap 3 detik untuk semua anggota tim."
+            },
+            "136100004": {
+                "Title": "Basic Attack: Harmonizing Shot - Tartarus",
+                "Description": "Jika Trigger memiliki <color=#FFFFFF>Purge</color>, saat Agen yang Dikendalikan lainnya dalam tim melancarkan <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Assist Follow-Up</color>, atau <color=#FFFFFF>Ultimate</color> dan mengenai musuh, akan memicu:\nMengitari musuh dan melancarkan tembakan cepat tiga kali secara beruntun yang diikuti dengan serangan terakhir, mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nSaat melancarkan Skill ini, Trigger akan mengonsumsi 5 poin <color=#FFFFFF>Purge</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini.\n\n<color=#FFFFFF>Basic Attack: Harmonizing Shot - Tartarus</color> dianggap sebagai <color=#FFFFFF>Aftershock</color>.\nUntuk semua anggota tim, Skill dengan tipe yang sama hanya dapat memicu <color=#FFFFFF>Basic Attack: Harmonizing Shot - Tartarus</color> maksimal 2 kali dalam 20 detik.\nSaat melancarkan <color=#FFFFFF>Basic Attack: Harmonizing Shot</color>, <color=#FFFFFF>Basic Attack: Harmonizing Shot - Tartarus</color> akan langsung terpicu."
+            },
+            "136100016": {
+                "Title": "Basic Attack: Cold-Bore Shot"
+            },
+            "136100017": {
+                "Description": "Kelipatan DMG: Tahap 1",
+                "Param": "{Skill:1361001, Prop:1001}"
+            },
+            "136100018": {
+                "Description": "Kelipatan DMG: Tahap 2",
+                "Param": "{Skill:1361002, Prop:1001}"
+            },
+            "136100019": {
+                "Description": "Kelipatan DMG: Tahap 3",
+                "Param": "{Skill:1361003, Prop:1001}"
+            },
+            "136100020": {
+                "Description": "Kelipatan DMG: Tahap 4",
+                "Param": "{Skill:1361004, Prop:1001}"
+            },
+            "136100021": {
+                "Description": "Kelipatan Daze: Tahap 1",
+                "Param": "{Skill:1361001, Prop:1002}"
+            },
+            "136100022": {
+                "Description": "Kelipatan Daze: Tahap 2",
+                "Param": "{Skill:1361002, Prop:1002}"
+            },
+            "136100023": {
+                "Description": "Kelipatan Daze: Tahap 3",
+                "Param": "{Skill:1361003, Prop:1002}"
+            },
+            "136100024": {
+                "Description": "Kelipatan Daze: Tahap 4",
+                "Param": "{Skill:1361004, Prop:1002}"
+            },
+            "136100025": {
+                "Title": "Basic Attack: Silenced Shot"
+            },
+            "136100026": {
+                "Description": "Kelipatan DMG - Serangan Tembakan",
+                "Param": "{Skill:1361005, Prop:1001}"
+            },
+            "136100027": {
+                "Description": "Kelipatan DMG - Serangan Balik",
+                "Param": "{Skill:1361006, Prop:1001}"
+            },
+            "136100028": {
+                "Description": "Kelipatan DMG - Serangan Terakhir",
+                "Param": "{Skill:1361007, Prop:1001}"
+            },
+            "136100029": {
+                "Description": "Kelipatan Daze - Serangan Tembakan",
+                "Param": "{Skill:1361005, Prop:1002}"
+            },
+            "136100030": {
+                "Description": "Kelipatan Daze - Serangan Balik",
+                "Param": "{Skill:1361006, Prop:1002}"
+            },
+            "136100031": {
+                "Description": "Kelipatan Daze - Serangan Terakhir",
+                "Param": "{Skill:1361007, Prop:1002}"
+            },
+            "136100032": {
+                "Title": "Basic Attack: Harmonizing Shot"
+            },
+            "136100033": {
+                "Description": "Kelipatan DMG - Tembakan Beruntun",
+                "Param": "{Skill:1361008, Prop:1001}*2"
+            },
+            "136100034": {
+                "Description": "Kelipatan Daze - Tembakan Beruntun",
+                "Param": "{Skill:1361008, Prop:1002}*2"
+            },
+            "136100035": {
+                "Title": "Basic Attack: Harmonizing Shot - Tartarus"
+            },
+            "136100036": {
+                "Description": "Kelipatan DMG - Tembakan Beruntun",
+                "Param": "{Skill:1361020, Prop:1001}*3"
+            },
+            "136100037": {
+                "Description": "Kelipatan DMG - Serangan Terakhir",
+                "Param": "{Skill:1361022, Prop:1001}"
+            },
+            "136100038": {
+                "Description": "Kelipatan Daze - Tembakan Beruntun",
+                "Param": "{Skill:1361020, Prop:1002}*3"
+            },
+            "136100039": {
+                "Description": "Kelipatan Daze - Serangan Terakhir",
+                "Param": "{Skill:1361022, Prop:1002}"
+            }
+        },
+        "1": {
+            "136100005": {
+                "Title": "Special Attack: Spectral Flash",
+                "Description": "Tekan <IconMap:Icon_Special> untuk melancarkan Skill ini.\nMelancarkan Slash dadakan ke depan dan mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nLevel Anti-Interrupt akan meningkat selama melancarkan Skill ini."
+            },
+            "136100006": {
+                "Title": "EX Special Attack: Flash Burial",
+                "Description": "Saat Energy Trigger sudah cukup, tekan <IconMap:Icon_SpecialReady> untuk melancarkan Skill ini.\nMelancarkan Slash dadakan ke depan, lalu melompat dan melancarkan tembakan kuat ke tanah, mengakibatkan <color=#2EB6FF>Electric DMG</color> dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini.\n\nSaat Skill ini mengenai musuh, akan memicu <color=#FFFFFF>Quick Assist</color> dari Agen sebelumnya di dalam tim.\nSaat Skill ini mengenai musuh, Trigger akan memasuki <color=#FFFFFF>Coordinated Support</color>. Selama status ini berlangsung, saat Agen yang Dikendalikan lainnya dalam tim melancarkan serangan apa pun dan mengenai musuh, akan memicu <color=#FFFFFF>Basic Attack: Harmonizing Shot</color> tanpa mengonsumsi <color=#FFFFFF>Purge</color> dan tanpa batasan CD. Status ini berlangsung selama 8 detik dan efek ini dapat terpicu 4 kali. Memasuki <color=#FFFFFF>Coordinated Support</color> berulang kali akan memperpanjang durasi dan menambah kesempatan memicu. Maksimal dapat berlangsung selama 20 detik dan dapat terpicu 10 kali."
+            },
+            "136100040": {
+                "Title": "Special Attack: Spectral Flash"
+            },
+            "136100041": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1361009, Prop:1001}"
+            },
+            "136100042": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1361009, Prop:1002}"
+            },
+            "136100043": {
+                "Title": "EX Special Attack: Flash Burial"
+            },
+            "136100044": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1361010, Prop:1001}"
+            },
+            "136100045": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1361010, Prop:1002}"
+            },
+            "136100046": {
+                "Description": "Konsumsi Energy",
+                "Param": "60 poin"
+            }
+        },
+        "2": {
+            "136100007": {
+                "Title": "Dodge: Phantom Concealment",
+                "Description": "Tekan <IconMap:Icon_Evade> untuk melakukan Dodge.\nMelakukan Dodge dengan cepat.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "136100008": {
+                "Title": "Dash Attack: Vengeful Specter",
+                "Description": "Tekan <IconMap:Icon_Normal> saat melakukan Dodge untuk melancarkan Skill ini.\nMengangkat senapan dan menembak dengan cepat, mengakibatkan <color=#F0D12B>Physical DMG</color>."
+            },
+            "136100009": {
+                "Title": "Dodge Counter: Condemned Soul",
+                "Description": "Tekan <IconMap:Icon_Normal> setelah melakukan <color=#FFFFFF>Perfect Dodge</color> untuk melancarkan Skill ini.\nBerputar dan melancarkan tembakan cepat terhadap musuh di depan, mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "136100047": {
+                "Title": "Dash Attack: Vengeful Specter"
+            },
+            "136100048": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1361011, Prop:1001}"
+            },
+            "136100049": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1361011, Prop:1002}"
+            },
+            "136100050": {
+                "Title": "Dodge Counter: Condemned Soul"
+            },
+            "136100051": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1361012, Prop:1001}"
+            },
+            "136100052": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1361012, Prop:1002}"
+            }
+        },
+        "3": {
+            "136100010": {
+                "Title": "Chain Attack: Stygian Guide",
+                "Description": "Saat <color=#FFFFFF>Chain Attack</color> terpicu, pilih Trigger untuk melancarkan Skill ini.\nMelancarkan tembakan kuat ke depan secara beruntun dan mengakibatkan <color=#2EB6FF>Electric DMG</color> dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "136100011": {
+                "Title": "Ultimate: Underworld Requiem",
+                "Description": "Saat Decibel Rating mencapai <color=#FFFFFF>Maximum</color>, tekan <IconMap:Icon_UltimateReady> untuk melancarkan Skill ini.\nMelancarkan tembakan kuat terhadap musuh dalam area luas di depan dan mengakibatkan <color=#2EB6FF>Electric DMG</color> dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini.\n\nSaat Skill ini mengenai musuh, akan memicu <color=#FFFFFF>Quick Assist</color> dari Agen sebelumnya di dalam tim.\nSaat Skill ini mengenai musuh, Trigger akan memasuki <color=#FFFFFF>Coordinated Support</color>. Selama status ini berlangsung, saat Agen yang Dikendalikan lainnya dalam tim melancarkan serangan apa pun dan mengenai musuh, akan memicu <color=#FFFFFF>Basic Attack: Harmonizing Shot</color> tanpa mengonsumsi <color=#FFFFFF>Purge</color> dan tanpa batasan CD. Status ini berlangsung selama 12 detik dan dapat terpicu 6 kali. Memasuki <color=#FFFFFF>Coordinated Support</color> berulang kali akan memperpanjang durasi dan menambah kesempatan memicu. Maksimal dapat berlangsung selama 20 detik dan dapat terpicu 10 kali."
+            },
+            "136100053": {
+                "Title": "Chain Attack: Stygian Guide"
+            },
+            "136100054": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1361013, Prop:1001}"
+            },
+            "136100055": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1361013, Prop:1002}"
+            },
+            "136100056": {
+                "Title": "Ultimate: Underworld Requiem"
+            },
+            "136100057": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1361014, Prop:1001}"
+            },
+            "136100058": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1361014, Prop:1002}"
+            }
+        },
+        "6": {
+            "136100013": {
+                "Title": "Quick Assist: Cold-Bore Cover Fire",
+                "Description": "Saat Agen yang Dikendalikan terhempas, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nBerputar dan melancarkan tembakan cepat terhadap musuh di depan, mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "136100014": {
+                "Title": "Defensive Assist: Delaying Demise",
+                "Description": "Tepat sebelum Agen aktif diserang, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nMenangkis serangan musuh dan menghasilkan Daze dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "136100015": {
+                "Title": "Assist Follow-Up: Piercing Thunder",
+                "Description": "Setelah melancarkan <color=#FFFFFF>Defensive Assist</color>, tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMelancarkan Slash beruntun terhadap musuh di depan, lalu mendarat dan melancarkan tembakan kuat, mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "136100059": {
+                "Title": "Quick Assist: Cold-Bore Cover Fire"
+            },
+            "136100060": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1361015, Prop:1001}"
+            },
+            "136100061": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1361015, Prop:1002}"
+            },
+            "136100062": {
+                "Title": "Defensive Assist: Delaying Demise"
+            },
+            "136100063": {
+                "Description": "Kelipatan Daze - Light Defensive",
+                "Param": "{Skill:1361016, Prop:1002}"
+            },
+            "136100064": {
+                "Description": "Kelipatan Daze - Heavy Defensive",
+                "Param": "{Skill:1361017, Prop:1002}"
+            },
+            "136100065": {
+                "Description": "Kelipatan Daze - Chain Defensive",
+                "Param": "{Skill:1361018, Prop:1002}"
+            },
+            "136100066": {
+                "Title": "Assist Follow-Up: Piercing Thunder"
+            },
+            "136100067": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1361019, Prop:1001}"
+            },
+            "136100068": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1361019, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1361001": {
+            "DamageValue": 3450,
+            "DamageGrowth": 320,
+            "DazeValue": 1730,
+            "DazeGrowth": 80
+        },
+        "1361002": {
+            "DamageValue": 5690,
+            "DamageGrowth": 520,
+            "DazeValue": 2850,
+            "DazeGrowth": 130
+        },
+        "1361003": {
+            "DamageValue": 11090,
+            "DamageGrowth": 1010,
+            "DazeValue": 6080,
+            "DazeGrowth": 280
+        },
+        "1361004": {
+            "DamageValue": 24300,
+            "DamageGrowth": 2210,
+            "DazeValue": 17690,
+            "DazeGrowth": 810
+        },
+        "1361005": {
+            "DamageValue": 4760,
+            "DamageGrowth": 440,
+            "DazeValue": 2380,
+            "DazeGrowth": 110
+        },
+        "1361006": {
+            "DamageValue": 23390,
+            "DamageGrowth": 2130,
+            "DazeValue": 14880,
+            "DazeGrowth": 680
+        },
+        "1361007": {
+            "DamageValue": 13120,
+            "DamageGrowth": 1200,
+            "DazeValue": 6560,
+            "DazeGrowth": 300
+        },
+        "1361008": {
+            "DamageValue": 4790,
+            "DamageGrowth": 440,
+            "DazeValue": 3590,
+            "DazeGrowth": 170
+        },
+        "1361009": {
+            "DamageValue": 7150,
+            "DamageGrowth": 650,
+            "DazeValue": 7150,
+            "DazeGrowth": 330
+        },
+        "1361010": {
+            "DamageValue": 63440,
+            "DamageGrowth": 5770,
+            "DazeValue": 43270,
+            "DazeGrowth": 1970
+        },
+        "1361011": {
+            "DamageValue": 5140,
+            "DamageGrowth": 470,
+            "DazeValue": 2570,
+            "DazeGrowth": 120
+        },
+        "1361012": {
+            "DamageValue": 21970,
+            "DamageGrowth": 2000,
+            "DazeValue": 19440,
+            "DazeGrowth": 890
+        },
+        "1361013": {
+            "DamageValue": 57470,
+            "DamageGrowth": 5230,
+            "DazeValue": 13580,
+            "DazeGrowth": 620
+        },
+        "1361014": {
+            "DamageValue": 148050,
+            "DamageGrowth": 13460,
+            "DazeValue": 92200,
+            "DazeGrowth": 4200
+        },
+        "1361015": {
+            "DamageValue": 8440,
+            "DamageGrowth": 770,
+            "DazeValue": 8440,
+            "DazeGrowth": 390
+        },
+        "1361016": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1361017": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1361018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1361019": {
+            "DamageValue": 43290,
+            "DamageGrowth": 3940,
+            "DazeValue": 32740,
+            "DazeGrowth": 1490
+        },
+        "1361020": {
+            "DamageValue": 2260,
+            "DamageGrowth": 210,
+            "DazeValue": 1700,
+            "DazeGrowth": 80
+        },
+        "1361021": {
+            "DamageValue": 4790,
+            "DamageGrowth": 440,
+            "DazeValue": 3590,
+            "DazeGrowth": 170
+        },
+        "1361022": {
+            "DamageValue": 4520,
+            "DamageGrowth": 420,
+            "DazeValue": 3400,
+            "DazeGrowth": 160
+        },
+        "1361023": {
+            "DamageValue": 20000,
+            "DamageGrowth": 0,
+            "DazeValue": 12000,
+            "DazeGrowth": 0
+        },
+        "1361024": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

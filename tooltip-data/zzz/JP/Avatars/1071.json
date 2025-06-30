@@ -1,0 +1,512 @@
+{
+    "Name": "シーザー",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "楔形陣形",
+            "Description": "接敵状態突入時、または出場した時、シーザーは即座にチーム全体に<color=#FFFFFF>「栄光の盾」</color>を提供する、300秒に1回のみ発動可能。<color=#FFFFFF>「栄光の盾」</color>継続中、所持者の半径5m以内にいる敵の全属性ダメージ耐性-15%。",
+            "Lore": "「こういう時こそ楔形陣形だって、ビッグダディのオヤジから教わってんだ！\n手薄なトコを、圧倒的な戦力でガンガン攻めてやれってな！」\n「もちろん、先頭を突っ走んのはオレ様だ！」"
+        },
+        "2": {
+            "Title": "異境からの伝承",
+            "Description": "<color=#FFFFFF>『コアパッシブ：堅固な壁』</color>のシールド<color=#FFFFFF>「栄光の盾」</color>継続中、シーザーのエネルギー獲得効率+10%、所持者の攻撃力アップ効果が本来の150%になる。",
+            "Lore": "シーザーの戦闘スタイルは、新エリー都や郊外のそれとは若干異なる。\n攻めるべきでない時を知り、攻めるべき時は一撃で仕留める——\nこれは流れ者たちの武闘派が奉じる戦い方であり、彼らの生き方でもある。\nそれを立派に受け継いだシーザーは、「優秀な生徒」と言えよう。"
+        },
+        "3": {
+            "Title": "絶対的な信頼",
+            "Description": "<color=#FFFFFF>『通常攻撃』</color>、<color=#FFFFFF>『回避』</color>、<color=#FFFFFF>『支援スキル』</color>、<color=#FFFFFF>『特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>のスキルレベル+2",
+            "Lore": "ひとたび相手を信じ、自分の味方であると認めると、\nシーザーは無防備と言っていいレベルの絶対的な信頼を寄せる——\nまさに今、あなたに対してそうであるように。"
+        },
+        "4": {
+            "Title": "アレスの破城槌",
+            "Description": "シーザーが<color=#FFFFFF>『連携スキル』</color>または<color=#FFFFFF>『終結スキル』</color>を発動した時、追加で<color=#FFFFFF>「支援ポイント」</color>を3Pt回復する。シーザーのエネルギー値が20Pt未満の時、エネルギー値の代わりに<color=#FFFFFF>「支援ポイント」</color>を1Pt消費して<color=#FFFFFF>『強化特殊スキル：圧倒的シールドバッシュ』</color>を発動できるようになる。この代替効果は5秒に1回のみ発動可能。",
+            "Lore": "シーザーが流れ者たちの師から教わった戦術のひとつ。\n「何があっても、オレ様は最後の最後まで戦うぜ！」"
+        },
+        "5": {
+            "Title": "征服のロマンス",
+            "Description": "<color=#FFFFFF>『通常攻撃』</color>、<color=#FFFFFF>『回避』</color>、<color=#FFFFFF>『支援スキル』</color>、<color=#FFFFFF>『特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>のスキルレベル+2",
+            "Lore": "シーザーには、その見た目と裏腹にロマンチストな一面があり\n恋愛ものに興味津々なこともその証拠のひとつだ。\nこの手の話を掘り下げた暁には…滅多に見れない、赤面した彼女が拝めるだろう。"
+        },
+        "6": {
+            "Title": "覇者の志",
+            "Description": "<color=#FFFFFF>『強化特殊スキル：圧倒的シールドバッシュ』</color>および<color=#FFFFFF>『支援突撃：支える剣』</color>で必ず会心が出るようになり、このスキルによる与ダメージ+50%、メインターゲットに与えるダメージがさらに追加で+50%。シーザーが<color=#FFFFFF>『強化特殊スキル：圧倒的シールドバッシュ』</color>または<color=#FFFFFF>『支援突撃：支える剣』</color>を発動した時、自身の会心率+30%、会心ダメージ+60%、継続時間15秒。",
+            "Lore": "「オレ様は前しか見えてなかった。強くなれば、何でもできるんだって疑わなかった…」\n「けど、それだけじゃ優れた覇者にはなれっこねぇ」\n「オレ様は、後ろに続いてくれる仲間を守る。あいつらこそ、\nオレ様が前に進む原動力だから」"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "コアパッシブ：堅固な壁",
+            "DescriptionByLevel": {
+                "1": "シーザーが<color=#FFFFFF>『強化特殊スキル：カウンターパリィ』</color>、<color=#FFFFFF>『連携スキル』</color>、<color=#FFFFFF>『終結スキル』</color>を発動、または<color=#FFFFFF>『防御反撃』</color>によって<color=#FFFFFF>『強化特殊スキル：圧倒的シールドバッシュ』</color>を発動した時、チーム全体に自身の開幕衝撃力<color=#2BAD00>300%</color>+<color=#2BAD00>200</color>Ptのシールド<color=#FFFFFF>「栄光の盾」</color>を提供する、継続時間60秒。<color=#FFFFFF>「栄光の盾」</color>は操作中のメンバーが所持し、シールド値はチームで共有される。また、1回に受けるダメージがシールド値を超えない。\n<color=#FFFFFF>「栄光の盾」</color>継続中、所持者の中断耐性レベルがアップする。\n<color=#FFFFFF>「栄光の盾」</color>継続中、所持者の攻撃力+<color=#2BAD00>40</color>Pt。<color=#FFFFFF>「栄光の盾」</color>の効果が切れたあとも、攻撃力アップ効果は5秒継続する。",
+                "2": "シーザーが<color=#FFFFFF>『強化特殊スキル：カウンターパリィ』</color>、<color=#FFFFFF>『連携スキル』</color>、<color=#FFFFFF>『終結スキル』</color>を発動、または<color=#FFFFFF>『防御反撃』</color>によって<color=#FFFFFF>『強化特殊スキル：圧倒的シールドバッシュ』</color>を発動した時、チーム全体に自身の開幕衝撃力<color=#2BAD00>500%</color>+<color=#2BAD00>400</color>Ptのシールド<color=#FFFFFF>「栄光の盾」</color>を提供する、継続時間60秒。<color=#FFFFFF>「栄光の盾」</color>は操作中のメンバーが所持し、シールド値はチームで共有される。また、1回に受けるダメージがシールド値を超えない。\n<color=#FFFFFF>「栄光の盾」</color>継続中、所持者の中断耐性レベルがアップする。\n<color=#FFFFFF>「栄光の盾」</color>継続中、所持者の攻撃力+<color=#2BAD00>135</color>Pt。<color=#FFFFFF>「栄光の盾」</color>の効果が切れたあとも、攻撃力アップ効果は5秒継続する。",
+                "3": "シーザーが<color=#FFFFFF>『強化特殊スキル：カウンターパリィ』</color>、<color=#FFFFFF>『連携スキル』</color>、<color=#FFFFFF>『終結スキル』</color>を発動、または<color=#FFFFFF>『防御反撃』</color>によって<color=#FFFFFF>『強化特殊スキル：圧倒的シールドバッシュ』</color>を発動した時、チーム全体に自身の開幕衝撃力<color=#2BAD00>700%</color>+<color=#2BAD00>700</color>Ptのシールド<color=#FFFFFF>「栄光の盾」</color>を提供する、継続時間60秒。<color=#FFFFFF>「栄光の盾」</color>は操作中のメンバーが所持し、シールド値はチームで共有される。また、1回に受けるダメージがシールド値を超えない。\n<color=#FFFFFF>「栄光の盾」</color>継続中、所持者の中断耐性レベルがアップする。\n<color=#FFFFFF>「栄光の盾」</color>継続中、所持者の攻撃力+<color=#2BAD00>240</color>Pt。<color=#FFFFFF>「栄光の盾」</color>の効果が切れたあとも、攻撃力アップ効果は5秒継続する。",
+                "4": "シーザーが<color=#FFFFFF>『強化特殊スキル：カウンターパリィ』</color>、<color=#FFFFFF>『連携スキル』</color>、<color=#FFFFFF>『終結スキル』</color>を発動、または<color=#FFFFFF>『防御反撃』</color>によって<color=#FFFFFF>『強化特殊スキル：圧倒的シールドバッシュ』</color>を発動した時、チーム全体に自身の開幕衝撃力<color=#2BAD00>900%</color>+<color=#2BAD00>900</color>Ptのシールド<color=#FFFFFF>「栄光の盾」</color>を提供する、継続時間60秒。<color=#FFFFFF>「栄光の盾」</color>は操作中のメンバーが所持し、シールド値はチームで共有される。また、1回に受けるダメージがシールド値を超えない。\n<color=#FFFFFF>「栄光の盾」</color>継続中、所持者の中断耐性レベルがアップする。\n<color=#FFFFFF>「栄光の盾」</color>継続中、所持者の攻撃力+<color=#2BAD00>400</color>Pt。<color=#FFFFFF>「栄光の盾」</color>の効果が切れたあとも、攻撃力アップ効果は5秒継続する。",
+                "5": "シーザーが<color=#FFFFFF>『強化特殊スキル：カウンターパリィ』</color>、<color=#FFFFFF>『連携スキル』</color>、<color=#FFFFFF>『終結スキル』</color>を発動、または<color=#FFFFFF>『防御反撃』</color>によって<color=#FFFFFF>『強化特殊スキル：圧倒的シールドバッシュ』</color>を発動した時、チーム全体に自身の開幕衝撃力<color=#2BAD00>1100%</color>+<color=#2BAD00>1100</color>Ptのシールド<color=#FFFFFF>「栄光の盾」</color>を提供する、継続時間60秒。<color=#FFFFFF>「栄光の盾」</color>は操作中のメンバーが所持し、シールド値はチームで共有される。また、1回に受けるダメージがシールド値を超えない。\n<color=#FFFFFF>「栄光の盾」</color>継続中、所持者の中断耐性レベルがアップする。\n<color=#FFFFFF>「栄光の盾」</color>継続中、所持者の攻撃力+<color=#2BAD00>650</color>Pt。<color=#FFFFFF>「栄光の盾」</color>の効果が切れたあとも、攻撃力アップ効果は5秒継続する。",
+                "6": "シーザーが<color=#FFFFFF>『強化特殊スキル：カウンターパリィ』</color>、<color=#FFFFFF>『連携スキル』</color>、<color=#FFFFFF>『終結スキル』</color>を発動、または<color=#FFFFFF>『防御反撃』</color>によって<color=#FFFFFF>『強化特殊スキル：圧倒的シールドバッシュ』</color>を発動した時、チーム全体に自身の開幕衝撃力<color=#2BAD00>1300%</color>+<color=#2BAD00>1300</color>Ptのシールド<color=#FFFFFF>「栄光の盾」</color>を提供する、継続時間60秒。<color=#FFFFFF>「栄光の盾」</color>は操作中のメンバーが所持し、シールド値はチームで共有される。また、1回に受けるダメージがシールド値を超えない。\n<color=#FFFFFF>「栄光の盾」</color>継続中、所持者の中断耐性レベルがアップする。\n<color=#FFFFFF>「栄光の盾」</color>継続中、所持者の攻撃力+<color=#2BAD00>900</color>Pt。<color=#FFFFFF>「栄光の盾」</color>の効果が切れたあとも、攻撃力アップ効果は5秒継続する。",
+                "7": "シーザーが<color=#FFFFFF>『強化特殊スキル：カウンターパリィ』</color>、<color=#FFFFFF>『連携スキル』</color>、<color=#FFFFFF>『終結スキル』</color>を発動、または<color=#FFFFFF>『防御反撃』</color>によって<color=#FFFFFF>『強化特殊スキル：圧倒的シールドバッシュ』</color>を発動した時、チーム全体に自身の開幕衝撃力<color=#2BAD00>1400%</color>+<color=#2BAD00>1400</color>Ptのシールド<color=#FFFFFF>「栄光の盾」</color>を提供する、継続時間60秒。<color=#FFFFFF>「栄光の盾」</color>は操作中のメンバーが所持し、シールド値はチームで共有される。また、1回に受けるダメージがシールド値を超えない。\n<color=#FFFFFF>「栄光の盾」</color>継続中、所持者の中断耐性レベルがアップする。\n<color=#FFFFFF>「栄光の盾」</color>継続中、所持者の攻撃力+<color=#2BAD00>1000</color>Pt。<color=#FFFFFF>「栄光の盾」</color>の効果が切れたあとも、攻撃力アップ効果は5秒継続する。"
+            }
+        },
+        "MathSkill": {
+            "Title": "追加能力：ほとばしる闘志",
+            "Description": "チームに<color=#FFFFFF>『パリィ支援』</color>を発動できる他のメンバーまたは自身と同じ陣営のメンバーがいる時に発動：\nシーザーが<color=#FFFFFF>『ジャストガード』</color>、<color=#FFFFFF>『防御反撃』</color>、<color=#FFFFFF>『パリィ支援』</color>を発動、または<color=#FFFFFF>『通常攻撃：ここは通さない！』</color>を発動した時、自身の半径7m以内にいる敵にデバフ効果を付与する。デバフ効果を付与された敵に対し、メンバー全員の与ダメージ+25%、継続時間30秒。"
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "107100001": {
+                "Title": "通常攻撃：ランペイジスラッシュ",
+                "Description": " <IconMap:Icon_Normal> を押して発動：\n前方に最大6段の斬撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。"
+            },
+            "107100002": {
+                "Title": "通常攻撃：ここは通さない！",
+                "Description": "<color=#FFFFFF>「支援ポイント」</color>がある状態で <IconMap:Icon_Normal> を長押しして発動：\n<color=#FFFFFF>「支援ポイント」</color>を1Pt消費して、盾を投げることで周囲に攻撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。"
+            },
+            "107110001": {
+                "Title": "通常攻撃：ランペイジスラッシュ"
+            },
+            "107110002": {
+                "Description": "1段ダメージ倍率",
+                "Param": "{Skill:1071001, Prop:1001}"
+            },
+            "107110003": {
+                "Description": "2段ダメージ倍率",
+                "Param": "{Skill:1071002, Prop:1001}"
+            },
+            "107110004": {
+                "Description": "3段ダメージ倍率",
+                "Param": "{Skill:1071003, Prop:1001}"
+            },
+            "107110005": {
+                "Description": "3段(派生)ダメージ倍率",
+                "Param": "{Skill:1071008, Prop:1001}"
+            },
+            "107110006": {
+                "Description": "4段ダメージ倍率",
+                "Param": "{Skill:1071004, Prop:1001}"
+            },
+            "107110007": {
+                "Description": "5段ダメージ倍率",
+                "Param": "{Skill:1071005, Prop:1001}"
+            },
+            "107110008": {
+                "Description": "6段ダメージ倍率",
+                "Param": "{Skill:1071006, Prop:1001}"
+            },
+            "107110009": {
+                "Description": "1段ブレイク倍率",
+                "Param": "{Skill:1071001, Prop:1002}"
+            },
+            "107110010": {
+                "Description": "2段ブレイク倍率",
+                "Param": "{Skill:1071002, Prop:1002}"
+            },
+            "107110011": {
+                "Description": "3段ブレイク倍率",
+                "Param": "{Skill:1071003, Prop:1002}"
+            },
+            "107110012": {
+                "Description": "3段(派生)ブレイク倍率",
+                "Param": "{Skill:1071008, Prop:1002}"
+            },
+            "107110013": {
+                "Description": "4段ブレイク倍率",
+                "Param": "{Skill:1071004, Prop:1002}"
+            },
+            "107110014": {
+                "Description": "5段ブレイク倍率",
+                "Param": "{Skill:1071005, Prop:1002}"
+            },
+            "107110015": {
+                "Description": "6段ブレイク倍率",
+                "Param": "{Skill:1071006, Prop:1002}"
+            },
+            "107110016": {
+                "Title": "通常攻撃：ここは通さない！"
+            },
+            "107110017": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1071007, Prop:1001}"
+            },
+            "107110018": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1071007, Prop:1002}"
+            },
+            "107110019": {
+                "Description": "支援ポイント消費",
+                "Param": "1Pt"
+            }
+        },
+        "1": {
+            "107100003": {
+                "Title": "特殊スキル：シールドバッシュ",
+                "Description": " <IconMap:Icon_Special> を押して発動：\n盾で前方に打撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。\nスキルを発動した直後のわずかな間に敵の攻撃を受けると<color=#FFFFFF>『ジャストガード』</color>が発動し、今回受けた攻撃のダメージを無効化、その後<color=#FFFFFF>『特殊スキル：轟きのスラスト』</color>が自動で発動される。\nスキル発動後、シーザーはパリィ態勢に入る。パリィ態勢継続中、自身の被ダメージ-40%。パリィ態勢で敵の攻撃を受けた時、盾でガードし後ずさりする。その後に <IconMap:Icon_Special> または <IconMap:Icon_SpecialReady> を押すと、<color=#FFFFFF>『防御反撃』</color>による<color=#FFFFFF>『特殊スキル：轟きのスラスト』</color>または<color=#FFFFFF>『強化特殊スキル：圧倒的シールドバッシュ』</color>を発動できる。\n<color=#FFFFFF>『防御反撃』</color>が発動した時、スキル発動中に無敵効果を得る。"
+            },
+            "107100004": {
+                "Title": "特殊スキル：轟きのスラスト",
+                "Description": "<color=#FFFFFF>『特殊スキル：シールドバッシュ』</color>発動後に <IconMap:Icon_Special> を押して発動：\n前方に一突きを放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。\n<color=#FFFFFF>『ジャストガード』</color>および<color=#FFFFFF>『防御反撃』</color>が発動していない時、スキル発動中に中断耐性レベルがアップする。\n<color=#FFFFFF>『ジャストガード』</color>または<color=#FFFFFF>『防御反撃』</color>が発動した時、スキル発動中に無敵効果を得る。"
+            },
+            "107100005": {
+                "Title": "強化特殊スキル：カウンターパリィ",
+                "Description": "エネルギーが溜まっている状態で <IconMap:Icon_SpecialReady> を押して発動：\n盾で前方に打撃を行った後、強力な一突きを放ち、<color=#F0D12B>物理属性ダメージ</color>を大量に与える。\nシールド打撃により<color=#FFFFFF>「看破」</color>が発動した時、あるいはスキルを発動した直後のわずかな間に敵の攻撃を受けると、<color=#FFFFFF>『ジャストガード』</color>が発動し、今回受けた攻撃のダメージを無効化、その後盾を一振りして反撃する。<color=#FFFFFF>『ジャストガード』</color>発動後に <IconMap:Icon_SpecialReady> を押すと、エネルギーを消費せずに<color=#FFFFFF>『強化特殊スキル：圧倒的シールドバッシュ』</color>を発動できる。\nスキル発動後、シーザーはパリィ態勢に入る。パリィ態勢継続中、自身の被ダメージ-40%。パリィ態勢で敵の攻撃を受けた時、盾でガードし後ずさりする。その後に <IconMap:Icon_Special> または <IconMap:Icon_SpecialReady> を押すと、<color=#FFFFFF>『防御反撃』</color>による<color=#FFFFFF>『特殊スキル：轟きのスラスト』</color>または<color=#FFFFFF>『強化特殊スキル：圧倒的シールドバッシュ』</color>を発動できる。\nスキル発動中、無敵効果を得る。"
+            },
+            "107100006": {
+                "Title": "強化特殊スキル：圧倒的シールドバッシュ",
+                "Description": "<color=#FFFFFF>『強化特殊スキル：カウンターパリィ』</color>発動後、エネルギーが溜まっている状態で <IconMap:Icon_SpecialReady> を押して発動：\n盾で前方に打撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を大量に与える。\nシールド打撃により<color=#FFFFFF>「看破」</color>が発動した時、あるいはスキルを発動した直後のわずかな間に敵の攻撃を受けると、<color=#FFFFFF>『ジャストガード』</color>が発動し、今回受けた攻撃のダメージを無効化、さらにスキルの発動で消費したエネルギーが返還される。\n<color=#FFFFFF>『ジャストガード』</color>または<color=#FFFFFF>『防御反撃』</color>によってこのスキルを発動した場合、再び<color=#FFFFFF>『ジャストガード』</color>を発動することはできない。\nスキル発動中、無敵効果を得る。"
+            },
+            "107100007": {
+                "Title": "攻防一転",
+                "Description": "<color=#FFFFFF>『ジャストガード』</color>、<color=#FFFFFF>『防御反撃』</color>または<color=#FFFFFF>『パリィ支援』</color>を発動した時、自身の衝撃力+<color=#2BAD00>{CAL:8+AvatarSkillLevel(1)*1,1,2}</color>%、継続時間3秒。"
+            },
+            "107110020": {
+                "Title": "攻防一転"
+            },
+            "107110021": {
+                "Description": "衝撃力アップ",
+                "Param": "{CAL:8+AvatarSkillLevel(1)*1,1,2}%"
+            },
+            "107110022": {
+                "Title": "特殊スキル：シールドバッシュ"
+            },
+            "107110023": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1071009, Prop:1001}"
+            },
+            "107110024": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1071009, Prop:1002}"
+            },
+            "107110025": {
+                "Description": "『ジャストガード』ブレイク倍率",
+                "Param": "{Skill:1071014, Prop:1002}"
+            },
+            "107110026": {
+                "Title": "特殊スキル：轟きのスラスト"
+            },
+            "107110027": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1071010, Prop:1001}"
+            },
+            "107110028": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1071010, Prop:1002}"
+            },
+            "107110029": {
+                "Title": "強化特殊スキル：カウンターパリィ"
+            },
+            "107110030": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1071011, Prop:1001}"
+            },
+            "107110031": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1071011, Prop:1002}"
+            },
+            "107110032": {
+                "Description": "『ジャストガード』ブレイク倍率",
+                "Param": "{Skill:1071015, Prop:1002}"
+            },
+            "107110033": {
+                "Description": "『ジャストガード』反撃ダメージ倍率",
+                "Param": "{Skill:1071012, Prop:1001}"
+            },
+            "107110034": {
+                "Description": "『ジャストガード』反撃ブレイク倍率",
+                "Param": "{Skill:1071012, Prop:1002}"
+            },
+            "107110035": {
+                "Description": "エネルギー消費",
+                "Param": "40Pt"
+            },
+            "107110036": {
+                "Title": "強化特殊スキル：圧倒的シールドバッシュ"
+            },
+            "107110037": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1071013, Prop:1001}"
+            },
+            "107110038": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1071013, Prop:1002}"
+            },
+            "107110039": {
+                "Description": "『ジャストガード』ブレイク倍率",
+                "Param": "{Skill:1071015, Prop:1002}"
+            },
+            "107110040": {
+                "Description": "短押し発動時エネルギー消費",
+                "Param": "20Pt"
+            }
+        },
+        "2": {
+            "107100008": {
+                "Title": "回避：ドリフト",
+                "Description": " <IconMap:Icon_Evade> を押して発動：\nダッシュで高速回避する。\nスキル発動中、無敵効果を得る。"
+            },
+            "107100009": {
+                "Title": "ダッシュ攻撃：猪突猛進",
+                "Description": "回避時に <IconMap:Icon_Normal> を押して発動：\n盾で前方に打撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。\nスキル発動中、自身の被ダメージ-40%。スキル発動中に敵の攻撃を受けた時、盾でガードし後ずさりする。その後に <IconMap:Icon_Special> または <IconMap:Icon_SpecialReady> を押すと、<color=#FFFFFF>『防御反撃』</color>による<color=#FFFFFF>『特殊スキル：轟きのスラスト』</color>または<color=#FFFFFF>『強化特殊スキル：圧倒的シールドバッシュ』</color>を発動できる。"
+            },
+            "107100010": {
+                "Title": "回避反撃：牙には牙を",
+                "Description": "<color=#FFFFFF>『極限回避』</color>後に <IconMap:Icon_Normal> を押して発動：\n前方の敵に一突きを放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。"
+            },
+            "107110041": {
+                "Title": "ダッシュ攻撃：猪突猛進"
+            },
+            "107110042": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1071016, Prop:1001}"
+            },
+            "107110043": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1071016, Prop:1002}"
+            },
+            "107110044": {
+                "Title": "回避反撃：牙には牙を"
+            },
+            "107110045": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1071017, Prop:1001}"
+            },
+            "107110046": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1071017, Prop:1002}"
+            }
+        },
+        "3": {
+            "107100011": {
+                "Title": "連携スキル：ロードレイジスラム",
+                "Description": "<color=#FFFFFF>『連携スキル』</color>開始時に、対応するエージェントを選択して発動：\n前方範囲内の敵に強力な振り下ろし打撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を大量に与える。\nスキル発動中、無敵効果を得る。"
+            },
+            "107100012": {
+                "Title": "終結スキル：サベージスマッシュ",
+                "Description": "デシベルレートが<color=#FFFFFF>『Maximum』</color>に達した時に <IconMap:Icon_UltimateReady> を押して発動：\n盾を投げることで前方の敵に強力な回転攻撃を行った後、落下打撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を大量に与える。\nシールドがある敵に命中した時、スキルの与えるブレイク値+<color=#2BAD00>{CAL:40+AvatarSkillLevel(3)*5,1,2}%</color>。\nスキル発動中、無敵効果を得る。"
+            },
+            "107110047": {
+                "Title": "連携スキル：ロードレイジスラム"
+            },
+            "107110048": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1071018, Prop:1001}"
+            },
+            "107110049": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1071018, Prop:1002}"
+            },
+            "107110050": {
+                "Title": "終結スキル：サベージスマッシュ"
+            },
+            "107110051": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1071019, Prop:1001}"
+            },
+            "107110052": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1071019, Prop:1002}"
+            },
+            "107110053": {
+                "Description": "ブレイク値アップ",
+                "Param": "{CAL:40+AvatarSkillLevel(3)*5,1,2}%"
+            }
+        },
+        "6": {
+            "107100014": {
+                "Title": "クイック支援：車線変更",
+                "Description": "操作しているメンバーが吹き飛ばされた時に、 <IconMap:Icon_Switch> を押して発動：\n前方の敵に一突きを放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。"
+            },
+            "107100015": {
+                "Title": "パリィ支援：イージスの盾",
+                "Description": "出場中のメンバーが攻撃されそうになった時に、 <IconMap:Icon_Switch> を押して発動：\n敵の攻撃をパリィし、ブレイク値を大量に蓄積させる。\nパリィ性能はかなり高い。激しい攻撃を受けている際は、<color=#FFFFFF>「支援ポイント」</color>の消費量が減少する。\nスキル発動中、無敵効果を得る。"
+            },
+            "107100016": {
+                "Title": "支援突撃：支える剣",
+                "Description": "<color=#FFFFFF>『パリィ支援』</color>発動後、 <IconMap:Icon_Normal> を押して発動：\n盾を投げることで前方の敵に強力な回転攻撃を行った後、斬撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。\nスキル発動後に <IconMap:Icon_Special> または <IconMap:Icon_SpecialReady> を押すと、<color=#FFFFFF>『防御反撃』</color>による<color=#FFFFFF>『特殊スキル：轟きのスラスト』</color>または<color=#FFFFFF>『強化特殊スキル：圧倒的シールドバッシュ』</color>を発動できる。\nスキル発動中、無敵効果を得る。"
+            },
+            "107110054": {
+                "Title": "クイック支援：車線変更"
+            },
+            "107110055": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1071020, Prop:1001}"
+            },
+            "107110056": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1071020, Prop:1002}"
+            },
+            "107110057": {
+                "Title": "パリィ支援：イージスの盾"
+            },
+            "107110058": {
+                "Description": "パリィ・軽 ブレイク倍率",
+                "Param": "{Skill:1071021, Prop:1002}"
+            },
+            "107110059": {
+                "Description": "パリィ・重 ブレイク倍率",
+                "Param": "{Skill:1071022, Prop:1002}"
+            },
+            "107110060": {
+                "Description": "パリィ・連続 ブレイク倍率",
+                "Param": "{Skill:1071023, Prop:1002}"
+            },
+            "107110061": {
+                "Title": "支援突撃：支える剣"
+            },
+            "107110062": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1071024, Prop:1001}"
+            },
+            "107110063": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1071024, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1071001": {
+            "DamageValue": 4720,
+            "DamageGrowth": 430,
+            "DazeValue": 2130,
+            "DazeGrowth": 100
+        },
+        "1071002": {
+            "DamageValue": 4090,
+            "DamageGrowth": 380,
+            "DazeValue": 3380,
+            "DazeGrowth": 160
+        },
+        "1071003": {
+            "DamageValue": 14830,
+            "DamageGrowth": 1350,
+            "DazeValue": 11000,
+            "DazeGrowth": 500
+        },
+        "1071004": {
+            "DamageValue": 7880,
+            "DamageGrowth": 720,
+            "DazeValue": 6750,
+            "DazeGrowth": 310
+        },
+        "1071005": {
+            "DamageValue": 19860,
+            "DamageGrowth": 1810,
+            "DazeValue": 13750,
+            "DazeGrowth": 630
+        },
+        "1071006": {
+            "DamageValue": 39990,
+            "DamageGrowth": 3640,
+            "DazeValue": 26260,
+            "DazeGrowth": 1200
+        },
+        "1071007": {
+            "DamageValue": 12630,
+            "DamageGrowth": 1150,
+            "DazeValue": 9320,
+            "DazeGrowth": 430
+        },
+        "1071008": {
+            "DamageValue": 11840,
+            "DamageGrowth": 1080,
+            "DazeValue": 7360,
+            "DazeGrowth": 340
+        },
+        "1071009": {
+            "DamageValue": 5330,
+            "DamageGrowth": 490,
+            "DazeValue": 2400,
+            "DazeGrowth": 110
+        },
+        "1071010": {
+            "DamageValue": 5880,
+            "DamageGrowth": 540,
+            "DazeValue": 2650,
+            "DazeGrowth": 130
+        },
+        "1071011": {
+            "DamageValue": 38720,
+            "DamageGrowth": 3520,
+            "DazeValue": 25260,
+            "DazeGrowth": 1150
+        },
+        "1071012": {
+            "DamageValue": 38720,
+            "DamageGrowth": 3520,
+            "DazeValue": 25260,
+            "DazeGrowth": 1150
+        },
+        "1071013": {
+            "DamageValue": 42570,
+            "DamageGrowth": 3870,
+            "DazeValue": 28840,
+            "DazeGrowth": 1320
+        },
+        "1071014": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 7700,
+            "DazeGrowth": 350
+        },
+        "1071015": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15400,
+            "DazeGrowth": 700
+        },
+        "1071016": {
+            "DamageValue": 6230,
+            "DamageGrowth": 570,
+            "DazeValue": 3120,
+            "DazeGrowth": 150
+        },
+        "1071017": {
+            "DamageValue": 19350,
+            "DamageGrowth": 1760,
+            "DazeValue": 17420,
+            "DazeGrowth": 800
+        },
+        "1071018": {
+            "DamageValue": 63880,
+            "DamageGrowth": 5810,
+            "DazeValue": 19990,
+            "DazeGrowth": 910
+        },
+        "1071019": {
+            "DamageValue": 201230,
+            "DamageGrowth": 18300,
+            "DazeValue": 27870,
+            "DazeGrowth": 1270
+        },
+        "1071020": {
+            "DamageValue": 6420,
+            "DamageGrowth": 590,
+            "DazeValue": 6420,
+            "DazeGrowth": 300
+        },
+        "1071021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1071022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34530,
+            "DazeGrowth": 1570
+        },
+        "1071023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16930,
+            "DazeGrowth": 770
+        },
+        "1071024": {
+            "DamageValue": 40720,
+            "DamageGrowth": 3710,
+            "DazeValue": 35630,
+            "DazeGrowth": 1620
+        }
+    }
+}

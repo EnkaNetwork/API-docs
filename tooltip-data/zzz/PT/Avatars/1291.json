@@ -1,0 +1,491 @@
+{
+    "Name": "Hugo",
+    "ElementTypes": [
+        "Ice"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Filho do Ódio",
+            "Description": "No estado <color=#FFFFFF>Ecos do Abismo</color>, ao ativar o efeito <color=#FFFFFF>Totalização</color>, a Taxa CRIT da habilidade aumenta mais 12% e o Dano CRIT aumenta 30%.",
+            "Lore": "\"Portanto, não negue seus desejos, não resista às suas ambições. Este é o seu talento nato, a melhor dádiva que o destino já lhe concedeu!\"\n\"Admita, há uma fagulha, no fundo do seu coração, que anseia para começar o inferno ardente que reduzirá tudo a cinzas...\"\n\"E eu sou essa fagulha.\"\n\n\"Sim, eu sei. Eu sempre soube.\""
+        },
+        "2": {
+            "Title": "Criança Interior",
+            "Description": "Quando o <color=#FFFFFF>Supremo: Blasfêmia</color> ativar <color=#FFFFFF>Totalização</color>, o inimigo não sairá do estado de Atordoamento. Além disso, quando <color=#FFFFFF>Totalização</color> for ativado, a habilidade vai ignorar 15% da DEF do inimigo.",
+            "Lore": "\"A família é uma maldição eterna e inevitável imposta a uma pessoa.\"\n\"Não importa o quanto você cresça, não importa aonde vá, essa maldição sempre seguirá você como uma sombra.\"\n\"Mesmo que você chegue ao fundo do poço ou ao topo do mundo, eles aparecerão e transformarão você naquela criança indefesa e impotente que não consegue fazer nada além de se esconder e chorar.\"\n\n\"A não ser que você verdadeiramente o veja e o aceite.\"\nAlgumas dores só podem ser curadas quando reconhecidas e aceitas."
+        },
+        "3": {
+            "Title": "Fruto Proibido",
+            "Description": "Obtém +2 níveis de <color=#FFFFFF>Ataque Básico</color>, <color=#FFFFFF>Esquiva</color>, <color=#FFFFFF>Ataque de Assistência</color>, <color=#FFFFFF>Ataque Especial</color> e <color=#FFFFFF>Ataque em Cadeia</color>",
+            "Lore": "Rumores dizem que todas as flores que desabrocham no Abismo são impregnadas de malícia, assim como uma árvore venenosa que produz somente frutos perigosos.\nMas todas as frutas caem.\nEntão, ele se partiu em uma chuva de fragmentos.\nEssa chuva encharcou a terra, e cada gota de orvalho refletiu um novo amanhecer."
+        },
+        "4": {
+            "Title": "Teoria Dramática",
+            "Description": "Quando um Disparo Carregado atinge um inimigo, os ataques de Hugo ignoram 12% da <color=#98EFF0>resistência ao Gelo</color> do alvo por 15s. Ativações repetidas reiniciam a duração.",
+            "Lore": "Justiça, maldade, loucura, razão, charme, teimosia.\nEle é composto por milhares de faces.\n\"Então, qual é o seu verdadeiro eu?\"\n\"Isso não importa. Ao invés disso, conte-me, Lycaon...\"\n\"Que pessoa você vê ao olhar para mim?\""
+        },
+        "5": {
+            "Title": "Nirvana",
+            "Description": "Obtém +2 níveis de <color=#FFFFFF>Ataque Básico</color>, <color=#FFFFFF>Esquiva</color>, <color=#FFFFFF>Ataque de Assistência</color>, <color=#FFFFFF>Ataque Especial</color> e <color=#FFFFFF>Ataque em Cadeia</color>",
+            "Lore": "O mundo não precisa ser destruído e reconstruído, e ninguém tem o direito de fazer isso.\nMas com uma pessoa isso pode acontecer.\nEntão ele se despedaçou e renasceu.\n\"Se eu tiver que cair, deixe-me cair. A pessoa em quem devo me tornar será aquela que vai me amparar.\""
+        },
+        "6": {
+            "Title": "Coroa de Espinhos",
+            "Description": "Todos os disparos que atingem um inimigo podem ativar o estado <color=#FFFFFF>Ecos do Abismo</color>, por até 6s. Ativações repetidas reiniciam a duração. Além disso, quando o efeito <color=#FFFFFF>Totalização</color> é ativado, o dano da habilidade aumenta mais 60%. Quando o Golpe Final do <color=#FFFFFF>Ataque Especial Reforçado: Caçador de Almas — Castigo</color> atinge um inimigo não atordoado, também ativa o efeito <color=#FFFFFF>Totalização</color>, o Multiplicador de Dano do Golpe Final aumenta em um valor fixo de 1000%.",
+            "Lore": "Ele caminhou alegremente na direção do infinito abismo, deixando os espinhos do chão rasgarem suas feridas.\nOnde o sangue se espalhava, dignidade e teimosia quebradas brotavam.\nEle pegou os espinhos ensanguentados para se coroar.\n\"Somente uma pessoa pode me matar ou me salvar... eu mesmo.\""
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passiva Principal: Veredito Final",
+            "DescriptionByLevel": {
+                "1": "Quando <color=#FFFFFF>Ataque em Cadeia: Truque do Destino</color> atinge um inimigo ou quando Hugo causa Atordoamento a um inimigo, Hugo obtém o estado <color=#FFFFFF>Ecos do Abismo</color> por 6s. Ativações repetidas reiniciam a duração. Neste estado, a Taxa CRIT de Hugo aumenta 12% e o Dano CRIT aumenta 25%.\nQuando há 1/2 outros personagens do tipo <color=#FFFFFF>Atordoador</color> na equipe, o ATQ de Hugo aumenta <color=#2BAD00>25</color>/<color=#2BAD00>75</color> pontos, respectivamente.\nQuando o Golpe Final do <color=#FFFFFF>Ataque Especial Reforçado: Caçador de Almas — Castigo</color> ou do <color=#FFFFFF>Supremo: Blasfêmia</color> atingem um inimigo atordoado, o efeito de <color=#FFFFFF>Totalização</color> é ativado, aumentando o Multiplicador de Dano do Golpe Final em <color=#2BAD00>500%</color>. Além disso, o efeito <color=#FFFFFF>Totalização</color> aumenta ainda mais o Multiplicador de Dano com base no tempo restante de Atordoamento do inimigo: entre 1 e 5s restantes, o Multiplicador de Dano aumenta <color=#2BAD00>140%</color> para cada 1s restante. Entre 5s e 15s, aumenta <color=#2BAD00>50%</color>, até um máximo de <color=#2BAD00>1700%</color>.\nAo ativar o efeito <color=#FFFFFF>Totalização</color>, o estado de Atordoamento do inimigo termina imediatamente e, com base no tempo restante de Atordoamento quando <color=#FFFFFF>Totalização</color> é ativado, acumula Atordoamento adicional. Para cada 1s restante de Atordoamento, acumula 5% de Atordoamento, até um máximo de 25% do limite máximo de Atordoamento do inimigo.\nQuando <color=#FFFFFF>Ataque Especial Reforçado: Caçador de Almas — Castigo</color> atinge um inimigo não atordoado, o Atordoamento acumulado pela habilidade aumenta 20%.",
+                "2": "Quando <color=#FFFFFF>Ataque em Cadeia: Truque do Destino</color> atinge um inimigo ou quando Hugo causa Atordoamento a um inimigo, Hugo obtém o estado <color=#FFFFFF>Ecos do Abismo</color> por 6s. Ativações repetidas reiniciam a duração. Neste estado, a Taxa CRIT de Hugo aumenta 12% e o Dano CRIT aumenta 25%.\nQuando há 1/2 outros personagens do tipo <color=#FFFFFF>Atordoador</color> na equipe, o ATQ de Hugo aumenta <color=#2BAD00>50</color>/<color=#2BAD00>150</color> pontos, respectivamente.\nQuando o Golpe Final do <color=#FFFFFF>Ataque Especial Reforçado: Caçador de Almas — Castigo</color> ou do <color=#FFFFFF>Supremo: Blasfêmia</color> atingem um inimigo atordoado, o efeito de <color=#FFFFFF>Totalização</color> é ativado, aumentando o Multiplicador de Dano do Golpe Final em <color=#2BAD00>583%</color>. Além disso, o efeito <color=#FFFFFF>Totalização</color> aumenta ainda mais o Multiplicador de Dano com base no tempo restante de Atordoamento do inimigo: entre 1 e 5s restantes, o Multiplicador de Dano aumenta <color=#2BAD00>163%</color> para cada 1s restante. Entre 5s e 15s, aumenta <color=#2BAD00>58%</color>, até um máximo de <color=#2BAD00>1978%</color>.\nAo ativar o efeito <color=#FFFFFF>Totalização</color>, o estado de Atordoamento do inimigo termina imediatamente e, com base no tempo restante de Atordoamento quando <color=#FFFFFF>Totalização</color> é ativado, acumula Atordoamento adicional. Para cada 1s restante de Atordoamento, acumula 5% de Atordoamento, até um máximo de 25% do limite máximo de Atordoamento do inimigo.\nQuando <color=#FFFFFF>Ataque Especial Reforçado: Caçador de Almas — Castigo</color> atinge um inimigo não atordoado, o Atordoamento acumulado pela habilidade aumenta 20%.",
+                "3": "Quando <color=#FFFFFF>Ataque em Cadeia: Truque do Destino</color> atinge um inimigo ou quando Hugo causa Atordoamento a um inimigo, Hugo obtém o estado <color=#FFFFFF>Ecos do Abismo</color> por 6s. Ativações repetidas reiniciam a duração. Neste estado, a Taxa CRIT de Hugo aumenta 12% e o Dano CRIT aumenta 25%.\nQuando há 1/2 outros personagens do tipo <color=#FFFFFF>Atordoador</color> na equipe, o ATQ de Hugo aumenta <color=#2BAD00>80</color>/<color=#2BAD00>240</color> pontos, respectivamente.\nQuando o Golpe Final do <color=#FFFFFF>Ataque Especial Reforçado: Caçador de Almas — Castigo</color> ou do <color=#FFFFFF>Supremo: Blasfêmia</color> atingem um inimigo atordoado, o efeito de <color=#FFFFFF>Totalização</color> é ativado, aumentando o Multiplicador de Dano do Golpe Final em <color=#2BAD00>667%</color>. Além disso, o efeito <color=#FFFFFF>Totalização</color> aumenta ainda mais o Multiplicador de Dano com base no tempo restante de Atordoamento do inimigo: entre 1 e 5s restantes, o Multiplicador de Dano aumenta <color=#2BAD00>187%</color> para cada 1s restante. Entre 5s e 15s, aumenta <color=#2BAD00>67%</color>, até um máximo de <color=#2BAD00>2272%</color>.\nAo ativar o efeito <color=#FFFFFF>Totalização</color>, o estado de Atordoamento do inimigo termina imediatamente e, com base no tempo restante de Atordoamento quando <color=#FFFFFF>Totalização</color> é ativado, acumula Atordoamento adicional. Para cada 1s restante de Atordoamento, acumula 5% de Atordoamento, até um máximo de 25% do limite máximo de Atordoamento do inimigo.\nQuando <color=#FFFFFF>Ataque Especial Reforçado: Caçador de Almas — Castigo</color> atinge um inimigo não atordoado, o Atordoamento acumulado pela habilidade aumenta 20%.",
+                "4": "Quando <color=#FFFFFF>Ataque em Cadeia: Truque do Destino</color> atinge um inimigo ou quando Hugo causa Atordoamento a um inimigo, Hugo obtém o estado <color=#FFFFFF>Ecos do Abismo</color> por 6s. Ativações repetidas reiniciam a duração. Neste estado, a Taxa CRIT de Hugo aumenta 12% e o Dano CRIT aumenta 25%.\nQuando há 1/2 outros personagens do tipo <color=#FFFFFF>Atordoador</color> na equipe, o ATQ de Hugo aumenta <color=#2BAD00>120</color>/<color=#2BAD00>360</color> pontos, respectivamente.\nQuando o Golpe Final do <color=#FFFFFF>Ataque Especial Reforçado: Caçador de Almas — Castigo</color> ou do <color=#FFFFFF>Supremo: Blasfêmia</color> atingem um inimigo atordoado, o efeito de <color=#FFFFFF>Totalização</color> é ativado, aumentando o Multiplicador de Dano do Golpe Final em <color=#2BAD00>750%</color>. Além disso, o efeito <color=#FFFFFF>Totalização</color> aumenta ainda mais o Multiplicador de Dano com base no tempo restante de Atordoamento do inimigo: entre 1 e 5s restantes, o Multiplicador de Dano aumenta <color=#2BAD00>210%</color> para cada 1s restante. Entre 5s e 15s, aumenta <color=#2BAD00>75%</color>, até um máximo de <color=#2BAD00>2550%</color>.\nAo ativar o efeito <color=#FFFFFF>Totalização</color>, o estado de Atordoamento do inimigo termina imediatamente e, com base no tempo restante de Atordoamento quando <color=#FFFFFF>Totalização</color> é ativado, acumula Atordoamento adicional. Para cada 1s restante de Atordoamento, acumula 5% de Atordoamento, até um máximo de 25% do limite máximo de Atordoamento do inimigo.\nQuando <color=#FFFFFF>Ataque Especial Reforçado: Caçador de Almas — Castigo</color> atinge um inimigo não atordoado, o Atordoamento acumulado pela habilidade aumenta 20%.",
+                "5": "Quando <color=#FFFFFF>Ataque em Cadeia: Truque do Destino</color> atinge um inimigo ou quando Hugo causa Atordoamento a um inimigo, Hugo obtém o estado <color=#FFFFFF>Ecos do Abismo</color> por 6s. Ativações repetidas reiniciam a duração. Neste estado, a Taxa CRIT de Hugo aumenta 12% e o Dano CRIT aumenta 25%.\nQuando há 1/2 outros personagens do tipo <color=#FFFFFF>Atordoador</color> na equipe, o ATQ de Hugo aumenta <color=#2BAD00>180</color>/<color=#2BAD00>540</color> pontos, respectivamente.\nQuando o Golpe Final do <color=#FFFFFF>Ataque Especial Reforçado: Caçador de Almas — Castigo</color> ou do <color=#FFFFFF>Supremo: Blasfêmia</color> atingem um inimigo atordoado, o efeito de <color=#FFFFFF>Totalização</color> é ativado, aumentando o Multiplicador de Dano do Golpe Final em <color=#2BAD00>833%</color>. Além disso, o efeito <color=#FFFFFF>Totalização</color> aumenta ainda mais o Multiplicador de Dano com base no tempo restante de Atordoamento do inimigo: entre 1 e 5s restantes, o Multiplicador de Dano aumenta <color=#2BAD00>233%</color> para cada 1s restante. Entre 5s e 15s, aumenta <color=#2BAD00>83%</color>, até um máximo de <color=#2BAD00>2828%</color>.\nAo ativar o efeito <color=#FFFFFF>Totalização</color>, o estado de Atordoamento do inimigo termina imediatamente e, com base no tempo restante de Atordoamento quando <color=#FFFFFF>Totalização</color> é ativado, acumula Atordoamento adicional. Para cada 1s restante de Atordoamento, acumula 5% de Atordoamento, até um máximo de 25% do limite máximo de Atordoamento do inimigo.\nQuando <color=#FFFFFF>Ataque Especial Reforçado: Caçador de Almas — Castigo</color> atinge um inimigo não atordoado, o Atordoamento acumulado pela habilidade aumenta 20%.",
+                "6": "Quando <color=#FFFFFF>Ataque em Cadeia: Truque do Destino</color> atinge um inimigo ou quando Hugo causa Atordoamento a um inimigo, Hugo obtém o estado <color=#FFFFFF>Ecos do Abismo</color> por 6s. Ativações repetidas reiniciam a duração. Neste estado, a Taxa CRIT de Hugo aumenta 12% e o Dano CRIT aumenta 25%.\nQuando há 1/2 outros personagens do tipo <color=#FFFFFF>Atordoador</color> na equipe, o ATQ de Hugo aumenta <color=#2BAD00>270</color>/<color=#2BAD00>810</color> pontos, respectivamente.\nQuando o Golpe Final do <color=#FFFFFF>Ataque Especial Reforçado: Caçador de Almas — Castigo</color> ou do <color=#FFFFFF>Supremo: Blasfêmia</color> atingem um inimigo atordoado, o efeito de <color=#FFFFFF>Totalização</color> é ativado, aumentando o Multiplicador de Dano do Golpe Final em <color=#2BAD00>917%</color>. Além disso, o efeito <color=#FFFFFF>Totalização</color> aumenta ainda mais o Multiplicador de Dano com base no tempo restante de Atordoamento do inimigo: entre 1 e 5s restantes, o Multiplicador de Dano aumenta <color=#2BAD00>257%</color> para cada 1s restante. Entre 5s e 15s, aumenta <color=#2BAD00>92%</color>, até um máximo de <color=#2BAD00>3122%</color>.\nAo ativar o efeito <color=#FFFFFF>Totalização</color>, o estado de Atordoamento do inimigo termina imediatamente e, com base no tempo restante de Atordoamento quando <color=#FFFFFF>Totalização</color> é ativado, acumula Atordoamento adicional. Para cada 1s restante de Atordoamento, acumula 5% de Atordoamento, até um máximo de 25% do limite máximo de Atordoamento do inimigo.\nQuando <color=#FFFFFF>Ataque Especial Reforçado: Caçador de Almas — Castigo</color> atinge um inimigo não atordoado, o Atordoamento acumulado pela habilidade aumenta 20%.",
+                "7": "Quando <color=#FFFFFF>Ataque em Cadeia: Truque do Destino</color> atinge um inimigo ou quando Hugo causa Atordoamento a um inimigo, Hugo obtém o estado <color=#FFFFFF>Ecos do Abismo</color> por 6s. Ativações repetidas reiniciam a duração. Neste estado, a Taxa CRIT de Hugo aumenta 12% e o Dano CRIT aumenta 25%.\nQuando há 1/2 outros personagens do tipo <color=#FFFFFF>Atordoador</color> na equipe, o ATQ de Hugo aumenta <color=#2BAD00>300</color>/<color=#2BAD00>900</color> pontos, respectivamente.\nQuando o Golpe Final do <color=#FFFFFF>Ataque Especial Reforçado: Caçador de Almas — Castigo</color> ou do <color=#FFFFFF>Supremo: Blasfêmia</color> atingem um inimigo atordoado, o efeito de <color=#FFFFFF>Totalização</color> é ativado, aumentando o Multiplicador de Dano do Golpe Final em <color=#2BAD00>1000%</color>. Além disso, o efeito <color=#FFFFFF>Totalização</color> aumenta ainda mais o Multiplicador de Dano com base no tempo restante de Atordoamento do inimigo: entre 1 e 5s restantes, o Multiplicador de Dano aumenta <color=#2BAD00>280%</color> para cada 1s restante. Entre 5s e 15s, aumenta <color=#2BAD00>100%</color>, até um máximo de <color=#2BAD00>3400%</color>.\nAo ativar o efeito <color=#FFFFFF>Totalização</color>, o estado de Atordoamento do inimigo termina imediatamente e, com base no tempo restante de Atordoamento quando <color=#FFFFFF>Totalização</color> é ativado, acumula Atordoamento adicional. Para cada 1s restante de Atordoamento, acumula 5% de Atordoamento, até um máximo de 25% do limite máximo de Atordoamento do inimigo.\nQuando <color=#FFFFFF>Ataque Especial Reforçado: Caçador de Almas — Castigo</color> atinge um inimigo não atordoado, o Atordoamento acumulado pela habilidade aumenta 20%."
+            }
+        },
+        "MathSkill": {
+            "Title": "Habilidade Extra: Prólogo da Finalidade",
+            "Description": "Quando outro personagem na equipe é de tipo <color=#FFFFFF>Atordoador</color> ou do mesmo atributo:\nO dano do <color=#FFFFFF>Ataque em Cadeia: Truque do Destino</color> aumenta 15%, com um aumento adicional de 35% contra inimigos comuns. Quando <color=#FFFFFF>Totalização</color> é ativado, o dano causado pela habilidade aumenta 40%. O <color=#FFFFFF>Ataque Especial Reforçado: Caçador de Almas — Castigo</color> gera mais 20 de Energia ao ativar <color=#FFFFFF>Totalização</color> contra inimigos comuns. Esse efeito pode ser ativado uma vez a cada 30s."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "129100001": {
+                "Title": "Ataque Básico: Quarteto do Abismo",
+                "Description": "Pressione <IconMap:Icon_Normal> para ativar:\nRealiza até quatro golpes à frente, causando <color=#F0D12B>Dano Físico</color> e <color=#98EFF0>Dano de Gelo</color>;\nO 4º golpe é um disparo. Durante o disparo, mantenha <IconMap:Icon_Normal> pressionado para executar um Disparo Carregado;\nDurante a execução desta habilidade, o nível de Anti-Interrupção aumenta e Dano sofrido diminui 40%."
+            },
+            "129100002": {
+                "Title": "Ataque Básico: Concerto do Abismo",
+                "Description": "Após o 4º golpe do <color=#FFFFFF>Ataque Básico: Quarteto do Abismo</color>, após o disparo da <color=#FFFFFF>Contraesquiva: Vulto — Corte</color> ou da <color=#FFFFFF>Assistência Reativa: Lamento</color>, pressione ou mantenha <IconMap:Icon_Normal> pressionado para ativar:\nArremessa a foice para realizar um corte à frente, seguido por um disparo, causando <color=#98EFF0>Dano de Gelo</color>;\nDurante o disparo, mantenha <IconMap:Icon_Normal> pressionado para executar um Disparo Carregado;\nDurante a execução desta habilidade, o nível de Anti-Interrupção aumenta e Dano sofrido diminui 40%"
+            },
+            "129100014": {
+                "Title": "Ataque Básico: Quarteto do Abismo"
+            },
+            "129100015": {
+                "Description": "Multiplicador de Dano de 1º Golpe",
+                "Param": "{Skill:1291001, Prop:1001}"
+            },
+            "129100016": {
+                "Description": "Multiplicador de Dano de 2º Golpe",
+                "Param": "{Skill:1291002, Prop:1001}"
+            },
+            "129100017": {
+                "Description": "Multiplicador de Dano de 3º Golpe",
+                "Param": "{Skill:1291003, Prop:1001}"
+            },
+            "129100018": {
+                "Description": "Multiplicador de Dano de Corte",
+                "Param": "{Skill:1291004, Prop:1001}"
+            },
+            "129100019": {
+                "Description": "Multiplicador de Dano de Disparo",
+                "Param": "{Skill:1291005, Prop:1001}"
+            },
+            "129100020": {
+                "Description": "Multiplicador de Dano de Disparo Carregado",
+                "Param": "{Skill:1291006, Prop:1001}"
+            },
+            "129100021": {
+                "Description": "Multiplicador de Atordoamento de 1º Golpe",
+                "Param": "{Skill:1291001, Prop:1002}"
+            },
+            "129100022": {
+                "Description": "Multiplicador de Atordoamento de 2º Golpe",
+                "Param": "{Skill:1291002, Prop:1002}"
+            },
+            "129100023": {
+                "Description": "Multiplicador de Atordoamento de 3º Golpe",
+                "Param": "{Skill:1291003, Prop:1002}"
+            },
+            "129100024": {
+                "Description": "Multiplicador de Atordoamento de Corte",
+                "Param": "{Skill:1291004, Prop:1002}"
+            },
+            "129100025": {
+                "Description": "Multiplicador de Atordoamento de Disparo",
+                "Param": "{Skill:1291005, Prop:1002}"
+            },
+            "129100026": {
+                "Description": "Multiplicador de Atordoamento de Disparo Carregado",
+                "Param": "{Skill:1291006, Prop:1002}"
+            },
+            "129100027": {
+                "Title": "Ataque Básico: Concerto do Abismo"
+            },
+            "129100028": {
+                "Description": "Multiplicador de Dano de Corte",
+                "Param": "{Skill:1291024, Prop:1001}"
+            },
+            "129100029": {
+                "Description": "Multiplicador de Dano de Disparo",
+                "Param": "{Skill:1291025, Prop:1001}"
+            },
+            "129100030": {
+                "Description": "Multiplicador de Dano de Disparo Carregado",
+                "Param": "{Skill:1291026, Prop:1001}"
+            },
+            "129100031": {
+                "Description": "Multiplicador de Atordoamento de Corte",
+                "Param": "{Skill:1291024, Prop:1002}"
+            },
+            "129100032": {
+                "Description": "Multiplicador de Atordoamento de Disparo",
+                "Param": "{Skill:1291025, Prop:1002}"
+            },
+            "129100033": {
+                "Description": "Multiplicador de Atordoamento de Disparo Carregado",
+                "Param": "{Skill:1291026, Prop:1002}"
+            }
+        },
+        "1": {
+            "129100003": {
+                "Title": "Ataque Especial: Caçador de Almas — Veredito",
+                "Description": "Pressione <IconMap:Icon_Special> para ativar:\nGira a foice e executa uma série de cortes à frente, causando <color=#98EFF0>Dano de Gelo</color>;\nDurante a execução desta habilidade, o nível de Anti-Interrupção aumenta."
+            },
+            "129100004": {
+                "Title": "Ataque Especial Reforçado: Caçador de Almas — Castigo",
+                "Description": "Com energia suficiente, pressione <IconMap:Icon_SpecialReady> para ativar:\nExecuta um ataque giratório com a foice, seguido por um Golpe Final, causando muito <color=#98EFF0>Dano de Gelo</color>;\nA habilidade não é considerada um ataque pesado;\nO ataque pode ser conectado diretamente com o 4º golpe do <color=#FFFFFF>Ataque Básico: Quarteto do Abismo</color>;\nO personagem fica invulnerável ao usar esta habilidade."
+            },
+            "129100037": {
+                "Title": "Ataque Especial: Caçador de Almas — Veredito"
+            },
+            "129100038": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1291008, Prop:1001}"
+            },
+            "129100039": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1291008, Prop:1002}"
+            },
+            "129100040": {
+                "Title": "Ataque Especial Reforçado: Caçador de Almas — Castigo"
+            },
+            "129100041": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{{Skill:1291009, Prop:1001} + {Skill:1291010, Prop:1001}}"
+            },
+            "129100042": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{{Skill:1291009, Prop:1002} + {Skill:1291010, Prop:1002}}"
+            },
+            "129100043": {
+                "Description": "Custo de Energia",
+                "Param": "40"
+            }
+        },
+        "2": {
+            "129100005": {
+                "Title": "Esquiva: Vulto",
+                "Description": "Pressione <IconMap:Icon_Evade> para ativar:\nUma esquiva rápida;\nO personagem fica invulnerável ao usar esta habilidade."
+            },
+            "129100006": {
+                "Title": "Ataque Rápido: Vulto — Estilhaço",
+                "Description": "Pressione <IconMap:Icon_Normal> durante uma Esquiva para ativar:\nExecuta uma investida contra os inimigos à frente, causando <color=#F0D12B>Dano Físico</color>."
+            },
+            "129100007": {
+                "Title": "Contraesquiva: Vulto — Corte",
+                "Description": "Durante uma <color=#FFFFFF>Esquiva Perfeita</color>, pressione <IconMap:Icon_Normal> para ativar:\nRealiza uma série de ataques contra inimigos à frente, causando <color=#98EFF0>Dano de Gelo</color>;\nDurante a habilidade, mantenha <IconMap:Icon_Normal> pressionado para realizar um disparo. Durante o disparo, mantenha <IconMap:Icon_Normal> pressionado para carregar e executar um Disparo Carregado;\nO disparo é considerado um Ataque Básico e causa dano de Ataque Básico;\nApós usar a habilidade, é possível conectar o 4º golpe do <color=#FFFFFF>Ataque Básico: Quarteto do Abismo</color>;\nDurante o disparo da habilidade, o nível de Anti-Interrupção aumenta e o Dano sofrido diminui 40%\nAo usar esta habilidade, o personagem fica invulnerável durante a execução dos cortes e ao recuar durante o disparo."
+            },
+            "129100044": {
+                "Title": "Ataque Rápido: Vulto — Estilhaço"
+            },
+            "129100045": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1291011, Prop:1001}"
+            },
+            "129100046": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1291011, Prop:1002}"
+            },
+            "129100047": {
+                "Title": "Contraesquiva: Vulto — Corte"
+            },
+            "129100048": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1291012, Prop:1001}"
+            },
+            "129100049": {
+                "Description": "Multiplicador de Dano de Disparo Alternativo",
+                "Param": "{Skill:1291013, Prop:1001}"
+            },
+            "129100050": {
+                "Description": "Multiplicador de Dano de Disparo Carregado Alternativo",
+                "Param": "{Skill:1291014, Prop:1001}"
+            },
+            "129100051": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1291012, Prop:1002}"
+            },
+            "129100052": {
+                "Description": "Multiplicador de Atordoamento de Disparo Alternativo",
+                "Param": "{Skill:1291013, Prop:1002}"
+            },
+            "129100053": {
+                "Description": "Multiplicador de Atordoamento de Disparo Carregado Alternativo",
+                "Param": "{Skill:1291014, Prop:1002}"
+            }
+        },
+        "3": {
+            "129100008": {
+                "Title": "Ataque em Cadeia: Truque do Destino",
+                "Description": "Quando um <color=#FFFFFF>Ataque em Cadeia</color> é acionado, selecione o personagem para ativar:\nAvança para executar um corte em uma ampla área, depois executa um disparo, causando muito <color=#98EFF0>Dano de Gelo</color>;\nO disparo ativado por esta habilidade é considerado um Disparo Carregado;\nO personagem fica invulnerável ao usar esta habilidade."
+            },
+            "129100009": {
+                "Title": "Supremo: Blasfêmia",
+                "Description": "Quando o índice de dB está no <color=#FFFFFF>Máximo</color>, pressione <IconMap:Icon_UltimateReady> para ativar:\nArremessa a foice, executando um ataque giratório poderoso contra os inimigos à frente, depois executa um Golpe Final, causando muito <color=#98EFF0>Dano de Gelo</color>;\nEsta habilidade não é considerada um golpe pesado;\nO ataque pode ser conectado diretamente com o 4º golpe do <color=#FFFFFF>Ataque Básico: Quarteto do Abismo</color>;\nO personagem fica invulnerável ao usar esta habilidade."
+            },
+            "129100054": {
+                "Title": "Ataque em Cadeia: Truque do Destino"
+            },
+            "129100055": {
+                "Description": "Multiplicador de Dano de Corte",
+                "Param": "{Skill:1291015, Prop:1001}"
+            },
+            "129100056": {
+                "Description": "Multiplicador de Atordoamento de Corte",
+                "Param": "{Skill:1291015, Prop:1002}"
+            },
+            "129100057": {
+                "Title": "Supremo: Blasfêmia"
+            },
+            "129100058": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1291018, Prop:1001}"
+            },
+            "129100059": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1291018, Prop:1002}"
+            }
+        },
+        "6": {
+            "129100011": {
+                "Title": "Assistência Reativa: Lamento",
+                "Description": "Quando o personagem em campo for lançado ao ar, pressione <IconMap:Icon_Switch> para ativar:\nRealiza uma série de ataques contra inimigos à frente, causando <color=#98EFF0>Dano de Gelo</color>;\nDurante a habilidade, mantenha <IconMap:Icon_Normal> pressionado para realizar um disparo. Durante o disparo, mantenha <IconMap:Icon_Normal> pressionado para carregar e realizar um Disparo Carregado;\nO disparo conta como um Ataque Básico e causa dano de Ataque Básico;\nO ataque pode ser conectado diretamente com o 4º golpe do <color=#FFFFFF>Ataque Básico: Quarteto do Abismo</color>;\nDurante o disparo da habilidade, o nível de Anti-Interrupção aumenta e o Dano sofrido diminui 40%\nAo usar esta habilidade, o personagem fica invulnerável durante a execução dos cortes e ao recuar durante o disparo."
+            },
+            "129100012": {
+                "Title": "Assistência Defensiva: Ainda Não É o Fim",
+                "Description": "Quando o personagem em campo está prestes a sofrer um ataque, pressione <IconMap:Icon_Switch> para ativar:\nBloqueia o ataque inimigo, causando muito Atordoamento.\nO personagem fica invulnerável ao usar esta habilidade."
+            },
+            "129100013": {
+                "Title": "Assistência Imediata: Virada do Trunfo",
+                "Description": "Após uma <color=#FFFFFF>Assistência Defensiva</color>, pressione <IconMap:Icon_Normal> para ativar:\nAvança e executa dois cortes, causando <color=#98EFF0>Dano de Gelo</color>;\nO ataque pode ser conectado diretamente com o 4º golpe do <color=#FFFFFF>Ataque Básico: Quarteto do Abismo</color>;\nO personagem fica invulnerável ao usar esta habilidade."
+            },
+            "129100060": {
+                "Title": "Assistência Reativa: Lamento"
+            },
+            "129100061": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1291019, Prop:1001}"
+            },
+            "129100062": {
+                "Description": "Multiplicador de Dano de Disparo Alternativo",
+                "Param": "{Skill:1291027, Prop:1001}"
+            },
+            "129100063": {
+                "Description": "Multiplicador de Dano de Disparo Carregado Alternativo",
+                "Param": "{Skill:1291028, Prop:1001}"
+            },
+            "129100064": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1291019, Prop:1002}"
+            },
+            "129100065": {
+                "Description": "Multiplicador de Atordoamento de Disparo Alternativo",
+                "Param": "{Skill:1291027, Prop:1002}"
+            },
+            "129100066": {
+                "Description": "Multiplicador de Atordoamento de Disparo Carregado Alternativo",
+                "Param": "{Skill:1291028, Prop:1002}"
+            },
+            "129100067": {
+                "Title": "Assistência Defensiva: Ainda Não É o Fim"
+            },
+            "129100068": {
+                "Description": "Multiplicador de Atordoamento de Defensiva Leve",
+                "Param": "{Skill:1291020, Prop:1002}"
+            },
+            "129100069": {
+                "Description": "Multiplicador de Atordoamento de Defensiva Pesada",
+                "Param": "{Skill:1291021, Prop:1002}"
+            },
+            "129100070": {
+                "Description": "Multiplicador de Atordoamento de Defensiva em Cadeia",
+                "Param": "{Skill:1291022, Prop:1002}"
+            },
+            "129100071": {
+                "Title": "Assistência Imediata: Virada do Trunfo"
+            },
+            "129100072": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1291023, Prop:1001}"
+            },
+            "129100073": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1291023, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1291001": {
+            "DamageValue": 4310,
+            "DamageGrowth": 400,
+            "DazeValue": 2160,
+            "DazeGrowth": 100
+        },
+        "1291002": {
+            "DamageValue": 7410,
+            "DamageGrowth": 680,
+            "DazeValue": 5490,
+            "DazeGrowth": 250
+        },
+        "1291003": {
+            "DamageValue": 16960,
+            "DamageGrowth": 1550,
+            "DazeValue": 12810,
+            "DazeGrowth": 590
+        },
+        "1291004": {
+            "DamageValue": 14910,
+            "DamageGrowth": 1360,
+            "DazeValue": 12580,
+            "DazeGrowth": 580
+        },
+        "1291005": {
+            "DamageValue": 5860,
+            "DamageGrowth": 540,
+            "DazeValue": 5010,
+            "DazeGrowth": 230
+        },
+        "1291006": {
+            "DamageValue": 11800,
+            "DamageGrowth": 1080,
+            "DazeValue": 9570,
+            "DazeGrowth": 440
+        },
+        "1291007": {
+            "DamageValue": 7000,
+            "DamageGrowth": 640,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1291008": {
+            "DamageValue": 8530,
+            "DamageGrowth": 780,
+            "DazeValue": 8530,
+            "DazeGrowth": 390
+        },
+        "1291009": {
+            "DamageValue": 1870,
+            "DamageGrowth": 170,
+            "DazeValue": 43240,
+            "DazeGrowth": 1970
+        },
+        "1291010": {
+            "DamageValue": 35450,
+            "DamageGrowth": 3230,
+            "DazeValue": 2280,
+            "DazeGrowth": 110
+        },
+        "1291011": {
+            "DamageValue": 9350,
+            "DamageGrowth": 850,
+            "DazeValue": 4680,
+            "DazeGrowth": 220
+        },
+        "1291012": {
+            "DamageValue": 24590,
+            "DamageGrowth": 2240,
+            "DazeValue": 21450,
+            "DazeGrowth": 980
+        },
+        "1291013": {
+            "DamageValue": 16210,
+            "DamageGrowth": 1480,
+            "DazeValue": 12470,
+            "DazeGrowth": 570
+        },
+        "1291014": {
+            "DamageValue": 21210,
+            "DamageGrowth": 1930,
+            "DazeValue": 16320,
+            "DazeGrowth": 750
+        },
+        "1291015": {
+            "DamageValue": 70110,
+            "DamageGrowth": 6380,
+            "DazeValue": 26220,
+            "DazeGrowth": 1200
+        },
+        "1291018": {
+            "DamageValue": 152710,
+            "DamageGrowth": 13890,
+            "DazeValue": 26420,
+            "DazeGrowth": 1210
+        },
+        "1291019": {
+            "DamageValue": 10450,
+            "DamageGrowth": 950,
+            "DazeValue": 5230,
+            "DazeGrowth": 240
+        },
+        "1291020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1291021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1291022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1291023": {
+            "DamageValue": 29170,
+            "DamageGrowth": 2660,
+            "DazeValue": 24910,
+            "DazeGrowth": 1140
+        },
+        "1291024": {
+            "DamageValue": 14340,
+            "DamageGrowth": 1310,
+            "DazeValue": 11030,
+            "DazeGrowth": 510
+        },
+        "1291025": {
+            "DamageValue": 8670,
+            "DamageGrowth": 790,
+            "DazeValue": 6670,
+            "DazeGrowth": 310
+        },
+        "1291026": {
+            "DamageValue": 17060,
+            "DamageGrowth": 1560,
+            "DazeValue": 13120,
+            "DazeGrowth": 600
+        },
+        "1291027": {
+            "DamageValue": 12470,
+            "DamageGrowth": 1140,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1291028": {
+            "DamageValue": 16320,
+            "DamageGrowth": 1490,
+            "DazeValue": 8160,
+            "DazeGrowth": 380
+        }
+    }
+}

@@ -1,0 +1,502 @@
+{
+    "Name": "코린",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "개방성 외상",
+            "Description": "<color=#FFFFFF>[콤보 스킬]</color> 혹은 <color=#FFFFFF>[궁극기]</color>가 적에게 명중 시 코린이 타깃에게 주는 피해가 12% 증가한다. 지속 시간: 15초",
+            "Lore": "「아가씨께서 일할 때는 주변의 영향을 받지 말고 집중하라고 하셨어요」\n「코린은 꽤 오랫동안 연습했는데, 드디어 할 수 있게 됐어요!」\n「그렇지만… 보이시나요, 아가씨…」"
+        },
+        "2": {
+            "Title": "열분해 효과",
+            "Description": "<color=#FFFFFF>[강화 특수 스킬]</color>, <color=#FFFFFF>[콤보 스킬]</color> 혹은 <color=#FFFFFF>[궁극기]</color>가 적에게 명중 시 타깃의 <color=#F0D12B>물리 피해 저항</color>이 0.5% 감소한다. 최대 중첩: 20스택, 지속 시간: 5초, 각 스택의 지속 시간은 따로 계산된다.",
+            "Lore": "「에테리얼님, 죄송해요!」\n「하지만 코린은 임무를 완수해야 해요… 정말 죄송합니다!」\n소녀는 죄책감을 느끼는 듯 눈앞의 몬스터에게 진심 어린 사과를 했다——\n그리곤 손에 든 전기톱을 휘둘러 앞의 적들을 모조리 처치한다."
+        },
+        "3": {
+            "Title": "초보 메이드",
+            "Description": "<color=#FFFFFF>[일반 공격]</color>, <color=#FFFFFF>[회피]</color>, <color=#FFFFFF>[지원 스킬]</color>, <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[콤보 스킬]</color>의 스킬 레벨+2",
+            "Lore": "「어, 어엿한 메이드가 될 수 있도록 코린이 파이팅 할게요!」\n——코린이 한 손에 톱을 들고 에테리얼에게 다가가며 말한다."
+        },
+        "4": {
+            "Title": "전장의 시종",
+            "Description": "<color=#FFFFFF>[빠른 지원]</color>, <color=#FFFFFF>[패링 지원]</color> 혹은 <color=#FFFFFF>[콤보 스킬]</color> 시전 시 코린이 에너지를 7.2pt 회복한다. 16초 동안 최대 1회 발동한다.",
+            "Lore": "부지런하고 성실한 메이드 아가씨는 모든 일에 정성을 다한다.\n전장에서 적을 대할 때도 마찬가지다."
+        },
+        "5": {
+            "Title": "특수요원 메이드",
+            "Description": "<color=#FFFFFF>[일반 공격]</color>, <color=#FFFFFF>[회피]</color>, <color=#FFFFFF>[지원 스킬]</color>, <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[콤보 스킬]</color>의 스킬 레벨+2",
+            "Lore": "「아… 죄, 죄송해요. 코린이 많이 서툴러서 같은 모양으로 썰어내지 못했어요…」\n——발밑에 흩어진 에테리얼 잔해들을 보며 코린이 낙심한 듯 말한다."
+        },
+        "6": {
+            "Title": "내실 다지기",
+            "Description": "지속 베기가 적에게 명중 시 코린은 충전을 1스택 획득한다. (최대치: 40스택) <color=#FFFFFF>[회피 반격]</color>, <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[강화 특수 스킬]</color>, <color=#FFFFFF>[빠른 지원]</color>, <color=#FFFFFF>[지원 돌격]</color> 중 기폭된 전기톱이 적에게 명중 시 모든 충전을 소모하고 충전 스택당 이번 공격에서 코린 공격력의 3%에 해당하는 피해를 추가로 준다.",
+            "Lore": "코린은 자신이 제일 훌륭한 메이드도 제일 똑똑한 메이드도 아니라는 걸 알고 있다.\n하지만 그녀는 제일 노력하는 메이드가 되길 바라고 있다.\n전부터 쌓아온 노력은 모두 존재의 의미가 있는 것이다."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "핵심 패시브: 집중",
+            "DescriptionByLevel": {
+                "1": "연타 혹은 홀드 후, 코린이 전기톱으로 적을 지속해서 벨 시 스킬로 주는 피해가 <color=#2BAD00>18.7%</color> 증가한다.",
+                "2": "연타 혹은 홀드 후, 코린이 전기톱으로 적을 지속해서 벨 시 스킬로 주는 피해가 <color=#2BAD00>21.8%</color> 증가한다.",
+                "3": "연타 혹은 홀드 후, 코린이 전기톱으로 적을 지속해서 벨 시 스킬로 주는 피해가 <color=#2BAD00>25%</color> 증가한다.",
+                "4": "연타 혹은 홀드 후, 코린이 전기톱으로 적을 지속해서 벨 시 스킬로 주는 피해가 <color=#2BAD00>28.1%</color> 증가한다.",
+                "5": "연타 혹은 홀드 후, 코린이 전기톱으로 적을 지속해서 벨 시 스킬로 주는 피해가 <color=#2BAD00>31.2%</color> 증가한다.",
+                "6": "연타 혹은 홀드 후, 코린이 전기톱으로 적을 지속해서 벨 시 스킬로 주는 피해가 <color=#2BAD00>34.3%</color> 증가한다.",
+                "7": "연타 혹은 홀드 후, 코린이 전기톱으로 적을 지속해서 벨 시 스킬로 주는 피해가 <color=#2BAD00>37.5%</color> 증가한다."
+            }
+        },
+        "MathSkill": {
+            "Title": "추가 능력: 청소 도우미",
+            "Description": "파티에 자신과 속성 혹은 진영이 같은 캐릭터가 존재할 시 발동:\n코린의 공격이 그로기 상태의 적에게 명중 시 자신이 주는 피해가 35% 증가한다."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "106100001": {
+                "Title": "일반 공격: 청소 시작",
+                "Description": "<IconMap:Icon_Normal>을 짧게 탭하여 시전:\n전방을 향해 최대 5단까지 베기를 펼쳐 <color=#F0D12B>물리 피해</color>를 준다.\n세 번째, 다섯 번째 공격에서 연타 혹은 홀드 시 전기톱으로 적을 지속해서 벨 수 있다."
+            },
+            "106110001": {
+                "Title": "일반 공격: 청소 시작"
+            },
+            "106110002": {
+                "Description": "1단 피해 배율",
+                "Param": "{Skill:1061001, Prop:1001}"
+            },
+            "106110003": {
+                "Description": "2단 피해 배율",
+                "Param": "{Skill:1061002, Prop:1001}"
+            },
+            "106110004": {
+                "Description": "3단 피해 배율",
+                "Param": "{Skill:1061003, Prop:1001}"
+            },
+            "106110005": {
+                "Description": "4단 피해 배율",
+                "Param": "{Skill:1061004, Prop:1001}"
+            },
+            "106110006": {
+                "Description": "5단 피해 배율",
+                "Param": "{Skill:1061006, Prop:1001}"
+            },
+            "106110007": {
+                "Description": "1단 그로기 배율",
+                "Param": "{Skill:1061001, Prop:1002}"
+            },
+            "106110008": {
+                "Description": "2단 그로기 배율",
+                "Param": "{Skill:1061002, Prop:1002}"
+            },
+            "106110009": {
+                "Description": "3단 그로기 배율",
+                "Param": "{Skill:1061003, Prop:1002}"
+            },
+            "106110010": {
+                "Description": "4단 그로기 배율",
+                "Param": "{Skill:1061004, Prop:1002}"
+            },
+            "106110011": {
+                "Description": "5단 그로기 배율",
+                "Param": "{Skill:1061006, Prop:1002}"
+            }
+        },
+        "1": {
+            "106100002": {
+                "Title": "특수 스킬: 초강력 청소",
+                "Description": "<IconMap:Icon_Special>을 짧게 탭하여 시전:\n전방을 지속해서 벤 후 전기톱을 기폭시켜 <color=#F0D12B>물리 피해</color>를 준다.\n연타 혹은 홀드 시 전기톱으로 적을 지속해서 벨 수 있다.\n스킬을 시전하는 동안 경직 저항 레벨이 증가하고, 받는 피해가 40% 감소한다."
+            },
+            "106100003": {
+                "Title": "강화 특수 스킬: 치맛자락 조심하세요",
+                "Description": "에너지가 충분한 상태에서 <IconMap:Icon_SpecialReady>을 짧게 탭하여 시전:\n전방을 강력하게 지속적으로 벤 후 전기톱을 기폭시켜 대량의 <color=#F0D12B>물리 피해</color>를 준다.\n연타 혹은 홀드 시 전기톱으로 적을 지속해서 벨 수 있으며 스킬이 타깃에게 명중함에 따라 에너지를 점차 소모한다.\n회전 베기를 하는 동안 무적 효과를 보유한다.\n지속 베기를 하는 동안 경직 저항 레벨이 증가하고, 받는 피해가 40% 감소한다."
+            },
+            "106110012": {
+                "Title": "특수 스킬: 초강력 청소"
+            },
+            "106110013": {
+                "Description": "회전 베기 피해 배율",
+                "Param": "{Skill:1061008, Prop:1001}"
+            },
+            "106110014": {
+                "Description": "지속 베기 최대 피해 배율",
+                "Param": "{Skill:1061009, Prop:1001}"
+            },
+            "106110015": {
+                "Description": "폭발 피해 배율",
+                "Param": "{Skill:1061010, Prop:1001}"
+            },
+            "106110016": {
+                "Description": "회전 베기 그로기 배율",
+                "Param": "{Skill:1061008, Prop:1002}"
+            },
+            "106110017": {
+                "Description": "지속 베기 최대 그로기 배율",
+                "Param": "{Skill:1061009, Prop:1002}"
+            },
+            "106110018": {
+                "Description": "폭발 그로기 배율",
+                "Param": "{Skill:1061010, Prop:1002}"
+            },
+            "106110019": {
+                "Title": "강화 특수 스킬: 치맛자락 조심하세요"
+            },
+            "106110020": {
+                "Description": "회전 베기 피해 배율",
+                "Param": "{Skill:1061011, Prop:1001}"
+            },
+            "106110021": {
+                "Description": "지속 베기 최대 피해 배율",
+                "Param": "{Skill:1061012, Prop:1001}"
+            },
+            "106110022": {
+                "Description": "폭발 피해 배율",
+                "Param": "{Skill:1061013, Prop:1001}"
+            },
+            "106110023": {
+                "Description": "회전 베기 그로기 배율",
+                "Param": "{Skill:1061011, Prop:1002}"
+            },
+            "106110024": {
+                "Description": "지속 베기 최대 그로기 배율",
+                "Param": "{Skill:1061012, Prop:1002}"
+            },
+            "106110025": {
+                "Description": "폭발 그로기 배율",
+                "Param": "{Skill:1061013, Prop:1002}"
+            },
+            "106110026": {
+                "Description": "회전 베기 에너지 소모",
+                "Param": "20pt"
+            },
+            "106110027": {
+                "Description": "지속 베기 최대 에너지 소모",
+                "Param": "40pt"
+            },
+            "106110028": {
+                "Description": "기폭 에너지 소모",
+                "Param": "20pt"
+            }
+        },
+        "2": {
+            "106100004": {
+                "Title": "회피: [벗어나기]",
+                "Description": "<IconMap:Icon_Evade>을 짧게 탭하여 시전:\n빠른 대시로 회피한다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "106100005": {
+                "Title": "대시 공격: [끊기]",
+                "Description": "회피 시 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n전방을 베어 <color=#F0D12B>물리 피해</color>를 준다.\n연타 혹은 홀드 시 전기톱으로 적을 지속해서 벨 수 있다."
+            },
+            "106100006": {
+                "Title": "회피 반격: [버리기]",
+                "Description": "<color=#FFFFFF>[극한 회피]</color> 발동 후 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n전방의 적을 벤 후 전기톱을 기폭시켜 <color=#F0D12B>물리 피해</color>를 준다.\n연타 혹은 홀드 시 전기톱으로 적을 지속해서 벨 수 있다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "106110029": {
+                "Title": "대시 공격: [끊기]"
+            },
+            "106110030": {
+                "Description": "최대 피해 배율",
+                "Param": "{Skill:1061014, Prop:1001}"
+            },
+            "106110031": {
+                "Description": "최대 그로기 배율",
+                "Param": "{Skill:1061014, Prop:1002}"
+            },
+            "106110032": {
+                "Title": "회피 반격: [버리기]"
+            },
+            "106110033": {
+                "Description": "피해 배율",
+                "Param": "{{Skill:1061015, Prop:1001} + {Skill:1061016, Prop:1001}}"
+            },
+            "106110034": {
+                "Description": "그로기 배율",
+                "Param": "{{Skill:1061015, Prop:1002} + {Skill:1061016, Prop:1002}}"
+            }
+        },
+        "3": {
+            "106100007": {
+                "Title": "콤보 스킬: 죄송해요…",
+                "Description": "<color=#FFFFFF>[콤보 스킬]</color> 발동 시 해당 캐릭터를 선택해 시전:\n전방 작은 범위 내 적을 강력하게 베어 대량의 <color=#F0D12B>물리 피해</color>를 준다.\n연타 혹은 홀드 시 전기톱으로 적을 지속해서 벨 수 있다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "106100008": {
+                "Title": "궁극기: 진, 진짜 죄송해요!",
+                "Description": "데시벨 레벨 <color=#FFFFFF>[Maximum]</color> 달성 시 <IconMap:Icon_UltimateReady>을 짧게 탭하여 시전:\n전방 작은 범위 내 적을 강력하게 베어 대량의 <color=#F0D12B>물리 피해</color>를 준다.\n연타 혹은 홀드 시 전기톱으로 적을 지속해서 벨 수 있다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "106110035": {
+                "Title": "콤보 스킬: 죄송해요…"
+            },
+            "106110036": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1061017, Prop:1001}"
+            },
+            "106110037": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1061017, Prop:1002}"
+            },
+            "106110038": {
+                "Title": "궁극기: 진, 진짜 죄송해요!"
+            },
+            "106110039": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1061018, Prop:1001}"
+            },
+            "106110040": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1061018, Prop:1002}"
+            }
+        },
+        "6": {
+            "106100010": {
+                "Title": "빠른 지원: 긴급 조치",
+                "Description": "현재 조작 중인 캐릭터가 넉업되면 <IconMap:Icon_Switch>을 짧게 탭하여 시전:\n전방의 적을 벤 후 전기톱을 기폭시켜 <color=#F0D12B>물리 피해</color>를 준다.\n연타 혹은 홀드 시 전기톱으로 적을 지속해서 벨 수 있다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "106100011": {
+                "Title": "패링 지원: 제, 제가 할게요!",
+                "Description": "출전 캐릭터 피격 직전에 <IconMap:Icon_Switch>을 짧게 탭하여 시전:\n적의 공격을 패링하고 대량의 그로기 수치를 누적한다.\n우수한 패링 능력을 갖추고 있어 고강도 공격 패링 시 <color=#FFFFFF>[지원 포인트]</color>의 소모량이 감소한다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "106100012": {
+                "Title": "지원 돌격: 빠른 청소",
+                "Description": "<color=#FFFFFF>[패링 지원]</color> 시전 후 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n전방의 적을 연속으로 벤 후 전기톱을 기폭시켜 <color=#F0D12B>물리 피해</color>를 준다.\n연타 혹은 홀드 시 전기톱으로 적을 지속해서 벨 수 있다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "106110041": {
+                "Title": "빠른 지원: 긴급 조치"
+            },
+            "106110042": {
+                "Description": "피해 배율",
+                "Param": "{{Skill:1061019, Prop:1001} + {Skill:1061020, Prop:1001}}"
+            },
+            "106110043": {
+                "Description": "그로기 배율",
+                "Param": "{{Skill:1061019, Prop:1002} + {Skill:1061020, Prop:1002}}"
+            },
+            "106110044": {
+                "Title": "패링 지원: 제, 제가 할게요!"
+            },
+            "106110045": {
+                "Description": "가벼운 패링 그로기 배율",
+                "Param": "{Skill:1061021, Prop:1002}"
+            },
+            "106110046": {
+                "Description": "강한 패링 그로기 배율",
+                "Param": "{Skill:1061022, Prop:1002}"
+            },
+            "106110047": {
+                "Description": "연속 패링 그로기 배율",
+                "Param": "{Skill:1061023, Prop:1002}"
+            },
+            "106110048": {
+                "Title": "지원 돌격: 빠른 청소"
+            },
+            "106110049": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1061024, Prop:1001}"
+            },
+            "106110050": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1061024, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1061001": {
+            "DamageValue": 8200,
+            "DamageGrowth": 750,
+            "DazeValue": 4100,
+            "DazeGrowth": 190
+        },
+        "1061002": {
+            "DamageValue": 7660,
+            "DamageGrowth": 700,
+            "DazeValue": 7020,
+            "DazeGrowth": 320
+        },
+        "1061003": {
+            "DamageValue": 17920,
+            "DamageGrowth": 1630,
+            "DazeValue": 12380,
+            "DazeGrowth": 570
+        },
+        "1061004": {
+            "DamageValue": 23340,
+            "DamageGrowth": 2130,
+            "DazeValue": 18640,
+            "DazeGrowth": 850
+        },
+        "1061005": {
+            "DamageValue": 11690,
+            "DamageGrowth": 1070,
+            "DazeValue": 8630,
+            "DazeGrowth": 400
+        },
+        "1061006": {
+            "DamageValue": 42120,
+            "DamageGrowth": 3830,
+            "DazeValue": 34200,
+            "DazeGrowth": 1560
+        },
+        "1061007": {
+            "DamageValue": 12460,
+            "DamageGrowth": 1140,
+            "DazeValue": 9580,
+            "DazeGrowth": 440
+        },
+        "1061008": {
+            "DamageValue": 6670,
+            "DamageGrowth": 610,
+            "DazeValue": 6670,
+            "DazeGrowth": 310
+        },
+        "1061009": {
+            "DamageValue": 3750,
+            "DamageGrowth": 350,
+            "DazeValue": 3750,
+            "DazeGrowth": 180
+        },
+        "1061010": {
+            "DamageValue": 2500,
+            "DamageGrowth": 230,
+            "DazeValue": 2500,
+            "DazeGrowth": 120
+        },
+        "1061011": {
+            "DamageValue": 34510,
+            "DamageGrowth": 3140,
+            "DazeValue": 20640,
+            "DazeGrowth": 940
+        },
+        "1061012": {
+            "DamageValue": 103520,
+            "DamageGrowth": 9420,
+            "DazeValue": 61900,
+            "DazeGrowth": 2820
+        },
+        "1061013": {
+            "DamageValue": 34510,
+            "DamageGrowth": 3140,
+            "DazeValue": 20640,
+            "DazeGrowth": 940
+        },
+        "1061014": {
+            "DamageValue": 9670,
+            "DamageGrowth": 880,
+            "DazeValue": 4840,
+            "DazeGrowth": 220
+        },
+        "1061015": {
+            "DamageValue": 13560,
+            "DamageGrowth": 1240,
+            "DazeValue": 6590,
+            "DazeGrowth": 300
+        },
+        "1061016": {
+            "DamageValue": 13560,
+            "DamageGrowth": 1240,
+            "DazeValue": 6590,
+            "DazeGrowth": 300
+        },
+        "1061017": {
+            "DamageValue": 68730,
+            "DamageGrowth": 6250,
+            "DazeValue": 28830,
+            "DazeGrowth": 1320
+        },
+        "1061018": {
+            "DamageValue": 202880,
+            "DamageGrowth": 18450,
+            "DazeValue": 40680,
+            "DazeGrowth": 1850
+        },
+        "1061019": {
+            "DamageValue": 13170,
+            "DamageGrowth": 1200,
+            "DazeValue": 13170,
+            "DazeGrowth": 600
+        },
+        "1061020": {
+            "DamageValue": 8330,
+            "DamageGrowth": 760,
+            "DazeValue": 8330,
+            "DazeGrowth": 380
+        },
+        "1061021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 24670,
+            "DazeGrowth": 1130
+        },
+        "1061022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 31170,
+            "DazeGrowth": 1420
+        },
+        "1061023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15170,
+            "DazeGrowth": 690
+        },
+        "1061024": {
+            "DamageValue": 54750,
+            "DamageGrowth": 4980,
+            "DazeValue": 48860,
+            "DazeGrowth": 2230
+        },
+        "1061025": {
+            "DamageValue": 23330,
+            "DamageGrowth": 2130,
+            "DazeValue": 5840,
+            "DazeGrowth": 270
+        },
+        "1061026": {
+            "DamageValue": 43000,
+            "DamageGrowth": 3910,
+            "DazeValue": 10750,
+            "DazeGrowth": 490
+        },
+        "1061027": {
+            "DamageValue": 24350,
+            "DamageGrowth": 2220,
+            "DazeValue": 6090,
+            "DazeGrowth": 280
+        },
+        "1061028": {
+            "DamageValue": 36250,
+            "DamageGrowth": 3300,
+            "DazeValue": 10990,
+            "DazeGrowth": 500
+        },
+        "1061029": {
+            "DamageValue": 72500,
+            "DamageGrowth": 6600,
+            "DazeValue": 21970,
+            "DazeGrowth": 1000
+        },
+        "1061030": {
+            "DamageValue": 72500,
+            "DamageGrowth": 6600,
+            "DazeValue": 21970,
+            "DazeGrowth": 1000
+        },
+        "1061031": {
+            "DamageValue": 36250,
+            "DamageGrowth": 3300,
+            "DazeValue": 10990,
+            "DazeGrowth": 500
+        },
+        "1061032": {
+            "DamageValue": 14040,
+            "DamageGrowth": 0,
+            "DazeValue": 10800,
+            "DazeGrowth": 0
+        },
+        "1061033": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

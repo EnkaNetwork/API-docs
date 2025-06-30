@@ -1,0 +1,381 @@
+{
+    "Name": "Nekomata",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Bird Hunter",
+            "Description": "Saat Back Attack mengenai musuh, Nekomata akan mengabaikan 16% <color=#F0D12B>ketahanan Physical DMG</color> target.\nSaat musuh dalam status Stun, semua serangan Nekomata terhadapnya akan dianggap sebagai Back Attack.",
+            "Lore": "Meski Nekomata tidak memiliki kekuatan yang besar karena tubuhnya yang mungil, tapi dia memiliki mata yang tajam untuk menangkap kelemahan lawan, serta serangan yang cepat dan akurat untuk menyerang tepat di bagian yang paling menyakitkan!"
+        },
+        "2": {
+            "Title": "Cat & Mouse",
+            "Description": "Saat hanya ada Nekomata dan satu musuh di medan pertarungan, Energy Generation Rate Nekomata akan meningkat 25%.",
+            "Lore": "Kucing memang suka main-main dengan makanannya.\nJadi kalau \"tikusnya\" sisa satu ekor, itulah waktu bermain Nekomata!"
+        },
+        "3": {
+            "Title": "Curious Left Tail",
+            "Description": "Level <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, dan <color=#FFFFFF>Chain Attack</color> +2.",
+            "Lore": "Dalam legenda peradaban kuno, ekor melambangkan nyawa kucing, dan menyimpan kebijaksanaan hidup selama bertahun-tahun... Semua ini sebenarnya hanya omong kosong, namun pengalaman bertahan hidup di jalanan yang telah dikumpulkan oleh Nekomata memang benar."
+        },
+        "4": {
+            "Title": "Sharpen Claws",
+            "Description": "Saat Nekomata melancarkan <color=#FFFFFF>EX Special Attack</color>, CRIT Rate akan meningkat 7% untuk 15 detik. Dapat ditumpuk maks. 2 lapis. Durasi setiap lapis akan dihitung secara terpisah.",
+            "Lore": "\"Sini sini! Aku habiskan kalian semua~!\"\nDia mengatakannya sambil menjilat cakarnya dengan mata yang berbinar-binar."
+        },
+        "5": {
+            "Title": "Lucky Right Tail",
+            "Description": "Level <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, dan <color=#FFFFFF>Chain Attack</color> +2.",
+            "Lore": "Dalam legenda peradaban kuno, ekor melambangkan nyawa kucing, yang menyimpan kebijaksanaan hidup selama bertahun-tahun... Terkadang Nekomata juga bertanya-tanya, jika dia dapat terus hidup bahagia, apakah masih bisa menumbuhkan ekor baru?"
+        },
+        "6": {
+            "Title": "Predator Lineage",
+            "Description": "Saat Nekomata melancarkan <color=#FFFFFF>Chain Attack</color> atau <color=#FFFFFF>Ultimate</color>, CRIT DMG Nekomata akan meningkat 18%. Efek ini dapat ditumpuk hingga 3 lapis dan akan hilang saat keluar dari pertarungan.\nSaat Nekomata mengalahkan musuh, efek ini akan langsung mendapatkan lapisan maks.",
+            "Lore": "\"Ketika seorang manusia separuh kucing menerima reaksi positif dari perilaku agresif, insting binatang yang terpendam dalam dirinya pun akan muncul.\nUntungnya, hal ini tidak bersifat permanen...\" \n—Kutipan dari Buku \"Panduan Penelitian Tidak Lengkap Tentang Makhluk Paruh Kucing\""
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Core Passive: Stealthy Paws",
+            "DescriptionByLevel": {
+                "1": "Saat <color=#FFFFFF>Dodge Counter</color> atau <color=#FFFFFF>Quick Assist</color> mengenai musuh, DMG yang diakibatkan oleh Nekomata akan meningkat <color=#2BAD00>30%</color> selama 6 detik.",
+                "2": "Saat <color=#FFFFFF>Dodge Counter</color> atau <color=#FFFFFF>Quick Assist</color> mengenai musuh, DMG yang diakibatkan oleh Nekomata akan meningkat <color=#2BAD00>35%</color> selama 6 detik.",
+                "3": "Saat <color=#FFFFFF>Dodge Counter</color> atau <color=#FFFFFF>Quick Assist</color> mengenai musuh, DMG yang diakibatkan oleh Nekomata akan meningkat <color=#2BAD00>40%</color> selama 6 detik.",
+                "4": "Saat <color=#FFFFFF>Dodge Counter</color> atau <color=#FFFFFF>Quick Assist</color> mengenai musuh, DMG yang diakibatkan oleh Nekomata akan meningkat <color=#2BAD00>45%</color> selama 6 detik.",
+                "5": "Saat <color=#FFFFFF>Dodge Counter</color> atau <color=#FFFFFF>Quick Assist</color> mengenai musuh, DMG yang diakibatkan oleh Nekomata akan meningkat <color=#2BAD00>50%</color> selama 6 detik.",
+                "6": "Saat <color=#FFFFFF>Dodge Counter</color> atau <color=#FFFFFF>Quick Assist</color> mengenai musuh, DMG yang diakibatkan oleh Nekomata akan meningkat <color=#2BAD00>55%</color> selama 6 detik.",
+                "7": "Saat <color=#FFFFFF>Dodge Counter</color> atau <color=#FFFFFF>Quick Assist</color> mengenai musuh, DMG yang diakibatkan oleh Nekomata akan meningkat <color=#2BAD00>60%</color> selama 6 detik."
+            }
+        },
+        "MathSkill": {
+            "Title": "Additional Ability: Catwalk",
+            "Description": "Berlaku jika terdapat Agen yang memiliki Atribut yang sama atau berasal dari faksi yang sama di dalam tim:\nSetelah anggota tim mana pun mengakibatkan efek <color=#F0D12B>Assault</color> terhadap musuh, DMG dari <color=#FFFFFF>EX Special Attack</color> Nekomata berikutnya akan meningkat 35%. Dapat ditumpuk maks. 2 lapis."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "102100001": {
+                "Title": "Basic Attack: Kitty Slash",
+                "Description": "Tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMelancarkan hingga lima tahap serangan Slash ke depan dan mengakibatkan <color=#F0D12B>Physical DMG</color>.\nSaat melancarkan Slash tahap terakhir, Nekomata memiliki 33,33% peluang untuk mengulang serangan tahap tersebut sebanyak tiga kali."
+            },
+            "102100002": {
+                "Title": "Basic Attack: Crimson Blade",
+                "Description": "Tahan <IconMap:Icon_Normal> selama melancarkan tiga tahap pertama <color=#FFFFFF>Basic Attack</color> Nekomata untuk melancarkan Skill ini.\nMelancarkan Slash yang menembus musuh di depan dan mengakibatkan <color=#F0D12B>Physical DMG</color>.\nSaat melancarkan Skill ini, Nekomata memiliki 33,33% peluang untuk mengulang serangan ini sebanyak tiga kali."
+            },
+            "102110001": {
+                "Title": "Basic Attack: Kitty Slash"
+            },
+            "102110002": {
+                "Description": "Kelipatan DMG: Tahap 1",
+                "Param": "{Skill:1021001, Prop:1001}"
+            },
+            "102110003": {
+                "Description": "Kelipatan DMG: Tahap 2",
+                "Param": "{Skill:1021002, Prop:1001}"
+            },
+            "102110004": {
+                "Description": "Kelipatan DMG: Tahap 3",
+                "Param": "{Skill:1021003, Prop:1001}"
+            },
+            "102110005": {
+                "Description": "Kelipatan DMG: Tahap 4",
+                "Param": "{Skill:1021004, Prop:1001}"
+            },
+            "102110006": {
+                "Description": "Kelipatan DMG: Tahap 5",
+                "Param": "{Skill:1021005, Prop:1001}"
+            },
+            "102110007": {
+                "Description": "Kelipatan Daze: Tahap 1",
+                "Param": "{Skill:1021001, Prop:1002}"
+            },
+            "102110008": {
+                "Description": "Kelipatan Daze: Tahap 2",
+                "Param": "{Skill:1021002, Prop:1002}"
+            },
+            "102110009": {
+                "Description": "Kelipatan Daze: Tahap 3",
+                "Param": "{Skill:1021003, Prop:1002}"
+            },
+            "102110010": {
+                "Description": "Kelipatan Daze: Tahap 4",
+                "Param": "{Skill:1021004, Prop:1002}"
+            },
+            "102110011": {
+                "Description": "Kelipatan Daze: Tahap 5",
+                "Param": "{Skill:1021005, Prop:1002}"
+            },
+            "102110012": {
+                "Title": "Basic Attack: Crimson Blade"
+            },
+            "102110013": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1021006, Prop:1001}"
+            },
+            "102110014": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1021006, Prop:1002}"
+            }
+        },
+        "1": {
+            "102100003": {
+                "Title": "Special Attack: Surprise Attack",
+                "Description": "Tekan <IconMap:Icon_Special> untuk melancarkan Skill ini.\nMelancarkan Strike ke bawah terhadap musuh di depan dan mengakibatkan <color=#F0D12B>Physical DMG</color>.\nLevel Anti-Interrupt akan meningkat selama melancarkan Skill ini."
+            },
+            "102100004": {
+                "Title": "EX Special Attack: Super Surprise Attack!",
+                "Description": "Saat Energy Nekomata sudah cukup, tekan <IconMap:Icon_SpecialReady> untuk melancarkan Skill ini.\nMelancarkan Slash ke bawah yang kuat terhadap musuh di depan dan mengakibatkan <color=#F0D12B>Physical DMG</color> dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "102110015": {
+                "Title": "Special Attack: Surprise Attack"
+            },
+            "102110016": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1021007, Prop:1001}"
+            },
+            "102110017": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1021007, Prop:1002}"
+            },
+            "102110018": {
+                "Title": "EX Special Attack: Super Surprise Attack!"
+            },
+            "102110019": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1021008, Prop:1001}"
+            },
+            "102110020": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1021008, Prop:1002}"
+            },
+            "102110021": {
+                "Description": "Konsumsi Energy",
+                "Param": "40 poin"
+            }
+        },
+        "2": {
+            "102100005": {
+                "Title": "Dodge: Can't Touch Me-ow~",
+                "Description": "Tekan <IconMap:Icon_Evade> untuk melakukan Dodge.\nMelakukan Dodge dengan cepat.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "102100006": {
+                "Title": "Dash Attack: Over Here!",
+                "Description": "Tekan <IconMap:Icon_Normal> saat melakukan Dodge untuk melancarkan Skill ini.\nMelancarkan Slash terhadap musuh di depan dan mengakibatkan <color=#F0D12B>Physical DMG</color>."
+            },
+            "102100007": {
+                "Title": "Dodge Counter: Phantom Claws",
+                "Description": "Tekan <IconMap:Icon_Normal> setelah melakukan <color=#FFFFFF>Perfect Dodge</color> untuk melancarkan Skill ini.\nMelancarkan Slash terhadap musuh di depan dan mengakibatkan <color=#F0D12B>Physical DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "102110022": {
+                "Title": "Dash Attack: Over Here!"
+            },
+            "102110023": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1021009, Prop:1001}"
+            },
+            "102110024": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1021009, Prop:1002}"
+            },
+            "102110025": {
+                "Title": "Dodge Counter: Phantom Claws"
+            },
+            "102110026": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1021010, Prop:1001}"
+            },
+            "102110027": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1021010, Prop:1002}"
+            }
+        },
+        "3": {
+            "102100008": {
+                "Title": "Chain Attack: Claw Swipe",
+                "Description": "Saat <color=#FFFFFF>Chain Attack</color> terpicu, pilih Nekomata untuk melancarkan Skill ini.\nMelancarkan Slash kuat terhadap musuh di depan dalam area besar dan mengakibatkan <color=#F0D12B>Physical DMG</color> dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "102100009": {
+                "Title": "Ultimate: Claw Smash",
+                "Description": "Saat Decibel Rating mencapai <color=#FFFFFF>Maximum</color>, tekan <IconMap:Icon_UltimateReady> untuk melancarkan Skill ini.\nMelancarkan Slash kuat terhadap musuh di depan dalam area besar dan mengakibatkan <color=#F0D12B>Physical DMG</color> dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "102110028": {
+                "Title": "Chain Attack: Claw Swipe"
+            },
+            "102110029": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1021011, Prop:1001}"
+            },
+            "102110030": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1021011, Prop:1002}"
+            },
+            "102110031": {
+                "Title": "Ultimate: Claw Smash"
+            },
+            "102110032": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1021012, Prop:1001}"
+            },
+            "102110033": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1021012, Prop:1002}"
+            }
+        },
+        "6": {
+            "102100011": {
+                "Title": "Quick Assist: Cat's Paw",
+                "Description": "Saat Agen yang Dikendalikan terhempas, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nMelancarkan Slash terhadap musuh di depan dan mengakibatkan <color=#F0D12B>Physical DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "102100012": {
+                "Title": "Defensive Assist: Desperate Defense",
+                "Description": "Tepat sebelum Agen aktif diserang, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nMenangkis serangan musuh dan menghasilkan Daze dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "102100013": {
+                "Title": "Assist Follow-Up: Shadow Strike",
+                "Description": "Setelah melancarkan <color=#FFFFFF>Defensive Assist</color>, tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMelancarkan Slash dadakan ke depan dan mengakibatkan <color=#F0D12B>Physical DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "102110034": {
+                "Title": "Quick Assist: Cat's Paw"
+            },
+            "102110035": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1021013, Prop:1001}"
+            },
+            "102110036": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1021013, Prop:1002}"
+            },
+            "102110037": {
+                "Title": "Defensive Assist: Desperate Defense"
+            },
+            "102110038": {
+                "Description": "Kelipatan Daze - Light Defensive",
+                "Param": "{Skill:1021014, Prop:1002}"
+            },
+            "102110039": {
+                "Description": "Kelipatan Daze - Heavy Defensive",
+                "Param": "{Skill:1021015, Prop:1002}"
+            },
+            "102110040": {
+                "Description": "Kelipatan Daze - Chain Defensive",
+                "Param": "{Skill:1021016, Prop:1002}"
+            },
+            "102110041": {
+                "Title": "Assist Follow-Up: Shadow Strike"
+            },
+            "102110042": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1021017, Prop:1001}"
+            },
+            "102110043": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1021017, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1021001": {
+            "DamageValue": 5520,
+            "DamageGrowth": 510,
+            "DazeValue": 1800,
+            "DazeGrowth": 90
+        },
+        "1021002": {
+            "DamageValue": 6260,
+            "DamageGrowth": 570,
+            "DazeValue": 3710,
+            "DazeGrowth": 170
+        },
+        "1021003": {
+            "DamageValue": 7270,
+            "DamageGrowth": 670,
+            "DazeValue": 4670,
+            "DazeGrowth": 220
+        },
+        "1021004": {
+            "DamageValue": 17020,
+            "DamageGrowth": 1550,
+            "DazeValue": 10370,
+            "DazeGrowth": 480
+        },
+        "1021005": {
+            "DamageValue": 12360,
+            "DamageGrowth": 1130,
+            "DazeValue": 5890,
+            "DazeGrowth": 270
+        },
+        "1021006": {
+            "DamageValue": 7180,
+            "DamageGrowth": 660,
+            "DazeValue": 5890,
+            "DazeGrowth": 270
+        },
+        "1021007": {
+            "DamageValue": 4730,
+            "DamageGrowth": 430,
+            "DazeValue": 4730,
+            "DazeGrowth": 220
+        },
+        "1021008": {
+            "DamageValue": 53970,
+            "DamageGrowth": 4910,
+            "DazeValue": 45540,
+            "DazeGrowth": 2070
+        },
+        "1021009": {
+            "DamageValue": 3510,
+            "DamageGrowth": 320,
+            "DazeValue": 1760,
+            "DazeGrowth": 80
+        },
+        "1021010": {
+            "DamageValue": 22790,
+            "DamageGrowth": 2080,
+            "DazeValue": 19950,
+            "DazeGrowth": 910
+        },
+        "1021011": {
+            "DamageValue": 53620,
+            "DamageGrowth": 4880,
+            "DazeValue": 15920,
+            "DazeGrowth": 730
+        },
+        "1021012": {
+            "DamageValue": 157110,
+            "DamageGrowth": 14290,
+            "DazeValue": 11810,
+            "DazeGrowth": 540
+        },
+        "1021013": {
+            "DamageValue": 9450,
+            "DamageGrowth": 860,
+            "DazeValue": 9450,
+            "DazeGrowth": 430
+        },
+        "1021014": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 25900,
+            "DazeGrowth": 1180
+        },
+        "1021015": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 32730,
+            "DazeGrowth": 1490
+        },
+        "1021016": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15930,
+            "DazeGrowth": 730
+        },
+        "1021017": {
+            "DamageValue": 30040,
+            "DamageGrowth": 2740,
+            "DazeValue": 25810,
+            "DazeGrowth": 1180
+        }
+    }
+}

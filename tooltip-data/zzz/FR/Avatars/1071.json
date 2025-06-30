@@ -1,0 +1,512 @@
+{
+    "Name": "César",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Formation en fer de lance",
+            "Description": "Lorsque César entre en combat ou prend le relai, elle confère immédiatement à toute l'escouade un bouclier <color=#FFFFFF>Égide rayonnante</color>. Cet effet peut être déclenché une fois toutes les 300 s. Lorsque <color=#FFFFFF>Égide rayonnante</color> est active, les ennemis situés dans un rayon de 5 m autour du personnage protégé par le bouclier subissent une réduction de 15 % de toutes leurs RÉS d'attribut.",
+            "Lore": "« Big Daddy m'a dit que c'était quand on formait une flèche avec les motos pour foncer avec une force incroyable directement sur le point faible de l'ennemi !\nEt c'est moi qui mène l'assaut bien sûr ! »"
+        },
+        "2": {
+            "Title": "Héritage des terres lointaines",
+            "Description": "Lorsque l'<color=#FFFFFF>Égide rayonnante</color> de <color=#FFFFFF>Passif principal : Barrière de résilience</color> est active, le taux de production d'énergie de César augmente de 10 %, l'augmentation de l'ATQ du porteur du bouclier monte à 150 % de sa valeur initiale.",
+            "Lore": "Le style de combat de César dénote de celui des résidents de la Nouvelle-Eridu, mais également de la couronne extérieure. Il se base sur les techniques des plus grands combattants errants.\nSavoir quand se retenir et quand porter le coup décisif a toujours été la technique de survie des vagabonds. César est une véritable adepte de cette philosophie."
+        },
+        "3": {
+            "Title": "Confiance absolue",
+            "Description": "Niv. d'<color=#FFFFFF>attaque normale</color>, d'<color=#FFFFFF>esquive</color>, de <color=#FFFFFF>soutien</color>, d'<color=#FFFFFF>attaque spéciale</color> et d'<color=#FFFFFF>enchaînement</color> +2",
+            "Lore": "Une fois que César a accepté quelqu'un, elle le considère comme faisant partie de son cercle intime et le traite avec une confiance absolue, et baisse entièrement sa garde...\nC'est exactement comme ça qu'elle vous perçoit."
+        },
+        "4": {
+            "Title": "Bélier d'Arès",
+            "Description": "Lorsque César lance un <color=#FFFFFF>enchaînement</color> ou un <color=#FFFFFF>ultime</color>, elle obtient 3 <color=#FFFFFF>points de soutien</color> supplémentaires. Si son énergie est inférieure à 20, elle peut lancer <color=#FFFFFF>Attaque spéciale EX : Bouclier percutant surpuissant</color> en consommant 1 <color=#FFFFFF>point de soutien</color> à la place. Cette substitution peut être déclenchée une fois toutes les 5 s.",
+            "Lore": "Une des techniques que César a maîtrisées grâce à l'enseignement des combattants errants.\n« Quoi qu'il arrive, je me battrai jusqu'au dernier instant ! »"
+        },
+        "5": {
+            "Title": "Conquête romantique",
+            "Description": "Niv. d'<color=#FFFFFF>attaque normale</color>, d'<color=#FFFFFF>esquive</color>, de <color=#FFFFFF>soutien</color>, d'<color=#FFFFFF>attaque spéciale</color> et d'<color=#FFFFFF>enchaînement</color> +2",
+            "Lore": "Derrière l'attitude nonchalante et négligée de César se cache un cœur plein de romantisme.\nElle s'intéresse constamment aux histoires d'amour.\nMais si vous abordez le sujet un peu trop longtemps... vous risquez de la faire rougir."
+        },
+        "6": {
+            "Title": "Volonté de la Suzeraine",
+            "Description": "<color=#FFFFFF>Attaque spéciale EX : Bouclier percutant surpuissant</color> et <color=#FFFFFF>Soutien de suivi : Lame assistante</color> infligent à coup sûr un coup critique. Les DGT de la compétence augmentent de 50 %, et de 50 % supplémentaires contre la cible principale. Lorsque César lance <color=#FFFFFF>Attaque spéciale EX : Bouclier percutant surpuissant</color> ou un <color=#FFFFFF>soutien de suivi</color>, son taux CRIT augmente de 30 %, et ses DGT CRIT de 60 % pendant 15 s.",
+            "Lore": "« Avant, je ne faisais que regarder devant moi. Je pensais que tant que j'étais forte, je serais capable de tout faire.\nMais être un grand chef demande plus que de la force.\nIl faut que je puisse protéger les amis qui me soutiennent derrière moi. Ils sont la raison pour laquelle je continue d'avancer. »"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passif principal : Barrière de résilience",
+            "DescriptionByLevel": {
+                "1": "Lorsque César active <color=#FFFFFF>Attaque spéciale EX : Parade et riposte</color>, un <color=#FFFFFF>enchaînement</color>, un <color=#FFFFFF>ultime</color>, ou <color=#FFFFFF>Attaque spéciale EX : Bouclier percutant surpuissant</color> grâce à un <color=#FFFFFF>contre défensif</color>, elle confère aux membres de toute l'escouade un bouclier <color=#FFFFFF>Égide rayonnante</color> équivalent à <color=#2BAD00>300 %</color> de son impact initial + <color=#2BAD00>200</color>. Ce bouclier dure 60 s et s'applique sur le personnage contrôlé. Sa valeur est partagée entre tous les personnages de l'escouade. Une instance unique de DGT subis ne peut pas dépasser la valeur du bouclier.\nTant qu'<color=#FFFFFF>Égide rayonnante</color> est active, le niveau de RÉS à l'interruption du personnage protégé par le bouclier augmente, \nTant qu'<color=#FFFFFF>Égide rayonnante</color> est active, l'ATQ du personnage protégé par le bouclier augmente de <color=#2BAD00>40</color>. Une fois <color=#FFFFFF>Égide rayonnante</color> expirée, cette augmentation demeure pendant 5 s supplémentaires.",
+                "2": "Lorsque César active <color=#FFFFFF>Attaque spéciale EX : Parade et riposte</color>, un <color=#FFFFFF>enchaînement</color>, un <color=#FFFFFF>ultime</color>, ou <color=#FFFFFF>Attaque spéciale EX : Bouclier percutant surpuissant</color> grâce à un <color=#FFFFFF>contre défensif</color>, elle confère aux membres de toute l'escouade un bouclier <color=#FFFFFF>Égide rayonnante</color> équivalent à <color=#2BAD00>500 %</color> de son impact initial + <color=#2BAD00>400</color>. Ce bouclier dure 60 s et s'applique sur le personnage contrôlé. Sa valeur est partagée entre tous les personnages de l'escouade. Une instance unique de DGT subis ne peut pas dépasser la valeur du bouclier.\nTant qu'<color=#FFFFFF>Égide rayonnante</color> est active, le niveau de RÉS à l'interruption du personnage protégé par le bouclier augmente, \nTant qu'<color=#FFFFFF>Égide rayonnante</color> est active, l'ATQ du personnage protégé par le bouclier augmente de <color=#2BAD00>135</color>. Une fois <color=#FFFFFF>Égide rayonnante</color> expirée, cette augmentation demeure pendant 5 s supplémentaires.",
+                "3": "Lorsque César active <color=#FFFFFF>Attaque spéciale EX : Parade et riposte</color>, un <color=#FFFFFF>enchaînement</color>, un <color=#FFFFFF>ultime</color>, ou <color=#FFFFFF>Attaque spéciale EX : Bouclier percutant surpuissant</color> grâce à un <color=#FFFFFF>contre défensif</color>, elle confère aux membres de toute l'escouade un bouclier <color=#FFFFFF>Égide rayonnante</color> équivalent à <color=#2BAD00>700 %</color> de son impact initial + <color=#2BAD00>700</color>. Ce bouclier dure 60 s et s'applique sur le personnage contrôlé. Sa valeur est partagée entre tous les personnages de l'escouade. Une instance unique de DGT subis ne peut pas dépasser la valeur du bouclier.\nTant qu'<color=#FFFFFF>Égide rayonnante</color> est active, le niveau de RÉS à l'interruption du personnage protégé par le bouclier augmente, \nTant qu'<color=#FFFFFF>Égide rayonnante</color> est active, l'ATQ du personnage protégé par le bouclier augmente de <color=#2BAD00>240</color>. Une fois <color=#FFFFFF>Égide rayonnante</color> expirée, cette augmentation demeure pendant 5 s supplémentaires.",
+                "4": "Lorsque César active <color=#FFFFFF>Attaque spéciale EX : Parade et riposte</color>, un <color=#FFFFFF>enchaînement</color>, un <color=#FFFFFF>ultime</color>, ou <color=#FFFFFF>Attaque spéciale EX : Bouclier percutant surpuissant</color> grâce à un <color=#FFFFFF>contre défensif</color>, elle confère aux membres de toute l'escouade un bouclier <color=#FFFFFF>Égide rayonnante</color> équivalent à <color=#2BAD00>900 %</color> de son impact initial + <color=#2BAD00>900</color>. Ce bouclier dure 60 s et s'applique sur le personnage contrôlé. Sa valeur est partagée entre tous les personnages de l'escouade. Une instance unique de DGT subis ne peut pas dépasser la valeur du bouclier.\nTant qu'<color=#FFFFFF>Égide rayonnante</color> est active, le niveau de RÉS à l'interruption du personnage protégé par le bouclier augmente, \nTant qu'<color=#FFFFFF>Égide rayonnante</color> est active, l'ATQ du personnage protégé par le bouclier augmente de <color=#2BAD00>400</color>. Une fois <color=#FFFFFF>Égide rayonnante</color> expirée, cette augmentation demeure pendant 5 s supplémentaires.",
+                "5": "Lorsque César active <color=#FFFFFF>Attaque spéciale EX : Parade et riposte</color>, un <color=#FFFFFF>enchaînement</color>, un <color=#FFFFFF>ultime</color>, ou <color=#FFFFFF>Attaque spéciale EX : Bouclier percutant surpuissant</color> grâce à un <color=#FFFFFF>contre défensif</color>, elle confère aux membres de toute l'escouade un bouclier <color=#FFFFFF>Égide rayonnante</color> équivalent à <color=#2BAD00>1 100 %</color> de son impact initial + <color=#2BAD00>1 100</color>. Ce bouclier dure 60 s et s'applique sur le personnage contrôlé. Sa valeur est partagée entre tous les personnages de l'escouade. Une instance unique de DGT subis ne peut pas dépasser la valeur du bouclier.\nTant qu'<color=#FFFFFF>Égide rayonnante</color> est active, le niveau de RÉS à l'interruption du personnage protégé par le bouclier augmente, \nTant qu'<color=#FFFFFF>Égide rayonnante</color> est active, l'ATQ du personnage protégé par le bouclier augmente de <color=#2BAD00>650</color>. Une fois <color=#FFFFFF>Égide rayonnante</color> expirée, cette augmentation demeure pendant 5 s supplémentaires.",
+                "6": "Lorsque César active <color=#FFFFFF>Attaque spéciale EX : Parade et riposte</color>, un <color=#FFFFFF>enchaînement</color>, un <color=#FFFFFF>ultime</color>, ou <color=#FFFFFF>Attaque spéciale EX : Bouclier percutant surpuissant</color> grâce à un <color=#FFFFFF>contre défensif</color>, elle confère aux membres de toute l'escouade un bouclier <color=#FFFFFF>Égide rayonnante</color> équivalent à <color=#2BAD00>1 300 %</color> de son impact initial + <color=#2BAD00>1 300</color>. Ce bouclier dure 60 s et s'applique sur le personnage contrôlé. Sa valeur est partagée entre tous les personnages de l'escouade. Une instance unique de DGT subis ne peut pas dépasser la valeur du bouclier.\nTant qu'<color=#FFFFFF>Égide rayonnante</color> est active, le niveau de RÉS à l'interruption du personnage protégé par le bouclier augmente, \nTant qu'<color=#FFFFFF>Égide rayonnante</color> est active, l'ATQ du personnage protégé par le bouclier augmente de <color=#2BAD00>900</color>. Une fois <color=#FFFFFF>Égide rayonnante</color> expirée, cette augmentation demeure pendant 5 s supplémentaires.",
+                "7": "Lorsque César active <color=#FFFFFF>Attaque spéciale EX : Parade et riposte</color>, un <color=#FFFFFF>enchaînement</color>, un <color=#FFFFFF>ultime</color>, ou <color=#FFFFFF>Attaque spéciale EX : Bouclier percutant surpuissant</color> grâce à un <color=#FFFFFF>contre défensif</color>, elle confère aux membres de toute l'escouade un bouclier <color=#FFFFFF>Égide rayonnante</color> équivalent à <color=#2BAD00>1 400 %</color> de son impact initial + <color=#2BAD00>1 400</color>. Ce bouclier dure 60 s et s'applique sur le personnage contrôlé. Sa valeur est partagée entre tous les personnages de l'escouade. Une instance unique de DGT subis ne peut pas dépasser la valeur du bouclier.\nTant qu'<color=#FFFFFF>Égide rayonnante</color> est active, le niveau de RÉS à l'interruption du personnage protégé par le bouclier augmente, \nTant qu'<color=#FFFFFF>Égide rayonnante</color> est active, l'ATQ du personnage protégé par le bouclier augmente de <color=#2BAD00>1 000</color>. Une fois <color=#FFFFFF>Égide rayonnante</color> expirée, cette augmentation demeure pendant 5 s supplémentaires."
+            }
+        },
+        "MathSkill": {
+            "Title": "Capacité supplémentaire : Esprit combatif",
+            "Description": "Lorsqu'il y a un autre personnage capable de lancer des <color=#FFFFFF>soutiens défensifs</color> ou appartenant à la même faction que César :\nLorsque César déclenche une <color=#FFFFFF>parade parfaite</color>, un <color=#FFFFFF>contre défensif</color>, un <color=#FFFFFF>soutien défensif</color> ou <color=#FFFFFF>Attaque normale : Impasse</color>, elle inflige un malus aux ennemis dans un rayon de 7 m, qui augmente les DGT infligés à ces ennemis par tous les personnages de l'escouade de 25 % pendant 30 s."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "107100001": {
+                "Title": "Attaque normale : Taillade déchaînée",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pour activer :\nAssène jusqu'à 6 entailles frontales, infligeant des <color=#F0D12B>DGT physiques</color>."
+            },
+            "107100002": {
+                "Title": "Attaque normale : Impasse",
+                "Description": "Lorsqu'il y a suffisamment de <color=#FFFFFF>points de soutien</color>, maintenez <IconMap:Icon_Normal> enfoncé pour activer :\nLance le bouclier pour attaquer les ennemis à proximité dans toutes les directions et infliger des <color=#F0D12B>DGT physiques</color>. Consomme 1 <color=#FFFFFF>point de soutien</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "107110001": {
+                "Title": "Attaque normale : Taillade déchaînée"
+            },
+            "107110002": {
+                "Description": "Multiplicateur de DGT du 1er coup",
+                "Param": "{Skill:1071001, Prop:1001}"
+            },
+            "107110003": {
+                "Description": "Multiplicateur de DGT du 2e coup",
+                "Param": "{Skill:1071002, Prop:1001}"
+            },
+            "107110004": {
+                "Description": "Multiplicateur de DGT du 3e coup",
+                "Param": "{Skill:1071003, Prop:1001}"
+            },
+            "107110005": {
+                "Description": "Multiplicateur de DGT du 3e coup (Alt) d'attaque normale",
+                "Param": "{Skill:1071008, Prop:1001}"
+            },
+            "107110006": {
+                "Description": "Multiplicateur de DGT du 4e coup",
+                "Param": "{Skill:1071004, Prop:1001}"
+            },
+            "107110007": {
+                "Description": "Multiplicateur de DGT du 5e coup",
+                "Param": "{Skill:1071005, Prop:1001}"
+            },
+            "107110008": {
+                "Description": "Multiplicateur de DGT du 6e coup",
+                "Param": "{Skill:1071006, Prop:1001}"
+            },
+            "107110009": {
+                "Description": "Multiplicateur de confusion du 1er coup",
+                "Param": "{Skill:1071001, Prop:1002}"
+            },
+            "107110010": {
+                "Description": "Multiplicateur de confusion du 2e coup",
+                "Param": "{Skill:1071002, Prop:1002}"
+            },
+            "107110011": {
+                "Description": "Multiplicateur de confusion du 3e coup",
+                "Param": "{Skill:1071003, Prop:1002}"
+            },
+            "107110012": {
+                "Description": "Multiplicateur de confusion du 3e coup (Alt) d'attaque normale",
+                "Param": "{Skill:1071008, Prop:1002}"
+            },
+            "107110013": {
+                "Description": "Multiplicateur de confusion du 4e coup",
+                "Param": "{Skill:1071004, Prop:1002}"
+            },
+            "107110014": {
+                "Description": "Multiplicateur de confusion du 5e coup",
+                "Param": "{Skill:1071005, Prop:1002}"
+            },
+            "107110015": {
+                "Description": "Multiplicateur de confusion du 6e coup",
+                "Param": "{Skill:1071006, Prop:1002}"
+            },
+            "107110016": {
+                "Title": "Attaque normale : Impasse"
+            },
+            "107110017": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1071007, Prop:1001}"
+            },
+            "107110018": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1071007, Prop:1002}"
+            },
+            "107110019": {
+                "Description": "Coût en points de soutien",
+                "Param": "1"
+            }
+        },
+        "1": {
+            "107100003": {
+                "Title": "Attaque spéciale : Bouclier percutant",
+                "Description": "Appuyez sur <IconMap:Icon_Special> pour activer :\nAssène une frappe de bouclier frontale qui inflige des <color=#F0D12B>DGT physiques</color>.\nLorsque César est touchée par un ennemi au début du lancement de cette compétence, elle déclenche une <color=#FFFFFF>parade parfaite</color>, annulant ainsi les DGT subis une seule fois et riposte immédiatement avec <color=#FFFFFF>Attaque spéciale : Percée rugissante</color>.\nAprès utilisation de cette compétence, César entre en posture de garde, réduisant tous les DGT qu'elle subit de 40 %. Lorsqu'elle est attaquée par un ennemi, César bloque avec son bouclier et est légèrement repoussée. Appuyez sur <IconMap:Icon_Special> ou <IconMap:Icon_SpecialReady> pour activer un <color=#FFFFFF>contre défensif</color> et lancer <color=#FFFFFF>Attaque spéciale : Percée rugissante</color> ou <color=#FFFFFF>Attaque spéciale EX : Bouclier percutant surpuissant</color>.\nLorsqu'elle déclenche un <color=#FFFFFF>contre défensif</color>, César est invulnérable lors de l'utilisation de la compétence."
+            },
+            "107100004": {
+                "Title": "Attaque spéciale : Percée rugissante",
+                "Description": "Après avoir activé <color=#FFFFFF>Attaque spéciale : Bouclier percutant</color>, appuyez sur <IconMap:Icon_Special> pour activer :\nTransperce les ennemis en avant et inflige des <color=#F0D12B>DGT physiques</color>.\nLorsque ni une <color=#FFFFFF>parade parfaite</color> ni un <color=#FFFFFF>contre défensif</color> n'est déclenchée, le niveau de la RÉS à l'interruption augmente pendant l'utilisation de cette compétence.\nLorsqu'une <color=#FFFFFF>parade parfaite</color> ou un <color=#FFFFFF>contre défensif</color> est déclenchée, le personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "107100005": {
+                "Title": "Attaque spéciale EX : Parade et riposte",
+                "Description": "Avec suffisamment d'énergie, appuyez sur <IconMap:Icon_SpecialReady> pour activer :\nAssène une frappe frontale à l'aide du bouclier, suivie d'une puissante percée qui infligent d'importants <color=#F0D12B>DGT physiques</color>.\nSi César est touchée par un ennemi au début de l'utilisation de cette compétence, ou si une <color=#FFFFFF>Interruption</color> est déclenchée grâce au coup de bouclier, elle déclenche une <color=#FFFFFF>parade parfaite</color>, annulant ainsi les DGT de cette attaque ennemie, puis riposte avec un coup de bouclier. Après une <color=#FFFFFF>parade parfaite</color>, appuyez sur <IconMap:Icon_SpecialReady> pour activer <color=#FFFFFF>Attaque spéciale EX : Bouclier percutant surpuissant</color> sans consommer d'énergie.\nAprès l'utilisation de cette compétence, César entre en posture de garde, réduisant tous les DGT qu'elle subit de 40 %. Lorsque César est attaquée par un ennemi, elle bloque avec son bouclier et est repoussée. Appuyez ensuite sur <IconMap:Icon_Special> ou <IconMap:Icon_SpecialReady> pour déclencher un <color=#FFFFFF>contre défensif</color> et activer <color=#FFFFFF>Attaque spéciale : Percée rugissante</color> ou <color=#FFFFFF>Attaque spéciale EX : Bouclier percutant surpuissant</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "107100006": {
+                "Title": "Attaque spéciale EX : Bouclier percutant surpuissant",
+                "Description": "Après <color=#FFFFFF>Attaque spéciale EX : Parade et riposte</color>, avec suffisamment d'énergie, appuyez sur <IconMap:Icon_SpecialReady> pour activer :\nAssène une frappe de bouclier frontale qui inflige d'importants <color=#F0D12B>DGT physiques</color>.\nSi César est touchée pour un ennemi au début de l'utilisation de cette compétence, ou si une <color=#FFFFFF>Interruption</color> est déclenchée grâce à la frappe de bouclier, elle déclenche une <color=#FFFFFF>parade parfaite</color>, annulant ainsi les DGT de cette attaque ennemie, puis récupère l'énergie consommée pour activer la compétence.\nLorsque la compétence est activée grâce à une <color=#FFFFFF>parade parfaite</color> ou à un <color=#FFFFFF>contre défensif</color>, la <color=#FFFFFF>parade parfaite</color> ne peut pas être déclenchée à nouveau.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "107100007": {
+                "Title": "Changement de posture",
+                "Description": "Lorsque César déclenche une <color=#FFFFFF>parade parfaite</color>, un <color=#FFFFFF>contre défensif</color> ou un <color=#FFFFFF>soutien défensif</color>, son impact augmente de <color=#2BAD00>{CAL:8+AvatarSkillLevel(1)*1,1,2} %</color> pendant 3 s."
+            },
+            "107110020": {
+                "Title": "Changement de posture"
+            },
+            "107110021": {
+                "Description": "Augmentation de l'impact",
+                "Param": "{CAL:8+AvatarSkillLevel(1)*1,1,2} %"
+            },
+            "107110022": {
+                "Title": "Attaque spéciale : Bouclier percutant"
+            },
+            "107110023": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1071009, Prop:1001}"
+            },
+            "107110024": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1071009, Prop:1002}"
+            },
+            "107110025": {
+                "Description": "[Parade parfaite] Multiplicateur de confusion",
+                "Param": "{Skill:1071014, Prop:1002}"
+            },
+            "107110026": {
+                "Title": "Attaque spéciale : Percée rugissante"
+            },
+            "107110027": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1071010, Prop:1001}"
+            },
+            "107110028": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1071010, Prop:1002}"
+            },
+            "107110029": {
+                "Title": "Attaque spéciale EX : Parade et riposte"
+            },
+            "107110030": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1071011, Prop:1001}"
+            },
+            "107110031": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1071011, Prop:1002}"
+            },
+            "107110032": {
+                "Description": "[Parade parfaite] Multiplicateur de confusion",
+                "Param": "{Skill:1071015, Prop:1002}"
+            },
+            "107110033": {
+                "Description": "[Parade parfaite] Multiplicateur de DGT de la riposte",
+                "Param": "{Skill:1071012, Prop:1001}"
+            },
+            "107110034": {
+                "Description": "[Parade parfaite] Multiplicateur de confusion de la riposte",
+                "Param": "{Skill:1071012, Prop:1002}"
+            },
+            "107110035": {
+                "Description": "Coût en énergie",
+                "Param": "40 pts"
+            },
+            "107110036": {
+                "Title": "Attaque spéciale EX : Bouclier percutant surpuissant"
+            },
+            "107110037": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1071013, Prop:1001}"
+            },
+            "107110038": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1071013, Prop:1002}"
+            },
+            "107110039": {
+                "Description": "[Parade parfaite] Multiplicateur de confusion",
+                "Param": "{Skill:1071015, Prop:1002}"
+            },
+            "107110040": {
+                "Description": "Coût en énergie d'activation",
+                "Param": "20 pts"
+            }
+        },
+        "2": {
+            "107100008": {
+                "Title": "Esquive : Drift",
+                "Description": "Appuyez sur <IconMap:Icon_Evade> pour activer :\nUne esquive rapide.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "107100009": {
+                "Title": "Attaque de bond : Ruée porcine",
+                "Description": "Pendant une esquive, appuyez sur <IconMap:Icon_Normal> pour activer :\nAssène une frappe de bouclier frontale qui inflige des <color=#F0D12B>DGT physiques</color>.\nLors de l'activation de cette compétence, les DGT subis sont réduits de 40 %. Lorsque César est attaquée par des ennemis, elle bloque à l'aide de son bouclier et est repoussée. À ce moment-là, appuyez sur <IconMap:Icon_Special> ou <IconMap:Icon_SpecialReady> pour déclencher un <color=#FFFFFF>contre défensif</color> et activer <color=#FFFFFF>Attaque spéciale : Percée rugissante</color> ou <color=#FFFFFF>Attaque spéciale EX : Bouclier percutant surpuissant</color>."
+            },
+            "107100010": {
+                "Title": "Contre d'esquive : Œil pour œil",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pendant une <color=#FFFFFF>esquive parfaite</color> pour activer :\nTransperce les ennemis situés en face, infligeant des <color=#F0D12B>DGT physiques</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "107110041": {
+                "Title": "Attaque de bond : Ruée porcine"
+            },
+            "107110042": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1071016, Prop:1001}"
+            },
+            "107110043": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1071016, Prop:1002}"
+            },
+            "107110044": {
+                "Title": "Contre d'esquive : Œil pour œil"
+            },
+            "107110045": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1071017, Prop:1001}"
+            },
+            "107110046": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1071017, Prop:1002}"
+            }
+        },
+        "3": {
+            "107100011": {
+                "Title": "Enchaînement : Coup de rage au volant",
+                "Description": "Lors du déclenchement d'un <color=#FFFFFF>enchaînement</color>, sélectionnez le personnage pour activer :\nAssène une puissante frappe frontale descendante, infligeant d'importants <color=#F0D12B>DGT physiques</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "107100012": {
+                "Title": "Ultime : Écrasement furieux",
+                "Description": "Lorsque le niveau de décibels est au <color=#FFFFFF>Maximum</color>, appuyez sur <IconMap:Icon_UltimateReady> pour activer :\nLance le bouclier en avant, assénant ainsi une puissante attaque tournoyante aux ennemis, suivie d'une frappe descendante, infligeant d'importants <color=#F0D12B>DGT physiques</color>.\nLa confusion infligée aux ennemis protégés par un bouclier augmente de <color=#2BAD00>{CAL:40+AvatarSkillLevel(3)*5,1,2} %</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "107110047": {
+                "Title": "Enchaînement : Coup de rage au volant"
+            },
+            "107110048": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1071018, Prop:1001}"
+            },
+            "107110049": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1071018, Prop:1002}"
+            },
+            "107110050": {
+                "Title": "Ultime : Écrasement furieux"
+            },
+            "107110051": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1071019, Prop:1001}"
+            },
+            "107110052": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1071019, Prop:1002}"
+            },
+            "107110053": {
+                "Description": "Augmentation de la confusion",
+                "Param": "{CAL:40+AvatarSkillLevel(3)*5,1,2} %"
+            }
+        },
+        "6": {
+            "107100014": {
+                "Title": "Soutien rapide : Changement de voie",
+                "Description": "Lorsque le personnage contrôlé est projeté, appuyez sur <IconMap:Icon_Switch> pour activer :\nTransperce les ennemis situés en face, infligeant des <color=#F0D12B>DGT physiques</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "107100015": {
+                "Title": "Soutien défensif : Égide",
+                "Description": "Lorsque le personnage sur le terrain est sur le point d'être attaqué, appuyez sur <IconMap:Icon_Switch> pour activer :\nPare l'attaque de l'ennemi et provoque une confusion importante.\nCette compétence est idéale pour parer les attaques ennemies et réduire la consommation de <color=#FFFFFF>points de soutien</color> lorsque le personnage subit des assauts intenses.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "107100016": {
+                "Title": "Soutien de suivi : Lame assistante",
+                "Description": "Après un <color=#FFFFFF>soutien défensif</color>, appuyez sur <IconMap:Icon_Normal> pour activer :\nLance le bouclier en avant, assénant ainsi une puissante attaque tournoyante aux ennemis qui est suivie d'une entaille, qui infligent des <color=#F0D12B>DGT physiques</color>.\nAprès avoir activé cette compétence, appuyez sur <IconMap:Icon_Special> ou <IconMap:Icon_SpecialReady> pour déclencher un <color=#FFFFFF>contre défensif</color> et activer <color=#FFFFFF>Attaque spéciale : Percée rugissante</color> ou <color=#FFFFFF>Attaque spéciale EX : Bouclier percutant surpuissant</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "107110054": {
+                "Title": "Soutien rapide : Changement de voie"
+            },
+            "107110055": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1071020, Prop:1001}"
+            },
+            "107110056": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1071020, Prop:1002}"
+            },
+            "107110057": {
+                "Title": "Soutien défensif : Égide"
+            },
+            "107110058": {
+                "Description": "Multiplicateur de confusion de défense légère",
+                "Param": "{Skill:1071021, Prop:1002}"
+            },
+            "107110059": {
+                "Description": "Multiplicateur de confusion de défense lourde",
+                "Param": "{Skill:1071022, Prop:1002}"
+            },
+            "107110060": {
+                "Description": "Multiplicateur de confusion de défense en chaîne",
+                "Param": "{Skill:1071023, Prop:1002}"
+            },
+            "107110061": {
+                "Title": "Soutien de suivi : Lame assistante"
+            },
+            "107110062": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1071024, Prop:1001}"
+            },
+            "107110063": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1071024, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1071001": {
+            "DamageValue": 4720,
+            "DamageGrowth": 430,
+            "DazeValue": 2130,
+            "DazeGrowth": 100
+        },
+        "1071002": {
+            "DamageValue": 4090,
+            "DamageGrowth": 380,
+            "DazeValue": 3380,
+            "DazeGrowth": 160
+        },
+        "1071003": {
+            "DamageValue": 14830,
+            "DamageGrowth": 1350,
+            "DazeValue": 11000,
+            "DazeGrowth": 500
+        },
+        "1071004": {
+            "DamageValue": 7880,
+            "DamageGrowth": 720,
+            "DazeValue": 6750,
+            "DazeGrowth": 310
+        },
+        "1071005": {
+            "DamageValue": 19860,
+            "DamageGrowth": 1810,
+            "DazeValue": 13750,
+            "DazeGrowth": 630
+        },
+        "1071006": {
+            "DamageValue": 39990,
+            "DamageGrowth": 3640,
+            "DazeValue": 26260,
+            "DazeGrowth": 1200
+        },
+        "1071007": {
+            "DamageValue": 12630,
+            "DamageGrowth": 1150,
+            "DazeValue": 9320,
+            "DazeGrowth": 430
+        },
+        "1071008": {
+            "DamageValue": 11840,
+            "DamageGrowth": 1080,
+            "DazeValue": 7360,
+            "DazeGrowth": 340
+        },
+        "1071009": {
+            "DamageValue": 5330,
+            "DamageGrowth": 490,
+            "DazeValue": 2400,
+            "DazeGrowth": 110
+        },
+        "1071010": {
+            "DamageValue": 5880,
+            "DamageGrowth": 540,
+            "DazeValue": 2650,
+            "DazeGrowth": 130
+        },
+        "1071011": {
+            "DamageValue": 38720,
+            "DamageGrowth": 3520,
+            "DazeValue": 25260,
+            "DazeGrowth": 1150
+        },
+        "1071012": {
+            "DamageValue": 38720,
+            "DamageGrowth": 3520,
+            "DazeValue": 25260,
+            "DazeGrowth": 1150
+        },
+        "1071013": {
+            "DamageValue": 42570,
+            "DamageGrowth": 3870,
+            "DazeValue": 28840,
+            "DazeGrowth": 1320
+        },
+        "1071014": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 7700,
+            "DazeGrowth": 350
+        },
+        "1071015": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15400,
+            "DazeGrowth": 700
+        },
+        "1071016": {
+            "DamageValue": 6230,
+            "DamageGrowth": 570,
+            "DazeValue": 3120,
+            "DazeGrowth": 150
+        },
+        "1071017": {
+            "DamageValue": 19350,
+            "DamageGrowth": 1760,
+            "DazeValue": 17420,
+            "DazeGrowth": 800
+        },
+        "1071018": {
+            "DamageValue": 63880,
+            "DamageGrowth": 5810,
+            "DazeValue": 19990,
+            "DazeGrowth": 910
+        },
+        "1071019": {
+            "DamageValue": 201230,
+            "DamageGrowth": 18300,
+            "DazeValue": 27870,
+            "DazeGrowth": 1270
+        },
+        "1071020": {
+            "DamageValue": 6420,
+            "DamageGrowth": 590,
+            "DazeValue": 6420,
+            "DazeGrowth": 300
+        },
+        "1071021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1071022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34530,
+            "DazeGrowth": 1570
+        },
+        "1071023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16930,
+            "DazeGrowth": 770
+        },
+        "1071024": {
+            "DamageValue": 40720,
+            "DamageGrowth": 3710,
+            "DazeValue": 35630,
+            "DazeGrowth": 1620
+        }
+    }
+}

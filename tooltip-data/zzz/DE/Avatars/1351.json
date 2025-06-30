@@ -1,0 +1,355 @@
+{
+    "Name": "Pulchra",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Eigeninteresse",
+            "Description": "Wenn an von <color=#FFFFFF>„Fesselfalle“</color> betroffenen Gegnern SCH verursacht wird, erhöht sich die eigene KRIT-Rate um 10 %.",
+            "Lore": "„Eigeninteresse ist ein Instinkt, aber auch eine gelernte Fähigkeit.“\n„Wie lernt man so etwas?“\n„Wenn du dir einige Male die Finger verbrannt hast, wirst du es herausfinden.“"
+        },
+        "2": {
+            "Title": "Opportunistin",
+            "Description": "Im Zustand <color=#FFFFFF>„Jagdtrieb“</color> von <color=#FFFFFF>„passive Kernfähigkeit: Jagdinstinkt“</color> erhöht sich Pulchras ANG zusätzlich um 10 %.",
+            "Lore": "„Die wertvollste Eigenschaft eines Söldners ist nicht Loyalität, sondern das Wissen, welche Gelegenheiten es wert und welche Auftraggeber, Aufträge und Anforderungen richtig sind. Außerdem sollte man langfristige Verträge meiden, sodass man, wenn man wegen der Arbeit die Seiten wechselt, keine Probleme mit Ex-Arbeitgebern bekommt.“\n„Pulchra, soeben kam noch jemand vorbei und hat nach Ärger gesucht. Ich hab ihn dazu gebracht, sich zu verziehen. Wie hast du es nur geschafft, dir so viele Feinde zu machen?“\n„Zu viele Leute lassen sich von ihren Emotionen leiten. Sieh nur ... Sie sind alle Versager, die ihren eigenen Wert nicht kennen.“"
+        },
+        "3": {
+            "Title": "Revierverhalten",
+            "Description": "Fähigkeitsstufe von <color=#FFFFFF>Basisangriff</color>, <color=#FFFFFF>Ausweichen</color>, <color=#FFFFFF>Hilfe</color>, <color=#FFFFFF>Spezialangriff</color> und <color=#FFFFFF>Kettenangriff</color> +2",
+            "Lore": "An der Tür von Pulchras Wohnmobil hängt ein großes Blatt Papier, auf dem in riesigen roten Buchstaben geschrieben steht: „DAS IST MEIN REVIER! KLOPF AN, BEVOR DU REINKOMMST! KLOPF! KLOPF!“\nDarunter ist ein kleineres Stück Papier befestigt, auf dem in großen schwarzen Buchstaben steht: „Caesar, entschädige mich für das Schloss! 100.000 Dennys!“\nWiederum darunter steht in krakeliger Handschrift: „Hab den Proxy gefragt. Das Schloss ist bloß 20.000 Dennys wert!“"
+        },
+        "4": {
+            "Title": "Jagdvergnügen",
+            "Description": "Verringert die Energiekosten beim Anwenden von <color=#FFFFFF>„verstärkter Spezialangriff: Zerfleischende Klaue – Blitzschritt“</color> um 5 Pkt.",
+            "Lore": "„Was bringt es, starke Gegner herauszufordern? Ich bin keine Masochistin. Für mich liegt das wahre Jagdvergnügen in dem Wissen, dass ich gewinnen werde!“\n5 Minuten später ...\n„Pah, diese KI ist viel zu schwach. Wie langweilig ...“"
+        },
+        "5": {
+            "Title": "Schweifspiel",
+            "Description": "Fähigkeitsstufe von <color=#FFFFFF>Basisangriff</color>, <color=#FFFFFF>Ausweichen</color>, <color=#FFFFFF>Hilfe</color>, <color=#FFFFFF>Spezialangriff</color> und <color=#FFFFFF>Kettenangriff</color> +2",
+            "Lore": "Pulchras frühste, verschwommene Kindheitserinnerung ist von einem großen, warmen Schweif. Als sie lernte zu krabbeln, war ihre Lieblingsbeschäftigung, diesem Schweif nachzujagen.\n„Und dann?“\n„Man hat mir gesagt, es sei mein eigener Schweif gewesen.“\nAber Pulchra wusste, dass es nicht so war. Abgesehen von dem Schweifspiel wickelte sich jener Schweif jede Nacht um sie herum, damit sie nicht frieren musste. Vielleicht verschluckte die Höhle ihn, oder vielleicht geschah etwas anderes ... aber eigentlich ist es auch egal. Dieses Spiel spielt sie schon seit Langem nicht mehr."
+        },
+        "6": {
+            "Title": "Hinter der Maske",
+            "Description": "Der SCH von <color=#FFFFFF>„Spezialangriff: Zerfleischende Klaue – Albtraumschatten“</color> erhöht sich um 15 % und die Anzahl der auslösbaren Wiederholungsangriffe erhöht sich um 2. Der Effekt der <color=#FFFFFF>„Fesselfalle“</color> von <color=#FFFFFF>„Zusatzfähigkeit: Geschäftspartnerin“</color> wirkt nun auf alle Arten von SCH neben <color=#FFFFFF>Nachschock</color>.",
+            "Lore": "Die Atemschutzmaske blockiert Ätherpartikel und Pollen. Sie schützt Pulchra außerdem vor neugierigen, ängstlichen und boshaften Blicken, macht es allerdings auch unmöglich, sich nachts gemütlich zusammenzurollen und gut zu schlafen. Sie würde so gern ein warmes Örtchen für ein sorgenfreies Nachmittagsschläfchen finden ...\nPlötzlich öffnet sich die Wohnwagentür. Pulchra greift sofort nach ihrer getreuen Maske und setzt sie auf. „Würde es dich umbringen, zu klopfen?“\n... Ah, sie kann jetzt die Maske schon abnehmen."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passive Kernfähigkeit: Jagdinstinkt",
+            "DescriptionByLevel": {
+                "1": "Beim Auslösen des <color=#FFFFFF>verstärkten Spezialangriffs</color>, der <color=#FFFFFF>sukzessiven Hilfe</color>, des <color=#FFFFFF>Kettenangriffs</color> oder <color=#FFFFFF>Ultimates</color> betritt Pulchra den Zustand <color=#FFFFFF>„Jagdtrieb“</color> und die von ihr verursachte Benommenheit erhöht sich um <color=#2BAD00>15 %</color>, hält 6 s. Wenn zu einer anderen Figur gewechselt wird, während Pulchra noch im Zustand <color=#FFFFFF>„Jagdtrieb“</color> ist, wird dieser Zustand so lange dauern, bis Pulchra wieder eingewechselt wird. Wenn Pulchra als gesteuerte Figur im Zustand <color=#FFFFFF>„Jagdtrieb“</color> ist und einem Gegner einen heftigen Schlag zufügt, kann sie eine <color=#FFFFFF>schnelle Hilfe</color> durch die vorige Figur auslösen.",
+                "2": "Beim Auslösen des <color=#FFFFFF>verstärkten Spezialangriffs</color>, der <color=#FFFFFF>sukzessiven Hilfe</color>, des <color=#FFFFFF>Kettenangriffs</color> oder <color=#FFFFFF>Ultimates</color> betritt Pulchra den Zustand <color=#FFFFFF>„Jagdtrieb“</color> und die von ihr verursachte Benommenheit erhöht sich um <color=#2BAD00>17,5 %</color>, hält 6 s. Wenn zu einer anderen Figur gewechselt wird, während Pulchra noch im Zustand <color=#FFFFFF>„Jagdtrieb“</color> ist, wird dieser Zustand so lange dauern, bis Pulchra wieder eingewechselt wird. Wenn Pulchra als gesteuerte Figur im Zustand <color=#FFFFFF>„Jagdtrieb“</color> ist und einem Gegner einen heftigen Schlag zufügt, kann sie eine <color=#FFFFFF>schnelle Hilfe</color> durch die vorige Figur auslösen.",
+                "3": "Beim Auslösen des <color=#FFFFFF>verstärkten Spezialangriffs</color>, der <color=#FFFFFF>sukzessiven Hilfe</color>, des <color=#FFFFFF>Kettenangriffs</color> oder <color=#FFFFFF>Ultimates</color> betritt Pulchra den Zustand <color=#FFFFFF>„Jagdtrieb“</color> und die von ihr verursachte Benommenheit erhöht sich um <color=#2BAD00>20 %</color>, hält 6 s. Wenn zu einer anderen Figur gewechselt wird, während Pulchra noch im Zustand <color=#FFFFFF>„Jagdtrieb“</color> ist, wird dieser Zustand so lange dauern, bis Pulchra wieder eingewechselt wird. Wenn Pulchra als gesteuerte Figur im Zustand <color=#FFFFFF>„Jagdtrieb“</color> ist und einem Gegner einen heftigen Schlag zufügt, kann sie eine <color=#FFFFFF>schnelle Hilfe</color> durch die vorige Figur auslösen.",
+                "4": "Beim Auslösen des <color=#FFFFFF>verstärkten Spezialangriffs</color>, der <color=#FFFFFF>sukzessiven Hilfe</color>, des <color=#FFFFFF>Kettenangriffs</color> oder <color=#FFFFFF>Ultimates</color> betritt Pulchra den Zustand <color=#FFFFFF>„Jagdtrieb“</color> und die von ihr verursachte Benommenheit erhöht sich um <color=#2BAD00>22,5 %</color>, hält 6 s. Wenn zu einer anderen Figur gewechselt wird, während Pulchra noch im Zustand <color=#FFFFFF>„Jagdtrieb“</color> ist, wird dieser Zustand so lange dauern, bis Pulchra wieder eingewechselt wird. Wenn Pulchra als gesteuerte Figur im Zustand <color=#FFFFFF>„Jagdtrieb“</color> ist und einem Gegner einen heftigen Schlag zufügt, kann sie eine <color=#FFFFFF>schnelle Hilfe</color> durch die vorige Figur auslösen.",
+                "5": "Beim Auslösen des <color=#FFFFFF>verstärkten Spezialangriffs</color>, der <color=#FFFFFF>sukzessiven Hilfe</color>, des <color=#FFFFFF>Kettenangriffs</color> oder <color=#FFFFFF>Ultimates</color> betritt Pulchra den Zustand <color=#FFFFFF>„Jagdtrieb“</color> und die von ihr verursachte Benommenheit erhöht sich um <color=#2BAD00>25 %</color>, hält 6 s. Wenn zu einer anderen Figur gewechselt wird, während Pulchra noch im Zustand <color=#FFFFFF>„Jagdtrieb“</color> ist, wird dieser Zustand so lange dauern, bis Pulchra wieder eingewechselt wird. Wenn Pulchra als gesteuerte Figur im Zustand <color=#FFFFFF>„Jagdtrieb“</color> ist und einem Gegner einen heftigen Schlag zufügt, kann sie eine <color=#FFFFFF>schnelle Hilfe</color> durch die vorige Figur auslösen.",
+                "6": "Beim Auslösen des <color=#FFFFFF>verstärkten Spezialangriffs</color>, der <color=#FFFFFF>sukzessiven Hilfe</color>, des <color=#FFFFFF>Kettenangriffs</color> oder <color=#FFFFFF>Ultimates</color> betritt Pulchra den Zustand <color=#FFFFFF>„Jagdtrieb“</color> und die von ihr verursachte Benommenheit erhöht sich um <color=#2BAD00>27,5 %</color>, hält 6 s. Wenn zu einer anderen Figur gewechselt wird, während Pulchra noch im Zustand <color=#FFFFFF>„Jagdtrieb“</color> ist, wird dieser Zustand so lange dauern, bis Pulchra wieder eingewechselt wird. Wenn Pulchra als gesteuerte Figur im Zustand <color=#FFFFFF>„Jagdtrieb“</color> ist und einem Gegner einen heftigen Schlag zufügt, kann sie eine <color=#FFFFFF>schnelle Hilfe</color> durch die vorige Figur auslösen.",
+                "7": "Beim Auslösen des <color=#FFFFFF>verstärkten Spezialangriffs</color>, der <color=#FFFFFF>sukzessiven Hilfe</color>, des <color=#FFFFFF>Kettenangriffs</color> oder <color=#FFFFFF>Ultimates</color> betritt Pulchra den Zustand <color=#FFFFFF>„Jagdtrieb“</color> und die von ihr verursachte Benommenheit erhöht sich um <color=#2BAD00>30 %</color>, hält 6 s. Wenn zu einer anderen Figur gewechselt wird, während Pulchra noch im Zustand <color=#FFFFFF>„Jagdtrieb“</color> ist, wird dieser Zustand so lange dauern, bis Pulchra wieder eingewechselt wird. Wenn Pulchra als gesteuerte Figur im Zustand <color=#FFFFFF>„Jagdtrieb“</color> ist und einem Gegner einen heftigen Schlag zufügt, kann sie eine <color=#FFFFFF>schnelle Hilfe</color> durch die vorige Figur auslösen."
+            }
+        },
+        "MathSkill": {
+            "Title": "Zusatzfähigkeit: Geschäftspartnerin",
+            "Description": "Wenn sich in der Truppe eine <color=#FFFFFF>Attacke</color>- oder <color=#FFFFFF>Spaltung</color>-Figur befindet oder eine andere Figur derselben Fraktion angehört:\nBeim Treffen von Gegnern mit <color=#FFFFFF>Spezialangriff: Zerfleischende Klaue – Albtraumschatten</color>, <color=#FFFFFF>Verstärkter Spezialangriff: Zerfleischende Klaue – Blitzschritt</color>, <color=#FFFFFF>Sukzessive Hilfe: Unabhängige Preisgestaltung</color>, <color=#FFFFFF>Kettenangriff: Das kam unerwartet, was?</color> oder <color=#FFFFFF>Ultimate: Ist es Zeit zum Spielen?</color> wird ihnen der Effekt <color=#FFFFFF>„Fesselfalle“</color> verliehen, hält 15 s. Der <color=#FFFFFF>Nachschock</color>-SCH aller Einheiten gegen von <color=#FFFFFF>„Fesselfalle“</color> betroffene Ziele erhöht sich um 30 %."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "135100001": {
+                "Title": "Basisangriff: Flinker Schlag",
+                "Description": "Drücke <IconMap:Icon_Normal> zum Anwenden:\nFührt bis zu 3 Angriffe nach vorn aus und verursacht dabei <color=#F0D12B>phys. SCH</color>."
+            },
+            "135100002": {
+                "Title": "Basisangriff: Springender Schlag",
+                "Description": "Halte <IconMap:Icon_Normal> gedrückt zum Anwenden:\nSprintet nach vorn und führt mehrere Hiebe aus, die <color=#F0D12B>phys. SCH</color> verursachen."
+            },
+            "135110001": {
+                "Title": "Basisangriff: Flinker Schlag"
+            },
+            "135110002": {
+                "Description": "SCH-Multiplikator des 1. Angriffs",
+                "Param": "{Skill:1351001, Prop:1001}"
+            },
+            "135110003": {
+                "Description": "SCH-Multiplikator des 2. Angriffs",
+                "Param": "{Skill:1351002, Prop:1001}"
+            },
+            "135110004": {
+                "Description": "SCH-Multiplikator des 3. Angriffs",
+                "Param": "{Skill:1351003, Prop:1001}"
+            },
+            "135110005": {
+                "Description": "Benommenheit-Multiplikator des 1. Angriffs",
+                "Param": "{Skill:1351001, Prop:1002}"
+            },
+            "135110006": {
+                "Description": "Benommenheit-Multiplikator des 2. Angriffs",
+                "Param": "{Skill:1351002, Prop:1002}"
+            },
+            "135110007": {
+                "Description": "Benommenheit-Multiplikator des 3. Angriffs",
+                "Param": "{Skill:1351003, Prop:1002}"
+            },
+            "135110008": {
+                "Title": "Basisangriff: Springender Schlag"
+            },
+            "135110009": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1351004, Prop:1001}"
+            },
+            "135110010": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1351004, Prop:1002}"
+            }
+        },
+        "1": {
+            "135100003": {
+                "Title": "Spezialangriff: Zerfleischende Klaue",
+                "Description": "Drücke <IconMap:Icon_Special> zum Anwenden:\nFührt flinke Hiebe vor und zurück aus, die <color=#F0D12B>phys. SCH</color> verursachen.\nBeim Anwenden dieser Fähigkeit erhöht sich die Stufe des Unterbrechungs-WDS."
+            },
+            "135100004": {
+                "Title": "Spezialangriff: Zerfleischende Klaue – Albtraumschatten",
+                "Description": "Wenn Pulchra sich im Zustand <color=#FFFFFF>„Jagdtrieb“</color> befindet und eine andere gesteuerte Figur einen Gegner mit dem heftigen Schlag eines <color=#FFFFFF>Spezialangriffs</color> oder <color=#FFFFFF>verstärkten Spezialangriffs</color> trifft:\nBewegt sich vor und zurück und führt dabei Hiebe um den gezielten Gegner herum aus, die <color=#F0D12B>phys. SCH</color> verursachen.\nWenn nach Anwenden der Fähigkeit eine andere gesteuerte Figur einen Gegner trifft, wiederholt Pulchra den Angriff bis zu 5-mal, wobei der letzte Angriff nun ein kraftvollerer Gnadenstoß ist.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar.\n<color=#FFFFFF>Spezialangriff: Zerfleischende Klaue – Albtraumschatten</color> gilt als <color=#FFFFFF>Nachschock</color>."
+            },
+            "135100005": {
+                "Title": "Verstärkter Spezialangriff: Zerfleischende Klaue – Blitzschritt",
+                "Description": "Drücke bei ausreichender Energie <IconMap:Icon_SpecialReady> zum Anwenden:\nFührt mehrere Hiebe vor und zurück aus, die hohen <color=#F0D12B>phys. SCH</color> verursachen.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "135110011": {
+                "Title": "Spezialangriff: Zerfleischende Klaue"
+            },
+            "135110012": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1351005, Prop:1001}"
+            },
+            "135110013": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1351005, Prop:1002}"
+            },
+            "135110014": {
+                "Title": "Spezialangriff: Zerfleischende Klaue – Albtraumschatten"
+            },
+            "135110015": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1351006, Prop:1001}"
+            },
+            "135110016": {
+                "Description": "SCH-Multiplikator für Gnadenstöße",
+                "Param": "{Skill:1351007, Prop:1001}"
+            },
+            "135110017": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1351006, Prop:1002}"
+            },
+            "135110018": {
+                "Description": "Benommenheit-Multiplikator für Gnadenstöße",
+                "Param": "{Skill:1351007, Prop:1002}"
+            },
+            "135110019": {
+                "Title": "Verstärkter Spezialangriff: Zerfleischende Klaue – Blitzschritt"
+            },
+            "135110020": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1351008, Prop:1001}"
+            },
+            "135110021": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1351008, Prop:1002}"
+            },
+            "135110022": {
+                "Description": "Energiekosten",
+                "Param": "60 Pkt."
+            }
+        },
+        "2": {
+            "135100006": {
+                "Title": "Ausweichen: Wendungsschuss",
+                "Description": "Drücke <IconMap:Icon_Evade> zum Anwenden:\nEin blitzschnelles Sprintausweichen.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "135100007": {
+                "Title": "Sprintangriff: Erstschlagvorteil",
+                "Description": "Drücke beim Ausweichen <IconMap:Icon_Normal> zum Anwenden:\nSprintet nach vorn und führt Hiebe aus, die <color=#F0D12B>phys. SCH</color> verursachen."
+            },
+            "135100008": {
+                "Title": "Ausweichkonter: Unerbitterliche Rache",
+                "Description": "Drücke nach Auslösen eines <color=#FFFFFF>perfekten Ausweichens</color> <IconMap:Icon_Normal> zum Anwenden:\nFührt einen Stoß gegen Gegner vor sich aus, gefolgt von einem raschen Hieb, und verursacht <color=#F0D12B>phys. SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "135110023": {
+                "Title": "Sprintangriff: Erstschlagvorteil"
+            },
+            "135110024": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1351009, Prop:1001}"
+            },
+            "135110025": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1351009, Prop:1002}"
+            },
+            "135110026": {
+                "Title": "Ausweichkonter: Unerbitterliche Rache"
+            },
+            "135110027": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1351010, Prop:1001}"
+            },
+            "135110028": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1351010, Prop:1002}"
+            }
+        },
+        "3": {
+            "135100009": {
+                "Title": "Kettenangriff: Das kam unerwartet, was?",
+                "Description": "Wähle beim Auslösen eines <color=#FFFFFF>Kettenangriffs</color> die entsprechende Figur zum Anwenden:\nFührt einen aufgeladenen Schuss nach vorn aus, der hohen <color=#F0D12B>phys. SCH</color> verursacht.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "135100010": {
+                "Title": "Ultimate: Ist es Zeit zum Spielen?",
+                "Description": "Drücke beim Erreichen der Dezibelstufe <color=#FFFFFF>Maximum</color> <IconMap:Icon_UltimateReady> zum Anwenden:\nFührt einen kraftvollen Schuss mit großer Reichweite gegen Gegner vor sich aus, der hohen <color=#F0D12B>phys. SCH</color> verursacht.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "135110029": {
+                "Title": "Kettenangriff: Das kam unerwartet, was?"
+            },
+            "135110030": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1351011, Prop:1001}"
+            },
+            "135110031": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1351011, Prop:1002}"
+            },
+            "135110032": {
+                "Title": "Ultimate: Ist es Zeit zum Spielen?"
+            },
+            "135110033": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1351012, Prop:1001}"
+            },
+            "135110034": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1351012, Prop:1002}"
+            }
+        },
+        "6": {
+            "135100012": {
+                "Title": "Schnelle Hilfe: Unter Vertrag – Leibwächterin",
+                "Description": "Drücke, wenn die gesteuerte Figur weggeschleudert wird, <IconMap:Icon_Switch> zum Anwenden:\nFührt einen Stoß gegen Gegner vor sich aus, gefolgt von einem raschen Hieb, und verursacht <color=#F0D12B>phys. SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "135100013": {
+                "Title": "Ausweichhilfe: Unter Vertrag – Externe Kämpferin",
+                "Description": "Drücke, wenn die Figur auf dem Feld gleich angegriffen wird, <IconMap:Icon_Switch> zum Anwenden:\nWeicht gegnerischen Angriffen aus und löst dabei die <color=#FFFFFF>Scharfsicht</color> aus.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "135100014": {
+                "Title": "Sukzessive Hilfe: Unabhängige Preisgestaltung",
+                "Description": "Drücke nach einer <color=#FFFFFF>Ausweichhilfe</color> <IconMap:Icon_Normal> zum Anwenden:\nSpringt vorwärts in die Luft, schießt und verursacht <color=#F0D12B>phys. SCH</color>.\nVerbraucht beim Anwenden der Fähigkeit 1 <color=#FFFFFF>Hilfspunkt</color>, um den Zustand <color=#FFFFFF>Jagdtrieb</color> zu betreten.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "135110035": {
+                "Title": "Schnelle Hilfe: Unter Vertrag – Leibwächterin"
+            },
+            "135110036": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1351013, Prop:1001}"
+            },
+            "135110037": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1351013, Prop:1002}"
+            },
+            "135110038": {
+                "Title": "Sukzessive Hilfe: Unabhängige Preisgestaltung"
+            },
+            "135110039": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1351014, Prop:1001}"
+            },
+            "135110040": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1351014, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1351001": {
+            "DamageValue": 3570,
+            "DamageGrowth": 330,
+            "DazeValue": 2850,
+            "DazeGrowth": 130
+        },
+        "1351002": {
+            "DamageValue": 9410,
+            "DamageGrowth": 860,
+            "DazeValue": 7530,
+            "DazeGrowth": 350
+        },
+        "1351003": {
+            "DamageValue": 16760,
+            "DamageGrowth": 1530,
+            "DazeValue": 13410,
+            "DazeGrowth": 610
+        },
+        "1351004": {
+            "DamageValue": 13500,
+            "DamageGrowth": 1230,
+            "DazeValue": 10800,
+            "DazeGrowth": 500
+        },
+        "1351005": {
+            "DamageValue": 2510,
+            "DamageGrowth": 230,
+            "DazeValue": 5010,
+            "DazeGrowth": 230
+        },
+        "1351006": {
+            "DamageValue": 4630,
+            "DamageGrowth": 430,
+            "DazeValue": 2900,
+            "DazeGrowth": 140
+        },
+        "1351007": {
+            "DamageValue": 5350,
+            "DamageGrowth": 490,
+            "DazeValue": 3480,
+            "DazeGrowth": 160
+        },
+        "1351008": {
+            "DamageValue": 34770,
+            "DamageGrowth": 3170,
+            "DazeValue": 21170,
+            "DazeGrowth": 970
+        },
+        "1351009": {
+            "DamageValue": 4830,
+            "DamageGrowth": 440,
+            "DazeValue": 2420,
+            "DazeGrowth": 110
+        },
+        "1351010": {
+            "DamageValue": 20180,
+            "DamageGrowth": 1840,
+            "DazeValue": 17830,
+            "DazeGrowth": 820
+        },
+        "1351011": {
+            "DamageValue": 53410,
+            "DamageGrowth": 4860,
+            "DazeValue": 13510,
+            "DazeGrowth": 620
+        },
+        "1351012": {
+            "DamageValue": 139380,
+            "DamageGrowth": 12680,
+            "DazeValue": 88230,
+            "DazeGrowth": 4020
+        },
+        "1351013": {
+            "DamageValue": 7830,
+            "DamageGrowth": 720,
+            "DazeValue": 7830,
+            "DazeGrowth": 360
+        },
+        "1351014": {
+            "DamageValue": 30710,
+            "DamageGrowth": 2800,
+            "DazeValue": 26530,
+            "DazeGrowth": 1210
+        }
+    }
+}

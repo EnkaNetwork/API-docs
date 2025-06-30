@@ -1,0 +1,532 @@
+{
+    "Name": "Lighter",
+    "ElementTypes": [
+        "Fire"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "The Champion",
+            "Description": "Among the debuffs imposed by <color=#FFFFFF>Core Passive: Accelerant</color>, the <color=#FFFFFF>Collapse</color> effect increases Stun duration by 5s, while further reducing <color=#98EFF0>Ice RES</color> and <color=#FF5521>Fire RES</color> by 10%. The more powerful Finishing Move that follows when Lighter's <color=#FFFFFF>Morale</color> is completely exhausted during a startup light punch or jab combo deals 30% increased DMG.",
+            "Lore": "Victory for the champion is crucial. By facing off against the strongest fighter from the opposing side, he eliminates the threat to his leader — bringing an immense morale uplift to the team.\nFor him, only victory deserves recognition.\n\"The Champion cannot be defeated.\""
+        },
+        "2": {
+            "Title": "Red Scarf",
+            "Description": "When applying <color=#FFFFFF>Collapse</color> via <color=#FFFFFF>Core Passive: Accelerant</color> to enemies, the target's Stun DMG Multiplier increases by 25%. The increase to <color=#98EFF0>Ice DMG</color> and <color=#FF5521>Fire DMG</color> provided by <color=#FFFFFF>Elation</color> from <color=#FFFFFF>Additional Ability: Fighting Spirit</color> increases to 120% of the original.",
+            "Lore": "As the \"Red Scarf\" of the Sons of Calydon, Lighter is quite famous in the Outer Ring, and not just because of his fists, but also due to... his unique way of speaking.\n\"I enjoy taking it easy... but you wouldn't manage without me, would you?\""
+        },
+        "3": {
+            "Title": "Mercenary Leader",
+            "Description": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2",
+            "Lore": "\"I'm probably the last person anyone should pick as their leader.\""
+        },
+        "4": {
+            "Title": "Sunglasses",
+            "Description": "When Lighter is off-field, the Energy Regen for the on-field character is increased by 10%. Upon entering the <color=#FFFFFF>Morale Burst</color> state, Lighter restores 4 Energy for off-field characters. This effect can trigger once every 18s.",
+            "Lore": "\"You're asking why I wear sunglasses? Uh... it's because I get queasy at the sight of blood, I guess.\""
+        },
+        "5": {
+            "Title": "Decision Maker",
+            "Description": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2",
+            "Lore": "\"Give me an order, and I'll carry it out. It's that simple.\"\nLighter adjusted his sunglasses with a carefree smile.\n\"Just don't put me in charge of making decisions.\""
+        },
+        "6": {
+            "Title": "Survivor",
+            "Description": "Lighter's <color=#FFFFFF>Morale</color> recovery efficiency is increased to 200% of its original value. When Lighter lands a heavy strike on enemies during a <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge Counter</color>, <color=#FFFFFF>Special Attack</color>, <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Quick Assist</color>, <color=#FFFFFF>Assist Follow-Up</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, it will trigger the <color=#FFFFFF>Blazing Impact</color> effect, dealing 250% of ATK as <color=#FF5521>Fire DMG</color>. This effect can trigger once every 8s on each enemy. If Lighter's Impact exceeds 170 points, each additional point will further increase the multiplier of <color=#FFFFFF>Blazing Impact</color> by 5%, up to a maximum increase of 500%. The more powerful Finishing Move that follows when Lighter's <color=#FFFFFF>Morale</color> is completely exhausted during a light punch or jab combo will trigger an additional activation of <color=#FFFFFF>Blazing Impact</color> when hitting an enemy, ignoring the effect's cooldown.",
+            "Lore": "If given the chance to do it all over again, he would never opt to be the only survivor.\nUnfortunately, fate is rarely a choice."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Core Passive: Accelerant",
+            "DescriptionByLevel": {
+                "1": "Lighter automatically gains <color=#FFFFFF>Morale</color> over time, at a rate of 2.9 points per second. For each point of Energy consumed by any squad member, Lighter recovers an additional 0.26 <color=#FFFFFF>Morale</color>, up to a maximum of 100. When <color=#FFFFFF>Morale</color> reaches 80, the next time Lighter switches into battle he immediately launches a <color=#FFFFFF>Quick Assist</color>. Once <color=#FFFFFF>Morale</color> is 80 or higher, executing the 5th hit of his <color=#FFFFFF>Basic Attack</color> puts Lighter in the <color=#FFFFFF>Morale Burst</color> state, enhancing the power of the startup light punch, jab combo, and the Finishing Move of the 5th hit of his <color=#FFFFFF>Basic Attack</color>. When a skill hits an enemy with its power increased, it will continuously consume <color=#FFFFFF>Morale</color>. With every 10 points of <color=#FFFFFF>Morale</color> consumed, Lighter's Impact increases by <color=#2BAD00>1%</color>, up to a maximum increase of <color=#2BAD00>10%</color>, and lasting 6s.\nIn the <color=#FFFFFF>Morale Burst</color> state, Lighter will no longer automatically gain <color=#FFFFFF>Morale</color> over time. If his <color=#FFFFFF>Morale</color> is exhausted during a startup light punch or jab combo, he will automatically follow up with a more powerful Finishing Move.\nIn the <color=#FFFFFF>Morale Burst</color> state, when startup light punches or jab combos hit enemies, the target's <color=#98EFF0>Ice RES</color> and <color=#FF5521>Fire RES</color> are reduced by 15%, lasting 30s.\nIn the <color=#FFFFFF>Morale Burst</color> state, when the Finishing Move hits an enemy, it applies the <color=#FFFFFF>Collapse</color> effect on the target, extending its Stunned duration by 3s. The <color=#FFFFFF>Collapse</color> effect can trigger only once on the same target before they recover from Stun.\nWhen the Finishing Move of the 5th hit of his <color=#FFFFFF>Basic Attack</color> hits an enemy, when he switches off field, or when his <color=#FFFFFF>Morale</color> runs out, Lighter will leave the <color=#FFFFFF>Morale Burst</color> state, keeping any unspent <color=#FFFFFF>Morale</color>.",
+                "2": "Lighter automatically gains <color=#FFFFFF>Morale</color> over time, at a rate of 2.9 points per second. For each point of Energy consumed by any squad member, Lighter recovers an additional 0.26 <color=#FFFFFF>Morale</color>, up to a maximum of 100. When <color=#FFFFFF>Morale</color> reaches 80, the next time Lighter switches into battle he immediately launches a <color=#FFFFFF>Quick Assist</color>. Once <color=#FFFFFF>Morale</color> is 80 or higher, executing the 5th hit of his <color=#FFFFFF>Basic Attack</color> puts Lighter in the <color=#FFFFFF>Morale Burst</color> state, enhancing the power of the startup light punch, jab combo, and the Finishing Move of the 5th hit of his <color=#FFFFFF>Basic Attack</color>. When a skill hits an enemy with its power increased, it will continuously consume <color=#FFFFFF>Morale</color>. With every 10 points of <color=#FFFFFF>Morale</color> consumed, Lighter's Impact increases by <color=#2BAD00>1.17%</color>, up to a maximum increase of <color=#2BAD00>11.7%</color>, and lasting 6s.\nIn the <color=#FFFFFF>Morale Burst</color> state, Lighter will no longer automatically gain <color=#FFFFFF>Morale</color> over time. If his <color=#FFFFFF>Morale</color> is exhausted during a startup light punch or jab combo, he will automatically follow up with a more powerful Finishing Move.\nIn the <color=#FFFFFF>Morale Burst</color> state, when startup light punches or jab combos hit enemies, the target's <color=#98EFF0>Ice RES</color> and <color=#FF5521>Fire RES</color> are reduced by 15%, lasting 30s.\nIn the <color=#FFFFFF>Morale Burst</color> state, when the Finishing Move hits an enemy, it applies the <color=#FFFFFF>Collapse</color> effect on the target, extending its Stunned duration by 3s. The <color=#FFFFFF>Collapse</color> effect can trigger only once on the same target before they recover from Stun.\nWhen the Finishing Move of the 5th hit of his <color=#FFFFFF>Basic Attack</color> hits an enemy, when he switches off field, or when his <color=#FFFFFF>Morale</color> runs out, Lighter will leave the <color=#FFFFFF>Morale Burst</color> state, keeping any unspent <color=#FFFFFF>Morale</color>.",
+                "3": "Lighter automatically gains <color=#FFFFFF>Morale</color> over time, at a rate of 2.9 points per second. For each point of Energy consumed by any squad member, Lighter recovers an additional 0.26 <color=#FFFFFF>Morale</color>, up to a maximum of 100. When <color=#FFFFFF>Morale</color> reaches 80, the next time Lighter switches into battle he immediately launches a <color=#FFFFFF>Quick Assist</color>. Once <color=#FFFFFF>Morale</color> is 80 or higher, executing the 5th hit of his <color=#FFFFFF>Basic Attack</color> puts Lighter in the <color=#FFFFFF>Morale Burst</color> state, enhancing the power of the startup light punch, jab combo, and the Finishing Move of the 5th hit of his <color=#FFFFFF>Basic Attack</color>. When a skill hits an enemy with its power increased, it will continuously consume <color=#FFFFFF>Morale</color>. With every 10 points of <color=#FFFFFF>Morale</color> consumed, Lighter's Impact increases by <color=#2BAD00>1.33%</color>, up to a maximum increase of <color=#2BAD00>13.3%</color>, and lasting 6s.\nIn the <color=#FFFFFF>Morale Burst</color> state, Lighter will no longer automatically gain <color=#FFFFFF>Morale</color> over time. If his <color=#FFFFFF>Morale</color> is exhausted during a startup light punch or jab combo, he will automatically follow up with a more powerful Finishing Move.\nIn the <color=#FFFFFF>Morale Burst</color> state, when startup light punches or jab combos hit enemies, the target's <color=#98EFF0>Ice RES</color> and <color=#FF5521>Fire RES</color> are reduced by 15%, lasting 30s.\nIn the <color=#FFFFFF>Morale Burst</color> state, when the Finishing Move hits an enemy, it applies the <color=#FFFFFF>Collapse</color> effect on the target, extending its Stunned duration by 3s. The <color=#FFFFFF>Collapse</color> effect can trigger only once on the same target before they recover from Stun.\nWhen the Finishing Move of the 5th hit of his <color=#FFFFFF>Basic Attack</color> hits an enemy, when he switches off field, or when his <color=#FFFFFF>Morale</color> runs out, Lighter will leave the <color=#FFFFFF>Morale Burst</color> state, keeping any unspent <color=#FFFFFF>Morale</color>.",
+                "4": "Lighter automatically gains <color=#FFFFFF>Morale</color> over time, at a rate of 2.9 points per second. For each point of Energy consumed by any squad member, Lighter recovers an additional 0.26 <color=#FFFFFF>Morale</color>, up to a maximum of 100. When <color=#FFFFFF>Morale</color> reaches 80, the next time Lighter switches into battle he immediately launches a <color=#FFFFFF>Quick Assist</color>. Once <color=#FFFFFF>Morale</color> is 80 or higher, executing the 5th hit of his <color=#FFFFFF>Basic Attack</color> puts Lighter in the <color=#FFFFFF>Morale Burst</color> state, enhancing the power of the startup light punch, jab combo, and the Finishing Move of the 5th hit of his <color=#FFFFFF>Basic Attack</color>. When a skill hits an enemy with its power increased, it will continuously consume <color=#FFFFFF>Morale</color>. With every 10 points of <color=#FFFFFF>Morale</color> consumed, Lighter's Impact increases by <color=#2BAD00>1.5%</color>, up to a maximum increase of <color=#2BAD00>15%</color>, and lasting 6s.\nIn the <color=#FFFFFF>Morale Burst</color> state, Lighter will no longer automatically gain <color=#FFFFFF>Morale</color> over time. If his <color=#FFFFFF>Morale</color> is exhausted during a startup light punch or jab combo, he will automatically follow up with a more powerful Finishing Move.\nIn the <color=#FFFFFF>Morale Burst</color> state, when startup light punches or jab combos hit enemies, the target's <color=#98EFF0>Ice RES</color> and <color=#FF5521>Fire RES</color> are reduced by 15%, lasting 30s.\nIn the <color=#FFFFFF>Morale Burst</color> state, when the Finishing Move hits an enemy, it applies the <color=#FFFFFF>Collapse</color> effect on the target, extending its Stunned duration by 3s. The <color=#FFFFFF>Collapse</color> effect can trigger only once on the same target before they recover from Stun.\nWhen the Finishing Move of the 5th hit of his <color=#FFFFFF>Basic Attack</color> hits an enemy, when he switches off field, or when his <color=#FFFFFF>Morale</color> runs out, Lighter will leave the <color=#FFFFFF>Morale Burst</color> state, keeping any unspent <color=#FFFFFF>Morale</color>.",
+                "5": "Lighter automatically gains <color=#FFFFFF>Morale</color> over time, at a rate of 2.9 points per second. For each point of Energy consumed by any squad member, Lighter recovers an additional 0.26 <color=#FFFFFF>Morale</color>, up to a maximum of 100. When <color=#FFFFFF>Morale</color> reaches 80, the next time Lighter switches into battle he immediately launches a <color=#FFFFFF>Quick Assist</color>. Once <color=#FFFFFF>Morale</color> is 80 or higher, executing the 5th hit of his <color=#FFFFFF>Basic Attack</color> puts Lighter in the <color=#FFFFFF>Morale Burst</color> state, enhancing the power of the startup light punch, jab combo, and the Finishing Move of the 5th hit of his <color=#FFFFFF>Basic Attack</color>. When a skill hits an enemy with its power increased, it will continuously consume <color=#FFFFFF>Morale</color>. With every 10 points of <color=#FFFFFF>Morale</color> consumed, Lighter's Impact increases by <color=#2BAD00>1.67%</color>, up to a maximum increase of <color=#2BAD00>16.7%</color>, and lasting 6s.\nIn the <color=#FFFFFF>Morale Burst</color> state, Lighter will no longer automatically gain <color=#FFFFFF>Morale</color> over time. If his <color=#FFFFFF>Morale</color> is exhausted during a startup light punch or jab combo, he will automatically follow up with a more powerful Finishing Move.\nIn the <color=#FFFFFF>Morale Burst</color> state, when startup light punches or jab combos hit enemies, the target's <color=#98EFF0>Ice RES</color> and <color=#FF5521>Fire RES</color> are reduced by 15%, lasting 30s.\nIn the <color=#FFFFFF>Morale Burst</color> state, when the Finishing Move hits an enemy, it applies the <color=#FFFFFF>Collapse</color> effect on the target, extending its Stunned duration by 3s. The <color=#FFFFFF>Collapse</color> effect can trigger only once on the same target before they recover from Stun.\nWhen the Finishing Move of the 5th hit of his <color=#FFFFFF>Basic Attack</color> hits an enemy, when he switches off field, or when his <color=#FFFFFF>Morale</color> runs out, Lighter will leave the <color=#FFFFFF>Morale Burst</color> state, keeping any unspent <color=#FFFFFF>Morale</color>.",
+                "6": "Lighter automatically gains <color=#FFFFFF>Morale</color> over time, at a rate of 2.9 points per second. For each point of Energy consumed by any squad member, Lighter recovers an additional 0.26 <color=#FFFFFF>Morale</color>, up to a maximum of 100. When <color=#FFFFFF>Morale</color> reaches 80, the next time Lighter switches into battle he immediately launches a <color=#FFFFFF>Quick Assist</color>. Once <color=#FFFFFF>Morale</color> is 80 or higher, executing the 5th hit of his <color=#FFFFFF>Basic Attack</color> puts Lighter in the <color=#FFFFFF>Morale Burst</color> state, enhancing the power of the startup light punch, jab combo, and the Finishing Move of the 5th hit of his <color=#FFFFFF>Basic Attack</color>. When a skill hits an enemy with its power increased, it will continuously consume <color=#FFFFFF>Morale</color>. With every 10 points of <color=#FFFFFF>Morale</color> consumed, Lighter's Impact increases by <color=#2BAD00>1.83%</color>, up to a maximum increase of <color=#2BAD00>18.3%</color>, and lasting 6s.\nIn the <color=#FFFFFF>Morale Burst</color> state, Lighter will no longer automatically gain <color=#FFFFFF>Morale</color> over time. If his <color=#FFFFFF>Morale</color> is exhausted during a startup light punch or jab combo, he will automatically follow up with a more powerful Finishing Move.\nIn the <color=#FFFFFF>Morale Burst</color> state, when startup light punches or jab combos hit enemies, the target's <color=#98EFF0>Ice RES</color> and <color=#FF5521>Fire RES</color> are reduced by 15%, lasting 30s.\nIn the <color=#FFFFFF>Morale Burst</color> state, when the Finishing Move hits an enemy, it applies the <color=#FFFFFF>Collapse</color> effect on the target, extending its Stunned duration by 3s. The <color=#FFFFFF>Collapse</color> effect can trigger only once on the same target before they recover from Stun.\nWhen the Finishing Move of the 5th hit of his <color=#FFFFFF>Basic Attack</color> hits an enemy, when he switches off field, or when his <color=#FFFFFF>Morale</color> runs out, Lighter will leave the <color=#FFFFFF>Morale Burst</color> state, keeping any unspent <color=#FFFFFF>Morale</color>.",
+                "7": "Lighter automatically gains <color=#FFFFFF>Morale</color> over time, at a rate of 2.9 points per second. For each point of Energy consumed by any squad member, Lighter recovers an additional 0.26 <color=#FFFFFF>Morale</color>, up to a maximum of 100. When <color=#FFFFFF>Morale</color> reaches 80, the next time Lighter switches into battle he immediately launches a <color=#FFFFFF>Quick Assist</color>. Once <color=#FFFFFF>Morale</color> is 80 or higher, executing the 5th hit of his <color=#FFFFFF>Basic Attack</color> puts Lighter in the <color=#FFFFFF>Morale Burst</color> state, enhancing the power of the startup light punch, jab combo, and the Finishing Move of the 5th hit of his <color=#FFFFFF>Basic Attack</color>. When a skill hits an enemy with its power increased, it will continuously consume <color=#FFFFFF>Morale</color>. With every 10 points of <color=#FFFFFF>Morale</color> consumed, Lighter's Impact increases by <color=#2BAD00>2%</color>, up to a maximum increase of <color=#2BAD00>20%</color>, and lasting 6s.\nIn the <color=#FFFFFF>Morale Burst</color> state, Lighter will no longer automatically gain <color=#FFFFFF>Morale</color> over time. If his <color=#FFFFFF>Morale</color> is exhausted during a startup light punch or jab combo, he will automatically follow up with a more powerful Finishing Move.\nIn the <color=#FFFFFF>Morale Burst</color> state, when startup light punches or jab combos hit enemies, the target's <color=#98EFF0>Ice RES</color> and <color=#FF5521>Fire RES</color> are reduced by 15%, lasting 30s.\nIn the <color=#FFFFFF>Morale Burst</color> state, when the Finishing Move hits an enemy, it applies the <color=#FFFFFF>Collapse</color> effect on the target, extending its Stunned duration by 3s. The <color=#FFFFFF>Collapse</color> effect can trigger only once on the same target before they recover from Stun.\nWhen the Finishing Move of the 5th hit of his <color=#FFFFFF>Basic Attack</color> hits an enemy, when he switches off field, or when his <color=#FFFFFF>Morale</color> runs out, Lighter will leave the <color=#FFFFFF>Morale Burst</color> state, keeping any unspent <color=#FFFFFF>Morale</color>."
+            }
+        },
+        "MathSkill": {
+            "Title": "Additional Ability: Fighting Spirit",
+            "Description": "When another character in your squad is an <color=#FFFFFF>Attack</color> character or shares the same Faction:\nWhile under the <color=#FFFFFF>Morale Burst</color> state, when the 5th hit of Lighter's <color=#FFFFFF>Basic Attack</color> hits an enemy, all squad members gain a stack of <color=#FFFFFF>Elation</color>, stacking up to 20 times and lasting 30s. Repeated triggers reset the duration. For each stack of <color=#FFFFFF>Elation</color>, an Agent's <color=#98EFF0>Ice DMG</color> and <color=#FF5521>Fire DMG</color> increase by 1.25%.\nWhen obtaining <color=#FFFFFF>Elation</color>, if Lighter's Impact exceeds 170, every additional 10 points of Impact will increase the buff effect provided by each stack of <color=#FFFFFF>Elation</color> by an extra 0.25%. When any squad member launches a <color=#FFFFFF>Chain Attack</color>, it will refresh the duration of all squad members' <color=#FFFFFF>Elation</color>. <color=#FFFFFF>Elation</color> can increase the <color=#98EFF0>Ice DMG</color> and <color=#FF5521>Fire DMG</color> of Agents by a maximum of 75%."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "116100001": {
+                "Title": "Basic Attack: L-Form Thundering Fist",
+                "Description": "Press or hold <IconMap:Icon_Normal> to activate:\nPerform up to five forward strikes, dealing <color=#F0D12B>Physical DMG</color> and <color=#FF5521>Fire DMG</color>.\nDuring the 3rd hit of the <color=#FFFFFF>Basic Attack</color>, drag the {LAYOUT_CONSOLECONTROLLER#stick}{LAYOUT_FALLBACK#joystick}, and repeatedly press or hold <IconMap:Icon_Normal> to unleash a series of melee follow-up attacks. Release the {LAYOUT_CONSOLECONTROLLER#stick}{LAYOUT_FALLBACK#joystick} to follow up with the 4th hit of the <color=#FFFFFF>Basic Attack</color>.\nWhile performing the startup light punch in the 5th hit of the <color=#FFFFFF>Basic Attack</color>, drag the {LAYOUT_CONSOLECONTROLLER#stick}{LAYOUT_FALLBACK#joystick} and repeatedly press or hold <IconMap:Icon_Normal> to keep alternating between the light punch and 4th hit of the <color=#FFFFFF>Basic Attack</color>. Release the {LAYOUT_CONSOLECONTROLLER#stick}{LAYOUT_FALLBACK#joystick} to follow up with the subsequent jab combo.\nContinue repeatedly pressing or holding <IconMap:Icon_Normal> to extend the duration of the jab combo.\nWhen you stop pressing or holding <IconMap:Icon_Normal>, or when the combo reaches its maximum duration, launches a Finishing Move forward. Lighter is invulnerable during the Finishing Move.\nDuring the 5th hit of the <color=#FFFFFF>Basic Attack</color>, Lighter takes 40% less DMG.\nWhile in the <color=#FFFFFF>Morale Burst</color> state, Anti-Interrupt Level is increased during the 5th hit of his <color=#FFFFFF>Basic Attack</color>, and the DMG reduction effect is increased to 80%."
+            },
+            "116110001": {
+                "Title": "Basic Attack: L-Form Thundering Fist"
+            },
+            "116110002": {
+                "Description": "1st-Hit DMG Multiplier",
+                "Param": "{Skill:1161001, Prop:1001}"
+            },
+            "116110003": {
+                "Description": "2nd-Hit DMG Multiplier",
+                "Param": "{Skill:1161002, Prop:1001}"
+            },
+            "116110004": {
+                "Description": "3rd-Hit DMG Multiplier",
+                "Param": "{Skill:1161003, Prop:1001}"
+            },
+            "116110005": {
+                "Description": "Follow-Up 1st-Hit DMG Multiplier",
+                "Param": "{Skill:1161004, Prop:1001}"
+            },
+            "116110006": {
+                "Description": "Follow-Up 2nd-Hit DMG Multiplier",
+                "Param": "{Skill:1161005, Prop:1001}"
+            },
+            "116110007": {
+                "Description": "Follow-Up 3rd-Hit DMG Multiplier",
+                "Param": "{Skill:1161006, Prop:1001}"
+            },
+            "116110008": {
+                "Description": "Follow-Up 4th-Hit DMG Multiplier",
+                "Param": "{Skill:1161007, Prop:1001}"
+            },
+            "116110009": {
+                "Description": "Follow-Up 5th-Hit DMG Multiplier",
+                "Param": "{Skill:1161008, Prop:1001}"
+            },
+            "116110010": {
+                "Description": "4th-Hit DMG Multiplier",
+                "Param": "{Skill:1161009, Prop:1001}"
+            },
+            "116110011": {
+                "Description": "5th-Hit Startup DMG Multiplier",
+                "Param": "{Skill:1161010, Prop:1001}"
+            },
+            "116110012": {
+                "Description": "5th-Hit Combo DMG Multiplier",
+                "Param": "{Skill:1161011, Prop:1001}"
+            },
+            "116110013": {
+                "Description": "5th-Hit Finisher DMG Multiplier",
+                "Param": "{Skill:1161012, Prop:1001}"
+            },
+            "116110014": {
+                "Description": "5th-Hit Startup DMG Multiplier (Morale Burst)",
+                "Param": "{Skill:1161026, Prop:1001}"
+            },
+            "116110015": {
+                "Description": "5th-Hit Combo DMG Multiplier (Morale Burst)",
+                "Param": "{Skill:1161027, Prop:1001}"
+            },
+            "116110016": {
+                "Description": "5th-Hit Finisher DMG Multiplier (Morale Burst)",
+                "Param": "{Skill:1161028, Prop:1001}"
+            },
+            "116110017": {
+                "Description": "5th-Hit Powerful Finisher DMG Multiplier (Morale Burst)",
+                "Param": "{Skill:1161025, Prop:1001}"
+            },
+            "116110018": {
+                "Description": "1st-Hit Daze Multiplier",
+                "Param": "{Skill:1161001, Prop:1002}"
+            },
+            "116110019": {
+                "Description": "2nd-Hit Daze Multiplier",
+                "Param": "{Skill:1161002, Prop:1002}"
+            },
+            "116110020": {
+                "Description": "3rd-Hit Daze Multiplier",
+                "Param": "{Skill:1161003, Prop:1002}"
+            },
+            "116110021": {
+                "Description": "Follow-Up 1st-Hit Daze Multiplier",
+                "Param": "{Skill:1161004, Prop:1002}"
+            },
+            "116110022": {
+                "Description": "Follow-Up 2nd-Hit Daze Multiplier",
+                "Param": "{Skill:1161005, Prop:1002}"
+            },
+            "116110023": {
+                "Description": "Follow-Up 3rd-Hit Daze Multiplier",
+                "Param": "{Skill:1161006, Prop:1002}"
+            },
+            "116110024": {
+                "Description": "Follow-Up 4th-Hit Daze Multiplier",
+                "Param": "{Skill:1161007, Prop:1002}"
+            },
+            "116110025": {
+                "Description": "Follow-Up 5th-Hit Daze Multiplier",
+                "Param": "{Skill:1161008, Prop:1002}"
+            },
+            "116110026": {
+                "Description": "4th-Hit Daze Multiplier",
+                "Param": "{Skill:1161009, Prop:1002}"
+            },
+            "116110027": {
+                "Description": "5th-Hit Startup Daze Multiplier",
+                "Param": "{Skill:1161010, Prop:1002}"
+            },
+            "116110028": {
+                "Description": "5th-Hit Combo Daze Multiplier",
+                "Param": "{Skill:1161011, Prop:1002}"
+            },
+            "116110029": {
+                "Description": "5th-Hit Finisher Daze Multiplier",
+                "Param": "{Skill:1161012, Prop:1002}"
+            },
+            "116110030": {
+                "Description": "5th-Hit Startup Daze Multiplier (Morale Burst)",
+                "Param": "{Skill:1161026, Prop:1002}"
+            },
+            "116110031": {
+                "Description": "5th-Hit Combo Daze Multiplier (Morale Burst)",
+                "Param": "{Skill:1161027, Prop:1002}"
+            },
+            "116110032": {
+                "Description": "5th-Hit Finisher Daze Multiplier (Morale Burst)",
+                "Param": "{Skill:1161028, Prop:1002}"
+            },
+            "116110033": {
+                "Description": "5th-Hit Powerful Finisher Daze Multiplier (Morale Burst)",
+                "Param": "{Skill:1161025, Prop:1002}"
+            }
+        },
+        "1": {
+            "116100002": {
+                "Title": "Special Attack: V-Form Sunrise Uppercut",
+                "Description": "Press <IconMap:Icon_Special> to activate:\nStrikes enemies in front with an uppercut, dealing <color=#FF5521>Fire DMG</color>.\nAnti-Interrupt level is increased while using this skill.\nPress <IconMap:Icon_Special> during a shuffle dodge to activate:\nStrike forward with a series of punches, dealing <color=#FF5521>Fire DMG</color>.\nThis skill will not interrupt the combo count for <color=#FFFFFF>Basic Attacks</color>.\nAnti-Interrupt level is increased while using this skill."
+            },
+            "116100003": {
+                "Title": "EX Special Attack: V-Form Sunrise Uppercut - Full Distance",
+                "Description": "With enough Energy, press <IconMap:Icon_SpecialReady> to activate:\nLeaps into the air with a powerful uppercut, striking enemies in front and dealing massive <color=#FF5521>Fire DMG</color>.\nPress <IconMap:Icon_SpecialReady> again during this skill to spend additional Energy to perform a powerful follow-up attack, dealing massive <color=#FF5521>Fire DMG</color>.\nCharacter is invulnerable while using this skill.\nAfter using this skill, press or hold <IconMap:Icon_Normal> to follow up with the 4th hit of the <color=#FFFFFF>Basic Attack</color>.\nWith enough Energy, press <IconMap:Icon_SpecialReady> during the shuffle dodge to activate:\nStrike forward with a powerful punch combo, dealing massive <color=#FF5521>Fire DMG</color>.\nThis skill will not interrupt the combo count for <color=#FFFFFF>Basic Attacks</color>.\nCharacter is invulnerable while using this skill.\nAfter using this skill, press or hold <IconMap:Icon_Normal> to immediately follow up with the 5th hit of the <color=#FFFFFF>Basic Attack</color>."
+            },
+            "116110034": {
+                "Title": "Special Attack: V-Form Sunrise Uppercut"
+            },
+            "116110035": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1161013, Prop:1001}"
+            },
+            "116110036": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1161013, Prop:1002}"
+            },
+            "116110037": {
+                "Title": "EX Special Attack: V-Form Sunrise Uppercut - Full Distance"
+            },
+            "116110038": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1161014, Prop:1001}"
+            },
+            "116110039": {
+                "Description": "Follow-Up DMG Multiplier",
+                "Param": "{Skill:1161015, Prop:1001}"
+            },
+            "116110040": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1161014, Prop:1002}"
+            },
+            "116110041": {
+                "Description": "Follow-Up Daze Multiplier",
+                "Param": "{Skill:1161015, Prop:1002}"
+            },
+            "116110042": {
+                "Description": "Activation Energy Cost",
+                "Param": "40"
+            },
+            "116110043": {
+                "Description": "Follow-Up Energy Cost",
+                "Param": "20"
+            }
+        },
+        "2": {
+            "116100004": {
+                "Title": "Dodge: Shadowed Slide",
+                "Description": "Press <IconMap:Icon_Evade> to activate:\nA quick dash dodge.\nCharacter is invulnerable while using this skill.\nPress <IconMap:Icon_Evade> while the character is attacking to activate:\nPerform a quick shuffle dodge in the direction of the {LAYOUT_CONSOLECONTROLLER#stick}{LAYOUT_FALLBACK#Joystick}.\nThis skill will not interrupt the combo count for <color=#FFFFFF>Basic Attacks</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "116100005": {
+                "Title": "Dash Attack: Charging Slam",
+                "Description": "Press <IconMap:Icon_Normal> during a dodge to activate:\nRapidly strikes enemies in front, dealing <color=#F0D12B>Physical DMG</color>."
+            },
+            "116100006": {
+                "Title": "Dodge Counter: Blazing Flash",
+                "Description": "Press <IconMap:Icon_Normal> during a <color=#FFFFFF>Perfect Dodge</color> to activate:\nStrike enemies in front, dealing <color=#FF5521>Fire DMG</color>.\nCharacter is invulnerable while using this skill.\nAfter using the skill, press or hold <IconMap:Icon_Normal> to immediately follow up with the 5th hit of the <color=#FFFFFF>Basic Attack</color>."
+            },
+            "116110044": {
+                "Title": "Dash Attack: Charging Slam"
+            },
+            "116110045": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1161016, Prop:1001}"
+            },
+            "116110046": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1161016, Prop:1002}"
+            },
+            "116110047": {
+                "Title": "Dodge Counter: Blazing Flash"
+            },
+            "116110048": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1161017, Prop:1001}"
+            },
+            "116110049": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1161017, Prop:1002}"
+            }
+        },
+        "3": {
+            "116100007": {
+                "Title": "Chain Attack: V-Form Scorching Sun",
+                "Description": "When a <color=#FFFFFF>Chain Attack</color> is triggered, select the character to activate:\nUnleashes a powerful strike at enemies in front in a small area, dealing massive <color=#FF5521>Fire DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "116100008": {
+                "Title": "Ultimate: W-Form Crowned Inferno",
+                "Description": "When Decibel Rating is at Maximum, press <IconMap:Icon_UltimateReady> to activate:\nUnleashes a powerful strike in a large area around, dealing massive <color=#FF5521>Fire DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "116110050": {
+                "Title": "Chain Attack: V-Form Scorching Sun"
+            },
+            "116110051": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1161018, Prop:1001}"
+            },
+            "116110052": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1161018, Prop:1002}"
+            },
+            "116110053": {
+                "Title": "Ultimate: W-Form Crowned Inferno"
+            },
+            "116110054": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1161019, Prop:1001}"
+            },
+            "116110055": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1161019, Prop:1002}"
+            }
+        },
+        "6": {
+            "116100010": {
+                "Title": "Quick Assist: Blazing Flash - Guard",
+                "Description": "When the active character is launched, press <IconMap:Icon_Switch> to activate:\nStrike enemies in front, dealing <color=#FF5521>Fire DMG</color>.\nCharacter is invulnerable while using this skill.\nAfter using the skill, press or hold <IconMap:Icon_Normal> to immediately follow up with the 5th hit of the <color=#FFFFFF>Basic Attack</color>."
+            },
+            "116100011": {
+                "Title": "Defensive Assist: Swift Break",
+                "Description": "When the on-field character is about to be attacked, press <IconMap:Icon_Switch> to activate:\nParries the enemy's attack, dealing massive Daze.\nCharacter is invulnerable while using this skill."
+            },
+            "116100012": {
+                "Title": "Assist Follow-Up: Charging Slam - Stab",
+                "Description": "Press <IconMap:Icon_Normal> after a <color=#FFFFFF>Defensive Assist</color> to activate:\nStrike enemies in front, dealing <color=#FF5521>Fire DMG</color>.\nCharacter is invulnerable while using this skill.\nAfter using this skill, press or hold <IconMap:Icon_Normal> to immediately follow up with the 5th hit of the <color=#FFFFFF>Basic Attack</color>."
+            },
+            "116110056": {
+                "Title": "Quick Assist: Blazing Flash - Guard"
+            },
+            "116110057": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1161020, Prop:1001}"
+            },
+            "116110058": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1161020, Prop:1002}"
+            },
+            "116110059": {
+                "Title": "Defensive Assist: Swift Break"
+            },
+            "116110060": {
+                "Description": "Light Defensive Daze Multiplier",
+                "Param": "{Skill:1161021, Prop:1002}"
+            },
+            "116110061": {
+                "Description": "Heavy Defensive Daze Multiplier",
+                "Param": "{Skill:1161022, Prop:1002}"
+            },
+            "116110062": {
+                "Description": "Chain Defensive Daze Multiplier",
+                "Param": "{Skill:1161023, Prop:1002}"
+            },
+            "116110063": {
+                "Title": "Assist Follow-Up: Charging Slam - Stab"
+            },
+            "116110064": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1161024, Prop:1001}"
+            },
+            "116110065": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1161024, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1161001": {
+            "DamageValue": 3920,
+            "DamageGrowth": 360,
+            "DazeValue": 1960,
+            "DazeGrowth": 90
+        },
+        "1161002": {
+            "DamageValue": 4800,
+            "DamageGrowth": 440,
+            "DazeValue": 3290,
+            "DazeGrowth": 150
+        },
+        "1161003": {
+            "DamageValue": 5530,
+            "DamageGrowth": 510,
+            "DazeValue": 4670,
+            "DazeGrowth": 220
+        },
+        "1161004": {
+            "DamageValue": 8690,
+            "DamageGrowth": 790,
+            "DazeValue": 6050,
+            "DazeGrowth": 280
+        },
+        "1161005": {
+            "DamageValue": 4770,
+            "DamageGrowth": 440,
+            "DazeValue": 3320,
+            "DazeGrowth": 160
+        },
+        "1161006": {
+            "DamageValue": 5810,
+            "DamageGrowth": 530,
+            "DazeValue": 4040,
+            "DazeGrowth": 190
+        },
+        "1161007": {
+            "DamageValue": 3280,
+            "DamageGrowth": 300,
+            "DazeValue": 2280,
+            "DazeGrowth": 110
+        },
+        "1161008": {
+            "DamageValue": 8900,
+            "DamageGrowth": 810,
+            "DazeValue": 6190,
+            "DazeGrowth": 290
+        },
+        "1161009": {
+            "DamageValue": 7890,
+            "DamageGrowth": 720,
+            "DazeValue": 7610,
+            "DazeGrowth": 350
+        },
+        "1161010": {
+            "DamageValue": 16360,
+            "DamageGrowth": 1490,
+            "DazeValue": 12950,
+            "DazeGrowth": 590
+        },
+        "1161011": {
+            "DamageValue": 12290,
+            "DamageGrowth": 1120,
+            "DazeValue": 8130,
+            "DazeGrowth": 370
+        },
+        "1161012": {
+            "DamageValue": 10460,
+            "DamageGrowth": 960,
+            "DazeValue": 7950,
+            "DazeGrowth": 370
+        },
+        "1161013": {
+            "DamageValue": 3630,
+            "DamageGrowth": 330,
+            "DazeValue": 3630,
+            "DazeGrowth": 170
+        },
+        "1161014": {
+            "DamageValue": 48630,
+            "DamageGrowth": 4430,
+            "DazeValue": 40350,
+            "DazeGrowth": 1840
+        },
+        "1161015": {
+            "DamageValue": 29270,
+            "DamageGrowth": 2670,
+            "DazeValue": 24770,
+            "DazeGrowth": 1130
+        },
+        "1161016": {
+            "DamageValue": 8990,
+            "DamageGrowth": 820,
+            "DazeValue": 4500,
+            "DazeGrowth": 210
+        },
+        "1161017": {
+            "DamageValue": 18630,
+            "DamageGrowth": 1700,
+            "DazeValue": 16870,
+            "DazeGrowth": 770
+        },
+        "1161018": {
+            "DamageValue": 71210,
+            "DamageGrowth": 6480,
+            "DazeValue": 27320,
+            "DazeGrowth": 1250
+        },
+        "1161019": {
+            "DamageValue": 150800,
+            "DamageGrowth": 13710,
+            "DazeValue": 94740,
+            "DazeGrowth": 4310
+        },
+        "1161020": {
+            "DamageValue": 6970,
+            "DamageGrowth": 640,
+            "DazeValue": 6970,
+            "DazeGrowth": 320
+        },
+        "1161021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1161022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1161023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1161024": {
+            "DamageValue": 21980,
+            "DamageGrowth": 2000,
+            "DazeValue": 18230,
+            "DazeGrowth": 830
+        },
+        "1161025": {
+            "DamageValue": 43540,
+            "DamageGrowth": 3960,
+            "DazeValue": 13240,
+            "DazeGrowth": 610
+        },
+        "1161026": {
+            "DamageValue": 17720,
+            "DamageGrowth": 1620,
+            "DazeValue": 13630,
+            "DazeGrowth": 620
+        },
+        "1161027": {
+            "DamageValue": 36430,
+            "DamageGrowth": 3320,
+            "DazeValue": 8550,
+            "DazeGrowth": 390
+        },
+        "1161028": {
+            "DamageValue": 11970,
+            "DamageGrowth": 1090,
+            "DazeValue": 9210,
+            "DazeGrowth": 420
+        }
+    }
+}

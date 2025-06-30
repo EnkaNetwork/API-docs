@@ -1,0 +1,469 @@
+{
+    "Name": "Trigger",
+    "ElementTypes": [
+        "Elec"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Sentidos Aguçados",
+            "Description": "O Multiplicador de Dano de Atordoamento aplicado pela <color=#FFFFFF>Passiva Principal: Olhar Introspectivo</color> aumenta mais 20%.\nAo executar um <color=#FFFFFF>Ataque Básico: Eliminação Coordenada</color>, o tempo de recarga diminui para 2s. Ao atingir um inimigo com disparos consecutivos ou um Contra-Ataque carregado no estado de <color=#FFFFFF>Postura de Franco-Atirador</color>, <color=#FFFFFF>Coração Resoluto</color> aumenta 25% e o limite de <color=#FFFFFF>Coração Resoluto</color> aumenta para 125.",
+            "Lore": "Uma audição capaz de distinguir cada alteração sutil no vento, um tato capaz de perceber cada vibração no solo. Para compensar suas limitações visuais, a jovem aguçou seus outros sentidos à perfeição.\n\"Ser uma franco-atiradora é o meu maior talento... Pelo menos nisso, eu não vou perder para ninguém.\""
+        },
+        "2": {
+            "Title": "Visão Etérea",
+            "Description": "Ao ativar um <color=#FFFFFF>Ataque Subsequente</color>, Trigger ganha 1 acúmulo de <color=#FFFFFF>Olhos de Caçadora</color>. Ao executar um Golpe Final na <color=#FFFFFF>Postura de Franco-Atirador</color>, Trigger ganha 2 acúmulos de <color=#FFFFFF>Olhos de Caçadora</color>. Cada acúmulo de <color=#FFFFFF>Olhos de Caçadora</color> aumenta o Dano CRIT de toda a equipe em 6%, acumulando até 4 vezes por 10s. Ativações repetidas reiniciam a duração.",
+            "Lore": "Quando está na Esfera Negra, todas as flutuações de Éter ao redor dela ajudam em sua observação espacial.\n\"Eu costumava pensar que esses olhos eram uma maldição que só me causava dor.\"\n\"Mas agora... eles são a chave para alcançar meus objetivos, e a prova de que não me esqueci do meu passado.\""
+        },
+        "3": {
+            "Title": "De Volta ao Lar",
+            "Description": "Obtém +2 níveis de <color=#FFFFFF>Ataque Básico</color>, <color=#FFFFFF>Esquiva</color>, <color=#FFFFFF>Ataque de Assistência</color>, <color=#FFFFFF>Ataque Especial</color> e <color=#FFFFFF>Ataque em Cadeia</color>",
+            "Lore": "O lar para onde ela podia voltar, agora está selado no passado.\nSeus lábios frios deslizam contra a gaita, a melodia solitária é o único vestígio de suas memórias."
+        },
+        "4": {
+            "Title": "Sem Deixar Rastros",
+            "Description": "Quando Trigger entra ou prolonga o <color=#FFFFFF>Apoio Coordenado</color>, quando o estado ainda está ativo, o próximo <color=#FFFFFF>Ataque Básico: Eliminação Coordenada</color> ou <color=#FFFFFF>Ataque Básico: Eliminação Coordenada — Tártaro</color> de outro personagem da equipe que atingir o inimigo desencadeará o efeito <color=#FFFFFF>Desconexão</color>, causando dano equivalente a 200% do ATQ de Trigger e Atordoamento equivalente a 120% do Impacto de Trigger. Essa habilidade tem uma grande capacidade de interrupção.",
+            "Lore": "Passos, respiração, batimentos cardíacos. Ela suprime cada rastro de sua presença até que seu corpo se misture completamente com o ambiente, e se move pelo campo de batalha como um espectro ceifador.\nMas, fora de combate, esse modo silencioso de se mover foi estritamente proibido depois de assustar seus companheiros em várias ocasiões.\nClaro, ela definitivamente nunca usou suas técnicas de furtividade para observar a locadora quando não tem a oportunidade de se encontrar com alguém ali... certo?"
+        },
+        "5": {
+            "Title": "Determinação Inabalável",
+            "Description": "Obtém +2 níveis de <color=#FFFFFF>Ataque Básico</color>, <color=#FFFFFF>Esquiva</color>, <color=#FFFFFF>Ataque de Assistência</color>, <color=#FFFFFF>Ataque Especial</color> e <color=#FFFFFF>Ataque em Cadeia</color>",
+            "Lore": "Uma vez que o alvo seja marcado, mesmo que seu corpo esteja destroçado e sua dor seja insuportável, a mira nunca se desviará dele. Sejam os alvos de sua vingança ou aqueles sob sua proteção; sejam inimigos ou aliados, esta é a determinação de uma franco-atiradora.\nMas com {M#aquele}{F#aquela} Proxy que se tornou um farol nos momentos mais escuros, mais do que marcar o alvo, ela se sente atraída pela luz. Mesmo que não haja motivo algum para continuar observando, ela nunca desvia sua mira. Esta é a determinação de uma jovem garota."
+        },
+        "6": {
+            "Title": "Na Outra Margem",
+            "Description": "Ao entrar em combate, Trigger ganha 5 <color=#FFFFFF>Balas Perfurantes</color>. Para cada 25 pontos de <color=#FFFFFF>Coração Resoluto</color> consumidos, Trigger ganha mais 1 <color=#FFFFFF>Bala Perfurante</color>, até um máximo de 5 balas. Enquanto tiver <color=#FFFFFF>Balas Perfurantes</color>, quando Trigger atingir um inimigo com <color=#FFFFFF>Postura de Franco-Atirador</color>, 1 <color=#FFFFFF>Bala Perfurante</color> será consumida para causar <color=#2EB6FF>Dano Elétrico</color> equivalente a mais 1200% do ATQ de Trigger. O dano das <color=#FFFFFF>Balas Perfurantes</color> aumentam 50%. Esse efeito pode ser ativado uma vez a cada 0,2s.",
+            "Lore": "\"Sabe de uma coisa? Aqueles que sujam as mãos de sangue na batalha só podem ir ao submundo após a morte.\"\n\n\"Além do rio dos mortos, sei que há uma paisagem de beleza incomparável. As flores vermelhas de lírio-aranha florescerão ao meu redor enquanto rostos familiares do passado me acompanham ao meu destino final, para o meu descanso eterno.\"\n\n\"Mas... graças a você, porque agora tenho algo para proteger, talvez eu não queira que esse dia chegue tão cedo.\""
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passiva Principal: Olhar Introspectivo",
+            "DescriptionByLevel": {
+                "1": "Quando Trigger atinge um inimigo com o <color=#FFFFFF>Ataque Subsequente</color>, o Multiplicador de Dano de Atordoamento do alvo aumenta <color=#2BAD00>20%</color> por 5s. Esse Multiplicador de Dano de Atordoamento se aplica inclusive quando o alvo não está atordoado.",
+                "2": "Quando Trigger atinge um inimigo com o <color=#FFFFFF>Ataque Subsequente</color>, o Multiplicador de Dano de Atordoamento do alvo aumenta <color=#2BAD00>22,5%</color> por 5s. Esse Multiplicador de Dano de Atordoamento se aplica inclusive quando o alvo não está atordoado.",
+                "3": "Quando Trigger atinge um inimigo com o <color=#FFFFFF>Ataque Subsequente</color>, o Multiplicador de Dano de Atordoamento do alvo aumenta <color=#2BAD00>25%</color> por 5s. Esse Multiplicador de Dano de Atordoamento se aplica inclusive quando o alvo não está atordoado.",
+                "4": "Quando Trigger atinge um inimigo com o <color=#FFFFFF>Ataque Subsequente</color>, o Multiplicador de Dano de Atordoamento do alvo aumenta <color=#2BAD00>27,5%</color> por 5s. Esse Multiplicador de Dano de Atordoamento se aplica inclusive quando o alvo não está atordoado.",
+                "5": "Quando Trigger atinge um inimigo com o <color=#FFFFFF>Ataque Subsequente</color>, o Multiplicador de Dano de Atordoamento do alvo aumenta <color=#2BAD00>30%</color> por 5s. Esse Multiplicador de Dano de Atordoamento se aplica inclusive quando o alvo não está atordoado.",
+                "6": "Quando Trigger atinge um inimigo com o <color=#FFFFFF>Ataque Subsequente</color>, o Multiplicador de Dano de Atordoamento do alvo aumenta <color=#2BAD00>32,5%</color> por 5s. Esse Multiplicador de Dano de Atordoamento se aplica inclusive quando o alvo não está atordoado.",
+                "7": "Quando Trigger atinge um inimigo com o <color=#FFFFFF>Ataque Subsequente</color>, o Multiplicador de Dano de Atordoamento do alvo aumenta <color=#2BAD00>35%</color> por 5s. Esse Multiplicador de Dano de Atordoamento se aplica inclusive quando o alvo não está atordoado."
+            }
+        },
+        "MathSkill": {
+            "Title": "Habilidade Extra: Olhos Espirituais da Lanterna de Prata",
+            "Description": "Quando há outro personagem na equipe do tipo <color=#FFFFFF>Atacante</color> ou do mesmo atributo:\nQuando a Taxa CRIT de Trigger ultrapassa 40%, cada 1% acima desse limite de Taxa CRIT aumenta o Atordoamento causado pelo <color=#FFFFFF>Ataque Subsequente</color> em 1,5%, até um aumento máximo de 75%."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "136100001": {
+                "Title": "Ataque Básico: Disparo de Cano Frio",
+                "Description": "Pressione <IconMap:Icon_Normal> para ativar:\nExecuta até 4 disparos à frente. Os 3 primeiros disparos causam <color=#F0D12B>Dano Físico</color>. O 4º disparo causa <color=#2EB6FF>Dano Elétrico</color>."
+            },
+            "136100002": {
+                "Title": "Ataque Básico: Disparo Silencioso",
+                "Description": "Mantenha pressionado <IconMap:Icon_Normal> para ativar:\nTrigger entra no estado de <color=#FFFFFF>Postura de Franco-Atirador</color> e executa uma série de disparos consecutivos, causando <color=#2EB6FF>Dano Elétrico</color>.\nEnquanto dispara continuamente, ao ser atingida por ataques inimigos, Trigger se esquiva dos ataques automaticamente. Esse efeito pode ser ativado uma vez a cada 8s.\nEnquanto dispara continuamente, pode arrastar o {LAYOUT_CONSOLECONTROLLER#controle analógico}{LAYOUT_FALLBACK#controle analógico} para ajustar a posição para a direita/esquerda/atrás.\nAo se esquivar automaticamente ou ajustar a posição quando está prestes a sofrer um ataque, ativa uma <color=#FFFFFF>Esquiva Perfeita</color>, seguida por um Contra-Ataque carregado.\nAo soltar <IconMap:Icon_Normal>, Trigger recua um passo, prepara sua arma e executa um Golpe Final, saindo da <color=#FFFFFF>Postura de Franco-Atirador</color>.\nA personagem fica invulnerável durante o Contra-Ataque carregado e o Golpe Final.\nEnquanto dispara continuamente ou durante o Contra-Ataque carregado, Trigger ganha 25 pontos de <color=#FFFFFF>Coração Resoluto</color>, com um máximo de 100 pontos de <color=#FFFFFF>Coração Resoluto</color>.\nQuando o Golpe Final atinge um inimigo, ativa uma <color=#FFFFFF>Assistência Reativa</color> a partir do personagem anterior da equipe. A cada 25s, é possível ativar no máximo uma <color=#FFFFFF>Assistência Reativa</color>."
+            },
+            "136100003": {
+                "Title": "Ataque Básico: Eliminação Coordenada",
+                "Description": "Quando Trigger tem <color=#FFFFFF>Coração Resoluto</color>, e outro personagem da equipe atinge um inimigo com <color=#FFFFFF>Ataque Básico</color>, <color=#FFFFFF>Ataque Rápido</color>, <color=#FFFFFF>Contraesquiva</color>, <color=#FFFFFF>Ataque Especial</color> ou <color=#FFFFFF>Assistência Reativa</color>:\nExecuta dois disparos em direção ao alvo, causando <color=#2EB6FF>Dano Elétrico</color>.\nAtivar esta habilidade consome 3 pontos de <color=#FFFFFF>Coração Resoluto</color>.\nA personagem fica invulnerável ao usar esta habilidade.\nO <color=#FFFFFF>Ataque Básico: Eliminação Coordenada</color> é considerado um <color=#FFFFFF>Ataque Subsequente</color>.\nA equipe pode ativar <color=#FFFFFF>Ataque Básico: Eliminação Coordenada</color> uma vez a cada 3s."
+            },
+            "136100004": {
+                "Title": "Ataque Básico: Eliminação Coordenada — Tártaro",
+                "Description": "Quando Trigger tem <color=#FFFFFF>Coração Resoluto</color>, o seguinte efeito é ativado quando outro personagem da equipe em campo atinge um inimigo com o ataque pesado do <color=#FFFFFF>Ataque Especial Reforçado</color>, <color=#FFFFFF>Assistência Imediata</color> ou <color=#FFFFFF>Supremo</color>:\nExecuta três disparos rápidos ao redor do inimigo alvo, seguido por um Golpe Final, causando <color=#2EB6FF>Dano Elétrico</color>.\nAo ativar esta habilidade, consome 5 pontos de <color=#FFFFFF>Coração Resoluto</color>.\nA personagem fica invulnerável ao usar esta habilidade.\nO <color=#FFFFFF>Ataque Básico: Eliminação Coordenada — Tártaro</color> é considerado um <color=#FFFFFF>Ataque Subsequente</color>.\nO mesmo tipo de habilidade pode ativar <color=#FFFFFF>Ataque Básico: Eliminação Coordenada — Tártaro</color> até 2 vezes em 20s para toda a equipe.\nDurante a execução do <color=#FFFFFF>Ataque Básico: Eliminação Coordenada</color>, ao ativar <color=#FFFFFF>Ataque Básico: Eliminação Coordenada — Tártaro</color>, será lançado imediatamente."
+            },
+            "136100016": {
+                "Title": "Ataque Básico: Disparo de Cano Frio"
+            },
+            "136100017": {
+                "Description": "Multiplicador de Dano de 1º Golpe",
+                "Param": "{Skill:1361001, Prop:1001}"
+            },
+            "136100018": {
+                "Description": "Multiplicador de Dano de 2º Golpe",
+                "Param": "{Skill:1361002, Prop:1001}"
+            },
+            "136100019": {
+                "Description": "Multiplicador de Dano de 3º Golpe",
+                "Param": "{Skill:1361003, Prop:1001}"
+            },
+            "136100020": {
+                "Description": "Multiplicador de Dano de 4º Golpe",
+                "Param": "{Skill:1361004, Prop:1001}"
+            },
+            "136100021": {
+                "Description": "Multiplicador de Atordoamento de 1º Golpe",
+                "Param": "{Skill:1361001, Prop:1002}"
+            },
+            "136100022": {
+                "Description": "Multiplicador de Atordoamento de 2º Golpe",
+                "Param": "{Skill:1361002, Prop:1002}"
+            },
+            "136100023": {
+                "Description": "Multiplicador de Atordoamento de 3º Golpe",
+                "Param": "{Skill:1361003, Prop:1002}"
+            },
+            "136100024": {
+                "Description": "Multiplicador de Atordoamento de 4º Golpe",
+                "Param": "{Skill:1361004, Prop:1002}"
+            },
+            "136100025": {
+                "Title": "Ataque Básico: Disparo Silencioso"
+            },
+            "136100026": {
+                "Description": "Multiplicador de Dano de Disparo",
+                "Param": "{Skill:1361005, Prop:1001}"
+            },
+            "136100027": {
+                "Description": "Multiplicador de Dano de Contra-Ataque",
+                "Param": "{Skill:1361006, Prop:1001}"
+            },
+            "136100028": {
+                "Description": "Multiplicador de Dano de Golpe Final",
+                "Param": "{Skill:1361007, Prop:1001}"
+            },
+            "136100029": {
+                "Description": "Multiplicador de Atordoamento de Disparo",
+                "Param": "{Skill:1361005, Prop:1002}"
+            },
+            "136100030": {
+                "Description": "Multiplicador de Atordoamento de Contra-Ataque",
+                "Param": "{Skill:1361006, Prop:1002}"
+            },
+            "136100031": {
+                "Description": "Multiplicador de Atordoamento de Golpe Final",
+                "Param": "{Skill:1361007, Prop:1002}"
+            },
+            "136100032": {
+                "Title": "Ataque Básico: Eliminação Coordenada"
+            },
+            "136100033": {
+                "Description": "Multiplicador de Dano de Disparo Rápido",
+                "Param": "{Skill:1361008, Prop:1001}*2"
+            },
+            "136100034": {
+                "Description": "Multiplicador de Atordoamento de Disparo Rápido",
+                "Param": "{Skill:1361008, Prop:1002}*2"
+            },
+            "136100035": {
+                "Title": "Ataque Básico: Eliminação Coordenada — Tártaro"
+            },
+            "136100036": {
+                "Description": "Multiplicador de Dano de Disparo Rápido",
+                "Param": "{Skill:1361020, Prop:1001}*3"
+            },
+            "136100037": {
+                "Description": "Multiplicador de Dano de Golpe Final",
+                "Param": "{Skill:1361022, Prop:1001}"
+            },
+            "136100038": {
+                "Description": "Multiplicador de Atordoamento de Disparo Rápido",
+                "Param": "{Skill:1361020, Prop:1002}*3"
+            },
+            "136100039": {
+                "Description": "Multiplicador de Atordoamento de Golpe Final",
+                "Param": "{Skill:1361022, Prop:1002}"
+            }
+        },
+        "1": {
+            "136100005": {
+                "Title": "Ataque Especial: Lampejo Espectral",
+                "Description": "Pressione <IconMap:Icon_Special> para ativar:\nAvança, executando um corte à frente e causando <color=#2EB6FF>Dano Elétrico</color>.\nDurante sua execução, o nível de Anti-Interrupção aumenta."
+            },
+            "136100006": {
+                "Title": "Ataque Especial Reforçado: Resplandecência de Sepultamento",
+                "Description": "Quando com energia suficiente, pressione <IconMap:Icon_SpecialReady> para ativar:\nAvança com um corte, seguido de um poderoso disparo contra o solo após o salto, causando uma grande quantidade de <color=#2EB6FF>Dano Elétrico</color>.\nPersonagem fica invulnerável ao usar esta habilidade.\nAo atingir um inimigo, ativa o <color=#FFFFFF>Assistência Reativa</color> do personagem anterior na equipe.\nAo atingir um inimigo, Trigger entra no <color=#FFFFFF>Apoio Coordenado</color>. Durante esse período, quando outros personagens da equipe em ação acertarem inimigos com qualquer ataque, ativarão o <color=#FFFFFF>Ataque Básico: Eliminação Coordenada</color>, sem consumir <color=#FFFFFF>Coração Resoluto</color> e sem restrição de tempo de recarga.\nO estado dura 8s e pode ser ativado até 4 vezes. Caso Trigger entre novamente no <color=#FFFFFF>Apoio Coordenado</color>, a duração será estendida e o número de ativações aumentará, podendo durar no máximo 20s e ser ativado até 10 vezes."
+            },
+            "136100040": {
+                "Title": "Ataque Especial: Lampejo Espectral"
+            },
+            "136100041": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1361009, Prop:1001}"
+            },
+            "136100042": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1361009, Prop:1002}"
+            },
+            "136100043": {
+                "Title": "Ataque Especial Reforçado: Resplandecência de Sepultamento"
+            },
+            "136100044": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1361010, Prop:1001}"
+            },
+            "136100045": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1361010, Prop:1002}"
+            },
+            "136100046": {
+                "Description": "Custo de Energia",
+                "Param": "60"
+            }
+        },
+        "2": {
+            "136100007": {
+                "Title": "Esquiva: Alma Escondida",
+                "Description": "Pressione <IconMap:Icon_Evade> para ativar:\nUma esquiva rápida.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "136100008": {
+                "Title": "Ataque Rápido: Alma Furiosa",
+                "Description": "Pressione <IconMap:Icon_Normal> durante a Esquiva para ativar:\nAvança e executa um disparo rápido, causando <color=#F0D12B>Dano Físico</color>."
+            },
+            "136100009": {
+                "Title": "Contraesquiva: Alma Condenada",
+                "Description": "Ao ativar uma <color=#FFFFFF>Esquiva Perfeita</color>, pressione <IconMap:Icon_Normal> para ativar:\nSe esquiva e executa disparos rápidos contra os inimigos à frente, causando <color=#2EB6FF>Dano Elétrico</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "136100047": {
+                "Title": "Ataque Rápido: Alma Furiosa"
+            },
+            "136100048": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1361011, Prop:1001}"
+            },
+            "136100049": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1361011, Prop:1002}"
+            },
+            "136100050": {
+                "Title": "Contraesquiva: Alma Condenada"
+            },
+            "136100051": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1361012, Prop:1001}"
+            },
+            "136100052": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1361012, Prop:1002}"
+            }
+        },
+        "3": {
+            "136100010": {
+                "Title": "Ataque em Cadeia: Guia do Rio Estige",
+                "Description": "Ao ativar um <color=#FFFFFF>Ataque em Cadeia</color>, selecione o personagem para ativar:\nDispara continuamente contra os inimigos, causando <color=#2EB6FF>Dano Elétrico</color> muito alto.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "136100011": {
+                "Title": "Supremo: Réquiem do Submundo",
+                "Description": "Quando o Índice de dB está no <color=#FFFFFF>Máximo</color>, pressione <IconMap:Icon_UltimateReady> para ativar:\nExecuta um disparo poderoso contra um grande grupo de inimigos à frente, causando <color=#2EB6FF>Dano Elétrico</color> muito alto.\nA personagem fica invulnerável ao usar esta habilidade.\nAo atingir um inimigo com esta habilidade, a <color=#FFFFFF>Assistência Reativa</color> do personagem anterior na equipe será ativada.\nAo atingir um inimigo com esta habilidade, Trigger entra no estado de <color=#FFFFFF>Apoio Coordenado</color>. Nesse estado, quando outros personagens da equipe ativos em combate atingem um inimigo com qualquer ataque, o <color=#FFFFFF>Ataque Básico: Eliminação Coordenada</color> será ativado sem consumir <color=#FFFFFF>Coração Resoluto</color> e sem restrições de tempo de recarga. Esse efeito dura 12s e pode ser ativado 6 vezes. Ao entrar repetidamente no estado <color=#FFFFFF>Apoio Coordenado</color>, a duração é estendida e permite ativações adicionais, com duração de até 20s e um máximo de 10 ativações."
+            },
+            "136100053": {
+                "Title": "Ataque em Cadeia: Guia do Rio Estige"
+            },
+            "136100054": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1361013, Prop:1001}"
+            },
+            "136100055": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1361013, Prop:1002}"
+            },
+            "136100056": {
+                "Title": "Supremo: Réquiem do Submundo"
+            },
+            "136100057": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1361014, Prop:1001}"
+            },
+            "136100058": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1361014, Prop:1002}"
+            }
+        },
+        "6": {
+            "136100013": {
+                "Title": "Assistência Reativa: Disparo de Cano Frio de Cobertura",
+                "Description": "Quando o personagem em campo for lançado para o alto, pressione <IconMap:Icon_Switch> para ativar:\nDá um giro e executa um disparo rápido contra os inimigos à frente, causando <color=#2EB6FF>Dano Elétrico</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "136100014": {
+                "Title": "Assistência Defensiva: À Beira da Morte",
+                "Description": "Quando o personagem em campo está prestes a sofrer um ataque, pressione <IconMap:Icon_Switch> para ativar:\nBloqueia o ataque do inimigo, causando Atordoamento muito alto.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "136100015": {
+                "Title": "Assistência Imediata: Trovão Perfurante",
+                "Description": "Pressione <IconMap:Icon_Normal> após uma <color=#FFFFFF>Assistência Defensiva</color> para ativar:\nExecuta uma série de cortes contínuos contra os inimigos à frente, seguido por um disparo carregado poderoso ao aterrissar, causando <color=#2EB6FF>Dano Elétrico</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "136100059": {
+                "Title": "Assistência Reativa: Disparo de Cano Frio de Cobertura"
+            },
+            "136100060": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1361015, Prop:1001}"
+            },
+            "136100061": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1361015, Prop:1002}"
+            },
+            "136100062": {
+                "Title": "Assistência Defensiva: À Beira da Morte"
+            },
+            "136100063": {
+                "Description": "Multiplicador de Atordoamento de Defensiva Leve",
+                "Param": "{Skill:1361016, Prop:1002}"
+            },
+            "136100064": {
+                "Description": "Multiplicador de Atordoamento de Defensiva Pesada",
+                "Param": "{Skill:1361017, Prop:1002}"
+            },
+            "136100065": {
+                "Description": "Multiplicador de Atordoamento de Defensiva em Cadeia",
+                "Param": "{Skill:1361018, Prop:1002}"
+            },
+            "136100066": {
+                "Title": "Assistência Imediata: Trovão Perfurante"
+            },
+            "136100067": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1361019, Prop:1001}"
+            },
+            "136100068": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1361019, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1361001": {
+            "DamageValue": 3450,
+            "DamageGrowth": 320,
+            "DazeValue": 1730,
+            "DazeGrowth": 80
+        },
+        "1361002": {
+            "DamageValue": 5690,
+            "DamageGrowth": 520,
+            "DazeValue": 2850,
+            "DazeGrowth": 130
+        },
+        "1361003": {
+            "DamageValue": 11090,
+            "DamageGrowth": 1010,
+            "DazeValue": 6080,
+            "DazeGrowth": 280
+        },
+        "1361004": {
+            "DamageValue": 24300,
+            "DamageGrowth": 2210,
+            "DazeValue": 17690,
+            "DazeGrowth": 810
+        },
+        "1361005": {
+            "DamageValue": 4760,
+            "DamageGrowth": 440,
+            "DazeValue": 2380,
+            "DazeGrowth": 110
+        },
+        "1361006": {
+            "DamageValue": 23390,
+            "DamageGrowth": 2130,
+            "DazeValue": 14880,
+            "DazeGrowth": 680
+        },
+        "1361007": {
+            "DamageValue": 13120,
+            "DamageGrowth": 1200,
+            "DazeValue": 6560,
+            "DazeGrowth": 300
+        },
+        "1361008": {
+            "DamageValue": 4790,
+            "DamageGrowth": 440,
+            "DazeValue": 3590,
+            "DazeGrowth": 170
+        },
+        "1361009": {
+            "DamageValue": 7150,
+            "DamageGrowth": 650,
+            "DazeValue": 7150,
+            "DazeGrowth": 330
+        },
+        "1361010": {
+            "DamageValue": 63440,
+            "DamageGrowth": 5770,
+            "DazeValue": 43270,
+            "DazeGrowth": 1970
+        },
+        "1361011": {
+            "DamageValue": 5140,
+            "DamageGrowth": 470,
+            "DazeValue": 2570,
+            "DazeGrowth": 120
+        },
+        "1361012": {
+            "DamageValue": 21970,
+            "DamageGrowth": 2000,
+            "DazeValue": 19440,
+            "DazeGrowth": 890
+        },
+        "1361013": {
+            "DamageValue": 57470,
+            "DamageGrowth": 5230,
+            "DazeValue": 13580,
+            "DazeGrowth": 620
+        },
+        "1361014": {
+            "DamageValue": 148050,
+            "DamageGrowth": 13460,
+            "DazeValue": 92200,
+            "DazeGrowth": 4200
+        },
+        "1361015": {
+            "DamageValue": 8440,
+            "DamageGrowth": 770,
+            "DazeValue": 8440,
+            "DazeGrowth": 390
+        },
+        "1361016": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1361017": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1361018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1361019": {
+            "DamageValue": 43290,
+            "DamageGrowth": 3940,
+            "DazeValue": 32740,
+            "DazeGrowth": 1490
+        },
+        "1361020": {
+            "DamageValue": 2260,
+            "DamageGrowth": 210,
+            "DazeValue": 1700,
+            "DazeGrowth": 80
+        },
+        "1361021": {
+            "DamageValue": 4790,
+            "DamageGrowth": 440,
+            "DazeValue": 3590,
+            "DazeGrowth": 170
+        },
+        "1361022": {
+            "DamageValue": 4520,
+            "DamageGrowth": 420,
+            "DazeValue": 3400,
+            "DazeGrowth": 160
+        },
+        "1361023": {
+            "DamageValue": 20000,
+            "DamageGrowth": 0,
+            "DazeValue": 12000,
+            "DazeGrowth": 0
+        },
+        "1361024": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

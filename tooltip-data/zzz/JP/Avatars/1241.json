@@ -1,0 +1,489 @@
+{
+    "Name": "朱鳶",
+    "ElementTypes": [
+        "Ether"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "クイックリロード",
+            "Description": "朱鳶が<color=#FFFFFF>『連携スキル』</color>/<color=#FFFFFF>『終結スキル』</color>を発動すると、<color=#FFFFFF>「クイックリロード」</color>効果を獲得する。効果中に<color=#FFFFFF>「強化散弾」</color>が尽きると、朱鳶は<color=#FFFFFF>「クイックリロード」</color>効果を消費して、即座に6/9発の<color=#FFFFFF>「強化散弾」</color>を獲得する。",
+            "Lore": "朱鳶はかつて、マジシャンのように鮮やかなリロード技術で、\nヤヌス区治安官総合能力コンテストの1位に輝いたことがある。\nこれに対する同僚のコメントは「他無し、但だ手の熟せるのみ」であった。"
+        },
+        "2": {
+            "Title": "エーテルの余燼",
+            "Description": "<color=#FFFFFF>「制圧モード」</color>において、朱鳶の中断耐性レベルがアップし、被ダメージ-10%。<color=#FFFFFF>「強化散弾」</color>を消費した攻撃が敵に命中した時、朱鳶の<color=#FFFFFF>『通常攻撃：抵抗はやめなさい』</color>と<color=#FFFFFF>『ダッシュ攻撃：火力制圧』</color>による<color=#FE437E>エーテル属性ダメージ</color>+10%、最大5重まで重ね掛け可能、継続時間5秒。\n発砲するたびに、最大で1重獲得可能。重複して発動すると継続時間が更新される。",
+            "Lore": "治安局が朱鳶のために配備した特製エーテル弾は、命中した者に不可逆的な侵蝕ダメージを与える。\n朱鳶は発砲前、決まって投降を呼びかけるが…それは本気で相手の身を案じているからだ。"
+        },
+        "3": {
+            "Title": "治安官特別訓練",
+            "Description": "<color=#FFFFFF>『通常攻撃』</color>、<color=#FFFFFF>『回避』</color>、<color=#FFFFFF>『支援スキル』</color>、<color=#FFFFFF>『特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>のスキルレベル+2",
+            "Lore": "精鋭治安官として、朱鳶が訓練を行う目的はたった一つに絞られる——\nホロウ内での総合的な作戦遂行能力を底上げし、すべての無法者を実力でひねり潰すのだ。"
+        },
+        "4": {
+            "Title": "エーテル浸透",
+            "Description": "<color=#FFFFFF>「強化散弾」</color>を消費した攻撃が敵に命中した時、朱鳶の<color=#FFFFFF>『通常攻撃：抵抗はやめなさい』</color>と<color=#FFFFFF>『ダッシュ攻撃：火力制圧』</color>はターゲットの<color=#FE437E>エーテル属性ダメージ耐性</color>を25%無視する。",
+            "Lore": "ホロウの悪党たちは、交戦中に相手の残弾を頭の中で数える。\n朱鳶の特製弾倉が周囲のエーテルを絶え間なく電力に変換できるなどとは、つゆ知らず…"
+        },
+        "5": {
+            "Title": "特務の経験",
+            "Description": "<color=#FFFFFF>『通常攻撃』</color>、<color=#FFFFFF>『回避』</color>、<color=#FFFFFF>『支援スキル』</color>、<color=#FFFFFF>『特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>のスキルレベル+2",
+            "Lore": "特捜班のベテラン治安官は状況を見極める能力に人一倍優れ、その作戦遂行能力を遺憾なく発揮する。\n時には威圧的な眼差しひとつで、相手の抵抗心を挫くことができる。"
+        },
+        "6": {
+            "Title": "拡張エネルギーパック-参型",
+            "Description": "朱鳶が<color=#FFFFFF>「強化散弾」</color>を12発消費すると、<color=#FFFFFF>「エーテルの余熱」</color>効果を獲得し、次に発動する<color=#FFFFFF>『強化特殊スキル』</color>で消費されるエネルギーが30Pt減少する。<color=#FFFFFF>『強化特殊スキル』</color>を発動した時、<color=#FFFFFF>「エーテルの余熱」</color>効果を消費して、追加で合計4発のエーテルのバックショット弾を発射する。1発発射するごとに、朱鳶の攻撃力220%分のダメージを与える。",
+            "Lore": "朱鳶はよく装備のバッテリー残量を気にしていた。\n表示が赤になるとソワソワし始め、ついバッテリーの消費を抑えようとしてしまう。\nその悩みは、治安局から超大容量バッテリーを搭載した長時間対応\nエネルギーパックを支給された日に、綺麗さっぱり消え去った。"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "コアパッシブ：特殊弾薬",
+            "DescriptionByLevel": {
+                "1": "朱鳶が<color=#FFFFFF>「制圧モード」</color>で<color=#FFFFFF>「強化散弾」</color>を消費して攻撃する時、スキルの与ダメージ+<color=#2BAD00>20%</color>。ブレイク状態の敵を攻撃する際は、この効果が追加で+<color=#2BAD00>20%</color>。フィールド入場時、即座に<color=#FFFFFF>「強化散弾」</color>を6発獲得する。",
+                "2": "朱鳶が<color=#FFFFFF>「制圧モード」</color>で<color=#FFFFFF>「強化散弾」</color>を消費して攻撃する時、スキルの与ダメージ+<color=#2BAD00>23.3%</color>。ブレイク状態の敵を攻撃する際は、この効果が追加で+<color=#2BAD00>23.3%</color>。フィールド入場時、即座に<color=#FFFFFF>「強化散弾」</color>を6発獲得する。",
+                "3": "朱鳶が<color=#FFFFFF>「制圧モード」</color>で<color=#FFFFFF>「強化散弾」</color>を消費して攻撃する時、スキルの与ダメージ+<color=#2BAD00>26.6%</color>。ブレイク状態の敵を攻撃する際は、この効果が追加で+<color=#2BAD00>26.6%</color>。フィールド入場時、即座に<color=#FFFFFF>「強化散弾」</color>を6発獲得する。",
+                "4": "朱鳶が<color=#FFFFFF>「制圧モード」</color>で<color=#FFFFFF>「強化散弾」</color>を消費して攻撃する時、スキルの与ダメージ+<color=#2BAD00>30%</color>。ブレイク状態の敵を攻撃する際は、この効果が追加で+<color=#2BAD00>30%</color>。フィールド入場時、即座に<color=#FFFFFF>「強化散弾」</color>を6発獲得する。",
+                "5": "朱鳶が<color=#FFFFFF>「制圧モード」</color>で<color=#FFFFFF>「強化散弾」</color>を消費して攻撃する時、スキルの与ダメージ+<color=#2BAD00>33.3%</color>。ブレイク状態の敵を攻撃する際は、この効果が追加で+<color=#2BAD00>33.3%</color>。フィールド入場時、即座に<color=#FFFFFF>「強化散弾」</color>を6発獲得する。",
+                "6": "朱鳶が<color=#FFFFFF>「制圧モード」</color>で<color=#FFFFFF>「強化散弾」</color>を消費して攻撃する時、スキルの与ダメージ+<color=#2BAD00>36.6%</color>。ブレイク状態の敵を攻撃する際は、この効果が追加で+<color=#2BAD00>36.6%</color>。フィールド入場時、即座に<color=#FFFFFF>「強化散弾」</color>を6発獲得する。",
+                "7": "朱鳶が<color=#FFFFFF>「制圧モード」</color>で<color=#FFFFFF>「強化散弾」</color>を消費して攻撃する時、スキルの与ダメージ+<color=#2BAD00>40%</color>。ブレイク状態の敵を攻撃する際は、この効果が追加で+<color=#2BAD00>40%</color>。フィールド入場時、即座に<color=#FFFFFF>「強化散弾」</color>を6発獲得する。"
+            }
+        },
+        "MathSkill": {
+            "Title": "追加能力：武装間連携",
+            "Description": "チームに<color=#FFFFFF>[支援]</color>のメンバーまたは自身と同じ陣営のメンバーがいる時に発動：\n朱鳶が<color=#FFFFFF>『強化特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>または<color=#FFFFFF>『終結スキル』</color>を発動した時、自身の会心率+30%、継続時間10秒。"
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "124100001": {
+                "Title": "通常攻撃：動くな！",
+                "Description": "<color=#FFFFFF>「突撃モード」</color>\n <IconMap:Icon_Normal> を押して発動：\n体術、ピストルおよびエーテルのバックショット弾を織り交ぜながら攻撃し、前方に最大5段の攻撃を放ち、それぞれ<color=#F0D12B>物理属性ダメージ</color>と<color=#FE437E>エーテル属性ダメージ</color>を与える。\n4段目または5段目が敵に命中した時、<color=#FFFFFF>「強化散弾」</color>を1発獲得する。1段の攻撃で最大1発まで獲得可能。\nスキル発動中、{LAYOUT_CONSOLECONTROLLER#スティック}{LAYOUT_FALLBACK#スティック}を入力しながら <IconMap:Icon_Normal> を押すと、<color=#FFFFFF>『ダッシュ攻撃：火力奇襲』</color>を発動し、対応する方向に位置を調整できる。\n<color=#FFFFFF>「突撃モード」</color>で <IconMap:Icon_Normal> を長押しすると、攻撃モードが<color=#FFFFFF>「制圧モード」</color>に切り替わる。"
+            },
+            "124100002": {
+                "Title": "通常攻撃：抵抗はやめなさい",
+                "Description": "<color=#FFFFFF>「制圧モード」</color>\n <IconMap:Icon_Normal> を長押しして発動：\n散弾銃で前方に最大3段の刺突射撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。発砲時に<color=#FFFFFF>「強化散弾」</color>を所持している場合、<color=#FFFFFF>「強化散弾」</color>を1発消費して<color=#FE437E>エーテル属性ダメージ</color>を大量に与える。\nスキル発動中に{LAYOUT_CONSOLECONTROLLER#スティック}{LAYOUT_FALLBACK#スティック}を入力すると、<color=#FFFFFF>『ダッシュ攻撃：火力制圧』</color>を発動し、対応する方向に位置を調整できる。\n<color=#FFFFFF>「制圧モード」</color>で <IconMap:Icon_Normal> を離すと、攻撃モードが<color=#FFFFFF>「突撃モード」</color>に切り替わる。"
+            },
+            "124110001": {
+                "Title": "通常攻撃：動くな！"
+            },
+            "124110002": {
+                "Description": "1段ダメージ倍率",
+                "Param": "{Skill:1241001, Prop:1001}"
+            },
+            "124110003": {
+                "Description": "2段ダメージ倍率",
+                "Param": "{Skill:1241002, Prop:1001}"
+            },
+            "124110004": {
+                "Description": "3段ダメージ倍率",
+                "Param": "{Skill:1241003, Prop:1001}"
+            },
+            "124110005": {
+                "Description": "4段ダメージ倍率",
+                "Param": "{Skill:1241004, Prop:1001}"
+            },
+            "124110006": {
+                "Description": "5段ダメージ倍率",
+                "Param": "{Skill:1241005, Prop:1001}"
+            },
+            "124110007": {
+                "Description": "1段ブレイク倍率",
+                "Param": "{Skill:1241001, Prop:1002}"
+            },
+            "124110008": {
+                "Description": "2段ブレイク倍率",
+                "Param": "{Skill:1241002, Prop:1002}"
+            },
+            "124110009": {
+                "Description": "3段ブレイク倍率",
+                "Param": "{Skill:1241003, Prop:1002}"
+            },
+            "124110010": {
+                "Description": "4段ブレイク倍率",
+                "Param": "{Skill:1241004, Prop:1002}"
+            },
+            "124110011": {
+                "Description": "5段ブレイク倍率",
+                "Param": "{Skill:1241005, Prop:1002}"
+            },
+            "124110012": {
+                "Title": "通常攻撃：抵抗はやめなさい"
+            },
+            "124110013": {
+                "Description": "1段ダメージ倍率（物理）",
+                "Param": "{Skill:1241006, Prop:1001}"
+            },
+            "124110014": {
+                "Description": "2段ダメージ倍率（物理）",
+                "Param": "{Skill:1241007, Prop:1001}"
+            },
+            "124110015": {
+                "Description": "3段ダメージ倍率（物理）",
+                "Param": "{Skill:1241008, Prop:1001}"
+            },
+            "124110016": {
+                "Description": "1段ブレイク倍率（物理）",
+                "Param": "{Skill:1241006, Prop:1002}"
+            },
+            "124110017": {
+                "Description": "2段ブレイク倍率（物理）",
+                "Param": "{Skill:1241007, Prop:1002}"
+            },
+            "124110018": {
+                "Description": "3段ブレイク倍率（物理）",
+                "Param": "{Skill:1241008, Prop:1002}"
+            },
+            "124110019": {
+                "Description": "1段ダメージ倍率（エーテル）",
+                "Param": "{Skill:1241010, Prop:1001}"
+            },
+            "124110020": {
+                "Description": "2段ダメージ倍率（エーテル）",
+                "Param": "{Skill:1241011, Prop:1001}"
+            },
+            "124110021": {
+                "Description": "3段ダメージ倍率（エーテル）",
+                "Param": "{Skill:1241012, Prop:1001}"
+            },
+            "124110022": {
+                "Description": "1段ブレイク倍率（エーテル）",
+                "Param": "{Skill:1241010, Prop:1002}"
+            },
+            "124110023": {
+                "Description": "2段ブレイク倍率（エーテル）",
+                "Param": "{Skill:1241011, Prop:1002}"
+            },
+            "124110024": {
+                "Description": "3段ブレイク倍率（エーテル）",
+                "Param": "{Skill:1241012, Prop:1002}"
+            }
+        },
+        "1": {
+            "124100003": {
+                "Title": "特殊スキル：バックショット",
+                "Description": " <IconMap:Icon_Special> を押して発動：\nエーテルのバックショット弾を発射し、<color=#FE437E>エーテル属性ダメージ</color>を与える。\n <IconMap:Icon_Special> を連続で押すと、重ねて3回発射できる。\nスキル発動中、中断耐性レベルがアップする。"
+            },
+            "124100004": {
+                "Title": "強化特殊スキル：全弾連射",
+                "Description": "エネルギーが溜まっている状態で <IconMap:Icon_SpecialReady> を押して発動：\nエーテルのバックショット弾を連続で発射し、<color=#FE437E>エーテル属性ダメージ</color>を大量に与える。\nスキル発動時、<color=#FFFFFF>「強化散弾」</color>を3発獲得する。\nスキル発動中、無敵効果を得る。"
+            },
+            "124110025": {
+                "Title": "特殊スキル：バックショット"
+            },
+            "124110026": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1241015, Prop:1001}"
+            },
+            "124110027": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1241015, Prop:1002}"
+            },
+            "124110028": {
+                "Title": "強化特殊スキル：全弾連射"
+            },
+            "124110029": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1241016, Prop:1001}"
+            },
+            "124110030": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1241016, Prop:1002}"
+            },
+            "124110031": {
+                "Description": "エネルギー消費",
+                "Param": "60Pt"
+            }
+        },
+        "2": {
+            "124100005": {
+                "Title": "回避：迂回",
+                "Description": " <IconMap:Icon_Evade> を押して発動：\nダッシュで高速回避する。\nスキル発動中、無敵効果を得る。"
+            },
+            "124100006": {
+                "Title": "ダッシュ攻撃：火力奇襲",
+                "Description": "<color=#FFFFFF>「突撃モード」</color>\n回避時に <IconMap:Icon_Normal> を押して発動：\nピストルで射撃を行い、<color=#FE437E>エーテル属性ダメージ</color>を与える。"
+            },
+            "124100007": {
+                "Title": "ダッシュ攻撃：火力制圧",
+                "Description": "<color=#FFFFFF>「制圧モード」</color>\n<color=#FFFFFF>『通常攻撃：抵抗はやめなさい』</color>発動中に{LAYOUT_CONSOLECONTROLLER#スティック}{LAYOUT_FALLBACK#スティック}を入力して発動：\n散弾銃で刺突射撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。発砲時に<color=#FFFFFF>「強化散弾」</color>を所持している場合、<color=#FFFFFF>「強化散弾」</color>を1発消費して<color=#FE437E>エーテル属性ダメージ</color>を大量に与える。"
+            },
+            "124100008": {
+                "Title": "回避反撃：火力バースト",
+                "Description": "<color=#FFFFFF>『極限回避』</color>後に <IconMap:Icon_Normal> を押して発動：\n前方の敵に向かってエーテルのバックショット弾を発射し、<color=#FE437E>エーテル属性ダメージ</color>を与える。\nスキル発動時、<color=#FFFFFF>「強化散弾」</color>を1発獲得する。\nスキル発動中、無敵効果を得る。"
+            },
+            "124110032": {
+                "Title": "ダッシュ攻撃：火力奇襲"
+            },
+            "124110033": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1241017, Prop:1001}"
+            },
+            "124110034": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1241017, Prop:1002}"
+            },
+            "124110035": {
+                "Title": "ダッシュ攻撃：火力制圧"
+            },
+            "124110036": {
+                "Description": "ダメージ倍率（物理）",
+                "Param": "{Skill:1241018, Prop:1001}"
+            },
+            "124110037": {
+                "Description": "ブレイク倍率（物理）",
+                "Param": "{Skill:1241018, Prop:1002}"
+            },
+            "124110038": {
+                "Description": "ダメージ倍率（エーテル）",
+                "Param": "{Skill:1241019, Prop:1001}"
+            },
+            "124110039": {
+                "Description": "ブレイク倍率（エーテル）",
+                "Param": "{Skill:1241019, Prop:1002}"
+            },
+            "124110040": {
+                "Title": "回避反撃：火力バースト"
+            },
+            "124110041": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1241020, Prop:1001}"
+            },
+            "124110042": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1241020, Prop:1002}"
+            }
+        },
+        "3": {
+            "124100009": {
+                "Title": "連携スキル：殲滅モード",
+                "Description": "<color=#FFFFFF>『連携スキル』</color>開始時に、対応するエージェントを選択して発動：\n「完全変形した銃器」で飽和攻撃を仕掛ける。ビームと誘導弾を発射し、<color=#FE437E>エーテル属性ダメージ</color>を大量に与える。\nスキル発動時、<color=#FFFFFF>「強化散弾」</color>を3発獲得する。\nスキル発動中、無敵効果を得る。"
+            },
+            "124100010": {
+                "Title": "終結スキル：殲滅モードMAX",
+                "Description": "デシベルレートが<color=#FFFFFF>『Maximum』</color>に達した時に <IconMap:Icon_UltimateReady> を押して発動：\n「完全変形した銃器」で飽和攻撃を仕掛ける。ビームと誘導弾を発射し、<color=#FE437E>エーテル属性ダメージ</color>を大量に与える。\nスキル発動時、<color=#FFFFFF>「強化散弾」</color>を3発獲得する。\nスキル発動中、無敵効果を得る。"
+            },
+            "124110043": {
+                "Title": "連携スキル：殲滅モード"
+            },
+            "124110044": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1241022, Prop:1001}"
+            },
+            "124110045": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1241022, Prop:1002}"
+            },
+            "124110046": {
+                "Title": "終結スキル：殲滅モードMAX"
+            },
+            "124110047": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1241023, Prop:1001}"
+            },
+            "124110048": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1241023, Prop:1002}"
+            }
+        },
+        "6": {
+            "124100012": {
+                "Title": "クイック支援：火力援護",
+                "Description": "操作しているメンバーが吹き飛ばされた時に、<IconMap:Icon_Switch> を押して発動：\n前方の敵に向かってエーテルのバックショット弾を発射し、<color=#FE437E>エーテル属性ダメージ</color>を与える。\nスキル発動時、<color=#FFFFFF>「強化散弾」</color>を1発獲得する。\nスキル発動中、無敵効果を得る。"
+            },
+            "124100013": {
+                "Title": "回避支援：警戒援護体制",
+                "Description": "出場中のメンバーが攻撃されそうになった時に、 <IconMap:Icon_Switch> を押して発動：\n敵の攻撃を回避し、<color=#FFFFFF>「極限視界」</color>を発動する。\nスキル発動中、無敵効果を得る。"
+            },
+            "124100014": {
+                "Title": "支援突撃：正当防衛",
+                "Description": "<color=#FFFFFF>『回避支援』</color>発動後、 <IconMap:Icon_Normal> を押して発動：\n体術と散弾銃を織り交ぜながら攻撃し、それぞれ<color=#F0D12B>物理属性ダメージ</color>と<color=#FE437E>エーテル属性ダメージ</color>を与える。\nスキル発動時、<color=#FFFFFF>「強化散弾」</color>を3発獲得する。\nスキル発動中、無敵効果を得る。"
+            },
+            "124110049": {
+                "Title": "クイック支援：火力援護"
+            },
+            "124110050": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1241024, Prop:1001}"
+            },
+            "124110051": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1241024, Prop:1002}"
+            },
+            "124110052": {
+                "Title": "支援突撃：正当防衛"
+            },
+            "124110053": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1241025, Prop:1001}"
+            },
+            "124110054": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1241025, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1241001": {
+            "DamageValue": 4310,
+            "DamageGrowth": 400,
+            "DazeValue": 2160,
+            "DazeGrowth": 100
+        },
+        "1241002": {
+            "DamageValue": 12640,
+            "DamageGrowth": 1150,
+            "DazeValue": 9730,
+            "DazeGrowth": 450
+        },
+        "1241003": {
+            "DamageValue": 13730,
+            "DamageGrowth": 1250,
+            "DazeValue": 9470,
+            "DazeGrowth": 440
+        },
+        "1241004": {
+            "DamageValue": 15100,
+            "DamageGrowth": 1380,
+            "DazeValue": 12430,
+            "DazeGrowth": 570
+        },
+        "1241005": {
+            "DamageValue": 16220,
+            "DamageGrowth": 1480,
+            "DazeValue": 13920,
+            "DazeGrowth": 640
+        },
+        "1241006": {
+            "DamageValue": 5370,
+            "DamageGrowth": 490,
+            "DazeValue": 5960,
+            "DazeGrowth": 280
+        },
+        "1241007": {
+            "DamageValue": 5370,
+            "DamageGrowth": 490,
+            "DazeValue": 5960,
+            "DazeGrowth": 280
+        },
+        "1241008": {
+            "DamageValue": 16090,
+            "DamageGrowth": 1470,
+            "DazeValue": 17870,
+            "DazeGrowth": 820
+        },
+        "1241009": {
+            "DamageValue": 5370,
+            "DamageGrowth": 490,
+            "DazeValue": 5960,
+            "DazeGrowth": 280
+        },
+        "1241010": {
+            "DamageValue": 13590,
+            "DamageGrowth": 1240,
+            "DazeValue": 5960,
+            "DazeGrowth": 280
+        },
+        "1241011": {
+            "DamageValue": 13590,
+            "DamageGrowth": 1240,
+            "DazeValue": 5960,
+            "DazeGrowth": 280
+        },
+        "1241012": {
+            "DamageValue": 40770,
+            "DamageGrowth": 3710,
+            "DazeValue": 17870,
+            "DazeGrowth": 820
+        },
+        "1241013": {
+            "DamageValue": 13590,
+            "DamageGrowth": 1240,
+            "DazeValue": 5960,
+            "DazeGrowth": 280
+        },
+        "1241014": {
+            "DamageValue": 7890,
+            "DamageGrowth": 720,
+            "DazeValue": 7890,
+            "DazeGrowth": 360
+        },
+        "1241015": {
+            "DamageValue": 1840,
+            "DamageGrowth": 170,
+            "DazeValue": 1840,
+            "DazeGrowth": 90
+        },
+        "1241016": {
+            "DamageValue": 58740,
+            "DamageGrowth": 5340,
+            "DazeValue": 48000,
+            "DazeGrowth": 2190
+        },
+        "1241017": {
+            "DamageValue": 5510,
+            "DamageGrowth": 510,
+            "DazeValue": 2760,
+            "DazeGrowth": 130
+        },
+        "1241018": {
+            "DamageValue": 5370,
+            "DamageGrowth": 490,
+            "DazeValue": 5960,
+            "DazeGrowth": 280
+        },
+        "1241019": {
+            "DamageValue": 13590,
+            "DamageGrowth": 1240,
+            "DazeValue": 5960,
+            "DazeGrowth": 280
+        },
+        "1241020": {
+            "DamageValue": 17680,
+            "DamageGrowth": 1610,
+            "DazeValue": 16140,
+            "DazeGrowth": 740
+        },
+        "1241021": {
+            "DamageValue": 17570,
+            "DamageGrowth": 1600,
+            "DazeValue": 11550,
+            "DazeGrowth": 530
+        },
+        "1241022": {
+            "DamageValue": 58750,
+            "DamageGrowth": 5350,
+            "DazeValue": 14860,
+            "DazeGrowth": 680
+        },
+        "1241023": {
+            "DamageValue": 197760,
+            "DamageGrowth": 17980,
+            "DazeValue": 12510,
+            "DazeGrowth": 627
+        },
+        "1241024": {
+            "DamageValue": 5140,
+            "DamageGrowth": 470,
+            "DazeValue": 5140,
+            "DazeGrowth": 240
+        },
+        "1241025": {
+            "DamageValue": 35580,
+            "DamageGrowth": 3240,
+            "DazeValue": 30860,
+            "DazeGrowth": 1410
+        },
+        "1241026": {
+            "DamageValue": 11010,
+            "DamageGrowth": 1010,
+            "DazeValue": 5510,
+            "DazeGrowth": 260
+        },
+        "1241027": {
+            "DamageValue": 88000,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

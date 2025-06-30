@@ -1,0 +1,532 @@
+{
+    "Name": "Lighter",
+    "ElementTypes": [
+        "Fire"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Oberchampion",
+            "Description": "Unter den durch die <color=#FFFFFF>passive Kernfähigkeit: Brandbeschleuniger</color> ausgelösten Maluseffekten erhöht der Effekt <color=#FFFFFF>Zusammenbruch</color> die Benommenheit-Dauer um 5 s. Der <color=#98EFF0>Eis-WDS</color> und der <color=#FF5521>Feuer-WDS</color> werden zusätzlich um 10 % reduziert. Wird <color=#FFFFFF>Moral</color> während des leichten Startschlags oder der Jab-Kombo aufgebraucht, wird automatisch im Anschluss ein kraftvoller Gnadenstoß ausgeführt und der durch den kraftvollen Gnadenstoß verursachte SCH wird um 30 % erhöht.",
+            "Lore": "Der Sieg des Oberchampions ist entscheidend. Das Duell mit dem stärksten Krieger der anderen Seite beseitigt die Bedrohung für den Anführer und gibt der Truppe gleichzeitig einen enormen moralischen Schub.\nFür ihn ist der Sieg das Einzige, was zählt.\n„Der Oberchampion kann nicht besiegt werden.“"
+        },
+        "2": {
+            "Title": "Roter Schal",
+            "Description": "Wenn durch die <color=#FFFFFF>passive Kernfähigkeit: Brandbeschleuniger</color> der Effekt <color=#FFFFFF>Zusammenbruch</color> bei einem Gegner verursacht wird, erhöht sich der Benommenheit-SCH-Multiplikator des Ziels um 25 %. Der durch <color=#FFFFFF>Euphorie</color> von <color=#FFFFFF>Zusatzfähigkeit: Hoher Kampfgeist</color> gewährte <color=#98EFF0>Eis-SCH</color>- und <color=#FF5521>Feuer-SCH</color>-Bonus erhöht sich auf 120 % des ursprünglichen Werts.",
+            "Lore": "Als „Roter Schal“ der Söhne von Calydon ist Lighter in der Außenzone sehr berühmt.\nNicht nur wegen seiner Fäuste, auch wegen ... seiner einzigartigen Sprechweise.\n„Ich genieße es zwar, es ruhig angehen zu lassen ... aber ohne mich würdet ihr nicht auskommen, oder?“"
+        },
+        "3": {
+            "Title": "Söldneranführer",
+            "Description": "Fähigkeitsstufe von <color=#FFFFFF>Basisangriff</color>, <color=#FFFFFF>Ausweichen</color>, <color=#FFFFFF>Hilfe</color>, <color=#FFFFFF>Spezialangriff</color> und <color=#FFFFFF>Kettenangriff</color> +2",
+            "Lore": "„Ich bin vermutlich die als Anführer ungeeignetste Person der Welt.“"
+        },
+        "4": {
+            "Title": "Sonnenbrille",
+            "Description": "Wenn Lighter inaktiv in der Truppe ist, erhöht sich die Energie-Regeneration der Figur auf dem Feld um 10 %. Wenn Lighter in den Zustand <color=#FFFFFF>Moralausbruch</color> eintritt, stellt er für inaktive Figuren 4 Pkt. Energie wieder her, 18 s Abklingzeit.",
+            "Lore": "„Du willst wissen, warum ich eine Sonnenbrille trage? Äh ... Weil mir beim Anblick von Blut übel wird, schätze ich.“"
+        },
+        "5": {
+            "Title": "Entscheidungsträger",
+            "Description": "Fähigkeitsstufe von <color=#FFFFFF>Basisangriff</color>, <color=#FFFFFF>Ausweichen</color>, <color=#FFFFFF>Hilfe</color>, <color=#FFFFFF>Spezialangriff</color> und <color=#FFFFFF>Kettenangriff</color> +2",
+            "Lore": "„Gib mir einen Befehl und ich führe ihn aus. So einfach ist das.“\nLighter richtet seine Sonnenbrille mit einem blassen Lächeln.\n„Verlang nur nicht von mir, wieder Entscheidungen zu treffen.“"
+        },
+        "6": {
+            "Title": "Überlebender",
+            "Description": "Lighters Wiederherstellungs-Effizienz von <color=#FFFFFF>Moral</color> erhöht sich auf 200 % des ursprünglichen Werts. Trifft Lighter einen Gegner mit einem heftigen Schlag während eines <color=#FFFFFF>Basisangriffs</color>, eines <color=#FFFFFF>Ausweichkonters</color>, eines <color=#FFFFFF>Spezialangriffs</color>, eines <color=#FFFFFF>verstärkten Spezialangriffs</color>, einer <color=#FFFFFF>schnellen Hilfe</color>, einer <color=#FFFFFF>sukzessiven Hilfe</color>, eines <color=#FFFFFF>Kettenangriffs</color> oder eines <color=#FFFFFF>Ultimates</color>, wird der Effekt <color=#FFFFFF>Flammender Stoß</color> ausgelöst, der <color=#FF5521>Feuer-SCH</color> in Höhe von 250 % des ANG verursacht. Dieser Effekt kann einmal alle 8 s bei jedem Gegner ausgelöst werden. Wenn Lighters Stoßkraft mehr als 170 Pkt. beträgt, erhöht sich für jeden Pkt. Stoßkraft über diesen Wert der Multiplikator von <color=#FFFFFF>Flammender Stoß</color> um 5 %, max. um 500 %. Wenn <color=#FFFFFF>Moral</color> während des leichten Startschlags oder der Jab-Kombo aufgebraucht wird und automatisch im Anschluss ein kraftvoller Gnadenstoß ausgeführt wird und dieser einen Gegner trifft, kann die Abklingzeit ignoriert werden und der Effekt <color=#FFFFFF>Flammender Stoß</color> kann zusätzlich einmal ausgelöst werden.",
+            "Lore": "Hätte er die Wahl, alles noch einmal zu machen, würde er sich nicht dafür entscheiden, der einzige Überlebende zu sein.\nLeider ist das Schicksal selten eine Wahl."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passive Kernfähigkeit: Brandbeschleuniger",
+            "DescriptionByLevel": {
+                "1": "Lighter erhält mit der Zeit automatisch <color=#FFFFFF>Moral</color> und regeneriert pro Sekunde 2,9 Pkt. Für jeden durch irgendeine Truppenfigur verbrauchten Pkt. Energie regeneriert Lighter zusätzlich 0,26 Pkt. <color=#FFFFFF>Moral</color>. Max. kann Lighter 100 Pkt. <color=#FFFFFF>Moral</color> haben. Wenn seine <color=#FFFFFF>Moral</color> auf 80 Pkt. wiederhergestellt ist, führt Lighter beim nächsten Einwechsel aufs Feld direkt eine <color=#FFFFFF>schnelle Hilfe</color> aus. Nachdem <color=#FFFFFF>Moral</color> 80 Pkt. erreicht hat, tritt Lighter beim Anwenden des 5. Angriffs seines <color=#FFFFFF>Basisangriffs</color> in den Zustand <color=#FFFFFF>Moralausbruch</color> ein, wodurch die Macht des leichten Startschlags, der Jab-Kombo und des Gnadenstoßes des 5. Angriffs seines <color=#FFFFFF>Basisangriffs</color> verstärkt wird. Beim Treffen von Gegnern nach der Machterhöhung wird kontinuierlich <color=#FFFFFF>Moral</color> verbraucht. Für je 10 verbrauchte Pkt. <color=#FFFFFF>Moral</color> erhöht sich Lighters Stoßkraft um <color=#2BAD00>1 %</color>, max. um <color=#2BAD00>10 %</color>, hält 6 s.\nIm Zustand <color=#FFFFFF>Moralausbruch</color> erhält Lighter nicht mehr automatisch mit der Zeit <color=#FFFFFF>Moral</color>. Wird <color=#FFFFFF>Moral</color> während eines leichten Startschlags oder einer Jab-Kombo vollständig aufgebraucht, führt Lighter gleich im Anschluss automatisch einen noch kraftvolleren Gnadenstoß aus.\nWenn im Zustand <color=#FFFFFF>Moralausbruch</color> ein Gegner durch einen leichten Startschlag oder eine Jab-Kombo getroffen wird, verringern sich der <color=#98EFF0>Eis-WDS</color> und der <color=#FF5521>Feuer-WDS</color> des Ziels um 15 %, hält 30 s.\nWenn im Zustand <color=#FFFFFF>Moralausbruch</color> der Gnadenstoß einen Gegner trifft, wird der Effekt <color=#FFFFFF>Zusammenbruch</color> auf das Ziel angewendet und die Benommenheit-Dauer dieses Ziels wird um 3 s erhöht. Der Effekt <color=#FFFFFF>Zusammenbruch</color> kann nur einmal auf ein Ziel angewendet werden, bevor dieses sich von Benommenheit erholt.\nWenn ein Gegner durch den Gnadenstoß des 5. Angriffs des <color=#FFFFFF>Basisangriffs</color> getroffen wird, Lighter ausgewechselt wird oder <color=#FFFFFF>Moral</color> aufgebraucht ist, verlässt Lighter den Zustand <color=#FFFFFF>Moralausbruch</color>. Unverbrauchte <color=#FFFFFF>Moral</color> wird beibehalten.",
+                "2": "Lighter erhält mit der Zeit automatisch <color=#FFFFFF>Moral</color> und regeneriert pro Sekunde 2,9 Pkt. Für jeden durch irgendeine Truppenfigur verbrauchten Pkt. Energie regeneriert Lighter zusätzlich 0,26 Pkt. <color=#FFFFFF>Moral</color>. Max. kann Lighter 100 Pkt. <color=#FFFFFF>Moral</color> haben. Wenn seine <color=#FFFFFF>Moral</color> auf 80 Pkt. wiederhergestellt ist, führt Lighter beim nächsten Einwechsel aufs Feld direkt eine <color=#FFFFFF>schnelle Hilfe</color> aus. Nachdem <color=#FFFFFF>Moral</color> 80 Pkt. erreicht hat, tritt Lighter beim Anwenden des 5. Angriffs seines <color=#FFFFFF>Basisangriffs</color> in den Zustand <color=#FFFFFF>Moralausbruch</color> ein, wodurch die Macht des leichten Startschlags, der Jab-Kombo und des Gnadenstoßes des 5. Angriffs seines <color=#FFFFFF>Basisangriffs</color> verstärkt wird. Beim Treffen von Gegnern nach der Machterhöhung wird kontinuierlich <color=#FFFFFF>Moral</color> verbraucht. Für je 10 verbrauchte Pkt. <color=#FFFFFF>Moral</color> erhöht sich Lighters Stoßkraft um <color=#2BAD00>1,17 %</color>, max. um <color=#2BAD00>11,7 %</color>, hält 6 s.\nIm Zustand <color=#FFFFFF>Moralausbruch</color> erhält Lighter nicht mehr automatisch mit der Zeit <color=#FFFFFF>Moral</color>. Wird <color=#FFFFFF>Moral</color> während eines leichten Startschlags oder einer Jab-Kombo vollständig aufgebraucht, führt Lighter gleich im Anschluss automatisch einen noch kraftvolleren Gnadenstoß aus.\nWenn im Zustand <color=#FFFFFF>Moralausbruch</color> ein Gegner durch einen leichten Startschlag oder eine Jab-Kombo getroffen wird, verringern sich der <color=#98EFF0>Eis-WDS</color> und der <color=#FF5521>Feuer-WDS</color> des Ziels um 15 %, hält 30 s.\nWenn im Zustand <color=#FFFFFF>Moralausbruch</color> der Gnadenstoß einen Gegner trifft, wird der Effekt <color=#FFFFFF>Zusammenbruch</color> auf das Ziel angewendet und die Benommenheit-Dauer dieses Ziels wird um 3 s erhöht. Der Effekt <color=#FFFFFF>Zusammenbruch</color> kann nur einmal auf ein Ziel angewendet werden, bevor dieses sich von Benommenheit erholt.\nWenn ein Gegner durch den Gnadenstoß des 5. Angriffs des <color=#FFFFFF>Basisangriffs</color> getroffen wird, Lighter ausgewechselt wird oder <color=#FFFFFF>Moral</color> aufgebraucht ist, verlässt Lighter den Zustand <color=#FFFFFF>Moralausbruch</color>. Unverbrauchte <color=#FFFFFF>Moral</color> wird beibehalten.",
+                "3": "Lighter erhält mit der Zeit automatisch <color=#FFFFFF>Moral</color> und regeneriert pro Sekunde 2,9 Pkt. Für jeden durch irgendeine Truppenfigur verbrauchten Pkt. Energie regeneriert Lighter zusätzlich 0,26 Pkt. <color=#FFFFFF>Moral</color>. Max. kann Lighter 100 Pkt. <color=#FFFFFF>Moral</color> haben. Wenn seine <color=#FFFFFF>Moral</color> auf 80 Pkt. wiederhergestellt ist, führt Lighter beim nächsten Einwechsel aufs Feld direkt eine <color=#FFFFFF>schnelle Hilfe</color> aus. Nachdem <color=#FFFFFF>Moral</color> 80 Pkt. erreicht hat, tritt Lighter beim Anwenden des 5. Angriffs seines <color=#FFFFFF>Basisangriffs</color> in den Zustand <color=#FFFFFF>Moralausbruch</color> ein, wodurch die Macht des leichten Startschlags, der Jab-Kombo und des Gnadenstoßes des 5. Angriffs seines <color=#FFFFFF>Basisangriffs</color> verstärkt wird. Beim Treffen von Gegnern nach der Machterhöhung wird kontinuierlich <color=#FFFFFF>Moral</color> verbraucht. Für je 10 verbrauchte Pkt. <color=#FFFFFF>Moral</color> erhöht sich Lighters Stoßkraft um <color=#2BAD00>1,33 %</color>, max. um <color=#2BAD00>13,3 %</color>, hält 6 s.\nIm Zustand <color=#FFFFFF>Moralausbruch</color> erhält Lighter nicht mehr automatisch mit der Zeit <color=#FFFFFF>Moral</color>. Wird <color=#FFFFFF>Moral</color> während eines leichten Startschlags oder einer Jab-Kombo vollständig aufgebraucht, führt Lighter gleich im Anschluss automatisch einen noch kraftvolleren Gnadenstoß aus.\nWenn im Zustand <color=#FFFFFF>Moralausbruch</color> ein Gegner durch einen leichten Startschlag oder eine Jab-Kombo getroffen wird, verringern sich der <color=#98EFF0>Eis-WDS</color> und der <color=#FF5521>Feuer-WDS</color> des Ziels um 15 %, hält 30 s.\nWenn im Zustand <color=#FFFFFF>Moralausbruch</color> der Gnadenstoß einen Gegner trifft, wird der Effekt <color=#FFFFFF>Zusammenbruch</color> auf das Ziel angewendet und die Benommenheit-Dauer dieses Ziels wird um 3 s erhöht. Der Effekt <color=#FFFFFF>Zusammenbruch</color> kann nur einmal auf ein Ziel angewendet werden, bevor dieses sich von Benommenheit erholt.\nWenn ein Gegner durch den Gnadenstoß des 5. Angriffs des <color=#FFFFFF>Basisangriffs</color> getroffen wird, Lighter ausgewechselt wird oder <color=#FFFFFF>Moral</color> aufgebraucht ist, verlässt Lighter den Zustand <color=#FFFFFF>Moralausbruch</color>. Unverbrauchte <color=#FFFFFF>Moral</color> wird beibehalten.",
+                "4": "Lighter erhält mit der Zeit automatisch <color=#FFFFFF>Moral</color> und regeneriert pro Sekunde 2,9 Pkt. Für jeden durch irgendeine Truppenfigur verbrauchten Pkt. Energie regeneriert Lighter zusätzlich 0,26 Pkt. <color=#FFFFFF>Moral</color>. Max. kann Lighter 100 Pkt. <color=#FFFFFF>Moral</color> haben. Wenn seine <color=#FFFFFF>Moral</color> auf 80 Pkt. wiederhergestellt ist, führt Lighter beim nächsten Einwechsel aufs Feld direkt eine <color=#FFFFFF>schnelle Hilfe</color> aus. Nachdem <color=#FFFFFF>Moral</color> 80 Pkt. erreicht hat, tritt Lighter beim Anwenden des 5. Angriffs seines <color=#FFFFFF>Basisangriffs</color> in den Zustand <color=#FFFFFF>Moralausbruch</color> ein, wodurch die Macht des leichten Startschlags, der Jab-Kombo und des Gnadenstoßes des 5. Angriffs seines <color=#FFFFFF>Basisangriffs</color> verstärkt wird. Beim Treffen von Gegnern nach der Machterhöhung wird kontinuierlich <color=#FFFFFF>Moral</color> verbraucht. Für je 10 verbrauchte Pkt. <color=#FFFFFF>Moral</color> erhöht sich Lighters Stoßkraft um <color=#2BAD00>1,5 %</color>, max. um <color=#2BAD00>15 %</color>, hält 6 s.\nIm Zustand <color=#FFFFFF>Moralausbruch</color> erhält Lighter nicht mehr automatisch mit der Zeit <color=#FFFFFF>Moral</color>. Wird <color=#FFFFFF>Moral</color> während eines leichten Startschlags oder einer Jab-Kombo vollständig aufgebraucht, führt Lighter gleich im Anschluss automatisch einen noch kraftvolleren Gnadenstoß aus.\nWenn im Zustand <color=#FFFFFF>Moralausbruch</color> ein Gegner durch einen leichten Startschlag oder eine Jab-Kombo getroffen wird, verringern sich der <color=#98EFF0>Eis-WDS</color> und der <color=#FF5521>Feuer-WDS</color> des Ziels um 15 %, hält 30 s.\nWenn im Zustand <color=#FFFFFF>Moralausbruch</color> der Gnadenstoß einen Gegner trifft, wird der Effekt <color=#FFFFFF>Zusammenbruch</color> auf das Ziel angewendet und die Benommenheit-Dauer dieses Ziels wird um 3 s erhöht. Der Effekt <color=#FFFFFF>Zusammenbruch</color> kann nur einmal auf ein Ziel angewendet werden, bevor dieses sich von Benommenheit erholt.\nWenn ein Gegner durch den Gnadenstoß des 5. Angriffs des <color=#FFFFFF>Basisangriffs</color> getroffen wird, Lighter ausgewechselt wird oder <color=#FFFFFF>Moral</color> aufgebraucht ist, verlässt Lighter den Zustand <color=#FFFFFF>Moralausbruch</color>. Unverbrauchte <color=#FFFFFF>Moral</color> wird beibehalten.",
+                "5": "Lighter erhält mit der Zeit automatisch <color=#FFFFFF>Moral</color> und regeneriert pro Sekunde 2,9 Pkt. Für jeden durch irgendeine Truppenfigur verbrauchten Pkt. Energie regeneriert Lighter zusätzlich 0,26 Pkt. <color=#FFFFFF>Moral</color>. Max. kann Lighter 100 Pkt. <color=#FFFFFF>Moral</color> haben. Wenn seine <color=#FFFFFF>Moral</color> auf 80 Pkt. wiederhergestellt ist, führt Lighter beim nächsten Einwechsel aufs Feld direkt eine <color=#FFFFFF>schnelle Hilfe</color> aus. Nachdem <color=#FFFFFF>Moral</color> 80 Pkt. erreicht hat, tritt Lighter beim Anwenden des 5. Angriffs seines <color=#FFFFFF>Basisangriffs</color> in den Zustand <color=#FFFFFF>Moralausbruch</color> ein, wodurch die Macht des leichten Startschlags, der Jab-Kombo und des Gnadenstoßes des 5. Angriffs seines <color=#FFFFFF>Basisangriffs</color> verstärkt wird. Beim Treffen von Gegnern nach der Machterhöhung wird kontinuierlich <color=#FFFFFF>Moral</color> verbraucht. Für je 10 verbrauchte Pkt. <color=#FFFFFF>Moral</color> erhöht sich Lighters Stoßkraft um <color=#2BAD00>1,67 %</color>, max. um <color=#2BAD00>16,7 %</color>, hält 6 s.\nIm Zustand <color=#FFFFFF>Moralausbruch</color> erhält Lighter nicht mehr automatisch mit der Zeit <color=#FFFFFF>Moral</color>. Wird <color=#FFFFFF>Moral</color> während eines leichten Startschlags oder einer Jab-Kombo vollständig aufgebraucht, führt Lighter gleich im Anschluss automatisch einen noch kraftvolleren Gnadenstoß aus.\nWenn im Zustand <color=#FFFFFF>Moralausbruch</color> ein Gegner durch einen leichten Startschlag oder eine Jab-Kombo getroffen wird, verringern sich der <color=#98EFF0>Eis-WDS</color> und der <color=#FF5521>Feuer-WDS</color> des Ziels um 15 %, hält 30 s.\nWenn im Zustand <color=#FFFFFF>Moralausbruch</color> der Gnadenstoß einen Gegner trifft, wird der Effekt <color=#FFFFFF>Zusammenbruch</color> auf das Ziel angewendet und die Benommenheit-Dauer dieses Ziels wird um 3 s erhöht. Der Effekt <color=#FFFFFF>Zusammenbruch</color> kann nur einmal auf ein Ziel angewendet werden, bevor dieses sich von Benommenheit erholt.\nWenn ein Gegner durch den Gnadenstoß des 5. Angriffs des <color=#FFFFFF>Basisangriffs</color> getroffen wird, Lighter ausgewechselt wird oder <color=#FFFFFF>Moral</color> aufgebraucht ist, verlässt Lighter den Zustand <color=#FFFFFF>Moralausbruch</color>. Unverbrauchte <color=#FFFFFF>Moral</color> wird beibehalten.",
+                "6": "Lighter erhält mit der Zeit automatisch <color=#FFFFFF>Moral</color> und regeneriert pro Sekunde 2,9 Pkt. Für jeden durch irgendeine Truppenfigur verbrauchten Pkt. Energie regeneriert Lighter zusätzlich 0,26 Pkt. <color=#FFFFFF>Moral</color>. Max. kann Lighter 100 Pkt. <color=#FFFFFF>Moral</color> haben. Wenn seine <color=#FFFFFF>Moral</color> auf 80 Pkt. wiederhergestellt ist, führt Lighter beim nächsten Einwechsel aufs Feld direkt eine <color=#FFFFFF>schnelle Hilfe</color> aus. Nachdem <color=#FFFFFF>Moral</color> 80 Pkt. erreicht hat, tritt Lighter beim Anwenden des 5. Angriffs seines <color=#FFFFFF>Basisangriffs</color> in den Zustand <color=#FFFFFF>Moralausbruch</color> ein, wodurch die Macht des leichten Startschlags, der Jab-Kombo und des Gnadenstoßes des 5. Angriffs seines <color=#FFFFFF>Basisangriffs</color> verstärkt wird. Beim Treffen von Gegnern nach der Machterhöhung wird kontinuierlich <color=#FFFFFF>Moral</color> verbraucht. Für je 10 verbrauchte Pkt. <color=#FFFFFF>Moral</color> erhöht sich Lighters Stoßkraft um <color=#2BAD00>1,83 %</color>, max. um <color=#2BAD00>18,3 %</color>, hält 6 s.\nIm Zustand <color=#FFFFFF>Moralausbruch</color> erhält Lighter nicht mehr automatisch mit der Zeit <color=#FFFFFF>Moral</color>. Wird <color=#FFFFFF>Moral</color> während eines leichten Startschlags oder einer Jab-Kombo vollständig aufgebraucht, führt Lighter gleich im Anschluss automatisch einen noch kraftvolleren Gnadenstoß aus.\nWenn im Zustand <color=#FFFFFF>Moralausbruch</color> ein Gegner durch einen leichten Startschlag oder eine Jab-Kombo getroffen wird, verringern sich der <color=#98EFF0>Eis-WDS</color> und der <color=#FF5521>Feuer-WDS</color> des Ziels um 15 %, hält 30 s.\nWenn im Zustand <color=#FFFFFF>Moralausbruch</color> der Gnadenstoß einen Gegner trifft, wird der Effekt <color=#FFFFFF>Zusammenbruch</color> auf das Ziel angewendet und die Benommenheit-Dauer dieses Ziels wird um 3 s erhöht. Der Effekt <color=#FFFFFF>Zusammenbruch</color> kann nur einmal auf ein Ziel angewendet werden, bevor dieses sich von Benommenheit erholt.\nWenn ein Gegner durch den Gnadenstoß des 5. Angriffs des <color=#FFFFFF>Basisangriffs</color> getroffen wird, Lighter ausgewechselt wird oder <color=#FFFFFF>Moral</color> aufgebraucht ist, verlässt Lighter den Zustand <color=#FFFFFF>Moralausbruch</color>. Unverbrauchte <color=#FFFFFF>Moral</color> wird beibehalten.",
+                "7": "Lighter erhält mit der Zeit automatisch <color=#FFFFFF>Moral</color> und regeneriert pro Sekunde 2,9 Pkt. Für jeden durch irgendeine Truppenfigur verbrauchten Pkt. Energie regeneriert Lighter zusätzlich 0,26 Pkt. <color=#FFFFFF>Moral</color>. Max. kann Lighter 100 Pkt. <color=#FFFFFF>Moral</color> haben. Wenn seine <color=#FFFFFF>Moral</color> auf 80 Pkt. wiederhergestellt ist, führt Lighter beim nächsten Einwechsel aufs Feld direkt eine <color=#FFFFFF>schnelle Hilfe</color> aus. Nachdem <color=#FFFFFF>Moral</color> 80 Pkt. erreicht hat, tritt Lighter beim Anwenden des 5. Angriffs seines <color=#FFFFFF>Basisangriffs</color> in den Zustand <color=#FFFFFF>Moralausbruch</color> ein, wodurch die Macht des leichten Startschlags, der Jab-Kombo und des Gnadenstoßes des 5. Angriffs seines <color=#FFFFFF>Basisangriffs</color> verstärkt wird. Beim Treffen von Gegnern nach der Machterhöhung wird kontinuierlich <color=#FFFFFF>Moral</color> verbraucht. Für je 10 verbrauchte Pkt. <color=#FFFFFF>Moral</color> erhöht sich Lighters Stoßkraft um <color=#2BAD00>2 %</color>, max. um <color=#2BAD00>20 %</color>, hält 6 s.\nIm Zustand <color=#FFFFFF>Moralausbruch</color> erhält Lighter nicht mehr automatisch mit der Zeit <color=#FFFFFF>Moral</color>. Wird <color=#FFFFFF>Moral</color> während eines leichten Startschlags oder einer Jab-Kombo vollständig aufgebraucht, führt Lighter gleich im Anschluss automatisch einen noch kraftvolleren Gnadenstoß aus.\nWenn im Zustand <color=#FFFFFF>Moralausbruch</color> ein Gegner durch einen leichten Startschlag oder eine Jab-Kombo getroffen wird, verringern sich der <color=#98EFF0>Eis-WDS</color> und der <color=#FF5521>Feuer-WDS</color> des Ziels um 15 %, hält 30 s.\nWenn im Zustand <color=#FFFFFF>Moralausbruch</color> der Gnadenstoß einen Gegner trifft, wird der Effekt <color=#FFFFFF>Zusammenbruch</color> auf das Ziel angewendet und die Benommenheit-Dauer dieses Ziels wird um 3 s erhöht. Der Effekt <color=#FFFFFF>Zusammenbruch</color> kann nur einmal auf ein Ziel angewendet werden, bevor dieses sich von Benommenheit erholt.\nWenn ein Gegner durch den Gnadenstoß des 5. Angriffs des <color=#FFFFFF>Basisangriffs</color> getroffen wird, Lighter ausgewechselt wird oder <color=#FFFFFF>Moral</color> aufgebraucht ist, verlässt Lighter den Zustand <color=#FFFFFF>Moralausbruch</color>. Unverbrauchte <color=#FFFFFF>Moral</color> wird beibehalten."
+            }
+        },
+        "MathSkill": {
+            "Title": "Zusatzfähigkeit: Hoher Kampfgeist",
+            "Description": "Wenn sich in der Truppe eine <color=#FFFFFF>Attacke</color>-Figur befindet oder eine andere Figur derselben Fraktion angehört:\nWenn im Zustand <color=#FFFFFF>Moralausbruch</color> Lighter mit dem 5. Angriff seines <color=#FFFFFF>Basisangriffs</color> einen Gegner trifft, erhalten alle Truppenfiguren eine Stapelung <color=#FFFFFF>Euphorie</color>, max. 20-fach stapelbar, hält 30 s. Beim wiederholten Auslösen wird die Dauer aktualisiert. Für jede Stapelung <color=#FFFFFF>Euphorie</color> im Besitz erhöhen sich der <color=#98EFF0>Eis-SCH</color> und der <color=#FF5521>Feuer-SCH</color> durch Agenten um 1,25 %. Wenn beim Erhalt von <color=#FFFFFF>Euphorie</color> Lighters Stoßkraft 170 Pkt. übersteigt, erhöht sich pro 10 Pkt. zusätzlicher Stoßkraft der Bonuseffekt von <color=#FFFFFF>Euphorie</color> um weitere 0,25 %. Wenn eine Truppenfigur einen <color=#FFFFFF>Kettenangriff</color> anwendet, wird die <color=#FFFFFF>Euphorie</color>-Dauer aller Truppenfiguren aktualisiert. <color=#FFFFFF>Euphorie</color> kann den durch Agenten verursachten <color=#98EFF0>Eis-SCH</color> und <color=#FF5521>Feuer-SCH</color> max. um 75 % erhöhen."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "116100001": {
+                "Title": "Basisangriff: L-förmige Donnerfaust",
+                "Description": "Drücke oder halte <IconMap:Icon_Normal> gedrückt zum Anwenden:\nFührt bis zu 5 Schläge nach vorn aus und verursacht dabei <color=#F0D12B>phys. SCH</color> und <color=#FF5521>Feuer-SCH</color>.\nZiehe während des 3. Angriffs des <color=#FFFFFF>Basisangriffs</color> den {LAYOUT_CONSOLECONTROLLER#Stick}{LAYOUT_FALLBACK#Joystick} und drücke gleichzeitig <IconMap:Icon_Normal> mehrfach oder halte es gedrückt, um kontinuierlich Nahkampf-Folgeangriffe auszuführen. Lass den {LAYOUT_CONSOLECONTROLLER#Stick}{LAYOUT_FALLBACK#Joystick} los, um direkt im Anschluss den 4. Angriff des <color=#FFFFFF>Basisangriffs</color> auszuführen.\nZiehe während des 5. leichten Startschlags des <color=#FFFFFF>Basisangriffs</color> den {LAYOUT_CONSOLECONTROLLER#Stick}{LAYOUT_FALLBACK#Joystick} und drücke gleichzeitig <IconMap:Icon_Normal> mehrfach oder halte es gedrückt, um zwischen dem leichten Startschlag und dem 4. Angriff des <color=#FFFFFF>Basisangriffs</color> zu wechseln. Lass den {LAYOUT_CONSOLECONTROLLER#Stick}{LAYOUT_FALLBACK#Joystick} los, um direkt im Anschluss eine Jab-Kombo auszuführen.\nDrücke weiterhin <IconMap:Icon_Normal> mehrfach oder halte es gedrückt, um die Dauer der Jab-Kombo zu verlängern.\nWenn du mit dem mehrfachen Drücken oder dem Gedrückthalten von <IconMap:Icon_Normal> aufhörst oder die Jab-Kombo das Dauerlimit erreicht, wird ein Gnadenstoß nach vorn ausgeführt. Während des Gnadenstoßes ist Lighter unverwundbar.\nWährend des 5. Angriffs des <color=#FFFFFF>Basisangriffs</color> verringert sich Lighters erlittener SCH um 40 %.\nIm Zustand <color=#FFFFFF>Moralausbruch</color> erhöht sich während des 5. Angriffs des <color=#FFFFFF>Basisangriffs</color> die Stufe des Unterbrechungs-WDS. Der SCH-Reduktionseffekt erhöht sich auf 80 %."
+            },
+            "116110001": {
+                "Title": "Basisangriff: L-förmige Donnerfaust"
+            },
+            "116110002": {
+                "Description": "SCH-Multiplikator des 1. Angriffs",
+                "Param": "{Skill:1161001, Prop:1001}"
+            },
+            "116110003": {
+                "Description": "SCH-Multiplikator des 2. Angriffs",
+                "Param": "{Skill:1161002, Prop:1001}"
+            },
+            "116110004": {
+                "Description": "SCH-Multiplikator des 3. Angriffs",
+                "Param": "{Skill:1161003, Prop:1001}"
+            },
+            "116110005": {
+                "Description": "SCH-Multiplikator des 1. Folgeangriffs",
+                "Param": "{Skill:1161004, Prop:1001}"
+            },
+            "116110006": {
+                "Description": "SCH-Multiplikator des 2. Folgeangriffs",
+                "Param": "{Skill:1161005, Prop:1001}"
+            },
+            "116110007": {
+                "Description": "SCH-Multiplikator des 3. Folgeangriffs",
+                "Param": "{Skill:1161006, Prop:1001}"
+            },
+            "116110008": {
+                "Description": "SCH-Multiplikator des 4. Folgeangriffs",
+                "Param": "{Skill:1161007, Prop:1001}"
+            },
+            "116110009": {
+                "Description": "SCH-Multiplikator des 5. Folgeangriffs",
+                "Param": "{Skill:1161008, Prop:1001}"
+            },
+            "116110010": {
+                "Description": "SCH-Multiplikator des 4. Angriffs",
+                "Param": "{Skill:1161009, Prop:1001}"
+            },
+            "116110011": {
+                "Description": "SCH-Multiplikator des 5. Startschlags",
+                "Param": "{Skill:1161010, Prop:1001}"
+            },
+            "116110012": {
+                "Description": "SCH-Multiplikator des 5. Komboangriffs",
+                "Param": "{Skill:1161011, Prop:1001}"
+            },
+            "116110013": {
+                "Description": "SCH-Multiplikator des Gnadenstoßes des 5. Angriffs",
+                "Param": "{Skill:1161012, Prop:1001}"
+            },
+            "116110014": {
+                "Description": "SCH-Multiplikator des 5. Startschlags (Zustand „Moralausbruch“)",
+                "Param": "{Skill:1161026, Prop:1001}"
+            },
+            "116110015": {
+                "Description": "SCH-Multiplikator des 5. Komboangriffs (Zustand „Moralausbruch“)",
+                "Param": "{Skill:1161027, Prop:1001}"
+            },
+            "116110016": {
+                "Description": "SCH-Multiplikator des Gnadenstoßes des 5. Angriffs (Zustand „Moralausbruch“)",
+                "Param": "{Skill:1161028, Prop:1001}"
+            },
+            "116110017": {
+                "Description": "SCH-Multiplikator des kraftvollen Gnadenstoßes des 5. Angriffs (Zustand „Moralausbruch“)",
+                "Param": "{Skill:1161025, Prop:1001}"
+            },
+            "116110018": {
+                "Description": "Benommenheit-Multiplikator des 1. Angriffs",
+                "Param": "{Skill:1161001, Prop:1002}"
+            },
+            "116110019": {
+                "Description": "Benommenheit-Multiplikator des 2. Angriffs",
+                "Param": "{Skill:1161002, Prop:1002}"
+            },
+            "116110020": {
+                "Description": "Benommenheit-Multiplikator des 3. Angriffs",
+                "Param": "{Skill:1161003, Prop:1002}"
+            },
+            "116110021": {
+                "Description": "Benommenheit-Multiplikator des 1. Folgeangriffs",
+                "Param": "{Skill:1161004, Prop:1002}"
+            },
+            "116110022": {
+                "Description": "Benommenheit-Multiplikator des 2. Folgeangriffs",
+                "Param": "{Skill:1161005, Prop:1002}"
+            },
+            "116110023": {
+                "Description": "Benommenheit-Multiplikator des 3. Folgeangriffs",
+                "Param": "{Skill:1161006, Prop:1002}"
+            },
+            "116110024": {
+                "Description": "Benommenheit-Multiplikator des 4. Folgeangriffs",
+                "Param": "{Skill:1161007, Prop:1002}"
+            },
+            "116110025": {
+                "Description": "Benommenheit-Multiplikator des 5. Folgeangriffs",
+                "Param": "{Skill:1161008, Prop:1002}"
+            },
+            "116110026": {
+                "Description": "Benommenheit-Multiplikator des 4. Angriffs",
+                "Param": "{Skill:1161009, Prop:1002}"
+            },
+            "116110027": {
+                "Description": "Benommenheit-Multiplikator des 5. Startschlags",
+                "Param": "{Skill:1161010, Prop:1002}"
+            },
+            "116110028": {
+                "Description": "Benommenheit-Multiplikator des 5. Komboangriffs",
+                "Param": "{Skill:1161011, Prop:1002}"
+            },
+            "116110029": {
+                "Description": "Benommenheit-Multiplikator des Gnadenstoßes des 5. Angriffs",
+                "Param": "{Skill:1161012, Prop:1002}"
+            },
+            "116110030": {
+                "Description": "Benommenheit-Multiplikator des 5. Startschlags (Zustand „Moralausbruch“)",
+                "Param": "{Skill:1161026, Prop:1002}"
+            },
+            "116110031": {
+                "Description": "Benommenheit-Multiplikator des 5. Komboangriffs (Zustand „Moralausbruch“)",
+                "Param": "{Skill:1161027, Prop:1002}"
+            },
+            "116110032": {
+                "Description": "Benommenheit-Multiplikator des Gnadenstoßes des 5. Angriffs (Zustand „Moralausbruch“)",
+                "Param": "{Skill:1161028, Prop:1002}"
+            },
+            "116110033": {
+                "Description": "Benommenheit-Multiplikator des kraftvollen Gnadenstoßes des 5. Angriffs (Zustand „Moralausbruch“)",
+                "Param": "{Skill:1161025, Prop:1002}"
+            }
+        },
+        "1": {
+            "116100002": {
+                "Title": "Spezialangriff: V-förmiger Dämmer-Aufwärtshaken",
+                "Description": "Drücke <IconMap:Icon_Special> zum Anwenden:\nFührt einen Aufwärtshaken nach vorn aus, der <color=#FF5521>Feuer-SCH</color> verursacht.\nBeim Anwenden dieser Fähigkeit erhöht sich die Stufe des Unterbrechungs-WDS.\nDrücke während des Shuffle-Ausweichens <IconMap:Icon_Special> zum Anwenden:\nFührt eine Reihe von Schlägen nach vorn aus und verursacht <color=#FF5521>Feuer-SCH</color>.\nDurch den Einsatz dieser Fähigkeit wird die Kombo des <color=#FFFFFF>Basisangriffs</color> nicht unterbrochen.\nBeim Anwenden dieser Fähigkeit erhöht sich die Stufe des Unterbrechungs-WDS."
+            },
+            "116100003": {
+                "Title": "Verstärkter Spezialangriff: V-förmiger Dämmer-Aufwärtshaken – Volle Kraft",
+                "Description": "Drücke bei ausreichender Energie <IconMap:Icon_SpecialReady> zum Anwenden:\nFührt einen kraftvollen Aufwärtshaken nach vorn aus, springt dabei in die Luft und verursacht hohen <color=#FF5521>Feuer-SCH</color>.\nDrücke beim Anwenden dieser Fähigkeit <IconMap:Icon_SpecialReady> erneut, um zusätzlich Energie zu verbrauchen und einen kraftvollen Folgeangriff auszuführen, der hohen <color=#FF5521>Feuer-SCH</color> verursacht.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar.\nNach Anwenden der Fähigkeit, drücke oder halte <IconMap:Icon_Normal> gedrückt, um direkt im Anschluss den 4. Angriff des <color=#FFFFFF>Basisangriffs</color> auszuführen.\nDrücke während des Shuffle-Ausweichens, wenn Energie ausreichend ist, <IconMap:Icon_SpecialReady> zum Anwenden:\nFührt eine Reihe von Schlägen nach vorn aus und verursacht hohen <color=#FF5521>Feuer-SCH</color>.\nDurch den Einsatz dieser Fähigkeit wird die Kombo des <color=#FFFFFF>Basisangriffs</color> nicht unterbrochen.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar.\nNach Anwenden der Fähigkeit, drücke oder halte <IconMap:Icon_Normal> gedrückt, um direkt im Anschluss den 5. Angriff des <color=#FFFFFF>Basisangriffs</color> auszuführen."
+            },
+            "116110034": {
+                "Title": "Spezialangriff: V-förmiger Dämmer-Aufwärtshaken"
+            },
+            "116110035": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1161013, Prop:1001}"
+            },
+            "116110036": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1161013, Prop:1002}"
+            },
+            "116110037": {
+                "Title": "Verstärkter Spezialangriff: V-förmiger Dämmer-Aufwärtshaken – Volle Kraft"
+            },
+            "116110038": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1161014, Prop:1001}"
+            },
+            "116110039": {
+                "Description": "SCH-Multiplikator des Folgeangriffs",
+                "Param": "{Skill:1161015, Prop:1001}"
+            },
+            "116110040": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1161014, Prop:1002}"
+            },
+            "116110041": {
+                "Description": "Benommenheit-Multiplikator des Folgeangriffs",
+                "Param": "{Skill:1161015, Prop:1002}"
+            },
+            "116110042": {
+                "Description": "Energiekosten",
+                "Param": "40 Pkt."
+            },
+            "116110043": {
+                "Description": "Energiekosten für Folgeangriffe",
+                "Param": "20 Pkt."
+            }
+        },
+        "2": {
+            "116100004": {
+                "Title": "Ausweichen: Gleitender Schatten",
+                "Description": "Drücke <IconMap:Icon_Evade> zum Anwenden:\nEin blitzschnelles Sprintausweichen.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar.\nWährend die Figur angreift, drücke <IconMap:Icon_Evade> zum Anwenden:\nFührt ein Shuffle-Ausweichen in {LAYOUT_CONSOLECONTROLLER#Stick}{LAYOUT_FALLBACK#Joystick}-Richtung aus.\nDurch den Einsatz dieser Fähigkeit wird die Kombo des <color=#FFFFFF>Basisangriffs</color> nicht unterbrochen.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "116100005": {
+                "Title": "Sprintangriff: Aufladender Stoß",
+                "Description": "Drücke beim Ausweichen <IconMap:Icon_Normal> zum Anwenden:\nSchlägt Gegner vor sich schnell und verursacht dabei <color=#F0D12B>phys. SCH</color>."
+            },
+            "116100006": {
+                "Title": "Ausweichkonter: Lodernder Blitz",
+                "Description": "Drücke nach Auslösen eines <color=#FFFFFF>perfekten Ausweichens</color> <IconMap:Icon_Normal> zum Anwenden:\nSchlägt Gegner vor sich und verursacht dabei <color=#FF5521>Feuer-SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar.\nNach Anwenden der Fähigkeit, drücke oder halte <IconMap:Icon_Normal> gedrückt, um direkt im Anschluss den 5. Angriff des <color=#FFFFFF>Basisangriffs</color> auszuführen."
+            },
+            "116110044": {
+                "Title": "Sprintangriff: Aufladender Stoß"
+            },
+            "116110045": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1161016, Prop:1001}"
+            },
+            "116110046": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1161016, Prop:1002}"
+            },
+            "116110047": {
+                "Title": "Ausweichkonter: Lodernder Blitz"
+            },
+            "116110048": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1161017, Prop:1001}"
+            },
+            "116110049": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1161017, Prop:1002}"
+            }
+        },
+        "3": {
+            "116100007": {
+                "Title": "Kettenangriff: V-förmige sengende Sonne",
+                "Description": "Wähle beim Auslösen eines <color=#FFFFFF>Kettenangriffs</color> die entsprechende Figur zum Anwenden:\nFührt einen kraftvollen Schlag mit geringer Reichweite gegen Gegner vor sich aus und verursacht dabei hohen <color=#FF5521>Feuer-SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "116100008": {
+                "Title": "Ultimate: W-förmiges gekröntes Inferno",
+                "Description": "Drücke beim Erreichen der Dezibelstufe „Maximum“ <IconMap:Icon_UltimateReady> zum Anwenden:\nFührt einen kraftvollen Schlag mit großer Reichweite gegen Gegner um sich herum aus und verursacht dabei hohen <color=#FF5521>Feuer-SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "116110050": {
+                "Title": "Kettenangriff: V-förmige sengende Sonne"
+            },
+            "116110051": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1161018, Prop:1001}"
+            },
+            "116110052": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1161018, Prop:1002}"
+            },
+            "116110053": {
+                "Title": "Ultimate: W-förmiges gekröntes Inferno"
+            },
+            "116110054": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1161019, Prop:1001}"
+            },
+            "116110055": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1161019, Prop:1002}"
+            }
+        },
+        "6": {
+            "116100010": {
+                "Title": "Schnelle Hilfe: Lodernder Blitz – Wächter",
+                "Description": "Drücke, wenn die gesteuerte Figur weggeschleudert wird, <IconMap:Icon_Switch> zum Anwenden:\nFührt Schläge gegen Gegner vor sich aus und verursacht dabei <color=#FF5521>Feuer-SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar.\nNach Anwenden der Fähigkeit, drücke oder halte <IconMap:Icon_Normal> gedrückt, um direkt im Anschluss den 5. Angriff des <color=#FFFFFF>Basisangriffs</color> auszuführen."
+            },
+            "116100011": {
+                "Title": "Defensivhilfe: Blitzschneller Bruch",
+                "Description": "Drücke, wenn die Figur auf dem Feld gleich angegriffen wird, <IconMap:Icon_Switch> zum Anwenden:\nWehrt gegnerische Angriffe ab und verursacht eine große Menge Benommenheit.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "116100012": {
+                "Title": "Sukzessive Hilfe: Aufladender Stoß – Stich",
+                "Description": "Drücke nach einer <color=#FFFFFF>Defensivhilfe</color> <IconMap:Icon_Normal> zum Anwenden:\nFührt Schläge gegen Gegner vor sich aus und verursacht dabei <color=#FF5521>Feuer-SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar.\nNach Anwenden der Fähigkeit, drücke oder halte <IconMap:Icon_Normal> gedrückt, um direkt im Anschluss den 5. Angriff des <color=#FFFFFF>Basisangriffs</color> auszuführen."
+            },
+            "116110056": {
+                "Title": "Schnelle Hilfe: Lodernder Blitz – Wächter"
+            },
+            "116110057": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1161020, Prop:1001}"
+            },
+            "116110058": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1161020, Prop:1002}"
+            },
+            "116110059": {
+                "Title": "Defensivhilfe: Blitzschneller Bruch"
+            },
+            "116110060": {
+                "Description": "Benommenheit-Multiplikator für leichte Defensive",
+                "Param": "{Skill:1161021, Prop:1002}"
+            },
+            "116110061": {
+                "Description": "Benommenheit-Multiplikator für schwere Defensive",
+                "Param": "{Skill:1161022, Prop:1002}"
+            },
+            "116110062": {
+                "Description": "Benommenheit-Multiplikator für Kettendefensive",
+                "Param": "{Skill:1161023, Prop:1002}"
+            },
+            "116110063": {
+                "Title": "Sukzessive Hilfe: Aufladender Stoß – Stich"
+            },
+            "116110064": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1161024, Prop:1001}"
+            },
+            "116110065": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1161024, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1161001": {
+            "DamageValue": 3920,
+            "DamageGrowth": 360,
+            "DazeValue": 1960,
+            "DazeGrowth": 90
+        },
+        "1161002": {
+            "DamageValue": 4800,
+            "DamageGrowth": 440,
+            "DazeValue": 3290,
+            "DazeGrowth": 150
+        },
+        "1161003": {
+            "DamageValue": 5530,
+            "DamageGrowth": 510,
+            "DazeValue": 4670,
+            "DazeGrowth": 220
+        },
+        "1161004": {
+            "DamageValue": 8690,
+            "DamageGrowth": 790,
+            "DazeValue": 6050,
+            "DazeGrowth": 280
+        },
+        "1161005": {
+            "DamageValue": 4770,
+            "DamageGrowth": 440,
+            "DazeValue": 3320,
+            "DazeGrowth": 160
+        },
+        "1161006": {
+            "DamageValue": 5810,
+            "DamageGrowth": 530,
+            "DazeValue": 4040,
+            "DazeGrowth": 190
+        },
+        "1161007": {
+            "DamageValue": 3280,
+            "DamageGrowth": 300,
+            "DazeValue": 2280,
+            "DazeGrowth": 110
+        },
+        "1161008": {
+            "DamageValue": 8900,
+            "DamageGrowth": 810,
+            "DazeValue": 6190,
+            "DazeGrowth": 290
+        },
+        "1161009": {
+            "DamageValue": 7890,
+            "DamageGrowth": 720,
+            "DazeValue": 7610,
+            "DazeGrowth": 350
+        },
+        "1161010": {
+            "DamageValue": 16360,
+            "DamageGrowth": 1490,
+            "DazeValue": 12950,
+            "DazeGrowth": 590
+        },
+        "1161011": {
+            "DamageValue": 12290,
+            "DamageGrowth": 1120,
+            "DazeValue": 8130,
+            "DazeGrowth": 370
+        },
+        "1161012": {
+            "DamageValue": 10460,
+            "DamageGrowth": 960,
+            "DazeValue": 7950,
+            "DazeGrowth": 370
+        },
+        "1161013": {
+            "DamageValue": 3630,
+            "DamageGrowth": 330,
+            "DazeValue": 3630,
+            "DazeGrowth": 170
+        },
+        "1161014": {
+            "DamageValue": 48630,
+            "DamageGrowth": 4430,
+            "DazeValue": 40350,
+            "DazeGrowth": 1840
+        },
+        "1161015": {
+            "DamageValue": 29270,
+            "DamageGrowth": 2670,
+            "DazeValue": 24770,
+            "DazeGrowth": 1130
+        },
+        "1161016": {
+            "DamageValue": 8990,
+            "DamageGrowth": 820,
+            "DazeValue": 4500,
+            "DazeGrowth": 210
+        },
+        "1161017": {
+            "DamageValue": 18630,
+            "DamageGrowth": 1700,
+            "DazeValue": 16870,
+            "DazeGrowth": 770
+        },
+        "1161018": {
+            "DamageValue": 71210,
+            "DamageGrowth": 6480,
+            "DazeValue": 27320,
+            "DazeGrowth": 1250
+        },
+        "1161019": {
+            "DamageValue": 150800,
+            "DamageGrowth": 13710,
+            "DazeValue": 94740,
+            "DazeGrowth": 4310
+        },
+        "1161020": {
+            "DamageValue": 6970,
+            "DamageGrowth": 640,
+            "DazeValue": 6970,
+            "DazeGrowth": 320
+        },
+        "1161021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1161022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1161023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1161024": {
+            "DamageValue": 21980,
+            "DamageGrowth": 2000,
+            "DazeValue": 18230,
+            "DazeGrowth": 830
+        },
+        "1161025": {
+            "DamageValue": 43540,
+            "DamageGrowth": 3960,
+            "DazeValue": 13240,
+            "DazeGrowth": 610
+        },
+        "1161026": {
+            "DamageValue": 17720,
+            "DamageGrowth": 1620,
+            "DazeValue": 13630,
+            "DazeGrowth": 620
+        },
+        "1161027": {
+            "DamageValue": 36430,
+            "DamageGrowth": 3320,
+            "DazeValue": 8550,
+            "DazeGrowth": 390
+        },
+        "1161028": {
+            "DamageValue": 11970,
+            "DamageGrowth": 1090,
+            "DazeValue": 9210,
+            "DazeGrowth": 420
+        }
+    }
+}

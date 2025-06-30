@@ -1,0 +1,532 @@
+{
+    "Name": "Lighter",
+    "ElementTypes": [
+        "Fire"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Campeão Invicto",
+            "Description": "Entre os efeitos negativos da <color=#FFFFFF>Passiva Principal: Acelerante</color>, o efeito <color=#FFFFFF>Derrota</color> faz o Atordoamento durar mais 5s e reduz 10% da <color=#98EFF0>resistência ao Gelo</color> e da <color=#FF5521>resistência ao Fogo</color>. Se a <color=#FFFFFF>Moral</color> acaba durante um soco leve ou um combo de socos, um Golpe Final mais poderoso é ativado, e ele causa 30% mais dano.",
+            "Lore": "A vitória é crucial para o Campeão Invicto. Ao lutar com o mais forte dos oponentes, ele elimina a ameaça para o capitão e aumenta muito a moral da equipe.\nPara ele, apenas a vitória importa.\n\"Um campeão invicto nunca pode ser derrotado.\""
+        },
+        "2": {
+            "Title": "Cachecol Vermelho",
+            "Description": "Ao causar efeito de <color=#FFFFFF>Derrota</color> usando a <color=#FFFFFF>Passiva Principal: Acelerante</color> nos inimigos, o Multiplicador de Dano de Atordoamento do alvo aumenta 25%. O aumento do <color=#98EFF0>Dano de Gelo</color> e do <color=#FF5521>Dano de Fogo</color> causado pela <color=#FFFFFF>Euforia</color>, da <color=#FFFFFF>Habilidade Extra: Espírito de Luta</color>, aumenta para 120% do original.",
+            "Lore": "Como o \"Cachecol Vermelho\" dos Filhos de Calydon, Lighter é bem famoso na zona externa. E não apenas por seus socos... ele também tem um jeito único de falar.\n\"Eu curto fazer as coisas na boa... mas o que seria de vocês sem mim?\""
+        },
+        "3": {
+            "Title": "Líder dos Mercenários",
+            "Description": "Obtém +2 níveis de <color=#FFFFFF>Ataque Básico</color>, <color=#FFFFFF>Esquiva</color>, <color=#FFFFFF>Ataque de Assistência</color>, <color=#FFFFFF>Ataque Especial</color> e <color=#FFFFFF>Ataque em Cadeia</color>",
+            "Lore": "\"Eu devo ser a pessoa menos adequada do mundo para ser um líder.\""
+        },
+        "4": {
+            "Title": "Óculos Escuros",
+            "Description": "Quando Lighter está fora de campo, a recuperação de energia do personagem ativo na batalha aumenta 10%. Ao entrar no estado de <color=#FFFFFF>Moral Elevada</color>, Lighter recupera 4 de energia para os Agentes fora de campo. Esse efeito pode ser ativado uma vez a cada 18s.",
+            "Lore": "\"Quer saber por que eu uso óculos escuros? Hã... É porque eu fico tonto quando vejo sangue...\""
+        },
+        "5": {
+            "Title": "O Decisor",
+            "Description": "Obtém +2 níveis de <color=#FFFFFF>Ataque Básico</color>, <color=#FFFFFF>Esquiva</color>, <color=#FFFFFF>Ataque de Assistência</color>, <color=#FFFFFF>Ataque Especial</color> e <color=#FFFFFF>Ataque em Cadeia</color>",
+            "Lore": "\"Me dê uma ordem que eu sigo. Simples assim!\"\nLighter ajusta os óculos escuros enquanto sorri despreocupado.\n\"Só não me faça tomar as decisões.\""
+        },
+        "6": {
+            "Title": "Sobrevivente",
+            "Description": "A eficiência da recuperação de <color=#FFFFFF>Moral</color> do Lighter aumenta para 200% do valor original. Quando Lighter atinge um inimigo com um golpe pesado durante o <color=#FFFFFF>Ataque Básico</color>, a <color=#FFFFFF>Contraesquiva</color>, o <color=#FFFFFF>Ataque Especial</color>, o <color=#FFFFFF>Ataque Especial Reforçado</color>, a <color=#FFFFFF>Assistência Reativa</color>, a <color=#FFFFFF>Assistência Imediata</color>, o <color=#FFFFFF>Ataque em Cadeia</color> ou o <color=#FFFFFF>Supremo</color>, o efeito <color=#FFFFFF>Explosão Ígnea</color> é ativado, causando 250% do ATQ como <color=#FF5521>Dano de Fogo</color>. Esse efeito pode ser ativado uma vez a cada 8s em cada inimigo. Se o Impacto de Lighter ultrapassa 170 pontos, cada ponto adicional aumenta 5% do multiplicador da <color=#FFFFFF>Explosão Ígnea</color> até um máximo de 500%. O Golpe Final poderoso, acionado quando o efeito <color=#FFFFFF>Moral</color> do Lighter acaba durante um soco leve ou um combo de socos, causa uma <color=#FFFFFF>Explosão Ígnea</color> adicional ao atingir um inimigo, ignorando o tempo de recarga do efeito.",
+            "Lore": "Se tivesse a chance de fazer tudo de novo, ele nunca escolheria ser o único sobrevivente.\nInfelizmente, o destino não oferece escolhas."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passiva Principal: Acelerante",
+            "DescriptionByLevel": {
+                "1": "Lighter obtém <color=#FFFFFF>Moral</color> automaticamente em uma frequência de 2,9 pontos por segundo. Por cada ponto de Energia consumido por qualquer membro da equipe, Lighter recupera 0,26 de <color=#FFFFFF>Moral</color> adicional até um máximo de 100 de <color=#FFFFFF>Moral</color>. Ao acumular 80 de <color=#FFFFFF>Moral</color>, na próxima vez que Lighter entrar em combate, ele executará uma <color=#FFFFFF>Assistência Reativa</color>. Quando a <color=#FFFFFF>Moral</color> ultrapassar 80 pontos, ao executar o 5º golpe de seu <color=#FFFFFF>Ataque Básico</color>, Lighter entrará no estado de <color=#FFFFFF>Moral Elevada</color>, fortalecendo o soco leve inicial, o combo de socos e o golpe final do 5º golpe do <color=#FFFFFF>Ataque Básico</color>. Quando a habilidade fortalecida atinge um inimigo, a <color=#FFFFFF>Moral</color> é continuamente consumida. A cada 10 pontos de <color=#FFFFFF>Moral</color> consumidos, o Impacto de Lighter aumenta <color=#2BAD00>1%</color> até <color=#2BAD00>10%</color> por 6s.\nNo estado de <color=#FFFFFF>Moral Elevada</color>, Lighter deixa de ganhar <color=#FFFFFF>Moral</color> automaticamente com o tempo. Se sua <color=#FFFFFF>Moral</color> acabar durante um soco leve inicial ou um combo de socos, ele executará um golpe final mais poderoso automaticamente.\nNo estado de <color=#FFFFFF>Moral Elevada</color>, quando um soco leve inicial ou um combo de socos atinge um inimigo, a <color=#98EFF0>resistência ao Gelo</color> e a <color=#FF5521>resistência ao Fogo</color> do alvo diminuem 15% por 30s. No estado de <color=#FFFFFF>Moral Elevada</color>, quando o golpe final atinge um inimigo, aplica o efeito <color=#FFFFFF>Derrota</color> no alvo, aumentando a duração do Atordoamento em 3s. O efeito <color=#FFFFFF>Derrota</color> pode ser ativado apenas uma vez no mesmo alvo até que se recupere do Atordoamento.\nQuando o golpe final do 5º golpe do <color=#FFFFFF>Ataque Básico</color> atingir um inimigo, ao sair de campo ou quando sua <color=#FFFFFF>Moral</color> acabar, Lighter sairá do estado <color=#FFFFFF>Moral Elevada</color>, conservando os pontos de <color=#FFFFFF>Moral</color> não consumidos.",
+                "2": "Lighter obtém <color=#FFFFFF>Moral</color> automaticamente em uma frequência de 2,9 pontos por segundo. Por cada ponto de Energia consumido por qualquer membro da equipe, Lighter recupera 0,26 de <color=#FFFFFF>Moral</color> adicional até um máximo de 100 de <color=#FFFFFF>Moral</color>. Ao acumular 80 de <color=#FFFFFF>Moral</color>, na próxima vez que Lighter entrar em combate, ele executará uma <color=#FFFFFF>Assistência Reativa</color>. Quando a <color=#FFFFFF>Moral</color> ultrapassar 80 pontos, ao executar o 5º golpe de seu <color=#FFFFFF>Ataque Básico</color>, Lighter entrará no estado de <color=#FFFFFF>Moral Elevada</color>, fortalecendo o soco leve inicial, o combo de socos e o golpe final do 5º golpe do <color=#FFFFFF>Ataque Básico</color>. Quando a habilidade fortalecida atinge um inimigo, a <color=#FFFFFF>Moral</color> é continuamente consumida. A cada 10 pontos de <color=#FFFFFF>Moral</color> consumidos, o Impacto de Lighter aumenta <color=#2BAD00>1,17%</color> até <color=#2BAD00>11,7%</color> por 6s.\nNo estado de <color=#FFFFFF>Moral Elevada</color>, Lighter deixa de ganhar <color=#FFFFFF>Moral</color> automaticamente com o tempo. Se sua <color=#FFFFFF>Moral</color> acabar durante um soco leve inicial ou um combo de socos, ele executará um golpe final mais poderoso automaticamente.\nNo estado de <color=#FFFFFF>Moral Elevada</color>, quando um soco leve inicial ou um combo de socos atinge um inimigo, a <color=#98EFF0>resistência ao Gelo</color> e a <color=#FF5521>resistência ao Fogo</color> do alvo diminuem 15% por 30s. No estado de <color=#FFFFFF>Moral Elevada</color>, quando o golpe final atinge um inimigo, aplica o efeito <color=#FFFFFF>Derrota</color> no alvo, aumentando a duração do Atordoamento em 3s. O efeito <color=#FFFFFF>Derrota</color> pode ser ativado apenas uma vez no mesmo alvo até que se recupere do Atordoamento.\nQuando o golpe final do 5º golpe do <color=#FFFFFF>Ataque Básico</color> atingir um inimigo, ao sair de campo ou quando sua <color=#FFFFFF>Moral</color> acabar, Lighter sairá do estado <color=#FFFFFF>Moral Elevada</color>, conservando os pontos de <color=#FFFFFF>Moral</color> não consumidos.",
+                "3": "Lighter obtém <color=#FFFFFF>Moral</color> automaticamente em uma frequência de 2,9 pontos por segundo. Por cada ponto de Energia consumido por qualquer membro da equipe, Lighter recupera 0,26 de <color=#FFFFFF>Moral</color> adicional até um máximo de 100 de <color=#FFFFFF>Moral</color>. Ao acumular 80 de <color=#FFFFFF>Moral</color>, na próxima vez que Lighter entrar em combate, ele executará uma <color=#FFFFFF>Assistência Reativa</color>. Quando a <color=#FFFFFF>Moral</color> ultrapassar 80 pontos, ao executar o 5º golpe de seu <color=#FFFFFF>Ataque Básico</color>, Lighter entrará no estado de <color=#FFFFFF>Moral Elevada</color>, fortalecendo o soco leve inicial, o combo de socos e o golpe final do 5º golpe do <color=#FFFFFF>Ataque Básico</color>. Quando a habilidade fortalecida atinge um inimigo, a <color=#FFFFFF>Moral</color> é continuamente consumida. A cada 10 pontos de <color=#FFFFFF>Moral</color> consumidos, o Impacto de Lighter aumenta <color=#2BAD00>1,33%</color> até <color=#2BAD00>13,3%</color> por 6s.\nNo estado de <color=#FFFFFF>Moral Elevada</color>, Lighter deixa de ganhar <color=#FFFFFF>Moral</color> automaticamente com o tempo. Se sua <color=#FFFFFF>Moral</color> acabar durante um soco leve inicial ou um combo de socos, ele executará um golpe final mais poderoso automaticamente.\nNo estado de <color=#FFFFFF>Moral Elevada</color>, quando um soco leve inicial ou um combo de socos atinge um inimigo, a <color=#98EFF0>resistência ao Gelo</color> e a <color=#FF5521>resistência ao Fogo</color> do alvo diminuem 15% por 30s. No estado de <color=#FFFFFF>Moral Elevada</color>, quando o golpe final atinge um inimigo, aplica o efeito <color=#FFFFFF>Derrota</color> no alvo, aumentando a duração do Atordoamento em 3s. O efeito <color=#FFFFFF>Derrota</color> pode ser ativado apenas uma vez no mesmo alvo até que se recupere do Atordoamento.\nQuando o golpe final do 5º golpe do <color=#FFFFFF>Ataque Básico</color> atingir um inimigo, ao sair de campo ou quando sua <color=#FFFFFF>Moral</color> acabar, Lighter sairá do estado <color=#FFFFFF>Moral Elevada</color>, conservando os pontos de <color=#FFFFFF>Moral</color> não consumidos.",
+                "4": "Lighter obtém <color=#FFFFFF>Moral</color> automaticamente em uma frequência de 2,9 pontos por segundo. Por cada ponto de Energia consumido por qualquer membro da equipe, Lighter recupera 0,26 de <color=#FFFFFF>Moral</color> adicional até um máximo de 100 de <color=#FFFFFF>Moral</color>. Ao acumular 80 de <color=#FFFFFF>Moral</color>, na próxima vez que Lighter entrar em combate, ele executará uma <color=#FFFFFF>Assistência Reativa</color>. Quando a <color=#FFFFFF>Moral</color> ultrapassar 80 pontos, ao executar o 5º golpe de seu <color=#FFFFFF>Ataque Básico</color>, Lighter entrará no estado de <color=#FFFFFF>Moral Elevada</color>, fortalecendo o soco leve inicial, o combo de socos e o golpe final do 5º golpe do <color=#FFFFFF>Ataque Básico</color>. Quando a habilidade fortalecida atinge um inimigo, a <color=#FFFFFF>Moral</color> é continuamente consumida. A cada 10 pontos de <color=#FFFFFF>Moral</color> consumidos, o Impacto de Lighter aumenta <color=#2BAD00>1,5%</color> até <color=#2BAD00>15%</color> por 6s.\nNo estado de <color=#FFFFFF>Moral Elevada</color>, Lighter deixa de ganhar <color=#FFFFFF>Moral</color> automaticamente com o tempo. Se sua <color=#FFFFFF>Moral</color> acabar durante um soco leve inicial ou um combo de socos, ele executará um golpe final mais poderoso automaticamente.\nNo estado de <color=#FFFFFF>Moral Elevada</color>, quando um soco leve inicial ou um combo de socos atinge um inimigo, a <color=#98EFF0>resistência ao Gelo</color> e a <color=#FF5521>resistência ao Fogo</color> do alvo diminuem 15% por 30s. No estado de <color=#FFFFFF>Moral Elevada</color>, quando o golpe final atinge um inimigo, aplica o efeito <color=#FFFFFF>Derrota</color> no alvo, aumentando a duração do Atordoamento em 3s. O efeito <color=#FFFFFF>Derrota</color> pode ser ativado apenas uma vez no mesmo alvo até que se recupere do Atordoamento.\nQuando o golpe final do 5º golpe do <color=#FFFFFF>Ataque Básico</color> atingir um inimigo, ao sair de campo ou quando sua <color=#FFFFFF>Moral</color> acabar, Lighter sairá do estado <color=#FFFFFF>Moral Elevada</color>, conservando os pontos de <color=#FFFFFF>Moral</color> não consumidos.",
+                "5": "Lighter obtém <color=#FFFFFF>Moral</color> automaticamente em uma frequência de 2,9 pontos por segundo. Por cada ponto de Energia consumido por qualquer membro da equipe, Lighter recupera 0,26 de <color=#FFFFFF>Moral</color> adicional até um máximo de 100 de <color=#FFFFFF>Moral</color>. Ao acumular 80 de <color=#FFFFFF>Moral</color>, na próxima vez que Lighter entrar em combate, ele executará uma <color=#FFFFFF>Assistência Reativa</color>. Quando a <color=#FFFFFF>Moral</color> ultrapassar 80 pontos, ao executar o 5º golpe de seu <color=#FFFFFF>Ataque Básico</color>, Lighter entrará no estado de <color=#FFFFFF>Moral Elevada</color>, fortalecendo o soco leve inicial, o combo de socos e o golpe final do 5º golpe do <color=#FFFFFF>Ataque Básico</color>. Quando a habilidade fortalecida atinge um inimigo, a <color=#FFFFFF>Moral</color> é continuamente consumida. A cada 10 pontos de <color=#FFFFFF>Moral</color> consumidos, o Impacto de Lighter aumenta <color=#2BAD00>1,67%</color> até <color=#2BAD00>16,7%</color> por 6s.\nNo estado de <color=#FFFFFF>Moral Elevada</color>, Lighter deixa de ganhar <color=#FFFFFF>Moral</color> automaticamente com o tempo. Se sua <color=#FFFFFF>Moral</color> acabar durante um soco leve inicial ou um combo de socos, ele executará um golpe final mais poderoso automaticamente.\nNo estado de <color=#FFFFFF>Moral Elevada</color>, quando um soco leve inicial ou um combo de socos atinge um inimigo, a <color=#98EFF0>resistência ao Gelo</color> e a <color=#FF5521>resistência ao Fogo</color> do alvo diminuem 15% por 30s. No estado de <color=#FFFFFF>Moral Elevada</color>, quando o golpe final atinge um inimigo, aplica o efeito <color=#FFFFFF>Derrota</color> no alvo, aumentando a duração do Atordoamento em 3s. O efeito <color=#FFFFFF>Derrota</color> pode ser ativado apenas uma vez no mesmo alvo até que se recupere do Atordoamento.\nQuando o golpe final do 5º golpe do <color=#FFFFFF>Ataque Básico</color> atingir um inimigo, ao sair de campo ou quando sua <color=#FFFFFF>Moral</color> acabar, Lighter sairá do estado <color=#FFFFFF>Moral Elevada</color>, conservando os pontos de <color=#FFFFFF>Moral</color> não consumidos.",
+                "6": "Lighter obtém <color=#FFFFFF>Moral</color> automaticamente em uma frequência de 2,9 pontos por segundo. Por cada ponto de Energia consumido por qualquer membro da equipe, Lighter recupera 0,26 de <color=#FFFFFF>Moral</color> adicional até um máximo de 100 de <color=#FFFFFF>Moral</color>. Ao acumular 80 de <color=#FFFFFF>Moral</color>, na próxima vez que Lighter entrar em combate, ele executará uma <color=#FFFFFF>Assistência Reativa</color>. Quando a <color=#FFFFFF>Moral</color> ultrapassar 80 pontos, ao executar o 5º golpe de seu <color=#FFFFFF>Ataque Básico</color>, Lighter entrará no estado de <color=#FFFFFF>Moral Elevada</color>, fortalecendo o soco leve inicial, o combo de socos e o golpe final do 5º golpe do <color=#FFFFFF>Ataque Básico</color>. Quando a habilidade fortalecida atinge um inimigo, a <color=#FFFFFF>Moral</color> é continuamente consumida. A cada 10 pontos de <color=#FFFFFF>Moral</color> consumidos, o Impacto de Lighter aumenta <color=#2BAD00>1,83%</color> até <color=#2BAD00>18,3%</color> por 6s.\nNo estado de <color=#FFFFFF>Moral Elevada</color>, Lighter deixa de ganhar <color=#FFFFFF>Moral</color> automaticamente com o tempo. Se sua <color=#FFFFFF>Moral</color> acabar durante um soco leve inicial ou um combo de socos, ele executará um golpe final mais poderoso automaticamente.\nNo estado de <color=#FFFFFF>Moral Elevada</color>, quando um soco leve inicial ou um combo de socos atinge um inimigo, a <color=#98EFF0>resistência ao Gelo</color> e a <color=#FF5521>resistência ao Fogo</color> do alvo diminuem 15% por 30s. No estado de <color=#FFFFFF>Moral Elevada</color>, quando o golpe final atinge um inimigo, aplica o efeito <color=#FFFFFF>Derrota</color> no alvo, aumentando a duração do Atordoamento em 3s. O efeito <color=#FFFFFF>Derrota</color> pode ser ativado apenas uma vez no mesmo alvo até que se recupere do Atordoamento.\nQuando o golpe final do 5º golpe do <color=#FFFFFF>Ataque Básico</color> atingir um inimigo, ao sair de campo ou quando sua <color=#FFFFFF>Moral</color> acabar, Lighter sairá do estado <color=#FFFFFF>Moral Elevada</color>, conservando os pontos de <color=#FFFFFF>Moral</color> não consumidos.",
+                "7": "Lighter obtém <color=#FFFFFF>Moral</color> automaticamente em uma frequência de 2,9 pontos por segundo. Por cada ponto de Energia consumido por qualquer membro da equipe, Lighter recupera 0,26 de <color=#FFFFFF>Moral</color> adicional até um máximo de 100 de <color=#FFFFFF>Moral</color>. Ao acumular 80 de <color=#FFFFFF>Moral</color>, na próxima vez que Lighter entrar em combate, ele executará uma <color=#FFFFFF>Assistência Reativa</color>. Quando a <color=#FFFFFF>Moral</color> ultrapassar 80 pontos, ao executar o 5º golpe de seu <color=#FFFFFF>Ataque Básico</color>, Lighter entrará no estado de <color=#FFFFFF>Moral Elevada</color>, fortalecendo o soco leve inicial, o combo de socos e o golpe final do 5º golpe do <color=#FFFFFF>Ataque Básico</color>. Quando a habilidade fortalecida atinge um inimigo, a <color=#FFFFFF>Moral</color> é continuamente consumida. A cada 10 pontos de <color=#FFFFFF>Moral</color> consumidos, o Impacto de Lighter aumenta <color=#2BAD00>2%</color> até <color=#2BAD00>20%</color> por 6s.\nNo estado de <color=#FFFFFF>Moral Elevada</color>, Lighter deixa de ganhar <color=#FFFFFF>Moral</color> automaticamente com o tempo. Se sua <color=#FFFFFF>Moral</color> acabar durante um soco leve inicial ou um combo de socos, ele executará um golpe final mais poderoso automaticamente.\nNo estado de <color=#FFFFFF>Moral Elevada</color>, quando um soco leve inicial ou um combo de socos atinge um inimigo, a <color=#98EFF0>resistência ao Gelo</color> e a <color=#FF5521>resistência ao Fogo</color> do alvo diminuem 15% por 30s. No estado de <color=#FFFFFF>Moral Elevada</color>, quando o golpe final atinge um inimigo, aplica o efeito <color=#FFFFFF>Derrota</color> no alvo, aumentando a duração do Atordoamento em 3s. O efeito <color=#FFFFFF>Derrota</color> pode ser ativado apenas uma vez no mesmo alvo até que se recupere do Atordoamento.\nQuando o golpe final do 5º golpe do <color=#FFFFFF>Ataque Básico</color> atingir um inimigo, ao sair de campo ou quando sua <color=#FFFFFF>Moral</color> acabar, Lighter sairá do estado <color=#FFFFFF>Moral Elevada</color>, conservando os pontos de <color=#FFFFFF>Moral</color> não consumidos."
+            }
+        },
+        "MathSkill": {
+            "Title": "Habilidade Extra: Espírito de Luta",
+            "Description": "Quando outro personagem na equipe for <color=#FFFFFF>Atacante</color> ou da mesma facção: \nNo estado de <color=#FFFFFF>Moral Elevada</color>, quando o 5º golpe do <color=#FFFFFF>Ataque Básico</color> de Lighter atinge um inimigo, todos os membros da equipe ganham um acúmulo de <color=#FFFFFF>Euforia</color>, acumulando até 20 vezes por 30s. Ativações repetidas reiniciam a duração. Para cada acúmulo de <color=#FFFFFF>Euforia</color>, o <color=#98EFF0>Dano de Gelo</color> e o <color=#FF5521>Dano de Fogo</color> dos Agentes aumentam 1,25%. Ao obter <color=#FFFFFF>Euforia</color>, se o Impacto de Lighter ultrapassar 170 pontos, a cada 10 pontos de Impacto adicionais, o efeito do bônus de cada acúmulo de <color=#FFFFFF>Euforia</color> aumentará 0,25%. Quando qualquer membro da equipe realiza um <color=#FFFFFF>Ataque em Cadeia</color>, a duração da <color=#FFFFFF>Euforia</color> será reiniciada para todos os membros da equipe. A <color=#FFFFFF>Euforia</color> pode aumentar o <color=#98EFF0>Dano de Gelo</color> e o <color=#FF5521>Dano de Fogo</color> causados pelos Agentes até 75%."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "116100001": {
+                "Title": "Ataque Básico: Punho Trovejante em L",
+                "Description": "Pressione ou mantenha <IconMap:Icon_Normal> pressionado para ativar:\nExecuta até cinco golpes frontais, causando <color=#F0D12B>Dano Físico</color> e <color=#FF5521>Dano de Fogo</color>.\nDurante o 3º golpe do <color=#FFFFFF>Ataque Básico</color>, mova o {LAYOUT_CONSOLECONTROLLER#controle analógico}{LAYOUT_FALLBACK#controle analógico} e pressione repetidamente ou mantenha <IconMap:Icon_Normal> pressionado para lançar uma série de ataques sequenciais de curta distância.\nSolte o {LAYOUT_CONSOLECONTROLLER#controle analógico}{LAYOUT_FALLBACK#controle analógico} para executar automaticamente o 4º golpe do <color=#FFFFFF>Ataque Básico</color>.\nDurante o início do soco leve do 5º golpe do <color=#FFFFFF>Ataque Básico</color>, mova o {LAYOUT_CONSOLECONTROLLER#controle analógico}{LAYOUT_FALLBACK#controle analógico} e pressione repetidamente ou mantenha <IconMap:Icon_Normal> pressionado para continuar alternando entre o soco leve e o 4º golpe do <color=#FFFFFF>Ataque Básico</color>. Solte o {LAYOUT_CONSOLECONTROLLER#controle analógico}{LAYOUT_FALLBACK#controle analógico} para executar automaticamente o combo de socos.\nContinue pressionando ou mantendo <IconMap:Icon_Normal> pressionado para aumentar a duração do combo de socos.\nAo soltar <IconMap:Icon_Normal> ou quando o combo atingir o limite de sua duração, Lighter executará um golpe final frontal.\nDurante o 5º golpe do <color=#FFFFFF>Ataque Básico</color>, Lighter recebe 40% menos dano.\nNo estado de <color=#FFFFFF>Moral Elevada</color>, o nível de Anti-Interrupção aumenta durante o 5º golpe do <color=#FFFFFF>Ataque Básico</color> e o efeito de redução de dano aumenta 80%."
+            },
+            "116110001": {
+                "Title": "Ataque Básico: Punho Trovejante em L"
+            },
+            "116110002": {
+                "Description": "Multiplicador de Dano de 1º Golpe",
+                "Param": "{Skill:1161001, Prop:1001}"
+            },
+            "116110003": {
+                "Description": "Multiplicador de Dano de 2º Golpe",
+                "Param": "{Skill:1161002, Prop:1001}"
+            },
+            "116110004": {
+                "Description": "Multiplicador de Dano de 3º Golpe",
+                "Param": "{Skill:1161003, Prop:1001}"
+            },
+            "116110005": {
+                "Description": "Multiplicador de Dano de 1º Golpe Sequencial",
+                "Param": "{Skill:1161004, Prop:1001}"
+            },
+            "116110006": {
+                "Description": "Multiplicador de Dano de 2º Golpe Sequencial",
+                "Param": "{Skill:1161005, Prop:1001}"
+            },
+            "116110007": {
+                "Description": "Multiplicador de Dano de 3º Golpe Sequencial",
+                "Param": "{Skill:1161006, Prop:1001}"
+            },
+            "116110008": {
+                "Description": "Multiplicador de Dano de 4º Golpe Sequencial",
+                "Param": "{Skill:1161007, Prop:1001}"
+            },
+            "116110009": {
+                "Description": "Multiplicador de Dano de 5º Golpe Sequencial",
+                "Param": "{Skill:1161008, Prop:1001}"
+            },
+            "116110010": {
+                "Description": "Multiplicador de Dano de 4º Golpe",
+                "Param": "{Skill:1161009, Prop:1001}"
+            },
+            "116110011": {
+                "Description": "Multiplicador de Dano do Início do 5º Golpe",
+                "Param": "{Skill:1161010, Prop:1001}"
+            },
+            "116110012": {
+                "Description": "Multiplicador de Dano do 5º Golpe do Combo",
+                "Param": "{Skill:1161011, Prop:1001}"
+            },
+            "116110013": {
+                "Description": "Multiplicador de Dano do Final do 5º Golpe",
+                "Param": "{Skill:1161012, Prop:1001}"
+            },
+            "116110014": {
+                "Description": "Multiplicador de Dano do Início do 5º Golpe (Moral Elevada)",
+                "Param": "{Skill:1161026, Prop:1001}"
+            },
+            "116110015": {
+                "Description": "Multiplicador de Dano do Combo do 5º Golpe (Moral Elevada)",
+                "Param": "{Skill:1161027, Prop:1001}"
+            },
+            "116110016": {
+                "Description": "Multiplicador de Dano do Final do 5º Golpe (Moral Elevada)",
+                "Param": "{Skill:1161028, Prop:1001}"
+            },
+            "116110017": {
+                "Description": "Multiplicador de Dano do Final do 5º Golpe Pesado (Moral Elevada)",
+                "Param": "{Skill:1161025, Prop:1001}"
+            },
+            "116110018": {
+                "Description": "Multiplicador de Atordoamento de 1º Golpe",
+                "Param": "{Skill:1161001, Prop:1002}"
+            },
+            "116110019": {
+                "Description": "Multiplicador de Atordoamento de 2º Golpe",
+                "Param": "{Skill:1161002, Prop:1002}"
+            },
+            "116110020": {
+                "Description": "Multiplicador de Atordoamento de 3º Golpe",
+                "Param": "{Skill:1161003, Prop:1002}"
+            },
+            "116110021": {
+                "Description": "Multiplicador de Atordoamento de 1º Golpe Sequencial",
+                "Param": "{Skill:1161004, Prop:1002}"
+            },
+            "116110022": {
+                "Description": "Multiplicador de Atordoamento de 2º Golpe Sequencial",
+                "Param": "{Skill:1161005, Prop:1002}"
+            },
+            "116110023": {
+                "Description": "Multiplicador de Atordoamento de 3º Golpe Sequencial",
+                "Param": "{Skill:1161006, Prop:1002}"
+            },
+            "116110024": {
+                "Description": "Multiplicador de Atordoamento de 4º Golpe Sequencial",
+                "Param": "{Skill:1161007, Prop:1002}"
+            },
+            "116110025": {
+                "Description": "Multiplicador de Atordoamento de 5º Golpe Sequencial",
+                "Param": "{Skill:1161008, Prop:1002}"
+            },
+            "116110026": {
+                "Description": "Multiplicador de Atordoamento de 4º Golpe",
+                "Param": "{Skill:1161009, Prop:1002}"
+            },
+            "116110027": {
+                "Description": "Multiplicador de Atordoamento do Início do 5º Golpe",
+                "Param": "{Skill:1161010, Prop:1002}"
+            },
+            "116110028": {
+                "Description": "Multiplicador de Atordoamento do 5º Golpe do Combo",
+                "Param": "{Skill:1161011, Prop:1002}"
+            },
+            "116110029": {
+                "Description": "Multiplicador de Atordoamento do Final do 5º Golpe",
+                "Param": "{Skill:1161012, Prop:1002}"
+            },
+            "116110030": {
+                "Description": "Multiplicador de Atordoamento do Início do 5º Golpe (Moral Elevada)",
+                "Param": "{Skill:1161026, Prop:1002}"
+            },
+            "116110031": {
+                "Description": "Multiplicador de Atordoamento do 5º Golpe do Combo (Moral Elevada)",
+                "Param": "{Skill:1161027, Prop:1002}"
+            },
+            "116110032": {
+                "Description": "Multiplicador de Atordoamento do Final do 5º Golpe (Moral Elevada)",
+                "Param": "{Skill:1161028, Prop:1002}"
+            },
+            "116110033": {
+                "Description": "Multiplicador de Atordoamento do Final do 5º Golpe Pesado (Moral Elevada)",
+                "Param": "{Skill:1161025, Prop:1002}"
+            }
+        },
+        "1": {
+            "116100002": {
+                "Title": "Ataque Especial: Punho da Aurora em V",
+                "Description": "Pressione <IconMap:Icon_Special> para ativar:\nGolpeia inimigos à frente com um gancho ascendente, causando <color=#FF5521>Dano de Fogo</color>.\nO nível de Anti-Interrupção aumenta ao usar esta habilidade.\nAo realizar uma esquiva lateral, pressione <IconMap:Icon_Special> para ativar:\nExecuta um combo de socos frontais, causando <color=#FF5521>Dano de Fogo</color>.\nEssa habilidade não interrompe a contagem do combo do <color=#FFFFFF>Ataque Básico</color>.\nDurante sua execução, o nível de Anti-Interrupção aumenta."
+            },
+            "116100003": {
+                "Title": "Ataque Especial Reforçado: Punho da Aurora em V — Força Total",
+                "Description": "Quando tiver energia suficiente, pressione <IconMap:Icon_SpecialReady> para ativar:\nGolpeia inimigos à frente com um gancho ascendente poderoso, saltando do chão e causando <color=#FF5521>Dano de Fogo</color> muito alto.\nDurante a execução do golpe, pressione <IconMap:Icon_SpecialReady> novamente para consumir Energia e executar um poderoso ataque sequencial, causando <color=#FF5521>Dano de Fogo</color> muito alto.\nO personagem fica invulnerável ao usar esta habilidade.\nApós executar o golpe, pressione ou mantenha <IconMap:Icon_Normal> pressionado para passar direto para o 4º golpe do <color=#FFFFFF>Ataque Básico</color>.\nQuando tiver energia suficiente, ao realizar uma esquiva lateral, pressione <IconMap:Icon_SpecialReady> para ativar:\nExecuta um poderoso combo de socos frontais, causando <color=#FF5521>Dano de Fogo</color> muito alto.\nEssa habilidade não interrompe a contagem do combo do <color=#FFFFFF>Ataque Básico</color>.\nO personagem fica invulnerável ao usar esta habilidade.\nApós executar o ataque, pressione ou mantenha <IconMap:Icon_Normal> pressionado para passar imediatamente para o 5º golpe do <color=#FFFFFF>Ataque Básico</color>."
+            },
+            "116110034": {
+                "Title": "Ataque Especial: Punho da Aurora em V"
+            },
+            "116110035": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1161013, Prop:1001}"
+            },
+            "116110036": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1161013, Prop:1002}"
+            },
+            "116110037": {
+                "Title": "Ataque Especial Reforçado: Punho da Aurora em V — Força Total"
+            },
+            "116110038": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1161014, Prop:1001}"
+            },
+            "116110039": {
+                "Description": "Multiplicador de Dano de Golpes Sequenciais",
+                "Param": "{Skill:1161015, Prop:1001}"
+            },
+            "116110040": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1161014, Prop:1002}"
+            },
+            "116110041": {
+                "Description": "Multiplicador de Atordoamento de Golpes Sequenciais",
+                "Param": "{Skill:1161015, Prop:1002}"
+            },
+            "116110042": {
+                "Description": "Consumo de Energia de Ativação",
+                "Param": "40"
+            },
+            "116110043": {
+                "Description": "Consumo de Energia de Golpe Sequencial",
+                "Param": "20"
+            }
+        },
+        "2": {
+            "116100004": {
+                "Title": "Esquiva: Passo Sombrio",
+                "Description": "Pressione <IconMap:Icon_Evade> para ativar:\nRealiza uma esquiva lateral rápida.\nO personagem fica invulnerável ao usar esta habilidade.\nEnquanto o personagem estiver atacando, pressione <IconMap:Icon_Evade> para realizar uma esquiva rápida na direção do {LAYOUT_CONSOLECONTROLLER#controle analógico}{LAYOUT_FALLBACK#controle analógico}.\nEssa habilidade não interrompe a contagem do combo do <color=#FFFFFF>Ataque Básico</color>.\nO personagem fica invulnerável ao usar esta habilidade."
+            },
+            "116100005": {
+                "Title": "Ataque Rápido: Golpe Certeiro",
+                "Description": "Pressione <IconMap:Icon_Normal> durante a esquiva para ativar:\nGolpeia os inimigos à frente rapidamente, causando <color=#F0D12B>Dano Físico</color>."
+            },
+            "116100006": {
+                "Title": "Contraesquiva: Flash Fumegante",
+                "Description": "Pressione <IconMap:Icon_Normal> durante uma <color=#FFFFFF>Esquiva Perfeita</color> para ativar:\nGolpeia inimigos à frente, causando <color=#FF5521>Dano de Fogo</color>.\nO personagem fica invulnerável ao usar esta habilidade.\nApós executar a habilidade, pressione ou mantenha <IconMap:Icon_Normal> pressionado para passar para o 5º golpe do <color=#FFFFFF>Ataque Básico</color>."
+            },
+            "116110044": {
+                "Title": "Ataque Rápido: Golpe Certeiro"
+            },
+            "116110045": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1161016, Prop:1001}"
+            },
+            "116110046": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1161016, Prop:1002}"
+            },
+            "116110047": {
+                "Title": "Contraesquiva: Flash Fumegante"
+            },
+            "116110048": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1161017, Prop:1001}"
+            },
+            "116110049": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1161017, Prop:1002}"
+            }
+        },
+        "3": {
+            "116100007": {
+                "Title": "Ataque em Cadeia: Sol Escaldante em V",
+                "Description": "Quando um <color=#FFFFFF>Ataque em Cadeia</color> for acionado, selecione o personagem para ativar:\nDesfere um golpe poderoso contra os inimigos à frente em uma área pequena, causando <color=#FF5521>Dano de Fogo</color> muito alto.\nO personagem fica invulnerável ao usar esta habilidade."
+            },
+            "116100008": {
+                "Title": "Supremo: Incêndio Real em W",
+                "Description": "Quando o Índice de dB estiver no máximo, pressione <IconMap:Icon_UltimateReady> para ativar:\nDesfere um golpe poderoso em uma área grande, causando <color=#FF5521>Dano de Fogo</color> muito alto.\nO personagem fica invulnerável ao usar esta habilidade."
+            },
+            "116110050": {
+                "Title": "Ataque em Cadeia: Sol Escaldante em V"
+            },
+            "116110051": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1161018, Prop:1001}"
+            },
+            "116110052": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1161018, Prop:1002}"
+            },
+            "116110053": {
+                "Title": "Supremo: Incêndio Real em W"
+            },
+            "116110054": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1161019, Prop:1001}"
+            },
+            "116110055": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1161019, Prop:1002}"
+            }
+        },
+        "6": {
+            "116100010": {
+                "Title": "Assistência Reativa: Flash Fumegante — Guarda",
+                "Description": "Quando o personagem em combate é lançado para o alto, pressione <IconMap:Icon_Switch> para ativar:\nGolpeia inimigos à frente, causando <color=#FF5521>Dano de Fogo</color>.\nO personagem fica invulnerável durante esta habilidade.\nApós executar esta habilidade, pressione ou mantenha <IconMap:Icon_Normal> pressionado para conectar com o 5º golpe do <color=#FFFFFF>Ataque Básico</color>."
+            },
+            "116100011": {
+                "Title": "Assistência Defensiva: Destruição Abrupta",
+                "Description": "Quando o personagem em campo está prestes a sofrer um ataque, pressione <IconMap:Icon_Switch> para ativar:\nDefende do ataque inimigo e causa Atordoamento muito alto.\nO personagem fica invulnerável ao usar esta habilidade."
+            },
+            "116100012": {
+                "Title": "Assistência Imediata: Golpe Certeiro — Punhalada",
+                "Description": "Pressione <IconMap:Icon_Normal> depois de uma <color=#FFFFFF>Assistência Defensiva</color> para ativar:\nGolpeia inimigos à frente, causando <color=#FF5521>Dano de Fogo</color>.\nO personagem fica invulnerável ao usar esta habilidade.\nApós a execução desta habilidade, pressione ou mantenha <IconMap:Icon_Normal> pressionado para passar para o 5º golpe do <color=#FFFFFF>Ataque Básico</color>."
+            },
+            "116110056": {
+                "Title": "Assistência Reativa: Flash Fumegante — Guarda"
+            },
+            "116110057": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1161020, Prop:1001}"
+            },
+            "116110058": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1161020, Prop:1002}"
+            },
+            "116110059": {
+                "Title": "Assistência Defensiva: Destruição Abrupta"
+            },
+            "116110060": {
+                "Description": "Multiplicador de Atordoamento de Defensiva Leve",
+                "Param": "{Skill:1161021, Prop:1002}"
+            },
+            "116110061": {
+                "Description": "Multiplicador de Atordoamento de Defensiva Pesada",
+                "Param": "{Skill:1161022, Prop:1002}"
+            },
+            "116110062": {
+                "Description": "Multiplicador de Atordoamento de Defensiva em Cadeia",
+                "Param": "{Skill:1161023, Prop:1002}"
+            },
+            "116110063": {
+                "Title": "Assistência Imediata: Golpe Certeiro — Punhalada"
+            },
+            "116110064": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1161024, Prop:1001}"
+            },
+            "116110065": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1161024, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1161001": {
+            "DamageValue": 3920,
+            "DamageGrowth": 360,
+            "DazeValue": 1960,
+            "DazeGrowth": 90
+        },
+        "1161002": {
+            "DamageValue": 4800,
+            "DamageGrowth": 440,
+            "DazeValue": 3290,
+            "DazeGrowth": 150
+        },
+        "1161003": {
+            "DamageValue": 5530,
+            "DamageGrowth": 510,
+            "DazeValue": 4670,
+            "DazeGrowth": 220
+        },
+        "1161004": {
+            "DamageValue": 8690,
+            "DamageGrowth": 790,
+            "DazeValue": 6050,
+            "DazeGrowth": 280
+        },
+        "1161005": {
+            "DamageValue": 4770,
+            "DamageGrowth": 440,
+            "DazeValue": 3320,
+            "DazeGrowth": 160
+        },
+        "1161006": {
+            "DamageValue": 5810,
+            "DamageGrowth": 530,
+            "DazeValue": 4040,
+            "DazeGrowth": 190
+        },
+        "1161007": {
+            "DamageValue": 3280,
+            "DamageGrowth": 300,
+            "DazeValue": 2280,
+            "DazeGrowth": 110
+        },
+        "1161008": {
+            "DamageValue": 8900,
+            "DamageGrowth": 810,
+            "DazeValue": 6190,
+            "DazeGrowth": 290
+        },
+        "1161009": {
+            "DamageValue": 7890,
+            "DamageGrowth": 720,
+            "DazeValue": 7610,
+            "DazeGrowth": 350
+        },
+        "1161010": {
+            "DamageValue": 16360,
+            "DamageGrowth": 1490,
+            "DazeValue": 12950,
+            "DazeGrowth": 590
+        },
+        "1161011": {
+            "DamageValue": 12290,
+            "DamageGrowth": 1120,
+            "DazeValue": 8130,
+            "DazeGrowth": 370
+        },
+        "1161012": {
+            "DamageValue": 10460,
+            "DamageGrowth": 960,
+            "DazeValue": 7950,
+            "DazeGrowth": 370
+        },
+        "1161013": {
+            "DamageValue": 3630,
+            "DamageGrowth": 330,
+            "DazeValue": 3630,
+            "DazeGrowth": 170
+        },
+        "1161014": {
+            "DamageValue": 48630,
+            "DamageGrowth": 4430,
+            "DazeValue": 40350,
+            "DazeGrowth": 1840
+        },
+        "1161015": {
+            "DamageValue": 29270,
+            "DamageGrowth": 2670,
+            "DazeValue": 24770,
+            "DazeGrowth": 1130
+        },
+        "1161016": {
+            "DamageValue": 8990,
+            "DamageGrowth": 820,
+            "DazeValue": 4500,
+            "DazeGrowth": 210
+        },
+        "1161017": {
+            "DamageValue": 18630,
+            "DamageGrowth": 1700,
+            "DazeValue": 16870,
+            "DazeGrowth": 770
+        },
+        "1161018": {
+            "DamageValue": 71210,
+            "DamageGrowth": 6480,
+            "DazeValue": 27320,
+            "DazeGrowth": 1250
+        },
+        "1161019": {
+            "DamageValue": 150800,
+            "DamageGrowth": 13710,
+            "DazeValue": 94740,
+            "DazeGrowth": 4310
+        },
+        "1161020": {
+            "DamageValue": 6970,
+            "DamageGrowth": 640,
+            "DazeValue": 6970,
+            "DazeGrowth": 320
+        },
+        "1161021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1161022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1161023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1161024": {
+            "DamageValue": 21980,
+            "DamageGrowth": 2000,
+            "DazeValue": 18230,
+            "DazeGrowth": 830
+        },
+        "1161025": {
+            "DamageValue": 43540,
+            "DamageGrowth": 3960,
+            "DazeValue": 13240,
+            "DazeGrowth": 610
+        },
+        "1161026": {
+            "DamageValue": 17720,
+            "DamageGrowth": 1620,
+            "DazeValue": 13630,
+            "DazeGrowth": 620
+        },
+        "1161027": {
+            "DamageValue": 36430,
+            "DamageGrowth": 3320,
+            "DazeValue": 8550,
+            "DazeGrowth": 390
+        },
+        "1161028": {
+            "DamageValue": 11970,
+            "DamageGrowth": 1090,
+            "DazeValue": 9210,
+            "DazeGrowth": 420
+        }
+    }
+}

@@ -1,0 +1,523 @@
+{
+    "Name": "Miyabi",
+    "ElementTypes": [
+        "Ice"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Frost auf dem Schnee",
+            "Description": "In der <color=#FFFFFF>Shimotsuki-Haltung</color> kann der <color=#FFFFFF>Basisangriff: Shimotsuki</color> für jeden verbrauchten Pkt. <color=#FFFFFF>Frostfall</color> 6 % der VTD des Ziels ignorieren, max. 6-fach stapelbar und hält bis <color=#FFFFFF>Shimotsuki-Haltung</color> endet. Wenn ein Hieb von Aufladephase 3 aus dem <color=#FFFFFF>Basisangriff: Shimotsuki</color> einen Gegner trifft, der an <color=#FFFFFF>Frostbrand</color> leidet, wird <color=#FFFFFF>Frostbrand</color> des Ziels sofort entfernt und die Anomalieansammlungsrate aller Truppenfiguren erhöht sich um 20 %, hält 10 s.",
+            "Lore": "Seit ihrer Kindheit rezitiert Miyabi gerne Gedichte über Schnee und Frost. Auch wenn sie sie nicht völlig versteht, so tut sie es doch jeden Tag.\nSchon bald erkannte sie ihre wahre Bedeutung, aber nicht in einer stillen, verschneiten Nacht, sondern auf dem Schlachtfeld."
+        },
+        "2": {
+            "Title": "Atmungsmethode",
+            "Description": "Der durch den <color=#FFFFFF>Basisangriff: Kazahana</color> und <color=#FFFFFF>Ausweichkonter</color> verursachte SCH erhöht sich um 30 %. Hoshimi Miyabi erhält 1 Pkt. <color=#FFFFFF>Frostfall</color>, wenn die letzte Aktion des 5. Angriffs von ihrem <color=#FFFFFF>Basisangriff: Kazahana</color> einen Gegner trifft. Beim Betreten des Kampffelds erhält Hoshimi Miyabi sofort 6 Pkt. <color=#FFFFFF>Frostfall</color> und ihre KRIT-Rate erhöht sich um 15 %.",
+            "Lore": "„Wie das Schwert schlägt, so schlägt das Herz.“ Dies ist ein wichtiges Konzept der Hoshimi-Schule der Schwertkunst.\nDen Feind zu besiegen, ist nur der erste Schritt auf dem Weg zum Sieg.\nDer Schwerpunkt eines Kriegers ist es, stets wachsam zu bleiben."
+        },
+        "3": {
+            "Title": "Disziplin der Kriegerin",
+            "Description": "Fähigkeitsstufe von <color=#FFFFFF>Basisangriff</color>, <color=#FFFFFF>Ausweichen</color>, <color=#FFFFFF>Hilfe</color>, <color=#FFFFFF>Spezialangriff</color> und <color=#FFFFFF>Kettenangriff</color> +2",
+            "Lore": "Miyabi stammt aus einer Kriegerfamilie und trainiert daher besonders hart. Ihre Hingabe zum Schwertkampf ist unerschütterlich. Was? Eine Besprechung? Sie wird nicht daran teilnehmen."
+        },
+        "4": {
+            "Title": "Zersplittern",
+            "Description": "Der von <color=#FFFFFF>Frostbrand – Bruch</color> verursachte SCH erhöht sich um 30 %. Beim Auslösen von <color=#FFFFFF>Frostbrand – Bruch</color> erhält Hoshimi Miyabi zusätzlich 250 Pkt. Dezibel.",
+            "Lore": "Wenn man in der Hitze des Gefechts Gedichte aufsagt, kann das den Atmungsrhythmus regulieren.\nEgal, ob es um ihre Denkweise oder ihre Atmung geht, Miyabi bleibt immer ruhig."
+        },
+        "5": {
+            "Title": "Jubiläum",
+            "Description": "Fähigkeitsstufe von <color=#FFFFFF>Basisangriff</color>, <color=#FFFFFF>Ausweichen</color>, <color=#FFFFFF>Hilfe</color>, <color=#FFFFFF>Spezialangriff</color> und <color=#FFFFFF>Kettenangriff</color> +2",
+            "Lore": "Das Mädchen kommt an jenem allzu vertrauten Ort mit Blumen an. Ihr Atem wird zu Nebel und verschwindet dann in der kalten Luft.\nIhre Finger berühren sanft den Namen auf dem Monument.\nAlles ist still, wie ein schweigender Beobachter."
+        },
+        "6": {
+            "Title": "Erstaunliches Talent",
+            "Description": "In der <color=#FFFFFF>Shimotsuki-Haltung</color> erhält Hoshimi Miyabi den Effekt <color=#FFFFFF>Polar</color>, wodurch der SCH des <color=#FFFFFF>Basisangriffs: Shimotsuki</color> um 30 % erhöht wird. Nachdem <color=#FFFFFF>Polar</color> erhalten wurde, wenn <color=#FFFFFF>Frostfall</color> verbraucht wird, zieht Hoshimi Miyabi automatisch ihr Schwert und führt basierend auf der aktuellen Aufladephase kraftvolle Hiebe nach vorn aus. Bevor <color=#FFFFFF>Frostfall</color> vollständig aufgebraucht wird, unterbrechen das Ziehen des Schwerts und die Hiebe nicht den Aufladefortschritt in der <color=#FFFFFF>Shimotsuki-Haltung</color>. Während der Dauer einer <color=#FFFFFF>Shimotsuki-Haltung</color> kann sie ihr Schwert bis zu 3-mal ziehen und Hiebe ausführen.",
+            "Lore": "Je mehr sie kämpft, desto offensichtlicher wird es für Außenstehende: Wenn es einen Gott der Schwertkunst gibt, muss Hoshimi Miyabi sein Liebling sein."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passive Kernfähigkeit: Sengende Kälte",
+            "DescriptionByLevel": {
+                "1": "Wenn Hoshimi Miyabi <color=#98EFF0>Frost-SCH</color> verursacht, fügt sie dem Ziel <color=#FFFFFF>Eisfeuer</color> zu, hält 30 s. Wenn sie <color=#98EFF0>Frost-Anomalieansammlung</color> bei Gegnern mit <color=#FFFFFF>Eisfeuer</color> anhäuft, wird basierend auf 100 % von Hoshimi Miyabis KRIT-Rate die <color=#98EFF0>Frost-Anomalieansammlungsrate</color> erhöht, bis zu max. 80 %. Beim Anhäufen von <color=#98EFF0>Frost-Anomalieansammlung</color> hat sie eine unabhängige Anomalieansammlungs-Leiste und die anschließend ausgelösten Effekte <color=#98EFF0>Gefroren</color>, <color=#98EFF0>Eisbrecher</color> und <color=#98EFF0>Frostkalt</color> können mit anderen Attributanomalien, einschließlich <color=#98EFF0>Eis-Anomalie</color>, reagieren, um <color=#FFFFFF>Unordnung</color> auszulösen.\nWenn Hoshimi Miyabi <color=#98EFF0>Frostkalt</color> auf Gegner mit <color=#FFFFFF>Eisfeuer</color> anwendet, wird <color=#FFFFFF>Eisfeuer</color> entfernt, um <color=#FFFFFF>Frostbrand – Bruch</color> auszulösen und <color=#98EFF0>Frost-SCH</color> in Höhe von <color=#2BAD00>750 %</color> von Hoshimi Miyabis ANG zu verursachen. Gleichzeitig wird das Ziel in den Zustand <color=#FFFFFF>Frostbrand</color> versetzt. Alle Einheiten häufen <color=#2BAD00>14 %</color> mehr Anomalieansammlung gegen Gegner im Zustand <color=#FFFFFF>Frostbrand</color> an, aber Hoshimi Miyabi kann diesen Gegnern nicht erneut <color=#FFFFFF>Eisfeuer</color> zufügen. Der Zustand <color=#FFFFFF>Frostbrand</color> endet, wenn <color=#98EFF0>Frostkalt</color> abläuft. Während der Dauer des Zustands kann <color=#98EFF0>Frostkalt</color> durch Anwenden einer anderen Attributanomalie überschrieben werden und <color=#FFFFFF>Frostbrand</color> wird entfernt.\nBeim Auslösen von <color=#FFFFFF>Frostbrand – Bruch</color> erhält Hoshimi Miyabi 1 Pkt. <color=#FFFFFF>Frostfall</color>, 10 s Abklingzeit.",
+                "2": "Wenn Hoshimi Miyabi <color=#98EFF0>Frost-SCH</color> verursacht, fügt sie dem Ziel <color=#FFFFFF>Eisfeuer</color> zu, hält 30 s. Wenn sie <color=#98EFF0>Frost-Anomalieansammlung</color> bei Gegnern mit <color=#FFFFFF>Eisfeuer</color> anhäuft, wird basierend auf 100 % von Hoshimi Miyabis KRIT-Rate die <color=#98EFF0>Frost-Anomalieansammlungsrate</color> erhöht, bis zu max. 80 %. Beim Anhäufen von <color=#98EFF0>Frost-Anomalieansammlung</color> hat sie eine unabhängige Anomalieansammlungs-Leiste und die anschließend ausgelösten Effekte <color=#98EFF0>Gefroren</color>, <color=#98EFF0>Eisbrecher</color> und <color=#98EFF0>Frostkalt</color> können mit anderen Attributanomalien, einschließlich <color=#98EFF0>Eis-Anomalie</color>, reagieren, um <color=#FFFFFF>Unordnung</color> auszulösen.\nWenn Hoshimi Miyabi <color=#98EFF0>Frostkalt</color> auf Gegner mit <color=#FFFFFF>Eisfeuer</color> anwendet, wird <color=#FFFFFF>Eisfeuer</color> entfernt, um <color=#FFFFFF>Frostbrand – Bruch</color> auszulösen und <color=#98EFF0>Frost-SCH</color> in Höhe von <color=#2BAD00>875 %</color> von Hoshimi Miyabis ANG zu verursachen. Gleichzeitig wird das Ziel in den Zustand <color=#FFFFFF>Frostbrand</color> versetzt. Alle Einheiten häufen <color=#2BAD00>15 %</color> mehr Anomalieansammlung gegen Gegner im Zustand <color=#FFFFFF>Frostbrand</color> an, aber Hoshimi Miyabi kann diesen Gegnern nicht erneut <color=#FFFFFF>Eisfeuer</color> zufügen. Der Zustand <color=#FFFFFF>Frostbrand</color> endet, wenn <color=#98EFF0>Frostkalt</color> abläuft. Während der Dauer des Zustands kann <color=#98EFF0>Frostkalt</color> durch Anwenden einer anderen Attributanomalie überschrieben werden und <color=#FFFFFF>Frostbrand</color> wird entfernt.\nBeim Auslösen von <color=#FFFFFF>Frostbrand – Bruch</color> erhält Hoshimi Miyabi 1 Pkt. <color=#FFFFFF>Frostfall</color>, 10 s Abklingzeit.",
+                "3": "Wenn Hoshimi Miyabi <color=#98EFF0>Frost-SCH</color> verursacht, fügt sie dem Ziel <color=#FFFFFF>Eisfeuer</color> zu, hält 30 s. Wenn sie <color=#98EFF0>Frost-Anomalieansammlung</color> bei Gegnern mit <color=#FFFFFF>Eisfeuer</color> anhäuft, wird basierend auf 100 % von Hoshimi Miyabis KRIT-Rate die <color=#98EFF0>Frost-Anomalieansammlungsrate</color> erhöht, bis zu max. 80 %. Beim Anhäufen von <color=#98EFF0>Frost-Anomalieansammlung</color> hat sie eine unabhängige Anomalieansammlungs-Leiste und die anschließend ausgelösten Effekte <color=#98EFF0>Gefroren</color>, <color=#98EFF0>Eisbrecher</color> und <color=#98EFF0>Frostkalt</color> können mit anderen Attributanomalien, einschließlich <color=#98EFF0>Eis-Anomalie</color>, reagieren, um <color=#FFFFFF>Unordnung</color> auszulösen.\nWenn Hoshimi Miyabi <color=#98EFF0>Frostkalt</color> auf Gegner mit <color=#FFFFFF>Eisfeuer</color> anwendet, wird <color=#FFFFFF>Eisfeuer</color> entfernt, um <color=#FFFFFF>Frostbrand – Bruch</color> auszulösen und <color=#98EFF0>Frost-SCH</color> in Höhe von <color=#2BAD00>1.000 %</color> von Hoshimi Miyabis ANG zu verursachen. Gleichzeitig wird das Ziel in den Zustand <color=#FFFFFF>Frostbrand</color> versetzt. Alle Einheiten häufen <color=#2BAD00>16 %</color> mehr Anomalieansammlung gegen Gegner im Zustand <color=#FFFFFF>Frostbrand</color> an, aber Hoshimi Miyabi kann diesen Gegnern nicht erneut <color=#FFFFFF>Eisfeuer</color> zufügen. Der Zustand <color=#FFFFFF>Frostbrand</color> endet, wenn <color=#98EFF0>Frostkalt</color> abläuft. Während der Dauer des Zustands kann <color=#98EFF0>Frostkalt</color> durch Anwenden einer anderen Attributanomalie überschrieben werden und <color=#FFFFFF>Frostbrand</color> wird entfernt.\nBeim Auslösen von <color=#FFFFFF>Frostbrand – Bruch</color> erhält Hoshimi Miyabi 1 Pkt. <color=#FFFFFF>Frostfall</color>, 10 s Abklingzeit.",
+                "4": "Wenn Hoshimi Miyabi <color=#98EFF0>Frost-SCH</color> verursacht, fügt sie dem Ziel <color=#FFFFFF>Eisfeuer</color> zu, hält 30 s. Wenn sie <color=#98EFF0>Frost-Anomalieansammlung</color> bei Gegnern mit <color=#FFFFFF>Eisfeuer</color> anhäuft, wird basierend auf 100 % von Hoshimi Miyabis KRIT-Rate die <color=#98EFF0>Frost-Anomalieansammlungsrate</color> erhöht, bis zu max. 80 %. Beim Anhäufen von <color=#98EFF0>Frost-Anomalieansammlung</color> hat sie eine unabhängige Anomalieansammlungs-Leiste und die anschließend ausgelösten Effekte <color=#98EFF0>Gefroren</color>, <color=#98EFF0>Eisbrecher</color> und <color=#98EFF0>Frostkalt</color> können mit anderen Attributanomalien, einschließlich <color=#98EFF0>Eis-Anomalie</color>, reagieren, um <color=#FFFFFF>Unordnung</color> auszulösen.\nWenn Hoshimi Miyabi <color=#98EFF0>Frostkalt</color> auf Gegner mit <color=#FFFFFF>Eisfeuer</color> anwendet, wird <color=#FFFFFF>Eisfeuer</color> entfernt, um <color=#FFFFFF>Frostbrand – Bruch</color> auszulösen und <color=#98EFF0>Frost-SCH</color> in Höhe von <color=#2BAD00>1.125 %</color> von Hoshimi Miyabis ANG zu verursachen. Gleichzeitig wird das Ziel in den Zustand <color=#FFFFFF>Frostbrand</color> versetzt. Alle Einheiten häufen <color=#2BAD00>17 %</color> mehr Anomalieansammlung gegen Gegner im Zustand <color=#FFFFFF>Frostbrand</color> an, aber Hoshimi Miyabi kann diesen Gegnern nicht erneut <color=#FFFFFF>Eisfeuer</color> zufügen. Der Zustand <color=#FFFFFF>Frostbrand</color> endet, wenn <color=#98EFF0>Frostkalt</color> abläuft. Während der Dauer des Zustands kann <color=#98EFF0>Frostkalt</color> durch Anwenden einer anderen Attributanomalie überschrieben werden und <color=#FFFFFF>Frostbrand</color> wird entfernt.\nBeim Auslösen von <color=#FFFFFF>Frostbrand – Bruch</color> erhält Hoshimi Miyabi 1 Pkt. <color=#FFFFFF>Frostfall</color>, 10 s Abklingzeit.",
+                "5": "Wenn Hoshimi Miyabi <color=#98EFF0>Frost-SCH</color> verursacht, fügt sie dem Ziel <color=#FFFFFF>Eisfeuer</color> zu, hält 30 s. Wenn sie <color=#98EFF0>Frost-Anomalieansammlung</color> bei Gegnern mit <color=#FFFFFF>Eisfeuer</color> anhäuft, wird basierend auf 100 % von Hoshimi Miyabis KRIT-Rate die <color=#98EFF0>Frost-Anomalieansammlungsrate</color> erhöht, bis zu max. 80 %. Beim Anhäufen von <color=#98EFF0>Frost-Anomalieansammlung</color> hat sie eine unabhängige Anomalieansammlungs-Leiste und die anschließend ausgelösten Effekte <color=#98EFF0>Gefroren</color>, <color=#98EFF0>Eisbrecher</color> und <color=#98EFF0>Frostkalt</color> können mit anderen Attributanomalien, einschließlich <color=#98EFF0>Eis-Anomalie</color>, reagieren, um <color=#FFFFFF>Unordnung</color> auszulösen.\nWenn Hoshimi Miyabi <color=#98EFF0>Frostkalt</color> auf Gegner mit <color=#FFFFFF>Eisfeuer</color> anwendet, wird <color=#FFFFFF>Eisfeuer</color> entfernt, um <color=#FFFFFF>Frostbrand – Bruch</color> auszulösen und <color=#98EFF0>Frost-SCH</color> in Höhe von <color=#2BAD00>1.250 %</color> von Hoshimi Miyabis ANG zu verursachen. Gleichzeitig wird das Ziel in den Zustand <color=#FFFFFF>Frostbrand</color> versetzt. Alle Einheiten häufen <color=#2BAD00>18 %</color> mehr Anomalieansammlung gegen Gegner im Zustand <color=#FFFFFF>Frostbrand</color> an, aber Hoshimi Miyabi kann diesen Gegnern nicht erneut <color=#FFFFFF>Eisfeuer</color> zufügen. Der Zustand <color=#FFFFFF>Frostbrand</color> endet, wenn <color=#98EFF0>Frostkalt</color> abläuft. Während der Dauer des Zustands kann <color=#98EFF0>Frostkalt</color> durch Anwenden einer anderen Attributanomalie überschrieben werden und <color=#FFFFFF>Frostbrand</color> wird entfernt.\nBeim Auslösen von <color=#FFFFFF>Frostbrand – Bruch</color> erhält Hoshimi Miyabi 1 Pkt. <color=#FFFFFF>Frostfall</color>, 10 s Abklingzeit.",
+                "6": "Wenn Hoshimi Miyabi <color=#98EFF0>Frost-SCH</color> verursacht, fügt sie dem Ziel <color=#FFFFFF>Eisfeuer</color> zu, hält 30 s. Wenn sie <color=#98EFF0>Frost-Anomalieansammlung</color> bei Gegnern mit <color=#FFFFFF>Eisfeuer</color> anhäuft, wird basierend auf 100 % von Hoshimi Miyabis KRIT-Rate die <color=#98EFF0>Frost-Anomalieansammlungsrate</color> erhöht, bis zu max. 80 %. Beim Anhäufen von <color=#98EFF0>Frost-Anomalieansammlung</color> hat sie eine unabhängige Anomalieansammlungs-Leiste und die anschließend ausgelösten Effekte <color=#98EFF0>Gefroren</color>, <color=#98EFF0>Eisbrecher</color> und <color=#98EFF0>Frostkalt</color> können mit anderen Attributanomalien, einschließlich <color=#98EFF0>Eis-Anomalie</color>, reagieren, um <color=#FFFFFF>Unordnung</color> auszulösen.\nWenn Hoshimi Miyabi <color=#98EFF0>Frostkalt</color> auf Gegner mit <color=#FFFFFF>Eisfeuer</color> anwendet, wird <color=#FFFFFF>Eisfeuer</color> entfernt, um <color=#FFFFFF>Frostbrand – Bruch</color> auszulösen und <color=#98EFF0>Frost-SCH</color> in Höhe von <color=#2BAD00>1.375 %</color> von Hoshimi Miyabis ANG zu verursachen. Gleichzeitig wird das Ziel in den Zustand <color=#FFFFFF>Frostbrand</color> versetzt. Alle Einheiten häufen <color=#2BAD00>19 %</color> mehr Anomalieansammlung gegen Gegner im Zustand <color=#FFFFFF>Frostbrand</color> an, aber Hoshimi Miyabi kann diesen Gegnern nicht erneut <color=#FFFFFF>Eisfeuer</color> zufügen. Der Zustand <color=#FFFFFF>Frostbrand</color> endet, wenn <color=#98EFF0>Frostkalt</color> abläuft. Während der Dauer des Zustands kann <color=#98EFF0>Frostkalt</color> durch Anwenden einer anderen Attributanomalie überschrieben werden und <color=#FFFFFF>Frostbrand</color> wird entfernt.\nBeim Auslösen von <color=#FFFFFF>Frostbrand – Bruch</color> erhält Hoshimi Miyabi 1 Pkt. <color=#FFFFFF>Frostfall</color>, 10 s Abklingzeit.",
+                "7": "Wenn Hoshimi Miyabi <color=#98EFF0>Frost-SCH</color> verursacht, fügt sie dem Ziel <color=#FFFFFF>Eisfeuer</color> zu, hält 30 s. Wenn sie <color=#98EFF0>Frost-Anomalieansammlung</color> bei Gegnern mit <color=#FFFFFF>Eisfeuer</color> anhäuft, wird basierend auf 100 % von Hoshimi Miyabis KRIT-Rate die <color=#98EFF0>Frost-Anomalieansammlungsrate</color> erhöht, bis zu max. 80 %. Beim Anhäufen von <color=#98EFF0>Frost-Anomalieansammlung</color> hat sie eine unabhängige Anomalieansammlungs-Leiste und die anschließend ausgelösten Effekte <color=#98EFF0>Gefroren</color>, <color=#98EFF0>Eisbrecher</color> und <color=#98EFF0>Frostkalt</color> können mit anderen Attributanomalien, einschließlich <color=#98EFF0>Eis-Anomalie</color>, reagieren, um <color=#FFFFFF>Unordnung</color> auszulösen.\nWenn Hoshimi Miyabi <color=#98EFF0>Frostkalt</color> auf Gegner mit <color=#FFFFFF>Eisfeuer</color> anwendet, wird <color=#FFFFFF>Eisfeuer</color> entfernt, um <color=#FFFFFF>Frostbrand – Bruch</color> auszulösen und <color=#98EFF0>Frost-SCH</color> in Höhe von <color=#2BAD00>1.500 %</color> von Hoshimi Miyabis ANG zu verursachen. Gleichzeitig wird das Ziel in den Zustand <color=#FFFFFF>Frostbrand</color> versetzt. Alle Einheiten häufen <color=#2BAD00>20 %</color> mehr Anomalieansammlung gegen Gegner im Zustand <color=#FFFFFF>Frostbrand</color> an, aber Hoshimi Miyabi kann diesen Gegnern nicht erneut <color=#FFFFFF>Eisfeuer</color> zufügen. Der Zustand <color=#FFFFFF>Frostbrand</color> endet, wenn <color=#98EFF0>Frostkalt</color> abläuft. Während der Dauer des Zustands kann <color=#98EFF0>Frostkalt</color> durch Anwenden einer anderen Attributanomalie überschrieben werden und <color=#FFFFFF>Frostbrand</color> wird entfernt.\nBeim Auslösen von <color=#FFFFFF>Frostbrand – Bruch</color> erhält Hoshimi Miyabi 1 Pkt. <color=#FFFFFF>Frostfall</color>, 10 s Abklingzeit."
+            }
+        },
+        "MathSkill": {
+            "Title": "Zusatzfähigkeit: Schwelgen im Frost",
+            "Description": "Wenn sich in der Truppe eine <color=#FFFFFF>Support</color>-Figur befindet oder eine Figur derselben Fraktion angehört:\nDer durch den <color=#FFFFFF>Basisangriff: Shimotsuki</color> verursachte SCH erhöht sich um 60 %. Wenn eine Truppenfigur <color=#FFFFFF>Unordnung</color> auslöst, erhält Hoshimi Miyabi 2 Pkt. <color=#FFFFFF>Frostfall</color> und während der Dauer der nächsten <color=#FFFFFF>Shimotsuki-Haltung</color> ignoriert der <color=#FFFFFF>Basisangriff: Shimotsuki</color> 30 % des <color=#98EFF0>Eis-WDS</color> des Ziels."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "109100001": {
+                "Title": "Basisangriff: Kazahana",
+                "Description": "Drücke <IconMap:Icon_Normal> zum Anwenden:\nFührt bis zu 5 Hiebe nach vorn aus. Die ersten zwei verursachen <color=#F0D12B>phys. SCH</color> und die letzten drei verursachen <color=#98EFF0>Frost-SCH</color>.\nPariert gegnerische Angriffe während des 5. Angriffs des <color=#FFFFFF>Basisangriffs</color>."
+            },
+            "109100002": {
+                "Title": "Basisangriff: Shimotsuki",
+                "Description": "Wenn mind. 2 Pkt. <color=#FFFFFF>Frostfall</color> vorhanden sind, halte <IconMap:Icon_Normal> gedrückt zum Anwenden:\nHoshimi Miyabi steckt ihr Schwert weg, betritt die <color=#FFFFFF>Shimotsuki-Haltung</color> und lädt auf. Pro Aufladephase werden 2 Pkt. <color=#FFFFFF>Frostfall</color> verbraucht, bis zu max. drei Aufladephasen. Beim Loslassen von <IconMap:Icon_Normal>, oder wenn <color=#FFFFFF>Frostfall</color> vollständig aufgebraucht ist, zieht Hoshimi Miyabi ihr Schwert und führt basierend auf der aktuellen Aufladephase einen kraftvollen Hieb nach vorn aus, der hohen <color=#98EFF0>Frost-SCH</color> verursacht. Danach verlässt sie die <color=#FFFFFF>Shimotsuki-Haltung</color>.\nIn der <color=#FFFFFF>Shimotsuki-Haltung</color> ist sie unverwundbar.\nHoshimi Miyabi kann über bis zu 6. Pkt. <color=#FFFFFF>Frostfall</color> verfügen. Beim Betreten des Kampffelds erhält sie sofort 3 Pkt. <color=#FFFFFF>Frostfall</color>."
+            },
+            "109110001": {
+                "Title": "Basisangriff: Kazahana"
+            },
+            "109110002": {
+                "Description": "SCH-Multiplikator des 1. Angriffs",
+                "Param": "{Skill:1091001, Prop:1001}"
+            },
+            "109110003": {
+                "Description": "SCH-Multiplikator des 2. Angriffs",
+                "Param": "{Skill:1091002, Prop:1001}"
+            },
+            "109110004": {
+                "Description": "SCH-Multiplikator des 3. Angriffs",
+                "Param": "{Skill:1091003, Prop:1001}"
+            },
+            "109110005": {
+                "Description": "SCH-Multiplikator des 4. Angriffs",
+                "Param": "{Skill:1091004, Prop:1001}"
+            },
+            "109110006": {
+                "Description": "SCH-Multiplikator des 5. Angriffs",
+                "Param": "{Skill:1091005, Prop:1001}"
+            },
+            "109110007": {
+                "Description": "Benommenheit-Multiplikator des 1. Angriffs",
+                "Param": "{Skill:1091001, Prop:1002}"
+            },
+            "109110008": {
+                "Description": "Benommenheit-Multiplikator des 2. Angriffs",
+                "Param": "{Skill:1091002, Prop:1002}"
+            },
+            "109110009": {
+                "Description": "Benommenheit-Multiplikator des 3. Angriffs",
+                "Param": "{Skill:1091003, Prop:1002}"
+            },
+            "109110010": {
+                "Description": "Benommenheit-Multiplikator des 4. Angriffs",
+                "Param": "{Skill:1091004, Prop:1002}"
+            },
+            "109110011": {
+                "Description": "Benommenheit-Multiplikator des 5. Angriffs",
+                "Param": "{Skill:1091005, Prop:1002}"
+            },
+            "109110047": {
+                "Title": "Basisangriff: Shimotsuki"
+            },
+            "109110048": {
+                "Description": "SCH-Multiplikator für Hiebe (1. Aufladephase)",
+                "Param": "{Skill:1091027, Prop:1001}"
+            },
+            "109110049": {
+                "Description": "SCH-Multiplikator für Hiebe (2. Aufladephase)",
+                "Param": "{Skill:1091028, Prop:1001}"
+            },
+            "109110050": {
+                "Description": "SCH-Multiplikator für Hiebe (3. Aufladephase)",
+                "Param": "{Skill:1091029, Prop:1001}"
+            },
+            "109110051": {
+                "Description": "Benommenheit-Multiplikator für Hiebe (1. Aufladephase)",
+                "Param": "{Skill:1091027, Prop:1002}"
+            },
+            "109110052": {
+                "Description": "Benommenheit-Multiplikator für Hiebe (2. Aufladephase)",
+                "Param": "{Skill:1091028, Prop:1002}"
+            },
+            "109110053": {
+                "Description": "Benommenheit-Multiplikator für Hiebe (3. Aufladephase)",
+                "Param": "{Skill:1091029, Prop:1002}"
+            }
+        },
+        "1": {
+            "109100003": {
+                "Title": "Spezialangriff: Miyuki",
+                "Description": "Drücke <IconMap:Icon_Special> zum Anwenden:\nZieht schnell ihr Schwert, führt einen Hieb nach vorn aus und verursacht dabei <color=#98EFF0>Frost-SCH</color>.\nBeim Anwenden dieser Fähigkeit erhöht sich die Stufe des Unterbrechungs-WDS."
+            },
+            "109100004": {
+                "Title": "Verstärkter Spezialangriff: Hisetsu",
+                "Description": "Drücke bei ausreichender Energie <IconMap:Icon_SpecialReady> zum Anwenden:\nStürmt nach vorn und führt kraftvolle Hiebe gegen Gegner auf dem Weg aus, die hohen <color=#98EFF0>Frost-SCH</color> verursachen.\nBeim Anwenden der Fähigkeit werden 2 Pkt. <color=#FFFFFF>Frostfall</color> generiert.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar.\nDrücke nach Anwenden der Fähigkeit bei ausreichender Energie erneut <IconMap:Icon_SpecialReady> zum Anwenden:\nVerbraucht zusätzlich Energie und führt einen kraftvollen Folgeangriff gegen Gegner vor sich aus, der hohen <color=#98EFF0>Frost-SCH</color> verursacht.\nBeim Anwenden der Fähigkeit werden 2 Pkt. <color=#FFFFFF>Frostfall</color> generiert.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "109110015": {
+                "Title": "Spezialangriff: Miyuki"
+            },
+            "109110016": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1091008, Prop:1001}"
+            },
+            "109110017": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1091008, Prop:1002}"
+            },
+            "109110018": {
+                "Title": "Verstärkter Spezialangriff: Hisetsu"
+            },
+            "109110019": {
+                "Description": "SCH-Multiplikator für Hiebe",
+                "Param": "{{Skill:1091009, Prop:1001} + {Skill:1091010, Prop:1001}}"
+            },
+            "109110020": {
+                "Description": "SCH-Multiplikator des Folgeangriffs",
+                "Param": "{{Skill:1091011, Prop:1001} + {Skill:1091012, Prop:1001}}"
+            },
+            "109110021": {
+                "Description": "Benommenheit-Multiplikator für Hiebe",
+                "Param": "{{Skill:1091009, Prop:1002} + {Skill:1091010, Prop:1002}}"
+            },
+            "109110022": {
+                "Description": "Benommenheit-Multiplikator des Folgeangriffs",
+                "Param": "{{Skill:1091011, Prop:1002} + {Skill:1091012, Prop:1002}}"
+            },
+            "109110023": {
+                "Description": "Energiekosten für Hiebe",
+                "Param": "40 Pkt."
+            },
+            "109110024": {
+                "Description": "Energiekosten des Folgeangriffs",
+                "Param": "40 Pkt."
+            }
+        },
+        "2": {
+            "109100005": {
+                "Title": "Ausweichen: Mizutori",
+                "Description": "Drücke <IconMap:Icon_Evade> zum Anwenden:\nEin blitzschnelles Sprintausweichen.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar.\nDrücke beim Ausweichen <IconMap:Icon_Evade> mehrfach oder halte es gedrückt zum Anwenden:\nEin Sprintausweichen über eine große Distanz.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "109100006": {
+                "Title": "Sprintangriff: Fuyubachi",
+                "Description": "Drücke beim Ausweichen <IconMap:Icon_Normal> zum Anwenden:\nFührt Hiebe nach vorn aus, die <color=#F0D12B>phys. SCH</color> verursachen."
+            },
+            "109100007": {
+                "Title": "Ausweichkonter: Kan Suzume",
+                "Description": "Drücke nach Auslösen eines <color=#FFFFFF>perfekten Ausweichens</color> <IconMap:Icon_Normal> zum Anwenden:\nFührt Hiebe gegen Gegner vor sich aus und verursacht dabei <color=#98EFF0>Frost-SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "109110025": {
+                "Title": "Sprintangriff: Fuyubachi"
+            },
+            "109110026": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1091013, Prop:1001}"
+            },
+            "109110027": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1091013, Prop:1002}"
+            },
+            "109110028": {
+                "Title": "Ausweichkonter: Kan Suzume"
+            },
+            "109110029": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1091014, Prop:1001}"
+            },
+            "109110030": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1091014, Prop:1002}"
+            }
+        },
+        "3": {
+            "109100008": {
+                "Title": "Kettenangriff: Ruf des Frühlings",
+                "Description": "Wähle beim Auslösen eines <color=#FFFFFF>Kettenangriffs</color> die entsprechende Figur zum Anwenden:\nFührt einen kraftvollen Hieb mit großer Reichweite gegen Gegner vor sich aus und verursacht dabei hohen <color=#98EFF0>Frost-SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "109100009": {
+                "Title": "Ultimate: Verweilender Schnee",
+                "Description": "Drücke beim Erreichen der Dezibelstufe <color=#FFFFFF>Maximum</color> <IconMap:Icon_UltimateReady> zum Anwenden:\nFührt kraftvolle Hiebe mit großer Reichweite gegen Gegner vor sich aus, hält kurz inne und löst dann einen Gnadenstoß aus, der hohen <color=#98EFF0>Frost-SCH</color> verursacht.\nErhält beim Anwenden der Fähigkeit 3 Pkt. <color=#FFFFFF>Frostfall</color> und der verursachte <color=#98EFF0>Eis-SCH</color> erhöht sich um 30 %, hält 12 s.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "109110031": {
+                "Title": "Kettenangriff: Ruf des Frühlings"
+            },
+            "109110032": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{{Skill:1091015, Prop:1001} + {Skill:1091016, Prop:1001} + {Skill:1091017, Prop:1001}}"
+            },
+            "109110033": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{{Skill:1091015, Prop:1002} + {Skill:1091016, Prop:1002} + {Skill:1091017, Prop:1002}}"
+            },
+            "109110034": {
+                "Title": "Ultimate: Verweilender Schnee"
+            },
+            "109110035": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1091018, Prop:1001}"
+            },
+            "109110036": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1091018, Prop:1002}"
+            }
+        },
+        "6": {
+            "109100011": {
+                "Title": "Schnelle Hilfe: Tanzende Blüten",
+                "Description": "Drücke, wenn die gesteuerte Figur weggeschleudert wird, <IconMap:Icon_Switch> zum Anwenden:\nFührt Hiebe gegen Gegner vor sich aus und verursacht dabei <color=#98EFF0>Frost-SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "109100012": {
+                "Title": "Defensivhilfe: Treibende Blüten",
+                "Description": "Drücke, wenn die Figur auf dem Feld gleich angegriffen wird, <IconMap:Icon_Switch> zum Anwenden:\nWehrt gegnerische Angriffe ab und verursacht eine große Menge Benommenheit.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "109100013": {
+                "Title": "Sukzessive Hilfe: Fallende Blüten",
+                "Description": "Drücke nach einer <color=#FFFFFF>Defensivhilfe</color> <IconMap:Icon_Normal> zum Anwenden:\nFührt einen Vorstoßhieb gegen Gegner vor sich aus und verursacht dabei <color=#98EFF0>Frost-SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "109110037": {
+                "Title": "Schnelle Hilfe: Tanzende Blüten"
+            },
+            "109110038": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1091021, Prop:1001}"
+            },
+            "109110039": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1091021, Prop:1002}"
+            },
+            "109110040": {
+                "Title": "Defensivhilfe: Treibende Blüten"
+            },
+            "109110041": {
+                "Description": "Benommenheit-Multiplikator für leichte Defensive",
+                "Param": "{Skill:1091022, Prop:1002}"
+            },
+            "109110042": {
+                "Description": "Benommenheit-Multiplikator für schwere Defensive",
+                "Param": "{Skill:1091023, Prop:1002}"
+            },
+            "109110043": {
+                "Description": "Benommenheit-Multiplikator für Kettendefensive",
+                "Param": "{Skill:1091024, Prop:1002}"
+            },
+            "109110044": {
+                "Title": "Sukzessive Hilfe: Fallende Blüten"
+            },
+            "109110045": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1091025, Prop:1001}"
+            },
+            "109110046": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1091025, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1091001": {
+            "DamageValue": 2690,
+            "DamageGrowth": 250,
+            "DazeValue": 1350,
+            "DazeGrowth": 70
+        },
+        "1091002": {
+            "DamageValue": 2960,
+            "DamageGrowth": 270,
+            "DazeValue": 2690,
+            "DazeGrowth": 130
+        },
+        "1091003": {
+            "DamageValue": 6280,
+            "DamageGrowth": 580,
+            "DazeValue": 4640,
+            "DazeGrowth": 220
+        },
+        "1091004": {
+            "DamageValue": 9650,
+            "DamageGrowth": 880,
+            "DazeValue": 8210,
+            "DazeGrowth": 380
+        },
+        "1091005": {
+            "DamageValue": 12900,
+            "DamageGrowth": 1180,
+            "DazeValue": 13100,
+            "DazeGrowth": 600
+        },
+        "1091006": {
+            "DamageValue": 6280,
+            "DamageGrowth": 580,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1091007": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1091008": {
+            "DamageValue": 3580,
+            "DamageGrowth": 330,
+            "DazeValue": 3580,
+            "DazeGrowth": 170
+        },
+        "1091009": {
+            "DamageValue": 15740,
+            "DamageGrowth": 1440,
+            "DazeValue": 12870,
+            "DazeGrowth": 590
+        },
+        "1091010": {
+            "DamageValue": 23600,
+            "DamageGrowth": 2150,
+            "DazeValue": 19300,
+            "DazeGrowth": 880
+        },
+        "1091011": {
+            "DamageValue": 19330,
+            "DamageGrowth": 1760,
+            "DazeValue": 16200,
+            "DazeGrowth": 740
+        },
+        "1091012": {
+            "DamageValue": 28990,
+            "DamageGrowth": 2640,
+            "DazeValue": 24300,
+            "DazeGrowth": 1110
+        },
+        "1091013": {
+            "DamageValue": 2580,
+            "DamageGrowth": 240,
+            "DazeValue": 1290,
+            "DazeGrowth": 60
+        },
+        "1091014": {
+            "DamageValue": 24590,
+            "DamageGrowth": 2240,
+            "DazeValue": 21450,
+            "DazeGrowth": 980
+        },
+        "1091015": {
+            "DamageValue": 18840,
+            "DamageGrowth": 1720,
+            "DazeValue": 5670,
+            "DazeGrowth": 260
+        },
+        "1091016": {
+            "DamageValue": 18840,
+            "DamageGrowth": 1720,
+            "DazeValue": 5670,
+            "DazeGrowth": 260
+        },
+        "1091017": {
+            "DamageValue": 25120,
+            "DamageGrowth": 2290,
+            "DazeValue": 7560,
+            "DazeGrowth": 350
+        },
+        "1091018": {
+            "DamageValue": 238800,
+            "DamageGrowth": 21710,
+            "DazeValue": 37040,
+            "DazeGrowth": 1690
+        },
+        "1091019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1091020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1091021": {
+            "DamageValue": 10450,
+            "DamageGrowth": 950,
+            "DazeValue": 10450,
+            "DazeGrowth": 480
+        },
+        "1091022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1091023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1091024": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 12830,
+            "DazeGrowth": 590
+        },
+        "1091025": {
+            "DamageValue": 33780,
+            "DamageGrowth": 3080,
+            "DazeValue": 29190,
+            "DazeGrowth": 1330
+        },
+        "1091026": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1091027": {
+            "DamageValue": 45470,
+            "DamageGrowth": 4140,
+            "DazeValue": 4400,
+            "DazeGrowth": 200
+        },
+        "1091028": {
+            "DamageValue": 85810,
+            "DamageGrowth": 7810,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1091029": {
+            "DamageValue": 214110,
+            "DamageGrowth": 19470,
+            "DazeValue": 37780,
+            "DazeGrowth": 1720
+        },
+        "1091030": {
+            "DamageValue": 11730,
+            "DamageGrowth": 1070,
+            "DazeValue": 5870,
+            "DazeGrowth": 270
+        },
+        "1091031": {
+            "DamageValue": 33170,
+            "DamageGrowth": 3020,
+            "DazeValue": 14030,
+            "DazeGrowth": 640
+        },
+        "1091032": {
+            "DamageValue": 33170,
+            "DamageGrowth": 3020,
+            "DazeValue": 70130,
+            "DazeGrowth": 3190
+        },
+        "1091033": {
+            "DamageValue": 17050,
+            "DamageGrowth": 1550,
+            "DazeValue": 17050,
+            "DazeGrowth": 780
+        },
+        "1091034": {
+            "DamageValue": 17050,
+            "DamageGrowth": 1550,
+            "DazeValue": 85250,
+            "DazeGrowth": 3880
+        },
+        "1091035": {
+            "DamageValue": 72000,
+            "DamageGrowth": 0,
+            "DazeValue": 4400,
+            "DazeGrowth": 0
+        },
+        "1091036": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

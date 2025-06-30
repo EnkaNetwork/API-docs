@@ -1,0 +1,512 @@
+{
+    "Name": "Caesar",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Formação Ponta de Lança",
+            "Description": "Ao entrar em combate ou substituir outro personagem, Caesar concede imediatamente à equipe um <color=#FFFFFF>Escudo Glorioso</color>, que pode ser ativado uma vez a cada 300s. Enquanto o <color=#FFFFFF>Escudo Glorioso</color> estiver ativo, a Resistência a danos de todos os atributos dos inimigos dentro de um raio de 5 metros ao redor do portador reduz 15%.",
+            "Lore": "\"O Paizão me ensinou que em momentos como esse, se deve usar uma formação de ponta de lança e atacar o ponto mais fraco do inimigo com o máximo de força...\"\n\"É claro que sou EU que vou na frente!\""
+        },
+        "2": {
+            "Title": "Legado Exótico",
+            "Description": "Na <color=#FFFFFF>Passiva Principal: Barreira da Resiliência</color>, enquanto o <color=#FFFFFF>Escudo Glorioso</color> estiver ativo, a recuperação de energia de Caesar aumenta 10%, e o bônus de ATQ do portador aumenta para 150% de seu valor original.",
+            "Lore": "O estilo de combate de Caesar é um pouco diferente do estilo de Nova Eridu ou da zona externa, pegando técnicas dos guerreiros mais habilidosos entre os andarilhos.\nSabendo quando esperar e quando dar um ataque decisivo: este sempre foi o modo de sobrevivência dos andarilhos.\nE Cesar sempre foi uma boa aprendiz."
+        },
+        "3": {
+            "Title": "Confiança Máxima",
+            "Description": "Obtém +2 níveis de <color=#FFFFFF>Ataque Básico</color>, <color=#FFFFFF>Esquiva</color>, <color=#FFFFFF>Ataque de Assistência</color>, <color=#FFFFFF>Ataque Especial</color> e <color=#FFFFFF>Ataque em Cadeia</color>",
+            "Lore": "Quando Caesar reconhece alguém como seu igual, ela aceita essa pessoa completamente como parte de seu círculo mais próximo e dá confiança total, baixando sua guarda...\nExatamente como ela está fazendo com você agora."
+        },
+        "4": {
+            "Title": "Aríate de Ares",
+            "Description": "Quando Caesar usa <color=#FFFFFF>Ataque em Cadeia</color> ou <color=#FFFFFF>Supremo</color>, recupera 3 <color=#FFFFFF>Pontos de Assistência</color> adicionais. Se a Energia de Caesar estiver abaixo de 20 Pontos, pode consumir 1 <color=#FFFFFF>Ponto de Assistência</color> como substituto para usar <color=#FFFFFF>Ataque Especial Reforçado: Escudo Superpoderoso</color>, e esse efeito de substituição pode ser ativado uma vez a cada 5s.",
+            "Lore": "Uma das táticas que Caesar aprendeu sob a orientação dos andarilhos.\n\"Não importa o que aconteça, lutarei até o último momento!\""
+        },
+        "5": {
+            "Title": "Conquista Romântica",
+            "Description": "Obtém +2 níveis de <color=#FFFFFF>Ataque Básico</color>, <color=#FFFFFF>Esquiva</color>, <color=#FFFFFF>Ataque de Assistência</color>, <color=#FFFFFF>Ataque Especial</color> e <color=#FFFFFF>Ataque em Cadeia</color>",
+            "Lore": "Diferente do que aparenta, Caesar bem no fundo é toda romântica. \nPor exemplo, ela sempre tem muita curiosidade sobre algumas cenas de romance. Mas, se você conversar com ela mais profundamente... César ficará corada."
+        },
+        "6": {
+            "Title": "Ambição da Soberana",
+            "Description": "<color=#FFFFFF>Ataque Especial Reforçado: Escudo Superpoderoso</color> e <color=#FFFFFF>Assistência Imediata: Lança Assistente</color> causam Crítico de forma garantida e o dano aumenta 50%, com um bônus adicional de 50% de dano ao principal alvo. Quando Caesar usa <color=#FFFFFF>Ataque Especial Reforçado: Escudo Superpoderoso</color> ou <color=#FFFFFF>Assistência Imediata: Lança Assistente</color>, sua Taxa CRIT aumenta 30% e o Dano CRIT aumenta 60% por 15s.",
+            "Lore": "\"Eu costumava olhar apenas para a frente. Achava que, se eu fosse forte o suficiente, não haveria nada que eu não pudesse fazer\".\n\"Mas para me tornar uma Soberana, eu preciso ir ainda mais longe\".\n\"Eu também preciso proteger meus companheiros — eles são meu maior apoio\"."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passiva Principal: Barreira da Resiliência",
+            "DescriptionByLevel": {
+                "1": "Quando Caesar usa <color=#FFFFFF>Ataque Especial Reforçado: Aparar e Atacar</color>, <color=#FFFFFF>Ataque em Cadeia</color>, <color=#FFFFFF>Supremo</color> ou ativa <color=#FFFFFF>Ataque Especial Reforçado: Escudo Superpoderoso</color> através do <color=#FFFFFF>Contra-Ataque Defensivo</color>, ela concede à equipe um <color=#FFFFFF>Escudo Glorioso</color> equivalente a <color=#2BAD00>300%</color> do seu Impacto inicial + <color=#2BAD00>200</color> ponto(s). O <color=#FFFFFF>Escudo Glorioso</color> dura 60s, é mantido pelo personagem que está sendo controlado e seu valor é compartilhado entre toda a equipe. O dano de um único ataque não excederá o valor do escudo.\nEnquanto o <color=#FFFFFF>Escudo Glorioso</color> estiver ativo, o nível de Anti-Interrupção do portador aumenta.\nEnquanto o <color=#FFFFFF>Escudo Glorioso</color> estiver ativo, o portador recebe mais <color=#2BAD00>40</color> pontos de ATQ. Após o efeito do <color=#FFFFFF>Escudo Glorioso</color> terminar, esse bônus permanece por mais 5s.",
+                "2": "Quando Caesar usa <color=#FFFFFF>Ataque Especial Reforçado: Aparar e Atacar</color>, <color=#FFFFFF>Ataque em Cadeia</color>, <color=#FFFFFF>Supremo</color> ou ativa <color=#FFFFFF>Ataque Especial Reforçado: Escudo Superpoderoso</color> através do <color=#FFFFFF>Contra-Ataque Defensivo</color>, ela concede à equipe um <color=#FFFFFF>Escudo Glorioso</color> equivalente a <color=#2BAD00>500%</color> do seu Impacto inicial + <color=#2BAD00>400</color> ponto(s). O <color=#FFFFFF>Escudo Glorioso</color> dura 60s, é mantido pelo personagem que está sendo controlado e seu valor é compartilhado entre toda a equipe. O dano de um único ataque não excederá o valor do escudo.\nEnquanto o <color=#FFFFFF>Escudo Glorioso</color> estiver ativo, o nível de Anti-Interrupção do portador aumenta.\nEnquanto o <color=#FFFFFF>Escudo Glorioso</color> estiver ativo, o portador recebe mais <color=#2BAD00>135</color> pontos de ATQ. Após o efeito do <color=#FFFFFF>Escudo Glorioso</color> terminar, esse bônus permanece por mais 5s.",
+                "3": "Quando Caesar usa <color=#FFFFFF>Ataque Especial Reforçado: Aparar e Atacar</color>, <color=#FFFFFF>Ataque em Cadeia</color>, <color=#FFFFFF>Supremo</color> ou ativa <color=#FFFFFF>Ataque Especial Reforçado: Escudo Superpoderoso</color> através do <color=#FFFFFF>Contra-Ataque Defensivo</color>, ela concede à equipe um <color=#FFFFFF>Escudo Glorioso</color> equivalente a <color=#2BAD00>700%</color> do seu Impacto inicial + <color=#2BAD00>700</color> ponto(s). O <color=#FFFFFF>Escudo Glorioso</color> dura 60s, é mantido pelo personagem que está sendo controlado e seu valor é compartilhado entre toda a equipe. O dano de um único ataque não excederá o valor do escudo.\nEnquanto o <color=#FFFFFF>Escudo Glorioso</color> estiver ativo, o nível de Anti-Interrupção do portador aumenta.\nEnquanto o <color=#FFFFFF>Escudo Glorioso</color> estiver ativo, o portador recebe mais <color=#2BAD00>240</color> pontos de ATQ. Após o efeito do <color=#FFFFFF>Escudo Glorioso</color> terminar, esse bônus permanece por mais 5s.",
+                "4": "Quando Caesar usa <color=#FFFFFF>Ataque Especial Reforçado: Aparar e Atacar</color>, <color=#FFFFFF>Ataque em Cadeia</color>, <color=#FFFFFF>Supremo</color> ou ativa <color=#FFFFFF>Ataque Especial Reforçado: Escudo Superpoderoso</color> através do <color=#FFFFFF>Contra-Ataque Defensivo</color>, ela concede à equipe um <color=#FFFFFF>Escudo Glorioso</color> equivalente a <color=#2BAD00>900%</color> do seu Impacto inicial + <color=#2BAD00>900</color> ponto(s). O <color=#FFFFFF>Escudo Glorioso</color> dura 60s, é mantido pelo personagem que está sendo controlado e seu valor é compartilhado entre toda a equipe. O dano de um único ataque não excederá o valor do escudo.\nEnquanto o <color=#FFFFFF>Escudo Glorioso</color> estiver ativo, o nível de Anti-Interrupção do portador aumenta.\nEnquanto o <color=#FFFFFF>Escudo Glorioso</color> estiver ativo, o portador recebe mais <color=#2BAD00>400</color> pontos de ATQ. Após o efeito do <color=#FFFFFF>Escudo Glorioso</color> terminar, esse bônus permanece por mais 5s.",
+                "5": "Quando Caesar usa <color=#FFFFFF>Ataque Especial Reforçado: Aparar e Atacar</color>, <color=#FFFFFF>Ataque em Cadeia</color>, <color=#FFFFFF>Supremo</color> ou ativa <color=#FFFFFF>Ataque Especial Reforçado: Escudo Superpoderoso</color> através do <color=#FFFFFF>Contra-Ataque Defensivo</color>, ela concede à equipe um <color=#FFFFFF>Escudo Glorioso</color> equivalente a <color=#2BAD00>1100%</color> do seu Impacto inicial + <color=#2BAD00>1100</color> ponto(s). O <color=#FFFFFF>Escudo Glorioso</color> dura 60s, é mantido pelo personagem que está sendo controlado e seu valor é compartilhado entre toda a equipe. O dano de um único ataque não excederá o valor do escudo.\nEnquanto o <color=#FFFFFF>Escudo Glorioso</color> estiver ativo, o nível de Anti-Interrupção do portador aumenta.\nEnquanto o <color=#FFFFFF>Escudo Glorioso</color> estiver ativo, o portador recebe mais <color=#2BAD00>650</color> pontos de ATQ. Após o efeito do <color=#FFFFFF>Escudo Glorioso</color> terminar, esse bônus permanece por mais 5s.",
+                "6": "Quando Caesar usa <color=#FFFFFF>Ataque Especial Reforçado: Aparar e Atacar</color>, <color=#FFFFFF>Ataque em Cadeia</color>, <color=#FFFFFF>Supremo</color> ou ativa <color=#FFFFFF>Ataque Especial Reforçado: Escudo Superpoderoso</color> através do <color=#FFFFFF>Contra-Ataque Defensivo</color>, ela concede à equipe um <color=#FFFFFF>Escudo Glorioso</color> equivalente a <color=#2BAD00>1300%</color> do seu Impacto inicial + <color=#2BAD00>1300</color> ponto(s). O <color=#FFFFFF>Escudo Glorioso</color> dura 60s, é mantido pelo personagem que está sendo controlado e seu valor é compartilhado entre toda a equipe. O dano de um único ataque não excederá o valor do escudo.\nEnquanto o <color=#FFFFFF>Escudo Glorioso</color> estiver ativo, o nível de Anti-Interrupção do portador aumenta.\nEnquanto o <color=#FFFFFF>Escudo Glorioso</color> estiver ativo, o portador recebe mais <color=#2BAD00>900</color> pontos de ATQ. Após o efeito do <color=#FFFFFF>Escudo Glorioso</color> terminar, esse bônus permanece por mais 5s.",
+                "7": "Quando Caesar usa <color=#FFFFFF>Ataque Especial Reforçado: Aparar e Atacar</color>, <color=#FFFFFF>Ataque em Cadeia</color>, <color=#FFFFFF>Supremo</color> ou ativa <color=#FFFFFF>Ataque Especial Reforçado: Escudo Superpoderoso</color> através do <color=#FFFFFF>Contra-Ataque Defensivo</color>, ela concede à equipe um <color=#FFFFFF>Escudo Glorioso</color> equivalente a <color=#2BAD00>1400%</color> do seu Impacto inicial + <color=#2BAD00>1400</color> ponto(s). O <color=#FFFFFF>Escudo Glorioso</color> dura 60s, é mantido pelo personagem que está sendo controlado e seu valor é compartilhado entre toda a equipe. O dano de um único ataque não excederá o valor do escudo.\nEnquanto o <color=#FFFFFF>Escudo Glorioso</color> estiver ativo, o nível de Anti-Interrupção do portador aumenta.\nEnquanto o <color=#FFFFFF>Escudo Glorioso</color> estiver ativo, o portador recebe mais <color=#2BAD00>1000</color> pontos de ATQ. Após o efeito do <color=#FFFFFF>Escudo Glorioso</color> terminar, esse bônus permanece por mais 5s."
+            }
+        },
+        "MathSkill": {
+            "Title": "Habilidade Extra: Espírito de Batalha",
+            "Description": "Se houver outros Agentes na equipe que podem usar <color=#FFFFFF>Assistência Defensiva</color> ou da mesma facção na equipe:\nQuando Caesar ativar <color=#FFFFFF>Bloqueio Preciso</color>, <color=#FFFFFF>Contra-Ataque Defensivo</color>, <color=#FFFFFF>Assistência Defensiva</color> ou usar <color=#FFFFFF>Ataque Básico: Sem Saída</color>, ela aplica uma penalidade aos inimigos em um raio de 7 metros ao redor dela, aumentando 25% do dano que toda a equipe causa por 30s."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "107100001": {
+                "Title": "Ataque Básico: Corte Desenfreado",
+                "Description": "Pressione <IconMap:Icon_Normal> para ativar.\nExecuta até seis cortes, causando <color=#F0D12B>Dano Físico</color>."
+            },
+            "107100002": {
+                "Title": "Ataque Básico: Sem Saída",
+                "Description": "Quando tiver <color=#FFFFFF>Pontos de Assistência</color> suficientes, mantenha <IconMap:Icon_Normal> pressionado para ativar.\nConsome 1 <color=#FFFFFF>Ponto de Assistência</color> e arremessa o escudo que ataca ao redor e causa <color=#F0D12B>Dano Físico</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "107110001": {
+                "Title": "Ataque Básico: Corte Desenfreado"
+            },
+            "107110002": {
+                "Description": "Multiplicador de Dano de 1º Golpe",
+                "Param": "{Skill:1071001, Prop:1001}"
+            },
+            "107110003": {
+                "Description": "Multiplicador de Dano de 2º Golpe",
+                "Param": "{Skill:1071002, Prop:1001}"
+            },
+            "107110004": {
+                "Description": "Multiplicador de Dano de 3º Golpe",
+                "Param": "{Skill:1071003, Prop:1001}"
+            },
+            "107110005": {
+                "Description": "Multiplicador de Dano do 3º Golpe (ALT)",
+                "Param": "{Skill:1071008, Prop:1001}"
+            },
+            "107110006": {
+                "Description": "Multiplicador de Dano de 4º Golpe",
+                "Param": "{Skill:1071004, Prop:1001}"
+            },
+            "107110007": {
+                "Description": "Multiplicador de Dano de 5º Golpe",
+                "Param": "{Skill:1071005, Prop:1001}"
+            },
+            "107110008": {
+                "Description": "Multiplicador de Dano de 6º Golpe",
+                "Param": "{Skill:1071006, Prop:1001}"
+            },
+            "107110009": {
+                "Description": "Multiplicador de Atordoamento de 1º Golpe",
+                "Param": "{Skill:1071001, Prop:1002}"
+            },
+            "107110010": {
+                "Description": "Multiplicador de Atordoamento de 2º Golpe",
+                "Param": "{Skill:1071002, Prop:1002}"
+            },
+            "107110011": {
+                "Description": "Multiplicador de Atordoamento de 3º Golpe",
+                "Param": "{Skill:1071003, Prop:1002}"
+            },
+            "107110012": {
+                "Description": "Multiplicador de Atordoamento do 3º Golpe (ALT)",
+                "Param": "{Skill:1071008, Prop:1002}"
+            },
+            "107110013": {
+                "Description": "Multiplicador de Atordoamento de 4º Golpe",
+                "Param": "{Skill:1071004, Prop:1002}"
+            },
+            "107110014": {
+                "Description": "Multiplicador de Atordoamento de 5º Golpe",
+                "Param": "{Skill:1071005, Prop:1002}"
+            },
+            "107110015": {
+                "Description": "Multiplicador de Atordoamento de 6º Golpe",
+                "Param": "{Skill:1071006, Prop:1002}"
+            },
+            "107110016": {
+                "Title": "Ataque Básico: Sem Saída"
+            },
+            "107110017": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1071007, Prop:1001}"
+            },
+            "107110018": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1071007, Prop:1002}"
+            },
+            "107110019": {
+                "Description": "Consumo de Pontos de Assistência",
+                "Param": "1"
+            }
+        },
+        "1": {
+            "107100003": {
+                "Title": "Ataque Especial: Escudo Retumbante",
+                "Description": "Pressione <IconMap:Icon_Special> para ativar.\nGolpeia os inimigos à frente com o escudo, causando <color=#F0D12B>Dano Físico</color>.\nSe sofrer um ataque inimigo no início da execução do golpe, Caesar ativa o <color=#FFFFFF>Bloqueio Preciso</color>, que bloqueia o dano do ataque e automaticamente aciona <color=#FFFFFF>Ataque Especial: Estocada Estrondosa</color>.\nApós sua execução, Caesar entra em uma postura de Bloqueio, e o dano sofrido é 40% menor durante esse período. Ao receber um ataque inimigo, Caesar bloqueia com o escudo e é repelida uma curta distância. Pressione <IconMap:Icon_Special> ou <IconMap:Icon_SpecialReady> para realizar <color=#FFFFFF>Contra-Ataque Defensivo</color>, lançando <color=#FFFFFF>Ataque Especial: Estocada Estrondosa</color> ou <color=#FFFFFF>Ataque Especial Reforçado: Escudo Superpoderoso</color>.\nQuando <color=#FFFFFF>Contra-Ataque Defensivo</color> é ativado, a personagem fica invulnerável ao usar esta habilidade."
+            },
+            "107100004": {
+                "Title": "Ataque Especial: Estocada Estrondosa",
+                "Description": "Após usar <color=#FFFFFF>Ataque Especial: Escudo Retumbante </color>, pressione <IconMap:Icon_Special> para ativar.\nExecuta uma investida à frente, causando <color=#F0D12B>Dano Físico</color>.\nDurante sua execução, o nível de Anti-Interrupção aumenta se <color=#FFFFFF>Bloqueio Preciso</color> ou <color=#FFFFFF>Contra-Ataque Defensivo</color> não forem ativados.\nSe <color=#FFFFFF>Bloqueio Preciso</color> ou <color=#FFFFFF>Contra-Ataque Defensivo</color> forem ativados, a personagem fica invulnerável ao usar esta habilidade."
+            },
+            "107100005": {
+                "Title": "Ataque Especial Reforçado: Aparar e Atacar",
+                "Description": "Quando tiver energia suficiente, pressione <IconMap:Icon_SpecialReady> para ativar.\nGolpeia os inimigos à frente com o escudo e, em seguida, executa uma estocada poderosa, causando muito <color=#F0D12B>Dano Físico</color>.\nSe sofrer um ataque inimigo no início da execução ou se <color=#FFFFFF>Interrupção</color> for ativada com um golpe de escudo, Caesar ativa um <color=#FFFFFF>Bloqueio Preciso</color>, que anula o dano do ataque e contra-ataca com o escudo. Após ativar <color=#FFFFFF>Bloqueio Preciso</color>, pressione <IconMap:Icon_SpecialReady> para realizar um <color=#FFFFFF>Ataque Especial Reforçado: Escudo Superpoderoso</color> sem consumir energia.\nApós a execução, Caesar entra em uma postura de Bloqueio, e o dano sofrido é 40% menor durante esse período. Quando sofrer um ataque inimigo, Caesar bloqueia com o escudo e é repelida. Pressione <IconMap:Icon_Special> ou <IconMap:Icon_SpecialReady> para realizar <color=#FFFFFF>Contra-Ataque Defensivo</color> e ativar <color=#FFFFFF>Ataque Especial: Estocada Estrondosa</color> ou <color=#FFFFFF>Ataque Especial Reforçado: Escudo Superpoderoso</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "107100006": {
+                "Title": "Ataque Especial Reforçado: Escudo Superpoderoso",
+                "Description": "Após executar <color=#FFFFFF>Ataque Especial Reforçado: Aparar e Atacar</color> e quando tiver Energia suficiente, pressione <IconMap:Icon_SpecialReady> para ativar.\nGolpeia os inimigos à frente com o escudo, causando muito <color=#F0D12B>Dano Físico</color>.\nSe receber um ataque inimigo no início da execução ou se <color=#FFFFFF>Interrupção</color> for ativado com um golpe de escudo, Caesar ativará <color=#FFFFFF>Bloqueio Preciso</color>, que anula o dano do ataque uma vez e recupera a energia consumida para executar a habilidade.\nQuando ativado por meio de <color=#FFFFFF>Bloqueio Preciso</color> ou <color=#FFFFFF>Contra-Ataque Defensivo</color>, <color=#FFFFFF>Bloqueio Preciso</color> não pode ser ativado de novo.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "107100007": {
+                "Title": "Troca de Base",
+                "Description": "Quando Caesar ativa <color=#FFFFFF>Bloqueio Preciso</color>, <color=#FFFFFF>Contra-Ataque Defensivo</color> ou <color=#FFFFFF>Assistência Defensiva</color>, ela aumenta <color=#2BAD00>{CAL:8+AvatarSkillLevel(1)*1,1,2}</color>% do Impacto dela por 3s."
+            },
+            "107110020": {
+                "Title": "Troca de Base"
+            },
+            "107110021": {
+                "Description": "Aumento do Impacto",
+                "Param": "{CAL:8+AvatarSkillLevel(1)*1,1,2}%"
+            },
+            "107110022": {
+                "Title": "Ataque Especial: Escudo Retumbante"
+            },
+            "107110023": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1071009, Prop:1001}"
+            },
+            "107110024": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1071009, Prop:1002}"
+            },
+            "107110025": {
+                "Description": "Bloqueio Preciso: Multiplicador de Atordoamento",
+                "Param": "{Skill:1071014, Prop:1002}"
+            },
+            "107110026": {
+                "Title": "Ataque Especial: Estocada Estrondosa"
+            },
+            "107110027": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1071010, Prop:1001}"
+            },
+            "107110028": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1071010, Prop:1002}"
+            },
+            "107110029": {
+                "Title": "Ataque Especial Reforçado: Aparar e Atacar"
+            },
+            "107110030": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1071011, Prop:1001}"
+            },
+            "107110031": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1071011, Prop:1002}"
+            },
+            "107110032": {
+                "Description": "Bloqueio Preciso: Multiplicador de Atordoamento",
+                "Param": "{Skill:1071015, Prop:1002}"
+            },
+            "107110033": {
+                "Description": "Multiplicador de Dano de Contra-Ataque de Bloqueio Preciso",
+                "Param": "{Skill:1071012, Prop:1001}"
+            },
+            "107110034": {
+                "Description": "Multiplicador de Atordoamento de Contra-Ataque de Bloqueio Preciso",
+                "Param": "{Skill:1071012, Prop:1002}"
+            },
+            "107110035": {
+                "Description": "Custo de Energia",
+                "Param": "40"
+            },
+            "107110036": {
+                "Title": "Ataque Especial Reforçado: Escudo Superpoderoso"
+            },
+            "107110037": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1071013, Prop:1001}"
+            },
+            "107110038": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1071013, Prop:1002}"
+            },
+            "107110039": {
+                "Description": "Bloqueio Preciso: Multiplicador de Atordoamento",
+                "Param": "{Skill:1071015, Prop:1002}"
+            },
+            "107110040": {
+                "Description": "Consumo de Energia de Ativação",
+                "Param": "20"
+            }
+        },
+        "2": {
+            "107100008": {
+                "Title": "Esquiva: Deriva",
+                "Description": "Pressione <IconMap:Icon_Evade> para ativar.\nUma esquiva rápida.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "107100009": {
+                "Title": "Ataque Rápido: Chototsumōshin",
+                "Description": "Pressione <IconMap:Icon_Normal> durante uma Esquiva para ativar.\nGolpeia os inimigos à frente com o escudo, causando <color=#F0D12B>Dano Físico</color>.\nDurante a execução da habilidade, o dano recebido reduz 40%. Quando receber um ataque inimigo, Caesar bloqueará com o escudo e será repelida uma pequena distância. Pressione <IconMap:Icon_Special> ou <IconMap:Icon_SpecialReady> para realizar <color=#FFFFFF>Contra-Ataque Defensivo</color> e ativar <color=#FFFFFF>Ataque Especial: Estocada Estrondosa</color> ou <color=#FFFFFF>Ataque Especial Reforçado: Escudo Superpoderoso</color>."
+            },
+            "107100010": {
+                "Title": "Contraesquiva: Olho por Olho",
+                "Description": "Durante uma <color=#FFFFFF>Esquiva Perfeita</color>, pressione <IconMap:Icon_Normal> para ativar.\nRealiza uma estocada nos inimigos à frente e causa <color=#F0D12B>Dano Físico</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "107110041": {
+                "Title": "Ataque Rápido: Chototsumōshin"
+            },
+            "107110042": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1071016, Prop:1001}"
+            },
+            "107110043": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1071016, Prop:1002}"
+            },
+            "107110044": {
+                "Title": "Contraesquiva: Olho por Olho"
+            },
+            "107110045": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1071017, Prop:1001}"
+            },
+            "107110046": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1071017, Prop:1002}"
+            }
+        },
+        "3": {
+            "107100011": {
+                "Title": "Ataque em Cadeia: Fúria na Estrada",
+                "Description": "Quando um <color=#FFFFFF>Ataque em Cadeia</color> for acionado, selecione o personagem correspondente para ativar.\nDesfere um golpe descendente poderoso nos inimigos à frente, causando muito <color=#F0D12B>Dano Físico</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "107100012": {
+                "Title": "Supremo: Esmagada Selvagem",
+                "Description": "Quando o Índice de dB estiver no <color=#FFFFFF>Máximo</color>, pressione <IconMap:Icon_UltimateReady> para ativar.\nArremesse o escudo para realizar um forte ataque giratório contra os inimigos à frente seguido por um golpe descendente, causando muito <color=#F0D12B>Dano Físico</color>.\nQuando acerta inimigos que estão com um escudo, a habilidade causa <color=#2BAD00>{CAL:40+AvatarSkillLevel(3)*5,1,2}%</color> mais Atordoamento.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "107110047": {
+                "Title": "Ataque em Cadeia: Fúria na Estrada"
+            },
+            "107110048": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1071018, Prop:1001}"
+            },
+            "107110049": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1071018, Prop:1002}"
+            },
+            "107110050": {
+                "Title": "Supremo: Esmagada Selvagem"
+            },
+            "107110051": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1071019, Prop:1001}"
+            },
+            "107110052": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1071019, Prop:1002}"
+            },
+            "107110053": {
+                "Description": "Aumento de Atordoamento",
+                "Param": "{CAL:40+AvatarSkillLevel(3)*5,1,2}%"
+            }
+        },
+        "6": {
+            "107100014": {
+                "Title": "Assistência Reativa: Mudança de Faixa",
+                "Description": "Quando o personagem em combate é lançado para o alto, pressione <IconMap:Icon_Switch> para ativar:\nGolpeia os inimigos à frente, causando <color=#F0D12B>Dano Físico</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "107100015": {
+                "Title": "Assistência Defensiva: Escudo Protetor",
+                "Description": "Quando o personagem em campo está prestes a sofrer um ataque, pressione <IconMap:Icon_Switch> para ativar.\nApara o ataque inimigo e causa muito Atordoamento.\nEsta habilidade é ideal para aparar ataques inimigos e reduz o consumo de <color=#FFFFFF>Pontos de Assistência</color> quando a personagem sofre uma sequência intensa de ataques.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "107100016": {
+                "Title": "Assistência Imediata: Lança Assistente",
+                "Description": "Após ativar <color=#FFFFFF>Assistência Defensiva</color>, pressione <IconMap:Icon_Normal> para ativar.\nArremessa o escudo para realizar um forte ataque giratório contra os inimigos à frente, seguido por um corte que causa <color=#F0D12B>Dano Físico</color>.\nApós executar a habilidade, pressione <IconMap:Icon_Special> ou <IconMap:Icon_SpecialReady> para realizar um <color=#FFFFFF>Contra-Ataque Defensivo</color> e ativar <color=#FFFFFF>Ataque Especial: Estocada Estrondosa</color> ou <color=#FFFFFF>Ataque Especial Reforçado: Escudo Superpoderoso</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "107110054": {
+                "Title": "Assistência Reativa: Mudança de Faixa"
+            },
+            "107110055": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1071020, Prop:1001}"
+            },
+            "107110056": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1071020, Prop:1002}"
+            },
+            "107110057": {
+                "Title": "Assistência Defensiva: Escudo Protetor"
+            },
+            "107110058": {
+                "Description": "Multiplicador de Atordoamento de Defensiva Leve",
+                "Param": "{Skill:1071021, Prop:1002}"
+            },
+            "107110059": {
+                "Description": "Multiplicador de Atordoamento de Defensiva Pesada",
+                "Param": "{Skill:1071022, Prop:1002}"
+            },
+            "107110060": {
+                "Description": "Multiplicador de Atordoamento de Defensiva em Cadeia",
+                "Param": "{Skill:1071023, Prop:1002}"
+            },
+            "107110061": {
+                "Title": "Assistência Imediata: Lança Assistente"
+            },
+            "107110062": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1071024, Prop:1001}"
+            },
+            "107110063": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1071024, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1071001": {
+            "DamageValue": 4720,
+            "DamageGrowth": 430,
+            "DazeValue": 2130,
+            "DazeGrowth": 100
+        },
+        "1071002": {
+            "DamageValue": 4090,
+            "DamageGrowth": 380,
+            "DazeValue": 3380,
+            "DazeGrowth": 160
+        },
+        "1071003": {
+            "DamageValue": 14830,
+            "DamageGrowth": 1350,
+            "DazeValue": 11000,
+            "DazeGrowth": 500
+        },
+        "1071004": {
+            "DamageValue": 7880,
+            "DamageGrowth": 720,
+            "DazeValue": 6750,
+            "DazeGrowth": 310
+        },
+        "1071005": {
+            "DamageValue": 19860,
+            "DamageGrowth": 1810,
+            "DazeValue": 13750,
+            "DazeGrowth": 630
+        },
+        "1071006": {
+            "DamageValue": 39990,
+            "DamageGrowth": 3640,
+            "DazeValue": 26260,
+            "DazeGrowth": 1200
+        },
+        "1071007": {
+            "DamageValue": 12630,
+            "DamageGrowth": 1150,
+            "DazeValue": 9320,
+            "DazeGrowth": 430
+        },
+        "1071008": {
+            "DamageValue": 11840,
+            "DamageGrowth": 1080,
+            "DazeValue": 7360,
+            "DazeGrowth": 340
+        },
+        "1071009": {
+            "DamageValue": 5330,
+            "DamageGrowth": 490,
+            "DazeValue": 2400,
+            "DazeGrowth": 110
+        },
+        "1071010": {
+            "DamageValue": 5880,
+            "DamageGrowth": 540,
+            "DazeValue": 2650,
+            "DazeGrowth": 130
+        },
+        "1071011": {
+            "DamageValue": 38720,
+            "DamageGrowth": 3520,
+            "DazeValue": 25260,
+            "DazeGrowth": 1150
+        },
+        "1071012": {
+            "DamageValue": 38720,
+            "DamageGrowth": 3520,
+            "DazeValue": 25260,
+            "DazeGrowth": 1150
+        },
+        "1071013": {
+            "DamageValue": 42570,
+            "DamageGrowth": 3870,
+            "DazeValue": 28840,
+            "DazeGrowth": 1320
+        },
+        "1071014": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 7700,
+            "DazeGrowth": 350
+        },
+        "1071015": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15400,
+            "DazeGrowth": 700
+        },
+        "1071016": {
+            "DamageValue": 6230,
+            "DamageGrowth": 570,
+            "DazeValue": 3120,
+            "DazeGrowth": 150
+        },
+        "1071017": {
+            "DamageValue": 19350,
+            "DamageGrowth": 1760,
+            "DazeValue": 17420,
+            "DazeGrowth": 800
+        },
+        "1071018": {
+            "DamageValue": 63880,
+            "DamageGrowth": 5810,
+            "DazeValue": 19990,
+            "DazeGrowth": 910
+        },
+        "1071019": {
+            "DamageValue": 201230,
+            "DamageGrowth": 18300,
+            "DazeValue": 27870,
+            "DazeGrowth": 1270
+        },
+        "1071020": {
+            "DamageValue": 6420,
+            "DamageGrowth": 590,
+            "DazeValue": 6420,
+            "DazeGrowth": 300
+        },
+        "1071021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1071022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34530,
+            "DazeGrowth": 1570
+        },
+        "1071023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16930,
+            "DazeGrowth": 770
+        },
+        "1071024": {
+            "DamageValue": 40720,
+            "DamageGrowth": 3710,
+            "DazeValue": 35630,
+            "DazeGrowth": 1620
+        }
+    }
+}

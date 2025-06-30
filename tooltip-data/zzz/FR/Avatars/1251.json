@@ -1,0 +1,450 @@
+{
+    "Name": "Qingyi",
+    "ElementTypes": [
+        "Elec"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Saccage d'isolation",
+            "Description": "Lorsque Qingyi entre en combat, la <color=#FFFFFF>Tension de Connexion éclair</color> monte instantanément à son maximum, et le taux d'accumulation de tension augmente de 30 %. Lorsqu'elle lance <color=#FFFFFF>Attaque normale : Fleurs enivrées au clair de lune</color> lorsque sa <color=#FFFFFF>Tension de Connexion éclair</color> est au maximum, la DÉF de l'ennemi touché diminue de 15 % et le taux CRIT de Qingyi contre cet ennemi augmente de 20 % pendant 15 s.",
+            "Lore": "« Bien que votre vie ne sera pas mise en danger, nous vous demandons de coopérer et de ne pas résister... »\nL'intensité et la direction du courant ont été calculées précisément pour que les électrochocs administrés aux forcenés soient sans danger."
+        },
+        "2": {
+            "Title": "Efforts au minimum, impact au maximum",
+            "Description": "Augmente l'amélioration d multiplicateur de DGT d'étourdissement de chaque cumul de <color=#FFFFFF>Subjugation</color> du <color=#FFFFFF>Passif principal : Saisons éternelles</color> à 135 % de sa valeur initiale. Lorsque les cumuls de <color=#FFFFFF>Subjugation</color> de la cible sont au maximum, la confusion infligée à la cible par les attaques de Qingyi augmente de 15 %.",
+            "Lore": "Un technique de combat antique mentionnée dans les manuscrits de l'ancienne civilisation. Il semblerait qu'à l'origine, il s'agissait d'une technique à mains nues, et pas d'une technique au bâton.\n« Ne soyez pas si étroit d'esprit, on peut très bien utiliser son bras comme un bâton à trois sections, non ? »"
+        },
+        "3": {
+            "Title": "Les bienfaits de l'eau chaude",
+            "Description": "Niv. d'<color=#FFFFFF>attaque normale</color>, d'<color=#FFFFFF>esquive</color>, de <color=#FFFFFF>soutien</color>, d'<color=#FFFFFF>attaque spéciale</color> et d'<color=#FFFFFF>enchaînement</color> +2",
+            "Lore": "« Les jeunes devraient se soucier davantage de leur santé, et boire de l'eau chaude est un bon début. »\nQingyi a toujours l'air réconfortée lorsqu'elle boit à sa bouteille isotherme. Cependant, faites bien attention quand elle vous propose de boire.\n« Elle peut avaler de l'eau en ébullition sans broncher... ». C'est ce qu'on peut lire sur une note d'avertissement laissée par un officier de la Sécurité publique échaudé."
+        },
+        "4": {
+            "Title": "Arc défensif stable",
+            "Description": "Lorsque l'état <color=#FFFFFF>Connexion éclair</color> s'active ou se désactive, obtient un bouclier équivalent à 10 % des PV max de Qingyi. Si un bouclier est toujours actif lors de l'actualisation de l'effet de bouclier, Qingyi génère 5 pts d'énergie. Cet effet de production d'énergie peut être déclenché une fois toutes les 10 s.",
+            "Lore": "En étudiant les androïdes de l'ancienne civilisation, l'Institut de l'Étoile blanche a développé l'Arc défensif, une technologie qui marie défense, attaque et conversion d'énergie électrique.\n« Comme le dit l'adage : l'eau peut aussi bien faire flotter un bateau que le faire sombrer. En physique, on dit qu'un courant électrique coule comme de l'eau. Ainsi, on peut utiliser un courant électrique aussi bien de manière offensive et défensive. C'est une combinaison fantastique. »"
+        },
+        "5": {
+            "Title": "Esprit juvénile",
+            "Description": "Niv. d'<color=#FFFFFF>attaque normale</color>, d'<color=#FFFFFF>esquive</color>, de <color=#FFFFFF>soutien</color>, d'<color=#FFFFFF>attaque spéciale</color> et d'<color=#FFFFFF>enchaînement</color> +2",
+            "Lore": "« Parfait, les jeunes doivent faire preuve de courage et essayer de nouvelles choses. Continue comme ça ! »\nLes encouragements de Qingyi peuvent parfois sembler négligents et taquins, mais si vous avez un problème, vous pourrez toujours compter sur elle.\nAprès tout, elle a des siècles d'expérience, elle peut gérer n'importe quoi."
+        },
+        "6": {
+            "Title": "Huit méridiens",
+            "Description": "Le niveau d'interruption d'<color=#FFFFFF>Attaque normale : Fleurs enivrées au clair de lune</color> augmente considérablement, et les DGT CRIT augmentent de 100 % supplémentaires. Lorsque Qingyi touche un ennemi à l'aide d'<color=#FFFFFF>Attaque normale : Fleurs enivrées au clair de lune</color>, la RÉS aux DGT d'attribut de la cible diminue de 20 % pendant 15 s.",
+            "Lore": "Une théorie sur le système circulatoire humain décrite dans les manuscrits de l'ancienne civilisation. On raconte que les maîtres de cette théorie peuvent invalider leurs adversaire instantanément au combat.\n« Et si j'essayais le point de pression qui provoque des démangeaisons la prochaine fois ? Qui fera le rat de laboratoire ? {M#Wise}{F#Belle} ? Ou Zhu Yuan ? »"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passif principal : Saisons éternelles",
+            "DescriptionByLevel": {
+                "1": "Lorsque Qingyi touche un ennemi avec le coup final d'<color=#FFFFFF>Attaque normale : Fleurs enivrées au clair de lune</color>, elle inflige 5 cumuls de <color=#FFFFFF>Subjugation</color> à l'ennemi, jusqu'à un maximum de 20 cumuls. Chaque cumul de <color=#FFFFFF>Subjugation</color> augmente le multiplicateur de DGT d'étourdissement de la cible de <color=#2BAD00>2 %</color>. Pour chaque impulsion effectuée à l'aide d'<color=#FFFFFF>Attaque normale : Fleurs enivrées au clair de lune</color>, le coup final inflige 1 cumul supplémentaire de <color=#FFFFFF>Subjugation</color>. Si une <color=#FFFFFF>esquive parfaite</color> est déclenchée pendant le coup final, cette dernière applique directement {CAL:5+5,1,2} cumuls de <color=#FFFFFF>Subjugation</color> à la cible. Les cumuls de Subjugation infligés aux ennemis normaux et d'élite sont doublés. Lorsque la cible se remet d'un étourdissement, les cumuls de <color=#FFFFFF>Subjugation</color> correspondants sont réinitialisés.",
+                "2": "Lorsque Qingyi touche un ennemi avec le coup final d'<color=#FFFFFF>Attaque normale : Fleurs enivrées au clair de lune</color>, elle inflige 5 cumuls de <color=#FFFFFF>Subjugation</color> à l'ennemi, jusqu'à un maximum de 20 cumuls. Chaque cumul de <color=#FFFFFF>Subjugation</color> augmente le multiplicateur de DGT d'étourdissement de la cible de <color=#2BAD00>2,4 %</color>. Pour chaque impulsion effectuée à l'aide d'<color=#FFFFFF>Attaque normale : Fleurs enivrées au clair de lune</color>, le coup final inflige 1 cumul supplémentaire de <color=#FFFFFF>Subjugation</color>. Si une <color=#FFFFFF>esquive parfaite</color> est déclenchée pendant le coup final, cette dernière applique directement {CAL:5+5,1,2} cumuls de <color=#FFFFFF>Subjugation</color> à la cible. Les cumuls de Subjugation infligés aux ennemis normaux et d'élite sont doublés. Lorsque la cible se remet d'un étourdissement, les cumuls de <color=#FFFFFF>Subjugation</color> correspondants sont réinitialisés.",
+                "3": "Lorsque Qingyi touche un ennemi avec le coup final d'<color=#FFFFFF>Attaque normale : Fleurs enivrées au clair de lune</color>, elle inflige 5 cumuls de <color=#FFFFFF>Subjugation</color> à l'ennemi, jusqu'à un maximum de 20 cumuls. Chaque cumul de <color=#FFFFFF>Subjugation</color> augmente le multiplicateur de DGT d'étourdissement de la cible de <color=#2BAD00>2,7 %</color>. Pour chaque impulsion effectuée à l'aide d'<color=#FFFFFF>Attaque normale : Fleurs enivrées au clair de lune</color>, le coup final inflige 1 cumul supplémentaire de <color=#FFFFFF>Subjugation</color>. Si une <color=#FFFFFF>esquive parfaite</color> est déclenchée pendant le coup final, cette dernière applique directement {CAL:5+5,1,2} cumuls de <color=#FFFFFF>Subjugation</color> à la cible. Les cumuls de Subjugation infligés aux ennemis normaux et d'élite sont doublés. Lorsque la cible se remet d'un étourdissement, les cumuls de <color=#FFFFFF>Subjugation</color> correspondants sont réinitialisés.",
+                "4": "Lorsque Qingyi touche un ennemi avec le coup final d'<color=#FFFFFF>Attaque normale : Fleurs enivrées au clair de lune</color>, elle inflige 5 cumuls de <color=#FFFFFF>Subjugation</color> à l'ennemi, jusqu'à un maximum de 20 cumuls. Chaque cumul de <color=#FFFFFF>Subjugation</color> augmente le multiplicateur de DGT d'étourdissement de la cible de <color=#2BAD00>3 %</color>. Pour chaque impulsion effectuée à l'aide d'<color=#FFFFFF>Attaque normale : Fleurs enivrées au clair de lune</color>, le coup final inflige 1 cumul supplémentaire de <color=#FFFFFF>Subjugation</color>. Si une <color=#FFFFFF>esquive parfaite</color> est déclenchée pendant le coup final, cette dernière applique directement {CAL:5+5,1,2} cumuls de <color=#FFFFFF>Subjugation</color> à la cible. Les cumuls de Subjugation infligés aux ennemis normaux et d'élite sont doublés. Lorsque la cible se remet d'un étourdissement, les cumuls de <color=#FFFFFF>Subjugation</color> correspondants sont réinitialisés.",
+                "5": "Lorsque Qingyi touche un ennemi avec le coup final d'<color=#FFFFFF>Attaque normale : Fleurs enivrées au clair de lune</color>, elle inflige 5 cumuls de <color=#FFFFFF>Subjugation</color> à l'ennemi, jusqu'à un maximum de 20 cumuls. Chaque cumul de <color=#FFFFFF>Subjugation</color> augmente le multiplicateur de DGT d'étourdissement de la cible de <color=#2BAD00>3,4 %</color>. Pour chaque impulsion effectuée à l'aide d'<color=#FFFFFF>Attaque normale : Fleurs enivrées au clair de lune</color>, le coup final inflige 1 cumul supplémentaire de <color=#FFFFFF>Subjugation</color>. Si une <color=#FFFFFF>esquive parfaite</color> est déclenchée pendant le coup final, cette dernière applique directement {CAL:5+5,1,2} cumuls de <color=#FFFFFF>Subjugation</color> à la cible. Les cumuls de Subjugation infligés aux ennemis normaux et d'élite sont doublés. Lorsque la cible se remet d'un étourdissement, les cumuls de <color=#FFFFFF>Subjugation</color> correspondants sont réinitialisés.",
+                "6": "Lorsque Qingyi touche un ennemi avec le coup final d'<color=#FFFFFF>Attaque normale : Fleurs enivrées au clair de lune</color>, elle inflige 5 cumuls de <color=#FFFFFF>Subjugation</color> à l'ennemi, jusqu'à un maximum de 20 cumuls. Chaque cumul de <color=#FFFFFF>Subjugation</color> augmente le multiplicateur de DGT d'étourdissement de la cible de <color=#2BAD00>3,7 %</color>. Pour chaque impulsion effectuée à l'aide d'<color=#FFFFFF>Attaque normale : Fleurs enivrées au clair de lune</color>, le coup final inflige 1 cumul supplémentaire de <color=#FFFFFF>Subjugation</color>. Si une <color=#FFFFFF>esquive parfaite</color> est déclenchée pendant le coup final, cette dernière applique directement {CAL:5+5,1,2} cumuls de <color=#FFFFFF>Subjugation</color> à la cible. Les cumuls de Subjugation infligés aux ennemis normaux et d'élite sont doublés. Lorsque la cible se remet d'un étourdissement, les cumuls de <color=#FFFFFF>Subjugation</color> correspondants sont réinitialisés.",
+                "7": "Lorsque Qingyi touche un ennemi avec le coup final d'<color=#FFFFFF>Attaque normale : Fleurs enivrées au clair de lune</color>, elle inflige 5 cumuls de <color=#FFFFFF>Subjugation</color> à l'ennemi, jusqu'à un maximum de 20 cumuls. Chaque cumul de <color=#FFFFFF>Subjugation</color> augmente le multiplicateur de DGT d'étourdissement de la cible de <color=#2BAD00>4 %</color>. Pour chaque impulsion effectuée à l'aide d'<color=#FFFFFF>Attaque normale : Fleurs enivrées au clair de lune</color>, le coup final inflige 1 cumul supplémentaire de <color=#FFFFFF>Subjugation</color>. Si une <color=#FFFFFF>esquive parfaite</color> est déclenchée pendant le coup final, cette dernière applique directement {CAL:5+5,1,2} cumuls de <color=#FFFFFF>Subjugation</color> à la cible. Les cumuls de Subjugation infligés aux ennemis normaux et d'élite sont doublés. Lorsque la cible se remet d'un étourdissement, les cumuls de <color=#FFFFFF>Subjugation</color> correspondants sont réinitialisés."
+            }
+        },
+        "MathSkill": {
+            "Title": "Capacité supplémentaire : Trois vers d'adieu au passage Yang",
+            "Description": "Lorsqu'il y a au moins 1 personnage <color=#FFFFFF>Attaque</color> ou 1 personnage de la même faction que Qingyi dans l'escouade :\nLa confusion infligée par les <color=#FFFFFF>attaques normales</color> augmente de 20 %. Si l'impact de Qingyi est supérieur à 120, chaque point au-dessus de ce seuil augmente son ATQ de 6, jusqu'à un maximum de +600."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "125100001": {
+                "Title": "Attaque normale : Pénultième",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pour activer :\nAssène jusqu'à quatre frappes frontales qui infligent des <color=#F0D12B>DGT physiques</color> et des <color=#2EB6FF>DGT électriques</color>.\nLors du 3e coup, martelez <IconMap:Icon_Normal> pour poursuivre l'attaque et frapper les ennemis en continu. Lancer une <color=#FFFFFF>esquive</color> lors de l'attaque n'interrompt pas le compteur de combo de l'<color=#FFFFFF>attaque normale</color> de Qingyi.\nLors du 3e coup, cessez de marteler <IconMap:Icon_Normal> pour interrompre l'attaque continue et lancer immédiatement le 4e coup. Si l'attaque continue dure assez longtemps, le 4e coup sera renforcé.\nLe niveau de RÉS à l'interruption augmente, et les DGT subis diminuent de 40 % pendant le 3e coup et le 4e coup."
+            },
+            "125100002": {
+                "Title": "Attaque normale : Fleurs enchantées",
+                "Description": "Maintenez <IconMap:Icon_Normal> enfoncé pour activer :\nLance une impulsion frontale qui inflige des <color=#2EB6FF>DGT électriques</color>.\nLa RÉS à l'interruption augmente lors de l'utilisation de cette compétence."
+            },
+            "125100003": {
+                "Title": "Connexion éclair",
+                "Description": "Lorsque Qingyi inflige des <color=#2EB6FF>DGT électriques</color> à l'aide d'une compétence, elle accumule de la <color=#FFFFFF>Tension de Connexion éclair</color>. Lorsque la <color=#FFFFFF>Tension de Connexion éclair</color> atteint 75 %, elle entre dans l'état <color=#FFFFFF>Connexion éclair</color>. Lorsque Qingyi lance <color=#FFFFFF>Attaque normale : Fleurs enivrées au clair de lune</color>, elle consomme toute la <color=#FFFFFF>Tension de Connexion éclair</color> et sort de l'état <color=#FFFFFF>Connexion éclair</color>. Pour chaque 1 % de <color=#FFFFFF>Tension de Connexion éclair</color> consommé au-delà de 75 %, les DGT et la confusion infligés par cette compétence augmentent respectivement de 1 % et 0,5 %. <color=#FFFFFF>Attaque normale : Fleurs enivrées au clair de lune</color> ne permet pas d'accumuler de la <color=#FFFFFF>Tension de Connexion éclair</color>."
+            },
+            "125100004": {
+                "Title": "Attaque normale : Fleurs enivrées au clair de lune",
+                "Description": "Lorsque l'état <color=#FFFFFF>Connexion éclair</color> est actif, maintenez <IconMap:Icon_Normal> enfoncé pour activer :\nLance 5 impulsions frontales consécutives, puis assène un coup final qui inflige d'importants <color=#2EB6FF>DGT électriques</color>. Relâchez <IconMap:Icon_Normal> pendant l'attaque pour lancer le coup final plus tôt.\nLancez le coup final juste avant que le personnage ne soit attaqué pour déclencher une <color=#FFFFFF>esquive parfaite</color>.\nLa RÉS à l'interruption augmente, et les DGT subis diminuent de 40 % lors de l'utilisation des impulsions, et Qingyi est invulnérable lors du coup final."
+            },
+            "125100016": {
+                "Title": "Attaque normale : Pénultième"
+            },
+            "125100017": {
+                "Description": "Multiplicateur de DGT du 1er coup",
+                "Param": "{Skill:1251001, Prop:1001}"
+            },
+            "125100018": {
+                "Description": "Multiplicateur de DGT du 1er coup (Alt)",
+                "Param": "{Skill:1251002, Prop:1001}"
+            },
+            "125100019": {
+                "Description": "Multiplicateur de DGT du 2e coup",
+                "Param": "{Skill:1251003, Prop:1001}"
+            },
+            "125100020": {
+                "Description": "Multiplicateur de DGT du 3e coup",
+                "Param": "{Skill:1251004, Prop:1001}"
+            },
+            "125100021": {
+                "Description": "Multiplicateur de DGT du 4e coup",
+                "Param": "{Skill:1251005, Prop:1001}"
+            },
+            "125100022": {
+                "Description": "Multiplicateur de DGT du 4e coup (Renforcé)",
+                "Param": "{Skill:1251006, Prop:1001}"
+            },
+            "125100023": {
+                "Description": "Multiplicateur de confusion du 1er coup",
+                "Param": "{Skill:1251001, Prop:1002}"
+            },
+            "125100024": {
+                "Description": "Multiplicateur de confusion du 1er coup (Alt)",
+                "Param": "{Skill:1251002, Prop:1002}"
+            },
+            "125100025": {
+                "Description": "Multiplicateur de confusion du 2e coup",
+                "Param": "{Skill:1251003, Prop:1002}"
+            },
+            "125100026": {
+                "Description": "Multiplicateur de confusion du 3e coup",
+                "Param": "{Skill:1251004, Prop:1002}"
+            },
+            "125100027": {
+                "Description": "Multiplicateur de confusion du 4e coup",
+                "Param": "{Skill:1251005, Prop:1002}"
+            },
+            "125100028": {
+                "Description": "Multiplicateur de confusion du 4e coup (Renforcé)",
+                "Param": "{Skill:1251006, Prop:1002}"
+            },
+            "125100029": {
+                "Title": "Attaque normale : Fleurs enchantées"
+            },
+            "125100030": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1251007, Prop:1001}"
+            },
+            "125100031": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1251007, Prop:1002}"
+            },
+            "125100032": {
+                "Title": "Attaque normale : Fleurs enivrées au clair de lune"
+            },
+            "125100033": {
+                "Description": "Multiplicateur des DGT d'impulsion",
+                "Param": "{Skill:1251008, Prop:1001}"
+            },
+            "125100034": {
+                "Description": "Multiplicateur de DGT du coup final",
+                "Param": "{Skill:1251009, Prop:1001}"
+            },
+            "125100035": {
+                "Description": "Multiplicateur de confusion d'impulsion",
+                "Param": "{Skill:1251008, Prop:1002}"
+            },
+            "125100036": {
+                "Description": "Multiplicateur de confusion du coup final",
+                "Param": "{Skill:1251009, Prop:1002}"
+            }
+        },
+        "1": {
+            "125100005": {
+                "Title": "Attaque spéciale : Gloire ensoleillée",
+                "Description": "Appuyez sur <IconMap:Icon_Special> pour activer :\nAssène des attaques ascendantes rapides, suivies d'une attaque descendante qui infligent des <color=#2EB6FF>DGT électriques</color>.\nLa RÉS à l'interruption augmente lors de l'utilisation de cette compétence."
+            },
+            "125100006": {
+                "Title": "Attaque spéciale EX : Bégonia du clair de lune",
+                "Description": "Avec suffisamment d'énergie, appuyez sur <IconMap:Icon_SpecialReady> pour activer :\nAssène des attaques ascendantes rapides et se propulse dans les airs, puis se retourne pour lancer une série de coups, suivies par une puissante attaque descendante, qui infligent d'importants <color=#2EB6FF>DGT électriques</color>.\nMaintenez <IconMap:Icon_SpecialReady> enfoncé pour consommer de l'énergie supplémentaire et augmenter le nombre de coups de la série d'attaques.\nLe personnage est invulnérable pendant l'utilisation de cette compétence.\nAprès cette compétence, vous pouvez enchaîner directement avec le 3e coup de l'<color=#FFFFFF>attaque normale</color>."
+            },
+            "125100037": {
+                "Title": "Attaque spéciale : Gloire ensoleillée"
+            },
+            "125100038": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1251010, Prop:1001}"
+            },
+            "125100039": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1251010, Prop:1002}"
+            },
+            "125100040": {
+                "Title": "Attaque spéciale EX : Bégonia du clair de lune"
+            },
+            "125100041": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{{Skill:1251011, Prop:1001} + {Skill:1251021, Prop:1001} + {Skill:1251022, Prop:1001}}"
+            },
+            "125100042": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{{Skill:1251011, Prop:1002} + {Skill:1251021, Prop:1002} + {Skill:1251022, Prop:1002}}"
+            },
+            "125100043": {
+                "Description": "Coût en énergie",
+                "Param": "60 pts"
+            },
+            "125100044": {
+                "Description": "Coût en énergie additionnel",
+                "Param": "20 pts"
+            }
+        },
+        "2": {
+            "125100007": {
+                "Title": "Esquive : Chant du cygne",
+                "Description": "Appuyez sur <IconMap:Icon_Evade> pour activer :\nUne esquive rapide.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "125100008": {
+                "Title": "Attaque de bond : Percée",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pendant une esquive pour activer :\nBondit en avant, puis assène une attaque ascendante qui inflige des <color=#F0D12B>DGT physiques</color>."
+            },
+            "125100009": {
+                "Title": "Contre d'esquive : Sentiments persistants",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pendant une <color=#FFFFFF>esquive parfaite</color> pour activer :\nSe propulse dans les airs, puis assène une attaque descendante qui inflige des <color=#2EB6FF>DGT électriques</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "125100045": {
+                "Title": "Attaque de bond : Percée"
+            },
+            "125100046": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1251012, Prop:1001}"
+            },
+            "125100047": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1251012, Prop:1002}"
+            },
+            "125100048": {
+                "Title": "Contre d'esquive : Sentiments persistants"
+            },
+            "125100049": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1251013, Prop:1001}"
+            },
+            "125100050": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1251013, Prop:1002}"
+            }
+        },
+        "3": {
+            "125100010": {
+                "Title": "Enchaînement : Sérénade paisible",
+                "Description": "Lors du déclenchement d'un <color=#FFFFFF>enchaînement</color>, sélectionnez le personnage pour activer :\nAssène une série de puissantes frappes frontales dans une vaste zone, qui infligent d'importants <color=#2EB6FF>DGT électriques</color>.\nLorsque cette attaque touche un ennemi, les DGT de cette compétence augmentent de 3 % pour chaque cumul de <color=#FFFFFF>Subjugation</color> de <color=#FFFFFF>Passif principal : Saisons éternelles</color> possédé par la cible.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "125100011": {
+                "Title": "Ultime : Huit sons de Ganzhou",
+                "Description": "Lorsque le niveau de décibels est au <color=#FFFFFF>Maximum</color>, appuyez sur <IconMap:Icon_UltimateReady> pour activer :\nAssène une série de puissantes frappes frontales dans une vaste zone, suivie d'un coup final qui inflige d'importants <color=#2EB6FF>DGT électriques</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "125100051": {
+                "Title": "Enchaînement : Sérénade paisible"
+            },
+            "125100052": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1251014, Prop:1001}"
+            },
+            "125100053": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1251014, Prop:1002}"
+            },
+            "125100054": {
+                "Title": "Ultime : Huit sons de Ganzhou"
+            },
+            "125100055": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1251015, Prop:1001}"
+            },
+            "125100056": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1251015, Prop:1002}"
+            }
+        },
+        "6": {
+            "125100013": {
+                "Title": "Soutien rapide : Vent dans les pins",
+                "Description": "Lorsque le personnage contrôlé est projeté, appuyez sur <IconMap:Icon_Switch> pour activer :\nSe propulse dans les airs, puis assène une attaque descendante qui inflige des <color=#2EB6FF>DGT électriques</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "125100014": {
+                "Title": "Soutien défensif : Embellissement gracieux",
+                "Description": "Lorsque le personnage sur le terrain est sur le point d'être attaqué, appuyez sur <IconMap:Icon_Switch> pour activer :\nPare l'attaque de l'ennemi et provoque une confusion importante.\nCette compétence est idéale pour parer les attaques ennemies et réduire la consommation de <color=#FFFFFF>points de soutien</color> lorsque le personnage subit des assauts intenses.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "125100015": {
+                "Title": "Soutien de suivi : Chant du ruisseau clair",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> après un <color=#FFFFFF>soutien défensif</color> pour activer :\nBondit en avant pour attaquer et injecter de l'électricité dans le sol, puis se retire pour déclencher une explosion qui inflige des <color=#2EB6FF>DGT électriques</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "125100057": {
+                "Title": "Soutien rapide : Vent dans les pins"
+            },
+            "125100058": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1251016, Prop:1001}"
+            },
+            "125100059": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1251016, Prop:1002}"
+            },
+            "125100060": {
+                "Title": "Soutien défensif : Embellissement gracieux"
+            },
+            "125100061": {
+                "Description": "Multiplicateur de confusion de défense légère",
+                "Param": "{Skill:1251017, Prop:1002}"
+            },
+            "125100062": {
+                "Description": "Multiplicateur de confusion de défense lourde",
+                "Param": "{Skill:1251018, Prop:1002}"
+            },
+            "125100063": {
+                "Description": "Multiplicateur de confusion de défense en chaîne",
+                "Param": "{Skill:1251019, Prop:1002}"
+            },
+            "125100064": {
+                "Title": "Soutien de suivi : Chant du ruisseau clair"
+            },
+            "125100065": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1251020, Prop:1001}"
+            },
+            "125100066": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1251020, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1251001": {
+            "DamageValue": 4720,
+            "DamageGrowth": 430,
+            "DazeValue": 2360,
+            "DazeGrowth": 110
+        },
+        "1251002": {
+            "DamageValue": 11030,
+            "DamageGrowth": 1010,
+            "DazeValue": 5520,
+            "DazeGrowth": 260
+        },
+        "1251003": {
+            "DamageValue": 12210,
+            "DamageGrowth": 1110,
+            "DazeValue": 8220,
+            "DazeGrowth": 380
+        },
+        "1251004": {
+            "DamageValue": 1760,
+            "DamageGrowth": 160,
+            "DazeValue": 1910,
+            "DazeGrowth": 90
+        },
+        "1251005": {
+            "DamageValue": 10640,
+            "DamageGrowth": 970,
+            "DazeValue": 10630,
+            "DazeGrowth": 490
+        },
+        "1251006": {
+            "DamageValue": 23440,
+            "DamageGrowth": 2140,
+            "DazeValue": 20470,
+            "DazeGrowth": 940
+        },
+        "1251007": {
+            "DamageValue": 8560,
+            "DamageGrowth": 780,
+            "DazeValue": 8560,
+            "DazeGrowth": 390
+        },
+        "1251008": {
+            "DamageValue": 44870,
+            "DamageGrowth": 4080,
+            "DazeValue": 27190,
+            "DazeGrowth": 1240
+        },
+        "1251009": {
+            "DamageValue": 39440,
+            "DamageGrowth": 3590,
+            "DazeValue": 21760,
+            "DazeGrowth": 990
+        },
+        "1251010": {
+            "DamageValue": 6240,
+            "DamageGrowth": 570,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1251011": {
+            "DamageValue": 15070,
+            "DamageGrowth": 1370,
+            "DazeValue": 11110,
+            "DazeGrowth": 510
+        },
+        "1251012": {
+            "DamageValue": 4950,
+            "DamageGrowth": 450,
+            "DazeValue": 2480,
+            "DazeGrowth": 120
+        },
+        "1251013": {
+            "DamageValue": 28400,
+            "DamageGrowth": 2590,
+            "DazeValue": 19040,
+            "DazeGrowth": 870
+        },
+        "1251014": {
+            "DamageValue": 64790,
+            "DamageGrowth": 5890,
+            "DazeValue": 20900,
+            "DazeGrowth": 950
+        },
+        "1251015": {
+            "DamageValue": 167070,
+            "DamageGrowth": 15190,
+            "DazeValue": 109710,
+            "DazeGrowth": 4990
+        },
+        "1251016": {
+            "DamageValue": 13390,
+            "DamageGrowth": 1220,
+            "DazeValue": 13390,
+            "DazeGrowth": 610
+        },
+        "1251017": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 24930,
+            "DazeGrowth": 1140
+        },
+        "1251018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 30430,
+            "DazeGrowth": 1390
+        },
+        "1251019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 12830,
+            "DazeGrowth": 590
+        },
+        "1251020": {
+            "DamageValue": 37640,
+            "DamageGrowth": 3430,
+            "DazeValue": 27900,
+            "DazeGrowth": 1270
+        },
+        "1251021": {
+            "DamageValue": 21100,
+            "DamageGrowth": 1920,
+            "DazeValue": 15550,
+            "DazeGrowth": 710
+        },
+        "1251022": {
+            "DamageValue": 24110,
+            "DamageGrowth": 2200,
+            "DazeValue": 17770,
+            "DazeGrowth": 810
+        }
+    }
+}

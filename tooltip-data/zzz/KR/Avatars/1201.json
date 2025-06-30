@@ -1,0 +1,478 @@
+{
+    "Name": "하루마사",
+    "ElementTypes": [
+        "Elec"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "「왕성한 기합」",
+            "Description": "<color=#FFFFFF>[일반 공격: 갑시와 을시]</color> 중, <color=#FFFFFF>[전기 감옥]</color> 효과의 중첩 스택 최대치가 14스택까지 증가한다. <color=#FFFFFF>[전기 큐브]</color>가 활성화될 시 타깃에게 <color=#FFFFFF>[갑시와 을시]</color>를 연속으로 2발 발사한다.",
+            "Lore": "「전 앞뒤가 꽉 막힌 누구들이랑은 달리 정면 승부에 집착하지 않아요」\n「대놓고 쏘는 총이든, 은밀하게 날아가는 화살이든, 제 빠른 퇴근에 도움이 된다면 저한테는 착한 아이들이죠~」"
+        },
+        "2": {
+            "Title": "재능 낭비",
+            "Description": "<color=#FFFFFF>[콤보 스킬]</color> 혹은 <color=#FFFFFF>[궁극기]</color> 시전 시, 하루마사가 <color=#FFFFFF>[번갯불]</color>을 7스택 획득한다. 최대 중첩: 7스택\n<color=#FFFFFF>[번갯불]</color> 보유 시, <color=#FFFFFF>[대시 공격: 비상하는 활시위·베기]</color>로 주는 피해가 50% 증가한다. <color=#FFFFFF>[대시 공격: 비상하는 활시위·베기]</color> 종료 후, <color=#FFFFFF>[번갯불]</color>을 1스택 소모한다.",
+            "Lore": "「제가 이래 보여도, 사실 엄~청 약골이랍니다~」\n하루마사가 느긋하게 사무실 책상에 엎드린다.\n「그러니까 이번 임무는 다른 사람으로 바꿔주시면 안 돼요?」"
+        },
+        "3": {
+            "Title": "하얀 거짓말",
+            "Description": "<color=#FFFFFF>[일반 공격]</color>, <color=#FFFFFF>[회피]</color>, <color=#FFFFFF>[지원 스킬]</color>, <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[콤보 스킬]</color>의 스킬 레벨+2",
+            "Lore": "「…안심하세요, 아직 안 죽었으니까요」\n하루마사가 웃으며 입가에 묻은 피를 닦아내곤 다시금 활을 든다.\n「전 천년만년 살 거라고요」"
+        },
+        "4": {
+            "Title": "어쩌다 한 번의 활력",
+            "Description": "<color=#FFFFFF>[전기 감옥]</color> 효과의 지속 시간이 20초까지 증가한다. <color=#FFFFFF>[대시 공격: 비상하는 활시위·베기]</color>가 적에게 명중 시, 하루마사가 데시벨을 30pt 획득한다. 동일한 공격 한 번에 최대 1회 발동한다. <color=#FFFFFF>[궁극기]</color> 시전 시, 전장의 모든 적에게 풀 스택의 <color=#FFFFFF>[전기 감옥]</color> 효과를 부여한다.",
+            "Lore": "하루마사도 가끔 기운이 넘칠 때가 있다——\n퇴근까지 5분 남았을 때."
+        },
+        "5": {
+            "Title": "아무도 모르는",
+            "Description": "<color=#FFFFFF>[일반 공격]</color>, <color=#FFFFFF>[회피]</color>, <color=#FFFFFF>[지원 스킬]</color>, <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[콤보 스킬]</color>의 스킬 레벨+2",
+            "Lore": "「전 휴가를 원해요. 자유도 원하고, 하루하루가 즐거웠으면 좋겠어요——」\n「거짓말이에요. 전 살고 싶어요」"
+        },
+        "6": {
+            "Title": "회심",
+            "Description": "<color=#FFFFFF>[갑시와 을시]</color>가 그로기 상태 혹은 속성 이상 상태인 적에게 명중 후, 하루마사가 해당 적의 <color=#2EB6FF>전기 속성 피해 저항</color>을 15% 무시한다. 지속 시간: 12초. <color=#FFFFFF>[갑시와 을시]</color>가 동일한 적에게 12회 명중할 때마다, 추가로 전자 폭발을 1회 발동해 타깃에게 하루마사 공격력의 1500%에 해당하는 <color=#2EB6FF>전기 속성 피해</color>를 준다.",
+            "Lore": "「스승님은 제게 활을 다루는 법과 칼을 쓰는 법, 그리고… 이 세상에서 살아남는 법을 가르쳐 주셨어요」\n「…그다음엔 어땠냐고요?」\n「그다음엔… 스승님도 저를 떠났어요」"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "핵심 패시브: 여명",
+            "DescriptionByLevel": {
+                "1": "<color=#FFFFFF>[대시 공격: 비상하는 활시위·베기]</color>의 치명타 확률이 <color=#2BAD00>10.6%</color> 증가하고, 하루마사의 <color=#FFFFFF>[대시 공격: 비상하는 활시위·베기]</color>가 적에게 명중해 치명타 발동 시, <color=#FFFFFF>[예기]</color>를 1스택 획득한다. 동일한 공격 한 번에 최대 3스택 획득할 수 있다. <color=#FFFFFF>[예기]</color> 최대 중첩: 6스택, 지속 시간: 5초, 중복 발동 시 지속 시간이 갱신된다. <color=#FFFFFF>[예기]</color> 스택마다 <color=#FFFFFF>[대시 공격: 비상하는 활시위·베기]</color>로 주는 치명타 피해가 <color=#2BAD00>6%</color> 증가한다.",
+                "2": "<color=#FFFFFF>[대시 공격: 비상하는 활시위·베기]</color>의 치명타 확률이 <color=#2BAD00>13%</color> 증가하고, 하루마사의 <color=#FFFFFF>[대시 공격: 비상하는 활시위·베기]</color>가 적에게 명중해 치명타 발동 시, <color=#FFFFFF>[예기]</color>를 1스택 획득한다. 동일한 공격 한 번에 최대 3스택 획득할 수 있다. <color=#FFFFFF>[예기]</color> 최대 중첩: 6스택, 지속 시간: 5초, 중복 발동 시 지속 시간이 갱신된다. <color=#FFFFFF>[예기]</color> 스택마다 <color=#FFFFFF>[대시 공격: 비상하는 활시위·베기]</color>로 주는 치명타 피해가 <color=#2BAD00>7%</color> 증가한다.",
+                "3": "<color=#FFFFFF>[대시 공격: 비상하는 활시위·베기]</color>의 치명타 확률이 <color=#2BAD00>15.4%</color> 증가하고, 하루마사의 <color=#FFFFFF>[대시 공격: 비상하는 활시위·베기]</color>가 적에게 명중해 치명타 발동 시, <color=#FFFFFF>[예기]</color>를 1스택 획득한다. 동일한 공격 한 번에 최대 3스택 획득할 수 있다. <color=#FFFFFF>[예기]</color> 최대 중첩: 6스택, 지속 시간: 5초, 중복 발동 시 지속 시간이 갱신된다. <color=#FFFFFF>[예기]</color> 스택마다 <color=#FFFFFF>[대시 공격: 비상하는 활시위·베기]</color>로 주는 치명타 피해가 <color=#2BAD00>8%</color> 증가한다.",
+                "4": "<color=#FFFFFF>[대시 공격: 비상하는 활시위·베기]</color>의 치명타 확률이 <color=#2BAD00>17.8%</color> 증가하고, 하루마사의 <color=#FFFFFF>[대시 공격: 비상하는 활시위·베기]</color>가 적에게 명중해 치명타 발동 시, <color=#FFFFFF>[예기]</color>를 1스택 획득한다. 동일한 공격 한 번에 최대 3스택 획득할 수 있다. <color=#FFFFFF>[예기]</color> 최대 중첩: 6스택, 지속 시간: 5초, 중복 발동 시 지속 시간이 갱신된다. <color=#FFFFFF>[예기]</color> 스택마다 <color=#FFFFFF>[대시 공격: 비상하는 활시위·베기]</color>로 주는 치명타 피해가 <color=#2BAD00>9%</color> 증가한다.",
+                "5": "<color=#FFFFFF>[대시 공격: 비상하는 활시위·베기]</color>의 치명타 확률이 <color=#2BAD00>20.2%</color> 증가하고, 하루마사의 <color=#FFFFFF>[대시 공격: 비상하는 활시위·베기]</color>가 적에게 명중해 치명타 발동 시, <color=#FFFFFF>[예기]</color>를 1스택 획득한다. 동일한 공격 한 번에 최대 3스택 획득할 수 있다. <color=#FFFFFF>[예기]</color> 최대 중첩: 6스택, 지속 시간: 5초, 중복 발동 시 지속 시간이 갱신된다. <color=#FFFFFF>[예기]</color> 스택마다 <color=#FFFFFF>[대시 공격: 비상하는 활시위·베기]</color>로 주는 치명타 피해가 <color=#2BAD00>10%</color> 증가한다.",
+                "6": "<color=#FFFFFF>[대시 공격: 비상하는 활시위·베기]</color>의 치명타 확률이 <color=#2BAD00>22.6%</color> 증가하고, 하루마사의 <color=#FFFFFF>[대시 공격: 비상하는 활시위·베기]</color>가 적에게 명중해 치명타 발동 시, <color=#FFFFFF>[예기]</color>를 1스택 획득한다. 동일한 공격 한 번에 최대 3스택 획득할 수 있다. <color=#FFFFFF>[예기]</color> 최대 중첩: 6스택, 지속 시간: 5초, 중복 발동 시 지속 시간이 갱신된다. <color=#FFFFFF>[예기]</color> 스택마다 <color=#FFFFFF>[대시 공격: 비상하는 활시위·베기]</color>로 주는 치명타 피해가 <color=#2BAD00>11%</color> 증가한다.",
+                "7": "<color=#FFFFFF>[대시 공격: 비상하는 활시위·베기]</color>의 치명타 확률이 <color=#2BAD00>25%</color> 증가하고, 하루마사의 <color=#FFFFFF>[대시 공격: 비상하는 활시위·베기]</color>가 적에게 명중해 치명타 발동 시, <color=#FFFFFF>[예기]</color>를 1스택 획득한다. 동일한 공격 한 번에 최대 3스택 획득할 수 있다. <color=#FFFFFF>[예기]</color> 최대 중첩: 6스택, 지속 시간: 5초, 중복 발동 시 지속 시간이 갱신된다. <color=#FFFFFF>[예기]</color> 스택마다 <color=#FFFFFF>[대시 공격: 비상하는 활시위·베기]</color>로 주는 치명타 피해가 <color=#2BAD00>12%</color> 증가한다."
+            }
+        },
+        "MathSkill": {
+            "Title": "추가 능력: 오버클럭",
+            "Description": "파티에 <color=#FFFFFF>[격파]</color> 캐릭터 혹은 <color=#FFFFFF>[이상]</color> 캐릭터 존재 시 발동:\n하루마사의 공격이 그로기 상태 혹은 속성 이상 상태인 적에게 명중 시, 자신이 주는 피해가 40% 증가한다. 하루마사가 발사한 <color=#FFFFFF>[떨어지는 날개]</color>가 그로기 상태 혹은 속성 이상 상태인 적에게 명중 시, 해당 적에게 <color=#FFFFFF>[전기 감옥]</color> 효과를 2스택 부여한다."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "120100001": {
+                "Title": "일반 공격: 구름을 뚫고",
+                "Description": "<IconMap:Icon_Normal>을 짧게 탭하여 시전:\n전방을 향해 최대 5단까지 꿰뚫기 공격을 펼쳐 <color=#F0D12B>물리 피해</color> 및 <color=#2EB6FF>전기 속성 피해</color>를 준다.\n다섯 번째 공격이 적에게 명중 시, <color=#FFFFFF>[전기 큐브]</color>를 2개 생성할 수 있다.\n<color=#FFFFFF>[콤보 스킬]</color> 시전 후, 하루마사가 다음번에 시전한 <color=#FFFFFF>[일반 공격: 구름을 뚫고]</color> 다섯 번째 공격이 적에게 명중 시 <color=#FFFFFF>[전기 큐브]</color>를 6개 생성할 수 있다."
+            },
+            "120100002": {
+                "Title": "일반 공격: 구름을 뚫고·이동",
+                "Description": "<color=#FFFFFF>[일반 공격: 구름을 뚫고]</color>를 시전하는 동안 {LAYOUT_CONSOLECONTROLLER#스틱을}{LAYOUT_FALLBACK#방향키를} 드래그하며 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n원거리 꿰뚫기 공격을 시전하고, 드래그하는 방향으로 위치를 조정해 전방의 적에게 <color=#F0D12B>물리 피해</color>를 준다."
+            },
+            "120100003": {
+                "Title": "일반 공격: 떨어지는 날개",
+                "Description": "다섯 번째 <color=#FFFFFF>[일반 공격: 구름을 뚫고]</color>, <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[강화 특수 스킬]</color> 혹은 <color=#FFFFFF>[콤보 스킬]</color> 시전 후 <IconMap:Icon_Special>을 홀드하여 시전:\n즉시 전방의 적에게 <color=#FFFFFF>[떨어지는 날개]</color>를 발사하고 <color=#2EB6FF>전기 속성 피해</color>를 준다.\n<IconMap:Icon_Normal>을 홀드해 타깃을 조준하고 <IconMap:Icon_Normal>에서 손을 떼 시전:\n활을 당겨 적을 조준 후, 타깃에게 <color=#FFFFFF>[떨어지는 날개]</color>를 발사해 <color=#2EB6FF>전기 속성 피해</color>를 준다."
+            },
+            "120100004": {
+                "Title": "일반 공격: 갑시와 을시",
+                "Description": "다섯 번째 <color=#FFFFFF>[일반 공격: 구름을 뚫고]</color>/<color=#FFFFFF>[강화 특수 스킬]</color>/<color=#FFFFFF>[콤보 스킬]</color>이 적 또는 지면에 명중 시 <color=#FFFFFF>[전기 큐브]</color>를 2/6/6개 생성할 수 있다.\n전장에 <color=#FFFFFF>[전기 큐브]</color>가 존재하지 않을 때 파티 내 임의의 캐릭터가 적에게 속성 이상 효과 부여 시, <color=#FFFFFF>[전기 큐브]</color>를 6개 생성할 수 있다. 12초 동안 최대 1회 발동한다.\n<color=#FFFFFF>[전기 큐브]</color>는 동시에 최대 6개까지 존재할 수 있으며 하루마사가 발사한 <color=#FFFFFF>[떨어지는 날개]</color>가 적에게 명중했을 때, 만약 전장에 <color=#FFFFFF>[전기 큐브]</color>가 존재할 경우, [전기 큐브]를 활성화하여 <color=#FFFFFF>[떨어지는 날개]</color>에 명중한 타깃에게 <color=#FFFFFF>[갑시와 을시]</color>를 발사하고 <color=#2EB6FF>전기 속성 피해</color>를 준다.\n<color=#FFFFFF>[갑시와 을시]</color>가 적에게 명중 시, 해당 적에게 <color=#FFFFFF>[전기 감옥]</color> 효과를 부여한다. 최대 중첩: 8스택, 지속 시간: 10초, 중복 발동 시 지속 시간이 갱신되며, <color=#FFFFFF>[전기 감옥]</color> 효과가 2스택 이상일 시, 타깃에게 <color=#FFFFFF>[가위표]</color> 표식을 생성한다."
+            },
+            "120110001": {
+                "Title": "일반 공격: 구름을 뚫고"
+            },
+            "120110002": {
+                "Description": "1단 피해 배율",
+                "Param": "{Skill:1201001, Prop:1001}"
+            },
+            "120110003": {
+                "Description": "2단 피해 배율",
+                "Param": "{Skill:1201002, Prop:1001}"
+            },
+            "120110004": {
+                "Description": "3단 피해 배율",
+                "Param": "{Skill:1201003, Prop:1001}"
+            },
+            "120110005": {
+                "Description": "4단 피해 배율",
+                "Param": "{Skill:1201004, Prop:1001}"
+            },
+            "120110006": {
+                "Description": "5단 피해 배율",
+                "Param": "{Skill:1201005, Prop:1001}"
+            },
+            "120110007": {
+                "Description": "1단 그로기 배율",
+                "Param": "{Skill:1201001, Prop:1002}"
+            },
+            "120110008": {
+                "Description": "2단 그로기 배율",
+                "Param": "{Skill:1201002, Prop:1002}"
+            },
+            "120110009": {
+                "Description": "3단 그로기 배율",
+                "Param": "{Skill:1201003, Prop:1002}"
+            },
+            "120110010": {
+                "Description": "4단 그로기 배율",
+                "Param": "{Skill:1201004, Prop:1002}"
+            },
+            "120110011": {
+                "Description": "5단 그로기 배율",
+                "Param": "{Skill:1201005, Prop:1002}"
+            },
+            "120110012": {
+                "Title": "일반 공격: 구름을 뚫고·이동"
+            },
+            "120110013": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1201006, Prop:1001}"
+            },
+            "120110014": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1201006, Prop:1002}"
+            },
+            "120110015": {
+                "Title": "일반 공격: 떨어지는 날개"
+            },
+            "120110016": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1201007, Prop:1001}"
+            },
+            "120110017": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1201007, Prop:1002}"
+            },
+            "120110025": {
+                "Title": "일반 공격: 갑시와 을시"
+            },
+            "120110026": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1201008, Prop:1001}"
+            },
+            "120110027": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1201008, Prop:1002}"
+            }
+        },
+        "1": {
+            "120100005": {
+                "Title": "특수 스킬: 천라",
+                "Description": "<IconMap:Icon_Special>을 짧게 탭하여 시전:\n전방으로 화살을 발사해 <color=#2EB6FF>전기 속성 피해</color>를 준다.\n스킬을 시전하는 동안 경직 저항 레벨이 증가한다."
+            },
+            "120100006": {
+                "Title": "강화 특수 스킬: 지망",
+                "Description": "에너지가 충분한 상태에서 <IconMap:Icon_SpecialReady>을 짧게 탭하여 시전:\n전방을 향해 칼날과 강화된 화살을 발사해 대량의 <color=#2EB6FF>전기 속성 피해</color>를 준다.\n강화된 화살이 적 또는 지면에 명중 시, <color=#FFFFFF>[전기 큐브]</color>를 6개 생성할 수 있다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "120110018": {
+                "Title": "특수 스킬: 천라"
+            },
+            "120110019": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1201009, Prop:1001}"
+            },
+            "120110020": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1201009, Prop:1002}"
+            },
+            "120110021": {
+                "Title": "강화 특수 스킬: 지망"
+            },
+            "120110022": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1201010, Prop:1001}"
+            },
+            "120110023": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1201010, Prop:1002}"
+            },
+            "120110024": {
+                "Description": "에너지 소모",
+                "Param": "60"
+            }
+        },
+        "2": {
+            "120100007": {
+                "Title": "회피: 찰나",
+                "Description": "<IconMap:Icon_Evade>을 짧게 탭하여 시전:\n빠른 대시로 회피한다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "120100008": {
+                "Title": "대시 공격: 비상하는 활시위",
+                "Description": "회피 시 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n전방을 여러 차례 꿰뚫어 <color=#F0D12B>물리 피해</color>를 준다."
+            },
+            "120100009": {
+                "Title": "회피 반격: 숨겨진 검",
+                "Description": "<color=#FFFFFF>[극한 회피]</color> 발동 후 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n전방의 적을 꿰뚫어 <color=#2EB6FF>전기 속성 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "120110028": {
+                "Title": "대시 공격: 비상하는 활시위"
+            },
+            "120110029": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1201011, Prop:1001}"
+            },
+            "120110030": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1201011, Prop:1002}"
+            },
+            "120110031": {
+                "Title": "회피 반격: 숨겨진 검"
+            },
+            "120110032": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1201012, Prop:1001}"
+            },
+            "120110033": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1201012, Prop:1002}"
+            },
+            "120110050": {
+                "Title": "대시 공격: 비상하는 활시위·베기",
+                "Description": "전장에 <color=#FFFFFF>[가위표]</color> 표식을 지닌 적이 존재할 시, 하루마사는 <color=#FFFFFF>[성각]</color> 상태에 진입하고, <color=#FFFFFF>[대시 공격: 비상하는 활시위]</color>가 <color=#FFFFFF>[비상하는 활시위·베기]</color>로 교체된다.\n<color=#FFFFFF>[성각]</color> 상태에서 회피 시 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n자신과 거리가 가장 가깝고 <color=#FFFFFF>[가위표]</color> 표식을 지닌 적에게 빠르게 돌진해 강력한 베기로 <color=#2EB6FF>전기 속성 피해</color>를 준다.\n베기가 타깃에게 명중 시, <color=#FFFFFF>[전기 감옥]</color> 효과를 2스택 소모하며, <color=#FFFFFF>[전기 감옥]</color> 효과가 2스택 미만일 시, <color=#FFFFFF>[가위표]</color> 표식을 제거한다. <color=#FFFFFF>[가위표]</color> 표식이 소진되기 전에 연속으로 <IconMap:Icon_Normal>을 탭하면 연속으로 <color=#FFFFFF>[대시 공격: 비상하는 활시위·베기]</color>를 시전할 수 있다. 전장에 <color=#FFFFFF>[가위표]</color> 표식을 지닌 적이 없을 경우, 하루마사의 <color=#FFFFFF>[성각]</color> 상태가 종료된다.\n<color=#FFFFFF>[성각]</color> 상태에서 <color=#FFFFFF>[일반 공격: 떨어지는 날개]</color> 시전 후 <IconMap:Icon_Normal>을 짧게 탭하면 빠르게 이어서 <color=#FFFFFF>[대시 공격: 비상하는 활시위·베기]</color>를 시전할 수 있다.\n스킬을 시전하는 동안 경직 저항 레벨이 증가하고, 받는 피해가 40% 감소한다."
+            },
+            "120110051": {
+                "Title": "대시 공격: 비상하는 활시위·베기"
+            },
+            "120110052": {
+                "Description": "1단 피해 배율",
+                "Param": "{Skill:1201020, Prop:1001}"
+            },
+            "120110053": {
+                "Description": "2단 피해 배율",
+                "Param": "{Skill:1201021, Prop:1001}"
+            },
+            "120110054": {
+                "Description": "3단 피해 배율",
+                "Param": "{Skill:1201022, Prop:1001}"
+            },
+            "120110055": {
+                "Description": "1단 그로기 배율",
+                "Param": "{Skill:1201020, Prop:1002}"
+            },
+            "120110056": {
+                "Description": "2단 그로기 배율",
+                "Param": "{Skill:1201021, Prop:1002}"
+            },
+            "120110057": {
+                "Description": "3단 그로기 배율",
+                "Param": "{Skill:1201022, Prop:1002}"
+            }
+        },
+        "3": {
+            "120100010": {
+                "Title": "콤보 스킬: 만남·이별",
+                "Description": "<color=#FFFFFF>[콤보 스킬]</color> 발동 시 해당 캐릭터를 선택해 시전:\n전방 넓은 범위 내 적을 꿰뚫고 강화된 화살을 발사해 대량의 <color=#2EB6FF>전기 속성 피해</color>를 준다.\n화살이 지면에 명중 시, <color=#FFFFFF>[전기 큐브]</color>를 6개 생성할 수 있다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "120100011": {
+                "Title": "궁극기: 잔심",
+                "Description": "데시벨 레벨 <color=#FFFFFF>[Maximum]</color> 달성 시 <IconMap:Icon_UltimateReady>을 짧게 탭하여 시전:\n전방의 적을 강력하게 꿰뚫어 대량의 <color=#2EB6FF>전기 속성 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "120110034": {
+                "Title": "콤보 스킬: 만남·이별"
+            },
+            "120110035": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1201013, Prop:1001}"
+            },
+            "120110036": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1201013, Prop:1002}"
+            },
+            "120110037": {
+                "Title": "궁극기: 잔심"
+            },
+            "120110038": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1201014, Prop:1001}"
+            },
+            "120110039": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1201014, Prop:1002}"
+            }
+        },
+        "6": {
+            "120100013": {
+                "Title": "빠른 지원: 팽팽한 활시위",
+                "Description": "현재 조작 중인 캐릭터가 넉업되면 <IconMap:Icon_Switch>을 짧게 탭하여 시전:\n전방의 적을 꿰뚫어 <color=#2EB6FF>전기 속성 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "120100014": {
+                "Title": "패링 지원: 방어 태세",
+                "Description": "출전 캐릭터 피격 직전에 <IconMap:Icon_Switch>을 짧게 탭하여 시전:\n적의 공격을 패링하면 대량의 그로기 수치를 누적한다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "120100015": {
+                "Title": "지원 돌격: 방어 태세·베기",
+                "Description": "<color=#FFFFFF>[패링 지원]</color> 시전 후 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n전방의 적을 연속으로 베어 <color=#2EB6FF>전기 속성 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "120110040": {
+                "Title": "빠른 지원: 팽팽한 활시위"
+            },
+            "120110041": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1201015, Prop:1001}"
+            },
+            "120110042": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1201015, Prop:1002}"
+            },
+            "120110043": {
+                "Title": "패링 지원: 방어 태세"
+            },
+            "120110044": {
+                "Description": "가벼운 패링 그로기 배율",
+                "Param": "{Skill:1201016, Prop:1002}"
+            },
+            "120110045": {
+                "Description": "강한 패링 그로기 배율",
+                "Param": "{Skill:1201017, Prop:1002}"
+            },
+            "120110046": {
+                "Description": "연속 패링 그로기 배율",
+                "Param": "{Skill:1201018, Prop:1002}"
+            },
+            "120110047": {
+                "Title": "지원 돌격: 방어 태세·베기"
+            },
+            "120110048": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1201019, Prop:1001}"
+            },
+            "120110049": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1201019, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1201001": {
+            "DamageValue": 4240,
+            "DamageGrowth": 390,
+            "DazeValue": 2650,
+            "DazeGrowth": 130
+        },
+        "1201002": {
+            "DamageValue": 3980,
+            "DamageGrowth": 370,
+            "DazeValue": 4430,
+            "DazeGrowth": 210
+        },
+        "1201003": {
+            "DamageValue": 7090,
+            "DamageGrowth": 650,
+            "DazeValue": 6610,
+            "DazeGrowth": 310
+        },
+        "1201004": {
+            "DamageValue": 9010,
+            "DamageGrowth": 820,
+            "DazeValue": 8960,
+            "DazeGrowth": 410
+        },
+        "1201005": {
+            "DamageValue": 13290,
+            "DamageGrowth": 1210,
+            "DazeValue": 11540,
+            "DazeGrowth": 530
+        },
+        "1201006": {
+            "DamageValue": 6950,
+            "DamageGrowth": 640,
+            "DazeValue": 4870,
+            "DazeGrowth": 230
+        },
+        "1201007": {
+            "DamageValue": 10540,
+            "DamageGrowth": 960,
+            "DazeValue": 5270,
+            "DazeGrowth": 240
+        },
+        "1201008": {
+            "DamageValue": 1590,
+            "DamageGrowth": 150,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1201009": {
+            "DamageValue": 5230,
+            "DamageGrowth": 480,
+            "DazeValue": 5230,
+            "DazeGrowth": 240
+        },
+        "1201010": {
+            "DamageValue": 44930,
+            "DamageGrowth": 4090,
+            "DazeValue": 44900,
+            "DazeGrowth": 2050
+        },
+        "1201011": {
+            "DamageValue": 8070,
+            "DamageGrowth": 740,
+            "DazeValue": 4040,
+            "DazeGrowth": 190
+        },
+        "1201012": {
+            "DamageValue": 21960,
+            "DamageGrowth": 2000,
+            "DazeValue": 19430,
+            "DazeGrowth": 890
+        },
+        "1201013": {
+            "DamageValue": 51760,
+            "DamageGrowth": 4710,
+            "DazeValue": 18340,
+            "DazeGrowth": 840
+        },
+        "1201014": {
+            "DamageValue": 195390,
+            "DamageGrowth": 17770,
+            "DazeValue": 10690,
+            "DazeGrowth": 490
+        },
+        "1201015": {
+            "DamageValue": 8430,
+            "DamageGrowth": 770,
+            "DazeValue": 8430,
+            "DazeGrowth": 390
+        },
+        "1201016": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 24760,
+            "DazeGrowth": 1130
+        },
+        "1201017": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 29520,
+            "DazeGrowth": 1350
+        },
+        "1201018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 11920,
+            "DazeGrowth": 550
+        },
+        "1201019": {
+            "DamageValue": 30710,
+            "DamageGrowth": 2800,
+            "DazeValue": 26330,
+            "DazeGrowth": 1200
+        },
+        "1201020": {
+            "DamageValue": 16230,
+            "DamageGrowth": 1480,
+            "DazeValue": 6600,
+            "DazeGrowth": 300
+        },
+        "1201021": {
+            "DamageValue": 16660,
+            "DamageGrowth": 1520,
+            "DazeValue": 4590,
+            "DazeGrowth": 210
+        },
+        "1201022": {
+            "DamageValue": 18960,
+            "DamageGrowth": 1730,
+            "DazeValue": 4950,
+            "DazeGrowth": 230
+        },
+        "1201023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

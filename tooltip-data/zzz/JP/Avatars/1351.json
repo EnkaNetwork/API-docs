@@ -1,0 +1,355 @@
+{
+    "Name": "プルクラ",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "エゴイスト",
+            "Description": "<color=#FFFFFF>「囚縛」</color>効果を付与された敵にダメージを与えた時、自身の会心率+10%。",
+            "Lore": "「利己主義ってのは生まれ持った本能みたいなものさ。\n後天的に開花することもあるけどね」\n「どうやって？」\n「何度か火傷するうちに、嫌でもなれるよ」"
+        },
+        "2": {
+            "Title": "機を見るに敏",
+            "Description": "<color=#FFFFFF>『コアパッシブ：捕食者の本能』</color>により<color=#FFFFFF>「猟歩」</color>状態にある時、プルクラの攻撃力が追加で+10%。",
+            "Lore": "「傭兵にとって一番大切なのは、忠誠心なんかじゃなくて柔軟性。\nそこそこの雇い主を選んで、性に合う依頼を受けて、\n頼まれた仕事だけやってればいい。長期契約さえ結ばなきゃ、\n競合に鞍替えしたって文句は言われないよ」\n「…ずいぶん顔が広いようだな、プルクラ。ついさっきも\n一人追っ払ったが、あんたにお冠だったみたいだぞ」\n「どいつもこいつも気が短いね。ああいうのを身の程知らずって言うんだよ」"
+        },
+        "3": {
+            "Title": "縄張り意識",
+            "Description": "<color=#FFFFFF>『通常攻撃』</color>、<color=#FFFFFF>『回避』</color>、<color=#FFFFFF>『支援スキル』</color>、<color=#FFFFFF>『特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>のスキルレベル+2",
+            "Lore": "プルクラは普段トラックで暮らしている。\nドアには2枚の張り紙があり、1枚には大きく赤字で\n「こっからは私の縄張り！用があるなら必ずノックすること！！！」、\nもう1枚には黒字で「シーザーへ。鍵の修理代10万ディニー、早く弁償して！」\nと書かれている。が…よく見ると下に小さく\n「プロキシに聞いたら2万だった」と付け足されている。"
+        },
+        "4": {
+            "Title": "狩る楽しみ",
+            "Description": "<color=#FFFFFF>『強化特殊スキル：バイトクロー・フラッシュ』</color>を発動する時に消費されるエネルギーが5Pt減少する。",
+            "Lore": "「わざわざ強いやつに挑んで何が楽しいの？\nあいにくそういう趣味はないから。100%の勝率があって\n初めて、狩る楽しみってやつが味わえるのにさ」\n5分後——\n「このゲーム、ザコばっかでつまらないね」"
+        },
+        "5": {
+            "Title": "尻尾遊戯",
+            "Description": "<color=#FFFFFF>『通常攻撃』</color>、<color=#FFFFFF>『回避』</color>、<color=#FFFFFF>『支援スキル』</color>、<color=#FFFFFF>『特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>のスキルレベル+2",
+            "Lore": "プルクラの幼少期を遡っていくと、\n「暖かくて大きなしっぽ」の思い出に辿り着く。\nハイハイを覚えて間もない頃、彼女はそれを夢中で追いかけていた。\n「それで、オチは？」\n「後になって聞かされたんだけど、あれは私のしっぽだったんだと」\nそう言いつつも、本当は自分のしっぽなんかじゃないとプルクラは知っていた。\n遊びに付き合うだけでなく、寒い夜に毎晩抱きしめてくれたあのしっぽは――\nホロウか、あるいは別の何かが奪い去ったのか、\nあの遊びを卒業した今のプルクラには、どうでもいい話だった。"
+        },
+        "6": {
+            "Title": "マスクの下には",
+            "Description": "<color=#FFFFFF>『特殊スキル：バイトクロー・ナイトメア』</color>の与ダメージ+15%、重複攻撃の発動可能回数が2回増える。\n<color=#FFFFFF>『追加能力：ビジネスパートナー』</color>による<color=#FFFFFF>「囚縛」</color>効果が<color=#FFFFFF>『追加攻撃』</color>以外のスキルのダメージにも適用されるようになる。",
+            "Lore": "マスク式の呼吸フィルターは、エーテル粒子と花粉をブロックし、\n他人の恐怖または好奇の目から守ってくれる。欠点があるとすれば、\nこれを着けたままだと丸まって寝れないことくらいだろう。\nポカポカした場所で、無防備にお昼寝がしたい…\nそんなことを考えていると、急にドアが開かれた。\n夢から覚めたプルクラは咄嗟に「相棒」を顔に装着し、\n大声で叫ぶ——「だからノック！！」\n…そういえば、いつの間にか外せるようになったな。"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "コアパッシブ：捕食者の本能",
+            "DescriptionByLevel": {
+                "1": "プルクラが<color=#FFFFFF>『強化特殊スキル』</color>、<color=#FFFFFF>『支援突撃』</color>、<color=#FFFFFF>『連携スキル』</color>または<color=#FFFFFF>『終結スキル』</color>を発動した時、<color=#FFFFFF>「猟歩」</color>状態に入り、自身の与えるブレイク値+<color=#2BAD00>15%</color>、継続時間6秒。\n他のメンバーと交代した後も<color=#FFFFFF>「猟歩」</color>状態にある場合、プルクラが次に出場するまで<color=#FFFFFF>「猟歩」</color>状態が継続する。\n<color=#FFFFFF>「猟歩」</color>状態のプルクラを操作している時、自身の重撃が敵に命中すると、前のメンバーの<color=#FFFFFF>『クイック支援』</color>が発動可能になる。",
+                "2": "プルクラが<color=#FFFFFF>『強化特殊スキル』</color>、<color=#FFFFFF>『支援突撃』</color>、<color=#FFFFFF>『連携スキル』</color>または<color=#FFFFFF>『終結スキル』</color>を発動した時、<color=#FFFFFF>「猟歩」</color>状態に入り、自身の与えるブレイク値+<color=#2BAD00>17.5%</color>、継続時間6秒。\n他のメンバーと交代した後も<color=#FFFFFF>「猟歩」</color>状態にある場合、プルクラが次に出場するまで<color=#FFFFFF>「猟歩」</color>状態が継続する。\n<color=#FFFFFF>「猟歩」</color>状態のプルクラを操作している時、自身の重撃が敵に命中すると、前のメンバーの<color=#FFFFFF>『クイック支援』</color>が発動可能になる。",
+                "3": "プルクラが<color=#FFFFFF>『強化特殊スキル』</color>、<color=#FFFFFF>『支援突撃』</color>、<color=#FFFFFF>『連携スキル』</color>または<color=#FFFFFF>『終結スキル』</color>を発動した時、<color=#FFFFFF>「猟歩」</color>状態に入り、自身の与えるブレイク値+<color=#2BAD00>20%</color>、継続時間6秒。\n他のメンバーと交代した後も<color=#FFFFFF>「猟歩」</color>状態にある場合、プルクラが次に出場するまで<color=#FFFFFF>「猟歩」</color>状態が継続する。\n<color=#FFFFFF>「猟歩」</color>状態のプルクラを操作している時、自身の重撃が敵に命中すると、前のメンバーの<color=#FFFFFF>『クイック支援』</color>が発動可能になる。",
+                "4": "プルクラが<color=#FFFFFF>『強化特殊スキル』</color>、<color=#FFFFFF>『支援突撃』</color>、<color=#FFFFFF>『連携スキル』</color>または<color=#FFFFFF>『終結スキル』</color>を発動した時、<color=#FFFFFF>「猟歩」</color>状態に入り、自身の与えるブレイク値+<color=#2BAD00>22.5%</color>、継続時間6秒。\n他のメンバーと交代した後も<color=#FFFFFF>「猟歩」</color>状態にある場合、プルクラが次に出場するまで<color=#FFFFFF>「猟歩」</color>状態が継続する。\n<color=#FFFFFF>「猟歩」</color>状態のプルクラを操作している時、自身の重撃が敵に命中すると、前のメンバーの<color=#FFFFFF>『クイック支援』</color>が発動可能になる。",
+                "5": "プルクラが<color=#FFFFFF>『強化特殊スキル』</color>、<color=#FFFFFF>『支援突撃』</color>、<color=#FFFFFF>『連携スキル』</color>または<color=#FFFFFF>『終結スキル』</color>を発動した時、<color=#FFFFFF>「猟歩」</color>状態に入り、自身の与えるブレイク値+<color=#2BAD00>25%</color>、継続時間6秒。\n他のメンバーと交代した後も<color=#FFFFFF>「猟歩」</color>状態にある場合、プルクラが次に出場するまで<color=#FFFFFF>「猟歩」</color>状態が継続する。\n<color=#FFFFFF>「猟歩」</color>状態のプルクラを操作している時、自身の重撃が敵に命中すると、前のメンバーの<color=#FFFFFF>『クイック支援』</color>が発動可能になる。",
+                "6": "プルクラが<color=#FFFFFF>『強化特殊スキル』</color>、<color=#FFFFFF>『支援突撃』</color>、<color=#FFFFFF>『連携スキル』</color>または<color=#FFFFFF>『終結スキル』</color>を発動した時、<color=#FFFFFF>「猟歩」</color>状態に入り、自身の与えるブレイク値+<color=#2BAD00>27.5%</color>、継続時間6秒。\n他のメンバーと交代した後も<color=#FFFFFF>「猟歩」</color>状態にある場合、プルクラが次に出場するまで<color=#FFFFFF>「猟歩」</color>状態が継続する。\n<color=#FFFFFF>「猟歩」</color>状態のプルクラを操作している時、自身の重撃が敵に命中すると、前のメンバーの<color=#FFFFFF>『クイック支援』</color>が発動可能になる。",
+                "7": "プルクラが<color=#FFFFFF>『強化特殊スキル』</color>、<color=#FFFFFF>『支援突撃』</color>、<color=#FFFFFF>『連携スキル』</color>または<color=#FFFFFF>『終結スキル』</color>を発動した時、<color=#FFFFFF>「猟歩」</color>状態に入り、自身の与えるブレイク値+<color=#2BAD00>30%</color>、継続時間6秒。\n他のメンバーと交代した後も<color=#FFFFFF>「猟歩」</color>状態にある場合、プルクラが次に出場するまで<color=#FFFFFF>「猟歩」</color>状態が継続する。\n<color=#FFFFFF>「猟歩」</color>状態のプルクラを操作している時、自身の重撃が敵に命中すると、前のメンバーの<color=#FFFFFF>『クイック支援』</color>が発動可能になる。"
+            }
+        },
+        "MathSkill": {
+            "Title": "追加能力：ビジネスパートナー",
+            "Description": "チームに<color=#FFFFFF>[強攻]</color>、<color=#FFFFFF>[命破]</color>、または自身と同じ陣営のメンバーがいる時に発動：\nプルクラの<color=#FFFFFF>『特殊スキル：バイトクロー・ナイトメア』</color>、<color=#FFFFFF>『強化特殊スキル：バイトクロー・フラッシュ』</color>、<color=#FFFFFF>『支援突撃：別料金だよ』</color>、<color=#FFFFFF>『連携スキル：びっくりさせた？』</color>または<color=#FFFFFF>『終結スキル：遊びの時間さ』</color>が敵に命中した時、ターゲットに<color=#FFFFFF>「囚縛」</color>効果を付与する、継続時間15秒。\n<color=#FFFFFF>「囚縛」</color>効果を付与された敵に対し、全ユニットの<color=#FFFFFF>『追加攻撃』</color>の与ダメージ+30%。"
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "135100001": {
+                "Title": "通常攻撃：ファストスラッシュ",
+                "Description": " <IconMap:Icon_Normal> を押して発動：\n前方に最大3段の攻撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。"
+            },
+            "135100002": {
+                "Title": "通常攻撃：ジャンプスラッシュ",
+                "Description": " <IconMap:Icon_Normal> を長押しして発動：\n前方に飛び上がって連続斬撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。"
+            },
+            "135110001": {
+                "Title": "通常攻撃：ファストスラッシュ"
+            },
+            "135110002": {
+                "Description": "1段ダメージ倍率",
+                "Param": "{Skill:1351001, Prop:1001}"
+            },
+            "135110003": {
+                "Description": "2段ダメージ倍率",
+                "Param": "{Skill:1351002, Prop:1001}"
+            },
+            "135110004": {
+                "Description": "3段ダメージ倍率",
+                "Param": "{Skill:1351003, Prop:1001}"
+            },
+            "135110005": {
+                "Description": "1段ブレイク倍率",
+                "Param": "{Skill:1351001, Prop:1002}"
+            },
+            "135110006": {
+                "Description": "2段ブレイク倍率",
+                "Param": "{Skill:1351002, Prop:1002}"
+            },
+            "135110007": {
+                "Description": "3段ブレイク倍率",
+                "Param": "{Skill:1351003, Prop:1002}"
+            },
+            "135110008": {
+                "Title": "通常攻撃：ジャンプスラッシュ"
+            },
+            "135110009": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1351004, Prop:1001}"
+            },
+            "135110010": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1351004, Prop:1002}"
+            }
+        },
+        "1": {
+            "135100003": {
+                "Title": "特殊スキル：バイトクロー",
+                "Description": " <IconMap:Icon_Special> を押して発動：\n前方に一往復の高速攻撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。\nスキル発動中、中断耐性レベルがアップする。"
+            },
+            "135100004": {
+                "Title": "特殊スキル：バイトクロー・ナイトメア",
+                "Description": "プルクラが<color=#FFFFFF>「猟歩」</color>状態に入った後、操作している他のメンバーの<color=#FFFFFF>『特殊スキル』</color>または<color=#FFFFFF>『強化特殊スキル』</color>の重撃が敵に命中した時に発動：\nターゲットを中心に一往復の高速攻撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。\nスキル発動後、操作している他のメンバーの任意攻撃が敵に命中した時、プルクラは重複して攻撃を発動する、最大5回まで発動できる。そのうち最後の1回は、より強力なとどめの一撃になる。\nスキル発動中、無敵効果を得る。\n<color=#FFFFFF>『特殊スキル：バイトクロー・ナイトメア』</color>は、<color=#FFFFFF>『追加攻撃』</color>である。"
+            },
+            "135100005": {
+                "Title": "強化特殊スキル：バイトクロー・フラッシュ",
+                "Description": "エネルギーが溜まっている状態で <IconMap:Icon_SpecialReady> を押して発動：\n前方に往復攻撃を数回放ち、<color=#F0D12B>物理属性ダメージ</color>を大量に与える。\nスキル発動中、無敵効果を得る。"
+            },
+            "135110011": {
+                "Title": "特殊スキル：バイトクロー"
+            },
+            "135110012": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1351005, Prop:1001}"
+            },
+            "135110013": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1351005, Prop:1002}"
+            },
+            "135110014": {
+                "Title": "特殊スキル：バイトクロー・ナイトメア"
+            },
+            "135110015": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1351006, Prop:1001}"
+            },
+            "135110016": {
+                "Description": "とどめの一撃ダメージ倍率",
+                "Param": "{Skill:1351007, Prop:1001}"
+            },
+            "135110017": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1351006, Prop:1002}"
+            },
+            "135110018": {
+                "Description": "とどめの一撃ブレイク倍率",
+                "Param": "{Skill:1351007, Prop:1002}"
+            },
+            "135110019": {
+                "Title": "強化特殊スキル：バイトクロー・フラッシュ"
+            },
+            "135110020": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1351008, Prop:1001}"
+            },
+            "135110021": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1351008, Prop:1002}"
+            },
+            "135110022": {
+                "Description": "エネルギー消費",
+                "Param": "60Pt"
+            }
+        },
+        "2": {
+            "135100006": {
+                "Title": "回避：正向反射",
+                "Description": " <IconMap:Icon_Evade> を押して発動：\nダッシュで高速回避する。\nスキル発動中、無敵効果を得る。"
+            },
+            "135100007": {
+                "Title": "ダッシュ攻撃：早いもん勝ち",
+                "Description": "回避時に <IconMap:Icon_Normal> を押して発動：\n前方に突進斬撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。"
+            },
+            "135100008": {
+                "Title": "回避反撃：目には目を",
+                "Description": "<color=#FFFFFF>『極限回避』</color>後に <IconMap:Icon_Normal> を押して発動：\n前方の敵に突き刺しからの高速斬撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。"
+            },
+            "135110023": {
+                "Title": "ダッシュ攻撃：早いもん勝ち"
+            },
+            "135110024": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1351009, Prop:1001}"
+            },
+            "135110025": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1351009, Prop:1002}"
+            },
+            "135110026": {
+                "Title": "回避反撃：目には目を"
+            },
+            "135110027": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1351010, Prop:1001}"
+            },
+            "135110028": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1351010, Prop:1002}"
+            }
+        },
+        "3": {
+            "135100009": {
+                "Title": "連携スキル：びっくりさせた？",
+                "Description": "<color=#FFFFFF>『連携スキル』</color>開始時に、対応するエージェントを選択して発動：\n前方の敵にチャージ射撃を行い、<color=#F0D12B>物理属性ダメージ</color>を大量に与える。\nスキル発動中、無敵効果を得る。"
+            },
+            "135100010": {
+                "Title": "終結スキル：遊びの時間さ",
+                "Description": "デシベルレートが<color=#FFFFFF>『Maximum』</color>に達した時に <IconMap:Icon_UltimateReady> を押して発動：\n前方広範囲の敵に強力な射撃を行い、<color=#F0D12B>物理属性ダメージ</color>を大量に与える。\nスキル発動中、無敵効果を得る。"
+            },
+            "135110029": {
+                "Title": "連携スキル：びっくりさせた？"
+            },
+            "135110030": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1351011, Prop:1001}"
+            },
+            "135110031": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1351011, Prop:1002}"
+            },
+            "135110032": {
+                "Title": "終結スキル：遊びの時間さ"
+            },
+            "135110033": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1351012, Prop:1001}"
+            },
+            "135110034": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1351012, Prop:1002}"
+            }
+        },
+        "6": {
+            "135100012": {
+                "Title": "クイック支援：契約・ボディガード",
+                "Description": "操作しているメンバーが吹き飛ばされた時に、 <IconMap:Icon_Switch> を押して発動：\n前方の敵に突き刺しからの高速斬撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。"
+            },
+            "135100013": {
+                "Title": "回避支援：契約・派遣戦闘員",
+                "Description": "出場中のメンバーが攻撃されそうになった時に、 <IconMap:Icon_Switch> を押して発動：\n敵の攻撃を回避し、<color=#FFFFFF>「極限視界」</color>を発動する。\nスキル発動中、無敵効果を得る。"
+            },
+            "135100014": {
+                "Title": "支援突撃：別料金だよ",
+                "Description": "<color=#FFFFFF>『回避支援』</color>発動後、 <IconMap:Icon_Normal> を押して発動：\n前方に飛び上がった後に発砲し、<color=#F0D12B>物理属性ダメージ</color>を与える。\nスキル発動時、プルクラは<color=#FFFFFF>「支援ポイント」</color>を1Pt消費して<color=#FFFFFF>「猟歩」</color>状態に入る。\nスキル発動中、無敵効果を得る。"
+            },
+            "135110035": {
+                "Title": "クイック支援：契約・ボディガード"
+            },
+            "135110036": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1351013, Prop:1001}"
+            },
+            "135110037": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1351013, Prop:1002}"
+            },
+            "135110038": {
+                "Title": "支援突撃：別料金だよ"
+            },
+            "135110039": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1351014, Prop:1001}"
+            },
+            "135110040": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1351014, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1351001": {
+            "DamageValue": 3570,
+            "DamageGrowth": 330,
+            "DazeValue": 2850,
+            "DazeGrowth": 130
+        },
+        "1351002": {
+            "DamageValue": 9410,
+            "DamageGrowth": 860,
+            "DazeValue": 7530,
+            "DazeGrowth": 350
+        },
+        "1351003": {
+            "DamageValue": 16760,
+            "DamageGrowth": 1530,
+            "DazeValue": 13410,
+            "DazeGrowth": 610
+        },
+        "1351004": {
+            "DamageValue": 13500,
+            "DamageGrowth": 1230,
+            "DazeValue": 10800,
+            "DazeGrowth": 500
+        },
+        "1351005": {
+            "DamageValue": 2510,
+            "DamageGrowth": 230,
+            "DazeValue": 5010,
+            "DazeGrowth": 230
+        },
+        "1351006": {
+            "DamageValue": 4630,
+            "DamageGrowth": 430,
+            "DazeValue": 2900,
+            "DazeGrowth": 140
+        },
+        "1351007": {
+            "DamageValue": 5350,
+            "DamageGrowth": 490,
+            "DazeValue": 3480,
+            "DazeGrowth": 160
+        },
+        "1351008": {
+            "DamageValue": 34770,
+            "DamageGrowth": 3170,
+            "DazeValue": 21170,
+            "DazeGrowth": 970
+        },
+        "1351009": {
+            "DamageValue": 4830,
+            "DamageGrowth": 440,
+            "DazeValue": 2420,
+            "DazeGrowth": 110
+        },
+        "1351010": {
+            "DamageValue": 20180,
+            "DamageGrowth": 1840,
+            "DazeValue": 17830,
+            "DazeGrowth": 820
+        },
+        "1351011": {
+            "DamageValue": 53410,
+            "DamageGrowth": 4860,
+            "DazeValue": 13510,
+            "DazeGrowth": 620
+        },
+        "1351012": {
+            "DamageValue": 139380,
+            "DamageGrowth": 12680,
+            "DazeValue": 88230,
+            "DazeGrowth": 4020
+        },
+        "1351013": {
+            "DamageValue": 7830,
+            "DamageGrowth": 720,
+            "DazeValue": 7830,
+            "DazeGrowth": 360
+        },
+        "1351014": {
+            "DamageValue": 30710,
+            "DamageGrowth": 2800,
+            "DazeValue": 26530,
+            "DazeGrowth": 1210
+        }
+    }
+}

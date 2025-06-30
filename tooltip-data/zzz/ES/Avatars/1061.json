@@ -1,0 +1,502 @@
+{
+    "Name": "Corin",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Herida abierta",
+            "Description": "Al golpear al enemigo con una <color=#FFFFFF>técnica en cadena</color> o una <color=#FFFFFF>técnica definitiva</color>, aumenta el daño infligido al objetivo en un 12 % durante 15 s.",
+            "Lore": "«¡Ella siempre dice que debemos concentrarnos en lo que hacemos y no dejar que lo de afuera nos distraiga! ¡Lo logré! ¡Después de practicar durante tanto tiempo! ¿Lo viste?»"
+        },
+        "2": {
+            "Title": "Efecto pirolítico",
+            "Description": "Al golpear al enemigo con una <color=#FFFFFF>técnica especial EX</color>, una <color=#FFFFFF>técnica en cadena</color> o una <color=#FFFFFF>técnica definitiva</color>, reduce la <color=#F0D12B>resistencia física</color> del objetivo en un 0.5 % durante 5 s. Pueden acumularse hasta 20 cargas. La duración de cada carga es independiente.",
+            "Lore": "«Perdone, señor o señora etérea, ¡pero tengo trabajo que hacer! ¡Le ruego que me disculpe!».\nUn sentimiento de culpa genuino embarga a Corin, quien se disculpa sinceramente con los monstruos mientras sostiene la motosierra y extermina a los enemigos."
+        },
+        "3": {
+            "Title": "Empleada doméstica principiante",
+            "Description": "Nivel de <color=#FFFFFF>ataque normal</color>, <color=#FFFFFF>evasión</color>, <color=#FFFFFF>técnica de apoyo</color>, <color=#FFFFFF>técnica especial</color> y <color=#FFFFFF>técnica en cadena</color> +2",
+            "Lore": "«¡M-me esforzaré por convertirme en una buena empleada doméstica!», exclamó Corin mientras avanzaba hacia el ser etéreo, con sierra en mano."
+        },
+        "4": {
+            "Title": "Empleada de batalla",
+            "Description": "Al usar un <color=#FFFFFF>apoyo rápido</color>, un <color=#FFFFFF>apoyo defensivo</color> o una <color=#FFFFFF>técnica en cadena</color>, Corin recupera 7.2 ptos. de energía. Puede activarse una vez cada 16 s.",
+            "Lore": "Una empleada doméstica diligente que se esfuerza en todo lo que hace.\nPor supuesto, eso incluye deshacerse de los enemigos en combate."
+        },
+        "5": {
+            "Title": "Empleada doméstica de operaciones encubiertas",
+            "Description": "Nivel de <color=#FFFFFF>ataque normal</color>, <color=#FFFFFF>evasión</color>, <color=#FFFFFF>técnica de apoyo</color>, <color=#FFFFFF>técnica especial</color> y <color=#FFFFFF>técnica en cadena</color> +2",
+            "Lore": "«Oh, l-lo siento. Soy demasiado torpe y me tiembla un poco la mano al cortar...», exclamaba Corin desanimada mientras contemplaba los pedazos de ser etéreo en el suelo."
+        },
+        "6": {
+            "Title": "Preparada para todo",
+            "Description": "Al golpear a un enemigo con un corte continuo, Corin obtiene 1 carga energizante (pueden acumularse hasta 40 cargas). Al ejecutar un <color=#FFFFFF>contraataque</color>, una <color=#FFFFFF>técnica especial</color>, una <color=#FFFFFF>técnica especial EX</color>, un <color=#FFFFFF>apoyo rápido</color> o un <color=#FFFFFF>ataque sucesivo</color> y golpear a un enemigo con el estallido de su motosierra, consume todas sus cargas energizantes. Por cada una de ellas aumenta el daño en un 3 % de su Ataque.",
+            "Lore": "Corin sabe que tal vez no es la empleada doméstica más hábil ni la más inteligente, pero ella aspira a ser la más diligente de todas. Y para ello, pone toda su experiencia en práctica."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Técnica pasiva: Concentración",
+            "DescriptionByLevel": {
+                "1": "Tras pulsar repetidas veces o mantener pulsado, al ejecutar un corte continuo con la motosierra, aumenta el daño infligido en un <color=#2BAD00>18.7 </color>%.",
+                "2": "Tras pulsar repetidas veces o mantener pulsado, al ejecutar un corte continuo con la motosierra, aumenta el daño infligido en un <color=#2BAD00>21.8 </color>%.",
+                "3": "Tras pulsar repetidas veces o mantener pulsado, al ejecutar un corte continuo con la motosierra, aumenta el daño infligido en un <color=#2BAD00>25 </color>%.",
+                "4": "Tras pulsar repetidas veces o mantener pulsado, al ejecutar un corte continuo con la motosierra, aumenta el daño infligido en un <color=#2BAD00>28.1 </color>%.",
+                "5": "Tras pulsar repetidas veces o mantener pulsado, al ejecutar un corte continuo con la motosierra, aumenta el daño infligido en un <color=#2BAD00>31.2 </color>%.",
+                "6": "Tras pulsar repetidas veces o mantener pulsado, al ejecutar un corte continuo con la motosierra, aumenta el daño infligido en un <color=#2BAD00>34.3 </color>%.",
+                "7": "Tras pulsar repetidas veces o mantener pulsado, al ejecutar un corte continuo con la motosierra, aumenta el daño infligido en un <color=#2BAD00>37.5 </color>%."
+            }
+        },
+        "MathSkill": {
+            "Title": "Técnica adicional: Apoyo de limpieza",
+            "Description": "Si en el equipo hay miembros del mismo Atributo o la misma afiliación que ella:\nCuando Corin golpea a un enemigo afectado por Aturdimiento, aumenta el daño infligido en un 35 %."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "106100001": {
+                "Title": "Ataque normal: ¡A limpiar!",
+                "Description": "{LAYOUT_MOBILE#Pulsa}{LAYOUT_CONTROLLER#Presiona}{LAYOUT_KEYBOARD#Pulsa}{LAYOUT_CONSOLECONTROLLER#Presiona}{LAYOUT_FALLBACK#Presiona} <IconMap:Icon_Normal> para atacar.\nEjecuta hasta 5 cortes hacia delante que infligen <color=#F0D12B>daño físico</color>.\nAl {LAYOUT_MOBILE#pulsar}{LAYOUT_CONTROLLER#presionar}{LAYOUT_KEYBOARD#pulsar}{LAYOUT_CONSOLECONTROLLER#presionar}{LAYOUT_FALLBACK#presionar} repetidas veces o mantener {LAYOUT_MOBILE#pulsado}{LAYOUT_CONTROLLER#presionado}{LAYOUT_KEYBOARD#pulsado}{LAYOUT_CONSOLECONTROLLER#presionado}{LAYOUT_FALLBACK#presionado} durante el tercer y quinto golpe, puede extender la duración del ataque con motosierra."
+            },
+            "106110001": {
+                "Title": "Ataque normal: ¡A limpiar!"
+            },
+            "106110002": {
+                "Description": "Multiplicador de daño de 1.er golpe",
+                "Param": "{Skill:1061001, Prop:1001}"
+            },
+            "106110003": {
+                "Description": "Multiplicador de daño de 2.º golpe",
+                "Param": "{Skill:1061002, Prop:1001}"
+            },
+            "106110004": {
+                "Description": "Multiplicador de daño de 3.er golpe",
+                "Param": "{Skill:1061003, Prop:1001}"
+            },
+            "106110005": {
+                "Description": "Multiplicador de daño de 4.º golpe",
+                "Param": "{Skill:1061004, Prop:1001}"
+            },
+            "106110006": {
+                "Description": "Multiplicador de daño de 5.º golpe",
+                "Param": "{Skill:1061006, Prop:1001}"
+            },
+            "106110007": {
+                "Description": "Multiplicador de Aturdimiento de 1.er golpe",
+                "Param": "{Skill:1061001, Prop:1002}"
+            },
+            "106110008": {
+                "Description": "Multiplicador de Aturdimiento de 2.º golpe",
+                "Param": "{Skill:1061002, Prop:1002}"
+            },
+            "106110009": {
+                "Description": "Multiplicador de Aturdimiento de 3.er golpe",
+                "Param": "{Skill:1061003, Prop:1002}"
+            },
+            "106110010": {
+                "Description": "Multiplicador de Aturdimiento de 4.º golpe",
+                "Param": "{Skill:1061004, Prop:1002}"
+            },
+            "106110011": {
+                "Description": "Multiplicador de Aturdimiento de 5.º golpe",
+                "Param": "{Skill:1061006, Prop:1002}"
+            }
+        },
+        "1": {
+            "106100002": {
+                "Title": "Técnica especial: Limpieza profunda",
+                "Description": "{LAYOUT_MOBILE#Pulsa}{LAYOUT_CONTROLLER#Presiona}{LAYOUT_KEYBOARD#Pulsa}{LAYOUT_CONSOLECONTROLLER#Presiona}{LAYOUT_FALLBACK#Presiona} <IconMap:Icon_Special> para usarla.\nEjecuta un corte continuo hacia delante y a continuación estalla su motosierra, infligiendo <color=#F0D12B>daño físico</color>.\nAl {LAYOUT_MOBILE#pulsar}{LAYOUT_CONTROLLER#presionar}{LAYOUT_KEYBOARD#pulsar}{LAYOUT_CONSOLECONTROLLER#presionar}{LAYOUT_FALLBACK#presionar} repetidas veces o mantener {LAYOUT_MOBILE#pulsado}{LAYOUT_CONTROLLER#presionado}{LAYOUT_KEYBOARD#pulsado}{LAYOUT_CONSOLECONTROLLER#presionado}{LAYOUT_FALLBACK#presionado}, puede extender la duración del ataque con motosierra.\nDurante su ejecución, aumenta el nivel de resistencia a interrupción y reduce el daño recibido en un 40 %."
+            },
+            "106100003": {
+                "Title": "Técnica especial EX: ¡Cuidado con la falda!",
+                "Description": "Al contar con energía suficiente, {LAYOUT_MOBILE#pulsa}{LAYOUT_CONTROLLER#presiona}{LAYOUT_KEYBOARD#pulsa}{LAYOUT_CONSOLECONTROLLER#presiona}{LAYOUT_FALLBACK#presiona} <IconMap:Icon_SpecialReady> para usarla.\nEjecuta un poderoso corte continuo y a continuación estalla su motosierra, infligiendo una gran cantidad de <color=#F0D12B>daño físico</color>.\nAl {LAYOUT_MOBILE#pulsar}{LAYOUT_CONTROLLER#presionar}{LAYOUT_KEYBOARD#pulsar}{LAYOUT_CONSOLECONTROLLER#presionar}{LAYOUT_FALLBACK#presionar} repetidas veces o mantener {LAYOUT_MOBILE#pulsado}{LAYOUT_CONTROLLER#presionado}{LAYOUT_KEYBOARD#pulsado}{LAYOUT_CONSOLECONTROLLER#presionado}{LAYOUT_FALLBACK#presionado}, consume energía para extender la duración del ataque.\nDurante la ejecución del corte ciclónico, la agente se vuelve invulnerable.\nDurante los cortes continuos, aumenta el nivel de resistencia a interrupción y reduce el daño recibido en un 40 %."
+            },
+            "106110012": {
+                "Title": "Técnica especial: Limpieza profunda"
+            },
+            "106110013": {
+                "Description": "Multiplicador de daño de corte ciclónico",
+                "Param": "{Skill:1061008, Prop:1001}"
+            },
+            "106110014": {
+                "Description": "Multiplicador de daño de cortes continuos",
+                "Param": "{Skill:1061009, Prop:1001}"
+            },
+            "106110015": {
+                "Description": "Multiplicador de daño de estallido",
+                "Param": "{Skill:1061010, Prop:1001}"
+            },
+            "106110016": {
+                "Description": "Multiplicador de Aturdimiento de corte ciclónico",
+                "Param": "{Skill:1061008, Prop:1002}"
+            },
+            "106110017": {
+                "Description": "Multiplicador de Aturdimiento de cortes continuos",
+                "Param": "{Skill:1061009, Prop:1002}"
+            },
+            "106110018": {
+                "Description": "Multiplicador de Aturdimiento de estallido",
+                "Param": "{Skill:1061010, Prop:1002}"
+            },
+            "106110019": {
+                "Title": "Técnica especial EX: ¡Cuidado con la falda!"
+            },
+            "106110020": {
+                "Description": "Multiplicador de daño de corte ciclónico",
+                "Param": "{Skill:1061011, Prop:1001}"
+            },
+            "106110021": {
+                "Description": "Multiplicador de daño de cortes continuos",
+                "Param": "{Skill:1061012, Prop:1001}"
+            },
+            "106110022": {
+                "Description": "Multiplicador de daño de estallido",
+                "Param": "{Skill:1061013, Prop:1001}"
+            },
+            "106110023": {
+                "Description": "Multiplicador de Aturdimiento de corte ciclónico",
+                "Param": "{Skill:1061011, Prop:1002}"
+            },
+            "106110024": {
+                "Description": "Multiplicador de Aturdimiento de cortes continuos",
+                "Param": "{Skill:1061012, Prop:1002}"
+            },
+            "106110025": {
+                "Description": "Multiplicador de Aturdimiento de estallido",
+                "Param": "{Skill:1061013, Prop:1002}"
+            },
+            "106110026": {
+                "Description": "Consumo de energía de corte ciclónico",
+                "Param": "20 ptos."
+            },
+            "106110027": {
+                "Description": "Consumo de energía de cortes continuos",
+                "Param": "40 ptos."
+            },
+            "106110028": {
+                "Description": "Consumo de energía de estallido",
+                "Param": "20 ptos."
+            }
+        },
+        "2": {
+            "106100004": {
+                "Title": "Evasión: ¡Fuera!",
+                "Description": "{LAYOUT_MOBILE#Pulsa}{LAYOUT_CONTROLLER#Presiona}{LAYOUT_KEYBOARD#Pulsa}{LAYOUT_FALLBACK#Presiona} <IconMap:Icon_Evade> para usarla.\nEjecuta un rápido esprint evasivo.\nDurante su ejecución, la agente se vuelve invulnerable."
+            },
+            "106100005": {
+                "Title": "Ataque rápido: ¡Ups!",
+                "Description": "{LAYOUT_MOBILE#Pulsa}{LAYOUT_CONTROLLER#Presiona}{LAYOUT_KEYBOARD#Pulsa}{LAYOUT_CONSOLECONTROLLER#Presiona}{LAYOUT_FALLBACK#Presiona} <IconMap:Icon_Normal> durante una evasión para usarlo.\nEjecuta un corte hacia delante que inflige <color=#F0D12B>daño físico</color>.\nAl {LAYOUT_MOBILE#pulsar}{LAYOUT_CONTROLLER#presionar}{LAYOUT_KEYBOARD#pulsar}{LAYOUT_CONSOLECONTROLLER#presionar}{LAYOUT_FALLBACK#presionar} repetidas veces o mantener {LAYOUT_MOBILE#pulsado}{LAYOUT_CONTROLLER#presionado}{LAYOUT_KEYBOARD#pulsado}{LAYOUT_CONSOLECONTROLLER#presionado}{LAYOUT_FALLBACK#presionado}, puedes extender la duración del ataque con motosierra."
+            },
+            "106100006": {
+                "Title": "Contraataque: ¡Nop!",
+                "Description": "{LAYOUT_MOBILE#Pulsa}{LAYOUT_CONTROLLER#Presiona}{LAYOUT_KEYBOARD#Pulsa}{LAYOUT_CONSOLECONTROLLER#Presiona}{LAYOUT_FALLBACK#Presiona} <IconMap:Icon_Normal> después de una <color=#FFFFFF>evasión perfecta</color> para usarlo.\nEjecuta un corte y a continuación estalla su motosierra, infligiendo <color=#F0D12B>daño físico</color> a los enemigos frente a ella.\nAl {LAYOUT_MOBILE#pulsar}{LAYOUT_CONTROLLER#presionar}{LAYOUT_KEYBOARD#pulsar}{LAYOUT_CONSOLECONTROLLER#presionar}{LAYOUT_FALLBACK#presionar} repetidas veces o mantener {LAYOUT_MOBILE#pulsado}{LAYOUT_CONTROLLER#presionado}{LAYOUT_KEYBOARD#pulsado}{LAYOUT_CONSOLECONTROLLER#presionado}{LAYOUT_FALLBACK#presionado}, puedes extender la duración del ataque con motosierra.\nDurante su ejecución, la agente se vuelve invulnerable."
+            },
+            "106110029": {
+                "Title": "Ataque rápido: ¡Ups!"
+            },
+            "106110030": {
+                "Description": "Multiplicador de daño máx.",
+                "Param": "{Skill:1061014, Prop:1001}"
+            },
+            "106110031": {
+                "Description": "Multiplicador de Aturdimiento máx.",
+                "Param": "{Skill:1061014, Prop:1002}"
+            },
+            "106110032": {
+                "Title": "Contraataque: ¡Nop!"
+            },
+            "106110033": {
+                "Description": "Multiplicador de daño",
+                "Param": "{{Skill:1061015, Prop:1001} + {Skill:1061016, Prop:1001}}"
+            },
+            "106110034": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{{Skill:1061015, Prop:1002} + {Skill:1061016, Prop:1002}}"
+            }
+        },
+        "3": {
+            "106100007": {
+                "Title": "Técnica en cadena: Lo siento...",
+                "Description": "Elige el avatar de agente al ejecutar una <color=#FFFFFF>técnica en cadena</color> para usarla.\nEjecuta un poderoso corte frontal que inflige una gran cantidad de <color=#F0D12B>daño físico</color> a los enemigos en un AdE pequeña frente a ella.\nAl {LAYOUT_MOBILE#pulsar}{LAYOUT_CONTROLLER#presionar}{LAYOUT_KEYBOARD#pulsar}{LAYOUT_CONSOLECONTROLLER#presionar}{LAYOUT_FALLBACK#presionar} repetidas veces o mantener {LAYOUT_MOBILE#pulsado}{LAYOUT_CONTROLLER#presionado}{LAYOUT_KEYBOARD#pulsado}{LAYOUT_CONSOLECONTROLLER#presionado}{LAYOUT_FALLBACK#presionado}, puedes extender la duración del ataque con motosierra.\nDurante su ejecución, la agente se vuelve invulnerable."
+            },
+            "106100008": {
+                "Title": "Técnica definitiva: ¡Lo siento mucho!",
+                "Description": "Cuando los dB llegan a su nivel <color=#FFFFFF>máximo</color>, {LAYOUT_MOBILE#pulsa}{LAYOUT_CONTROLLER#presiona}{LAYOUT_KEYBOARD#pulsa}{LAYOUT_CONSOLECONTROLLER#presiona}{LAYOUT_FALLBACK#presiona} <IconMap:Icon_UltimateReady> para usarla.\nEjecuta un poderoso corte frontal que inflige una gran cantidad de <color=#F0D12B>daño físico</color> a los enemigos en un AdE pequeña frente a ella.\nAl {LAYOUT_MOBILE#pulsar}{LAYOUT_CONTROLLER#presionar}{LAYOUT_KEYBOARD#pulsar}{LAYOUT_CONSOLECONTROLLER#presionar}{LAYOUT_FALLBACK#presionar} repetidas veces o mantener {LAYOUT_MOBILE#pulsado}{LAYOUT_CONTROLLER#presionado}{LAYOUT_KEYBOARD#pulsado}{LAYOUT_CONSOLECONTROLLER#presionado}{LAYOUT_FALLBACK#presionado}, puedes extender la duración del ataque con motosierra.\nDurante su ejecución, la agente se vuelve invulnerable."
+            },
+            "106110035": {
+                "Title": "Técnica en cadena: Lo siento..."
+            },
+            "106110036": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1061017, Prop:1001}"
+            },
+            "106110037": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1061017, Prop:1002}"
+            },
+            "106110038": {
+                "Title": "Técnica definitiva: ¡Lo siento mucho!"
+            },
+            "106110039": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1061018, Prop:1001}"
+            },
+            "106110040": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1061018, Prop:1002}"
+            }
+        },
+        "6": {
+            "106100010": {
+                "Title": "Apoyo rápido: Medidas de emergencia",
+                "Description": "Pulsa <IconMap:Icon_Switch> para usarlo cuando el agente activo sea lanzado por los aires.\nEjecuta un corte contra los enemigos frente a ella y a continuación estalla su motosierra, infligiendo <color=#F0D12B>daño físico</color>.\nPulsa repetidamente o mantén pulsado para extender la duración del ataque con motosierra.\nDurante su ejecución, la agente se vuelve invulnerable."
+            },
+            "106100011": {
+                "Title": "Apoyo defensivo: ¡Y-yo lo hago!",
+                "Description": "{LAYOUT_MOBILE#Pulsa}{LAYOUT_CONTROLLER#Presiona}{LAYOUT_KEYBOARD#Pulsa}{LAYOUT_CONSOLECONTROLLER#Presiona}{LAYOUT_FALLBACK#Presiona} <IconMap:Icon_Switch> para usarlo cuando el agente activo esté a punto de recibir un golpe.\nBloquea el ataque enemigo, provocando una gran cantidad de Aturdimiento.\nAdquiere una gran capacidad de resistencia, por lo que, al recibir un golpe fuerte, reduce los <color=#FFFFFF>puntos de apoyo</color> consumidos.\nDurante su ejecución, la agente se vuelve invulnerable."
+            },
+            "106100012": {
+                "Title": "Ataque sucesivo: Limpieza rápida",
+                "Description": "{LAYOUT_MOBILE#Pulsa}{LAYOUT_CONTROLLER#Presiona}{LAYOUT_KEYBOARD#Pulsa}{LAYOUT_CONSOLECONTROLLER#Presiona}{LAYOUT_FALLBACK#Presiona} <IconMap:Icon_Normal> después de un <color=#FFFFFF>apoyo defensivo</color> para usarlo.\nEjecuta cortes continuos seguidos de un estallido de su motosierra, los cuales infligen <color=#F0D12B>daño físico</color> a los enemigos frente a ella.\nAl {LAYOUT_MOBILE#pulsar}{LAYOUT_CONTROLLER#presionar}{LAYOUT_KEYBOARD#pulsar}{LAYOUT_CONSOLECONTROLLER#presionar}{LAYOUT_FALLBACK#presionar} repetidas veces o mantener {LAYOUT_MOBILE#pulsado}{LAYOUT_CONTROLLER#presionado}{LAYOUT_KEYBOARD#pulsado}{LAYOUT_CONSOLECONTROLLER#presionado}{LAYOUT_FALLBACK#presionado}, puedes extender la duración del ataque con motosierra.\nDurante su ejecución, la agente se vuelve invulnerable."
+            },
+            "106110041": {
+                "Title": "Apoyo rápido: Medidas de emergencia"
+            },
+            "106110042": {
+                "Description": "Multiplicador de daño",
+                "Param": "{{Skill:1061019, Prop:1001} + {Skill:1061020, Prop:1001}}"
+            },
+            "106110043": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{{Skill:1061019, Prop:1002} + {Skill:1061020, Prop:1002}}"
+            },
+            "106110044": {
+                "Title": "Apoyo defensivo: ¡Y-yo lo hago!"
+            },
+            "106110045": {
+                "Description": "Multiplicador de Aturdimiento defensivo ligero",
+                "Param": "{Skill:1061021, Prop:1002}"
+            },
+            "106110046": {
+                "Description": "Multiplicador de Aturdimiento defensivo fuerte",
+                "Param": "{Skill:1061022, Prop:1002}"
+            },
+            "106110047": {
+                "Description": "Multiplicador de Aturdimiento defensivo continuo",
+                "Param": "{Skill:1061023, Prop:1002}"
+            },
+            "106110048": {
+                "Title": "Ataque sucesivo: Limpieza rápida"
+            },
+            "106110049": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1061024, Prop:1001}"
+            },
+            "106110050": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1061024, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1061001": {
+            "DamageValue": 8200,
+            "DamageGrowth": 750,
+            "DazeValue": 4100,
+            "DazeGrowth": 190
+        },
+        "1061002": {
+            "DamageValue": 7660,
+            "DamageGrowth": 700,
+            "DazeValue": 7020,
+            "DazeGrowth": 320
+        },
+        "1061003": {
+            "DamageValue": 17920,
+            "DamageGrowth": 1630,
+            "DazeValue": 12380,
+            "DazeGrowth": 570
+        },
+        "1061004": {
+            "DamageValue": 23340,
+            "DamageGrowth": 2130,
+            "DazeValue": 18640,
+            "DazeGrowth": 850
+        },
+        "1061005": {
+            "DamageValue": 11690,
+            "DamageGrowth": 1070,
+            "DazeValue": 8630,
+            "DazeGrowth": 400
+        },
+        "1061006": {
+            "DamageValue": 42120,
+            "DamageGrowth": 3830,
+            "DazeValue": 34200,
+            "DazeGrowth": 1560
+        },
+        "1061007": {
+            "DamageValue": 12460,
+            "DamageGrowth": 1140,
+            "DazeValue": 9580,
+            "DazeGrowth": 440
+        },
+        "1061008": {
+            "DamageValue": 6670,
+            "DamageGrowth": 610,
+            "DazeValue": 6670,
+            "DazeGrowth": 310
+        },
+        "1061009": {
+            "DamageValue": 3750,
+            "DamageGrowth": 350,
+            "DazeValue": 3750,
+            "DazeGrowth": 180
+        },
+        "1061010": {
+            "DamageValue": 2500,
+            "DamageGrowth": 230,
+            "DazeValue": 2500,
+            "DazeGrowth": 120
+        },
+        "1061011": {
+            "DamageValue": 34510,
+            "DamageGrowth": 3140,
+            "DazeValue": 20640,
+            "DazeGrowth": 940
+        },
+        "1061012": {
+            "DamageValue": 103520,
+            "DamageGrowth": 9420,
+            "DazeValue": 61900,
+            "DazeGrowth": 2820
+        },
+        "1061013": {
+            "DamageValue": 34510,
+            "DamageGrowth": 3140,
+            "DazeValue": 20640,
+            "DazeGrowth": 940
+        },
+        "1061014": {
+            "DamageValue": 9670,
+            "DamageGrowth": 880,
+            "DazeValue": 4840,
+            "DazeGrowth": 220
+        },
+        "1061015": {
+            "DamageValue": 13560,
+            "DamageGrowth": 1240,
+            "DazeValue": 6590,
+            "DazeGrowth": 300
+        },
+        "1061016": {
+            "DamageValue": 13560,
+            "DamageGrowth": 1240,
+            "DazeValue": 6590,
+            "DazeGrowth": 300
+        },
+        "1061017": {
+            "DamageValue": 68730,
+            "DamageGrowth": 6250,
+            "DazeValue": 28830,
+            "DazeGrowth": 1320
+        },
+        "1061018": {
+            "DamageValue": 202880,
+            "DamageGrowth": 18450,
+            "DazeValue": 40680,
+            "DazeGrowth": 1850
+        },
+        "1061019": {
+            "DamageValue": 13170,
+            "DamageGrowth": 1200,
+            "DazeValue": 13170,
+            "DazeGrowth": 600
+        },
+        "1061020": {
+            "DamageValue": 8330,
+            "DamageGrowth": 760,
+            "DazeValue": 8330,
+            "DazeGrowth": 380
+        },
+        "1061021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 24670,
+            "DazeGrowth": 1130
+        },
+        "1061022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 31170,
+            "DazeGrowth": 1420
+        },
+        "1061023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15170,
+            "DazeGrowth": 690
+        },
+        "1061024": {
+            "DamageValue": 54750,
+            "DamageGrowth": 4980,
+            "DazeValue": 48860,
+            "DazeGrowth": 2230
+        },
+        "1061025": {
+            "DamageValue": 23330,
+            "DamageGrowth": 2130,
+            "DazeValue": 5840,
+            "DazeGrowth": 270
+        },
+        "1061026": {
+            "DamageValue": 43000,
+            "DamageGrowth": 3910,
+            "DazeValue": 10750,
+            "DazeGrowth": 490
+        },
+        "1061027": {
+            "DamageValue": 24350,
+            "DamageGrowth": 2220,
+            "DazeValue": 6090,
+            "DazeGrowth": 280
+        },
+        "1061028": {
+            "DamageValue": 36250,
+            "DamageGrowth": 3300,
+            "DazeValue": 10990,
+            "DazeGrowth": 500
+        },
+        "1061029": {
+            "DamageValue": 72500,
+            "DamageGrowth": 6600,
+            "DazeValue": 21970,
+            "DazeGrowth": 1000
+        },
+        "1061030": {
+            "DamageValue": 72500,
+            "DamageGrowth": 6600,
+            "DazeValue": 21970,
+            "DazeGrowth": 1000
+        },
+        "1061031": {
+            "DamageValue": 36250,
+            "DamageGrowth": 3300,
+            "DazeValue": 10990,
+            "DazeGrowth": 500
+        },
+        "1061032": {
+            "DamageValue": 14040,
+            "DamageGrowth": 0,
+            "DazeValue": 10800,
+            "DazeGrowth": 0
+        },
+        "1061033": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

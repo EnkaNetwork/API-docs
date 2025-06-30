@@ -1,0 +1,490 @@
+{
+    "Name": "Burnice",
+    "ElementTypes": [
+        "Fire"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Unidad ferviente",
+            "Description": "El límite de puntos de <color=#FFFFFF>calor</color> aumenta de 100 ptos. a 140 ptos. Al entrar en combate, Burnice acumula 40 ptos. de <color=#FFFFFF>calor</color> adicionales. El multiplicador de daño del efecto de <color=#FFFFFF>rescoldo</color> aumenta en una cantidad equivalente al 100 % del Ataque de Burnice. Además, la <color=#FF5521>acumulación de Anomalía ígnea</color> del efecto de <color=#FFFFFF>rescoldo</color> aumenta en un 25 %.",
+            "Lore": "«¡Todos pasamos por malos momentos! ¡Es lo más normal del mundo! ¡Alegra esa cara, César! ¿Te apetece un especial de Nitrocombustible? ¡Le he puesto un montón de azúcar!»"
+        },
+        "2": {
+            "Title": "¡Invita la casa!",
+            "Description": "Al provocar el efecto de <color=#FFFFFF>rescoldo</color>, se aplica <color=#FFFFFF>perforación térmica</color> al enemigo durante 6 s. Pueden acumularse hasta 5 cargas de este efecto. La duración se reinicia con cada activación. Cuando cualquier unidad aliada golpea al enemigo con un ataque, por cada carga de <color=#FFFFFF>perforación térmica</color> que tenga el objetivo, la Tasa de Perforación del ataque aumenta en un 4 %, hasta un máximo de un 20 %.",
+            "Lore": "Como experta en cócteles de los Hijos de Calidón, Burnice está orgullosa de elaborar el Nitrocombustible más delicioso de Nueva Eridu para todos sus amigos. Ahora bien, si no estás de su parte... tendrás el honor de catar en primicia todos sus nuevos brebajes.\n«¡Esta es una delicia que solo podrás probar una sola vez en la vida!»"
+        },
+        "3": {
+            "Title": "Optimismo innato",
+            "Description": "Nivel de <color=#FFFFFF>ataque normal</color>, <color=#FFFFFF>evasión</color>, <color=#FFFFFF>técnica de apoyo</color>, <color=#FFFFFF>técnica especial</color> y <color=#FFFFFF>técnica en cadena</color> +2",
+            "Lore": "«Esa tal Burnice, ¡no importa cuándo la veas, siempre irradia vitalidad! ¡Incluso cuando se acaba de levantar! De verdad, no sé de dónde saca toda esa energía. ¡Y lo peor es que también es capaz de transmitir todo ese ímpetu a la gente que la rodea! ¡Es como si fuera un monstruo o algo parecido! Aunque... Tampoco puedo decir que me disguste...»\n—Un jabalí gerente que desea permanecer en el anonimato."
+        },
+        "4": {
+            "Title": "Reserva de combustible suprema",
+            "Description": "Al golpear a un enemigo con una <color=#FFFFFF>técnica especial EX</color> o un <color=#FFFFFF>ataque de apoyo</color>, la Probabilidad de Crítico de la habilidad aumenta en un 30 %. La duración del torrente de llamas de la <color=#FFFFFF>técnica especial EX: Agitado comburente doble</color> aumenta en 1 s.",
+            "Lore": "«¿Te gusta esta mezcla que he hecho? ¡Muchas gracias! A Colmillo de Acero también le encanta. ¡El tipo puede engullir hasta 200 litros de un trago! ¡Ah, Colmillo de Acero es nuestro increíble camión! ¿Te apetece probar su combustible especial? ¡Arde a más no poder!»"
+        },
+        "5": {
+            "Title": "Danza de fuego y hielo",
+            "Description": "Nivel de <color=#FFFFFF>ataque normal</color>, <color=#FFFFFF>evasión</color>, <color=#FFFFFF>técnica de apoyo</color>, <color=#FFFFFF>técnica especial</color> y <color=#FFFFFF>técnica en cadena</color> +2",
+            "Lore": "El hielo es un elemento crucial al mezclar las bebidas. Al fin y al cabo, sin esa sensación de frío, es difícil que destaque el ardor.\n«Esa fusión de fuego y hielo... ¡Eso sí que es adictivo!»"
+        },
+        "6": {
+            "Title": "Invitación eruptiva",
+            "Description": "Cuando Burnice golpea a un enemigo con la <color=#FFFFFF>técnica especial EX: Agitado comburente doble</color>, provoca adicionalmente un efecto de <color=#FFFFFF>rescoldo</color> especial, infligiendo al objetivo <color=#FF5521>daño ígneo</color> equivalente al 60 % del Ataque de Burnice sin necesidad de consumir <color=#FFFFFF>calor</color>. Puede activarse una vez cada 0.5 s. Tras golpear a un enemigo con la <color=#FFFFFF>técnica especial EX: Agitado comburente doble</color>, durante su ejecución, la <color=#FFFFFF>técnica especial EX: Agitado comburente doble</color>, el efecto especial de <color=#FFFFFF>rescoldo</color> y el efecto de <color=#FF5521>calcinación</color> ignoran un 25 % de la <color=#FF5521>resistencia ígnea</color> del objetivo. Al golpear con el estallido de fuego de la <color=#FFFFFF>técnica especial EX: Agitado comburente doble</color> a un enemigo afectado por <color=#FF5521>calcinación</color>, inflige daño de <color=#FF5521>calcinación</color> adicional equivalente a un 1800 % del daño original. Puede activarse una vez cada 20 s contra un mismo objetivo.",
+            "Lore": "Al parecer, nadie ha visto nunca a Burnice enfadarse de verdad.\n«Créeme, dudo que nadie quiera verlo.»\n—Un conductor, preparándose para irse a dormir sobre Colmillo de Acero."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Técnica pasiva: Nitrocóctel",
+            "DescriptionByLevel": {
+                "1": "Cuando Burnice consume energía, acumula hasta un máximo de 100 ptos. de <color=#FFFFFF>calor</color>. Por cada punto de energía consumido, acumula 1.4 ptos. de <color=#FFFFFF>calor</color>. Al acumular 50 ptos. de <color=#FFFFFF>calor</color>, Burnice entra en el estado de <color=#FFFFFF>nitrocóctel</color> hasta consumir todos los ptos. de <color=#FFFFFF>calor</color>. Al entrar en combate, obtiene inmediatamente 100 ptos. de <color=#FFFFFF>calor</color>.\nCuando Burnice se encuentra en el estado de <color=#FFFFFF>nitrocóctel</color>, al golpear a un enemigo con el <color=#FFFFFF>ataque normal: Cóctel flambeado mezclado</color>, la <color=#FFFFFF>técnica especial EX: Agitado comburente</color>, la <color=#FFFFFF>técnica especial EX: Agitado comburente doble</color>, la <color=#FFFFFF>técnica en cadena: Llama carburada</color> o la <color=#FFFFFF>técnica definitiva: Paraíso estigio</color>, provoca en el objetivo el estado de <color=#FFFFFF>abrasión</color> hasta que Burnice salga del estado de <color=#FFFFFF>nitrocóctel</color>. Cuando otros miembros del equipo golpean a un enemigo en el estado de <color=#FFFFFF>abrasión</color>, provocan el efecto de <color=#FFFFFF>rescoldo</color>, consumiendo 8 ptos. de <color=#FFFFFF>calor</color> para infligir <color=#FF5521>daño ígneo</color> equivalente al <color=#2BAD00>175 %</color> del Ataque de Burnice y aumentar la <color=#FF5521>acumulación de Anomalía ígnea</color>. Puede activarse una vez cada 1.5 s. Por cada 10 ptos. de Maestría de Anomalía, el daño infligido por el efecto de <color=#FFFFFF>rescoldo</color> aumenta en un 1 %, hasta un máximo de un 30 %. El daño infligido por el efecto de <color=#FFFFFF>rescoldo</color> se considera daño del <color=#FFFFFF>ataque de apoyo</color>.",
+                "2": "Cuando Burnice consume energía, acumula hasta un máximo de 100 ptos. de <color=#FFFFFF>calor</color>. Por cada punto de energía consumido, acumula 1.4 ptos. de <color=#FFFFFF>calor</color>. Al acumular 50 ptos. de <color=#FFFFFF>calor</color>, Burnice entra en el estado de <color=#FFFFFF>nitrocóctel</color> hasta consumir todos los ptos. de <color=#FFFFFF>calor</color>. Al entrar en combate, obtiene inmediatamente 100 ptos. de <color=#FFFFFF>calor</color>.\nCuando Burnice se encuentra en el estado de <color=#FFFFFF>nitrocóctel</color>, al golpear a un enemigo con el <color=#FFFFFF>ataque normal: Cóctel flambeado mezclado</color>, la <color=#FFFFFF>técnica especial EX: Agitado comburente</color>, la <color=#FFFFFF>técnica especial EX: Agitado comburente doble</color>, la <color=#FFFFFF>técnica en cadena: Llama carburada</color> o la <color=#FFFFFF>técnica definitiva: Paraíso estigio</color>, provoca en el objetivo el estado de <color=#FFFFFF>abrasión</color> hasta que Burnice salga del estado de <color=#FFFFFF>nitrocóctel</color>. Cuando otros miembros del equipo golpean a un enemigo en el estado de <color=#FFFFFF>abrasión</color>, provocan el efecto de <color=#FFFFFF>rescoldo</color>, consumiendo 8 ptos. de <color=#FFFFFF>calor</color> para infligir <color=#FF5521>daño ígneo</color> equivalente al <color=#2BAD00>205 %</color> del Ataque de Burnice y aumentar la <color=#FF5521>acumulación de Anomalía ígnea</color>. Puede activarse una vez cada 1.5 s. Por cada 10 ptos. de Maestría de Anomalía, el daño infligido por el efecto de <color=#FFFFFF>rescoldo</color> aumenta en un 1 %, hasta un máximo de un 30 %. El daño infligido por el efecto de <color=#FFFFFF>rescoldo</color> se considera daño del <color=#FFFFFF>ataque de apoyo</color>.",
+                "3": "Cuando Burnice consume energía, acumula hasta un máximo de 100 ptos. de <color=#FFFFFF>calor</color>. Por cada punto de energía consumido, acumula 1.4 ptos. de <color=#FFFFFF>calor</color>. Al acumular 50 ptos. de <color=#FFFFFF>calor</color>, Burnice entra en el estado de <color=#FFFFFF>nitrocóctel</color> hasta consumir todos los ptos. de <color=#FFFFFF>calor</color>. Al entrar en combate, obtiene inmediatamente 100 ptos. de <color=#FFFFFF>calor</color>.\nCuando Burnice se encuentra en el estado de <color=#FFFFFF>nitrocóctel</color>, al golpear a un enemigo con el <color=#FFFFFF>ataque normal: Cóctel flambeado mezclado</color>, la <color=#FFFFFF>técnica especial EX: Agitado comburente</color>, la <color=#FFFFFF>técnica especial EX: Agitado comburente doble</color>, la <color=#FFFFFF>técnica en cadena: Llama carburada</color> o la <color=#FFFFFF>técnica definitiva: Paraíso estigio</color>, provoca en el objetivo el estado de <color=#FFFFFF>abrasión</color> hasta que Burnice salga del estado de <color=#FFFFFF>nitrocóctel</color>. Cuando otros miembros del equipo golpean a un enemigo en el estado de <color=#FFFFFF>abrasión</color>, provocan el efecto de <color=#FFFFFF>rescoldo</color>, consumiendo 8 ptos. de <color=#FFFFFF>calor</color> para infligir <color=#FF5521>daño ígneo</color> equivalente al <color=#2BAD00>235 %</color> del Ataque de Burnice y aumentar la <color=#FF5521>acumulación de Anomalía ígnea</color>. Puede activarse una vez cada 1.5 s. Por cada 10 ptos. de Maestría de Anomalía, el daño infligido por el efecto de <color=#FFFFFF>rescoldo</color> aumenta en un 1 %, hasta un máximo de un 30 %. El daño infligido por el efecto de <color=#FFFFFF>rescoldo</color> se considera daño del <color=#FFFFFF>ataque de apoyo</color>.",
+                "4": "Cuando Burnice consume energía, acumula hasta un máximo de 100 ptos. de <color=#FFFFFF>calor</color>. Por cada punto de energía consumido, acumula 1.4 ptos. de <color=#FFFFFF>calor</color>. Al acumular 50 ptos. de <color=#FFFFFF>calor</color>, Burnice entra en el estado de <color=#FFFFFF>nitrocóctel</color> hasta consumir todos los ptos. de <color=#FFFFFF>calor</color>. Al entrar en combate, obtiene inmediatamente 100 ptos. de <color=#FFFFFF>calor</color>.\nCuando Burnice se encuentra en el estado de <color=#FFFFFF>nitrocóctel</color>, al golpear a un enemigo con el <color=#FFFFFF>ataque normal: Cóctel flambeado mezclado</color>, la <color=#FFFFFF>técnica especial EX: Agitado comburente</color>, la <color=#FFFFFF>técnica especial EX: Agitado comburente doble</color>, la <color=#FFFFFF>técnica en cadena: Llama carburada</color> o la <color=#FFFFFF>técnica definitiva: Paraíso estigio</color>, provoca en el objetivo el estado de <color=#FFFFFF>abrasión</color> hasta que Burnice salga del estado de <color=#FFFFFF>nitrocóctel</color>. Cuando otros miembros del equipo golpean a un enemigo en el estado de <color=#FFFFFF>abrasión</color>, provocan el efecto de <color=#FFFFFF>rescoldo</color>, consumiendo 8 ptos. de <color=#FFFFFF>calor</color> para infligir <color=#FF5521>daño ígneo</color> equivalente al <color=#2BAD00>262 %</color> del Ataque de Burnice y aumentar la <color=#FF5521>acumulación de Anomalía ígnea</color>. Puede activarse una vez cada 1.5 s. Por cada 10 ptos. de Maestría de Anomalía, el daño infligido por el efecto de <color=#FFFFFF>rescoldo</color> aumenta en un 1 %, hasta un máximo de un 30 %. El daño infligido por el efecto de <color=#FFFFFF>rescoldo</color> se considera daño del <color=#FFFFFF>ataque de apoyo</color>.",
+                "5": "Cuando Burnice consume energía, acumula hasta un máximo de 100 ptos. de <color=#FFFFFF>calor</color>. Por cada punto de energía consumido, acumula 1.4 ptos. de <color=#FFFFFF>calor</color>. Al acumular 50 ptos. de <color=#FFFFFF>calor</color>, Burnice entra en el estado de <color=#FFFFFF>nitrocóctel</color> hasta consumir todos los ptos. de <color=#FFFFFF>calor</color>. Al entrar en combate, obtiene inmediatamente 100 ptos. de <color=#FFFFFF>calor</color>.\nCuando Burnice se encuentra en el estado de <color=#FFFFFF>nitrocóctel</color>, al golpear a un enemigo con el <color=#FFFFFF>ataque normal: Cóctel flambeado mezclado</color>, la <color=#FFFFFF>técnica especial EX: Agitado comburente</color>, la <color=#FFFFFF>técnica especial EX: Agitado comburente doble</color>, la <color=#FFFFFF>técnica en cadena: Llama carburada</color> o la <color=#FFFFFF>técnica definitiva: Paraíso estigio</color>, provoca en el objetivo el estado de <color=#FFFFFF>abrasión</color> hasta que Burnice salga del estado de <color=#FFFFFF>nitrocóctel</color>. Cuando otros miembros del equipo golpean a un enemigo en el estado de <color=#FFFFFF>abrasión</color>, provocan el efecto de <color=#FFFFFF>rescoldo</color>, consumiendo 8 ptos. de <color=#FFFFFF>calor</color> para infligir <color=#FF5521>daño ígneo</color> equivalente al <color=#2BAD00>290 %</color> del Ataque de Burnice y aumentar la <color=#FF5521>acumulación de Anomalía ígnea</color>. Puede activarse una vez cada 1.5 s. Por cada 10 ptos. de Maestría de Anomalía, el daño infligido por el efecto de <color=#FFFFFF>rescoldo</color> aumenta en un 1 %, hasta un máximo de un 30 %. El daño infligido por el efecto de <color=#FFFFFF>rescoldo</color> se considera daño del <color=#FFFFFF>ataque de apoyo</color>.",
+                "6": "Cuando Burnice consume energía, acumula hasta un máximo de 100 ptos. de <color=#FFFFFF>calor</color>. Por cada punto de energía consumido, acumula 1.4 ptos. de <color=#FFFFFF>calor</color>. Al acumular 50 ptos. de <color=#FFFFFF>calor</color>, Burnice entra en el estado de <color=#FFFFFF>nitrocóctel</color> hasta consumir todos los ptos. de <color=#FFFFFF>calor</color>. Al entrar en combate, obtiene inmediatamente 100 ptos. de <color=#FFFFFF>calor</color>.\nCuando Burnice se encuentra en el estado de <color=#FFFFFF>nitrocóctel</color>, al golpear a un enemigo con el <color=#FFFFFF>ataque normal: Cóctel flambeado mezclado</color>, la <color=#FFFFFF>técnica especial EX: Agitado comburente</color>, la <color=#FFFFFF>técnica especial EX: Agitado comburente doble</color>, la <color=#FFFFFF>técnica en cadena: Llama carburada</color> o la <color=#FFFFFF>técnica definitiva: Paraíso estigio</color>, provoca en el objetivo el estado de <color=#FFFFFF>abrasión</color> hasta que Burnice salga del estado de <color=#FFFFFF>nitrocóctel</color>. Cuando otros miembros del equipo golpean a un enemigo en el estado de <color=#FFFFFF>abrasión</color>, provocan el efecto de <color=#FFFFFF>rescoldo</color>, consumiendo 8 ptos. de <color=#FFFFFF>calor</color> para infligir <color=#FF5521>daño ígneo</color> equivalente al <color=#2BAD00>320 %</color> del Ataque de Burnice y aumentar la <color=#FF5521>acumulación de Anomalía ígnea</color>. Puede activarse una vez cada 1.5 s. Por cada 10 ptos. de Maestría de Anomalía, el daño infligido por el efecto de <color=#FFFFFF>rescoldo</color> aumenta en un 1 %, hasta un máximo de un 30 %. El daño infligido por el efecto de <color=#FFFFFF>rescoldo</color> se considera daño del <color=#FFFFFF>ataque de apoyo</color>.",
+                "7": "Cuando Burnice consume energía, acumula hasta un máximo de 100 ptos. de <color=#FFFFFF>calor</color>. Por cada punto de energía consumido, acumula 1.4 ptos. de <color=#FFFFFF>calor</color>. Al acumular 50 ptos. de <color=#FFFFFF>calor</color>, Burnice entra en el estado de <color=#FFFFFF>nitrocóctel</color> hasta consumir todos los ptos. de <color=#FFFFFF>calor</color>. Al entrar en combate, obtiene inmediatamente 100 ptos. de <color=#FFFFFF>calor</color>.\nCuando Burnice se encuentra en el estado de <color=#FFFFFF>nitrocóctel</color>, al golpear a un enemigo con el <color=#FFFFFF>ataque normal: Cóctel flambeado mezclado</color>, la <color=#FFFFFF>técnica especial EX: Agitado comburente</color>, la <color=#FFFFFF>técnica especial EX: Agitado comburente doble</color>, la <color=#FFFFFF>técnica en cadena: Llama carburada</color> o la <color=#FFFFFF>técnica definitiva: Paraíso estigio</color>, provoca en el objetivo el estado de <color=#FFFFFF>abrasión</color> hasta que Burnice salga del estado de <color=#FFFFFF>nitrocóctel</color>. Cuando otros miembros del equipo golpean a un enemigo en el estado de <color=#FFFFFF>abrasión</color>, provocan el efecto de <color=#FFFFFF>rescoldo</color>, consumiendo 8 ptos. de <color=#FFFFFF>calor</color> para infligir <color=#FF5521>daño ígneo</color> equivalente al <color=#2BAD00>350 %</color> del Ataque de Burnice y aumentar la <color=#FF5521>acumulación de Anomalía ígnea</color>. Puede activarse una vez cada 1.5 s. Por cada 10 ptos. de Maestría de Anomalía, el daño infligido por el efecto de <color=#FFFFFF>rescoldo</color> aumenta en un 1 %, hasta un máximo de un 30 %. El daño infligido por el efecto de <color=#FFFFFF>rescoldo</color> se considera daño del <color=#FFFFFF>ataque de apoyo</color>."
+            }
+        },
+        "MathSkill": {
+            "Title": "Técnica adicional: Estela candente",
+            "Description": "Si en el equipo hay más miembros <color=#FFFFFF>anómalos</color> o de la misma afiliación que ella, cuando Burnice golpea a un enemigo con el <color=#FFFFFF>ataque normal: Cóctel flambeado mezclado</color>, la <color=#FFFFFF>técnica especial EX: Agitado comburente</color> o la <color=#FFFFFF>técnica especial EX: Agitado comburente doble</color>, o provoca el efecto de <color=#FFFFFF>rescoldo</color>, la <color=#FF5521>acumulación de Anomalía ígnea</color> de la habilidad aumenta en un 65 %. Cuando cualquier miembro del equipo provoca el efecto de <color=#FF5521>calcinación</color> sobre el enemigo, la duración del efecto aumenta en 3 s."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "117100001": {
+                "Title": "Ataque normal: Cóctel flambeado directo",
+                "Description": "Pulsa <IconMap:Icon_Normal> para usarlo.\nEjecuta hasta cinco ataques hacia delante, infligiendo <color=#F0D12B>daño físico</color> y <color=#FF5521>daño ígneo</color>."
+            },
+            "117100002": {
+                "Title": "Ataque normal: Cóctel flambeado mezclado",
+                "Description": "Al encontrarse en el estado de <color=#FFFFFF>nitrocóctel</color>, mantén pulsado <IconMap:Icon_Normal> para usarlo.\nGira continuamente mientras emite un torrente de llamas a su alrededor, seguido de un ataque final, infligiendo <color=#FF5521>daño ígneo</color>. Mantén pulsado para prolongar la duración del torrente de llamas.\nDurante su ejecución, consume 20 ptos. de <color=#FFFFFF>calor</color>.\nDurante su ejecución, el nivel de resistencia a interrupción aumenta.\nTras la ejecución del ataque final, pulsa <IconMap:Icon_SpecialReady> para enlazarlo con la <color=#FFFFFF>técnica especial EX: Agitado comburente doble</color>."
+            },
+            "117100015": {
+                "Title": "Ataque normal: Cóctel flambeado directo"
+            },
+            "117100016": {
+                "Description": "Multiplicador de daño de 1.er golpe",
+                "Param": "{Skill:1171001, Prop:1001}"
+            },
+            "117100017": {
+                "Description": "Multiplicador de daño de 2.º golpe",
+                "Param": "{Skill:1171002, Prop:1001}"
+            },
+            "117100018": {
+                "Description": "Multiplicador de daño de 3.er golpe",
+                "Param": "{Skill:1171003, Prop:1001}"
+            },
+            "117100019": {
+                "Description": "Multiplicador de daño de 4.º golpe",
+                "Param": "{Skill:1171004, Prop:1001}"
+            },
+            "117100020": {
+                "Description": "Multiplicador de daño de 5.º golpe",
+                "Param": "{Skill:1171005, Prop:1001}"
+            },
+            "117100021": {
+                "Description": "Multiplicador de Aturdimiento de 1.er golpe",
+                "Param": "{Skill:1171001, Prop:1002}"
+            },
+            "117100022": {
+                "Description": "Multiplicador de Aturdimiento de 2.º golpe",
+                "Param": "{Skill:1171002, Prop:1002}"
+            },
+            "117100023": {
+                "Description": "Multiplicador de Aturdimiento de 3.er golpe",
+                "Param": "{Skill:1171003, Prop:1002}"
+            },
+            "117100024": {
+                "Description": "Multiplicador de Aturdimiento de 4.º golpe",
+                "Param": "{Skill:1171004, Prop:1002}"
+            },
+            "117100025": {
+                "Description": "Multiplicador de Aturdimiento de 5.º golpe",
+                "Param": "{Skill:1171005, Prop:1002}"
+            },
+            "117100026": {
+                "Title": "Ataque normal: Cóctel flambeado mezclado"
+            },
+            "117100027": {
+                "Description": "Multiplicador de daño de torrente continuo",
+                "Param": "{Skill:1171006, Prop:1001}"
+            },
+            "117100028": {
+                "Description": "Multiplicador de daño de ataque final",
+                "Param": "{Skill:1171007, Prop:1001}"
+            },
+            "117100029": {
+                "Description": "Multiplicador de Aturdimiento de torrente continuo",
+                "Param": "{Skill:1171006, Prop:1002}"
+            },
+            "117100030": {
+                "Description": "Multiplicador de Aturdimiento de ataque final",
+                "Param": "{Skill:1171007, Prop:1002}"
+            }
+        },
+        "1": {
+            "117100003": {
+                "Title": "Técnica especial: Maduración comburente",
+                "Description": "Pulsa <IconMap:Icon_Special> para usarla.\nEjecuta un estallido de fuego hacia delante, infligiendo <color=#FF5521>daño ígneo</color>.\nMantén pulsado <IconMap:Icon_Special> para acumular fuerza y aumentar el poder de esta habilidad.\nDurante su ejecución, el nivel de resistencia a interrupción aumenta."
+            },
+            "117100004": {
+                "Title": "Técnica especial EX: Agitado comburente",
+                "Description": "Al contar con energía suficiente, pulsa <IconMap:Icon_SpecialReady> para usarla.\nEmite un torrente de llamas continuo con uno de los lanzallamas, seguido de un estallido de fuego hacia delante en línea recta, infligiendo una gran cantidad de <color=#FF5521>daño ígneo</color>. Mantén pulsado para seguir consumiendo energía y prolongar la duración del torrente de llamas.\nDurante el torrente, mueve el {LAYOUT_CONSOLECONTROLLER#joystick}{LAYOUT_FALLBACK#joystick} para ejecutar una evasión lateral y reposicionarte en la dirección correspondiente.\nDurante el torrente, el nivel de resistencia a interrupción aumenta y el daño recibido disminuye en un 40 %.\nDurante la evasión lateral y el estallido de fuego, la agente se vuelve invulnerable."
+            },
+            "117100005": {
+                "Title": "Técnica especial EX: Agitado comburente doble",
+                "Description": "Durante la ejecución de la <color=#FFFFFF>técnica especial EX: Agitado comburente</color>, al contar con energía suficiente, pulsa <IconMap:Icon_SpecialReady> para usarla.\nEmite un torrente de llamas continuo con ambos lanzallamas, seguido de un estallido de fuego hacia delante en línea recta, infligiendo una gran cantidad de <color=#FF5521>daño ígneo</color>. Mantén pulsado para seguir consumiendo energía y prolongar la duración del torrente de llamas.\nDurante el instante en el que se activan el torrente y el estallido de fuego, la agente se vuelve invulnerable.\nDurante el torrente, el nivel de resistencia a interrupción aumenta y el daño recibido disminuye en un 40 %."
+            },
+            "117100031": {
+                "Title": "Técnica especial: Maduración comburente"
+            },
+            "117100032": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1171008, Prop:1001}"
+            },
+            "117100033": {
+                "Description": "Multiplicador de daño de ataque cargado",
+                "Param": "{Skill:1171009, Prop:1001}"
+            },
+            "117100034": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1171008, Prop:1002}"
+            },
+            "117100035": {
+                "Description": "Multiplicador de Aturdimiento de ataque cargado",
+                "Param": "{Skill:1171009, Prop:1002}"
+            },
+            "117100036": {
+                "Title": "Técnica especial EX: Agitado comburente"
+            },
+            "117100037": {
+                "Description": "Multiplicador de daño de torrente continuo",
+                "Param": "{Skill:1171010, Prop:1001}"
+            },
+            "117100038": {
+                "Description": "Multiplicador de Aturdimiento de torrente continuo",
+                "Param": "{Skill:1171010, Prop:1002}"
+            },
+            "117100039": {
+                "Description": "Multiplicador de daño de estallido de fuego",
+                "Param": "{Skill:1171011, Prop:1001}"
+            },
+            "117100040": {
+                "Description": "Multiplicador de Aturdimiento de estallido de fuego",
+                "Param": "{Skill:1171011, Prop:1002}"
+            },
+            "117100041": {
+                "Description": "Consumo de energía de activación",
+                "Param": "40 ptos."
+            },
+            "117100042": {
+                "Description": "Consumo de energía del torrente continuo",
+                "Param": "12.5 ptos./s"
+            },
+            "117100043": {
+                "Description": "Consumo de energía del estallido de fuego",
+                "Param": "5 ptos."
+            },
+            "117100044": {
+                "Title": "Técnica especial EX: Agitado comburente doble"
+            },
+            "117100045": {
+                "Description": "Multiplicador de daño de torrente continuo",
+                "Param": "{Skill:1171012, Prop:1001}"
+            },
+            "117100046": {
+                "Description": "Multiplicador de Aturdimiento de torrente continuo",
+                "Param": "{Skill:1171012, Prop:1002}"
+            },
+            "117100047": {
+                "Description": "Multiplicador de daño de estallido de fuego",
+                "Param": "{Skill:1171013, Prop:1001}"
+            },
+            "117100048": {
+                "Description": "Multiplicador de Aturdimiento de estallido de fuego",
+                "Param": "{Skill:1171013, Prop:1002}"
+            },
+            "117100049": {
+                "Description": "Consumo de energía de activación",
+                "Param": "10 ptos."
+            },
+            "117100050": {
+                "Description": "Consumo de energía del torrente continuo",
+                "Param": "25 ptos./s"
+            },
+            "117100051": {
+                "Description": "Consumo de energía del estallido de fuego",
+                "Param": "10 ptos."
+            }
+        },
+        "2": {
+            "117100006": {
+                "Title": "Evasión: Aceleración flamígera",
+                "Description": "Pulsa <IconMap:Icon_Evade> para usarla.\nEjecuta un rápido esprint evasivo.\nDurante su ejecución, la agente se vuelve invulnerable."
+            },
+            "117100007": {
+                "Title": "Ataque rápido: Fermentación temeraria",
+                "Description": "Pulsa <IconMap:Icon_Normal> durante una evasión para usarlo.\nSe impulsa hacia delante y ataca con sus lanzallamas, infligiendo <color=#FF5521>daño ígneo</color>."
+            },
+            "117100008": {
+                "Title": "Contraataque: Pasos elusivos",
+                "Description": "Pulsa <IconMap:Icon_Normal> después de una <color=#FFFFFF>evasión perfecta</color> para usarlo.\nEjecuta ataques consecutivos contra los enemigos frente a ella y emite un torrente de llamas, infligiendo <color=#F0D12B>daño físico</color> y <color=#FF5521>daño ígneo</color>.\nDurante su ejecución, la agente se vuelve invulnerable."
+            },
+            "117100052": {
+                "Title": "Ataque rápido: Fermentación temeraria"
+            },
+            "117100053": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1171014, Prop:1001}"
+            },
+            "117100054": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1171014, Prop:1002}"
+            },
+            "117100055": {
+                "Title": "Contraataque: Pasos elusivos"
+            },
+            "117100056": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1171015, Prop:1001}"
+            },
+            "117100057": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1171015, Prop:1002}"
+            }
+        },
+        "3": {
+            "117100009": {
+                "Title": "Técnica en cadena: Llama carburada",
+                "Description": "Elige el avatar de agente al ejecutar una <color=#FFFFFF>técnica en cadena</color> para usarla.\nSe impulsa hacia delante rápidamente mientras emite un torrente de llamas a su alrededor, seguido de un estallido de fuego en forma de abanico hacia delante, infligiendo una gran cantidad de <color=#FF5521>daño ígneo</color>.\nDurante su ejecución, la agente se vuelve invulnerable.\nTras su ejecución, pulsa <IconMap:Icon_SpecialReady> para enlazarla con la <color=#FFFFFF>técnica especial EX: Agitado comburente doble</color>."
+            },
+            "117100010": {
+                "Title": "Técnica definitiva: Paraíso estigio",
+                "Description": "Cuando los dB llegan a su nivel <color=#FFFFFF>máximo</color>, pulsa <IconMap:Icon_UltimateReady> para usarla.\nSe impulsa rápidamente hacia delante y da un salto en el aire para emitir un torrente de llamas continuo en un área grande frente a ella, infligiendo una gran cantidad de <color=#FF5521>daño ígneo</color>.\nDurante el salto, se activa un <color=#FFFFFF>apoyo rápido</color>. Si se ejecuta el <color=#FFFFFF>apoyo rápido</color>, Burnice prolonga la duración del torrente de llamas.\nDurante su ejecución, recupera 50 ptos. de <color=#FFFFFF>calor</color>.\nDurante su ejecución, la agente se vuelve invulnerable."
+            },
+            "117100058": {
+                "Title": "Técnica en cadena: Llama carburada"
+            },
+            "117100059": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1171016, Prop:1001}"
+            },
+            "117100060": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1171016, Prop:1002}"
+            },
+            "117100061": {
+                "Title": "Técnica definitiva: Paraíso estigio"
+            },
+            "117100062": {
+                "Description": "Multiplicador de daño máximo",
+                "Param": "{Skill:1171017, Prop:1001}"
+            },
+            "117100063": {
+                "Description": "Multiplicador de Aturdimiento máximo",
+                "Param": "{Skill:1171017, Prop:1002}"
+            }
+        },
+        "6": {
+            "117100012": {
+                "Title": "Apoyo rápido: Especialidad energética de la casa",
+                "Description": "Pulsa <IconMap:Icon_Switch> para ejecutarlo cuando el agente activo sea lanzado por los aires.\nEjecuta ataques consecutivos contra los enemigos frente a ella y emite un torrente de llamas, infligiendo <color=#F0D12B>daño físico</color> y <color=#FF5521>daño ígneo</color>.\nDurante su ejecución, la agente se vuelve invulnerable."
+            },
+            "117100013": {
+                "Title": "Apoyo defensivo: Copa humeante",
+                "Description": "Pulsa <IconMap:Icon_Switch> para usarlo cuando el agente activo esté a punto de recibir un golpe.\nBloquea el ataque enemigo, provocando una gran cantidad de Aturdimiento.\nDurante su ejecución, la agente se vuelve invulnerable."
+            },
+            "117100014": {
+                "Title": "Ataque sucesivo: Néctar ardiente",
+                "Description": "Pulsa <IconMap:Icon_Normal> después de un <color=#FFFFFF>apoyo defensivo</color> para usarlo.\nEjecuta un gran salto, gira rápidamente hacia delante y emite un torrente de llamas a su alrededor, infligiendo <color=#FF5521>daño ígneo</color>.\nDurante su ejecución, la agente se vuelve invulnerable\nDurante su ejecución, la agente se vuelve invulnerable.\nTras su ejecución, pulsa <IconMap:Icon_SpecialReady> para enlazarlo con la <color=#FFFFFF>técnica especial EX: Agitado comburente doble</color>."
+            },
+            "117100064": {
+                "Title": "Apoyo rápido: Especialidad energética de la casa"
+            },
+            "117100065": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1171018, Prop:1001}"
+            },
+            "117100066": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1171018, Prop:1002}"
+            },
+            "117100067": {
+                "Title": "Apoyo defensivo: Copa humeante"
+            },
+            "117100068": {
+                "Description": "Multiplicador de Aturdimiento defensivo ligero",
+                "Param": "{Skill:1171019, Prop:1002}"
+            },
+            "117100069": {
+                "Description": "Multiplicador de Aturdimiento defensivo fuerte",
+                "Param": "{Skill:1171020, Prop:1002}"
+            },
+            "117100070": {
+                "Description": "Multiplicador de Aturdimiento defensivo continuo",
+                "Param": "{Skill:1171021, Prop:1002}"
+            },
+            "117100071": {
+                "Title": "Ataque sucesivo: Néctar ardiente"
+            },
+            "117100072": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1171022, Prop:1001}"
+            },
+            "117100073": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1171022, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1171001": {
+            "DamageValue": 4480,
+            "DamageGrowth": 410,
+            "DazeValue": 1870,
+            "DazeGrowth": 90
+        },
+        "1171002": {
+            "DamageValue": 4350,
+            "DamageGrowth": 400,
+            "DazeValue": 3080,
+            "DazeGrowth": 140
+        },
+        "1171003": {
+            "DamageValue": 7170,
+            "DamageGrowth": 660,
+            "DazeValue": 4780,
+            "DazeGrowth": 220
+        },
+        "1171004": {
+            "DamageValue": 6660,
+            "DamageGrowth": 610,
+            "DazeValue": 3040,
+            "DazeGrowth": 140
+        },
+        "1171005": {
+            "DamageValue": 9630,
+            "DamageGrowth": 880,
+            "DazeValue": 5200,
+            "DazeGrowth": 240
+        },
+        "1171006": {
+            "DamageValue": 12540,
+            "DamageGrowth": 1140,
+            "DazeValue": 9650,
+            "DazeGrowth": 440
+        },
+        "1171007": {
+            "DamageValue": 23280,
+            "DamageGrowth": 2120,
+            "DazeValue": 17910,
+            "DazeGrowth": 820
+        },
+        "1171008": {
+            "DamageValue": 5780,
+            "DamageGrowth": 530,
+            "DazeValue": 5780,
+            "DazeGrowth": 270
+        },
+        "1171009": {
+            "DamageValue": 6240,
+            "DamageGrowth": 570,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1171010": {
+            "DamageValue": 54380,
+            "DamageGrowth": 4950,
+            "DazeValue": 37860,
+            "DazeGrowth": 1730
+        },
+        "1171011": {
+            "DamageValue": 9670,
+            "DamageGrowth": 880,
+            "DazeValue": 6570,
+            "DazeGrowth": 300
+        },
+        "1171012": {
+            "DamageValue": 95810,
+            "DamageGrowth": 8710,
+            "DazeValue": 58570,
+            "DazeGrowth": 2670
+        },
+        "1171013": {
+            "DamageValue": 28710,
+            "DamageGrowth": 2610,
+            "DazeValue": 20780,
+            "DazeGrowth": 950
+        },
+        "1171014": {
+            "DamageValue": 6790,
+            "DamageGrowth": 620,
+            "DazeValue": 3400,
+            "DazeGrowth": 160
+        },
+        "1171015": {
+            "DamageValue": 21970,
+            "DamageGrowth": 2000,
+            "DazeValue": 19440,
+            "DazeGrowth": 890
+        },
+        "1171016": {
+            "DamageValue": 68090,
+            "DamageGrowth": 6190,
+            "DazeValue": 24200,
+            "DazeGrowth": 1100
+        },
+        "1171017": {
+            "DamageValue": 201220,
+            "DamageGrowth": 18300,
+            "DazeValue": 10640,
+            "DazeGrowth": 490
+        },
+        "1171018": {
+            "DamageValue": 8440,
+            "DamageGrowth": 770,
+            "DazeValue": 8440,
+            "DazeGrowth": 390
+        },
+        "1171019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1171020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1171021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1171022": {
+            "DamageValue": 32760,
+            "DamageGrowth": 2980,
+            "DazeValue": 28240,
+            "DazeGrowth": 1290
+        },
+        "1171023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1171024": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

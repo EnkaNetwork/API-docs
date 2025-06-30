@@ -1,0 +1,448 @@
+{
+    "Name": "N.º 11",
+    "ElementTypes": [
+        "Fire"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Aquecimento Acelerado",
+            "Description": "Se a Energia da N.º 11 for inferior a 40, quando ela entrar em combate ou for ativada, a Energia é restaurada para 80. Pode ser ativado uma vez a cada 50s.",
+            "Lore": "Um longo treinamento de combate de alta intensidade permite que N.º 11 alcance o domínio de seus sistemas regulatórios.\nEla sempre tenta manter a melhor forma possível para todas as batalhas."
+        },
+        "2": {
+            "Title": "Concentração Ardente",
+            "Description": "Com a ativação de <color=#FFFFFF>Supressão de Incêndio</color>, o dano dos <color=#FFFFFF>Ataques Básicos</color>, <color=#FFFFFF>Ataques Rápidos</color> e das <color=#FFFFFF>Contraesquivas</color> aumenta 3% por 15s. Pode acumular até 12 vezes. A duração de cada acúmulo é calculada separadamente.",
+            "Lore": "\"Ela pode parecer fria e dura, como um imenso cubo de gelo... Mas, na verdade, é escaldante por dentro, como uma chama ardente.\"\n— De um soldado anônimo da Divisão Obsidiana"
+        },
+        "3": {
+            "Title": "Soldado de Elite",
+            "Description": "Obtém +2 níveis de <color=#FFFFFF>Ataque Básico</color>, <color=#FFFFFF>Esquiva</color>, <color=#FFFFFF>Ataque de Assistência</color>, <color=#FFFFFF>Ataque Especial</color> e <color=#FFFFFF>Ataque em Cadeia</color>",
+            "Lore": "N.º 11 sempre espera o máximo de si, seja no treinamento ou no combate físico. É assim que ela mantém seu desempenho em combate."
+        },
+        "4": {
+            "Title": "Chama Indulgente",
+            "Description": "Se a <color=#FFFFFF>Supressão de Incêndio</color> for ativada no 1º, 2º ou 3º acerto de um <color=#FFFFFF>Ataque Básico</color> ou <color=#FFFFFF>Ataque Rápido</color> da N.º 11, o Nível de Anti-Interrupção aumenta, e o dano sofrido reduz 18% durante o ataque ativador.\nSe a <color=#FFFFFF>Supressão de Incêndio</color> for ativada no 4º acerto de um <color=#FFFFFF>Ataque Básico</color>, a personagem fica invulnerável durante o ataque ativador.",
+            "Lore": "Ela inveja o fogo. E essas chamas ardentes sempre vão ajudá-la."
+        },
+        "5": {
+            "Title": "Soldado Perfeita",
+            "Description": "Obtém +2 níveis de <color=#FFFFFF>Ataque Básico</color>, <color=#FFFFFF>Esquiva</color>, <color=#FFFFFF>Ataque de Assistência</color>, <color=#FFFFFF>Ataque Especial</color> e <color=#FFFFFF>Ataque em Cadeia</color>",
+            "Lore": "A estrada da elite ao exemplar é longa e difícil, mas N.º 11 segura as pontas e persevera, como se houvesse algo a impulsionando na direção do objetivo de se tornar a soldado perfeita..."
+        },
+        "6": {
+            "Title": "Fluxo Escaldante",
+            "Description": "Quando N.º 11 usa o <color=#FFFFFF>Ataque Especial Reforçado</color>, <color=#FFFFFF>Ataque em Cadeia</color> ou <color=#FFFFFF>Supremo</color>, ela ganha 8 acúmulos de Carga (máximo de 8 acúmulos).\nQuando a <color=#FFFFFF>Supressão de Incêndio</color> é ativada, 1 acúmulo de Carga é consumido, fazendo com que o movimento atual ignore 25% da <color=#FF5521>Resistência ao Fogo</color> do alvo.",
+            "Lore": "As chamas da espada distorceram o ar com o calor. Seus movimentos tornaram-se ainda mais intensos, como se o calor estimulasse suas emoções a cada respiração, inflamando seus pensamentos."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passiva Principal: Onda de Calor",
+            "DescriptionByLevel": {
+                "1": "Quando a N.º 11 ativar a <color=#FFFFFF>Supressão de Incêndio</color> durante um <color=#FFFFFF>Ataque Básico</color> ou <color=#FFFFFF>Ataque Rápido</color>, o dano aumenta <color=#2BAD00>35%</color>",
+                "2": "Quando a N.º 11 ativar a <color=#FFFFFF>Supressão de Incêndio</color> durante um <color=#FFFFFF>Ataque Básico</color> ou <color=#FFFFFF>Ataque Rápido</color>, o dano aumenta <color=#2BAD00>40,8%</color>",
+                "3": "Quando a N.º 11 ativar a <color=#FFFFFF>Supressão de Incêndio</color> durante um <color=#FFFFFF>Ataque Básico</color> ou <color=#FFFFFF>Ataque Rápido</color>, o dano aumenta <color=#2BAD00>46,6%</color>",
+                "4": "Quando a N.º 11 ativar a <color=#FFFFFF>Supressão de Incêndio</color> durante um <color=#FFFFFF>Ataque Básico</color> ou <color=#FFFFFF>Ataque Rápido</color>, o dano aumenta <color=#2BAD00>52,5%</color>",
+                "5": "Quando a N.º 11 ativar a <color=#FFFFFF>Supressão de Incêndio</color> durante um <color=#FFFFFF>Ataque Básico</color> ou <color=#FFFFFF>Ataque Rápido</color>, o dano aumenta <color=#2BAD00>58,3%</color>",
+                "6": "Quando a N.º 11 ativar a <color=#FFFFFF>Supressão de Incêndio</color> durante um <color=#FFFFFF>Ataque Básico</color> ou <color=#FFFFFF>Ataque Rápido</color>, o dano aumenta <color=#2BAD00>64,1%</color>",
+                "7": "Quando N.º 11 ativar a <color=#FFFFFF>Supressão de Incêndio</color> durante um <color=#FFFFFF>Ataque Básico</color> ou <color=#FFFFFF>Ataque Rápido</color>, o dano aumenta <color=#2BAD00>70%</color>"
+            }
+        },
+        "MathSkill": {
+            "Title": "Habilidade Extra: Campos em Chamas",
+            "Description": "Quando outro personagem na sua equipe compartilha do mesmo atributo ou facção:\nA N.º 11 causa 10% a mais de <color=#FF5521>Dano de Fogo</color>. Ao atacar inimigos Atordoados, esse efeito aumenta mais 22,5%."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "104100001": {
+                "Title": "Ataque Básico: Faíscas de Aquecimento",
+                "Description": "Pressione <IconMap:Icon_Normal> para ativar:\nExecuta até quatro cortes, causando <color=#F0D12B>Dano Físico</color>."
+            },
+            "104100002": {
+                "Title": "Ataque Básico: Supressão de Incêndio",
+                "Description": "Pressione <IconMap:Icon_Normal> no momento certo para ativar:\nDesfere uma série de cortes mais poderosos, causando <color=#FF5521>Dano de Fogo</color>."
+            },
+            "104110001": {
+                "Title": "Ataque Básico: Faíscas de Aquecimento"
+            },
+            "104110002": {
+                "Description": "Multiplicador de Dano de 1º Golpe",
+                "Param": "{Skill:1041001, Prop:1001}"
+            },
+            "104110003": {
+                "Description": "Multiplicador de Dano de 2º Golpe",
+                "Param": "{Skill:1041003, Prop:1001}"
+            },
+            "104110004": {
+                "Description": "Multiplicador de Dano de 3º Golpe",
+                "Param": "{Skill:1041005, Prop:1001}"
+            },
+            "104110005": {
+                "Description": "Multiplicador de Dano de 4º Golpe",
+                "Param": "{Skill:1041007, Prop:1001}"
+            },
+            "104110006": {
+                "Description": "Multiplicador de Atordoamento de 1º Golpe",
+                "Param": "{Skill:1041001, Prop:1002}"
+            },
+            "104110007": {
+                "Description": "Multiplicador de Atordoamento de 2º Golpe",
+                "Param": "{Skill:1041003, Prop:1002}"
+            },
+            "104110008": {
+                "Description": "Multiplicador de Atordoamento de 3º Golpe",
+                "Param": "{Skill:1041005, Prop:1002}"
+            },
+            "104110009": {
+                "Description": "Multiplicador de Atordoamento de 4º Golpe",
+                "Param": "{Skill:1041007, Prop:1002}"
+            },
+            "104110010": {
+                "Title": "Ataque Básico: Supressão de Incêndio"
+            },
+            "104110011": {
+                "Description": "Multiplicador de Dano de 1º Golpe",
+                "Param": "{Skill:1041002, Prop:1001}"
+            },
+            "104110012": {
+                "Description": "Multiplicador de Dano de 2º Golpe",
+                "Param": "{Skill:1041004, Prop:1001}"
+            },
+            "104110013": {
+                "Description": "Multiplicador de Dano de 3º Golpe",
+                "Param": "{Skill:1041006, Prop:1001}"
+            },
+            "104110014": {
+                "Description": "Multiplicador de Dano de 4º Golpe",
+                "Param": "{Skill:1041008, Prop:1001}"
+            },
+            "104110015": {
+                "Description": "Multiplicador de Atordoamento de 1º Golpe",
+                "Param": "{Skill:1041002, Prop:1002}"
+            },
+            "104110016": {
+                "Description": "Multiplicador de Atordoamento de 2º Golpe",
+                "Param": "{Skill:1041004, Prop:1002}"
+            },
+            "104110017": {
+                "Description": "Multiplicador de Atordoamento de 3º Golpe",
+                "Param": "{Skill:1041006, Prop:1002}"
+            },
+            "104110018": {
+                "Description": "Multiplicador de Atordoamento de 4º Golpe",
+                "Param": "{Skill:1041008, Prop:1002}"
+            }
+        },
+        "1": {
+            "104100003": {
+                "Title": "Ataque Especial: Fogo Ardente",
+                "Description": "Pressione <IconMap:Icon_Special> para ativar:\nExecuta um corte ao seu redor, causando <color=#FF5521>Dano de Fogo</color>.\nDurante sua execução, o nível de Anti-Interrupção aumenta."
+            },
+            "104100004": {
+                "Title": "Ataque Especial Reforçado: Fogo Implacável",
+                "Description": "Quando N.º 11 tiver Energia suficiente, pressione <IconMap:Icon_SpecialReady> para ativar:\nDesfere um corte poderoso contra os inimigos ao redor, causando <color=#FF5521>Dano de Fogo</color> muito alto.\nA personagem fica invulnerável ao usar esta habilidade.\nDepois de usar essa habilidade, os <color=#FFFFFF>Ataques Básicos</color> e os <color=#FFFFFF>Ataques Rápidos</color> de N.º 11 ativam <color=#FFFFFF>Supressão de Incêndio</color> por até 15s ou 8 vezes."
+            },
+            "104110019": {
+                "Title": "Ataque Especial: Fogo Ardente"
+            },
+            "104110020": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1041010, Prop:1001}"
+            },
+            "104110021": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1041010, Prop:1002}"
+            },
+            "104110022": {
+                "Title": "Ataque Especial Reforçado: Fogo Implacável"
+            },
+            "104110023": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1041011, Prop:1001}"
+            },
+            "104110024": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1041011, Prop:1002}"
+            },
+            "104110025": {
+                "Description": "Custo de Energia",
+                "Param": "80"
+            }
+        },
+        "2": {
+            "104100005": {
+                "Title": "Esquiva: Fogo Atenuado",
+                "Description": "Pressione <IconMap:Icon_Evade> para ativar:\nUma esquiva rápida.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "104100006": {
+                "Title": "Ataque Rápido: Fogo Incandescente",
+                "Description": "Pressione <IconMap:Icon_Normal> durante uma esquiva para ativar:\nCorta inimigos à frente, e causa <color=#F0D12B>Dano Físico</color>."
+            },
+            "104100007": {
+                "Title": "Ataque Rápido: Supressão de Incêndio",
+                "Description": "Pressione <IconMap:Icon_Normal> durante uma esquiva para ativar:\nExecuta um corte para a frente, causando <color=#FF5521>Dano de Fogo</color>."
+            },
+            "104100008": {
+                "Title": "Contraesquiva: Contrafogo",
+                "Description": "Pressione <IconMap:Icon_Normal> durante uma <color=#FFFFFF>Esquiva Perfeita</color> para ativar:\nExecuta um poderoso corte para a frente, causando <color=#FF5521>Dano de Fogo</color> muito alto.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "104110026": {
+                "Title": "Ataque Rápido: Fogo Incandescente"
+            },
+            "104110027": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1041012, Prop:1001}"
+            },
+            "104110028": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1041012, Prop:1002}"
+            },
+            "104110029": {
+                "Title": "Ataque Rápido: Supressão de Incêndio"
+            },
+            "104110030": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1041013, Prop:1001}"
+            },
+            "104110031": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1041013, Prop:1002}"
+            },
+            "104110032": {
+                "Title": "Contraesquiva: Contrafogo"
+            },
+            "104110033": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1041015, Prop:1001}"
+            },
+            "104110034": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1041015, Prop:1002}"
+            }
+        },
+        "3": {
+            "104100009": {
+                "Title": "Ataque em Cadeia: Chamas Exaltadas",
+                "Description": "Quando um <color=#FFFFFF>Ataque em Cadeia</color> é acionado, selecione a personagem para ativar:\nDesfere um corte ascendente poderoso nos inimigos em uma área pequena, causando <color=#FF5521>Dano de Fogo</color> muito alto.\nA personagem fica invulnerável ao usar esta habilidade.\nApós usar essa habilidade, os <color=#FFFFFF>Ataques Básicos</color> e <color=#FFFFFF>Ataques Rápidos</color> de N.º 11 ativam <color=#FFFFFF>Supressão de Incêndio</color> por até 15s ou 8 vezes."
+            },
+            "104100010": {
+                "Title": "Supremo: Rugido das Chamas",
+                "Description": "Quando o Índice de dB estiver no <color=#FFFFFF>Máximo</color>, pressione <IconMap:Icon_UltimateReady> para ativar:\nDesfere um corte ascendente poderoso nos inimigos em uma área pequena, causando <color=#FF5521>Dano de Fogo</color> muito alto.\nA personagem fica invulnerável ao usar esta habilidade.\nApós usar essa habilidade, os <color=#FFFFFF>Ataques Básicos</color> e <color=#FFFFFF>Ataques Rápidos</color> de N.º 11 ativam <color=#FFFFFF>Supressão de Incêndio</color> por até 15s ou 8 vezes."
+            },
+            "104110035": {
+                "Title": "Ataque em Cadeia: Chamas Exaltadas"
+            },
+            "104110036": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1041016, Prop:1001}"
+            },
+            "104110037": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1041016, Prop:1002}"
+            },
+            "104110038": {
+                "Title": "Supremo: Rugido das Chamas"
+            },
+            "104110039": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1041017, Prop:1001}"
+            },
+            "104110040": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1041017, Prop:1002}"
+            }
+        },
+        "6": {
+            "104100012": {
+                "Title": "Assistência Reativa: Fogo Protetor",
+                "Description": "Quando a personagem em uso for lançada para o alto, pressione <IconMap:Icon_Switch> para ativar.\nCorta os inimigos à frente e causa <color=#FF5521>Dano de Fogo</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "104100013": {
+                "Title": "Assistência Defensiva: Integridade Defensiva",
+                "Description": "Quando o personagem em campo está prestes a sofrer um ataque, pressione <IconMap:Icon_Switch> para ativar.\nDefende do ataque inimigo e causa um Atordoamento muito alto.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "104100014": {
+                "Title": "Assistência Imediata: Reignição",
+                "Description": "Pressione <IconMap:Icon_Normal> após uma <color=#FFFFFF>Assistência Defensiva</color> para ativar:\nAvança e ataca com um golpe cruzado os inimigos à frente, causando <color=#FF5521>Dano de Fogo</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "104110041": {
+                "Title": "Assistência Reativa: Fogo Protetor"
+            },
+            "104110042": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1041019, Prop:1001}"
+            },
+            "104110043": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1041019, Prop:1002}"
+            },
+            "104110044": {
+                "Title": "Assistência Defensiva: Integridade Defensiva"
+            },
+            "104110045": {
+                "Description": "Multiplicador de Atordoamento de Defensiva Leve",
+                "Param": "{Skill:1041020, Prop:1002}"
+            },
+            "104110046": {
+                "Description": "Multiplicador de Atordoamento de Defensiva Pesada",
+                "Param": "{Skill:1041021, Prop:1002}"
+            },
+            "104110047": {
+                "Description": "Multiplicador de Atordoamento de Defensiva em Cadeia",
+                "Param": "{Skill:1041022, Prop:1002}"
+            },
+            "104110048": {
+                "Title": "Assistência Imediata: Reignição"
+            },
+            "104110049": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1041023, Prop:1001}"
+            },
+            "104110050": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1041023, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1041001": {
+            "DamageValue": 3440,
+            "DamageGrowth": 320,
+            "DazeValue": 1720,
+            "DazeGrowth": 80
+        },
+        "1041002": {
+            "DamageValue": 5510,
+            "DamageGrowth": 510,
+            "DazeValue": 1800,
+            "DazeGrowth": 90
+        },
+        "1041003": {
+            "DamageValue": 4120,
+            "DamageGrowth": 380,
+            "DazeValue": 3440,
+            "DazeGrowth": 160
+        },
+        "1041004": {
+            "DamageValue": 5720,
+            "DamageGrowth": 520,
+            "DazeValue": 3360,
+            "DazeGrowth": 160
+        },
+        "1041005": {
+            "DamageValue": 10280,
+            "DamageGrowth": 940,
+            "DazeValue": 8230,
+            "DazeGrowth": 380
+        },
+        "1041006": {
+            "DamageValue": 13200,
+            "DamageGrowth": 1200,
+            "DazeValue": 7520,
+            "DazeGrowth": 350
+        },
+        "1041007": {
+            "DamageValue": 21340,
+            "DamageGrowth": 1940,
+            "DazeValue": 16760,
+            "DazeGrowth": 770
+        },
+        "1041008": {
+            "DamageValue": 34070,
+            "DamageGrowth": 3100,
+            "DazeValue": 19200,
+            "DazeGrowth": 880
+        },
+        "1041009": {
+            "DamageValue": 9280,
+            "DamageGrowth": 850,
+            "DazeValue": 9280,
+            "DazeGrowth": 430
+        },
+        "1041010": {
+            "DamageValue": 5260,
+            "DamageGrowth": 480,
+            "DazeValue": 5260,
+            "DazeGrowth": 240
+        },
+        "1041011": {
+            "DamageValue": 67500,
+            "DamageGrowth": 6140,
+            "DazeValue": 54350,
+            "DazeGrowth": 2480
+        },
+        "1041012": {
+            "DamageValue": 6830,
+            "DamageGrowth": 630,
+            "DazeValue": 3420,
+            "DazeGrowth": 160
+        },
+        "1041013": {
+            "DamageValue": 7880,
+            "DamageGrowth": 720,
+            "DazeValue": 7880,
+            "DazeGrowth": 360
+        },
+        "1041014": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1041015": {
+            "DamageValue": 26200,
+            "DamageGrowth": 2390,
+            "DazeValue": 22580,
+            "DazeGrowth": 1030
+        },
+        "1041016": {
+            "DamageValue": 63250,
+            "DamageGrowth": 5750,
+            "DazeValue": 21360,
+            "DazeGrowth": 980
+        },
+        "1041017": {
+            "DamageValue": 210300,
+            "DamageGrowth": 19120,
+            "DazeValue": 28500,
+            "DazeGrowth": 1300
+        },
+        "1041018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1041019": {
+            "DamageValue": 12080,
+            "DamageGrowth": 1100,
+            "DazeValue": 12080,
+            "DazeGrowth": 550
+        },
+        "1041020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 25900,
+            "DazeGrowth": 1180
+        },
+        "1041021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 32730,
+            "DazeGrowth": 1490
+        },
+        "1041022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15930,
+            "DazeGrowth": 730
+        },
+        "1041023": {
+            "DamageValue": 38370,
+            "DamageGrowth": 3490,
+            "DazeValue": 33550,
+            "DazeGrowth": 1530
+        }
+    }
+}

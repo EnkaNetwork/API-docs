@@ -1,0 +1,490 @@
+{
+    "Name": "Burnice",
+    "ElementTypes": [
+        "Fire"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Kindred Flames",
+            "Description": "Meningkatkan batas maksimum <color=#FFFFFF>Heat</color> dari 100 poin menjadi 140 poin. Saat memulai pertarungan, Burnice akan mengakumulasi 40 poin <color=#FFFFFF>Heat</color> tambahan. Kelipatan DMG dari efek <color=#FFFFFF>Afterburn</color> meningkat senilai dengan 100% ATK Burnice. <color=#FF5521>Fire Anomaly Buildup</color> yang diakumulasi dari efek <color=#FFFFFF>Afterburn</color> meningkat 25%.",
+            "Lore": "\"Semua orang juga punya masa sulit, wajar saja kok!\"\n\"Jangan sedih dong, Caesar! Gimana kalau minum segelas Nitro-Fuel? Aku sudah tambah banyak gula nih!\""
+        },
+        "2": {
+            "Title": "Extra at No Additional Charge",
+            "Description": "Saat memicu efek <color=#FFFFFF>Afterburn</color>, efek <color=#FFFFFF>Thermal Penetration</color> akan diberikan kepada musuh (maks. 5 lapis) selama 6 detik. Memicu ulang akan memperbarui durasi. Saat unit sekutu menyerang dan mengenai musuh, PEN Ratio dari serangan tersebut akan meningkat 4% untuk setiap lapis <color=#FFFFFF>Thermal Penetration</color> yang dimiliki target (maks. meningkat 20%).",
+            "Lore": "Sebagai bartender di Sons of Calydon, Burnice selalu senang membantu semua temannya meracik Nitro-Fuel, minuman ternama di New Eridu.\nTentu saja, kalau kamu \"musuh\"-nya... kamu juga ada kesempatan untuk mencicipi rasa-rasa minuman yang baru.\n\"Ini minuman enak yang cuma bisa diminum sekali seumur hidup loh!\""
+        },
+        "3": {
+            "Title": "Optimistic by Nature",
+            "Description": "Level <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, dan <color=#FFFFFF>Chain Attack</color> +2.",
+            "Lore": "\"Si Burnice itu, selalu saja penuh semangat! Baru bangun tidur saja bisa langsung jungkir balik! Entah dari mana dia dapat energi sebanyak itu...\"\n\"Yang lebih parahnya lagi, dia juga bisa tularkan semangatnya ke orang lain, jadi mereka ikutan semangat deh! Sudah kayak monster saja!\"\n\"Tapi... aku bukannya tidak suka juga sih...\"\n—Kutipan dari manajer Boar yang tidak ingin disebut namanya"
+        },
+        "4": {
+            "Title": "Ultimate Fuel Supply",
+            "Description": "Saat <color=#FFFFFF>EX Special Attack</color> atau <color=#FFFFFF>Assist Attack</color> mengenai musuh, CRIT Rate dari Skill tersebut akan meningkat 30%. Durasi maksimum semburan api dari <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color> juga akan meningkat 1 detik.",
+            "Lore": "\"Suka minuman yang aku racik? Makasih ya! Si Steeltusk juga suka loh~ Dia bahkan bisa minum 200 liter sekaligus!\"\n\"Oh, Steeltusk itu truk besar milik kami!\"\n\"Mau coba bahan bakar khususnya? Panasnya luar biasa loh~\""
+        },
+        "5": {
+            "Title": "Dance of Fire and Ice",
+            "Description": "Level <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, dan <color=#FFFFFF>Chain Attack</color> +2.",
+            "Lore": "Saat meracik minuman, es juga salah satu elemen yang sangat penting.\nKarena kalau tidak ada rasa dingin yang nyelekit, rasa panas yang nyelekit juga tidak bisa terasa.\n\"Sensasi gabungan antara api dan es seperti ini~ benar-benar buat orang terbuai!\""
+        },
+        "6": {
+            "Title": "Burning Invitation",
+            "Description": "Saat <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color> mengenai musuh, Burnice akan memicu efek <color=#FFFFFF>Afterburn</color> khusus yang mengakibatkan <color=#FF5521>Fire DMG</color> senilai 60% ATK Burnice. Efek ini dapat dipicu sekali setiap 0,5 detik, dan tidak akan mengonsumsi <color=#FFFFFF>Heat</color>. Setelah melancarkan <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color> dan mengenai musuh, efek <color=#FF5521>Burn</color> dan efek <color=#FFFFFF>Afterburn</color> khusus yang terpicu selama melancarkan <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color> akan mengabaikan 25% <color=#FF5521>Ketahanan Fire DMG</color>. Saat ledakan api dari <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color> mengenai musuh yang berada dalam status <color=#FF5521>Burn</color>, musuh akan menerima DMG <color=#FF5521>Burn</color> tambahan yang senilai dengan 1800% DMG awal. Efek ini dapat dipicu sekali setiap 20 detik untuk target yang sama.",
+            "Lore": "Sepertinya tidak ada orang yang pernah melihat Burnice benar-benar marah.\n\"Percaya deh, kamu TIDAK mau melihatnya marah.\"\n—Kutipan dari seorang sopir Steeltusk yang sedang bersiap untuk tidur di atapnya"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Core Passive: Nitro-Fuel Cocktail",
+            "DescriptionByLevel": {
+                "1": "Saat mengonsumsi Energy, Burnice akan mengakumulasi <color=#FFFFFF>Heat</color> (maks. 100 poin). Untuk setiap 1 poin Energy yang dikonsumsi, Burnice akan mengakumulasi 1,4 poin <color=#FFFFFF>Heat</color>. Saat akumulasi <color=#FFFFFF>Heat</color> mencapai 50 poin, Burnice akan memasuki status <color=#FFFFFF>Nitro-Fuel Cocktail</color> hingga semua <color=#FFFFFF>Heat</color> yang dimiliki habis dikonsumsi. Saat memulai pertarungan, Burnice akan langsung mengakumulasi 100 poin <color=#FFFFFF>Heat</color>.\n\nSaat berada dalam status <color=#FFFFFF>Nitro-Fuel Cocktail</color>, jika <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>, <color=#FFFFFF>Chain Attack: Fuel-Fed Flame</color>, atau <color=#FFFFFF>Ultimate: Glorious Inferno</color> Burnice mengenai musuh, Burnice akan memberikan efek <color=#FFFFFF>Scorched</color> kepada target tersebut hingga status <color=#FFFFFF>Nitro-Fuel Cocktail</color> Burnice berakhir.\n\nSaat Agen lain di dalam tim melancarkan serangan dan mengenai musuh yang berada dalam status <color=#FFFFFF>Scorched</color>, maka 8 poin <color=#FFFFFF>Heat</color> akan terkonsumsi, dan efek <color=#FFFFFF>Afterburn</color> akan terpicu, mengakibatkan <color=#FF5521>Fire DMG</color> senilai <color=#2BAD00>175%</color> ATK Burnice terhadap target tersebut, serta mengakumulasi <color=#FF5521>Fire Anomaly Buildup</color>. Efek ini dapat dipicu sekali setiap 1,5 detik.\n\nUntuk setiap 10 poin Anomaly Proficiency yang dimiliki, DMG yang diakibatkan <color=#FFFFFF>Afterburn</color> akan meningkat 1% (maks. meningkat 30%). DMG yang diakibatkan dari efek <color=#FFFFFF>Afterburn</color> akan dianggap sebagai DMG dari <color=#FFFFFF>Assist Attack</color>.",
+                "2": "Saat mengonsumsi Energy, Burnice akan mengakumulasi <color=#FFFFFF>Heat</color> (maks. 100 poin). Untuk setiap 1 poin Energy yang dikonsumsi, Burnice akan mengakumulasi 1,4 poin <color=#FFFFFF>Heat</color>. Saat akumulasi <color=#FFFFFF>Heat</color> mencapai 50 poin, Burnice akan memasuki status <color=#FFFFFF>Nitro-Fuel Cocktail</color> hingga semua <color=#FFFFFF>Heat</color> yang dimiliki habis dikonsumsi. Saat memulai pertarungan, Burnice akan langsung mengakumulasi 100 poin <color=#FFFFFF>Heat</color>.\n\nSaat berada dalam status <color=#FFFFFF>Nitro-Fuel Cocktail</color>, jika <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>, <color=#FFFFFF>Chain Attack: Fuel-Fed Flame</color>, atau <color=#FFFFFF>Ultimate: Glorious Inferno</color> Burnice mengenai musuh, Burnice akan memberikan efek <color=#FFFFFF>Scorched</color> kepada target tersebut hingga status <color=#FFFFFF>Nitro-Fuel Cocktail</color> Burnice berakhir.\n\nSaat Agen lain di dalam tim melancarkan serangan dan mengenai musuh yang berada dalam status <color=#FFFFFF>Scorched</color>, maka 8 poin <color=#FFFFFF>Heat</color> akan terkonsumsi, dan efek <color=#FFFFFF>Afterburn</color> akan terpicu, mengakibatkan <color=#FF5521>Fire DMG</color> senilai <color=#2BAD00>205%</color> ATK Burnice terhadap target tersebut, serta mengakumulasi <color=#FF5521>Fire Anomaly Buildup</color>. Efek ini dapat dipicu sekali setiap 1,5 detik.\n\nUntuk setiap 10 poin Anomaly Proficiency yang dimiliki, DMG yang diakibatkan <color=#FFFFFF>Afterburn</color> akan meningkat 1% (maks. meningkat 30%). DMG yang diakibatkan dari efek <color=#FFFFFF>Afterburn</color> akan dianggap sebagai DMG dari <color=#FFFFFF>Assist Attack</color>.",
+                "3": "Saat mengonsumsi Energy, Burnice akan mengakumulasi <color=#FFFFFF>Heat</color> (maks. 100 poin). Untuk setiap 1 poin Energy yang dikonsumsi, Burnice akan mengakumulasi 1,4 poin <color=#FFFFFF>Heat</color>. Saat akumulasi <color=#FFFFFF>Heat</color> mencapai 50 poin, Burnice akan memasuki status <color=#FFFFFF>Nitro-Fuel Cocktail</color> hingga semua <color=#FFFFFF>Heat</color> yang dimiliki habis dikonsumsi. Saat memulai pertarungan, Burnice akan langsung mengakumulasi 100 poin <color=#FFFFFF>Heat</color>.\n\nSaat berada dalam status <color=#FFFFFF>Nitro-Fuel Cocktail</color>, jika <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>, <color=#FFFFFF>Chain Attack: Fuel-Fed Flame</color>, atau <color=#FFFFFF>Ultimate: Glorious Inferno</color> Burnice mengenai musuh, Burnice akan memberikan efek <color=#FFFFFF>Scorched</color> kepada target tersebut hingga status <color=#FFFFFF>Nitro-Fuel Cocktail</color> Burnice berakhir.\n\nSaat Agen lain di dalam tim melancarkan serangan dan mengenai musuh yang berada dalam status <color=#FFFFFF>Scorched</color>, maka 8 poin <color=#FFFFFF>Heat</color> akan terkonsumsi, dan efek <color=#FFFFFF>Afterburn</color> akan terpicu, mengakibatkan <color=#FF5521>Fire DMG</color> senilai <color=#2BAD00>235%</color> ATK Burnice terhadap target tersebut, serta mengakumulasi <color=#FF5521>Fire Anomaly Buildup</color>. Efek ini dapat dipicu sekali setiap 1,5 detik.\n\nUntuk setiap 10 poin Anomaly Proficiency yang dimiliki, DMG yang diakibatkan <color=#FFFFFF>Afterburn</color> akan meningkat 1% (maks. meningkat 30%). DMG yang diakibatkan dari efek <color=#FFFFFF>Afterburn</color> akan dianggap sebagai DMG dari <color=#FFFFFF>Assist Attack</color>.",
+                "4": "Saat mengonsumsi Energy, Burnice akan mengakumulasi <color=#FFFFFF>Heat</color> (maks. 100 poin). Untuk setiap 1 poin Energy yang dikonsumsi, Burnice akan mengakumulasi 1,4 poin <color=#FFFFFF>Heat</color>. Saat akumulasi <color=#FFFFFF>Heat</color> mencapai 50 poin, Burnice akan memasuki status <color=#FFFFFF>Nitro-Fuel Cocktail</color> hingga semua <color=#FFFFFF>Heat</color> yang dimiliki habis dikonsumsi. Saat memulai pertarungan, Burnice akan langsung mengakumulasi 100 poin <color=#FFFFFF>Heat</color>.\n\nSaat berada dalam status <color=#FFFFFF>Nitro-Fuel Cocktail</color>, jika <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>, <color=#FFFFFF>Chain Attack: Fuel-Fed Flame</color>, atau <color=#FFFFFF>Ultimate: Glorious Inferno</color> Burnice mengenai musuh, Burnice akan memberikan efek <color=#FFFFFF>Scorched</color> kepada target tersebut hingga status <color=#FFFFFF>Nitro-Fuel Cocktail</color> Burnice berakhir.\n\nSaat Agen lain di dalam tim melancarkan serangan dan mengenai musuh yang berada dalam status <color=#FFFFFF>Scorched</color>, maka 8 poin <color=#FFFFFF>Heat</color> akan terkonsumsi, dan efek <color=#FFFFFF>Afterburn</color> akan terpicu, mengakibatkan <color=#FF5521>Fire DMG</color> senilai <color=#2BAD00>262%</color> ATK Burnice terhadap target tersebut, serta mengakumulasi <color=#FF5521>Fire Anomaly Buildup</color>. Efek ini dapat dipicu sekali setiap 1,5 detik.\n\nUntuk setiap 10 poin Anomaly Proficiency yang dimiliki, DMG yang diakibatkan <color=#FFFFFF>Afterburn</color> akan meningkat 1% (maks. meningkat 30%). DMG yang diakibatkan dari efek <color=#FFFFFF>Afterburn</color> akan dianggap sebagai DMG dari <color=#FFFFFF>Assist Attack</color>.",
+                "5": "Saat mengonsumsi Energy, Burnice akan mengakumulasi <color=#FFFFFF>Heat</color> (maks. 100 poin). Untuk setiap 1 poin Energy yang dikonsumsi, Burnice akan mengakumulasi 1,4 poin <color=#FFFFFF>Heat</color>. Saat akumulasi <color=#FFFFFF>Heat</color> mencapai 50 poin, Burnice akan memasuki status <color=#FFFFFF>Nitro-Fuel Cocktail</color> hingga semua <color=#FFFFFF>Heat</color> yang dimiliki habis dikonsumsi. Saat memulai pertarungan, Burnice akan langsung mengakumulasi 100 poin <color=#FFFFFF>Heat</color>.\n\nSaat berada dalam status <color=#FFFFFF>Nitro-Fuel Cocktail</color>, jika <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>, <color=#FFFFFF>Chain Attack: Fuel-Fed Flame</color>, atau <color=#FFFFFF>Ultimate: Glorious Inferno</color> Burnice mengenai musuh, Burnice akan memberikan efek <color=#FFFFFF>Scorched</color> kepada target tersebut hingga status <color=#FFFFFF>Nitro-Fuel Cocktail</color> Burnice berakhir.\n\nSaat Agen lain di dalam tim melancarkan serangan dan mengenai musuh yang berada dalam status <color=#FFFFFF>Scorched</color>, maka 8 poin <color=#FFFFFF>Heat</color> akan terkonsumsi, dan efek <color=#FFFFFF>Afterburn</color> akan terpicu, mengakibatkan <color=#FF5521>Fire DMG</color> senilai <color=#2BAD00>290%</color> ATK Burnice terhadap target tersebut, serta mengakumulasi <color=#FF5521>Fire Anomaly Buildup</color>. Efek ini dapat dipicu sekali setiap 1,5 detik.\n\nUntuk setiap 10 poin Anomaly Proficiency yang dimiliki, DMG yang diakibatkan <color=#FFFFFF>Afterburn</color> akan meningkat 1% (maks. meningkat 30%). DMG yang diakibatkan dari efek <color=#FFFFFF>Afterburn</color> akan dianggap sebagai DMG dari <color=#FFFFFF>Assist Attack</color>.",
+                "6": "Saat mengonsumsi Energy, Burnice akan mengakumulasi <color=#FFFFFF>Heat</color> (maks. 100 poin). Untuk setiap 1 poin Energy yang dikonsumsi, Burnice akan mengakumulasi 1,4 poin <color=#FFFFFF>Heat</color>. Saat akumulasi <color=#FFFFFF>Heat</color> mencapai 50 poin, Burnice akan memasuki status <color=#FFFFFF>Nitro-Fuel Cocktail</color> hingga semua <color=#FFFFFF>Heat</color> yang dimiliki habis dikonsumsi. Saat memulai pertarungan, Burnice akan langsung mengakumulasi 100 poin <color=#FFFFFF>Heat</color>.\n\nSaat berada dalam status <color=#FFFFFF>Nitro-Fuel Cocktail</color>, jika <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>, <color=#FFFFFF>Chain Attack: Fuel-Fed Flame</color>, atau <color=#FFFFFF>Ultimate: Glorious Inferno</color> Burnice mengenai musuh, Burnice akan memberikan efek <color=#FFFFFF>Scorched</color> kepada target tersebut hingga status <color=#FFFFFF>Nitro-Fuel Cocktail</color> Burnice berakhir.\n\nSaat Agen lain di dalam tim melancarkan serangan dan mengenai musuh yang berada dalam status <color=#FFFFFF>Scorched</color>, maka 8 poin <color=#FFFFFF>Heat</color> akan terkonsumsi, dan efek <color=#FFFFFF>Afterburn</color> akan terpicu, mengakibatkan <color=#FF5521>Fire DMG</color> senilai <color=#2BAD00>320%</color> ATK Burnice terhadap target tersebut, serta mengakumulasi <color=#FF5521>Fire Anomaly Buildup</color>. Efek ini dapat dipicu sekali setiap 1,5 detik.\n\nUntuk setiap 10 poin Anomaly Proficiency yang dimiliki, DMG yang diakibatkan <color=#FFFFFF>Afterburn</color> akan meningkat 1% (maks. meningkat 30%). DMG yang diakibatkan dari efek <color=#FFFFFF>Afterburn</color> akan dianggap sebagai DMG dari <color=#FFFFFF>Assist Attack</color>.",
+                "7": "Saat mengonsumsi Energy, Burnice akan mengakumulasi <color=#FFFFFF>Heat</color> (maks. 100 poin). Untuk setiap 1 poin Energy yang dikonsumsi, Burnice akan mengakumulasi 1,4 poin <color=#FFFFFF>Heat</color>. Saat akumulasi <color=#FFFFFF>Heat</color> mencapai 50 poin, Burnice akan memasuki status <color=#FFFFFF>Nitro-Fuel Cocktail</color> hingga semua <color=#FFFFFF>Heat</color> yang dimiliki habis dikonsumsi. Saat memulai pertarungan, Burnice akan langsung mengakumulasi 100 poin <color=#FFFFFF>Heat</color>.\n\nSaat berada dalam status <color=#FFFFFF>Nitro-Fuel Cocktail</color>, jika <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>, <color=#FFFFFF>Chain Attack: Fuel-Fed Flame</color>, atau <color=#FFFFFF>Ultimate: Glorious Inferno</color> Burnice mengenai musuh, Burnice akan memberikan efek <color=#FFFFFF>Scorched</color> kepada target tersebut hingga status <color=#FFFFFF>Nitro-Fuel Cocktail</color> Burnice berakhir.\n\nSaat Agen lain di dalam tim melancarkan serangan dan mengenai musuh yang berada dalam status <color=#FFFFFF>Scorched</color>, maka 8 poin <color=#FFFFFF>Heat</color> akan terkonsumsi, dan efek <color=#FFFFFF>Afterburn</color> akan terpicu, mengakibatkan <color=#FF5521>Fire DMG</color> senilai <color=#2BAD00>350%</color> ATK Burnice terhadap target tersebut, serta mengakumulasi <color=#FF5521>Fire Anomaly Buildup</color>. Efek ini dapat dipicu sekali setiap 1,5 detik.\n\nUntuk setiap 10 poin Anomaly Proficiency yang dimiliki, DMG yang diakibatkan <color=#FFFFFF>Afterburn</color> akan meningkat 1% (maks. meningkat 30%). DMG yang diakibatkan dari efek <color=#FFFFFF>Afterburn</color> akan dianggap sebagai DMG dari <color=#FFFFFF>Assist Attack</color>."
+            }
+        },
+        "MathSkill": {
+            "Title": "Additional Ability: Fire Kindling",
+            "Description": "Berlaku jika terdapat Agen <color=#FFFFFF>Anomaly</color> lainnya atau Agen yang berasal dari faksi yang sama di dalam tim:\nSaat <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color>, atau <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color> Burnice mengenai musuh, atau saat Burnice memicu efek <color=#FFFFFF>Afterburn</color>, maka <color=#FF5521>Fire Anomaly Buildup</color> yang diakibatkan dari Skill tersebut akan meningkat 65%. Saat salah satu Agen di dalam tim mengakibatkan efek <color=#FF5521>Burn</color> kepada musuh, durasi efek ini akan diperpanjang selama 3 detik."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "117100001": {
+                "Title": "Basic Attack: Direct Flame Blend",
+                "Description": "Tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMelancarkan hingga lima tahap serangan ke depan, mengakibatkan <color=#F0D12B>Physical DMG</color> dan <color=#FF5521>Fire DMG</color>."
+            },
+            "117100002": {
+                "Title": "Basic Attack: Mixed Flame Blend",
+                "Description": "Saat berada dalam status <color=#FFFFFF>Nitro-Fuel Cocktail</color>, tahan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nBerputar terus-menerus sambil menyemburkan api ke sekeliling, yang dilanjutkan dengan serangan terakhir yang mengakibatkan <color=#FF5521>Fire DMG</color>. Menahan tombol terus-menerus akan memperpanjang durasi semburan api.\nSaat melancarkan Skill ini, 20 poin <color=#FFFFFF>Heat</color> akan terkonsumsi.\nLevel Anti-Interrupt akan meningkat selama melancarkan Skill ini.\nSetelah melancarkan Serangan Terakhir, tekan <IconMap:Icon_SpecialReady> untuk lanjut melancarkan <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>."
+            },
+            "117100015": {
+                "Title": "Basic Attack: Direct Flame Blend"
+            },
+            "117100016": {
+                "Description": "Kelipatan DMG: Tahap 1",
+                "Param": "{Skill:1171001, Prop:1001}"
+            },
+            "117100017": {
+                "Description": "Kelipatan DMG: Tahap 2",
+                "Param": "{Skill:1171002, Prop:1001}"
+            },
+            "117100018": {
+                "Description": "Kelipatan DMG: Tahap 3",
+                "Param": "{Skill:1171003, Prop:1001}"
+            },
+            "117100019": {
+                "Description": "Kelipatan DMG: Tahap 4",
+                "Param": "{Skill:1171004, Prop:1001}"
+            },
+            "117100020": {
+                "Description": "Kelipatan DMG: Tahap 5",
+                "Param": "{Skill:1171005, Prop:1001}"
+            },
+            "117100021": {
+                "Description": "Kelipatan Daze: Tahap 1",
+                "Param": "{Skill:1171001, Prop:1002}"
+            },
+            "117100022": {
+                "Description": "Kelipatan Daze: Tahap 2",
+                "Param": "{Skill:1171002, Prop:1002}"
+            },
+            "117100023": {
+                "Description": "Kelipatan Daze: Tahap 3",
+                "Param": "{Skill:1171003, Prop:1002}"
+            },
+            "117100024": {
+                "Description": "Kelipatan Daze: Tahap 4",
+                "Param": "{Skill:1171004, Prop:1002}"
+            },
+            "117100025": {
+                "Description": "Kelipatan Daze: Tahap 5",
+                "Param": "{Skill:1171005, Prop:1002}"
+            },
+            "117100026": {
+                "Title": "Basic Attack: Mixed Flame Blend"
+            },
+            "117100027": {
+                "Description": "Kelipatan DMG - Semburan Api",
+                "Param": "{Skill:1171006, Prop:1001}"
+            },
+            "117100028": {
+                "Description": "Kelipatan DMG - Serangan Terakhir",
+                "Param": "{Skill:1171007, Prop:1001}"
+            },
+            "117100029": {
+                "Description": "Kelipatan Daze - Semburan Api",
+                "Param": "{Skill:1171006, Prop:1002}"
+            },
+            "117100030": {
+                "Description": "Kelipatan Daze - Serangan Terakhir",
+                "Param": "{Skill:1171007, Prop:1002}"
+            }
+        },
+        "1": {
+            "117100003": {
+                "Title": "Special Attack: Intense Heat Aging Method",
+                "Description": "Tekan <IconMap:Icon_Special> untuk melancarkan Skill ini.\nMelancarkan ledakan api ke depan dan mengakibatkan <color=#FF5521>Fire DMG</color>.\nTahan <IconMap:Icon_Special> untuk mengisi Charge dan meningkatkan kekuatan Skill.\nLevel Anti-Interrupt akan meningkat selama melancarkan Skill ini."
+            },
+            "117100004": {
+                "Title": "EX Special Attack: Intense Heat Stirring Method",
+                "Description": "Saat Energy Burnice sudah cukup, tekan <IconMap:Icon_SpecialReady> untuk melancarkan Skill ini.\nMenggunakan pelontar api dengan satu tangannya untuk menyemburkan api secara terus-menerus, yang dilanjutkan dengan ledakan api ke depan yang mengakibatkan <color=#FF5521>Fire DMG</color> dalam jumlah besar ke garis lurus di depan. Jika tombolnya terus ditahan, Energy akan terus dikonsumsi, dan durasi semburan api akan diperpanjang.\nSaat menyemburkan api, gerakkan {LAYOUT_CONSOLECONTROLLER#tuas}{LAYOUT_FALLBACK#<IconMap:Icon_JoyStick>} untuk melakukan Dodge ke samping dan menyesuaikan posisi tubuh ke arah yang sesuai.\nSelama menyemburkan api, Level Anti-Interrupt akan meningkat dan DMG yang diterima berkurang 40%.\nKarakter akan menjadi kebal saat melakukan Dodge ke samping dan mengakibatkan ledakan api."
+            },
+            "117100005": {
+                "Title": "EX Special Attack: Intense Heat Stirring Method - Double Shot",
+                "Description": "Saat Energy Burnice sudah cukup, tekan <IconMap:Icon_SpecialReady> setelah melancarkan <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color> untuk melancarkan Skill ini.\nMenggunakan pelontar api dengan kedua tangannya untuk menyemburkan api secara terus-menerus, lalu dilanjutkan dengan ledakan api kuat yang mengakibatkan <color=#FF5521>Fire DMG</color> dalam jumlah besar ke garis lurus di depan. Jika tombolnya terus ditahan, Energy akan terus dikonsumsi, dan durasi semburan api akan diperpanjang.\nKarakter akan menjadi kebal saat menyemburkan api dan saat melancarkan ledakan api.\nSelama menyemburkan api, Level Anti-Interrupt akan meningkat dan DMG yang diterima berkurang 40%."
+            },
+            "117100031": {
+                "Title": "Special Attack: Intense Heat Aging Method"
+            },
+            "117100032": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1171008, Prop:1001}"
+            },
+            "117100033": {
+                "Description": "Kelipatan DMG - Charged Attack",
+                "Param": "{Skill:1171009, Prop:1001}"
+            },
+            "117100034": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1171008, Prop:1002}"
+            },
+            "117100035": {
+                "Description": "Kelipatan Daze - Charged Attack",
+                "Param": "{Skill:1171009, Prop:1002}"
+            },
+            "117100036": {
+                "Title": "EX Special Attack: Intense Heat Stirring Method"
+            },
+            "117100037": {
+                "Description": "Kelipatan DMG - Semburan Api",
+                "Param": "{Skill:1171010, Prop:1001}"
+            },
+            "117100038": {
+                "Description": "Kelipatan Daze- Semburan Api",
+                "Param": "{Skill:1171010, Prop:1002}"
+            },
+            "117100039": {
+                "Description": "Kelipatan DMG - Ledakan Api",
+                "Param": "{Skill:1171011, Prop:1001}"
+            },
+            "117100040": {
+                "Description": "Kelipatan Daze - Ledakan Api",
+                "Param": "{Skill:1171011, Prop:1002}"
+            },
+            "117100041": {
+                "Description": "Konsumsi Energy",
+                "Param": "40 poin"
+            },
+            "117100042": {
+                "Description": "Konsumsi Energy - Semburan Api",
+                "Param": "12,5 poin/detik"
+            },
+            "117100043": {
+                "Description": "Konsumsi Energy - Ledakan Api",
+                "Param": "5 poin"
+            },
+            "117100044": {
+                "Title": "EX Special Attack: Intense Heat Stirring Method - Double Shot"
+            },
+            "117100045": {
+                "Description": "Kelipatan DMG - Semburan Api",
+                "Param": "{Skill:1171012, Prop:1001}"
+            },
+            "117100046": {
+                "Description": "Kelipatan Daze - Semburan Api",
+                "Param": "{Skill:1171012, Prop:1002}"
+            },
+            "117100047": {
+                "Description": "Kelipatan DMG - Ledakan Api",
+                "Param": "{Skill:1171013, Prop:1001}"
+            },
+            "117100048": {
+                "Description": "Kelipatan Daze - Ledakan Api",
+                "Param": "{Skill:1171013, Prop:1002}"
+            },
+            "117100049": {
+                "Description": "Konsumsi Energy",
+                "Param": "10 poin"
+            },
+            "117100050": {
+                "Description": "Konsumsi Energy - Semburan Api",
+                "Param": "25 poin/detik"
+            },
+            "117100051": {
+                "Description": "Konsumsi Energy - Ledakan Api",
+                "Param": "10 poin"
+            }
+        },
+        "2": {
+            "117100006": {
+                "Title": "Dodge: Fiery Phantom Dash",
+                "Description": "Tekan <IconMap:Icon_Evade> untuk melakukan Dodge.\nMelakukan Dodge dengan cepat.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "117100007": {
+                "Title": "Dash Attack: Dangerous Fermentation",
+                "Description": "Tekan <IconMap:Icon_Normal> saat melakukan Dodge untuk melancarkan Skill ini.\nMengayunkan pelontar api dan melancarkan serangan menerjang ke depan, mengakibatkan <color=#FF5521>Fire DMG</color>."
+            },
+            "117100008": {
+                "Title": "Dodge Counter: Fluttering Steps",
+                "Description": "Tekan <IconMap:Icon_Normal> setelah melakukan <color=#FFFFFF>Perfect Dodge</color> untuk melancarkan Skill ini.\nMelancarkan serangan beruntun dan semburan api terhadap musuh di depan, mengakibatkan <color=#F0D12B>Physical DMG</color> dan <color=#FF5521>Fire DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "117100052": {
+                "Title": "Dash Attack: Dangerous Fermentation"
+            },
+            "117100053": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1171014, Prop:1001}"
+            },
+            "117100054": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1171014, Prop:1002}"
+            },
+            "117100055": {
+                "Title": "Dodge Counter: Fluttering Steps"
+            },
+            "117100056": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1171015, Prop:1001}"
+            },
+            "117100057": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1171015, Prop:1002}"
+            }
+        },
+        "3": {
+            "117100009": {
+                "Title": "Chain Attack: Fuel-Fed Flame",
+                "Description": "Saat <color=#FFFFFF>Chain Attack</color> terpicu, pilih Burnice untuk melancarkan Skill ini.\nMenerjang dengan cepat dan menyemburkan api ke sekeliling, yang dilanjutkan dengan ledakan api yang mengakibatkan <color=#FF5521>Fire DMG</color> dalam jumlah besar ke jangkauan area berbentuk kipas di depan.\nKarakter akan menjadi kebal selama melancarkan Skill ini.\nSetelah melancarkan Skill, tekan <IconMap:Icon_SpecialReady> untuk lanjut melancarkan <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>."
+            },
+            "117100010": {
+                "Title": "Ultimate: Glorious Inferno",
+                "Description": "Saat Decibel Rating mencapai <color=#FFFFFF>Maximum</color>, tekan <IconMap:Icon_UltimateReady> untuk melancarkan Skill ini.\nMelompat ke udara setelah menerjang dengan cepat, lalu menyemburkan api secara terus-menerus dalam area besar di depan dan mengakibatkan <color=#FF5521>Fire DMG</color> dalam jumlah besar.\nSaat melompat ke udara, <color=#FFFFFF>Quick Assist</color> akan terpicu. Jika <color=#FFFFFF>Quick Assist</color> dilancarkan, Burnice akan memperpanjang durasi semburan api.\nSaat melancarkan Skill ini, akan memulihkan 50 poin <color=#FFFFFF>Heat</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "117100058": {
+                "Title": "Chain Attack: Fuel-Fed Flame"
+            },
+            "117100059": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1171016, Prop:1001}"
+            },
+            "117100060": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1171016, Prop:1002}"
+            },
+            "117100061": {
+                "Title": "Ultimate: Glorious Inferno"
+            },
+            "117100062": {
+                "Description": "Maks. Kelipatan DMG",
+                "Param": "{Skill:1171017, Prop:1001}"
+            },
+            "117100063": {
+                "Description": "Maks. Kelipatan Daze",
+                "Param": "{Skill:1171017, Prop:1002}"
+            }
+        },
+        "6": {
+            "117100012": {
+                "Title": "Quick Assist: Energizing Specialty Drink",
+                "Description": "Saat Agen yang Dikendalikan terhempas, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nMelancarkan serangan beruntun terhadap musuh di depan dan melancarkan semburan api, mengakibatkan <color=#F0D12B>Physical DMG</color> dan <color=#FF5521>Fire DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "117100013": {
+                "Title": "Defensive Assist: Smoky Cauldron",
+                "Description": "Tepat sebelum Agen aktif diserang, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nMenangkis serangan musuh dan mengakibatkan Daze dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "117100014": {
+                "Title": "Assist Follow-Up: Scorching Dew",
+                "Description": "Setelah melancarkan <color=#FFFFFF>Defensive Assist</color>, tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMelompat ke udara, lalu berputar dengan cepat ke depan, dan menyemburkan api ke sekeliling, mengakibatkan <color=#FF5521>Fire DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini.\nSetelah melancarkan Skill, tekan <IconMap:Icon_SpecialReady> untuk lanjut melancarkan <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>."
+            },
+            "117100064": {
+                "Title": "Quick Assist: Energizing Specialty Drink"
+            },
+            "117100065": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1171018, Prop:1001}"
+            },
+            "117100066": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1171018, Prop:1002}"
+            },
+            "117100067": {
+                "Title": "Defensive Assist: Smoky Cauldron"
+            },
+            "117100068": {
+                "Description": "Kelipatan Daze - Light Defensive",
+                "Param": "{Skill:1171019, Prop:1002}"
+            },
+            "117100069": {
+                "Description": "Kelipatan Daze - Heavy Defensive",
+                "Param": "{Skill:1171020, Prop:1002}"
+            },
+            "117100070": {
+                "Description": "Kelipatan Daze - Chain Defensive",
+                "Param": "{Skill:1171021, Prop:1002}"
+            },
+            "117100071": {
+                "Title": "Assist Follow-Up: Scorching Dew"
+            },
+            "117100072": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1171022, Prop:1001}"
+            },
+            "117100073": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1171022, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1171001": {
+            "DamageValue": 4480,
+            "DamageGrowth": 410,
+            "DazeValue": 1870,
+            "DazeGrowth": 90
+        },
+        "1171002": {
+            "DamageValue": 4350,
+            "DamageGrowth": 400,
+            "DazeValue": 3080,
+            "DazeGrowth": 140
+        },
+        "1171003": {
+            "DamageValue": 7170,
+            "DamageGrowth": 660,
+            "DazeValue": 4780,
+            "DazeGrowth": 220
+        },
+        "1171004": {
+            "DamageValue": 6660,
+            "DamageGrowth": 610,
+            "DazeValue": 3040,
+            "DazeGrowth": 140
+        },
+        "1171005": {
+            "DamageValue": 9630,
+            "DamageGrowth": 880,
+            "DazeValue": 5200,
+            "DazeGrowth": 240
+        },
+        "1171006": {
+            "DamageValue": 12540,
+            "DamageGrowth": 1140,
+            "DazeValue": 9650,
+            "DazeGrowth": 440
+        },
+        "1171007": {
+            "DamageValue": 23280,
+            "DamageGrowth": 2120,
+            "DazeValue": 17910,
+            "DazeGrowth": 820
+        },
+        "1171008": {
+            "DamageValue": 5780,
+            "DamageGrowth": 530,
+            "DazeValue": 5780,
+            "DazeGrowth": 270
+        },
+        "1171009": {
+            "DamageValue": 6240,
+            "DamageGrowth": 570,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1171010": {
+            "DamageValue": 54380,
+            "DamageGrowth": 4950,
+            "DazeValue": 37860,
+            "DazeGrowth": 1730
+        },
+        "1171011": {
+            "DamageValue": 9670,
+            "DamageGrowth": 880,
+            "DazeValue": 6570,
+            "DazeGrowth": 300
+        },
+        "1171012": {
+            "DamageValue": 95810,
+            "DamageGrowth": 8710,
+            "DazeValue": 58570,
+            "DazeGrowth": 2670
+        },
+        "1171013": {
+            "DamageValue": 28710,
+            "DamageGrowth": 2610,
+            "DazeValue": 20780,
+            "DazeGrowth": 950
+        },
+        "1171014": {
+            "DamageValue": 6790,
+            "DamageGrowth": 620,
+            "DazeValue": 3400,
+            "DazeGrowth": 160
+        },
+        "1171015": {
+            "DamageValue": 21970,
+            "DamageGrowth": 2000,
+            "DazeValue": 19440,
+            "DazeGrowth": 890
+        },
+        "1171016": {
+            "DamageValue": 68090,
+            "DamageGrowth": 6190,
+            "DazeValue": 24200,
+            "DazeGrowth": 1100
+        },
+        "1171017": {
+            "DamageValue": 201220,
+            "DamageGrowth": 18300,
+            "DazeValue": 10640,
+            "DazeGrowth": 490
+        },
+        "1171018": {
+            "DamageValue": 8440,
+            "DamageGrowth": 770,
+            "DazeValue": 8440,
+            "DazeGrowth": 390
+        },
+        "1171019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1171020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1171021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1171022": {
+            "DamageValue": 32760,
+            "DamageGrowth": 2980,
+            "DazeValue": 28240,
+            "DazeGrowth": 1290
+        },
+        "1171023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1171024": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

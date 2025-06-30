@@ -1,0 +1,568 @@
+{
+    "Name": "니콜",
+    "ElementTypes": [
+        "Ether"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "증압 강화탄",
+            "Description": "<color=#FFFFFF>[강화 특수 스킬]</color>로 주는 피해 및 누적하는 속성 이상 축적치가 16% 증가한다. <color=#FFFFFF>[강화 특수 스킬]</color> 시전 시 차지 시간이 0.1초 증가할 때마다 목표 지점에 생성되는 에너지장의 지속 시간이 0.15초 증가한다.",
+            "Lore": "「너희는 강해졌어. 어서 돌격해!」\n「뭐? 나, 난 이 틈에 도망칠 생각 아니었거든. 그저 휴식이 필요했을 뿐이라고!」"
+        },
+        "2": {
+            "Title": "에너지 응집 장치",
+            "Description": "<color=#FFFFFF>[핵심 패시브: 트릭 상자]</color>의 디버프 효과 발동 시 니콜이 에너지를 5pt 회복한다. 15초 동안 최대 1회 발동한다.",
+            "Lore": "「1초 증가했다고 무시하지 마!」\n「1초 안에 얼마나 많은 가치를 만들어 낼 수 있는지 알아? 셀 수도 없다고!」\n「그러니까 보조금을 10% 더 달라는 건 지나친 요구가 아니지?」"
+        },
+        "3": {
+            "Title": "교활한 토끼의 지혜",
+            "Description": "<color=#FFFFFF>[일반 공격]</color>, <color=#FFFFFF>[회피]</color>, <color=#FFFFFF>[지원 스킬]</color>, <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[콤보 스킬]</color>의 스킬 레벨+2",
+            "Lore": "전투력이 세지도 않고 자원이 풍부한 것도 아닌데 니콜이 교활한 토끼굴을 지금껏 이끌어 올 수 있었던 것은\n그녀의 명석한 두뇌 때문이다."
+        },
+        "4": {
+            "Title": "영역 확장",
+            "Description": "니콜이 <color=#FFFFFF>[강화 특수 스킬]</color>, <color=#FFFFFF>[콤보 스킬]</color>, <color=#FFFFFF>[궁극기]</color> 시전 시 목표 지점에 생성되는 에너지장의 공격 범위가 증가한다. (직경+3m)",
+            "Lore": "「여기, 그리고 여기, 앞으로 모두 교활한 토끼굴의 영역이 될 거야. 알아들었어?!」\n「뭐? 얼마 뒤냐고?」\n「음… 지금 우리 수익으로 계산하면 겨우 10,000년 정도야!」"
+        },
+        "5": {
+            "Title": "업계 유명 인사",
+            "Description": "<color=#FFFFFF>[일반 공격]</color>, <color=#FFFFFF>[회피]</color>, <color=#FFFFFF>[지원 스킬]</color>, <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[콤보 스킬]</color>의 스킬 레벨+2",
+            "Lore": "업계에 적이 많은 것은 사실이지만 니콜이 여러 차례 부하들을 이끌고 위험한 상황에서 구사일생으로 살아 돌아왔기에\n교활한 토끼굴의 유명세와 경험치도 꾸준히 향상되었다."
+        },
+        "6": {
+            "Title": "침식 에너지장",
+            "Description": "에너지장이 적에게 피해를 줄 시 해당 타깃에 대한 모든 유닛의 치명타 확률이 1.5% 증가한다. 최대 중첩: 10스택, 지속 시간: 12초, 각 스택의 지속 시간은 따로 계산된다.",
+            "Lore": "더욱 높은 등급의 기계 탄약 사용, 더 강력한 화력과 농축된 에테르 물질의 함량 증가, 더 강한 피해, 더 길어진 지속 시간…\n물론 더 비싸진 가격"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "핵심 패시브: 트릭 상자",
+            "DescriptionByLevel": {
+                "1": "니콜이 <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[강화 특수 스킬]</color>, <color=#FFFFFF>[콤보 스킬]</color>, <color=#FFFFFF>[궁극기]</color> 등의 스킬을 사용 중일 때 총알을 장전하고 <color=#FFFFFF>[일반 공격]</color> 및 <color=#FFFFFF>[대시 공격]</color>을 강화한다. 강화 총알 혹은 에너지장이 적에게 명중 시 타깃의 방어력이 <color=#2BAD00>20%</color> 감소한다. 지속 시간: 3.5초",
+                "2": "니콜이 <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[강화 특수 스킬]</color>, <color=#FFFFFF>[콤보 스킬]</color>, <color=#FFFFFF>[궁극기]</color> 등의 스킬을 사용 중일 때 총알을 장전하고 <color=#FFFFFF>[일반 공격]</color> 및 <color=#FFFFFF>[대시 공격]</color>을 강화한다. 강화 총알 혹은 에너지장이 적에게 명중 시 타깃의 방어력이 <color=#2BAD00>25%</color> 감소한다. 지속 시간: 3.5초",
+                "3": "니콜이 <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[강화 특수 스킬]</color>, <color=#FFFFFF>[콤보 스킬]</color>, <color=#FFFFFF>[궁극기]</color> 등의 스킬을 사용 중일 때 총알을 장전하고 <color=#FFFFFF>[일반 공격]</color> 및 <color=#FFFFFF>[대시 공격]</color>을 강화한다. 강화 총알 혹은 에너지장이 적에게 명중 시 타깃의 방어력이 <color=#2BAD00>30%</color> 감소한다. 지속 시간: 3.5초",
+                "4": "니콜이 <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[강화 특수 스킬]</color>, <color=#FFFFFF>[콤보 스킬]</color>, <color=#FFFFFF>[궁극기]</color> 등의 스킬을 사용 중일 때 총알을 장전하고 <color=#FFFFFF>[일반 공격]</color> 및 <color=#FFFFFF>[대시 공격]</color>을 강화한다. 강화 총알 혹은 에너지장이 적에게 명중 시 타깃의 방어력이 <color=#2BAD00>34%</color> 감소한다. 지속 시간: 3.5초",
+                "5": "니콜이 <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[강화 특수 스킬]</color>, <color=#FFFFFF>[콤보 스킬]</color>, <color=#FFFFFF>[궁극기]</color> 등의 스킬을 사용 중일 때 총알을 장전하고 <color=#FFFFFF>[일반 공격]</color> 및 <color=#FFFFFF>[대시 공격]</color>을 강화한다. 강화 총알 혹은 에너지장이 적에게 명중 시 타깃의 방어력이 <color=#2BAD00>36%</color> 감소한다. 지속 시간: 3.5초",
+                "6": "니콜이 <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[강화 특수 스킬]</color>, <color=#FFFFFF>[콤보 스킬]</color>, <color=#FFFFFF>[궁극기]</color> 등의 스킬을 사용 중일 때 총알을 장전하고 <color=#FFFFFF>[일반 공격]</color> 및 <color=#FFFFFF>[대시 공격]</color>을 강화한다. 강화 총알 혹은 에너지장이 적에게 명중 시 타깃의 방어력이 <color=#2BAD00>38%</color> 감소한다. 지속 시간: 3.5초",
+                "7": "니콜이 <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[강화 특수 스킬]</color>, <color=#FFFFFF>[콤보 스킬]</color>, <color=#FFFFFF>[궁극기]</color> 등의 스킬을 사용 중일 때 총알을 장전하고 <color=#FFFFFF>[일반 공격]</color> 및 <color=#FFFFFF>[대시 공격]</color>을 강화한다. 강화 총알 혹은 에너지장이 적에게 명중 시 타깃의 방어력이 <color=#2BAD00>40%</color> 감소한다. 지속 시간: 3.5초"
+            }
+        },
+        "MathSkill": {
+            "Title": "추가 능력: 교토삼굴",
+            "Description": "파티에 자신과 속성 혹은 진영이 같은 캐릭터가 존재할 시 발동:\n니콜이 <color=#FFFFFF>[핵심 패시브: 트릭 상자]</color>로 적에게 디버프 효과를 부여할 시 모든 유닛이 타깃에게 주는 <color=#FE437E>에테르 피해</color>가 추가로 25% 증가한다. 지속 시간: 3.5초"
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "103100001": {
+                "Title": "일반 공격: 교활한 토끼 연타",
+                "Description": "<IconMap:Icon_Normal>을 짧게 탭하여 시전:\n전방을 향해 최대 3단까지 타격을 펼쳐 <color=#F0D12B>물리 피해</color>를 준다."
+            },
+            "103100002": {
+                "Title": "일반 공격: 내 맘대로",
+                "Description": "<color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[강화 특수 스킬]</color>, <color=#FFFFFF>[콤보 스킬]</color>, <color=#FFFFFF>[궁극기]</color> 등 스킬 시전 후 총알을 장전하고 <color=#FFFFFF>[일반 공격]</color> 및 <color=#FFFFFF>[대시 공격]</color>을 강화하여 총알의 위력을 높일 수 있다."
+            },
+            "103110001": {
+                "Title": "일반 공격: 교활한 토끼 연타"
+            },
+            "103110002": {
+                "Description": "1단 피해 배율",
+                "Param": "{Skill:1031001, Prop:1001} + {{Skill:1031002, Prop:1001}/3}*3"
+            },
+            "103110003": {
+                "Description": "2단 피해 배율",
+                "Param": "{Skill:1031004, Prop:1001} + {{Skill:1031005, Prop:1001}/4}*4"
+            },
+            "103110004": {
+                "Description": "3단 피해 배율",
+                "Param": "{Skill:1031007, Prop:1001} + {{Skill:1031008, Prop:1001}/20}*20"
+            },
+            "103110005": {
+                "Description": "1단 그로기 배율",
+                "Param": "{Skill:1031001, Prop:1002} + {{Skill:1031002, Prop:1002}/3}*3"
+            },
+            "103110006": {
+                "Description": "2단 그로기 배율",
+                "Param": "{Skill:1031004, Prop:1002} + {{Skill:1031005, Prop:1002}/4}*4"
+            },
+            "103110007": {
+                "Description": "3단 그로기 배율",
+                "Param": "{Skill:1031007, Prop:1002} + {{Skill:1031008, Prop:1002}/20}*20"
+            },
+            "103110008": {
+                "Title": "일반 공격: 내 맘대로"
+            },
+            "103110009": {
+                "Description": "1단 피해 배율",
+                "Param": "{Skill:1031001, Prop:1001} + {{Skill:1031003, Prop:1001}/3}*3"
+            },
+            "103110010": {
+                "Description": "2단 피해 배율",
+                "Param": "{Skill:1031004, Prop:1001} + {{Skill:1031006, Prop:1001}/4}*4"
+            },
+            "103110011": {
+                "Description": "3단 피해 배율",
+                "Param": "{Skill:1031007, Prop:1001} + {{Skill:1031009, Prop:1001}/20}*20"
+            },
+            "103110012": {
+                "Description": "1단 그로기 배율",
+                "Param": "{Skill:1031001, Prop:1002} + {{Skill:1031003, Prop:1002}/3}*3"
+            },
+            "103110013": {
+                "Description": "2단 그로기 배율",
+                "Param": "{Skill:1031004, Prop:1002} + {{Skill:1031006, Prop:1002}/4}*4"
+            },
+            "103110014": {
+                "Description": "3단 그로기 배율",
+                "Param": "{Skill:1031007, Prop:1002} + {{Skill:1031009, Prop:1002}/20}*20"
+            }
+        },
+        "1": {
+            "103100003": {
+                "Title": "특수 스킬: 사탕발림 포탄",
+                "Description": "<IconMap:Icon_Special>을 짧게 탭하여 시전:\n전방의 적에게 원거리 타격으로 <color=#FE437E>에테르 피해</color>를 준다.\n스킬을 시전하는 동안 경직 저항 레벨이 증가한다.\n스킬 시전 후 자동으로 총알을 장전하고 <color=#FFFFFF>[일반 공격]</color> 및 <color=#FFFFFF>[대시 공격]</color>을 강화한다. 최대 발동: 8회"
+            },
+            "103100004": {
+                "Title": "강화 특수 스킬: 빵빵한 사탕발림 포탄",
+                "Description": "에너지가 충분한 상태에서 <IconMap:Icon_SpecialReady>을 짧게 탭하여 시전:\n전방의 적에게 강력한 원거리 타격을 시전하고, 목표 지점에 에너지장을 생성해 적을 지속적으로 끌어당겨 <color=#FE437E>에테르 피해</color>를 준다.\n<IconMap:Icon_SpecialReady>을 홀드하면 차지를 진행해 포구에 소형 에너지장을 생성하고, 에너지를 지속적으로 소모하며 근처 적에게 추가 피해를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다.\n스킬이 적에게 명중 시 <color=#FFFFFF>[빠른 지원]</color>을 발동한다.\n스킬 시전 후 자동으로 총알을 장전하고 <color=#FFFFFF>[일반 공격]</color> 및 <color=#FFFFFF>[대시 공격]</color>을 강화한다. 최대 발동: 8회"
+            },
+            "103110015": {
+                "Title": "특수 스킬: 사탕발림 포탄"
+            },
+            "103110016": {
+                "Description": "피해 배율",
+                "Param": "{{Skill:1031101, Prop:1001} + {Skill:1031102, Prop:1001}}"
+            },
+            "103110017": {
+                "Description": "그로기 배율",
+                "Param": "{{Skill:1031101, Prop:1002} + {Skill:1031102, Prop:1002}}"
+            },
+            "103110018": {
+                "Title": "강화 특수 스킬: 빵빵한 사탕발림 포탄"
+            },
+            "103110019": {
+                "Description": "차지 피해 배율",
+                "Param": "{Skill:1031103, Prop:1001}"
+            },
+            "103110020": {
+                "Description": "포격 피해 배율",
+                "Param": "{{Skill:1031104, Prop:1001} + {Skill:1031105, Prop:1001}}"
+            },
+            "103110021": {
+                "Description": "에너지장 피해 배율",
+                "Param": "{Skill:1031106, Prop:1001}"
+            },
+            "103110022": {
+                "Description": "차지 그로기 배율",
+                "Param": "{Skill:1031103, Prop:1002}"
+            },
+            "103110023": {
+                "Description": "포격 그로기 배율",
+                "Param": "{{Skill:1031104, Prop:1002} + {Skill:1031105, Prop:1002}}"
+            },
+            "103110024": {
+                "Description": "에너지장 그로기 배율",
+                "Param": "{Skill:1031106, Prop:1002}"
+            },
+            "103110025": {
+                "Description": "차지 에너지 소모",
+                "Param": "20pt/초"
+            },
+            "103110026": {
+                "Description": "포격 에너지 소모",
+                "Param": "60pt"
+            }
+        },
+        "2": {
+            "103100005": {
+                "Title": "회피: 달아나는 토끼",
+                "Description": "<IconMap:Icon_Evade>을 짧게 탭하여 시전:\n빠른 대시로 회피한다.\n스킬을 시전하는 동안 무적 효과를 보유한다.\n{LAYOUT_CONSOLECONTROLLER#스틱을}{LAYOUT_FALLBACK#방향키를} 움직여 회피 시전 시 <IconMap:Icon_Evade>을 홀드하면 회피 도중 총알을 장전하고 <color=#FFFFFF>[일반 공격]</color> 및 <color=#FFFFFF>[대시 공격]</color>을 강화할 수 있다. 최대 발동: 8회"
+            },
+            "103100006": {
+                "Title": "대시 공격: 깜짝 언박싱",
+                "Description": "{LAYOUT_CONSOLECONTROLLER#스틱을}{LAYOUT_FALLBACK#방향키를} 움직여 회피 시전 후 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n상응하는 방향으로 대시하는 동시에 주변의 적을 타격해 <color=#F0D12B>물리 피해</color>를 준다.\n{LAYOUT_CONSOLECONTROLLER#스틱을}{LAYOUT_FALLBACK#방향키를} 움직이지 않고 회피 시전 후 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n뒤로 회피하고 전방의 적에게 원거리 타격으로 <color=#F0D12B>물리 피해</color>를 준다.\n스킬 시전 후 자동으로 총알을 장전하고 <color=#FFFFFF>[일반 공격]</color> 및 <color=#FFFFFF>[대시 공격]</color>을 강화한다. 최대 발동: 8회"
+            },
+            "103100007": {
+                "Title": "회피 반격: 견제 포격",
+                "Description": "<color=#FFFFFF>[극한 회피]</color> 발동 후 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n뒤로 회피하고 전방의 적에게 원거리 타격으로 <color=#FE437E>에테르 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다.\n스킬 시전 후 자동으로 총알을 장전하고 <color=#FFFFFF>[일반 공격]</color> 및 <color=#FFFFFF>[대시 공격]</color>을 강화한다. 최대 발동: 8회"
+            },
+            "103110027": {
+                "Title": "대시 공격: 깜짝 언박싱"
+            },
+            "103110028": {
+                "Description": "전방 회피 공격 피해 배율",
+                "Param": "{Skill:1031201, Prop:1001} + {{Skill:1031202, Prop:1001}/13}*13"
+            },
+            "103110029": {
+                "Description": "후방 회피 공격 피해 배율",
+                "Param": "{Skill:1031204, Prop:1001}"
+            },
+            "103110030": {
+                "Description": "전방 회피 공격 그로기 배율",
+                "Param": "{Skill:1031201, Prop:1002} + {{Skill:1031202, Prop:1002}/13}*13"
+            },
+            "103110031": {
+                "Description": "후방 회피 공격 그로기 배율",
+                "Param": "{Skill:1031204, Prop:1002}"
+            },
+            "103110032": {
+                "Title": "대시 공격: 내 맘대로"
+            },
+            "103110033": {
+                "Description": "전방 회피 공격 피해 배율",
+                "Param": "{Skill:1031201, Prop:1001} + {{Skill:1031203, Prop:1001}/13}*13"
+            },
+            "103110034": {
+                "Description": "전방 회피 공격 그로기 배율",
+                "Param": "{Skill:1031201, Prop:1002} + {{Skill:1031203, Prop:1002}/13}*13"
+            },
+            "103110035": {
+                "Title": "회피 반격: 견제 포격"
+            },
+            "103110036": {
+                "Description": "피해 배율",
+                "Param": "{{Skill:1031205, Prop:1001} + {Skill:1031206, Prop:1001}}"
+            },
+            "103110037": {
+                "Description": "그로기 배율",
+                "Param": "{{Skill:1031205, Prop:1002} + {Skill:1031206, Prop:1002}}"
+            }
+        },
+        "3": {
+            "103100008": {
+                "Title": "콤보 스킬: 고가 에테르 폭탄",
+                "Description": "<color=#FFFFFF>[콤보 스킬]</color> 발동 시 해당 캐릭터를 선택해 시전:\n전방 작은 범위 내 적에게 강력한 원거리 타격을 시전하고, 목표 지점에 에너지장을 생성해 지속적으로 주변의 적을 끌어당겨 <color=#FE437E>에테르 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다.\n스킬이 적에게 명중 시 <color=#FFFFFF>[빠른 지원]</color>을 발동한다.\n스킬 시전 후 자동으로 총알을 장전하고 <color=#FFFFFF>[일반 공격]</color> 및 <color=#FFFFFF>[대시 공격]</color>을 강화한다. 최대 발동: 8회"
+            },
+            "103100009": {
+                "Title": "궁극기: 특제 에테르 유탄",
+                "Description": "데시벨 레벨 <color=#FFFFFF>[Maximum]</color> 달성 시 <IconMap:Icon_UltimateReady>을 짧게 탭하여 시전:\n전방 작은 범위 내 적에게 강력한 원거리 타격을 시전하고, 목표 지점에 에너지장을 생성해 지속적으로 주변의 적을 끌어당겨 <color=#FE437E>에테르 피해</color>를 준다.\n스킬 시전 시 파티 내 다른 캐릭터가 에너지를 10pt 회복하고, 다음번에 교체 출전하는 캐릭터는 에너지를 추가로 20pt 회복한다.\n스킬을 시전하는 동안 무적 효과를 보유한다.\n스킬이 적에게 명중 시 <color=#FFFFFF>[빠른 지원]</color>을 발동한다.\n스킬 시전 후 자동으로 총알을 장전하고 <color=#FFFFFF>[일반 공격]</color> 및 <color=#FFFFFF>[대시 공격]</color>을 강화한다. 최대 발동: 8회"
+            },
+            "103110038": {
+                "Title": "콤보 스킬: 고가 에테르 폭탄"
+            },
+            "103110039": {
+                "Description": "포격 피해 배율",
+                "Param": "{{Skill:1031301, Prop:1001} + {Skill:1031302, Prop:1001}}"
+            },
+            "103110040": {
+                "Description": "에너지장 피해 배율",
+                "Param": "{Skill:1031303, Prop:1001}"
+            },
+            "103110041": {
+                "Description": "포격 그로기 배율",
+                "Param": "{{Skill:1031301, Prop:1002} + {Skill:1031302, Prop:1002}}"
+            },
+            "103110042": {
+                "Description": "에너지장 그로기 배율",
+                "Param": "{Skill:1031303, Prop:1002}"
+            },
+            "103110043": {
+                "Title": "궁극기: 특제 에테르 유탄"
+            },
+            "103110044": {
+                "Description": "포격 피해 배율",
+                "Param": "{Skill:1031304, Prop:1001}"
+            },
+            "103110045": {
+                "Description": "에너지장 피해 배율",
+                "Param": "{Skill:1031305, Prop:1001}"
+            },
+            "103110046": {
+                "Description": "포격 그로기 배율",
+                "Param": "{Skill:1031304, Prop:1002}"
+            },
+            "103110047": {
+                "Description": "에너지장 그로기 배율",
+                "Param": "{Skill:1031305, Prop:1002}"
+            }
+        },
+        "6": {
+            "103100011": {
+                "Title": "빠른 지원: 응급 포격",
+                "Description": "현재 조작 중인 캐릭터가 넉업되면 <IconMap:Icon_Switch>을 짧게 탭하여 시전:\n뒤로 회피하고 전방의 적에게 원거리 타격으로 <color=#FE437E>에테르 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다.\n스킬 시전 후 자동으로 총알을 장전하고 <color=#FFFFFF>[일반 공격]</color> 및 <color=#FFFFFF>[대시 공격]</color>을 강화한다. 최대 발동: 8회"
+            },
+            "103100012": {
+                "Title": "패링 지원: 교활한 토끼 출동!",
+                "Description": "출전 캐릭터 피격 직전에 <IconMap:Icon_Switch>을 짧게 탭하여 시전:\n적의 공격을 패링하고 대량의 그로기 수치를 누적한다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "103100013": {
+                "Title": "지원 돌격: 기회다",
+                "Description": "<color=#FFFFFF>[패링 지원]</color> 시전 후 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n전방으로 돌진 후 적을 포격해 <color=#FE437E>에테르 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "103110048": {
+                "Title": "빠른 지원: 응급 포격"
+            },
+            "103110049": {
+                "Description": "피해 배율",
+                "Param": "{{Skill:1031401, Prop:1001} + {Skill:1031402, Prop:1001}}"
+            },
+            "103110050": {
+                "Description": "그로기 배율",
+                "Param": "{{Skill:1031401, Prop:1002} + {Skill:1031402, Prop:1002}}"
+            },
+            "103110051": {
+                "Title": "패링 지원: 교활한 토끼 출동!"
+            },
+            "103110052": {
+                "Description": "가벼운 패링 그로기 배율",
+                "Param": "{Skill:1031403, Prop:1002}"
+            },
+            "103110053": {
+                "Description": "강한 패링 그로기 배율",
+                "Param": "{Skill:1031404, Prop:1002}"
+            },
+            "103110054": {
+                "Description": "연속 패링 그로기 배율",
+                "Param": "{Skill:1031405, Prop:1002}"
+            },
+            "103110055": {
+                "Title": "지원 돌격: 기회다"
+            },
+            "103110056": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1031501, Prop:1001}"
+            },
+            "103110057": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1031501, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1031001": {
+            "DamageValue": 3890,
+            "DamageGrowth": 360,
+            "DazeValue": 1950,
+            "DazeGrowth": 90
+        },
+        "1031002": {
+            "DamageValue": 2710,
+            "DamageGrowth": 250,
+            "DazeValue": 2090,
+            "DazeGrowth": 100
+        },
+        "1031003": {
+            "DamageValue": 4940,
+            "DamageGrowth": 450,
+            "DazeValue": 2090,
+            "DazeGrowth": 100
+        },
+        "1031004": {
+            "DamageValue": 3530,
+            "DamageGrowth": 330,
+            "DazeValue": 2900,
+            "DazeGrowth": 140
+        },
+        "1031005": {
+            "DamageValue": 3610,
+            "DamageGrowth": 330,
+            "DazeValue": 2780,
+            "DazeGrowth": 130
+        },
+        "1031006": {
+            "DamageValue": 6580,
+            "DamageGrowth": 600,
+            "DazeValue": 2780,
+            "DazeGrowth": 130
+        },
+        "1031007": {
+            "DamageValue": 12430,
+            "DamageGrowth": 1130,
+            "DazeValue": 10430,
+            "DazeGrowth": 480
+        },
+        "1031008": {
+            "DamageValue": 18040,
+            "DamageGrowth": 1640,
+            "DazeValue": 13880,
+            "DazeGrowth": 640
+        },
+        "1031009": {
+            "DamageValue": 32900,
+            "DamageGrowth": 3000,
+            "DazeValue": 13880,
+            "DazeGrowth": 640
+        },
+        "1031101": {
+            "DamageValue": 2630,
+            "DamageGrowth": 240,
+            "DazeValue": 2500,
+            "DazeGrowth": 120
+        },
+        "1031102": {
+            "DamageValue": 2630,
+            "DamageGrowth": 240,
+            "DazeValue": 2500,
+            "DazeGrowth": 120
+        },
+        "1031103": {
+            "DamageValue": 21500,
+            "DamageGrowth": 1960,
+            "DazeValue": 17980,
+            "DazeGrowth": 820
+        },
+        "1031104": {
+            "DamageValue": 10750,
+            "DamageGrowth": 980,
+            "DazeValue": 8990,
+            "DazeGrowth": 410
+        },
+        "1031105": {
+            "DamageValue": 10750,
+            "DamageGrowth": 980,
+            "DazeValue": 8990,
+            "DazeGrowth": 410
+        },
+        "1031106": {
+            "DamageValue": 38700,
+            "DamageGrowth": 3520,
+            "DazeValue": 32360,
+            "DazeGrowth": 1480
+        },
+        "1031107": {
+            "DamageValue": 19870,
+            "DamageGrowth": 1810,
+            "DazeValue": 16460,
+            "DazeGrowth": 750
+        },
+        "1031108": {
+            "DamageValue": 9940,
+            "DamageGrowth": 910,
+            "DazeValue": 8230,
+            "DazeGrowth": 380
+        },
+        "1031109": {
+            "DamageValue": 9940,
+            "DamageGrowth": 910,
+            "DazeValue": 8230,
+            "DazeGrowth": 380
+        },
+        "1031110": {
+            "DamageValue": 35750,
+            "DamageGrowth": 3250,
+            "DazeValue": 29630,
+            "DazeGrowth": 1350
+        },
+        "1031111": {
+            "DamageValue": 10750,
+            "DamageGrowth": 980,
+            "DazeValue": 8990,
+            "DazeGrowth": 410
+        },
+        "1031112": {
+            "DamageValue": 10750,
+            "DamageGrowth": 980,
+            "DazeValue": 8990,
+            "DazeGrowth": 410
+        },
+        "1031113": {
+            "DamageValue": 38700,
+            "DamageGrowth": 3520,
+            "DazeValue": 32360,
+            "DazeGrowth": 1480
+        },
+        "1031201": {
+            "DamageValue": 4120,
+            "DamageGrowth": 380,
+            "DazeValue": 2900,
+            "DazeGrowth": 140
+        },
+        "1031202": {
+            "DamageValue": 11730,
+            "DamageGrowth": 1070,
+            "DazeValue": 4510,
+            "DazeGrowth": 210
+        },
+        "1031203": {
+            "DamageValue": 11730,
+            "DamageGrowth": 1070,
+            "DazeValue": 4510,
+            "DazeGrowth": 210
+        },
+        "1031204": {
+            "DamageValue": 6000,
+            "DamageGrowth": 550,
+            "DazeValue": 6000,
+            "DazeGrowth": 280
+        },
+        "1031205": {
+            "DamageValue": 9120,
+            "DamageGrowth": 830,
+            "DazeValue": 8170,
+            "DazeGrowth": 380
+        },
+        "1031206": {
+            "DamageValue": 9120,
+            "DamageGrowth": 830,
+            "DazeValue": 8170,
+            "DazeGrowth": 380
+        },
+        "1031301": {
+            "DamageValue": 10480,
+            "DamageGrowth": 960,
+            "DazeValue": 2500,
+            "DazeGrowth": 120
+        },
+        "1031302": {
+            "DamageValue": 10480,
+            "DamageGrowth": 960,
+            "DazeValue": 2500,
+            "DazeGrowth": 120
+        },
+        "1031303": {
+            "DamageValue": 28300,
+            "DamageGrowth": 2580,
+            "DazeValue": 6750,
+            "DazeGrowth": 310
+        },
+        "1031304": {
+            "DamageValue": 64680,
+            "DamageGrowth": 5880,
+            "DazeValue": 3600,
+            "DazeGrowth": 170
+        },
+        "1031305": {
+            "DamageValue": 87320,
+            "DamageGrowth": 7940,
+            "DazeValue": 4860,
+            "DazeGrowth": 230
+        },
+        "1031401": {
+            "DamageValue": 3170,
+            "DamageGrowth": 290,
+            "DazeValue": 3170,
+            "DazeGrowth": 150
+        },
+        "1031402": {
+            "DamageValue": 3170,
+            "DamageGrowth": 290,
+            "DazeValue": 3170,
+            "DazeGrowth": 150
+        },
+        "1031403": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 24670,
+            "DazeGrowth": 1130
+        },
+        "1031404": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 31170,
+            "DazeGrowth": 1420
+        },
+        "1031405": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15170,
+            "DazeGrowth": 690
+        },
+        "1031501": {
+            "DamageValue": 37710,
+            "DamageGrowth": 3430,
+            "DazeValue": 33030,
+            "DazeGrowth": 1510
+        }
+    }
+}

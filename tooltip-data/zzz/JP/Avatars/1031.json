@@ -1,0 +1,568 @@
+{
+    "Name": "ニコ",
+    "ElementTypes": [
+        "Ether"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "加圧式強装弾",
+            "Description": "<color=#FFFFFF>『強化特殊スキル』</color>による与ダメージおよび状態異常蓄積値+16%。\n<color=#FFFFFF>『強化特殊スキル』</color>を発動した時、0.1秒チャージするごとに、ターゲット付近に生成する力場の継続時間が0.15秒増える。",
+            "Lore": "「強化してあげたわよ！みんな、やっちゃいなさい！」\n「…あ、あたし？逃げるわけないでしょ！ちょっと休みたいの！」"
+        },
+        "2": {
+            "Title": "エネルギー収集装置",
+            "Description": "<color=#FFFFFF>『コアパッシブ：からくり箱』</color>のデバフ効果が発動した時、ニコはエネルギーを5Pt回復する、15秒に1回のみ発動可能。",
+            "Lore": "「プラス1秒を見くびらないことね。あたしがその1秒でどれだけのことができると思う？」\n「…ってワケで、10%の追加料金よ！文句ある？」"
+        },
+        "3": {
+            "Title": "邪兎の知恵",
+            "Description": "<color=#FFFFFF>『通常攻撃』</color>、<color=#FFFFFF>『回避』</color>、<color=#FFFFFF>『支援スキル』</color>、<color=#FFFFFF>『特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>のスキルレベル+2",
+            "Lore": "卓越した力にも、豊かな財にも恵まれなかったニコ。\nそのよく回る頭ひとつで、邪兎屋を今日まで切り盛りしてきた。"
+        },
+        "4": {
+            "Title": "領域拡大",
+            "Description": "ニコが<color=#FFFFFF>『強化特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>、または<color=#FFFFFF>『終結スキル』</color>を発動した時、ターゲット付近に生成する力場の攻撃範囲が半径1.5メートル増える。",
+            "Lore": "「いい？ここも、あそこも、ゆくゆくは全部邪兎屋の勢力下に置かれるんだから！」\n「…え、何年かかるかって？」\n「うーん…今の収入状況を基に計算すると、ざっと…10000年くらいかしら！」"
+        },
+        "5": {
+            "Title": "業界の寵児",
+            "Description": "<color=#FFFFFF>『通常攻撃』</color>、<color=#FFFFFF>『回避』</color>、<color=#FFFFFF>『支援スキル』</color>、<color=#FFFFFF>『特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>のスキルレベル+2",
+            "Lore": "依然として業界には敵も多いが、ニコは部下たちを率いて、九死に一生の窮地を何度も生き延びてきた。\n邪兎屋の名声と経験は、着実に高まってきている。"
+        },
+        "6": {
+            "Title": "侵蝕力場",
+            "Description": "力場が敵にダメージを与えた時、該当ターゲットに対して全ユニットの会心率+1.5%、最大10重まで重ね掛け可能、継続時間12秒。継続時間は1重ごとに独立してカウントされる。",
+            "Lore": "より高度な仕掛けの弾薬が使われ、\n装薬量も濃縮エーテル物質の含有量も増加している。\nより大ダメージ、より長時間継続…そして、より高価。"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "コアパッシブ：からくり箱",
+            "DescriptionByLevel": {
+                "1": "ニコが<color=#FFFFFF>『特殊スキル』</color>、<color=#FFFFFF>『強化特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>、<color=#FFFFFF>『終結スキル』</color>などの最中にリロードを行い、<color=#FFFFFF>『通常攻撃』</color>と<color=#FFFFFF>『ダッシュ攻撃』</color>を強化する。強化された弾または力場が敵に命中した場合、ターゲットの防御力-<color=#2BAD00>20%</color>、継続時間3.5秒。",
+                "2": "ニコが<color=#FFFFFF>『特殊スキル』</color>、<color=#FFFFFF>『強化特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>、<color=#FFFFFF>『終結スキル』</color>などの最中にリロードを行い、<color=#FFFFFF>『通常攻撃』</color>と<color=#FFFFFF>『ダッシュ攻撃』</color>を強化する。強化された弾または力場が敵に命中した場合、ターゲットの防御力-<color=#2BAD00>25%</color>、継続時間3.5秒。",
+                "3": "ニコが<color=#FFFFFF>『特殊スキル』</color>、<color=#FFFFFF>『強化特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>、<color=#FFFFFF>『終結スキル』</color>などの最中にリロードを行い、<color=#FFFFFF>『通常攻撃』</color>と<color=#FFFFFF>『ダッシュ攻撃』</color>を強化する。強化された弾または力場が敵に命中した場合、ターゲットの防御力-<color=#2BAD00>30%</color>、継続時間3.5秒。",
+                "4": "ニコが<color=#FFFFFF>『特殊スキル』</color>、<color=#FFFFFF>『強化特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>、<color=#FFFFFF>『終結スキル』</color>などの最中にリロードを行い、<color=#FFFFFF>『通常攻撃』</color>と<color=#FFFFFF>『ダッシュ攻撃』</color>を強化する。強化された弾または力場が敵に命中した場合、ターゲットの防御力-<color=#2BAD00>34%</color>、継続時間3.5秒。",
+                "5": "ニコが<color=#FFFFFF>『特殊スキル』</color>、<color=#FFFFFF>『強化特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>、<color=#FFFFFF>『終結スキル』</color>などの最中にリロードを行い、<color=#FFFFFF>『通常攻撃』</color>と<color=#FFFFFF>『ダッシュ攻撃』</color>を強化する。強化された弾または力場が敵に命中した場合、ターゲットの防御力-<color=#2BAD00>36%</color>、継続時間3.5秒。",
+                "6": "ニコが<color=#FFFFFF>『特殊スキル』</color>、<color=#FFFFFF>『強化特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>、<color=#FFFFFF>『終結スキル』</color>などの最中にリロードを行い、<color=#FFFFFF>『通常攻撃』</color>と<color=#FFFFFF>『ダッシュ攻撃』</color>を強化する。強化された弾または力場が敵に命中した場合、ターゲットの防御力-<color=#2BAD00>38%</color>、継続時間3.5秒。",
+                "7": "ニコが<color=#FFFFFF>『特殊スキル』</color>、<color=#FFFFFF>『強化特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>、<color=#FFFFFF>『終結スキル』</color>などの最中にリロードを行い、<color=#FFFFFF>『通常攻撃』</color>と<color=#FFFFFF>『ダッシュ攻撃』</color>を強化する。強化された弾または力場が敵に命中した場合、ターゲットの防御力-<color=#2BAD00>40%</color>、継続時間3.5秒。"
+            }
+        },
+        "MathSkill": {
+            "Title": "追加能力：狡兎三窟",
+            "Description": "チームに自身と同じ属性または同じ陣営のメンバーがいる時に発動：\nニコが<color=#FFFFFF>『コアパッシブ：からくり箱』</color>を通して敵にデバフ効果を付与した時、全ユニットがターゲットに与える<color=#FE437E>エーテル属性ダメージ</color>がさらに+25%、継続時間3.5秒。"
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "103100001": {
+                "Title": "通常攻撃：邪兎の連打",
+                "Description": " <IconMap:Icon_Normal> を押して発動：\n前方に最大3段の打撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。"
+            },
+            "103100002": {
+                "Title": "通常攻撃：思うがままに",
+                "Description": "<color=#FFFFFF>『特殊スキル』</color>、<color=#FFFFFF>『強化特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>、<color=#FFFFFF>『終結スキル』</color>などを発動するとリロードを行い、同時に<color=#FFFFFF>『通常攻撃』</color>と<color=#FFFFFF>『ダッシュ攻撃』</color>が強化されて弾の威力がアップする。"
+            },
+            "103110001": {
+                "Title": "通常攻撃：邪兎の連打"
+            },
+            "103110002": {
+                "Description": "1段ダメージ倍率",
+                "Param": "{Skill:1031001, Prop:1001} + {{Skill:1031002, Prop:1001}/3}*3"
+            },
+            "103110003": {
+                "Description": "2段ダメージ倍率",
+                "Param": "{Skill:1031004, Prop:1001} + {{Skill:1031005, Prop:1001}/4}*4"
+            },
+            "103110004": {
+                "Description": "3段ダメージ倍率",
+                "Param": "{Skill:1031007, Prop:1001} + {{Skill:1031008, Prop:1001}/20}*20"
+            },
+            "103110005": {
+                "Description": "1段ブレイク倍率",
+                "Param": "{Skill:1031001, Prop:1002} + {{Skill:1031002, Prop:1002}/3}*3"
+            },
+            "103110006": {
+                "Description": "2段ブレイク倍率",
+                "Param": "{Skill:1031004, Prop:1002} + {{Skill:1031005, Prop:1002}/4}*4"
+            },
+            "103110007": {
+                "Description": "3段ブレイク倍率",
+                "Param": "{Skill:1031007, Prop:1002} + {{Skill:1031008, Prop:1002}/20}*20"
+            },
+            "103110008": {
+                "Title": "通常攻撃：思うがままに"
+            },
+            "103110009": {
+                "Description": "1段ダメージ倍率",
+                "Param": "{Skill:1031001, Prop:1001} + {{Skill:1031003, Prop:1001}/3}*3"
+            },
+            "103110010": {
+                "Description": "2段ダメージ倍率",
+                "Param": "{Skill:1031004, Prop:1001} + {{Skill:1031006, Prop:1001}/4}*4"
+            },
+            "103110011": {
+                "Description": "3段ダメージ倍率",
+                "Param": "{Skill:1031007, Prop:1001} + {{Skill:1031009, Prop:1001}/20}*20"
+            },
+            "103110012": {
+                "Description": "1段ブレイク倍率",
+                "Param": "{Skill:1031001, Prop:1002} + {{Skill:1031003, Prop:1002}/3}*3"
+            },
+            "103110013": {
+                "Description": "2段ブレイク倍率",
+                "Param": "{Skill:1031004, Prop:1002} + {{Skill:1031006, Prop:1002}/4}*4"
+            },
+            "103110014": {
+                "Description": "3段ブレイク倍率",
+                "Param": "{Skill:1031007, Prop:1002} + {{Skill:1031009, Prop:1002}/20}*20"
+            }
+        },
+        "1": {
+            "103100003": {
+                "Title": "特殊スキル：シュガーボム",
+                "Description": " <IconMap:Icon_Special> を押して発動：\n前方の敵に遠距離打撃を放ち、<color=#FE437E>エーテル属性ダメージ</color>を与える。\nスキル発動中、中断耐性レベルがアップする。\nスキル発動後に自動でリロードし、<color=#FFFFFF>『通常攻撃』</color>と<color=#FFFFFF>『ダッシュ攻撃』</color>を強化する、最大8回まで発動可能。"
+            },
+            "103100004": {
+                "Title": "強化特殊スキル：シュガーボム・サンド",
+                "Description": "エネルギーが溜まっている状態で <IconMap:Icon_SpecialReady> を押して発動：\n前方の敵に強力な遠距離打撃を放ち、敵を持続的に引き寄せる力場をターゲット付近に生成し、<color=#FE437E>エーテル属性ダメージ</color>を与える。\n <IconMap:Icon_SpecialReady> を長押しするとチャージ状態に入り、砲口に小型の力場を生成する。\nチャージ中はエネルギーを持続的に消費し、近くの敵に追加ダメージを与える。\nスキル発動中、無敵効果を得る。\nスキルが敵に命中すると、<color=#FFFFFF>『クイック支援』</color>が発動可能になる。\nスキル発動後に自動でリロードし、<color=#FFFFFF>『通常攻撃』</color>と<color=#FFFFFF>『ダッシュ攻撃』</color>を強化する、最大8回まで発動可能。"
+            },
+            "103110015": {
+                "Title": "特殊スキル：シュガーボム"
+            },
+            "103110016": {
+                "Description": "ダメージ倍率",
+                "Param": "{{Skill:1031101, Prop:1001} + {Skill:1031102, Prop:1001}}"
+            },
+            "103110017": {
+                "Description": "ブレイク倍率",
+                "Param": "{{Skill:1031101, Prop:1002} + {Skill:1031102, Prop:1002}}"
+            },
+            "103110018": {
+                "Title": "強化特殊スキル：シュガーボム・サンド"
+            },
+            "103110019": {
+                "Description": "チャージダメージ倍率",
+                "Param": "{Skill:1031103, Prop:1001}"
+            },
+            "103110020": {
+                "Description": "砲撃ダメージ倍率",
+                "Param": "{{Skill:1031104, Prop:1001} + {Skill:1031105, Prop:1001}}"
+            },
+            "103110021": {
+                "Description": "力場ダメージ倍率",
+                "Param": "{Skill:1031106, Prop:1001}"
+            },
+            "103110022": {
+                "Description": "チャージブレイク倍率",
+                "Param": "{Skill:1031103, Prop:1002}"
+            },
+            "103110023": {
+                "Description": "砲撃ブレイク倍率",
+                "Param": "{{Skill:1031104, Prop:1002} + {Skill:1031105, Prop:1002}}"
+            },
+            "103110024": {
+                "Description": "力場ブレイク倍率",
+                "Param": "{Skill:1031106, Prop:1002}"
+            },
+            "103110025": {
+                "Description": "チャージエネルギー消費",
+                "Param": "20Pt/秒"
+            },
+            "103110026": {
+                "Description": "砲撃エネルギー消費",
+                "Param": "60Pt"
+            }
+        },
+        "2": {
+            "103100005": {
+                "Title": "回避：脱兎",
+                "Description": " <IconMap:Icon_Evade> を押して発動：\nダッシュで高速回避する。\nスキル発動中、無敵効果を得る。\n{LAYOUT_CONSOLECONTROLLER#スティック}{LAYOUT_FALLBACK#スティック}を入力して回避する際に、 <IconMap:Icon_Evade> を長押しすると、回避中にリロードし、<color=#FFFFFF>『通常攻撃』</color>と<color=#FFFFFF>『ダッシュ攻撃』</color>を強化する、最大8回まで発動可能。"
+            },
+            "103100006": {
+                "Title": "ダッシュ攻撃：開けてビックリ",
+                "Description": "{LAYOUT_CONSOLECONTROLLER#スティック}{LAYOUT_FALLBACK#スティック}を入力して回避した後に <IconMap:Icon_Normal> を押して発動：\n入力した方向に向かってダッシュし、周囲の敵に打撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。\n{LAYOUT_CONSOLECONTROLLER#スティック}{LAYOUT_FALLBACK#スティック}を入力せず回避した後に <IconMap:Icon_Normal> を押して発動：\n後ろに回避し、前方の敵に遠距離打撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。\nスキル発動後に自動でリロードし、<color=#FFFFFF>『通常攻撃』</color>と<color=#FFFFFF>『ダッシュ攻撃』</color>を強化する、最大8回まで発動可能。"
+            },
+            "103100007": {
+                "Title": "回避反撃：牽制砲撃",
+                "Description": "<color=#FFFFFF>『極限回避』</color>後に <IconMap:Icon_Normal> を押して発動：\n後ろに回避し、前方の敵に遠距離打撃を放ち、<color=#FE437E>エーテル属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。\nスキル発動後に自動でリロードし、<color=#FFFFFF>『通常攻撃』</color>と<color=#FFFFFF>『ダッシュ攻撃』</color>を強化する、最大8回まで発動可能。"
+            },
+            "103110027": {
+                "Title": "ダッシュ攻撃：開けてビックリ"
+            },
+            "103110028": {
+                "Description": "前方回避攻撃ダメージ倍率",
+                "Param": "{Skill:1031201, Prop:1001} + {{Skill:1031202, Prop:1001}/13}*13"
+            },
+            "103110029": {
+                "Description": "後方回避攻撃ダメージ倍率",
+                "Param": "{Skill:1031204, Prop:1001}"
+            },
+            "103110030": {
+                "Description": "前方回避攻撃ブレイク倍率",
+                "Param": "{Skill:1031201, Prop:1002} + {{Skill:1031202, Prop:1002}/13}*13"
+            },
+            "103110031": {
+                "Description": "後方回避攻撃ブレイク倍率",
+                "Param": "{Skill:1031204, Prop:1002}"
+            },
+            "103110032": {
+                "Title": "ダッシュ攻撃：思うがままに"
+            },
+            "103110033": {
+                "Description": "前方回避攻撃ダメージ倍率",
+                "Param": "{Skill:1031201, Prop:1001} + {{Skill:1031203, Prop:1001}/13}*13"
+            },
+            "103110034": {
+                "Description": "前方回避攻撃ブレイク倍率",
+                "Param": "{Skill:1031201, Prop:1002} + {{Skill:1031203, Prop:1002}/13}*13"
+            },
+            "103110035": {
+                "Title": "回避反撃：牽制砲撃"
+            },
+            "103110036": {
+                "Description": "ダメージ倍率",
+                "Param": "{{Skill:1031205, Prop:1001} + {Skill:1031206, Prop:1001}}"
+            },
+            "103110037": {
+                "Description": "ブレイク倍率",
+                "Param": "{{Skill:1031205, Prop:1002} + {Skill:1031206, Prop:1002}}"
+            }
+        },
+        "3": {
+            "103100008": {
+                "Title": "連携スキル：高級エーテルボム",
+                "Description": "<color=#FFFFFF>『連携スキル』</color>開始時に、対応するエージェントを選択して発動：\n前方小範囲の敵に強力な遠距離打撃を放ち、周囲の敵を持続的に引き寄せる力場をターゲット付近に生成し、<color=#FE437E>エーテル属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。\nスキルが敵に命中すると、<color=#FFFFFF>『クイック支援』</color>が発動可能になる。\nスキル発動後に自動でリロードし、<color=#FFFFFF>『通常攻撃』</color>と<color=#FFFFFF>『ダッシュ攻撃』</color>を強化する、最大8回まで発動可能。"
+            },
+            "103100009": {
+                "Title": "終結スキル：特製エーテルグレネード",
+                "Description": "デシベルレートが<color=#FFFFFF>『Maximum』</color>に達した時に、 <IconMap:Icon_UltimateReady> を押すと発動：\n前方小範囲の敵に強力な遠距離打撃を放ち、周囲の敵を持続的に引き寄せる力場をターゲット付近に生成し、<color=#FE437E>エーテル属性ダメージ</color>を与える。\nスキル発動時、チーム内にいるほかの味方がエネルギーを10Pt回復し、次に出場したエージェントはさらに追加で20Pt回復する。\nスキル発動中、無敵効果を得る。\nスキルが敵に命中すると、<color=#FFFFFF>『クイック支援』</color>が発動可能になる。\nスキル発動後に自動でリロードし、<color=#FFFFFF>『通常攻撃』</color>と<color=#FFFFFF>『ダッシュ攻撃』</color>を強化する、最大8回まで発動可能。"
+            },
+            "103110038": {
+                "Title": "連携スキル：高級エーテルボム"
+            },
+            "103110039": {
+                "Description": "砲撃ダメージ倍率",
+                "Param": "{{Skill:1031301, Prop:1001} + {Skill:1031302, Prop:1001}}"
+            },
+            "103110040": {
+                "Description": "力場ダメージ倍率",
+                "Param": "{Skill:1031303, Prop:1001}"
+            },
+            "103110041": {
+                "Description": "砲撃ブレイク倍率",
+                "Param": "{{Skill:1031301, Prop:1002} + {Skill:1031302, Prop:1002}}"
+            },
+            "103110042": {
+                "Description": "力場ブレイク倍率",
+                "Param": "{Skill:1031303, Prop:1002}"
+            },
+            "103110043": {
+                "Title": "終結スキル：特製エーテルグレネード"
+            },
+            "103110044": {
+                "Description": "砲撃ダメージ倍率",
+                "Param": "{Skill:1031304, Prop:1001}"
+            },
+            "103110045": {
+                "Description": "力場ダメージ倍率",
+                "Param": "{Skill:1031305, Prop:1001}"
+            },
+            "103110046": {
+                "Description": "砲撃ブレイク倍率",
+                "Param": "{Skill:1031304, Prop:1002}"
+            },
+            "103110047": {
+                "Description": "力場ブレイク倍率",
+                "Param": "{Skill:1031305, Prop:1002}"
+            }
+        },
+        "6": {
+            "103100011": {
+                "Title": "クイック支援：救急砲撃",
+                "Description": "操作しているメンバーが吹き飛ばされた時に、 <IconMap:Icon_Switch> を押して発動：\n後ろに回避し、前方の敵に遠距離打撃を放ち、<color=#FE437E>エーテル属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。\nスキル発動後に自動でリロードし、<color=#FFFFFF>『通常攻撃』</color>と<color=#FFFFFF>『ダッシュ攻撃』</color>を強化する、最大8回まで発動可能。"
+            },
+            "103100012": {
+                "Title": "パリィ支援：邪兎の出番！",
+                "Description": "出場中のメンバーが攻撃されそうになった時に、 <IconMap:Icon_Switch> を押して発動：\n敵の攻撃をパリィし、ブレイク値を大量に蓄積させる。\nスキル発動中、無敵効果を得る。"
+            },
+            "103100013": {
+                "Title": "支援突撃：虚に乗ずる",
+                "Description": "<color=#FFFFFF>『パリィ支援』</color>発動後、 <IconMap:Icon_Normal> を押して発動：\n前方に突進したのち、敵に砲撃を放ち、<color=#FE437E>エーテル属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。"
+            },
+            "103110048": {
+                "Title": "クイック支援：救急砲撃"
+            },
+            "103110049": {
+                "Description": "ダメージ倍率",
+                "Param": "{{Skill:1031401, Prop:1001} + {Skill:1031402, Prop:1001}}"
+            },
+            "103110050": {
+                "Description": "ブレイク倍率",
+                "Param": "{{Skill:1031401, Prop:1002} + {Skill:1031402, Prop:1002}}"
+            },
+            "103110051": {
+                "Title": "パリィ支援：邪兎の出番！"
+            },
+            "103110052": {
+                "Description": "パリィ・軽 ブレイク倍率",
+                "Param": "{Skill:1031403, Prop:1002}"
+            },
+            "103110053": {
+                "Description": "パリィ・重 ブレイク倍率",
+                "Param": "{Skill:1031404, Prop:1002}"
+            },
+            "103110054": {
+                "Description": "パリィ・連続 ブレイク倍率",
+                "Param": "{Skill:1031405, Prop:1002}"
+            },
+            "103110055": {
+                "Title": "支援突撃：虚に乗ずる"
+            },
+            "103110056": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1031501, Prop:1001}"
+            },
+            "103110057": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1031501, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1031001": {
+            "DamageValue": 3890,
+            "DamageGrowth": 360,
+            "DazeValue": 1950,
+            "DazeGrowth": 90
+        },
+        "1031002": {
+            "DamageValue": 2710,
+            "DamageGrowth": 250,
+            "DazeValue": 2090,
+            "DazeGrowth": 100
+        },
+        "1031003": {
+            "DamageValue": 4940,
+            "DamageGrowth": 450,
+            "DazeValue": 2090,
+            "DazeGrowth": 100
+        },
+        "1031004": {
+            "DamageValue": 3530,
+            "DamageGrowth": 330,
+            "DazeValue": 2900,
+            "DazeGrowth": 140
+        },
+        "1031005": {
+            "DamageValue": 3610,
+            "DamageGrowth": 330,
+            "DazeValue": 2780,
+            "DazeGrowth": 130
+        },
+        "1031006": {
+            "DamageValue": 6580,
+            "DamageGrowth": 600,
+            "DazeValue": 2780,
+            "DazeGrowth": 130
+        },
+        "1031007": {
+            "DamageValue": 12430,
+            "DamageGrowth": 1130,
+            "DazeValue": 10430,
+            "DazeGrowth": 480
+        },
+        "1031008": {
+            "DamageValue": 18040,
+            "DamageGrowth": 1640,
+            "DazeValue": 13880,
+            "DazeGrowth": 640
+        },
+        "1031009": {
+            "DamageValue": 32900,
+            "DamageGrowth": 3000,
+            "DazeValue": 13880,
+            "DazeGrowth": 640
+        },
+        "1031101": {
+            "DamageValue": 2630,
+            "DamageGrowth": 240,
+            "DazeValue": 2500,
+            "DazeGrowth": 120
+        },
+        "1031102": {
+            "DamageValue": 2630,
+            "DamageGrowth": 240,
+            "DazeValue": 2500,
+            "DazeGrowth": 120
+        },
+        "1031103": {
+            "DamageValue": 21500,
+            "DamageGrowth": 1960,
+            "DazeValue": 17980,
+            "DazeGrowth": 820
+        },
+        "1031104": {
+            "DamageValue": 10750,
+            "DamageGrowth": 980,
+            "DazeValue": 8990,
+            "DazeGrowth": 410
+        },
+        "1031105": {
+            "DamageValue": 10750,
+            "DamageGrowth": 980,
+            "DazeValue": 8990,
+            "DazeGrowth": 410
+        },
+        "1031106": {
+            "DamageValue": 38700,
+            "DamageGrowth": 3520,
+            "DazeValue": 32360,
+            "DazeGrowth": 1480
+        },
+        "1031107": {
+            "DamageValue": 19870,
+            "DamageGrowth": 1810,
+            "DazeValue": 16460,
+            "DazeGrowth": 750
+        },
+        "1031108": {
+            "DamageValue": 9940,
+            "DamageGrowth": 910,
+            "DazeValue": 8230,
+            "DazeGrowth": 380
+        },
+        "1031109": {
+            "DamageValue": 9940,
+            "DamageGrowth": 910,
+            "DazeValue": 8230,
+            "DazeGrowth": 380
+        },
+        "1031110": {
+            "DamageValue": 35750,
+            "DamageGrowth": 3250,
+            "DazeValue": 29630,
+            "DazeGrowth": 1350
+        },
+        "1031111": {
+            "DamageValue": 10750,
+            "DamageGrowth": 980,
+            "DazeValue": 8990,
+            "DazeGrowth": 410
+        },
+        "1031112": {
+            "DamageValue": 10750,
+            "DamageGrowth": 980,
+            "DazeValue": 8990,
+            "DazeGrowth": 410
+        },
+        "1031113": {
+            "DamageValue": 38700,
+            "DamageGrowth": 3520,
+            "DazeValue": 32360,
+            "DazeGrowth": 1480
+        },
+        "1031201": {
+            "DamageValue": 4120,
+            "DamageGrowth": 380,
+            "DazeValue": 2900,
+            "DazeGrowth": 140
+        },
+        "1031202": {
+            "DamageValue": 11730,
+            "DamageGrowth": 1070,
+            "DazeValue": 4510,
+            "DazeGrowth": 210
+        },
+        "1031203": {
+            "DamageValue": 11730,
+            "DamageGrowth": 1070,
+            "DazeValue": 4510,
+            "DazeGrowth": 210
+        },
+        "1031204": {
+            "DamageValue": 6000,
+            "DamageGrowth": 550,
+            "DazeValue": 6000,
+            "DazeGrowth": 280
+        },
+        "1031205": {
+            "DamageValue": 9120,
+            "DamageGrowth": 830,
+            "DazeValue": 8170,
+            "DazeGrowth": 380
+        },
+        "1031206": {
+            "DamageValue": 9120,
+            "DamageGrowth": 830,
+            "DazeValue": 8170,
+            "DazeGrowth": 380
+        },
+        "1031301": {
+            "DamageValue": 10480,
+            "DamageGrowth": 960,
+            "DazeValue": 2500,
+            "DazeGrowth": 120
+        },
+        "1031302": {
+            "DamageValue": 10480,
+            "DamageGrowth": 960,
+            "DazeValue": 2500,
+            "DazeGrowth": 120
+        },
+        "1031303": {
+            "DamageValue": 28300,
+            "DamageGrowth": 2580,
+            "DazeValue": 6750,
+            "DazeGrowth": 310
+        },
+        "1031304": {
+            "DamageValue": 64680,
+            "DamageGrowth": 5880,
+            "DazeValue": 3600,
+            "DazeGrowth": 170
+        },
+        "1031305": {
+            "DamageValue": 87320,
+            "DamageGrowth": 7940,
+            "DazeValue": 4860,
+            "DazeGrowth": 230
+        },
+        "1031401": {
+            "DamageValue": 3170,
+            "DamageGrowth": 290,
+            "DazeValue": 3170,
+            "DazeGrowth": 150
+        },
+        "1031402": {
+            "DamageValue": 3170,
+            "DamageGrowth": 290,
+            "DazeValue": 3170,
+            "DazeGrowth": 150
+        },
+        "1031403": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 24670,
+            "DazeGrowth": 1130
+        },
+        "1031404": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 31170,
+            "DazeGrowth": 1420
+        },
+        "1031405": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15170,
+            "DazeGrowth": 690
+        },
+        "1031501": {
+            "DamageValue": 37710,
+            "DamageGrowth": 3430,
+            "DazeValue": 33030,
+            "DazeGrowth": 1510
+        }
+    }
+}

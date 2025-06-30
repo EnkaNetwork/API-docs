@@ -1,0 +1,351 @@
+{
+    "Name": "Grace",
+    "ElementTypes": [
+        "Elec"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Buồng Đạn Nạp Tiếp",
+            "Description": "Mỗi khi <color=#FFFFFF>Tấn Công Thường</color> đòn thứ 4 đánh trúng kẻ địch, nhân vật toàn đội hồi phục 0,25 điểm Năng Lượng.\nCùng một chiêu thức, hiệu quả này tối đa hồi phục cho toàn đội 2 điểm Năng Lượng.",
+            "Lore": "Hiệu suất là sinh mệnh của khoa học công trình. Và nhịp đập của nó đang vang vọng trong họng súng của Grace."
+        },
+        "2": {
+            "Title": "Điện Năng Xuyên Phá",
+            "Description": "Khi ném lựu đạn trong các chiêu thức như <color=#FFFFFF>Tấn Công Thường</color>, <color=#FFFFFF>Chiến Kỹ</color>, <color=#FFFFFF>Siêu Chiến Kỹ</color> trúng kẻ địch, <color=#2EB6FF>Kháng DMG Điện</color> của mục tiêu giảm 8,5%, <color=#2EB6FF>Kháng Tích Lũy Dị Thường Điện</color> giảm 8,5%, duy trì 8s.",
+            "Lore": "\"Mổ xẻ\" các cấu trúc cơ khí phức tạp là sở thích lớn nhất của Grace, ngay cả khi đang trong trận chiến.\nĐối tượng bị mổ xẻ sẽ có cảm giác thế nào? Khi mọi sơ hở của chúng đều bị phơi bày?"
+        },
+        "3": {
+            "Title": "Kỹ Sư Trưởng",
+            "Description": "Cấp kỹ năng <color=#FFFFFF>Tấn Công Thường</color>, <color=#FFFFFF>Né</color>, <color=#FFFFFF>Kỹ Năng Chi Viện</color>, <color=#FFFFFF>Chiến Kỹ</color>, <color=#FFFFFF>Liên Kích</color> +2",
+            "Lore": "Grace đã đích thân biên tập \"Chỉ Dẫn An Toàn Công Nghiệp Nặng Belobog\", nhưng đồng thời cũng là người vi phạm quy định \"Cấm mang theo vật liệu nổ nguy hiểm đến công trường\" nhiều lần nhất."
+        },
+        "4": {
+            "Title": "Điện Dung Phát Nổ",
+            "Description": "Khi phát động <color=#FFFFFF>Siêu Chiến Kỹ</color>, Grace nhận được 6 tầng Nạp Năng Lượng (tối đa 6 tầng). Khi <color=#FFFFFF>Tấn Công Thường: Bắn Đinh Cao Áp</color> hoặc <color=#FFFFFF>Tấn Công Lướt: Kiểm Tra Đột Xuất</color> đánh trúng kẻ địch sẽ tiêu hao 1 tầng Nạp Năng Lượng, tăng 20% Hiệu Suất Nhận Năng Lượng của chiêu thức hiện tại.",
+            "Lore": "Anton nghi ngờ rằng, trong những phụ tùng được Grace gọi là \"mô đun tái chế xung điện\", thực chất có một chú hamster Ether liên tục phát điện bất kể ngày đêm.\n\"Có thể lắp cho người anh em của tôi một bộ không?\""
+        },
+        "5": {
+            "Title": "\"Phù Thủy Sắt Lạnh Lùng\"",
+            "Description": "Cấp kỹ năng <color=#FFFFFF>Tấn Công Thường</color>, <color=#FFFFFF>Né</color>, <color=#FFFFFF>Kỹ Năng Chi Viện</color>, <color=#FFFFFF>Chiến Kỹ</color>, <color=#FFFFFF>Liên Kích</color> +2",
+            "Lore": "\"Phù Thủy Sắt Lạnh Lùng\" có thể thuần phục bất kỳ tạo vật cơ khí nào, ít nhất những người hâm mộ nặc danh của cái tên này nghĩ vậy."
+        },
+        "6": {
+            "Title": "Kíp Kích Nổ",
+            "Description": "Khi tiêu hao tất cả <color=#FFFFFF>Điện Năng</color> phát động <color=#FFFFFF>Chiến Kỹ</color> hoặc <color=#FFFFFF>Siêu Chiến Kỹ</color>, có thể cường hóa hiệu quả chiêu thức, ném thêm một quả lựu đạn, và khiến sát thương của mỗi quả lựu đạn gây ra tăng đến 200% so với ban đầu.",
+            "Lore": "Nhiệt độ máu trung bình của nhân viên Công Nghiệp Nặng Belobog là 98 độ C, trong khi Grace luôn được coi là van làm mát trước khi sôi. Một khi Grace từ bỏ kiểm soát, mọi người đều rõ, đó là lúc cần phải bịt tai lại."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Bị Động Cốt Lõi: Chốt Bắn Chờ Khởi Động",
+            "DescriptionByLevel": {
+                "1": "Khi <color=#FFFFFF>Tấn Công Thường</color> hoặc <color=#FFFFFF>Tấn Công Lướt</color> của Grace đánh trúng kẻ địch và gây <color=#F0D12B>DMG Vật Lý</color>, sẽ nhận được một tầng <color=#FFFFFF>Điện Năng</color> (giới hạn 8 tầng). Khi số tầng <color=#FFFFFF>Điện Năng</color> đạt giới hạn, phát động <color=#FFFFFF>Chiến Kỹ</color> hoặc <color=#FFFFFF>Siêu Chiến Kỹ</color>, sẽ tiêu hao tất cả <color=#FFFFFF>Điện Năng</color>, khiến <color=#2EB6FF>Chỉ Số Tích Lũy Dị Thường Điện</color> do chiêu thức tích lũy tăng <color=#2BAD00>65%</color>.",
+                "2": "Khi <color=#FFFFFF>Tấn Công Thường</color> hoặc <color=#FFFFFF>Tấn Công Lướt</color> của Grace đánh trúng kẻ địch và gây <color=#F0D12B>DMG Vật Lý</color>, sẽ nhận được một tầng <color=#FFFFFF>Điện Năng</color> (giới hạn 8 tầng). Khi số tầng <color=#FFFFFF>Điện Năng</color> đạt giới hạn, phát động <color=#FFFFFF>Chiến Kỹ</color> hoặc <color=#FFFFFF>Siêu Chiến Kỹ</color>, sẽ tiêu hao tất cả <color=#FFFFFF>Điện Năng</color>, khiến <color=#2EB6FF>Chỉ Số Tích Lũy Dị Thường Điện</color> do chiêu thức tích lũy tăng <color=#2BAD00>75,8%</color>.",
+                "3": "Khi <color=#FFFFFF>Tấn Công Thường</color> hoặc <color=#FFFFFF>Tấn Công Lướt</color> của Grace đánh trúng kẻ địch và gây <color=#F0D12B>DMG Vật Lý</color>, sẽ nhận được một tầng <color=#FFFFFF>Điện Năng</color> (giới hạn 8 tầng). Khi số tầng <color=#FFFFFF>Điện Năng</color> đạt giới hạn, phát động <color=#FFFFFF>Chiến Kỹ</color> hoặc <color=#FFFFFF>Siêu Chiến Kỹ</color>, sẽ tiêu hao tất cả <color=#FFFFFF>Điện Năng</color>, khiến <color=#2EB6FF>Chỉ Số Tích Lũy Dị Thường Điện</color> do chiêu thức tích lũy tăng <color=#2BAD00>86,6%</color>.",
+                "4": "Khi <color=#FFFFFF>Tấn Công Thường</color> hoặc <color=#FFFFFF>Tấn Công Lướt</color> của Grace đánh trúng kẻ địch và gây <color=#F0D12B>DMG Vật Lý</color>, sẽ nhận được một tầng <color=#FFFFFF>Điện Năng</color> (giới hạn 8 tầng). Khi số tầng <color=#FFFFFF>Điện Năng</color> đạt giới hạn, phát động <color=#FFFFFF>Chiến Kỹ</color> hoặc <color=#FFFFFF>Siêu Chiến Kỹ</color>, sẽ tiêu hao tất cả <color=#FFFFFF>Điện Năng</color>, khiến <color=#2EB6FF>Chỉ Số Tích Lũy Dị Thường Điện</color> do chiêu thức tích lũy tăng <color=#2BAD00>97,5%</color>.",
+                "5": "Khi <color=#FFFFFF>Tấn Công Thường</color> hoặc <color=#FFFFFF>Tấn Công Lướt</color> của Grace đánh trúng kẻ địch và gây <color=#F0D12B>DMG Vật Lý</color>, sẽ nhận được một tầng <color=#FFFFFF>Điện Năng</color> (giới hạn 8 tầng). Khi số tầng <color=#FFFFFF>Điện Năng</color> đạt giới hạn, phát động <color=#FFFFFF>Chiến Kỹ</color> hoặc <color=#FFFFFF>Siêu Chiến Kỹ</color>, sẽ tiêu hao tất cả <color=#FFFFFF>Điện Năng</color>, khiến <color=#2EB6FF>Chỉ Số Tích Lũy Dị Thường Điện</color> do chiêu thức tích lũy tăng <color=#2BAD00>108,3%</color>.",
+                "6": "Khi <color=#FFFFFF>Tấn Công Thường</color> hoặc <color=#FFFFFF>Tấn Công Lướt</color> của Grace đánh trúng kẻ địch và gây <color=#F0D12B>DMG Vật Lý</color>, sẽ nhận được một tầng <color=#FFFFFF>Điện Năng</color> (giới hạn 8 tầng). Khi số tầng <color=#FFFFFF>Điện Năng</color> đạt giới hạn, phát động <color=#FFFFFF>Chiến Kỹ</color> hoặc <color=#FFFFFF>Siêu Chiến Kỹ</color>, sẽ tiêu hao tất cả <color=#FFFFFF>Điện Năng</color>, khiến <color=#2EB6FF>Chỉ Số Tích Lũy Dị Thường Điện</color> do chiêu thức tích lũy tăng <color=#2BAD00>119,1%</color>.",
+                "7": "Khi <color=#FFFFFF>Tấn Công Thường</color> hoặc <color=#FFFFFF>Tấn Công Lướt</color> của Grace đánh trúng kẻ địch và gây <color=#F0D12B>DMG Vật Lý</color>, sẽ nhận được một tầng <color=#FFFFFF>Điện Năng</color> (giới hạn 8 tầng). Khi số tầng <color=#FFFFFF>Điện Năng</color> đạt giới hạn, phát động <color=#FFFFFF>Chiến Kỹ</color> hoặc <color=#FFFFFF>Siêu Chiến Kỹ</color>, sẽ tiêu hao tất cả <color=#FFFFFF>Điện Năng</color>, khiến <color=#2EB6FF>Chỉ Số Tích Lũy Dị Thường Điện</color> do chiêu thức tích lũy tăng <color=#2BAD00>130%</color>."
+            }
+        },
+        "MathSkill": {
+            "Title": "Năng Lực Thêm: Tổ Hỗ Trợ Kỹ Thuật",
+            "Description": "Khi trong đội có nhân vật cùng phe hoặc thuộc tính giống bản thân sẽ kích hoạt:\nKhi <color=#FFFFFF>Siêu Chiến Kỹ</color> của Grace đánh trúng kẻ địch, lần sau khi mục tiêu bị gán hiệu quả <color=#2EB6FF>Sốc Điện</color>, sát thương <color=#2EB6FF>Sốc Điện</color> này tăng 18%, tối đa dồn 2 tầng, cùng một chiêu thức mỗi kẻ địch tối đa kích hoạt một lần hiệu quả, khi trạng thái <color=#2EB6FF>Sốc Điện</color> kết thúc sẽ tái lập hiệu quả."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "118100001": {
+                "Title": "Tấn Công Thường: Bắn Đinh Cao Áp",
+                "Description": "Nhấn <IconMap:Icon_Normal> phát động:\nThực hiện tối đa 4 đòn tấn công về phía trước, gây <color=#F0D12B>DMG Vật Lý</color> và <color=#2EB6FF>DMG Điện</color>.\nDi chuyển {LAYOUT_CONSOLECONTROLLER#cần}{LAYOUT_FALLBACK#cần điều khiển} trong thời gian <color=#FFFFFF>Tấn Công Thường</color>, có thể tiến hành đệm bước bắn phá, điều chỉnh vị trí cơ thể và gây <color=#F0D12B>DMG Vật Lý</color>.\nTrong thời gian <color=#FFFFFF>Tấn Công Thường</color>, khi Grace phát động <color=#FFFFFF>Chiến Kỹ</color>, <color=#FFFFFF>Siêu Chiến Kỹ</color>, <color=#FFFFFF>Né</color>, <color=#FFFFFF>Tấn Công Lướt</color>, <color=#FFFFFF>Phản Kích Khi Né</color>, sẽ không làm gián đoạn số combo của <color=#FFFFFF>Tấn Công Thường</color>."
+            },
+            "118110001": {
+                "Title": "Tấn Công Thường: Bắn Đinh Cao Áp"
+            },
+            "118110002": {
+                "Description": "Bội Số DMG Đòn 1",
+                "Param": "{Skill:1181001, Prop:1001}"
+            },
+            "118110003": {
+                "Description": "Bội Số DMG Đòn 2",
+                "Param": "{Skill:1181002, Prop:1001}"
+            },
+            "118110004": {
+                "Description": "Bội Số DMG Đòn 3",
+                "Param": "{Skill:1181003, Prop:1001}"
+            },
+            "118110005": {
+                "Description": "Bội Số DMG Đòn 4",
+                "Param": "{Skill:1181004, Prop:1001}"
+            },
+            "118110006": {
+                "Description": "Bội Số DMG Bắn Bước Đệm",
+                "Param": "{Skill:1181015, Prop:1001}"
+            },
+            "118110007": {
+                "Description": "Bội Số Choáng Đòn 1",
+                "Param": "{Skill:1181001, Prop:1002}"
+            },
+            "118110008": {
+                "Description": "Bội Số Choáng Đòn 2",
+                "Param": "{Skill:1181002, Prop:1002}"
+            },
+            "118110009": {
+                "Description": "Bội Số Choáng Đòn 3",
+                "Param": "{Skill:1181003, Prop:1002}"
+            },
+            "118110010": {
+                "Description": "Bội Số Choáng Đòn 4",
+                "Param": "{Skill:1181004, Prop:1002}"
+            },
+            "118110011": {
+                "Description": "Bội Số Choáng Bắn Bước Đệm",
+                "Param": "{Skill:1181015, Prop:1002}"
+            }
+        },
+        "1": {
+            "118100002": {
+                "Title": "Chiến Kỹ: Giải Tỏa Công Trình",
+                "Description": "Nhấn <IconMap:Icon_Special> phát động:\nNém một trái lựu đạn về phía trước, gây <color=#2EB6FF>DMG Điện</color>.\nKhi phát động chiêu thức, có thể di chuyển {LAYOUT_CONSOLECONTROLLER#cần}{LAYOUT_FALLBACK#cần điều khiển}, điều chỉnh vị trí cơ thể về hướng tương ứng.\nChiêu thức khi phát động sẽ tăng cấp Kháng Gián Đoạn."
+            },
+            "118100003": {
+                "Title": "Siêu Chiến Kỹ: Giải Tỏa Công Trình Sai Quy Định",
+                "Description": "Khi đủ Năng Lượng, nhấn <IconMap:Icon_SpecialReady> phát động:\nNhảy lên, đồng thời ném 2 trái lựu đạn về phía trước, gây lượng lớn <color=#2EB6FF>DMG Điện</color>.\nKhi phát động chiêu thức, có thể di chuyển {LAYOUT_CONSOLECONTROLLER#cần}{LAYOUT_FALLBACK#cần điều khiển}, điều chỉnh vị trí cơ thể về hướng tương ứng.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "118110012": {
+                "Title": "Chiến Kỹ: Giải Tỏa Công Trình"
+            },
+            "118110013": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1181005, Prop:1001}"
+            },
+            "118110014": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1181005, Prop:1002}"
+            },
+            "118110015": {
+                "Title": "Siêu Chiến Kỹ: Giải Tỏa Công Trình Sai Quy Định"
+            },
+            "118110016": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1181006, Prop:1001}*2"
+            },
+            "118110017": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1181006, Prop:1002}*2"
+            },
+            "118110018": {
+                "Description": "Tiêu Hao Năng Lượng",
+                "Param": "40 điểm"
+            }
+        },
+        "2": {
+            "118100004": {
+                "Title": "Né: Điều Khoản An Toàn",
+                "Description": "Nhấn <IconMap:Icon_Evade> phát động:\nNhanh chóng né tránh.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "118100005": {
+                "Title": "Tấn Công Lướt: Kiểm Tra Đột Xuất",
+                "Description": "Khi né, nhấn <IconMap:Icon_Normal> phát động:\nTrượt về phía trước và bắn quét, gây <color=#F0D12B>DMG Vật Lý</color>."
+            },
+            "118100006": {
+                "Title": "Phản Kích Khi Né: Xử Phạt Vi Phạm",
+                "Description": "Sau khi kích hoạt <color=#FFFFFF>Né Hoàn Hảo</color>, nhấn <IconMap:Icon_Normal> phát động:\nNém một trái lựu đạn vào kẻ địch, gây <color=#2EB6FF>DMG Điện</color>.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "118110019": {
+                "Title": "Tấn Công Lướt: Kiểm Tra Đột Xuất"
+            },
+            "118110020": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1181007, Prop:1001}"
+            },
+            "118110021": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1181007, Prop:1002}"
+            },
+            "118110022": {
+                "Title": "Phản Kích Khi Né: Xử Phạt Vi Phạm"
+            },
+            "118110023": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1181008, Prop:1001}"
+            },
+            "118110024": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1181008, Prop:1002}"
+            }
+        },
+        "3": {
+            "118100007": {
+                "Title": "Liên Kích: Hỗ Trợ Thi Công",
+                "Description": "Khi kích hoạt <color=#FFFFFF>Liên Kích</color>, chọn nhân vật tương ứng phát động:\nNém 3 trái lựu đạn lên không trung, sau đó bắn quét để kích nổ, gây lượng lớn <color=#2EB6FF>DMG Điện</color>.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "118100008": {
+                "Title": "Tuyệt Kỹ: Công Trình Phá Hủy Cấm Lại Gần",
+                "Description": "Khi Cấp Decibel đạt <color=#FFFFFF>Cực Hạn</color>, nhấn <IconMap:Icon_UltimateReady> phát động:\nNém một trái lựu đạn đặc biệt, sau khi phát nổ trên không sẽ tách ra thành 4 trái lựu đạn nhỏ hơn, gây lượng lớn <color=#2EB6FF>DMG Điện</color>.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "118110025": {
+                "Title": "Liên Kích: Hỗ Trợ Thi Công"
+            },
+            "118110026": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1181009, Prop:1001}"
+            },
+            "118110027": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1181009, Prop:1002}"
+            },
+            "118110028": {
+                "Title": "Tuyệt Kỹ: Công Trình Phá Hủy Cấm Lại Gần"
+            },
+            "118110029": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1181010, Prop:1001}"
+            },
+            "118110030": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1181010, Prop:1002}"
+            }
+        },
+        "6": {
+            "118100010": {
+                "Title": "Hỗ Trợ Nhanh: Phương Án Giải Quyết Sự Cố",
+                "Description": "Khi nhân vật đang thao tác bị đánh bay, nhấn <IconMap:Icon_Switch> phát động:\nNém một trái lựu đạn vào kẻ địch, gây <color=#2EB6FF>DMG Điện</color>.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "118100011": {
+                "Title": "Hỗ Trợ Né Tránh: Phản Ứng Rủi Ro Nhanh",
+                "Description": "Khi nhân vật trong sân sắp bị tấn công, nhấn <IconMap:Icon_Switch> phát động:\nNé đòn tấn công của kẻ địch và kích hoạt <color=#FFFFFF>Tầm Nhìn Cực Hạn</color>.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "118100012": {
+                "Title": "Đột Kích Chi Viện: Điện Châm Phản Kích",
+                "Description": "Sau khi kích hoạt <color=#FFFFFF>Hỗ Trợ Né Tránh</color>, nhấn <IconMap:Icon_Normal> phát động:\nXoay người bắn quét và ném lựu đạn vào kẻ địch phía trước, gây <color=#2EB6FF>DMG Điện</color>.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "118110031": {
+                "Title": "Hỗ Trợ Nhanh: Phương Án Giải Quyết Sự Cố"
+            },
+            "118110032": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1181011, Prop:1001}"
+            },
+            "118110033": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1181011, Prop:1002}"
+            },
+            "118110034": {
+                "Title": "Đột Kích Chi Viện: Điện Châm Phản Kích"
+            },
+            "118110035": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1181012, Prop:1001}"
+            },
+            "118110036": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1181012, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1181001": {
+            "DamageValue": 5510,
+            "DamageGrowth": 510,
+            "DazeValue": 1800,
+            "DazeGrowth": 90
+        },
+        "1181002": {
+            "DamageValue": 5970,
+            "DamageGrowth": 550,
+            "DazeValue": 3470,
+            "DazeGrowth": 160
+        },
+        "1181003": {
+            "DamageValue": 12480,
+            "DamageGrowth": 1140,
+            "DazeValue": 7160,
+            "DazeGrowth": 330
+        },
+        "1181004": {
+            "DamageValue": 18630,
+            "DamageGrowth": 1700,
+            "DazeValue": 10720,
+            "DazeGrowth": 490
+        },
+        "1181005": {
+            "DamageValue": 4210,
+            "DamageGrowth": 390,
+            "DazeValue": 4210,
+            "DazeGrowth": 200
+        },
+        "1181006": {
+            "DamageValue": 16690,
+            "DamageGrowth": 1520,
+            "DazeValue": 13420,
+            "DazeGrowth": 610
+        },
+        "1181007": {
+            "DamageValue": 3330,
+            "DamageGrowth": 310,
+            "DazeValue": 1670,
+            "DazeGrowth": 80
+        },
+        "1181008": {
+            "DamageValue": 16420,
+            "DamageGrowth": 1500,
+            "DazeValue": 15050,
+            "DazeGrowth": 690
+        },
+        "1181009": {
+            "DamageValue": 57130,
+            "DamageGrowth": 5200,
+            "DazeValue": 15230,
+            "DazeGrowth": 700
+        },
+        "1181010": {
+            "DamageValue": 147880,
+            "DamageGrowth": 13450,
+            "DazeValue": 13310,
+            "DazeGrowth": 610
+        },
+        "1181011": {
+            "DamageValue": 4550,
+            "DamageGrowth": 420,
+            "DazeValue": 4550,
+            "DazeGrowth": 210
+        },
+        "1181012": {
+            "DamageValue": 35930,
+            "DamageGrowth": 3270,
+            "DazeValue": 31280,
+            "DazeGrowth": 1430
+        },
+        "1181013": {
+            "DamageValue": 8420,
+            "DamageGrowth": 780,
+            "DazeValue": 4210,
+            "DazeGrowth": 200
+        },
+        "1181014": {
+            "DamageValue": 33380,
+            "DamageGrowth": 3040,
+            "DazeValue": 13420,
+            "DazeGrowth": 610
+        },
+        "1181015": {
+            "DamageValue": 4030,
+            "DamageGrowth": 370,
+            "DazeValue": 4030,
+            "DazeGrowth": 190
+        },
+        "1181016": {
+            "DamageValue": 4210,
+            "DamageGrowth": 390,
+            "DazeValue": 4210,
+            "DazeGrowth": 200
+        },
+        "1181017": {
+            "DamageValue": 16690,
+            "DamageGrowth": 1520,
+            "DazeValue": 13420,
+            "DazeGrowth": 610
+        }
+    }
+}

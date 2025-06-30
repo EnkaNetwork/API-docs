@@ -1,0 +1,532 @@
+{
+    "Name": "莱特",
+    "ElementTypes": [
+        "Fire"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "常胜冠军",
+            "Description": "在<color=#FFFFFF>[核心被动：助燃剂]</color>所施加的减益效果中，<color=#FFFFFF>[溃败]</color>效果将使失衡持续时间提升5秒，<color=#98EFF0>冰属性伤害抗性</color>和<color=#FF5521>火属性伤害抗性</color>将额外降低10%；在轻拳起攻或刺拳连击期间耗尽<color=#FFFFFF>[士气]</color>，自动衔接发动强力终结一击时，强力终结一击造成的伤害提升30%。",
+            "Lore": "常胜冠军的胜利至关重要。与对面最强的战士决斗，为团长解决威胁——同时为团队带来巨大的士气鼓舞。\n对他来说，唯有胜利值得赞颂。\n「常胜冠军不能倒下。」"
+        },
+        "2": {
+            "Title": "红围巾",
+            "Description": "通过<color=#FFFFFF>[核心被动：助燃剂]</color>对敌人施加<color=#FFFFFF>[溃败]</color>效果时，目标的失衡易伤倍率提升25%；<color=#FFFFFF>[额外能力：斗志昂扬]</color>中由<color=#FFFFFF>[昂扬]</color>提供的<color=#98EFF0>冰属性伤害</color>和<color=#FF5521>火属性伤害</color>增益效果提升至原本的120%。",
+            "Lore": "作为卡吕冬之子的「红围巾」，莱特在外环非常有名。\n不只是因为他的拳头，也因为…某些说话风格。\n「虽然我乐得清闲…不过没有我的话，你们也搞不定吧？」"
+        },
+        "3": {
+            "Title": "佣兵团长",
+            "Description": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[连携技]</color> 技能等级+2",
+            "Lore": "「我大概是全世界最不适合当团长的人吧。」"
+        },
+        "4": {
+            "Title": "墨镜",
+            "Description": "莱特位于后场时，前场角色的能量自动回复效率提升10%；莱特进入<color=#FFFFFF>[士气喷发]</color>状态时，为后场角色回复4点能量，18秒内最多触发一次。",
+            "Lore": "「问我为什么要带墨镜？嗯…因为我晕血啊，大概吧。」"
+        },
+        "5": {
+            "Title": "决策者",
+            "Description": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[连携技]</color> 技能等级+2",
+            "Lore": "「给我命令，我来照做。就这么简单。」\n莱特推了推自己的墨镜，笑得漫不经心。\n「别再让我来做决定就行。」"
+        },
+        "6": {
+            "Title": "幸存者",
+            "Description": "莱特的<color=#FFFFFF>[士气]</color>回复效率提升至原本的200%；莱特在<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避反击]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[快速支援]</color>、<color=#FFFFFF>[支援突击]</color>、<color=#FFFFFF>[连携技]</color>、<color=#FFFFFF>[终结技]</color>中发动重击命中敌人时，将会触发<color=#FFFFFF>[火焰冲击]</color>效果，造成250%攻击力的<color=#FF5521>火属性伤害</color>，每个敌人8秒内最多触发一次；若莱特的冲击力高于170点，每超过1点冲击力会使<color=#FFFFFF>[火焰冲击]</color>的倍率额外提升5%，最多提升500%；在轻拳起攻或刺拳连击期间耗尽<color=#FFFFFF>[士气]</color>，自动衔接发动强力终结一击命中敌人时，可以忽略冷却时间，额外触发一次<color=#FFFFFF>[火焰冲击]</color>效果。",
+            "Lore": "重来一次，他绝不会选择成为唯一的幸存者。\n可惜命运向来无法选择。"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "核心被动：助燃剂",
+            "DescriptionByLevel": {
+                "1": "莱特会随时间自动获得<color=#FFFFFF>[士气]</color>，每秒回复2.9点，队伍中任意角色每消耗1点能量值，额外为莱特回复0.26点<color=#FFFFFF>[士气]</color>，莱特最多拥有100点<color=#FFFFFF>[士气]</color>；<color=#FFFFFF>[士气]</color>回复至80点时，下一次换入前场将直接发动<color=#FFFFFF>[快速支援]</color>；<color=#FFFFFF>[士气]</color>大于等于80点后，莱特发动第五段<color=#FFFFFF>[普通攻击]</color>时，将进入<color=#FFFFFF>[士气喷发]</color>状态，提升<color=#FFFFFF>[普通攻击]</color>第五段中轻拳起攻、刺拳连击和终结一击的威力；威力提升后，招式命中敌人时，会持续消耗<color=#FFFFFF>[士气]</color>，每消耗10点<color=#FFFFFF>[士气]</color>，莱特的冲击力提升<color=#2BAD00>1%</color>，最多提升<color=#2BAD00>10%</color>，持续6秒；\n<color=#FFFFFF>[士气喷发]</color>状态下，莱特不再随时间自动获得<color=#FFFFFF>[士气]</color>，轻拳起攻或刺拳连击期间耗尽<color=#FFFFFF>[士气]</color>时，会自动衔接发动更加强力的终结一击；\n<color=#FFFFFF>[士气喷发]</color>状态下，轻拳起攻或刺拳连击命中敌人时，目标的<color=#98EFF0>冰属性伤害抗性</color>和<color=#FF5521>火属性伤害抗性</color>降低15%，持续30秒；\n<color=#FFFFFF>[士气喷发]</color>状态下，终结一击命中敌人时，会对目标施加<color=#FFFFFF>[溃败]</color>效果，使其进入失衡状态后的失衡持续时间提升3秒，从失衡状态恢复前<color=#FFFFFF>[溃败]</color>效果对同一目标最多触发一次；\n<color=#FFFFFF>[普通攻击]</color>第五段终结一击命中敌人、换回后场或<color=#FFFFFF>[士气]</color>耗尽时，莱特将退出<color=#FFFFFF>[士气喷发]</color>状态，尚未消耗的<color=#FFFFFF>[士气]</color>会被保留。",
+                "2": "莱特会随时间自动获得<color=#FFFFFF>[士气]</color>，每秒回复2.9点，队伍中任意角色每消耗1点能量值，额外为莱特回复0.26点<color=#FFFFFF>[士气]</color>，莱特最多拥有100点<color=#FFFFFF>[士气]</color>；<color=#FFFFFF>[士气]</color>回复至80点时，下一次换入前场将直接发动<color=#FFFFFF>[快速支援]</color>；<color=#FFFFFF>[士气]</color>大于等于80点后，莱特发动第五段<color=#FFFFFF>[普通攻击]</color>时，将进入<color=#FFFFFF>[士气喷发]</color>状态，提升<color=#FFFFFF>[普通攻击]</color>第五段中轻拳起攻、刺拳连击和终结一击的威力；威力提升后，招式命中敌人时，会持续消耗<color=#FFFFFF>[士气]</color>，每消耗10点<color=#FFFFFF>[士气]</color>，莱特的冲击力提升<color=#2BAD00>1.17%</color>，最多提升<color=#2BAD00>11.7%</color>，持续6秒；\n<color=#FFFFFF>[士气喷发]</color>状态下，莱特不再随时间自动获得<color=#FFFFFF>[士气]</color>，轻拳起攻或刺拳连击期间耗尽<color=#FFFFFF>[士气]</color>时，会自动衔接发动更加强力的终结一击；\n<color=#FFFFFF>[士气喷发]</color>状态下，轻拳起攻或刺拳连击命中敌人时，目标的<color=#98EFF0>冰属性伤害抗性</color>和<color=#FF5521>火属性伤害抗性</color>降低15%，持续30秒；\n<color=#FFFFFF>[士气喷发]</color>状态下，终结一击命中敌人时，会对目标施加<color=#FFFFFF>[溃败]</color>效果，使其进入失衡状态后的失衡持续时间提升3秒，从失衡状态恢复前<color=#FFFFFF>[溃败]</color>效果对同一目标最多触发一次；\n<color=#FFFFFF>[普通攻击]</color>第五段终结一击命中敌人、换回后场或<color=#FFFFFF>[士气]</color>耗尽时，莱特将退出<color=#FFFFFF>[士气喷发]</color>状态，尚未消耗的<color=#FFFFFF>[士气]</color>会被保留。",
+                "3": "莱特会随时间自动获得<color=#FFFFFF>[士气]</color>，每秒回复2.9点，队伍中任意角色每消耗1点能量值，额外为莱特回复0.26点<color=#FFFFFF>[士气]</color>，莱特最多拥有100点<color=#FFFFFF>[士气]</color>；<color=#FFFFFF>[士气]</color>回复至80点时，下一次换入前场将直接发动<color=#FFFFFF>[快速支援]</color>；<color=#FFFFFF>[士气]</color>大于等于80点后，莱特发动第五段<color=#FFFFFF>[普通攻击]</color>时，将进入<color=#FFFFFF>[士气喷发]</color>状态，提升<color=#FFFFFF>[普通攻击]</color>第五段中轻拳起攻、刺拳连击和终结一击的威力；威力提升后，招式命中敌人时，会持续消耗<color=#FFFFFF>[士气]</color>，每消耗10点<color=#FFFFFF>[士气]</color>，莱特的冲击力提升<color=#2BAD00>1.33%</color>，最多提升<color=#2BAD00>13.3%</color>，持续6秒；\n<color=#FFFFFF>[士气喷发]</color>状态下，莱特不再随时间自动获得<color=#FFFFFF>[士气]</color>，轻拳起攻或刺拳连击期间耗尽<color=#FFFFFF>[士气]</color>时，会自动衔接发动更加强力的终结一击；\n<color=#FFFFFF>[士气喷发]</color>状态下，轻拳起攻或刺拳连击命中敌人时，目标的<color=#98EFF0>冰属性伤害抗性</color>和<color=#FF5521>火属性伤害抗性</color>降低15%，持续30秒；\n<color=#FFFFFF>[士气喷发]</color>状态下，终结一击命中敌人时，会对目标施加<color=#FFFFFF>[溃败]</color>效果，使其进入失衡状态后的失衡持续时间提升3秒，从失衡状态恢复前<color=#FFFFFF>[溃败]</color>效果对同一目标最多触发一次；\n<color=#FFFFFF>[普通攻击]</color>第五段终结一击命中敌人、换回后场或<color=#FFFFFF>[士气]</color>耗尽时，莱特将退出<color=#FFFFFF>[士气喷发]</color>状态，尚未消耗的<color=#FFFFFF>[士气]</color>会被保留。",
+                "4": "莱特会随时间自动获得<color=#FFFFFF>[士气]</color>，每秒回复2.9点，队伍中任意角色每消耗1点能量值，额外为莱特回复0.26点<color=#FFFFFF>[士气]</color>，莱特最多拥有100点<color=#FFFFFF>[士气]</color>；<color=#FFFFFF>[士气]</color>回复至80点时，下一次换入前场将直接发动<color=#FFFFFF>[快速支援]</color>；<color=#FFFFFF>[士气]</color>大于等于80点后，莱特发动第五段<color=#FFFFFF>[普通攻击]</color>时，将进入<color=#FFFFFF>[士气喷发]</color>状态，提升<color=#FFFFFF>[普通攻击]</color>第五段中轻拳起攻、刺拳连击和终结一击的威力；威力提升后，招式命中敌人时，会持续消耗<color=#FFFFFF>[士气]</color>，每消耗10点<color=#FFFFFF>[士气]</color>，莱特的冲击力提升<color=#2BAD00>1.5%</color>，最多提升<color=#2BAD00>15%</color>，持续6秒；\n<color=#FFFFFF>[士气喷发]</color>状态下，莱特不再随时间自动获得<color=#FFFFFF>[士气]</color>，轻拳起攻或刺拳连击期间耗尽<color=#FFFFFF>[士气]</color>时，会自动衔接发动更加强力的终结一击；\n<color=#FFFFFF>[士气喷发]</color>状态下，轻拳起攻或刺拳连击命中敌人时，目标的<color=#98EFF0>冰属性伤害抗性</color>和<color=#FF5521>火属性伤害抗性</color>降低15%，持续30秒；\n<color=#FFFFFF>[士气喷发]</color>状态下，终结一击命中敌人时，会对目标施加<color=#FFFFFF>[溃败]</color>效果，使其进入失衡状态后的失衡持续时间提升3秒，从失衡状态恢复前<color=#FFFFFF>[溃败]</color>效果对同一目标最多触发一次；\n<color=#FFFFFF>[普通攻击]</color>第五段终结一击命中敌人、换回后场或<color=#FFFFFF>[士气]</color>耗尽时，莱特将退出<color=#FFFFFF>[士气喷发]</color>状态，尚未消耗的<color=#FFFFFF>[士气]</color>会被保留。",
+                "5": "莱特会随时间自动获得<color=#FFFFFF>[士气]</color>，每秒回复2.9点，队伍中任意角色每消耗1点能量值，额外为莱特回复0.26点<color=#FFFFFF>[士气]</color>，莱特最多拥有100点<color=#FFFFFF>[士气]</color>；<color=#FFFFFF>[士气]</color>回复至80点时，下一次换入前场将直接发动<color=#FFFFFF>[快速支援]</color>；<color=#FFFFFF>[士气]</color>大于等于80点后，莱特发动第五段<color=#FFFFFF>[普通攻击]</color>时，将进入<color=#FFFFFF>[士气喷发]</color>状态，提升<color=#FFFFFF>[普通攻击]</color>第五段中轻拳起攻、刺拳连击和终结一击的威力；威力提升后，招式命中敌人时，会持续消耗<color=#FFFFFF>[士气]</color>，每消耗10点<color=#FFFFFF>[士气]</color>，莱特的冲击力提升<color=#2BAD00>1.67%</color>，最多提升<color=#2BAD00>16.7%</color>，持续6秒；\n<color=#FFFFFF>[士气喷发]</color>状态下，莱特不再随时间自动获得<color=#FFFFFF>[士气]</color>，轻拳起攻或刺拳连击期间耗尽<color=#FFFFFF>[士气]</color>时，会自动衔接发动更加强力的终结一击；\n<color=#FFFFFF>[士气喷发]</color>状态下，轻拳起攻或刺拳连击命中敌人时，目标的<color=#98EFF0>冰属性伤害抗性</color>和<color=#FF5521>火属性伤害抗性</color>降低15%，持续30秒；\n<color=#FFFFFF>[士气喷发]</color>状态下，终结一击命中敌人时，会对目标施加<color=#FFFFFF>[溃败]</color>效果，使其进入失衡状态后的失衡持续时间提升3秒，从失衡状态恢复前<color=#FFFFFF>[溃败]</color>效果对同一目标最多触发一次；\n<color=#FFFFFF>[普通攻击]</color>第五段终结一击命中敌人、换回后场或<color=#FFFFFF>[士气]</color>耗尽时，莱特将退出<color=#FFFFFF>[士气喷发]</color>状态，尚未消耗的<color=#FFFFFF>[士气]</color>会被保留。",
+                "6": "莱特会随时间自动获得<color=#FFFFFF>[士气]</color>，每秒回复2.9点，队伍中任意角色每消耗1点能量值，额外为莱特回复0.26点<color=#FFFFFF>[士气]</color>，莱特最多拥有100点<color=#FFFFFF>[士气]</color>；<color=#FFFFFF>[士气]</color>回复至80点时，下一次换入前场将直接发动<color=#FFFFFF>[快速支援]</color>；<color=#FFFFFF>[士气]</color>大于等于80点后，莱特发动第五段<color=#FFFFFF>[普通攻击]</color>时，将进入<color=#FFFFFF>[士气喷发]</color>状态，提升<color=#FFFFFF>[普通攻击]</color>第五段中轻拳起攻、刺拳连击和终结一击的威力；威力提升后，招式命中敌人时，会持续消耗<color=#FFFFFF>[士气]</color>，每消耗10点<color=#FFFFFF>[士气]</color>，莱特的冲击力提升<color=#2BAD00>1.83%</color>，最多提升<color=#2BAD00>18.3%</color>，持续6秒；\n<color=#FFFFFF>[士气喷发]</color>状态下，莱特不再随时间自动获得<color=#FFFFFF>[士气]</color>，轻拳起攻或刺拳连击期间耗尽<color=#FFFFFF>[士气]</color>时，会自动衔接发动更加强力的终结一击；\n<color=#FFFFFF>[士气喷发]</color>状态下，轻拳起攻或刺拳连击命中敌人时，目标的<color=#98EFF0>冰属性伤害抗性</color>和<color=#FF5521>火属性伤害抗性</color>降低15%，持续30秒；\n<color=#FFFFFF>[士气喷发]</color>状态下，终结一击命中敌人时，会对目标施加<color=#FFFFFF>[溃败]</color>效果，使其进入失衡状态后的失衡持续时间提升3秒，从失衡状态恢复前<color=#FFFFFF>[溃败]</color>效果对同一目标最多触发一次；\n<color=#FFFFFF>[普通攻击]</color>第五段终结一击命中敌人、换回后场或<color=#FFFFFF>[士气]</color>耗尽时，莱特将退出<color=#FFFFFF>[士气喷发]</color>状态，尚未消耗的<color=#FFFFFF>[士气]</color>会被保留。",
+                "7": "莱特会随时间自动获得<color=#FFFFFF>[士气]</color>，每秒回复2.9点，队伍中任意角色每消耗1点能量值，额外为莱特回复0.26点<color=#FFFFFF>[士气]</color>，莱特最多拥有100点<color=#FFFFFF>[士气]</color>；<color=#FFFFFF>[士气]</color>回复至80点时，下一次换入前场将直接发动<color=#FFFFFF>[快速支援]</color>；<color=#FFFFFF>[士气]</color>大于等于80点后，莱特发动第五段<color=#FFFFFF>[普通攻击]</color>时，将进入<color=#FFFFFF>[士气喷发]</color>状态，提升<color=#FFFFFF>[普通攻击]</color>第五段中轻拳起攻、刺拳连击和终结一击的威力；威力提升后，招式命中敌人时，会持续消耗<color=#FFFFFF>[士气]</color>，每消耗10点<color=#FFFFFF>[士气]</color>，莱特的冲击力提升<color=#2BAD00>2%</color>，最多提升<color=#2BAD00>20%</color>，持续6秒；\n<color=#FFFFFF>[士气喷发]</color>状态下，莱特不再随时间自动获得<color=#FFFFFF>[士气]</color>，轻拳起攻或刺拳连击期间耗尽<color=#FFFFFF>[士气]</color>时，会自动衔接发动更加强力的终结一击；\n<color=#FFFFFF>[士气喷发]</color>状态下，轻拳起攻或刺拳连击命中敌人时，目标的<color=#98EFF0>冰属性伤害抗性</color>和<color=#FF5521>火属性伤害抗性</color>降低15%，持续30秒；\n<color=#FFFFFF>[士气喷发]</color>状态下，终结一击命中敌人时，会对目标施加<color=#FFFFFF>[溃败]</color>效果，使其进入失衡状态后的失衡持续时间提升3秒，从失衡状态恢复前<color=#FFFFFF>[溃败]</color>效果对同一目标最多触发一次；\n<color=#FFFFFF>[普通攻击]</color>第五段终结一击命中敌人、换回后场或<color=#FFFFFF>[士气]</color>耗尽时，莱特将退出<color=#FFFFFF>[士气喷发]</color>状态，尚未消耗的<color=#FFFFFF>[士气]</color>会被保留。"
+            }
+        },
+        "MathSkill": {
+            "Title": "额外能力：斗志昂扬",
+            "Description": "队伍中存在<color=#FFFFFF>[强攻]</color>角色或与自身阵营相同的角色时触发：\n<color=#FFFFFF>[士气喷发]</color>状态下，莱特第五段<color=#FFFFFF>[普通攻击]</color>命中敌人时，全队角色获得一层<color=#FFFFFF>[昂扬]</color>，最多叠加20层，持续30秒，重复触发时刷新持续时间；每拥有一层<color=#FFFFFF>[昂扬]</color>，代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#FF5521>火属性伤害</color>提升1.25%，获得<color=#FFFFFF>[昂扬]</color>时，若莱特的冲击力高于170点，每超过10点冲击力会使每层<color=#FFFFFF>[昂扬]</color>提供的增益效果额外提升0.25%；队伍中任意角色发动<color=#FFFFFF>[连携技]</color>时，会刷新全队角色<color=#FFFFFF>[昂扬]</color>的持续时间；<color=#FFFFFF>[昂扬]</color>最多使代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#FF5521>火属性伤害</color>提升75%。"
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "116100001": {
+                "Title": "普通攻击：L式轰鸣拳",
+                "Description": "点按或长按 <IconMap:Icon_Normal> 发动：\n向前方进行至多五段的打击，造成<color=#F0D12B>物理伤害</color>和<color=#FF5521>火属性伤害</color>；\n在<color=#FFFFFF>[普通攻击]</color>第三段发动期间，拖曳{LAYOUT_CONSOLECONTROLLER#操作杆}{LAYOUT_FALLBACK#摇杆}，同时连点或长按 <IconMap:Icon_Normal> ，可以持续发动连续体术追击，松开{LAYOUT_CONSOLECONTROLLER#操作杆}{LAYOUT_FALLBACK#摇杆}，则衔接后继第四段<color=#FFFFFF>[普通攻击]</color>；\n在<color=#FFFFFF>[普通攻击]</color>第五段轻拳起攻期间，拖曳{LAYOUT_CONSOLECONTROLLER#操作杆}{LAYOUT_FALLBACK#摇杆}，同时连点或长按 <IconMap:Icon_Normal> ，可以循环发动轻拳起攻和第四段<color=#FFFFFF>[普通攻击]</color>，松开{LAYOUT_CONSOLECONTROLLER#操作杆}{LAYOUT_FALLBACK#摇杆}，则衔接后继刺拳连击；\n保持连点或长按 <IconMap:Icon_Normal> 时，可以延长刺拳连击的持续时间；\n停止连点或长按 <IconMap:Icon_Normal> 后，或刺拳连击至持续时间上限后，将向前方发动终结一击，终结一击期间拥有无敌效果；\n<color=#FFFFFF>[普通攻击]</color>第五段发动期间，莱特受到的伤害降低40%；\n<color=#FFFFFF>[士气喷发]</color>状态下，<color=#FFFFFF>[普通攻击]</color>第五段发动期间抗打断等级提升，伤害降低效果提升至80%。"
+            },
+            "116110001": {
+                "Title": "普通攻击：L式轰鸣拳"
+            },
+            "116110002": {
+                "Description": "一段伤害倍率",
+                "Param": "{Skill:1161001, Prop:1001}"
+            },
+            "116110003": {
+                "Description": "二段伤害倍率",
+                "Param": "{Skill:1161002, Prop:1001}"
+            },
+            "116110004": {
+                "Description": "三段伤害倍率",
+                "Param": "{Skill:1161003, Prop:1001}"
+            },
+            "116110005": {
+                "Description": "追击一段伤害倍率",
+                "Param": "{Skill:1161004, Prop:1001}"
+            },
+            "116110006": {
+                "Description": "追击二段伤害倍率",
+                "Param": "{Skill:1161005, Prop:1001}"
+            },
+            "116110007": {
+                "Description": "追击三段伤害倍率",
+                "Param": "{Skill:1161006, Prop:1001}"
+            },
+            "116110008": {
+                "Description": "追击四段伤害倍率",
+                "Param": "{Skill:1161007, Prop:1001}"
+            },
+            "116110009": {
+                "Description": "追击五段伤害倍率",
+                "Param": "{Skill:1161008, Prop:1001}"
+            },
+            "116110010": {
+                "Description": "四段伤害倍率",
+                "Param": "{Skill:1161009, Prop:1001}"
+            },
+            "116110011": {
+                "Description": "五段起攻伤害倍率",
+                "Param": "{Skill:1161010, Prop:1001}"
+            },
+            "116110012": {
+                "Description": "五段连击伤害倍率",
+                "Param": "{Skill:1161011, Prop:1001}"
+            },
+            "116110013": {
+                "Description": "五段终结伤害倍率",
+                "Param": "{Skill:1161012, Prop:1001}"
+            },
+            "116110014": {
+                "Description": "五段起攻伤害倍率（士气喷发状态）",
+                "Param": "{Skill:1161026, Prop:1001}"
+            },
+            "116110015": {
+                "Description": "五段连击伤害倍率（士气喷发状态）",
+                "Param": "{Skill:1161027, Prop:1001}"
+            },
+            "116110016": {
+                "Description": "五段终结伤害倍率（士气喷发状态）",
+                "Param": "{Skill:1161028, Prop:1001}"
+            },
+            "116110017": {
+                "Description": "五段强力终结伤害倍率（士气喷发状态）",
+                "Param": "{Skill:1161025, Prop:1001}"
+            },
+            "116110018": {
+                "Description": "一段失衡倍率",
+                "Param": "{Skill:1161001, Prop:1002}"
+            },
+            "116110019": {
+                "Description": "二段失衡倍率",
+                "Param": "{Skill:1161002, Prop:1002}"
+            },
+            "116110020": {
+                "Description": "三段失衡倍率",
+                "Param": "{Skill:1161003, Prop:1002}"
+            },
+            "116110021": {
+                "Description": "追击一段失衡倍率",
+                "Param": "{Skill:1161004, Prop:1002}"
+            },
+            "116110022": {
+                "Description": "追击二段失衡倍率",
+                "Param": "{Skill:1161005, Prop:1002}"
+            },
+            "116110023": {
+                "Description": "追击三段失衡倍率",
+                "Param": "{Skill:1161006, Prop:1002}"
+            },
+            "116110024": {
+                "Description": "追击四段失衡倍率",
+                "Param": "{Skill:1161007, Prop:1002}"
+            },
+            "116110025": {
+                "Description": "追击五段失衡倍率",
+                "Param": "{Skill:1161008, Prop:1002}"
+            },
+            "116110026": {
+                "Description": "四段失衡倍率",
+                "Param": "{Skill:1161009, Prop:1002}"
+            },
+            "116110027": {
+                "Description": "五段起攻失衡倍率",
+                "Param": "{Skill:1161010, Prop:1002}"
+            },
+            "116110028": {
+                "Description": "五段连击失衡倍率",
+                "Param": "{Skill:1161011, Prop:1002}"
+            },
+            "116110029": {
+                "Description": "五段终结失衡倍率",
+                "Param": "{Skill:1161012, Prop:1002}"
+            },
+            "116110030": {
+                "Description": "五段起攻失衡倍率（士气喷发状态）",
+                "Param": "{Skill:1161026, Prop:1002}"
+            },
+            "116110031": {
+                "Description": "五段连击失衡倍率（士气喷发状态）",
+                "Param": "{Skill:1161027, Prop:1002}"
+            },
+            "116110032": {
+                "Description": "五段终结失衡倍率（士气喷发状态）",
+                "Param": "{Skill:1161028, Prop:1002}"
+            },
+            "116110033": {
+                "Description": "五段强力终结失衡倍率（士气喷发状态）",
+                "Param": "{Skill:1161025, Prop:1002}"
+            }
+        },
+        "1": {
+            "116100002": {
+                "Title": "特殊技：V式日轮升拳",
+                "Description": "点按 <IconMap:Icon_Special> 发动：\n使用上勾拳向前方进行打击，造成<color=#FF5521>火属性伤害</color>；\n招式发动期间抗打断等级提升。\n垫步闪避期间，点按 <IconMap:Icon_Special> 发动：\n使用组合拳向前方进行打击，造成<color=#FF5521>火属性伤害</color>；\n发动该招式不会打断<color=#FFFFFF>[普通攻击]</color>的连击段数；\n招式发动期间抗打断等级提升。"
+            },
+            "116100003": {
+                "Title": "强化特殊技：V式日轮升拳-全冲程",
+                "Description": "能量足够时，点按 <IconMap:Icon_SpecialReady> 发动：\n使用上勾拳离地跃起并向前方进行强力打击，造成大量<color=#FF5521>火属性伤害</color>；\n招式发动期间，再次点按 <IconMap:Icon_SpecialReady> 可以额外消耗能量，发动强力追击，造成大量<color=#FF5521>火属性伤害</color>；\n招式发动期间拥有无敌效果，\n招式发动后，点按或长按 <IconMap:Icon_Normal> 可以直接衔接发动第四段<color=#FFFFFF>[普通攻击]</color>。\n垫步闪避期间，能量足够时，点按<IconMap:Icon_SpecialReady> 发动：\n使用组合拳向前方进行强力打击，造成大量<color=#FF5521>火属性伤害</color>；\n发动该招式不会打断<color=#FFFFFF>[普通攻击]</color>的连击段数；\n招式发动期间拥有无敌效果；\n招式发动后，点按或长按 <IconMap:Icon_Normal> 可以直接衔接发动第五段<color=#FFFFFF>[普通攻击]</color>。"
+            },
+            "116110034": {
+                "Title": "特殊技：V式日轮升拳"
+            },
+            "116110035": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1161013, Prop:1001}"
+            },
+            "116110036": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1161013, Prop:1002}"
+            },
+            "116110037": {
+                "Title": "强化特殊技：V式日轮升拳-全冲程"
+            },
+            "116110038": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1161014, Prop:1001}"
+            },
+            "116110039": {
+                "Description": "追击伤害倍率",
+                "Param": "{Skill:1161015, Prop:1001}"
+            },
+            "116110040": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1161014, Prop:1002}"
+            },
+            "116110041": {
+                "Description": "追击失衡倍率",
+                "Param": "{Skill:1161015, Prop:1002}"
+            },
+            "116110042": {
+                "Description": "发动能量消耗",
+                "Param": "40点"
+            },
+            "116110043": {
+                "Description": "追击能量消耗",
+                "Param": "20点"
+            }
+        },
+        "2": {
+            "116100004": {
+                "Title": "闪避：匿影滑步",
+                "Description": "点按 <IconMap:Icon_Evade> 发动：\n快速的冲刺闪避；\n招式发动期间拥有无敌效果。\n角色发动攻击期间，点按 <IconMap:Icon_Evade> 发动：\n向{LAYOUT_CONSOLECONTROLLER#操作杆}{LAYOUT_FALLBACK#摇杆}方向垫步闪避；\n发动该招式不会打断<color=#FFFFFF>[普通攻击]</color>的连击段数；\n招式发动期间拥有无敌效果。"
+            },
+            "116100005": {
+                "Title": "冲刺攻击：骸突",
+                "Description": "闪避时，点按 <IconMap:Icon_Normal> 发动：\n向前方进行快速打击，造成<color=#F0D12B>物理伤害</color>。"
+            },
+            "116100006": {
+                "Title": "闪避反击：烈闪",
+                "Description": "触发<color=#FFFFFF>[极限闪避]</color>后，点按 <IconMap:Icon_Normal> 发动：\n对前方敌人发动打击，造成<color=#FF5521>火属性伤害</color>；\n招式发动期间拥有无敌效果；\n招式发动后，点按或长按 <IconMap:Icon_Normal> 可以直接衔接发动第五段<color=#FFFFFF>[普通攻击]</color>。"
+            },
+            "116110044": {
+                "Title": "冲刺攻击：骸突"
+            },
+            "116110045": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1161016, Prop:1001}"
+            },
+            "116110046": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1161016, Prop:1002}"
+            },
+            "116110047": {
+                "Title": "闪避反击：烈闪"
+            },
+            "116110048": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1161017, Prop:1001}"
+            },
+            "116110049": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1161017, Prop:1002}"
+            }
+        },
+        "3": {
+            "116100007": {
+                "Title": "连携技：V式灼日炎",
+                "Description": "触发<color=#FFFFFF>[连携技]</color>时，选择对应角色发动：\n对前方小范围敌人发动强力打击，造成大量<color=#FF5521>火属性伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "116100008": {
+                "Title": "终结技：W式桂冠终火",
+                "Description": "喧响等级达到[极]时，点按 <IconMap:Icon_UltimateReady> 发动：\n对身周大范围敌人发动强力打击，造成大量<color=#FF5521>火属性伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "116110050": {
+                "Title": "连携技：V式灼日炎"
+            },
+            "116110051": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1161018, Prop:1001}"
+            },
+            "116110052": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1161018, Prop:1002}"
+            },
+            "116110053": {
+                "Title": "终结技：W式桂冠终火"
+            },
+            "116110054": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1161019, Prop:1001}"
+            },
+            "116110055": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1161019, Prop:1002}"
+            }
+        },
+        "6": {
+            "116100010": {
+                "Title": "快速支援：烈闪-守",
+                "Description": "当前操作中的角色被击飞时，点按 <IconMap:Icon_Switch> 发动：\n对前方敌人发动打击，造成<color=#FF5521>火属性伤害</color>；\n招式发动期间拥有无敌效果；\n招式发动后，点按或长按 <IconMap:Icon_Normal> 可以直接衔接发动第五段<color=#FFFFFF>[普通攻击]</color>。"
+            },
+            "116100011": {
+                "Title": "招架支援：瞬破",
+                "Description": "前场角色即将被攻击时，点按 <IconMap:Icon_Switch> 发动：\n招架敌人的攻击，累积大量失衡值；\n招式发动期间拥有无敌效果。"
+            },
+            "116100012": {
+                "Title": "支援突击：骸突-刺",
+                "Description": "发动<color=#FFFFFF>[招架支援]</color>后，点按 <IconMap:Icon_Normal> 发动：\n对前方敌人发动打击，造成<color=#FF5521>火属性伤害</color>；\n招式发动期间拥有无敌效果；\n招式发动后，点按或长按 <IconMap:Icon_Normal> 可以直接衔接发动第五段<color=#FFFFFF>[普通攻击]</color>。"
+            },
+            "116110056": {
+                "Title": "快速支援：烈闪-守"
+            },
+            "116110057": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1161020, Prop:1001}"
+            },
+            "116110058": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1161020, Prop:1002}"
+            },
+            "116110059": {
+                "Title": "招架支援：瞬破"
+            },
+            "116110060": {
+                "Description": "轻招架失衡倍率",
+                "Param": "{Skill:1161021, Prop:1002}"
+            },
+            "116110061": {
+                "Description": "重招架失衡倍率",
+                "Param": "{Skill:1161022, Prop:1002}"
+            },
+            "116110062": {
+                "Description": "连续招架失衡倍率",
+                "Param": "{Skill:1161023, Prop:1002}"
+            },
+            "116110063": {
+                "Title": "支援突击：骸突-刺"
+            },
+            "116110064": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1161024, Prop:1001}"
+            },
+            "116110065": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1161024, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1161001": {
+            "DamageValue": 3920,
+            "DamageGrowth": 360,
+            "DazeValue": 1960,
+            "DazeGrowth": 90
+        },
+        "1161002": {
+            "DamageValue": 4800,
+            "DamageGrowth": 440,
+            "DazeValue": 3290,
+            "DazeGrowth": 150
+        },
+        "1161003": {
+            "DamageValue": 5530,
+            "DamageGrowth": 510,
+            "DazeValue": 4670,
+            "DazeGrowth": 220
+        },
+        "1161004": {
+            "DamageValue": 8690,
+            "DamageGrowth": 790,
+            "DazeValue": 6050,
+            "DazeGrowth": 280
+        },
+        "1161005": {
+            "DamageValue": 4770,
+            "DamageGrowth": 440,
+            "DazeValue": 3320,
+            "DazeGrowth": 160
+        },
+        "1161006": {
+            "DamageValue": 5810,
+            "DamageGrowth": 530,
+            "DazeValue": 4040,
+            "DazeGrowth": 190
+        },
+        "1161007": {
+            "DamageValue": 3280,
+            "DamageGrowth": 300,
+            "DazeValue": 2280,
+            "DazeGrowth": 110
+        },
+        "1161008": {
+            "DamageValue": 8900,
+            "DamageGrowth": 810,
+            "DazeValue": 6190,
+            "DazeGrowth": 290
+        },
+        "1161009": {
+            "DamageValue": 7890,
+            "DamageGrowth": 720,
+            "DazeValue": 7610,
+            "DazeGrowth": 350
+        },
+        "1161010": {
+            "DamageValue": 16360,
+            "DamageGrowth": 1490,
+            "DazeValue": 12950,
+            "DazeGrowth": 590
+        },
+        "1161011": {
+            "DamageValue": 12290,
+            "DamageGrowth": 1120,
+            "DazeValue": 8130,
+            "DazeGrowth": 370
+        },
+        "1161012": {
+            "DamageValue": 10460,
+            "DamageGrowth": 960,
+            "DazeValue": 7950,
+            "DazeGrowth": 370
+        },
+        "1161013": {
+            "DamageValue": 3630,
+            "DamageGrowth": 330,
+            "DazeValue": 3630,
+            "DazeGrowth": 170
+        },
+        "1161014": {
+            "DamageValue": 48630,
+            "DamageGrowth": 4430,
+            "DazeValue": 40350,
+            "DazeGrowth": 1840
+        },
+        "1161015": {
+            "DamageValue": 29270,
+            "DamageGrowth": 2670,
+            "DazeValue": 24770,
+            "DazeGrowth": 1130
+        },
+        "1161016": {
+            "DamageValue": 8990,
+            "DamageGrowth": 820,
+            "DazeValue": 4500,
+            "DazeGrowth": 210
+        },
+        "1161017": {
+            "DamageValue": 18630,
+            "DamageGrowth": 1700,
+            "DazeValue": 16870,
+            "DazeGrowth": 770
+        },
+        "1161018": {
+            "DamageValue": 71210,
+            "DamageGrowth": 6480,
+            "DazeValue": 27320,
+            "DazeGrowth": 1250
+        },
+        "1161019": {
+            "DamageValue": 150800,
+            "DamageGrowth": 13710,
+            "DazeValue": 94740,
+            "DazeGrowth": 4310
+        },
+        "1161020": {
+            "DamageValue": 6970,
+            "DamageGrowth": 640,
+            "DazeValue": 6970,
+            "DazeGrowth": 320
+        },
+        "1161021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1161022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1161023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1161024": {
+            "DamageValue": 21980,
+            "DamageGrowth": 2000,
+            "DazeValue": 18230,
+            "DazeGrowth": 830
+        },
+        "1161025": {
+            "DamageValue": 43540,
+            "DamageGrowth": 3960,
+            "DazeValue": 13240,
+            "DazeGrowth": 610
+        },
+        "1161026": {
+            "DamageValue": 17720,
+            "DamageGrowth": 1620,
+            "DazeValue": 13630,
+            "DazeGrowth": 620
+        },
+        "1161027": {
+            "DamageValue": 36430,
+            "DamageGrowth": 3320,
+            "DazeValue": 8550,
+            "DazeGrowth": 390
+        },
+        "1161028": {
+            "DamageValue": 11970,
+            "DamageGrowth": 1090,
+            "DazeValue": 9210,
+            "DazeGrowth": 420
+        }
+    }
+}

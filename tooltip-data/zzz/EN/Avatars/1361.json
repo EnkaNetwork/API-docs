@@ -1,0 +1,469 @@
+{
+    "Name": "Trigger",
+    "ElementTypes": [
+        "Elec"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Sharpened Senses",
+            "Description": "The Stun DMG Multiplier applied through <color=#FFFFFF>Core Passive: Soul-Searching Gaze</color> is increased by an additional 20%. When activating <color=#FFFFFF>Basic Attack: Harmonizing Shot</color>, the cooldown is reduced to 2s. <color=#FFFFFF>Purge</color> gained upon hitting an enemy with the continuous fire or charged counter in <color=#FFFFFF>Sniper Stance</color> increases by 25%. Maximum <color=#FFFFFF>Purge</color> increases to 125.",
+            "Lore": "Hearing that can distinguish every subtle change in the wind, touch that can sense every tremor in the ground. To compensate for her visual limitations, the young lady honed her other senses to perfection.\n\"Being a sniper is the only thing I excel at... At least in this, I refuse to lose to anyone.\""
+        },
+        "2": {
+            "Title": "\"Ether Vision\"",
+            "Description": "Upon using an <color=#FFFFFF>Aftershock</color>, Trigger gains 1 stack of <color=#FFFFFF>Hunter's Gaze</color>. When executing a Finishing Move in <color=#FFFFFF>Sniper Stance</color>, Trigger gains 2 stacks of <color=#FFFFFF>Hunter's Gaze</color>. Each stack of <color=#FFFFFF>Hunter's Gaze</color> increases all squad members' CRIT DMG by 6%, stacking up to 4 times, and lasting 10s. Repeated triggers reset the duration.",
+            "Lore": "When inside the Hollow, every Ether fluctuation around her becomes an aid to her spatial observation.\n\"I used to think these eyes were cursed, bringing nothing but pain.\"\n\"But now... they're my ticket to reaching my goals, and proof that I haven't forgotten my past.\""
+        },
+        "3": {
+            "Title": "\"Homecoming\"",
+            "Description": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2",
+            "Lore": "The home she could return to is now sealed away in the past.\nHer cold lips pressed against the harmonica, the lonely melody the only testament to her memories."
+        },
+        "4": {
+            "Title": "Concealment",
+            "Description": "When Trigger enters or extends <color=#FFFFFF>Coordinated Support</color>, while the state is active, the next time other squad members trigger <color=#FFFFFF>Basic Attack: Harmonizing Shot</color> or <color=#FFFFFF>Basic Attack: Harmonizing Shot - Tartarus</color>, it will trigger <color=#FFFFFF>Disconnect</color> upon hitting an enemy, dealing additional DMG equal to 200% of Trigger's ATK and inflict Daze equal to 120% of Trigger's Impact. This skill has a relatively high Interrupt Level.",
+            "Lore": "Footsteps, breaths, heartbeats. She smothers every trace of her own aura until her entire form blends seamlessly with the environment. She moves through the battlefield like a ghostly reaper.\nOutside of combat though, this silent way of moving has been strictly forbidden after scaring her teammates one too many times.\nOf course, she definitely hasn't been using these stealth tactics to observe the video store when she can't find an opportunity to meet someone there... right?"
+        },
+        "5": {
+            "Title": "Locked In",
+            "Description": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2",
+            "Lore": "Once a target is locked, even with a broken, decaying body or through excruciating pain, never let your crosshair waver. From the targets of her revenge to those she must protect, from enemies to allies — this is the will of a sniper.\nBut with the Proxy, the one who gave her light in her darkest hour, it's not about locking in but being drawn in. Even if there's no reason to keep watching, she will never divert her aim — this is the will of a young lady."
+        },
+        "6": {
+            "Title": "Beyond the River of the Dead",
+            "Description": "Upon entering the battlefield, Trigger gains 5 <color=#FFFFFF>Armor Break Rounds</color>. For every 25 <color=#FFFFFF>Purge</color> consumed, Trigger gains 1 additional <color=#FFFFFF>Armor Break Round</color>, up to a maximum of 5 rounds. While possessing <color=#FFFFFF>Armor Break Rounds</color>, when Trigger hits a target in <color=#FFFFFF>Sniper Stance</color>, 1 <color=#FFFFFF>Armor Break Round</color> is consumed to deal additional <color=#2EB6FF>Electric DMG</color> equal to 1,200% of Trigger's ATK. <color=#FFFFFF>Armor Break Round</color> DMG is additionally increased by 50%. This effect can trigger once every 0.2s.",
+            "Lore": "\"You know what? Those who are stained with blood in battle can only go to the underworld after death.\"\n\"Beyond the river of the dead lies a sight of unparalleled beauty. Flowers bloom all around me, while familiar faces from my past accompany me to my final, peaceful place of rest.\"\n\"But... because of you, because I have something to protect, perhaps I don't want that day to come so soon.\""
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Core Passive: Soul-Searching Gaze",
+            "DescriptionByLevel": {
+                "1": "When Trigger's <color=#FFFFFF>Aftershock</color> hits an enemy, the target's Stun DMG Multiplier increases by <color=#2BAD00>20%</color> for 5s. This Stun DMG Multiplier increase will apply even if the target isn't stunned.",
+                "2": "When Trigger's <color=#FFFFFF>Aftershock</color> hits an enemy, the target's Stun DMG Multiplier increases by <color=#2BAD00>22.5%</color> for 5s. This Stun DMG Multiplier increase will apply even if the target isn't stunned.",
+                "3": "When Trigger's <color=#FFFFFF>Aftershock</color> hits an enemy, the target's Stun DMG Multiplier increases by <color=#2BAD00>25%</color> for 5s. This Stun DMG Multiplier increase will apply even if the target isn't stunned.",
+                "4": "When Trigger's <color=#FFFFFF>Aftershock</color> hits an enemy, the target's Stun DMG Multiplier increases by <color=#2BAD00>27.5%</color> for 5s. This Stun DMG Multiplier increase will apply even if the target isn't stunned.",
+                "5": "When Trigger's <color=#FFFFFF>Aftershock</color> hits an enemy, the target's Stun DMG Multiplier increases by <color=#2BAD00>30%</color> for 5s. This Stun DMG Multiplier increase will apply even if the target isn't stunned.",
+                "6": "When Trigger's <color=#FFFFFF>Aftershock</color> hits an enemy, the target's Stun DMG Multiplier increases by <color=#2BAD00>32.5%</color> for 5s. This Stun DMG Multiplier increase will apply even if the target isn't stunned.",
+                "7": "When Trigger's <color=#FFFFFF>Aftershock</color> hits an enemy, the target's Stun DMG Multiplier increases by <color=#2BAD00>35%</color> for 5s. This Stun DMG Multiplier increase will apply even if the target isn't stunned."
+            }
+        },
+        "MathSkill": {
+            "Title": "Additional Ability: Silver Lantern's Gaze",
+            "Description": "When another character in your squad is an <color=#FFFFFF>Attack</color> character or shares the same attribute:\nWhen Trigger's CRIT Rate exceeds 40%, each 1% CRIT Rate above this threshold increases her Daze dealt by <color=#FFFFFF>Aftershocks</color> by 1.5%, up to a maximum increase of 75%."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "136100001": {
+                "Title": "Basic Attack: Cold-Bore Shot",
+                "Description": "Press <IconMap:Icon_Normal> to activate:\nUnleashes up to 4 shots ahead. The first 3 hits deal <color=#F0D12B>Physical DMG</color>, the 4th hit deals <color=#2EB6FF>Electric DMG</color>."
+            },
+            "136100002": {
+                "Title": "Basic Attack: Silenced Shot",
+                "Description": "Hold <IconMap:Icon_Normal> to activate:\nTrigger enters the <color=#FFFFFF>Sniper Stance</color> and fires forward continuously, dealing <color=#2EB6FF>Electric DMG</color>.\nWhile continually firing, when attacked by an enemy, Trigger will automatically evade. This effect can trigger once every 8s.\nWhile continually firing, you can drag the {LAYOUT_CONSOLECONTROLLER#stick}{LAYOUT_FALLBACK#joystick} to adjust her position to the left/right/back.\nAutomatically evading attacks or adjusting position when about to be hit will trigger a <color=#FFFFFF>Perfect Dodge</color>, followed by an automatic charged counter.\nAfter releasing <IconMap:Icon_Normal>, Trigger will step back, ready her weapon and unleash a Finishing Move, then exit <color=#FFFFFF>Sniper Stance</color>.\nCharacter is invulnerable during the charged counter and Finishing Move.\nWhen the continuous firing or the charged counter hits an enemy, Trigger gains 25 <color=#FFFFFF>Purge</color>, up to a maximum of 100 <color=#FFFFFF>Purge</color>.\nWhen the Finishing Move hits an enemy, it triggers the <color=#FFFFFF>Quick Assist</color> of the previous character in the squad. A <color=#FFFFFF>Quick Assist</color> can only be triggered through this method once every 25s."
+            },
+            "136100003": {
+                "Title": "Basic Attack: Harmonizing Shot",
+                "Description": "When Trigger has <color=#FFFFFF>Purge</color>, use another active character in the squad to hit an enemy with a <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge Counter</color>, <color=#FFFFFF>Special Attack</color>, <color=#FFFFFF>Dash Attack</color> or <color=#FFFFFF>Quick Assist</color> to activate:\nWhile encircling the enemy, rapidly fire two shots at the enemy, dealing <color=#2EB6FF>Electric DMG</color>.\nUpon activating this skill, consume 3 <color=#FFFFFF>Purge</color>.\nCharacter is invulnerable while using this skill.\n<color=#FFFFFF>Basic Attack: Harmonizing Shot</color> is an <color=#FFFFFF>Aftershock</color> attack.\nThe squad can trigger <color=#FFFFFF>Basic Attack: Harmonizing Shot</color> once every 3s."
+            },
+            "136100004": {
+                "Title": "Basic Attack: Harmonizing Shot - Tartarus",
+                "Description": "When Trigger has <color=#FFFFFF>Purge</color>, use another active character in the squad to hit an enemy with a heavy attack from an <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Assist Follow-Up</color>, or <color=#FFFFFF>Ultimate</color> to activate:\nWhile encircling the enemy, rapidly fires three shots at the enemy, followed by a Finishing Move, dealing <color=#2EB6FF>Electric DMG</color>.\nUpon activating this skill, consume 5 <color=#FFFFFF>Purge</color>.\nCharacter is invulnerable while using this skill.\n<color=#FFFFFF>Basic Attack: Harmonizing Shot - Tartarus</color> is an <color=#FFFFFF>Aftershock</color> attack.\nThe same skill type can trigger <color=#FFFFFF>Basic Attack: Harmonizing Shot - Tartarus</color> up to 2 times within 20s for the entire squad.\nDuring <color=#FFFFFF>Basic Attack: Harmonizing Shot</color>, <color=#FFFFFF>Basic Attack: Harmonizing Shot - Tartarus</color> will immediately activate instead if triggered."
+            },
+            "136100016": {
+                "Title": "Basic Attack: Cold-Bore Shot"
+            },
+            "136100017": {
+                "Description": "1st-Hit DMG Multiplier",
+                "Param": "{Skill:1361001, Prop:1001}"
+            },
+            "136100018": {
+                "Description": "2nd-Hit DMG Multiplier",
+                "Param": "{Skill:1361002, Prop:1001}"
+            },
+            "136100019": {
+                "Description": "3rd-Hit DMG Multiplier",
+                "Param": "{Skill:1361003, Prop:1001}"
+            },
+            "136100020": {
+                "Description": "4th-Hit DMG Multiplier",
+                "Param": "{Skill:1361004, Prop:1001}"
+            },
+            "136100021": {
+                "Description": "1st-Hit Daze Multiplier",
+                "Param": "{Skill:1361001, Prop:1002}"
+            },
+            "136100022": {
+                "Description": "2nd-Hit Daze Multiplier",
+                "Param": "{Skill:1361002, Prop:1002}"
+            },
+            "136100023": {
+                "Description": "3rd-Hit Daze Multiplier",
+                "Param": "{Skill:1361003, Prop:1002}"
+            },
+            "136100024": {
+                "Description": "4th-Hit Daze Multiplier",
+                "Param": "{Skill:1361004, Prop:1002}"
+            },
+            "136100025": {
+                "Title": "Basic Attack: Silenced Shot"
+            },
+            "136100026": {
+                "Description": "Shot DMG Multiplier",
+                "Param": "{Skill:1361005, Prop:1001}"
+            },
+            "136100027": {
+                "Description": "Counter DMG Multiplier",
+                "Param": "{Skill:1361006, Prop:1001}"
+            },
+            "136100028": {
+                "Description": "Finishing Move DMG Multiplier",
+                "Param": "{Skill:1361007, Prop:1001}"
+            },
+            "136100029": {
+                "Description": "Shot Daze Multiplier",
+                "Param": "{Skill:1361005, Prop:1002}"
+            },
+            "136100030": {
+                "Description": "Counter Daze Multiplier",
+                "Param": "{Skill:1361006, Prop:1002}"
+            },
+            "136100031": {
+                "Description": "Finishing Move Daze Multiplier",
+                "Param": "{Skill:1361007, Prop:1002}"
+            },
+            "136100032": {
+                "Title": "Basic Attack: Harmonizing Shot"
+            },
+            "136100033": {
+                "Description": "Continuous Fire DMG Multiplier",
+                "Param": "{Skill:1361008, Prop:1001}*2"
+            },
+            "136100034": {
+                "Description": "Continuous Fire Daze Multiplier",
+                "Param": "{Skill:1361008, Prop:1002}*2"
+            },
+            "136100035": {
+                "Title": "Basic Attack: Harmonizing Shot - Tartarus"
+            },
+            "136100036": {
+                "Description": "Continuous Fire DMG Multiplier",
+                "Param": "{Skill:1361020, Prop:1001}*3"
+            },
+            "136100037": {
+                "Description": "Finishing Move DMG Multiplier",
+                "Param": "{Skill:1361022, Prop:1001}"
+            },
+            "136100038": {
+                "Description": "Continuous Fire Daze Multiplier",
+                "Param": "{Skill:1361020, Prop:1002}*3"
+            },
+            "136100039": {
+                "Description": "Finishing Move Daze Multiplier",
+                "Param": "{Skill:1361022, Prop:1002}"
+            }
+        },
+        "1": {
+            "136100005": {
+                "Title": "Special Attack: Spectral Flash",
+                "Description": "Press <IconMap:Icon_Special> to activate:\nLunge forward with a slash, dealing <color=#2EB6FF>Electric DMG</color>.\nAnti-Interrupt level is increased while using this skill."
+            },
+            "136100006": {
+                "Title": "EX Special Attack: Flash Burial",
+                "Description": "With enough Energy, press <IconMap:Icon_SpecialReady> to activate:\nLunge forward with a slash, then leap up with a powerful shot to the ground, dealing massive <color=#2EB6FF>Electric DMG</color>.\nCharacter is invulnerable while using this skill.\nWhen this skill hits an enemy, it triggers the <color=#FFFFFF>Quick Assist</color> of the previous character in the squad.\nWhen this skill hits an enemy, Trigger enters <color=#FFFFFF>Coordinated Support</color>. While in this state, when another active character in the squad hits an enemy with any attack, it triggers a <color=#FFFFFF>Basic Attack: Harmonizing Shot</color> without consuming <color=#FFFFFF>Purge</color> and with no cooldown restrictions. This state lasts 8s and the effect can trigger up to 4 times. Repeatedly entering <color=#FFFFFF>Coordinated Support</color> extends the duration and grants additional triggers, lasting a maximum of 20s and triggering up to a maximum of 10 times."
+            },
+            "136100040": {
+                "Title": "Special Attack: Spectral Flash"
+            },
+            "136100041": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1361009, Prop:1001}"
+            },
+            "136100042": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1361009, Prop:1002}"
+            },
+            "136100043": {
+                "Title": "EX Special Attack: Flash Burial"
+            },
+            "136100044": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1361010, Prop:1001}"
+            },
+            "136100045": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1361010, Prop:1002}"
+            },
+            "136100046": {
+                "Description": "Energy Cost",
+                "Param": "60"
+            }
+        },
+        "2": {
+            "136100007": {
+                "Title": "Dodge: Phantom Concealment",
+                "Description": "Press <IconMap:Icon_Evade> to activate:\nA quick dash dodge.\nCharacter is invulnerable while using this skill."
+            },
+            "136100008": {
+                "Title": "Dash Attack: Vengeful Specter",
+                "Description": "Press <IconMap:Icon_Normal> during a dodge to activate:\nRapidly lift the gun and fire, dealing <color=#F0D12B>Physical DMG</color>."
+            },
+            "136100009": {
+                "Title": "Dodge Counter: Condemned Soul",
+                "Description": "Press <IconMap:Icon_Normal> during a <color=#FFFFFF>Perfect Dodge</color> to activate:\nRotate and fire a quick shot at enemies in front, dealing <color=#2EB6FF>Electric DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "136100047": {
+                "Title": "Dash Attack: Vengeful Specter"
+            },
+            "136100048": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1361011, Prop:1001}"
+            },
+            "136100049": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1361011, Prop:1002}"
+            },
+            "136100050": {
+                "Title": "Dodge Counter: Condemned Soul"
+            },
+            "136100051": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1361012, Prop:1001}"
+            },
+            "136100052": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1361012, Prop:1002}"
+            }
+        },
+        "3": {
+            "136100010": {
+                "Title": "Chain Attack: Stygian Guide",
+                "Description": "When a <color=#FFFFFF>Chain Attack</color> is triggered, select the character to activate:\nUnleashes continuous powerful shots forward, dealing massive <color=#2EB6FF>Electric DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "136100011": {
+                "Title": "Ultimate: Underworld Requiem",
+                "Description": "When Decibel Rating is at <color=#FFFFFF>Maximum</color>, press <IconMap:Icon_UltimateReady> to activate:\nDeliver a powerful shot at enemies in a large area ahead, dealing massive <color=#2EB6FF>Electric DMG</color>.\nCharacter is invulnerable while using this skill.\nWhen the skill hits an enemy, it triggers the <color=#FFFFFF>Quick Assist</color> of the previous character in the squad.\nWhen the skill hits an enemy, Trigger enters <color=#FFFFFF>Coordinated Support</color>. While in this state, when another active character in the squad hits an enemy with any attack, it triggers a <color=#FFFFFF>Basic Attack: Harmonizing Shot</color> without consuming <color=#FFFFFF>Purge</color> and with no cooldown restrictions. This state lasts 12s and the effect can trigger up to 6 times. Repeatedly entering <color=#FFFFFF>Coordinated Support</color> extends the duration and grants additional triggers, lasting a maximum of 20s and triggering up to a maximum of 10 times."
+            },
+            "136100053": {
+                "Title": "Chain Attack: Stygian Guide"
+            },
+            "136100054": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1361013, Prop:1001}"
+            },
+            "136100055": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1361013, Prop:1002}"
+            },
+            "136100056": {
+                "Title": "Ultimate: Underworld Requiem"
+            },
+            "136100057": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1361014, Prop:1001}"
+            },
+            "136100058": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1361014, Prop:1002}"
+            }
+        },
+        "6": {
+            "136100013": {
+                "Title": "Quick Assist: Cold-Bore Cover Fire",
+                "Description": "When the active character is launched, press <IconMap:Icon_Switch> to activate:\nRotate and fire a quick shot at enemies in front, dealing <color=#2EB6FF>Electric DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "136100014": {
+                "Title": "Defensive Assist: Delaying Demise",
+                "Description": "When the on-field character is about to be attacked, press <IconMap:Icon_Switch> to activate:\nParries the enemy's attack, dealing massive Daze.\nCharacter is invulnerable while using this skill."
+            },
+            "136100015": {
+                "Title": "Assist Follow-Up: Piercing Thunder",
+                "Description": "Press <IconMap:Icon_Normal> after a <color=#FFFFFF>Defensive Assist</color> to activate:\nUnleash a series of slashes at enemies ahead, followed by a powerful charged shot after landing, dealing <color=#2EB6FF>Electric DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "136100059": {
+                "Title": "Quick Assist: Cold-Bore Cover Fire"
+            },
+            "136100060": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1361015, Prop:1001}"
+            },
+            "136100061": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1361015, Prop:1002}"
+            },
+            "136100062": {
+                "Title": "Defensive Assist: Delaying Demise"
+            },
+            "136100063": {
+                "Description": "Light Defensive Daze Multiplier",
+                "Param": "{Skill:1361016, Prop:1002}"
+            },
+            "136100064": {
+                "Description": "Heavy Defensive Daze Multiplier",
+                "Param": "{Skill:1361017, Prop:1002}"
+            },
+            "136100065": {
+                "Description": "Chain Defensive Daze Multiplier",
+                "Param": "{Skill:1361018, Prop:1002}"
+            },
+            "136100066": {
+                "Title": "Assist Follow-Up: Piercing Thunder"
+            },
+            "136100067": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1361019, Prop:1001}"
+            },
+            "136100068": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1361019, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1361001": {
+            "DamageValue": 3450,
+            "DamageGrowth": 320,
+            "DazeValue": 1730,
+            "DazeGrowth": 80
+        },
+        "1361002": {
+            "DamageValue": 5690,
+            "DamageGrowth": 520,
+            "DazeValue": 2850,
+            "DazeGrowth": 130
+        },
+        "1361003": {
+            "DamageValue": 11090,
+            "DamageGrowth": 1010,
+            "DazeValue": 6080,
+            "DazeGrowth": 280
+        },
+        "1361004": {
+            "DamageValue": 24300,
+            "DamageGrowth": 2210,
+            "DazeValue": 17690,
+            "DazeGrowth": 810
+        },
+        "1361005": {
+            "DamageValue": 4760,
+            "DamageGrowth": 440,
+            "DazeValue": 2380,
+            "DazeGrowth": 110
+        },
+        "1361006": {
+            "DamageValue": 23390,
+            "DamageGrowth": 2130,
+            "DazeValue": 14880,
+            "DazeGrowth": 680
+        },
+        "1361007": {
+            "DamageValue": 13120,
+            "DamageGrowth": 1200,
+            "DazeValue": 6560,
+            "DazeGrowth": 300
+        },
+        "1361008": {
+            "DamageValue": 4790,
+            "DamageGrowth": 440,
+            "DazeValue": 3590,
+            "DazeGrowth": 170
+        },
+        "1361009": {
+            "DamageValue": 7150,
+            "DamageGrowth": 650,
+            "DazeValue": 7150,
+            "DazeGrowth": 330
+        },
+        "1361010": {
+            "DamageValue": 63440,
+            "DamageGrowth": 5770,
+            "DazeValue": 43270,
+            "DazeGrowth": 1970
+        },
+        "1361011": {
+            "DamageValue": 5140,
+            "DamageGrowth": 470,
+            "DazeValue": 2570,
+            "DazeGrowth": 120
+        },
+        "1361012": {
+            "DamageValue": 21970,
+            "DamageGrowth": 2000,
+            "DazeValue": 19440,
+            "DazeGrowth": 890
+        },
+        "1361013": {
+            "DamageValue": 57470,
+            "DamageGrowth": 5230,
+            "DazeValue": 13580,
+            "DazeGrowth": 620
+        },
+        "1361014": {
+            "DamageValue": 148050,
+            "DamageGrowth": 13460,
+            "DazeValue": 92200,
+            "DazeGrowth": 4200
+        },
+        "1361015": {
+            "DamageValue": 8440,
+            "DamageGrowth": 770,
+            "DazeValue": 8440,
+            "DazeGrowth": 390
+        },
+        "1361016": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1361017": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1361018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1361019": {
+            "DamageValue": 43290,
+            "DamageGrowth": 3940,
+            "DazeValue": 32740,
+            "DazeGrowth": 1490
+        },
+        "1361020": {
+            "DamageValue": 2260,
+            "DamageGrowth": 210,
+            "DazeValue": 1700,
+            "DazeGrowth": 80
+        },
+        "1361021": {
+            "DamageValue": 4790,
+            "DamageGrowth": 440,
+            "DazeValue": 3590,
+            "DazeGrowth": 170
+        },
+        "1361022": {
+            "DamageValue": 4520,
+            "DamageGrowth": 420,
+            "DazeValue": 3400,
+            "DazeGrowth": 160
+        },
+        "1361023": {
+            "DamageValue": 20000,
+            "DamageGrowth": 0,
+            "DazeValue": 12000,
+            "DazeGrowth": 0
+        },
+        "1361024": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}
