@@ -306,3 +306,5 @@ Für weitere Informationen über Namen, Beschreibung, etc. Überprüfe die [Text
 Python - https://github.com/seriaati/enka-py - [seriaati](https://github.com/seriaati)
 
 C# - https://github.com/aliafuji/EnkaDotnet - [aliafuji](https://github.com/aliafuji)
+
+Go - https://github.com/kirinyoku/enkanetwork-go - [kirinyoku](https://github.com/kirinyoku)
