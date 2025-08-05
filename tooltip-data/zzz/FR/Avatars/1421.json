@@ -21,7 +21,7 @@
         },
         "4": {
             "Title": "Cuistot de première classe",
-            "Description": "Lorsque <color=#FFFFFF>Ultime : Un festin digne d'un empereur !</color> soigne tous les personnages de l'escouade, la récupération de PV augmente de 25 %, et l'effet de soins continus augmente de 25 %. Au lancement d'<color=#FFFFFF>Ultime : Un festin digne d'un empereur !</color>, vous obtenez l'effet <color=#FFFFFF>Provisions de secours</color>. Lorsque n'importe quel personnage de l'escouade perd des PV, l'effet <color=#FFFFFF>Provisions de secours</color> est consommé pour restaurer 50 % des PV récupérés grâce à l'effet de restauration instantanée de PV d'Ultime : Un festin digne d'un empereur !. Cet effet ne peut pas être cumulé.",
+            "Description": "Lorsque <color=#FFFFFF>Ultime : Un festin digne d'un empereur !</color> soigne tous les personnages de l'escouade, la récupération de PV augmente de 25 %, et l'effet de soins continus augmente de 25 %. Au lancement d'<color=#FFFFFF>Ultime : Un festin digne d'un empereur !</color>, vous obtenez l'effet <color=#FFFFFF>Provisions de secours</color>. Lorsque n'importe quel personnage de l'escouade perd des PV, l'effet <color=#FFFFFF>Provisions de secours</color> est consommé pour restaurer 50 % des PV récupérés grâce à l'effet de restauration instantanée de PV d'<color=#FFFFFF>Ultime : Un festin digne d'un empereur !</color>. Cet effet ne peut pas être cumulé.",
             "Lore": "La première fois qu'il a cuisiné, il a failli mettre le feu à la cuisine. Parmi ceux qui sont accourus pour l'aider, il y avait un chef qui, regardant toute la nourriture brûlée, a utilisé les œufs restants pour lui préparer une assiette de riz frit.\nIl l'a dévoré les larmes aux yeux. Quand il a finalement levé la tête, le cuisinier lui tendait une note avec « 100 » écrit dessus.\n« J'ai compris, Maître ! Vous voulez m'enseigner qu'en cuisine, il faut se donner à 100 %, c'est ça ?\n— Non, je te dis que c'est 100 dennies par bouchée, et tu en as mangé plus d'une centaine. Alors, il est temps de payer. »\n\nÀ partir de ce jour, Pan Yinhu a insisté pour cuisiner lui-même et n'a plus jamais fait d'erreur. Et c'est ainsi qu'est né un cuistot de première classe."
         },
         "5": {
@@ -50,7 +50,7 @@
         },
         "MathSkill": {
             "Title": "Capacité supplémentaire : Estomac de fer",
-            "Description": "Lorsqu'un autre personnage de votre escouade est de la spécialisation <color=#FFFFFF>Rupture</color> ou de la même faction :\nLorsque Pan Yinhu touche un ennemi avec <color=#FFFFFF>Attaque spéciale : Toucher de la mort</color>, l'ennemi subit l'effet Qi épuisé, augmentant les DGT infligés par toutes les unités contre lui de 20 %. Chaque coup d'<color=#FFFFFF>Attaque spéciale : Toucher de la mort</color> inflige l'effet <color=#FFFFFF>Qi épuisé</color> pendant 10 s. Cet effet ne peut pas être cumulé, mais des coups répétés sur le même ennemi prolongeront sa durée."
+            "Description": "Lorsqu'un autre personnage de votre escouade est de la spécialisation <color=#FFFFFF>Rupture</color> ou de la même faction :\nLorsque Pan Yinhu touche un ennemi avec <color=#FFFFFF>Attaque spéciale : Toucher de la mort</color>, l'ennemi subit l'effet <color=#FFFFFF>Qi épuisé</color>, augmentant les DGT infligés par toutes les unités contre lui de 20 %. Chaque coup d'<color=#FFFFFF>Attaque spéciale : Toucher de la mort</color> inflige l'effet <color=#FFFFFF>Qi épuisé</color> pendant 10 s. Cet effet ne peut pas être cumulé, mais des coups répétés sur le même ennemi prolongeront sa durée."
         }
     },
     "SkillDescriptions": {
@@ -228,6 +228,14 @@
             "142100048": {
                 "Description": "Multiplicateur de confusion",
                 "Param": "{Skill:1421013, Prop:1002}"
+            },
+            "142100049": {
+                "Description": "Récupération de PV",
+                "Param": "{CAL:100+AvatarSkillLevel(3)*60,1,2}"
+            },
+            "142100050": {
+                "Description": "Récupération de PV par seconde",
+                "Param": "{CAL:0.8+AvatarSkillLevel(3)*0.05,1,2} %"
             }
         },
         "6": {
@@ -243,40 +251,40 @@
                 "Title": "Soutien de suivi : Suivre le mouvement",
                 "Description": "Appuyez sur <IconMap:Icon_Normal> après un <color=#FFFFFF>soutien défensif</color> pour activer :\nAssène une attaque au corps à corps aux ennemis situés en face, infligeant des <color=#F0D12B>DGT physiques</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
             },
-            "142100049": {
+            "142100051": {
                 "Title": "Soutien rapide : Fortune au premier regard"
             },
-            "142100050": {
+            "142100052": {
                 "Description": "Multiplicateur de DGT",
                 "Param": "{Skill:1421014, Prop:1001}"
             },
-            "142100051": {
+            "142100053": {
                 "Description": "Multiplicateur de confusion",
                 "Param": "{Skill:1421014, Prop:1002}"
             },
-            "142100052": {
+            "142100054": {
                 "Title": "Soutien défensif : Présence intimidante"
             },
-            "142100053": {
+            "142100055": {
                 "Description": "Multiplicateur de confusion de défense légère",
                 "Param": "{Skill:1421015, Prop:1002}"
             },
-            "142100054": {
+            "142100056": {
                 "Description": "Multiplicateur de confusion de défense lourde",
                 "Param": "{Skill:1421016, Prop:1002}"
             },
-            "142100055": {
+            "142100057": {
                 "Description": "Multiplicateur de confusion de défense en chaîne",
                 "Param": "{Skill:1421017, Prop:1002}"
             },
-            "142100056": {
+            "142100058": {
                 "Title": "Soutien de suivi : Suivre le mouvement"
             },
-            "142100057": {
+            "142100059": {
                 "Description": "Multiplicateur de DGT",
                 "Param": "{Skill:1421018, Prop:1001}"
             },
-            "142100058": {
+            "142100060": {
                 "Description": "Multiplicateur de confusion",
                 "Param": "{Skill:1421018, Prop:1002}"
             }

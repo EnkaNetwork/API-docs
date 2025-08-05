@@ -50,7 +50,7 @@
         },
         "MathSkill": {
             "Title": "Zusatzfähigkeit: Eiserner Magen",
-            "Description": "Wenn sich in der Truppe eine <color=#FFFFFF>Spaltung</color>-Figur oder eine Figur derselben Fraktion befindet:\nBeim Treffen von Gegnern mit <color=#FFFFFF>Spezialangriff: Berührung des Todes</color> erleidet das Ziel den Effekt „Qi-Erschöpfung“ und der durch alle Einheiten verursachte SCH gegen es erhöht sich um 20 %. Trifft Pan Yinhu mit <color=#FFFFFF>Spezialangriff: Berührung des Todes</color> einen Gegner, wird dieser für 10 s mit dem Effekt <color=#FFFFFF>Qi-Erschöpfung</color> belegt. Dieser Effekt ist nicht stapelbar, doch die Dauer kann durch wiederholtes Treffen desselben Gegners verlängert werden."
+            "Description": "Wenn sich in der Truppe eine <color=#FFFFFF>Spaltung</color>-Figur oder eine Figur derselben Fraktion befindet:\nBeim Treffen von Gegnern mit <color=#FFFFFF>Spezialangriff: Berührung des Todes</color> erleidet das Ziel den Effekt <color=#FFFFFF>Qi-Erschöpfung</color> und der durch alle Einheiten verursachte SCH gegen es erhöht sich um 20 %. Trifft Pan Yinhu mit <color=#FFFFFF>Spezialangriff: Berührung des Todes</color> einen Gegner, wird dieser für 10 s mit dem Effekt <color=#FFFFFF>Qi-Erschöpfung</color> belegt. Dieser Effekt ist nicht stapelbar, doch die Dauer kann durch wiederholtes Treffen desselben Gegners verlängert werden."
         }
     },
     "SkillDescriptions": {
@@ -205,7 +205,7 @@
             },
             "142100009": {
                 "Title": "Ultimate: Kaiserliches Festmahl!",
-                "Description": "Drücke beim Erreichen der Dezibelstufe <color=#FFFFFF>Maximum</color> <IconMap:Icon_UltimateReady> zum Anwenden:\nFührt eine Technik aus, die Qi zu Bratreis verdichtet, und katapultiert diesen dann auf Gegner, um hohen <color=#F0D12B>phys. SCH</color> zu verursachen und für alle Truppenfiguren <color=#2BAD00>{CAL:100+AvatarSkillLevel(3)*60,1,2}</color> Pkt. LP wiederherzustellen. Allen Truppenfiguren wird auch ein Effekt zur fortlaufenden LP-Wiederherstellung für 8 s verliehen, der pro Sekunde <color=#2BAD00>{CAL:0.8+AvatarSkillLevel(3)*0.05,1,2}</color> % LP wiederherstellt.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+                "Description": "Drücke beim Erreichen der Dezibelstufe <color=#FFFFFF>Maximum</color> <IconMap:Icon_UltimateReady> zum Anwenden:\nFührt eine Technik aus, die Qi zu Bratreis verdichtet, und katapultiert diesen dann auf Gegner, um hohen <color=#F0D12B>phys. SCH</color> zu verursachen und für alle Truppenfiguren <color=#2BAD00>{CAL:100+AvatarSkillLevel(3)*60,1,2}</color> LP wiederherzustellen. Allen Truppenfiguren wird auch ein Effekt zur fortlaufenden LP-Wiederherstellung für 8 s verliehen, der pro Sekunde <color=#2BAD00>{CAL:0.8+AvatarSkillLevel(3)*0.05,1,2}</color> % LP wiederherstellt.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
             },
             "142100043": {
                 "Title": "Kettenangriff: Mit Wokdampf gesalbt"
@@ -228,6 +228,14 @@
             "142100048": {
                 "Description": "Benommenheit-Multiplikator",
                 "Param": "{Skill:1421013, Prop:1002}"
+            },
+            "142100049": {
+                "Description": "LP-Wiederherstellung",
+                "Param": "{CAL:100+AvatarSkillLevel(3)*60,1,2} Pkt."
+            },
+            "142100050": {
+                "Description": "LP-Prozentsatz wiederhergestellt pro Sekunde",
+                "Param": "{CAL:0.8+AvatarSkillLevel(3)*0.05,1,2} %"
             }
         },
         "6": {
@@ -243,40 +251,40 @@
                 "Title": "Sukzessive Hilfe: Komm in Schwung",
                 "Description": "Drücke nach einer <color=#FFFFFF>Defensivhilfe</color> <IconMap:Icon_Normal> zum Anwenden:\nFührt einen Nahkampfangriff gegen Gegner vor sich aus und verursacht dabei <color=#F0D12B>phys. SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
             },
-            "142100049": {
+            "142100051": {
                 "Title": "Schnelle Hilfe: Blick empor, sieh das Glück"
             },
-            "142100050": {
+            "142100052": {
                 "Description": "SCH-Multiplikator",
                 "Param": "{Skill:1421014, Prop:1001}"
             },
-            "142100051": {
+            "142100053": {
                 "Description": "Benommenheit-Multiplikator",
                 "Param": "{Skill:1421014, Prop:1002}"
             },
-            "142100052": {
+            "142100054": {
                 "Title": "Defensivhilfe: Bedrohliche Aura"
             },
-            "142100053": {
+            "142100055": {
                 "Description": "Benommenheit-Multiplikator für leichte Defensive",
                 "Param": "{Skill:1421015, Prop:1002}"
             },
-            "142100054": {
+            "142100056": {
                 "Description": "Benommenheit-Multiplikator für schwere Defensive",
                 "Param": "{Skill:1421016, Prop:1002}"
             },
-            "142100055": {
+            "142100057": {
                 "Description": "Benommenheit-Multiplikator für Kettendefensive",
                 "Param": "{Skill:1421017, Prop:1002}"
             },
-            "142100056": {
+            "142100058": {
                 "Title": "Sukzessive Hilfe: Komm in Schwung"
             },
-            "142100057": {
+            "142100059": {
                 "Description": "SCH-Multiplikator",
                 "Param": "{Skill:1421018, Prop:1001}"
             },
-            "142100058": {
+            "142100060": {
                 "Description": "Benommenheit-Multiplikator",
                 "Param": "{Skill:1421018, Prop:1002}"
             }

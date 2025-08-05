@@ -1,0 +1,472 @@
+{
+    "Name": "Alice",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Poignée de coriandre",
+            "Description": "Lorsque Alice déclenche <color=#F0D12B>Assaut polarisé</color>, elle obtient 25 pts de <color=#FFFFFF>Rite de l'épée</color>. Lorsqu'elle inflige <color=#F0D12B>Assaut</color> à un ennemi, la DÉF de la cible diminue de 20 % pendant 30 s.",
+            "Lore": "La tige de coriandre ondulait comme la lueur verte d'une étoile naissante,\nSi fragile qu'elle pensa qu'elle pourrait la briser du bout de ses doigts.\nDoucement, elle ouvrit ses mains tremblantes,\nEt accueillit son ondulation dans les paumes de ses mains.\nSon cœur battait comme une graine germée au printemps, tentant de percer la terre à l'aube juste après la pluie."
+        },
+        "2": {
+            "Title": "De la sauge à la pointe de l'épée",
+            "Description": "Lorsque le coup final d'<color=#FFFFFF>Ultime : Grand final météore</color> touche un ennemi, il inflige <color=#F0D12B>Assaut polarisé</color>. Les DGT d'<color=#F0D12B>Assaut</color> de tous les personnages de l'escouade augmentent de 15 %. Les DGT de <color=#FFFFFF>Dysfonctionnement</color> infligés aux ennemis souffrant d'une <color=#F0D12B>anomalie physique</color> augmentent de 15 %. En entrant sur le champ de bataille, Alice obtient immédiatement 1 000 décibels. En mode Expédition, cet effet peut être déclenché une fois toutes les 180 s.",
+            "Lore": "L'épée argentée s'enfonce profondément, embrassant la feuille de sauge marquée par le givre.\nCe salut avant la bataille est sa manière de montrer son sang-froid.\nLa peur et le désespoir reposent gelés dans les rêves d'hier.\nSon épée vibre, prête à retracer le contour des étoiles.\nL'aube approche, et le bouton est prêt à éclore."
+        },
+        "3": {
+            "Title": "Symétrie",
+            "Description": "Niv. d'<color=#FFFFFF>attaque normale</color>, d'<color=#FFFFFF>esquive</color>, de <color=#FFFFFF>soutien</color>, d'<color=#FFFFFF>attaque spéciale</color> et d'<color=#FFFFFF>enchaînement</color> +2",
+            "Lore": "La symétrie parfaite la mettait dans tous ses états.\nDans la symétrie, il y avait l'ordre, l'équilibre, un sens. Sans elle, ses oreilles et sa queue de lapin seraient fades et affaissées, comme si la beauté disparaissait de son monde.\n« Alors... C'est pour ça que tu as relevé mes chaussettes dépareillées, et que tu as essayé d'arracher mon bracelet à la cuisse ?\n— Je ne peux pas supporter ton asymétrie ! Rien qu'une seconde, je te jure. Rien qu'une seconde ! »"
+        },
+        "4": {
+            "Title": "Romarin sur les lèvres",
+            "Description": "Alice ignore 10 % de la <color=#F0D12B>RÉS physique</color> de la cible. L'<color=#F0D12B>accumulation d'anomalie physique</color> de l'<color=#FFFFFF>Attaque normale : Ouverture céleste</color> renforcée augmente de 25 %.",
+            "Lore": "Le parfum du romarin s'éternisa sur ses lèvres,\nUn serment solennel, fait avec une détermination sans faille, porté à chaque respiration empreinte de givre.\nMême lorsque l'air devint glacé et lourd dans sa poitrine,\nElle n'oublierait jamais le sort qu'on appelle l'amour.\n« Au nom des Thymefield... Je ne le trahirai jamais. »"
+        },
+        "5": {
+            "Title": "Passion pour le surnaturel",
+            "Description": "Niv. d'<color=#FFFFFF>attaque normale</color>, d'<color=#FFFFFF>esquive</color>, de <color=#FFFFFF>soutien</color>, d'<color=#FFFFFF>attaque spéciale</color> et d'<color=#FFFFFF>enchaînement</color> +2",
+            "Lore": "Les phénomènes paranormaux et l'épouvante la fascinent.\nLe surnaturel reflète l'inconnu et le danger. Lorsqu'elle le ressent, ses oreilles et sa queue de lapin frissonnent d'effroi... et deviennent étonnamment douces une fois qu'elle s'est calmée.\n« Alors c'est pour cette raison que tu nous accompagnes toujours dans nos chasses aux fantômes, même si tu as la frousse ?\n— JE voulais juste voir ce qui allait se passer... Mais, c'était tellement flippant, je n'aurais pas dû ! C'était juste pour cette fois... Je jure que je ne vous accompagnerai pas la prochaine fois ! »"
+        },
+        "6": {
+            "Title": "Cœur de thym",
+            "Description": "Après une <color=#FFFFFF>Attaque normale : Valse de la Brillance stellaire</color> chargée au Niv. 3 ou un <color=#FFFFFF>Ultime : Grand final météore</color>, Alice entre dans l'état <color=#FFFFFF>Victorieuse</color> qui dure 30 s. Pendant ce laps de temps, lorsque n'importe quel personnage de l'escouade touche une cible, Alice enchaînera avec une attaque supplémentaire qui inflige des DGT physiques équivalents à 3 300 % de son adresse d'anomalie. Cet effet peut être déclenché une fois toutes les 1 s, inflige un coup critique garanti et peut être déclenché un maximum de 6 fois. Entrer à nouveau dans l'état <color=#FFFFFF>Victorieuse réinitialise</color> la limite de déclenchements.",
+            "Lore": "Un manoir qui sent bon le thym,\nUne nuit à regarder les étoiles,\nLe moment où elle a compris ce que le courage signifiait réellement.\nUne brise empreinte d'un doux parfum chassa les nuages, et la lumière du jour illumina le chandelier de cristal.\nElle s'inclina devant les jours du passé.\nPuis, lentement, elle disparut dans les champs de thym."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passif principal : Arcs-en-ciel jumeaux au cœur de l'épée",
+            "DescriptionByLevel": {
+                "1": "Lorsque n'importe quel personnage de l'escouade inflige une <color=#F0D12B>anomalie physique</color> à un ennemi, pendant toute la durée de cette dernière, Alice inflige des DGT supplémentaires toutes les 0,95 s, équivalents à 2,5 % des DGT d'origine de l'anomalie physique. Si <color=#FFFFFF>Dysfonctionnement</color> est infligé à un ennemi souffrant d'une <color=#F0D12B>anomalie physique</color>, pour chaque seconde d'<color=#F0D12B>anomalie physique</color> restante, le multiplicateur de DGT de <color=#FFFFFF>Dysfonctionnement</color> augmente de 18 %, jusqu'à un maximum de {CAL:18*10,1,2} %.\nLorsque les attaques d'Alice touchent un ennemi, elle accumule du <color=#FFFFFF>Rite de l'épée</color>. Lorsqu'elle inflige <color=#F0D12B>Assaut</color> grâce à l'accumulation d'anomalie, elle obtient 10 pts de <color=#FFFFFF>Rite de l'épée</color>. La limite de <color=#FFFFFF>Rite de l'épée</color> s'élève à 300 pts, chaque barre est constituée de 100 pts.\nLorsque le coup final d'<color=#FFFFFF>Attaque normale : Valse de la Brillance stellaire</color> chargé au Niv. 3 touche un ennemi, il inflige un effet <color=#F0D12B>Assaut</color> spécial : <color=#F0D12B>Assaut polarisé</color>. Cet effet inflige des DGT équivalents à {CAL:0+100,1,2} % des DGT d'origine d'<color=#F0D12B>Assaut</color>, ignorant l'accumulation d'anomalie. Il peut réagir avec les autres anomalies d'attribut, y compris les anomalies physiques, pour déclencher <color=#FFFFFF>Dysfonctionnement</color>.\nLorsque Alice inflige <color=#F0D12B>Assaut</color> à un ennemi, son <color=#F0D12B>taux d'accumulation d'anomalie physique</color> augmente de <color=#2BAD00>12,5 %</color> pendant 30 s.",
+                "2": "Lorsque n'importe quel personnage de l'escouade inflige une <color=#F0D12B>anomalie physique</color> à un ennemi, pendant toute la durée de cette dernière, Alice inflige des DGT supplémentaires toutes les 0,95 s, équivalents à 2,5 % des DGT d'origine de l'anomalie physique. Si <color=#FFFFFF>Dysfonctionnement</color> est infligé à un ennemi souffrant d'une <color=#F0D12B>anomalie physique</color>, pour chaque seconde d'<color=#F0D12B>anomalie physique</color> restante, le multiplicateur de DGT de <color=#FFFFFF>Dysfonctionnement</color> augmente de 18 %, jusqu'à un maximum de {CAL:18*10,1,2} %.\nLorsque les attaques d'Alice touchent un ennemi, elle accumule du <color=#FFFFFF>Rite de l'épée</color>. Lorsqu'elle inflige <color=#F0D12B>Assaut</color> grâce à l'accumulation d'anomalie, elle obtient 10 pts de <color=#FFFFFF>Rite de l'épée</color>. La limite de <color=#FFFFFF>Rite de l'épée</color> s'élève à 300 pts, chaque barre est constituée de 100 pts.\nLorsque le coup final d'<color=#FFFFFF>Attaque normale : Valse de la Brillance stellaire</color> chargé au Niv. 3 touche un ennemi, il inflige un effet <color=#F0D12B>Assaut</color> spécial : <color=#F0D12B>Assaut polarisé</color>. Cet effet inflige des DGT équivalents à {CAL:0+100,1,2} % des DGT d'origine d'<color=#F0D12B>Assaut</color>, ignorant l'accumulation d'anomalie. Il peut réagir avec les autres anomalies d'attribut, y compris les anomalies physiques, pour déclencher <color=#FFFFFF>Dysfonctionnement</color>.\nLorsque Alice inflige <color=#F0D12B>Assaut</color> à un ennemi, son <color=#F0D12B>taux d'accumulation d'anomalie physique</color> augmente de <color=#2BAD00>14,6 %</color> pendant 30 s.",
+                "3": "Lorsque n'importe quel personnage de l'escouade inflige une <color=#F0D12B>anomalie physique</color> à un ennemi, pendant toute la durée de cette dernière, Alice inflige des DGT supplémentaires toutes les 0,95 s, équivalents à 2,5 % des DGT d'origine de l'anomalie physique. Si <color=#FFFFFF>Dysfonctionnement</color> est infligé à un ennemi souffrant d'une <color=#F0D12B>anomalie physique</color>, pour chaque seconde d'<color=#F0D12B>anomalie physique</color> restante, le multiplicateur de DGT de <color=#FFFFFF>Dysfonctionnement</color> augmente de 18 %, jusqu'à un maximum de {CAL:18*10,1,2} %.\nLorsque les attaques d'Alice touchent un ennemi, elle accumule du <color=#FFFFFF>Rite de l'épée</color>. Lorsqu'elle inflige <color=#F0D12B>Assaut</color> grâce à l'accumulation d'anomalie, elle obtient 10 pts de <color=#FFFFFF>Rite de l'épée</color>. La limite de <color=#FFFFFF>Rite de l'épée</color> s'élève à 300 pts, chaque barre est constituée de 100 pts.\nLorsque le coup final d'<color=#FFFFFF>Attaque normale : Valse de la Brillance stellaire</color> chargé au Niv. 3 touche un ennemi, il inflige un effet <color=#F0D12B>Assaut</color> spécial : <color=#F0D12B>Assaut polarisé</color>. Cet effet inflige des DGT équivalents à {CAL:0+100,1,2} % des DGT d'origine d'<color=#F0D12B>Assaut</color>, ignorant l'accumulation d'anomalie. Il peut réagir avec les autres anomalies d'attribut, y compris les anomalies physiques, pour déclencher <color=#FFFFFF>Dysfonctionnement</color>.\nLorsque Alice inflige <color=#F0D12B>Assaut</color> à un ennemi, son <color=#F0D12B>taux d'accumulation d'anomalie physique</color> augmente de <color=#2BAD00>16,7 %</color> pendant 30 s.",
+                "4": "Lorsque n'importe quel personnage de l'escouade inflige une <color=#F0D12B>anomalie physique</color> à un ennemi, pendant toute la durée de cette dernière, Alice inflige des DGT supplémentaires toutes les 0,95 s, équivalents à 2,5 % des DGT d'origine de l'anomalie physique. Si <color=#FFFFFF>Dysfonctionnement</color> est infligé à un ennemi souffrant d'une <color=#F0D12B>anomalie physique</color>, pour chaque seconde d'<color=#F0D12B>anomalie physique</color> restante, le multiplicateur de DGT de <color=#FFFFFF>Dysfonctionnement</color> augmente de 18 %, jusqu'à un maximum de {CAL:18*10,1,2} %.\nLorsque les attaques d'Alice touchent un ennemi, elle accumule du <color=#FFFFFF>Rite de l'épée</color>. Lorsqu'elle inflige <color=#F0D12B>Assaut</color> grâce à l'accumulation d'anomalie, elle obtient 10 pts de <color=#FFFFFF>Rite de l'épée</color>. La limite de <color=#FFFFFF>Rite de l'épée</color> s'élève à 300 pts, chaque barre est constituée de 100 pts.\nLorsque le coup final d'<color=#FFFFFF>Attaque normale : Valse de la Brillance stellaire</color> chargé au Niv. 3 touche un ennemi, il inflige un effet <color=#F0D12B>Assaut</color> spécial : <color=#F0D12B>Assaut polarisé</color>. Cet effet inflige des DGT équivalents à {CAL:0+100,1,2} % des DGT d'origine d'<color=#F0D12B>Assaut</color>, ignorant l'accumulation d'anomalie. Il peut réagir avec les autres anomalies d'attribut, y compris les anomalies physiques, pour déclencher <color=#FFFFFF>Dysfonctionnement</color>.\nLorsque Alice inflige <color=#F0D12B>Assaut</color> à un ennemi, son <color=#F0D12B>taux d'accumulation d'anomalie physique</color> augmente de <color=#2BAD00>18,8 %</color> pendant 30 s.",
+                "5": "Lorsque n'importe quel personnage de l'escouade inflige une <color=#F0D12B>anomalie physique</color> à un ennemi, pendant toute la durée de cette dernière, Alice inflige des DGT supplémentaires toutes les 0,95 s, équivalents à 2,5 % des DGT d'origine de l'anomalie physique. Si <color=#FFFFFF>Dysfonctionnement</color> est infligé à un ennemi souffrant d'une <color=#F0D12B>anomalie physique</color>, pour chaque seconde d'<color=#F0D12B>anomalie physique</color> restante, le multiplicateur de DGT de <color=#FFFFFF>Dysfonctionnement</color> augmente de 18 %, jusqu'à un maximum de {CAL:18*10,1,2} %.\nLorsque les attaques d'Alice touchent un ennemi, elle accumule du <color=#FFFFFF>Rite de l'épée</color>. Lorsqu'elle inflige <color=#F0D12B>Assaut</color> grâce à l'accumulation d'anomalie, elle obtient 10 pts de <color=#FFFFFF>Rite de l'épée</color>. La limite de <color=#FFFFFF>Rite de l'épée</color> s'élève à 300 pts, chaque barre est constituée de 100 pts.\nLorsque le coup final d'<color=#FFFFFF>Attaque normale : Valse de la Brillance stellaire</color> chargé au Niv. 3 touche un ennemi, il inflige un effet <color=#F0D12B>Assaut</color> spécial : <color=#F0D12B>Assaut polarisé</color>. Cet effet inflige des DGT équivalents à {CAL:0+100,1,2} % des DGT d'origine d'<color=#F0D12B>Assaut</color>, ignorant l'accumulation d'anomalie. Il peut réagir avec les autres anomalies d'attribut, y compris les anomalies physiques, pour déclencher <color=#FFFFFF>Dysfonctionnement</color>.\nLorsque Alice inflige <color=#F0D12B>Assaut</color> à un ennemi, son <color=#F0D12B>taux d'accumulation d'anomalie physique</color> augmente de <color=#2BAD00>20,8 %</color> pendant 30 s.",
+                "6": "Lorsque n'importe quel personnage de l'escouade inflige une <color=#F0D12B>anomalie physique</color> à un ennemi, pendant toute la durée de cette dernière, Alice inflige des DGT supplémentaires toutes les 0,95 s, équivalents à 2,5 % des DGT d'origine de l'anomalie physique. Si <color=#FFFFFF>Dysfonctionnement</color> est infligé à un ennemi souffrant d'une <color=#F0D12B>anomalie physique</color>, pour chaque seconde d'<color=#F0D12B>anomalie physique</color> restante, le multiplicateur de DGT de <color=#FFFFFF>Dysfonctionnement</color> augmente de 18 %, jusqu'à un maximum de {CAL:18*10,1,2} %.\nLorsque les attaques d'Alice touchent un ennemi, elle accumule du <color=#FFFFFF>Rite de l'épée</color>. Lorsqu'elle inflige <color=#F0D12B>Assaut</color> grâce à l'accumulation d'anomalie, elle obtient 10 pts de <color=#FFFFFF>Rite de l'épée</color>. La limite de <color=#FFFFFF>Rite de l'épée</color> s'élève à 300 pts, chaque barre est constituée de 100 pts.\nLorsque le coup final d'<color=#FFFFFF>Attaque normale : Valse de la Brillance stellaire</color> chargé au Niv. 3 touche un ennemi, il inflige un effet <color=#F0D12B>Assaut</color> spécial : <color=#F0D12B>Assaut polarisé</color>. Cet effet inflige des DGT équivalents à {CAL:0+100,1,2} % des DGT d'origine d'<color=#F0D12B>Assaut</color>, ignorant l'accumulation d'anomalie. Il peut réagir avec les autres anomalies d'attribut, y compris les anomalies physiques, pour déclencher <color=#FFFFFF>Dysfonctionnement</color>.\nLorsque Alice inflige <color=#F0D12B>Assaut</color> à un ennemi, son <color=#F0D12B>taux d'accumulation d'anomalie physique</color> augmente de <color=#2BAD00>22,9 %</color> pendant 30 s.",
+                "7": "Lorsque n'importe quel personnage de l'escouade inflige une <color=#F0D12B>anomalie physique</color> à un ennemi, pendant toute la durée de cette dernière, Alice inflige des DGT supplémentaires toutes les 0,95 s, équivalents à 2,5 % des DGT d'origine de l'anomalie physique. Si <color=#FFFFFF>Dysfonctionnement</color> est infligé à un ennemi souffrant d'une <color=#F0D12B>anomalie physique</color>, pour chaque seconde d'<color=#F0D12B>anomalie physique</color> restante, le multiplicateur de DGT de <color=#FFFFFF>Dysfonctionnement</color> augmente de 18 %, jusqu'à un maximum de {CAL:18*10,1,2} %.\nLorsque les attaques d'Alice touchent un ennemi, elle accumule du <color=#FFFFFF>Rite de l'épée</color>. Lorsqu'elle inflige <color=#F0D12B>Assaut</color> grâce à l'accumulation d'anomalie, elle obtient 10 pts de <color=#FFFFFF>Rite de l'épée</color>. La limite de <color=#FFFFFF>Rite de l'épée</color> s'élève à 300 pts, chaque barre est constituée de 100 pts.\nLorsque le coup final d'<color=#FFFFFF>Attaque normale : Valse de la Brillance stellaire</color> chargé au Niv. 3 touche un ennemi, il inflige un effet <color=#F0D12B>Assaut</color> spécial : <color=#F0D12B>Assaut polarisé</color>. Cet effet inflige des DGT équivalents à {CAL:0+100,1,2} % des DGT d'origine d'<color=#F0D12B>Assaut</color>, ignorant l'accumulation d'anomalie. Il peut réagir avec les autres anomalies d'attribut, y compris les anomalies physiques, pour déclencher <color=#FFFFFF>Dysfonctionnement</color>.\nLorsque Alice inflige <color=#F0D12B>Assaut</color> à un ennemi, son <color=#F0D12B>taux d'accumulation d'anomalie physique</color> augmente de <color=#2BAD00>25 %</color> pendant 30 s."
+            }
+        },
+        "MathSkill": {
+            "Title": "Capacité supplémentaire : Chasse aux mystères",
+            "Description": "Lorsqu'un autre personnage de votre escouade est un personnage <color=#FFFFFF>Anomalie</color> ou <color=#FFFFFF>Soutien</color> :\nLorsque n'importe quel personnage de l'escouade déclenche <color=#FFFFFF>Dysfonctionnement</color>, Alice obtient 30 pts de <color=#FFFFFF>Rite de l'épée</color>.\nSi la maîtrise d'anomalie d'Alice est supérieure à 140, chaque point au-dessus de ce seuil lui confère 1,6 pts d'adresse d'anomalie.\nEn entrant sur le champ de bataille, Alice obtient 300 pts de <color=#FFFFFF>Rite de l'épée</color>. En mode Expédition, cet effet peut être déclenché une fois toutes les 180 s."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "140100001": {
+                "Title": "Attaque normale : Ouverture céleste",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pour activer :\nAssène jusqu'à 5 entailles frontales, infligeant des <color=#F0D12B>DGT physiques</color>.\nLorsque Alice inflige <color=#F0D12B>Assaut</color> à l'aide de l'accumulation d'anomalie, le 5e coup de sa prochaine <color=#FFFFFF>attaque normale</color> sera renforcé."
+            },
+            "140100002": {
+                "Title": "Attaque normale : Valse de la Brillance stellaire",
+                "Description": "Lorsque Alice possède au moins 1 barre de <color=#FFFFFF>Rite de l'épée</color>, maintenez <IconMap:Icon_Normal> enfoncé pour activer :\nMaintenez enfoncé pour charger, consommant jusqu'à 3 barres de <color=#FFFFFF>Rite de l'épée</color>. Relâchez <IconMap:Icon_Normal> ou attendez que le <color=#FFFFFF>Rite de l'épée</color> passe en dessous de 1 barre, et Alice assènera une série d'entailles dans une zone centrée sur la cible, infligeant d'importants <color=#F0D12B>DGT physiques</color>. Le nombre de coups infligés est déterminé par le niveau de charge.\nLorsque le coup final d'<color=#FFFFFF>Attaque normale : Valse de la Brillance stellaire</color> chargée au Niv. 3 touche un ennemi, il inflige un effet <color=#F0D12B>Assaut</color> spécial : <color=#F0D12B>Assaut polarisé</color>. Cet effet inflige {CAL:0+100,1,2} % des DGT d'origine d'<color=#F0D12B>Assaut</color>, ignorant l'accumulation d'anomalie, et peut réagir avec les autres anomalies d'attribut, y compris physiques, pour déclencher <color=#FFFFFF>Dysfonctionnement</color>.\nVous n'accumulez pas de <color=#FFFFFF>Rite de l'épée</color> lorsque vous touchez un ennemi.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "140100015": {
+                "Title": "Attaque normale : Ouverture céleste"
+            },
+            "140100016": {
+                "Description": "Multiplicateur de DGT du 1er coup",
+                "Param": "{Skill:1401001, Prop:1001}"
+            },
+            "140100017": {
+                "Description": "Multiplicateur de DGT du 2e coup",
+                "Param": "{Skill:1401002, Prop:1001}"
+            },
+            "140100018": {
+                "Description": "Multiplicateur de DGT du 3e coup",
+                "Param": "{Skill:1401003, Prop:1001}"
+            },
+            "140100019": {
+                "Description": "Multiplicateur de DGT du 4e coup",
+                "Param": "{Skill:1401004, Prop:1001}"
+            },
+            "140100020": {
+                "Description": "Multiplicateur de DGT du 5e coup",
+                "Param": "{Skill:1401005, Prop:1001}"
+            },
+            "140100021": {
+                "Description": "Multiplicateur de DGT du 5e coup (renforcé)",
+                "Param": "{Skill:1401006, Prop:1001}"
+            },
+            "140100022": {
+                "Description": "Multiplicateur de confusion du 1er coup",
+                "Param": "{Skill:1401001, Prop:1002}"
+            },
+            "140100023": {
+                "Description": "Multiplicateur de confusion du 2e coup",
+                "Param": "{Skill:1401002, Prop:1002}"
+            },
+            "140100024": {
+                "Description": "Multiplicateur de confusion du 3e coup",
+                "Param": "{Skill:1401003, Prop:1002}"
+            },
+            "140100025": {
+                "Description": "Multiplicateur de confusion du 4e coup",
+                "Param": "{Skill:1401004, Prop:1002}"
+            },
+            "140100026": {
+                "Description": "Multiplicateur de confusion du 5e coup",
+                "Param": "{Skill:1401005, Prop:1002}"
+            },
+            "140100027": {
+                "Description": "Multiplicateur de confusion du 5e coup (renforcé)",
+                "Param": "{Skill:1401006, Prop:1002}"
+            },
+            "140100028": {
+                "Title": "Attaque normale : Valse de la Brillance stellaire"
+            },
+            "140100029": {
+                "Description": "Multiplicateur de DGT de l'attaque chargée au Niv. 1",
+                "Param": "{Skill:1401010, Prop:1001}"
+            },
+            "140100030": {
+                "Description": "Multiplicateur de DGT de l'attaque chargée au Niv. 2",
+                "Param": "{Skill:1401011, Prop:1001}"
+            },
+            "140100031": {
+                "Description": "Multiplicateur de DGT de l'attaque chargée au Niv. 3",
+                "Param": "{Skill:1401012, Prop:1001}"
+            },
+            "140100032": {
+                "Description": "Multiplicateur de confusion de l'attaque chargée au Niv. 1",
+                "Param": "{Skill:1401010, Prop:1002}"
+            },
+            "140100033": {
+                "Description": "Multiplicateur de confusion de l'attaque chargée au Niv. 2",
+                "Param": "{Skill:1401011, Prop:1002}"
+            },
+            "140100034": {
+                "Description": "Multiplicateur de confusion de l'attaque chargée au Niv. 3",
+                "Param": "{Skill:1401012, Prop:1002}"
+            }
+        },
+        "1": {
+            "140100003": {
+                "Title": "Attaque spéciale : Aube perçante",
+                "Description": "Appuyez sur <IconMap:Icon_Special> pour activer :\nProjette l'épée pour attaquer et traverser les ennemis devant vous, infligeant des <color=#F0D12B>DGT physiques</color>.\nÀ l'activation de cette compétence, vous pouvez déclencher une <color=#FFFFFF>esquive parfaite</color>.\nLorsque vous déclenchez une <color=#FFFFFF>esquive parfaite</color> grâce à cette compétence, appuyez sur <IconMap:Icon_Normal> pour enchaîner directement avec le 5e coup de l'<color=#FFFFFF>attaque normale</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "140100004": {
+                "Title": "Attaque spéciale EX : Percée de l'aurore - Croix du Nord",
+                "Description": "Avec suffisamment d'énergie, bougez le {LAYOUT_CONSOLECONTROLLER#joystick}{LAYOUT_FALLBACK#stick} vers l'avant et appuyez sur <IconMap:Icon_SpecialReady> pour activer :\nAssène une impulsion qui traverse les ennemis en face, infligeant d'importants <color=#F0D12B>DGT physiques</color>.\nÀ l'activation de cette compétence, vous pouvez déclencher une <color=#FFFFFF>esquive parfaite</color>, et récupérez 10 pts de <color=#FFFFFF>Rite de l'épée</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "140100005": {
+                "Title": "Attaque spéciale EX : Percée de l'aurore - Croix du Sud",
+                "Description": "Avec suffisamment d'énergie, et sans bouger le {LAYOUT_CONSOLECONTROLLER#joystick}{LAYOUT_FALLBACK#stick} ou en le tirant vers l'arrière, appuyez sur <IconMap:Icon_SpecialReady> pour activer :\nAssène une entaille en reculant, puis fonce vers l'avant en infligeant des <color=#F0D12B>DGT physiques</color>.\nÀ l'activation de cette compétence, vous pouvez déclencher une <color=#FFFFFF>esquive parfaite</color>, et vous récupérez 10 pts de <color=#FFFFFF>Rite de l'épée</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "140100035": {
+                "Title": "Attaque spéciale : Aube perçante"
+            },
+            "140100036": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1401008, Prop:1001}"
+            },
+            "140100037": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1401008, Prop:1002}"
+            },
+            "140100038": {
+                "Title": "Attaque spéciale EX : Percée de l'aurore - Croix du Nord"
+            },
+            "140100039": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1401009, Prop:1001}"
+            },
+            "140100040": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1401009, Prop:1002}"
+            },
+            "140100041": {
+                "Description": "Coût en énergie",
+                "Param": "40 pts"
+            },
+            "140100042": {
+                "Title": "Attaque spéciale EX : Percée de l'aurore - Croix du Sud"
+            },
+            "140100043": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1401007, Prop:1001}"
+            },
+            "140100044": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1401007, Prop:1002}"
+            },
+            "140100045": {
+                "Description": "Coût en énergie",
+                "Param": "40 pts"
+            }
+        },
+        "2": {
+            "140100006": {
+                "Title": "Esquive : Agilité lapine",
+                "Description": "Appuyez sur <IconMap:Icon_Evade> pour activer :\nUne esquive rapide.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "140100007": {
+                "Title": "Attaque de bond : Bourrasque de l'épée dansante",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pendant une esquive pour activer :\nEntaille les ennemis situés en face, infligeant des <color=#F0D12B>DGT physiques</color>."
+            },
+            "140100008": {
+                "Title": "Contre d'esquive : Cérémonie de l'épée lumineuse",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pendant une <color=#FFFFFF>esquive parfaite</color> pour activer :\nEntaille et donne un coup de pied aux ennemis situés en face, infligeant des <color=#F0D12B>DGT physiques</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "140100046": {
+                "Title": "Attaque de bond : Bourrasque de l'épée dansante"
+            },
+            "140100047": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1401013, Prop:1001}"
+            },
+            "140100048": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1401013, Prop:1002}"
+            },
+            "140100049": {
+                "Title": "Contre d'esquive : Cérémonie de l'épée lumineuse"
+            },
+            "140100050": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1401014, Prop:1001}"
+            },
+            "140100051": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1401014, Prop:1002}"
+            }
+        },
+        "3": {
+            "140100009": {
+                "Title": "Enchaînement : Intermission météore",
+                "Description": "Lors du déclenchement d'un <color=#FFFFFF>enchaînement</color>, sélectionnez le personnage pour activer :\nAssène plusieurs puissantes entailles frontales consécutives, infligeant d'importants <color=#F0D12B>DGT physiques</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "140100010": {
+                "Title": "Ultime : Grand final météore",
+                "Description": "Lorsque le niveau de décibels est au <color=#FFFFFF>Maximum</color>, appuyez sur <IconMap:Icon_UltimateReady> pour activer :\nAssène plusieurs puissantes entailles consécutives sur les ennemis situés dans une large zone en face, infligeant d'importants <color=#F0D12B>DGT physiques</color>.\nÀ l'activation de cette compétence, vous récupérez 200 pts de <color=#FFFFFF>Rite de l'épée</color>.\nVous n'accumulez pas de <color=#FFFFFF>Rite de l'épée</color> en touchant les ennemis.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "140100052": {
+                "Title": "Enchaînement : Intermission météore"
+            },
+            "140100053": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1401015, Prop:1001}"
+            },
+            "140100054": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1401015, Prop:1002}"
+            },
+            "140100055": {
+                "Title": "Ultime : Grand final météore"
+            },
+            "140100056": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1401016, Prop:1001}"
+            },
+            "140100057": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1401016, Prop:1002}"
+            }
+        },
+        "6": {
+            "140100012": {
+                "Title": "Soutien rapide : Incisions imbriquées",
+                "Description": "Lorsque le personnage contrôlé est projeté, appuyez sur <IconMap:Icon_Switch> pour activer :\nEntaille et donne un coup de pied aux ennemis situés en face, infligeant des <color=#F0D12B>DGT physiques</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "140100013": {
+                "Title": "Soutien défensif : Garde de parade",
+                "Description": "Lorsque le personnage sur le terrain est sur le point d'être attaqué, appuyez sur <IconMap:Icon_Switch> pour activer :\nPare l'attaque de l'ennemi et inflige une confusion importante.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "140100014": {
+                "Title": "Soutien de suivi : Riposte en croix",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> après un <color=#FFFFFF>soutien défensif</color> pour activer :\nFonce et entaille les ennemis situés en face, infligeant des <color=#F0D12B>DGT physiques</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "140100058": {
+                "Title": "Soutien rapide : Incisions imbriquées"
+            },
+            "140100059": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1401017, Prop:1001}"
+            },
+            "140100060": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1401017, Prop:1002}"
+            },
+            "140100061": {
+                "Title": "Soutien défensif : Garde de parade"
+            },
+            "140100062": {
+                "Description": "Multiplicateur de confusion de défense légère",
+                "Param": "{Skill:1401018, Prop:1002}"
+            },
+            "140100063": {
+                "Description": "Multiplicateur de confusion de défense lourde",
+                "Param": "{Skill:1401019, Prop:1002}"
+            },
+            "140100064": {
+                "Description": "Multiplicateur de confusion de défense en chaîne",
+                "Param": "{Skill:1401020, Prop:1002}"
+            },
+            "140100065": {
+                "Title": "Soutien de suivi : Riposte en croix"
+            },
+            "140100066": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1401021, Prop:1001}"
+            },
+            "140100067": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1401021, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1401001": {
+            "DamageValue": 5510,
+            "DamageGrowth": 510,
+            "DazeValue": 3970,
+            "DazeGrowth": 190
+        },
+        "1401002": {
+            "DamageValue": 8800,
+            "DamageGrowth": 800,
+            "DazeValue": 6980,
+            "DazeGrowth": 320
+        },
+        "1401003": {
+            "DamageValue": 6610,
+            "DamageGrowth": 610,
+            "DazeValue": 5990,
+            "DazeGrowth": 280
+        },
+        "1401004": {
+            "DamageValue": 11190,
+            "DamageGrowth": 1020,
+            "DazeValue": 10510,
+            "DazeGrowth": 480
+        },
+        "1401005": {
+            "DamageValue": 13030,
+            "DamageGrowth": 1190,
+            "DazeValue": 13170,
+            "DazeGrowth": 600
+        },
+        "1401006": {
+            "DamageValue": 21830,
+            "DamageGrowth": 1990,
+            "DazeValue": 21090,
+            "DazeGrowth": 960
+        },
+        "1401007": {
+            "DamageValue": 53200,
+            "DamageGrowth": 4840,
+            "DazeValue": 40530,
+            "DazeGrowth": 1850
+        },
+        "1401008": {
+            "DamageValue": 6240,
+            "DamageGrowth": 570,
+            "DazeValue": 5610,
+            "DazeGrowth": 260
+        },
+        "1401009": {
+            "DamageValue": 46000,
+            "DamageGrowth": 4190,
+            "DazeValue": 34520,
+            "DazeGrowth": 1570
+        },
+        "1401010": {
+            "DamageValue": 18890,
+            "DamageGrowth": 1720,
+            "DazeValue": 5530,
+            "DazeGrowth": 260
+        },
+        "1401011": {
+            "DamageValue": 30440,
+            "DamageGrowth": 2770,
+            "DazeValue": 7760,
+            "DazeGrowth": 360
+        },
+        "1401012": {
+            "DamageValue": 96570,
+            "DamageGrowth": 8780,
+            "DazeValue": 19720,
+            "DazeGrowth": 900
+        },
+        "1401013": {
+            "DamageValue": 7530,
+            "DamageGrowth": 690,
+            "DazeValue": 3390,
+            "DazeGrowth": 160
+        },
+        "1401014": {
+            "DamageValue": 28400,
+            "DamageGrowth": 2590,
+            "DazeValue": 21950,
+            "DazeGrowth": 1000
+        },
+        "1401015": {
+            "DamageValue": 66630,
+            "DamageGrowth": 6060,
+            "DazeValue": 20470,
+            "DazeGrowth": 940
+        },
+        "1401016": {
+            "DamageValue": 226200,
+            "DamageGrowth": 20570,
+            "DazeValue": 24260,
+            "DazeGrowth": 1110
+        },
+        "1401017": {
+            "DamageValue": 16330,
+            "DamageGrowth": 1490,
+            "DazeValue": 14690,
+            "DazeGrowth": 670
+        },
+        "1401018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 24420,
+            "DazeGrowth": 1110
+        },
+        "1401019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 30860,
+            "DazeGrowth": 1410
+        },
+        "1401020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15020,
+            "DazeGrowth": 690
+        },
+        "1401021": {
+            "DamageValue": 33270,
+            "DamageGrowth": 3030,
+            "DazeValue": 25840,
+            "DazeGrowth": 1180
+        },
+        "1401022": {
+            "DamageValue": 72050,
+            "DamageGrowth": 0,
+            "DazeValue": 34650,
+            "DazeGrowth": 0
+        },
+        "1401023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1401024": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1401025": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

@@ -1,0 +1,472 @@
+{
+    "Name": "Alice",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Puñado de cilantro",
+            "Description": "Cuando Alice provoca <color=#F0D12B>embestida polarizada</color>, recupera 25 puntos de <color=#FFFFFF>etiqueta de espada</color>. Cuando Alice provoca una <color=#F0D12B>embestida</color>, la Defensa del objetivo se reduce en un 20 % durante 30 s.",
+            "Lore": "Un brote de cilantro se mece cual estrella esmeralda recién nacida, tan frágil que sus yemas sienten como si fuera a atravesarla.\nElla extiende lentamente las manos temblorosas, acogiendo ese destello de emoción en sus palmas.\nSu corazón late como un brote primaveral que emerge tras la lluvia matinal."
+        },
+        "2": {
+            "Title": "Salvia en la punta de la espada",
+            "Description": "Al golpear a un enemigo con el ataque final de la <color=#FFFFFF>técnica definitiva: Colofón meteórico</color>, activa una <color=#F0D12B>embestida polarizada</color>. El daño infligido por medio de <color=#F0D12B>embestida</color> de todos los personajes del equipo aumenta en un 15 %. El cálculo del daño de <color=#FFFFFF>disfunción</color> de los enemigos afectados por el estado de <color=#F0D12B>Anomalía física</color> aumenta en un 15 %. Al entrar en combate, Alice obtiene de inmediato 1000 dB. En el modo expedición, este efecto puede activarse un máximo de una vez cada 180 s.",
+            "Lore": "La punta plateada de la espada besa suavemente la escarcha en las hojas de salvia.\nEste saludo antes de la batalla refleja la serenidad de la joven.\nEl miedo y la impotencia quedaron congelados en los sueños de ayer.\nLa espada ceñida se mueve, a punto de trazar la silueta de las estrellas.\nEstá a punto de amanecer, y el capullo de la flor espera florecer."
+        },
+        "3": {
+            "Title": "Simetrismo",
+            "Description": "Nivel de <color=#FFFFFF>ataque normal</color>, <color=#FFFFFF>evasión</color>, <color=#FFFFFF>técnica de apoyo</color>, <color=#FFFFFF>técnica especial</color> y <color=#FFFFFF>técnica en cadena</color> +2.",
+            "Lore": "Parece incapaz de resistirse a la simetría perfecta.\nEs en la simetría donde encuentra orden y significado. Sin ella, sus orejas y su cola de conejo perderían su suavidad y brillo, como si algo hermoso estuviera a punto de desaparecer de su mundo.\n«Entonces... ¿es por esta razón que mencionaste mis calcetines arrugados y querías quitarme la liga de la pierna?»\n«¡Es solo porque no puedo soportar tu asimetría! ¡Solo fue un segundo, te lo prometo, solo un segundo!»"
+        },
+        "4": {
+            "Title": "Romero en sus labios",
+            "Description": "Alice ignora un 10 % de la <color=#F0D12B>resistencia física</color> del objetivo. La <color=#F0D12B>tasa de acumulación de Anomalía física</color> del <color=#FFFFFF>ataque normal: Obertura celeste</color> reforzado aumenta en un 25 %.",
+            "Lore": "El aroma del romero perdura entre sus labios.\nSu juramento, ardiente y resoluto, se graba en cada aliento de escarcha.\nAunque el aire que inundaba sus pulmones se tornaba frío y pesado, la joven nunca olvidaría aquel hechizo llamado amor.\n«En el nombre de los Thymefield... yo jamás lo traicionaré.»"
+        },
+        "5": {
+            "Title": "Pasión por lo paranormal",
+            "Description": "Nivel de <color=#FFFFFF>ataque normal</color>, <color=#FFFFFF>evasión</color>, <color=#FFFFFF>técnica de apoyo</color>, <color=#FFFFFF>técnica especial</color> y <color=#FFFFFF>técnica en cadena</color> +2.",
+            "Lore": "No puede resistirse a lo paranormal.\nEn lo paranormal, se oculta lo desconocido y el peligro. Cuando lo percibe, sus orejas y su cola de conejo se erizan en un estremecimiento, tornándose extremadamente suaves una vez que recupera la calma.\n«Entonces... ¿esa es la razón por la que, aunque te mueres de miedo, insististe en seguirme en mi búsqueda de fantasmas?»\n«¡Solo tengo curiosidad por saber lo que pasa... pero es realmente aterrador! ¡Estoy totalmente arrepentida! Solo esta vez, ¡lo prometo, la próxima definitivamente no vendré!»"
+        },
+        "6": {
+            "Title": "Tomillo del corazón",
+            "Description": "Cuando Alice ejecuta el <color=#FFFFFF>ataque normal: Vals de la refulgencia astrífera</color> con tres niveles de carga o la <color=#FFFFFF>técnica definitiva: Colofón meteórico</color>, entra en el estado de <color=#FFFFFF>estado de victoria</color> durante 30 s. Durante este estado, cuando cualquier personaje del equipo golpea a un objetivo con un ataque, Alice ejecuta un ataque adicional contra dicho objetivo, lo que inflige daño físico equivalente al 3300 % de su Maestría de Anomalía y garantiza un golpe crítico. Puede activarse un máximo de una vez cada 1 s, hasta un máximo de 6 veces. Al volver a entrar en el <color=#FFFFFF>estado de victoria</color>, se reinicia el número de activaciones.",
+            "Lore": "Una mansión con aroma a tomillo, una noche observando las estrellas, y aquel instante en que comprendió el verdadero significado del valor.\nLa brisa fragante dispersó las nubes, y la luz del sol eclipsó el brillo de las lámparas de cristal.\nLa joven hizo una suave reverencia a los días pasados, y después, lentamente, se desvaneció en el campo de tomillo."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Técnica pasiva: Arcoíris mielgos del corazón de la espada",
+            "DescriptionByLevel": {
+                "1": "Después de que cualquier personaje del equipo provoque una <color=#F0D12B>Anomalía física</color> sobre un enemigo, durante dicha Anomalía de Atributo, Alice inflige daño adicional sobre dicho enemigo cada 0.95 s equivalente al 2.5 % del daño de Anomalía física original. Además, al provocar <color=#FFFFFF>disfunción</color> sobre un enemigo afectado por <color=#F0D12B>Anomalía física</color>, por cada segundo restante del estado de <color=#F0D12B>Anomalía física</color>, el multiplicador de daño del efecto <color=#FFFFFF>disfunción</color> aumenta en un 18 %, hasta un máximo de un {CAL:18*10,1,2} %.\nCuando Alice golpea a un enemigo con su ataque, acumula <color=#FFFFFF>etiqueta de espada</color>. Cuando Alice provoca <color=#F0D12B>embestida</color> sobre un enemigo a través de la acumulación de Anomalía de Atributo, recupera 10 puntos de <color=#FFFFFF>etiqueta de espada</color>. El efecto de <color=#FFFFFF>etiqueta de espada</color> tiene un límite de 300 puntos, donde 100 puntos equivalen a 1 barra.\nAl golpear a un enemigo con el ataque final con tres niveles de carga del <color=#FFFFFF>ataque normal: Vals de la refulgencia astrífera</color>, activa una instancia especial de <color=#F0D12B>embestida</color> llamada <color=#F0D12B>embestida polarizada</color>, que ignora la acumulación de Anomalía de Atributo e inflige un {CAL:0+100,1,2} % del daño original del efecto de <color=#F0D12B>embestida</color>. Este efecto puede combinarse con otros efectos de Anomalía de Atributo, lo que incluye la Anomalía física, y activar <color=#FFFFFF>disfunción</color>.\nCuando Alice activa una <color=#F0D12B>embestida</color>, la <color=#F0D12B>tasa de acumulación de Anomalía física</color> aumenta en un <color=#2BAD00>12.5</color> % durante 30 s.",
+                "2": "Después de que cualquier personaje del equipo provoque una <color=#F0D12B>Anomalía física</color> sobre un enemigo, durante dicha Anomalía de Atributo, Alice inflige daño adicional sobre dicho enemigo cada 0.95 s equivalente al 2.5 % del daño de Anomalía física original. Además, al provocar <color=#FFFFFF>disfunción</color> sobre un enemigo afectado por <color=#F0D12B>Anomalía física</color>, por cada segundo restante del estado de <color=#F0D12B>Anomalía física</color>, el multiplicador de daño del efecto <color=#FFFFFF>disfunción</color> aumenta en un 18 %, hasta un máximo de un {CAL:18*10,1,2} %.\nCuando Alice golpea a un enemigo con su ataque, acumula <color=#FFFFFF>etiqueta de espada</color>. Cuando Alice provoca <color=#F0D12B>embestida</color> sobre un enemigo a través de la acumulación de Anomalía de Atributo, recupera 10 puntos de <color=#FFFFFF>etiqueta de espada</color>. El efecto de <color=#FFFFFF>etiqueta de espada</color> tiene un límite de 300 puntos, donde 100 puntos equivalen a 1 barra.\nAl golpear a un enemigo con el ataque final con tres niveles de carga del <color=#FFFFFF>ataque normal: Vals de la refulgencia astrífera</color>, activa una instancia especial de <color=#F0D12B>embestida</color> llamada <color=#F0D12B>embestida polarizada</color>, que ignora la acumulación de Anomalía de Atributo e inflige un {CAL:0+100,1,2} % del daño original del efecto de <color=#F0D12B>embestida</color>. Este efecto puede combinarse con otros efectos de Anomalía de Atributo, lo que incluye la Anomalía física, y activar <color=#FFFFFF>disfunción</color>.\nCuando Alice activa una <color=#F0D12B>embestida</color>, la <color=#F0D12B>tasa de acumulación de Anomalía física</color> aumenta en un <color=#2BAD00>14.6</color> % durante 30 s.",
+                "3": "Después de que cualquier personaje del equipo provoque una <color=#F0D12B>Anomalía física</color> sobre un enemigo, durante dicha Anomalía de Atributo, Alice inflige daño adicional sobre dicho enemigo cada 0.95 s equivalente al 2.5 % del daño de Anomalía física original. Además, al provocar <color=#FFFFFF>disfunción</color> sobre un enemigo afectado por <color=#F0D12B>Anomalía física</color>, por cada segundo restante del estado de <color=#F0D12B>Anomalía física</color>, el multiplicador de daño del efecto <color=#FFFFFF>disfunción</color> aumenta en un 18 %, hasta un máximo de un {CAL:18*10,1,2} %.\nCuando Alice golpea a un enemigo con su ataque, acumula <color=#FFFFFF>etiqueta de espada</color>. Cuando Alice provoca <color=#F0D12B>embestida</color> sobre un enemigo a través de la acumulación de Anomalía de Atributo, recupera 10 puntos de <color=#FFFFFF>etiqueta de espada</color>. El efecto de <color=#FFFFFF>etiqueta de espada</color> tiene un límite de 300 puntos, donde 100 puntos equivalen a 1 barra.\nAl golpear a un enemigo con el ataque final con tres niveles de carga del <color=#FFFFFF>ataque normal: Vals de la refulgencia astrífera</color>, activa una instancia especial de <color=#F0D12B>embestida</color> llamada <color=#F0D12B>embestida polarizada</color>, que ignora la acumulación de Anomalía de Atributo e inflige un {CAL:0+100,1,2} % del daño original del efecto de <color=#F0D12B>embestida</color>. Este efecto puede combinarse con otros efectos de Anomalía de Atributo, lo que incluye la Anomalía física, y activar <color=#FFFFFF>disfunción</color>.\nCuando Alice activa una <color=#F0D12B>embestida</color>, la <color=#F0D12B>tasa de acumulación de Anomalía física</color> aumenta en un <color=#2BAD00>16.7</color> % durante 30 s.",
+                "4": "Después de que cualquier personaje del equipo provoque una <color=#F0D12B>Anomalía física</color> sobre un enemigo, durante dicha Anomalía de Atributo, Alice inflige daño adicional sobre dicho enemigo cada 0.95 s equivalente al 2.5 % del daño de Anomalía física original. Además, al provocar <color=#FFFFFF>disfunción</color> sobre un enemigo afectado por <color=#F0D12B>Anomalía física</color>, por cada segundo restante del estado de <color=#F0D12B>Anomalía física</color>, el multiplicador de daño del efecto <color=#FFFFFF>disfunción</color> aumenta en un 18 %, hasta un máximo de un {CAL:18*10,1,2} %.\nCuando Alice golpea a un enemigo con su ataque, acumula <color=#FFFFFF>etiqueta de espada</color>. Cuando Alice provoca <color=#F0D12B>embestida</color> sobre un enemigo a través de la acumulación de Anomalía de Atributo, recupera 10 puntos de <color=#FFFFFF>etiqueta de espada</color>. El efecto de <color=#FFFFFF>etiqueta de espada</color> tiene un límite de 300 puntos, donde 100 puntos equivalen a 1 barra.\nAl golpear a un enemigo con el ataque final con tres niveles de carga del <color=#FFFFFF>ataque normal: Vals de la refulgencia astrífera</color>, activa una instancia especial de <color=#F0D12B>embestida</color> llamada <color=#F0D12B>embestida polarizada</color>, que ignora la acumulación de Anomalía de Atributo e inflige un {CAL:0+100,1,2} % del daño original del efecto de <color=#F0D12B>embestida</color>. Este efecto puede combinarse con otros efectos de Anomalía de Atributo, lo que incluye la Anomalía física, y activar <color=#FFFFFF>disfunción</color>.\nCuando Alice activa una <color=#F0D12B>embestida</color>, la <color=#F0D12B>tasa de acumulación de Anomalía física</color> aumenta en un <color=#2BAD00>18.8</color> % durante 30 s.",
+                "5": "Después de que cualquier personaje del equipo provoque una <color=#F0D12B>Anomalía física</color> sobre un enemigo, durante dicha Anomalía de Atributo, Alice inflige daño adicional sobre dicho enemigo cada 0.95 s equivalente al 2.5 % del daño de Anomalía física original. Además, al provocar <color=#FFFFFF>disfunción</color> sobre un enemigo afectado por <color=#F0D12B>Anomalía física</color>, por cada segundo restante del estado de <color=#F0D12B>Anomalía física</color>, el multiplicador de daño del efecto <color=#FFFFFF>disfunción</color> aumenta en un 18 %, hasta un máximo de un {CAL:18*10,1,2} %.\nCuando Alice golpea a un enemigo con su ataque, acumula <color=#FFFFFF>etiqueta de espada</color>. Cuando Alice provoca <color=#F0D12B>embestida</color> sobre un enemigo a través de la acumulación de Anomalía de Atributo, recupera 10 puntos de <color=#FFFFFF>etiqueta de espada</color>. El efecto de <color=#FFFFFF>etiqueta de espada</color> tiene un límite de 300 puntos, donde 100 puntos equivalen a 1 barra.\nAl golpear a un enemigo con el ataque final con tres niveles de carga del <color=#FFFFFF>ataque normal: Vals de la refulgencia astrífera</color>, activa una instancia especial de <color=#F0D12B>embestida</color> llamada <color=#F0D12B>embestida polarizada</color>, que ignora la acumulación de Anomalía de Atributo e inflige un {CAL:0+100,1,2} % del daño original del efecto de <color=#F0D12B>embestida</color>. Este efecto puede combinarse con otros efectos de Anomalía de Atributo, lo que incluye la Anomalía física, y activar <color=#FFFFFF>disfunción</color>.\nCuando Alice activa una <color=#F0D12B>embestida</color>, la <color=#F0D12B>tasa de acumulación de Anomalía física</color> aumenta en un <color=#2BAD00>20.8</color> % durante 30 s.",
+                "6": "Después de que cualquier personaje del equipo provoque una <color=#F0D12B>Anomalía física</color> sobre un enemigo, durante dicha Anomalía de Atributo, Alice inflige daño adicional sobre dicho enemigo cada 0.95 s equivalente al 2.5 % del daño de Anomalía física original. Además, al provocar <color=#FFFFFF>disfunción</color> sobre un enemigo afectado por <color=#F0D12B>Anomalía física</color>, por cada segundo restante del estado de <color=#F0D12B>Anomalía física</color>, el multiplicador de daño del efecto <color=#FFFFFF>disfunción</color> aumenta en un 18 %, hasta un máximo de un {CAL:18*10,1,2} %.\nCuando Alice golpea a un enemigo con su ataque, acumula <color=#FFFFFF>etiqueta de espada</color>. Cuando Alice provoca <color=#F0D12B>embestida</color> sobre un enemigo a través de la acumulación de Anomalía de Atributo, recupera 10 puntos de <color=#FFFFFF>etiqueta de espada</color>. El efecto de <color=#FFFFFF>etiqueta de espada</color> tiene un límite de 300 puntos, donde 100 puntos equivalen a 1 barra.\nAl golpear a un enemigo con el ataque final con tres niveles de carga del <color=#FFFFFF>ataque normal: Vals de la refulgencia astrífera</color>, activa una instancia especial de <color=#F0D12B>embestida</color> llamada <color=#F0D12B>embestida polarizada</color>, que ignora la acumulación de Anomalía de Atributo e inflige un {CAL:0+100,1,2} % del daño original del efecto de <color=#F0D12B>embestida</color>. Este efecto puede combinarse con otros efectos de Anomalía de Atributo, lo que incluye la Anomalía física, y activar <color=#FFFFFF>disfunción</color>.\nCuando Alice activa una <color=#F0D12B>embestida</color>, la <color=#F0D12B>tasa de acumulación de Anomalía física</color> aumenta en un <color=#2BAD00>22.9</color> % durante 30 s.",
+                "7": "Después de que cualquier personaje del equipo provoque una <color=#F0D12B>Anomalía física</color> sobre un enemigo, durante dicha Anomalía de Atributo, Alice inflige daño adicional sobre dicho enemigo cada 0.95 s equivalente al 2.5 % del daño de Anomalía física original. Además, al provocar <color=#FFFFFF>disfunción</color> sobre un enemigo afectado por <color=#F0D12B>Anomalía física</color>, por cada segundo restante del estado de <color=#F0D12B>Anomalía física</color>, el multiplicador de daño del efecto <color=#FFFFFF>disfunción</color> aumenta en un 18 %, hasta un máximo de un {CAL:18*10,1,2} %.\nCuando Alice golpea a un enemigo con su ataque, acumula <color=#FFFFFF>etiqueta de espada</color>. Cuando Alice provoca <color=#F0D12B>embestida</color> sobre un enemigo a través de la acumulación de Anomalía de Atributo, recupera 10 puntos de <color=#FFFFFF>etiqueta de espada</color>. El efecto de <color=#FFFFFF>etiqueta de espada</color> tiene un límite de 300 puntos, donde 100 puntos equivalen a 1 barra.\nAl golpear a un enemigo con el ataque final con tres niveles de carga del <color=#FFFFFF>ataque normal: Vals de la refulgencia astrífera</color>, activa una instancia especial de <color=#F0D12B>embestida</color> llamada <color=#F0D12B>embestida polarizada</color>, que ignora la acumulación de Anomalía de Atributo e inflige un {CAL:0+100,1,2} % del daño original del efecto de <color=#F0D12B>embestida</color>. Este efecto puede combinarse con otros efectos de Anomalía de Atributo, lo que incluye la Anomalía física, y activar <color=#FFFFFF>disfunción</color>.\nCuando Alice activa una <color=#F0D12B>embestida</color>, la <color=#F0D12B>tasa de acumulación de Anomalía física</color> aumenta en un <color=#2BAD00>25</color> % durante 30 s."
+            }
+        },
+        "MathSkill": {
+            "Title": "Técnica adicional: En busca de un misterio",
+            "Description": "Cuando hay otro personaje <color=#FFFFFF>anómalo</color> o un personaje <color=#FFFFFF>auxiliar</color> en el equipo, cuando cualquier personaje del equipo activa el efecto de <color=#FFFFFF>disfunción</color>, Alice recupera 30 puntos de <color=#FFFFFF>etiqueta de espada</color>.\nSi la Tasa de Anomalía de Alice es superior a 140 puntos, por cada punto adicional, su Maestría de Anomalía aumenta en 1.6 puntos.\nAl entrar en combate, Alice obtiene 300 puntos de <color=#FFFFFF>etiqueta de espada</color>. En el modo expedición, este efecto puede activarse un máximo de una vez cada 180 s."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "140100001": {
+                "Title": "Ataque normal: Obertura celeste",
+                "Description": "Pulsa <IconMap:Icon_Normal> para usarla.\nEjecuta hasta cinco cortes hacia delante, lo que inflige <color=#F0D12B>daño físico</color>.\nCuando Alice provoca una <color=#F0D12B>embestida</color> mediante la acumulación de Anomalía de Atributo, refuerza el quinto corte del siguiente <color=#FFFFFF>ataque normal</color>."
+            },
+            "140100002": {
+                "Title": "Ataque normal: Vals de la refulgencia astrífera",
+                "Description": "Cuando Alice tiene 1 barra de <color=#FFFFFF>etiqueta de espada</color>, mantén pulsado <IconMap:Icon_Normal> para usarla.\nMantén pulsado para acumular fuerza y consumir hasta 3 barras de <color=#FFFFFF>etiqueta de espada</color>. Al soltar <IconMap:Icon_Normal> o cuando <color=#FFFFFF>etiqueta de espada</color> cuente con menos de 1 barra, Alice ejecuta múltiples cortes en un área cuyo centro es el enemigo objetivo en función del nivel de fuerza acumulada, lo que inflige una gran cantidad de <color=#F0D12B>daño físico</color>.\nAl golpear a un enemigo con el ataque final con tres niveles de carga del <color=#FFFFFF>ataque normal: Vals de la refulgencia astrífera</color>, activa una instancia especial de <color=#F0D12B>embestida</color> llamada <color=#F0D12B>embestida polarizada</color>, que ignora la acumulación de Anomalía de Atributo e inflige un {CAL:0+100,1,2} % del daño original del efecto de <color=#F0D12B>embestida</color>. Este efecto puede interactuar otras Anomalías de Atributo, lo que incluye la Anomalía física, y activar <color=#FFFFFF>disfunción</color>.\nAl golpear a un enemigo, no acumula <color=#FFFFFF>etiqueta de espada</color>.\nAl ejecutar la habilidad, la agente se vuelve invulnerable."
+            },
+            "140100015": {
+                "Title": "Ataque normal: Obertura celeste"
+            },
+            "140100016": {
+                "Description": "Multiplicador de daño de 1.er golpe",
+                "Param": "{Skill:1401001, Prop:1001}"
+            },
+            "140100017": {
+                "Description": "Multiplicador de daño de 2.º golpe",
+                "Param": "{Skill:1401002, Prop:1001}"
+            },
+            "140100018": {
+                "Description": "Multiplicador de daño de 3.er golpe",
+                "Param": "{Skill:1401003, Prop:1001}"
+            },
+            "140100019": {
+                "Description": "Multiplicador de daño de 4.º golpe",
+                "Param": "{Skill:1401004, Prop:1001}"
+            },
+            "140100020": {
+                "Description": "Multiplicador de daño de 5.º golpe",
+                "Param": "{Skill:1401005, Prop:1001}"
+            },
+            "140100021": {
+                "Description": "Multiplicador de daño de 5.º corte (reforzado)",
+                "Param": "{Skill:1401006, Prop:1001}"
+            },
+            "140100022": {
+                "Description": "Multiplicador de Aturdimiento de 1.er golpe",
+                "Param": "{Skill:1401001, Prop:1002}"
+            },
+            "140100023": {
+                "Description": "Multiplicador de Aturdimiento de 2.º golpe",
+                "Param": "{Skill:1401002, Prop:1002}"
+            },
+            "140100024": {
+                "Description": "Multiplicador de Aturdimiento de 3.er golpe",
+                "Param": "{Skill:1401003, Prop:1002}"
+            },
+            "140100025": {
+                "Description": "Multiplicador de Aturdimiento de 4.º golpe",
+                "Param": "{Skill:1401004, Prop:1002}"
+            },
+            "140100026": {
+                "Description": "Multiplicador de Aturdimiento de 5.º golpe",
+                "Param": "{Skill:1401005, Prop:1002}"
+            },
+            "140100027": {
+                "Description": "Multiplicador de Aturdimiento de 5.º corte (reforzado)",
+                "Param": "{Skill:1401006, Prop:1002}"
+            },
+            "140100028": {
+                "Title": "Ataque normal: Vals de la refulgencia astrífera"
+            },
+            "140100029": {
+                "Description": "Multiplicador de daño de 1.er nivel de carga",
+                "Param": "{Skill:1401010, Prop:1001}"
+            },
+            "140100030": {
+                "Description": "Multiplicador de daño de 2.º nivel de carga",
+                "Param": "{Skill:1401011, Prop:1001}"
+            },
+            "140100031": {
+                "Description": "Multiplicador de daño de 3.er nivel de carga",
+                "Param": "{Skill:1401012, Prop:1001}"
+            },
+            "140100032": {
+                "Description": "Multiplicador de Aturdimiento de 1.er nivel de carga",
+                "Param": "{Skill:1401010, Prop:1002}"
+            },
+            "140100033": {
+                "Description": "Multiplicador de Aturdimiento de 2.º nivel de carga",
+                "Param": "{Skill:1401011, Prop:1002}"
+            },
+            "140100034": {
+                "Description": "Multiplicador de Aturdimiento de 3.er nivel de carga",
+                "Param": "{Skill:1401012, Prop:1002}"
+            }
+        },
+        "1": {
+            "140100003": {
+                "Title": "Técnica especial: Embate del amanecer",
+                "Description": "Pulsa <IconMap:Icon_Special> para usarla.\nLanza la espada para ejecutar un ataque que atraviesa a los enemigos de enfrente, lo que inflige <color=#F0D12B>daño físico</color>.\nAl ejecutar la habilidad, se puede activar una <color=#FFFFFF>evasión perfecta</color>. Al activar una <color=#FFFFFF>evasión perfecta</color>, pulsa <IconMap:Icon_Normal> para enlazar con el quinto corte del <color=#FFFFFF>ataque normal</color>.\nAl ejecutar la habilidad, aumenta el nivel de resistencia a interrupción."
+            },
+            "140100004": {
+                "Title": "Técnica especial EX: Embate de la aurora - Cruz del norte",
+                "Description": "Al contar con Energía suficiente, mueve el {LAYOUT_CONSOLECONTROLLER#joystick}{LAYOUT_FALLBACK#joystick} hacia adelante y pulsa <IconMap:Icon_SpecialReady> para usarla.\nEjecuta un embate que atraviesa a los enemigos de enfrente, lo que inflige una gran cantidad de <color=#F0D12B>daño físico</color>.\nDurante la ejecución, se puede activar una <color=#FFFFFF>evasión perfecta</color>, y recupera 10 puntos de <color=#FFFFFF>etiqueta de espada</color>.\nAl ejecutar la habilidad, la agente se vuelve invulnerable."
+            },
+            "140100005": {
+                "Title": "Técnica especial EX: Embate de la aurora - Cruz del sur",
+                "Description": "Al contar con Energía suficiente, y no mover o mover hacia atrás el {LAYOUT_CONSOLECONTROLLER#joystick}{LAYOUT_FALLBACK#joystick}, pulsa <IconMap:Icon_SpecialReady> para usarla.\nRetrocede y ejecuta un corte, seguido de una estocada hacia adelante, lo que inflige <color=#F0D12B>daño físico</color>.\nAl ejecutar la habilidad, se puede activar una <color=#FFFFFF>evasión perfecta</color> y recuperar 10 puntos de <color=#FFFFFF>etiqueta de espada</color>.\nAl ejecutar la habilidad, la agente se vuelve invulnerable."
+            },
+            "140100035": {
+                "Title": "Técnica especial: Embate del amanecer"
+            },
+            "140100036": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1401008, Prop:1001}"
+            },
+            "140100037": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1401008, Prop:1002}"
+            },
+            "140100038": {
+                "Title": "Técnica especial EX: Embate de la aurora - Cruz del norte"
+            },
+            "140100039": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1401009, Prop:1001}"
+            },
+            "140100040": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1401009, Prop:1002}"
+            },
+            "140100041": {
+                "Description": "Consumo de Energía",
+                "Param": "40 ptos."
+            },
+            "140100042": {
+                "Title": "Técnica especial EX: Embate de la aurora - Cruz del sur"
+            },
+            "140100043": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1401007, Prop:1001}"
+            },
+            "140100044": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1401007, Prop:1002}"
+            },
+            "140100045": {
+                "Description": "Consumo de Energía",
+                "Param": "40 ptos."
+            }
+        },
+        "2": {
+            "140100006": {
+                "Title": "Evasión: Conejita saltarina",
+                "Description": "Pulsa <IconMap:Icon_Evade> para usarla.\nEjecuta un rápido esprint evasivo.\nAl ejecutar la habilidad, la agente se vuelve invulnerable."
+            },
+            "140100007": {
+                "Title": "Ataque rápido: Galerna de espadas danzantes",
+                "Description": "Pulsa <IconMap:Icon_Normal> durante una evasión para usarlo.\nEjecuta un corte hacia delante, lo que inflige <color=#F0D12B>daño físico</color>."
+            },
+            "140100008": {
+                "Title": "Contraataque: Ceremonia de la espada luciente",
+                "Description": "Pulsa <IconMap:Icon_Normal> después de una <color=#FFFFFF>evasión perfecta</color> para usarlo.\nEjecuta un corte y una patada, lo que inflige <color=#F0D12B>daño físico</color> contra los enemigos frente a ella.\nAl ejecutar la habilidad, la agente se vuelve invulnerable."
+            },
+            "140100046": {
+                "Title": "Ataque rápido: Galerna de espadas danzantes"
+            },
+            "140100047": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1401013, Prop:1001}"
+            },
+            "140100048": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1401013, Prop:1002}"
+            },
+            "140100049": {
+                "Title": "Contraataque: Ceremonia de la espada luciente"
+            },
+            "140100050": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1401014, Prop:1001}"
+            },
+            "140100051": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1401014, Prop:1002}"
+            }
+        },
+        "3": {
+            "140100009": {
+                "Title": "Técnica en cadena: Interludio de lluvia de estrellas",
+                "Description": "Elige el avatar de personaje al ejecutar una <color=#FFFFFF>técnica en cadena</color> para usarla.\nEjecuta una serie de poderosos cortes, lo que inflige una gran cantidad de <color=#F0D12B>daño físico</color> contra los enemigos frente a ella.\nAl ejecutar la habilidad, la agente se vuelve invulnerable."
+            },
+            "140100010": {
+                "Title": "Técnica definitiva: Colofón meteórico",
+                "Description": "Cuando los dB llegan a su nivel <color=#FFFFFF>máximo</color>, pulsa <IconMap:Icon_UltimateReady> para usarla.\nEjecuta múltiples poderosos cortes, lo que inflige una gran cantidad de <color=#F0D12B>daño físico</color> contra los enemigos que hay en un área grande frente a ella.\nAl ejecutar la habilidad, recupera 200 puntos de <color=#FFFFFF>etiqueta de espada</color>.\nAl golpear a un enemigo, no acumula <color=#FFFFFF>etiqueta de espada</color>.\nAl ejecutar la habilidad, la agente se vuelve invulnerable."
+            },
+            "140100052": {
+                "Title": "Técnica en cadena: Interludio de lluvia de estrellas"
+            },
+            "140100053": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1401015, Prop:1001}"
+            },
+            "140100054": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1401015, Prop:1002}"
+            },
+            "140100055": {
+                "Title": "Técnica definitiva: Colofón meteórico"
+            },
+            "140100056": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1401016, Prop:1001}"
+            },
+            "140100057": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1401016, Prop:1002}"
+            }
+        },
+        "6": {
+            "140100012": {
+                "Title": "Apoyo rápido: Estocadas entrelazadas",
+                "Description": "Pulsa <IconMap:Icon_Switch> para ejecutarlo cuando el personaje activo sea lanzado por los aires.\nEjecuta un corte y una patada contra los enemigos frente a ella, lo que inflige <color=#F0D12B>daño físico</color>.\nAl ejecutar la habilidad, la agente se vuelve invulnerable."
+            },
+            "140100013": {
+                "Title": "Apoyo defensivo: Guardia defensiva",
+                "Description": "Pulsa <IconMap:Icon_Switch> para usarlo cuando el personaje activo esté a punto de recibir un golpe.\nBloquea el ataque enemigo, lo que provoca una gran cantidad de Aturdimiento.\nAl ejecutar la habilidad, la agente se vuelve invulnerable."
+            },
+            "140100014": {
+                "Title": "Ataque sucesivo: Contraofensiva cruzada",
+                "Description": "Pulsa <IconMap:Icon_Normal> después de un <color=#FFFFFF>apoyo defensivo</color> para usarlo.\nEjecuta un corte con impulso, lo que inflige <color=#F0D12B>daño físico</color> contra los enemigos frente a ella.\nAl ejecutar la habilidad, la agente se vuelve invulnerable."
+            },
+            "140100058": {
+                "Title": "Apoyo rápido: Estocadas entrelazadas"
+            },
+            "140100059": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1401017, Prop:1001}"
+            },
+            "140100060": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1401017, Prop:1002}"
+            },
+            "140100061": {
+                "Title": "Apoyo defensivo: Guardia defensiva"
+            },
+            "140100062": {
+                "Description": "Multiplicador de Aturdimiento defensivo ligero",
+                "Param": "{Skill:1401018, Prop:1002}"
+            },
+            "140100063": {
+                "Description": "Multiplicador de Aturdimiento defensivo fuerte",
+                "Param": "{Skill:1401019, Prop:1002}"
+            },
+            "140100064": {
+                "Description": "Multiplicador de Aturdimiento defensivo continuo",
+                "Param": "{Skill:1401020, Prop:1002}"
+            },
+            "140100065": {
+                "Title": "Ataque sucesivo: Contraofensiva cruzada"
+            },
+            "140100066": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1401021, Prop:1001}"
+            },
+            "140100067": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1401021, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1401001": {
+            "DamageValue": 5510,
+            "DamageGrowth": 510,
+            "DazeValue": 3970,
+            "DazeGrowth": 190
+        },
+        "1401002": {
+            "DamageValue": 8800,
+            "DamageGrowth": 800,
+            "DazeValue": 6980,
+            "DazeGrowth": 320
+        },
+        "1401003": {
+            "DamageValue": 6610,
+            "DamageGrowth": 610,
+            "DazeValue": 5990,
+            "DazeGrowth": 280
+        },
+        "1401004": {
+            "DamageValue": 11190,
+            "DamageGrowth": 1020,
+            "DazeValue": 10510,
+            "DazeGrowth": 480
+        },
+        "1401005": {
+            "DamageValue": 13030,
+            "DamageGrowth": 1190,
+            "DazeValue": 13170,
+            "DazeGrowth": 600
+        },
+        "1401006": {
+            "DamageValue": 21830,
+            "DamageGrowth": 1990,
+            "DazeValue": 21090,
+            "DazeGrowth": 960
+        },
+        "1401007": {
+            "DamageValue": 53200,
+            "DamageGrowth": 4840,
+            "DazeValue": 40530,
+            "DazeGrowth": 1850
+        },
+        "1401008": {
+            "DamageValue": 6240,
+            "DamageGrowth": 570,
+            "DazeValue": 5610,
+            "DazeGrowth": 260
+        },
+        "1401009": {
+            "DamageValue": 46000,
+            "DamageGrowth": 4190,
+            "DazeValue": 34520,
+            "DazeGrowth": 1570
+        },
+        "1401010": {
+            "DamageValue": 18890,
+            "DamageGrowth": 1720,
+            "DazeValue": 5530,
+            "DazeGrowth": 260
+        },
+        "1401011": {
+            "DamageValue": 30440,
+            "DamageGrowth": 2770,
+            "DazeValue": 7760,
+            "DazeGrowth": 360
+        },
+        "1401012": {
+            "DamageValue": 96570,
+            "DamageGrowth": 8780,
+            "DazeValue": 19720,
+            "DazeGrowth": 900
+        },
+        "1401013": {
+            "DamageValue": 7530,
+            "DamageGrowth": 690,
+            "DazeValue": 3390,
+            "DazeGrowth": 160
+        },
+        "1401014": {
+            "DamageValue": 28400,
+            "DamageGrowth": 2590,
+            "DazeValue": 21950,
+            "DazeGrowth": 1000
+        },
+        "1401015": {
+            "DamageValue": 66630,
+            "DamageGrowth": 6060,
+            "DazeValue": 20470,
+            "DazeGrowth": 940
+        },
+        "1401016": {
+            "DamageValue": 226200,
+            "DamageGrowth": 20570,
+            "DazeValue": 24260,
+            "DazeGrowth": 1110
+        },
+        "1401017": {
+            "DamageValue": 16330,
+            "DamageGrowth": 1490,
+            "DazeValue": 14690,
+            "DazeGrowth": 670
+        },
+        "1401018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 24420,
+            "DazeGrowth": 1110
+        },
+        "1401019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 30860,
+            "DazeGrowth": 1410
+        },
+        "1401020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15020,
+            "DazeGrowth": 690
+        },
+        "1401021": {
+            "DamageValue": 33270,
+            "DamageGrowth": 3030,
+            "DazeValue": 25840,
+            "DazeGrowth": 1180
+        },
+        "1401022": {
+            "DamageValue": 72050,
+            "DamageGrowth": 0,
+            "DazeValue": 34650,
+            "DazeGrowth": 0
+        },
+        "1401023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1401024": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1401025": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

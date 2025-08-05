@@ -1,0 +1,472 @@
+{
+    "Name": "Alice",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Punhado de Coentro",
+            "Description": "Quando Alice ativa <color=#F0D12B>Ofensiva Polarizada</color>, recupera 25 pontos de <color=#FFFFFF>Rito da Espada</color>. Quando Alice ativa <color=#F0D12B>Ofensiva</color>, a DEF do inimigo diminui 20% por 30s.",
+            "Lore": "Um pé de coentro balança como uma estrela verde recém-nascida,\ntão frágil que seus dedos sentiam que poderiam atravessá-la.\nEla estendeu suas mãos trêmulas lentamente,\naconchegando aquele pequeno sentimento em suas palmas.\nSeu coração batia como um broto primaveril irrompendo a terra logo após a chuva da manhã."
+        },
+        "2": {
+            "Title": "Sálvia na Ponta da Espada",
+            "Description": "Quando o <color=#FFFFFF>Supremo: Encerramento Estelar</color> acerta o inimigo com Golpe Final, a <color=#F0D12B>Ofensiva Polarizada é ativada</color>. O dano de <color=#F0D12B>Ofensiva</color> de todos os personagens da equipe aumenta 15%. O dano de <color=#FFFFFF>Disfunção</color> causado a inimigos sob efeito de <color=#F0D12B>Anomalia Física</color> aumenta 15%. Quando em combate, Alice obtém 1000 dB. No Modo de Reconhecimento, esse efeito pode ser ativado uma vez a cada 180 segundos.",
+            "Lore": "A ponta prateada da espada beija suavemente a geada nas folhas da sálvia.\nA reverência antes da batalha é a manifestação da serenidade da donzela.\nO medo e a impotência foram congelados nos sonhos de ontem.\nA espada embainhada dança, prestes a traçar o contorno das estrelas.\nA alvorada está chegando, os botões de flor aguardam seu desabrochar."
+        },
+        "3": {
+            "Title": "Simetrismo",
+            "Description": "Obtém +2 níveis de <color=#FFFFFF>Ataque Básico</color>, <color=#FFFFFF>Esquiva</color>, <color=#FFFFFF>Ataque de Assistência</color>, <color=#FFFFFF>Ataque Especial</color> e <color=#FFFFFF>Ataque em Cadeia</color>",
+            "Lore": "Ela não consegue resistir à simetria perfeita.\nNa simetria, existe ordem e padrão. Se ela não consegue ver simetria, suas orelhas e cauda de coelho perdem o brilho e a maciez, como se todas as coisas boas estivessem prestes a desaparecer.\n\"Então... é por isso que você insiste em mencionar minhas meias e quer tirar minhas ligas de perna?\"\n\"Não aguento mais essa sua assimetria! Só um segundo, prometo que é por um segundo!\""
+        },
+        "4": {
+            "Title": "Alecrim em Seus Lábios",
+            "Description": "Alice ignora 10% da <color=#F0D12B>Resistência a Físico</color> do alvo. O <color=#FFFFFF>Ataque Básico: Prelúdio Celestial</color> aprimorado acumula 25% mais <color=#F0D12B>Amplificação de Anomalia Física</color>.",
+            "Lore": "O aroma de alecrim permanece em seus lábios.\nO juramento, ardente e firme, resiste em seu hálito branco.\nMesmo que o ar em seus pulmões seja frio e pesado,\na jovem jamais esquecerá o encanto chamado amor.\n\"Em nome dos Thymefield... Eu jamais quebrarei minha palavra.\""
+        },
+        "5": {
+            "Title": "Desejo Sobrenatural",
+            "Description": "Obtém +2 níveis de <color=#FFFFFF>Ataque Básico</color>, <color=#FFFFFF>Esquiva</color>, <color=#FFFFFF>Ataque de Assistência</color>, <color=#FFFFFF>Ataque Especial</color> e <color=#FFFFFF>Ataque em Cadeia</color>",
+            "Lore": "Ela não consegue resistir ao mistério sobrenatural.\nNo mistério, escondem-se o desconhecido e o perigo. Quando ela sente o sobrenatural, suas orelhas de coelho e cauda se arrepiam de tremor, mas depois de se acalmar, ficam ainda mais macias.\n\"Então... é por isso que você sempre me segue nas aventuras de histórias de terror, mesmo morrendo de medo?\"\n\"Eu só estou curiosa para ver o que vai acontecer... mas é tão assustador, que já me arrependi! Só desta vez, não conte comigo na próxima!\""
+        },
+        "6": {
+            "Title": "Coração de Tomilho",
+            "Description": "Quando Alice ativa o <color=#FFFFFF>Ataque Básico: Valsa Estelar</color> ou <color=#FFFFFF>Supremo: Encerramento Estelar</color> com três cargas, ela entra no <color=#FFFFFF>Estado Decisivo</color> por 30s. Durante este período, quando qualquer membro da equipe atinge um inimigo, Alice realiza um ataque adicional contra o inimigo, causando Dano Físico equivalente a 3300% de sua Proficiência de Anomalia. Esse efeito pode ser ativado uma vez a cada 1s e sempre causa acerto crítico, podendo ser ativado até 6 vezes. O número máximo de ativações é renovado ao obter o <color=#FFFFFF>Estado Decisivo</color> novamente.",
+            "Lore": "Naquela propriedade coberta de tomilho, naquela noite observando as estrelas,\nfoi naquele momento que entendeu o significado da coragem.\nA brisa suave dispersou as nuvens escuras, a luz do sol ofuscou o brilho do lustre de cristal.\nA garota fez uma leve reverência aos dias passados.\nEla desapareceu lentamente no campo de tomilho."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passiva Principal: Coração das Lâminas Gêmeas",
+            "DescriptionByLevel": {
+                "1": "Após qualquer membro da equipe causar <color=#F0D12B>Anomalia Física</color> em um inimigo, Alice causa dano adicional a cada 0,95s de sua duração, equivalente a 2,5% do dano de <color=#F0D12B>Anomalia Física</color> original. Se o efeito de <color=#FFFFFF>Disfunção</color> for ativado enquanto o inimigo estiver sofrendo de <color=#F0D12B>Anomalia Física</color>, para cada 1s restante de sua duração, o multiplicador de dano de <color=#FFFFFF>Disfunção</color> aumenta 18%, até um máximo de {CAL:18*10,1,2}%.\nQuando os ataques de Alice atingem um inimigo, ela acumula <color=#FFFFFF>Rito da Espada</color>. Quando ela ativa <color=#F0D12B>Ofensiva</color> por meio de uma Amplificação de Anomalia de Atributo, ela obtém 10 pontos de <color=#FFFFFF>Rito da Espada</color>. O <color=#FFFFFF>Rito da Espada</color> tem um máximo de 300 pontos, e 1 barra equivale a 100 pontos.\nQuando o Golpe Final de um <color=#FFFFFF>Ataque Básico: Valsa Estelar</color> totalmente carregado atinge um inimigo, aplica um efeito de <color=#F0D12B>Ofensiva</color> especial: <color=#F0D12B>Ofensiva Polarizada</color>, causando {CAL:0+100,1,2}% do dano de <color=#F0D12B>Ofensiva</color> original, ignorando o progresso da Amplificação de Anomalia. Pode ser combinado com outros efeitos de Anomalia de Atributo, incluindo Anomalia Física, para ativar <color=#FFFFFF>Disfunção</color>.\nQuando Alice causa <color=#F0D12B>Ofensiva</color> em um inimigo, sua <color=#F0D12B>Taxa de Amplificação de Anomalia Física</color> aumenta <color=#2BAD00>12,5</color>% por 30s.",
+                "2": "Após qualquer membro da equipe causar <color=#F0D12B>Anomalia Física</color> em um inimigo, Alice causa dano adicional a cada 0,95s de sua duração, equivalente a 2,5% do dano de <color=#F0D12B>Anomalia Física</color> original. Se o efeito de <color=#FFFFFF>Disfunção</color> for ativado enquanto o inimigo estiver sofrendo de <color=#F0D12B>Anomalia Física</color>, para cada 1s restante de sua duração, o multiplicador de dano de <color=#FFFFFF>Disfunção</color> aumenta 18%, até um máximo de {CAL:18*10,1,2}%.\nQuando os ataques de Alice atingem um inimigo, ela acumula <color=#FFFFFF>Rito da Espada</color>. Quando ela ativa <color=#F0D12B>Ofensiva</color> por meio de uma Amplificação de Anomalia de Atributo, ela obtém 10 pontos de <color=#FFFFFF>Rito da Espada</color>. O <color=#FFFFFF>Rito da Espada</color> tem um máximo de 300 pontos, e 1 barra equivale a 100 pontos.\nQuando o Golpe Final de um <color=#FFFFFF>Ataque Básico: Valsa Estelar</color> totalmente carregado atinge um inimigo, aplica um efeito de <color=#F0D12B>Ofensiva</color> especial: <color=#F0D12B>Ofensiva Polarizada</color>, causando {CAL:0+100,1,2}% do dano de <color=#F0D12B>Ofensiva</color> original, ignorando o progresso da Amplificação de Anomalia. Pode ser combinado com outros efeitos de Anomalia de Atributo, incluindo Anomalia Física, para ativar <color=#FFFFFF>Disfunção</color>.\nQuando Alice causa <color=#F0D12B>Ofensiva</color> em um inimigo, sua <color=#F0D12B>Taxa de Amplificação de Anomalia Física</color> aumenta <color=#2BAD00>14,6</color>% por 30s.",
+                "3": "Após qualquer membro da equipe causar <color=#F0D12B>Anomalia Física</color> em um inimigo, Alice causa dano adicional a cada 0,95s de sua duração, equivalente a 2,5% do dano de <color=#F0D12B>Anomalia Física</color> original. Se o efeito de <color=#FFFFFF>Disfunção</color> for ativado enquanto o inimigo estiver sofrendo de <color=#F0D12B>Anomalia Física</color>, para cada 1s restante de sua duração, o multiplicador de dano de <color=#FFFFFF>Disfunção</color> aumenta 18%, até um máximo de {CAL:18*10,1,2}%.\nQuando os ataques de Alice atingem um inimigo, ela acumula <color=#FFFFFF>Rito da Espada</color>. Quando ela ativa <color=#F0D12B>Ofensiva</color> por meio de uma Amplificação de Anomalia de Atributo, ela obtém 10 pontos de <color=#FFFFFF>Rito da Espada</color>. O <color=#FFFFFF>Rito da Espada</color> tem um máximo de 300 pontos, e 1 barra equivale a 100 pontos.\nQuando o Golpe Final de um <color=#FFFFFF>Ataque Básico: Valsa Estelar</color> totalmente carregado atinge um inimigo, aplica um efeito de <color=#F0D12B>Ofensiva</color> especial: <color=#F0D12B>Ofensiva Polarizada</color>, causando {CAL:0+100,1,2}% do dano de <color=#F0D12B>Ofensiva</color> original, ignorando o progresso da Amplificação de Anomalia. Pode ser combinado com outros efeitos de Anomalia de Atributo, incluindo Anomalia Física, para ativar <color=#FFFFFF>Disfunção</color>.\nQuando Alice causa <color=#F0D12B>Ofensiva</color> em um inimigo, sua <color=#F0D12B>Taxa de Amplificação de Anomalia Física</color> aumenta <color=#2BAD00>16,7</color>% por 30s.",
+                "4": "Após qualquer membro da equipe causar <color=#F0D12B>Anomalia Física</color> em um inimigo, Alice causa dano adicional a cada 0,95s de sua duração, equivalente a 2,5% do dano de <color=#F0D12B>Anomalia Física</color> original. Se o efeito de <color=#FFFFFF>Disfunção</color> for ativado enquanto o inimigo estiver sofrendo de <color=#F0D12B>Anomalia Física</color>, para cada 1s restante de sua duração, o multiplicador de dano de <color=#FFFFFF>Disfunção</color> aumenta 18%, até um máximo de {CAL:18*10,1,2}%.\nQuando os ataques de Alice atingem um inimigo, ela acumula <color=#FFFFFF>Rito da Espada</color>. Quando ela ativa <color=#F0D12B>Ofensiva</color> por meio de uma Amplificação de Anomalia de Atributo, ela obtém 10 pontos de <color=#FFFFFF>Rito da Espada</color>. O <color=#FFFFFF>Rito da Espada</color> tem um máximo de 300 pontos, e 1 barra equivale a 100 pontos.\nQuando o Golpe Final de um <color=#FFFFFF>Ataque Básico: Valsa Estelar</color> totalmente carregado atinge um inimigo, aplica um efeito de <color=#F0D12B>Ofensiva</color> especial: <color=#F0D12B>Ofensiva Polarizada</color>, causando {CAL:0+100,1,2}% do dano de <color=#F0D12B>Ofensiva</color> original, ignorando o progresso da Amplificação de Anomalia. Pode ser combinado com outros efeitos de Anomalia de Atributo, incluindo Anomalia Física, para ativar <color=#FFFFFF>Disfunção</color>.\nQuando Alice causa <color=#F0D12B>Ofensiva</color> em um inimigo, sua <color=#F0D12B>Taxa de Amplificação de Anomalia Física</color> aumenta <color=#2BAD00>18,8</color>% por 30s.",
+                "5": "Após qualquer membro da equipe causar <color=#F0D12B>Anomalia Física</color> em um inimigo, Alice causa dano adicional a cada 0,95s de sua duração, equivalente a 2,5% do dano de <color=#F0D12B>Anomalia Física</color> original. Se o efeito de <color=#FFFFFF>Disfunção</color> for ativado enquanto o inimigo estiver sofrendo de <color=#F0D12B>Anomalia Física</color>, para cada 1s restante de sua duração, o multiplicador de dano de <color=#FFFFFF>Disfunção</color> aumenta 18%, até um máximo de {CAL:18*10,1,2}%.\nQuando os ataques de Alice atingem um inimigo, ela acumula <color=#FFFFFF>Rito da Espada</color>. Quando ela ativa <color=#F0D12B>Ofensiva</color> por meio de uma Amplificação de Anomalia de Atributo, ela obtém 10 pontos de <color=#FFFFFF>Rito da Espada</color>. O <color=#FFFFFF>Rito da Espada</color> tem um máximo de 300 pontos, e 1 barra equivale a 100 pontos.\nQuando o Golpe Final de um <color=#FFFFFF>Ataque Básico: Valsa Estelar</color> totalmente carregado atinge um inimigo, aplica um efeito de <color=#F0D12B>Ofensiva</color> especial: <color=#F0D12B>Ofensiva Polarizada</color>, causando {CAL:0+100,1,2}% do dano de <color=#F0D12B>Ofensiva</color> original, ignorando o progresso da Amplificação de Anomalia. Pode ser combinado com outros efeitos de Anomalia de Atributo, incluindo Anomalia Física, para ativar <color=#FFFFFF>Disfunção</color>.\nQuando Alice causa <color=#F0D12B>Ofensiva</color> em um inimigo, sua <color=#F0D12B>Taxa de Amplificação de Anomalia Física</color> aumenta <color=#2BAD00>20,8</color>% por 30s.",
+                "6": "Após qualquer membro da equipe causar <color=#F0D12B>Anomalia Física</color> em um inimigo, Alice causa dano adicional a cada 0,95s de sua duração, equivalente a 2,5% do dano de <color=#F0D12B>Anomalia Física</color> original. Se o efeito de <color=#FFFFFF>Disfunção</color> for ativado enquanto o inimigo estiver sofrendo de <color=#F0D12B>Anomalia Física</color>, para cada 1s restante de sua duração, o multiplicador de dano de <color=#FFFFFF>Disfunção</color> aumenta 18%, até um máximo de {CAL:18*10,1,2}%.\nQuando os ataques de Alice atingem um inimigo, ela acumula <color=#FFFFFF>Rito da Espada</color>. Quando ela ativa <color=#F0D12B>Ofensiva</color> por meio de uma Amplificação de Anomalia de Atributo, ela obtém 10 pontos de <color=#FFFFFF>Rito da Espada</color>. O <color=#FFFFFF>Rito da Espada</color> tem um máximo de 300 pontos, e 1 barra equivale a 100 pontos.\nQuando o Golpe Final de um <color=#FFFFFF>Ataque Básico: Valsa Estelar</color> totalmente carregado atinge um inimigo, aplica um efeito de <color=#F0D12B>Ofensiva</color> especial: <color=#F0D12B>Ofensiva Polarizada</color>, causando {CAL:0+100,1,2}% do dano de <color=#F0D12B>Ofensiva</color> original, ignorando o progresso da Amplificação de Anomalia. Pode ser combinado com outros efeitos de Anomalia de Atributo, incluindo Anomalia Física, para ativar <color=#FFFFFF>Disfunção</color>.\nQuando Alice causa <color=#F0D12B>Ofensiva</color> em um inimigo, sua <color=#F0D12B>Taxa de Amplificação de Anomalia Física</color> aumenta <color=#2BAD00>22,9</color>% por 30s.",
+                "7": "Após qualquer membro da equipe causar <color=#F0D12B>Anomalia Física</color> em um inimigo, Alice causa dano adicional a cada 0,95s de sua duração, equivalente a 2,5% do dano de <color=#F0D12B>Anomalia Física</color> original. Se o efeito de <color=#FFFFFF>Disfunção</color> for ativado enquanto o inimigo estiver sofrendo de <color=#F0D12B>Anomalia Física</color>, para cada 1s restante de sua duração, o multiplicador de dano de <color=#FFFFFF>Disfunção</color> aumenta 18%, até um máximo de {CAL:18*10,1,2}%.\nQuando os ataques de Alice atingem um inimigo, ela acumula <color=#FFFFFF>Rito da Espada</color>. Quando ela ativa <color=#F0D12B>Ofensiva</color> por meio de uma Amplificação de Anomalia de Atributo, ela obtém 10 pontos de <color=#FFFFFF>Rito da Espada</color>. O <color=#FFFFFF>Rito da Espada</color> tem um máximo de 300 pontos, e 1 barra equivale a 100 pontos.\nQuando o Golpe Final de um <color=#FFFFFF>Ataque Básico: Valsa Estelar</color> totalmente carregado atinge um inimigo, aplica um efeito de <color=#F0D12B>Ofensiva</color> especial: <color=#F0D12B>Ofensiva Polarizada</color>, causando {CAL:0+100,1,2}% do dano de <color=#F0D12B>Ofensiva</color> original, ignorando o progresso da Amplificação de Anomalia. Pode ser combinado com outros efeitos de Anomalia de Atributo, incluindo Anomalia Física, para ativar <color=#FFFFFF>Disfunção</color>.\nQuando Alice causa <color=#F0D12B>Ofensiva</color> em um inimigo, sua <color=#F0D12B>Taxa de Amplificação de Anomalia Física</color> aumenta <color=#2BAD00>25</color>% por 30s."
+            }
+        },
+        "MathSkill": {
+            "Title": "Habilidade Extra: Caça a Mistérios",
+            "Description": "Ativa quando há outro personagem do tipo <color=#FFFFFF>Anômalo</color> ou <color=#FFFFFF>Assistência</color> na equipe:\nQuando qualquer personagem na equipe ativa o efeito <color=#FFFFFF>Disfunção</color>, Alice recupera 30 pontos de <color=#FFFFFF>Rito da Espada</color>.\nSe a Maestria de Anomalia de Alice for maior que 140, cada ponto excedente aumenta 1,6 da Proficiência de Anomalia.\nAo entrar em combate, Alice obtém 300 pontos de <color=#FFFFFF>Rito da Espada</color>. No Modo de Reconhecimento, esse efeito pode ser ativado uma vez a cada 180 segundos."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "140100001": {
+                "Title": "Ataque Básico: Prelúdio Celestial",
+                "Description": "Pressione <IconMap:Icon_Normal> para ativar:\nExecuta até 5 cortes à frente, causando <color=#F0D12B>Dano Físico</color>.\nQuando Alice provoca <color=#F0D12B>Ofensiva</color> por meio da Amplificação de Anomalia de Atributo, o 5º golpe do seu próximo <color=#FFFFFF>Ataque Básico</color> é aprimorado."
+            },
+            "140100002": {
+                "Title": "Ataque Básico: Valsa Estelar",
+                "Description": "Quando o <color=#FFFFFF>Rito da Espada</color> de Alice chegar a 1 barra, mantenha <IconMap:Icon_Normal> pressionado para ativar:\nSegure para carregar, consumindo até 3 barras de <color=#FFFFFF>Rito da Espada</color>. Solte <IconMap:Icon_Normal> ou, se <color=#FFFFFF>Rito da Espada</color> estiver abaixo de 1 barra, Alice executa uma série de cortes ao redor do inimigo alvo, com a quantidade de golpes determinada pelo nível de carregamento, causando <color=#F0D12B>Dano Físico</color> muito alto.\nQuando o Golpe Final de um <color=#FFFFFF>Ataque Básico: Valsa Estelar</color> com três cargas atingir um inimigo, ativa um efeito de <color=#F0D12B>Ofensiva</color> especial: <color=#F0D12B>Ofensiva Polarizada</color>. Esse efeito causa dano equivalente a {CAL:0+100,1,2}% da <color=#F0D12B>Ofensiva</color> original, ignorando a Amplificação de Anomalia, e pode interagir com outras Anomalias de Atributo, incluindo Anomalia Física, para ativar <color=#FFFFFF>Disfunção</color>.\nO <color=#FFFFFF>Rito da Espada</color> não se acumula ao atingir inimigos.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "140100015": {
+                "Title": "Ataque Básico: Prelúdio Celestial"
+            },
+            "140100016": {
+                "Description": "Multiplicador de Dano de 1º Golpe",
+                "Param": "{Skill:1401001, Prop:1001}"
+            },
+            "140100017": {
+                "Description": "Multiplicador de Dano de 2º Golpe",
+                "Param": "{Skill:1401002, Prop:1001}"
+            },
+            "140100018": {
+                "Description": "Multiplicador de Dano de 3º Golpe",
+                "Param": "{Skill:1401003, Prop:1001}"
+            },
+            "140100019": {
+                "Description": "Multiplicador de Dano de 4º Golpe",
+                "Param": "{Skill:1401004, Prop:1001}"
+            },
+            "140100020": {
+                "Description": "Multiplicador de Dano de 5º Golpe",
+                "Param": "{Skill:1401005, Prop:1001}"
+            },
+            "140100021": {
+                "Description": "Multiplicador de Dano de 5º Golpe (Aprimorado)",
+                "Param": "{Skill:1401006, Prop:1001}"
+            },
+            "140100022": {
+                "Description": "Multiplicador de Atordoamento de 1º Golpe",
+                "Param": "{Skill:1401001, Prop:1002}"
+            },
+            "140100023": {
+                "Description": "Multiplicador de Atordoamento de 2º Golpe",
+                "Param": "{Skill:1401002, Prop:1002}"
+            },
+            "140100024": {
+                "Description": "Multiplicador de Atordoamento de 3º Golpe",
+                "Param": "{Skill:1401003, Prop:1002}"
+            },
+            "140100025": {
+                "Description": "Multiplicador de Atordoamento de 4º Golpe",
+                "Param": "{Skill:1401004, Prop:1002}"
+            },
+            "140100026": {
+                "Description": "Multiplicador de Atordoamento de 5º Golpe",
+                "Param": "{Skill:1401005, Prop:1002}"
+            },
+            "140100027": {
+                "Description": "Multiplicador de Atordoamento de 5º Golpe (Aprimorado)",
+                "Param": "{Skill:1401006, Prop:1002}"
+            },
+            "140100028": {
+                "Title": "Ataque Básico: Valsa Estelar"
+            },
+            "140100029": {
+                "Description": "Multiplicador de Dano de 1º Golpe de Ataque Carregado",
+                "Param": "{Skill:1401010, Prop:1001}"
+            },
+            "140100030": {
+                "Description": "Multiplicador de Dano de 2º Golpe de Ataque Carregado",
+                "Param": "{Skill:1401011, Prop:1001}"
+            },
+            "140100031": {
+                "Description": "Multiplicador de Dano de 3º Golpe de Ataque Carregado",
+                "Param": "{Skill:1401012, Prop:1001}"
+            },
+            "140100032": {
+                "Description": "Multiplicador de Atordoamento de 1º Golpe de Ataque Carregado",
+                "Param": "{Skill:1401010, Prop:1002}"
+            },
+            "140100033": {
+                "Description": "Multiplicador de Atordoamento de 2º Golpe de Ataque Carregado",
+                "Param": "{Skill:1401011, Prop:1002}"
+            },
+            "140100034": {
+                "Description": "Multiplicador de Atordoamento de 3º Golpe de Ataque Carregado",
+                "Param": "{Skill:1401012, Prop:1002}"
+            }
+        },
+        "1": {
+            "140100003": {
+                "Title": "Ataque Especial: Alvorada Incisiva",
+                "Description": "Pressione <IconMap:Icon_Special> para ativar:\nAtaca com sua espada, que atravessa os inimigos à frente, causando <color=#F0D12B>Dano Físico</color>.\nDurante a execução, pode ativar uma <color=#FFFFFF>Esquiva Perfeita</color>. \nApós ativar uma <color=#FFFFFF>Esquiva Perfeita</color>, pressione <IconMap:Icon_Normal> para conectar com o 5º golpe do <color=#FFFFFF>Ataque Básico</color>. \nDurante sua execução, o nível de Anti-Interrupção aumenta."
+            },
+            "140100004": {
+                "Title": "Ataque Especial Reforçado: Investida da Aurora — Cruz do Norte",
+                "Description": "Com energia suficiente, arraste o {LAYOUT_CONSOLECONTROLLER#controle analógico}{LAYOUT_FALLBACK#controle analógico} para frente e pressione <IconMap:Icon_SpecialReady> para ativar:\nExecuta um ataque de investida perfurante que atravessa os inimigos à frente, causando <color=#F0D12B>Dano Físico</color> muito alto.\nAtivar esta habilidade, pode acionar uma <color=#FFFFFF>Esquiva Perfeita</color> e recuperar 10 pontos de <color=#FFFFFF>Rito da Espada</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "140100005": {
+                "Title": "Ataque Especial Reforçado: Investida da Aurora — Cruz do Sul",
+                "Description": "Com energia suficiente e sem mover o {LAYOUT_CONSOLECONTROLLER#controle analógico}{LAYOUT_FALLBACK#controle analógico}, ou ao arrastá-lo para trás, pressione <IconMap:Icon_SpecialReady> para ativar:\nRecua executando um corte, depois realiza uma investida à frente, causando <color=#F0D12B>Dano Físico</color>.\nAtivar esta habilidade pode acionar uma <color=#FFFFFF>Esquiva Perfeita</color> e recuperar 10 pontos de <color=#FFFFFF>Rito da Espada</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "140100035": {
+                "Title": "Ataque Especial: Alvorada Incisiva"
+            },
+            "140100036": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1401008, Prop:1001}"
+            },
+            "140100037": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1401008, Prop:1002}"
+            },
+            "140100038": {
+                "Title": "Ataque Especial Reforçado: Investida da Aurora — Cruz do Norte"
+            },
+            "140100039": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1401009, Prop:1001}"
+            },
+            "140100040": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1401009, Prop:1002}"
+            },
+            "140100041": {
+                "Description": "Custo de Energia",
+                "Param": "40"
+            },
+            "140100042": {
+                "Title": "Ataque Especial Reforçado: Investida da Aurora — Cruz do Sul"
+            },
+            "140100043": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1401007, Prop:1001}"
+            },
+            "140100044": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1401007, Prop:1002}"
+            },
+            "140100045": {
+                "Description": "Custo de Energia",
+                "Param": "40"
+            }
+        },
+        "2": {
+            "140100006": {
+                "Title": "Esquiva: Coelha Veloz Saltitante",
+                "Description": "Pressione <IconMap:Icon_Evade> para ativar:\nUma esquiva rápida.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "140100007": {
+                "Title": "Ataque Rápido: Vendaval das Lâminas Dançarinas",
+                "Description": "Pressione <IconMap:Icon_Normal> durante uma esquiva para ativar:\nCorta inimigos à frente e causa <color=#F0D12B>Dano Físico</color>."
+            },
+            "140100008": {
+                "Title": "Contraesquiva: Ritual do Brilho da Lâmina",
+                "Description": "Pressione <IconMap:Icon_Normal> durante uma <color=#FFFFFF>Esquiva Perfeita</color> para ativar:\nExecuta um corte e um chute contra os inimigos à frente, causando <color=#F0D12B>Dano Físico</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "140100046": {
+                "Title": "Ataque Rápido: Vendaval das Lâminas Dançarinas"
+            },
+            "140100047": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1401013, Prop:1001}"
+            },
+            "140100048": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1401013, Prop:1002}"
+            },
+            "140100049": {
+                "Title": "Contraesquiva: Ritual do Brilho da Lâmina"
+            },
+            "140100050": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1401014, Prop:1001}"
+            },
+            "140100051": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1401014, Prop:1002}"
+            }
+        },
+        "3": {
+            "140100009": {
+                "Title": "Ataque em Cadeia: Interlúdio das Estrelas Cadentes",
+                "Description": "Quando um <color=#FFFFFF>Ataque em Cadeia</color> for acionado, selecione o personagem para ativar:\nExecuta vários cortes poderosos nos inimigos à frente, causando <color=#F0D12B>Dano Físico</color> muito alto.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "140100010": {
+                "Title": "Supremo: Encerramento Estelar",
+                "Description": "Quando o Índice de dB está no <color=#FFFFFF>Máximo</color>, pressione <IconMap:Icon_UltimateReady> para ativar:\nExecuta cortes poderosos nos inimigos em uma grande área à frente, causando <color=#F0D12B>Dano Físico</color> muito alto.\nAtivar esta habilidade recupera 200 pontos de <color=#FFFFFF>Rito da Espada</color>.\nO <color=#FFFFFF>Rito da Espada</color> não se acumula ao atingir um inimigo.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "140100052": {
+                "Title": "Ataque em Cadeia: Interlúdio das Estrelas Cadentes"
+            },
+            "140100053": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1401015, Prop:1001}"
+            },
+            "140100054": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1401015, Prop:1002}"
+            },
+            "140100055": {
+                "Title": "Supremo: Encerramento Estelar"
+            },
+            "140100056": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1401016, Prop:1001}"
+            },
+            "140100057": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1401016, Prop:1002}"
+            }
+        },
+        "6": {
+            "140100012": {
+                "Title": "Assistência Reativa: Investidas Alternadas",
+                "Description": "Quando o personagem em campo for lançado, pressione <IconMap:Icon_Switch> para ativar:\nExecuta cortes e chutes contra os inimigos à frente, causando <color=#F0D12B>Dano Físico</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "140100013": {
+                "Title": "Assistência Defensiva: Revide Defensivo",
+                "Description": "Quando o personagem em campo está prestes a sofrer um ataque, pressione <IconMap:Icon_Switch> para ativar:\nBloqueia o ataque inimigo, causando muito Atordoamento.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "140100014": {
+                "Title": "Assistência Imediata: Contra-Ataque Cruzado",
+                "Description": "Pressione <IconMap:Icon_Normal> após uma <color=#FFFFFF>Assistência Defensiva</color> para ativar:\nAtaca e corta os inimigos à frente, causando <color=#F0D12B>Dano Físico</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "140100058": {
+                "Title": "Assistência Reativa: Investidas Alternadas"
+            },
+            "140100059": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1401017, Prop:1001}"
+            },
+            "140100060": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1401017, Prop:1002}"
+            },
+            "140100061": {
+                "Title": "Assistência Defensiva: Revide Defensivo"
+            },
+            "140100062": {
+                "Description": "Multiplicador de Atordoamento de Defensiva Leve",
+                "Param": "{Skill:1401018, Prop:1002}"
+            },
+            "140100063": {
+                "Description": "Multiplicador de Atordoamento de Defensiva Pesada",
+                "Param": "{Skill:1401019, Prop:1002}"
+            },
+            "140100064": {
+                "Description": "Multiplicador de Atordoamento de Defensiva em Cadeia",
+                "Param": "{Skill:1401020, Prop:1002}"
+            },
+            "140100065": {
+                "Title": "Assistência Imediata: Contra-Ataque Cruzado"
+            },
+            "140100066": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1401021, Prop:1001}"
+            },
+            "140100067": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1401021, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1401001": {
+            "DamageValue": 5510,
+            "DamageGrowth": 510,
+            "DazeValue": 3970,
+            "DazeGrowth": 190
+        },
+        "1401002": {
+            "DamageValue": 8800,
+            "DamageGrowth": 800,
+            "DazeValue": 6980,
+            "DazeGrowth": 320
+        },
+        "1401003": {
+            "DamageValue": 6610,
+            "DamageGrowth": 610,
+            "DazeValue": 5990,
+            "DazeGrowth": 280
+        },
+        "1401004": {
+            "DamageValue": 11190,
+            "DamageGrowth": 1020,
+            "DazeValue": 10510,
+            "DazeGrowth": 480
+        },
+        "1401005": {
+            "DamageValue": 13030,
+            "DamageGrowth": 1190,
+            "DazeValue": 13170,
+            "DazeGrowth": 600
+        },
+        "1401006": {
+            "DamageValue": 21830,
+            "DamageGrowth": 1990,
+            "DazeValue": 21090,
+            "DazeGrowth": 960
+        },
+        "1401007": {
+            "DamageValue": 53200,
+            "DamageGrowth": 4840,
+            "DazeValue": 40530,
+            "DazeGrowth": 1850
+        },
+        "1401008": {
+            "DamageValue": 6240,
+            "DamageGrowth": 570,
+            "DazeValue": 5610,
+            "DazeGrowth": 260
+        },
+        "1401009": {
+            "DamageValue": 46000,
+            "DamageGrowth": 4190,
+            "DazeValue": 34520,
+            "DazeGrowth": 1570
+        },
+        "1401010": {
+            "DamageValue": 18890,
+            "DamageGrowth": 1720,
+            "DazeValue": 5530,
+            "DazeGrowth": 260
+        },
+        "1401011": {
+            "DamageValue": 30440,
+            "DamageGrowth": 2770,
+            "DazeValue": 7760,
+            "DazeGrowth": 360
+        },
+        "1401012": {
+            "DamageValue": 96570,
+            "DamageGrowth": 8780,
+            "DazeValue": 19720,
+            "DazeGrowth": 900
+        },
+        "1401013": {
+            "DamageValue": 7530,
+            "DamageGrowth": 690,
+            "DazeValue": 3390,
+            "DazeGrowth": 160
+        },
+        "1401014": {
+            "DamageValue": 28400,
+            "DamageGrowth": 2590,
+            "DazeValue": 21950,
+            "DazeGrowth": 1000
+        },
+        "1401015": {
+            "DamageValue": 66630,
+            "DamageGrowth": 6060,
+            "DazeValue": 20470,
+            "DazeGrowth": 940
+        },
+        "1401016": {
+            "DamageValue": 226200,
+            "DamageGrowth": 20570,
+            "DazeValue": 24260,
+            "DazeGrowth": 1110
+        },
+        "1401017": {
+            "DamageValue": 16330,
+            "DamageGrowth": 1490,
+            "DazeValue": 14690,
+            "DazeGrowth": 670
+        },
+        "1401018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 24420,
+            "DazeGrowth": 1110
+        },
+        "1401019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 30860,
+            "DazeGrowth": 1410
+        },
+        "1401020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15020,
+            "DazeGrowth": 690
+        },
+        "1401021": {
+            "DamageValue": 33270,
+            "DamageGrowth": 3030,
+            "DazeValue": 25840,
+            "DazeGrowth": 1180
+        },
+        "1401022": {
+            "DamageValue": 72050,
+            "DamageGrowth": 0,
+            "DazeValue": 34650,
+            "DazeGrowth": 0
+        },
+        "1401023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1401024": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1401025": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

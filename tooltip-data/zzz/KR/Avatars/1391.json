@@ -157,7 +157,7 @@
             },
             "139100007": {
                 "Title": "대시 공격: 대호칠식·산군의 놀음",
-                "Description": "<color=#FFFFFF>[대시 공격: 대호칠식·질주하는 호랑이]</color> 시전 후 <IconMap:Icon_Normal>을 홀드하여 시전:\n고속 회전 상태에 진입한다. 해당 상태에서는 {LAYOUT_CONSOLECONTROLLER#스틱을}{LAYOUT_FALLBACK#방향키를} 드래그해 이동할 수 있으며 적에게 닿으면 <color=#F0D12B>물리 피해</color>를 준다.\n귤복복이 다른 스킬을 통해 <color=#FFFFFF>[위세]</color>를 획득한 후, 고속 회전 상태에서 화염을 가진다. 적에게 닿으면 <color=#FFFFFF>[위세]</color>를 1pt 소모하며, <color=#FF5521>불 속성 피해</color>를 주고 <color=#FFFFFF>[위풍]</color>을 25pt 획득하는 것으로 변경된다. <color=#FFFFFF>[위세]</color> 최대치: 15pt\n<color=#FF5521>불 속성 피해</color>를 줄 시, 만약 <color=#FFFFFF>[위풍]</color>이 100pt를 넘으면 자동으로 <color=#FFFFFF>[위풍]</color>을 100pt 소모해 <color=#FFFFFF>[콤보 스킬: 호랑솥·진살]</color>을 시전한다.\n<IconMap:Icon_Normal>에서 손을 떼면 회전 상태가 종료되며 <color=#FFFFFF>「호위」</color>를 던져 적을 공격한다. 다른 캐릭터로 교체 시 귤복복은 계속해서 회전 상태를 유지하며 가장 가까운 적에게 돌진한다.\n귤복복이 현재 조작 중인 캐릭터이면 스킬 시전 기간 동안 받는 피해가 40% 감소하고 경직 저항 레벨이 증가하며, 현재 조작 중인 캐릭터가 아니면 무적 효과를 획득한다."
+                "Description": "<color=#FFFFFF>[대시 공격: 대호칠식·질주하는 호랑이]</color> 시전 후 <IconMap:Icon_Normal>을 홀드하여 시전:\n고속 회전 상태에 진입한다. 해당 상태에서는 {LAYOUT_CONSOLECONTROLLER#스틱을}{LAYOUT_FALLBACK#방향키를} 드래그해 이동할 수 있으며 적에게 닿으면 <color=#F0D12B>물리 피해</color>를 준다.\n귤복복이 다른 스킬을 통해 <color=#FFFFFF>[위세]</color>를 획득한 후, 고속 회전 상태에서 화염을 가진다. 적에게 닿으면 <color=#FFFFFF>[위세]</color>를 1pt 소모하며, <color=#FF5521>불 속성 피해</color>를 주고 <color=#FFFFFF>[위풍]</color>을 25pt 획득하는 것으로 변경된다. <color=#FFFFFF>[위세]</color> 최대치: 15pt\n귤복복이 <color=#FFFFFF>[위세]</color>를 소모하여 <color=#FF5521>불 속성 피해</color>를 줄 시, 만약 <color=#FFFFFF>[위풍]</color>이 100pt를 넘으면 자동으로 <color=#FFFFFF>[위풍]</color>을 100pt 소모해 <color=#FFFFFF>[콤보 스킬: 호랑솥·진살]</color>을 시전한다.\n<IconMap:Icon_Normal> 에서 손을 떼면 회전 상태가 종료되며 <color=#FFFFFF>「호위」</color>를 던져 적을 공격하며, <color=#FF5521>불속성 피해</color>를 준다. 다른 캐릭터로 교체 시 귤복복은 계속해서 회전 상태를 유지하며 가장 가까운 적에게 돌진한다.\n귤복복이 현재 조작 중인 캐릭터이면 스킬 시전 기간 동안 받는 피해가 40% 감소하고 경직 저항 레벨이 증가하며, 현재 조작 중인 캐릭터가 아니면 무적 효과를 획득한다."
             },
             "139100008": {
                 "Title": "회피 반격: 대호칠식·불타는 산",
@@ -197,13 +197,24 @@
                 "Param": "{Skill:1391010, Prop:1002}"
             },
             "139100044": {
-                "Title": "회피 반격: 대호칠식·불타는 산"
+                "Title": "대시 공격: 대호칠식·산군의 놀음·「호위」"
             },
             "139100045": {
                 "Description": "피해 배율",
-                "Param": "{Skill:1391011, Prop:1001}"
+                "Param": "{Skill:1391022, Prop:1001}"
             },
             "139100046": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1391022, Prop:1002}"
+            },
+            "139100047": {
+                "Title": "회피 반격: 대호칠식·불타는 산"
+            },
+            "139100048": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1391011, Prop:1001}"
+            },
+            "139100049": {
                 "Description": "그로기 배율",
                 "Param": "{Skill:1391011, Prop:1002}"
             }
@@ -215,42 +226,42 @@
             },
             "139100010": {
                 "Title": "콤보 스킬: 호랑솥·진살",
-                "Description": "<color=#FFFFFF>[위풍]</color>을 최소 100pt 보유한 상태에서 <color=#FFFFFF>[콤보 스킬]</color> 발동 후 자동으로 시전:\n<color=#FFFFFF>[위풍]</color>을 100pt 소모하고, 「호위」를 열어 전방 작은 범위 내 적에게 화염 및 팝콘을 발사해 적을 타격하여 대량의 <color=#FF5521>불 속성 피해</color>를 준다.\n<color=#FFFFFF>[위세]</color>를 보유하고 있으면서 조작 중인 캐릭터가 아닌 경우, 스킬이 끝나면 <color=#FFFFFF>[불꽃 회전]</color> 상태에 진입한다.\n스킬은 <color=#FFFFFF>[여진 공격]</color>이며 시전하는 동안 무적 효과를 보유한다."
+                "Description": "<color=#FFFFFF>[위풍]</color>을 최소 100pt 보유한 상태에서 <color=#FFFFFF>[콤보 스킬]</color> 발동 후 자동으로 시전:\n<color=#FFFFFF>[위풍]</color>을 100pt 소모하고, 「호위」를 열어 전방 작은 범위 내 적에게 화염 및 팝콘을 발사해 적을 타격하여 대량의 <color=#FF5521>불 속성 피해</color>를 준다.\n<color=#FFFFFF>[위세]</color>를 보유하고 있으면서 조작 중인 캐릭터가 아닌 경우, 스킬이 끝나면 고속 회전 상태에 진입한다.\n스킬은 <color=#FFFFFF>[여진 공격]</color>이며 시전하는 동안 무적 효과를 보유한다."
             },
             "139100011": {
                 "Title": "궁극기: 대호칠식·맹호폭발",
                 "Description": "데시벨 레벨 <color=#FFFFFF>[Maximum]</color> 달성 시 <IconMap:Icon_UltimateReady>을 짧게 탭하여 시전:\n「호위」를 사용하여 낙하 공격 2회로 대량의 <color=#FF5521>불 속성 피해</color>를 준다.\n시전 시 <color=#FFFFFF>[위세]</color> 6pt 및 <color=#FFFFFF>[위풍]</color> 100pt를 획득한다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
             },
-            "139100047": {
-                "Title": "콤보 스킬: 호랑솥·붕괴"
-            },
-            "139100048": {
-                "Description": "피해 배율",
-                "Param": "{Skill:1391012, Prop:1001}"
-            },
-            "139100049": {
-                "Description": "그로기 배율",
-                "Param": "{Skill:1391012, Prop:1002}"
-            },
             "139100050": {
-                "Title": "콤보 스킬: 호랑솥·진살"
+                "Title": "콤보 스킬: 호랑솥·붕괴"
             },
             "139100051": {
                 "Description": "피해 배율",
-                "Param": "{Skill:1391013, Prop:1001}"
+                "Param": "{Skill:1391012, Prop:1001}"
             },
             "139100052": {
                 "Description": "그로기 배율",
-                "Param": "{Skill:1391013, Prop:1002}"
+                "Param": "{Skill:1391012, Prop:1002}"
             },
             "139100053": {
-                "Title": "궁극기: 대호칠식·맹호폭발"
+                "Title": "콤보 스킬: 호랑솥·진살"
             },
             "139100054": {
                 "Description": "피해 배율",
-                "Param": "{Skill:1391014, Prop:1001}"
+                "Param": "{Skill:1391013, Prop:1001}"
             },
             "139100055": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1391013, Prop:1002}"
+            },
+            "139100056": {
+                "Title": "궁극기: 대호칠식·맹호폭발"
+            },
+            "139100057": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1391014, Prop:1001}"
+            },
+            "139100058": {
                 "Description": "그로기 배율",
                 "Param": "{Skill:1391014, Prop:1002}"
             }
@@ -268,40 +279,40 @@
                 "Title": "지원 돌격: 야수의 근성",
                 "Description": "<color=#FFFFFF>[패링 지원]</color> 시전 후 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n전방의 적을 벤 후 <color=#FFFFFF>「호위」</color>를 사용해 낙하 공격을 1회 시전하여 <color=#FF5521>불 속성 피해</color>를 준다.\n시전 시 <color=#FFFFFF>[위세]</color>를 1pt 획득한다. 10초 동안 최대 1회 획득할 수 있다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
             },
-            "139100056": {
+            "139100059": {
                 "Title": "빠른 지원: 뿔난 호랑이"
             },
-            "139100057": {
+            "139100060": {
                 "Description": "피해 배율",
                 "Param": "{Skill:1391015, Prop:1001}"
             },
-            "139100058": {
+            "139100061": {
                 "Description": "그로기 배율",
                 "Param": "{Skill:1391015, Prop:1002}"
             },
-            "139100059": {
+            "139100062": {
                 "Title": "패링 지원: 굳건한 호랑이"
             },
-            "139100060": {
+            "139100063": {
                 "Description": "가벼운 패링 그로기 배율",
                 "Param": "{Skill:1391016, Prop:1002}"
             },
-            "139100061": {
+            "139100064": {
                 "Description": "강한 패링 그로기 배율",
                 "Param": "{Skill:1391017, Prop:1002}"
             },
-            "139100062": {
+            "139100065": {
                 "Description": "연속 패링 그로기 배율",
                 "Param": "{Skill:1391018, Prop:1002}"
             },
-            "139100063": {
+            "139100066": {
                 "Title": "지원 돌격: 야수의 근성"
             },
-            "139100064": {
+            "139100067": {
                 "Description": "피해 배율",
                 "Param": "{Skill:1391019, Prop:1001}"
             },
-            "139100065": {
+            "139100068": {
                 "Description": "그로기 배율",
                 "Param": "{Skill:1391019, Prop:1002}"
             }
@@ -433,6 +444,12 @@
             "DamageGrowth": 0,
             "DazeValue": 24500,
             "DazeGrowth": 0
+        },
+        "1391022": {
+            "DamageValue": 9240,
+            "DamageGrowth": 840,
+            "DazeValue": 6930,
+            "DazeGrowth": 320
         }
     }
 }

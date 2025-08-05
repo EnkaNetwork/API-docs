@@ -1,0 +1,472 @@
+{
+    "Name": "Alice",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "Palmful of Cilantro",
+            "Description": "When Alice triggers a <color=#F0D12B>Polarized Assault</color>, she gains 25 <color=#FFFFFF>Blade Etiquette</color>. When she triggers <color=#F0D12B>Assault</color> against an enemy, the target's DEF is reduced by 20% for 30s.",
+            "Lore": "A sprig of coriander sways like a newborn green star,\nSo fragile her fingertips felt they might pass through it.\nShe slowly opened her trembling hands,\nAnd held that flicker of feeling in her palms.\nHer heart beat like a spring bud breaking the earth at dawn, just after the rain."
+        },
+        "2": {
+            "Title": "Sage at the Sword's Tip",
+            "Description": "When <color=#FFFFFF>Ultimate: Starfall Finale</color>'s Finishing Move hits an enemy, it triggers <color=#F0D12B>Polarized Assault</color>. All squad members' <color=#F0D12B>Assault</color> DMG increases by 15%. <color=#FFFFFF>Disorder</color> DMG against enemies suffering from <color=#F0D12B>Physical Anomaly</color> increases by 15%. Upon entering the battlefield, Alice immediately gains 1,000 Decibels. Triggers once per 180s in Investigation Zone mode.",
+            "Lore": "The silver blade dips low, kissing the frost-lined sage leaf.\nThis pre-battle salute is the girl's quiet show of composure.\nFear and helplessness lie frozen in the faded dreams of yesterday.\nHer sword stirs, ready to trace the outline of the stars.\nDawn is near, and the flower bud waits to bloom."
+        },
+        "3": {
+            "Title": "Symmetrism",
+            "Description": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2",
+            "Lore": "She couldn't resist perfect symmetry.\nIn symmetry, there was order, balance, and meaning. Without it, her bunny ears and tail would dull and droop, as if something lovely were about to vanish from her world.\n\"So... that's why you had to bring up my mismatched socks, and tried to take off my leg band?\"\n\"I just can't stand your asymmetry! Just for a second, I swear — just one second!\""
+        },
+        "4": {
+            "Title": "Rosemary on Her Lips",
+            "Description": "Alice ignores 10% of the target's <color=#F0D12B>Physical RES</color>. Enhanced <color=#FFFFFF>Basic Attack: Celestial Overture</color> accumulates 25% more <color=#F0D12B>Physical Anomaly Buildup</color>.",
+            "Lore": "The scent of rosemary lingered between her lips,\nA vow searing and resolute, carried on every breath of frost.\nEven as the air in her lungs turned cold and heavy,\nThe girl would never forget the spell called love.\n\"In the name of the Thymefields... I will never betray it.\""
+        },
+        "5": {
+            "Title": "Passion for the Supernatural",
+            "Description": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2",
+            "Lore": "She couldn't resist scary paranormal things.\nWithin the paranormal hid the unknown and the dangerous. When she felt it, her bunny ears and tail would bristle in fright — only to become irresistibly smooth once she calmed down.\n\"So... that's why you always tag along on my ghost-hunting trips, even though you're scared out of your mind?\"\n\"I just wanted to see what would happen... but it's so scary, I totally regret it! Just this once — I swear I'm not coming next time!\""
+        },
+        "6": {
+            "Title": "A Heart of Thyme",
+            "Description": "When Alice uses a third-stage charged <color=#FFFFFF>Basic Attack: Starshine Waltz</color> or <color=#FFFFFF>Ultimate: Starfall Finale</color>, she enters the <color=#FFFFFF>Victory State</color> for 30s. During this time, whenever any squad member lands a hit on a target, Alice will follow up with an extra attack against the target, dealing Physical DMG equal to 3,300% of her Anomaly Proficiency. This effect can trigger once every 1s and is guaranteed to CRIT. This effect can trigger up to 6 times. Gaining the <color=#FFFFFF>Victory State</color> again refreshes the available trigger count.",
+            "Lore": "The thyme-scented manor,\nThe night spent watching the stars,\nThe moment she came to understand what courage truly meant.\nA fragrant wind swept the clouds away, and sunlight outshone the crystal chandelier.\nThe girl gave a gentle bow to the days gone by.\nThen, slowly, she vanished into the field of thyme."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Core Passive: Twin Rainbows of the Swordheart",
+            "DescriptionByLevel": {
+                "1": "After any squad member inflicts a <color=#F0D12B>Physical Anomaly</color> on an enemy, Alice deals additional DMG each 0.95s of its active duration, equal to 2.5% of the original Physical Anomaly DMG. If <color=#FFFFFF>Disorder</color> is triggered while the enemy is suffering a <color=#F0D12B>Physical Anomaly</color>, for every 1s of remaining <color=#F0D12B>Physical Anomaly</color> duration, the <color=#FFFFFF>Disorder</color> DMG multiplier increases by 18%, up to a max of {CAL:18*10,1,2}%.\nWhen Alice's attacks hit an enemy, she builds up <color=#FFFFFF>Blade Etiquette</color>. When she triggers an <color=#F0D12B>Assault</color> through Anomaly Buildup, she gains 10 <color=#FFFFFF>Blade Etiquette</color>. <color=#FFFFFF>Blade Etiquette</color> has a maximum of 300, with each 100 being 1 bar.\nWhen the Finishing Move of a three-stage charged <color=#FFFFFF>Basic Attack: Starshine Waltz</color> lands, it triggers a special <color=#F0D12B>Assault</color> effect: <color=#F0D12B>Polarized Assault</color>, dealing {CAL:0+100,1,2}% of the original <color=#F0D12B>Assault</color> DMG, ignoring Anomaly Buildup progress. This can be combined with any Attribute Anomaly, including Physical Anomaly, to trigger <color=#FFFFFF>Disorder</color>.\nWhen Alice triggers <color=#F0D12B>Assault</color> on an enemy, her <color=#F0D12B>Physical Anomaly Buildup Rate</color> increases by <color=#2BAD00>12.5%</color> for 30s.",
+                "2": "After any squad member inflicts a <color=#F0D12B>Physical Anomaly</color> on an enemy, Alice deals additional DMG each 0.95s of its active duration, equal to 2.5% of the original Physical Anomaly DMG. If <color=#FFFFFF>Disorder</color> is triggered while the enemy is suffering a <color=#F0D12B>Physical Anomaly</color>, for every 1s of remaining <color=#F0D12B>Physical Anomaly</color> duration, the <color=#FFFFFF>Disorder</color> DMG multiplier increases by 18%, up to a max of {CAL:18*10,1,2}%.\nWhen Alice's attacks hit an enemy, she builds up <color=#FFFFFF>Blade Etiquette</color>. When she triggers an <color=#F0D12B>Assault</color> through Anomaly Buildup, she gains 10 <color=#FFFFFF>Blade Etiquette</color>. <color=#FFFFFF>Blade Etiquette</color> has a maximum of 300, with each 100 being 1 bar.\nWhen the Finishing Move of a three-stage charged <color=#FFFFFF>Basic Attack: Starshine Waltz</color> lands, it triggers a special <color=#F0D12B>Assault</color> effect: <color=#F0D12B>Polarized Assault</color>, dealing {CAL:0+100,1,2}% of the original <color=#F0D12B>Assault</color> DMG, ignoring Anomaly Buildup progress. This can be combined with any Attribute Anomaly, including Physical Anomaly, to trigger <color=#FFFFFF>Disorder</color>.\nWhen Alice triggers <color=#F0D12B>Assault</color> on an enemy, her <color=#F0D12B>Physical Anomaly Buildup Rate</color> increases by <color=#2BAD00>14.6%</color> for 30s.",
+                "3": "After any squad member inflicts a <color=#F0D12B>Physical Anomaly</color> on an enemy, Alice deals additional DMG each 0.95s of its active duration, equal to 2.5% of the original Physical Anomaly DMG. If <color=#FFFFFF>Disorder</color> is triggered while the enemy is suffering a <color=#F0D12B>Physical Anomaly</color>, for every 1s of remaining <color=#F0D12B>Physical Anomaly</color> duration, the <color=#FFFFFF>Disorder</color> DMG multiplier increases by 18%, up to a max of {CAL:18*10,1,2}%.\nWhen Alice's attacks hit an enemy, she builds up <color=#FFFFFF>Blade Etiquette</color>. When she triggers an <color=#F0D12B>Assault</color> through Anomaly Buildup, she gains 10 <color=#FFFFFF>Blade Etiquette</color>. <color=#FFFFFF>Blade Etiquette</color> has a maximum of 300, with each 100 being 1 bar.\nWhen the Finishing Move of a three-stage charged <color=#FFFFFF>Basic Attack: Starshine Waltz</color> lands, it triggers a special <color=#F0D12B>Assault</color> effect: <color=#F0D12B>Polarized Assault</color>, dealing {CAL:0+100,1,2}% of the original <color=#F0D12B>Assault</color> DMG, ignoring Anomaly Buildup progress. This can be combined with any Attribute Anomaly, including Physical Anomaly, to trigger <color=#FFFFFF>Disorder</color>.\nWhen Alice triggers <color=#F0D12B>Assault</color> on an enemy, her <color=#F0D12B>Physical Anomaly Buildup Rate</color> increases by <color=#2BAD00>16.7%</color> for 30s.",
+                "4": "After any squad member inflicts a <color=#F0D12B>Physical Anomaly</color> on an enemy, Alice deals additional DMG each 0.95s of its active duration, equal to 2.5% of the original Physical Anomaly DMG. If <color=#FFFFFF>Disorder</color> is triggered while the enemy is suffering a <color=#F0D12B>Physical Anomaly</color>, for every 1s of remaining <color=#F0D12B>Physical Anomaly</color> duration, the <color=#FFFFFF>Disorder</color> DMG multiplier increases by 18%, up to a max of {CAL:18*10,1,2}%.\nWhen Alice's attacks hit an enemy, she builds up <color=#FFFFFF>Blade Etiquette</color>. When she triggers an <color=#F0D12B>Assault</color> through Anomaly Buildup, she gains 10 <color=#FFFFFF>Blade Etiquette</color>. <color=#FFFFFF>Blade Etiquette</color> has a maximum of 300, with each 100 being 1 bar.\nWhen the Finishing Move of a three-stage charged <color=#FFFFFF>Basic Attack: Starshine Waltz</color> lands, it triggers a special <color=#F0D12B>Assault</color> effect: <color=#F0D12B>Polarized Assault</color>, dealing {CAL:0+100,1,2}% of the original <color=#F0D12B>Assault</color> DMG, ignoring Anomaly Buildup progress. This can be combined with any Attribute Anomaly, including Physical Anomaly, to trigger <color=#FFFFFF>Disorder</color>.\nWhen Alice triggers <color=#F0D12B>Assault</color> on an enemy, her <color=#F0D12B>Physical Anomaly Buildup Rate</color> increases by <color=#2BAD00>18.8%</color> for 30s.",
+                "5": "After any squad member inflicts a <color=#F0D12B>Physical Anomaly</color> on an enemy, Alice deals additional DMG each 0.95s of its active duration, equal to 2.5% of the original Physical Anomaly DMG. If <color=#FFFFFF>Disorder</color> is triggered while the enemy is suffering a <color=#F0D12B>Physical Anomaly</color>, for every 1s of remaining <color=#F0D12B>Physical Anomaly</color> duration, the <color=#FFFFFF>Disorder</color> DMG multiplier increases by 18%, up to a max of {CAL:18*10,1,2}%.\nWhen Alice's attacks hit an enemy, she builds up <color=#FFFFFF>Blade Etiquette</color>. When she triggers an <color=#F0D12B>Assault</color> through Anomaly Buildup, she gains 10 <color=#FFFFFF>Blade Etiquette</color>. <color=#FFFFFF>Blade Etiquette</color> has a maximum of 300, with each 100 being 1 bar.\nWhen the Finishing Move of a three-stage charged <color=#FFFFFF>Basic Attack: Starshine Waltz</color> lands, it triggers a special <color=#F0D12B>Assault</color> effect: <color=#F0D12B>Polarized Assault</color>, dealing {CAL:0+100,1,2}% of the original <color=#F0D12B>Assault</color> DMG, ignoring Anomaly Buildup progress. This can be combined with any Attribute Anomaly, including Physical Anomaly, to trigger <color=#FFFFFF>Disorder</color>.\nWhen Alice triggers <color=#F0D12B>Assault</color> on an enemy, her <color=#F0D12B>Physical Anomaly Buildup Rate</color> increases by <color=#2BAD00>20.8%</color> for 30s.",
+                "6": "After any squad member inflicts a <color=#F0D12B>Physical Anomaly</color> on an enemy, Alice deals additional DMG each 0.95s of its active duration, equal to 2.5% of the original Physical Anomaly DMG. If <color=#FFFFFF>Disorder</color> is triggered while the enemy is suffering a <color=#F0D12B>Physical Anomaly</color>, for every 1s of remaining <color=#F0D12B>Physical Anomaly</color> duration, the <color=#FFFFFF>Disorder</color> DMG multiplier increases by 18%, up to a max of {CAL:18*10,1,2}%.\nWhen Alice's attacks hit an enemy, she builds up <color=#FFFFFF>Blade Etiquette</color>. When she triggers an <color=#F0D12B>Assault</color> through Anomaly Buildup, she gains 10 <color=#FFFFFF>Blade Etiquette</color>. <color=#FFFFFF>Blade Etiquette</color> has a maximum of 300, with each 100 being 1 bar.\nWhen the Finishing Move of a three-stage charged <color=#FFFFFF>Basic Attack: Starshine Waltz</color> lands, it triggers a special <color=#F0D12B>Assault</color> effect: <color=#F0D12B>Polarized Assault</color>, dealing {CAL:0+100,1,2}% of the original <color=#F0D12B>Assault</color> DMG, ignoring Anomaly Buildup progress. This can be combined with any Attribute Anomaly, including Physical Anomaly, to trigger <color=#FFFFFF>Disorder</color>.\nWhen Alice triggers <color=#F0D12B>Assault</color> on an enemy, her <color=#F0D12B>Physical Anomaly Buildup Rate</color> increases by <color=#2BAD00>22.9%</color> for 30s.",
+                "7": "After any squad member inflicts a <color=#F0D12B>Physical Anomaly</color> on an enemy, Alice deals additional DMG each 0.95s of its active duration, equal to 2.5% of the original Physical Anomaly DMG. If <color=#FFFFFF>Disorder</color> is triggered while the enemy is suffering a <color=#F0D12B>Physical Anomaly</color>, for every 1s of remaining <color=#F0D12B>Physical Anomaly</color> duration, the <color=#FFFFFF>Disorder</color> DMG multiplier increases by 18%, up to a max of {CAL:18*10,1,2}%.\nWhen Alice's attacks hit an enemy, she builds up <color=#FFFFFF>Blade Etiquette</color>. When she triggers an <color=#F0D12B>Assault</color> through Anomaly Buildup, she gains 10 <color=#FFFFFF>Blade Etiquette</color>. <color=#FFFFFF>Blade Etiquette</color> has a maximum of 300, with each 100 being 1 bar.\nWhen the Finishing Move of a three-stage charged <color=#FFFFFF>Basic Attack: Starshine Waltz</color> lands, it triggers a special <color=#F0D12B>Assault</color> effect: <color=#F0D12B>Polarized Assault</color>, dealing {CAL:0+100,1,2}% of the original <color=#F0D12B>Assault</color> DMG, ignoring Anomaly Buildup progress. This can be combined with any Attribute Anomaly, including Physical Anomaly, to trigger <color=#FFFFFF>Disorder</color>.\nWhen Alice triggers <color=#F0D12B>Assault</color> on an enemy, her <color=#F0D12B>Physical Anomaly Buildup Rate</color> increases by <color=#2BAD00>25%</color> for 30s."
+            }
+        },
+        "MathSkill": {
+            "Title": "Additional Ability: Mystery Hunt",
+            "Description": "When another character in your squad is an <color=#FFFFFF>Anomaly</color> or <color=#FFFFFF>Support</color> character:\nWhen any squad member triggers <color=#FFFFFF>Disorder</color>, Alice gains 30 <color=#FFFFFF>Blade Etiquette</color>.\nIf Alice's Anomaly Mastery exceeds 140, each additional point grants her 1.6 Anomaly Proficiency.\nUpon entering the battlefield, Alice gains 300 <color=#FFFFFF>Blade Etiquette</color>. This effect can trigger once every 180s in Investigation Zone mode."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "140100001": {
+                "Title": "Basic Attack: Celestial Overture",
+                "Description": "Press <IconMap:Icon_Normal> to activate:\nPerform up to 5 slashes forward, dealing <color=#F0D12B>Physical DMG</color>.\nWhen Alice triggers <color=#F0D12B>Assault</color> through Attribute Anomaly Buildup, the 5th hit of her next <color=#FFFFFF>Basic Attack</color> is enhanced."
+            },
+            "140100002": {
+                "Title": "Basic Attack: Starshine Waltz",
+                "Description": "When Alice's <color=#FFFFFF>Blade Etiquette</color> reaches 1 bar, hold <IconMap:Icon_Normal> to activate:\nHold to charge, expending up to 3 bars of <color=#FFFFFF>Blade Etiquette</color>. Release <IconMap:Icon_Normal> or when <color=#FFFFFF>Blade Etiquette</color> is below 1 bar, Alice performs a series of slashes in an area centered on the target enemy, with the number of hits determined by charge level, dealing massive <color=#F0D12B>Physical DMG</color>.\nWhen the Finishing Move of a three-stage charged <color=#FFFFFF>Basic Attack: Starshine Waltz</color> hits, it triggers a special <color=#F0D12B>Assault</color> effect: <color=#F0D12B>Polarized Assault</color>. This deals DMG equal to {CAL:0+100,1,2}% of the original <color=#F0D12B>Assault</color>, ignoring Anomaly Buildup, and can interact with other Attribute Anomalies, including Physical, to trigger <color=#FFFFFF>Disorder</color>.\n<color=#FFFFFF>Blade Etiquette</color> does not accumulate when hitting an enemy.\nCharacter is invulnerable while using this skill."
+            },
+            "140100015": {
+                "Title": "Basic Attack: Celestial Overture"
+            },
+            "140100016": {
+                "Description": "1st-Hit DMG Multiplier",
+                "Param": "{Skill:1401001, Prop:1001}"
+            },
+            "140100017": {
+                "Description": "2nd-Hit DMG Multiplier",
+                "Param": "{Skill:1401002, Prop:1001}"
+            },
+            "140100018": {
+                "Description": "3rd-Hit DMG Multiplier",
+                "Param": "{Skill:1401003, Prop:1001}"
+            },
+            "140100019": {
+                "Description": "4th-Hit DMG Multiplier",
+                "Param": "{Skill:1401004, Prop:1001}"
+            },
+            "140100020": {
+                "Description": "5th-Hit DMG Multiplier",
+                "Param": "{Skill:1401005, Prop:1001}"
+            },
+            "140100021": {
+                "Description": "5th-Hit (Enhanced) DMG Multiplier",
+                "Param": "{Skill:1401006, Prop:1001}"
+            },
+            "140100022": {
+                "Description": "1st-Hit Daze Multiplier",
+                "Param": "{Skill:1401001, Prop:1002}"
+            },
+            "140100023": {
+                "Description": "2nd-Hit Daze Multiplier",
+                "Param": "{Skill:1401002, Prop:1002}"
+            },
+            "140100024": {
+                "Description": "3rd-Hit Daze Multiplier",
+                "Param": "{Skill:1401003, Prop:1002}"
+            },
+            "140100025": {
+                "Description": "4th-Hit Daze Multiplier",
+                "Param": "{Skill:1401004, Prop:1002}"
+            },
+            "140100026": {
+                "Description": "5th-Hit Daze Multiplier",
+                "Param": "{Skill:1401005, Prop:1002}"
+            },
+            "140100027": {
+                "Description": "5th-Hit (Enhanced) Daze Multiplier",
+                "Param": "{Skill:1401006, Prop:1002}"
+            },
+            "140100028": {
+                "Title": "Basic Attack: Starshine Waltz"
+            },
+            "140100029": {
+                "Description": "One-Staged Charged Attack DMG Multiplier",
+                "Param": "{Skill:1401010, Prop:1001}"
+            },
+            "140100030": {
+                "Description": "Two-Staged Charged Attack DMG Multiplier",
+                "Param": "{Skill:1401011, Prop:1001}"
+            },
+            "140100031": {
+                "Description": "Three-Staged Charged Attack DMG Multiplier",
+                "Param": "{Skill:1401012, Prop:1001}"
+            },
+            "140100032": {
+                "Description": "One-Staged Charged Daze Multiplier",
+                "Param": "{Skill:1401010, Prop:1002}"
+            },
+            "140100033": {
+                "Description": "Two-Staged Charged Daze Multiplier",
+                "Param": "{Skill:1401011, Prop:1002}"
+            },
+            "140100034": {
+                "Description": "Three-Staged Charged Daze Multiplier",
+                "Param": "{Skill:1401012, Prop:1002}"
+            }
+        },
+        "1": {
+            "140100003": {
+                "Title": "Special Attack: Piercing Dawn",
+                "Description": "Press <IconMap:Icon_Special> to activate:\nHurl the blade to strike and pass through enemies ahead, dealing <color=#F0D12B>Physical DMG</color>.\nUpon activating this skill, a <color=#FFFFFF>Perfect Dodge</color> can be triggered.\nAfter triggering a <color=#FFFFFF>Perfect Dodge</color>, press <IconMap:Icon_Normal> to follow up with the 5th hit of a <color=#FFFFFF>Basic Attack</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "140100004": {
+                "Title": "EX Special Attack: Aurora Thrust - Northern Cross",
+                "Description": "With enough energy, drag the {LAYOUT_CONSOLECONTROLLER#stick}{LAYOUT_FALLBACK#joystick} forward and press <IconMap:Icon_SpecialReady> to activate:\nA thrust attack that goes through enemies ahead, dealing massive <color=#F0D12B>Physical DMG</color>.\nActivating the skill can trigger <color=#FFFFFF>Perfect Dodge</color> and restores 10 <color=#FFFFFF>Blade Etiquette</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "140100005": {
+                "Title": "EX Special Attack: Aurora Thrust - Southern Cross",
+                "Description": "With enough energy, and without moving the {LAYOUT_CONSOLECONTROLLER#stick}{LAYOUT_FALLBACK#joystick} or when dragging it backwards, press <IconMap:Icon_SpecialReady> to activate:\nBack away with a slash, then thrust forward, dealing <color=#F0D12B>Physical DMG</color>.\nActivating the skill can trigger <color=#FFFFFF>Perfect Dodge</color> and restores 10 <color=#FFFFFF>Blade Etiquette</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "140100035": {
+                "Title": "Special Attack: Piercing Dawn"
+            },
+            "140100036": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1401008, Prop:1001}"
+            },
+            "140100037": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1401008, Prop:1002}"
+            },
+            "140100038": {
+                "Title": "EX Special Attack: Aurora Thrust - Northern Cross"
+            },
+            "140100039": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1401009, Prop:1001}"
+            },
+            "140100040": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1401009, Prop:1002}"
+            },
+            "140100041": {
+                "Description": "Energy Cost",
+                "Param": "40"
+            },
+            "140100042": {
+                "Title": "EX Special Attack: Aurora Thrust - Southern Cross"
+            },
+            "140100043": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1401007, Prop:1001}"
+            },
+            "140100044": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1401007, Prop:1002}"
+            },
+            "140100045": {
+                "Description": "Energy Cost",
+                "Param": "40"
+            }
+        },
+        "2": {
+            "140100006": {
+                "Title": "Dodge: Jumpy Bunny",
+                "Description": "Press <IconMap:Icon_Evade> to activate:\nA quick dash dodge.\nCharacter is invulnerable while using this skill."
+            },
+            "140100007": {
+                "Title": "Dash Attack: Blade-Dancer's Gale",
+                "Description": "Press <IconMap:Icon_Normal> during a dodge to activate:\nSlashes enemies in front, dealing <color=#F0D12B>Physical DMG</color>."
+            },
+            "140100008": {
+                "Title": "Dodge Counter: Ceremony of Swordlight",
+                "Description": "Press <IconMap:Icon_Normal> during a <color=#FFFFFF>Perfect Dodge</color> to activate:\nSlash and kick enemies in front, dealing <color=#F0D12B>Physical DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "140100046": {
+                "Title": "Dash Attack: Blade-Dancer's Gale"
+            },
+            "140100047": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1401013, Prop:1001}"
+            },
+            "140100048": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1401013, Prop:1002}"
+            },
+            "140100049": {
+                "Title": "Dodge Counter: Ceremony of Swordlight"
+            },
+            "140100050": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1401014, Prop:1001}"
+            },
+            "140100051": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1401014, Prop:1002}"
+            }
+        },
+        "3": {
+            "140100009": {
+                "Title": "Chain Attack: Starfall Intermission",
+                "Description": "When a <color=#FFFFFF>Chain Attack</color> is triggered, select the character to activate:\nUnleashes powerful consecutive slashes at enemies ahead, dealing massive <color=#F0D12B>Physical DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "140100010": {
+                "Title": "Ultimate: Starfall Finale",
+                "Description": "When Decibel Rating is at <color=#FFFFFF>Maximum</color>, press <IconMap:Icon_UltimateReady> to activate:\nUnleashes powerful slashes at enemies in a large area ahead, dealing massive <color=#F0D12B>Physical DMG</color>.\nActivating this skill restores 200 <color=#FFFFFF>Blade Etiquette</color>.\n<color=#FFFFFF>Blade Etiquette</color> does not accumulate when hitting an enemy.\nCharacter is invulnerable while using this skill."
+            },
+            "140100052": {
+                "Title": "Chain Attack: Starfall Intermission"
+            },
+            "140100053": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1401015, Prop:1001}"
+            },
+            "140100054": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1401015, Prop:1002}"
+            },
+            "140100055": {
+                "Title": "Ultimate: Starfall Finale"
+            },
+            "140100056": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1401016, Prop:1001}"
+            },
+            "140100057": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1401016, Prop:1002}"
+            }
+        },
+        "6": {
+            "140100012": {
+                "Title": "Quick Assist: Intertwined Stab",
+                "Description": "When the active character is launched, press <IconMap:Icon_Switch> to activate:\nSlash and kick enemies in front, dealing <color=#F0D12B>Physical DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "140100013": {
+                "Title": "Defensive Assist: Parry Guard",
+                "Description": "When the on-field character is about to be attacked, press <IconMap:Icon_Switch> to activate:\nParries the enemy's attack, dealing massive Daze.\nCharacter is invulnerable while using this skill."
+            },
+            "140100014": {
+                "Title": "Assist Follow-Up: Cross Riposte",
+                "Description": "Press <IconMap:Icon_Normal> after a <color=#FFFFFF>Defensive Assist</color> to activate:\nCharge forward and slash enemies in front, dealing <color=#F0D12B>Physical DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "140100058": {
+                "Title": "Quick Assist: Intertwined Stab"
+            },
+            "140100059": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1401017, Prop:1001}"
+            },
+            "140100060": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1401017, Prop:1002}"
+            },
+            "140100061": {
+                "Title": "Defensive Assist: Parry Guard"
+            },
+            "140100062": {
+                "Description": "Light Defensive Daze Multiplier",
+                "Param": "{Skill:1401018, Prop:1002}"
+            },
+            "140100063": {
+                "Description": "Heavy Defensive Daze Multiplier",
+                "Param": "{Skill:1401019, Prop:1002}"
+            },
+            "140100064": {
+                "Description": "Chain Defensive Daze Multiplier",
+                "Param": "{Skill:1401020, Prop:1002}"
+            },
+            "140100065": {
+                "Title": "Assist Follow-Up: Cross Riposte"
+            },
+            "140100066": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1401021, Prop:1001}"
+            },
+            "140100067": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1401021, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1401001": {
+            "DamageValue": 5510,
+            "DamageGrowth": 510,
+            "DazeValue": 3970,
+            "DazeGrowth": 190
+        },
+        "1401002": {
+            "DamageValue": 8800,
+            "DamageGrowth": 800,
+            "DazeValue": 6980,
+            "DazeGrowth": 320
+        },
+        "1401003": {
+            "DamageValue": 6610,
+            "DamageGrowth": 610,
+            "DazeValue": 5990,
+            "DazeGrowth": 280
+        },
+        "1401004": {
+            "DamageValue": 11190,
+            "DamageGrowth": 1020,
+            "DazeValue": 10510,
+            "DazeGrowth": 480
+        },
+        "1401005": {
+            "DamageValue": 13030,
+            "DamageGrowth": 1190,
+            "DazeValue": 13170,
+            "DazeGrowth": 600
+        },
+        "1401006": {
+            "DamageValue": 21830,
+            "DamageGrowth": 1990,
+            "DazeValue": 21090,
+            "DazeGrowth": 960
+        },
+        "1401007": {
+            "DamageValue": 53200,
+            "DamageGrowth": 4840,
+            "DazeValue": 40530,
+            "DazeGrowth": 1850
+        },
+        "1401008": {
+            "DamageValue": 6240,
+            "DamageGrowth": 570,
+            "DazeValue": 5610,
+            "DazeGrowth": 260
+        },
+        "1401009": {
+            "DamageValue": 46000,
+            "DamageGrowth": 4190,
+            "DazeValue": 34520,
+            "DazeGrowth": 1570
+        },
+        "1401010": {
+            "DamageValue": 18890,
+            "DamageGrowth": 1720,
+            "DazeValue": 5530,
+            "DazeGrowth": 260
+        },
+        "1401011": {
+            "DamageValue": 30440,
+            "DamageGrowth": 2770,
+            "DazeValue": 7760,
+            "DazeGrowth": 360
+        },
+        "1401012": {
+            "DamageValue": 96570,
+            "DamageGrowth": 8780,
+            "DazeValue": 19720,
+            "DazeGrowth": 900
+        },
+        "1401013": {
+            "DamageValue": 7530,
+            "DamageGrowth": 690,
+            "DazeValue": 3390,
+            "DazeGrowth": 160
+        },
+        "1401014": {
+            "DamageValue": 28400,
+            "DamageGrowth": 2590,
+            "DazeValue": 21950,
+            "DazeGrowth": 1000
+        },
+        "1401015": {
+            "DamageValue": 66630,
+            "DamageGrowth": 6060,
+            "DazeValue": 20470,
+            "DazeGrowth": 940
+        },
+        "1401016": {
+            "DamageValue": 226200,
+            "DamageGrowth": 20570,
+            "DazeValue": 24260,
+            "DazeGrowth": 1110
+        },
+        "1401017": {
+            "DamageValue": 16330,
+            "DamageGrowth": 1490,
+            "DazeValue": 14690,
+            "DazeGrowth": 670
+        },
+        "1401018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 24420,
+            "DazeGrowth": 1110
+        },
+        "1401019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 30860,
+            "DazeGrowth": 1410
+        },
+        "1401020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15020,
+            "DazeGrowth": 690
+        },
+        "1401021": {
+            "DamageValue": 33270,
+            "DamageGrowth": 3030,
+            "DazeValue": 25840,
+            "DazeGrowth": 1180
+        },
+        "1401022": {
+            "DamageValue": 72050,
+            "DamageGrowth": 0,
+            "DazeValue": 34650,
+            "DazeGrowth": 0
+        },
+        "1401023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1401024": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1401025": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

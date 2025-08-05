@@ -1,0 +1,472 @@
+{
+    "Name": "爱丽丝",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Talents": {
+        "1": {
+            "Title": "掌心的芫荽",
+            "Description": "爱丽丝触发<color=#F0D12B>[极性强击]</color>时，回复25点<color=#FFFFFF>[剑仪]</color>；爱丽丝触发<color=#F0D12B>[强击]</color>时，目标的防御力降低20%，持续30秒。",
+            "Lore": "一株芫荽摇曳如新生的绿星，\n指尖仿佛下一秒便能将它穿透。\n她摊开微微颤抖的双手，\n将那丝悸动拥入掌心。\n少女的心跳如雨后晨曦破土的春芽。"
+        },
+        "2": {
+            "Title": "剑尖的鼠尾草",
+            "Description": "<color=#FFFFFF>[终结技：星芒终章]</color>的终结一击命中敌人时，触发<color=#F0D12B>[极性强击]</color>；全队角色造成的<color=#F0D12B>[强击]</color>伤害提升15%；<color=#F0D12B>物理异常状态</color>下的敌人被结算的<color=#FFFFFF>[紊乱]</color>伤害提升15%；进入战场时，爱丽丝立刻获得1000点喧响值，在勘域模式中此效果180秒内最多触发一次。",
+            "Lore": "银色的剑尖低吻着鼠尾草叶上的霜痕，\n战前的行礼是少女余裕的体现。\n恐惧与无力已被冰封于昨日的故梦中，\n佩剑跃动着，将要勾勒出繁星的轮廓。\n破晓就要到来，花蕾等待着盛开。"
+        },
+        "3": {
+            "Title": "对称主义",
+            "Description": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[连携技]</color> 技能等级+2",
+            "Lore": "她无法拒绝完美的对称。\n对称之中，存在着秩序与规律。若看不到对称，她的兔耳和尾巴将会丧失柔顺与光泽，仿佛美好的事物下一秒就会离她而去。\n「所以…这就是你非得提我的堆堆袜，还想卸掉我腿环的理由？」\n「我实在受不了你的不对称啦！就一下，我保证就一下！」"
+        },
+        "4": {
+            "Title": "唇间的迷迭香",
+            "Description": "爱丽丝无视目标10%<color=#F0D12B>物理伤害抗性</color>；强化后的<color=#FFFFFF>[普通攻击：星仪序曲]</color>累积的<color=#F0D12B>物理异常积蓄值</color>提升25%。",
+            "Lore": "双唇间残留着迷迭香的香气，\n誓言滚烫且坚定，烙印于吐出的白息之中。\n纵使吸入肺内的空气冰冷而沉重，\n少女也绝不会忘却名为爱的咒语。\n「以泰姆菲尔德之名…我绝不背弃。」"
+        },
+        "5": {
+            "Title": "灵异渴求",
+            "Description": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[连携技]</color> 技能等级+2",
+            "Lore": "她无法拒绝恐怖的灵异。\n灵异之中，隐藏着未知与危险。若能感受到灵异，她的兔耳和尾巴都会在战栗中炸毛，却又在平复过后欲罢不能地变得更加顺滑。\n「所以…这就是你每回怪谈冒险明明怕得要死，还是要紧跟着我的理由？」\n「我只是好奇会发生什么…但是好恐怖，我已经后悔了！就一次，下次绝对不来了！」"
+        },
+        "6": {
+            "Title": "心中的百里香",
+            "Description": "爱丽丝发动三段蓄力的<color=#FFFFFF>[普通攻击：星芒圆舞曲]</color>或<color=#FFFFFF>[终结技：星芒终章]</color>时，进入<color=#FFFFFF>[决胜状态]</color>，持续30秒，在持续期间，队伍中任意角色攻击命中目标后的短时间内，爱丽丝对目标发动1次额外攻击，造成等同于爱丽丝3300%异常精通的物理伤害，必定暴击，该效果1秒内最多触发一次，最多触发6次，再次获得<color=#FFFFFF>[决胜状态]</color>时刷新可触发次数。",
+            "Lore": "百里香漫放的那片庄园，\n天体观测的那个夜晚，\n知晓勇气为何物的那个瞬间。\n熏风驱散了乌云，阳光掩盖了水晶灯的华彩，\n少女向往日轻轻行了个礼。\n她缓缓消失在百里香的花田。"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "核心被动：剑心双虹",
+            "DescriptionByLevel": {
+                "1": "队伍中任意角色对敌人施加<color=#F0D12B>物理异常状态</color>后，在异常状态的持续期间，爱丽丝每0.95秒对其额外造成基于该物理异常伤害比例2.5%的伤害，并使<color=#F0D12B>物理异常状态</color>下的敌人被触发<color=#FFFFFF>[紊乱]</color>效果时，每有1秒<color=#F0D12B>物理异常状态</color>剩余时间，<color=#FFFFFF>[紊乱]</color>效果的伤害倍率提升18%，最多提升{CAL:18*10,1,2}%；\n爱丽丝攻击命中敌人时，累积<color=#FFFFFF>[剑仪]</color>，爱丽丝通过属性异常积蓄触发<color=#F0D12B>[强击]</color>时，回复10点<color=#FFFFFF>[剑仪]</color>，<color=#FFFFFF>[剑仪]</color>的上限为300点，每100点为1格；\n三段蓄力的<color=#FFFFFF>[普通攻击：星芒圆舞曲]</color>的终结一击命中敌人时，触发特殊的<color=#F0D12B>[强击]</color>效果<color=#F0D12B>[极性强击]</color>，无视属性积蓄进度造成一次原本<color=#F0D12B>[强击]</color>效果{CAL:0+100,1,2}%的伤害，并可以与包括物理异常效果在内的其他属性异常效果互相结算<color=#FFFFFF>[紊乱]</color>；\n爱丽丝触发<color=#F0D12B>[强击]</color>时，<color=#F0D12B>物理异常积蓄效率</color>提升<color=#2BAD00>12.5%</color>，持续30秒。",
+                "2": "队伍中任意角色对敌人施加<color=#F0D12B>物理异常状态</color>后，在异常状态的持续期间，爱丽丝每0.95秒对其额外造成基于该物理异常伤害比例2.5%的伤害，并使<color=#F0D12B>物理异常状态</color>下的敌人被触发<color=#FFFFFF>[紊乱]</color>效果时，每有1秒<color=#F0D12B>物理异常状态</color>剩余时间，<color=#FFFFFF>[紊乱]</color>效果的伤害倍率提升18%，最多提升{CAL:18*10,1,2}%；\n爱丽丝攻击命中敌人时，累积<color=#FFFFFF>[剑仪]</color>，爱丽丝通过属性异常积蓄触发<color=#F0D12B>[强击]</color>时，回复10点<color=#FFFFFF>[剑仪]</color>，<color=#FFFFFF>[剑仪]</color>的上限为300点，每100点为1格；\n三段蓄力的<color=#FFFFFF>[普通攻击：星芒圆舞曲]</color>的终结一击命中敌人时，触发特殊的<color=#F0D12B>[强击]</color>效果<color=#F0D12B>[极性强击]</color>，无视属性积蓄进度造成一次原本<color=#F0D12B>[强击]</color>效果{CAL:0+100,1,2}%的伤害，并可以与包括物理异常效果在内的其他属性异常效果互相结算<color=#FFFFFF>[紊乱]</color>；\n爱丽丝触发<color=#F0D12B>[强击]</color>时，<color=#F0D12B>物理异常积蓄效率</color>提升<color=#2BAD00>14.6%</color>，持续30秒。",
+                "3": "队伍中任意角色对敌人施加<color=#F0D12B>物理异常状态</color>后，在异常状态的持续期间，爱丽丝每0.95秒对其额外造成基于该物理异常伤害比例2.5%的伤害，并使<color=#F0D12B>物理异常状态</color>下的敌人被触发<color=#FFFFFF>[紊乱]</color>效果时，每有1秒<color=#F0D12B>物理异常状态</color>剩余时间，<color=#FFFFFF>[紊乱]</color>效果的伤害倍率提升18%，最多提升{CAL:18*10,1,2}%；\n爱丽丝攻击命中敌人时，累积<color=#FFFFFF>[剑仪]</color>，爱丽丝通过属性异常积蓄触发<color=#F0D12B>[强击]</color>时，回复10点<color=#FFFFFF>[剑仪]</color>，<color=#FFFFFF>[剑仪]</color>的上限为300点，每100点为1格；\n三段蓄力的<color=#FFFFFF>[普通攻击：星芒圆舞曲]</color>的终结一击命中敌人时，触发特殊的<color=#F0D12B>[强击]</color>效果<color=#F0D12B>[极性强击]</color>，无视属性积蓄进度造成一次原本<color=#F0D12B>[强击]</color>效果{CAL:0+100,1,2}%的伤害，并可以与包括物理异常效果在内的其他属性异常效果互相结算<color=#FFFFFF>[紊乱]</color>；\n爱丽丝触发<color=#F0D12B>[强击]</color>时，<color=#F0D12B>物理异常积蓄效率</color>提升<color=#2BAD00>16.7%</color>，持续30秒。",
+                "4": "队伍中任意角色对敌人施加<color=#F0D12B>物理异常状态</color>后，在异常状态的持续期间，爱丽丝每0.95秒对其额外造成基于该物理异常伤害比例2.5%的伤害，并使<color=#F0D12B>物理异常状态</color>下的敌人被触发<color=#FFFFFF>[紊乱]</color>效果时，每有1秒<color=#F0D12B>物理异常状态</color>剩余时间，<color=#FFFFFF>[紊乱]</color>效果的伤害倍率提升18%，最多提升{CAL:18*10,1,2}%；\n爱丽丝攻击命中敌人时，累积<color=#FFFFFF>[剑仪]</color>，爱丽丝通过属性异常积蓄触发<color=#F0D12B>[强击]</color>时，回复10点<color=#FFFFFF>[剑仪]</color>，<color=#FFFFFF>[剑仪]</color>的上限为300点，每100点为1格；\n三段蓄力的<color=#FFFFFF>[普通攻击：星芒圆舞曲]</color>的终结一击命中敌人时，触发特殊的<color=#F0D12B>[强击]</color>效果<color=#F0D12B>[极性强击]</color>，无视属性积蓄进度造成一次原本<color=#F0D12B>[强击]</color>效果{CAL:0+100,1,2}%的伤害，并可以与包括物理异常效果在内的其他属性异常效果互相结算<color=#FFFFFF>[紊乱]</color>；\n爱丽丝触发<color=#F0D12B>[强击]</color>时，<color=#F0D12B>物理异常积蓄效率</color>提升<color=#2BAD00>18.8%</color>，持续30秒。",
+                "5": "队伍中任意角色对敌人施加<color=#F0D12B>物理异常状态</color>后，在异常状态的持续期间，爱丽丝每0.95秒对其额外造成基于该物理异常伤害比例2.5%的伤害，并使<color=#F0D12B>物理异常状态</color>下的敌人被触发<color=#FFFFFF>[紊乱]</color>效果时，每有1秒<color=#F0D12B>物理异常状态</color>剩余时间，<color=#FFFFFF>[紊乱]</color>效果的伤害倍率提升18%，最多提升{CAL:18*10,1,2}%；\n爱丽丝攻击命中敌人时，累积<color=#FFFFFF>[剑仪]</color>，爱丽丝通过属性异常积蓄触发<color=#F0D12B>[强击]</color>时，回复10点<color=#FFFFFF>[剑仪]</color>，<color=#FFFFFF>[剑仪]</color>的上限为300点，每100点为1格；\n三段蓄力的<color=#FFFFFF>[普通攻击：星芒圆舞曲]</color>的终结一击命中敌人时，触发特殊的<color=#F0D12B>[强击]</color>效果<color=#F0D12B>[极性强击]</color>，无视属性积蓄进度造成一次原本<color=#F0D12B>[强击]</color>效果{CAL:0+100,1,2}%的伤害，并可以与包括物理异常效果在内的其他属性异常效果互相结算<color=#FFFFFF>[紊乱]</color>；\n爱丽丝触发<color=#F0D12B>[强击]</color>时，<color=#F0D12B>物理异常积蓄效率</color>提升<color=#2BAD00>20.8%</color>，持续30秒。",
+                "6": "队伍中任意角色对敌人施加<color=#F0D12B>物理异常状态</color>后，在异常状态的持续期间，爱丽丝每0.95秒对其额外造成基于该物理异常伤害比例2.5%的伤害，并使<color=#F0D12B>物理异常状态</color>下的敌人被触发<color=#FFFFFF>[紊乱]</color>效果时，每有1秒<color=#F0D12B>物理异常状态</color>剩余时间，<color=#FFFFFF>[紊乱]</color>效果的伤害倍率提升18%，最多提升{CAL:18*10,1,2}%；\n爱丽丝攻击命中敌人时，累积<color=#FFFFFF>[剑仪]</color>，爱丽丝通过属性异常积蓄触发<color=#F0D12B>[强击]</color>时，回复10点<color=#FFFFFF>[剑仪]</color>，<color=#FFFFFF>[剑仪]</color>的上限为300点，每100点为1格；\n三段蓄力的<color=#FFFFFF>[普通攻击：星芒圆舞曲]</color>的终结一击命中敌人时，触发特殊的<color=#F0D12B>[强击]</color>效果<color=#F0D12B>[极性强击]</color>，无视属性积蓄进度造成一次原本<color=#F0D12B>[强击]</color>效果{CAL:0+100,1,2}%的伤害，并可以与包括物理异常效果在内的其他属性异常效果互相结算<color=#FFFFFF>[紊乱]</color>；\n爱丽丝触发<color=#F0D12B>[强击]</color>时，<color=#F0D12B>物理异常积蓄效率</color>提升<color=#2BAD00>22.9%</color>，持续30秒。",
+                "7": "队伍中任意角色对敌人施加<color=#F0D12B>物理异常状态</color>后，在异常状态的持续期间，爱丽丝每0.95秒对其额外造成基于该物理异常伤害比例2.5%的伤害，并使<color=#F0D12B>物理异常状态</color>下的敌人被触发<color=#FFFFFF>[紊乱]</color>效果时，每有1秒<color=#F0D12B>物理异常状态</color>剩余时间，<color=#FFFFFF>[紊乱]</color>效果的伤害倍率提升18%，最多提升{CAL:18*10,1,2}%；\n爱丽丝攻击命中敌人时，累积<color=#FFFFFF>[剑仪]</color>，爱丽丝通过属性异常积蓄触发<color=#F0D12B>[强击]</color>时，回复10点<color=#FFFFFF>[剑仪]</color>，<color=#FFFFFF>[剑仪]</color>的上限为300点，每100点为1格；\n三段蓄力的<color=#FFFFFF>[普通攻击：星芒圆舞曲]</color>的终结一击命中敌人时，触发特殊的<color=#F0D12B>[强击]</color>效果<color=#F0D12B>[极性强击]</color>，无视属性积蓄进度造成一次原本<color=#F0D12B>[强击]</color>效果{CAL:0+100,1,2}%的伤害，并可以与包括物理异常效果在内的其他属性异常效果互相结算<color=#FFFFFF>[紊乱]</color>；\n爱丽丝触发<color=#F0D12B>[强击]</color>时，<color=#F0D12B>物理异常积蓄效率</color>提升<color=#2BAD00>25%</color>，持续30秒。"
+            }
+        },
+        "MathSkill": {
+            "Title": "额外能力：寻奇猎幽",
+            "Description": "队伍中存在另一名<color=#FFFFFF>[异常]</color>或<color=#FFFFFF>[支援]</color>角色时触发：\n队伍中任意角色触发<color=#FFFFFF>[紊乱]</color>效果时，爱丽丝回复30点<color=#FFFFFF>[剑仪]</color>；\n若爱丽丝的异常掌控大于140点，每超过1点异常掌控会提升1.6点异常精通；\n进入战场时，爱丽丝获得300点<color=#FFFFFF>[剑仪]</color>，在勘域模式中此效果180秒内最多触发一次。"
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "140100001": {
+                "Title": "普通攻击：星仪序曲",
+                "Description": "点按 <IconMap:Icon_Normal> 发动：\n向前方进行至多五段的斩击，造成<color=#F0D12B>物理伤害</color>；\n爱丽丝通过属性异常积蓄触发<color=#F0D12B>[强击]</color>时，下一次发动的<color=#FFFFFF>[普通攻击]</color>第五段获得强化。"
+            },
+            "140100002": {
+                "Title": "普通攻击：星芒圆舞曲",
+                "Description": "爱丽丝的<color=#FFFFFF>[剑仪]</color>达到1格时，长按 <IconMap:Icon_Normal> 发动：\n长按进入蓄力，消耗至多3格<color=#FFFFFF>[剑仪]</color>，松开 <IconMap:Icon_Normal> 或<color=#FFFFFF>[剑仪]</color>不满1格时，爱丽丝将根据当前蓄力段数以目标敌人为中心发动多段斩击，造成大量<color=#F0D12B>物理伤害</color>；\n三段蓄力的<color=#FFFFFF>[普通攻击：星芒圆舞曲]</color>的终结一击命中敌人时，触发特殊的<color=#F0D12B>[强击]</color>效果<color=#F0D12B>[极性强击]</color>，无视属性积蓄进度造成一次原本<color=#F0D12B>[强击]</color>效果{CAL:0+100,1,2}%的伤害，并可以与包括物理异常效果在内的其他属性异常效果互相结算<color=#FFFFFF>[紊乱]</color>；\n命中敌人时，不累积<color=#FFFFFF>[剑仪]</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "140100015": {
+                "Title": "普通攻击：星仪序曲"
+            },
+            "140100016": {
+                "Description": "一段伤害倍率",
+                "Param": "{Skill:1401001, Prop:1001}"
+            },
+            "140100017": {
+                "Description": "二段伤害倍率",
+                "Param": "{Skill:1401002, Prop:1001}"
+            },
+            "140100018": {
+                "Description": "三段伤害倍率",
+                "Param": "{Skill:1401003, Prop:1001}"
+            },
+            "140100019": {
+                "Description": "四段伤害倍率",
+                "Param": "{Skill:1401004, Prop:1001}"
+            },
+            "140100020": {
+                "Description": "五段伤害倍率",
+                "Param": "{Skill:1401005, Prop:1001}"
+            },
+            "140100021": {
+                "Description": "五段（强化）伤害倍率",
+                "Param": "{Skill:1401006, Prop:1001}"
+            },
+            "140100022": {
+                "Description": "一段失衡倍率",
+                "Param": "{Skill:1401001, Prop:1002}"
+            },
+            "140100023": {
+                "Description": "二段失衡倍率",
+                "Param": "{Skill:1401002, Prop:1002}"
+            },
+            "140100024": {
+                "Description": "三段失衡倍率",
+                "Param": "{Skill:1401003, Prop:1002}"
+            },
+            "140100025": {
+                "Description": "四段失衡倍率",
+                "Param": "{Skill:1401004, Prop:1002}"
+            },
+            "140100026": {
+                "Description": "五段失衡倍率",
+                "Param": "{Skill:1401005, Prop:1002}"
+            },
+            "140100027": {
+                "Description": "五段（强化）失衡倍率",
+                "Param": "{Skill:1401006, Prop:1002}"
+            },
+            "140100028": {
+                "Title": "普通攻击：星芒圆舞曲"
+            },
+            "140100029": {
+                "Description": "一段蓄力伤害倍率",
+                "Param": "{Skill:1401010, Prop:1001}"
+            },
+            "140100030": {
+                "Description": "二段蓄力伤害倍率",
+                "Param": "{Skill:1401011, Prop:1001}"
+            },
+            "140100031": {
+                "Description": "三段蓄力伤害倍率",
+                "Param": "{Skill:1401012, Prop:1001}"
+            },
+            "140100032": {
+                "Description": "一段蓄力失衡倍率",
+                "Param": "{Skill:1401010, Prop:1002}"
+            },
+            "140100033": {
+                "Description": "二段蓄力失衡倍率",
+                "Param": "{Skill:1401011, Prop:1002}"
+            },
+            "140100034": {
+                "Description": "三段蓄力失衡倍率",
+                "Param": "{Skill:1401012, Prop:1002}"
+            }
+        },
+        "1": {
+            "140100003": {
+                "Title": "特殊技：破晓突刺",
+                "Description": "点按 <IconMap:Icon_Special> 发动：\n丢出剑攻击并穿过前方敌人，造成<color=#F0D12B>物理伤害</color>；\n招式发动时可以触发<color=#FFFFFF>[极限闪避]</color>；\n触发<color=#FFFFFF>[极限闪避]</color>后，点按 <IconMap:Icon_Normal> 可以衔接发动第五段<color=#FFFFFF>[普通攻击]</color>；\n招式发动期间抗打断等级提升。"
+            },
+            "140100004": {
+                "Title": "强化特殊技：极光突刺·北十字",
+                "Description": "能量足够时，向前拖曳{LAYOUT_CONSOLECONTROLLER#操作杆}{LAYOUT_FALLBACK#摇杆}并点按 <IconMap:Icon_SpecialReady> 发动：\n突刺攻击并穿过前方敌人，造成大量<color=#F0D12B>物理伤害</color>；\n招式发动时可以触发<color=#FFFFFF>[极限闪避]</color>，并回复10点<color=#FFFFFF>[剑仪]</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "140100005": {
+                "Title": "强化特殊技：极光突刺·南十字",
+                "Description": "能量足够时，不拖曳或者向后方拖曳{LAYOUT_CONSOLECONTROLLER#操作杆}{LAYOUT_FALLBACK#摇杆}并点按 <IconMap:Icon_SpecialReady> 发动：\n后退并发动斩击随后向前穿刺，造成<color=#F0D12B>物理伤害</color>；\n招式发动时可以触发<color=#FFFFFF>[极限闪避]</color>，并回复10点<color=#FFFFFF>[剑仪]</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "140100035": {
+                "Title": "特殊技：破晓突刺"
+            },
+            "140100036": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1401008, Prop:1001}"
+            },
+            "140100037": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1401008, Prop:1002}"
+            },
+            "140100038": {
+                "Title": "强化特殊技：极光突刺·北十字"
+            },
+            "140100039": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1401009, Prop:1001}"
+            },
+            "140100040": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1401009, Prop:1002}"
+            },
+            "140100041": {
+                "Description": "能量消耗",
+                "Param": "40点"
+            },
+            "140100042": {
+                "Title": "强化特殊技：极光突刺·南十字"
+            },
+            "140100043": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1401007, Prop:1001}"
+            },
+            "140100044": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1401007, Prop:1002}"
+            },
+            "140100045": {
+                "Description": "能量消耗",
+                "Param": "40点"
+            }
+        },
+        "2": {
+            "140100006": {
+                "Title": "闪避：动若脱兔",
+                "Description": "点按 <IconMap:Icon_Evade> 发动：\n快速的冲刺闪避；\n招式发动期间拥有无敌效果。"
+            },
+            "140100007": {
+                "Title": "冲刺攻击：剑舞之风",
+                "Description": "闪避时，点按 <IconMap:Icon_Normal> 发动：\n向前方进行斩击，造成<color=#F0D12B>物理伤害</color>。"
+            },
+            "140100008": {
+                "Title": "闪避反击：剑闪之仪",
+                "Description": "触发<color=#FFFFFF>[极限闪避]</color>后，点按 <IconMap:Icon_Normal> 发动：\n对前方敌人发动斩击和踢击，造成<color=#F0D12B>物理伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "140100046": {
+                "Title": "冲刺攻击：剑舞之风"
+            },
+            "140100047": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1401013, Prop:1001}"
+            },
+            "140100048": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1401013, Prop:1002}"
+            },
+            "140100049": {
+                "Title": "闪避反击：剑闪之仪"
+            },
+            "140100050": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1401014, Prop:1001}"
+            },
+            "140100051": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1401014, Prop:1002}"
+            }
+        },
+        "3": {
+            "140100009": {
+                "Title": "连携技：星落间章",
+                "Description": "触发<color=#FFFFFF>[连携技]</color>时，选择对应角色发动：\n对前方敌人发动强力多段斩击，造成大量<color=#F0D12B>物理伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "140100010": {
+                "Title": "终结技：星芒终章",
+                "Description": "喧响等级达到<color=#FFFFFF>[极]</color>时，点按 <IconMap:Icon_UltimateReady> 发动：\n对前方大范围敌人发动强力多段斩击，造成大量<color=#F0D12B>物理伤害</color>；\n招式发动时，回复200点<color=#FFFFFF>[剑仪]</color>；\n命中敌人时，不累积<color=#FFFFFF>[剑仪]</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "140100052": {
+                "Title": "连携技：星落间章"
+            },
+            "140100053": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1401015, Prop:1001}"
+            },
+            "140100054": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1401015, Prop:1002}"
+            },
+            "140100055": {
+                "Title": "终结技：星芒终章"
+            },
+            "140100056": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1401016, Prop:1001}"
+            },
+            "140100057": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1401016, Prop:1002}"
+            }
+        },
+        "6": {
+            "140100012": {
+                "Title": "快速支援：交替穿刺",
+                "Description": "当前操作中的角色被击飞时，点按 <IconMap:Icon_Switch> 发动：\n对前方敌人发动斩击和踢击，造成<color=#F0D12B>物理伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "140100013": {
+                "Title": "招架支援：对抗防守",
+                "Description": "前场角色即将被攻击时，点按 <IconMap:Icon_Switch> 发动：\n招架敌人的攻击，累积大量失衡值；\n招式发动期间拥有无敌效果。"
+            },
+            "140100014": {
+                "Title": "支援突击：交叉还击",
+                "Description": "发动<color=#FFFFFF>[招架支援]</color>后，点按 <IconMap:Icon_Normal> 发动：\n对前方敌人发动突进斩击，造成<color=#F0D12B>物理伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "140100058": {
+                "Title": "快速支援：交替穿刺"
+            },
+            "140100059": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1401017, Prop:1001}"
+            },
+            "140100060": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1401017, Prop:1002}"
+            },
+            "140100061": {
+                "Title": "招架支援：对抗防守"
+            },
+            "140100062": {
+                "Description": "轻招架失衡倍率",
+                "Param": "{Skill:1401018, Prop:1002}"
+            },
+            "140100063": {
+                "Description": "重招架失衡倍率",
+                "Param": "{Skill:1401019, Prop:1002}"
+            },
+            "140100064": {
+                "Description": "连续招架失衡倍率",
+                "Param": "{Skill:1401020, Prop:1002}"
+            },
+            "140100065": {
+                "Title": "支援突击：交叉还击"
+            },
+            "140100066": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1401021, Prop:1001}"
+            },
+            "140100067": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1401021, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1401001": {
+            "DamageValue": 5510,
+            "DamageGrowth": 510,
+            "DazeValue": 3970,
+            "DazeGrowth": 190
+        },
+        "1401002": {
+            "DamageValue": 8800,
+            "DamageGrowth": 800,
+            "DazeValue": 6980,
+            "DazeGrowth": 320
+        },
+        "1401003": {
+            "DamageValue": 6610,
+            "DamageGrowth": 610,
+            "DazeValue": 5990,
+            "DazeGrowth": 280
+        },
+        "1401004": {
+            "DamageValue": 11190,
+            "DamageGrowth": 1020,
+            "DazeValue": 10510,
+            "DazeGrowth": 480
+        },
+        "1401005": {
+            "DamageValue": 13030,
+            "DamageGrowth": 1190,
+            "DazeValue": 13170,
+            "DazeGrowth": 600
+        },
+        "1401006": {
+            "DamageValue": 21830,
+            "DamageGrowth": 1990,
+            "DazeValue": 21090,
+            "DazeGrowth": 960
+        },
+        "1401007": {
+            "DamageValue": 53200,
+            "DamageGrowth": 4840,
+            "DazeValue": 40530,
+            "DazeGrowth": 1850
+        },
+        "1401008": {
+            "DamageValue": 6240,
+            "DamageGrowth": 570,
+            "DazeValue": 5610,
+            "DazeGrowth": 260
+        },
+        "1401009": {
+            "DamageValue": 46000,
+            "DamageGrowth": 4190,
+            "DazeValue": 34520,
+            "DazeGrowth": 1570
+        },
+        "1401010": {
+            "DamageValue": 18890,
+            "DamageGrowth": 1720,
+            "DazeValue": 5530,
+            "DazeGrowth": 260
+        },
+        "1401011": {
+            "DamageValue": 30440,
+            "DamageGrowth": 2770,
+            "DazeValue": 7760,
+            "DazeGrowth": 360
+        },
+        "1401012": {
+            "DamageValue": 96570,
+            "DamageGrowth": 8780,
+            "DazeValue": 19720,
+            "DazeGrowth": 900
+        },
+        "1401013": {
+            "DamageValue": 7530,
+            "DamageGrowth": 690,
+            "DazeValue": 3390,
+            "DazeGrowth": 160
+        },
+        "1401014": {
+            "DamageValue": 28400,
+            "DamageGrowth": 2590,
+            "DazeValue": 21950,
+            "DazeGrowth": 1000
+        },
+        "1401015": {
+            "DamageValue": 66630,
+            "DamageGrowth": 6060,
+            "DazeValue": 20470,
+            "DazeGrowth": 940
+        },
+        "1401016": {
+            "DamageValue": 226200,
+            "DamageGrowth": 20570,
+            "DazeValue": 24260,
+            "DazeGrowth": 1110
+        },
+        "1401017": {
+            "DamageValue": 16330,
+            "DamageGrowth": 1490,
+            "DazeValue": 14690,
+            "DazeGrowth": 670
+        },
+        "1401018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 24420,
+            "DazeGrowth": 1110
+        },
+        "1401019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 30860,
+            "DazeGrowth": 1410
+        },
+        "1401020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15020,
+            "DazeGrowth": 690
+        },
+        "1401021": {
+            "DamageValue": 33270,
+            "DamageGrowth": 3030,
+            "DazeValue": 25840,
+            "DazeGrowth": 1180
+        },
+        "1401022": {
+            "DamageValue": 72050,
+            "DamageGrowth": 0,
+            "DazeValue": 34650,
+            "DazeGrowth": 0
+        },
+        "1401023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1401024": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1401025": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

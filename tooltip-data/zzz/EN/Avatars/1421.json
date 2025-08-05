@@ -21,7 +21,7 @@
         },
         "4": {
             "Title": "First-Class Head Chef",
-            "Description": "When <color=#FFFFFF>Ultimate: A Feast Fit for an Emperor!</color> heals all squad members, the HP recovery is increased by 25%, and the healing over time effect is increased by 25%. On activating <color=#FFFFFF>Ultimate: A Feast Fit for an Emperor!</color>, gain the <color=#FFFFFF>Backup Provisions</color> effect. Whenever any character in the squad loses HP, consume the <color=#FFFFFF>Backup Provisions</color> effect to instantly restore 50% of the HP recovered with Ultimate: A Feast Fit for an Emperor!'s instant HP recovery effect. This effect cannot stack.",
+            "Description": "When <color=#FFFFFF>Ultimate: A Feast Fit for an Emperor!</color> heals all squad members, the HP recovery is increased by 25%, and the healing over time effect is increased by 25%. On activating <color=#FFFFFF>Ultimate: A Feast Fit for an Emperor!</color>, gain the <color=#FFFFFF>Backup Provisions</color> effect. Whenever any character in the squad loses HP, consume the <color=#FFFFFF>Backup Provisions</color> effect to instantly restore 50% of the HP recovered with <color=#FFFFFF>Ultimate: A Feast Fit for an Emperor!</color>'s instant HP recovery effect. This effect does not stack.",
             "Lore": "The first time he cooked, he nearly set the stove on fire. Among those who rushed to help was a chef who, looking at the pile of burnt food, used the unused eggs to make him a plate of fried rice.\nHe wolfed it down with tears in his eyes. When he finally looked up, the cook was holding out a slip of paper with \"100\" written on it.\n\"I understand, Master! You're teaching me in cooking, you have to give it 100%, right?\" \"No, I'm saying it's 100 Dennies per bite, and you've had over a hundred bites. Time to pay up.\"\nFrom that day on, Pan Yinhu insisted on cooking for himself and never messed up again. And that's how a first-class chef was born."
         },
         "5": {
@@ -50,7 +50,7 @@
         },
         "MathSkill": {
             "Title": "Additional Ability: Iron Stomach",
-            "Description": "When another character in your squad is a <color=#FFFFFF>Rupture</color> character or shares the same Faction:\nWhen Pan Yinhu hits an enemy with <color=#FFFFFF>Special Attack: Touch of Death</color>, the enemy suffers the Depleted Qi effect, increasing all DMG against the target by 20%. Each hit of <color=#FFFFFF>Special Attack: Touch of Death</color> inflicts a 10s <color=#FFFFFF>Depleted Qi</color> effect. This effect can't stack, but repeated hits on the same enemy will extend the duration."
+            "Description": "When another character in your squad is a <color=#FFFFFF>Rupture</color> character or shares the same Faction:\nWhen Pan Yinhu hits an enemy with <color=#FFFFFF>Special Attack: Touch of Death</color>, the enemy suffers the <color=#FFFFFF>Depleted Qi</color> effect, increasing DMG from all units against the target by 20%. Each hit of <color=#FFFFFF>Special Attack: Touch of Death</color> inflicts a 10s <color=#FFFFFF>Depleted Qi</color> effect. This effect does not stack, but repeated hits on the same enemy will extend the duration."
         }
     },
     "SkillDescriptions": {
@@ -228,6 +228,14 @@
             "142100048": {
                 "Description": "Daze Multiplier",
                 "Param": "{Skill:1421013, Prop:1002}"
+            },
+            "142100049": {
+                "Description": "HP Recovery",
+                "Param": "{CAL:100+AvatarSkillLevel(3)*60,1,2}"
+            },
+            "142100050": {
+                "Description": "Percent HP Recovered Per Second",
+                "Param": "{CAL:0.8+AvatarSkillLevel(3)*0.05,1,2}%"
             }
         },
         "6": {
@@ -243,40 +251,40 @@
                 "Title": "Assist Follow-Up: Ride the Momentum",
                 "Description": "Press <IconMap:Icon_Normal> after a <color=#FFFFFF>Defensive Assist</color> to activate:\nPerform a melee attack on enemies in front, dealing <color=#F0D12B>Physical DMG</color>.\nCharacter is invulnerable while using this skill."
             },
-            "142100049": {
+            "142100051": {
                 "Title": "Quick Assist: Lift Your Gaze to Good Fortune"
             },
-            "142100050": {
+            "142100052": {
                 "Description": "DMG Multiplier",
                 "Param": "{Skill:1421014, Prop:1001}"
             },
-            "142100051": {
+            "142100053": {
                 "Description": "Daze Multiplier",
                 "Param": "{Skill:1421014, Prop:1002}"
             },
-            "142100052": {
+            "142100054": {
                 "Title": "Defensive Assist: Intimidating Presence"
             },
-            "142100053": {
+            "142100055": {
                 "Description": "Light Defensive Daze Multiplier",
                 "Param": "{Skill:1421015, Prop:1002}"
             },
-            "142100054": {
+            "142100056": {
                 "Description": "Heavy Defensive Daze Multiplier",
                 "Param": "{Skill:1421016, Prop:1002}"
             },
-            "142100055": {
+            "142100057": {
                 "Description": "Chain Defensive Daze Multiplier",
                 "Param": "{Skill:1421017, Prop:1002}"
             },
-            "142100056": {
+            "142100058": {
                 "Title": "Assist Follow-Up: Ride the Momentum"
             },
-            "142100057": {
+            "142100059": {
                 "Description": "DMG Multiplier",
                 "Param": "{Skill:1421018, Prop:1001}"
             },
-            "142100058": {
+            "142100060": {
                 "Description": "Daze Multiplier",
                 "Param": "{Skill:1421018, Prop:1002}"
             }
