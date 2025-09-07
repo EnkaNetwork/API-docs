@@ -15,7 +15,7 @@
         },
         "2": {
             "Title": "剣先のセージ",
-            "Description": "<color=#FFFFFF>『終結スキル：降る星のフィナーレ』</color>のとどめの一撃が敵に命中した時、<color=#F0D12B>「極性強撃」</color>が発動する。メンバー全員の<color=#F0D12B>「強撃」</color>与ダメージ+15%。<color=#F0D12B>物理属性の状態異常</color>の敵に対する<color=#FFFFFF>「混沌」</color>ダメージ+15%。フィールド入場時、アリスは即座にデシベル値を1000Pt獲得する。「探査モード」では、180秒に1回のみ発動可能。",
+            "Description": "<color=#FFFFFF>『終結スキル：降る星のフィナーレ』</color>のとどめの一撃が敵に命中した時、<color=#F0D12B>「極性強撃」</color>が発動する。メンバー全員の与える<color=#F0D12B>「強撃」</color>ダメージ+15%。<color=#F0D12B>物理属性の状態異常</color>の敵に対する<color=#FFFFFF>「混沌」</color>ダメージ+15%。フィールド入場時、アリスは即座にデシベル値を1000Pt獲得する。「探査モード」において、この効果は180秒に1回のみ発動可能。",
             "Lore": "銀色の剣先が、霜に縁取られたセージの葉に優しく触れる。\nそれは戦いの前に決まって行う、少女の静かな覚悟の現れ。\n恐れと無力感を昨日の夢に閉じ込め、\n手の中の剣は、踊るように星々の輪郭を描こうとしている。\n夜明けは近い。可憐なつぼみは、満開の時を待ちわびて。"
         },
         "3": {
@@ -35,7 +35,7 @@
         },
         "6": {
             "Title": "胸に抱くタイム",
-            "Description": "アリスが3段階チャージの<color=#FFFFFF>『通常攻撃：輝く星のワルツ』</color>または<color=#FFFFFF>『終結スキル：降る星のフィナーレ』</color>を発動すると<color=#FFFFFF>「決勝状態」</color>に入る、継続時間30秒。任意のメンバーの攻撃がターゲットに命中した直後、アリスはターゲットに追加の攻撃を1回行い、アリスの異常マスタリー3300%分の物理属性ダメージを与える。この追加攻撃は1秒に1回のみ発動可能で、必ず会心が発生し、最大6回まで発動できる。再度<color=#FFFFFF>「決勝状態」</color>を獲得すると発動可能回数がリセットされる。",
+            "Description": "アリスが3段チャージの<color=#FFFFFF>『通常攻撃：輝く星のワルツ』</color>または<color=#FFFFFF>『終結スキル：降る星のフィナーレ』</color>を発動すると<color=#FFFFFF>「決勝状態」</color>に入る、継続時間30秒。状態継続中、任意のメンバーの攻撃がターゲットに命中した直後のわずかな間に、アリスはターゲットに追加の攻撃を1回行い、アリスの異常マスタリー3300%分の物理属性ダメージを与え、必ず会心が発生する。この追加攻撃は1秒に1回のみ発動可能、最大6回まで。再度<color=#FFFFFF>「決勝状態」</color>を獲得すると発動可能回数がリセットされる。",
             "Lore": "タイムの香り漂うあの庭園で\n星を見上げたあの夜、\n勇気の意味を知ったその瞬間——\nそよ風が黒雲を追い払い、陽の光が\nシャンデリアの輝きをもかき消す。\n少女は過ぎ去る日々へ、静かに一礼をし…\n花畑へと、ゆっくり消えていった。"
         }
     },
@@ -43,29 +43,29 @@
         "UniqueSkill": {
             "Title": "コアパッシブ：双虹の剣心",
             "DescriptionByLevel": {
-                "1": "任意のメンバーが敵に<color=#F0D12B>物理属性の状態異常</color>を付与した後、その状態異常が継続している間、アリスは0.95秒ごとにその物理属性の状態異常ダメージ2.5%分の追加ダメージを与える。<color=#F0D12B>物理属性の状態異常</color>の敵に対して<color=#FFFFFF>「混沌」</color>効果を発動させた時、<color=#F0D12B>物理属性の状態異常</color>の残り時間1秒につき<color=#FFFFFF>「混沌」</color>効果のダメージ倍率+18%、最大+{CAL:18*10,1,2}%。\nアリスの攻撃が敵に命中すると<color=#FFFFFF>「剣儀」</color>を蓄積する。アリスが状態異常蓄積により<color=#F0D12B>「強撃」</color>を発動した時、<color=#FFFFFF>「剣儀」</color>を10Pt獲得する。<color=#FFFFFF>「剣儀」ゲージ</color>の上限は300Ptで、100Ptが1段階とみなされる。\n3段階チャージの<color=#FFFFFF>『通常攻撃：輝く星のワルツ』</color>のとどめの一撃が敵に命中した時、特殊な<color=#F0D12B>「強撃」</color>効果である<color=#F0D12B>「極性強撃」</color>を発動する。状態異常蓄積値に関係なく、本来の<color=#F0D12B>「強撃」</color>効果{CAL:0+100,1,2}%のダメージを与え、物理属性を含む別属性の状態異常効果と共に<color=#FFFFFF>「混沌」</color>を発動させることが可能。\nアリスが<color=#F0D12B>「強撃」</color>を発動した時、<color=#F0D12B>物理属性の状態異常蓄積効率</color>+<color=#2BAD00>12.5%</color>、継続時間30秒。",
-                "2": "任意のメンバーが敵に<color=#F0D12B>物理属性の状態異常</color>を付与した後、その状態異常が継続している間、アリスは0.95秒ごとにその物理属性の状態異常ダメージ2.5%分の追加ダメージを与える。<color=#F0D12B>物理属性の状態異常</color>の敵に対して<color=#FFFFFF>「混沌」</color>効果を発動させた時、<color=#F0D12B>物理属性の状態異常</color>の残り時間1秒につき<color=#FFFFFF>「混沌」</color>効果のダメージ倍率+18%、最大+{CAL:18*10,1,2}%。\nアリスの攻撃が敵に命中すると<color=#FFFFFF>「剣儀」</color>を蓄積する。アリスが状態異常蓄積により<color=#F0D12B>「強撃」</color>を発動した時、<color=#FFFFFF>「剣儀」</color>を10Pt獲得する。<color=#FFFFFF>「剣儀」ゲージ</color>の上限は300Ptで、100Ptが1段階とみなされる。\n3段階チャージの<color=#FFFFFF>『通常攻撃：輝く星のワルツ』</color>のとどめの一撃が敵に命中した時、特殊な<color=#F0D12B>「強撃」</color>効果である<color=#F0D12B>「極性強撃」</color>を発動する。状態異常蓄積値に関係なく、本来の<color=#F0D12B>「強撃」</color>効果{CAL:0+100,1,2}%のダメージを与え、物理属性を含む別属性の状態異常効果と共に<color=#FFFFFF>「混沌」</color>を発動させることが可能。\nアリスが<color=#F0D12B>「強撃」</color>を発動した時、<color=#F0D12B>物理属性の状態異常蓄積効率</color>+<color=#2BAD00>14.6%</color>、継続時間30秒。",
-                "3": "任意のメンバーが敵に<color=#F0D12B>物理属性の状態異常</color>を付与した後、その状態異常が継続している間、アリスは0.95秒ごとにその物理属性の状態異常ダメージ2.5%分の追加ダメージを与える。<color=#F0D12B>物理属性の状態異常</color>の敵に対して<color=#FFFFFF>「混沌」</color>効果を発動させた時、<color=#F0D12B>物理属性の状態異常</color>の残り時間1秒につき<color=#FFFFFF>「混沌」</color>効果のダメージ倍率+18%、最大+{CAL:18*10,1,2}%。\nアリスの攻撃が敵に命中すると<color=#FFFFFF>「剣儀」</color>を蓄積する。アリスが状態異常蓄積により<color=#F0D12B>「強撃」</color>を発動した時、<color=#FFFFFF>「剣儀」</color>を10Pt獲得する。<color=#FFFFFF>「剣儀」ゲージ</color>の上限は300Ptで、100Ptが1段階とみなされる。\n3段階チャージの<color=#FFFFFF>『通常攻撃：輝く星のワルツ』</color>のとどめの一撃が敵に命中した時、特殊な<color=#F0D12B>「強撃」</color>効果である<color=#F0D12B>「極性強撃」</color>を発動する。状態異常蓄積値に関係なく、本来の<color=#F0D12B>「強撃」</color>効果{CAL:0+100,1,2}%のダメージを与え、物理属性を含む別属性の状態異常効果と共に<color=#FFFFFF>「混沌」</color>を発動させることが可能。\nアリスが<color=#F0D12B>「強撃」</color>を発動した時、<color=#F0D12B>物理属性の状態異常蓄積効率</color>+<color=#2BAD00>16.7%</color>、継続時間30秒。",
-                "4": "任意のメンバーが敵に<color=#F0D12B>物理属性の状態異常</color>を付与した後、その状態異常が継続している間、アリスは0.95秒ごとにその物理属性の状態異常ダメージ2.5%分の追加ダメージを与える。<color=#F0D12B>物理属性の状態異常</color>の敵に対して<color=#FFFFFF>「混沌」</color>効果を発動させた時、<color=#F0D12B>物理属性の状態異常</color>の残り時間1秒につき<color=#FFFFFF>「混沌」</color>効果のダメージ倍率+18%、最大+{CAL:18*10,1,2}%。\nアリスの攻撃が敵に命中すると<color=#FFFFFF>「剣儀」</color>を蓄積する。アリスが状態異常蓄積により<color=#F0D12B>「強撃」</color>を発動した時、<color=#FFFFFF>「剣儀」</color>を10Pt獲得する。<color=#FFFFFF>「剣儀」ゲージ</color>の上限は300Ptで、100Ptが1段階とみなされる。\n3段階チャージの<color=#FFFFFF>『通常攻撃：輝く星のワルツ』</color>のとどめの一撃が敵に命中した時、特殊な<color=#F0D12B>「強撃」</color>効果である<color=#F0D12B>「極性強撃」</color>を発動する。状態異常蓄積値に関係なく、本来の<color=#F0D12B>「強撃」</color>効果{CAL:0+100,1,2}%のダメージを与え、物理属性を含む別属性の状態異常効果と共に<color=#FFFFFF>「混沌」</color>を発動させることが可能。\nアリスが<color=#F0D12B>「強撃」</color>を発動した時、<color=#F0D12B>物理属性の状態異常蓄積効率</color>+<color=#2BAD00>18.8%</color>、継続時間30秒。",
-                "5": "任意のメンバーが敵に<color=#F0D12B>物理属性の状態異常</color>を付与した後、その状態異常が継続している間、アリスは0.95秒ごとにその物理属性の状態異常ダメージ2.5%分の追加ダメージを与える。<color=#F0D12B>物理属性の状態異常</color>の敵に対して<color=#FFFFFF>「混沌」</color>効果を発動させた時、<color=#F0D12B>物理属性の状態異常</color>の残り時間1秒につき<color=#FFFFFF>「混沌」</color>効果のダメージ倍率+18%、最大+{CAL:18*10,1,2}%。\nアリスの攻撃が敵に命中すると<color=#FFFFFF>「剣儀」</color>を蓄積する。アリスが状態異常蓄積により<color=#F0D12B>「強撃」</color>を発動した時、<color=#FFFFFF>「剣儀」</color>を10Pt獲得する。<color=#FFFFFF>「剣儀」ゲージ</color>の上限は300Ptで、100Ptが1段階とみなされる。\n3段階チャージの<color=#FFFFFF>『通常攻撃：輝く星のワルツ』</color>のとどめの一撃が敵に命中した時、特殊な<color=#F0D12B>「強撃」</color>効果である<color=#F0D12B>「極性強撃」</color>を発動する。状態異常蓄積値に関係なく、本来の<color=#F0D12B>「強撃」</color>効果{CAL:0+100,1,2}%のダメージを与え、物理属性を含む別属性の状態異常効果と共に<color=#FFFFFF>「混沌」</color>を発動させることが可能。\nアリスが<color=#F0D12B>「強撃」</color>を発動した時、<color=#F0D12B>物理属性の状態異常蓄積効率</color>+<color=#2BAD00>20.8%</color>、継続時間30秒。",
-                "6": "任意のメンバーが敵に<color=#F0D12B>物理属性の状態異常</color>を付与した後、その状態異常が継続している間、アリスは0.95秒ごとにその物理属性の状態異常ダメージ2.5%分の追加ダメージを与える。<color=#F0D12B>物理属性の状態異常</color>の敵に対して<color=#FFFFFF>「混沌」</color>効果を発動させた時、<color=#F0D12B>物理属性の状態異常</color>の残り時間1秒につき<color=#FFFFFF>「混沌」</color>効果のダメージ倍率+18%、最大+{CAL:18*10,1,2}%。\nアリスの攻撃が敵に命中すると<color=#FFFFFF>「剣儀」</color>を蓄積する。アリスが状態異常蓄積により<color=#F0D12B>「強撃」</color>を発動した時、<color=#FFFFFF>「剣儀」</color>を10Pt獲得する。<color=#FFFFFF>「剣儀」ゲージ</color>の上限は300Ptで、100Ptが1段階とみなされる。\n3段階チャージの<color=#FFFFFF>『通常攻撃：輝く星のワルツ』</color>のとどめの一撃が敵に命中した時、特殊な<color=#F0D12B>「強撃」</color>効果である<color=#F0D12B>「極性強撃」</color>を発動する。状態異常蓄積値に関係なく、本来の<color=#F0D12B>「強撃」</color>効果{CAL:0+100,1,2}%のダメージを与え、物理属性を含む別属性の状態異常効果と共に<color=#FFFFFF>「混沌」</color>を発動させることが可能。\nアリスが<color=#F0D12B>「強撃」</color>を発動した時、<color=#F0D12B>物理属性の状態異常蓄積効率</color>+<color=#2BAD00>22.9%</color>、継続時間30秒。",
-                "7": "任意のメンバーが敵に<color=#F0D12B>物理属性の状態異常</color>を付与した後、その状態異常が継続している間、アリスは0.95秒ごとにその物理属性の状態異常ダメージ2.5%分の追加ダメージを与える。<color=#F0D12B>物理属性の状態異常</color>の敵に対して<color=#FFFFFF>「混沌」</color>効果を発動させた時、<color=#F0D12B>物理属性の状態異常</color>の残り時間1秒につき<color=#FFFFFF>「混沌」</color>効果のダメージ倍率+18%、最大+{CAL:18*10,1,2}%。\nアリスの攻撃が敵に命中すると<color=#FFFFFF>「剣儀」</color>を蓄積する。アリスが状態異常蓄積により<color=#F0D12B>「強撃」</color>を発動した時、<color=#FFFFFF>「剣儀」</color>を10Pt獲得する。<color=#FFFFFF>「剣儀」ゲージ</color>の上限は300Ptで、100Ptが1段階とみなされる。\n3段階チャージの<color=#FFFFFF>『通常攻撃：輝く星のワルツ』</color>のとどめの一撃が敵に命中した時、特殊な<color=#F0D12B>「強撃」</color>効果である<color=#F0D12B>「極性強撃」</color>を発動する。状態異常蓄積値に関係なく、本来の<color=#F0D12B>「強撃」</color>効果{CAL:0+100,1,2}%のダメージを与え、物理属性を含む別属性の状態異常効果と共に<color=#FFFFFF>「混沌」</color>を発動させることが可能。\nアリスが<color=#F0D12B>「強撃」</color>を発動した時、<color=#F0D12B>物理属性の状態異常蓄積効率</color>+<color=#2BAD00>25%</color>、継続時間30秒。"
+                "1": "任意のメンバーが敵を<color=#F0D12B>物理属性の状態異常</color>にした後、その状態異常が継続している間、アリスは0.95秒ごとにその物理属性の状態異常ダメージ2.5%分の追加ダメージを与える。<color=#F0D12B>物理属性の状態異常</color>の敵に対して<color=#FFFFFF>「混沌」</color>効果を発動させた時、<color=#F0D12B>物理属性の状態異常</color>の残り時間が1秒につき、<color=#FFFFFF>「混沌」</color>効果のダメージ倍率+18%、最大+{CAL:18*10,1,2}%。\nアリスの攻撃が敵に命中すると<color=#FFFFFF>「剣儀」</color>が溜まる。アリスが状態異常蓄積により<color=#F0D12B>「強撃」</color>を発動した時、<color=#FFFFFF>「剣儀」</color>を10Pt獲得する。<color=#FFFFFF>「剣儀」</color>の上限は300Pt、1マスは100Pt。\n3段チャージの<color=#FFFFFF>『通常攻撃：輝く星のワルツ』</color>のとどめの一撃が敵に命中した時、特殊な<color=#F0D12B>「強撃」</color>効果である<color=#F0D12B>「極性強撃」</color>が発動する。状態異常の蓄積具合を無視して、本来の<color=#F0D12B>「強撃」</color>効果{CAL:0+100,1,2}%分のダメージを与え、物理属性を含む別属性の状態異常効果と共に<color=#FFFFFF>「混沌」</color>を発動させることが可能。\nアリスが<color=#F0D12B>「強撃」</color>を発動した時、<color=#F0D12B>物理属性の状態異常蓄積効率</color>+<color=#2BAD00>12.5%</color>、継続時間30秒。",
+                "2": "任意のメンバーが敵を<color=#F0D12B>物理属性の状態異常</color>にした後、その状態異常が継続している間、アリスは0.95秒ごとにその物理属性の状態異常ダメージ2.5%分の追加ダメージを与える。<color=#F0D12B>物理属性の状態異常</color>の敵に対して<color=#FFFFFF>「混沌」</color>効果を発動させた時、<color=#F0D12B>物理属性の状態異常</color>の残り時間が1秒につき、<color=#FFFFFF>「混沌」</color>効果のダメージ倍率+18%、最大+{CAL:18*10,1,2}%。\nアリスの攻撃が敵に命中すると<color=#FFFFFF>「剣儀」</color>が溜まる。アリスが状態異常蓄積により<color=#F0D12B>「強撃」</color>を発動した時、<color=#FFFFFF>「剣儀」</color>を10Pt獲得する。<color=#FFFFFF>「剣儀」</color>の上限は300Pt、1マスは100Pt。\n3段チャージの<color=#FFFFFF>『通常攻撃：輝く星のワルツ』</color>のとどめの一撃が敵に命中した時、特殊な<color=#F0D12B>「強撃」</color>効果である<color=#F0D12B>「極性強撃」</color>が発動する。状態異常の蓄積具合を無視して、本来の<color=#F0D12B>「強撃」</color>効果{CAL:0+100,1,2}%分のダメージを与え、物理属性を含む別属性の状態異常効果と共に<color=#FFFFFF>「混沌」</color>を発動させることが可能。\nアリスが<color=#F0D12B>「強撃」</color>を発動した時、<color=#F0D12B>物理属性の状態異常蓄積効率</color>+<color=#2BAD00>14.6%</color>、継続時間30秒。",
+                "3": "任意のメンバーが敵を<color=#F0D12B>物理属性の状態異常</color>にした後、その状態異常が継続している間、アリスは0.95秒ごとにその物理属性の状態異常ダメージ2.5%分の追加ダメージを与える。<color=#F0D12B>物理属性の状態異常</color>の敵に対して<color=#FFFFFF>「混沌」</color>効果を発動させた時、<color=#F0D12B>物理属性の状態異常</color>の残り時間が1秒につき、<color=#FFFFFF>「混沌」</color>効果のダメージ倍率+18%、最大+{CAL:18*10,1,2}%。\nアリスの攻撃が敵に命中すると<color=#FFFFFF>「剣儀」</color>が溜まる。アリスが状態異常蓄積により<color=#F0D12B>「強撃」</color>を発動した時、<color=#FFFFFF>「剣儀」</color>を10Pt獲得する。<color=#FFFFFF>「剣儀」</color>の上限は300Pt、1マスは100Pt。\n3段チャージの<color=#FFFFFF>『通常攻撃：輝く星のワルツ』</color>のとどめの一撃が敵に命中した時、特殊な<color=#F0D12B>「強撃」</color>効果である<color=#F0D12B>「極性強撃」</color>が発動する。状態異常の蓄積具合を無視して、本来の<color=#F0D12B>「強撃」</color>効果{CAL:0+100,1,2}%分のダメージを与え、物理属性を含む別属性の状態異常効果と共に<color=#FFFFFF>「混沌」</color>を発動させることが可能。\nアリスが<color=#F0D12B>「強撃」</color>を発動した時、<color=#F0D12B>物理属性の状態異常蓄積効率</color>+<color=#2BAD00>16.7%</color>、継続時間30秒。",
+                "4": "任意のメンバーが敵を<color=#F0D12B>物理属性の状態異常</color>にした後、その状態異常が継続している間、アリスは0.95秒ごとにその物理属性の状態異常ダメージ2.5%分の追加ダメージを与える。<color=#F0D12B>物理属性の状態異常</color>の敵に対して<color=#FFFFFF>「混沌」</color>効果を発動させた時、<color=#F0D12B>物理属性の状態異常</color>の残り時間が1秒につき、<color=#FFFFFF>「混沌」</color>効果のダメージ倍率+18%、最大+{CAL:18*10,1,2}%。\nアリスの攻撃が敵に命中すると<color=#FFFFFF>「剣儀」</color>が溜まる。アリスが状態異常蓄積により<color=#F0D12B>「強撃」</color>を発動した時、<color=#FFFFFF>「剣儀」</color>を10Pt獲得する。<color=#FFFFFF>「剣儀」</color>の上限は300Pt、1マスは100Pt。\n3段チャージの<color=#FFFFFF>『通常攻撃：輝く星のワルツ』</color>のとどめの一撃が敵に命中した時、特殊な<color=#F0D12B>「強撃」</color>効果である<color=#F0D12B>「極性強撃」</color>が発動する。状態異常の蓄積具合を無視して、本来の<color=#F0D12B>「強撃」</color>効果{CAL:0+100,1,2}%分のダメージを与え、物理属性を含む別属性の状態異常効果と共に<color=#FFFFFF>「混沌」</color>を発動させることが可能。\nアリスが<color=#F0D12B>「強撃」</color>を発動した時、<color=#F0D12B>物理属性の状態異常蓄積効率</color>+<color=#2BAD00>18.8%</color>、継続時間30秒。",
+                "5": "任意のメンバーが敵を<color=#F0D12B>物理属性の状態異常</color>にした後、その状態異常が継続している間、アリスは0.95秒ごとにその物理属性の状態異常ダメージ2.5%分の追加ダメージを与える。<color=#F0D12B>物理属性の状態異常</color>の敵に対して<color=#FFFFFF>「混沌」</color>効果を発動させた時、<color=#F0D12B>物理属性の状態異常</color>の残り時間が1秒につき、<color=#FFFFFF>「混沌」</color>効果のダメージ倍率+18%、最大+{CAL:18*10,1,2}%。\nアリスの攻撃が敵に命中すると<color=#FFFFFF>「剣儀」</color>が溜まる。アリスが状態異常蓄積により<color=#F0D12B>「強撃」</color>を発動した時、<color=#FFFFFF>「剣儀」</color>を10Pt獲得する。<color=#FFFFFF>「剣儀」</color>の上限は300Pt、1マスは100Pt。\n3段チャージの<color=#FFFFFF>『通常攻撃：輝く星のワルツ』</color>のとどめの一撃が敵に命中した時、特殊な<color=#F0D12B>「強撃」</color>効果である<color=#F0D12B>「極性強撃」</color>が発動する。状態異常の蓄積具合を無視して、本来の<color=#F0D12B>「強撃」</color>効果{CAL:0+100,1,2}%分のダメージを与え、物理属性を含む別属性の状態異常効果と共に<color=#FFFFFF>「混沌」</color>を発動させることが可能。\nアリスが<color=#F0D12B>「強撃」</color>を発動した時、<color=#F0D12B>物理属性の状態異常蓄積効率</color>+<color=#2BAD00>20.8%</color>、継続時間30秒。",
+                "6": "任意のメンバーが敵を<color=#F0D12B>物理属性の状態異常</color>にした後、その状態異常が継続している間、アリスは0.95秒ごとにその物理属性の状態異常ダメージ2.5%分の追加ダメージを与える。<color=#F0D12B>物理属性の状態異常</color>の敵に対して<color=#FFFFFF>「混沌」</color>効果を発動させた時、<color=#F0D12B>物理属性の状態異常</color>の残り時間が1秒につき、<color=#FFFFFF>「混沌」</color>効果のダメージ倍率+18%、最大+{CAL:18*10,1,2}%。\nアリスの攻撃が敵に命中すると<color=#FFFFFF>「剣儀」</color>が溜まる。アリスが状態異常蓄積により<color=#F0D12B>「強撃」</color>を発動した時、<color=#FFFFFF>「剣儀」</color>を10Pt獲得する。<color=#FFFFFF>「剣儀」</color>の上限は300Pt、1マスは100Pt。\n3段チャージの<color=#FFFFFF>『通常攻撃：輝く星のワルツ』</color>のとどめの一撃が敵に命中した時、特殊な<color=#F0D12B>「強撃」</color>効果である<color=#F0D12B>「極性強撃」</color>が発動する。状態異常の蓄積具合を無視して、本来の<color=#F0D12B>「強撃」</color>効果{CAL:0+100,1,2}%分のダメージを与え、物理属性を含む別属性の状態異常効果と共に<color=#FFFFFF>「混沌」</color>を発動させることが可能。\nアリスが<color=#F0D12B>「強撃」</color>を発動した時、<color=#F0D12B>物理属性の状態異常蓄積効率</color>+<color=#2BAD00>22.9%</color>、継続時間30秒。",
+                "7": "任意のメンバーが敵を<color=#F0D12B>物理属性の状態異常</color>にした後、その状態異常が継続している間、アリスは0.95秒ごとにその物理属性の状態異常ダメージ2.5%分の追加ダメージを与える。<color=#F0D12B>物理属性の状態異常</color>の敵に対して<color=#FFFFFF>「混沌」</color>効果を発動させた時、<color=#F0D12B>物理属性の状態異常</color>の残り時間が1秒につき、<color=#FFFFFF>「混沌」</color>効果のダメージ倍率+18%、最大+{CAL:18*10,1,2}%。\nアリスの攻撃が敵に命中すると<color=#FFFFFF>「剣儀」</color>が溜まる。アリスが状態異常蓄積により<color=#F0D12B>「強撃」</color>を発動した時、<color=#FFFFFF>「剣儀」</color>を10Pt獲得する。<color=#FFFFFF>「剣儀」</color>の上限は300Pt、1マスは100Pt。\n3段チャージの<color=#FFFFFF>『通常攻撃：輝く星のワルツ』</color>のとどめの一撃が敵に命中した時、特殊な<color=#F0D12B>「強撃」</color>効果である<color=#F0D12B>「極性強撃」</color>が発動する。状態異常の蓄積具合を無視して、本来の<color=#F0D12B>「強撃」</color>効果{CAL:0+100,1,2}%分のダメージを与え、物理属性を含む別属性の状態異常効果と共に<color=#FFFFFF>「混沌」</color>を発動させることが可能。\nアリスが<color=#F0D12B>「強撃」</color>を発動した時、<color=#F0D12B>物理属性の状態異常蓄積効率</color>+<color=#2BAD00>25%</color>、継続時間30秒。"
             }
         },
         "MathSkill": {
             "Title": "追加能力：奇怪を探して",
-            "Description": "チームに他の<color=#FFFFFF>[異常]</color>または<color=#FFFFFF>[支援]</color>メンバーがいる時に発動：\n任意のメンバーが<color=#FFFFFF>「混沌」</color>を発動させた時、アリスは<color=#FFFFFF>「剣儀」</color>を30Pt獲得する。\nアリスの異常掌握が140Ptを超えている場合、1Ptを超えるごとに異常マスタリー+1.6Pt。\nフィールド入場時、アリスは<color=#FFFFFF>「剣儀」</color>を300Pt獲得する。「探査モード」では、180秒に1回のみ発動可能。"
+            "Description": "チームに他の<color=#FFFFFF>[異常]</color>または<color=#FFFFFF>[支援]</color>のメンバーがいる時に発動：\n任意のメンバーが<color=#FFFFFF>「混沌」</color>を発動させた時、アリスは<color=#FFFFFF>「剣儀」</color>を30Pt獲得する。\nアリスの異常掌握が140Ptを超えている場合、1Pt超えるごとに異常マスタリー+1.6Pt。\nフィールド入場時、アリスは<color=#FFFFFF>「剣儀」</color>を300Pt獲得する。「探査モード」において、この効果は180秒に1回のみ発動可能。"
         }
     },
     "SkillDescriptions": {
         "0": {
             "140100001": {
                 "Title": "通常攻撃：星儀のプレリュード",
-                "Description": "<IconMap:Icon_Normal> を押して発動：\n前方に最大5段の斬撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。\nアリスが状態異常蓄積により<color=#F0D12B>「強撃」</color>を発動した時、次に発動する<color=#FFFFFF>『通常攻撃』</color>の5段目が強化される。"
+                "Description": " <IconMap:Icon_Normal> を押して発動：\n前方に最大5段の斬撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。\nアリスが状態異常蓄積により<color=#F0D12B>「強撃」</color>を発動した時、次に発動する<color=#FFFFFF>『通常攻撃』</color>の5段目が強化される。"
             },
             "140100002": {
                 "Title": "通常攻撃：輝く星のワルツ",
-                "Description": "アリスの<color=#FFFFFF>「剣儀」</color>が1段階に達した時、<IconMap:Icon_Normal>を長押しで発動：\n長押しでチャージを開始し、最大3段階の<color=#FFFFFF>「剣儀」</color>を消費する。<IconMap:Icon_Normal>を離すか、または<color=#FFFFFF>「剣儀」</color>が1段階未満の時、アリスは現在のチャージ段階に応じて、ターゲットを中心に複数回斬撃を繰り出し、<color=#F0D12B>物理属性ダメージ</color>を大量に与える。\n3段階チャージの<color=#FFFFFF>『通常攻撃：輝く星のワルツ』</color>のとどめの一撃が敵に命中すると、特殊な<color=#F0D12B>「強撃」</color>効果である<color=#F0D12B>「極性強撃」</color>が発動する。状態異常蓄積値を無視して、本来の<color=#F0D12B>「強撃」</color>{CAL:0+100,1,2}%のダメージを与え、物理属性の状態異常を含む別属性の状態異常効果と共に<color=#FFFFFF>「混沌」</color>を発動させることが可能。\n敵に命中した時、<color=#FFFFFF>「剣儀」</color>を蓄積しない。\nスキル発動中、無敵効果を得る。"
+                "Description": "アリスの<color=#FFFFFF>「剣儀」</color>が1マスに達した時、 <IconMap:Icon_Normal> を長押しして発動：\n長押しでチャージを開始し、最大3マスの<color=#FFFFFF>「剣儀」</color>を消費する。 <IconMap:Icon_Normal> を離すか、または<color=#FFFFFF>「剣儀」</color>が1マス未満の時、アリスは現在のチャージ段階に応じて、ターゲットを中心に斬撃を複数段放ち、<color=#F0D12B>物理属性ダメージ</color>を大量に与える。\n3段チャージの<color=#FFFFFF>『通常攻撃：輝く星のワルツ』</color>のとどめの一撃が敵に命中すると、特殊な<color=#F0D12B>「強撃」</color>効果である<color=#F0D12B>「極性強撃」</color>が発動する。状態異常の蓄積具合を無視して、本来の<color=#F0D12B>「強撃」</color>効果{CAL:0+100,1,2}%分のダメージを与え、物理属性を含む別属性の状態異常効果と共に<color=#FFFFFF>「混沌」</color>を発動させることが可能。\n敵に命中した時、<color=#FFFFFF>「剣儀」</color>は溜まらない。\nスキル発動中、無敵効果を得る。"
             },
             "140100015": {
                 "Title": "通常攻撃：星儀のプレリュード"
@@ -122,42 +122,42 @@
                 "Title": "通常攻撃：輝く星のワルツ"
             },
             "140100029": {
-                "Description": "1段階チャージダメージ倍率",
+                "Description": "1段チャージダメージ倍率",
                 "Param": "{Skill:1401010, Prop:1001}"
             },
             "140100030": {
-                "Description": "2段階チャージダメージ倍率",
+                "Description": "2段チャージダメージ倍率",
                 "Param": "{Skill:1401011, Prop:1001}"
             },
             "140100031": {
-                "Description": "3段階チャージダメージ倍率",
+                "Description": "3段チャージダメージ倍率",
                 "Param": "{Skill:1401012, Prop:1001}"
             },
             "140100032": {
-                "Description": "1段階チャージブレイク倍率",
+                "Description": "1段チャージブレイク倍率",
                 "Param": "{Skill:1401010, Prop:1002}"
             },
             "140100033": {
-                "Description": "2段階チャージブレイク倍率",
+                "Description": "2段チャージブレイク倍率",
                 "Param": "{Skill:1401011, Prop:1002}"
             },
             "140100034": {
-                "Description": "3段階チャージブレイク倍率",
+                "Description": "3段チャージブレイク倍率",
                 "Param": "{Skill:1401012, Prop:1002}"
             }
         },
         "1": {
             "140100003": {
                 "Title": "特殊スキル：デイブレイクスラスト",
-                "Description": "<IconMap:Icon_Special> を押して発動：\n剣を投げて前方の敵を貫き、<color=#F0D12B>物理属性ダメージ</color>を与える。\nスキル発動時に<color=#FFFFFF>『極限回避』</color>が発動可能。\n<color=#FFFFFF>『極限回避』</color>発動後、<IconMap:Icon_Normal> を押すことで<color=#FFFFFF>『通常攻撃』</color>の5段目に繋げることが可能。\nスキル発動中、中断耐性レベルがアップする。"
+                "Description": " <IconMap:Icon_Special> を押して発動：\n剣を投げて前方の敵を貫き、<color=#F0D12B>物理属性ダメージ</color>を与える。\nスキル発動時、<color=#FFFFFF>『極限回避』</color>が発動可能。\n<color=#FFFFFF>『極限回避』</color>発動後、 <IconMap:Icon_Normal> を押すことで<color=#FFFFFF>『通常攻撃』</color>の5段目に繋げることが可能。\nスキル発動中、中断耐性レベルがアップする。"
             },
             "140100004": {
                 "Title": "強化特殊スキル：オーロラスラスト・北十字",
-                "Description": "エネルギーが十分な時、前方に{LAYOUT_CONSOLECONTROLLER#スティック}{LAYOUT_FALLBACK#スティック}を倒し、<IconMap:Icon_SpecialReady>を押して発動：\n前方の敵を突き刺し攻撃で貫き、<color=#F0D12B>物理属性ダメージ</color>を大量に与える。\nスキル発動時に<color=#FFFFFF>『極限回避』</color>が発動可能で、<color=#FFFFFF>「剣儀」</color>を10Pt獲得する。\nスキル発動中、無敵効果を得る。"
+                "Description": "エネルギーが十分な時、前方に{LAYOUT_CONSOLECONTROLLER#スティック}{LAYOUT_FALLBACK#スティック}を倒し、 <IconMap:Icon_SpecialReady> を押して発動：\n突き刺し攻撃で前方の敵を貫き、<color=#F0D12B>物理属性ダメージ</color>を大量に与える。\nスキル発動時、<color=#FFFFFF>『極限回避』</color>が発動可能、<color=#FFFFFF>「剣儀」</color>を10Pt獲得する。\nスキル発動中、無敵効果を得る。"
             },
             "140100005": {
                 "Title": "強化特殊スキル：オーロラスラスト・南十字",
-                "Description": "エネルギーが十分な時、方向を入力せず、または{LAYOUT_CONSOLECONTROLLER#スティック}{LAYOUT_FALLBACK#スティック}を後ろに倒し、<IconMap:Icon_SpecialReady>を押して発動：\n後ろに下がって斬撃を放ち、その後、前方へ突き刺し攻撃を繰り出し、<color=#F0D12B>物理属性ダメージ</color>を与える。\nスキル発動時に<color=#FFFFFF>『極限回避』</color>が発動可能で、<color=#FFFFFF>「剣儀」</color>を10Pt獲得する。\nスキル発動中、無敵効果を得る。"
+                "Description": "エネルギーが十分な時、方向を入力せず、または{LAYOUT_CONSOLECONTROLLER#スティック}{LAYOUT_FALLBACK#スティック}を後ろに倒し、 <IconMap:Icon_SpecialReady> を押して発動：\n後ろに下がって斬撃を放った後、前方へ突き刺し攻撃を繰り出し、<color=#F0D12B>物理属性ダメージ</color>を大量に与える。\nスキル発動時、<color=#FFFFFF>『極限回避』</color>が発動可能、<color=#FFFFFF>「剣儀」</color>を10Pt獲得する。\nスキル発動中、無敵効果を得る。"
             },
             "140100035": {
                 "Title": "特殊スキル：デイブレイクスラスト"
@@ -240,11 +240,11 @@
         "3": {
             "140100009": {
                 "Title": "連携スキル：星降るインタールード",
-                "Description": "<color=#FFFFFF>『連携スキル』</color>開始時に、対応するエージェントを選択して発動：\n前方の敵に複数回強力な斬撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を大量に与える。\nスキル発動中、無敵効果を得る。"
+                "Description": "<color=#FFFFFF>『連携スキル』</color>開始時に、対応するエージェントを選択して発動：\n前方の敵に強力な斬撃を複数段放ち、<color=#F0D12B>物理属性ダメージ</color>を大量に与える。\nスキル発動中、無敵効果を得る。"
             },
             "140100010": {
                 "Title": "終結スキル：降る星のフィナーレ",
-                "Description": "デシベルレートが<color=#FFFFFF>『Maximum』</color>に達した時に <IconMap:Icon_UltimateReady> を押して発動：\n前方広範囲の敵に複数回強力な斬撃を放ち、<color=#F0D12B>物理属性ダメージ</color>を大量に与える。\nスキル発動時、<color=#FFFFFF>「剣儀」</color>を200Pt獲得する。\n敵に命中した時、<color=#FFFFFF>「剣儀」</color>を蓄積しない。\nスキル発動中、無敵効果を得る。"
+                "Description": "デシベルレートが<color=#FFFFFF>『Maximum』</color>に達した時に <IconMap:Icon_UltimateReady> を押して発動：\n前方広範囲の敵に強力な斬撃を複数段放ち、<color=#F0D12B>物理属性ダメージ</color>を大量に与える。\nスキル発動時、<color=#FFFFFF>「剣儀」</color>を200Pt獲得する。\n敵に命中した時、<color=#FFFFFF>「剣儀」</color>は溜まらない。\nスキル発動中、無敵効果を得る。"
             },
             "140100052": {
                 "Title": "連携スキル：星降るインタールード"
@@ -272,7 +272,7 @@
         "6": {
             "140100012": {
                 "Title": "クイック支援：オルタナスラスト",
-                "Description": "操作しているメンバーが吹き飛ばされた時に、<IconMap:Icon_Switch>を押して発動：\n前方の敵に斬撃と蹴り技を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。"
+                "Description": "操作しているメンバーが吹き飛ばされた時に、 <IconMap:Icon_Switch> を押して発動：\n前方の敵に斬撃と蹴り技を放ち、<color=#F0D12B>物理属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。"
             },
             "140100013": {
                 "Title": "パリィ支援：カウンターディフェンス",
