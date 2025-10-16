@@ -1,0 +1,494 @@
+{
+    "Name": "Manato",
+    "ElementTypes": [
+        "Fire"
+    ],
+    "Specialty": {
+        "Id": 6,
+        "Name": "Destruidor"
+    },
+    "Talents": {
+        "1": {
+            "Title": "Regras de Sobrevivência nas Ruas",
+            "Description": "Quando Manato perde PV, os PV perdidos são acumulados. Para cada 1% dos PV máximos perdidos, a <color=#FFFFFF>Assistência Imediata</color> e o <color=#FFFFFF>Ataque Básico</color> causam mais 0,4% de <color=#FF5521>Dano de Fogo</color>, até um máximo de 20%.",
+            "Lore": "Crianças desafortunadas são todas parecidas.\nAs vozes carinhosas de outrora, as luzes acolhedoras, as promessas alegres... tudo desaparece sem se despedir. São coisas intocáveis, que nem as presas ou as garras mais afiadas conseguem segurar.\n\"Eu como de tudo e não tenho medo do frio. Se existe algum segredo para sobreviver nas ruas, acho que é isso.\""
+        },
+        "2": {
+            "Title": "Dia e Noite, Cozinha e Amor",
+            "Description": "No estado de <color=#FFFFFF>Lâmina Fundida</color>, Manato ignora 8% da <color=#FF5521>resistência ao Fogo</color> do alvo. Se sofrer um ataque inimigo durante <color=#FFFFFF>Ataque Especial: Retorno às Cinzas</color> ou <color=#FFFFFF>Ataque Especial: Retorno às Cinzas — Sacrifício</color>, pressione <IconMap:Icon_Normal> para ativar uma <color=#FFFFFF>Assistência Imediata</color>.",
+            "Lore": "Talvez uma família em harmonia seja assim — Manato, Qing e Yue se consideram crianças de sorte, que foram escolhidas e levadas a um lar.\nSe há algo sobre o que discutir, é quem vai ficar com a última porção de legumes.\n\"Não tá gostoso? Vou perguntar no Chá Celestial se eu cometi algum erro na receita...\"\n\"Segredo comercial? Da última vez, eu só precisei ficar ali, e o chef me contou tudo.\""
+        },
+        "3": {
+            "Title": "No Reino das Histórias de Terror",
+            "Description": "Obtém +2 níveis de <color=#FFFFFF>Ataque Básico</color>, <color=#FFFFFF>Esquiva</color>, <color=#FFFFFF>Ataque de Assistência</color>, <color=#FFFFFF>Ataque Especial</color> e <color=#FFFFFF>Ataque em Cadeia</color>",
+            "Lore": "O primeiro passo para se estabelecer no fórum é escolher um apelido memorável. Ninguém se acha bom nisso, mas é algo especialmente difícil para um tireno que ficou de recuperação em literatura.\n\"Você já sabe, não sabe? É... ahm... 'Fantasma de Sailume'.\"\n\"Você escutou!\"\n\"Droga! Qualquer hora dessas, vou mudar meu apelido para 'se falar meu apelido antigo de novo, vou te pegar na saída da Esfera Negra'!\""
+        },
+        "4": {
+            "Title": "Juramento da Infância",
+            "Description": "Os PV máximos aumentam 8%. Se Manato sofre dano fatal durante <color=#FFFFFF>Ataque Especial: Retorno às Cinzas</color> ou <color=#FFFFFF>Ataque Especial: Retorno às Cinzas — Sacrifício</color>, ele não morre durante a habilidade e fica com 1 PV. Esse efeito pode ser ativado uma vez a cada 10 segundos.",
+            "Lore": "Todo adolescente se vê como um lobo solitário em algum ponto da vida. Para Manato, isso é ainda mais real. Se não fosse pelos seres oníricos, ele poderia continuar fingindo que nada aconteceu, como todos os outros...\n\"Eu já disse. Eu pensava assim quando tinha oito anos.\"\n\"Então 'amizade' é isso... Vocês não me trataram como alguém frágil, mas também não me trataram como uma pessoa.\""
+        },
+        "5": {
+            "Title": "A Sombra Solitária Retorna à Matilha",
+            "Description": "Obtém +2 níveis de <color=#FFFFFF>Ataque Básico</color>, <color=#FFFFFF>Esquiva</color>, <color=#FFFFFF>Ataque de Assistência</color>, <color=#FFFFFF>Ataque Especial</color> e <color=#FFFFFF>Ataque em Cadeia</color>",
+            "Lore": "Na realidade, mesmo com a barreira de sua aparência, Manato é muito popular com todo mundo.\nAlguns fazem amizade, alguns querem sua proteção, e outros... tentam ludibriá-lo para a área da publicidade.\n\"Foi mal, acho que não sou a pessoa ideal para anunciar sua locadora.\"\n\"Eu nunca fiz supino... a não ser quando tenho que empurrar minha espada nos Etéreos, quando eles sobem em mim.\""
+        },
+        "6": {
+            "Title": "Além dos Sonhos Passados",
+            "Description": "Quando seu <color=#FFFFFF>Ataque Especial: Retorno às Cinzas</color> atinge um inimigo atordoado, Manato recupera 75 pontos de Coração Ardente e obtém 4 acúmulos de Chama Remanescente. Pressione <IconMap:Icon_Normal> para ativar uma <color=#FFFFFF>Assistência Imediata</color>. O efeito de Chama Remanescente pode ser ativado uma vez a cada 20s. Quando atinge um inimigo com <color=#FFFFFF>Assistência Imediata</color>, Manato causa 3% mais <color=#FF5521>Dano de Fogo</color> por 8s, podendo acumular até 5 vezes. Ativar novamente reinicia a duração.",
+            "Lore": "Manato supera seu sonho solitário e abraça seus amigos, que tanto ama.\nClaramente, estes amigos podem lhe causar alguns problemas, como na loja de sopa da Península Waifei.\n\n\"Quando eu disse que ia 'cobrir a retaguarda', eu não me referia a proteger vocês enquanto tomam sopa de frango com leite de coco.\"\n\"E por que agora, na hora de tomar a sopa de escorpião, sou eu quem tem que ir na frente?\"\nMas, no final, ele acaba indo mesmo assim."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passiva Principal: Lâmina Fundida Poderosa",
+            "DescriptionByLevel": {
+                "1": "Manato obtém mais Força Bruta conforme seus PV máximos. Cada PV a mais aumenta 0,1 pontos de Força Bruta.\nTodo <color=#FF5521>Dano de Fogo</color> dos ataques de Manato é considerado Dano Bruto, ignora a defesa do inimigo e usa o valor da Força Bruta como Multiplicador de Dano.\nQuando Manato usa <color=#FFFFFF>Ataque Especial: Retorno às Cinzas — Sacrifício</color> ou <color=#FFFFFF>Assistência Defensiva</color>, ele acumula <color=#FFFFFF>Coração Ardente</color>, até um máximo de 100 pontos. Com 75 pontos de <color=#FFFFFF>Coração Ardente</color>, Manato entra no estado de <color=#FFFFFF>Lâmina Fundida</color>, consumindo 3,3 pontos de <color=#FFFFFF>Coração Ardente</color> por segundo, e sai desse estado quando <color=#FFFFFF>Coração Ardente</color> se esgota.\nNo estado de <color=#FFFFFF>Lâmina Fundida</color>, o <color=#FFFFFF>Ataque Básico</color> de Manato é aprimorado e ele usa <color=#FFFFFF>Ataque Especial Reforçado: Retorno às Cinzas — Queda</color>.\nQuando consome PV durante o <color=#FFFFFF>Ataque Básico: Vento Ardente — Corte Nebuloso</color> ou durante os cortes consecutivos da <color=#FFFFFF>Assistência Imediata</color>, o Dano CRIT aumenta <color=#2BAD00>25%</color> e recupera 100% mais Adrenalina.\nNo estado de <color=#FFFFFF>Lâmina Fundida</color>, a Taxa CRIT de Manato é 10% maior, e ele causa <color=#2BAD00>10%</color> mais <color=#FF5521>Dano de Fogo</color>.",
+                "2": "Manato obtém mais Força Bruta conforme seus PV máximos. Cada PV a mais aumenta 0,1 pontos de Força Bruta.\nTodo <color=#FF5521>Dano de Fogo</color> dos ataques de Manato é considerado Dano Bruto, ignora a defesa do inimigo e usa o valor da Força Bruta como Multiplicador de Dano.\nQuando Manato usa <color=#FFFFFF>Ataque Especial: Retorno às Cinzas — Sacrifício</color> ou <color=#FFFFFF>Assistência Defensiva</color>, ele acumula <color=#FFFFFF>Coração Ardente</color>, até um máximo de 100 pontos. Com 75 pontos de <color=#FFFFFF>Coração Ardente</color>, Manato entra no estado de <color=#FFFFFF>Lâmina Fundida</color>, consumindo 3,3 pontos de <color=#FFFFFF>Coração Ardente</color> por segundo, e sai desse estado quando <color=#FFFFFF>Coração Ardente</color> se esgota.\nNo estado de <color=#FFFFFF>Lâmina Fundida</color>, o <color=#FFFFFF>Ataque Básico</color> de Manato é aprimorado e ele usa <color=#FFFFFF>Ataque Especial Reforçado: Retorno às Cinzas — Queda</color>.\nQuando consome PV durante o <color=#FFFFFF>Ataque Básico: Vento Ardente — Corte Nebuloso</color> ou durante os cortes consecutivos da <color=#FFFFFF>Assistência Imediata</color>, o Dano CRIT aumenta <color=#2BAD00>29,2%</color> e recupera 100% mais Adrenalina.\nNo estado de <color=#FFFFFF>Lâmina Fundida</color>, a Taxa CRIT de Manato é 10% maior, e ele causa <color=#2BAD00>11,7%</color> mais <color=#FF5521>Dano de Fogo</color>.",
+                "3": "Manato obtém mais Força Bruta conforme seus PV máximos. Cada PV a mais aumenta 0,1 pontos de Força Bruta.\nTodo <color=#FF5521>Dano de Fogo</color> dos ataques de Manato é considerado Dano Bruto, ignora a defesa do inimigo e usa o valor da Força Bruta como Multiplicador de Dano.\nQuando Manato usa <color=#FFFFFF>Ataque Especial: Retorno às Cinzas — Sacrifício</color> ou <color=#FFFFFF>Assistência Defensiva</color>, ele acumula <color=#FFFFFF>Coração Ardente</color>, até um máximo de 100 pontos. Com 75 pontos de <color=#FFFFFF>Coração Ardente</color>, Manato entra no estado de <color=#FFFFFF>Lâmina Fundida</color>, consumindo 3,3 pontos de <color=#FFFFFF>Coração Ardente</color> por segundo, e sai desse estado quando <color=#FFFFFF>Coração Ardente</color> se esgota.\nNo estado de <color=#FFFFFF>Lâmina Fundida</color>, o <color=#FFFFFF>Ataque Básico</color> de Manato é aprimorado e ele usa <color=#FFFFFF>Ataque Especial Reforçado: Retorno às Cinzas — Queda</color>.\nQuando consome PV durante o <color=#FFFFFF>Ataque Básico: Vento Ardente — Corte Nebuloso</color> ou durante os cortes consecutivos da <color=#FFFFFF>Assistência Imediata</color>, o Dano CRIT aumenta <color=#2BAD00>33,3%</color> e recupera 100% mais Adrenalina.\nNo estado de <color=#FFFFFF>Lâmina Fundida</color>, a Taxa CRIT de Manato é 10% maior, e ele causa <color=#2BAD00>13,3%</color> mais <color=#FF5521>Dano de Fogo</color>.",
+                "4": "Manato obtém mais Força Bruta conforme seus PV máximos. Cada PV a mais aumenta 0,1 pontos de Força Bruta.\nTodo <color=#FF5521>Dano de Fogo</color> dos ataques de Manato é considerado Dano Bruto, ignora a defesa do inimigo e usa o valor da Força Bruta como Multiplicador de Dano.\nQuando Manato usa <color=#FFFFFF>Ataque Especial: Retorno às Cinzas — Sacrifício</color> ou <color=#FFFFFF>Assistência Defensiva</color>, ele acumula <color=#FFFFFF>Coração Ardente</color>, até um máximo de 100 pontos. Com 75 pontos de <color=#FFFFFF>Coração Ardente</color>, Manato entra no estado de <color=#FFFFFF>Lâmina Fundida</color>, consumindo 3,3 pontos de <color=#FFFFFF>Coração Ardente</color> por segundo, e sai desse estado quando <color=#FFFFFF>Coração Ardente</color> se esgota.\nNo estado de <color=#FFFFFF>Lâmina Fundida</color>, o <color=#FFFFFF>Ataque Básico</color> de Manato é aprimorado e ele usa <color=#FFFFFF>Ataque Especial Reforçado: Retorno às Cinzas — Queda</color>.\nQuando consome PV durante o <color=#FFFFFF>Ataque Básico: Vento Ardente — Corte Nebuloso</color> ou durante os cortes consecutivos da <color=#FFFFFF>Assistência Imediata</color>, o Dano CRIT aumenta <color=#2BAD00>37,5%</color> e recupera 100% mais Adrenalina.\nNo estado de <color=#FFFFFF>Lâmina Fundida</color>, a Taxa CRIT de Manato é 10% maior, e ele causa <color=#2BAD00>15%</color> mais <color=#FF5521>Dano de Fogo</color>.",
+                "5": "Manato obtém mais Força Bruta conforme seus PV máximos. Cada PV a mais aumenta 0,1 pontos de Força Bruta.\nTodo <color=#FF5521>Dano de Fogo</color> dos ataques de Manato é considerado Dano Bruto, ignora a defesa do inimigo e usa o valor da Força Bruta como Multiplicador de Dano.\nQuando Manato usa <color=#FFFFFF>Ataque Especial: Retorno às Cinzas — Sacrifício</color> ou <color=#FFFFFF>Assistência Defensiva</color>, ele acumula <color=#FFFFFF>Coração Ardente</color>, até um máximo de 100 pontos. Com 75 pontos de <color=#FFFFFF>Coração Ardente</color>, Manato entra no estado de <color=#FFFFFF>Lâmina Fundida</color>, consumindo 3,3 pontos de <color=#FFFFFF>Coração Ardente</color> por segundo, e sai desse estado quando <color=#FFFFFF>Coração Ardente</color> se esgota.\nNo estado de <color=#FFFFFF>Lâmina Fundida</color>, o <color=#FFFFFF>Ataque Básico</color> de Manato é aprimorado e ele usa <color=#FFFFFF>Ataque Especial Reforçado: Retorno às Cinzas — Queda</color>.\nQuando consome PV durante o <color=#FFFFFF>Ataque Básico: Vento Ardente — Corte Nebuloso</color> ou durante os cortes consecutivos da <color=#FFFFFF>Assistência Imediata</color>, o Dano CRIT aumenta <color=#2BAD00>41,7%</color> e recupera 100% mais Adrenalina.\nNo estado de <color=#FFFFFF>Lâmina Fundida</color>, a Taxa CRIT de Manato é 10% maior, e ele causa <color=#2BAD00>16,7%</color> mais <color=#FF5521>Dano de Fogo</color>.",
+                "6": "Manato obtém mais Força Bruta conforme seus PV máximos. Cada PV a mais aumenta 0,1 pontos de Força Bruta.\nTodo <color=#FF5521>Dano de Fogo</color> dos ataques de Manato é considerado Dano Bruto, ignora a defesa do inimigo e usa o valor da Força Bruta como Multiplicador de Dano.\nQuando Manato usa <color=#FFFFFF>Ataque Especial: Retorno às Cinzas — Sacrifício</color> ou <color=#FFFFFF>Assistência Defensiva</color>, ele acumula <color=#FFFFFF>Coração Ardente</color>, até um máximo de 100 pontos. Com 75 pontos de <color=#FFFFFF>Coração Ardente</color>, Manato entra no estado de <color=#FFFFFF>Lâmina Fundida</color>, consumindo 3,3 pontos de <color=#FFFFFF>Coração Ardente</color> por segundo, e sai desse estado quando <color=#FFFFFF>Coração Ardente</color> se esgota.\nNo estado de <color=#FFFFFF>Lâmina Fundida</color>, o <color=#FFFFFF>Ataque Básico</color> de Manato é aprimorado e ele usa <color=#FFFFFF>Ataque Especial Reforçado: Retorno às Cinzas — Queda</color>.\nQuando consome PV durante o <color=#FFFFFF>Ataque Básico: Vento Ardente — Corte Nebuloso</color> ou durante os cortes consecutivos da <color=#FFFFFF>Assistência Imediata</color>, o Dano CRIT aumenta <color=#2BAD00>45,8%</color> e recupera 100% mais Adrenalina.\nNo estado de <color=#FFFFFF>Lâmina Fundida</color>, a Taxa CRIT de Manato é 10% maior, e ele causa <color=#2BAD00>18,3%</color> mais <color=#FF5521>Dano de Fogo</color>.",
+                "7": "Manato obtém mais Força Bruta conforme seus PV máximos. Cada PV a mais aumenta 0,1 pontos de Força Bruta.\nTodo <color=#FF5521>Dano de Fogo</color> dos ataques de Manato é considerado Dano Bruto, ignora a defesa do inimigo e usa o valor da Força Bruta como Multiplicador de Dano.\nQuando Manato usa <color=#FFFFFF>Ataque Especial: Retorno às Cinzas — Sacrifício</color> ou <color=#FFFFFF>Assistência Defensiva</color>, ele acumula <color=#FFFFFF>Coração Ardente</color>, até um máximo de 100 pontos. Com 75 pontos de <color=#FFFFFF>Coração Ardente</color>, Manato entra no estado de <color=#FFFFFF>Lâmina Fundida</color>, consumindo 3,3 pontos de <color=#FFFFFF>Coração Ardente</color> por segundo, e sai desse estado quando <color=#FFFFFF>Coração Ardente</color> se esgota.\nNo estado de <color=#FFFFFF>Lâmina Fundida</color>, o <color=#FFFFFF>Ataque Básico</color> de Manato é aprimorado e ele usa <color=#FFFFFF>Ataque Especial Reforçado: Retorno às Cinzas — Queda</color>.\nQuando consome PV durante o <color=#FFFFFF>Ataque Básico: Vento Ardente — Corte Nebuloso</color> ou durante os cortes consecutivos da <color=#FFFFFF>Assistência Imediata</color>, o Dano CRIT aumenta <color=#2BAD00>50%</color> e recupera 100% mais Adrenalina.\nNo estado de <color=#FFFFFF>Lâmina Fundida</color>, a Taxa CRIT de Manato é 10% maior, e ele causa <color=#2BAD00>20%</color> mais <color=#FF5521>Dano de Fogo</color>."
+            }
+        },
+        "MathSkill": {
+            "Title": "Habilidade Extra: Coração Recuperado",
+            "Description": "Quando há outro personagem do tipo <color=#FFFFFF>Assistência</color> ou <color=#FFFFFF>Atordoador</color> na equipe:\nQuando Manato usa o Supremo, obtém 8 acúmulos de Chama Remanescente e, quando realiza um Ataque em Cadeia, obtém 4 acúmulos de Chama Remanescente, por 60s, até o máximo de 20 acúmulos. Ativações repetidas reiniciam a duração. Se Manato tem menos de 100% de PV máximos quando executa os cortes consecutivos do <color=#FFFFFF>Ataque Básico: Vento Ardente — Corte Nebuloso</color> ou <color=#FFFFFF>Assistência Imediata</color>, ele consome um acúmulo de Chama Remanescente e recupera 2% dos PV máximos."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "144100001": {
+                "Title": "Ataque Básico: Lâmina Ardente",
+                "Description": "Pressione <IconMap:Icon_Normal> para ativar:\nRealiza até três cortes à frente e causa <color=#F0D12B>Dano Físico</color>.\nPressione <IconMap:Icon_Special> a cada golpe, para ativar o Vento Escaldante e causar <color=#FF5521>Dano de Fogo</color> adicional."
+            },
+            "144100002": {
+                "Title": "No estado Lâmina Fundida, pressione <IconMap:Icon_Normal> para ativar:\nRealiza até quatro cortes à frente e causa <color=#FF5521>Dano de Fogo</color>.\nCom 30% ou mais de PV ao ativar a habilidade, Manato consome 3,5% dos PV máximos."
+            },
+            "144100015": {
+                "Title": "Ataque Básico: Lâmina Ardente"
+            },
+            "144100016": {
+                "Description": "Multiplicador de Dano de 1º Golpe",
+                "Param": "{Skill:1441001, Prop:1001}"
+            },
+            "144100017": {
+                "Description": "Multiplicador de Dano de 2º Golpe",
+                "Param": "{Skill:1441002, Prop:1001}+{Skill:1441003, Prop:1001}"
+            },
+            "144100018": {
+                "Description": "Multiplicador de Dano de 3º Golpe",
+                "Param": "{Skill:1441004, Prop:1001}+{Skill:1441005, Prop:1001}"
+            },
+            "144100019": {
+                "Description": "Multiplicador de Dano de 1º Golpe (Na ativação de Vento Escaldante)",
+                "Param": "{Skill:1441001, Prop:1001}+{Skill:1441006, Prop:1001}"
+            },
+            "144100020": {
+                "Description": "Multiplicador de Dano de 2º Golpe (Na ativação de Vento Escaldante)",
+                "Param": "{Skill:1441002, Prop:1001}+{Skill:1441007, Prop:1001}"
+            },
+            "144100021": {
+                "Description": "Multiplicador de Dano de 3º Golpe (Na ativação de Vento Escaldante)",
+                "Param": "{Skill:1441004, Prop:1001}+{Skill:1441008, Prop:1001}"
+            },
+            "144100022": {
+                "Description": "Multiplicador de Atordoamento de 1º Golpe",
+                "Param": "{Skill:1441001, Prop:1002}"
+            },
+            "144100023": {
+                "Description": "Multiplicador de Atordoamento de 2º Golpe",
+                "Param": "{Skill:1441002, Prop:1002}+{Skill:1441003, Prop:1002}"
+            },
+            "144100024": {
+                "Description": "Multiplicador de Atordoamento de 3º Golpe",
+                "Param": "{Skill:1441004, Prop:1002}+{Skill:1441005, Prop:1002}"
+            },
+            "144100025": {
+                "Description": "Multiplicador de Atordoamento de 1º Golpe (Na ativação de Vento Escaldante)",
+                "Param": "{Skill:1441001, Prop:1002}+{Skill:1441006, Prop:1002}"
+            },
+            "144100026": {
+                "Description": "Multiplicador de Atordoamento de 2º Golpe (Na ativação de Vento Escaldante)",
+                "Param": "{Skill:1441002, Prop:1002}+{Skill:1441007, Prop:1002}"
+            },
+            "144100027": {
+                "Description": "Multiplicador de Atordoamento de 3º Golpe (Na ativação de Vento Escaldante)",
+                "Param": "{Skill:1441004, Prop:1002}+{Skill:1441008, Prop:1002}"
+            },
+            "144100028": {
+                "Title": "Ataque Básico: Vento Ardente — Corte Nebuloso"
+            },
+            "144100029": {
+                "Description": "Multiplicador de Dano de 1º Golpe",
+                "Param": "{Skill:1441009, Prop:1001}"
+            },
+            "144100030": {
+                "Description": "Multiplicador de Dano de 2º Golpe",
+                "Param": "{Skill:1441010, Prop:1001}"
+            },
+            "144100031": {
+                "Description": "Multiplicador de Dano de 3º Golpe",
+                "Param": "{Skill:1441011, Prop:1001}"
+            },
+            "144100032": {
+                "Description": "Multiplicador de Dano de 4º Golpe",
+                "Param": "{Skill:1441012, Prop:1001}"
+            },
+            "144100033": {
+                "Description": "Multiplicador de Atordoamento de 1º Golpe",
+                "Param": "{Skill:1441009, Prop:1002}"
+            },
+            "144100034": {
+                "Description": "Multiplicador de Atordoamento de 2º Golpe",
+                "Param": "{Skill:1441010, Prop:1002}"
+            },
+            "144100035": {
+                "Description": "Multiplicador de Atordoamento de 3º Golpe",
+                "Param": "{Skill:1441011, Prop:1002}"
+            },
+            "144100036": {
+                "Description": "Multiplicador de Atordoamento de 4º Golpe",
+                "Param": "{Skill:1441012, Prop:1002}"
+            }
+        },
+        "1": {
+            "144100003": {
+                "Title": "Ataque Especial: Retorno às Cinzas",
+                "Description": "Pressione <IconMap:Icon_Special> para ativar:\nCorta inimigos à frente e causa <color=#FF5521>Dano de Fogo</color>.\nSe sofrer ataque durante a execução da habilidade, ele recupera 20% dos PV perdidos ao cortar. O efeito de cura do <color=#FFFFFF>Ataque Especial: Retorno às Cinzas</color> e do <color=#FFFFFF>Ataque Especial: Retorno às Cinzas — Sacrifício</color> tem o mesmo tempo de recarga, e pode ser ativado uma vez a cada 20s.\nSe sofrer ataque durante a habilidade, o corte é aprimorado.\nO personagem sofre 40% menos dano durante a habilidade.\nDurante sua execução, o nível de Anti-Interrupção aumenta."
+            },
+            "144100004": {
+                "Title": "Ataque Especial: Retorno às Cinzas — Sacrifício",
+                "Description": "Mantenha <IconMap:Icon_Special> pressionado para ativar:\nComeça a carregar e consome até 10% dos PV máximos para ganhar 100 <color=#FFFFFF>Coração Ardente</color>. O consumo de PV não reduz os PV de Manato abaixo de 30% máximo.\nSolte o botão para ativar <color=#FFFFFF>Ataque Especial: Retorno às Cinzas</color>. Se ele sofrer um golpe durante a preparação para a habilidade, recupera 20% dos PV perdidos quando executar o corte. O efeito de cura do <color=#FFFFFF>Ataque Especial: Retorno às Cinzas</color> e do <color=#FFFFFF>Ataque Especial: Retorno às Cinzas — Sacrifício</color> tem o mesmo tempo de recarga, e pode ser ativado uma vez a cada 20s;\nSe sofre um ataque durante o carregamento, ou consegue carregar por determinado tempo, o golpe é aprimorado.\nDurante a execução, ele sofre 40% menos dano.\nDurante sua execução, o nível de Anti-Interrupção aumenta."
+            },
+            "144100005": {
+                "Title": "Ataque Especial Reforçado: Retorno às Cinzas — Queda",
+                "Description": "No estado de Lâmina Fundida, com Adrenalina suficiente, pressione <IconMap:Icon_SpecialReady_Rp> para ativar:\nSalta e executa um corte descendente contra inimigos à frente, causando alto <color=#FF5521>Dano de Fogo</color>.\nRecupera 33% dos PV máximos quando ativa a habilidade.\nO personagem fica invulnerável ao usar esta habilidade."
+            },
+            "144100037": {
+                "Title": "Ataque Especial: Retorno às Cinzas"
+            },
+            "144100038": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1441013, Prop:1001}"
+            },
+            "144100039": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1441013, Prop:1002}"
+            },
+            "144100040": {
+                "Description": "Multiplicador de Dano (Bloqueio carregado ou bem-sucedido)",
+                "Param": "{Skill:1441014, Prop:1001}"
+            },
+            "144100041": {
+                "Description": "Multiplicador de Atordoamento (Bloqueio carregado ou bem-sucedido)",
+                "Param": "{Skill:1441014, Prop:1002}"
+            },
+            "144100042": {
+                "Title": "Ataque Especial Reforçado: Retorno às Cinzas — Queda"
+            },
+            "144100043": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1441015, Prop:1001}"
+            },
+            "144100044": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1441015, Prop:1002}"
+            },
+            "144100045": {
+                "Description": "Consumo de Adrenalina",
+                "Param": "80"
+            }
+        },
+        "2": {
+            "144100006": {
+                "Title": "Esquiva: Lâmina Radiante",
+                "Description": "Pressione <IconMap:Icon_Evade> para ativar:\nUma esquiva rápida.\nO personagem fica invulnerável ao usar esta habilidade."
+            },
+            "144100007": {
+                "Title": "Ataque Rápido: Lâmina Radiante — Sempre Alerta",
+                "Description": "Pressione <IconMap:Icon_Normal> durante uma esquiva para ativar:\nAvança nos inimigos à frente com uma investida de ombro e causa <color=#F0D12B>Dano Físico</color>."
+            },
+            "144100008": {
+                "Title": "Contraesquiva: Lâmina Radiante — Varredura",
+                "Description": "Pressione <IconMap:Icon_Normal> durante uma <color=#FFFFFF>Esquiva Perfeita</color> para ativar:\nExecuta um corte e um soco contra os inimigos à frente, causando <color=#FF5521>Dano de Fogo</color>.\nO personagem fica invulnerável ao usar esta habilidade."
+            },
+            "144100046": {
+                "Title": "Ataque Rápido: Lâmina Radiante — Sempre Alerta"
+            },
+            "144100047": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1441016, Prop:1001}"
+            },
+            "144100048": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1441016, Prop:1002}"
+            },
+            "144100049": {
+                "Title": "Contraesquiva: Lâmina Radiante — Varredura"
+            },
+            "144100050": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1441017, Prop:1001}"
+            },
+            "144100051": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1441017, Prop:1002}"
+            }
+        },
+        "3": {
+            "144100009": {
+                "Title": "Ataque em Cadeia: Explosão Máxima",
+                "Description": "Quando um <color=#FFFFFF>Ataque em Cadeia</color> é acionado, selecione o personagem para ativar:\nLança a espada e avança contra os inimigos causando uma explosão e <color=#FF5521>Dano de Fogo</color> muito alto.\nO personagem fica invulnerável ao usar esta habilidade."
+            },
+            "144100010": {
+                "Title": "Supremo: Musou Aratama",
+                "Description": "Com o Índice de dB no <color=#FFFFFF>Máximo</color>, pressione <IconMap:Icon_UltimateReady> para ativar:\nSalta e faz um corte descendente contra os inimigos à frente, causando uma explosão e <color=#FF5521>Dano de Fogo</color> muito alto.\nO personagem fica invulnerável ao usar esta habilidade."
+            },
+            "144100052": {
+                "Title": "Ataque em Cadeia: Explosão Máxima"
+            },
+            "144100053": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1441018, Prop:1001}"
+            },
+            "144100054": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1441018, Prop:1002}"
+            },
+            "144100055": {
+                "Title": "Supremo: Musou Aratama"
+            },
+            "144100056": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1441019, Prop:1001}"
+            },
+            "144100057": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1441019, Prop:1002}"
+            }
+        },
+        "6": {
+            "144100012": {
+                "Title": "Assistência Reativa: Sombra Solitária — Reagrupar",
+                "Description": "Quando o personagem ativo for lançado para o alto, pressione <IconMap:Icon_Switch> para ativar:\nCorta e golpeia os inimigos à frente e causa <color=#FF5521>Dano de Fogo</color>.\nO personagem fica invulnerável ao usar esta habilidade."
+            },
+            "144100013": {
+                "Title": "Assistência Defensiva: Sombra Solitária — Montanhoso",
+                "Description": "Quando o personagem em campo está prestes a sofrer um ataque, pressione <IconMap:Icon_Switch> para ativar:\nBloqueia o ataque inimigo, causa Atordoamento alto e <color=#FF5521>Dano de Fogo</color>.\nRecupera 75 de <color=#FFFFFF>Coração Ardente</color> quando ativa a habilidade.\nO personagem fica invulnerável ao usar esta habilidade."
+            },
+            "144100014": {
+                "Title": "Assistência Imediata: Sombra Solitária — Presa Quebrada",
+                "Description": "Pressione <IconMap:Icon_Normal> após uma <color=#FFFFFF>Assistência Defensiva</color>, para ativar:\nRealiza vários cortes contra inimigos à frente e causa <color=#FF5521>Dano de Fogo</color>.\nPressione continuamente, para realizar até 7 cortes consecutivos adicionais contra os inimigos.\nDurante os cortes consecutivos, se Manato tem 30% ou mais de PV, ele consome 2% dos PV máximos.\nO personagem fica invulnerável ao usar esta habilidade."
+            },
+            "144100058": {
+                "Title": "Assistência Reativa: Sombra Solitária — Reagrupar"
+            },
+            "144100059": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1441020, Prop:1001}"
+            },
+            "144100060": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1441020, Prop:1002}"
+            },
+            "144100061": {
+                "Title": "Assistência Defensiva: Sombra Solitária — Montanhoso"
+            },
+            "144100062": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1441026, Prop:1001}"
+            },
+            "144100063": {
+                "Description": "Multiplicador de Atordoamento de Defensiva Leve",
+                "Param": "{Skill:1441021, Prop:1002}"
+            },
+            "144100064": {
+                "Description": "Multiplicador de Atordoamento de Defensiva Pesada",
+                "Param": "{Skill:1441022, Prop:1002}"
+            },
+            "144100065": {
+                "Description": "Multiplicador de Atordoamento de Defensiva em Cadeia",
+                "Param": "{Skill:1441023, Prop:1002}"
+            },
+            "144100066": {
+                "Title": "Assistência Imediata: Sombra Solitária — Presa Quebrada"
+            },
+            "144100067": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1441024, Prop:1001}"
+            },
+            "144100068": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1441024, Prop:1002}"
+            },
+            "144100069": {
+                "Description": "Multiplicador de Dano Máximo de Combo",
+                "Param": "{Skill:1441024, Prop:1001}+{Skill:1441025, Prop:1001}"
+            },
+            "144100070": {
+                "Description": "Multiplicador de Atordoamento Máximo de Combo",
+                "Param": "{Skill:1441024, Prop:1002}+{Skill:1441025, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1441001": {
+            "DamageValue": 2870,
+            "DamageGrowth": 270,
+            "DazeValue": 2690,
+            "DazeGrowth": 130
+        },
+        "1441002": {
+            "DamageValue": 3820,
+            "DamageGrowth": 350,
+            "DazeValue": 3620,
+            "DazeGrowth": 170
+        },
+        "1441003": {
+            "DamageValue": 4450,
+            "DamageGrowth": 410,
+            "DazeValue": 4310,
+            "DazeGrowth": 200
+        },
+        "1441004": {
+            "DamageValue": 6000,
+            "DamageGrowth": 550,
+            "DazeValue": 5900,
+            "DazeGrowth": 270
+        },
+        "1441005": {
+            "DamageValue": 7460,
+            "DamageGrowth": 680,
+            "DazeValue": 7430,
+            "DazeGrowth": 340
+        },
+        "1441006": {
+            "DamageValue": 3440,
+            "DamageGrowth": 320,
+            "DazeValue": 3050,
+            "DazeGrowth": 140
+        },
+        "1441007": {
+            "DamageValue": 5730,
+            "DamageGrowth": 530,
+            "DazeValue": 5510,
+            "DazeGrowth": 260
+        },
+        "1441008": {
+            "DamageValue": 8330,
+            "DamageGrowth": 760,
+            "DazeValue": 8260,
+            "DazeGrowth": 380
+        },
+        "1441009": {
+            "DamageValue": 5310,
+            "DamageGrowth": 490,
+            "DazeValue": 3880,
+            "DazeGrowth": 180
+        },
+        "1441010": {
+            "DamageValue": 11120,
+            "DamageGrowth": 1020,
+            "DazeValue": 8740,
+            "DazeGrowth": 400
+        },
+        "1441011": {
+            "DamageValue": 15450,
+            "DamageGrowth": 1410,
+            "DazeValue": 14160,
+            "DazeGrowth": 650
+        },
+        "1441012": {
+            "DamageValue": 23780,
+            "DamageGrowth": 2170,
+            "DazeValue": 21750,
+            "DazeGrowth": 990
+        },
+        "1441013": {
+            "DamageValue": 5070,
+            "DamageGrowth": 470,
+            "DazeValue": 4760,
+            "DazeGrowth": 220
+        },
+        "1441014": {
+            "DamageValue": 13070,
+            "DamageGrowth": 1190,
+            "DazeValue": 12260,
+            "DazeGrowth": 560
+        },
+        "1441015": {
+            "DamageValue": 65260,
+            "DamageGrowth": 5940,
+            "DazeValue": 66220,
+            "DazeGrowth": 3010
+        },
+        "1441016": {
+            "DamageValue": 5870,
+            "DamageGrowth": 540,
+            "DazeValue": 3670,
+            "DazeGrowth": 170
+        },
+        "1441017": {
+            "DamageValue": 19800,
+            "DamageGrowth": 1800,
+            "DazeValue": 21340,
+            "DazeGrowth": 970
+        },
+        "1441018": {
+            "DamageValue": 48330,
+            "DamageGrowth": 4400,
+            "DazeValue": 20510,
+            "DazeGrowth": 940
+        },
+        "1441019": {
+            "DamageValue": 156230,
+            "DamageGrowth": 14210,
+            "DazeValue": 34840,
+            "DazeGrowth": 1590
+        },
+        "1441020": {
+            "DamageValue": 9070,
+            "DamageGrowth": 830,
+            "DazeValue": 5670,
+            "DazeGrowth": 260
+        },
+        "1441021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 24670,
+            "DazeGrowth": 1130
+        },
+        "1441022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 31170,
+            "DazeGrowth": 1420
+        },
+        "1441023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15170,
+            "DazeGrowth": 690
+        },
+        "1441024": {
+            "DamageValue": 16670,
+            "DamageGrowth": 1520,
+            "DazeValue": 27090,
+            "DazeGrowth": 1240
+        },
+        "1441025": {
+            "DamageValue": 40340,
+            "DamageGrowth": 3670,
+            "DazeValue": 21000,
+            "DazeGrowth": 960
+        },
+        "1441026": {
+            "DamageValue": 4000,
+            "DamageGrowth": 370,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

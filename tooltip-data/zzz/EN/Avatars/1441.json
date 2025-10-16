@@ -1,0 +1,494 @@
+{
+    "Name": "Manato",
+    "ElementTypes": [
+        "Fire"
+    ],
+    "Specialty": {
+        "Id": 6,
+        "Name": "Rupture"
+    },
+    "Talents": {
+        "1": {
+            "Title": "Drifter's Rules of Survival",
+            "Description": "Whenever Manato loses HP, the amount of HP lost is tallied. Each 1% of his Max HP tallied increases the <color=#FF5521>Fire DMG</color> of <color=#FFFFFF>Assist Follow-Ups</color> and <color=#FFFFFF>Basic Attacks</color> by 0.4%, up to a max of 20%.",
+            "Lore": "Unfortunate children are all alike.\nThe once-kind voices, the warm lights, the joyful promises... all vanished without a farewell. Being formless, even the sharpest fangs could not hold them, nor the sharpest claws grasp them.\n\"I can eat just about anything, and I'm not too afraid of the cold — if there's a 'secret to surviving,' maybe it's just that.\""
+        },
+        "2": {
+            "Title": "Day & Night, Kitchen & Love",
+            "Description": "While in the <color=#FFFFFF>Molten Edge</color> state, Manato ignores 8% of a target's <color=#FF5521>Fire RES</color>. After being hit by an enemy while using <color=#FFFFFF>Special Attack: Return to Ashes</color> or <color=#FFFFFF>Special Attack: Return to Ashes - Sacrifice</color>, press <IconMap:Icon_Normal> to trigger an <color=#FFFFFF>Assist Follow-Up</color>.",
+            "Lore": "Perhaps this is what a peaceful family is — Manato, A-Cing, and A-Yuet all think of themselves as the fortunate \"child picked up and brought home.\"\nIf there's anything left worth arguing about, it's probably just \"who should eat the last bit of vegetables.\"\n\"It doesn't taste good? I'll ask at Yum Cha Sin if maybe I made a mistake somewhere...\"\n\"...Trade secret?! But last time... I just stood there and the chef told me everything.\""
+        },
+        "3": {
+            "Title": "Enter the Realm of Urban Legends",
+            "Description": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2",
+            "Lore": "Getting established on a forum starts with a memorable nickname — everyone thinks they're bad at it, but for a dog Thiren who sometimes has to stay back for make-up exams in literature, it's especially tough.\n\"...You already know it, don't you? It's, uh... ahem, SailumeSadLoneGhost\"\n\"—You heard me!\"\n\"Damn it. One of these days, I'm changing it to 'Mention My Old Name Again and I'll See You in the Hollow.'\""
+        },
+        "4": {
+            "Title": "Childhood Oath",
+            "Description": "Max HP increases by 8%. During <color=#FFFFFF>Special Attack: Return to Ashes</color> and <color=#FFFFFF>Special Attack: Return to Ashes - Sacrifice</color>, when Manato takes fatal DMG, he remains in battle, with his HP not dropping below 1. This effect can trigger once every 10s.",
+            "Lore": "Maybe every teenager imagines themselves as a lone wolf with cold eyes... but Manato had an edge in that regard.\nIf not for the drowned ideals, he could have gone on pretending nothing had ever happened, just like everyone else.\n\"Like I said, that was just how I thought when I was eight—\"\n\"So this is what a 'friend' is... You didn't treat me like I was fragile, but sometimes you don't treat me like a person either.\""
+        },
+        "5": {
+            "Title": "Lone Shadow Returns to the Pack",
+            "Description": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2",
+            "Lore": "In truth, despite the barrier his appearance put up, Manato was popular with everyone.\nSome made friends with him, some looked to him for protection, and some... tried to rope him into advertising.\n\"Sorry, I'm probably not the right choice to promote your shop.\"\n\"As for 'bench pressing,' I've never done it — unless you're referring to... being pinned by Ethereals and pushing up my greatsword to keep their claws off me?\""
+        },
+        "6": {
+            "Title": "Beyond Dreams of the Past",
+            "Description": "When <color=#FFFFFF>Special Attack: Return to Ashes</color> hits a Stunned enemy, Manato gains 75 Blazing Heart and 4 stacks of Remnant Flame, and pressing <IconMap:Icon_Normal> will launch an <color=#FFFFFF>Assist Follow-Up</color>. This Remnant Flame effect can trigger once every 20s. When his <color=#FFFFFF>Assist Follow-Up</color> hits an enemy, Manato's <color=#FF5521>Fire DMG</color> increases by 3% for 8s, stacking up to 5 times. Repeated triggers reset the duration.",
+            "Lore": "Manato set aside the dream of lone courage and embraced the friends he held dear.\nOf course, these friends could still cause him trouble, like at Waifei Peninsula's specialty soup shop.\n\"When I said I'd cover the rear, I didn't mean while drinking coconut chicken soup.\"\n\"Then how come I'm the one on the front lines when it's scorpion soup?\"\n...But he charged ahead anyway."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Core Passive: Mighty Molten Edge",
+            "DescriptionByLevel": {
+                "1": "Manato gains extra Sheer Force based on his Max HP, with every 1 point of Max HP increasing Sheer Force by 0.1.\nAll <color=#FF5521>Fire DMG</color> Manato deals is Sheer DMG, ignoring enemy DEF and using his Sheer Force stat as the DMG Multiplier.\nWhen Manato uses <color=#FFFFFF>Special Attack: Return to Ashes - Sacrifice</color> or a <color=#FFFFFF>Defensive Assist</color>, he accumulates <color=#FFFFFF>Blazing Heart</color>, up to a maximum of 100 points. At 75 <color=#FFFFFF>Blazing Heart</color>, Manato enters the <color=#FFFFFF>Molten Edge</color> state. While in the <color=#FFFFFF>Molten Edge</color> state, Manato consumes 3.3 <color=#FFFFFF>Blazing Heart</color> per second. When <color=#FFFFFF>Blazing Heart</color> is fully depleted, he exits <color=#FFFFFF>Molten Edge</color>.\nWhile in the <color=#FFFFFF>Molten Edge</color> state, Manato's <color=#FFFFFF>Basic Attacks</color> are enhanced, and he can use <color=#FFFFFF>EX Special Attack: Return to Ashes - Fall</color>.\nWhen consuming HP during <color=#FFFFFF>Basic Attack: Blazing Wind - Misty Slash</color> or during the consecutive slashes from an <color=#FFFFFF>Assist Follow-Up</color>, that attack's CRIT DMG increases by <color=#2BAD00>25%</color>, and the Adrenaline Generation Rate increases by 100%.\nWhile in the <color=#FFFFFF>Molten Edge</color> state, Manato's CRIT Rate increases by 10%, and his <color=#FF5521>Fire DMG</color> increases by <color=#2BAD00>10%</color>.",
+                "2": "Manato gains extra Sheer Force based on his Max HP, with every 1 point of Max HP increasing Sheer Force by 0.1.\nAll <color=#FF5521>Fire DMG</color> Manato deals is Sheer DMG, ignoring enemy DEF and using his Sheer Force stat as the DMG Multiplier.\nWhen Manato uses <color=#FFFFFF>Special Attack: Return to Ashes - Sacrifice</color> or a <color=#FFFFFF>Defensive Assist</color>, he accumulates <color=#FFFFFF>Blazing Heart</color>, up to a maximum of 100 points. At 75 <color=#FFFFFF>Blazing Heart</color>, Manato enters the <color=#FFFFFF>Molten Edge</color> state. While in the <color=#FFFFFF>Molten Edge</color> state, Manato consumes 3.3 <color=#FFFFFF>Blazing Heart</color> per second. When <color=#FFFFFF>Blazing Heart</color> is fully depleted, he exits <color=#FFFFFF>Molten Edge</color>.\nWhile in the <color=#FFFFFF>Molten Edge</color> state, Manato's <color=#FFFFFF>Basic Attacks</color> are enhanced, and he can use <color=#FFFFFF>EX Special Attack: Return to Ashes - Fall</color>.\nWhen consuming HP during <color=#FFFFFF>Basic Attack: Blazing Wind - Misty Slash</color> or during the consecutive slashes from an <color=#FFFFFF>Assist Follow-Up</color>, that attack's CRIT DMG increases by <color=#2BAD00>29.2%</color>, and the Adrenaline Generation Rate increases by 100%.\nWhile in the <color=#FFFFFF>Molten Edge</color> state, Manato's CRIT Rate increases by 10%, and his <color=#FF5521>Fire DMG</color> increases by <color=#2BAD00>11.7%</color>.",
+                "3": "Manato gains extra Sheer Force based on his Max HP, with every 1 point of Max HP increasing Sheer Force by 0.1.\nAll <color=#FF5521>Fire DMG</color> Manato deals is Sheer DMG, ignoring enemy DEF and using his Sheer Force stat as the DMG Multiplier.\nWhen Manato uses <color=#FFFFFF>Special Attack: Return to Ashes - Sacrifice</color> or a <color=#FFFFFF>Defensive Assist</color>, he accumulates <color=#FFFFFF>Blazing Heart</color>, up to a maximum of 100 points. At 75 <color=#FFFFFF>Blazing Heart</color>, Manato enters the <color=#FFFFFF>Molten Edge</color> state. While in the <color=#FFFFFF>Molten Edge</color> state, Manato consumes 3.3 <color=#FFFFFF>Blazing Heart</color> per second. When <color=#FFFFFF>Blazing Heart</color> is fully depleted, he exits <color=#FFFFFF>Molten Edge</color>.\nWhile in the <color=#FFFFFF>Molten Edge</color> state, Manato's <color=#FFFFFF>Basic Attacks</color> are enhanced, and he can use <color=#FFFFFF>EX Special Attack: Return to Ashes - Fall</color>.\nWhen consuming HP during <color=#FFFFFF>Basic Attack: Blazing Wind - Misty Slash</color> or during the consecutive slashes from an <color=#FFFFFF>Assist Follow-Up</color>, that attack's CRIT DMG increases by <color=#2BAD00>33.3%</color>, and the Adrenaline Generation Rate increases by 100%.\nWhile in the <color=#FFFFFF>Molten Edge</color> state, Manato's CRIT Rate increases by 10%, and his <color=#FF5521>Fire DMG</color> increases by <color=#2BAD00>13.3%</color>.",
+                "4": "Manato gains extra Sheer Force based on his Max HP, with every 1 point of Max HP increasing Sheer Force by 0.1.\nAll <color=#FF5521>Fire DMG</color> Manato deals is Sheer DMG, ignoring enemy DEF and using his Sheer Force stat as the DMG Multiplier.\nWhen Manato uses <color=#FFFFFF>Special Attack: Return to Ashes - Sacrifice</color> or a <color=#FFFFFF>Defensive Assist</color>, he accumulates <color=#FFFFFF>Blazing Heart</color>, up to a maximum of 100 points. At 75 <color=#FFFFFF>Blazing Heart</color>, Manato enters the <color=#FFFFFF>Molten Edge</color> state. While in the <color=#FFFFFF>Molten Edge</color> state, Manato consumes 3.3 <color=#FFFFFF>Blazing Heart</color> per second. When <color=#FFFFFF>Blazing Heart</color> is fully depleted, he exits <color=#FFFFFF>Molten Edge</color>.\nWhile in the <color=#FFFFFF>Molten Edge</color> state, Manato's <color=#FFFFFF>Basic Attacks</color> are enhanced, and he can use <color=#FFFFFF>EX Special Attack: Return to Ashes - Fall</color>.\nWhen consuming HP during <color=#FFFFFF>Basic Attack: Blazing Wind - Misty Slash</color> or during the consecutive slashes from an <color=#FFFFFF>Assist Follow-Up</color>, that attack's CRIT DMG increases by <color=#2BAD00>37.5%</color>, and the Adrenaline Generation Rate increases by 100%.\nWhile in the <color=#FFFFFF>Molten Edge</color> state, Manato's CRIT Rate increases by 10%, and his <color=#FF5521>Fire DMG</color> increases by <color=#2BAD00>15%</color>.",
+                "5": "Manato gains extra Sheer Force based on his Max HP, with every 1 point of Max HP increasing Sheer Force by 0.1.\nAll <color=#FF5521>Fire DMG</color> Manato deals is Sheer DMG, ignoring enemy DEF and using his Sheer Force stat as the DMG Multiplier.\nWhen Manato uses <color=#FFFFFF>Special Attack: Return to Ashes - Sacrifice</color> or a <color=#FFFFFF>Defensive Assist</color>, he accumulates <color=#FFFFFF>Blazing Heart</color>, up to a maximum of 100 points. At 75 <color=#FFFFFF>Blazing Heart</color>, Manato enters the <color=#FFFFFF>Molten Edge</color> state. While in the <color=#FFFFFF>Molten Edge</color> state, Manato consumes 3.3 <color=#FFFFFF>Blazing Heart</color> per second. When <color=#FFFFFF>Blazing Heart</color> is fully depleted, he exits <color=#FFFFFF>Molten Edge</color>.\nWhile in the <color=#FFFFFF>Molten Edge</color> state, Manato's <color=#FFFFFF>Basic Attacks</color> are enhanced, and he can use <color=#FFFFFF>EX Special Attack: Return to Ashes - Fall</color>.\nWhen consuming HP during <color=#FFFFFF>Basic Attack: Blazing Wind - Misty Slash</color> or during the consecutive slashes from an <color=#FFFFFF>Assist Follow-Up</color>, that attack's CRIT DMG increases by <color=#2BAD00>41.7%</color>, and the Adrenaline Generation Rate increases by 100%.\nWhile in the <color=#FFFFFF>Molten Edge</color> state, Manato's CRIT Rate increases by 10%, and his <color=#FF5521>Fire DMG</color> increases by <color=#2BAD00>16.7%</color>.",
+                "6": "Manato gains extra Sheer Force based on his Max HP, with every 1 point of Max HP increasing Sheer Force by 0.1.\nAll <color=#FF5521>Fire DMG</color> Manato deals is Sheer DMG, ignoring enemy DEF and using his Sheer Force stat as the DMG Multiplier.\nWhen Manato uses <color=#FFFFFF>Special Attack: Return to Ashes - Sacrifice</color> or a <color=#FFFFFF>Defensive Assist</color>, he accumulates <color=#FFFFFF>Blazing Heart</color>, up to a maximum of 100 points. At 75 <color=#FFFFFF>Blazing Heart</color>, Manato enters the <color=#FFFFFF>Molten Edge</color> state. While in the <color=#FFFFFF>Molten Edge</color> state, Manato consumes 3.3 <color=#FFFFFF>Blazing Heart</color> per second. When <color=#FFFFFF>Blazing Heart</color> is fully depleted, he exits <color=#FFFFFF>Molten Edge</color>.\nWhile in the <color=#FFFFFF>Molten Edge</color> state, Manato's <color=#FFFFFF>Basic Attacks</color> are enhanced, and he can use <color=#FFFFFF>EX Special Attack: Return to Ashes - Fall</color>.\nWhen consuming HP during <color=#FFFFFF>Basic Attack: Blazing Wind - Misty Slash</color> or during the consecutive slashes from an <color=#FFFFFF>Assist Follow-Up</color>, that attack's CRIT DMG increases by <color=#2BAD00>45.8%</color>, and the Adrenaline Generation Rate increases by 100%.\nWhile in the <color=#FFFFFF>Molten Edge</color> state, Manato's CRIT Rate increases by 10%, and his <color=#FF5521>Fire DMG</color> increases by <color=#2BAD00>18.3%</color>.",
+                "7": "Manato gains extra Sheer Force based on his Max HP, with every 1 point of Max HP increasing Sheer Force by 0.1.\nAll <color=#FF5521>Fire DMG</color> Manato deals is Sheer DMG, ignoring enemy DEF and using his Sheer Force stat as the DMG Multiplier.\nWhen Manato uses <color=#FFFFFF>Special Attack: Return to Ashes - Sacrifice</color> or a <color=#FFFFFF>Defensive Assist</color>, he accumulates <color=#FFFFFF>Blazing Heart</color>, up to a maximum of 100 points. At 75 <color=#FFFFFF>Blazing Heart</color>, Manato enters the <color=#FFFFFF>Molten Edge</color> state. While in the <color=#FFFFFF>Molten Edge</color> state, Manato consumes 3.3 <color=#FFFFFF>Blazing Heart</color> per second. When <color=#FFFFFF>Blazing Heart</color> is fully depleted, he exits <color=#FFFFFF>Molten Edge</color>.\nWhile in the <color=#FFFFFF>Molten Edge</color> state, Manato's <color=#FFFFFF>Basic Attacks</color> are enhanced, and he can use <color=#FFFFFF>EX Special Attack: Return to Ashes - Fall</color>.\nWhen consuming HP during <color=#FFFFFF>Basic Attack: Blazing Wind - Misty Slash</color> or during the consecutive slashes from an <color=#FFFFFF>Assist Follow-Up</color>, that attack's CRIT DMG increases by <color=#2BAD00>50%</color>, and the Adrenaline Generation Rate increases by 100%.\nWhile in the <color=#FFFFFF>Molten Edge</color> state, Manato's CRIT Rate increases by 10%, and his <color=#FF5521>Fire DMG</color> increases by <color=#2BAD00>20%</color>."
+            }
+        },
+        "MathSkill": {
+            "Title": "Additional Ability: Rekindled Heart",
+            "Description": "When another character in your squad is a <color=#FFFFFF>Support</color> or <color=#FFFFFF>Stun</color> character:\nWhen Manato uses his Ultimate, he gains 8 stacks of Remnant Flame, and when using a Chain Attack, he gains 4 stacks of Remnant Flame, lasting 60s, stacking up to 20 times. Repeated triggers reset the duration. While launching <color=#FFFFFF>Basic Attack: Blazing Wind - Misty Slash</color> or during the consecutive slashes of an <color=#FFFFFF>Assist Follow-Up</color>, if his HP is below 100% of Max HP, one stack of Remnant Flame is consumed to restore 2% of his Max HP."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "144100001": {
+                "Title": "Basic Attack: Blazing Wind Slash",
+                "Description": "Press <IconMap:Icon_Normal> to activate:\nPerform up to three forward slashes, dealing <color=#F0D12B>Physical DMG</color>.\nDuring each slash, pressing <IconMap:Icon_Special> triggers Scorchwind, causing the attack to deal increased <color=#FF5521>Fire DMG</color>."
+            },
+            "144100002": {
+                "Title": "While in the Molten Edge state, press <IconMap:Icon_Normal> to activate:\nUnleash up to four forward slashes, dealing <color=#FF5521>Fire DMG</color>.\nIf Manato's HP is above 30% when the skill is activated, 3.5% of his Max HP will be consumed."
+            },
+            "144100015": {
+                "Title": "Basic Attack: Blazing Wind Slash"
+            },
+            "144100016": {
+                "Description": "1st-Hit DMG Multiplier",
+                "Param": "{Skill:1441001, Prop:1001}"
+            },
+            "144100017": {
+                "Description": "2nd-Hit DMG Multiplier",
+                "Param": "{Skill:1441002, Prop:1001}+{Skill:1441003, Prop:1001}"
+            },
+            "144100018": {
+                "Description": "3rd-Hit DMG Multiplier",
+                "Param": "{Skill:1441004, Prop:1001}+{Skill:1441005, Prop:1001}"
+            },
+            "144100019": {
+                "Description": "1st-Hit DMG Multiplier (Triggering Scorchwind)",
+                "Param": "{Skill:1441001, Prop:1001}+{Skill:1441006, Prop:1001}"
+            },
+            "144100020": {
+                "Description": "2nd-Hit DMG Multiplier (Triggering Scorchwind)",
+                "Param": "{Skill:1441002, Prop:1001}+{Skill:1441007, Prop:1001}"
+            },
+            "144100021": {
+                "Description": "3rd-Hit DMG Multiplier (Triggering Scorchwind)",
+                "Param": "{Skill:1441004, Prop:1001}+{Skill:1441008, Prop:1001}"
+            },
+            "144100022": {
+                "Description": "1st-Hit Daze Multiplier",
+                "Param": "{Skill:1441001, Prop:1002}"
+            },
+            "144100023": {
+                "Description": "2nd-Hit Daze Multiplier",
+                "Param": "{Skill:1441002, Prop:1002}+{Skill:1441003, Prop:1002}"
+            },
+            "144100024": {
+                "Description": "3rd-Hit Daze Multiplier",
+                "Param": "{Skill:1441004, Prop:1002}+{Skill:1441005, Prop:1002}"
+            },
+            "144100025": {
+                "Description": "1st-Hit Daze Multiplier (Triggering Scorchwind)",
+                "Param": "{Skill:1441001, Prop:1002}+{Skill:1441006, Prop:1002}"
+            },
+            "144100026": {
+                "Description": "2nd-Hit Daze Multiplier (Triggering Scorchwind)",
+                "Param": "{Skill:1441002, Prop:1002}+{Skill:1441007, Prop:1002}"
+            },
+            "144100027": {
+                "Description": "3rd-Hit Daze Multiplier (Triggering Scorchwind)",
+                "Param": "{Skill:1441004, Prop:1002}+{Skill:1441008, Prop:1002}"
+            },
+            "144100028": {
+                "Title": "Basic Attack: Blazing Wind - Misty Slash"
+            },
+            "144100029": {
+                "Description": "1st-Hit DMG Multiplier",
+                "Param": "{Skill:1441009, Prop:1001}"
+            },
+            "144100030": {
+                "Description": "2nd-Hit DMG Multiplier",
+                "Param": "{Skill:1441010, Prop:1001}"
+            },
+            "144100031": {
+                "Description": "3rd-Hit DMG Multiplier",
+                "Param": "{Skill:1441011, Prop:1001}"
+            },
+            "144100032": {
+                "Description": "4th-Hit DMG Multiplier",
+                "Param": "{Skill:1441012, Prop:1001}"
+            },
+            "144100033": {
+                "Description": "1st-Hit Daze Multiplier",
+                "Param": "{Skill:1441009, Prop:1002}"
+            },
+            "144100034": {
+                "Description": "2nd-Hit Daze Multiplier",
+                "Param": "{Skill:1441010, Prop:1002}"
+            },
+            "144100035": {
+                "Description": "3rd-Hit Daze Multiplier",
+                "Param": "{Skill:1441011, Prop:1002}"
+            },
+            "144100036": {
+                "Description": "4th-Hit Daze Multiplier",
+                "Param": "{Skill:1441012, Prop:1002}"
+            }
+        },
+        "1": {
+            "144100003": {
+                "Title": "Special Attack: Return to Ashes",
+                "Description": "Press <IconMap:Icon_Special> to activate:\nSlash forward at enemies, dealing <color=#FF5521>Fire DMG</color>.\nIf hit by an enemy during the skill, restore 20% of missing HP when unleashing the slash. The healing effects of <color=#FFFFFF>Special Attack: Return to Ashes</color> and <color=#FFFFFF>Special Attack: Return to Ashes - Sacrifice</color> have a shared cooldown and can trigger once every 20s.\nIf hit by an enemy during the skill, the slash is enhanced.\nDMG taken is reduced by 40% while using this skill.\nAnti-Interrupt level is increased while using this skill."
+            },
+            "144100004": {
+                "Title": "Special Attack: Return to Ashes - Sacrifice",
+                "Description": "Hold <IconMap:Icon_Special> to activate:\nEnter a charging state, consuming up to 10% of Max HP and gaining 100 <color=#FFFFFF>Blazing Heart</color>. HP consumption will at most reduce Manato's HP to 30% of Max HP.\nRelease the button to activate <color=#FFFFFF>Special Attack: Return to Ashes</color>. If struck during the skill, the slash heals 20% of missing HP. The healing effects of <color=#FFFFFF>Special Attack: Return to Ashes</color> and <color=#FFFFFF>Special Attack: Return to Ashes - Sacrifice</color> have a shared cooldown and can trigger once every 20s.\nIf hit by an enemy during the skill or if charging reaches a certain duration, the slash is enhanced.\nDMG taken is reduced by 40% while using this skill.\nAnti-Interrupt level is increased while using this skill."
+            },
+            "144100005": {
+                "Title": "EX Special Attack: Return to Ashes - Fall",
+                "Description": "While in the Molten Edge state and with sufficient Adrenaline, press <IconMap:Icon_SpecialReady_Rp> to activate:\nJump up and unleash a falling slash on enemies in front, dealing massive <color=#FF5521>Fire DMG</color>.\nUpon activating the skill, restore 33% of Max HP.\nCharacter is invulnerable while using this skill."
+            },
+            "144100037": {
+                "Title": "Special Attack: Return to Ashes"
+            },
+            "144100038": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1441013, Prop:1001}"
+            },
+            "144100039": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1441013, Prop:1002}"
+            },
+            "144100040": {
+                "Description": "DMG Multiplier (Charged or Successful Block)",
+                "Param": "{Skill:1441014, Prop:1001}"
+            },
+            "144100041": {
+                "Description": "Daze Multiplier (Charged or Successful Block)",
+                "Param": "{Skill:1441014, Prop:1002}"
+            },
+            "144100042": {
+                "Title": "EX Special Attack: Return to Ashes - Fall"
+            },
+            "144100043": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1441015, Prop:1001}"
+            },
+            "144100044": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1441015, Prop:1002}"
+            },
+            "144100045": {
+                "Description": "Adrenaline Cost",
+                "Param": "80"
+            }
+        },
+        "2": {
+            "144100006": {
+                "Title": "Dodge: Radiant Blade",
+                "Description": "Press <IconMap:Icon_Evade> to activate:\nA quick dash dodge.\nCharacter is invulnerable while using this skill."
+            },
+            "144100007": {
+                "Title": "Dash Attack: Radiant Blade - Zanshin",
+                "Description": "Press <IconMap:Icon_Normal> during a dodge to activate:\nPerform a shoulder slam forward, dealing <color=#F0D12B>Physical DMG</color>."
+            },
+            "144100008": {
+                "Title": "Dodge Counter: Radiant Blade - Battle Sweep",
+                "Description": "Press <IconMap:Icon_Normal> during a <color=#FFFFFF>Perfect Dodge</color> to activate:\nPerform a slash followed by a punch at enemies ahead, dealing <color=#FF5521>Fire DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "144100046": {
+                "Title": "Dash Attack: Radiant Blade - Zanshin"
+            },
+            "144100047": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1441016, Prop:1001}"
+            },
+            "144100048": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1441016, Prop:1002}"
+            },
+            "144100049": {
+                "Title": "Dodge Counter: Radiant Blade - Battle Sweep"
+            },
+            "144100050": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1441017, Prop:1001}"
+            },
+            "144100051": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1441017, Prop:1002}"
+            }
+        },
+        "3": {
+            "144100009": {
+                "Title": "Chain Attack: Blazing Eruption",
+                "Description": "When a <color=#FFFFFF>Chain Attack</color> is triggered, select the character to activate:\nHurls his sword forward, then charges the enemy to trigger an explosion, dealing massive <color=#FF5521>Fire DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "144100010": {
+                "Title": "Ultimate: Musou Aratama",
+                "Description": "When Decibel Rating is at <color=#FFFFFF>Maximum</color>, press <IconMap:Icon_UltimateReady> to activate:\nJump into the air and deliver a falling slash at enemies in front, followed by an explosion, dealing massive <color=#FF5521>Fire DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "144100052": {
+                "Title": "Chain Attack: Blazing Eruption"
+            },
+            "144100053": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1441018, Prop:1001}"
+            },
+            "144100054": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1441018, Prop:1002}"
+            },
+            "144100055": {
+                "Title": "Ultimate: Musou Aratama"
+            },
+            "144100056": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1441019, Prop:1001}"
+            },
+            "144100057": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1441019, Prop:1002}"
+            }
+        },
+        "6": {
+            "144100012": {
+                "Title": "Quick Assist: Lone Shadow - Regroup",
+                "Description": "When the active character is launched, press <IconMap:Icon_Switch> to activate:\nSlashes and punches enemies in front, dealing <color=#FF5521>Fire DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "144100013": {
+                "Title": "Defensive Assist: Lone Shadow - Mountain Stand",
+                "Description": "When the on-field character is about to be attacked, press <IconMap:Icon_Switch> to activate:\nParries the enemy's attack, inflicting massive Daze and dealing <color=#FF5521>Fire DMG</color>.\nGain 75 <color=#FFFFFF>Blazing Heart</color> upon activating this skill.\nCharacter is invulnerable while using this skill."
+            },
+            "144100014": {
+                "Title": "Assist Follow-Up: Lone Shadow - Breaking Fang",
+                "Description": "Press <IconMap:Icon_Normal> after a <color=#FFFFFF>Defensive Assist</color> to activate:\nUnleash multiple slashes at enemies ahead, dealing <color=#FF5521>Fire DMG</color>.\nRepeated presses allow up to 7 extra consecutive slashes.\nWhile chaining slashes, if Manato's HP is above 30%, 2% of Max HP is consumed.\nCharacter is invulnerable while using this skill."
+            },
+            "144100058": {
+                "Title": "Quick Assist: Lone Shadow - Regroup"
+            },
+            "144100059": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1441020, Prop:1001}"
+            },
+            "144100060": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1441020, Prop:1002}"
+            },
+            "144100061": {
+                "Title": "Defensive Assist: Lone Shadow - Mountain Stand"
+            },
+            "144100062": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1441026, Prop:1001}"
+            },
+            "144100063": {
+                "Description": "Light Defensive Daze Multiplier",
+                "Param": "{Skill:1441021, Prop:1002}"
+            },
+            "144100064": {
+                "Description": "Heavy Defensive Daze Multiplier",
+                "Param": "{Skill:1441022, Prop:1002}"
+            },
+            "144100065": {
+                "Description": "Chain Defensive Daze Multiplier",
+                "Param": "{Skill:1441023, Prop:1002}"
+            },
+            "144100066": {
+                "Title": "Assist Follow-Up: Lone Shadow - Breaking Fang"
+            },
+            "144100067": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1441024, Prop:1001}"
+            },
+            "144100068": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1441024, Prop:1002}"
+            },
+            "144100069": {
+                "Description": "Combo Maximum DMG Multiplier",
+                "Param": "{Skill:1441024, Prop:1001}+{Skill:1441025, Prop:1001}"
+            },
+            "144100070": {
+                "Description": "Combo Maximum Daze Multiplier",
+                "Param": "{Skill:1441024, Prop:1002}+{Skill:1441025, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1441001": {
+            "DamageValue": 2870,
+            "DamageGrowth": 270,
+            "DazeValue": 2690,
+            "DazeGrowth": 130
+        },
+        "1441002": {
+            "DamageValue": 3820,
+            "DamageGrowth": 350,
+            "DazeValue": 3620,
+            "DazeGrowth": 170
+        },
+        "1441003": {
+            "DamageValue": 4450,
+            "DamageGrowth": 410,
+            "DazeValue": 4310,
+            "DazeGrowth": 200
+        },
+        "1441004": {
+            "DamageValue": 6000,
+            "DamageGrowth": 550,
+            "DazeValue": 5900,
+            "DazeGrowth": 270
+        },
+        "1441005": {
+            "DamageValue": 7460,
+            "DamageGrowth": 680,
+            "DazeValue": 7430,
+            "DazeGrowth": 340
+        },
+        "1441006": {
+            "DamageValue": 3440,
+            "DamageGrowth": 320,
+            "DazeValue": 3050,
+            "DazeGrowth": 140
+        },
+        "1441007": {
+            "DamageValue": 5730,
+            "DamageGrowth": 530,
+            "DazeValue": 5510,
+            "DazeGrowth": 260
+        },
+        "1441008": {
+            "DamageValue": 8330,
+            "DamageGrowth": 760,
+            "DazeValue": 8260,
+            "DazeGrowth": 380
+        },
+        "1441009": {
+            "DamageValue": 5310,
+            "DamageGrowth": 490,
+            "DazeValue": 3880,
+            "DazeGrowth": 180
+        },
+        "1441010": {
+            "DamageValue": 11120,
+            "DamageGrowth": 1020,
+            "DazeValue": 8740,
+            "DazeGrowth": 400
+        },
+        "1441011": {
+            "DamageValue": 15450,
+            "DamageGrowth": 1410,
+            "DazeValue": 14160,
+            "DazeGrowth": 650
+        },
+        "1441012": {
+            "DamageValue": 23780,
+            "DamageGrowth": 2170,
+            "DazeValue": 21750,
+            "DazeGrowth": 990
+        },
+        "1441013": {
+            "DamageValue": 5070,
+            "DamageGrowth": 470,
+            "DazeValue": 4760,
+            "DazeGrowth": 220
+        },
+        "1441014": {
+            "DamageValue": 13070,
+            "DamageGrowth": 1190,
+            "DazeValue": 12260,
+            "DazeGrowth": 560
+        },
+        "1441015": {
+            "DamageValue": 65260,
+            "DamageGrowth": 5940,
+            "DazeValue": 66220,
+            "DazeGrowth": 3010
+        },
+        "1441016": {
+            "DamageValue": 5870,
+            "DamageGrowth": 540,
+            "DazeValue": 3670,
+            "DazeGrowth": 170
+        },
+        "1441017": {
+            "DamageValue": 19800,
+            "DamageGrowth": 1800,
+            "DazeValue": 21340,
+            "DazeGrowth": 970
+        },
+        "1441018": {
+            "DamageValue": 48330,
+            "DamageGrowth": 4400,
+            "DazeValue": 20510,
+            "DazeGrowth": 940
+        },
+        "1441019": {
+            "DamageValue": 156230,
+            "DamageGrowth": 14210,
+            "DazeValue": 34840,
+            "DazeGrowth": 1590
+        },
+        "1441020": {
+            "DamageValue": 9070,
+            "DamageGrowth": 830,
+            "DazeValue": 5670,
+            "DazeGrowth": 260
+        },
+        "1441021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 24670,
+            "DazeGrowth": 1130
+        },
+        "1441022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 31170,
+            "DazeGrowth": 1420
+        },
+        "1441023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15170,
+            "DazeGrowth": 690
+        },
+        "1441024": {
+            "DamageValue": 16670,
+            "DamageGrowth": 1520,
+            "DazeValue": 27090,
+            "DazeGrowth": 1240
+        },
+        "1441025": {
+            "DamageValue": 40340,
+            "DamageGrowth": 3670,
+            "DazeValue": 21000,
+            "DazeGrowth": 960
+        },
+        "1441026": {
+            "DamageValue": 4000,
+            "DamageGrowth": 370,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

@@ -1,0 +1,520 @@
+{
+    "Name": "Yidhari",
+    "ElementTypes": [
+        "Ice"
+    ],
+    "Specialty": {
+        "Id": 6,
+        "Name": "Destruidor"
+    },
+    "Talents": {
+        "1": {
+            "Title": "Nas Profundezas do Passado",
+            "Description": "Ativar o <color=#FFFFFF>Ataque Especial Reforçado</color> da Yidhari consome 10 pontos de Adrenalina a menos. Após <color=#FFFFFF>Ataque Especial Reforçado: Geada</color> ou <color=#FFFFFF>Ataque Especial Reforçado: Impacto Glacial</color>, mantenha o botão de Ataque Básico ou Ataque Especial pressionado para consumir 35 pontos de Adrenalina, não recuperar PV e conectar <color=#FFFFFF>Ataque Especial Reforçado: Impacto Glacial</color>. Este <color=#FFFFFF>Ataque Especial Reforçado: Impacto Glacial</color> recupera 100% mais PV que o original. Os <color=#FFFFFF>Ataques Básicos</color> e <color=#FFFFFF>Ataques Especiais Reforçados</color> de Yidhari ignoram 20% da <color=#98EFF0>resistência ao Gelo</color> do alvo.",
+            "Lore": "Ela mergulha no abismo impenetrável.\n\"Que lugar é esse, e para onde vai me levar?\"\nQuando a dúvida surge em seu coração, uma voz parece responder na escuridão:\n\"Este é o lugar do desconhecido, que abre caminho para todo o conhecimento.\"\nAs sombras caem com ela no abismo.\n\"Quem são elas, e por que suas sombras caem aqui?\"\nEla pensa nessa pergunta e a voz responde novamente:\n\"São pessoas que tiveram seus destinos interrompidos. O que cai aqui são seus passados.\"\nE a pequena garota abraça a própria solitude, e vai sendo levada para baixo com o peso das memórias.\nSeus olhos arregalados pela confusão veem apenas o frio, o silêncio e a solidão no fundo do abismo."
+        },
+        "2": {
+            "Title": "Quem Se Perdeu nos Pensamentos?",
+            "Description": "Yidhari causa 40% mais Dano CRIT. Ativar a <color=#FFFFFF>Friaca Monstra</color> ou a <color=#FFFFFF>Perseguição Esmagadora</color>, recupera 0,5 pontos de Adrenalina por segundo, por até 30s. Ativações repetidas reiniciam a duração.",
+            "Lore": "Os profundos pensamentos da garota repousam na escuridão.\nNão é seu infantil mundo da lua, não é nenhum devaneio.\nSua mente só vê as memórias que ela testemunhou.\n\"O que preciso fazer? O que mais preciso suportar?\"\n\"Ainda bem que sou eu, e não outra pessoa.\"\n\"Sei lidar com a solidão... eu acho.\"\nLendo as páginas das memórias, ela aceita serenamente o peso deste dom."
+        },
+        "3": {
+            "Title": "História que Ninguém Ouviu",
+            "Description": "Obtém +2 níveis de <color=#FFFFFF>Ataque Básico</color>, <color=#FFFFFF>Esquiva</color>, <color=#FFFFFF>Ataque de Assistência</color>, <color=#FFFFFF>Ataque Especial</color> e <color=#FFFFFF>Ataque em Cadeia</color>",
+            "Lore": "Então os humanos são assim... complexos.\nUma vida pode conter tanta alegria e tanta tristeza.\nMas tudo cai nesse vazio, para ser engolido, apagado e enterrado.\nNinguém mais se importa com as risadas sinceras, ou os choros penosos...\nCada uma dessas histórias nunca contadas ficará fundida no abismo da alma."
+        },
+        "4": {
+            "Title": "Florescer em Silêncio",
+            "Description": "Quando os PV de Yidhari diminuem na <color=#FFFFFF>Passiva Principal: Devaneio dos Sonhos</color>, ela recupera 10% de dB. Sob o efeito de <color=#FFFFFF>Véu de Éter: Nascente</color>, o Máx. de PV de Yidhari aumenta mais 5%.",
+            "Lore": "A flor treme ao florescer na escuridão, branca e translúcida, refletindo a única luz no fundo do abismo.\nUma alma frágil e forte ao mesmo tempo.\nEntre as inúmeras sombras que caem, derramando uma cascata de memórias, ela continua intocada, florescendo sozinha...\nMas, no fim, será que também padecerá e será levada sem nada onde se apoiar?"
+        },
+        "5": {
+            "Title": "Um Oásis Real",
+            "Description": "Obtém +2 níveis de <color=#FFFFFF>Ataque Básico</color>, <color=#FFFFFF>Esquiva</color>, <color=#FFFFFF>Ataque de Assistência</color>, <color=#FFFFFF>Ataque Especial</color> e <color=#FFFFFF>Ataque em Cadeia</color>",
+            "Lore": "\"Que olhos lindos... Ainda estou sonhando?\"\nAssim se encontraram pela primeira vez, o primeiro encontro com algo real.\nEntre o vazio e o absurdo, no infértil abismo que devora a tudo, ela vê aqueles olhos...\nEram um toque de verde irrompendo pelo deserto ardente, como um riacho nascendo do curso seco de um rio.\n\"Acho que encontrei... a esperança de que alguém me responderia.\""
+        },
+        "6": {
+            "Title": "Finalmente um Sonho de Paz",
+            "Description": "Quando Yidhari consome dB para ativar ou prolongar o <color=#FFFFFF>Véu de Éter: Nascente</color>, ela obtém <color=#FFFFFF>Iluminação</color> por 30s. Sob o estado de <color=#FFFFFF>Iluminação</color>, ela causa 25% mais Dano Bruto, e, quando sofre dano fatal pela primeira vez, fica com 1 PV, e torna-se invulnerável por 5s, enquanto recupera 25% de PV.",
+            "Lore": "Imersa nas ondas do passado, ela nunca tinha um momento de paz.\nSeu único refúgio era a própria solidão, onde escapava do barulho do mundo, mergulhava em histórias bizarras, buscando a quietude sob o véu da chuva fraca ou no abraço da água quente.\nAgora ela anda calmamente entre a multidão, sem se abalar com o barulho, ou o sol ardente, pois seu espírito não está mais envolvido pela ilusão, e a realidade é onde sua alma encontrou um porto seguro."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passiva Principal: Devaneio dos Sonhos",
+            "DescriptionByLevel": {
+                "1": "Yidhari ganha mais Força Bruta conforme seu máx. de PV: cada ponto a mais, aumenta 0,1 pontos de Força Bruta.\nTodo <color=#98EFF0>Dano de Gelo</color> dos golpes de Yidhari é considerado Dano Bruto, ignorando a defesa do inimigo e usando o valor de Força Bruta como seu Multiplicador de Dano. Quando Yidhari entra em combate, recupera 60 de Adrenalina. No Modo de Reconhecimento, esse efeito pode ser ativado uma vez a cada 180s.\nOs golpes de Yidhari causam mais dano, quanto menos PV ela tem.\nCom PV abaixo de 50%, o bônus chega ao seu valor máximo, e ela causa até <color=#2BAD00>50%</color> mais dano. Quando os PV voltam a 50%, o bônus máximo continua por mais 5s.\nYidhari recupera menos dB quando acerta os golpes, mas ganha 10 dB para cada 1% de PV perdido.",
+                "2": "Yidhari ganha mais Força Bruta conforme seu máx. de PV: cada ponto a mais, aumenta 0,1 pontos de Força Bruta.\nTodo <color=#98EFF0>Dano de Gelo</color> dos golpes de Yidhari é considerado Dano Bruto, ignorando a defesa do inimigo e usando o valor de Força Bruta como seu Multiplicador de Dano. Quando Yidhari entra em combate, recupera 60 de Adrenalina. No Modo de Reconhecimento, esse efeito pode ser ativado uma vez a cada 180s.\nOs golpes de Yidhari causam mais dano, quanto menos PV ela tem.\nCom PV abaixo de 50%, o bônus chega ao seu valor máximo, e ela causa até <color=#2BAD00>58%</color> mais dano. Quando os PV voltam a 50%, o bônus máximo continua por mais 5s.\nYidhari recupera menos dB quando acerta os golpes, mas ganha 10 dB para cada 1% de PV perdido.",
+                "3": "Yidhari ganha mais Força Bruta conforme seu máx. de PV: cada ponto a mais, aumenta 0,1 pontos de Força Bruta.\nTodo <color=#98EFF0>Dano de Gelo</color> dos golpes de Yidhari é considerado Dano Bruto, ignorando a defesa do inimigo e usando o valor de Força Bruta como seu Multiplicador de Dano. Quando Yidhari entra em combate, recupera 60 de Adrenalina. No Modo de Reconhecimento, esse efeito pode ser ativado uma vez a cada 180s.\nOs golpes de Yidhari causam mais dano, quanto menos PV ela tem.\nCom PV abaixo de 50%, o bônus chega ao seu valor máximo, e ela causa até <color=#2BAD00>66%</color> mais dano. Quando os PV voltam a 50%, o bônus máximo continua por mais 5s.\nYidhari recupera menos dB quando acerta os golpes, mas ganha 10 dB para cada 1% de PV perdido.",
+                "4": "Yidhari ganha mais Força Bruta conforme seu máx. de PV: cada ponto a mais, aumenta a Força Bruta em 0,1 pontos.\nTodo <color=#98EFF0>Dano de Gelo</color> dos golpes de Yidhari é considerado Dano Bruto, ignorando a defesa do inimigo e usando o valor de Força Bruta como seu Multiplicador de Dano. Quando Yidhari entra em combate, recupera 60 de Adrenalina. No Modo de Reconhecimento, esse efeito pode ser ativado uma vez a cada 180s.\nOs golpes de Yidhari causam mais dano, quanto menos PV ela tem.\nCom PV abaixo de 50%, o bônus chega ao seu valor máximo, e ela causa até <color=#2BAD00>74%</color> mais dano. Quando os PV voltarem a 50%, o bônus máximo continuará por mais 5s.\nYidhari recupera menos dB quando acerta os golpes, mas ganha 10 dB para cada 1% de PV perdido.",
+                "5": "Yidhari ganha mais Força Bruta conforme seu máx. de PV: cada ponto a mais, aumenta 0,1 pontos de Força Bruta.\nTodo <color=#98EFF0>Dano de Gelo</color> dos golpes de Yidhari é considerado Dano Bruto, ignorando a defesa do inimigo e usando o valor de Força Bruta como seu Multiplicador de Dano. Quando Yidhari entra em combate, recupera 60 de Adrenalina. No Modo de Reconhecimento, esse efeito pode ser ativado uma vez a cada 180s.\nOs golpes de Yidhari causam mais dano, quanto menos PV ela tem.\nCom PV abaixo de 50%, o bônus chega ao seu valor máximo, e ela causa até <color=#2BAD00>82%</color> mais dano. Quando os PV voltam a 50%, o bônus máximo continua por mais 5s.\nYidhari recupera menos dB quando acerta os golpes, mas ganha 10 dB para cada 1% de PV perdido.",
+                "6": "Yidhari ganha mais Força Bruta conforme seu máx. de PV: cada ponto a mais, aumenta 0,1 pontos de Força Bruta.\nTodo <color=#98EFF0>Dano de Gelo</color> dos golpes de Yidhari é considerado Dano Bruto, ignorando a defesa do inimigo e usando o valor de Força Bruta como seu Multiplicador de Dano. Quando Yidhari entra em combate, recupera 60 de Adrenalina. No Modo de Reconhecimento, esse efeito pode ser ativado uma vez a cada 180s.\nOs golpes de Yidhari causam mais dano, quanto menos PV ela tem.\nCom PV abaixo de 50%, o bônus chega ao seu valor máximo, e ela causa até <color=#2BAD00>90%</color> mais dano. Quando os PV voltam a 50%, o bônus máximo continua por mais 5s.\nYidhari recupera menos dB quando acerta os golpes, mas ganha 10 dB para cada 1% de PV perdido.",
+                "7": "Yidhari ganha mais Força Bruta conforme seu máx. de PV: cada ponto a mais, aumenta 0,1 pontos de Força Bruta.\nTodo <color=#98EFF0>Dano de Gelo</color> dos golpes de Yidhari é considerado Dano Bruto, ignorando a defesa do inimigo e usando o valor de Força Bruta como seu Multiplicador de Dano. Quando Yidhari entra em combate, recupera 60 de Adrenalina. No Modo de Reconhecimento, esse efeito pode ser ativado uma vez a cada 180s.\nOs golpes de Yidhari causam mais dano, quanto menos PV ela tem.\nCom PV abaixo de 50%, o bônus chega ao seu valor máximo, e ela causa até <color=#2BAD00>100%</color> mais dano. Quando os PV voltam a 50%, o bônus máximo continua por mais 5s.\nYidhari recupera menos dB quando acerta os golpes, mas ganha 10 dB para cada 1% de PV perdido."
+            }
+        },
+        "MathSkill": {
+            "Title": "Habilidade Extra: Conclusão da História",
+            "Description": "Com outro personagem <color=#FFFFFF>Atordoador</color> ou de <color=#FFFFFF>Assistência</color> na equipe:\nQuando Yidhari tem menos de 50% de PV, ela causa 30% mais Dano CRIT e sofre 25% menos dano.\nSob o <color=#FFFFFF>Véu de Éter: Nascente</color>, ela ainda obtém os seguintes efeitos:\nApós seu 3º golpe carregado do <color=#FFFFFF>Ataque Básico: Abraço da Geladura</color> e do <color=#FFFFFF>Ataque Especial Reforçado: Impacto Glacial</color>, usa tentáculos de gelo para atacar e causar dano adicional. Este efeito pode ser ativado uma vez a cada 12s.\nEstes ataques são considerados <color=#FFFFFF>Ataques Especiais Reforçados</color>, e o Multiplicador de Dano aumenta conforme o nível do Ataque Especial Reforçado."
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "105100001": {
+                "Title": "Ataque Básico: Esmagador de Ilusões",
+                "Description": "Pressione <IconMap:Icon_Normal> para ativar:\nRealiza até três golpes à frente e causa <color=#98EFF0>Dano de Gelo</color>.\nAo acertar o 3º golpe, Yidhari recupera 10% de PV."
+            },
+            "105100002": {
+                "Title": "Ataque Básico: Abraço da Geladura",
+                "Description": "Mantenha <IconMap:Icon_Normal> pressionado para ativar:\nYidhari começa a consumir PV para carregar energia, até um máximo de três níveis de carregamento. Solte <IconMap:Icon_Normal>, para Yidhari executar um poderoso golpe de martelo carregado à frente, conforme o nível de carregamento alcançado, e causar alto <color=#98EFF0>Dano de Gelo</color>.\nQuanto mais PV Yidhari tem, mais rápido é o consumo de PV durante o carregamento, até um máximo de 25% do Máx. de PV.\nCom 2 níveis de carregamento, execute o golpe e pressione <IconMap:Icon_Normal>, para conectar o 3º golpe do <color=#FFFFFF>Ataque Básico: Esmagador de Ilusões</color>. O dano deste <color=#FFFFFF>Ataque Básico: Esmagador de Ilusões</color> aumenta conforme o nível de carregamento, até um máximo de 30%.\nCom 3 níveis de carregamento, Yidhari tem mais Anti-Interrupção durante a execução da habilidade. Pressione <IconMap:Icon_Normal> para conectar antecipadamente com o golpe final."
+            },
+            "105100003": {
+                "Title": "Frio de Rachar",
+                "Description": "Se sofrer um ataque inimigo durante o carregamento ou giro do <color=#FFFFFF>Ataque Básico: Abraço da Geladura</color>, Yidhari usa os tentáculos para bloquear o ataque e sofre 25% menos dano.\nSe está carregando e o nível de carregamento não está completo, ela usa os tentáculos para contra-atacar o inimigo e volta à postura de carregamento, obtendo imediatamente 1 nível de carga e causando <color=#98EFF0>Dano de Gelo</color> aos inimigos à frente.\nDurante o Frio de Rachar, pressione <IconMap:Icon_Normal>, para Yidhari executar o golpe final descendente do <color=#FFFFFF>Ataque Básico: Abraço da Geladura</color> conforme o nível de carga que tem.\nDurante o Frio de Rachar, pressione <IconMap:Icon_Special> ou <IconMap:Icon_SpecialReady_Rp>, para Yidhari executar o <color=#FFFFFF>Ataque Especial: Rastro Glacial Implacável</color> e ativar a Friaca Monstra."
+            },
+            "105110001": {
+                "Title": "Ataque Básico: Esmagador de Ilusões"
+            },
+            "105110002": {
+                "Description": "Multiplicador de Dano de 1º Golpe",
+                "Param": "{Skill:1051001, Prop:1001}"
+            },
+            "105110003": {
+                "Description": "Multiplicador de Dano de 1º Golpe (ALT)",
+                "Param": "{Skill:1051004, Prop:1001}"
+            },
+            "105110004": {
+                "Description": "Multiplicador de Dano de 2º Golpe",
+                "Param": "{Skill:1051002, Prop:1001}"
+            },
+            "105110005": {
+                "Description": "Multiplicador de Dano de 3º Golpe",
+                "Param": "{Skill:1051003, Prop:1001}"
+            },
+            "105110006": {
+                "Description": "Multiplicador de Atordoamento de 1º Golpe",
+                "Param": "{Skill:1051001, Prop:1002}"
+            },
+            "105110007": {
+                "Description": "Multiplicador de Atordoamento de 1º Golpe (ALT)",
+                "Param": "{Skill:1051004, Prop:1002}"
+            },
+            "105110008": {
+                "Description": "Multiplicador de Atordoamento de 2º Golpe",
+                "Param": "{Skill:1051002, Prop:1002}"
+            },
+            "105110009": {
+                "Description": "Multiplicador de Atordoamento de 3º Golpe",
+                "Param": "{Skill:1051003, Prop:1002}"
+            },
+            "105110010": {
+                "Title": "Ataque Básico: Abraço da Geladura"
+            },
+            "105110011": {
+                "Description": "Multiplicador de Dano de Ataque Carregado de Nível 1",
+                "Param": "{Skill:1051005, Prop:1001}"
+            },
+            "105110012": {
+                "Description": "Multiplicador de Dano de Ataque Carregado de Nível 2",
+                "Param": "{Skill:1051006, Prop:1001}"
+            },
+            "105110013": {
+                "Description": "Multiplicador de Dano de Ataque Carregado Descendente de Nível 3",
+                "Param": "{Skill:1051007, Prop:1001}"
+            },
+            "105110014": {
+                "Description": "Multiplicador de Dano de Ataque Carregado Giratório de Nível 3",
+                "Param": "{Skill:1051008, Prop:1001}"
+            },
+            "105110015": {
+                "Description": "Multiplicador de Atordoamento de Ataque Carregado de Nível 1",
+                "Param": "{Skill:1051005, Prop:1002}"
+            },
+            "105110016": {
+                "Description": "Multiplicador de Atordoamento de Ataque Carregado de Nível 2",
+                "Param": "{Skill:1051006, Prop:1002}"
+            },
+            "105110017": {
+                "Description": "Multiplicador de Atordoamento de Ataque Carregado Descendente de Nível 3",
+                "Param": "{Skill:1051007, Prop:1002}"
+            },
+            "105110018": {
+                "Description": "Multiplicador de Atordoamento de Ataque Carregado Giratório de Nível 3",
+                "Param": "{Skill:1051008, Prop:1002}"
+            },
+            "105110019": {
+                "Title": "Frio de Rachar"
+            },
+            "105110020": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1051026, Prop:1001}"
+            },
+            "105110021": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1051026, Prop:1002}"
+            }
+        },
+        "1": {
+            "105100004": {
+                "Title": "Ataque Especial: Voltando da Lua",
+                "Description": "Pressione <IconMap:Icon_Special> para ativar:\nArremessa inimigos à frente para o ar e causa <color=#98EFF0>Dano de Gelo</color>.\nDurante sua execução, o nível de Anti-Interrupção aumenta."
+            },
+            "105100005": {
+                "Title": "Ataque Especial Reforçado: Geada",
+                "Description": "Com Adrenalina suficiente, pressione <IconMap:Icon_SpecialReady_Rp> para ativar:\nExecuta dois golpes ascendentes consecutivos e libera uma Névoa Gélida, que causa alto <color=#98EFF0>Dano de Gelo</color>.\nQuando atinge um inimigo com Ataque Especial Reforçado: Geada, ao final da habilidade, Yidhari recupera o equivalente a 33% dos PV que perdeu.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "105100006": {
+                "Title": "Ataque Especial: Rastro Glacial Implacável",
+                "Description": "Durante o carregamento ou giro do <color=#FFFFFF>Ataque Básico: Abraço da Geladura</color>, pressione <IconMap:Icon_Special> ou <IconMap:Icon_SpecialReady_Rp>, ou pressione <IconMap:Icon_Evade> enquanto mantém <IconMap:Icon_Normal> pressionado para ativar:\nLança os inimigos à frente para o ar e causa <color=#98EFF0>Dano de Gelo</color>.\nQuando o ataque da habilidade colide com o ataque do inimigo, ativa Friaca Monstra.\nCom Adrenalina suficiente, quando o ataque atinge um inimigo atordoado, ativa a Perseguição Esmagadora.\nA ativação de Friaca Monstra ou Perseguição Esmagadora aumenta instantaneamente o nível de carregamento até o máximo.\nDurante a execução da habilidade, pressione <IconMap:Icon_Normal> para Yidhari executar o Golpe Final de <color=#FFFFFF>Ataque Básico: Abraço da Geladura</color> conforme o nível de carregamento que tem no momento.\nDurante sua execução, o nível de Anti-Interrupção aumenta."
+            },
+            "105100007": {
+                "Title": "Ataque Especial Reforçado: Impacto Glacial",
+                "Description": "Com Adrenalina suficiente, ative Friaca Monstra ou Perseguição Esmagadora e pressione <IconMap:Icon_SpecialReady_Rp> ou <IconMap:Icon_Normal> para ativar:\nAvança em disparada, salta rapidamente e executa um poderoso ataque descendente que causa alto <color=#98EFF0>Dano de Gelo</color>.\nSe o <color=#FFFFFF>Ataque Especial Reforçado: Impacto Glacial</color> atinge um inimigo, recupera PV equivalente a 33% do PV que Yidhari perdeu, quando o ataque termina.\nSe ativado após a Friaca Monstra, recupera mais 15 de Adrenalina. Este efeito pode ser ativado 1 vez por segundo.\nApós ativar a habilidade, pressione <IconMap:Icon_Normal> para executar imediatamente o Golpe Final descendente do <color=#FFFFFF>Ataque Básico: Abraço da Geladura</color> conforme o nível de carga no momento.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "105110022": {
+                "Title": "Ataque Especial: Voltando da Lua"
+            },
+            "105110023": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1051009, Prop:1001}"
+            },
+            "105110024": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1051009, Prop:1002}"
+            },
+            "105110025": {
+                "Title": "Ataque Especial Reforçado: Geada"
+            },
+            "105110026": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1051010, Prop:1001}"
+            },
+            "105110027": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1051010, Prop:1002}"
+            },
+            "105110028": {
+                "Description": "Consumo de Adrenalina",
+                "Param": "60"
+            },
+            "105110029": {
+                "Title": "Ataque Especial: Rastro Glacial Implacável"
+            },
+            "105110030": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1051011, Prop:1001}"
+            },
+            "105110031": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1051011, Prop:1002}"
+            },
+            "105110032": {
+                "Title": "Ataque Especial Reforçado: Impacto Glacial"
+            },
+            "105110033": {
+                "Description": "Ataque Especial Reforçado: Multiplicador de Dano de Impacto Glacial",
+                "Param": "{Skill:1051012, Prop:1001}"
+            },
+            "105110034": {
+                "Description": "Multiplicador de Dano do Tentáculo de Gelo da Habilidade Extra",
+                "Param": "{Skill:1051024, Prop:1001}"
+            },
+            "105110035": {
+                "Description": "Ataque Especial Reforçado: Multiplicador de Atordoamento de Impacto Glacial",
+                "Param": "{Skill:1051012, Prop:1002}"
+            },
+            "105110036": {
+                "Description": "Consumo de Adrenalina",
+                "Param": "60"
+            }
+        },
+        "2": {
+            "105100008": {
+                "Title": "Esquiva: Lua Vai",
+                "Description": "Pressione <IconMap:Icon_Evade> para ativar:\nUma esquiva rápida.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "105100009": {
+                "Title": "Ataque Rápido: Abalo Gélido",
+                "Description": "Pressione <IconMap:Icon_Normal> durante uma esquiva para ativar:\nExecuta um golpe à frente e causa <color=#98EFF0>Dano de Gelo</color>."
+            },
+            "105100010": {
+                "Title": "Contraesquiva: Rebote Congelante",
+                "Description": "Pressione <IconMap:Icon_Normal> durante uma <color=#FFFFFF>Esquiva Perfeita</color> para ativar:\nCorta os inimigos à frente e causa <color=#98EFF0>Dano de Gelo</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "105110037": {
+                "Title": "Ataque Rápido: Abalo Gélido"
+            },
+            "105110038": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1051013, Prop:1001}"
+            },
+            "105110039": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1051013, Prop:1002}"
+            },
+            "105110040": {
+                "Title": "Contraesquiva: Rebote Congelante"
+            },
+            "105110041": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1051014, Prop:1001}"
+            },
+            "105110042": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1051014, Prop:1002}"
+            }
+        },
+        "3": {
+            "105100011": {
+                "Title": "Ataque em Cadeia: Pacto de Gelo",
+                "Description": "Quando um <color=#FFFFFF>Ataque em Cadeia</color> é acionado, selecione a personagem para ativar:\nLança um golpe poderoso nos inimigos em uma área pequena e causa <color=#98EFF0>Dano de Gelo</color> muito alto.\nSob o efeito de <color=#FFFFFF>Véu de Éter: Nascente</color>, ela usa os tentáculos para um Ataque Coordenado, aumentando ainda mais o poder do golpe.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "105100012": {
+                "Title": "Véu de Éter: Nascente",
+                "Description": "Com Índice de dB no <color=#FFFFFF>Máximo</color>, ao acertar o golpe final de <color=#FFFFFF>Ataque Básico: Abraço da Geladura</color>, <color=#FFFFFF>Ataque Especial Reforçado: Geada</color>, <color=#FFFFFF>Ataque Especial Reforçado: Impacto Glacial</color>, ou <color=#FFFFFF>Ataque em Cadeia: Pacto de Gelo</color>, consome 3000 dB e ativa <color=#FFFFFF>Véu de Éter: Nascente</color>. Durante o <color=#FFFFFF>Véu de Éter: Nascente</color>, o máx. de PV de toda a equipe aumenta 5%, por 30s. Ative novamente para prolongar a duração, até um máximo de 300s.\nQuando Yidhari está sob o efeito de <color=#FFFFFF>Véu de Éter: Nascente</color>, os PV são consumidos mais rapidamente durante o carregamento, e o <color=#FFFFFF>Ataque Básico: Abraço da Geladura</color> carrega mais rápido."
+            },
+            "105100013": {
+                "Title": "Supremo: Ato Final — Atravessando o Rio dos Arrependimentos",
+                "Description": "Quando Yidhari consome dB para ativar <color=#FFFFFF>Véu de Éter: Nascente</color>, pressione <IconMap:Icon_UltimateReady> nos próximos 30s para ativar:\nExecuta um poderoso golpe em uma grande área à frente e causa alto <color=#98EFF0>Dano de Gelo</color>.\nA personagem fica invulnerável ao usar esta habilidade.\nSempre que Yidhari consome dB para ativar o <color=#FFFFFF>Véu de Éter: Nascente</color>, ela pode executar o <color=#FFFFFF>Supremo: Ato Final — Atravessando o Rio dos Arrependimentos</color> uma vez."
+            },
+            "105110043": {
+                "Title": "Ataque em Cadeia: Pacto de Gelo"
+            },
+            "105110044": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1051015, Prop:1001}"
+            },
+            "105110045": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1051015, Prop:1002}"
+            },
+            "105110046": {
+                "Description": "Multiplicador de Dano no Véu de Éter: Nascente",
+                "Param": "{Skill:1051025, Prop:1001}"
+            },
+            "105110047": {
+                "Description": "Multiplicador de Atordoamento no Véu de Éter: Nascente",
+                "Param": "{Skill:1051025, Prop:1002}"
+            },
+            "105110048": {
+                "Title": "Supremo: Ato Final — Atravessando o Rio dos Arrependimentos"
+            },
+            "105110049": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1051016, Prop:1001}"
+            },
+            "105110050": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1051016, Prop:1002}"
+            }
+        },
+        "6": {
+            "105100015": {
+                "Title": "Assistência Reativa: Põe Gelo que Passa",
+                "Description": "Quando o personagem ativo for lançado para o alto, pressione <IconMap:Icon_Switch> para ativar:\nGolpeia os inimigos à frente e causa <color=#98EFF0>Dano de Gelo</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "105100016": {
+                "Title": "Assistência Defensiva: Bloqueio Impactante",
+                "Description": "Quando o personagem em campo está prestes a sofrer um ataque, pressione <IconMap:Icon_Switch> para ativar:\nBloqueia o ataque inimigo e causa muito Atordoamento.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "105100017": {
+                "Title": "Assistência Imediata: Frio que Bate",
+                "Description": "Pressione <IconMap:Icon_Normal> após uma <color=#FFFFFF>Assistência Defensiva</color> para ativar:\nGolpeia os inimigos à frente com um martelo de gelo e causa <color=#98EFF0>Dano de Gelo</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "105110051": {
+                "Title": "Assistência Reativa: Põe Gelo que Passa"
+            },
+            "105110052": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1051017, Prop:1001}"
+            },
+            "105110053": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1051017, Prop:1002}"
+            },
+            "105110054": {
+                "Title": "Assistência Defensiva: Bloqueio Impactante"
+            },
+            "105110055": {
+                "Description": "Multiplicador de Atordoamento de Defensiva Leve",
+                "Param": "{Skill:1051018, Prop:1002}"
+            },
+            "105110056": {
+                "Description": "Multiplicador de Atordoamento de Defensiva Pesada",
+                "Param": "{Skill:1051019, Prop:1002}"
+            },
+            "105110057": {
+                "Description": "Multiplicador de Atordoamento de Defensiva em Cadeia",
+                "Param": "{Skill:1051020, Prop:1002}"
+            },
+            "105110058": {
+                "Title": "Assistência Imediata: Frio que Bate"
+            },
+            "105110059": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1051021, Prop:1001}"
+            },
+            "105110060": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1051021, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1051001": {
+            "DamageValue": 6070,
+            "DamageGrowth": 560,
+            "DazeValue": 5940,
+            "DazeGrowth": 270
+        },
+        "1051002": {
+            "DamageValue": 8600,
+            "DamageGrowth": 790,
+            "DazeValue": 8730,
+            "DazeGrowth": 400
+        },
+        "1051003": {
+            "DamageValue": 20780,
+            "DamageGrowth": 1890,
+            "DazeValue": 17050,
+            "DazeGrowth": 780
+        },
+        "1051004": {
+            "DamageValue": 6240,
+            "DamageGrowth": 570,
+            "DazeValue": 6110,
+            "DazeGrowth": 280
+        },
+        "1051005": {
+            "DamageValue": 16140,
+            "DamageGrowth": 1470,
+            "DazeValue": 14820,
+            "DazeGrowth": 680
+        },
+        "1051006": {
+            "DamageValue": 25410,
+            "DamageGrowth": 2310,
+            "DazeValue": 26240,
+            "DazeGrowth": 1200
+        },
+        "1051007": {
+            "DamageValue": 34590,
+            "DamageGrowth": 3150,
+            "DazeValue": 28420,
+            "DazeGrowth": 1300
+        },
+        "1051008": {
+            "DamageValue": 23580,
+            "DamageGrowth": 2150,
+            "DazeValue": 17780,
+            "DazeGrowth": 810
+        },
+        "1051009": {
+            "DamageValue": 3960,
+            "DamageGrowth": 360,
+            "DazeValue": 4950,
+            "DazeGrowth": 230
+        },
+        "1051010": {
+            "DamageValue": 51020,
+            "DamageGrowth": 4640,
+            "DazeValue": 51360,
+            "DazeGrowth": 2340
+        },
+        "1051011": {
+            "DamageValue": 8370,
+            "DamageGrowth": 770,
+            "DazeValue": 10460,
+            "DazeGrowth": 480
+        },
+        "1051012": {
+            "DamageValue": 100760,
+            "DamageGrowth": 9160,
+            "DazeValue": 70180,
+            "DazeGrowth": 3190
+        },
+        "1051013": {
+            "DamageValue": 7050,
+            "DamageGrowth": 650,
+            "DazeValue": 4410,
+            "DazeGrowth": 210
+        },
+        "1051014": {
+            "DamageValue": 18530,
+            "DamageGrowth": 1690,
+            "DazeValue": 20360,
+            "DazeGrowth": 930
+        },
+        "1051015": {
+            "DamageValue": 57270,
+            "DamageGrowth": 5210,
+            "DazeValue": 27690,
+            "DazeGrowth": 1260
+        },
+        "1051016": {
+            "DamageValue": 152210,
+            "DamageGrowth": 13840,
+            "DazeValue": 19430,
+            "DazeGrowth": 890
+        },
+        "1051017": {
+            "DamageValue": 8220,
+            "DamageGrowth": 750,
+            "DazeValue": 5140,
+            "DazeGrowth": 240
+        },
+        "1051018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1051019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1051020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1051021": {
+            "DamageValue": 31340,
+            "DamageGrowth": 2850,
+            "DazeValue": 34190,
+            "DazeGrowth": 1560
+        },
+        "1051022": {
+            "DamageValue": 27500,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1051023": {
+            "DamageValue": 7920,
+            "DamageGrowth": 720,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1051024": {
+            "DamageValue": 7920,
+            "DamageGrowth": 720,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1051025": {
+            "DamageValue": 62990,
+            "DamageGrowth": 5730,
+            "DazeValue": 27690,
+            "DazeGrowth": 1260
+        },
+        "1051026": {
+            "DamageValue": 4870,
+            "DamageGrowth": 450,
+            "DazeValue": 3670,
+            "DazeGrowth": 170
+        }
+    }
+}

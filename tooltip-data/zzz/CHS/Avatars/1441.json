@@ -1,0 +1,494 @@
+{
+    "Name": "真斗",
+    "ElementTypes": [
+        "Fire"
+    ],
+    "Specialty": {
+        "Id": 6,
+        "Name": "命破"
+    },
+    "Talents": {
+        "1": {
+            "Title": "流浪生存法则",
+            "Description": "真斗的生命值降低时，累积已损失生命值，每有相当于最大生命值1%的已损失生命值使<color=#FFFFFF>[支援突击]</color>和<color=#FFFFFF>[普通攻击]</color>造成的<color=#FF5521>火属性伤害</color>提升0.4%，最多提升20%。",
+            "Lore": "不幸的孩子都是相似的。\n曾经亲切的呼唤、温暖的灯光、欢快的约定…未经告别就猝然沉没；因为无形无状，所以再尖锐的獠牙也无法咬紧、再锋利的指甲也无法攥住。\n「我什么都能吃，又不太怕冷——如果说有什么『活下来的秘诀』，也许就是这些。」"
+        },
+        "2": {
+            "Title": "昼夜、厨房与爱",
+            "Description": "<color=#FFFFFF>[熔锋]</color>状态下，真斗无视目标8%<color=#FF5521>火属性伤害抗性</color>；<color=#FFFFFF>[特殊技：归烬]</color>或<color=#FFFFFF>[特殊技：归烬·舍身]</color>发动期间受到敌人攻击后，点按 <IconMap:Icon_Normal> 可以发动<color=#FFFFFF>[支援突击]</color>。",
+            "Lore": "和谐的家庭关系也许就是这样——真斗、阿青和阿月，每个人都觉得自己是「被捡回家」的幸运儿。\n如果说还有什么值得争吵的事情，也许只剩下「最后一筷子青菜到底该谁吃」。\n「真的不好吃吗？那我下次再去饮茶仙问问，是不是有哪一步搞错了…」\n「…商业机密？！可是上次…我只是站着，那个厨师就全告诉我了。」"
+        },
+        "3": {
+            "Title": "踏入怪谈世界",
+            "Description": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[连携技]</color> 技能等级+2",
+            "Lore": "在论坛站稳脚跟的第一步，是起一个朗朗上口的昵称——所有人都觉得自己并不擅长此道，但对于偶尔要留校补考文学课的犬希人来说，这尤其困难。\n「…你不是已经知道了吗。就是那个、那个…咳，『泅珑de孤鬼』。」\n「——你明明就听清楚了！」\n「可恶。总有一天，我要改成『再提曾用名就空洞见』。」"
+        },
+        "4": {
+            "Title": "幼年的誓言",
+            "Description": "最大生命值提升8%；<color=#FFFFFF>[特殊技：归烬]</color>和<color=#FFFFFF>[特殊技：归烬·舍身]</color>发动期间，真斗受到致命伤害时不会在招式发动期间战败退场，生命值最多降低至1，10秒内最多触发一次。",
+            "Lore": "把自己想象成一头目光冷冽的孤狼，也许是每位青少年都会做的事…更何况，真斗在这件事上更具优势。\n如果不是溺想者的出现，他本可以和别人一样假装无事发生。\n「都说了，那只是我八岁时候的想法——」\n「『朋友』就是这样吗…你们确实没把我当作脆弱的人，但也没把我当作人。」"
+        },
+        "5": {
+            "Title": "孤影归群",
+            "Description": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[连携技]</color> 技能等级+2",
+            "Lore": "事实上，即使有外形上的天然隔阂，真斗依然很受大家的欢迎。\n有人与他结成了友谊、有人想要寻求他的庇护，还有人…想找他帮忙打广告。\n「抱歉，我可能不是很适合为你的店铺做宣传。」\n「可我没有做什么『卧推』。除非你指的是…被以骸按在地上的时候，用胳膊推起重剑、抵挡它们乱挠的爪子？」"
+        },
+        "6": {
+            "Title": "越过昔年梦",
+            "Description": "<color=#FFFFFF>[特殊技：归烬]</color>命中处于失衡状态下的敌人时，真斗回复75点[炽心]，获得4层[残焰]，点按 <IconMap:Icon_Normal> 可以发动<color=#FFFFFF>[支援突击]</color>，获得[残焰]的效果在20秒内最多触发一次；<color=#FFFFFF>[支援突击]</color>命中敌人时，造成的<color=#FF5521>火属性伤害</color>提升3%，持续8秒，最多叠加5层，重复触发刷新持续时间。",
+            "Lore": "越过昔年的孤勇之梦，真斗拥抱了珍视的朋友们。\n\n但他偶尔还是会因为「朋友」而受挫，比如…在卫非地特色老火靓汤店。\n「我说要为你们『殿后』，不是这种——在喝椰子鸡汤的时候殿后。」\n「可是，喝蝎子汤的时候，怎么又轮到我冲锋了？」\n…最后还是冲锋了。"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "核心被动：熔锋之势",
+            "DescriptionByLevel": {
+                "1": "真斗会额外根据自身最大生命值提高贯穿力，每1点最大生命值将提高0.1点贯穿力；\n真斗发动招式造成的<color=#FF5521>火属性伤害</color>均为贯穿伤害，无视敌人防御，使用贯穿力作为招式伤害倍率；\n真斗发动<color=#FFFFFF>[特殊技：归烬·舍身]</color>或<color=#FFFFFF>[招架支援]</color>时，会累积<color=#FFFFFF>[炽心]</color>，最多累积100点；当<color=#FFFFFF>[炽心]</color>累积至75点时，真斗将进入<color=#FFFFFF>[熔锋]</color>状态，<color=#FFFFFF>[熔锋]</color>状态下，真斗每秒消耗3.3点<color=#FFFFFF>[炽心]</color>，<color=#FFFFFF>[炽心]</color>耗尽时，退出<color=#FFFFFF>[熔锋]</color>状态；\n<color=#FFFFFF>[熔锋]</color>状态下，真斗的<color=#FFFFFF>[普通攻击]</color>获得强化，并可以发动<color=#FFFFFF>[强化特殊技：归烬·天坠]</color>；\n真斗在<color=#FFFFFF>[普通攻击：炽风·胧切]</color>或<color=#FFFFFF>[支援突击]</color>的连续斩击中消耗生命值时，使此次攻击的暴击伤害提升<color=#2BAD00>25%</color>，闪能回复效率提升100%；\n<color=#FFFFFF>[熔锋]</color>状态下，真斗的暴击率提升10%，<color=#FF5521>火属性伤害</color>提升<color=#2BAD00>10%</color>。",
+                "2": "真斗会额外根据自身最大生命值提高贯穿力，每1点最大生命值将提高0.1点贯穿力；\n真斗发动招式造成的<color=#FF5521>火属性伤害</color>均为贯穿伤害，无视敌人防御，使用贯穿力作为招式伤害倍率；\n真斗发动<color=#FFFFFF>[特殊技：归烬·舍身]</color>或<color=#FFFFFF>[招架支援]</color>时，会累积<color=#FFFFFF>[炽心]</color>，最多累积100点；当<color=#FFFFFF>[炽心]</color>累积至75点时，真斗将进入<color=#FFFFFF>[熔锋]</color>状态，<color=#FFFFFF>[熔锋]</color>状态下，真斗每秒消耗3.3点<color=#FFFFFF>[炽心]</color>，<color=#FFFFFF>[炽心]</color>耗尽时，退出<color=#FFFFFF>[熔锋]</color>状态；\n<color=#FFFFFF>[熔锋]</color>状态下，真斗的<color=#FFFFFF>[普通攻击]</color>获得强化，并可以发动<color=#FFFFFF>[强化特殊技：归烬·天坠]</color>；\n真斗在<color=#FFFFFF>[普通攻击：炽风·胧切]</color>或<color=#FFFFFF>[支援突击]</color>的连续斩击中消耗生命值时，使此次攻击的暴击伤害提升<color=#2BAD00>29.2%</color>，闪能回复效率提升100%；\n<color=#FFFFFF>[熔锋]</color>状态下，真斗的暴击率提升10%，<color=#FF5521>火属性伤害</color>提升<color=#2BAD00>11.7%</color>。",
+                "3": "真斗会额外根据自身最大生命值提高贯穿力，每1点最大生命值将提高0.1点贯穿力；\n真斗发动招式造成的<color=#FF5521>火属性伤害</color>均为贯穿伤害，无视敌人防御，使用贯穿力作为招式伤害倍率；\n真斗发动<color=#FFFFFF>[特殊技：归烬·舍身]</color>或<color=#FFFFFF>[招架支援]</color>时，会累积<color=#FFFFFF>[炽心]</color>，最多累积100点；当<color=#FFFFFF>[炽心]</color>累积至75点时，真斗将进入<color=#FFFFFF>[熔锋]</color>状态，<color=#FFFFFF>[熔锋]</color>状态下，真斗每秒消耗3.3点<color=#FFFFFF>[炽心]</color>，<color=#FFFFFF>[炽心]</color>耗尽时，退出<color=#FFFFFF>[熔锋]</color>状态；\n<color=#FFFFFF>[熔锋]</color>状态下，真斗的<color=#FFFFFF>[普通攻击]</color>获得强化，并可以发动<color=#FFFFFF>[强化特殊技：归烬·天坠]</color>；\n真斗在<color=#FFFFFF>[普通攻击：炽风·胧切]</color>或<color=#FFFFFF>[支援突击]</color>的连续斩击中消耗生命值时，使此次攻击的暴击伤害提升<color=#2BAD00>33.3%</color>，闪能回复效率提升100%；\n<color=#FFFFFF>[熔锋]</color>状态下，真斗的暴击率提升10%，<color=#FF5521>火属性伤害</color>提升<color=#2BAD00>13.3%</color>。",
+                "4": "真斗会额外根据自身最大生命值提高贯穿力，每1点最大生命值将提高0.1点贯穿力；\n真斗发动招式造成的<color=#FF5521>火属性伤害</color>均为贯穿伤害，无视敌人防御，使用贯穿力作为招式伤害倍率；\n真斗发动<color=#FFFFFF>[特殊技：归烬·舍身]</color>或<color=#FFFFFF>[招架支援]</color>时，会累积<color=#FFFFFF>[炽心]</color>，最多累积100点；当<color=#FFFFFF>[炽心]</color>累积至75点时，真斗将进入<color=#FFFFFF>[熔锋]</color>状态，<color=#FFFFFF>[熔锋]</color>状态下，真斗每秒消耗3.3点<color=#FFFFFF>[炽心]</color>，<color=#FFFFFF>[炽心]</color>耗尽时，退出<color=#FFFFFF>[熔锋]</color>状态；\n<color=#FFFFFF>[熔锋]</color>状态下，真斗的<color=#FFFFFF>[普通攻击]</color>获得强化，并可以发动<color=#FFFFFF>[强化特殊技：归烬·天坠]</color>；\n真斗在<color=#FFFFFF>[普通攻击：炽风·胧切]</color>或<color=#FFFFFF>[支援突击]</color>的连续斩击中消耗生命值时，使此次攻击的暴击伤害提升<color=#2BAD00>37.5%</color>，闪能回复效率提升100%；\n<color=#FFFFFF>[熔锋]</color>状态下，真斗的暴击率提升10%，<color=#FF5521>火属性伤害</color>提升<color=#2BAD00>15%</color>。",
+                "5": "真斗会额外根据自身最大生命值提高贯穿力，每1点最大生命值将提高0.1点贯穿力；\n真斗发动招式造成的<color=#FF5521>火属性伤害</color>均为贯穿伤害，无视敌人防御，使用贯穿力作为招式伤害倍率；\n真斗发动<color=#FFFFFF>[特殊技：归烬·舍身]</color>或<color=#FFFFFF>[招架支援]</color>时，会累积<color=#FFFFFF>[炽心]</color>，最多累积100点；当<color=#FFFFFF>[炽心]</color>累积至75点时，真斗将进入<color=#FFFFFF>[熔锋]</color>状态，<color=#FFFFFF>[熔锋]</color>状态下，真斗每秒消耗3.3点<color=#FFFFFF>[炽心]</color>，<color=#FFFFFF>[炽心]</color>耗尽时，退出<color=#FFFFFF>[熔锋]</color>状态；\n<color=#FFFFFF>[熔锋]</color>状态下，真斗的<color=#FFFFFF>[普通攻击]</color>获得强化，并可以发动<color=#FFFFFF>[强化特殊技：归烬·天坠]</color>；\n真斗在<color=#FFFFFF>[普通攻击：炽风·胧切]</color>或<color=#FFFFFF>[支援突击]</color>的连续斩击中消耗生命值时，使此次攻击的暴击伤害提升<color=#2BAD00>41.7%</color>，闪能回复效率提升100%；\n<color=#FFFFFF>[熔锋]</color>状态下，真斗的暴击率提升10%，<color=#FF5521>火属性伤害</color>提升<color=#2BAD00>16.7%</color>。",
+                "6": "真斗会额外根据自身最大生命值提高贯穿力，每1点最大生命值将提高0.1点贯穿力；\n真斗发动招式造成的<color=#FF5521>火属性伤害</color>均为贯穿伤害，无视敌人防御，使用贯穿力作为招式伤害倍率；\n真斗发动<color=#FFFFFF>[特殊技：归烬·舍身]</color>或<color=#FFFFFF>[招架支援]</color>时，会累积<color=#FFFFFF>[炽心]</color>，最多累积100点；当<color=#FFFFFF>[炽心]</color>累积至75点时，真斗将进入<color=#FFFFFF>[熔锋]</color>状态，<color=#FFFFFF>[熔锋]</color>状态下，真斗每秒消耗3.3点<color=#FFFFFF>[炽心]</color>，<color=#FFFFFF>[炽心]</color>耗尽时，退出<color=#FFFFFF>[熔锋]</color>状态；\n<color=#FFFFFF>[熔锋]</color>状态下，真斗的<color=#FFFFFF>[普通攻击]</color>获得强化，并可以发动<color=#FFFFFF>[强化特殊技：归烬·天坠]</color>；\n真斗在<color=#FFFFFF>[普通攻击：炽风·胧切]</color>或<color=#FFFFFF>[支援突击]</color>的连续斩击中消耗生命值时，使此次攻击的暴击伤害提升<color=#2BAD00>45.8%</color>，闪能回复效率提升100%；\n<color=#FFFFFF>[熔锋]</color>状态下，真斗的暴击率提升10%，<color=#FF5521>火属性伤害</color>提升<color=#2BAD00>18.3%</color>。",
+                "7": "真斗会额外根据自身最大生命值提高贯穿力，每1点最大生命值将提高0.1点贯穿力；\n真斗发动招式造成的<color=#FF5521>火属性伤害</color>均为贯穿伤害，无视敌人防御，使用贯穿力作为招式伤害倍率；\n真斗发动<color=#FFFFFF>[特殊技：归烬·舍身]</color>或<color=#FFFFFF>[招架支援]</color>时，会累积<color=#FFFFFF>[炽心]</color>，最多累积100点；当<color=#FFFFFF>[炽心]</color>累积至75点时，真斗将进入<color=#FFFFFF>[熔锋]</color>状态，<color=#FFFFFF>[熔锋]</color>状态下，真斗每秒消耗3.3点<color=#FFFFFF>[炽心]</color>，<color=#FFFFFF>[炽心]</color>耗尽时，退出<color=#FFFFFF>[熔锋]</color>状态；\n<color=#FFFFFF>[熔锋]</color>状态下，真斗的<color=#FFFFFF>[普通攻击]</color>获得强化，并可以发动<color=#FFFFFF>[强化特殊技：归烬·天坠]</color>；\n真斗在<color=#FFFFFF>[普通攻击：炽风·胧切]</color>或<color=#FFFFFF>[支援突击]</color>的连续斩击中消耗生命值时，使此次攻击的暴击伤害提升<color=#2BAD00>50%</color>，闪能回复效率提升100%；\n<color=#FFFFFF>[熔锋]</color>状态下，真斗的暴击率提升10%，<color=#FF5521>火属性伤害</color>提升<color=#2BAD00>20%</color>。"
+            }
+        },
+        "MathSkill": {
+            "Title": "额外能力：复燃之心",
+            "Description": "队伍中存在<color=#FFFFFF>[支援]</color>或<color=#FFFFFF>[击破]</color>角色时触发：\n真斗发动终结技时，获得8层[残焰]，发动连携技时，获得4层[残焰]，持续60秒，最多叠加20层，重复触发时刷新持续时间；真斗发动<color=#FFFFFF>[普通攻击：炽风·胧切]</color>或<color=#FFFFFF>[支援突击]</color>的连续斩击时，如果生命值低于100%最大生命值，则消耗一层[残焰]，回复2%最大生命值。"
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "144100001": {
+                "Title": "普通攻击：炽风斩",
+                "Description": "点按 <IconMap:Icon_Normal> 发动：\n向前方进行至多三段的斩击，造成<color=#F0D12B>物理伤害</color>；\n在每一段攻击的发动阶段，点按 <IconMap:Icon_Special> 将触发[烬风]，使此次攻击造成更高<color=#FF5521>火属性伤害</color>。"
+            },
+            "144100002": {
+                "Title": "在[熔锋]状态下点按 <IconMap:Icon_Normal> 发动：\n向前方进行至多四段的斩击，造成<color=#FF5521>火属性伤害</color>；\n招式发动时，如果真斗的生命值在30%以上，则消耗3.5%最大生命值。"
+            },
+            "144100015": {
+                "Title": "普通攻击：炽风斩"
+            },
+            "144100016": {
+                "Description": "一段伤害倍率",
+                "Param": "{Skill:1441001, Prop:1001}"
+            },
+            "144100017": {
+                "Description": "二段伤害倍率",
+                "Param": "{Skill:1441002, Prop:1001}+{Skill:1441003, Prop:1001}"
+            },
+            "144100018": {
+                "Description": "三段伤害倍率",
+                "Param": "{Skill:1441004, Prop:1001}+{Skill:1441005, Prop:1001}"
+            },
+            "144100019": {
+                "Description": "一段伤害倍率（触发烬风）",
+                "Param": "{Skill:1441001, Prop:1001}+{Skill:1441006, Prop:1001}"
+            },
+            "144100020": {
+                "Description": "二段伤害倍率（触发烬风）",
+                "Param": "{Skill:1441002, Prop:1001}+{Skill:1441007, Prop:1001}"
+            },
+            "144100021": {
+                "Description": "三段伤害倍率（触发烬风）",
+                "Param": "{Skill:1441004, Prop:1001}+{Skill:1441008, Prop:1001}"
+            },
+            "144100022": {
+                "Description": "一段失衡倍率",
+                "Param": "{Skill:1441001, Prop:1002}"
+            },
+            "144100023": {
+                "Description": "二段失衡倍率",
+                "Param": "{Skill:1441002, Prop:1002}+{Skill:1441003, Prop:1002}"
+            },
+            "144100024": {
+                "Description": "三段失衡倍率",
+                "Param": "{Skill:1441004, Prop:1002}+{Skill:1441005, Prop:1002}"
+            },
+            "144100025": {
+                "Description": "一段失衡倍率（触发烬风）",
+                "Param": "{Skill:1441001, Prop:1002}+{Skill:1441006, Prop:1002}"
+            },
+            "144100026": {
+                "Description": "二段失衡倍率（触发烬风）",
+                "Param": "{Skill:1441002, Prop:1002}+{Skill:1441007, Prop:1002}"
+            },
+            "144100027": {
+                "Description": "三段失衡倍率（触发烬风）",
+                "Param": "{Skill:1441004, Prop:1002}+{Skill:1441008, Prop:1002}"
+            },
+            "144100028": {
+                "Title": "普通攻击：炽风·胧切"
+            },
+            "144100029": {
+                "Description": "一段伤害倍率",
+                "Param": "{Skill:1441009, Prop:1001}"
+            },
+            "144100030": {
+                "Description": "二段伤害倍率",
+                "Param": "{Skill:1441010, Prop:1001}"
+            },
+            "144100031": {
+                "Description": "三段伤害倍率",
+                "Param": "{Skill:1441011, Prop:1001}"
+            },
+            "144100032": {
+                "Description": "四段伤害倍率",
+                "Param": "{Skill:1441012, Prop:1001}"
+            },
+            "144100033": {
+                "Description": "一段失衡倍率",
+                "Param": "{Skill:1441009, Prop:1002}"
+            },
+            "144100034": {
+                "Description": "二段失衡倍率",
+                "Param": "{Skill:1441010, Prop:1002}"
+            },
+            "144100035": {
+                "Description": "三段失衡倍率",
+                "Param": "{Skill:1441011, Prop:1002}"
+            },
+            "144100036": {
+                "Description": "四段失衡倍率",
+                "Param": "{Skill:1441012, Prop:1002}"
+            }
+        },
+        "1": {
+            "144100003": {
+                "Title": "特殊技：归烬",
+                "Description": "点按 <IconMap:Icon_Special> 发动：\n向前方斩击敌人，造成<color=#FF5521>火属性伤害</color>；\n如果招式发动期间受到敌人攻击，在发动斩击时回复20%已损失生命值，<color=#FFFFFF>[特殊技：归烬]</color>和<color=#FFFFFF>[特殊技：归烬·舍身]</color>的生命回复效果每20秒最多触发一次；\n如果招式发动期间受到敌人攻击，强化此次斩击；\n招式发动期间受到伤害降低40%；\n招式发动期间抗打断等级提升。"
+            },
+            "144100004": {
+                "Title": "特殊技：归烬·舍身",
+                "Description": "长按 <IconMap:Icon_Special> 发动：\n进入蓄力状态，最多消耗10%最大生命值并回复100点<color=#FFFFFF>[炽心]</color>，最多消耗生命值至最大生命值的30%；\n松开按键时，发动<color=#FFFFFF>[特殊技：归烬]</color>，如果招式发动期间受到敌人攻击，在发动斩击时回复20%已损失生命值，<color=#FFFFFF>[特殊技：归烬]</color>和<color=#FFFFFF>[特殊技：归烬·舍身]</color>的生命回复效果每20秒最多触发一次；\n如果招式发动期间受到敌人攻击或者蓄力达到一定时长，强化此次斩击；\n招式发动期间受到伤害降低40%；\n招式发动期间抗打断等级提升。"
+            },
+            "144100005": {
+                "Title": "强化特殊技：归烬·天坠",
+                "Description": "在[熔锋]状态下，闪能足够时，点按  <IconMap:Icon_SpecialReady_Rp> 发动：\n跳起并发动向前方敌人发动下落斩击，造成大量<color=#FF5521>火属性伤害</color>；\n招式发动时，回复33%最大生命值；\n招式发动期间拥有无敌效果。"
+            },
+            "144100037": {
+                "Title": "特殊技：归烬"
+            },
+            "144100038": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1441013, Prop:1001}"
+            },
+            "144100039": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1441013, Prop:1002}"
+            },
+            "144100040": {
+                "Description": "伤害倍率（蓄力或格挡成功）",
+                "Param": "{Skill:1441014, Prop:1001}"
+            },
+            "144100041": {
+                "Description": "失衡倍率（蓄力或格挡成功）",
+                "Param": "{Skill:1441014, Prop:1002}"
+            },
+            "144100042": {
+                "Title": "强化特殊技：归烬·天坠"
+            },
+            "144100043": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1441015, Prop:1001}"
+            },
+            "144100044": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1441015, Prop:1002}"
+            },
+            "144100045": {
+                "Description": "闪能消耗",
+                "Param": "80点"
+            }
+        },
+        "2": {
+            "144100006": {
+                "Title": "闪避：曜刃",
+                "Description": "点按 <IconMap:Icon_Evade> 发动：\n快速的冲刺闪避；\n招式发动期间拥有无敌效果。"
+            },
+            "144100007": {
+                "Title": "冲刺攻击：曜刃·残心",
+                "Description": "闪避时，点按 <IconMap:Icon_Normal> 发动：\n向前方进行肩撞攻击，造成<color=#F0D12B>物理伤害</color>。"
+            },
+            "144100008": {
+                "Title": "闪避反击：曜刃·掠阵",
+                "Description": "触发<color=#FFFFFF>[极限闪避]</color>后，点按 <IconMap:Icon_Normal> 发动：\n对前方敌人发动斩击和拳击，造成<color=#FF5521>火属性伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "144100046": {
+                "Title": "冲刺攻击：曜刃·残心"
+            },
+            "144100047": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1441016, Prop:1001}"
+            },
+            "144100048": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1441016, Prop:1002}"
+            },
+            "144100049": {
+                "Title": "闪避反击：曜刃·掠阵"
+            },
+            "144100050": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1441017, Prop:1001}"
+            },
+            "144100051": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1441017, Prop:1002}"
+            }
+        },
+        "3": {
+            "144100009": {
+                "Title": "连携技：极炽炎爆",
+                "Description": "触发<color=#FFFFFF>[连携技]</color>时，选择对应角色发动：\n丢出手中的剑，随后冲向敌人引发爆炸，造成大量<color=#FF5521>火属性伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "144100010": {
+                "Title": "终结技：无想荒魂",
+                "Description": "喧响等级达到<color=#FFFFFF>[极]</color>时，点按 <IconMap:Icon_UltimateReady> 发动：\n跳起并发动向前方敌人发动下落斩击，随后引发爆炸，造成大量<color=#FF5521>火属性伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "144100052": {
+                "Title": "连携技：极炽炎爆"
+            },
+            "144100053": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1441018, Prop:1001}"
+            },
+            "144100054": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1441018, Prop:1002}"
+            },
+            "144100055": {
+                "Title": "终结技：无想荒魂"
+            },
+            "144100056": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1441019, Prop:1001}"
+            },
+            "144100057": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1441019, Prop:1002}"
+            }
+        },
+        "6": {
+            "144100012": {
+                "Title": "快速支援：孤影·归阵",
+                "Description": "当前操作中的角色被击飞时，点按 <IconMap:Icon_Switch> 发动：\n对前方敌人发动斩击和拳击，造成<color=#FF5521>火属性伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "144100013": {
+                "Title": "招架支援：孤影·岳峙",
+                "Description": "前场角色即将被攻击时，点按 <IconMap:Icon_Switch> 发动：\n招架敌人的攻击，累积大量失衡值，并造成<color=#FF5521>火属性伤害</color>；\n招式发动时，回复75点<color=#FFFFFF>[炽心]</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "144100014": {
+                "Title": "支援突击：孤影·断獠",
+                "Description": "发动<color=#FFFFFF>[招架支援]</color>后，点按 <IconMap:Icon_Normal> 发动：\n对前方敌人发动多段斩击，造成<color=#FF5521>火属性伤害</color>；\n连点时，可以连续斩击敌人，最多额外连续斩击7次；\n连续斩击时，如果真斗的生命值在30%以上，则消耗2%最大生命值；\n招式发动期间拥有无敌效果。"
+            },
+            "144100058": {
+                "Title": "快速支援：孤影·归阵"
+            },
+            "144100059": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1441020, Prop:1001}"
+            },
+            "144100060": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1441020, Prop:1002}"
+            },
+            "144100061": {
+                "Title": "招架支援：孤影·岳峙"
+            },
+            "144100062": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1441026, Prop:1001}"
+            },
+            "144100063": {
+                "Description": "轻招架失衡倍率",
+                "Param": "{Skill:1441021, Prop:1002}"
+            },
+            "144100064": {
+                "Description": "重招架失衡倍率",
+                "Param": "{Skill:1441022, Prop:1002}"
+            },
+            "144100065": {
+                "Description": "连续招架失衡倍率",
+                "Param": "{Skill:1441023, Prop:1002}"
+            },
+            "144100066": {
+                "Title": "支援突击：孤影·断獠"
+            },
+            "144100067": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1441024, Prop:1001}"
+            },
+            "144100068": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1441024, Prop:1002}"
+            },
+            "144100069": {
+                "Description": "连打最大伤害倍率",
+                "Param": "{Skill:1441024, Prop:1001}+{Skill:1441025, Prop:1001}"
+            },
+            "144100070": {
+                "Description": "连打最大失衡倍率",
+                "Param": "{Skill:1441024, Prop:1002}+{Skill:1441025, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1441001": {
+            "DamageValue": 2870,
+            "DamageGrowth": 270,
+            "DazeValue": 2690,
+            "DazeGrowth": 130
+        },
+        "1441002": {
+            "DamageValue": 3820,
+            "DamageGrowth": 350,
+            "DazeValue": 3620,
+            "DazeGrowth": 170
+        },
+        "1441003": {
+            "DamageValue": 4450,
+            "DamageGrowth": 410,
+            "DazeValue": 4310,
+            "DazeGrowth": 200
+        },
+        "1441004": {
+            "DamageValue": 6000,
+            "DamageGrowth": 550,
+            "DazeValue": 5900,
+            "DazeGrowth": 270
+        },
+        "1441005": {
+            "DamageValue": 7460,
+            "DamageGrowth": 680,
+            "DazeValue": 7430,
+            "DazeGrowth": 340
+        },
+        "1441006": {
+            "DamageValue": 3440,
+            "DamageGrowth": 320,
+            "DazeValue": 3050,
+            "DazeGrowth": 140
+        },
+        "1441007": {
+            "DamageValue": 5730,
+            "DamageGrowth": 530,
+            "DazeValue": 5510,
+            "DazeGrowth": 260
+        },
+        "1441008": {
+            "DamageValue": 8330,
+            "DamageGrowth": 760,
+            "DazeValue": 8260,
+            "DazeGrowth": 380
+        },
+        "1441009": {
+            "DamageValue": 5310,
+            "DamageGrowth": 490,
+            "DazeValue": 3880,
+            "DazeGrowth": 180
+        },
+        "1441010": {
+            "DamageValue": 11120,
+            "DamageGrowth": 1020,
+            "DazeValue": 8740,
+            "DazeGrowth": 400
+        },
+        "1441011": {
+            "DamageValue": 15450,
+            "DamageGrowth": 1410,
+            "DazeValue": 14160,
+            "DazeGrowth": 650
+        },
+        "1441012": {
+            "DamageValue": 23780,
+            "DamageGrowth": 2170,
+            "DazeValue": 21750,
+            "DazeGrowth": 990
+        },
+        "1441013": {
+            "DamageValue": 5070,
+            "DamageGrowth": 470,
+            "DazeValue": 4760,
+            "DazeGrowth": 220
+        },
+        "1441014": {
+            "DamageValue": 13070,
+            "DamageGrowth": 1190,
+            "DazeValue": 12260,
+            "DazeGrowth": 560
+        },
+        "1441015": {
+            "DamageValue": 65260,
+            "DamageGrowth": 5940,
+            "DazeValue": 66220,
+            "DazeGrowth": 3010
+        },
+        "1441016": {
+            "DamageValue": 5870,
+            "DamageGrowth": 540,
+            "DazeValue": 3670,
+            "DazeGrowth": 170
+        },
+        "1441017": {
+            "DamageValue": 19800,
+            "DamageGrowth": 1800,
+            "DazeValue": 21340,
+            "DazeGrowth": 970
+        },
+        "1441018": {
+            "DamageValue": 48330,
+            "DamageGrowth": 4400,
+            "DazeValue": 20510,
+            "DazeGrowth": 940
+        },
+        "1441019": {
+            "DamageValue": 156230,
+            "DamageGrowth": 14210,
+            "DazeValue": 34840,
+            "DazeGrowth": 1590
+        },
+        "1441020": {
+            "DamageValue": 9070,
+            "DamageGrowth": 830,
+            "DazeValue": 5670,
+            "DazeGrowth": 260
+        },
+        "1441021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 24670,
+            "DazeGrowth": 1130
+        },
+        "1441022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 31170,
+            "DazeGrowth": 1420
+        },
+        "1441023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15170,
+            "DazeGrowth": 690
+        },
+        "1441024": {
+            "DamageValue": 16670,
+            "DamageGrowth": 1520,
+            "DazeValue": 27090,
+            "DazeGrowth": 1240
+        },
+        "1441025": {
+            "DamageValue": 40340,
+            "DamageGrowth": 3670,
+            "DazeValue": 21000,
+            "DazeGrowth": 960
+        },
+        "1441026": {
+            "DamageValue": 4000,
+            "DamageGrowth": 370,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}
