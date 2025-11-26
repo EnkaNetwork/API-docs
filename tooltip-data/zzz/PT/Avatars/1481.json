@@ -1,0 +1,514 @@
+{
+    "Name": "Dialyn",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Specialty": {
+        "Id": 2,
+        "Name": "Atordoador"
+    },
+    "Talents": {
+        "1": {
+            "Title": "Serviço Ilimitado",
+            "Description": "Os pontos de <color=#FFFFFF>Avaliação Positiva</color> acumulados por segundo e obtidos com <color=#FFFFFF>Ataque Especial Reforçado: Pedra</color>, <color=#FFFFFF>Ataque Especial Reforçado: Tesoura</color>, ou <color=#FFFFFF>Ataque Especial Reforçado: Papel</color> aumentam 16%.\nPersonagens no estado de <color=#FFFFFF>Satisfação Total</color> ignoram 15% da Resistência dos inimigos a todos os atributos.",
+            "Lore": "Boas-vindas ao Centro de Atendimento ao Cliente Interdepartamental!\nNossa missão é simples: sempre oferecer um sorriso e atender os clientes com entusiasmo!\nUm sorriso... justamente a expressão mais difícil de fingir. Quando foi que eu aprendi a fazer isso tão bem?\n\"Olá, como posso te ajudar? Bem, não que eu realmente possa fazer algo por você...\""
+        },
+        "2": {
+            "Title": "Ligações 24h",
+            "Description": "Inimigos com <color=#FFFFFF>Denúncia Maliciosa</color> obtêm mais 20% de Multiplicador de Dano de Atordoamento quando sofrem atordoamento, e todas as unidades causam 15% mais dano a alvos sob efeito de <color=#FFFFFF>Denúncia Maliciosa</color>.",
+            "Lore": "A T.O.P.S. é a maior aliança empresarial de Nova Eridu. Nosso trabalho mantém a cidade viva!\nSomos o óleo essencial para essa máquina continuar trabalhando, e nossos telefones têm que estar ativos 24 horas por dia!\nBarulhos insistentes e conversas altas? Sem problema, é minha área de especialidade.\n\"Fique à vontade para me contatar a qualquer momento! Eu vou ser irritante assim independente da hora que você ligar.\""
+        },
+        "3": {
+            "Title": "Chamada da Esfera Negra",
+            "Description": "Obtém +2 níveis de <color=#FFFFFF>Ataque Básico</color>, <color=#FFFFFF>Esquiva</color>, <color=#FFFFFF>Ataque de Assistência</color>, <color=#FFFFFF>Ataque Especial</color> e <color=#FFFFFF>Ataque em Cadeia</color>",
+            "Lore": "A Esfera Negra é uma tumba gigante onde o som da vida é enterrado no mais escuro dos caixões.\nPara mim, é um chamado irrecusável, é a página final de cada diário, uma lembrança das obsessões e ressentimentos mais persistentes.\nMas todo esse falatório sobre o que vai e o que fica não tem nada a ver com minha própria história.\n\"Não se preocupe. Eu já precisei lidar com clientes bem piores que você!\""
+        },
+        "4": {
+            "Title": "Passado Presente",
+            "Description": "Ao entrar em combate, Dialyn recupera 20 de Energia. Esse efeito pode ser ativado uma vez a cada 180s no Modo de Reconhecimento. Sob efeito de <color=#FFFFFF>Satisfação Total</color>, o ATQ de Dialyn aumenta 500 pontos.",
+            "Lore": "As pessoas me tratam como criança porque eu sou pequena, mas minha infância já acabou faz tempo.\nQuando foi que aconteceu? Na primeira vez que ouvi os sussurros dos mortos? Quando fui enviada como um sacrifício para a Esfera Negra? Na primeira vez que chorei sozinha até dormir?\nEu precisei me virar, pois não havia ninguém para cuidar de mim. Eu não conseguia esquecer o passado, então aprendi a fingir.\n\"Seus assuntos pessoais pouco me importam... mas estou preocupada que seus traumas de infância vão afetar minha avaliação!\""
+        },
+        "5": {
+            "Title": "Mentiras",
+            "Description": "Obtém +2 níveis de <color=#FFFFFF>Ataque Básico</color>, <color=#FFFFFF>Esquiva</color>, <color=#FFFFFF>Ataque de Assistência</color>, <color=#FFFFFF>Ataque Especial</color> e <color=#FFFFFF>Ataque em Cadeia</color>",
+            "Lore": "Nós mentimos enquanto as pessoas se importam, e só falamos a verdade quando elas desistem de se importar.\nEssas atitudes só trazem arrependimentos. Meu trabalho é usar os arrependimentos do passado para melhorar o presente.\nEu sei que todo mundo mente... Ainda bem que alguém ainda se importa o bastante para mentir pra mim.\n\"Minha sugestão? Faz um elogio ou outro no meio das reclamações. Funciona, que é uma beleza!\""
+        },
+        "6": {
+            "Title": "Verdade",
+            "Description": "Quando um aliado entra em combate com um <color=#FFFFFF>Supremo</color>, através da Passiva Principal, esse aliado obtém o efeito <color=#FFFFFF>Ecos</color>. Ao atingir um inimigo com esse efeito, causa uma instância adicional de <color=#F0D12B>Dano Físico</color> equivalente a 480% do ATQ de Dialyn. Esse dano é considerado dano de <color=#FFFFFF>Ataque Especial Reforçado</color> e pode ser ativado 1 vez por segundo, até 12 vezes. Obter <color=#FFFFFF>Ecos</color> novamente reinicia o número de ativações restantes. Apenas um aliado pode obter o efeito <color=#FFFFFF>Ecos</color> por vez.",
+            "Lore": "Uma morte repentina é como uma fatia preservada do tempo, que captura a verdade em sua forma final e imutável.\nEu pego essas amostras especiais diretamente dos mortos, e uso suas certidões de óbito para certificar meus julgamentos.\nA verdade pura e objetiva rege minha vida e guia meu caminho, até que...\n\"Proxy, posso contar uma mentirinha?\""
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passiva Principal: Suporte 5 Estrelas",
+            "DescriptionByLevel": {
+                "1": "Dialyn obtém 60 pontos de <color=#FFFFFF>Avaliação Positiva</color> no início do combate. Se sua Taxa CRIT inicial é maior que 50%, ela causa mais <color=#2BAD00>1,4</color> de Impacto para cada 1% adicional, até um máximo de 100.\nPor 8 segundos após o <color=#FFFFFF>Ataque Especial Reforçado: Pedra</color>, o <color=#FFFFFF>Ataque Especial Reforçado</color> é um <color=#FFFFFF>Ataque Especial Reforçado: Tesoura</color>.\nPor 8 segundos após o <color=#FFFFFF>Ataque Especial Reforçado: Tesoura</color>, o <color=#FFFFFF>Ataque Especial Reforçado</color> é um <color=#FFFFFF>Ataque Especial Reforçado: Papel</color>.\nQuando <color=#FFFFFF>Ataque Especial Reforçado: Papel</color> atinge um inimigo, aplica o estado de <color=#FFFFFF>Denúncia Maliciosa</color>. Se um inimigo é atordoado durante o estado de <color=#FFFFFF>Denúncia Maliciosa</color>, o estado dura mais 2s e o Multiplicador de Dano de Atordoamento aumenta <color=#2BAD00>15%</color>. O estado de <color=#FFFFFF>Denúncia Maliciosa</color> só pode ser ativado uma vez quando o alvo está atordoado e a duração do atordoamento não acumula com outros efeitos similares. O estado de <color=#FFFFFF>Denúncia Maliciosa</color> acaba quando o alvo sai do estado de <color=#FFFFFF>Atordoamento</color>.\nEm combate, Dialyn obtém 0,6 pontos de <color=#FFFFFF>Avaliação Positiva</color> por segundo. Ela ganha mais 7,5 pontos de <color=#FFFFFF>Avaliação Positiva</color> quando <color=#FFFFFF>Ataque Especial Reforçado: Pedra</color>, <color=#FFFFFF>Ataque Especial Reforçado: Tesoura</color>, ou <color=#FFFFFF>Ataque Especial Reforçado: Papel</color> atingem um inimigo. Cada ataque gera apenas um bônus por uso, até um máximo de 120.\nCom 90 pontos de <color=#FFFFFF>Avaliação Positiva</color>, Dialyn pode abrir sua janela de <color=#FFFFFF>Ataque em Cadeia</color> com um <color=#FFFFFF>Ataque em Cadeia: Tapete de Boas-vindas</color>, um <color=#FFFFFF>Ataque Especial Reforçado: Vaza Daqui!</color>, ou uma <color=#FFFFFF>Assistência Reativa: Desvio de Chamadas</color>, e o <color=#FFFFFF>Ataque em Cadeia</color> do próximo personagem será aprimorado para <color=#FFFFFF>Supremo</color>. Quando um companheiro de equipe lança um <color=#FFFFFF>Supremo</color> desta maneira, Dialyn consome 60 pontos de <color=#FFFFFF>Avaliação Positiva</color>.\nQuando a <color=#FFFFFF>Avaliação Positiva</color> chega a 90 pontos e Dialyn atinge um inimigo sem usar <color=#FFFFFF>Ataque Especial Reforçado: Vaza Daqui!</color> para abrir a janela de <color=#FFFFFF>Ataque em Cadeia</color>, ela consome 90 pontos de <color=#FFFFFF>Avaliação Positiva</color> para abrir a janela de <color=#FFFFFF>Ataque em Cadeia</color> forçadamente. O <color=#FFFFFF>Ataque em Cadeia</color> do próximo personagem é aprimorado para <color=#FFFFFF>Supremo</color>.\nSempre que a pontuação de <color=#FFFFFF>Avaliação Positiva</color> chega a 90 ou que um <color=#FFFFFF>Supremo</color> é ativado, Dialyn obtém 1 ponto de <color=#FFFFFF>Queixas de Cliente</color>. Só é possível obter 1 ponto.",
+                "2": "Dialyn obtém 60 pontos de <color=#FFFFFF>Avaliação Positiva</color> no início do combate. Se sua Taxa CRIT inicial é maior que 50%, ela causa mais <color=#2BAD00>1,5</color> de Impacto para cada 1% adicional, até um máximo de 100.\nPor 8 segundos após o <color=#FFFFFF>Ataque Especial Reforçado: Pedra</color>, o <color=#FFFFFF>Ataque Especial Reforçado</color> é um <color=#FFFFFF>Ataque Especial Reforçado: Tesoura</color>.\nPor 8 segundos após o <color=#FFFFFF>Ataque Especial Reforçado: Tesoura</color>, o <color=#FFFFFF>Ataque Especial Reforçado</color> é um <color=#FFFFFF>Ataque Especial Reforçado: Papel</color>.\nQuando <color=#FFFFFF>Ataque Especial Reforçado: Papel</color> atinge um inimigo, aplica o estado de <color=#FFFFFF>Denúncia Maliciosa</color>. Se um inimigo é atordoado durante o estado de <color=#FFFFFF>Denúncia Maliciosa</color>, o estado dura mais 2s e o Multiplicador de Dano de Atordoamento aumenta <color=#2BAD00>17,5%</color>. O estado de <color=#FFFFFF>Denúncia Maliciosa</color> só pode ser ativado uma vez quando o alvo está atordoado e a duração do atordoamento não acumula com outros efeitos similares. O estado de <color=#FFFFFF>Denúncia Maliciosa</color> acaba quando o alvo sai do estado de <color=#FFFFFF>Atordoamento</color>.\nEm combate, Dialyn obtém 0,6 pontos de <color=#FFFFFF>Avaliação Positiva</color> por segundo. Ela ganha mais 7,5 pontos de <color=#FFFFFF>Avaliação Positiva</color> quando <color=#FFFFFF>Ataque Especial Reforçado: Pedra</color>, <color=#FFFFFF>Ataque Especial Reforçado: Tesoura</color>, ou <color=#FFFFFF>Ataque Especial Reforçado: Papel</color> atingem um inimigo. Cada ataque gera apenas um bônus por uso, até um máximo de 120.\nCom 90 pontos de <color=#FFFFFF>Avaliação Positiva</color>, Dialyn pode abrir sua janela de <color=#FFFFFF>Ataque em Cadeia</color> com um <color=#FFFFFF>Ataque em Cadeia: Tapete de Boas-vindas</color>, um <color=#FFFFFF>Ataque Especial Reforçado: Vaza Daqui!</color>, ou uma <color=#FFFFFF>Assistência Reativa: Desvio de Chamadas</color>, e o <color=#FFFFFF>Ataque em Cadeia</color> do próximo personagem será aprimorado para <color=#FFFFFF>Supremo</color>. Quando um companheiro de equipe lança um <color=#FFFFFF>Supremo</color> desta maneira, Dialyn consome 60 pontos de <color=#FFFFFF>Avaliação Positiva</color>.\nQuando a <color=#FFFFFF>Avaliação Positiva</color> chega a 90 pontos e Dialyn atinge um inimigo sem usar <color=#FFFFFF>Ataque Especial Reforçado: Vaza Daqui!</color> para abrir a janela de <color=#FFFFFF>Ataque em Cadeia</color>, ela consome 90 pontos de <color=#FFFFFF>Avaliação Positiva</color> para abrir a janela de <color=#FFFFFF>Ataque em Cadeia</color> forçadamente. O <color=#FFFFFF>Ataque em Cadeia</color> do próximo personagem é aprimorado para <color=#FFFFFF>Supremo</color>.\nSempre que a pontuação de <color=#FFFFFF>Avaliação Positiva</color> chega a 90 ou que um <color=#FFFFFF>Supremo</color> é ativado, Dialyn obtém 1 ponto de <color=#FFFFFF>Queixas de Cliente</color>. Só é possível obter 1 ponto.",
+                "3": "Dialyn obtém 60 pontos de <color=#FFFFFF>Avaliação Positiva</color> no início do combate. Se sua Taxa CRIT inicial é maior que 50%, ela causa mais <color=#2BAD00>1,6</color> de Impacto para cada 1% adicional, até um máximo de 100.\nPor 8 segundos após o <color=#FFFFFF>Ataque Especial Reforçado: Pedra</color>, o <color=#FFFFFF>Ataque Especial Reforçado</color> é um <color=#FFFFFF>Ataque Especial Reforçado: Tesoura</color>.\nPor 8 segundos após o <color=#FFFFFF>Ataque Especial Reforçado: Tesoura</color>, o <color=#FFFFFF>Ataque Especial Reforçado</color> é um <color=#FFFFFF>Ataque Especial Reforçado: Papel</color>.\nQuando <color=#FFFFFF>Ataque Especial Reforçado: Papel</color> atinge um inimigo, aplica o estado de <color=#FFFFFF>Denúncia Maliciosa</color>. Se um inimigo é atordoado durante o estado de <color=#FFFFFF>Denúncia Maliciosa</color>, o estado dura mais 2s e o Multiplicador de Dano de Atordoamento aumenta <color=#2BAD00>20%</color>. O estado de <color=#FFFFFF>Denúncia Maliciosa</color> só pode ser ativado uma vez quando o alvo está atordoado e a duração do atordoamento não acumula com outros efeitos similares. O estado de <color=#FFFFFF>Denúncia Maliciosa</color> acaba quando o alvo sai do estado de <color=#FFFFFF>Atordoamento</color>.\nEm combate, Dialyn obtém 0,6 pontos de <color=#FFFFFF>Avaliação Positiva</color> por segundo. Ela ganha mais 7,5 pontos de <color=#FFFFFF>Avaliação Positiva</color> quando <color=#FFFFFF>Ataque Especial Reforçado: Pedra</color>, <color=#FFFFFF>Ataque Especial Reforçado: Tesoura</color>, ou <color=#FFFFFF>Ataque Especial Reforçado: Papel</color> atingem um inimigo. Cada ataque gera apenas um bônus por uso, até um máximo de 120.\nCom 90 pontos de <color=#FFFFFF>Avaliação Positiva</color>, Dialyn pode abrir sua janela de <color=#FFFFFF>Ataque em Cadeia</color> com um <color=#FFFFFF>Ataque em Cadeia: Tapete de Boas-vindas</color>, um <color=#FFFFFF>Ataque Especial Reforçado: Vaza Daqui!</color>, ou uma <color=#FFFFFF>Assistência Reativa: Desvio de Chamadas</color>, e o <color=#FFFFFF>Ataque em Cadeia</color> do próximo personagem será aprimorado para <color=#FFFFFF>Supremo</color>. Quando um companheiro de equipe lança um <color=#FFFFFF>Supremo</color> desta maneira, Dialyn consome 60 pontos de <color=#FFFFFF>Avaliação Positiva</color>.\nQuando a <color=#FFFFFF>Avaliação Positiva</color> chega a 90 pontos e Dialyn atinge um inimigo sem usar <color=#FFFFFF>Ataque Especial Reforçado: Vaza Daqui!</color> para abrir a janela de <color=#FFFFFF>Ataque em Cadeia</color>, ela consome 90 pontos de <color=#FFFFFF>Avaliação Positiva</color> para abrir a janela de <color=#FFFFFF>Ataque em Cadeia</color> forçadamente. O <color=#FFFFFF>Ataque em Cadeia</color> do próximo personagem é aprimorado para <color=#FFFFFF>Supremo</color>.\nSempre que a pontuação de <color=#FFFFFF>Avaliação Positiva</color> chega a 90 ou que um <color=#FFFFFF>Supremo</color> é ativado, Dialyn obtém 1 ponto de <color=#FFFFFF>Queixas de Cliente</color>. Só é possível obter 1 ponto.",
+                "4": "Dialyn obtém 60 pontos de <color=#FFFFFF>Avaliação Positiva</color> no início do combate. Se sua Taxa CRIT inicial é maior que 50%, ela causa mais <color=#2BAD00>1,7</color> de Impacto para cada 1% adicional, até um máximo de 100.\nPor 8 segundos após o <color=#FFFFFF>Ataque Especial Reforçado: Pedra</color>, o <color=#FFFFFF>Ataque Especial Reforçado</color> é um <color=#FFFFFF>Ataque Especial Reforçado: Tesoura</color>.\nPor 8 segundos após o <color=#FFFFFF>Ataque Especial Reforçado: Tesoura</color>, o <color=#FFFFFF>Ataque Especial Reforçado</color> é um <color=#FFFFFF>Ataque Especial Reforçado: Papel</color>.\nQuando <color=#FFFFFF>Ataque Especial Reforçado: Papel</color> atinge um inimigo, aplica o estado de <color=#FFFFFF>Denúncia Maliciosa</color>. Se um inimigo é atordoado durante o estado de <color=#FFFFFF>Denúncia Maliciosa</color>, o estado dura mais 2s e o Multiplicador de Dano de Atordoamento aumenta <color=#2BAD00>22,5%</color>. O estado de <color=#FFFFFF>Denúncia Maliciosa</color> só pode ser ativado uma vez quando o alvo está atordoado e a duração do atordoamento não acumula com outros efeitos similares. O estado de <color=#FFFFFF>Denúncia Maliciosa</color> acaba quando o alvo sai do estado de <color=#FFFFFF>Atordoamento</color>.\nEm combate, Dialyn obtém 0,6 pontos de <color=#FFFFFF>Avaliação Positiva</color> por segundo. Ela ganha mais 7,5 pontos de <color=#FFFFFF>Avaliação Positiva</color> quando <color=#FFFFFF>Ataque Especial Reforçado: Pedra</color>, <color=#FFFFFF>Ataque Especial Reforçado: Tesoura</color>, ou <color=#FFFFFF>Ataque Especial Reforçado: Papel</color> atingem um inimigo. Cada ataque gera apenas um bônus por uso, até um máximo de 120.\nCom 90 pontos de <color=#FFFFFF>Avaliação Positiva</color>, Dialyn pode abrir sua janela de <color=#FFFFFF>Ataque em Cadeia</color> com um <color=#FFFFFF>Ataque em Cadeia: Tapete de Boas-vindas</color>, um <color=#FFFFFF>Ataque Especial Reforçado: Vaza Daqui!</color>, ou uma <color=#FFFFFF>Assistência Reativa: Desvio de Chamadas</color>, e o <color=#FFFFFF>Ataque em Cadeia</color> do próximo personagem será aprimorado para <color=#FFFFFF>Supremo</color>. Quando um companheiro de equipe lança um <color=#FFFFFF>Supremo</color> desta maneira, Dialyn consome 60 pontos de <color=#FFFFFF>Avaliação Positiva</color>.\nQuando a <color=#FFFFFF>Avaliação Positiva</color> chega a 90 pontos e Dialyn atinge um inimigo sem usar <color=#FFFFFF>Ataque Especial Reforçado: Vaza Daqui!</color> para abrir a janela de <color=#FFFFFF>Ataque em Cadeia</color>, ela consome 90 pontos de <color=#FFFFFF>Avaliação Positiva</color> para abrir a janela de <color=#FFFFFF>Ataque em Cadeia</color> forçadamente. O <color=#FFFFFF>Ataque em Cadeia</color> do próximo personagem é aprimorado para <color=#FFFFFF>Supremo</color>.\nSempre que a pontuação de <color=#FFFFFF>Avaliação Positiva</color> chega a 90 ou que um <color=#FFFFFF>Supremo</color> é ativado, Dialyn obtém 1 ponto de <color=#FFFFFF>Queixas de Cliente</color>. Só é possível obter 1 ponto.",
+                "5": "Ao entrar no campo de batalha, Dialyn obtém 60 pontos de <color=#FFFFFF>Avaliação Positiva</color>. Se sua Taxa CRIT inicial é maior que 50%, ela causa mais <color=#2BAD00>1,8</color> de Impacto para cada 1% a mais, até um máximo de 100.\nPor 8 segundos após o <color=#FFFFFF>Ataque Especial Reforçado: Pedra</color>, o <color=#FFFFFF>Ataque Especial Reforçado</color> é um <color=#FFFFFF>Ataque Especial Reforçado: Tesoura</color>.\nPor 8 segundos após o <color=#FFFFFF>Ataque Especial Reforçado: Tesoura</color>, o <color=#FFFFFF>Ataque Especial Reforçado</color> é um <color=#FFFFFF>Ataque Especial Reforçado: Papel</color>.\nQuando <color=#FFFFFF>Ataque Especial Reforçado: Papel</color> atinge um inimigo, aplica o estado de <color=#FFFFFF>Denúncia Maliciosa</color>. Se um inimigo é atordoado durante o estado de <color=#FFFFFF>Denúncia Maliciosa</color>, o estado dura mais 2s e o Multiplicador de Dano de Atordoamento aumenta <color=#2BAD00>25%</color>. O estado de <color=#FFFFFF>Denúncia Maliciosa</color> só pode ser ativado uma vez quando o alvo está atordoado e a duração do atordoamento não acumula com outros efeitos similares. O estado de <color=#FFFFFF>Denúncia Maliciosa</color> acaba quando o alvo sai do estado de <color=#FFFFFF>Atordoamento</color>.\nEm combate, Dialyn obtém 0,6 pontos de <color=#FFFFFF>Avaliação Positiva</color> por segundo. Ela ganha mais 7,5 pontos de <color=#FFFFFF>Avaliação Positiva</color> quando o ataque pesado do <color=#FFFFFF>Ataque Especial Reforçado: Pedra</color>, <color=#FFFFFF>Ataque Especial Reforçado: Tesoura</color>, ou <color=#FFFFFF>Ataque Especial Reforçado: Papel</color> atinge um inimigo. Cada ataque gera apenas um bônus por uso, até um máximo de 120.\nCom 90 pontos de <color=#FFFFFF>Avaliação Positiva</color>, Dialyn pode abrir sua janela de <color=#FFFFFF>Ataque em Cadeia</color> com um <color=#FFFFFF>Ataque em Cadeia: Tapete de Boas-vindas</color>, um <color=#FFFFFF>Ataque Especial Reforçado: Vaza Daqui!</color>, ou uma <color=#FFFFFF>Assistência Reativa: Desvio de Chamadas</color>, e o <color=#FFFFFF>Ataque em Cadeia</color> do próximo personagem será aprimorado para <color=#FFFFFF>Supremo</color>. Quando um companheiro de equipe lança um <color=#FFFFFF>Supremo</color> desta maneira, Dialyn consome 60 pontos de <color=#FFFFFF>Avaliação Positiva</color>.\nQuando a <color=#FFFFFF>Avaliação Positiva</color> chega a 90 pontos e Dialyn atinge um inimigo sem usar <color=#FFFFFF>Ataque Especial Reforçado: Vaza Daqui!</color> para abrir a janela de <color=#FFFFFF>Ataque em Cadeia</color>, ela consome 90 pontos de <color=#FFFFFF>Avaliação Positiva</color> para abrir a janela de <color=#FFFFFF>Ataque em Cadeia</color> forçadamente. O <color=#FFFFFF>Ataque em Cadeia</color> do próximo personagem é aprimorado para <color=#FFFFFF>Supremo</color>.\nSempre que a pontuação de <color=#FFFFFF>Avaliação Positiva</color> chega a 90 ou que um <color=#FFFFFF>Supremo</color> é ativado, Dialyn obtém 1 ponto de <color=#FFFFFF>Queixas de Cliente</color>. Só é possível obter 1 ponto.",
+                "6": "Ao entrar no campo de batalha, Dialyn obtém 60 pontos de <color=#FFFFFF>Avaliação Positiva</color>. Se sua Taxa CRIT inicial é maior que 50%, ela causa mais <color=#2BAD00>1,9</color> de Impacto para cada 1% a mais, até um máximo de 100.\nPor 8 segundos após o <color=#FFFFFF>Ataque Especial Reforçado: Pedra</color>, o <color=#FFFFFF>Ataque Especial Reforçado</color> é um <color=#FFFFFF>Ataque Especial Reforçado: Tesoura</color>.\nPor 8 segundos após o <color=#FFFFFF>Ataque Especial Reforçado: Tesoura</color>, o <color=#FFFFFF>Ataque Especial Reforçado</color> é um <color=#FFFFFF>Ataque Especial Reforçado: Papel</color>.\nQuando <color=#FFFFFF>Ataque Especial Reforçado: Papel</color> atinge um inimigo, aplica o estado de <color=#FFFFFF>Denúncia Maliciosa</color>. Se um inimigo é atordoado durante o estado de <color=#FFFFFF>Denúncia Maliciosa</color>, o estado dura mais 2s e o Multiplicador de Dano de Atordoamento aumenta <color=#2BAD00>27,5%</color>. O estado de <color=#FFFFFF>Denúncia Maliciosa</color> só pode ser ativado uma vez quando o alvo está atordoado e a duração do atordoamento não acumula com outros efeitos similares. O estado de <color=#FFFFFF>Denúncia Maliciosa</color> acaba quando o alvo sai do estado de <color=#FFFFFF>Atordoamento</color>.\nEm combate, Dialyn obtém 0,6 pontos de <color=#FFFFFF>Avaliação Positiva</color> por segundo. Ela ganha mais 7,5 pontos de <color=#FFFFFF>Avaliação Positiva</color> quando o ataque pesado do <color=#FFFFFF>Ataque Especial Reforçado: Pedra</color>, <color=#FFFFFF>Ataque Especial Reforçado: Tesoura</color>, ou <color=#FFFFFF>Ataque Especial Reforçado: Papel</color> atinge um inimigo. Cada ataque gera apenas um bônus por uso, até um máximo de 120.\nCom 90 pontos de <color=#FFFFFF>Avaliação Positiva</color>, Dialyn pode abrir sua janela de <color=#FFFFFF>Ataque em Cadeia</color> com um <color=#FFFFFF>Ataque em Cadeia: Tapete de Boas-vindas</color>, um <color=#FFFFFF>Ataque Especial Reforçado: Vaza Daqui!</color>, ou uma <color=#FFFFFF>Assistência Reativa: Desvio de Chamadas</color>, e o <color=#FFFFFF>Ataque em Cadeia</color> do próximo personagem será aprimorado para <color=#FFFFFF>Supremo</color>. Quando um companheiro de equipe lança um <color=#FFFFFF>Supremo</color> desta maneira, Dialyn consome 60 pontos de <color=#FFFFFF>Avaliação Positiva</color>.\nQuando a <color=#FFFFFF>Avaliação Positiva</color> chega a 90 pontos e Dialyn atinge um inimigo sem usar <color=#FFFFFF>Ataque Especial Reforçado: Vaza Daqui!</color> para abrir a janela de <color=#FFFFFF>Ataque em Cadeia</color>, ela consome 90 pontos de <color=#FFFFFF>Avaliação Positiva</color> para abrir a janela de <color=#FFFFFF>Ataque em Cadeia</color> forçadamente. O <color=#FFFFFF>Ataque em Cadeia</color> do próximo personagem é aprimorado para <color=#FFFFFF>Supremo</color>.\nSempre que a pontuação de <color=#FFFFFF>Avaliação Positiva</color> chega a 90 ou que um <color=#FFFFFF>Supremo</color> é ativado, Dialyn obtém 1 ponto de <color=#FFFFFF>Queixas de Cliente</color>. Só é possível obter 1 ponto.",
+                "7": "Ao entrar no campo de batalha, Dialyn obtém 60 pontos de <color=#FFFFFF>Avaliação Positiva</color>. Se sua Taxa CRIT inicial é maior que 50%, ela causa mais <color=#2BAD00>2</color> de Impacto para cada 1% a mais, até um máximo de 100.\nPor 8 segundos após o <color=#FFFFFF>Ataque Especial Reforçado: Pedra</color>, o <color=#FFFFFF>Ataque Especial Reforçado</color> é um <color=#FFFFFF>Ataque Especial Reforçado: Tesoura</color>.\nPor 8 segundos após o <color=#FFFFFF>Ataque Especial Reforçado: Tesoura</color>, o <color=#FFFFFF>Ataque Especial Reforçado</color> é um <color=#FFFFFF>Ataque Especial Reforçado: Papel</color>.\nQuando <color=#FFFFFF>Ataque Especial Reforçado: Papel</color> atinge um inimigo, aplica o estado de <color=#FFFFFF>Denúncia Maliciosa</color>. Se um inimigo é atordoado durante o estado de <color=#FFFFFF>Denúncia Maliciosa</color>, o estado dura mais 2s e o Multiplicador de Dano de Atordoamento aumenta <color=#2BAD00>30%</color>. O estado de <color=#FFFFFF>Denúncia Maliciosa</color> só pode ser ativado uma vez quando o alvo está atordoado e a duração do atordoamento não acumula com outros efeitos similares. O estado de <color=#FFFFFF>Denúncia Maliciosa</color> acaba quando o alvo sai do estado de <color=#FFFFFF>Atordoamento</color>.\nEm combate, Dialyn obtém 0,6 pontos de <color=#FFFFFF>Avaliação Positiva</color> por segundo. Ela ganha mais 7,5 pontos de <color=#FFFFFF>Avaliação Positiva</color> quando o ataque pesado do <color=#FFFFFF>Ataque Especial Reforçado: Pedra</color>, <color=#FFFFFF>Ataque Especial Reforçado: Tesoura</color>, ou <color=#FFFFFF>Ataque Especial Reforçado: Papel</color> atinge um inimigo. Cada ataque gera apenas um bônus por uso, até um máximo de 120.\nCom 90 pontos de <color=#FFFFFF>Avaliação Positiva</color>, Dialyn pode abrir sua janela de <color=#FFFFFF>Ataque em Cadeia</color> com um <color=#FFFFFF>Ataque em Cadeia: Tapete de Boas-vindas</color>, um <color=#FFFFFF>Ataque Especial Reforçado: Vaza Daqui!</color>, ou uma <color=#FFFFFF>Assistência Reativa: Desvio de Chamadas</color>, e o <color=#FFFFFF>Ataque em Cadeia</color> do próximo personagem será aprimorado para <color=#FFFFFF>Supremo</color>. Quando um companheiro de equipe lança um <color=#FFFFFF>Supremo</color> desta maneira, Dialyn consome 60 pontos de <color=#FFFFFF>Avaliação Positiva</color>.\nQuando a <color=#FFFFFF>Avaliação Positiva</color> chega a 90 pontos e Dialyn atinge um inimigo sem usar <color=#FFFFFF>Ataque Especial Reforçado: Vaza Daqui!</color> para abrir a janela de <color=#FFFFFF>Ataque em Cadeia</color>, ela consome 90 pontos de <color=#FFFFFF>Avaliação Positiva</color> para abrir a janela de <color=#FFFFFF>Ataque em Cadeia</color> forçadamente. O <color=#FFFFFF>Ataque em Cadeia</color> do próximo personagem é aprimorado para <color=#FFFFFF>Supremo</color>.\nSempre que a pontuação de <color=#FFFFFF>Avaliação Positiva</color> chega a 90 ou que um <color=#FFFFFF>Supremo</color> é ativado, Dialyn obtém 1 ponto de <color=#FFFFFF>Queixas de Cliente</color>. Só é possível obter 1 ponto."
+            }
+        },
+        "MathSkill": {
+            "Title": "Habilidade Extra: Linha Externa",
+            "Description": "Quando há um personagem <color=#FFFFFF>Atacante</color> ou <color=#FFFFFF>Destruidor</color> na equipe:\nO Dano CRIT do <color=#FFFFFF>Ataque Especial Reforçado</color> de Dialyn aumenta 50%.\nUsar <color=#FFFFFF>Ataque Especial Reforçado</color> ou <color=#FFFFFF>Supremo</color> gera o efeito de <color=#FFFFFF>Satisfação Total</color> para toda a equipe. No estado de <color=#FFFFFF>Satisfação Total</color>, o dano causado aumenta 40% por 15s. Quando Dialyn usa <color=#FFFFFF>Ataque Especial Reforçado</color> ou <color=#FFFFFF>Supremo</color> no estado de <color=#FFFFFF>Satisfação Total</color>, se o tempo restante é menor que 35s, a duração aumenta 10s.\nQuando <color=#FFFFFF>Ataque Especial Reforçado: Pedra</color>, <color=#FFFFFF>Ataque Especial Reforçado: Tesoura</color>, ou <color=#FFFFFF>Ataque Especial Reforçado: Papel</color> atingem o alvo, causam dano adicional conforme a especialidade do personagem anterior.\nSe for um Agente <color=#FFFFFF>Atacante</color>, <color=#FFFFFF>Ataque Especial Reforçado: Pedra</color>, <color=#FFFFFF>Ataque Especial Reforçado: Tesoura</color>, e <color=#FFFFFF>Ataque Especial Reforçado: Papel</color> causam dano adicional igual a 320% do ATQ deste Agente.\nSe for um Agente <color=#FFFFFF>Destruidor</color>, <color=#FFFFFF>Ataque Especial Reforçado: Pedra</color>, <color=#FFFFFF>Ataque Especial Reforçado: Tesoura</color>, e <color=#FFFFFF>Ataque Especial Reforçado: Papel</color> causam dano adicional igual a 400% da Força Bruta deste Agente."
+        },
+        "BaseProps": [
+            {
+                "20101": 0,
+                "12101": 0
+            },
+            {
+                "20101": 480,
+                "12101": 0
+            },
+            {
+                "20101": 480,
+                "12101": 25
+            },
+            {
+                "20101": 960,
+                "12101": 25
+            },
+            {
+                "20101": 960,
+                "12101": 50
+            },
+            {
+                "20101": 1440,
+                "12101": 50
+            },
+            {
+                "20101": 1440,
+                "12101": 75
+            }
+        ]
+    },
+    "SkillDescriptions": {
+        "0": {
+            "148100001": {
+                "Title": "Ataque Básico: A Seu Dispor",
+                "Description": "Pressione <IconMap:Icon_Normal> para ativar:\nExecuta até quatro golpes e causa <color=#F0D12B>Dano Físico</color>."
+            },
+            "148100002": {
+                "Title": "Ataque Básico: Pedra, Papel, Tesoura",
+                "Description": "<color=#FFFFFF>Pressione <IconMap:Icon_Normal> após o Ataque Especial Reforçado: Pedra</color> ou o <color=#FFFFFF>Ataque Especial Reforçado: Tesoura</color> para ativar: Executa até 2 ataques consecutivos e causa <color=#F0D12B>Dano Físico</color>. Durante sua execução, o nível de Anti-Interrupção aumenta, e o dano sofrido diminui 40%."
+            },
+            "148100017": {
+                "Title": "Ataque Básico: A Seu Dispor"
+            },
+            "148100018": {
+                "Description": "Multiplicador de Dano de 1º Golpe",
+                "Param": "{Skill:1481001, Prop:1001}"
+            },
+            "148100019": {
+                "Description": "Multiplicador de Dano de 2º Golpe",
+                "Param": "{Skill:1481002, Prop:1001}"
+            },
+            "148100020": {
+                "Description": "Multiplicador de Dano de 3º Golpe",
+                "Param": "{Skill:1481003, Prop:1001}"
+            },
+            "148100021": {
+                "Description": "Multiplicador de Dano de 4º Golpe",
+                "Param": "{Skill:1481004, Prop:1001}"
+            },
+            "148100022": {
+                "Description": "Multiplicador de Atordoamento de 1º Golpe",
+                "Param": "{Skill:1481001, Prop:1002}"
+            },
+            "148100023": {
+                "Description": "Multiplicador de Atordoamento de 2º Golpe",
+                "Param": "{Skill:1481002, Prop:1002}"
+            },
+            "148100024": {
+                "Description": "Multiplicador de Atordoamento de 3º Golpe",
+                "Param": "{Skill:1481003, Prop:1002}"
+            },
+            "148100025": {
+                "Description": "Multiplicador de Atordoamento de 4º Golpe",
+                "Param": "{Skill:1481004, Prop:1002}"
+            },
+            "148100026": {
+                "Title": "Ataque Básico: Pedra, Papel, Tesoura"
+            },
+            "148100027": {
+                "Description": "Multiplicador de Dano de 1º Golpe",
+                "Param": "{Skill:1481005, Prop:1001}"
+            },
+            "148100028": {
+                "Description": "Multiplicador de Dano de 2º Golpe",
+                "Param": "{Skill:1481006, Prop:1001}"
+            },
+            "148100029": {
+                "Description": "Multiplicador de Dano de 3º Golpe",
+                "Param": "{Skill:1481007, Prop:1001}"
+            },
+            "148100030": {
+                "Description": "Multiplicador de Dano de 4º Golpe",
+                "Param": "{Skill:1481008, Prop:1001}"
+            },
+            "148100031": {
+                "Description": "Multiplicador de Atordoamento de 1º Golpe",
+                "Param": "{Skill:1481005, Prop:1002}"
+            },
+            "148100032": {
+                "Description": "Multiplicador de Atordoamento de 2º Golpe",
+                "Param": "{Skill:1481006, Prop:1002}"
+            },
+            "148100033": {
+                "Description": "Multiplicador de Atordoamento de 3º Golpe",
+                "Param": "{Skill:1481007, Prop:1002}"
+            },
+            "148100034": {
+                "Description": "Multiplicador de Atordoamento de 4º Golpe",
+                "Param": "{Skill:1481008, Prop:1002}"
+            }
+        },
+        "1": {
+            "148100003": {
+                "Title": "Ataque Especial Reforçado: Vaza Daqui!",
+                "Description": "Com <color=#FFFFFF>Queixas de Cliente</color>, mantenha <IconMap:Icon_Normal> pressionado para ativar:\nDá um soco para a frente e consome 1 ponto de <color=#FFFFFF>Queixas de Cliente</color>, causando <color=#F0D12B>Dano Físico</color>.\nApós a Habilidade ser ativada, o personagem anterior executa uma <color=#FFFFFF>Assistência Reativa</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "148100004": {
+                "Title": "Ataque Especial: Dando Boas-vindas",
+                "Description": "Pressione <IconMap:Icon_Special> para ativar:\nLança anéis duplos que cortam os inimigos, causando <color=#F0D12B>Dano Físico</color>.\nDurante sua execução, o nível de Anti-Interrupção aumenta."
+            },
+            "148100005": {
+                "Title": "Ataque Especial Reforçado: Pedra",
+                "Description": "Com energia suficiente, pressione <IconMap:Icon_SpecialReady> para ativar:\nLança um soco, que causa <color=#F0D12B>Dano Físico</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "148100006": {
+                "Title": "Ataque Especial Reforçado: Tesoura",
+                "Description": "Com energia suficiente, pressione <IconMap:Icon_SpecialReady> para ativar:\nDesfere um ataque de tesoura, que causa <color=#F0D12B>Dano Físico</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "148100007": {
+                "Title": "Ataque Especial Reforçado: Papel",
+                "Description": "Com energia suficiente, pressione <IconMap:Icon_SpecialReady> para ativar:\nDesfere um ataque de papel, que causa <color=#F0D12B>Dano Físico</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "148100035": {
+                "Title": "Ataque Especial Reforçado: Vaza Daqui!"
+            },
+            "148100036": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1481009, Prop:1001}"
+            },
+            "148100037": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1481009, Prop:1002}"
+            },
+            "148100038": {
+                "Title": "Ataque Especial: Dando Boas-vindas"
+            },
+            "148100039": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1481010, Prop:1001}"
+            },
+            "148100040": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1481010, Prop:1002}"
+            },
+            "148100041": {
+                "Title": "Ataque Especial Reforçado: Pedra"
+            },
+            "148100042": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1481011, Prop:1001}"
+            },
+            "148100043": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1481011, Prop:1002}"
+            },
+            "148100044": {
+                "Description": "Custo de Energia",
+                "Param": "25"
+            },
+            "148100045": {
+                "Title": "Ataque Especial Reforçado: Tesoura"
+            },
+            "148100046": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1481012, Prop:1001}"
+            },
+            "148100047": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1481012, Prop:1002}"
+            },
+            "148100048": {
+                "Description": "Custo de Energia",
+                "Param": "25"
+            },
+            "148100049": {
+                "Title": "Ataque Especial Reforçado: Papel"
+            },
+            "148100050": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1481013, Prop:1001}"
+            },
+            "148100051": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1481013, Prop:1002}"
+            },
+            "148100052": {
+                "Description": "Custo de Energia",
+                "Param": "25"
+            }
+        },
+        "2": {
+            "148100008": {
+                "Title": "Esquiva: Linha Ocupada",
+                "Description": "Pressione <IconMap:Icon_Evade> para ativar:\nUma esquiva rápida.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "148100009": {
+                "Title": "Ataque Rápido: Chamada Surpresa",
+                "Description": "Pressione <IconMap:Icon_Normal> durante uma Esquiva para ativar:\nExecuta uma investida contra os inimigos à frente, causando <color=#F0D12B>Dano Físico</color>."
+            },
+            "148100010": {
+                "Title": "Contraesquiva: Número Indisponível",
+                "Description": "Pressione <IconMap:Icon_Normal> após uma <color=#FFFFFF>Esquiva Perfeita</color> para ativar:\nExecuta um combo contra os inimigos à frente, causando <color=#F0D12B>Dano Físico</color>.\nPode conectar com o 4º golpe do <color=#FFFFFF>Ataque Básico: A Seu Dispor</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "148100053": {
+                "Title": "Ataque Rápido: Chamada Surpresa"
+            },
+            "148100054": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1481014, Prop:1001}"
+            },
+            "148100055": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1481014, Prop:1002}"
+            },
+            "148100056": {
+                "Title": "Contraesquiva: Número Indisponível"
+            },
+            "148100057": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1481015, Prop:1001}"
+            },
+            "148100058": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1481015, Prop:1002}"
+            }
+        },
+        "3": {
+            "148100011": {
+                "Title": "Ataque em Cadeia: Tapete de Boas-vindas",
+                "Description": "Quando um <color=#FFFFFF>Ataque em Cadeia</color> é acionado, selecione a personagem para ativar:\nLança vários chutes consecutivos à frente, causando <color=#F0D12B>Dano Físico</color> muito alto.\nPode conectar com o 4º golpe do <color=#FFFFFF>Ataque Básico: A Seu Dispor</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "148100012": {
+                "Title": "Supremo: O Número Discado Não Existe",
+                "Description": "Com o Índice de dB no <color=#FFFFFF>Máximo</color>, pressione <IconMap:Icon_UltimateReady> para ativar:\nAvança rapidamente para frente desferindo um ataque com os dedos, que causa <color=#F0D12B>Dano Físico</color> muito alto.\nPode conectar com o 4º golpe do <color=#FFFFFF>Ataque Básico: A Seu Dispor</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "148100059": {
+                "Title": "Ataque em Cadeia: Tapete de Boas-vindas"
+            },
+            "148100060": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1481016, Prop:1001}"
+            },
+            "148100061": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1481016, Prop:1002}"
+            },
+            "148100062": {
+                "Title": "Supremo: O Número Discado Não Existe"
+            },
+            "148100063": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1481017, Prop:1001}"
+            },
+            "148100064": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1481017, Prop:1002}"
+            }
+        },
+        "6": {
+            "148100014": {
+                "Title": "Assistência Reativa: Desvio de Chamadas",
+                "Description": "Quando o personagem ativo é lançado para o alto, pressione <IconMap:Icon_Switch> para ativar:\nExecuta um combo contra os inimigos à frente, causando <color=#F0D12B>Dano Físico</color>.\nPode conectar com o 4º golpe do <color=#FFFFFF>Ataque Básico: A Seu Dispor</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "148100015": {
+                "Title": "Assistência Defensiva: Recusar Chamada",
+                "Description": "Quando o personagem em campo está prestes a sofrer um ataque, pressione <IconMap:Icon_Switch> para ativar:\nDefende o ataque inimigo e causa muito Atordoamento.\nEsta habilidade é ideal para aparar ataques inimigos e reduz o consumo de <color=#FFFFFF>Pontos de Assistência</color> quando a personagem sofre uma sequência intensa de ataques.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "148100016": {
+                "Title": "Assistência Imediata: Linhas Cruzadas",
+                "Description": "Após uma <color=#FFFFFF>Assistência Defensiva</color>, pressione <IconMap:Icon_Normal> para ativar:\nAvança e executa um corte, que causa <color=#F0D12B>Dano Físico</color>.\nPode ser conectado com o 4º golpe do <color=#FFFFFF>Ataque Básico: A Seu Dispor</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "148100065": {
+                "Title": "Assistência Reativa: Desvio de Chamadas"
+            },
+            "148100066": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1481018, Prop:1001}"
+            },
+            "148100067": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1481018, Prop:1002}"
+            },
+            "148100068": {
+                "Title": "Assistência Defensiva: Recusar Chamada"
+            },
+            "148100069": {
+                "Description": "Multiplicador de Atordoamento de Defensiva Leve",
+                "Param": "{Skill:1481019, Prop:1002}"
+            },
+            "148100070": {
+                "Description": "Multiplicador de Atordoamento de Defensiva Pesada",
+                "Param": "{Skill:1481020, Prop:1002}"
+            },
+            "148100071": {
+                "Description": "Multiplicador de Atordoamento de Defensiva em Cadeia",
+                "Param": "{Skill:1481021, Prop:1002}"
+            },
+            "148100072": {
+                "Title": "Assistência Imediata: Linhas Cruzadas"
+            },
+            "148100073": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1481022, Prop:1001}"
+            },
+            "148100074": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1481022, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1481001": {
+            "DamageValue": 2560,
+            "DamageGrowth": 240,
+            "DazeValue": 1940,
+            "DazeGrowth": 90
+        },
+        "1481002": {
+            "DamageValue": 5130,
+            "DamageGrowth": 470,
+            "DazeValue": 4350,
+            "DazeGrowth": 200
+        },
+        "1481003": {
+            "DamageValue": 6480,
+            "DamageGrowth": 590,
+            "DazeValue": 6160,
+            "DazeGrowth": 280
+        },
+        "1481004": {
+            "DamageValue": 9950,
+            "DamageGrowth": 910,
+            "DazeValue": 9950,
+            "DazeGrowth": 460
+        },
+        "1481005": {
+            "DamageValue": 8950,
+            "DamageGrowth": 820,
+            "DazeValue": 7140,
+            "DazeGrowth": 330
+        },
+        "1481006": {
+            "DamageValue": 11390,
+            "DamageGrowth": 1040,
+            "DazeValue": 9080,
+            "DazeGrowth": 420
+        },
+        "1481007": {
+            "DamageValue": 10310,
+            "DamageGrowth": 940,
+            "DazeValue": 8220,
+            "DazeGrowth": 380
+        },
+        "1481008": {
+            "DamageValue": 10030,
+            "DamageGrowth": 920,
+            "DazeValue": 8000,
+            "DazeGrowth": 370
+        },
+        "1481009": {
+            "DamageValue": 54970,
+            "DamageGrowth": 5000,
+            "DazeValue": 33650,
+            "DazeGrowth": 1530
+        },
+        "1481010": {
+            "DamageValue": 5420,
+            "DamageGrowth": 500,
+            "DazeValue": 5420,
+            "DazeGrowth": 250
+        },
+        "1481011": {
+            "DamageValue": 40400,
+            "DamageGrowth": 3680,
+            "DazeValue": 23600,
+            "DazeGrowth": 1080
+        },
+        "1481012": {
+            "DamageValue": 52490,
+            "DamageGrowth": 4780,
+            "DazeValue": 31020,
+            "DazeGrowth": 1410
+        },
+        "1481013": {
+            "DamageValue": 70170,
+            "DamageGrowth": 6380,
+            "DazeValue": 42690,
+            "DazeGrowth": 1950
+        },
+        "1481014": {
+            "DamageValue": 6050,
+            "DamageGrowth": 550,
+            "DazeValue": 3030,
+            "DazeGrowth": 140
+        },
+        "1481015": {
+            "DamageValue": 26730,
+            "DamageGrowth": 2430,
+            "DazeValue": 23100,
+            "DazeGrowth": 1050
+        },
+        "1481016": {
+            "DamageValue": 62040,
+            "DamageGrowth": 5640,
+            "DazeValue": 18150,
+            "DazeGrowth": 830
+        },
+        "1481017": {
+            "DamageValue": 162250,
+            "DamageGrowth": 14750,
+            "DazeValue": 76780,
+            "DazeGrowth": 3490
+        },
+        "1481018": {
+            "DamageValue": 12100,
+            "DamageGrowth": 1100,
+            "DazeValue": 6050,
+            "DazeGrowth": 280
+        },
+        "1481019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1481020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1481021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1481022": {
+            "DamageValue": 37640,
+            "DamageGrowth": 3430,
+            "DazeValue": 32770,
+            "DazeGrowth": 1490
+        }
+    }
+}

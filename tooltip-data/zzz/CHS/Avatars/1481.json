@@ -1,0 +1,514 @@
+{
+    "Name": "琉音",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Specialty": {
+        "Id": 2,
+        "Name": "击破"
+    },
+    "Talents": {
+        "1": {
+            "Title": "服务热情保持饱满",
+            "Description": "每秒积累的<color=#FFFFFF>[好评]</color>与发动<color=#FFFFFF>[强化特殊技：石头]</color>、<color=#FFFFFF>[强化特殊技：剪刀]</color>、<color=#FFFFFF>[强化特殊技：布！]</color>命中敌人时积累的<color=#FFFFFF>[好评]</color>提升16%，<color=#FFFFFF>[好评如潮]</color>状态下的角色无视敌人15%全属性伤害抗性。",
+            "Lore": "欢迎来到「跨部门响应客服中心」！\n我们的服务宗旨是，永远保持笑容，永远对客户充满热情~！\n笑容？曾经最不熟练的表情，什么时候成了最习以为常的皮肤呢？\n「亲亲~有什么可以帮到您吗？当然~我的意思不是说我真的可以帮到您哦~！」"
+        },
+        "2": {
+            "Title": "7×24热线畅通",
+            "Description": "<color=#FFFFFF>[恶意投诉]</color>效果下敌人进入失衡状态后的失衡易伤倍率额外提升20%，所有单位对<color=#FFFFFF>[恶意投诉]</color>效果下的敌人造成的伤害提升15%。",
+            "Lore": "TOPS是全新艾利都最~大~的企业联合体，我们工作关乎着这座城市的生息~！\n我们是这座巨型机械最~重要~的润滑剂，所以我们的服务热线7×24小时要随时保持畅通！\n无时无刻从不停止的喧噪杂音么？没问题，那是我最熟悉的东西。\n「请您随时联系我~！反正不管您什么时候联系，我都是这么讨您嫌的样子呢~！」"
+        },
+        "3": {
+            "Title": "空洞来电",
+            "Description": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[连携技]</color> 技能等级+2",
+            "Lore": "空洞是一座巨大的坟墓，所有生命的响亮，都在漆黑的棺椁中寂静。\n但唯独对我来说，它是无法回绝的通话，是每一本日记的最后一页，是执念与痴怨的备忘录。\n虽然所有那些释怀或痴心的台词，都与我自己的故事无关。\n「没关系没关系~！我跟很多比您更无法沟通的客户沟通过呢~！」"
+        },
+        "4": {
+            "Title": "往事从不如烟",
+            "Description": "进入战场时，琉音回复20点能量，在勘域模式中此效果180秒内最多触发一次；<color=#FFFFFF>[好评如潮]</color>效果下，琉音攻击力提升500点。",
+            "Lore": "因为个子小一点总是被当成小孩子，可我的童年早就结束了。\n那一天是哪一天呢？是第一次听到亡灵的絮语时么？是被当作牺牲者送入空洞时么？还是啼哭的第一个夜晚？ \n无人庇护只好独自学步，忘不掉过往只好装作释怀。\n「我无意了解您人格的缺陷~但我很关心您童年创伤对我投诉率的影响~！」"
+        },
+        "5": {
+            "Title": "谎话",
+            "Description": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[连携技]</color> 技能等级+2",
+            "Lore": "人总是在被人在乎的时候说谎，却又在被人遗忘的时候吐露真相。\n这些不明智的抉择总是带来悔恨，我的工作不过是用昨天的悔恨，来让今天的悔恨少一些。\n我知道人总是讲谎话，但至少还有人愿意对我说谎。\n「我的策略建议是：在您人身攻击的间隙中，插入对您有利的胡说八道~！」"
+        },
+        "6": {
+            "Title": "真言",
+            "Description": "通过<color=#FFFFFF>[核心被动]</color>使其他队友以终结技入场后，该队友获得<color=#FFFFFF>[余音]</color>效果，攻击命中敌人时琉音对敌人造成额外一次<color=#F0D12B>物理属性伤害</color>，等同于琉音480%攻击力，该伤害被视为<color=#FFFFFF>[强化特殊技]</color>伤害，1秒内最多触发一次，最多触发12次，重复获得<color=#FFFFFF>[余音]</color>效果时刷新次数，同时只能有一名队友获得<color=#FFFFFF>[余音]</color>效果。",
+            "Lore": "但骤然降临的死亡就像时间的标本，将真相框定、凝结成了不会变更的模样。\n我从亡灵的手中取回这些标本， 把他们的死亡证明当作裁决书的底本。\n绝对客观的「真相」是唯一可以信赖的准绳，是指引我前路的唯一绳索，直到…\n「绳匠，我也可以说谎么？」"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "核心被动：五星客服热线",
+            "DescriptionByLevel": {
+                "1": "进入战场时，琉音初始拥有60点<color=#FFFFFF>[好评]</color>，初始暴击率超过50%时，每超过1%，冲击力提升<color=#2BAD00>1.4</color>点，最多提升100点；\n发动<color=#FFFFFF>[强化特殊技：石头]</color>后，下一次发动的<color=#FFFFFF>[强化特殊技]</color>变为<color=#FFFFFF>[强化特殊技：剪刀]</color>，持续8秒；\n发动<color=#FFFFFF>[强化特殊技：剪刀]</color>后，下一次发动的<color=#FFFFFF>[强化特殊技]</color>变为<color=#FFFFFF>[强化特殊技：布！]</color>，持续8秒；\n<color=#FFFFFF>[强化特殊技：布！]</color>命中敌人时，敌人获得<color=#FFFFFF>[恶意投诉]</color>效果，<color=#FFFFFF>[恶意投诉]</color>效果下敌人进入失衡状态后的失衡持续时间提升2秒，失衡易伤倍率提升<color=#2BAD00>15%</color>，从失衡状态恢复前<color=#FFFFFF>[恶意投诉]</color>效果对同一目标最多触发一次，失衡持续时间提升效果与同类效果不可叠加，拥有<color=#FFFFFF>[恶意投诉]</color>效果的敌人失衡结束时<color=#FFFFFF>[恶意投诉]</color>效果结束；\n处于接战状态下，琉音每秒积攒0.6点<color=#FFFFFF>[好评]</color>，发动<color=#FFFFFF>[强化特殊技：石头]</color>、<color=#FFFFFF>[强化特殊技：剪刀]</color>、<color=#FFFFFF>[强化特殊技：布！]</color>的重击命中敌人时将积攒7.5点<color=#FFFFFF>[好评]</color>，同一招式内最多积攒一次，最多积攒120点；\n当<color=#FFFFFF>[好评]</color>满90点且琉音利用<color=#FFFFFF>[连携技：迎宾踏垫]</color>、<color=#FFFFFF>[强化特殊技：送客！]</color>、<color=#FFFFFF>[快速支援：呼叫转移]</color>打开<color=#FFFFFF>[连携技]</color>窗口时，下一位出场的角色会将此次<color=#FFFFFF>[连携技]</color>强制升级为<color=#FFFFFF>[终结技]</color>，队友以此方式发动<color=#FFFFFF>[终结技]</color>时，琉音消耗60点<color=#FFFFFF>[好评]</color>；\n当<color=#FFFFFF>[好评]</color>满90点且琉音发动<color=#FFFFFF>[强化特殊技：送客！]</color>命中未打开<color=#FFFFFF>[连携技]</color>窗口的敌人时，将消耗90点<color=#FFFFFF>[好评]</color>强制打开<color=#FFFFFF>[连携技]</color>窗口，下一位出场的角色会将此次<color=#FFFFFF>[连携技]</color>强制升级为<color=#FFFFFF>[终结技]</color>；\n每当<color=#FFFFFF>[好评]</color>积攒至90点或发动<color=#FFFFFF>[终结技]</color>时，琉音获得1点<color=#FFFFFF>[客诉]</color>，最多拥有1点<color=#FFFFFF>[客诉]</color>。",
+                "2": "进入战场时，琉音初始拥有60点<color=#FFFFFF>[好评]</color>，初始暴击率超过50%时，每超过1%，冲击力提升<color=#2BAD00>1.5</color>点，最多提升100点；\n发动<color=#FFFFFF>[强化特殊技：石头]</color>后，下一次发动的<color=#FFFFFF>[强化特殊技]</color>变为<color=#FFFFFF>[强化特殊技：剪刀]</color>，持续8秒；\n发动<color=#FFFFFF>[强化特殊技：剪刀]</color>后，下一次发动的<color=#FFFFFF>[强化特殊技]</color>变为<color=#FFFFFF>[强化特殊技：布！]</color>，持续8秒；\n<color=#FFFFFF>[强化特殊技：布！]</color>命中敌人时，敌人获得<color=#FFFFFF>[恶意投诉]</color>效果，<color=#FFFFFF>[恶意投诉]</color>效果下敌人进入失衡状态后的失衡持续时间提升2秒，失衡易伤倍率提升<color=#2BAD00>17.5%</color>，从失衡状态恢复前<color=#FFFFFF>[恶意投诉]</color>效果对同一目标最多触发一次，失衡持续时间提升效果与同类效果不可叠加，拥有<color=#FFFFFF>[恶意投诉]</color>效果的敌人失衡结束时<color=#FFFFFF>[恶意投诉]</color>效果结束；\n处于接战状态下，琉音每秒积攒0.6点<color=#FFFFFF>[好评]</color>，发动<color=#FFFFFF>[强化特殊技：石头]</color>、<color=#FFFFFF>[强化特殊技：剪刀]</color>、<color=#FFFFFF>[强化特殊技：布！]</color>的重击命中敌人时将积攒7.5点<color=#FFFFFF>[好评]</color>，同一招式内最多积攒一次，最多积攒120点；\n当<color=#FFFFFF>[好评]</color>满90点且琉音利用<color=#FFFFFF>[连携技：迎宾踏垫]</color>、<color=#FFFFFF>[强化特殊技：送客！]</color>、<color=#FFFFFF>[快速支援：呼叫转移]</color>打开<color=#FFFFFF>[连携技]</color>窗口时，下一位出场的角色会将此次<color=#FFFFFF>[连携技]</color>强制升级为<color=#FFFFFF>[终结技]</color>，队友以此方式发动<color=#FFFFFF>[终结技]</color>时，琉音消耗60点<color=#FFFFFF>[好评]</color>；\n当<color=#FFFFFF>[好评]</color>满90点且琉音发动<color=#FFFFFF>[强化特殊技：送客！]</color>命中未打开<color=#FFFFFF>[连携技]</color>窗口的敌人时，将消耗90点<color=#FFFFFF>[好评]</color>强制打开<color=#FFFFFF>[连携技]</color>窗口，下一位出场的角色会将此次<color=#FFFFFF>[连携技]</color>强制升级为<color=#FFFFFF>[终结技]</color>；\n每当<color=#FFFFFF>[好评]</color>积攒至90点或发动<color=#FFFFFF>[终结技]</color>时，琉音获得1点<color=#FFFFFF>[客诉]</color>，最多拥有1点<color=#FFFFFF>[客诉]</color>。",
+                "3": "进入战场时，琉音初始拥有60点<color=#FFFFFF>[好评]</color>，初始暴击率超过50%时，每超过1%，冲击力提升<color=#2BAD00>1.6</color>点，最多提升100点；\n发动<color=#FFFFFF>[强化特殊技：石头]</color>后，下一次发动的<color=#FFFFFF>[强化特殊技]</color>变为<color=#FFFFFF>[强化特殊技：剪刀]</color>，持续8秒；\n发动<color=#FFFFFF>[强化特殊技：剪刀]</color>后，下一次发动的<color=#FFFFFF>[强化特殊技]</color>变为<color=#FFFFFF>[强化特殊技：布！]</color>，持续8秒；\n<color=#FFFFFF>[强化特殊技：布！]</color>命中敌人时，敌人获得<color=#FFFFFF>[恶意投诉]</color>效果，<color=#FFFFFF>[恶意投诉]</color>效果下敌人进入失衡状态后的失衡持续时间提升2秒，失衡易伤倍率提升<color=#2BAD00>20%</color>，从失衡状态恢复前<color=#FFFFFF>[恶意投诉]</color>效果对同一目标最多触发一次，失衡持续时间提升效果与同类效果不可叠加，拥有<color=#FFFFFF>[恶意投诉]</color>效果的敌人失衡结束时<color=#FFFFFF>[恶意投诉]</color>效果结束；\n处于接战状态下，琉音每秒积攒0.6点<color=#FFFFFF>[好评]</color>，发动<color=#FFFFFF>[强化特殊技：石头]</color>、<color=#FFFFFF>[强化特殊技：剪刀]</color>、<color=#FFFFFF>[强化特殊技：布！]</color>的重击命中敌人时将积攒7.5点<color=#FFFFFF>[好评]</color>，同一招式内最多积攒一次，最多积攒120点；\n当<color=#FFFFFF>[好评]</color>满90点且琉音利用<color=#FFFFFF>[连携技：迎宾踏垫]</color>、<color=#FFFFFF>[强化特殊技：送客！]</color>、<color=#FFFFFF>[快速支援：呼叫转移]</color>打开<color=#FFFFFF>[连携技]</color>窗口时，下一位出场的角色会将此次<color=#FFFFFF>[连携技]</color>强制升级为<color=#FFFFFF>[终结技]</color>，队友以此方式发动<color=#FFFFFF>[终结技]</color>时，琉音消耗60点<color=#FFFFFF>[好评]</color>；\n当<color=#FFFFFF>[好评]</color>满90点且琉音发动<color=#FFFFFF>[强化特殊技：送客！]</color>命中未打开<color=#FFFFFF>[连携技]</color>窗口的敌人时，将消耗90点<color=#FFFFFF>[好评]</color>强制打开<color=#FFFFFF>[连携技]</color>窗口，下一位出场的角色会将此次<color=#FFFFFF>[连携技]</color>强制升级为<color=#FFFFFF>[终结技]</color>；\n每当<color=#FFFFFF>[好评]</color>积攒至90点或发动<color=#FFFFFF>[终结技]</color>时，琉音获得1点<color=#FFFFFF>[客诉]</color>，最多拥有1点<color=#FFFFFF>[客诉]</color>。",
+                "4": "进入战场时，琉音初始拥有60点<color=#FFFFFF>[好评]</color>，初始暴击率超过50%时，每超过1%，冲击力提升<color=#2BAD00>1.7</color>点，最多提升100点；\n发动<color=#FFFFFF>[强化特殊技：石头]</color>后，下一次发动的<color=#FFFFFF>[强化特殊技]</color>变为<color=#FFFFFF>[强化特殊技：剪刀]</color>，持续8秒；\n发动<color=#FFFFFF>[强化特殊技：剪刀]</color>后，下一次发动的<color=#FFFFFF>[强化特殊技]</color>变为<color=#FFFFFF>[强化特殊技：布！]</color>，持续8秒；\n<color=#FFFFFF>[强化特殊技：布！]</color>命中敌人时，敌人获得<color=#FFFFFF>[恶意投诉]</color>效果，<color=#FFFFFF>[恶意投诉]</color>效果下敌人进入失衡状态后的失衡持续时间提升2秒，失衡易伤倍率提升<color=#2BAD00>22.5%</color>，从失衡状态恢复前<color=#FFFFFF>[恶意投诉]</color>效果对同一目标最多触发一次，失衡持续时间提升效果与同类效果不可叠加，拥有<color=#FFFFFF>[恶意投诉]</color>效果的敌人失衡结束时<color=#FFFFFF>[恶意投诉]</color>效果结束；\n处于接战状态下，琉音每秒积攒0.6点<color=#FFFFFF>[好评]</color>，发动<color=#FFFFFF>[强化特殊技：石头]</color>、<color=#FFFFFF>[强化特殊技：剪刀]</color>、<color=#FFFFFF>[强化特殊技：布！]</color>的重击命中敌人时将积攒7.5点<color=#FFFFFF>[好评]</color>，同一招式内最多积攒一次，最多积攒120点；\n当<color=#FFFFFF>[好评]</color>满90点且琉音利用<color=#FFFFFF>[连携技：迎宾踏垫]</color>、<color=#FFFFFF>[强化特殊技：送客！]</color>、<color=#FFFFFF>[快速支援：呼叫转移]</color>打开<color=#FFFFFF>[连携技]</color>窗口时，下一位出场的角色会将此次<color=#FFFFFF>[连携技]</color>强制升级为<color=#FFFFFF>[终结技]</color>，队友以此方式发动<color=#FFFFFF>[终结技]</color>时，琉音消耗60点<color=#FFFFFF>[好评]</color>；\n当<color=#FFFFFF>[好评]</color>满90点且琉音发动<color=#FFFFFF>[强化特殊技：送客！]</color>命中未打开<color=#FFFFFF>[连携技]</color>窗口的敌人时，将消耗90点<color=#FFFFFF>[好评]</color>强制打开<color=#FFFFFF>[连携技]</color>窗口，下一位出场的角色会将此次<color=#FFFFFF>[连携技]</color>强制升级为<color=#FFFFFF>[终结技]</color>；\n每当<color=#FFFFFF>[好评]</color>积攒至90点或发动<color=#FFFFFF>[终结技]</color>时，琉音获得1点<color=#FFFFFF>[客诉]</color>，最多拥有1点<color=#FFFFFF>[客诉]</color>。",
+                "5": "进入战场时，琉音初始拥有60点<color=#FFFFFF>[好评]</color>，初始暴击率超过50%时，每超过1%，冲击力提升<color=#2BAD00>1.8</color>点，最多提升100点；\n发动<color=#FFFFFF>[强化特殊技：石头]</color>后，下一次发动的<color=#FFFFFF>[强化特殊技]</color>变为<color=#FFFFFF>[强化特殊技：剪刀]</color>，持续8秒；\n发动<color=#FFFFFF>[强化特殊技：剪刀]</color>后，下一次发动的<color=#FFFFFF>[强化特殊技]</color>变为<color=#FFFFFF>[强化特殊技：布！]</color>，持续8秒；\n<color=#FFFFFF>[强化特殊技：布！]</color>命中敌人时，敌人获得<color=#FFFFFF>[恶意投诉]</color>效果，<color=#FFFFFF>[恶意投诉]</color>效果下敌人进入失衡状态后的失衡持续时间提升2秒，失衡易伤倍率提升<color=#2BAD00>25%</color>，从失衡状态恢复前<color=#FFFFFF>[恶意投诉]</color>效果对同一目标最多触发一次，失衡持续时间提升效果与同类效果不可叠加，拥有<color=#FFFFFF>[恶意投诉]</color>效果的敌人失衡结束时<color=#FFFFFF>[恶意投诉]</color>效果结束；\n处于接战状态下，琉音每秒积攒0.6点<color=#FFFFFF>[好评]</color>，发动<color=#FFFFFF>[强化特殊技：石头]</color>、<color=#FFFFFF>[强化特殊技：剪刀]</color>、<color=#FFFFFF>[强化特殊技：布！]</color>的重击命中敌人时将积攒7.5点<color=#FFFFFF>[好评]</color>，同一招式内最多积攒一次，最多积攒120点；\n当<color=#FFFFFF>[好评]</color>满90点且琉音利用<color=#FFFFFF>[连携技：迎宾踏垫]</color>、<color=#FFFFFF>[强化特殊技：送客！]</color>、<color=#FFFFFF>[快速支援：呼叫转移]</color>打开<color=#FFFFFF>[连携技]</color>窗口时，下一位出场的角色会将此次<color=#FFFFFF>[连携技]</color>强制升级为<color=#FFFFFF>[终结技]</color>，队友以此方式发动<color=#FFFFFF>[终结技]</color>时，琉音消耗60点<color=#FFFFFF>[好评]</color>；\n当<color=#FFFFFF>[好评]</color>满90点且琉音发动<color=#FFFFFF>[强化特殊技：送客！]</color>命中未打开<color=#FFFFFF>[连携技]</color>窗口的敌人时，将消耗90点<color=#FFFFFF>[好评]</color>强制打开<color=#FFFFFF>[连携技]</color>窗口，下一位出场的角色会将此次<color=#FFFFFF>[连携技]</color>强制升级为<color=#FFFFFF>[终结技]</color>；\n每当<color=#FFFFFF>[好评]</color>积攒至90点或发动<color=#FFFFFF>[终结技]</color>时，琉音获得1点<color=#FFFFFF>[客诉]</color>，最多拥有1点<color=#FFFFFF>[客诉]</color>。",
+                "6": "进入战场时，琉音初始拥有60点<color=#FFFFFF>[好评]</color>，初始暴击率超过50%时，每超过1%，冲击力提升<color=#2BAD00>1.9</color>点，最多提升100点；\n发动<color=#FFFFFF>[强化特殊技：石头]</color>后，下一次发动的<color=#FFFFFF>[强化特殊技]</color>变为<color=#FFFFFF>[强化特殊技：剪刀]</color>，持续8秒；\n发动<color=#FFFFFF>[强化特殊技：剪刀]</color>后，下一次发动的<color=#FFFFFF>[强化特殊技]</color>变为<color=#FFFFFF>[强化特殊技：布！]</color>，持续8秒；\n<color=#FFFFFF>[强化特殊技：布！]</color>命中敌人时，敌人获得<color=#FFFFFF>[恶意投诉]</color>效果，<color=#FFFFFF>[恶意投诉]</color>效果下敌人进入失衡状态后的失衡持续时间提升2秒，失衡易伤倍率提升<color=#2BAD00>27.5%</color>，从失衡状态恢复前<color=#FFFFFF>[恶意投诉]</color>效果对同一目标最多触发一次，失衡持续时间提升效果与同类效果不可叠加，拥有<color=#FFFFFF>[恶意投诉]</color>效果的敌人失衡结束时<color=#FFFFFF>[恶意投诉]</color>效果结束；\n处于接战状态下，琉音每秒积攒0.6点<color=#FFFFFF>[好评]</color>，发动<color=#FFFFFF>[强化特殊技：石头]</color>、<color=#FFFFFF>[强化特殊技：剪刀]</color>、<color=#FFFFFF>[强化特殊技：布！]</color>的重击命中敌人时将积攒7.5点<color=#FFFFFF>[好评]</color>，同一招式内最多积攒一次，最多积攒120点；\n当<color=#FFFFFF>[好评]</color>满90点且琉音利用<color=#FFFFFF>[连携技：迎宾踏垫]</color>、<color=#FFFFFF>[强化特殊技：送客！]</color>、<color=#FFFFFF>[快速支援：呼叫转移]</color>打开<color=#FFFFFF>[连携技]</color>窗口时，下一位出场的角色会将此次<color=#FFFFFF>[连携技]</color>强制升级为<color=#FFFFFF>[终结技]</color>，队友以此方式发动<color=#FFFFFF>[终结技]</color>时，琉音消耗60点<color=#FFFFFF>[好评]</color>；\n当<color=#FFFFFF>[好评]</color>满90点且琉音发动<color=#FFFFFF>[强化特殊技：送客！]</color>命中未打开<color=#FFFFFF>[连携技]</color>窗口的敌人时，将消耗90点<color=#FFFFFF>[好评]</color>强制打开<color=#FFFFFF>[连携技]</color>窗口，下一位出场的角色会将此次<color=#FFFFFF>[连携技]</color>强制升级为<color=#FFFFFF>[终结技]</color>；\n每当<color=#FFFFFF>[好评]</color>积攒至90点或发动<color=#FFFFFF>[终结技]</color>时，琉音获得1点<color=#FFFFFF>[客诉]</color>，最多拥有1点<color=#FFFFFF>[客诉]</color>。",
+                "7": "进入战场时，琉音初始拥有60点<color=#FFFFFF>[好评]</color>，初始暴击率超过50%时，每超过1%，冲击力提升<color=#2BAD00>2</color>点，最多提升100点；\n发动<color=#FFFFFF>[强化特殊技：石头]</color>后，下一次发动的<color=#FFFFFF>[强化特殊技]</color>变为<color=#FFFFFF>[强化特殊技：剪刀]</color>，持续8秒；\n发动<color=#FFFFFF>[强化特殊技：剪刀]</color>后，下一次发动的<color=#FFFFFF>[强化特殊技]</color>变为<color=#FFFFFF>[强化特殊技：布！]</color>，持续8秒；\n<color=#FFFFFF>[强化特殊技：布！]</color>命中敌人时，敌人获得<color=#FFFFFF>[恶意投诉]</color>效果，<color=#FFFFFF>[恶意投诉]</color>效果下敌人进入失衡状态后的失衡持续时间提升2秒，失衡易伤倍率提升<color=#2BAD00>30%</color>，从失衡状态恢复前<color=#FFFFFF>[恶意投诉]</color>效果对同一目标最多触发一次，失衡持续时间提升效果与同类效果不可叠加，拥有<color=#FFFFFF>[恶意投诉]</color>效果的敌人失衡结束时<color=#FFFFFF>[恶意投诉]</color>效果结束；\n处于接战状态下，琉音每秒积攒0.6点<color=#FFFFFF>[好评]</color>，发动<color=#FFFFFF>[强化特殊技：石头]</color>、<color=#FFFFFF>[强化特殊技：剪刀]</color>、<color=#FFFFFF>[强化特殊技：布！]</color>的重击命中敌人时将积攒7.5点<color=#FFFFFF>[好评]</color>，同一招式内最多积攒一次，最多积攒120点；\n当<color=#FFFFFF>[好评]</color>满90点且琉音利用<color=#FFFFFF>[连携技：迎宾踏垫]</color>、<color=#FFFFFF>[强化特殊技：送客！]</color>、<color=#FFFFFF>[快速支援：呼叫转移]</color>打开<color=#FFFFFF>[连携技]</color>窗口时，下一位出场的角色会将此次<color=#FFFFFF>[连携技]</color>强制升级为<color=#FFFFFF>[终结技]</color>，队友以此方式发动<color=#FFFFFF>[终结技]</color>时，琉音消耗60点<color=#FFFFFF>[好评]</color>；\n当<color=#FFFFFF>[好评]</color>满90点且琉音发动<color=#FFFFFF>[强化特殊技：送客！]</color>命中未打开<color=#FFFFFF>[连携技]</color>窗口的敌人时，将消耗90点<color=#FFFFFF>[好评]</color>强制打开<color=#FFFFFF>[连携技]</color>窗口，下一位出场的角色会将此次<color=#FFFFFF>[连携技]</color>强制升级为<color=#FFFFFF>[终结技]</color>；\n每当<color=#FFFFFF>[好评]</color>积攒至90点或发动<color=#FFFFFF>[终结技]</color>时，琉音获得1点<color=#FFFFFF>[客诉]</color>，最多拥有1点<color=#FFFFFF>[客诉]</color>。"
+            }
+        },
+        "MathSkill": {
+            "Title": "额外能力：场外连线",
+            "Description": "队伍中存在<color=#FFFFFF>[强攻]</color>角色或<color=#FFFFFF>[命破]</color>角色时触发：\n琉音造成的<color=#FFFFFF>[强化特殊技]</color>伤害的暴击伤害提升50%；\n发动<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[终结技]</color>时全队角色获得<color=#FFFFFF>[好评如潮]</color>效果，<color=#FFFFFF>[好评如潮]</color>状态下的角色造成的伤害提升40%，持续15秒，琉音在<color=#FFFFFF>[好评如潮]</color>状态下发动<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[终结技]</color>时，若当前<color=#FFFFFF>[好评如潮]</color>的剩余持续时间小于35秒，则将该状态的持续时间延长10秒；\n<color=#FFFFFF>[强化特殊技：石头]</color>、<color=#FFFFFF>[强化特殊技：剪刀]</color>、<color=#FFFFFF>[强化特殊技：布！]</color>重击命中时会根据队伍中琉音的上一位队友的特性造成额外伤害：\n队友为<color=#FFFFFF>[强攻]</color>代理人时，<color=#FFFFFF>[强化特殊技：石头]</color>、<color=#FFFFFF>[强化特殊技：剪刀]</color>、<color=#FFFFFF>[强化特殊技：布！]</color>额外造成等同于该<color=#FFFFFF>[强攻]</color>代理人320%攻击力的伤害；\n队友为<color=#FFFFFF>[命破]</color>代理人时，<color=#FFFFFF>[强化特殊技：石头]</color>、<color=#FFFFFF>[强化特殊技：剪刀]</color>、<color=#FFFFFF>[强化特殊技：布！]</color>额外造成等同于该<color=#FFFFFF>[命破]</color>代理人400%贯穿力的伤害。"
+        },
+        "BaseProps": [
+            {
+                "20101": 0,
+                "12101": 0
+            },
+            {
+                "20101": 480,
+                "12101": 0
+            },
+            {
+                "20101": 480,
+                "12101": 25
+            },
+            {
+                "20101": 960,
+                "12101": 25
+            },
+            {
+                "20101": 960,
+                "12101": 50
+            },
+            {
+                "20101": 1440,
+                "12101": 50
+            },
+            {
+                "20101": 1440,
+                "12101": 75
+            }
+        ]
+    },
+    "SkillDescriptions": {
+        "0": {
+            "148100001": {
+                "Title": "普通攻击：很高兴为您服务",
+                "Description": "点按 <IconMap:Icon_Normal> 发动：\n向前方进行至多四段攻击，造成<color=#F0D12B>物理伤害</color>。"
+            },
+            "148100002": {
+                "Title": "普通攻击：猜拳把戏",
+                "Description": "<color=#FFFFFF>[强化特殊技：石头]</color>或<color=#FFFFFF>[强化特殊技：剪刀]</color>后点按 <IconMap:Icon_Normal> 发动：\n分别进行至多两段攻击，造成<color=#F0D12B>物理伤害</color>；\n招式发动期间抗打断等级提升，受到的伤害降低40%。"
+            },
+            "148100017": {
+                "Title": "普通攻击：很高兴为您服务"
+            },
+            "148100018": {
+                "Description": "一段伤害倍率",
+                "Param": "{Skill:1481001, Prop:1001}"
+            },
+            "148100019": {
+                "Description": "二段伤害倍率",
+                "Param": "{Skill:1481002, Prop:1001}"
+            },
+            "148100020": {
+                "Description": "三段伤害倍率",
+                "Param": "{Skill:1481003, Prop:1001}"
+            },
+            "148100021": {
+                "Description": "四段伤害倍率",
+                "Param": "{Skill:1481004, Prop:1001}"
+            },
+            "148100022": {
+                "Description": "一段失衡倍率",
+                "Param": "{Skill:1481001, Prop:1002}"
+            },
+            "148100023": {
+                "Description": "二段失衡倍率",
+                "Param": "{Skill:1481002, Prop:1002}"
+            },
+            "148100024": {
+                "Description": "三段失衡倍率",
+                "Param": "{Skill:1481003, Prop:1002}"
+            },
+            "148100025": {
+                "Description": "四段失衡倍率",
+                "Param": "{Skill:1481004, Prop:1002}"
+            },
+            "148100026": {
+                "Title": "普通攻击：猜拳把戏"
+            },
+            "148100027": {
+                "Description": "一段伤害倍率",
+                "Param": "{Skill:1481005, Prop:1001}"
+            },
+            "148100028": {
+                "Description": "二段伤害倍率",
+                "Param": "{Skill:1481006, Prop:1001}"
+            },
+            "148100029": {
+                "Description": "三段伤害倍率",
+                "Param": "{Skill:1481007, Prop:1001}"
+            },
+            "148100030": {
+                "Description": "四段伤害倍率",
+                "Param": "{Skill:1481008, Prop:1001}"
+            },
+            "148100031": {
+                "Description": "一段失衡倍率",
+                "Param": "{Skill:1481005, Prop:1002}"
+            },
+            "148100032": {
+                "Description": "二段失衡倍率",
+                "Param": "{Skill:1481006, Prop:1002}"
+            },
+            "148100033": {
+                "Description": "三段失衡倍率",
+                "Param": "{Skill:1481007, Prop:1002}"
+            },
+            "148100034": {
+                "Description": "四段失衡倍率",
+                "Param": "{Skill:1481008, Prop:1002}"
+            }
+        },
+        "1": {
+            "148100003": {
+                "Title": "强化特殊技：送客！",
+                "Description": "拥有<color=#FFFFFF>[客诉]</color>时，长按 <IconMap:Icon_Normal> 发动：\n向前方发动抱拳攻击，发动时消耗1点<color=#FFFFFF>[客诉]</color>，造成<color=#F0D12B>物理伤害</color>；\n招式发动后将触发上一位角色的<color=#FFFFFF>[快速支援]</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "148100004": {
+                "Title": "特殊技：欢迎手势",
+                "Description": "点按 <IconMap:Icon_Special> 发动：\n丢出双环切割敌人，造成<color=#F0D12B>物理伤害</color>；\n招式发动期间抗打断等级提升。"
+            },
+            "148100005": {
+                "Title": "强化特殊技：石头",
+                "Description": "能量足够时，点按 <IconMap:Icon_SpecialReady> 发动：\n发动拳头攻击，造成<color=#F0D12B>物理伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "148100006": {
+                "Title": "强化特殊技：剪刀",
+                "Description": "能量足够时，点按 <IconMap:Icon_SpecialReady> 发动：\n发动剪刀攻击，造成<color=#F0D12B>物理伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "148100007": {
+                "Title": "强化特殊技：布！",
+                "Description": "能量足够时，点按 <IconMap:Icon_SpecialReady> 发动：\n发动布攻击，造成<color=#F0D12B>物理伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "148100035": {
+                "Title": "强化特殊技：送客！"
+            },
+            "148100036": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1481009, Prop:1001}"
+            },
+            "148100037": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1481009, Prop:1002}"
+            },
+            "148100038": {
+                "Title": "特殊技：欢迎手势"
+            },
+            "148100039": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1481010, Prop:1001}"
+            },
+            "148100040": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1481010, Prop:1002}"
+            },
+            "148100041": {
+                "Title": "强化特殊技：石头"
+            },
+            "148100042": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1481011, Prop:1001}"
+            },
+            "148100043": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1481011, Prop:1002}"
+            },
+            "148100044": {
+                "Description": "能量消耗",
+                "Param": "25点"
+            },
+            "148100045": {
+                "Title": "强化特殊技：剪刀"
+            },
+            "148100046": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1481012, Prop:1001}"
+            },
+            "148100047": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1481012, Prop:1002}"
+            },
+            "148100048": {
+                "Description": "能量消耗",
+                "Param": "25点"
+            },
+            "148100049": {
+                "Title": "强化特殊技：布！"
+            },
+            "148100050": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1481013, Prop:1001}"
+            },
+            "148100051": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1481013, Prop:1002}"
+            },
+            "148100052": {
+                "Description": "能量消耗",
+                "Param": "25点"
+            }
+        },
+        "2": {
+            "148100008": {
+                "Title": "闪避：号码占线",
+                "Description": "点按 <IconMap:Icon_Evade> 发动：\n快速的冲刺闪避；\n招式发动期间拥有无敌效果。"
+            },
+            "148100009": {
+                "Title": "冲刺攻击：突然来电",
+                "Description": "闪避时，点按 <IconMap:Icon_Normal> 发动：\n向前方进行突进攻击，造成<color=#F0D12B>物理伤害</color>。"
+            },
+            "148100010": {
+                "Title": "闪避反击：无法接听",
+                "Description": "触发<color=#FFFFFF>[极限闪避]</color>后，点按 <IconMap:Icon_Normal> 发动：\n对前方敌人发动连续攻击，造成<color=#F0D12B>物理伤害</color>；\n招式发动后可直接衔接<color=#FFFFFF>[普通攻击：很高兴为您服务]</color>的第四段攻击；\n招式发动期间拥有无敌效果。"
+            },
+            "148100053": {
+                "Title": "冲刺攻击：突然来电"
+            },
+            "148100054": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1481014, Prop:1001}"
+            },
+            "148100055": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1481014, Prop:1002}"
+            },
+            "148100056": {
+                "Title": "闪避反击：无法接听"
+            },
+            "148100057": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1481015, Prop:1001}"
+            },
+            "148100058": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1481015, Prop:1002}"
+            }
+        },
+        "3": {
+            "148100011": {
+                "Title": "连携技：迎宾踏垫",
+                "Description": "触发<color=#FFFFFF>[连携技]</color>时，选择对应角色发动：\n向前方发动连续踢击，造成大量<color=#F0D12B>物理伤害</color>；\n招式发动后可直接衔接<color=#FFFFFF>[普通攻击：很高兴为您服务]</color>的第四段攻击；\n招式发动期间拥有无敌效果。"
+            },
+            "148100012": {
+                "Title": "终结技：拨打用户即刻停机",
+                "Description": "喧响等级达到<color=#FFFFFF>[极]</color>时，点按 <IconMap:Icon_UltimateReady> 发动：\n快速突进向前方发动弹指攻击，造成大量<color=#F0D12B>物理伤害</color>；\n招式发动后可直接衔接<color=#FFFFFF>[普通攻击：很高兴为您服务]</color>的第四段攻击；\n招式发动期间拥有无敌效果。"
+            },
+            "148100059": {
+                "Title": "连携技：迎宾踏垫"
+            },
+            "148100060": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1481016, Prop:1001}"
+            },
+            "148100061": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1481016, Prop:1002}"
+            },
+            "148100062": {
+                "Title": "终结技：拨打用户即刻停机"
+            },
+            "148100063": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1481017, Prop:1001}"
+            },
+            "148100064": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1481017, Prop:1002}"
+            }
+        },
+        "6": {
+            "148100014": {
+                "Title": "快速支援：呼叫转移",
+                "Description": "当前操作中的角色被击飞时，点按 <IconMap:Icon_Switch> 发动：\n对前方敌人发动连续攻击，造成<color=#F0D12B>物理伤害</color>；\n招式发动后可直接衔接<color=#FFFFFF>[普通攻击：很高兴为您服务]</color>的第四段攻击；\n招式发动期间拥有无敌效果。"
+            },
+            "148100015": {
+                "Title": "招架支援：拒绝通话",
+                "Description": "前场角色即将被攻击时，点按 <IconMap:Icon_Switch> 发动：\n招架敌人的攻击，累积大量失衡值；\n具有较为优秀的招架性能，承受高强度攻击时<color=#FFFFFF>[支援点数]</color>的消耗量降低；\n招式发动期间拥有无敌效果。"
+            },
+            "148100016": {
+                "Title": "支援突击：连环呼叫",
+                "Description": "发动<color=#FFFFFF>[招架支援]</color>后，点按 <IconMap:Icon_Normal> 发动：\n快速突进并发动斩击，造成<color=#F0D12B>物理伤害</color>；\n招式发动后可直接衔接<color=#FFFFFF>[普通攻击：很高兴为您服务]</color>的第四段攻击；\n招式发动期间拥有无敌效果。"
+            },
+            "148100065": {
+                "Title": "快速支援：呼叫转移"
+            },
+            "148100066": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1481018, Prop:1001}"
+            },
+            "148100067": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1481018, Prop:1002}"
+            },
+            "148100068": {
+                "Title": "招架支援：拒绝通话"
+            },
+            "148100069": {
+                "Description": "轻招架失衡倍率",
+                "Param": "{Skill:1481019, Prop:1002}"
+            },
+            "148100070": {
+                "Description": "重招架失衡倍率",
+                "Param": "{Skill:1481020, Prop:1002}"
+            },
+            "148100071": {
+                "Description": "连续招架失衡倍率",
+                "Param": "{Skill:1481021, Prop:1002}"
+            },
+            "148100072": {
+                "Title": "支援突击：连环呼叫"
+            },
+            "148100073": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1481022, Prop:1001}"
+            },
+            "148100074": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1481022, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1481001": {
+            "DamageValue": 2560,
+            "DamageGrowth": 240,
+            "DazeValue": 1940,
+            "DazeGrowth": 90
+        },
+        "1481002": {
+            "DamageValue": 5130,
+            "DamageGrowth": 470,
+            "DazeValue": 4350,
+            "DazeGrowth": 200
+        },
+        "1481003": {
+            "DamageValue": 6480,
+            "DamageGrowth": 590,
+            "DazeValue": 6160,
+            "DazeGrowth": 280
+        },
+        "1481004": {
+            "DamageValue": 9950,
+            "DamageGrowth": 910,
+            "DazeValue": 9950,
+            "DazeGrowth": 460
+        },
+        "1481005": {
+            "DamageValue": 8950,
+            "DamageGrowth": 820,
+            "DazeValue": 7140,
+            "DazeGrowth": 330
+        },
+        "1481006": {
+            "DamageValue": 11390,
+            "DamageGrowth": 1040,
+            "DazeValue": 9080,
+            "DazeGrowth": 420
+        },
+        "1481007": {
+            "DamageValue": 10310,
+            "DamageGrowth": 940,
+            "DazeValue": 8220,
+            "DazeGrowth": 380
+        },
+        "1481008": {
+            "DamageValue": 10030,
+            "DamageGrowth": 920,
+            "DazeValue": 8000,
+            "DazeGrowth": 370
+        },
+        "1481009": {
+            "DamageValue": 54970,
+            "DamageGrowth": 5000,
+            "DazeValue": 33650,
+            "DazeGrowth": 1530
+        },
+        "1481010": {
+            "DamageValue": 5420,
+            "DamageGrowth": 500,
+            "DazeValue": 5420,
+            "DazeGrowth": 250
+        },
+        "1481011": {
+            "DamageValue": 40400,
+            "DamageGrowth": 3680,
+            "DazeValue": 23600,
+            "DazeGrowth": 1080
+        },
+        "1481012": {
+            "DamageValue": 52490,
+            "DamageGrowth": 4780,
+            "DazeValue": 31020,
+            "DazeGrowth": 1410
+        },
+        "1481013": {
+            "DamageValue": 70170,
+            "DamageGrowth": 6380,
+            "DazeValue": 42690,
+            "DazeGrowth": 1950
+        },
+        "1481014": {
+            "DamageValue": 6050,
+            "DamageGrowth": 550,
+            "DazeValue": 3030,
+            "DazeGrowth": 140
+        },
+        "1481015": {
+            "DamageValue": 26730,
+            "DamageGrowth": 2430,
+            "DazeValue": 23100,
+            "DazeGrowth": 1050
+        },
+        "1481016": {
+            "DamageValue": 62040,
+            "DamageGrowth": 5640,
+            "DazeValue": 18150,
+            "DazeGrowth": 830
+        },
+        "1481017": {
+            "DamageValue": 162250,
+            "DamageGrowth": 14750,
+            "DazeValue": 76780,
+            "DazeGrowth": 3490
+        },
+        "1481018": {
+            "DamageValue": 12100,
+            "DamageGrowth": 1100,
+            "DazeValue": 6050,
+            "DazeGrowth": 280
+        },
+        "1481019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1481020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1481021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1481022": {
+            "DamageValue": 37640,
+            "DamageGrowth": 3430,
+            "DazeValue": 32770,
+            "DazeGrowth": 1490
+        }
+    }
+}

@@ -1,0 +1,514 @@
+{
+    "Name": "Dialyn",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Specialty": {
+        "Id": 2,
+        "Name": "Aturdidor"
+    },
+    "Talents": {
+        "1": {
+            "Title": "Hospitalidad sin límites",
+            "Description": "La cantidad de <color=#FFFFFF>reseñas positivas</color> acumuladas por segundo y por golpear al enemigo con la <color=#FFFFFF>técnica especial EX: Piedra</color>, la <color=#FFFFFF>técnica especial EX: Tijera</color> o la <color=#FFFFFF>técnica especial EX: ¡Papel!</color> aumenta en un 16 %. Los personajes en el estado de <color=#FFFFFF>reseña superpositiva</color> ignoran un 15 % de la resistencia a todos los tipos de daño del enemigo.",
+            "Lore": "¡El Centro de Atención al Cliente Interdepartamental te da la bienvenida!\nNuestra filosofía de servicio es mantener siempre una sonrisa y mostrar un entusiasmo constante hacia nuestros clientes.\n¿Una sonrisa? ¿Cuándo se convirtió en mi expresión más natural aquella que antes me resultaba tan difícil de mostrar?\n«¡Cariño! ¿Hay algo en lo que pueda ayudarte? Bueno, ¡eso no quiere decir que realmente pueda ayudarte!»"
+        },
+        "2": {
+            "Title": "Línea directa disponible 24/7",
+            "Description": "Al provocar Aturdimiento sobre un enemigo afectado por <color=#FFFFFF>queja maliciosa</color>, la tasa de vulnerabilidad aumenta adicionalmente en un 20 %, y el daño que infligen todas las unidades contra el enemigo afectado por <color=#FFFFFF>queja maliciosa</color> aumenta en un 15 %.",
+            "Lore": "TOPS es el mayor conglomerado empresarial de Nueva Eridu. ¡Nuestro trabajo es vital para la vida y el aliento de esta ciudad!\n¡Somos el lubricante más importante de esta maquinaria gigante, por lo que nuestra línea de atención al cliente debe estar disponible las 24 horas del día, los 7 días de la semana!\n¿Ruido constante y palabrería incesante? No hay problema, es lo que mejor se me da.\n«¡No dudes en ponerte en contacto conmigo cuando quieras! De todas formas, sin importar cuándo me contactes, seguiré siendo igual de molesta.»"
+        },
+        "3": {
+            "Title": "Llamada desde la Cavidad",
+            "Description": "Nivel de <color=#FFFFFF>ataque normal</color>, <color=#FFFFFF>evasión</color>, <color=#FFFFFF>técnica de apoyo</color>, <color=#FFFFFF>técnica especial</color> y <color=#FFFFFF>técnica en cadena</color> +2.",
+            "Lore": "La Cavidad es una enorme tumba donde todo eco de la vida se torna silencio en un ataúd negro.\nSin embargo, para mí es una llamada que no puedo rechazar, la última página de cada diario, un recordatorio de obsesiones y resentimientos.\nAunque ninguna de esas frases de consuelo o de amor apasionado tienen nada que ver con mi propia historia.\n«¡No te preocupes, no te preocupes! ¡He tratado con muchos clientes menos comunicativos que tú!»"
+        },
+        "4": {
+            "Title": "El pasado no se desvanece jamás",
+            "Description": "Al entrar en combate, Dialyn recupera 20 ptos. de Energía. En el modo expedición, este efecto puede activarse un máximo de una vez cada 180 s. Al contar con el efecto de <color=#FFFFFF>reseña superpositiva</color>, el Ataque de Dialyn aumenta en 500 ptos.",
+            "Lore": "Por ser un poco más pequeña, siempre me tratan como a una niña, pero mi infancia terminó hace mucho.\n¿Qué día fue ese? ¿Fue cuando escuché por primera vez los susurros de los espíritus de los muertos? ¿O cuando me enviaron como sacrificio a la Cavidad? ¿O fue la primera noche que lloré?\nSin nadie que me protegiera, tuve que aprender a caminar sola. Sin poder olvidar el pasado, tuve que fingir que lo había superado.\n«No me interesa entender tus defectos de personalidad, ¡lo que me preocupa es cómo tus traumas infantiles afectan a mi índice de quejas!»"
+        },
+        "5": {
+            "Title": "Mentiras",
+            "Description": "Nivel de <color=#FFFFFF>ataque normal</color>, <color=#FFFFFF>evasión</color>, <color=#FFFFFF>técnica de apoyo</color>, <color=#FFFFFF>técnica especial</color> y <color=#FFFFFF>técnica en cadena</color> +2.",
+            "Lore": "Las personas siempre mienten cuando otros se preocupan por ellos, pero revelan la verdad cuando son olvidados.\nEstas decisiones imprudentes siempre traen arrepentimiento. Mi trabajo no es más que usar el arrepentimiento de ayer para reducir el arrepentimiento de hoy.\nSé que la gente siempre miente, pero al menos hay quienes están dispuestos a mentirme.\n«¡Mi consejo estratégico es que, entre tus ataques personales, introduzcas disparates que te beneficien!»"
+        },
+        "6": {
+            "Title": "Verdad",
+            "Description": "Cuando un compañero entra en combate ejecutando una técnica definitiva a través de la <color=#FFFFFF>técnica pasiva</color>, dicho compañero obtiene el efecto de <color=#FFFFFF>sonido persistente</color>. Al contar con dicho efecto, al golpear a un enemigo con un ataque, Dialyn inflige una instancia adicional de <color=#F0D12B>daño físico</color> al enemigo equivalente al 480 % del Ataque de Dialyn. Este daño se considera daño de la <color=#FFFFFF>técnica especial EX</color>. Puede activarse un máximo de una vez cada 1 s, hasta un total de 12 veces. Al obtener el efecto de <color=#FFFFFF>sonido persistente</color> de nuevo, se reinicia el contador de activaciones. Solo un compañero puede obtener el efecto de <color=#FFFFFF>sonido persistente</color> a la vez.",
+            "Lore": "Pero la muerte que llega repentinamente es como un momento preservado en el tiempo, que enmarca y cristaliza la verdad en una forma inmutable.\nRecupero estos especímenes de las manos de los fallecidos y uso sus certificados de defunción como base para los veredictos.\nLa «verdad» absolutamente objetiva es la única medida fiable, la única cuerda que guía mi camino, hasta que...\n«Proxy, ¿yo también puedo mentir?»"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Técnica pasiva: Línea directa de cinco estrellas del Servicio de Atención al Cliente",
+            "DescriptionByLevel": {
+                "1": "Al entrar en combate, Dialyn cuenta con 60 <color=#FFFFFF>reseñas positivas</color>. Cuando la Probabilidad de Crítico inicial es superior al 50 %, por cada 1 % adicional, el Impacto aumenta en <color=#2BAD00>1.4</color> ptos., hasta un máximo de 100 ptos.\nDespués de ejecutar la <color=#FFFFFF>técnica especial EX: Piedra</color>, la siguiente <color=#FFFFFF>técnica especial EX</color> se convierte en la <color=#FFFFFF>técnica especial EX: Tijera</color> durante 8 s.\nDespués de ejecutar la <color=#FFFFFF>técnica especial EX: Tijera</color>, la siguiente <color=#FFFFFF>técnica especial EX</color> se convierte en la <color=#FFFFFF>técnica especial EX: ¡Papel!</color> durante 8 s.\nAl golpear a un enemigo con la <color=#FFFFFF>técnica especial EX: ¡Papel!</color>, le aplica el efecto de <color=#FFFFFF>queja maliciosa</color>. Al provocar Aturdimiento sobre un enemigo afectado por <color=#FFFFFF>queja maliciosa</color>, la duración del Aturdimiento aumenta en 2 s, y la tasa de vulnerabilidad aumenta en un <color=#2BAD00>15 %</color>. El efecto de <color=#FFFFFF>queja maliciosa</color> solo puede aplicarse una vez sobre el mismo objetivo antes de que este se recupere del Aturdimiento. El efecto de aumento de la duración del Aturdimiento no se acumula con efectos similares. El efecto de <color=#FFFFFF>queja maliciosa</color> termina cuando el enemigo se recupera del Aturdimiento.\nAl entrar en combate, Dialyn acumula 0.6 <color=#FFFFFF>reseñas positivas</color> por segundo. Al golpear a un enemigo con el ataque pesado de la <color=#FFFFFF>técnica especial EX: Piedra</color>, la <color=#FFFFFF>técnica especial EX: Tijera</color> o la <color=#FFFFFF>técnica especial EX: ¡Papel!</color>, acumula 7.5 <color=#FFFFFF>reseñas positivas</color>. Solo pueden acumularse una vez por cada habilidad, hasta un máximo de 120 reseñas.\nAl acumular 90 <color=#FFFFFF>reseñas positivas</color>, cuando Dialyn activa la ventana de la <color=#FFFFFF>técnica en cadena</color> al ejecutar la <color=#FFFFFF>técnica en cadena: Felpudo de bienvenida</color>, la <color=#FFFFFF>técnica especial EX: ¡Largo!</color> o el <color=#FFFFFF>apoyo rápido: Llamada transferida</color>, la <color=#FFFFFF>técnica en cadena</color> del siguiente personaje activo mejora a una <color=#FFFFFF>técnica definitiva</color>. Cuando un compañero ejecuta una <color=#FFFFFF>técnica definitiva</color> de esta manera, Dialyn consume 60 <color=#FFFFFF>reseñas positivas</color>.\nAl acumular 90 <color=#FFFFFF>reseñas positivas</color>, cuando Dialyn golpea a un enemigo con la <color=#FFFFFF>técnica especial EX: ¡Largo!</color> sin activar la ventana de la <color=#FFFFFF>técnica en cadena</color>, consume 90 <color=#FFFFFF>reseñas positivas</color> para forzar la apertura de la ventana de la <color=#FFFFFF>técnica en cadena</color>. La <color=#FFFFFF>técnica en cadena</color> del siguiente personaje en entrar en combate mejora a una <color=#FFFFFF>técnica definitiva</color>.\nAl acumular 90 <color=#FFFFFF>reseñas positivas</color> o ejecutar una <color=#FFFFFF>técnica definitiva</color>, Dialyn obtiene 1 <color=#FFFFFF>queja de clientes</color>. Como máximo, puede acumular 1 queja de clientes.",
+                "2": "Al entrar en combate, Dialyn cuenta con 60 <color=#FFFFFF>reseñas positivas</color>. Cuando la Probabilidad de Crítico inicial es superior al 50 %, por cada 1 % adicional, el Impacto aumenta en <color=#2BAD00>1.5</color> ptos., hasta un máximo de 100 ptos.\nDespués de ejecutar la <color=#FFFFFF>técnica especial EX: Piedra</color>, la siguiente <color=#FFFFFF>técnica especial EX</color> se convierte en la <color=#FFFFFF>técnica especial EX: Tijera</color> durante 8 s.\nDespués de ejecutar la <color=#FFFFFF>técnica especial EX: Tijera</color>, la siguiente <color=#FFFFFF>técnica especial EX</color> se convierte en la <color=#FFFFFF>técnica especial EX: ¡Papel!</color> durante 8 s.\nAl golpear a un enemigo con la <color=#FFFFFF>técnica especial EX: ¡Papel!</color>, le aplica el efecto de <color=#FFFFFF>queja maliciosa</color>. Al provocar Aturdimiento sobre un enemigo afectado por <color=#FFFFFF>queja maliciosa</color>, la duración del Aturdimiento aumenta en 2 s, y la tasa de vulnerabilidad aumenta en un <color=#2BAD00>17.5 %</color>. El efecto de <color=#FFFFFF>queja maliciosa</color> solo puede aplicarse una vez sobre el mismo objetivo antes de que este se recupere del Aturdimiento. El efecto de aumento de la duración del Aturdimiento no se acumula con efectos similares. El efecto de <color=#FFFFFF>queja maliciosa</color> termina cuando el enemigo se recupera del Aturdimiento.\nAl entrar en combate, Dialyn acumula 0.6 <color=#FFFFFF>reseñas positivas</color> por segundo. Al golpear a un enemigo con el ataque pesado de la <color=#FFFFFF>técnica especial EX: Piedra</color>, la <color=#FFFFFF>técnica especial EX: Tijera</color> o la <color=#FFFFFF>técnica especial EX: ¡Papel!</color>, acumula 7.5 <color=#FFFFFF>reseñas positivas</color>. Solo pueden acumularse una vez por cada habilidad, hasta un máximo de 120 reseñas.\nAl acumular 90 <color=#FFFFFF>reseñas positivas</color>, cuando Dialyn activa la ventana de la <color=#FFFFFF>técnica en cadena</color> al ejecutar la <color=#FFFFFF>técnica en cadena: Felpudo de bienvenida</color>, la <color=#FFFFFF>técnica especial EX: ¡Largo!</color> o el <color=#FFFFFF>apoyo rápido: Llamada transferida</color>, la <color=#FFFFFF>técnica en cadena</color> del siguiente personaje activo mejora a una <color=#FFFFFF>técnica definitiva</color>. Cuando un compañero ejecuta una <color=#FFFFFF>técnica definitiva</color> de esta manera, Dialyn consume 60 <color=#FFFFFF>reseñas positivas</color>.\nAl acumular 90 <color=#FFFFFF>reseñas positivas</color>, cuando Dialyn golpea a un enemigo con la <color=#FFFFFF>técnica especial EX: ¡Largo!</color> sin activar la ventana de la <color=#FFFFFF>técnica en cadena</color>, consume 90 <color=#FFFFFF>reseñas positivas</color> para forzar la apertura de la ventana de la <color=#FFFFFF>técnica en cadena</color>. La <color=#FFFFFF>técnica en cadena</color> del siguiente personaje en entrar en combate mejora a una <color=#FFFFFF>técnica definitiva</color>.\nAl acumular 90 <color=#FFFFFF>reseñas positivas</color> o ejecutar una <color=#FFFFFF>técnica definitiva</color>, Dialyn obtiene 1 <color=#FFFFFF>queja de clientes</color>. Como máximo, puede acumular 1 queja de clientes.",
+                "3": "Al entrar en combate, Dialyn cuenta con 60 <color=#FFFFFF>reseñas positivas</color>. Cuando la Probabilidad de Crítico inicial es superior al 50 %, por cada 1 % adicional, el Impacto aumenta en <color=#2BAD00>1.6</color> ptos., hasta un máximo de 100 ptos.\nDespués de ejecutar la <color=#FFFFFF>técnica especial EX: Piedra</color>, la siguiente <color=#FFFFFF>técnica especial EX</color> se convierte en la <color=#FFFFFF>técnica especial EX: Tijera</color> durante 8 s.\nDespués de ejecutar la <color=#FFFFFF>técnica especial EX: Tijera</color>, la siguiente <color=#FFFFFF>técnica especial EX</color> se convierte en la <color=#FFFFFF>técnica especial EX: ¡Papel!</color> durante 8 s.\nAl golpear a un enemigo con la <color=#FFFFFF>técnica especial EX: ¡Papel!</color>, le aplica el efecto de <color=#FFFFFF>queja maliciosa</color>. Al provocar Aturdimiento sobre un enemigo afectado por <color=#FFFFFF>queja maliciosa</color>, la duración del Aturdimiento aumenta en 2 s, y la tasa de vulnerabilidad aumenta en un <color=#2BAD00>20 %</color>. El efecto de <color=#FFFFFF>queja maliciosa</color> solo puede aplicarse una vez sobre el mismo objetivo antes de que este se recupere del Aturdimiento. El efecto de aumento de la duración del Aturdimiento no se acumula con efectos similares. El efecto de <color=#FFFFFF>queja maliciosa</color> termina cuando el enemigo se recupera del Aturdimiento.\nAl entrar en combate, Dialyn acumula 0.6 <color=#FFFFFF>reseñas positivas</color> por segundo. Al golpear a un enemigo con el ataque pesado de la <color=#FFFFFF>técnica especial EX: Piedra</color>, la <color=#FFFFFF>técnica especial EX: Tijera</color> o la <color=#FFFFFF>técnica especial EX: ¡Papel!</color>, acumula 7.5 <color=#FFFFFF>reseñas positivas</color>. Solo pueden acumularse una vez por cada habilidad, hasta un máximo de 120 reseñas.\nAl acumular 90 <color=#FFFFFF>reseñas positivas</color>, cuando Dialyn activa la ventana de la <color=#FFFFFF>técnica en cadena</color> al ejecutar la <color=#FFFFFF>técnica en cadena: Felpudo de bienvenida</color>, la <color=#FFFFFF>técnica especial EX: ¡Largo!</color> o el <color=#FFFFFF>apoyo rápido: Llamada transferida</color>, la <color=#FFFFFF>técnica en cadena</color> del siguiente personaje activo mejora a una <color=#FFFFFF>técnica definitiva</color>. Cuando un compañero ejecuta una <color=#FFFFFF>técnica definitiva</color> de esta manera, Dialyn consume 60 <color=#FFFFFF>reseñas positivas</color>.\nAl acumular 90 <color=#FFFFFF>reseñas positivas</color>, cuando Dialyn golpea a un enemigo con la <color=#FFFFFF>técnica especial EX: ¡Largo!</color> sin activar la ventana de la <color=#FFFFFF>técnica en cadena</color>, consume 90 <color=#FFFFFF>reseñas positivas</color> para forzar la apertura de la ventana de la <color=#FFFFFF>técnica en cadena</color>. La <color=#FFFFFF>técnica en cadena</color> del siguiente personaje en entrar en combate mejora a una <color=#FFFFFF>técnica definitiva</color>.\nAl acumular 90 <color=#FFFFFF>reseñas positivas</color> o ejecutar una <color=#FFFFFF>técnica definitiva</color>, Dialyn obtiene 1 <color=#FFFFFF>queja de clientes</color>. Como máximo, puede acumular 1 queja de clientes.",
+                "4": "Al entrar en combate, Dialyn cuenta con 60 <color=#FFFFFF>reseñas positivas</color>. Cuando la Probabilidad de Crítico inicial es superior al 50 %, por cada 1 % adicional, el Impacto aumenta en <color=#2BAD00>1.7</color> ptos., hasta un máximo de 100 ptos.\nDespués de ejecutar la <color=#FFFFFF>técnica especial EX: Piedra</color>, la siguiente <color=#FFFFFF>técnica especial EX</color> se convierte en la <color=#FFFFFF>técnica especial EX: Tijera</color> durante 8 s.\nDespués de ejecutar la <color=#FFFFFF>técnica especial EX: Tijera</color>, la siguiente <color=#FFFFFF>técnica especial EX</color> se convierte en la <color=#FFFFFF>técnica especial EX: ¡Papel!</color> durante 8 s.\nAl golpear a un enemigo con la <color=#FFFFFF>técnica especial EX: ¡Papel!</color>, le aplica el efecto de <color=#FFFFFF>queja maliciosa</color>. Al provocar Aturdimiento sobre un enemigo afectado por <color=#FFFFFF>queja maliciosa</color>, la duración del Aturdimiento aumenta en 2 s, y la tasa de vulnerabilidad aumenta en un <color=#2BAD00>22.5 %</color>. El efecto de <color=#FFFFFF>queja maliciosa</color> solo puede aplicarse una vez sobre el mismo objetivo antes de que este se recupere del Aturdimiento. El efecto de aumento de la duración del Aturdimiento no se acumula con efectos similares. El efecto de <color=#FFFFFF>queja maliciosa</color> termina cuando el enemigo se recupera del Aturdimiento.\nAl entrar en combate, Dialyn acumula 0.6 <color=#FFFFFF>reseñas positivas</color> por segundo. Al golpear a un enemigo con el ataque pesado de la <color=#FFFFFF>técnica especial EX: Piedra</color>, la <color=#FFFFFF>técnica especial EX: Tijera</color> o la <color=#FFFFFF>técnica especial EX: ¡Papel!</color>, acumula 7.5 <color=#FFFFFF>reseñas positivas</color>. Solo pueden acumularse una vez por cada habilidad, hasta un máximo de 120 reseñas.\nAl acumular 90 <color=#FFFFFF>reseñas positivas</color>, cuando Dialyn activa la ventana de la <color=#FFFFFF>técnica en cadena</color> al ejecutar la <color=#FFFFFF>técnica en cadena: Felpudo de bienvenida</color>, la <color=#FFFFFF>técnica especial EX: ¡Largo!</color> o el <color=#FFFFFF>apoyo rápido: Llamada transferida</color>, la <color=#FFFFFF>técnica en cadena</color> del siguiente personaje activo mejora a una <color=#FFFFFF>técnica definitiva</color>. Cuando un compañero ejecuta una <color=#FFFFFF>técnica definitiva</color> de esta manera, Dialyn consume 60 <color=#FFFFFF>reseñas positivas</color>.\nAl acumular 90 <color=#FFFFFF>reseñas positivas</color>, cuando Dialyn golpea a un enemigo con la <color=#FFFFFF>técnica especial EX: ¡Largo!</color> sin activar la ventana de la <color=#FFFFFF>técnica en cadena</color>, consume 90 <color=#FFFFFF>reseñas positivas</color> para forzar la apertura de la ventana de la <color=#FFFFFF>técnica en cadena</color>. La <color=#FFFFFF>técnica en cadena</color> del siguiente personaje en entrar en combate mejora a una <color=#FFFFFF>técnica definitiva</color>.\nAl acumular 90 <color=#FFFFFF>reseñas positivas</color> o ejecutar una <color=#FFFFFF>técnica definitiva</color>, Dialyn obtiene 1 <color=#FFFFFF>queja de clientes</color>. Como máximo, puede acumular 1 queja de clientes.",
+                "5": "Al entrar en combate, Dialyn cuenta con 60 <color=#FFFFFF>reseñas positivas</color>. Cuando la Probabilidad de Crítico inicial es superior al 50 %, por cada 1 % adicional, el Impacto aumenta en <color=#2BAD00>1.8</color> ptos., hasta un máximo de 100 ptos.\nDespués de ejecutar la <color=#FFFFFF>técnica especial EX: Piedra</color>, la siguiente <color=#FFFFFF>técnica especial EX</color> se convierte en la <color=#FFFFFF>técnica especial EX: Tijera</color> durante 8 s.\nDespués de ejecutar la <color=#FFFFFF>técnica especial EX: Tijera</color>, la siguiente <color=#FFFFFF>técnica especial EX</color> se convierte en la <color=#FFFFFF>técnica especial EX: ¡Papel!</color> durante 8 s.\nAl golpear a un enemigo con la <color=#FFFFFF>técnica especial EX: ¡Papel!</color>, le aplica el efecto de <color=#FFFFFF>queja maliciosa</color>. Al provocar Aturdimiento sobre un enemigo afectado por <color=#FFFFFF>queja maliciosa</color>, la duración del Aturdimiento aumenta en 2 s, y la tasa de vulnerabilidad aumenta en un <color=#2BAD00>25 %</color>. El efecto de <color=#FFFFFF>queja maliciosa</color> solo puede aplicarse una vez sobre el mismo objetivo antes de que este se recupere del Aturdimiento. El efecto de aumento de la duración del Aturdimiento no se acumula con efectos similares. El efecto de <color=#FFFFFF>queja maliciosa</color> termina cuando el enemigo se recupera del Aturdimiento.\nAl entrar en combate, Dialyn acumula 0.6 <color=#FFFFFF>reseñas positivas</color> por segundo. Al golpear a un enemigo con el ataque pesado de la <color=#FFFFFF>técnica especial EX: Piedra</color>, la <color=#FFFFFF>técnica especial EX: Tijera</color> o la <color=#FFFFFF>técnica especial EX: ¡Papel!</color>, acumula 7.5 <color=#FFFFFF>reseñas positivas</color>. Solo pueden acumularse una vez por cada habilidad, hasta un máximo de 120 reseñas.\nAl acumular 90 <color=#FFFFFF>reseñas positivas</color>, cuando Dialyn activa la ventana de la <color=#FFFFFF>técnica en cadena</color> al ejecutar la <color=#FFFFFF>técnica en cadena: Felpudo de bienvenida</color>, la <color=#FFFFFF>técnica especial EX: ¡Largo!</color> o el <color=#FFFFFF>apoyo rápido: Llamada transferida</color>, la <color=#FFFFFF>técnica en cadena</color> del siguiente personaje activo mejora a una <color=#FFFFFF>técnica definitiva</color>. Cuando un compañero ejecuta una <color=#FFFFFF>técnica definitiva</color> de esta manera, Dialyn consume 60 <color=#FFFFFF>reseñas positivas</color>.\nAl acumular 90 <color=#FFFFFF>reseñas positivas</color>, cuando Dialyn golpea a un enemigo con la <color=#FFFFFF>técnica especial EX: ¡Largo!</color> sin activar la ventana de la <color=#FFFFFF>técnica en cadena</color>, consume 90 <color=#FFFFFF>reseñas positivas</color> para forzar la apertura de la ventana de la <color=#FFFFFF>técnica en cadena</color>. La <color=#FFFFFF>técnica en cadena</color> del siguiente personaje en entrar en combate mejora a una <color=#FFFFFF>técnica definitiva</color>.\nAl acumular 90 <color=#FFFFFF>reseñas positivas</color> o ejecutar una <color=#FFFFFF>técnica definitiva</color>, Dialyn obtiene 1 <color=#FFFFFF>queja de clientes</color>. Como máximo, puede acumular 1 queja de clientes.",
+                "6": "Al entrar en combate, Dialyn cuenta con 60 <color=#FFFFFF>reseñas positivas</color>. Cuando la Probabilidad de Crítico inicial es superior al 50 %, por cada 1 % adicional, el Impacto aumenta en <color=#2BAD00>1.9</color> ptos., hasta un máximo de 100 ptos.\nDespués de ejecutar la <color=#FFFFFF>técnica especial EX: Piedra</color>, la siguiente <color=#FFFFFF>técnica especial EX</color> se convierte en la <color=#FFFFFF>técnica especial EX: Tijera</color> durante 8 s.\nDespués de ejecutar la <color=#FFFFFF>técnica especial EX: Tijera</color>, la siguiente <color=#FFFFFF>técnica especial EX</color> se convierte en la <color=#FFFFFF>técnica especial EX: ¡Papel!</color> durante 8 s.\nAl golpear a un enemigo con la <color=#FFFFFF>técnica especial EX: ¡Papel!</color>, le aplica el efecto de <color=#FFFFFF>queja maliciosa</color>. Al provocar Aturdimiento sobre un enemigo afectado por <color=#FFFFFF>queja maliciosa</color>, la duración del Aturdimiento aumenta en 2 s, y la tasa de vulnerabilidad aumenta en un <color=#2BAD00>27.5 %</color>. El efecto de <color=#FFFFFF>queja maliciosa</color> solo puede aplicarse una vez sobre el mismo objetivo antes de que este se recupere del Aturdimiento. El efecto de aumento de la duración del Aturdimiento no se acumula con efectos similares. El efecto de <color=#FFFFFF>queja maliciosa</color> termina cuando el enemigo se recupera del Aturdimiento.\nAl entrar en combate, Dialyn acumula 0.6 <color=#FFFFFF>reseñas positivas</color> por segundo. Al golpear a un enemigo con el ataque pesado de la <color=#FFFFFF>técnica especial EX: Piedra</color>, la <color=#FFFFFF>técnica especial EX: Tijera</color> o la <color=#FFFFFF>técnica especial EX: ¡Papel!</color>, acumula 7.5 <color=#FFFFFF>reseñas positivas</color>. Solo pueden acumularse una vez por cada habilidad, hasta un máximo de 120 reseñas.\nAl acumular 90 <color=#FFFFFF>reseñas positivas</color>, cuando Dialyn activa la ventana de la <color=#FFFFFF>técnica en cadena</color> al ejecutar la <color=#FFFFFF>técnica en cadena: Felpudo de bienvenida</color>, la <color=#FFFFFF>técnica especial EX: ¡Largo!</color> o el <color=#FFFFFF>apoyo rápido: Llamada transferida</color>, la <color=#FFFFFF>técnica en cadena</color> del siguiente personaje activo mejora a una <color=#FFFFFF>técnica definitiva</color>. Cuando un compañero ejecuta una <color=#FFFFFF>técnica definitiva</color> de esta manera, Dialyn consume 60 <color=#FFFFFF>reseñas positivas</color>.\nAl acumular 90 <color=#FFFFFF>reseñas positivas</color>, cuando Dialyn golpea a un enemigo con la <color=#FFFFFF>técnica especial EX: ¡Largo!</color> sin activar la ventana de la <color=#FFFFFF>técnica en cadena</color>, consume 90 <color=#FFFFFF>reseñas positivas</color> para forzar la apertura de la ventana de la <color=#FFFFFF>técnica en cadena</color>. La <color=#FFFFFF>técnica en cadena</color> del siguiente personaje en entrar en combate mejora a una <color=#FFFFFF>técnica definitiva</color>.\nAl acumular 90 <color=#FFFFFF>reseñas positivas</color> o ejecutar una <color=#FFFFFF>técnica definitiva</color>, Dialyn obtiene 1 <color=#FFFFFF>queja de clientes</color>. Como máximo, puede acumular 1 queja de clientes.",
+                "7": "Al entrar en combate, Dialyn cuenta con 60 <color=#FFFFFF>reseñas positivas</color>. Cuando la Probabilidad de Crítico inicial es superior al 50 %, por cada 1 % adicional, el Impacto aumenta en <color=#2BAD00>2</color> ptos., hasta un máximo de 100 ptos.\nDespués de ejecutar la <color=#FFFFFF>técnica especial EX: Piedra</color>, la siguiente <color=#FFFFFF>técnica especial EX</color> se convierte en la <color=#FFFFFF>técnica especial EX: Tijera</color> durante 8 s.\nDespués de ejecutar la <color=#FFFFFF>técnica especial EX: Tijera</color>, la siguiente <color=#FFFFFF>técnica especial EX</color> se convierte en la <color=#FFFFFF>técnica especial EX: ¡Papel!</color> durante 8 s.\nAl golpear a un enemigo con la <color=#FFFFFF>técnica especial EX: ¡Papel!</color>, le aplica el efecto de <color=#FFFFFF>queja maliciosa</color>. Al provocar Aturdimiento sobre un enemigo afectado por <color=#FFFFFF>queja maliciosa</color>, la duración del Aturdimiento aumenta en 2 s, y la tasa de vulnerabilidad aumenta en un <color=#2BAD00>30 %</color>. El efecto de <color=#FFFFFF>queja maliciosa</color> solo puede aplicarse una vez sobre el mismo objetivo antes de que este se recupere del Aturdimiento. El efecto de aumento de la duración del Aturdimiento no se acumula con efectos similares. El efecto de <color=#FFFFFF>queja maliciosa</color> termina cuando el enemigo se recupera del Aturdimiento.\nAl entrar en combate, Dialyn acumula 0.6 <color=#FFFFFF>reseñas positivas</color> por segundo. Al golpear a un enemigo con el ataque pesado de la <color=#FFFFFF>técnica especial EX: Piedra</color>, la <color=#FFFFFF>técnica especial EX: Tijera</color> o la <color=#FFFFFF>técnica especial EX: ¡Papel!</color>, acumula 7.5 <color=#FFFFFF>reseñas positivas</color>. Solo pueden acumularse una vez por cada habilidad, hasta un máximo de 120 reseñas.\nAl acumular 90 <color=#FFFFFF>reseñas positivas</color>, cuando Dialyn activa la ventana de la <color=#FFFFFF>técnica en cadena</color> al ejecutar la <color=#FFFFFF>técnica en cadena: Felpudo de bienvenida</color>, la <color=#FFFFFF>técnica especial EX: ¡Largo!</color> o el <color=#FFFFFF>apoyo rápido: Llamada transferida</color>, la <color=#FFFFFF>técnica en cadena</color> del siguiente personaje activo mejora a una <color=#FFFFFF>técnica definitiva</color>. Cuando un compañero ejecuta una <color=#FFFFFF>técnica definitiva</color> de esta manera, Dialyn consume 60 <color=#FFFFFF>reseñas positivas</color>.\nAl acumular 90 <color=#FFFFFF>reseñas positivas</color>, cuando Dialyn golpea a un enemigo con la <color=#FFFFFF>técnica especial EX: ¡Largo!</color> sin activar la ventana de la <color=#FFFFFF>técnica en cadena</color>, consume 90 <color=#FFFFFF>reseñas positivas</color> para forzar la apertura de la ventana de la <color=#FFFFFF>técnica en cadena</color>. La <color=#FFFFFF>técnica en cadena</color> del siguiente personaje en entrar en combate mejora a una <color=#FFFFFF>técnica definitiva</color>.\nAl acumular 90 <color=#FFFFFF>reseñas positivas</color> o ejecutar una <color=#FFFFFF>técnica definitiva</color>, Dialyn obtiene 1 <color=#FFFFFF>queja de clientes</color>. Como máximo, puede acumular 1 queja de clientes."
+            }
+        },
+        "MathSkill": {
+            "Title": "Técnica adicional: Conexión remota",
+            "Description": "Si en el equipo hay un personaje <color=#FFFFFF>atacante</color> o <color=#FFFFFF>disruptivo</color>, el Daño Crítico que infligen las <color=#FFFFFF>técnicas especiales EX</color> de Dialyn aumenta en un 50 %.\nAl ejecutar una <color=#FFFFFF>técnica especial EX</color> o una <color=#FFFFFF>técnica definitiva</color>, todos los personajes del equipo obtienen el efecto de <color=#FFFFFF>reseña superpositiva</color>. El daño de los personajes en el estado de <color=#FFFFFF>reseña superpositiva</color> aumenta en un 40 % durante 15 s. Cuando Dialyn usa una <color=#FFFFFF>técnica especial EX</color> o la <color=#FFFFFF>técnica definitiva</color> en el estado de <color=#FFFFFF>reseña superpositiva</color>, si la duración restante de dicho estado es inferior a 35 s, dicha duración aumenta en 10 s.\nAl golpear a un enemigo con el ataque pesado de la <color=#FFFFFF>técnica especial EX: Piedra</color>, la <color=#FFFFFF>técnica especial EX: Tijera</color> o la <color=#FFFFFF>técnica especial EX: ¡Papel!</color>, inflige daño adicional basado en la especialidad del compañero de equipo anterior a Dialyn en la formación.\nSi el compañero es un agente <color=#FFFFFF>atacante</color>, la <color=#FFFFFF>técnica especial EX: Piedra</color>, la <color=#FFFFFF>técnica especial EX: Tijera</color> y la <color=#FFFFFF>técnica especial EX: ¡Papel!</color> infligen daño adicional equivalente al 320 % del Ataque de dicho agente <color=#FFFFFF>atacante</color>.\nSi el compañero es un agente <color=#FFFFFF>disruptivo</color>, la <color=#FFFFFF>técnica especial EX: Piedra</color>, la <color=#FFFFFF>técnica especial EX: Tijera</color> y la <color=#FFFFFF>técnica especial EX: ¡Papel!</color> infligen daño adicional equivalente al 400 % de la Fuerza Bruta de dicho agente <color=#FFFFFF>disruptivo</color>."
+        },
+        "BaseProps": [
+            {
+                "20101": 0,
+                "12101": 0
+            },
+            {
+                "20101": 480,
+                "12101": 0
+            },
+            {
+                "20101": 480,
+                "12101": 25
+            },
+            {
+                "20101": 960,
+                "12101": 25
+            },
+            {
+                "20101": 960,
+                "12101": 50
+            },
+            {
+                "20101": 1440,
+                "12101": 50
+            },
+            {
+                "20101": 1440,
+                "12101": 75
+            }
+        ]
+    },
+    "SkillDescriptions": {
+        "0": {
+            "148100001": {
+                "Title": "Ataque normal: Encantada de poder ser de ayuda",
+                "Description": "Pulsa <IconMap:Icon_Normal> para usarlo.\nEjecuta hasta cuatro ataques hacia delante, lo que inflige <color=#F0D12B>daño físico</color>."
+            },
+            "148100002": {
+                "Title": "Ataque normal: Piedra, papel o tijera",
+                "Description": "Después de ejecutar la <color=#FFFFFF>técnica especial EX: Piedra</color> o la <color=#FFFFFF>técnica especial EX: Tijera</color>, pulsa <IconMap:Icon_Normal> para usarlo.\nEjecuta hasta dos ataques, lo que inflige <color=#F0D12B>daño físico</color>.\nDurante la ejecución de la habilidad, el nivel de resistencia a interrupción aumenta, y el daño recibido se reduce en un 40 %."
+            },
+            "148100017": {
+                "Title": "Ataque normal: Encantada de poder ser de ayuda"
+            },
+            "148100018": {
+                "Description": "Multiplicador de daño de 1.er golpe",
+                "Param": "{Skill:1481001, Prop:1001}"
+            },
+            "148100019": {
+                "Description": "Multiplicador de daño de 2.º golpe",
+                "Param": "{Skill:1481002, Prop:1001}"
+            },
+            "148100020": {
+                "Description": "Multiplicador de daño de 3.er golpe",
+                "Param": "{Skill:1481003, Prop:1001}"
+            },
+            "148100021": {
+                "Description": "Multiplicador de daño de 4.º golpe",
+                "Param": "{Skill:1481004, Prop:1001}"
+            },
+            "148100022": {
+                "Description": "Multiplicador de Aturdimiento de 1.er golpe",
+                "Param": "{Skill:1481001, Prop:1002}"
+            },
+            "148100023": {
+                "Description": "Multiplicador de Aturdimiento de 2.º golpe",
+                "Param": "{Skill:1481002, Prop:1002}"
+            },
+            "148100024": {
+                "Description": "Multiplicador de Aturdimiento de 3.er golpe",
+                "Param": "{Skill:1481003, Prop:1002}"
+            },
+            "148100025": {
+                "Description": "Multiplicador de Aturdimiento de 4.º golpe",
+                "Param": "{Skill:1481004, Prop:1002}"
+            },
+            "148100026": {
+                "Title": "Ataque normal: Piedra, papel o tijera"
+            },
+            "148100027": {
+                "Description": "Multiplicador de daño de 1.er golpe",
+                "Param": "{Skill:1481005, Prop:1001}"
+            },
+            "148100028": {
+                "Description": "Multiplicador de daño de 2.º golpe",
+                "Param": "{Skill:1481006, Prop:1001}"
+            },
+            "148100029": {
+                "Description": "Multiplicador de daño de 3.er golpe",
+                "Param": "{Skill:1481007, Prop:1001}"
+            },
+            "148100030": {
+                "Description": "Multiplicador de daño de 4.º golpe",
+                "Param": "{Skill:1481008, Prop:1001}"
+            },
+            "148100031": {
+                "Description": "Multiplicador de Aturdimiento de 1.er golpe",
+                "Param": "{Skill:1481005, Prop:1002}"
+            },
+            "148100032": {
+                "Description": "Multiplicador de Aturdimiento de 2.º golpe",
+                "Param": "{Skill:1481006, Prop:1002}"
+            },
+            "148100033": {
+                "Description": "Multiplicador de Aturdimiento de 3.er golpe",
+                "Param": "{Skill:1481007, Prop:1002}"
+            },
+            "148100034": {
+                "Description": "Multiplicador de Aturdimiento de 4.º golpe",
+                "Param": "{Skill:1481008, Prop:1002}"
+            }
+        },
+        "1": {
+            "148100003": {
+                "Title": "Técnica especial EX: ¡Largo!",
+                "Description": "Al contar con <color=#FFFFFF>quejas de clientes</color>, mantén pulsado <IconMap:Icon_Normal> para usarla.\nEjecuta un ataque en forma de saludo marcial hacia delante. Durante la ejecución, consume 1 <color=#FFFFFF>queja de clientes</color> e inflige <color=#F0D12B>daño físico</color>.\nTras la ejecución de la habilidad, se activa un <color=#FFFFFF>apoyo rápido</color> del personaje anterior.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "148100004": {
+                "Title": "Técnica especial: Saludo de bienvenida",
+                "Description": "Pulsa <IconMap:Icon_Special> para usarla.\nLanza dos aros que cortan al enemigo, lo que inflige <color=#F0D12B>daño físico</color>.\nDurante la ejecución de la habilidad, el nivel de resistencia a interrupción aumenta."
+            },
+            "148100005": {
+                "Title": "Técnica especial EX: Piedra",
+                "Description": "Al contar con Energía suficiente, pulsa <IconMap:Icon_SpecialReady> para usarla.\nEjecuta un ataque de piedra, lo que inflige <color=#F0D12B>daño físico</color>.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "148100006": {
+                "Title": "Técnica especial EX: Tijera",
+                "Description": "Al contar con Energía suficiente, pulsa <IconMap:Icon_SpecialReady> para usarla.\nEjecuta un ataque de tijera, lo que inflige <color=#F0D12B>daño físico</color>.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "148100007": {
+                "Title": "Técnica especial EX: ¡Papel!",
+                "Description": "Al contar con Energía suficiente, pulsa <IconMap:Icon_SpecialReady> para usarla.\nEjecuta un ataque de papel, lo que inflige <color=#F0D12B>daño físico</color>.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "148100035": {
+                "Title": "Técnica especial EX: ¡Largo!"
+            },
+            "148100036": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1481009, Prop:1001}"
+            },
+            "148100037": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1481009, Prop:1002}"
+            },
+            "148100038": {
+                "Title": "Técnica especial: Saludo de bienvenida"
+            },
+            "148100039": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1481010, Prop:1001}"
+            },
+            "148100040": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1481010, Prop:1002}"
+            },
+            "148100041": {
+                "Title": "Técnica especial EX: Piedra"
+            },
+            "148100042": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1481011, Prop:1001}"
+            },
+            "148100043": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1481011, Prop:1002}"
+            },
+            "148100044": {
+                "Description": "Consumo de Energía",
+                "Param": "25 ptos."
+            },
+            "148100045": {
+                "Title": "Técnica especial EX: Tijera"
+            },
+            "148100046": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1481012, Prop:1001}"
+            },
+            "148100047": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1481012, Prop:1002}"
+            },
+            "148100048": {
+                "Description": "Consumo de Energía",
+                "Param": "25 ptos."
+            },
+            "148100049": {
+                "Title": "Técnica especial EX: ¡Papel!"
+            },
+            "148100050": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1481013, Prop:1001}"
+            },
+            "148100051": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1481013, Prop:1002}"
+            },
+            "148100052": {
+                "Description": "Consumo de Energía",
+                "Param": "25 ptos."
+            }
+        },
+        "2": {
+            "148100008": {
+                "Title": "Evasión: Línea ocupada",
+                "Description": "Pulsa <IconMap:Icon_Evade> para usarla.\nEjecuta un rápido esprint evasivo.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "148100009": {
+                "Title": "Ataque rápido: Llamada repentina",
+                "Description": "Pulsa <IconMap:Icon_Normal> durante una evasión para usarlo.\nEjecuta un ataque con impulso hacia delante, lo que inflige <color=#F0D12B>daño físico</color>."
+            },
+            "148100010": {
+                "Title": "Contraataque: Número no disponible",
+                "Description": "Pulsa <IconMap:Icon_Normal> después de una <color=#FFFFFF>evasión perfecta</color> para usarlo.\nEjecuta ataques consecutivos contra los enemigos frente a ella, lo que inflige <color=#F0D12B>daño físico</color>.\nTras la ejecución de la habilidad, se puede enlazar directamente con el cuarto ataque del <color=#FFFFFF>ataque normal: Encantada de poder ser de ayuda</color>.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "148100053": {
+                "Title": "Ataque rápido: Llamada repentina"
+            },
+            "148100054": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1481014, Prop:1001}"
+            },
+            "148100055": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1481014, Prop:1002}"
+            },
+            "148100056": {
+                "Title": "Contraataque: Número no disponible"
+            },
+            "148100057": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1481015, Prop:1001}"
+            },
+            "148100058": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1481015, Prop:1002}"
+            }
+        },
+        "3": {
+            "148100011": {
+                "Title": "Técnica en cadena: Felpudo de bienvenida",
+                "Description": "Elige el avatar de personaje al ejecutar una <color=#FFFFFF>técnica en cadena</color> para usarla.\nEjecuta patadas continuas hacia delante, lo que inflige una gran cantidad de <color=#F0D12B>daño físico</color>.\nTras la ejecución de la habilidad, se puede enlazar directamente con el cuarto ataque del <color=#FFFFFF>ataque normal: Encantada de poder ser de ayuda</color>.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "148100012": {
+                "Title": "Técnica definitiva: El número marcado no está en servicio",
+                "Description": "Cuando los dB llegan a su nivel <color=#FFFFFF>máximo</color>, pulsa <IconMap:Icon_UltimateReady> para usarla.\nSe impulsa rápidamente hacia delante y ejecuta un ataque con los dedos, lo que inflige una gran cantidad de <color=#F0D12B>daño físico</color>.\nTras la ejecución de la habilidad, se puede enlazar directamente con el cuarto ataque del <color=#FFFFFF>ataque normal: Encantada de poder ser de ayuda</color>.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "148100059": {
+                "Title": "Técnica en cadena: Felpudo de bienvenida"
+            },
+            "148100060": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1481016, Prop:1001}"
+            },
+            "148100061": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1481016, Prop:1002}"
+            },
+            "148100062": {
+                "Title": "Técnica definitiva: El número marcado no está en servicio"
+            },
+            "148100063": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1481017, Prop:1001}"
+            },
+            "148100064": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1481017, Prop:1002}"
+            }
+        },
+        "6": {
+            "148100014": {
+                "Title": "Apoyo rápido: Llamada transferida",
+                "Description": "Pulsa <IconMap:Icon_Switch> cuando el personaje activo sea lanzado por los aires para ejecutarlo.\nEjecuta ataques consecutivos contra los enemigos frente a ella, lo que inflige <color=#F0D12B>daño físico</color>.\nTras la ejecución de la habilidad, se puede enlazar directamente con el cuarto ataque del <color=#FFFFFF>ataque normal: Encantada de poder ser de ayuda</color>.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "148100015": {
+                "Title": "Apoyo defensivo: Llamada rechazada",
+                "Description": "Pulsa <IconMap:Icon_Switch> para usarlo cuando el personaje activo esté a punto de recibir un golpe.\nBloquea el ataque enemigo, lo que provoca una gran cantidad de Aturdimiento.\nEsta habilidad destaca por su capacidad para bloquear los ataques enemigos, por lo que, al recibir un golpe fuerte, reduce los <color=#FFFFFF>puntos de apoyo</color> consumidos.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "148100016": {
+                "Title": "Ataque sucesivo: Llamadas en cadena",
+                "Description": "Pulsa <IconMap:Icon_Normal> después de un <color=#FFFFFF>apoyo defensivo</color> para usarlo.\nAvanza rápidamente hacia delante y ejecuta un corte, lo que inflige <color=#F0D12B>daño físico</color>.\nTras la ejecución de la habilidad, se puede enlazar directamente con el cuarto ataque del <color=#FFFFFF>ataque normal: Encantada de poder ser de ayuda</color>.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "148100065": {
+                "Title": "Apoyo rápido: Llamada transferida"
+            },
+            "148100066": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1481018, Prop:1001}"
+            },
+            "148100067": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1481018, Prop:1002}"
+            },
+            "148100068": {
+                "Title": "Apoyo defensivo: Llamada rechazada"
+            },
+            "148100069": {
+                "Description": "Multiplicador de Aturdimiento defensivo ligero",
+                "Param": "{Skill:1481019, Prop:1002}"
+            },
+            "148100070": {
+                "Description": "Multiplicador de Aturdimiento defensivo fuerte",
+                "Param": "{Skill:1481020, Prop:1002}"
+            },
+            "148100071": {
+                "Description": "Multiplicador de Aturdimiento defensivo continuo",
+                "Param": "{Skill:1481021, Prop:1002}"
+            },
+            "148100072": {
+                "Title": "Ataque sucesivo: Llamadas en cadena"
+            },
+            "148100073": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1481022, Prop:1001}"
+            },
+            "148100074": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1481022, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1481001": {
+            "DamageValue": 2560,
+            "DamageGrowth": 240,
+            "DazeValue": 1940,
+            "DazeGrowth": 90
+        },
+        "1481002": {
+            "DamageValue": 5130,
+            "DamageGrowth": 470,
+            "DazeValue": 4350,
+            "DazeGrowth": 200
+        },
+        "1481003": {
+            "DamageValue": 6480,
+            "DamageGrowth": 590,
+            "DazeValue": 6160,
+            "DazeGrowth": 280
+        },
+        "1481004": {
+            "DamageValue": 9950,
+            "DamageGrowth": 910,
+            "DazeValue": 9950,
+            "DazeGrowth": 460
+        },
+        "1481005": {
+            "DamageValue": 8950,
+            "DamageGrowth": 820,
+            "DazeValue": 7140,
+            "DazeGrowth": 330
+        },
+        "1481006": {
+            "DamageValue": 11390,
+            "DamageGrowth": 1040,
+            "DazeValue": 9080,
+            "DazeGrowth": 420
+        },
+        "1481007": {
+            "DamageValue": 10310,
+            "DamageGrowth": 940,
+            "DazeValue": 8220,
+            "DazeGrowth": 380
+        },
+        "1481008": {
+            "DamageValue": 10030,
+            "DamageGrowth": 920,
+            "DazeValue": 8000,
+            "DazeGrowth": 370
+        },
+        "1481009": {
+            "DamageValue": 54970,
+            "DamageGrowth": 5000,
+            "DazeValue": 33650,
+            "DazeGrowth": 1530
+        },
+        "1481010": {
+            "DamageValue": 5420,
+            "DamageGrowth": 500,
+            "DazeValue": 5420,
+            "DazeGrowth": 250
+        },
+        "1481011": {
+            "DamageValue": 40400,
+            "DamageGrowth": 3680,
+            "DazeValue": 23600,
+            "DazeGrowth": 1080
+        },
+        "1481012": {
+            "DamageValue": 52490,
+            "DamageGrowth": 4780,
+            "DazeValue": 31020,
+            "DazeGrowth": 1410
+        },
+        "1481013": {
+            "DamageValue": 70170,
+            "DamageGrowth": 6380,
+            "DazeValue": 42690,
+            "DazeGrowth": 1950
+        },
+        "1481014": {
+            "DamageValue": 6050,
+            "DamageGrowth": 550,
+            "DazeValue": 3030,
+            "DazeGrowth": 140
+        },
+        "1481015": {
+            "DamageValue": 26730,
+            "DamageGrowth": 2430,
+            "DazeValue": 23100,
+            "DazeGrowth": 1050
+        },
+        "1481016": {
+            "DamageValue": 62040,
+            "DamageGrowth": 5640,
+            "DazeValue": 18150,
+            "DazeGrowth": 830
+        },
+        "1481017": {
+            "DamageValue": 162250,
+            "DamageGrowth": 14750,
+            "DazeValue": 76780,
+            "DazeGrowth": 3490
+        },
+        "1481018": {
+            "DamageValue": 12100,
+            "DamageGrowth": 1100,
+            "DazeValue": 6050,
+            "DazeGrowth": 280
+        },
+        "1481019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1481020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1481021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1481022": {
+            "DamageValue": 37640,
+            "DamageGrowth": 3430,
+            "DazeValue": 32770,
+            "DazeGrowth": 1490
+        }
+    }
+}

@@ -1,0 +1,514 @@
+{
+    "Name": "Dialyn",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Specialty": {
+        "Id": 2,
+        "Name": "Stun"
+    },
+    "Talents": {
+        "1": {
+            "Title": "Boundless Hospitality",
+            "Description": "The amount of <color=#FFFFFF>Positive Reviews</color> accumulated each second and gained when <color=#FFFFFF>EX Special Attack: Rock</color>, <color=#FFFFFF>EX Special Attack: Scissors</color>, or <color=#FFFFFF>EX Special Attack: Paper!</color> hits an enemy increase by 16%. While the <color=#FFFFFF>Overwhelmingly Positive</color> effect is active, characters ignore 15% of enemy All-Attribute RES.",
+            "Lore": "Welcome to the Cross-Department Customer Service Center!\nOur motto is simple: always wear a smile, always greet every customer with passion~!\nA smile... the one expression I once found hardest to fake. When did it become second nature to me?\n\"Hello there, darling~ How can I help you? Well~ not that I really can do anything for you!\""
+        },
+        "2": {
+            "Title": "24/7 Hotline",
+            "Description": "Enemies affected by <color=#FFFFFF>Malicious Complaint</color> gain an additional 20% Stun DMG Multiplier when Stunned, and all units deal 15% increased DMG to targets affected by <color=#FFFFFF>Malicious Complaint</color>.",
+            "Lore": "TOPS is the biggest corporate alliance in New Eridu, and our work keeps this city alive~!\nWe're the essential lubricant that keeps this great machine turning, so our service hotline must stay open 24/7, no matter what!\nEndless noise and constant chatter? No problem — that's what I know best.\n\"Please feel free to contact me anytime~! No matter when you do, I'll still be just as annoying~!\""
+        },
+        "3": {
+            "Title": "Call From the Hollow",
+            "Description": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2",
+            "Lore": "The Hollows are a vast tomb, where every echo of life falls silent within its pitch-black coffin.\nBut to me, it's a call I can never refuse, the final page of every diary, a memo of obsession and lingering resentment.\nEven if... all that talk of letting go or holding on, they've got nothing to do with my own story.\n\"It's alright! I've talked with plenty of clients far harder to communicate with than you~!\""
+        },
+        "4": {
+            "Title": "The Past Never Fades",
+            "Description": "Upon entering combat, Dialyn recovers 20 Energy. This effect can trigger once every 180s in Investigation Zone Mode. While the <color=#FFFFFF>Overwhelmingly Positive</color> effect is active, Dialyn's ATK increases by 500.",
+            "Lore": "People always treat me like a kid because I'm small, but my childhood is long since over.\nWhich day did it end, though? The first time I heard the whispers of the dead? When I was sent into the Hollow as a sacrifice? Or that first night I cried myself to sleep?\nWith no one to protect me, I had to find my own footing. Unable to forget the past, I pretended to let it go.\n\"I don't care about your personal issues~ but I am very concerned about how your childhood trauma might affect my complaint rate~!\""
+        },
+        "5": {
+            "Title": "Lies",
+            "Description": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2",
+            "Lore": "We lie when others still care about us, and only tell the truth once they've stopped.\nSuch foolish choices always lead to regret. My job is simply to use yesterday's regrets to make today's a little lighter.\nI know people always lie, but at least there are still some who bother to lie to me.\n\"My suggestion? Mix a bit of flattering nonsense in between your insults — it'll work in your favor~!\""
+        },
+        "6": {
+            "Title": "Truth",
+            "Description": "When an ally enters the field with an Ultimate through the <color=#FFFFFF>Core Passive</color>'s effect, that ally gains the <color=#FFFFFF>Aftertone</color> effect. With this effect, landing an attack causes Dialyn to deal an additional instance of <color=#F0D12B>Physical DMG</color> equal to 480% of Dialyn's ATK. This DMG is treated as <color=#FFFFFF>EX Special Attack</color> DMG, and can trigger once every second, up to 12 times. Gaining <color=#FFFFFF>Aftertone</color> again refreshes its trigger count. Only one ally can have <color=#FFFFFF>Aftertone</color> at a time.",
+            "Lore": "A sudden death is like a moment preserved in time, capturing truth in its final, immutable form.\nI take these specimens from the hands of the dead, using their death certificates as the foundation for my judgments.\nPure, objective \"truth\" is the only rule I can depend on, the only thread guiding my way forward... until—\n\"Proxy, can I lie as well?\""
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Core Passive: Five-Star Service Hotline",
+            "DescriptionByLevel": {
+                "1": "Upon entering the battlefield, Dialyn starts with 60 <color=#FFFFFF>Positive Reviews</color>. If her initial CRIT Rate surpasses 50%, her Impact increases by <color=#2BAD00>1.4</color> for each additional 1%, up to a maximum increase of 100.\nAfter using <color=#FFFFFF>EX Special Attack: Rock</color>, the next <color=#FFFFFF>EX Special Attack</color> becomes <color=#FFFFFF>EX Special Attack: Scissors</color> for 8s.\nAfter using <color=#FFFFFF>EX Special Attack: Scissors</color>, the next <color=#FFFFFF>EX Special Attack</color> becomes <color=#FFFFFF>EX Special Attack: Paper!</color> for 8s.\nWhen <color=#FFFFFF>EX Special Attack: Paper!</color> hits an enemy, it applies the <color=#FFFFFF>Malicious Complaint</color> effect. While under <color=#FFFFFF>Malicious Complaint</color>, if the enemy becomes Stunned, the Stun duration is extended by 2s, and Stun DMG Multiplier increases by <color=#2BAD00>15%</color>. Before recovering from Stun, <color=#FFFFFF>Malicious Complaint</color> can trigger on the same target only once. The Stun duration bonus does not stack with similar effects. When an enemy with <color=#FFFFFF>Malicious Complaint</color> recovers from being Stunned, the effect ends.\nWhile in combat, Dialyn gains 0.6 <color=#FFFFFF>Positive Reviews</color> per second. When a heavy attack of <color=#FFFFFF>EX Special Attack: Rock</color>, <color=#FFFFFF>EX Special Attack: Scissors</color>, or <color=#FFFFFF>EX Special Attack: Paper!</color> hits enemies, she gains 7.5 <color=#FFFFFF>Positive Reviews</color>. Each use of a skill can grant this bonus only once, up to a maximum of 120.\nWith at least 90 <color=#FFFFFF>Positive Reviews</color>, when Dialyn triggers the <color=#FFFFFF>Chain Attack</color> window using <color=#FFFFFF>Chain Attack: Welcome Mat</color>, <color=#FFFFFF>EX Special Attack: Get Lost!</color>, or <color=#FFFFFF>Quick Assist: Forward Call</color>, the next character to switch in will have their <color=#FFFFFF>Chain Attack</color> upgraded to an <color=#FFFFFF>Ultimate</color>. When an ally launches an <color=#FFFFFF>Ultimate</color> this way, Dialyn consumes 60 <color=#FFFFFF>Positive Reviews</color>.\nWith at least 90 <color=#FFFFFF>Positive Reviews</color>, when Dialyn hits an enemy with <color=#FFFFFF>EX Special Attack: Get Lost!</color> and doesn't trigger a <color=#FFFFFF>Chain Attack</color> window, she consumes 90 <color=#FFFFFF>Positive Reviews</color> to forcibly trigger a <color=#FFFFFF>Chain Attack</color> window. The next character to switch in will have their <color=#FFFFFF>Chain Attack</color> upgraded to an <color=#FFFFFF>Ultimate</color>.\nEach time <color=#FFFFFF>Positive Reviews</color> reaches 90 or an <color=#FFFFFF>Ultimate</color> is activated, Dialyn obtains 1 <color=#FFFFFF>Customer Complaint</color>. A maximum of 1 <color=#FFFFFF>Customer Complaint</color> can be held at a time.",
+                "2": "Upon entering the battlefield, Dialyn starts with 60 <color=#FFFFFF>Positive Reviews</color>. If her initial CRIT Rate surpasses 50%, her Impact increases by <color=#2BAD00>1.5</color> for each additional 1%, up to a maximum increase of 100.\nAfter using <color=#FFFFFF>EX Special Attack: Rock</color>, the next <color=#FFFFFF>EX Special Attack</color> becomes <color=#FFFFFF>EX Special Attack: Scissors</color> for 8s.\nAfter using <color=#FFFFFF>EX Special Attack: Scissors</color>, the next <color=#FFFFFF>EX Special Attack</color> becomes <color=#FFFFFF>EX Special Attack: Paper!</color> for 8s.\nWhen <color=#FFFFFF>EX Special Attack: Paper!</color> hits an enemy, it applies the <color=#FFFFFF>Malicious Complaint</color> effect. While under <color=#FFFFFF>Malicious Complaint</color>, if the enemy becomes Stunned, the Stun duration is extended by 2s, and Stun DMG Multiplier increases by <color=#2BAD00>17.5%</color>. Before recovering from Stun, <color=#FFFFFF>Malicious Complaint</color> can trigger on the same target only once. The Stun duration bonus does not stack with similar effects. When an enemy with <color=#FFFFFF>Malicious Complaint</color> recovers from being Stunned, the effect ends.\nWhile in combat, Dialyn gains 0.6 <color=#FFFFFF>Positive Reviews</color> per second. When a heavy attack of <color=#FFFFFF>EX Special Attack: Rock</color>, <color=#FFFFFF>EX Special Attack: Scissors</color>, or <color=#FFFFFF>EX Special Attack: Paper!</color> hits enemies, she gains 7.5 <color=#FFFFFF>Positive Reviews</color>. Each use of a skill can grant this bonus only once, up to a maximum of 120.\nWith at least 90 <color=#FFFFFF>Positive Reviews</color>, when Dialyn triggers the <color=#FFFFFF>Chain Attack</color> window using <color=#FFFFFF>Chain Attack: Welcome Mat</color>, <color=#FFFFFF>EX Special Attack: Get Lost!</color>, or <color=#FFFFFF>Quick Assist: Forward Call</color>, the next character to switch in will have their <color=#FFFFFF>Chain Attack</color> upgraded to an <color=#FFFFFF>Ultimate</color>. When an ally launches an <color=#FFFFFF>Ultimate</color> this way, Dialyn consumes 60 <color=#FFFFFF>Positive Reviews</color>.\nWith at least 90 <color=#FFFFFF>Positive Reviews</color>, when Dialyn hits an enemy with <color=#FFFFFF>EX Special Attack: Get Lost!</color> and doesn't trigger a <color=#FFFFFF>Chain Attack</color> window, she consumes 90 <color=#FFFFFF>Positive Reviews</color> to forcibly trigger a <color=#FFFFFF>Chain Attack</color> window. The next character to switch in will have their <color=#FFFFFF>Chain Attack</color> upgraded to an <color=#FFFFFF>Ultimate</color>.\nEach time <color=#FFFFFF>Positive Reviews</color> reaches 90 or an <color=#FFFFFF>Ultimate</color> is activated, Dialyn obtains 1 <color=#FFFFFF>Customer Complaint</color>. A maximum of 1 <color=#FFFFFF>Customer Complaint</color> can be held at a time.",
+                "3": "Upon entering the battlefield, Dialyn starts with 60 <color=#FFFFFF>Positive Reviews</color>. If her initial CRIT Rate surpasses 50%, her Impact increases by <color=#2BAD00>1.6</color> for each additional 1%, up to a maximum increase of 100.\nAfter using <color=#FFFFFF>EX Special Attack: Rock</color>, the next <color=#FFFFFF>EX Special Attack</color> becomes <color=#FFFFFF>EX Special Attack: Scissors</color> for 8s.\nAfter using <color=#FFFFFF>EX Special Attack: Scissors</color>, the next <color=#FFFFFF>EX Special Attack</color> becomes <color=#FFFFFF>EX Special Attack: Paper!</color> for 8s.\nWhen <color=#FFFFFF>EX Special Attack: Paper!</color> hits an enemy, it applies the <color=#FFFFFF>Malicious Complaint</color> effect. While under <color=#FFFFFF>Malicious Complaint</color>, if the enemy becomes Stunned, the Stun duration is extended by 2s, and Stun DMG Multiplier increases by <color=#2BAD00>20%</color>. Before recovering from Stun, <color=#FFFFFF>Malicious Complaint</color> can trigger on the same target only once. The Stun duration bonus does not stack with similar effects. When an enemy with <color=#FFFFFF>Malicious Complaint</color> recovers from being Stunned, the effect ends.\nWhile in combat, Dialyn gains 0.6 <color=#FFFFFF>Positive Reviews</color> per second. When a heavy attack of <color=#FFFFFF>EX Special Attack: Rock</color>, <color=#FFFFFF>EX Special Attack: Scissors</color>, or <color=#FFFFFF>EX Special Attack: Paper!</color> hits enemies, she gains 7.5 <color=#FFFFFF>Positive Reviews</color>. Each use of a skill can grant this bonus only once, up to a maximum of 120.\nWith at least 90 <color=#FFFFFF>Positive Reviews</color>, when Dialyn triggers the <color=#FFFFFF>Chain Attack</color> window using <color=#FFFFFF>Chain Attack: Welcome Mat</color>, <color=#FFFFFF>EX Special Attack: Get Lost!</color>, or <color=#FFFFFF>Quick Assist: Forward Call</color>, the next character to switch in will have their <color=#FFFFFF>Chain Attack</color> upgraded to an <color=#FFFFFF>Ultimate</color>. When an ally launches an <color=#FFFFFF>Ultimate</color> this way, Dialyn consumes 60 <color=#FFFFFF>Positive Reviews</color>.\nWith at least 90 <color=#FFFFFF>Positive Reviews</color>, when Dialyn hits an enemy with <color=#FFFFFF>EX Special Attack: Get Lost!</color> and doesn't trigger a <color=#FFFFFF>Chain Attack</color> window, she consumes 90 <color=#FFFFFF>Positive Reviews</color> to forcibly trigger a <color=#FFFFFF>Chain Attack</color> window. The next character to switch in will have their <color=#FFFFFF>Chain Attack</color> upgraded to an <color=#FFFFFF>Ultimate</color>.\nEach time <color=#FFFFFF>Positive Reviews</color> reaches 90 or an <color=#FFFFFF>Ultimate</color> is activated, Dialyn obtains 1 <color=#FFFFFF>Customer Complaint</color>. A maximum of 1 <color=#FFFFFF>Customer Complaint</color> can be held at a time.",
+                "4": "Upon entering the battlefield, Dialyn starts with 60 <color=#FFFFFF>Positive Reviews</color>. If her initial CRIT Rate surpasses 50%, her Impact increases by <color=#2BAD00>1.7</color> for each additional 1%, up to a maximum increase of 100.\nAfter using <color=#FFFFFF>EX Special Attack: Rock</color>, the next <color=#FFFFFF>EX Special Attack</color> becomes <color=#FFFFFF>EX Special Attack: Scissors</color> for 8s.\nAfter using <color=#FFFFFF>EX Special Attack: Scissors</color>, the next <color=#FFFFFF>EX Special Attack</color> becomes <color=#FFFFFF>EX Special Attack: Paper!</color> for 8s.\nWhen <color=#FFFFFF>EX Special Attack: Paper!</color> hits an enemy, it applies the <color=#FFFFFF>Malicious Complaint</color> effect. While under <color=#FFFFFF>Malicious Complaint</color>, if the enemy becomes Stunned, the Stun duration is extended by 2s, and Stun DMG Multiplier increases by <color=#2BAD00>22.5%</color>. Before recovering from Stun, <color=#FFFFFF>Malicious Complaint</color> can trigger on the same target only once. The Stun duration bonus does not stack with similar effects. When an enemy with <color=#FFFFFF>Malicious Complaint</color> recovers from being Stunned, the effect ends.\nWhile in combat, Dialyn gains 0.6 <color=#FFFFFF>Positive Reviews</color> per second. When a heavy attack of <color=#FFFFFF>EX Special Attack: Rock</color>, <color=#FFFFFF>EX Special Attack: Scissors</color>, or <color=#FFFFFF>EX Special Attack: Paper!</color> hits enemies, she gains 7.5 <color=#FFFFFF>Positive Reviews</color>. Each use of a skill can grant this bonus only once, up to a maximum of 120.\nWith at least 90 <color=#FFFFFF>Positive Reviews</color>, when Dialyn triggers the <color=#FFFFFF>Chain Attack</color> window using <color=#FFFFFF>Chain Attack: Welcome Mat</color>, <color=#FFFFFF>EX Special Attack: Get Lost!</color>, or <color=#FFFFFF>Quick Assist: Forward Call</color>, the next character to switch in will have their <color=#FFFFFF>Chain Attack</color> upgraded to an <color=#FFFFFF>Ultimate</color>. When an ally launches an <color=#FFFFFF>Ultimate</color> this way, Dialyn consumes 60 <color=#FFFFFF>Positive Reviews</color>.\nWith at least 90 <color=#FFFFFF>Positive Reviews</color>, when Dialyn hits an enemy with <color=#FFFFFF>EX Special Attack: Get Lost!</color> and doesn't trigger a <color=#FFFFFF>Chain Attack</color> window, she consumes 90 <color=#FFFFFF>Positive Reviews</color> to forcibly trigger a <color=#FFFFFF>Chain Attack</color> window. The next character to switch in will have their <color=#FFFFFF>Chain Attack</color> upgraded to an <color=#FFFFFF>Ultimate</color>.\nEach time <color=#FFFFFF>Positive Reviews</color> reaches 90 or an <color=#FFFFFF>Ultimate</color> is activated, Dialyn obtains 1 <color=#FFFFFF>Customer Complaint</color>. A maximum of 1 <color=#FFFFFF>Customer Complaint</color> can be held at a time.",
+                "5": "Upon entering the battlefield, Dialyn starts with 60 <color=#FFFFFF>Positive Reviews</color>. If her initial CRIT Rate surpasses 50%, her Impact increases by <color=#2BAD00>1.8</color> for each additional 1%, up to a maximum increase of 100.\nAfter using <color=#FFFFFF>EX Special Attack: Rock</color>, the next <color=#FFFFFF>EX Special Attack</color> becomes <color=#FFFFFF>EX Special Attack: Scissors</color> for 8s.\nAfter using <color=#FFFFFF>EX Special Attack: Scissors</color>, the next <color=#FFFFFF>EX Special Attack</color> becomes <color=#FFFFFF>EX Special Attack: Paper!</color> for 8s.\nWhen <color=#FFFFFF>EX Special Attack: Paper!</color> hits an enemy, it applies the <color=#FFFFFF>Malicious Complaint</color> effect. While under <color=#FFFFFF>Malicious Complaint</color>, if the enemy becomes Stunned, the Stun duration is extended by 2s, and Stun DMG Multiplier increases by <color=#2BAD00>25%</color>. Before recovering from Stun, <color=#FFFFFF>Malicious Complaint</color> can trigger on the same target only once. The Stun duration bonus does not stack with similar effects. When an enemy with <color=#FFFFFF>Malicious Complaint</color> recovers from being Stunned, the effect ends.\nWhile in combat, Dialyn gains 0.6 <color=#FFFFFF>Positive Reviews</color> per second. When a heavy attack of <color=#FFFFFF>EX Special Attack: Rock</color>, <color=#FFFFFF>EX Special Attack: Scissors</color>, or <color=#FFFFFF>EX Special Attack: Paper!</color> hits enemies, she gains 7.5 <color=#FFFFFF>Positive Reviews</color>. Each use of a skill can grant this bonus only once, up to a maximum of 120.\nWith at least 90 <color=#FFFFFF>Positive Reviews</color>, when Dialyn triggers the <color=#FFFFFF>Chain Attack</color> window using <color=#FFFFFF>Chain Attack: Welcome Mat</color>, <color=#FFFFFF>EX Special Attack: Get Lost!</color>, or <color=#FFFFFF>Quick Assist: Forward Call</color>, the next character to switch in will have their <color=#FFFFFF>Chain Attack</color> upgraded to an <color=#FFFFFF>Ultimate</color>. When an ally launches an <color=#FFFFFF>Ultimate</color> this way, Dialyn consumes 60 <color=#FFFFFF>Positive Reviews</color>.\nWith at least 90 <color=#FFFFFF>Positive Reviews</color>, when Dialyn hits an enemy with <color=#FFFFFF>EX Special Attack: Get Lost!</color> and doesn't trigger a <color=#FFFFFF>Chain Attack</color> window, she consumes 90 <color=#FFFFFF>Positive Reviews</color> to forcibly trigger a <color=#FFFFFF>Chain Attack</color> window. The next character to switch in will have their <color=#FFFFFF>Chain Attack</color> upgraded to an <color=#FFFFFF>Ultimate</color>.\nEach time <color=#FFFFFF>Positive Reviews</color> reaches 90 or an <color=#FFFFFF>Ultimate</color> is activated, Dialyn obtains 1 <color=#FFFFFF>Customer Complaint</color>. A maximum of 1 <color=#FFFFFF>Customer Complaint</color> can be held at a time.",
+                "6": "Upon entering the battlefield, Dialyn starts with 60 <color=#FFFFFF>Positive Reviews</color>. If her initial CRIT Rate surpasses 50%, her Impact increases by <color=#2BAD00>1.9</color> for each additional 1%, up to a maximum increase of 100.\nAfter using <color=#FFFFFF>EX Special Attack: Rock</color>, the next <color=#FFFFFF>EX Special Attack</color> becomes <color=#FFFFFF>EX Special Attack: Scissors</color> for 8s.\nAfter using <color=#FFFFFF>EX Special Attack: Scissors</color>, the next <color=#FFFFFF>EX Special Attack</color> becomes <color=#FFFFFF>EX Special Attack: Paper!</color> for 8s.\nWhen <color=#FFFFFF>EX Special Attack: Paper!</color> hits an enemy, it applies the <color=#FFFFFF>Malicious Complaint</color> effect. While under <color=#FFFFFF>Malicious Complaint</color>, if the enemy becomes Stunned, the Stun duration is extended by 2s, and Stun DMG Multiplier increases by <color=#2BAD00>27.5%</color>. Before recovering from Stun, <color=#FFFFFF>Malicious Complaint</color> can trigger on the same target only once. The Stun duration bonus does not stack with similar effects. When an enemy with <color=#FFFFFF>Malicious Complaint</color> recovers from being Stunned, the effect ends.\nWhile in combat, Dialyn gains 0.6 <color=#FFFFFF>Positive Reviews</color> per second. When a heavy attack of <color=#FFFFFF>EX Special Attack: Rock</color>, <color=#FFFFFF>EX Special Attack: Scissors</color>, or <color=#FFFFFF>EX Special Attack: Paper!</color> hits enemies, she gains 7.5 <color=#FFFFFF>Positive Reviews</color>. Each use of a skill can grant this bonus only once, up to a maximum of 120.\nWith at least 90 <color=#FFFFFF>Positive Reviews</color>, when Dialyn triggers the <color=#FFFFFF>Chain Attack</color> window using <color=#FFFFFF>Chain Attack: Welcome Mat</color>, <color=#FFFFFF>EX Special Attack: Get Lost!</color>, or <color=#FFFFFF>Quick Assist: Forward Call</color>, the next character to switch in will have their <color=#FFFFFF>Chain Attack</color> upgraded to an <color=#FFFFFF>Ultimate</color>. When an ally launches an <color=#FFFFFF>Ultimate</color> this way, Dialyn consumes 60 <color=#FFFFFF>Positive Reviews</color>.\nWith at least 90 <color=#FFFFFF>Positive Reviews</color>, when Dialyn hits an enemy with <color=#FFFFFF>EX Special Attack: Get Lost!</color> and doesn't trigger a <color=#FFFFFF>Chain Attack</color> window, she consumes 90 <color=#FFFFFF>Positive Reviews</color> to forcibly trigger a <color=#FFFFFF>Chain Attack</color> window. The next character to switch in will have their <color=#FFFFFF>Chain Attack</color> upgraded to an <color=#FFFFFF>Ultimate</color>.\nEach time <color=#FFFFFF>Positive Reviews</color> reaches 90 or an <color=#FFFFFF>Ultimate</color> is activated, Dialyn obtains 1 <color=#FFFFFF>Customer Complaint</color>. A maximum of 1 <color=#FFFFFF>Customer Complaint</color> can be held at a time.",
+                "7": "Upon entering the battlefield, Dialyn starts with 60 <color=#FFFFFF>Positive Reviews</color>. If her initial CRIT Rate surpasses 50%, her Impact increases by <color=#2BAD00>2</color> for each additional 1%, up to a maximum increase of 100.\nAfter using <color=#FFFFFF>EX Special Attack: Rock</color>, the next <color=#FFFFFF>EX Special Attack</color> becomes <color=#FFFFFF>EX Special Attack: Scissors</color> for 8s.\nAfter using <color=#FFFFFF>EX Special Attack: Scissors</color>, the next <color=#FFFFFF>EX Special Attack</color> becomes <color=#FFFFFF>EX Special Attack: Paper!</color> for 8s.\nWhen <color=#FFFFFF>EX Special Attack: Paper!</color> hits an enemy, it applies the <color=#FFFFFF>Malicious Complaint</color> effect. While under <color=#FFFFFF>Malicious Complaint</color>, if the enemy becomes Stunned, the Stun duration is extended by 2s, and Stun DMG Multiplier increases by <color=#2BAD00>30%</color>. Before recovering from Stun, <color=#FFFFFF>Malicious Complaint</color> can trigger on the same target only once. The Stun duration bonus does not stack with similar effects. When an enemy with <color=#FFFFFF>Malicious Complaint</color> recovers from being Stunned, the effect ends.\nWhile in combat, Dialyn gains 0.6 <color=#FFFFFF>Positive Reviews</color> per second. When a heavy attack of <color=#FFFFFF>EX Special Attack: Rock</color>, <color=#FFFFFF>EX Special Attack: Scissors</color>, or <color=#FFFFFF>EX Special Attack: Paper!</color> hits enemies, she gains 7.5 <color=#FFFFFF>Positive Reviews</color>. Each use of a skill can grant this bonus only once, up to a maximum of 120.\nWith at least 90 <color=#FFFFFF>Positive Reviews</color>, when Dialyn triggers the <color=#FFFFFF>Chain Attack</color> window using <color=#FFFFFF>Chain Attack: Welcome Mat</color>, <color=#FFFFFF>EX Special Attack: Get Lost!</color>, or <color=#FFFFFF>Quick Assist: Forward Call</color>, the next character to switch in will have their <color=#FFFFFF>Chain Attack</color> upgraded to an <color=#FFFFFF>Ultimate</color>. When an ally launches an <color=#FFFFFF>Ultimate</color> this way, Dialyn consumes 60 <color=#FFFFFF>Positive Reviews</color>.\nWith at least 90 <color=#FFFFFF>Positive Reviews</color>, when Dialyn hits an enemy with <color=#FFFFFF>EX Special Attack: Get Lost!</color> and doesn't trigger a <color=#FFFFFF>Chain Attack</color> window, she consumes 90 <color=#FFFFFF>Positive Reviews</color> to forcibly trigger a <color=#FFFFFF>Chain Attack</color> window. The next character to switch in will have their <color=#FFFFFF>Chain Attack</color> upgraded to an <color=#FFFFFF>Ultimate</color>.\nEach time <color=#FFFFFF>Positive Reviews</color> reaches 90 or an <color=#FFFFFF>Ultimate</color> is activated, Dialyn obtains 1 <color=#FFFFFF>Customer Complaint</color>. A maximum of 1 <color=#FFFFFF>Customer Complaint</color> can be held at a time."
+            }
+        },
+        "MathSkill": {
+            "Title": "Additional Ability: External Line",
+            "Description": "When another character in your squad is an <color=#FFFFFF>Attack</color> or <color=#FFFFFF>Rupture</color> character:\nDialyn's <color=#FFFFFF>EX Special Attack</color> CRIT DMG is increased by 50%.\nWhen an <color=#FFFFFF>EX Special Attack</color> or <color=#FFFFFF>Ultimate</color> is activated, all squad members gain the <color=#FFFFFF>Overwhelmingly Positive</color> effect. While <color=#FFFFFF>Overwhelmingly Positive</color> is active, DMG dealt is increased by 40% for 15s. When Dialyn uses an <color=#FFFFFF>EX Special Attack</color> or <color=#FFFFFF>Ultimate</color> while <color=#FFFFFF>Overwhelmingly Positive</color> is active, if the remaining duration of <color=#FFFFFF>Overwhelmingly Positive</color> is less than 35s, its duration is extended by 10s.\nWhen a heavy attack from <color=#FFFFFF>EX Special Attack: Rock</color>, <color=#FFFFFF>EX Special Attack: Scissors</color>, or <color=#FFFFFF>EX Special Attack: Paper!</color> hits, additional DMG is dealt based on the previous squad member's Specialty:\nIf the squad member is an <color=#FFFFFF>Attack</color> Agent, <color=#FFFFFF>EX Special Attack: Rock</color>, <color=#FFFFFF>EX Special Attack: Scissors</color>, and <color=#FFFFFF>EX Special Attack: Paper!</color> deal additional DMG equal to 320% of that <color=#FFFFFF>Attack</color> Agent's ATK.\nIf the squad member is a <color=#FFFFFF>Rupture</color> Agent, <color=#FFFFFF>EX Special Attack: Rock</color>, <color=#FFFFFF>EX Special Attack: Scissors</color>, and <color=#FFFFFF>EX Special Attack: Paper!</color> deal additional DMG equal to 400% of that <color=#FFFFFF>Rupture</color> Agent's Sheer Force."
+        },
+        "BaseProps": [
+            {
+                "20101": 0,
+                "12101": 0
+            },
+            {
+                "20101": 480,
+                "12101": 0
+            },
+            {
+                "20101": 480,
+                "12101": 25
+            },
+            {
+                "20101": 960,
+                "12101": 25
+            },
+            {
+                "20101": 960,
+                "12101": 50
+            },
+            {
+                "20101": 1440,
+                "12101": 50
+            },
+            {
+                "20101": 1440,
+                "12101": 75
+            }
+        ]
+    },
+    "SkillDescriptions": {
+        "0": {
+            "148100001": {
+                "Title": "Basic Attack: Happy to Be of Service",
+                "Description": "Press <IconMap:Icon_Normal> to activate:\nUnleashes up to four attacks, dealing <color=#F0D12B>Physical DMG</color>."
+            },
+            "148100002": {
+                "Title": "Basic Attack: Rock, Paper, Scissors",
+                "Description": "After <color=#FFFFFF>EX Special Attack: Rock</color> or <color=#FFFFFF>EX Special Attack: Scissors</color>, press <IconMap:Icon_Normal> to activate:\nPerforms up to two attacks, dealing <color=#F0D12B>Physical DMG</color>.\nDuring skill activation, Anti-Interrupt level increases, and DMG taken is reduced by 40%."
+            },
+            "148100017": {
+                "Title": "Basic Attack: Happy to Be of Service"
+            },
+            "148100018": {
+                "Description": "1st-Hit DMG Multiplier",
+                "Param": "{Skill:1481001, Prop:1001}"
+            },
+            "148100019": {
+                "Description": "2nd-Hit DMG Multiplier",
+                "Param": "{Skill:1481002, Prop:1001}"
+            },
+            "148100020": {
+                "Description": "3rd-Hit DMG Multiplier",
+                "Param": "{Skill:1481003, Prop:1001}"
+            },
+            "148100021": {
+                "Description": "4th-Hit DMG Multiplier",
+                "Param": "{Skill:1481004, Prop:1001}"
+            },
+            "148100022": {
+                "Description": "1st-Hit Daze Multiplier",
+                "Param": "{Skill:1481001, Prop:1002}"
+            },
+            "148100023": {
+                "Description": "2nd-Hit Daze Multiplier",
+                "Param": "{Skill:1481002, Prop:1002}"
+            },
+            "148100024": {
+                "Description": "3rd-Hit Daze Multiplier",
+                "Param": "{Skill:1481003, Prop:1002}"
+            },
+            "148100025": {
+                "Description": "4th-Hit Daze Multiplier",
+                "Param": "{Skill:1481004, Prop:1002}"
+            },
+            "148100026": {
+                "Title": "Basic Attack: Rock, Paper, Scissors"
+            },
+            "148100027": {
+                "Description": "1st-Hit DMG Multiplier",
+                "Param": "{Skill:1481005, Prop:1001}"
+            },
+            "148100028": {
+                "Description": "2nd-Hit DMG Multiplier",
+                "Param": "{Skill:1481006, Prop:1001}"
+            },
+            "148100029": {
+                "Description": "3rd-Hit DMG Multiplier",
+                "Param": "{Skill:1481007, Prop:1001}"
+            },
+            "148100030": {
+                "Description": "4th-Hit DMG Multiplier",
+                "Param": "{Skill:1481008, Prop:1001}"
+            },
+            "148100031": {
+                "Description": "1st-Hit Daze Multiplier",
+                "Param": "{Skill:1481005, Prop:1002}"
+            },
+            "148100032": {
+                "Description": "2nd-Hit Daze Multiplier",
+                "Param": "{Skill:1481006, Prop:1002}"
+            },
+            "148100033": {
+                "Description": "3rd-Hit Daze Multiplier",
+                "Param": "{Skill:1481007, Prop:1002}"
+            },
+            "148100034": {
+                "Description": "4th-Hit Daze Multiplier",
+                "Param": "{Skill:1481008, Prop:1002}"
+            }
+        },
+        "1": {
+            "148100003": {
+                "Title": "EX Special Attack: Get Lost!",
+                "Description": "With <color=#FFFFFF>Customer Complaint</color>, hold <IconMap:Icon_Normal> to activate:\nDelivers a forward martial salute attack. On activation, it consumes 1 <color=#FFFFFF>Customer Complaint</color> and deals <color=#F0D12B>Physical DMG</color>.\nAfter activation, the previous character's <color=#FFFFFF>Quick Assist</color> is triggered.\nCharacter is invulnerable while using this skill."
+            },
+            "148100004": {
+                "Title": "Special Attack: Welcome Gesture",
+                "Description": "Press <IconMap:Icon_Special> to activate:\nThrows dual rings to slash enemies, dealing <color=#F0D12B>Physical DMG</color>.\nAnti-Interrupt level is increased while using this skill."
+            },
+            "148100005": {
+                "Title": "EX Special Attack: Rock",
+                "Description": "With enough Energy, press <IconMap:Icon_SpecialReady> to activate:\nLaunches a fist attack, dealing <color=#F0D12B>Physical DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "148100006": {
+                "Title": "EX Special Attack: Scissors",
+                "Description": "With enough Energy, press <IconMap:Icon_SpecialReady> to activate:\nLaunches a scissors attack, dealing <color=#F0D12B>Physical DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "148100007": {
+                "Title": "EX Special Attack: Paper!",
+                "Description": "With enough Energy, press <IconMap:Icon_SpecialReady> to activate:\nLaunches a paper attack, dealing <color=#F0D12B>Physical DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "148100035": {
+                "Title": "EX Special Attack: Get Lost!"
+            },
+            "148100036": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1481009, Prop:1001}"
+            },
+            "148100037": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1481009, Prop:1002}"
+            },
+            "148100038": {
+                "Title": "Special Attack: Welcome Gesture"
+            },
+            "148100039": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1481010, Prop:1001}"
+            },
+            "148100040": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1481010, Prop:1002}"
+            },
+            "148100041": {
+                "Title": "EX Special Attack: Rock"
+            },
+            "148100042": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1481011, Prop:1001}"
+            },
+            "148100043": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1481011, Prop:1002}"
+            },
+            "148100044": {
+                "Description": "Energy Cost",
+                "Param": "25"
+            },
+            "148100045": {
+                "Title": "EX Special Attack: Scissors"
+            },
+            "148100046": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1481012, Prop:1001}"
+            },
+            "148100047": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1481012, Prop:1002}"
+            },
+            "148100048": {
+                "Description": "Energy Cost",
+                "Param": "25"
+            },
+            "148100049": {
+                "Title": "EX Special Attack: Paper!"
+            },
+            "148100050": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1481013, Prop:1001}"
+            },
+            "148100051": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1481013, Prop:1002}"
+            },
+            "148100052": {
+                "Description": "Energy Cost",
+                "Param": "25"
+            }
+        },
+        "2": {
+            "148100008": {
+                "Title": "Dodge: Line Busy",
+                "Description": "Press <IconMap:Icon_Evade> to activate:\nA quick dash dodge.\nCharacter is invulnerable while using this skill."
+            },
+            "148100009": {
+                "Title": "Dash Attack: Sudden Call",
+                "Description": "Press <IconMap:Icon_Normal> during a dodge to activate:\nLaunches a dashing attack at enemies in front, dealing <color=#F0D12B>Physical DMG</color>."
+            },
+            "148100010": {
+                "Title": "Dodge Counter: Number Unavailable",
+                "Description": "Press <IconMap:Icon_Normal> during a <color=#FFFFFF>Perfect Dodge</color> to activate:\nLaunches consecutive attacks against enemies in front, dealing <color=#F0D12B>Physical DMG</color>.\nAfter using this skill, can immediately follow up with the 4th hit of <color=#FFFFFF>Basic Attack: Happy to Be of Service</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "148100053": {
+                "Title": "Dash Attack: Sudden Call"
+            },
+            "148100054": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1481014, Prop:1001}"
+            },
+            "148100055": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1481014, Prop:1002}"
+            },
+            "148100056": {
+                "Title": "Dodge Counter: Number Unavailable"
+            },
+            "148100057": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1481015, Prop:1001}"
+            },
+            "148100058": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1481015, Prop:1002}"
+            }
+        },
+        "3": {
+            "148100011": {
+                "Title": "Chain Attack: Welcome Mat",
+                "Description": "When a <color=#FFFFFF>Chain Attack</color> is triggered, select the character to activate:\nLaunches consecutive kicks against enemies in front, dealing massive <color=#F0D12B>Physical DMG</color>.\nAfter using this skill, can immediately follow up with the 4th hit of <color=#FFFFFF>Basic Attack: Happy to Be of Service</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "148100012": {
+                "Title": "Ultimate: Service Stopped for Number Dialed",
+                "Description": "When Decibel Rating is at <color=#FFFFFF>Maximum</color>, press <IconMap:Icon_UltimateReady> to activate:\nRushes forward and performs a finger flick attack, dealing massive <color=#F0D12B>Physical DMG</color>.\nAfter using this skill, can immediately follow up with the 4th hit of <color=#FFFFFF>Basic Attack: Happy to Be of Service</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "148100059": {
+                "Title": "Chain Attack: Welcome Mat"
+            },
+            "148100060": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1481016, Prop:1001}"
+            },
+            "148100061": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1481016, Prop:1002}"
+            },
+            "148100062": {
+                "Title": "Ultimate: Service Stopped for Number Dialed"
+            },
+            "148100063": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1481017, Prop:1001}"
+            },
+            "148100064": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1481017, Prop:1002}"
+            }
+        },
+        "6": {
+            "148100014": {
+                "Title": "Quick Assist: Forward Call",
+                "Description": "When the active character is launched, press <IconMap:Icon_Switch> to activate:\nLaunches consecutive attacks against enemies in front, dealing <color=#F0D12B>Physical DMG</color>.\nAfter using this skill, can immediately follow up with the 4th hit of <color=#FFFFFF>Basic Attack: Happy to Be of Service</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "148100015": {
+                "Title": "Defensive Assist: Decline Call",
+                "Description": "When the on-field character is about to be attacked, press <IconMap:Icon_Switch> to activate:\nParries the enemy's attack, dealing massive Daze.\nThis skill excels at parrying enemy attacks and reduces the consumption of <color=#FFFFFF>Assist Points</color> when the character is under intense attacks.\nCharacter is invulnerable while using this skill."
+            },
+            "148100016": {
+                "Title": "Assist Follow-Up: Back-to-Back Calls",
+                "Description": "Press <IconMap:Icon_Normal> after a <color=#FFFFFF>Defensive Assist</color> to activate:\nPerforms a rapid dash followed by a slash attack, dealing <color=#F0D12B>Physical DMG</color>.\nAfter using this skill, can immediately follow up with the 4th hit of <color=#FFFFFF>Basic Attack: Happy to Be of Service</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "148100065": {
+                "Title": "Quick Assist: Forward Call"
+            },
+            "148100066": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1481018, Prop:1001}"
+            },
+            "148100067": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1481018, Prop:1002}"
+            },
+            "148100068": {
+                "Title": "Defensive Assist: Decline Call"
+            },
+            "148100069": {
+                "Description": "Light Defensive Daze Multiplier",
+                "Param": "{Skill:1481019, Prop:1002}"
+            },
+            "148100070": {
+                "Description": "Heavy Defensive Daze Multiplier",
+                "Param": "{Skill:1481020, Prop:1002}"
+            },
+            "148100071": {
+                "Description": "Chain Defensive Daze Multiplier",
+                "Param": "{Skill:1481021, Prop:1002}"
+            },
+            "148100072": {
+                "Title": "Assist Follow-Up: Back-to-Back Calls"
+            },
+            "148100073": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1481022, Prop:1001}"
+            },
+            "148100074": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1481022, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1481001": {
+            "DamageValue": 2560,
+            "DamageGrowth": 240,
+            "DazeValue": 1940,
+            "DazeGrowth": 90
+        },
+        "1481002": {
+            "DamageValue": 5130,
+            "DamageGrowth": 470,
+            "DazeValue": 4350,
+            "DazeGrowth": 200
+        },
+        "1481003": {
+            "DamageValue": 6480,
+            "DamageGrowth": 590,
+            "DazeValue": 6160,
+            "DazeGrowth": 280
+        },
+        "1481004": {
+            "DamageValue": 9950,
+            "DamageGrowth": 910,
+            "DazeValue": 9950,
+            "DazeGrowth": 460
+        },
+        "1481005": {
+            "DamageValue": 8950,
+            "DamageGrowth": 820,
+            "DazeValue": 7140,
+            "DazeGrowth": 330
+        },
+        "1481006": {
+            "DamageValue": 11390,
+            "DamageGrowth": 1040,
+            "DazeValue": 9080,
+            "DazeGrowth": 420
+        },
+        "1481007": {
+            "DamageValue": 10310,
+            "DamageGrowth": 940,
+            "DazeValue": 8220,
+            "DazeGrowth": 380
+        },
+        "1481008": {
+            "DamageValue": 10030,
+            "DamageGrowth": 920,
+            "DazeValue": 8000,
+            "DazeGrowth": 370
+        },
+        "1481009": {
+            "DamageValue": 54970,
+            "DamageGrowth": 5000,
+            "DazeValue": 33650,
+            "DazeGrowth": 1530
+        },
+        "1481010": {
+            "DamageValue": 5420,
+            "DamageGrowth": 500,
+            "DazeValue": 5420,
+            "DazeGrowth": 250
+        },
+        "1481011": {
+            "DamageValue": 40400,
+            "DamageGrowth": 3680,
+            "DazeValue": 23600,
+            "DazeGrowth": 1080
+        },
+        "1481012": {
+            "DamageValue": 52490,
+            "DamageGrowth": 4780,
+            "DazeValue": 31020,
+            "DazeGrowth": 1410
+        },
+        "1481013": {
+            "DamageValue": 70170,
+            "DamageGrowth": 6380,
+            "DazeValue": 42690,
+            "DazeGrowth": 1950
+        },
+        "1481014": {
+            "DamageValue": 6050,
+            "DamageGrowth": 550,
+            "DazeValue": 3030,
+            "DazeGrowth": 140
+        },
+        "1481015": {
+            "DamageValue": 26730,
+            "DamageGrowth": 2430,
+            "DazeValue": 23100,
+            "DazeGrowth": 1050
+        },
+        "1481016": {
+            "DamageValue": 62040,
+            "DamageGrowth": 5640,
+            "DazeValue": 18150,
+            "DazeGrowth": 830
+        },
+        "1481017": {
+            "DamageValue": 162250,
+            "DamageGrowth": 14750,
+            "DazeValue": 76780,
+            "DazeGrowth": 3490
+        },
+        "1481018": {
+            "DamageValue": 12100,
+            "DamageGrowth": 1100,
+            "DazeValue": 6050,
+            "DazeGrowth": 280
+        },
+        "1481019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1481020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1481021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1481022": {
+            "DamageValue": 37640,
+            "DamageGrowth": 3430,
+            "DazeValue": 32770,
+            "DazeGrowth": 1490
+        }
+    }
+}
