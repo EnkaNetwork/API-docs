@@ -1,6 +1,6 @@
 # Enka.Network API - Genshin Impact
 
-## Table of Content
+## Table of Contents
 
 - [Data Structure Info](#data-structure)
 - [Definitions](#definitions)
@@ -13,11 +13,11 @@
 | Name | Description |
 | :--- | :---------- |
 | [playerInfo](#playerinfo) | Profile Info |
-| [avatarInfoList](#avatarinfolist) | List of detailed information for every character from showcase |
+| [avatarInfoList](#avatarinfolist) | List of detailed information for each character in the showcase |
 
 ### playerInfo
 
-For basic data of characters by ID, go to [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json).  <br />
+For basic character data by ID, go to [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json).  <br />
 For any additional info, check the [Characters Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarExcelConfigData.json).
 
 | Name | Description |
@@ -49,20 +49,20 @@ For any additional info, check the [Characters Data](https://gitlab.com/Dimbreat
 | Name | Description                                                                                                                                                                               |
 | :--- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | avatarID | Character ID                                                                                                                                                                              |
-| talentIdList | List of Constellation IDs <br /> There is no data if 0 Constellation                                                                                                                      |
+| talentIdList | List of Constellation IDs <br /> *There is no data if the character has 0 Constellations                                                                                                      |
 | [propMap](#propmap) | Character Info Properties List                                                                                                                                                            |
-| fightPropMap -> `{id: value}` | Map of Character's Combat Properties. <br />Check the [Definitions for IDs](#fightprop)                                                                                                   |
+| fightPropMap -> `{id: value}` | Map of Character's Combat Properties. <br />Check the [Definitions for IDs].(#fightprop)                                                                                                   |
 | skillDepotId | Character Skill Set ID <br />[Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) ->     `"id"`                      |
 | inherentProudSkillList | List of Unlocked Skill Ids <br />[Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"` | 
 | skillLevelMap -> `{skill_id: level}`| Map of Skill Levels <br /> [Skills Data](https://gitlab.com/Dimbreath/AnimeGameData/-/blob/master/ExcelBinOutput/AvatarSkillDepotExcelConfigData.json) -> `"inherentProudSkillOpens"`     |
-| [equipList](#equiplist) | List of Equipments: Weapon, Ariftacts                                                                                                                                                     |
+| [equipList](#equiplist) | List of Equipment: Weapons, Artifacts                                                                                                                                                     |
 | fetterInfo.expLevel  | Character Friendship Level                                                                                                                                                                |
 
 #### propMap
 
 | Name | Description |
 | :--- | :--------- |
-| type | ID of Property Type, Check the [Definitions for IDs](#prop) |
+| type | ID of Property Type, Check the [Definitions for IDs]. (#prop) |
 | ival | Ignore it |
 | val  | Value of Property |
 
@@ -270,9 +270,9 @@ Go to [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/maste
 ## Localizations
 
 You may notice `"NameTextMapHash"` in [store/characters.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/characters.json), `"nameTextHashMap"` and `"setNameTextHashMap"` at [flat](#flat) that could be used as a key to get basic localization data of characters, weapons and artifacts from [store/loc.json](https://github.com/EnkaNetwork/API-docs/blob/master/store/loc.json).  
-Also you can get localization data of [AppendProp](#appendprop) by using property name as a key - `"FIGHT_PROP_HP"`, `"FIGHT_PROP_HEAL_ADD"` etc.
+Also, you can get localization data for [AppendProp](#appendprop) by using property name as a key, e.g., `"FIGHT_PROP_HP"`, `"FIGHT_PROP_HEAL_ADD"`, etc.
 
-For any additional info about names, descriptions and etc, check the [TextMap Data](https://gitlab.com/Dimbreath/AnimeGameData/-/tree/master/TextMap), only includes languages supported by game.
+For any additional info about names, descriptions, etc., check the [TextMap Data](https://gitlab.com/Dimbreath/AnimeGameData/-/tree/master/TextMap) which only includes languages supported by the game.
 
 ## Wrappers
 
