@@ -1,0 +1,442 @@
+{
+    "Name": "그레이스",
+    "ElementTypes": [
+        "Elec"
+    ],
+    "Specialty": {
+        "Id": 3,
+        "Name": "이상"
+    },
+    "Talents": {
+        "1": {
+            "Title": "약실 재충전",
+            "Description": "네 번째 <color=#FFFFFF>[일반 공격]</color>이 적에게 명중할 때마다 파티 내 모든 캐릭터가 에너지를 0.25pt 회복한다.\n동일한 공격 한 번에 해당 효과로 모든 파티원이 에너지를 최대 2pt 회복한다.",
+            "Lore": "효율성은 엔지니어링에서 생명과 같다.\n그레이스의 약실에는 엔지니어링의 심장 박동이 울려 퍼진다."
+        },
+        "2": {
+            "Title": "절연 파괴",
+            "Description": "<color=#FFFFFF>[일반 공격]</color>, <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[강화 특수 스킬]</color> 등 스킬 중에 투척한 수류탄이 적에게 명중 시 타깃의 <color=#2EB6FF>전기 속성 피해 저항</color>이 8.5% 감소하고 <color=#2EB6FF>전기 속성 이상 축적 저항</color>이 8.5% 감소한다. 지속 시간: 8초",
+            "Lore": "복잡한 기계 구조를 「해부」하는 것은 그레이스가 가장 좋아하는 일이다. 심지어는 전투 중에도 말이다.\n해부당하는 입장에선 어떻게 느껴질까? 녀석의 모든 크고 작은 부품이 적나라하게 노출되는 느낌 말이다."
+        },
+        "3": {
+            "Title": "수석 엔지니어",
+            "Description": "<color=#FFFFFF>[일반 공격]</color>, <color=#FFFFFF>[회피]</color>, <color=#FFFFFF>[지원 스킬]</color>, <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[콤보 스킬]</color>의 스킬 레벨+2",
+            "Lore": "그레이스는 〈벨로보그 중공업 안전 시공 지침〉을 직접 작성했으며 「공사장 내 위험 폭발물 반입금지」 규정을 가장 많이 위반한 직원이 됐다."
+        },
+        "4": {
+            "Title": "폭파 축전기",
+            "Description": "<color=#FFFFFF>[강화 특수 스킬]</color> 시전 시 그레이스가 충전을 6스택 획득한다. (최대치: 6스택) <color=#FFFFFF>[일반 공격: 고압 네일 슈팅]</color> 혹은 <color=#FFFFFF>[대시 공격: 돌격 점검]</color>이 적에게 명중 시 충전을 1스택 소모하고 현재 스킬의 에너지 획득 효율이 20% 증가한다.",
+            "Lore": "앤톤은 그레이스가 「전자 펄스 회수 모듈」이라고 부르는 부품 안에 사실 밤낮을 가리지 않고 전기를 생성해 내는 에테르 햄스터가 있는 것이 아닌지 의심하고 있다.\n「내 친구에게도 하나 달아줄 수 있어?」"
+        },
+        "5": {
+            "Title": "「냉정한 철의 마녀」",
+            "Description": "<color=#FFFFFF>[일반 공격]</color>, <color=#FFFFFF>[회피]</color>, <color=#FFFFFF>[지원 스킬]</color>, <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[콤보 스킬]</color>의 스킬 레벨+2",
+            "Lore": "「냉정한 철의 마녀」는 어떠한 기계도 길들일 수 있다.\n적어도 그 이름을 지은 익명의 팬은 그렇게 생각한다."
+        },
+        "6": {
+            "Title": "기폭 방아쇠",
+            "Description": "모든 <color=#FFFFFF>[전력]</color>을 소모해 <color=#FFFFFF>[특수 스킬]</color> 혹은 <color=#FFFFFF>[강화 특수 스킬]</color>을 시전할 시 스킬 효과를 강화하고 수류탄을 1개 더 던진다. 또한, 각각의 수류탄이 주는 피해가 기존의 200%까지 증가한다.",
+            "Lore": "벨로보그 중공업 직원들의 평균 혈액 온도는 섭씨 98도이다.\n그레이스는 언제나 그들이 들끓기 전 열기를 식혀주는 밸브 역할을 맡았다.\n그레이스가 억제하는 걸 포기하는 순간, 모두 귀를 막을 때가 왔다는 걸 알고 있다."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "핵심 패시브: 프리 드라이버 격침",
+            "DescriptionByLevel": {
+                "1": "그레이스의 <color=#FFFFFF>[일반 공격]</color> 혹은 <color=#FFFFFF>[대시 공격]</color>이 적에게 명중하여 <color=#F0D12B>물리 피해</color>를 줄 시 <color=#FFFFFF>[전력]</color>을 1스택 획득한다. (최대치: 8스택)\n<color=#FFFFFF>[전력]</color> 스택이 최대치에 도달한 후 <color=#FFFFFF>[특수 스킬]</color> 혹은 <color=#FFFFFF>[강화 특수 스킬]</color>을 시전하면 모든 <color=#FFFFFF>[전력]</color>을 소모하고, 스킬로 누적하는 <color=#2EB6FF>전기 속성 이상 축적치</color>가 <color=#2BAD00>65%</color> 증가한다.",
+                "2": "그레이스의 <color=#FFFFFF>[일반 공격]</color> 혹은 <color=#FFFFFF>[대시 공격]</color>이 적에게 명중하여 <color=#F0D12B>물리 피해</color>를 줄 시 <color=#FFFFFF>[전력]</color>을 1스택 획득한다. (최대치: 8스택)\n<color=#FFFFFF>[전력]</color> 스택이 최대치에 도달한 후 <color=#FFFFFF>[특수 스킬]</color> 혹은 <color=#FFFFFF>[강화 특수 스킬]</color>을 시전하면 모든 <color=#FFFFFF>[전력]</color>을 소모하고, 스킬로 누적하는 <color=#2EB6FF>전기 속성 이상 축적치</color>가 <color=#2BAD00>75.8%</color> 증가한다.",
+                "3": "그레이스의 <color=#FFFFFF>[일반 공격]</color> 혹은 <color=#FFFFFF>[대시 공격]</color>이 적에게 명중하여 <color=#F0D12B>물리 피해</color>를 줄 시 <color=#FFFFFF>[전력]</color>을 1스택 획득한다. (최대치: 8스택)\n<color=#FFFFFF>[전력]</color> 스택이 최대치에 도달한 후 <color=#FFFFFF>[특수 스킬]</color> 혹은 <color=#FFFFFF>[강화 특수 스킬]</color>을 시전하면 모든 <color=#FFFFFF>[전력]</color>을 소모하고, 스킬로 누적하는 <color=#2EB6FF>전기 속성 이상 축적치</color>가 <color=#2BAD00>86.6%</color> 증가한다.",
+                "4": "그레이스의 <color=#FFFFFF>[일반 공격]</color> 혹은 <color=#FFFFFF>[대시 공격]</color>이 적에게 명중하여 <color=#F0D12B>물리 피해</color>를 줄 시 <color=#FFFFFF>[전력]</color>을 1스택 획득한다. (최대치: 8스택)\n<color=#FFFFFF>[전력]</color> 스택이 최대치에 도달한 후 <color=#FFFFFF>[특수 스킬]</color> 혹은 <color=#FFFFFF>[강화 특수 스킬]</color>을 시전하면 모든 <color=#FFFFFF>[전력]</color>을 소모하고, 스킬로 누적하는 <color=#2EB6FF>전기 속성 이상 축적치</color>가 <color=#2BAD00>97.5%</color> 증가한다.",
+                "5": "그레이스의 <color=#FFFFFF>[일반 공격]</color> 혹은 <color=#FFFFFF>[대시 공격]</color>이 적에게 명중하여 <color=#F0D12B>물리 피해</color>를 줄 시 <color=#FFFFFF>[전력]</color>을 1스택 획득한다. (최대치: 8스택)\n<color=#FFFFFF>[전력]</color> 스택이 최대치에 도달한 후 <color=#FFFFFF>[특수 스킬]</color> 혹은 <color=#FFFFFF>[강화 특수 스킬]</color>을 시전하면 모든 <color=#FFFFFF>[전력]</color>을 소모하고, 스킬로 누적하는 <color=#2EB6FF>전기 속성 이상 축적치</color>가 <color=#2BAD00>108.3%</color> 증가한다.",
+                "6": "그레이스의 <color=#FFFFFF>[일반 공격]</color> 혹은 <color=#FFFFFF>[대시 공격]</color>이 적에게 명중하여 <color=#F0D12B>물리 피해</color>를 줄 시 <color=#FFFFFF>[전력]</color>을 1스택 획득한다. (최대치: 8스택)\n<color=#FFFFFF>[전력]</color> 스택이 최대치에 도달한 후 <color=#FFFFFF>[특수 스킬]</color> 혹은 <color=#FFFFFF>[강화 특수 스킬]</color>을 시전하면 모든 <color=#FFFFFF>[전력]</color>을 소모하고, 스킬로 누적하는 <color=#2EB6FF>전기 속성 이상 축적치</color>가 <color=#2BAD00>119.1%</color> 증가한다.",
+                "7": "그레이스의 <color=#FFFFFF>[일반 공격]</color> 혹은 <color=#FFFFFF>[대시 공격]</color>이 적에게 명중하여 <color=#F0D12B>물리 피해</color>를 줄 시 <color=#FFFFFF>[전력]</color>을 1스택 획득한다. (최대치: 8스택)\n<color=#FFFFFF>[전력]</color> 스택이 최대치에 도달한 후 <color=#FFFFFF>[특수 스킬]</color> 혹은 <color=#FFFFFF>[강화 특수 스킬]</color>을 시전하면 모든 <color=#FFFFFF>[전력]</color>을 소모하고, 스킬로 누적하는 <color=#2EB6FF>전기 속성 이상 축적치</color>가 <color=#2BAD00>130%</color> 증가한다."
+            }
+        },
+        "MathSkill": {
+            "Title": "추가 능력: 기술 지원 부서",
+            "Description": "파티에 자신과 속성 혹은 진영이 같은 캐릭터나 다른 <color=#FFFFFF>[이상]</color> 캐릭터가 존재할 시 발동:\n그레이스의 <color=#FFFFFF>[강화 특수 스킬]</color>이 적에게 명중하고, 타깃에게 다음번에 <color=#2EB6FF>[감전]</color> 효과가 부여될 시, 해당 <color=#2EB6FF>[감전]</color> 피해가 18% 증가한다. 최대 중첩: 2스택, 동일한 공격 한 번에 적 1기당 최대 1회 발동한다. <color=#2EB6FF>[감전]</color> 상태가 종료되면 효과가 초기화된다."
+        },
+        "BaseProps": [
+            {
+                "31401": 0,
+                "12101": 0
+            },
+            {
+                "31401": 12,
+                "12101": 0
+            },
+            {
+                "31401": 12,
+                "12101": 25
+            },
+            {
+                "31401": 24,
+                "12101": 25
+            },
+            {
+                "31401": 24,
+                "12101": 50
+            },
+            {
+                "31401": 36,
+                "12101": 50
+            },
+            {
+                "31401": 36,
+                "12101": 75
+            }
+        ]
+    },
+    "SkillDescriptions": {
+        "0": {
+            "118100002": {
+                "Title": "일반 공격: 고압 네일 슈팅",
+                "Description": "<IconMap:Icon_Normal>을 짧게 탭하여 시전:\n전방을 향해 최대 4단까지 공격을 펼쳐 <color=#F0D12B>물리 피해</color> 및 <color=#2EB6FF>전기 속성 피해</color>를 준다.\n<color=#FFFFFF>[일반 공격]</color> 중에 측면으로 {LAYOUT_CONSOLECONTROLLER#스틱을}{LAYOUT_FALLBACK#방향키를} 움직이면 스텝 사격으로 위치를 조정하고 <color=#F0D12B>물리 피해</color>를 주며, <color=#FFFFFF>[일반 공격]</color>첫 번째/두 번째 후에 시전 시, <IconMap:Icon_Normal>을 계속 누르면 <color=#FFFFFF>[일반 공격]</color> 세 번째/네 번째부터 연격을 계속한다.\n그레이스가 <color=#FFFFFF>[일반 공격]</color> 중에 <color=#FFFFFF>[특수 스킬]</color>, <color=#FFFFFF>[강화 특수 스킬]</color>, <color=#FFFFFF>[회피]</color>, <color=#FFFFFF>[대시 공격]</color>, <color=#FFFFFF>[회피 반격]</color> 시전 시 <color=#FFFFFF>[일반 공격]</color>의 연격 횟수가 끊기지 않는다."
+            },
+            "118101001": {
+                "Title": "일반 공격: 고압 네일 슈팅"
+            },
+            "118101002": {
+                "Description": "1단 피해 배율",
+                "Param": "{Skill:1181001, Prop:1001}"
+            },
+            "118101003": {
+                "Description": "2단 피해 배율",
+                "Param": "{Skill:1181002, Prop:1001}"
+            },
+            "118101004": {
+                "Description": "3단 피해 배율",
+                "Param": "{Skill:1181003, Prop:1001}"
+            },
+            "118101005": {
+                "Description": "4단 피해 배율",
+                "Param": "{Skill:1181004, Prop:1001}"
+            },
+            "118101006": {
+                "Description": "스텝 사격 피해 배율",
+                "Param": "{Skill:1181015, Prop:1001}"
+            },
+            "118101007": {
+                "Description": "1단 그로기 배율",
+                "Param": "{Skill:1181001, Prop:1002}"
+            },
+            "118101008": {
+                "Description": "2단 그로기 배율",
+                "Param": "{Skill:1181002, Prop:1002}"
+            },
+            "118101009": {
+                "Description": "3단 그로기 배율",
+                "Param": "{Skill:1181003, Prop:1002}"
+            },
+            "118101010": {
+                "Description": "4단 그로기 배율",
+                "Param": "{Skill:1181004, Prop:1002}"
+            },
+            "118101011": {
+                "Description": "스텝 사격 그로기 배율",
+                "Param": "{Skill:1181015, Prop:1002}"
+            }
+        },
+        "1": {
+            "118100004": {
+                "Title": "특수 스킬: 공사 장애물 제거",
+                "Description": "<IconMap:Icon_Special>을 짧게 탭하여 시전:\n전방에 수류탄 1개를 던져 <color=#2EB6FF>전기 속성 피해</color>를 준다.\n스킬 시전 시 {LAYOUT_CONSOLECONTROLLER#스틱을}{LAYOUT_FALLBACK#방향키를} 움직여 상응하는 방향으로 위치를 조정할 수 있다.\n<color=#FFFFFF>[전력]</color>을 소모하여 시전하면 적의 공격을 회피할 수 있다.\n스킬을 시전하는 동안 경직 저항 레벨이 증가한다."
+            },
+            "118100006": {
+                "Title": "강화 특수 스킬: 규격 외 공사 장애물 제거",
+                "Description": "에너지가 충분한 상태에서 <IconMap:Icon_SpecialReady>을 짧게 탭하여 시전:\n공중으로 뛰어올라 전방에 수류탄 2개를 던져 대량의 <color=#2EB6FF>전기 속성 피해</color>를 준다.\n스킬 시전 시 {LAYOUT_CONSOLECONTROLLER#스틱을}{LAYOUT_FALLBACK#방향키를} 움직여 상응하는 방향으로 위치를 조정할 수 있다.\n<color=#FFFFFF>[전력]</color> 스택이 최대치에 도달하면 추가로 [와류 집속 수류탄] 1개를 던져, 폭발 위치에 자기장을 생성하고 지속적으로 적을 끌어당기며 <color=#2EB6FF>전기 속성 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "118100007": {
+                "Title": "[펄스]",
+                "Description": "[궁극기] 시전 시 <color=#FFFFFF>[펄스]</color> 25스택을 획득하며(최대치: 25스택), <color=#FFFFFF>[전력]</color> 획득 시 <color=#FFFFFF>[펄스]</color> 1스택을 소모한다.\n<color=#FFFFFF>[펄스]</color>를 소모하여 <color=#FFFFFF>[전력]</color>을 8스택 획득하면 다음번 수류탄 투척 시 펄스 수류탄 1개를 추가로 던지며, 만약 <color=#FE437E>에테르 이상 상태</color>, <color=#2EB6FF>전기 속성 이상 상태</color>, <color=#FF5521>불 속성 이상 상태</color>, <color=#F0D12B>물리 속성 이상 상태</color>, <color=#98EFF0>얼음 속성 이상 상태</color>의 타깃에 명중 시 <color=#FFFFFF>[난개]</color>를 1회 발동하여 기존 속성 이상의 <color=#FE437E>560%</color>/<color=#2EB6FF>280%</color>/<color=#FF5521>700%</color>/<color=#F0D12B>50%</color>/<color=#98EFF0>70%</color>만큼 피해를 추가로 1회 더 결산한다.\n[펄스] 상태에서 <color=#FFFFFF>[특수 스킬: 공사 장애물 제거·순환]</color>이 해제된다."
+            },
+            "118100008": {
+                "Title": "특수 스킬: 공사 장애물 제거·순환",
+                "Description": "[펄스] 상태에서 <IconMap:Icon_Special>을 홀드해 시전:\n스킬 시전 중 전방에 지속적으로 수류탄을 던져 <color=#2EB6FF>전기 속성 피해</color>를 주며, 수류탄을 던질 때마다 <color=#FFFFFF>[전력]</color>을 1스택 획득한다.\n스킬 시전 시 {LAYOUT_CONSOLECONTROLLER#스틱을}{LAYOUT_FALLBACK#방향키를} 움직여 상응하는 방향으로 위치를 조정할 수 있으며, 적의 공격을 회피할 수 있다.\n스킬을 시전하는 동안 경직 저항 레벨이 증가한다."
+            },
+            "118101012": {
+                "Title": "특수 스킬: 공사 장애물 제거"
+            },
+            "118101013": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1181005, Prop:1001}"
+            },
+            "118101014": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1181005, Prop:1002}"
+            },
+            "118101015": {
+                "Title": "강화 특수 스킬: 규격 외 공사 장애물 제거"
+            },
+            "118101016": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1181006, Prop:1001}*2"
+            },
+            "118101017": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1181006, Prop:1002}*2"
+            },
+            "118101018": {
+                "Description": "에너지 소모",
+                "Param": "40pt"
+            },
+            "118101019": {
+                "Title": "와류 집속 수류탄 기본 배율"
+            },
+            "118101020": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1181020, Prop:1001}"
+            },
+            "118101021": {
+                "Title": "특수 스킬: 공사 장애물 제거·순환"
+            },
+            "118101022": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1181018, Prop:1001}/29"
+            },
+            "118101023": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1181018, Prop:1002}/29"
+            },
+            "118101024": {
+                "Title": "펄스 수류탄 배율"
+            },
+            "118101025": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1181019, Prop:1001}"
+            }
+        },
+        "2": {
+            "118100009": {
+                "Title": "회피: 안전 조항",
+                "Description": "<IconMap:Icon_Evade>을 짧게 탭하여 시전:\n빠른 대시로 회피한다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "118100010": {
+                "Title": "대시 공격: 돌격 점검",
+                "Description": "회피 시 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n전방으로 슬라이딩하며 난사해 <color=#F0D12B>물리 피해</color>를 준다."
+            },
+            "118100012": {
+                "Title": "회피 반격: 규정 위반 처벌",
+                "Description": "<color=#FFFFFF>[극한 회피]</color> 발동 후 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n적에게 수류탄 1개를 투척해 <color=#2EB6FF>전기 속성 피해</color>를 준 후, 자동으로 <color=#FFFFFF>[일반 공격]</color> 네 번째를 시전한다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "118101026": {
+                "Title": "대시 공격: 돌격 점검"
+            },
+            "118101027": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1181007, Prop:1001}"
+            },
+            "118101028": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1181007, Prop:1002}"
+            },
+            "118101029": {
+                "Title": "회피 반격: 규정 위반 처벌"
+            },
+            "118101030": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1181008, Prop:1001}"
+            },
+            "118101031": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1181008, Prop:1002}"
+            }
+        },
+        "3": {
+            "118100013": {
+                "Title": "콤보 스킬: 건설 합작",
+                "Description": "<color=#FFFFFF>[콤보 스킬]</color> 발동 시 해당 캐릭터를 선택해 시전:\n공중으로 수류탄 3개를 투척한 후 총을 난사해 기폭시켜 대량의 <color=#2EB6FF>전기 속성 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "118100015": {
+                "Title": "궁극기: 폭파 작업 중 접근 금지",
+                "Description": "데시벨 레벨 <color=#FFFFFF>[Maximum]</color> 달성 시 <IconMap:Icon_UltimateReady>을 짧게 탭하여 시전:\n공중에서 폭발한 후 4개의 작은 수류탄으로 분열되는 특제 수류탄 1개를 투척해 대량의 <color=#2EB6FF>전기 속성 피해</color>를 준다.\n<color=#FFFFFF>[전력]</color>을 8스택 획득하고 <color=#FFFFFF>[펄스]</color>를 25스택 획득한다. (최대치: 25스택)\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "118101032": {
+                "Title": "콤보 스킬: 건설 합작"
+            },
+            "118101033": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1181009, Prop:1001}"
+            },
+            "118101034": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1181009, Prop:1002}"
+            },
+            "118101035": {
+                "Title": "궁극기: 폭파 작업 중 접근 금지"
+            },
+            "118101036": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1181010, Prop:1001}"
+            },
+            "118101037": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1181010, Prop:1002}"
+            }
+        },
+        "6": {
+            "118100018": {
+                "Title": "빠른 지원: 사고 해결 방법",
+                "Description": "현재 조작 중인 캐릭터가 넉업되면 <IconMap:Icon_Switch>을 짧게 탭하여 시전:\n적에게 수류탄 1개를 투척해 <color=#2EB6FF>전기 속성 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "118100019": {
+                "Title": "회피 지원: 빠른 리스크 대응",
+                "Description": "출전 캐릭터 피격 직전에 <IconMap:Icon_Switch>을 짧게 탭하여 시전:\n적의 공격을 회피하고 <color=#FFFFFF>[극한 시야]</color>를 발동한다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "118100020": {
+                "Title": "지원 돌격: 전기침 반격",
+                "Description": "<color=#FFFFFF>[회피 지원]</color> 시전 후 <IconMap:Icon_Normal>을 짧게 탭하여 시전:\n전방의 적에게 회전 난사를 시전하고 수류탄을 투척해 <color=#2EB6FF>전기 속성 피해</color>를 준다.\n스킬을 시전하는 동안 무적 효과를 보유한다."
+            },
+            "118101038": {
+                "Title": "빠른 지원: 사고 해결 방법"
+            },
+            "118101039": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1181011, Prop:1001}"
+            },
+            "118101040": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1181011, Prop:1002}"
+            },
+            "118101041": {
+                "Title": "지원 돌격: 전기침 반격"
+            },
+            "118101042": {
+                "Description": "피해 배율",
+                "Param": "{Skill:1181012, Prop:1001}"
+            },
+            "118101043": {
+                "Description": "그로기 배율",
+                "Param": "{Skill:1181012, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1181001": {
+            "DamageValue": 5510,
+            "DamageGrowth": 510,
+            "DazeValue": 1800,
+            "DazeGrowth": 90
+        },
+        "1181002": {
+            "DamageValue": 5970,
+            "DamageGrowth": 550,
+            "DazeValue": 3470,
+            "DazeGrowth": 160
+        },
+        "1181003": {
+            "DamageValue": 12480,
+            "DamageGrowth": 1140,
+            "DazeValue": 7160,
+            "DazeGrowth": 330
+        },
+        "1181004": {
+            "DamageValue": 18630,
+            "DamageGrowth": 1700,
+            "DazeValue": 10720,
+            "DazeGrowth": 490
+        },
+        "1181005": {
+            "DamageValue": 4210,
+            "DamageGrowth": 390,
+            "DazeValue": 4210,
+            "DazeGrowth": 200
+        },
+        "1181006": {
+            "DamageValue": 16690,
+            "DamageGrowth": 1520,
+            "DazeValue": 13420,
+            "DazeGrowth": 610
+        },
+        "1181007": {
+            "DamageValue": 3330,
+            "DamageGrowth": 310,
+            "DazeValue": 1670,
+            "DazeGrowth": 80
+        },
+        "1181008": {
+            "DamageValue": 16420,
+            "DamageGrowth": 1500,
+            "DazeValue": 15050,
+            "DazeGrowth": 690
+        },
+        "1181009": {
+            "DamageValue": 57130,
+            "DamageGrowth": 5200,
+            "DazeValue": 15230,
+            "DazeGrowth": 700
+        },
+        "1181010": {
+            "DamageValue": 147880,
+            "DamageGrowth": 13450,
+            "DazeValue": 13310,
+            "DazeGrowth": 610
+        },
+        "1181011": {
+            "DamageValue": 4550,
+            "DamageGrowth": 420,
+            "DazeValue": 4550,
+            "DazeGrowth": 210
+        },
+        "1181012": {
+            "DamageValue": 35930,
+            "DamageGrowth": 3270,
+            "DazeValue": 31280,
+            "DazeGrowth": 1430
+        },
+        "1181013": {
+            "DamageValue": 8420,
+            "DamageGrowth": 780,
+            "DazeValue": 4210,
+            "DazeGrowth": 200
+        },
+        "1181014": {
+            "DamageValue": 33380,
+            "DamageGrowth": 3040,
+            "DazeValue": 13420,
+            "DazeGrowth": 610
+        },
+        "1181015": {
+            "DamageValue": 4030,
+            "DamageGrowth": 370,
+            "DazeValue": 4030,
+            "DazeGrowth": 190
+        },
+        "1181016": {
+            "DamageValue": 4210,
+            "DamageGrowth": 390,
+            "DazeValue": 4210,
+            "DazeGrowth": 200
+        },
+        "1181017": {
+            "DamageValue": 16690,
+            "DamageGrowth": 1520,
+            "DazeValue": 13420,
+            "DazeGrowth": 610
+        },
+        "1181018": {
+            "DamageValue": 56340,
+            "DamageGrowth": 5130,
+            "DazeValue": 51280,
+            "DazeGrowth": 2340
+        },
+        "1181019": {
+            "DamageValue": 4200,
+            "DamageGrowth": 390,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1181020": {
+            "DamageValue": 8750,
+            "DamageGrowth": 800,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1181021": {
+            "DamageValue": 112670,
+            "DamageGrowth": 10250,
+            "DazeValue": 51280,
+            "DazeGrowth": 2340
+        }
+    }
+}

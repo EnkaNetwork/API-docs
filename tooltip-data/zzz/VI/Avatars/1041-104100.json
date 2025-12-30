@@ -1,0 +1,541 @@
+{
+    "Name": "Chiến Binh 11",
+    "ElementTypes": [
+        "Fire"
+    ],
+    "Specialty": {
+        "Id": 1,
+        "Name": "Tiên Phong"
+    },
+    "Talents": {
+        "1": {
+            "Title": "Tăng Nhiệt Nhanh",
+            "Description": "Khi trở thành nhân vật đang thao tác trong trạng thái tiếp chiến, nếu Năng Lượng của Chiến Binh 11 không đủ 40 điểm, sẽ hồi ngay đến 80 điểm, trong 50s tối đa kích hoạt một lần.",
+            "Lore": "Huấn luyện thực chiến cường độ cao trong thời gian dài giúp Chiến Binh 11 nắm được việc điều hòa trạng thái của bản thân.\nCô ấy sẽ dốc hết sức, bảo đảm mình giữ được trạng thái tốt nhất để ứng phó với mỗi trận đấu."
+        },
+        "2": {
+            "Title": "Hội Tụ Thiêu Đốt",
+            "Description": "Khi kích hoạt <color=#FFFFFF>Trấn Áp Hỏa Lực</color>, sát thương do <color=#FFFFFF>Tấn Công Thường</color>, <color=#FFFFFF>Tấn Công Lướt</color>, <color=#FFFFFF>Phản Kích Khi Né</color> gây ra tăng 3%, tối đa cộng dồn 12 tầng, duy trì 15s, mỗi tầng hiệu quả sẽ tính riêng thời gian duy trì.",
+            "Lore": "\"Tuy cô ấy trông vừa lạnh lùng vừa cứng nhắc như một khối băng...\"\n\"Nhưng thực tế bên trong lại bùng cháy nóng rực như ngọn lửa.\"\n —Từ một quân nhân nặc danh của Doanh Trại Obsidian"
+        },
+        "3": {
+            "Title": "Người Lính Tinh Nhuệ",
+            "Description": "Cấp kỹ năng <color=#FFFFFF>Tấn Công Thường</color>, <color=#FFFFFF>Né</color>, <color=#FFFFFF>Kỹ Năng Chi Viện</color>, <color=#FFFFFF>Chiến Kỹ</color>, <color=#FFFFFF>Liên Kích</color> +2",
+            "Lore": "Cho dù là huấn luyện hay thực chiến, Chiến Binh 11 đều áp đặt tiêu chuẩn cao nhất lên bản thân, đó là cách cô ấy duy trì sức chiến đấu cao nhất của mình."
+        },
+        "4": {
+            "Title": "Mặc Sức Thiêu Đốt",
+            "Description": "Khi phát động <color=#FFFFFF>Tấn Công Thường</color> đòn 1, 2, 3 hoặc <color=#FFFFFF>Tấn Công Lướt</color>, nếu kích hoạt <color=#FFFFFF>Trấn Áp Hỏa Lực</color>, thì trong thời gian phát động chiêu thức sẽ tăng cấp Kháng Gián Đoạn, giảm 18% sát thương phải chịu.\nKhi phát động <color=#FFFFFF>Tấn Công Thường</color> đòn 4, nếu kích hoạt <color=#FFFFFF>Trấn Áp Hỏa Lực</color>, sẽ nhận được hiệu quả Vô Địch trong thời gian phát động chiêu thức.",
+            "Lore": "Cô ấy rất hâm mộ lửa.\nVà ngọn lửa rực cháy này cũng luôn giúp đỡ cô ấy."
+        },
+        "5": {
+            "Title": "Người Lính Hoàn Hảo",
+            "Description": "Cấp kỹ năng <color=#FFFFFF>Tấn Công Thường</color>, <color=#FFFFFF>Né</color>, <color=#FFFFFF>Kỹ Năng Chi Viện</color>, <color=#FFFFFF>Chiến Kỹ</color>, <color=#FFFFFF>Liên Kích</color> +2",
+            "Lore": "Con đường từ ưu tú trở thành gương mẫu còn dài và khó khăn nhưng Chiến Binh 11 vẫn nghiến răng kiên trì, như thể có điều gì đó thúc đẩy cô hướng tới mục tiêu trở thành một người lính hoàn hảo."
+        },
+        "6": {
+            "Title": "Dòng Chảy Thiêu Đốt",
+            "Description": "Khi phát động <color=#FFFFFF>Siêu Chiến Kỹ</color>, <color=#FFFFFF>Liên Kích</color> hoặc <color=#FFFFFF>Tuyệt Kỹ</color>, Chiến Binh 11 nhận 8 tầng Nạp Năng Lượng (giới hạn 8 tầng). Nếu kích hoạt <color=#FFFFFF>Trấn Áp Hỏa Lực</color>, sẽ tiêu hao 1 tầng Nạp Năng Lượng, khiến chiêu thức hiện tại bỏ qua 25% <color=#FF5521>Kháng DMG Hỏa</color> của mục tiêu.",
+            "Lore": "Ngọn lửa của thanh kiếm lan tỏa nhiệt lượng. Động tác của cô ngày càng cuồng nhiệt, như thể hơi nóng đó thấm vào tâm hồn cô theo từng hơi thở, đốt cháy suy nghĩ của cô."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Bị Động Cốt Lõi: Sóng Nhiệt",
+            "DescriptionByLevel": {
+                "1": "Khi Chiến Binh 11 kích hoạt <color=#FFFFFF>Trấn Áp Hỏa Lực</color> trong <color=#FFFFFF>Tấn Công Thường</color> hoặc <color=#FFFFFF>Tấn Công Lướt</color>, sát thương do chiêu thức gây ra tăng <color=#2BAD00>35%</color>.",
+                "2": "Khi Chiến Binh 11 kích hoạt <color=#FFFFFF>Trấn Áp Hỏa Lực</color> trong <color=#FFFFFF>Tấn Công Thường</color> hoặc <color=#FFFFFF>Tấn Công Lướt</color>, sát thương do chiêu thức gây ra tăng <color=#2BAD00>40,8%</color>.",
+                "3": "Khi Chiến Binh 11 kích hoạt <color=#FFFFFF>Trấn Áp Hỏa Lực</color> trong <color=#FFFFFF>Tấn Công Thường</color> hoặc <color=#FFFFFF>Tấn Công Lướt</color>, sát thương do chiêu thức gây ra tăng <color=#2BAD00>46,6%</color>.",
+                "4": "Khi Chiến Binh 11 kích hoạt <color=#FFFFFF>Trấn Áp Hỏa Lực</color> trong <color=#FFFFFF>Tấn Công Thường</color> hoặc <color=#FFFFFF>Tấn Công Lướt</color>, sát thương do chiêu thức gây ra tăng <color=#2BAD00>52,5%</color>.",
+                "5": "Khi Chiến Binh 11 kích hoạt <color=#FFFFFF>Trấn Áp Hỏa Lực</color> trong <color=#FFFFFF>Tấn Công Thường</color> hoặc <color=#FFFFFF>Tấn Công Lướt</color>, sát thương do chiêu thức gây ra tăng <color=#2BAD00>58,3%</color>.",
+                "6": "Khi Chiến Binh 11 kích hoạt <color=#FFFFFF>Trấn Áp Hỏa Lực</color> trong <color=#FFFFFF>Tấn Công Thường</color> hoặc <color=#FFFFFF>Tấn Công Lướt</color>, sát thương do chiêu thức gây ra tăng <color=#2BAD00>64,1%</color>.",
+                "7": "Khi Chiến Binh 11 kích hoạt <color=#FFFFFF>Trấn Áp Hỏa Lực</color> trong <color=#FFFFFF>Tấn Công Thường</color> hoặc <color=#FFFFFF>Tấn Công Lướt</color>, sát thương do chiêu thức gây ra tăng <color=#2BAD00>70%</color>."
+            }
+        },
+        "MathSkill": {
+            "Title": "Năng Lực Thêm: Cháy Lan",
+            "Description": "Khi trong đội có nhân vật cùng phe hoặc thuộc tính giống bản thân sẽ kích hoạt:\n<color=#FF5521>DMG Hỏa</color> do Chiến Binh 11 gây ra tăng 10%, khi tấn công kẻ địch đang ở trạng thái Choáng, hiệu quả buff này tăng thêm 22,5%."
+        },
+        "BaseProps": [
+            {
+                "20101": 0,
+                "12101": 0
+            },
+            {
+                "20101": 480,
+                "12101": 0
+            },
+            {
+                "20101": 480,
+                "12101": 25
+            },
+            {
+                "20101": 960,
+                "12101": 25
+            },
+            {
+                "20101": 960,
+                "12101": 50
+            },
+            {
+                "20101": 1440,
+                "12101": 50
+            },
+            {
+                "20101": 1440,
+                "12101": 75
+            }
+        ]
+    },
+    "SkillDescriptions": {
+        "0": {
+            "104100001": {
+                "Title": "Tấn Công Thường: Tia Lửa Khởi Động",
+                "Description": "Nhấn <IconMap:Icon_Normal> phát động:\nThực hiện tối đa 4 đòn chém về phía trước, gây <color=#F0D12B>DMG Vật Lý</color>."
+            },
+            "104100003": {
+                "Title": "Tấn Công Thường: Trấn Áp Hỏa Lực",
+                "Description": "Nhấn <IconMap:Icon_Normal> vào thời điểm thích hợp để phát động:\nPhát động đòn chém mạnh mẽ hơn, gây <color=#FF5521>DMG Hỏa</color>.\nTrong trạng thái chắc chắn kích hoạt <color=#FFFFFF>Trấn Áp Hỏa Lực</color>, khi sắp kết thúc tấn công nhấn <IconMap:Icon_Normal> có thể nhanh chóng tiếp nối đòn <color=#FFFFFF>Tấn Công Thường</color> tiếp theo.\nTrong trạng thái chắc chắn kích hoạt <color=#FFFFFF>Trấn Áp Hỏa Lực</color>, có thể mở khóa đòn 5 <color=#FFFFFF>Tấn Công Thường</color>. Khi phát động <color=#FFFFFF>Liên Kích</color> hoặc <color=#FFFFFF>Tuyệt Kỹ</color>, có thể cường hóa <color=#FFFFFF>Tấn Công Thường</color> đòn 5 tiếp theo. Khi phát động <color=#FFFFFF>Tấn Công Thường</color> đòn 5 cường hóa có thể tiêu hao toàn bộ số lần chắc chắn kích hoạt <color=#FFFFFF>Trấn Áp Hỏa Lực</color> hiện có, cứ tiêu hao 1 lần sẽ gây thêm <color=#FF5521>DMG Hỏa</color>.\nSau khi kích hoạt <color=#FFFFFF>Né Hoàn Hảo</color>, có thể bảo lưu số đòn Tấn Công Thường hiện tại trong 5s, sau khi phát động <color=#FFFFFF>Phản Kích Khi Né</color>, nhấn <IconMap:Icon_Normal> có thể phát động <color=#FFFFFF>Tấn Công Thường</color> từ số đòn tấn công thường được bảo lưu."
+            },
+            "104100004": {
+                "Title": "Tấn Công Thường: Hỏa Lực Bùng Phát",
+                "Description": "Nhấn giữ <IconMap:Icon_Normal> phát động: <color=#FFFFFF>Tấn Công Thường: Tích Tụ Hỏa Lực</color>.\nKhi thả <IconMap:Icon_Normal> trong quá trình phát động <color=#FFFFFF>Tấn Công Thường: Tích Tụ Hỏa Lực</color> sẽ phát động <color=#FFFFFF>Tấn Công Thường: Hỏa Lực Bùng Phát</color>.\nNếu bị kẻ địch tấn công trong quá trình phát động <color=#FFFFFF>Tấn Công Thường: Hỏa Lực Bùng Phát</color> hoặc trong khoảnh khắc phát động <color=#FFFFFF>Tấn Công Thường: Tích Tụ Hỏa Lực</color>, có thể kích hoạt Chống Đỡ Phản Kích, miễn dịch sát thương lần này, và nhận thêm 3 lần chắc chắn kích hoạt <color=#FFFFFF>Trấn Áp Hỏa Lực</color>, nhấn <IconMap:Icon_Normal> có thể tiếp nối <color=#FFFFFF>Tấn Công Thường</color> đòn 3, giới hạn 8 lần.\nTrong quá trình tụ lực, kéo {LAYOUT_CONSOLECONTROLLER#cần}{LAYOUT_FALLBACK#cần điều khiển} để phát động <color=#FFFFFF>Tấn Công Thường: Tập Kích Rực Lửa</color>."
+            },
+            "104110001": {
+                "Title": "Tấn Công Thường: Tia Lửa Khởi Động"
+            },
+            "104110002": {
+                "Description": "Bội Số DMG Đòn 1",
+                "Param": "{Skill:1041001, Prop:1001}"
+            },
+            "104110003": {
+                "Description": "Bội Số DMG Đòn 2",
+                "Param": "{Skill:1041003, Prop:1001}"
+            },
+            "104110004": {
+                "Description": "Bội Số DMG Đòn 3",
+                "Param": "{Skill:1041005, Prop:1001}"
+            },
+            "104110005": {
+                "Description": "Bội Số DMG Đòn 4",
+                "Param": "{Skill:1041007, Prop:1001}"
+            },
+            "104110006": {
+                "Description": "Bội Số Choáng Đòn 1",
+                "Param": "{Skill:1041001, Prop:1002}"
+            },
+            "104110007": {
+                "Description": "Bội Số Choáng Đòn 2",
+                "Param": "{Skill:1041003, Prop:1002}"
+            },
+            "104110008": {
+                "Description": "Bội Số Choáng Đòn 3",
+                "Param": "{Skill:1041005, Prop:1002}"
+            },
+            "104110009": {
+                "Description": "Bội Số Choáng Đòn 4",
+                "Param": "{Skill:1041007, Prop:1002}"
+            },
+            "104110010": {
+                "Title": "Tấn Công Thường: Trấn Áp Hỏa Lực"
+            },
+            "104110011": {
+                "Description": "Bội Số DMG Đòn 1",
+                "Param": "{Skill:1041002, Prop:1001}"
+            },
+            "104110012": {
+                "Description": "Bội Số DMG Đòn 2",
+                "Param": "{Skill:1041004, Prop:1001}"
+            },
+            "104110013": {
+                "Description": "Bội Số DMG Đòn 3",
+                "Param": "{Skill:1041006, Prop:1001}"
+            },
+            "104110014": {
+                "Description": "Bội Số DMG Đòn 4",
+                "Param": "{Skill:1041008, Prop:1001}"
+            },
+            "104110015": {
+                "Description": "Bội Số DMG Đòn 5",
+                "Param": "{Skill:1041024, Prop:1001}"
+            },
+            "104110016": {
+                "Description": "Bội Số DMG Tấn Công Thường Cường Hóa Đòn 5",
+                "Param": "{Skill:1041025, Prop:1001}"
+            },
+            "104110017": {
+                "Description": "Bội Số DMG Bổ Sung Tấn Công Thường Cường Hóa Đòn 5",
+                "Param": "{Skill:1041026, Prop:1001}"
+            },
+            "104110018": {
+                "Description": "Bội Số Choáng Đòn 1",
+                "Param": "{Skill:1041002, Prop:1002}"
+            },
+            "104110019": {
+                "Description": "Bội Số Choáng Đòn 2",
+                "Param": "{Skill:1041004, Prop:1002}"
+            },
+            "104110020": {
+                "Description": "Bội Số Choáng Đòn 3",
+                "Param": "{Skill:1041006, Prop:1002}"
+            },
+            "104110021": {
+                "Description": "Bội Số Choáng Đòn 4",
+                "Param": "{Skill:1041008, Prop:1002}"
+            },
+            "104110022": {
+                "Description": "Bội Số Choáng Đòn 5",
+                "Param": "{Skill:1041024, Prop:1002}"
+            },
+            "104110023": {
+                "Description": "Bội Số Choáng Tấn Công Thường Cường Hóa Đòn 5",
+                "Param": "{Skill:1041025, Prop:1002}"
+            },
+            "104110025": {
+                "Title": "Tấn Công Thường: Hỏa Lực Bùng Phát"
+            },
+            "104110026": {
+                "Description": "Bội Số DMG Tấn Công Thường: Hỏa Lực Bùng Phát",
+                "Param": "{Skill:1041027, Prop:1001}"
+            },
+            "104110027": {
+                "Description": "Bội Số Choáng Tấn Công Thường: Hỏa Lực Bùng Phát",
+                "Param": "{Skill:1041027, Prop:1002}"
+            }
+        },
+        "1": {
+            "104100005": {
+                "Title": "Chiến Kỹ: Lửa Mạnh",
+                "Description": "Nhấn <IconMap:Icon_Special> phát động:\nChém kẻ địch xung quanh, gây <color=#FF5521>DMG Hỏa</color>.\nChiêu thức khi phát động sẽ tăng cấp Kháng Gián Đoạn."
+            },
+            "104100007": {
+                "Title": "Siêu Chiến Kỹ: Ngọn Lửa Bùng Cháy",
+                "Description": "Khi đủ Năng Lượng, nhấn <IconMap:Icon_SpecialReady> phát động:\nThực hiện chém mạnh ra xung quanh, gây lượng lớn <color=#FF5521>DMG Hỏa</color>.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch.\nSau khi phát động, <color=#FFFFFF>Tấn Công Thường</color> và <color=#FFFFFF>Tấn Công Lướt</color> chắc chắn kích hoạt <color=#FFFFFF>Trấn Áp Hỏa Lực</color>, tối đa duy trì 30s hoặc kích hoạt 8 lần.\nSau khi phát động chiêu thức, nhấn <IconMap:Icon_Normal> có thể tiếp nối ngay <color=#FFFFFF>Tấn Công Thường</color> đòn 4.\nSau khi phát động chiêu thức, sẽ vào trạng thái <color=#FFFFFF>Tư Thế Cảnh Giác</color>. Trong <color=#FFFFFF>Tư Thế Cảnh Giác</color>, nếu bị kẻ địch tấn công trong lúc <color=#FFFFFF>Tấn Công Thường</color>, sẽ phát động <color=#FFFFFF>Tấn Công Thường: Tích Tụ Hỏa Lực</color> để chống đỡ đòn tấn công này, sau đó phát động <color=#FFFFFF>Tấn Công Thường: Hỏa Lực Bùng Phát</color>. Sau khi phát động <color=#FFFFFF>Tấn Công Thường: Hỏa Lực Bùng Phát</color> nhấn <IconMap:Icon_Normal> có thể phát động <color=#FFFFFF>Tấn Công Thường</color> bắt đầu từ số đòn tấn công thường được bảo lưu."
+            },
+            "104110028": {
+                "Title": "Chiến Kỹ: Lửa Mạnh"
+            },
+            "104110029": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1041010, Prop:1001}"
+            },
+            "104110030": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1041010, Prop:1002}"
+            },
+            "104110031": {
+                "Title": "Siêu Chiến Kỹ: Ngọn Lửa Bùng Cháy"
+            },
+            "104110032": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1041011, Prop:1001}"
+            },
+            "104110033": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1041011, Prop:1002}"
+            },
+            "104110034": {
+                "Description": "Tiêu Hao Năng Lượng",
+                "Param": "80 điểm"
+            }
+        },
+        "2": {
+            "104100008": {
+                "Title": "Né: Giảm Lửa",
+                "Description": "Nhấn <IconMap:Icon_Evade> phát động:\nNhanh chóng né tránh.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "104100009": {
+                "Title": "Tấn Công Lướt: Bùng Lửa",
+                "Description": "Khi né, nhấn <IconMap:Icon_Normal> phát động:\nChém về phía trước, gây <color=#F0D12B>DMG Vật Lý</color>."
+            },
+            "104100010": {
+                "Title": "Tấn Công Lướt: Trấn Áp Hỏa Lực",
+                "Description": "Khi né, nhấn <IconMap:Icon_Normal> phát động:\nChém về phía trước, gây <color=#FF5521>DMG Hỏa</color>."
+            },
+            "104100011": {
+                "Title": "Phản Kích Khi Né: Ngược Lửa",
+                "Description": "Sau khi kích hoạt <color=#FFFFFF>Né Hoàn Hảo</color>, nhấn <IconMap:Icon_Normal> phát động:\nPhát động nhát chém mạnh mẽ lên kẻ địch phía trước, gây lượng lớn <color=#FF5521>DMG Hỏa</color>.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "104110035": {
+                "Title": "Tấn Công Lướt: Bùng Lửa"
+            },
+            "104110036": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1041012, Prop:1001}"
+            },
+            "104110037": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1041012, Prop:1002}"
+            },
+            "104110038": {
+                "Title": "Tấn Công Lướt: Trấn Áp Hỏa Lực"
+            },
+            "104110039": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1041013, Prop:1001}"
+            },
+            "104110040": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1041013, Prop:1002}"
+            },
+            "104110041": {
+                "Title": "Phản Kích Khi Né: Ngược Lửa"
+            },
+            "104110042": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1041015, Prop:1001}"
+            },
+            "104110043": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1041015, Prop:1002}"
+            }
+        },
+        "3": {
+            "104100013": {
+                "Title": "Liên Kích: Ngọn Lửa Thăng Hoa",
+                "Description": "Khi kích hoạt <color=#FFFFFF>Liên Kích</color>, chọn nhân vật tương ứng để phát động:\nThực hiện đòn nhảy lên chém mạnh vào kẻ địch trong phạm vi nhỏ phía trước, gây lượng lớn <color=#FF5521>DMG Hỏa</color>.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch.\nSau khi phát động chiêu thức, <color=#FFFFFF>Tấn Công Thường</color> và <color=#FFFFFF>Tấn Công Lướt</color> chắc chắn kích hoạt <color=#FFFFFF>Trấn Áp Hỏa Lực</color>, tối đa duy trì 30s hoặc kích hoạt 8 lần.\nSau khi phát động chiêu thức, nhấn <IconMap:Icon_Normal> có thể tiếp nối ngay <color=#FFFFFF>Tấn Công Thường</color> đòn 4.\nSau khi phát động chiêu thức, sẽ vào trạng thái <color=#FFFFFF>Tư Thế Cảnh Giác</color>. Trong <color=#FFFFFF>Tư Thế Cảnh Giác</color>, nếu bị kẻ địch tấn công trong lúc <color=#FFFFFF>Tấn Công Thường</color>, sẽ phát động <color=#FFFFFF>Tấn Công Thường: Tích Tụ Hỏa Lực</color> để chống đỡ đòn tấn công này, sau đó phát động <color=#FFFFFF>Tấn Công Thường: Hỏa Lực Bùng Phát</color>. Sau khi phát động <color=#FFFFFF>Tấn Công Thường: Hỏa Lực Bùng Phát</color> nhấn <IconMap:Icon_Normal> có thể phát động <color=#FFFFFF>Tấn Công Thường</color> bắt đầu từ số đòn tấn công thường được bảo lưu."
+            },
+            "104100015": {
+                "Title": "Tuyệt Kỹ: Ngọn Lửa Nổ Vang",
+                "Description": "Khi Cấp Decibel đạt <color=#FFFFFF>Cực Hạn</color>, nhấn <IconMap:Icon_UltimateReady> phát động:\nThực hiện đòn nhảy lên chém mạnh vào kẻ địch trong phạm vi nhỏ phía trước, gây lượng lớn <color=#FF5521>DMG Hỏa</color>.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch.\nSau khi phát động chiêu thức, <color=#FFFFFF>Tấn Công Thường</color> và <color=#FFFFFF>Tấn Công Lướt</color> chắc chắn kích hoạt <color=#FFFFFF>Trấn Áp Hỏa Lực</color>, tối đa duy trì 30s hoặc kích hoạt 8 lần.\nSau khi phát động chiêu thức, nhấn <IconMap:Icon_Normal> có thể tiếp nối ngay <color=#FFFFFF>Tấn Công Thường</color> đòn 4.\nSau khi phát động chiêu thức, sẽ vào trạng thái <color=#FFFFFF>Tư Thế Cảnh Giác</color>. Trong <color=#FFFFFF>Tư Thế Cảnh Giác</color>, nếu bị kẻ địch tấn công trong lúc <color=#FFFFFF>Tấn Công Thường</color>, sẽ phát động <color=#FFFFFF>Tấn Công Thường: Tích Tụ Hỏa Lực</color> để chống đỡ đòn tấn công này, sau đó phát động <color=#FFFFFF>Tấn Công Thường: Hỏa Lực Bùng Phát</color>. Sau khi phát động <color=#FFFFFF>Tấn Công Thường: Hỏa Lực Bùng Phát</color> nhấn <IconMap:Icon_Normal> có thể phát động <color=#FFFFFF>Tấn Công Thường</color> bắt đầu từ số đòn tấn công thường được bảo lưu."
+            },
+            "104110044": {
+                "Title": "Liên Kích: Ngọn Lửa Thăng Hoa"
+            },
+            "104110045": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1041016, Prop:1001}"
+            },
+            "104110046": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1041016, Prop:1002}"
+            },
+            "104110047": {
+                "Title": "Tuyệt Kỹ: Ngọn Lửa Nổ Vang"
+            },
+            "104110048": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1041017, Prop:1001}"
+            },
+            "104110049": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1041017, Prop:1002}"
+            }
+        },
+        "6": {
+            "104100018": {
+                "Title": "Hỗ Trợ Nhanh: Hỏa Lực Yểm Trợ",
+                "Description": "Khi nhân vật đang thao tác bị đánh bay, nhấn <IconMap:Icon_Switch> phát động:\nChém kẻ địch phía trước, gây <color=#FF5521>DMG Hỏa</color>.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "104100019": {
+                "Title": "Hỗ Trợ Chống Đỡ: Củng Cố Phòng Tuyến",
+                "Description": "Khi nhân vật trong sân sắp bị tấn công, nhấn <IconMap:Icon_Switch> phát động:\nChống đỡ tấn công của kẻ địch, tích lũy lượng lớn Điểm Choáng.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "104100020": {
+                "Title": "Đột Kích Chi Viện: Bùng Cháy",
+                "Description": "Sau khi phát động <color=#FFFFFF>Hỗ Trợ Chống Đỡ</color>, nhấn <IconMap:Icon_Normal> phát động:\nThực hiện nhát chém đan xen vào kẻ địch phía trước, gây <color=#FF5521>DMG Hỏa</color>.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "104110050": {
+                "Title": "Hỗ Trợ Nhanh: Hỏa Lực Yểm Trợ"
+            },
+            "104110051": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1041019, Prop:1001}"
+            },
+            "104110052": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1041019, Prop:1002}"
+            },
+            "104110053": {
+                "Title": "Hỗ Trợ Chống Đỡ: Củng Cố Phòng Tuyến"
+            },
+            "104110054": {
+                "Description": "Bội Số Đỡ Choáng Nhẹ",
+                "Param": "{Skill:1041020, Prop:1002}"
+            },
+            "104110055": {
+                "Description": "Bội Số Đỡ Choáng Mạnh",
+                "Param": "{Skill:1041021, Prop:1002}"
+            },
+            "104110056": {
+                "Description": "Bội Số Đỡ Choáng Liên Tục",
+                "Param": "{Skill:1041022, Prop:1002}"
+            },
+            "104110057": {
+                "Title": "Đột Kích Chi Viện: Bùng Cháy"
+            },
+            "104110058": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1041023, Prop:1001}"
+            },
+            "104110059": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1041023, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1041001": {
+            "DamageValue": 3440,
+            "DamageGrowth": 320,
+            "DazeValue": 1720,
+            "DazeGrowth": 80
+        },
+        "1041002": {
+            "DamageValue": 5510,
+            "DamageGrowth": 510,
+            "DazeValue": 1800,
+            "DazeGrowth": 90
+        },
+        "1041003": {
+            "DamageValue": 4120,
+            "DamageGrowth": 380,
+            "DazeValue": 3440,
+            "DazeGrowth": 160
+        },
+        "1041004": {
+            "DamageValue": 5720,
+            "DamageGrowth": 520,
+            "DazeValue": 3360,
+            "DazeGrowth": 160
+        },
+        "1041005": {
+            "DamageValue": 10280,
+            "DamageGrowth": 940,
+            "DazeValue": 8230,
+            "DazeGrowth": 380
+        },
+        "1041006": {
+            "DamageValue": 13200,
+            "DamageGrowth": 1200,
+            "DazeValue": 7520,
+            "DazeGrowth": 350
+        },
+        "1041007": {
+            "DamageValue": 21340,
+            "DamageGrowth": 1940,
+            "DazeValue": 16760,
+            "DazeGrowth": 770
+        },
+        "1041008": {
+            "DamageValue": 34070,
+            "DamageGrowth": 3100,
+            "DazeValue": 19200,
+            "DazeGrowth": 880
+        },
+        "1041009": {
+            "DamageValue": 9280,
+            "DamageGrowth": 850,
+            "DazeValue": 9280,
+            "DazeGrowth": 430
+        },
+        "1041010": {
+            "DamageValue": 5260,
+            "DamageGrowth": 480,
+            "DazeValue": 5260,
+            "DazeGrowth": 240
+        },
+        "1041011": {
+            "DamageValue": 67500,
+            "DamageGrowth": 6140,
+            "DazeValue": 54350,
+            "DazeGrowth": 2480
+        },
+        "1041012": {
+            "DamageValue": 6830,
+            "DamageGrowth": 630,
+            "DazeValue": 3420,
+            "DazeGrowth": 160
+        },
+        "1041013": {
+            "DamageValue": 7880,
+            "DamageGrowth": 720,
+            "DazeValue": 7880,
+            "DazeGrowth": 360
+        },
+        "1041014": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1041015": {
+            "DamageValue": 26200,
+            "DamageGrowth": 2390,
+            "DazeValue": 22580,
+            "DazeGrowth": 1030
+        },
+        "1041016": {
+            "DamageValue": 63250,
+            "DamageGrowth": 5750,
+            "DazeValue": 21360,
+            "DazeGrowth": 980
+        },
+        "1041017": {
+            "DamageValue": 210300,
+            "DamageGrowth": 19120,
+            "DazeValue": 28500,
+            "DazeGrowth": 1300
+        },
+        "1041018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1041019": {
+            "DamageValue": 12080,
+            "DamageGrowth": 1100,
+            "DazeValue": 12080,
+            "DazeGrowth": 550
+        },
+        "1041020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 25900,
+            "DazeGrowth": 1180
+        },
+        "1041021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 32730,
+            "DazeGrowth": 1490
+        },
+        "1041022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15930,
+            "DazeGrowth": 730
+        },
+        "1041023": {
+            "DamageValue": 38370,
+            "DamageGrowth": 3490,
+            "DazeValue": 33550,
+            "DazeGrowth": 1530
+        },
+        "1041024": {
+            "DamageValue": 44170,
+            "DamageGrowth": 4020,
+            "DazeValue": 14530,
+            "DazeGrowth": 670
+        },
+        "1041025": {
+            "DamageValue": 44170,
+            "DamageGrowth": 4020,
+            "DazeValue": 14530,
+            "DazeGrowth": 670
+        },
+        "1041026": {
+            "DamageValue": 8280,
+            "DamageGrowth": 760,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1041027": {
+            "DamageValue": 9410,
+            "DamageGrowth": 860,
+            "DazeValue": 3070,
+            "DazeGrowth": 140
+        }
+    }
+}

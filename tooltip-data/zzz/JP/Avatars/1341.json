@@ -1,0 +1,484 @@
+{
+    "Name": "照",
+    "ElementTypes": [
+        "Ice"
+    ],
+    "Specialty": {
+        "Id": 5,
+        "Name": "防護"
+    },
+    "Talents": {
+        "1": {
+            "Title": "凛然たる裁決",
+            "Description": "照が交代で操作中のメンバーでなくなった時、メンバー全員の与ダメージはターゲットの全属性ダメージ耐性を15%無視する、継続時間50秒、重複して発動すると継続時間が更新される。",
+            "Lore": "「あの可愛らしい見た目に惑わされるな！\n俺は一生忘れない…会議の場で俺たちに指を振りながら\nあどけない顔のまま、残酷な裁定を下した時のことを…\n『是正項目が1つでも気に入らないなら…\nキミたちの会社はもうTOPSにいられないかな。\n脅してなんていないよお。君たちには、\n正しい道か間違った道かを選ぶ\n権利があるんだもん』\n…ただ、それでも彼女には感謝している」\n——抜本的な改革を受け入れて起死回生を果たした、\nとある企業の役員"
+        },
+        "2": {
+            "Title": "黒枝の大先輩",
+            "Description": "照のHPが回復した時、照の攻撃力+20%、他のメンバーの攻撃力+15%。継続時間50秒、重複して発動すると継続時間が更新される。",
+            "Lore": "照は黒枝に早期から身を置いており、\n精鋭ぞろいの彼らの中でも「大先輩」という\nひときわ抜きんでた存在…のはずだった。\nところが、後から入ってきた「後輩」たちは\n軒並み礼儀よりも個性を重んじるタイプであった。"
+        },
+        "3": {
+            "Title": "霜嬋の氷刃",
+            "Description": "<color=#FFFFFF>『通常攻撃』</color>、<color=#FFFFFF>『回避』</color>、<color=#FFFFFF>『支援スキル』</color>、<color=#FFFFFF>『特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>のスキルレベル+2",
+            "Lore": "照の武器「霜嬋」は、\nTOPSの秘密開発プロジェクトから供与された試作品である。\nこの武器は単に氷属性のエーテルを放って\nダメージを与えるのではなく、\nエーテルを武器そのものの一部へと変換する。\n通常状態の「霜嬋」は同規格の武器と比べて\n半分ほどの重量しかないが、戦闘状態に入ると\n刃先に氷塊を急速凝結させ重量と破壊力が増加する。\nまさに小さな照にうってつけの設計というわけだ。"
+        },
+        "4": {
+            "Title": "トコトコ",
+            "Description": "照が<color=#FFFFFF>「エーテルベール」</color>を展開した時、デシベル値を250Pt獲得する。<color=#FFFFFF>『終結スキル』</color>、<color=#FFFFFF>『連携スキル』</color>、<color=#FFFFFF>『通常攻撃：最終裁決』</color>の会心ダメージ+40%。",
+            "Lore": "俊敏、軽やか、捉えがたい。\n小さなうさぎを形容するために\n使われていた言葉が、今や\n巨大な剣を手にし、全てを打ち砕く\n恐るべき戦士に使われている…"
+        },
+        "5": {
+            "Title": "モフモフは聞いている",
+            "Description": "<color=#FFFFFF>『通常攻撃』</color>、<color=#FFFFFF>『回避』</color>、<color=#FFFFFF>『支援スキル』</color>、<color=#FFFFFF>『特殊スキル』</color>、<color=#FFFFFF>『連携スキル』</color>のスキルレベル+2",
+            "Lore": "照の耳がピクッと動き、わずかに立ち上がったなら…\nそのとき発されていた言葉が\n抜け目ない兎の関心を引いたという合図だ。\nそれは情報、任務、取引…あるいは\n彼女への賞賛かもしれない。"
+        },
+        "6": {
+            "Title": "値札のないもの",
+            "Description": "<color=#FFFFFF>『コアパッシブ：最高の同僚』</color>の会心率アップ効果が本来の125%になる。<color=#FFFFFF>『通常攻撃：最終裁決』</color>のチャージ時間による追加ダメージが本来の140%になり、攻撃時にチャージ時間が消費されなくなる。",
+            "Lore": "幼い頃から数多という人々に影響されて築き上がった\n「価値」観という名の壁に、とある出会いが\n亀裂をもたらした。そして照は考えを改めはじめる。\n値札がないのは、価値がないからじゃない。\n価値がつけられないほどに貴いからなのだと。"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "コアパッシブ：最高の同僚",
+            "DescriptionByLevel": {
+                "1": "照は開幕最大HPに応じて会心率をアップさせる。開幕最大HP1000Ptにつき、会心率+<color=#2BAD00>0.8%</color>。\nフィールド入場時、照は<color=#FFFFFF>「氷霜値」</color>を100Pt獲得する。探査モードにおいて、この効果は180秒に1回のみ発動可能。<color=#FFFFFF>「氷霜値」</color>の上限は100Pt。\n操作中のメンバーの攻撃が敵に命中した時、照は<color=#FFFFFF>「氷霜値」</color>を6Pt獲得する。この効果は3秒に1回のみ発動可能。\n<color=#FFFFFF>「氷霜値」</color>が最大まで溜まっている、かつ接敵状態にある場合、交代で照を入場させると<color=#FFFFFF>『入場スキル』</color>が発動する。\n照が<color=#FFFFFF>『入場スキル』</color>を発動する際、すべての<color=#FFFFFF>「氷霜値」</color>を消費して<color=#FFFFFF>「エーテルベール・湧泉」</color>を展開する。\n<color=#FFFFFF>「エーテルベール・湧泉」</color>の効果を受けている時、メンバー全員の最大HP+5%、継続時間40秒。照が「エーテルベール・湧泉」を重複して展開する際、既存の<color=#FFFFFF>「エーテルベール・湧泉」</color>は解除される。\n照が<color=#FFFFFF>「エーテルベール・湧泉」</color>を展開すると、メンバー全員の攻撃力+<color=#2BAD00>100</color>Pt、継続時間50秒、重複して発動すると継続時間が更新される。",
+                "2": "照は開幕最大HPに応じて会心率をアップさせる。開幕最大HP1000Ptにつき、会心率+<color=#2BAD00>0.9%</color>。\nフィールド入場時、照は<color=#FFFFFF>「氷霜値」</color>を100Pt獲得する。探査モードにおいて、この効果は180秒に1回のみ発動可能。<color=#FFFFFF>「氷霜値」</color>の上限は100Pt。\n操作中のメンバーの攻撃が敵に命中した時、照は<color=#FFFFFF>「氷霜値」</color>を6Pt獲得する。この効果は3秒に1回のみ発動可能。\n<color=#FFFFFF>「氷霜値」</color>が最大まで溜まっている、かつ接敵状態にある場合、交代で照を入場させると<color=#FFFFFF>『入場スキル』</color>が発動する。\n照が<color=#FFFFFF>『入場スキル』</color>を発動する際、すべての<color=#FFFFFF>「氷霜値」</color>を消費して<color=#FFFFFF>「エーテルベール・湧泉」</color>を展開する。\n<color=#FFFFFF>「エーテルベール・湧泉」</color>の効果を受けている時、メンバー全員の最大HP+5%、継続時間40秒。照が「エーテルベール・湧泉」を重複して展開する際、既存の<color=#FFFFFF>「エーテルベール・湧泉」</color>は解除される。\n照が<color=#FFFFFF>「エーテルベール・湧泉」</color>を展開すると、メンバー全員の攻撃力+<color=#2BAD00>250</color>Pt、継続時間50秒、重複して発動すると継続時間が更新される。",
+                "3": "照は開幕最大HPに応じて会心率をアップさせる。開幕最大HP1000Ptにつき、会心率+<color=#2BAD00>1%</color>。\nフィールド入場時、照は<color=#FFFFFF>「氷霜値」</color>を100Pt獲得する。探査モードにおいて、この効果は180秒に1回のみ発動可能。<color=#FFFFFF>「氷霜値」</color>の上限は100Pt。\n操作中のメンバーの攻撃が敵に命中した時、照は<color=#FFFFFF>「氷霜値」</color>を6Pt獲得する。この効果は3秒に1回のみ発動可能。\n<color=#FFFFFF>「氷霜値」</color>が最大まで溜まっている、かつ接敵状態にある場合、交代で照を入場させると<color=#FFFFFF>『入場スキル』</color>が発動する。\n照が<color=#FFFFFF>『入場スキル』</color>を発動する際、すべての<color=#FFFFFF>「氷霜値」</color>を消費して<color=#FFFFFF>「エーテルベール・湧泉」</color>を展開する。\n<color=#FFFFFF>「エーテルベール・湧泉」</color>の効果を受けている時、メンバー全員の最大HP+5%、継続時間40秒。照が「エーテルベール・湧泉」を重複して展開する際、既存の<color=#FFFFFF>「エーテルベール・湧泉」</color>は解除される。\n照が<color=#FFFFFF>「エーテルベール・湧泉」</color>を展開すると、メンバー全員の攻撃力+<color=#2BAD00>400</color>Pt、継続時間50秒、重複して発動すると継続時間が更新される。",
+                "4": "照は開幕最大HPに応じて会心率をアップさせる。開幕最大HP1000Ptにつき、会心率+<color=#2BAD00>1.1%</color>。\nフィールド入場時、照は<color=#FFFFFF>「氷霜値」</color>を100Pt獲得する。探査モードにおいて、この効果は180秒に1回のみ発動可能。<color=#FFFFFF>「氷霜値」</color>の上限は100Pt。\n操作中のメンバーの攻撃が敵に命中した時、照は<color=#FFFFFF>「氷霜値」</color>を6Pt獲得する。この効果は3秒に1回のみ発動可能。\n<color=#FFFFFF>「氷霜値」</color>が最大まで溜まっている、かつ接敵状態にある場合、交代で照を入場させると<color=#FFFFFF>『入場スキル』</color>が発動する。\n照が<color=#FFFFFF>『入場スキル』</color>を発動する際、すべての<color=#FFFFFF>「氷霜値」</color>を消費して<color=#FFFFFF>「エーテルベール・湧泉」</color>を展開する。\n<color=#FFFFFF>「エーテルベール・湧泉」</color>の効果を受けている時、メンバー全員の最大HP+5%、継続時間40秒。照が「エーテルベール・湧泉」を重複して展開する際、既存の<color=#FFFFFF>「エーテルベール・湧泉」</color>は解除される。\n照が<color=#FFFFFF>「エーテルベール・湧泉」</color>を展開すると、メンバー全員の攻撃力+<color=#2BAD00>550</color>Pt、継続時間50秒、重複して発動すると継続時間が更新される。",
+                "5": "照は開幕最大HPに応じて会心率をアップさせる。開幕最大HP1000Ptにつき、会心率+<color=#2BAD00>1.2%</color>。\nフィールド入場時、照は<color=#FFFFFF>「氷霜値」</color>を100Pt獲得する。探査モードにおいて、この効果は180秒に1回のみ発動可能。<color=#FFFFFF>「氷霜値」</color>の上限は100Pt。\n操作中のメンバーの攻撃が敵に命中した時、照は<color=#FFFFFF>「氷霜値」</color>を6Pt獲得する。この効果は3秒に1回のみ発動可能。\n<color=#FFFFFF>「氷霜値」</color>が最大まで溜まっている、かつ接敵状態にある場合、交代で照を入場させると<color=#FFFFFF>『入場スキル』</color>が発動する。\n照が<color=#FFFFFF>『入場スキル』</color>を発動する際、すべての<color=#FFFFFF>「氷霜値」</color>を消費して<color=#FFFFFF>「エーテルベール・湧泉」</color>を展開する。\n<color=#FFFFFF>「エーテルベール・湧泉」</color>の効果を受けている時、メンバー全員の最大HP+5%、継続時間40秒。照が「エーテルベール・湧泉」を重複して展開する際、既存の<color=#FFFFFF>「エーテルベール・湧泉」</color>は解除される。\n照が<color=#FFFFFF>「エーテルベール・湧泉」</color>を展開すると、メンバー全員の攻撃力+<color=#2BAD00>700</color>Pt、継続時間50秒、重複して発動すると継続時間が更新される。",
+                "6": "照は開幕最大HPに応じて会心率をアップさせる。開幕最大HP1000Ptにつき、会心率+<color=#2BAD00>1.3%</color>。\nフィールド入場時、照は<color=#FFFFFF>「氷霜値」</color>を100Pt獲得する。探査モードにおいて、この効果は180秒に1回のみ発動可能。<color=#FFFFFF>「氷霜値」</color>の上限は100Pt。\n操作中のメンバーの攻撃が敵に命中した時、照は<color=#FFFFFF>「氷霜値」</color>を6Pt獲得する。この効果は3秒に1回のみ発動可能。\n<color=#FFFFFF>「氷霜値」</color>が最大まで溜まっている、かつ接敵状態にある場合、交代で照を入場させると<color=#FFFFFF>『入場スキル』</color>が発動する。\n照が<color=#FFFFFF>『入場スキル』</color>を発動する際、すべての<color=#FFFFFF>「氷霜値」</color>を消費して<color=#FFFFFF>「エーテルベール・湧泉」</color>を展開する。\n<color=#FFFFFF>「エーテルベール・湧泉」</color>の効果を受けている時、メンバー全員の最大HP+5%、継続時間40秒。照が「エーテルベール・湧泉」を重複して展開する際、既存の<color=#FFFFFF>「エーテルベール・湧泉」</color>は解除される。\n照が<color=#FFFFFF>「エーテルベール・湧泉」</color>を展開すると、メンバー全員の攻撃力+<color=#2BAD00>850</color>Pt、継続時間50秒、重複して発動すると継続時間が更新される。",
+                "7": "照は開幕最大HPに応じて会心率をアップさせる。開幕最大HP1000Ptにつき、会心率+<color=#2BAD00>1.4%</color>。\nフィールド入場時、照は<color=#FFFFFF>「氷霜値」</color>を100Pt獲得する。探査モードにおいて、この効果は180秒に1回のみ発動可能。<color=#FFFFFF>「氷霜値」</color>の上限は100Pt。\n操作中のメンバーの攻撃が敵に命中した時、照は<color=#FFFFFF>「氷霜値」</color>を6Pt獲得する。この効果は3秒に1回のみ発動可能。\n<color=#FFFFFF>「氷霜値」</color>が最大まで溜まっている、かつ接敵状態にある場合、交代で照を入場させると<color=#FFFFFF>『入場スキル』</color>が発動する。\n照が<color=#FFFFFF>『入場スキル』</color>を発動する際、すべての<color=#FFFFFF>「氷霜値」</color>を消費して<color=#FFFFFF>「エーテルベール・湧泉」</color>を展開する。\n<color=#FFFFFF>「エーテルベール・湧泉」</color>の効果を受けている時、メンバー全員の最大HP+5%、継続時間40秒。照が「エーテルベール・湧泉」を重複して展開する際、既存の<color=#FFFFFF>「エーテルベール・湧泉」</color>は解除される。\n照が<color=#FFFFFF>「エーテルベール・湧泉」</color>を展開すると、メンバー全員の攻撃力+<color=#2BAD00>1000</color>Pt、継続時間50秒、重複して発動すると継続時間が更新される。"
+            }
+        },
+        "MathSkill": {
+            "Title": "追加能力：氷結んで手も結んで",
+            "Description": "チームに<color=#FFFFFF>[強攻]</color>、<color=#FFFFFF>[異常]</color>、または<color=#FFFFFF>[支援]</color>のメンバーがいる時に発動：\n照が任意の<color=#FFFFFF>「エーテルベール」</color>の効果を受けている時、メンバー全員の与ダメージ+10%。照の開幕最大HPが15000Ptを上回る場合、400Pt上回るごとに、与ダメージがさらに+1%、基礎効果と追加アップ効果による合計ダメージアップは最大40%まで。開幕最大HPが27000Ptに達すると、上記の効果も最大値に達する。"
+        },
+        "BaseProps": [
+            {
+                "11102": 0,
+                "12101": 0
+            },
+            {
+                "11102": 600,
+                "12101": 0
+            },
+            {
+                "11102": 600,
+                "12101": 25
+            },
+            {
+                "11102": 1200,
+                "12101": 25
+            },
+            {
+                "11102": 1200,
+                "12101": 50
+            },
+            {
+                "11102": 1800,
+                "12101": 50
+            },
+            {
+                "11102": 1800,
+                "12101": 75
+            }
+        ]
+    },
+    "SkillDescriptions": {
+        "0": {
+            "134100001": {
+                "Title": "通常攻撃：清冽の裁決",
+                "Description": " <IconMap:Icon_Normal> を押して発動：\n前方に最大5段の斬撃を放つ。1段目は<color=#F0D12B>物理属性ダメージ</color>を与え、以降の4段は<color=#98EFF0>氷属性ダメージ</color>を与える。"
+            },
+            "134100002": {
+                "Title": "通常攻撃：最終裁決",
+                "Description": " <IconMap:Icon_Normal> を長押しして発動：\n準備してからチャージする。ボタンを離すと前方に斬撃を放ち、<color=#98EFF0>氷属性ダメージ</color>を大量に与える。\nチャージ時、照は最大5秒のチャージ時間を溜められる。<color=#FFFFFF>『通常攻撃：最終裁決』</color>、<color=#FFFFFF>『連携スキル』</color>、または<color=#FFFFFF>『支援突撃』</color>のとどめの一撃が命中した時、チャージ時間を消費して追加ダメージを与える。チャージ時間1秒につき、照の最大HP<color=#2BAD00>{CAL:0.12+AvatarSkillLevel(0)*0.01,100,2}%</color>分の追加ダメージを与える。\n任意の<color=#FFFFFF>「エーテルベール」</color>の効果を受けている時、チャージ中に控えに交代された場合、照は引き続きチャージを続けられる。\nスキル発動時、<color=#FFFFFF>「氷霜値」</color>が満タンの場合、すべての<color=#FFFFFF>「氷霜値」</color>を消費して<color=#FFFFFF>「エーテルベール・湧泉」</color>を展開し、<color=#FFFFFF>『クイック支援』</color>が発動可能になる。この時に他のメンバーの<color=#FFFFFF>『クイック支援』</color>を発動すると、照は自動で<color=#FFFFFF>『通常攻撃：最終裁決』</color>に繋げてチャージを行う。\nスキル発動中、中断耐性レベルがアップし、被ダメージ-40%。\n操作中のメンバーでない時、スキル発動中は無敵効果を得る。"
+            },
+            "134100015": {
+                "Title": "通常攻撃：清冽の裁決"
+            },
+            "134100016": {
+                "Description": "1段ダメージ倍率",
+                "Param": "{Skill:1341001, Prop:1001}"
+            },
+            "134100017": {
+                "Description": "2段ダメージ倍率",
+                "Param": "{Skill:1341002, Prop:1001}"
+            },
+            "134100018": {
+                "Description": "3段ダメージ倍率",
+                "Param": "{Skill:1341003, Prop:1001}"
+            },
+            "134100019": {
+                "Description": "4段ダメージ倍率",
+                "Param": "{Skill:1341004, Prop:1001}"
+            },
+            "134100020": {
+                "Description": "5段ダメージ倍率",
+                "Param": "{{Skill:1341005, Prop:1001} + {Skill:1341006, Prop:1001}}"
+            },
+            "134100021": {
+                "Description": "1段ブレイク倍率",
+                "Param": "{Skill:1341001, Prop:1002}"
+            },
+            "134100022": {
+                "Description": "2段ブレイク倍率",
+                "Param": "{Skill:1341002, Prop:1002}"
+            },
+            "134100023": {
+                "Description": "3段ブレイク倍率",
+                "Param": "{Skill:1341003, Prop:1002}"
+            },
+            "134100024": {
+                "Description": "4段ブレイク倍率",
+                "Param": "{Skill:1341004, Prop:1002}"
+            },
+            "134100025": {
+                "Description": "5段ブレイク倍率",
+                "Param": "{{Skill:1341005, Prop:1002} + {Skill:1341006, Prop:1002}}"
+            },
+            "134100026": {
+                "Title": "通常攻撃：最終裁決"
+            },
+            "134100027": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1341008, Prop:1001}"
+            },
+            "134100028": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1341008, Prop:1002}"
+            },
+            "134100029": {
+                "Description": "チャージ最大HP追加倍率",
+                "Param": "{CAL:0.12+AvatarSkillLevel(0)*0.01,100,2}%"
+            }
+        },
+        "1": {
+            "134100003": {
+                "Title": "特殊スキル：<ruby=さいひょうかんれい>砕氷寒冷</ruby>",
+                "Description": " <IconMap:Icon_Special> を押して発動：\n前方に斬撃を放ち、<color=#98EFF0>氷属性ダメージ</color>を与える。\nスキル発動時、現在HPの5%を消費する代わりに、メンバー全員が1秒ごとに照の最大HP<color=#2BAD00>{CAL:1+AvatarSkillLevel(1)*0.06,1,2}%</color>分のHPを回復する、継続時間5秒。<color=#FFFFFF>『特殊スキル：砕氷寒冷』</color>と<color=#FFFFFF>『強化特殊スキル：霜柱凍土』</color>のHP消費効果は30秒に1回のみ発動可能。"
+            },
+            "134100004": {
+                "Title": "強化特殊スキル：<ruby=しもばしらとうど>霜柱凍土</ruby>",
+                "Description": "エネルギーが十分な時、 <IconMap:Icon_SpecialReady> を押して発動：\n前方に連続斬撃を放ち、<color=#98EFF0>氷属性ダメージ</color>を大量に与える。\nスキル発動時、現在HPの5%を消費する代わりに、メンバー全員が1秒ごとに照の最大HP<color=#2BAD00>{CAL:1+AvatarSkillLevel(1)*0.06,1,2}%</color>分のHPを回復する、継続時間5秒。<color=#FFFFFF>『特殊スキル：砕氷寒冷』</color>と<color=#FFFFFF>『強化特殊スキル：霜柱凍土』</color>のHP消費効果は30秒に1回のみ発動可能。\nスキル発動時、<color=#FFFFFF>「氷霜値」</color>を20Pt獲得する。<color=#FFFFFF>「氷霜値」</color>が満タンの場合、すべての<color=#FFFFFF>「氷霜値」</color>を消費して<color=#FFFFFF>「エーテルベール・湧泉」</color>を展開する。\nスキル発動時、任意の<color=#FFFFFF>「エーテルベール」</color>の効果を受けている場合、<color=#FFFFFF>『クイック支援』</color>が発動可能になる。この時に他のメンバーの<color=#FFFFFF>『クイック支援』</color>を発動すると、照は自動で<color=#FFFFFF>『通常攻撃：最終裁決』</color>に繋げてチャージを行う。\nスキル発動中、無敵効果を得る。"
+            },
+            "134100030": {
+                "Title": "特殊スキル：<ruby=さいひょうかんれい>砕氷寒冷</ruby>"
+            },
+            "134100031": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1341009, Prop:1001}"
+            },
+            "134100032": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1341009, Prop:1002}"
+            },
+            "134100033": {
+                "Description": "HP回復割合",
+                "Param": "{CAL:1+AvatarSkillLevel(1)*0.06,1,2}%"
+            },
+            "134100034": {
+                "Title": "強化特殊スキル：<ruby=しもばしらとうど>霜柱凍土</ruby>"
+            },
+            "134100035": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1341010, Prop:1001}"
+            },
+            "134100036": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1341010, Prop:1002}"
+            },
+            "134100037": {
+                "Description": "エネルギー消費",
+                "Param": "80Pt"
+            },
+            "134100038": {
+                "Description": "HP回復割合",
+                "Param": "{CAL:1+AvatarSkillLevel(1)*0.06,1,2}%"
+            }
+        },
+        "2": {
+            "134100005": {
+                "Title": "回避：脱兎ステップ",
+                "Description": " <IconMap:Icon_Evade> を押して発動：\nダッシュで高速回避する。\nスキル発動中、無敵効果を得る。"
+            },
+            "134100006": {
+                "Title": "ダッシュ攻撃：バウンスダッシュ",
+                "Description": "回避時に <IconMap:Icon_Normal> を押して発動：\n前方に斬撃を放ち、<color=#F0D12B>物理属性ダメージ</color>と<color=#98EFF0>氷属性ダメージ</color>を与える。"
+            },
+            "134100007": {
+                "Title": "回避反撃：瞬閃の一撃",
+                "Description": "<color=#FFFFFF>『極限回避』</color>後に <IconMap:Icon_Normal> を押して発動：\n前方に落下斬撃を放ち、<color=#98EFF0>氷属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。"
+            },
+            "134100039": {
+                "Title": "ダッシュ攻撃：バウンスダッシュ"
+            },
+            "134100040": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1341011, Prop:1001}"
+            },
+            "134100041": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1341011, Prop:1002}"
+            },
+            "134100042": {
+                "Title": "回避反撃：瞬閃の一撃"
+            },
+            "134100043": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1341012, Prop:1001}"
+            },
+            "134100044": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1341012, Prop:1002}"
+            }
+        },
+        "3": {
+            "134100008": {
+                "Title": "連携スキル：仮初の協力",
+                "Description": "<color=#FFFFFF>『連携スキル』</color>開始時に、対応するエージェントを選択して発動：\n前方に連続斬撃を放ち、<color=#98EFF0>氷属性ダメージ</color>を大量に与える。\nスキル発動後、<color=#FFFFFF>「氷霜値」</color>を5Pt獲得する。<color=#FFFFFF>「氷霜値」</color>が満タンの場合、すべての<color=#FFFFFF>「氷霜値」</color>を消費して<color=#FFFFFF>「エーテルベール・湧泉」</color>を展開する。\nスキル発動後、任意の<color=#FFFFFF>「エーテルベール」</color>効果を受けている場合、<color=#FFFFFF>『クイック支援』</color>が発動可能になる。この時に他のメンバーの<color=#FFFFFF>『クイック支援』</color>を発動すると、照は自動で<color=#FFFFFF>『通常攻撃：最終裁決』</color>に繋げてチャージを行う。\nスキル発動中、無敵効果を得る。"
+            },
+            "134100009": {
+                "Title": "終結スキル：ウサちゃん乱れ斬り",
+                "Description": "デシベルレートが<color=#FFFFFF>『Maximum』</color>に達した時に <IconMap:Icon_UltimateReady> を押して発動：\n前方に連続攻撃を行った後、敵に落下斬撃を放ち、<color=#98EFF0>氷属性ダメージ</color>を大量に与える。\nスキル発動後、<color=#FFFFFF>「氷霜値」</color>を20Pt獲得する。<color=#FFFFFF>「氷霜値」</color>が満タンの場合、すべての<color=#FFFFFF>「氷霜値」</color>を消費して<color=#FFFFFF>「エーテルベール・湧泉」</color>を展開する。\nスキル発動後、任意の<color=#FFFFFF>「エーテルベール」</color>の効果を受けている場合、<color=#FFFFFF>『クイック支援』</color>が発動可能になる。この時に他のメンバーの<color=#FFFFFF>『クイック支援』</color>を発動すると、照は自動で<color=#FFFFFF>『通常攻撃：最終裁決』</color>に繋げてチャージを行う。\nスキル発動中、無敵効果を得る。"
+            },
+            "134100045": {
+                "Title": "連携スキル：仮初の協力"
+            },
+            "134100046": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1341013, Prop:1001}"
+            },
+            "134100047": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1341013, Prop:1002}"
+            },
+            "134100048": {
+                "Title": "終結スキル：ウサちゃん乱れ斬り"
+            },
+            "134100049": {
+                "Description": "ダメージ倍率",
+                "Param": "{{Skill:1341014, Prop:1001} + {Skill:1341023, Prop:1001}}"
+            },
+            "134100050": {
+                "Description": "ブレイク倍率",
+                "Param": "{{Skill:1341014, Prop:1002} + {Skill:1341023, Prop:1002}}"
+            }
+        },
+        "6": {
+            "134100011": {
+                "Title": "入場スキル：霜奔る",
+                "Description": "照の<color=#FFFFFF>「氷霜値」</color>が最大まで溜まっている、かつ接敵状態にある時に <IconMap:Icon_Switch> を押して発動：\n前方に連続攻撃を行った後、斬撃を繰り出し、<color=#98EFF0>氷属性ダメージ</color>を大量に与える。\nスキル発動時、すべての<color=#FFFFFF>「氷霜値」</color>を消費して<color=#FFFFFF>「エーテルベール・湧泉」</color>を展開する。\nスキル発動時、<color=#FFFFFF>『クイック支援』</color>が発動可能になる。この時に他のメンバーの<color=#FFFFFF>『クイック支援』</color>を発動すると、照は自動で<color=#FFFFFF>『通常攻撃：最終裁決』</color>に繋げてチャージを行う。\nスキル発動時、<color=#FFFFFF>『クイック支援』</color>を発動したとみなされる。\nスキル発動中、無敵効果を得る。"
+            },
+            "134100012": {
+                "Title": "クイック支援：ブラッシュアップ",
+                "Description": "操作しているメンバーが吹き飛ばされた時に、 <IconMap:Icon_Switch> を押して発動：\n前方に落下斬撃を放ち、<color=#98EFF0>氷属性ダメージ</color>を与える。\nスキル発動中、無敵効果を得る。"
+            },
+            "134100013": {
+                "Title": "パリィ支援：<ruby=そうせん>霜嬋</ruby>、真打ち",
+                "Description": "出場中のメンバーが攻撃されそうになった時に、 <IconMap:Icon_Switch> を押して発動：\n敵の攻撃をパリィし、ブレイク値を大量に蓄積させる。\nパリィ性能はかなり高い。激しい攻撃を受けている際は、<color=#FFFFFF>[支援ポイント]</color>の消費量が減少する。\nスキル発動中、無敵効果を得る。"
+            },
+            "134100014": {
+                "Title": "支援突撃：凛光の切り返し",
+                "Description": "<color=#FFFFFF>『パリィ支援』</color>発動後、 <IconMap:Icon_Normal> を押して発動：\n前方に連続斬撃を放ち、<color=#98EFF0>氷属性ダメージ</color>を大量に与える。\nスキル発動時、<color=#FFFFFF>「氷霜値」</color>が満タンの場合、すべての<color=#FFFFFF>「氷霜値」</color>を消費して<color=#FFFFFF>「エーテルベール・湧泉」</color>を展開する。\nスキル発動時、任意の<color=#FFFFFF>「エーテルベール」</color>の効果を受けている場合、<color=#FFFFFF>『クイック支援』</color>が発動可能になる。この時に他のメンバーの<color=#FFFFFF>『クイック支援』</color>を発動すると、照は自動で<color=#FFFFFF>『通常攻撃：最終裁決』</color>に繋げてチャージを行う。\nスキル発動中、無敵効果を得る。"
+            },
+            "134100051": {
+                "Title": "入場スキル：霜奔る"
+            },
+            "134100052": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1341015, Prop:1001}"
+            },
+            "134100053": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1341015, Prop:1002}"
+            },
+            "134100054": {
+                "Title": "クイック支援：ブラッシュアップ"
+            },
+            "134100055": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1341016, Prop:1001}"
+            },
+            "134100056": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1341016, Prop:1002}"
+            },
+            "134100057": {
+                "Title": "パリィ支援：<ruby=そうせん>霜嬋</ruby>、真打ち"
+            },
+            "134100058": {
+                "Description": "パリィ・軽 ブレイク倍率",
+                "Param": "{Skill:1341017, Prop:1002}"
+            },
+            "134100059": {
+                "Description": "パリィ・重 ブレイク倍率",
+                "Param": "{Skill:1341018, Prop:1002}"
+            },
+            "134100060": {
+                "Description": "パリィ・連続 ブレイク倍率",
+                "Param": "{Skill:1341019, Prop:1002}"
+            },
+            "134100061": {
+                "Title": "支援突撃：凛光の切り返し"
+            },
+            "134100062": {
+                "Description": "ダメージ倍率",
+                "Param": "{Skill:1341020, Prop:1001}"
+            },
+            "134100063": {
+                "Description": "ブレイク倍率",
+                "Param": "{Skill:1341020, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1341001": {
+            "DamageValue": 7340,
+            "DamageGrowth": 670,
+            "DazeValue": 5510,
+            "DazeGrowth": 260
+        },
+        "1341002": {
+            "DamageValue": 6600,
+            "DamageGrowth": 600,
+            "DazeValue": 4920,
+            "DazeGrowth": 230
+        },
+        "1341003": {
+            "DamageValue": 11580,
+            "DamageGrowth": 1060,
+            "DazeValue": 8440,
+            "DazeGrowth": 390
+        },
+        "1341004": {
+            "DamageValue": 18560,
+            "DamageGrowth": 1690,
+            "DazeValue": 15460,
+            "DazeGrowth": 710
+        },
+        "1341005": {
+            "DamageValue": 30910,
+            "DamageGrowth": 2810,
+            "DazeValue": 23450,
+            "DazeGrowth": 1070
+        },
+        "1341006": {
+            "DamageValue": 7730,
+            "DamageGrowth": 710,
+            "DazeValue": 5860,
+            "DazeGrowth": 270
+        },
+        "1341007": {
+            "DamageValue": 7730,
+            "DamageGrowth": 710,
+            "DazeValue": 5860,
+            "DazeGrowth": 270
+        },
+        "1341008": {
+            "DamageValue": 6970,
+            "DamageGrowth": 640,
+            "DazeValue": 5230,
+            "DazeGrowth": 240
+        },
+        "1341009": {
+            "DamageValue": 5690,
+            "DamageGrowth": 520,
+            "DazeValue": 5690,
+            "DazeGrowth": 260
+        },
+        "1341010": {
+            "DamageValue": 121080,
+            "DamageGrowth": 11010,
+            "DazeValue": 81000,
+            "DazeGrowth": 3690
+        },
+        "1341011": {
+            "DamageValue": 8630,
+            "DamageGrowth": 790,
+            "DazeValue": 4320,
+            "DazeGrowth": 200
+        },
+        "1341012": {
+            "DamageValue": 33880,
+            "DamageGrowth": 3080,
+            "DazeValue": 28600,
+            "DazeGrowth": 1300
+        },
+        "1341013": {
+            "DamageValue": 77080,
+            "DamageGrowth": 7010,
+            "DazeValue": 33190,
+            "DazeGrowth": 1510
+        },
+        "1341014": {
+            "DamageValue": 174980,
+            "DamageGrowth": 15910,
+            "DazeValue": 16140,
+            "DazeGrowth": 740
+        },
+        "1341015": {
+            "DamageValue": 68030,
+            "DamageGrowth": 6190,
+            "DazeValue": 23020,
+            "DazeGrowth": 1050
+        },
+        "1341016": {
+            "DamageValue": 17600,
+            "DamageGrowth": 1600,
+            "DazeValue": 8800,
+            "DazeGrowth": 400
+        },
+        "1341017": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1341018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1341019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1341020": {
+            "DamageValue": 36610,
+            "DamageGrowth": 3330,
+            "DazeValue": 31810,
+            "DazeGrowth": 1450
+        },
+        "1341021": {
+            "DamageValue": 95340,
+            "DamageGrowth": 0,
+            "DazeValue": 5230,
+            "DazeGrowth": 0
+        },
+        "1341022": {
+            "DamageValue": 550,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1341023": {
+            "DamageValue": 43750,
+            "DamageGrowth": 3980,
+            "DazeValue": 4030,
+            "DazeGrowth": 190
+        },
+        "1341024": {
+            "DamageValue": 43750,
+            "DamageGrowth": 3980,
+            "DazeValue": 4030,
+            "DazeGrowth": 190
+        }
+    }
+}

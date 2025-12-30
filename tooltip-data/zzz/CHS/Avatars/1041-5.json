@@ -1,0 +1,541 @@
+{
+    "Name": "「11号」",
+    "ElementTypes": [
+        "Fire"
+    ],
+    "Specialty": {
+        "Id": 1,
+        "Name": "强攻"
+    },
+    "Talents": {
+        "1": {
+            "Title": "快速升温",
+            "Description": "成为接战状态下的当前操作角色时，若「11号」的能量不足40点，则立即回复至80点，50秒内最多触发一次。",
+            "Lore": "长期的高强度实战训练让「11号」掌握了对于自身状态的调控。\n她会竭尽全力，保证以最好的状态迎接每一场战斗。"
+        },
+        "2": {
+            "Title": "高温汇聚",
+            "Description": "触发<color=#FFFFFF>[火力镇压]</color>时，<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[冲刺攻击]</color>、<color=#FFFFFF>[闪避反击]</color>造成的伤害提升3%，最多叠加12层，持续15秒，每层效果单独结算持续时间。",
+            "Lore": "「虽然她看起来又冷又硬，跟个大冰块似的…」\n「实际上内心却是滚烫滚烫的呢，就像有火在燃烧。」\n——来自黑曜石营内一位匿名的军人"
+        },
+        "3": {
+            "Title": "精锐士兵",
+            "Description": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[连携技]</color> 技能等级+2",
+            "Lore": "不论是训练还是实战，「11号」从来都是以最高标准要求自己，故而能一直拥有高标准的战斗力。"
+        },
+        "4": {
+            "Title": "纵情燃烧",
+            "Description": "<color=#FFFFFF>[普通攻击]</color>第一、二、三段或<color=#FFFFFF>[冲刺攻击]</color>发动时，若触发<color=#FFFFFF>[火力镇压]</color>，则在招式发动期间抗打断等级提升，受到的伤害降低18%；<color=#FFFFFF>[普通攻击]</color>第四段发动时，若触发<color=#FFFFFF>[火力镇压]</color>，则在招式发动期间获得无敌效果。",
+            "Lore": "她很羡慕火焰。\n而这些尽情燃烧着的火焰，也总会帮到她。"
+        },
+        "5": {
+            "Title": "完美士兵",
+            "Description": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[连携技]</color> 技能等级+2",
+            "Lore": "从精锐到楷模是一次漫长的跨越，但「11号」依然咬牙坚持着，似乎暗中有些什么理由一直鞭策她向完美士兵这一目标努力…"
+        },
+        "6": {
+            "Title": "炽热心流",
+            "Description": "发动<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>时，「11号」获得8层充能（上限8层）；触发<color=#FFFFFF>[火力镇压]</color>时，消耗1层充能，使当前招式无视目标25%<color=#FF5521>火属性伤害抗性</color>。",
+            "Lore": "剑刃的火焰撩起热浪，银发少女的战斗越来越热烈，那份热度仿佛顺着呼吸渗入了精神，连思考也变得炽热起来。"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "核心被动：热浪",
+            "DescriptionByLevel": {
+                "1": "「11号」在<color=#FFFFFF>[普通攻击]</color>或<color=#FFFFFF>[冲刺攻击]</color>中触发<color=#FFFFFF>[火力镇压]</color>时，招式造成的伤害提升<color=#2BAD00>35%</color>。",
+                "2": "「11号」在<color=#FFFFFF>[普通攻击]</color>或<color=#FFFFFF>[冲刺攻击]</color>中触发<color=#FFFFFF>[火力镇压]</color>时，招式造成的伤害提升<color=#2BAD00>40.8%</color>。",
+                "3": "「11号」在<color=#FFFFFF>[普通攻击]</color>或<color=#FFFFFF>[冲刺攻击]</color>中触发<color=#FFFFFF>[火力镇压]</color>时，招式造成的伤害提升<color=#2BAD00>46.6%</color>。",
+                "4": "「11号」在<color=#FFFFFF>[普通攻击]</color>或<color=#FFFFFF>[冲刺攻击]</color>中触发<color=#FFFFFF>[火力镇压]</color>时，招式造成的伤害提升<color=#2BAD00>52.5%</color>。",
+                "5": "「11号」在<color=#FFFFFF>[普通攻击]</color>或<color=#FFFFFF>[冲刺攻击]</color>中触发<color=#FFFFFF>[火力镇压]</color>时，招式造成的伤害提升<color=#2BAD00>58.3%</color>。",
+                "6": "「11号」在<color=#FFFFFF>[普通攻击]</color>或<color=#FFFFFF>[冲刺攻击]</color>中触发<color=#FFFFFF>[火力镇压]</color>时，招式造成的伤害提升<color=#2BAD00>64.1%</color>。",
+                "7": "「11号」在<color=#FFFFFF>[普通攻击]</color>或<color=#FFFFFF>[冲刺攻击]</color>中触发<color=#FFFFFF>[火力镇压]</color>时，招式造成的伤害提升<color=#2BAD00>70%</color>。"
+            }
+        },
+        "MathSkill": {
+            "Title": "额外能力：燎原",
+            "Description": "队伍中存在与自身属性或阵营相同的角色时触发：\n「11号」造成的<color=#FF5521>火属性伤害</color>提升10%，攻击处于失衡状态下的敌人时，该增益效果额外提升22.5%。"
+        },
+        "BaseProps": [
+            {
+                "20101": 0,
+                "12101": 0
+            },
+            {
+                "20101": 480,
+                "12101": 0
+            },
+            {
+                "20101": 480,
+                "12101": 25
+            },
+            {
+                "20101": 960,
+                "12101": 25
+            },
+            {
+                "20101": 960,
+                "12101": 50
+            },
+            {
+                "20101": 1440,
+                "12101": 50
+            },
+            {
+                "20101": 1440,
+                "12101": 75
+            }
+        ]
+    },
+    "SkillDescriptions": {
+        "0": {
+            "104100001": {
+                "Title": "普通攻击：热身火花",
+                "Description": "点按 <IconMap:Icon_Normal> 发动：\n向前方进行至多四段的斩击，造成<color=#F0D12B>物理伤害</color>。"
+            },
+            "104100003": {
+                "Title": "普通攻击：火力镇压",
+                "Description": "在恰当的时机点按 <IconMap:Icon_Normal> 发动：\n发动更加强力的斩击，造成<color=#FF5521>火属性伤害</color>。\n必定触发<color=#FFFFFF>[火力镇压]</color>的状态下，在进攻即将结束时点按 <IconMap:Icon_Normal> 可更快速地衔接至下一段<color=#FFFFFF>[普通攻击]</color>。\n在必定触发<color=#FFFFFF>[火力镇压]</color>的状态下，可解锁第五段<color=#FFFFFF>[普通攻击]</color>，发动<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>时，可强化下一次第五段<color=#FFFFFF>[普通攻击]</color>。强化第五段<color=#FFFFFF>[普通攻击]</color>发动时可消耗当前所有必定触发<color=#FFFFFF>[火力镇压]</color>的次数，每消耗一次造成额外<color=#FF5521>火属性伤害</color>。\n触发<color=#FFFFFF>[极限闪避]</color>后，可保留当前普攻段数持续5秒，发动<color=#FFFFFF>[闪避反击]</color>后点按 <IconMap:Icon_Normal> 可从保留的普攻段数开始发动<color=#FFFFFF>[普通攻击]</color>。"
+            },
+            "104100004": {
+                "Title": "普通攻击:火力迸发",
+                "Description": "长按 <IconMap:Icon_Normal> 发动：<color=#FFFFFF>[普通攻击：火力充能]</color>\n<color=#FFFFFF>[普通攻击：火力充能]</color>发动过程中松开 <IconMap:Icon_Normal> 时发动<color=#FFFFFF>[普通攻击：火力迸发]</color>。\n<color=#FFFFFF>[普通攻击：火力迸发]</color>发动过程中或<color=#FFFFFF>[普通攻击：火力充能]</color>发动瞬间受到敌方攻击时，可触发格挡反击，免疫该次伤害，并额外获得3次必定触发<color=#FFFFFF>[火力镇压]</color>的次数，点按 <IconMap:Icon_Normal> 可衔接至第三段<color=#FFFFFF>[普通攻击]</color>，上限为8次，\n在蓄力过程中拖曳{LAYOUT_CONSOLECONTROLLER#操作杆}{LAYOUT_FALLBACK#摇杆}时，可以发动<color=#FFFFFF>[普通攻击：烈焰奔袭]</color>。"
+            },
+            "104110001": {
+                "Title": "普通攻击：热身火花"
+            },
+            "104110002": {
+                "Description": "一段伤害倍率",
+                "Param": "{Skill:1041001, Prop:1001}"
+            },
+            "104110003": {
+                "Description": "二段伤害倍率",
+                "Param": "{Skill:1041003, Prop:1001}"
+            },
+            "104110004": {
+                "Description": "三段伤害倍率",
+                "Param": "{Skill:1041005, Prop:1001}"
+            },
+            "104110005": {
+                "Description": "四段伤害倍率",
+                "Param": "{Skill:1041007, Prop:1001}"
+            },
+            "104110006": {
+                "Description": "一段失衡倍率",
+                "Param": "{Skill:1041001, Prop:1002}"
+            },
+            "104110007": {
+                "Description": "二段失衡倍率",
+                "Param": "{Skill:1041003, Prop:1002}"
+            },
+            "104110008": {
+                "Description": "三段失衡倍率",
+                "Param": "{Skill:1041005, Prop:1002}"
+            },
+            "104110009": {
+                "Description": "四段失衡倍率",
+                "Param": "{Skill:1041007, Prop:1002}"
+            },
+            "104110010": {
+                "Title": "普通攻击：火力镇压"
+            },
+            "104110011": {
+                "Description": "一段伤害倍率",
+                "Param": "{Skill:1041002, Prop:1001}"
+            },
+            "104110012": {
+                "Description": "二段伤害倍率",
+                "Param": "{Skill:1041004, Prop:1001}"
+            },
+            "104110013": {
+                "Description": "三段伤害倍率",
+                "Param": "{Skill:1041006, Prop:1001}"
+            },
+            "104110014": {
+                "Description": "四段伤害倍率",
+                "Param": "{Skill:1041008, Prop:1001}"
+            },
+            "104110015": {
+                "Description": "五段伤害倍率",
+                "Param": "{Skill:1041024, Prop:1001}"
+            },
+            "104110016": {
+                "Description": "强化普攻第五段伤害倍率",
+                "Param": "{Skill:1041025, Prop:1001}"
+            },
+            "104110017": {
+                "Description": "强化普攻第五段额外伤害倍率",
+                "Param": "{Skill:1041026, Prop:1001}"
+            },
+            "104110018": {
+                "Description": "一段失衡倍率",
+                "Param": "{Skill:1041002, Prop:1002}"
+            },
+            "104110019": {
+                "Description": "二段失衡倍率",
+                "Param": "{Skill:1041004, Prop:1002}"
+            },
+            "104110020": {
+                "Description": "三段失衡倍率",
+                "Param": "{Skill:1041006, Prop:1002}"
+            },
+            "104110021": {
+                "Description": "四段失衡倍率",
+                "Param": "{Skill:1041008, Prop:1002}"
+            },
+            "104110022": {
+                "Description": "五段失衡倍率",
+                "Param": "{Skill:1041024, Prop:1002}"
+            },
+            "104110023": {
+                "Description": "强化普攻第五段失衡倍率",
+                "Param": "{Skill:1041025, Prop:1002}"
+            },
+            "104110025": {
+                "Title": "普通攻击:火力迸发"
+            },
+            "104110026": {
+                "Description": "普通攻击:火力迸发伤害倍率",
+                "Param": "{Skill:1041027, Prop:1001}"
+            },
+            "104110027": {
+                "Description": "普通攻击:火力迸发失衡倍率",
+                "Param": "{Skill:1041027, Prop:1002}"
+            }
+        },
+        "1": {
+            "104100005": {
+                "Title": "特殊技：烈火",
+                "Description": "点按 <IconMap:Icon_Special> 发动：\n向身周进行斩击，造成<color=#FF5521>火属性伤害</color>；\n招式发动期间抗打断等级提升。"
+            },
+            "104100007": {
+                "Title": "强化特殊技：盛燃烈火",
+                "Description": "能量足够时，点按 <IconMap:Icon_SpecialReady> 发动：\n向身周进行强力斩击，造成大量<color=#FF5521>火属性伤害</color>；\n招式发动期间拥有无敌效果；\n招式发动后，<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>必定触发<color=#FFFFFF>[火力镇压]</color>，最多持续30秒或触发8次。\n招式发动后，点击 <IconMap:Icon_Normal> 可直接衔接至第四段<color=#FFFFFF>[普通攻击]</color>。\n招式发动后，将进入<color=#FFFFFF>[戒备姿态]</color>；在<color=#FFFFFF>[戒备姿态]</color>下，若<color=#FFFFFF>[普通攻击]</color>期间受到敌人攻击，会发动<color=#FFFFFF>[普通攻击：火力充能]</color>格挡此次攻击，随后发动<color=#FFFFFF>[普通攻击：火力迸发]</color>，在<color=#FFFFFF>[普通攻击：火力迸发]</color>发动后点按 <IconMap:Icon_Normal> 可从保留的普攻段数开始发动<color=#FFFFFF>[普通攻击]</color>。"
+            },
+            "104110028": {
+                "Title": "特殊技：烈火"
+            },
+            "104110029": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1041010, Prop:1001}"
+            },
+            "104110030": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1041010, Prop:1002}"
+            },
+            "104110031": {
+                "Title": "强化特殊技：盛燃烈火"
+            },
+            "104110032": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1041011, Prop:1001}"
+            },
+            "104110033": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1041011, Prop:1002}"
+            },
+            "104110034": {
+                "Description": "能量消耗",
+                "Param": "80点"
+            }
+        },
+        "2": {
+            "104100008": {
+                "Title": "闪避：退火",
+                "Description": "点按 <IconMap:Icon_Evade> 发动：\n快速的冲刺闪避；\n招式发动期间拥有无敌效果。"
+            },
+            "104100009": {
+                "Title": "冲刺攻击：炽火",
+                "Description": "闪避时，点按 <IconMap:Icon_Normal> 发动：\n向前方进行斩击，造成<color=#F0D12B>物理伤害</color>。"
+            },
+            "104100010": {
+                "Title": "冲刺攻击：火力镇压",
+                "Description": "闪避时，点按 <IconMap:Icon_Normal> 发动：\n向前方进行斩击，造成<color=#FF5521>火属性伤害</color>。"
+            },
+            "104100011": {
+                "Title": "闪避反击：逆火",
+                "Description": "触发<color=#FFFFFF>[极限闪避]</color>后，点按 <IconMap:Icon_Normal> 发动：\n对前方敌人发动强力斩击，造成大量<color=#FF5521>火属性伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "104110035": {
+                "Title": "冲刺攻击：炽火"
+            },
+            "104110036": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1041012, Prop:1001}"
+            },
+            "104110037": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1041012, Prop:1002}"
+            },
+            "104110038": {
+                "Title": "冲刺攻击：火力镇压"
+            },
+            "104110039": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1041013, Prop:1001}"
+            },
+            "104110040": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1041013, Prop:1002}"
+            },
+            "104110041": {
+                "Title": "闪避反击：逆火"
+            },
+            "104110042": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1041015, Prop:1001}"
+            },
+            "104110043": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1041015, Prop:1002}"
+            }
+        },
+        "3": {
+            "104100013": {
+                "Title": "连携技：昂扬烈焰",
+                "Description": "触发<color=#FFFFFF>[连携技]</color>时，选择对应角色发动：\n对前方小范围敌人进行强力上挑斩击，造成大量<color=#FF5521>火属性伤害</color>；\n招式发动期间拥有无敌效果；\n招式发动后，<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>必定触发<color=#FFFFFF>[火力镇压]</color>，最多持续30秒或触发8次。\n招式发动后，点击 <IconMap:Icon_Normal> 可直接衔接至第四段<color=#FFFFFF>[普通攻击]</color>。 \n招式发动后，将进入<color=#FFFFFF>[戒备姿态]</color>；在<color=#FFFFFF>[戒备姿态]</color>下，若<color=#FFFFFF>[普通攻击]</color>期间受到敌人攻击，会发动<color=#FFFFFF>[普通攻击：火力充能]</color>格挡此次攻击，随后发动<color=#FFFFFF>[普通攻击：火力迸发]</color>，在<color=#FFFFFF>[普通攻击：火力迸发]</color>发动后点按 <IconMap:Icon_Normal> 可从保留的普攻段数开始发动<color=#FFFFFF>[普通攻击]</color>。"
+            },
+            "104100015": {
+                "Title": "终结技：轰鸣烈焰",
+                "Description": "喧响等级达到<color=#FFFFFF>[极]</color>时，点按 <IconMap:Icon_UltimateReady> 发动：\n对前方小范围敌人进行强力上挑斩击，造成大量<color=#FF5521>火属性伤害</color>；\n招式发动期间拥有无敌效果；\n招式发动后，<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>必定触发<color=#FFFFFF>[火力镇压]</color>，最多持续30秒或触发8次。\n招式发动后，点击 <IconMap:Icon_Normal> 可直接衔接至第四段<color=#FFFFFF>[普通攻击]</color>。\n招式发动后，将进入<color=#FFFFFF>[戒备姿态]</color>；在<color=#FFFFFF>[戒备姿态]</color>下，若<color=#FFFFFF>[普通攻击]</color>期间受到敌人攻击，会发动<color=#FFFFFF>[普通攻击：火力充能]</color>格挡此次攻击，随后发动<color=#FFFFFF>[普通攻击：火力迸发]</color>，在<color=#FFFFFF>[普通攻击：火力迸发]</color>发动后点按 <IconMap:Icon_Normal> 可从保留的普攻段数开始发动<color=#FFFFFF>[普通攻击]</color>。"
+            },
+            "104110044": {
+                "Title": "连携技：昂扬烈焰"
+            },
+            "104110045": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1041016, Prop:1001}"
+            },
+            "104110046": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1041016, Prop:1002}"
+            },
+            "104110047": {
+                "Title": "终结技：轰鸣烈焰"
+            },
+            "104110048": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1041017, Prop:1001}"
+            },
+            "104110049": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1041017, Prop:1002}"
+            }
+        },
+        "6": {
+            "104100018": {
+                "Title": "快速支援：火力掩护",
+                "Description": "当前操作中的角色被击飞时，点按 <IconMap:Icon_Switch> 发动：\n对前方敌人发动斩击，造成<color=#FF5521>火属性伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "104100019": {
+                "Title": "招架支援：巩固防线",
+                "Description": "前场角色即将被攻击时，点按 <IconMap:Icon_Switch> 发动：\n招架敌人的攻击，累积大量失衡值；\n招式发动期间拥有无敌效果。"
+            },
+            "104100020": {
+                "Title": "支援突击：重燃",
+                "Description": "发动<color=#FFFFFF>[招架支援]</color>后，点按 <IconMap:Icon_Normal> 发动：\n对前方敌人发动交叉斩击，造成<color=#FF5521>火属性伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "104110050": {
+                "Title": "快速支援：火力掩护"
+            },
+            "104110051": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1041019, Prop:1001}"
+            },
+            "104110052": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1041019, Prop:1002}"
+            },
+            "104110053": {
+                "Title": "招架支援：巩固防线"
+            },
+            "104110054": {
+                "Description": "轻招架失衡倍率",
+                "Param": "{Skill:1041020, Prop:1002}"
+            },
+            "104110055": {
+                "Description": "重招架失衡倍率",
+                "Param": "{Skill:1041021, Prop:1002}"
+            },
+            "104110056": {
+                "Description": "连续招架失衡倍率",
+                "Param": "{Skill:1041022, Prop:1002}"
+            },
+            "104110057": {
+                "Title": "支援突击：重燃"
+            },
+            "104110058": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1041023, Prop:1001}"
+            },
+            "104110059": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1041023, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1041001": {
+            "DamageValue": 3440,
+            "DamageGrowth": 320,
+            "DazeValue": 1720,
+            "DazeGrowth": 80
+        },
+        "1041002": {
+            "DamageValue": 5510,
+            "DamageGrowth": 510,
+            "DazeValue": 1800,
+            "DazeGrowth": 90
+        },
+        "1041003": {
+            "DamageValue": 4120,
+            "DamageGrowth": 380,
+            "DazeValue": 3440,
+            "DazeGrowth": 160
+        },
+        "1041004": {
+            "DamageValue": 5720,
+            "DamageGrowth": 520,
+            "DazeValue": 3360,
+            "DazeGrowth": 160
+        },
+        "1041005": {
+            "DamageValue": 10280,
+            "DamageGrowth": 940,
+            "DazeValue": 8230,
+            "DazeGrowth": 380
+        },
+        "1041006": {
+            "DamageValue": 13200,
+            "DamageGrowth": 1200,
+            "DazeValue": 7520,
+            "DazeGrowth": 350
+        },
+        "1041007": {
+            "DamageValue": 21340,
+            "DamageGrowth": 1940,
+            "DazeValue": 16760,
+            "DazeGrowth": 770
+        },
+        "1041008": {
+            "DamageValue": 34070,
+            "DamageGrowth": 3100,
+            "DazeValue": 19200,
+            "DazeGrowth": 880
+        },
+        "1041009": {
+            "DamageValue": 9280,
+            "DamageGrowth": 850,
+            "DazeValue": 9280,
+            "DazeGrowth": 430
+        },
+        "1041010": {
+            "DamageValue": 5260,
+            "DamageGrowth": 480,
+            "DazeValue": 5260,
+            "DazeGrowth": 240
+        },
+        "1041011": {
+            "DamageValue": 67500,
+            "DamageGrowth": 6140,
+            "DazeValue": 54350,
+            "DazeGrowth": 2480
+        },
+        "1041012": {
+            "DamageValue": 6830,
+            "DamageGrowth": 630,
+            "DazeValue": 3420,
+            "DazeGrowth": 160
+        },
+        "1041013": {
+            "DamageValue": 7880,
+            "DamageGrowth": 720,
+            "DazeValue": 7880,
+            "DazeGrowth": 360
+        },
+        "1041014": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1041015": {
+            "DamageValue": 26200,
+            "DamageGrowth": 2390,
+            "DazeValue": 22580,
+            "DazeGrowth": 1030
+        },
+        "1041016": {
+            "DamageValue": 63250,
+            "DamageGrowth": 5750,
+            "DazeValue": 21360,
+            "DazeGrowth": 980
+        },
+        "1041017": {
+            "DamageValue": 210300,
+            "DamageGrowth": 19120,
+            "DazeValue": 28500,
+            "DazeGrowth": 1300
+        },
+        "1041018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1041019": {
+            "DamageValue": 12080,
+            "DamageGrowth": 1100,
+            "DazeValue": 12080,
+            "DazeGrowth": 550
+        },
+        "1041020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 25900,
+            "DazeGrowth": 1180
+        },
+        "1041021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 32730,
+            "DazeGrowth": 1490
+        },
+        "1041022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15930,
+            "DazeGrowth": 730
+        },
+        "1041023": {
+            "DamageValue": 38370,
+            "DamageGrowth": 3490,
+            "DazeValue": 33550,
+            "DazeGrowth": 1530
+        },
+        "1041024": {
+            "DamageValue": 44170,
+            "DamageGrowth": 4020,
+            "DazeValue": 14530,
+            "DazeGrowth": 670
+        },
+        "1041025": {
+            "DamageValue": 44170,
+            "DamageGrowth": 4020,
+            "DazeValue": 14530,
+            "DazeGrowth": 670
+        },
+        "1041026": {
+            "DamageValue": 8280,
+            "DamageGrowth": 760,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1041027": {
+            "DamageValue": 9410,
+            "DamageGrowth": 860,
+            "DazeValue": 3070,
+            "DazeGrowth": 140
+        }
+    }
+}

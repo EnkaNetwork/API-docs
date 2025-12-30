@@ -1,0 +1,484 @@
+{
+    "Name": "Zhao",
+    "ElementTypes": [
+        "Ice"
+    ],
+    "Specialty": {
+        "Id": 5,
+        "Name": "Defensive"
+    },
+    "Talents": {
+        "1": {
+            "Title": "Eiskaltes Urteil",
+            "Description": "Wenn Zhao ausgewechselt wird und nicht mehr die aktuell gesteuerte Figur ist, ignoriert der SCH aller Truppenfiguren 15 % des WDS des Ziels gegen alle Attribute, hält 50 s. Beim wiederholten Auslösen wird die Dauer aktualisiert.",
+            "Lore": "„Lass dich nicht von diesem niedlichen Gesicht täuschen! Ich werde diese Begegnung nie vergessen ... Gleich hier, vor ein paar Dutzend Leuten deutete sie mit ihrem Finger und sprach dann mit dem herzallerliebsten Gesichtsausdruck das eisigste Urteil aus: ‚Falls sich eure Firma auch nur einem Punkt auf dieser Wiedergutmachungsliste widersetzt, werdet ihr von TOPS entfernt. Das ist keine Drohung, sondern die objektiv richtige Schlussfolgerung.‘ Dieses Bild ist mir für immer ins Gedächtnis geprägt! ... Trotzdem muss ich Fräulein Zhao danken.“\n– Unternehmensmanager, der seine Firma nach einer brutalen Neustrukturierung wieder aufleben lassen konnte und mit hin- und hergerissenem Gesichtsausdruck seine Schläfen massiert."
+        },
+        "2": {
+            "Title": "Seniorkollegin bei Krampus",
+            "Description": "Wenn Zhaos LP wiederhergestellt werden, erhöht sich ihr ANG um 20 % und der ANG anderer Truppenfiguren erhöht sich um 15 %, hält 50 s. Beim wiederholten Auslösen wird die Dauer aktualisiert.",
+            "Lore": "Xiao’Zhao ist Krampus schon sehr früh beigetreten und wird selbst von der absoluten Elite der Elite innerhalb der Überwachungsbehörde „Krampus“ als „Seniorkollegin“ angesprochen. So sollte es jedenfalls sein ... Wären nur die ganzen Neulinge, die nach ihr gekommen sind, nicht solche Leute, denen Persönlichkeit mehr bedeutet als Protokoll."
+        },
+        "3": {
+            "Title": "Frostschleier-Klinge",
+            "Description": "Fähigkeitsstufe von <color=#FFFFFF>Basisangriff</color>, <color=#FFFFFF>Ausweichen</color>, <color=#FFFFFF>Hilfe</color>, <color=#FFFFFF>Spezialangriff</color> und <color=#FFFFFF>Kettenangriff</color> +2",
+            "Lore": "Xiao’Zhaos Waffe „Frostschleier“ ist das experimentelle Eigentum eines geheimen Forschungsprojekts von TOPS. Statt die Hiebe einfach mit Eis-Äther zu erfüllen, schleust die Waffe Äther direkt in ihre eigene Struktur. Unter normalen Umständen ist „Frostschleier“ nur halb so schwer wie andere ähnliche Waffen, doch im Kampf gewinnt die rasch kondensierte Eisklinge viel größere Zerstörungskraft. Man würde fast denken, dieser Aufbau wurde speziell für Xiao’Zhao entwickelt."
+        },
+        "4": {
+            "Title": "Federleichte Schritte",
+            "Description": "Wenn Zhao einen <color=#FFFFFF>Ätherschleier</color> aktiviert, erhält sie 250 Pkt. Dezibel. Der KRIT-SCH ihres <color=#FFFFFF>Ultimates</color>, <color=#FFFFFF>Kettenangriffs</color> und von <color=#FFFFFF>Basisangriff: Endgültiges Urteil</color> wird um 40 % erhöht.",
+            "Lore": "Agil, leichtfüßig und schwer zu fassen – Worte, mit denen man einst ein Häschen umschrieben hätte, werden nun verwendet, um eine furchteinflößende Kriegerin mit einer massiven Waffe zu beschreiben, die alles durchtrennen kann ..."
+        },
+        "5": {
+            "Title": "Flauschige Lauscherin",
+            "Description": "Fähigkeitsstufe von <color=#FFFFFF>Basisangriff</color>, <color=#FFFFFF>Ausweichen</color>, <color=#FFFFFF>Hilfe</color>, <color=#FFFFFF>Spezialangriff</color> und <color=#FFFFFF>Kettenangriff</color> +2",
+            "Lore": "Wenn Xiao’Zhaos Ohren unbewusst zucken und leicht hochstehen, bedeutet das, dass sie etwas gehört hat, das für sie von größter Bedeutung ist – Informationen, Auftragsdetails, ein Angebot ... oder Lob."
+        },
+        "6": {
+            "Title": "Unbezahlbar ist auch ein Preis",
+            "Description": "Die KRIT-Rate von <color=#FFFFFF>Passive Kernfähigkeit: Ideale Kollegin</color> wird auf 125 % des ursprünglichen Werts erhöht. Der vom Aufladen von <color=#FFFFFF>Basisangriff: Endgültiges Urteil</color> erhaltene zusätzliche SCH wird auf 140 % des ursprünglichen Werts erhöht und die angesammelte Aufladezeit wird beim Angreifen nicht mehr verbraucht.",
+            "Lore": "Die Mauer aus Überzeugungen, die sie von Kindesbeinen an aufgebaut hat und die von so vielen Leuten geformt wurde, hat wegen einer einzigen Begegnung Risse bekommen.\nXiao’Zhao sieht Wert nun etwas anders: Wenn etwas kein Preisschild hat, ist es nicht nutzlos, sondern einfach so wertvoll, dass nichts ihm gleichkommt."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passive Kernfähigkeit: Ideale Kollegin",
+            "DescriptionByLevel": {
+                "1": "Basierend auf ihren anfänglichen max. LP wird Zhaos KRIT-Rate zusätzlich erhöht. Pro 1.000 Pkt. anfängliche max. LP wird ihre KRIT-Rate um <color=#2BAD00>0,8 %</color> erhöht.\nBeim Betreten des Kampffelds erhält Zhao 100 Pkt. <color=#FFFFFF>Frostkalt-Wert</color>. Im Modus „Ermittlungszone“ hat dieser Effekt eine Abklingzeit von 180 s. <color=#FFFFFF>Frostkalt-Wert</color> kann maximal 100 Pkt. betragen.\nTrifft die aktuell gesteuerte Figur einen Gegner mit ihrem Angriff, erhält Zhao 6 Pkt. <color=#FFFFFF>Frostkalt-Wert</color>. Dieser Effekt hat eine Abklingzeit von 3 s.\nWenn Zhao bei vollem <color=#FFFFFF>Frostkalt-Wert</color> eingewechselt wird, wendet sie ihre <color=#FFFFFF>Eintrittstechnik</color> an.\nBeim Anwenden ihrer <color=#FFFFFF>Eintrittstechnik</color> verbraucht Zhao ihren gesamten <color=#FFFFFF>Frostkalt-Wert</color>, um <color=#FFFFFF>Ätherschleier – Urquell</color> zu aktivieren.\nWährend <color=#FFFFFF>Ätherschleier – Urquell</color> aktiv ist, werden die max. LP aller Truppenfiguren um 5 % erhöht, hält 40 s. Bevor <color=#FFFFFF>Ätherschleier – Urquell</color> erneut durch Zhao aktiviert wird, endet zunächst <color=#FFFFFF>Ätherschleier – Urquell</color> von zuvor.\nWendet Zhao <color=#FFFFFF>Ätherschleier – Urquell</color> an, wird der ANG aller Truppenfiguren um <color=#2BAD00>100</color> Pkt. erhöht, hält 50 s. Beim wiederholten Auslösen wird die Dauer aktualisiert.",
+                "2": "Basierend auf ihren anfänglichen max. LP wird Zhaos KRIT-Rate zusätzlich erhöht. Pro 1.000 Pkt. anfängliche max. LP wird ihre KRIT-Rate um <color=#2BAD00>0,9 %</color> erhöht.\nBeim Betreten des Kampffelds erhält Zhao 100 Pkt. <color=#FFFFFF>Frostkalt-Wert</color>. Im Modus „Ermittlungszone“ hat dieser Effekt eine Abklingzeit von 180 s. <color=#FFFFFF>Frostkalt-Wert</color> kann maximal 100 Pkt. betragen.\nTrifft die aktuell gesteuerte Figur einen Gegner mit ihrem Angriff, erhält Zhao 6 Pkt. <color=#FFFFFF>Frostkalt-Wert</color>. Dieser Effekt hat eine Abklingzeit von 3 s.\nWenn Zhao bei vollem <color=#FFFFFF>Frostkalt-Wert</color> eingewechselt wird, wendet sie ihre <color=#FFFFFF>Eintrittstechnik</color> an.\nBeim Anwenden ihrer <color=#FFFFFF>Eintrittstechnik</color> verbraucht Zhao ihren gesamten <color=#FFFFFF>Frostkalt-Wert</color>, um <color=#FFFFFF>Ätherschleier – Urquell</color> zu aktivieren.\nWährend <color=#FFFFFF>Ätherschleier – Urquell</color> aktiv ist, werden die max. LP aller Truppenfiguren um 5 % erhöht, hält 40 s. Bevor <color=#FFFFFF>Ätherschleier – Urquell</color> erneut durch Zhao aktiviert wird, endet zunächst <color=#FFFFFF>Ätherschleier – Urquell</color> von zuvor.\nWendet Zhao <color=#FFFFFF>Ätherschleier – Urquell</color> an, wird der ANG aller Truppenfiguren um <color=#2BAD00>250</color> Pkt. erhöht, hält 50 s. Beim wiederholten Auslösen wird die Dauer aktualisiert.",
+                "3": "Basierend auf ihren anfänglichen max. LP wird Zhaos KRIT-Rate zusätzlich erhöht. Pro 1.000 Pkt. anfängliche max. LP wird ihre KRIT-Rate um <color=#2BAD00>1 %</color> erhöht.\nBeim Betreten des Kampffelds erhält Zhao 100 Pkt. <color=#FFFFFF>Frostkalt-Wert</color>. Im Modus „Ermittlungszone“ hat dieser Effekt eine Abklingzeit von 180 s. <color=#FFFFFF>Frostkalt-Wert</color> kann maximal 100 Pkt. betragen.\nTrifft die aktuell gesteuerte Figur einen Gegner mit ihrem Angriff, erhält Zhao 6 Pkt. <color=#FFFFFF>Frostkalt-Wert</color>. Dieser Effekt hat eine Abklingzeit von 3 s.\nWenn Zhao bei vollem <color=#FFFFFF>Frostkalt-Wert</color> eingewechselt wird, wendet sie ihre <color=#FFFFFF>Eintrittstechnik</color> an.\nBeim Anwenden ihrer <color=#FFFFFF>Eintrittstechnik</color> verbraucht Zhao ihren gesamten <color=#FFFFFF>Frostkalt-Wert</color>, um <color=#FFFFFF>Ätherschleier – Urquell</color> zu aktivieren.\nWährend <color=#FFFFFF>Ätherschleier – Urquell</color> aktiv ist, werden die max. LP aller Truppenfiguren um 5 % erhöht, hält 40 s. Bevor <color=#FFFFFF>Ätherschleier – Urquell</color> erneut durch Zhao aktiviert wird, endet zunächst <color=#FFFFFF>Ätherschleier – Urquell</color> von zuvor.\nWendet Zhao <color=#FFFFFF>Ätherschleier – Urquell</color> an, wird der ANG aller Truppenfiguren um <color=#2BAD00>400</color> Pkt. erhöht, hält 50 s. Beim wiederholten Auslösen wird die Dauer aktualisiert.",
+                "4": "Basierend auf ihren anfänglichen max. LP wird Zhaos KRIT-Rate zusätzlich erhöht. Pro 1.000 Pkt. anfängliche max. LP wird ihre KRIT-Rate um <color=#2BAD00>1,1 %</color> erhöht.\nBeim Betreten des Kampffelds erhält Zhao 100 Pkt. <color=#FFFFFF>Frostkalt-Wert</color>. Im Modus „Ermittlungszone“ hat dieser Effekt eine Abklingzeit von 180 s. <color=#FFFFFF>Frostkalt-Wert</color> kann maximal 100 Pkt. betragen.\nTrifft die aktuell gesteuerte Figur einen Gegner mit ihrem Angriff, erhält Zhao 6 Pkt. <color=#FFFFFF>Frostkalt-Wert</color>. Dieser Effekt hat eine Abklingzeit von 3 s.\nWenn Zhao bei vollem <color=#FFFFFF>Frostkalt-Wert</color> eingewechselt wird, wendet sie ihre <color=#FFFFFF>Eintrittstechnik</color> an.\nBeim Anwenden ihrer <color=#FFFFFF>Eintrittstechnik</color> verbraucht Zhao ihren gesamten <color=#FFFFFF>Frostkalt-Wert</color>, um <color=#FFFFFF>Ätherschleier – Urquell</color> zu aktivieren.\nWährend <color=#FFFFFF>Ätherschleier – Urquell</color> aktiv ist, werden die max. LP aller Truppenfiguren um 5 % erhöht, hält 40 s. Bevor <color=#FFFFFF>Ätherschleier – Urquell</color> erneut durch Zhao aktiviert wird, endet zunächst <color=#FFFFFF>Ätherschleier – Urquell</color> von zuvor.\nWendet Zhao <color=#FFFFFF>Ätherschleier – Urquell</color> an, wird der ANG aller Truppenfiguren um <color=#2BAD00>550</color> Pkt. erhöht, hält 50 s. Beim wiederholten Auslösen wird die Dauer aktualisiert.",
+                "5": "Basierend auf ihren anfänglichen max. LP wird Zhaos KRIT-Rate zusätzlich erhöht. Pro 1.000 Pkt. anfängliche max. LP wird ihre KRIT-Rate um <color=#2BAD00>1,2 %</color> erhöht.\nBeim Betreten des Kampffelds erhält Zhao 100 Pkt. <color=#FFFFFF>Frostkalt-Wert</color>. Im Modus „Ermittlungszone“ hat dieser Effekt eine Abklingzeit von 180 s. <color=#FFFFFF>Frostkalt-Wert</color> kann maximal 100 Pkt. betragen.\nTrifft die aktuell gesteuerte Figur einen Gegner mit ihrem Angriff, erhält Zhao 6 Pkt. <color=#FFFFFF>Frostkalt-Wert</color>. Dieser Effekt hat eine Abklingzeit von 3 s.\nWenn Zhao bei vollem <color=#FFFFFF>Frostkalt-Wert</color> eingewechselt wird, wendet sie ihre <color=#FFFFFF>Eintrittstechnik</color> an.\nBeim Anwenden ihrer <color=#FFFFFF>Eintrittstechnik</color> verbraucht Zhao ihren gesamten <color=#FFFFFF>Frostkalt-Wert</color>, um <color=#FFFFFF>Ätherschleier – Urquell</color> zu aktivieren.\nWährend <color=#FFFFFF>Ätherschleier – Urquell</color> aktiv ist, werden die max. LP aller Truppenfiguren um 5 % erhöht, hält 40 s. Bevor <color=#FFFFFF>Ätherschleier – Urquell</color> erneut durch Zhao aktiviert wird, endet zunächst <color=#FFFFFF>Ätherschleier – Urquell</color> von zuvor.\nWendet Zhao <color=#FFFFFF>Ätherschleier – Urquell</color> an, wird der ANG aller Truppenfiguren um <color=#2BAD00>700</color> Pkt. erhöht, hält 50 s. Beim wiederholten Auslösen wird die Dauer aktualisiert.",
+                "6": "Basierend auf ihren anfänglichen max. LP wird Zhaos KRIT-Rate zusätzlich erhöht. Pro 1.000 Pkt. anfängliche max. LP wird ihre KRIT-Rate um <color=#2BAD00>1,3 %</color> erhöht.\nBeim Betreten des Kampffelds erhält Zhao 100 Pkt. <color=#FFFFFF>Frostkalt-Wert</color>. Im Modus „Ermittlungszone“ hat dieser Effekt eine Abklingzeit von 180 s. <color=#FFFFFF>Frostkalt-Wert</color> kann maximal 100 Pkt. betragen.\nTrifft die aktuell gesteuerte Figur einen Gegner mit ihrem Angriff, erhält Zhao 6 Pkt. <color=#FFFFFF>Frostkalt-Wert</color>. Dieser Effekt hat eine Abklingzeit von 3 s.\nWenn Zhao bei vollem <color=#FFFFFF>Frostkalt-Wert</color> eingewechselt wird, wendet sie ihre <color=#FFFFFF>Eintrittstechnik</color> an.\nBeim Anwenden ihrer <color=#FFFFFF>Eintrittstechnik</color> verbraucht Zhao ihren gesamten <color=#FFFFFF>Frostkalt-Wert</color>, um <color=#FFFFFF>Ätherschleier – Urquell</color> zu aktivieren.\nWährend <color=#FFFFFF>Ätherschleier – Urquell</color> aktiv ist, werden die max. LP aller Truppenfiguren um 5 % erhöht, hält 40 s. Bevor <color=#FFFFFF>Ätherschleier – Urquell</color> erneut durch Zhao aktiviert wird, endet zunächst <color=#FFFFFF>Ätherschleier – Urquell</color> von zuvor.\nWendet Zhao <color=#FFFFFF>Ätherschleier – Urquell</color> an, wird der ANG aller Truppenfiguren um <color=#2BAD00>850</color> Pkt. erhöht, hält 50 s. Beim wiederholten Auslösen wird die Dauer aktualisiert.",
+                "7": "Basierend auf ihren anfänglichen max. LP wird Zhaos KRIT-Rate zusätzlich erhöht. Pro 1.000 Pkt. anfängliche max. LP wird ihre KRIT-Rate um <color=#2BAD00>1,4 %</color> erhöht.\nBeim Betreten des Kampffelds erhält Zhao 100 Pkt. <color=#FFFFFF>Frostkalt-Wert</color>. Im Modus „Ermittlungszone“ hat dieser Effekt eine Abklingzeit von 180 s. <color=#FFFFFF>Frostkalt-Wert</color> kann maximal 100 Pkt. betragen.\nTrifft die aktuell gesteuerte Figur einen Gegner mit ihrem Angriff, erhält Zhao 6 Pkt. <color=#FFFFFF>Frostkalt-Wert</color>. Dieser Effekt hat eine Abklingzeit von 3 s.\nWenn Zhao bei vollem <color=#FFFFFF>Frostkalt-Wert</color> eingewechselt wird, wendet sie ihre <color=#FFFFFF>Eintrittstechnik</color> an.\nBeim Anwenden ihrer <color=#FFFFFF>Eintrittstechnik</color> verbraucht Zhao ihren gesamten <color=#FFFFFF>Frostkalt-Wert</color>, um <color=#FFFFFF>Ätherschleier – Urquell</color> zu aktivieren.\nWährend <color=#FFFFFF>Ätherschleier – Urquell</color> aktiv ist, werden die max. LP aller Truppenfiguren um 5 % erhöht, hält 40 s. Bevor <color=#FFFFFF>Ätherschleier – Urquell</color> erneut durch Zhao aktiviert wird, endet zunächst <color=#FFFFFF>Ätherschleier – Urquell</color> von zuvor.\nWendet Zhao <color=#FFFFFF>Ätherschleier – Urquell</color> an, wird der ANG aller Truppenfiguren um <color=#2BAD00>1.000</color> Pkt. erhöht, hält 50 s. Beim wiederholten Auslösen wird die Dauer aktualisiert."
+            }
+        },
+        "MathSkill": {
+            "Title": "Zusatzfähigkeit: Kristallisation",
+            "Description": "Wenn sich in der Truppe eine <color=#FFFFFF>Attacke</color>-, <color=#FFFFFF>Anomalie</color>- oder <color=#FFFFFF>Support</color>-Figur befindet:\nBefindet sich Zhao innerhalb eines beliebigen <color=#FFFFFF>Ätherschleiers</color>, wird der SCH der gesamten Truppe um 10 % erhöht. Hat Zhao mehr als 15.000 anfängliche max. LP, wird dieser SCH-Erhöhungseffekt pro 400 Pkt. über diesem Wert um weitere 1 % erhöht; der anfängliche Effekt und der zusätzliche Bonus summieren sich auf bis zu 40 %. Hat Zhao 27.000 anfängliche max. LP, erreicht dieser Bonuseffekt seinen Maximalwert."
+        },
+        "BaseProps": [
+            {
+                "11102": 0,
+                "12101": 0
+            },
+            {
+                "11102": 600,
+                "12101": 0
+            },
+            {
+                "11102": 600,
+                "12101": 25
+            },
+            {
+                "11102": 1200,
+                "12101": 25
+            },
+            {
+                "11102": 1200,
+                "12101": 50
+            },
+            {
+                "11102": 1800,
+                "12101": 50
+            },
+            {
+                "11102": 1800,
+                "12101": 75
+            }
+        ]
+    },
+    "SkillDescriptions": {
+        "0": {
+            "134100001": {
+                "Title": "Basisangriff: Eisiges Urteil",
+                "Description": "Drücke <IconMap:Icon_Normal> zum Anwenden:\nFührt bis zu 5 Hiebe nach vorn aus. Der erste verursacht <color=#F0D12B>phys. SCH</color>, die nachfolgenden vier verursachen <color=#98EFF0>Eis-SCH</color>."
+            },
+            "134100002": {
+                "Title": "Basisangriff: Endgültiges Urteil",
+                "Description": "Halte <IconMap:Icon_Normal> gedrückt zum Anwenden:\nMacht sich bereit und beginnt aufzuladen, führt dann beim Loslassen einen Hieb nach vorn aus und verursacht hohen <color=#98EFF0>Eis-SCH</color>.\nBeim Aufladen sammelt Zhao bis zu 5 s Aufladezeit an. Beim Treffen von Gegnern mit dem Gnadenstoß von <color=#FFFFFF>Basisangriff: Endgültiges Urteil</color>, des <color=#FFFFFF>Kettenangriffs</color> oder der <color=#FFFFFF>sukzessiven Hilfe</color> wird die gespeicherte Aufladezeit verbraucht, um zusätzlichen SCH zu verursachen. Pro 1 s Aufladezeit verursacht Zhao zusätzlichen SCH in Höhe von <color=#2BAD00>{CAL:0.12+AvatarSkillLevel(0)*0.01,100,2} %</color> ihrer max. LP.\nBefindet sich Zhao innerhalb eines beliebigen <color=#FFFFFF>Ätherschleiers</color>, kann sie auch, wenn sie während des Aufladens zur nicht-gesteuerten Figur wird, weiter aufladen.\nWenn <color=#FFFFFF>Frostkalt-Wert</color> beim Anwenden der Fähigkeit voll ist, wird der gesamte <color=#FFFFFF>Frostkalt-Wert</color> verbraucht, um <color=#FFFFFF>Ätherschleier – Urquell</color> zu aktivieren und eine <color=#FFFFFF>schnelle Hilfe</color> auszulösen. Wird dabei die <color=#FFFFFF>schnelle Hilfe</color> eines Truppenmitglieds ausgeführt, wendet Zhao im Anschluss automatisch <color=#FFFFFF>Basisangriff: Endgültiges Urteil</color> an und beginnt aufzuladen.\nBeim Anwenden dieser Fähigkeit erhöht sich die Stufe des Unterbrechungs-WDS und der erlittene SCH verringert sich um 40 %.\nWenn Zhao nicht die aktuell gesteuerte Figur ist, ist sie beim Anwenden der Fähigkeit unverwundbar."
+            },
+            "134100015": {
+                "Title": "Basisangriff: Eisiges Urteil"
+            },
+            "134100016": {
+                "Description": "SCH-Multiplikator des 1. Angriffs",
+                "Param": "{Skill:1341001, Prop:1001}"
+            },
+            "134100017": {
+                "Description": "SCH-Multiplikator des 2. Angriffs",
+                "Param": "{Skill:1341002, Prop:1001}"
+            },
+            "134100018": {
+                "Description": "SCH-Multiplikator des 3. Angriffs",
+                "Param": "{Skill:1341003, Prop:1001}"
+            },
+            "134100019": {
+                "Description": "SCH-Multiplikator des 4. Angriffs",
+                "Param": "{Skill:1341004, Prop:1001}"
+            },
+            "134100020": {
+                "Description": "SCH-Multiplikator des 5. Angriffs",
+                "Param": "{{Skill:1341005, Prop:1001} + {Skill:1341006, Prop:1001}}"
+            },
+            "134100021": {
+                "Description": "Benommenheit-Multiplikator des 1. Angriffs",
+                "Param": "{Skill:1341001, Prop:1002}"
+            },
+            "134100022": {
+                "Description": "Benommenheit-Multiplikator des 2. Angriffs",
+                "Param": "{Skill:1341002, Prop:1002}"
+            },
+            "134100023": {
+                "Description": "Benommenheit-Multiplikator des 3. Angriffs",
+                "Param": "{Skill:1341003, Prop:1002}"
+            },
+            "134100024": {
+                "Description": "Benommenheit-Multiplikator des 4. Angriffs",
+                "Param": "{Skill:1341004, Prop:1002}"
+            },
+            "134100025": {
+                "Description": "Benommenheit-Multiplikator des 5. Angriffs",
+                "Param": "{{Skill:1341005, Prop:1002} + {Skill:1341006, Prop:1002}}"
+            },
+            "134100026": {
+                "Title": "Basisangriff: Endgültiges Urteil"
+            },
+            "134100027": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1341008, Prop:1001}"
+            },
+            "134100028": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1341008, Prop:1002}"
+            },
+            "134100029": {
+                "Description": "Zusätzlicher Multiplikator für geladene max. LP",
+                "Param": "{CAL:0.12+AvatarSkillLevel(0)*0.01,100,2} %"
+            }
+        },
+        "1": {
+            "134100003": {
+                "Title": "Spezialangriff: Eisbrecher-Frostschwall",
+                "Description": "Drücke <IconMap:Icon_Special> zum Anwenden:\nFührt einen Hieb nach vorn aus, der <color=#98EFF0>Eis-SCH</color> verursacht. Beim Anwenden dieser Fähigkeit werden 5 % der aktuellen LP verbraucht, um allen Truppenfiguren LP in Höhe von <color=#2BAD00>{CAL:1+AvatarSkillLevel(1)*0.06,1,2} %</color> von Zhaos max. LP wiederherzustellen, hält 5 s. 30 s Abklingzeit für die Effekte zum Verbrauchen von LP von <color=#FFFFFF>Spezialangriff: Eisbrecher-Frostschwall</color> und <color=#FFFFFF>Verstärkter Spezialangriff: Eisfluss der Tundra</color>."
+            },
+            "134100004": {
+                "Title": "Verstärkter Spezialangriff: Eisfluss der Tundra",
+                "Description": "Drücke bei ausreichender Energie <IconMap:Icon_SpecialReady> zum Anwenden:\nFührt mehrere Hiebe nach vorn aus, die hohen <color=#98EFF0>Eis-SCH</color> verursachen.\nBeim Anwenden dieser Fähigkeit werden 5 % der aktuellen LP verbraucht, um allen Truppenfiguren LP in Höhe von <color=#2BAD00>{CAL:1+AvatarSkillLevel(1)*0.06,1,2} %</color> von Zhaos max. LP wiederherzustellen, hält 5 s. 30 s Abklingzeit für die Effekte zum Verbrauchen von LP von <color=#FFFFFF>Spezialangriff: Eisbrecher-Frostschwall</color> und <color=#FFFFFF>Verstärkter Spezialangriff: Eisfluss der Tundra</color>.\nBeim Anwenden der Fähigkeit werden 20 Pkt. <color=#FFFFFF>Frostkalt-Wert</color> gewährt. Bei vollem <color=#FFFFFF>Frostkalt-Wert</color> wird der gesamte <color=#FFFFFF>Frostkalt-Wert</color> aufgebraucht, um <color=#FFFFFF>Ätherschleier – Urquell</color> zu aktivieren.\nWird diese Fähigkeit innerhalb eines beliebigen <color=#FFFFFF>Ätherschleiers</color> angewendet, wird eine <color=#FFFFFF>schnelle Hilfe</color> ausgelöst. Wird dabei die <color=#FFFFFF>schnelle Hilfe</color> eines Truppenmitglieds ausgeführt, wendet Zhao im Anschluss automatisch <color=#FFFFFF>Basisangriff: Endgültiges Urteil</color> an und beginnt aufzuladen.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "134100030": {
+                "Title": "Spezialangriff: Eisbrecher-Frostschwall"
+            },
+            "134100031": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1341009, Prop:1001}"
+            },
+            "134100032": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1341009, Prop:1002}"
+            },
+            "134100033": {
+                "Description": "LP-Prozentsatz wiederhergestellt",
+                "Param": "{CAL:1+AvatarSkillLevel(1)*0.06,1,2} %"
+            },
+            "134100034": {
+                "Title": "Verstärkter Spezialangriff: Eisfluss der Tundra"
+            },
+            "134100035": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1341010, Prop:1001}"
+            },
+            "134100036": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1341010, Prop:1002}"
+            },
+            "134100037": {
+                "Description": "Energiekosten",
+                "Param": "80 Pkt."
+            },
+            "134100038": {
+                "Description": "LP-Prozentsatz wiederhergestellt",
+                "Param": "{CAL:1+AvatarSkillLevel(1)*0.06,1,2} %"
+            }
+        },
+        "2": {
+            "134100005": {
+                "Title": "Ausweichen: Häschenhopser",
+                "Description": "Drücke <IconMap:Icon_Evade> zum Anwenden:\nEin blitzschnelles Sprintausweichen.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "134100006": {
+                "Title": "Sprintangriff: Hüpfender Sprint",
+                "Description": "Drücke beim Ausweichen <IconMap:Icon_Normal> zum Anwenden:\nFührt einen Hieb nach vorn aus und verursacht dabei <color=#F0D12B>phys. SCH</color> sowie <color=#98EFF0>Eis-SCH</color>."
+            },
+            "134100007": {
+                "Title": "Ausweichkonter: Flüchtiger Wimpernschlag",
+                "Description": "Drücke nach Auslösen eines <color=#FFFFFF>perfekten Ausweichens</color> <IconMap:Icon_Normal> zum Anwenden:\nFührt einen Abwärtshieb nach vorn aus und verursacht dabei <color=#98EFF0>Eis-SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "134100039": {
+                "Title": "Sprintangriff: Hüpfender Sprint"
+            },
+            "134100040": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1341011, Prop:1001}"
+            },
+            "134100041": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1341011, Prop:1002}"
+            },
+            "134100042": {
+                "Title": "Ausweichkonter: Flüchtiger Wimpernschlag"
+            },
+            "134100043": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1341012, Prop:1001}"
+            },
+            "134100044": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1341012, Prop:1002}"
+            }
+        },
+        "3": {
+            "134100008": {
+                "Title": "Kettenangriff: Temporäres Bündnis",
+                "Description": "Wähle beim Auslösen eines <color=#FFFFFF>Kettenangriffs</color> die entsprechende Figur zum Anwenden:\nFührt mehrere Hiebe nach vorn aus, die hohen <color=#98EFF0>Eis-SCH</color> verursachen.\nNach Anwenden der Fähigkeit werden 5 Pkt. <color=#FFFFFF>Frostkalt-Wert</color> gewährt. Bei vollem <color=#FFFFFF>Frostkalt-Wert</color> wird der gesamte <color=#FFFFFF>Frostkalt-Wert</color> aufgebraucht, um <color=#FFFFFF>Ätherschleier – Urquell</color> zu aktivieren.\nWird diese Fähigkeit innerhalb eines beliebigen <color=#FFFFFF>Ätherschleiers</color> angewendet, wird eine <color=#FFFFFF>schnelle Hilfe</color> ausgelöst. Wird dabei die <color=#FFFFFF>schnelle Hilfe</color> eines Truppenmitglieds ausgeführt, wendet Zhao im Anschluss automatisch <color=#FFFFFF>Basisangriff: Endgültiges Urteil</color> an und beginnt aufzuladen.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "134100009": {
+                "Title": "Ultimate: Hasenhiebhagel",
+                "Description": "Drücke beim Erreichen der Dezibelstufe <color=#FFFFFF>Maximum</color> <IconMap:Icon_UltimateReady> zum Anwenden:\nFührt aufeinanderfolgende Angriffe nach vorn aus, gefolgt von einem Abwärtshieb, und verursacht dabei hohen <color=#98EFF0>Eis-SCH</color>.\nNach Anwenden der Fähigkeit werden 20 Pkt. <color=#FFFFFF>Frostkalt-Wert</color> gewährt. Bei vollem <color=#FFFFFF>Frostkalt-Wert</color> wird der gesamte <color=#FFFFFF>Frostkalt-Wert</color> aufgebraucht, um <color=#FFFFFF>Ätherschleier – Urquell</color> zu aktivieren.\nWird diese Fähigkeit innerhalb eines beliebigen <color=#FFFFFF>Ätherschleiers</color> angewendet, wird eine <color=#FFFFFF>schnelle Hilfe</color> ausgelöst. Wird dabei die <color=#FFFFFF>schnelle Hilfe</color> eines Truppenmitglieds ausgeführt, wendet Zhao im Anschluss automatisch <color=#FFFFFF>Basisangriff: Endgültiges Urteil</color> an und beginnt aufzuladen.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "134100045": {
+                "Title": "Kettenangriff: Temporäres Bündnis"
+            },
+            "134100046": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1341013, Prop:1001}"
+            },
+            "134100047": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1341013, Prop:1002}"
+            },
+            "134100048": {
+                "Title": "Ultimate: Hasenhiebhagel"
+            },
+            "134100049": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{{Skill:1341014, Prop:1001} + {Skill:1341023, Prop:1001}}"
+            },
+            "134100050": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{{Skill:1341014, Prop:1002} + {Skill:1341023, Prop:1002}}"
+            }
+        },
+        "6": {
+            "134100011": {
+                "Title": "Eintrittstechnik: Froststoß",
+                "Description": "Drücke bei vollem <color=#FFFFFF>Frostkalt-Wert</color>, wenn Zhao im Kampf ist, <IconMap:Icon_Switch> zum Anwenden:\nFührt aufeinanderfolgende Angriffe nach vorn aus, gefolgt von einem Hieb, und verursacht dabei hohen <color=#98EFF0>Eis-SCH</color>.\nBeim Anwenden der Fähigkeit wird der gesamte <color=#FFFFFF>Frostkalt-Wert</color> verbraucht, um <color=#FFFFFF>Ätherschleier – Urquell</color> zu aktivieren. Beim Anwenden der Fähigkeit wird eine <color=#FFFFFF>schnelle Hilfe</color> ausgelöst. Wird dabei die <color=#FFFFFF>schnelle Hilfe</color> eines Truppenmitglieds ausgeführt, wendet Zhao im Anschluss automatisch <color=#FFFFFF>Basisangriff: Endgültiges Urteil</color> an und beginnt aufzuladen.\nDas Anwenden dieser Fähigkeit gilt als Anwenden einer <color=#FFFFFF>schnellen Hilfe</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "134100012": {
+                "Title": "Schnelle Hilfe: Lückenfüllung",
+                "Description": "Drücke, wenn die gesteuerte Figur weggeschleudert wird, <IconMap:Icon_Switch> zum Anwenden:\nFührt einen Abwärtshieb nach vorn aus und verursacht dabei <color=#98EFF0>Eis-SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "134100013": {
+                "Title": "Defensivhilfe: Frostschleier-Unterdrückung",
+                "Description": "Drücke, wenn die Figur auf dem Feld gleich angegriffen wird, <IconMap:Icon_Switch> zum Anwenden:\nWehrt gegnerische Angriffe ab und verursacht eine große Menge Benommenheit.\nDiese Fähigkeit eignet sich hervorragend zur Abwehr gegnerischer Angriffe und verringert den Verbrauch von <color=#FFFFFF>Hilfspunkten</color>, wenn die Figur intensiven Angriffen ausgesetzt ist.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "134100014": {
+                "Title": "Sukzessive Hilfe: Frostlicht-Spiegelbild",
+                "Description": "Drücke nach einer <color=#FFFFFF>Defensivhilfe</color> <IconMap:Icon_Normal> zum Anwenden:\nFührt aufeinanderfolgende Hiebe nach vorn aus, die hohen <color=#98EFF0>Eis-SCH</color> verursachen.\nWenn <color=#FFFFFF>Frostkalt-Wert</color> beim Anwenden der Fähigkeit voll ist, wird der gesamte <color=#FFFFFF>Frostkalt-Wert</color> aufgebraucht, um <color=#FFFFFF>Ätherschleier – Urquell</color> zu aktivieren.\nWird diese Fähigkeit innerhalb eines beliebigen <color=#FFFFFF>Ätherschleiers</color> angewendet, wird eine <color=#FFFFFF>schnelle Hilfe</color> ausgelöst. Wird dabei die <color=#FFFFFF>schnelle Hilfe</color> eines Truppenmitglieds ausgeführt, wendet Zhao im Anschluss automatisch <color=#FFFFFF>Basisangriff: Endgültiges Urteil</color> an und beginnt aufzuladen.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "134100051": {
+                "Title": "Eintrittstechnik: Froststoß"
+            },
+            "134100052": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1341015, Prop:1001}"
+            },
+            "134100053": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1341015, Prop:1002}"
+            },
+            "134100054": {
+                "Title": "Schnelle Hilfe: Lückenfüllung"
+            },
+            "134100055": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1341016, Prop:1001}"
+            },
+            "134100056": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1341016, Prop:1002}"
+            },
+            "134100057": {
+                "Title": "Defensivhilfe: Frostschleier-Unterdrückung"
+            },
+            "134100058": {
+                "Description": "Benommenheit-Multiplikator für leichte Defensive",
+                "Param": "{Skill:1341017, Prop:1002}"
+            },
+            "134100059": {
+                "Description": "Benommenheit-Multiplikator für schwere Defensive",
+                "Param": "{Skill:1341018, Prop:1002}"
+            },
+            "134100060": {
+                "Description": "Benommenheit-Multiplikator für Kettendefensive",
+                "Param": "{Skill:1341019, Prop:1002}"
+            },
+            "134100061": {
+                "Title": "Sukzessive Hilfe: Frostlicht-Spiegelbild"
+            },
+            "134100062": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1341020, Prop:1001}"
+            },
+            "134100063": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1341020, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1341001": {
+            "DamageValue": 7340,
+            "DamageGrowth": 670,
+            "DazeValue": 5510,
+            "DazeGrowth": 260
+        },
+        "1341002": {
+            "DamageValue": 6600,
+            "DamageGrowth": 600,
+            "DazeValue": 4920,
+            "DazeGrowth": 230
+        },
+        "1341003": {
+            "DamageValue": 11580,
+            "DamageGrowth": 1060,
+            "DazeValue": 8440,
+            "DazeGrowth": 390
+        },
+        "1341004": {
+            "DamageValue": 18560,
+            "DamageGrowth": 1690,
+            "DazeValue": 15460,
+            "DazeGrowth": 710
+        },
+        "1341005": {
+            "DamageValue": 30910,
+            "DamageGrowth": 2810,
+            "DazeValue": 23450,
+            "DazeGrowth": 1070
+        },
+        "1341006": {
+            "DamageValue": 7730,
+            "DamageGrowth": 710,
+            "DazeValue": 5860,
+            "DazeGrowth": 270
+        },
+        "1341007": {
+            "DamageValue": 7730,
+            "DamageGrowth": 710,
+            "DazeValue": 5860,
+            "DazeGrowth": 270
+        },
+        "1341008": {
+            "DamageValue": 6970,
+            "DamageGrowth": 640,
+            "DazeValue": 5230,
+            "DazeGrowth": 240
+        },
+        "1341009": {
+            "DamageValue": 5690,
+            "DamageGrowth": 520,
+            "DazeValue": 5690,
+            "DazeGrowth": 260
+        },
+        "1341010": {
+            "DamageValue": 121080,
+            "DamageGrowth": 11010,
+            "DazeValue": 81000,
+            "DazeGrowth": 3690
+        },
+        "1341011": {
+            "DamageValue": 8630,
+            "DamageGrowth": 790,
+            "DazeValue": 4320,
+            "DazeGrowth": 200
+        },
+        "1341012": {
+            "DamageValue": 33880,
+            "DamageGrowth": 3080,
+            "DazeValue": 28600,
+            "DazeGrowth": 1300
+        },
+        "1341013": {
+            "DamageValue": 77080,
+            "DamageGrowth": 7010,
+            "DazeValue": 33190,
+            "DazeGrowth": 1510
+        },
+        "1341014": {
+            "DamageValue": 174980,
+            "DamageGrowth": 15910,
+            "DazeValue": 16140,
+            "DazeGrowth": 740
+        },
+        "1341015": {
+            "DamageValue": 68030,
+            "DamageGrowth": 6190,
+            "DazeValue": 23020,
+            "DazeGrowth": 1050
+        },
+        "1341016": {
+            "DamageValue": 17600,
+            "DamageGrowth": 1600,
+            "DazeValue": 8800,
+            "DazeGrowth": 400
+        },
+        "1341017": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1341018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1341019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1341020": {
+            "DamageValue": 36610,
+            "DamageGrowth": 3330,
+            "DazeValue": 31810,
+            "DazeGrowth": 1450
+        },
+        "1341021": {
+            "DamageValue": 95340,
+            "DamageGrowth": 0,
+            "DazeValue": 5230,
+            "DazeGrowth": 0
+        },
+        "1341022": {
+            "DamageValue": 550,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1341023": {
+            "DamageValue": 43750,
+            "DamageGrowth": 3980,
+            "DazeValue": 4030,
+            "DazeGrowth": 190
+        },
+        "1341024": {
+            "DamageValue": 43750,
+            "DamageGrowth": 3980,
+            "DazeValue": 4030,
+            "DazeGrowth": 190
+        }
+    }
+}

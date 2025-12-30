@@ -1,0 +1,557 @@
+{
+    "Name": "Burnice",
+    "ElementTypes": [
+        "Fire"
+    ],
+    "Specialty": {
+        "Id": 3,
+        "Name": "Anômalo"
+    },
+    "Talents": {
+        "1": {
+            "Title": "Empatia Incandescente",
+            "Description": "O limite de pontos de <color=#FFFFFF>Calor</color> aumenta de 100 pontos para 140 pontos. Ao entrar em combate, Burnice acumula 40 pontos de <color=#FFFFFF>Calor</color> adicionais. O Multiplicador de Dano do efeito <color=#FFFFFF>Brasa</color> aumenta 100% de ATQ de Burnice. A <color=#FF5521>Amplificação de Anomalia de Fogo</color> acumulada do efeito <color=#FFFFFF>Brasa</color> aumenta 25%.",
+            "Lore": "\"Às vezes as coisas não dão certo, é normal!\"\n\"Não fique triste, Caesar. Que tal uma mistura especial de Combusnitro? Eu coloquei um montão de açúcar!\""
+        },
+        "2": {
+            "Title": "Mesmo Preço, Mais Combustível",
+            "Description": "Quando o efeito <color=#FFFFFF>Brasa</color> for ativado, o inimigo será afetado por <color=#FFFFFF>Calor Penetrante</color>, podendo ser acumulado até 5 vezes por 6s. A duração será reiniciada cada vez que for ativada. Quando é atingido pelos ataques de aliados, cada acúmulo de <color=#FFFFFF>Calor Penetrante</color> aumenta a Taxa de Perfuração do ataque em 4%, até um máximo de 20%.",
+            "Lore": "Como mixologista dos Filhos de Calydon, Burnice adora preparar as melhores bebidas de Combusnitro de Nova Eridu para todos os seus amigos.\nAgora, se você for um de seus inimigos... terá a oportunidade de provar \"novos sabores\" como nunca antes.\n\"Drinks super deliciosos que você só pode beber uma vez na vida!\""
+        },
+        "3": {
+            "Title": "Natureza Otimista",
+            "Description": "Obtém +2 níveis de <color=#FFFFFF>Ataque Básico</color>, <color=#FFFFFF>Esquiva</color>, <color=#FFFFFF>Ataque de Assistência</color>, <color=#FFFFFF>Ataque Especial</color> e <color=#FFFFFF>Ataque em Cadeia</color>",
+            "Lore": "\"A Burnice está sempre cheia de energia, até mesmo quando acorda! Não sei de onde ela tira tanto pique...\"\n\"E o pior é que ela consegue animar as pessoas ao seu redor! É quase como se fosse um monstro!\"\n\"Mas... eu não tenho nada contra...\"\n— Uma administradora de javalis que deseja permanecer anônima"
+        },
+        "4": {
+            "Title": "Super Suprimento de Combustível",
+            "Description": "Quando um <color=#FFFFFF>Ataque Especial Reforçado</color> ou <color=#FFFFFF>Ataque de Assistência</color> atinge um inimigo, a Taxa CRIT da habilidade aumenta 30%. A duração máxima do lança-chamas do <color=#FFFFFF>Ataque Especial Reforçado: Mistura Ardente — Dose Dupla</color> é aumentada em 1s.",
+            "Lore": "\"Você gostou da bebida que eu fiz? Obrigada! O Presas de Aço também adorou! Ele consegue beber duzentos litros de uma vez só!\"\n\"Ué, mas o Presas de Aço é o nosso caminhão!\"\n\"Quer experimentar o nosso combustível especial? É bem quente!\""
+        },
+        "5": {
+            "Title": "Dança de Fogo e Gelo",
+            "Description": "Obtém +2 níveis de <color=#FFFFFF>Ataque Básico</color>, <color=#FFFFFF>Esquiva</color>, <color=#FFFFFF>Ataque de Assistência</color>, <color=#FFFFFF>Ataque Especial</color> e <color=#FFFFFF>Ataque em Cadeia</color>",
+            "Lore": "Os cubos de gelo são uma parte muito importante ao fazer drinks.\nAfinal, sem o frio extremo, não existe calor extremo.\n\"Essa sensação de gelo e fogo se misturando... é simplesmente irresistível!\""
+        },
+        "6": {
+            "Title": "Convite Inflamável",
+            "Description": "Quando o <color=#FFFFFF>Ataque Especial Reforçado: Mistura Ardente — Dose Dupla</color> da Burnice atinge um inimigo, ativa o efeito especial de <color=#FFFFFF>Brasa</color> e causa <color=#FF5521>Dano de Fogo</color> equivalente a 60% do ATQ da Burnice ao alvo. Pode ser ativado até 1 vez a cada 0.5s e não consome <color=#FFFFFF>Calor</color>. Após atingir um inimigo com <color=#FFFFFF>Ataque Especial Reforçado: Mistura Ardente — Dose Dupla</color>, durante sua execução, <color=#FFFFFF>Ataque Especial Reforçado: Mistura Ardente — Dose Dupla</color>, o efeito especial de <color=#FFFFFF>Brasa</color> e o efeito de <color=#FF5521>Queimadura</color> ignoram 25% da <color=#FF5521>resistência ao Fogo</color> do alvo. No <color=#FFFFFF>Ataque Especial Reforçado: Mistura Ardente — Dose Dupla</color>, ao atingir um inimigo com a explosão de fogo que está no estado de <color=#FF5521>Queimadura</color>, aciona uma instância adicional de dano de <color=#FF5521>Queimadura</color> equivalente a 1800% do dano original. Pode ser ativado uma vez a cada 20s para cada alvo. ",
+            "Lore": "Parece que ninguém nunca viu a verdadeira ira da Burnice.\n\"E acreditem, vocês não vão querer ver.\"\n— Uma motorista que está se preparando para dormir no Presas de Aço"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passiva Principal: Coquetel de Combustível",
+            "DescriptionByLevel": {
+                "1": "Quando Burnice consome Energia, ela acumula <color=#FFFFFF>Calor</color> até um máximo de 100 pontos. Para cada 1 de Energia consumida, ela acumula 1,4 pontos de <color=#FFFFFF>Calor</color>. Quando o <color=#FFFFFF>Calor</color> acumulado chegar a 50, Burnice entra no estado <color=#FFFFFF>Coquetel de Combustível</color> até que o <color=#FFFFFF>Calor</color> se esgote. Ao entrar em combate, Burnice acumula 100 pontos de <color=#FFFFFF>Calor</color> imediatamente.\nDurante o estado de <color=#FFFFFF>Coquetel de Combustível</color>, quando Burnice usa <color=#FFFFFF>Ataque Básico: Drink de Chama Misturada</color>, <color=#FFFFFF>Ataque Especial Reforçado: Mistura Ardente</color>, <color=#FFFFFF>Ataque Especial Reforçado: Mistura Ardente — Dose Dupla</color>, <color=#FFFFFF>Ataque em Cadeia: Chamas no Combustível</color> ou <color=#FFFFFF>Supremo: Glória Incendiária</color> para atingir um inimigo, o alvo receberá o efeito de <color=#FFFFFF>Combustão</color> até que Burnice saia do estado de <color=#FFFFFF>Coquetel de Combustível</color>. Quando outros personagens da equipe atacam um inimigo com o estado <color=#FFFFFF>Combustão</color>, o efeito <color=#FFFFFF>Brasa</color> é ativado, consumindo 8 pontos de <color=#FFFFFF>Calor</color>, causa <color=#FF5521>Dano de Fogo</color> equivalente a <color=#2BAD00>175%</color> do ATQ de Burnice e acumula <color=#FF5521>Amplificação de Anomalia de Fogo</color>. Pode ser ativado uma vez a cada 1,5s. A cada 10 pontos de Proficiência de Anomalia, o dano causado pelo efeito <color=#FFFFFF>Brasa</color> aumenta 1%, até um máximo de 30%. O Dano causado pelo efeito <color=#FFFFFF>Brasa</color> é considerado dano de <color=#FFFFFF>Ataque de Assistência</color>.",
+                "2": "Quando Burnice consome Energia, ela acumula <color=#FFFFFF>Calor</color> até um máximo de 100 pontos. Para cada 1 de Energia consumida, ela acumula 1,4 pontos de <color=#FFFFFF>Calor</color>. Quando o <color=#FFFFFF>Calor</color> acumulado chegar a 50, Burnice entra no estado <color=#FFFFFF>Coquetel de Combustível</color> até que o <color=#FFFFFF>Calor</color> se esgote. Ao entrar em combate, Burnice acumula 100 pontos de <color=#FFFFFF>Calor</color> imediatamente.\nDurante o estado de <color=#FFFFFF>Coquetel de Combustível</color>, quando Burnice usa <color=#FFFFFF>Ataque Básico: Drink de Chama Misturada</color>, <color=#FFFFFF>Ataque Especial Reforçado: Mistura Ardente</color>, <color=#FFFFFF>Ataque Especial Reforçado: Mistura Ardente — Dose Dupla</color>, <color=#FFFFFF>Ataque em Cadeia: Chamas no Combustível</color> ou <color=#FFFFFF>Supremo: Glória Incendiária</color> para atingir um inimigo, o alvo receberá o efeito de <color=#FFFFFF>Combustão</color> até que Burnice saia do estado de <color=#FFFFFF>Coquetel de Combustível</color>. Quando outros personagens da equipe atacam um inimigo com o estado <color=#FFFFFF>Combustão</color>, o efeito <color=#FFFFFF>Brasa</color> é ativado, consumindo 8 pontos de <color=#FFFFFF>Calor</color>, causa <color=#FF5521>Dano de Fogo</color> equivalente a <color=#2BAD00>205%</color> do ATQ de Burnice e acumula <color=#FF5521>Amplificação de Anomalia de Fogo</color>. Pode ser ativado uma vez a cada 1,5s. A cada 10 pontos de Proficiência de Anomalia, o dano causado pelo efeito <color=#FFFFFF>Brasa</color> aumenta 1%, até um máximo de 30%. O Dano causado pelo efeito <color=#FFFFFF>Brasa</color> é considerado dano de <color=#FFFFFF>Ataque de Assistência</color>.",
+                "3": "Quando Burnice consome Energia, ela acumula <color=#FFFFFF>Calor</color> até um máximo de 100 pontos. Para cada 1 de Energia consumida, ela acumula 1,4 pontos de <color=#FFFFFF>Calor</color>. Quando o <color=#FFFFFF>Calor</color> acumulado chegar a 50, Burnice entra no estado <color=#FFFFFF>Coquetel de Combustível</color> até que o <color=#FFFFFF>Calor</color> se esgote. Ao entrar em combate, Burnice acumula 100 pontos de <color=#FFFFFF>Calor</color> imediatamente.\nDurante o estado de <color=#FFFFFF>Coquetel de Combustível</color>, quando Burnice usa <color=#FFFFFF>Ataque Básico: Drink de Chama Misturada</color>, <color=#FFFFFF>Ataque Especial Reforçado: Mistura Ardente</color>, <color=#FFFFFF>Ataque Especial Reforçado: Mistura Ardente — Dose Dupla</color>, <color=#FFFFFF>Ataque em Cadeia: Chamas no Combustível</color> ou <color=#FFFFFF>Supremo: Glória Incendiária</color> para atingir um inimigo, o alvo receberá o efeito de <color=#FFFFFF>Combustão</color> até que Burnice saia do estado de <color=#FFFFFF>Coquetel de Combustível</color>. Quando outros personagens da equipe atacam um inimigo com o estado <color=#FFFFFF>Combustão</color>, o efeito <color=#FFFFFF>Brasa</color> é ativado, consumindo 8 pontos de <color=#FFFFFF>Calor</color>, causa <color=#FF5521>Dano de Fogo</color> equivalente a <color=#2BAD00>235%</color> do ATQ de Burnice e acumula <color=#FF5521>Amplificação de Anomalia de Fogo</color>. Pode ser ativado uma vez a cada 1,5s. A cada 10 pontos de Proficiência de Anomalia, o dano causado pelo efeito <color=#FFFFFF>Brasa</color> aumenta 1%, até um máximo de 30%. O Dano causado pelo efeito <color=#FFFFFF>Brasa</color> é considerado dano de <color=#FFFFFF>Ataque de Assistência</color>.",
+                "4": "Quando Burnice consome Energia, ela acumula <color=#FFFFFF>Calor</color> até um máximo de 100 pontos. Para cada 1 de Energia consumida, ela acumula 1,4 pontos de <color=#FFFFFF>Calor</color>. Quando o <color=#FFFFFF>Calor</color> acumulado chegar a 50, Burnice entra no estado <color=#FFFFFF>Coquetel de Combustível</color> até que o <color=#FFFFFF>Calor</color> se esgote. Ao entrar em combate, Burnice acumula 100 pontos de <color=#FFFFFF>Calor</color> imediatamente.\nDurante o estado de <color=#FFFFFF>Coquetel de Combustível</color>, quando Burnice usa <color=#FFFFFF>Ataque Básico: Drink de Chama Misturada</color>, <color=#FFFFFF>Ataque Especial Reforçado: Mistura Ardente</color>, <color=#FFFFFF>Ataque Especial Reforçado: Mistura Ardente — Dose Dupla</color>, <color=#FFFFFF>Ataque em Cadeia: Chamas no Combustível</color> ou <color=#FFFFFF>Supremo: Glória Incendiária</color> para atingir um inimigo, o alvo receberá o efeito de <color=#FFFFFF>Combustão</color> até que Burnice saia do estado de <color=#FFFFFF>Coquetel de Combustível</color>. Quando outros personagens da equipe atacam um inimigo com o estado <color=#FFFFFF>Combustão</color>, o efeito <color=#FFFFFF>Brasa</color> é ativado, consumindo 8 pontos de <color=#FFFFFF>Calor</color>, causa <color=#FF5521>Dano de Fogo</color> equivalente a <color=#2BAD00>262%</color> do ATQ de Burnice e acumula <color=#FF5521>Amplificação de Anomalia de Fogo</color>. Pode ser ativado uma vez a cada 1,5s. A cada 10 pontos de Proficiência de Anomalia, o dano causado pelo efeito <color=#FFFFFF>Brasa</color> aumenta 1%, até um máximo de 30%. O Dano causado pelo efeito <color=#FFFFFF>Brasa</color> é considerado dano de <color=#FFFFFF>Ataque de Assistência</color>.",
+                "5": "Quando Burnice consome Energia, ela acumula <color=#FFFFFF>Calor</color> até um máximo de 100 pontos. Para cada 1 de Energia consumida, ela acumula 1,4 pontos de <color=#FFFFFF>Calor</color>. Quando o <color=#FFFFFF>Calor</color> acumulado chegar a 50, Burnice entra no estado <color=#FFFFFF>Coquetel de Combustível</color> até que o <color=#FFFFFF>Calor</color> se esgote. Ao entrar em combate, Burnice acumula 100 pontos de <color=#FFFFFF>Calor</color> imediatamente.\nDurante o estado de <color=#FFFFFF>Coquetel de Combustível</color>, quando Burnice usa <color=#FFFFFF>Ataque Básico: Drink de Chama Misturada</color>, <color=#FFFFFF>Ataque Especial Reforçado: Mistura Ardente</color>, <color=#FFFFFF>Ataque Especial Reforçado: Mistura Ardente — Dose Dupla</color>, <color=#FFFFFF>Ataque em Cadeia: Chamas no Combustível</color> ou <color=#FFFFFF>Supremo: Glória Incendiária</color> para atingir um inimigo, o alvo receberá o efeito de <color=#FFFFFF>Combustão</color> até que Burnice saia do estado de <color=#FFFFFF>Coquetel de Combustível</color>. Quando outros personagens da equipe atacam um inimigo com o estado <color=#FFFFFF>Combustão</color>, o efeito <color=#FFFFFF>Brasa</color> é ativado, consumindo 8 pontos de <color=#FFFFFF>Calor</color>, causa <color=#FF5521>Dano de Fogo</color> equivalente a <color=#2BAD00>290%</color> do ATQ de Burnice e acumula <color=#FF5521>Amplificação de Anomalia de Fogo</color>. Pode ser ativado uma vez a cada 1,5s. A cada 10 pontos de Proficiência de Anomalia, o dano causado pelo efeito <color=#FFFFFF>Brasa</color> aumenta 1%, até um máximo de 30%. O Dano causado pelo efeito <color=#FFFFFF>Brasa</color> é considerado dano de <color=#FFFFFF>Ataque de Assistência</color>.",
+                "6": "Quando Burnice consome Energia, ela acumula <color=#FFFFFF>Calor</color> até um máximo de 100 pontos. Para cada 1 de Energia consumida, ela acumula 1,4 pontos de <color=#FFFFFF>Calor</color>. Quando o <color=#FFFFFF>Calor</color> acumulado chegar a 50, Burnice entra no estado <color=#FFFFFF>Coquetel de Combustível</color> até que o <color=#FFFFFF>Calor</color> se esgote. Ao entrar em combate, Burnice acumula 100 pontos de <color=#FFFFFF>Calor</color> imediatamente.\nDurante o estado de <color=#FFFFFF>Coquetel de Combustível</color>, quando Burnice usa <color=#FFFFFF>Ataque Básico: Drink de Chama Misturada</color>, <color=#FFFFFF>Ataque Especial Reforçado: Mistura Ardente</color>, <color=#FFFFFF>Ataque Especial Reforçado: Mistura Ardente — Dose Dupla</color>, <color=#FFFFFF>Ataque em Cadeia: Chamas no Combustível</color> ou <color=#FFFFFF>Supremo: Glória Incendiária</color> para atingir um inimigo, o alvo receberá o efeito de <color=#FFFFFF>Combustão</color> até que Burnice saia do estado de <color=#FFFFFF>Coquetel de Combustível</color>. Quando outros personagens da equipe atacam um inimigo com o estado <color=#FFFFFF>Combustão</color>, o efeito <color=#FFFFFF>Brasa</color> é ativado, consumindo 8 pontos de <color=#FFFFFF>Calor</color>, causa <color=#FF5521>Dano de Fogo</color> equivalente a <color=#2BAD00>320%</color> do ATQ de Burnice e acumula <color=#FF5521>Amplificação de Anomalia de Fogo</color>. Pode ser ativado uma vez a cada 1,5s. A cada 10 pontos de Proficiência de Anomalia, o dano causado pelo efeito <color=#FFFFFF>Brasa</color> aumenta 1%, até um máximo de 30%. O Dano causado pelo efeito <color=#FFFFFF>Brasa</color> é considerado dano de <color=#FFFFFF>Ataque de Assistência</color>.",
+                "7": "Quando Burnice consome Energia, ela acumula <color=#FFFFFF>Calor</color> até um máximo de 100 pontos. Para cada 1 de Energia consumida, ela acumula 1,4 pontos de <color=#FFFFFF>Calor</color>. Quando o <color=#FFFFFF>Calor</color> acumulado chegar a 50, Burnice entra no estado <color=#FFFFFF>Coquetel de Combustível</color> até que o <color=#FFFFFF>Calor</color> se esgote. Ao entrar em combate, Burnice acumula 100 pontos de <color=#FFFFFF>Calor</color> imediatamente.\nDurante o estado de <color=#FFFFFF>Coquetel de Combustível</color>, quando Burnice usa <color=#FFFFFF>Ataque Básico: Drink de Chama Misturada</color>, <color=#FFFFFF>Ataque Especial Reforçado: Mistura Ardente</color>, <color=#FFFFFF>Ataque Especial Reforçado: Mistura Ardente — Dose Dupla</color>, <color=#FFFFFF>Ataque em Cadeia: Chamas no Combustível</color> ou <color=#FFFFFF>Supremo: Glória Incendiária</color> para atingir um inimigo, o alvo receberá o efeito de <color=#FFFFFF>Combustão</color> até que Burnice saia do estado de <color=#FFFFFF>Coquetel de Combustível</color>. Quando outros personagens da equipe atacam um inimigo com o estado <color=#FFFFFF>Combustão</color>, o efeito <color=#FFFFFF>Brasa</color> é ativado, consumindo 8 pontos de <color=#FFFFFF>Calor</color>, causa <color=#FF5521>Dano de Fogo</color> equivalente a <color=#2BAD00>350%</color> do ATQ de Burnice e acumula <color=#FF5521>Amplificação de Anomalia de Fogo</color>. Pode ser ativado uma vez a cada 1,5s. A cada 10 pontos de Proficiência de Anomalia, o dano causado pelo efeito <color=#FFFFFF>Brasa</color> aumenta 1%, até um máximo de 30%. O Dano causado pelo efeito <color=#FFFFFF>Brasa</color> é considerado dano de <color=#FFFFFF>Ataque de Assistência</color>."
+            }
+        },
+        "MathSkill": {
+            "Title": "Habilidade Extra: Cometa Incendiário",
+            "Description": "Quando houver outros Agentes com atributo <color=#FFFFFF>Anômalo</color> ou da mesma facção na equipe:\nQuando Burnice atinge um inimigo com <color=#FFFFFF>Ataque Básico: Drink de Chama Misturada</color>, <color=#FFFFFF>Ataque Especial Reforçado: Mistura Ardente</color>, <color=#FFFFFF>Ataque Especial Reforçado: Mistura Ardente — Dose Dupla</color>, ou ativa o efeito <color=#FFFFFF>Brasa</color>, a <color=#FF5521>Amplificação de Anomalia de Fogo</color> aumenta 65%. Quando qualquer personagem da equipe causa o efeito <color=#FF5521>Queimadura</color> a um inimigo, a duração desse efeito aumenta 3s."
+        },
+        "BaseProps": [
+            {
+                "30501": 0,
+                "12101": 0
+            },
+            {
+                "30501": 12,
+                "12101": 0
+            },
+            {
+                "30501": 12,
+                "12101": 25
+            },
+            {
+                "30501": 24,
+                "12101": 25
+            },
+            {
+                "30501": 24,
+                "12101": 50
+            },
+            {
+                "30501": 36,
+                "12101": 50
+            },
+            {
+                "30501": 36,
+                "12101": 75
+            }
+        ]
+    },
+    "SkillDescriptions": {
+        "0": {
+            "117100001": {
+                "Title": "Ataque Básico: Drink de Chama Direta",
+                "Description": "Pressione <IconMap:Icon_Normal> para ativar:\nRealiza até cinco golpes à frente, causando <color=#F0D12B>Dano Físico</color> e <color=#FF5521>Dano de Fogo</color>."
+            },
+            "117100003": {
+                "Title": "Ataque Básico: Drink de Chama Misturada",
+                "Description": "No estado de <color=#FFFFFF>Coquetel e Combustível</color>, mantenha <IconMap:Icon_Normal> pressionado para ativar:\nGira continuamente enquanto lança chamas ao redor, seguido por um golpe final, e ativa uma instância adicional de <color=#FFFFFF>Brasa</color> sem consumir <color=#FFFFFF>Calor</color>, causando <color=#FF5521>Dano de Fogo</color>. Manter pressionado aumenta a duração do lançamento de chamas.\nO dano causado pela habilidade conta como dano de <color=#FFFFFF>Ataque de Assistência</color>.\nAo lançar a habilidade, consome 20 pontos de <color=#FFFFFF>Calor</color>.\nDurante sua execução, o nível de Anti-Interrupção aumenta.\nApós executar o golpe final, pressione <IconMap:Icon_SpecialReady> para conectar imediatamente com o <color=#FFFFFF>Ataque Especial Reforçado: Mistura Ardente — Dose Dupla</color>."
+            },
+            "117100021": {
+                "Title": "Ataque Básico: Drink de Chama Direta"
+            },
+            "117100022": {
+                "Description": "Multiplicador de Dano de 1º Golpe",
+                "Param": "{Skill:1171001, Prop:1001}"
+            },
+            "117100023": {
+                "Description": "Multiplicador de Dano de 2º Golpe",
+                "Param": "{Skill:1171002, Prop:1001}"
+            },
+            "117100024": {
+                "Description": "Multiplicador de Dano de 3º Golpe",
+                "Param": "{Skill:1171003, Prop:1001}"
+            },
+            "117100025": {
+                "Description": "Multiplicador de Dano de 4º Golpe",
+                "Param": "{Skill:1171004, Prop:1001}"
+            },
+            "117100026": {
+                "Description": "Multiplicador de Dano de 5º Golpe",
+                "Param": "{Skill:1171005, Prop:1001}"
+            },
+            "117100027": {
+                "Description": "Multiplicador de Atordoamento de 1º Golpe",
+                "Param": "{Skill:1171001, Prop:1002}"
+            },
+            "117100028": {
+                "Description": "Multiplicador de Atordoamento de 2º Golpe",
+                "Param": "{Skill:1171002, Prop:1002}"
+            },
+            "117100029": {
+                "Description": "Multiplicador de Atordoamento de 3º Golpe",
+                "Param": "{Skill:1171003, Prop:1002}"
+            },
+            "117100030": {
+                "Description": "Multiplicador de Atordoamento de 4º Golpe",
+                "Param": "{Skill:1171004, Prop:1002}"
+            },
+            "117100031": {
+                "Description": "Multiplicador de Atordoamento de 5º Golpe",
+                "Param": "{Skill:1171005, Prop:1002}"
+            },
+            "117100032": {
+                "Title": "Ataque Básico: Drink de Chama Misturada"
+            },
+            "117100033": {
+                "Description": "Multiplicador de Dano de Lança-Chamas Prolongado",
+                "Param": "{Skill:1171006, Prop:1001}"
+            },
+            "117100034": {
+                "Description": "Multiplicador de Dano de Golpe Final",
+                "Param": "{Skill:1171007, Prop:1001}"
+            },
+            "117100035": {
+                "Description": "Multiplicador de Atordoamento de Lança-Chamas Prolongado",
+                "Param": "{Skill:1171006, Prop:1002}"
+            },
+            "117100036": {
+                "Description": "Multiplicador de Atordoamento de Golpe Final",
+                "Param": "{Skill:1171007, Prop:1002}"
+            }
+        },
+        "1": {
+            "117100004": {
+                "Title": "Ataque Especial: Maturação Ardente",
+                "Description": "Pressione <IconMap:Icon_Special> para ativar:\nLibera uma explosão de fogo à frente e causa <color=#FF5521>Dano de Fogo</color>;\nMantenha <IconMap:Icon_Special> pressionado para carregar e aumentar a potência da habilidade.\nDurante sua execução, o nível de Anti-Interrupção aumenta."
+            },
+            "117100006": {
+                "Title": "Ataque Especial Reforçado: Mistura Ardente",
+                "Description": "Quando tiver energia suficiente, pressione <IconMap:Icon_SpecialReady> para ativar:\nDispara chamas continuamente com seu lança-chamas em uma mão e libera uma explosão de fogo em linha reta, causando muito <color=#FF5521>Dano de Fogo</color>. Mantenha pressionado para continuar consumindo energia e aumentar a duração do lança-chamas.\nAo disparar continuamente, mova o {LAYOUT_CONSOLECONTROLLER#controle analógico}{LAYOUT_FALLBACK#controle analógico} para realizar uma esquiva lateral, ajustando sua posição na direção correspondente.\nDurante o lança-chamas prolongado, o nível de Anti-Interrupção aumenta e o Dano sofrido diminui 60%.\nAo realizar a esquiva lateral e a explosão de fogo, a personagem fica invulnerável."
+            },
+            "117100008": {
+                "Title": "Ataque Especial Reforçado: Mistura Ardente — Dose Dupla",
+                "Description": "Durante a ativação de <color=#FFFFFF>Ataque Especial Reforçado: Mistura Ardente</color>, se tiver energia suficiente, pressione <IconMap:Icon_SpecialReady> para ativar:\nUsa um lança-chamas de duas mãos para disparar chamas continuamente, seguidos de uma poderosa explosão de fogo em linha reta em uma grande área à frente, causando muito <color=#FF5521>Dano de Fogo</color>. Mantenha pressionado para consumir energia continuamente e prolongar a duração do disparo.\nA personagem fica invulnerável durante o momento em que o disparo e a explosão de fogo são ativados. \nDurante o lança-chamas prolongado, o nível de Anti-Interrupção aumenta e o Dano sofrido diminui 60%."
+            },
+            "117100009": {
+                "Title": "Ataque Especial Reforçado: Malabarismo Ardente",
+                "Description": "Se Burnice possui <color=#FFFFFF>Chama Fluída</color>, entrar em campo ativa:\nApós aliados acionarem <color=#FFFFFF>Brasa</color> 12 vezes, Burnice obtém um acúmulo de <color=#FFFFFF>Chama Fluída</color>. Com <color=#FFFFFF>Chama Fluída</color>, na próxima vez que entrar em campo, Burnice consome um acúmulo de <color=#FFFFFF>Chama Fluída</color> e ativa esta habilidade automaticamente. Esta entrada é considerada como Assistência Reativa. Quando a <color=#FFFFFF>Brasa</color> ativada por um <color=#FFFFFF>Ataque Básico: Drink de Chama Misturada</color> atinge inimigos, conta como 2 golpes. Quando tem <color=#FFFFFF>Chama Fluída</color>, o contador para de aumentar, e consumir <color=#FFFFFF>Chama Fluída</color> reinicia a contagem.\nAvança rapidamente ultrapassando inimigos e lança uma Explosão Ígnea, causando <color=#F0D12B>Dano Físico</color> e <color=#FF5521>Dano de Fogo</color>.\nQuando o golpe forte da habilidade atinge alvos com <color=#FE437E>Anomalia de Éter</color>, <color=#2EB6FF>Anomalia Elétrica</color>, <color=#FF5521>Anomalia de Fogo</color>, <color=#F0D12B>Anomalia de Atributo Físico</color>, ou <color=#98EFF0>Anomalia de Gelo</color>, ativa a <color=#FFFFFF>Floração</color> e causa dano adicional equivalente a <color=#FE437E>480%</color>/<color=#2EB6FF>240%</color>/<color=#FF5521>600%</color>/<color=#F0D12B>40%</color>/<color=#98EFF0>60%</color> da anomalia original.\nO aumento de <color=#FF5521>Amplificação de Anomalia de Fogo</color> da Habilidade Extra: Cometa Incendiário se aplica a esta habilidade.\nA personagem fica invulnerável ao usar esta habilidade.\nApós ativar a habilidade, pressione <IconMap:Icon_SpecialReady> para conectar com <color=#FFFFFF>Ataque Especial Reforçado: Mistura Ardente — Dose Dupla</color>."
+            },
+            "117100037": {
+                "Title": "Ataque Especial: Maturação Ardente"
+            },
+            "117100038": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1171008, Prop:1001}"
+            },
+            "117100039": {
+                "Description": "Multiplicador de Dano de Ataque Carregado",
+                "Param": "{Skill:1171009, Prop:1001}"
+            },
+            "117100040": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1171008, Prop:1002}"
+            },
+            "117100041": {
+                "Description": "Multiplicador de Atordoamento de Ataque Carregado",
+                "Param": "{Skill:1171009, Prop:1002}"
+            },
+            "117100042": {
+                "Title": "Ataque Especial Reforçado: Mistura Ardente"
+            },
+            "117100043": {
+                "Description": "Multiplicador de Dano de Lança-Chamas Prolongado",
+                "Param": "{Skill:1171010, Prop:1001}"
+            },
+            "117100044": {
+                "Description": "Multiplicador de Atordoamento de Lança-Chamas Prolongado",
+                "Param": "{Skill:1171010, Prop:1002}"
+            },
+            "117100045": {
+                "Description": "Multiplicador de Dano de Explosão de Fogo",
+                "Param": "{Skill:1171011, Prop:1001}"
+            },
+            "117100046": {
+                "Description": "Multiplicador de Atordoamento de Explosão de Fogo",
+                "Param": "{Skill:1171011, Prop:1002}"
+            },
+            "117100047": {
+                "Description": "Custo de Energia de Ativação",
+                "Param": "40"
+            },
+            "117100048": {
+                "Description": "Consumo de Energia de Lança-Chamas Prolongado",
+                "Param": "12,5 pontos/s"
+            },
+            "117100049": {
+                "Description": "Consumo de Energia de Explosão de Fogo",
+                "Param": "5"
+            },
+            "117100050": {
+                "Title": "Ataque Especial Reforçado: Mistura Ardente — Dose Dupla"
+            },
+            "117100051": {
+                "Description": "Multiplicador de Dano de Lança-Chamas Prolongado",
+                "Param": "{Skill:1171012, Prop:1001}"
+            },
+            "117100052": {
+                "Description": "Multiplicador de Atordoamento de Lança-Chamas Prolongado",
+                "Param": "{Skill:1171012, Prop:1002}"
+            },
+            "117100053": {
+                "Description": "Multiplicador de Dano de Explosão de Fogo",
+                "Param": "{Skill:1171013, Prop:1001}"
+            },
+            "117100054": {
+                "Description": "Multiplicador de Atordoamento de Explosão de Fogo",
+                "Param": "{Skill:1171013, Prop:1002}"
+            },
+            "117100055": {
+                "Description": "Custo de Energia de Ativação",
+                "Param": "10"
+            },
+            "117100056": {
+                "Description": "Consumo de Energia de Lança-Chamas Prolongado",
+                "Param": "25 pontos/s"
+            },
+            "117100057": {
+                "Description": "Consumo de Energia de Explosão de Fogo",
+                "Param": "10"
+            },
+            "117100058": {
+                "Title": "Ataque Especial Reforçado: Malabarismo Ardente"
+            },
+            "117100059": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1171026, Prop:1001}"
+            },
+            "117100060": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1171026, Prop:1002}"
+            }
+        },
+        "2": {
+            "117100010": {
+                "Title": "Esquiva: Fantasma de Fogo",
+                "Description": "Pressione <IconMap:Icon_Evade> para ativar:\nUma esquiva rápida.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "117100011": {
+                "Title": "Ataque Rápido: Fermentação Perigosa",
+                "Description": "Pressione <IconMap:Icon_Normal> durante uma esquiva para ativar:\nUsa o lança-chamas para se lançar à frente em uma investida que causa <color=#FF5521>Dano de Fogo</color>."
+            },
+            "117100012": {
+                "Title": "Contraesquiva: Agitação Quente",
+                "Description": "Após ativar <color=#FFFFFF>Esquiva Perfeita</color>, pressione <IconMap:Icon_Normal> para ativar:\nDispara uma série de ataques à frente e usa seu lança-chamas, causando <color=#F0D12B>Dano Físico</color> e <color=#FF5521>Dano de Fogo</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "117100061": {
+                "Title": "Ataque Rápido: Fermentação Perigosa"
+            },
+            "117100062": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1171014, Prop:1001}"
+            },
+            "117100063": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1171014, Prop:1002}"
+            },
+            "117100064": {
+                "Title": "Contraesquiva: Agitação Quente"
+            },
+            "117100065": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1171015, Prop:1001}"
+            },
+            "117100066": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1171015, Prop:1002}"
+            }
+        },
+        "3": {
+            "117100013": {
+                "Title": "Ataque em Cadeia: Chamas no Combustível",
+                "Description": "Quando um <color=#FFFFFF>Ataque em Cadeia</color> for acionado, selecione o personagem correspondente para ativar:\nFaz uma investida rápida, lançando chamas na área ao redor, seguida de uma Explosão Ígnea em uma área em forma de leque, causando grande <color=#FF5521>Dano de Fogo</color>.\nA personagem fica invulnerável ao usar esta habilidade.\nApós ativar a habilidade, pressione <IconMap:Icon_SpecialReady> para ativar diretamente o <color=#FFFFFF>Ataque Especial Reforçado: Mistura Ardente — Dose Dupla</color>."
+            },
+            "117100014": {
+                "Title": "Supremo: Glória Incendiária",
+                "Description": "Quando o Índice de dB estiver no <color=#FFFFFF>Máximo</color>, pressione <IconMap:Icon_UltimateReady> para ativar:\nBurnice avança rapidamente, salta no ar e continuamente lança-chamas que causam grande <color=#FF5521>Dano de Fogo</color> nos inimigos em uma grande área.\nAo saltar no ar, ativa <color=#FFFFFF>Assistência Reativa</color>. Se a <color=#FFFFFF>Assistência Reativa</color> estiver sendo usada, o lança-chamas dura mais.\nAo lançar a habilidade, recupera 50 pontos de <color=#FFFFFF>Calor</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "117100067": {
+                "Title": "Ataque em Cadeia: Chamas no Combustível"
+            },
+            "117100068": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1171016, Prop:1001}"
+            },
+            "117100069": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1171016, Prop:1002}"
+            },
+            "117100070": {
+                "Title": "Supremo: Glória Incendiária"
+            },
+            "117100071": {
+                "Description": "Multiplicador de Dano Máximo",
+                "Param": "{Skill:1171017, Prop:1001}"
+            },
+            "117100072": {
+                "Description": "Multiplicador de Atordoamento Máximo",
+                "Param": "{Skill:1171017, Prop:1002}"
+            }
+        },
+        "6": {
+            "117100018": {
+                "Title": "Assistência Reativa: Drink Energético Especial",
+                "Description": "Quando o personagem ativo é lançado para o alto, pressione <IconMap:Icon_Switch> para ativar:\nLança um combo de ataques frontais e usa seu lança-chamas, causando <color=#F0D12B>Dano Físico</color> e <color=#FF5521>Dano de Fogo</color>.\nA personagem fica invulnerável ao usar esta habilidade.\nApós executar esta habilidade, pressione <IconMap:Icon_SpecialReady> para conectar com o <color=#FFFFFF>Ataque Especial Reforçado: Mistura Ardente — Dose Dupla</color>."
+            },
+            "117100019": {
+                "Title": "Assistência Defensiva: Óleo Defumado",
+                "Description": "Quando o personagem em campo está prestes a sofrer um ataque, pressione <IconMap:Icon_Switch> para ativar:\nDefende do ataque inimigo e causa um Atordoamento muito alto.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "117100020": {
+                "Title": "Assistência Imediata: Néctar Flamejante",
+                "Description": "Após uma <color=#FFFFFF>Assistência Defensiva</color>, pressione <IconMap:Icon_Normal> para ativar:\nSalta no ar, gira rapidamente e usa seu lança-chamas na área ao redor, causando <color=#FF5521>Dano de Fogo</color>.\nA personagem fica invulnerável ao usar esta habilidade.\nApós ativar a habilidade, pressione <IconMap:Icon_SpecialReady> para ativar diretamente o <color=#FFFFFF>Ataque Especial Reforçado: Mistura Ardente — Dose Dupla</color>."
+            },
+            "117100073": {
+                "Title": "Assistência Reativa: Drink Energético Especial"
+            },
+            "117100074": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1171018, Prop:1001}"
+            },
+            "117100075": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1171018, Prop:1002}"
+            },
+            "117100076": {
+                "Title": "Assistência Defensiva: Óleo Defumado"
+            },
+            "117100077": {
+                "Description": "Multiplicador de Atordoamento de Defensiva Leve",
+                "Param": "{Skill:1171019, Prop:1002}"
+            },
+            "117100078": {
+                "Description": "Multiplicador de Atordoamento de Defensiva Pesada",
+                "Param": "{Skill:1171020, Prop:1002}"
+            },
+            "117100079": {
+                "Description": "Multiplicador de Atordoamento de Defensiva em Cadeia",
+                "Param": "{Skill:1171021, Prop:1002}"
+            },
+            "117100080": {
+                "Title": "Assistência Imediata: Néctar Flamejante"
+            },
+            "117100081": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1171022, Prop:1001}"
+            },
+            "117100082": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1171022, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1171001": {
+            "DamageValue": 4480,
+            "DamageGrowth": 410,
+            "DazeValue": 1870,
+            "DazeGrowth": 90
+        },
+        "1171002": {
+            "DamageValue": 4350,
+            "DamageGrowth": 400,
+            "DazeValue": 3080,
+            "DazeGrowth": 140
+        },
+        "1171003": {
+            "DamageValue": 7170,
+            "DamageGrowth": 660,
+            "DazeValue": 4780,
+            "DazeGrowth": 220
+        },
+        "1171004": {
+            "DamageValue": 6660,
+            "DamageGrowth": 610,
+            "DazeValue": 3040,
+            "DazeGrowth": 140
+        },
+        "1171005": {
+            "DamageValue": 9630,
+            "DamageGrowth": 880,
+            "DazeValue": 5200,
+            "DazeGrowth": 240
+        },
+        "1171006": {
+            "DamageValue": 12540,
+            "DamageGrowth": 1140,
+            "DazeValue": 9650,
+            "DazeGrowth": 440
+        },
+        "1171007": {
+            "DamageValue": 23280,
+            "DamageGrowth": 2120,
+            "DazeValue": 17910,
+            "DazeGrowth": 820
+        },
+        "1171008": {
+            "DamageValue": 5780,
+            "DamageGrowth": 530,
+            "DazeValue": 5780,
+            "DazeGrowth": 270
+        },
+        "1171009": {
+            "DamageValue": 6240,
+            "DamageGrowth": 570,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1171010": {
+            "DamageValue": 54380,
+            "DamageGrowth": 4950,
+            "DazeValue": 37860,
+            "DazeGrowth": 1730
+        },
+        "1171011": {
+            "DamageValue": 9670,
+            "DamageGrowth": 880,
+            "DazeValue": 6570,
+            "DazeGrowth": 300
+        },
+        "1171012": {
+            "DamageValue": 95810,
+            "DamageGrowth": 8710,
+            "DazeValue": 58570,
+            "DazeGrowth": 2670
+        },
+        "1171013": {
+            "DamageValue": 28710,
+            "DamageGrowth": 2610,
+            "DazeValue": 20780,
+            "DazeGrowth": 950
+        },
+        "1171014": {
+            "DamageValue": 6790,
+            "DamageGrowth": 620,
+            "DazeValue": 3400,
+            "DazeGrowth": 160
+        },
+        "1171015": {
+            "DamageValue": 21970,
+            "DamageGrowth": 2000,
+            "DazeValue": 19440,
+            "DazeGrowth": 890
+        },
+        "1171016": {
+            "DamageValue": 68090,
+            "DamageGrowth": 6190,
+            "DazeValue": 24200,
+            "DazeGrowth": 1100
+        },
+        "1171017": {
+            "DamageValue": 201220,
+            "DamageGrowth": 18300,
+            "DazeValue": 10640,
+            "DazeGrowth": 490
+        },
+        "1171018": {
+            "DamageValue": 8440,
+            "DamageGrowth": 770,
+            "DazeValue": 8440,
+            "DazeGrowth": 390
+        },
+        "1171019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1171020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1171021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1171022": {
+            "DamageValue": 32760,
+            "DamageGrowth": 2980,
+            "DazeValue": 28240,
+            "DazeGrowth": 1290
+        },
+        "1171023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1171024": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1171025": {
+            "DamageValue": 16500,
+            "DamageGrowth": 1500,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1171026": {
+            "DamageValue": 19990,
+            "DamageGrowth": 1820,
+            "DazeValue": 19990,
+            "DazeGrowth": 910
+        },
+        "1171027": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

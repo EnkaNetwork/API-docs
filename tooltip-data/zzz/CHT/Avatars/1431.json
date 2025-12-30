@@ -1,0 +1,772 @@
+{
+    "Name": "葉瞬光",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Specialty": {
+        "Id": 1,
+        "Name": "強攻"
+    },
+    "Talents": {
+        "1": {
+            "Title": "夢中身",
+            "Description": "進入戰場時，獲得6點<color=#FFFFFF>[青溟劍勢]</color>，在勘域模式中此效果180秒內最多觸發一次。\n<color=#FFFFFF>[核心被動：照破無明]</color>中<color=#FFFFFF>[合道]</color>效果額外使造成的傷害提升10%，無視目標20%防禦力。",
+            "Lore": "無數次午夜夢迴，她都會回想起那一天——\n劍刃嗡鳴，長劍認主，契約就此締結。\n那究竟是幸運，亦或是詛咒？\n\n……無人知曉這個問題的答案，然而從那一日開始，她的命運便牽繫於此劍之上。"
+        },
+        "2": {
+            "Title": "光與影",
+            "Description": "<color=#FFFFFF>[載物]</color>可疊加層數提升至6層，<color=#FFFFFF>[觀止]</color>可疊加至9層。<color=#FFFFFF>[明心境]</color>狀態下，每消耗1點<color=#FFFFFF>[青溟劍勢]</color>，則獲得1層<color=#FFFFFF>[觀止]</color>效果。<color=#FFFFFF>[強化特殊技：明心境·飛光]</color>和<color=#FFFFFF>[終結技：斬妄開天]</color>造成的傷害無視目標40%防禦力。",
+            "Lore": "歲月流淌，寒來暑往。\n她所擁有的天地，不過雲巋山上這小小一隅，山間四時便是能看到的所有景象。\n在漫長無盡的寂寥與如影隨形的恐懼中，「另一個自己」悄然誕生。\n\n「……我是她的一部分，從始至終，未曾分離。」\n「若她是光，那我就是影子。若她是高懸的聖像，那我就是匍匐的凡人。」\n「與她不同，我不願成為什麼『英雄』……」\n「……我只想活下去。」"
+        },
+        "3": {
+            "Title": "劍客行",
+            "Description": "<color=#FFFFFF>[普通攻擊]</color>、<color=#FFFFFF>[閃避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[連攜技]</color>技能等級+2",
+            "Lore": "絕世的名劍藏於深山，斂盡鋒芒。\n而它出鞘之時，長劍所及寒芒千丈，風雪過處仍餘孤光耀目。\n\n「劍客是什麼？」\n「不過是……一往無前的勇氣，與斬開一切的決心。」"
+        },
+        "4": {
+            "Title": "共黯塵",
+            "Description": "進入戰場時，獲得1000點喧響值，在勘域模式中此效果180秒內最多觸發一次。<color=#FFFFFF>[以太帷幕·決裁]</color>提供的帷幕易傷加成上限提升至200%。",
+            "Lore": "宏大的願景下潛藏著謊言，所謂的拯救卻需得燃盡自身。\n命運於她從無憐憫，而她欣然奔赴最後的結局。\n\n「我知道的。」\n「我的一生都會與『失去』共存。」\n「我自願接受這一切……」\n「……我選擇去成為這樣的人。」"
+        },
+        "5": {
+            "Title": "微光引",
+            "Description": "<color=#FFFFFF>[普通攻擊]</color>、<color=#FFFFFF>[閃避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[連攜技]</color>技能等級+2",
+            "Lore": "「……我想，我終究還是那個『幸運』的孩子。」\n「穢息不會淹沒我，災難不會吞噬我。」\n「即便是青溟劍，也無法將我拽進漆黑不見底的深淵……」\n\n「哥哥、師父、隨便觀的大家……還有你。」\n「……我知道，你們會一直等著我。」\n如此，縱使前路棘刺滿地，亦存微光照亮旅途。"
+        },
+        "6": {
+            "Title": "明燈願",
+            "Description": "進入戰場時，獲得2層<color=#FFFFFF>[明燈願]</color>。每次進入<color=#FFFFFF>[明心境]</color>狀態會獲得1層<color=#FFFFFF>[明燈願]</color>，至多疊加4層。擁有3層<color=#FFFFFF>[明燈願]</color>時，將<color=#FFFFFF>[強化特殊技：明心境·歸塵]</color>替換為<color=#FFFFFF>[終結技：斬妄開天]</color>，發動此<color=#FFFFFF>[終結技：斬妄開天]</color>時，消耗3層<color=#FFFFFF>[明燈願]</color>。<color=#FFFFFF>[強化特殊技：明心境·歸塵]</color>和<color=#FFFFFF>[終結技：斬妄開天]</color>最後一擊額外造成1500%攻擊力的<color=#F0D12B>物理傷害</color>。",
+            "Lore": "她曾孑然一身，獨行於黑暗。\n又執劍奔赴災厄，青溟出鞘之時，一瞬的虹光劃破長空，照徹靜寂黑暗之地。\n\n「……我想成為萬千螢火中的一盞。」\n「天總會亮的。無論黑夜多麼漫長，白晝終將到來。」\n「在遙遠的過去，和遙遠的未來，一定也有無數人做出了和我一樣的選擇。我們……從不孤單。」"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "核心被動：照破無明",
+            "DescriptionByLevel": {
+                "1": "非<color=#FFFFFF>[明心境]</color>狀態且未擁有6點[青溟劍勢]時，部分攻擊會緩慢累積<color=#FFFFFF>[青溟劍勢]</color>。任意方式獲得<color=#FFFFFF>[青溟劍勢]</color>時，每溢出1點<color=#FFFFFF>[青溟劍勢]</color>，將轉化為1層<color=#FFFFFF>[載物]</color>效果，至多疊加3層，在退出<color=#FFFFFF>[明心境]</color>狀態時，會消耗所有<color=#FFFFFF>[載物]</color>獲得對應層數的<color=#FFFFFF>[青溟劍勢]</color>。\n進入戰場時，獲得<color=#FFFFFF>[合道]</color>效果，暴擊率提升<color=#2BAD00>15%</color>，造成的傷害提升<color=#2BAD00>10%</color>。\n釋放<color=#FFFFFF>[終結技：逐雲驚霆]</color>或<color=#FFFFFF>[登場技：照影]</color>後，葉瞬光將進入<color=#FFFFFF>[明心境]</color>狀態，並開啟<color=#FFFFFF>[以太帷幕·決裁]</color>。<color=#FFFFFF>[以太帷幕·決裁]</color>與<color=#FFFFFF>[明心境]</color>均持續16秒，葉瞬光位於後場時不減少持續時間。處於<color=#FFFFFF>[明心境]</color>狀態下，葉瞬光將使用更加強力的招式，招式造成的<color=#F0D12B>物理傷害</color>均為<color=#F0D12B>凜刃傷害</color>。\n<color=#FFFFFF>[以太帷幕·決裁]</color>持續期間，敵人進入<color=#FFFFFF>[以太帷幕·決裁]</color>時，將基於其此時的失衡易傷倍率為其附加帷幕易傷效果，期間葉瞬光發動的招式對敵人造成傷害時都將不計算敵人的失衡易傷加成，轉而計算帷幕易傷加成。帷幕易傷加成上限為110%，<color=#FFFFFF>[以太帷幕·決裁]</color>結束時移除帷幕易傷效果。",
+                "2": "非<color=#FFFFFF>[明心境]</color>狀態且未擁有6點[青溟劍勢]時，部分攻擊會緩慢累積<color=#FFFFFF>[青溟劍勢]</color>。任意方式獲得<color=#FFFFFF>[青溟劍勢]</color>時，每溢出1點<color=#FFFFFF>[青溟劍勢]</color>，將轉化為1層<color=#FFFFFF>[載物]</color>效果，至多疊加3層，在退出<color=#FFFFFF>[明心境]</color>狀態時，會消耗所有<color=#FFFFFF>[載物]</color>獲得對應層數的<color=#FFFFFF>[青溟劍勢]</color>。\n進入戰場時，獲得<color=#FFFFFF>[合道]</color>效果，暴擊率提升<color=#2BAD00>17.5%</color>，造成的傷害提升<color=#2BAD00>12.5%</color>。\n釋放<color=#FFFFFF>[終結技：逐雲驚霆]</color>或<color=#FFFFFF>[登場技：照影]</color>後，葉瞬光將進入<color=#FFFFFF>[明心境]</color>狀態，並開啟<color=#FFFFFF>[以太帷幕·決裁]</color>。<color=#FFFFFF>[以太帷幕·決裁]</color>與<color=#FFFFFF>[明心境]</color>均持續16秒，葉瞬光位於後場時不減少持續時間。處於<color=#FFFFFF>[明心境]</color>狀態下，葉瞬光將使用更加強力的招式，招式造成的<color=#F0D12B>物理傷害</color>均為<color=#F0D12B>凜刃傷害</color>。\n<color=#FFFFFF>[以太帷幕·決裁]</color>持續期間，敵人進入<color=#FFFFFF>[以太帷幕·決裁]</color>時，將基於其此時的失衡易傷倍率為其附加帷幕易傷效果，期間葉瞬光發動的招式對敵人造成傷害時都將不計算敵人的失衡易傷加成，轉而計算帷幕易傷加成。帷幕易傷加成上限為110%，<color=#FFFFFF>[以太帷幕·決裁]</color>結束時移除帷幕易傷效果。",
+                "3": "非<color=#FFFFFF>[明心境]</color>狀態且未擁有6點[青溟劍勢]時，部分攻擊會緩慢累積<color=#FFFFFF>[青溟劍勢]</color>。任意方式獲得<color=#FFFFFF>[青溟劍勢]</color>時，每溢出1點<color=#FFFFFF>[青溟劍勢]</color>，將轉化為1層<color=#FFFFFF>[載物]</color>效果，至多疊加3層，在退出<color=#FFFFFF>[明心境]</color>狀態時，會消耗所有<color=#FFFFFF>[載物]</color>獲得對應層數的<color=#FFFFFF>[青溟劍勢]</color>。\n進入戰場時，獲得<color=#FFFFFF>[合道]</color>效果，暴擊率提升<color=#2BAD00>20%</color>，造成的傷害提升<color=#2BAD00>15%</color>。\n釋放<color=#FFFFFF>[終結技：逐雲驚霆]</color>或<color=#FFFFFF>[登場技：照影]</color>後，葉瞬光將進入<color=#FFFFFF>[明心境]</color>狀態，並開啟<color=#FFFFFF>[以太帷幕·決裁]</color>。<color=#FFFFFF>[以太帷幕·決裁]</color>與<color=#FFFFFF>[明心境]</color>均持續16秒，葉瞬光位於後場時不減少持續時間。處於<color=#FFFFFF>[明心境]</color>狀態下，葉瞬光將使用更加強力的招式，招式造成的<color=#F0D12B>物理傷害</color>均為<color=#F0D12B>凜刃傷害</color>。\n<color=#FFFFFF>[以太帷幕·決裁]</color>持續期間，敵人進入<color=#FFFFFF>[以太帷幕·決裁]</color>時，將基於其此時的失衡易傷倍率為其附加帷幕易傷效果，期間葉瞬光發動的招式對敵人造成傷害時都將不計算敵人的失衡易傷加成，轉而計算帷幕易傷加成。帷幕易傷加成上限為110%，<color=#FFFFFF>[以太帷幕·決裁]</color>結束時移除帷幕易傷效果。",
+                "4": "非<color=#FFFFFF>[明心境]</color>狀態且未擁有6點[青溟劍勢]時，部分攻擊會緩慢累積<color=#FFFFFF>[青溟劍勢]</color>。任意方式獲得<color=#FFFFFF>[青溟劍勢]</color>時，每溢出1點<color=#FFFFFF>[青溟劍勢]</color>，將轉化為1層<color=#FFFFFF>[載物]</color>效果，至多疊加3層，在退出<color=#FFFFFF>[明心境]</color>狀態時，會消耗所有<color=#FFFFFF>[載物]</color>獲得對應層數的<color=#FFFFFF>[青溟劍勢]</color>。\n進入戰場時，獲得<color=#FFFFFF>[合道]</color>效果，暴擊率提升<color=#2BAD00>22.5%</color>，造成的傷害提升<color=#2BAD00>17.5%</color>。\n釋放<color=#FFFFFF>[終結技：逐雲驚霆]</color>或<color=#FFFFFF>[登場技：照影]</color>後，葉瞬光將進入<color=#FFFFFF>[明心境]</color>狀態，並開啟<color=#FFFFFF>[以太帷幕·決裁]</color>。<color=#FFFFFF>[以太帷幕·決裁]</color>與<color=#FFFFFF>[明心境]</color>均持續16秒，葉瞬光位於後場時不減少持續時間。處於<color=#FFFFFF>[明心境]</color>狀態下，葉瞬光將使用更加強力的招式，招式造成的<color=#F0D12B>物理傷害</color>均為<color=#F0D12B>凜刃傷害</color>。\n<color=#FFFFFF>[以太帷幕·決裁]</color>持續期間，敵人進入<color=#FFFFFF>[以太帷幕·決裁]</color>時，將基於其此時的失衡易傷倍率為其附加帷幕易傷效果，期間葉瞬光發動的招式對敵人造成傷害時都將不計算敵人的失衡易傷加成，轉而計算帷幕易傷加成。帷幕易傷加成上限為110%，<color=#FFFFFF>[以太帷幕·決裁]</color>結束時移除帷幕易傷效果。",
+                "5": "非<color=#FFFFFF>[明心境]</color>狀態且未擁有6點[青溟劍勢]時，部分攻擊會緩慢累積<color=#FFFFFF>[青溟劍勢]</color>。任意方式獲得<color=#FFFFFF>[青溟劍勢]</color>時，每溢出1點<color=#FFFFFF>[青溟劍勢]</color>，將轉化為1層<color=#FFFFFF>[載物]</color>效果，至多疊加3層，在退出<color=#FFFFFF>[明心境]</color>狀態時，會消耗所有<color=#FFFFFF>[載物]</color>獲得對應層數的<color=#FFFFFF>[青溟劍勢]</color>。\n進入戰場時，獲得<color=#FFFFFF>[合道]</color>效果，暴擊率提升<color=#2BAD00>25%</color>，造成的傷害提升<color=#2BAD00>20%</color>。\n釋放<color=#FFFFFF>[終結技：逐雲驚霆]</color>或<color=#FFFFFF>[登場技：照影]</color>後，葉瞬光將進入<color=#FFFFFF>[明心境]</color>狀態，並開啟<color=#FFFFFF>[以太帷幕·決裁]</color>。<color=#FFFFFF>[以太帷幕·決裁]</color>與<color=#FFFFFF>[明心境]</color>均持續16秒，葉瞬光位於後場時不減少持續時間。處於<color=#FFFFFF>[明心境]</color>狀態下，葉瞬光將使用更加強力的招式，招式造成的<color=#F0D12B>物理傷害</color>均為<color=#F0D12B>凜刃傷害</color>。\n<color=#FFFFFF>[以太帷幕·決裁]</color>持續期間，敵人進入<color=#FFFFFF>[以太帷幕·決裁]</color>時，將基於其此時的失衡易傷倍率為其附加帷幕易傷效果，期間葉瞬光發動的招式對敵人造成傷害時都將不計算敵人的失衡易傷加成，轉而計算帷幕易傷加成。帷幕易傷加成上限為110%，<color=#FFFFFF>[以太帷幕·決裁]</color>結束時移除帷幕易傷效果。",
+                "6": "非<color=#FFFFFF>[明心境]</color>狀態且未擁有6點[青溟劍勢]時，部分攻擊會緩慢累積<color=#FFFFFF>[青溟劍勢]</color>。任意方式獲得<color=#FFFFFF>[青溟劍勢]</color>時，每溢出1點<color=#FFFFFF>[青溟劍勢]</color>，將轉化為1層<color=#FFFFFF>[載物]</color>效果，至多疊加3層，在退出<color=#FFFFFF>[明心境]</color>狀態時，會消耗所有<color=#FFFFFF>[載物]</color>獲得對應層數的<color=#FFFFFF>[青溟劍勢]</color>。\n進入戰場時，獲得<color=#FFFFFF>[合道]</color>效果，暴擊率提升<color=#2BAD00>27.5%</color>，造成的傷害提升<color=#2BAD00>22.5%</color>。\n釋放<color=#FFFFFF>[終結技：逐雲驚霆]</color>或<color=#FFFFFF>[登場技：照影]</color>後，葉瞬光將進入<color=#FFFFFF>[明心境]</color>狀態，並開啟<color=#FFFFFF>[以太帷幕·決裁]</color>。<color=#FFFFFF>[以太帷幕·決裁]</color>與<color=#FFFFFF>[明心境]</color>均持續16秒，葉瞬光位於後場時不減少持續時間。處於<color=#FFFFFF>[明心境]</color>狀態下，葉瞬光將使用更加強力的招式，招式造成的<color=#F0D12B>物理傷害</color>均為<color=#F0D12B>凜刃傷害</color>。\n<color=#FFFFFF>[以太帷幕·決裁]</color>持續期間，敵人進入<color=#FFFFFF>[以太帷幕·決裁]</color>時，將基於其此時的失衡易傷倍率為其附加帷幕易傷效果，期間葉瞬光發動的招式對敵人造成傷害時都將不計算敵人的失衡易傷加成，轉而計算帷幕易傷加成。帷幕易傷加成上限為110%，<color=#FFFFFF>[以太帷幕·決裁]</color>結束時移除帷幕易傷效果。",
+                "7": "非<color=#FFFFFF>[明心境]</color>狀態且未擁有6點[青溟劍勢]時，部分攻擊會緩慢累積<color=#FFFFFF>[青溟劍勢]</color>。任意方式獲得<color=#FFFFFF>[青溟劍勢]</color>時，每溢出1點<color=#FFFFFF>[青溟劍勢]</color>，將轉化為1層<color=#FFFFFF>[載物]</color>效果，至多疊加3層，在退出<color=#FFFFFF>[明心境]</color>狀態時，會消耗所有<color=#FFFFFF>[載物]</color>獲得對應層數的<color=#FFFFFF>[青溟劍勢]</color>。\n進入戰場時，獲得<color=#FFFFFF>[合道]</color>效果，暴擊率提升<color=#2BAD00>30%</color>，造成的傷害提升<color=#2BAD00>25%</color>。\n釋放<color=#FFFFFF>[終結技：逐雲驚霆]</color>或<color=#FFFFFF>[登場技：照影]</color>後，葉瞬光將進入<color=#FFFFFF>[明心境]</color>狀態，並開啟<color=#FFFFFF>[以太帷幕·決裁]</color>。<color=#FFFFFF>[以太帷幕·決裁]</color>與<color=#FFFFFF>[明心境]</color>均持續16秒，葉瞬光位於後場時不減少持續時間。處於<color=#FFFFFF>[明心境]</color>狀態下，葉瞬光將使用更加強力的招式，招式造成的<color=#F0D12B>物理傷害</color>均為<color=#F0D12B>凜刃傷害</color>。\n<color=#FFFFFF>[以太帷幕·決裁]</color>持續期間，敵人進入<color=#FFFFFF>[以太帷幕·決裁]</color>時，將基於其此時的失衡易傷倍率為其附加帷幕易傷效果，期間葉瞬光發動的招式對敵人造成傷害時都將不計算敵人的失衡易傷加成，轉而計算帷幕易傷加成。帷幕易傷加成上限為110%，<color=#FFFFFF>[以太帷幕·決裁]</color>結束時移除帷幕易傷效果。"
+            }
+        },
+        "MathSkill": {
+            "Title": "額外能力：溯影驚鴻",
+            "Description": "隊伍中包含<color=#FFFFFF>[支援]</color>或<color=#FFFFFF>[防護]</color>角色時觸發：\n隊友開啟任意<color=#FFFFFF>[以太帷幕]</color>時，獲得3點<color=#FFFFFF>[青溟劍勢]</color>，若自身已經處於<color=#FFFFFF>[明心境]</color>狀態，則會轉化為3層<color=#FFFFFF>[載物]</color>效果。"
+        },
+        "BaseProps": [
+            {
+                "20101": 0,
+                "12101": 0
+            },
+            {
+                "20101": 480,
+                "12101": 0
+            },
+            {
+                "20101": 480,
+                "12101": 25
+            },
+            {
+                "20101": 960,
+                "12101": 25
+            },
+            {
+                "20101": 960,
+                "12101": 50
+            },
+            {
+                "20101": 1440,
+                "12101": 50
+            },
+            {
+                "20101": 1440,
+                "12101": 75
+            }
+        ]
+    },
+    "SkillDescriptions": {
+        "0": {
+            "143100001": {
+                "Title": "普通攻擊：快劍",
+                "Description": "點按 <IconMap:Icon_Normal> 發動：\n向前方進行至多四段的斬擊，造成<color=#F0D12B>物理傷害</color>。\n第四段攻擊發動後，可以銜接<color=#FFFFFF>[衝刺攻擊：如影疾行]</color>。"
+            },
+            "143100002": {
+                "Title": "普通攻擊：流雲劍意",
+                "Description": "長按 <IconMap:Icon_Normal> 發動：\n快速發動多道劍氣，造成<color=#F0D12B>物理傷害</color>，可以透過長按延長攻擊。\n招式發動期間，抗打斷等級提升。"
+            },
+            "143100003": {
+                "Title": "普通攻擊：明心境·分水行",
+                "Description": "在<color=#FFFFFF>[明心境]</color>狀態下並處於地面時，點按 <IconMap:Icon_Normal> 發動：\n向前方進行至多三段的斬擊，造成<color=#F0D12B>物理傷害</color>。\n第三段攻擊發動時，若受到敵人攻擊，可觸發格擋效果，免疫該次傷害。\n若擁有<color=#FFFFFF>[青溟劍勢]</color>，第三段攻擊將被替換為<color=#FFFFFF>[普通攻擊：明心境·扶搖勢]</color>。"
+            },
+            "143100004": {
+                "Title": "普通攻擊：明心境·扶搖勢",
+                "Description": "在<color=#FFFFFF>[明心境]</color>狀態下，擁有<color=#FFFFFF>[青溟劍勢]</color>時，第二段<color=#FFFFFF>[普通攻擊：明心境·分水行]</color>後，點按 <IconMap:Icon_Normal> 發動：\n快速發動升空攻擊，對敵人造成<color=#F0D12B>物理傷害</color>，並進入空中狀態。\n招式發動期間擁有無敵效果。"
+            },
+            "143100005": {
+                "Title": "普通攻擊：明心境·斬流光 極",
+                "Description": "在<color=#FFFFFF>[普通攻擊：明心境·斬流光 滅]</color>發動後，擁有<color=#FFFFFF>[青溟劍勢]</color>時，點按 <IconMap:Icon_Normal> 發動：\n向前方進行大範圍斬擊，造成大量<color=#F0D12B>物理傷害</color>，命中敵人時會消耗1點<color=#FFFFFF>[青溟劍勢]</color>。\n招式發動時，若受到敵人攻擊，可觸發格擋效果，免疫該次傷害，並提升招式打斷等級。\n招式發動後，若擁有<color=#FFFFFF>[青溟劍勢]</color>，點按 <IconMap:Icon_SpecialReady> 可以消耗1點<color=#FFFFFF>[青溟劍勢]</color>，發動一段<color=#FFFFFF>[強化特殊技：明心境·飛光]</color>，發動後會自動銜接<color=#FFFFFF>[普通攻擊：明心境·扶搖勢]</color>，並進入空中狀態。\n招式發動期間擁有無敵效果。"
+            },
+            "143100006": {
+                "Title": "普通攻擊：明心境·斬流光",
+                "Description": "在<color=#FFFFFF>[明心境]</color>狀態下，並處於空中時，點按 <IconMap:Icon_Normal> 發動：\n向前下方進行至多兩段的斬擊，造成<color=#F0D12B>物理傷害</color>。\n發動期間不會退出<color=#FFFFFF>[明心境]</color>狀態。\n點按 <IconMap:Icon_SpecialReady> 或 <IconMap:Icon_Evade> 可以直接發動<color=#FFFFFF>[普通攻擊：明心境·斬流光 滅]</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "143100007": {
+                "Title": "普通攻擊：明心境·斬流光 滅",
+                "Description": "發動第二段<color=#FFFFFF>[普通攻擊：明心境·斬流光]</color>後，點按 <IconMap:Icon_Normal> 發動：\n向前下方進行下墜攻擊，並進入地面狀態，造成<color=#F0D12B>物理傷害</color>。\n發動時若自身擁有2點及以上<color=#FFFFFF>[青溟劍勢]</color>，則向前下方進行大範圍下墜攻擊，造成大量<color=#F0D12B>物理傷害</color>，命中敵人時，會消耗2點<color=#FFFFFF>[青溟劍勢]</color>，並獲得<color=#FFFFFF>[觀止]</color>效果。招式發動後，若擁有<color=#FFFFFF>[青溟劍勢]</color>，點按 <IconMap:Icon_SpecialReady> 可以消耗1點<color=#FFFFFF>[青溟劍勢]</color>，發動一段<color=#FFFFFF>[強化特殊技：明心境·飛光]</color>，發動後可快速銜接<color=#FFFFFF>[普通攻擊：明心境·斬流光 極]</color>。\n發動期間不會退出<color=#FFFFFF>[明心境]</color>狀態。\n招式發動時，若受到敵人攻擊，可觸發格擋效果，免疫該次傷害。\n招式發動期間擁有無敵效果。"
+            },
+            "143100008": {
+                "Title": "觀止",
+                "Description": "發動<color=#FFFFFF>[強化特殊技：明心境·飛光]</color>期間，每次消耗<color=#FFFFFF>[青溟劍勢]</color>時，若擁有<color=#FFFFFF>[觀止]</color>效果，則不消耗<color=#FFFFFF>[青溟劍勢]</color>，改為消耗<color=#FFFFFF>[觀止]</color>效果，該效果不可疊加，持續至該次<color=#FFFFFF>[明心境]</color>狀態結束。"
+            },
+            "143100029": {
+                "Title": "普通攻擊：快劍"
+            },
+            "143100030": {
+                "Description": "一段傷害倍率",
+                "Param": "{Skill:1431001, Prop:1001}"
+            },
+            "143100031": {
+                "Description": "二段傷害倍率",
+                "Param": "{Skill:1431002, Prop:1001}"
+            },
+            "143100032": {
+                "Description": "三段傷害倍率",
+                "Param": "{Skill:1431003, Prop:1001}"
+            },
+            "143100033": {
+                "Description": "四段傷害倍率",
+                "Param": "{Skill:1431005, Prop:1001}"
+            },
+            "143100034": {
+                "Description": "一段失衡倍率",
+                "Param": "{Skill:1431001, Prop:1002}"
+            },
+            "143100035": {
+                "Description": "二段失衡倍率",
+                "Param": "{Skill:1431002, Prop:1002}"
+            },
+            "143100036": {
+                "Description": "三段失衡倍率",
+                "Param": "{Skill:1431003, Prop:1002}"
+            },
+            "143100037": {
+                "Description": "四段失衡倍率",
+                "Param": "{Skill:1431005, Prop:1002}"
+            },
+            "143100038": {
+                "Title": "普通攻擊：流雲劍意"
+            },
+            "143100039": {
+                "Description": "每道劍氣傷害倍率",
+                "Param": "{{Skill:1431004, Prop:1001}/7}"
+            },
+            "143100040": {
+                "Description": "每道劍氣失衡倍率",
+                "Param": "{{Skill:1431004, Prop:1002}/7}"
+            },
+            "143100041": {
+                "Title": "普通攻擊：明心境·分水行"
+            },
+            "143100042": {
+                "Description": "一段傷害倍率",
+                "Param": "{Skill:1431006, Prop:1001}"
+            },
+            "143100043": {
+                "Description": "二段傷害倍率",
+                "Param": "{Skill:1431007, Prop:1001}"
+            },
+            "143100044": {
+                "Description": "三段傷害倍率",
+                "Param": "{Skill:1431008, Prop:1001}"
+            },
+            "143100045": {
+                "Description": "一段失衡倍率",
+                "Param": "{Skill:1431006, Prop:1002}"
+            },
+            "143100046": {
+                "Description": "二段失衡倍率",
+                "Param": "{Skill:1431007, Prop:1002}"
+            },
+            "143100047": {
+                "Description": "三段失衡倍率",
+                "Param": "{Skill:1431008, Prop:1002}"
+            },
+            "143100048": {
+                "Title": "普通攻擊：明心境·扶搖勢"
+            },
+            "143100049": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1431017, Prop:1001}"
+            },
+            "143100050": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1431017, Prop:1002}"
+            },
+            "143100051": {
+                "Title": "普通攻擊：明心境·斬流光 極"
+            },
+            "143100052": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1431009, Prop:1001}"
+            },
+            "143100053": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1431009, Prop:1002}"
+            },
+            "143100054": {
+                "Title": "普通攻擊：明心境·斬流光"
+            },
+            "143100055": {
+                "Description": "一段傷害倍率",
+                "Param": "{Skill:1431010, Prop:1001}"
+            },
+            "143100056": {
+                "Description": "二段傷害倍率",
+                "Param": "{Skill:1431011, Prop:1001}"
+            },
+            "143100057": {
+                "Description": "一段失衡倍率",
+                "Param": "{Skill:1431010, Prop:1002}"
+            },
+            "143100058": {
+                "Description": "二段失衡倍率",
+                "Param": "{Skill:1431011, Prop:1002}"
+            },
+            "143100059": {
+                "Title": "普通攻擊：明心境·斬流光 滅"
+            },
+            "143100060": {
+                "Description": "有青溟劍勢時傷害倍率",
+                "Param": "{Skill:1431013, Prop:1001}"
+            },
+            "143100061": {
+                "Description": "有青溟劍勢時失衡倍率",
+                "Param": "{Skill:1431013, Prop:1002}"
+            },
+            "143100062": {
+                "Description": "無青溟劍勢時傷害倍率",
+                "Param": "{Skill:1431012, Prop:1001}"
+            },
+            "143100063": {
+                "Description": "無青溟劍勢時失衡倍率",
+                "Param": "{Skill:1431012, Prop:1002}"
+            }
+        },
+        "1": {
+            "143100009": {
+                "Title": "特殊技：引滄瀾",
+                "Description": "點按 <IconMap:Icon_Special> 發動：\n若擁有閃避次數，則消耗1次閃避次數並視為同時發動了<color=#FFFFFF>[閃避]</color>。\n若未擁有閃避次數或未觸發<color=#FFFFFF>[極限閃避]</color>，對敵人發動快速劍氣攻擊，造成<color=#F0D12B>物理傷害</color>。\n若此時觸發了<color=#FFFFFF>[極限閃避]</color>，對敵人發動飛劍攻擊，造成<color=#F0D12B>物理傷害</color>，並可直接銜接第二段<color=#FFFFFF>[普通攻擊：快劍]</color>。\n招式發動期間擁有短暫無敵效果。"
+            },
+            "143100010": {
+                "Title": "強化特殊技：定風波",
+                "Description": "能量足夠時，點按 <IconMap:Icon_SpecialReady> 發動：\n對敵人造成突進斬擊和飛劍攻擊，造成大量<color=#F0D12B>物理傷害</color>。\n發動時可以閃避敵人的攻擊。\n發動後獲得1點<color=#FFFFFF>[青溟劍勢]</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "143100011": {
+                "Title": "特殊技：明心境·拂衣去",
+                "Description": "在<color=#FFFFFF>[明心境]</color>狀態下，處於地面狀態時，點按 <IconMap:Icon_SpecialReady> 發動：\n發動快速的後撤斬擊，造成<color=#F0D12B>物理傷害</color>。\n若擁有閃避次數，則消耗1次閃避次數並視為同時發動了<color=#FFFFFF>[閃避]</color>。\n若此時觸發了<color=#FFFFFF>[極限閃避]</color>，點按 <IconMap:Icon_Normal> 可以快速發動<color=#FFFFFF>[普通攻擊：明心境·斬流光 極]</color>，並進入<color=#FFFFFF>[極限視域]</color>。\n且該次<color=#FFFFFF>[普通攻擊：明心境·斬流光 極]</color>發動後，可以直接銜接<color=#FFFFFF>[普通攻擊：明心境·扶搖勢]</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "143100012": {
+                "Title": "強化特殊技：明心境·飛光",
+                "Description": "在<color=#FFFFFF>[明心境]</color>狀態下，擁有<color=#FFFFFF>[青溟劍勢]</color>時，長按 <IconMap:Icon_SpecialReady> 發動：\n發動快速斬擊，造成大量<color=#F0D12B>物理傷害</color>並持續快速消耗<color=#FFFFFF>[青溟劍勢]</color>，直至耗盡<color=#FFFFFF>[青溟劍勢]</color>。\n若<color=#FFFFFF>[青溟劍勢]</color>不足或停止長按 <IconMap:Icon_SpecialReady> ，招式會提前結束。\n發動期間不會退出<color=#FFFFFF>[明心境]</color>狀態。\n招式發動期間擁有無敵效果。"
+            },
+            "143100013": {
+                "Title": "強化特殊技：明心境·歸塵",
+                "Description": "在<color=#FFFFFF>[明心境]</color>狀態下，點按 <IconMap:Icon_UltimateReady> 或<color=#FFFFFF>[青溟劍勢]</color>耗盡時長按 <IconMap:Icon_SpecialReady> 發動：\n對大範圍敵人造成大量<color=#F0D12B>物理傷害</color>。\n發動期間不會退出<color=#FFFFFF>[明心境]</color>狀態。\n招式發動後，關閉<color=#FFFFFF>[以太帷幕·決裁]</color>退出<color=#FFFFFF>[明心境]</color>狀態。\n招式發動期間擁有無敵效果。"
+            },
+            "143100064": {
+                "Title": "特殊技：引滄瀾"
+            },
+            "143100065": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1431014, Prop:1001}"
+            },
+            "143100066": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1431014, Prop:1002}"
+            },
+            "143100067": {
+                "Description": "觸發極限閃避傷害倍率",
+                "Param": "{Skill:1431015, Prop:1001}"
+            },
+            "143100068": {
+                "Description": "觸發極限閃避失衡倍率",
+                "Param": "{Skill:1431015, Prop:1002}"
+            },
+            "143100069": {
+                "Title": "強化特殊技：定風波"
+            },
+            "143100070": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1431016, Prop:1001}"
+            },
+            "143100071": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1431016, Prop:1002}"
+            },
+            "143100072": {
+                "Description": "能量消耗",
+                "Param": "60"
+            },
+            "143100073": {
+                "Title": "特殊技：明心境·拂衣去"
+            },
+            "143100074": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1431021, Prop:1001}"
+            },
+            "143100075": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1431021, Prop:1002}"
+            },
+            "143100076": {
+                "Title": "強化特殊技：明心境·飛光"
+            },
+            "143100077": {
+                "Description": "消耗1點青溟劍勢傷害倍率",
+                "Param": "{{Skill:1431018, Prop:1001}/6}"
+            },
+            "143100078": {
+                "Description": "消耗1點青溟劍勢失衡倍率",
+                "Param": "{{Skill:1431018, Prop:1002}/6}"
+            },
+            "143100079": {
+                "Description": "消耗6點青溟劍勢傷害倍率",
+                "Param": "{Skill:1431018, Prop:1001}"
+            },
+            "143100080": {
+                "Description": "消耗6點青溟劍勢失衡倍率",
+                "Param": "{Skill:1431018, Prop:1002}"
+            },
+            "143100081": {
+                "Title": "強化特殊技：明心境·歸塵"
+            },
+            "143100082": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1431019, Prop:1001}"
+            },
+            "143100083": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1431019, Prop:1002}"
+            }
+        },
+        "2": {
+            "143100014": {
+                "Title": "閃避：不留行",
+                "Description": "點按 <IconMap:Icon_Evade> 發動：\n快速的衝刺閃避。\n招式發動期間擁有無敵效果。\n在<color=#FFFFFF>[明心境]</color>狀態下，若觸發<color=#FFFFFF>[極限閃避]</color>，點按 <IconMap:Icon_Normal> 可發動<color=#FFFFFF>[普通攻擊：明心境·扶搖勢]</color>。"
+            },
+            "143100015": {
+                "Title": "閃避：逍遙雲蹤",
+                "Description": "拖曳{LAYOUT_CONSOLECONTROLLER#操作桿}{LAYOUT_FALLBACK#搖桿}時長按 <IconMap:Icon_Evade> 發動：\n進入高速移動狀態，使用{LAYOUT_CONSOLECONTROLLER#操作桿}{LAYOUT_FALLBACK#搖桿}控制方向，鬆開{LAYOUT_CONSOLECONTROLLER#操作桿}{LAYOUT_FALLBACK#搖桿}則會停下。"
+            },
+            "143100016": {
+                "Title": "衝刺攻擊：如影疾行",
+                "Description": "閃避時，點按 <IconMap:Icon_Normal> 發動：\n向前方進行斬擊，造成<color=#F0D12B>物理傷害</color>。"
+            },
+            "143100017": {
+                "Title": "閃避反擊：燕襲",
+                "Description": "觸發<color=#FFFFFF>[極限閃避]</color>後，點按 <IconMap:Icon_Normal> 發動：\n躍起並向前方進行刺擊，造成<color=#F0D12B>物理傷害</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "143100084": {
+                "Title": "衝刺攻擊：如影疾行"
+            },
+            "143100085": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1431020, Prop:1001}"
+            },
+            "143100086": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1431020, Prop:1002}"
+            },
+            "143100087": {
+                "Title": "閃避反擊：燕襲"
+            },
+            "143100088": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1431022, Prop:1001}"
+            },
+            "143100089": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1431022, Prop:1002}"
+            }
+        },
+        "3": {
+            "143100018": {
+                "Title": "連攜技：斬邪祟",
+                "Description": "觸發<color=#FFFFFF>[連攜技]</color>時，選擇對應角色發動：\n對前方大範圍敵人發動強力斬擊，造成大量<color=#F0D12B>物理傷害</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "143100019": {
+                "Title": "終結技：逐雲驚霆",
+                "Description": "喧響等級達到<color=#FFFFFF>[極]</color>時，點按 <IconMap:Icon_UltimateReady> 發動：\n召喚劍陣，進入<color=#FFFFFF>[明心境]</color>狀態，開啟<color=#FFFFFF>[以太帷幕·決裁]</color>，並獲得6點<color=#FFFFFF>[青溟劍勢]</color>對敵人造成大量<color=#F0D12B>物理傷害</color>。\n招式發動時，若消耗了喧響值，則可以在該次<color=#FFFFFF>[明心境]</color>中點按 <IconMap:Icon_UltimateReady> 發動不消耗喧響值的<color=#FFFFFF>[終結技：斬妄開天]</color>。\n招式發動後，將處於空中狀態。\n招式發動期間擁有無敵效果。"
+            },
+            "143100020": {
+                "Title": "連攜技：明心境·掣驚雷",
+                "Description": "在<color=#FFFFFF>[明心境]</color>狀態下，觸發<color=#FFFFFF>[連攜技]</color>時，選擇對應角色發動：\n對前方大範圍敵人發動強力斬擊，造成大量<color=#F0D12B>物理傷害</color>。\n發動期間不會退出<color=#FFFFFF>[明心境]</color>狀態。\n招式發動後，將處於空中狀態。\n招式發動期間擁有無敵效果。"
+            },
+            "143100021": {
+                "Title": "終結技：斬妄開天",
+                "Description": "消耗喧響值發動<color=#FFFFFF>[終結技：逐雲驚霆]</color>後，在<color=#FFFFFF>[明心境]</color>狀態下，點按 <IconMap:Icon_UltimateReady> 或<color=#FFFFFF>[青溟劍勢]</color>消耗盡後，長按 <IconMap:Icon_SpecialReady> 發動：\n召喚巨劍，對敵人造成大量<color=#F0D12B>物理傷害</color>。\n發動期間不會退出<color=#FFFFFF>[明心境]</color>狀態。\n招式發動後，會退出<color=#FFFFFF>[明心境]</color>並關閉<color=#FFFFFF>[以太帷幕·決裁]</color>。\n該招式不消耗喧響值。\n招式發動期間擁有無敵效果。"
+            },
+            "143100090": {
+                "Title": "連攜技：斬邪祟"
+            },
+            "143100091": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1431024, Prop:1001}"
+            },
+            "143100092": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1431024, Prop:1002}"
+            },
+            "143100093": {
+                "Title": "終結技：逐雲驚霆"
+            },
+            "143100094": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1431025, Prop:1001}"
+            },
+            "143100095": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1431025, Prop:1002}"
+            },
+            "143100096": {
+                "Title": "連攜技：明心境·掣驚雷"
+            },
+            "143100097": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1431026, Prop:1001}"
+            },
+            "143100098": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1431026, Prop:1002}"
+            },
+            "143100099": {
+                "Title": "終結技：斬妄開天"
+            },
+            "143100100": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1431027, Prop:1001}"
+            },
+            "143100101": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1431027, Prop:1002}"
+            }
+        },
+        "6": {
+            "143100023": {
+                "Title": "登場技：照影",
+                "Description": "擁有6點<color=#FFFFFF>[青溟劍勢]</color>時，在非<color=#FFFFFF>[明心境]</color>狀態下，長按 <IconMap:Icon_Normal> 或接戰狀態下點按 <IconMap:Icon_Switch> 從後場切換至前場發動：\n進入<color=#FFFFFF>[明心境]</color>，開啟<color=#FFFFFF>[以太帷幕·決裁]</color>。\n對前方大範圍敵人造成<color=#F0D12B>物理傷害</color>。\n招式發動時視為發動<color=#FFFFFF>[快速支援]</color>。\n招式發動後，將處於空中狀態。\n招式發動期間擁有無敵效果。"
+            },
+            "143100024": {
+                "Title": "快速支援：援守",
+                "Description": "目前操作中的角色被擊飛時，點按 <IconMap:Icon_Switch> 發動：\n躍起並向前方進行刺擊，造成<color=#F0D12B>物理傷害</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "143100025": {
+                "Title": "支援突擊：止戈",
+                "Description": "發動<color=#FFFFFF>[招架支援]</color>後，點按 <IconMap:Icon_Normal> 發動：\n造成大量<color=#F0D12B>物理傷害</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "143100026": {
+                "Title": "招架支援：歸去時",
+                "Description": "前場角色即將被攻擊時，點按 <IconMap:Icon_Switch> 發動：\n招架敵人的攻擊，累積大量失衡值。\n招式發動期間擁有無敵效果。"
+            },
+            "143100027": {
+                "Title": "快速支援：明心境·策應",
+                "Description": "在<color=#FFFFFF>[明心境]</color>狀態下，目前操作中的角色被擊飛時，點按 <IconMap:Icon_Switch> 發動：\n向前方進行一次斬擊，造成<color=#F0D12B>物理傷害</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "143100028": {
+                "Title": "支援突擊：明心境·抱一",
+                "Description": "在<color=#FFFFFF>[明心境]</color>狀態下，發動<color=#FFFFFF>[招架支援]</color>後，點按 <IconMap:Icon_Normal> 發動：\n造成大量<color=#F0D12B>物理傷害</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "143100102": {
+                "Title": "登場技：照影"
+            },
+            "143100103": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1431028, Prop:1001}"
+            },
+            "143100104": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1431028, Prop:1002}"
+            },
+            "143100105": {
+                "Title": "快速支援：援守"
+            },
+            "143100106": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1431029, Prop:1001}"
+            },
+            "143100107": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1431029, Prop:1002}"
+            },
+            "143100108": {
+                "Title": "支援突擊：止戈"
+            },
+            "143100109": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1431033, Prop:1001}"
+            },
+            "143100110": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1431033, Prop:1002}"
+            },
+            "143100111": {
+                "Title": "招架支援：歸去時"
+            },
+            "143100112": {
+                "Description": "輕招架失衡倍率",
+                "Param": "{Skill:1431030, Prop:1002}"
+            },
+            "143100113": {
+                "Description": "重招架失衡倍率",
+                "Param": "{Skill:1431031, Prop:1002}"
+            },
+            "143100114": {
+                "Description": "連續招架失衡倍率",
+                "Param": "{Skill:1431032, Prop:1002}"
+            },
+            "143100115": {
+                "Title": "快速支援：明心境·策應"
+            },
+            "143100116": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1431035, Prop:1001}"
+            },
+            "143100117": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1431035, Prop:1002}"
+            },
+            "143100118": {
+                "Title": "支援突擊：明心境·抱一"
+            },
+            "143100119": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1431034, Prop:1001}"
+            },
+            "143100120": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1431034, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1431001": {
+            "DamageValue": 7940,
+            "DamageGrowth": 730,
+            "DazeValue": 2650,
+            "DazeGrowth": 130
+        },
+        "1431002": {
+            "DamageValue": 24410,
+            "DamageGrowth": 2220,
+            "DazeValue": 7750,
+            "DazeGrowth": 360
+        },
+        "1431003": {
+            "DamageValue": 12460,
+            "DamageGrowth": 1140,
+            "DazeValue": 3540,
+            "DazeGrowth": 170
+        },
+        "1431004": {
+            "DamageValue": 11670,
+            "DamageGrowth": 1070,
+            "DazeValue": 3670,
+            "DazeGrowth": 170
+        },
+        "1431005": {
+            "DamageValue": 36800,
+            "DamageGrowth": 3350,
+            "DazeValue": 10730,
+            "DazeGrowth": 490
+        },
+        "1431006": {
+            "DamageValue": 11260,
+            "DamageGrowth": 1030,
+            "DazeValue": 3580,
+            "DazeGrowth": 170
+        },
+        "1431007": {
+            "DamageValue": 15590,
+            "DamageGrowth": 1420,
+            "DazeValue": 4950,
+            "DazeGrowth": 230
+        },
+        "1431008": {
+            "DamageValue": 21660,
+            "DamageGrowth": 1970,
+            "DazeValue": 6880,
+            "DazeGrowth": 320
+        },
+        "1431009": {
+            "DamageValue": 60480,
+            "DamageGrowth": 5500,
+            "DazeValue": 7700,
+            "DazeGrowth": 350
+        },
+        "1431010": {
+            "DamageValue": 12070,
+            "DamageGrowth": 1100,
+            "DazeValue": 3400,
+            "DazeGrowth": 160
+        },
+        "1431011": {
+            "DamageValue": 15650,
+            "DamageGrowth": 1430,
+            "DazeValue": 4400,
+            "DazeGrowth": 200
+        },
+        "1431012": {
+            "DamageValue": 15990,
+            "DamageGrowth": 1460,
+            "DazeValue": 4500,
+            "DazeGrowth": 210
+        },
+        "1431013": {
+            "DamageValue": 89120,
+            "DamageGrowth": 8110,
+            "DazeValue": 5780,
+            "DazeGrowth": 270
+        },
+        "1431014": {
+            "DamageValue": 9890,
+            "DamageGrowth": 900,
+            "DazeValue": 2430,
+            "DazeGrowth": 120
+        },
+        "1431015": {
+            "DamageValue": 31590,
+            "DamageGrowth": 2880,
+            "DazeValue": 13210,
+            "DazeGrowth": 610
+        },
+        "1431016": {
+            "DamageValue": 117840,
+            "DamageGrowth": 10720,
+            "DazeValue": 34010,
+            "DazeGrowth": 1550
+        },
+        "1431017": {
+            "DamageValue": 9100,
+            "DamageGrowth": 830,
+            "DazeValue": 3580,
+            "DazeGrowth": 170
+        },
+        "1431018": {
+            "DamageValue": 105800,
+            "DamageGrowth": 9620,
+            "DazeValue": 10820,
+            "DazeGrowth": 500
+        },
+        "1431019": {
+            "DamageValue": 116110,
+            "DamageGrowth": 10560,
+            "DazeValue": 13940,
+            "DazeGrowth": 640
+        },
+        "1431020": {
+            "DamageValue": 10500,
+            "DamageGrowth": 960,
+            "DazeValue": 2070,
+            "DazeGrowth": 100
+        },
+        "1431021": {
+            "DamageValue": 7100,
+            "DamageGrowth": 650,
+            "DazeValue": 1750,
+            "DazeGrowth": 80
+        },
+        "1431022": {
+            "DamageValue": 34630,
+            "DamageGrowth": 3150,
+            "DazeValue": 11740,
+            "DazeGrowth": 540
+        },
+        "1431023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1431024": {
+            "DamageValue": 87160,
+            "DamageGrowth": 7930,
+            "DazeValue": 18150,
+            "DazeGrowth": 830
+        },
+        "1431025": {
+            "DamageValue": 192500,
+            "DamageGrowth": 17500,
+            "DazeValue": 5500,
+            "DazeGrowth": 250
+        },
+        "1431026": {
+            "DamageValue": 90860,
+            "DamageGrowth": 8260,
+            "DazeValue": 13750,
+            "DazeGrowth": 630
+        },
+        "1431027": {
+            "DamageValue": 308430,
+            "DamageGrowth": 28040,
+            "DazeValue": 15130,
+            "DazeGrowth": 690
+        },
+        "1431028": {
+            "DamageValue": 40040,
+            "DamageGrowth": 3640,
+            "DazeValue": 12100,
+            "DazeGrowth": 550
+        },
+        "1431029": {
+            "DamageValue": 8050,
+            "DamageGrowth": 740,
+            "DazeValue": 3170,
+            "DazeGrowth": 150
+        },
+        "1431030": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 19530,
+            "DazeGrowth": 890
+        },
+        "1431031": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 20720,
+            "DazeGrowth": 950
+        },
+        "1431032": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 11920,
+            "DazeGrowth": 550
+        },
+        "1431033": {
+            "DamageValue": 41370,
+            "DamageGrowth": 3770,
+            "DazeValue": 14000,
+            "DazeGrowth": 640
+        },
+        "1431034": {
+            "DamageValue": 43000,
+            "DamageGrowth": 3910,
+            "DazeValue": 14600,
+            "DazeGrowth": 670
+        },
+        "1431035": {
+            "DamageValue": 6730,
+            "DamageGrowth": 620,
+            "DazeValue": 3310,
+            "DazeGrowth": 160
+        },
+        "1431036": {
+            "DamageValue": 100000,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        }
+    }
+}

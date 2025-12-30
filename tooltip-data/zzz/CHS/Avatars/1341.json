@@ -1,0 +1,484 @@
+{
+    "Name": "照",
+    "ElementTypes": [
+        "Ice"
+    ],
+    "Specialty": {
+        "Id": 5,
+        "Name": "防护"
+    },
+    "Talents": {
+        "1": {
+            "Title": "凛然裁决",
+            "Description": "照被切换为非当前操作角色时，使全队角色造成的伤害无视目标15%全属性伤害抗性，持续50秒，重复触发时刷新持续时间。",
+            "Lore": "「别被那可爱的外表迷惑了！我永远记得那场大会上，她当着几十号人的面挥着手指，用最可爱的样子说出最冷酷的裁决：『以上整改条目如有任何一条不接受，那贵司必将被剔除出TOPS，这不是威胁，是绝对正确的评估。』这个画面我一辈子都不忘不掉！…唉，但还是感谢照小姐。」\n——接受毁灭式整改后起死回生的某位企业管理者扶着额头，表情复杂地说道。"
+        },
+        "2": {
+            "Title": "黑枝前辈",
+            "Description": "照的生命值回复时，提升20%攻击力，并使队伍中其他角色提升15%攻击力，持续50秒，重复触发时刷新持续时间。",
+            "Lore": "小照在早期就加入了黑枝，哪怕在精锐中的精锐——坎卜斯黑枝中也要被尊称一声「大前辈」，事情本应如此…怎奈后续加入的后辈同事们，都是一些遵循个性远大于遵守规矩的人。"
+        },
+        "3": {
+            "Title": "霜婵冰刃",
+            "Description": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[连携技]</color> 技能等级+2",
+            "Lore": "小照的武器名为「霜婵」，是TOPS秘密研发项目所提供的实验资产。使用这把武器时，并非单纯地释放冰属性以太造成打击，而是将以太转化为武器本身的一部分。通常状态下，「霜婵」只有同规格武器一半的重量，但在进入战斗状态时，快速凝结的前端冰刃能获得更强的破坏力，这个特性简直是为小照量身定做的。"
+        },
+        "4": {
+            "Title": "轻盈踏痕",
+            "Description": "照开启<color=#FFFFFF>[以太帷幕]</color>时，获得250点喧响值；<color=#FFFFFF>[终结技]</color>、<color=#FFFFFF>[连携技]</color>和<color=#FFFFFF>[普通攻击：最终裁决]</color>的暴击伤害提升40%。",
+            "Lore": "灵活、轻盈、难以捕捉。这些本是描述小兔子的词汇，正被用来描述一位手持巨刃，无坚不摧的可怕战士…"
+        },
+        "5": {
+            "Title": "毛茸茸聆听者",
+            "Description": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[连携技]</color> 技能等级+2",
+            "Lore": "如果小照的耳朵不自觉地抖了一下并且微微竖起，说明她听到了最在意的话语。可能是情报、任务、交易…或者夸奖。"
+        },
+        "6": {
+            "Title": "无价亦是价值",
+            "Description": "<color=#FFFFFF>[核心被动：最佳同事]</color>提高暴击率的效果提升至原本的125%；<color=#FFFFFF>[普通攻击：最终裁决]</color>累积蓄力时长的额外伤害提升至原本的140%，并使累积的蓄力时长不会在攻击中被消耗。",
+            "Lore": "自儿时起受无数人影响所筑成的观念壁垒，正因与一个人的相遇产生裂隙。\n小照对于「价值」的想法有了改变：有些东西没有标价，并非是它无用，而是珍贵到不存在对等的东西能与之交换。"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "核心被动：最佳同事",
+            "DescriptionByLevel": {
+                "1": "照会额外根据初始最大生命值提高暴击率，每1000点初始最大生命值提高<color=#2BAD00>0.8%</color>暴击率；\n进入战场时，照获得100点<color=#FFFFFF>[霜寒值]</color>，在勘域模式中此效果180秒内最多触发一次，<color=#FFFFFF>[霜寒值]</color>的上限为100点；\n当前操作中角色攻击命中敌人时，照积攒6点<color=#FFFFFF>[霜寒值]</color>，每3秒最多触发一次；\n<color=#FFFFFF>[霜寒值]</color>满时，如果处于接战状态下，将照换入前场可以发动<color=#FFFFFF>[登场技]</color>；\n照发动<color=#FFFFFF>[登场技]</color>时，消耗所有<color=#FFFFFF>[霜寒值]</color>，开启<color=#FFFFFF>[以太帷幕·涌泉]</color>；\n<color=#FFFFFF>[以太帷幕·涌泉]</color>生效期间，全队角色最大生命值提升5%，持续40秒，照重复开启<color=#FFFFFF>[以太帷幕·涌泉]</color>前，将关闭已有的<color=#FFFFFF>[以太帷幕·涌泉]</color>；\n照开启<color=#FFFFFF>[以太帷幕·涌泉]</color>时，使全队角色的攻击力提升<color=#2BAD00>100</color>点，持续50秒，重复触发时刷新持续时间。",
+                "2": "照会额外根据初始最大生命值提高暴击率，每1000点初始最大生命值提高<color=#2BAD00>0.9%</color>暴击率；\n进入战场时，照获得100点<color=#FFFFFF>[霜寒值]</color>，在勘域模式中此效果180秒内最多触发一次，<color=#FFFFFF>[霜寒值]</color>的上限为100点；\n当前操作中角色攻击命中敌人时，照积攒6点<color=#FFFFFF>[霜寒值]</color>，每3秒最多触发一次；\n<color=#FFFFFF>[霜寒值]</color>满时，如果处于接战状态下，将照换入前场可以发动<color=#FFFFFF>[登场技]</color>；\n照发动<color=#FFFFFF>[登场技]</color>时，消耗所有<color=#FFFFFF>[霜寒值]</color>，开启<color=#FFFFFF>[以太帷幕·涌泉]</color>；\n<color=#FFFFFF>[以太帷幕·涌泉]</color>生效期间，全队角色最大生命值提升5%，持续40秒，照重复开启<color=#FFFFFF>[以太帷幕·涌泉]</color>前，将关闭已有的<color=#FFFFFF>[以太帷幕·涌泉]</color>；\n照开启<color=#FFFFFF>[以太帷幕·涌泉]</color>时，使全队角色的攻击力提升<color=#2BAD00>250</color>点，持续50秒，重复触发时刷新持续时间。",
+                "3": "照会额外根据初始最大生命值提高暴击率，每1000点初始最大生命值提高<color=#2BAD00>1%</color>暴击率；\n进入战场时，照获得100点<color=#FFFFFF>[霜寒值]</color>，在勘域模式中此效果180秒内最多触发一次，<color=#FFFFFF>[霜寒值]</color>的上限为100点；\n当前操作中角色攻击命中敌人时，照积攒6点<color=#FFFFFF>[霜寒值]</color>，每3秒最多触发一次；\n<color=#FFFFFF>[霜寒值]</color>满时，如果处于接战状态下，将照换入前场可以发动<color=#FFFFFF>[登场技]</color>；\n照发动<color=#FFFFFF>[登场技]</color>时，消耗所有<color=#FFFFFF>[霜寒值]</color>，开启<color=#FFFFFF>[以太帷幕·涌泉]</color>；\n<color=#FFFFFF>[以太帷幕·涌泉]</color>生效期间，全队角色最大生命值提升5%，持续40秒，照重复开启<color=#FFFFFF>[以太帷幕·涌泉]</color>前，将关闭已有的<color=#FFFFFF>[以太帷幕·涌泉]</color>；\n照开启<color=#FFFFFF>[以太帷幕·涌泉]</color>时，使全队角色的攻击力提升<color=#2BAD00>400</color>点，持续50秒，重复触发时刷新持续时间。",
+                "4": "照会额外根据初始最大生命值提高暴击率，每1000点初始最大生命值提高<color=#2BAD00>1.1%</color>暴击率；\n进入战场时，照获得100点<color=#FFFFFF>[霜寒值]</color>，在勘域模式中此效果180秒内最多触发一次，<color=#FFFFFF>[霜寒值]</color>的上限为100点；\n当前操作中角色攻击命中敌人时，照积攒6点<color=#FFFFFF>[霜寒值]</color>，每3秒最多触发一次；\n<color=#FFFFFF>[霜寒值]</color>满时，如果处于接战状态下，将照换入前场可以发动<color=#FFFFFF>[登场技]</color>；\n照发动<color=#FFFFFF>[登场技]</color>时，消耗所有<color=#FFFFFF>[霜寒值]</color>，开启<color=#FFFFFF>[以太帷幕·涌泉]</color>；\n<color=#FFFFFF>[以太帷幕·涌泉]</color>生效期间，全队角色最大生命值提升5%，持续40秒，照重复开启<color=#FFFFFF>[以太帷幕·涌泉]</color>前，将关闭已有的<color=#FFFFFF>[以太帷幕·涌泉]</color>；\n照开启<color=#FFFFFF>[以太帷幕·涌泉]</color>时，使全队角色的攻击力提升<color=#2BAD00>550</color>点，持续50秒，重复触发时刷新持续时间。",
+                "5": "照会额外根据初始最大生命值提高暴击率，每1000点初始最大生命值提高<color=#2BAD00>1.2%</color>暴击率；\n进入战场时，照获得100点<color=#FFFFFF>[霜寒值]</color>，在勘域模式中此效果180秒内最多触发一次，<color=#FFFFFF>[霜寒值]</color>的上限为100点；\n当前操作中角色攻击命中敌人时，照积攒6点<color=#FFFFFF>[霜寒值]</color>，每3秒最多触发一次；\n<color=#FFFFFF>[霜寒值]</color>满时，如果处于接战状态下，将照换入前场可以发动<color=#FFFFFF>[登场技]</color>；\n照发动<color=#FFFFFF>[登场技]</color>时，消耗所有<color=#FFFFFF>[霜寒值]</color>，开启<color=#FFFFFF>[以太帷幕·涌泉]</color>；\n<color=#FFFFFF>[以太帷幕·涌泉]</color>生效期间，全队角色最大生命值提升5%，持续40秒，照重复开启<color=#FFFFFF>[以太帷幕·涌泉]</color>前，将关闭已有的<color=#FFFFFF>[以太帷幕·涌泉]</color>；\n照开启<color=#FFFFFF>[以太帷幕·涌泉]</color>时，使全队角色的攻击力提升<color=#2BAD00>700</color>点，持续50秒，重复触发时刷新持续时间。",
+                "6": "照会额外根据初始最大生命值提高暴击率，每1000点初始最大生命值提高<color=#2BAD00>1.3%</color>暴击率；\n进入战场时，照获得100点<color=#FFFFFF>[霜寒值]</color>，在勘域模式中此效果180秒内最多触发一次，<color=#FFFFFF>[霜寒值]</color>的上限为100点；\n当前操作中角色攻击命中敌人时，照积攒6点<color=#FFFFFF>[霜寒值]</color>，每3秒最多触发一次；\n<color=#FFFFFF>[霜寒值]</color>满时，如果处于接战状态下，将照换入前场可以发动<color=#FFFFFF>[登场技]</color>；\n照发动<color=#FFFFFF>[登场技]</color>时，消耗所有<color=#FFFFFF>[霜寒值]</color>，开启<color=#FFFFFF>[以太帷幕·涌泉]</color>；\n<color=#FFFFFF>[以太帷幕·涌泉]</color>生效期间，全队角色最大生命值提升5%，持续40秒，照重复开启<color=#FFFFFF>[以太帷幕·涌泉]</color>前，将关闭已有的<color=#FFFFFF>[以太帷幕·涌泉]</color>；\n照开启<color=#FFFFFF>[以太帷幕·涌泉]</color>时，使全队角色的攻击力提升<color=#2BAD00>850</color>点，持续50秒，重复触发时刷新持续时间。",
+                "7": "照会额外根据初始最大生命值提高暴击率，每1000点初始最大生命值提高<color=#2BAD00>1.4%</color>暴击率；\n进入战场时，照获得100点<color=#FFFFFF>[霜寒值]</color>，在勘域模式中此效果180秒内最多触发一次，<color=#FFFFFF>[霜寒值]</color>的上限为100点；\n当前操作中角色攻击命中敌人时，照积攒6点<color=#FFFFFF>[霜寒值]</color>，每3秒最多触发一次；\n<color=#FFFFFF>[霜寒值]</color>满时，如果处于接战状态下，将照换入前场可以发动<color=#FFFFFF>[登场技]</color>；\n照发动<color=#FFFFFF>[登场技]</color>时，消耗所有<color=#FFFFFF>[霜寒值]</color>，开启<color=#FFFFFF>[以太帷幕·涌泉]</color>；\n<color=#FFFFFF>[以太帷幕·涌泉]</color>生效期间，全队角色最大生命值提升5%，持续40秒，照重复开启<color=#FFFFFF>[以太帷幕·涌泉]</color>前，将关闭已有的<color=#FFFFFF>[以太帷幕·涌泉]</color>；\n照开启<color=#FFFFFF>[以太帷幕·涌泉]</color>时，使全队角色的攻击力提升<color=#2BAD00>1000</color>点，持续50秒，重复触发时刷新持续时间。"
+            }
+        },
+        "MathSkill": {
+            "Title": "额外能力：凝聚力",
+            "Description": "队伍中存在<color=#FFFFFF>[强攻]</color>或<color=#FFFFFF>[异常]</color>或<color=#FFFFFF>[支援]</color>角色时触发：\n照处于任意<color=#FFFFFF>[以太帷幕]</color>中时，使全队造成的伤害提升10%，照的初始最大生命值高于15000点时，每超过400点初始最大生命值，可使增伤效果额外提升1%，初始效果与额外提升最大总共提升至40%，当初始最大生命值达到27000点时，上述增益效果达到最大值。"
+        },
+        "BaseProps": [
+            {
+                "11102": 0,
+                "12101": 0
+            },
+            {
+                "11102": 600,
+                "12101": 0
+            },
+            {
+                "11102": 600,
+                "12101": 25
+            },
+            {
+                "11102": 1200,
+                "12101": 25
+            },
+            {
+                "11102": 1200,
+                "12101": 50
+            },
+            {
+                "11102": 1800,
+                "12101": 50
+            },
+            {
+                "11102": 1800,
+                "12101": 75
+            }
+        ]
+    },
+    "SkillDescriptions": {
+        "0": {
+            "134100001": {
+                "Title": "普通攻击：凛冽裁决",
+                "Description": "点按 <IconMap:Icon_Normal> 发动：\n向前方进行至多五段的斩击，第一段造成<color=#F0D12B>物理伤害</color>，后四段造成<color=#98EFF0>冰属性伤害</color>。"
+            },
+            "134100002": {
+                "Title": "普通攻击：最终裁决",
+                "Description": "长按 <IconMap:Icon_Normal> 发动：\n预备后进入蓄力，松开时向前方进行斩击，造成大量<color=#98EFF0>冰属性伤害</color>；\n蓄力时，照将累积最多5秒蓄力时长，<color=#FFFFFF>[普通攻击：最终裁决]</color>、<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[支援突击]</color>的终结一击命中时，将消耗蓄力时长造成额外伤害，每有1秒蓄力时长，造成照<color=#2BAD00>{CAL:0.12+AvatarSkillLevel(0)*0.01,100,2}%</color>最大生命值的额外伤害；\n照处于任意<color=#FFFFFF>[以太帷幕]</color>中时，如果在蓄力中成为非当前操作中角色，可以继续进行蓄力；\n招式发动时，如果<color=#FFFFFF>[霜寒值]</color>满，消耗所有<color=#FFFFFF>[霜寒值]</color>，开启<color=#FFFFFF>[以太帷幕·涌泉]</color>，并触发<color=#FFFFFF>[快速支援]</color>，此时如果发动队友的<color=#FFFFFF>[快速支援]</color>，照将自动衔接<color=#FFFFFF>[普通攻击：最终裁决]</color>并进行蓄力；\n招式发动期间抗打断等级提升，受到的伤害降低40%；\n不为当前操作中角色时，招式发动期间拥有无敌效果。"
+            },
+            "134100015": {
+                "Title": "普通攻击：凛冽裁决"
+            },
+            "134100016": {
+                "Description": "一段伤害倍率",
+                "Param": "{Skill:1341001, Prop:1001}"
+            },
+            "134100017": {
+                "Description": "二段伤害倍率",
+                "Param": "{Skill:1341002, Prop:1001}"
+            },
+            "134100018": {
+                "Description": "三段伤害倍率",
+                "Param": "{Skill:1341003, Prop:1001}"
+            },
+            "134100019": {
+                "Description": "四段伤害倍率",
+                "Param": "{Skill:1341004, Prop:1001}"
+            },
+            "134100020": {
+                "Description": "五段伤害倍率",
+                "Param": "{{Skill:1341005, Prop:1001} + {Skill:1341006, Prop:1001}}"
+            },
+            "134100021": {
+                "Description": "一段失衡倍率",
+                "Param": "{Skill:1341001, Prop:1002}"
+            },
+            "134100022": {
+                "Description": "二段失衡倍率",
+                "Param": "{Skill:1341002, Prop:1002}"
+            },
+            "134100023": {
+                "Description": "三段失衡倍率",
+                "Param": "{Skill:1341003, Prop:1002}"
+            },
+            "134100024": {
+                "Description": "四段失衡倍率",
+                "Param": "{Skill:1341004, Prop:1002}"
+            },
+            "134100025": {
+                "Description": "五段失衡倍率",
+                "Param": "{{Skill:1341005, Prop:1002} + {Skill:1341006, Prop:1002}}"
+            },
+            "134100026": {
+                "Title": "普通攻击：最终裁决"
+            },
+            "134100027": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1341008, Prop:1001}"
+            },
+            "134100028": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1341008, Prop:1002}"
+            },
+            "134100029": {
+                "Description": "蓄力最大生命额外倍率",
+                "Param": "{CAL:0.12+AvatarSkillLevel(0)*0.01,100,2}%"
+            }
+        },
+        "1": {
+            "134100003": {
+                "Title": "特殊技：碎冰溢寒",
+                "Description": "点按 <IconMap:Icon_Special> 发动：\n向前方发动斩击，造成<color=#98EFF0>冰属性伤害</color>；\n招式发动时，消耗5%当前生命值，使全队角色每秒基于照<color=#2BAD00>{CAL:1+AvatarSkillLevel(1)*0.06,1,2}%</color>最大生命值回复生命值，持续5秒，<color=#FFFFFF>[特殊技：碎冰溢寒]</color>和<color=#FFFFFF>[强化特殊技：流霜冻土]</color>的消耗生命效果每30秒最多触发一次。"
+            },
+            "134100004": {
+                "Title": "强化特殊技：流霜冻土",
+                "Description": "能量足够时，点按  <IconMap:Icon_SpecialReady> 发动：\n向前方连续发动斩击，造成大量<color=#98EFF0>冰属性伤害</color>；\n招式发动时，消耗5%当前生命值，使全队角色每秒基于照<color=#2BAD00>{CAL:1+AvatarSkillLevel(1)*0.06,1,2}%</color>最大生命值回复生命值，持续5秒，<color=#FFFFFF>[特殊技：碎冰溢寒]</color>和<color=#FFFFFF>[强化特殊技：流霜冻土]</color>的消耗生命效果每30秒最多触发一次；\n招式发动时，积攒20点<color=#FFFFFF>[霜寒值]</color>，如果<color=#FFFFFF>[霜寒值]</color>满，消耗所有<color=#FFFFFF>[霜寒值]</color>，开启<color=#FFFFFF>[以太帷幕·涌泉]</color>；\n招式发动时，如果处于任意<color=#FFFFFF>[以太帷幕]</color>中，将触发<color=#FFFFFF>[快速支援]</color>，此时如果发动队友的<color=#FFFFFF>[快速支援]</color>，照将自动衔接<color=#FFFFFF>[普通攻击：最终裁决]</color>并进行蓄力；\n招式发动期间拥有无敌效果。"
+            },
+            "134100030": {
+                "Title": "特殊技：碎冰溢寒"
+            },
+            "134100031": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1341009, Prop:1001}"
+            },
+            "134100032": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1341009, Prop:1002}"
+            },
+            "134100033": {
+                "Description": "回复生命百分比",
+                "Param": "{CAL:1+AvatarSkillLevel(1)*0.06,1,2}%"
+            },
+            "134100034": {
+                "Title": "强化特殊技：流霜冻土"
+            },
+            "134100035": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1341010, Prop:1001}"
+            },
+            "134100036": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1341010, Prop:1002}"
+            },
+            "134100037": {
+                "Description": "能量消耗",
+                "Param": "80点"
+            },
+            "134100038": {
+                "Description": "回复生命百分比",
+                "Param": "{CAL:1+AvatarSkillLevel(1)*0.06,1,2}%"
+            }
+        },
+        "2": {
+            "134100005": {
+                "Title": "闪避：脱兔踏",
+                "Description": "点按 <IconMap:Icon_Evade> 发动：\n快速的冲刺闪避；\n招式发动期间拥有无敌效果。"
+            },
+            "134100006": {
+                "Title": "冲刺攻击：弹跳冲刺",
+                "Description": "闪避时，点按 <IconMap:Icon_Normal> 发动：\n向前方发动斩击，造成<color=#F0D12B>物理伤害</color>和<color=#98EFF0>冰属性伤害</color>。"
+            },
+            "134100007": {
+                "Title": "闪避反击：倏忽闪",
+                "Description": "触发<color=#FFFFFF>[极限闪避]</color>后，点按 <IconMap:Icon_Normal> 发动：\n向前方发动下落斩击，造成<color=#98EFF0>冰属性伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "134100039": {
+                "Title": "冲刺攻击：弹跳冲刺"
+            },
+            "134100040": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1341011, Prop:1001}"
+            },
+            "134100041": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1341011, Prop:1002}"
+            },
+            "134100042": {
+                "Title": "闪避反击：倏忽闪"
+            },
+            "134100043": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1341012, Prop:1001}"
+            },
+            "134100044": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1341012, Prop:1002}"
+            }
+        },
+        "3": {
+            "134100008": {
+                "Title": "连携技：临时合作",
+                "Description": "触发<color=#FFFFFF>[连携技]</color>时，选择对应角色发动：\n向前方发动连续斩击，造成大量<color=#98EFF0>冰属性伤害</color>；\n招式发动后，积攒5点<color=#FFFFFF>[霜寒值]</color>，如果<color=#FFFFFF>[霜寒值]</color>满，消耗所有<color=#FFFFFF>[霜寒值]</color>，开启<color=#FFFFFF>[以太帷幕·涌泉]</color>；\n招式发动后，如果处于任意<color=#FFFFFF>[以太帷幕]</color>中，将触发<color=#FFFFFF>[快速支援]</color>，此时如果发动队友的<color=#FFFFFF>[快速支援]</color>，照将自动衔接<color=#FFFFFF>[普通攻击：最终裁决]</color>并进行蓄力；\n招式发动期间拥有无敌效果。"
+            },
+            "134100009": {
+                "Title": "终结技：兔兔连斩",
+                "Description": "喧响等级达到<color=#FFFFFF>[极]</color>时，点按 <IconMap:Icon_UltimateReady> 发动：\n向前方连续攻击，随后下落斩击敌人，造成大量<color=#98EFF0>冰属性伤害</color>；\n招式发动后，积攒20点<color=#FFFFFF>[霜寒值]</color>，如果<color=#FFFFFF>[霜寒值]</color>满，消耗所有<color=#FFFFFF>[霜寒值]</color>，开启<color=#FFFFFF>[以太帷幕·涌泉]</color>；\n招式发动后，如果处于任意<color=#FFFFFF>[以太帷幕]</color>中，将触发<color=#FFFFFF>[快速支援]</color>，此时如果发动队友的<color=#FFFFFF>[快速支援]</color>，照将自动衔接<color=#FFFFFF>[普通攻击：最终裁决]</color>并进行蓄力；\n招式发动期间拥有无敌效果。"
+            },
+            "134100045": {
+                "Title": "连携技：临时合作"
+            },
+            "134100046": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1341013, Prop:1001}"
+            },
+            "134100047": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1341013, Prop:1002}"
+            },
+            "134100048": {
+                "Title": "终结技：兔兔连斩"
+            },
+            "134100049": {
+                "Description": "伤害倍率",
+                "Param": "{{Skill:1341014, Prop:1001} + {Skill:1341023, Prop:1001}}"
+            },
+            "134100050": {
+                "Description": "失衡倍率",
+                "Param": "{{Skill:1341014, Prop:1002} + {Skill:1341023, Prop:1002}}"
+            }
+        },
+        "6": {
+            "134100011": {
+                "Title": "登场技：霜迸",
+                "Description": "照的<color=#FFFFFF>[霜寒值]</color>满，且处于接战状态下时，点按 <IconMap:Icon_Switch> 发动：\n向前方连续攻击，随后发动斩击，造成大量<color=#98EFF0>冰属性伤害</color>；\n招式发动时，消耗所有<color=#FFFFFF>[霜寒值]</color>，开启<color=#FFFFFF>[以太帷幕·涌泉]</color>；\n招式发动时，触发<color=#FFFFFF>[快速支援]</color>，此时如果发动队友的<color=#FFFFFF>[快速支援]</color>，照将自动衔接<color=#FFFFFF>[普通攻击：最终裁决]</color>并进行蓄力；\n招式发动时视为发动<color=#FFFFFF>[快速支援]</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "134100012": {
+                "Title": "快速支援：查漏补缺",
+                "Description": "当前操作中的角色被击飞时，点按 <IconMap:Icon_Switch> 发动：\n向前方发动下落斩击，造成<color=#98EFF0>冰属性伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "134100013": {
+                "Title": "招架支援：霜婵镇场",
+                "Description": "前场角色即将被攻击时，点按 <IconMap:Icon_Switch> 发动：\n招架敌人的攻击，累积大量失衡值；\n具有较为优秀的招架性能，承受高强度攻击时<color=#FFFFFF>[支援点数]</color>的消耗量降低；\n招式发动期间拥有无敌效果。"
+            },
+            "134100014": {
+                "Title": "支援突击：凛光返照",
+                "Description": "发动<color=#FFFFFF>[招架支援]</color>后，点按 <IconMap:Icon_Normal> 发动：\n向前方连续斩击，造成大量<color=#98EFF0>冰属性伤害</color>；\n招式发动时，如果<color=#FFFFFF>[霜寒值]</color>满，消耗所有<color=#FFFFFF>[霜寒值]</color>，开启<color=#FFFFFF>[以太帷幕·涌泉]</color>；\n招式发动时，如果处于任意<color=#FFFFFF>[以太帷幕]</color>中，将触发<color=#FFFFFF>[快速支援]</color>，此时如果发动队友的<color=#FFFFFF>[快速支援]</color>，照将自动衔接<color=#FFFFFF>[普通攻击：最终裁决]</color>并进行蓄力；\n招式发动期间拥有无敌效果。"
+            },
+            "134100051": {
+                "Title": "登场技：霜迸"
+            },
+            "134100052": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1341015, Prop:1001}"
+            },
+            "134100053": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1341015, Prop:1002}"
+            },
+            "134100054": {
+                "Title": "快速支援：查漏补缺"
+            },
+            "134100055": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1341016, Prop:1001}"
+            },
+            "134100056": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1341016, Prop:1002}"
+            },
+            "134100057": {
+                "Title": "招架支援：霜婵镇场"
+            },
+            "134100058": {
+                "Description": "轻招架失衡倍率",
+                "Param": "{Skill:1341017, Prop:1002}"
+            },
+            "134100059": {
+                "Description": "重招架失衡倍率",
+                "Param": "{Skill:1341018, Prop:1002}"
+            },
+            "134100060": {
+                "Description": "连续招架失衡倍率",
+                "Param": "{Skill:1341019, Prop:1002}"
+            },
+            "134100061": {
+                "Title": "支援突击：凛光返照"
+            },
+            "134100062": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1341020, Prop:1001}"
+            },
+            "134100063": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1341020, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1341001": {
+            "DamageValue": 7340,
+            "DamageGrowth": 670,
+            "DazeValue": 5510,
+            "DazeGrowth": 260
+        },
+        "1341002": {
+            "DamageValue": 6600,
+            "DamageGrowth": 600,
+            "DazeValue": 4920,
+            "DazeGrowth": 230
+        },
+        "1341003": {
+            "DamageValue": 11580,
+            "DamageGrowth": 1060,
+            "DazeValue": 8440,
+            "DazeGrowth": 390
+        },
+        "1341004": {
+            "DamageValue": 18560,
+            "DamageGrowth": 1690,
+            "DazeValue": 15460,
+            "DazeGrowth": 710
+        },
+        "1341005": {
+            "DamageValue": 30910,
+            "DamageGrowth": 2810,
+            "DazeValue": 23450,
+            "DazeGrowth": 1070
+        },
+        "1341006": {
+            "DamageValue": 7730,
+            "DamageGrowth": 710,
+            "DazeValue": 5860,
+            "DazeGrowth": 270
+        },
+        "1341007": {
+            "DamageValue": 7730,
+            "DamageGrowth": 710,
+            "DazeValue": 5860,
+            "DazeGrowth": 270
+        },
+        "1341008": {
+            "DamageValue": 6970,
+            "DamageGrowth": 640,
+            "DazeValue": 5230,
+            "DazeGrowth": 240
+        },
+        "1341009": {
+            "DamageValue": 5690,
+            "DamageGrowth": 520,
+            "DazeValue": 5690,
+            "DazeGrowth": 260
+        },
+        "1341010": {
+            "DamageValue": 121080,
+            "DamageGrowth": 11010,
+            "DazeValue": 81000,
+            "DazeGrowth": 3690
+        },
+        "1341011": {
+            "DamageValue": 8630,
+            "DamageGrowth": 790,
+            "DazeValue": 4320,
+            "DazeGrowth": 200
+        },
+        "1341012": {
+            "DamageValue": 33880,
+            "DamageGrowth": 3080,
+            "DazeValue": 28600,
+            "DazeGrowth": 1300
+        },
+        "1341013": {
+            "DamageValue": 77080,
+            "DamageGrowth": 7010,
+            "DazeValue": 33190,
+            "DazeGrowth": 1510
+        },
+        "1341014": {
+            "DamageValue": 174980,
+            "DamageGrowth": 15910,
+            "DazeValue": 16140,
+            "DazeGrowth": 740
+        },
+        "1341015": {
+            "DamageValue": 68030,
+            "DamageGrowth": 6190,
+            "DazeValue": 23020,
+            "DazeGrowth": 1050
+        },
+        "1341016": {
+            "DamageValue": 17600,
+            "DamageGrowth": 1600,
+            "DazeValue": 8800,
+            "DazeGrowth": 400
+        },
+        "1341017": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1341018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1341019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1341020": {
+            "DamageValue": 36610,
+            "DamageGrowth": 3330,
+            "DazeValue": 31810,
+            "DazeGrowth": 1450
+        },
+        "1341021": {
+            "DamageValue": 95340,
+            "DamageGrowth": 0,
+            "DazeValue": 5230,
+            "DazeGrowth": 0
+        },
+        "1341022": {
+            "DamageValue": 550,
+            "DamageGrowth": 0,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1341023": {
+            "DamageValue": 43750,
+            "DamageGrowth": 3980,
+            "DazeValue": 4030,
+            "DazeGrowth": 190
+        },
+        "1341024": {
+            "DamageValue": 43750,
+            "DamageGrowth": 3980,
+            "DazeValue": 4030,
+            "DazeGrowth": 190
+        }
+    }
+}
