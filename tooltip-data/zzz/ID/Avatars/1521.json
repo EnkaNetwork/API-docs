@@ -1,0 +1,437 @@
+{
+    "Name": "Cissia",
+    "ElementTypes": [
+        "Elec"
+    ],
+    "Specialty": {
+        "Id": 1,
+        "Name": "Attack"
+    },
+    "Talents": {
+        "1": {
+            "Title": "Traveler and Prey",
+            "Description": "Saat memulai pertarungan, <color=#FFFFFF>Venom</color> yang diperoleh akan meningkat menjadi 6 poin. Efek mengabaikan DEF musuh yang diperoleh dari <color=#FFFFFF>Core Passive</color> meningkat menjadi 140% dari nilai awalnya, dan DMG yang diakibatkan seluruh anggota tim akan mengabaikan 5% <color=#2EB6FF>Ketahanan Electric DMG</color> target. DMG yang diakibatkan dari <color=#FFFFFF>Corrode Bone</color> akan mengabaikan 10% <color=#2EB6FF>Ketahanan Electric DMG</color> target.",
+            "Lore": "Aroma, jejak kaki, gerak-gerik mata seseorang... itulah \"petunjuk\" yang membuatku bisa membedakan pemburu dari mangsa. Aku menghilang sebelum diburu. Aku menunduk sebelum berburu. Begitulah aku bertahan hidup.\n\"Rumah\"? Itu kan cuma ada di buku cerita. Dunia belantara tanpa akhir inilah tempatku berburu."
+        },
+        "2": {
+            "Title": "Hunger and Hard Truths",
+            "Description": "Setelah <color=#FFFFFF>Chain Attack: Gang Operation</color> atau <color=#FFFFFF>Ultimate: Ophidiophobia</color> mengenai musuh yang berada dalam status Stun, Cissia akan mendapatkan 3 poin <color=#FFFFFF>Venom</color> tambahan. DMG yang diakibatkan dari <color=#FFFFFF>Basic Attack: Serpent's Kiss</color> meningkat 35%.",
+            "Lore": "Kalau aku bisa makan kenyang di sana, berarti tempat itu bagus. Kalau ada yang kasih aku makan, berarti mereka orang baik. Itu aturan paling simpel dan paling bisa diandalkan di dunia. Dan juga, nasi telur itu makanan yang tiada tandingannya. Aku pasti habiskan sampai butiran nasi terakhir."
+        },
+        "3": {
+            "Title": "Chains and a Warm Nest",
+            "Description": "Level <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, dan <color=#FFFFFF>Chain Attack</color> +2.",
+            "Lore": "Keadilan? Ketertiban? Hal-hal mulia seperti itu membuatku gemetar. Yang aku kenal adalah aturan dunia gelap — pengkhianatan, kebohongan, menjilat untuk bertahan hidup. Aku tak keberatan diperlakukan sebagai alat, selama bayarannya adalah makanan untuk mengisi perut dan pojokan yang hangat untuk meringkuk."
+        },
+        "4": {
+            "Title": "A Rogue's Resolve",
+            "Description": "Saat melancarkan <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Chain Attack</color>, atau <color=#FFFFFF>Ultimate</color>, Cissia akan mendapatkan 1 lapis <color=#FFFFFF>Decidedness</color> yang dapat ditumpuk hingga 3 lapis. Saat melancarkan <color=#FFFFFF>Basic Attack: Serpent's Kiss</color>, akan mengonsumsi semua <color=#FFFFFF>Decidedness</color>. Setiap 1 lapis yang dikonsumsi akan memicu 1 kali <color=#FFFFFF>Corrode Bone</color> tambahan tanpa mengonsumsi <color=#FFFFFF>Venom</color>. <color=#FFFFFF>Corrode Bone</color> yang terpicu ini tidak akan mengakibatkan Daze.",
+            "Lore": "Kerah di leherku terasa dingin. Borgolnya berat. Mereka mengingatkanku pada dosa-dosa yang tidak bisa aku hapus. Tapi dibandingkan aturan-aturan yang tidak terlihat dan tatapan dingin itu, pengekangan dengan harga yang jelas seperti ini justru membuatku tenang... setidaknya aku tahu apa konsekuensinya. Dan begitu aku kembali ke sarang kecil itu, kembali ke sofa sambil makan camilan, bahkan logam dingin pun akan terasa hangat."
+        },
+        "5": {
+            "Title": "False Evidence and Fangs",
+            "Description": "Level <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, dan <color=#FFFFFF>Chain Attack</color> +2.",
+            "Lore": "Kenangan terbakar oleh cahaya menyilaukan, kejahatan tertulis jelas di atas hitam dan putih... \"bekas luka\" itulah yang dulu mendefinisikan diriku. Tapi sekarang semuanya sudah berubah. Aku sudah belajar membaca dan mengenali aroma kebohongan. Ketika aroma niatan jahat yang familier itu muncul lagi, aku tidak akan masuk ke dalam perangkap seperti orang bodoh. Kali ini, akulah yang akan meninggalkan \"bekas luka\" dengan gigitanku, dan aku akan gigit sekuat mungkin."
+        },
+        "6": {
+            "Title": "Home and Sixth Street",
+            "Description": "Setiap kali <color=#FFFFFF>Corrode Bone</color> terpicu, Cissia akan mendapatkan 1 lapis <color=#FFFFFF>Bone-Deep Corrosion</color>. Saat serangan semua Agen dalam tim (selain <color=#FFFFFF>Corrode Bone</color>) mengenai musuh, akan mengonsumsi 1 lapis <color=#FFFFFF>Bone-Deep Corrosion</color> untuk memicu <color=#FFFFFF>Corrode Bone</color> khusus 1 kali. <color=#FFFFFF>Corrode Bone</color> ini tidak akan mengakibatkan Daze. Dapat mengonsumsi 1 lapis <color=#FFFFFF>Bone-Deep Corrosion</color> setiap 3 detik.",
+            "Lore": "Begitu ada sesuatu yang lebih diinginkan daripada sekadar \"bertahan hidup\", aku benar-benar bisa kehilangan akal sehat. Jika suatu hari takdir mengharuskanku mati, jangan pernah kamu biarkan orang lain tiduran di sofa besar dan empukmu itu!\n\n\"Jangan berani-beraninya kamu melupakan aku... kalau tidak, nanti aku akan menggigitmu sampai mati.\""
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Core Passive: Fatal Concoction",
+            "DescriptionByLevel": {
+                "1": "Saat memulai pertarungan, Cissia akan mendapatkan 3 poin <color=#FFFFFF>Venom</color>. Efek ini dapat dipicu sekali setiap 180 detik dalam mode Eksplorasi Area.\nSaat memiliki <color=#FFFFFF>Venom</color>, Cissia akan mengonsumsi 1 <color=#FFFFFF>Venom</color> setiap 5 detik jika berada dalam status bertarung untuk memicu <color=#FFFFFF>Corrode Bone</color> dan mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nSaat memiliki <color=#FFFFFF>Venom</color>, <color=#2EB6FF>Electric DMG</color> yang diakibatkan semua anggota tim akan mengabaikan <color=#2BAD00>3%</color> DEF musuh. Saat Energy Regen awal melebihi 1,4, akan mengabaikan <color=#2BAD00>0,52%</color> DEF musuh untuk setiap 0,12 poin yang melebihinya. Maksimum dapat mengabaikan <color=#2BAD00>12,88%</color> DEF musuh. Efek berlangsung hingga 30 detik setelah <color=#FFFFFF>Venom</color> habis.\n<color=#FFFFFF>Corrode Bone</color> akan mengakibatkan <color=#2EB6FF>Electric DMG</color> tambahan sebesar <color=#2BAD00>227%</color> ATK Cissia.\nJika terdapat 1/2 Agen Electric di dalam tim, Daze yang diakibatkan <color=#FFFFFF>Corrode Bone</color> akan meningkat 40%/60%.\nSaat mendapatkan <color=#FFFFFF>Venom</color>, untuk setiap 1 <color=#FFFFFF>Venom</color> yang melebihi batas, akan memicu <color=#FFFFFF>Corrode Bone</color> satu kali.",
+                "2": "Saat memulai pertarungan, Cissia akan mendapatkan 3 poin <color=#FFFFFF>Venom</color>. Efek ini dapat dipicu sekali setiap 180 detik dalam mode Eksplorasi Area.\nSaat memiliki <color=#FFFFFF>Venom</color>, Cissia akan mengonsumsi 1 <color=#FFFFFF>Venom</color> setiap 5 detik jika berada dalam status bertarung untuk memicu <color=#FFFFFF>Corrode Bone</color> dan mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nSaat memiliki <color=#FFFFFF>Venom</color>, <color=#2EB6FF>Electric DMG</color> yang diakibatkan semua anggota tim akan mengabaikan <color=#2BAD00>3,5%</color> DEF musuh. Saat Energy Regen awal melebihi 1,4, akan mengabaikan <color=#2BAD00>0,6%</color> DEF musuh untuk setiap 0,12 poin yang melebihinya. Maksimum dapat mengabaikan <color=#2BAD00>14,9%</color> DEF musuh. Efek berlangsung hingga 30 detik setelah <color=#FFFFFF>Venom</color> habis.\n<color=#FFFFFF>Corrode Bone</color> akan mengakibatkan <color=#2EB6FF>Electric DMG</color> tambahan sebesar <color=#2BAD00>245%</color> ATK Cissia.\nJika terdapat 1/2 Agen Electric di dalam tim, Daze yang diakibatkan <color=#FFFFFF>Corrode Bone</color> akan meningkat 40%/60%.\nSaat mendapatkan <color=#FFFFFF>Venom</color>, untuk setiap 1 <color=#FFFFFF>Venom</color> yang melebihi batas, akan memicu <color=#FFFFFF>Corrode Bone</color> satu kali.",
+                "3": "Saat memulai pertarungan, Cissia akan mendapatkan 3 poin <color=#FFFFFF>Venom</color>. Efek ini dapat dipicu sekali setiap 180 detik dalam mode Eksplorasi Area.\nSaat memiliki <color=#FFFFFF>Venom</color>, Cissia akan mengonsumsi 1 <color=#FFFFFF>Venom</color> setiap 5 detik jika berada dalam status bertarung untuk memicu <color=#FFFFFF>Corrode Bone</color> dan mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nSaat memiliki <color=#FFFFFF>Venom</color>, <color=#2EB6FF>Electric DMG</color> yang diakibatkan semua anggota tim akan mengabaikan <color=#2BAD00>4%</color> DEF musuh. Saat Energy Regen awal melebihi 1,4, akan mengabaikan <color=#2BAD00>0,68%</color> DEF musuh untuk setiap 0,12 poin yang melebihinya. Maksimum dapat mengabaikan <color=#2BAD00>16,92%</color> DEF musuh. Efek berlangsung hingga 30 detik setelah <color=#FFFFFF>Venom</color> habis.\n<color=#FFFFFF>Corrode Bone</color> akan mengakibatkan <color=#2EB6FF>Electric DMG</color> tambahan sebesar <color=#2BAD00>263%</color> ATK Cissia.\nJika terdapat 1/2 Agen Electric di dalam tim, Daze yang diakibatkan <color=#FFFFFF>Corrode Bone</color> akan meningkat 40%/60%.\nSaat mendapatkan <color=#FFFFFF>Venom</color>, untuk setiap 1 <color=#FFFFFF>Venom</color> yang melebihi batas, akan memicu <color=#FFFFFF>Corrode Bone</color> satu kali.",
+                "4": "Saat memulai pertarungan, Cissia akan mendapatkan 3 poin <color=#FFFFFF>Venom</color>. Efek ini dapat dipicu sekali setiap 180 detik dalam mode Eksplorasi Area.\nSaat memiliki <color=#FFFFFF>Venom</color>, Cissia akan mengonsumsi 1 <color=#FFFFFF>Venom</color> setiap 5 detik jika berada dalam status bertarung untuk memicu <color=#FFFFFF>Corrode Bone</color> dan mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nSaat memiliki <color=#FFFFFF>Venom</color>, <color=#2EB6FF>Electric DMG</color> yang diakibatkan semua anggota tim akan mengabaikan <color=#2BAD00>4,5%</color> DEF musuh. Saat Energy Regen awal melebihi 1,4, akan mengabaikan <color=#2BAD00>0,76%</color> DEF musuh untuk setiap 0,12 poin yang melebihinya. Maksimum dapat mengabaikan <color=#2BAD00>18,94%</color> DEF musuh. Efek berlangsung hingga 30 detik setelah <color=#FFFFFF>Venom</color> habis.\n<color=#FFFFFF>Corrode Bone</color> akan mengakibatkan <color=#2EB6FF>Electric DMG</color> tambahan sebesar <color=#2BAD00>281%</color> ATK Cissia.\nJika terdapat 1/2 Agen Electric di dalam tim, Daze yang diakibatkan <color=#FFFFFF>Corrode Bone</color> akan meningkat 40%/60%.\nSaat mendapatkan <color=#FFFFFF>Venom</color>, untuk setiap 1 <color=#FFFFFF>Venom</color> yang melebihi batas, akan memicu <color=#FFFFFF>Corrode Bone</color> satu kali.",
+                "5": "Saat memulai pertarungan, Cissia akan mendapatkan 3 poin <color=#FFFFFF>Venom</color>. Efek ini dapat dipicu sekali setiap 180 detik dalam mode Eksplorasi Area.\nSaat memiliki <color=#FFFFFF>Venom</color>, Cissia akan mengonsumsi 1 <color=#FFFFFF>Venom</color> setiap 5 detik jika berada dalam status bertarung untuk memicu <color=#FFFFFF>Corrode Bone</color> dan mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nSaat memiliki <color=#FFFFFF>Venom</color>, <color=#2EB6FF>Electric DMG</color> yang diakibatkan semua anggota tim akan mengabaikan <color=#2BAD00>5%</color> DEF musuh. Saat Energy Regen awal melebihi 1,4, akan mengabaikan <color=#2BAD00>0,84%</color> DEF musuh untuk setiap 0,12 poin yang melebihinya. Maksimum dapat mengabaikan <color=#2BAD00>20,96%</color> DEF musuh. Efek berlangsung hingga 30 detik setelah <color=#FFFFFF>Venom</color> habis.\n<color=#FFFFFF>Corrode Bone</color> akan mengakibatkan <color=#2EB6FF>Electric DMG</color> tambahan sebesar <color=#2BAD00>299%</color> ATK Cissia.\nJika terdapat 1/2 Agen Electric di dalam tim, Daze yang diakibatkan <color=#FFFFFF>Corrode Bone</color> akan meningkat 40%/60%.\nSaat mendapatkan <color=#FFFFFF>Venom</color>, untuk setiap 1 <color=#FFFFFF>Venom</color> yang melebihi batas, akan memicu <color=#FFFFFF>Corrode Bone</color> satu kali.",
+                "6": "Saat memulai pertarungan, Cissia akan mendapatkan 3 poin <color=#FFFFFF>Venom</color>. Efek ini dapat dipicu sekali setiap 180 detik dalam mode Eksplorasi Area.\nSaat memiliki <color=#FFFFFF>Venom</color>, Cissia akan mengonsumsi 1 <color=#FFFFFF>Venom</color> setiap 5 detik jika berada dalam status bertarung untuk memicu <color=#FFFFFF>Corrode Bone</color> dan mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nSaat memiliki <color=#FFFFFF>Venom</color>, <color=#2EB6FF>Electric DMG</color> yang diakibatkan semua anggota tim akan mengabaikan <color=#2BAD00>5,5%</color> DEF musuh. Saat Energy Regen awal melebihi 1,4, akan mengabaikan <color=#2BAD00>0,92%</color> DEF musuh untuk setiap 0,12 poin yang melebihinya. Maksimum dapat mengabaikan <color=#2BAD00>22,98%</color> DEF musuh. Efek berlangsung hingga 30 detik setelah <color=#FFFFFF>Venom</color> habis.\n<color=#FFFFFF>Corrode Bone</color> akan mengakibatkan <color=#2EB6FF>Electric DMG</color> tambahan sebesar <color=#2BAD00>317%</color> ATK Cissia.\nJika terdapat 1/2 Agen Electric di dalam tim, Daze yang diakibatkan <color=#FFFFFF>Corrode Bone</color> akan meningkat 40%/60%.\nSaat mendapatkan <color=#FFFFFF>Venom</color>, untuk setiap 1 <color=#FFFFFF>Venom</color> yang melebihi batas, akan memicu <color=#FFFFFF>Corrode Bone</color> satu kali.",
+                "7": "Saat memulai pertarungan, Cissia akan mendapatkan 3 poin <color=#FFFFFF>Venom</color>. Efek ini dapat dipicu sekali setiap 180 detik dalam mode Eksplorasi Area.\nSaat memiliki <color=#FFFFFF>Venom</color>, Cissia akan mengonsumsi 1 <color=#FFFFFF>Venom</color> setiap 5 detik jika berada dalam status bertarung untuk memicu <color=#FFFFFF>Corrode Bone</color> dan mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nSaat memiliki <color=#FFFFFF>Venom</color>, <color=#2EB6FF>Electric DMG</color> yang diakibatkan semua anggota tim akan mengabaikan <color=#2BAD00>6%</color> DEF musuh. Saat Energy Regen awal melebihi 1,4, akan mengabaikan <color=#2BAD00>1%</color> DEF musuh untuk setiap 0,12 poin yang melebihinya. Maksimum dapat mengabaikan <color=#2BAD00>25%</color> DEF musuh. Efek berlangsung hingga 30 detik setelah <color=#FFFFFF>Venom</color> habis.\n<color=#FFFFFF>Corrode Bone</color> akan mengakibatkan <color=#2EB6FF>Electric DMG</color> tambahan sebesar <color=#2BAD00>335%</color> ATK Cissia.\nJika terdapat 1/2 Agen Electric di dalam tim, Daze yang diakibatkan <color=#FFFFFF>Corrode Bone</color> akan meningkat 40%/60%.\nSaat mendapatkan <color=#FFFFFF>Venom</color>, untuk setiap 1 <color=#FFFFFF>Venom</color> yang melebihi batas, akan memicu <color=#FFFFFF>Corrode Bone</color> satu kali."
+            }
+        },
+        "MathSkill": {
+            "Title": "Additional Ability: Festering Venom",
+            "Description": "Berlaku jika terdapat Agen <color=#FFFFFF>Stun</color> atau Agen yang memiliki Atribut yang sama di dalam tim:\nSaat memiliki <color=#FFFFFF>Venom</color>, Cissia akan meningkatkan CRIT DMG semua Agen dalam tim sebesar 40%, dan dirinya sendiri akan mendapatkan 10% peningkatan tambahan. Efek ini berlangsung hingga 30 detik setelah <color=#FFFFFF>Venom</color> habis."
+        },
+        "AwakenAbility": {},
+        "BaseProps": [
+            {
+                "30501": 0,
+                "12101": 0
+            },
+            {
+                "30501": 12,
+                "12101": 0
+            },
+            {
+                "30501": 12,
+                "12101": 25
+            },
+            {
+                "30501": 24,
+                "12101": 25
+            },
+            {
+                "30501": 24,
+                "12101": 50
+            },
+            {
+                "30501": 36,
+                "12101": 50
+            },
+            {
+                "30501": 36,
+                "12101": 75
+            }
+        ]
+    },
+    "SkillDescriptions": {
+        "0": {
+            "152100001": {
+                "Title": "Basic Attack: Tongue Flick",
+                "Description": "Tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMelancarkan hingga empat tahap serangan ke depan dan mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nSetelah serangan tahap ke-4 mengenai musuh, Cissia akan mendapatkan 2 poin <color=#FFFFFF>Venom</color>. Jika mengenai musuh yang berada dalam status Stun, akan mendapatkan 1 poin <color=#FFFFFF>Venom</color> tambahan."
+            },
+            "152100002": {
+                "Title": "Basic Attack: Serpent's Kiss",
+                "Description": "Saat memiliki <color=#FFFFFF>Serpentine Shadow</color>, tahan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nCissia melompat ke udara dan mengunci target, lalu mendarat untuk mengakibatkan <color=#2EB6FF>Electric DMG</color> pada musuh di area tersebut.\nSaat mengunci target, terus tahan <IconMap:Icon_Normal> dan gerakkan {LAYOUT_CONSOLECONTROLLER#tuas}{LAYOUT_FALLBACK#<IconMap:Icon_JoyStick>} untuk memperpanjang waktu penguncian dan mengontrol posisi pendaratan dengan bebas.\nSetiap kali mendapatkan 6 poin <color=#FFFFFF>Venom</color>, Cissia akan mendapatkan 1 lapis efek <color=#FFFFFF>Serpentine Shadow</color> yang dapat ditumpuk hingga 3 lapis.\nSaat memulai pertarungan, Cissia akan mendapatkan 1 lapis efek <color=#FFFFFF>Serpentine Shadow</color>.\nSaat melancarkan Skill ini, akan mengonsumsi 1 lapis <color=#FFFFFF>Serpentine Shadow</color>.\nSaat Skill ini mengenai musuh, Cissia akan mengonsumsi semua <color=#FFFFFF>Venom</color> dan memicu <color=#FFFFFF>Corrode Bone</color>.\nSaat melancarkan Skill ini, akan memicu <color=#FFFFFF>Quick Assist</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "152100003": {
+                "Title": "Corrode Bone",
+                "Description": "Mengakibatkan <color=#2EB6FF>Electric DMG</color> terhadap musuh di sekitar.\nSetiap kali terpicu, akan meningkatkan CRIT Rate Cissia sebesar 6% selama 15 detik. Efek ini dapat ditumpuk hingga 3 lapis. Memicu ulang akan memperbarui durasi."
+            },
+            "152100015": {
+                "Title": "Basic Attack: Tongue Flick"
+            },
+            "152100016": {
+                "Description": "Kelipatan DMG: Tahap 1",
+                "Param": "{Skill:1521001, Prop:1001}"
+            },
+            "152100017": {
+                "Description": "Kelipatan DMG: Tahap 2",
+                "Param": "{Skill:1521002, Prop:1001}"
+            },
+            "152100018": {
+                "Description": "Kelipatan DMG: Tahap 3",
+                "Param": "{Skill:1521003, Prop:1001}"
+            },
+            "152100019": {
+                "Description": "Kelipatan DMG: Tahap 4",
+                "Param": "{Skill:1521004, Prop:1001}"
+            },
+            "152100020": {
+                "Description": "Kelipatan Daze: Tahap 1",
+                "Param": "{Skill:1521001, Prop:1002}"
+            },
+            "152100021": {
+                "Description": "Kelipatan Daze: Tahap 2",
+                "Param": "{Skill:1521002, Prop:1002}"
+            },
+            "152100022": {
+                "Description": "Kelipatan Daze: Tahap 3",
+                "Param": "{Skill:1521003, Prop:1002}"
+            },
+            "152100023": {
+                "Description": "Kelipatan Daze: Tahap 4",
+                "Param": "{Skill:1521004, Prop:1002}"
+            },
+            "152100024": {
+                "Title": "Basic Attack: Serpent's Kiss"
+            },
+            "152100025": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1521006, Prop:1001}"
+            },
+            "152100026": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1521006, Prop:1002}"
+            },
+            "152100027": {
+                "Title": "Corrode Bone"
+            },
+            "152100028": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1521019, Prop:1001}"
+            },
+            "152100029": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1521019, Prop:1002}"
+            }
+        },
+        "1": {
+            "152100004": {
+                "Title": "Special Attack: Bared Fangs",
+                "Description": "Tekan <IconMap:Icon_Special> untuk melancarkan Skill ini.\nMelancarkan gigitan ular jarak jauh ke depan dan mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nLevel Anti-Interrupt akan meningkat selama melancarkan Skill ini."
+            },
+            "152100005": {
+                "Title": "EX Special Attack: Venomous Bite",
+                "Description": "Saat Energy Cissia sudah cukup, tekan atau tahan <IconMap:Icon_SpecialReady> untuk melancarkan Skill ini.\nMelancarkan sejumlah serangan gigitan ular jarak jauh ke depan dan mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nSaat Skill dilancarkan, akan memulihkan 5 poin Energy.\nSaat Skill dilancarkan dengan menahan tombol, Cissia akan mengonsumsi Energy tambahan. Setiap 20 Energy tambahan yang dikonsumsi, Cissia akan melancarkan Strike tambahan yang mengakibatkan <color=#2EB6FF>Electric DMG</color>. Maksimum dapat mengonsumsi 60 poin Energy tambahan.\nSetelah melancarkan Skill dengan menahan tombol, akan mendapatkan 3 poin <color=#FFFFFF>Venom</color>. Untuk setiap 20 poin Energy tambahan yang dikonsumsi saat menahan tombol, Cissia akan mendapatkan 1 poin <color=#FFFFFF>Venom</color>.\nSetelah melancarkan Skill, Cissia dapat langsung melanjutkan serangannya dengan <color=#FFFFFF>Basic Attack: Tongue Flick</color> tahap ke-4.\nSaat Skill mengenai musuh, akan memicu <color=#FFFFFF>Quick Assist</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "152100030": {
+                "Title": "Special Attack: Bared Fangs"
+            },
+            "152100031": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1521007, Prop:1001}"
+            },
+            "152100032": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1521007, Prop:1002}"
+            },
+            "152100033": {
+                "Title": "EX Special Attack: Venomous Bite"
+            },
+            "152100034": {
+                "Description": "Kelipatan DMG",
+                "Param": "{{Skill:1521008, Prop:1001}*3+{Skill:1521009, Prop:1001}}"
+            },
+            "152100035": {
+                "Description": "Kelipatan Daze",
+                "Param": "{{Skill:1521008, Prop:1002}*3+{Skill:1521009, Prop:1002}}"
+            },
+            "152100036": {
+                "Description": "Bonus Kelipatan DMG - Strike tambahan",
+                "Param": "{Skill:1521008, Prop:1001}"
+            },
+            "152100037": {
+                "Description": "Bonus Kelipatan Daze - Strike tambahan",
+                "Param": "{Skill:1521008, Prop:1002}"
+            },
+            "152100038": {
+                "Description": "Konsumsi Energy",
+                "Param": "65 poin"
+            }
+        },
+        "2": {
+            "152100006": {
+                "Title": "Dodge: Slither",
+                "Description": "Tekan <IconMap:Icon_Evade> untuk melakukan Dodge.\nMelakukan Dodge dengan cepat.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "152100007": {
+                "Title": "Dash Attack: Bite Mark",
+                "Description": "Tekan <IconMap:Icon_Normal> saat melakukan Dodge untuk melancarkan Skill ini.\nMelancarkan Slash cepat terhadap musuh di depan dan mengakibatkan <color=#2EB6FF>Electric DMG</color>."
+            },
+            "152100008": {
+                "Title": "Dodge Counter: Bite Back",
+                "Description": "Tekan <IconMap:Icon_Normal> setelah melakukan <color=#FFFFFF>Perfect Dodge</color> untuk melancarkan Skill ini.\nMelompat ke depan, lalu melancarkan serangan sapuan saat mendarat, mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "152100039": {
+                "Title": "Dash Attack: Bite Mark"
+            },
+            "152100040": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1521010, Prop:1001}"
+            },
+            "152100041": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1521010, Prop:1002}"
+            },
+            "152100042": {
+                "Title": "Dodge Counter: Bite Back"
+            },
+            "152100043": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1521011, Prop:1001}"
+            },
+            "152100044": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1521011, Prop:1002}"
+            }
+        },
+        "3": {
+            "152100009": {
+                "Title": "Chain Attack: Gang Operation",
+                "Description": "Saat <color=#FFFFFF>Chain Attack</color> terpicu, pilih Cissia untuk melancarkan Skill ini.\nMelancarkan sejumlah tahap serangan ke depan dan mengakibatkan <color=#2EB6FF>Electric DMG</color> dalam jumlah besar.\nSetelah melancarkan Skill ini, Cissia akan mendapatkan 3 poin <color=#FFFFFF>Venom</color>.\nSaat Skill mengenai musuh, akan memicu <color=#FFFFFF>Quick Assist</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "152100010": {
+                "Title": "Ultimate: Ophidiophobia",
+                "Description": "Saat Decibel Rating mencapai <color=#FFFFFF>Maximum</color>, tekan <IconMap:Icon_UltimateReady> untuk melancarkan Skill ini.\nMelancarkan serangan ke bawah ke arah depan dan mengakibatkan <color=#2EB6FF>Electric DMG</color> dalam jumlah besar.\nSetelah melancarkan Skill ini, Cissia akan mendapatkan 3 poin <color=#FFFFFF>Venom</color>.\nSetelah melancarkan Skill ini, Cissia akan mengaktifkan <color=#FFFFFF>Ether Veil: Cold-Blooded</color> selama 30 detik. Selama aktif, CRIT DMG semua Agen dalam tim akan meningkat sebesar 5%.\nMengaktifkan <color=#FFFFFF>Ether Veil: Cold-Blooded</color> berulang kali akan mengakhiri <color=#FFFFFF>Ether Veil: Cold-Blooded</color> yang sedang aktif terlebih dulu.\nSaat Skill mengenai musuh, akan memicu <color=#FFFFFF>Quick Assist</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "152100045": {
+                "Title": "Chain Attack: Gang Operation"
+            },
+            "152100046": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1521012, Prop:1001}"
+            },
+            "152100047": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1521012, Prop:1002}"
+            },
+            "152100048": {
+                "Title": "Ultimate: Ophidiophobia"
+            },
+            "152100049": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1521013, Prop:1001}"
+            },
+            "152100050": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1521013, Prop:1002}"
+            }
+        },
+        "6": {
+            "152100012": {
+                "Title": "Quick Assist: Alarm System",
+                "Description": "Saat Agen yang Dikendalikan terhempas, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nMelompat ke depan, lalu melancarkan serangan sapuan saat mendarat, mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nSelama melancarkan Skill ini, Cissia dapat langsung melanjutkan serangan dengan <color=#FFFFFF>Special Attack: Bared Fangs</color>, <color=#FFFFFF>EX Special Attack: Venomous Bite</color>, atau <color=#FFFFFF>Basic Attack: Serpent's Kiss</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "152100013": {
+                "Title": "Defensive Assist: Extra Prison Rations",
+                "Description": "Tepat sebelum Agen aktif diserang, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nMenangkis serangan musuh dan menghasilkan Daze dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "152100014": {
+                "Title": "Assist Follow-Up: Partners in Crime",
+                "Description": "Setelah melancarkan <color=#FFFFFF>Defensive Assist</color>, tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMelancarkan serangan ke bawah beruntun terhadap target dan mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "152100051": {
+                "Title": "Quick Assist: Alarm System"
+            },
+            "152100052": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1521014, Prop:1001}"
+            },
+            "152100053": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1521014, Prop:1002}"
+            },
+            "152100054": {
+                "Title": "Defensive Assist: Extra Prison Rations"
+            },
+            "152100055": {
+                "Description": "Kelipatan Daze - Light Defensive",
+                "Param": "{Skill:1521015, Prop:1002}"
+            },
+            "152100056": {
+                "Description": "Kelipatan Daze - Heavy Defensive",
+                "Param": "{Skill:1521016, Prop:1002}"
+            },
+            "152100057": {
+                "Description": "Kelipatan Daze - Chain Defensive",
+                "Param": "{Skill:1521017, Prop:1002}"
+            },
+            "152100058": {
+                "Title": "Assist Follow-Up: Partners in Crime"
+            },
+            "152100059": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1521018, Prop:1001}"
+            },
+            "152100060": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1521018, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1521001": {
+            "DamageValue": 7770,
+            "DamageGrowth": 710,
+            "DazeValue": 6030,
+            "DazeGrowth": 280
+        },
+        "1521002": {
+            "DamageValue": 13870,
+            "DamageGrowth": 1270,
+            "DazeValue": 9840,
+            "DazeGrowth": 450
+        },
+        "1521003": {
+            "DamageValue": 13510,
+            "DamageGrowth": 1230,
+            "DazeValue": 8740,
+            "DazeGrowth": 400
+        },
+        "1521004": {
+            "DamageValue": 25020,
+            "DamageGrowth": 2280,
+            "DazeValue": 15910,
+            "DazeGrowth": 730
+        },
+        "1521006": {
+            "DamageValue": 50420,
+            "DamageGrowth": 4590,
+            "DazeValue": 17970,
+            "DazeGrowth": 820
+        },
+        "1521007": {
+            "DamageValue": 5200,
+            "DamageGrowth": 480,
+            "DazeValue": 4400,
+            "DazeGrowth": 200
+        },
+        "1521008": {
+            "DamageValue": 20040,
+            "DamageGrowth": 1830,
+            "DazeValue": 10830,
+            "DazeGrowth": 500
+        },
+        "1521009": {
+            "DamageValue": 6680,
+            "DamageGrowth": 610,
+            "DazeValue": 3610,
+            "DazeGrowth": 170
+        },
+        "1521010": {
+            "DamageValue": 14730,
+            "DamageGrowth": 1340,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1521011": {
+            "DamageValue": 32450,
+            "DamageGrowth": 2950,
+            "DazeValue": 23660,
+            "DazeGrowth": 1080
+        },
+        "1521012": {
+            "DamageValue": 73780,
+            "DamageGrowth": 6710,
+            "DazeValue": 25860,
+            "DazeGrowth": 1180
+        },
+        "1521013": {
+            "DamageValue": 181100,
+            "DamageGrowth": 16470,
+            "DazeValue": 12110,
+            "DazeGrowth": 560
+        },
+        "1521014": {
+            "DamageValue": 7480,
+            "DamageGrowth": 680,
+            "DazeValue": 6330,
+            "DazeGrowth": 290
+        },
+        "1521015": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1521016": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1521017": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1521018": {
+            "DamageValue": 52060,
+            "DamageGrowth": 4740,
+            "DazeValue": 38720,
+            "DazeGrowth": 1760
+        },
+        "1521019": {
+            "DamageValue": 12680,
+            "DamageGrowth": 1160,
+            "DazeValue": 15510,
+            "DazeGrowth": 710
+        }
+    }
+}

@@ -1,0 +1,437 @@
+{
+    "Name": "Císsia",
+    "ElementTypes": [
+        "Elec"
+    ],
+    "Specialty": {
+        "Id": 1,
+        "Name": "Atacante"
+    },
+    "Talents": {
+        "1": {
+            "Title": "Viajante e Presa",
+            "Description": "A <color=#FFFFFF>Toxina</color> obtida ao entrar em combate aumenta para 6. A <color=#FFFFFF>Passiva Principal</color> passa a ignorar 140% mais da DEF do inimigo, e o dano causado por todos os membros da equipe ignora 5% da <color=#2EB6FF>resistência Elétrica</color> do alvo. A <color=#FFFFFF>Corrosão Óssea</color> ignora 10% da <color=#2EB6FF>resistência Elétrica</color> do alvo.",
+            "Lore": "Cheiros, passos, olhares fugazes... esses \"rastros\" me permitem distinguir caçador de presa. Fujo antes de me tornar presa. Abaixo a cabeça antes de caçar. Essa é a lei da sobrevivência.\n\"Lar\"? Isso é coisa de livros de histórias. A imensidão da natureza é a minha cabana de caçador."
+        },
+        "2": {
+            "Title": "Fome e Admoestação",
+            "Description": "Quando <color=#FFFFFF>Ataque em Cadeia: Crime Organizado</color> ou <color=#FFFFFF>Supremo: Medo Rastejante</color> atingem um inimigo atordoado, geram 3 de <color=#FFFFFF>Toxina</color> adicional. O dano do <color=#FFFFFF>Ataque Básico: Beijo da Serpente</color> aumenta 35%.",
+            "Lore": "Um lugar onde posso comer até ficar satisfeita é um bom lugar, e quem me dá comida é uma boa pessoa. Essa é a verdade mais simples e confiável do mundo. Além disso, o omelete de arroz é uma iguaria celestial, até esse último resto na colher."
+        },
+        "3": {
+            "Title": "Correntes e um Ninho Acolhedor",
+            "Description": "Obtém +2 níveis de <color=#FFFFFF>Ataque Básico</color>, <color=#FFFFFF>Esquiva</color>, <color=#FFFFFF>Ataque de Assistência</color>, <color=#FFFFFF>Ataque Especial</color> e <color=#FFFFFF>Ataque em Cadeia</color>",
+            "Lore": "Justiça? Ordem? Esse tipo de coisa honrada me dá medo. O que eu conheço são as regras das sombras: traição, mentiras e ser capaz de me submeter para sobreviver. Não me importo de ser usada como ferramenta, contanto que a recompensa seja uma refeição farta e um cantinho quente pra dormir."
+        },
+        "4": {
+            "Title": "A Determinação de uma Malfeitora",
+            "Description": "Executar <color=#FFFFFF>Ataque Especial Reforçado</color>, <color=#FFFFFF>Ataque em Cadeia</color> ou <color=#FFFFFF>Supremo</color> gera 1 acúmulo de <color=#FFFFFF>Determinação</color>, até 3 vezes. Lançar um <color=#FFFFFF>Ataque Básico: Beijo da Serpente</color> consome todos os acúmulos de <color=#FFFFFF>Determinação</color>, e cada acúmulo consumido aciona 1 <color=#FFFFFF>Corrosão Óssea</color> especial que não consome <color=#FFFFFF>Toxina</color>. Essa <color=#FFFFFF>Corrosão Óssea</color> não pode causar Atordoamento.",
+            "Lore": "A coleira ao redor do meu pescoço é gelada, as algemas são pesadas, lembrando-me da culpa que não consigo lavar. Mas comparado àquelas regras invisíveis e olhares frios, esse tipo de restrição com preço claro me deixa tranquila. Pelo menos, eu sei qual é o valor. E além disso, quando volto para aquele pequeno refúgio com sofá e lanchinhos, até essas coisas de metal frio parecem quentes e acolhedoras."
+        },
+        "5": {
+            "Title": "Evidência Falsa e Presas",
+            "Description": "Obtém +2 níveis de <color=#FFFFFF>Ataque Básico</color>, <color=#FFFFFF>Esquiva</color>, <color=#FFFFFF>Ataque de Assistência</color>, <color=#FFFFFF>Ataque Especial</color> e <color=#FFFFFF>Ataque em Cadeia</color>",
+            "Lore": "Memórias queimadas por uma luz cegante, acusações em preto e branco... essas \"marcas\" formaram quem eu era. Mas agora é diferente, aprendi a ler e aprendi a reconhecer o cheiro das mentiras. Quando o cheiro familiar de conspiração voltar a pairar no ar, não vou mais entrar docilmente na gaiola. Desta vez, serei eu quem deixará as \"marcas\", com os dentes, ferozmente."
+        },
+        "6": {
+            "Title": "Lar e Rua Seis",
+            "Description": "Obtém uma <color=#FFFFFF>Corrosão Óssea Profunda</color> sempre que executa uma <color=#FFFFFF>Corrosão Óssea</color>. Quando qualquer ataque de um personagem da equipe, exceto <color=#FFFFFF>Corrosão Óssea</color>, atinge um inimigo, consome 1 acúmulo de <color=#FFFFFF>Corrosão Óssea Profunda</color>, para ativar uma <color=#FFFFFF>Corrosão Óssea</color> especial. Esta <color=#FFFFFF>Corrosão Óssea</color> não causa Atordoamento. É possível consumir até 1 acúmulo de <color=#FFFFFF> Corrosão Óssea Profunda</color> a cada 3s.",
+            "Lore": "Quando você tem algo que deseja mais do que simplesmente \"sobreviver\", você realmente se torna uma pessoa idiota. Se um dia o destino exigir minha morte, não se atreva a deixar outra pessoa deitar naquele seu sofá grande e macio!\n\n\"Não se atreva a me esquecer, ou eu te mato na mordida.\""
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passiva Principal: Destilado Letal",
+            "DescriptionByLevel": {
+                "1": "Obtenha 3 de <color=#FFFFFF>Toxina</color> ao entrar no combate. Esse efeito pode ser ativado uma vez a cada 180s no Modo de Reconhecimento.\nQuando há <color=#FFFFFF>Toxina</color>, consome 1 <color=#FFFFFF>Toxina</color> a cada 5s durante o combate, para ativar a <color=#FFFFFF>Corrosão Óssea</color> e causar <color=#2EB6FF>Dano Elétrico</color>.\nQuando há <color=#FFFFFF>Toxina</color>, o <color=#2EB6FF>Dano Elétrico</color> de toda a equipe ignora <color=#2BAD00>3%</color> da DEF do inimigo. Quando a Recuperação de Energia excede 1,4, cada ponto acima de 0,12 ignora mais <color=#2BAD00>0,52%</color> da DEF do inimigo, até o máximo de <color=#2BAD00>12,88%</color> por até 30s após a <color=#FFFFFF>Toxina</color> acabar.\nA <color=#FFFFFF>Corrosão Óssea</color> causa <color=#2EB6FF>Dano Elétrico</color> adicional equivalente a <color=#2BAD00>227%</color> do ATQ.\nCom 1 ou 2 personagens de atributo Elétrico na equipe, o Atordoamento causado por <color=#FFFFFF>Corrosão Óssea</color> aumenta 40% ou 60%, respectivamente.\nAo obter <color=#FFFFFF>Toxina</color>, cada ponto excedente de <color=#FFFFFF>Toxina</color> ativa <color=#FFFFFF>Corrosão Óssea</color> uma vez.",
+                "2": "Obtenha 3 de <color=#FFFFFF>Toxina</color> ao entrar no combate. Esse efeito pode ser ativado uma vez a cada 180s no Modo de Reconhecimento.\nQuando há <color=#FFFFFF>Toxina</color>, consome 1 <color=#FFFFFF>Toxina</color> a cada 5s durante o combate, para ativar a <color=#FFFFFF>Corrosão Óssea</color> e causar <color=#2EB6FF>Dano Elétrico</color>.\nQuando há <color=#FFFFFF>Toxina</color>, o <color=#2EB6FF>Dano Elétrico</color> de toda a equipe ignora <color=#2BAD00>3,5%</color> da DEF do inimigo. Quando a Recuperação de Energia excede 1,4, cada ponto acima de 0,12 ignora mais <color=#2BAD00>0,6%</color> da DEF do inimigo, até o máximo de <color=#2BAD00>14,9%</color> por até 30s após a <color=#FFFFFF>Toxina</color> acabar.\nA <color=#FFFFFF>Corrosão Óssea</color> causa <color=#2EB6FF>Dano Elétrico</color> adicional equivalente a <color=#2BAD00>245%</color> do ATQ.\nCom 1 ou 2 personagens de atributo Elétrico na equipe, o Atordoamento causado por <color=#FFFFFF>Corrosão Óssea</color> aumenta 40% ou 60%, respectivamente.\nAo obter <color=#FFFFFF>Toxina</color>, cada ponto excedente de <color=#FFFFFF>Toxina</color> ativa <color=#FFFFFF>Corrosão Óssea</color> uma vez.",
+                "3": "Obtenha 3 de <color=#FFFFFF>Toxina</color> ao entrar no combate. Esse efeito pode ser ativado uma vez a cada 180s no Modo de Reconhecimento.\nQuando há <color=#FFFFFF>Toxina</color>, consome 1 <color=#FFFFFF>Toxina</color> a cada 5s durante o combate, para ativar a <color=#FFFFFF>Corrosão Óssea</color> e causar <color=#2EB6FF>Dano Elétrico</color>.\nQuando há <color=#FFFFFF>Toxina</color>, o <color=#2EB6FF>Dano Elétrico</color> de toda a equipe ignora <color=#2BAD00>4%</color> da DEF do inimigo. Quando a Recuperação de Energia excede 1,4, cada ponto acima de 0,12 ignora mais <color=#2BAD00>0,68%</color> da DEF do inimigo, até o máximo de <color=#2BAD00>16,92%</color> por até 30s após a <color=#FFFFFF>Toxina</color> acabar.\nA <color=#FFFFFF>Corrosão Óssea</color> causa <color=#2EB6FF>Dano Elétrico</color> adicional equivalente a <color=#2BAD00>263%</color> do ATQ.\nCom 1 ou 2 personagens de atributo Elétrico na equipe, o Atordoamento causado por <color=#FFFFFF>Corrosão Óssea</color> aumenta 40% ou 60%, respectivamente.\nAo obter <color=#FFFFFF>Toxina</color>, cada ponto excedente de <color=#FFFFFF>Toxina</color> ativa <color=#FFFFFF>Corrosão Óssea</color> uma vez.",
+                "4": "Obtenha 3 de <color=#FFFFFF>Toxina</color> ao entrar no combate. Esse efeito pode ser ativado uma vez a cada 180s no Modo de Reconhecimento.\nQuando há <color=#FFFFFF>Toxina</color>, consome 1 <color=#FFFFFF>Toxina</color> a cada 5s durante o combate, para ativar a <color=#FFFFFF>Corrosão Óssea</color> e causar <color=#2EB6FF>Dano Elétrico</color>.\nQuando há <color=#FFFFFF>Toxina</color>, o <color=#2EB6FF>Dano Elétrico</color> de toda a equipe ignora <color=#2BAD00>4,5%</color> da DEF do inimigo. Quando a Recuperação de Energia excede 1,4, cada ponto acima de 0,12 ignora mais <color=#2BAD00>0,76%</color> da DEF do inimigo, até o máximo de <color=#2BAD00>18,94%</color> por até 30s após a <color=#FFFFFF>Toxina</color> acabar.\nA <color=#FFFFFF>Corrosão Óssea</color> causa <color=#2EB6FF>Dano Elétrico</color> adicional equivalente a <color=#2BAD00>281%</color> do ATQ.\nCom 1 ou 2 personagens de atributo Elétrico na equipe, o Atordoamento causado por <color=#FFFFFF>Corrosão Óssea</color> aumenta 40% ou 60%, respectivamente.\nAo obter <color=#FFFFFF>Toxina</color>, cada ponto excedente de <color=#FFFFFF>Toxina</color> ativa <color=#FFFFFF>Corrosão Óssea</color> uma vez.",
+                "5": "Obtenha 3 de <color=#FFFFFF>Toxina</color> ao entrar no combate. Esse efeito pode ser ativado uma vez a cada 180s no Modo de Reconhecimento.\nQuando há <color=#FFFFFF>Toxina</color>, consome 1 <color=#FFFFFF>Toxina</color> a cada 5s durante o combate, para ativar a <color=#FFFFFF>Corrosão Óssea</color> e causar <color=#2EB6FF>Dano Elétrico</color>.\nQuando há <color=#FFFFFF>Toxina</color>, o <color=#2EB6FF>Dano Elétrico</color> de toda a equipe ignora <color=#2BAD00>5%</color> da DEF do inimigo. Quando a Recuperação de Energia excede 1,4, cada ponto acima de 0,12 ignora mais <color=#2BAD00>0,84%</color> da DEF do inimigo, até o máximo de <color=#2BAD00>20,96%</color> por até 30s após a <color=#FFFFFF>Toxina</color> acabar.\nA <color=#FFFFFF>Corrosão Óssea</color> causa <color=#2EB6FF>Dano Elétrico</color> adicional equivalente a <color=#2BAD00>299%</color> do ATQ.\nCom 1 ou 2 personagens de atributo Elétrico na equipe, o Atordoamento causado por <color=#FFFFFF>Corrosão Óssea</color> aumenta 40% ou 60%, respectivamente.\nAo obter <color=#FFFFFF>Toxina</color>, cada ponto excedente de <color=#FFFFFF>Toxina</color> ativa <color=#FFFFFF>Corrosão Óssea</color> uma vez.",
+                "6": "Obtenha 3 de <color=#FFFFFF>Toxina</color> ao entrar no combate. Esse efeito pode ser ativado uma vez a cada 180s no Modo de Reconhecimento.\nQuando há <color=#FFFFFF>Toxina</color>, consome 1 <color=#FFFFFF>Toxina</color> a cada 5s durante o combate, para ativar a <color=#FFFFFF>Corrosão Óssea</color> e causar <color=#2EB6FF>Dano Elétrico</color>.\nQuando há <color=#FFFFFF>Toxina</color>, o <color=#2EB6FF>Dano Elétrico</color> de toda a equipe ignora <color=#2BAD00>5,5%</color> da DEF do inimigo. Quando a Recuperação de Energia excede 1,4, cada ponto acima de 0,12 ignora mais <color=#2BAD00>0,92%</color> da DEF do inimigo, até o máximo de <color=#2BAD00>22,98%</color> por até 30s após a <color=#FFFFFF>Toxina</color> acabar.\nA <color=#FFFFFF>Corrosão Óssea</color> causa <color=#2EB6FF>Dano Elétrico</color> adicional equivalente a <color=#2BAD00>317%</color> do ATQ.\nCom 1 ou 2 personagens de atributo Elétrico na equipe, o Atordoamento causado por <color=#FFFFFF>Corrosão Óssea</color> aumenta 40% ou 60%, respectivamente.\nAo obter <color=#FFFFFF>Toxina</color>, cada ponto excedente de <color=#FFFFFF>Toxina</color> ativa <color=#FFFFFF>Corrosão Óssea</color> uma vez.",
+                "7": "Obtenha 3 de <color=#FFFFFF>Toxina</color> ao entrar no combate. Esse efeito pode ser ativado uma vez a cada 180s no Modo de Reconhecimento.\nQuando há <color=#FFFFFF>Toxina</color>, consome 1 <color=#FFFFFF>Toxina</color> a cada 5s durante o combate, para ativar a <color=#FFFFFF>Corrosão Óssea</color> e causar <color=#2EB6FF>Dano Elétrico</color>.\nQuando há <color=#FFFFFF>Toxina</color>, o <color=#2EB6FF>Dano Elétrico</color> de toda a equipe ignora <color=#2BAD00>6%</color> da DEF do inimigo. Quando a Recuperação de Energia excede 1,4, cada ponto acima de 0,12 ignora mais <color=#2BAD00>1%</color> da DEF do inimigo, até o máximo de <color=#2BAD00>25%</color> por até 30s após a <color=#FFFFFF>Toxina</color> acabar.\nA <color=#FFFFFF>Corrosão Óssea</color> causa <color=#2EB6FF>Dano Elétrico</color> adicional equivalente a <color=#2BAD00>335%</color> do ATQ.\nCom 1 ou 2 personagens de atributo Elétrico na equipe, o Atordoamento causado por <color=#FFFFFF>Corrosão Óssea</color> aumenta 40% ou 60%, respectivamente.\nAo obter <color=#FFFFFF>Toxina</color>, cada ponto excedente de <color=#FFFFFF>Toxina</color> ativa <color=#FFFFFF>Corrosão Óssea</color> uma vez."
+            }
+        },
+        "MathSkill": {
+            "Title": "Habilidade Extra: Toxina Severa",
+            "Description": "Com um personagem <color=#FFFFFF>Atordoador</color> ou de mesmo atributo na equipe:\nCom <color=#FFFFFF>Toxina</color>, o Dano CRIT de toda a equipe aumenta 40%, e o de Císsia aumenta mais 10%. O efeito dura até 30s após a <color=#FFFFFF>Toxina</color> acabar."
+        },
+        "AwakenAbility": {},
+        "BaseProps": [
+            {
+                "30501": 0,
+                "12101": 0
+            },
+            {
+                "30501": 12,
+                "12101": 0
+            },
+            {
+                "30501": 12,
+                "12101": 25
+            },
+            {
+                "30501": 24,
+                "12101": 25
+            },
+            {
+                "30501": 24,
+                "12101": 50
+            },
+            {
+                "30501": 36,
+                "12101": 50
+            },
+            {
+                "30501": 36,
+                "12101": 75
+            }
+        ]
+    },
+    "SkillDescriptions": {
+        "0": {
+            "152100001": {
+                "Title": "Ataque Básico: Língua Bífida",
+                "Description": "Pressione <IconMap:Icon_Normal> para ativar: \nExecuta até quatro ataques consecutivos à frente e causa <color=#2EB6FF>Dano Elétrico</color>.\nAtingir um inimigo com o 4º golpe gera 2 pontos de <color=#FFFFFF>Toxina</color>. Atingir um inimigo atordoado gera mais 1 ponto de <color=#FFFFFF>Toxina</color>."
+            },
+            "152100002": {
+                "Title": "Ataque Básico: Beijo da Serpente",
+                "Description": "Com <color=#FFFFFF>Sombra da Serpente</color>, mantenha <IconMap:Icon_Normal> pressionado para ativar:\nCíssia salta no ar, mira no alvo e causa <color=#2EB6FF>Dano Elétrico</color> em inimigos na área ao aterrissar.\nDurante a mira, mantenha <IconMap:Icon_Normal> pressionado e arraste o {LAYOUT_CONSOLECONTROLLER#controle analógico}{LAYOUT_FALLBACK#controle analógico} para prolongar o tempo de mira e controlar a posição de aterrissagem.\nCada 6 pontos de <color=#FFFFFF>Toxina</color> obtidos geram 1 acúmulo de <color=#FFFFFF>Sombra da Serpente</color>, até o máximo de 3.\nAo entrar em combate, obtenha 1 acúmulo de <color=#FFFFFF>Sombra da Serpente</color>.\nAtivar a habilidade consome 1 acúmulo de <color=#FFFFFF>Sombra da Serpente</color>.\nAtingir inimigos consome rapidamente toda a <color=#FFFFFF>Toxina</color> e ativa a <color=#FFFFFF>Corrosão Óssea</color>.\nAtivar a habilidade executa uma <color=#FFFFFF>Assistência Reativa</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "152100003": {
+                "Title": "Corrosão Óssea",
+                "Description": "Causa <color=#2EB6FF>Dano Elétrico</color> a inimigos próximos.\nAo ativar, a Taxa CRIT aumenta 6%, por 15s. Pode acumular até 3 vezes e ativações repetidas reiniciam a duração."
+            },
+            "152100015": {
+                "Title": "Ataque Básico: Língua Bífida"
+            },
+            "152100016": {
+                "Description": "Multiplicador de Dano de 1º Golpe",
+                "Param": "{Skill:1521001, Prop:1001}"
+            },
+            "152100017": {
+                "Description": "Multiplicador de Dano de 2º Golpe",
+                "Param": "{Skill:1521002, Prop:1001}"
+            },
+            "152100018": {
+                "Description": "Multiplicador de Dano de 3º Golpe",
+                "Param": "{Skill:1521003, Prop:1001}"
+            },
+            "152100019": {
+                "Description": "Multiplicador de Dano de 4º Golpe",
+                "Param": "{Skill:1521004, Prop:1001}"
+            },
+            "152100020": {
+                "Description": "Multiplicador de Atordoamento de 1º Golpe",
+                "Param": "{Skill:1521001, Prop:1002}"
+            },
+            "152100021": {
+                "Description": "Multiplicador de Atordoamento de 2º Golpe",
+                "Param": "{Skill:1521002, Prop:1002}"
+            },
+            "152100022": {
+                "Description": "Multiplicador de Atordoamento de 3º Golpe",
+                "Param": "{Skill:1521003, Prop:1002}"
+            },
+            "152100023": {
+                "Description": "Multiplicador de Atordoamento de 4º Golpe",
+                "Param": "{Skill:1521004, Prop:1002}"
+            },
+            "152100024": {
+                "Title": "Ataque Básico: Beijo da Serpente"
+            },
+            "152100025": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1521006, Prop:1001}"
+            },
+            "152100026": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1521006, Prop:1002}"
+            },
+            "152100027": {
+                "Title": "Corrosão Óssea"
+            },
+            "152100028": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1521019, Prop:1001}"
+            },
+            "152100029": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1521019, Prop:1002}"
+            }
+        },
+        "1": {
+            "152100004": {
+                "Title": "Ataque Especial: Presas Expostas",
+                "Description": "Pressione <IconMap:Icon_Special> para ativar:\nLança uma mordida de serpente de longo alcance à frente, causando <color=#2EB6FF>Dano Elétrico</color>.\nDurante sua execução, o nível de Anti-Interrupção aumenta."
+            },
+            "152100005": {
+                "Title": "Ataque Especial Reforçado: Mordida Venenosa",
+                "Description": "Com energia suficiente, pressione ou mantenha <IconMap:Icon_SpecialReady> pressionado para ativar:\nLança múltiplas mordidas de serpente de longo alcance à frente, causando <color=#2EB6FF>Dano Elétrico</color>.\nAtivar a habilidade recupera 5 pontos de Energia.\nAo manter pressionado para consumir energia adicional. A cada 20 pontos consumidos, realiza um golpe extra, causando <color=#2EB6FF>Dano Elétrico</color>, consumindo no máximo 60 pontos de energia adicional.\nAtivar mantendo pressionado, gera 3 pontos de <color=#FFFFFF>Toxina</color>, e 1 ponto de <color=#FFFFFF>Toxina</color> a mais a cada 20 pontos de energia adicional consumidos.\nApós ativar a habilidade, é possível conectar o 4º golpe de <color=#FFFFFF>Ataque Básico: Língua Bífida</color>.\nQuando a habilidade atinge inimigos, ativa <color=#FFFFFF>Assistência Reativa</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "152100030": {
+                "Title": "Ataque Especial: Presas Expostas"
+            },
+            "152100031": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1521007, Prop:1001}"
+            },
+            "152100032": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1521007, Prop:1002}"
+            },
+            "152100033": {
+                "Title": "Ataque Especial Reforçado: Mordida Venenosa"
+            },
+            "152100034": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{{Skill:1521008, Prop:1001}*3+{Skill:1521009, Prop:1001}}"
+            },
+            "152100035": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{{Skill:1521008, Prop:1002}*3+{Skill:1521009, Prop:1002}}"
+            },
+            "152100036": {
+                "Description": "Bônus de Multiplicador de Dano de Golpe",
+                "Param": "{Skill:1521008, Prop:1001}"
+            },
+            "152100037": {
+                "Description": "Bônus de Multiplicador de Atordoamento de Golpe",
+                "Param": "{Skill:1521008, Prop:1002}"
+            },
+            "152100038": {
+                "Description": "Custo de Energia",
+                "Param": "65 pontos"
+            }
+        },
+        "2": {
+            "152100006": {
+                "Title": "Esquiva: Rastejo Sinuoso",
+                "Description": "Pressione <IconMap:Icon_Evade> para ativar:\nUma esquiva rápida.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "152100007": {
+                "Title": "Ataque Rápido: Marca de Dentes",
+                "Description": "Pressione <IconMap:Icon_Normal> durante uma esquiva para ativar:\nExecuta um corte rápido à frente, causando <color=#2EB6FF>Dano Elétrico</color>."
+            },
+            "152100008": {
+                "Title": "Contraesquiva: Mordida Retaliatória",
+                "Description": "Pressione <IconMap:Icon_Normal> durante uma <color=#FFFFFF>Esquiva Perfeita</color> para ativar:\nSalta para frente e, ao aterrissar, realiza uma rasteira, causando <color=#2EB6FF>Dano Elétrico</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "152100039": {
+                "Title": "Ataque Rápido: Marca de Dentes"
+            },
+            "152100040": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1521010, Prop:1001}"
+            },
+            "152100041": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1521010, Prop:1002}"
+            },
+            "152100042": {
+                "Title": "Contraesquiva: Mordida Retaliatória"
+            },
+            "152100043": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1521011, Prop:1001}"
+            },
+            "152100044": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1521011, Prop:1002}"
+            }
+        },
+        "3": {
+            "152100009": {
+                "Title": "Ataque em Cadeia: Crime Organizado",
+                "Description": "Ao ativar um <color=#FFFFFF>Ataque em Cadeia</color>, selecione a personagem para ativar:\nLança múltiplos ataques à frente, causando <color=#2EB6FF>Dano Elétrico</color> muito alto.\nUsar a habilidade gera 3 pontos de <color=#FFFFFF>Toxina</color>.\nUma <color=#FFFFFF>Assistência Reativa</color> é ativada quando essa habilidade atinge um inimigo.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "152100010": {
+                "Title": "Supremo: Medo Rastejante",
+                "Description": "Com o Índice de dB no <color=#FFFFFF>Máximo</color>, pressione <IconMap:Icon_UltimateReady> para ativar:\nLança um ataque descendente esmagador para frente e causa alto <color=#2EB6FF>Dano Elétrico</color>. Obtenha 3 pontos de <color=#FFFFFF>Toxina</color> após o ataque.\nApós o ataque, o <color=#FFFFFF>Véu de Éter: Sangue Frio</color> fica ativo por 30s, e o Dano CRIT de todos os membros da equipe aumenta 5% no mesmo período.\nAtivar um novo <color=#FFFFFF>Véu de Éter: Sangue Frio</color> desativa o <color=#FFFFFF>Véu de Éter: Sangue Frio</color> anterior.\nAo atingir um inimigo, desencadeia uma <color=#FFFFFF>Assistência Reativa</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "152100045": {
+                "Title": "Ataque em Cadeia: Crime Organizado"
+            },
+            "152100046": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1521012, Prop:1001}"
+            },
+            "152100047": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1521012, Prop:1002}"
+            },
+            "152100048": {
+                "Title": "Supremo: Medo Rastejante"
+            },
+            "152100049": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1521013, Prop:1001}"
+            },
+            "152100050": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1521013, Prop:1002}"
+            }
+        },
+        "6": {
+            "152100012": {
+                "Title": "Assistência Reativa: Sistema de Alarme",
+                "Description": "Quando o personagem ativo é lançado para o alto, pressione <IconMap:Icon_Switch> para ativar:\nSalta para frente e executa um ataque em área quando aterrissa, causando <color=#2EB6FF>Dano Elétrico</color>. Ao usar o ataque, é possível conectar o <color=#FFFFFF>Ataque Especial: Presas Expostas</color>, o <color=#FFFFFF>Ataque Especial Reforçado: Mordida Venenosa</color> e o <color=#FFFFFF>Ataque Básico: Beijo da Serpente</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "152100013": {
+                "Title": "Assistência Defensiva: Refeição Extra da Cadeia",
+                "Description": "Quando o personagem em campo está prestes a sofrer um ataque, pressione <IconMap:Icon_Switch> para ativar:\nBloqueia o ataque inimigo, causando muito Atordoamento.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "152100014": {
+                "Title": "Assistência Imediata: Parceiros de Crime",
+                "Description": "Pressione <IconMap:Icon_Normal> após uma <color=#FFFFFF>Assistência Defensiva</color> para ativar:\nLança uma série de ataques descendentes esmagadores contra o alvo, causando <color=#2EB6FF>Dano Elétrico</color> muito alto.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "152100051": {
+                "Title": "Assistência Reativa: Sistema de Alarme"
+            },
+            "152100052": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1521014, Prop:1001}"
+            },
+            "152100053": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1521014, Prop:1002}"
+            },
+            "152100054": {
+                "Title": "Assistência Defensiva: Refeição Extra da Cadeia"
+            },
+            "152100055": {
+                "Description": "Multiplicador de Atordoamento de Defensiva Leve",
+                "Param": "{Skill:1521015, Prop:1002}"
+            },
+            "152100056": {
+                "Description": "Multiplicador de Atordoamento de Defensiva Pesada",
+                "Param": "{Skill:1521016, Prop:1002}"
+            },
+            "152100057": {
+                "Description": "Multiplicador de Atordoamento de Defensiva em Cadeia",
+                "Param": "{Skill:1521017, Prop:1002}"
+            },
+            "152100058": {
+                "Title": "Assistência Imediata: Parceiros de Crime"
+            },
+            "152100059": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1521018, Prop:1001}"
+            },
+            "152100060": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1521018, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1521001": {
+            "DamageValue": 7770,
+            "DamageGrowth": 710,
+            "DazeValue": 6030,
+            "DazeGrowth": 280
+        },
+        "1521002": {
+            "DamageValue": 13870,
+            "DamageGrowth": 1270,
+            "DazeValue": 9840,
+            "DazeGrowth": 450
+        },
+        "1521003": {
+            "DamageValue": 13510,
+            "DamageGrowth": 1230,
+            "DazeValue": 8740,
+            "DazeGrowth": 400
+        },
+        "1521004": {
+            "DamageValue": 25020,
+            "DamageGrowth": 2280,
+            "DazeValue": 15910,
+            "DazeGrowth": 730
+        },
+        "1521006": {
+            "DamageValue": 50420,
+            "DamageGrowth": 4590,
+            "DazeValue": 17970,
+            "DazeGrowth": 820
+        },
+        "1521007": {
+            "DamageValue": 5200,
+            "DamageGrowth": 480,
+            "DazeValue": 4400,
+            "DazeGrowth": 200
+        },
+        "1521008": {
+            "DamageValue": 20040,
+            "DamageGrowth": 1830,
+            "DazeValue": 10830,
+            "DazeGrowth": 500
+        },
+        "1521009": {
+            "DamageValue": 6680,
+            "DamageGrowth": 610,
+            "DazeValue": 3610,
+            "DazeGrowth": 170
+        },
+        "1521010": {
+            "DamageValue": 14730,
+            "DamageGrowth": 1340,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1521011": {
+            "DamageValue": 32450,
+            "DamageGrowth": 2950,
+            "DazeValue": 23660,
+            "DazeGrowth": 1080
+        },
+        "1521012": {
+            "DamageValue": 73780,
+            "DamageGrowth": 6710,
+            "DazeValue": 25860,
+            "DazeGrowth": 1180
+        },
+        "1521013": {
+            "DamageValue": 181100,
+            "DamageGrowth": 16470,
+            "DazeValue": 12110,
+            "DazeGrowth": 560
+        },
+        "1521014": {
+            "DamageValue": 7480,
+            "DamageGrowth": 680,
+            "DazeValue": 6330,
+            "DazeGrowth": 290
+        },
+        "1521015": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1521016": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1521017": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1521018": {
+            "DamageValue": 52060,
+            "DamageGrowth": 4740,
+            "DazeValue": 38720,
+            "DazeGrowth": 1760
+        },
+        "1521019": {
+            "DamageValue": 12680,
+            "DamageGrowth": 1160,
+            "DazeValue": 15510,
+            "DazeGrowth": 710
+        }
+    }
+}

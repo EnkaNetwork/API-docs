@@ -1,0 +1,437 @@
+{
+    "Name": "Cissia",
+    "ElementTypes": [
+        "Elec"
+    ],
+    "Specialty": {
+        "Id": 1,
+        "Name": "Attack"
+    },
+    "Talents": {
+        "1": {
+            "Title": "Traveler and Prey",
+            "Description": "The <color=#FFFFFF>Venom</color> gained upon entering the battlefield increases to 6. The DEF ignore from the <color=#FFFFFF>Core Passive</color> increases to 140% of its original value, and all squad members ignore 5% of the target's <color=#2EB6FF>Electric RES</color>. <color=#FFFFFF>Corrode Bone</color> DMG ignores 10% of the target's <color=#2EB6FF>Electric RES</color>.",
+            "Lore": "Scents, footsteps, the way someone's eyes shift... those are the \"clues\" that let me sort hunters from prey. I vanish before I'm hunted. I lower my head before I hunt. That's how I stay alive.\n\"Home\"? That's just something out of a storybook. The endless wild is my hunting cabin."
+        },
+        "2": {
+            "Title": "Hunger and Hard Truths",
+            "Description": "After a <color=#FFFFFF>Chain Attack: Gang Operation</color> or <color=#FFFFFF>Ultimate: Ophidiophobia</color> hits a Stunned enemy, gain an additional 3 <color=#FFFFFF>Venom</color>. <color=#FFFFFF>Basic Attack: Serpent's Kiss</color> deals 35% increased DMG.",
+            "Lore": "If I can eat my fill there, it's a good place. If someone gives me food, they're a good person. That's the easiest and most dependable rule in the world. And also, omelet with rice is divine. Even that last leftover bit on the spoon."
+        },
+        "3": {
+            "Title": "Chains and a Warm Nest",
+            "Description": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2",
+            "Lore": "Justice? Order? That kind of righteous, aboveboard stuff makes me shaky. What I know are the rules of the shadows — betrayal, lies, bowing low if it keeps me breathing. I don't mind being used as a tool, as long as the pay is a full meal and a warm corner to curl up in."
+        },
+        "4": {
+            "Title": "A Rogue's Resolve",
+            "Description": "When using an <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, gain 1 stack of <color=#FFFFFF>Decidedness</color>, stacking up to 3 times. When using <color=#FFFFFF>Basic Attack: Serpent's Kiss</color>, consume all <color=#FFFFFF>Decidedness</color>. Each stack consumed triggers 1 special instance of <color=#FFFFFF>Corrode Bone</color> that does not consume <color=#FFFFFF>Venom</color>. This <color=#FFFFFF>Corrode Bone</color> does not cause Daze.",
+            "Lore": "The collar around my neck is cold. The handcuffs are heavy. They remind me of the sins I can't wash away. But compared to those invisible rules and icy stares, this kind of restraint with a clear price tag actually puts me at ease... at least I know what it costs. And once I'm back in that little den with a couch and snacks, even the cold metal seems warm."
+        },
+        "5": {
+            "Title": "False Evidence and Fangs",
+            "Description": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2",
+            "Lore": "Memories scorched by blinding light, crimes spelled out in black and white... those \"marks\" were once all that defined me. But things are different now. I've learned to read, and I've learned to recognize the smell of a lie. When that familiar scent of a scheme creeps in again, I won't just walk into the cage like an idiot. This time, I'll be the one leaving \"marks\" — with my teeth, and I won't hold back."
+        },
+        "6": {
+            "Title": "Home and Sixth Street",
+            "Description": "Each time <color=#FFFFFF>Corrode Bone</color> is triggered, gain 1 stack of <color=#FFFFFF>Bone-Deep Corrosion</color>. When attacks from any squad member, other than <color=#FFFFFF>Corrode Bone</color>, hit an enemy, consume 1 stack of <color=#FFFFFF>Bone-Deep Corrosion</color> to trigger 1 special <color=#FFFFFF>Corrode Bone</color>. This instance of <color=#FFFFFF>Corrode Bone</color> cannot inflict Daze, and at most 1 stack of <color=#FFFFFF>Bone-Deep Corrosion</color> can be consumed every 3s.",
+            "Lore": "Once there's something I want to hold onto more than just \"staying alive,\" I really do turn stupid. If fate ever decides I have to die, that big, soft couch of yours better not have anyone else lying on it.\n\n\"Don't you dare forget me... or I'll bite you to death.\""
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Core Passive: Fatal Concoction",
+            "DescriptionByLevel": {
+                "1": "Upon entering the battlefield, gain 3 <color=#FFFFFF>Venom</color>. In Investigation Zone mode, this effect can trigger once every 180s.\nWhile possessing <color=#FFFFFF>Venom</color>, consume 1 <color=#FFFFFF>Venom</color> every 5s while in combat to trigger <color=#FFFFFF>Corrode Bone</color>, dealing <color=#2EB6FF>Electric DMG</color>.\nWith <color=#FFFFFF>Venom</color>, the squad's <color=#2EB6FF>Electric DMG</color> ignores <color=#2BAD00>3%</color> of enemy DEF. If initial Energy Regen is higher than 1.4, for every additional 0.12 above that threshold, an additional <color=#2BAD00>0.52%</color> of the enemy's DEF is ignored, up to a maximum of <color=#2BAD00>12.88%</color> of enemy DEF. This effect lasts until 30s after <color=#FFFFFF>Venom</color> is depleted.\n<color=#FFFFFF>Corrode Bone</color> deals additional <color=#2EB6FF>Electric DMG</color> equal to <color=#2BAD00>227%</color> of ATK.\nWhen there are 1/2 Electric characters in the squad, the Daze dealt by <color=#FFFFFF>Corrode Bone</color> increases by 40%/60%.\nWhen gaining <color=#FFFFFF>Venom</color>, every 1 excess point of <color=#FFFFFF>Venom</color> triggers <color=#FFFFFF>Corrode Bone</color> once.",
+                "2": "Upon entering the battlefield, gain 3 <color=#FFFFFF>Venom</color>. In Investigation Zone mode, this effect can trigger once every 180s.\nWhile possessing <color=#FFFFFF>Venom</color>, consume 1 <color=#FFFFFF>Venom</color> every 5s while in combat to trigger <color=#FFFFFF>Corrode Bone</color>, dealing <color=#2EB6FF>Electric DMG</color>.\nWith <color=#FFFFFF>Venom</color>, the squad's <color=#2EB6FF>Electric DMG</color> ignores <color=#2BAD00>3.5%</color> of enemy DEF. If initial Energy Regen is higher than 1.4, for every additional 0.12 above that threshold, an additional <color=#2BAD00>0.6%</color> of the enemy's DEF is ignored, up to a maximum of <color=#2BAD00>14.9%</color> of enemy DEF. This effect lasts until 30s after <color=#FFFFFF>Venom</color> is depleted.\n<color=#FFFFFF>Corrode Bone</color> deals additional <color=#2EB6FF>Electric DMG</color> equal to <color=#2BAD00>245%</color> of ATK.\nWhen there are 1/2 Electric characters in the squad, the Daze dealt by <color=#FFFFFF>Corrode Bone</color> increases by 40%/60%.\nWhen gaining <color=#FFFFFF>Venom</color>, every 1 excess point of <color=#FFFFFF>Venom</color> triggers <color=#FFFFFF>Corrode Bone</color> once.",
+                "3": "Upon entering the battlefield, gain 3 <color=#FFFFFF>Venom</color>. In Investigation Zone mode, this effect can trigger once every 180s.\nWhile possessing <color=#FFFFFF>Venom</color>, consume 1 <color=#FFFFFF>Venom</color> every 5s while in combat to trigger <color=#FFFFFF>Corrode Bone</color>, dealing <color=#2EB6FF>Electric DMG</color>.\nWith <color=#FFFFFF>Venom</color>, the squad's <color=#2EB6FF>Electric DMG</color> ignores <color=#2BAD00>4%</color> of enemy DEF. If initial Energy Regen is higher than 1.4, for every additional 0.12 above that threshold, an additional <color=#2BAD00>0.68%</color> of the enemy's DEF is ignored, up to a maximum of <color=#2BAD00>16.92%</color> of enemy DEF. This effect lasts until 30s after <color=#FFFFFF>Venom</color> is depleted.\n<color=#FFFFFF>Corrode Bone</color> deals additional <color=#2EB6FF>Electric DMG</color> equal to <color=#2BAD00>263%</color> of ATK.\nWhen there are 1/2 Electric characters in the squad, the Daze dealt by <color=#FFFFFF>Corrode Bone</color> increases by 40%/60%.\nWhen gaining <color=#FFFFFF>Venom</color>, every 1 excess point of <color=#FFFFFF>Venom</color> triggers <color=#FFFFFF>Corrode Bone</color> once.",
+                "4": "Upon entering the battlefield, gain 3 <color=#FFFFFF>Venom</color>. In Investigation Zone mode, this effect can trigger once every 180s.\nWhile possessing <color=#FFFFFF>Venom</color>, consume 1 <color=#FFFFFF>Venom</color> every 5s while in combat to trigger <color=#FFFFFF>Corrode Bone</color>, dealing <color=#2EB6FF>Electric DMG</color>.\nWith <color=#FFFFFF>Venom</color>, the squad's <color=#2EB6FF>Electric DMG</color> ignores <color=#2BAD00>4.5%</color> of enemy DEF. If initial Energy Regen is higher than 1.4, for every additional 0.12 above that threshold, an additional <color=#2BAD00>0.76%</color> of the enemy's DEF is ignored, up to a maximum of <color=#2BAD00>18.94%</color> of enemy DEF. This effect lasts until 30s after <color=#FFFFFF>Venom</color> is depleted.\n<color=#FFFFFF>Corrode Bone</color> deals additional <color=#2EB6FF>Electric DMG</color> equal to <color=#2BAD00>281%</color> of ATK.\nWhen there are 1/2 Electric characters in the squad, the Daze dealt by <color=#FFFFFF>Corrode Bone</color> increases by 40%/60%.\nWhen gaining <color=#FFFFFF>Venom</color>, every 1 excess point of <color=#FFFFFF>Venom</color> triggers <color=#FFFFFF>Corrode Bone</color> once.",
+                "5": "Upon entering the battlefield, gain 3 <color=#FFFFFF>Venom</color>. In Investigation Zone mode, this effect can trigger once every 180s.\nWhile possessing <color=#FFFFFF>Venom</color>, consume 1 <color=#FFFFFF>Venom</color> every 5s while in combat to trigger <color=#FFFFFF>Corrode Bone</color>, dealing <color=#2EB6FF>Electric DMG</color>.\nWith <color=#FFFFFF>Venom</color>, the squad's <color=#2EB6FF>Electric DMG</color> ignores <color=#2BAD00>5%</color> of enemy DEF. If initial Energy Regen is higher than 1.4, for every additional 0.12 above that threshold, an additional <color=#2BAD00>0.84%</color> of the enemy's DEF is ignored, up to a maximum of <color=#2BAD00>20.96%</color> of enemy DEF. This effect lasts until 30s after <color=#FFFFFF>Venom</color> is depleted.\n<color=#FFFFFF>Corrode Bone</color> deals additional <color=#2EB6FF>Electric DMG</color> equal to <color=#2BAD00>299%</color> of ATK.\nWhen there are 1/2 Electric characters in the squad, the Daze dealt by <color=#FFFFFF>Corrode Bone</color> increases by 40%/60%.\nWhen gaining <color=#FFFFFF>Venom</color>, every 1 excess point of <color=#FFFFFF>Venom</color> triggers <color=#FFFFFF>Corrode Bone</color> once.",
+                "6": "Upon entering the battlefield, gain 3 <color=#FFFFFF>Venom</color>. In Investigation Zone mode, this effect can trigger once every 180s.\nWhile possessing <color=#FFFFFF>Venom</color>, consume 1 <color=#FFFFFF>Venom</color> every 5s while in combat to trigger <color=#FFFFFF>Corrode Bone</color>, dealing <color=#2EB6FF>Electric DMG</color>.\nWith <color=#FFFFFF>Venom</color>, the squad's <color=#2EB6FF>Electric DMG</color> ignores <color=#2BAD00>5.5%</color> of enemy DEF. If initial Energy Regen is higher than 1.4, for every additional 0.12 above that threshold, an additional <color=#2BAD00>0.92%</color> of the enemy's DEF is ignored, up to a maximum of <color=#2BAD00>22.98%</color> of enemy DEF. This effect lasts until 30s after <color=#FFFFFF>Venom</color> is depleted.\n<color=#FFFFFF>Corrode Bone</color> deals additional <color=#2EB6FF>Electric DMG</color> equal to <color=#2BAD00>317%</color> of ATK.\nWhen there are 1/2 Electric characters in the squad, the Daze dealt by <color=#FFFFFF>Corrode Bone</color> increases by 40%/60%.\nWhen gaining <color=#FFFFFF>Venom</color>, every 1 excess point of <color=#FFFFFF>Venom</color> triggers <color=#FFFFFF>Corrode Bone</color> once.",
+                "7": "Upon entering the battlefield, gain 3 <color=#FFFFFF>Venom</color>. In Investigation Zone mode, this effect can trigger once every 180s.\nWhile possessing <color=#FFFFFF>Venom</color>, consume 1 <color=#FFFFFF>Venom</color> every 5s while in combat to trigger <color=#FFFFFF>Corrode Bone</color>, dealing <color=#2EB6FF>Electric DMG</color>.\nWith <color=#FFFFFF>Venom</color>, the squad's <color=#2EB6FF>Electric DMG</color> ignores <color=#2BAD00>6%</color> of enemy DEF. If initial Energy Regen is higher than 1.4, for every additional 0.12 above that threshold, an additional <color=#2BAD00>1%</color> of the enemy's DEF is ignored, up to a maximum of <color=#2BAD00>25%</color> of enemy DEF. This effect lasts until 30s after <color=#FFFFFF>Venom</color> is depleted.\n<color=#FFFFFF>Corrode Bone</color> deals additional <color=#2EB6FF>Electric DMG</color> equal to <color=#2BAD00>335%</color> of ATK.\nWhen there are 1/2 Electric characters in the squad, the Daze dealt by <color=#FFFFFF>Corrode Bone</color> increases by 40%/60%.\nWhen gaining <color=#FFFFFF>Venom</color>, every 1 excess point of <color=#FFFFFF>Venom</color> triggers <color=#FFFFFF>Corrode Bone</color> once."
+            }
+        },
+        "MathSkill": {
+            "Title": "Additional Ability: Festering Venom",
+            "Description": "When another character in your squad is a <color=#FFFFFF>Stun</color> character or shares the same attribute:\nWhile possessing <color=#FFFFFF>Venom</color>, increases all squad members' CRIT DMG by 40%, with Cissia gaining an additional 10%. The effect lasts until 30s after <color=#FFFFFF>Venom</color> is depleted."
+        },
+        "AwakenAbility": {},
+        "BaseProps": [
+            {
+                "30501": 0,
+                "12101": 0
+            },
+            {
+                "30501": 12,
+                "12101": 0
+            },
+            {
+                "30501": 12,
+                "12101": 25
+            },
+            {
+                "30501": 24,
+                "12101": 25
+            },
+            {
+                "30501": 24,
+                "12101": 50
+            },
+            {
+                "30501": 36,
+                "12101": 50
+            },
+            {
+                "30501": 36,
+                "12101": 75
+            }
+        ]
+    },
+    "SkillDescriptions": {
+        "0": {
+            "152100001": {
+                "Title": "Basic Attack: Tongue Flick",
+                "Description": "Press <IconMap:Icon_Normal> to activate:\nLaunch up to four attacks forward, dealing <color=#2EB6FF>Electric DMG</color>.\nWhen the 4th hit lands, gain 2 points of <color=#FFFFFF>Venom</color>. Hitting a Stunned enemy grants an additional 1 point of <color=#FFFFFF>Venom</color>."
+            },
+            "152100002": {
+                "Title": "Basic Attack: Serpent's Kiss",
+                "Description": "With <color=#FFFFFF>Serpentine Shadow</color>, hold <IconMap:Icon_Normal> to launch:\nCissia leaps into the air and locks onto a target, then slams down, dealing <color=#2EB6FF>Electric DMG</color> to enemies in the area.\nWhile locking on, continue to hold <IconMap:Icon_Normal> and drag the {LAYOUT_CONSOLECONTROLLER#stick}{LAYOUT_FALLBACK#joystick} to extend the lock-on duration and freely control the landing position.\nFor every 6 points of <color=#FFFFFF>Venom</color> gained, gain 1 stack of <color=#FFFFFF>Serpentine Shadow</color>, stacking up to 3 times.\nUpon entering the battlefield, gain 1 stack of <color=#FFFFFF>Serpentine Shadow</color>.\nUsing this skill consumes 1 stack of <color=#FFFFFF>Serpentine Shadow</color>.\nUpon hitting an enemy, all <color=#FFFFFF>Venom</color> is consumed to trigger <color=#FFFFFF>Corrode Bone</color>.\nUpon activating this skill, a <color=#FFFFFF>Quick Assist</color> is triggered.\nCharacter is invulnerable while using this skill."
+            },
+            "152100003": {
+                "Title": "Corrode Bone",
+                "Description": "Deal <color=#2EB6FF>Electric DMG</color> to nearby enemies.\nEach trigger increases CRIT Rate by 6% for 15s, stacking up to 3 times. Repeated triggers refresh the duration."
+            },
+            "152100015": {
+                "Title": "Basic Attack: Tongue Flick"
+            },
+            "152100016": {
+                "Description": "1st-Hit DMG Multiplier",
+                "Param": "{Skill:1521001, Prop:1001}"
+            },
+            "152100017": {
+                "Description": "2nd-Hit DMG Multiplier",
+                "Param": "{Skill:1521002, Prop:1001}"
+            },
+            "152100018": {
+                "Description": "3rd-Hit DMG Multiplier",
+                "Param": "{Skill:1521003, Prop:1001}"
+            },
+            "152100019": {
+                "Description": "4th-Hit DMG Multiplier",
+                "Param": "{Skill:1521004, Prop:1001}"
+            },
+            "152100020": {
+                "Description": "1st-Hit Daze Multiplier",
+                "Param": "{Skill:1521001, Prop:1002}"
+            },
+            "152100021": {
+                "Description": "2nd-Hit Daze Multiplier",
+                "Param": "{Skill:1521002, Prop:1002}"
+            },
+            "152100022": {
+                "Description": "3rd-Hit Daze Multiplier",
+                "Param": "{Skill:1521003, Prop:1002}"
+            },
+            "152100023": {
+                "Description": "4th-Hit Daze Multiplier",
+                "Param": "{Skill:1521004, Prop:1002}"
+            },
+            "152100024": {
+                "Title": "Basic Attack: Serpent's Kiss"
+            },
+            "152100025": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1521006, Prop:1001}"
+            },
+            "152100026": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1521006, Prop:1002}"
+            },
+            "152100027": {
+                "Title": "Corrode Bone"
+            },
+            "152100028": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1521019, Prop:1001}"
+            },
+            "152100029": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1521019, Prop:1002}"
+            }
+        },
+        "1": {
+            "152100004": {
+                "Title": "Special Attack: Bared Fangs",
+                "Description": "Press <IconMap:Icon_Special> to activate:\nLaunches a long-range snake bite forward, dealing <color=#2EB6FF>Electric DMG</color>.\nAnti-Interrupt level is increased while using this skill."
+            },
+            "152100005": {
+                "Title": "EX Special Attack: Venomous Bite",
+                "Description": "With enough energy, press or hold <IconMap:Icon_SpecialReady> to activate:\nUnleash multiple long-range snake bites forward, dealing <color=#2EB6FF>Electric DMG</color>.\nGrants 5 Energy when the move is used.\nWhen activating by holding, consumes additional Energy. For every 20 additional Energy consumed, unleash 1 extra strike that deals <color=#2EB6FF>Electric DMG</color>, up to a maximum of 60 additional Energy.\nAfter activating by holding, gain 3 <color=#FFFFFF>Venom</color>. For every additional 20 Energy consumed while holding, gain 1 more <color=#FFFFFF>Venom</color>.\nAfter using this skill, it can be immediately followed up with the 4th hit of <color=#FFFFFF>Basic Attack: Tongue Flick</color>.\nA <color=#FFFFFF>Quick Assist</color> is triggered when this skill hits an enemy.\nCharacter is invulnerable while using this skill."
+            },
+            "152100030": {
+                "Title": "Special Attack: Bared Fangs"
+            },
+            "152100031": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1521007, Prop:1001}"
+            },
+            "152100032": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1521007, Prop:1002}"
+            },
+            "152100033": {
+                "Title": "EX Special Attack: Venomous Bite"
+            },
+            "152100034": {
+                "Description": "DMG Multiplier",
+                "Param": "{{Skill:1521008, Prop:1001}*3+{Skill:1521009, Prop:1001}}"
+            },
+            "152100035": {
+                "Description": "Daze Multiplier",
+                "Param": "{{Skill:1521008, Prop:1002}*3+{Skill:1521009, Prop:1002}}"
+            },
+            "152100036": {
+                "Description": "Additional Strike DMG Multiplier",
+                "Param": "{Skill:1521008, Prop:1001}"
+            },
+            "152100037": {
+                "Description": "Additional Strike Daze Multiplier",
+                "Param": "{Skill:1521008, Prop:1002}"
+            },
+            "152100038": {
+                "Description": "Energy Cost",
+                "Param": "65"
+            }
+        },
+        "2": {
+            "152100006": {
+                "Title": "Dodge: Slither",
+                "Description": "Press <IconMap:Icon_Evade> to activate:\nA quick dash dodge.\nCharacter is invulnerable while using this skill."
+            },
+            "152100007": {
+                "Title": "Dash Attack: Bite Mark",
+                "Description": "Press <IconMap:Icon_Normal> during a dodge to activate:\nDash forward with a swift slash, dealing <color=#2EB6FF>Electric DMG</color>."
+            },
+            "152100008": {
+                "Title": "Dodge Counter: Bite Back",
+                "Description": "Press <IconMap:Icon_Normal> during a <color=#FFFFFF>Perfect Dodge</color> to activate:\nLeap forward and perform a sweeping attack upon landing, dealing <color=#2EB6FF>Electric DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "152100039": {
+                "Title": "Dash Attack: Bite Mark"
+            },
+            "152100040": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1521010, Prop:1001}"
+            },
+            "152100041": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1521010, Prop:1002}"
+            },
+            "152100042": {
+                "Title": "Dodge Counter: Bite Back"
+            },
+            "152100043": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1521011, Prop:1001}"
+            },
+            "152100044": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1521011, Prop:1002}"
+            }
+        },
+        "3": {
+            "152100009": {
+                "Title": "Chain Attack: Gang Operation",
+                "Description": "When a <color=#FFFFFF>Chain Attack</color> is triggered, select the character to activate:\nLaunch multiple attacks ahead, dealing massive <color=#2EB6FF>Electric DMG</color>.\nAfter using this skill, gain 3 <color=#FFFFFF>Venom</color>.\nA <color=#FFFFFF>Quick Assist</color> is triggered when this skill hits an enemy.\nCharacter is invulnerable while using this skill."
+            },
+            "152100010": {
+                "Title": "Ultimate: Ophidiophobia",
+                "Description": "When Decibel Rating is at <color=#FFFFFF>Maximum</color>, press <IconMap:Icon_UltimateReady> to activate:\nDeliver a downward smash in front, dealing massive <color=#2EB6FF>Electric DMG</color>.\nAfter using this skill, obtain 3 <color=#FFFFFF>Venom</color>.\nAfter using this skill, activate <color=#FFFFFF>Ether Veil: Cold-Blooded</color>, lasting 30s. All squad members' CRIT DMG increases by 5% for the duration.\nRe-activating <color=#FFFFFF>Ether Veil: Cold-Blooded</color> a second time will first deactivate the active <color=#FFFFFF>Ether Veil: Cold-Blooded</color>.\nA <color=#FFFFFF>Quick Assist</color> is triggered when this skill hits an enemy.\nCharacter is invulnerable while using this skill."
+            },
+            "152100045": {
+                "Title": "Chain Attack: Gang Operation"
+            },
+            "152100046": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1521012, Prop:1001}"
+            },
+            "152100047": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1521012, Prop:1002}"
+            },
+            "152100048": {
+                "Title": "Ultimate: Ophidiophobia"
+            },
+            "152100049": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1521013, Prop:1001}"
+            },
+            "152100050": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1521013, Prop:1002}"
+            }
+        },
+        "6": {
+            "152100012": {
+                "Title": "Quick Assist: Alarm System",
+                "Description": "When the active character is launched, press <IconMap:Icon_Switch> to activate:\nLeaps forward and performs a sweeping attack upon landing, dealing <color=#2EB6FF>Electric DMG</color>.\nDuring this skill, you can quickly chain into <color=#FFFFFF>Special Attack: Bared Fangs</color>, <color=#FFFFFF>EX Special Attack: Venomous Bite</color>, and <color=#FFFFFF>Basic Attack: Serpent's Kiss</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "152100013": {
+                "Title": "Defensive Assist: Extra Prison Rations",
+                "Description": "When the on-field character is about to be attacked, press <IconMap:Icon_Switch> to activate:\nParries the enemy's attack, dealing massive Daze.\nCharacter is invulnerable while using this skill."
+            },
+            "152100014": {
+                "Title": "Assist Follow-Up: Partners in Crime",
+                "Description": "Press <IconMap:Icon_Normal> after a <color=#FFFFFF>Defensive Assist</color> to activate:\nUnleash a series of downward smash attacks, dealing <color=#2EB6FF>Electric DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "152100051": {
+                "Title": "Quick Assist: Alarm System"
+            },
+            "152100052": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1521014, Prop:1001}"
+            },
+            "152100053": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1521014, Prop:1002}"
+            },
+            "152100054": {
+                "Title": "Defensive Assist: Extra Prison Rations"
+            },
+            "152100055": {
+                "Description": "Light Defensive Daze Multiplier",
+                "Param": "{Skill:1521015, Prop:1002}"
+            },
+            "152100056": {
+                "Description": "Heavy Defensive Daze Multiplier",
+                "Param": "{Skill:1521016, Prop:1002}"
+            },
+            "152100057": {
+                "Description": "Chain Defensive Daze Multiplier",
+                "Param": "{Skill:1521017, Prop:1002}"
+            },
+            "152100058": {
+                "Title": "Assist Follow-Up: Partners in Crime"
+            },
+            "152100059": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1521018, Prop:1001}"
+            },
+            "152100060": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1521018, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1521001": {
+            "DamageValue": 7770,
+            "DamageGrowth": 710,
+            "DazeValue": 6030,
+            "DazeGrowth": 280
+        },
+        "1521002": {
+            "DamageValue": 13870,
+            "DamageGrowth": 1270,
+            "DazeValue": 9840,
+            "DazeGrowth": 450
+        },
+        "1521003": {
+            "DamageValue": 13510,
+            "DamageGrowth": 1230,
+            "DazeValue": 8740,
+            "DazeGrowth": 400
+        },
+        "1521004": {
+            "DamageValue": 25020,
+            "DamageGrowth": 2280,
+            "DazeValue": 15910,
+            "DazeGrowth": 730
+        },
+        "1521006": {
+            "DamageValue": 50420,
+            "DamageGrowth": 4590,
+            "DazeValue": 17970,
+            "DazeGrowth": 820
+        },
+        "1521007": {
+            "DamageValue": 5200,
+            "DamageGrowth": 480,
+            "DazeValue": 4400,
+            "DazeGrowth": 200
+        },
+        "1521008": {
+            "DamageValue": 20040,
+            "DamageGrowth": 1830,
+            "DazeValue": 10830,
+            "DazeGrowth": 500
+        },
+        "1521009": {
+            "DamageValue": 6680,
+            "DamageGrowth": 610,
+            "DazeValue": 3610,
+            "DazeGrowth": 170
+        },
+        "1521010": {
+            "DamageValue": 14730,
+            "DamageGrowth": 1340,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1521011": {
+            "DamageValue": 32450,
+            "DamageGrowth": 2950,
+            "DazeValue": 23660,
+            "DazeGrowth": 1080
+        },
+        "1521012": {
+            "DamageValue": 73780,
+            "DamageGrowth": 6710,
+            "DazeValue": 25860,
+            "DazeGrowth": 1180
+        },
+        "1521013": {
+            "DamageValue": 181100,
+            "DamageGrowth": 16470,
+            "DazeValue": 12110,
+            "DazeGrowth": 560
+        },
+        "1521014": {
+            "DamageValue": 7480,
+            "DamageGrowth": 680,
+            "DazeValue": 6330,
+            "DazeGrowth": 290
+        },
+        "1521015": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1521016": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1521017": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1521018": {
+            "DamageValue": 52060,
+            "DamageGrowth": 4740,
+            "DazeValue": 38720,
+            "DazeGrowth": 1760
+        },
+        "1521019": {
+            "DamageValue": 12680,
+            "DamageGrowth": 1160,
+            "DazeValue": 15510,
+            "DazeGrowth": 710
+        }
+    }
+}

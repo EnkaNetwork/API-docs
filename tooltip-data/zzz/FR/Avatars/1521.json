@@ -1,0 +1,437 @@
+{
+    "Name": "Cissia",
+    "ElementTypes": [
+        "Elec"
+    ],
+    "Specialty": {
+        "Id": 1,
+        "Name": "Attaque"
+    },
+    "Talents": {
+        "1": {
+            "Title": "Vagabonde et proie",
+            "Description": "Le nombre de points de <color=#FFFFFF>Venin</color> obtenus en entrant sur le champ de bataille monte à 6. La DÉF ignorée par le <color=#FFFFFF>passif principal</color> augmente à 140 % de sa valeur d'origine, et les DGT de tous les personnages de l'escouade ignorent 5 % de la <color=#2EB6FF>RÉS électrique</color> de la cible. Les DGT d'<color=#FFFFFF>Os corrodé</color> ignorent 10 % de la <color=#2EB6FF>RÉS électrique</color> de la cible.",
+            "Lore": "L'odeur, la démarche, la manière de détourner les yeux... Tout ça sont les indices qui me permettent de différencier les chasseurs des proies. Avant qu'on me prenne en chasse, je disparais. Avant de partir en chasse, je baisse la tête. C'est ainsi que je reste en vie.\n« Un foyer » ? Ça n'existe que dans les contes pour enfants. Les immensités sauvages sont mon refuge de chasse."
+        },
+        "2": {
+            "Title": "Faim et dures vérités",
+            "Description": "Lorsque <color=#FFFFFF>Enchaînement : Bande organisée</color> ou <color=#FFFFFF>Ultime : Ophiophobie</color> touche un ennemi étourdi, Cissia gagne 3 points de <color=#FFFFFF>Venin</color> supplémentaires. Les DGT d'<color=#FFFFFF>Attaque normale : Baiser du serpent</color> augmentent de 35 %.",
+            "Lore": "Si je peux y trouver à manger, c'est un bon endroit. Si quelqu'un me donne à manger, c'est une bonne personne. C'est la règle la plus simple et la plus fiable de l'univers. Et aussi, l'omelette avec du riz est un mets divin. Jusqu'à la dernière bouchée sur la cuillère."
+        },
+        "3": {
+            "Title": "Des chaînes et un nid douillet",
+            "Description": "Niv. d'<color=#FFFFFF>attaque normale</color>, d'<color=#FFFFFF>esquive</color>, de <color=#FFFFFF>soutien</color>, d'<color=#FFFFFF>attaque spéciale</color> et d'<color=#FFFFFF>enchaînement</color> +2",
+            "Lore": "La justice ? L'ordre ? Ce genre de concept pompeux et propre sur soi me donne la nausée. Moi, ce que je connais, ce sont les règles de l'ombre : la trahison, les mensonges, les courbettes si ça me permet de rester en vie. Ça ne me dérange pas d'être utilisée comme un outil, tant que la paie comprend un bon repas et un coin chaud où me recroqueviller."
+        },
+        "4": {
+            "Title": "La résolution d'une rebelle",
+            "Description": "Lorsqu'une <color=#FFFFFF>attaque spéciale EX</color>, un <color=#FFFFFF>enchaînement</color> ou un <color=#FFFFFF>ultime</color> est utilisé, Cissia gagne 1 cumul de <color=#FFFFFF>Décidée</color>, cumulable jusqu'à 3 fois. Lorsque <color=#FFFFFF>Attaque normale : Baiser du serpent</color> est utilisée, Cissia consomme tous les cumuls de <color=#FFFFFF>Décidée</color>. Chaque cumul consommé déclenche <color=#FFFFFF>Os corrodé</color> 1 fois sans consommer de <color=#FFFFFF>Venin</color>. Cet effet <color=#FFFFFF>Os corrodé</color> n'inflige pas de confusion.",
+            "Lore": "Le collier autour de mon cou est froid. Mes menottes sont lourdes. Ils me rappellent les péchés que je ne peux pas effacer. Mais comparées à ces règles invisibles et ces regards glacials, en fait ces entraves avec un prix clairement affiché me rassurent... au moins je sais ce qu'elles coûtent. Et une fois de retour dans mon petit repaire avec un canapé et des encas, même la froideur du métal me réchauffe le cœur."
+        },
+        "5": {
+            "Title": "Fausses preuves et crochets",
+            "Description": "Niv. d'<color=#FFFFFF>attaque normale</color>, d'<color=#FFFFFF>esquive</color>, de <color=#FFFFFF>soutien</color>, d'<color=#FFFFFF>attaque spéciale</color> et d'<color=#FFFFFF>enchaînement</color> +2",
+            "Lore": "Des souvenirs cramés par une lumière aveuglante, des crimes écrits noir sur blanc... ces « marques » étaient autrefois tout ce qui me définissait. Mais les choses ont changé maintenant. J'ai appris à lire, et j'ai appris à reconnaître l'odeur d'un mensonge. Quand le parfum familier d'une machination se glissera à nouveau, je ne marcherai pas tout droit dans la cage comme une idiote. Cette fois, c'est moi qui laisserai des « marques », avec mes crochets, et je ne me retiendrai pas."
+        },
+        "6": {
+            "Title": "Un foyer et la Sixième rue",
+            "Description": "À chaque fois qu'<color=#FFFFFF>Os corrodé</color> est déclenché, vous gagnez 1 cumul de <color=#FFFFFF>Corrosion jusqu'à l'os</color>. Lorsque les attaques de n'importe quel personnage de l'escouade, à l'exception d'<color=#FFFFFF>Os corrodé</color>, touchent un ennemi, 1 cumul de <color=#FFFFFF>Corrosion jusqu'à l'os</color> est consommé pour lancer un effet spécial d'<color=#FFFFFF>Os corrodé</color>. Cet effet d'<color=#FFFFFF>Os corrodé</color> n'inflige pas de confusion et ne peut consommer 1 cumul de <color=#FFFFFF>Corrosion jusqu'à l'os</color> qu'une fois toutes les 3 s.",
+            "Lore": "Dès qu'il y a quelque chose que je veux protéger davantage que la simple envie de rester en vie, mon cerveau s'éteint complètement. Si je dois mourir un jour, il y a intérêt à ce que ton immense canapé douillet ne revienne pas à quelqu'un d'autre.\n\n« Ne t'avise pas de m'oublier... ou je te mordrai jusqu'à ce que mort s'ensuive. »"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passif principal : Concoction fatale",
+            "DescriptionByLevel": {
+                "1": "En entrant sur le champ de bataille, gagne 3 points de <color=#FFFFFF>Venin</color>. En mode Expédition, cet effet peut être déclenché une fois toutes les 180 s.\nLorsque Cissia possède du <color=#FFFFFF>Venin</color>, elle consomme 1 points de <color=#FFFFFF>Venin</color> toutes les 5 secondes en combat pour déclencher <color=#FFFFFF>Os corrodé</color>, infligeant des <color=#2EB6FF>DGT électriques</color>.\nAvec du <color=#FFFFFF>Venin</color>, les <color=#2EB6FF>DGT électriques</color> de tous les personnages de l'escouade ignorent <color=#2BAD00>3 %</color> de la DÉF ennemie. Lorsque la récupération d'énergie initiale dépasse 1,4 pt/s, pour chaque 0,12 pt/s supplémentaires, <color=#2BAD00>0,52 %</color> de la DÉF ennemie supplémentaire est ignoré, jusqu'à un maximum de <color=#2BAD00>12,88 %</color> de la DÉF ennemie. L'effet est maintenu jusqu'à 30 s après l'épuisement du <color=#FFFFFF>Venin</color>.\n<color=#FFFFFF>Os corrodé</color> inflige des <color=#2EB6FF>DGT électriques</color> supplémentaires équivalents à <color=#2BAD00>227 %</color> de l'ATQ.\nLorsqu'il y a 1/2 personnages électriques dans l'escouade, la confusion infligée par <color=#FFFFFF>Os corrodé</color> augmente respectivement de 40 %/60 %.\nLorsque vous obtenez du <color=#FFFFFF>Venin</color>, chaque point de <color=#FFFFFF>Venin</color> en excès déclenche <color=#FFFFFF>Os corrodé</color> une fois.",
+                "2": "En entrant sur le champ de bataille, gagne 3 points de <color=#FFFFFF>Venin</color>. En mode Expédition, cet effet peut être déclenché une fois toutes les 180 s.\nLorsque Cissia possède du <color=#FFFFFF>Venin</color>, elle consomme 1 points de <color=#FFFFFF>Venin</color> toutes les 5 secondes en combat pour déclencher <color=#FFFFFF>Os corrodé</color>, infligeant des <color=#2EB6FF>DGT électriques</color>.\nAvec du <color=#FFFFFF>Venin</color>, les <color=#2EB6FF>DGT électriques</color> de tous les personnages de l'escouade ignorent <color=#2BAD00>3,5 %</color> de la DÉF ennemie. Lorsque la récupération d'énergie initiale dépasse 1,4 pt/s, pour chaque 0,12 pt/s supplémentaires, <color=#2BAD00>0,6 %</color> de la DÉF ennemie supplémentaire est ignoré, jusqu'à un maximum de <color=#2BAD00>14,9 %</color> de la DÉF ennemie. L'effet est maintenu jusqu'à 30 s après l'épuisement du <color=#FFFFFF>Venin</color>.\n<color=#FFFFFF>Os corrodé</color> inflige des <color=#2EB6FF>DGT électriques</color> supplémentaires équivalents à <color=#2BAD00>245 %</color> de l'ATQ.\nLorsqu'il y a 1/2 personnages électriques dans l'escouade, la confusion infligée par <color=#FFFFFF>Os corrodé</color> augmente respectivement de 40 %/60 %.\nLorsque vous obtenez du <color=#FFFFFF>Venin</color>, chaque point de <color=#FFFFFF>Venin</color> en excès déclenche <color=#FFFFFF>Os corrodé</color> une fois.",
+                "3": "En entrant sur le champ de bataille, gagne 3 points de <color=#FFFFFF>Venin</color>. En mode Expédition, cet effet peut être déclenché une fois toutes les 180 s.\nLorsque Cissia possède du <color=#FFFFFF>Venin</color>, elle consomme 1 points de <color=#FFFFFF>Venin</color> toutes les 5 secondes en combat pour déclencher <color=#FFFFFF>Os corrodé</color>, infligeant des <color=#2EB6FF>DGT électriques</color>.\nAvec du <color=#FFFFFF>Venin</color>, les <color=#2EB6FF>DGT électriques</color> de tous les personnages de l'escouade ignorent <color=#2BAD00>4 %</color> de la DÉF ennemie. Lorsque la récupération d'énergie initiale dépasse 1,4 pt/s, pour chaque 0,12 pt/s supplémentaires, <color=#2BAD00>0,68 %</color> de la DÉF ennemie supplémentaire est ignoré, jusqu'à un maximum de <color=#2BAD00>16,92 %</color> de la DÉF ennemie. L'effet est maintenu jusqu'à 30 s après l'épuisement du <color=#FFFFFF>Venin</color>.\n<color=#FFFFFF>Os corrodé</color> inflige des <color=#2EB6FF>DGT électriques</color> supplémentaires équivalents à <color=#2BAD00>263 %</color> de l'ATQ.\nLorsqu'il y a 1/2 personnages électriques dans l'escouade, la confusion infligée par <color=#FFFFFF>Os corrodé</color> augmente respectivement de 40 %/60 %.\nLorsque vous obtenez du <color=#FFFFFF>Venin</color>, chaque point de <color=#FFFFFF>Venin</color> en excès déclenche <color=#FFFFFF>Os corrodé</color> une fois.",
+                "4": "En entrant sur le champ de bataille, gagne 3 points de <color=#FFFFFF>Venin</color>. En mode Expédition, cet effet peut être déclenché une fois toutes les 180 s.\nLorsque Cissia possède du <color=#FFFFFF>Venin</color>, elle consomme 1 points de <color=#FFFFFF>Venin</color> toutes les 5 secondes en combat pour déclencher <color=#FFFFFF>Os corrodé</color>, infligeant des <color=#2EB6FF>DGT électriques</color>.\nAvec du <color=#FFFFFF>Venin</color>, les <color=#2EB6FF>DGT électriques</color> de tous les personnages de l'escouade ignorent <color=#2BAD00>4,5 %</color> de la DÉF ennemie. Lorsque la récupération d'énergie initiale dépasse 1,4 pt/s, pour chaque 0,12 pt/s supplémentaires, <color=#2BAD00>0,76 %</color> de la DÉF ennemie supplémentaire est ignoré, jusqu'à un maximum de <color=#2BAD00>18,94 %</color> de la DÉF ennemie. L'effet est maintenu jusqu'à 30 s après l'épuisement du <color=#FFFFFF>Venin</color>.\n<color=#FFFFFF>Os corrodé</color> inflige des <color=#2EB6FF>DGT électriques</color> supplémentaires équivalents à <color=#2BAD00>281 %</color> de l'ATQ.\nLorsqu'il y a 1/2 personnages électriques dans l'escouade, la confusion infligée par <color=#FFFFFF>Os corrodé</color> augmente respectivement de 40 %/60 %.\nLorsque vous obtenez du <color=#FFFFFF>Venin</color>, chaque point de <color=#FFFFFF>Venin</color> en excès déclenche <color=#FFFFFF>Os corrodé</color> une fois.",
+                "5": "En entrant sur le champ de bataille, gagne 3 points de <color=#FFFFFF>Venin</color>. En mode Expédition, cet effet peut être déclenché une fois toutes les 180 s.\nLorsque Cissia possède du <color=#FFFFFF>Venin</color>, elle consomme 1 points de <color=#FFFFFF>Venin</color> toutes les 5 secondes en combat pour déclencher <color=#FFFFFF>Os corrodé</color>, infligeant des <color=#2EB6FF>DGT électriques</color>.\nAvec du <color=#FFFFFF>Venin</color>, les <color=#2EB6FF>DGT électriques</color> de tous les personnages de l'escouade ignorent <color=#2BAD00>5 %</color> de la DÉF ennemie. Lorsque la récupération d'énergie initiale dépasse 1,4 pt/s, pour chaque 0,12 pt/s supplémentaires, <color=#2BAD00>0,84 %</color> de la DÉF ennemie supplémentaire est ignoré, jusqu'à un maximum de <color=#2BAD00>20,96 %</color> de la DÉF ennemie. L'effet est maintenu jusqu'à 30 s après l'épuisement du <color=#FFFFFF>Venin</color>.\n<color=#FFFFFF>Os corrodé</color> inflige des <color=#2EB6FF>DGT électriques</color> supplémentaires équivalents à <color=#2BAD00>299 %</color> de l'ATQ.\nLorsqu'il y a 1/2 personnages électriques dans l'escouade, la confusion infligée par <color=#FFFFFF>Os corrodé</color> augmente respectivement de 40 %/60 %.\nLorsque vous obtenez du <color=#FFFFFF>Venin</color>, chaque point de <color=#FFFFFF>Venin</color> en excès déclenche <color=#FFFFFF>Os corrodé</color> une fois.",
+                "6": "En entrant sur le champ de bataille, gagne 3 points de <color=#FFFFFF>Venin</color>. En mode Expédition, cet effet peut être déclenché une fois toutes les 180 s.\nLorsque Cissia possède du <color=#FFFFFF>Venin</color>, elle consomme 1 points de <color=#FFFFFF>Venin</color> toutes les 5 secondes en combat pour déclencher <color=#FFFFFF>Os corrodé</color>, infligeant des <color=#2EB6FF>DGT électriques</color>.\nAvec du <color=#FFFFFF>Venin</color>, les <color=#2EB6FF>DGT électriques</color> de tous les personnages de l'escouade ignorent <color=#2BAD00>5,5 %</color> de la DÉF ennemie. Lorsque la récupération d'énergie initiale dépasse 1,4 pt/s, pour chaque 0,12 pt/s supplémentaires, <color=#2BAD00>0,92 %</color> de la DÉF ennemie supplémentaire est ignoré, jusqu'à un maximum de <color=#2BAD00>22,98 %</color> de la DÉF ennemie. L'effet est maintenu jusqu'à 30 s après l'épuisement du <color=#FFFFFF>Venin</color>.\n<color=#FFFFFF>Os corrodé</color> inflige des <color=#2EB6FF>DGT électriques</color> supplémentaires équivalents à <color=#2BAD00>317 %</color> de l'ATQ.\nLorsqu'il y a 1/2 personnages électriques dans l'escouade, la confusion infligée par <color=#FFFFFF>Os corrodé</color> augmente respectivement de 40 %/60 %.\nLorsque vous obtenez du <color=#FFFFFF>Venin</color>, chaque point de <color=#FFFFFF>Venin</color> en excès déclenche <color=#FFFFFF>Os corrodé</color> une fois.",
+                "7": "En entrant sur le champ de bataille, gagne 3 points de <color=#FFFFFF>Venin</color>. En mode Expédition, cet effet peut être déclenché une fois toutes les 180 s.\nLorsque Cissia possède du <color=#FFFFFF>Venin</color>, elle consomme 1 points de <color=#FFFFFF>Venin</color> toutes les 5 secondes en combat pour déclencher <color=#FFFFFF>Os corrodé</color>, infligeant des <color=#2EB6FF>DGT électriques</color>.\nAvec du <color=#FFFFFF>Venin</color>, les <color=#2EB6FF>DGT électriques</color> de tous les personnages de l'escouade ignorent <color=#2BAD00>6 %</color> de la DÉF ennemie. Lorsque la récupération d'énergie initiale dépasse 1,4 pt/s, pour chaque 0,12 pt/s supplémentaires, <color=#2BAD00>1 %</color> de la DÉF ennemie supplémentaire est ignoré, jusqu'à un maximum de <color=#2BAD00>25 %</color> de la DÉF ennemie. L'effet est maintenu jusqu'à 30 s après l'épuisement du <color=#FFFFFF>Venin</color>.\n<color=#FFFFFF>Os corrodé</color> inflige des <color=#2EB6FF>DGT électriques</color> supplémentaires équivalents à <color=#2BAD00>335 %</color> de l'ATQ.\nLorsqu'il y a 1/2 personnages électriques dans l'escouade, la confusion infligée par <color=#FFFFFF>Os corrodé</color> augmente respectivement de 40 %/60 %.\nLorsque vous obtenez du <color=#FFFFFF>Venin</color>, chaque point de <color=#FFFFFF>Venin</color> en excès déclenche <color=#FFFFFF>Os corrodé</color> une fois."
+            }
+        },
+        "MathSkill": {
+            "Title": "Capacité supplémentaire : Venin purulent",
+            "Description": "Lorsqu'il y a un autre personnage <color=#FFFFFF>Confusion</color> ou du même attribut que Cissia dans l'escouade :\nLorsque Cissia possède du <color=#FFFFFF>Venin</color>, les DGT CRIT de tous les personnages de l'escouade augmentent de 40 %, et Cissia bénéficie d'une augmentation supplémentaire de 10 %. L'effet persiste 30 s après l'épuisement du <color=#FFFFFF>Venin</color>."
+        },
+        "AwakenAbility": {},
+        "BaseProps": [
+            {
+                "30501": 0,
+                "12101": 0
+            },
+            {
+                "30501": 12,
+                "12101": 0
+            },
+            {
+                "30501": 12,
+                "12101": 25
+            },
+            {
+                "30501": 24,
+                "12101": 25
+            },
+            {
+                "30501": 24,
+                "12101": 50
+            },
+            {
+                "30501": 36,
+                "12101": 50
+            },
+            {
+                "30501": 36,
+                "12101": 75
+            }
+        ]
+    },
+    "SkillDescriptions": {
+        "0": {
+            "152100001": {
+                "Title": "Attaque normale : Langue acérée",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pour activer :\nAssène jusqu'à quatre attaques frontales, infligeant des <color=#2EB6FF>DGT électriques</color>.\nLorsque le 4e coup fait mouche, vous gagnez 2 points de <color=#FFFFFF>Venin</color>. Toucher un ennemi étourdi accorde 1 point de <color=#FFFFFF>Venin</color> supplémentaire."
+            },
+            "152100002": {
+                "Title": "Attaque normale : Baiser du serpent",
+                "Description": "Lorsque vous disposez d'<color=#FFFFFF>Ombre serpentine</color>, maintenez <IconMap:Icon_Normal> enfoncé pour activer :\nCissia bondit dans les airs et verrouille une cible, puis s'abat sur le sol, infligeant des <color=#2EB6FF>DGT électriques</color> aux ennemis dans la zone.\nLors du verrouillage de la cible, continuez à maintenir <IconMap:Icon_Normal> enfoncé et déplacez le {LAYOUT_CONSOLECONTROLLER#joystick}{LAYOUT_FALLBACK#stick} pour prolonger la durée du verrouillage et ajuster librement le point d'impact.\nPour chaque 6 points de <color=#FFFFFF>Venin</color> obtenus, vous gagnez 1 cumul d'<color=#FFFFFF>Ombre serpentine</color>, cumulable jusqu'à 3 fois.\nEn entrant sur le champ de bataille, vous gagnez 1 cumul d'<color=#FFFFFF>Ombre serpentine</color>.\n1 cumul d'<color=#FFFFFF>Ombre serpentine</color> est consommé à l'activation de la compétence.\nLorsque vous touchez un ennemi, tous les points de <color=#FFFFFF>Venin</color> sont consommés pour infliger <color=#FFFFFF>Os corrodé</color>.\nLors de l'activation de cette compétence, un <color=#FFFFFF>soutien rapide</color> est déclenché.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "152100003": {
+                "Title": "Os corrodé",
+                "Description": "Inflige des <color=#2EB6FF>DGT électriques</color> aux ennemis à proximité.\nChaque déclenchement augmente le taux CRIT de 6 % pendant 15 s, cumulable jusqu'à 3 fois. Les déclenchements répétés réinitialisent la durée."
+            },
+            "152100015": {
+                "Title": "Attaque normale : Langue acérée"
+            },
+            "152100016": {
+                "Description": "Multiplicateur de DGT du 1er coup",
+                "Param": "{Skill:1521001, Prop:1001}"
+            },
+            "152100017": {
+                "Description": "Multiplicateur de DGT du 2e coup",
+                "Param": "{Skill:1521002, Prop:1001}"
+            },
+            "152100018": {
+                "Description": "Multiplicateur de DGT du 3e coup",
+                "Param": "{Skill:1521003, Prop:1001}"
+            },
+            "152100019": {
+                "Description": "Multiplicateur de DGT du 4e coup",
+                "Param": "{Skill:1521004, Prop:1001}"
+            },
+            "152100020": {
+                "Description": "Multiplicateur de confusion du 1er coup",
+                "Param": "{Skill:1521001, Prop:1002}"
+            },
+            "152100021": {
+                "Description": "Multiplicateur de confusion du 2e coup",
+                "Param": "{Skill:1521002, Prop:1002}"
+            },
+            "152100022": {
+                "Description": "Multiplicateur de confusion du 3e coup",
+                "Param": "{Skill:1521003, Prop:1002}"
+            },
+            "152100023": {
+                "Description": "Multiplicateur de confusion du 4e coup",
+                "Param": "{Skill:1521004, Prop:1002}"
+            },
+            "152100024": {
+                "Title": "Attaque normale : Baiser du serpent"
+            },
+            "152100025": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1521006, Prop:1001}"
+            },
+            "152100026": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1521006, Prop:1002}"
+            },
+            "152100027": {
+                "Title": "Os corrodé"
+            },
+            "152100028": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1521019, Prop:1001}"
+            },
+            "152100029": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1521019, Prop:1002}"
+            }
+        },
+        "1": {
+            "152100004": {
+                "Title": "Attaque spéciale : Crochets dévoilés",
+                "Description": "Appuyez sur <IconMap:Icon_Special> pour activer :\nLance une morsure de serpent à longue portée qui inflige des <color=#2EB6FF>DGT électriques</color>.\nLe niveau de RÉS à l'interruption augmente lors de l'utilisation de cette compétence."
+            },
+            "152100005": {
+                "Title": "Attaque spéciale EX : Morsure venimeuse",
+                "Description": "Avec suffisamment d'énergie, appuyez ou maintenez <IconMap:Icon_SpecialReady> enfoncé pour activer :\nDéclenche plusieurs morsures de serpent frontales à longue portée, infligeant des <color=#2EB6FF>DGT électriques</color>. À l'activation, vous gagnez 5 pts d'énergie.\nLorsque vous activez la compétence en maintenant le bouton enfoncé, vous consommez de l'énergie supplémentaire. Pour chaque tranche de 20 points d'énergie supplémentaires consommés, déclenche 1 frappe supplémentaire qui inflige des <color=#2EB6FF>DGT électriques</color>, jusqu'à un maximum de 60 points d'énergie supplémentaires.\nAprès activation en maintenant le bouton enfoncé, vous gagnez 3 points de <color=#FFFFFF>Venin</color>. Pour chaque tranche de 20 points d'énergie supplémentaires consommés en maintenant le bouton enfoncé, vous gagnez 1 point de <color=#FFFFFF>Venin</color> supplémentaire.\nAprès la compétence, vous pouvez enchaîner immédiatement avec le 4e coup d'<color=#FFFFFF>Attaque normale : Langue acérée</color>.\nLorsque cette compétence touche un ennemi, un <color=#FFFFFF>soutien rapide</color> est déclenché.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "152100030": {
+                "Title": "Attaque spéciale : Crochets dévoilés"
+            },
+            "152100031": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1521007, Prop:1001}"
+            },
+            "152100032": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1521007, Prop:1002}"
+            },
+            "152100033": {
+                "Title": "Attaque spéciale EX : Morsure venimeuse"
+            },
+            "152100034": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{{Skill:1521008, Prop:1001}*3+{Skill:1521009, Prop:1001}}"
+            },
+            "152100035": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{{Skill:1521008, Prop:1002}*3+{Skill:1521009, Prop:1002}}"
+            },
+            "152100036": {
+                "Description": "Multiplicateur de DGT de frappe supplémentaire",
+                "Param": "{Skill:1521008, Prop:1001}"
+            },
+            "152100037": {
+                "Description": "Multiplicateur de confusion de frappe supplémentaire",
+                "Param": "{Skill:1521008, Prop:1002}"
+            },
+            "152100038": {
+                "Description": "Coût en énergie",
+                "Param": "65 pts"
+            }
+        },
+        "2": {
+            "152100006": {
+                "Title": "Esquive : Sinueuse",
+                "Description": "Appuyez sur <IconMap:Icon_Evade> pour activer :\nUne esquive rapide.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "152100007": {
+                "Title": "Attaque de bond : Traces de morsure",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pendant une esquive pour activer :\nBondit en avant et assène une entaille rapide, infligeant des <color=#2EB6FF>DGT électriques</color>."
+            },
+            "152100008": {
+                "Title": "Contre d'esquive : Croc pour croc",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pendant une <color=#FFFFFF>esquive parfaite</color> pour activer :\nBondit en avant, puis assène une attaque balayante à l'atterrissage qui inflige des <color=#2EB6FF>DGT électriques</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "152100039": {
+                "Title": "Attaque de bond : Traces de morsure"
+            },
+            "152100040": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1521010, Prop:1001}"
+            },
+            "152100041": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1521010, Prop:1002}"
+            },
+            "152100042": {
+                "Title": "Contre d'esquive : Croc pour croc"
+            },
+            "152100043": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1521011, Prop:1001}"
+            },
+            "152100044": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1521011, Prop:1002}"
+            }
+        },
+        "3": {
+            "152100009": {
+                "Title": "Enchaînement : Bande organisée",
+                "Description": "Lors du déclenchement d'un <color=#FFFFFF>enchaînement</color>, sélectionnez le personnage pour activer :\nAssène plusieurs attaques frontales, infligeant d'importants <color=#2EB6FF>DGT électriques</color>.\nAprès avoir utilisé cette compétence, vous gagnez 3 points de <color=#FFFFFF>Venin</color>.\nLorsque cette compétence touche un ennemi, un <color=#FFFFFF>soutien rapide</color> est déclenché.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "152100010": {
+                "Title": "Ultime : Ophiophobie",
+                "Description": "Lorsque le niveau de décibels est au <color=#FFFFFF>Maximum</color>, appuyez sur <IconMap:Icon_UltimateReady> pour activer :\nAssène un coup écrasant frontal vers le bas, infligeant d'importants <color=#2EB6FF>DGT électriques</color>.\nAprès la compétence, vous obtenez 3 points de <color=#FFFFFF>Venin</color>.\nAprès la compétence, active <color=#FFFFFF>Voile éthérique : Sang-froid</color> pendant 30 s. Les DGT CRIT de tous les personnages de l'escouade augmentent de 5 % pendant ce laps de temps.\nSi vous activez <color=#FFFFFF>Voile éthérique : Sang-froid</color> une seconde fois, le <color=#FFFFFF>Voile éthérique : Sang-froid</color> actif se désactivera d'abord.\nLorsque cette compétence touche un ennemi, un <color=#FFFFFF>soutien rapide</color> est déclenché.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "152100045": {
+                "Title": "Enchaînement : Bande organisée"
+            },
+            "152100046": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1521012, Prop:1001}"
+            },
+            "152100047": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1521012, Prop:1002}"
+            },
+            "152100048": {
+                "Title": "Ultime : Ophiophobie"
+            },
+            "152100049": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1521013, Prop:1001}"
+            },
+            "152100050": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1521013, Prop:1002}"
+            }
+        },
+        "6": {
+            "152100012": {
+                "Title": "Soutien rapide : Système d'alarme",
+                "Description": "Lorsque le personnage contrôlé est projeté, appuyez sur <IconMap:Icon_Switch> pour activer :\nBondit en avant et assène une attaque balayante à l'atterrissage, infligeant des <color=#2EB6FF>DGT électriques</color>.\nLors de cette compétence, vous pouvez enchaîner rapidement avec <color=#FFFFFF>Attaque spéciale : Crochets dévoilés</color>, <color=#FFFFFF>Attaque spéciale EX : Morsure venimeuse</color> et <color=#FFFFFF>Attaque normale : Baiser du serpent</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "152100013": {
+                "Title": "Soutien défensif : Rab de tambouille carcérale",
+                "Description": "Lorsque le personnage sur le terrain est sur le point d'être attaqué, appuyez sur <IconMap:Icon_Switch> pour activer :\nPare l'attaque de l'ennemi et inflige une confusion importante.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "152100014": {
+                "Title": "Soutien de suivi : Association de malfaiteurs",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> après un <color=#FFFFFF>soutien défensif</color> pour activer :\nLance une série de frappes descendantes, infligeant des <color=#2EB6FF>DGT électriques</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "152100051": {
+                "Title": "Soutien rapide : Système d'alarme"
+            },
+            "152100052": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1521014, Prop:1001}"
+            },
+            "152100053": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1521014, Prop:1002}"
+            },
+            "152100054": {
+                "Title": "Soutien défensif : Rab de tambouille carcérale"
+            },
+            "152100055": {
+                "Description": "Multiplicateur de confusion de défense légère",
+                "Param": "{Skill:1521015, Prop:1002}"
+            },
+            "152100056": {
+                "Description": "Multiplicateur de confusion de défense lourde",
+                "Param": "{Skill:1521016, Prop:1002}"
+            },
+            "152100057": {
+                "Description": "Multiplicateur de confusion de défense en chaîne",
+                "Param": "{Skill:1521017, Prop:1002}"
+            },
+            "152100058": {
+                "Title": "Soutien de suivi : Association de malfaiteurs"
+            },
+            "152100059": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1521018, Prop:1001}"
+            },
+            "152100060": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1521018, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1521001": {
+            "DamageValue": 7770,
+            "DamageGrowth": 710,
+            "DazeValue": 6030,
+            "DazeGrowth": 280
+        },
+        "1521002": {
+            "DamageValue": 13870,
+            "DamageGrowth": 1270,
+            "DazeValue": 9840,
+            "DazeGrowth": 450
+        },
+        "1521003": {
+            "DamageValue": 13510,
+            "DamageGrowth": 1230,
+            "DazeValue": 8740,
+            "DazeGrowth": 400
+        },
+        "1521004": {
+            "DamageValue": 25020,
+            "DamageGrowth": 2280,
+            "DazeValue": 15910,
+            "DazeGrowth": 730
+        },
+        "1521006": {
+            "DamageValue": 50420,
+            "DamageGrowth": 4590,
+            "DazeValue": 17970,
+            "DazeGrowth": 820
+        },
+        "1521007": {
+            "DamageValue": 5200,
+            "DamageGrowth": 480,
+            "DazeValue": 4400,
+            "DazeGrowth": 200
+        },
+        "1521008": {
+            "DamageValue": 20040,
+            "DamageGrowth": 1830,
+            "DazeValue": 10830,
+            "DazeGrowth": 500
+        },
+        "1521009": {
+            "DamageValue": 6680,
+            "DamageGrowth": 610,
+            "DazeValue": 3610,
+            "DazeGrowth": 170
+        },
+        "1521010": {
+            "DamageValue": 14730,
+            "DamageGrowth": 1340,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1521011": {
+            "DamageValue": 32450,
+            "DamageGrowth": 2950,
+            "DazeValue": 23660,
+            "DazeGrowth": 1080
+        },
+        "1521012": {
+            "DamageValue": 73780,
+            "DamageGrowth": 6710,
+            "DazeValue": 25860,
+            "DazeGrowth": 1180
+        },
+        "1521013": {
+            "DamageValue": 181100,
+            "DamageGrowth": 16470,
+            "DazeValue": 12110,
+            "DazeGrowth": 560
+        },
+        "1521014": {
+            "DamageValue": 7480,
+            "DamageGrowth": 680,
+            "DazeValue": 6330,
+            "DazeGrowth": 290
+        },
+        "1521015": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1521016": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1521017": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1521018": {
+            "DamageValue": 52060,
+            "DamageGrowth": 4740,
+            "DazeValue": 38720,
+            "DazeGrowth": 1760
+        },
+        "1521019": {
+            "DamageValue": 12680,
+            "DamageGrowth": 1160,
+            "DazeValue": 15510,
+            "DazeGrowth": 710
+        }
+    }
+}

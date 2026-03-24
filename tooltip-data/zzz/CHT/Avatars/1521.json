@@ -1,0 +1,437 @@
+{
+    "Name": "希希芙",
+    "ElementTypes": [
+        "Elec"
+    ],
+    "Specialty": {
+        "Id": 1,
+        "Name": "強攻"
+    },
+    "Talents": {
+        "1": {
+            "Title": "旅人與獵物",
+            "Description": "進入戰場時，獲得的<color=#FFFFFF>[毒素]</color>點數提高至6點。<color=#FFFFFF>[核心被動]</color>中無視敵人防禦力效果提升至原本的140%，並使全隊角色造成的傷害無視目標5%<color=#2EB6FF>電屬性傷害抗性</color>。<color=#FFFFFF>[蝕骨]</color>造成的傷害無視目標10%<color=#2EB6FF>電屬性傷害抗性</color>。",
+            "Lore": "氣味、腳步、閃爍的目光……這些「痕跡」為我區分了獵人與獵物。在成為獵物之前溜走，在成為獵人之前低頭——這就是我的生存之道。「家」？那種東西只在童話故事裡出現。偌大的荒原，就是我的獵人小屋。"
+        },
+        "2": {
+            "Title": "飢腸與箴言",
+            "Description": "<color=#FFFFFF>[連攜技：集團做案]</color>或<color=#FFFFFF>[終結技：爬行恐懼]</color>命中處於失衡狀態下的敵人後，額外獲得3點<color=#FFFFFF>[毒素]</color>。<color=#FFFFFF>[普通攻擊：蛇吻]</color>造成的傷害提升35%。",
+            "Lore": "能吃飽的地方就是好地方，能給我飯吃的就是好人，這是世界上最簡單最可靠的道理。另外——蛋包飯是絕世的美味，包括你勺子裡的剩飯。"
+        },
+        "3": {
+            "Title": "鎖鏈與暖巢",
+            "Description": "<color=#FFFFFF>[普通攻擊]</color>、<color=#FFFFFF>[閃避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[連攜技]</color>技能等級+2",
+            "Lore": "正義？秩序？那種光明正大的東西讓我腿軟。我熟悉的是陰影裡的規則：背叛、謊言、為了活命可以跪得很漂亮。我不介意被當作工具，只要報酬是一頓飽飯和一個溫暖的角落。"
+        },
+        "4": {
+            "Title": "壞蛋的覺悟",
+            "Description": "發動<color=#FFFFFF>[強化特殊技]</color>、<color=#FFFFFF>[連攜技]</color>或<color=#FFFFFF>[終結技]</color>時，獲得1層<color=#FFFFFF>[覺悟]</color>，至多疊加3層。發動<color=#FFFFFF>[普通攻擊：蛇吻]</color>時，消耗全部<color=#FFFFFF>[覺悟]</color>，每消耗1層額外觸發1次不消耗<color=#FFFFFF>[毒素]</color>的特殊<color=#FFFFFF>[蝕骨]</color>，該次<color=#FFFFFF>[蝕骨]</color>無法造成失衡值。",
+            "Lore": "頸環很冰，手銬很重，提醒著我無法洗刷的罪責。但比起那些看不見的規則和冷眼，這種明碼標價的束縛反而讓我安心……至少我知道代價是什麼。而且，只要回到那個有沙發和零食的小窩，鐵疙瘩們也有了溫度。"
+        },
+        "5": {
+            "Title": "偽證與獠牙",
+            "Description": "<color=#FFFFFF>[普通攻擊]</color>、<color=#FFFFFF>[閃避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[連攜技]</color>技能等級+2",
+            "Lore": "被強光灼傷的回憶、白紙黑字的罪名……這些「痕跡」構成了曾經的我。但現在不同了，我學會了識字，也學會了分辨謊言的味道。當熟悉的陰謀氣味再次飄來，我不會再呆呆地走進籠子。這一次，該由我來留下「痕跡」了——用牙齒，惡狠狠地。"
+        },
+        "6": {
+            "Title": "家與六分街道",
+            "Description": "每次觸發<color=#FFFFFF>[蝕骨]</color>時，獲得1層<color=#FFFFFF>[蝕骨印記]</color>。全隊角色除<color=#FFFFFF>[蝕骨]</color>外的攻擊命中敵人時，消耗1層<color=#FFFFFF>[蝕骨印記]</color>，觸發1次特殊的<color=#FFFFFF>[蝕骨]</color>，該次<color=#FFFFFF>[蝕骨]</color>無法造成失衡值，3秒內至多消耗1層<color=#FFFFFF>[蝕骨印記]</color>。",
+            "Lore": "一旦有了比「活下去」更想抓住的東西，人就真的會變傻。如果有一天命運一定要我赴死，你那張又大又軟的沙發，可不許給別人躺！\n\n「絕、對、不、准、忘、了、我、不、然、就、咬、死、你。」"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "核心被動：致命私釀",
+            "DescriptionByLevel": {
+                "1": "進入戰場時，獲得3點<color=#FFFFFF>[毒素]</color>，在勘域模式中此效果180秒內最多觸發一次。\n擁有<color=#FFFFFF>[毒素]</color>時，接戰狀態下每5秒消耗1點<color=#FFFFFF>[毒素]</color>，觸發一次<color=#FFFFFF>[蝕骨]</color>，造成<color=#2EB6FF>電屬性傷害</color>。\n擁有<color=#FFFFFF>[毒素]</color>時，使全隊對敵人造成的<color=#2EB6FF>電屬性傷害</color>無視敵人<color=#2BAD00>3%</color>防禦力，初始能量自動回復大於1.4時，超過部分每超過0.12，額外無視敵人<color=#2BAD00>0.52%</color>防禦力，至多無視敵人<color=#2BAD00>12.88%</color>防禦力，持續至<color=#FFFFFF>[毒素]</color>耗盡後30秒。\n<color=#FFFFFF>[蝕骨]</color>額外附加自身<color=#2BAD00>227%</color>攻擊力的<color=#2EB6FF>電屬性傷害</color>。\n隊伍中有1/2名電屬性角色時，<color=#FFFFFF>[蝕骨]</color>造成的失衡值提升40%/60%。\n獲得<color=#FFFFFF>[毒素]</color>時，每溢出1點<color=#FFFFFF>[毒素]</color>，觸發一次<color=#FFFFFF>[蝕骨]</color>。",
+                "2": "進入戰場時，獲得3點<color=#FFFFFF>[毒素]</color>，在勘域模式中此效果180秒內最多觸發一次。\n擁有<color=#FFFFFF>[毒素]</color>時，接戰狀態下每5秒消耗1點<color=#FFFFFF>[毒素]</color>，觸發一次<color=#FFFFFF>[蝕骨]</color>，造成<color=#2EB6FF>電屬性傷害</color>。\n擁有<color=#FFFFFF>[毒素]</color>時，使全隊對敵人造成的<color=#2EB6FF>電屬性傷害</color>無視敵人<color=#2BAD00>3.5%</color>防禦力，初始能量自動回復大於1.4時，超過部分每超過0.12，額外無視敵人<color=#2BAD00>0.6%</color>防禦力，至多無視敵人<color=#2BAD00>14.9%</color>防禦力，持續至<color=#FFFFFF>[毒素]</color>耗盡後30秒。\n<color=#FFFFFF>[蝕骨]</color>額外附加自身<color=#2BAD00>245%</color>攻擊力的<color=#2EB6FF>電屬性傷害</color>。\n隊伍中有1/2名電屬性角色時，<color=#FFFFFF>[蝕骨]</color>造成的失衡值提升40%/60%。\n獲得<color=#FFFFFF>[毒素]</color>時，每溢出1點<color=#FFFFFF>[毒素]</color>，觸發一次<color=#FFFFFF>[蝕骨]</color>。",
+                "3": "進入戰場時，獲得3點<color=#FFFFFF>[毒素]</color>，在勘域模式中此效果180秒內最多觸發一次。\n擁有<color=#FFFFFF>[毒素]</color>時，接戰狀態下每5秒消耗1點<color=#FFFFFF>[毒素]</color>，觸發一次<color=#FFFFFF>[蝕骨]</color>，造成<color=#2EB6FF>電屬性傷害</color>。\n擁有<color=#FFFFFF>[毒素]</color>時，使全隊對敵人造成的<color=#2EB6FF>電屬性傷害</color>無視敵人<color=#2BAD00>4%</color>防禦力，初始能量自動回復大於1.4時，超過部分每超過0.12，額外無視敵人<color=#2BAD00>0.68%</color>防禦力，至多無視敵人<color=#2BAD00>16.92%</color>防禦力，持續至<color=#FFFFFF>[毒素]</color>耗盡後30秒。\n<color=#FFFFFF>[蝕骨]</color>額外附加自身<color=#2BAD00>263%</color>攻擊力的<color=#2EB6FF>電屬性傷害</color>。\n隊伍中有1/2名電屬性角色時，<color=#FFFFFF>[蝕骨]</color>造成的失衡值提升40%/60%。\n獲得<color=#FFFFFF>[毒素]</color>時，每溢出1點<color=#FFFFFF>[毒素]</color>，觸發一次<color=#FFFFFF>[蝕骨]</color>。",
+                "4": "進入戰場時，獲得3點<color=#FFFFFF>[毒素]</color>，在勘域模式中此效果180秒內最多觸發一次。\n擁有<color=#FFFFFF>[毒素]</color>時，接戰狀態下每5秒消耗1點<color=#FFFFFF>[毒素]</color>，觸發一次<color=#FFFFFF>[蝕骨]</color>，造成<color=#2EB6FF>電屬性傷害</color>。\n擁有<color=#FFFFFF>[毒素]</color>時，使全隊對敵人造成的<color=#2EB6FF>電屬性傷害</color>無視敵人<color=#2BAD00>4.5%</color>防禦力，初始能量自動回復大於1.4時，超過部分每超過0.12，額外無視敵人<color=#2BAD00>0.76%</color>防禦力，至多無視敵人<color=#2BAD00>18.94%</color>防禦力，持續至<color=#FFFFFF>[毒素]</color>耗盡後30秒。\n<color=#FFFFFF>[蝕骨]</color>額外附加自身<color=#2BAD00>281%</color>攻擊力的<color=#2EB6FF>電屬性傷害</color>。\n隊伍中有1/2名電屬性角色時，<color=#FFFFFF>[蝕骨]</color>造成的失衡值提升40%/60%。\n獲得<color=#FFFFFF>[毒素]</color>時，每溢出1點<color=#FFFFFF>[毒素]</color>，觸發一次<color=#FFFFFF>[蝕骨]</color>。",
+                "5": "進入戰場時，獲得3點<color=#FFFFFF>[毒素]</color>，在勘域模式中此效果180秒內最多觸發一次。\n擁有<color=#FFFFFF>[毒素]</color>時，接戰狀態下每5秒消耗1點<color=#FFFFFF>[毒素]</color>，觸發一次<color=#FFFFFF>[蝕骨]</color>，造成<color=#2EB6FF>電屬性傷害</color>。\n擁有<color=#FFFFFF>[毒素]</color>時，使全隊對敵人造成的<color=#2EB6FF>電屬性傷害</color>無視敵人<color=#2BAD00>5%</color>防禦力，初始能量自動回復大於1.4時，超過部分每超過0.12，額外無視敵人<color=#2BAD00>0.84%</color>防禦力，至多無視敵人<color=#2BAD00>20.96%</color>防禦力，持續至<color=#FFFFFF>[毒素]</color>耗盡後30秒。\n<color=#FFFFFF>[蝕骨]</color>額外附加自身<color=#2BAD00>299%</color>攻擊力的<color=#2EB6FF>電屬性傷害</color>。\n隊伍中有1/2名電屬性角色時，<color=#FFFFFF>[蝕骨]</color>造成的失衡值提升40%/60%。\n獲得<color=#FFFFFF>[毒素]</color>時，每溢出1點<color=#FFFFFF>[毒素]</color>，觸發一次<color=#FFFFFF>[蝕骨]</color>。",
+                "6": "進入戰場時，獲得3點<color=#FFFFFF>[毒素]</color>，在勘域模式中此效果180秒內最多觸發一次。\n擁有<color=#FFFFFF>[毒素]</color>時，接戰狀態下每5秒消耗1點<color=#FFFFFF>[毒素]</color>，觸發一次<color=#FFFFFF>[蝕骨]</color>，造成<color=#2EB6FF>電屬性傷害</color>。\n擁有<color=#FFFFFF>[毒素]</color>時，使全隊對敵人造成的<color=#2EB6FF>電屬性傷害</color>無視敵人<color=#2BAD00>5.5%</color>防禦力，初始能量自動回復大於1.4時，超過部分每超過0.12，額外無視敵人<color=#2BAD00>0.92%</color>防禦力，至多無視敵人<color=#2BAD00>22.98%</color>防禦力，持續至<color=#FFFFFF>[毒素]</color>耗盡後30秒。\n<color=#FFFFFF>[蝕骨]</color>額外附加自身<color=#2BAD00>317%</color>攻擊力的<color=#2EB6FF>電屬性傷害</color>。\n隊伍中有1/2名電屬性角色時，<color=#FFFFFF>[蝕骨]</color>造成的失衡值提升40%/60%。\n獲得<color=#FFFFFF>[毒素]</color>時，每溢出1點<color=#FFFFFF>[毒素]</color>，觸發一次<color=#FFFFFF>[蝕骨]</color>。",
+                "7": "進入戰場時，獲得3點<color=#FFFFFF>[毒素]</color>，在勘域模式中此效果180秒內最多觸發一次。\n擁有<color=#FFFFFF>[毒素]</color>時，接戰狀態下每5秒消耗1點<color=#FFFFFF>[毒素]</color>，觸發一次<color=#FFFFFF>[蝕骨]</color>，造成<color=#2EB6FF>電屬性傷害</color>。\n擁有<color=#FFFFFF>[毒素]</color>時，使全隊對敵人造成的<color=#2EB6FF>電屬性傷害</color>無視敵人<color=#2BAD00>6%</color>防禦力，初始能量自動回復大於1.4時，超過部分每超過0.12，額外無視敵人<color=#2BAD00>1%</color>防禦力，至多無視敵人<color=#2BAD00>25%</color>防禦力，持續至<color=#FFFFFF>[毒素]</color>耗盡後30秒。\n<color=#FFFFFF>[蝕骨]</color>額外附加自身<color=#2BAD00>335%</color>攻擊力的<color=#2EB6FF>電屬性傷害</color>。\n隊伍中有1/2名電屬性角色時，<color=#FFFFFF>[蝕骨]</color>造成的失衡值提升40%/60%。\n獲得<color=#FFFFFF>[毒素]</color>時，每溢出1點<color=#FFFFFF>[毒素]</color>，觸發一次<color=#FFFFFF>[蝕骨]</color>。"
+            }
+        },
+        "MathSkill": {
+            "Title": "額外能力：毒素發酵",
+            "Description": "隊伍中包含<color=#FFFFFF>[擊破]</color>或與自身屬性相同的角色時觸發：\n擁有<color=#FFFFFF>[毒素]</color>時，使全隊角色暴擊傷害提高40%，自身額外提高10%，持續至<color=#FFFFFF>[毒素]</color>耗盡後30秒。"
+        },
+        "AwakenAbility": {},
+        "BaseProps": [
+            {
+                "30501": 0,
+                "12101": 0
+            },
+            {
+                "30501": 12,
+                "12101": 0
+            },
+            {
+                "30501": 12,
+                "12101": 25
+            },
+            {
+                "30501": 24,
+                "12101": 25
+            },
+            {
+                "30501": 24,
+                "12101": 50
+            },
+            {
+                "30501": 36,
+                "12101": 50
+            },
+            {
+                "30501": 36,
+                "12101": 75
+            }
+        ]
+    },
+    "SkillDescriptions": {
+        "0": {
+            "152100001": {
+                "Title": "普通攻擊：吐信",
+                "Description": "點按 <IconMap:Icon_Normal> 發動：\n向前方進行至多四段的攻擊，造成<color=#2EB6FF>電屬性傷害</color>。\n第四段攻擊命中敵人後，獲得2點<color=#FFFFFF>[毒素]</color>，命中處於失衡狀態下的敵人時，額外獲得1點<color=#FFFFFF>[毒素]</color>。"
+            },
+            "152100002": {
+                "Title": "普通攻擊：蛇吻",
+                "Description": "擁有<color=#FFFFFF>[蛇影]</color>時可長按 <IconMap:Icon_Normal> 發動：\n希希芙跳入空中並鎖定目標，隨後落地對範圍內敵人造成<color=#2EB6FF>電屬性傷害</color>。\n鎖定期間，保持長按 <IconMap:Icon_Normal> 並拖曳{LAYOUT_CONSOLECONTROLLER#操作桿}{LAYOUT_FALLBACK#搖桿}可以延長鎖定時間，並自由控制落地位置。\n每獲得6點<color=#FFFFFF>[毒素]</color>，自身獲得1層<color=#FFFFFF>[蛇影]</color>效果，至多獲得3層。\n進入戰場時，獲得1層<color=#FFFFFF>[蛇影]</color>效果。\n招式發動時消耗1層<color=#FFFFFF>[蛇影]</color>。\n命中敵人後，快速消耗所有<color=#FFFFFF>[毒素]</color>並觸發<color=#FFFFFF>[蝕骨]</color>。\n招式發動時，將觸發<color=#FFFFFF>[快速支援]</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "152100003": {
+                "Title": "蝕骨",
+                "Description": "對附近敵人造成<color=#2EB6FF>電屬性傷害</color>。\n每次觸發，使自身暴擊率提升6%，持續15秒，至多疊加3層，重複觸發時重置持續時間。"
+            },
+            "152100015": {
+                "Title": "普通攻擊：吐信"
+            },
+            "152100016": {
+                "Description": "一段傷害倍率",
+                "Param": "{Skill:1521001, Prop:1001}"
+            },
+            "152100017": {
+                "Description": "二段傷害倍率",
+                "Param": "{Skill:1521002, Prop:1001}"
+            },
+            "152100018": {
+                "Description": "三段傷害倍率",
+                "Param": "{Skill:1521003, Prop:1001}"
+            },
+            "152100019": {
+                "Description": "四段傷害倍率",
+                "Param": "{Skill:1521004, Prop:1001}"
+            },
+            "152100020": {
+                "Description": "一段失衡倍率",
+                "Param": "{Skill:1521001, Prop:1002}"
+            },
+            "152100021": {
+                "Description": "二段失衡倍率",
+                "Param": "{Skill:1521002, Prop:1002}"
+            },
+            "152100022": {
+                "Description": "三段失衡倍率",
+                "Param": "{Skill:1521003, Prop:1002}"
+            },
+            "152100023": {
+                "Description": "四段失衡倍率",
+                "Param": "{Skill:1521004, Prop:1002}"
+            },
+            "152100024": {
+                "Title": "普通攻擊：蛇吻"
+            },
+            "152100025": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1521006, Prop:1001}"
+            },
+            "152100026": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1521006, Prop:1002}"
+            },
+            "152100027": {
+                "Title": "蝕骨"
+            },
+            "152100028": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1521019, Prop:1001}"
+            },
+            "152100029": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1521019, Prop:1002}"
+            }
+        },
+        "1": {
+            "152100004": {
+                "Title": "特殊技：獠齒",
+                "Description": "點按 <IconMap:Icon_Special> 發動：\n向前方發動遠距離蛇咬，造成<color=#2EB6FF>電屬性傷害</color>。\n招式發動期間抗打斷等級提升。"
+            },
+            "152100005": {
+                "Title": "強化特殊技：毒牙",
+                "Description": "能量足夠時，點按或長按 <IconMap:Icon_SpecialReady> 發動：\n向前方發動多段遠距離蛇咬，造成<color=#2EB6FF>電屬性傷害</color>。\n招式發動時，回復5點能量。\n長按發動時，會額外消耗能量，每20點發動一次額外的打擊，造成<color=#2EB6FF>電屬性傷害</color>，至多額外消耗60點能量。\n長按發動後，自身獲得3點<color=#FFFFFF>[毒素]</color>，長按時每額外消耗20點能量，獲得1點<color=#FFFFFF>[毒素]</color>。\n招式發動後，可直接銜接第四段<color=#FFFFFF>[普通攻擊：吐信]</color>。\n招式命中敵人時，將觸發<color=#FFFFFF>[快速支援]</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "152100030": {
+                "Title": "特殊技：獠齒"
+            },
+            "152100031": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1521007, Prop:1001}"
+            },
+            "152100032": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1521007, Prop:1002}"
+            },
+            "152100033": {
+                "Title": "強化特殊技：毒牙"
+            },
+            "152100034": {
+                "Description": "傷害倍率",
+                "Param": "{{Skill:1521008, Prop:1001}*3+{Skill:1521009, Prop:1001}}"
+            },
+            "152100035": {
+                "Description": "失衡倍率",
+                "Param": "{{Skill:1521008, Prop:1002}*3+{Skill:1521009, Prop:1002}}"
+            },
+            "152100036": {
+                "Description": "額外打擊傷害倍率",
+                "Param": "{Skill:1521008, Prop:1001}"
+            },
+            "152100037": {
+                "Description": "額外打擊失衡倍率",
+                "Param": "{Skill:1521008, Prop:1002}"
+            },
+            "152100038": {
+                "Description": "能量消耗",
+                "Param": "65點"
+            }
+        },
+        "2": {
+            "152100006": {
+                "Title": "閃避：蛇行",
+                "Description": "點按 <IconMap:Icon_Evade> 發動：\n快速的衝刺閃避。\n招式發動期間擁有無敵效果。"
+            },
+            "152100007": {
+                "Title": "衝刺攻擊：齒痕",
+                "Description": "閃避時，點按 <IconMap:Icon_Normal> 發動：\n向前快速斬擊，造成<color=#2EB6FF>電屬性傷害</color>。"
+            },
+            "152100008": {
+                "Title": "閃避反擊：反咬一口",
+                "Description": "觸發<color=#FFFFFF>[極限閃避]</color>後，點按 <IconMap:Icon_Normal> 發動：\n向前方躍起，落地後進行橫掃攻擊，造成<color=#2EB6FF>電屬性傷害</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "152100039": {
+                "Title": "衝刺攻擊：齒痕"
+            },
+            "152100040": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1521010, Prop:1001}"
+            },
+            "152100041": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1521010, Prop:1002}"
+            },
+            "152100042": {
+                "Title": "閃避反擊：反咬一口"
+            },
+            "152100043": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1521011, Prop:1001}"
+            },
+            "152100044": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1521011, Prop:1002}"
+            }
+        },
+        "3": {
+            "152100009": {
+                "Title": "連攜技：集團做案",
+                "Description": "觸發<color=#FFFFFF>[連攜技]</color>時，選擇對應角色發動：\n向前方進行多段攻擊，造成大量<color=#2EB6FF>電屬性傷害</color>。\n招式發動後，獲得3點<color=#FFFFFF>[毒素]</color>。\n招式命中敵人時，將觸發<color=#FFFFFF>[快速支援]</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "152100010": {
+                "Title": "終結技：爬行恐懼",
+                "Description": "喧響等級達到<color=#FFFFFF>[極]</color>時，點按 <IconMap:Icon_UltimateReady> 發動：\n對前方發動下砸攻擊，造成大量<color=#2EB6FF>電屬性傷害</color>。\n招式發動後，獲得3點<color=#FFFFFF>[毒素]</color>。\n招式發動後，開啟<color=#FFFFFF>[以太帷幕：冷血]</color>，持續30秒，期間全隊角色暴擊傷害提升5%。\n重複開啟<color=#FFFFFF>[以太帷幕：冷血]</color>前，將關閉已有的<color=#FFFFFF>[以太帷幕：冷血]</color>。\n招式命中敵人時，將觸發<color=#FFFFFF>[快速支援]</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "152100045": {
+                "Title": "連攜技：集團做案"
+            },
+            "152100046": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1521012, Prop:1001}"
+            },
+            "152100047": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1521012, Prop:1002}"
+            },
+            "152100048": {
+                "Title": "終結技：爬行恐懼"
+            },
+            "152100049": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1521013, Prop:1001}"
+            },
+            "152100050": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1521013, Prop:1002}"
+            }
+        },
+        "6": {
+            "152100012": {
+                "Title": "快速支援：報警裝置",
+                "Description": "目前操作中的角色被擊飛時，點按 <IconMap:Icon_Switch> 發動：\n向前方躍起，落地後進行橫掃攻擊，造成<color=#2EB6FF>電屬性傷害</color>。\n招式發動期間，可以快速銜接<color=#FFFFFF>[特殊技：獠齒]</color>、<color=#FFFFFF>[強化特殊技：毒牙]</color>和<color=#FFFFFF>[普通攻擊：蛇吻]</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "152100013": {
+                "Title": "招架支援：牢飯加餐",
+                "Description": "前場角色即將被攻擊時，點按 <IconMap:Icon_Switch> 發動：\n招架敵人的攻擊，累積大量失衡值。\n招式發動期間擁有無敵效果。"
+            },
+            "152100014": {
+                "Title": "支援突擊：共犯情誼",
+                "Description": "發動<color=#FFFFFF>[招架支援]</color>後，點按 <IconMap:Icon_Normal> 發動：\n對目標發動連續下砸攻擊，造成大量<color=#2EB6FF>電屬性傷害</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "152100051": {
+                "Title": "快速支援：報警裝置"
+            },
+            "152100052": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1521014, Prop:1001}"
+            },
+            "152100053": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1521014, Prop:1002}"
+            },
+            "152100054": {
+                "Title": "招架支援：牢飯加餐"
+            },
+            "152100055": {
+                "Description": "輕招架失衡倍率",
+                "Param": "{Skill:1521015, Prop:1002}"
+            },
+            "152100056": {
+                "Description": "重招架失衡倍率",
+                "Param": "{Skill:1521016, Prop:1002}"
+            },
+            "152100057": {
+                "Description": "連續招架失衡倍率",
+                "Param": "{Skill:1521017, Prop:1002}"
+            },
+            "152100058": {
+                "Title": "支援突擊：共犯情誼"
+            },
+            "152100059": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1521018, Prop:1001}"
+            },
+            "152100060": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1521018, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1521001": {
+            "DamageValue": 7770,
+            "DamageGrowth": 710,
+            "DazeValue": 6030,
+            "DazeGrowth": 280
+        },
+        "1521002": {
+            "DamageValue": 13870,
+            "DamageGrowth": 1270,
+            "DazeValue": 9840,
+            "DazeGrowth": 450
+        },
+        "1521003": {
+            "DamageValue": 13510,
+            "DamageGrowth": 1230,
+            "DazeValue": 8740,
+            "DazeGrowth": 400
+        },
+        "1521004": {
+            "DamageValue": 25020,
+            "DamageGrowth": 2280,
+            "DazeValue": 15910,
+            "DazeGrowth": 730
+        },
+        "1521006": {
+            "DamageValue": 50420,
+            "DamageGrowth": 4590,
+            "DazeValue": 17970,
+            "DazeGrowth": 820
+        },
+        "1521007": {
+            "DamageValue": 5200,
+            "DamageGrowth": 480,
+            "DazeValue": 4400,
+            "DazeGrowth": 200
+        },
+        "1521008": {
+            "DamageValue": 20040,
+            "DamageGrowth": 1830,
+            "DazeValue": 10830,
+            "DazeGrowth": 500
+        },
+        "1521009": {
+            "DamageValue": 6680,
+            "DamageGrowth": 610,
+            "DazeValue": 3610,
+            "DazeGrowth": 170
+        },
+        "1521010": {
+            "DamageValue": 14730,
+            "DamageGrowth": 1340,
+            "DazeValue": 6240,
+            "DazeGrowth": 290
+        },
+        "1521011": {
+            "DamageValue": 32450,
+            "DamageGrowth": 2950,
+            "DazeValue": 23660,
+            "DazeGrowth": 1080
+        },
+        "1521012": {
+            "DamageValue": 73780,
+            "DamageGrowth": 6710,
+            "DazeValue": 25860,
+            "DazeGrowth": 1180
+        },
+        "1521013": {
+            "DamageValue": 181100,
+            "DamageGrowth": 16470,
+            "DazeValue": 12110,
+            "DazeGrowth": 560
+        },
+        "1521014": {
+            "DamageValue": 7480,
+            "DamageGrowth": 680,
+            "DazeValue": 6330,
+            "DazeGrowth": 290
+        },
+        "1521015": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1521016": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1521017": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1521018": {
+            "DamageValue": 52060,
+            "DamageGrowth": 4740,
+            "DazeValue": 38720,
+            "DazeGrowth": 1760
+        },
+        "1521019": {
+            "DamageValue": 12680,
+            "DamageGrowth": 1160,
+            "DazeValue": 15510,
+            "DazeGrowth": 710
+        }
+    }
+}
