@@ -13,6 +13,8 @@
     ],
     "SkillMap": {
         "1391": {
+            "Name": "メイン能力UP・大",
+            "Description": "メイン能力値<@ba.vup>+{mainattr}</>",
             "TagId": "attr_main",
             "BlackboardLevelMap": {
                 "1": {
@@ -42,11 +44,11 @@
                 "9": {
                     "mainattr": 132
                 }
-            },
-            "Name": "メイン能力UP・大",
-            "Description": "メイン能力値<@ba.vup>+{mainattr}</>"
+            }
         },
         "1258": {
+            "Name": "物理ダメージUP・大",
+            "Description": "物理ダメージ<@ba.vup>+{phydam:0.0%}</>",
             "TagId": "attr_phydam",
             "BlackboardLevelMap": {
                 "1": {
@@ -76,11 +78,11 @@
                 "9": {
                     "phydam": 0.43333334
                 }
-            },
-            "Name": "物理ダメージUP・大",
-            "Description": "物理ダメージ<@ba.vup>+{phydam:0.0%}</>"
+            }
         },
         "2235": {
+            "Name": "残虐・規則遵守",
+            "Description": "攻撃力<@ba.vup>+{atk_up:0.0%}</>\n装備中、自身が<#ba.noguard>クラッシュ</>段階を<#ba.consume>消費</>すると、{duration:0}秒間自身の攻撃力<@ba.vup>+[{atk_up_add:0.0%}+{atk_up_mult:0.0%}×<#ba.consume>消費</>した段階数]</>、チーム内の他のオペレーターにはその半分の効果が付与される\n<@ba.info>同名効果は重ね掛け不可</>",
             "TagId": "break",
             "BlackboardLevelMap": {
                 "1": {
@@ -137,9 +139,7 @@
                     "atk_up_mult": 0.07,
                     "duration": 20
                 }
-            },
-            "Name": "残虐・規則遵守",
-            "Description": "攻撃力<@ba.vup>+{atk_up:0.0%}</>\n装備中、自身が<#ba.noguard>クラッシュ</>段階を<#ba.consume>消費</>すると、{duration:0}秒間自身の攻撃力<@ba.vup>+[{atk_up_add:0.0%}+{atk_up_mult:0.0%}×<#ba.consume>消費</>した段階数]</>、チーム内の他のオペレーターにはその半分の効果が付与される\n<@ba.info>同名効果は重ね掛け不可</>"
+            }
         }
     }
 }
