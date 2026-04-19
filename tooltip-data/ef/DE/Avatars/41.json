@@ -1,0 +1,565 @@
+{
+    "StrId": "chr_0028_wulfa",
+    "Name": "Rossi",
+    "Rarity": 6,
+    "Element": "Physical",
+    "Profession": "GUARD",
+    "WeaponType": "Sword",
+    "MainAttrId": 40,
+    "SubAttrId": 41,
+    "AttributeNodes": {
+        "chr_0028_wulfa_7": {
+            "40": 20
+        },
+        "chr_0028_wulfa_5": {
+            "40": 15
+        },
+        "chr_0028_wulfa_1": {
+            "40": 10
+        },
+        "chr_0028_wulfa_3": {
+            "40": 15
+        }
+    },
+    "SkillInfoMap": {
+        "112": {
+            "Icon": "skillicon/icon_combo_skill_wulfa_01",
+            "Element": "Physical",
+            "Name": "Augenblick des flammenden Schattens",
+            "Desc": "KOMBOAUSLÖSER: Wenn ein Gegner sowohl mit <#ba.noguard>Anfälligkeit</> als auch mit <#ba.spellinflict>Technikkumulierung</> belegt ist.\nRossis Kombofertigkeit hat 2 aufeinanderfolgende Sequenzen. KOMBOSEQUENZ 1 fügt dem Ziel <@ba.pd>Physischen SDN</> zu.\nKOMBOSEQUENZ 2 <#ba.consume>verbraucht</> alle <#ba.spellinflict>Technikkumulierungen</> des Ziels, fügt ihm basierend auf der Anzahl der <#ba.consume>verbrauchten</> Technikkumulierungen <@ba.pd>Physischen SDN</> zu, fügt 1 Kumulierung <#ba.airborne>Anheben</> zu und gewährt gleichzeitig einen Buff auf Rossis Kritische Rate und ihren Verursachten Kritischen Schaden.\nWenn KOMBOSEQUENZ 2 mit <@ba.key>perfektem Timing</> ausgeführt wird, bewirkt sie 1 weitere Kumulierung <#ba.noguard>Anfälligkeit</>.",
+            "Type": 2,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "SEQ-1-SDN-Multiplikator",
+                    "Values": [
+                        "67%",
+                        "73%",
+                        "80%",
+                        "87%",
+                        "93%",
+                        "100%",
+                        "107%",
+                        "113%",
+                        "120%",
+                        "128%",
+                        "138%",
+                        "150%"
+                    ]
+                },
+                {
+                    "Text": "SEQ 1 – Ultimative-Energie-Erhalt",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "SEQ-2-SDN-Multiplikator",
+                    "Values": [
+                        "133%",
+                        "147%",
+                        "160%",
+                        "173%",
+                        "187%",
+                        "200%",
+                        "213%",
+                        "227%",
+                        "240%",
+                        "257%",
+                        "277%",
+                        "300%"
+                    ]
+                },
+                {
+                    "Text": "Bonus-SDN-Multiplikator pro Zufügungskumulierung",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                },
+                {
+                    "Text": "SEQ 2 – Taumeln",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "Kritische-Rate-Boost",
+                    "Values": [
+                        "15%",
+                        "15%",
+                        "15%",
+                        "17%",
+                        "17%",
+                        "17%",
+                        "19%",
+                        "19%",
+                        "21%",
+                        "21%",
+                        "23%",
+                        "25%"
+                    ]
+                },
+                {
+                    "Text": "Kritischer-SDN-Boost",
+                    "Values": [
+                        "30%",
+                        "30%",
+                        "30%",
+                        "34%",
+                        "34%",
+                        "34%",
+                        "38%",
+                        "38%",
+                        "42%",
+                        "42%",
+                        "46%",
+                        "50%"
+                    ]
+                },
+                {
+                    "Text": "Buffdauer (Sek.)",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                },
+                {
+                    "Text": "SEQ 2 – Ultimative-Energie-Erhalt",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "109": {
+            "Icon": "skillicon/icon_attack_sword",
+            "Element": "Physical",
+            "Name": "Kochendes Wolfsblut",
+            "Desc": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlagangriffen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen.",
+            "Type": 0,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "STD-ANG-SEQ-1-Multiplikator",
+                    "Values": [
+                        "22%",
+                        "24%",
+                        "26%",
+                        "29%",
+                        "31%",
+                        "33%",
+                        "35%",
+                        "37%",
+                        "40%",
+                        "42%",
+                        "46%",
+                        "50%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-2-Multiplikator",
+                    "Values": [
+                        "27%",
+                        "29%",
+                        "32%",
+                        "34%",
+                        "37%",
+                        "40%",
+                        "42%",
+                        "45%",
+                        "48%",
+                        "51%",
+                        "55%",
+                        "60%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-3-Multiplikator",
+                    "Values": [
+                        "29%",
+                        "32%",
+                        "35%",
+                        "38%",
+                        "41%",
+                        "44%",
+                        "46%",
+                        "49%",
+                        "52%",
+                        "56%",
+                        "60%",
+                        "65%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-4-Multiplikator",
+                    "Values": [
+                        "36%",
+                        "39%",
+                        "43%",
+                        "46%",
+                        "50%",
+                        "53%",
+                        "57%",
+                        "60%",
+                        "64%",
+                        "68%",
+                        "74%",
+                        "80%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-5-Multiplikator",
+                    "Values": [
+                        "50%",
+                        "55%",
+                        "60%",
+                        "65%",
+                        "70%",
+                        "75%",
+                        "80%",
+                        "85%",
+                        "90%",
+                        "96%",
+                        "104%",
+                        "113%"
+                    ]
+                },
+                {
+                    "Text": "Wuchtschlag-ANG-Multiplikator",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Sturz-ANG-Multiplikator",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "111": {
+            "Icon": "skillicon/icon_ultimate_skill_wulfa_01",
+            "Element": "Fire",
+            "Name": "Rasierkrallen-Hinterhalt",
+            "Desc": "Rossi lässt ihren Umhang flattern und führt eine schnelle Folge von Stichangriffen aus, die dem Ziel in mehreren Sequenzen schnell <@ba.fire>Hitze-SDN</> zufügt. Anschließend führt sie mit ihrem Dolch einen Hiebangriff aus 2 Sequenzen aus, der massiven <@ba.fire>Hitze-SDN</> bewirkt und den Gegner mit <#ba.fireinflict>Hitze</> belegt.\n<@ba.info>Wenn diese Fertigkeit erfolgreich einen kritischen Treffer erzielt, wird der Kritische SDN erhöht.</>",
+            "Type": 3,
+            "Cooldown": 10,
+            "CostType": "UltimateSp",
+            "CostValue": 110,
+            "Params": [
+                {
+                    "Text": "Stichangriff-SDN-Multiplikator (Gesamt)",
+                    "Values": [
+                        "275%",
+                        "300%",
+                        "325%",
+                        "350%",
+                        "375%",
+                        "400%",
+                        "425%",
+                        "450%",
+                        "475%",
+                        "525%",
+                        "550%",
+                        "600%"
+                    ]
+                },
+                {
+                    "Text": "SEQ-1-Hieb-SDN-Multiplikator",
+                    "Values": [
+                        "111%",
+                        "122%",
+                        "133%",
+                        "144%",
+                        "156%",
+                        "167%",
+                        "178%",
+                        "189%",
+                        "200%",
+                        "214%",
+                        "231%",
+                        "250%"
+                    ]
+                },
+                {
+                    "Text": "SEQ-2-Hieb-SDN-Multiplikator",
+                    "Values": [
+                        "333%",
+                        "367%",
+                        "400%",
+                        "433%",
+                        "467%",
+                        "500%",
+                        "534%",
+                        "567%",
+                        "600%",
+                        "642%",
+                        "692%",
+                        "750%"
+                    ]
+                },
+                {
+                    "Text": "Taumeln",
+                    "Values": [
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25"
+                    ]
+                },
+                {
+                    "Text": "Kritischer-SDN-Boost",
+                    "Values": [
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%"
+                    ]
+                }
+            ]
+        },
+        "110": {
+            "Icon": "skillicon/icon_skill_wulfa_01",
+            "Element": "Physical",
+            "Name": "Blutroter Schatten",
+            "Desc": "Stürmt auf das Ziel zu, um <@ba.pd>Physischen SDN</> zu verursachen und den Gegner mit <#ba.airborne>Anheben</> zu belegen.\nWenn ein Ziel bereits mit einer oder mehr Kumulierungen <#ba.noguard>Anfälligkeit</> belegt wurde, wird zusätzlich ein <@ba.key>Wolfsansturm</> auf das Ziel entfesselt, der <@ba.fire>Hitze-SDN</> verursacht.",
+            "Type": 1,
+            "Cooldown": 0,
+            "CostType": "Atb",
+            "CostValue": 100,
+            "Params": [
+                {
+                    "Text": "SEQ-1-SDN-Multiplikator",
+                    "Values": [
+                        "85%",
+                        "94%",
+                        "102%",
+                        "111%",
+                        "119%",
+                        "128%",
+                        "137%",
+                        "145%",
+                        "154%",
+                        "164%",
+                        "177%",
+                        "192%"
+                    ]
+                },
+                {
+                    "Text": "SEQ 1 – Taumeln",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "SEQ-2-SDN-Multiplikator",
+                    "Values": [
+                        "128%",
+                        "141%",
+                        "153%",
+                        "166%",
+                        "179%",
+                        "192%",
+                        "204%",
+                        "217%",
+                        "230%",
+                        "246%",
+                        "265%",
+                        "288%"
+                    ]
+                },
+                {
+                    "Text": "SEQ 2 – Taumeln",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "12",
+                        "12",
+                        "12",
+                        "15"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0028_wulfa_passive_skill_0_2": {
+            "Icon": "icon_talent_wulfa_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Schrammen und Kratzer",
+            "Desc": "Kampffertigkeit verbessert: Wenn <@ba.key>Wolfsansturm</> SDN verursacht, wendet Rossi beim Ziel für <@ba.vup>25</> Sek. <#ba.rossi>Rasierkrallenspur</> an. Dieser Effekt kann nicht kumuliert werden.\nSolange <#ba.rossi>Rasierkrallenspur</> aktiv ist, erleidet das Ziel pro Sekunde <@ba.vup>30.0%</> ANG (Rossis) <@ba.pd>Physischen SDN</> und wird mit <@ba.pd>erlittener Physischer SDN</> und <@ba.fire>erlittener Hitze-SDN</> <@ba.vup>+12.0%</> belegt.",
+            "Type": 4
+        },
+        "fac_chr_0028_wulfa_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
+            "Name": "Jagdfährte β",
+            "Desc": "Dem Empfang zuweisen, um die Operator-Hinweissammeleffizienz um 20 % zu steigern.",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0028_wulfa_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
+            "Name": "Klan-Etikette β",
+            "Desc": "Dem Empfang zuweisen, um Stimmungsverlust aller Operatoren in der Kammer um 14 % zu verlangsamen.",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0028_wulfa_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
+            "Name": "Jagdfährte γ",
+            "Desc": "Dem Empfang zuweisen, um die Operator-Hinweissammeleffizienz um 30 % zu steigern.",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        },
+        "chr_0028_wulfa_passive_skill_0_1": {
+            "Icon": "icon_talent_wulfa_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Schrammen und Kratzer",
+            "Desc": "Kampffertigkeit verbessert: Wenn <@ba.key>Wolfsansturm</> SDN verursacht, wendet Rossi beim Ziel für <@ba.vup>15</> Sek. <#ba.rossi>Rasierkrallenspur</> an. Dieser Effekt kann nicht kumuliert werden.\nSolange <#ba.rossi>Rasierkrallenspur</> aktiv ist, erleidet das Ziel pro Sekunde <@ba.vup>25.0%</> ANG (Rossis) <@ba.pd>Physischen SDN</> und wird mit <@ba.pd>erlittener Physischer SDN</> und <@ba.fire>erlittener Hitze-SDN</> <@ba.vup>+6.0%</> belegt.",
+            "Type": 4
+        },
+        "chr_0028_wulfa_passive_skill_1_2": {
+            "Icon": "icon_talent_wulfa_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Kochendes Blut",
+            "Desc": "Wenn Rossis Fertigkeit Kritischen SDN bei einem Gegner mit <#ba.rossi>Rasierkrallenspur</> verursacht, wird ein weiterer Treffer ausgelöst, der <@ba.vup>24.0%</> ANG (Rossis) <@ba.fire>Hitze-SDN</> verursacht und <@ba.heal>[Intellekt × 0.08]</> LP von Rossi regeneriert. Wenn das Ziel zusätzlich <#ba.burning>Verbrannt</> ist, werden der SDN- und der LP-Regenerationseffekt auf das <@ba.vup>1.5</>-Fache erhöht.",
+            "Type": 4
+        },
+        "fac_chr_0028_wulfa_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
+            "Name": "Klan-Etikette γ",
+            "Desc": "Dem Empfang zuweisen, um Stimmungsverlust aller Operatoren in der Kammer um 18 % zu verlangsamen.",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "chr_0028_wulfa_passive_skill_1_1": {
+            "Icon": "icon_talent_wulfa_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Kochendes Blut",
+            "Desc": "Wenn Rossis Fertigkeit Kritischen SDN bei einem Gegner mit <#ba.rossi>Rasierkrallenspur</> verursacht, wird ein weiterer Treffer ausgelöst, der <@ba.vup>12.0%</> ANG (Rossis) <@ba.fire>Hitze-SDN</> verursacht und <@ba.heal>[Intellekt × 0.04]</> LP von Rossi regeneriert. Wenn das Ziel zusätzlich <#ba.burning>Verbrannt</> ist, werden der SDN- und der LP-Regenerationseffekt auf das <@ba.vup>1.5</>-Fache erhöht.",
+            "Type": 4
+        }
+    }
+}

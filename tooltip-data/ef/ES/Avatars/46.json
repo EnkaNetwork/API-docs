@@ -1,0 +1,548 @@
+{
+    "StrId": "chr_0030_zhuangfy",
+    "Name": "Zhuang Fangyi",
+    "Rarity": 6,
+    "Element": "Pulse",
+    "Profession": "ASSAULT",
+    "WeaponType": "Wand",
+    "MainAttrId": 42,
+    "SubAttrId": 41,
+    "AttributeNodes": {
+        "chr_0030_zhuangfy_1": {
+            "42": 10
+        },
+        "chr_0030_zhuangfy_3": {
+            "42": 15
+        },
+        "chr_0030_zhuangfy_5": {
+            "42": 15
+        },
+        "chr_0030_zhuangfy_7": {
+            "42": 20
+        }
+    },
+    "SkillInfoMap": {
+        "107": {
+            "Icon": "skillicon/icon_ultimate_skill_zhuangfy_01",
+            "Element": "Pulse",
+            "Name": "Tempestad fulminante",
+            "Desc": "Se transforma en <@ba.key>Empíreo de la verdad</>, lo que otorga las siguientes mejoras:\nLos ataques básicos de Zhuang Fangyi se potencian y sus acciones son más difíciles de interrumpir;\nLa habilidad de batalla <@ba.key>Mantra de Ruptura</> obtiene un mayor multiplicador de DAÑ y un alcance de efecto aumentado, y el Golpe de trueno final también aplica <#ba.pulseinflict>Imposición eléctrica</> al objetivo impactado.\nLa habilidad de combo <@ba.key>Aliento de transformación</> obtiene un mayor multiplicador de DAÑ, su enfriamiento se vuelve {combo_cd_rate:0} veces más rápido y sus efectos se aplican a enemigos en un área pequeña.\nEl primer uso de la habilidad de batalla <@ba.key>Mantra de Ruptura</> en un objetivo disponible no consume PH ni <#ba.conduct>Electrificación</>, y garantiza la creación de 3 <@ba.key>Hojas de Ruptura</> incluso si el objetivo no tiene <#ba.conduct>Electrificación</>.",
+            "Type": 3,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Duración (s)",
+                    "Values": [
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25"
+                    ]
+                },
+                {
+                    "Text": "Durante la máxima: Multiplicador de SEC 1 de ATQB",
+                    "Values": [
+                        "67%",
+                        "73%",
+                        "80%",
+                        "86%",
+                        "93%",
+                        "100%",
+                        "106%",
+                        "113%",
+                        "120%",
+                        "128%",
+                        "138%",
+                        "150%"
+                    ]
+                },
+                {
+                    "Text": "Durante la máxima: Multiplicador de SEC 2 de ATQB",
+                    "Values": [
+                        "94%",
+                        "103%",
+                        "112%",
+                        "122%",
+                        "131%",
+                        "140%",
+                        "150%",
+                        "159%",
+                        "168%",
+                        "180%",
+                        "194%",
+                        "210%"
+                    ]
+                },
+                {
+                    "Text": "Durante la máxima: Multiplicador ATQB SEC 3",
+                    "Values": [
+                        "134%",
+                        "147%",
+                        "160%",
+                        "174%",
+                        "187%",
+                        "200%",
+                        "214%",
+                        "227%",
+                        "240%",
+                        "257%",
+                        "277%",
+                        "300%"
+                    ]
+                }
+            ]
+        },
+        "108": {
+            "Icon": "skillicon/icon_combo_skill_zhuangfy_01",
+            "Element": "Pulse",
+            "Name": "Aliento de transformación",
+            "Desc": "ACTIVADOR DE COMBO: cuando el <#ba.lastcombo>Golpe final</> o el remate del operador controlado impacta a un enemigo con <#ba.pulseinflict>Imposición eléctrica</>.\nZhuang Fangyi crea una Matriz de Xiranbomba que ataca al enemigo e inflige <@ba.pulse>DAÑ Eléctrico</>. Si la Matriz impacta a un enemigo que tiene acumulaciones de <#ba.pulseinflict>Imposición eléctrica</>, <#ba.consume>consumirá</> esas acumulaciones de <#ba.pulseinflict>Imposición eléctrica</>, aplicará <#ba.conduct>Electrificación</> a la fuerza y otorgará Energía máxima en función de la cantidad de acumulaciones <#ba.consume>consumidas</>.\nSi <#ba.conduct>Electrificación</> se aplica a la fuerza a un enemigo que ya tiene <#ba.conduct>Electrificación</>, aplicará <#ba.statuslevel>Nivel de estado</> +1 a la <#ba.conduct>Electrificación</> del enemigo.",
+            "Type": 2,
+            "Cooldown": 18,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Multiplicador de DAÑ",
+                    "Values": [
+                        "160%",
+                        "176%",
+                        "192%",
+                        "208%",
+                        "224%",
+                        "240%",
+                        "256%",
+                        "272%",
+                        "288%",
+                        "308%",
+                        "332%",
+                        "360%"
+                    ]
+                },
+                {
+                    "Text": "Tambaleo",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Ganancia de Energía máxima",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Energía máxima adicional por Acumulación de Imposición",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Durante la máxima: Multiplicador de DAÑ",
+                    "Values": [
+                        "240%",
+                        "264%",
+                        "288%",
+                        "312%",
+                        "336%",
+                        "360%",
+                        "384%",
+                        "408%",
+                        "432%",
+                        "462%",
+                        "498%",
+                        "540%"
+                    ]
+                }
+            ]
+        },
+        "105": {
+            "Icon": "skillicon/icon_attack_funnel",
+            "Element": "Pulse",
+            "Name": "Artes de Sacudida",
+            "Desc": "ATAQUE BÁSICO: \nUn ataque con hasta 5 secuencias que inflige <@ba.pulse>DAÑ eléctrico</>. Como operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.pulse>DAÑ eléctrico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.pulse>DAÑ eléctrico</> y recupera algunos PH.",
+            "Type": 0,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Multiplicador ATQB SEC 1",
+                    "Values": [
+                        "16%",
+                        "18%",
+                        "19%",
+                        "21%",
+                        "22%",
+                        "24%",
+                        "26%",
+                        "27%",
+                        "29%",
+                        "31%",
+                        "33%",
+                        "36%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador ATQB SEC 2",
+                    "Values": [
+                        "24%",
+                        "26%",
+                        "29%",
+                        "31%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "41%",
+                        "43%",
+                        "46%",
+                        "50%",
+                        "54%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador ATQB SEC 3",
+                    "Values": [
+                        "32%",
+                        "35%",
+                        "39%",
+                        "42%",
+                        "45%",
+                        "48%",
+                        "52%",
+                        "55%",
+                        "58%",
+                        "62%",
+                        "67%",
+                        "72%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador ATQB SEC 4",
+                    "Values": [
+                        "45%",
+                        "50%",
+                        "54%",
+                        "59%",
+                        "63%",
+                        "68%",
+                        "72%",
+                        "77%",
+                        "81%",
+                        "87%",
+                        "93%",
+                        "101%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador ATQB SEC 5",
+                    "Values": [
+                        "48%",
+                        "53%",
+                        "58%",
+                        "62%",
+                        "67%",
+                        "72%",
+                        "77%",
+                        "82%",
+                        "86%",
+                        "92%",
+                        "100%",
+                        "108%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador ATQ Remate",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador ATQ de Inmersión",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "106": {
+            "Icon": "skillicon/icon_skill_zhuangfy_01",
+            "Element": "Pulse",
+            "Name": "Mantra de Ruptura",
+            "Desc": "<#ba.consume>Consume</> la <#ba.conduct>Electrificación</> del objetivo para aumentar el Multiplicador de DAÑ de esta habilidad de batalla y crear [<#ba.statuslevel>Nivel de estado</> de la <#ba.conduct>Electrificación</> <#ba.consume>consumida</> <@ba.key>+1</>] <@ba.key>Hojas de Ruptura</>. Si el campo de batalla tiene menos de {free_sword_limit:0} <@ba.key>Hojas de Ruptura</>, Mantra de Ruptura puede crear 1 <@ba.key>Hoja de Ruptura</>, incluso si no <#ba.consume>consume</> ninguna carga de <#ba.conduct>Electrificación</> del objetivo.\nZhuang Fangyi canaliza todas las <@ba.key>Hojas de Ruptura</> cercanas para desatar Golpes de trueno sucesivos contra el objetivo, lo que inflige <@ba.pulse>DAÑ Eléctrico</> y otorga Energía máxima adicional, por lo que el Golpe de trueno final inflige un DAÑ {final_rate:0} veces mayor.\n<@ba.info>Un lanzamiento único de habilidad de batalla solo puede crear una cantidad máxima de {max_conduct_sword:0} Hojas de Ruptura.</>",
+            "Type": 1,
+            "Cooldown": 0,
+            "CostType": "Atb",
+            "CostValue": 100,
+            "Params": [
+                {
+                    "Text": "Multiplicador de DAÑ de Golpe de trueno",
+                    "Values": [
+                        "20%",
+                        "22%",
+                        "24%",
+                        "26%",
+                        "28%",
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "39%",
+                        "42%",
+                        "45%"
+                    ]
+                },
+                {
+                    "Text": "Tambaleo total",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador de DAÑ adicional por Nivel de estado de Electrificación consumida",
+                    "Values": [
+                        "3%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "6%",
+                        "6%",
+                        "7%",
+                        "8%",
+                        "9%"
+                    ]
+                },
+                {
+                    "Text": "Energía máxima adicional por Golpe de trueno",
+                    "Values": [
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6"
+                    ]
+                },
+                {
+                    "Text": "Límite de Hoja de Ruptura",
+                    "Values": [
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9"
+                    ]
+                },
+                {
+                    "Text": "Duración de Hoja de Ruptura (s)",
+                    "Values": [
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36"
+                    ]
+                },
+                {
+                    "Text": "Durante la máxima: Multiplicador de DAÑ de Golpe de trueno",
+                    "Values": [
+                        "36%",
+                        "40%",
+                        "43%",
+                        "47%",
+                        "50%",
+                        "54%",
+                        "58%",
+                        "61%",
+                        "65%",
+                        "69%",
+                        "75%",
+                        "81%"
+                    ]
+                },
+                {
+                    "Text": "Durante la máxima: Multiplicador de DAÑ adicional por Nivel de estado de Electrificación consumida",
+                    "Values": [
+                        "8%",
+                        "9%",
+                        "10%",
+                        "11%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0030_zhuangfy_passive_skill_0_2": {
+            "Icon": "icon_talent_zhuangfy_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Fuerza de la Naturaleza",
+            "Desc": "Habilidad de batalla <@ba.key>Mantra de Ruptura</> mejorada: Al lanzar la habilidad de batalla, Zhuang Fangyi obtiene <@ba.vup>18.0%</> <#ba.pulseenhance>Amp. eléctrica</> durante <@ba.vup>5</> s.\nAsestar golpes con el Golpe de Trueno de la habilidad de batalla aumenta este efecto en <@ba.vup>+2.0%</>.\nCada lanzamiento de la habilidad de batalla <@ba.key>Mantra de Ruptura</> restablece nuevamente este efecto de <#ba.pulseenhance>Amp. eléctrica</>.",
+            "Type": 4
+        },
+        "fac_chr_0030_zhuangfy_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
+            "Name": "Experiencia de virreina γ",
+            "Desc": "Asignar a la Cabina de manufactura para reducir la disminución del Estado de ánimo de todos los operadores en ella un 18 %",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "chr_0030_zhuangfy_passive_skill_1_2": {
+            "Icon": "icon_talent_zhuangfy_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Mandato del Cielo",
+            "Desc": "Obtiene una probabilidad de inmunidad al DAÑ recibido del <@ba.vup>9.0%</>; cada <@ba.key>Hoja de Ruptura</> cercana aumenta esta probabilidad un <@ba.vup>1.0%</>.\nDespués de que se activa la inmunidad al DAÑ, Zhuang Fangyi también restaura un <@ba.heal>18.0%</> de los PV Máx. El efecto de restauración de PV solo se activa una vez cada <@ba.vup>99</> s.",
+            "Type": 4
+        },
+        "chr_0030_zhuangfy_passive_skill_0_1": {
+            "Icon": "icon_talent_zhuangfy_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Fuerza de la Naturaleza",
+            "Desc": "Habilidad de batalla <@ba.key>Mantra de Ruptura</> mejorada: Al lanzar la habilidad de batalla, Zhuang Fangyi obtiene <@ba.vup>9.0%</> <#ba.pulseenhance>Amp. eléctrica</> durante <@ba.vup>5</> s.\nAsestar golpes con el Golpe de Trueno de la habilidad de batalla aumenta este efecto en <@ba.vup>+1.0%</>.\nCada lanzamiento de la habilidad de batalla <@ba.key>Mantra de Ruptura</> restablece nuevamente este efecto de <#ba.pulseenhance>Amp. eléctrica</>.",
+            "Type": 4
+        },
+        "chr_0030_zhuangfy_passive_skill_1_1": {
+            "Icon": "icon_talent_zhuangfy_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Mandato del Cielo",
+            "Desc": "Obtiene una probabilidad de inmunidad al DAÑ recibido del <@ba.vup>9.0%</>; cada <@ba.key>Hoja de Ruptura</> cercana aumenta esta probabilidad un <@ba.vup>1.0%</>.\nDespués de que se activa la inmunidad al DAÑ, Zhuang Fangyi también restaura un <@ba.heal>9.0%</> de los PV Máx. El efecto de restauración de PV solo se activa una vez cada <@ba.vup>99</> s.",
+            "Type": 4
+        },
+        "fac_chr_0030_zhuangfy_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Meditación Chi de Tianshi γ",
+            "Desc": "Asignar a Cabina de manufactura para otorgar eficiencia de producción de materiales de EXP de operador en un +30 %",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0030_zhuangfy_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
+            "Name": "Experiencia de virreina β",
+            "Desc": "Asignar a la Cabina de manufactura para reducir la disminución del Estado de ánimo de todos los operadores en ella un 14 %",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0030_zhuangfy_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Meditación Chi de Tianshi β",
+            "Desc": "Asignar a Cabina de manufactura para otorgar eficiencia de producción de materiales de EXP de operador en un +20 %",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        }
+    }
+}

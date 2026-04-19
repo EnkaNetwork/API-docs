@@ -1,0 +1,497 @@
+{
+    "StrId": "chr_0014_aurora",
+    "Name": "Snowshine",
+    "Rarity": 5,
+    "Element": "Cryst",
+    "Profession": "DEFENDER",
+    "WeaponType": "Claymores",
+    "MainAttrId": 39,
+    "SubAttrId": 42,
+    "AttributeNodes": {
+        "chr_0014_aurora_1": {
+            "39": 10
+        },
+        "chr_0014_aurora_3": {
+            "39": 15
+        },
+        "chr_0014_aurora_5": {
+            "39": 15
+        },
+        "chr_0014_aurora_7": {
+            "39": 20
+        }
+    },
+    "SkillInfoMap": {
+        "43": {
+            "Icon": "skillicon/icon_skill_aurora_01",
+            "Element": "Cryst",
+            "Name": "Defensa saturada",
+            "Desc": "Alza un escudo que puede bloquear ataques, otorga <#ba.guard>Protección</> a sí mismo y a operadores cercanos y <#ba.return>devuelve</> de inmediato algunos PH. \nCuando es atacada con dicho escudo elevado, realiza un golpe de represalia que inflige <@ba.cryst>DAÑ criogénico</> y aplica <#ba.crystinflict>Imposición criogénica</> al atacante.",
+            "Type": 1,
+            "Cooldown": 0,
+            "CostType": "Atb",
+            "CostValue": 100,
+            "Params": [
+                {
+                    "Text": "Multiplicador de DAÑ",
+                    "Values": [
+                        "200%",
+                        "220%",
+                        "240%",
+                        "260%",
+                        "280%",
+                        "300%",
+                        "320%",
+                        "340%",
+                        "360%",
+                        "385%",
+                        "415%",
+                        "450%"
+                    ]
+                },
+                {
+                    "Text": "Tambaleo",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Protección",
+                    "Values": [
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%"
+                    ]
+                },
+                {
+                    "Text": "Retorno de PH",
+                    "Values": [
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30"
+                    ]
+                }
+            ]
+        },
+        "50": {
+            "Icon": "skillicon/icon_combo_skill_aurora_01",
+            "Element": "Cryst",
+            "Name": "Rescate polar",
+            "Desc": "ACTIVADOR DE COMBO: Después de que el operador controlado es atacado y cae por debajo de {trigger_hp_ratio:0%} PV. \nSnowshine lanza un Asistente de B&R en campos nevados al operador controlado. Al entrar en contacto con el objetivo, el Asistente proporciona un gran <@ba.heal>Tratamiento de PV</> instantáneo a los operadores cercanos, así como <@ba.heal>Tratamiento de PV</> continuo a los operadores en el área de efecto. \nEl atributo de Voluntad aumenta la cantidad de tratamiento de PV.",
+            "Type": 2,
+            "Cooldown": 25,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Tratamiento base inicial",
+                    "Values": [
+                        "96",
+                        "115",
+                        "134",
+                        "154",
+                        "163",
+                        "173",
+                        "182",
+                        "192",
+                        "202",
+                        "206",
+                        "211",
+                        "216"
+                    ]
+                },
+                {
+                    "Text": "Incremento de tratamiento inicial por Voluntad",
+                    "Values": [
+                        "0.22",
+                        "0.27",
+                        "0.31",
+                        "0.36",
+                        "0.38",
+                        "0.4",
+                        "0.43",
+                        "0.45",
+                        "0.47",
+                        "0.48",
+                        "0.49",
+                        "0.5"
+                    ]
+                },
+                {
+                    "Text": "Tratamiento base continuo",
+                    "Values": [
+                        "24",
+                        "29",
+                        "34",
+                        "38",
+                        "41",
+                        "43",
+                        "46",
+                        "48",
+                        "50",
+                        "52",
+                        "53",
+                        "54"
+                    ]
+                },
+                {
+                    "Text": "Incremento continuo de tratamiento por Voluntad",
+                    "Values": [
+                        "0.06",
+                        "0.07",
+                        "0.08",
+                        "0.09",
+                        "0.1",
+                        "0.1",
+                        "0.11",
+                        "0.11",
+                        "0.12",
+                        "0.12",
+                        "0.12",
+                        "0.13"
+                    ]
+                },
+                {
+                    "Text": "Intervalo de tratamiento base continuo (s)",
+                    "Values": [
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5"
+                    ]
+                },
+                {
+                    "Text": "Duración (s)",
+                    "Values": [
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3"
+                    ]
+                },
+                {
+                    "Text": "Ganancia de Energía máxima",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "42": {
+            "Icon": "skillicon/icon_attack_claym",
+            "Element": "Physical",
+            "Name": "Asalto hipotérmico",
+            "Desc": "ATAQUE BÁSICO: \nUn ataque con hasta 3 secuencias que inflige <@ba.pd>DAÑ físico</>. Como operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige mucho <@ba.pd>DAÑ físico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.pd>DAÑ físico</> y recupera algunos PH.",
+            "Type": 0,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Multiplicador ATQB SEC 1",
+                    "Values": [
+                        "55%",
+                        "61%",
+                        "66%",
+                        "72%",
+                        "77%",
+                        "83%",
+                        "88%",
+                        "94%",
+                        "99%",
+                        "106%",
+                        "114%",
+                        "124%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador ATQB SEC 2",
+                    "Values": [
+                        "59%",
+                        "64%",
+                        "70%",
+                        "76%",
+                        "82%",
+                        "88%",
+                        "94%",
+                        "99%",
+                        "105%",
+                        "113%",
+                        "121%",
+                        "132%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador ATQB SEC 3",
+                    "Values": [
+                        "100%",
+                        "110%",
+                        "120%",
+                        "130%",
+                        "140%",
+                        "150%",
+                        "160%",
+                        "170%",
+                        "180%",
+                        "193%",
+                        "208%",
+                        "225%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador ATQ Remate",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador ATQ de Inmersión",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "44": {
+            "Icon": "skillicon/icon_ultimate_skill_aurora_01",
+            "Element": "Cryst",
+            "Name": "Campo nevado gélido",
+            "Desc": "Salta al aire con un jetpack y luego cae en picada con su escudo para infligir <@ba.cryst>DAÑ criogénico</> masivo a los enemigos en el área de efecto. También genera una <@ba.key>Zona de nieve</> (que dura varios segundos) que inflige <@ba.cryst>DAÑ criogénico</> con el tiempo a los enemigos. La <@ba.key>Zona de nieve</> aplica forzosamente <#ba.frozen>Solidificación</> a los enemigos atrapados en ella por cierta duración.",
+            "Type": 3,
+            "Cooldown": 20,
+            "CostType": "UltimateSp",
+            "CostValue": 80,
+            "Params": [
+                {
+                    "Text": "Multiplicador de DAÑ Explosión",
+                    "Values": [
+                        "200%",
+                        "220%",
+                        "240%",
+                        "260%",
+                        "280%",
+                        "300%",
+                        "320%",
+                        "340%",
+                        "360%",
+                        "385%",
+                        "415%",
+                        "450%"
+                    ]
+                },
+                {
+                    "Text": "Tambaleo",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador de DAÑ continuo",
+                    "Values": [
+                        "29%",
+                        "32%",
+                        "35%",
+                        "37%",
+                        "40%",
+                        "43%",
+                        "46%",
+                        "49%",
+                        "52%",
+                        "55%",
+                        "60%",
+                        "65%"
+                    ]
+                },
+                {
+                    "Text": "Intervalo de DAÑ continuo (s)",
+                    "Values": [
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5"
+                    ]
+                },
+                {
+                    "Text": "Duración (s)",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0014_aurora_passive_skill_1_1": {
+            "Icon": "icon_talent_aurora_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Profesional de B&R",
+            "Desc": "Habilidad de batalla <@ba.key>Defensa saturada</> mejorada: Después de contraatacar con éxito un ataque enemigo, Snowshine obtiene otros <@ba.vup>6</> de Energía máxima.",
+            "Type": 4
+        },
+        "chr_0014_aurora_passive_skill_0_2": {
+            "Icon": "icon_talent_aurora_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Superviviente polar",
+            "Desc": "Efecto de tratamiento <@ba.heal>+25.0%</> para objetivos con 55.00000000000001% PV o menos.",
+            "Type": 4
+        },
+        "chr_0014_aurora_passive_skill_0_1": {
+            "Icon": "icon_talent_aurora_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Superviviente polar",
+            "Desc": "Efecto de tratamiento <@ba.heal>+15.0%</> para objetivos con 45.0% PV o menos.",
+            "Type": 4
+        },
+        "fac_chr_0014_aurora_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "Despreocupación γ",
+            "Desc": "Asignar al Nexus de control para otorgar a todos los operadores regeneración del Estado de ánimo de +16 %",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0014_aurora_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
+            "Name": "Perseverancia de rescatista β",
+            "Desc": "Asignar a la Cabina de manufactura para reducir la disminución del Estado de ánimo de todos los operadores en ella un 14 %",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0014_aurora_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
+            "Name": "Perseverancia de rescatista α",
+            "Desc": "Asignar a la Cabina de manufactura para reducir la disminución del Estado de ánimo de todos los operadores en ella un 10 %",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0014_aurora_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "Despreocupación β",
+            "Desc": "Asignar al Nexus de control para otorgar a todos los operadores regeneración del Estado de ánimo de +12 %",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "chr_0014_aurora_passive_skill_1_2": {
+            "Icon": "icon_talent_aurora_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Profesional de B&R",
+            "Desc": "Habilidad de batalla <@ba.key>Defensa saturada</> mejorada: Después de contraatacar con éxito un ataque enemigo, Snowshine obtiene otros <@ba.vup>10</> de Energía máxima.",
+            "Type": 4
+        }
+    }
+}

@@ -1,0 +1,548 @@
+{
+    "StrId": "chr_0030_zhuangfy",
+    "Name": "Zhuang Fangyi",
+    "Rarity": 6,
+    "Element": "Pulse",
+    "Profession": "ASSAULT",
+    "WeaponType": "Wand",
+    "MainAttrId": 42,
+    "SubAttrId": 41,
+    "AttributeNodes": {
+        "chr_0030_zhuangfy_1": {
+            "42": 10
+        },
+        "chr_0030_zhuangfy_3": {
+            "42": 15
+        },
+        "chr_0030_zhuangfy_5": {
+            "42": 15
+        },
+        "chr_0030_zhuangfy_7": {
+            "42": 20
+        }
+    },
+    "SkillInfoMap": {
+        "107": {
+            "Icon": "skillicon/icon_ultimate_skill_zhuangfy_01",
+            "Element": "Pulse",
+            "Name": "Zerstörerisches Unwetter",
+            "Desc": "Verwandelt sich in den <@ba.key>Avatar der Wahrheit</> und erhält die folgenden Verbesserungen:\nZhuang Fangyis Standardangriffe werden verstärkt und sie wird schwerer unterbrochen;\ndie Kampffertigkeit <@ba.key>Mantra des Reißens</> erhält einen höheren SDN-Multiplikator sowie eine höhere Effektreichweite und das letzte Donnerwetter verursacht beim getroffenen Ziel <#ba.pulseinflict>Elektrik</>.\nDie Kombofertigkeit <@ba.key>Hauch der Wandlung</> erhält einen höheren SDN-Multiplikator, die Abklingzeit beschleunigt sich um das {combo_cd_rate:0}-fache und die Effekte betreffen Gegner in einem kleinen Bereich.\nDas erste Wirken der Kampffertigkeit <@ba.key>Mantra des Reißens</> auf ein verfügbares Ziel verbraucht weder FP noch <#ba.conduct>Elektrifizierung</> und erstellt garantiert 3 <@ba.key>Spaltklingen</> (auch dann, wenn das Ziel nicht von <#ba.conduct>Elektrifizierung</> betroffen ist).",
+            "Type": 3,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Dauer (Sek.)",
+                    "Values": [
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25"
+                    ]
+                },
+                {
+                    "Text": "Während Ultimativer Fertigkeit: STD-ANG-SEQ-1-Multiplikator",
+                    "Values": [
+                        "67%",
+                        "73%",
+                        "80%",
+                        "86%",
+                        "93%",
+                        "100%",
+                        "106%",
+                        "113%",
+                        "120%",
+                        "128%",
+                        "138%",
+                        "150%"
+                    ]
+                },
+                {
+                    "Text": "Während Ultimativer Fertigkeit: STD-ANG-SEQ-2-Multiplikator",
+                    "Values": [
+                        "94%",
+                        "103%",
+                        "112%",
+                        "122%",
+                        "131%",
+                        "140%",
+                        "150%",
+                        "159%",
+                        "168%",
+                        "180%",
+                        "194%",
+                        "210%"
+                    ]
+                },
+                {
+                    "Text": "Während Ultimativer Fertigkeit: STD-ANG-SEQ-3-Multiplikator",
+                    "Values": [
+                        "134%",
+                        "147%",
+                        "160%",
+                        "174%",
+                        "187%",
+                        "200%",
+                        "214%",
+                        "227%",
+                        "240%",
+                        "257%",
+                        "277%",
+                        "300%"
+                    ]
+                }
+            ]
+        },
+        "108": {
+            "Icon": "skillicon/icon_combo_skill_zhuangfy_01",
+            "Element": "Pulse",
+            "Name": "Hauch der Wandlung",
+            "Desc": "KOMBOAUSLÖSER: Der <#ba.lastcombo>Abschlussangriff</> oder Wuchtschlag des gesteuerten Operators trifft ein Ziel mit <#ba.pulseinflict>Elektrik</>.\nZhuang Fangyi erschafft eine Xiranblitz-Reihe, die den Gegner angreift und <@ba.pulse>Elektrischen SDN</> verursacht. Trifft die Reihe einen Gegner mit <#ba.pulseinflict>Elektrik</>kumulierung(en), werden diese <#ba.pulseinflict>Elektrik</>kumulierungen <#ba.consume>verbraucht</>, das Ziel wird mit <#ba.conduct>Elektrifizierung</> belegt und Zhuang Fangyi erhält Ultimative Energie basierend auf der Anzahl der <#ba.consume>verbrauchten</> Kumulierungen.\nWird ein Gegner mit <#ba.conduct>Elektrifizierung</> belegt, der bereits von <#ba.conduct>Elektrifizierung</> betroffen ist, steigt der <#ba.statuslevel>Zustandslevel</> der <#ba.conduct>Elektrifizierung</> auf dem Gegner um +1.",
+            "Type": 2,
+            "Cooldown": 18,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "SDN-Multiplikator",
+                    "Values": [
+                        "160%",
+                        "176%",
+                        "192%",
+                        "208%",
+                        "224%",
+                        "240%",
+                        "256%",
+                        "272%",
+                        "288%",
+                        "308%",
+                        "332%",
+                        "360%"
+                    ]
+                },
+                {
+                    "Text": "Taumeln",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Ultimative-Energie-Erhalt",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Zusätzliche Ultimative Energie pro Zufügungskumulierung",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Während Ultimativer Fertigkeit: SDN-Multiplikator",
+                    "Values": [
+                        "240%",
+                        "264%",
+                        "288%",
+                        "312%",
+                        "336%",
+                        "360%",
+                        "384%",
+                        "408%",
+                        "432%",
+                        "462%",
+                        "498%",
+                        "540%"
+                    ]
+                }
+            ]
+        },
+        "105": {
+            "Icon": "skillicon/icon_attack_funnel",
+            "Element": "Pulse",
+            "Name": "Schockierende Techniken",
+            "Desc": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.pulse>Elektrischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pulse>Elektrischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.pulse>Elektrischen SDN</> zufügen und ein wenig FP wiederherstellen.",
+            "Type": 0,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "STD-ANG-SEQ-1-Multiplikator",
+                    "Values": [
+                        "16%",
+                        "18%",
+                        "19%",
+                        "21%",
+                        "22%",
+                        "24%",
+                        "26%",
+                        "27%",
+                        "29%",
+                        "31%",
+                        "33%",
+                        "36%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-2-Multiplikator",
+                    "Values": [
+                        "24%",
+                        "26%",
+                        "29%",
+                        "31%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "41%",
+                        "43%",
+                        "46%",
+                        "50%",
+                        "54%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-3-Multiplikator",
+                    "Values": [
+                        "32%",
+                        "35%",
+                        "39%",
+                        "42%",
+                        "45%",
+                        "48%",
+                        "52%",
+                        "55%",
+                        "58%",
+                        "62%",
+                        "67%",
+                        "72%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-4-Multiplikator",
+                    "Values": [
+                        "45%",
+                        "50%",
+                        "54%",
+                        "59%",
+                        "63%",
+                        "68%",
+                        "72%",
+                        "77%",
+                        "81%",
+                        "87%",
+                        "93%",
+                        "101%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-5-Multiplikator",
+                    "Values": [
+                        "48%",
+                        "53%",
+                        "58%",
+                        "62%",
+                        "67%",
+                        "72%",
+                        "77%",
+                        "82%",
+                        "86%",
+                        "92%",
+                        "100%",
+                        "108%"
+                    ]
+                },
+                {
+                    "Text": "Wuchtschlag-ANG-Multiplikator",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Sturz-ANG-Multiplikator",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "106": {
+            "Icon": "skillicon/icon_skill_zhuangfy_01",
+            "Element": "Pulse",
+            "Name": "Mantra des Reißens",
+            "Desc": "<#ba.consume>Verbraucht</> <#ba.conduct>Elektrifizierung</> des Ziels, um den SDN-Multiplikator dieser Kampffertigkeit zu erhöhen und erschafft [<#ba.statuslevel>Zustandslevel</> von <#ba.consume>verbrauchter</> <#ba.conduct>Elektrifizierung</> <@ba.key>+1</>] <@ba.key>Spaltklingen</>. Befinden sich auf dem Schlachtfeld weniger als {free_sword_limit:0} <@ba.key>Spaltklingen</>, kann Mantra des Reißens weiterhin 1 <@ba.key>Spaltklinge</> erschaffen, auch wenn diese keine <#ba.conduct>Elektrifizierung</> bei einem Ziel <#ba.consume>verbraucht</>.\nZhuang Fangyi lenkt dann alle <@ba.key>Spaltklingen</> in Reichweite, um nacheinander Donnerwetter auf das Ziel zu entfesseln, die <@ba.pulse>Elektrischen SDN</> verursachen und zusätzliche Ultimative Energie verleihen, wobei das letzte Donnerwetter {final_rate:0}-fachen SDN verursacht.\n<@ba.info>Das Wirken einer einzelnen Kampffertigkeit erzeugt nur bis zu {max_conduct_sword:0} Spaltklingen.</>",
+            "Type": 1,
+            "Cooldown": 0,
+            "CostType": "Atb",
+            "CostValue": 100,
+            "Params": [
+                {
+                    "Text": "Donnerwetter-SDN-Multiplikator",
+                    "Values": [
+                        "20%",
+                        "22%",
+                        "24%",
+                        "26%",
+                        "28%",
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "39%",
+                        "42%",
+                        "45%"
+                    ]
+                },
+                {
+                    "Text": "Gesamt-Taumeln",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                },
+                {
+                    "Text": "Bonus-SDN-Multiplikator pro Zustandslevel von verbrauchter Elektrifizierung",
+                    "Values": [
+                        "3%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "6%",
+                        "6%",
+                        "7%",
+                        "8%",
+                        "9%"
+                    ]
+                },
+                {
+                    "Text": "Ultimative-Energie-Bonus durch Donnerwetter",
+                    "Values": [
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6"
+                    ]
+                },
+                {
+                    "Text": "Spaltklinge-Limit",
+                    "Values": [
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9"
+                    ]
+                },
+                {
+                    "Text": "Spaltklinge-Dauer (Sek.)",
+                    "Values": [
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36"
+                    ]
+                },
+                {
+                    "Text": "Während Ultimativer Fertigkeit: Donnerwetter-SDN-Multiplikator",
+                    "Values": [
+                        "36%",
+                        "40%",
+                        "43%",
+                        "47%",
+                        "50%",
+                        "54%",
+                        "58%",
+                        "61%",
+                        "65%",
+                        "69%",
+                        "75%",
+                        "81%"
+                    ]
+                },
+                {
+                    "Text": "Während Ultimativer Fertigkeit: Bonus-SDN-Multiplikator pro Zustandslevel von verbrauchter Elektrifizierung",
+                    "Values": [
+                        "8%",
+                        "9%",
+                        "10%",
+                        "11%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0030_zhuangfy_passive_skill_0_2": {
+            "Icon": "icon_talent_zhuangfy_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Naturgewalt",
+            "Desc": "Kampffertigkeit <@ba.key>Mantra des Reißens</> verbessert: Das Wirken der Kampffertigkeit gewährt Zhuang Fangyi für <@ba.vup>5</> Sek. <@ba.vup>18.0%</> <#ba.pulseenhance>Elektrik-Verstärkung</>.\nWenn Treffer mit der Kampffertigkeit Donnerwetter erzielt werden, erhöht sich dieser Effekt um <@ba.vup>+2.0%</>.\nJedes Wirken der Kampffertigkeit <@ba.key>Mantra des Reißens</> setzt diesen <#ba.pulseenhance>Elektrik-Verstärkung</>-Effekt wieder zurück.",
+            "Type": 4
+        },
+        "fac_chr_0030_zhuangfy_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
+            "Name": "Vize-Erfahrung γ",
+            "Desc": "Der Herstellungskabine zuweisen, um Stimmungsverlust aller Operatoren in der Kabine um 18 % zu verlangsamen.",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "chr_0030_zhuangfy_passive_skill_1_2": {
+            "Icon": "icon_talent_zhuangfy_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Vom Himmel auserkoren",
+            "Desc": "Erhält eine Chance von <@ba.vup>9.0%</> auf Immunität gegen erlittenen SDN, wobei sich diese Chance mit jeder <@ba.key>Spaltklinge</> in der Nähe um <@ba.vup>+1.0%</> erhöht.\nNachdem SDN-Immunität ausgelöst wurde, stellt Zhuang Fangyi auch wieder <@ba.heal>18.0%</> max. LP her. Der LP-Wiederherstellungseffekt wird nur einmal alle <@ba.vup>99</> Sek. ausgelöst.",
+            "Type": 4
+        },
+        "chr_0030_zhuangfy_passive_skill_0_1": {
+            "Icon": "icon_talent_zhuangfy_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Naturgewalt",
+            "Desc": "Kampffertigkeit <@ba.key>Mantra des Reißens</> verbessert: Das Wirken der Kampffertigkeit gewährt Zhuang Fangyi für <@ba.vup>5</> Sek. <@ba.vup>9.0%</> <#ba.pulseenhance>Elektrik-Verstärkung</>.\nWenn Treffer mit der Kampffertigkeit Donnerwetter erzielt werden, erhöht sich dieser Effekt um <@ba.vup>+1.0%</>.\nJedes Wirken der Kampffertigkeit <@ba.key>Mantra des Reißens</> setzt diesen <#ba.pulseenhance>Elektrik-Verstärkung</>-Effekt wieder zurück.",
+            "Type": 4
+        },
+        "chr_0030_zhuangfy_passive_skill_1_1": {
+            "Icon": "icon_talent_zhuangfy_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Vom Himmel auserkoren",
+            "Desc": "Erhält eine Chance von <@ba.vup>9.0%</> auf Immunität gegen erlittenen SDN, wobei sich diese Chance mit jeder <@ba.key>Spaltklinge</> in der Nähe um <@ba.vup>+1.0%</> erhöht.\nNachdem SDN-Immunität ausgelöst wurde, stellt Zhuang Fangyi auch wieder <@ba.heal>9.0%</> max. LP her. Der LP-Wiederherstellungseffekt wird nur einmal alle <@ba.vup>99</> Sek. ausgelöst.",
+            "Type": 4
+        },
+        "fac_chr_0030_zhuangfy_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Tianshi-Chi-Meditation γ",
+            "Desc": "Herstellungskabine zuweisen, um Operator-EP-Materialproduktionseffizienz um +30 % zu erhöhen.",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0030_zhuangfy_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
+            "Name": "Vize-Erfahrung β",
+            "Desc": "Der Herstellungskabine zuweisen, um Stimmungsverlust aller Operatoren in der Kabine um 14 % zu verlangsamen.",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0030_zhuangfy_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Tianshi-Chi-Meditation β",
+            "Desc": "Herstellungskabine zuweisen, um Operator-EP-Materialproduktionseffizienz um +20 % zu erhöhen.",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        }
+    }
+}

@@ -1,0 +1,497 @@
+{
+    "StrId": "chr_0014_aurora",
+    "Name": "Snowshine",
+    "Rarity": 5,
+    "Element": "Cryst",
+    "Profession": "DEFENDER",
+    "WeaponType": "Claymores",
+    "MainAttrId": 39,
+    "SubAttrId": 42,
+    "AttributeNodes": {
+        "chr_0014_aurora_1": {
+            "39": 10
+        },
+        "chr_0014_aurora_3": {
+            "39": 15
+        },
+        "chr_0014_aurora_5": {
+            "39": 15
+        },
+        "chr_0014_aurora_7": {
+            "39": 20
+        }
+    },
+    "SkillInfoMap": {
+        "43": {
+            "Icon": "skillicon/icon_skill_aurora_01",
+            "Element": "Cryst",
+            "Name": "Difesa saturata",
+            "Desc": "Solleva uno scudo in grado di bloccare gli attacchi, conferisce <#ba.guard>Protezione</> a sé e agli operatori vicini e <#ba.return>ripristina</> immediatamente parte dei PA. \nSe riceve un attacco mentre lo scudo è sollevato, sferra un contrattacco che infligge <@ba.cryst>danni da ghiaccio</> e applica <#ba.crystinflict>Afflizione da ghiaccio</> all'attaccante.",
+            "Type": 1,
+            "Cooldown": 0,
+            "CostType": "Atb",
+            "CostValue": 100,
+            "Params": [
+                {
+                    "Text": "Moltiplicatore danni",
+                    "Values": [
+                        "200%",
+                        "220%",
+                        "240%",
+                        "260%",
+                        "280%",
+                        "300%",
+                        "320%",
+                        "340%",
+                        "360%",
+                        "385%",
+                        "415%",
+                        "450%"
+                    ]
+                },
+                {
+                    "Text": "Vacillamento",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Protezione",
+                    "Values": [
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%"
+                    ]
+                },
+                {
+                    "Text": "Restituzione PA",
+                    "Values": [
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30"
+                    ]
+                }
+            ]
+        },
+        "50": {
+            "Icon": "skillicon/icon_combo_skill_aurora_01",
+            "Element": "Cryst",
+            "Name": "Soccorso polare",
+            "Desc": "ATTIVAZIONE COMBO: dopo che l'operatore controllato viene attaccato e ha meno di un {trigger_hp_ratio:0%} di PS. \nSnowshine lancia un assistente della squadra di soccorso delle nevi all'operatore controllato. Al contatto con il bersaglio, l'assistente conferisce un'ingente quantità di <@ba.heal>Cura PS</> agli operatori vicini e <@ba.heal>Cura PS</> progressiva agli operatori nel raggio d'azione. \nL'attributo Volontà aumenta la quantità di PS ripristinati.",
+            "Type": 2,
+            "Cooldown": 25,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Cura base iniziale",
+                    "Values": [
+                        "96",
+                        "115",
+                        "134",
+                        "154",
+                        "163",
+                        "173",
+                        "182",
+                        "192",
+                        "202",
+                        "206",
+                        "211",
+                        "216"
+                    ]
+                },
+                {
+                    "Text": "Aumento Cura iniziale basato su Volontà",
+                    "Values": [
+                        "0.22",
+                        "0.27",
+                        "0.31",
+                        "0.36",
+                        "0.38",
+                        "0.4",
+                        "0.43",
+                        "0.45",
+                        "0.47",
+                        "0.48",
+                        "0.49",
+                        "0.5"
+                    ]
+                },
+                {
+                    "Text": "Cura progressiva base",
+                    "Values": [
+                        "24",
+                        "29",
+                        "34",
+                        "38",
+                        "41",
+                        "43",
+                        "46",
+                        "48",
+                        "50",
+                        "52",
+                        "53",
+                        "54"
+                    ]
+                },
+                {
+                    "Text": "Aumento Cura progressiva basato su Volontà",
+                    "Values": [
+                        "0.06",
+                        "0.07",
+                        "0.08",
+                        "0.09",
+                        "0.1",
+                        "0.1",
+                        "0.11",
+                        "0.11",
+                        "0.12",
+                        "0.12",
+                        "0.12",
+                        "0.13"
+                    ]
+                },
+                {
+                    "Text": "Intervallo Cura progressiva (s)",
+                    "Values": [
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5"
+                    ]
+                },
+                {
+                    "Text": "Durata (s)",
+                    "Values": [
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3"
+                    ]
+                },
+                {
+                    "Text": "Incremento energia suprema",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "42": {
+            "Icon": "skillicon/icon_attack_claym",
+            "Element": "Physical",
+            "Name": "Assalto ipotermico",
+            "Desc": "ATTACCO BASE: \nsequenza di massimo tre attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA.",
+            "Type": 0,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Moltiplicatore SEQ ATTB 1",
+                    "Values": [
+                        "55%",
+                        "61%",
+                        "66%",
+                        "72%",
+                        "77%",
+                        "83%",
+                        "88%",
+                        "94%",
+                        "99%",
+                        "106%",
+                        "114%",
+                        "124%"
+                    ]
+                },
+                {
+                    "Text": "Moltiplicatore SEQ ATTB 2",
+                    "Values": [
+                        "59%",
+                        "64%",
+                        "70%",
+                        "76%",
+                        "82%",
+                        "88%",
+                        "94%",
+                        "99%",
+                        "105%",
+                        "113%",
+                        "121%",
+                        "132%"
+                    ]
+                },
+                {
+                    "Text": "Moltiplicatore SEQ ATTB 3",
+                    "Values": [
+                        "100%",
+                        "110%",
+                        "120%",
+                        "130%",
+                        "140%",
+                        "150%",
+                        "160%",
+                        "170%",
+                        "180%",
+                        "193%",
+                        "208%",
+                        "225%"
+                    ]
+                },
+                {
+                    "Text": "Moltiplicatore ATT mossa letale",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Moltiplicatore ATT dall'alto",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "44": {
+            "Icon": "skillicon/icon_ultimate_skill_aurora_01",
+            "Element": "Cryst",
+            "Name": "Campo innevato gelido",
+            "Desc": "Si lancia in aria con un jetpack per poi colpire dall'alto con lo scudo, infliggendo ingenti <@ba.cryst>danni da ghiaccio</> ai nemici nel raggio d'azione. Inoltre, genera una <@ba.key>zona innevata</> della durata di qualche secondo che infligge <@ba.cryst>danni da ghiaccio</> nel tempo ai nemici. La <@ba.key>zona innevata</> applica forzatamente <#ba.frozen>Solidificazione</> ai nemici che vi rimangono intrappolati per un certo periodo di tempo.",
+            "Type": 3,
+            "Cooldown": 20,
+            "CostType": "UltimateSp",
+            "CostValue": 80,
+            "Params": [
+                {
+                    "Text": "Moltiplicatore danni Esplosione",
+                    "Values": [
+                        "200%",
+                        "220%",
+                        "240%",
+                        "260%",
+                        "280%",
+                        "300%",
+                        "320%",
+                        "340%",
+                        "360%",
+                        "385%",
+                        "415%",
+                        "450%"
+                    ]
+                },
+                {
+                    "Text": "Vacillamento",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Moltiplicatore danni progressivi",
+                    "Values": [
+                        "29%",
+                        "32%",
+                        "35%",
+                        "37%",
+                        "40%",
+                        "43%",
+                        "46%",
+                        "49%",
+                        "52%",
+                        "55%",
+                        "60%",
+                        "65%"
+                    ]
+                },
+                {
+                    "Text": "Intervallo danni progressivi (s)",
+                    "Values": [
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5"
+                    ]
+                },
+                {
+                    "Text": "Durata (s)",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0014_aurora_passive_skill_1_1": {
+            "Icon": "icon_talent_aurora_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Professionista del soccorso",
+            "Desc": "Abilità di combattimento <@ba.key>Difesa saturata</> migliorata: dopo aver contrattaccato con successo un attacco nemico, Snowshine ottiene <@ba.vup>6</> di energia suprema extra.",
+            "Type": 4
+        },
+        "chr_0014_aurora_passive_skill_0_2": {
+            "Icon": "icon_talent_aurora_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Sopravvivenza polare",
+            "Desc": "<@ba.heal>+25.0%</> di efficacia della Cura per i bersagli con PS uguali o minori a un 55.00000000000001%.",
+            "Type": 4
+        },
+        "chr_0014_aurora_passive_skill_0_1": {
+            "Icon": "icon_talent_aurora_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Sopravvivenza polare",
+            "Desc": "<@ba.heal>+15.0%</> di efficacia della Cura per i bersagli con PS uguali o minori a un 45.0%.",
+            "Type": 4
+        },
+        "fac_chr_0014_aurora_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "Spensieratezza γ",
+            "Desc": "Assegna al Nexus di controllo per aumentare del 16% la rigenerazione dell'umore di tutti gli operatori.",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0014_aurora_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
+            "Name": "Perseveranza del soccorritore β",
+            "Desc": "Assegna alla cabina di produzione per rallentare del 14% il calo dell'umore di tutti gli operatori al suo interno.",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0014_aurora_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
+            "Name": "Perseveranza del soccorritore α",
+            "Desc": "Assegna alla cabina di produzione per rallentare del 10% il calo dell'umore di tutti gli operatori al suo interno.",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0014_aurora_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "Spensieratezza β",
+            "Desc": "Assegna al Nexus di controllo per aumentare del 12% la rigenerazione dell'umore di tutti gli operatori.",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "chr_0014_aurora_passive_skill_1_2": {
+            "Icon": "icon_talent_aurora_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Professionista del soccorso",
+            "Desc": "Abilità di combattimento <@ba.key>Difesa saturata</> migliorata: dopo aver contrattaccato con successo un attacco nemico, Snowshine ottiene <@ba.vup>10</> di energia suprema extra.",
+            "Type": 4
+        }
+    }
+}

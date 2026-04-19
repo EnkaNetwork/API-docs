@@ -1,0 +1,548 @@
+{
+    "StrId": "chr_0030_zhuangfy",
+    "Name": "Zhuang Fangyi",
+    "Rarity": 6,
+    "Element": "Pulse",
+    "Profession": "ASSAULT",
+    "WeaponType": "Wand",
+    "MainAttrId": 42,
+    "SubAttrId": 41,
+    "AttributeNodes": {
+        "chr_0030_zhuangfy_1": {
+            "42": 10
+        },
+        "chr_0030_zhuangfy_3": {
+            "42": 15
+        },
+        "chr_0030_zhuangfy_5": {
+            "42": 15
+        },
+        "chr_0030_zhuangfy_7": {
+            "42": 20
+        }
+    },
+    "SkillInfoMap": {
+        "107": {
+            "Icon": "skillicon/icon_ultimate_skill_zhuangfy_01",
+            "Element": "Pulse",
+            "Name": "Nộ Tức Trừng Phạt",
+            "Desc": "Biến thành <@ba.key>Chân Lý Tối Thượng</> giúp cường hóa những khả năng sau:\nĐòn đánh thường của Zhuang Fangyi được cường hóa và hành động của cô khó bị gián đoạn hơn;\nKN chiến đấu <@ba.key>Chú Thuật Phân Tách</> nhận Hệ Số ST cao hơn và tăng phạm vi hiệu ứng, ngoài ra đòn Lôi Kích cuối cùng gây <#ba.pulseinflict>Nhiễm Điện</> cho mục tiêu dính đòn.\nKN liên hoàn <@ba.key>Nhất Tức Hóa Vạn</> nhận Hệ Số ST cao hơn, thời gian hồi chiêu nhanh hơn {combo_cd_rate:0} lần và hiệu ứng được áp dụng cho kẻ địch trong một khu vực nhỏ.\nLần tung KN chiến đấu <@ba.key>Chú Thuật Phân Tách</> đầu tiên lên mục tiêu khả dụng sẽ không tốn Điểm KN hay giải trừ <#ba.conduct>Điện Hóa</> và đảm bảo tạo 3 <@ba.key>Lưỡi Kiếm Phân Tách</> ngay cả khi mục tiêu không bị <#ba.conduct>Điện Hóa</>.",
+            "Type": 3,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Hiệu Lực (giây)",
+                    "Values": [
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25"
+                    ]
+                },
+                {
+                    "Text": "Trong Khi Dùng Tuyệt Kỹ: Hệ Số Chuỗi Đòn Đánh Thường 1",
+                    "Values": [
+                        "67%",
+                        "73%",
+                        "80%",
+                        "86%",
+                        "93%",
+                        "100%",
+                        "106%",
+                        "113%",
+                        "120%",
+                        "128%",
+                        "138%",
+                        "150%"
+                    ]
+                },
+                {
+                    "Text": "Trong Khi Dùng Tuyệt Kỹ: Hệ Số Chuỗi Đòn Đánh Thường 2",
+                    "Values": [
+                        "94%",
+                        "103%",
+                        "112%",
+                        "122%",
+                        "131%",
+                        "140%",
+                        "150%",
+                        "159%",
+                        "168%",
+                        "180%",
+                        "194%",
+                        "210%"
+                    ]
+                },
+                {
+                    "Text": "Trong Khi Dùng Tuyệt Kỹ: Hệ Số Chuỗi Đòn Đánh Thường 3",
+                    "Values": [
+                        "134%",
+                        "147%",
+                        "160%",
+                        "174%",
+                        "187%",
+                        "200%",
+                        "214%",
+                        "227%",
+                        "240%",
+                        "257%",
+                        "277%",
+                        "300%"
+                    ]
+                }
+            ]
+        },
+        "108": {
+            "Icon": "skillicon/icon_combo_skill_zhuangfy_01",
+            "Element": "Pulse",
+            "Name": "Nhất Tức Hóa Vạn",
+            "Desc": "KÍCH HOẠT LIÊN HOÀN: Khi <#ba.lastcombo>Đòn Dứt Điểm</> hoặc Kết Liễu của đặc vụ đang điều khiển trúng mục tiêu bị <#ba.pulseinflict>Nhiễm Điện</>.\nZhuang Fangyi tạo một Trận Pháp Lôi Tức tấn công kẻ địch và gây <@ba.pulse>ST Điện</>. Nếu đánh trúng kẻ địch có tầng <#ba.pulseinflict>Nhiễm Điện</>, Trận Pháp sẽ <#ba.consume>hấp thụ</> tầng <#ba.pulseinflict>Nhiễm Điện</> này, buộc áp dụng <#ba.conduct>Điện Hóa</> và cộng Năng Lượng Tuyệt Kỹ tùy vào số tầng <#ba.consume>hấp thụ</>.\nNếu buộc áp dụng <#ba.conduct>Nhiễm Điện</> lên kẻ địch đã bị <#ba.conduct>Nhiễm Điện</>, vậy thì áp dụng <#ba.statuslevel>Cấp Trạng Thái</> thêm 1 cho <#ba.conduct>Điện Hóa</> của kẻ địch.",
+            "Type": 2,
+            "Cooldown": 18,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Hệ Số ST",
+                    "Values": [
+                        "160%",
+                        "176%",
+                        "192%",
+                        "208%",
+                        "224%",
+                        "240%",
+                        "256%",
+                        "272%",
+                        "288%",
+                        "308%",
+                        "332%",
+                        "360%"
+                    ]
+                },
+                {
+                    "Text": "Suy Sụp",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Tăng Năng Lượng Tuyệt Kỹ",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Năng Lượng Tuyệt Kỹ Bổ Sung/Tầng Hiệu Ứng Gây Nhiễm",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Trong Khi Dùng Tuyệt Kỹ: Hệ Số ST",
+                    "Values": [
+                        "240%",
+                        "264%",
+                        "288%",
+                        "312%",
+                        "336%",
+                        "360%",
+                        "384%",
+                        "408%",
+                        "432%",
+                        "462%",
+                        "498%",
+                        "540%"
+                    ]
+                }
+            ]
+        },
+        "105": {
+            "Icon": "skillicon/icon_attack_funnel",
+            "Element": "Pulse",
+            "Name": "Thuật Rung Chuyển",
+            "Desc": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.pulse>ST Điện</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.pulse>ST Điện</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pulse>ST Điện</> và hồi một phần Điểm KN.",
+            "Type": 0,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Hệ Số Chuỗi Đòn Đánh Thường 1",
+                    "Values": [
+                        "16%",
+                        "18%",
+                        "19%",
+                        "21%",
+                        "22%",
+                        "24%",
+                        "26%",
+                        "27%",
+                        "29%",
+                        "31%",
+                        "33%",
+                        "36%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số Chuỗi Đòn Đánh Thường 2",
+                    "Values": [
+                        "24%",
+                        "26%",
+                        "29%",
+                        "31%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "41%",
+                        "43%",
+                        "46%",
+                        "50%",
+                        "54%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số Chuỗi Đòn Đánh Thường 3",
+                    "Values": [
+                        "32%",
+                        "35%",
+                        "39%",
+                        "42%",
+                        "45%",
+                        "48%",
+                        "52%",
+                        "55%",
+                        "58%",
+                        "62%",
+                        "67%",
+                        "72%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số Chuỗi Đòn Đánh Thường 4",
+                    "Values": [
+                        "45%",
+                        "50%",
+                        "54%",
+                        "59%",
+                        "63%",
+                        "68%",
+                        "72%",
+                        "77%",
+                        "81%",
+                        "87%",
+                        "93%",
+                        "101%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số Chuỗi Đòn Đánh Thường 5",
+                    "Values": [
+                        "48%",
+                        "53%",
+                        "58%",
+                        "62%",
+                        "67%",
+                        "72%",
+                        "77%",
+                        "82%",
+                        "86%",
+                        "92%",
+                        "100%",
+                        "108%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số Đòn Kết Liễu",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số Đòn Bổ Nhào",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "106": {
+            "Icon": "skillicon/icon_skill_zhuangfy_01",
+            "Element": "Pulse",
+            "Name": "Chú Thuật Phân Tách",
+            "Desc": "<#ba.consume>Tiêu hao</> <#ba.conduct>Điện Hóa</> của mục tiêu để tăng Hệ Số ST của KN chiến đấu này và tạo ra [<#ba.statuslevel>Cấp Trạng Thái</> của <#ba.conduct>Điện Hóa</> <#ba.consume>đã tiêu hao</> <@ba.key>+1</>] <@ba.key>Lưỡi Kiếm Phân Tách</>. Nếu chiến trường có ít hơn {free_sword_limit:0} <@ba.key>Lưỡi Kiếm Phân Tách</>, Chú Thuật Phân Tách vẫn có thể tạo ra 1 <@ba.key>Lưỡi Kiếm Phân Tách</>, ngay cả khi nó không <#ba.consume>tiêu hao</> <#ba.conduct>Điện Hóa</> của mục tiêu nào.\nZhuang Fangyi sau đó sẽ hội tụ tất cả <@ba.key>Lưỡi Kiếm Phân Tách</> gần đó để liên tiếp tung Lôi Kích vào mục tiêu, gây <@ba.pulse>ST Điện</> và cấp Năng Lượng Tuyệt Kỹ Cộng Thêm, với đòn Lôi Kích cuối cùng gây ST gấp {final_rate:0} lần.\n<@ba.info>Mỗi lần thi triển KN chiến đấu chỉ có thể tạo ra tối đa {max_conduct_sword:0} Lưỡi Kiếm Phân Tách.</>",
+            "Type": 1,
+            "Cooldown": 0,
+            "CostType": "Atb",
+            "CostValue": 100,
+            "Params": [
+                {
+                    "Text": "Hệ Số ST Lôi Kích",
+                    "Values": [
+                        "20%",
+                        "22%",
+                        "24%",
+                        "26%",
+                        "28%",
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "39%",
+                        "42%",
+                        "45%"
+                    ]
+                },
+                {
+                    "Text": "Tổng Suy Sụp",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số ST Cộng Thêm/Cấp Trạng Thái của Hiệu Ứng Điện Hóa Đã Giải Trừ",
+                    "Values": [
+                        "3%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "6%",
+                        "6%",
+                        "7%",
+                        "8%",
+                        "9%"
+                    ]
+                },
+                {
+                    "Text": "Năng Lượng Tuyệt Kỹ Cộng Thêm/ Lôi Kích",
+                    "Values": [
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6"
+                    ]
+                },
+                {
+                    "Text": "Giới hạn Lưỡi Kiếm Phân Tách",
+                    "Values": [
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9"
+                    ]
+                },
+                {
+                    "Text": "Hiệu Lực Lưỡi Kiếm Phân Tách (giây)",
+                    "Values": [
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36"
+                    ]
+                },
+                {
+                    "Text": "Trong Khi Dùng Tuyệt Kỹ: Hệ Số ST Lôi Kích",
+                    "Values": [
+                        "36%",
+                        "40%",
+                        "43%",
+                        "47%",
+                        "50%",
+                        "54%",
+                        "58%",
+                        "61%",
+                        "65%",
+                        "69%",
+                        "75%",
+                        "81%"
+                    ]
+                },
+                {
+                    "Text": "Trong Khi Dùng Tuyệt Kỹ: Hệ Số ST Cộng Thêm/Cấp Trạng Thái của Hiệu Ứng Điện Hóa Đã Giải Trừ",
+                    "Values": [
+                        "8%",
+                        "9%",
+                        "10%",
+                        "11%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0030_zhuangfy_passive_skill_0_2": {
+            "Icon": "icon_talent_zhuangfy_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Sức Mạnh Tự Nhiên",
+            "Desc": "KN chiến đấu <@ba.key>Chú Thuật Phân Tách</> được cải thiện: Khi tung KN chiến đấu, Zhuang Fangyi nhận <@ba.vup>18.0%</> <#ba.pulseenhance>Khuếch Đại Điện</> trong <@ba.vup>5</> giây.\nKhi tung KN chiến đấu để đánh trúng bằng Lôi Kích, hiệu ứng này được <@ba.vup>+2.0%</>.\nMỗi lần tung KN chiến đấu <@ba.key>Chú Thuật Phân Tách</> thì hiệu ứng <#ba.pulseenhance>Khuếch Đại Điện</> này lại được đặt lại.",
+            "Type": 4
+        },
+        "fac_chr_0030_zhuangfy_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
+            "Name": "Trải Nghiệm Phó Vương γ",
+            "Desc": "Khi phân công vào Khoang Sản Xuất, làm chậm mức Giảm Tâm Trạng của tất cả cán viên trong đó đi 18%",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "chr_0030_zhuangfy_passive_skill_1_2": {
+            "Icon": "icon_talent_zhuangfy_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Thánh Diễm",
+            "Desc": "Có <@ba.vup>9.0%</> tỷ lệ miễn ST phải chịu, mỗi <@ba.key>Lưỡi Kiếm Phân Tách</> gần đó khiến tỷ lệ này tăng thêm <@ba.vup>+1.0%</>.\nSau khi kích hoạt Miễn ST, Zhuang Fangyi cũng được nhận <@ba.heal>18.0%</> HP Tối Đa. Hiệu ứng khôi phục HP chỉ kích hoạt một lần sau mỗi <@ba.vup>99</> giây.",
+            "Type": 4
+        },
+        "chr_0030_zhuangfy_passive_skill_0_1": {
+            "Icon": "icon_talent_zhuangfy_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Sức Mạnh Tự Nhiên",
+            "Desc": "KN chiến đấu <@ba.key>Chú Thuật Phân Tách</> được cải thiện: Khi tung KN chiến đấu, Zhuang Fangyi nhận <@ba.vup>9.0%</> <#ba.pulseenhance>Khuếch Đại Điện</> trong <@ba.vup>5</> giây.\nKhi tung KN chiến đấu để đánh trúng bằng Lôi Kích, hiệu ứng này được <@ba.vup>+1.0%</>.\nMỗi lần tung KN chiến đấu <@ba.key>Chú Thuật Phân Tách</> thì hiệu ứng <#ba.pulseenhance>Khuếch Đại Điện</> này lại được đặt lại.",
+            "Type": 4
+        },
+        "chr_0030_zhuangfy_passive_skill_1_1": {
+            "Icon": "icon_talent_zhuangfy_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Thánh Diễm",
+            "Desc": "Có <@ba.vup>9.0%</> tỷ lệ miễn ST phải chịu, mỗi <@ba.key>Lưỡi Kiếm Phân Tách</> gần đó khiến tỷ lệ này tăng thêm <@ba.vup>+1.0%</>.\nSau khi kích hoạt Miễn ST, Zhuang Fangyi cũng được nhận <@ba.heal>9.0%</> HP Tối Đa. Hiệu ứng khôi phục HP chỉ kích hoạt một lần sau mỗi <@ba.vup>99</> giây.",
+            "Type": 4
+        },
+        "fac_chr_0030_zhuangfy_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Thiên Thức Khí Thiên Sư γ",
+            "Desc": "Khi phân công vào Khoang Sản Xuất, hiệu suất sản xuất nguyên liệu tăng EXP cán viên +30%",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0030_zhuangfy_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
+            "Name": "Trải Nghiệm Phó Vương β",
+            "Desc": "Khi phân công vào Khoang Sản Xuất, làm chậm mức Giảm Tâm Trạng của tất cả cán viên trong đó đi 14%",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0030_zhuangfy_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Thiên Thức Khí Thiên Sư β",
+            "Desc": "Khi phân công vào Khoang Sản Xuất, hiệu suất sản xuất nguyên liệu tăng EXP cán viên +20%",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        }
+    }
+}

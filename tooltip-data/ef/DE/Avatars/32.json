@@ -1,0 +1,463 @@
+{
+    "StrId": "chr_0022_bounda",
+    "Name": "Fluorite",
+    "Rarity": 4,
+    "Element": "Natural",
+    "Profession": "CASTER",
+    "WeaponType": "Pistol",
+    "MainAttrId": 40,
+    "SubAttrId": 41,
+    "AttributeNodes": {
+        "chr_0022_bounda_1": {
+            "40": 10
+        },
+        "chr_0022_bounda_3": {
+            "40": 15
+        },
+        "chr_0022_bounda_5": {
+            "40": 15
+        },
+        "chr_0022_bounda_7": {
+            "40": 20
+        }
+    },
+    "SkillInfoMap": {
+        "70": {
+            "Icon": "skillicon/icon_skill_bounda_01",
+            "Element": "Natural",
+            "Name": "Winzige Überraschung",
+            "Desc": "Befördert <@ba.key>Improvisierten Sprengstoff</> mit einem Tritt zum Ziel. Der Sprengstoff haftet am Gegner, belegt diesen mit <#ba.slow>Verlangsamung</> und explodiert nach kurzer Zeit. Die Explosion verursacht <@ba.natur>Natur-SDN</> und belegt Gegner im Wirkungsbereich mit <#ba.naturalinflict>Natur</>. Der <@ba.key>improvisierte Sprengstoff</> explodiert unverzüglich, wenn der betreffende Gegner bezwungen wird.\n<@ba.info>Auf dem Schlachtfeld kann immer nur 1 improvisierter Sprengstoff anwesend sein.</>",
+            "Type": 1,
+            "Cooldown": 0,
+            "CostType": "Atb",
+            "CostValue": 100,
+            "Params": [
+                {
+                    "Text": "SDN-Multiplikator",
+                    "Values": [
+                        "187%",
+                        "206%",
+                        "224%",
+                        "243%",
+                        "262%",
+                        "280%",
+                        "299%",
+                        "318%",
+                        "336%",
+                        "360%",
+                        "388%",
+                        "420%"
+                    ]
+                },
+                {
+                    "Text": "Taumeln",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Verlangsamen-Effekt",
+                    "Values": [
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%"
+                    ]
+                }
+            ]
+        },
+        "72": {
+            "Icon": "skillicon/icon_combo_skill_bounda_01",
+            "Element": "Natural",
+            "Name": "Gratis-Geschenk",
+            "Desc": "KOMBOAUSLÖSER: Wenn ein Gegner über 2 oder mehr <#ba.crystinflict>Kryo</>- oder <#ba.naturalinflict>Natur-Kumulierungen</> verfügt. \nFührt einen Schuss auf den Gegner aus, um eine spezielle Explosion auszulösen, die <@ba.natur>Natur-SDN</> verursacht und diesem eine weitere <#ba.spellinflict>Technikkumulierung</> des Elements zufügt, mit dem er bereits belegt ist.",
+            "Type": 2,
+            "Cooldown": 40,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "SDN-Multiplikator",
+                    "Values": [
+                        "169%",
+                        "186%",
+                        "203%",
+                        "220%",
+                        "237%",
+                        "254%",
+                        "270%",
+                        "287%",
+                        "304%",
+                        "325%",
+                        "351%",
+                        "380%"
+                    ]
+                },
+                {
+                    "Text": "Taumeln",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Ultimative-Energie-Erhalt",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "69": {
+            "Icon": "skillicon/icon_attack_pistol",
+            "Element": "Natural",
+            "Name": "Signaturwaffen-Kata",
+            "Desc": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.natur>Natur-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{attack_poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.natur>Natur-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.natur>Natur-SDN</> zufügen und ein wenig FP wiederherstellen.",
+            "Type": 0,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "STD-ANG-SEQ-1-Multiplikator",
+                    "Values": [
+                        "25%",
+                        "28%",
+                        "30%",
+                        "33%",
+                        "35%",
+                        "38%",
+                        "40%",
+                        "43%",
+                        "45%",
+                        "48%",
+                        "52%",
+                        "56%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-2-Multiplikator",
+                    "Values": [
+                        "33%",
+                        "36%",
+                        "39%",
+                        "42%",
+                        "46%",
+                        "49%",
+                        "52%",
+                        "55%",
+                        "59%",
+                        "63%",
+                        "67%",
+                        "73%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-3-Multiplikator",
+                    "Values": [
+                        "26%",
+                        "28%",
+                        "31%",
+                        "33%",
+                        "36%",
+                        "38%",
+                        "41%",
+                        "43%",
+                        "46%",
+                        "49%",
+                        "53%",
+                        "57%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-4-Multiplikator",
+                    "Values": [
+                        "60%",
+                        "66%",
+                        "72%",
+                        "78%",
+                        "84%",
+                        "90%",
+                        "96%",
+                        "102%",
+                        "108%",
+                        "116%",
+                        "125%",
+                        "135%"
+                    ]
+                },
+                {
+                    "Text": "Wuchtschlag-ANG-Multiplikator",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Sturz-ANG-Multiplikator",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "71": {
+            "Icon": "skillicon/icon_ultimate_skill_bounda_01",
+            "Element": "Natural",
+            "Name": "Spitzenscherzbold",
+            "Desc": "Fluorite bewegt sich flink in einem Bogen, feuert schnell auf die Ziele innerhalb des Bogens und verursacht dabei <@ba.natur>Natur-SDN</> in 4 Sequenzen. Wenn ein <@ba.key>improvisierter Sprengstoff</> an einem Gegner klebt, explodiert er sofort, wobei SDN und Größe der Explosion erhöht sind.\nWenn die letzte SDN-Sequenz ein Ziel mit mindestens 2 Kumulierungen <#ba.crystinflict>Kryo</> oder <#ba.naturalinflict>Natur</> trifft, wird dieselbe <#ba.spellinflict>Technikkumulierung</> erneut angewendet.",
+            "Type": 3,
+            "Cooldown": 10,
+            "CostType": "UltimateSp",
+            "CostValue": 100,
+            "Params": [
+                {
+                    "Text": "SEQ-1-SDN-Multiplikator",
+                    "Values": [
+                        "111%",
+                        "122%",
+                        "133%",
+                        "144%",
+                        "156%",
+                        "167%",
+                        "178%",
+                        "189%",
+                        "200%",
+                        "214%",
+                        "231%",
+                        "250%"
+                    ]
+                },
+                {
+                    "Text": "SEQ-2-SDN-Multiplikator",
+                    "Values": [
+                        "111%",
+                        "122%",
+                        "133%",
+                        "144%",
+                        "156%",
+                        "167%",
+                        "178%",
+                        "189%",
+                        "200%",
+                        "214%",
+                        "231%",
+                        "250%"
+                    ]
+                },
+                {
+                    "Text": "SEQ-3-SDN-Multiplikator",
+                    "Values": [
+                        "111%",
+                        "122%",
+                        "133%",
+                        "144%",
+                        "156%",
+                        "167%",
+                        "178%",
+                        "189%",
+                        "200%",
+                        "214%",
+                        "231%",
+                        "250%"
+                    ]
+                },
+                {
+                    "Text": "SEQ-4-SDN-Multiplikator",
+                    "Values": [
+                        "111%",
+                        "122%",
+                        "133%",
+                        "144%",
+                        "156%",
+                        "167%",
+                        "178%",
+                        "189%",
+                        "200%",
+                        "214%",
+                        "231%",
+                        "250%"
+                    ]
+                },
+                {
+                    "Text": "Wirkungsbereich-Bonus: Kampffertigkeit",
+                    "Values": [
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%"
+                    ]
+                },
+                {
+                    "Text": "SDN-Bonus: Kampffertigkeit",
+                    "Values": [
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%"
+                    ]
+                },
+                {
+                    "Text": "Taumeln",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "fac_chr_0022_bounda_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "Feinfühlig γ",
+            "Desc": "Dem Kontrollnexus zuweisen, um allen Operatoren Stimmungszunahme +16 % zu gewähren.",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        },
+        "chr_0022_bounda_passive_skill_1_2": {
+            "Icon": "icon_talent_bounda_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Unvorhersehbar",
+            "Desc": "Verleiht eine <@ba.vup>20.0%</>-Chance auf <#ba.spelldmg>Technik-SDN</>-Immunität und verleiht Fluorite für <@ba.vup>10</> Sek. ANG <@ba.vup>+20.0%</>. Dieser Effekt kann nicht kumuliert werden.",
+            "Type": 4
+        },
+        "fac_chr_0022_bounda_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_mineral",
+            "Name": "Wildtrekkerin α",
+            "Desc": "Wachstumskammer zuweisen, um Wachstumsrate von seltenen Mineralien um +10 % zu erhöhen.",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0022_bounda_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_mineral",
+            "Name": "Wildtrekkerin β",
+            "Desc": "Wachstumskammer zuweisen, um Wachstumsrate von seltenen Mineralien um +20 % zu erhöhen.",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "chr_0022_bounda_passive_skill_0_2": {
+            "Icon": "icon_talent_bounda_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Stechen, drehen, freuen",
+            "Desc": "Fluorite fügt <#ba.slow>Verlangsamten</> Zielen <@ba.vup>+20.0%</> SDN zu.",
+            "Type": 4
+        },
+        "chr_0022_bounda_passive_skill_0_1": {
+            "Icon": "icon_talent_bounda_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Stechen, drehen, freuen",
+            "Desc": "Fluorite fügt <#ba.slow>Verlangsamten</> Zielen <@ba.vup>+10.0%</> SDN zu.",
+            "Type": 4
+        },
+        "chr_0022_bounda_passive_skill_1_1": {
+            "Icon": "icon_talent_bounda_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Unvorhersehbar",
+            "Desc": "Verleiht eine <@ba.vup>20.0%</>-Chance auf <#ba.spelldmg>Technik-SDN</>-Immunität und verleiht Fluorite für <@ba.vup>10</> Sek. ANG <@ba.vup>+10.0%</>. Dieser Effekt kann nicht kumuliert werden.",
+            "Type": 4
+        },
+        "fac_chr_0022_bounda_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "Feinfühlig β",
+            "Desc": "Dem Kontrollnexus zuweisen, um allen Operatoren Stimmungszunahme +12 % zu gewähren.",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        }
+    }
+}

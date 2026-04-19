@@ -1,0 +1,472 @@
+{
+    "StrId": "chr_0011_seraph",
+    "Name": "Xaihi",
+    "Rarity": 5,
+    "Element": "Cryst",
+    "Profession": "SUPPORTER",
+    "WeaponType": "Wand",
+    "MainAttrId": 42,
+    "SubAttrId": 41,
+    "AttributeNodes": {
+        "chr_0011_seraph_7": {
+            "42": 20
+        },
+        "chr_0011_seraph_5": {
+            "42": 15
+        },
+        "chr_0011_seraph_3": {
+            "42": 15
+        },
+        "chr_0011_seraph_1": {
+            "42": 10
+        }
+    },
+    "SkillInfoMap": {
+        "12": {
+            "Icon": "skillicon/icon_ultimate_skill_seraph_01",
+            "Element": "Cryst",
+            "Name": "Kumulierungs-\nüberschuss",
+            "Desc": "Das gesamte Team erhält vorübergehend <#ba.crystenhance>Kryo-Verstärkung</> und <#ba.naturalenhance>Natur-Verstärkung</>. Der Verstärker-Effekt erhöht sich mit dem Intellekt-Attribut.",
+            "Type": 3,
+            "Cooldown": 20,
+            "CostType": "UltimateSp",
+            "CostValue": 80,
+            "Params": [
+                {
+                    "Text": "Grund-Kryo-Verstärkung",
+                    "Values": [
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "19%",
+                        "21%",
+                        "22%",
+                        "24%"
+                    ]
+                },
+                {
+                    "Text": "Grund-Natur-Verstärkung",
+                    "Values": [
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "19%",
+                        "21%",
+                        "22%",
+                        "24%"
+                    ]
+                },
+                {
+                    "Text": "Verstärkungssteigerung pro Intellekt",
+                    "Values": [
+                        "0.014%",
+                        "0.015%",
+                        "0.016%",
+                        "0.018%",
+                        "0.019%",
+                        "0.02%",
+                        "0.022%",
+                        "0.023%",
+                        "0.024%",
+                        "0.026%",
+                        "0.028%",
+                        "0.03%"
+                    ]
+                },
+                {
+                    "Text": "Intellekt erhöht Verstärkungs-Limit",
+                    "Values": [
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "30%",
+                        "36%"
+                    ]
+                },
+                {
+                    "Text": "Dauer (Sek.)",
+                    "Values": [
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12"
+                    ]
+                }
+            ]
+        },
+        "53": {
+            "Icon": "skillicon/icon_combo_skill_seraph_01",
+            "Element": "Cryst",
+            "Name": "Stresstest",
+            "Desc": "KOMBOAUSLÖSER: Der <@ba.key>Hilfskristall</> verbraucht seine LP-Behandlungen. \nLädt den <@ba.key>Hilfskristall</> schnell auf und wirft ihn auf den Gegner, um <@ba.cryst>Kryo-SDN</> und <#ba.crystinflict>Kryo</> zu verursachen.",
+            "Type": 2,
+            "Cooldown": 8,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "SDN-Multiplikator",
+                    "Values": [
+                        "200%",
+                        "220%",
+                        "240%",
+                        "260%",
+                        "280%",
+                        "300%",
+                        "320%",
+                        "340%",
+                        "360%",
+                        "385%",
+                        "415%",
+                        "450%"
+                    ]
+                },
+                {
+                    "Text": "Taumeln",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Ultimative-Energie-Erhalt",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "10": {
+            "Icon": "skillicon/icon_attack_funnel",
+            "Element": "Cryst",
+            "Name": "Abkühlung",
+            "Desc": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.cryst>Kryo-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.cryst>Kryo-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.cryst>Kryo-SDN</> zufügen und ein wenig FP wiederherstellen.",
+            "Type": 0,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "STD-ANG-SEQ-1-Multiplikator",
+                    "Values": [
+                        "15%",
+                        "17%",
+                        "18%",
+                        "20%",
+                        "21%",
+                        "23%",
+                        "24%",
+                        "26%",
+                        "27%",
+                        "29%",
+                        "31%",
+                        "34%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-2-Multiplikator",
+                    "Values": [
+                        "16%",
+                        "18%",
+                        "19%",
+                        "21%",
+                        "22%",
+                        "24%",
+                        "26%",
+                        "27%",
+                        "29%",
+                        "31%",
+                        "33%",
+                        "36%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-3-Multiplikator",
+                    "Values": [
+                        "21%",
+                        "23%",
+                        "25%",
+                        "27%",
+                        "29%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "40%",
+                        "44%",
+                        "47%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-4-Multiplikator",
+                    "Values": [
+                        "33%",
+                        "36%",
+                        "40%",
+                        "43%",
+                        "46%",
+                        "50%",
+                        "53%",
+                        "56%",
+                        "59%",
+                        "64%",
+                        "68%",
+                        "74%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-5-Multiplikator",
+                    "Values": [
+                        "55%",
+                        "61%",
+                        "66%",
+                        "72%",
+                        "77%",
+                        "83%",
+                        "88%",
+                        "94%",
+                        "99%",
+                        "106%",
+                        "114%",
+                        "124%"
+                    ]
+                },
+                {
+                    "Text": "Wuchtschlag-ANG-Multiplikator",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Sturz-ANG-Multiplikator",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "11": {
+            "Icon": "skillicon/icon_skill_seraph_01",
+            "Element": "Cryst",
+            "Name": "Distributed DoS",
+            "Desc": "Beschwört einen <@ba.key>Hilfskristall</>, der eine Weile beim gesteuerten Operator bleibt. \nWenn der gesteuerte Operator einen <#ba.lastcombo>Abschlussangriff</> gegen den Gegner ausgeführt hat, stellt der <@ba.key>Hilfskristall</> die LP dieses Operators wieder her. Dieser Effekt kann 2 Mal ausgelöst werden. Die Wirksamkeit der LP-Behandlung erhöht sich mit dem Wille-Attribut. \nWenn der gesteuerte Operator bereits bei voller Gesundheit ist, wenn die LP-Behandlung ausgelöst wird, erhält dieser außerdem vorübergehend <#ba.spellenhance>Technik-Verstärkung</>. Dieser Effekt ist nicht kumulierbar.",
+            "Type": 1,
+            "Cooldown": 0,
+            "CostType": "Atb",
+            "CostValue": 100,
+            "Params": [
+                {
+                    "Text": "Grundbehandlung",
+                    "Values": [
+                        "144",
+                        "173",
+                        "202",
+                        "230",
+                        "245",
+                        "259",
+                        "274",
+                        "288",
+                        "302",
+                        "310",
+                        "317",
+                        "324"
+                    ]
+                },
+                {
+                    "Text": "Behandlungssteigerung pro Wille",
+                    "Values": [
+                        "0.34",
+                        "0.4",
+                        "0.47",
+                        "0.54",
+                        "0.57",
+                        "0.6",
+                        "0.64",
+                        "0.67",
+                        "0.71",
+                        "0.72",
+                        "0.74",
+                        "0.76"
+                    ]
+                },
+                {
+                    "Text": "Dauer: Hilfskristall (Sek.)",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Technik-Verstärkung",
+                    "Values": [
+                        "9%",
+                        "9%",
+                        "9%",
+                        "9%",
+                        "9%",
+                        "11%",
+                        "11%",
+                        "11%",
+                        "13%",
+                        "13%",
+                        "13%",
+                        "15%"
+                    ]
+                },
+                {
+                    "Text": "Dauer: Technik-Verstärkung (Sek.)",
+                    "Values": [
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "fac_chr_0011_seraph_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Standardisiertes Skript α",
+            "Desc": "Herstellungskabine zuweisen, um Operator-EP-Materialproduktionseffizienz um +10 % zu erhöhen.",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0011_seraph_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Standardisiertes Skript β",
+            "Desc": "Herstellungskabine zuweisen, um Operator-EP-Materialproduktionseffizienz um +20 % zu erhöhen.",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0011_seraph_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
+            "Name": "Gemurmel-Sitzung α",
+            "Desc": "Dem Empfang zuweisen, um die Wahrscheinlichkeit geringfügig zu erhöhen, dass der Operator Hinweis 5: Orden der Stille sammelt (wird bei Zuweisung aktiviert; Effekte derselben Art können nicht kombiniert werden).",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "chr_0011_seraph_passive_skill_1_1": {
+            "Icon": "icon_talent_seraph_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Frostprotokoll",
+            "Desc": "Ultimative Fertigkeit <@ba.key>Kumulierungsüberschuss</> verbessert: Die Ultimative Fertigkeit <#ba.dispel>befreit</> außerdem das gesamte Team von <#ba.crystonchar>Kryo</> und <#ba.frozenonchar>Erstarrung</>.",
+            "Type": 4
+        },
+        "fac_chr_0011_seraph_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
+            "Name": "Gemurmel-Sitzung β",
+            "Desc": "Dem Empfang zuweisen, um die Wahrscheinlichkeit zu erhöhen, dass der Operator Hinweis 5: Orden der Stille sammelt (wird bei Zuweisung aktiviert; Effekte derselben Art können nicht kombiniert werden).",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        },
+        "chr_0011_seraph_passive_skill_0_2": {
+            "Icon": "icon_talent_seraph_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Vorgang Ausführen",
+            "Desc": "Kombofertigkeit <@ba.key>Stresstest</> verbessert: Wird ein Gegner mit <#ba.crystinflict>Kryo</> oder <#ba.frozen>Erstarrung</> getroffen, erleidet er außerdem für <@ba.vup>5</> Sek. <@ba.cryst>erlittener Kryo-SDN</> <@ba.vup>+10.0%</>. Dieser Effekt kann nicht kumuliert werden.",
+            "Type": 4
+        },
+        "chr_0011_seraph_passive_skill_0_1": {
+            "Icon": "icon_talent_seraph_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Vorgang Ausführen",
+            "Desc": "Kombofertigkeit <@ba.key>Stresstest</> verbessert: Wird ein Gegner mit <#ba.crystinflict>Kryo</> oder <#ba.frozen>Erstarrung</> getroffen, erleidet er außerdem für <@ba.vup>5</> Sek. <@ba.cryst>erlittener Kryo-SDN</> <@ba.vup>+7.000000000000001%</>. Dieser Effekt kann nicht kumuliert werden.",
+            "Type": 4
+        }
+    }
+}

@@ -1,0 +1,565 @@
+{
+    "StrId": "chr_0020_meurs",
+    "Name": "Catcher",
+    "Rarity": 4,
+    "Element": "Physical",
+    "Profession": "DEFENDER",
+    "WeaponType": "Claymores",
+    "MainAttrId": 39,
+    "SubAttrId": 42,
+    "AttributeNodes": {
+        "chr_0020_meurs_3": {
+            "39": 15
+        },
+        "chr_0020_meurs_7": {
+            "39": 20
+        },
+        "chr_0020_meurs_1": {
+            "39": 10
+        },
+        "chr_0020_meurs_5": {
+            "39": 15
+        }
+    },
+    "SkillInfoMap": {
+        "92": {
+            "Icon": "skillicon/icon_combo_skill_meurs_01",
+            "Element": "Physical",
+            "Name": "Rechtzeitige Unterdrückung",
+            "Desc": "KOMBOAUSLÖSER: Wenn ein Gegner beginnt, eine Fertigkeit aufzuladen, oder der gesteuerte Operator angegriffen wird und seine Gesundheit sinkt unter {trigger_hp_ratio:0%} LP. \nFührt einen mächtigen Schlag nach unten aus, der dem Gegner <@ba.pd>Physischen SDN</> zufügt, und gewährt sich selbst und einem anderen Teammitglied <#ba.shield>Schilde</> gewährt (der gesteuerte Operator erhält Priorität).\nDie Schildpunkte erhöhen sich mit dem VERT-Wert.",
+            "Type": 2,
+            "Cooldown": 35,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "SEQ-1-SDN-Multiplikator",
+                    "Values": [
+                        "25%",
+                        "27%",
+                        "30%",
+                        "32%",
+                        "34%",
+                        "37%",
+                        "39%",
+                        "42%",
+                        "44%",
+                        "47%",
+                        "51%",
+                        "55%"
+                    ]
+                },
+                {
+                    "Text": "SEQ-2-SDN-Multiplikator",
+                    "Values": [
+                        "100%",
+                        "110%",
+                        "120%",
+                        "130%",
+                        "140%",
+                        "150%",
+                        "160%",
+                        "170%",
+                        "180%",
+                        "193%",
+                        "208%",
+                        "225%"
+                    ]
+                },
+                {
+                    "Text": "Taumeln",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Grund-Schild",
+                    "Values": [
+                        "360",
+                        "432",
+                        "504",
+                        "576",
+                        "612",
+                        "648",
+                        "684",
+                        "720",
+                        "756",
+                        "774",
+                        "792",
+                        "810"
+                    ]
+                },
+                {
+                    "Text": "Schild-Steigerung pro Verteidigung",
+                    "Values": [
+                        "2.25",
+                        "2.7",
+                        "3.15",
+                        "3.6",
+                        "3.83",
+                        "4.05",
+                        "4.28",
+                        "4.5",
+                        "4.73",
+                        "4.84",
+                        "4.95",
+                        "5.06"
+                    ]
+                },
+                {
+                    "Text": "Schilddauer (Sek.)",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Ultimative-Energie-Erhalt",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "90": {
+            "Icon": "skillicon/icon_skill_meurs_01",
+            "Element": "Physical",
+            "Name": "Strenges Verbot",
+            "Desc": "Aktiviert einen Schild, der Angriffe blockieren kann, sich selbst und Operatoren in der Nähe <#ba.guard>Schutz</> gewährt und sofort einige FP <#ba.return>wiederherstellt</>. \nWenn du angegriffen wirst, während der Schild aktiv ist, führst du einen Vergeltungsschlag aus, der <@ba.pd>Physischen SDN</> verursacht und den angreifenden Gegner mit 1 <#ba.noguard>Anfälligkeit</>-Kumulierung belegt.",
+            "Type": 1,
+            "Cooldown": 0,
+            "CostType": "Atb",
+            "CostValue": 100,
+            "Params": [
+                {
+                    "Text": "SDN-Multiplikator",
+                    "Values": [
+                        "178%",
+                        "196%",
+                        "213%",
+                        "231%",
+                        "249%",
+                        "267%",
+                        "285%",
+                        "302%",
+                        "320%",
+                        "342%",
+                        "369%",
+                        "400%"
+                    ]
+                },
+                {
+                    "Text": "Taumeln",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Schutz",
+                    "Values": [
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%"
+                    ]
+                },
+                {
+                    "Text": "FP-Rückerstattung",
+                    "Values": [
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30"
+                    ]
+                }
+            ]
+        },
+        "91": {
+            "Icon": "skillicon/icon_ultimate_skill_meurs_01",
+            "Element": "Physical",
+            "Name": "Lehrbuchangriff",
+            "Desc": "Der Operator schwingt das Großschwert und führt 2 aufeinanderfolgende Hiebe aus, die <@ba.pd>Physischen SDN</> verursachen und getroffene Gegner mit <#ba.weak>Geschwächt</> belegen. Anschließend führt der Operator einen schweren Schlag aus, der massiven <@ba.pd>Physischen SDN</> verursacht und alle Gegner im Wirkungsbereich mit <#ba.knockdown>Niederschlag</> belegt.",
+            "Type": 3,
+            "Cooldown": 15,
+            "CostType": "UltimateSp",
+            "CostValue": 80,
+            "Params": [
+                {
+                    "Text": "SEQ-1-SDN-Multiplikator",
+                    "Values": [
+                        "89%",
+                        "98%",
+                        "107%",
+                        "116%",
+                        "125%",
+                        "134%",
+                        "143%",
+                        "151%",
+                        "160%",
+                        "172%",
+                        "185%",
+                        "200%"
+                    ]
+                },
+                {
+                    "Text": "SEQ 1 – Taumeln",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "SEQ-2-SDN-Multiplikator",
+                    "Values": [
+                        "120%",
+                        "132%",
+                        "144%",
+                        "156%",
+                        "168%",
+                        "180%",
+                        "192%",
+                        "204%",
+                        "216%",
+                        "231%",
+                        "249%",
+                        "270%"
+                    ]
+                },
+                {
+                    "Text": "SEQ 2 – Taumeln",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "SEQ-3-SDN-Multiplikator",
+                    "Values": [
+                        "178%",
+                        "196%",
+                        "213%",
+                        "231%",
+                        "249%",
+                        "267%",
+                        "284%",
+                        "302%",
+                        "320%",
+                        "342%",
+                        "369%",
+                        "400%"
+                    ]
+                },
+                {
+                    "Text": "SEQ 3 – Taumeln",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Schwäche-Effekt",
+                    "Values": [
+                        "20%",
+                        "20%",
+                        "20%",
+                        "20%",
+                        "20%",
+                        "25%",
+                        "25%",
+                        "25%",
+                        "25%",
+                        "30%",
+                        "30%",
+                        "30%"
+                    ]
+                },
+                {
+                    "Text": "Schwäche-Dauer (Sek.)",
+                    "Values": [
+                        "8",
+                        "8",
+                        "8",
+                        "8",
+                        "8",
+                        "8",
+                        "8",
+                        "8",
+                        "8",
+                        "8",
+                        "8",
+                        "8"
+                    ]
+                }
+            ]
+        },
+        "89": {
+            "Icon": "skillicon/icon_attack_claym",
+            "Element": "Physical",
+            "Name": "Grundlegende Taktiken",
+            "Desc": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen.",
+            "Type": 0,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "STD-ANG-SEQ-1-Multiplikator",
+                    "Values": [
+                        "35%",
+                        "39%",
+                        "42%",
+                        "46%",
+                        "49%",
+                        "53%",
+                        "56%",
+                        "60%",
+                        "63%",
+                        "67%",
+                        "73%",
+                        "79%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-2-Multiplikator",
+                    "Values": [
+                        "39%",
+                        "42%",
+                        "46%",
+                        "50%",
+                        "54%",
+                        "58%",
+                        "62%",
+                        "65%",
+                        "69%",
+                        "74%",
+                        "80%",
+                        "87%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-3-Multiplikator",
+                    "Values": [
+                        "54%",
+                        "59%",
+                        "65%",
+                        "70%",
+                        "76%",
+                        "81%",
+                        "86%",
+                        "92%",
+                        "97%",
+                        "104%",
+                        "112%",
+                        "122%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-4-Multiplikator",
+                    "Values": [
+                        "71%",
+                        "78%",
+                        "85%",
+                        "92%",
+                        "99%",
+                        "107%",
+                        "114%",
+                        "121%",
+                        "128%",
+                        "137%",
+                        "147%",
+                        "160%"
+                    ]
+                },
+                {
+                    "Text": "Wuchtschlag-ANG-Multiplikator",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Sturz-ANG-Multiplikator",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0020_meurs_passive_skill_1_2": {
+            "Icon": "icon_talent_meurs_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Umfassende Einstellung",
+            "Desc": "Ultimative Fertigkeit <@ba.key>Lehrbuchangriff</> verbessert: Der finale Treffer erzeugt 3 Schockwelle(n). Jede Schockwelle verursacht <@ba.pd>Physischen SDN</> in Höhe von 45.0% ANG.",
+            "Type": 4
+        },
+        "fac_chr_0020_meurs_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
+            "Name": "Wohlüberlegter Ansatz β",
+            "Desc": "Wachstumskammer zuweisen, um Stimmungsverlust aller Operatoren in der Kammer um 14 % zu verlangsamen.",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "chr_0020_meurs_passive_skill_0_2": {
+            "Icon": "icon_talent_meurs_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Stabile Verteidigung",
+            "Desc": "Für jeden 10. Punkt Wille, erhöht sich die VERT um <@ba.vup>+1.2</>.",
+            "Type": 4
+        },
+        "fac_chr_0020_meurs_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "Stille Wasser α",
+            "Desc": "Dem Kontrollnexus zuweisen, um allen Operatoren Stimmungszunahme +8 % zu gewähren.",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0020_meurs_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "Stille Wasser β",
+            "Desc": "Dem Kontrollnexus zuweisen, um allen Operatoren Stimmungszunahme +12 % zu gewähren.",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "chr_0020_meurs_passive_skill_1_1": {
+            "Icon": "icon_talent_meurs_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Umfassende Einstellung",
+            "Desc": "Ultimative Fertigkeit <@ba.key>Lehrbuchangriff</> verbessert: Der finale Treffer erzeugt 2 Schockwelle(n). Jede Schockwelle verursacht <@ba.pd>Physischen SDN</> in Höhe von 30.0% ANG.",
+            "Type": 4
+        },
+        "chr_0020_meurs_passive_skill_0_1": {
+            "Icon": "icon_talent_meurs_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Stabile Verteidigung",
+            "Desc": "Für jeden 10. Punkt Wille, erhöht sich die VERT um <@ba.vup>+1</>.",
+            "Type": 4
+        },
+        "fac_chr_0020_meurs_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
+            "Name": "Wohlüberlegter Ansatz γ",
+            "Desc": "Wachstumskammer zuweisen, um Stimmungsverlust aller Operatoren in der Kammer um 18 % zu verlangsamen.",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        }
+    }
+}

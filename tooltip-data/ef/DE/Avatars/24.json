@@ -1,0 +1,497 @@
+{
+    "StrId": "chr_0014_aurora",
+    "Name": "Snowshine",
+    "Rarity": 5,
+    "Element": "Cryst",
+    "Profession": "DEFENDER",
+    "WeaponType": "Claymores",
+    "MainAttrId": 39,
+    "SubAttrId": 42,
+    "AttributeNodes": {
+        "chr_0014_aurora_1": {
+            "39": 10
+        },
+        "chr_0014_aurora_3": {
+            "39": 15
+        },
+        "chr_0014_aurora_5": {
+            "39": 15
+        },
+        "chr_0014_aurora_7": {
+            "39": 20
+        }
+    },
+    "SkillInfoMap": {
+        "43": {
+            "Icon": "skillicon/icon_skill_aurora_01",
+            "Element": "Cryst",
+            "Name": "Gesättigte Verteidigung",
+            "Desc": "Aktiviert einen Schild, der Angriffe abwehren kann, dem Operator und Operatoren in der Nähe <#ba.guard>Schutz</> gewährt und sofort einige FP <#ba.return>wiederherstellt</>. \nWenn du angegriffen wirst, während der Schild aktiv ist, führst du einen Vergeltungsschlag aus, der <@ba.cryst>Kryo-SDN</> verursacht und den angreifenden Gegner mit <#ba.crystinflict>Kryo</> belegt.",
+            "Type": 1,
+            "Cooldown": 0,
+            "CostType": "Atb",
+            "CostValue": 100,
+            "Params": [
+                {
+                    "Text": "SDN-Multiplikator",
+                    "Values": [
+                        "200%",
+                        "220%",
+                        "240%",
+                        "260%",
+                        "280%",
+                        "300%",
+                        "320%",
+                        "340%",
+                        "360%",
+                        "385%",
+                        "415%",
+                        "450%"
+                    ]
+                },
+                {
+                    "Text": "Taumeln",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Schutz",
+                    "Values": [
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%"
+                    ]
+                },
+                {
+                    "Text": "FP-Rückerstattung",
+                    "Values": [
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30"
+                    ]
+                }
+            ]
+        },
+        "50": {
+            "Icon": "skillicon/icon_combo_skill_aurora_01",
+            "Element": "Cryst",
+            "Name": "Polarrettung",
+            "Desc": "KOMBOAUSLÖSER: Wenn der gesteuerte Operator angegriffen wird und auf weniger als {trigger_hp_ratio:0%} LP fällt. \nSnowshine wirft einen Schneefeld-R-Team-Assistenten zum gesteuerten Operator. Bei Kontakt bewirkt der Assistent bei nahen Operatoren sofort eine umfangreiche <@ba.heal>LP-Behandlung</> und bei Operatoren im Wirkungsbereich eine kontinuierliche <@ba.heal>LP-Behandlung</>. \nDie Wirksamkeit der LP-Behandlung erhöht sich durch das Wille-Attribut.",
+            "Type": 2,
+            "Cooldown": 25,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Ausgangs-Grundbehandlung",
+                    "Values": [
+                        "96",
+                        "115",
+                        "134",
+                        "154",
+                        "163",
+                        "173",
+                        "182",
+                        "192",
+                        "202",
+                        "206",
+                        "211",
+                        "216"
+                    ]
+                },
+                {
+                    "Text": "Grund-Behandlungssteigerung pro Wille",
+                    "Values": [
+                        "0.22",
+                        "0.27",
+                        "0.31",
+                        "0.36",
+                        "0.38",
+                        "0.4",
+                        "0.43",
+                        "0.45",
+                        "0.47",
+                        "0.48",
+                        "0.49",
+                        "0.5"
+                    ]
+                },
+                {
+                    "Text": "Kontinuierliche Grundbehandlung",
+                    "Values": [
+                        "24",
+                        "29",
+                        "34",
+                        "38",
+                        "41",
+                        "43",
+                        "46",
+                        "48",
+                        "50",
+                        "52",
+                        "53",
+                        "54"
+                    ]
+                },
+                {
+                    "Text": "Behandlungssteigerung über Zeit pro Wille",
+                    "Values": [
+                        "0.06",
+                        "0.07",
+                        "0.08",
+                        "0.09",
+                        "0.1",
+                        "0.1",
+                        "0.11",
+                        "0.11",
+                        "0.12",
+                        "0.12",
+                        "0.12",
+                        "0.13"
+                    ]
+                },
+                {
+                    "Text": "Zeitintervall für Kontinuierliche Behandlung (Sek.)",
+                    "Values": [
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5"
+                    ]
+                },
+                {
+                    "Text": "Dauer (Sek.)",
+                    "Values": [
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3"
+                    ]
+                },
+                {
+                    "Text": "Ultimative-Energie-Erhalt",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "42": {
+            "Icon": "skillicon/icon_attack_claym",
+            "Element": "Physical",
+            "Name": "Hypothermischer Sturmangriff",
+            "Desc": "STANDARDANGRIFF: \nEin Angriff mit bis zu 3 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlagangriffen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen.",
+            "Type": 0,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "STD-ANG-SEQ-1-Multiplikator",
+                    "Values": [
+                        "55%",
+                        "61%",
+                        "66%",
+                        "72%",
+                        "77%",
+                        "83%",
+                        "88%",
+                        "94%",
+                        "99%",
+                        "106%",
+                        "114%",
+                        "124%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-2-Multiplikator",
+                    "Values": [
+                        "59%",
+                        "64%",
+                        "70%",
+                        "76%",
+                        "82%",
+                        "88%",
+                        "94%",
+                        "99%",
+                        "105%",
+                        "113%",
+                        "121%",
+                        "132%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-3-Multiplikator",
+                    "Values": [
+                        "100%",
+                        "110%",
+                        "120%",
+                        "130%",
+                        "140%",
+                        "150%",
+                        "160%",
+                        "170%",
+                        "180%",
+                        "193%",
+                        "208%",
+                        "225%"
+                    ]
+                },
+                {
+                    "Text": "Wuchtschlag-ANG-Multiplikator",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Sturz-ANG-Multiplikator",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "44": {
+            "Icon": "skillicon/icon_ultimate_skill_aurora_01",
+            "Element": "Cryst",
+            "Name": "Eisiges Schneefeld",
+            "Desc": "Springt mit einem Raketenrucksack in die Luft und schlägt dann mit ihrem Schild auf, um Gegnern im Wirkungsbereich massiven <@ba.cryst>Kryo-SDN</> zuzufügen. Erzeugt außerdem eine <@ba.key>Schneezone</> (die mehrere Sekunden lang anhält), die Gegnern kontinuierlichen <@ba.cryst>Kryo-SDN</> zufügt. Die <@ba.key>Schneezone</> belegt Gegner, die darin gefangen sind, für einen bestimmten Zeitraum mit <#ba.frozen>Erstarrung</>.",
+            "Type": 3,
+            "Cooldown": 20,
+            "CostType": "UltimateSp",
+            "CostValue": 80,
+            "Params": [
+                {
+                    "Text": "Explosions-SDN-Multiplikator",
+                    "Values": [
+                        "200%",
+                        "220%",
+                        "240%",
+                        "260%",
+                        "280%",
+                        "300%",
+                        "320%",
+                        "340%",
+                        "360%",
+                        "385%",
+                        "415%",
+                        "450%"
+                    ]
+                },
+                {
+                    "Text": "Taumeln",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Multiplikator für Kontinuierlichen SDN",
+                    "Values": [
+                        "29%",
+                        "32%",
+                        "35%",
+                        "37%",
+                        "40%",
+                        "43%",
+                        "46%",
+                        "49%",
+                        "52%",
+                        "55%",
+                        "60%",
+                        "65%"
+                    ]
+                },
+                {
+                    "Text": "Zeitintervall für Kontinuierlichen SDN (Sek.)",
+                    "Values": [
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5"
+                    ]
+                },
+                {
+                    "Text": "Dauer (Sek.)",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0014_aurora_passive_skill_1_1": {
+            "Icon": "icon_talent_aurora_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Rettungsprofi",
+            "Desc": "Kampffertigkeit <@ba.key>Gesättigte Verteidigung</> verbessert: Nach einem erfolgreiche Kontern eines gegnerischen Angriffs erhält Snowshine zusätzlich <@ba.vup>6</> Ultimative Energie.",
+            "Type": 4
+        },
+        "chr_0014_aurora_passive_skill_0_2": {
+            "Icon": "icon_talent_aurora_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Polares Überleben",
+            "Desc": "Behandlungseffekt <@ba.heal>+25.0%</> für Ziele mit maximal 55.00000000000001% LP.",
+            "Type": 4
+        },
+        "chr_0014_aurora_passive_skill_0_1": {
+            "Icon": "icon_talent_aurora_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Polares Überleben",
+            "Desc": "Behandlungseffekt <@ba.heal>+15.0%</> für Ziele mit maximal 45.0% LP.",
+            "Type": 4
+        },
+        "fac_chr_0014_aurora_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "Sorgenfrei γ",
+            "Desc": "Dem Kontrollnexus zuweisen, um allen Operatoren Stimmungszunahme +16 % zu gewähren.",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0014_aurora_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
+            "Name": "Rettungsausdauer β",
+            "Desc": "Der Herstellungskabine zuweisen, um Stimmungsverlust aller Operatoren in der Kabine um 14 % zu verlangsamen.",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0014_aurora_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
+            "Name": "Rettungsausdauer α",
+            "Desc": "Der Herstellungskabine zuweisen, um Stimmungsverlust aller Operatoren in der Kabine um 10 % zu verlangsamen.",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0014_aurora_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "Sorgenfrei β",
+            "Desc": "Dem Kontrollnexus zuweisen, um allen Operatoren Stimmungszunahme +12 % zu gewähren.",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "chr_0014_aurora_passive_skill_1_2": {
+            "Icon": "icon_talent_aurora_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Rettungsprofi",
+            "Desc": "Kampffertigkeit <@ba.key>Gesättigte Verteidigung</> verbessert: Nach einem erfolgreiche Kontern eines gegnerischen Angriffs erhält Snowshine zusätzlich <@ba.vup>10</> Ultimative Energie.",
+            "Type": 4
+        }
+    }
+}

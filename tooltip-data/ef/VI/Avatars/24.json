@@ -1,0 +1,497 @@
+{
+    "StrId": "chr_0014_aurora",
+    "Name": "Snowshine",
+    "Rarity": 5,
+    "Element": "Cryst",
+    "Profession": "DEFENDER",
+    "WeaponType": "Claymores",
+    "MainAttrId": 39,
+    "SubAttrId": 42,
+    "AttributeNodes": {
+        "chr_0014_aurora_1": {
+            "39": 10
+        },
+        "chr_0014_aurora_3": {
+            "39": 15
+        },
+        "chr_0014_aurora_5": {
+            "39": 15
+        },
+        "chr_0014_aurora_7": {
+            "39": 20
+        }
+    },
+    "SkillInfoMap": {
+        "43": {
+            "Icon": "skillicon/icon_skill_aurora_01",
+            "Element": "Cryst",
+            "Name": "Phòng Thủ Bão Hòa",
+            "Desc": "Dựng khiên chặn đòn, ban <#ba.guard>Bảo Hộ</> cho bản thân và cán viên lân cận, đồng thời lập tức <#ba.return>hoàn trả</> một lượng KN. \nKhi bị tấn công trong lúc khiên đã được dựng, tung phản kích húc gây <@ba.cryst>ST Băng</> và áp dụng hiệu ứng <#ba.crystinflict>Nhiễm Băng</> lên kẻ tấn công.",
+            "Type": 1,
+            "Cooldown": 0,
+            "CostType": "Atb",
+            "CostValue": 100,
+            "Params": [
+                {
+                    "Text": "Hệ Số ST",
+                    "Values": [
+                        "200%",
+                        "220%",
+                        "240%",
+                        "260%",
+                        "280%",
+                        "300%",
+                        "320%",
+                        "340%",
+                        "360%",
+                        "385%",
+                        "415%",
+                        "450%"
+                    ]
+                },
+                {
+                    "Text": "Suy Sụp",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Bảo Hộ",
+                    "Values": [
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%"
+                    ]
+                },
+                {
+                    "Text": "Điểm KN Hoàn Trả",
+                    "Values": [
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30"
+                    ]
+                }
+            ]
+        },
+        "50": {
+            "Icon": "skillicon/icon_combo_skill_aurora_01",
+            "Element": "Cryst",
+            "Name": "Giải Cứu Vùng Cực",
+            "Desc": "KÍCH HOẠT LIÊN HOÀN: Sau khi cán viên đang điều khiển bị tấn công và HP giảm xuống dưới {trigger_hp_ratio:0%}. \nSnowshine ném một Trợ Thủ Cứu Nạn Đồng Tuyết về phía cán viên đang điều khiển. Khi đến chỗ mục tiêu, Trợ Thủ lập tức <@ba.heal>Hồi Phục HP</> với lượng cực lớn cho cán viên gần đó và liên tục <@ba.heal>Hồi Phục HP</> cho cán viên trong vùng ảnh hưởng. \nThuộc tính Ý Chí sẽ làm tăng lượng hồi phục HP.",
+            "Type": 2,
+            "Cooldown": 25,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Hồi Phục Căn Cứ Ban Đầu",
+                    "Values": [
+                        "96",
+                        "115",
+                        "134",
+                        "154",
+                        "163",
+                        "173",
+                        "182",
+                        "192",
+                        "202",
+                        "206",
+                        "211",
+                        "216"
+                    ]
+                },
+                {
+                    "Text": "Tăng Hồi Phục Ban Đầu Theo Ý Chí",
+                    "Values": [
+                        "0.22",
+                        "0.27",
+                        "0.31",
+                        "0.36",
+                        "0.38",
+                        "0.4",
+                        "0.43",
+                        "0.45",
+                        "0.47",
+                        "0.48",
+                        "0.49",
+                        "0.5"
+                    ]
+                },
+                {
+                    "Text": "Hồi Phục Căn Cứ Theo Thời Gian",
+                    "Values": [
+                        "24",
+                        "29",
+                        "34",
+                        "38",
+                        "41",
+                        "43",
+                        "46",
+                        "48",
+                        "50",
+                        "52",
+                        "53",
+                        "54"
+                    ]
+                },
+                {
+                    "Text": "Tăng Hồi Phục Theo Thời Gian Theo Ý Chí",
+                    "Values": [
+                        "0.06",
+                        "0.07",
+                        "0.08",
+                        "0.09",
+                        "0.1",
+                        "0.1",
+                        "0.11",
+                        "0.11",
+                        "0.12",
+                        "0.12",
+                        "0.12",
+                        "0.13"
+                    ]
+                },
+                {
+                    "Text": "Thời Gian Giữa Các Lần Hồi Phục (giây)",
+                    "Values": [
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5"
+                    ]
+                },
+                {
+                    "Text": "Thời Gian Hiệu Lực (giây)",
+                    "Values": [
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3"
+                    ]
+                },
+                {
+                    "Text": "Tăng Năng Lượng Tuyệt Kỹ",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "42": {
+            "Icon": "skillicon/icon_attack_claym",
+            "Element": "Physical",
+            "Name": "Đột Kích Hạ Nhiệt",
+            "Desc": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 3 chuỗi gây <@ba.pd>ST Vật Lý</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi một phần Điểm KN.",
+            "Type": 0,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Hệ Số Chuỗi Đòn Đánh Thường 1",
+                    "Values": [
+                        "55%",
+                        "61%",
+                        "66%",
+                        "72%",
+                        "77%",
+                        "83%",
+                        "88%",
+                        "94%",
+                        "99%",
+                        "106%",
+                        "114%",
+                        "124%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số Chuỗi Đòn Đánh Thường 2",
+                    "Values": [
+                        "59%",
+                        "64%",
+                        "70%",
+                        "76%",
+                        "82%",
+                        "88%",
+                        "94%",
+                        "99%",
+                        "105%",
+                        "113%",
+                        "121%",
+                        "132%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số Chuỗi Đòn Đánh Thường 3",
+                    "Values": [
+                        "100%",
+                        "110%",
+                        "120%",
+                        "130%",
+                        "140%",
+                        "150%",
+                        "160%",
+                        "170%",
+                        "180%",
+                        "193%",
+                        "208%",
+                        "225%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số Đòn Kết Liễu",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số Đòn Bổ Nhào",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "44": {
+            "Icon": "skillicon/icon_ultimate_skill_aurora_01",
+            "Element": "Cryst",
+            "Name": "Đồng Tuyết Băng Giá",
+            "Desc": "Nhảy lên không trung bằng động cơ phản lực rồi lao xuống bằng khiên, gây lượng lớn <@ba.cryst>ST Băng</> lên kẻ địch trong phạm vi ảnh hưởng. Đồng thời tạo một <@ba.key>Vùng Tuyết</> (duy trì vài giây) gây <@ba.cryst>ST Băng</> liên tục lên kẻ địch. <@ba.key>Vùng Tuyết</> sẽ gây hiệu ứng <#ba.frozen>Đông Cứng</> lên kẻ địch bị kẹt trong đó trong một khoảng thời gian nhất định.",
+            "Type": 3,
+            "Cooldown": 20,
+            "CostType": "UltimateSp",
+            "CostValue": 80,
+            "Params": [
+                {
+                    "Text": "Hệ Số ST Nổ",
+                    "Values": [
+                        "200%",
+                        "220%",
+                        "240%",
+                        "260%",
+                        "280%",
+                        "300%",
+                        "320%",
+                        "340%",
+                        "360%",
+                        "385%",
+                        "415%",
+                        "450%"
+                    ]
+                },
+                {
+                    "Text": "Suy Sụp",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số ST Theo Thời Gian",
+                    "Values": [
+                        "29%",
+                        "32%",
+                        "35%",
+                        "37%",
+                        "40%",
+                        "43%",
+                        "46%",
+                        "49%",
+                        "52%",
+                        "55%",
+                        "60%",
+                        "65%"
+                    ]
+                },
+                {
+                    "Text": "Thời Gian Giữa Các Lần ST (giây)",
+                    "Values": [
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5"
+                    ]
+                },
+                {
+                    "Text": "Thời Gian Hiệu Lực (giây)",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0014_aurora_passive_skill_1_1": {
+            "Icon": "icon_talent_aurora_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Chuyên Viên Cứu Nạn",
+            "Desc": "KN chiến đấu <@ba.key>Phòng Thủ Bão Hòa</> được cải thiện: Sau khi phản thành công một đòn tấn công của kẻ địch, Snowshine sẽ nhận được <@ba.vup>6</> Năng Lượng Tuyệt Kỹ.",
+            "Type": 4
+        },
+        "chr_0014_aurora_passive_skill_0_2": {
+            "Icon": "icon_talent_aurora_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Sinh Tồn Vùng Cực",
+            "Desc": "Hiệu ứng điều trị <@ba.heal>+25.0%</> cho mục tiêu có HP 55.00000000000001% trở xuống.",
+            "Type": 4
+        },
+        "chr_0014_aurora_passive_skill_0_1": {
+            "Icon": "icon_talent_aurora_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Sinh Tồn Vùng Cực",
+            "Desc": "Hiệu ứng điều trị <@ba.heal>+15.0%</> cho mục tiêu có HP 45.0% trở xuống.",
+            "Type": 4
+        },
+        "fac_chr_0014_aurora_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "Vô Tư γ",
+            "Desc": "Khi phân công vào Trung Tâm Kiểm Soát, tăng Tái Tạo Tâm Trạng của tất cả các cán viên thêm 16%",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0014_aurora_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
+            "Name": "Nghị Lực Người Cứu Hộ β",
+            "Desc": "Khi phân công vào Khoang Sản Xuất, làm chậm Giảm Tâm Trạng của tất cả các cán viên trong đó xuống 14%",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0014_aurora_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
+            "Name": "Nghị Lực Người Cứu Hộ α",
+            "Desc": "Khi phân công vào Khoang Sản Xuất, làm chậm Giảm Tâm Trạng của tất cả các cán viên trong đó xuống 10%",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0014_aurora_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "Vô Tư β",
+            "Desc": "Khi phân công vào Trung Tâm Kiểm Soát, tăng Tái Tạo Tâm Trạng của tất cả các cán viên thêm 12%",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "chr_0014_aurora_passive_skill_1_2": {
+            "Icon": "icon_talent_aurora_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Chuyên Viên Cứu Nạn",
+            "Desc": "KN chiến đấu <@ba.key>Phòng Thủ Bão Hòa</> được cải thiện: Sau khi phản thành công một đòn tấn công của kẻ địch, Snowshine sẽ nhận được <@ba.vup>10</> Năng Lượng Tuyệt Kỹ.",
+            "Type": 4
+        }
+    }
+}

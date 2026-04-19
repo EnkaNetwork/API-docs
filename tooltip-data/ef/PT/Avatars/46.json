@@ -1,0 +1,548 @@
+{
+    "StrId": "chr_0030_zhuangfy",
+    "Name": "Zhuang Fangyi",
+    "Rarity": 6,
+    "Element": "Pulse",
+    "Profession": "ASSAULT",
+    "WeaponType": "Wand",
+    "MainAttrId": 42,
+    "SubAttrId": 41,
+    "AttributeNodes": {
+        "chr_0030_zhuangfy_1": {
+            "42": 10
+        },
+        "chr_0030_zhuangfy_3": {
+            "42": 15
+        },
+        "chr_0030_zhuangfy_5": {
+            "42": 15
+        },
+        "chr_0030_zhuangfy_7": {
+            "42": 20
+        }
+    },
+    "SkillInfoMap": {
+        "107": {
+            "Icon": "skillicon/icon_ultimate_skill_zhuangfy_01",
+            "Element": "Pulse",
+            "Name": "Tempestade Devastadora",
+            "Desc": "Transforma-se no <@ba.key>Empíreo da Verdade</> que concede estas melhorias:\nOs ataques básicos de Zhuang Fangyi são aprimorados e suas ações são mais difíceis de interromper.\nA habilidade de batalha <@ba.key>Mantra da Ruptura</> ganha um Multiplicador DNO maior e maior alcance de efeito. O Golpe do Trovão final também aplica <#ba.pulseinflict>Inflição Elétrica</> ao alvo atingido.\nO combo de habilidades <@ba.key>Sopro da Transformação</> ganha um Multiplicador DNO maior, o tempo de recarga torna-se {combo_cd_rate:0} vezes mais rápido e os efeitos são aplicados a inimigos dentro de uma pequena área.\nA primeira conjuração da habilidade de batalha <@ba.key>Mantra da Ruptura</> em um alvo disponível não consome PH nem <#ba.conduct>Eletrificação</> e tem a garantia de criar 3 <@ba.key>Lâminas Separadoras</> mesmo se o alvo não tiver <#ba.conduct>Eletrificação</>.",
+            "Type": 3,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Duração (s)",
+                    "Values": [
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25"
+                    ]
+                },
+                {
+                    "Text": "Durante a Habilidade Suprema: Multiplicador SEQ 1 ATQB",
+                    "Values": [
+                        "67%",
+                        "73%",
+                        "80%",
+                        "86%",
+                        "93%",
+                        "100%",
+                        "106%",
+                        "113%",
+                        "120%",
+                        "128%",
+                        "138%",
+                        "150%"
+                    ]
+                },
+                {
+                    "Text": "Durante a Habilidade Suprema: Multiplicador SEQ 2 ATQB",
+                    "Values": [
+                        "94%",
+                        "103%",
+                        "112%",
+                        "122%",
+                        "131%",
+                        "140%",
+                        "150%",
+                        "159%",
+                        "168%",
+                        "180%",
+                        "194%",
+                        "210%"
+                    ]
+                },
+                {
+                    "Text": "Durante a Habilidade Suprema: Multiplicador SEQ 3 ATQB",
+                    "Values": [
+                        "134%",
+                        "147%",
+                        "160%",
+                        "174%",
+                        "187%",
+                        "200%",
+                        "214%",
+                        "227%",
+                        "240%",
+                        "257%",
+                        "277%",
+                        "300%"
+                    ]
+                }
+            ]
+        },
+        "108": {
+            "Icon": "skillicon/icon_combo_skill_zhuangfy_01",
+            "Element": "Pulse",
+            "Name": "Sopro da Transformação",
+            "Desc": "ACIONADOR DO COMBO: Quando o <#ba.lastcombo>Golpe Final</> ou Finalizador do operador controlado atinge um inimigo com <#ba.pulseinflict>Inflição Elétrica</>.\nZhuang Fangyi cria Relâmpagos de Xiranita que atacam o inimigo e causam <@ba.pulse>DNO Elétrico</>. Se o Conjunto atingir um inimigo com acúmulos de <#ba.pulseinflict>Inflição Elétrica</>, ele <#ba.consume>consumirá</> esses acúmulos de <#ba.pulseinflict>Inflição Elétrica</>, aplicará <#ba.conduct>Eletrificação</> à força e concederá Energia Suprema com base no número de acúmulos <#ba.consume>consumidos</>.\nSe a <#ba.conduct>Eletrificação</> for aplicada à força a um inimigo que já tem <#ba.conduct>Eletrificação</>, então aplicará <#ba.statuslevel>Nível de Status</> + 1 à <#ba.conduct>Eletrificação</> do inimigo.",
+            "Type": 2,
+            "Cooldown": 18,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Multiplicador DNO",
+                    "Values": [
+                        "160%",
+                        "176%",
+                        "192%",
+                        "208%",
+                        "224%",
+                        "240%",
+                        "256%",
+                        "272%",
+                        "288%",
+                        "308%",
+                        "332%",
+                        "360%"
+                    ]
+                },
+                {
+                    "Text": "Desorientação",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Ganho de Energia Suprema",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Energia Suprema Adicional por Acúmulo de Inflição",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Durante a Habilidade Suprema: Multiplicador DNO",
+                    "Values": [
+                        "240%",
+                        "264%",
+                        "288%",
+                        "312%",
+                        "336%",
+                        "360%",
+                        "384%",
+                        "408%",
+                        "432%",
+                        "462%",
+                        "498%",
+                        "540%"
+                    ]
+                }
+            ]
+        },
+        "105": {
+            "Icon": "skillicon/icon_attack_funnel",
+            "Element": "Pulse",
+            "Name": "Artes Chocantes",
+            "Desc": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.pulse>DNO Elétrico</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.pulse>DNO Elétrico</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um finalizador que causa uma enorme quantidade de <@ba.pulse>DNO Elétrico</> e recupera PH.",
+            "Type": 0,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Multiplicador SEQ 1 ATQB",
+                    "Values": [
+                        "16%",
+                        "18%",
+                        "19%",
+                        "21%",
+                        "22%",
+                        "24%",
+                        "26%",
+                        "27%",
+                        "29%",
+                        "31%",
+                        "33%",
+                        "36%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador SEQ 2 ATQB",
+                    "Values": [
+                        "24%",
+                        "26%",
+                        "29%",
+                        "31%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "41%",
+                        "43%",
+                        "46%",
+                        "50%",
+                        "54%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador SEQ 3 ATQB",
+                    "Values": [
+                        "32%",
+                        "35%",
+                        "39%",
+                        "42%",
+                        "45%",
+                        "48%",
+                        "52%",
+                        "55%",
+                        "58%",
+                        "62%",
+                        "67%",
+                        "72%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador SEQ 4 ATQB",
+                    "Values": [
+                        "45%",
+                        "50%",
+                        "54%",
+                        "59%",
+                        "63%",
+                        "68%",
+                        "72%",
+                        "77%",
+                        "81%",
+                        "87%",
+                        "93%",
+                        "101%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador SEQ 5 ATQB",
+                    "Values": [
+                        "48%",
+                        "53%",
+                        "58%",
+                        "62%",
+                        "67%",
+                        "72%",
+                        "77%",
+                        "82%",
+                        "86%",
+                        "92%",
+                        "100%",
+                        "108%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador ATQ Finalizador",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador ATQ Mergulho",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "106": {
+            "Icon": "skillicon/icon_skill_zhuangfy_01",
+            "Element": "Pulse",
+            "Name": "Mantra da Ruptura",
+            "Desc": "<#ba.consume>Consome</> a <#ba.conduct>Eletrificação</> do alvo para aumentar o Multiplicador DNO desta habilidade de batalha e criar <@ba.key>Lâminas Relampejantes</> [<#ba.statuslevel>Nível de Status</> de <#ba.conduct>Eletrificação</> <#ba.consume>consumida</> <@ba.key>+ 1</>]. Se o campo de batalha tiver menos de {free_sword_limit:0} <@ba.key>Lâminas Relampejantes</>, o Mantra da Ruptura ainda poderá criar 1 <@ba.key>Lâmina Relampejante</>, mesmo se ele não <#ba.consume>consumir</> a <#ba.conduct>Eletrificação</> de nenhum alvo.\nZhuang Fangyi então canaliza todas as <@ba.key>Lâminas Relampejantes</> por perto para desferir Golpes do Trovão sucessivos no alvo, causando <@ba.pulse>DNO Elétrico</> e concedendo Energia Suprema de bônus, além de fazer com que o Golpe do Trovão final cause {final_rate:0} vezes o DNO.\n<@ba.info>Uma única conjuração de habilidade de batalha pode criar no máximo {max_conduct_sword:0} Lâminas Relampejantes.</>",
+            "Type": 1,
+            "Cooldown": 0,
+            "CostType": "Atb",
+            "CostValue": 100,
+            "Params": [
+                {
+                    "Text": "Multiplicador DNO do Golpe do Trovão",
+                    "Values": [
+                        "20%",
+                        "22%",
+                        "24%",
+                        "26%",
+                        "28%",
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "39%",
+                        "42%",
+                        "45%"
+                    ]
+                },
+                {
+                    "Text": "Desorientação Total",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador DNO Bônus por Nível de Status de Eletrificação Consumida",
+                    "Values": [
+                        "3%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "6%",
+                        "6%",
+                        "7%",
+                        "8%",
+                        "9%"
+                    ]
+                },
+                {
+                    "Text": "Energia Suprema de Bônus por Golpe do Trovão",
+                    "Values": [
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6"
+                    ]
+                },
+                {
+                    "Text": "Limite da Lâmina Relampejante",
+                    "Values": [
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9"
+                    ]
+                },
+                {
+                    "Text": "Duração da Lâmina Relampejante (s)",
+                    "Values": [
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36"
+                    ]
+                },
+                {
+                    "Text": "Durante a Habilidade Suprema: Multiplicador DNO do Golpe do Trovão",
+                    "Values": [
+                        "36%",
+                        "40%",
+                        "43%",
+                        "47%",
+                        "50%",
+                        "54%",
+                        "58%",
+                        "61%",
+                        "65%",
+                        "69%",
+                        "75%",
+                        "81%"
+                    ]
+                },
+                {
+                    "Text": "Durante a Habilidade Suprema: Multiplicador DNO Bônus por Nível de Status de Eletrificação Consumida",
+                    "Values": [
+                        "8%",
+                        "9%",
+                        "10%",
+                        "11%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0030_zhuangfy_passive_skill_0_2": {
+            "Icon": "icon_talent_zhuangfy_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Força da Natureza",
+            "Desc": "Habilidade de batalha <@ba.key>Mantra da Ruptura</> aprimorada: conjurar a habilidade de batalha concede a Zhuang Fangyi <@ba.vup>18.0%</> de <#ba.pulseenhance>Amp Elétrica</> por <@ba.vup>5</> s.\nAcertar inimigos com o Golpe do Trovão da habilidade de batalha aumenta esse efeito em <@ba.vup>+ 2.0%</>.\nCada conjuração seguinte da habilidade de batalha <@ba.key>Mantra da Ruptura</> reinicia esse efeito de <#ba.pulseenhance>Amp Elétrica</>.",
+            "Type": 4
+        },
+        "fac_chr_0030_zhuangfy_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
+            "Name": "Experiência da Vice-Rainha γ",
+            "Desc": "Atribua à Cabine de Manufatura para reduzir a velocidade da Queda de Humor de todos os operadores em 18%",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "chr_0030_zhuangfy_passive_skill_1_2": {
+            "Icon": "icon_talent_zhuangfy_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Ordenado pelo Paraíso",
+            "Desc": "Ganha <@ba.vup>9.0%</> de chance de imunidade contra DNO recebido, e cada <@ba.key>Lâmina Relampejante</> por perto aumenta essa chance em <@ba.vup>+1.0%</>.\nApós a Imunidade a DNO ser ativada, Zhuang Fangyi também é restaurada para <@ba.heal>18.0%</> de PV Máximo. O efeito de restauração de PV só é acionado uma vez a cada <@ba.vup>99</> s.",
+            "Type": 4
+        },
+        "chr_0030_zhuangfy_passive_skill_0_1": {
+            "Icon": "icon_talent_zhuangfy_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Força da Natureza",
+            "Desc": "Habilidade de batalha <@ba.key>Mantra da Ruptura</> aprimorada: conjurar a habilidade de batalha concede a Zhuang Fangyi <@ba.vup>9.0%</> de <#ba.pulseenhance>Amp Elétrica</> por <@ba.vup>5</> s.\nAcertar inimigos com o Golpe do Trovão da habilidade de batalha aumenta esse efeito em <@ba.vup>+ 1.0%</>.\nCada conjuração seguinte da habilidade de batalha <@ba.key>Mantra da Ruptura</> reinicia esse efeito de <#ba.pulseenhance>Amp Elétrica</>.",
+            "Type": 4
+        },
+        "chr_0030_zhuangfy_passive_skill_1_1": {
+            "Icon": "icon_talent_zhuangfy_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Ordenado pelo Paraíso",
+            "Desc": "Ganha <@ba.vup>9.0%</> de chance de imunidade contra DNO recebido, e cada <@ba.key>Lâmina Relampejante</> por perto aumenta essa chance em <@ba.vup>+1.0%</>.\nApós a Imunidade a DNO ser ativada, Zhuang Fangyi também é restaurada para <@ba.heal>9.0%</> de PV Máximo. O efeito de restauração de PV só é acionado uma vez a cada <@ba.vup>99</> s.",
+            "Type": 4
+        },
+        "fac_chr_0030_zhuangfy_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Meditação Tian-Chi γ",
+            "Desc": "Atribua à Cabine de Manufatura para conceder eficiência em produção de materiais de EXP de Operador + 30%",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0030_zhuangfy_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
+            "Name": "Experiência da Vice-Rainha β",
+            "Desc": "Atribua à Cabine de Manufatura para reduzir a velocidade da Queda de Humor de todos os operadores em 14%",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0030_zhuangfy_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Meditação Tian-Chi β",
+            "Desc": "Atribua à Cabine de Manufatura para conceder eficiência em produção de materiais de EXP de Operador + 20%",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        }
+    }
+}

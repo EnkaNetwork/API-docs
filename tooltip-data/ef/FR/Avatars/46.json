@@ -1,0 +1,548 @@
+{
+    "StrId": "chr_0030_zhuangfy",
+    "Name": "Zhuang Fangyi",
+    "Rarity": 6,
+    "Element": "Pulse",
+    "Profession": "ASSAULT",
+    "WeaponType": "Wand",
+    "MainAttrId": 42,
+    "SubAttrId": 41,
+    "AttributeNodes": {
+        "chr_0030_zhuangfy_1": {
+            "42": 10
+        },
+        "chr_0030_zhuangfy_3": {
+            "42": 15
+        },
+        "chr_0030_zhuangfy_5": {
+            "42": 15
+        },
+        "chr_0030_zhuangfy_7": {
+            "42": 20
+        }
+    },
+    "SkillInfoMap": {
+        "107": {
+            "Icon": "skillicon/icon_ultimate_skill_zhuangfy_01",
+            "Element": "Pulse",
+            "Name": "Tempête foudroyante",
+            "Desc": "Se transforme en <@ba.key>Empyréenne de la Vérité</> qui accorde les améliorations suivantes :\nLes attaques de base de Zhuang Fangyi sont améliorées et ses actions sont plus difficiles à interrompre.\nLe multiplicateur de DÉG et la portée de l'effet de la compétence de combat <@ba.key>Mantra de la séparation</> sont plus élevés et l'attaque foudroyante finale applique aussi une <#ba.pulseinflict>altération électrique</> à la cible touchée.\nLe multiplicateur de DÉG de la compétence de combo <@ba.key>Souffle de la transformation</> est plus élevé, le temps de recharge est {combo_cd_rate:0} fois plus rapide et les effets s'appliquent aux ennemis dans une petite zone.\nLe premier lancement de la compétence de combat <@ba.key>Mantra de la séparation</> sur une cible disponible ne coûte aucun PC, ne consomme pas d'<#ba.conduct>Électrification</> et garantit la création de 3 <@ba.key>tranche-lames</> même si la cible ne subit pas d'<#ba.conduct>Électrification</>.",
+            "Type": 3,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Durée (s)",
+                    "Values": [
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25"
+                    ]
+                },
+                {
+                    "Text": "Pendant l'ultime : multiplicateur d'ATQ-B SÉQ 1",
+                    "Values": [
+                        "67%",
+                        "73%",
+                        "80%",
+                        "86%",
+                        "93%",
+                        "100%",
+                        "106%",
+                        "113%",
+                        "120%",
+                        "128%",
+                        "138%",
+                        "150%"
+                    ]
+                },
+                {
+                    "Text": "Pendant l'ultime : multiplicateur d'ATQ-B SÉQ 2",
+                    "Values": [
+                        "94%",
+                        "103%",
+                        "112%",
+                        "122%",
+                        "131%",
+                        "140%",
+                        "150%",
+                        "159%",
+                        "168%",
+                        "180%",
+                        "194%",
+                        "210%"
+                    ]
+                },
+                {
+                    "Text": "Pendant l'ultime : multiplicateur d'ATQ-B SÉQ 3",
+                    "Values": [
+                        "134%",
+                        "147%",
+                        "160%",
+                        "174%",
+                        "187%",
+                        "200%",
+                        "214%",
+                        "227%",
+                        "240%",
+                        "257%",
+                        "277%",
+                        "300%"
+                    ]
+                }
+            ]
+        },
+        "108": {
+            "Icon": "skillicon/icon_combo_skill_zhuangfy_01",
+            "Element": "Pulse",
+            "Name": "Souffle de la transformation",
+            "Desc": "DÉCLENCHEMENT DE COMBO : lorsque le <#ba.lastcombo>Coup final</> ou le coup fatal de l'opérateur contrôlé touche un ennemi victime d'une <#ba.pulseinflict>altération électrique</>.\nZhuang Fangyi crée une matrice de xiréclair qui attaque l'ennemi et lui inflige des <@ba.pulse>DÉG électriques</>. Si la matrice touche un ennemi qui possède un ou plusieurs cumuls d'<#ba.pulseinflict>altération électrique</>, elle <#ba.consume>consommera</> ces <#ba.pulseinflict>altérations électriques</> pour appliquer <#ba.conduct>Électrification</> et gagnera de l'énergie d'ultime supplémentaire en fonction du nombre de cumuls <#ba.consume>consommés</>.\nSi l'<#ba.conduct>Électrification</> est appliquée de force à un ennemi alors qu'il en subit déjà les effets, son <#ba.conduct>Électrification</> passera au <#ba.statuslevel>niveau du statut</> +1.",
+            "Type": 2,
+            "Cooldown": 18,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Multiplicateur de DÉG",
+                    "Values": [
+                        "160%",
+                        "176%",
+                        "192%",
+                        "208%",
+                        "224%",
+                        "240%",
+                        "256%",
+                        "272%",
+                        "288%",
+                        "308%",
+                        "332%",
+                        "360%"
+                    ]
+                },
+                {
+                    "Text": "Déséquilibre",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Gain d'énergie d'ultime",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Énergie d'ultime supplémentaire par cumul d'altération",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Lors de l'ultime : multiplicateur de DÉG",
+                    "Values": [
+                        "240%",
+                        "264%",
+                        "288%",
+                        "312%",
+                        "336%",
+                        "360%",
+                        "384%",
+                        "408%",
+                        "432%",
+                        "462%",
+                        "498%",
+                        "540%"
+                    ]
+                }
+            ]
+        },
+        "105": {
+            "Icon": "skillicon/icon_attack_funnel",
+            "Element": "Pulse",
+            "Name": "Arts électrisants",
+            "Desc": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.pulse>DÉG électriques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pulse>DÉG électriques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pulse>DÉG électriques</> et restaure quelques PC.",
+            "Type": 0,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Multiplicateur d'ATQ-B SÉQ 1",
+                    "Values": [
+                        "16%",
+                        "18%",
+                        "19%",
+                        "21%",
+                        "22%",
+                        "24%",
+                        "26%",
+                        "27%",
+                        "29%",
+                        "31%",
+                        "33%",
+                        "36%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur d'ATQ-B SÉQ 2",
+                    "Values": [
+                        "24%",
+                        "26%",
+                        "29%",
+                        "31%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "41%",
+                        "43%",
+                        "46%",
+                        "50%",
+                        "54%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur d'ATQ-B SÉQ 3",
+                    "Values": [
+                        "32%",
+                        "35%",
+                        "39%",
+                        "42%",
+                        "45%",
+                        "48%",
+                        "52%",
+                        "55%",
+                        "58%",
+                        "62%",
+                        "67%",
+                        "72%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur d'ATQ-B SÉQ 4",
+                    "Values": [
+                        "45%",
+                        "50%",
+                        "54%",
+                        "59%",
+                        "63%",
+                        "68%",
+                        "72%",
+                        "77%",
+                        "81%",
+                        "87%",
+                        "93%",
+                        "101%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur d'ATQ-B SÉQ 5",
+                    "Values": [
+                        "48%",
+                        "53%",
+                        "58%",
+                        "62%",
+                        "67%",
+                        "72%",
+                        "77%",
+                        "82%",
+                        "86%",
+                        "92%",
+                        "100%",
+                        "108%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur d'ATQ de coup fatal",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur d'ATQ plongeante",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "106": {
+            "Icon": "skillicon/icon_skill_zhuangfy_01",
+            "Element": "Pulse",
+            "Name": "Mantra de la séparation",
+            "Desc": "<#ba.consume>Consomme</> l'<#ba.conduct>Électrification</> de la cible pour augmenter le multiplicateur de DÉG de cette compétence de combat et créer des <@ba.key>tranche-lames</> au nombre de [<#ba.statuslevel>niveau du statut</> de l'<#ba.conduct>Électrification</> <#ba.consume>consommée</> <@ba.key>+1</>]. Si le champ de bataille contient moins de {free_sword_limit:0} <@ba.key>tranche-lames</>, Mantra de la séparation peut encore créer 1 <@ba.key>tranche-lame</>, même sans <#ba.consume>consommer</> l'<#ba.conduct>Électrification</> d'une cible.\nZhuang Fangyi canalise ensuite les <@ba.key>tranche-lames</> à proximité pour lancer des attaques foudroyantes successives sur l'ennemi, lui infligeant des <@ba.pulse>DÉG électriques</> et accordant un bonus d'énergie d'ultime, qui permet d'infliger {final_rate:0} fois plus de DÉG lors de la dernière attaque foudroyante.\n<@ba.info>La compétence de combat ne peut créer que {max_conduct_sword:0} tranche-lames maximum par lancement.</>",
+            "Type": 1,
+            "Cooldown": 0,
+            "CostType": "Atb",
+            "CostValue": 100,
+            "Params": [
+                {
+                    "Text": "Multiplicateur de DÉG d'attaque foudroyante",
+                    "Values": [
+                        "20%",
+                        "22%",
+                        "24%",
+                        "26%",
+                        "28%",
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "39%",
+                        "42%",
+                        "45%"
+                    ]
+                },
+                {
+                    "Text": "Déséquilibre total",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur de DÉG bonus par niveau du statut d'Électrification consommée",
+                    "Values": [
+                        "3%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "6%",
+                        "6%",
+                        "7%",
+                        "8%",
+                        "9%"
+                    ]
+                },
+                {
+                    "Text": "Énergie d'ultime bonus par attaque foudroyante",
+                    "Values": [
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6"
+                    ]
+                },
+                {
+                    "Text": "Limite de tranche-lame",
+                    "Values": [
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9",
+                        "9"
+                    ]
+                },
+                {
+                    "Text": "Durée de tranche-lame",
+                    "Values": [
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36",
+                        "36"
+                    ]
+                },
+                {
+                    "Text": "Lors de l'ultime : multiplicateur de DÉG d'attaque foudroyante",
+                    "Values": [
+                        "36%",
+                        "40%",
+                        "43%",
+                        "47%",
+                        "50%",
+                        "54%",
+                        "58%",
+                        "61%",
+                        "65%",
+                        "69%",
+                        "75%",
+                        "81%"
+                    ]
+                },
+                {
+                    "Text": "Lors de l'ultime : multiplicateur de DÉG bonus par niveau du statut d'Électrification consommée",
+                    "Values": [
+                        "8%",
+                        "9%",
+                        "10%",
+                        "11%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0030_zhuangfy_passive_skill_0_2": {
+            "Icon": "icon_talent_zhuangfy_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Force de la Nature",
+            "Desc": "Renforce la compétence de combat <@ba.key>Mantra de la séparation</> : lancer sa compétence de combat octroie à Zhuang Fangyi <@ba.vup>18.0%</> d'<#ba.pulseenhance>amplification électrique</> pendant <@ba.vup>5</> s.\nToucher l'ennemi avec l'attaque foudroyante de la compétence de combat améliore cet effet de <@ba.vup>2.0%</>.\nChaque lancement supplémentaire de la compétence de combat <@ba.key>Mantra de la séparation</> réinitialise cet effet d'<#ba.pulseenhance>amplification électrique</>.",
+            "Type": 4
+        },
+        "fac_chr_0030_zhuangfy_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
+            "Name": "Expérience de la vice-reine γ",
+            "Desc": "En l'affectant à la cabine de fabrication, ralentit la baisse d'humeur de tous les opérateurs qui s'y trouvent de 18 %.",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "chr_0030_zhuangfy_passive_skill_1_2": {
+            "Icon": "icon_talent_zhuangfy_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Don du ciel",
+            "Desc": "Octroie <@ba.vup>9.0%</> de chances d'immunité contre les DÉG subis. Chaque <@ba.key>tranche-lame</> à proximité augmente ces chances de <@ba.vup>1.0%</> supplémentaires.\nUne fois l'immunité déclenchée, Zhuang Fangyi récupère également <@ba.heal>18.0%</> de ses PV max. Cet effet de régénération de PV ne se déclenche qu'une fois toutes les <@ba.vup>99</> s.",
+            "Type": 4
+        },
+        "chr_0030_zhuangfy_passive_skill_0_1": {
+            "Icon": "icon_talent_zhuangfy_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Force de la Nature",
+            "Desc": "Renforce la compétence de combat <@ba.key>Mantra de la séparation</> : lancer sa compétence de combat octroie à Zhuang Fangyi <@ba.vup>9.0%</> d'<#ba.pulseenhance>amplification électrique</> pendant <@ba.vup>5</> s.\nToucher l'ennemi avec l'attaque foudroyante de la compétence de combat améliore cet effet de <@ba.vup>1.0%</>.\nChaque lancement supplémentaire de la compétence de combat <@ba.key>Mantra de la séparation</> réinitialise cet effet d'<#ba.pulseenhance>amplification électrique</>.",
+            "Type": 4
+        },
+        "chr_0030_zhuangfy_passive_skill_1_1": {
+            "Icon": "icon_talent_zhuangfy_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Don du ciel",
+            "Desc": "Octroie <@ba.vup>9.0%</> de chances d'immunité contre les DÉG subis. Chaque <@ba.key>tranche-lame</> à proximité augmente ces chances de <@ba.vup>1.0%</> supplémentaires.\nUne fois l'immunité déclenchée, Zhuang Fangyi récupère également <@ba.heal>9.0%</> de ses PV max. Cet effet de régénération de PV ne se déclenche qu'une fois toutes les <@ba.vup>99</> s.",
+            "Type": 4
+        },
+        "fac_chr_0030_zhuangfy_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Méditation énergétique des Tianshi γ",
+            "Desc": "En l'affectant à la cabine de fabrication, augmente le rendement de production des matériaux d'EXP d'opérateur de +30 %.",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0030_zhuangfy_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
+            "Name": "Expérience de la vice-reine β",
+            "Desc": "En l'affectant à la cabine de fabrication, ralentit la baisse d'humeur de tous les opérateurs qui s'y trouvent de 14 %.",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0030_zhuangfy_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Méditation énergétique des Tianshi β",
+            "Desc": "En l'affectant à la cabine de fabrication, augmente le rendement de production des matériaux d'EXP d'opérateur de 20 %.",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        }
+    }
+}

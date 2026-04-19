@@ -1,0 +1,497 @@
+{
+    "StrId": "chr_0014_aurora",
+    "Name": "Snowshine",
+    "Rarity": 5,
+    "Element": "Cryst",
+    "Profession": "DEFENDER",
+    "WeaponType": "Claymores",
+    "MainAttrId": 39,
+    "SubAttrId": 42,
+    "AttributeNodes": {
+        "chr_0014_aurora_1": {
+            "39": 10
+        },
+        "chr_0014_aurora_3": {
+            "39": 15
+        },
+        "chr_0014_aurora_5": {
+            "39": 15
+        },
+        "chr_0014_aurora_7": {
+            "39": 20
+        }
+    },
+    "SkillInfoMap": {
+        "43": {
+            "Icon": "skillicon/icon_skill_aurora_01",
+            "Element": "Cryst",
+            "Name": "Saturated Defense",
+            "Desc": "Raises a shield that can block attacks, grants <#ba.guard>Protection</> to self and nearby operators, and immediately <#ba.return>returns</> some SP. \nWhen attacked while the said shield is raised, perform a retaliation bash that deals <@ba.cryst>Cryo DMG</> and applies <#ba.crystinflict>Cryo Infliction</> on the attacker.",
+            "Type": 1,
+            "Cooldown": 0,
+            "CostType": "Atb",
+            "CostValue": 100,
+            "Params": [
+                {
+                    "Text": "DMG Multiplier",
+                    "Values": [
+                        "200%",
+                        "220%",
+                        "240%",
+                        "260%",
+                        "280%",
+                        "300%",
+                        "320%",
+                        "340%",
+                        "360%",
+                        "385%",
+                        "415%",
+                        "450%"
+                    ]
+                },
+                {
+                    "Text": "Stagger",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Protection",
+                    "Values": [
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%"
+                    ]
+                },
+                {
+                    "Text": "SP Return",
+                    "Values": [
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30"
+                    ]
+                }
+            ]
+        },
+        "50": {
+            "Icon": "skillicon/icon_combo_skill_aurora_01",
+            "Element": "Cryst",
+            "Name": "Polar Rescue",
+            "Desc": "COMBO TRIGGER: After controlled operator gets attacked and drops below {trigger_hp_ratio:0%} HP. \nSnowshine throws a Snowfield SAR Assistant at the controlled operator. Upon target contact, the Assistant gives massive instant <@ba.heal>HP Treatment</> to nearby operators as well as continuous <@ba.heal>HP Treatment</> to operators in the area of effect. \nThe attribute of Will increases the amount of HP treatment.",
+            "Type": 2,
+            "Cooldown": 25,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Initial Base Treatment",
+                    "Values": [
+                        "96",
+                        "115",
+                        "134",
+                        "154",
+                        "163",
+                        "173",
+                        "182",
+                        "192",
+                        "202",
+                        "206",
+                        "211",
+                        "216"
+                    ]
+                },
+                {
+                    "Text": "Initial Treatment Increase per Will",
+                    "Values": [
+                        "0.22",
+                        "0.27",
+                        "0.31",
+                        "0.36",
+                        "0.38",
+                        "0.4",
+                        "0.43",
+                        "0.45",
+                        "0.47",
+                        "0.48",
+                        "0.49",
+                        "0.5"
+                    ]
+                },
+                {
+                    "Text": "Base Treatment Over Time",
+                    "Values": [
+                        "24",
+                        "29",
+                        "34",
+                        "38",
+                        "41",
+                        "43",
+                        "46",
+                        "48",
+                        "50",
+                        "52",
+                        "53",
+                        "54"
+                    ]
+                },
+                {
+                    "Text": "Treatment Over Time Increase per Will",
+                    "Values": [
+                        "0.06",
+                        "0.07",
+                        "0.08",
+                        "0.09",
+                        "0.1",
+                        "0.1",
+                        "0.11",
+                        "0.11",
+                        "0.12",
+                        "0.12",
+                        "0.12",
+                        "0.13"
+                    ]
+                },
+                {
+                    "Text": "Treatment Over Time Interval (s)",
+                    "Values": [
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5"
+                    ]
+                },
+                {
+                    "Text": "Duration (s)",
+                    "Values": [
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3"
+                    ]
+                },
+                {
+                    "Text": "Ultimate Energy Gain",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "42": {
+            "Icon": "skillicon/icon_attack_claym",
+            "Element": "Physical",
+            "Name": "Hypothermic Assault",
+            "Desc": "BASIC ATTACK: \nAn attack with up to 3 sequences that deals <@ba.pd>Physical DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pd>Physical DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher attack that deals massive <@ba.pd>Physical DMG</> and recovers some SP.",
+            "Type": 0,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "BATK SEQ 1 Multiplier",
+                    "Values": [
+                        "55%",
+                        "61%",
+                        "66%",
+                        "72%",
+                        "77%",
+                        "83%",
+                        "88%",
+                        "94%",
+                        "99%",
+                        "106%",
+                        "114%",
+                        "124%"
+                    ]
+                },
+                {
+                    "Text": "BATK SEQ 2 Multiplier",
+                    "Values": [
+                        "59%",
+                        "64%",
+                        "70%",
+                        "76%",
+                        "82%",
+                        "88%",
+                        "94%",
+                        "99%",
+                        "105%",
+                        "113%",
+                        "121%",
+                        "132%"
+                    ]
+                },
+                {
+                    "Text": "BATK SEQ 3 Multiplier",
+                    "Values": [
+                        "100%",
+                        "110%",
+                        "120%",
+                        "130%",
+                        "140%",
+                        "150%",
+                        "160%",
+                        "170%",
+                        "180%",
+                        "193%",
+                        "208%",
+                        "225%"
+                    ]
+                },
+                {
+                    "Text": "Finisher ATK Multiplier",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Dive ATK Multiplier",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "44": {
+            "Icon": "skillicon/icon_ultimate_skill_aurora_01",
+            "Element": "Cryst",
+            "Name": "Frigid Snowfield",
+            "Desc": "Leaps into mid-air with a jetpack before slamming down with her shield to deal massive <@ba.cryst>Cryo DMG</> to enemies in the area of effect. Also generates a <@ba.key>Snow Zone</> (lasting several seconds) that deals <@ba.cryst>Cryo DMG</> over time to enemies. The <@ba.key>Snow Zone</> forcibly applies <#ba.frozen>Solidification</> to enemies caught within it for a certain duration.",
+            "Type": 3,
+            "Cooldown": 20,
+            "CostType": "UltimateSp",
+            "CostValue": 80,
+            "Params": [
+                {
+                    "Text": "Explosion DMG Multiplier",
+                    "Values": [
+                        "200%",
+                        "220%",
+                        "240%",
+                        "260%",
+                        "280%",
+                        "300%",
+                        "320%",
+                        "340%",
+                        "360%",
+                        "385%",
+                        "415%",
+                        "450%"
+                    ]
+                },
+                {
+                    "Text": "Stagger",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "DMG Over Time Multiplier",
+                    "Values": [
+                        "29%",
+                        "32%",
+                        "35%",
+                        "37%",
+                        "40%",
+                        "43%",
+                        "46%",
+                        "49%",
+                        "52%",
+                        "55%",
+                        "60%",
+                        "65%"
+                    ]
+                },
+                {
+                    "Text": "DMG Over Time Interval (s)",
+                    "Values": [
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "0.5"
+                    ]
+                },
+                {
+                    "Text": "Duration (s)",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0014_aurora_passive_skill_1_1": {
+            "Icon": "icon_talent_aurora_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "SAR Professional",
+            "Desc": "Battle skill <@ba.key>Saturated Defense</> improved: After successfully retaliating an enemy attack, Snowshine gains another <@ba.vup>6</> Ultimate Energy.",
+            "Type": 4
+        },
+        "chr_0014_aurora_passive_skill_0_2": {
+            "Icon": "icon_talent_aurora_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Polar Survival",
+            "Desc": "Treatment Effect <@ba.heal>+25.0%</> for targets of 55.00000000000001% HP or below.",
+            "Type": 4
+        },
+        "chr_0014_aurora_passive_skill_0_1": {
+            "Icon": "icon_talent_aurora_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Polar Survival",
+            "Desc": "Treatment Effect <@ba.heal>+15.0%</> for targets of 45.0% HP or below.",
+            "Type": 4
+        },
+        "fac_chr_0014_aurora_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "Happy-Go-Lucky γ",
+            "Desc": "Assign to Control Nexus to grant all operators' Mood Regen +16%",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0014_aurora_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
+            "Name": "Rescuer's Perseverance β",
+            "Desc": "Assign to Manufacturing Cabin to slow Mood Drop of all operators in it by 14%",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0014_aurora_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
+            "Name": "Rescuer's Perseverance α",
+            "Desc": "Assign to Manufacturing Cabin to slow Mood Drop of all operators in it by 10%",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0014_aurora_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "Happy-Go-Lucky β",
+            "Desc": "Assign to Control Nexus to grant all operators' Mood Regen +12%",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "chr_0014_aurora_passive_skill_1_2": {
+            "Icon": "icon_talent_aurora_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "SAR Professional",
+            "Desc": "Battle skill <@ba.key>Saturated Defense</> improved: After successfully retaliating an enemy attack, Snowshine gains another <@ba.vup>10</> Ultimate Energy.",
+            "Type": 4
+        }
+    }
+}

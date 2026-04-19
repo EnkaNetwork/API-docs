@@ -1,0 +1,565 @@
+{
+    "StrId": "chr_0028_wulfa",
+    "Name": "Rossi",
+    "Rarity": 6,
+    "Element": "Physical",
+    "Profession": "GUARD",
+    "WeaponType": "Sword",
+    "MainAttrId": 40,
+    "SubAttrId": 41,
+    "AttributeNodes": {
+        "chr_0028_wulfa_7": {
+            "40": 20
+        },
+        "chr_0028_wulfa_5": {
+            "40": 15
+        },
+        "chr_0028_wulfa_1": {
+            "40": 10
+        },
+        "chr_0028_wulfa_3": {
+            "40": 15
+        }
+    },
+    "SkillInfoMap": {
+        "112": {
+            "Icon": "skillicon/icon_combo_skill_wulfa_01",
+            "Element": "Physical",
+            "Name": "Moment of Blazing Shadow",
+            "Desc": "COMBO TRIGGER: When an enemy has both <#ba.noguard>Vulnerability</> and <#ba.spellinflict>Arts Infliction</> stacks.\nRossi's combo skill has 2 consecutive sequences. COMBO SEQUENCE 1 deals <@ba.pd>Physical DMG</> to the target.\nCOMBO SEQUENCE 2 <#ba.consume>consumes</> all <#ba.spellinflict>Arts Infliction</> stacks from the target, deals <@ba.pd>Physical DMG</> based on the number of Arts Infliction stacks <#ba.consume>consumed</>, applies 1 instance of <#ba.airborne>Lift</>, and buffs Rossi's Critical Rate and Critical DMG Dealt at the same time.\nIf COMBO SEQUENCE 2 is cast with <@ba.key>perfect timing</>, it applies 1 more stack of <#ba.noguard>Vulnerability</>.",
+            "Type": 2,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "SEQ 1 DMG Multiplier",
+                    "Values": [
+                        "67%",
+                        "73%",
+                        "80%",
+                        "87%",
+                        "93%",
+                        "100%",
+                        "107%",
+                        "113%",
+                        "120%",
+                        "128%",
+                        "138%",
+                        "150%"
+                    ]
+                },
+                {
+                    "Text": "SEQ 1 Ultimate Energy Gain",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "SEQ 2 DMG Multiplier",
+                    "Values": [
+                        "133%",
+                        "147%",
+                        "160%",
+                        "173%",
+                        "187%",
+                        "200%",
+                        "213%",
+                        "227%",
+                        "240%",
+                        "257%",
+                        "277%",
+                        "300%"
+                    ]
+                },
+                {
+                    "Text": "Bonus DMG Multiplier per Infliction Stack",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                },
+                {
+                    "Text": "SEQ 2 Stagger",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "Critical Rate Boost",
+                    "Values": [
+                        "15%",
+                        "15%",
+                        "15%",
+                        "17%",
+                        "17%",
+                        "17%",
+                        "19%",
+                        "19%",
+                        "21%",
+                        "21%",
+                        "23%",
+                        "25%"
+                    ]
+                },
+                {
+                    "Text": "Critical DMG Boost",
+                    "Values": [
+                        "30%",
+                        "30%",
+                        "30%",
+                        "34%",
+                        "34%",
+                        "34%",
+                        "38%",
+                        "38%",
+                        "42%",
+                        "42%",
+                        "46%",
+                        "50%"
+                    ]
+                },
+                {
+                    "Text": "Buff Duration (s)",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                },
+                {
+                    "Text": "SEQ 2 Ultimate Energy Gain",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "109": {
+            "Icon": "skillicon/icon_attack_sword",
+            "Element": "Physical",
+            "Name": "Seething Wolfblood",
+            "Desc": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.pd>Physical DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pd>Physical DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher attack that deals massive <@ba.pd>Physical DMG</> and recovers some SP.",
+            "Type": 0,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "BATK SEQ 1 Multiplier",
+                    "Values": [
+                        "22%",
+                        "24%",
+                        "26%",
+                        "29%",
+                        "31%",
+                        "33%",
+                        "35%",
+                        "37%",
+                        "40%",
+                        "42%",
+                        "46%",
+                        "50%"
+                    ]
+                },
+                {
+                    "Text": "BATK SEQ 2 Multiplier",
+                    "Values": [
+                        "27%",
+                        "29%",
+                        "32%",
+                        "34%",
+                        "37%",
+                        "40%",
+                        "42%",
+                        "45%",
+                        "48%",
+                        "51%",
+                        "55%",
+                        "60%"
+                    ]
+                },
+                {
+                    "Text": "BATK SEQ 3 Multiplier",
+                    "Values": [
+                        "29%",
+                        "32%",
+                        "35%",
+                        "38%",
+                        "41%",
+                        "44%",
+                        "46%",
+                        "49%",
+                        "52%",
+                        "56%",
+                        "60%",
+                        "65%"
+                    ]
+                },
+                {
+                    "Text": "BATK SEQ 4 Multiplier",
+                    "Values": [
+                        "36%",
+                        "39%",
+                        "43%",
+                        "46%",
+                        "50%",
+                        "53%",
+                        "57%",
+                        "60%",
+                        "64%",
+                        "68%",
+                        "74%",
+                        "80%"
+                    ]
+                },
+                {
+                    "Text": "BATK SEQ 5 Multiplier",
+                    "Values": [
+                        "50%",
+                        "55%",
+                        "60%",
+                        "65%",
+                        "70%",
+                        "75%",
+                        "80%",
+                        "85%",
+                        "90%",
+                        "96%",
+                        "104%",
+                        "113%"
+                    ]
+                },
+                {
+                    "Text": "Finisher ATK Multiplier",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Dive ATK Multiplier",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "111": {
+            "Icon": "skillicon/icon_ultimate_skill_wulfa_01",
+            "Element": "Fire",
+            "Name": "\"Razorclaw\" Ambuscade",
+            "Desc": "Rossi flutters her cape and unleashes a flurry of stabs that quickly deals multiple sequences of <@ba.fire>Heat DMG</> to the target. She then performs a two-sequence slash attack with her dagger that deals massive <@ba.fire>Heat DMG</> and applies <#ba.fireinflict>Heat Infliction</>.\n<@ba.info>When this skill successfully scores a critical hit, it deals higher Critical DMG.</>",
+            "Type": 3,
+            "Cooldown": 10,
+            "CostType": "UltimateSp",
+            "CostValue": 110,
+            "Params": [
+                {
+                    "Text": "Stab Attack Total DMG Multiplier",
+                    "Values": [
+                        "275%",
+                        "300%",
+                        "325%",
+                        "350%",
+                        "375%",
+                        "400%",
+                        "425%",
+                        "450%",
+                        "475%",
+                        "525%",
+                        "550%",
+                        "600%"
+                    ]
+                },
+                {
+                    "Text": "SEQ 1 Slash DMG Multiplier",
+                    "Values": [
+                        "111%",
+                        "122%",
+                        "133%",
+                        "144%",
+                        "156%",
+                        "167%",
+                        "178%",
+                        "189%",
+                        "200%",
+                        "214%",
+                        "231%",
+                        "250%"
+                    ]
+                },
+                {
+                    "Text": "SEQ 2 Slash DMG Multiplier",
+                    "Values": [
+                        "333%",
+                        "367%",
+                        "400%",
+                        "433%",
+                        "467%",
+                        "500%",
+                        "534%",
+                        "567%",
+                        "600%",
+                        "642%",
+                        "692%",
+                        "750%"
+                    ]
+                },
+                {
+                    "Text": "Stagger",
+                    "Values": [
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25"
+                    ]
+                },
+                {
+                    "Text": "Critical DMG Boost",
+                    "Values": [
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%"
+                    ]
+                }
+            ]
+        },
+        "110": {
+            "Icon": "skillicon/icon_skill_wulfa_01",
+            "Element": "Physical",
+            "Name": "Crimson Shadow",
+            "Desc": "Charges to the target to deal <@ba.pd>Physical DMG</> and apply <#ba.airborne>Lift</>.\nIf the target already has <#ba.noguard>Vulnerability</> stack(s), the skill also unleashes a <@ba.key>Wolven Ambrage</> that charges at the target to deal <@ba.fire>Heat DMG</>.",
+            "Type": 1,
+            "Cooldown": 0,
+            "CostType": "Atb",
+            "CostValue": 100,
+            "Params": [
+                {
+                    "Text": "SEQ 1 DMG Multiplier",
+                    "Values": [
+                        "85%",
+                        "94%",
+                        "102%",
+                        "111%",
+                        "119%",
+                        "128%",
+                        "137%",
+                        "145%",
+                        "154%",
+                        "164%",
+                        "177%",
+                        "192%"
+                    ]
+                },
+                {
+                    "Text": "SEQ 1 Stagger",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "SEQ 2 DMG Multiplier",
+                    "Values": [
+                        "128%",
+                        "141%",
+                        "153%",
+                        "166%",
+                        "179%",
+                        "192%",
+                        "204%",
+                        "217%",
+                        "230%",
+                        "246%",
+                        "265%",
+                        "288%"
+                    ]
+                },
+                {
+                    "Text": "SEQ 2 Stagger",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "12",
+                        "12",
+                        "12",
+                        "15"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0028_wulfa_passive_skill_0_2": {
+            "Icon": "icon_talent_wulfa_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Nicks and Scratches",
+            "Desc": "Battle skill improved: After <@ba.key>Wolven Ambrage</> deals DMG, Rossi applies <#ba.rossi>Razor Clawmark</> to the target for <@ba.vup>25</>s. This effect cannot stack.\nFor the duration of <#ba.rossi>Razor Clawmark</>, the target takes <@ba.vup>30.0%</> ATK (Rossi's) of <@ba.pd>Physical DMG</> per second and suffers <@ba.pd>Physical DMG Taken</> and <@ba.fire>Heat DMG Taken</> <@ba.vup>+12.0%</>.",
+            "Type": 4
+        },
+        "fac_chr_0028_wulfa_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
+            "Name": "Scent of the Hunt β",
+            "Desc": "Assign to Reception Room to grant operator clue collecting efficiency +20%",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0028_wulfa_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
+            "Name": "Clan Etiquette β",
+            "Desc": "Assign to Reception Room to slow Mood Drop of all operators in it by 14%",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0028_wulfa_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
+            "Name": "Scent of the Hunt γ",
+            "Desc": "Assign to Reception Room to grant operator clue collecting efficiency +30%",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        },
+        "chr_0028_wulfa_passive_skill_0_1": {
+            "Icon": "icon_talent_wulfa_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Nicks and Scratches",
+            "Desc": "Battle skill improved: After <@ba.key>Wolven Ambrage</> deals DMG, Rossi applies <#ba.rossi>Razor Clawmark</> to the target for <@ba.vup>15</>s. This effect cannot stack.\nFor the duration of <#ba.rossi>Razor Clawmark</>, the target takes <@ba.vup>25.0%</> ATK (Rossi's) of <@ba.pd>Physical DMG</> per second and suffers <@ba.pd>Physical DMG Taken</> and <@ba.fire>Heat DMG Taken</> <@ba.vup>+6.0%</>.",
+            "Type": 4
+        },
+        "chr_0028_wulfa_passive_skill_1_2": {
+            "Icon": "icon_talent_wulfa_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Seething Blood",
+            "Desc": "When Rossi's skill deals Critical DMG to a <#ba.rossi>Razor Clawmarked</> enemy, trigger another hit that deals <@ba.vup>24.0%</> ATK (Rossi's) of <@ba.fire>Heat DMG</> and restores <@ba.heal>[Intellect × 0.08]</> HP to Rossi. If the target is also <#ba.burning>Combusted</>, then the aforementioned DMG and HP Restoration effects are increased to <@ba.vup>1.5</> times.",
+            "Type": 4
+        },
+        "fac_chr_0028_wulfa_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
+            "Name": "Clan Etiquette γ",
+            "Desc": "Assign to Reception Room to slow Mood Drop of all operators in it by 18%",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "chr_0028_wulfa_passive_skill_1_1": {
+            "Icon": "icon_talent_wulfa_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Seething Blood",
+            "Desc": "When Rossi's skill deals Critical DMG to a <#ba.rossi>Razor Clawmarked</> enemy, trigger another hit that deals <@ba.vup>12.0%</> ATK (Rossi's) of <@ba.fire>Heat DMG</> and restores <@ba.heal>[Intellect × 0.04]</> HP to Rossi. If the target is also <#ba.burning>Combusted</>, then the aforementioned DMG and HP Restoration effects are increased to <@ba.vup>1.5</> times.",
+            "Type": 4
+        }
+    }
+}
