@@ -1,0 +1,498 @@
+{
+    "Name": "星徽·比利",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Specialty": {
+        "Id": 6,
+        "Name": "命破"
+    },
+    "Talents": {
+        "1": {
+            "Title": "英雄登場",
+            "Description": "<color=#FFFFFF>[核心被動：騎士決心]</color>進入戰場時，額外回復60點閃能。<color=#FFFFFF>[強化特殊技]</color>命中敵人時，使自身攻擊造成的傷害無視目標18%<color=#F0D12B>物理傷害抗性</color>，持續45秒，重複觸發時重置持續時間。",
+            "Lore": "新艾利都的壞蛋就像特攝片裡的一樣多，而真正的英雄卻沒有幾個。\n「雖然我很會喊英雄的台詞，不過我可能還算不上英雄……」\n「但我會學著英雄的樣子，站在大家的身前！」"
+        },
+        "2": {
+            "Title": "荒原機兵",
+            "Description": "<color=#FFFFFF>[普通攻擊：最高馬力星光]</color>、<color=#FFFFFF>[強化特殊技：孤輪特技]</color>和<color=#FFFFFF>[終結技：騎士飛踢]</color>造成的傷害提升50%。發動<color=#FFFFFF>[強化特殊技：搖曳步伐]</color>、<color=#FFFFFF>[強化特殊技：抓地輪轂]</color>時或發動<color=#FFFFFF>[特殊技：動力壓制]</color>命中處於失衡狀態下的敵人時，獲得<color=#FFFFFF>[渦輪增壓]</color>效果：<color=#FFFFFF>[特殊技：動力壓制]</color>會消耗該效果直接銜接<color=#FFFFFF>[強化特殊技：孤輪特技]</color>，並使該次<color=#FFFFFF>[強化特殊技：孤輪特技]</color>造成的暴擊傷害提升50%，<color=#FFFFFF>[渦輪增壓]</color>效果至多疊加1層。",
+            "Lore": "外環的神射手數不勝數，但在高速奔馳的機車上還能保持準頭，才能成為真正的王牌。\n「彈道演算法和機械指頭？那些當然很有用……」\n「但我射術神準的真正原因是……星光選中了我！」"
+        },
+        "3": {
+            "Title": "騎士精神",
+            "Description": "<color=#FFFFFF>[普通攻擊]</color>、<color=#FFFFFF>[閃避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[連攜技]</color>技能等級+2",
+            "Lore": "星徽騎士的精神到底是什麼？永不退縮，鋤強扶弱？犧牲、公正、憐憫、榮譽？\n「認為正確的事情，就去做……」\n「認為是不帥氣的事情，就絕不能妥協！」\n「這就是我絕不放棄同伴的理由！」"
+        },
+        "4": {
+            "Title": "審判底火",
+            "Description": "接戰狀態下，每次發動<color=#FFFFFF>[特殊技：動力壓制]</color>時，自身暴擊傷害提升8%，至多疊加2層，持續45秒，重複觸發時重置持續時間。若生命值低於35%，且自身非目前操作中的角色時，會持續回復生命值至35%。",
+            "Lore": "理想的秩序為維護公義而生，然而理想生來就是為了被背棄。\n「你說這些片子是小孩子才看的……？」\n「有些最有勇氣的夢想，本來只有小孩子才敢做吧？」\n「這些被嘲笑的夢想，就由我——星徽·比利來守護！」"
+        },
+        "5": {
+            "Title": "輝光武裝",
+            "Description": "<color=#FFFFFF>[普通攻擊]</color>、<color=#FFFFFF>[閃避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[連攜技]</color>技能等級+2",
+            "Lore": "身披華麗的衣裝才能成為威風的英雄……所以說英雄還真是不方便的東西。\n「我可不是因為加大口徑的武器和加大功率的部件才變強的！」\n「我真正的武裝，是漫天的星光！」"
+        },
+        "6": {
+            "Title": "星徽騎士",
+            "Description": "<color=#FFFFFF>[終結技：騎士飛踢]</color>和<color=#FFFFFF>[普通攻擊：最高馬力星光]</color>造成的貫穿傷害提升18%。第四段<color=#FFFFFF>[普通攻擊：騎士鬥技]</color>、<color=#FFFFFF>[強化特殊技：孤輪特技]</color>或<color=#FFFFFF>[連攜技：騎士漫步]</color>命中敵人後，可以獲得1層<color=#FFFFFF>[煊赫星輝]</color>，最多獲得6層，同一招式內至多獲得1層。發動<color=#FFFFFF>[終結技：騎士飛踢]</color>或<color=#FFFFFF>[普通攻擊：最高馬力星光]</color>時，至多消耗2層<color=#FFFFFF>[煊赫星輝]</color>，每消耗1層<color=#FFFFFF>[煊赫星輝]</color>，使該招式的最後一擊額外造成100%貫穿力的<color=#F0D12B>物理傷害</color>。",
+            "Lore": "永遠相信希望的人，最後也成為了別人的希望。\n這就是關於星徽騎士，關於比利·奇德的故事。\n「星徽騎士——變身！」"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "核心被動：騎士決心",
+            "DescriptionByLevel": {
+                "1": "星徽·比利會額外根據自身最大生命值提高貫穿力，每1點最大生命值將提高0.1點貫穿力。發動招式造成的<color=#F0D12B>物理傷害</color>均為貫穿傷害，無視敵人防禦，使用貫穿力作為招式傷害倍率。\n星徽·比利進入戰場時即可回復60點閃能，在勘域模式中此效果180秒內最多觸發一次。\n生命值大於25%時，可以點按 <IconMap:Icon_Special> 消耗生命值發動<color=#FFFFFF>[特殊技：動力壓制]</color>，且接戰狀態下，每次發動該招式時，自身暴擊傷害提升<color=#2BAD00>45%</color>，持續45秒，重複觸發時重置持續時間。生命值小於或等於25%時，受到的傷害減少50%。\n星徽·比利攻擊命中敵人時，會獲得<color=#FFFFFF>[決意]</color>，回復量根據招式變化，<color=#FFFFFF>[決意]</color>上限為120點，處於接戰狀態下，會緩慢回復<color=#FFFFFF>[決意]</color>。<color=#FFFFFF>[強化特殊技：孤輪特技]</color>命中時、發動<color=#FFFFFF>[連攜技：騎士漫步]</color>時或觸發格擋時，額外回復<color=#FFFFFF>[決意]</color>。任意方式觸發<color=#FFFFFF>[極限閃避]</color>時，回復3點<color=#FFFFFF>[決意]</color>，此效果0.5秒內最多觸發一次。\n當<color=#FFFFFF>[決意]</color>大於等於100點時，長按 <IconMap:Icon_Normal> 會消耗100點<color=#FFFFFF>[決意]</color>發動<color=#FFFFFF>[普通攻擊：最高馬力星光]</color>。\n<color=#FFFFFF>[普通攻擊：騎士鬥技]</color>命中敵人時，回復少量生命值。透過<color=#FFFFFF>[極限閃避]</color>發動<color=#FFFFFF>[閃避反擊：決鬥之王]</color>命中敵人時，回復生命值。發動<color=#FFFFFF>[強化特殊技：抓地輪轂]</color>或<color=#FFFFFF>[強化特殊技：搖曳步伐]</color>時，回復生命值。\n",
+                "2": "星徽·比利會額外根據自身最大生命值提高貫穿力，每1點最大生命值將提高0.1點貫穿力。發動招式造成的<color=#F0D12B>物理傷害</color>均為貫穿傷害，無視敵人防禦，使用貫穿力作為招式傷害倍率。\n星徽·比利進入戰場時即可回復60點閃能，在勘域模式中此效果180秒內最多觸發一次。\n生命值大於25%時，可以點按 <IconMap:Icon_Special> 消耗生命值發動<color=#FFFFFF>[特殊技：動力壓制]</color>，且接戰狀態下，每次發動該招式時，自身暴擊傷害提升<color=#2BAD00>53%</color>，持續45秒，重複觸發時重置持續時間。生命值小於或等於25%時，受到的傷害減少50%。\n星徽·比利攻擊命中敵人時，會獲得<color=#FFFFFF>[決意]</color>，回復量根據招式變化，<color=#FFFFFF>[決意]</color>上限為120點，處於接戰狀態下，會緩慢回復<color=#FFFFFF>[決意]</color>。<color=#FFFFFF>[強化特殊技：孤輪特技]</color>命中時、發動<color=#FFFFFF>[連攜技：騎士漫步]</color>時或觸發格擋時，額外回復<color=#FFFFFF>[決意]</color>。任意方式觸發<color=#FFFFFF>[極限閃避]</color>時，回復3點<color=#FFFFFF>[決意]</color>，此效果0.5秒內最多觸發一次。\n當<color=#FFFFFF>[決意]</color>大於等於100點時，長按 <IconMap:Icon_Normal> 會消耗100點<color=#FFFFFF>[決意]</color>發動<color=#FFFFFF>[普通攻擊：最高馬力星光]</color>。\n<color=#FFFFFF>[普通攻擊：騎士鬥技]</color>命中敵人時，回復少量生命值。透過<color=#FFFFFF>[極限閃避]</color>發動<color=#FFFFFF>[閃避反擊：決鬥之王]</color>命中敵人時，回復生命值。發動<color=#FFFFFF>[強化特殊技：抓地輪轂]</color>或<color=#FFFFFF>[強化特殊技：搖曳步伐]</color>時，回復生命值。\n",
+                "3": "星徽·比利會額外根據自身最大生命值提高貫穿力，每1點最大生命值將提高0.1點貫穿力。發動招式造成的<color=#F0D12B>物理傷害</color>均為貫穿傷害，無視敵人防禦，使用貫穿力作為招式傷害倍率。\n星徽·比利進入戰場時即可回復60點閃能，在勘域模式中此效果180秒內最多觸發一次。\n生命值大於25%時，可以點按 <IconMap:Icon_Special> 消耗生命值發動<color=#FFFFFF>[特殊技：動力壓制]</color>，且接戰狀態下，每次發動該招式時，自身暴擊傷害提升<color=#2BAD00>60%</color>，持續45秒，重複觸發時重置持續時間。生命值小於或等於25%時，受到的傷害減少50%。\n星徽·比利攻擊命中敵人時，會獲得<color=#FFFFFF>[決意]</color>，回復量根據招式變化，<color=#FFFFFF>[決意]</color>上限為120點，處於接戰狀態下，會緩慢回復<color=#FFFFFF>[決意]</color>。<color=#FFFFFF>[強化特殊技：孤輪特技]</color>命中時、發動<color=#FFFFFF>[連攜技：騎士漫步]</color>時或觸發格擋時，額外回復<color=#FFFFFF>[決意]</color>。任意方式觸發<color=#FFFFFF>[極限閃避]</color>時，回復3點<color=#FFFFFF>[決意]</color>，此效果0.5秒內最多觸發一次。\n當<color=#FFFFFF>[決意]</color>大於等於100點時，長按 <IconMap:Icon_Normal> 會消耗100點<color=#FFFFFF>[決意]</color>發動<color=#FFFFFF>[普通攻擊：最高馬力星光]</color>。\n<color=#FFFFFF>[普通攻擊：騎士鬥技]</color>命中敵人時，回復少量生命值。透過<color=#FFFFFF>[極限閃避]</color>發動<color=#FFFFFF>[閃避反擊：決鬥之王]</color>命中敵人時，回復生命值。發動<color=#FFFFFF>[強化特殊技：抓地輪轂]</color>或<color=#FFFFFF>[強化特殊技：搖曳步伐]</color>時，回復生命值。\n",
+                "4": "星徽·比利會額外根據自身最大生命值提高貫穿力，每1點最大生命值將提高0.1點貫穿力。發動招式造成的<color=#F0D12B>物理傷害</color>均為貫穿傷害，無視敵人防禦，使用貫穿力作為招式傷害倍率。\n星徽·比利進入戰場時即可回復60點閃能，在勘域模式中此效果180秒內最多觸發一次。\n生命值大於25%時，可以點按 <IconMap:Icon_Special> 消耗生命值發動<color=#FFFFFF>[特殊技：動力壓制]</color>，且接戰狀態下，每次發動該招式時，自身暴擊傷害提升<color=#2BAD00>68%</color>，持續45秒，重複觸發時重置持續時間。生命值小於或等於25%時，受到的傷害減少50%。\n星徽·比利攻擊命中敵人時，會獲得<color=#FFFFFF>[決意]</color>，回復量根據招式變化，<color=#FFFFFF>[決意]</color>上限為120點，處於接戰狀態下，會緩慢回復<color=#FFFFFF>[決意]</color>。<color=#FFFFFF>[強化特殊技：孤輪特技]</color>命中時、發動<color=#FFFFFF>[連攜技：騎士漫步]</color>時或觸發格擋時，額外回復<color=#FFFFFF>[決意]</color>。任意方式觸發<color=#FFFFFF>[極限閃避]</color>時，回復3點<color=#FFFFFF>[決意]</color>，此效果0.5秒內最多觸發一次。\n當<color=#FFFFFF>[決意]</color>大於等於100點時，長按 <IconMap:Icon_Normal> 會消耗100點<color=#FFFFFF>[決意]</color>發動<color=#FFFFFF>[普通攻擊：最高馬力星光]</color>。\n<color=#FFFFFF>[普通攻擊：騎士鬥技]</color>命中敵人時，回復少量生命值。透過<color=#FFFFFF>[極限閃避]</color>發動<color=#FFFFFF>[閃避反擊：決鬥之王]</color>命中敵人時，回復生命值。發動<color=#FFFFFF>[強化特殊技：抓地輪轂]</color>或<color=#FFFFFF>[強化特殊技：搖曳步伐]</color>時，回復生命值。\n",
+                "5": "星徽·比利會額外根據自身最大生命值提高貫穿力，每1點最大生命值將提高0.1點貫穿力。發動招式造成的<color=#F0D12B>物理傷害</color>均為貫穿傷害，無視敵人防禦，使用貫穿力作為招式傷害倍率。\n星徽·比利進入戰場時即可回復60點閃能，在勘域模式中此效果180秒內最多觸發一次。\n生命值大於25%時，可以點按 <IconMap:Icon_Special> 消耗生命值發動<color=#FFFFFF>[特殊技：動力壓制]</color>，且接戰狀態下，每次發動該招式時，自身暴擊傷害提升<color=#2BAD00>75%</color>，持續45秒，重複觸發時重置持續時間。生命值小於或等於25%時，受到的傷害減少50%。\n星徽·比利攻擊命中敵人時，會獲得<color=#FFFFFF>[決意]</color>，回復量根據招式變化，<color=#FFFFFF>[決意]</color>上限為120點，處於接戰狀態下，會緩慢回復<color=#FFFFFF>[決意]</color>。<color=#FFFFFF>[強化特殊技：孤輪特技]</color>命中時、發動<color=#FFFFFF>[連攜技：騎士漫步]</color>時或觸發格擋時，額外回復<color=#FFFFFF>[決意]</color>。任意方式觸發<color=#FFFFFF>[極限閃避]</color>時，回復3點<color=#FFFFFF>[決意]</color>，此效果0.5秒內最多觸發一次。\n當<color=#FFFFFF>[決意]</color>大於等於100點時，長按 <IconMap:Icon_Normal> 會消耗100點<color=#FFFFFF>[決意]</color>發動<color=#FFFFFF>[普通攻擊：最高馬力星光]</color>。\n<color=#FFFFFF>[普通攻擊：騎士鬥技]</color>命中敵人時，回復少量生命值。透過<color=#FFFFFF>[極限閃避]</color>發動<color=#FFFFFF>[閃避反擊：決鬥之王]</color>命中敵人時，回復生命值。發動<color=#FFFFFF>[強化特殊技：抓地輪轂]</color>或<color=#FFFFFF>[強化特殊技：搖曳步伐]</color>時，回復生命值。\n",
+                "6": "星徽·比利會額外根據自身最大生命值提高貫穿力，每1點最大生命值將提高0.1點貫穿力。發動招式造成的<color=#F0D12B>物理傷害</color>均為貫穿傷害，無視敵人防禦，使用貫穿力作為招式傷害倍率。\n星徽·比利進入戰場時即可回復60點閃能，在勘域模式中此效果180秒內最多觸發一次。\n生命值大於25%時，可以點按 <IconMap:Icon_Special> 消耗生命值發動<color=#FFFFFF>[特殊技：動力壓制]</color>，且接戰狀態下，每次發動該招式時，自身暴擊傷害提升<color=#2BAD00>83%</color>，持續45秒，重複觸發時重置持續時間。生命值小於或等於25%時，受到的傷害減少50%。\n星徽·比利攻擊命中敵人時，會獲得<color=#FFFFFF>[決意]</color>，回復量根據招式變化，<color=#FFFFFF>[決意]</color>上限為120點，處於接戰狀態下，會緩慢回復<color=#FFFFFF>[決意]</color>。<color=#FFFFFF>[強化特殊技：孤輪特技]</color>命中時、發動<color=#FFFFFF>[連攜技：騎士漫步]</color>時或觸發格擋時，額外回復<color=#FFFFFF>[決意]</color>。任意方式觸發<color=#FFFFFF>[極限閃避]</color>時，回復3點<color=#FFFFFF>[決意]</color>，此效果0.5秒內最多觸發一次。\n當<color=#FFFFFF>[決意]</color>大於等於100點時，長按 <IconMap:Icon_Normal> 會消耗100點<color=#FFFFFF>[決意]</color>發動<color=#FFFFFF>[普通攻擊：最高馬力星光]</color>。\n<color=#FFFFFF>[普通攻擊：騎士鬥技]</color>命中敵人時，回復少量生命值。透過<color=#FFFFFF>[極限閃避]</color>發動<color=#FFFFFF>[閃避反擊：決鬥之王]</color>命中敵人時，回復生命值。發動<color=#FFFFFF>[強化特殊技：抓地輪轂]</color>或<color=#FFFFFF>[強化特殊技：搖曳步伐]</color>時，回復生命值。\n",
+                "7": "星徽·比利會額外根據自身最大生命值提高貫穿力，每1點最大生命值將提高0.1點貫穿力。發動招式造成的<color=#F0D12B>物理傷害</color>均為貫穿傷害，無視敵人防禦，使用貫穿力作為招式傷害倍率。\n星徽·比利進入戰場時即可回復60點閃能，在勘域模式中此效果180秒內最多觸發一次。\n生命值大於25%時，可以點按 <IconMap:Icon_Special> 消耗生命值發動<color=#FFFFFF>[特殊技：動力壓制]</color>，且接戰狀態下，每次發動該招式時，自身暴擊傷害提升<color=#2BAD00>90%</color>，持續45秒，重複觸發時重置持續時間。生命值小於或等於25%時，受到的傷害減少50%。\n星徽·比利攻擊命中敵人時，會獲得<color=#FFFFFF>[決意]</color>，回復量根據招式變化，<color=#FFFFFF>[決意]</color>上限為120點，處於接戰狀態下，會緩慢回復<color=#FFFFFF>[決意]</color>。<color=#FFFFFF>[強化特殊技：孤輪特技]</color>命中時、發動<color=#FFFFFF>[連攜技：騎士漫步]</color>時或觸發格擋時，額外回復<color=#FFFFFF>[決意]</color>。任意方式觸發<color=#FFFFFF>[極限閃避]</color>時，回復3點<color=#FFFFFF>[決意]</color>，此效果0.5秒內最多觸發一次。\n當<color=#FFFFFF>[決意]</color>大於等於100點時，長按 <IconMap:Icon_Normal> 會消耗100點<color=#FFFFFF>[決意]</color>發動<color=#FFFFFF>[普通攻擊：最高馬力星光]</color>。\n<color=#FFFFFF>[普通攻擊：騎士鬥技]</color>命中敵人時，回復少量生命值。透過<color=#FFFFFF>[極限閃避]</color>發動<color=#FFFFFF>[閃避反擊：決鬥之王]</color>命中敵人時，回復生命值。發動<color=#FFFFFF>[強化特殊技：抓地輪轂]</color>或<color=#FFFFFF>[強化特殊技：搖曳步伐]</color>時，回復生命值。\n"
+            }
+        },
+        "MathSkill": {
+            "Title": "額外能力：熾熱星輝",
+            "Description": "隊伍中包含<color=#FFFFFF>[擊破]</color>或<color=#FFFFFF>[防護]</color>或<color=#FFFFFF>[支援]</color>角色時觸發：\n<color=#FFFFFF>[強化特殊技：孤輪特技]</color>、<color=#FFFFFF>[普通攻擊：騎士鬥技]</color>第四段、<color=#FFFFFF>[連攜技]</color>、<color=#FFFFFF>[終結技]</color>命中敵人時獲得一層<color=#FFFFFF>[星輝]</color>，同一招式至多獲得一層，持續45秒，至多疊加2層，每層<color=#FFFFFF>[星輝]</color>會使<color=#FFFFFF>[連攜技]</color>、<color=#FFFFFF>[終結技]</color>、<color=#FFFFFF>[強化特殊技]</color>和<color=#FFFFFF>[普通攻擊：最高馬力星光]</color>造成的傷害提升20%。"
+        },
+        "AwakenAbility": {},
+        "BaseProps": [
+            {
+                "20101": 0,
+                "12101": 0
+            },
+            {
+                "20101": 480,
+                "12101": 0
+            },
+            {
+                "20101": 480,
+                "12101": 25
+            },
+            {
+                "20101": 960,
+                "12101": 25
+            },
+            {
+                "20101": 960,
+                "12101": 50
+            },
+            {
+                "20101": 1440,
+                "12101": 50
+            },
+            {
+                "20101": 1440,
+                "12101": 75
+            }
+        ]
+    },
+    "SkillDescriptions": {
+        "0": {
+            "153100001": {
+                "Title": "普通攻擊：騎士鬥技",
+                "Description": "點按 <IconMap:Icon_Normal> 發動：\n向前方進行至多四段的攻擊，造成<color=#F0D12B>物理傷害</color>。\n第四段攻擊發動時，點按 <IconMap:Icon_Special> 發動<color=#FFFFFF>[特殊技：動力壓制]</color>消耗生命值減少50%。\n招式命中敵人時，少量回復生命值。"
+            },
+            "153100002": {
+                "Title": "普通攻擊：最高馬力星光",
+                "Description": "<color=#FFFFFF>[決意]</color>足夠時，長按 <IconMap:Icon_Normal> 發動：\n對前方發動摩托突擊，突擊結束後打出雷射束，造成大量<color=#F0D12B>物理傷害</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "153100018": {
+                "Title": "普通攻擊：騎士鬥技"
+            },
+            "153100019": {
+                "Description": "一段傷害倍率",
+                "Param": "{Skill:1531001, Prop:1001}"
+            },
+            "153100020": {
+                "Description": "二段傷害倍率",
+                "Param": "{Skill:1531002, Prop:1001}"
+            },
+            "153100021": {
+                "Description": "三段傷害倍率",
+                "Param": "{Skill:1531003, Prop:1001}"
+            },
+            "153100022": {
+                "Description": "四段傷害倍率",
+                "Param": "{Skill:1531004, Prop:1001}"
+            },
+            "153100023": {
+                "Description": "一段失衡倍率",
+                "Param": "{Skill:1531001, Prop:1002}"
+            },
+            "153100024": {
+                "Description": "二段失衡倍率",
+                "Param": "{Skill:1531002, Prop:1002}"
+            },
+            "153100025": {
+                "Description": "三段失衡倍率",
+                "Param": "{Skill:1531003, Prop:1002}"
+            },
+            "153100026": {
+                "Description": "四段失衡倍率",
+                "Param": "{Skill:1531004, Prop:1002}"
+            },
+            "153100027": {
+                "Title": "普通攻擊：最高馬力星光"
+            },
+            "153100028": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1531010, Prop:1001}"
+            },
+            "153100029": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1531010, Prop:1002}"
+            },
+            "153100030": {
+                "Description": "[決意]消耗",
+                "Param": "100點"
+            }
+        },
+        "1": {
+            "153100003": {
+                "Title": "特殊技：動力壓制",
+                "Description": "自身生命值大於25%時，點按 <IconMap:Icon_Special> 發動：\n消耗等同於自身16%生命值上限的生命值，召出摩托快速撞向敵人，持續造成<color=#F0D12B>物理傷害</color>。\n招式發動短時間內，若為目前操作中的角色時受到敵人攻擊，則會觸發格擋，免疫該次攻擊，並回復5點<color=#FFFFFF>[決意]</color>。\n觸發格擋後，立即銜接<color=#FFFFFF>[強化特殊技：孤輪特技]</color>。\n招式持續攻擊一段時間後會自動銜接<color=#FFFFFF>[強化特殊技：孤輪特技]</color>。\n招式發動期間抗打斷等級提升。"
+            },
+            "153100004": {
+                "Title": "特殊技：脫韁",
+                "Description": "<color=#FFFFFF>[閃避：銀河橫行]</color>中斷時自動發動：\n將摩托車踢向敵人，造成<color=#F0D12B>物理傷害</color>。\n招式發動後，可以銜接<color=#FFFFFF>[閃避反擊：決鬥之王]</color>。\n招式發動期間抗打斷等級提升。"
+            },
+            "153100005": {
+                "Title": "強化特殊技：孤輪特技",
+                "Description": "<color=#FFFFFF>[特殊技：動力壓制]</color>達到最大攻擊時長或觸發格擋時自動發動：\n將摩托車抬起攻擊敵人，造成<color=#F0D12B>物理傷害</color>。\n招式命中敵人後，額外回復8點<color=#FFFFFF>[決意]</color>。\n招式發動後，若閃能足夠，點按或長按 <IconMap:Icon_SpecialReady_Rp> 可以銜接<color=#FFFFFF>[強化特殊技：搖曳步伐]</color>。\n招式動作結束後，自動銜接<color=#FFFFFF>[特殊技：脫韁]</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "153100006": {
+                "Title": "強化特殊技：抓地輪轂",
+                "Description": "閃能足夠時，長按 <IconMap:Icon_SpecialReady_Rp> 發動：\n使用摩托下砸，造成<color=#F0D12B>物理傷害</color>。\n招式發動時，回復自身30%生命值上限的生命值。\n招式發動期間擁有無敵效果。"
+            },
+            "153100007": {
+                "Title": "強化特殊技：搖曳步伐",
+                "Description": "發動<color=#FFFFFF>[強化特殊技：孤輪特技]</color>後，且閃能足夠時，點按或長按 <IconMap:Icon_SpecialReady_Rp> 發動：\n使用摩托和手炮進行混合攻擊，造成<color=#F0D12B>物理傷害</color>。\n招式發動時，回復自身15%生命值上限的生命值。\n招式發動期間擁有無敵效果。"
+            },
+            "153100031": {
+                "Title": "特殊技：動力壓制"
+            },
+            "153100032": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1531006, Prop:1001}"
+            },
+            "153100033": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1531006, Prop:1002}"
+            },
+            "153100034": {
+                "Title": "特殊技：脫韁"
+            },
+            "153100035": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1531007, Prop:1001}"
+            },
+            "153100036": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1531007, Prop:1002}"
+            },
+            "153100037": {
+                "Title": "強化特殊技：孤輪特技"
+            },
+            "153100038": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1531008, Prop:1001}"
+            },
+            "153100039": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1531008, Prop:1002}"
+            },
+            "153100040": {
+                "Title": "強化特殊技：抓地輪轂"
+            },
+            "153100041": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1531009, Prop:1001}"
+            },
+            "153100042": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1531009, Prop:1002}"
+            },
+            "153100043": {
+                "Description": "閃能消耗",
+                "Param": "60點"
+            },
+            "153100044": {
+                "Title": "強化特殊技：搖曳步伐"
+            },
+            "153100045": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1531011, Prop:1001}"
+            },
+            "153100046": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1531011, Prop:1002}"
+            },
+            "153100047": {
+                "Description": "閃能消耗",
+                "Param": "60點"
+            }
+        },
+        "2": {
+            "153100008": {
+                "Title": "閃避：真驚險！",
+                "Description": "點按 <IconMap:Icon_Evade> 發動：\n快速的衝刺閃避。\n招式發動期間擁有無敵效果。"
+            },
+            "153100009": {
+                "Title": "閃避：銀河橫行",
+                "Description": "<color=#FFFFFF>[特殊技：動力壓制]</color>期間拖曳{LAYOUT_CONSOLECONTROLLER#操作桿}{LAYOUT_FALLBACK#搖桿}或長按 <IconMap:Icon_Evade> 發動：\n控制摩托車甩尾，短時間內可以觸發<color=#FFFFFF>[極限閃避]</color>。\n若成功觸發<color=#FFFFFF>[極限閃避]</color>，則會立即銜接<color=#FFFFFF>[閃避反擊：尾焰全旋]</color>。\n招式發動期間，保持拖曳{LAYOUT_CONSOLECONTROLLER#操作桿}{LAYOUT_FALLBACK#搖桿}或長按 <IconMap:Icon_Evade> 會持續甩尾。\n招式發動期間，會繼續<color=#FFFFFF>[特殊技：動力壓制]</color>的計時，達到最大時長時，自動銜接<color=#FFFFFF>[強化特殊技：孤輪特技]</color>。\n提前中斷招式時，自動銜接<color=#FFFFFF>[特殊技：脫韁]</color>。\n招式發動期間抗打斷等級提升且擁有短暫無敵效果。"
+            },
+            "153100010": {
+                "Title": "衝刺攻擊：星-徽-懲-戒",
+                "Description": "閃避時，點按 <IconMap:Icon_Normal> 發動：\n向前進行快速斬擊，造成<color=#F0D12B>物理傷害</color>。"
+            },
+            "153100011": {
+                "Title": "閃避反擊：決鬥之王",
+                "Description": "觸發<color=#FFFFFF>[極限閃避]</color>後，點按 <IconMap:Icon_Normal> 發動：\n向前使用手炮轟擊，造成<color=#F0D12B>物理傷害</color>。\n若透過<color=#FFFFFF>[極限閃避]</color>發動該招式，則該招式命中敵人時，回復自身10%生命值上限的生命值，並可以銜接第四段<color=#FFFFFF>[普通攻擊：騎士鬥技]</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "153100012": {
+                "Title": "閃避反擊：尾焰全旋",
+                "Description": "<color=#FFFFFF>[閃避：銀河橫行]</color>期間觸發<color=#FFFFFF>[極限閃避]</color>時自動發動：\n旋轉摩托對周圍敵人造成<color=#F0D12B>物理傷害</color>。\n招式發動後，自動銜接<color=#FFFFFF>[強化特殊技：孤輪特技]</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "153100048": {
+                "Title": "衝刺攻擊：星-徽-懲-戒"
+            },
+            "153100049": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1531012, Prop:1001}"
+            },
+            "153100050": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1531012, Prop:1002}"
+            },
+            "153100051": {
+                "Title": "閃避反擊：決鬥之王"
+            },
+            "153100052": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1531013, Prop:1001}"
+            },
+            "153100053": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1531013, Prop:1002}"
+            },
+            "153100054": {
+                "Title": "閃避反擊：尾焰全旋"
+            },
+            "153100055": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1531014, Prop:1001}"
+            },
+            "153100056": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1531014, Prop:1002}"
+            }
+        },
+        "3": {
+            "153100013": {
+                "Title": "連攜技：騎士漫步",
+                "Description": "觸發<color=#FFFFFF>[連攜技]</color>時，選擇對應角色發動：\n向前方進行多段攻擊，造成大量<color=#F0D12B>物理傷害</color>。\n招式發動時，回復15點<color=#FFFFFF>[決意]</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "153100014": {
+                "Title": "終結技：騎士飛踢",
+                "Description": "喧響等級達到<color=#FFFFFF>[極]</color>時，點按 <IconMap:Icon_UltimateReady> 發動：\n躍至空中朝目標進行飛踢攻擊，造成大量<color=#F0D12B>物理傷害</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "153100057": {
+                "Title": "連攜技：騎士漫步"
+            },
+            "153100058": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1531015, Prop:1001}"
+            },
+            "153100059": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1531015, Prop:1002}"
+            },
+            "153100060": {
+                "Title": "終結技：騎士飛踢"
+            },
+            "153100061": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1531016, Prop:1001}"
+            },
+            "153100062": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1531016, Prop:1002}"
+            }
+        },
+        "6": {
+            "153100015": {
+                "Title": "快速支援：星徽-羈絆之力",
+                "Description": "目前操作中的角色被擊飛時，點按 <IconMap:Icon_Switch> 發動：\n向前使用手炮轟擊，造成<color=#F0D12B>物理傷害</color>。\n生命值大於25%時，發動該招式改為發動<color=#FFFFFF>[特殊技：動力壓制]</color>，該效果每5秒至多生效1次。\n招式發動期間擁有無敵效果。"
+            },
+            "153100016": {
+                "Title": "招架支援：英雄登台",
+                "Description": "前場角色即將被攻擊時，點按 <IconMap:Icon_Switch> 發動：\n招架敵人的攻擊，累積大量失衡值。\n招式發動期間擁有無敵效果。"
+            },
+            "153100017": {
+                "Title": "支援突擊：反派退場",
+                "Description": "發動<color=#FFFFFF>[招架支援]</color>後，點按 <IconMap:Icon_Normal> 發動：\n對目標發動踢車攻擊，造成大量<color=#F0D12B>物理傷害</color>。\n招式發動期間擁有無敵效果。"
+            },
+            "153100063": {
+                "Title": "快速支援：星徽-羈絆之力"
+            },
+            "153100064": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1531017, Prop:1001}"
+            },
+            "153100065": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1531017, Prop:1002}"
+            },
+            "153100066": {
+                "Title": "招架支援：英雄登台"
+            },
+            "153100067": {
+                "Description": "輕招架失衡倍率",
+                "Param": "{Skill:1531018, Prop:1002}"
+            },
+            "153100068": {
+                "Description": "重招架失衡倍率",
+                "Param": "{Skill:1531019, Prop:1002}"
+            },
+            "153100069": {
+                "Description": "連續招架失衡倍率",
+                "Param": "{Skill:1531020, Prop:1002}"
+            },
+            "153100070": {
+                "Title": "支援突擊：反派退場"
+            },
+            "153100071": {
+                "Description": "傷害倍率",
+                "Param": "{Skill:1531021, Prop:1001}"
+            },
+            "153100072": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1531021, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1531001": {
+            "DamageValue": 5030,
+            "DamageGrowth": 460,
+            "DazeValue": 3990,
+            "DazeGrowth": 190
+        },
+        "1531002": {
+            "DamageValue": 6800,
+            "DamageGrowth": 620,
+            "DazeValue": 5680,
+            "DazeGrowth": 260
+        },
+        "1531003": {
+            "DamageValue": 5450,
+            "DamageGrowth": 500,
+            "DazeValue": 4800,
+            "DazeGrowth": 220
+        },
+        "1531004": {
+            "DamageValue": 20600,
+            "DamageGrowth": 1880,
+            "DazeValue": 16350,
+            "DazeGrowth": 750
+        },
+        "1531006": {
+            "DamageValue": 5200,
+            "DamageGrowth": 480,
+            "DazeValue": 11000,
+            "DazeGrowth": 500
+        },
+        "1531007": {
+            "DamageValue": 7210,
+            "DamageGrowth": 660,
+            "DazeValue": 5870,
+            "DazeGrowth": 270
+        },
+        "1531008": {
+            "DamageValue": 38970,
+            "DamageGrowth": 3550,
+            "DazeValue": 13930,
+            "DazeGrowth": 640
+        },
+        "1531009": {
+            "DamageValue": 92990,
+            "DamageGrowth": 8460,
+            "DazeValue": 79540,
+            "DazeGrowth": 3620
+        },
+        "1531010": {
+            "DamageValue": 104320,
+            "DamageGrowth": 9490,
+            "DazeValue": 34110,
+            "DazeGrowth": 1560
+        },
+        "1531011": {
+            "DamageValue": 95900,
+            "DamageGrowth": 8720,
+            "DazeValue": 82400,
+            "DazeGrowth": 3750
+        },
+        "1531012": {
+            "DamageValue": 4510,
+            "DamageGrowth": 410,
+            "DazeValue": 2390,
+            "DazeGrowth": 110
+        },
+        "1531013": {
+            "DamageValue": 11950,
+            "DamageGrowth": 1090,
+            "DazeValue": 9730,
+            "DazeGrowth": 450
+        },
+        "1531014": {
+            "DamageValue": 19870,
+            "DamageGrowth": 1810,
+            "DazeValue": 18700,
+            "DazeGrowth": 850
+        },
+        "1531015": {
+            "DamageValue": 66290,
+            "DamageGrowth": 6030,
+            "DazeValue": 26220,
+            "DazeGrowth": 1200
+        },
+        "1531016": {
+            "DamageValue": 159210,
+            "DamageGrowth": 14480,
+            "DazeValue": 44920,
+            "DazeGrowth": 2050
+        },
+        "1531017": {
+            "DamageValue": 9200,
+            "DamageGrowth": 840,
+            "DazeValue": 4870,
+            "DazeGrowth": 230
+        },
+        "1531018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1531019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1531020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1531021": {
+            "DamageValue": 22960,
+            "DamageGrowth": 2090,
+            "DazeValue": 20370,
+            "DazeGrowth": 930
+        }
+    }
+}

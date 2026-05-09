@@ -1,0 +1,498 @@
+{
+    "Name": "Starlight - Billy",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Specialty": {
+        "Id": 6,
+        "Name": "Rupture"
+    },
+    "Talents": {
+        "1": {
+            "Title": "Heroic Entrance",
+            "Description": "<color=#FFFFFF>Core Passive: Knight's Resolve</color> akan memulihkan 60 poin Adrenaline tambahan saat memulai pertarungan. Saat <color=#FFFFFF>EX Special Attack</color> mengenai musuh, DMG yang diakibatkan akan mengabaikan 18% <color=#F0D12B>ketahanan Physical DMG</color> target selama 45 detik. Memicu ulang akan memperbarui durasi.",
+            "Lore": "Penjahat di New Eridu sama banyaknya dengan yang ada di film-film, tapi hanya ada segelintir pahlawan sejati.\n\"Meski aku jago mengucapkan kata-kata heroik, tapi mungkin aku belum bisa dibilang pahlawan...\"\n\"Meski begitu, aku akan belajar menjadi seorang pahlawan dan melindungi semua orang!\""
+        },
+        "2": {
+            "Title": "Wasteland Automaton",
+            "Description": "DMG yang diakibatkan dari <color=#FFFFFF>Basic Attack: Full-Throttle Starlight</color>, <color=#FFFFFF>EX Special Attack: Cool Wheelie</color>, dan <color=#FFFFFF>Ultimate: Starlight Knight Flying Kick</color> meningkat 50%. Saat melancarkan <color=#FFFFFF>EX Special Attack: Rocking Footwork</color>, <color=#FFFFFF>EX Special Attack: High-Traction Wheels</color>, atau saat <color=#FFFFFF>Special Attack: Drive Suppression</color> mengenai musuh yang berada dalam status Stun, akan mendapatkan efek <color=#FFFFFF>Turbocharged</color>. <color=#FFFFFF>Special Attack: Drive Suppression</color> akan mengonsumsi efek ini untuk melanjutkan serangan dengan <color=#FFFFFF>EX Special Attack: Cool Wheelie</color>, dan CRIT DMG yang diakibatkan dari <color=#FFFFFF>EX Special Attack: Cool Wheelie</color> tersebut akan meningkat 50%. Efek <color=#FFFFFF>Turbocharged</color> dapat ditumpuk hingga 1 lapis.",
+            "Lore": "Ada terlalu banyak penembak jitu di Outer Ring, tapi kalau bisa tetap akurat saat menembak di atas motor yang melaju kencang, mereka baru bisa disebut jagoan sejati.\n\"Algoritma proyektil dan jari mekanik? Memang ada gunanya sih...\"\n\"Tapi alasan utama kenapa aku bisa menembak dengan akurat adalah karena... Starlight telah memilihku!\""
+        },
+        "3": {
+            "Title": "Knight's Chivalry",
+            "Description": "Level <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, dan <color=#FFFFFF>Chain Attack</color> +2.",
+            "Lore": "Apa sebenarnya semangat Starlight Knight? Tidak pernah mundur, menegakkan keadilan, dan membantu yang lemah? Pengorbanan, keadilan, belas kasihan, kehormatan?\n\"Lakukan hal yang kamu percaya benar...\"\n\"Jika menurutmu itu tidak keren, jangan pernah berkompromi!\"\n\"Itulah alasan kenapa aku tidak akan pernah meninggalkan rekan-rekanku!\""
+        },
+        "4": {
+            "Title": "Flames of Justice",
+            "Description": "Dalam status bertarung, setiap kali melancarkan <color=#FFFFFF>Special Attack: Drive Suppression</color> akan meningkatkan CRIT DMG sebesar 8% selama 45 detik, dapat ditumpuk hingga 2 lapis. Memicu ulang akan memperbarui durasi. Jika HP Starlight - Billy kurang dari 35% dan dia tidak sedang digunakan sebagai Agen yang Dikendalikan, maka HP-nya akan terus dipulihkan hingga mencapai 35%.",
+            "Lore": "Tatanan yang ideal lahir untuk menjaga keadilan, namun idiologi sejatinya dilahirkan untuk dikhianati.\n\"Kamu bilang film-film ini hanya untuk anak kecil...?\"\n\"Tapi memang anak-anak kecil yang berani bermimpi besar, kan?\"\n\"Mimpi-mimpi yang ditertawakan ini akan terus aku lindungi. Aku, Starlight - Billy!\""
+        },
+        "5": {
+            "Title": "Radiant Armament",
+            "Description": "Level <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, dan <color=#FFFFFF>Chain Attack</color> +2.",
+            "Lore": "Kamu perlu kostum yang megah supaya bisa terlihat seperti pahlawan... menjadi pahlawan itu memang merepotkan.\n\"Aku tidak menjadi kuat karena senjata berkaliber besar dan komponen berdaya tinggi!\"\n\"Senjataku yang sebenarnya adalah... bintang-bintang yang menghiasi langit!\""
+        },
+        "6": {
+            "Title": "Starlight Knight",
+            "Description": "Sheer DMG yang diakibatkan dari <color=#FFFFFF>Ultimate: Starlight Knight Flying Kick</color> dan <color=#FFFFFF>Basic Attack: Full-Throttle Starlight</color> meningkat 18%. Setelah <color=#FFFFFF>Basic Attack: Knight's Technique</color> tahap ke-4, <color=#FFFFFF>EX Special Attack: Cool Wheelie</color>, atau <color=#FFFFFF>Chain Attack: Knight's Swagger</color> mengenai musuh, akan memperoleh 1 lapis <color=#FFFFFF>Brilliant Starlight</color>, dapat ditumpuk hingga 6 lapis. Skill yang sama hanya dapat memberikan 1 lapis. Saat melancarkan <color=#FFFFFF>Ultimate: Starlight Knight Flying Kick</color> atau <color=#FFFFFF>Basic Attack: Full-Throttle Starlight</color>, maksimum dapat mengonsumsi 2 lapis <color=#FFFFFF>Brilliant Starlight</color>. Setiap 1 lapis <color=#FFFFFF>Brilliant Starlight</color> yang dikonsumsi akan mengakibatkan <color=#F0D12B>Physical DMG</color> tambahan untuk serangan terakhir Skill tersebut sebesar 100% Sheer Force.",
+            "Lore": "Orang yang selalu percaya pada harapan, pada akhirnya akan menjadi harapan bagi orang lain.\nInilah kisah tentang Starlight Knight, tentang Billy Kid.\n\"Starlight Knight — Berubah!!\""
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Core Passive: Knight's Resolve",
+            "DescriptionByLevel": {
+                "1": "Starlight - Billy akan meningkatkan Sheer Force berdasarkan Max HP miliknya. Setiap 1 poin Max HP akan meningkatkan 0,1 poin Sheer Force. Semua <color=#F0D12B>Physical DMG</color> yang diakibatkan dari skill dianggap sebagai Sheer DMG, sehingga akan mengabaikan DEF musuh serta menggunakan Sheer Force yang dimilikinya sebagai Kelipatan DMG.\nSaat memulai pertarungan, Starlight - Billy akan memulihkan 60 poin Adrenaline. Efek ini dapat dipicu sekali setiap 180 detik di mode Eksplorasi Area.\nSaat HP lebih dari 25%, tekan <IconMap:Icon_Special> untuk mengonsumsi HP dan melancarkan <color=#FFFFFF>Special Attack: Drive Suppression</color>. Selama dalam status bertarung, CRIT DMG akan meningkat <color=#2BAD00>45%</color> selama 45 detik setiap kali menggunakan skill ini. Memicu ulang akan memperbarui durasi. Saat HP kurang dari 25%, DMG yang diterima Starlight - Billy akan berkurang 50%.\nSaat serangannya mengenai musuh, Starlight - Billy akan mendapatkan <color=#FFFFFF>Determination</color>. Jumlah pemulihannya bervariasi tergantung skill yang dilancarkan. Batas maksimum <color=#FFFFFF>Determination</color> adalah 120 poin. Selama dalam status bertarung, <color=#FFFFFF>Determination</color> akan pulih secara perlahan. Saat <color=#FFFFFF>EX Special Attack: Cool Wheelie</color> mengenai musuh, saat melancarkan <color=#FFFFFF>Chain Attack: Knight's Swagger</color>, atau menangkis serangan, Starlight - Billy akan memulihkan <color=#FFFFFF>Determination</color> tambahan. Saat memicu <color=#FFFFFF>Perfect Dodge</color> dengan cara apa pun, akan memulihkan 3 poin <color=#FFFFFF>Determination</color>. Efek ini dapat dipicu sekali setiap 0,5 detik.\nSaat <color=#FFFFFF>Determination</color> mencapai 100 poin (atau lebih), tahan <IconMap:Icon_Normal> untuk mengonsumsi 100 poin <color=#FFFFFF>Determination</color> dan melancarkan <color=#FFFFFF>Basic Attack: Full-Throttle Starlight</color>.\nSaat <color=#FFFFFF>Basic Attack: Knight's Technique</color> mengenai musuh, sejumlah kecil HP akan dipulihkan. Saat <color=#FFFFFF>Dodge Counter: Duel King</color> yang dipicu melalui <color=#FFFFFF>Perfect Dodge</color> mengenai musuh, HP akan dipulihkan. Saat melancarkan <color=#FFFFFF>EX Special Attack: High-Traction Wheels</color> atau <color=#FFFFFF>EX Special Attack: Rocking Footwork</color>, HP akan dipulihkan.",
+                "2": "Starlight - Billy akan meningkatkan Sheer Force berdasarkan Max HP miliknya. Setiap 1 poin Max HP akan meningkatkan 0,1 poin Sheer Force. Semua <color=#F0D12B>Physical DMG</color> yang diakibatkan dari skill dianggap sebagai Sheer DMG, sehingga akan mengabaikan DEF musuh serta menggunakan Sheer Force yang dimilikinya sebagai Kelipatan DMG.\nSaat memulai pertarungan, Starlight - Billy akan memulihkan 60 poin Adrenaline. Efek ini dapat dipicu sekali setiap 180 detik di mode Eksplorasi Area.\nSaat HP lebih dari 25%, tekan <IconMap:Icon_Special> untuk mengonsumsi HP dan melancarkan <color=#FFFFFF>Special Attack: Drive Suppression</color>. Selama dalam status bertarung, CRIT DMG akan meningkat <color=#2BAD00>53%</color> selama 45 detik setiap kali menggunakan skill ini. Memicu ulang akan memperbarui durasi. Saat HP kurang dari 25%, DMG yang diterima Starlight - Billy akan berkurang 50%.\nSaat serangannya mengenai musuh, Starlight - Billy akan mendapatkan <color=#FFFFFF>Determination</color>. Jumlah pemulihannya bervariasi tergantung skill yang dilancarkan. Batas maksimum <color=#FFFFFF>Determination</color> adalah 120 poin. Selama dalam status bertarung, <color=#FFFFFF>Determination</color> akan pulih secara perlahan. Saat <color=#FFFFFF>EX Special Attack: Cool Wheelie</color> mengenai musuh, saat melancarkan <color=#FFFFFF>Chain Attack: Knight's Swagger</color>, atau menangkis serangan, Starlight - Billy akan memulihkan <color=#FFFFFF>Determination</color> tambahan. Saat memicu <color=#FFFFFF>Perfect Dodge</color> dengan cara apa pun, akan memulihkan 3 poin <color=#FFFFFF>Determination</color>. Efek ini dapat dipicu sekali setiap 0,5 detik.\nSaat <color=#FFFFFF>Determination</color> mencapai 100 poin (atau lebih), tahan <IconMap:Icon_Normal> untuk mengonsumsi 100 poin <color=#FFFFFF>Determination</color> dan melancarkan <color=#FFFFFF>Basic Attack: Full-Throttle Starlight</color>.\nSaat <color=#FFFFFF>Basic Attack: Knight's Technique</color> mengenai musuh, sejumlah kecil HP akan dipulihkan. Saat <color=#FFFFFF>Dodge Counter: Duel King</color> yang dipicu melalui <color=#FFFFFF>Perfect Dodge</color> mengenai musuh, HP akan dipulihkan. Saat melancarkan <color=#FFFFFF>EX Special Attack: High-Traction Wheels</color> atau <color=#FFFFFF>EX Special Attack: Rocking Footwork</color>, HP akan dipulihkan.",
+                "3": "Starlight - Billy akan meningkatkan Sheer Force berdasarkan Max HP miliknya. Setiap 1 poin Max HP akan meningkatkan 0,1 poin Sheer Force. Semua <color=#F0D12B>Physical DMG</color> yang diakibatkan dari skill dianggap sebagai Sheer DMG, sehingga akan mengabaikan DEF musuh serta menggunakan Sheer Force yang dimilikinya sebagai Kelipatan DMG.\nSaat memulai pertarungan, Starlight - Billy akan memulihkan 60 poin Adrenaline. Efek ini dapat dipicu sekali setiap 180 detik di mode Eksplorasi Area.\nSaat HP lebih dari 25%, tekan <IconMap:Icon_Special> untuk mengonsumsi HP dan melancarkan <color=#FFFFFF>Special Attack: Drive Suppression</color>. Selama dalam status bertarung, CRIT DMG akan meningkat <color=#2BAD00>60%</color> selama 45 detik setiap kali menggunakan skill ini. Memicu ulang akan memperbarui durasi. Saat HP kurang dari 25%, DMG yang diterima Starlight - Billy akan berkurang 50%.\nSaat serangannya mengenai musuh, Starlight - Billy akan mendapatkan <color=#FFFFFF>Determination</color>. Jumlah pemulihannya bervariasi tergantung skill yang dilancarkan. Batas maksimum <color=#FFFFFF>Determination</color> adalah 120 poin. Selama dalam status bertarung, <color=#FFFFFF>Determination</color> akan pulih secara perlahan. Saat <color=#FFFFFF>EX Special Attack: Cool Wheelie</color> mengenai musuh, saat melancarkan <color=#FFFFFF>Chain Attack: Knight's Swagger</color>, atau menangkis serangan, Starlight - Billy akan memulihkan <color=#FFFFFF>Determination</color> tambahan. Saat memicu <color=#FFFFFF>Perfect Dodge</color> dengan cara apa pun, akan memulihkan 3 poin <color=#FFFFFF>Determination</color>. Efek ini dapat dipicu sekali setiap 0,5 detik.\nSaat <color=#FFFFFF>Determination</color> mencapai 100 poin (atau lebih), tahan <IconMap:Icon_Normal> untuk mengonsumsi 100 poin <color=#FFFFFF>Determination</color> dan melancarkan <color=#FFFFFF>Basic Attack: Full-Throttle Starlight</color>.\nSaat <color=#FFFFFF>Basic Attack: Knight's Technique</color> mengenai musuh, sejumlah kecil HP akan dipulihkan. Saat <color=#FFFFFF>Dodge Counter: Duel King</color> yang dipicu melalui <color=#FFFFFF>Perfect Dodge</color> mengenai musuh, HP akan dipulihkan. Saat melancarkan <color=#FFFFFF>EX Special Attack: High-Traction Wheels</color> atau <color=#FFFFFF>EX Special Attack: Rocking Footwork</color>, HP akan dipulihkan.",
+                "4": "Starlight - Billy akan meningkatkan Sheer Force berdasarkan Max HP miliknya. Setiap 1 poin Max HP akan meningkatkan 0,1 poin Sheer Force. Semua <color=#F0D12B>Physical DMG</color> yang diakibatkan dari skill dianggap sebagai Sheer DMG, sehingga akan mengabaikan DEF musuh serta menggunakan Sheer Force yang dimilikinya sebagai Kelipatan DMG.\nSaat memulai pertarungan, Starlight - Billy akan memulihkan 60 poin Adrenaline. Efek ini dapat dipicu sekali setiap 180 detik di mode Eksplorasi Area.\nSaat HP lebih dari 25%, tekan <IconMap:Icon_Special> untuk mengonsumsi HP dan melancarkan <color=#FFFFFF>Special Attack: Drive Suppression</color>. Selama dalam status bertarung, CRIT DMG akan meningkat <color=#2BAD00>68%</color> selama 45 detik setiap kali menggunakan skill ini. Memicu ulang akan memperbarui durasi. Saat HP kurang dari 25%, DMG yang diterima Starlight - Billy akan berkurang 50%.\nSaat serangannya mengenai musuh, Starlight - Billy akan mendapatkan <color=#FFFFFF>Determination</color>. Jumlah pemulihannya bervariasi tergantung skill yang dilancarkan. Batas maksimum <color=#FFFFFF>Determination</color> adalah 120 poin. Selama dalam status bertarung, <color=#FFFFFF>Determination</color> akan pulih secara perlahan. Saat <color=#FFFFFF>EX Special Attack: Cool Wheelie</color> mengenai musuh, saat melancarkan <color=#FFFFFF>Chain Attack: Knight's Swagger</color>, atau menangkis serangan, Starlight - Billy akan memulihkan <color=#FFFFFF>Determination</color> tambahan. Saat memicu <color=#FFFFFF>Perfect Dodge</color> dengan cara apa pun, akan memulihkan 3 poin <color=#FFFFFF>Determination</color>. Efek ini dapat dipicu sekali setiap 0,5 detik.\nSaat <color=#FFFFFF>Determination</color> mencapai 100 poin (atau lebih), tahan <IconMap:Icon_Normal> untuk mengonsumsi 100 poin <color=#FFFFFF>Determination</color> dan melancarkan <color=#FFFFFF>Basic Attack: Full-Throttle Starlight</color>.\nSaat <color=#FFFFFF>Basic Attack: Knight's Technique</color> mengenai musuh, sejumlah kecil HP akan dipulihkan. Saat <color=#FFFFFF>Dodge Counter: Duel King</color> yang dipicu melalui <color=#FFFFFF>Perfect Dodge</color> mengenai musuh, HP akan dipulihkan. Saat melancarkan <color=#FFFFFF>EX Special Attack: High-Traction Wheels</color> atau <color=#FFFFFF>EX Special Attack: Rocking Footwork</color>, HP akan dipulihkan.",
+                "5": "Starlight - Billy akan meningkatkan Sheer Force berdasarkan Max HP miliknya. Setiap 1 poin Max HP akan meningkatkan 0,1 poin Sheer Force. Semua <color=#F0D12B>Physical DMG</color> yang diakibatkan dari skill dianggap sebagai Sheer DMG, sehingga akan mengabaikan DEF musuh serta menggunakan Sheer Force yang dimilikinya sebagai Kelipatan DMG.\nSaat memulai pertarungan, Starlight - Billy akan memulihkan 60 poin Adrenaline. Efek ini dapat dipicu sekali setiap 180 detik di mode Eksplorasi Area.\nSaat HP lebih dari 25%, tekan <IconMap:Icon_Special> untuk mengonsumsi HP dan melancarkan <color=#FFFFFF>Special Attack: Drive Suppression</color>. Selama dalam status bertarung, CRIT DMG akan meningkat <color=#2BAD00>75%</color> selama 45 detik setiap kali menggunakan skill ini. Memicu ulang akan memperbarui durasi. Saat HP kurang dari 25%, DMG yang diterima Starlight - Billy akan berkurang 50%.\nSaat serangannya mengenai musuh, Starlight - Billy akan mendapatkan <color=#FFFFFF>Determination</color>. Jumlah pemulihannya bervariasi tergantung skill yang dilancarkan. Batas maksimum <color=#FFFFFF>Determination</color> adalah 120 poin. Selama dalam status bertarung, <color=#FFFFFF>Determination</color> akan pulih secara perlahan. Saat <color=#FFFFFF>EX Special Attack: Cool Wheelie</color> mengenai musuh, saat melancarkan <color=#FFFFFF>Chain Attack: Knight's Swagger</color>, atau menangkis serangan, Starlight - Billy akan memulihkan <color=#FFFFFF>Determination</color> tambahan. Saat memicu <color=#FFFFFF>Perfect Dodge</color> dengan cara apa pun, akan memulihkan 3 poin <color=#FFFFFF>Determination</color>. Efek ini dapat dipicu sekali setiap 0,5 detik.\nSaat <color=#FFFFFF>Determination</color> mencapai 100 poin (atau lebih), tahan <IconMap:Icon_Normal> untuk mengonsumsi 100 poin <color=#FFFFFF>Determination</color> dan melancarkan <color=#FFFFFF>Basic Attack: Full-Throttle Starlight</color>.\nSaat <color=#FFFFFF>Basic Attack: Knight's Technique</color> mengenai musuh, sejumlah kecil HP akan dipulihkan. Saat <color=#FFFFFF>Dodge Counter: Duel King</color> yang dipicu melalui <color=#FFFFFF>Perfect Dodge</color> mengenai musuh, HP akan dipulihkan. Saat melancarkan <color=#FFFFFF>EX Special Attack: High-Traction Wheels</color> atau <color=#FFFFFF>EX Special Attack: Rocking Footwork</color>, HP akan dipulihkan.",
+                "6": "Starlight - Billy akan meningkatkan Sheer Force berdasarkan Max HP miliknya. Setiap 1 poin Max HP akan meningkatkan 0,1 poin Sheer Force. Semua <color=#F0D12B>Physical DMG</color> yang diakibatkan dari skill dianggap sebagai Sheer DMG, sehingga akan mengabaikan DEF musuh serta menggunakan Sheer Force yang dimilikinya sebagai Kelipatan DMG.\nSaat memulai pertarungan, Starlight - Billy akan memulihkan 60 poin Adrenaline. Efek ini dapat dipicu sekali setiap 180 detik di mode Eksplorasi Area.\nSaat HP lebih dari 25%, tekan <IconMap:Icon_Special> untuk mengonsumsi HP dan melancarkan <color=#FFFFFF>Special Attack: Drive Suppression</color>. Selama dalam status bertarung, CRIT DMG akan meningkat <color=#2BAD00>83%</color> selama 45 detik setiap kali menggunakan skill ini. Memicu ulang akan memperbarui durasi. Saat HP kurang dari 25%, DMG yang diterima Starlight - Billy akan berkurang 50%.\nSaat serangannya mengenai musuh, Starlight - Billy akan mendapatkan <color=#FFFFFF>Determination</color>. Jumlah pemulihannya bervariasi tergantung skill yang dilancarkan. Batas maksimum <color=#FFFFFF>Determination</color> adalah 120 poin. Selama dalam status bertarung, <color=#FFFFFF>Determination</color> akan pulih secara perlahan. Saat <color=#FFFFFF>EX Special Attack: Cool Wheelie</color> mengenai musuh, saat melancarkan <color=#FFFFFF>Chain Attack: Knight's Swagger</color>, atau menangkis serangan, Starlight - Billy akan memulihkan <color=#FFFFFF>Determination</color> tambahan. Saat memicu <color=#FFFFFF>Perfect Dodge</color> dengan cara apa pun, akan memulihkan 3 poin <color=#FFFFFF>Determination</color>. Efek ini dapat dipicu sekali setiap 0,5 detik.\nSaat <color=#FFFFFF>Determination</color> mencapai 100 poin (atau lebih), tahan <IconMap:Icon_Normal> untuk mengonsumsi 100 poin <color=#FFFFFF>Determination</color> dan melancarkan <color=#FFFFFF>Basic Attack: Full-Throttle Starlight</color>.\nSaat <color=#FFFFFF>Basic Attack: Knight's Technique</color> mengenai musuh, sejumlah kecil HP akan dipulihkan. Saat <color=#FFFFFF>Dodge Counter: Duel King</color> yang dipicu melalui <color=#FFFFFF>Perfect Dodge</color> mengenai musuh, HP akan dipulihkan. Saat melancarkan <color=#FFFFFF>EX Special Attack: High-Traction Wheels</color> atau <color=#FFFFFF>EX Special Attack: Rocking Footwork</color>, HP akan dipulihkan.",
+                "7": "Starlight - Billy akan meningkatkan Sheer Force berdasarkan Max HP miliknya. Setiap 1 poin Max HP akan meningkatkan 0,1 poin Sheer Force. Semua <color=#F0D12B>Physical DMG</color> yang diakibatkan dari skill dianggap sebagai Sheer DMG, sehingga akan mengabaikan DEF musuh serta menggunakan Sheer Force yang dimilikinya sebagai Kelipatan DMG.\nSaat memulai pertarungan, Starlight - Billy akan memulihkan 60 poin Adrenaline. Efek ini dapat dipicu sekali setiap 180 detik di mode Eksplorasi Area.\nSaat HP lebih dari 25%, tekan <IconMap:Icon_Special> untuk mengonsumsi HP dan melancarkan <color=#FFFFFF>Special Attack: Drive Suppression</color>. Selama dalam status bertarung, CRIT DMG akan meningkat <color=#2BAD00>90%</color> selama 45 detik setiap kali menggunakan skill ini. Memicu ulang akan memperbarui durasi. Saat HP kurang dari 25%, DMG yang diterima Starlight - Billy akan berkurang 50%.\nSaat serangannya mengenai musuh, Starlight - Billy akan mendapatkan <color=#FFFFFF>Determination</color>. Jumlah pemulihannya bervariasi tergantung skill yang dilancarkan. Batas maksimum <color=#FFFFFF>Determination</color> adalah 120 poin. Selama dalam status bertarung, <color=#FFFFFF>Determination</color> akan pulih secara perlahan. Saat <color=#FFFFFF>EX Special Attack: Cool Wheelie</color> mengenai musuh, saat melancarkan <color=#FFFFFF>Chain Attack: Knight's Swagger</color>, atau menangkis serangan, Starlight - Billy akan memulihkan <color=#FFFFFF>Determination</color> tambahan. Saat memicu <color=#FFFFFF>Perfect Dodge</color> dengan cara apa pun, akan memulihkan 3 poin <color=#FFFFFF>Determination</color>. Efek ini dapat dipicu sekali setiap 0,5 detik.\nSaat <color=#FFFFFF>Determination</color> mencapai 100 poin (atau lebih), tahan <IconMap:Icon_Normal> untuk mengonsumsi 100 poin <color=#FFFFFF>Determination</color> dan melancarkan <color=#FFFFFF>Basic Attack: Full-Throttle Starlight</color>.\nSaat <color=#FFFFFF>Basic Attack: Knight's Technique</color> mengenai musuh, sejumlah kecil HP akan dipulihkan. Saat <color=#FFFFFF>Dodge Counter: Duel King</color> yang dipicu melalui <color=#FFFFFF>Perfect Dodge</color> mengenai musuh, HP akan dipulihkan. Saat melancarkan <color=#FFFFFF>EX Special Attack: High-Traction Wheels</color> atau <color=#FFFFFF>EX Special Attack: Rocking Footwork</color>, HP akan dipulihkan."
+            }
+        },
+        "MathSkill": {
+            "Title": "Additional Ability: Blazing Starlight",
+            "Description": "Berlaku jika terdapat Agen <color=#FFFFFF>Stun</color>, Agen <color=#FFFFFF>Defense</color>, atau Agen <color=#FFFFFF>Support</color> di dalam tim:\nSaat <color=#FFFFFF>EX Special Attack: Cool Wheelie</color>, <color=#FFFFFF>Basic Attack: Knight's Technique</color> tahap ke-4, <color=#FFFFFF>Chain Attack</color>, atau <color=#FFFFFF>Ultimate</color> mengenai musuh, Starlight - Billy akan mendapatkan 1 lapis <color=#FFFFFF>Starlight</color> yang berlangsung selama 45 detik, dapat ditumpuk hingga 2 lapis. Maksimum mendapatkan 1 lapis dari satu Skill yang sama. Setiap lapis <color=#FFFFFF>Starlight</color> akan meningkatkan DMG yang diakibatkan dari <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Ultimate</color>, <color=#FFFFFF>EX Special Attack</color>, dan <color=#FFFFFF>Basic Attack: Full-Throttle Starlight</color> sebesar 20%."
+        },
+        "AwakenAbility": {},
+        "BaseProps": [
+            {
+                "20101": 0,
+                "12101": 0
+            },
+            {
+                "20101": 480,
+                "12101": 0
+            },
+            {
+                "20101": 480,
+                "12101": 25
+            },
+            {
+                "20101": 960,
+                "12101": 25
+            },
+            {
+                "20101": 960,
+                "12101": 50
+            },
+            {
+                "20101": 1440,
+                "12101": 50
+            },
+            {
+                "20101": 1440,
+                "12101": 75
+            }
+        ]
+    },
+    "SkillDescriptions": {
+        "0": {
+            "153100001": {
+                "Title": "Basic Attack: Knight's Technique",
+                "Description": "Tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMelancarkan hingga empat tahap serangan ke depan dan mengakibatkan <color=#F0D12B>Physical DMG</color>.\nSaat melancarkan serangan tahap ke-4, tekan <IconMap:Icon_Special> untuk melancarkan <color=#FFFFFF>Special Attack: Drive Suppression</color> dan mengurangi konsumsi HP sebesar 50%.\nSaat Skill mengenai musuh, akan memulihkan sejumlah kecil HP."
+            },
+            "153100002": {
+                "Title": "Basic Attack: Full-Throttle Starlight",
+                "Description": "Saat <color=#FFFFFF>Determination</color> mencukupi, tahan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMenerjang ke depan menggunakan motor, lalu menembakkan sinar laser, mengakibatkan <color=#F0D12B>Physical DMG</color> dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "153100018": {
+                "Title": "Basic Attack: Knight's Technique"
+            },
+            "153100019": {
+                "Description": "Kelipatan DMG: Tahap 1",
+                "Param": "{Skill:1531001, Prop:1001}"
+            },
+            "153100020": {
+                "Description": "Kelipatan DMG: Tahap 2",
+                "Param": "{Skill:1531002, Prop:1001}"
+            },
+            "153100021": {
+                "Description": "Kelipatan DMG: Tahap 3",
+                "Param": "{Skill:1531003, Prop:1001}"
+            },
+            "153100022": {
+                "Description": "Kelipatan DMG: Tahap 4",
+                "Param": "{Skill:1531004, Prop:1001}"
+            },
+            "153100023": {
+                "Description": "Kelipatan Daze: Tahap 1",
+                "Param": "{Skill:1531001, Prop:1002}"
+            },
+            "153100024": {
+                "Description": "Kelipatan Daze: Tahap 2",
+                "Param": "{Skill:1531002, Prop:1002}"
+            },
+            "153100025": {
+                "Description": "Kelipatan Daze: Tahap 3",
+                "Param": "{Skill:1531003, Prop:1002}"
+            },
+            "153100026": {
+                "Description": "Kelipatan Daze: Tahap 4",
+                "Param": "{Skill:1531004, Prop:1002}"
+            },
+            "153100027": {
+                "Title": "Basic Attack: Full-Throttle Starlight"
+            },
+            "153100028": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1531010, Prop:1001}"
+            },
+            "153100029": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1531010, Prop:1002}"
+            },
+            "153100030": {
+                "Description": "Konsumsi Determination",
+                "Param": "100 poin"
+            }
+        },
+        "1": {
+            "153100003": {
+                "Title": "Special Attack: Drive Suppression",
+                "Description": "Saat HP lebih dari 25%, tekan <IconMap:Icon_Special> untuk melancarkan Skill ini.\nMengonsumsi HP sebesar 16% dari Max HP untuk memanggil motor dan menabrak musuh dengan cepat, mengakibatkan <color=#F0D12B>Physical DMG</color> secara terus-menerus.\nSaat digunakan sebagai Agen yang Dikendalikan, jika menerima serangan dari musuh sesaat setelah melancarkan Skill ini, akan menangkis serangan musuh dan menjadi kebal terhadap serangan tersebut, serta memulihkan 5 poin <color=#FFFFFF>Determination</color>.\nSetelah menangkis, akan langsung melanjutkan serangan dengan <color=#FFFFFF>EX Special Attack: Cool Wheelie</color>.\nSetelah terus-menerus melancarkan Skill selama beberapa waktu, akan langsung melanjutkan serangan dengan <color=#FFFFFF>EX Special Attack: Cool Wheelie</color> secara otomatis.\nLevel Anti-Interrupt akan meningkat selama melancarkan Skill ini."
+            },
+            "153100004": {
+                "Title": "Special Attack: Run Wild",
+                "Description": "Skill ini akan dilancarkan secara otomatis jika <color=#FFFFFF>Dodge: Through the Galaxy</color> diinterupsi.\nMenendang motor ke arah musuh dan mengakibatkan <color=#F0D12B>Physical DMG</color>.\nSetelah melancarkan Skill ini, dapat langsung melanjutkan serangan dengan <color=#FFFFFF>Dodge Counter: Duel King</color>.\nLevel Anti-Interrupt akan meningkat selama melancarkan Skill ini."
+            },
+            "153100005": {
+                "Title": "EX Special Attack: Cool Wheelie",
+                "Description": "Setelah melancarkan <color=#FFFFFF>Special Attack: Drive Suppression</color> hingga batas waktu maksimum atau memicu tangkisan, Skill ini akan dilancarkan secara otomatis.\nMengangkat motor untuk menyerang musuh dan mengakibatkan <color=#F0D12B>Physical DMG</color>.\nSetelah Skill mengenai musuh, akan memulihkan 8 poin <color=#FFFFFF>Determination</color> tambahan.\nJika Adrenaline mencukupi setelah melancarkan Skill ini, tekan atau tahan <IconMap:Icon_SpecialReady_Rp> untuk melanjutkan serangan dengan <color=#FFFFFF>EX Special Attack: Rocking Footwork</color>.\nSetelah gerakan dari Skill selesai, akan langsung melanjutkan serangan dengan <color=#FFFFFF>Special Attack: Run Wild</color> secara otomatis.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "153100006": {
+                "Title": "EX Special Attack: High-Traction Wheels",
+                "Description": "Saat Adrenaline mencukupi, tahan <IconMap:Icon_SpecialReady_Rp> untuk melancarkan Skill ini.\nMenghantam ke bawah menggunakan motor dan mengakibatkan <color=#F0D12B>Physical DMG</color>.\nSaat melancarkan Skill ini, akan memulihkan HP sebesar 30% Max HP.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "153100007": {
+                "Title": "EX Special Attack: Rocking Footwork",
+                "Description": "Jika Adrenaline mencukupi setelah melancarkan <color=#FFFFFF>EX Special Attack: Cool Wheelie</color>, tekan atau tahan <IconMap:Icon_SpecialReady_Rp> untuk melancarkan Skill ini.\nMelancarkan serangan gabungan antara motor dan meriam tangan, mengakibatkan <color=#F0D12B>Physical DMG</color>.\nSaat melancarkan Skill ini, akan memulihkan HP sebesar 15% Max HP.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "153100031": {
+                "Title": "Special Attack: Drive Suppression"
+            },
+            "153100032": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1531006, Prop:1001}"
+            },
+            "153100033": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1531006, Prop:1002}"
+            },
+            "153100034": {
+                "Title": "Special Attack: Run Wild"
+            },
+            "153100035": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1531007, Prop:1001}"
+            },
+            "153100036": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1531007, Prop:1002}"
+            },
+            "153100037": {
+                "Title": "EX Special Attack: Cool Wheelie"
+            },
+            "153100038": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1531008, Prop:1001}"
+            },
+            "153100039": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1531008, Prop:1002}"
+            },
+            "153100040": {
+                "Title": "EX Special Attack: High-Traction Wheels"
+            },
+            "153100041": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1531009, Prop:1001}"
+            },
+            "153100042": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1531009, Prop:1002}"
+            },
+            "153100043": {
+                "Description": "Konsumsi Adrenaline",
+                "Param": "60 poin"
+            },
+            "153100044": {
+                "Title": "EX Special Attack: Rocking Footwork"
+            },
+            "153100045": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1531011, Prop:1001}"
+            },
+            "153100046": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1531011, Prop:1002}"
+            },
+            "153100047": {
+                "Description": "Konsumsi Adrenaline",
+                "Param": "60 poin"
+            }
+        },
+        "2": {
+            "153100008": {
+                "Title": "Dodge: Close Call!",
+                "Description": "Tekan <IconMap:Icon_Evade> untuk melakukan Dodge.\nMelakukan Dodge dengan cepat.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "153100009": {
+                "Title": "Dodge: Through the Galaxy",
+                "Description": "Selama <color=#FFFFFF>Special Attack: Drive Suppression</color> berlangsung, gerakkan {LAYOUT_CONSOLECONTROLLER#tuas}{LAYOUT_FALLBACK#<IconMap:Icon_JoyStick>} atau tahan <IconMap:Icon_Evade> untuk melancarkan Skill ini.\nMengontrol motor untuk mengesot. <color=#FFFFFF>Perfect Dodge</color> dapat terpicu dalam waktu singkat.\nJika berhasil memicu <color=#FFFFFF>Perfect Dodge</color>, akan langsung melanjutkan gerakan dengan <color=#FFFFFF>Dodge Counter: Afterfire Spin</color>.\nSelama melancarkan Skill ini, terus gerakkan {LAYOUT_CONSOLECONTROLLER#tuas}{LAYOUT_FALLBACK#<IconMap:Icon_JoyStick>} atau tahan <IconMap:Icon_Evade> untuk terus mengesot.\nSelama melancarkan Skill ini, waktu berlangsungnya <color=#FFFFFF>Special Attack: Drive Suppression</color> akan terus dihitung. Saat sudah mencapai durasi maksimum, akan langsung melanjutkan serangan dengan <color=#FFFFFF>EX Special Attack: Cool Wheelie</color> secara otomatis.\nJika Skill ini diakhiri lebih awal, akan langsung melanjutkan serangan dengan <color=#FFFFFF>Special Attack: Run Wild</color>.\nSelama melancarkan Skill ini, Level Anti-Interrupt karakter meningkat dan mendapatkan efek kebal untuk waktu yang singkat."
+            },
+            "153100010": {
+                "Title": "Dash Attack: Starlight Retribution",
+                "Description": "Tekan <IconMap:Icon_Normal> saat melakukan Dodge untuk melancarkan Skill ini.\nMelancarkan Slash cepat terhadap musuh di depan dan mengakibatkan <color=#F0D12B>Physical DMG</color>."
+            },
+            "153100011": {
+                "Title": "Dodge Counter: Duel King",
+                "Description": "Tekan <IconMap:Icon_Normal> setelah melakukan <color=#FFFFFF>Perfect Dodge</color> untuk melancarkan Skill ini.\nMenembakkan meriam tangan ke depan dan mengakibatkan <color=#F0D12B>Physical DMG</color>.\nJika Skill ini dilancarkan melalui <color=#FFFFFF>Perfect Dodge</color> dan mengenai musuh, akan memulihkan HP sebesar 10% Max HP dan dapat melanjutkan serangan dengan <color=#FFFFFF>Basic Attack: Knight's Technique</color> tahap ke-4.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "153100012": {
+                "Title": "Dodge Counter: Afterfire Spin",
+                "Description": "Skill ini akan dilancarkan secara otomatis jika memicu <color=#FFFFFF>Perfect Dodge</color> selama melakukan <color=#FFFFFF>Dodge: Through the Galaxy</color>.\nMemutar motor untuk mengakibatkan <color=#F0D12B>Physical DMG</color> terhadap musuh di sekitar.\nSetelah Skill ini dilancarkan, akan melanjutkan serangan dengan <color=#FFFFFF>EX Special Attack: Cool Wheelie</color> secara otomatis.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "153100048": {
+                "Title": "Dash Attack: Starlight Retribution"
+            },
+            "153100049": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1531012, Prop:1001}"
+            },
+            "153100050": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1531012, Prop:1002}"
+            },
+            "153100051": {
+                "Title": "Dodge Counter: Duel King"
+            },
+            "153100052": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1531013, Prop:1001}"
+            },
+            "153100053": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1531013, Prop:1002}"
+            },
+            "153100054": {
+                "Title": "Dodge Counter: Afterfire Spin"
+            },
+            "153100055": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1531014, Prop:1001}"
+            },
+            "153100056": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1531014, Prop:1002}"
+            }
+        },
+        "3": {
+            "153100013": {
+                "Title": "Chain Attack: Knight's Swagger",
+                "Description": "Saat <color=#FFFFFF>Chain Attack</color> terpicu, pilih Starlight - Billy untuk melancarkan Skill ini.\nMelancarkan serangan bertahap ke depan dan mengakibatkan <color=#F0D12B>Physical DMG</color> dalam jumlah besar.\nSaat melancarkan Skill ini, akan memulihkan 15 poin <color=#FFFFFF>Determination</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "153100014": {
+                "Title": "Ultimate: Starlight Knight Flying Kick",
+                "Description": "Saat Decibel Rating mencapai <color=#FFFFFF>Maximum</color>, tekan <IconMap:Icon_UltimateReady> untuk melancarkan Skill ini.\nMelompat ke udara dan melancarkan serangan tendangan terbang pada target dan mengakibatkan <color=#F0D12B>Physical DMG</color> dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "153100057": {
+                "Title": "Chain Attack: Knight's Swagger"
+            },
+            "153100058": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1531015, Prop:1001}"
+            },
+            "153100059": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1531015, Prop:1002}"
+            },
+            "153100060": {
+                "Title": "Ultimate: Starlight Knight Flying Kick"
+            },
+            "153100061": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1531016, Prop:1001}"
+            },
+            "153100062": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1531016, Prop:1002}"
+            }
+        },
+        "6": {
+            "153100015": {
+                "Title": "Quick Assist: Starlight - Power of Bonds",
+                "Description": "Saat Agen yang Dikendalikan terhempas, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nMenembak meriam tangan ke depan dan mengakibatkan <color=#F0D12B>Physical DMG</color>.\nSaat HP lebih dari 25%, melancarkan Skill ini akan digantikan dengan <color=#FFFFFF>Special Attack: Drive Suppression</color>. Efek ini dapat dipicu sekali 5 detik.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "153100016": {
+                "Title": "Defensive Assist: Hero's Entrance",
+                "Description": "Tepat sebelum Agen aktif diserang, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nMenangkis serangan musuh dan menghasilkan Daze dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "153100017": {
+                "Title": "Assist Follow-Up: Villain's Exit",
+                "Description": "Setelah melancarkan <color=#FFFFFF>Defensive Assist</color>, tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMenendang motor ke arah target dan mengakibatkan <color=#F0D12B>Physical DMG</color> dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "153100063": {
+                "Title": "Quick Assist: Starlight - Power of Bonds"
+            },
+            "153100064": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1531017, Prop:1001}"
+            },
+            "153100065": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1531017, Prop:1002}"
+            },
+            "153100066": {
+                "Title": "Defensive Assist: Hero's Entrance"
+            },
+            "153100067": {
+                "Description": "Kelipatan Daze - Light Defensive",
+                "Param": "{Skill:1531018, Prop:1002}"
+            },
+            "153100068": {
+                "Description": "Kelipatan Daze - Heavy Defensive",
+                "Param": "{Skill:1531019, Prop:1002}"
+            },
+            "153100069": {
+                "Description": "Kelipatan Daze - Chain Defensive",
+                "Param": "{Skill:1531020, Prop:1002}"
+            },
+            "153100070": {
+                "Title": "Assist Follow-Up: Villain's Exit"
+            },
+            "153100071": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1531021, Prop:1001}"
+            },
+            "153100072": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1531021, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1531001": {
+            "DamageValue": 5030,
+            "DamageGrowth": 460,
+            "DazeValue": 3990,
+            "DazeGrowth": 190
+        },
+        "1531002": {
+            "DamageValue": 6800,
+            "DamageGrowth": 620,
+            "DazeValue": 5680,
+            "DazeGrowth": 260
+        },
+        "1531003": {
+            "DamageValue": 5450,
+            "DamageGrowth": 500,
+            "DazeValue": 4800,
+            "DazeGrowth": 220
+        },
+        "1531004": {
+            "DamageValue": 20600,
+            "DamageGrowth": 1880,
+            "DazeValue": 16350,
+            "DazeGrowth": 750
+        },
+        "1531006": {
+            "DamageValue": 5200,
+            "DamageGrowth": 480,
+            "DazeValue": 11000,
+            "DazeGrowth": 500
+        },
+        "1531007": {
+            "DamageValue": 7210,
+            "DamageGrowth": 660,
+            "DazeValue": 5870,
+            "DazeGrowth": 270
+        },
+        "1531008": {
+            "DamageValue": 38970,
+            "DamageGrowth": 3550,
+            "DazeValue": 13930,
+            "DazeGrowth": 640
+        },
+        "1531009": {
+            "DamageValue": 92990,
+            "DamageGrowth": 8460,
+            "DazeValue": 79540,
+            "DazeGrowth": 3620
+        },
+        "1531010": {
+            "DamageValue": 104320,
+            "DamageGrowth": 9490,
+            "DazeValue": 34110,
+            "DazeGrowth": 1560
+        },
+        "1531011": {
+            "DamageValue": 95900,
+            "DamageGrowth": 8720,
+            "DazeValue": 82400,
+            "DazeGrowth": 3750
+        },
+        "1531012": {
+            "DamageValue": 4510,
+            "DamageGrowth": 410,
+            "DazeValue": 2390,
+            "DazeGrowth": 110
+        },
+        "1531013": {
+            "DamageValue": 11950,
+            "DamageGrowth": 1090,
+            "DazeValue": 9730,
+            "DazeGrowth": 450
+        },
+        "1531014": {
+            "DamageValue": 19870,
+            "DamageGrowth": 1810,
+            "DazeValue": 18700,
+            "DazeGrowth": 850
+        },
+        "1531015": {
+            "DamageValue": 66290,
+            "DamageGrowth": 6030,
+            "DazeValue": 26220,
+            "DazeGrowth": 1200
+        },
+        "1531016": {
+            "DamageValue": 159210,
+            "DamageGrowth": 14480,
+            "DazeValue": 44920,
+            "DazeGrowth": 2050
+        },
+        "1531017": {
+            "DamageValue": 9200,
+            "DamageGrowth": 840,
+            "DazeValue": 4870,
+            "DazeGrowth": 230
+        },
+        "1531018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1531019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1531020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1531021": {
+            "DamageValue": 22960,
+            "DamageGrowth": 2090,
+            "DazeValue": 20370,
+            "DazeGrowth": 930
+        }
+    }
+}

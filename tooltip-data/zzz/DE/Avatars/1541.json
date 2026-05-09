@@ -1,0 +1,503 @@
+{
+    "Name": "Promeia",
+    "ElementTypes": [
+        "Ice"
+    ],
+    "Specialty": {
+        "Id": 3,
+        "Name": "Anomalie"
+    },
+    "Talents": {
+        "1": {
+            "Title": "Treuherzige Ideale",
+            "Description": "Wenn Promeia <color=#FFFFFF>Ultimate: Knochendurchbohrende Bestrafung</color> einsetzt, erhält sie einen zusätzlichen Effekt: Wenn <color=#FFFFFF>Gericht des Eises</color> nicht den maximalen Wert erreicht hat, erhält sie 1 Pkt. <color=#FFFFFF>Gericht des Eises</color>. Dieser Effekt kann einmal nach Anwenden von <color=#FFFFFF>Ultimate: Knochendurchbohrende Bestrafung</color> ausgelöst werden. Wenn eine Truppenfigur <color=#FFFFFF>Sonderblühen</color> an einem von <color=#FFFFFF>Schuldunterstellung</color> betroffenen Gegner auslöst, werden zusätzlich 20 % der gegnerischen VTD ignoriert.",
+            "Lore": "Dies ist ein chaotisches und gesetzloses Land.\nBrüllende Motoren und wehender Staub. Stahl trifft auf Fleisch. Konflikt und Gewalt sind Teil jeden Tags und jeder Nacht.\nEin harmloses Kind klammert sich an eine ebenso harmlose Waffe und durchwandert dieselbe verlorene rote Erde.\n„Wärst du bereit, deinen Teil für den hiesigen Frieden beizutragen?“"
+        },
+        "2": {
+            "Title": "Zaudernde Überzeugungen",
+            "Description": "Promeias Anomaliekunde erhöht sich um 40 Pkt. Der Multiplikator des durch Verbrauch von <color=#FFFFFF>Gericht des Eises</color> ausgelösten <color=#FFFFFF>Sonderblühen</color>-Effekts erhöht sich um 120 %.",
+            "Lore": "Sie wurde zu einer ausgezeichneten Räumerin – schnell, präzise, leise. Ihre Ziele waren eindeutig und zahlreich: Äthereale ... und jene, die von unheilbarer Korrosion betroffen und dazu bestimmt waren, zu Ätherealen zu werden. Jeder Mord war von Blutvergießen und den Echos ihrer Schreie gebrandmarkt.\nAber ... war dies gerecht?\n„Das ist die Pflicht der Räumer!“ „Sieh es einfach so, als ... diene es dem Allgemeinwohl, ja?“ „Diese Leute wären ohnehin verreckt.“\n...\n„Das ist ein notwendiges Opfer.“"
+        },
+        "3": {
+            "Title": "Grausames Mondlicht",
+            "Description": "Fähigkeitsstufe von <color=#FFFFFF>Basisangriff</color>, <color=#FFFFFF>Ausweichen</color>, <color=#FFFFFF>Hilfe</color>, <color=#FFFFFF>Spezialangriff</color> und <color=#FFFFFF>Kettenangriff</color> +2",
+            "Lore": "Oft bahnt ein unbedeutender Unfall den Weg für die Wahrheit.\n„Du denkst, die Räumer könnten reich werden, indem sie sich einfach nur um diese wertlosen Äthereale kümmern?“\n„Bandenkriege garantieren Profit. Wenn du Angst hast, dir die Hände schmutzig zu machen ... ‚Schwarzwolf‘ hat Bock drauf.“\nSchon bald darauf brach die Nacht herein – viel früher, als irgendjemand erwartet hatte.\nDie Räumer, Calydon, die Banden mit Namen und jene Namenlose ... In diesem Zeitalter des Chaos schienen sie alle in endloser Dunkelheit zu verschwinden."
+        },
+        "4": {
+            "Title": "Kaltblütige Anschuldigungen",
+            "Description": "Wenn Promeia <color=#FFFFFF>Sonderblühen</color> auslöst, stellt sie 5 Pkt. <color=#FFFFFF>Korrosive Kälte</color> wieder her, 0,5 s Abklingzeit.",
+            "Lore": "Eine Einladung erschien wie eine Motte, die zu ihrer Verurteilung gerufen wird.\nDas Recht zu entscheiden, Licht, Gerechtigkeit und alles, was sie „Promeia“ machten.\nSie legte die Handschellen an und wählte ihr eigenes Exil.\n„Das ist meine letzte Wahl.“"
+        },
+        "5": {
+            "Title": "Sterbende Motte",
+            "Description": "Fähigkeitsstufe von <color=#FFFFFF>Basisangriff</color>, <color=#FFFFFF>Ausweichen</color>, <color=#FFFFFF>Hilfe</color>, <color=#FFFFFF>Spezialangriff</color> und <color=#FFFFFF>Kettenangriff</color> +2",
+            "Lore": "Sie stürzt sich in ihre Arbeit.\nErmittlungen, Verhöre, Urteile ... ohne Ende.\nIhre Kollegen beobachten sie sorgenvoll.\n„Wie lange wirst du noch so weitermachen?“\n„Bis die letzte Sünde getilgt ist ... oder mich der Tod holen kommt.“"
+        },
+        "6": {
+            "Title": "Die Geschichte geht weiter",
+            "Description": "Wenn Promeia <color=#FFFFFF>Gericht des Eises</color> verbraucht, um <color=#FFFFFF>Sonderblühen</color> auszulösen, wird zusätzlich einmal das besondere <color=#FFFFFF>Sonderblühen</color> ausgelöst, das Anomalie-SCH des jeweiligen Attributs in Höhe eines festgelegten Multiplikators von 200 % verursacht. Gleichzeitig werden 5 Pkt. <color=#FFFFFF>Korrosive Kälte</color> und 100 Pkt. Dezibel wiederhergestellt. Dieser Effekt kann maximal einmal alle 15 s ausgelöst werden. Außerdem ignorieren Promeias Attributanomalie-SCH und <color=#FFFFFF>Unordnung</color>-SCH 15 % des gegnerischen WDS gegen alle Attribute.",
+            "Lore": "Das Ende kam nicht wie erwartet und die Nacht war nicht so dunkel wie gedacht.\nKollegen, alte Bekannte, spätnächtliche Lichter und neue Freunde ...\nDie arme Motte konnte diese schweren Geschenke nicht abschütteln und ihr lang ersehntes Ende fühlte sich immer entfernter an.\nAber vielleicht ... ist so ein Schicksal nicht so schlimm."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passive Kernfähigkeit: Wärmeraub",
+            "DescriptionByLevel": {
+                "1": "Wenn Promeias anfängliche Anomalie-Kontrolle 150 Pkt. übersteigt, erhöht jeder Punkt über diesem Wert ihre Anomaliekunde um 1,5 Pkt. und der <color=#FFFFFF>Sonderblühen</color>-SCH der gesamten Truppe wird um 0,35 % erhöht.\nPromeia erhält beim Treffen von Gegnern mit ihren unterschiedlichen Angriffen eine bestimmte Menge an <color=#FFFFFF>Korrosive Kälte</color>. Löst eine Truppenfigur <color=#98EFF0>Gefroren</color> oder <color=#FFFFFF>Unordnung</color> aus, wird einem Gegner <color=#FFFFFF>Vortex</color> verliehen, oder wenn Promeia <color=#FFFFFF>Verstärkter Spezialangriff: Vollstreckung – Schattenschleier</color> auslöst, erhält sie zusätzlich 5/5/5/10 Pkt. <color=#FFFFFF>Korrosive Kälte</color>, max. bis zu 100 Pkt. <color=#FFFFFF>Korrosive Kälte</color> ansammelbar.\nWenn ein Truppenmitglied <color=#FFFFFF>Sonderblühen</color> auslöst und dabei einen Gegner trifft, erhält Promeia zusätzlich 15 Pkt. <color=#FFFFFF>Korrosive Kälte</color>.\nWenn mindestens 50 Pkt. <color=#FFFFFF>Korrosive Kälte</color> vorhanden sind, werden 50 Pkt. <color=#FFFFFF>Korrosive Kälte</color> verbraucht und zu 1 Pkt. <color=#FFFFFF>Gericht des Eises</color> umgewandelt, max. bis zu 2 Pkt. <color=#FFFFFF>Gericht des Eises</color>.\nBeim Betreten des Kampffelds erhält Promeia 2 Pkt. <color=#FFFFFF>Gericht des Eises</color>.\nBeim Treffen von Gegnern mit dem Gnadenstoß von <color=#FFFFFF>Verstärkter Spezialangriff: Vollstreckung – Gnadenloses Urteil</color> wird bei Gegnern, die von einer <color=#98EFF0>Eis-Anomalie</color>, <color=#FE437E>Äther-Anomalie</color>, <color=#2EB6FF>Elektro-Anomalie</color>, <color=#FF5521>Feuer-Anomalie</color>, <color=#F0D12B>phys. Anomalie</color> oder <color=#A6C5FD>Wind-Anomalie</color> betroffen sind, 1-mal <color=#FFFFFF>Sonderblühen</color> ausgelöst, um SCH in Höhe von <color=#2BAD00>330 %</color> des Anomalie-SCH des jeweiligen Attributs zu verursachen. Beim Anwenden der Fähigkeit wird 1 Pkt. <color=#FFFFFF>Gericht des Eises</color> verbraucht.\nWenn Promeia <color=#FFFFFF>Sonderblühen</color> auslöst und Gegner damit trifft, erhält sie zusätzlich 100 Pkt. Dezibel, 0,5 s Abklingzeit. Beim Anwenden von <color=#FFFFFF>Ultimate: Knochendurchbohrende Bestrafung</color> wird der Effekt <color=#FFFFFF>Frosteid</color> gewährt. Während <color=#FFFFFF>Frosteid</color> aktiv ist, drücke nach Anwenden von <color=#FFFFFF>Verstärkter Spezialangriff: Vollstreckung – Gnadenloses Urteil</color>, <color=#FFFFFF>Kettenangriff: Hängendes Urteil</color> oder <color=#FFFFFF>Ultimate: Knochendurchbohrende Bestrafung</color> <IconMap:Icon_Special> oder halte es gedrückt, um <color=#FFFFFF>Frosteid</color> zu verbrauchen und sofort im Anschluss <color=#FFFFFF>Spezialangriff: Vollstreckung – Bedrückender Frost</color> auszuführen. Es kann max. 1 Stapelung des Effekts <color=#FFFFFF>Frosteid</color> erhalten werden.",
+                "2": "Wenn Promeias anfängliche Anomalie-Kontrolle 150 Pkt. übersteigt, erhöht jeder Punkt über diesem Wert ihre Anomaliekunde um 1,5 Pkt. und der <color=#FFFFFF>Sonderblühen</color>-SCH der gesamten Truppe wird um 0,35 % erhöht.\nPromeia erhält beim Treffen von Gegnern mit ihren unterschiedlichen Angriffen eine bestimmte Menge an <color=#FFFFFF>Korrosive Kälte</color>. Löst eine Truppenfigur <color=#98EFF0>Gefroren</color> oder <color=#FFFFFF>Unordnung</color> aus, wird einem Gegner <color=#FFFFFF>Vortex</color> verliehen, oder wenn Promeia <color=#FFFFFF>Verstärkter Spezialangriff: Vollstreckung – Schattenschleier</color> auslöst, erhält sie zusätzlich 5/5/5/10 Pkt. <color=#FFFFFF>Korrosive Kälte</color>, max. bis zu 100 Pkt. <color=#FFFFFF>Korrosive Kälte</color> ansammelbar.\nWenn ein Truppenmitglied <color=#FFFFFF>Sonderblühen</color> auslöst und dabei einen Gegner trifft, erhält Promeia zusätzlich 15 Pkt. <color=#FFFFFF>Korrosive Kälte</color>.\nWenn mindestens 50 Pkt. <color=#FFFFFF>Korrosive Kälte</color> vorhanden sind, werden 50 Pkt. <color=#FFFFFF>Korrosive Kälte</color> verbraucht und zu 1 Pkt. <color=#FFFFFF>Gericht des Eises</color> umgewandelt, max. bis zu 2 Pkt. <color=#FFFFFF>Gericht des Eises</color>.\nBeim Betreten des Kampffelds erhält Promeia 2 Pkt. <color=#FFFFFF>Gericht des Eises</color>.\nBeim Treffen von Gegnern mit dem Gnadenstoß von <color=#FFFFFF>Verstärkter Spezialangriff: Vollstreckung – Gnadenloses Urteil</color> wird bei Gegnern, die von einer <color=#98EFF0>Eis-Anomalie</color>, <color=#FE437E>Äther-Anomalie</color>, <color=#2EB6FF>Elektro-Anomalie</color>, <color=#FF5521>Feuer-Anomalie</color>, <color=#F0D12B>phys. Anomalie</color> oder <color=#A6C5FD>Wind-Anomalie</color> betroffen sind, 1-mal <color=#FFFFFF>Sonderblühen</color> ausgelöst, um SCH in Höhe von <color=#2BAD00>385 %</color> des Anomalie-SCH des jeweiligen Attributs zu verursachen. Beim Anwenden der Fähigkeit wird 1 Pkt. <color=#FFFFFF>Gericht des Eises</color> verbraucht.\nWenn Promeia <color=#FFFFFF>Sonderblühen</color> auslöst und Gegner damit trifft, erhält sie zusätzlich 100 Pkt. Dezibel, 0,5 s Abklingzeit. Beim Anwenden von <color=#FFFFFF>Ultimate: Knochendurchbohrende Bestrafung</color> wird der Effekt <color=#FFFFFF>Frosteid</color> gewährt. Während <color=#FFFFFF>Frosteid</color> aktiv ist, drücke nach Anwenden von <color=#FFFFFF>Verstärkter Spezialangriff: Vollstreckung – Gnadenloses Urteil</color>, <color=#FFFFFF>Kettenangriff: Hängendes Urteil</color> oder <color=#FFFFFF>Ultimate: Knochendurchbohrende Bestrafung</color> <IconMap:Icon_Special> oder halte es gedrückt, um <color=#FFFFFF>Frosteid</color> zu verbrauchen und sofort im Anschluss <color=#FFFFFF>Spezialangriff: Vollstreckung – Bedrückender Frost</color> auszuführen. Es kann max. 1 Stapelung des Effekts <color=#FFFFFF>Frosteid</color> erhalten werden.",
+                "3": "Wenn Promeias anfängliche Anomalie-Kontrolle 150 Pkt. übersteigt, erhöht jeder Punkt über diesem Wert ihre Anomaliekunde um 1,5 Pkt. und der <color=#FFFFFF>Sonderblühen</color>-SCH der gesamten Truppe wird um 0,35 % erhöht.\nPromeia erhält beim Treffen von Gegnern mit ihren unterschiedlichen Angriffen eine bestimmte Menge an <color=#FFFFFF>Korrosive Kälte</color>. Löst eine Truppenfigur <color=#98EFF0>Gefroren</color> oder <color=#FFFFFF>Unordnung</color> aus, wird einem Gegner <color=#FFFFFF>Vortex</color> verliehen, oder wenn Promeia <color=#FFFFFF>Verstärkter Spezialangriff: Vollstreckung – Schattenschleier</color> auslöst, erhält sie zusätzlich 5/5/5/10 Pkt. <color=#FFFFFF>Korrosive Kälte</color>, max. bis zu 100 Pkt. <color=#FFFFFF>Korrosive Kälte</color> ansammelbar.\nWenn ein Truppenmitglied <color=#FFFFFF>Sonderblühen</color> auslöst und dabei einen Gegner trifft, erhält Promeia zusätzlich 15 Pkt. <color=#FFFFFF>Korrosive Kälte</color>.\nWenn mindestens 50 Pkt. <color=#FFFFFF>Korrosive Kälte</color> vorhanden sind, werden 50 Pkt. <color=#FFFFFF>Korrosive Kälte</color> verbraucht und zu 1 Pkt. <color=#FFFFFF>Gericht des Eises</color> umgewandelt, max. bis zu 2 Pkt. <color=#FFFFFF>Gericht des Eises</color>.\nBeim Betreten des Kampffelds erhält Promeia 2 Pkt. <color=#FFFFFF>Gericht des Eises</color>.\nBeim Treffen von Gegnern mit dem Gnadenstoß von <color=#FFFFFF>Verstärkter Spezialangriff: Vollstreckung – Gnadenloses Urteil</color> wird bei Gegnern, die von einer <color=#98EFF0>Eis-Anomalie</color>, <color=#FE437E>Äther-Anomalie</color>, <color=#2EB6FF>Elektro-Anomalie</color>, <color=#FF5521>Feuer-Anomalie</color>, <color=#F0D12B>phys. Anomalie</color> oder <color=#A6C5FD>Wind-Anomalie</color> betroffen sind, 1-mal <color=#FFFFFF>Sonderblühen</color> ausgelöst, um SCH in Höhe von <color=#2BAD00>435 %</color> des Anomalie-SCH des jeweiligen Attributs zu verursachen. Beim Anwenden der Fähigkeit wird 1 Pkt. <color=#FFFFFF>Gericht des Eises</color> verbraucht.\nWenn Promeia <color=#FFFFFF>Sonderblühen</color> auslöst und Gegner damit trifft, erhält sie zusätzlich 100 Pkt. Dezibel, 0,5 s Abklingzeit. Beim Anwenden von <color=#FFFFFF>Ultimate: Knochendurchbohrende Bestrafung</color> wird der Effekt <color=#FFFFFF>Frosteid</color> gewährt. Während <color=#FFFFFF>Frosteid</color> aktiv ist, drücke nach Anwenden von <color=#FFFFFF>Verstärkter Spezialangriff: Vollstreckung – Gnadenloses Urteil</color>, <color=#FFFFFF>Kettenangriff: Hängendes Urteil</color> oder <color=#FFFFFF>Ultimate: Knochendurchbohrende Bestrafung</color> <IconMap:Icon_Special> oder halte es gedrückt, um <color=#FFFFFF>Frosteid</color> zu verbrauchen und sofort im Anschluss <color=#FFFFFF>Spezialangriff: Vollstreckung – Bedrückender Frost</color> auszuführen. Es kann max. 1 Stapelung des Effekts <color=#FFFFFF>Frosteid</color> erhalten werden.",
+                "4": "Wenn Promeias anfängliche Anomalie-Kontrolle 150 Pkt. übersteigt, erhöht jeder Punkt über diesem Wert ihre Anomaliekunde um 1,5 Pkt. und der <color=#FFFFFF>Sonderblühen</color>-SCH der gesamten Truppe wird um 0,35 % erhöht.\nPromeia erhält beim Treffen von Gegnern mit ihren unterschiedlichen Angriffen eine bestimmte Menge an <color=#FFFFFF>Korrosive Kälte</color>. Löst eine Truppenfigur <color=#98EFF0>Gefroren</color> oder <color=#FFFFFF>Unordnung</color> aus, wird einem Gegner <color=#FFFFFF>Vortex</color> verliehen, oder wenn Promeia <color=#FFFFFF>Verstärkter Spezialangriff: Vollstreckung – Schattenschleier</color> auslöst, erhält sie zusätzlich 5/5/5/10 Pkt. <color=#FFFFFF>Korrosive Kälte</color>, max. bis zu 100 Pkt. <color=#FFFFFF>Korrosive Kälte</color> ansammelbar.\nWenn ein Truppenmitglied <color=#FFFFFF>Sonderblühen</color> auslöst und dabei einen Gegner trifft, erhält Promeia zusätzlich 15 Pkt. <color=#FFFFFF>Korrosive Kälte</color>.\nWenn mindestens 50 Pkt. <color=#FFFFFF>Korrosive Kälte</color> vorhanden sind, werden 50 Pkt. <color=#FFFFFF>Korrosive Kälte</color> verbraucht und zu 1 Pkt. <color=#FFFFFF>Gericht des Eises</color> umgewandelt, max. bis zu 2 Pkt. <color=#FFFFFF>Gericht des Eises</color>.\nBeim Betreten des Kampffelds erhält Promeia 2 Pkt. <color=#FFFFFF>Gericht des Eises</color>.\nBeim Treffen von Gegnern mit dem Gnadenstoß von <color=#FFFFFF>Verstärkter Spezialangriff: Vollstreckung – Gnadenloses Urteil</color> wird bei Gegnern, die von einer <color=#98EFF0>Eis-Anomalie</color>, <color=#FE437E>Äther-Anomalie</color>, <color=#2EB6FF>Elektro-Anomalie</color>, <color=#FF5521>Feuer-Anomalie</color>, <color=#F0D12B>phys. Anomalie</color> oder <color=#A6C5FD>Wind-Anomalie</color> betroffen sind, 1-mal <color=#FFFFFF>Sonderblühen</color> ausgelöst, um SCH in Höhe von <color=#2BAD00>485 %</color> des Anomalie-SCH des jeweiligen Attributs zu verursachen. Beim Anwenden der Fähigkeit wird 1 Pkt. <color=#FFFFFF>Gericht des Eises</color> verbraucht.\nWenn Promeia <color=#FFFFFF>Sonderblühen</color> auslöst und Gegner damit trifft, erhält sie zusätzlich 100 Pkt. Dezibel, 0,5 s Abklingzeit. Beim Anwenden von <color=#FFFFFF>Ultimate: Knochendurchbohrende Bestrafung</color> wird der Effekt <color=#FFFFFF>Frosteid</color> gewährt. Während <color=#FFFFFF>Frosteid</color> aktiv ist, drücke nach Anwenden von <color=#FFFFFF>Verstärkter Spezialangriff: Vollstreckung – Gnadenloses Urteil</color>, <color=#FFFFFF>Kettenangriff: Hängendes Urteil</color> oder <color=#FFFFFF>Ultimate: Knochendurchbohrende Bestrafung</color> <IconMap:Icon_Special> oder halte es gedrückt, um <color=#FFFFFF>Frosteid</color> zu verbrauchen und sofort im Anschluss <color=#FFFFFF>Spezialangriff: Vollstreckung – Bedrückender Frost</color> auszuführen. Es kann max. 1 Stapelung des Effekts <color=#FFFFFF>Frosteid</color> erhalten werden.",
+                "5": "Wenn Promeias anfängliche Anomalie-Kontrolle 150 Pkt. übersteigt, erhöht jeder Punkt über diesem Wert ihre Anomaliekunde um 1,5 Pkt. und der <color=#FFFFFF>Sonderblühen</color>-SCH der gesamten Truppe wird um 0,35 % erhöht.\nPromeia erhält beim Treffen von Gegnern mit ihren unterschiedlichen Angriffen eine bestimmte Menge an <color=#FFFFFF>Korrosive Kälte</color>. Löst eine Truppenfigur <color=#98EFF0>Gefroren</color> oder <color=#FFFFFF>Unordnung</color> aus, wird einem Gegner <color=#FFFFFF>Vortex</color> verliehen, oder wenn Promeia <color=#FFFFFF>Verstärkter Spezialangriff: Vollstreckung – Schattenschleier</color> auslöst, erhält sie zusätzlich 5/5/5/10 Pkt. <color=#FFFFFF>Korrosive Kälte</color>, max. bis zu 100 Pkt. <color=#FFFFFF>Korrosive Kälte</color> ansammelbar.\nWenn ein Truppenmitglied <color=#FFFFFF>Sonderblühen</color> auslöst und dabei einen Gegner trifft, erhält Promeia zusätzlich 15 Pkt. <color=#FFFFFF>Korrosive Kälte</color>.\nWenn mindestens 50 Pkt. <color=#FFFFFF>Korrosive Kälte</color> vorhanden sind, werden 50 Pkt. <color=#FFFFFF>Korrosive Kälte</color> verbraucht und zu 1 Pkt. <color=#FFFFFF>Gericht des Eises</color> umgewandelt, max. bis zu 2 Pkt. <color=#FFFFFF>Gericht des Eises</color>.\nBeim Betreten des Kampffelds erhält Promeia 2 Pkt. <color=#FFFFFF>Gericht des Eises</color>.\nBeim Treffen von Gegnern mit dem Gnadenstoß von <color=#FFFFFF>Verstärkter Spezialangriff: Vollstreckung – Gnadenloses Urteil</color> wird bei Gegnern, die von einer <color=#98EFF0>Eis-Anomalie</color>, <color=#FE437E>Äther-Anomalie</color>, <color=#2EB6FF>Elektro-Anomalie</color>, <color=#FF5521>Feuer-Anomalie</color>, <color=#F0D12B>phys. Anomalie</color> oder <color=#A6C5FD>Wind-Anomalie</color> betroffen sind, 1-mal <color=#FFFFFF>Sonderblühen</color> ausgelöst, um SCH in Höhe von <color=#2BAD00>535 %</color> des Anomalie-SCH des jeweiligen Attributs zu verursachen. Beim Anwenden der Fähigkeit wird 1 Pkt. <color=#FFFFFF>Gericht des Eises</color> verbraucht.\nWenn Promeia <color=#FFFFFF>Sonderblühen</color> auslöst und Gegner damit trifft, erhält sie zusätzlich 100 Pkt. Dezibel, 0,5 s Abklingzeit. Beim Anwenden von <color=#FFFFFF>Ultimate: Knochendurchbohrende Bestrafung</color> wird der Effekt <color=#FFFFFF>Frosteid</color> gewährt. Während <color=#FFFFFF>Frosteid</color> aktiv ist, drücke nach Anwenden von <color=#FFFFFF>Verstärkter Spezialangriff: Vollstreckung – Gnadenloses Urteil</color>, <color=#FFFFFF>Kettenangriff: Hängendes Urteil</color> oder <color=#FFFFFF>Ultimate: Knochendurchbohrende Bestrafung</color> <IconMap:Icon_Special> oder halte es gedrückt, um <color=#FFFFFF>Frosteid</color> zu verbrauchen und sofort im Anschluss <color=#FFFFFF>Spezialangriff: Vollstreckung – Bedrückender Frost</color> auszuführen. Es kann max. 1 Stapelung des Effekts <color=#FFFFFF>Frosteid</color> erhalten werden.",
+                "6": "Wenn Promeias anfängliche Anomalie-Kontrolle 150 Pkt. übersteigt, erhöht jeder Punkt über diesem Wert ihre Anomaliekunde um 1,5 Pkt. und der <color=#FFFFFF>Sonderblühen</color>-SCH der gesamten Truppe wird um 0,35 % erhöht.\nPromeia erhält beim Treffen von Gegnern mit ihren unterschiedlichen Angriffen eine bestimmte Menge an <color=#FFFFFF>Korrosive Kälte</color>. Löst eine Truppenfigur <color=#98EFF0>Gefroren</color> oder <color=#FFFFFF>Unordnung</color> aus, wird einem Gegner <color=#FFFFFF>Vortex</color> verliehen, oder wenn Promeia <color=#FFFFFF>Verstärkter Spezialangriff: Vollstreckung – Schattenschleier</color> auslöst, erhält sie zusätzlich 5/5/5/10 Pkt. <color=#FFFFFF>Korrosive Kälte</color>, max. bis zu 100 Pkt. <color=#FFFFFF>Korrosive Kälte</color> ansammelbar.\nWenn ein Truppenmitglied <color=#FFFFFF>Sonderblühen</color> auslöst und dabei einen Gegner trifft, erhält Promeia zusätzlich 15 Pkt. <color=#FFFFFF>Korrosive Kälte</color>.\nWenn mindestens 50 Pkt. <color=#FFFFFF>Korrosive Kälte</color> vorhanden sind, werden 50 Pkt. <color=#FFFFFF>Korrosive Kälte</color> verbraucht und zu 1 Pkt. <color=#FFFFFF>Gericht des Eises</color> umgewandelt, max. bis zu 2 Pkt. <color=#FFFFFF>Gericht des Eises</color>.\nBeim Betreten des Kampffelds erhält Promeia 2 Pkt. <color=#FFFFFF>Gericht des Eises</color>.\nBeim Treffen von Gegnern mit dem Gnadenstoß von <color=#FFFFFF>Verstärkter Spezialangriff: Vollstreckung – Gnadenloses Urteil</color> wird bei Gegnern, die von einer <color=#98EFF0>Eis-Anomalie</color>, <color=#FE437E>Äther-Anomalie</color>, <color=#2EB6FF>Elektro-Anomalie</color>, <color=#FF5521>Feuer-Anomalie</color>, <color=#F0D12B>phys. Anomalie</color> oder <color=#A6C5FD>Wind-Anomalie</color> betroffen sind, 1-mal <color=#FFFFFF>Sonderblühen</color> ausgelöst, um SCH in Höhe von <color=#2BAD00>585 %</color> des Anomalie-SCH des jeweiligen Attributs zu verursachen. Beim Anwenden der Fähigkeit wird 1 Pkt. <color=#FFFFFF>Gericht des Eises</color> verbraucht.\nWenn Promeia <color=#FFFFFF>Sonderblühen</color> auslöst und Gegner damit trifft, erhält sie zusätzlich 100 Pkt. Dezibel, 0,5 s Abklingzeit. Beim Anwenden von <color=#FFFFFF>Ultimate: Knochendurchbohrende Bestrafung</color> wird der Effekt <color=#FFFFFF>Frosteid</color> gewährt. Während <color=#FFFFFF>Frosteid</color> aktiv ist, drücke nach Anwenden von <color=#FFFFFF>Verstärkter Spezialangriff: Vollstreckung – Gnadenloses Urteil</color>, <color=#FFFFFF>Kettenangriff: Hängendes Urteil</color> oder <color=#FFFFFF>Ultimate: Knochendurchbohrende Bestrafung</color> <IconMap:Icon_Special> oder halte es gedrückt, um <color=#FFFFFF>Frosteid</color> zu verbrauchen und sofort im Anschluss <color=#FFFFFF>Spezialangriff: Vollstreckung – Bedrückender Frost</color> auszuführen. Es kann max. 1 Stapelung des Effekts <color=#FFFFFF>Frosteid</color> erhalten werden.",
+                "7": "Wenn Promeias anfängliche Anomalie-Kontrolle 150 Pkt. übersteigt, erhöht jeder Punkt über diesem Wert ihre Anomaliekunde um 1,5 Pkt. und der <color=#FFFFFF>Sonderblühen</color>-SCH der gesamten Truppe wird um 0,35 % erhöht.\nPromeia erhält beim Treffen von Gegnern mit ihren unterschiedlichen Angriffen eine bestimmte Menge an <color=#FFFFFF>Korrosive Kälte</color>. Löst eine Truppenfigur <color=#98EFF0>Gefroren</color> oder <color=#FFFFFF>Unordnung</color> aus, wird einem Gegner <color=#FFFFFF>Vortex</color> verliehen, oder wenn Promeia <color=#FFFFFF>Verstärkter Spezialangriff: Vollstreckung – Schattenschleier</color> auslöst, erhält sie zusätzlich 5/5/5/10 Pkt. <color=#FFFFFF>Korrosive Kälte</color>, max. bis zu 100 Pkt. <color=#FFFFFF>Korrosive Kälte</color> ansammelbar.\nWenn ein Truppenmitglied <color=#FFFFFF>Sonderblühen</color> auslöst und dabei einen Gegner trifft, erhält Promeia zusätzlich 15 Pkt. <color=#FFFFFF>Korrosive Kälte</color>.\nWenn mindestens 50 Pkt. <color=#FFFFFF>Korrosive Kälte</color> vorhanden sind, werden 50 Pkt. <color=#FFFFFF>Korrosive Kälte</color> verbraucht und zu 1 Pkt. <color=#FFFFFF>Gericht des Eises</color> umgewandelt, max. bis zu 2 Pkt. <color=#FFFFFF>Gericht des Eises</color>.\nBeim Betreten des Kampffelds erhält Promeia 2 Pkt. <color=#FFFFFF>Gericht des Eises</color>.\nBeim Treffen von Gegnern mit dem Gnadenstoß von <color=#FFFFFF>Verstärkter Spezialangriff: Vollstreckung – Gnadenloses Urteil</color> wird bei Gegnern, die von einer <color=#98EFF0>Eis-Anomalie</color>, <color=#FE437E>Äther-Anomalie</color>, <color=#2EB6FF>Elektro-Anomalie</color>, <color=#FF5521>Feuer-Anomalie</color>, <color=#F0D12B>phys. Anomalie</color> oder <color=#A6C5FD>Wind-Anomalie</color> betroffen sind, 1-mal <color=#FFFFFF>Sonderblühen</color> ausgelöst, um SCH in Höhe von <color=#2BAD00>635 %</color> des Anomalie-SCH des jeweiligen Attributs zu verursachen. Beim Anwenden der Fähigkeit wird 1 Pkt. <color=#FFFFFF>Gericht des Eises</color> verbraucht.\nWenn Promeia <color=#FFFFFF>Sonderblühen</color> auslöst und Gegner damit trifft, erhält sie zusätzlich 100 Pkt. Dezibel, 0,5 s Abklingzeit. Beim Anwenden von <color=#FFFFFF>Ultimate: Knochendurchbohrende Bestrafung</color> wird der Effekt <color=#FFFFFF>Frosteid</color> gewährt. Während <color=#FFFFFF>Frosteid</color> aktiv ist, drücke nach Anwenden von <color=#FFFFFF>Verstärkter Spezialangriff: Vollstreckung – Gnadenloses Urteil</color>, <color=#FFFFFF>Kettenangriff: Hängendes Urteil</color> oder <color=#FFFFFF>Ultimate: Knochendurchbohrende Bestrafung</color> <IconMap:Icon_Special> oder halte es gedrückt, um <color=#FFFFFF>Frosteid</color> zu verbrauchen und sofort im Anschluss <color=#FFFFFF>Spezialangriff: Vollstreckung – Bedrückender Frost</color> auszuführen. Es kann max. 1 Stapelung des Effekts <color=#FFFFFF>Frosteid</color> erhalten werden."
+            }
+        },
+        "MathSkill": {
+            "Title": "Zusatzfähigkeit: Eis im Hals",
+            "Description": "Wenn sich in der Truppe eine weitere <color=#FFFFFF>Anomalie</color>- oder <color=#FFFFFF>Support</color>-Figur befindet:\nBeim Anwenden von <color=#FFFFFF>verstärkten Spezialangriffen</color> erhöht sich Promeias <color=#98EFF0>Eis-Anomalieansammlungsrate</color> um 30 %, hält 30 s. Beim wiederholten Auslösen wird die Dauer aktualisiert.\nVerleiht eine Truppenfigur einem Gegner den Effekt <color=#98EFF0>Frostkalt</color>, erhöht sich die Effektdauer um 3 s.\nWenn Promeia mit einem <color=#FFFFFF>verstärkten Spezialangriff</color> einen Gegner trifft, wird dem Gegner der Zustand <color=#FFFFFF>Schuldunterstellung</color> zugefügt. Löst eine Truppenfigur an einem von <color=#FFFFFF>Schuldunterstellung</color> betroffenen Ziel <color=#FFFFFF>Sonderblühen</color> aus, werden 40 % der gegnerischen VTD ignoriert. <color=#FFFFFF>Schuldunterstellung</color> hält 30 s. Beim wiederholten Auslösen wird die Dauer aktualisiert."
+        },
+        "AwakenAbility": {},
+        "BaseProps": [
+            {
+                "31401": 0,
+                "12101": 0
+            },
+            {
+                "31401": 12,
+                "12101": 0
+            },
+            {
+                "31401": 12,
+                "12101": 25
+            },
+            {
+                "31401": 24,
+                "12101": 25
+            },
+            {
+                "31401": 24,
+                "12101": 50
+            },
+            {
+                "31401": 36,
+                "12101": 50
+            },
+            {
+                "31401": 36,
+                "12101": 75
+            }
+        ]
+    },
+    "SkillDescriptions": {
+        "0": {
+            "154100001": {
+                "Title": "Basisangriff: Geschärfte Klinge",
+                "Description": "Drücke <IconMap:Icon_Normal> zum Anwenden:\nFührt bis zu 5 Angriffe gegen Gegnern vor sich aus und verursacht <color=#98EFF0>Eis-SCH</color>.\nDer 5. Angriff ist ein Abwärtsangriff. Halte nach der Landung <IconMap:Icon_Special> oder <IconMap:Icon_Normal> gedrückt, wenn <color=#FFFFFF>Gericht des Eises</color> ausreichend ist, um im Anschluss <color=#FFFFFF>Verstärkter Spezialangriff: Vollstreckung – Gnadenloses Urteil</color> anzuwenden.\nGelangt nach dem Werfen des Umhangs während des 4. Angriffs in den Zustand <color=#FFFFFF>Gefesselte Erlösung</color>."
+            },
+            "154100002": {
+                "Title": "Basisangriff: Klingenspirale",
+                "Description": "Halte <IconMap:Icon_Normal> gedrückt zum Anwenden:\nSpringt in die Luft, greift an, wirft ihren Umhang neben den Gegner und betritt den Zustand <color=#FFFFFF>Gefesselte Erlösung</color>, um <color=#98EFF0>Eis-SCH</color> zu verursachen.\nBeim Treffen von Gegnern wird keine <color=#FFFFFF>Korrosive Kälte</color> angesammelt."
+            },
+            "154100003": {
+                "Title": "Gefesselte Erlösung",
+                "Description": "Beim Anwenden bestimmter Fähigkeiten wirft Promeia ihren Umhang, um Gegner kontinuierlich zu schneiden und <color=#98EFF0>Eis-SCH</color> zu verursachen. Beim Treffen von Gegnern wird keine <color=#FFFFFF>Korrosive Kälte</color> angesammelt.\nWährend sie ihren Umhang wirft, kann sich Promeia langsam bewegen.\nDrücke währenddessen <IconMap:Icon_Normal> oder <IconMap:Icon_Special>, um direkt im Anschluss den 5. Angriff von <color=#FFFFFF>Basisangriff: Geschärfte Klinge</color> anzuwenden.\nWird Promeia während dieses Zeitraums angegriffen, wird automatisch ein <color=#FFFFFF>perfektes Ausweichen</color> ausgeführt. Dieser Effekt kann maximal einmal alle 20 s ausgelöst werden."
+            },
+            "154100019": {
+                "Title": "Basisangriff: Geschärfte Klinge"
+            },
+            "154100020": {
+                "Description": "SCH-Multiplikator des 1. Angriffs",
+                "Param": "{Skill:1541001, Prop:1001}"
+            },
+            "154100021": {
+                "Description": "SCH-Multiplikator des 2. Angriffs",
+                "Param": "{Skill:1541002, Prop:1001}"
+            },
+            "154100022": {
+                "Description": "SCH-Multiplikator des 3. Angriffs",
+                "Param": "{Skill:1541003, Prop:1001}"
+            },
+            "154100023": {
+                "Description": "SCH-Multiplikator des 4. Angriffs",
+                "Param": "{Skill:1541004, Prop:1001}"
+            },
+            "154100024": {
+                "Description": "SCH-Multiplikator des 5. Angriffs",
+                "Param": "{Skill:1541005, Prop:1001}"
+            },
+            "154100025": {
+                "Description": "Benommenheit-Multiplikator des 1. Angriffs",
+                "Param": "{Skill:1541001, Prop:1002}"
+            },
+            "154100026": {
+                "Description": "Benommenheit-Multiplikator des 2. Angriffs",
+                "Param": "{Skill:1541002, Prop:1002}"
+            },
+            "154100027": {
+                "Description": "Benommenheit-Multiplikator des 3. Angriffs",
+                "Param": "{Skill:1541003, Prop:1002}"
+            },
+            "154100028": {
+                "Description": "Benommenheit-Multiplikator des 4. Angriffs",
+                "Param": "{Skill:1541004, Prop:1002}"
+            },
+            "154100029": {
+                "Description": "Benommenheit-Multiplikator des 5. Angriffs",
+                "Param": "{Skill:1541005, Prop:1002}"
+            },
+            "154100030": {
+                "Description": "SCH-Multiplikator pro Sek. für Umhangangriffe",
+                "Param": "{Skill:1541008, Prop:1001}"
+            },
+            "154100031": {
+                "Title": "Basisangriff: Klingenspirale"
+            },
+            "154100032": {
+                "Description": "SCH-Multiplikator des 1. Angriffs",
+                "Param": "{Skill:1541006, Prop:1001}"
+            },
+            "154100033": {
+                "Description": "Benommenheit-Multiplikator des 1. Angriffs",
+                "Param": "{Skill:1541006, Prop:1002}"
+            }
+        },
+        "1": {
+            "154100004": {
+                "Title": "Spezialangriff: Vollstreckung – Kälteblitz",
+                "Description": "Drücke <IconMap:Icon_Special> zum Anwenden:\nFührt einen Wurfpfeilangriff aus, der <color=#98EFF0>Eis-SCH</color> verursacht."
+            },
+            "154100005": {
+                "Title": "Verstärkter Spezialangriff: Vollstreckung – Gletschertod",
+                "Description": "Drücke bei ausreichender Energie <IconMap:Icon_SpecialReady> zum Anwenden:\nFührt einen Wurfpfeilangriff aus, wirft ihren Umhang neben den Gegner und betritt den Zustand <color=#FFFFFF>Gefesselte Erlösung</color>, um <color=#98EFF0>Eis-SCH</color> zu verursachen.\nWird Promeia kurz nach Anwenden dieser Fähigkeit von einem Gegner angegriffen, wird im Anschluss automatisch <color=#FFFFFF>Verstärkter Spezialangriff: Vollstreckung – Schattenschleier</color> ausgeführt.\nBeim Anwenden der Fähigkeit wird der Effekt <color=#FFFFFF>Absolute Verordnung</color> gewährt.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "154100006": {
+                "Title": "Verstärkter Spezialangriff: Vollstreckung – Schattenschleier",
+                "Description": "Wird automatisch angewendet, wenn Promeia kurz nach Anwenden von <color=#FFFFFF>Verstärkter Spezialangriff: Vollstreckung – Gletschertod</color> angegriffen wird:\nTritt kurzzeitig in den Zustand <color=#FFFFFF>Scharfsicht</color> ein und bewegt sich rasch hinter den Gegner.\nWenn nach Auslösen eines <color=#FFFFFF>perfekten Ausweichens</color> ausreichend Energie vorhanden ist, drücke <IconMap:Icon_SpecialReady>, um 40 Pkt. Energie zu verbrauchen, <color=#FFFFFF>Verstärkter Spezialangriff: Vollstreckung – Schattenschleier</color> anzuwenden und den Effekt <color=#FFFFFF>Absolute Verordnung</color> zu erhalten.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "154100007": {
+                "Title": "Spezialangriff: Vollstreckung – Frosteinbruch",
+                "Description": "Drücke, während der Effekt <color=#FFFFFF>Absolute Verordnung</color> aktiv ist, im Zustand <color=#FFFFFF>Gefesselte Erlösung</color> <IconMap:Icon_Normal> oder <IconMap:Icon_Special> zum Anwenden:\nSpringt zum Gegner und holt ihren Umhang zurück, während sie einen Abwärtsangriff ausführt, der <color=#98EFF0>Eis-SCH</color> verursacht.\nWenn nach der Landung <color=#FFFFFF>Gericht des Eises</color> verfügbar ist, halte <IconMap:Icon_Normal> oder <IconMap:Icon_Special> gedrückt, um im Anschluss <color=#FFFFFF>Verstärkter Spezialangriff: Vollstreckung – Gnadenloses Urteil</color> auszuführen.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "154100008": {
+                "Title": "Spezialangriff: Vollstreckung – Bedrückender Frost",
+                "Description": "Drücke nach Auslösen von <color=#FFFFFF>Verstärkter Spezialangriff: Vollstreckung – Schattenschleier</color> <IconMap:Icon_Normal> oder <IconMap:Icon_Special> zum Anwenden:\nFührt schnell mehrere Angriffe aus, springt dann zum Gegner und holt ihren Umhang zurück, während sie einen kraftvolleren Abwärtsangriff ausführt, der <color=#98EFF0>Eis-SCH</color> verursacht.\nWenn nach der Landung <color=#FFFFFF>Gericht des Eises</color> verfügbar ist, halte <IconMap:Icon_Normal> oder <IconMap:Icon_Special> gedrückt, um im Anschluss <color=#FFFFFF>Verstärkter Spezialangriff: Vollstreckung – Gnadenloses Urteil</color> auszuführen.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "154100009": {
+                "Title": "Verstärkter Spezialangriff: Vollstreckung – Gnadenloses Urteil",
+                "Description": "Wenn ausreichend <color=#FFFFFF>Gericht des Eises</color> vorhanden ist, halte nach der Landung des letzten Angriffs von <color=#FFFFFF>Basisangriff: Geschärfte Klinge</color>, des <color=#FFFFFF>Spezialangriffs: Vollstreckung – Frosteinbruch</color> oder des <color=#FFFFFF>Spezialangriffs: Vollstreckung – Bedrückender Frost</color> <IconMap:Icon_Normal> oder <IconMap:Icon_Special> gedrückt zum Anwenden:\nFührt einen raschen Rückziehersprung aus, während sie einen kraftvolleren Gnadenstoß anwendet, der <color=#98EFF0>Eis-SCH</color> verursacht.\nBeim Treffen von Gegnern wird keine <color=#FFFFFF>Korrosive Kälte</color> angesammelt.\nHalte nach Anwenden der Fähigkeit <IconMap:Icon_Normal> oder <IconMap:Icon_Special> gedrückt oder drücke <IconMap:Icon_Normal>, um direkt im Anschluss den 5. Angriff von <color=#FFFFFF>Basisangriff: Geschärfte Klinge</color> auszuführen.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "154100034": {
+                "Title": "Spezialangriff: Vollstreckung – Kälteblitz"
+            },
+            "154100035": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1541007, Prop:1001}"
+            },
+            "154100036": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1541007, Prop:1002}"
+            },
+            "154100037": {
+                "Title": "Verstärkter Spezialangriff: Vollstreckung – Gletschertod"
+            },
+            "154100038": {
+                "Description": "Gesamt-SCH-Multiplikator für Wurfpfeil-Wurfangriffe",
+                "Param": "{Skill:1541009, Prop:1001}"
+            },
+            "154100039": {
+                "Description": "Energiekosten",
+                "Param": "40 Pkt."
+            },
+            "154100040": {
+                "Title": "Spezialangriff: Vollstreckung – Frosteinbruch"
+            },
+            "154100041": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1541010, Prop:1001}"
+            },
+            "154100042": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1541010, Prop:1002}"
+            },
+            "154100043": {
+                "Title": "Spezialangriff: Vollstreckung – Bedrückender Frost"
+            },
+            "154100044": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1541011, Prop:1001}"
+            },
+            "154100045": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1541011, Prop:1002}"
+            },
+            "154100046": {
+                "Description": "Gesamt-SCH-Multiplikator für Wurfpfeil-Schlitzangriffe",
+                "Param": "{Skill:1541012, Prop:1001}"
+            },
+            "154100047": {
+                "Title": "Verstärkter Spezialangriff: Vollstreckung – Gnadenloses Urteil"
+            },
+            "154100048": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1541014, Prop:1001}"
+            },
+            "154100049": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1541014, Prop:1002}"
+            }
+        },
+        "2": {
+            "154100010": {
+                "Title": "Ausweichen: Verschleierter Schritt",
+                "Description": "Drücke <IconMap:Icon_Evade> zum Anwenden:\nEin blitzschnelles Sprintausweichen.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "154100011": {
+                "Title": "Sprintangriff: Grimmige Ernte",
+                "Description": "Drücke beim Ausweichen <IconMap:Icon_Normal> zum Anwenden:\nFührt einen schnellen Angriff nach vorn aus, der <color=#98EFF0>Eis-SCH</color> verursacht."
+            },
+            "154100012": {
+                "Title": "Ausweichkonter: Fledermaussprung",
+                "Description": "Drücke nach Auslösen eines <color=#FFFFFF>perfekten Ausweichens</color> <IconMap:Icon_Normal> zum Anwenden:\nFührt aufeinanderfolgende Angriffe gegen das Ziel aus und verursacht <color=#98EFF0>Eis-SCH</color>.\nNach Anwenden der Fähigkeit kann direkt im Anschluss der 5. Angriff von <color=#FFFFFF>Basisangriff: Geschärfte Klinge</color> ausgeführt werden.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "154100050": {
+                "Title": "Sprintangriff: Grimmige Ernte"
+            },
+            "154100051": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1541015, Prop:1001}"
+            },
+            "154100052": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1541015, Prop:1002}"
+            },
+            "154100053": {
+                "Title": "Ausweichkonter: Fledermaussprung"
+            },
+            "154100054": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1541016, Prop:1001}"
+            },
+            "154100055": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1541016, Prop:1002}"
+            }
+        },
+        "3": {
+            "154100013": {
+                "Title": "Kettenangriff: Hängendes Urteil",
+                "Description": "Wähle beim Auslösen eines <color=#FFFFFF>Kettenangriffs</color> die entsprechende Figur zum Anwenden:\nWirft einen Wurfpfeil und hängt kopfüber über dem Gegner. Entfesselt sodann eine Reihe schneller Angriffe, gefolgt von einem Gnadenstoß, der hohen <color=#98EFF0>Eis-SCH</color> verursacht.\nBeim Treffen von Gegnern mit einem heftigen Schlag wird bei Gegnern, die von einer <color=#98EFF0>Eis-Anomalie</color>, <color=#FE437E>Äther-Anomalie</color>, <color=#2EB6FF>Elektro-Anomalie</color>, <color=#FF5521>Feuer-Anomalie</color>, <color=#F0D12B>phys. Anomalie</color> oder <color=#A6C5FD>Wind-Anomalie</color> betroffen sind, 1-mal <color=#FFFFFF>Sonderblühen</color> ausgelöst und SCH in Höhe von 100 % des Anomalie-SCH des jeweiligen Attributs verursacht.\nNach Anwenden der Fähigkeit kann direkt im Anschluss der 5. Angriff von <color=#FFFFFF>Basisangriff: Geschärfte Klinge</color> ausgeführt werden.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "154100014": {
+                "Title": "Ultimate: Knochendurchbohrende Bestrafung",
+                "Description": "Drücke beim Erreichen der Dezibelstufe <color=#FFFFFF>Maximum</color> <IconMap:Icon_UltimateReady> zum Anwenden:\nFührt mehrere Angriffe nach vorn aus, die hohen <color=#98EFF0>Eis-SCH</color> verursachen.\nBeim Treffen von Gegnern mit einem heftigen Schlag wird bei Gegnern, die von einer <color=#98EFF0>Eis-Anomalie</color>, <color=#FE437E>Äther-Anomalie</color>, <color=#2EB6FF>Elektro-Anomalie</color>, <color=#FF5521>Feuer-Anomalie</color>, <color=#F0D12B>phys. Anomalie</color> oder <color=#A6C5FD>Wind-Anomalie</color> betroffen sind, 1-mal <color=#FFFFFF>Sonderblühen</color> ausgelöst und SCH in Höhe von 250 % des Anomalie-SCH des jeweiligen Attributs verursacht.\nNach Anwenden der Fähigkeit kann direkt im Anschluss der 5. Angriff von <color=#FFFFFF>Basisangriff: Geschärfte Klinge</color> ausgeführt werden.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "154100056": {
+                "Title": "Kettenangriff: Hängendes Urteil"
+            },
+            "154100057": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1541017, Prop:1001}"
+            },
+            "154100058": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1541017, Prop:1002}"
+            },
+            "154100059": {
+                "Title": "Ultimate: Knochendurchbohrende Bestrafung"
+            },
+            "154100060": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1541018, Prop:1001}"
+            },
+            "154100061": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1541018, Prop:1002}"
+            }
+        },
+        "6": {
+            "154100016": {
+                "Title": "Schnelle Hilfe: Hinterhaltschlag",
+                "Description": "Drücke, wenn die gesteuerte Figur weggeschleudert wird, <IconMap:Icon_Switch> zum Anwenden:\nFührt aufeinanderfolgende Angriffe gegen das Ziel aus und verursacht <color=#98EFF0>Eis-SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "154100017": {
+                "Title": "Defensivhilfe: Beseitigungsbefehl",
+                "Description": "Drücke, wenn die Figur auf dem Feld gleich angegriffen wird, <IconMap:Icon_Switch> zum Anwenden:\nWehrt gegnerische Angriffe ab und verursacht eine große Menge Benommenheit.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "154100018": {
+                "Title": "Sukzessive Hilfe: Abfangungsangriff",
+                "Description": "Drücke nach einer <color=#FFFFFF>Defensivhilfe</color> <IconMap:Icon_Normal> zum Anwenden:\nFührt aufeinanderfolgende Angriffe gegen das Ziel aus und verursacht <color=#98EFF0>Eis-SCH</color>.\nNach Anwenden der Fähigkeit kann direkt im Anschluss der 5. Angriff von <color=#FFFFFF>Basisangriff: Geschärfte Klinge</color> ausgeführt werden.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "154100062": {
+                "Title": "Schnelle Hilfe: Hinterhaltschlag"
+            },
+            "154100063": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1541019, Prop:1001}"
+            },
+            "154100064": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1541019, Prop:1002}"
+            },
+            "154100065": {
+                "Title": "Defensivhilfe: Beseitigungsbefehl"
+            },
+            "154100066": {
+                "Description": "Benommenheit-Multiplikator für leichte Defensive",
+                "Param": "{Skill:1541020, Prop:1002}"
+            },
+            "154100067": {
+                "Description": "Benommenheit-Multiplikator für schwere Defensive",
+                "Param": "{Skill:1541021, Prop:1002}"
+            },
+            "154100068": {
+                "Description": "Benommenheit-Multiplikator für Kettendefensive",
+                "Param": "{Skill:1541022, Prop:1002}"
+            },
+            "154100069": {
+                "Title": "Sukzessive Hilfe: Abfangungsangriff"
+            },
+            "154100070": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1541023, Prop:1001}"
+            },
+            "154100071": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1541023, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1541001": {
+            "DamageValue": 4980,
+            "DamageGrowth": 460,
+            "DazeValue": 3380,
+            "DazeGrowth": 160
+        },
+        "1541002": {
+            "DamageValue": 10320,
+            "DamageGrowth": 940,
+            "DazeValue": 6910,
+            "DazeGrowth": 320
+        },
+        "1541003": {
+            "DamageValue": 19090,
+            "DamageGrowth": 1740,
+            "DazeValue": 12490,
+            "DazeGrowth": 570
+        },
+        "1541004": {
+            "DamageValue": 20470,
+            "DamageGrowth": 1870,
+            "DazeValue": 13630,
+            "DazeGrowth": 620
+        },
+        "1541005": {
+            "DamageValue": 24150,
+            "DamageGrowth": 2200,
+            "DazeValue": 16040,
+            "DazeGrowth": 730
+        },
+        "1541006": {
+            "DamageValue": 17550,
+            "DamageGrowth": 1600,
+            "DazeValue": 8250,
+            "DazeGrowth": 380
+        },
+        "1541007": {
+            "DamageValue": 12780,
+            "DamageGrowth": 1170,
+            "DazeValue": 5410,
+            "DazeGrowth": 250
+        },
+        "1541008": {
+            "DamageValue": 1950,
+            "DamageGrowth": 180,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1541009": {
+            "DamageValue": 7930,
+            "DamageGrowth": 730,
+            "DazeValue": 7700,
+            "DazeGrowth": 350
+        },
+        "1541010": {
+            "DamageValue": 38380,
+            "DamageGrowth": 3490,
+            "DazeValue": 27430,
+            "DazeGrowth": 1250
+        },
+        "1541011": {
+            "DamageValue": 60820,
+            "DamageGrowth": 5530,
+            "DazeValue": 45060,
+            "DazeGrowth": 2050
+        },
+        "1541012": {
+            "DamageValue": 1210,
+            "DamageGrowth": 110,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1541014": {
+            "DamageValue": 51230,
+            "DamageGrowth": 4660,
+            "DazeValue": 12160,
+            "DazeGrowth": 560
+        },
+        "1541015": {
+            "DamageValue": 5630,
+            "DamageGrowth": 520,
+            "DazeValue": 2390,
+            "DazeGrowth": 110
+        },
+        "1541016": {
+            "DamageValue": 33570,
+            "DamageGrowth": 3060,
+            "DazeValue": 24390,
+            "DazeGrowth": 1110
+        },
+        "1541017": {
+            "DamageValue": 83080,
+            "DamageGrowth": 7560,
+            "DazeValue": 26410,
+            "DazeGrowth": 1210
+        },
+        "1541018": {
+            "DamageValue": 153840,
+            "DamageGrowth": 13990,
+            "DazeValue": 24940,
+            "DazeGrowth": 1140
+        },
+        "1541019": {
+            "DamageValue": 7910,
+            "DamageGrowth": 720,
+            "DazeValue": 6700,
+            "DazeGrowth": 310
+        },
+        "1541020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1541021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1541022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1541023": {
+            "DamageValue": 46900,
+            "DamageGrowth": 4270,
+            "DazeValue": 34670,
+            "DazeGrowth": 1580
+        }
+    }
+}

@@ -1,0 +1,498 @@
+{
+    "Name": "Starlight - Billy",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Specialty": {
+        "Id": 6,
+        "Name": "Rupture"
+    },
+    "Talents": {
+        "1": {
+            "Title": "Heroic Entrance",
+            "Description": "<color=#FFFFFF>Core Passive: Knight's Resolve</color> restores an additional 60 Adrenaline upon entering the battlefield. Hitting an enemy with an <color=#FFFFFF>EX Special Attack</color> causes Starlight - Billy's DMG to ignore 18% <color=#F0D12B>Physical RES</color> for 45s. Repeated triggers refresh the duration.",
+            "Lore": "There are just as many bad guys in New Eridu as in a visual FX show, but there aren't many real heroes.\n\"I might be good at shouting heroic lines, but I can't really call myself a hero yet...\"\n\"But I'll follow their example and stand up front to protect everyone!\""
+        },
+        "2": {
+            "Title": "Wasteland Automaton",
+            "Description": "Increases the DMG dealt by <color=#FFFFFF>Basic Attack: Full-Throttle Starlight</color>, <color=#FFFFFF>EX Special Attack: Cool Wheelie</color>, and <color=#FFFFFF>Ultimate: Starlight Knight Flying Kick</color> by 50%. Activating <color=#FFFFFF>EX Special Attack: Rocking Footwork</color>, <color=#FFFFFF>EX Special Attack: High-Traction Wheels</color>, or hitting a Stunned enemy with <color=#FFFFFF>Special Attack: Drive Suppression</color> grants the <color=#FFFFFF>Turbocharged</color> effect: <color=#FFFFFF>Special Attack: Drive Suppression</color> consumes this effect to immediately follow up with <color=#FFFFFF>EX Special Attack: Cool Wheelie</color>, and increases that instance's CRIT DMG by 50%. Only 1 stack of <color=#FFFFFF>Turbocharged</color> can be held.",
+            "Lore": "There's no shortage of sharpshooters in the Outer Ring, but keeping perfect aim on a speeding bike is what defines a real ace.\n\"Ballistic calculations and mechanical fingers? Of course they help...\"\n\"But the real reason I'm dead-on every time is because... the Starlight chose me!\""
+        },
+        "3": {
+            "Title": "Knight's Chivalry",
+            "Description": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2",
+            "Lore": "What does it really mean to be a Starlight Knight? Never backing down and standing up for the weak? Sacrifice, justice, compassion, honor?\n\"Do what is right...\"\n\"And don't compromise on what's not cool!\"\n\"That's why I'll never abandon my companions!\""
+        },
+        "4": {
+            "Title": "Flames of Justice",
+            "Description": "While in combat, each use of <color=#FFFFFF>Special Attack: Drive Suppression</color> increases Starlight - Billy's CRIT DMG by 8%, stacking up to 2 times and lasting 45s. Repeated triggers reset the duration. If HP is below 35% and Starlight - Billy is not the active character, he continuously recovers HP, up to 35%.",
+            "Lore": "Ideals are born to uphold justice, yet they're destined to be abandoned.\n\"You're saying those shows are just for kids...?\"\n\"The most courageous dreams are the ones only kids dare to believe in, right?\"\n\"Then I, Starlight - Billy, will protect those ridiculed dreams!\""
+        },
+        "5": {
+            "Title": "Radiant Armaments",
+            "Description": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2",
+            "Lore": "You need a dazzling outfit to look like a real hero... it makes the whole thing pretty inconvenient.\n\"I'm not strong because of larger-caliber weapons or higher-power components!\"\n\"My true weapon... is the endless starlight!\""
+        },
+        "6": {
+            "Title": "Starlight Knight",
+            "Description": "<color=#FFFFFF>Ultimate: Starlight Knight Flying Kick</color> and <color=#FFFFFF>Basic Attack: Full-Throttle Starlight</color>'s Sheer DMG increases by 18%. Landing the 4th hit of <color=#FFFFFF>Basic Attack: Knight's Technique</color>, <color=#FFFFFF>EX Special Attack: Cool Wheelie</color>, or <color=#FFFFFF>Chain Attack: Knight's Swagger</color> grants 1 stack of <color=#FFFFFF>Brilliant Starlight</color>, stacking up to 6 times, and gaining at most 1 stack per skill use. When using <color=#FFFFFF>Ultimate: Starlight Knight Flying Kick</color> or <color=#FFFFFF>Basic Attack: Full-Throttle Starlight</color>, consumes up to 2 stacks of <color=#FFFFFF>Brilliant Starlight</color>, with each stack consumed causing that skill's final hit to deal 100% Sheer Force as additional <color=#F0D12B>Physical DMG</color>.",
+            "Lore": "Those who always believe in hope will, in the end, become someone else's hope.\nThis is the story of the Starlight Knights, the story of Billy Kid.\n\"Starlight Knight — Transformation!\""
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Core Passive: Knight's Resolve",
+            "DescriptionByLevel": {
+                "1": "Starlight - Billy gains extra Sheer Force based on his Max HP, with every 1 point of Max HP increasing Sheer Force by 0.1. All <color=#F0D12B>Physical DMG</color> Starlight - Billy deals is Sheer DMG, ignoring enemy DEF and using his Sheer Force stat as the DMG Multiplier.\nStarlight - Billy restores 60 Adrenaline upon entering the battlefield. In Investigation Zone Mode, this effect can trigger once every 180s.\nWhen his HP is greater than 25%, press <IconMap:Icon_Special> to consume HP and activate <color=#FFFFFF>Special Attack: Drive Suppression</color>. While in combat, each use of this skill increases his CRIT DMG by <color=#2BAD00>45%</color> for 45s. Repeated triggers refresh the duration. When HP is at or below 25%, the DMG he takes is reduced by 50%.\nStarlight - Billy gains <color=#FFFFFF>Determination</color> when his attacks hit enemies, with the amount depending on the skill used. <color=#FFFFFF>Determination</color> regenerates slowly while in combat, and is capped at 120. Hitting an enemy with <color=#FFFFFF>EX Special Attack: Cool Wheelie</color>, activating <color=#FFFFFF>Chain Attack: Knight's Swagger</color>, or triggering a block restores additional <color=#FFFFFF>Determination</color>. Triggering a <color=#FFFFFF>Perfect Dodge</color> by any means restores 3 <color=#FFFFFF>Determination</color>. This effect can trigger once every 0.5s.\nWhen <color=#FFFFFF>Determination</color> is greater than or equal to 100, hold <IconMap:Icon_Normal> to consume 100 <color=#FFFFFF>Determination</color> and activate <color=#FFFFFF>Basic Attack: Full-Throttle Starlight</color>.\nHitting an enemy with <color=#FFFFFF>Basic Attack: Knight's Technique</color> restores a small amount of HP. Hitting an enemy with <color=#FFFFFF>Dodge Counter: Duel King</color> activated through a <color=#FFFFFF>Perfect Dodge</color> restores HP. Using <color=#FFFFFF>EX Special Attack: High-Traction Wheels</color> or <color=#FFFFFF>EX Special Attack: Rocking Footwork</color> restores HP.",
+                "2": "Starlight - Billy gains extra Sheer Force based on his Max HP, with every 1 point of Max HP increasing Sheer Force by 0.1. All <color=#F0D12B>Physical DMG</color> Starlight - Billy deals is Sheer DMG, ignoring enemy DEF and using his Sheer Force stat as the DMG Multiplier.\nStarlight - Billy restores 60 Adrenaline upon entering the battlefield. In Investigation Zone Mode, this effect can trigger once every 180s.\nWhen his HP is greater than 25%, press <IconMap:Icon_Special> to consume HP and activate <color=#FFFFFF>Special Attack: Drive Suppression</color>. While in combat, each use of this skill increases his CRIT DMG by <color=#2BAD00>53%</color> for 45s. Repeated triggers refresh the duration. When HP is at or below 25%, the DMG he takes is reduced by 50%.\nStarlight - Billy gains <color=#FFFFFF>Determination</color> when his attacks hit enemies, with the amount depending on the skill used. <color=#FFFFFF>Determination</color> regenerates slowly while in combat, and is capped at 120. Hitting an enemy with <color=#FFFFFF>EX Special Attack: Cool Wheelie</color>, activating <color=#FFFFFF>Chain Attack: Knight's Swagger</color>, or triggering a block restores additional <color=#FFFFFF>Determination</color>. Triggering a <color=#FFFFFF>Perfect Dodge</color> by any means restores 3 <color=#FFFFFF>Determination</color>. This effect can trigger once every 0.5s.\nWhen <color=#FFFFFF>Determination</color> is greater than or equal to 100, hold <IconMap:Icon_Normal> to consume 100 <color=#FFFFFF>Determination</color> and activate <color=#FFFFFF>Basic Attack: Full-Throttle Starlight</color>.\nHitting an enemy with <color=#FFFFFF>Basic Attack: Knight's Technique</color> restores a small amount of HP. Hitting an enemy with <color=#FFFFFF>Dodge Counter: Duel King</color> activated through a <color=#FFFFFF>Perfect Dodge</color> restores HP. Using <color=#FFFFFF>EX Special Attack: High-Traction Wheels</color> or <color=#FFFFFF>EX Special Attack: Rocking Footwork</color> restores HP.",
+                "3": "Starlight - Billy gains extra Sheer Force based on his Max HP, with every 1 point of Max HP increasing Sheer Force by 0.1. All <color=#F0D12B>Physical DMG</color> Starlight - Billy deals is Sheer DMG, ignoring enemy DEF and using his Sheer Force stat as the DMG Multiplier.\nStarlight - Billy restores 60 Adrenaline upon entering the battlefield. In Investigation Zone Mode, this effect can trigger once every 180s.\nWhen his HP is greater than 25%, press <IconMap:Icon_Special> to consume HP and activate <color=#FFFFFF>Special Attack: Drive Suppression</color>. While in combat, each use of this skill increases his CRIT DMG by <color=#2BAD00>60%</color> for 45s. Repeated triggers refresh the duration. When HP is at or below 25%, the DMG he takes is reduced by 50%.\nStarlight - Billy gains <color=#FFFFFF>Determination</color> when his attacks hit enemies, with the amount depending on the skill used. <color=#FFFFFF>Determination</color> regenerates slowly while in combat, and is capped at 120. Hitting an enemy with <color=#FFFFFF>EX Special Attack: Cool Wheelie</color>, activating <color=#FFFFFF>Chain Attack: Knight's Swagger</color>, or triggering a block restores additional <color=#FFFFFF>Determination</color>. Triggering a <color=#FFFFFF>Perfect Dodge</color> by any means restores 3 <color=#FFFFFF>Determination</color>. This effect can trigger once every 0.5s.\nWhen <color=#FFFFFF>Determination</color> is greater than or equal to 100, hold <IconMap:Icon_Normal> to consume 100 <color=#FFFFFF>Determination</color> and activate <color=#FFFFFF>Basic Attack: Full-Throttle Starlight</color>.\nHitting an enemy with <color=#FFFFFF>Basic Attack: Knight's Technique</color> restores a small amount of HP. Hitting an enemy with <color=#FFFFFF>Dodge Counter: Duel King</color> activated through a <color=#FFFFFF>Perfect Dodge</color> restores HP. Using <color=#FFFFFF>EX Special Attack: High-Traction Wheels</color> or <color=#FFFFFF>EX Special Attack: Rocking Footwork</color> restores HP.",
+                "4": "Starlight - Billy gains extra Sheer Force based on his Max HP, with every 1 point of Max HP increasing Sheer Force by 0.1. All <color=#F0D12B>Physical DMG</color> Starlight - Billy deals is Sheer DMG, ignoring enemy DEF and using his Sheer Force stat as the DMG Multiplier.\nStarlight - Billy restores 60 Adrenaline upon entering the battlefield. In Investigation Zone Mode, this effect can trigger once every 180s.\nWhen his HP is greater than 25%, press <IconMap:Icon_Special> to consume HP and activate <color=#FFFFFF>Special Attack: Drive Suppression</color>. While in combat, each use of this skill increases his CRIT DMG by <color=#2BAD00>68%</color> for 45s. Repeated triggers refresh the duration. When HP is at or below 25%, the DMG he takes is reduced by 50%.\nStarlight - Billy gains <color=#FFFFFF>Determination</color> when his attacks hit enemies, with the amount depending on the skill used. <color=#FFFFFF>Determination</color> regenerates slowly while in combat, and is capped at 120. Hitting an enemy with <color=#FFFFFF>EX Special Attack: Cool Wheelie</color>, activating <color=#FFFFFF>Chain Attack: Knight's Swagger</color>, or triggering a block restores additional <color=#FFFFFF>Determination</color>. Triggering a <color=#FFFFFF>Perfect Dodge</color> by any means restores 3 <color=#FFFFFF>Determination</color>. This effect can trigger once every 0.5s.\nWhen <color=#FFFFFF>Determination</color> is greater than or equal to 100, hold <IconMap:Icon_Normal> to consume 100 <color=#FFFFFF>Determination</color> and activate <color=#FFFFFF>Basic Attack: Full-Throttle Starlight</color>.\nHitting an enemy with <color=#FFFFFF>Basic Attack: Knight's Technique</color> restores a small amount of HP. Hitting an enemy with <color=#FFFFFF>Dodge Counter: Duel King</color> activated through a <color=#FFFFFF>Perfect Dodge</color> restores HP. Using <color=#FFFFFF>EX Special Attack: High-Traction Wheels</color> or <color=#FFFFFF>EX Special Attack: Rocking Footwork</color> restores HP.",
+                "5": "Starlight - Billy gains extra Sheer Force based on his Max HP, with every 1 point of Max HP increasing Sheer Force by 0.1. All <color=#F0D12B>Physical DMG</color> Starlight - Billy deals is Sheer DMG, ignoring enemy DEF and using his Sheer Force stat as the DMG Multiplier.\nStarlight - Billy restores 60 Adrenaline upon entering the battlefield. In Investigation Zone Mode, this effect can trigger once every 180s.\nWhen his HP is greater than 25%, press <IconMap:Icon_Special> to consume HP and activate <color=#FFFFFF>Special Attack: Drive Suppression</color>. While in combat, each use of this skill increases his CRIT DMG by <color=#2BAD00>75%</color> for 45s. Repeated triggers refresh the duration. When HP is at or below 25%, the DMG he takes is reduced by 50%.\nStarlight - Billy gains <color=#FFFFFF>Determination</color> when his attacks hit enemies, with the amount depending on the skill used. <color=#FFFFFF>Determination</color> regenerates slowly while in combat, and is capped at 120. Hitting an enemy with <color=#FFFFFF>EX Special Attack: Cool Wheelie</color>, activating <color=#FFFFFF>Chain Attack: Knight's Swagger</color>, or triggering a block restores additional <color=#FFFFFF>Determination</color>. Triggering a <color=#FFFFFF>Perfect Dodge</color> by any means restores 3 <color=#FFFFFF>Determination</color>. This effect can trigger once every 0.5s.\nWhen <color=#FFFFFF>Determination</color> is greater than or equal to 100, hold <IconMap:Icon_Normal> to consume 100 <color=#FFFFFF>Determination</color> and activate <color=#FFFFFF>Basic Attack: Full-Throttle Starlight</color>.\nHitting an enemy with <color=#FFFFFF>Basic Attack: Knight's Technique</color> restores a small amount of HP. Hitting an enemy with <color=#FFFFFF>Dodge Counter: Duel King</color> activated through a <color=#FFFFFF>Perfect Dodge</color> restores HP. Using <color=#FFFFFF>EX Special Attack: High-Traction Wheels</color> or <color=#FFFFFF>EX Special Attack: Rocking Footwork</color> restores HP.",
+                "6": "Starlight - Billy gains extra Sheer Force based on his Max HP, with every 1 point of Max HP increasing Sheer Force by 0.1. All <color=#F0D12B>Physical DMG</color> Starlight - Billy deals is Sheer DMG, ignoring enemy DEF and using his Sheer Force stat as the DMG Multiplier.\nStarlight - Billy restores 60 Adrenaline upon entering the battlefield. In Investigation Zone Mode, this effect can trigger once every 180s.\nWhen his HP is greater than 25%, press <IconMap:Icon_Special> to consume HP and activate <color=#FFFFFF>Special Attack: Drive Suppression</color>. While in combat, each use of this skill increases his CRIT DMG by <color=#2BAD00>83%</color> for 45s. Repeated triggers refresh the duration. When HP is at or below 25%, the DMG he takes is reduced by 50%.\nStarlight - Billy gains <color=#FFFFFF>Determination</color> when his attacks hit enemies, with the amount depending on the skill used. <color=#FFFFFF>Determination</color> regenerates slowly while in combat, and is capped at 120. Hitting an enemy with <color=#FFFFFF>EX Special Attack: Cool Wheelie</color>, activating <color=#FFFFFF>Chain Attack: Knight's Swagger</color>, or triggering a block restores additional <color=#FFFFFF>Determination</color>. Triggering a <color=#FFFFFF>Perfect Dodge</color> by any means restores 3 <color=#FFFFFF>Determination</color>. This effect can trigger once every 0.5s.\nWhen <color=#FFFFFF>Determination</color> is greater than or equal to 100, hold <IconMap:Icon_Normal> to consume 100 <color=#FFFFFF>Determination</color> and activate <color=#FFFFFF>Basic Attack: Full-Throttle Starlight</color>.\nHitting an enemy with <color=#FFFFFF>Basic Attack: Knight's Technique</color> restores a small amount of HP. Hitting an enemy with <color=#FFFFFF>Dodge Counter: Duel King</color> activated through a <color=#FFFFFF>Perfect Dodge</color> restores HP. Using <color=#FFFFFF>EX Special Attack: High-Traction Wheels</color> or <color=#FFFFFF>EX Special Attack: Rocking Footwork</color> restores HP.",
+                "7": "Starlight - Billy gains extra Sheer Force based on his Max HP, with every 1 point of Max HP increasing Sheer Force by 0.1. All <color=#F0D12B>Physical DMG</color> Starlight - Billy deals is Sheer DMG, ignoring enemy DEF and using his Sheer Force stat as the DMG Multiplier.\nStarlight - Billy restores 60 Adrenaline upon entering the battlefield. In Investigation Zone Mode, this effect can trigger once every 180s.\nWhen his HP is greater than 25%, press <IconMap:Icon_Special> to consume HP and activate <color=#FFFFFF>Special Attack: Drive Suppression</color>. While in combat, each use of this skill increases his CRIT DMG by <color=#2BAD00>90%</color> for 45s. Repeated triggers refresh the duration. When HP is at or below 25%, the DMG he takes is reduced by 50%.\nStarlight - Billy gains <color=#FFFFFF>Determination</color> when his attacks hit enemies, with the amount depending on the skill used. <color=#FFFFFF>Determination</color> regenerates slowly while in combat, and is capped at 120. Hitting an enemy with <color=#FFFFFF>EX Special Attack: Cool Wheelie</color>, activating <color=#FFFFFF>Chain Attack: Knight's Swagger</color>, or triggering a block restores additional <color=#FFFFFF>Determination</color>. Triggering a <color=#FFFFFF>Perfect Dodge</color> by any means restores 3 <color=#FFFFFF>Determination</color>. This effect can trigger once every 0.5s.\nWhen <color=#FFFFFF>Determination</color> is greater than or equal to 100, hold <IconMap:Icon_Normal> to consume 100 <color=#FFFFFF>Determination</color> and activate <color=#FFFFFF>Basic Attack: Full-Throttle Starlight</color>.\nHitting an enemy with <color=#FFFFFF>Basic Attack: Knight's Technique</color> restores a small amount of HP. Hitting an enemy with <color=#FFFFFF>Dodge Counter: Duel King</color> activated through a <color=#FFFFFF>Perfect Dodge</color> restores HP. Using <color=#FFFFFF>EX Special Attack: High-Traction Wheels</color> or <color=#FFFFFF>EX Special Attack: Rocking Footwork</color> restores HP."
+            }
+        },
+        "MathSkill": {
+            "Title": "Additional Ability: Blazing Starlight",
+            "Description": "When another character in your squad is a <color=#FFFFFF>Stun</color>, <color=#FFFFFF>Defense</color>, or <color=#FFFFFF>Support</color> character:\nHitting an enemy with <color=#FFFFFF>EX Special Attack: Cool Wheelie</color>, the 4th hit of <color=#FFFFFF>Basic Attack: Knight's Technique</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color> grants 1 stack of <color=#FFFFFF>Starlight</color> for 45s, up to a maximum of 2 stacks, Only one stack can be obtained per use of a skill. Each stack increases the DMG of <color=#FFFFFF>Chain Attacks</color>, <color=#FFFFFF>Ultimates</color>, <color=#FFFFFF>EX Special Attacks</color>, and <color=#FFFFFF>Basic Attack: Full-Throttle Starlight</color> by 20%."
+        },
+        "AwakenAbility": {},
+        "BaseProps": [
+            {
+                "20101": 0,
+                "12101": 0
+            },
+            {
+                "20101": 480,
+                "12101": 0
+            },
+            {
+                "20101": 480,
+                "12101": 25
+            },
+            {
+                "20101": 960,
+                "12101": 25
+            },
+            {
+                "20101": 960,
+                "12101": 50
+            },
+            {
+                "20101": 1440,
+                "12101": 50
+            },
+            {
+                "20101": 1440,
+                "12101": 75
+            }
+        ]
+    },
+    "SkillDescriptions": {
+        "0": {
+            "153100001": {
+                "Title": "Basic Attack: Knight's Technique",
+                "Description": "Press <IconMap:Icon_Normal> to activate:\nPerforms up to four attacks forward, dealing <color=#F0D12B>Physical DMG</color>.\nDuring the 4th hit, press <IconMap:Icon_Special> to use <color=#FFFFFF>Special Attack: Drive Suppression</color>, reducing HP consumption by 50%.\nRestores a small amount of HP on hit."
+            },
+            "153100002": {
+                "Title": "Basic Attack: Full-Throttle Starlight",
+                "Description": "With enough <color=#FFFFFF>Determination</color>, hold <IconMap:Icon_Normal> to activate:\nCharges forward on the motorcycle, then fires a laser beam, dealing massive <color=#F0D12B>Physical DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "153100018": {
+                "Title": "Basic Attack: Knight's Technique"
+            },
+            "153100019": {
+                "Description": "1st-Hit DMG Multiplier",
+                "Param": "{Skill:1531001, Prop:1001}"
+            },
+            "153100020": {
+                "Description": "2nd-Hit DMG Multiplier",
+                "Param": "{Skill:1531002, Prop:1001}"
+            },
+            "153100021": {
+                "Description": "3rd-Hit DMG Multiplier",
+                "Param": "{Skill:1531003, Prop:1001}"
+            },
+            "153100022": {
+                "Description": "4th-Hit DMG Multiplier",
+                "Param": "{Skill:1531004, Prop:1001}"
+            },
+            "153100023": {
+                "Description": "1st-Hit Daze Multiplier",
+                "Param": "{Skill:1531001, Prop:1002}"
+            },
+            "153100024": {
+                "Description": "2nd-Hit Daze Multiplier",
+                "Param": "{Skill:1531002, Prop:1002}"
+            },
+            "153100025": {
+                "Description": "3rd-Hit Daze Multiplier",
+                "Param": "{Skill:1531003, Prop:1002}"
+            },
+            "153100026": {
+                "Description": "4th-Hit Daze Multiplier",
+                "Param": "{Skill:1531004, Prop:1002}"
+            },
+            "153100027": {
+                "Title": "Basic Attack: Full-Throttle Starlight"
+            },
+            "153100028": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1531010, Prop:1001}"
+            },
+            "153100029": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1531010, Prop:1002}"
+            },
+            "153100030": {
+                "Description": "Determination Cost",
+                "Param": "100"
+            }
+        },
+        "1": {
+            "153100003": {
+                "Title": "Special Attack: Drive Suppression",
+                "Description": "When HP is above 25%, press <IconMap:Icon_Special> to activate:\nConsumes HP equal to 16% of Max HP to summon a motorcycle and swiftly crash into enemies, continuously dealing <color=#F0D12B>Physical DMG</color>.\nIf attacked by an enemy as the active character shortly upon activating this skill, triggers a block, negating the attack and restoring 5 <color=#FFFFFF>Determination</color>.\nAfter triggering a block, immediately chains into <color=#FFFFFF>EX Special Attack: Cool Wheelie</color>.\nAfter the skill continues for a while, it automatically chains into <color=#FFFFFF>EX Special Attack: Cool Wheelie</color>.\nAnti-Interrupt level is increased while using this skill."
+            },
+            "153100004": {
+                "Title": "Special Attack: Run Wild",
+                "Description": "Triggers automatically when <color=#FFFFFF>Dodge: Through the Galaxy</color> is interrupted:\nKicks his motorcycle at enemies, dealing <color=#F0D12B>Physical DMG</color>.\nAfter using this skill, it can be chained into <color=#FFFFFF>Dodge Counter: Duel King</color>.\nAnti-Interrupt level is increased while using this skill."
+            },
+            "153100005": {
+                "Title": "EX Special Attack: Cool Wheelie",
+                "Description": "Triggers automatically when <color=#FFFFFF>Special Attack: Drive Suppression</color> reaches its maximum duration or a block is triggered:\nLifts the motorcycle to attack enemies, dealing <color=#F0D12B>Physical DMG</color>.\nOn hit, restores an additional 8 <color=#FFFFFF>Determination</color>.\nAfter using this skill, with enough Adrenaline, press or hold <IconMap:Icon_SpecialReady_Rp> to chain into <color=#FFFFFF>EX Special Attack: Rocking Footwork</color>.\nAfter the skill animation ends, automatically chains into <color=#FFFFFF>Special Attack: Run Wild</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "153100006": {
+                "Title": "EX Special Attack: High-Traction Wheels",
+                "Description": "With enough Adrenaline, hold <IconMap:Icon_SpecialReady_Rp> to activate:\nSlams down with the motorcycle, dealing <color=#F0D12B>Physical DMG</color>.\nRestores 30% of Max HP upon activating this skill.\nCharacter is invulnerable while using this skill."
+            },
+            "153100007": {
+                "Title": "EX Special Attack: Rocking Footwork",
+                "Description": "After activating <color=#FFFFFF>EX Special Attack: Cool Wheelie</color> and with enough Adrenaline, press or hold <IconMap:Icon_SpecialReady_Rp> to activate:\nUses the motorcycle and hand cannon for a combined attack, dealing <color=#F0D12B>Physical DMG</color>.\nUpon activating this skill, restore 15% of Max HP.\nCharacter is invulnerable while using this skill."
+            },
+            "153100031": {
+                "Title": "Special Attack: Drive Suppression"
+            },
+            "153100032": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1531006, Prop:1001}"
+            },
+            "153100033": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1531006, Prop:1002}"
+            },
+            "153100034": {
+                "Title": "Special Attack: Run Wild"
+            },
+            "153100035": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1531007, Prop:1001}"
+            },
+            "153100036": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1531007, Prop:1002}"
+            },
+            "153100037": {
+                "Title": "EX Special Attack: Cool Wheelie"
+            },
+            "153100038": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1531008, Prop:1001}"
+            },
+            "153100039": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1531008, Prop:1002}"
+            },
+            "153100040": {
+                "Title": "EX Special Attack: High-Traction Wheels"
+            },
+            "153100041": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1531009, Prop:1001}"
+            },
+            "153100042": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1531009, Prop:1002}"
+            },
+            "153100043": {
+                "Description": "Adrenaline Cost",
+                "Param": "60"
+            },
+            "153100044": {
+                "Title": "EX Special Attack: Rocking Footwork"
+            },
+            "153100045": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1531011, Prop:1001}"
+            },
+            "153100046": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1531011, Prop:1002}"
+            },
+            "153100047": {
+                "Description": "Adrenaline Cost",
+                "Param": "60"
+            }
+        },
+        "2": {
+            "153100008": {
+                "Title": "Dodge: Close Call!",
+                "Description": "Press <IconMap:Icon_Evade> to activate:\nA quick dash dodge.\nCharacter is invulnerable while using this skill."
+            },
+            "153100009": {
+                "Title": "Dodge: Through the Galaxy",
+                "Description": "During <color=#FFFFFF>Special Attack: Drive Suppression</color>, drag the {LAYOUT_CONSOLECONTROLLER#stick}{LAYOUT_FALLBACK#joystick} or hold <IconMap:Icon_Evade> to activate:\nDrifts with the motorcycle, enabling <color=#FFFFFF>Perfect Dodges</color> for a brief duration.\nIf a <color=#FFFFFF>Perfect Dodge</color> is successfully triggered, it immediately chains into <color=#FFFFFF>Dodge Counter: Afterfire Spin</color>.\nDuring this skill, continue dragging the {LAYOUT_CONSOLECONTROLLER#stick}{LAYOUT_FALLBACK#joystick} or holding <IconMap:Icon_Evade> to continue drifting.\nDuring this skill, the duration of <color=#FFFFFF>Special Attack: Drive Suppression</color> will continue, and upon reaching the maximum duration, it automatically chains into <color=#FFFFFF>EX Special Attack: Cool Wheelie</color>.\nIf the skill ends early, it automatically chains into <color=#FFFFFF>Special Attack: Run Wild</color>.\nCharacter is briefly invulnerable and Anti-Interrupt Level increases during this skill."
+            },
+            "153100010": {
+                "Title": "Dash Attack: Starlight Retribution",
+                "Description": "Press <IconMap:Icon_Normal> during a dodge to activate:\nPerforms a quick forward slash, dealing <color=#F0D12B>Physical DMG</color>."
+            },
+            "153100011": {
+                "Title": "Dodge Counter: Duel King",
+                "Description": "Press <IconMap:Icon_Normal> during a <color=#FFFFFF>Perfect Dodge</color> to activate:\nFires a blast from his arm cannon, dealing <color=#F0D12B>Physical DMG</color>.\nIf this skill is triggered via a <color=#FFFFFF>Perfect Dodge</color>, hitting an enemy restores 10% of Max HP, and it can be chained into the 4th hit of <color=#FFFFFF>Basic Attack: Knight's Technique</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "153100012": {
+                "Title": "Dodge Counter: Afterfire Spin",
+                "Description": "During <color=#FFFFFF>Dodge: Through the Galaxy</color>, trigger a <color=#FFFFFF>Perfect Dodge</color> to activate:\nSpins with the bike to deal <color=#F0D12B>Physical DMG</color> to surrounding enemies.\nAfter using this skill, it automatically chains into <color=#FFFFFF>EX Special Attack: Cool Wheelie</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "153100048": {
+                "Title": "Dash Attack: Starlight Retribution"
+            },
+            "153100049": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1531012, Prop:1001}"
+            },
+            "153100050": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1531012, Prop:1002}"
+            },
+            "153100051": {
+                "Title": "Dodge Counter: Duel King"
+            },
+            "153100052": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1531013, Prop:1001}"
+            },
+            "153100053": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1531013, Prop:1002}"
+            },
+            "153100054": {
+                "Title": "Dodge Counter: Afterfire Spin"
+            },
+            "153100055": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1531014, Prop:1001}"
+            },
+            "153100056": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1531014, Prop:1002}"
+            }
+        },
+        "3": {
+            "153100013": {
+                "Title": "Chain Attack: Knight's Swagger",
+                "Description": "When a <color=#FFFFFF>Chain Attack</color> is triggered, select the character to activate:\nLaunches a series of attacks forward, dealing massive <color=#F0D12B>Physical DMG</color>.\nUpon activating this skill, gains 15 <color=#FFFFFF>Determination</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "153100014": {
+                "Title": "Ultimate: Starlight Knight Flying Kick",
+                "Description": "When Decibel Rating is at <color=#FFFFFF>Maximum</color>, press <IconMap:Icon_UltimateReady> to activate:\nLeaps into the air and delivers a flying kick at the target, dealing massive <color=#F0D12B>Physical DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "153100057": {
+                "Title": "Chain Attack: Knight's Swagger"
+            },
+            "153100058": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1531015, Prop:1001}"
+            },
+            "153100059": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1531015, Prop:1002}"
+            },
+            "153100060": {
+                "Title": "Ultimate: Starlight Knight Flying Kick"
+            },
+            "153100061": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1531016, Prop:1001}"
+            },
+            "153100062": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1531016, Prop:1002}"
+            }
+        },
+        "6": {
+            "153100015": {
+                "Title": "Quick Assist: Starlight - Power of Bonds",
+                "Description": "When the active character is launched, press <IconMap:Icon_Switch> to activate:\nFires a blast from his arm cannon ahead, dealing <color=#F0D12B>Physical DMG</color>. When HP is above 25%, this skill is replaced with <color=#FFFFFF>Special Attack: Drive Suppression</color>. This effect can trigger once every 5s.\nCharacter is invulnerable while using this skill."
+            },
+            "153100016": {
+                "Title": "Defensive Assist: Hero's Entrance",
+                "Description": "When the on-field character is about to be attacked, press <IconMap:Icon_Switch> to activate:\nParries the enemy's attack, dealing massive Daze.\nCharacter is invulnerable while using this skill."
+            },
+            "153100017": {
+                "Title": "Assist Follow-Up: Villain's Exit",
+                "Description": "Press <IconMap:Icon_Normal> after a <color=#FFFFFF>Defensive Assist</color> to activate:\nKicks the motorcycle at the target, dealing massive <color=#F0D12B>Physical DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "153100063": {
+                "Title": "Quick Assist: Starlight - Power of Bonds"
+            },
+            "153100064": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1531017, Prop:1001}"
+            },
+            "153100065": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1531017, Prop:1002}"
+            },
+            "153100066": {
+                "Title": "Defensive Assist: Hero's Entrance"
+            },
+            "153100067": {
+                "Description": "Light Defensive Daze Multiplier",
+                "Param": "{Skill:1531018, Prop:1002}"
+            },
+            "153100068": {
+                "Description": "Heavy Defensive Daze Multiplier",
+                "Param": "{Skill:1531019, Prop:1002}"
+            },
+            "153100069": {
+                "Description": "Chain Defensive Daze Multiplier",
+                "Param": "{Skill:1531020, Prop:1002}"
+            },
+            "153100070": {
+                "Title": "Assist Follow-Up: Villain's Exit"
+            },
+            "153100071": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1531021, Prop:1001}"
+            },
+            "153100072": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1531021, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1531001": {
+            "DamageValue": 5030,
+            "DamageGrowth": 460,
+            "DazeValue": 3990,
+            "DazeGrowth": 190
+        },
+        "1531002": {
+            "DamageValue": 6800,
+            "DamageGrowth": 620,
+            "DazeValue": 5680,
+            "DazeGrowth": 260
+        },
+        "1531003": {
+            "DamageValue": 5450,
+            "DamageGrowth": 500,
+            "DazeValue": 4800,
+            "DazeGrowth": 220
+        },
+        "1531004": {
+            "DamageValue": 20600,
+            "DamageGrowth": 1880,
+            "DazeValue": 16350,
+            "DazeGrowth": 750
+        },
+        "1531006": {
+            "DamageValue": 5200,
+            "DamageGrowth": 480,
+            "DazeValue": 11000,
+            "DazeGrowth": 500
+        },
+        "1531007": {
+            "DamageValue": 7210,
+            "DamageGrowth": 660,
+            "DazeValue": 5870,
+            "DazeGrowth": 270
+        },
+        "1531008": {
+            "DamageValue": 38970,
+            "DamageGrowth": 3550,
+            "DazeValue": 13930,
+            "DazeGrowth": 640
+        },
+        "1531009": {
+            "DamageValue": 92990,
+            "DamageGrowth": 8460,
+            "DazeValue": 79540,
+            "DazeGrowth": 3620
+        },
+        "1531010": {
+            "DamageValue": 104320,
+            "DamageGrowth": 9490,
+            "DazeValue": 34110,
+            "DazeGrowth": 1560
+        },
+        "1531011": {
+            "DamageValue": 95900,
+            "DamageGrowth": 8720,
+            "DazeValue": 82400,
+            "DazeGrowth": 3750
+        },
+        "1531012": {
+            "DamageValue": 4510,
+            "DamageGrowth": 410,
+            "DazeValue": 2390,
+            "DazeGrowth": 110
+        },
+        "1531013": {
+            "DamageValue": 11950,
+            "DamageGrowth": 1090,
+            "DazeValue": 9730,
+            "DazeGrowth": 450
+        },
+        "1531014": {
+            "DamageValue": 19870,
+            "DamageGrowth": 1810,
+            "DazeValue": 18700,
+            "DazeGrowth": 850
+        },
+        "1531015": {
+            "DamageValue": 66290,
+            "DamageGrowth": 6030,
+            "DazeValue": 26220,
+            "DazeGrowth": 1200
+        },
+        "1531016": {
+            "DamageValue": 159210,
+            "DamageGrowth": 14480,
+            "DazeValue": 44920,
+            "DazeGrowth": 2050
+        },
+        "1531017": {
+            "DamageValue": 9200,
+            "DamageGrowth": 840,
+            "DazeValue": 4870,
+            "DazeGrowth": 230
+        },
+        "1531018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1531019": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1531020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1531021": {
+            "DamageValue": 22960,
+            "DamageGrowth": 2090,
+            "DazeValue": 20370,
+            "DazeGrowth": 930
+        }
+    }
+}

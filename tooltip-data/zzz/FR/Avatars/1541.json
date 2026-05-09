@@ -1,0 +1,503 @@
+{
+    "Name": "Promeia",
+    "ElementTypes": [
+        "Ice"
+    ],
+    "Specialty": {
+        "Id": 3,
+        "Name": "Anomalie"
+    },
+    "Talents": {
+        "1": {
+            "Title": "Idéalisme innocent",
+            "Description": "Lorsque Promeia utilise <color=#FFFFFF>Ultime : Empalement glacial</color>, elle obtient un effet supplémentaire : Si <color=#FFFFFF>Sentence glaciale</color> n'est pas au maximum, elle gagne 1 cumul de <color=#FFFFFF>Sentence glaciale</color>. Cet effet peut se déclencher une fois après l'utilisation d'<color=#FFFFFF>Ultime : Empalement glacial</color>. Lorsqu'un membre de l'escouade déclenche <color=#FFFFFF>Floraison spéciale</color> sur des ennemis souffrant de <color=#FFFFFF>Présomption de culpabilité</color>, 20 % supplémentaires de la DÉF sont ignorés.",
+            "Lore": "C'est une terre chaotique, sans foi ni loi.\nMoteurs qui rugissent, poussière qui tourbillonne et l'acier qui s'entrechoque avec la chair. Conflits et violence se succèdent jour et nuit.\nUne enfant innocente tient une arme tout aussi innocente alors qu'elle rôde sur cette même terre rouge désolée.\n« Serais-tu prête à faire ta part pour amener la paix ici ? »"
+        },
+        "2": {
+            "Title": "Convictions chancelantes",
+            "Description": "L'adresse d'anomalie de Promeia augmente de 40. Le multiplicateur de DGT de <color=#FFFFFF>Floraison spéciale</color> déclenché en consommant <color=#FFFFFF>Sentence glaciale</color> augmente de 120 %.",
+            "Lore": "Elle devint un membre exceptionnel des Balayeurs : rapide, précise et discrète. Ses cibles étaient claires et innombrables : des Éthéréens, ceux qui avaient succombé irréversiblement à la corruption et ceux qui étaient condamnés à devenir des Éthéréens... Chacune de ses tueries était marquée par un bain de sang et l'écho des cris de ses victimes.\nMais... est-ce bien juste ?\n« C'est le devoir des Balayeurs ! » ; « Tu n'as qu'à te dire que... tu fais ça pour le bien de tous, compris ? » ; « Ces gens allaient mourir de toutes façons... »\n« C'est un sacrifice nécessaire. »"
+        },
+        "3": {
+            "Title": "Lune impitoyable",
+            "Description": "Niv. d'<color=#FFFFFF>attaque normale</color>, d'<color=#FFFFFF>esquive</color>, de <color=#FFFFFF>soutien</color>, d'<color=#FFFFFF>attaque spéciale</color> et d'<color=#FFFFFF>enchaînement</color> +2",
+            "Lore": "La vérité éclate souvent après un événement des plus banals.\n« Tu crois vraiment que les Balayeurs pourraient s'en mettre plein les poches juste en éliminant de vulgaires Éthéréens ?\nLes guerres de gangs, c'est le jackpot garanti. Si t'as peur de te salir les mains, le \"Loup noir\" serait ravi de prendre ta place... »\nPeu après, la nuit tomba bien plus tôt que prévu.\nLes Balayeurs, Calydon, les bandes qui avaient un nom et celles qui n'en avaient pas... dans cette période de troubles, tous disparurent dans les ténèbres insondables."
+        },
+        "4": {
+            "Title": "Accusation accablante",
+            "Description": "Lorsque Promeia déclenche <color=#FFFFFF>Floraison spéciale</color>, elle récupère 5 points de <color=#FFFFFF>Frisson corrosif</color>. Cet effet peut être déclenché une fois toutes les 0,5 s.",
+            "Lore": "La convocation arriva et attira le papillon de nuit jusqu'à la flamme de son jugement.\nLe droit de choisir, la lumière, la justice et tout ce qui faisait d'elle « Promeia ».\nElle se passa elle-même les menottes et choisit l'exil.\n« Ma décision est finale. »"
+        },
+        "5": {
+            "Title": "La mort du papillon de nuit",
+            "Description": "Niv. d'<color=#FFFFFF>attaque normale</color>, d'<color=#FFFFFF>esquive</color>, de <color=#FFFFFF>soutien</color>, d'<color=#FFFFFF>attaque spéciale</color> et d'<color=#FFFFFF>enchaînement</color> +2",
+            "Lore": "Elle se réfugia dans son travail.\nEnquêtes, interrogatoires, jugements... encore et encore.\nSes collègues l'observaient avec inquiétude.\n« Combien de temps vas-tu continuer comme ça...?\n— Jusqu'à ce que chaque péché soit expié... ou jusqu'à ce que la mort m'emporte. »"
+        },
+        "6": {
+            "Title": "L'histoire continue",
+            "Description": "Lorsque Promeia consomme <color=#FFFFFF>Sentence glaciale</color> pour déclencher <color=#FFFFFF>Floraison spéciale</color>, elle déclenche un effet de <color=#FFFFFF>Floraison spéciale</color> supplémentaire, infligeant des DGT d'anomalie de l'attribut correspondant avec un multiplicateur fixe de 200 %. Elle récupère également 5 points de <color=#FFFFFF>Frisson corrosif</color> et 100 décibels. Cet effet peut se déclencher une fois toutes les 15 s. De plus, les DGT d'anomalie d'attribut et les DGT de <color=#FFFFFF>Dysfonctionnement</color> infligés par Promeia ignorent 15 % de la RÉS à tous les attributs des ennemis.",
+            "Lore": "La fin n'arriva pas comme elle l'avait prévue, et la nuit ne fut pas aussi sombre qu'elle l'avait imaginée.\nLes collègues, les vieilles connaissances, des lumières dans la nuit, de nouveaux amis...\nLe pauvre papillon de nuit ne pouvait pas se délester de ces cadeaux pesants, et la fin qu'elle attendait depuis si longtemps semblait plus lointaine encore.\nMais peut-être... qu'un tel destin n'est pas si mal."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passif principal : Voleuse du feu",
+            "DescriptionByLevel": {
+                "1": "Si la maîtrise d'anomalie initiale de Promeia dépasse 150, chaque point excédentaire augmente son adresse d'anomalie de 1,5 et augmente les <color=#FFFFFF>DGT de Floraison spéciale</color> de toute l'escouade de 0,35 %.\nPromeia gagne un certain montant de <color=#FFFFFF>Frisson corrosif</color> lorsque ses attaques touchent des ennemis. Lorsque des membres de l'escouade infligent <color=#98EFF0>Gel</color>/<color=#FFFFFF>Dysfonctionnement</color>, lorsqu'un ennemi subit <color=#FFFFFF>Vortex</color> ou lorsque Promeia lance <color=#FFFFFF>Attaque spéciale EX : Condamnation - Tapie dans l'ombre</color>, elle gagne 5/5/5/10 points de <color=#FFFFFF>Frisson corrosif</color> supplémentaires, jusqu'à un maximum de 100 points de <color=#FFFFFF>Frisson corrosif</color>.\nLorsqu'un membre de l'escouade touche un ennemi avec <color=#FFFFFF>Floraison spéciale</color>, Promeia gagne 15 points de <color=#FFFFFF>Frisson corrosif</color> supplémentaires.\nLorsque les points de <color=#FFFFFF>Frisson corrosif</color> sont supérieurs ou égaux à 50, 50 points de <color=#FFFFFF>Frisson corrosif</color> sont consommés et convertis en 1 cumul de <color=#FFFFFF>Sentence glaciale</color>, jusqu'à un maximum de 2 cumuls de <color=#FFFFFF>Sentence glaciale</color>.\nEn entrant sur le champ de bataille, Promeia obtient 2 cumuls de <color=#FFFFFF>Sentence glaciale</color>.\nLorsque le coup final d'<color=#FFFFFF>Attaque spéciale EX : Condamnation - Jugement impitoyable</color> touche un ennemi souffrant d'une <color=#98EFF0>anomalie de glace</color>, d'une <color=#FE437E>anomalie éthérique</color>, d'une <color=#2EB6FF>anomalie électrique</color>, d'une <color=#FF5521>anomalie de feu</color>, d'une <color=#F0D12B>anomalie physique</color> ou d'une <color=#A6C5FD>anomalie de vent</color>, déclenche une <color=#FFFFFF>Floraison spéciale</color>, qui inflige <color=#2BAD00>330 %</color> des DGT d'anomalie de l'attribut correspondant. La compétence consomme 1 cumul de <color=#FFFFFF>Sentence glaciale</color> à l'activation.\nLorsque Promeia touche un ennemi en déclenchant <color=#FFFFFF>Floraison spéciale</color>, elle gagne 100 décibels supplémentaires. Cet effet peut se déclencher une fois toutes les 0,5 s. L'utilisation d'<color=#FFFFFF>Ultime : Empalement glacial</color> octroie <color=#FFFFFF>Serment de givre</color>. Avec <color=#FFFFFF>Serment de givre</color>, après avoir utilisé <color=#FFFFFF>Attaque spéciale EX : Condamnation - Jugement impitoyable</color>, <color=#FFFFFF>Enchaînement : Jugement de Damoclès</color> ou <color=#FFFFFF>Ultime : Empalement glacial</color>, appuyez ou maintenez <IconMap:Icon_Special> enfoncé pour consommer <color=#FFFFFF>Serment de givre</color> et enchaîner immédiatement avec <color=#FFFFFF>Attaque spéciale : Condamnation - Givre stratifié</color>. Vous ne pouvez posséder qu'un seul cumul de <color=#FFFFFF>Serment de givre</color>.",
+                "2": "Si la maîtrise d'anomalie initiale de Promeia dépasse 150, chaque point excédentaire augmente son adresse d'anomalie de 1,5 et augmente les <color=#FFFFFF>DGT de Floraison spéciale</color> de toute l'escouade de 0,35 %.\nPromeia gagne un certain montant de <color=#FFFFFF>Frisson corrosif</color> lorsque ses attaques touchent des ennemis. Lorsque des membres de l'escouade infligent <color=#98EFF0>Gel</color>/<color=#FFFFFF>Dysfonctionnement</color>, lorsqu'un ennemi subit <color=#FFFFFF>Vortex</color> ou lorsque Promeia lance <color=#FFFFFF>Attaque spéciale EX : Condamnation - Tapie dans l'ombre</color>, elle gagne 5/5/5/10 points de <color=#FFFFFF>Frisson corrosif</color> supplémentaires, jusqu'à un maximum de 100 points de <color=#FFFFFF>Frisson corrosif</color>.\nLorsqu'un membre de l'escouade touche un ennemi avec <color=#FFFFFF>Floraison spéciale</color>, Promeia gagne 15 points de <color=#FFFFFF>Frisson corrosif</color> supplémentaires.\nLorsque les points de <color=#FFFFFF>Frisson corrosif</color> sont supérieurs ou égaux à 50, 50 points de <color=#FFFFFF>Frisson corrosif</color> sont consommés et convertis en 1 cumul de <color=#FFFFFF>Sentence glaciale</color>, jusqu'à un maximum de 2 cumuls de <color=#FFFFFF>Sentence glaciale</color>.\nEn entrant sur le champ de bataille, Promeia obtient 2 cumuls de <color=#FFFFFF>Sentence glaciale</color>.\nLorsque le coup final d'<color=#FFFFFF>Attaque spéciale EX : Condamnation - Jugement impitoyable</color> touche un ennemi souffrant d'une <color=#98EFF0>anomalie de glace</color>, d'une <color=#FE437E>anomalie éthérique</color>, d'une <color=#2EB6FF>anomalie électrique</color>, d'une <color=#FF5521>anomalie de feu</color>, d'une <color=#F0D12B>anomalie physique</color> ou d'une <color=#A6C5FD>anomalie de vent</color>, déclenche une <color=#FFFFFF>Floraison spéciale</color>, qui inflige <color=#2BAD00>385 %</color> des DGT d'anomalie de l'attribut correspondant. La compétence consomme 1 cumul de <color=#FFFFFF>Sentence glaciale</color> à l'activation.\nLorsque Promeia touche un ennemi en déclenchant <color=#FFFFFF>Floraison spéciale</color>, elle gagne 100 décibels supplémentaires. Cet effet peut se déclencher une fois toutes les 0,5 s. L'utilisation d'<color=#FFFFFF>Ultime : Empalement glacial</color> octroie <color=#FFFFFF>Serment de givre</color>. Avec <color=#FFFFFF>Serment de givre</color>, après avoir utilisé <color=#FFFFFF>Attaque spéciale EX : Condamnation - Jugement impitoyable</color>, <color=#FFFFFF>Enchaînement : Jugement de Damoclès</color> ou <color=#FFFFFF>Ultime : Empalement glacial</color>, appuyez ou maintenez <IconMap:Icon_Special> enfoncé pour consommer <color=#FFFFFF>Serment de givre</color> et enchaîner immédiatement avec <color=#FFFFFF>Attaque spéciale : Condamnation - Givre stratifié</color>. Vous ne pouvez posséder qu'un seul cumul de <color=#FFFFFF>Serment de givre</color>.",
+                "3": "Si la maîtrise d'anomalie initiale de Promeia dépasse 150, chaque point excédentaire augmente son adresse d'anomalie de 1,5 et augmente les <color=#FFFFFF>DGT de Floraison spéciale</color> de toute l'escouade de 0,35 %.\nPromeia gagne un certain montant de <color=#FFFFFF>Frisson corrosif</color> lorsque ses attaques touchent des ennemis. Lorsque des membres de l'escouade infligent <color=#98EFF0>Gel</color>/<color=#FFFFFF>Dysfonctionnement</color>, lorsqu'un ennemi subit <color=#FFFFFF>Vortex</color> ou lorsque Promeia lance <color=#FFFFFF>Attaque spéciale EX : Condamnation - Tapie dans l'ombre</color>, elle gagne 5/5/5/10 points de <color=#FFFFFF>Frisson corrosif</color> supplémentaires, jusqu'à un maximum de 100 points de <color=#FFFFFF>Frisson corrosif</color>.\nLorsqu'un membre de l'escouade touche un ennemi avec <color=#FFFFFF>Floraison spéciale</color>, Promeia gagne 15 points de <color=#FFFFFF>Frisson corrosif</color> supplémentaires.\nLorsque les points de <color=#FFFFFF>Frisson corrosif</color> sont supérieurs ou égaux à 50, 50 points de <color=#FFFFFF>Frisson corrosif</color> sont consommés et convertis en 1 cumul de <color=#FFFFFF>Sentence glaciale</color>, jusqu'à un maximum de 2 cumuls de <color=#FFFFFF>Sentence glaciale</color>.\nEn entrant sur le champ de bataille, Promeia obtient 2 cumuls de <color=#FFFFFF>Sentence glaciale</color>.\nLorsque le coup final d'<color=#FFFFFF>Attaque spéciale EX : Condamnation - Jugement impitoyable</color> touche un ennemi souffrant d'une <color=#98EFF0>anomalie de glace</color>, d'une <color=#FE437E>anomalie éthérique</color>, d'une <color=#2EB6FF>anomalie électrique</color>, d'une <color=#FF5521>anomalie de feu</color>, d'une <color=#F0D12B>anomalie physique</color> ou d'une <color=#A6C5FD>anomalie de vent</color>, déclenche une <color=#FFFFFF>Floraison spéciale</color>, qui inflige <color=#2BAD00>435 %</color> des DGT d'anomalie de l'attribut correspondant. La compétence consomme 1 cumul de <color=#FFFFFF>Sentence glaciale</color> à l'activation.\nLorsque Promeia touche un ennemi en déclenchant <color=#FFFFFF>Floraison spéciale</color>, elle gagne 100 décibels supplémentaires. Cet effet peut se déclencher une fois toutes les 0,5 s. L'utilisation d'<color=#FFFFFF>Ultime : Empalement glacial</color> octroie <color=#FFFFFF>Serment de givre</color>. Avec <color=#FFFFFF>Serment de givre</color>, après avoir utilisé <color=#FFFFFF>Attaque spéciale EX : Condamnation - Jugement impitoyable</color>, <color=#FFFFFF>Enchaînement : Jugement de Damoclès</color> ou <color=#FFFFFF>Ultime : Empalement glacial</color>, appuyez ou maintenez <IconMap:Icon_Special> enfoncé pour consommer <color=#FFFFFF>Serment de givre</color> et enchaîner immédiatement avec <color=#FFFFFF>Attaque spéciale : Condamnation - Givre stratifié</color>. Vous ne pouvez posséder qu'un seul cumul de <color=#FFFFFF>Serment de givre</color>.",
+                "4": "Si la maîtrise d'anomalie initiale de Promeia dépasse 150, chaque point excédentaire augmente son adresse d'anomalie de 1,5 et augmente les <color=#FFFFFF>DGT de Floraison spéciale</color> de toute l'escouade de 0,35 %.\nPromeia gagne un certain montant de <color=#FFFFFF>Frisson corrosif</color> lorsque ses attaques touchent des ennemis. Lorsque des membres de l'escouade infligent <color=#98EFF0>Gel</color>/<color=#FFFFFF>Dysfonctionnement</color>, lorsqu'un ennemi subit <color=#FFFFFF>Vortex</color> ou lorsque Promeia lance <color=#FFFFFF>Attaque spéciale EX : Condamnation - Tapie dans l'ombre</color>, elle gagne 5/5/5/10 points de <color=#FFFFFF>Frisson corrosif</color> supplémentaires, jusqu'à un maximum de 100 points de <color=#FFFFFF>Frisson corrosif</color>.\nLorsqu'un membre de l'escouade touche un ennemi avec <color=#FFFFFF>Floraison spéciale</color>, Promeia gagne 15 points de <color=#FFFFFF>Frisson corrosif</color> supplémentaires.\nLorsque les points de <color=#FFFFFF>Frisson corrosif</color> sont supérieurs ou égaux à 50, 50 points de <color=#FFFFFF>Frisson corrosif</color> sont consommés et convertis en 1 cumul de <color=#FFFFFF>Sentence glaciale</color>, jusqu'à un maximum de 2 cumuls de <color=#FFFFFF>Sentence glaciale</color>.\nEn entrant sur le champ de bataille, Promeia obtient 2 cumuls de <color=#FFFFFF>Sentence glaciale</color>.\nLorsque le coup final d'<color=#FFFFFF>Attaque spéciale EX : Condamnation - Jugement impitoyable</color> touche un ennemi souffrant d'une <color=#98EFF0>anomalie de glace</color>, d'une <color=#FE437E>anomalie éthérique</color>, d'une <color=#2EB6FF>anomalie électrique</color>, d'une <color=#FF5521>anomalie de feu</color>, d'une <color=#F0D12B>anomalie physique</color> ou d'une <color=#A6C5FD>anomalie de vent</color>, déclenche une <color=#FFFFFF>Floraison spéciale</color>, qui inflige <color=#2BAD00>485 %</color> des DGT d'anomalie de l'attribut correspondant. La compétence consomme 1 cumul de <color=#FFFFFF>Sentence glaciale</color> à l'activation.\nLorsque Promeia touche un ennemi en déclenchant <color=#FFFFFF>Floraison spéciale</color>, elle gagne 100 décibels supplémentaires. Cet effet peut se déclencher une fois toutes les 0,5 s. L'utilisation d'<color=#FFFFFF>Ultime : Empalement glacial</color> octroie <color=#FFFFFF>Serment de givre</color>. Avec <color=#FFFFFF>Serment de givre</color>, après avoir utilisé <color=#FFFFFF>Attaque spéciale EX : Condamnation - Jugement impitoyable</color>, <color=#FFFFFF>Enchaînement : Jugement de Damoclès</color> ou <color=#FFFFFF>Ultime : Empalement glacial</color>, appuyez ou maintenez <IconMap:Icon_Special> enfoncé pour consommer <color=#FFFFFF>Serment de givre</color> et enchaîner immédiatement avec <color=#FFFFFF>Attaque spéciale : Condamnation - Givre stratifié</color>. Vous ne pouvez posséder qu'un seul cumul de <color=#FFFFFF>Serment de givre</color>.",
+                "5": "Si la maîtrise d'anomalie initiale de Promeia dépasse 150, chaque point excédentaire augmente son adresse d'anomalie de 1,5 et augmente les <color=#FFFFFF>DGT de Floraison spéciale</color> de toute l'escouade de 0,35 %.\nPromeia gagne un certain montant de <color=#FFFFFF>Frisson corrosif</color> lorsque ses attaques touchent des ennemis. Lorsque des membres de l'escouade infligent <color=#98EFF0>Gel</color>/<color=#FFFFFF>Dysfonctionnement</color>, lorsqu'un ennemi subit <color=#FFFFFF>Vortex</color> ou lorsque Promeia lance <color=#FFFFFF>Attaque spéciale EX : Condamnation - Tapie dans l'ombre</color>, elle gagne 5/5/5/10 points de <color=#FFFFFF>Frisson corrosif</color> supplémentaires, jusqu'à un maximum de 100 points de <color=#FFFFFF>Frisson corrosif</color>.\nLorsqu'un membre de l'escouade touche un ennemi avec <color=#FFFFFF>Floraison spéciale</color>, Promeia gagne 15 points de <color=#FFFFFF>Frisson corrosif</color> supplémentaires.\nLorsque les points de <color=#FFFFFF>Frisson corrosif</color> sont supérieurs ou égaux à 50, 50 points de <color=#FFFFFF>Frisson corrosif</color> sont consommés et convertis en 1 cumul de <color=#FFFFFF>Sentence glaciale</color>, jusqu'à un maximum de 2 cumuls de <color=#FFFFFF>Sentence glaciale</color>.\nEn entrant sur le champ de bataille, Promeia obtient 2 cumuls de <color=#FFFFFF>Sentence glaciale</color>.\nLorsque le coup final d'<color=#FFFFFF>Attaque spéciale EX : Condamnation - Jugement impitoyable</color> touche un ennemi souffrant d'une <color=#98EFF0>anomalie de glace</color>, d'une <color=#FE437E>anomalie éthérique</color>, d'une <color=#2EB6FF>anomalie électrique</color>, d'une <color=#FF5521>anomalie de feu</color>, d'une <color=#F0D12B>anomalie physique</color> ou d'une <color=#A6C5FD>anomalie de vent</color>, déclenche une <color=#FFFFFF>Floraison spéciale</color>, qui inflige <color=#2BAD00>535 %</color> des DGT d'anomalie de l'attribut correspondant. La compétence consomme 1 cumul de <color=#FFFFFF>Sentence glaciale</color> à l'activation.\nLorsque Promeia touche un ennemi en déclenchant <color=#FFFFFF>Floraison spéciale</color>, elle gagne 100 décibels supplémentaires. Cet effet peut se déclencher une fois toutes les 0,5 s. L'utilisation d'<color=#FFFFFF>Ultime : Empalement glacial</color> octroie <color=#FFFFFF>Serment de givre</color>. Avec <color=#FFFFFF>Serment de givre</color>, après avoir utilisé <color=#FFFFFF>Attaque spéciale EX : Condamnation - Jugement impitoyable</color>, <color=#FFFFFF>Enchaînement : Jugement de Damoclès</color> ou <color=#FFFFFF>Ultime : Empalement glacial</color>, appuyez ou maintenez <IconMap:Icon_Special> enfoncé pour consommer <color=#FFFFFF>Serment de givre</color> et enchaîner immédiatement avec <color=#FFFFFF>Attaque spéciale : Condamnation - Givre stratifié</color>. Vous ne pouvez posséder qu'un seul cumul de <color=#FFFFFF>Serment de givre</color>.",
+                "6": "Si la maîtrise d'anomalie initiale de Promeia dépasse 150, chaque point excédentaire augmente son adresse d'anomalie de 1,5 et augmente les <color=#FFFFFF>DGT de Floraison spéciale</color> de toute l'escouade de 0,35 %.\nPromeia gagne un certain montant de <color=#FFFFFF>Frisson corrosif</color> lorsque ses attaques touchent des ennemis. Lorsque des membres de l'escouade infligent <color=#98EFF0>Gel</color>/<color=#FFFFFF>Dysfonctionnement</color>, lorsqu'un ennemi subit <color=#FFFFFF>Vortex</color> ou lorsque Promeia lance <color=#FFFFFF>Attaque spéciale EX : Condamnation - Tapie dans l'ombre</color>, elle gagne 5/5/5/10 points de <color=#FFFFFF>Frisson corrosif</color> supplémentaires, jusqu'à un maximum de 100 points de <color=#FFFFFF>Frisson corrosif</color>.\nLorsqu'un membre de l'escouade touche un ennemi avec <color=#FFFFFF>Floraison spéciale</color>, Promeia gagne 15 points de <color=#FFFFFF>Frisson corrosif</color> supplémentaires.\nLorsque les points de <color=#FFFFFF>Frisson corrosif</color> sont supérieurs ou égaux à 50, 50 points de <color=#FFFFFF>Frisson corrosif</color> sont consommés et convertis en 1 cumul de <color=#FFFFFF>Sentence glaciale</color>, jusqu'à un maximum de 2 cumuls de <color=#FFFFFF>Sentence glaciale</color>.\nEn entrant sur le champ de bataille, Promeia obtient 2 cumuls de <color=#FFFFFF>Sentence glaciale</color>.\nLorsque le coup final d'<color=#FFFFFF>Attaque spéciale EX : Condamnation - Jugement impitoyable</color> touche un ennemi souffrant d'une <color=#98EFF0>anomalie de glace</color>, d'une <color=#FE437E>anomalie éthérique</color>, d'une <color=#2EB6FF>anomalie électrique</color>, d'une <color=#FF5521>anomalie de feu</color>, d'une <color=#F0D12B>anomalie physique</color> ou d'une <color=#A6C5FD>anomalie de vent</color>, déclenche une <color=#FFFFFF>Floraison spéciale</color>, qui inflige <color=#2BAD00>585 %</color> des DGT d'anomalie de l'attribut correspondant. La compétence consomme 1 cumul de <color=#FFFFFF>Sentence glaciale</color> à l'activation.\nLorsque Promeia touche un ennemi en déclenchant <color=#FFFFFF>Floraison spéciale</color>, elle gagne 100 décibels supplémentaires. Cet effet peut se déclencher une fois toutes les 0,5 s. L'utilisation d'<color=#FFFFFF>Ultime : Empalement glacial</color> octroie <color=#FFFFFF>Serment de givre</color>. Avec <color=#FFFFFF>Serment de givre</color>, après avoir utilisé <color=#FFFFFF>Attaque spéciale EX : Condamnation - Jugement impitoyable</color>, <color=#FFFFFF>Enchaînement : Jugement de Damoclès</color> ou <color=#FFFFFF>Ultime : Empalement glacial</color>, appuyez ou maintenez <IconMap:Icon_Special> enfoncé pour consommer <color=#FFFFFF>Serment de givre</color> et enchaîner immédiatement avec <color=#FFFFFF>Attaque spéciale : Condamnation - Givre stratifié</color>. Vous ne pouvez posséder qu'un seul cumul de <color=#FFFFFF>Serment de givre</color>.",
+                "7": "Si la maîtrise d'anomalie initiale de Promeia dépasse 150, chaque point excédentaire augmente son adresse d'anomalie de 1,5 et augmente les <color=#FFFFFF>DGT de Floraison spéciale</color> de toute l'escouade de 0,35 %.\nPromeia gagne un certain montant de <color=#FFFFFF>Frisson corrosif</color> lorsque ses attaques touchent des ennemis. Lorsque des membres de l'escouade infligent <color=#98EFF0>Gel</color>/<color=#FFFFFF>Dysfonctionnement</color>, lorsqu'un ennemi subit <color=#FFFFFF>Vortex</color> ou lorsque Promeia lance <color=#FFFFFF>Attaque spéciale EX : Condamnation - Tapie dans l'ombre</color>, elle gagne 5/5/5/10 points de <color=#FFFFFF>Frisson corrosif</color> supplémentaires, jusqu'à un maximum de 100 points de <color=#FFFFFF>Frisson corrosif</color>.\nLorsqu'un membre de l'escouade touche un ennemi avec <color=#FFFFFF>Floraison spéciale</color>, Promeia gagne 15 points de <color=#FFFFFF>Frisson corrosif</color> supplémentaires.\nLorsque les points de <color=#FFFFFF>Frisson corrosif</color> sont supérieurs ou égaux à 50, 50 points de <color=#FFFFFF>Frisson corrosif</color> sont consommés et convertis en 1 cumul de <color=#FFFFFF>Sentence glaciale</color>, jusqu'à un maximum de 2 cumuls de <color=#FFFFFF>Sentence glaciale</color>.\nEn entrant sur le champ de bataille, Promeia obtient 2 cumuls de <color=#FFFFFF>Sentence glaciale</color>.\nLorsque le coup final d'<color=#FFFFFF>Attaque spéciale EX : Condamnation - Jugement impitoyable</color> touche un ennemi souffrant d'une <color=#98EFF0>anomalie de glace</color>, d'une <color=#FE437E>anomalie éthérique</color>, d'une <color=#2EB6FF>anomalie électrique</color>, d'une <color=#FF5521>anomalie de feu</color>, d'une <color=#F0D12B>anomalie physique</color> ou d'une <color=#A6C5FD>anomalie de vent</color>, déclenche une <color=#FFFFFF>Floraison spéciale</color>, qui inflige <color=#2BAD00>635 %</color> des DGT d'anomalie de l'attribut correspondant. La compétence consomme 1 cumul de <color=#FFFFFF>Sentence glaciale</color> à l'activation.\nLorsque Promeia touche un ennemi en déclenchant <color=#FFFFFF>Floraison spéciale</color>, elle gagne 100 décibels supplémentaires. Cet effet peut se déclencher une fois toutes les 0,5 s. L'utilisation d'<color=#FFFFFF>Ultime : Empalement glacial</color> octroie <color=#FFFFFF>Serment de givre</color>. Avec <color=#FFFFFF>Serment de givre</color>, après avoir utilisé <color=#FFFFFF>Attaque spéciale EX : Condamnation - Jugement impitoyable</color>, <color=#FFFFFF>Enchaînement : Jugement de Damoclès</color> ou <color=#FFFFFF>Ultime : Empalement glacial</color>, appuyez ou maintenez <IconMap:Icon_Special> enfoncé pour consommer <color=#FFFFFF>Serment de givre</color> et enchaîner immédiatement avec <color=#FFFFFF>Attaque spéciale : Condamnation - Givre stratifié</color>. Vous ne pouvez posséder qu'un seul cumul de <color=#FFFFFF>Serment de givre</color>."
+            }
+        },
+        "MathSkill": {
+            "Title": "Capacité supplémentaire : Glace en travers de la gorge",
+            "Description": "Lorsqu'il y a un autre personnage <color=#FFFFFF>Anomalie</color> ou <color=#FFFFFF>Soutien</color> dans votre escouade :\nLorsque Promeia utilise une <color=#FFFFFF>attaque spéciale EX</color>, son <color=#98EFF0>taux d'accumulation d'anomalie de glace</color> augmente de 30 % pendant 30 s. Les déclenchements répétés réinitialisent la durée.\nLorsqu'un membre de l'escouade inflige l'effet <color=#98EFF0>Gelure</color> à un ennemi, sa durée est prolongée de 3 s.\nLorsque l'<color=#FFFFFF>attaque spéciale EX</color> de Promeia touche un ennemi, elle inflige <color=#FFFFFF>Présomption de culpabilité</color>. Lorsqu'un membre de l'escouade déclenche <color=#FFFFFF>Floraison spéciale</color> sur une cible avec <color=#FFFFFF>Présomption de culpabilité</color>, <color=#FFFFFF>Floraison spéciale</color> ignore 40 % de la DÉF de la cible. <color=#FFFFFF>Présomption de culpabilité</color> dure 30 s, et les déclenchements répétés réinitialisent la durée."
+        },
+        "AwakenAbility": {},
+        "BaseProps": [
+            {
+                "31401": 0,
+                "12101": 0
+            },
+            {
+                "31401": 12,
+                "12101": 0
+            },
+            {
+                "31401": 12,
+                "12101": 25
+            },
+            {
+                "31401": 24,
+                "12101": 25
+            },
+            {
+                "31401": 24,
+                "12101": 50
+            },
+            {
+                "31401": 36,
+                "12101": 50
+            },
+            {
+                "31401": 36,
+                "12101": 75
+            }
+        ]
+    },
+    "SkillDescriptions": {
+        "0": {
+            "154100001": {
+                "Title": "Attaque normale : Lame tortueuse",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pour activer :\nAssène jusqu'à 5 attaques sur les ennemis en face, infligeant des <color=#98EFF0>DGT de glace</color>.\nAprès l'atterrissage du 5e coup qui est une attaque descendante, avec suffisamment de cumuls de <color=#FFFFFF>Sentence glaciale</color>, maintenez <IconMap:Icon_Special> ou <IconMap:Icon_Normal> enfoncés pour enchaîner avec <color=#FFFFFF>Attaque spéciale EX : Condamnation - Jugement impitoyable</color>.\nAprès avoir lancé la cape lors du 4e coup, Promeia entre dans l'état <color=#FFFFFF>Entraves d'amnistie</color>."
+            },
+            "154100002": {
+                "Title": "Attaque normale : Spirale de lames",
+                "Description": "Maintenez <IconMap:Icon_Normal> enfoncé pour activer :\nPromeia bondit dans les airs et attaque. Elle lance sa cape à proximité de l'ennemi et entre dans l'état <color=#FFFFFF>Entraves d'amnistie</color>, infligeant des <color=#98EFF0>DGT de glace</color>.\nPromeia n'accumule pas de <color=#FFFFFF>Frisson corrosif</color> en touchant les ennemis."
+            },
+            "154100003": {
+                "Title": "Entraves d'amnistie",
+                "Description": "Lors de l'utilisation de certaines compétences, Promeia lance sa cape pour entailler les ennemis en continu, infligeant des <color=#98EFF0>DGT de glace</color>. Promeia n'accumule pas de <color=#FFFFFF>Frisson corrosif</color> en touchant des ennemis.\nLorsque la cape est détachée, Promeia peut marcher lentement.\nAppuyez sur <IconMap:Icon_Normal> ou <IconMap:Icon_Special> lorsque la cape est détachée pour enchaîner directement avec le 5e coup d'<color=#FFFFFF>Attaque normale : Lame tortueuse</color>.\nSi Promeia est attaquée lorsque la cape est détachée, une <color=#FFFFFF>esquive parfaite</color> se déclenche automatiquement. Cette esquive peut se déclencher une fois toutes les 20 s."
+            },
+            "154100019": {
+                "Title": "Attaque normale : Lame tortueuse"
+            },
+            "154100020": {
+                "Description": "Multiplicateur de DGT du 1er coup",
+                "Param": "{Skill:1541001, Prop:1001}"
+            },
+            "154100021": {
+                "Description": "Multiplicateur de DGT du 2e coup",
+                "Param": "{Skill:1541002, Prop:1001}"
+            },
+            "154100022": {
+                "Description": "Multiplicateur de DGT du 3e coup",
+                "Param": "{Skill:1541003, Prop:1001}"
+            },
+            "154100023": {
+                "Description": "Multiplicateur de DGT du 4e coup",
+                "Param": "{Skill:1541004, Prop:1001}"
+            },
+            "154100024": {
+                "Description": "Multiplicateur de DGT du 5e coup",
+                "Param": "{Skill:1541005, Prop:1001}"
+            },
+            "154100025": {
+                "Description": "Multiplicateur de confusion du 1er coup",
+                "Param": "{Skill:1541001, Prop:1002}"
+            },
+            "154100026": {
+                "Description": "Multiplicateur de confusion du 2e coup",
+                "Param": "{Skill:1541002, Prop:1002}"
+            },
+            "154100027": {
+                "Description": "Multiplicateur de confusion du 3e coup",
+                "Param": "{Skill:1541003, Prop:1002}"
+            },
+            "154100028": {
+                "Description": "Multiplicateur de confusion du 4e coup",
+                "Param": "{Skill:1541004, Prop:1002}"
+            },
+            "154100029": {
+                "Description": "Multiplicateur de confusion du 5e coup",
+                "Param": "{Skill:1541005, Prop:1002}"
+            },
+            "154100030": {
+                "Description": "Multiplicateur des DGT/s des entailles de la cape",
+                "Param": "{Skill:1541008, Prop:1001}"
+            },
+            "154100031": {
+                "Title": "Attaque normale : Spirale de lames"
+            },
+            "154100032": {
+                "Description": "Multiplicateur de DGT du 1er coup",
+                "Param": "{Skill:1541006, Prop:1001}"
+            },
+            "154100033": {
+                "Description": "Multiplicateur de confusion du 1er coup",
+                "Param": "{Skill:1541006, Prop:1002}"
+            }
+        },
+        "1": {
+            "154100004": {
+                "Title": "Attaque spéciale : Condamnation - Glaciation subite",
+                "Description": "Appuyez sur <IconMap:Icon_Special> pour activer :\nLance une attaque de lame volante, infligeant des <color=#98EFF0>DGT de glace</color>."
+            },
+            "154100005": {
+                "Title": "Attaque spéciale EX : Condamnation - Givre asphyxiant",
+                "Description": "Avec suffisamment d'énergie, appuyez sur <IconMap:Icon_SpecialReady> pour activer :\nLance une attaque de lame volante, puis lance la cape à proximité de l'ennemi et entre dans l'état <color=#FFFFFF>Entraves d'amnistie</color>, infligeant des <color=#98EFF0>DGT de glace</color>.\nSi Promeia est attaquée peu après l'activation de cette compétence, elle enchaîne directement avec <color=#FFFFFF>Attaque spéciale EX : Condamnation - Tapie dans l'ombre</color>.\nÀ l'activation, Promeia obtient l'effet <color=#FFFFFF>Loi d'airain</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "154100006": {
+                "Title": "Attaque spéciale EX : Condamnation - Tapie dans l'ombre",
+                "Description": "S'active automatiquement lorsque Promeia est attaquée peu de temps après l'activation d'<color=#FFFFFF>Attaque spéciale EX : Condamnation - Givre asphyxiant</color> :\nEntre dans un bref état d'<color=#FFFFFF>Œil de lynx</color> et passe rapidement derrière l'ennemi.\nAprès l'activation d'une <color=#FFFFFF>esquive parfaite</color> et avec suffisamment d'énergie, appuyez sur <IconMap:Icon_SpecialReady> pour consommer 40 pts d'énergie et activer <color=#FFFFFF>Attaque spéciale EX : Condamnation - Tapie dans l'ombre</color> et obtenir l'effet <color=#FFFFFF>Loi d'airain</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "154100007": {
+                "Title": "Attaque spéciale : Condamnation - Chute de givre",
+                "Description": "Avec l'effet <color=#FFFFFF>Loi d'airain</color>, appuyez sur <IconMap:Icon_Normal> ou <IconMap:Icon_Special> lorsque vous êtes dans l'état <color=#FFFFFF>Entraves d'amnistie</color> pour activer :\nBondit vers l'ennemi et récupère la cape tout en assénant une attaque descendante qui inflige des <color=#98EFF0>DGT de glace</color>.\nAprès l'atterrissage, si des cumuls de <color=#FFFFFF>Sentence glaciale</color> sont disponibles, continuez à maintenir <IconMap:Icon_Normal> ou <IconMap:Icon_Special> enfoncé pour enchaîner avec <color=#FFFFFF>Attaque spéciale EX : Condamnation - Jugement impitoyable</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "154100008": {
+                "Title": "Attaque spéciale : Condamnation - Givre stratifié",
+                "Description": "Après avoir déclenché <color=#FFFFFF>Attaque spéciale EX : Condamnation - Tapie dans l'ombre</color>, appuyez sur <IconMap:Icon_Normal> ou <IconMap:Icon_Special> pour activer :\nLance une série d'attaques rapide, puis bondit vers l'ennemi et récupère la cape tout en effectuant une puissante attaque descendante qui inflige des <color=#98EFF0>DGT de glace</color>.\nAprès l'atterrissage, si des cumuls de <color=#FFFFFF>Sentence glaciale</color> sont disponibles, continuez à maintenir <IconMap:Icon_Normal> ou <IconMap:Icon_Special> enfoncé pour enchaîner avec <color=#FFFFFF>Attaque spéciale EX : Condamnation - Jugement impitoyable</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "154100009": {
+                "Title": "Attaque spéciale EX : Condamnation - Jugement impitoyable",
+                "Description": "Avec suffisamment de <color=#FFFFFF>Sentence glaciale</color>, après avoir effectué le dernier coup d'<color=#FFFFFF>Attaque normale : Lame tortueuse</color>, <color=#FFFFFF>Attaque spéciale : Condamnation - Chute de givre</color> ou d'<color=#FFFFFF>Attaque spéciale : Condamnation - Givre stratifié</color>, continuez à maintenir <IconMap:Icon_Normal> ou <IconMap:Icon_Special> enfoncé après l'atterrissage pour activer :\nBondit rapidement en arrière tout en déclenchant un coup final plus puissant qui inflige des <color=#98EFF0>DGT de glace</color>.\nPromeia n'accumule pas de <color=#FFFFFF>Frisson corrosif</color> en touchant les ennemis.\nAprès l'utilisation de cette compétence, maintenez <IconMap:Icon_Normal> ou <IconMap:Icon_Special> enfoncés ou appuyez sur <IconMap:Icon_Normal> pour enchaîner immédiatement avec le 5e coup d'<color=#FFFFFF>Attaque normale : Lame tortueuse</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "154100034": {
+                "Title": "Attaque spéciale : Condamnation - Glaciation subite"
+            },
+            "154100035": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1541007, Prop:1001}"
+            },
+            "154100036": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1541007, Prop:1002}"
+            },
+            "154100037": {
+                "Title": "Attaque spéciale EX : Condamnation - Givre asphyxiant"
+            },
+            "154100038": {
+                "Description": "Multiplicateur des DGT totaux du lancer de lames",
+                "Param": "{Skill:1541009, Prop:1001}"
+            },
+            "154100039": {
+                "Description": "Coût en énergie",
+                "Param": "40 pts"
+            },
+            "154100040": {
+                "Title": "Attaque spéciale : Condamnation - Chute de givre"
+            },
+            "154100041": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1541010, Prop:1001}"
+            },
+            "154100042": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1541010, Prop:1002}"
+            },
+            "154100043": {
+                "Title": "Attaque spéciale : Condamnation - Givre stratifié"
+            },
+            "154100044": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1541011, Prop:1001}"
+            },
+            "154100045": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1541011, Prop:1002}"
+            },
+            "154100046": {
+                "Description": "Multiplicateur des DGT totaux des entailles de lame",
+                "Param": "{Skill:1541012, Prop:1001}"
+            },
+            "154100047": {
+                "Title": "Attaque spéciale EX : Condamnation - Jugement impitoyable"
+            },
+            "154100048": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1541014, Prop:1001}"
+            },
+            "154100049": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1541014, Prop:1002}"
+            }
+        },
+        "2": {
+            "154100010": {
+                "Title": "Esquive : Pas étouffés",
+                "Description": "Appuyez sur <IconMap:Icon_Evade> pour activer :\nUne esquive rapide.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "154100011": {
+                "Title": "Attaque de bond : Fauchage funeste",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pendant une esquive pour activer :\nAssène une attaque frontale rapide, infligeant des <color=#98EFF0>DGT de glace</color>."
+            },
+            "154100012": {
+                "Title": "Contre d'esquive : Vol de chauve-souris",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pendant une <color=#FFFFFF>esquive parfaite</color> pour activer :\nAssène des attaques consécutives à la cible, infligeant des <color=#98EFF0>DGT de glace</color>.\nAprès avoir utilisé cette compétence, elle peut être immédiatement suivie du 5e coup d'<color=#FFFFFF>Attaque normale : Lame tortueuse</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "154100050": {
+                "Title": "Attaque de bond : Fauchage funeste"
+            },
+            "154100051": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1541015, Prop:1001}"
+            },
+            "154100052": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1541015, Prop:1002}"
+            },
+            "154100053": {
+                "Title": "Contre d'esquive : Vol de chauve-souris"
+            },
+            "154100054": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1541016, Prop:1001}"
+            },
+            "154100055": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1541016, Prop:1002}"
+            }
+        },
+        "3": {
+            "154100013": {
+                "Title": "Enchaînement : Jugement de Damoclès",
+                "Description": "Lors du déclenchement d'un <color=#FFFFFF>enchaînement</color>, sélectionnez le personnage pour activer :\nLance des lames volantes et se suspend la tête en bas au-dessus de l'ennemi pour déchaîner une rafale d'attaques se terminant par un coup final, infligeant d'importants <color=#98EFF0>DGT de glace</color>.\nLorsque l'attaque lourde touche un ennemi souffrant d'une <color=#98EFF0>anomalie de glace</color>, d'une <color=#FE437E>anomalie éthérique</color>, d'une <color=#2EB6FF>anomalie électrique</color>, d'une <color=#FF5521>anomalie de feu</color>, d'une <color=#F0D12B>anomalie physique</color> ou d'une <color=#A6C5FD>anomalie de vent</color>, une <color=#FFFFFF>Floraison spéciale</color> se déclenche, infligeant 100 % des DGT d'anomalie de l'attribut correspondant.\nAprès avoir utilisé cette compétence, elle peut être immédiatement suivie du 5e coup d'<color=#FFFFFF>Attaque normale : Lame tortueuse</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "154100014": {
+                "Title": "Ultime : Empalement glacial",
+                "Description": "Lorsque le niveau de décibels est au <color=#FFFFFF>Maximum</color>, appuyez sur <IconMap:Icon_UltimateReady> pour activer :\nLance une série d'attaques frontales, infligeant d'importants <color=#98EFF0>DGT de glace</color>.\nLorsque l'attaque lourde touche un ennemi souffrant d'une <color=#98EFF0>anomalie de glace</color>, d'une <color=#FE437E>anomalie éthérique</color>, d'une <color=#2EB6FF>anomalie électrique</color>, d'une <color=#FF5521>anomalie de feu</color>, d'une <color=#F0D12B>anomalie physique</color> ou d'une <color=#A6C5FD>anomalie de vent</color>, elle déclenche une <color=#FFFFFF>Floraison spéciale</color> qui inflige 250 % des DGT d'anomalie de l'attribut correspondant.\nAprès avoir utilisé cette compétence, elle peut être immédiatement suivie du 5e coup d'<color=#FFFFFF>Attaque normale : Lame tortueuse</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "154100056": {
+                "Title": "Enchaînement : Jugement de Damoclès"
+            },
+            "154100057": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1541017, Prop:1001}"
+            },
+            "154100058": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1541017, Prop:1002}"
+            },
+            "154100059": {
+                "Title": "Ultime : Empalement glacial"
+            },
+            "154100060": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1541018, Prop:1001}"
+            },
+            "154100061": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1541018, Prop:1002}"
+            }
+        },
+        "6": {
+            "154100016": {
+                "Title": "Soutien rapide : Fracture embusquée",
+                "Description": "Lorsque le personnage contrôlé est projeté, appuyez sur <IconMap:Icon_Switch> pour activer :\nAssène des attaques consécutives à la cible, infligeant des <color=#98EFF0>DGT de glace</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "154100017": {
+                "Title": "Soutien défensif : Injonction",
+                "Description": "Lorsque le personnage sur le terrain est sur le point d'être attaqué, appuyez sur <IconMap:Icon_Switch> pour activer :\nPare l'attaque de l'ennemi et inflige une confusion importante.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "154100018": {
+                "Title": "Soutien de suivi : Frappe interceptrice",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> après un <color=#FFFFFF>soutien défensif</color> pour activer :\nAssène des attaques consécutives à la cible, infligeant des <color=#98EFF0>DGT de glace</color>.\nAprès avoir utilisé cette compétence, elle peut être immédiatement suivie du 5e coup d'<color=#FFFFFF>Attaque normale : Lame tortueuse</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "154100062": {
+                "Title": "Soutien rapide : Fracture embusquée"
+            },
+            "154100063": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1541019, Prop:1001}"
+            },
+            "154100064": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1541019, Prop:1002}"
+            },
+            "154100065": {
+                "Title": "Soutien défensif : Injonction"
+            },
+            "154100066": {
+                "Description": "Multiplicateur de confusion de défense légère",
+                "Param": "{Skill:1541020, Prop:1002}"
+            },
+            "154100067": {
+                "Description": "Multiplicateur de confusion de défense lourde",
+                "Param": "{Skill:1541021, Prop:1002}"
+            },
+            "154100068": {
+                "Description": "Multiplicateur de confusion de défense en chaîne",
+                "Param": "{Skill:1541022, Prop:1002}"
+            },
+            "154100069": {
+                "Title": "Soutien de suivi : Frappe interceptrice"
+            },
+            "154100070": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1541023, Prop:1001}"
+            },
+            "154100071": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1541023, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1541001": {
+            "DamageValue": 4980,
+            "DamageGrowth": 460,
+            "DazeValue": 3380,
+            "DazeGrowth": 160
+        },
+        "1541002": {
+            "DamageValue": 10320,
+            "DamageGrowth": 940,
+            "DazeValue": 6910,
+            "DazeGrowth": 320
+        },
+        "1541003": {
+            "DamageValue": 19090,
+            "DamageGrowth": 1740,
+            "DazeValue": 12490,
+            "DazeGrowth": 570
+        },
+        "1541004": {
+            "DamageValue": 20470,
+            "DamageGrowth": 1870,
+            "DazeValue": 13630,
+            "DazeGrowth": 620
+        },
+        "1541005": {
+            "DamageValue": 24150,
+            "DamageGrowth": 2200,
+            "DazeValue": 16040,
+            "DazeGrowth": 730
+        },
+        "1541006": {
+            "DamageValue": 17550,
+            "DamageGrowth": 1600,
+            "DazeValue": 8250,
+            "DazeGrowth": 380
+        },
+        "1541007": {
+            "DamageValue": 12780,
+            "DamageGrowth": 1170,
+            "DazeValue": 5410,
+            "DazeGrowth": 250
+        },
+        "1541008": {
+            "DamageValue": 1950,
+            "DamageGrowth": 180,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1541009": {
+            "DamageValue": 7930,
+            "DamageGrowth": 730,
+            "DazeValue": 7700,
+            "DazeGrowth": 350
+        },
+        "1541010": {
+            "DamageValue": 38380,
+            "DamageGrowth": 3490,
+            "DazeValue": 27430,
+            "DazeGrowth": 1250
+        },
+        "1541011": {
+            "DamageValue": 60820,
+            "DamageGrowth": 5530,
+            "DazeValue": 45060,
+            "DazeGrowth": 2050
+        },
+        "1541012": {
+            "DamageValue": 1210,
+            "DamageGrowth": 110,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1541014": {
+            "DamageValue": 51230,
+            "DamageGrowth": 4660,
+            "DazeValue": 12160,
+            "DazeGrowth": 560
+        },
+        "1541015": {
+            "DamageValue": 5630,
+            "DamageGrowth": 520,
+            "DazeValue": 2390,
+            "DazeGrowth": 110
+        },
+        "1541016": {
+            "DamageValue": 33570,
+            "DamageGrowth": 3060,
+            "DazeValue": 24390,
+            "DazeGrowth": 1110
+        },
+        "1541017": {
+            "DamageValue": 83080,
+            "DamageGrowth": 7560,
+            "DazeValue": 26410,
+            "DazeGrowth": 1210
+        },
+        "1541018": {
+            "DamageValue": 153840,
+            "DamageGrowth": 13990,
+            "DazeValue": 24940,
+            "DazeGrowth": 1140
+        },
+        "1541019": {
+            "DamageValue": 7910,
+            "DamageGrowth": 720,
+            "DazeValue": 6700,
+            "DazeGrowth": 310
+        },
+        "1541020": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1541021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1541022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1541023": {
+            "DamageValue": 46900,
+            "DamageGrowth": 4270,
+            "DazeValue": 34670,
+            "DazeGrowth": 1580
+        }
+    }
+}
