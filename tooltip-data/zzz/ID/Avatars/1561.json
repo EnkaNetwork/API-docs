@@ -1,0 +1,489 @@
+{
+    "Name": "Velina",
+    "ElementTypes": [
+        "Wind"
+    ],
+    "Specialty": {
+        "Id": 3,
+        "Name": "Anomaly"
+    },
+    "Talents": {
+        "1": {
+            "Title": "Orderly Elegance",
+            "Description": "Daze yang diakibatkan <color=#FFFFFF>Sweeping Cyclone</color> dari <color=#FFFFFF>Additional Ability: Tea Party Etiquette</color> meningkat 20%. Saat Velina memicu <color=#FFFFFF>Vortex</color>, akan mengabaikan 20% <color=#FFFFFF>ketahanan semua atribut</color> target dan saat semua anggota tim mengakibatkan DMG <color=#A6C5FD>Windswept</color>, akan mengabaikan 20% <color=#A6C5FD>Ketahanan Wind DMG</color> target.",
+            "Lore": "Setiap kata dan tindakan diatur dengan tepat pada tempatnya.\nSebelum pihak lawan menyadarinya, mereka akan dengan senang hati menerima batasan, ritme, dan hasil yang telah dia tetapkan—\n\"Keanggunan tak lain adalah manifestasi paling alami dari tatanan yang berjalan dengan semestinya.\""
+        },
+        "2": {
+            "Title": "Saturation Project",
+            "Description": "Saat memicu <color=#A6C5FD>Windswept</color>, Velina juga dapat memperoleh 1 poin <color=#FFFFFF>Windbite</color>. Efek ini dapat dipicu sekali setiap 5 detik. Setelah <color=#FFFFFF>Sweeping Cyclone</color> memicu efek <color=#FFFFFF>Chromatic Tint</color>, akan mengakumulasi Anomaly Buildup berdasarkan tipe yang sesuai, dan Anomaly Buildup yang diakumulasi oleh serangan ini tidak akan terhitung dalam kalkulasi Anomaly DMG. Efek peningkatan DMG <color=#A6C5FD>Windswept</color> dan <color=#FFFFFF>Vortex</color> dari yang diakibatkan oleh Velina dari <color=#FFFFFF>Additional Ability: Tea Party Etiquette</color> mendapatkan peningkatan tambahan sebesar 15%.",
+            "Lore": "Dia mengantisipasi setiap kemungkinan, memperhitungkan setiap variabel, dan bahkan membuat kelonggaran untuk hal-hal yang berjalan tidak sesuai rencana.\nDia tidak pernah mengandalkan keberuntungan. Setiap akhir sudah diperhitungkan.\nBahkan jika situasi menyimpang sejenak, itu hanya akan mengarah ke jalur lain yang sudah dia siapkan.\n\"Hah, jadi akhirnya begini ya... Untungnya aku tidak sepenuhnya tanpa persiapan.\""
+        },
+        "3": {
+            "Title": "Conquest by Etiquette",
+            "Description": "Level <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, dan <color=#FFFFFF>Chain Attack</color> +2.",
+            "Lore": "Tidak perlu memaksakan kepatuhan melalui kekuatan, tidak pula mengandalkan emosi atau intimidasi.\nRespons yang anggun dan kompromi yang terukur sudah lebih dari cukup...\nSebelum siapa pun menyadarinya, situasi telah diarahkan menuju penaklukannya yang telah ditakdirkan.\n\"Apakah etiket sekadar kekerasan yang tersamar?\"\n\"Atau apakah etiket adalah bentuk kekerasan yang lebih halus?\""
+        },
+        "4": {
+            "Title": "Tea Party Tribunal",
+            "Description": "Saat Velina melancarkan <color=#FFFFFF>EX Special Attack</color>, ATK-nya akan meningkat 15% selama 40 detik. Memicu ulang akan memperbarui durasi.",
+            "Lore": "Di tengah tawa dan percakapan, keseimbangan telah bergeser.\nTeh belum dingin, namun kesimpulan sudah terbentuk.\n\"Jika ada sesuatu yang membuatku resah, selesaikan saja dengan cepat. Jika ada orang yang membuatku resah, hhmm...\""
+        },
+        "5": {
+            "Title": "Death Witch",
+            "Description": "Level <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, dan <color=#FFFFFF>Chain Attack</color> +2.",
+            "Lore": "\"Mendengar langkah kakinya bagaikan mendengar vonis!\"\n\"Menerima undangannya bagaikan melangkah masuk ke dalam upacara pemakaman!\"\nSi penyihir berambut perak duduk dengan anggun di bawah panggung Kerajaan Bangboo, mendengarkan para aktor kecil yang dengan penuh keyakinan mencemoohnya, mengipaskan kipas mewahnya perlahan, tersenyum tanpa berkata sepatah kata pun."
+        },
+        "6": {
+            "Title": "Chief Angel",
+            "Description": "Saat Velina mengonsumsi 2 poin <color=#FFFFFF>Windbite</color> untuk meningkatkan Kelipatan DMG <color=#FFFFFF>Vortex</color>, akan mendapatkan 1 poin <color=#FFFFFF>Windbite</color>. Efek ini dapat dipicu sekali setiap 6 detik. Saat serangan Velina mengenai musuh yang berada dalam <color=#A6C5FD>status Wind Attribute Anomaly</color>, <color=#A6C5FD>Wind Attribute Anomaly Buildup</color> yang diakibatkannya meningkat 20%. Saat Velina mengakibatkan <color=#A6C5FD>Windswept</color> lagi kepada musuh yang sudah terpengaruh <color=#A6C5FD>Windswept</color>, DMG <color=#A6C5FD>Windswept</color> kali ini akan meningkat berdasarkan sisa durasi <color=#A6C5FD>Windswept</color> sebelumnya, setiap 1 detik sisa durasi akan meningkatkan DMG sebesar 2,5%, maksimal meningkat hingga 40%.",
+            "Lore": "\"Tak perlu menanyakan nama sang malaikat. Ia tersembunyi dalam desas-desus, di balik petuah, di balik surat permohonan bantuan yang kau sampaikan dengan gemetar.\""
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Core Passive: Breeze in Bloom",
+            "DescriptionByLevel": {
+                "1": "Saat Energy Regen awal Velina melebihi 1,2, setiap 0,01 poin yang melebihi batas tersebut akan meningkatkan DMG yang diakibatkan sebesar 0,21%, maks. meningkat hingga 35%, dan meningkatkan Anomaly Mastery sebesar 0,5 poin, maks. meningkat hingga 84 poin.\nSaat memulai pertarungan, Velina akan mendapatkan 45 poin <Term:1000008>. Di mode Eksplorasi Area, efek ini dapat dipicu sekali setiap 180 detik. Saat Velina melancarkan <color=#FFFFFF>EX Special Attack: Wind Shear - Purifying Rise</color> atau <color=#FFFFFF>EX Special Attack: Wind Shear - Triple Deathblow</color>, akan mendapatkan 45 poin <color=#FFFFFF>Windbloom</color>. Batas maksimum <color=#FFFFFF>Windbloom</color> adalah 135 poin.\nSaat memicu <color=#FFFFFF>Vortex</color>, Velina akan mendapatkan 1 poin <Term:1000014> dan memanggil <Term:1000015>, mengakibatkan <color=#A6C5FD>Wind DMG</color>. Efek ini dapat dipicu sekali setiap 3 detik. Saat Velina memiliki 2 poin <color=#FFFFFF>Windbite</color>, <color=#FFFFFF>Vortex</color> yang dipicu Velina berikutnya akan mengonsumsi 2 poin <color=#FFFFFF>Windbite</color> untuk meningkatkan Kelipatan DMG <color=#FFFFFF>Vortex</color> sebesar <color=#2BAD00>90%</color>. Selain itu, Velina tidak akan memanggil <color=#FFFFFF>Condensed Cyclone</color>, namun akan memanggil <Term:1000016>. Dalam kondisi ini, tidak dapat memperoleh <color=#FFFFFF>Windbite</color>.\nSaat <color=#FFFFFF>Sweeping Cyclone</color> yang dipanggil Velina mengenai musuh yang berada dalam status <color=#FFFFFF>Contamination</color> untuk pertama kalinya, efek <Term:1000017> akan terpicu, mengubah <color=#FFFFFF>Sweeping Cyclone</color> menjadi tipe atribut yang sesuai dan mengakibatkan DMG atribut yang sesuai. Saat serangan <color=#FFFFFF>Sweeping Cyclone</color> mengenai musuh, <color=#A6C5FD>Ketahanan Wind Anomaly Buildup</color> musuh akan berkurang 7% selama 35 detik. Memicu ulang akan memperbarui durasi. Saat <color=#FFFFFF>Sweeping Cyclone</color> yang diperkuat oleh <color=#FFFFFF>Chromatic Tint</color> mengenai musuh, <color=#FFFFFF>ketahanan Anomaly Buildup atribut yang sesuai</color> milik musuh juga akan berkurang 7% selama 35 detik. Memicu ulang akan memperbarui durasi.\nSaat musuh yang terpengaruh oleh <color=#FFFFFF>Sweeping Cyclone</color> dikalahkan, durasi <color=#FFFFFF>Sweeping Cyclone</color> tersebut akan diperpanjang 5 detik. Efek ini hanya dapat dipicu sekali untuk <color=#FFFFFF>Sweeping Cyclone</color> yang sama, dan hanya satu <color=#FFFFFF>Sweeping Cyclone</color> yang dapat dipanggil Velina di waktu yang sama.\n<color=#FFFFFF>Condensed Cyclone</color> dan <color=#FFFFFF>Sweeping Cyclone</color> akan memicu ledakan saat menghilang. Jika ledakan tersebut mengenai musuh yang berada dalam <color=#A6C5FD>status Wind Anomaly</color>, akan mengakibatkan DMG <color=#FFFFFF>Abloom</color> kepada target: mengakibatkan Attribute Anomaly DMG tambahan, mengakibatkan DMG tetap sebesar <color=#2BAD00>85%</color> dan <color=#2BAD00>135%</color> dari kelipatan <color=#A6C5FD>Wind Anomaly DMG</color>.",
+                "2": "Saat Energy Regen awal Velina melebihi 1,2, setiap 0,01 poin yang melebihi batas tersebut akan meningkatkan DMG yang diakibatkan sebesar 0,21%, maks. meningkat hingga 35%, dan meningkatkan Anomaly Mastery sebesar 0,5 poin, maks. meningkat hingga 84 poin.\nSaat memulai pertarungan, Velina akan mendapatkan 45 poin <Term:1000008>. Di mode Eksplorasi Area, efek ini dapat dipicu sekali setiap 180 detik. Saat Velina melancarkan <color=#FFFFFF>EX Special Attack: Wind Shear - Purifying Rise</color> atau <color=#FFFFFF>EX Special Attack: Wind Shear - Triple Deathblow</color>, akan mendapatkan 45 poin <color=#FFFFFF>Windbloom</color>. Batas maksimum <color=#FFFFFF>Windbloom</color> adalah 135 poin.\nSaat memicu <color=#FFFFFF>Vortex</color>, Velina akan mendapatkan 1 poin <Term:1000014> dan memanggil <Term:1000015>, mengakibatkan <color=#A6C5FD>Wind DMG</color>. Efek ini dapat dipicu sekali setiap 3 detik. Saat Velina memiliki 2 poin <color=#FFFFFF>Windbite</color>, <color=#FFFFFF>Vortex</color> yang dipicu Velina berikutnya akan mengonsumsi 2 poin <color=#FFFFFF>Windbite</color> untuk meningkatkan Kelipatan DMG <color=#FFFFFF>Vortex</color> sebesar <color=#2BAD00>100%</color>. Selain itu, Velina tidak akan memanggil <color=#FFFFFF>Condensed Cyclone</color>, namun akan memanggil <Term:1000016>. Dalam kondisi ini, tidak dapat memperoleh <color=#FFFFFF>Windbite</color>.\nSaat <color=#FFFFFF>Sweeping Cyclone</color> yang dipanggil Velina mengenai musuh yang berada dalam status <color=#FFFFFF>Contamination</color> untuk pertama kalinya, efek <Term:1000017> akan terpicu, mengubah <color=#FFFFFF>Sweeping Cyclone</color> menjadi tipe atribut yang sesuai dan mengakibatkan DMG atribut yang sesuai. Saat serangan <color=#FFFFFF>Sweeping Cyclone</color> mengenai musuh, <color=#A6C5FD>Ketahanan Wind Anomaly Buildup</color> musuh akan berkurang 7% selama 35 detik. Memicu ulang akan memperbarui durasi. Saat <color=#FFFFFF>Sweeping Cyclone</color> yang diperkuat oleh <color=#FFFFFF>Chromatic Tint</color> mengenai musuh, <color=#FFFFFF>ketahanan Anomaly Buildup atribut yang sesuai</color> milik musuh juga akan berkurang 7% selama 35 detik. Memicu ulang akan memperbarui durasi.\nSaat musuh yang terpengaruh oleh <color=#FFFFFF>Sweeping Cyclone</color> dikalahkan, durasi <color=#FFFFFF>Sweeping Cyclone</color> tersebut akan diperpanjang 5 detik. Efek ini hanya dapat dipicu sekali untuk <color=#FFFFFF>Sweeping Cyclone</color> yang sama, dan hanya satu <color=#FFFFFF>Sweeping Cyclone</color> yang dapat dipanggil Velina di waktu yang sama.\n<color=#FFFFFF>Condensed Cyclone</color> dan <color=#FFFFFF>Sweeping Cyclone</color> akan memicu ledakan saat menghilang. Jika ledakan tersebut mengenai musuh yang berada dalam <color=#A6C5FD>status Wind Anomaly</color>, akan mengakibatkan DMG <color=#FFFFFF>Abloom</color> kepada target: mengakibatkan Attribute Anomaly DMG tambahan, mengakibatkan DMG tetap sebesar <color=#2BAD00>95%</color> dan <color=#2BAD00>155%</color> dari kelipatan <color=#A6C5FD>Wind Anomaly DMG</color>.",
+                "3": "Saat Energy Regen awal Velina melebihi 1,2, setiap 0,01 poin yang melebihi batas tersebut akan meningkatkan DMG yang diakibatkan sebesar 0,21%, maks. meningkat hingga 35%, dan meningkatkan Anomaly Mastery sebesar 0,5 poin, maks. meningkat hingga 84 poin.\nSaat memulai pertarungan, Velina akan mendapatkan 45 poin <Term:1000008>. Di mode Eksplorasi Area, efek ini dapat dipicu sekali setiap 180 detik. Saat Velina melancarkan <color=#FFFFFF>EX Special Attack: Wind Shear - Purifying Rise</color> atau <color=#FFFFFF>EX Special Attack: Wind Shear - Triple Deathblow</color>, akan mendapatkan 45 poin <color=#FFFFFF>Windbloom</color>. Batas maksimum <color=#FFFFFF>Windbloom</color> adalah 135 poin.\nSaat memicu <color=#FFFFFF>Vortex</color>, Velina akan mendapatkan 1 poin <Term:1000014> dan memanggil <Term:1000015>, mengakibatkan <color=#A6C5FD>Wind DMG</color>. Efek ini dapat dipicu sekali setiap 3 detik. Saat Velina memiliki 2 poin <color=#FFFFFF>Windbite</color>, <color=#FFFFFF>Vortex</color> yang dipicu Velina berikutnya akan mengonsumsi 2 poin <color=#FFFFFF>Windbite</color> untuk meningkatkan Kelipatan DMG <color=#FFFFFF>Vortex</color> sebesar <color=#2BAD00>110%</color>. Selain itu, Velina tidak akan memanggil <color=#FFFFFF>Condensed Cyclone</color>, namun akan memanggil <Term:1000016>. Dalam kondisi ini, tidak dapat memperoleh <color=#FFFFFF>Windbite</color>.\nSaat <color=#FFFFFF>Sweeping Cyclone</color> yang dipanggil Velina mengenai musuh yang berada dalam status <color=#FFFFFF>Contamination</color> untuk pertama kalinya, efek <Term:1000017> akan terpicu, mengubah <color=#FFFFFF>Sweeping Cyclone</color> menjadi tipe atribut yang sesuai dan mengakibatkan DMG atribut yang sesuai. Saat serangan <color=#FFFFFF>Sweeping Cyclone</color> mengenai musuh, <color=#A6C5FD>Ketahanan Wind Anomaly Buildup</color> musuh akan berkurang 7% selama 35 detik. Memicu ulang akan memperbarui durasi. Saat <color=#FFFFFF>Sweeping Cyclone</color> yang diperkuat oleh <color=#FFFFFF>Chromatic Tint</color> mengenai musuh, <color=#FFFFFF>ketahanan Anomaly Buildup atribut yang sesuai</color> milik musuh juga akan berkurang 7% selama 35 detik. Memicu ulang akan memperbarui durasi.\nSaat musuh yang terpengaruh oleh <color=#FFFFFF>Sweeping Cyclone</color> dikalahkan, durasi <color=#FFFFFF>Sweeping Cyclone</color> tersebut akan diperpanjang 5 detik. Efek ini hanya dapat dipicu sekali untuk <color=#FFFFFF>Sweeping Cyclone</color> yang sama, dan hanya satu <color=#FFFFFF>Sweeping Cyclone</color> yang dapat dipanggil Velina di waktu yang sama.\n<color=#FFFFFF>Condensed Cyclone</color> dan <color=#FFFFFF>Sweeping Cyclone</color> akan memicu ledakan saat menghilang. Jika ledakan tersebut mengenai musuh yang berada dalam <color=#A6C5FD>status Wind Anomaly</color>, akan mengakibatkan DMG <color=#FFFFFF>Abloom</color> kepada target: mengakibatkan Attribute Anomaly DMG tambahan, mengakibatkan DMG tetap sebesar <color=#2BAD00>105%</color> dan <color=#2BAD00>175%</color> dari kelipatan <color=#A6C5FD>Wind Anomaly DMG</color>.",
+                "4": "Saat Energy Regen awal Velina melebihi 1,2, setiap 0,01 poin yang melebihi batas tersebut akan meningkatkan DMG yang diakibatkan sebesar 0,21%, maks. meningkat hingga 35%, dan meningkatkan Anomaly Mastery sebesar 0,5 poin, maks. meningkat hingga 84 poin.\nSaat memulai pertarungan, Velina akan mendapatkan 45 poin <Term:1000008>. Di mode Eksplorasi Area, efek ini dapat dipicu sekali setiap 180 detik. Saat Velina melancarkan <color=#FFFFFF>EX Special Attack: Wind Shear - Purifying Rise</color> atau <color=#FFFFFF>EX Special Attack: Wind Shear - Triple Deathblow</color>, akan mendapatkan 45 poin <color=#FFFFFF>Windbloom</color>. Batas maksimum <color=#FFFFFF>Windbloom</color> adalah 135 poin.\nSaat memicu <color=#FFFFFF>Vortex</color>, Velina akan mendapatkan 1 poin <Term:1000014> dan memanggil <Term:1000015>, mengakibatkan <color=#A6C5FD>Wind DMG</color>. Efek ini dapat dipicu sekali setiap 3 detik. Saat Velina memiliki 2 poin <color=#FFFFFF>Windbite</color>, <color=#FFFFFF>Vortex</color> yang dipicu Velina berikutnya akan mengonsumsi 2 poin <color=#FFFFFF>Windbite</color> untuk meningkatkan Kelipatan DMG <color=#FFFFFF>Vortex</color> sebesar <color=#2BAD00>120%</color>. Selain itu, Velina tidak akan memanggil <color=#FFFFFF>Condensed Cyclone</color>, namun akan memanggil <Term:1000016>. Dalam kondisi ini, tidak dapat memperoleh <color=#FFFFFF>Windbite</color>.\nSaat <color=#FFFFFF>Sweeping Cyclone</color> yang dipanggil Velina mengenai musuh yang berada dalam status <color=#FFFFFF>Contamination</color> untuk pertama kalinya, efek <Term:1000017> akan terpicu, mengubah <color=#FFFFFF>Sweeping Cyclone</color> menjadi tipe atribut yang sesuai dan mengakibatkan DMG atribut yang sesuai. Saat serangan <color=#FFFFFF>Sweeping Cyclone</color> mengenai musuh, <color=#A6C5FD>Ketahanan Wind Anomaly Buildup</color> musuh akan berkurang 7% selama 35 detik. Memicu ulang akan memperbarui durasi. Saat <color=#FFFFFF>Sweeping Cyclone</color> yang diperkuat oleh <color=#FFFFFF>Chromatic Tint</color> mengenai musuh, <color=#FFFFFF>ketahanan Anomaly Buildup atribut yang sesuai</color> milik musuh juga akan berkurang 7% selama 35 detik. Memicu ulang akan memperbarui durasi.\nSaat musuh yang terpengaruh oleh <color=#FFFFFF>Sweeping Cyclone</color> dikalahkan, durasi <color=#FFFFFF>Sweeping Cyclone</color> tersebut akan diperpanjang 5 detik. Efek ini hanya dapat dipicu sekali untuk <color=#FFFFFF>Sweeping Cyclone</color> yang sama, dan hanya satu <color=#FFFFFF>Sweeping Cyclone</color> yang dapat dipanggil Velina di waktu yang sama.\n<color=#FFFFFF>Condensed Cyclone</color> dan <color=#FFFFFF>Sweeping Cyclone</color> akan memicu ledakan saat menghilang. Jika ledakan tersebut mengenai musuh yang berada dalam <color=#A6C5FD>status Wind Anomaly</color>, akan mengakibatkan DMG <color=#FFFFFF>Abloom</color> kepada target: mengakibatkan Attribute Anomaly DMG tambahan, mengakibatkan DMG tetap sebesar <color=#2BAD00>115%</color> dan <color=#2BAD00>195%</color> dari kelipatan <color=#A6C5FD>Wind Anomaly DMG</color>.",
+                "5": "Saat Energy Regen awal Velina melebihi 1,2, setiap 0,01 poin yang melebihi batas tersebut akan meningkatkan DMG yang diakibatkan sebesar 0,21%, maks. meningkat hingga 35%, dan meningkatkan Anomaly Mastery sebesar 0,5 poin, maks. meningkat hingga 84 poin.\nSaat memulai pertarungan, Velina akan mendapatkan 45 poin <Term:1000008>. Di mode Eksplorasi Area, efek ini dapat dipicu sekali setiap 180 detik. Saat Velina melancarkan <color=#FFFFFF>EX Special Attack: Wind Shear - Purifying Rise</color> atau <color=#FFFFFF>EX Special Attack: Wind Shear - Triple Deathblow</color>, akan mendapatkan 45 poin <color=#FFFFFF>Windbloom</color>. Batas maksimum <color=#FFFFFF>Windbloom</color> adalah 135 poin.\nSaat memicu <color=#FFFFFF>Vortex</color>, Velina akan mendapatkan 1 poin <Term:1000014> dan memanggil <Term:1000015>, mengakibatkan <color=#A6C5FD>Wind DMG</color>. Efek ini dapat dipicu sekali setiap 3 detik. Saat Velina memiliki 2 poin <color=#FFFFFF>Windbite</color>, <color=#FFFFFF>Vortex</color> yang dipicu Velina berikutnya akan mengonsumsi 2 poin <color=#FFFFFF>Windbite</color> untuk meningkatkan Kelipatan DMG <color=#FFFFFF>Vortex</color> sebesar <color=#2BAD00>130%</color>. Selain itu, Velina tidak akan memanggil <color=#FFFFFF>Condensed Cyclone</color>, namun akan memanggil <Term:1000016>. Dalam kondisi ini, tidak dapat memperoleh <color=#FFFFFF>Windbite</color>.\nSaat <color=#FFFFFF>Sweeping Cyclone</color> yang dipanggil Velina mengenai musuh yang berada dalam status <color=#FFFFFF>Contamination</color> untuk pertama kalinya, efek <Term:1000017> akan terpicu, mengubah <color=#FFFFFF>Sweeping Cyclone</color> menjadi tipe atribut yang sesuai dan mengakibatkan DMG atribut yang sesuai. Saat serangan <color=#FFFFFF>Sweeping Cyclone</color> mengenai musuh, <color=#A6C5FD>Ketahanan Wind Anomaly Buildup</color> musuh akan berkurang 7% selama 35 detik. Memicu ulang akan memperbarui durasi. Saat <color=#FFFFFF>Sweeping Cyclone</color> yang diperkuat oleh <color=#FFFFFF>Chromatic Tint</color> mengenai musuh, <color=#FFFFFF>ketahanan Anomaly Buildup atribut yang sesuai</color> milik musuh juga akan berkurang 7% selama 35 detik. Memicu ulang akan memperbarui durasi.\nSaat musuh yang terpengaruh oleh <color=#FFFFFF>Sweeping Cyclone</color> dikalahkan, durasi <color=#FFFFFF>Sweeping Cyclone</color> tersebut akan diperpanjang 5 detik. Efek ini hanya dapat dipicu sekali untuk <color=#FFFFFF>Sweeping Cyclone</color> yang sama, dan hanya satu <color=#FFFFFF>Sweeping Cyclone</color> yang dapat dipanggil Velina di waktu yang sama.\n<color=#FFFFFF>Condensed Cyclone</color> dan <color=#FFFFFF>Sweeping Cyclone</color> akan memicu ledakan saat menghilang. Jika ledakan tersebut mengenai musuh yang berada dalam <color=#A6C5FD>status Wind Anomaly</color>, akan mengakibatkan DMG <color=#FFFFFF>Abloom</color> kepada target: mengakibatkan Attribute Anomaly DMG tambahan, mengakibatkan DMG tetap sebesar <color=#2BAD00>125%</color> dan <color=#2BAD00>215%</color> dari kelipatan <color=#A6C5FD>Wind Anomaly DMG</color>.",
+                "6": "Saat Energy Regen awal Velina melebihi 1,2, setiap 0,01 poin yang melebihi batas tersebut akan meningkatkan DMG yang diakibatkan sebesar 0,21%, maks. meningkat hingga 35%, dan meningkatkan Anomaly Mastery sebesar 0,5 poin, maks. meningkat hingga 84 poin.\nSaat memulai pertarungan, Velina akan mendapatkan 45 poin <Term:1000008>. Di mode Eksplorasi Area, efek ini dapat dipicu sekali setiap 180 detik. Saat Velina melancarkan <color=#FFFFFF>EX Special Attack: Wind Shear - Purifying Rise</color> atau <color=#FFFFFF>EX Special Attack: Wind Shear - Triple Deathblow</color>, akan mendapatkan 45 poin <color=#FFFFFF>Windbloom</color>. Batas maksimum <color=#FFFFFF>Windbloom</color> adalah 135 poin.\nSaat memicu <color=#FFFFFF>Vortex</color>, Velina akan mendapatkan 1 poin <Term:1000014> dan memanggil <Term:1000015>, mengakibatkan <color=#A6C5FD>Wind DMG</color>. Efek ini dapat dipicu sekali setiap 3 detik. Saat Velina memiliki 2 poin <color=#FFFFFF>Windbite</color>, <color=#FFFFFF>Vortex</color> yang dipicu Velina berikutnya akan mengonsumsi 2 poin <color=#FFFFFF>Windbite</color> untuk meningkatkan Kelipatan DMG <color=#FFFFFF>Vortex</color> sebesar <color=#2BAD00>140%</color>. Selain itu, Velina tidak akan memanggil <color=#FFFFFF>Condensed Cyclone</color>, namun akan memanggil <Term:1000016>. Dalam kondisi ini, tidak dapat memperoleh <color=#FFFFFF>Windbite</color>.\nSaat <color=#FFFFFF>Sweeping Cyclone</color> yang dipanggil Velina mengenai musuh yang berada dalam status <color=#FFFFFF>Contamination</color> untuk pertama kalinya, efek <Term:1000017> akan terpicu, mengubah <color=#FFFFFF>Sweeping Cyclone</color> menjadi tipe atribut yang sesuai dan mengakibatkan DMG atribut yang sesuai. Saat serangan <color=#FFFFFF>Sweeping Cyclone</color> mengenai musuh, <color=#A6C5FD>Ketahanan Wind Anomaly Buildup</color> musuh akan berkurang 7% selama 35 detik. Memicu ulang akan memperbarui durasi. Saat <color=#FFFFFF>Sweeping Cyclone</color> yang diperkuat oleh <color=#FFFFFF>Chromatic Tint</color> mengenai musuh, <color=#FFFFFF>ketahanan Anomaly Buildup atribut yang sesuai</color> milik musuh juga akan berkurang 7% selama 35 detik. Memicu ulang akan memperbarui durasi.\nSaat musuh yang terpengaruh oleh <color=#FFFFFF>Sweeping Cyclone</color> dikalahkan, durasi <color=#FFFFFF>Sweeping Cyclone</color> tersebut akan diperpanjang 5 detik. Efek ini hanya dapat dipicu sekali untuk <color=#FFFFFF>Sweeping Cyclone</color> yang sama, dan hanya satu <color=#FFFFFF>Sweeping Cyclone</color> yang dapat dipanggil Velina di waktu yang sama.\n<color=#FFFFFF>Condensed Cyclone</color> dan <color=#FFFFFF>Sweeping Cyclone</color> akan memicu ledakan saat menghilang. Jika ledakan tersebut mengenai musuh yang berada dalam <color=#A6C5FD>status Wind Anomaly</color>, akan mengakibatkan DMG <color=#FFFFFF>Abloom</color> kepada target: mengakibatkan Attribute Anomaly DMG tambahan, mengakibatkan DMG tetap sebesar <color=#2BAD00>135%</color> dan <color=#2BAD00>235%</color> dari kelipatan <color=#A6C5FD>Wind Anomaly DMG</color>.",
+                "7": "Saat Energy Regen awal Velina melebihi 1,2, setiap 0,01 poin yang melebihi batas tersebut akan meningkatkan DMG yang diakibatkan sebesar 0,21%, maks. meningkat hingga 35%, dan meningkatkan Anomaly Mastery sebesar 0,5 poin, maks. meningkat hingga 84 poin.\nSaat memulai pertarungan, Velina akan mendapatkan 45 poin <Term:1000008>. Di mode Eksplorasi Area, efek ini dapat dipicu sekali setiap 180 detik. Saat Velina melancarkan <color=#FFFFFF>EX Special Attack: Wind Shear - Purifying Rise</color> atau <color=#FFFFFF>EX Special Attack: Wind Shear - Triple Deathblow</color>, akan mendapatkan 45 poin <color=#FFFFFF>Windbloom</color>. Batas maksimum <color=#FFFFFF>Windbloom</color> adalah 135 poin.\nSaat memicu <color=#FFFFFF>Vortex</color>, Velina akan mendapatkan 1 poin <Term:1000014> dan memanggil <Term:1000015>, mengakibatkan <color=#A6C5FD>Wind DMG</color>. Efek ini dapat dipicu sekali setiap 3 detik. Saat Velina memiliki 2 poin <color=#FFFFFF>Windbite</color>, <color=#FFFFFF>Vortex</color> yang dipicu Velina berikutnya akan mengonsumsi 2 poin <color=#FFFFFF>Windbite</color> untuk meningkatkan Kelipatan DMG <color=#FFFFFF>Vortex</color> sebesar <color=#2BAD00>150%</color>. Selain itu, Velina tidak akan memanggil <color=#FFFFFF>Condensed Cyclone</color>, namun akan memanggil <Term:1000016>. Dalam kondisi ini, tidak dapat memperoleh <color=#FFFFFF>Windbite</color>.\nSaat <color=#FFFFFF>Sweeping Cyclone</color> yang dipanggil Velina mengenai musuh yang berada dalam status <color=#FFFFFF>Contamination</color> untuk pertama kalinya, efek <Term:1000017> akan terpicu, mengubah <color=#FFFFFF>Sweeping Cyclone</color> menjadi tipe atribut yang sesuai dan mengakibatkan DMG atribut yang sesuai. Saat serangan <color=#FFFFFF>Sweeping Cyclone</color> mengenai musuh, <color=#A6C5FD>Ketahanan Wind Anomaly Buildup</color> musuh akan berkurang 7% selama 35 detik. Memicu ulang akan memperbarui durasi. Saat <color=#FFFFFF>Sweeping Cyclone</color> yang diperkuat oleh <color=#FFFFFF>Chromatic Tint</color> mengenai musuh, <color=#FFFFFF>ketahanan Anomaly Buildup atribut yang sesuai</color> milik musuh juga akan berkurang 7% selama 35 detik. Memicu ulang akan memperbarui durasi.\nSaat musuh yang terpengaruh oleh <color=#FFFFFF>Sweeping Cyclone</color> dikalahkan, durasi <color=#FFFFFF>Sweeping Cyclone</color> tersebut akan diperpanjang 5 detik. Efek ini hanya dapat dipicu sekali untuk <color=#FFFFFF>Sweeping Cyclone</color> yang sama, dan hanya satu <color=#FFFFFF>Sweeping Cyclone</color> yang dapat dipanggil Velina di waktu yang sama.\n<color=#FFFFFF>Condensed Cyclone</color> dan <color=#FFFFFF>Sweeping Cyclone</color> akan memicu ledakan saat menghilang. Jika ledakan tersebut mengenai musuh yang berada dalam <color=#A6C5FD>status Wind Anomaly</color>, akan mengakibatkan DMG <color=#FFFFFF>Abloom</color> kepada target: mengakibatkan Attribute Anomaly DMG tambahan, mengakibatkan DMG tetap sebesar <color=#2BAD00>145%</color> dan <color=#2BAD00>255%</color> dari kelipatan <color=#A6C5FD>Wind Anomaly DMG</color>."
+            }
+        },
+        "MathSkill": {
+            "Title": "Additional Ability: Tea Party Etiquette",
+            "Description": "Berlaku jika terdapat Agen <color=#FFFFFF>Anomaly</color> lain atau Agen yang memiliki Atribut yang sama di dalam tim:\nDMG <color=#A6C5FD>Windswept</color> dan <color=#FFFFFF>Vortex</color> yang diakibatkan Velina meningkat 10%. Saat serangan kuat dari <color=#FFFFFF>Ultimate</color> mengenai musuh yang terpengaruh <color=#A6C5FD>status Wind Attribute Anomaly</color>, target akan menerima DMG <color=#FFFFFF>Abloom</color>: mengakibatkan Attribute Anomaly DMG sekali lagi, DMG tetap sebesar <color=#A6C5FD>680%</color> dari kelipatan Wind DMG.\nEfek penurunan <color=#FFFFFF>ketahanan Anomaly Buildup</color> dari <color=#FFFFFF>Core Passive: Breeze in Bloom</color> yang diakibatkan <Term:1000016> meningkat 7%, Daze yang diakibatkan meningkat 30%, dan Anomaly Buildup yang diakumulasi meningkat 15%."
+        },
+        "AwakenAbility": {},
+        "BaseProps": [
+            {
+                "31201": 0,
+                "12101": 0
+            },
+            {
+                "31201": 18,
+                "12101": 0
+            },
+            {
+                "31201": 18,
+                "12101": 25
+            },
+            {
+                "31201": 36,
+                "12101": 25
+            },
+            {
+                "31201": 36,
+                "12101": 50
+            },
+            {
+                "31201": 54,
+                "12101": 50
+            },
+            {
+                "31201": 54,
+                "12101": 75
+            }
+        ]
+    },
+    "SkillDescriptions": {
+        "0": {
+            "156100001": {
+                "Title": "Basic Attack: Dancing Fans",
+                "Description": "Tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMelancarkan hingga lima tahap serangan ke depan dan mengakibatkan <color=#A6C5FD>Wind DMG</color>.\nSaat melancarkan serangan tahap ke-5, Level Anti-Interrupt Velina meningkat dan DMG yang diterimanya berkurang 40%."
+            },
+            "156100015": {
+                "Title": "Basic Attack: Dancing Fans"
+            },
+            "156100016": {
+                "Description": "Kelipatan DMG: Tahap 1",
+                "Param": "{Skill:1561001, Prop:1001}"
+            },
+            "156100017": {
+                "Description": "Kelipatan DMG: Tahap 2",
+                "Param": "{Skill:1561002, Prop:1001}"
+            },
+            "156100018": {
+                "Description": "Kelipatan DMG: Tahap 3",
+                "Param": "{Skill:1561003, Prop:1001}"
+            },
+            "156100019": {
+                "Description": "Kelipatan DMG: Tahap 4",
+                "Param": "{Skill:1561004, Prop:1001}"
+            },
+            "156100020": {
+                "Description": "Kelipatan DMG: Tahap 5",
+                "Param": "{Skill:1561005, Prop:1001}"
+            },
+            "156100021": {
+                "Description": "Kelipatan Daze: Tahap 1",
+                "Param": "{Skill:1561001, Prop:1002}"
+            },
+            "156100022": {
+                "Description": "Kelipatan Daze: Tahap 2",
+                "Param": "{Skill:1561002, Prop:1002}"
+            },
+            "156100023": {
+                "Description": "Kelipatan Daze: Tahap 3",
+                "Param": "{Skill:1561003, Prop:1002}"
+            },
+            "156100024": {
+                "Description": "Kelipatan Daze: Tahap 4",
+                "Param": "{Skill:1561004, Prop:1002}"
+            },
+            "156100025": {
+                "Description": "Kelipatan Daze: Tahap 5",
+                "Param": "{Skill:1561005, Prop:1002}"
+            }
+        },
+        "1": {
+            "156100002": {
+                "Title": "Special Attack: Wind Shear - Purging Surge",
+                "Description": "Tekan <IconMap:Icon_Special> untuk melancarkan Skill ini.\nMelancarkan embusan angin ke depan dan menyebabkan <color=#A6C5FD>Wind DMG</color>."
+            },
+            "156100003": {
+                "Title": "EX Special Attack: Wind Shear - Purifying Rise",
+                "Description": "Saat Energy Velina sudah cukup, tekan <IconMap:Icon_SpecialReady> untuk melancarkan Skill ini.\nMelakukan Dodge ke belakang, lalu menembakkan peluru angin besar untuk menyerang musuh dan mengakibatkan <color=#A6C5FD>Wind DMG</color>.\nSaat melakukan Dodge ke belakang, efek Dodge akan diterapkan. Jika berhasil menghindari serangan musuh, akan memicu <color=#FFFFFF>Vital View</color>.\nSetelah melancarkan Skill ini, tekan <IconMap:Icon_Normal> untuk melanjutkan serangan dengan <color=#FFFFFF>Basic Attack</color> tahap ke-5.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "156100004": {
+                "Title": "EX Special Attack: Wind Shear - Triple Deathblow",
+                "Description": "Saat Energy Velina sudah cukup, tekan atau tahan <IconMap:Icon_SpecialReady> setelah melancarkan <color=#FFFFFF>EX Special Attack: Wind Shear - Purifying Rise</color> untuk melancarkan Skill ini.\nMengayunkan kipas secara terus-menerus dan mengakibatkan <color=#A6C5FD>Wind DMG</color> pada musuh.\nSetelah melancarkan Skill ini, tekan <IconMap:Icon_Normal> untuk melanjutkan serangan dengan <color=#FFFFFF>Basic Attack</color> tahap ke-5.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "156100005": {
+                "Title": "EX Special Attack: Wind Shear - Eye of the Storm",
+                "Description": "Saat <Term:1000008> mencapai 90 poin (atau lebih), tahan <IconMap:Icon_Special> atau <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nVelina mengumpulkan pusaran angin, lalu memanggil <Term:1000016> untuk terus menyerang musuh dan memicu <color=#FFFFFF>Quick Assist</color> dari Agen sebelumnya.\n<color=#FFFFFF>Sweeping Cyclone</color> berlangsung selama 5 detik dan mengakibatkan <color=#A6C5FD>Wind DMG</color> kepada musuh di sekitar setiap 0,5 detik."
+            },
+            "156100026": {
+                "Title": "Special Attack: Wind Shear - Purging Surge"
+            },
+            "156100027": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1561008, Prop:1001}"
+            },
+            "156100028": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1561008, Prop:1002}"
+            },
+            "156100029": {
+                "Title": "EX Special Attack: Wind Shear - Purifying Rise"
+            },
+            "156100030": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1561009, Prop:1001}"
+            },
+            "156100031": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1561009, Prop:1002}"
+            },
+            "156100032": {
+                "Description": "Konsumsi Energy",
+                "Param": "45 poin"
+            },
+            "156100033": {
+                "Title": "EX Special Attack: Wind Shear - Triple Deathblow"
+            },
+            "156100034": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1561010, Prop:1001}"
+            },
+            "156100035": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1561010, Prop:1002}"
+            },
+            "156100036": {
+                "Description": "Konsumsi Energy",
+                "Param": "45 poin"
+            },
+            "156100037": {
+                "Title": "EX Special Attack: Wind Shear - Eye of the Storm"
+            },
+            "156100038": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1561006, Prop:1001}"
+            },
+            "156100039": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1561006, Prop:1002}"
+            },
+            "156100040": {
+                "Description": "Konsumsi Windbloom",
+                "Param": "90 poin"
+            },
+            "156100041": {
+                "Title": "Sweeping Cyclone"
+            },
+            "156100042": {
+                "Description": "Kelipatan DMG - Sweeping Cyclone (Atribut Wind)",
+                "Param": "{Skill:1561007, Prop:1001}"
+            },
+            "156100043": {
+                "Description": "Kelipatan Daze - Sweeping Cyclone (Atribut Wind)",
+                "Param": "{Skill:1561007, Prop:1002}"
+            },
+            "156100044": {
+                "Description": "Kelipatan DMG - Sweeping Cyclone (Atribut Lainnya)",
+                "Param": "{{Skill:1561020, Prop:1001}*0.2}"
+            },
+            "156100045": {
+                "Title": "Condensed Cyclone"
+            },
+            "156100046": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1561021, Prop:1001}"
+            },
+            "156100047": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1561021, Prop:1002}"
+            }
+        },
+        "2": {
+            "156100006": {
+                "Title": "Dodge: Windward Sweep",
+                "Description": "Tekan <IconMap:Icon_Evade> untuk melakukan Dodge.\nMelakukan Dodge dengan cepat.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "156100007": {
+                "Title": "Dash Attack: Gale Step",
+                "Description": "Tekan <IconMap:Icon_Normal> saat melakukan Dodge untuk melancarkan Skill ini.\nMelancarkan serangan cepat ke depan dan mengakibatkan <color=#A6C5FD>Wind DMG</color>."
+            },
+            "156100008": {
+                "Title": "Dodge Counter: Cloudrend",
+                "Description": "Tekan <IconMap:Icon_Normal> setelah melakukan <color=#FFFFFF>Perfect Dodge</color> untuk melancarkan Skill ini.\nMelancarkan serangan beruntun terhadap target dan mengakibatkan <color=#A6C5FD>Wind DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "156100048": {
+                "Title": "Dash Attack: Gale Step"
+            },
+            "156100049": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1561011, Prop:1001}"
+            },
+            "156100050": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1561011, Prop:1002}"
+            },
+            "156100051": {
+                "Title": "Dodge Counter: Cloudrend"
+            },
+            "156100052": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1561012, Prop:1001}"
+            },
+            "156100053": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1561012, Prop:1002}"
+            }
+        },
+        "3": {
+            "156100009": {
+                "Title": "Chain Attack: Thousandfold Spiral",
+                "Description": "Saat <color=#FFFFFF>Chain Attack</color> terpicu, pilih Velina untuk melancarkan Skill ini.\nBerubah menjadi badai dan melancarkan serangan bertahap ke musuh, yang dilanjuti dengan serangan terakhir dan mengakibatkan <color=#A6C5FD>Wind DMG</color> dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "156100010": {
+                "Title": "Ultimate: Heed the Tempest",
+                "Description": "Saat Decibel Rating mencapai <color=#FFFFFF>Maximum</color>, tekan <IconMap:Icon_UltimateReady> untuk melancarkan Skill ini.\nMelancarkan beberapa tahap serangan ke depan dan mengakibatkan <color=#A6C5FD>Wind DMG</color> dalam jumlah besar.\nSetelah melancarkan Skill ini, <color=#FFFFFF>Quick Assist</color> dari Agen sebelumnya akan terpicu.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "156100054": {
+                "Title": "Chain Attack: Thousandfold Spiral"
+            },
+            "156100055": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1561013, Prop:1001}"
+            },
+            "156100056": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1561013, Prop:1002}"
+            },
+            "156100057": {
+                "Title": "Ultimate: Heed the Tempest"
+            },
+            "156100058": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1561014, Prop:1001}"
+            },
+            "156100059": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1561014, Prop:1002}"
+            }
+        },
+        "6": {
+            "156100012": {
+                "Title": "Quick Assist: Emergency Protocol",
+                "Description": "Saat Agen yang Dikendalikan terhempas, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nMelancarkan serangan beruntun terhadap target dan mengakibatkan <color=#A6C5FD>Wind DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "156100013": {
+                "Title": "Defensive Assist: Judicious Intervention",
+                "Description": "Tepat sebelum Agen aktif diserang, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nMenangkis serangan musuh dan menghasilkan Daze dalam jumlah besar.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "156100014": {
+                "Title": "Assist Follow-Up: Negotiation Techniques",
+                "Description": "Setelah melancarkan <color=#FFFFFF>Defensive Assist</color>, tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMelancarkan serangan beruntun terhadap target dan mengakibatkan <color=#A6C5FD>Wind DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "156100060": {
+                "Title": "Quick Assist: Emergency Protocol"
+            },
+            "156100061": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1561015, Prop:1001}"
+            },
+            "156100062": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1561015, Prop:1002}"
+            },
+            "156100063": {
+                "Title": "Defensive Assist: Judicious Intervention"
+            },
+            "156100064": {
+                "Description": "Kelipatan Daze - Light Defensive",
+                "Param": "{Skill:1561016, Prop:1002}"
+            },
+            "156100065": {
+                "Description": "Kelipatan Daze - Heavy Defensive",
+                "Param": "{Skill:1561017, Prop:1002}"
+            },
+            "156100066": {
+                "Description": "Kelipatan Daze - Chain Defensive",
+                "Param": "{Skill:1561018, Prop:1002}"
+            },
+            "156100067": {
+                "Title": "Assist Follow-Up: Negotiation Techniques"
+            },
+            "156100068": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1561019, Prop:1001}"
+            },
+            "156100069": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1561019, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1561001": {
+            "DamageValue": 5170,
+            "DamageGrowth": 470,
+            "DazeValue": 2360,
+            "DazeGrowth": 110
+        },
+        "1561002": {
+            "DamageValue": 4890,
+            "DamageGrowth": 450,
+            "DazeValue": 2350,
+            "DazeGrowth": 110
+        },
+        "1561003": {
+            "DamageValue": 16910,
+            "DamageGrowth": 1540,
+            "DazeValue": 8050,
+            "DazeGrowth": 370
+        },
+        "1561004": {
+            "DamageValue": 12560,
+            "DamageGrowth": 1150,
+            "DazeValue": 6290,
+            "DazeGrowth": 290
+        },
+        "1561005": {
+            "DamageValue": 22960,
+            "DamageGrowth": 2090,
+            "DazeValue": 11270,
+            "DazeGrowth": 520
+        },
+        "1561006": {
+            "DamageValue": 21670,
+            "DamageGrowth": 1970,
+            "DazeValue": 18340,
+            "DazeGrowth": 840
+        },
+        "1561007": {
+            "DamageValue": 3900,
+            "DamageGrowth": 360,
+            "DazeValue": 8250,
+            "DazeGrowth": 380
+        },
+        "1561008": {
+            "DamageValue": 5860,
+            "DamageGrowth": 540,
+            "DazeValue": 4960,
+            "DazeGrowth": 230
+        },
+        "1561009": {
+            "DamageValue": 44050,
+            "DamageGrowth": 4010,
+            "DazeValue": 30250,
+            "DazeGrowth": 1380
+        },
+        "1561010": {
+            "DamageValue": 72520,
+            "DamageGrowth": 6600,
+            "DazeValue": 51520,
+            "DazeGrowth": 2350
+        },
+        "1561011": {
+            "DamageValue": 9970,
+            "DamageGrowth": 910,
+            "DazeValue": 4220,
+            "DazeGrowth": 200
+        },
+        "1561012": {
+            "DamageValue": 39490,
+            "DamageGrowth": 3590,
+            "DazeValue": 28240,
+            "DazeGrowth": 1290
+        },
+        "1561013": {
+            "DamageValue": 80040,
+            "DamageGrowth": 7280,
+            "DazeValue": 23840,
+            "DazeGrowth": 1090
+        },
+        "1561014": {
+            "DamageValue": 218830,
+            "DamageGrowth": 19900,
+            "DazeValue": 38130,
+            "DazeGrowth": 1740
+        },
+        "1561015": {
+            "DamageValue": 20380,
+            "DamageGrowth": 1860,
+            "DazeValue": 8620,
+            "DazeGrowth": 400
+        },
+        "1561016": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1561017": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1561018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1561019": {
+            "DamageValue": 53270,
+            "DamageGrowth": 4850,
+            "DazeValue": 39670,
+            "DazeGrowth": 1810
+        },
+        "1561020": {
+            "DamageValue": 9750,
+            "DamageGrowth": 890,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1561021": {
+            "DamageValue": 3250,
+            "DamageGrowth": 300,
+            "DazeValue": 13750,
+            "DazeGrowth": 630
+        }
+    }
+}

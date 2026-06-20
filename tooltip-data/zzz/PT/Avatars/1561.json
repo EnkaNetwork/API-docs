@@ -1,0 +1,489 @@
+{
+    "Name": "Velina",
+    "ElementTypes": [
+        "Wind"
+    ],
+    "Specialty": {
+        "Id": 3,
+        "Name": "Anômalo"
+    },
+    "Talents": {
+        "1": {
+            "Title": "Ordem e Elegância",
+            "Description": "O <color=#FFFFFF>Ciclone Devastador</color> da <color=#FFFFFF>Habilidade Extra: Etiqueta da Festa do Chá</color> causa mais 20% de Atordoamento. Quando Velina ativa <color=#FFFFFF>Turbulência</color>, ela ignora 20% da <color=#FFFFFF>resistência do alvo a todos os atributos</color>. Quando os membros da equipe causam dano de <color=#A6C5FD>Ventania</color>, ignora 20% da <color=#A6C5FD>resistência a Vento</color> do alvo.",
+            "Lore": "Cada gesto e palavra é cuidadosamente organizado em seu lugar.\nQuase sempre, o outro lado concorda com os termos sem sequer perceber, pois o ritmo e os resultados são organizados por ela.\n\"A elegância é somente a expressão mais natural da ordem em ação.\""
+        },
+        "2": {
+            "Title": "Plano de Saturação",
+            "Description": "Quando Velina ativa <color=#A6C5FD>Ventania</color>, ela também pode obter 1 ponto de <color=#FFFFFF>Erosão de Vento</color>. Esse efeito pode ser ativado uma vez a cada 5s. Após o <color=#FFFFFF>Ciclone Devastador</color> ativar o efeito de <color=#FFFFFF>Infusão</color>, pode acumular a Amplificação de Anomalia do atributo correspondente. A amplificação acumulada por esse ataque não entra no cálculo do Dano de Anomalia. Os efeitos de aumento de dano de <color=#A6C5FD>Ventania</color> e <color=#FFFFFF>Turbulência</color> da <color=#FFFFFF>Habilidade Extra: Etiqueta da Festa do Chá</color> de Velina aumentam mais 15%.",
+            "Lore": "Ela prevê todas as possibilidades, considera todas as variáveis e faz planos reservas para controlar possíveis problemas.\nEla nunca conta com a sorte. Cada resultado é calculado.\nMesmo que a situação saia do curso por um momento, o desvio leva a outro caminho já preparado por ela.\n\"Ah, então vai ser assim... Felizmente, estou sempre preparada.\""
+        },
+        "3": {
+            "Title": "Conquista pela Etiqueta",
+            "Description": "Obtém +2 níveis de <color=#FFFFFF>Ataque Básico</color>, <color=#FFFFFF>Esquiva</color>, <color=#FFFFFF>Ataque de Assistência</color>, <color=#FFFFFF>Ataque Especial</color> e <color=#FFFFFF>Ataque em Cadeia</color>",
+            "Lore": "Sem necessidade de impor força, sem depender de emoções ou intimidação.\nBasta uma resposta adequada, uma concessão feita no momento certo...\nE a situação já se fecha de forma invisível, até culminar na conquista predeterminada.\n\"A etiqueta é um meio de mascarar a violência?\"\n\"Ou seria a etiqueta uma forma superior de violência?\""
+        },
+        "4": {
+            "Title": "Festa do Chá no Tribunal",
+            "Description": "Quando Velina usa o <color=#FFFFFF>Ataque Especial Reforçado</color>, seu próprio ATQ aumenta 15% por 40s. Ativações repetidas reiniciam a duração.",
+            "Lore": "Entre risos e conversas, a balança já pendeu para um dos lados.\nO chá ainda não esfriou, mas o resultado já foi determinado.\n\"Se algo me incomodar, simplesmente lido com isso e sigo em frente. E se alguém me incomodar, heh...\""
+        },
+        "5": {
+            "Title": "Bruxa da Morte",
+            "Description": "Obtém +2 níveis de <color=#FFFFFF>Ataque Básico</color>, <color=#FFFFFF>Esquiva</color>, <color=#FFFFFF>Ataque de Assistência</color>, <color=#FFFFFF>Ataque Especial</color> e <color=#FFFFFF>Ataque em Cadeia</color>",
+            "Lore": "\"Os passos dela são o prenúncio do seu julgamento!\"\n\"O convite dela é o seu funeral!\"\nA bruxa de cabelos prateados senta-se calmamente abaixo do teatro do Reino dos Bangboos, ouvindo os pequenos atores declamarem acusações sobre ela com absoluta convicção. Ela abana gentilmente seu leque ornamentado, sorrindo em silêncio."
+        },
+        "6": {
+            "Title": "Anjo Chefe",
+            "Description": "Quando Velina consome 2 pontos de <color=#FFFFFF>Erosão de Vento</color> para aumentar o Multiplicador de Dano de <color=#FFFFFF>Turbulência</color>, obtém 1 ponto de <color=#FFFFFF>Erosão de Vento</color>. Esse efeito pode ser ativado no máximo uma vez a cada 6s. Quando Velina atinge um inimigo afetado por <color=#A6C5FD>Anomalia de Atributo de Vento</color>, a <color=#A6C5FD>Amplificação de Anomalia de Atributo de Vento</color> causada aumenta 20%. Quando Velina aplica <color=#A6C5FD>Ventania</color> novamente em um inimigo que já está sob o efeito de <color=#A6C5FD>Ventania</color>, o dano dessa <color=#A6C5FD>Ventania</color> aumenta com base no tempo de duração restante da <color=#A6C5FD>Ventania</color> anterior: cada 1s de duração restante aumenta o dano 2,5%, até o máximo de 40%.",
+            "Lore": "\"Não é necessário perguntar o nome do anjo. Ela se esconde nos rumores, atrás da repreensão e nas cartas temerosas de ajuda que você a entrega com as mãos trêmulas.\""
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passiva Principal: Brisa Elegante",
+            "DescriptionByLevel": {
+                "1": "Quando a Recuperação de Energia inicial de Velina exceder 1,2, a cada 0,01 pontos excedidos, o dano causado aumenta 0,21%, até um máximo de 35%, e a Maestria de Anomalia aumenta 0,5 pontos, até um máximo de 84.\nAo entrar em combate, Velina obtém 45 pontos de <Term:1000008>. No Modo de Reconhecimento, esse efeito pode ser ativado no máximo uma vez a cada 180s. Ao usar o <color=#FFFFFF>Ataque Especial Reforçado: Vento Cortante — Purificação Elevada</color> ou o <color=#FFFFFF>Ataque Especial Reforçado: Vento Cortante — Aniquilação Tripla</color>, Velina obtém 45 pontos de <color=#FFFFFF>Sopro</color>. O limite de <color=#FFFFFF>Sopro</color> é 135 pontos.\nAo acionar <color=#FFFFFF>Turbulência</color>, Velina obtém 1 ponto de <Term:1000014> e invoca <Term:1000015>, causando <color=#A6C5FD>Dano de Vento</color>. Esse efeito pode ser ativado no máximo uma vez a cada 3s. Quando Velina tem 2 pontos de <color=#FFFFFF>Erosão de Vento</color>, na próxima vez que acionar <color=#FFFFFF>Turbulência</color>, consome 2 pontos de <color=#FFFFFF>Erosão de Vento</color> para aumentar o Multiplicador de Dano da <color=#FFFFFF>Turbulência</color> em <color=#2BAD00>90%</color>. Nesse caso, em vez de invocar um <color=#FFFFFF>Ciclone Concentrado</color>, invoca <Term:1000016>, e a ativação não concede pontos de <color=#FFFFFF>Erosão de Vento</color>.\nQuando o <color=#FFFFFF>Ciclone Devastador</color> invocado por Velina atinge pela primeira vez um inimigo em estado de <color=#FFFFFF>Contaminação</color>, ativa o efeito de <Term:1000017>, convertendo-o em um <color=#FFFFFF>Ciclone Devastador</color> do atributo correspondente e causando dano do atributo correspondente. Quando o <color=#FFFFFF>Ciclone Devastador</color> acerta um inimigo, reduz a <color=#A6C5FD>resistência à amplificação de anomalia de Vento</color> do inimigo em 7% por 35s. Ativações repetidas reiniciam a duração. Se o <color=#FFFFFF>Ciclone Devastador</color> após a <color=#FFFFFF>Infusão</color> atingir um inimigo, a <color=#FFFFFF>resistência à amplificação de anomalia do atributo correspondente</color> do inimigo também diminui 7% por 35s. Ativações repetidas reiniciam a duração.\nQuando um inimigo afetado pelo <color=#FFFFFF>Ciclone Devastador</color> é derrotado, a duração desse <color=#FFFFFF>Ciclone Devastador</color> é estendida em 5s. Esse efeito pode ser ativado apenas uma vez por <color=#FFFFFF>Ciclone Devastador</color>. Apenas um <color=#FFFFFF>Ciclone Devastador</color> pode existir por vez.\nO <color=#FFFFFF>Ciclone Concentrado</color> e o <color=#FFFFFF>Ciclone Devastador</color> causam uma explosão ao se dissipar. Quando essa explosão atinge um inimigo afetado por <color=#A6C5FD>Anomalia de Vento</color>, causa dano de <color=#FFFFFF>Floração</color> ao alvo uma vez: causa uma instância de dano de Anomalia de Atributo adicional, calculado com multiplicadores fixos de <color=#2BAD00>85%</color> e <color=#2BAD00>135%</color> de <color=#A6C5FD>Dano de Anomalia de Vento</color>.",
+                "2": "Quando a Recuperação de Energia inicial de Velina exceder 1,2, a cada 0,01 pontos excedidos, o dano causado aumenta 0,21%, até um máximo de 35%, e a Maestria de Anomalia aumenta 0,5 pontos, até um máximo de 84.\nAo entrar em combate, Velina obtém 45 pontos de <Term:1000008>. No Modo de Reconhecimento, esse efeito pode ser ativado no máximo uma vez a cada 180s. Ao usar o <color=#FFFFFF>Ataque Especial Reforçado: Vento Cortante — Purificação Elevada</color> ou o <color=#FFFFFF>Ataque Especial Reforçado: Vento Cortante — Aniquilação Tripla</color>, Velina obtém 45 pontos de <color=#FFFFFF>Sopro</color>. O limite de <color=#FFFFFF>Sopro</color> é 135 pontos.\nAo acionar <color=#FFFFFF>Turbulência</color>, Velina obtém 1 ponto de <Term:1000014> e invoca <Term:1000015>, causando <color=#A6C5FD>Dano de Vento</color>. Esse efeito pode ser ativado no máximo uma vez a cada 3s. Quando Velina tem 2 pontos de <color=#FFFFFF>Erosão de Vento</color>, na próxima vez que acionar <color=#FFFFFF>Turbulência</color>, consome 2 pontos de <color=#FFFFFF>Erosão de Vento</color> para aumentar o Multiplicador de Dano da <color=#FFFFFF>Turbulência</color> em <color=#2BAD00>100%</color>. Nesse caso, em vez de invocar um <color=#FFFFFF>Ciclone Concentrado</color>, invoca <Term:1000016>, e a ativação não concede pontos de <color=#FFFFFF>Erosão de Vento</color>.\nQuando o <color=#FFFFFF>Ciclone Devastador</color> invocado por Velina atinge pela primeira vez um inimigo em estado de <color=#FFFFFF>Contaminação</color>, ativa o efeito de <Term:1000017>, convertendo-o em um <color=#FFFFFF>Ciclone Devastador</color> do atributo correspondente e causando dano do atributo correspondente. Quando o <color=#FFFFFF>Ciclone Devastador</color> acerta um inimigo, reduz a <color=#A6C5FD>resistência à amplificação de anomalia de Vento</color> do inimigo em 7% por 35s. Ativações repetidas reiniciam a duração. Se o <color=#FFFFFF>Ciclone Devastador</color> após a <color=#FFFFFF>Infusão</color> atingir um inimigo, a <color=#FFFFFF>resistência à amplificação de anomalia do atributo correspondente</color> do inimigo também diminui 7% por 35s. Ativações repetidas reiniciam a duração.\nQuando um inimigo afetado pelo <color=#FFFFFF>Ciclone Devastador</color> é derrotado, a duração desse <color=#FFFFFF>Ciclone Devastador</color> é estendida em 5s. Esse efeito pode ser ativado apenas uma vez por <color=#FFFFFF>Ciclone Devastador</color>. Apenas um <color=#FFFFFF>Ciclone Devastador</color> pode existir por vez.\nO <color=#FFFFFF>Ciclone Concentrado</color> e o <color=#FFFFFF>Ciclone Devastador</color> causam uma explosão ao se dissipar. Quando essa explosão atinge um inimigo afetado por <color=#A6C5FD>Anomalia de Vento</color>, causa dano de <color=#FFFFFF>Floração</color> ao alvo uma vez: causa uma instância de dano de Anomalia de Atributo adicional, calculado com multiplicadores fixos de <color=#2BAD00>95%</color> e <color=#2BAD00>155%</color> de <color=#A6C5FD>Dano de Anomalia de Vento</color>.",
+                "3": "Quando a Recuperação de Energia inicial de Velina exceder 1,2, a cada 0,01 pontos excedidos, o dano causado aumenta 0,21%, até um máximo de 35%, e a Maestria de Anomalia aumenta 0,5 pontos, até um máximo de 84.\nAo entrar em combate, Velina obtém 45 pontos de <Term:1000008>. No Modo de Reconhecimento, esse efeito pode ser ativado no máximo uma vez a cada 180s. Ao usar o <color=#FFFFFF>Ataque Especial Reforçado: Vento Cortante — Purificação Elevada</color> ou o <color=#FFFFFF>Ataque Especial Reforçado: Vento Cortante — Aniquilação Tripla</color>, Velina obtém 45 pontos de <color=#FFFFFF>Sopro</color>. O limite de <color=#FFFFFF>Sopro</color> é 135 pontos.\nAo acionar <color=#FFFFFF>Turbulência</color>, Velina obtém 1 ponto de <Term:1000014> e invoca <Term:1000015>, causando <color=#A6C5FD>Dano de Vento</color>. Esse efeito pode ser ativado no máximo uma vez a cada 3s. Quando Velina tem 2 pontos de <color=#FFFFFF>Erosão de Vento</color>, na próxima vez que acionar <color=#FFFFFF>Turbulência</color>, consome 2 pontos de <color=#FFFFFF>Erosão de Vento</color> para aumentar o Multiplicador de Dano da <color=#FFFFFF>Turbulência</color> em <color=#2BAD00>110%</color>. Nesse caso, em vez de invocar um <color=#FFFFFF>Ciclone Concentrado</color>, invoca <Term:1000016>, e a ativação não concede pontos de <color=#FFFFFF>Erosão de Vento</color>.\nQuando o <color=#FFFFFF>Ciclone Devastador</color> invocado por Velina atinge pela primeira vez um inimigo em estado de <color=#FFFFFF>Contaminação</color>, ativa o efeito de <Term:1000017>, convertendo-o em um <color=#FFFFFF>Ciclone Devastador</color> do atributo correspondente e causando dano do atributo correspondente. Quando o <color=#FFFFFF>Ciclone Devastador</color> acerta um inimigo, reduz a <color=#A6C5FD>resistência à amplificação de anomalia de Vento</color> do inimigo em 7% por 35s. Ativações repetidas reiniciam a duração. Se o <color=#FFFFFF>Ciclone Devastador</color> após a <color=#FFFFFF>Infusão</color> atingir um inimigo, a <color=#FFFFFF>resistência à amplificação de anomalia do atributo correspondente</color> do inimigo também diminui 7% por 35s. Ativações repetidas reiniciam a duração.\nQuando um inimigo afetado pelo <color=#FFFFFF>Ciclone Devastador</color> é derrotado, a duração desse <color=#FFFFFF>Ciclone Devastador</color> é estendida em 5s. Esse efeito pode ser ativado apenas uma vez por <color=#FFFFFF>Ciclone Devastador</color>. Apenas um <color=#FFFFFF>Ciclone Devastador</color> pode existir por vez.\nO <color=#FFFFFF>Ciclone Concentrado</color> e o <color=#FFFFFF>Ciclone Devastador</color> causam uma explosão ao se dissipar. Quando essa explosão atinge um inimigo afetado por <color=#A6C5FD>Anomalia de Vento</color>, causa dano de <color=#FFFFFF>Floração</color> ao alvo uma vez: causa uma instância de dano de Anomalia de Atributo adicional, calculado com multiplicadores fixos de <color=#2BAD00>105%</color> e <color=#2BAD00>175%</color> de <color=#A6C5FD>Dano de Anomalia de Vento</color>.",
+                "4": "Quando a Recuperação de Energia inicial de Velina exceder 1,2, a cada 0,01 pontos excedidos, o dano causado aumenta 0,21%, até um máximo de 35%, e a Maestria de Anomalia aumenta 0,5 pontos, até um máximo de 84.\nAo entrar em combate, Velina obtém 45 pontos de <Term:1000008>. No Modo de Reconhecimento, esse efeito pode ser ativado no máximo uma vez a cada 180s. Ao usar o <color=#FFFFFF>Ataque Especial Reforçado: Vento Cortante — Purificação Elevada</color> ou o <color=#FFFFFF>Ataque Especial Reforçado: Vento Cortante — Aniquilação Tripla</color>, Velina obtém 45 pontos de <color=#FFFFFF>Sopro</color>. O limite de <color=#FFFFFF>Sopro</color> é 135 pontos.\nAo acionar <color=#FFFFFF>Turbulência</color>, Velina obtém 1 ponto de <Term:1000014> e invoca <Term:1000015>, causando <color=#A6C5FD>Dano de Vento</color>. Esse efeito pode ser ativado no máximo uma vez a cada 3s. Quando Velina tem 2 pontos de <color=#FFFFFF>Erosão de Vento</color>, na próxima vez que acionar <color=#FFFFFF>Turbulência</color>, consome 2 pontos de <color=#FFFFFF>Erosão de Vento</color> para aumentar o Multiplicador de Dano da <color=#FFFFFF>Turbulência</color> em <color=#2BAD00>120%</color>. Nesse caso, em vez de invocar um <color=#FFFFFF>Ciclone Concentrado</color>, invoca <Term:1000016>, e a ativação não concede pontos de <color=#FFFFFF>Erosão de Vento</color>.\nQuando o <color=#FFFFFF>Ciclone Devastador</color> invocado por Velina atinge pela primeira vez um inimigo em estado de <color=#FFFFFF>Contaminação</color>, ativa o efeito de <Term:1000017>, convertendo-o em um <color=#FFFFFF>Ciclone Devastador</color> do atributo correspondente e causando dano do atributo correspondente. Quando o <color=#FFFFFF>Ciclone Devastador</color> acerta um inimigo, reduz a <color=#A6C5FD>resistência à amplificação de anomalia de Vento</color> do inimigo em 7% por 35s. Ativações repetidas reiniciam a duração. Se o <color=#FFFFFF>Ciclone Devastador</color> após a <color=#FFFFFF>Infusão</color> atingir um inimigo, a <color=#FFFFFF>resistência à amplificação de anomalia do atributo correspondente</color> do inimigo também diminui 7% por 35s. Ativações repetidas reiniciam a duração.\nQuando um inimigo afetado pelo <color=#FFFFFF>Ciclone Devastador</color> é derrotado, a duração desse <color=#FFFFFF>Ciclone Devastador</color> é estendida em 5s. Esse efeito pode ser ativado apenas uma vez por <color=#FFFFFF>Ciclone Devastador</color>. Apenas um <color=#FFFFFF>Ciclone Devastador</color> pode existir por vez.\nO <color=#FFFFFF>Ciclone Concentrado</color> e o <color=#FFFFFF>Ciclone Devastador</color> causam uma explosão ao se dissipar. Quando essa explosão atinge um inimigo afetado por <color=#A6C5FD>Anomalia de Vento</color>, causa dano de <color=#FFFFFF>Floração</color> ao alvo uma vez: causa uma instância de dano de Anomalia de Atributo adicional, calculado com multiplicadores fixos de <color=#2BAD00>115%</color> e <color=#2BAD00>195%</color> de <color=#A6C5FD>Dano de Anomalia de Vento</color>.",
+                "5": "Quando a Recuperação de Energia inicial de Velina exceder 1,2, a cada 0,01 pontos excedidos, o dano causado aumenta 0,21%, até um máximo de 35%, e a Maestria de Anomalia aumenta 0,5 pontos, até um máximo de 84.\nAo entrar em combate, Velina obtém 45 pontos de <Term:1000008>. No Modo de Reconhecimento, esse efeito pode ser ativado no máximo uma vez a cada 180s. Ao usar o <color=#FFFFFF>Ataque Especial Reforçado: Vento Cortante — Purificação Elevada</color> ou o <color=#FFFFFF>Ataque Especial Reforçado: Vento Cortante — Aniquilação Tripla</color>, Velina obtém 45 pontos de <color=#FFFFFF>Sopro</color>. O limite de <color=#FFFFFF>Sopro</color> é 135 pontos.\nAo acionar <color=#FFFFFF>Turbulência</color>, Velina obtém 1 ponto de <Term:1000014> e invoca <Term:1000015>, causando <color=#A6C5FD>Dano de Vento</color>. Esse efeito pode ser ativado no máximo uma vez a cada 3s. Quando Velina tem 2 pontos de <color=#FFFFFF>Erosão de Vento</color>, na próxima vez que acionar <color=#FFFFFF>Turbulência</color>, consome 2 pontos de <color=#FFFFFF>Erosão de Vento</color> para aumentar o Multiplicador de Dano da <color=#FFFFFF>Turbulência</color> em <color=#2BAD00>130%</color>. Nesse caso, em vez de invocar um <color=#FFFFFF>Ciclone Concentrado</color>, invoca <Term:1000016>, e a ativação não concede pontos de <color=#FFFFFF>Erosão de Vento</color>.\nQuando o <color=#FFFFFF>Ciclone Devastador</color> invocado por Velina atinge pela primeira vez um inimigo em estado de <color=#FFFFFF>Contaminação</color>, ativa o efeito de <Term:1000017>, convertendo-o em um <color=#FFFFFF>Ciclone Devastador</color> do atributo correspondente e causando dano do atributo correspondente. Quando o <color=#FFFFFF>Ciclone Devastador</color> acerta um inimigo, reduz a <color=#A6C5FD>resistência à amplificação de anomalia de Vento</color> do inimigo em 7% por 35s. Ativações repetidas reiniciam a duração. Se o <color=#FFFFFF>Ciclone Devastador</color> após a <color=#FFFFFF>Infusão</color> atingir um inimigo, a <color=#FFFFFF>resistência à amplificação de anomalia do atributo correspondente</color> do inimigo também diminui 7% por 35s. Ativações repetidas reiniciam a duração.\nQuando um inimigo afetado pelo <color=#FFFFFF>Ciclone Devastador</color> é derrotado, a duração desse <color=#FFFFFF>Ciclone Devastador</color> é estendida em 5s. Esse efeito pode ser ativado apenas uma vez por <color=#FFFFFF>Ciclone Devastador</color>. Apenas um <color=#FFFFFF>Ciclone Devastador</color> pode existir por vez.\nO <color=#FFFFFF>Ciclone Concentrado</color> e o <color=#FFFFFF>Ciclone Devastador</color> causam uma explosão ao se dissipar. Quando essa explosão atinge um inimigo afetado por <color=#A6C5FD>Anomalia de Vento</color>, causa dano de <color=#FFFFFF>Floração</color> ao alvo uma vez: causa uma instância de dano de Anomalia de Atributo adicional, calculado com multiplicadores fixos de <color=#2BAD00>125%</color> e <color=#2BAD00>215%</color> de <color=#A6C5FD>Dano de Anomalia de Vento</color>.",
+                "6": "Quando a Recuperação de Energia inicial de Velina exceder 1,2, a cada 0,01 pontos excedidos, o dano causado aumenta 0,21%, até um máximo de 35%, e a Maestria de Anomalia aumenta 0,5 pontos, até um máximo de 84.\nAo entrar em combate, Velina obtém 45 pontos de <Term:1000008>. No Modo de Reconhecimento, esse efeito pode ser ativado no máximo uma vez a cada 180s. Ao usar o <color=#FFFFFF>Ataque Especial Reforçado: Vento Cortante — Purificação Elevada</color> ou o <color=#FFFFFF>Ataque Especial Reforçado: Vento Cortante — Aniquilação Tripla</color>, Velina obtém 45 pontos de <color=#FFFFFF>Sopro</color>. O limite de <color=#FFFFFF>Sopro</color> é 135 pontos.\nAo acionar <color=#FFFFFF>Turbulência</color>, Velina obtém 1 ponto de <Term:1000014> e invoca <Term:1000015>, causando <color=#A6C5FD>Dano de Vento</color>. Esse efeito pode ser ativado no máximo uma vez a cada 3s. Quando Velina tem 2 pontos de <color=#FFFFFF>Erosão de Vento</color>, na próxima vez que acionar <color=#FFFFFF>Turbulência</color>, consome 2 pontos de <color=#FFFFFF>Erosão de Vento</color> para aumentar o Multiplicador de Dano da <color=#FFFFFF>Turbulência</color> em <color=#2BAD00>140%</color>. Nesse caso, em vez de invocar um <color=#FFFFFF>Ciclone Concentrado</color>, invoca <Term:1000016>, e a ativação não concede pontos de <color=#FFFFFF>Erosão de Vento</color>.\nQuando o <color=#FFFFFF>Ciclone Devastador</color> invocado por Velina atinge pela primeira vez um inimigo em estado de <color=#FFFFFF>Contaminação</color>, ativa o efeito de <Term:1000017>, convertendo-o em um <color=#FFFFFF>Ciclone Devastador</color> do atributo correspondente e causando dano do atributo correspondente. Quando o <color=#FFFFFF>Ciclone Devastador</color> acerta um inimigo, reduz a <color=#A6C5FD>resistência à amplificação de anomalia de Vento</color> do inimigo em 7% por 35s. Ativações repetidas reiniciam a duração. Se o <color=#FFFFFF>Ciclone Devastador</color> após a <color=#FFFFFF>Infusão</color> atingir um inimigo, a <color=#FFFFFF>resistência à amplificação de anomalia do atributo correspondente</color> do inimigo também diminui 7% por 35s. Ativações repetidas reiniciam a duração.\nQuando um inimigo afetado pelo <color=#FFFFFF>Ciclone Devastador</color> é derrotado, a duração desse <color=#FFFFFF>Ciclone Devastador</color> é estendida em 5s. Esse efeito pode ser ativado apenas uma vez por <color=#FFFFFF>Ciclone Devastador</color>. Apenas um <color=#FFFFFF>Ciclone Devastador</color> pode existir por vez.\nO <color=#FFFFFF>Ciclone Concentrado</color> e o <color=#FFFFFF>Ciclone Devastador</color> causam uma explosão ao se dissipar. Quando essa explosão atinge um inimigo afetado por <color=#A6C5FD>Anomalia de Vento</color>, causa dano de <color=#FFFFFF>Floração</color> ao alvo uma vez: causa uma instância de dano de Anomalia de Atributo adicional, calculado com multiplicadores fixos de <color=#2BAD00>135%</color> e <color=#2BAD00>235%</color> de <color=#A6C5FD>Dano de Anomalia de Vento</color>.",
+                "7": "Quando a Recuperação de Energia inicial de Velina exceder 1,2, a cada 0,01 pontos excedidos, o dano causado aumenta 0,21%, até um máximo de 35%, e a Maestria de Anomalia aumenta 0,5 pontos, até um máximo de 84.\nAo entrar em combate, Velina obtém 45 pontos de <Term:1000008>. No Modo de Reconhecimento, esse efeito pode ser ativado no máximo uma vez a cada 180s. Ao usar o <color=#FFFFFF>Ataque Especial Reforçado: Vento Cortante — Purificação Elevada</color> ou o <color=#FFFFFF>Ataque Especial Reforçado: Vento Cortante — Aniquilação Tripla</color>, Velina obtém 45 pontos de <color=#FFFFFF>Sopro</color>. O limite de <color=#FFFFFF>Sopro</color> é 135 pontos.\nAo acionar <color=#FFFFFF>Turbulência</color>, Velina obtém 1 ponto de <Term:1000014> e invoca <Term:1000015>, causando <color=#A6C5FD>Dano de Vento</color>. Esse efeito pode ser ativado no máximo uma vez a cada 3s. Quando Velina tem 2 pontos de <color=#FFFFFF>Erosão de Vento</color>, na próxima vez que acionar <color=#FFFFFF>Turbulência</color>, consome 2 pontos de <color=#FFFFFF>Erosão de Vento</color> para aumentar o Multiplicador de Dano da <color=#FFFFFF>Turbulência</color> em <color=#2BAD00>150%</color>. Nesse caso, em vez de invocar um <color=#FFFFFF>Ciclone Concentrado</color>, invoca <Term:1000016>, e a ativação não concede pontos de <color=#FFFFFF>Erosão de Vento</color>.\nQuando o <color=#FFFFFF>Ciclone Devastador</color> invocado por Velina atinge pela primeira vez um inimigo em estado de <color=#FFFFFF>Contaminação</color>, ativa o efeito de <Term:1000017>, convertendo-o em um <color=#FFFFFF>Ciclone Devastador</color> do atributo correspondente e causando dano do atributo correspondente. Quando o <color=#FFFFFF>Ciclone Devastador</color> acerta um inimigo, reduz a <color=#A6C5FD>resistência à amplificação de anomalia de Vento</color> do inimigo em 7% por 35s. Ativações repetidas reiniciam a duração. Se o <color=#FFFFFF>Ciclone Devastador</color> após a <color=#FFFFFF>Infusão</color> atingir um inimigo, a <color=#FFFFFF>resistência à amplificação de anomalia do atributo correspondente</color> do inimigo também diminui 7% por 35s. Ativações repetidas reiniciam a duração.\nQuando um inimigo afetado pelo <color=#FFFFFF>Ciclone Devastador</color> é derrotado, a duração desse <color=#FFFFFF>Ciclone Devastador</color> é estendida em 5s. Esse efeito pode ser ativado apenas uma vez por <color=#FFFFFF>Ciclone Devastador</color>. Apenas um <color=#FFFFFF>Ciclone Devastador</color> pode existir por vez.\nO <color=#FFFFFF>Ciclone Concentrado</color> e o <color=#FFFFFF>Ciclone Devastador</color> causam uma explosão ao se dissipar. Quando essa explosão atinge um inimigo afetado por <color=#A6C5FD>Anomalia de Vento</color>, causa dano de <color=#FFFFFF>Floração</color> ao alvo uma vez: causa uma instância de dano de Anomalia de Atributo adicional, calculado com multiplicadores fixos de <color=#2BAD00>145%</color> e <color=#2BAD00>255%</color> de <color=#A6C5FD>Dano de Anomalia de Vento</color>."
+            }
+        },
+        "MathSkill": {
+            "Title": "Habilidade Extra: Etiqueta da Festa do Chá",
+            "Description": "Quando há outro personagem do tipo <color=#FFFFFF>Anômalo</color> ou do mesmo atributo na equipe:\nO dano de <color=#A6C5FD>Ventania</color> e <color=#FFFFFF>Turbulência</color> de Velina aumenta 10%. Quando o ataque pesado de um <color=#FFFFFF>Supremo</color> atinge um inimigo afetado por <color=#A6C5FD>Anomalia de Vento</color>, ativa uma instância de dano de <color=#FFFFFF>Floração</color> contra o alvo: contabiliza uma instância de dano de Anomalia de Atributo adicional, com um valor fixo de <color=#A6C5FD>680%</color> do <color=#A6C5FD>dano de Anomalia de Vento</color>.\nPara <color=#FFFFFF>Passiva Principal: Brisa Elegante</color>, a redução de <color=#FFFFFF>resistência à amplificação de anomalia</color> de <Term:1000016> aumenta mais 7%, o Atordoamento causado aumenta 30% e a Amplificação de Anomalia de Atributo acumulada aumenta 15%."
+        },
+        "AwakenAbility": {},
+        "BaseProps": [
+            {
+                "31201": 0,
+                "12101": 0
+            },
+            {
+                "31201": 18,
+                "12101": 0
+            },
+            {
+                "31201": 18,
+                "12101": 25
+            },
+            {
+                "31201": 36,
+                "12101": 25
+            },
+            {
+                "31201": 36,
+                "12101": 50
+            },
+            {
+                "31201": 54,
+                "12101": 50
+            },
+            {
+                "31201": 54,
+                "12101": 75
+            }
+        ]
+    },
+    "SkillDescriptions": {
+        "0": {
+            "156100001": {
+                "Title": "Ataque Básico: Leques Dançantes",
+                "Description": "Pressione <IconMap:Icon_Normal> para ativar:\nExecuta até cinco ataques à frente, causando <color=#A6C5FD>Dano de Vento</color>.\nDurante a execução do 5º ataque, o nível de Anti-Interrupção de Velina aumenta e o dano sofrido diminui 40%."
+            },
+            "156100015": {
+                "Title": "Ataque Básico: Leques Dançantes"
+            },
+            "156100016": {
+                "Description": "Multiplicador de Dano de 1º Golpe",
+                "Param": "{Skill:1561001, Prop:1001}"
+            },
+            "156100017": {
+                "Description": "Multiplicador de Dano de 2º Golpe",
+                "Param": "{Skill:1561002, Prop:1001}"
+            },
+            "156100018": {
+                "Description": "Multiplicador de Dano de 3º Golpe",
+                "Param": "{Skill:1561003, Prop:1001}"
+            },
+            "156100019": {
+                "Description": "Multiplicador de Dano de 4º Golpe",
+                "Param": "{Skill:1561004, Prop:1001}"
+            },
+            "156100020": {
+                "Description": "Multiplicador de Dano de 5º Golpe",
+                "Param": "{Skill:1561005, Prop:1001}"
+            },
+            "156100021": {
+                "Description": "Multiplicador de Atordoamento de 1º Golpe",
+                "Param": "{Skill:1561001, Prop:1002}"
+            },
+            "156100022": {
+                "Description": "Multiplicador de Atordoamento de 2º Golpe",
+                "Param": "{Skill:1561002, Prop:1002}"
+            },
+            "156100023": {
+                "Description": "Multiplicador de Atordoamento de 3º Golpe",
+                "Param": "{Skill:1561003, Prop:1002}"
+            },
+            "156100024": {
+                "Description": "Multiplicador de Atordoamento de 4º Golpe",
+                "Param": "{Skill:1561004, Prop:1002}"
+            },
+            "156100025": {
+                "Description": "Multiplicador de Atordoamento de 5º Golpe",
+                "Param": "{Skill:1561005, Prop:1002}"
+            }
+        },
+        "1": {
+            "156100002": {
+                "Title": "Ataque Especial: Vento Cortante — Purificação Sísmica",
+                "Description": "Pressione <IconMap:Icon_Special> para ativar:\nLança uma rajada de vento à frente, causando <color=#A6C5FD>Dano de Vento</color>."
+            },
+            "156100003": {
+                "Title": "Ataque Especial Reforçado: Vento Cortante — Purificação Elevada",
+                "Description": "Com energia suficiente, pressione <IconMap:Icon_SpecialReady> para ativar:\nPrimeiro esquiva para trás, depois libera uma enorme explosão de vento para atacar os inimigos, causando <color=#A6C5FD>Dano de Vento</color>.\nDurante a esquiva para trás, um efeito de esquiva é ativado: ao se esquivar com sucesso de um ataque inimigo, ativa a <color=#FFFFFF>Visão Vital</color>.\nApós usar a habilidade, pressione <IconMap:Icon_Normal> para encadear o 5º golpe do <color=#FFFFFF>Ataque Básico</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "156100004": {
+                "Title": "Ataque Especial Reforçado: Vento Cortante — Aniquilação Tripla",
+                "Description": "Com energia suficiente, após <color=#FFFFFF>Ataque Especial Reforçado: Vento Cortante — Purificação Elevada</color>, pressione <IconMap:Icon_SpecialReady> ou mantenha pressionado para ativar:\nAgita o leque continuamente, causando <color=#A6C5FD>Dano de Vento</color>.\nApós usar a habilidade, pressione <IconMap:Icon_Normal> para encadear o 5º golpe do <color=#FFFFFF>Ataque Básico</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "156100005": {
+                "Title": "Ataque Especial Reforçado: Vento Cortante — Olho da Tempestade",
+                "Description": "Com 90 ou mais de <Term:1000008>, mantenha <IconMap:Icon_Special> ou <IconMap:Icon_Normal> pressionado para ativar:\nVelina canaliza um ciclone e depois invoca um <Term:1000016> que ataca continuamente os inimigos e ativa a <color=#FFFFFF>Assistência Reativa</color> do personagem anterior.\nO <color=#FFFFFF>Ciclone Devastador</color> dura 5s e causa <color=#A6C5FD>Dano de Vento</color> a inimigos próximos uma vez a cada 0,5s."
+            },
+            "156100026": {
+                "Title": "Ataque Especial: Vento Cortante — Purificação Sísmica"
+            },
+            "156100027": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1561008, Prop:1001}"
+            },
+            "156100028": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1561008, Prop:1002}"
+            },
+            "156100029": {
+                "Title": "Ataque Especial Reforçado: Vento Cortante — Purificação Elevada"
+            },
+            "156100030": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1561009, Prop:1001}"
+            },
+            "156100031": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1561009, Prop:1002}"
+            },
+            "156100032": {
+                "Description": "Custo de Energia",
+                "Param": "45"
+            },
+            "156100033": {
+                "Title": "Ataque Especial Reforçado: Vento Cortante — Aniquilação Tripla"
+            },
+            "156100034": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1561010, Prop:1001}"
+            },
+            "156100035": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1561010, Prop:1002}"
+            },
+            "156100036": {
+                "Description": "Custo de Energia",
+                "Param": "45"
+            },
+            "156100037": {
+                "Title": "Ataque Especial Reforçado: Vento Cortante — Olho da Tempestade"
+            },
+            "156100038": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1561006, Prop:1001}"
+            },
+            "156100039": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1561006, Prop:1002}"
+            },
+            "156100040": {
+                "Description": "Consumo de Sopro",
+                "Param": "90"
+            },
+            "156100041": {
+                "Title": "Ciclone Devastador"
+            },
+            "156100042": {
+                "Description": "Ciclone Devastador: Multiplicador de Dano de ataque único do atributo Vento",
+                "Param": "{Skill:1561007, Prop:1001}"
+            },
+            "156100043": {
+                "Description": "Ciclone Devastador: Multiplicador de Atordoamento de ataque único de Vento",
+                "Param": "{Skill:1561007, Prop:1002}"
+            },
+            "156100044": {
+                "Description": "Ciclone Devastador: Multiplicador de Dano de ataque único do atributo de Tingimento",
+                "Param": "{{Skill:1561020, Prop:1001}*0.2}"
+            },
+            "156100045": {
+                "Title": "Ciclone Concentrado"
+            },
+            "156100046": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1561021, Prop:1001}"
+            },
+            "156100047": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1561021, Prop:1002}"
+            }
+        },
+        "2": {
+            "156100006": {
+                "Title": "Esquiva: Vendaval",
+                "Description": "Pressione <IconMap:Icon_Evade> para ativar:\nUma esquiva rápida.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "156100007": {
+                "Title": "Ataque Rápido: Passo do Vento",
+                "Description": "Pressione <IconMap:Icon_Normal> durante uma esquiva para ativar:\nExecuta um ataque rápido à frente, causando <color=#A6C5FD>Dano de Vento</color>."
+            },
+            "156100008": {
+                "Title": "Contraesquiva: Dobrando Nuvens",
+                "Description": "Pressione <IconMap:Icon_Normal> durante uma <color=#FFFFFF>Esquiva Perfeita</color> para ativar:\nExecuta uma série de ataques contra o alvo, causando <color=#A6C5FD>Dano de Vento</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "156100048": {
+                "Title": "Ataque Rápido: Passo do Vento"
+            },
+            "156100049": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1561011, Prop:1001}"
+            },
+            "156100050": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1561011, Prop:1002}"
+            },
+            "156100051": {
+                "Title": "Contraesquiva: Dobrando Nuvens"
+            },
+            "156100052": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1561012, Prop:1001}"
+            },
+            "156100053": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1561012, Prop:1002}"
+            }
+        },
+        "3": {
+            "156100009": {
+                "Title": "Ataque em Cadeia: Esplendor Rodopiante",
+                "Description": "Ao ativar um <color=#FFFFFF>Ataque em Cadeia</color>, selecione a personagem para ativar:\nTransforma-se em um furacão, executa vários ataques contra os inimigos e desfere um Golpe Final, causando <color=#A6C5FD>Dano de Vento</color> elevado.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "156100010": {
+                "Title": "Supremo: Ouvir a Tempestade",
+                "Description": "Com o Índice de dB no <color=#FFFFFF>Máximo</color>, pressione <IconMap:Icon_UltimateReady> para ativar:\nRealiza vários ataques à frente, causando <color=#A6C5FD>Dano de Vento</color> elevado.\nApós usar a habilidade, ativa a <color=#FFFFFF>Assistência Reativa</color> do personagem anterior.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "156100054": {
+                "Title": "Ataque em Cadeia: Esplendor Rodopiante"
+            },
+            "156100055": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1561013, Prop:1001}"
+            },
+            "156100056": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1561013, Prop:1002}"
+            },
+            "156100057": {
+                "Title": "Supremo: Ouvir a Tempestade"
+            },
+            "156100058": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1561014, Prop:1001}"
+            },
+            "156100059": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1561014, Prop:1002}"
+            }
+        },
+        "6": {
+            "156100012": {
+                "Title": "Assistência Reativa: Protocolo de Emergência",
+                "Description": "Quando o personagem ativo é lançado para o alto, pressione <IconMap:Icon_Switch> para ativar:\nExecuta ataques consecutivos contra o inimigo, causando <color=#A6C5FD>Dano de Vento</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "156100013": {
+                "Title": "Assistência Defensiva: Intervenção Criteriosa",
+                "Description": "Quando o personagem em campo está prestes a sofrer um ataque, pressione <IconMap:Icon_Switch> para ativar:\nBloqueia o ataque inimigo, causando Atordoamento elevado.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "156100014": {
+                "Title": "Assistência Imediata: Técnicas de Negociação",
+                "Description": "Pressione <IconMap:Icon_Normal> após uma <color=#FFFFFF>Assistência Defensiva</color> para ativar:\nRealiza uma série de ataques, causando <color=#A6C5FD>Dano de Vento</color>.\nA personagem fica invulnerável ao usar esta habilidade."
+            },
+            "156100060": {
+                "Title": "Assistência Reativa: Protocolo de Emergência"
+            },
+            "156100061": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1561015, Prop:1001}"
+            },
+            "156100062": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1561015, Prop:1002}"
+            },
+            "156100063": {
+                "Title": "Assistência Defensiva: Intervenção Criteriosa"
+            },
+            "156100064": {
+                "Description": "Multiplicador de Atordoamento de Defensiva Leve",
+                "Param": "{Skill:1561016, Prop:1002}"
+            },
+            "156100065": {
+                "Description": "Multiplicador de Atordoamento de Defensiva Pesada",
+                "Param": "{Skill:1561017, Prop:1002}"
+            },
+            "156100066": {
+                "Description": "Multiplicador de Atordoamento de Defensiva em Cadeia",
+                "Param": "{Skill:1561018, Prop:1002}"
+            },
+            "156100067": {
+                "Title": "Assistência Imediata: Técnicas de Negociação"
+            },
+            "156100068": {
+                "Description": "Multiplicador de Dano",
+                "Param": "{Skill:1561019, Prop:1001}"
+            },
+            "156100069": {
+                "Description": "Multiplicador de Atordoamento",
+                "Param": "{Skill:1561019, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1561001": {
+            "DamageValue": 5170,
+            "DamageGrowth": 470,
+            "DazeValue": 2360,
+            "DazeGrowth": 110
+        },
+        "1561002": {
+            "DamageValue": 4890,
+            "DamageGrowth": 450,
+            "DazeValue": 2350,
+            "DazeGrowth": 110
+        },
+        "1561003": {
+            "DamageValue": 16910,
+            "DamageGrowth": 1540,
+            "DazeValue": 8050,
+            "DazeGrowth": 370
+        },
+        "1561004": {
+            "DamageValue": 12560,
+            "DamageGrowth": 1150,
+            "DazeValue": 6290,
+            "DazeGrowth": 290
+        },
+        "1561005": {
+            "DamageValue": 22960,
+            "DamageGrowth": 2090,
+            "DazeValue": 11270,
+            "DazeGrowth": 520
+        },
+        "1561006": {
+            "DamageValue": 21670,
+            "DamageGrowth": 1970,
+            "DazeValue": 18340,
+            "DazeGrowth": 840
+        },
+        "1561007": {
+            "DamageValue": 3900,
+            "DamageGrowth": 360,
+            "DazeValue": 8250,
+            "DazeGrowth": 380
+        },
+        "1561008": {
+            "DamageValue": 5860,
+            "DamageGrowth": 540,
+            "DazeValue": 4960,
+            "DazeGrowth": 230
+        },
+        "1561009": {
+            "DamageValue": 44050,
+            "DamageGrowth": 4010,
+            "DazeValue": 30250,
+            "DazeGrowth": 1380
+        },
+        "1561010": {
+            "DamageValue": 72520,
+            "DamageGrowth": 6600,
+            "DazeValue": 51520,
+            "DazeGrowth": 2350
+        },
+        "1561011": {
+            "DamageValue": 9970,
+            "DamageGrowth": 910,
+            "DazeValue": 4220,
+            "DazeGrowth": 200
+        },
+        "1561012": {
+            "DamageValue": 39490,
+            "DamageGrowth": 3590,
+            "DazeValue": 28240,
+            "DazeGrowth": 1290
+        },
+        "1561013": {
+            "DamageValue": 80040,
+            "DamageGrowth": 7280,
+            "DazeValue": 23840,
+            "DazeGrowth": 1090
+        },
+        "1561014": {
+            "DamageValue": 218830,
+            "DamageGrowth": 19900,
+            "DazeValue": 38130,
+            "DazeGrowth": 1740
+        },
+        "1561015": {
+            "DamageValue": 20380,
+            "DamageGrowth": 1860,
+            "DazeValue": 8620,
+            "DazeGrowth": 400
+        },
+        "1561016": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1561017": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1561018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1561019": {
+            "DamageValue": 53270,
+            "DamageGrowth": 4850,
+            "DazeValue": 39670,
+            "DazeGrowth": 1810
+        },
+        "1561020": {
+            "DamageValue": 9750,
+            "DamageGrowth": 890,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1561021": {
+            "DamageValue": 3250,
+            "DamageGrowth": 300,
+            "DazeValue": 13750,
+            "DazeGrowth": 630
+        }
+    }
+}

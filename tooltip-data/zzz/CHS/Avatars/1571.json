@@ -1,0 +1,540 @@
+{
+    "Name": "诺姆",
+    "ElementTypes": [
+        "Fire"
+    ],
+    "Specialty": {
+        "Id": 2,
+        "Name": "击破"
+    },
+    "Talents": {
+        "1": {
+            "Title": "激进远视主义",
+            "Description": "<color=#FFFFFF>[强化特殊技：火力实验]</color>中[嗯呢炮塔]展开导弹舱的持续时间增加至12秒；任意招式中的[破甲弹头]或[高爆弹头]命中敌人时，使敌人的全属性伤害抗性降低15%，持续15秒。",
+            "Lore": "前进！不择手段地前进！\n末日里追逐我们的东西太多，漆黑的边界，短暂的寿限。\n人类的生命与文明，比邦布的逻辑核心还要易碎。\n只有不择手段地前进，才能永远比毁灭快上那么一点。\n「而且，最先看到的风景永远最美妙，不是吗？」"
+        },
+        "2": {
+            "Title": "万物统一公理",
+            "Description": "<color=#FFFFFF>[额外能力：集群优势]</color>中，每层<color=#FFFFFF>[技术鸿沟]</color>提供的失衡易伤倍率提升至6%；诺姆处于接战状态下发动<color=#FFFFFF>[普通攻击：帽子把戏]</color>时，回复25点能量，20秒内最多触发一次。",
+            "Lore": "物理学家的世界总是被新理论一次次颠覆，普通人的秩序也总是被新的意外和纷争所毁灭。\n万事万物的联系总是莫测，极端紧密极端脆弱，如此难以捉摸。\n「让邦布和罗斯凯利法更加伟大？你是说『追逐好奇心的副产物』吧？」"
+        },
+        "3": {
+            "Title": "天生反派佯谬",
+            "Description": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[连携技]</color> 技能等级+2",
+            "Lore": "风和日丽的罗斯凯利法又是平静安宁的一天，没有什么反派敢在天空之城兴风作浪。\n不过对邦布们来说，或许还是有一位超级大反派——\n「儿童动画里最棒的天才总是要跑去当坏蛋…」\n「拜托，头发和预算一样紧巴巴的可怜疯狂科学家到底有什么好的？」"
+        },
+        "4": {
+            "Title": "优势邦布学说",
+            "Description": "诺姆消耗<color=#FFFFFF>[预热膛温]</color>触发<color=#FFFFFF>[连携技]</color>时：使诺姆和对应代理人回复200点喧响值。",
+            "Lore": "邦布们无疑是百年来人类所能拥有最忠诚的同伴、最高效的工具、甚至是…最强大的武器。\n也如所有未经教化的稚童和未得良主的宝剑一样，邦布能为任何人所用，不管是正义的法厄同还是穷凶极恶的反派。\n「首先我是个爱好邦布的和平主义者。」\n「其次我的日常工作之一，就是让最锋利的剑始终握在我们手中。」"
+        },
+        "5": {
+            "Title": "嗯呢大爆炸",
+            "Description": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避]</color>、<color=#FFFFFF>[支援技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[连携技]</color> 技能等级+2",
+            "Lore": "据有史可稽的外策局卷宗记载，年轻的诺姆研究员所主导的项目迅速提升了量产型邦布的极限性能指标。\n而在擢升为外策局首席技术专家前，诺姆最重要的任务是证明自己不会在某天把布亚斯特送出大气层。\n「更高，更快，更强！」\n「限制想象力的，只有勇气和技术经费！」"
+        },
+        "6": {
+            "Title": "天才第一因",
+            "Description": "队伍中任意角色使敌人进入失衡状态后，诺姆将不断召唤导弹轰击场上随机敌人，持续6秒，每发导弹间隔0.75秒，并对范围内敌人造成等同于诺姆200%攻击力的<color=#FF5521>火属性伤害</color>，该伤害会被视为<color=#FFFFFF>[终结技]</color>伤害，重复触发刷新持续时间，30秒内最多触发1次；诺姆的[破甲弹头]造成的失衡值提升<color=#FFFFFF>30%</color>，[高爆弹头]造成的伤害提升<color=#FFFFFF>30%</color>。",
+            "Lore": "任何伟大的创造都源于好奇心加上巧合，或许第一个邦布灵魂的诞生，也不过是由于挽昼女士对于生命迷思的困惑。"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "核心被动：精准制导",
+            "DescriptionByLevel": {
+                "1": "初始暴击率超过50%时，每超过1%，暴击伤害提升<color=#2BAD00>0.86%</color>，最多额外提升<color=#2BAD00>43%</color>；\n初始暴击率超过50%时，每超过1%，[强化特殊技]、[特殊技]、[终结技]攻击命中敌人时，造成的失衡值提升<color=#2BAD00>0.44%</color>，最多额外提升<color=#2BAD00>22%</color>；\n诺姆会根据自身贯穿力额外提升攻击力，每1点贯穿力将提升1.25点攻击力，最多提升1200点攻击力；\n进入战场时，诺姆立刻获得60%<color=#FFFFFF><Term:1000011></color>，在勘域模式中此效果180秒内最多触发一次；\n<color=#FFFFFF>[预热膛温]</color>大于等于80%后，下次发动的<color=#FFFFFF>[普通攻击：帽子把戏]</color>将无视冷却时间限制触发<color=#FFFFFF>[快速支援]</color>，并消耗80%<color=#FFFFFF>[预热膛温]</color>将其替换为<color=#FFFFFF>[连携技]</color>。",
+                "2": "初始暴击率超过50%时，每超过1%，暴击伤害提升<color=#2BAD00>1%</color>，最多额外提升<color=#2BAD00>50%</color>；\n初始暴击率超过50%时，每超过1%，[强化特殊技]、[特殊技]、[终结技]攻击命中敌人时，造成的失衡值提升<color=#2BAD00>0.5%</color>，最多额外提升<color=#2BAD00>25%</color>；\n诺姆会根据自身贯穿力额外提升攻击力，每1点贯穿力将提升1.25点攻击力，最多提升1200点攻击力；\n进入战场时，诺姆立刻获得60%<color=#FFFFFF><Term:1000011></color>，在勘域模式中此效果180秒内最多触发一次；\n<color=#FFFFFF>[预热膛温]</color>大于等于80%后，下次发动的<color=#FFFFFF>[普通攻击：帽子把戏]</color>将无视冷却时间限制触发<color=#FFFFFF>[快速支援]</color>，并消耗80%<color=#FFFFFF>[预热膛温]</color>将其替换为<color=#FFFFFF>[连携技]</color>。",
+                "3": "初始暴击率超过50%时，每超过1%，暴击伤害提升<color=#2BAD00>1.14%</color>，最多额外提升<color=#2BAD00>57%</color>；\n初始暴击率超过50%时，每超过1%，[强化特殊技]、[特殊技]、[终结技]攻击命中敌人时，造成的失衡值提升<color=#2BAD00>0.56%</color>，最多额外提升<color=#2BAD00>28%</color>；\n诺姆会根据自身贯穿力额外提升攻击力，每1点贯穿力将提升1.25点攻击力，最多提升1200点攻击力；\n进入战场时，诺姆立刻获得60%<color=#FFFFFF><Term:1000011></color>，在勘域模式中此效果180秒内最多触发一次；\n<color=#FFFFFF>[预热膛温]</color>大于等于80%后，下次发动的<color=#FFFFFF>[普通攻击：帽子把戏]</color>将无视冷却时间限制触发<color=#FFFFFF>[快速支援]</color>，并消耗80%<color=#FFFFFF>[预热膛温]</color>将其替换为<color=#FFFFFF>[连携技]</color>。",
+                "4": "初始暴击率超过50%时，每超过1%，暴击伤害提升<color=#2BAD00>1.28%</color>，最多额外提升<color=#2BAD00>64%</color>；\n初始暴击率超过50%时，每超过1%，[强化特殊技]、[特殊技]、[终结技]攻击命中敌人时，造成的失衡值提升<color=#2BAD00>0.62%</color>，最多额外提升<color=#2BAD00>31%</color>；\n诺姆会根据自身贯穿力额外提升攻击力，每1点贯穿力将提升1.25点攻击力，最多提升1200点攻击力；\n进入战场时，诺姆立刻获得60%<color=#FFFFFF><Term:1000011></color>，在勘域模式中此效果180秒内最多触发一次；\n<color=#FFFFFF>[预热膛温]</color>大于等于80%后，下次发动的<color=#FFFFFF>[普通攻击：帽子把戏]</color>将无视冷却时间限制触发<color=#FFFFFF>[快速支援]</color>，并消耗80%<color=#FFFFFF>[预热膛温]</color>将其替换为<color=#FFFFFF>[连携技]</color>。",
+                "5": "初始暴击率超过50%时，每超过1%，暴击伤害提升<color=#2BAD00>1.42%</color>，最多额外提升<color=#2BAD00>71%</color>；\n初始暴击率超过50%时，每超过1%，[强化特殊技]、[特殊技]、[终结技]攻击命中敌人时，造成的失衡值提升<color=#2BAD00>0.68%</color>，最多额外提升<color=#2BAD00>34%</color>；\n诺姆会根据自身贯穿力额外提升攻击力，每1点贯穿力将提升1.25点攻击力，最多提升1200点攻击力；\n进入战场时，诺姆立刻获得60%<color=#FFFFFF><Term:1000011></color>，在勘域模式中此效果180秒内最多触发一次；\n<color=#FFFFFF>[预热膛温]</color>大于等于80%后，下次发动的<color=#FFFFFF>[普通攻击：帽子把戏]</color>将无视冷却时间限制触发<color=#FFFFFF>[快速支援]</color>，并消耗80%<color=#FFFFFF>[预热膛温]</color>将其替换为<color=#FFFFFF>[连携技]</color>。",
+                "6": "初始暴击率超过50%时，每超过1%，暴击伤害提升<color=#2BAD00>1.56%</color>，最多额外提升<color=#2BAD00>78%</color>；\n初始暴击率超过50%时，每超过1%，[强化特殊技]、[特殊技]、[终结技]攻击命中敌人时，造成的失衡值提升<color=#2BAD00>0.74%</color>，最多额外提升<color=#2BAD00>37%</color>；\n诺姆会根据自身贯穿力额外提升攻击力，每1点贯穿力将提升1.25点攻击力，最多提升1200点攻击力；\n进入战场时，诺姆立刻获得60%<color=#FFFFFF><Term:1000011></color>，在勘域模式中此效果180秒内最多触发一次；\n<color=#FFFFFF>[预热膛温]</color>大于等于80%后，下次发动的<color=#FFFFFF>[普通攻击：帽子把戏]</color>将无视冷却时间限制触发<color=#FFFFFF>[快速支援]</color>，并消耗80%<color=#FFFFFF>[预热膛温]</color>将其替换为<color=#FFFFFF>[连携技]</color>。",
+                "7": "初始暴击率超过50%时，每超过1%，暴击伤害提升<color=#2BAD00>1.7%</color>，最多额外提升<color=#2BAD00>85%</color>；\n初始暴击率超过50%时，每超过1%，[强化特殊技]、[特殊技]、[终结技]攻击命中敌人时，造成的失衡值提升<color=#2BAD00>0.8%</color>，最多额外提升<color=#2BAD00>40%</color>；\n诺姆会根据自身贯穿力额外提升攻击力，每1点贯穿力将提升1.25点攻击力，最多提升1200点攻击力；\n进入战场时，诺姆立刻获得60%<color=#FFFFFF><Term:1000011></color>，在勘域模式中此效果180秒内最多触发一次；\n<color=#FFFFFF>[预热膛温]</color>大于等于80%后，下次发动的<color=#FFFFFF>[普通攻击：帽子把戏]</color>将无视冷却时间限制触发<color=#FFFFFF>[快速支援]</color>，并消耗80%<color=#FFFFFF>[预热膛温]</color>将其替换为<color=#FFFFFF>[连携技]</color>。"
+            }
+        },
+        "MathSkill": {
+            "Title": "额外能力：集群优势",
+            "Description": "队伍中存在<color=#FFFFFF>[强攻]</color>、<color=#FFFFFF>[命破]</color>角色或与自身阵营相同的角色时触发：\n诺姆及其造物、战斗邦布攻击命中敌人时，对敌人施加1层<color=#FFFFFF>[技术鸿沟]</color>，每层<color=#FFFFFF>[技术鸿沟]</color>能够使目标的失衡易伤倍率提升3%，最多叠加10层，每0.5秒最多叠加1层；\n持有任意层数<color=#FFFFFF>[技术鸿沟]</color>的敌人进入失衡状态后的失衡持续时间提升2秒，失衡持续时间提升效果与同类效果不可叠加，拥有<color=#FFFFFF>[技术鸿沟]</color>效果的敌人失衡结束时<color=#FFFFFF>[技术鸿沟]</color>效果结束；\n<color=#FFFFFF><Term:1000012></color>期间，诺姆的攻击力提升44点，该效果随角色等级提升，每级增加14点，最多提升870点；\n<color=#FFFFFF>[嗯呢弹幕]</color>期间，全队代理人造成的伤害提升<color=#FFFFFF>20%</color>。"
+        },
+        "AwakenAbility": {},
+        "BaseProps": [
+            {
+                "20101": 0,
+                "12101": 0
+            },
+            {
+                "20101": 480,
+                "12101": 0
+            },
+            {
+                "20101": 480,
+                "12101": 25
+            },
+            {
+                "20101": 960,
+                "12101": 25
+            },
+            {
+                "20101": 960,
+                "12101": 50
+            },
+            {
+                "20101": 1440,
+                "12101": 50
+            },
+            {
+                "20101": 1440,
+                "12101": 75
+            }
+        ]
+    },
+    "SkillDescriptions": {
+        "0": {
+            "157100001": {
+                "Title": "普通攻击：工程保险",
+                "Description": "点按 <IconMap:Icon_Normal> 发动：\n向前方进行至多四段的攻击，造成<color=#FF5521>火属性伤害</color>。"
+            },
+            "157100002": {
+                "Title": "普通攻击：帽子把戏",
+                "Description": "诺姆为当前操作角色，且处于接战状态时，每秒获得1.5%<color=#FFFFFF>[预热膛温]</color>；\n头上有<color=#FFFFFF>[随行礼帽]</color>时，长按 <IconMap:Icon_Normal> 发动：\n炮击后扔出<color=#FFFFFF>[随行礼帽]</color>，令<color=#FFFFFF>[随行礼帽]</color>发动一轮空中射击，造成<color=#FF5521>火属性伤害</color>，并暂存<color=#FFFFFF>[预热膛温]</color>；\n招式命中敌人时，将触发上一位角色的<color=#FFFFFF>[快速支援]</color>，5秒内最多触发1次；\n<color=#FFFFFF>[随行礼帽]</color>被扔出后，会代替诺姆以相同的速度累积并暂存<color=#FFFFFF>[预热膛温]</color>，期间诺姆无需在前场；\n诺姆重新拾取<color=#FFFFFF>[随行礼帽]</color>后，将立即获得暂存的<color=#FFFFFF>[预热膛温]</color>；\n长按 <IconMap:Icon_Normal> 时， <color=#FFFFFF>[随行礼帽]</color>会加速跑向诺姆；\n当诺姆拾取随行礼帽后的<color=#FFFFFF>[预热膛温]</color>能够达到80%时，<color=#FFFFFF>[随行礼帽]</color>会自动加速跑向诺姆；\n当诺姆从前场切换至后场，且处于接战状态时，若<color=#FFFFFF>[预热膛温]</color>未满，<color=#FFFFFF>[随行礼帽]</color>会自动跳入战场；\n招式发动期间抗打断等级提升。"
+            },
+            "157110001": {
+                "Title": "普通攻击：工程保险"
+            },
+            "157110002": {
+                "Description": "一段伤害倍率",
+                "Param": "{Skill:1571001, Prop:1001}"
+            },
+            "157110003": {
+                "Description": "二段伤害倍率",
+                "Param": "{Skill:1571002, Prop:1001}"
+            },
+            "157110004": {
+                "Description": "三段伤害倍率",
+                "Param": "{Skill:1571003, Prop:1001}"
+            },
+            "157110005": {
+                "Description": "四段伤害倍率",
+                "Param": "{Skill:1571004, Prop:1001}"
+            },
+            "157110006": {
+                "Description": "一段失衡倍率",
+                "Param": "{Skill:1571001, Prop:1002}"
+            },
+            "157110007": {
+                "Description": "二段失衡倍率",
+                "Param": "{Skill:1571002, Prop:1002}"
+            },
+            "157110008": {
+                "Description": "三段失衡倍率",
+                "Param": "{Skill:1571003, Prop:1002}"
+            },
+            "157110009": {
+                "Description": "四段失衡倍率",
+                "Param": "{Skill:1571004, Prop:1002}"
+            },
+            "157110010": {
+                "Title": "普通攻击：帽子把戏"
+            },
+            "157110011": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1571005, Prop:1001}"
+            },
+            "157110012": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1571005, Prop:1002}"
+            }
+        },
+        "1": {
+            "157100003": {
+                "Title": "特殊技：高温熔断",
+                "Description": "点按 <IconMap:Icon_Special> 发动：\n炮击，造成<color=#FF5521>火属性伤害</color>。"
+            },
+            "157100004": {
+                "Title": "强化特殊技：嗯呢弹幕",
+                "Description": "能量足够时，点按 <IconMap:Icon_SpecialReady> 发动：\n驾驶炮塔连续射击并根据敌人状态发射不同类型的导弹：\n主要攻击目标未处于失衡状态时，发射破甲弹头，造成<color=#FF5521>火属性伤害</color>并累积较多<color=#FFFFFF>失衡值</color>；\n主要攻击目标处于失衡状态时，发射高爆弹头，造成更高<color=#FF5521>火属性伤害</color>；\n招式发动后，诺姆获得16%<color=#FFFFFF><Term:1000011></color>，并进入<color=#FFFFFF>[嗯呢弹幕]</color>状态，持续32秒，<color=#FFFFFF>[嗯呢弹幕]</color>状态期间，诺姆会放置两座<color=#FFFFFF>[嗯呢炮塔]</color>加入战斗；\n保持长按可以持续消耗能量并延长最多2秒射击时间，每通过长按消耗1点能量，诺姆额外获得0.4%<color=#FFFFFF>[预热膛温]</color>，并使本轮<color=#FFFFFF>[嗯呢弹幕]</color>状态的持续时间额外增加0.8秒，最多增加{CAL:2*20*0.8,1,2}秒；\n招式发动期间拥有无敌效果。"
+            },
+            "157100005": {
+                "Title": "特殊技：打靶练习",
+                "Description": "战斗中，<color=#FFFFFF><Term:1000010></color>会自动对敌人发动攻击， 造成<color=#FF5521>火属性伤害</color>。"
+            },
+            "157100006": {
+                "Title": "强化特殊技：火力实验",
+                "Description": "队伍中任意角色使敌人进入失衡状态时，或是诺姆消耗<color=#FFFFFF><Term:1000011></color>触发<color=#FFFFFF>[连携技]</color>时，<color=#FFFFFF><Term:1000010></color>会展开导弹舱，持续8秒，重复触发时刷新持续时间；\n期间，<color=#FFFFFF>[嗯呢炮塔]</color>的自动攻击间隔减少，自动攻击时根据敌人状态额外发射不同类型的导弹：\n主要攻击目标未处于失衡状态时，发射破甲弹头，造成<color=#FF5521>火属性伤害</color>并累积较多<color=#FFFFFF>失衡值</color>；\n主要攻击目标处于失衡状态时，发射高爆弹头，造成更高<color=#FF5521>火属性伤害</color>；"
+            },
+            "157110013": {
+                "Title": "特殊技：高温熔断"
+            },
+            "157110014": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1571006, Prop:1001}"
+            },
+            "157110015": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1571006, Prop:1002}"
+            },
+            "157110016": {
+                "Title": "强化特殊技：嗯呢弹幕"
+            },
+            "157110017": {
+                "Description": "射击伤害倍率",
+                "Param": "{Skill:1571007, Prop:1001}"
+            },
+            "157110018": {
+                "Description": "射击失衡倍率",
+                "Param": "{Skill:1571007, Prop:1002}"
+            },
+            "157110019": {
+                "Description": "破甲弹头伤害倍率",
+                "Param": "{Skill:1571008, Prop:1001}"
+            },
+            "157110020": {
+                "Description": "破甲弹头失衡倍率",
+                "Param": "{Skill:1571008, Prop:1002}"
+            },
+            "157110021": {
+                "Description": "高爆弹头伤害倍率",
+                "Param": "{Skill:1571009, Prop:1001}"
+            },
+            "157110022": {
+                "Description": "高爆弹头失衡倍率",
+                "Param": "{Skill:1571009, Prop:1002}"
+            },
+            "157110023": {
+                "Description": "发动所需能量",
+                "Param": "40点"
+            },
+            "157110024": {
+                "Description": "延长射击每秒伤害倍率",
+                "Param": "{Skill:1571010, Prop:1001}"
+            },
+            "157110025": {
+                "Description": "延长射击每秒失衡倍率",
+                "Param": "{Skill:1571010, Prop:1002}"
+            },
+            "157110026": {
+                "Description": "延长射击破甲弹头每秒伤害倍率",
+                "Param": "{Skill:1571011, Prop:1001}"
+            },
+            "157110027": {
+                "Description": "延长射击破甲弹头每秒失衡倍率",
+                "Param": "{Skill:1571011, Prop:1002}"
+            },
+            "157110028": {
+                "Description": "延长射击高爆弹头每秒伤害倍率",
+                "Param": "{Skill:1571012, Prop:1001}"
+            },
+            "157110029": {
+                "Description": "延长射击高爆弹头每秒失衡倍率",
+                "Param": "{Skill:1571012, Prop:1002}"
+            },
+            "157110030": {
+                "Description": "延长射击每秒能量消耗",
+                "Param": "20点"
+            },
+            "157110031": {
+                "Title": "特殊技：打靶练习"
+            },
+            "157110032": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1571013, Prop:1001}"
+            },
+            "157110033": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1571013, Prop:1002}"
+            },
+            "157110034": {
+                "Description": "自动射击间隔",
+                "Param": "3秒"
+            },
+            "157110035": {
+                "Title": "强化特殊技：火力实验"
+            },
+            "157110036": {
+                "Description": "额外破甲弹头伤害倍率",
+                "Param": "{Skill:1571014, Prop:1001}"
+            },
+            "157110037": {
+                "Description": "额外破甲弹头失衡倍率",
+                "Param": "{Skill:1571014, Prop:1002}"
+            },
+            "157110038": {
+                "Description": "额外高爆弹头伤害倍率",
+                "Param": "{Skill:1571015, Prop:1001}"
+            },
+            "157110039": {
+                "Description": "额外高爆弹头失衡倍率",
+                "Param": "{Skill:1571015, Prop:1002}"
+            },
+            "157110040": {
+                "Description": "强化状态下自动射击间隔",
+                "Param": "2秒"
+            }
+        },
+        "2": {
+            "157100007": {
+                "Title": "闪避：开发规范",
+                "Description": "点按 <IconMap:Icon_Evade> 发动：\n快速的冲刺闪避；\n招式发动期间拥有无敌效果。"
+            },
+            "157100008": {
+                "Title": "冲刺攻击：死线冲刺",
+                "Description": "闪避时，点按 <IconMap:Icon_Normal> 发动：\n旋转并对周围开火，造成<color=#FF5521>火属性伤害</color>。"
+            },
+            "157100009": {
+                "Title": "闪避反击：合规测试",
+                "Description": "触发<color=#FFFFFF>[极限闪避]</color>后，点按 <IconMap:Icon_Normal> 发动：\n令隆隆钻头进行持续钻击，造成<color=#FF5521>火属性伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "157110041": {
+                "Title": "冲刺攻击：死线冲刺"
+            },
+            "157110042": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1571016, Prop:1001}"
+            },
+            "157110043": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1571016, Prop:1002}"
+            },
+            "157110044": {
+                "Title": "闪避反击：合规测试"
+            },
+            "157110045": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1571017, Prop:1001}"
+            },
+            "157110046": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1571017, Prop:1002}"
+            }
+        },
+        "3": {
+            "157100010": {
+                "Title": "连携技：冲击钻探",
+                "Description": "触发<color=#FFFFFF>[连携技]</color>时，选择对应角色发动：\n命令大量隆隆钻头对敌人进行多段攻击，造成大量<color=#FF5521>火属性伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "157100011": {
+                "Title": "终结技：优势火力学说",
+                "Description": "喧响等级达到<color=#FFFFFF>[极]</color>时，点按 <IconMap:Icon_UltimateReady> 发动：\n召唤战术火炮轰炸前方敌人，造成大量<color=#FF5521>火属性伤害</color>；\n招式发动时，立刻获得30%<color=#FFFFFF><Term:1000011></color>；\n招式发动期间拥有无敌效果。"
+            },
+            "157110047": {
+                "Title": "连携技：冲击钻探"
+            },
+            "157110048": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1571018, Prop:1001}"
+            },
+            "157110049": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1571018, Prop:1002}"
+            },
+            "157110050": {
+                "Title": "终结技：优势火力学说"
+            },
+            "157110051": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1571019, Prop:1001}"
+            },
+            "157110052": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1571019, Prop:1002}"
+            }
+        },
+        "6": {
+            "157100013": {
+                "Title": "快速支援：隆隆援护",
+                "Description": "当前操作中的角色被击飞时，点按 <IconMap:Icon_Switch> 发动：\n令隆隆钻头进行持续钻击，造成<color=#FF5521>火属性伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "157100014": {
+                "Title": "招架支援：技术壁垒",
+                "Description": "前场角色即将被攻击时，点按 <IconMap:Icon_Switch> 发动：\n招架敌人的攻击，累积大量失衡值；\n具有较为优秀的招架性能，承受高强度攻击时<color=#FFFFFF>[支援点数]</color>的消耗量降低；\n招式发动期间拥有无敌效果。"
+            },
+            "157100015": {
+                "Title": "支援突击：技术压制",
+                "Description": "发动<color=#FFFFFF>[招架支援]</color>后，点按 <IconMap:Icon_Normal> 发动：\n对目标发动连续攻击，造成<color=#FF5521>火属性伤害</color>；\n招式发动期间拥有无敌效果。"
+            },
+            "157110053": {
+                "Title": "快速支援：隆隆援护"
+            },
+            "157110054": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1571020, Prop:1001}"
+            },
+            "157110055": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1571020, Prop:1002}"
+            },
+            "157110056": {
+                "Title": "招架支援：技术壁垒"
+            },
+            "157110057": {
+                "Description": "轻招架失衡倍率",
+                "Param": "{Skill:1571021, Prop:1002}"
+            },
+            "157110058": {
+                "Description": "重招架失衡倍率",
+                "Param": "{Skill:1571022, Prop:1002}"
+            },
+            "157110059": {
+                "Description": "连续招架失衡倍率",
+                "Param": "{Skill:1571023, Prop:1002}"
+            },
+            "157110060": {
+                "Title": "支援突击：技术压制"
+            },
+            "157110061": {
+                "Description": "伤害倍率",
+                "Param": "{Skill:1571024, Prop:1001}"
+            },
+            "157110062": {
+                "Description": "失衡倍率",
+                "Param": "{Skill:1571024, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1571001": {
+            "DamageValue": 2610,
+            "DamageGrowth": 240,
+            "DazeValue": 1560,
+            "DazeGrowth": 80
+        },
+        "1571002": {
+            "DamageValue": 3780,
+            "DamageGrowth": 350,
+            "DazeValue": 2030,
+            "DazeGrowth": 100
+        },
+        "1571003": {
+            "DamageValue": 7330,
+            "DamageGrowth": 670,
+            "DazeValue": 3780,
+            "DazeGrowth": 180
+        },
+        "1571004": {
+            "DamageValue": 14090,
+            "DamageGrowth": 1290,
+            "DazeValue": 8830,
+            "DazeGrowth": 410
+        },
+        "1571005": {
+            "DamageValue": 5690,
+            "DamageGrowth": 520,
+            "DazeValue": 3400,
+            "DazeGrowth": 160
+        },
+        "1571006": {
+            "DamageValue": 1500,
+            "DamageGrowth": 140,
+            "DazeValue": 1690,
+            "DazeGrowth": 80
+        },
+        "1571007": {
+            "DamageValue": 20540,
+            "DamageGrowth": 1870,
+            "DazeValue": 14390,
+            "DazeGrowth": 660
+        },
+        "1571008": {
+            "DamageValue": 30800,
+            "DamageGrowth": 2800,
+            "DazeValue": 21580,
+            "DazeGrowth": 990
+        },
+        "1571009": {
+            "DamageValue": 34140,
+            "DamageGrowth": 3110,
+            "DazeValue": 17270,
+            "DazeGrowth": 790
+        },
+        "1571010": {
+            "DamageValue": 13060,
+            "DamageGrowth": 1190,
+            "DazeValue": 9390,
+            "DazeGrowth": 430
+        },
+        "1571011": {
+            "DamageValue": 19590,
+            "DamageGrowth": 1790,
+            "DazeValue": 14090,
+            "DazeGrowth": 650
+        },
+        "1571012": {
+            "DamageValue": 21670,
+            "DamageGrowth": 1970,
+            "DazeValue": 11270,
+            "DazeGrowth": 520
+        },
+        "1571013": {
+            "DamageValue": 19500,
+            "DamageGrowth": 1780,
+            "DazeValue": 15130,
+            "DazeGrowth": 690
+        },
+        "1571014": {
+            "DamageValue": 8280,
+            "DamageGrowth": 760,
+            "DazeValue": 3500,
+            "DazeGrowth": 160
+        },
+        "1571015": {
+            "DamageValue": 9230,
+            "DamageGrowth": 840,
+            "DazeValue": 2800,
+            "DazeGrowth": 130
+        },
+        "1571016": {
+            "DamageValue": 8230,
+            "DamageGrowth": 750,
+            "DazeValue": 3490,
+            "DazeGrowth": 160
+        },
+        "1571017": {
+            "DamageValue": 31310,
+            "DamageGrowth": 2850,
+            "DazeValue": 22920,
+            "DazeGrowth": 1050
+        },
+        "1571018": {
+            "DamageValue": 75270,
+            "DamageGrowth": 6850,
+            "DazeValue": 19800,
+            "DazeGrowth": 900
+        },
+        "1571019": {
+            "DamageValue": 193650,
+            "DamageGrowth": 17610,
+            "DazeValue": 79250,
+            "DazeGrowth": 3610
+        },
+        "1571020": {
+            "DamageValue": 7050,
+            "DamageGrowth": 650,
+            "DazeValue": 5960,
+            "DazeGrowth": 280
+        },
+        "1571021": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1571022": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1571023": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1571024": {
+            "DamageValue": 45080,
+            "DamageGrowth": 4100,
+            "DazeValue": 33240,
+            "DazeGrowth": 1520
+        }
+    }
+}

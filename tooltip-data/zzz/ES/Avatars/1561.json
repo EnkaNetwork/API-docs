@@ -1,0 +1,489 @@
+{
+    "Name": "Velina",
+    "ElementTypes": [
+        "Wind"
+    ],
+    "Specialty": {
+        "Id": 3,
+        "Name": "Anómalo"
+    },
+    "Talents": {
+        "1": {
+            "Title": "Elegancia ordenada",
+            "Description": "Durante la <color=#FFFFFF>técnica adicional: Etiqueta de la ceremonia del té</color>, el Aturdimiento provocado por el <color=#FFFFFF>ciclón asolador</color> aumenta en un 20 % adicional. Cuando Velina activa <color=#FFFFFF>turbulencia</color>, ignora un 20 % <color=#FFFFFF>de la resistencia a todos los tipos de daño</color>, y el daño de <color=#A6C5FD>erosión</color> infligido por todo el equipo ignora un 20 % de la <color=#A6C5FD> resistencia a daño aéreo</color> del objetivo.",
+            "Lore": "Cada palabra y cada gesto se sitúan justo donde les corresponde.\nAntes de que la otra persona se dé cuenta, aceptan alegremente los límites, el ritmo y el resultado que ella ha preparado.\n«La elegancia es simplemente la expresión más natural del orden en movimiento.»"
+        },
+        "2": {
+            "Title": "Proyecto de saturación",
+            "Description": "Cuando Velina activa <color=#A6C5FD>erosión</color>, obtiene 1 pto. de <color=#FFFFFF>desgaste eólico</color>. Este efecto puede activarse un máximo de una vez cada 5 s. Después de que el <color=#FFFFFF>ciclón asolador</color> active el efecto de <color=#FFFFFF>tintura cromática</color>, puede reunir la acumulación de Anomalía de Atributo del atributo correspondiente. La acumulación reunida por este ataque no se incluye en los cálculos de daño de Anomalía de Atributo. Durante la <color=#FFFFFF>técnica adicional: Etiqueta de la ceremonia del té</color>, los efectos de aumento de daño de <color=#A6C5FD>erosión</color> y <color=#FFFFFF>turbulencia</color> de Velina aumentan en un 15 % adicional.",
+            "Lore": "Ella anticipa cada posibilidad, tiene en cuenta todas las variables, y diseña planes de emergencia para cuando las cosas se tuercen.\nNunca confía las cosas al azar. Cada final está calculado.\nAunque la situación pueda desviarse de su cauce momentáneamente, solo conduce a otro camino que ella ya había preparado con antelación.\n«Ay... Así que de eso se trata. Menos mal que no he venido completamente sin prepararme.»"
+        },
+        "3": {
+            "Title": "Conquista por etiqueta",
+            "Description": "Nivel de <color=#FFFFFF>ataque normal</color>, <color=#FFFFFF>evasión</color>, <color=#FFFFFF>técnica de apoyo</color>, <color=#FFFFFF>técnica especial</color> y <color=#FFFFFF>técnica en cadena</color> +2.",
+            "Lore": "No es necesario forzar la sumisión mediante la fuerza, ni apoyarse en la emoción ni la intimidación.\nBasta con una respuesta elegante y una concesión cuidadosamente medida...\nAntes de que nadie se dé cuenta, la situación ya ha virado hacia la conquista destinada.\n«¿Es la etiqueta simplemente violencia disimulada?»\n«¿O es la etiqueta la forma más refinada de violencia?»"
+        },
+        "4": {
+            "Title": "Tribunal de la ceremonia del té",
+            "Description": "Cuando Velina ejecuta una <color=#FFFFFF>técnica especial EX</color>, su Ataque aumenta en un 15 % durante 40 s. La duración se reinicia con cada activación.",
+            "Lore": "Entre las risas y la conversación, la balanza ya se ha decantado.\nEl té negro aún no se ha enfriado, pero el veredicto ya ha sido pronunciado.\n«Si algo me molesta, lo solucionaré como es debido. Pero si alguien me molesta, je...»"
+        },
+        "5": {
+            "Title": "Bruja de la muerte",
+            "Description": "Nivel de <color=#FFFFFF>ataque normal</color>, <color=#FFFFFF>evasión</color>, <color=#FFFFFF>técnica de apoyo</color>, <color=#FFFFFF>técnica especial</color> y <color=#FFFFFF>técnica en cadena</color> +2.",
+            "Lore": "«¡Sus pasos son el heraldo del juicio!»\n«¡Su invitación es tu funeral!»\nLa bruja de los cabellos plateados se sienta tranquilamente bajo el teatro del reino bangbú, mientras escucha a los diminutos actores lanzarle acusaciones con una convicción absoluta. Ella sacude suavemente su abanico decorado, y sonríe sin pronunciar palabra."
+        },
+        "6": {
+            "Title": "Ángel Jefe",
+            "Description": "Cuando Velina consume 2 ptos. de <color=#FFFFFF>desgaste eólico</color>, el multiplicador de daño de <color=#FFFFFF>turbulencia</color> aumenta, y obtiene 1 pto. de <color=#FFFFFF>desgaste eólico</color>. Este efecto puede activarse un máximo de una vez cada 6 s. Cuando Velina golpea a un enemigo afectado por una <color=#A6C5FD>Anomalía aérea</color>, la <color=#A6C5FD>acumulación de Anomalía aérea</color> provocada aumenta en un 20 %. Cuando Velina vuelve a aplicar <color=#A6C5FD>erosión</color> a un enemigo ya afectado por <color=#A6C5FD>erosión</color>, el daño de dicha instancia de <color=#A6C5FD>erosión</color> aumenta en función de la duración restante de la instancia de <color=#A6C5FD>erosión</color> anterior. El daño aumenta en un 2.5 % por cada segundo restante de la duración, hasta un aumento máximo de 40 %.",
+            "Lore": "«No hace falta preguntar a un ángel por su nombre. Se oculta entre los rumores, tras las reprimendas, y en las cartas temerosas que solicitan ayuda que tú ofreces con las manos temblorosas.»"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Técnica pasiva: Brisa floreciente",
+            "DescriptionByLevel": {
+                "1": "Cuando la Recuperación de Energía inicial de Velina es superior a 1.2, por cada 0.01 ptos. adicionales, el daño infligido aumenta en un 0.21 % hasta un aumento máximo de un 35 %, y su Tasa de Anomalía aumenta en 0.5 ptos. hasta un máximo de 84 ptos.\nAl entrar en combate, Velina obtiene 45 ptos. de <Term:1000008>. Puede activarse un máximo de una vez cada 180 s en el modo expedición. Cuando Velina ejecuta la <color=#FFFFFF>técnica especial EX: Cizalladura de viento - Convección purificadora</color> o la <color=#FFFFFF>técnica especial EX: Cizalladura de viento - Triple asfixia</color>, obtiene 45 ptos. de <color=#FFFFFF>gracia eólica</color>, hasta un máximo de 135 ptos. de <color=#FFFFFF>gracia eólica</color>.\nCuando Velina activa <color=#FFFFFF>turbulencia</color>, obtiene 1 pto. de <Term:1000014> e invoca un <Term:1000015>, lo que inflige <color=#A6C5FD>daño aéreo</color>. Este efecto puede activarse un máximo de una vez cada 3 s. Cuando Velina tiene 2 ptos. de <color=#FFFFFF>desgaste eólico</color>, la próxima vez que activa <color=#FFFFFF>turbulencia</color>, consume 2 ptos. de <color=#FFFFFF>desgaste eólico</color> para hacer que el multiplicador de daño de dicha instancia de <color=#FFFFFF>turbulencia</color> aumente en un <color=#2BAD00>90 %</color>. Además, en vez de invocar un <color=#FFFFFF>ciclón condensado</color>, invoca un <Term:1000016>. Esto no otorga <color=#FFFFFF>desgaste eólico</color>.\nCuando el <color=#FFFFFF>ciclón asolador</color> invocado por Velina golpea por primera vez a un enemigo afectado por <color=#FFFFFF>contaminación</color>, activa el efecto de <Term:1000017>, se convierte en un <color=#FFFFFF>ciclón asolador</color> del atributo correspondiente e inflige daño del atributo correspondiente. Cuando el <color=#FFFFFF>ciclón asolador</color> golpea a un enemigo, la <color=#A6C5FD>resistencia a acumulación de Anomalía aérea</color> del enemigo disminuye en un 7 % durante 35 s. La duración se reinicia con cada activación. Al golpear a un enemigo con un <color=#FFFFFF>ciclón asolador</color> fortalecido con <color=#FFFFFF>tintura cromática</color>, la <color=#FFFFFF>resistencia a acumulación de Anomalía de Atributo</color> del atributo correspondiente del enemigo también disminuye en un 7 % durante 35 s. La duración se reinicia con cada activación. \nAl derrotar a un enemigo afectado por un <color=#FFFFFF>ciclón asolador</color>, la duración de dicho <color=#FFFFFF>ciclón asolador</color> aumenta en 5 s. Este efecto solo se puede activar una vez para un mismo <color=#FFFFFF>ciclón asolador</color>, y solo puede haber un <color=#FFFFFF>ciclón asolador</color> al mismo tiempo.\nCuando un <color=#FFFFFF>ciclón condensado</color> o un <color=#FFFFFF>ciclón asolador</color> se disipan, activan una explosión. Si dicha explosión golpea a un enemigo afectado por una <color=#A6C5FD>Anomalía aérea</color>, se activa una instancia de daño de <color=#FFFFFF>floridez</color> contra el objetivo: se calcula una instancia adicional de daño de Anomalía de Atributo con un valor fijo equivalente al <color=#2BAD00>85 %</color> y al <color=#2BAD00>135 %</color> del multiplicador de <color=#A6C5FD>daño de Anomalía aérea</color>.",
+                "2": "Cuando la Recuperación de Energía inicial de Velina es superior a 1.2, por cada 0.01 ptos. adicionales, el daño infligido aumenta en un 0.21 % hasta un aumento máximo de un 35 %, y su Tasa de Anomalía aumenta en 0.5 ptos. hasta un máximo de 84 ptos.\nAl entrar en combate, Velina obtiene 45 ptos. de <Term:1000008>. Puede activarse un máximo de una vez cada 180 s en el modo expedición. Cuando Velina ejecuta la <color=#FFFFFF>técnica especial EX: Cizalladura de viento - Convección purificadora</color> o la <color=#FFFFFF>técnica especial EX: Cizalladura de viento - Triple asfixia</color>, obtiene 45 ptos. de <color=#FFFFFF>gracia eólica</color>, hasta un máximo de 135 ptos. de <color=#FFFFFF>gracia eólica</color>.\nCuando Velina activa <color=#FFFFFF>turbulencia</color>, obtiene 1 pto. de <Term:1000014> e invoca un <Term:1000015>, lo que inflige <color=#A6C5FD>daño aéreo</color>. Este efecto puede activarse un máximo de una vez cada 3 s. Cuando Velina tiene 2 ptos. de <color=#FFFFFF>desgaste eólico</color>, la próxima vez que activa <color=#FFFFFF>turbulencia</color>, consume 2 ptos. de <color=#FFFFFF>desgaste eólico</color> para hacer que el multiplicador de daño de dicha instancia de <color=#FFFFFF>turbulencia</color> aumente en un <color=#2BAD00>100 %</color>. Además, en vez de invocar un <color=#FFFFFF>ciclón condensado</color>, invoca un <Term:1000016>. Esto no otorga <color=#FFFFFF>desgaste eólico</color>.\nCuando el <color=#FFFFFF>ciclón asolador</color> invocado por Velina golpea por primera vez a un enemigo afectado por <color=#FFFFFF>contaminación</color>, activa el efecto de <Term:1000017>, se convierte en un <color=#FFFFFF>ciclón asolador</color> del atributo correspondiente e inflige daño del atributo correspondiente. Cuando el <color=#FFFFFF>ciclón asolador</color> golpea a un enemigo, la <color=#A6C5FD>resistencia a acumulación de Anomalía aérea</color> del enemigo disminuye en un 7 % durante 35 s. La duración se reinicia con cada activación. Al golpear a un enemigo con un <color=#FFFFFF>ciclón asolador</color> fortalecido con <color=#FFFFFF>tintura cromática</color>, la <color=#FFFFFF>resistencia a acumulación de Anomalía de Atributo</color> del atributo correspondiente del enemigo también disminuye en un 7 % durante 35 s. La duración se reinicia con cada activación. \nAl derrotar a un enemigo afectado por un <color=#FFFFFF>ciclón asolador</color>, la duración de dicho <color=#FFFFFF>ciclón asolador</color> aumenta en 5 s. Este efecto solo se puede activar una vez para un mismo <color=#FFFFFF>ciclón asolador</color>, y solo puede haber un <color=#FFFFFF>ciclón asolador</color> al mismo tiempo.\nCuando un <color=#FFFFFF>ciclón condensado</color> o un <color=#FFFFFF>ciclón asolador</color> se disipan, activan una explosión. Si dicha explosión golpea a un enemigo afectado por una <color=#A6C5FD>Anomalía aérea</color>, se activa una instancia de daño de <color=#FFFFFF>floridez</color> contra el objetivo: se calcula una instancia adicional de daño de Anomalía de Atributo con un valor fijo equivalente al <color=#2BAD00>95 %</color> y al <color=#2BAD00>155 %</color> del multiplicador de <color=#A6C5FD>daño de Anomalía aérea</color>.",
+                "3": "Cuando la Recuperación de Energía inicial de Velina es superior a 1.2, por cada 0.01 ptos. adicionales, el daño infligido aumenta en un 0.21 % hasta un aumento máximo de un 35 %, y su Tasa de Anomalía aumenta en 0.5 ptos. hasta un máximo de 84 ptos.\nAl entrar en combate, Velina obtiene 45 ptos. de <Term:1000008>. Puede activarse un máximo de una vez cada 180 s en el modo expedición. Cuando Velina ejecuta la <color=#FFFFFF>técnica especial EX: Cizalladura de viento - Convección purificadora</color> o la <color=#FFFFFF>técnica especial EX: Cizalladura de viento - Triple asfixia</color>, obtiene 45 ptos. de <color=#FFFFFF>gracia eólica</color>, hasta un máximo de 135 ptos. de <color=#FFFFFF>gracia eólica</color>.\nCuando Velina activa <color=#FFFFFF>turbulencia</color>, obtiene 1 pto. de <Term:1000014> e invoca un <Term:1000015>, lo que inflige <color=#A6C5FD>daño aéreo</color>. Este efecto puede activarse un máximo de una vez cada 3 s. Cuando Velina tiene 2 ptos. de <color=#FFFFFF>desgaste eólico</color>, la próxima vez que activa <color=#FFFFFF>turbulencia</color>, consume 2 ptos. de <color=#FFFFFF>desgaste eólico</color> para hacer que el multiplicador de daño de dicha instancia de <color=#FFFFFF>turbulencia</color> aumente en un <color=#2BAD00>110 %</color>. Además, en vez de invocar un <color=#FFFFFF>ciclón condensado</color>, invoca un <Term:1000016>. Esto no otorga <color=#FFFFFF>desgaste eólico</color>.\nCuando el <color=#FFFFFF>ciclón asolador</color> invocado por Velina golpea por primera vez a un enemigo afectado por <color=#FFFFFF>contaminación</color>, activa el efecto de <Term:1000017>, se convierte en un <color=#FFFFFF>ciclón asolador</color> del atributo correspondiente e inflige daño del atributo correspondiente. Cuando el <color=#FFFFFF>ciclón asolador</color> golpea a un enemigo, la <color=#A6C5FD>resistencia a acumulación de Anomalía aérea</color> del enemigo disminuye en un 7 % durante 35 s. La duración se reinicia con cada activación. Al golpear a un enemigo con un <color=#FFFFFF>ciclón asolador</color> fortalecido con <color=#FFFFFF>tintura cromática</color>, la <color=#FFFFFF>resistencia a acumulación de Anomalía de Atributo</color> del atributo correspondiente del enemigo también disminuye en un 7 % durante 35 s. La duración se reinicia con cada activación. \nAl derrotar a un enemigo afectado por un <color=#FFFFFF>ciclón asolador</color>, la duración de dicho <color=#FFFFFF>ciclón asolador</color> aumenta en 5 s. Este efecto solo se puede activar una vez para un mismo <color=#FFFFFF>ciclón asolador</color>, y solo puede haber un <color=#FFFFFF>ciclón asolador</color> al mismo tiempo.\nCuando un <color=#FFFFFF>ciclón condensado</color> o un <color=#FFFFFF>ciclón asolador</color> se disipan, activan una explosión. Si dicha explosión golpea a un enemigo afectado por una <color=#A6C5FD>Anomalía aérea</color>, se activa una instancia de daño de <color=#FFFFFF>floridez</color> contra el objetivo: se calcula una instancia adicional de daño de Anomalía de Atributo con un valor fijo equivalente al <color=#2BAD00>105 %</color> y al <color=#2BAD00>175 %</color> del multiplicador de <color=#A6C5FD>daño de Anomalía aérea</color>.",
+                "4": "Cuando la Recuperación de Energía inicial de Velina es superior a 1.2, por cada 0.01 ptos. adicionales, el daño infligido aumenta en un 0.21 % hasta un aumento máximo de un 35 %, y su Tasa de Anomalía aumenta en 0.5 ptos. hasta un máximo de 84 ptos.\nAl entrar en combate, Velina obtiene 45 ptos. de <Term:1000008>. Puede activarse un máximo de una vez cada 180 s en el modo expedición. Cuando Velina ejecuta la <color=#FFFFFF>técnica especial EX: Cizalladura de viento - Convección purificadora</color> o la <color=#FFFFFF>técnica especial EX: Cizalladura de viento - Triple asfixia</color>, obtiene 45 ptos. de <color=#FFFFFF>gracia eólica</color>, hasta un máximo de 135 ptos. de <color=#FFFFFF>gracia eólica</color>.\nCuando Velina activa <color=#FFFFFF>turbulencia</color>, obtiene 1 pto. de <Term:1000014> e invoca un <Term:1000015>, lo que inflige <color=#A6C5FD>daño aéreo</color>. Este efecto puede activarse un máximo de una vez cada 3 s. Cuando Velina tiene 2 ptos. de <color=#FFFFFF>desgaste eólico</color>, la próxima vez que activa <color=#FFFFFF>turbulencia</color>, consume 2 ptos. de <color=#FFFFFF>desgaste eólico</color> para hacer que el multiplicador de daño de dicha instancia de <color=#FFFFFF>turbulencia</color> aumente en un <color=#2BAD00>120 %</color>. Además, en vez de invocar un <color=#FFFFFF>ciclón condensado</color>, invoca un <Term:1000016>. Esto no otorga <color=#FFFFFF>desgaste eólico</color>.\nCuando el <color=#FFFFFF>ciclón asolador</color> invocado por Velina golpea por primera vez a un enemigo afectado por <color=#FFFFFF>contaminación</color>, activa el efecto de <Term:1000017>, se convierte en un <color=#FFFFFF>ciclón asolador</color> del atributo correspondiente e inflige daño del atributo correspondiente. Cuando el <color=#FFFFFF>ciclón asolador</color> golpea a un enemigo, la <color=#A6C5FD>resistencia a acumulación de Anomalía aérea</color> del enemigo disminuye en un 7 % durante 35 s. La duración se reinicia con cada activación. Al golpear a un enemigo con un <color=#FFFFFF>ciclón asolador</color> fortalecido con <color=#FFFFFF>tintura cromática</color>, la <color=#FFFFFF>resistencia a acumulación de Anomalía de Atributo</color> del atributo correspondiente del enemigo también disminuye en un 7 % durante 35 s. La duración se reinicia con cada activación. \nAl derrotar a un enemigo afectado por un <color=#FFFFFF>ciclón asolador</color>, la duración de dicho <color=#FFFFFF>ciclón asolador</color> aumenta en 5 s. Este efecto solo se puede activar una vez para un mismo <color=#FFFFFF>ciclón asolador</color>, y solo puede haber un <color=#FFFFFF>ciclón asolador</color> al mismo tiempo.\nCuando un <color=#FFFFFF>ciclón condensado</color> o un <color=#FFFFFF>ciclón asolador</color> se disipan, activan una explosión. Si dicha explosión golpea a un enemigo afectado por una <color=#A6C5FD>Anomalía aérea</color>, se activa una instancia de daño de <color=#FFFFFF>floridez</color> contra el objetivo: se calcula una instancia adicional de daño de Anomalía de Atributo con un valor fijo equivalente al <color=#2BAD00>115 %</color> y al <color=#2BAD00>195 %</color> del multiplicador de <color=#A6C5FD>daño de Anomalía aérea</color>.",
+                "5": "Cuando la Recuperación de Energía inicial de Velina es superior a 1.2, por cada 0.01 ptos. adicionales, el daño infligido aumenta en un 0.21 % hasta un aumento máximo de un 35 %, y su Tasa de Anomalía aumenta en 0.5 ptos. hasta un máximo de 84 ptos.\nAl entrar en combate, Velina obtiene 45 ptos. de <Term:1000008>. Puede activarse un máximo de una vez cada 180 s en el modo expedición. Cuando Velina ejecuta la <color=#FFFFFF>técnica especial EX: Cizalladura de viento - Convección purificadora</color> o la <color=#FFFFFF>técnica especial EX: Cizalladura de viento - Triple asfixia</color>, obtiene 45 ptos. de <color=#FFFFFF>gracia eólica</color>, hasta un máximo de 135 ptos. de <color=#FFFFFF>gracia eólica</color>.\nCuando Velina activa <color=#FFFFFF>turbulencia</color>, obtiene 1 pto. de <Term:1000014> e invoca un <Term:1000015>, lo que inflige <color=#A6C5FD>daño aéreo</color>. Este efecto puede activarse un máximo de una vez cada 3 s. Cuando Velina tiene 2 ptos. de <color=#FFFFFF>desgaste eólico</color>, la próxima vez que activa <color=#FFFFFF>turbulencia</color>, consume 2 ptos. de <color=#FFFFFF>desgaste eólico</color> para hacer que el multiplicador de daño de dicha instancia de <color=#FFFFFF>turbulencia</color> aumente en un <color=#2BAD00>130 %</color>. Además, en vez de invocar un <color=#FFFFFF>ciclón condensado</color>, invoca un <Term:1000016>. Esto no otorga <color=#FFFFFF>desgaste eólico</color>.\nCuando el <color=#FFFFFF>ciclón asolador</color> invocado por Velina golpea por primera vez a un enemigo afectado por <color=#FFFFFF>contaminación</color>, activa el efecto de <Term:1000017>, se convierte en un <color=#FFFFFF>ciclón asolador</color> del atributo correspondiente e inflige daño del atributo correspondiente. Cuando el <color=#FFFFFF>ciclón asolador</color> golpea a un enemigo, la <color=#A6C5FD>resistencia a acumulación de Anomalía aérea</color> del enemigo disminuye en un 7 % durante 35 s. La duración se reinicia con cada activación. Al golpear a un enemigo con un <color=#FFFFFF>ciclón asolador</color> fortalecido con <color=#FFFFFF>tintura cromática</color>, la <color=#FFFFFF>resistencia a acumulación de Anomalía de Atributo</color> del atributo correspondiente del enemigo también disminuye en un 7 % durante 35 s. La duración se reinicia con cada activación. \nAl derrotar a un enemigo afectado por un <color=#FFFFFF>ciclón asolador</color>, la duración de dicho <color=#FFFFFF>ciclón asolador</color> aumenta en 5 s. Este efecto solo se puede activar una vez para un mismo <color=#FFFFFF>ciclón asolador</color>, y solo puede haber un <color=#FFFFFF>ciclón asolador</color> al mismo tiempo.\nCuando un <color=#FFFFFF>ciclón condensado</color> o un <color=#FFFFFF>ciclón asolador</color> se disipan, activan una explosión. Si dicha explosión golpea a un enemigo afectado por una <color=#A6C5FD>Anomalía aérea</color>, se activa una instancia de daño de <color=#FFFFFF>floridez</color> contra el objetivo: se calcula una instancia adicional de daño de Anomalía de Atributo con un valor fijo equivalente al <color=#2BAD00>125 %</color> y al <color=#2BAD00>215 %</color> del multiplicador de <color=#A6C5FD>daño de Anomalía aérea</color>.",
+                "6": "Cuando la Recuperación de Energía inicial de Velina es superior a 1.2, por cada 0.01 ptos. adicionales, el daño infligido aumenta en un 0.21 % hasta un aumento máximo de un 35 %, y su Tasa de Anomalía aumenta en 0.5 ptos. hasta un máximo de 84 ptos.\nAl entrar en combate, Velina obtiene 45 ptos. de <Term:1000008>. Puede activarse un máximo de una vez cada 180 s en el modo expedición. Cuando Velina ejecuta la <color=#FFFFFF>técnica especial EX: Cizalladura de viento - Convección purificadora</color> o la <color=#FFFFFF>técnica especial EX: Cizalladura de viento - Triple asfixia</color>, obtiene 45 ptos. de <color=#FFFFFF>gracia eólica</color>, hasta un máximo de 135 ptos. de <color=#FFFFFF>gracia eólica</color>.\nCuando Velina activa <color=#FFFFFF>turbulencia</color>, obtiene 1 pto. de <Term:1000014> e invoca un <Term:1000015>, lo que inflige <color=#A6C5FD>daño aéreo</color>. Este efecto puede activarse un máximo de una vez cada 3 s. Cuando Velina tiene 2 ptos. de <color=#FFFFFF>desgaste eólico</color>, la próxima vez que activa <color=#FFFFFF>turbulencia</color>, consume 2 ptos. de <color=#FFFFFF>desgaste eólico</color> para hacer que el multiplicador de daño de dicha instancia de <color=#FFFFFF>turbulencia</color> aumente en un <color=#2BAD00>140 %</color>. Además, en vez de invocar un <color=#FFFFFF>ciclón condensado</color>, invoca un <Term:1000016>. Esto no otorga <color=#FFFFFF>desgaste eólico</color>.\nCuando el <color=#FFFFFF>ciclón asolador</color> invocado por Velina golpea por primera vez a un enemigo afectado por <color=#FFFFFF>contaminación</color>, activa el efecto de <Term:1000017>, se convierte en un <color=#FFFFFF>ciclón asolador</color> del atributo correspondiente e inflige daño del atributo correspondiente. Cuando el <color=#FFFFFF>ciclón asolador</color> golpea a un enemigo, la <color=#A6C5FD>resistencia a acumulación de Anomalía aérea</color> del enemigo disminuye en un 7 % durante 35 s. La duración se reinicia con cada activación. Al golpear a un enemigo con un <color=#FFFFFF>ciclón asolador</color> fortalecido con <color=#FFFFFF>tintura cromática</color>, la <color=#FFFFFF>resistencia a acumulación de Anomalía de Atributo</color> del atributo correspondiente del enemigo también disminuye en un 7 % durante 35 s. La duración se reinicia con cada activación. \nAl derrotar a un enemigo afectado por un <color=#FFFFFF>ciclón asolador</color>, la duración de dicho <color=#FFFFFF>ciclón asolador</color> aumenta en 5 s. Este efecto solo se puede activar una vez para un mismo <color=#FFFFFF>ciclón asolador</color>, y solo puede haber un <color=#FFFFFF>ciclón asolador</color> al mismo tiempo.\nCuando un <color=#FFFFFF>ciclón condensado</color> o un <color=#FFFFFF>ciclón asolador</color> se disipan, activan una explosión. Si dicha explosión golpea a un enemigo afectado por una <color=#A6C5FD>Anomalía aérea</color>, se activa una instancia de daño de <color=#FFFFFF>floridez</color> contra el objetivo: se calcula una instancia adicional de daño de Anomalía de Atributo con un valor fijo equivalente al <color=#2BAD00>135 %</color> y al <color=#2BAD00>235 %</color> del multiplicador de <color=#A6C5FD>daño de Anomalía aérea</color>.",
+                "7": "Cuando la Recuperación de Energía inicial de Velina es superior a 1.2, por cada 0.01 ptos. adicionales, el daño infligido aumenta en un 0.21 % hasta un aumento máximo de un 35 %, y su Tasa de Anomalía aumenta en 0.5 ptos. hasta un máximo de 84 ptos.\nAl entrar en combate, Velina obtiene 45 ptos. de <Term:1000008>. Puede activarse un máximo de una vez cada 180 s en el modo expedición. Cuando Velina ejecuta la <color=#FFFFFF>técnica especial EX: Cizalladura de viento - Convección purificadora</color> o la <color=#FFFFFF>técnica especial EX: Cizalladura de viento - Triple asfixia</color>, obtiene 45 ptos. de <color=#FFFFFF>gracia eólica</color>, hasta un máximo de 135 ptos. de <color=#FFFFFF>gracia eólica</color>.\nCuando Velina activa <color=#FFFFFF>turbulencia</color>, obtiene 1 pto. de <Term:1000014> e invoca un <Term:1000015>, lo que inflige <color=#A6C5FD>daño aéreo</color>. Este efecto puede activarse un máximo de una vez cada 3 s. Cuando Velina tiene 2 ptos. de <color=#FFFFFF>desgaste eólico</color>, la próxima vez que activa <color=#FFFFFF>turbulencia</color>, consume 2 ptos. de <color=#FFFFFF>desgaste eólico</color> para hacer que el multiplicador de daño de dicha instancia de <color=#FFFFFF>turbulencia</color> aumente en un <color=#2BAD00>150 %</color>. Además, en vez de invocar un <color=#FFFFFF>ciclón condensado</color>, invoca un <Term:1000016>. Esto no otorga <color=#FFFFFF>desgaste eólico</color>.\nCuando el <color=#FFFFFF>ciclón asolador</color> invocado por Velina golpea por primera vez a un enemigo afectado por <color=#FFFFFF>contaminación</color>, activa el efecto de <Term:1000017>, se convierte en un <color=#FFFFFF>ciclón asolador</color> del atributo correspondiente e inflige daño del atributo correspondiente. Cuando el <color=#FFFFFF>ciclón asolador</color> golpea a un enemigo, la <color=#A6C5FD>resistencia a acumulación de Anomalía aérea</color> del enemigo disminuye en un 7 % durante 35 s. La duración se reinicia con cada activación. Al golpear a un enemigo con un <color=#FFFFFF>ciclón asolador</color> fortalecido con <color=#FFFFFF>tintura cromática</color>, la <color=#FFFFFF>resistencia a acumulación de Anomalía de Atributo</color> del atributo correspondiente del enemigo también disminuye en un 7 % durante 35 s. La duración se reinicia con cada activación. \nAl derrotar a un enemigo afectado por un <color=#FFFFFF>ciclón asolador</color>, la duración de dicho <color=#FFFFFF>ciclón asolador</color> aumenta en 5 s. Este efecto solo se puede activar una vez para un mismo <color=#FFFFFF>ciclón asolador</color>, y solo puede haber un <color=#FFFFFF>ciclón asolador</color> al mismo tiempo.\nCuando un <color=#FFFFFF>ciclón condensado</color> o un <color=#FFFFFF>ciclón asolador</color> se disipan, activan una explosión. Si dicha explosión golpea a un enemigo afectado por una <color=#A6C5FD>Anomalía aérea</color>, se activa una instancia de daño de <color=#FFFFFF>floridez</color> contra el objetivo: se calcula una instancia adicional de daño de Anomalía de Atributo con un valor fijo equivalente al <color=#2BAD00>145 %</color> y al <color=#2BAD00>255 %</color> del multiplicador de <color=#A6C5FD>daño de Anomalía aérea</color>."
+            }
+        },
+        "MathSkill": {
+            "Title": "Técnica adicional: Etiqueta de la ceremonia del té",
+            "Description": "Si en el equipo hay otro agente <color=#FFFFFF>anómalo</color> o del mismo atributo:\nEl daño de <color=#A6C5FD>erosión</color> y <color=#FFFFFF>turbulencia</color> de Velina aumenta en un 10 %. Cuando el ataque pesado de la <color=#FFFFFF>técnica definitiva</color> golpea a un enemigo afectado por una <color=#A6C5FD>Anomalía aérea</color>, activa una instancia de daño de <color=#FFFFFF>floridez</color> contra el objetivo: se calcula una instancia adicional de daño de Anomalía de Atributo con un valor fijo equivalente al <color=#A6C5FD>680 %</color> del multiplicador de <color=#A6C5FD>daño de Anomalía aérea</color>.\nDurante la <color=#FFFFFF>técnica pasiva: Brisa floreciente</color>, el efecto de reducción de <color=#FFFFFF>resistencia a acumulación de Anomalía de Atributo</color> del <Term:1000016> aumenta en un 7 % adicional, el Aturdimiento provocado aumenta en un 30 %, y la acumulación de Anomalía de Atributo aumenta en un 15 %."
+        },
+        "AwakenAbility": {},
+        "BaseProps": [
+            {
+                "31201": 0,
+                "12101": 0
+            },
+            {
+                "31201": 18,
+                "12101": 0
+            },
+            {
+                "31201": 18,
+                "12101": 25
+            },
+            {
+                "31201": 36,
+                "12101": 25
+            },
+            {
+                "31201": 36,
+                "12101": 50
+            },
+            {
+                "31201": 54,
+                "12101": 50
+            },
+            {
+                "31201": 54,
+                "12101": 75
+            }
+        ]
+    },
+    "SkillDescriptions": {
+        "0": {
+            "156100001": {
+                "Title": "Ataque normal: Abanicos danzantes",
+                "Description": "Pulsa <IconMap:Icon_Normal> para usarlo.\nEjecuta hasta cinco movimientos de ataque hacia delante, lo que inflige <color=#A6C5FD>daño aéreo</color>.\nDurante la ejecución del quinto movimiento de ataque, el nivel de resistencia a interrupción de Velina aumenta, y el daño que recibe reduce en un 40 %."
+            },
+            "156100015": {
+                "Title": "Ataque normal: Abanicos danzantes"
+            },
+            "156100016": {
+                "Description": "Multiplicador de daño de 1.er golpe",
+                "Param": "{Skill:1561001, Prop:1001}"
+            },
+            "156100017": {
+                "Description": "Multiplicador de daño de 2.º golpe",
+                "Param": "{Skill:1561002, Prop:1001}"
+            },
+            "156100018": {
+                "Description": "Multiplicador de daño de 3.er golpe",
+                "Param": "{Skill:1561003, Prop:1001}"
+            },
+            "156100019": {
+                "Description": "Multiplicador de daño de 4.º golpe",
+                "Param": "{Skill:1561004, Prop:1001}"
+            },
+            "156100020": {
+                "Description": "Multiplicador de daño de 5.º golpe",
+                "Param": "{Skill:1561005, Prop:1001}"
+            },
+            "156100021": {
+                "Description": "Multiplicador de Aturdimiento de 1.er golpe",
+                "Param": "{Skill:1561001, Prop:1002}"
+            },
+            "156100022": {
+                "Description": "Multiplicador de Aturdimiento de 2.º golpe",
+                "Param": "{Skill:1561002, Prop:1002}"
+            },
+            "156100023": {
+                "Description": "Multiplicador de Aturdimiento de 3.er golpe",
+                "Param": "{Skill:1561003, Prop:1002}"
+            },
+            "156100024": {
+                "Description": "Multiplicador de Aturdimiento de 4.º golpe",
+                "Param": "{Skill:1561004, Prop:1002}"
+            },
+            "156100025": {
+                "Description": "Multiplicador de Aturdimiento de 5.º golpe",
+                "Param": "{Skill:1561005, Prop:1002}"
+            }
+        },
+        "1": {
+            "156100002": {
+                "Title": "Técnica especial: Cizalladura de viento - Corriente purgadora",
+                "Description": "Pulsa <IconMap:Icon_Special> para usarla.\nLibera una ráfaga de viento hacia delante, lo que inflige <color=#A6C5FD>daño aéreo</color>."
+            },
+            "156100003": {
+                "Title": "Técnica especial EX: Cizalladura de viento - Convección purificadora",
+                "Description": "Al contar con Energía suficiente, pulsa <IconMap:Icon_SpecialReady> para usarla.\nPrimero ejecuta una evasión hacia atrás, y después libera un enorme proyectil de viento para atacar a los enemigos, lo que inflige <color=#A6C5FD>daño aéreo</color>.\nDurante la ejecución de la evasión hacia atrás, se activa un efecto de evasión. Al evadir con éxito el ataque de un enemigo, se activa <color=#FFFFFF>visión extrema</color>.\nTras la ejecución de dicha habilidad, pulsa <IconMap:Icon_Normal> para enlazar el quinto movimiento del <color=#FFFFFF>ataque normal</color>.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "156100004": {
+                "Title": "Técnica especial EX: Cizalladura de viento - Triple asfixia",
+                "Description": "Al contar con Energía suficiente, después de ejecutar la <color=#FFFFFF>técnica especial EX: Cizalladura de viento - Convección purificadora</color>, pulsa o mantén pulsado <IconMap:Icon_SpecialReady> para usarla.\nAgita el abanico continuamente, lo que inflige <color=#A6C5FD>daño aéreo</color>.\nTras la ejecución de dicha habilidad, pulsa <IconMap:Icon_Normal> para enlazar el quinto movimiento del <color=#FFFFFF>ataque normal</color>.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "156100005": {
+                "Title": "Técnica especial EX: Cizalladura de viento - Ojo de la tormenta",
+                "Description": "Al tener 90 ptos. o más de <Term:1000008>, mantén pulsado <IconMap:Icon_Special> o <IconMap:Icon_Normal> para usarla.\nVelina canaliza un ciclón y después invoca un <Term:1000016> que ataca continuamente a los enemigos y activa un <color=#FFFFFF>apoyo rápido</color> del personaje anterior.\nEl <color=#FFFFFF>ciclón asolador</color> dura 5 s, e inflige <color=#A6C5FD>daño aéreo</color> a los enemigos de alrededor una vez cada 0.5 s."
+            },
+            "156100026": {
+                "Title": "Técnica especial: Cizalladura de viento - Corriente purgadora"
+            },
+            "156100027": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1561008, Prop:1001}"
+            },
+            "156100028": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1561008, Prop:1002}"
+            },
+            "156100029": {
+                "Title": "Técnica especial EX: Cizalladura de viento - Convección purificadora"
+            },
+            "156100030": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1561009, Prop:1001}"
+            },
+            "156100031": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1561009, Prop:1002}"
+            },
+            "156100032": {
+                "Description": "Consumo de Energía",
+                "Param": "45 ptos."
+            },
+            "156100033": {
+                "Title": "Técnica especial EX: Cizalladura de viento - Triple asfixia"
+            },
+            "156100034": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1561010, Prop:1001}"
+            },
+            "156100035": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1561010, Prop:1002}"
+            },
+            "156100036": {
+                "Description": "Consumo de Energía",
+                "Param": "45 ptos."
+            },
+            "156100037": {
+                "Title": "Técnica especial EX: Cizalladura de viento - Ojo de la tormenta"
+            },
+            "156100038": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1561006, Prop:1001}"
+            },
+            "156100039": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1561006, Prop:1002}"
+            },
+            "156100040": {
+                "Description": "Consumo de gracia eólica",
+                "Param": "90 ptos."
+            },
+            "156100041": {
+                "Title": "Ciclón asolador"
+            },
+            "156100042": {
+                "Description": "Multiplicador de daño de ataque único aéreo de ciclón asolador",
+                "Param": "{Skill:1561007, Prop:1001}"
+            },
+            "156100043": {
+                "Description": "Multiplicador de Aturdimiento de ataque único aéreo de ciclón asolador",
+                "Param": "{Skill:1561007, Prop:1002}"
+            },
+            "156100044": {
+                "Description": "Multiplicador de daño de ataque único de atributo convertido de ciclón asolador",
+                "Param": "{{Skill:1561020, Prop:1001}*0.2}"
+            },
+            "156100045": {
+                "Title": "Ciclón condensado"
+            },
+            "156100046": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1561021, Prop:1001}"
+            },
+            "156100047": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1561021, Prop:1002}"
+            }
+        },
+        "2": {
+            "156100006": {
+                "Title": "Evasión: Barrido de barlovento",
+                "Description": "Pulsa <IconMap:Icon_Evade> para usarla.\nEjecuta un rápido esprint evasivo.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "156100007": {
+                "Title": "Ataque rápido: Paso de la borrasca",
+                "Description": "Pulsa <IconMap:Icon_Normal> durante una evasión para usarlo.\nEjecuta un ataque rápido hacia delante, lo que inflige <color=#A6C5FD>daño aéreo</color>."
+            },
+            "156100008": {
+                "Title": "Contraataque: Desgarranubes",
+                "Description": "Pulsa <IconMap:Icon_Normal> después de una <color=#FFFFFF>evasión perfecta</color> para usarlo.\nEjecuta una serie de ataques consecutivos contra el objetivo, lo que inflige <color=#A6C5FD>daño aéreo</color>.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "156100048": {
+                "Title": "Ataque rápido: Paso de la borrasca"
+            },
+            "156100049": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1561011, Prop:1001}"
+            },
+            "156100050": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1561011, Prop:1002}"
+            },
+            "156100051": {
+                "Title": "Contraataque: Desgarranubes"
+            },
+            "156100052": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1561012, Prop:1001}"
+            },
+            "156100053": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1561012, Prop:1002}"
+            }
+        },
+        "3": {
+            "156100009": {
+                "Title": "Técnica en cadena: Miríada de espirales",
+                "Description": "Elige el avatar de personaje correspondiente al activar una <color=#FFFFFF>técnica en cadena</color> para usarla.\nSe transforma en un huracán que asesta varios movimientos de ataque contra los enemigos, seguidos de un ataque final, lo que inflige una gran cantidad de <color=#A6C5FD>daño aéreo</color>.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "156100010": {
+                "Title": "Técnica definitiva: Percibimiento de la tormenta",
+                "Description": "Cuando los dB llegan a su nivel <color=#FFFFFF>máximo</color>, pulsa <IconMap:Icon_UltimateReady> para usarla.\nEjecuta múltiples movimientos de ataque hacia delante, lo que inflige una gran cantidad de <color=#A6C5FD>daño aéreo</color>.\nTras la ejecución de la habilidad, activa un <color=#FFFFFF>apoyo rápido</color> del personaje anterior.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "156100054": {
+                "Title": "Técnica en cadena: Miríada de espirales"
+            },
+            "156100055": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1561013, Prop:1001}"
+            },
+            "156100056": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1561013, Prop:1002}"
+            },
+            "156100057": {
+                "Title": "Técnica definitiva: Percibimiento de la tormenta"
+            },
+            "156100058": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1561014, Prop:1001}"
+            },
+            "156100059": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1561014, Prop:1002}"
+            }
+        },
+        "6": {
+            "156100012": {
+                "Title": "Apoyo rápido: Protocolo de emergencia",
+                "Description": "Pulsa <IconMap:Icon_Switch> para usarlo cuando el personaje activo sea lanzado por los aires.\nEjecuta ataques consecutivos contra el objetivo, lo que inflige <color=#A6C5FD>daño aéreo</color>.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "156100013": {
+                "Title": "Apoyo defensivo: Intervención juiciosa",
+                "Description": "Pulsa <IconMap:Icon_Switch> para usarlo cuando el personaje en el campo de batalla esté a punto de recibir un ataque.\nBloquea el ataque enemigo, lo que provoca una gran cantidad de Aturdimiento.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "156100014": {
+                "Title": "Ataque sucesivo: Técnicas de negociación",
+                "Description": "Pulsa <IconMap:Icon_Normal> después de un <color=#FFFFFF>apoyo defensivo</color> para usarlo.\nEjecuta una serie de ataques consecutivos contra el objetivo, lo que inflige <color=#A6C5FD>daño aéreo</color>.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "156100060": {
+                "Title": "Apoyo rápido: Protocolo de emergencia"
+            },
+            "156100061": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1561015, Prop:1001}"
+            },
+            "156100062": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1561015, Prop:1002}"
+            },
+            "156100063": {
+                "Title": "Apoyo defensivo: Intervención juiciosa"
+            },
+            "156100064": {
+                "Description": "Multiplicador de Aturdimiento defensivo ligero",
+                "Param": "{Skill:1561016, Prop:1002}"
+            },
+            "156100065": {
+                "Description": "Multiplicador de Aturdimiento defensivo fuerte",
+                "Param": "{Skill:1561017, Prop:1002}"
+            },
+            "156100066": {
+                "Description": "Multiplicador de Aturdimiento defensivo continuo",
+                "Param": "{Skill:1561018, Prop:1002}"
+            },
+            "156100067": {
+                "Title": "Ataque sucesivo: Técnicas de negociación"
+            },
+            "156100068": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1561019, Prop:1001}"
+            },
+            "156100069": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1561019, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1561001": {
+            "DamageValue": 5170,
+            "DamageGrowth": 470,
+            "DazeValue": 2360,
+            "DazeGrowth": 110
+        },
+        "1561002": {
+            "DamageValue": 4890,
+            "DamageGrowth": 450,
+            "DazeValue": 2350,
+            "DazeGrowth": 110
+        },
+        "1561003": {
+            "DamageValue": 16910,
+            "DamageGrowth": 1540,
+            "DazeValue": 8050,
+            "DazeGrowth": 370
+        },
+        "1561004": {
+            "DamageValue": 12560,
+            "DamageGrowth": 1150,
+            "DazeValue": 6290,
+            "DazeGrowth": 290
+        },
+        "1561005": {
+            "DamageValue": 22960,
+            "DamageGrowth": 2090,
+            "DazeValue": 11270,
+            "DazeGrowth": 520
+        },
+        "1561006": {
+            "DamageValue": 21670,
+            "DamageGrowth": 1970,
+            "DazeValue": 18340,
+            "DazeGrowth": 840
+        },
+        "1561007": {
+            "DamageValue": 3900,
+            "DamageGrowth": 360,
+            "DazeValue": 8250,
+            "DazeGrowth": 380
+        },
+        "1561008": {
+            "DamageValue": 5860,
+            "DamageGrowth": 540,
+            "DazeValue": 4960,
+            "DazeGrowth": 230
+        },
+        "1561009": {
+            "DamageValue": 44050,
+            "DamageGrowth": 4010,
+            "DazeValue": 30250,
+            "DazeGrowth": 1380
+        },
+        "1561010": {
+            "DamageValue": 72520,
+            "DamageGrowth": 6600,
+            "DazeValue": 51520,
+            "DazeGrowth": 2350
+        },
+        "1561011": {
+            "DamageValue": 9970,
+            "DamageGrowth": 910,
+            "DazeValue": 4220,
+            "DazeGrowth": 200
+        },
+        "1561012": {
+            "DamageValue": 39490,
+            "DamageGrowth": 3590,
+            "DazeValue": 28240,
+            "DazeGrowth": 1290
+        },
+        "1561013": {
+            "DamageValue": 80040,
+            "DamageGrowth": 7280,
+            "DazeValue": 23840,
+            "DazeGrowth": 1090
+        },
+        "1561014": {
+            "DamageValue": 218830,
+            "DamageGrowth": 19900,
+            "DazeValue": 38130,
+            "DazeGrowth": 1740
+        },
+        "1561015": {
+            "DamageValue": 20380,
+            "DamageGrowth": 1860,
+            "DazeValue": 8620,
+            "DazeGrowth": 400
+        },
+        "1561016": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1561017": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1561018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1561019": {
+            "DamageValue": 53270,
+            "DamageGrowth": 4850,
+            "DazeValue": 39670,
+            "DazeGrowth": 1810
+        },
+        "1561020": {
+            "DamageValue": 9750,
+            "DamageGrowth": 890,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1561021": {
+            "DamageValue": 3250,
+            "DamageGrowth": 300,
+            "DazeValue": 13750,
+            "DazeGrowth": 630
+        }
+    }
+}

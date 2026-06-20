@@ -1,0 +1,489 @@
+{
+    "Name": "Vélina",
+    "ElementTypes": [
+        "Wind"
+    ],
+    "Specialty": {
+        "Id": 3,
+        "Name": "Anomalie"
+    },
+    "Talents": {
+        "1": {
+            "Title": "L'élégance de l'ordre",
+            "Description": "La confusion infligée par le <color=#FFFFFF>Macro-cyclone</color> déclenché par <color=#FFFFFF>Capacité supplémentaire : Comment être raffiné à l'heure du thé</color> augmente de 20 % supplémentaires. Lorsque Vélina déclenche <color=#FFFFFF>Vortex</color>, elle ignore 20 % de la <color=#FFFFFF>RÉS à tous les attributs</color> de la cible. Lorsque les membres de l'escouade infligent des DGT d'<color=#A6C5FD>Arasement</color>, 20 % de la <color=#A6C5FD>RÉS au vent</color> sont ignorés.",
+            "Lore": "Chaque mot, chaque geste est placé exactement là où il doit être.\nSans même s'en rendre compte, on accepte volontairement les frontières, le rythme et le résultat qu'elle a déjà arrangés.\n« L'élégance est simplement l'expression la plus naturelle de l'ordre en mouvement. »"
+        },
+        "2": {
+            "Title": "Dans les moindres détails",
+            "Description": "Lorsque Vélina déclenche <color=#A6C5FD>Arasement</color>, elle peut également gagner 1 point de <color=#FFFFFF>Morsure du vent</color>. Cet effet peut être déclenché une fois toutes les 5 s. Après que <color=#FFFFFF>Macro-cyclone</color> déclenche l'effet <color=#FFFFFF>Teinte chromatique</color>, il peut infliger de l'accumulation d'anomalie de l'attribut correspondant. L'accumulation infligée par cette attaque n'est pas comprise dans les calculs des DGT d'anomalie. Les effets d'augmentation des DGT d'<color=#A6C5FD>Arasement</color> et de <color=#FFFFFF>Vortex</color> de Vélina provenant de <color=#FFFFFF>Capacité supplémentaire : Comment être raffiné à l'heure du thé</color> sont améliorés de 15 % supplémentaires.",
+            "Lore": "Elle anticipe toutes les éventualités, prend en compte chaque variable, et prépare des plans de secours au cas où les choses ne se passent pas comme prévu.\nElle ne laisse jamais rien à la chance. Chaque issue est méticuleusement calculée.\nMême si la situation dérape à un moment donné, elle finit toujours par rentrer dans un plan qu'elle avait prévu au préalable.\n« *soupir*... C'est donc cette éventualité... Heureusement que je ne suis pas entièrement prise au dépourvu. »"
+        },
+        "3": {
+            "Title": "Conquête par l'étiquette",
+            "Description": "Niv. d'<color=#FFFFFF>attaque normale</color>, d'<color=#FFFFFF>esquive</color>, de <color=#FFFFFF>soutien</color>, d'<color=#FFFFFF>attaque spéciale</color> et d'<color=#FFFFFF>enchaînement</color> +2",
+            "Lore": "Nul besoin de subjuguer par la force, ou d'avoir recours aux émotions ou à l'intimidation.\nUne simple réponse pleine de grâce et un compromis méticuleusement réfléchi suffisent...\nAvant que quiconque puisse s'en rendre compte, la situation est déjà en bonne route vers la conquête prévue.\n« Est-ce que l'étiquette n'est que de la violence déguisée ?\nOu est-ce que l'étiquette est une forme raffinée de violence ? »"
+        },
+        "4": {
+            "Title": "Procès autour d'un thé",
+            "Description": "Lorsque Vélina utilise une <color=#FFFFFF>attaque spéciale EX</color>, son ATQ augmente de 15 % pendant 40 s. Les déclenchements répétés réinitialisent la durée.",
+            "Lore": "Au milieu des rires et des conversations, la balance a déjà penché.\nLe thé est à peine versé, que le verdict est déjà prononcé.\n« Si quelque chose me tracasse, je m'en occupe et je passe à autre chose. Et si c'est quelqu'un qui me tracasse, héhé... »"
+        },
+        "5": {
+            "Title": "Sorcière lugubre",
+            "Description": "Niv. d'<color=#FFFFFF>attaque normale</color>, d'<color=#FFFFFF>esquive</color>, de <color=#FFFFFF>soutien</color>, d'<color=#FFFFFF>attaque spéciale</color> et d'<color=#FFFFFF>enchaînement</color> +2",
+            "Lore": "« Ses pas annoncent une sentence funeste !\n— Quand elle te convoque, ça sent le sapin ! »\nAssise au pied du théâtre du Royaume Bangbou, la sorcière aux cheveux argentés écoute les accusations pleines de conviction des petits comédiens à son encontre. Elle agite doucement son éventail ornementé, tout en souriant en silence."
+        },
+        "6": {
+            "Title": "Ange gardien",
+            "Description": "Lorsque Vélina consomme 2 points de <color=#FFFFFF>Morsure du vent</color> pour augmenter le multiplicateur de DGT de <color=#FFFFFF>Vortex</color>, elle gagne 1 point de <color=#FFFFFF>Morsure du vent</color>. Cet effet peut être déclenché une fois toutes les 6 s. Lorsque Vélina touche un ennemi souffrant d'une <color=#A6C5FD>anomalie d'attribut vent</color>, l'<color=#A6C5FD>accumulation d'anomalie d'attribut vent</color> qu'elle inflige augmente de 20 %. Lorsque Vélina inflige <color=#A6C5FD>Arasement</color> à un ennemi souffrant déjà d'<color=#A6C5FD>Arasement</color>, les DGT du nouvel effet <color=#A6C5FD>Arasement</color> augmentent en fonction de la durée restante de l'effet précédent. Chaque seconde restante augmente les DGT de 2,5 %, jusqu'à une augmentation maximale de 40 %.",
+            "Lore": "« Inutile de demander son nom à une ange. Elle se cache dans les rumeurs, dans les réprimandes, dans les lettres d'appel à l'aide qu'on remet les mains tremblantes. »"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passif principal : Éventail dans la manche",
+            "DescriptionByLevel": {
+                "1": "Lorsque la récupération d'énergie initiale de Vélina est supérieure à 1,2, chaque 0,01 point au-dessus de ce seuil augmente les DGT infligés de 0,21 %, jusqu'à une augmentation maximale de 35 %, et augmente également la maîtrise d'anomalie de 0,5, jusqu'à une augmentation maximale de 84.\nLorsque Vélina entre sur le champ de bataille, elle obtient 45 points de <Term:1000008>. En mode Expédition, cet effet peut être déclenché une fois toutes les 180 s. Lorsque vous lancez <color=#FFFFFF>Attaque spéciale EX : Cisaillement du vent - Convection purificatrice</color> ou <color=#FFFFFF>Attaque spéciale EX : Cisaillement du vent - Triple accalmie</color>, elle obtient 45 points de <color=#FFFFFF>Grâce éolienne</color>, jusqu'à un maximum de 135 points.\nLorsque Vélina déclenche <color=#FFFFFF>Vortex</color>, elle obtient 1 point de <Term:1000014> et invoque un <Term:1000015>, infligeant des <color=#A6C5FD>DGT de vent</color>. Cet effet peut être déclenché une fois toutes les 3 s. Lorsque Vélina dispose d'au moins 2 points de <color=#FFFFFF>Morsure du vent</color>, la prochaine fois qu'elle déclenchera <color=#FFFFFF>Vortex</color>, 2 points de <color=#FFFFFF>Morsure du vent</color> seront consommés pour augmenter le multiplicateur de DGT de cet effet <color=#FFFFFF>Vortex</color> de <color=#2BAD00>90 %</color>. De plus, elle n'invoque plus un <color=#FFFFFF>Mini-cyclone</color>, mais invoque un <Term:1000016> à la place qui n'octroie aucun point de <color=#FFFFFF>Morsure du vent</color>.\nLorsqu'un <color=#FFFFFF>Macro-cyclone</color> invoqué par Vélina touche pour la première fois un ennemi souffrant de <color=#FFFFFF>Contamination</color>, <Term:1000017> se déclenche, et se convertit en <color=#FFFFFF>Macro-cyclone</color> de l'attribut correspondant, qui inflige des DGT de l'attribut correspondant. Lorsque <color=#FFFFFF>Macro-cyclone</color> touche un ennemi, la <color=#A6C5FD>RÉS d'anomalie d'attribut de vent</color> est réduite de 7 % pendant 35 s. Lorsque <color=#FFFFFF>Macro-cyclone</color> converti par <color=#FFFFFF>Teinte chromatique</color> touche un ennemi, la <color=#FFFFFF>RÉS à l'accumulation d'anomalie correspondante</color> est également réduite de 7 % pendant 35 s. Les déclenchements répétés réinitialisent la durée.\nLorsqu'un ennemi touché par <color=#FFFFFF>Macro-cyclone</color> est vaincu, la durée du <color=#FFFFFF>Macro-cyclone</color> en question est prolongée de 5 s. Cet effet ne peut être déclenché qu'une fois par <color=#FFFFFF>Macro-cyclone</color>, et un seul <color=#FFFFFF>Macro-cyclone</color> peut exister à la fois.\nLes <color=#FFFFFF>Mini-cyclone</color> et <color=#FFFFFF>Macro-cyclones</color> déclenchent une explosion lorsqu'ils se dissipent. Si cette explosion touche un ennemi souffrant d'une <color=#A6C5FD>anomalie de vent</color>, elle applique un effet de <color=#FFFFFF>Floraison spéciale</color> à la cible : inflige des <color=#A6C5FD>DGT d'anomalie de vent</color> additionnels, avec un multiplicateur fixe de <color=#2BAD00>85 %</color> et <color=#2BAD00>135 %</color> respectivement.",
+                "2": "Lorsque la récupération d'énergie initiale de Vélina est supérieure à 1,2, chaque 0,01 point au-dessus de ce seuil augmente les DGT infligés de 0,21 %, jusqu'à une augmentation maximale de 35 %, et augmente également la maîtrise d'anomalie de 0,5, jusqu'à une augmentation maximale de 84.\nLorsque Vélina entre sur le champ de bataille, elle obtient 45 points de <Term:1000008>. En mode Expédition, cet effet peut être déclenché une fois toutes les 180 s. Lorsque vous lancez <color=#FFFFFF>Attaque spéciale EX : Cisaillement du vent - Convection purificatrice</color> ou <color=#FFFFFF>Attaque spéciale EX : Cisaillement du vent - Triple accalmie</color>, elle obtient 45 points de <color=#FFFFFF>Grâce éolienne</color>, jusqu'à un maximum de 135 points.\nLorsque Vélina déclenche <color=#FFFFFF>Vortex</color>, elle obtient 1 point de <Term:1000014> et invoque un <Term:1000015>, infligeant des <color=#A6C5FD>DGT de vent</color>. Cet effet peut être déclenché une fois toutes les 3 s. Lorsque Vélina dispose d'au moins 2 points de <color=#FFFFFF>Morsure du vent</color>, la prochaine fois qu'elle déclenchera <color=#FFFFFF>Vortex</color>, 2 points de <color=#FFFFFF>Morsure du vent</color> seront consommés pour augmenter le multiplicateur de DGT de cet effet <color=#FFFFFF>Vortex</color> de <color=#2BAD00>100 %</color>. De plus, elle n'invoque plus un <color=#FFFFFF>Mini-cyclone</color>, mais invoque un <Term:1000016> à la place qui n'octroie aucun point de <color=#FFFFFF>Morsure du vent</color>.\nLorsqu'un <color=#FFFFFF>Macro-cyclone</color> invoqué par Vélina touche pour la première fois un ennemi souffrant de <color=#FFFFFF>Contamination</color>, <Term:1000017> se déclenche, et se convertit en <color=#FFFFFF>Macro-cyclone</color> de l'attribut correspondant, qui inflige des DGT de l'attribut correspondant. Lorsque <color=#FFFFFF>Macro-cyclone</color> touche un ennemi, la <color=#A6C5FD>RÉS d'anomalie d'attribut de vent</color> est réduite de 7 % pendant 35 s. Lorsque <color=#FFFFFF>Macro-cyclone</color> converti par <color=#FFFFFF>Teinte chromatique</color> touche un ennemi, la <color=#FFFFFF>RÉS à l'accumulation d'anomalie correspondante</color> est également réduite de 7 % pendant 35 s. Les déclenchements répétés réinitialisent la durée.\nLorsqu'un ennemi touché par <color=#FFFFFF>Macro-cyclone</color> est vaincu, la durée du <color=#FFFFFF>Macro-cyclone</color> en question est prolongée de 5 s. Cet effet ne peut être déclenché qu'une fois par <color=#FFFFFF>Macro-cyclone</color>, et un seul <color=#FFFFFF>Macro-cyclone</color> peut exister à la fois.\nLes <color=#FFFFFF>Mini-cyclone</color> et <color=#FFFFFF>Macro-cyclones</color> déclenchent une explosion lorsqu'ils se dissipent. Si cette explosion touche un ennemi souffrant d'une <color=#A6C5FD>anomalie de vent</color>, elle applique un effet de <color=#FFFFFF>Floraison spéciale</color> à la cible : inflige des <color=#A6C5FD>DGT d'anomalie de vent</color> additionnels, avec un multiplicateur fixe de <color=#2BAD00>95 %</color> et <color=#2BAD00>155 %</color> respectivement.",
+                "3": "Lorsque la récupération d'énergie initiale de Vélina est supérieure à 1,2, chaque 0,01 point au-dessus de ce seuil augmente les DGT infligés de 0,21 %, jusqu'à une augmentation maximale de 35 %, et augmente également la maîtrise d'anomalie de 0,5, jusqu'à une augmentation maximale de 84.\nLorsque Vélina entre sur le champ de bataille, elle obtient 45 points de <Term:1000008>. En mode Expédition, cet effet peut être déclenché une fois toutes les 180 s. Lorsque vous lancez <color=#FFFFFF>Attaque spéciale EX : Cisaillement du vent - Convection purificatrice</color> ou <color=#FFFFFF>Attaque spéciale EX : Cisaillement du vent - Triple accalmie</color>, elle obtient 45 points de <color=#FFFFFF>Grâce éolienne</color>, jusqu'à un maximum de 135 points.\nLorsque Vélina déclenche <color=#FFFFFF>Vortex</color>, elle obtient 1 point de <Term:1000014> et invoque un <Term:1000015>, infligeant des <color=#A6C5FD>DGT de vent</color>. Cet effet peut être déclenché une fois toutes les 3 s. Lorsque Vélina dispose d'au moins 2 points de <color=#FFFFFF>Morsure du vent</color>, la prochaine fois qu'elle déclenchera <color=#FFFFFF>Vortex</color>, 2 points de <color=#FFFFFF>Morsure du vent</color> seront consommés pour augmenter le multiplicateur de DGT de cet effet <color=#FFFFFF>Vortex</color> de <color=#2BAD00>110 %</color>. De plus, elle n'invoque plus un <color=#FFFFFF>Mini-cyclone</color>, mais invoque un <Term:1000016> à la place qui n'octroie aucun point de <color=#FFFFFF>Morsure du vent</color>.\nLorsqu'un <color=#FFFFFF>Macro-cyclone</color> invoqué par Vélina touche pour la première fois un ennemi souffrant de <color=#FFFFFF>Contamination</color>, <Term:1000017> se déclenche, et se convertit en <color=#FFFFFF>Macro-cyclone</color> de l'attribut correspondant, qui inflige des DGT de l'attribut correspondant. Lorsque <color=#FFFFFF>Macro-cyclone</color> touche un ennemi, la <color=#A6C5FD>RÉS d'anomalie d'attribut de vent</color> est réduite de 7 % pendant 35 s. Lorsque <color=#FFFFFF>Macro-cyclone</color> converti par <color=#FFFFFF>Teinte chromatique</color> touche un ennemi, la <color=#FFFFFF>RÉS à l'accumulation d'anomalie correspondante</color> est également réduite de 7 % pendant 35 s. Les déclenchements répétés réinitialisent la durée.\nLorsqu'un ennemi touché par <color=#FFFFFF>Macro-cyclone</color> est vaincu, la durée du <color=#FFFFFF>Macro-cyclone</color> en question est prolongée de 5 s. Cet effet ne peut être déclenché qu'une fois par <color=#FFFFFF>Macro-cyclone</color>, et un seul <color=#FFFFFF>Macro-cyclone</color> peut exister à la fois.\nLes <color=#FFFFFF>Mini-cyclone</color> et <color=#FFFFFF>Macro-cyclones</color> déclenchent une explosion lorsqu'ils se dissipent. Si cette explosion touche un ennemi souffrant d'une <color=#A6C5FD>anomalie de vent</color>, elle applique un effet de <color=#FFFFFF>Floraison spéciale</color> à la cible : inflige des <color=#A6C5FD>DGT d'anomalie de vent</color> additionnels, avec un multiplicateur fixe de <color=#2BAD00>105 %</color> et <color=#2BAD00>175 %</color> respectivement.",
+                "4": "Lorsque la récupération d'énergie initiale de Vélina est supérieure à 1,2, chaque 0,01 point au-dessus de ce seuil augmente les DGT infligés de 0,21 %, jusqu'à une augmentation maximale de 35 %, et augmente également la maîtrise d'anomalie de 0,5, jusqu'à une augmentation maximale de 84.\nLorsque Vélina entre sur le champ de bataille, elle obtient 45 points de <Term:1000008>. En mode Expédition, cet effet peut être déclenché une fois toutes les 180 s. Lorsque vous lancez <color=#FFFFFF>Attaque spéciale EX : Cisaillement du vent - Convection purificatrice</color> ou <color=#FFFFFF>Attaque spéciale EX : Cisaillement du vent - Triple accalmie</color>, elle obtient 45 points de <color=#FFFFFF>Grâce éolienne</color>, jusqu'à un maximum de 135 points.\nLorsque Vélina déclenche <color=#FFFFFF>Vortex</color>, elle obtient 1 point de <Term:1000014> et invoque un <Term:1000015>, infligeant des <color=#A6C5FD>DGT de vent</color>. Cet effet peut être déclenché une fois toutes les 3 s. Lorsque Vélina dispose d'au moins 2 points de <color=#FFFFFF>Morsure du vent</color>, la prochaine fois qu'elle déclenchera <color=#FFFFFF>Vortex</color>, 2 points de <color=#FFFFFF>Morsure du vent</color> seront consommés pour augmenter le multiplicateur de DGT de cet effet <color=#FFFFFF>Vortex</color> de <color=#2BAD00>120 %</color>. De plus, elle n'invoque plus un <color=#FFFFFF>Mini-cyclone</color>, mais invoque un <Term:1000016> à la place qui n'octroie aucun point de <color=#FFFFFF>Morsure du vent</color>.\nLorsqu'un <color=#FFFFFF>Macro-cyclone</color> invoqué par Vélina touche pour la première fois un ennemi souffrant de <color=#FFFFFF>Contamination</color>, <Term:1000017> se déclenche, et se convertit en <color=#FFFFFF>Macro-cyclone</color> de l'attribut correspondant, qui inflige des DGT de l'attribut correspondant. Lorsque <color=#FFFFFF>Macro-cyclone</color> touche un ennemi, la <color=#A6C5FD>RÉS d'anomalie d'attribut de vent</color> est réduite de 7 % pendant 35 s. Lorsque <color=#FFFFFF>Macro-cyclone</color> converti par <color=#FFFFFF>Teinte chromatique</color> touche un ennemi, la <color=#FFFFFF>RÉS à l'accumulation d'anomalie correspondante</color> est également réduite de 7 % pendant 35 s. Les déclenchements répétés réinitialisent la durée.\nLorsqu'un ennemi touché par <color=#FFFFFF>Macro-cyclone</color> est vaincu, la durée du <color=#FFFFFF>Macro-cyclone</color> en question est prolongée de 5 s. Cet effet ne peut être déclenché qu'une fois par <color=#FFFFFF>Macro-cyclone</color>, et un seul <color=#FFFFFF>Macro-cyclone</color> peut exister à la fois.\nLes <color=#FFFFFF>Mini-cyclone</color> et <color=#FFFFFF>Macro-cyclones</color> déclenchent une explosion lorsqu'ils se dissipent. Si cette explosion touche un ennemi souffrant d'une <color=#A6C5FD>anomalie de vent</color>, elle applique un effet de <color=#FFFFFF>Floraison spéciale</color> à la cible : inflige des <color=#A6C5FD>DGT d'anomalie de vent</color> additionnels, avec un multiplicateur fixe de <color=#2BAD00>115 %</color> et <color=#2BAD00>195 %</color> respectivement.",
+                "5": "Lorsque la récupération d'énergie initiale de Vélina est supérieure à 1,2, chaque 0,01 point au-dessus de ce seuil augmente les DGT infligés de 0,21 %, jusqu'à une augmentation maximale de 35 %, et augmente également la maîtrise d'anomalie de 0,5, jusqu'à une augmentation maximale de 84.\nLorsque Vélina entre sur le champ de bataille, elle obtient 45 points de <Term:1000008>. En mode Expédition, cet effet peut être déclenché une fois toutes les 180 s. Lorsque vous lancez <color=#FFFFFF>Attaque spéciale EX : Cisaillement du vent - Convection purificatrice</color> ou <color=#FFFFFF>Attaque spéciale EX : Cisaillement du vent - Triple accalmie</color>, elle obtient 45 points de <color=#FFFFFF>Grâce éolienne</color>, jusqu'à un maximum de 135 points.\nLorsque Vélina déclenche <color=#FFFFFF>Vortex</color>, elle obtient 1 point de <Term:1000014> et invoque un <Term:1000015>, infligeant des <color=#A6C5FD>DGT de vent</color>. Cet effet peut être déclenché une fois toutes les 3 s. Lorsque Vélina dispose d'au moins 2 points de <color=#FFFFFF>Morsure du vent</color>, la prochaine fois qu'elle déclenchera <color=#FFFFFF>Vortex</color>, 2 points de <color=#FFFFFF>Morsure du vent</color> seront consommés pour augmenter le multiplicateur de DGT de cet effet <color=#FFFFFF>Vortex</color> de <color=#2BAD00>130 %</color>. De plus, elle n'invoque plus un <color=#FFFFFF>Mini-cyclone</color>, mais invoque un <Term:1000016> à la place qui n'octroie aucun point de <color=#FFFFFF>Morsure du vent</color>.\nLorsqu'un <color=#FFFFFF>Macro-cyclone</color> invoqué par Vélina touche pour la première fois un ennemi souffrant de <color=#FFFFFF>Contamination</color>, <Term:1000017> se déclenche, et se convertit en <color=#FFFFFF>Macro-cyclone</color> de l'attribut correspondant, qui inflige des DGT de l'attribut correspondant. Lorsque <color=#FFFFFF>Macro-cyclone</color> touche un ennemi, la <color=#A6C5FD>RÉS d'anomalie d'attribut de vent</color> est réduite de 7 % pendant 35 s. Lorsque <color=#FFFFFF>Macro-cyclone</color> converti par <color=#FFFFFF>Teinte chromatique</color> touche un ennemi, la <color=#FFFFFF>RÉS à l'accumulation d'anomalie correspondante</color> est également réduite de 7 % pendant 35 s. Les déclenchements répétés réinitialisent la durée.\nLorsqu'un ennemi touché par <color=#FFFFFF>Macro-cyclone</color> est vaincu, la durée du <color=#FFFFFF>Macro-cyclone</color> en question est prolongée de 5 s. Cet effet ne peut être déclenché qu'une fois par <color=#FFFFFF>Macro-cyclone</color>, et un seul <color=#FFFFFF>Macro-cyclone</color> peut exister à la fois.\nLes <color=#FFFFFF>Mini-cyclone</color> et <color=#FFFFFF>Macro-cyclones</color> déclenchent une explosion lorsqu'ils se dissipent. Si cette explosion touche un ennemi souffrant d'une <color=#A6C5FD>anomalie de vent</color>, elle applique un effet de <color=#FFFFFF>Floraison spéciale</color> à la cible : inflige des <color=#A6C5FD>DGT d'anomalie de vent</color> additionnels, avec un multiplicateur fixe de <color=#2BAD00>125 %</color> et <color=#2BAD00>215 %</color> respectivement.",
+                "6": "Lorsque la récupération d'énergie initiale de Vélina est supérieure à 1,2, chaque 0,01 point au-dessus de ce seuil augmente les DGT infligés de 0,21 %, jusqu'à une augmentation maximale de 35 %, et augmente également la maîtrise d'anomalie de 0,5, jusqu'à une augmentation maximale de 84.\nLorsque Vélina entre sur le champ de bataille, elle obtient 45 points de <Term:1000008>. En mode Expédition, cet effet peut être déclenché une fois toutes les 180 s. Lorsque vous lancez <color=#FFFFFF>Attaque spéciale EX : Cisaillement du vent - Convection purificatrice</color> ou <color=#FFFFFF>Attaque spéciale EX : Cisaillement du vent - Triple accalmie</color>, elle obtient 45 points de <color=#FFFFFF>Grâce éolienne</color>, jusqu'à un maximum de 135 points.\nLorsque Vélina déclenche <color=#FFFFFF>Vortex</color>, elle obtient 1 point de <Term:1000014> et invoque un <Term:1000015>, infligeant des <color=#A6C5FD>DGT de vent</color>. Cet effet peut être déclenché une fois toutes les 3 s. Lorsque Vélina dispose d'au moins 2 points de <color=#FFFFFF>Morsure du vent</color>, la prochaine fois qu'elle déclenchera <color=#FFFFFF>Vortex</color>, 2 points de <color=#FFFFFF>Morsure du vent</color> seront consommés pour augmenter le multiplicateur de DGT de cet effet <color=#FFFFFF>Vortex</color> de <color=#2BAD00>140 %</color>. De plus, elle n'invoque plus un <color=#FFFFFF>Mini-cyclone</color>, mais invoque un <Term:1000016> à la place qui n'octroie aucun point de <color=#FFFFFF>Morsure du vent</color>.\nLorsqu'un <color=#FFFFFF>Macro-cyclone</color> invoqué par Vélina touche pour la première fois un ennemi souffrant de <color=#FFFFFF>Contamination</color>, <Term:1000017> se déclenche, et se convertit en <color=#FFFFFF>Macro-cyclone</color> de l'attribut correspondant, qui inflige des DGT de l'attribut correspondant. Lorsque <color=#FFFFFF>Macro-cyclone</color> touche un ennemi, la <color=#A6C5FD>RÉS d'anomalie d'attribut de vent</color> est réduite de 7 % pendant 35 s. Lorsque <color=#FFFFFF>Macro-cyclone</color> converti par <color=#FFFFFF>Teinte chromatique</color> touche un ennemi, la <color=#FFFFFF>RÉS à l'accumulation d'anomalie correspondante</color> est également réduite de 7 % pendant 35 s. Les déclenchements répétés réinitialisent la durée.\nLorsqu'un ennemi touché par <color=#FFFFFF>Macro-cyclone</color> est vaincu, la durée du <color=#FFFFFF>Macro-cyclone</color> en question est prolongée de 5 s. Cet effet ne peut être déclenché qu'une fois par <color=#FFFFFF>Macro-cyclone</color>, et un seul <color=#FFFFFF>Macro-cyclone</color> peut exister à la fois.\nLes <color=#FFFFFF>Mini-cyclone</color> et <color=#FFFFFF>Macro-cyclones</color> déclenchent une explosion lorsqu'ils se dissipent. Si cette explosion touche un ennemi souffrant d'une <color=#A6C5FD>anomalie de vent</color>, elle applique un effet de <color=#FFFFFF>Floraison spéciale</color> à la cible : inflige des <color=#A6C5FD>DGT d'anomalie de vent</color> additionnels, avec un multiplicateur fixe de <color=#2BAD00>135 %</color> et <color=#2BAD00>235 %</color> respectivement.",
+                "7": "Lorsque la récupération d'énergie initiale de Vélina est supérieure à 1,2, chaque 0,01 point au-dessus de ce seuil augmente les DGT infligés de 0,21 %, jusqu'à une augmentation maximale de 35 %, et augmente également la maîtrise d'anomalie de 0,5, jusqu'à une augmentation maximale de 84.\nLorsque Vélina entre sur le champ de bataille, elle obtient 45 points de <Term:1000008>. En mode Expédition, cet effet peut être déclenché une fois toutes les 180 s. Lorsque vous lancez <color=#FFFFFF>Attaque spéciale EX : Cisaillement du vent - Convection purificatrice</color> ou <color=#FFFFFF>Attaque spéciale EX : Cisaillement du vent - Triple accalmie</color>, elle obtient 45 points de <color=#FFFFFF>Grâce éolienne</color>, jusqu'à un maximum de 135 points.\nLorsque Vélina déclenche <color=#FFFFFF>Vortex</color>, elle obtient 1 point de <Term:1000014> et invoque un <Term:1000015>, infligeant des <color=#A6C5FD>DGT de vent</color>. Cet effet peut être déclenché une fois toutes les 3 s. Lorsque Vélina dispose d'au moins 2 points de <color=#FFFFFF>Morsure du vent</color>, la prochaine fois qu'elle déclenchera <color=#FFFFFF>Vortex</color>, 2 points de <color=#FFFFFF>Morsure du vent</color> seront consommés pour augmenter le multiplicateur de DGT de cet effet <color=#FFFFFF>Vortex</color> de <color=#2BAD00>150 %</color>. De plus, elle n'invoque plus un <color=#FFFFFF>Mini-cyclone</color>, mais invoque un <Term:1000016> à la place qui n'octroie aucun point de <color=#FFFFFF>Morsure du vent</color>.\nLorsqu'un <color=#FFFFFF>Macro-cyclone</color> invoqué par Vélina touche pour la première fois un ennemi souffrant de <color=#FFFFFF>Contamination</color>, <Term:1000017> se déclenche, et se convertit en <color=#FFFFFF>Macro-cyclone</color> de l'attribut correspondant, qui inflige des DGT de l'attribut correspondant. Lorsque <color=#FFFFFF>Macro-cyclone</color> touche un ennemi, la <color=#A6C5FD>RÉS d'anomalie d'attribut de vent</color> est réduite de 7 % pendant 35 s. Lorsque <color=#FFFFFF>Macro-cyclone</color> converti par <color=#FFFFFF>Teinte chromatique</color> touche un ennemi, la <color=#FFFFFF>RÉS à l'accumulation d'anomalie correspondante</color> est également réduite de 7 % pendant 35 s. Les déclenchements répétés réinitialisent la durée.\nLorsqu'un ennemi touché par <color=#FFFFFF>Macro-cyclone</color> est vaincu, la durée du <color=#FFFFFF>Macro-cyclone</color> en question est prolongée de 5 s. Cet effet ne peut être déclenché qu'une fois par <color=#FFFFFF>Macro-cyclone</color>, et un seul <color=#FFFFFF>Macro-cyclone</color> peut exister à la fois.\nLes <color=#FFFFFF>Mini-cyclone</color> et <color=#FFFFFF>Macro-cyclones</color> déclenchent une explosion lorsqu'ils se dissipent. Si cette explosion touche un ennemi souffrant d'une <color=#A6C5FD>anomalie de vent</color>, elle applique un effet de <color=#FFFFFF>Floraison spéciale</color> à la cible : inflige des <color=#A6C5FD>DGT d'anomalie de vent</color> additionnels, avec un multiplicateur fixe de <color=#2BAD00>145 %</color> et <color=#2BAD00>255 %</color> respectivement."
+            }
+        },
+        "MathSkill": {
+            "Title": "Capacité supplémentaire : Comment être raffiné à l'heure du thé",
+            "Description": "Lorsqu'il y a un autre personnage <color=#FFFFFF>Anomalie</color> ou partageant le même attribut dans votre escouade :\nLes DGT d'<color=#A6C5FD>Arasement</color> et de <color=#FFFFFF>Vortex</color> de Vélina augmentent de 10 %. Lorsqu'une attaque lourde d'<color=#FFFFFF>ultime</color> touche un ennemi souffrant d'une <color=#A6C5FD>anomalie d'attribut de vent</color>, un effet <color=#FFFFFF>Floraison spéciale</color> est appliqué à la cible : inflige <color=#A6C5FD>680 %</color> des <color=#A6C5FD>DGT d'anomalie de vent</color> additionnels.\nPour <color=#FFFFFF>Passif principal : Éventail dans la manche</color>, la réduction de <color=#FFFFFF>RÉS à l'accumulation d'anomalie d'attribut</color> provenant de <Term:1000016> augmente de 7 % supplémentaires, tandis que la confusion infligée augmente de 30 % et l'accumulation d'anomalie d'attribut infligée augmente de 15 %."
+        },
+        "AwakenAbility": {},
+        "BaseProps": [
+            {
+                "31201": 0,
+                "12101": 0
+            },
+            {
+                "31201": 18,
+                "12101": 0
+            },
+            {
+                "31201": 18,
+                "12101": 25
+            },
+            {
+                "31201": 36,
+                "12101": 25
+            },
+            {
+                "31201": 36,
+                "12101": 50
+            },
+            {
+                "31201": 54,
+                "12101": 50
+            },
+            {
+                "31201": 54,
+                "12101": 75
+            }
+        ]
+    },
+    "SkillDescriptions": {
+        "0": {
+            "156100001": {
+                "Title": "Attaque normale : Danse d'éventails",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pour activer :\nAssène jusqu'à 5 attaques sur les ennemis en face, infligeant des <color=#A6C5FD>DGT de vent</color>.\nLors du 5e coup, le niveau de RÉS à l'interruption augmente et les DGT subis sont réduits de 40 %."
+            },
+            "156100015": {
+                "Title": "Attaque normale : Danse d'éventails"
+            },
+            "156100016": {
+                "Description": "Multiplicateur de DGT du 1er coup",
+                "Param": "{Skill:1561001, Prop:1001}"
+            },
+            "156100017": {
+                "Description": "Multiplicateur de DGT du 2e coup",
+                "Param": "{Skill:1561002, Prop:1001}"
+            },
+            "156100018": {
+                "Description": "Multiplicateur de DGT du 3e coup",
+                "Param": "{Skill:1561003, Prop:1001}"
+            },
+            "156100019": {
+                "Description": "Multiplicateur de DGT du 4e coup",
+                "Param": "{Skill:1561004, Prop:1001}"
+            },
+            "156100020": {
+                "Description": "Multiplicateur de DGT du 5e coup",
+                "Param": "{Skill:1561005, Prop:1001}"
+            },
+            "156100021": {
+                "Description": "Multiplicateur de confusion du 1er coup",
+                "Param": "{Skill:1561001, Prop:1002}"
+            },
+            "156100022": {
+                "Description": "Multiplicateur de confusion du 2e coup",
+                "Param": "{Skill:1561002, Prop:1002}"
+            },
+            "156100023": {
+                "Description": "Multiplicateur de confusion du 3e coup",
+                "Param": "{Skill:1561003, Prop:1002}"
+            },
+            "156100024": {
+                "Description": "Multiplicateur de confusion du 4e coup",
+                "Param": "{Skill:1561004, Prop:1002}"
+            },
+            "156100025": {
+                "Description": "Multiplicateur de confusion du 5e coup",
+                "Param": "{Skill:1561005, Prop:1002}"
+            }
+        },
+        "1": {
+            "156100002": {
+                "Title": "Attaque spéciale : Cisaillement du vent - Bourrasque purificatrice",
+                "Description": "Appuyez sur <IconMap:Icon_Special> pour activer :\nAssène une bourrasque balayante vers l'avant, infligeant des <color=#A6C5FD>DGT de vent</color>."
+            },
+            "156100003": {
+                "Title": "Attaque spéciale EX : Cisaillement du vent - Convection purificatrice",
+                "Description": "Avec suffisamment d'énergie, appuyez sur <IconMap:Icon_SpecialReady> pour activer :\nEsquive vers l'arrière, puis assène un puissant coup de vent pour attaquer les ennemis, infligeant des <color=#A6C5FD>DGT de vent</color>.\nPendant l'esquive arrière, l'effet d'une esquive peut être activé. Lorsque vous esquivez une attaque ennemie à l'aide de l'esquive arrière, vous entrez dans l'état <color=#FFFFFF>Œil de lynx</color>.\nAprès cette compétence, appuyez sur <IconMap:Icon_Normal> pour enchaîner avec le 5e coup de l'<color=#FFFFFF>attaque normale</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "156100004": {
+                "Title": "Attaque spéciale EX : Cisaillement du vent - Triple accalmie",
+                "Description": "Avec suffisamment d'énergie et après avoir utilisé <color=#FFFFFF>Attaque spéciale EX : Cisaillement du vent - Convection purificatrice</color>, appuyez sur <IconMap:Icon_SpecialReady> ou maintenez le bouton enfoncé pour activer :\nAgite l'éventail en continu, infligeant des <color=#A6C5FD>DGT de vent</color>.\nAprès avoir utilisé cette compétence, appuyez sur <IconMap:Icon_Normal> pour enchaîner avec le 5e coup de l'<color=#FFFFFF>attaque normale</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "156100005": {
+                "Title": "Attaque spéciale EX : Cisaillement du vent - Œil du cyclone",
+                "Description": "Lorsque vous disposez d'au moins 90 points de <Term:1000008>, maintenez <IconMap:Icon_Special> ou <IconMap:Icon_Normal> enfoncé pour activer :\nVélina canalise un tourbillon et invoque un <Term:1000016> qui attaque les ennemis en continu et déclenche le <color=#FFFFFF>soutien rapide</color> du personnage précédent dans l'escouade.\n<color=#FFFFFF>Macro-cyclone</color> dure 5 s et inflige des <color=#A6C5FD>DGT de vent</color> aux ennemis à proximité toutes les 0,5 s."
+            },
+            "156100026": {
+                "Title": "Attaque spéciale : Cisaillement du vent - Bourrasque purificatrice"
+            },
+            "156100027": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1561008, Prop:1001}"
+            },
+            "156100028": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1561008, Prop:1002}"
+            },
+            "156100029": {
+                "Title": "Attaque spéciale EX : Cisaillement du vent - Convection purificatrice"
+            },
+            "156100030": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1561009, Prop:1001}"
+            },
+            "156100031": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1561009, Prop:1002}"
+            },
+            "156100032": {
+                "Description": "Coût en énergie",
+                "Param": "45 pts"
+            },
+            "156100033": {
+                "Title": "Attaque spéciale EX : Cisaillement du vent - Triple accalmie"
+            },
+            "156100034": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1561010, Prop:1001}"
+            },
+            "156100035": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1561010, Prop:1002}"
+            },
+            "156100036": {
+                "Description": "Coût en énergie",
+                "Param": "45 pts"
+            },
+            "156100037": {
+                "Title": "Attaque spéciale EX : Cisaillement du vent - Œil du cyclone"
+            },
+            "156100038": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1561006, Prop:1001}"
+            },
+            "156100039": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1561006, Prop:1002}"
+            },
+            "156100040": {
+                "Description": "Coût en Grâce éolienne",
+                "Param": "90 pts"
+            },
+            "156100041": {
+                "Title": "Macro-cyclone"
+            },
+            "156100042": {
+                "Description": "Multiplicateur de DGT de l'attaque à coup unique de vent du Macro-cyclone",
+                "Param": "{Skill:1561007, Prop:1001}"
+            },
+            "156100043": {
+                "Description": "Multiplicateur de confusion de l'attaque à coup unique de vent du Macro-cyclone",
+                "Param": "{Skill:1561007, Prop:1002}"
+            },
+            "156100044": {
+                "Description": "Multiplicateur de DGT de l'attaque à coup unique d'attribut converti du Macro-cyclone",
+                "Param": "{{Skill:1561020, Prop:1001}*0.2}"
+            },
+            "156100045": {
+                "Title": "Mini-cyclone"
+            },
+            "156100046": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1561021, Prop:1001}"
+            },
+            "156100047": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1561021, Prop:1002}"
+            }
+        },
+        "2": {
+            "156100006": {
+                "Title": "Esquive : Soufflé par le vent",
+                "Description": "Appuyez sur <IconMap:Icon_Evade> pour activer :\nUne esquive rapide.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "156100007": {
+                "Title": "Attaque de bond : Pas de bourrasque",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pendant une esquive pour activer :\nAssène une attaque frontale rapide qui inflige des <color=#A6C5FD>DGT de vent</color>."
+            },
+            "156100008": {
+                "Title": "Contre d'esquive : Déchirure de nuage",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pendant une <color=#FFFFFF>esquive parfaite</color> pour activer :\nLance une série d'attaques sur la cible, infligeant des <color=#A6C5FD>DGT de vent</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "156100048": {
+                "Title": "Attaque de bond : Pas de bourrasque"
+            },
+            "156100049": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1561011, Prop:1001}"
+            },
+            "156100050": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1561011, Prop:1002}"
+            },
+            "156100051": {
+                "Title": "Contre d'esquive : Déchirure de nuage"
+            },
+            "156100052": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1561012, Prop:1001}"
+            },
+            "156100053": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1561012, Prop:1002}"
+            }
+        },
+        "3": {
+            "156100009": {
+                "Title": "Enchaînement : Pirouette somptueuse",
+                "Description": "Lors du déclenchement d'un <color=#FFFFFF>enchaînement</color>, sélectionnez le personnage pour activer :\nSe transforme en ouragan pour asséner de multiples attaques contre les ennemis, suivies d'un coup final, infligeant d'importants <color=#A6C5FD>DGT de vent</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "156100010": {
+                "Title": "Ultime : Grondement de la tempête",
+                "Description": "Lorsque le niveau de décibels est au <color=#FFFFFF>Maximum</color>, appuyez sur <IconMap:Icon_UltimateReady> pour activer :\nAssène plusieurs attaques aux ennemis en face, infligeant d'importants <color=#A6C5FD>DGT de vent</color>.\nAprès avoir utilisé cette compétence, le <color=#FFFFFF>soutien rapide</color> du personnage précédent se déclenche.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "156100054": {
+                "Title": "Enchaînement : Pirouette somptueuse"
+            },
+            "156100055": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1561013, Prop:1001}"
+            },
+            "156100056": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1561013, Prop:1002}"
+            },
+            "156100057": {
+                "Title": "Ultime : Grondement de la tempête"
+            },
+            "156100058": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1561014, Prop:1001}"
+            },
+            "156100059": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1561014, Prop:1002}"
+            }
+        },
+        "6": {
+            "156100012": {
+                "Title": "Soutien rapide : Protocole d'urgence",
+                "Description": "Lorsque le personnage contrôlé est projeté, appuyez sur <IconMap:Icon_Switch> pour activer :\nAssène des attaques consécutives à la cible, infligeant des <color=#A6C5FD>DGT de vent</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "156100013": {
+                "Title": "Soutien défensif : Intervention judicieuse",
+                "Description": "Lorsque le personnage sur le terrain est sur le point d'être attaqué, appuyez sur <IconMap:Icon_Switch> pour activer :\nPare l'attaque de l'ennemi et inflige une confusion importante.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "156100014": {
+                "Title": "Soutien de suivi : Techniques de négociation",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> après un <color=#FFFFFF>soutien défensif</color> pour activer :\nLance une série d'attaques, infligeant des <color=#A6C5FD>DGT de vent</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "156100060": {
+                "Title": "Soutien rapide : Protocole d'urgence"
+            },
+            "156100061": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1561015, Prop:1001}"
+            },
+            "156100062": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1561015, Prop:1002}"
+            },
+            "156100063": {
+                "Title": "Soutien défensif : Intervention judicieuse"
+            },
+            "156100064": {
+                "Description": "Multiplicateur de confusion de défense légère",
+                "Param": "{Skill:1561016, Prop:1002}"
+            },
+            "156100065": {
+                "Description": "Multiplicateur de confusion de défense lourde",
+                "Param": "{Skill:1561017, Prop:1002}"
+            },
+            "156100066": {
+                "Description": "Multiplicateur de confusion de défense en chaîne",
+                "Param": "{Skill:1561018, Prop:1002}"
+            },
+            "156100067": {
+                "Title": "Soutien de suivi : Techniques de négociation"
+            },
+            "156100068": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1561019, Prop:1001}"
+            },
+            "156100069": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1561019, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1561001": {
+            "DamageValue": 5170,
+            "DamageGrowth": 470,
+            "DazeValue": 2360,
+            "DazeGrowth": 110
+        },
+        "1561002": {
+            "DamageValue": 4890,
+            "DamageGrowth": 450,
+            "DazeValue": 2350,
+            "DazeGrowth": 110
+        },
+        "1561003": {
+            "DamageValue": 16910,
+            "DamageGrowth": 1540,
+            "DazeValue": 8050,
+            "DazeGrowth": 370
+        },
+        "1561004": {
+            "DamageValue": 12560,
+            "DamageGrowth": 1150,
+            "DazeValue": 6290,
+            "DazeGrowth": 290
+        },
+        "1561005": {
+            "DamageValue": 22960,
+            "DamageGrowth": 2090,
+            "DazeValue": 11270,
+            "DazeGrowth": 520
+        },
+        "1561006": {
+            "DamageValue": 21670,
+            "DamageGrowth": 1970,
+            "DazeValue": 18340,
+            "DazeGrowth": 840
+        },
+        "1561007": {
+            "DamageValue": 3900,
+            "DamageGrowth": 360,
+            "DazeValue": 8250,
+            "DazeGrowth": 380
+        },
+        "1561008": {
+            "DamageValue": 5860,
+            "DamageGrowth": 540,
+            "DazeValue": 4960,
+            "DazeGrowth": 230
+        },
+        "1561009": {
+            "DamageValue": 44050,
+            "DamageGrowth": 4010,
+            "DazeValue": 30250,
+            "DazeGrowth": 1380
+        },
+        "1561010": {
+            "DamageValue": 72520,
+            "DamageGrowth": 6600,
+            "DazeValue": 51520,
+            "DazeGrowth": 2350
+        },
+        "1561011": {
+            "DamageValue": 9970,
+            "DamageGrowth": 910,
+            "DazeValue": 4220,
+            "DazeGrowth": 200
+        },
+        "1561012": {
+            "DamageValue": 39490,
+            "DamageGrowth": 3590,
+            "DazeValue": 28240,
+            "DazeGrowth": 1290
+        },
+        "1561013": {
+            "DamageValue": 80040,
+            "DamageGrowth": 7280,
+            "DazeValue": 23840,
+            "DazeGrowth": 1090
+        },
+        "1561014": {
+            "DamageValue": 218830,
+            "DamageGrowth": 19900,
+            "DazeValue": 38130,
+            "DazeGrowth": 1740
+        },
+        "1561015": {
+            "DamageValue": 20380,
+            "DamageGrowth": 1860,
+            "DazeValue": 8620,
+            "DazeGrowth": 400
+        },
+        "1561016": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1561017": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1561018": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1561019": {
+            "DamageValue": 53270,
+            "DamageGrowth": 4850,
+            "DazeValue": 39670,
+            "DazeGrowth": 1810
+        },
+        "1561020": {
+            "DamageValue": 9750,
+            "DamageGrowth": 890,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1561021": {
+            "DamageValue": 3250,
+            "DamageGrowth": 300,
+            "DazeValue": 13750,
+            "DazeGrowth": 630
+        }
+    }
+}
