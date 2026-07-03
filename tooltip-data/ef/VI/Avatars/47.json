@@ -1,0 +1,468 @@
+{
+    "StrId": "chr_0031_mifu",
+    "Name": "Mi Fu",
+    "Rarity": 6,
+    "Element": "Physical",
+    "Profession": "GUARD",
+    "WeaponType": "Claymores",
+    "MainAttrId": 39,
+    "SubAttrId": 42,
+    "AttributeNodes": {
+        "chr_0031_mifu_3": {
+            "39": 15
+        },
+        "chr_0031_mifu_1": {
+            "39": 10
+        },
+        "chr_0031_mifu_7": {
+            "39": 20
+        },
+        "chr_0031_mifu_5": {
+            "39": 15
+        }
+    },
+    "SkillInfoMap": {
+        "chr_0031_mifu_NormalSkill": {
+            "Icon": "skillicon/icon_skill_mifu_01",
+            "Element": "Physical",
+            "Name": "Thanh Ba Tam Dịch",
+            "Desc": "Liên tục thi triển KN chiến đấu của Mi Fu để tung ra 3 đòn khác nhau. Lần thi triển KN chiến đấu đầu tiên là <@ba.key>Kẻ Bắt Mây</>.\n<@ba.key>ĐÒN 1 - Kẻ Bẫy Mây</>: Tiêu hao <@ba.vup>100</> Điểm Kỹ Năng và <#ba.return>hoàn trả</><@ba.vup> 50</> Điểm Kỹ Năng sau khi thi triển; Mi Fu bắn một sợi xích móc từ găng tay, gây <@ba.pd>ST Vật Lý</> lên mục tiêu và kẻ địch xung quanh, sau đó cố kéo mục tiêu và kẻ địch gần đó về phía cô. Sau khi thi triển ĐÒN 1, KN chiến đấu tiếp theo sẽ tạm thời được thay thế bằng <@ba.key>Truy Dấu Và Nghiền Nát</>.\n<@ba.key>ĐÒN 2 - Truy Dấu Và Nghiền Nát</>: Tiêu hao <@ba.vup>50</> Điểm Kỹ Năng; Mi Fu tung ra một loạt đòn quyền, gây <@ba.pd>ST Vật Lý</>, với cú đấm cuối cùng áp dụng <#ba.crush>Nghiền</>. Nếu Nghiền này <#ba.consume>tiêu hao</> ít nhất 3 cộng dồn <#ba.noguard>Trừ Giáp</> từ một mục tiêu, KN chiến đấu tiếp theo sẽ tạm thời được thay thế bằng <@ba.key>Phân Định Thế Thái</>.\n<@ba.key>ĐÒN 3 - Phân Định Thế Thái</>: Tiêu hao <@ba.vup>50</> Điểm Kỹ Năng; Mi Fu gây lượng lớn <@ba.pd>ST Vật Lý</> lên một khu vực chỉ định; ST này không được tính là ST Kỹ Năng Chiến Đấu, mà được tính là ST <#ba.crush>Nghiền</>.",
+            "Type": 1,
+            "Cooldown": 0,
+            "CostType": "Atb",
+            "CostValue": 50,
+            "Params": [
+                {
+                    "Text": "Hệ Số ST Kẻ Bắt Mây",
+                    "Values": [
+                        "67%",
+                        "73%",
+                        "80%",
+                        "87%",
+                        "93%",
+                        "100%",
+                        "107%",
+                        "113%",
+                        "120%",
+                        "128%",
+                        "138%",
+                        "150%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số ST Truy Dấu Và Nghiền Nát",
+                    "Values": [
+                        "89%",
+                        "98%",
+                        "107%",
+                        "116%",
+                        "125%",
+                        "134%",
+                        "143%",
+                        "151%",
+                        "160%",
+                        "172%",
+                        "185%",
+                        "200%"
+                    ]
+                },
+                {
+                    "Text": "Suy Sụp Truy Dấu Và Nghiền Nát",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số ST Phân Định Thế Thái",
+                    "Values": [
+                        "400%",
+                        "416%",
+                        "432%",
+                        "448%",
+                        "464%",
+                        "480%",
+                        "496%",
+                        "512%",
+                        "528%",
+                        "548%",
+                        "572%",
+                        "600%"
+                    ]
+                },
+                {
+                    "Text": "Suy Sụp Phân Định Thế Thái",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0031_mifu_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_mifu_01",
+            "Element": "Physical",
+            "Name": "Tuyệt Tâm",
+            "Desc": "Sau một thoáng tụ lực, Mi Fu lao về phía trước, cưỡng chế <#ba.airborne>Hất Tung</> một mục tiêu lên không trung, rồi quật mục tiêu đó, gây <@ba.pd>ST Vật Lý</>. Sau khi thi triển kỹ năng này, KN chiến đấu tiếp theo sẽ tạm thời được thay thế bằng <@ba.key>Truy Dấu Và Nghiền Nát</>.",
+            "Type": 3,
+            "Cooldown": 15,
+            "CostType": "UltimateSp",
+            "CostValue": 80,
+            "Params": [
+                {
+                    "Text": "Hệ Số ST",
+                    "Values": [
+                        "311%",
+                        "342%",
+                        "373%",
+                        "404%",
+                        "435%",
+                        "466%",
+                        "498%",
+                        "529%",
+                        "560%",
+                        "599%",
+                        "645%",
+                        "700%"
+                    ]
+                },
+                {
+                    "Text": "Suy Sụp",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                }
+            ]
+        },
+        "chr_0031_mifu_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_mifu_01",
+            "Element": "Physical",
+            "Name": "Cú Đấm Bất Hận",
+            "Desc": "KÍCH HOẠT LIÊN HOÀN: Khi kẻ địch có 3 hoặc nhiều cộng dồn <#ba.noguard>Trừ Giáp</>.\nMi Fu tung một cú móc hàm, gây <@ba.pd>ST Vật Lý</> và áp dụng <#ba.physicalvul>Yếu Hóa Vật Lý</> tạm thời. Sau khi thi triển kỹ năng này, KN chiến đấu tiếp theo sẽ tạm thời được thay thế bằng <@ba.key>Truy Dấu Và Nghiền Nát</>.",
+            "Type": 2,
+            "Cooldown": 20,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Hệ Số ST",
+                    "Values": [
+                        "111%",
+                        "122%",
+                        "133%",
+                        "144%",
+                        "155%",
+                        "167%",
+                        "178%",
+                        "189%",
+                        "200%",
+                        "214%",
+                        "230%",
+                        "250%"
+                    ]
+                },
+                {
+                    "Text": "Suy Sụp",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Yếu Hóa Vật Lý",
+                    "Values": [
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5%"
+                    ]
+                },
+                {
+                    "Text": "Thời Gian Yếu Hóa Vật Lý (giây)",
+                    "Values": [
+                        "16",
+                        "16",
+                        "16",
+                        "16",
+                        "16",
+                        "16",
+                        "16",
+                        "16",
+                        "16",
+                        "16",
+                        "16",
+                        "16"
+                    ]
+                },
+                {
+                    "Text": "Tăng Năng Lượng Tuyệt Kỹ",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0031_mifu_NormalAttack": {
+            "Icon": "skillicon/icon_attack_claym",
+            "Element": "Physical",
+            "Name": "Kiếm Hình Quyền Ý",
+            "Desc": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 4 chuỗi gây <@ba.pd>ST Vật Lý</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>25</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nTấn Công Cơ Bản thi triển trên không trở thành đòn bổ nhào gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nTấn Công Cơ Bản thi triển lên kẻ địch bị Suy Sụp trở thành đòn kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi một phần Điểm Kỹ Năng.",
+            "Type": 0,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Hệ Số Trình Tự Đòn Đánh Thường 1",
+                    "Values": [
+                        "34%",
+                        "37%",
+                        "41%",
+                        "44%",
+                        "47%",
+                        "51%",
+                        "54%",
+                        "57%",
+                        "61%",
+                        "65%",
+                        "70%",
+                        "76%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số Trình Tự Đòn Đánh Thường 2",
+                    "Values": [
+                        "38%",
+                        "42%",
+                        "46%",
+                        "50%",
+                        "54%",
+                        "57%",
+                        "61%",
+                        "65%",
+                        "69%",
+                        "74%",
+                        "79%",
+                        "86%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số Trình Tự Đòn Đánh Thường 3",
+                    "Values": [
+                        "61%",
+                        "67%",
+                        "73%",
+                        "79%",
+                        "85%",
+                        "91%",
+                        "97%",
+                        "103%",
+                        "109%",
+                        "116%",
+                        "126%",
+                        "136%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số Trình Tự Đòn Đánh Thường 4",
+                    "Values": [
+                        "77%",
+                        "84%",
+                        "92%",
+                        "99%",
+                        "107%",
+                        "115%",
+                        "122%",
+                        "130%",
+                        "138%",
+                        "147%",
+                        "159%",
+                        "172%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số Đòn Bổ Nhào",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số Đòn Kết Liễu",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "fac_chr_0031_mifu_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_fungus",
+            "Name": "Thảo Dược Tăng Trưởng β",
+            "Desc": "Khi phân công vào Buồng Phát Triển, tăng tốc độ tăng trưởng vật chất nấm thêm 20%",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0031_mifu_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_fungus",
+            "Name": "Thảo Dược Tăng Trưởng γ",
+            "Desc": "Khi phân công vào Buồng Phát Triển, tăng tốc độ tăng trưởng vật chất nấm thêm 30%",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0031_mifu_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
+            "Name": "Người Chỉ Điểm Bí Mật α",
+            "Desc": "Khi phân công vào Phòng Tiếp Khách, cấp cho các cán viên một lượng nhỏ Tăng Xác Suất Manh Mối 3: Học Viện (kích hoạt khi được phân công; không thể cộng dồn các hiệu ứng cùng loại)",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0031_mifu_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
+            "Name": "Người Chỉ Điểm Bí Mật β",
+            "Desc": "Khi phân công vào Phòng Tiếp Khách, cấp cho các cán viên Tăng Xác Suất Manh Mối 3: Học Viện (kích hoạt khi được phân công; không thể cộng dồn các hiệu ứng cùng loại)",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "chr_0031_mifu_passive_skill_0_1": {
+            "Icon": "icon_talent_mifu_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Trấn Áp Nghiêm Trừng",
+            "Desc": "Chiêu KN Chiến Đấu <@ba.key>Phân Định Thế Thái</> được cường hóa: Khi đánh trúng mục tiêu đang chịu <#ba.physicalvul>Yếu Hóa Vật Lý</> hoặc <@ba.poise>Suy Sụp</>, hệ số ST được tăng lên gấp <@ba.vup>1</> lần ban đầu.",
+            "Type": 4
+        },
+        "chr_0031_mifu_passive_skill_1_1": {
+            "Icon": "icon_talent_mifu_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Thịnh Nộ Không Ngơi",
+            "Desc": "KN liên hoàn được cường hóa: Khi thi triển liên hoàn, tạo một <#ba.shield>khiên</> có giá trị bằng <@ba.vup>15%</> HP Tối Đa, có hiệu lực trong 10 giây. Khi khiên còn hiệu lực, Mi Fu khó bị gián đoạn hơn.\nHiệu ứng này chỉ có thể kích hoạt mỗi 60 giây một lần.",
+            "Type": 4
+        },
+        "chr_0031_mifu_passive_skill_1_2": {
+            "Icon": "icon_talent_mifu_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Thịnh Nộ Không Ngơi",
+            "Desc": "KN liên hoàn được cường hóa: Khi thi triển liên hoàn, tạo một <#ba.shield>khiên</> có giá trị bằng <@ba.vup>30%</> HP Tối Đa, có hiệu lực trong 10 giây. Khi khiên còn hiệu lực, Mi Fu khó bị gián đoạn hơn.\nHiệu ứng này chỉ có thể kích hoạt mỗi 60 giây một lần.",
+            "Type": 4
+        },
+        "chr_0031_mifu_passive_skill_0_2": {
+            "Icon": "icon_talent_mifu_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Trấn Áp Nghiêm Trừng",
+            "Desc": "Chiêu KN Chiến Đấu <@ba.key>Phân Định Thế Thái</> được cường hóa: Khi đánh trúng mục tiêu đang chịu <#ba.physicalvul>Yếu Hóa Vật Lý</> hoặc <@ba.poise>Suy Sụp</>, hệ số ST được tăng lên gấp <@ba.vup>1</> lần ban đầu.",
+            "Type": 4
+        }
+    },
+    "Potentials": {
+        "1": {
+            "Name": "Tuần Tra Không Ngơi",
+            "Desc": "KN liên hoàn <@ba.key>Cú Đấm Bất Hận</> được cường hóa: Thời gian hồi chiêu giờ sẽ là <@ba.vup>-2</> giây. Hiệu ứng <#ba.physicalvul>Yếu Hóa Vật Lý</> được áp dụng bởi kỹ năng sẽ tăng lên thêm <@ba.vup>+5%</> và có <@ba.vup>+4</> giây hiệu lực."
+        },
+        "2": {
+            "Name": "Cảm Nhận Chuyển Động Hài Hòa",
+            "Desc": "Sức Mạnh <@ba.vup>+20</>, Công Phép <@ba.vup>+16</>."
+        },
+        "3": {
+            "Name": "Khởi Động Hoàn Tất",
+            "Desc": "Thiên Phú <@ba.key>Thịnh Nộ Không Ngơi</> được cường hóa: Thời gian hiệu lực <#ba.shield>Khiên</> <@ba.vup>+5</> giây. Thời gian hồi chiêu kích hoạt <#ba.shield>Khiên</> là <@ba.vup>-15</> giây. Mỗi lần khiên được kích hoạt, Mi Fu nhận Tấn Công <@ba.vup>+6%</> trong 20 giây."
+        },
+        "4": {
+            "Name": "Chân Khí Tam Luyện",
+            "Desc": "Tuyệt kỹ <@ba.key>Tuyệt Tâm</> được cải thiện: Tiêu hao Năng Lượng Tuyệt Kỹ <@ba.vup>-15%</>."
+        },
+        "5": {
+            "Name": "Quyền Sư Của Sơn Trại",
+            "Desc": "KN chiến đấu được cường hóa: Hệ Số ST của các chiêu <@ba.key>Kẻ Bắt Mây</>, <@ba.key>Truy Dấu Và Nghiền Nát</> & <@ba.key>Phân Định Thế Thái</> được tăng lên gấp <@ba.vup>1</> lần so với ban đầu. Tuyệt Kỹ <@ba.key>Tuyệt Tâm</> được cải thiện: Suy Sụp Gây Ra <@ba.vup>+5</>.\n<@ba.info>Buff Hệ Số ST KN Chiến Đấu được cộng dồn với thiên phú Trấn Áp Nghiêm Trừng.</>"
+        }
+    }
+}

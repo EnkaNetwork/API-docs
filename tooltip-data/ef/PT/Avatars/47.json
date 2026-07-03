@@ -1,0 +1,468 @@
+{
+    "StrId": "chr_0031_mifu",
+    "Name": "Mi Fu",
+    "Rarity": 6,
+    "Element": "Physical",
+    "Profession": "GUARD",
+    "WeaponType": "Claymores",
+    "MainAttrId": 39,
+    "SubAttrId": 42,
+    "AttributeNodes": {
+        "chr_0031_mifu_3": {
+            "39": 15
+        },
+        "chr_0031_mifu_1": {
+            "39": 10
+        },
+        "chr_0031_mifu_7": {
+            "39": 20
+        },
+        "chr_0031_mifu_5": {
+            "39": 15
+        }
+    },
+    "SkillInfoMap": {
+        "chr_0031_mifu_NormalSkill": {
+            "Icon": "skillicon/icon_skill_mifu_01",
+            "Element": "Physical",
+            "Name": "Triplex de Qingbo",
+            "Desc": "Continue conjurando a habilidade de batalha de Mi Fu para liberar 3 movimentos diferentes. A primeira habilidade de batalha conjurada é <@ba.key>Armadilha das Nuvens</>.\n<@ba.key>MOVIMENTO 1 – Armadilha das Nuvens</>: custa <@ba.vup>100</> de PH e <#ba.return>devolve</><@ba.vup> 50</> de PH após a conjuração. Mi Fu dispara uma corrente de gancho de suas manoplas que causa <@ba.pd>DNO Físico</> ao alvo e a inimigos próximos e, em seguida, tenta puxar o alvo em questão em sua direção. Após conjurar o MOVIMENTO 1, a próxima habilidade de batalha será temporariamente substituída por <@ba.key>Rastrear e Mutilar</>.\n<@ba.key>MOVIMENTO 2 – Rastrear e Mutilar</>: custa <@ba.vup>50</> de SP; Mi Fu dispara uma saraivada de socos que causa <@ba.pd>DNO Físico</>, com o soco final aplicando <#ba.crush>Esmagar</>. Se Esmagar <#ba.consume>consumir</> pelo menos 3 acúmulos de <#ba.noguard>Vulnerabilidade</> de um único alvo, a próxima habilidade de batalha será temporariamente substituída por <@ba.key>Separador do Mundo</>.\n<@ba.key>MOVIMENTO 3 – Separador do Mundo</>: custa <@ba.vup>50</> de PH; Mi Fu causa <@ba.pd>DNO Físico</> significativo a uma área especificada; esse DNO não é tratado como DNO de Habilidade de Batalha, mas como DNO de <#ba.crush>Esmagar</>.",
+            "Type": 1,
+            "Cooldown": 0,
+            "CostType": "Atb",
+            "CostValue": 50,
+            "Params": [
+                {
+                    "Text": "Multiplicador DNO Armadilha das Nuvens",
+                    "Values": [
+                        "67%",
+                        "73%",
+                        "80%",
+                        "87%",
+                        "93%",
+                        "100%",
+                        "107%",
+                        "113%",
+                        "120%",
+                        "128%",
+                        "138%",
+                        "150%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador DNO Rastrear e Mutilar",
+                    "Values": [
+                        "89%",
+                        "98%",
+                        "107%",
+                        "116%",
+                        "125%",
+                        "134%",
+                        "143%",
+                        "151%",
+                        "160%",
+                        "172%",
+                        "185%",
+                        "200%"
+                    ]
+                },
+                {
+                    "Text": "Desorientação Rastrear e Mutilar",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador DNO Separador do Mundo",
+                    "Values": [
+                        "400%",
+                        "416%",
+                        "432%",
+                        "448%",
+                        "464%",
+                        "480%",
+                        "496%",
+                        "512%",
+                        "528%",
+                        "548%",
+                        "572%",
+                        "600%"
+                    ]
+                },
+                {
+                    "Text": "Desorientação Separador do Mundo",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0031_mifu_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_mifu_01",
+            "Element": "Physical",
+            "Name": "Postura Sem Piedade",
+            "Desc": "Após uma breve energização, Mi Fu avança rapidamente para <#ba.airborne>Levantar</> um alvo no ar à força e, em seguida, o arremessa contra o chão para causar <@ba.pd>DNO Físico</>. Após conjurar essa habilidade, a próxima habilidade de batalha será temporariamente substituída por <@ba.key>Rastrear e Mutilar</>.",
+            "Type": 3,
+            "Cooldown": 15,
+            "CostType": "UltimateSp",
+            "CostValue": 80,
+            "Params": [
+                {
+                    "Text": "Multiplicador DNO",
+                    "Values": [
+                        "311%",
+                        "342%",
+                        "373%",
+                        "404%",
+                        "435%",
+                        "466%",
+                        "498%",
+                        "529%",
+                        "560%",
+                        "599%",
+                        "645%",
+                        "700%"
+                    ]
+                },
+                {
+                    "Text": "Desorientação",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                }
+            ]
+        },
+        "chr_0031_mifu_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_mifu_01",
+            "Element": "Physical",
+            "Name": "Punhos Sem Remorsos",
+            "Desc": "ACIONADOR DO COMBO: Quando um inimigo tem 3 ou mais acúmulos de <#ba.noguard>Vulnerabilidade</>.\nMi Fu desfere um gancho devastador no inimigo, causando <@ba.pd>DNO Físico</> e aplicando <#ba.physicalvul>Suscetibilidade Física</> temporária. Após conjurar essa habilidade, a próxima habilidade de batalha será temporariamente substituída por <@ba.key>Rastrear e Mutilar</>.",
+            "Type": 2,
+            "Cooldown": 20,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Multiplicador DNO",
+                    "Values": [
+                        "111%",
+                        "122%",
+                        "133%",
+                        "144%",
+                        "155%",
+                        "167%",
+                        "178%",
+                        "189%",
+                        "200%",
+                        "214%",
+                        "230%",
+                        "250%"
+                    ]
+                },
+                {
+                    "Text": "Desorientação",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Suscetibilidade Física",
+                    "Values": [
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5%"
+                    ]
+                },
+                {
+                    "Text": "Duração da Suscetibilidade Física (s)",
+                    "Values": [
+                        "16",
+                        "16",
+                        "16",
+                        "16",
+                        "16",
+                        "16",
+                        "16",
+                        "16",
+                        "16",
+                        "16",
+                        "16",
+                        "16"
+                    ]
+                },
+                {
+                    "Text": "Ganho de Energia Suprema",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0031_mifu_NormalAttack": {
+            "Icon": "skillicon/icon_attack_claym",
+            "Element": "Physical",
+            "Name": "Punhomante das Lâminas",
+            "Desc": "ATAQUE BÁSICO: \nAtaque em até 4 sequências que causa <@ba.pd>DNO Físico</>. Como o operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>25</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.pd>DNO Físico</> aos inimigos próximos. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado se torna um finalizador que causa uma enorme quantidade de <@ba.pd>DNO Físico</> e recupera PH.",
+            "Type": 0,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Multiplicador SEQ 1 ATQB",
+                    "Values": [
+                        "34%",
+                        "37%",
+                        "41%",
+                        "44%",
+                        "47%",
+                        "51%",
+                        "54%",
+                        "57%",
+                        "61%",
+                        "65%",
+                        "70%",
+                        "76%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador SEQ 2 ATQB",
+                    "Values": [
+                        "38%",
+                        "42%",
+                        "46%",
+                        "50%",
+                        "54%",
+                        "57%",
+                        "61%",
+                        "65%",
+                        "69%",
+                        "74%",
+                        "79%",
+                        "86%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador SEQ 3 ATQB",
+                    "Values": [
+                        "61%",
+                        "67%",
+                        "73%",
+                        "79%",
+                        "85%",
+                        "91%",
+                        "97%",
+                        "103%",
+                        "109%",
+                        "116%",
+                        "126%",
+                        "136%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador SEQ 4 ATQB",
+                    "Values": [
+                        "77%",
+                        "84%",
+                        "92%",
+                        "99%",
+                        "107%",
+                        "115%",
+                        "122%",
+                        "130%",
+                        "138%",
+                        "147%",
+                        "159%",
+                        "172%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador ATQ Mergulho",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador ATQ Finalizador",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "fac_chr_0031_mifu_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_fungus",
+            "Name": "Tisana Esotérica β",
+            "Desc": "Atribua à Câmara de Crescimento para conceder taxa de crescimento de matéria fúngica + 20%",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0031_mifu_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_fungus",
+            "Name": "Tisana Esotérica γ",
+            "Desc": "Atribua à Câmara de Crescimento para conceder taxa de crescimento de matéria fúngica + 30%",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0031_mifu_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
+            "Name": "Informantes Secretos α",
+            "Desc": "Atribua à Sala da Recepção para conceder aos operadores uma pequena Maior chance de Pista 3: ACH (ativada na atribuição, efeitos do mesmo tipo não podem se acumular)",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0031_mifu_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
+            "Name": "Informantes Secretos β",
+            "Desc": "Atribua à Sala da Recepção para conceder aos operadores Maior chance de Pista 3: ACH (ativada na atribuição, efeitos do mesmo tipo não podem se acumular)",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "chr_0031_mifu_passive_skill_0_1": {
+            "Icon": "icon_talent_mifu_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Repressão Severa",
+            "Desc": "Movimento da habilidade de batalha <@ba.key>Separador do Mundo</> melhorado: ao atingir um alvo com <#ba.physicalvul>Suscetibilidade Física</> ou <@ba.poise>Desorientado</>, o Multiplicador DNO é aumentado para <@ba.vup>1</> vezes o original.",
+            "Type": 4
+        },
+        "chr_0031_mifu_passive_skill_1_1": {
+            "Icon": "icon_talent_mifu_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Fúria da Vigilante",
+            "Desc": "Combo de habilidades aprimorado: conjurar o combo cria um <#ba.shield>escudo</> com PV Máximo de <@ba.vup>15%</> e duração de 10 s. Enquanto o escudo está ativo, torna-se mais difícil interromper Mi Fu.\nEsse efeito só pode ser acionado uma vez a cada 60 s.",
+            "Type": 4
+        },
+        "chr_0031_mifu_passive_skill_1_2": {
+            "Icon": "icon_talent_mifu_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Fúria da Vigilante",
+            "Desc": "Combo de habilidades aprimorado: conjurar o combo cria um <#ba.shield>escudo</> com PV Máximo de <@ba.vup>30%</> e duração de 10 s. Enquanto o escudo está ativo, torna-se mais difícil interromper Mi Fu.\nEsse efeito só pode ser acionado uma vez a cada 60 s.",
+            "Type": 4
+        },
+        "chr_0031_mifu_passive_skill_0_2": {
+            "Icon": "icon_talent_mifu_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Repressão Severa",
+            "Desc": "Movimento da habilidade de batalha <@ba.key>Separador do Mundo</> melhorado: ao atingir um alvo com <#ba.physicalvul>Suscetibilidade Física</> ou <@ba.poise>Desorientado</>, o Multiplicador DNO é aumentado para <@ba.vup>1</> vezes o original.",
+            "Type": 4
+        }
+    },
+    "Potentials": {
+        "1": {
+            "Name": "Patrulha Incansável",
+            "Desc": "Combo de habilidades <@ba.key>Punhos Sem Remorsos</> melhorado: duração do tempo de recarga <@ba.vup>-2</> s. O efeito de <#ba.physicalvul>suscetibilidade física</> aplicado pela habilidade é aumentado em <@ba.vup>+ 5%</> e a duração é aumentada em <@ba.vup>+ 4</> s."
+        },
+        "2": {
+            "Name": "Cinestesia da Harmonia",
+            "Desc": "Força <@ba.vup>+20</>, Intensidade das Artes <@ba.vup>+16</>."
+        },
+        "3": {
+            "Name": "Aquecimento Completo",
+            "Desc": "Talento <@ba.key>Fúria da Vigilante</> aprimorado: duração do <#ba.shield>Escudo</> <@ba.vup>+ 5</> s. Tempo de recarga do acionador do <#ba.shield>Escudo</>: <@ba.vup>-15</> s. Toda vez que o escudo for acionado, Mi Fu ganhará ATQ <@ba.vup>+ 6%</> por 20s."
+        },
+        "4": {
+            "Name": "Qi Triplamente Refinado",
+            "Desc": "<@ba.key>Postura Sem Piedade</> suprema aprimorada: Energia Suprema custa <@ba.vup>-15%</>."
+        },
+        "5": {
+            "Name": "Pugilista da Paliçada",
+            "Desc": "Habilidade de batalha melhorada: os multiplicadores DNO dos movimentos <@ba.key>Armadilha das Nuvens</>, <@ba.key>Rastrear e Mutilar</> e <@ba.key>Separador do Mundo</> são aumentados para <@ba.vup>1</> vezes os originais. Habilidade suprema <@ba.key>Postura Sem Piedade</> melhorada: Desorientar Causado <@ba.vup>+ 5</>.\n<@ba.info>O benefício Multiplicador DNO da Habilidade de Batalha pode se acumular com o talento Repressão Severa.</>"
+        }
+    }
+}

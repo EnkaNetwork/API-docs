@@ -1,0 +1,570 @@
+{
+    "StrId": "chr_0033_camille",
+    "Name": "Camille",
+    "Rarity": 6,
+    "Element": "Fire",
+    "Profession": "VANGUARD",
+    "WeaponType": "Lance",
+    "MainAttrId": 40,
+    "SubAttrId": 41,
+    "AttributeNodes": {
+        "chr_0033_camille_1": {
+            "40": 10
+        },
+        "chr_0033_camille_7": {
+            "40": 20
+        },
+        "chr_0033_camille_5": {
+            "40": 15
+        },
+        "chr_0033_camille_3": {
+            "40": 15
+        }
+    },
+    "SkillInfoMap": {
+        "chr_0033_camille_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_camille_01",
+            "Element": "Fire",
+            "Name": "Épine en plein cœur",
+            "Desc": "DÉCLENCHEMENT DE COMBO : quand l'<#ba.fireinflict>altération thermique</> de l'ennemi est <#ba.consume>consommée</> ou <#ba.absorb>absorbée</>.\nEffectue un sprint vers l'ennemi et inflige des <@ba.fire>DÉG thermiques</> tout en récupérant des PC.",
+            "Type": 2,
+            "Cooldown": 0,
+            "CostType": "Atb",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Multiplicateur de DÉG",
+                    "Values": [
+                        "133%",
+                        "147%",
+                        "160%",
+                        "173%",
+                        "186%",
+                        "200%",
+                        "213%",
+                        "226%",
+                        "240%",
+                        "256%",
+                        "276%",
+                        "300%"
+                    ]
+                },
+                {
+                    "Text": "Déséquilibre",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Récupération de PC",
+                    "Values": [
+                        "16",
+                        "16",
+                        "16",
+                        "16",
+                        "16",
+                        "16",
+                        "18",
+                        "18",
+                        "18",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur de DÉG de Poursuite du chasseur",
+                    "Values": [
+                        "222%",
+                        "244%",
+                        "267%",
+                        "289%",
+                        "311%",
+                        "333%",
+                        "356%",
+                        "378%",
+                        "400%",
+                        "428%",
+                        "461%",
+                        "500%"
+                    ]
+                },
+                {
+                    "Text": "Déséquilibre de Poursuite du chasseur",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Récupération de PC de Poursuite du chasseur",
+                    "Values": [
+                        "32",
+                        "32",
+                        "32",
+                        "32",
+                        "32",
+                        "32",
+                        "36",
+                        "36",
+                        "36",
+                        "40",
+                        "40",
+                        "40"
+                    ]
+                },
+                {
+                    "Text": "Gain d'énergie d'ultime",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0033_camille_NormalAttack": {
+            "Icon": "skillicon/icon_attack_lance",
+            "Element": "Fire",
+            "Name": "Absolution sanguine",
+            "Desc": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.fire>DÉG thermiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>18</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.fire>DÉG thermiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.fire>DÉG thermiques</> et restaure quelques PC.",
+            "Type": 0,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Multiplicateur d'ATQ-B SÉQ 1",
+                    "Values": [
+                        "25%",
+                        "28%",
+                        "30%",
+                        "33%",
+                        "35%",
+                        "38%",
+                        "40%",
+                        "43%",
+                        "45%",
+                        "48%",
+                        "52%",
+                        "56%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur d'ATQ-B SÉQ 2",
+                    "Values": [
+                        "20%",
+                        "22%",
+                        "24%",
+                        "26%",
+                        "28%",
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "39%",
+                        "42%",
+                        "45%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur d'ATQ-B SÉQ 3",
+                    "Values": [
+                        "30%",
+                        "33%",
+                        "36%",
+                        "39%",
+                        "42%",
+                        "45%",
+                        "48%",
+                        "51%",
+                        "54%",
+                        "58%",
+                        "62%",
+                        "68%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur d'ATQ-B SÉQ 4",
+                    "Values": [
+                        "34%",
+                        "37%",
+                        "41%",
+                        "44%",
+                        "48%",
+                        "51%",
+                        "54%",
+                        "58%",
+                        "61%",
+                        "66%",
+                        "71%",
+                        "77%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur d'ATQ-B SÉQ 5",
+                    "Values": [
+                        "50%",
+                        "55%",
+                        "60%",
+                        "65%",
+                        "70%",
+                        "75%",
+                        "80%",
+                        "85%",
+                        "90%",
+                        "96%",
+                        "104%",
+                        "113%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur d'ATQ de coup fatal",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur d'ATQ plongeante",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "chr_0033_camille_NormalSkill": {
+            "Icon": "skillicon/icon_skill_camille_01",
+            "Element": "Fire",
+            "Name": "Exorcisme ardent",
+            "Desc": "Camille invoque des <@ba.key>Ailes vespérales de feu</> qui s'envolent vers l'ennemi pour lui infliger des <@ba.fire>DÉG thermiques</> et appliquer une <#ba.fireinflict>altération thermique</> aux ennemis dans une petite zone d'effet. Les <@ba.key>Ailes vespérales de feu</> vont ensuite <@ba.key>surplomber</> temporairement la cible et lui appliquer une <#ba.weak>Faiblesse</> et une <#ba.firevul>sensibilité thermique</> pendant qu'elles le surplombent. Une fois la cible vaincue, les <@ba.key>Ailes vespérales de feu</> s'envolent vers un autre ennemi à proximité, lui infligent des <@ba.fire>DÉG thermiques</> et appliquent une <#ba.fireinflict>altération thermique</>, une <#ba.weak>Faiblesse</> et une <#ba.firevul>sensibilité thermique</>.\nToucher un ennemi <@ba.key>surplombé</> par des <@ba.key>Ailes vespérales de feu</> à l'aide d'une compétence de combo de Camille déclenche une explosion après quelques instants. Cette explosion inflige des <@ba.fire>DÉG thermiques</> supplémentaires.",
+            "Type": 1,
+            "Cooldown": 0,
+            "CostType": "Atb",
+            "CostValue": 100,
+            "Params": [
+                {
+                    "Text": "Multiplicateur de DÉG",
+                    "Values": [
+                        "89%",
+                        "98%",
+                        "107%",
+                        "116%",
+                        "125%",
+                        "134%",
+                        "143%",
+                        "151%",
+                        "160%",
+                        "172%",
+                        "185%",
+                        "200%"
+                    ]
+                },
+                {
+                    "Text": "Déséquilibre",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Durée d'Ailes vespérales de feu (s)",
+                    "Values": [
+                        "45",
+                        "45",
+                        "45",
+                        "45",
+                        "45",
+                        "45",
+                        "45",
+                        "45",
+                        "45",
+                        "45",
+                        "45",
+                        "45"
+                    ]
+                },
+                {
+                    "Text": "Effet Faiblesse",
+                    "Values": [
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5.5%",
+                        "5.5%",
+                        "5.5%",
+                        "6%",
+                        "6%",
+                        "6%",
+                        "6.5%",
+                        "6.5%",
+                        "7%"
+                    ]
+                },
+                {
+                    "Text": "Sensibilité thermique",
+                    "Values": [
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5.5%",
+                        "5.5%",
+                        "5.5%",
+                        "6%",
+                        "6%",
+                        "6%",
+                        "6.5%",
+                        "6.5%",
+                        "7%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur de DÉG d'explosion",
+                    "Values": [
+                        "45%",
+                        "49%",
+                        "54%",
+                        "58%",
+                        "62%",
+                        "67%",
+                        "71%",
+                        "76%",
+                        "80%",
+                        "86%",
+                        "93%",
+                        "100%"
+                    ]
+                }
+            ]
+        },
+        "chr_0033_camille_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_camille_01",
+            "Element": "Fire",
+            "Name": "Averse sanguine",
+            "Desc": "Camille s'envole et fait tomber une pluie de lances, suivie d'un balayage. Cette attaque inflige des <@ba.fire>DÉG thermiques</> et applique une <#ba.fireinflict>altération thermique</> aux cibles touchées, tout en restaurant des PC. \nAprès avoir lancé l'ultime, la compétence de combat de Camille est remplacée temporairement par <@ba.key>Poursuite du chasseur</>.\n<@ba.key>Poursuite du chasseur</> agit comme une compétence de combo et ne coûte aucun PC. Il s'agit d'une ruée qui inflige des <@ba.fire>DÉG thermiques</> et restaure des PC.",
+            "Type": 3,
+            "Cooldown": 20,
+            "CostType": "UltimateSp",
+            "CostValue": 130,
+            "Params": [
+                {
+                    "Text": "Multiplicateur de DÉG",
+                    "Values": [
+                        "267%",
+                        "293%",
+                        "320%",
+                        "347%",
+                        "373%",
+                        "400%",
+                        "427%",
+                        "453%",
+                        "480%",
+                        "513%",
+                        "553%",
+                        "600%"
+                    ]
+                },
+                {
+                    "Text": "Déséquilibre",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                },
+                {
+                    "Text": "Récupération de PC",
+                    "Values": [
+                        "32",
+                        "32",
+                        "32",
+                        "32",
+                        "32",
+                        "32",
+                        "32",
+                        "32",
+                        "36",
+                        "36",
+                        "36",
+                        "40"
+                    ]
+                },
+                {
+                    "Text": "Durée de l'État de chasseur (s)",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0033_camille_passive_skill_1_2": {
+            "Icon": "icon_talent_camille_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Régénération sanguine",
+            "Desc": "Quand Camille récupère des PV grâce à une compétence, les <@ba.fire>DÉG thermiques qu'il inflige</> augmentent de <@ba.vup>4%</> (cumuls max. : 5) pendant 40 s, tandis que les autres opérateurs de l'équipe obtiennent <@ba.vup>25%</> de cet effet. L'effet est cumulable 5 fois. \n<@ba.info>Si les PV de Camille sont déjà au max., chaque déclenchement lui octroie 2 cumuls de l'effet.</>",
+            "Type": 4
+        },
+        "chr_0033_camille_passive_skill_0_1": {
+            "Icon": "icon_talent_camille_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Chasseur de transgression",
+            "Desc": "Renforce la compétence de combo <@ba.key>Épine en plein cœur</> : quand elle touche un ennemi <@ba.key>surplombé</> par les <@ba.key>Ailes vespérales de feu</>, Camille restaure <@ba.heal>[30 + Intelligence × 0]</> PV à lui-même et octroie un bonus de <#ba.combo>Lien</> pendant 15 s. Lorsqu'il lance <@ba.key>Poursuite du chasseur</>, cet effet peut se déclencher même si la cible n'est <@ba.key>pas surplombée</> par des Ailes.",
+            "Type": 4
+        },
+        "fac_chr_0033_camille_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Manuel d'Agaš'mekanaz γ",
+            "Desc": "En l'affectant à la cabine de fabrication, augmente le rendement de production des matériaux d'EXP d'opérateur de 30 %.",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        },
+        "chr_0033_camille_passive_skill_1_1": {
+            "Icon": "icon_talent_camille_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Régénération sanguine",
+            "Desc": "Quand Camille récupère des PV grâce à une compétence, les <@ba.fire>DÉG thermiques qu'il inflige</> augmentent de <@ba.vup>2%</> (cumuls max. : 5) pendant 40 s, tandis que les autres opérateurs de l'équipe obtiennent <@ba.vup>25%</> de cet effet. L'effet est cumulable 5 fois. \n<@ba.info>Si les PV de Camille sont déjà au max., chaque déclenchement lui octroie 2 cumuls de l'effet.</>",
+            "Type": 4
+        },
+        "chr_0033_camille_passive_skill_0_2": {
+            "Icon": "icon_talent_camille_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Chasseur de transgression",
+            "Desc": "Renforce la compétence de combo <@ba.key>Épine en plein cœur</> : quand elle touche un ennemi <@ba.key>surplombé</> par les <@ba.key>Ailes vespérales de feu</>, Camille restaure <@ba.heal>[60 + Intelligence × 0]</> PV à lui-même et octroie un bonus de <#ba.combo>Lien</> pendant 15 s. Lorsqu'il lance <@ba.key>Poursuite du chasseur</>, cet effet peut se déclencher même si la cible n'est <@ba.key>pas surplombée</> par des Ailes.",
+            "Type": 4
+        },
+        "fac_chr_0033_camille_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_flower",
+            "Name": "Hémovitrologie γ",
+            "Desc": "En l'affectant à la chambre de culture, augmente le taux de croissance des plantes vitrifiées de 30 %.",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0033_camille_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Manuel d'Agaš'mekanaz β",
+            "Desc": "En l'affectant à la cabine de fabrication, augmente le rendement de production des matériaux d'EXP d'opérateur de 20 %.",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0033_camille_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_flower",
+            "Name": "Hémovitrologie β",
+            "Desc": "En l'affectant à la chambre de culture, augmente le taux de croissance des plantes vitrifiées de 20 %.",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        }
+    },
+    "Potentials": {
+        "1": {
+            "Name": "Lance consacrée par les flammes",
+            "Desc": "Renforce la compétence de combat <@ba.key>Exorcisme ardent</> : la compétence applique <#ba.weak>Faiblesse</> <@ba.vup>+5%</> et <#ba.firevul>sensibilité thermique</> <@ba.vup>+5%</>. Les <@ba.key>Ailes vespérales de feu</> <@ba.key>surplombent</> l'ennemi pendant <@ba.vup>15</> s supplémentaires."
+        },
+        "2": {
+            "Name": "Pisteur de parfum de sorcière",
+            "Desc": "Agilité <@ba.vup>+20</> points, Intelligence <@ba.vup>+20</> points."
+        },
+        "3": {
+            "Name": "Neutralisateur épineux",
+            "Desc": "Renforce la compétence de combo <@ba.key>Épine en plein cœur</> : le temps de recharge est désormais de <@ba.vup>-2</> s, et les multiplicateurs de DÉG d'<@ba.key>Épine en plein cœur</> et <@ba.key>Poursuite du chasseur</> passent à <@ba.vup>1.3</> fois leur valeur d'origine. La récupération de PC passe à <@ba.vup>1</> fois la valeur d'origine."
+        },
+        "4": {
+            "Name": "Sceau d'Agašlehem",
+            "Desc": "Renforce l'ultime <@ba.key>Averse sanguine</> : coût en énergie d'ultime <@ba.vup>-15%</>."
+        },
+        "5": {
+            "Name": "Convention sanguine",
+            "Desc": "Renforce le talent <@ba.key>Régénération sanguine</> : le bonus de <@ba.fire>DÉG thermiques</> par cumul augmente de <@ba.vup>6%</>."
+        }
+    }
+}

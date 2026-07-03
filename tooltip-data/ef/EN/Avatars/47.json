@@ -1,0 +1,468 @@
+{
+    "StrId": "chr_0031_mifu",
+    "Name": "Mi Fu",
+    "Rarity": 6,
+    "Element": "Physical",
+    "Profession": "GUARD",
+    "WeaponType": "Claymores",
+    "MainAttrId": 39,
+    "SubAttrId": 42,
+    "AttributeNodes": {
+        "chr_0031_mifu_3": {
+            "39": 15
+        },
+        "chr_0031_mifu_1": {
+            "39": 10
+        },
+        "chr_0031_mifu_7": {
+            "39": 20
+        },
+        "chr_0031_mifu_5": {
+            "39": 15
+        }
+    },
+    "SkillInfoMap": {
+        "chr_0031_mifu_NormalSkill": {
+            "Icon": "skillicon/icon_skill_mifu_01",
+            "Element": "Physical",
+            "Name": "Qingbo Triplex",
+            "Desc": "Keep casting Mi Fu's battle skill to unleash 3 different moves. The first battle skill cast is <@ba.key>Cloudtrapper</>.\n<@ba.key>MOVE 1 - Cloudtrapper</>: Costs <@ba.vup>100</> SP and <#ba.return>returns</><@ba.vup> 50</> SP after casting; Mi Fu fires a grappling chain from her gauntlets that deals <@ba.pd>Physical DMG</> to the target and nearby enemies, then attempts to pull the target and nearby enemies towards her. After casting MOVE 1, the next battle skill will be temporarily replaced with <@ba.key>Trail and Mangle</>.\n<@ba.key>MOVE 2 - Trail and Mangle</>: Costs <@ba.vup>50</> SP; Mi Fu unleashes a flurry of punches that deals <@ba.pd>Physical DMG</> with the final punch applying <#ba.crush>Crush</>. If this Crush <#ba.consume>consumes</> at least 3 <#ba.noguard>Vulnerability</> stacks from a single target, then the next battle skill will be temporarily replaced with <@ba.key>World Splitter</>.\n<@ba.key>MOVE 3 - World Splitter</>: Costs <@ba.vup>50</> SP; Mi Fu deals massive <@ba.pd>Physical DMG</> to a specified area; this DMG is not treated as Battle Skill DMG, but as <#ba.crush>Crush</> DMG.",
+            "Type": 1,
+            "Cooldown": 0,
+            "CostType": "Atb",
+            "CostValue": 50,
+            "Params": [
+                {
+                    "Text": "Cloudtrapper DMG Multiplier",
+                    "Values": [
+                        "67%",
+                        "73%",
+                        "80%",
+                        "87%",
+                        "93%",
+                        "100%",
+                        "107%",
+                        "113%",
+                        "120%",
+                        "128%",
+                        "138%",
+                        "150%"
+                    ]
+                },
+                {
+                    "Text": "Trail and Mangle DMG Multiplier",
+                    "Values": [
+                        "89%",
+                        "98%",
+                        "107%",
+                        "116%",
+                        "125%",
+                        "134%",
+                        "143%",
+                        "151%",
+                        "160%",
+                        "172%",
+                        "185%",
+                        "200%"
+                    ]
+                },
+                {
+                    "Text": "Trail and Mangle Stagger",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "World Splitter DMG Multiplier",
+                    "Values": [
+                        "400%",
+                        "416%",
+                        "432%",
+                        "448%",
+                        "464%",
+                        "480%",
+                        "496%",
+                        "512%",
+                        "528%",
+                        "548%",
+                        "572%",
+                        "600%"
+                    ]
+                },
+                {
+                    "Text": "World Splitter Stagger",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0031_mifu_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_mifu_01",
+            "Element": "Physical",
+            "Name": "Pile of No Mercy",
+            "Desc": "After a short power up, Mi Fu dashes forward to forcibly <#ba.airborne>Lift</> a target into mid-air, then slams the said target to deal <@ba.pd>Physical DMG</>. After casting this skill, the next battle skill is temporarily replaced with <@ba.key>Trail and Mangle</>.",
+            "Type": 3,
+            "Cooldown": 15,
+            "CostType": "UltimateSp",
+            "CostValue": 80,
+            "Params": [
+                {
+                    "Text": "DMG Multiplier",
+                    "Values": [
+                        "311%",
+                        "342%",
+                        "373%",
+                        "404%",
+                        "435%",
+                        "466%",
+                        "498%",
+                        "529%",
+                        "560%",
+                        "599%",
+                        "645%",
+                        "700%"
+                    ]
+                },
+                {
+                    "Text": "Stagger",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                }
+            ]
+        },
+        "chr_0031_mifu_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_mifu_01",
+            "Element": "Physical",
+            "Name": "Fists of No Regrets",
+            "Desc": "COMBO TRIGGER: When an enemy has 3 or more <#ba.noguard>Vulnerability</> stacks.\nMi Fu unleashes a devastating uppercut at the enemy, dealing <@ba.pd>Physical DMG</> and applying temporary <#ba.physicalvul>Physical Susceptibility</>. After casting this skill, the next battle skill is temporarily replaced with <@ba.key>Trail and Mangle</>.",
+            "Type": 2,
+            "Cooldown": 20,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "DMG Multiplier",
+                    "Values": [
+                        "111%",
+                        "122%",
+                        "133%",
+                        "144%",
+                        "155%",
+                        "167%",
+                        "178%",
+                        "189%",
+                        "200%",
+                        "214%",
+                        "230%",
+                        "250%"
+                    ]
+                },
+                {
+                    "Text": "Stagger",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Physical Susceptibility",
+                    "Values": [
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5%"
+                    ]
+                },
+                {
+                    "Text": "Physical Susceptibility Duration (s)",
+                    "Values": [
+                        "16",
+                        "16",
+                        "16",
+                        "16",
+                        "16",
+                        "16",
+                        "16",
+                        "16",
+                        "16",
+                        "16",
+                        "16",
+                        "16"
+                    ]
+                },
+                {
+                    "Text": "Ultimate Energy Gain",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0031_mifu_NormalAttack": {
+            "Icon": "skillicon/icon_attack_claym",
+            "Element": "Physical",
+            "Name": "Fistmancer of Blades",
+            "Desc": "BASIC ATTACK: \nAn attack with up to 4 sequences that deals <@ba.pd>Physical DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>25</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pd>Physical DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.pd>Physical DMG</> and recovers some SP.",
+            "Type": 0,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "BATK SEQ 1 Multiplier",
+                    "Values": [
+                        "34%",
+                        "37%",
+                        "41%",
+                        "44%",
+                        "47%",
+                        "51%",
+                        "54%",
+                        "57%",
+                        "61%",
+                        "65%",
+                        "70%",
+                        "76%"
+                    ]
+                },
+                {
+                    "Text": "BATK SEQ 2 Multiplier",
+                    "Values": [
+                        "38%",
+                        "42%",
+                        "46%",
+                        "50%",
+                        "54%",
+                        "57%",
+                        "61%",
+                        "65%",
+                        "69%",
+                        "74%",
+                        "79%",
+                        "86%"
+                    ]
+                },
+                {
+                    "Text": "BATK SEQ 3 Multiplier",
+                    "Values": [
+                        "61%",
+                        "67%",
+                        "73%",
+                        "79%",
+                        "85%",
+                        "91%",
+                        "97%",
+                        "103%",
+                        "109%",
+                        "116%",
+                        "126%",
+                        "136%"
+                    ]
+                },
+                {
+                    "Text": "BATK SEQ 4 Multiplier",
+                    "Values": [
+                        "77%",
+                        "84%",
+                        "92%",
+                        "99%",
+                        "107%",
+                        "115%",
+                        "122%",
+                        "130%",
+                        "138%",
+                        "147%",
+                        "159%",
+                        "172%"
+                    ]
+                },
+                {
+                    "Text": "Dive ATK Multiplier",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                },
+                {
+                    "Text": "Finisher ATK Multiplier",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "fac_chr_0031_mifu_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_fungus",
+            "Name": "Esoteric Tisane β",
+            "Desc": "Assign to Growth Chamber to grant fungal matter growth rate +20%",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0031_mifu_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_fungus",
+            "Name": "Esoteric Tisane γ",
+            "Desc": "Assign to Growth Chamber to grant fungal matter growth rate +30%",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0031_mifu_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
+            "Name": "Secret Informants α",
+            "Desc": "Assign to Reception Room to grant operators a small Clue 3 Rate-UP: HAS (activates upon assignment; effects of the same type cannot stack)",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0031_mifu_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
+            "Name": "Secret Informants β",
+            "Desc": "Assign to Reception Room to grant operators Clue 3 Rate-UP: HAS (activates upon assignment; effects of the same type cannot stack)",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "chr_0031_mifu_passive_skill_0_1": {
+            "Icon": "icon_talent_mifu_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Stern Crackdown",
+            "Desc": "Battle skill move <@ba.key>World Splitter</> improved: When hitting a target with <#ba.physicalvul>Physical Susceptibility</> or <@ba.poise>Staggered</>, DMG Multiplier is increased to <@ba.vup>1</> times the original.",
+            "Type": 4
+        },
+        "chr_0031_mifu_passive_skill_1_1": {
+            "Icon": "icon_talent_mifu_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Vigilant Fury",
+            "Desc": "Combo skill improved: Casting the combo creates a <#ba.shield>shield</> with <@ba.vup>15%</> Max HP and a duration of 10s. While the shield is active, Mi Fu becomes harder to interrupt.\nThis effect can only trigger once every 60s.",
+            "Type": 4
+        },
+        "chr_0031_mifu_passive_skill_1_2": {
+            "Icon": "icon_talent_mifu_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Vigilant Fury",
+            "Desc": "Combo skill improved: Casting the combo creates a <#ba.shield>shield</> with <@ba.vup>30%</> Max HP and a duration of 10s. While the shield is active, Mi Fu becomes harder to interrupt.\nThis effect can only trigger once every 60s.",
+            "Type": 4
+        },
+        "chr_0031_mifu_passive_skill_0_2": {
+            "Icon": "icon_talent_mifu_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Stern Crackdown",
+            "Desc": "Battle skill move <@ba.key>World Splitter</> improved: When hitting a target with <#ba.physicalvul>Physical Susceptibility</> or <@ba.poise>Staggered</>, DMG Multiplier is increased to <@ba.vup>1</> times the original.",
+            "Type": 4
+        }
+    },
+    "Potentials": {
+        "1": {
+            "Name": "Restless Watch",
+            "Desc": "Combo skill <@ba.key>Fists of No Regrets</> improved: Length of cooldown <@ba.vup>-2</>s. <#ba.physicalvul>Physical Susceptibility</> effect applied by the skill is further increased by <@ba.vup>+5%</> and has <@ba.vup>+4</>s duration."
+        },
+        "2": {
+            "Name": "Kinesthesia of Harmony",
+            "Desc": "Strength <@ba.vup>+20</>, Arts Intensity <@ba.vup>+16</>."
+        },
+        "3": {
+            "Name": "Complete Warmup",
+            "Desc": "Talent <@ba.key>Vigilant Fury</> improved: <#ba.shield>Shield</> duration <@ba.vup>+5</>s. <#ba.shield>Shield</> trigger cooldown <@ba.vup>-15</>s. Each time the shield is triggered, Mi Fu gains ATK <@ba.vup>+6%</> for 20s."
+        },
+        "4": {
+            "Name": "Qi Thrice-Refined",
+            "Desc": "Ultimate <@ba.key>Pile of No Mercy</> improved: Ultimate Energy cost <@ba.vup>-15%</>."
+        },
+        "5": {
+            "Name": "Pugilist of the Stockade",
+            "Desc": "Battle skill improved: DMG Multipliers of the moves <@ba.key>Cloudtrapper</>, <@ba.key>Trail and Mangle</>, and <@ba.key>World Splitter</> are increased to <@ba.vup>1</> times the original. Ultimate <@ba.key>Pile of No Mercy</> improved: Stagger Dealt <@ba.vup>+5</>.\n<@ba.info>The Battle Skill DMG Multiplier buff can stack with the talent Stern Crackdown.</>"
+        }
+    }
+}
