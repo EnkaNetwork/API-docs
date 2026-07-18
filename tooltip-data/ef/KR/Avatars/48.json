@@ -32,13 +32,21 @@
     "SkillInfoMap": {
         "chr_0032_lizhiyan_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_ultimate_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_ultimate_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "어스름 파훼",
             "Desc": "<@ba.key>어스름 파훼의 진</>을 생성하여, 구역 내의 적에게 즉시 <@ba.natur>자연 피해</>를 줍니다.\n<@ba.key>어스름 파훼의 진</> 내의 적이 처형되거나 메인 컨트롤 오퍼레이터의 <#ba.lastcombo>강력한 일격</>을 받을 경우, <@ba.key>어스름 파훼의 진</>은 대상에게 <@ba.key>집중 공격</>을 발동하여 범위 피해를 줍니다. 최대 2회까지 발동.\n<@ba.key>집중 공격</>이 2회 발동된 후, 궁극기가 <@ba.key>어스름 파훼의 깨달음</>으로 전환됩니다.\n<@ba.key>어스름 파훼의 깨달음</>: 전방 넓은 범위 내의 적에게 <@ba.natur>자연 피해</>를 줍니다.",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_ultimate_skill_lizhiyan_01",
+                    "Name": "진결 · 지혜",
+                    "PostDesc": "<@ba.key>진결 · 지혜</>:\n- <@ba.key>어스름 파훼의 진</>이 생성될 때, 해당 구역 내의 적에게 강제로 <#ba.corrupt>부식</>을 부여합니다."
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_ultimate_skill_lizhiyan_02",
+                    "Name": "진결 · 의지",
+                    "PostDesc": "<@ba.key>진결 · 의지</>:\n- <@ba.key>어스름 파훼의 진</>이 생성될 때, 해당 구역 내의 <#ba.spellinflict>아츠 부착</> 상태의 적에게 다시 해당 <#ba.spellinflict>아츠 부착</>을 부여합니다."
+                }
+            },
             "Type": 3,
             "Cooldown": 10,
             "CostType": "UltimateSp",
@@ -246,13 +254,21 @@
         },
         "chr_0032_lizhiyan_ComboSkill": {
             "Icon": "skillicon/icon_combo_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "응룡 4식",
-            "Desc": "0",
+            "Desc": "",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_combo_skill_lizhiyan_01",
+                    "Name": "진결 · 지혜",
+                    "PostDesc": "<#ba.naturalinflict>자연 부착</> 또는 2스택 이상의 다른 <#ba.spellinflict>아츠 부착</>이 부여된 적이 있을 때 발동할 수 있습니다.\n목표에게 돌진하여 네 명의 <@ba.key>전술 분신</>을 배치해 대상과 주변의 적에게 <#ba.naturalvul>자연 취약</>과 <#ba.crystvul>냉기 취약</>을 부여하고, <@ba.natur>자연 피해</>를 주며, 해당 목표를 <@ba.key>구속</> 상태로 만듭니다. <@ba.key>구속</> 상태가 종료될 때, <@ba.key>전술 분신</>이 대상을 공격하고 폭발 피해를 줍니다.\n<@ba.key>구속</> 상태: 모든 행동이 느려집니다.\n<@ba.key>진결 · 지혜</>:\n- 자신의 배틀 스킬이 <@ba.key>구속</> 상태의 적에게 명중할 때, 일정량의 스킬 게이지를 <#ba.return>반환</>하고, <@ba.key>구속</> 상태를 조기에 종료함과 동시에 폭발 피해를 주고, 다시 <#ba.naturalvul>자연 취약</>과 <#ba.crystvul>냉기 취약</>을 부여하며, 잠시 후 여러 단계의 추가 피해를 줍니다.\n- 연계 스킬의 쿨타임이 더 짧아집니다."
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_combo_skill_lizhiyan_02",
+                    "Name": "진결 · 의지",
+                    "PostDesc": "<#ba.spellinflict>아츠 부착</>이 부여된 적이 있을 때 발동할 수 있습니다.\n목표에게 돌진하여 네 명의 <@ba.key>전술 분신</>을 배치해 대상과 주변의 적에게 <#ba.spellinflict>아츠 부착</>과 <#ba.naturalvul>자연 취약</>, <#ba.crystvul>냉기 취약</>을 부여하고, <@ba.natur>자연 피해</>를 주며, 해당 목표를 <@ba.key>구속</> 상태로 만듭니다. <@ba.key>구속</> 상태가 종료될 때, <@ba.key>전술 분신</>이 대상을 공격하고 폭발 피해를 줍니다.\n<@ba.key>구속</> 상태: 모든 행동이 느려집니다.\n<@ba.key>진결 · 의지</>:\n- 연계 스킬로 적을 <@ba.key>구속</> 상태로 만들면, 범위 내의 적을 소폭 <@ba.key>끌어당깁니다.</>\n- 의지는 연계 스킬이 부여하는 <#ba.naturalvul>자연 취약</>과 <#ba.crystvul>냉기 취약</> 효과를 추가로 증가시킵니다."
+                }
+            },
             "Type": 2,
             "Cooldown": 20,
             "CostType": "UltimateSp",
@@ -532,13 +548,10 @@
         },
         "chr_0032_lizhiyan_NormalAttack": {
             "Icon": "skillicon/icon_attack_funnel",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "중화력 요격",
             "Desc": "일반 공격:\n적에게 최대 5단 공격을 하여 <@ba.natur>자연 피해</>를 줍니다. 메인 컨트롤 오퍼레이터라면 <#ba.lastcombo>강력한 일격</>이 <@ba.poise>17</>포인트의 불균형 피해를 줍니다.\n\n낙하 공격:\n공중에 떴을 때, 일반 공격을 사용하면 낙하하며 주변의 적을 공격하고 <@ba.natur>자연 피해</>를 줍니다.\n\n처형 공격:\n주변에 불균형 상태의 적이 있을 때, 일반 공격을 사용하면 해당 적을 처형하여 대량의 <@ba.natur>자연 피해</>를 주고 일정량의 스킬 게이지를 회복합니다.",
+            "ConditionData": {},
             "Type": 0,
             "Cooldown": 0,
             "CostType": "UltimateSp",
@@ -674,13 +687,21 @@
         },
         "chr_0032_lizhiyan_NormalSkill": {
             "Icon": "skillicon/icon_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "결정 파쇄 그리드",
             "Desc": "목표의 발밑에 <@ba.key>결정 파쇄 그리드</>를 생성합니다. 범위 내의 적에게 <@ba.natur>자연 피해</>를 주고, <#ba.naturalinflict>자연 부착</>을 부여합니다.",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_skill_lizhiyan_01",
+                    "Name": "진결 · 지혜",
+                    "PostDesc": "<@ba.key>진결 · 지혜</>:\n- 주는 피해가 증가합니다."
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_skill_lizhiyan_02",
+                    "Name": "진결 · 의지",
+                    "PostDesc": "<@ba.key>진결 · 의지</>:\n- 피해를 줄 때, 범위 내의 적을 중심으로 <@ba.key>끌어당깁니다.</>"
+                }
+            },
             "Type": 1,
             "Cooldown": 0,
             "CostType": "Atb",

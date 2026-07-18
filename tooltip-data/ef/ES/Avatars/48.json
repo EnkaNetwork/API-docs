@@ -32,13 +32,21 @@
     "SkillInfoMap": {
         "chr_0032_lizhiyan_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_ultimate_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_ultimate_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "Purgasombras",
             "Desc": "Arcane crea una <@ba.key>Matriz de purgasombras</> que inflige inmediatamente <@ba.natur>DAÑ por naturaleza</> a los enemigos dentro del área de efecto (ADE).\nAl golpear a un enemigo dentro de la <@ba.key>Matriz de purgasombras</> con un Remate o un <#ba.lastcombo>Golpe final</> ejecutado por el operador controlado, la <@ba.key>Matriz de purgasombras</> desata un <@ba.key>Ataque de racimo</> que inflige DAÑ de área a dicho enemigo. Este efecto se activa hasta 2 veces.\nDespués de activar <@ba.key>Ataque de racimo</> 2 veces, la máxima cambia a <@ba.key>Arcano de purgasombras</>.\n<@ba.key>Arcano de purgasombras</>: Inflige <@ba.natur>DAÑ por naturaleza</> a los enemigos dentro de un ADE grande.",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_ultimate_skill_lizhiyan_01",
+                    "Name": "Arcano de matriz: INT",
+                    "PostDesc": "<@ba.key>Arcano de matriz: INT</>:\nAl crearse, la <@ba.key>Matriz de purgasombras</> también aplica <#ba.corrupt>Corrosión</> forzada a los enemigos en el ADE."
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_ultimate_skill_lizhiyan_02",
+                    "Name": "Arcano de matriz: VOL",
+                    "PostDesc": "<@ba.key>Arcano de matriz: VOL</>:\nAl crearse, la <@ba.key>Matriz de purgasombras</> también selecciona como objetivo a los enemigos con <#ba.spellinflict>Imposición de artes</> dentro de su ADE y les aplica otra acumulación de <#ba.spellinflict>Imposición de artes</> del mismo elemento."
+                }
+            },
             "Type": 3,
             "Cooldown": 10,
             "CostType": "UltimateSp",
@@ -246,13 +254,21 @@
         },
         "chr_0032_lizhiyan_ComboSkill": {
             "Icon": "skillicon/icon_combo_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "Postura de Yinglung IV",
-            "Desc": "0",
+            "Desc": "",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_combo_skill_lizhiyan_01",
+                    "Name": "Arcano de matriz: INT",
+                    "PostDesc": "ACTIVADOR DE COMBO: Cuando se aplica <#ba.naturalinflict>Imposición de naturaleza</> o al menos 2 acumulaciones de <#ba.spellinflict>Imposición de artes que no sea de naturaleza</> a un enemigo.\nArcane arremete contra el objetivo y despliega 4 <@ba.key>Dobles tácticos</> que aplican <#ba.naturalvul>Susceptibilidad a la naturaleza</> y <#ba.crystvul>Susceptibilidad criogénica</> infligen <@ba.natur>DAÑ por naturaleza</> al objetivo y a los enemigos cercanos, y también aplican <@ba.key>Aprisionamiento</> al objetivo. Cuando <@ba.key>Aprisionamiento</> termina, los <@ba.key>Dobles tácticos</> atacarán a dicho objetivo para infligir DAÑ de explosión.\n<@ba.key>Aprisionamiento</>: Una penalización que ralentiza todas las acciones.\n<@ba.key>Arcano de matriz: INT</>:\n- Golpear con la habilidad de batalla de Arcane a un enemigo bajo los efectos de <@ba.key>Aprisionamiento</> <#ba.return>devuelve</> cierta cantidad de PH, finaliza el <@ba.key>Aprisionamiento</> antes de tiempo, inflige DAÑ de explosión, aplica otra acumulación de <#ba.naturalvul>Susceptibilidad a la naturaleza</> y <#ba.crystvul>Susceptibilidad criogénica</>, e inflige varios golpes de DAÑ adicional tras un breve intervalo.\n- El tiempo de reutilización de la habilidad de combo es más corto."
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_combo_skill_lizhiyan_02",
+                    "Name": "Arcano de matriz: VOL",
+                    "PostDesc": "ACTIVADOR DE COMBO: Cuando se aplica una <#ba.spellinflict>Imposición de artes</> a un enemigo.\nArcane carga contra el objetivo y despliega 4 <@ba.key>Dobles tácticos</> que infligen <@ba.natur>DAÑ por naturaleza</> y aplican otra acumulación de <#ba.spellinflict>Imposición de artes</> del mismo elemento, <#ba.naturalvul>Susceptibilidad a la naturaleza</> y <#ba.crystvul>Susceptibilidad criogénica</> al objetivo y a los enemigos cercanos, y también aplican <@ba.key>Aprisionamiento</> a dicho objetivo. Cuando <@ba.key>Aprisionamiento</> termina, los <@ba.key>Dobles tácticos</> atacarán a dicho objetivo para infligir DAÑ de explosión.\n<@ba.key>Aprisionamiento</>: Una penalización que ralentiza todas las acciones.\n<@ba.key>Arcano de matriz: VOL</>:\n- Aplicar <@ba.key>Aprisionamiento</> al lanzar una habilidad de combo también <@ba.key>atrae</> ligeramente a los enemigos cercanos al objetivo.\n- El atributo Voluntad puede aumentar aún más los efectos de <#ba.naturalvul>Susceptibilidad a la naturaleza</> y <#ba.crystvul>Susceptibilidad criogénica</> aplicados por la habilidad de combo."
+                }
+            },
             "Type": 2,
             "Cooldown": 20,
             "CostType": "UltimateSp",
@@ -532,13 +548,10 @@
         },
         "chr_0032_lizhiyan_NormalAttack": {
             "Icon": "skillicon/icon_attack_funnel",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "Interdicción de artillería",
             "Desc": "ATAQUE BÁSICO: \nUn ataque de hasta 5 secuencias que inflige <@ba.natur>DAÑ por naturaleza</>. Como operador controlado, <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>17</> de Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico realizado en el aire se convierte en un ataque de inmersión que inflige <@ba.natur>DAÑ por naturaleza</> a los enemigos cercanos. \n\nREMATE: \nUn ataque básico realizado cerca de un enemigo Tambaleado se convierte en un remate que inflige <@ba.natur>DAÑ por naturaleza</> masivo y recupera algo de PH.",
+            "ConditionData": {},
             "Type": 0,
             "Cooldown": 0,
             "CostType": "UltimateSp",
@@ -674,13 +687,21 @@
         },
         "chr_0032_lizhiyan_NormalSkill": {
             "Icon": "skillicon/icon_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "Red triturajade",
             "Desc": "Crea una <@ba.key>Red triturajade</> que inflige <@ba.natur>DAÑ por naturaleza</> y aplica <#ba.naturalinflict>Imposición de naturaleza</> a los enemigos dentro del área de efecto.",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_skill_lizhiyan_01",
+                    "Name": "Arcano de matriz: INT",
+                    "PostDesc": "<@ba.key>Arcano de matriz: INT</>:\n- Inflige más DAÑ."
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_skill_lizhiyan_02",
+                    "Name": "Arcano de matriz: VOL",
+                    "PostDesc": "<@ba.key>Arcano de matriz: VOL</>:\n- Al infligir DAÑ, la matriz también <@ba.key>atrae</> a los enemigos dentro del área de efecto."
+                }
+            },
             "Type": 1,
             "Cooldown": 0,
             "CostType": "Atb",

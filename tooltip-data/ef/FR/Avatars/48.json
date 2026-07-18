@@ -32,13 +32,21 @@
     "SkillInfoMap": {
         "chr_0032_lizhiyan_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_ultimate_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_ultimate_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "Purification",
             "Desc": "Arcane crée une <@ba.key>Matrice purificatrice</> qui inflige immédiatement des <@ba.natur>DÉG naturels</> aux ennemis dans la zone d'effet.\nLorsque l'opérateur contrôlé inflige un coup fatal ou un <#ba.lastcombo>Coup final</> à un ennemi situé dans la <@ba.key>Matrice purificatrice</>, celle-ci déclenche une <@ba.key>Frappe d'amas</> qui inflige des DÉG de zone à cet ennemi. Cet effet peut se déclencher 2 fois.\nAprès avoir déclenché la <@ba.key>Frappe d'amas</> 2 fois, l'ultime évolue en <@ba.key>Arcane purificateur</>.\n<@ba.key>Arcane purificateur</> : inflige des <@ba.natur>DÉG naturels</> aux ennemis dans une large zone d'effet.",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_ultimate_skill_lizhiyan_01",
+                    "Name": "Arcane de matrice : INT",
+                    "PostDesc": "<@ba.key>Arcane de matrice : INT</> :\n- Lors de son apparition, la <@ba.key>Matrice purificatrice</> applique également de force une <#ba.corrupt>Corrosion</> aux ennemis dans la zone d'effet."
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_ultimate_skill_lizhiyan_02",
+                    "Name": "Arcane de matrice : VOL",
+                    "PostDesc": "<@ba.key>Arcane de matrice : VOL</> :\n- Lors de son apparition, la <@ba.key>Matrice purificatrice</> vise également les ennemis victimes d'une <#ba.spellinflict>altération des Arts</> dans la zone d'effet et leur applique un cumul d'<#ba.spellinflict>altération des Arts</> supplémentaire du même élément."
+                }
+            },
             "Type": 3,
             "Cooldown": 10,
             "CostType": "UltimateSp",
@@ -246,13 +254,21 @@
         },
         "chr_0032_lizhiyan_ComboSkill": {
             "Icon": "skillicon/icon_combo_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "Posture de Yinglung IV",
-            "Desc": "0",
+            "Desc": "",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_combo_skill_lizhiyan_01",
+                    "Name": "Arcane de matrice : INT",
+                    "PostDesc": "DÉCLENCHEMENT DE COMBO : lorsqu'une <#ba.naturalinflict>altération naturelle</> est appliquée à un ennemi ou qu'il est victime d'au moins 2 cumuls d'une <#ba.spellinflict>altération des Arts non naturelle</>.\nArcane charge la cible et crée 4 <@ba.key>doubles tactiques</> qui appliquent une <#ba.naturalvul>sensibilité naturelle</>, une <#ba.crystvul>sensibilité cryogénique</> et infligent des <@ba.natur>DÉG naturels</> à la cible et aux ennemis à proximité, tout en appliquant un <@ba.key>Emprisonnement</> à la cible. Lorsque l'<@ba.key>Emprisonnement</> prend fin, les <@ba.key>doubles tactiques</> attaquent la cible et lui infligent des DÉG d'explosion.\n<@ba.key>Emprisonnement</> : malus qui ralentit toutes les actions.\n<@ba.key>Arcane de matrice : INT</> :\n- Toucher un ennemi victime d'un <@ba.key>Emprisonnement</> avec la compétence de combat d'Arcane <#ba.return>restitue</> quelques PC, met fin prématurément à l'<@ba.key>Emprisonnement</>, inflige des DÉG d'explosion, applique une nouvelle fois une <#ba.naturalvul>sensibilité naturelle</> et une <#ba.crystvul>sensibilité cryogénique</> et inflige plusieurs fois des DÉG bonus après un court instant.\n- Le temps de recharge de la compétence de combo est réduit."
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_combo_skill_lizhiyan_02",
+                    "Name": "Arcane de matrice : VOL",
+                    "PostDesc": "DÉCLENCHEMENT DE COMBO : lorsqu'une <#ba.spellinflict>altération des Arts</> est appliquée à un ennemi.\nArcane charge la cible et crée 4 <@ba.key>doubles tactiques</> qui infligent des <@ba.natur>DÉG naturels</> et appliquent un autre cumul d'<#ba.spellinflict>altération des Arts</> du même élément, ainsi qu'une <#ba.naturalvul>sensibilité naturelle</> et une <#ba.crystvul>sensibilité cryogénique</> à la cible et aux ennemis à proximité, tout en appliquant un <@ba.key>Emprisonnement</> à la cible. Lorsque l'<@ba.key>Emprisonnement</> prend fin, les <@ba.key>doubles tactiques</> attaquent la cible et lui infligent des DÉG d'explosion.\n<@ba.key>Emprisonnement</> : malus qui ralentit toutes les actions.\n<@ba.key>Arcane de matrice : VOL</> :\n- Lorsqu'un <@ba.key>Emprisonnement</> est appliqué en lançant une compétence de combo, les ennemis sont également légèrement <@ba.key>attirés</> vers la cible.\n- Le trait Volonté peut renforcer les effets de la <#ba.naturalvul>sensibilité naturelle</> et de la <#ba.crystvul>sensibilité cryogénique</> appliquées par la compétence de combo."
+                }
+            },
             "Type": 2,
             "Cooldown": 20,
             "CostType": "UltimateSp",
@@ -532,13 +548,10 @@
         },
         "chr_0032_lizhiyan_NormalAttack": {
             "Icon": "skillicon/icon_attack_funnel",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "Interdiction de l'artillerie",
             "Desc": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.natur>DÉG naturels</>. Si vous contrôlez l'opératrice, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>17</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.natur>DÉG naturels</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.natur>DÉG naturels</> et restaure quelques PC.",
+            "ConditionData": {},
             "Type": 0,
             "Cooldown": 0,
             "CostType": "UltimateSp",
@@ -674,13 +687,21 @@
         },
         "chr_0032_lizhiyan_NormalSkill": {
             "Icon": "skillicon/icon_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "Grille de broyage de jade",
             "Desc": "Crée une <@ba.key>grille de broyage de jade</> qui inflige des <@ba.natur>DÉG naturels</> et applique une <#ba.naturalinflict>altération naturelle</> aux ennemis situés dans la zone d'effet.",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_skill_lizhiyan_01",
+                    "Name": "Arcane de matrice : INT",
+                    "PostDesc": "<@ba.key>Arcane de matrice : INT</> :\n- Inflige plus de DÉG."
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_skill_lizhiyan_02",
+                    "Name": "Arcane de matrice : VOL",
+                    "PostDesc": "<@ba.key>Arcane de matrice : VOL</> :\n- Lorsque la matrice inflige des DÉG, elle <@ba.key>attire</> également les ennemis dans la zone d'effet."
+                }
+            },
             "Type": 1,
             "Cooldown": 0,
             "CostType": "Atb",

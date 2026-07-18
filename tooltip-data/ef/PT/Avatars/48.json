@@ -32,13 +32,21 @@
     "SkillInfoMap": {
         "chr_0032_lizhiyan_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_ultimate_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_ultimate_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "Expurgo da Melancolia",
             "Desc": "Arcane cria um <@ba.key>Conjunto Expurgador da Melancolia</> que causa <@ba.natur>DNO Natureza</> imediatamente aos inimigos na área de efeito (ADE).\nAo atingir um inimigo dentro do <@ba.key>Conjunto Expurgador da Melancolia</> com um Finalizador ou <#ba.lastcombo>Golpe Final</> realizado pelo operador controlado, o <@ba.key>Conjunto Expurgador da Melancolia</> libera um <@ba.key>Ataque em Área</> que causa DNO em Área ao inimigo em questão. Esse efeito pode ser acionado até 2 vezes.\nApós acionar <@ba.key>Ataque em Área</> 2 vezes, a habilidade suprema é alternada para <@ba.key>Expurgo da Melancolia Arcane</>.\n<@ba.key>Expurgo da Melancolia Arcane</>: causa <@ba.natur>DNO Natureza</> a inimigos em uma grande ADE.",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_ultimate_skill_lizhiyan_01",
+                    "Name": "Conjunto Arcane: INT",
+                    "PostDesc": "<@ba.key>Conjunto Arcane: INT</>:\n- Quando criado, o <@ba.key>Conjunto Expurgador da Melancolia</> também aplica <#ba.corrupt>Corrosão</> à força aos inimigos na ADE."
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_ultimate_skill_lizhiyan_02",
+                    "Name": "Conjunto Arcane: VON",
+                    "PostDesc": "<@ba.key>Conjunto Arcane: VON</>:\n- Quando criado, o <@ba.key>Conjunto Expurgador da Melancolia</> também tem como alvo inimigos com <#ba.spellinflict>Inflição de Artes</> em sua ADE e aplica outro acúmulo de <#ba.spellinflict>Inflição de Artes</> do mesmo elemento a esses inimigos."
+                }
+            },
             "Type": 3,
             "Cooldown": 10,
             "CostType": "UltimateSp",
@@ -246,13 +254,21 @@
         },
         "chr_0032_lizhiyan_ComboSkill": {
             "Icon": "skillicon/icon_combo_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "Postura Yinglung IV",
-            "Desc": "0",
+            "Desc": "",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_combo_skill_lizhiyan_01",
+                    "Name": "Conjunto Arcane: INT",
+                    "PostDesc": "ACIONADOR DO COMBO: Quando <#ba.naturalinflict>Inflição da Natureza</> ou pelo menos 2 acúmulos de <#ba.spellinflict>Inflição de Artes do tipo não Natureza</> são aplicados ao inimigo.\nArcane ataca o alvo e prepara 4 <@ba.key>Dublês Táticos</> que aplicam <#ba.naturalvul>Suscetibilidade à Natureza</> e <#ba.crystvul>Suscetibilidade Crio</> e causam <@ba.natur>DNO Natureza</> ao alvo e aos inimigos próximos. Além disso, aplica <@ba.key>Aprisionamento</> ao alvo em questão. Quando o <@ba.key>Aprisionamento</> terminar, os <@ba.key>Dublês Táticos</> atacarão o alvo em questão para causar DNO Explosão.\n<@ba.key>Aprisionamento</>: uma penalidade que deixa todas as ações mais lentas.\n<@ba.key>Conjunto Arcane: INT</>:\n- Atingir um inimigo sob <@ba.key>Aprisionamento</> com a habilidade de batalha de Arcane <#ba.return>devolve</> PH, encerra o <@ba.key>Aprisionamento</> mais cedo, causa DNO Explosão, aplica outra instância de <#ba.naturalvul>Suscetibilidade à Natureza</> e <#ba.crystvul>Suscetibilidade Crio</> e causa vários acertos de DNO de bônus após um curto atraso.\n- O tempo de recarga do Combo de Habilidades é menor."
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_combo_skill_lizhiyan_02",
+                    "Name": "Conjunto Arcane: VON",
+                    "PostDesc": "ACIONADOR DO COMBO: Quando uma <#ba.spellinflict>Inflição de Artes</> é aplicada a um inimigo.\nArcane ataca o alvo e prepara 4 <@ba.key>Dublês Táticos</> que causam <@ba.natur>DNO Natureza</> e aplicam outro acúmulo de <#ba.spellinflict>Inflição de Artes</> do mesmo elemento, <#ba.naturalvul>Suscetibilidade à Natureza</> e <#ba.crystvul>Suscetibilidade Crio</> ao alvo e aos inimigos próximos. Além disso, aplica <@ba.key>Aprisionamento</> ao alvo em questão. Quando o <@ba.key>Aprisionamento</> terminar, os <@ba.key>Dublês Táticos</> atacarão o alvo em questão para causar DNO Explosão.\n<@ba.key>Aprisionamento</>: uma penalização que torna todas as ações mais lentas.\n<@ba.key>Conjunto Arcane: VON</>:\n- Aplicar <@ba.key>Aprisionamento</> via conjuração de um combo de habilidades também irá <@ba.key>atrair</> inimigos próximo ao alvo.\n- O atributo de Vontade pode aumentar ainda mais os efeitos de <#ba.naturalvul>Suscetibilidade à Natureza</> e <#ba.crystvul>Suscetibilidade Crio</> aplicados pelo combo de habilidades."
+                }
+            },
             "Type": 2,
             "Cooldown": 20,
             "CostType": "UltimateSp",
@@ -532,13 +548,10 @@
         },
         "chr_0032_lizhiyan_NormalAttack": {
             "Icon": "skillicon/icon_attack_funnel",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "Interdição de Artilharia",
             "Desc": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.natur>DNO Natureza</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>17</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.natur>DNO Natureza</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um finalizador que causa uma enorme quantidade de <@ba.natur>DNO Natureza</> e recupera PH.",
+            "ConditionData": {},
             "Type": 0,
             "Cooldown": 0,
             "CostType": "UltimateSp",
@@ -674,13 +687,21 @@
         },
         "chr_0032_lizhiyan_NormalSkill": {
             "Icon": "skillicon/icon_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "Grade Esmagadora de Jade",
             "Desc": "Cria uma <@ba.key>Grade Esmagadora de Jade</> que causa <@ba.natur>DNO Natureza</> e aplica <#ba.naturalinflict>Inflição da Natureza</> aos inimigos na área de efeito.",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_skill_lizhiyan_01",
+                    "Name": "Conjunto Arcane: INT",
+                    "PostDesc": "<@ba.key>Conjunto Arcane: INT</>:\n- Causa mais DNO."
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_skill_lizhiyan_02",
+                    "Name": "Conjunto Arcane: VON",
+                    "PostDesc": "<@ba.key>Conjunto Arcane: VON</>:\n- Ao causar DNO, o conjunto também <@ba.key>atrai</> inimigos na área de efeito."
+                }
+            },
             "Type": 1,
             "Cooldown": 0,
             "CostType": "Atb",

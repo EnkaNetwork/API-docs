@@ -32,13 +32,21 @@
     "SkillInfoMap": {
         "chr_0032_lizhiyan_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_ultimate_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_ultimate_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "Gloompurge",
             "Desc": "Arcane creates a <@ba.key>Gloompurger Array</> that immediately deals <@ba.natur>Nature DMG</> to enemies within the area of effect (AOE).\nWhen hitting an enemy within the <@ba.key>Gloompurger Array</> with a Finisher or a <#ba.lastcombo>Final Strike</> performed by the controlled operator, the <@ba.key>Gloompurger Array</> unleashes a <@ba.key>Cluster Strike</> that deals Area DMG to the said enemy. This effect triggers up to 2 times.\nAfter triggering <@ba.key>Cluster Strike</> 2 times, the ultimate is switched to <@ba.key>Gloompurge Arcana</>.\n<@ba.key>Gloompurge Arcana</>: Deals <@ba.natur>Nature DMG</> to enemies within a large AOE.",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_ultimate_skill_lizhiyan_01",
+                    "Name": "Array Arcana: INT",
+                    "PostDesc": "<@ba.key>Array Arcana: INT</>:\n- When created, the <@ba.key>Gloompurger Array</> also forcibly applies <#ba.corrupt>Corrosion</> to enemies in the AOE."
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_ultimate_skill_lizhiyan_02",
+                    "Name": "Array Arcana: WILL",
+                    "PostDesc": "<@ba.key>Array Arcana: WILL</>:\n- When created, the <@ba.key>Gloompurger Array</> also targets enemies with <#ba.spellinflict>Arts Infliction</> within its AOE, and applies another <#ba.spellinflict>Arts Infliction</> stack of the same element to them."
+                }
+            },
             "Type": 3,
             "Cooldown": 10,
             "CostType": "UltimateSp",
@@ -246,13 +254,21 @@
         },
         "chr_0032_lizhiyan_ComboSkill": {
             "Icon": "skillicon/icon_combo_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "Yinglung Stance IV",
-            "Desc": "0",
+            "Desc": "",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_combo_skill_lizhiyan_01",
+                    "Name": "Array Arcana: INT",
+                    "PostDesc": "COMBO TRIGGER: When <#ba.naturalinflict>Nature Infliction</> or at least 2 stacks of <#ba.spellinflict>non-Nature Arts Infliction</> are applied on an enemy.\nArcane charges at the target and sets up 4 <@ba.key>Tactical Doubles</> that apply <#ba.naturalvul>Nature Susceptibility</> and <#ba.crystvul>Cryo Susceptibility</> and deal <@ba.natur>Nature DMG</> to the target and nearby enemies, and also apply <@ba.key>Imprisonment</> on the said target. When <@ba.key>Imprisonment</> ends, the <@ba.key>Tactical Doubles</> will attack the said target to deal Explosion DMG.\n<@ba.key>Imprisonment</>: A debuff that slows all actions.\n<@ba.key>Array Arcana: INT</>:\n- Hitting an enemy under <@ba.key>Imprisonment</> with Arcane's battle skill <#ba.return>returns</> some SP, ends the <@ba.key>Imprisonment</> early, deals Explosion DMG, applies another instance of <#ba.naturalvul>Nature Susceptibility</> and <#ba.crystvul>Cryo Susceptibility</>, and deals multiple hits of bonus DMG after a short delay.\n- Combo skill cooldown is shorter."
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_combo_skill_lizhiyan_02",
+                    "Name": "Array Arcana: WILL",
+                    "PostDesc": "COMBO TRIGGER: When an <#ba.spellinflict>Arts Infliction</> is applied on an enemy.\nArcane charges at the target and sets up 4 <@ba.key>Tactical Doubles</> that deal <@ba.natur>Nature DMG</> and apply another stack of <#ba.spellinflict>Arts Infliction</> of the same element, <#ba.naturalvul>Nature Susceptibility</>, and <#ba.crystvul>Cryo Susceptibility</> to the target and nearby enemies, and also apply <@ba.key>Imprisonment</> on the said target. When <@ba.key>Imprisonment</> ends, the <@ba.key>Tactical Doubles</> will attack the said target to deal Explosion DMG.\n<@ba.key>Imprisonment</>: A debuff that slows all actions.\n<@ba.key>Array Arcana: WILL</>:\n- Applying <@ba.key>Imprisonment</> by casting a combo skill will also slightly <@ba.key>pull in</> enemies near the target.\n- The attribute of Will can further increase the effects of <#ba.naturalvul>Nature Susceptibility</> and <#ba.crystvul>Cryo Susceptibility</> applied by the combo skill."
+                }
+            },
             "Type": 2,
             "Cooldown": 20,
             "CostType": "UltimateSp",
@@ -532,13 +548,10 @@
         },
         "chr_0032_lizhiyan_NormalAttack": {
             "Icon": "skillicon/icon_attack_funnel",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "Artillery Interdiction",
             "Desc": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.natur>Nature DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>17</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.natur>Nature DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.natur>Nature DMG</> and recovers some SP.",
+            "ConditionData": {},
             "Type": 0,
             "Cooldown": 0,
             "CostType": "UltimateSp",
@@ -674,13 +687,21 @@
         },
         "chr_0032_lizhiyan_NormalSkill": {
             "Icon": "skillicon/icon_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "Jadecrushing Grid",
             "Desc": "Creates a <@ba.key>Jadecrushing Grid</> that deals <@ba.natur>Nature DMG</> and applies <#ba.naturalinflict>Nature Infliction</> to enemies within the area of effect.",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_skill_lizhiyan_01",
+                    "Name": "Array Arcana: INT",
+                    "PostDesc": "<@ba.key>Array Arcana: INT</>:\n- Deals more DMG."
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_skill_lizhiyan_02",
+                    "Name": "Array Arcana: WILL",
+                    "PostDesc": "<@ba.key>Array Arcana: WILL</>:\n- When dealing DMG, the array also <@ba.key>pulls in</> enemies within the area of effect."
+                }
+            },
             "Type": 1,
             "Cooldown": 0,
             "CostType": "Atb",

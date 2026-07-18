@@ -32,13 +32,21 @@
     "SkillInfoMap": {
         "chr_0032_lizhiyan_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_ultimate_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_ultimate_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "破晦",
             "Desc": "生成<@ba.key>破晦陣</>，對區域內的敵人立即造成<@ba.natur>自然傷害</>。\n處於<@ba.key>破晦陣</>中的敵人被處決或受到主控幹員<#ba.lastcombo>重擊</>時，<@ba.key>破晦陣</>將對其發動<@ba.key>集束打擊</>，造成範圍傷害，最多發動2次。\n當發動2次<@ba.key>集束打擊</>後，終結技切換為<@ba.key>破晦訣明</>。\n<@ba.key>破晦訣明</>：對前方大範圍內敵人造成<@ba.natur>自然傷害</>。",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_ultimate_skill_lizhiyan_01",
+                    "Name": "陣訣·智",
+                    "PostDesc": "<@ba.key>陣訣·智</>：\n- <@ba.key>破晦陣</>生成時，還會對區域內的敵人強制施加<#ba.corrupt>腐蝕</>。"
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_ultimate_skill_lizhiyan_02",
+                    "Name": "陣訣·意",
+                    "PostDesc": "<@ba.key>陣訣·意</>：\n- <@ba.key>破晦陣</>生成時，還會對區域內處於<#ba.spellinflict>法術附著</>狀態的敵人再次施加該<#ba.spellinflict>法術附著</>。"
+                }
+            },
             "Type": 3,
             "Cooldown": 10,
             "CostType": "UltimateSp",
@@ -246,13 +254,21 @@
         },
         "chr_0032_lizhiyan_ComboSkill": {
             "Icon": "skillicon/icon_combo_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "應龍四式",
-            "Desc": "0",
+            "Desc": "",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_combo_skill_lizhiyan_01",
+                    "Name": "陣訣·智",
+                    "PostDesc": "當有敵人被施加<#ba.naturalinflict>自然附著</>或進入2層及以上其他<#ba.spellinflict>法術附著</>時可以發動。\n衝向目標，設置四個<@ba.key>戰術分身</>對其及周圍的敵人施加<#ba.naturalvul>自然脆弱</>和<#ba.crystvul>寒冷脆弱</>，造成<@ba.natur>自然傷害</>，並使該目標進入<@ba.key>囹圄</>狀態。<@ba.key>囹圄</>狀態結束時，<@ba.key>戰術分身</>向其攻擊，並造成爆炸傷害。\n<@ba.key>囹圄</>狀態：所有行動減緩。\n<@ba.key>陣訣·智</>：\n- 當自身戰技命中處於<@ba.key>囹圄</>狀態的敵人時，<#ba.return>返還</>一定技力，提前結束<@ba.key>囹圄</>狀態，造成爆炸傷害，並再次施加<#ba.naturalvul>自然脆弱</>和<#ba.crystvul>寒冷脆弱</>，短暫延遲後，造成多段額外傷害。\n- 連攜技冷卻時間更短。"
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_combo_skill_lizhiyan_02",
+                    "Name": "陣訣·意",
+                    "PostDesc": "當有敵人被施加<#ba.spellinflict>法術附著</>時可以發動。\n衝向目標，設置四個<@ba.key>戰術分身</>對其及周圍的敵人再次施加該<#ba.spellinflict>法術附著</>、<#ba.naturalvul>自然脆弱</>和<#ba.crystvul>寒冷脆弱</>，造成<@ba.natur>自然傷害</>，並使該目標進入<@ba.key>囹圄</>狀態。<@ba.key>囹圄</>狀態結束時，<@ba.key>戰術分身</>向其攻擊，並造成爆炸傷害。\n<@ba.key>囹圄</>狀態：所有行動減緩。\n<@ba.key>陣訣·意</>：\n- 施放連攜技使敵人進入<@ba.key>囹圄</>狀態時，會小幅<@ba.key>牽引</>範圍內的敵人。\n- 意志可以額外提升連攜技施加的<#ba.naturalvul>自然脆弱</>和<#ba.crystvul>寒冷脆弱</>效果。"
+                }
+            },
             "Type": 2,
             "Cooldown": 20,
             "CostType": "UltimateSp",
@@ -532,13 +548,10 @@
         },
         "chr_0032_lizhiyan_NormalAttack": {
             "Icon": "skillicon/icon_attack_funnel",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "重火力截擊",
             "Desc": "普通攻擊：\n對敵人進行最多5段攻擊，造成<@ba.natur>自然傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>17</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.natur>自然傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.natur>自然傷害</>並回復一定技力。",
+            "ConditionData": {},
             "Type": 0,
             "Cooldown": 0,
             "CostType": "UltimateSp",
@@ -674,13 +687,21 @@
         },
         "chr_0032_lizhiyan_NormalSkill": {
             "Icon": "skillicon/icon_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "摧玉網格",
             "Desc": "在目標腳下建立<@ba.key>摧玉網格</>，對範圍內敵人造成<@ba.natur>自然傷害</>並施加<#ba.naturalinflict>自然附著</>。",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_skill_lizhiyan_01",
+                    "Name": "陣訣·智",
+                    "PostDesc": "<@ba.key>陣訣·智</>：\n- 造成的傷害更高。"
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_skill_lizhiyan_02",
+                    "Name": "陣訣·意",
+                    "PostDesc": "<@ba.key>陣訣·意</>：\n- 造成傷害時會向中心<@ba.key>牽引</>範圍內的敵人。"
+                }
+            },
             "Type": 1,
             "Cooldown": 0,
             "CostType": "Atb",

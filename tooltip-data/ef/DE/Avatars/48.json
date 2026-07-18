@@ -32,13 +32,21 @@
     "SkillInfoMap": {
         "chr_0032_lizhiyan_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_ultimate_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_ultimate_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "Finsternisvertreiber",
             "Desc": "Arkan erzeugt eine <@ba.key>Finsternisvertreiber-Säulenreihe</>, die Gegnern im Wirkungsbereich sofort <@ba.natur>Natur-SDN</> zufügt.\nErleidet ein Gegner innerhalb der <@ba.key>Finsternisvertreiber-Säulenreihe</> einen Wuchtschlag oder einen <#ba.lastcombo>Abschlussangriff</> durch den gesteuerten Operator, entfesselt die <@ba.key>Finsternisvertreiber-Säulenreihe</> einen <@ba.key>Gewittersturm</>, der ebenjenem Gegner Flächen-SDN zufügt. Dieser Effekt kann bis zu zweimal ausgelöst werden.\nWurde <@ba.key>Gewittersturm</> zweimal ausgelöst, wechselt die Ultimative Fertigkeit zu <@ba.key>Finsternisvertreiber-Arkana</>.\n<@ba.key>Finsternisvertreiber-Arkana</>: Fügt Gegnern innerhalb eines großen Wirkungsbereichs <@ba.natur>Natur-SDN</> zu.",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_ultimate_skill_lizhiyan_01",
+                    "Name": "Säulenreihen-Arkana: INT",
+                    "PostDesc": "<@ba.key>Säulenreihen-Arkana: INT</>:\n– Bei Erschaffung belegt die <@ba.key>Finsternisvertreiber-Säulenreihe</> Gegner im Wirkungsbereich außerdem mit <#ba.corrupt>Korrosion</>."
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_ultimate_skill_lizhiyan_02",
+                    "Name": "Säulenreihen-Arkana: WILLE",
+                    "PostDesc": "<@ba.key>Säulenreihen-Arkana: WILLE</>:\n– Bei Erschaffung visiert die <@ba.key>Finsternisvertreiber-Säulenreihe</> außerdem Gegner mit <#ba.spellinflict>Technikkumulierung</> im Wirkungsbereich an und belegt sie mit einer weiteren <#ba.spellinflict>Technikkumulierung</> desselben Elements."
+                }
+            },
             "Type": 3,
             "Cooldown": 10,
             "CostType": "UltimateSp",
@@ -246,13 +254,21 @@
         },
         "chr_0032_lizhiyan_ComboSkill": {
             "Icon": "skillicon/icon_combo_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "Yinglung-Haltung IV",
-            "Desc": "0",
+            "Desc": "",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_combo_skill_lizhiyan_01",
+                    "Name": "Säulenreihen-Arkana: INT",
+                    "PostDesc": "KOMBOAUSLÖSER: Wenn ein Gegner mit <#ba.naturalinflict>Natur</> oder mindestens 2 Kumulierungen einer <#ba.spellinflict>anderen Technikkumulierung als Natur</> belegt wird.\nArkan stürmt auf das Ziel zu und stellt 4 <@ba.key>Taktische Doppelgänger</> auf, die das Ziel und Gegner in der Nähe mit <#ba.naturalvul>Natur-Empfänglichkeit</> und <#ba.crystvul>Kryo-Empfänglichkeit</> belegen und <@ba.natur>Natur-SDN</> verursachen sowie das Ziel zusätzlich mit <@ba.key>Gefangenschaft</> belegen. Wenn <@ba.key>Gefangenschaft</> endet, greifen die <@ba.key>Taktischen Doppelgänger</> das Ziel an und verursachen Explosions-SDN.\n<@ba.key>Gefangenschaft</>: Ein Debuff, der alle Aktionen verlangsamt.\n<@ba.key>Säulenreihen-Arkana: INT</>:\n– Trifft Arkans Kampffertigkeit einen von <@ba.key>Gefangenschaft</> betroffenen Gegner, werden einige FP <#ba.return>wiederhergestellt</>, der Zustand <@ba.key>Gefangenschaft</> vorzeitig beendet, Explosions-SDN verursacht sowie der Gegner mit einer weiteren Kumulierung <#ba.naturalvul>Natur-Empfänglichkeit</> und <#ba.crystvul>Kryo-Empfänglichkeit</> belegt. Außerdem verursachen nach einer kurzen Verzögerung mehrere Treffer Bonus-SDN.\n– Kombofertigkeit-Abklingzeit ist kürzer."
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_combo_skill_lizhiyan_02",
+                    "Name": "Säulenreihen-Arkana: WILLE",
+                    "PostDesc": "KOMBOAUSLÖSER: Wenn ein Gegner mit einer <#ba.spellinflict>Technikkumulierung</> belegt wird.\nArkan stürmt auf das Ziel zu und stellt 4 <@ba.key>Taktische Doppelgänger</> auf, die <@ba.natur>Natur-SDN</> verursachen und das Ziel und Gegner in der Nähe mit einer zusätzlichen <#ba.spellinflict>Technikkumulierung</> desselben Elements sowie <#ba.naturalvul>Natur-Empfänglichkeit</> und <#ba.crystvul>Kryo-Empfänglichkeit</> belegen sowie das Ziel zusätzlich mit <@ba.key>Gefangenschaft</>. Wenn <@ba.key>Gefangenschaft</> endet, greifen die <@ba.key>Taktischen Doppelgänger</> das Ziel an und verursachen Explosions-SDN.\n<@ba.key>Gefangenschaft</>: Ein Debuff, der alle Aktionen verlangsamt.\n<@ba.key>Säulenreihen-Arkana: WILLE</>:\n– Wenn du eine Kombofertigkeit wirkst und das Ziel dabei mit <@ba.key>Gefangenschaft</> belegst, werden außerdem Gegner in dessen Nähe leicht <@ba.key>herangezogen</>.\n– Das Attribut Wille kann die durch die Kombofertigkeit angewendeten Effekte von <#ba.naturalvul>Natur-Empfänglichkeit</> und <#ba.crystvul>Kryo-Empfänglichkeit</> weiter steigern."
+                }
+            },
             "Type": 2,
             "Cooldown": 20,
             "CostType": "UltimateSp",
@@ -532,13 +548,10 @@
         },
         "chr_0032_lizhiyan_NormalAttack": {
             "Icon": "skillicon/icon_attack_funnel",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "Abriegelungsartillerie",
             "Desc": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.natur>Natur-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>17</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.natur>Natur-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.natur>Natur-SDN</> zufügen und ein wenig FP wiederherstellen.",
+            "ConditionData": {},
             "Type": 0,
             "Cooldown": 0,
             "CostType": "UltimateSp",
@@ -674,13 +687,21 @@
         },
         "chr_0032_lizhiyan_NormalSkill": {
             "Icon": "skillicon/icon_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "Jadebrecher-Netz",
             "Desc": "Erzeugt ein <@ba.key>Jadebrecher-Netz</>, das Gegnern im Wirkungsbereich mit <@ba.natur>Natur-SDN</> zufügt und sie mit <#ba.naturalinflict>Natur</> belegt.",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_skill_lizhiyan_01",
+                    "Name": "Säulenreihen-Arkana: INT",
+                    "PostDesc": "<@ba.key>Säulenreihen-Arkana: INT</>:\n– Verursacht mehr SDN."
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_skill_lizhiyan_02",
+                    "Name": "Säulenreihen-Arkana: WILLE",
+                    "PostDesc": "<@ba.key>Säulenreihen-Arkana: WILLE</>:\n– Wird SDN verursacht, <@ba.key>zieht die Säulenreihe zudem Gegner heran</>, die sich im Wirkungsbereich aufhalten."
+                }
+            },
             "Type": 1,
             "Cooldown": 0,
             "CostType": "Atb",

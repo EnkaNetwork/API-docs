@@ -32,13 +32,21 @@
     "SkillInfoMap": {
         "chr_0032_lizhiyan_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_ultimate_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_ultimate_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "破晦",
             "Desc": "<@ba.key>破晦陣</>を生成し、範囲内の敵に<@ba.natur>自然ダメージ</>を与える。\n<@ba.key>破晦陣</>内の敵が終撃または操作オペレーターの<#ba.lastcombo>重攻撃</>を受けたとき、<@ba.key>破晦陣</>がその敵に<@ba.key>集中攻撃</>を発動し、範囲ダメージを与える。（最大2回まで発動）\n<@ba.key>集中攻撃</>が2回発動すると、必殺技は<@ba.key>破晦訣明</>に切り替わる。\n<@ba.key>破晦訣明</>：前方広範囲の敵に<@ba.natur>自然ダメージ</>を与える。",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_ultimate_skill_lizhiyan_01",
+                    "Name": "陣訣・知",
+                    "PostDesc": "<@ba.key>陣訣・知</>：\n- <@ba.key>破晦陣</>を生成する際、範囲内の敵に強制的に<#ba.corrupt>腐食</>状態にする。"
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_ultimate_skill_lizhiyan_02",
+                    "Name": "陣訣・意",
+                    "PostDesc": "<@ba.key>陣訣・意</>：\n- <@ba.key>破晦陣</>を生成する際、範囲内の<#ba.spellinflict>アーツ付着</>状態の敵に再度同じ<#ba.spellinflict>アーツ付着</>を付与する。"
+                }
+            },
             "Type": 3,
             "Cooldown": 10,
             "CostType": "UltimateSp",
@@ -246,13 +254,21 @@
         },
         "chr_0032_lizhiyan_ComboSkill": {
             "Icon": "skillicon/icon_combo_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "応龍四式",
-            "Desc": "0",
+            "Desc": "",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_combo_skill_lizhiyan_01",
+                    "Name": "陣訣・知",
+                    "PostDesc": "敵に<#ba.naturalinflict>自然付着</>が付与されるか2段階以上の他の<#ba.spellinflict>アーツ付着</>状態になったときに発動可能。\n目標へ突進し、4体の<@ba.key>戦術分身</>を配置して、目標と周囲の敵に<#ba.naturalvul>自然脆弱</>と<#ba.crystvul>寒冷脆弱</>を付与し、<@ba.natur>自然ダメージ</>を与え、その目標を<@ba.key>牢獄</>状態にする。<@ba.key>牢獄</>状態が終わるとき、<@ba.key>戦術分身</>が目標を攻撃し、さらに爆発ダメージを与える。\n<@ba.key>牢獄</>状態：すべての行動が遅くなる。\n<@ba.key>陣訣・知</>：\n- 自身の戦技が<@ba.key>牢獄</>状態の敵に命中したとき、SPが一定量<#ba.return>返還</>される。その時点で<@ba.key>牢獄</>状態が終了し、爆発ダメージを与え、再度<#ba.naturalvul>自然脆弱</>と<#ba.crystvul>寒冷脆弱</>を付与する。一定時間後に複数回の追加ダメージを与える。\n- 連携技のクールタイムがさらに短くなる。"
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_combo_skill_lizhiyan_02",
+                    "Name": "陣訣・意",
+                    "PostDesc": "敵に<#ba.spellinflict>アーツ付着</>が付与されたときに発動可能。\n目標へ突進し、4体の<@ba.key>戦術分身</>を配置して目標と周囲の敵に再度<#ba.spellinflict>アーツ付着</>、<#ba.naturalvul>自然脆弱</>、<#ba.crystvul>寒冷脆弱</>を付与し、<@ba.natur>自然ダメージ</>を与え、その目標を<@ba.key>牢獄</>状態にする。<@ba.key>牢獄</>状態が終わるとき、<@ba.key>戦術分身</>が目標を攻撃し、さらに爆発ダメージを与える。\n<@ba.key>牢獄</>状態：すべての行動が遅くなる。\n<@ba.key>陣訣・意</>：\n- 連携技を発動して敵を<@ba.key>牢獄</>状態にしたとき、範囲内の敵をわずかに<@ba.key>牽引</>する。\n- 意志が高いほど連携技で付与する<#ba.naturalvul>自然脆弱</>と<#ba.crystvul>寒冷脆弱</>効果が追加でアップする。"
+                }
+            },
             "Type": 2,
             "Cooldown": 20,
             "CostType": "UltimateSp",
@@ -532,13 +548,10 @@
         },
         "chr_0032_lizhiyan_NormalAttack": {
             "Icon": "skillicon/icon_attack_funnel",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "重火力迎撃",
             "Desc": "通常攻撃：\n最大5段の攻撃で敵に<@ba.natur>自然ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>17</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.natur>自然ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.natur>自然ダメージ</>を与えてSPを一定量回復する。",
+            "ConditionData": {},
             "Type": 0,
             "Cooldown": 0,
             "CostType": "UltimateSp",
@@ -674,13 +687,21 @@
         },
         "chr_0032_lizhiyan_NormalSkill": {
             "Icon": "skillicon/icon_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "砕玉領域",
             "Desc": "目標の足元に<@ba.key>砕玉領域</>を展開し、範囲内の敵に<@ba.natur>自然ダメージ</>を与え、さらに<#ba.naturalinflict>自然付着</>を付与する。",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_skill_lizhiyan_01",
+                    "Name": "陣訣・知",
+                    "PostDesc": "<@ba.key>陣訣・知</>：\n- 与えるダメージがさらに高くなる。"
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_skill_lizhiyan_02",
+                    "Name": "陣訣・意",
+                    "PostDesc": "<@ba.key>陣訣・意</>：\n- ダメージを与える際、範囲内の敵を中心に<@ba.key>牽引</>する。"
+                }
+            },
             "Type": 1,
             "Cooldown": 0,
             "CostType": "Atb",

@@ -32,13 +32,21 @@
     "SkillInfoMap": {
         "chr_0032_lizhiyan_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_ultimate_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_ultimate_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "Gloompurge",
             "Desc": "Arcane akan memunculkan <@ba.key>Gloompurger Array</> yang akan langsung menimbulkan <@ba.natur>Nature DMG</> kepada musuh di dalam area efek (AOE).\nSaat musuh di dalam <@ba.key>Gloompurger Array</> terkena serangan Penuntas atau <#ba.lastcombo>Final Strike</> yang dilancarkan oleh operator terkontrol, <@ba.key>Gloompurger Array</> akan melepaskan <@ba.key>Cluster Strike</> yang akan menimbulkan Area DMG kepada musuh yang bersangkutan. Efek ini bisa diaktifkan maks 2 kali.\nSetelah mengaktifkan <@ba.key>Cluster Strike</> sebanyak 2 kali, ultimate akan beralih ke <@ba.key>Gloompurge Arcana</>.\n<@ba.key>Gloompurge Arcana</>: Menimbulkan <@ba.natur>Nature DMG</> kepada musuh di dalam AOE luas.",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_ultimate_skill_lizhiyan_01",
+                    "Name": "Array Arcana: INT",
+                    "PostDesc": "<@ba.key>Array Arcana: INT</>:\n- Saat muncul, <@ba.key>Gloompurger Array</> juga mengakibatkan <#ba.corrupt>Corrosion</> kepada musuh di AOE secara paksa."
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_ultimate_skill_lizhiyan_02",
+                    "Name": "Array Arcana: WILL",
+                    "PostDesc": "<@ba.key>Array Arcana: WILL</>:\n- Saat muncul, <@ba.key>Gloompurger Array</> juga mengincar musuh yang terkena <#ba.spellinflict>Arts Infliction</> di dalam AOE-nya, dan mengakibatkan satu tumpuk <#ba.spellinflict>Arts Infliction</> lagi dari elemen yang sama kepada mereka."
+                }
+            },
             "Type": 3,
             "Cooldown": 10,
             "CostType": "UltimateSp",
@@ -246,13 +254,21 @@
         },
         "chr_0032_lizhiyan_ComboSkill": {
             "Icon": "skillicon/icon_combo_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "Yinglung Stance IV",
-            "Desc": "0",
+            "Desc": "",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_combo_skill_lizhiyan_01",
+                    "Name": "Array Arcana: INT",
+                    "PostDesc": "PEMICU KOMBO: Saat <#ba.naturalinflict>Nature Infliction</> atau sedikitnya 2 tumpuk <#ba.spellinflict>Arts Infliction selain Nature</> diakibatkan kepada musuh.\nArcane akan menerjang ke arah target dan mengeluarkan 4 <@ba.key>Tactical Double</> yang mengakibatkan <#ba.naturalvul>Nature Susceptibility</> dan <#ba.crystvul>Cryo Susceptibility</> serta menimbulkan <@ba.natur>Nature DMG</> kepada target dan musuh di sekitarnya, serta mengakibatkan <@ba.key>Imprisonment</> kepada target yang bersangkutan. Saat <@ba.key>Imprisonment</> berakhir, <@ba.key>Tactical Double</> akan menyerang target tersebut untuk menimbulkan DMG Ledakan.\n<@ba.key>Imprisonment</>: Debuff yang akan memperlambat semua aksi.\n<@ba.key>Array Arcana: INT</>:\n- Menghantam musuh yang sedang terkena <@ba.key>Imprisonment</> menggunakan skill tarung Arcane akan <#ba.return>mengembalikan</> sebagian SP, mengakhiri <@ba.key>Imprisonment</> lebih awal, menimbulkan DMG Ledakan, mengakibatkan <#ba.naturalvul>Nature Susceptibility</> dan <#ba.crystvul>Cryo Susceptibility</> lagi, serta menimbulkan beberapa hantaman bonus DMG setelah beberapa saat.\n- Cooldown skill kombo menjadi lebih singkat."
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_combo_skill_lizhiyan_02",
+                    "Name": "Array Arcana: WILL",
+                    "PostDesc": "PEMICU KOMBO: Saat <#ba.spellinflict>Arts Infliction</> diakibatkan kepada musuh.\nArcane akan menerjang ke arah musuh dan mengeluarkan 4 <@ba.key>Tactical Double</> yang akan menimbulkan <@ba.natur>Nature DMG</> dan mengakibatkan satu tumpuk <#ba.spellinflict>Arts Infliction</> lagi dari elemen yang sama, <#ba.naturalvul>Nature Susceptibility</>, dan <#ba.crystvul>Cryo Susceptibility</> kepada target dan musuh di sekitarnya, serta mengakibatkan <@ba.key>Imprisonment</> kepada target yang bersangkutan. Saat <@ba.key>Imprisonment</> berakhir, <@ba.key>Tactical Double</> akan menyerang target tersebut untuk menimbulkan DMG Ledakan.\n<@ba.key>Imprisonment</>: Debuff yang akan memperlambat semua aksi.\n<@ba.key>Array Arcana: WILL</>:\n- Jika mengakibatkan <@ba.key>Imprisonment</> melalui penggunaan skill kombo, musuh di dekat target juga akan sedikit <@ba.key>ditarik</>.\n- Atribut Will bisa lebih lanjut meningkatkan efek <#ba.naturalvul>Nature Susceptibility</> dan <#ba.crystvul>Cryo Susceptibility</> yang diakibatkan oleh skill kombo."
+                }
+            },
             "Type": 2,
             "Cooldown": 20,
             "CostType": "UltimateSp",
@@ -532,13 +548,10 @@
         },
         "chr_0032_lizhiyan_NormalAttack": {
             "Icon": "skillicon/icon_attack_funnel",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "Artillery Interdiction",
             "Desc": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.natur>Nature DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>17</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.natur>Nature DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.natur>Nature DMG</> sangat besar dan memulihkan sebagian SP.",
+            "ConditionData": {},
             "Type": 0,
             "Cooldown": 0,
             "CostType": "UltimateSp",
@@ -674,13 +687,21 @@
         },
         "chr_0032_lizhiyan_NormalSkill": {
             "Icon": "skillicon/icon_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "Jadecrushing Grid",
             "Desc": "Memunculkan <@ba.key>Jadecrushing Grid</> yang akan menimbulkan <@ba.natur>Nature DMG</> dan mengakibatkan <#ba.naturalinflict>Nature Infliction</> kepada musuh di dalam area efek.",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_skill_lizhiyan_01",
+                    "Name": "Array Arcana: INT",
+                    "PostDesc": "<@ba.key>Array Arcana: INT</>:\n- Menimbulkan DMG lebih besar."
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_skill_lizhiyan_02",
+                    "Name": "Array Arcana: WILL",
+                    "PostDesc": "<@ba.key>Array Arcana: WILL</>:\n- Saat menimbulkan DMG, susunan ini juga akan <@ba.key>menarik</> musuh di dalam area efek."
+                }
+            },
             "Type": 1,
             "Cooldown": 0,
             "CostType": "Atb",

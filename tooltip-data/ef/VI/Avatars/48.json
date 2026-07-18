@@ -32,13 +32,21 @@
     "SkillInfoMap": {
         "chr_0032_lizhiyan_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_ultimate_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_ultimate_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "Trừ Ám",
             "Desc": "Arcane tạo ra <@ba.key>Trận Pháp Trừ Ám</>, lập tức gây <@ba.natur>ST Tự Nhiên</> cho kẻ địch trong phạm vi hiệu ứng (AOE).\nKhi cán viên đang điều khiển dùng Đòn Kết Liễu hoặc <@ba.key>Đòn Dứt Điểm</> đánh trúng kẻ địch trong <#ba.lastcombo>Trận Pháp Trừ Ám</>, <@ba.key>Trận Pháp Trừ Ám</> sẽ tung ra <@ba.key>Tập Kích Cụm</>, gây ST Diện Rộng lên kẻ địch đó. Hiệu ứng này kích hoạt tối đa 2 lần.\nSau khi kích hoạt <@ba.key>Tập Kích Cụm</> 2 lần, Tuyệt Kỹ sẽ chuyển thành <@ba.key>Bí Thuật Trừ Ám</>.\n<@ba.key>Bí Thuật Trừ Ám</>: Gây <@ba.natur>ST Tự Nhiên</> cho kẻ địch trong phạm vi hiệu ứng lớn.",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_ultimate_skill_lizhiyan_01",
+                    "Name": "Trận Huyền Thuật: TRÍ TUỆ",
+                    "PostDesc": "<@ba.key>Trận Huyền Thuật: TRÍ TUỆ</>:\n- Khi được tạo ra, <@ba.key>Trận Pháp Trừ Ám</> cũng cưỡng chế áp dụng <#ba.corrupt>Ăn Mòn</> lên kẻ địch trong phạm vi hiệu ứng lớn."
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_ultimate_skill_lizhiyan_02",
+                    "Name": "Trận Huyền Thuật: Ý CHÍ",
+                    "PostDesc": "<@ba.key>Trận Huyền Thuật: Ý CHÍ</>:\n- Khi được tạo ra, <@ba.key>Trận Pháp Trừ Ám</> cũng chọn làm mục tiêu các kẻ địch đang chịu <#ba.spellinflict>Nhiễm Thuật Pháp</> trong phạm vi hiệu ứng lớn của nó, đồng thời áp dụng thêm một cộng dồn <#ba.spellinflict>Nhiễm Thuật Pháp</> cùng nguyên tố lên chúng."
+                }
+            },
             "Type": 3,
             "Cooldown": 10,
             "CostType": "UltimateSp",
@@ -246,13 +254,21 @@
         },
         "chr_0032_lizhiyan_ComboSkill": {
             "Icon": "skillicon/icon_combo_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "Tư Thế Đặc Nhiệm IV",
-            "Desc": "0",
+            "Desc": "",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_combo_skill_lizhiyan_01",
+                    "Name": "Trận Huyền Thuật: TRÍ TUỆ",
+                    "PostDesc": "KÍCH HOẠT LIÊN HOÀN: Khi <#ba.naturalinflict>Nhiễm Tự Nhiên</> hoặc ít nhất 2 cộng dồn <#ba.spellinflict>Nhiễm Thuật Pháp Phi Tự Nhiên</> được áp dụng lên kẻ địch.\nArcane lao tới mục tiêu và thiết lập 4 <@ba.key>Ảnh Chiến Thuật</>, áp dụng <#ba.naturalvul>Yếu Hóa Tự Nhiên</>, áp dụng <#ba.crystvul>Yếu Hóa Băng</> và <@ba.natur>ST Tự Nhiên</> lên mục tiêu cùng kẻ địch ở gần, đồng thời áp dụng <@ba.key>Giam Cầm</> lên mục tiêu đó. Khi <@ba.key>Giam Cầm</> kết thúc, các <@ba.key>Ảnh Chiến Thuật</> sẽ tấn công mục tiêu đó để gây ST Nổ.\n<@ba.key>Giam Cầm</>: Debuff làm chậm mọi hành động.\n<@ba.key>Trận Huyền Thuật: TRÍ TUỆ</>:\n- Dùng KN chiến đấu của Arcane đánh trúng kẻ địch đang chịu <@ba.key>Giam Cầm</> sẽ <#ba.return>hoàn trả</> một ít Điểm Kỹ Năng, kết thúc <@ba.key>Giam Cầm</> sớm, gây ST Nổ, áp dụng thêm một lần <#ba.naturalvul>Yếu Hóa Tự Nhiên</> và <#ba.crystvul>Yếu Hóa Băng</>, đồng thời sau một khoảng trễ ngắn sẽ gây nhiều lần ST cộng thêm.\n- Thời gian hồi KN liên hoàn được rút ngắn."
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_combo_skill_lizhiyan_02",
+                    "Name": "Trận Huyền Thuật: Ý CHÍ",
+                    "PostDesc": "KÍCH HOẠT LIÊN HOÀN: Khi <#ba.spellinflict>Nhiễm Thuật Pháp</> được áp dụng lên kẻ địch.\nArcane lao tới mục tiêu và thiết lập 4 <@ba.key>Ảnh Chiến Thuật</>, gây <@ba.natur>ST Tự Nhiên</>, áp dụng thêm một cộng dồn <#ba.spellinflict>Nhiễm Thuật Pháp</> cùng nguyên tố, <#ba.naturalvul>Yếu Hóa Tự Nhiên</> và <#ba.crystvul>Yếu Hóa Băng</> lên mục tiêu cùng kẻ địch ở gần, đồng thời áp dụng <@ba.key>Giam Cầm</> lên mục tiêu đó. Khi <@ba.key>Giam Cầm</> kết thúc, các <@ba.key>Ảnh Chiến Thuật</> sẽ tấn công mục tiêu đó để gây ST Nổ.\n<@ba.key>Giam Cầm</>: Debuff làm chậm mọi hành động.\n<@ba.key>Trận Huyền Thuật: Ý CHÍ</>:\n- Áp dụng <@ba.key>Giam Cầm</> bằng cách thi triển KN liên hoàn cũng sẽ <@ba.key>kéo nhẹ</> các kẻ địch ở gần mục tiêu vào trong.\n- Thuộc tính Ý Chí có thể tăng thêm hiệu quả của <#ba.naturalvul>Yếu Hóa Tự Nhiên</> và <#ba.crystvul>Yếu Hóa Băng</> do KN liên hoàn áp dụng."
+                }
+            },
             "Type": 2,
             "Cooldown": 20,
             "CostType": "UltimateSp",
@@ -532,13 +548,10 @@
         },
         "chr_0032_lizhiyan_NormalAttack": {
             "Icon": "skillicon/icon_attack_funnel",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "Pháo Kích Trấn Áp",
             "Desc": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.natur>ST Tự Nhiên</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>17</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.natur>ST Tự Nhiên</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.natur>ST Tự Nhiên</> và hồi một phần Điểm KN.",
+            "ConditionData": {},
             "Type": 0,
             "Cooldown": 0,
             "CostType": "UltimateSp",
@@ -674,13 +687,21 @@
         },
         "chr_0032_lizhiyan_NormalSkill": {
             "Icon": "skillicon/icon_skill_lizhiyan_01",
-            "IconConditions": {
-                "lizhiyan_wisd": "icon_skill_lizhiyan_01",
-                "lizhiyan_will": "icon_skill_lizhiyan_02"
-            },
             "Element": "Natural",
             "Name": "Trận Nghiền Ngọc",
             "Desc": "Tạo một <@ba.key>Trận Nghiền Ngọc</> gây <@ba.natur>ST Tự Nhiên</> và áp dụng <#ba.naturalinflict>Nhiễm Tự Nhiên</> lên kẻ địch trong phạm vi hiệu ứng.",
+            "ConditionData": {
+                "lizhiyan_wisd": {
+                    "Icon": "icon_skill_lizhiyan_01",
+                    "Name": "Trận Huyền Thuật: TRÍ TUỆ",
+                    "PostDesc": "<@ba.key>Trận Huyền Thuật: TRÍ TUỆ</>:\n- Gây thêm ST."
+                },
+                "lizhiyan_will": {
+                    "Icon": "icon_skill_lizhiyan_02",
+                    "Name": "Trận Huyền Thuật: Ý CHÍ",
+                    "PostDesc": "<@ba.key>Trận Huyền Thuật: Ý CHÍ</>:\n- Gây nhiều ST hơn, đồng thời trận huyền thuật còn <@ba.key>kéo</> các kẻ địch vào trong khu vực ảnh hưởng."
+                }
+            },
             "Type": 1,
             "Cooldown": 0,
             "CostType": "Atb",
