@@ -1,0 +1,852 @@
+{
+    "StrId": "chr_0032_lizhiyan",
+    "Name": "Arkan",
+    "Rarity": 6,
+    "Element": "Natural",
+    "Profession": "CASTER",
+    "Conditions": {
+        "0": "lizhiyan_wisd",
+        "1": "lizhiyan_will"
+    },
+    "WeaponType": "Wand",
+    "MainAttrId": 41,
+    "SubAttrId": 42,
+    "AttributeNodes": {
+        "chr_0032_lizhiyan_5": {
+            "41": 10,
+            "42": 10
+        },
+        "chr_0032_lizhiyan_3": {
+            "41": 10,
+            "42": 10
+        },
+        "chr_0032_lizhiyan_1": {
+            "41": 8,
+            "42": 8
+        },
+        "chr_0032_lizhiyan_7": {
+            "41": 15,
+            "42": 15
+        }
+    },
+    "SkillInfoMap": {
+        "chr_0032_lizhiyan_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_lizhiyan_01",
+            "IconConditions": {
+                "lizhiyan_wisd": "icon_ultimate_skill_lizhiyan_01",
+                "lizhiyan_will": "icon_ultimate_skill_lizhiyan_02"
+            },
+            "Element": "Natural",
+            "Name": "Finsternisvertreiber",
+            "Desc": "Arkan erzeugt eine <@ba.key>Finsternisvertreiber-Säulenreihe</>, die Gegnern im Wirkungsbereich sofort <@ba.natur>Natur-SDN</> zufügt.\nErleidet ein Gegner innerhalb der <@ba.key>Finsternisvertreiber-Säulenreihe</> einen Wuchtschlag oder einen <#ba.lastcombo>Abschlussangriff</> durch den gesteuerten Operator, entfesselt die <@ba.key>Finsternisvertreiber-Säulenreihe</> einen <@ba.key>Gewittersturm</>, der ebenjenem Gegner Flächen-SDN zufügt. Dieser Effekt kann bis zu zweimal ausgelöst werden.\nWurde <@ba.key>Gewittersturm</> zweimal ausgelöst, wechselt die Ultimative Fertigkeit zu <@ba.key>Finsternisvertreiber-Arkana</>.\n<@ba.key>Finsternisvertreiber-Arkana</>: Fügt Gegnern innerhalb eines großen Wirkungsbereichs <@ba.natur>Natur-SDN</> zu.",
+            "Type": 3,
+            "Cooldown": 10,
+            "CostType": "UltimateSp",
+            "CostValue": 100,
+            "Params": [
+                {
+                    "Text": "Ultimative Energiekosten",
+                    "ConditionId": "",
+                    "Values": [
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100
+                    ]
+                },
+                {
+                    "Text": "Abklingzeit",
+                    "ConditionId": "",
+                    "Values": [
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek."
+                    ]
+                },
+                {
+                    "Text": "Finsternisvertreiber-Säulenreihenerrichtung-SDN-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                },
+                {
+                    "Text": "Finsternisvertreiber-Säulenreihenerrichtung-Taumeln",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Dauer von Finsternisvertreiber-Säulenreihe (Sek.)",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Dauer von Erzwungene Korrosion (Sek.)",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                },
+                {
+                    "Text": "Gewittersturm-SDN-Multiplikator (Gesamt)",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "160%",
+                        "176%",
+                        "192%",
+                        "208%",
+                        "224%",
+                        "240%",
+                        "256%",
+                        "272%",
+                        "288%",
+                        "308%",
+                        "332%",
+                        "360%"
+                    ]
+                },
+                {
+                    "Text": "Gewittersturm-SDN-Multiplikator (Gesamt)",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "160%",
+                        "176%",
+                        "192%",
+                        "208%",
+                        "224%",
+                        "240%",
+                        "256%",
+                        "272%",
+                        "288%",
+                        "308%",
+                        "332%",
+                        "360%"
+                    ]
+                },
+                {
+                    "Text": "Finsternisvertreiber-Arkana-SDN-Multiplikator",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "640%",
+                        "704%",
+                        "768%",
+                        "832%",
+                        "896%",
+                        "960%",
+                        "1024%",
+                        "1088%",
+                        "1152%",
+                        "1232%",
+                        "1328%",
+                        "1440%"
+                    ]
+                },
+                {
+                    "Text": "Finsternisvertreiber-Arkana-SDN-Multiplikator",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "160%",
+                        "176%",
+                        "192%",
+                        "208%",
+                        "224%",
+                        "240%",
+                        "256%",
+                        "272%",
+                        "288%",
+                        "308%",
+                        "332%",
+                        "360%"
+                    ]
+                },
+                {
+                    "Text": "Finsternisvertreiber-Arkana-Taumeln",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0032_lizhiyan_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_lizhiyan_01",
+            "IconConditions": {
+                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
+                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
+            },
+            "Element": "Natural",
+            "Name": "Yinglung-Haltung IV",
+            "Desc": "0",
+            "Type": 2,
+            "Cooldown": 20,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Abklingzeit",
+                    "ConditionId": "",
+                    "Values": [
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek."
+                    ]
+                },
+                {
+                    "Text": "Standard-SDN-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "35%",
+                        "39%",
+                        "42%",
+                        "46%",
+                        "50%",
+                        "53%",
+                        "57%",
+                        "60%",
+                        "64%",
+                        "68%",
+                        "73%",
+                        "80%"
+                    ]
+                },
+                {
+                    "Text": "Standard-Taumeln",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "Dauer von Gefangenschaft und Empfänglichkeit (Sek.)",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4"
+                    ]
+                },
+                {
+                    "Text": "Dauer von Gefangenschaft und Empfänglichkeit (Sek.)",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6"
+                    ]
+                },
+                {
+                    "Text": "Empfänglichkeit",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%"
+                    ]
+                },
+                {
+                    "Text": "Standard-Empfänglichkeit",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%"
+                    ]
+                },
+                {
+                    "Text": "Max. Bonus-Empfänglichkeit durch Wille",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7.5%",
+                        "7.5%",
+                        "7.5%",
+                        "8%"
+                    ]
+                },
+                {
+                    "Text": "Der für eine max. Bonus-Empfänglichkeit erforderliche Wille",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "560",
+                        "560",
+                        "560",
+                        "560",
+                        "560",
+                        "560",
+                        "560",
+                        "560",
+                        "600",
+                        "600",
+                        "600",
+                        "640"
+                    ]
+                },
+                {
+                    "Text": "Explosions-SDN-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "53%",
+                        "59%",
+                        "64%",
+                        "69%",
+                        "75%",
+                        "80%",
+                        "85%",
+                        "91%",
+                        "96%",
+                        "103%",
+                        "111%",
+                        "120%"
+                    ]
+                },
+                {
+                    "Text": "Explosions-Taumeln",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "Bonus-SDN-Multiplikator",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "222%",
+                        "244%",
+                        "266%",
+                        "289%",
+                        "311%",
+                        "333%",
+                        "355%",
+                        "377%",
+                        "400%",
+                        "427%",
+                        "461%",
+                        "500%"
+                    ]
+                },
+                {
+                    "Text": "Dauer der Bonus-Empfänglichkeit (Sek.)",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2"
+                    ]
+                },
+                {
+                    "Text": "FP-Rückerstattung",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "30",
+                        "30",
+                        "30"
+                    ]
+                },
+                {
+                    "Text": "Ultimative-Energie-Erhalt",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0032_lizhiyan_NormalAttack": {
+            "Icon": "skillicon/icon_attack_funnel",
+            "IconConditions": {
+                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
+                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
+            },
+            "Element": "Natural",
+            "Name": "Abriegelungsartillerie",
+            "Desc": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.natur>Natur-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>17</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.natur>Natur-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.natur>Natur-SDN</> zufügen und ein wenig FP wiederherstellen.",
+            "Type": 0,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "STD-ANG-SEQ-1-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "19%",
+                        "21%",
+                        "22%",
+                        "24%",
+                        "26%",
+                        "28%",
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "39%",
+                        "42%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-2-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "21%",
+                        "23%",
+                        "26%",
+                        "28%",
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "41%",
+                        "44%",
+                        "48%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-3-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "33%",
+                        "37%",
+                        "40%",
+                        "43%",
+                        "47%",
+                        "50%",
+                        "53%",
+                        "57%",
+                        "60%",
+                        "64%",
+                        "69%",
+                        "75%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-4-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "36%",
+                        "39%",
+                        "43%",
+                        "46%",
+                        "50%",
+                        "53%",
+                        "57%",
+                        "61%",
+                        "64%",
+                        "69%",
+                        "74%",
+                        "80%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-5-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "47%",
+                        "52%",
+                        "56%",
+                        "61%",
+                        "66%",
+                        "71%",
+                        "75%",
+                        "80%",
+                        "85%",
+                        "90%",
+                        "98%",
+                        "106%"
+                    ]
+                },
+                {
+                    "Text": "Wuchtschlag-ANG-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Sturz-ANG-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "chr_0032_lizhiyan_NormalSkill": {
+            "Icon": "skillicon/icon_skill_lizhiyan_01",
+            "IconConditions": {
+                "lizhiyan_wisd": "icon_skill_lizhiyan_01",
+                "lizhiyan_will": "icon_skill_lizhiyan_02"
+            },
+            "Element": "Natural",
+            "Name": "Jadebrecher-Netz",
+            "Desc": "Erzeugt ein <@ba.key>Jadebrecher-Netz</>, das Gegnern im Wirkungsbereich mit <@ba.natur>Natur-SDN</> zufügt und sie mit <#ba.naturalinflict>Natur</> belegt.",
+            "Type": 1,
+            "Cooldown": 0,
+            "CostType": "Atb",
+            "CostValue": 100,
+            "Params": [
+                {
+                    "Text": "FP-Kosten",
+                    "ConditionId": "",
+                    "Values": [
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100
+                    ]
+                },
+                {
+                    "Text": "SDN-Multiplikator",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "222%",
+                        "245%",
+                        "267%",
+                        "289%",
+                        "311%",
+                        "333%",
+                        "356%",
+                        "378%",
+                        "400%",
+                        "428%",
+                        "461%",
+                        "500%"
+                    ]
+                },
+                {
+                    "Text": "SDN-Multiplikator",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "133%",
+                        "147%",
+                        "160%",
+                        "173%",
+                        "187%",
+                        "200%",
+                        "213%",
+                        "227%",
+                        "240%",
+                        "257%",
+                        "277%",
+                        "300%"
+                    ]
+                },
+                {
+                    "Text": "Taumeln",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0032_lizhiyan_passive_skill_1_2": {
+            "Icon": "icon_talent_lizhiyan_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Waffentraining",
+            "Desc": "Von Arkan gewirkte <#ba.corrupt>Korrosion</> dauert <@ba.vup>10</> Sek. länger an. Die max. Resistenzverringerung wird auf das <@ba.vup>1.1</>-Fache des Ursprungswerts erhöht.",
+            "Type": 4
+        },
+        "fac_chr_0032_lizhiyan_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_flower",
+            "Name": "Botanikexperte γ",
+            "Desc": "Wachstumskammer zuweisen, um Wachstumsrate von In-vitro-Pflanzen um +30 % zu erhöhen.",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        },
+        "chr_0032_lizhiyan_passive_skill_1_1": {
+            "Icon": "icon_talent_lizhiyan_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Waffentraining",
+            "Desc": "Von Arkan gewirkte <#ba.corrupt>Korrosion</> dauert <@ba.vup>5</> Sek. länger an. Die max. Resistenzverringerung wird auf das <@ba.vup>1.05</>-Fache des Ursprungswerts erhöht.",
+            "Type": 4
+        },
+        "fac_chr_0032_lizhiyan_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_mineral",
+            "Name": "Pflück’ den Berg und koch’ das Meer γ",
+            "Desc": "Wachstumskammer zuweisen, um Wachstumsrate von seltenen Mineralien um +30 % zu erhöhen.",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0032_lizhiyan_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_mineral",
+            "Name": "Pflück’ den Berg und koch’ das Meer β",
+            "Desc": "Wachstumskammer zuweisen, um Wachstumsrate von seltenen Mineralien um +20 % zu erhöhen.",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0032_lizhiyan_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_flower",
+            "Name": "Botanikexperte β",
+            "Desc": "Wachstumskammer zuweisen, um Wachstumsrate von In-vitro-Pflanzen um +20 % zu erhöhen.",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "chr_0032_lizhiyan_passive_skill_0_2": {
+            "Icon": "icon_talent_lizhiyan_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Taktische Planung",
+            "Desc": "Falls Arkans Intellekt mindestens so hoch ist wie ihr Wille, wechselt die Fertigkeitsart zu <@ba.key>Säulenreihen-Arkana: INT</>. Falls nicht, wird zu <@ba.key>Säulenreihen-Arkana: WILLE</> gewechselt.\nUltimative Fertigkeit <@ba.key>Finsternisvertreiber</> verbessert:\n<@ba.key>Säulenreihen-Arkana: INT</>:\n– Während der Ultimativen Fertigkeit erhält Arkan <@ba.vup>24%</> <#ba.spellenhance>Technik-Verstärkung</>.\n<@ba.key>Säulenreihen-Arkana: WILLE</>:\n– Wenn <@ba.key>Finsternisvertreiber-Säulenreihe</> (ultimative Sequenz 1) und <@ba.key>Finsternisvertreiber-Arkana</> (ultimative Sequenz 2) dem Gegner SDN zufügen, gewähren sie außerdem <@ba.vup>10</> Sek. lang <@ba.vup>[Wille × 0.02%]</> <#ba.naturalvul>Natur-Empfänglichkeit</> und <#ba.crystvul>Kryo-Empfänglichkeit</> (max: <@ba.vup>12.8%</>). Dieser Effekt kann nicht kumuliert werden.\n<@ba.info>Die Attributsanforderungen für die beiden Säulenreihen-Arkana umfassen nur Effekte von Operator-Leveln, Talenten, Potenzialen und Attribut-Boni, die von Ausrüstung und Waffen verliehen werden.</>",
+            "Type": 4
+        },
+        "chr_0032_lizhiyan_passive_skill_0_1": {
+            "Icon": "icon_talent_lizhiyan_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Taktische Planung",
+            "Desc": "Falls Arkans Intellekt mindestens so hoch ist wie ihr Wille, wechselt die Fertigkeitsart zu <@ba.key>Säulenreihen-Arkana: INT</>. Falls nicht, wird zu <@ba.key>Säulenreihen-Arkana: WILLE</> gewechselt.\n<@ba.info>Die Attributsanforderungen für die beiden Säulenreihen-Arkana umfassen nur Effekte von Operator-Leveln, Talenten, Potenzialen und Attribut-Boni, die von Ausrüstung und Waffen verliehen werden.</>",
+            "Type": 4
+        }
+    },
+    "Potentials": {
+        "1": {
+            "Name": "Beobachter des Meeres",
+            "Desc": "Kombofertigkeit <@ba.key>Yinglung-Haltung IV</> verbessert:\nDer SDN-Multiplikator wurde auf das <@ba.vup>1.3</>-Fache des Ursprungswertes erhöht.\n<@ba.key>Säulenreihen-Arkana: INT</>: Das Treffen eines von <@ba.key>Gefangenschaft</> betroffenen Gegners mit Arkans Kampffertigkeit <#ba.return>stellt</> <@ba.vup>10</> zusätzliche FP <#ba.return>wieder her</>.\n<@ba.key>Säulenreihen-Arkana: WILLE</>: Effekte von gewirkter <#ba.naturalvul>Natur-Empfänglichkeit</> und <#ba.crystvul>Kryo-Empfänglichkeit</> <@ba.vup>+6%</>."
+        },
+        "2": {
+            "Name": "Herz des eiskalten Ferrium",
+            "Desc": "Intellekt und Wille <@ba.vup>+15</>, Technik-Intensität <@ba.vup>+16</>."
+        },
+        "3": {
+            "Name": "Anwender des Steins",
+            "Desc": "Talent <@ba.key>Waffentraining</> verbessert:Von Arkan gewirkte \n<#ba.corrupt>Korrosion</> dauert <@ba.vup>5</> Sek. länger an. Die max. Resistenzverringerung wird auf das <@ba.vup>20%</>-Fache des Ursprungswerts erhöht."
+        },
+        "4": {
+            "Name": "Ein Geist aus gehärtetem Stahl",
+            "Desc": "Ultimative Fertigkeit <@ba.key>Finsternisvertreiber</> verbessert: Ultimative Energiekosten <@ba.vup>-15%</>."
+        },
+        "5": {
+            "Name": "Blick nach Hause",
+            "Desc": "Ultimative Fertigkeit <@ba.key>Finsternisvertreiber</> verbessert:\n<@ba.key>Säulenreihen-Arkana: INT</>: Während die Ultimative Fertigkeit gewirkt wird, erhält Arkan <@ba.vup>16%</> <#ba.spellenhance>Technik-Verstärkung</>. Der SDN-Multiplikator von <@ba.key>Finsternisvertreiber-Arkana</> (ultimative Sequenz 2) wurde auf das <@ba.vup>1.3</>-Fache des Ursprungswertes erhöht.\n<@ba.key>Säulenreihen-Arkana: WILLE</>: Die Effekte der durch <@ba.key>Finsternisvertreiber-Säulenreihe</> (ultimative Sequenz 1) und <@ba.key>Finsternisvertreiber-Arkana</> (ultimative Sequenz 2) gewirkten <#ba.naturalvul>Natur-Empfänglichkeit</> und <#ba.crystvul>Kryo-Empfänglichkeit</> erhöhen sich außerdem um <@ba.vup>+7%</>. Nachdem <@ba.key>Finsternisvertreiber-Arkana</> (ultimative Sequenz 2) gewirkt wurde, verringert sich die Abklingzeit der Kombofertigkeit <@ba.key>Yinglung-Haltung IV</> sofort um <@ba.vup>30%</>, wenn sie sich noch in der Abklingzeit befindet."
+        }
+    }
+}

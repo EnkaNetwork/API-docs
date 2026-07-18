@@ -1,0 +1,852 @@
+{
+    "StrId": "chr_0032_lizhiyan",
+    "Name": "诀",
+    "Rarity": 6,
+    "Element": "Natural",
+    "Profession": "CASTER",
+    "Conditions": {
+        "0": "lizhiyan_wisd",
+        "1": "lizhiyan_will"
+    },
+    "WeaponType": "Wand",
+    "MainAttrId": 41,
+    "SubAttrId": 42,
+    "AttributeNodes": {
+        "chr_0032_lizhiyan_5": {
+            "41": 10,
+            "42": 10
+        },
+        "chr_0032_lizhiyan_3": {
+            "41": 10,
+            "42": 10
+        },
+        "chr_0032_lizhiyan_1": {
+            "41": 8,
+            "42": 8
+        },
+        "chr_0032_lizhiyan_7": {
+            "41": 15,
+            "42": 15
+        }
+    },
+    "SkillInfoMap": {
+        "chr_0032_lizhiyan_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_lizhiyan_01",
+            "IconConditions": {
+                "lizhiyan_wisd": "icon_ultimate_skill_lizhiyan_01",
+                "lizhiyan_will": "icon_ultimate_skill_lizhiyan_02"
+            },
+            "Element": "Natural",
+            "Name": "破晦",
+            "Desc": "生成<@ba.key>破晦阵</>，对区域内的敌人立即造成<@ba.natur>自然伤害</>。\n处于<@ba.key>破晦阵</>中的敌人被处决或受到主控干员<#ba.lastcombo>重击</>时，<@ba.key>破晦阵</>将对其发动<@ba.key>集束打击</>，造成范围伤害，最多发动2次。\n当发动2次<@ba.key>集束打击</>后，终结技切换为<@ba.key>破晦诀明</>。\n<@ba.key>破晦诀明</>：对前方大范围内敌人造成<@ba.natur>自然伤害</>。",
+            "Type": 3,
+            "Cooldown": 10,
+            "CostType": "UltimateSp",
+            "CostValue": 100,
+            "Params": [
+                {
+                    "Text": "所需终结技能量",
+                    "ConditionId": "",
+                    "Values": [
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100
+                    ]
+                },
+                {
+                    "Text": "冷却时间",
+                    "ConditionId": "",
+                    "Values": [
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒"
+                    ]
+                },
+                {
+                    "Text": "生成破晦阵伤害倍率",
+                    "ConditionId": "",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                },
+                {
+                    "Text": "生成破晦阵失衡值",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "破晦阵持续时间（秒）",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "强制腐蚀持续时间（秒）",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                },
+                {
+                    "Text": "集束打击总伤害倍率",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "160%",
+                        "176%",
+                        "192%",
+                        "208%",
+                        "224%",
+                        "240%",
+                        "256%",
+                        "272%",
+                        "288%",
+                        "308%",
+                        "332%",
+                        "360%"
+                    ]
+                },
+                {
+                    "Text": "集束打击总伤害倍率",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "160%",
+                        "176%",
+                        "192%",
+                        "208%",
+                        "224%",
+                        "240%",
+                        "256%",
+                        "272%",
+                        "288%",
+                        "308%",
+                        "332%",
+                        "360%"
+                    ]
+                },
+                {
+                    "Text": "破晦诀明伤害倍率",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "640%",
+                        "704%",
+                        "768%",
+                        "832%",
+                        "896%",
+                        "960%",
+                        "1024%",
+                        "1088%",
+                        "1152%",
+                        "1232%",
+                        "1328%",
+                        "1440%"
+                    ]
+                },
+                {
+                    "Text": "破晦诀明伤害倍率",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "160%",
+                        "176%",
+                        "192%",
+                        "208%",
+                        "224%",
+                        "240%",
+                        "256%",
+                        "272%",
+                        "288%",
+                        "308%",
+                        "332%",
+                        "360%"
+                    ]
+                },
+                {
+                    "Text": "破晦诀明失衡值",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0032_lizhiyan_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_lizhiyan_01",
+            "IconConditions": {
+                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
+                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
+            },
+            "Element": "Natural",
+            "Name": "应龙四式",
+            "Desc": "0",
+            "Type": 2,
+            "Cooldown": 20,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "冷却时间",
+                    "ConditionId": "",
+                    "Values": [
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒"
+                    ]
+                },
+                {
+                    "Text": "基础伤害倍率",
+                    "ConditionId": "",
+                    "Values": [
+                        "35%",
+                        "39%",
+                        "42%",
+                        "46%",
+                        "50%",
+                        "53%",
+                        "57%",
+                        "60%",
+                        "64%",
+                        "68%",
+                        "73%",
+                        "80%"
+                    ]
+                },
+                {
+                    "Text": "基础失衡值",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "囹圄及脆弱持续时间（秒）",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4"
+                    ]
+                },
+                {
+                    "Text": "囹圄及脆弱持续时间（秒）",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6"
+                    ]
+                },
+                {
+                    "Text": "脆弱效果",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%"
+                    ]
+                },
+                {
+                    "Text": "基础脆弱效果",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%"
+                    ]
+                },
+                {
+                    "Text": "意志提供最大额外脆弱效果",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7.5%",
+                        "7.5%",
+                        "7.5%",
+                        "8%"
+                    ]
+                },
+                {
+                    "Text": "最大额外脆弱效果所需意志值",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "560",
+                        "560",
+                        "560",
+                        "560",
+                        "560",
+                        "560",
+                        "560",
+                        "560",
+                        "600",
+                        "600",
+                        "600",
+                        "640"
+                    ]
+                },
+                {
+                    "Text": "爆炸伤害倍率",
+                    "ConditionId": "",
+                    "Values": [
+                        "53%",
+                        "59%",
+                        "64%",
+                        "69%",
+                        "75%",
+                        "80%",
+                        "85%",
+                        "91%",
+                        "96%",
+                        "103%",
+                        "111%",
+                        "120%"
+                    ]
+                },
+                {
+                    "Text": "爆炸失衡值",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "额外伤害倍率",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "222%",
+                        "244%",
+                        "266%",
+                        "289%",
+                        "311%",
+                        "333%",
+                        "355%",
+                        "377%",
+                        "400%",
+                        "427%",
+                        "461%",
+                        "500%"
+                    ]
+                },
+                {
+                    "Text": "额外脆弱持续时间（秒）",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2"
+                    ]
+                },
+                {
+                    "Text": "技力返还",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "30",
+                        "30",
+                        "30"
+                    ]
+                },
+                {
+                    "Text": "获得终结技能量",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0032_lizhiyan_NormalAttack": {
+            "Icon": "skillicon/icon_attack_funnel",
+            "IconConditions": {
+                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
+                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
+            },
+            "Element": "Natural",
+            "Name": "重火力截击",
+            "Desc": "普通攻击：\n对敌人进行至多5段攻击，造成<@ba.natur>自然伤害</>。作为主控干员时，<#ba.lastcombo>重击</>会造成<@ba.poise>17</>点失衡。\n\n下落攻击：\n处于空中时使用普通攻击，会下落并攻击附近敌人，造成<@ba.natur>自然伤害</>。\n\n处决攻击：\n附近有敌人处于失衡状态时使用普通攻击，将处决该敌人，造成大量<@ba.natur>自然伤害</>并恢复一定技力。",
+            "Type": 0,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "普攻第一段倍率",
+                    "ConditionId": "",
+                    "Values": [
+                        "19%",
+                        "21%",
+                        "22%",
+                        "24%",
+                        "26%",
+                        "28%",
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "39%",
+                        "42%"
+                    ]
+                },
+                {
+                    "Text": "普攻第二段倍率",
+                    "ConditionId": "",
+                    "Values": [
+                        "21%",
+                        "23%",
+                        "26%",
+                        "28%",
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "41%",
+                        "44%",
+                        "48%"
+                    ]
+                },
+                {
+                    "Text": "普攻第三段倍率",
+                    "ConditionId": "",
+                    "Values": [
+                        "33%",
+                        "37%",
+                        "40%",
+                        "43%",
+                        "47%",
+                        "50%",
+                        "53%",
+                        "57%",
+                        "60%",
+                        "64%",
+                        "69%",
+                        "75%"
+                    ]
+                },
+                {
+                    "Text": "普攻第四段倍率",
+                    "ConditionId": "",
+                    "Values": [
+                        "36%",
+                        "39%",
+                        "43%",
+                        "46%",
+                        "50%",
+                        "53%",
+                        "57%",
+                        "61%",
+                        "64%",
+                        "69%",
+                        "74%",
+                        "80%"
+                    ]
+                },
+                {
+                    "Text": "普攻第五段倍率",
+                    "ConditionId": "",
+                    "Values": [
+                        "47%",
+                        "52%",
+                        "56%",
+                        "61%",
+                        "66%",
+                        "71%",
+                        "75%",
+                        "80%",
+                        "85%",
+                        "90%",
+                        "98%",
+                        "106%"
+                    ]
+                },
+                {
+                    "Text": "处决攻击倍率",
+                    "ConditionId": "",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "下落攻击倍率",
+                    "ConditionId": "",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "chr_0032_lizhiyan_NormalSkill": {
+            "Icon": "skillicon/icon_skill_lizhiyan_01",
+            "IconConditions": {
+                "lizhiyan_wisd": "icon_skill_lizhiyan_01",
+                "lizhiyan_will": "icon_skill_lizhiyan_02"
+            },
+            "Element": "Natural",
+            "Name": "摧玉网格",
+            "Desc": "在目标脚下创建<@ba.key>摧玉网格</>，对范围内敌人造成<@ba.natur>自然伤害</>并施加<#ba.naturalinflict>自然附着</>。",
+            "Type": 1,
+            "Cooldown": 0,
+            "CostType": "Atb",
+            "CostValue": 100,
+            "Params": [
+                {
+                    "Text": "技力消耗",
+                    "ConditionId": "",
+                    "Values": [
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100
+                    ]
+                },
+                {
+                    "Text": "伤害倍率",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "222%",
+                        "245%",
+                        "267%",
+                        "289%",
+                        "311%",
+                        "333%",
+                        "356%",
+                        "378%",
+                        "400%",
+                        "428%",
+                        "461%",
+                        "500%"
+                    ]
+                },
+                {
+                    "Text": "伤害倍率",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "133%",
+                        "147%",
+                        "160%",
+                        "173%",
+                        "187%",
+                        "200%",
+                        "213%",
+                        "227%",
+                        "240%",
+                        "257%",
+                        "277%",
+                        "300%"
+                    ]
+                },
+                {
+                    "Text": "失衡值",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0032_lizhiyan_passive_skill_1_2": {
+            "Icon": "icon_talent_lizhiyan_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "厉兵",
+            "Desc": "自身施加的<#ba.corrupt>腐蚀</>效果持续时间<@ba.vup>+10</>秒，且降低的最大抗性提升至原本的<@ba.vup>1.1</>倍。",
+            "Type": 4
+        },
+        "fac_chr_0032_lizhiyan_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_flower",
+            "Name": "多识草木·γ",
+            "Desc": "进驻培养舱时，晶植质料的培养速度提升30%",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        },
+        "chr_0032_lizhiyan_passive_skill_1_1": {
+            "Icon": "icon_talent_lizhiyan_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "厉兵",
+            "Desc": "自身施加的<#ba.corrupt>腐蚀</>效果持续时间<@ba.vup>+5</>秒，且降低的最大抗性提升至原本的<@ba.vup>1.05</>倍。",
+            "Type": 4
+        },
+        "fac_chr_0032_lizhiyan_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_mineral",
+            "Name": "摘山煮海·γ",
+            "Desc": "进驻培养舱时，矿物质料的培养速度提升30%",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0032_lizhiyan_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_mineral",
+            "Name": "摘山煮海·β",
+            "Desc": "进驻培养舱时，矿物质料的培养速度提升20%",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0032_lizhiyan_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_flower",
+            "Name": "多识草木·β",
+            "Desc": "进驻培养舱时，晶植质料的培养速度提升20%",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "chr_0032_lizhiyan_passive_skill_0_2": {
+            "Icon": "icon_talent_lizhiyan_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "筹谋",
+            "Desc": "当自身智识值≥意志值时，技能形态切换为<@ba.key>阵诀·智</>，反之技能形态切换为<@ba.key>阵诀·意</>。\n终结技<@ba.key>破晦</>效果加强：\n<@ba.key>阵诀·智</>：\n- 终结技期间，自身获得<@ba.vup>24%</><#ba.spellenhance>法术增幅</>。\n<@ba.key>阵诀·意</>：\n- 终结技一段<@ba.key>破晦阵</>和二段<@ba.key>破晦诀明</>对敌人造成伤害时，会施加<@ba.vup>[意志×0.02%]</><#ba.naturalvul>自然脆弱</>和<#ba.crystvul>寒冷脆弱</>（最多<@ba.vup>12.8%</>），持续<@ba.vup>10</>秒，该效果无法叠加。\n<@ba.info>两种阵诀的能力值要求只受干员等级提升、天赋、潜能、装备和武器提供的面板能力值影响。</>",
+            "Type": 4
+        },
+        "chr_0032_lizhiyan_passive_skill_0_1": {
+            "Icon": "icon_talent_lizhiyan_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "筹谋",
+            "Desc": "当自身智识值≥意志值时，技能形态切换为<@ba.key>阵诀·智</>，反之技能形态切换为<@ba.key>阵诀·意</>。\n<@ba.info>两种阵诀的能力值要求只受干员等级提升、天赋、潜能、装备和武器提供的面板能力值影响。</>",
+            "Type": 4
+        }
+    },
+    "Potentials": {
+        "1": {
+            "Name": "观海",
+            "Desc": "连携技<@ba.key>应龙四式</>效果加强：\n伤害倍率提升至原本的<@ba.vup>1.3</>倍。\n<@ba.key>阵诀·智</>：当自身战技命中处于<@ba.key>囹圄</>状态的敌人时，额外<#ba.return>返还</><@ba.vup>10</>点技力。\n<@ba.key>阵诀·意</>：施加的<#ba.naturalvul>自然脆弱</>和<#ba.crystvul>寒冷脆弱</>效果额外<@ba.vup>+6%</>。"
+        },
+        "2": {
+            "Name": "心如寒铁",
+            "Desc": "智识和意志<@ba.vup>+15</>，源石技艺强度<@ba.vup>+16</>。"
+        },
+        "3": {
+            "Name": "衔石",
+            "Desc": "天赋<@ba.key>厉兵</>效果加强：\n自身施加的<#ba.corrupt>腐蚀</>效果持续时间额外<@ba.vup>+5</>秒，且降低的最大抗性额外提升原本的<@ba.vup>20%</>。"
+        },
+        "4": {
+            "Name": "念如精钢",
+            "Desc": "终结技<@ba.key>破晦</>所需的终结技能量<@ba.vup>-15%</>。"
+        },
+        "5": {
+            "Name": "回眸",
+            "Desc": "终结技<@ba.key>破晦</>效果加强：\n<@ba.key>阵诀·智</>：终结技期间额外获得<@ba.vup>16%</><#ba.spellenhance>法术增幅</>，终结技二段<@ba.key>破晦诀明</>的伤害倍率提升至原本的<@ba.vup>1.3</>倍。\n<@ba.key>阵诀·意</>：终结技一段<@ba.key>破晦阵</>和二段<@ba.key>破晦诀明</>施加的<#ba.naturalvul>自然脆弱</>和<#ba.crystvul>寒冷脆弱</>效果额外<@ba.vup>+7%</>，施放终结技二段<@ba.key>破晦诀明</>后，若连携技<@ba.key>应龙四式</>处于冷却中，立即恢复<@ba.vup>30%</>冷却时间。"
+        }
+    }
+}

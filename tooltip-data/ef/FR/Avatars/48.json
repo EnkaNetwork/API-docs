@@ -1,0 +1,852 @@
+{
+    "StrId": "chr_0032_lizhiyan",
+    "Name": "Arcane",
+    "Rarity": 6,
+    "Element": "Natural",
+    "Profession": "CASTER",
+    "Conditions": {
+        "0": "lizhiyan_wisd",
+        "1": "lizhiyan_will"
+    },
+    "WeaponType": "Wand",
+    "MainAttrId": 41,
+    "SubAttrId": 42,
+    "AttributeNodes": {
+        "chr_0032_lizhiyan_5": {
+            "41": 10,
+            "42": 10
+        },
+        "chr_0032_lizhiyan_3": {
+            "41": 10,
+            "42": 10
+        },
+        "chr_0032_lizhiyan_1": {
+            "41": 8,
+            "42": 8
+        },
+        "chr_0032_lizhiyan_7": {
+            "41": 15,
+            "42": 15
+        }
+    },
+    "SkillInfoMap": {
+        "chr_0032_lizhiyan_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_lizhiyan_01",
+            "IconConditions": {
+                "lizhiyan_wisd": "icon_ultimate_skill_lizhiyan_01",
+                "lizhiyan_will": "icon_ultimate_skill_lizhiyan_02"
+            },
+            "Element": "Natural",
+            "Name": "Purification",
+            "Desc": "Arcane crée une <@ba.key>Matrice purificatrice</> qui inflige immédiatement des <@ba.natur>DÉG naturels</> aux ennemis dans la zone d'effet.\nLorsque l'opérateur contrôlé inflige un coup fatal ou un <#ba.lastcombo>Coup final</> à un ennemi situé dans la <@ba.key>Matrice purificatrice</>, celle-ci déclenche une <@ba.key>Frappe d'amas</> qui inflige des DÉG de zone à cet ennemi. Cet effet peut se déclencher 2 fois.\nAprès avoir déclenché la <@ba.key>Frappe d'amas</> 2 fois, l'ultime évolue en <@ba.key>Arcane purificateur</>.\n<@ba.key>Arcane purificateur</> : inflige des <@ba.natur>DÉG naturels</> aux ennemis dans une large zone d'effet.",
+            "Type": 3,
+            "Cooldown": 10,
+            "CostType": "UltimateSp",
+            "CostValue": 100,
+            "Params": [
+                {
+                    "Text": "Coût en énergie d'ultime",
+                    "ConditionId": "",
+                    "Values": [
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100
+                    ]
+                },
+                {
+                    "Text": "Temps de recharge",
+                    "ConditionId": "",
+                    "Values": [
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur de DÉG de création de Matrice purificatrice",
+                    "ConditionId": "",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                },
+                {
+                    "Text": "Déséquilibre de création de Matrice purificatrice",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Durée de Matrice purificatrice (s)",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Durée de Corrosion forcée (s)",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur de DÉG totaux de Frappe d'amas",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "160%",
+                        "176%",
+                        "192%",
+                        "208%",
+                        "224%",
+                        "240%",
+                        "256%",
+                        "272%",
+                        "288%",
+                        "308%",
+                        "332%",
+                        "360%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur de DÉG totaux de Frappe d'amas",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "160%",
+                        "176%",
+                        "192%",
+                        "208%",
+                        "224%",
+                        "240%",
+                        "256%",
+                        "272%",
+                        "288%",
+                        "308%",
+                        "332%",
+                        "360%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur de DÉG d'Arcane purificateur",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "640%",
+                        "704%",
+                        "768%",
+                        "832%",
+                        "896%",
+                        "960%",
+                        "1024%",
+                        "1088%",
+                        "1152%",
+                        "1232%",
+                        "1328%",
+                        "1440%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur de DÉG d'Arcane purificateur",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "160%",
+                        "176%",
+                        "192%",
+                        "208%",
+                        "224%",
+                        "240%",
+                        "256%",
+                        "272%",
+                        "288%",
+                        "308%",
+                        "332%",
+                        "360%"
+                    ]
+                },
+                {
+                    "Text": "Déséquilibre d'Arcane purificateur",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0032_lizhiyan_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_lizhiyan_01",
+            "IconConditions": {
+                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
+                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
+            },
+            "Element": "Natural",
+            "Name": "Posture de Yinglung IV",
+            "Desc": "0",
+            "Type": 2,
+            "Cooldown": 20,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Temps de recharge",
+                    "ConditionId": "",
+                    "Values": [
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur de DÉG de base",
+                    "ConditionId": "",
+                    "Values": [
+                        "35%",
+                        "39%",
+                        "42%",
+                        "46%",
+                        "50%",
+                        "53%",
+                        "57%",
+                        "60%",
+                        "64%",
+                        "68%",
+                        "73%",
+                        "80%"
+                    ]
+                },
+                {
+                    "Text": "Déséquilibre de base",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "Durée de sensibilité et d'Emprisonnement (s)",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4"
+                    ]
+                },
+                {
+                    "Text": "Durée de sensibilité et d'Emprisonnement (s)",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6"
+                    ]
+                },
+                {
+                    "Text": "Sensibilité",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%"
+                    ]
+                },
+                {
+                    "Text": "Sensibilité de base",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%"
+                    ]
+                },
+                {
+                    "Text": "Bonus max. de sensibilité par Volonté",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7.5%",
+                        "7.5%",
+                        "7.5%",
+                        "8%"
+                    ]
+                },
+                {
+                    "Text": "Volonté requise pour le bonus max. de sensibilité",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "560",
+                        "560",
+                        "560",
+                        "560",
+                        "560",
+                        "560",
+                        "560",
+                        "560",
+                        "600",
+                        "600",
+                        "600",
+                        "640"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur de DÉG d'explosion",
+                    "ConditionId": "",
+                    "Values": [
+                        "53%",
+                        "59%",
+                        "64%",
+                        "69%",
+                        "75%",
+                        "80%",
+                        "85%",
+                        "91%",
+                        "96%",
+                        "103%",
+                        "111%",
+                        "120%"
+                    ]
+                },
+                {
+                    "Text": "Déséquilibre par explosion",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur de DÉG bonus",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "222%",
+                        "244%",
+                        "266%",
+                        "289%",
+                        "311%",
+                        "333%",
+                        "355%",
+                        "377%",
+                        "400%",
+                        "427%",
+                        "461%",
+                        "500%"
+                    ]
+                },
+                {
+                    "Text": "Durée du bonus de sensibilité (s)",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2"
+                    ]
+                },
+                {
+                    "Text": "Restitution de PC",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "30",
+                        "30",
+                        "30"
+                    ]
+                },
+                {
+                    "Text": "Gain d'énergie d'ultime",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0032_lizhiyan_NormalAttack": {
+            "Icon": "skillicon/icon_attack_funnel",
+            "IconConditions": {
+                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
+                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
+            },
+            "Element": "Natural",
+            "Name": "Interdiction de l'artillerie",
+            "Desc": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.natur>DÉG naturels</>. Si vous contrôlez l'opératrice, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>17</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.natur>DÉG naturels</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.natur>DÉG naturels</> et restaure quelques PC.",
+            "Type": 0,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Multiplicateur d'ATQ-B SÉQ 1",
+                    "ConditionId": "",
+                    "Values": [
+                        "19%",
+                        "21%",
+                        "22%",
+                        "24%",
+                        "26%",
+                        "28%",
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "39%",
+                        "42%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur d'ATQ-B SÉQ 2",
+                    "ConditionId": "",
+                    "Values": [
+                        "21%",
+                        "23%",
+                        "26%",
+                        "28%",
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "41%",
+                        "44%",
+                        "48%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur d'ATQ-B SÉQ 3",
+                    "ConditionId": "",
+                    "Values": [
+                        "33%",
+                        "37%",
+                        "40%",
+                        "43%",
+                        "47%",
+                        "50%",
+                        "53%",
+                        "57%",
+                        "60%",
+                        "64%",
+                        "69%",
+                        "75%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur d'ATQ-B SÉQ 4",
+                    "ConditionId": "",
+                    "Values": [
+                        "36%",
+                        "39%",
+                        "43%",
+                        "46%",
+                        "50%",
+                        "53%",
+                        "57%",
+                        "61%",
+                        "64%",
+                        "69%",
+                        "74%",
+                        "80%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur d'ATQ-B SÉQ 5",
+                    "ConditionId": "",
+                    "Values": [
+                        "47%",
+                        "52%",
+                        "56%",
+                        "61%",
+                        "66%",
+                        "71%",
+                        "75%",
+                        "80%",
+                        "85%",
+                        "90%",
+                        "98%",
+                        "106%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur d'ATQ de coup fatal",
+                    "ConditionId": "",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur d'ATQ plongeante",
+                    "ConditionId": "",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "chr_0032_lizhiyan_NormalSkill": {
+            "Icon": "skillicon/icon_skill_lizhiyan_01",
+            "IconConditions": {
+                "lizhiyan_wisd": "icon_skill_lizhiyan_01",
+                "lizhiyan_will": "icon_skill_lizhiyan_02"
+            },
+            "Element": "Natural",
+            "Name": "Grille de broyage de jade",
+            "Desc": "Crée une <@ba.key>grille de broyage de jade</> qui inflige des <@ba.natur>DÉG naturels</> et applique une <#ba.naturalinflict>altération naturelle</> aux ennemis situés dans la zone d'effet.",
+            "Type": 1,
+            "Cooldown": 0,
+            "CostType": "Atb",
+            "CostValue": 100,
+            "Params": [
+                {
+                    "Text": "Coût en PC",
+                    "ConditionId": "",
+                    "Values": [
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur de DÉG",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "222%",
+                        "245%",
+                        "267%",
+                        "289%",
+                        "311%",
+                        "333%",
+                        "356%",
+                        "378%",
+                        "400%",
+                        "428%",
+                        "461%",
+                        "500%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur de DÉG",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "133%",
+                        "147%",
+                        "160%",
+                        "173%",
+                        "187%",
+                        "200%",
+                        "213%",
+                        "227%",
+                        "240%",
+                        "257%",
+                        "277%",
+                        "300%"
+                    ]
+                },
+                {
+                    "Text": "Déséquilibre",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0032_lizhiyan_passive_skill_1_2": {
+            "Icon": "icon_talent_lizhiyan_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Armes affûtées",
+            "Desc": "La <#ba.corrupt>Corrosion</> appliquée par Arcane dure <@ba.vup>10</> s de plus et fait passer la réduction de résistance max. à <@ba.vup>1.1</> fois sa valeur d'origine.",
+            "Type": 4
+        },
+        "fac_chr_0032_lizhiyan_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_flower",
+            "Name": "Botanophilie γ",
+            "Desc": "En l'affectant à la chambre de culture, augmente le taux de croissance des plantes vitrifiées de 30 %.",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        },
+        "chr_0032_lizhiyan_passive_skill_1_1": {
+            "Icon": "icon_talent_lizhiyan_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Armes affûtées",
+            "Desc": "La <#ba.corrupt>Corrosion</> appliquée par Arcane dure <@ba.vup>5</> s de plus et fait passer la réduction de résistance max. à <@ba.vup>1.05</> fois sa valeur d'origine.",
+            "Type": 4
+        },
+        "fac_chr_0032_lizhiyan_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_mineral",
+            "Name": "Gratter la montagne, faire bouillir la mer γ",
+            "Desc": "En l'affectant à la chambre de culture, augmente le taux de croissance des minerais rares de 30 %.",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0032_lizhiyan_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_mineral",
+            "Name": "Gratter la montagne, faire bouillir la mer β",
+            "Desc": "En l'affectant à la chambre de culture, augmente le taux de croissance des minerais rares de 20 %.",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0032_lizhiyan_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_flower",
+            "Name": "Botanophilie β",
+            "Desc": "En l'affectant à la chambre de culture, augmente le taux de croissance des plantes vitrifiées de 20 %.",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "chr_0032_lizhiyan_passive_skill_0_2": {
+            "Icon": "icon_talent_lizhiyan_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Planification tactique",
+            "Desc": "Lorsque l'Intelligence d'Arcane est supérieure ou égale à sa Volonté, elle passe au type de compétence <@ba.key>Arcane de matrice : INT</>. Sinon, elle passe au type <@ba.key>Arcane de matrice : VOL</>.\nSon ultime <@ba.key>Purification</> est amélioré :\n<@ba.key>Arcane de matrice : INT</> :\n- Pendant son ultime, Arcane gagne <@ba.vup>24%</> d'<#ba.spellenhance>amplification des Arts</>.\n<@ba.key>Arcane de matrice : VOL</> :\n- Lorsque <@ba.key>Matrice purificatrice</> (séquence 1 d'ultime) et <@ba.key>Arcane purificateur</> (séquence 2 d'ultime) infligent des DÉG à l'ennemi, ils appliquent également <@ba.vup>[VOL × 0.02%]</> de <#ba.naturalvul>sensibilité naturelle</> et de <#ba.crystvul>sensibilité cryogénique</> (max : <@ba.vup>12.8%</>) pendant <@ba.vup>10</> s. L'effet ne peut pas être cumulé.\n<@ba.info>Les critères de trait des deux types d'Arcane de matrice ne tiennent compte que des effets de niveau, de talents et de potentiel des opérateurs, ainsi que des bonus de trait conférés par leur équipement et leurs armes.</>",
+            "Type": 4
+        },
+        "chr_0032_lizhiyan_passive_skill_0_1": {
+            "Icon": "icon_talent_lizhiyan_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Planification tactique",
+            "Desc": "Lorsque l'Intelligence d'Arcane est supérieure ou égale à sa Volonté, elle passe au type de compétence <@ba.key>Arcane de matrice : INT</>. Sinon, elle passe au type <@ba.key>Arcane de matrice : VOL</>.\n<@ba.info>Les critères de trait des deux types d'Arcane de matrice ne tiennent compte que des effets de niveau, de talents et de potentiel des opérateurs, ainsi que des bonus de trait conférés par leur équipement et leurs armes.</>",
+            "Type": 4
+        }
+    },
+    "Potentials": {
+        "1": {
+            "Name": "Observatrice de la mer",
+            "Desc": "Amélioration de la compétence de combo <@ba.key>Posture de Yinglung IV</> : \nLe multiplicateur de DÉG passe à <@ba.vup>1.3</> fois sa valeur d'origine.\n<@ba.key>Arcane de matrice : INT</> : toucher un ennemi victime d'<@ba.key>Emprisonnement</> avec la compétence de combat d'Arcane <#ba.return>restitue</> <@ba.vup>10</> PC supplémentaires.\n<@ba.key>Arcane de matrice : VOL</> : effets de <#ba.naturalvul>sensibilité naturelle</> et de <#ba.crystvul>sensibilité cryogénique</> appliqués <@ba.vup>+6%</>."
+        },
+        "2": {
+            "Name": "Cœur de ferrium glacé",
+            "Desc": "Intelligence et Volonté <@ba.vup>+15</>, intensité des Arts <@ba.vup>+16</>."
+        },
+        "3": {
+            "Name": "Manieuse de pierres",
+            "Desc": "Amélioration du talent <@ba.key>Armes affûtées</> :\nLa <#ba.corrupt>Corrosion</> appliquée par Arcane dure <@ba.vup>5</> s de plus et fait passer la réduction de résistance max. à <@ba.vup>20%</> fois sa valeur d'origine."
+        },
+        "4": {
+            "Name": "Esprit affûté",
+            "Desc": "Amélioration de l'ultime <@ba.key>Purification</> : coût en énergie d'ultime <@ba.vup>-15%</>."
+        },
+        "5": {
+            "Name": "Introspection",
+            "Desc": "Amélioration de l'ultime <@ba.key>Purification</> :\n<@ba.key>Arcane de matrice : INT</> : pendant son ultime, Arcane gagne <@ba.vup>16%</> d'<#ba.spellenhance>amplification des Arts</>. Le multiplicateur de DÉG d'<@ba.key>Arcane purificateur</> (séquence 2 d'ultime) passe à <@ba.vup>1.3</> fois sa valeur d'origine.\n<@ba.key>Arcane de matrice : VOL</> : augmente encore les effets de <#ba.naturalvul>sensibilité naturelle</> et de <#ba.crystvul>sensibilité cryogénique</> appliqués par <@ba.key>Matrice purificatrice</> (séquence 1 d'ultime) et <@ba.key>Arcane purificateur</> (séquence 2 d'ultime) de <@ba.vup>7%</>. Après avoir lancé <@ba.key>Arcane purificateur</> (séquence 2 d'ultime), si la compétence de combo <@ba.key>Posture de Yinglung IV</> est en cours de recharge, raccourcit le temps de recharge de <@ba.vup>30%</>."
+        }
+    }
+}

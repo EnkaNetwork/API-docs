@@ -4,6 +4,7 @@
     "Rarity": 5,
     "Element": "Cryst",
     "Profession": "VANGUARD",
+    "Conditions": {},
     "WeaponType": "Sword",
     "MainAttrId": 39,
     "SubAttrId": 41,
@@ -24,6 +25,7 @@
     "SkillInfoMap": {
         "chr_0024_deepfin_NormalSkill": {
             "Icon": "skillicon/icon_skill_deepfin_01",
+            "IconConditions": {},
             "Element": "Physical",
             "Name": "型破りのルアー",
             "Desc": "引っ掛けた氷で前方の敵を叩き付け、<@ba.pd>物理ダメージ</>を与える。<#ba.crystinflict>寒冷付着</>状態の敵に命中すると、敵の<#ba.crystinflict>寒冷付着</>をすべて<#ba.consume>消費</>して強制的に<#ba.frozen>凍結</>状態にする。さらに、<#ba.consume>消費</>した段階数に応じてSPを回復する（複数の敵に命中しても回復は1回のみ）。",
@@ -34,6 +36,7 @@
             "Params": [
                 {
                     "Text": "SP消費",
+                    "ConditionId": "",
                     "Values": [
                         100,
                         100,
@@ -51,6 +54,7 @@
                 },
                 {
                     "Text": "ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "200%",
                         "220%",
@@ -68,6 +72,7 @@
                 },
                 {
                     "Text": "付着1段階消費時のSP回復量",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -85,6 +90,7 @@
                 },
                 {
                     "Text": "付着2段階消費時のSP回復量",
+                    "ConditionId": "",
                     "Values": [
                         "20",
                         "20",
@@ -102,6 +108,7 @@
                 },
                 {
                     "Text": "付着3段階消費時のSP回復量",
+                    "ConditionId": "",
                     "Values": [
                         "30",
                         "30",
@@ -119,6 +126,7 @@
                 },
                 {
                     "Text": "付着4段階消費時のSP回復量",
+                    "ConditionId": "",
                     "Values": [
                         "40",
                         "40",
@@ -136,6 +144,7 @@
                 },
                 {
                     "Text": "ブレイク値",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -155,6 +164,7 @@
         },
         "chr_0024_deepfin_ComboSkill": {
             "Icon": "skillicon/icon_combo_skill_deepfin_01",
+            "IconConditions": {},
             "Element": "Physical",
             "Name": "穴釣り術",
             "Desc": "周囲の目標の<#ba.spellstatus>アーツ異常</>または<#ba.originium>源石結晶</>が<#ba.consume>消費</>されたときに発動可能。\n敵の足元に穴を開けて鱗獣を釣り上げる。<@ba.pd>物理ダメージ</>を与え、SPを一定量回復する。一定確率で<@ba.key>珍鱗</>を釣り上げ、ダメージが大幅にアップし、SPをさらに回復する。",
@@ -165,6 +175,7 @@
             "Params": [
                 {
                     "Text": "クールタイム",
+                    "ConditionId": "",
                     "Values": [
                         "9秒",
                         "9秒",
@@ -182,6 +193,7 @@
                 },
                 {
                     "Text": "ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "133%",
                         "147%",
@@ -199,6 +211,7 @@
                 },
                 {
                     "Text": "珍鱗釣上確率",
+                    "ConditionId": "",
                     "Values": [
                         "10%",
                         "10%",
@@ -216,6 +229,7 @@
                 },
                 {
                     "Text": "強化ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "213%",
                         "235%",
@@ -233,6 +247,7 @@
                 },
                 {
                     "Text": "SP回復量",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -250,6 +265,7 @@
                 },
                 {
                     "Text": "SP追加回復量",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -267,6 +283,7 @@
                 },
                 {
                     "Text": "ブレイク値",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -284,6 +301,7 @@
                 },
                 {
                     "Text": "必殺チャージ回復量",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -303,6 +321,7 @@
         },
         "chr_0024_deepfin_NormalAttack": {
             "Icon": "skillicon/icon_attack_sword",
+            "IconConditions": {},
             "Element": "Physical",
             "Name": "キャストの基本",
             "Desc": "通常攻撃：\n最大5段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>17</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。",
@@ -313,6 +332,7 @@
             "Params": [
                 {
                     "Text": "通常攻撃1段目ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "18%",
                         "19%",
@@ -330,6 +350,7 @@
                 },
                 {
                     "Text": "通常攻撃2段目ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "10%",
                         "11%",
@@ -347,6 +368,7 @@
                 },
                 {
                     "Text": "通常攻撃3段目ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "28%",
                         "30%",
@@ -364,6 +386,7 @@
                 },
                 {
                     "Text": "通常攻撃4段目ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "28%",
                         "30%",
@@ -381,6 +404,7 @@
                 },
                 {
                     "Text": "通常攻撃5段目ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "55%",
                         "61%",
@@ -398,6 +422,7 @@
                 },
                 {
                     "Text": "終撃ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "400%",
                         "440%",
@@ -415,6 +440,7 @@
                 },
                 {
                     "Text": "落下攻撃ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "80%",
                         "88%",
@@ -434,6 +460,7 @@
         },
         "chr_0024_deepfin_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_deepfin_01",
+            "IconConditions": {},
             "Element": "Cryst",
             "Name": "大物、ヒット！",
             "Desc": "超巨大鱗獣を釣り上げ、前方の敵に投げ付ける。広範囲の<@ba.cryst>寒冷ダメージ</>を与え、<#ba.crystinflict>寒冷付着</>を付与し、SPを一定量回復する。倒した敵1体につき、SPを追加で回復する。",
@@ -444,6 +471,7 @@
             "Params": [
                 {
                     "Text": "必殺チャージ消費",
+                    "ConditionId": "",
                     "Values": [
                         100,
                         100,
@@ -461,6 +489,7 @@
                 },
                 {
                     "Text": "クールタイム",
+                    "ConditionId": "",
                     "Values": [
                         "20秒",
                         "20秒",
@@ -478,6 +507,7 @@
                 },
                 {
                     "Text": "必殺技ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "436%",
                         "479%",
@@ -495,6 +525,7 @@
                 },
                 {
                     "Text": "基礎SP回復量",
+                    "ConditionId": "",
                     "Values": [
                         "20",
                         "20",
@@ -512,6 +543,7 @@
                 },
                 {
                     "Text": "敵撃破時のSP追加回復量",
+                    "ConditionId": "",
                     "Values": [
                         "12",
                         "12",
@@ -529,6 +561,7 @@
                 },
                 {
                     "Text": "SP回復上限",
+                    "ConditionId": "",
                     "Values": [
                         "100",
                         "100",
@@ -546,6 +579,7 @@
                 },
                 {
                     "Text": "ブレイク値",
+                    "ConditionId": "",
                     "Values": [
                         "20",
                         "20",

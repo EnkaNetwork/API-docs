@@ -4,6 +4,7 @@
     "Rarity": 6,
     "Element": "Pulse",
     "Profession": "ASSAULT",
+    "Conditions": {},
     "WeaponType": "Wand",
     "MainAttrId": 42,
     "SubAttrId": 41,
@@ -24,6 +25,7 @@
     "SkillInfoMap": {
         "chr_0030_zhuangfy_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_zhuangfy_01",
+            "IconConditions": {},
             "Element": "Pulse",
             "Name": "Zerstörerisches Unwetter",
             "Desc": "Verwandelt sich in den <@ba.key>Avatar der Wahrheit</> und erhält die folgenden Verbesserungen:\nZhuang Fangyis Standardangriffe werden verstärkt und sie kann schwerer unterbrochen werden;\nDie Kampffertigkeit <@ba.key>Mantra des Reißens</> erhält einen höheren SDN-Multiplikator sowie eine höhere Effektreichweite und das letzte Donnerwetter verursacht beim getroffenen Ziel <#ba.pulseinflict>Elektrik</>.\nDie Kombofertigkeit <@ba.key>Hauch der Wandlung</> erhält einen höheren SDN-Multiplikator, die Abklingzeit beschleunigt sich um das 4-fache und die Effekte betreffen Gegner in einem kleinen Bereich.\nDas erste Wirken der Kampffertigkeit <@ba.key>Mantra des Reißens</> verbraucht weder FP noch <#ba.conduct>Elektrifizierung</> und erschafft, sofern es ein Ziel gibt, garantiert 3 <@ba.key>Spaltklingen</> (auch dann, wenn das Ziel nicht von <#ba.conduct>Elektrifizierung</> betroffen ist).",
@@ -34,6 +36,7 @@
             "Params": [
                 {
                     "Text": "Ultimative Energiekosten",
+                    "ConditionId": "",
                     "Values": [
                         240,
                         240,
@@ -51,6 +54,7 @@
                 },
                 {
                     "Text": "Abklingzeit",
+                    "ConditionId": "",
                     "Values": [
                         "15Sek.",
                         "15Sek.",
@@ -68,6 +72,7 @@
                 },
                 {
                     "Text": "Dauer (Sek.)",
+                    "ConditionId": "",
                     "Values": [
                         "25",
                         "25",
@@ -85,6 +90,7 @@
                 },
                 {
                     "Text": "Während Ultimativer Fertigkeit: STD-ANG-SEQ-1-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "67%",
                         "73%",
@@ -102,6 +108,7 @@
                 },
                 {
                     "Text": "Während Ultimativer Fertigkeit: STD-ANG-SEQ-2-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "94%",
                         "103%",
@@ -119,6 +126,7 @@
                 },
                 {
                     "Text": "Während Ultimativer Fertigkeit: STD-ANG-SEQ-3-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "134%",
                         "147%",
@@ -138,6 +146,7 @@
         },
         "chr_0030_zhuangfy_ComboSkill": {
             "Icon": "skillicon/icon_combo_skill_zhuangfy_01",
+            "IconConditions": {},
             "Element": "Pulse",
             "Name": "Hauch der Wandlung",
             "Desc": "KOMBOAUSLÖSER: Der <#ba.lastcombo>Abschlussangriff</> oder Wuchtschlag des gesteuerten Operators trifft ein Ziel mit <#ba.pulseinflict>Elektrik</>.\nZhuang Fangyi erschafft eine Xiranblitz-Reihe, die den Gegner angreift und <@ba.pulse>Elektrischen SDN</> verursacht. Trifft die Reihe einen Gegner mit <#ba.pulseinflict>Elektrik</>kumulierung(en), werden diese <#ba.pulseinflict>Elektrik</>kumulierungen <#ba.consume>verbraucht</>, das Ziel wird mit <#ba.conduct>Elektrifizierung</> belegt und Zhuang Fangyi erhält Ultimative Energie basierend auf der Anzahl der <#ba.consume>verbrauchten</> Kumulierungen.\nWird ein Gegner mit <#ba.conduct>Elektrifizierung</> belegt, der bereits von <#ba.conduct>Elektrifizierung</> betroffen ist, steigt der <#ba.statuslevel>Zustandslevel</> der <#ba.conduct>Elektrifizierung</> auf dem Gegner um +1.",
@@ -148,6 +157,7 @@
             "Params": [
                 {
                     "Text": "Abklingzeit",
+                    "ConditionId": "",
                     "Values": [
                         "18Sek.",
                         "18Sek.",
@@ -165,6 +175,7 @@
                 },
                 {
                     "Text": "SDN-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "160%",
                         "176%",
@@ -182,6 +193,7 @@
                 },
                 {
                     "Text": "Taumeln",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -199,6 +211,7 @@
                 },
                 {
                     "Text": "Ultimative-Energie-Erhalt",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -216,6 +229,7 @@
                 },
                 {
                     "Text": "Zusätzliche Ultimative Energie pro Zufügungskumulierung",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -233,6 +247,7 @@
                 },
                 {
                     "Text": "Während Ultimativer Fertigkeit: SDN-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "240%",
                         "264%",
@@ -252,6 +267,7 @@
         },
         "chr_0030_zhuangfy_NormalAttack": {
             "Icon": "skillicon/icon_attack_funnel",
+            "IconConditions": {},
             "Element": "Pulse",
             "Name": "Schockierende Techniken",
             "Desc": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.pulse>Elektrischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>18</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pulse>Elektrischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.pulse>Elektrischen SDN</> zufügen und ein wenig FP wiederherstellen.",
@@ -262,6 +278,7 @@
             "Params": [
                 {
                     "Text": "STD-ANG-SEQ-1-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "16%",
                         "18%",
@@ -279,6 +296,7 @@
                 },
                 {
                     "Text": "STD-ANG-SEQ-2-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "24%",
                         "26%",
@@ -296,6 +314,7 @@
                 },
                 {
                     "Text": "STD-ANG-SEQ-3-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "32%",
                         "35%",
@@ -313,6 +332,7 @@
                 },
                 {
                     "Text": "STD-ANG-SEQ-4-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "45%",
                         "50%",
@@ -330,6 +350,7 @@
                 },
                 {
                     "Text": "STD-ANG-SEQ-5-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "48%",
                         "53%",
@@ -347,6 +368,7 @@
                 },
                 {
                     "Text": "Wuchtschlag-ANG-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "400%",
                         "440%",
@@ -364,6 +386,7 @@
                 },
                 {
                     "Text": "Sturz-ANG-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "80%",
                         "88%",
@@ -383,6 +406,7 @@
         },
         "chr_0030_zhuangfy_NormalSkill": {
             "Icon": "skillicon/icon_skill_zhuangfy_01",
+            "IconConditions": {},
             "Element": "Pulse",
             "Name": "Mantra des Reißens",
             "Desc": "<#ba.consume>Verbraucht</> <#ba.conduct>Elektrifizierung</> des Ziels, um den SDN-Multiplikator dieser Kampffertigkeit zu erhöhen und erschafft [<#ba.statuslevel>Zustandslevel</> von <#ba.consume>verbrauchter</> <#ba.conduct>Elektrifizierung</> <@ba.key>+1</>] <@ba.key>Spaltklingen</>. Befinden sich auf dem Schlachtfeld weniger als 3 <@ba.key>Spaltklingen</>, kann Mantra des Reißens weiterhin 1 <@ba.key>Spaltklinge</> erschaffen, auch wenn diese keine <#ba.conduct>Elektrifizierung</> bei einem Ziel <#ba.consume>verbraucht</>.\nZhuang Fangyi lenkt dann alle <@ba.key>Spaltklingen</> in Reichweite, um nacheinander Donnerwetter auf das Ziel zu entfesseln, die <@ba.pulse>Elektrischen SDN</> verursachen und zusätzliche Ultimative Energie verleihen, wobei das letzte Donnerwetter 6-fachen SDN verursacht.\n<@ba.info>Das Wirken einer einzelnen Kampffertigkeit erzeugt nur bis zu 3 Spaltklingen.</>",
@@ -393,6 +417,7 @@
             "Params": [
                 {
                     "Text": "FP-Kosten",
+                    "ConditionId": "",
                     "Values": [
                         100,
                         100,
@@ -410,6 +435,7 @@
                 },
                 {
                     "Text": "Donnerwetter-SDN-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "20%",
                         "22%",
@@ -427,6 +453,7 @@
                 },
                 {
                     "Text": "Gesamt-Taumeln",
+                    "ConditionId": "",
                     "Values": [
                         "15",
                         "15",
@@ -444,6 +471,7 @@
                 },
                 {
                     "Text": "Bonus-SDN-Multiplikator pro Zustandslevel von verbrauchter Elektrifizierung",
+                    "ConditionId": "",
                     "Values": [
                         "3%",
                         "4%",
@@ -461,6 +489,7 @@
                 },
                 {
                     "Text": "Ultimative-Energie-Bonus durch Donnerwetter",
+                    "ConditionId": "",
                     "Values": [
                         "6",
                         "6",
@@ -478,6 +507,7 @@
                 },
                 {
                     "Text": "Spaltklinge-Limit",
+                    "ConditionId": "",
                     "Values": [
                         "9",
                         "9",
@@ -495,6 +525,7 @@
                 },
                 {
                     "Text": "Spaltklinge-Dauer (Sek.)",
+                    "ConditionId": "",
                     "Values": [
                         "36",
                         "36",
@@ -512,6 +543,7 @@
                 },
                 {
                     "Text": "Während Ultimativer Fertigkeit: Donnerwetter-SDN-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "36%",
                         "40%",
@@ -529,6 +561,7 @@
                 },
                 {
                     "Text": "Während Ultimativer Fertigkeit: Bonus-SDN-Multiplikator pro Zustandslevel von verbrauchter Elektrifizierung",
+                    "ConditionId": "",
                     "Values": [
                         "8%",
                         "9%",

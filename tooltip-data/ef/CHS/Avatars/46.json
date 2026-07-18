@@ -4,6 +4,7 @@
     "Rarity": 6,
     "Element": "Pulse",
     "Profession": "ASSAULT",
+    "Conditions": {},
     "WeaponType": "Wand",
     "MainAttrId": 42,
     "SubAttrId": 41,
@@ -24,6 +25,7 @@
     "SkillInfoMap": {
         "chr_0030_zhuangfy_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_zhuangfy_01",
+            "IconConditions": {},
             "Element": "Pulse",
             "Name": "万钧风雷",
             "Desc": "进入<@ba.key>天理合真</>状态：\n普通攻击得到强化。自身行动更不容易被打断。\n战技<@ba.key>惊霆诀</>伤害倍率提高，伤害范围扩大，最后一次雷击命中时施加<#ba.pulseinflict>电磁附着</>。\n连携技<@ba.key>一息万变</>对一定范围内的敌人生效，伤害倍率提高，冷却恢复速度提升至原本的4倍。\n首次施放战技<@ba.key>惊霆诀</>不消耗技力与<#ba.conduct>导电</>，若存在目标，则无论其是否处于<#ba.conduct>导电</>状态，必定生成3柄<@ba.key>青霆剑</>。",
@@ -34,6 +36,7 @@
             "Params": [
                 {
                     "Text": "所需终结技能量",
+                    "ConditionId": "",
                     "Values": [
                         240,
                         240,
@@ -51,6 +54,7 @@
                 },
                 {
                     "Text": "冷却时间",
+                    "ConditionId": "",
                     "Values": [
                         "15秒",
                         "15秒",
@@ -68,6 +72,7 @@
                 },
                 {
                     "Text": "持续时间（秒）",
+                    "ConditionId": "",
                     "Values": [
                         "25",
                         "25",
@@ -85,6 +90,7 @@
                 },
                 {
                     "Text": "终结技期间普攻第一段倍率",
+                    "ConditionId": "",
                     "Values": [
                         "67%",
                         "73%",
@@ -102,6 +108,7 @@
                 },
                 {
                     "Text": "终结技期间普攻第二段倍率",
+                    "ConditionId": "",
                     "Values": [
                         "94%",
                         "103%",
@@ -119,6 +126,7 @@
                 },
                 {
                     "Text": "终结技期间普攻第三段倍率",
+                    "ConditionId": "",
                     "Values": [
                         "134%",
                         "147%",
@@ -138,6 +146,7 @@
         },
         "chr_0030_zhuangfy_ComboSkill": {
             "Icon": "skillicon/icon_combo_skill_zhuangfy_01",
+            "IconConditions": {},
             "Element": "Pulse",
             "Name": "一息万变",
             "Desc": "主控干员的<#ba.lastcombo>重击</>或处决，命中处于<#ba.pulseinflict>电磁附着</>状态的敌人后可以发动。\n构造息雷阵法攻击敌人，造成<@ba.pulse>电磁伤害</>。命中处于<#ba.pulseinflict>电磁附着</>的敌人时，<#ba.consume>消耗</>其<#ba.pulseinflict>电磁附着</>，强制施加<#ba.conduct>导电</>，并基于<#ba.consume>消耗</>的层数额外获得终结技能量。\n若强制施加<#ba.conduct>导电</>时，敌人已处于<#ba.conduct>导电</>状态，则所施加<#ba.conduct>导电</>的<#ba.statuslevel>异常等级</>+1。",
@@ -148,6 +157,7 @@
             "Params": [
                 {
                     "Text": "冷却时间",
+                    "ConditionId": "",
                     "Values": [
                         "18秒",
                         "18秒",
@@ -165,6 +175,7 @@
                 },
                 {
                     "Text": "伤害倍率",
+                    "ConditionId": "",
                     "Values": [
                         "160%",
                         "176%",
@@ -182,6 +193,7 @@
                 },
                 {
                     "Text": "失衡值",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -199,6 +211,7 @@
                 },
                 {
                     "Text": "获得终结技能量",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -216,6 +229,7 @@
                 },
                 {
                     "Text": "消耗每层附着额外终结技能量",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -233,6 +247,7 @@
                 },
                 {
                     "Text": "终结技期间伤害倍率",
+                    "ConditionId": "",
                     "Values": [
                         "240%",
                         "264%",
@@ -252,6 +267,7 @@
         },
         "chr_0030_zhuangfy_NormalAttack": {
             "Icon": "skillicon/icon_attack_funnel",
+            "IconConditions": {},
             "Element": "Pulse",
             "Name": "疾电法",
             "Desc": "普通攻击：\n对敌人进行至多5段攻击，造成<@ba.pulse>电磁伤害</>。作为主控干员时，<#ba.lastcombo>重击</>会造成<@ba.poise>18</>点失衡。\n\n下落攻击：\n处于空中时使用普通攻击，会下落并攻击附近敌人，造成<@ba.pulse>电磁伤害</>。\n\n处决攻击：\n附近有敌人处于失衡状态时使用普通攻击，将处决该敌人，造成大量<@ba.pulse>电磁伤害</>并恢复一定技力。",
@@ -262,6 +278,7 @@
             "Params": [
                 {
                     "Text": "普攻第一段倍率",
+                    "ConditionId": "",
                     "Values": [
                         "16%",
                         "18%",
@@ -279,6 +296,7 @@
                 },
                 {
                     "Text": "普攻第二段倍率",
+                    "ConditionId": "",
                     "Values": [
                         "24%",
                         "26%",
@@ -296,6 +314,7 @@
                 },
                 {
                     "Text": "普攻第三段倍率",
+                    "ConditionId": "",
                     "Values": [
                         "32%",
                         "35%",
@@ -313,6 +332,7 @@
                 },
                 {
                     "Text": "普攻第四段倍率",
+                    "ConditionId": "",
                     "Values": [
                         "45%",
                         "50%",
@@ -330,6 +350,7 @@
                 },
                 {
                     "Text": "普攻第五段倍率",
+                    "ConditionId": "",
                     "Values": [
                         "48%",
                         "53%",
@@ -347,6 +368,7 @@
                 },
                 {
                     "Text": "处决攻击倍率",
+                    "ConditionId": "",
                     "Values": [
                         "400%",
                         "440%",
@@ -364,6 +386,7 @@
                 },
                 {
                     "Text": "下落攻击倍率",
+                    "ConditionId": "",
                     "Values": [
                         "80%",
                         "88%",
@@ -383,6 +406,7 @@
         },
         "chr_0030_zhuangfy_NormalSkill": {
             "Icon": "skillicon/icon_skill_zhuangfy_01",
+            "IconConditions": {},
             "Element": "Pulse",
             "Name": "惊霆诀",
             "Desc": "<#ba.consume>消耗</>目标的<#ba.conduct>导电</>状态，使本次战技伤害倍率提高，并生成相当于所<#ba.consume>消耗</><#ba.conduct>导电</>的<#ba.statuslevel>异常等级</><@ba.key>+1</>柄<@ba.key>青霆剑</>，若现存的<@ba.key>青霆剑</>少于3柄，即使未<#ba.consume>消耗</>目标的<#ba.conduct>导电</>状态仍能生成1柄<@ba.key>青霆剑</>。\n随后引导附近的<@ba.key>青霆剑</>依次雷击目标，造成<@ba.pulse>电磁伤害</>并额外获得终结技能量，最后一次雷击造成6倍伤害。\n<@ba.info>一次战技最多生成3柄青霆剑。</>",
@@ -393,6 +417,7 @@
             "Params": [
                 {
                     "Text": "技力消耗",
+                    "ConditionId": "",
                     "Values": [
                         100,
                         100,
@@ -410,6 +435,7 @@
                 },
                 {
                     "Text": "雷击伤害倍率",
+                    "ConditionId": "",
                     "Values": [
                         "20%",
                         "22%",
@@ -427,6 +453,7 @@
                 },
                 {
                     "Text": "总失衡值",
+                    "ConditionId": "",
                     "Values": [
                         "15",
                         "15",
@@ -444,6 +471,7 @@
                 },
                 {
                     "Text": "消耗每级导电额外伤害倍率",
+                    "ConditionId": "",
                     "Values": [
                         "3%",
                         "4%",
@@ -461,6 +489,7 @@
                 },
                 {
                     "Text": "每次雷击额外终结技能量",
+                    "ConditionId": "",
                     "Values": [
                         "6",
                         "6",
@@ -478,6 +507,7 @@
                 },
                 {
                     "Text": "青霆剑数量限制",
+                    "ConditionId": "",
                     "Values": [
                         "9",
                         "9",
@@ -495,6 +525,7 @@
                 },
                 {
                     "Text": "青霆剑存在时间（秒）",
+                    "ConditionId": "",
                     "Values": [
                         "36",
                         "36",
@@ -512,6 +543,7 @@
                 },
                 {
                     "Text": "终结技期间雷击伤害倍率",
+                    "ConditionId": "",
                     "Values": [
                         "36%",
                         "40%",
@@ -529,6 +561,7 @@
                 },
                 {
                     "Text": "终结技期间消耗每级导电额外伤害倍率",
+                    "ConditionId": "",
                     "Values": [
                         "8%",
                         "9%",

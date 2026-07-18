@@ -4,6 +4,7 @@
     "Rarity": 6,
     "Element": "Physical",
     "Profession": "GUARD",
+    "Conditions": {},
     "WeaponType": "Lance",
     "MainAttrId": 40,
     "SubAttrId": 39,
@@ -24,9 +25,10 @@
     "SkillInfoMap": {
         "chr_0015_lifeng_NormalSkill": {
             "Icon": "skillicon/icon_skill_lifeng_01",
+            "IconConditions": {},
             "Element": "Physical",
             "Name": "Trüber Avatar",
-            "Desc": "Schwingt mehrfach die Stangenwaffe, um zwei Treffer mit <@ba.pd>Physischem SDN</> zu verursachen. Schlägt dann auf den Boden, um allen Gegnern im Wirkungsbereich <@ba.pd>Physischen SDN</> und <#ba.knockdown>Niederschlag</> zuzufügen. \nWenn der vom letzten Treffer dieser Fertigkeit getroffene Gegner keine <#ba.noguard>Anfälligkeit</>-Kumulierungen hat, wird dieser Gegner stattdessen mit <#ba.physicalvul>Physisch-Empfänglichkeit</> belegt.",
+            "Desc": "Schwingt mehrfach die Stangenwaffe, um zwei Treffer mit <@ba.pd>Physischem SDN</> zu verursachen. Schlägt dann auf den Boden, um allen Gegnern im Wirkungsbereich <@ba.pd>Physischen SDN</> und <#ba.knockdown>Niederschlag</> zuzufügen. \nWenn der vom letzten Treffer dieser Fertigkeit getroffene Gegner keine <#ba.noguard>Anfälligkeit</>-Kumulierungen hat, wird dieser Gegner außerdem mit <#ba.physicalvul>Physisch-Empfänglichkeit</> belegt.",
             "Type": 1,
             "Cooldown": 0,
             "CostType": "Atb",
@@ -34,6 +36,7 @@
             "Params": [
                 {
                     "Text": "FP-Kosten",
+                    "ConditionId": "",
                     "Values": [
                         100,
                         100,
@@ -51,6 +54,7 @@
                 },
                 {
                     "Text": "SEQ-1-SDN-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "38%",
                         "42%",
@@ -68,6 +72,7 @@
                 },
                 {
                     "Text": "SEQ-2-SDN-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "38%",
                         "42%",
@@ -85,6 +90,7 @@
                 },
                 {
                     "Text": "SEQ-3-SDN-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "119%",
                         "131%",
@@ -102,6 +108,7 @@
                 },
                 {
                     "Text": "SEQ 3 – Taumeln",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -119,6 +126,7 @@
                 },
                 {
                     "Text": "Physisch-Empfänglichkeit",
+                    "ConditionId": "",
                     "Values": [
                         "5%",
                         "5%",
@@ -136,6 +144,7 @@
                 },
                 {
                     "Text": "Dauer der Physisch-Empfänglichkeit (Sek.)",
+                    "ConditionId": "",
                     "Values": [
                         "12",
                         "12",
@@ -155,6 +164,7 @@
         },
         "chr_0015_lifeng_ComboSkill": {
             "Icon": "skillicon/icon_combo_skill_lifeng_01",
+            "IconConditions": {},
             "Element": "Physical",
             "Name": "Aspekt des Zorns",
             "Desc": "KOMBOAUSLÖSER: Wenn der gesteuerte Operator einen <#ba.lastcombo>Abschlussangriff</> auf einen Gegner mit <#ba.physicalvul>Physisch-Empfänglichkeit</> oder <#ba.fracture>Brechen</> durchführt. \nEntfesselt einen Aspekt, der einen Speerstoß ausführt, der <@ba.pd>Physischen SDN</> verursacht und <#ba.combo>Verbunden</> gewährt.",
@@ -165,6 +175,7 @@
             "Params": [
                 {
                     "Text": "Abklingzeit",
+                    "ConditionId": "",
                     "Values": [
                         "16Sek.",
                         "16Sek.",
@@ -182,6 +193,7 @@
                 },
                 {
                     "Text": "SEQ-1-SDN-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "47%",
                         "51%",
@@ -199,6 +211,7 @@
                 },
                 {
                     "Text": "SEQ-2-SDN-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "167%",
                         "183%",
@@ -216,6 +229,7 @@
                 },
                 {
                     "Text": "SEQ 2 – Taumeln",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -233,6 +247,7 @@
                 },
                 {
                     "Text": "Kombodauer (Sek.)",
+                    "ConditionId": "",
                     "Values": [
                         "20",
                         "20",
@@ -250,6 +265,7 @@
                 },
                 {
                     "Text": "Ultimative-Energie-Erhalt",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -269,6 +285,7 @@
         },
         "chr_0015_lifeng_NormalAttack": {
             "Icon": "skillicon/icon_attack_lance",
+            "IconConditions": {},
             "Element": "Physical",
             "Name": "Zerstörung",
             "Desc": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>19</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen.",
@@ -279,6 +296,7 @@
             "Params": [
                 {
                     "Text": "STD-ANG-SEQ-1-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "24%",
                         "27%",
@@ -296,6 +314,7 @@
                 },
                 {
                     "Text": "STD-ANG-SEQ-2-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "29%",
                         "32%",
@@ -313,6 +332,7 @@
                 },
                 {
                     "Text": "STD-ANG-SEQ-3-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "35%",
                         "39%",
@@ -330,6 +350,7 @@
                 },
                 {
                     "Text": "STD-ANG-SEQ-4-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "68%",
                         "74%",
@@ -347,6 +368,7 @@
                 },
                 {
                     "Text": "Wuchtschlag-ANG-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "400%",
                         "440%",
@@ -364,6 +386,7 @@
                 },
                 {
                     "Text": "Sturz-ANG-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "80%",
                         "88%",
@@ -383,6 +406,7 @@
         },
         "chr_0015_lifeng_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_lifeng_01",
+            "IconConditions": {},
             "Element": "Physical",
             "Name": "Herz des Regungslosen",
             "Desc": "Entfesselt einen Aspekt, der einen Unbeweglicher-Vajra-Schlag ausführt. Der Schlag fügt allen Gegnern in einem großen Wirkungsbereich <@ba.pd>Physischen SDN</> und <#ba.knockdown>Niederschlag</> zu und zieht dann alle Gegner in die Mitte des Bereichs. Nach einer Weile entfesselt der Schlag bei Gegnern im Wirkungsbereich erneut massiven <@ba.pd>Physischen SDN</> und <#ba.knockdown>Niederschlag</>.\nFalls die Fertigkeit eine <#ba.combo>Verbunden</>-Kumulierung <#ba.consume>verbraucht</>, wird ein weiterer Treffer ausgeführt, der massiven <@ba.pd>Physischen SDN</> verursacht.",
@@ -393,6 +417,7 @@
             "Params": [
                 {
                     "Text": "Ultimative Energiekosten",
+                    "ConditionId": "",
                     "Values": [
                         90,
                         90,
@@ -410,6 +435,7 @@
                 },
                 {
                     "Text": "Abklingzeit",
+                    "ConditionId": "",
                     "Values": [
                         "15Sek.",
                         "15Sek.",
@@ -427,6 +453,7 @@
                 },
                 {
                     "Text": "SEQ-1-SDN-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "178%",
                         "196%",
@@ -444,6 +471,7 @@
                 },
                 {
                     "Text": "SEQ 1 – Taumeln",
+                    "ConditionId": "",
                     "Values": [
                         "5",
                         "5",
@@ -461,6 +489,7 @@
                 },
                 {
                     "Text": "SEQ-2-SDN-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "178%",
                         "196%",
@@ -478,6 +507,7 @@
                 },
                 {
                     "Text": "SEQ 2 – Taumeln",
+                    "ConditionId": "",
                     "Values": [
                         "5",
                         "5",
@@ -495,6 +525,7 @@
                 },
                 {
                     "Text": "Zusätzlicher ANG-SDN-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "267%",
                         "294%",
@@ -512,6 +543,7 @@
                 },
                 {
                     "Text": "Zusätzliches ANG-Taumeln",
+                    "ConditionId": "",
                     "Values": [
                         "5",
                         "5",

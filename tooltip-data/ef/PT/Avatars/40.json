@@ -4,6 +4,7 @@
     "Rarity": 5,
     "Element": "Cryst",
     "Profession": "VANGUARD",
+    "Conditions": {},
     "WeaponType": "Sword",
     "MainAttrId": 39,
     "SubAttrId": 41,
@@ -24,6 +25,7 @@
     "SkillInfoMap": {
         "chr_0024_deepfin_NormalSkill": {
             "Icon": "skillicon/icon_skill_deepfin_01",
+            "IconConditions": {},
             "Element": "Physical",
             "Name": "Isca Incomum",
             "Desc": "Fisga um bloco de gelo e atinge o alvo inimigo com ele para causar <@ba.pd>DNO Físico</>. Ao atingir um alvo com <#ba.crystinflict>Inflição Crio</>, Alesh <#ba.consume>consome</> todos os acúmulos de <#ba.crystinflict>Inflição Crio</> do alvo, aplica <#ba.frozen>Solidificação</> à força ao alvo e recupera PH com base no número de acúmulos <#ba.consume>consumidos</>. Esse efeito de recuperação de PH só poderá ser acionado 1 vez, mesmo que a habilidade atinja vários inimigos.",
@@ -34,6 +36,7 @@
             "Params": [
                 {
                     "Text": "Custos de PH",
+                    "ConditionId": "",
                     "Values": [
                         100,
                         100,
@@ -51,6 +54,7 @@
                 },
                 {
                     "Text": "Multiplicador DNO",
+                    "ConditionId": "",
                     "Values": [
                         "200%",
                         "220%",
@@ -68,6 +72,7 @@
                 },
                 {
                     "Text": "Recuperação de PH via Consumo de 1 Acúmulo de Inflição",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -85,6 +90,7 @@
                 },
                 {
                     "Text": "Recuperação de PH via Consumo de 2 Acúmulos de Inflição",
+                    "ConditionId": "",
                     "Values": [
                         "20",
                         "20",
@@ -102,6 +108,7 @@
                 },
                 {
                     "Text": "Recuperação de PH via Consumo de 3 Acúmulos de Inflição",
+                    "ConditionId": "",
                     "Values": [
                         "30",
                         "30",
@@ -119,6 +126,7 @@
                 },
                 {
                     "Text": "Recuperação de PH via Consumo de 4 Acúmulos de Inflição",
+                    "ConditionId": "",
                     "Values": [
                         "40",
                         "40",
@@ -136,6 +144,7 @@
                 },
                 {
                     "Text": "Desorientação",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -155,6 +164,7 @@
         },
         "chr_0024_deepfin_ComboSkill": {
             "Icon": "skillicon/icon_combo_skill_deepfin_01",
+            "IconConditions": {},
             "Element": "Physical",
             "Name": "Pesca com Broca",
             "Desc": "ACIONADOR DO COMBO: Quando a <#ba.spellstatus>Reação de Artes</> ou os <#ba.originium>Cristais de Originium</> de um alvo próximo são <#ba.consume>consumidos</>. \nAbre um buraco de pesca embaixo do inimigo que causa <@ba.pd>DNO Físico</> e recupera PH. A habilidade tem uma chance de fisgar uma <@ba.key>Barbatana Rara</> que aumenta consideravelmente o DNO causado e recupera um pouco mais de PH.",
@@ -165,6 +175,7 @@
             "Params": [
                 {
                     "Text": "Tempo de Recarga",
+                    "ConditionId": "",
                     "Values": [
                         "9s",
                         "9s",
@@ -182,6 +193,7 @@
                 },
                 {
                     "Text": "Multiplicador DNO",
+                    "ConditionId": "",
                     "Values": [
                         "133%",
                         "147%",
@@ -199,6 +211,7 @@
                 },
                 {
                     "Text": "Chance de Capturar a Barbatana Rara",
+                    "ConditionId": "",
                     "Values": [
                         "10%",
                         "10%",
@@ -216,6 +229,7 @@
                 },
                 {
                     "Text": "Multiplicador DNO Aprimorado",
+                    "ConditionId": "",
                     "Values": [
                         "213%",
                         "235%",
@@ -233,6 +247,7 @@
                 },
                 {
                     "Text": "Recuperação de PH",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -250,6 +265,7 @@
                 },
                 {
                     "Text": "Recuperação de PH Bônus",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -267,6 +283,7 @@
                 },
                 {
                     "Text": "Desorientação",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -284,6 +301,7 @@
                 },
                 {
                     "Text": "Ganho de Energia Suprema",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -303,6 +321,7 @@
         },
         "chr_0024_deepfin_NormalAttack": {
             "Icon": "skillicon/icon_attack_sword",
+            "IconConditions": {},
             "Element": "Physical",
             "Name": "Arremesso de Varas Básico",
             "Desc": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.pd>DNO Físico</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>17</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.pd>DNO Físico</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um ataque finalizador que causa uma enorme quantidade de <@ba.pd>DNO Físico</> e recupera PH.",
@@ -313,6 +332,7 @@
             "Params": [
                 {
                     "Text": "Multiplicador SEQ 1 ATQB",
+                    "ConditionId": "",
                     "Values": [
                         "18%",
                         "19%",
@@ -330,6 +350,7 @@
                 },
                 {
                     "Text": "Multiplicador SEQ 2 ATQB",
+                    "ConditionId": "",
                     "Values": [
                         "10%",
                         "11%",
@@ -347,6 +368,7 @@
                 },
                 {
                     "Text": "Multiplicador SEQ 3 ATQB",
+                    "ConditionId": "",
                     "Values": [
                         "28%",
                         "30%",
@@ -364,6 +386,7 @@
                 },
                 {
                     "Text": "Multiplicador SEQ 4 ATQB",
+                    "ConditionId": "",
                     "Values": [
                         "28%",
                         "30%",
@@ -381,6 +404,7 @@
                 },
                 {
                     "Text": "Multiplicador SEQ 5 ATQB",
+                    "ConditionId": "",
                     "Values": [
                         "55%",
                         "61%",
@@ -398,6 +422,7 @@
                 },
                 {
                     "Text": "Multiplicador ATQ Finalizador",
+                    "ConditionId": "",
                     "Values": [
                         "400%",
                         "440%",
@@ -415,6 +440,7 @@
                 },
                 {
                     "Text": "Multiplicador ATQ Mergulho",
+                    "ConditionId": "",
                     "Values": [
                         "80%",
                         "88%",
@@ -434,6 +460,7 @@
         },
         "chr_0024_deepfin_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_deepfin_01",
+            "IconConditions": {},
             "Element": "Cryst",
             "Name": "Uma Captura Monstruosa!",
             "Desc": "Alesh fisga uma barbatana de tamanho inacreditável e dá uma pancada com ela para causar <@ba.cryst>DNO Crio</> e aplicar <#ba.crystinflict>Inflição Crio</> a inimigos em uma grande área de efeito na frente dele. Ele recupera PH, e PH adicional é ganho para cada alvo derrotado.",
@@ -444,6 +471,7 @@
             "Params": [
                 {
                     "Text": "Custo de Energia Suprema",
+                    "ConditionId": "",
                     "Values": [
                         100,
                         100,
@@ -461,6 +489,7 @@
                 },
                 {
                     "Text": "Tempo de Recarga",
+                    "ConditionId": "",
                     "Values": [
                         "20s",
                         "20s",
@@ -478,6 +507,7 @@
                 },
                 {
                     "Text": "Multiplicador DNO Supremo",
+                    "ConditionId": "",
                     "Values": [
                         "436%",
                         "479%",
@@ -495,6 +525,7 @@
                 },
                 {
                     "Text": "Recuperação de PH Base",
+                    "ConditionId": "",
                     "Values": [
                         "20",
                         "20",
@@ -512,6 +543,7 @@
                 },
                 {
                     "Text": "Recuperação de PH Bônus por Alvo Derrotado",
+                    "ConditionId": "",
                     "Values": [
                         "12",
                         "12",
@@ -529,6 +561,7 @@
                 },
                 {
                     "Text": "Limite de Recuperação de PH",
+                    "ConditionId": "",
                     "Values": [
                         "100",
                         "100",
@@ -546,6 +579,7 @@
                 },
                 {
                     "Text": "Desorientação",
+                    "ConditionId": "",
                     "Values": [
                         "20",
                         "20",

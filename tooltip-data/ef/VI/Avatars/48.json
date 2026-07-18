@@ -1,0 +1,852 @@
+{
+    "StrId": "chr_0032_lizhiyan",
+    "Name": "Arcane",
+    "Rarity": 6,
+    "Element": "Natural",
+    "Profession": "CASTER",
+    "Conditions": {
+        "0": "lizhiyan_wisd",
+        "1": "lizhiyan_will"
+    },
+    "WeaponType": "Wand",
+    "MainAttrId": 41,
+    "SubAttrId": 42,
+    "AttributeNodes": {
+        "chr_0032_lizhiyan_5": {
+            "41": 10,
+            "42": 10
+        },
+        "chr_0032_lizhiyan_3": {
+            "41": 10,
+            "42": 10
+        },
+        "chr_0032_lizhiyan_1": {
+            "41": 8,
+            "42": 8
+        },
+        "chr_0032_lizhiyan_7": {
+            "41": 15,
+            "42": 15
+        }
+    },
+    "SkillInfoMap": {
+        "chr_0032_lizhiyan_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_lizhiyan_01",
+            "IconConditions": {
+                "lizhiyan_wisd": "icon_ultimate_skill_lizhiyan_01",
+                "lizhiyan_will": "icon_ultimate_skill_lizhiyan_02"
+            },
+            "Element": "Natural",
+            "Name": "Trừ Ám",
+            "Desc": "Arcane tạo ra <@ba.key>Trận Pháp Trừ Ám</>, lập tức gây <@ba.natur>ST Tự Nhiên</> cho kẻ địch trong phạm vi hiệu ứng (AOE).\nKhi cán viên đang điều khiển dùng Đòn Kết Liễu hoặc <@ba.key>Đòn Dứt Điểm</> đánh trúng kẻ địch trong <#ba.lastcombo>Trận Pháp Trừ Ám</>, <@ba.key>Trận Pháp Trừ Ám</> sẽ tung ra <@ba.key>Tập Kích Cụm</>, gây ST Diện Rộng lên kẻ địch đó. Hiệu ứng này kích hoạt tối đa 2 lần.\nSau khi kích hoạt <@ba.key>Tập Kích Cụm</> 2 lần, Tuyệt Kỹ sẽ chuyển thành <@ba.key>Bí Thuật Trừ Ám</>.\n<@ba.key>Bí Thuật Trừ Ám</>: Gây <@ba.natur>ST Tự Nhiên</> cho kẻ địch trong phạm vi hiệu ứng lớn.",
+            "Type": 3,
+            "Cooldown": 10,
+            "CostType": "UltimateSp",
+            "CostValue": 100,
+            "Params": [
+                {
+                    "Text": "Phí Năng Lượng Tuyệt Kỹ",
+                    "ConditionId": "",
+                    "Values": [
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100
+                    ]
+                },
+                {
+                    "Text": "Thời gian hồi chiêu",
+                    "ConditionId": "",
+                    "Values": [
+                        "20giây",
+                        "20giây",
+                        "20giây",
+                        "20giây",
+                        "20giây",
+                        "20giây",
+                        "20giây",
+                        "20giây",
+                        "20giây",
+                        "20giây",
+                        "20giây",
+                        "20giây"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số ST Kiến Tạo Trận Pháp Trừ Ám",
+                    "ConditionId": "",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                },
+                {
+                    "Text": "Suy Sụp Kiến Tạo Trận Pháp Trừ Ám",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Hiệu Lực Trận Pháp Trừ Ám (giây)",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Hiệu Lực Ăn Mòn Cưỡng Bức (giây)",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                },
+                {
+                    "Text": "Tổng Hệ Số ST Tập Kích Cụm",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "160%",
+                        "176%",
+                        "192%",
+                        "208%",
+                        "224%",
+                        "240%",
+                        "256%",
+                        "272%",
+                        "288%",
+                        "308%",
+                        "332%",
+                        "360%"
+                    ]
+                },
+                {
+                    "Text": "Tổng Hệ Số ST Tập Kích Cụm",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "160%",
+                        "176%",
+                        "192%",
+                        "208%",
+                        "224%",
+                        "240%",
+                        "256%",
+                        "272%",
+                        "288%",
+                        "308%",
+                        "332%",
+                        "360%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số ST Bí Thuật Trừ Ám",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "640%",
+                        "704%",
+                        "768%",
+                        "832%",
+                        "896%",
+                        "960%",
+                        "1024%",
+                        "1088%",
+                        "1152%",
+                        "1232%",
+                        "1328%",
+                        "1440%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số ST Bí Thuật Trừ Ám",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "160%",
+                        "176%",
+                        "192%",
+                        "208%",
+                        "224%",
+                        "240%",
+                        "256%",
+                        "272%",
+                        "288%",
+                        "308%",
+                        "332%",
+                        "360%"
+                    ]
+                },
+                {
+                    "Text": "Suy Sụp Bí Thuật Trừ Ám",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0032_lizhiyan_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_lizhiyan_01",
+            "IconConditions": {
+                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
+                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
+            },
+            "Element": "Natural",
+            "Name": "Tư Thế Đặc Nhiệm IV",
+            "Desc": "0",
+            "Type": 2,
+            "Cooldown": 20,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Thời gian hồi chiêu",
+                    "ConditionId": "",
+                    "Values": [
+                        "20giây",
+                        "20giây",
+                        "20giây",
+                        "20giây",
+                        "20giây",
+                        "20giây",
+                        "20giây",
+                        "20giây",
+                        "20giây",
+                        "20giây",
+                        "20giây",
+                        "20giây"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số ST Cơ Bản",
+                    "ConditionId": "",
+                    "Values": [
+                        "35%",
+                        "39%",
+                        "42%",
+                        "46%",
+                        "50%",
+                        "53%",
+                        "57%",
+                        "60%",
+                        "64%",
+                        "68%",
+                        "73%",
+                        "80%"
+                    ]
+                },
+                {
+                    "Text": "Suy Sụp Cơ Bản",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "Thời Gian Giam Cầm và Yếu Hóa (giây)",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4"
+                    ]
+                },
+                {
+                    "Text": "Thời Gian Giam Cầm và Yếu Hóa (giây)",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6"
+                    ]
+                },
+                {
+                    "Text": "Yếu Hóa",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%"
+                    ]
+                },
+                {
+                    "Text": "Yếu Hóa Cơ Bản",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%"
+                    ]
+                },
+                {
+                    "Text": "Thưởng Tối Đa Yếu Hóa từ Ý Chí",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7.5%",
+                        "7.5%",
+                        "7.5%",
+                        "8%"
+                    ]
+                },
+                {
+                    "Text": "Yêu Cầu Ý Chí để nhận Thưởng Tối Đa Yếu Hóa",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "560",
+                        "560",
+                        "560",
+                        "560",
+                        "560",
+                        "560",
+                        "560",
+                        "560",
+                        "600",
+                        "600",
+                        "600",
+                        "640"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số ST Nổ",
+                    "ConditionId": "",
+                    "Values": [
+                        "53%",
+                        "59%",
+                        "64%",
+                        "69%",
+                        "75%",
+                        "80%",
+                        "85%",
+                        "91%",
+                        "96%",
+                        "103%",
+                        "111%",
+                        "120%"
+                    ]
+                },
+                {
+                    "Text": "Suy Sụp Do Nổ",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số ST Cộng Thêm",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "222%",
+                        "244%",
+                        "266%",
+                        "289%",
+                        "311%",
+                        "333%",
+                        "355%",
+                        "377%",
+                        "400%",
+                        "427%",
+                        "461%",
+                        "500%"
+                    ]
+                },
+                {
+                    "Text": "Hiệu Lực Thời Gian Yếu Hóa (giây)",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2"
+                    ]
+                },
+                {
+                    "Text": "Điểm KN Hoàn Trả",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "30",
+                        "30",
+                        "30"
+                    ]
+                },
+                {
+                    "Text": "Tăng Năng Lượng Tuyệt Kỹ",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0032_lizhiyan_NormalAttack": {
+            "Icon": "skillicon/icon_attack_funnel",
+            "IconConditions": {
+                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
+                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
+            },
+            "Element": "Natural",
+            "Name": "Pháo Kích Trấn Áp",
+            "Desc": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.natur>ST Tự Nhiên</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>17</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.natur>ST Tự Nhiên</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.natur>ST Tự Nhiên</> và hồi một phần Điểm KN.",
+            "Type": 0,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Hệ Số Trình Tự Đòn Đánh Thường 1",
+                    "ConditionId": "",
+                    "Values": [
+                        "19%",
+                        "21%",
+                        "22%",
+                        "24%",
+                        "26%",
+                        "28%",
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "39%",
+                        "42%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số Trình Tự Đòn Đánh Thường 2",
+                    "ConditionId": "",
+                    "Values": [
+                        "21%",
+                        "23%",
+                        "26%",
+                        "28%",
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "41%",
+                        "44%",
+                        "48%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số Trình Tự Đòn Đánh Thường 3",
+                    "ConditionId": "",
+                    "Values": [
+                        "33%",
+                        "37%",
+                        "40%",
+                        "43%",
+                        "47%",
+                        "50%",
+                        "53%",
+                        "57%",
+                        "60%",
+                        "64%",
+                        "69%",
+                        "75%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số Trình Tự Đòn Đánh Thường 4",
+                    "ConditionId": "",
+                    "Values": [
+                        "36%",
+                        "39%",
+                        "43%",
+                        "46%",
+                        "50%",
+                        "53%",
+                        "57%",
+                        "61%",
+                        "64%",
+                        "69%",
+                        "74%",
+                        "80%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số Trình Tự Đòn Đánh Thường 5",
+                    "ConditionId": "",
+                    "Values": [
+                        "47%",
+                        "52%",
+                        "56%",
+                        "61%",
+                        "66%",
+                        "71%",
+                        "75%",
+                        "80%",
+                        "85%",
+                        "90%",
+                        "98%",
+                        "106%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số Đòn Kết Liễu",
+                    "ConditionId": "",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số Đòn Bổ Nhào",
+                    "ConditionId": "",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "chr_0032_lizhiyan_NormalSkill": {
+            "Icon": "skillicon/icon_skill_lizhiyan_01",
+            "IconConditions": {
+                "lizhiyan_wisd": "icon_skill_lizhiyan_01",
+                "lizhiyan_will": "icon_skill_lizhiyan_02"
+            },
+            "Element": "Natural",
+            "Name": "Trận Nghiền Ngọc",
+            "Desc": "Tạo một <@ba.key>Trận Nghiền Ngọc</> gây <@ba.natur>ST Tự Nhiên</> và áp dụng <#ba.naturalinflict>Nhiễm Tự Nhiên</> lên kẻ địch trong phạm vi hiệu ứng.",
+            "Type": 1,
+            "Cooldown": 0,
+            "CostType": "Atb",
+            "CostValue": 100,
+            "Params": [
+                {
+                    "Text": "Điểm KN tiêu hao",
+                    "ConditionId": "",
+                    "Values": [
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100
+                    ]
+                },
+                {
+                    "Text": "Hệ Số ST",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "222%",
+                        "245%",
+                        "267%",
+                        "289%",
+                        "311%",
+                        "333%",
+                        "356%",
+                        "378%",
+                        "400%",
+                        "428%",
+                        "461%",
+                        "500%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số ST",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "133%",
+                        "147%",
+                        "160%",
+                        "173%",
+                        "187%",
+                        "200%",
+                        "213%",
+                        "227%",
+                        "240%",
+                        "257%",
+                        "277%",
+                        "300%"
+                    ]
+                },
+                {
+                    "Text": "Suy Sụp",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0032_lizhiyan_passive_skill_1_2": {
+            "Icon": "icon_talent_lizhiyan_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Rèn Sắc Vũ Khí",
+            "Desc": "<#ba.corrupt>Ăn Mòn</> do Arcane áp dụng sẽ kéo dài thêm <@ba.vup>10</> giây, đồng thời Giảm Kháng Tối Đa được tăng lên <@ba.vup>1.1</> lần so với ban đầu.",
+            "Type": 4
+        },
+        "fac_chr_0032_lizhiyan_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_flower",
+            "Name": "Người Yêu Cây Cỏ γ",
+            "Desc": "Khi phân công vào Buồng Phát Triển, tăng tốc độ tăng trưởng cây trồng hóa đá thêm 30%",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        },
+        "chr_0032_lizhiyan_passive_skill_1_1": {
+            "Icon": "icon_talent_lizhiyan_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Rèn Sắc Vũ Khí",
+            "Desc": "<#ba.corrupt>Ăn Mòn</> do Arcane áp dụng sẽ kéo dài thêm <@ba.vup>5</> giây, đồng thời Giảm Kháng Tối Đa được tăng lên <@ba.vup>1.05</> lần so với ban đầu.",
+            "Type": 4
+        },
+        "fac_chr_0032_lizhiyan_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_mineral",
+            "Name": "Bạt Sơn Chử Hải γ",
+            "Desc": "Khi phân công vào Buồng Phát Triển, tăng tốc độ tăng trưởng khoáng sản quý hiếm thêm 30%",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0032_lizhiyan_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_mineral",
+            "Name": "Bạt Sơn Chử Hải β",
+            "Desc": "Khi phân công vào Buồng Phát Triển, tăng tốc độ tăng trưởng khoáng sản quý hiếm thêm 20%",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0032_lizhiyan_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_flower",
+            "Name": "Người Yêu Cây Cỏ β",
+            "Desc": "Khi phân công vào Buồng Phát Triển, tăng tốc độ tăng trưởng cây trồng hóa đá thêm 20%",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "chr_0032_lizhiyan_passive_skill_0_2": {
+            "Icon": "icon_talent_lizhiyan_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Hoạch Định Chiến Thuật",
+            "Desc": "Khi Trí Tuệ của Arcane ≥ Ý Chí, loại kỹ năng sẽ chuyển sang <@ba.key>Trận Huyền Thuật: TRÍ TUỆ</>. Nếu không, loại kỹ năng sẽ chuyển sang <@ba.key>Trận Huyền Thuật: Ý CHÍ</>.\nTuyệt Kỹ <@ba.key>Trừ Ám</> được cường hóa:\n<@ba.key>Trận Huyền Thuật: TRÍ TUỆ</>:\n- Trong thời gian duy trì Tuyệt Kỹ, Arcane nhận <@ba.vup>24%</> <#ba.spellenhance>Tăng ST Thuật Pháp</>.\n<@ba.key>Trận Huyền Thuật: Ý CHÍ</>:\n- Khi <@ba.key>Trận Pháp Trừ Ám</> (chuỗi tuyệt kỹ 1) và <@ba.key>Bí Thuật Trừ Ám</> (chuỗi tuyệt kỹ 2) gây ST lên kẻ địch, chúng đồng thời áp dụng <@ba.vup>[Ý Chí ×0.02%]</> <#ba.naturalvul>Yếu Hóa Tự Nhiên</> và <#ba.crystvul>Yếu Hóa Băng</> (tối đa: <@ba.vup>12.8%</>) trong <@ba.vup>10</> giây. Hiệu ứng này không cộng dồn.\n<@ba.info>Yêu cầu thuộc tính của 2 loại Trận Huyền Thuật chỉ tính hiệu ứng từ cấp cán viên, thiên phú, tiềm năng, cùng các chỉ số cộng thêm do trang bị và vũ khí đang mang cung cấp.</>",
+            "Type": 4
+        },
+        "chr_0032_lizhiyan_passive_skill_0_1": {
+            "Icon": "icon_talent_lizhiyan_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Hoạch Định Chiến Thuật",
+            "Desc": "Khi Trí Tuệ của Arcane ≥ Ý Chí, loại kỹ năng sẽ chuyển sang <@ba.key>Trận Huyền Thuật: TRÍ TUỆ</>. Nếu không, loại kỹ năng sẽ chuyển sang <@ba.key>Trận Huyền Thuật: Ý CHÍ</>.\n<@ba.info>Yêu cầu thuộc tính của 2 loại Trận Huyền Thuật chỉ tính hiệu ứng từ cấp cán viên, thiên phú, tiềm năng, cùng các chỉ số cộng thêm do trang bị và vũ khí đang mang cung cấp.</>",
+            "Type": 4
+        }
+    },
+    "Potentials": {
+        "1": {
+            "Name": "Người Dõi Theo Biển Cả",
+            "Desc": "KN liên hoàn <@ba.key>Tư Thế Đặc Nhiệm IV</> được cường hóa:\nHệ Số ST tăng lên bằng <@ba.vup>1.3</> lần so với ban đầu.\n<@ba.key>Trận Huyền Thuật: TRÍ TUỆ</>: Dùng kỹ năng chiến đấu của Arcane đánh trúng kẻ địch đang chịu <@ba.key>Giam Cầm</> sẽ <#ba.return>hoàn trả</> thêm <@ba.vup>10</> Điểm Kỹ Năng.\n<@ba.key>Trận Huyền Thuật: Ý CHÍ</>: Hiệu quả <#ba.naturalvul>Yếu Hóa Tự Nhiên</> và <#ba.crystvul>Yếu Hóa Băng</> được áp dụng <@ba.vup>+6%</>."
+        },
+        "2": {
+            "Name": "Trái Tim Sắt Giá Băng",
+            "Desc": "Trí Tuệ và Ý Chí <@ba.vup>+15</>, Công Phép <@ba.vup>+16</>."
+        },
+        "3": {
+            "Name": "Kẻ Nắm Quyền Thạch Nham",
+            "Desc": "Thiên Phú <@ba.key>Rèn Sắc Vũ Khí</> được cường hóa:\n<#ba.corrupt>Ăn Mòn</> do Arcane áp dụng sẽ kéo dài thêm <@ba.vup>5</> giây, đồng thời Giảm Kháng Tối Đa được tăng thêm <@ba.vup>20%</> so với ban đầu."
+        },
+        "4": {
+            "Name": "Tâm Thép Tôi Rèn",
+            "Desc": "Tuyệt Kỹ <@ba.key>Trừ Ám</> được cường hóa: Năng Lượng Tuyệt Kỹ tiêu hao <@ba.vup>-15%</>."
+        },
+        "5": {
+            "Name": "Ngoảnh Mắt Về Cố Hương",
+            "Desc": "Tuyệt Kỹ <@ba.key>Trừ Ám</> được cường hóa:\n<@ba.key>Trận Huyền Thuật: TRÍ TUỆ</>: Trong thời gian duy trì Tuyệt Kỹ, Arcane nhận <@ba.vup>16%</> <#ba.spellenhance>Tăng ST Thuật Pháp</>. Hệ Số ST của <@ba.key>Bí Thuật Trừ Ám</> (chuỗi tuyệt kỹ 2) tăng lên bằng <@ba.vup>1.3</> lần so với ban đầu.\n<@ba.key>Trận Huyền Thuật: Ý CHÍ</>: Tăng hiệu quả của <#ba.naturalvul>Yếu Hóa Tự Nhiên</> và <#ba.crystvul>Yếu Hóa Băng</> do <@ba.key>Trận Pháp Trừ Ám</> (chuỗi tuyệt kỹ 1) và <@ba.key>Bí Thuật Trừ Ám</> (chuỗi tuyệt kỹ 2) áp dụng thêm <@ba.vup>+7%</>. Sau khi thi triển <@ba.key>Bí Thuật Trừ Ám</> (chuỗi tuyệt kỹ 2), nếu KN liên hoàn <@ba.key>Tư Thế Đặc Nhiệm IV</> vẫn đang trong thời gian hồi chiêu, lập tức rút ngắn thời gian hồi chiêu đó đi <@ba.vup>30%</>."
+        }
+    }
+}

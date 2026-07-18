@@ -4,6 +4,7 @@
     "Rarity": 6,
     "Element": "Pulse",
     "Profession": "ASSAULT",
+    "Conditions": {},
     "WeaponType": "Wand",
     "MainAttrId": 42,
     "SubAttrId": 41,
@@ -24,6 +25,7 @@
     "SkillInfoMap": {
         "chr_0030_zhuangfy_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_zhuangfy_01",
+            "IconConditions": {},
             "Element": "Pulse",
             "Name": "Smiting Tempest",
             "Desc": "Berubah menjadi <@ba.key>Empyrean of Truth</> yang memberikan penguatan ini:\nserangan dasar Zhuang Fangyi akan diperkuat dan aksinya akan lebih sulit disela;\nSkill tarung <@ba.key>Mantra of Sundering</> akan mendapatkan pengganda DMG yang lebih besar dan jangkauan efek yang lebih tinggi, dan Sambaran Guntur terakhir juga akan mengakibatkan <#ba.pulseinflict>Electric Infliction</> kepada target yang terkena.\nSkill kombo <@ba.key>Breath of Transformation</> akan mendapatkan pengganda DMG yang lebih besar, cooldown akan menjadi 4 kali lebih cepat, dan efek akan diakibatkan kepada musuh dalam area kecil.\nPenggunaan pertama skill tarung <@ba.key>Mantra of Sundering</> tidak akan memakai SP atau <#ba.conduct>Electrification</>, dan jika ada target yang tersedia, dijamin akan memunculkan 3 <@ba.key>Sunderblade</> walau target tidak terkena <#ba.conduct>Electrification</>.",
@@ -34,6 +36,7 @@
             "Params": [
                 {
                     "Text": "Biaya Energi Ultimate",
+                    "ConditionId": "",
                     "Values": [
                         240,
                         240,
@@ -51,6 +54,7 @@
                 },
                 {
                     "Text": "Cooldown",
+                    "ConditionId": "",
                     "Values": [
                         "15dtk",
                         "15dtk",
@@ -68,6 +72,7 @@
                 },
                 {
                     "Text": "Durasi (dtk)",
+                    "ConditionId": "",
                     "Values": [
                         "25",
                         "25",
@@ -85,6 +90,7 @@
                 },
                 {
                     "Text": "Saat Ultimate: Pengganda BATK SEQ 1",
+                    "ConditionId": "",
                     "Values": [
                         "67%",
                         "73%",
@@ -102,6 +108,7 @@
                 },
                 {
                     "Text": "Saat Ultimate: Pengganda BATK SEQ 2",
+                    "ConditionId": "",
                     "Values": [
                         "94%",
                         "103%",
@@ -119,6 +126,7 @@
                 },
                 {
                     "Text": "Saat Ultimate: Pengganda BATK SEQ 3",
+                    "ConditionId": "",
                     "Values": [
                         "134%",
                         "147%",
@@ -138,6 +146,7 @@
         },
         "chr_0030_zhuangfy_ComboSkill": {
             "Icon": "skillicon/icon_combo_skill_zhuangfy_01",
+            "IconConditions": {},
             "Element": "Pulse",
             "Name": "Breath of Transformation",
             "Desc": "PEMICU KOMBO: Saat <#ba.lastcombo>Final Strike</> atau Penuntas operator terkontrol menghantam musuh yang terkena <#ba.pulseinflict>Electric Infliction</>,\nZhuang Fangyi akan memunculkan Susunan Xiranblitz yang akan menyerang dan menimbulkan <@ba.pulse>Electric DMG</>. Jika Susunan ini berhasil menghantam musuh yang sedang terkena tumpukan <#ba.pulseinflict>Electric Infliction</>, tumpukan <#ba.pulseinflict>Electric Infliction</> itu akan <#ba.consume>dipakai</> sehingga akan mengakibatkan <#ba.conduct>Electrification</> secara paksa dan memberikan Energi Ultimate berdasarkan jumlah tumpukan <#ba.consume>yang dipakai</>.\nJika <#ba.conduct>Electrification</> berhasil diakibatkan secara paksa kepada musuh yang terkena <#ba.conduct>Electrification</>, <#ba.statuslevel>Level Status</> +1 akan diakibatkan pada <#ba.conduct>Electrification</> musuh.",
@@ -148,6 +157,7 @@
             "Params": [
                 {
                     "Text": "Cooldown",
+                    "ConditionId": "",
                     "Values": [
                         "18dtk",
                         "18dtk",
@@ -165,6 +175,7 @@
                 },
                 {
                     "Text": "Pengganda DMG",
+                    "ConditionId": "",
                     "Values": [
                         "160%",
                         "176%",
@@ -182,6 +193,7 @@
                 },
                 {
                     "Text": "Stagger",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -199,6 +211,7 @@
                 },
                 {
                     "Text": "Perolehan Energi Ultimate",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -216,6 +229,7 @@
                 },
                 {
                     "Text": "Tambahan Energi Ultimate per Tumpuk Infliction",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -233,6 +247,7 @@
                 },
                 {
                     "Text": "Saat Ultimate: Pengganda DMG",
+                    "ConditionId": "",
                     "Values": [
                         "240%",
                         "264%",
@@ -252,6 +267,7 @@
         },
         "chr_0030_zhuangfy_NormalAttack": {
             "Icon": "skillicon/icon_attack_funnel",
+            "IconConditions": {},
             "Element": "Pulse",
             "Name": "Jolting Arts",
             "Desc": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.pulse>Electric DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>18</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pulse>Electric DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pulse>Electric DMG</> sangat besar dan memulihkan sebagian SP.",
@@ -262,6 +278,7 @@
             "Params": [
                 {
                     "Text": "Pengganda BATK SEQ 1",
+                    "ConditionId": "",
                     "Values": [
                         "16%",
                         "18%",
@@ -279,6 +296,7 @@
                 },
                 {
                     "Text": "Pengganda BATK SEQ 2",
+                    "ConditionId": "",
                     "Values": [
                         "24%",
                         "26%",
@@ -296,6 +314,7 @@
                 },
                 {
                     "Text": "Pengganda BATK SEQ 3",
+                    "ConditionId": "",
                     "Values": [
                         "32%",
                         "35%",
@@ -313,6 +332,7 @@
                 },
                 {
                     "Text": "Pengganda BATK SEQ 4",
+                    "ConditionId": "",
                     "Values": [
                         "45%",
                         "50%",
@@ -330,6 +350,7 @@
                 },
                 {
                     "Text": "Pengganda BATK SEQ 5",
+                    "ConditionId": "",
                     "Values": [
                         "48%",
                         "53%",
@@ -347,6 +368,7 @@
                 },
                 {
                     "Text": "Pengganda ATK Penuntas",
+                    "ConditionId": "",
                     "Values": [
                         "400%",
                         "440%",
@@ -364,6 +386,7 @@
                 },
                 {
                     "Text": "Pengganda ATK Menukik",
+                    "ConditionId": "",
                     "Values": [
                         "80%",
                         "88%",
@@ -383,6 +406,7 @@
         },
         "chr_0030_zhuangfy_NormalSkill": {
             "Icon": "skillicon/icon_skill_zhuangfy_01",
+            "IconConditions": {},
             "Element": "Pulse",
             "Name": "Mantra of Sundering",
             "Desc": "<#ba.consume>Memakai</> <#ba.conduct>Electrification</> pada target untuk meningkatkan pengganda DMG skill tarung ini dan menghasilkan [<#ba.statuslevel>Level Status</> <#ba.conduct>Electrification</> <#ba.consume>yang dipakai</> <@ba.key>+1</>] <@ba.key>Sunderblade</>. Jika di medan pertarungan hanya ada kurang dari 3 <@ba.key>Sunderblade</>, Mantra of Sundering tetap bisa memunculkan 1 <@ba.key>Sunderblade</> walau tidak <#ba.consume>memakai</> <#ba.conduct>Electrification</> pada target mana pun.\nZhuang Fangyi akan menyalurkan semua <@ba.key>Sunderblade</> di sekitar agar berhasil menggunakan Sambaran Guntur kepada target sehingga akan menimbulkan <@ba.pulse>Electric DMG</> dan memberikan bonus Energi Ultimate, sedangkan Sambaran Guntur terakhir akan menimbulkan 6 kali DMG.\n<@ba.info>Penggunaan satu skill tarung hanya bisa memunculkan maks 3 Sunderblade.</>",
@@ -393,6 +417,7 @@
             "Params": [
                 {
                     "Text": "Biaya SP",
+                    "ConditionId": "",
                     "Values": [
                         100,
                         100,
@@ -410,6 +435,7 @@
                 },
                 {
                     "Text": "Pengganda DMG Sambaran Guntur",
+                    "ConditionId": "",
                     "Values": [
                         "20%",
                         "22%",
@@ -427,6 +453,7 @@
                 },
                 {
                     "Text": "Total Stagger",
+                    "ConditionId": "",
                     "Values": [
                         "15",
                         "15",
@@ -444,6 +471,7 @@
                 },
                 {
                     "Text": "Pengganda Bonus DMG per Level Status Electrification yang Dipakai",
+                    "ConditionId": "",
                     "Values": [
                         "3%",
                         "4%",
@@ -461,6 +489,7 @@
                 },
                 {
                     "Text": "Bonus Energi Ultimate per Sambaran Guntur",
+                    "ConditionId": "",
                     "Values": [
                         "6",
                         "6",
@@ -478,6 +507,7 @@
                 },
                 {
                     "Text": "Batas Sunderblade",
+                    "ConditionId": "",
                     "Values": [
                         "9",
                         "9",
@@ -495,6 +525,7 @@
                 },
                 {
                     "Text": "Durasi Sunderblade (dtk)",
+                    "ConditionId": "",
                     "Values": [
                         "36",
                         "36",
@@ -512,6 +543,7 @@
                 },
                 {
                     "Text": "Saat Ultimate: Pengganda DMG Sambaran Guntur",
+                    "ConditionId": "",
                     "Values": [
                         "36%",
                         "40%",
@@ -529,6 +561,7 @@
                 },
                 {
                     "Text": "Saat Ultimate: Pengganda Bonus DMG per Level Status Electrification yang Dipakai",
+                    "ConditionId": "",
                     "Values": [
                         "8%",
                         "9%",

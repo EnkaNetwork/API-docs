@@ -4,6 +4,7 @@
     "Rarity": 5,
     "Element": "Fire",
     "Profession": "CASTER",
+    "Conditions": {},
     "WeaponType": "Pistol",
     "MainAttrId": 39,
     "SubAttrId": 40,
@@ -24,9 +25,10 @@
     "SkillInfoMap": {
         "chr_0006_wolfgd_ComboSkill": {
             "Icon": "skillicon/icon_combo_skill_wolfgd_01",
+            "IconConditions": {},
             "Element": "Fire",
             "Name": "フラググレネード・β",
-            "Desc": "敵が<#ba.spellinflict>アーツ付着</>状態になったときに発動可能。\n目標位置にフラググレネードを投げ、地面に落下すると爆発する。範囲内の敵に<@ba.fire>灼熱ダメージ</>を与え、<#ba.fireinflict>灼熱付着</>を付与する。",
+            "Desc": "敵に<#ba.spellinflict>アーツ付着</>が付与されたときに発動可能。\n目標位置にフラググレネードを投げ、地面に落下すると爆発する。範囲内の敵に<@ba.fire>灼熱ダメージ</>を与え、<#ba.fireinflict>灼熱付着</>を付与する。",
             "Type": 2,
             "Cooldown": 20,
             "CostType": "UltimateSp",
@@ -34,6 +36,7 @@
             "Params": [
                 {
                     "Text": "クールタイム",
+                    "ConditionId": "",
                     "Values": [
                         "20秒",
                         "20秒",
@@ -51,6 +54,7 @@
                 },
                 {
                     "Text": "ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "60%",
                         "66%",
@@ -68,6 +72,7 @@
                 },
                 {
                     "Text": "ブレイク値",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -85,6 +90,7 @@
                 },
                 {
                     "Text": "必殺チャージ回復量",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -104,6 +110,7 @@
         },
         "chr_0006_wolfgd_NormalAttack": {
             "Icon": "skillicon/icon_attack_pistol",
+            "IconConditions": {},
             "Element": "Fire",
             "Name": "多重連射",
             "Desc": "通常攻撃：\n最大4段の攻撃で敵に<@ba.fire>灼熱ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>18</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.fire>灼熱ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.fire>灼熱ダメージ</>を与えてSPを一定量回復する。",
@@ -114,6 +121,7 @@
             "Params": [
                 {
                     "Text": "通常攻撃1段目ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "30%",
                         "33%",
@@ -131,6 +139,7 @@
                 },
                 {
                     "Text": "通常攻撃2段目ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "35%",
                         "39%",
@@ -148,6 +157,7 @@
                 },
                 {
                     "Text": "通常攻撃3段目ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "56%",
                         "61%",
@@ -165,6 +175,7 @@
                 },
                 {
                     "Text": "通常攻撃4段目ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "68%",
                         "74%",
@@ -182,6 +193,7 @@
                 },
                 {
                     "Text": "終撃ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "400%",
                         "440%",
@@ -199,6 +211,7 @@
                 },
                 {
                     "Text": "落下攻撃ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "80%",
                         "88%",
@@ -218,6 +231,7 @@
         },
         "chr_0006_wolfgd_NormalSkill": {
             "Icon": "skillicon/icon_skill_wolfgd_01",
+            "IconConditions": {},
             "Element": "Fire",
             "Name": "灼熱の弾痕",
             "Desc": "連射攻撃により、わずかな<@ba.fire>灼熱ダメージ</>を与え、最後の一撃で<#ba.fireinflict>灼熱付着</>を付与する。ただし、敵が<#ba.burning>燃焼</>または<#ba.conduct>感電</>状態の場合、<#ba.fireinflict>灼熱付着</>は付与されず、その状態を<#ba.consume>消費</>して追加で1回射撃を行い、高い<@ba.fire>灼熱ダメージ</>を与える。",
@@ -228,6 +242,7 @@
             "Params": [
                 {
                     "Text": "SP消費",
+                    "ConditionId": "",
                     "Values": [
                         100,
                         100,
@@ -245,6 +260,7 @@
                 },
                 {
                     "Text": "ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "102%",
                         "112%",
@@ -262,6 +278,7 @@
                 },
                 {
                     "Text": "ブレイク値",
+                    "ConditionId": "",
                     "Values": [
                         "5",
                         "5",
@@ -279,6 +296,7 @@
                 },
                 {
                     "Text": "追加ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "378%",
                         "415%",
@@ -296,6 +314,7 @@
                 },
                 {
                     "Text": "追加ブレイク値",
+                    "ConditionId": "",
                     "Values": [
                         "5",
                         "5",
@@ -315,6 +334,7 @@
         },
         "chr_0006_wolfgd_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_wolfgd_01",
+            "IconConditions": {},
             "Element": "Fire",
             "Name": "狼の怒り",
             "Desc": "すばやく射撃し、<@ba.key>狼の怒り</>を放って周囲の敵を攻撃する。5回の<@ba.fire>灼熱ダメージ</>を与え、強制的に<#ba.burning>燃焼</>状態にする。",
@@ -325,6 +345,7 @@
             "Params": [
                 {
                     "Text": "必殺チャージ消費",
+                    "ConditionId": "",
                     "Values": [
                         90,
                         90,
@@ -342,6 +363,7 @@
                 },
                 {
                     "Text": "クールタイム",
+                    "ConditionId": "",
                     "Values": [
                         "10秒",
                         "10秒",
@@ -359,6 +381,7 @@
                 },
                 {
                     "Text": "1段ごとのダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "32%",
                         "35%",
@@ -376,6 +399,7 @@
                 },
                 {
                     "Text": "ブレイク値",
+                    "ConditionId": "",
                     "Values": [
                         "15",
                         "15",

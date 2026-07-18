@@ -4,6 +4,7 @@
     "Rarity": 6,
     "Element": "Physical",
     "Profession": "GUARD",
+    "Conditions": {},
     "WeaponType": "Lance",
     "MainAttrId": 40,
     "SubAttrId": 39,
@@ -24,9 +25,10 @@
     "SkillInfoMap": {
         "chr_0015_lifeng_NormalSkill": {
             "Icon": "skillicon/icon_skill_lifeng_01",
+            "IconConditions": {},
             "Element": "Physical",
             "Name": "Turbid Avatar",
-            "Desc": "Swings the polearm multiple times to deal 2 hits of <@ba.pd>Physical DMG</>, then slams the ground to deal <@ba.pd>Physical DMG</> and <#ba.knockdown>Knock Down</> to all enemies in the area of effect. \nIf the enemy struck by the last hit of this skill has no <#ba.noguard>Vulnerability</> stacks, apply <#ba.physicalvul>Physical Susceptibility</> to the said enemy instead.",
+            "Desc": "Swings the polearm multiple times to deal 2 hits of <@ba.pd>Physical DMG</>, then slams the ground to deal <@ba.pd>Physical DMG</> and <#ba.knockdown>Knock Down</> to all enemies in the area of effect. \nIf the enemy struck by the last hit of this skill has no <#ba.noguard>Vulnerability</> stacks, apply <#ba.physicalvul>Physical Susceptibility</> to the said enemy as well.",
             "Type": 1,
             "Cooldown": 0,
             "CostType": "Atb",
@@ -34,6 +36,7 @@
             "Params": [
                 {
                     "Text": "SP Cost",
+                    "ConditionId": "",
                     "Values": [
                         100,
                         100,
@@ -51,6 +54,7 @@
                 },
                 {
                     "Text": "SEQ 1 DMG Multiplier",
+                    "ConditionId": "",
                     "Values": [
                         "38%",
                         "42%",
@@ -68,6 +72,7 @@
                 },
                 {
                     "Text": "SEQ 2 DMG Multiplier",
+                    "ConditionId": "",
                     "Values": [
                         "38%",
                         "42%",
@@ -85,6 +90,7 @@
                 },
                 {
                     "Text": "SEQ 3 DMG Multiplier",
+                    "ConditionId": "",
                     "Values": [
                         "119%",
                         "131%",
@@ -102,6 +108,7 @@
                 },
                 {
                     "Text": "SEQ 3 Stagger",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -119,6 +126,7 @@
                 },
                 {
                     "Text": "Physical Susceptibility",
+                    "ConditionId": "",
                     "Values": [
                         "5%",
                         "5%",
@@ -136,6 +144,7 @@
                 },
                 {
                     "Text": "Physical Susceptibility Duration (s)",
+                    "ConditionId": "",
                     "Values": [
                         "12",
                         "12",
@@ -155,6 +164,7 @@
         },
         "chr_0015_lifeng_ComboSkill": {
             "Icon": "skillicon/icon_combo_skill_lifeng_01",
+            "IconConditions": {},
             "Element": "Physical",
             "Name": "Aspect of Wrath",
             "Desc": "COMBO TRIGGER: When the controlled operator performs a <#ba.lastcombo>Final Strike</> on an enemy with <#ba.physicalvul>Physical Susceptibility</> or <#ba.fracture>Breach</>. \nUnleashes an aspect that performs a spear thrust to deal <@ba.pd>Physical DMG</> and grants <#ba.combo>Link</>.",
@@ -165,6 +175,7 @@
             "Params": [
                 {
                     "Text": "Cooldown",
+                    "ConditionId": "",
                     "Values": [
                         "16s",
                         "16s",
@@ -182,6 +193,7 @@
                 },
                 {
                     "Text": "SEQ 1 DMG Multiplier",
+                    "ConditionId": "",
                     "Values": [
                         "47%",
                         "51%",
@@ -199,6 +211,7 @@
                 },
                 {
                     "Text": "SEQ 2 DMG Multiplier",
+                    "ConditionId": "",
                     "Values": [
                         "167%",
                         "183%",
@@ -216,6 +229,7 @@
                 },
                 {
                     "Text": "SEQ 2 Stagger",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -233,6 +247,7 @@
                 },
                 {
                     "Text": "Combo Duration (s)",
+                    "ConditionId": "",
                     "Values": [
                         "20",
                         "20",
@@ -250,6 +265,7 @@
                 },
                 {
                     "Text": "Ultimate Energy Gain",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -269,6 +285,7 @@
         },
         "chr_0015_lifeng_NormalAttack": {
             "Icon": "skillicon/icon_attack_lance",
+            "IconConditions": {},
             "Element": "Physical",
             "Name": "Ruination",
             "Desc": "BASIC ATTACK: \nAn attack with up to 4 sequences that deals <@ba.pd>Physical DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>19</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pd>Physical DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.pd>Physical DMG</> and recovers some SP.",
@@ -279,6 +296,7 @@
             "Params": [
                 {
                     "Text": "BATK SEQ 1 Multiplier",
+                    "ConditionId": "",
                     "Values": [
                         "24%",
                         "27%",
@@ -296,6 +314,7 @@
                 },
                 {
                     "Text": "BATK SEQ 2 Multiplier",
+                    "ConditionId": "",
                     "Values": [
                         "29%",
                         "32%",
@@ -313,6 +332,7 @@
                 },
                 {
                     "Text": "BATK SEQ 3 Multiplier",
+                    "ConditionId": "",
                     "Values": [
                         "35%",
                         "39%",
@@ -330,6 +350,7 @@
                 },
                 {
                     "Text": "BATK SEQ 4 Multiplier",
+                    "ConditionId": "",
                     "Values": [
                         "68%",
                         "74%",
@@ -347,6 +368,7 @@
                 },
                 {
                     "Text": "Finisher ATK Multiplier",
+                    "ConditionId": "",
                     "Values": [
                         "400%",
                         "440%",
@@ -364,6 +386,7 @@
                 },
                 {
                     "Text": "Dive ATK Multiplier",
+                    "ConditionId": "",
                     "Values": [
                         "80%",
                         "88%",
@@ -383,6 +406,7 @@
         },
         "chr_0015_lifeng_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_lifeng_01",
+            "IconConditions": {},
             "Element": "Physical",
             "Name": "Heart of the Unmoving",
             "Desc": "Unleashes an aspect that performs an Immovable Vajra Slam. The Slam deals <@ba.pd>Physical DMG</> and applies <#ba.knockdown>Knock Down</> to all enemies in a large area of effect (AOE), and pulls enemies towards the center of the AOE. After a while, the Slam unleashes one more hit that deals massive <@ba.pd>Physical DMG</> and applies another <#ba.knockdown>Knock Down</> to enemies still within its AOE.\nIf the skill <#ba.consume>consumes</> a <#ba.combo>Link</>, then it deals an additional hit of massive <@ba.pd>Physical DMG</>.",
@@ -393,6 +417,7 @@
             "Params": [
                 {
                     "Text": "Ultimate Energy Cost",
+                    "ConditionId": "",
                     "Values": [
                         90,
                         90,
@@ -410,6 +435,7 @@
                 },
                 {
                     "Text": "Cooldown",
+                    "ConditionId": "",
                     "Values": [
                         "15s",
                         "15s",
@@ -427,6 +453,7 @@
                 },
                 {
                     "Text": "SEQ 1 DMG Multiplier",
+                    "ConditionId": "",
                     "Values": [
                         "178%",
                         "196%",
@@ -444,6 +471,7 @@
                 },
                 {
                     "Text": "SEQ 1 Stagger",
+                    "ConditionId": "",
                     "Values": [
                         "5",
                         "5",
@@ -461,6 +489,7 @@
                 },
                 {
                     "Text": "SEQ 2 DMG Multiplier",
+                    "ConditionId": "",
                     "Values": [
                         "178%",
                         "196%",
@@ -478,6 +507,7 @@
                 },
                 {
                     "Text": "SEQ 2 Stagger",
+                    "ConditionId": "",
                     "Values": [
                         "5",
                         "5",
@@ -495,6 +525,7 @@
                 },
                 {
                     "Text": "Additional ATK DMG Multiplier",
+                    "ConditionId": "",
                     "Values": [
                         "267%",
                         "294%",
@@ -512,6 +543,7 @@
                 },
                 {
                     "Text": "Additional ATK Stagger",
+                    "ConditionId": "",
                     "Values": [
                         "5",
                         "5",

@@ -4,6 +4,7 @@
     "Rarity": 5,
     "Element": "Cryst",
     "Profession": "VANGUARD",
+    "Conditions": {},
     "WeaponType": "Sword",
     "MainAttrId": 39,
     "SubAttrId": 41,
@@ -24,6 +25,7 @@
     "SkillInfoMap": {
         "chr_0024_deepfin_NormalSkill": {
             "Icon": "skillicon/icon_skill_deepfin_01",
+            "IconConditions": {},
             "Element": "Physical",
             "Name": "Unkonventioneller Köder",
             "Desc": "Hakt sich in einem Eisblock ein und schlägt diesen auf das gegnerische Ziel, um <@ba.pd>Physischen SDN</> zu verursachen. Wenn das getroffene Ziel aktiv mit <#ba.crystinflict>Kryo</> belegt ist, <#ba.consume>verbraucht</> Alesh alle <#ba.crystinflict>Kryo</>-Kumulierungen des Ziels, belegt es mit <#ba.frozen>Erstarrung</> und stellt einige FP wieder her, basierend auf der Anzahl der <#ba.consume>verbrauchten</> Kumulierungen. Die FP-Wiederherstellung wird nur ein einziges Mal ausgelöst, auch wenn die Fertigkeit mehrere Gegner trifft.",
@@ -34,6 +36,7 @@
             "Params": [
                 {
                     "Text": "FP-Kosten",
+                    "ConditionId": "",
                     "Values": [
                         100,
                         100,
@@ -51,6 +54,7 @@
                 },
                 {
                     "Text": "SDN-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "200%",
                         "220%",
@@ -68,6 +72,7 @@
                 },
                 {
                     "Text": "FP-Wiederherstellung durch Verbrauch von 1 Zufügungskumulierung",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -85,6 +90,7 @@
                 },
                 {
                     "Text": "FP-Wiederherstellung durch Verbrauch von 2 Zufügungskumulierung",
+                    "ConditionId": "",
                     "Values": [
                         "20",
                         "20",
@@ -102,6 +108,7 @@
                 },
                 {
                     "Text": "FP-Wiederherstellung durch Verbrauch von 3 Zufügungskumulierung",
+                    "ConditionId": "",
                     "Values": [
                         "30",
                         "30",
@@ -119,6 +126,7 @@
                 },
                 {
                     "Text": "FP-Wiederherstellung durch Verbrauch von 4 Zufügungskumulierung",
+                    "ConditionId": "",
                     "Values": [
                         "40",
                         "40",
@@ -136,6 +144,7 @@
                 },
                 {
                     "Text": "Taumeln",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -155,6 +164,7 @@
         },
         "chr_0024_deepfin_ComboSkill": {
             "Icon": "skillicon/icon_combo_skill_deepfin_01",
+            "IconConditions": {},
             "Element": "Physical",
             "Name": "Schneckenangeln",
             "Desc": "KOMBOAUSLÖSER: Wenn die <#ba.spellstatus>Technikreaktion</> oder die <#ba.originium>Originium-Kristalle</> eines Ziels in der Nähe <#ba.consume>verbraucht</> wird bzw. werden. \nÖffnet ein Angelloch unter dem Gegner, das <@ba.pd>Physischen SDN</> verursacht und einige FP wiederherstellt. Die Fertigkeit hat die Chance, einen <@ba.key>Seltenen Flössler</> zu fangen, der den verursachten SDN deutlich erhöht und noch mehr FP wiederherstellt.",
@@ -165,6 +175,7 @@
             "Params": [
                 {
                     "Text": "Abklingzeit",
+                    "ConditionId": "",
                     "Values": [
                         "9Sek.",
                         "9Sek.",
@@ -182,6 +193,7 @@
                 },
                 {
                     "Text": "SDN-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "133%",
                         "147%",
@@ -199,6 +211,7 @@
                 },
                 {
                     "Text": "Chance auf Fangen des seltenen Flösslers",
+                    "ConditionId": "",
                     "Values": [
                         "10%",
                         "10%",
@@ -216,6 +229,7 @@
                 },
                 {
                     "Text": "Verbesserter SDN-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "213%",
                         "235%",
@@ -233,6 +247,7 @@
                 },
                 {
                     "Text": "FP-Wiederherstellung",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -250,6 +265,7 @@
                 },
                 {
                     "Text": "Bonus-FP-Wiederherstellung",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -267,6 +283,7 @@
                 },
                 {
                     "Text": "Taumeln",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -284,6 +301,7 @@
                 },
                 {
                     "Text": "Ultimative-Energie-Erhalt",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -303,6 +321,7 @@
         },
         "chr_0024_deepfin_NormalAttack": {
             "Icon": "skillicon/icon_attack_sword",
+            "IconConditions": {},
             "Element": "Physical",
             "Name": "Grundlegender Angelwurf",
             "Desc": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>17</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlagangriffen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen.",
@@ -313,6 +332,7 @@
             "Params": [
                 {
                     "Text": "STD-ANG-SEQ-1-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "18%",
                         "19%",
@@ -330,6 +350,7 @@
                 },
                 {
                     "Text": "STD-ANG-SEQ-2-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "10%",
                         "11%",
@@ -347,6 +368,7 @@
                 },
                 {
                     "Text": "STD-ANG-SEQ-3-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "28%",
                         "30%",
@@ -364,6 +386,7 @@
                 },
                 {
                     "Text": "STD-ANG-SEQ-4-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "28%",
                         "30%",
@@ -381,6 +404,7 @@
                 },
                 {
                     "Text": "STD-ANG-SEQ-5-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "55%",
                         "61%",
@@ -398,6 +422,7 @@
                 },
                 {
                     "Text": "Wuchtschlag-ANG-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "400%",
                         "440%",
@@ -415,6 +440,7 @@
                 },
                 {
                     "Text": "Sturz-ANG-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "80%",
                         "88%",
@@ -434,6 +460,7 @@
         },
         "chr_0024_deepfin_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_deepfin_01",
+            "IconConditions": {},
             "Element": "Cryst",
             "Name": "Ein Monsterfang!",
             "Desc": "Alesh hakt sich in einen Flössler unglaublicher Größe und schlägt damit zu, wodurch alle Gegner in einem großen Wirkungsbereich vor ihm <@ba.cryst>Kryo-SDN</> erleiden und mit <#ba.crystinflict>Kryo</> belegt werden. Bei einem Treffer stellt er einige FP wieder her, wobei für jeden besiegten Gegner zusätzliche FP wiederhergestellt werden.",
@@ -444,6 +471,7 @@
             "Params": [
                 {
                     "Text": "Ultimative Energiekosten",
+                    "ConditionId": "",
                     "Values": [
                         100,
                         100,
@@ -461,6 +489,7 @@
                 },
                 {
                     "Text": "Abklingzeit",
+                    "ConditionId": "",
                     "Values": [
                         "20Sek.",
                         "20Sek.",
@@ -478,6 +507,7 @@
                 },
                 {
                     "Text": "Ultimativer SDN-Multiplikator",
+                    "ConditionId": "",
                     "Values": [
                         "436%",
                         "479%",
@@ -495,6 +525,7 @@
                 },
                 {
                     "Text": "Grund-FP-Wiederherstellung",
+                    "ConditionId": "",
                     "Values": [
                         "20",
                         "20",
@@ -512,6 +543,7 @@
                 },
                 {
                     "Text": "Bonus-FP-Wiederherstellung pro besiegtes Ziel",
+                    "ConditionId": "",
                     "Values": [
                         "12",
                         "12",
@@ -529,6 +561,7 @@
                 },
                 {
                     "Text": "FP-Wiederherstellung-Limit",
+                    "ConditionId": "",
                     "Values": [
                         "100",
                         "100",
@@ -546,6 +579,7 @@
                 },
                 {
                     "Text": "Taumeln",
+                    "ConditionId": "",
                     "Values": [
                         "20",
                         "20",

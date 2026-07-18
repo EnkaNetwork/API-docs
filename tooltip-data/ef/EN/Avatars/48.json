@@ -1,0 +1,852 @@
+{
+    "StrId": "chr_0032_lizhiyan",
+    "Name": "Arcane",
+    "Rarity": 6,
+    "Element": "Natural",
+    "Profession": "CASTER",
+    "Conditions": {
+        "0": "lizhiyan_wisd",
+        "1": "lizhiyan_will"
+    },
+    "WeaponType": "Wand",
+    "MainAttrId": 41,
+    "SubAttrId": 42,
+    "AttributeNodes": {
+        "chr_0032_lizhiyan_5": {
+            "41": 10,
+            "42": 10
+        },
+        "chr_0032_lizhiyan_3": {
+            "41": 10,
+            "42": 10
+        },
+        "chr_0032_lizhiyan_1": {
+            "41": 8,
+            "42": 8
+        },
+        "chr_0032_lizhiyan_7": {
+            "41": 15,
+            "42": 15
+        }
+    },
+    "SkillInfoMap": {
+        "chr_0032_lizhiyan_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_lizhiyan_01",
+            "IconConditions": {
+                "lizhiyan_wisd": "icon_ultimate_skill_lizhiyan_01",
+                "lizhiyan_will": "icon_ultimate_skill_lizhiyan_02"
+            },
+            "Element": "Natural",
+            "Name": "Gloompurge",
+            "Desc": "Arcane creates a <@ba.key>Gloompurger Array</> that immediately deals <@ba.natur>Nature DMG</> to enemies within the area of effect (AOE).\nWhen hitting an enemy within the <@ba.key>Gloompurger Array</> with a Finisher or a <#ba.lastcombo>Final Strike</> performed by the controlled operator, the <@ba.key>Gloompurger Array</> unleashes a <@ba.key>Cluster Strike</> that deals Area DMG to the said enemy. This effect triggers up to 2 times.\nAfter triggering <@ba.key>Cluster Strike</> 2 times, the ultimate is switched to <@ba.key>Gloompurge Arcana</>.\n<@ba.key>Gloompurge Arcana</>: Deals <@ba.natur>Nature DMG</> to enemies within a large AOE.",
+            "Type": 3,
+            "Cooldown": 10,
+            "CostType": "UltimateSp",
+            "CostValue": 100,
+            "Params": [
+                {
+                    "Text": "Ultimate Energy Cost",
+                    "ConditionId": "",
+                    "Values": [
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100
+                    ]
+                },
+                {
+                    "Text": "Cooldown",
+                    "ConditionId": "",
+                    "Values": [
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s"
+                    ]
+                },
+                {
+                    "Text": "Gloompurger Array Creation DMG Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                },
+                {
+                    "Text": "Gloompurger Array Creation Stagger",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Gloompurger Array Duration (s)",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Forced Corrosion Duration (s)",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                },
+                {
+                    "Text": "Cluster Strike Total DMG Multiplier",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "160%",
+                        "176%",
+                        "192%",
+                        "208%",
+                        "224%",
+                        "240%",
+                        "256%",
+                        "272%",
+                        "288%",
+                        "308%",
+                        "332%",
+                        "360%"
+                    ]
+                },
+                {
+                    "Text": "Cluster Strike Total DMG Multiplier",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "160%",
+                        "176%",
+                        "192%",
+                        "208%",
+                        "224%",
+                        "240%",
+                        "256%",
+                        "272%",
+                        "288%",
+                        "308%",
+                        "332%",
+                        "360%"
+                    ]
+                },
+                {
+                    "Text": "Gloompurge Arcana DMG Multiplier",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "640%",
+                        "704%",
+                        "768%",
+                        "832%",
+                        "896%",
+                        "960%",
+                        "1024%",
+                        "1088%",
+                        "1152%",
+                        "1232%",
+                        "1328%",
+                        "1440%"
+                    ]
+                },
+                {
+                    "Text": "Gloompurge Arcana DMG Multiplier",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "160%",
+                        "176%",
+                        "192%",
+                        "208%",
+                        "224%",
+                        "240%",
+                        "256%",
+                        "272%",
+                        "288%",
+                        "308%",
+                        "332%",
+                        "360%"
+                    ]
+                },
+                {
+                    "Text": "Gloompurge Arcana Stagger",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0032_lizhiyan_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_lizhiyan_01",
+            "IconConditions": {
+                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
+                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
+            },
+            "Element": "Natural",
+            "Name": "Yinglung Stance IV",
+            "Desc": "0",
+            "Type": 2,
+            "Cooldown": 20,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "Cooldown",
+                    "ConditionId": "",
+                    "Values": [
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s"
+                    ]
+                },
+                {
+                    "Text": "Base DMG Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "35%",
+                        "39%",
+                        "42%",
+                        "46%",
+                        "50%",
+                        "53%",
+                        "57%",
+                        "60%",
+                        "64%",
+                        "68%",
+                        "73%",
+                        "80%"
+                    ]
+                },
+                {
+                    "Text": "Base Stagger",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "Imprisonment and Susceptibility Duration (s)",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4"
+                    ]
+                },
+                {
+                    "Text": "Imprisonment and Susceptibility Duration (s)",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6",
+                        "6"
+                    ]
+                },
+                {
+                    "Text": "Susceptibility",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%"
+                    ]
+                },
+                {
+                    "Text": "Base Susceptibility",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%",
+                        "4%"
+                    ]
+                },
+                {
+                    "Text": "Max Bonus Susceptibility from Will",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "7.5%",
+                        "7.5%",
+                        "7.5%",
+                        "8%"
+                    ]
+                },
+                {
+                    "Text": "Will Required for Max Bonus Susceptibility",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "560",
+                        "560",
+                        "560",
+                        "560",
+                        "560",
+                        "560",
+                        "560",
+                        "560",
+                        "600",
+                        "600",
+                        "600",
+                        "640"
+                    ]
+                },
+                {
+                    "Text": "Explosion DMG Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "53%",
+                        "59%",
+                        "64%",
+                        "69%",
+                        "75%",
+                        "80%",
+                        "85%",
+                        "91%",
+                        "96%",
+                        "103%",
+                        "111%",
+                        "120%"
+                    ]
+                },
+                {
+                    "Text": "Explosion Stagger",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "Bonus DMG Multiplier",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "222%",
+                        "244%",
+                        "266%",
+                        "289%",
+                        "311%",
+                        "333%",
+                        "355%",
+                        "377%",
+                        "400%",
+                        "427%",
+                        "461%",
+                        "500%"
+                    ]
+                },
+                {
+                    "Text": "Bonus Susceptibility Duration (s)",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2"
+                    ]
+                },
+                {
+                    "Text": "SP Return",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "28",
+                        "30",
+                        "30",
+                        "30"
+                    ]
+                },
+                {
+                    "Text": "Ultimate Energy Gain",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0032_lizhiyan_NormalAttack": {
+            "Icon": "skillicon/icon_attack_funnel",
+            "IconConditions": {
+                "lizhiyan_wisd": "icon_combo_skill_lizhiyan_01",
+                "lizhiyan_will": "icon_combo_skill_lizhiyan_02"
+            },
+            "Element": "Natural",
+            "Name": "Artillery Interdiction",
+            "Desc": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.natur>Nature DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>17</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.natur>Nature DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.natur>Nature DMG</> and recovers some SP.",
+            "Type": 0,
+            "Cooldown": 0,
+            "CostType": "UltimateSp",
+            "CostValue": 0,
+            "Params": [
+                {
+                    "Text": "BATK SEQ 1 Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "19%",
+                        "21%",
+                        "22%",
+                        "24%",
+                        "26%",
+                        "28%",
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "39%",
+                        "42%"
+                    ]
+                },
+                {
+                    "Text": "BATK SEQ 2 Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "21%",
+                        "23%",
+                        "26%",
+                        "28%",
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "41%",
+                        "44%",
+                        "48%"
+                    ]
+                },
+                {
+                    "Text": "BATK SEQ 3 Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "33%",
+                        "37%",
+                        "40%",
+                        "43%",
+                        "47%",
+                        "50%",
+                        "53%",
+                        "57%",
+                        "60%",
+                        "64%",
+                        "69%",
+                        "75%"
+                    ]
+                },
+                {
+                    "Text": "BATK SEQ 4 Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "36%",
+                        "39%",
+                        "43%",
+                        "46%",
+                        "50%",
+                        "53%",
+                        "57%",
+                        "61%",
+                        "64%",
+                        "69%",
+                        "74%",
+                        "80%"
+                    ]
+                },
+                {
+                    "Text": "BATK SEQ 5 Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "47%",
+                        "52%",
+                        "56%",
+                        "61%",
+                        "66%",
+                        "71%",
+                        "75%",
+                        "80%",
+                        "85%",
+                        "90%",
+                        "98%",
+                        "106%"
+                    ]
+                },
+                {
+                    "Text": "Finisher ATK Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Dive ATK Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "chr_0032_lizhiyan_NormalSkill": {
+            "Icon": "skillicon/icon_skill_lizhiyan_01",
+            "IconConditions": {
+                "lizhiyan_wisd": "icon_skill_lizhiyan_01",
+                "lizhiyan_will": "icon_skill_lizhiyan_02"
+            },
+            "Element": "Natural",
+            "Name": "Jadecrushing Grid",
+            "Desc": "Creates a <@ba.key>Jadecrushing Grid</> that deals <@ba.natur>Nature DMG</> and applies <#ba.naturalinflict>Nature Infliction</> to enemies within the area of effect.",
+            "Type": 1,
+            "Cooldown": 0,
+            "CostType": "Atb",
+            "CostValue": 100,
+            "Params": [
+                {
+                    "Text": "SP Cost",
+                    "ConditionId": "",
+                    "Values": [
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100
+                    ]
+                },
+                {
+                    "Text": "DMG Multiplier",
+                    "ConditionId": "lizhiyan_wisd",
+                    "Values": [
+                        "222%",
+                        "245%",
+                        "267%",
+                        "289%",
+                        "311%",
+                        "333%",
+                        "356%",
+                        "378%",
+                        "400%",
+                        "428%",
+                        "461%",
+                        "500%"
+                    ]
+                },
+                {
+                    "Text": "DMG Multiplier",
+                    "ConditionId": "lizhiyan_will",
+                    "Values": [
+                        "133%",
+                        "147%",
+                        "160%",
+                        "173%",
+                        "187%",
+                        "200%",
+                        "213%",
+                        "227%",
+                        "240%",
+                        "257%",
+                        "277%",
+                        "300%"
+                    ]
+                },
+                {
+                    "Text": "Stagger",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0032_lizhiyan_passive_skill_1_2": {
+            "Icon": "icon_talent_lizhiyan_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Weapon Honing",
+            "Desc": "<#ba.corrupt>Corrosion</> applied by Arcane lasts <@ba.vup>10</>s longer, and Max Resistance Reduction is increased to <@ba.vup>1.1</> times the original.",
+            "Type": 4
+        },
+        "fac_chr_0032_lizhiyan_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_flower",
+            "Name": "Botanophile γ",
+            "Desc": "Assign to Growth Chamber to grant vitrified plant growth rate +30%",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        },
+        "chr_0032_lizhiyan_passive_skill_1_1": {
+            "Icon": "icon_talent_lizhiyan_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Weapon Honing",
+            "Desc": "<#ba.corrupt>Corrosion</> applied by Arcane lasts <@ba.vup>5</>s longer, and Max Resistance Reduction is increased to <@ba.vup>1.05</> times the original.",
+            "Type": 4
+        },
+        "fac_chr_0032_lizhiyan_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_mineral",
+            "Name": "Pluck the Mountain, Boil the Sea γ",
+            "Desc": "Assign to Growth Chamber to grant rare mineral growth rate +30%",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0032_lizhiyan_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_mineral",
+            "Name": "Pluck the Mountain, Boil the Sea β",
+            "Desc": "Assign to Growth Chamber to grant rare mineral growth rate +20%",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0032_lizhiyan_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_flower",
+            "Name": "Botanophile β",
+            "Desc": "Assign to Growth Chamber to grant vitrified plant growth rate +20%",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "chr_0032_lizhiyan_passive_skill_0_2": {
+            "Icon": "icon_talent_lizhiyan_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Tactical Planning",
+            "Desc": "When Arcane's Intellect ≥ Will, switch skill type to <@ba.key>Array Arcana: INT</>. If not, then switch to <@ba.key>Array Arcana: WILL</>.\nUltimate <@ba.key>Gloompurge</> improved:\n<@ba.key>Array Arcana: INT</>:\n- During the ultimate, Arcane gains <@ba.vup>24%</> <#ba.spellenhance>Arts Amp</>.\n<@ba.key>Array Arcana: WILL</>:\n- When <@ba.key>Gloompurger Array</> (ultimate sequence 1) and <@ba.key>Gloompurge Arcana</> (ultimate sequence 2) deal DMG to the enemy, they also apply <@ba.vup>[Will × 0.02%]</> <#ba.naturalvul>Nature Susceptibility</> and <#ba.crystvul>Cryo Susceptibility</> (max: <@ba.vup>12.8%</>) for <@ba.vup>10</>s. This effect cannot stack.\n<@ba.info>Attribute requirements for the 2 types of Array Arcana only include effects from operator levels, talents, potentials, and attribute bonuses provided by equipped gear and weapons.</>",
+            "Type": 4
+        },
+        "chr_0032_lizhiyan_passive_skill_0_1": {
+            "Icon": "icon_talent_lizhiyan_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Tactical Planning",
+            "Desc": "When Arcane's Intellect ≥ Will, switch skill type to <@ba.key>Array Arcana: INT</>. If not, then switch to <@ba.key>Array Arcana: WILL</>.\n<@ba.info>Attribute requirements for the 2 types of Array Arcana only include effects from operator levels, talents, potentials, and attribute bonuses provided by equipped gear and weapons.</>",
+            "Type": 4
+        }
+    },
+    "Potentials": {
+        "1": {
+            "Name": "Watcher of the Sea",
+            "Desc": "Combo skill <@ba.key>Yinglung Stance IV</> improved:\nDMG Multiplier is increased to <@ba.vup>1.3</> times the original.\n<@ba.key>Array Arcana: INT</>: Hitting an enemy under <@ba.key>Imprisonment</> with Arcane's battle skill <#ba.return>returns</> <@ba.vup>10</> additional SP.\n<@ba.key>Array Arcana: WILL</>: Effects of <#ba.naturalvul>Nature Susceptibility</> and <#ba.crystvul>Cryo Susceptibility</> applied <@ba.vup>+6%</>."
+        },
+        "2": {
+            "Name": "Heart of Ice Cold Ferrium",
+            "Desc": "Intellect and Will <@ba.vup>+15</>, Arts Intensity <@ba.vup>+16</>."
+        },
+        "3": {
+            "Name": "Wielder of Stone",
+            "Desc": "Talent <@ba.key>Weapon Honing</> improved:\n<#ba.corrupt>Corrosion</> applied by Arcane lasts <@ba.vup>5</>s longer, and Max Resistance Reduction is increased by <@ba.vup>20%</> of the original."
+        },
+        "4": {
+            "Name": "Mind of Refined Steel",
+            "Desc": "Ultimate <@ba.key>Gloompurge</> improved: Ultimate Energy cost <@ba.vup>-15%</>."
+        },
+        "5": {
+            "Name": "Homeward Glance",
+            "Desc": "Ultimate <@ba.key>Gloompurge</> improved:\n<@ba.key>Array Arcana: INT</>: During the ultimate, Arcane gains <@ba.vup>16%</> <#ba.spellenhance>Arts Amp</>. DMG Multiplier of <@ba.key>Gloompurge Arcana</> (ultimate sequence 2) is increased to <@ba.vup>1.3</> times the original.\n<@ba.key>Array Arcana: WILL</>: Further increases the effects of <#ba.naturalvul>Nature Susceptibility</> and <#ba.crystvul>Cryo Susceptibility</> applied by <@ba.key>Gloompurger Array</> (ultimate sequence 1) and <@ba.key>Gloompurge Arcana</> (ultimate sequence 2) by <@ba.vup>+7%</>. After casting <@ba.key>Gloompurge Arcana</> (ultimate sequence 2), if combo skill <@ba.key>Yinglung Stance IV</> is still in its cooldown, immediately shorten the length of the cooldown by <@ba.vup>30%</>."
+        }
+    }
+}

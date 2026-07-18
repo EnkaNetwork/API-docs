@@ -4,6 +4,7 @@
     "Rarity": 5,
     "Element": "Cryst",
     "Profession": "DEFENDER",
+    "Conditions": {},
     "WeaponType": "Claymores",
     "MainAttrId": 39,
     "SubAttrId": 42,
@@ -24,6 +25,7 @@
     "SkillInfoMap": {
         "chr_0014_aurora_NormalSkill": {
             "Icon": "skillicon/icon_skill_aurora_01",
+            "IconConditions": {},
             "Element": "Cryst",
             "Name": "포화성 방어",
             "Desc": "방패를 들어 공격을 막으며 자신과 주변의 오퍼레이터에게 <#ba.guard>비호</>를 부여하고, 일정 스킬 게이지를 <#ba.return>반환</>합니다.\n방패를 들고 있는 동안 공격을 받으면 반격하며 적에게 <@ba.cryst>냉기 피해</>를 주고 <#ba.crystinflict>냉기 부착</>을 부여합니다.",
@@ -34,6 +36,7 @@
             "Params": [
                 {
                     "Text": "스킬 게이지 소모",
+                    "ConditionId": "",
                     "Values": [
                         100,
                         100,
@@ -51,6 +54,7 @@
                 },
                 {
                     "Text": "피해 배율",
+                    "ConditionId": "",
                     "Values": [
                         "200%",
                         "220%",
@@ -68,6 +72,7 @@
                 },
                 {
                     "Text": "불균형치",
+                    "ConditionId": "",
                     "Values": [
                         "20",
                         "20",
@@ -85,6 +90,7 @@
                 },
                 {
                     "Text": "비호 효과",
+                    "ConditionId": "",
                     "Values": [
                         "90%",
                         "90%",
@@ -102,6 +108,7 @@
                 },
                 {
                     "Text": "스킬 게이지 반환",
+                    "ConditionId": "",
                     "Values": [
                         "30",
                         "30",
@@ -121,6 +128,7 @@
         },
         "chr_0014_aurora_ComboSkill": {
             "Icon": "skillicon/icon_combo_skill_aurora_01",
+            "IconConditions": {},
             "Element": "Cryst",
             "Name": "극지 구조",
             "Desc": "메인 컨트롤 오퍼레이터가 공격받아 생명력이 60% 미만일 때 사용할 수 있습니다.\n스노우샤인이 대상에게 설원 구조 조수를 던집니다. 목표에 명중하면 즉시 주변의 오퍼레이터를 대량으로 <@ba.heal>치유</>하고, 일정 시간 동안 범위 내의 오퍼레이터를 지속적으로 <@ba.heal>치유</>합니다.\n의지는 치유량을 추가로 증가시킵니다.",
@@ -131,6 +139,7 @@
             "Params": [
                 {
                     "Text": "쿨타임",
+                    "ConditionId": "",
                     "Values": [
                         "25초",
                         "25초",
@@ -148,6 +157,7 @@
                 },
                 {
                     "Text": "초기 치유 기초 수치",
+                    "ConditionId": "",
                     "Values": [
                         "96",
                         "115",
@@ -165,6 +175,7 @@
                 },
                 {
                     "Text": "의지 1포인트마다 증가하는 초기 치유 수치",
+                    "ConditionId": "",
                     "Values": [
                         "0.22",
                         "0.27",
@@ -182,6 +193,7 @@
                 },
                 {
                     "Text": "지속 치유 기초 수치",
+                    "ConditionId": "",
                     "Values": [
                         "24",
                         "29",
@@ -199,6 +211,7 @@
                 },
                 {
                     "Text": "의지 1포인트마다 증가하는 지속 치유 수치",
+                    "ConditionId": "",
                     "Values": [
                         "0.06",
                         "0.07",
@@ -216,6 +229,7 @@
                 },
                 {
                     "Text": "지속 치유 간격(초)",
+                    "ConditionId": "",
                     "Values": [
                         "0.5",
                         "0.5",
@@ -233,6 +247,7 @@
                 },
                 {
                     "Text": "지속 시간(초)",
+                    "ConditionId": "",
                     "Values": [
                         "3",
                         "3",
@@ -250,6 +265,7 @@
                 },
                 {
                     "Text": "획득하는 궁극기 에너지",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -269,6 +285,7 @@
         },
         "chr_0014_aurora_NormalAttack": {
             "Icon": "skillicon/icon_attack_claym",
+            "IconConditions": {},
             "Element": "Physical",
             "Name": "저체온 강타",
             "Desc": "일반 공격:\n적에게 최대 3단 공격을 하여 <@ba.pd>물리 피해</>를 줍니다. 메인 컨트롤 오퍼레이터라면 <#ba.lastcombo>강력한 일격</>이 <@ba.poise>23</>포인트의 불균형 피해를 줍니다.\n\n낙하 공격:\n공중에 떴을 때, 일반 공격을 사용하면 낙하하며 주변의 적을 공격하고 <@ba.pd>물리 피해</>를 줍니다.\n\n처형 공격:\n주변에 불균형 상태의 적이 있을 때, 일반 공격을 사용하면 해당 적을 처형하여 대량의 <@ba.pd>물리 피해</>를 주고 일정량의 스킬 게이지를 회복합니다.",
@@ -279,6 +296,7 @@
             "Params": [
                 {
                     "Text": "일반 공격 제1단계 배율",
+                    "ConditionId": "",
                     "Values": [
                         "55%",
                         "61%",
@@ -296,6 +314,7 @@
                 },
                 {
                     "Text": "일반 공격 제2단계 배율",
+                    "ConditionId": "",
                     "Values": [
                         "59%",
                         "64%",
@@ -313,6 +332,7 @@
                 },
                 {
                     "Text": "일반 공격 제3단계 배율",
+                    "ConditionId": "",
                     "Values": [
                         "100%",
                         "110%",
@@ -330,6 +350,7 @@
                 },
                 {
                     "Text": "처형 공격 배율",
+                    "ConditionId": "",
                     "Values": [
                         "400%",
                         "440%",
@@ -347,6 +368,7 @@
                 },
                 {
                     "Text": "낙하 공격 배율",
+                    "ConditionId": "",
                     "Values": [
                         "80%",
                         "88%",
@@ -366,6 +388,7 @@
         },
         "chr_0014_aurora_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_aurora_01",
+            "IconConditions": {},
             "Element": "Cryst",
             "Name": "살얼음 추위",
             "Desc": "분사 장치를 이용하여 점프한 다음 앞으로 방패를 내리찍습니다. 범위 내의 적에게 대량의 <@ba.cryst>냉기 피해</>를 주고, 수초 동안 지속되는 <@ba.key>빙설 지대</>를 생성하여 지속적으로 적에게 <@ba.cryst>냉기 피해</>를 줍니다. 적이 일정 시간 동안 <@ba.key>빙설 지대</>에서 벗어나지 못할 경우, 강제 <#ba.frozen>동결</>됩니다.",
@@ -376,6 +399,7 @@
             "Params": [
                 {
                     "Text": "필요한 궁극기 에너지",
+                    "ConditionId": "",
                     "Values": [
                         80,
                         80,
@@ -393,6 +417,7 @@
                 },
                 {
                     "Text": "쿨타임",
+                    "ConditionId": "",
                     "Values": [
                         "20초",
                         "20초",
@@ -410,6 +435,7 @@
                 },
                 {
                     "Text": "폭발 피해 배율",
+                    "ConditionId": "",
                     "Values": [
                         "200%",
                         "220%",
@@ -427,6 +453,7 @@
                 },
                 {
                     "Text": "불균형치",
+                    "ConditionId": "",
                     "Values": [
                         "15",
                         "15",
@@ -444,6 +471,7 @@
                 },
                 {
                     "Text": "지속 피해 배율",
+                    "ConditionId": "",
                     "Values": [
                         "29%",
                         "32%",
@@ -461,6 +489,7 @@
                 },
                 {
                     "Text": "지속 피해 간격(초)",
+                    "ConditionId": "",
                     "Values": [
                         "0.5",
                         "0.5",
@@ -478,6 +507,7 @@
                 },
                 {
                     "Text": "지속 시간(초)",
+                    "ConditionId": "",
                     "Values": [
                         "5",
                         "5",

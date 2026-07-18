@@ -4,6 +4,7 @@
     "Rarity": 6,
     "Element": "Pulse",
     "Profession": "ASSAULT",
+    "Conditions": {},
     "WeaponType": "Wand",
     "MainAttrId": 42,
     "SubAttrId": 41,
@@ -24,6 +25,7 @@
     "SkillInfoMap": {
         "chr_0030_zhuangfy_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_zhuangfy_01",
+            "IconConditions": {},
             "Element": "Pulse",
             "Name": "Tempestade Devastadora",
             "Desc": "Transforma-se no <@ba.key>Empíreo da Verdade</> que concede estas melhorias:\nOs ataques básicos de Zhuang Fangyi são aprimorados e suas ações são mais difíceis de interromper.\nA habilidade de batalha <@ba.key>Mantra da Ruptura</> ganha um Multiplicador DNO maior e maior alcance de efeito. O Golpe do Trovão final também aplica <#ba.pulseinflict>Inflição Elétrica</> ao alvo atingido.\nO combo de habilidades <@ba.key>Sopro da Transformação</> ganha um Multiplicador DNO maior, o tempo de recarga torna-se 4 vezes mais rápido e os efeitos são aplicados a inimigos dentro de uma pequena área.\nA primeira conjuração da habilidade de batalha <@ba.key>Mantra da Ruptura</> não consome PH nem <#ba.conduct>Eletrificação</> e, se houver um alvo disponível, a habilidade de batalha tem a garantia de criar 3 <@ba.key>Lâminas Relampejantes</> mesmo se o alvo não tiver <#ba.conduct>Eletrificação</>.",
@@ -34,6 +36,7 @@
             "Params": [
                 {
                     "Text": "Custo de Energia Suprema",
+                    "ConditionId": "",
                     "Values": [
                         240,
                         240,
@@ -51,6 +54,7 @@
                 },
                 {
                     "Text": "Tempo de Recarga",
+                    "ConditionId": "",
                     "Values": [
                         "15s",
                         "15s",
@@ -68,6 +72,7 @@
                 },
                 {
                     "Text": "Duração (s)",
+                    "ConditionId": "",
                     "Values": [
                         "25",
                         "25",
@@ -85,6 +90,7 @@
                 },
                 {
                     "Text": "Durante a Habilidade Suprema: Multiplicador SEQ 1 ATQB",
+                    "ConditionId": "",
                     "Values": [
                         "67%",
                         "73%",
@@ -102,6 +108,7 @@
                 },
                 {
                     "Text": "Durante a Habilidade Suprema: Multiplicador SEQ 2 ATQB",
+                    "ConditionId": "",
                     "Values": [
                         "94%",
                         "103%",
@@ -119,6 +126,7 @@
                 },
                 {
                     "Text": "Durante a Habilidade Suprema: Multiplicador SEQ 3 ATQB",
+                    "ConditionId": "",
                     "Values": [
                         "134%",
                         "147%",
@@ -138,6 +146,7 @@
         },
         "chr_0030_zhuangfy_ComboSkill": {
             "Icon": "skillicon/icon_combo_skill_zhuangfy_01",
+            "IconConditions": {},
             "Element": "Pulse",
             "Name": "Sopro da Transformação",
             "Desc": "ACIONADOR DO COMBO: Quando o <#ba.lastcombo>Golpe Final</> ou Finalizador do operador controlado atinge um inimigo com <#ba.pulseinflict>Inflição Elétrica</>.\nZhuang Fangyi cria Relâmpagos de Xiranita que atacam o inimigo e causam <@ba.pulse>DNO Elétrico</>. Se o Conjunto atingir um inimigo com acúmulos de <#ba.pulseinflict>Inflição Elétrica</>, ele <#ba.consume>consumirá</> esses acúmulos de <#ba.pulseinflict>Inflição Elétrica</>, aplicará <#ba.conduct>Eletrificação</> à força e concederá Energia Suprema com base no número de acúmulos <#ba.consume>consumidos</>.\nSe a <#ba.conduct>Eletrificação</> for aplicada à força a um inimigo que já tem <#ba.conduct>Eletrificação</>, então aplicará <#ba.statuslevel>Nível de Status</> + 1 à <#ba.conduct>Eletrificação</> do inimigo.",
@@ -148,6 +157,7 @@
             "Params": [
                 {
                     "Text": "Tempo de Recarga",
+                    "ConditionId": "",
                     "Values": [
                         "18s",
                         "18s",
@@ -165,6 +175,7 @@
                 },
                 {
                     "Text": "Multiplicador DNO",
+                    "ConditionId": "",
                     "Values": [
                         "160%",
                         "176%",
@@ -182,6 +193,7 @@
                 },
                 {
                     "Text": "Desorientação",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -199,6 +211,7 @@
                 },
                 {
                     "Text": "Ganho de Energia Suprema",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -216,6 +229,7 @@
                 },
                 {
                     "Text": "Energia Suprema Adicional por Acúmulo de Inflição",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -233,6 +247,7 @@
                 },
                 {
                     "Text": "Durante a Habilidade Suprema: Multiplicador DNO",
+                    "ConditionId": "",
                     "Values": [
                         "240%",
                         "264%",
@@ -252,6 +267,7 @@
         },
         "chr_0030_zhuangfy_NormalAttack": {
             "Icon": "skillicon/icon_attack_funnel",
+            "IconConditions": {},
             "Element": "Pulse",
             "Name": "Artes Chocantes",
             "Desc": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.pulse>DNO Elétrico</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>18</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.pulse>DNO Elétrico</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um finalizador que causa uma enorme quantidade de <@ba.pulse>DNO Elétrico</> e recupera PH.",
@@ -262,6 +278,7 @@
             "Params": [
                 {
                     "Text": "Multiplicador SEQ 1 ATQB",
+                    "ConditionId": "",
                     "Values": [
                         "16%",
                         "18%",
@@ -279,6 +296,7 @@
                 },
                 {
                     "Text": "Multiplicador SEQ 2 ATQB",
+                    "ConditionId": "",
                     "Values": [
                         "24%",
                         "26%",
@@ -296,6 +314,7 @@
                 },
                 {
                     "Text": "Multiplicador SEQ 3 ATQB",
+                    "ConditionId": "",
                     "Values": [
                         "32%",
                         "35%",
@@ -313,6 +332,7 @@
                 },
                 {
                     "Text": "Multiplicador SEQ 4 ATQB",
+                    "ConditionId": "",
                     "Values": [
                         "45%",
                         "50%",
@@ -330,6 +350,7 @@
                 },
                 {
                     "Text": "Multiplicador SEQ 5 ATQB",
+                    "ConditionId": "",
                     "Values": [
                         "48%",
                         "53%",
@@ -347,6 +368,7 @@
                 },
                 {
                     "Text": "Multiplicador ATQ Finalizador",
+                    "ConditionId": "",
                     "Values": [
                         "400%",
                         "440%",
@@ -364,6 +386,7 @@
                 },
                 {
                     "Text": "Multiplicador ATQ Mergulho",
+                    "ConditionId": "",
                     "Values": [
                         "80%",
                         "88%",
@@ -383,6 +406,7 @@
         },
         "chr_0030_zhuangfy_NormalSkill": {
             "Icon": "skillicon/icon_skill_zhuangfy_01",
+            "IconConditions": {},
             "Element": "Pulse",
             "Name": "Mantra da Ruptura",
             "Desc": "<#ba.consume>Consome</> a <#ba.conduct>Eletrificação</> do alvo para aumentar o Multiplicador DNO desta habilidade de batalha e criar <@ba.key>Lâminas Relampejantes</> [<#ba.statuslevel>Nível de Status</> de <#ba.conduct>Eletrificação</> <#ba.consume>consumida</> <@ba.key>+ 1</>]. Se o campo de batalha tiver menos de 3 <@ba.key>Lâminas Relampejantes</>, o Mantra da Ruptura ainda poderá criar 1 <@ba.key>Lâmina Relampejante</>, mesmo se ele não <#ba.consume>consumir</> a <#ba.conduct>Eletrificação</> de nenhum alvo.\nZhuang Fangyi então canaliza todas as <@ba.key>Lâminas Relampejantes</> por perto para desferir Golpes do Trovão sucessivos no alvo, causando <@ba.pulse>DNO Elétrico</> e concedendo Energia Suprema de bônus, além de fazer com que o Golpe do Trovão final cause 6 vezes o DNO.\n<@ba.info>Uma única conjuração de habilidade de batalha pode criar no máximo 3 Lâminas Relampejantes.</>",
@@ -393,6 +417,7 @@
             "Params": [
                 {
                     "Text": "Custos de PH",
+                    "ConditionId": "",
                     "Values": [
                         100,
                         100,
@@ -410,6 +435,7 @@
                 },
                 {
                     "Text": "Multiplicador DNO do Golpe do Trovão",
+                    "ConditionId": "",
                     "Values": [
                         "20%",
                         "22%",
@@ -427,6 +453,7 @@
                 },
                 {
                     "Text": "Desorientação Total",
+                    "ConditionId": "",
                     "Values": [
                         "15",
                         "15",
@@ -444,6 +471,7 @@
                 },
                 {
                     "Text": "Multiplicador DNO Bônus por Nível de Status de Eletrificação Consumida",
+                    "ConditionId": "",
                     "Values": [
                         "3%",
                         "4%",
@@ -461,6 +489,7 @@
                 },
                 {
                     "Text": "Energia Suprema de Bônus por Golpe do Trovão",
+                    "ConditionId": "",
                     "Values": [
                         "6",
                         "6",
@@ -478,6 +507,7 @@
                 },
                 {
                     "Text": "Limite da Lâmina Relampejante",
+                    "ConditionId": "",
                     "Values": [
                         "9",
                         "9",
@@ -495,6 +525,7 @@
                 },
                 {
                     "Text": "Duração da Lâmina Relampejante (s)",
+                    "ConditionId": "",
                     "Values": [
                         "36",
                         "36",
@@ -512,6 +543,7 @@
                 },
                 {
                     "Text": "Durante a Habilidade Suprema: Multiplicador DNO do Golpe do Trovão",
+                    "ConditionId": "",
                     "Values": [
                         "36%",
                         "40%",
@@ -529,6 +561,7 @@
                 },
                 {
                     "Text": "Durante a Habilidade Suprema: Multiplicador DNO Bônus por Nível de Status de Eletrificação Consumida",
+                    "ConditionId": "",
                     "Values": [
                         "8%",
                         "9%",

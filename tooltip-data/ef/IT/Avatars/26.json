@@ -4,6 +4,7 @@
     "Rarity": 6,
     "Element": "Physical",
     "Profession": "GUARD",
+    "Conditions": {},
     "WeaponType": "Lance",
     "MainAttrId": 40,
     "SubAttrId": 39,
@@ -24,9 +25,10 @@
     "SkillInfoMap": {
         "chr_0015_lifeng_NormalSkill": {
             "Icon": "skillicon/icon_skill_lifeng_01",
+            "IconConditions": {},
             "Element": "Physical",
             "Name": "Maledizione torbida",
-            "Desc": "Agita l'arma ad asta più volte per sferrare due colpi che infliggono <@ba.pd>danni fisici</>, poi colpisce con forza il suolo per infliggere <@ba.pd>danni fisici</> e <#ba.knockdown>Abbattimento</> a tutti i nemici nel raggio d'azione. \nSe il nemico che subisce l'ultimo colpo di questa abilità non ha accumuli di <#ba.noguard>Vulnerabilità</>, applica invece <#ba.physicalvul>Suscettibilità fisica</> a quel nemico.",
+            "Desc": "Agita l'arma ad asta più volte per sferrare 2 colpi che infliggono <@ba.pd>danni fisici</>, poi colpisce con forza il suolo per infliggere <@ba.pd>danni fisici</> e <#ba.knockdown>Abbattimento</> a tutti i nemici nel raggio d'azione. \nSe il nemico che subisce l'ultimo colpo di questa abilità non ha accumuli di <#ba.noguard>Vulnerabilità</>, applica anche <#ba.physicalvul>Suscettibilità fisica</> a quel nemico.",
             "Type": 1,
             "Cooldown": 0,
             "CostType": "Atb",
@@ -34,6 +36,7 @@
             "Params": [
                 {
                     "Text": "Costo PA",
+                    "ConditionId": "",
                     "Values": [
                         100,
                         100,
@@ -51,6 +54,7 @@
                 },
                 {
                     "Text": "Moltiplicatore danni SEQ 1",
+                    "ConditionId": "",
                     "Values": [
                         "38%",
                         "42%",
@@ -68,6 +72,7 @@
                 },
                 {
                     "Text": "Moltiplicatore danni SEQ 2",
+                    "ConditionId": "",
                     "Values": [
                         "38%",
                         "42%",
@@ -85,6 +90,7 @@
                 },
                 {
                     "Text": "Moltiplicatore danni SEQ 3",
+                    "ConditionId": "",
                     "Values": [
                         "119%",
                         "131%",
@@ -102,6 +108,7 @@
                 },
                 {
                     "Text": "Vacillamento SEQ 3",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -119,6 +126,7 @@
                 },
                 {
                     "Text": "Suscettibilità fisica",
+                    "ConditionId": "",
                     "Values": [
                         "5%",
                         "5%",
@@ -136,6 +144,7 @@
                 },
                 {
                     "Text": "Durata Suscettibilità fisica (s)",
+                    "ConditionId": "",
                     "Values": [
                         "12",
                         "12",
@@ -155,6 +164,7 @@
         },
         "chr_0015_lifeng_ComboSkill": {
             "Icon": "skillicon/icon_combo_skill_lifeng_01",
+            "IconConditions": {},
             "Element": "Physical",
             "Name": "Furia dell'avatar",
             "Desc": "ATTIVAZIONE COMBO: quando l'operatore controllato sferra un <#ba.lastcombo>colpo finale</> contro un nemico con <#ba.physicalvul>Suscettibilità fisica</> o <#ba.fracture>Sfondamento</>. \nSguinzaglia un avatar che sferra una stoccata con la lancia per infliggere <@ba.pd>danni fisici</> e conferisce <#ba.combo>Concatenamento</>.",
@@ -165,6 +175,7 @@
             "Params": [
                 {
                     "Text": "Tempo di recupero",
+                    "ConditionId": "",
                     "Values": [
                         "16s",
                         "16s",
@@ -182,6 +193,7 @@
                 },
                 {
                     "Text": "Moltiplicatore danni SEQ 1",
+                    "ConditionId": "",
                     "Values": [
                         "47%",
                         "51%",
@@ -199,6 +211,7 @@
                 },
                 {
                     "Text": "Moltiplicatore danni SEQ 2",
+                    "ConditionId": "",
                     "Values": [
                         "167%",
                         "183%",
@@ -216,6 +229,7 @@
                 },
                 {
                     "Text": "Vacillamento SEQ 2",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -233,6 +247,7 @@
                 },
                 {
                     "Text": "Durata combo (s)",
+                    "ConditionId": "",
                     "Values": [
                         "20",
                         "20",
@@ -250,6 +265,7 @@
                 },
                 {
                     "Text": "Incremento energia suprema",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -269,6 +285,7 @@
         },
         "chr_0015_lifeng_NormalAttack": {
             "Icon": "skillicon/icon_attack_lance",
+            "IconConditions": {},
             "Element": "Physical",
             "Name": "Rovina",
             "Desc": "ATTACCO BASE: \nsequenza di massimo quattro attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>19</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA.",
@@ -279,6 +296,7 @@
             "Params": [
                 {
                     "Text": "Moltiplicatore SEQ ATTB 1",
+                    "ConditionId": "",
                     "Values": [
                         "24%",
                         "27%",
@@ -296,6 +314,7 @@
                 },
                 {
                     "Text": "Moltiplicatore SEQ ATTB 2",
+                    "ConditionId": "",
                     "Values": [
                         "29%",
                         "32%",
@@ -313,6 +332,7 @@
                 },
                 {
                     "Text": "Moltiplicatore SEQ ATTB 3",
+                    "ConditionId": "",
                     "Values": [
                         "35%",
                         "39%",
@@ -330,6 +350,7 @@
                 },
                 {
                     "Text": "Moltiplicatore SEQ ATTB 4",
+                    "ConditionId": "",
                     "Values": [
                         "68%",
                         "74%",
@@ -347,6 +368,7 @@
                 },
                 {
                     "Text": "Moltiplicatore ATT mossa letale",
+                    "ConditionId": "",
                     "Values": [
                         "400%",
                         "440%",
@@ -364,6 +386,7 @@
                 },
                 {
                     "Text": "Moltiplicatore ATT dall'alto",
+                    "ConditionId": "",
                     "Values": [
                         "80%",
                         "88%",
@@ -383,6 +406,7 @@
         },
         "chr_0015_lifeng_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_lifeng_01",
+            "IconConditions": {},
             "Element": "Physical",
             "Name": "Cuore inamovibile",
             "Desc": "Sguinzaglia un avatar che esegue un colpo di Vajra l'Inamovibile. Il colpo infligge <@ba.pd>danni fisici</> e <#ba.knockdown>Abbattimento</> a tutti i nemici in un grande raggio d'azione e li spinge verso il centro dell'area. Dopo un po' di tempo, il colpo infligge nuovamente ingenti <@ba.pd>danni fisici</> e <#ba.knockdown>Abbattimento</> ai nemici ancora all'interno dell'area.\nSe l'abilità <#ba.consume>consuma</> un <#ba.combo>Concatenamento</>, sferra un altro colpo che infligge ulteriori <@ba.pd>danni fisici</>.",
@@ -393,6 +417,7 @@
             "Params": [
                 {
                     "Text": "Costo energia suprema",
+                    "ConditionId": "",
                     "Values": [
                         90,
                         90,
@@ -410,6 +435,7 @@
                 },
                 {
                     "Text": "Tempo di recupero",
+                    "ConditionId": "",
                     "Values": [
                         "15s",
                         "15s",
@@ -427,6 +453,7 @@
                 },
                 {
                     "Text": "Moltiplicatore danni SEQ 1",
+                    "ConditionId": "",
                     "Values": [
                         "178%",
                         "196%",
@@ -444,6 +471,7 @@
                 },
                 {
                     "Text": "Vacillamento SEQ 1",
+                    "ConditionId": "",
                     "Values": [
                         "5",
                         "5",
@@ -461,6 +489,7 @@
                 },
                 {
                     "Text": "Moltiplicatore danni SEQ 2",
+                    "ConditionId": "",
                     "Values": [
                         "178%",
                         "196%",
@@ -478,6 +507,7 @@
                 },
                 {
                     "Text": "Vacillamento SEQ 2",
+                    "ConditionId": "",
                     "Values": [
                         "5",
                         "5",
@@ -495,6 +525,7 @@
                 },
                 {
                     "Text": "Moltiplicatore danni ATT aggiuntivo",
+                    "ConditionId": "",
                     "Values": [
                         "267%",
                         "294%",
@@ -512,6 +543,7 @@
                 },
                 {
                     "Text": "Vacillamento ATT aggiuntivo",
+                    "ConditionId": "",
                     "Values": [
                         "5",
                         "5",

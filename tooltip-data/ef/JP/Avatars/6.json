@@ -4,6 +4,7 @@
     "Rarity": 6,
     "Element": "Fire",
     "Profession": "DEFENDER",
+    "Conditions": {},
     "WeaponType": "Claymores",
     "MainAttrId": 39,
     "SubAttrId": 42,
@@ -24,6 +25,7 @@
     "SkillInfoMap": {
         "chr_0009_azrila_NormalSkill": {
             "Icon": "skillicon/icon_skill_azrila_01",
+            "IconConditions": {},
             "Element": "Fire",
             "Name": "出征",
             "Desc": "跳び上がって前方の地面に重い打撃を放ち、扇形範囲内の敵に<@ba.fire>灼熱ダメージ</>と<#ba.knockdown>転倒</>効果を与える。\n発動中に敵からダメージを受けた場合、命中するときに追加で一定量のブレイク値を与える。",
@@ -34,6 +36,7 @@
             "Params": [
                 {
                     "Text": "SP消費",
+                    "ConditionId": "",
                     "Values": [
                         100,
                         100,
@@ -51,6 +54,7 @@
                 },
                 {
                     "Text": "ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "173%",
                         "191%",
@@ -68,6 +72,7 @@
                 },
                 {
                     "Text": "ブレイク値",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -85,6 +90,7 @@
                 },
                 {
                     "Text": "被攻撃による追加ブレイク値",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -104,6 +110,7 @@
         },
         "chr_0009_azrila_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_azrila_01",
+            "IconConditions": {},
             "Element": "Fire",
             "Name": "誓約の炎",
             "Desc": "地面を強く叩き付け、周囲の敵に<@ba.fire>灼熱ダメージ</>を与える。同時に、チーム全員はエンバーの最大HPに基づく<#ba.shield>シールド</>を獲得する。",
@@ -114,6 +121,7 @@
             "Params": [
                 {
                     "Text": "必殺チャージ消費",
+                    "ConditionId": "",
                     "Values": [
                         100,
                         100,
@@ -131,6 +139,7 @@
                 },
                 {
                     "Text": "クールタイム",
+                    "ConditionId": "",
                     "Values": [
                         "20秒",
                         "20秒",
@@ -148,6 +157,7 @@
                 },
                 {
                     "Text": "ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "289%",
                         "318%",
@@ -165,6 +175,7 @@
                 },
                 {
                     "Text": "ブレイク値",
+                    "ConditionId": "",
                     "Values": [
                         "25",
                         "25",
@@ -182,6 +193,7 @@
                 },
                 {
                     "Text": "シールド変換割合（HP）",
+                    "ConditionId": "",
                     "Values": [
                         "18%",
                         "18%",
@@ -199,6 +211,7 @@
                 },
                 {
                     "Text": "シールド持続時間（秒）",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -218,6 +231,7 @@
         },
         "chr_0009_azrila_ComboSkill": {
             "Icon": "skillicon/icon_combo_skill_azrila_01",
+            "IconConditions": {},
             "Element": "Physical",
             "Name": "前線支援",
             "Desc": "操作中のオペレーターが攻撃を受けると発動可能。\n敵に向かって跳び上がり、重い打撃を放つ。<@ba.pd>物理ダメージ</>と<#ba.knockdown>転倒</>効果を与える。操作中のオペレーターのHPを回復し、回復量は意志の値に応じて追加でアップする。",
@@ -228,6 +242,7 @@
             "Params": [
                 {
                     "Text": "クールタイム",
+                    "ConditionId": "",
                     "Values": [
                         "19秒",
                         "19秒",
@@ -245,6 +260,7 @@
                 },
                 {
                     "Text": "ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "102%",
                         "112%",
@@ -262,6 +278,7 @@
                 },
                 {
                     "Text": "ブレイク値",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -279,6 +296,7 @@
                 },
                 {
                     "Text": "基礎回復値",
+                    "ConditionId": "",
                     "Values": [
                         "300",
                         "360",
@@ -296,6 +314,7 @@
                 },
                 {
                     "Text": "意志1ごとの回復値UP",
+                    "ConditionId": "",
                     "Values": [
                         "0.7",
                         "0.84",
@@ -313,6 +332,7 @@
                 },
                 {
                     "Text": "必殺チャージ回復量",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -332,6 +352,7 @@
         },
         "chr_0009_azrila_NormalAttack": {
             "Icon": "skillicon/icon_attack_claym",
+            "IconConditions": {},
             "Element": "Physical",
             "Name": "突陣の剣技",
             "Desc": "通常攻撃：\n最大4段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>25</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。",
@@ -342,6 +363,7 @@
             "Params": [
                 {
                     "Text": "通常攻撃1段目ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "38%",
                         "42%",
@@ -359,6 +381,7 @@
                 },
                 {
                     "Text": "通常攻撃2段目ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "54%",
                         "59%",
@@ -376,6 +399,7 @@
                 },
                 {
                     "Text": "通常攻撃3段目ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "66%",
                         "73%",
@@ -393,6 +417,7 @@
                 },
                 {
                     "Text": "通常攻撃4段目ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "82%",
                         "90%",
@@ -410,6 +435,7 @@
                 },
                 {
                     "Text": "終撃ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "400%",
                         "440%",
@@ -427,6 +453,7 @@
                 },
                 {
                     "Text": "落下攻撃ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "80%",
                         "88%",

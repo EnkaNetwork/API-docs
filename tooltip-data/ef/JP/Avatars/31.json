@@ -4,6 +4,7 @@
     "Rarity": 4,
     "Element": "Cryst",
     "Profession": "GUARD",
+    "Conditions": {},
     "WeaponType": "Lance",
     "MainAttrId": 42,
     "SubAttrId": 39,
@@ -24,6 +25,7 @@
     "SkillInfoMap": {
         "chr_0021_whiten_ComboSkill": {
             "Icon": "skillicon/icon_combo_skill_whiten_01",
+            "IconConditions": {},
             "Element": "Physical",
             "Name": "ディストーション",
             "Desc": "敵が<#ba.frozen>凍結</>状態になったときに発動可能。\nすばやく敵の近くに移動し、一定範囲内の敵に<@ba.pd>物理ダメージ</>を与え、強制的に<#ba.airborne>浮遊</>させる。<#ba.frozen>凍結</>状態の敵に命中した場合、追加でダメージを与え、<#ba.physicalvul>物理脆弱</>を付与する。",
@@ -34,6 +36,7 @@
             "Params": [
                 {
                     "Text": "クールタイム",
+                    "ConditionId": "",
                     "Values": [
                         "18秒",
                         "18秒",
@@ -51,6 +54,7 @@
                 },
                 {
                     "Text": "非凍結状態の敵へのダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "160%",
                         "176%",
@@ -68,6 +72,7 @@
                 },
                 {
                     "Text": "凍結状態の敵へのダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "280%",
                         "308%",
@@ -85,6 +90,7 @@
                 },
                 {
                     "Text": "ブレイク値",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -102,6 +108,7 @@
                 },
                 {
                     "Text": "物理脆弱倍率",
+                    "ConditionId": "",
                     "Values": [
                         "10%",
                         "10%",
@@ -119,6 +126,7 @@
                 },
                 {
                     "Text": "物理脆弱持続時間",
+                    "ConditionId": "",
                     "Values": [
                         "6",
                         "6",
@@ -136,6 +144,7 @@
                 },
                 {
                     "Text": "必殺チャージ回復量",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -155,6 +164,7 @@
         },
         "chr_0021_whiten_NormalSkill": {
             "Icon": "skillicon/icon_skill_whiten_01",
+            "IconConditions": {},
             "Element": "Cryst",
             "Name": "オノマトペ",
             "Desc": "前方に槍を突き出し、氷の音波を放つ。直線上の敵に<@ba.cryst>寒冷ダメージ</>を与え、<#ba.crystinflict>寒冷付着</>を付与する。",
@@ -165,6 +175,7 @@
             "Params": [
                 {
                     "Text": "SP消費",
+                    "ConditionId": "",
                     "Values": [
                         100,
                         100,
@@ -182,6 +193,7 @@
                 },
                 {
                     "Text": "ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "156%",
                         "171%",
@@ -199,6 +211,7 @@
                 },
                 {
                     "Text": "ブレイク値",
+                    "ConditionId": "",
                     "Values": [
                         "10",
                         "10",
@@ -218,6 +231,7 @@
         },
         "chr_0021_whiten_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_whiten_01",
+            "IconConditions": {},
             "Element": "Physical",
             "Name": "トレモロ",
             "Desc": "全力で槍の柄を地面に叩きつけ、周囲の敵に<@ba.pd>物理ダメージ</>を与える。<#ba.physicalvul>物理脆弱</>状態の敵を強制的に<#ba.airborne>浮遊</>させる。",
@@ -228,6 +242,7 @@
             "Params": [
                 {
                     "Text": "必殺チャージ消費",
+                    "ConditionId": "",
                     "Values": [
                         70,
                         70,
@@ -245,6 +260,7 @@
                 },
                 {
                     "Text": "クールタイム",
+                    "ConditionId": "",
                     "Values": [
                         "10秒",
                         "10秒",
@@ -262,6 +278,7 @@
                 },
                 {
                     "Text": "ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "489%",
                         "538%",
@@ -279,6 +296,7 @@
                 },
                 {
                     "Text": "ブレイク値",
+                    "ConditionId": "",
                     "Values": [
                         "15",
                         "15",
@@ -298,6 +316,7 @@
         },
         "chr_0021_whiten_NormalAttack": {
             "Icon": "skillicon/icon_attack_lance",
+            "IconConditions": {},
             "Element": "Physical",
             "Name": "ノイズ",
             "Desc": "通常攻撃：\n最大4段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>17</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。",
@@ -308,6 +327,7 @@
             "Params": [
                 {
                     "Text": "通常攻撃1段目ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "25%",
                         "28%",
@@ -325,6 +345,7 @@
                 },
                 {
                     "Text": "通常攻撃2段目ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "30%",
                         "33%",
@@ -342,6 +363,7 @@
                 },
                 {
                     "Text": "通常攻撃3段目ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "35%",
                         "39%",
@@ -359,6 +381,7 @@
                 },
                 {
                     "Text": "通常攻撃4段目ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "40%",
                         "44%",
@@ -376,6 +399,7 @@
                 },
                 {
                     "Text": "終撃ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "400%",
                         "440%",
@@ -393,6 +417,7 @@
                 },
                 {
                     "Text": "落下攻撃ダメージ倍率",
+                    "ConditionId": "",
                     "Values": [
                         "80%",
                         "88%",
