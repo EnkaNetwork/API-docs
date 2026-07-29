@@ -1,0 +1,460 @@
+{
+    "Name": "Nekomata",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Specialty": {
+        "Id": 1,
+        "Name": "Attacke"
+    },
+    "Talents": {
+        "1": {
+            "Title": "Vogeljägerin",
+            "Description": "Ignoriert, wenn Nekomata einen Gegner mit einem Angriff von hinten trifft, 16 % des <color=#F0D12B>phys. WDS</color> des Ziels. Alle Angriffe durch Nekomata am Gegner, der sich im Zustand Benommenheit befindet, gelten als Angriffe von hinten.",
+            "Lore": "Aufgrund ihrer geringen Größe mangelt es Nekomata zwar an Kraft, aber sie besitzt das Wahrnehmungsvermögen und die Beweglichkeit, um die Schwächen ihrer Gegner aufzuspüren und sie da zu treffen, wo es am meisten wehtut."
+        },
+        "2": {
+            "Title": "Katz und Maus",
+            "Description": "Erhöht, wenn sich nur ein Gegner auf dem Feld befindet und Nekomata aktiv im Kampf ist, Nekomatas Energie-Generationsrate um 25 %.",
+            "Lore": "Katzen spielen immer gerne mit ihrer Beute.\nWenn nur noch ein Mäuslein im Kampf ist ... dann fängt Nekomatas Spielzeit an."
+        },
+        "3": {
+            "Title": "Neugieriger linker Schwanz",
+            "Description": "Fähigkeitsstufe von <color=#FFFFFF>Basisangriff</color>, <color=#FFFFFF>Ausweichen</color>, <color=#FFFFFF>Hilfe</color>, <color=#FFFFFF>Spezialangriff</color> und <color=#FFFFFF>Kettenangriff</color> +2",
+            "Lore": "Den Legenden der alten Zivilisation zufolge repräsentiert jeder Schwanz eines der vielen Leben einer Katze, und birgt jahrelange Weisheit und Erfahrung in seinem Inneren ... Das ist zwar nicht real, aber die Erfahrungen, die Nekomata während ihrer Zeit in den Straßen gesammelt hat, schon."
+        },
+        "4": {
+            "Title": "Krallen wetzen",
+            "Description": "Erhöht Nekomatas KRIT-Rate beim Anwenden ihres <color=#FFFFFF>verstärkten Spezialangriffs</color> um 7 %, max. 2-fach stapelbar, hält 15 s. Die Dauer jeder Stapelung wird einzeln berechnet.",
+            "Lore": "„Gebt mir mehr, gebt mir MEHR! Ich fresse sie alle!“\nIhre Augen funkelten, während sie ihre Pfoten ableckte."
+        },
+        "5": {
+            "Title": "Glückbringender rechter Schwanz",
+            "Description": "Fähigkeitsstufe von <color=#FFFFFF>Basisangriff</color>, <color=#FFFFFF>Ausweichen</color>, <color=#FFFFFF>Hilfe</color>, <color=#FFFFFF>Spezialangriff</color> und <color=#FFFFFF>Kettenangriff</color> +2",
+            "Lore": "Den Legenden der alten Zivilisation zufolge repräsentiert jeder Schwanz eines der vielen Leben einer Katze, und birgt jahrelange Weisheit und Erfahrung in seinem Inneren ... Manchmal fragt sich Nekomata: Wenn sie das Glück hat, weiter zu überleben, wächst ihr dann irgendwann ein weiterer Schwanz?"
+        },
+        "6": {
+            "Title": "Raubtier-Abstammung",
+            "Description": "Erhöht Nekomatas KRIT-SCH beim Anwenden eines <color=#FFFFFF>Kettenangriffs</color> oder eines <color=#FFFFFF>Ultimates</color> um 18 %, max. 3-fach stapelbar. Dieser Effekt endet, wenn Nekomata den Kampf verlässt. Wenn Nekomata einen Gegner besiegt, erreicht dieser Effekt sofort die maximale Anzahl an Stapelungen.",
+            "Lore": "„Wenn ein Katzenthiren positive Bestärkung durch aggressives Verhalten erfährt, kommen seine latenten tierischen Tendenzen zum Vorschein.\nZum Glück sind diese Tendenzen nicht permanent ...“\n... Auszug aus einem abgenutzten „Handbuch der unvollständigen Forschungen zu Katzenthirens“"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passive Kernfähigkeit: Verstohlene Pfoten",
+            "DescriptionByLevel": {
+                "1": "Beim Treffen von Gegnern mit Nekomatas <color=#FFFFFF>Ausweichkonter</color> oder <color=#FFFFFF>schneller Hilfe</color> erhöht sich der von ihr verursachte SCH um <color=#2BAD00>30 %</color>, hält 40 s. Beim wiederholten Auslösen wird die Dauer aktualisiert.\nBeim Kampfeintritt erhält Nekomata 40 Pkt. <Term:1000024></Term>. Im Modus „Ermittlungszone“ kann dieser Effekt einmal alle 180 s ausgelöst werden.\nWährend Nekomata im Kampf ist, erhält sie pro Sekunde 1 Pkt. Schnurrenergie, max. bis zu 60 Pkt. Ihre verschiedenen Fähigkeiten stellen beim Treffen von Gegnern unterschiedliche Mengen an Schnurrenergie wieder her.\nWährend Nekomata über mindestens 40 Pkt. Schnurrenergie verfügt, drücke nach Auslösen eines <color=#FFFFFF>perfekten Ausweichens</color> <IconMap:Icon_Evade>, um 30 Pkt. Schnurrenergie zu verbrauchen und <color=#FFFFFF>Ausweichen: Trick des verschwindenden Schweifs</color> anzuwenden. Drücke sodann <IconMap:Icon_Normal>, um einmal „Ausweichkonter: Flauschige Krallendurchbohrung“ anzuwenden, ohne Schnurrenergie zu verbrauchen.\nWährend Nekomata über mindestens 40 Pkt. Schnurrenergie verfügt, halte <IconMap:Icon_Normal> gedrückt, um 40 Pkt. Schnurrenergie zu verbrauchen und „Ausweichkonter: Flauschige Krallendurchbohrung“ anzuwenden.\nBeim Anwenden von „Ausweichkonter: Flauschige Krallendurchbohrung“ wird der Zustand „<Term:1000025></Term>“ aktiviert, hält 40 s. Beim wiederholten Auslösen wird die Dauer aktualisiert. Im Zustand „Tatzenhinterhalt“ werden alle Treffer durch Nekomatas Angriffe so gewertet, als würde sie den Gegner von hinten treffen.\nWährend der Zustand „Tatzenhinterhalt“ aktiv ist, lösen Nekomatas Angriffe beim Treffen von Gegnern den Effekt „Wilder Pfotenabdruck“ aus, wodurch zusätzlich einmal <color=#F0D12B>phys. SCH</color> in Höhe von 30 % ihres ANG verursacht wird. Dieser Effekt hat eine Abklingzeit von 1 s.\nBeim Anwenden ihres Ultimates stellt Nekomata zusätzlich 20 Pkt. Schnurrenergie wieder her, beim Anwenden ihres Kettenangriffs 10 Pkt. und beim Anwenden ihres verstärkten Spezialangriffs 5 Pkt.",
+                "2": "Beim Treffen von Gegnern mit Nekomatas <color=#FFFFFF>Ausweichkonter</color> oder <color=#FFFFFF>schneller Hilfe</color> erhöht sich der von ihr verursachte SCH um <color=#2BAD00>35 %</color>, hält 40 s. Beim wiederholten Auslösen wird die Dauer aktualisiert.\nBeim Kampfeintritt erhält Nekomata 40 Pkt. <Term:1000024></Term>. Im Modus „Ermittlungszone“ kann dieser Effekt einmal alle 180 s ausgelöst werden.\nWährend Nekomata im Kampf ist, erhält sie pro Sekunde 1 Pkt. Schnurrenergie, max. bis zu 60 Pkt. Ihre verschiedenen Fähigkeiten stellen beim Treffen von Gegnern unterschiedliche Mengen an Schnurrenergie wieder her.\nWährend Nekomata über mindestens 40 Pkt. Schnurrenergie verfügt, drücke nach Auslösen eines <color=#FFFFFF>perfekten Ausweichens</color> <IconMap:Icon_Evade>, um 30 Pkt. Schnurrenergie zu verbrauchen und <color=#FFFFFF>Ausweichen: Trick des verschwindenden Schweifs</color> anzuwenden. Drücke sodann <IconMap:Icon_Normal>, um einmal „Ausweichkonter: Flauschige Krallendurchbohrung“ anzuwenden, ohne Schnurrenergie zu verbrauchen.\nWährend Nekomata über mindestens 40 Pkt. Schnurrenergie verfügt, halte <IconMap:Icon_Normal> gedrückt, um 40 Pkt. Schnurrenergie zu verbrauchen und „Ausweichkonter: Flauschige Krallendurchbohrung“ anzuwenden.\nBeim Anwenden von „Ausweichkonter: Flauschige Krallendurchbohrung“ wird der Zustand „<Term:1000025></Term>“ aktiviert, hält 40 s. Beim wiederholten Auslösen wird die Dauer aktualisiert. Im Zustand „Tatzenhinterhalt“ werden alle Treffer durch Nekomatas Angriffe so gewertet, als würde sie den Gegner von hinten treffen.\nWährend der Zustand „Tatzenhinterhalt“ aktiv ist, lösen Nekomatas Angriffe beim Treffen von Gegnern den Effekt „Wilder Pfotenabdruck“ aus, wodurch zusätzlich einmal <color=#F0D12B>phys. SCH</color> in Höhe von 30 % ihres ANG verursacht wird. Dieser Effekt hat eine Abklingzeit von 1 s.\nBeim Anwenden ihres Ultimates stellt Nekomata zusätzlich 20 Pkt. Schnurrenergie wieder her, beim Anwenden ihres Kettenangriffs 10 Pkt. und beim Anwenden ihres verstärkten Spezialangriffs 5 Pkt.",
+                "3": "Beim Treffen von Gegnern mit Nekomatas <color=#FFFFFF>Ausweichkonter</color> oder <color=#FFFFFF>schneller Hilfe</color> erhöht sich der von ihr verursachte SCH um <color=#2BAD00>40 %</color>, hält 40 s. Beim wiederholten Auslösen wird die Dauer aktualisiert.\nBeim Kampfeintritt erhält Nekomata 40 Pkt. <Term:1000024></Term>. Im Modus „Ermittlungszone“ kann dieser Effekt einmal alle 180 s ausgelöst werden.\nWährend Nekomata im Kampf ist, erhält sie pro Sekunde 1 Pkt. Schnurrenergie, max. bis zu 60 Pkt. Ihre verschiedenen Fähigkeiten stellen beim Treffen von Gegnern unterschiedliche Mengen an Schnurrenergie wieder her.\nWährend Nekomata über mindestens 40 Pkt. Schnurrenergie verfügt, drücke nach Auslösen eines <color=#FFFFFF>perfekten Ausweichens</color> <IconMap:Icon_Evade>, um 30 Pkt. Schnurrenergie zu verbrauchen und <color=#FFFFFF>Ausweichen: Trick des verschwindenden Schweifs</color> anzuwenden. Drücke sodann <IconMap:Icon_Normal>, um einmal „Ausweichkonter: Flauschige Krallendurchbohrung“ anzuwenden, ohne Schnurrenergie zu verbrauchen.\nWährend Nekomata über mindestens 40 Pkt. Schnurrenergie verfügt, halte <IconMap:Icon_Normal> gedrückt, um 40 Pkt. Schnurrenergie zu verbrauchen und „Ausweichkonter: Flauschige Krallendurchbohrung“ anzuwenden.\nBeim Anwenden von „Ausweichkonter: Flauschige Krallendurchbohrung“ wird der Zustand „<Term:1000025></Term>“ aktiviert, hält 40 s. Beim wiederholten Auslösen wird die Dauer aktualisiert. Im Zustand „Tatzenhinterhalt“ werden alle Treffer durch Nekomatas Angriffe so gewertet, als würde sie den Gegner von hinten treffen.\nWährend der Zustand „Tatzenhinterhalt“ aktiv ist, lösen Nekomatas Angriffe beim Treffen von Gegnern den Effekt „Wilder Pfotenabdruck“ aus, wodurch zusätzlich einmal <color=#F0D12B>phys. SCH</color> in Höhe von 30 % ihres ANG verursacht wird. Dieser Effekt hat eine Abklingzeit von 1 s.\nBeim Anwenden ihres Ultimates stellt Nekomata zusätzlich 20 Pkt. Schnurrenergie wieder her, beim Anwenden ihres Kettenangriffs 10 Pkt. und beim Anwenden ihres verstärkten Spezialangriffs 5 Pkt.",
+                "4": "Beim Treffen von Gegnern mit Nekomatas <color=#FFFFFF>Ausweichkonter</color> oder <color=#FFFFFF>schneller Hilfe</color> erhöht sich der von ihr verursachte SCH um <color=#2BAD00>45 %</color>, hält 40 s. Beim wiederholten Auslösen wird die Dauer aktualisiert.\nBeim Kampfeintritt erhält Nekomata 40 Pkt. <Term:1000024></Term>. Im Modus „Ermittlungszone“ kann dieser Effekt einmal alle 180 s ausgelöst werden.\nWährend Nekomata im Kampf ist, erhält sie pro Sekunde 1 Pkt. Schnurrenergie, max. bis zu 60 Pkt. Ihre verschiedenen Fähigkeiten stellen beim Treffen von Gegnern unterschiedliche Mengen an Schnurrenergie wieder her.\nWährend Nekomata über mindestens 40 Pkt. Schnurrenergie verfügt, drücke nach Auslösen eines <color=#FFFFFF>perfekten Ausweichens</color> <IconMap:Icon_Evade>, um 30 Pkt. Schnurrenergie zu verbrauchen und <color=#FFFFFF>Ausweichen: Trick des verschwindenden Schweifs</color> anzuwenden. Drücke sodann <IconMap:Icon_Normal>, um einmal „Ausweichkonter: Flauschige Krallendurchbohrung“ anzuwenden, ohne Schnurrenergie zu verbrauchen.\nWährend Nekomata über mindestens 40 Pkt. Schnurrenergie verfügt, halte <IconMap:Icon_Normal> gedrückt, um 40 Pkt. Schnurrenergie zu verbrauchen und „Ausweichkonter: Flauschige Krallendurchbohrung“ anzuwenden.\nBeim Anwenden von „Ausweichkonter: Flauschige Krallendurchbohrung“ wird der Zustand „<Term:1000025></Term>“ aktiviert, hält 40 s. Beim wiederholten Auslösen wird die Dauer aktualisiert. Im Zustand „Tatzenhinterhalt“ werden alle Treffer durch Nekomatas Angriffe so gewertet, als würde sie den Gegner von hinten treffen.\nWährend der Zustand „Tatzenhinterhalt“ aktiv ist, lösen Nekomatas Angriffe beim Treffen von Gegnern den Effekt „Wilder Pfotenabdruck“ aus, wodurch zusätzlich einmal <color=#F0D12B>phys. SCH</color> in Höhe von 30 % ihres ANG verursacht wird. Dieser Effekt hat eine Abklingzeit von 1 s.\nBeim Anwenden ihres Ultimates stellt Nekomata zusätzlich 20 Pkt. Schnurrenergie wieder her, beim Anwenden ihres Kettenangriffs 10 Pkt. und beim Anwenden ihres verstärkten Spezialangriffs 5 Pkt.",
+                "5": "Beim Treffen von Gegnern mit Nekomatas <color=#FFFFFF>Ausweichkonter</color> oder <color=#FFFFFF>schneller Hilfe</color> erhöht sich der von ihr verursachte SCH um <color=#2BAD00>50 %</color>, hält 40 s. Beim wiederholten Auslösen wird die Dauer aktualisiert.\nBeim Kampfeintritt erhält Nekomata 40 Pkt. <Term:1000024></Term>. Im Modus „Ermittlungszone“ kann dieser Effekt einmal alle 180 s ausgelöst werden.\nWährend Nekomata im Kampf ist, erhält sie pro Sekunde 1 Pkt. Schnurrenergie, max. bis zu 60 Pkt. Ihre verschiedenen Fähigkeiten stellen beim Treffen von Gegnern unterschiedliche Mengen an Schnurrenergie wieder her.\nWährend Nekomata über mindestens 40 Pkt. Schnurrenergie verfügt, drücke nach Auslösen eines <color=#FFFFFF>perfekten Ausweichens</color> <IconMap:Icon_Evade>, um 30 Pkt. Schnurrenergie zu verbrauchen und <color=#FFFFFF>Ausweichen: Trick des verschwindenden Schweifs</color> anzuwenden. Drücke sodann <IconMap:Icon_Normal>, um einmal „Ausweichkonter: Flauschige Krallendurchbohrung“ anzuwenden, ohne Schnurrenergie zu verbrauchen.\nWährend Nekomata über mindestens 40 Pkt. Schnurrenergie verfügt, halte <IconMap:Icon_Normal> gedrückt, um 40 Pkt. Schnurrenergie zu verbrauchen und „Ausweichkonter: Flauschige Krallendurchbohrung“ anzuwenden.\nBeim Anwenden von „Ausweichkonter: Flauschige Krallendurchbohrung“ wird der Zustand „<Term:1000025></Term>“ aktiviert, hält 40 s. Beim wiederholten Auslösen wird die Dauer aktualisiert. Im Zustand „Tatzenhinterhalt“ werden alle Treffer durch Nekomatas Angriffe so gewertet, als würde sie den Gegner von hinten treffen.\nWährend der Zustand „Tatzenhinterhalt“ aktiv ist, lösen Nekomatas Angriffe beim Treffen von Gegnern den Effekt „Wilder Pfotenabdruck“ aus, wodurch zusätzlich einmal <color=#F0D12B>phys. SCH</color> in Höhe von 30 % ihres ANG verursacht wird. Dieser Effekt hat eine Abklingzeit von 1 s.\nBeim Anwenden ihres Ultimates stellt Nekomata zusätzlich 20 Pkt. Schnurrenergie wieder her, beim Anwenden ihres Kettenangriffs 10 Pkt. und beim Anwenden ihres verstärkten Spezialangriffs 5 Pkt.",
+                "6": "Beim Treffen von Gegnern mit Nekomatas <color=#FFFFFF>Ausweichkonter</color> oder <color=#FFFFFF>schneller Hilfe</color> erhöht sich der von ihr verursachte SCH um <color=#2BAD00>55 %</color>, hält 40 s. Beim wiederholten Auslösen wird die Dauer aktualisiert.\nBeim Kampfeintritt erhält Nekomata 40 Pkt. <Term:1000024></Term>. Im Modus „Ermittlungszone“ kann dieser Effekt einmal alle 180 s ausgelöst werden.\nWährend Nekomata im Kampf ist, erhält sie pro Sekunde 1 Pkt. Schnurrenergie, max. bis zu 60 Pkt. Ihre verschiedenen Fähigkeiten stellen beim Treffen von Gegnern unterschiedliche Mengen an Schnurrenergie wieder her.\nWährend Nekomata über mindestens 40 Pkt. Schnurrenergie verfügt, drücke nach Auslösen eines <color=#FFFFFF>perfekten Ausweichens</color> <IconMap:Icon_Evade>, um 30 Pkt. Schnurrenergie zu verbrauchen und <color=#FFFFFF>Ausweichen: Trick des verschwindenden Schweifs</color> anzuwenden. Drücke sodann <IconMap:Icon_Normal>, um einmal „Ausweichkonter: Flauschige Krallendurchbohrung“ anzuwenden, ohne Schnurrenergie zu verbrauchen.\nWährend Nekomata über mindestens 40 Pkt. Schnurrenergie verfügt, halte <IconMap:Icon_Normal> gedrückt, um 40 Pkt. Schnurrenergie zu verbrauchen und „Ausweichkonter: Flauschige Krallendurchbohrung“ anzuwenden.\nBeim Anwenden von „Ausweichkonter: Flauschige Krallendurchbohrung“ wird der Zustand „<Term:1000025></Term>“ aktiviert, hält 40 s. Beim wiederholten Auslösen wird die Dauer aktualisiert. Im Zustand „Tatzenhinterhalt“ werden alle Treffer durch Nekomatas Angriffe so gewertet, als würde sie den Gegner von hinten treffen.\nWährend der Zustand „Tatzenhinterhalt“ aktiv ist, lösen Nekomatas Angriffe beim Treffen von Gegnern den Effekt „Wilder Pfotenabdruck“ aus, wodurch zusätzlich einmal <color=#F0D12B>phys. SCH</color> in Höhe von 30 % ihres ANG verursacht wird. Dieser Effekt hat eine Abklingzeit von 1 s.\nBeim Anwenden ihres Ultimates stellt Nekomata zusätzlich 20 Pkt. Schnurrenergie wieder her, beim Anwenden ihres Kettenangriffs 10 Pkt. und beim Anwenden ihres verstärkten Spezialangriffs 5 Pkt.",
+                "7": "Beim Treffen von Gegnern mit Nekomatas <color=#FFFFFF>Ausweichkonter</color> oder <color=#FFFFFF>schneller Hilfe</color> erhöht sich der von ihr verursachte SCH um <color=#2BAD00>60 %</color>, hält 40 s. Beim wiederholten Auslösen wird die Dauer aktualisiert.\nBeim Kampfeintritt erhält Nekomata 40 Pkt. <Term:1000024></Term>. Im Modus „Ermittlungszone“ kann dieser Effekt einmal alle 180 s ausgelöst werden.\nWährend Nekomata im Kampf ist, erhält sie pro Sekunde 1 Pkt. Schnurrenergie, max. bis zu 60 Pkt. Ihre verschiedenen Fähigkeiten stellen beim Treffen von Gegnern unterschiedliche Mengen an Schnurrenergie wieder her.\nWährend Nekomata über mindestens 40 Pkt. Schnurrenergie verfügt, drücke nach Auslösen eines <color=#FFFFFF>perfekten Ausweichens</color> <IconMap:Icon_Evade>, um 30 Pkt. Schnurrenergie zu verbrauchen und <color=#FFFFFF>Ausweichen: Trick des verschwindenden Schweifs</color> anzuwenden. Drücke sodann <IconMap:Icon_Normal>, um einmal „Ausweichkonter: Flauschige Krallendurchbohrung“ anzuwenden, ohne Schnurrenergie zu verbrauchen.\nWährend Nekomata über mindestens 40 Pkt. Schnurrenergie verfügt, halte <IconMap:Icon_Normal> gedrückt, um 40 Pkt. Schnurrenergie zu verbrauchen und „Ausweichkonter: Flauschige Krallendurchbohrung“ anzuwenden.\nBeim Anwenden von „Ausweichkonter: Flauschige Krallendurchbohrung“ wird der Zustand „<Term:1000025></Term>“ aktiviert, hält 40 s. Beim wiederholten Auslösen wird die Dauer aktualisiert. Im Zustand „Tatzenhinterhalt“ werden alle Treffer durch Nekomatas Angriffe so gewertet, als würde sie den Gegner von hinten treffen.\nWährend der Zustand „Tatzenhinterhalt“ aktiv ist, lösen Nekomatas Angriffe beim Treffen von Gegnern den Effekt „Wilder Pfotenabdruck“ aus, wodurch zusätzlich einmal <color=#F0D12B>phys. SCH</color> in Höhe von 30 % ihres ANG verursacht wird. Dieser Effekt hat eine Abklingzeit von 1 s.\nBeim Anwenden ihres Ultimates stellt Nekomata zusätzlich 20 Pkt. Schnurrenergie wieder her, beim Anwenden ihres Kettenangriffs 10 Pkt. und beim Anwenden ihres verstärkten Spezialangriffs 5 Pkt."
+            }
+        },
+        "MathSkill": {
+            "Title": "Zusatzfähigkeit: Catwalk",
+            "Description": "Wenn sich in der Truppe eine weitere Support-Figur befindet, eine andere Figur dasselbe Attribut hat oder derselben Fraktion angehört:\nNachdem Nekomata <color=#FFFFFF>Ausweichen: Trick des verschwindenden Schweifs</color> angewendet oder eine beliebige Truppenfigur einem Gegner den Effekt <color=#F0D12B>Wuchtschlag</color> verliehen hat, erhöht sich der durch Nekomatas <color=#FFFFFF>verstärkten Spezialangriff</color> und <color=#FFFFFF>Ausweichkonter</color> verursachte SCH um 35 %, max. 2-fach stapelbar, hält 30 s. Beim wiederholten Auslösen wird die Dauer aktualisiert."
+        },
+        "AwakenAbility": {
+            "Title": "Potenzialerweckung: Nachtaktive Instinkte",
+            "Description": "Während Nekomata im Zustand „Tatzenhinterhalt“ ist, erhöht sich ihr KRIT-SCH um <color=#2BAD00>20 %</color>."
+        },
+        "BaseProps": [
+            {
+                "20101": 0,
+                "12101": 0
+            },
+            {
+                "20101": 480,
+                "12101": 0
+            },
+            {
+                "20101": 480,
+                "12101": 25
+            },
+            {
+                "20101": 960,
+                "12101": 25
+            },
+            {
+                "20101": 960,
+                "12101": 50
+            },
+            {
+                "20101": 1440,
+                "12101": 50
+            },
+            {
+                "20101": 1440,
+                "12101": 75
+            }
+        ]
+    },
+    "Terms": {
+        "1000024": {
+            "Title": "Schnurrenergie",
+            "Description": "Beim Betreten des Kampffelds erhält Nekomata 40 Pkt. Schnurrenergie. Pro Sekunde stellt sie 1 Pkt. <color=#FFFFFF>Schnurrenergie</color> wieder her und ihre verschiedenen Angriffe stellen beim Treffen von Gegnern unterschiedliche Mengen an Schnurrenergie wieder her.\nDrücke bei mindestens 40 Pkt. Schnurrenergie und nach Auslösen eines <color=#FFFFFF>perfekten Ausweichens</color> <IconMap:Icon_Evade>, um 30 Pkt. Schnurrenergie zu verbrauchen und „Ausweichen: Trick des verschwindenden Schweifs“ anzuwenden.\nHalte bei mindestens 40 Pkt. Schnurrenergie <IconMap:Icon_Normal> gedrückt, um 40 Pkt. Schnurrenergie zu verbrauchen und „Ausweichen: Trick des verschwindenden Schweifs“ anzuwenden.",
+            "Source": "Passive Kernfähigkeit: Verstohlene Pfoten"
+        },
+        "1000025": {
+            "Title": "Tatzenhinterhalt",
+            "Description": "Nach Anwenden von „Ausweichkonter: Flauschige Krallendurchbohrung“ betritt Nekomata den Zustand „Tatzenhinterhalt“, hält 40 s. Beim wiederholten Auslösen wird die Dauer aktualisiert.\nIm Zustand „Tatzenhinterhalt“ werden alle von Nekomatas Treffer so gewertet, als würde sie den Gegner von hinten treffen, und lösen den Effekt „Wilder Pfotenabdruck“ aus, wodurch <color=#F0D12B>phys. SCH</color> in Höhe von 30 % ihres ANG verursacht wird. Dieser Effekt hat eine Abklingzeit von 1 s.",
+            "Source": "Passive Kernfähigkeit: Verstohlene Pfoten"
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "102100002": {
+                "Title": "Basisangriff: Katzen kratzen",
+                "Description": "Drücke <IconMap:Icon_Normal> zum Anwenden:\nFührt bis zu 5 Hiebe nach vorn aus und verursacht dabei <color=#F0D12B>phys. SCH</color>.\nBeim Treffen von benommenen Gegnern mit dem letzten Hieb werden drei weitere Hiebe ausgeführt."
+            },
+            "102100004": {
+                "Title": "Basisangriff: Karminklinge",
+                "Description": "Halte während der ersten 3 Hiebe von Nekomatas <color=#FFFFFF>Basisangriff</color> <IconMap:Icon_Normal> gedrückt zum Anwenden:\nFührt Hiebe nach vorn aus, huscht durch die Gegner vor sich hindurch und verursacht dabei <color=#F0D12B>phys. SCH</color>.\nBeim Treffen von benommenen Gegnern mit dieser Fähigkeit werden drei weitere Hiebe ausgeführt."
+            },
+            "102110001": {
+                "Title": "Basisangriff: Katzen kratzen"
+            },
+            "102110002": {
+                "Description": "SCH-Multiplikator des 1. Angriffs",
+                "Param": "{Skill:1021001, Prop:1001}"
+            },
+            "102110003": {
+                "Description": "SCH-Multiplikator des 2. Angriffs",
+                "Param": "{Skill:1021002, Prop:1001}"
+            },
+            "102110004": {
+                "Description": "SCH-Multiplikator des 3. Angriffs",
+                "Param": "{Skill:1021003, Prop:1001}"
+            },
+            "102110005": {
+                "Description": "SCH-Multiplikator des 4. Angriffs",
+                "Param": "{Skill:1021004, Prop:1001}"
+            },
+            "102110006": {
+                "Description": "SCH-Multiplikator des 5. Angriffs",
+                "Param": "{Skill:1021005, Prop:1001}"
+            },
+            "102110007": {
+                "Description": "Benommenheit-Multiplikator des 1. Angriffs",
+                "Param": "{Skill:1021001, Prop:1002}"
+            },
+            "102110008": {
+                "Description": "Benommenheit-Multiplikator des 2. Angriffs",
+                "Param": "{Skill:1021002, Prop:1002}"
+            },
+            "102110009": {
+                "Description": "Benommenheit-Multiplikator des 3. Angriffs",
+                "Param": "{Skill:1021003, Prop:1002}"
+            },
+            "102110010": {
+                "Description": "Benommenheit-Multiplikator des 4. Angriffs",
+                "Param": "{Skill:1021004, Prop:1002}"
+            },
+            "102110011": {
+                "Description": "Benommenheit-Multiplikator des 5. Angriffs",
+                "Param": "{Skill:1021005, Prop:1002}"
+            },
+            "102110012": {
+                "Title": "Basisangriff: Karminklinge"
+            },
+            "102110013": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1021006, Prop:1001}"
+            },
+            "102110014": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1021006, Prop:1002}"
+            }
+        },
+        "1": {
+            "102100006": {
+                "Title": "Spezialangriff: Überraschende Attacke",
+                "Description": "Drücke <IconMap:Icon_Special> zum Anwenden:\nFührt einen Abwärtsschlag nach vorn aus und verursacht dabei <color=#F0D12B>phys. SCH</color>.\nBeim Anwenden dieser Fähigkeit erhöht sich die Stufe des Unterbrechungs-WDS.\nDer Folgeangriff-Effekt dieser Fähigkeit wird verstärkt."
+            },
+            "102100008": {
+                "Title": "Verstärkter Spezialangriff: Überraschende Superattacke!",
+                "Description": "Drücke bei ausreichender Energie <IconMap:Icon_SpecialReady> zum Anwenden:\nFührt einen kraftvollen Abwärtshieb nach vorn aus, der hohen <color=#F0D12B>phys. SCH</color> verursacht.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar.\nDer Folgeangriff-Effekt dieser Fähigkeit wird verstärkt."
+            },
+            "102110015": {
+                "Title": "Spezialangriff: Überraschende Attacke"
+            },
+            "102110016": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1021007, Prop:1001}"
+            },
+            "102110017": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1021007, Prop:1002}"
+            },
+            "102110018": {
+                "Title": "Verstärkter Spezialangriff: Überraschende Superattacke!"
+            },
+            "102110019": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1021008, Prop:1001}"
+            },
+            "102110020": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1021008, Prop:1002}"
+            },
+            "102110021": {
+                "Description": "Energiekosten",
+                "Param": "40 Pkt."
+            }
+        },
+        "2": {
+            "102100009": {
+                "Title": "Ausweichen: Kannst nicht treffen miau!",
+                "Description": "Drücke <IconMap:Icon_Evade> zum Anwenden:\nEin blitzschnelles Sprintausweichen.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "102100010": {
+                "Title": "Ausweichen: Trick des verschwindenden Schweifs",
+                "Description": "Drücke, wenn Nekomata über mindestens 40 Pkt. <Term:1000024></Term>verfügt, nach Auslösen eines <color=#FFFFFF>perfekten Ausweichens</color> <IconMap:Icon_Evade>, um 30 Pkt. Schnurrenergie zu verbrauchen, zum Anwenden:\nNekomata aktiviert Scharfsicht und bewegt sich rasch hinter den Gegner.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar. Diese Fähigkeit verbraucht keine Ausweichversuche."
+            },
+            "102100011": {
+                "Title": "Sprintangriff: Hierher!",
+                "Description": "Drücke beim Ausweichen <IconMap:Icon_Normal> zum Anwenden:\nFührt Hiebe nach vorn aus und verursacht dabei <color=#F0D12B>phys. SCH</color>."
+            },
+            "102100012": {
+                "Title": "Ausweichkonter: Phantomkrallen",
+                "Description": "Drücke nach Auslösen eines <color=#FFFFFF>perfekten Ausweichens</color> <IconMap:Icon_Normal> zum Anwenden:\nFührt Hiebe gegen Gegner vor sich aus und verursacht dabei <color=#F0D12B>phys. SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "102100013": {
+                "Title": "Ausweichkonter: Flauschige Krallendurchbohrung",
+                "Description": "Drücke nach Auslösen von <color=#FFFFFF>Ausweichen: Trick des verschwindenden Schweifs</color> <IconMap:Icon_Normal> oder halte, wenn Nekomata über mindestens 40 Pkt. <Term:1000024></Term> verfügt, <IconMap:Icon_Normal> gedrückt zum Anwenden:\nEntfesselt einen kraftvollen Hieb mit großer Reichweite gegen Gegner vor sich, der hohen <color=#F0D12B>phys. SCH</color> verursacht.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "102110022": {
+                "Title": "Sprintangriff: Hierher!"
+            },
+            "102110023": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1021009, Prop:1001}"
+            },
+            "102110024": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1021009, Prop:1002}"
+            },
+            "102110025": {
+                "Title": "Ausweichkonter: Phantomkrallen"
+            },
+            "102110026": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1021010, Prop:1001}"
+            },
+            "102110027": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1021010, Prop:1002}"
+            },
+            "102110028": {
+                "Title": "Ausweichkonter: Flauschige Krallendurchbohrung"
+            },
+            "102110029": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1021019, Prop:1001}"
+            },
+            "102110030": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1021019, Prop:1002}"
+            },
+            "102110031": {
+                "Description": "Schnurrenergiekosten",
+                "Param": "40 Pkt."
+            }
+        },
+        "3": {
+            "102100014": {
+                "Title": "Kettenangriff: Klingenkrallen",
+                "Description": "Wähle beim Auslösen eines <color=#FFFFFF>Kettenangriffs</color> die entsprechende Figur zum Anwenden:\nFührt kraftvolle Hiebe mit großer Reichweite gegen Gegner vor sich aus und verursacht dabei hohen <color=#F0D12B>phys. SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "102100015": {
+                "Title": "Ultimate: Krallenstoß",
+                "Description": "Drücke beim Erreichen der Dezibelstufe <color=#FFFFFF>Maximum</color> <IconMap:Icon_UltimateReady> zum Anwenden:\nFührt einen kraftvollen Hieb mit großer Reichweite gegen Gegner vor sich aus und verursacht dabei hohen <color=#F0D12B>phys. SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "102110032": {
+                "Title": "Kettenangriff: Klingenkrallen"
+            },
+            "102110033": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1021011, Prop:1001}"
+            },
+            "102110034": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1021011, Prop:1002}"
+            },
+            "102110035": {
+                "Title": "Ultimate: Krallenstoß"
+            },
+            "102110036": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1021012, Prop:1001}"
+            },
+            "102110037": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1021012, Prop:1002}"
+            }
+        },
+        "6": {
+            "102100018": {
+                "Title": "Schnelle Hilfe: Katzentatze",
+                "Description": "Drücke, wenn die gesteuerte Figur weggeschleudert wird, <IconMap:Icon_Switch> zum Anwenden:\nFührt Hiebe gegen Gegner vor sich aus und verursacht dabei <color=#F0D12B>phys. SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "102100019": {
+                "Title": "Defensivhilfe: Verzweifelte Defensive",
+                "Description": "Drücke, wenn die Figur auf dem Feld gleich angegriffen wird, <IconMap:Icon_Switch> zum Anwenden:\nWehrt gegnerische Angriffe ab und verursacht eine große Menge Benommenheit.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "102100020": {
+                "Title": "Sukzessive Hilfe: Schatten-Ansturm",
+                "Description": "Drücke nach einer <color=#FFFFFF>Defensivhilfe</color> <IconMap:Icon_Normal> zum Anwenden:\nFührt einen Vorstoßhieb gegen Gegner vor sich aus und verursacht dabei <color=#F0D12B>phys. SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "102110038": {
+                "Title": "Schnelle Hilfe: Katzentatze"
+            },
+            "102110039": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1021013, Prop:1001}"
+            },
+            "102110040": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1021013, Prop:1002}"
+            },
+            "102110041": {
+                "Title": "Defensivhilfe: Verzweifelte Defensive"
+            },
+            "102110042": {
+                "Description": "Benommenheit-Multiplikator für leichte Defensive",
+                "Param": "{Skill:1021014, Prop:1002}"
+            },
+            "102110043": {
+                "Description": "Benommenheit-Multiplikator für schwere Defensive",
+                "Param": "{Skill:1021015, Prop:1002}"
+            },
+            "102110044": {
+                "Description": "Benommenheit-Multiplikator für Kettendefensive",
+                "Param": "{Skill:1021016, Prop:1002}"
+            },
+            "102110045": {
+                "Title": "Sukzessive Hilfe: Schatten-Ansturm"
+            },
+            "102110046": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1021017, Prop:1001}"
+            },
+            "102110047": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1021017, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1021001": {
+            "DamageValue": 5520,
+            "DamageGrowth": 510,
+            "DazeValue": 1800,
+            "DazeGrowth": 90
+        },
+        "1021002": {
+            "DamageValue": 6260,
+            "DamageGrowth": 570,
+            "DazeValue": 3710,
+            "DazeGrowth": 170
+        },
+        "1021003": {
+            "DamageValue": 7270,
+            "DamageGrowth": 670,
+            "DazeValue": 4670,
+            "DazeGrowth": 220
+        },
+        "1021004": {
+            "DamageValue": 17020,
+            "DamageGrowth": 1550,
+            "DazeValue": 10370,
+            "DazeGrowth": 480
+        },
+        "1021005": {
+            "DamageValue": 12360,
+            "DamageGrowth": 1130,
+            "DazeValue": 5890,
+            "DazeGrowth": 270
+        },
+        "1021006": {
+            "DamageValue": 7180,
+            "DamageGrowth": 660,
+            "DazeValue": 5890,
+            "DazeGrowth": 270
+        },
+        "1021007": {
+            "DamageValue": 4730,
+            "DamageGrowth": 430,
+            "DazeValue": 4730,
+            "DazeGrowth": 220
+        },
+        "1021008": {
+            "DamageValue": 53970,
+            "DamageGrowth": 4910,
+            "DazeValue": 45540,
+            "DazeGrowth": 2070
+        },
+        "1021009": {
+            "DamageValue": 3510,
+            "DamageGrowth": 320,
+            "DazeValue": 1760,
+            "DazeGrowth": 80
+        },
+        "1021010": {
+            "DamageValue": 22790,
+            "DamageGrowth": 2080,
+            "DazeValue": 19950,
+            "DazeGrowth": 910
+        },
+        "1021011": {
+            "DamageValue": 53620,
+            "DamageGrowth": 4880,
+            "DazeValue": 15920,
+            "DazeGrowth": 730
+        },
+        "1021012": {
+            "DamageValue": 157110,
+            "DamageGrowth": 14290,
+            "DazeValue": 11810,
+            "DazeGrowth": 540
+        },
+        "1021013": {
+            "DamageValue": 9450,
+            "DamageGrowth": 860,
+            "DazeValue": 9450,
+            "DazeGrowth": 430
+        },
+        "1021014": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 25900,
+            "DazeGrowth": 1180
+        },
+        "1021015": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 32730,
+            "DazeGrowth": 1490
+        },
+        "1021016": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15930,
+            "DazeGrowth": 730
+        },
+        "1021017": {
+            "DamageValue": 30040,
+            "DamageGrowth": 2740,
+            "DazeValue": 25810,
+            "DazeGrowth": 1180
+        },
+        "1021019": {
+            "DamageValue": 126390,
+            "DamageGrowth": 11490,
+            "DazeValue": 16460,
+            "DazeGrowth": 750
+        }
+    }
+}

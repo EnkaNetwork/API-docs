@@ -1,0 +1,457 @@
+{
+    "Name": "Nekomata",
+    "ElementTypes": [
+        "Physics"
+    ],
+    "Specialty": {
+        "Id": 1,
+        "Name": "Atacante"
+    },
+    "Talents": {
+        "1": {
+            "Title": "Cazadora de aves",
+            "Description": "Al golpear a un enemigo por la espalda, Nekomata ignora un 16 % de la <color=#F0D12B>resistencia física</color> del objetivo. Cuando el enemigo está afectado por Aturdimiento, todos los ataques de Nekomata se consideran ataques por la espalda.",
+            "Lore": "Dado su tamaño pequeño, Nekomata carece de fuerza, pero lo compensa con su vista aguda para encontrar puntos débiles y golpear donde más le duele al enemigo."
+        },
+        "2": {
+            "Title": "El gato y el ratón",
+            "Description": "Cuando Nekomata es el personaje en el campo de batalla y solo hay un enemigo en el campo, la Tasa de Obtención de Energía de Nekomata aumenta en un 25 %.",
+            "Lore": "Los gatos disfrutan de jugar con sus presas.\nCuando solo queda un ratón, ha llegado la hora de que Nekomata se divierta."
+        },
+        "3": {
+            "Title": "Cola izquierda curiosa",
+            "Description": "Nivel de <color=#FFFFFF>ataque normal</color>, <color=#FFFFFF>evasión</color>, <color=#FFFFFF>técnica de apoyo</color>, <color=#FFFFFF>técnica especial</color> y <color=#FFFFFF>técnica en cadena</color> +2.",
+            "Lore": "Cuentan las leyendas de las civilizaciones antiguas que las colas representan las tantas vidas de los gatos y cada una es un signo de la sabiduría y experiencia que han acumulado. A saber si es verdad, pero la experiencia que Nekomata ha adquirido en las calles sí es real."
+        },
+        "4": {
+            "Title": "Garras afiladas",
+            "Description": "Al ejecutar una <color=#FFFFFF>técnica especial EX</color>, la Probabilidad de Crítico de Nekomata aumenta en un 7 % durante 15 s. Pueden acumularse hasta 2 cargas. La duración de cada carga es independiente.",
+            "Lore": "«¡Más! ¡Dame más! ¡Lameré el plato hasta dejarlo limpio!»\nSus ojos felinos destellaban mientras relamía sus zarpas."
+        },
+        "5": {
+            "Title": "Cola derecha de la suerte",
+            "Description": "Nivel de <color=#FFFFFF>ataque normal</color>, <color=#FFFFFF>evasión</color>, <color=#FFFFFF>técnica de apoyo</color>, <color=#FFFFFF>técnica especial</color> y <color=#FFFFFF>técnica en cadena</color> +2.",
+            "Lore": "Cuentan las leyendas de las civilizaciones antiguas que las colas representan las tantas vidas de los gatos, cada una un signo de la sabiduría y experiencia que han acumulado. A veces, Nekomata se pregunta: si tiene la suerte de vivir lo suficiente, ¿le crecerá otra cola?"
+        },
+        "6": {
+            "Title": "Linaje depredador",
+            "Description": "Al ejecutar una <color=#FFFFFF>técnica en cadena</color> o una <color=#FFFFFF>técnica definitiva</color>, el Daño Crítico de Nekomata aumenta en un 18 %. Pueden acumularse hasta 3 cargas. Este efecto desaparece al dejar de estar en combate. Cuando Nekomata derrota a un enemigo, acumula el número máximo de cargas de este efecto.",
+            "Lore": "«Cuando un semihumano felino obtiene un refuerzo positivo por su conducta agresiva, es muy probable que su inclinación salvaje emerja de las profundidades de su ser.\nPor suerte, dicha inclinación no dura para siempre...»\n— Extracto del título obsoleto «Investigación inconclusa sobre los semihumanos felinos»"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Técnica pasiva: Pisada felina",
+            "DescriptionByLevel": {
+                "1": "Cuando Nekomata golpea a un enemigo con un <color=#FFFFFF>contraataque</color> o un <color=#FFFFFF>apoyo rápido</color>, el daño que inflige Nekomata aumenta en un <color=#2BAD00>30 %</color> durante 40 s. La duración se reinicia con cada activación.\nAl entrar en el campo de batalla, Nekomata obtiene 40 ptos. de <Term:1000024>energía de ronroneo</Term>. En el modo expedición, este efecto se puede activar como máximo una vez cada 180 s.\nCuando Nekomata está en combate, obtiene 1 pto. de energía de ronroneo por segundo, hasta un máximo de 60 ptos. Al golpear a los enemigos con diferentes habilidades, Nekomata recupera diferentes cantidades de energía de ronroneo.\nCuando Nekomata tiene 40 ptos. o más de energía de ronroneo, tras activar una <color=#FFFFFF>evasión perfecta</color>, pulsa <IconMap:Icon_Evade> para consumir 30 ptos. de energía de ronroneo y ejecutar la evasión: Desaparición de la cola. A continuación, pulsa <IconMap:Icon_Normal> para ejecutar una instancia del contraataque: Garra peludita perforadora sin consumir energía de ronroneo.\nCuando Nekomata tiene 40 ptos. o más de energía de ronroneo, mantén pulsado <IconMap:Icon_Normal> para consumir 40 ptos. de energía de ronroneo y ejecutar el contraataque: Garra peludita perforadora.\nAl ejecutar el contraataque: Garra peludita perforadora, Nekomata entra en el estado de <Term:1000025>asalto de patitas</Term> durante 40 s. La duración se reinicia con cada activación. En el estado de asalto de patitas, cuando Nekomata golpea al enemigo con un ataque, se considera un ataque por la espalda.\nEn el estado de asalto de patitas, cuando Nekomata golpea a un enemigo con uno de sus ataques, activa el efecto de huella superferoz, lo que inflige una instancia de <color=#F0D12B>daño físico</color> equivalente al 30 % de su Ataque. Este efecto se puede activar como máximo una vez cada 1 s.\nAl ejecutar su técnica definitiva, Nekomata recupera 20 ptos. adicionales de energía de ronroneo. Al ejecutar su técnica en cadena, recupera 10 ptos. adicionales de energía de ronroneo. Al ejecutar su técnica especial EX, recupera 5 ptos. adicionales de energía de ronroneo.",
+                "2": "Cuando Nekomata golpea a un enemigo con un <color=#FFFFFF>contraataque</color> o un <color=#FFFFFF>apoyo rápido</color>, el daño que inflige Nekomata aumenta en un <color=#2BAD00>35 %</color> durante 40 s. La duración se reinicia con cada activación.\nAl entrar en el campo de batalla, Nekomata obtiene 40 ptos. de <Term:1000024>energía de ronroneo</Term>. En el modo expedición, este efecto se puede activar como máximo una vez cada 180 s.\nCuando Nekomata está en combate, obtiene 1 pto. de energía de ronroneo por segundo, hasta un máximo de 60 ptos. Al golpear a los enemigos con diferentes habilidades, Nekomata recupera diferentes cantidades de energía de ronroneo.\nCuando Nekomata tiene 40 ptos. o más de energía de ronroneo, tras activar una <color=#FFFFFF>evasión perfecta</color>, pulsa <IconMap:Icon_Evade> para consumir 30 ptos. de energía de ronroneo y ejecutar la evasión: Desaparición de la cola. A continuación, pulsa <IconMap:Icon_Normal> para ejecutar una instancia del contraataque: Garra peludita perforadora sin consumir energía de ronroneo.\nCuando Nekomata tiene 40 ptos. o más de energía de ronroneo, mantén pulsado <IconMap:Icon_Normal> para consumir 40 ptos. de energía de ronroneo y ejecutar el contraataque: Garra peludita perforadora.\nAl ejecutar el contraataque: Garra peludita perforadora, Nekomata entra en el estado de <Term:1000025>asalto de patitas</Term> durante 40 s. La duración se reinicia con cada activación. En el estado de asalto de patitas, cuando Nekomata golpea al enemigo con un ataque, se considera un ataque por la espalda.\nEn el estado de asalto de patitas, cuando Nekomata golpea a un enemigo con uno de sus ataques, activa el efecto de huella superferoz, lo que inflige una instancia de <color=#F0D12B>daño físico</color> equivalente al 30 % de su Ataque. Este efecto se puede activar como máximo una vez cada 1 s.\nAl ejecutar su técnica definitiva, Nekomata recupera 20 ptos. adicionales de energía de ronroneo. Al ejecutar su técnica en cadena, recupera 10 ptos. adicionales de energía de ronroneo. Al ejecutar su técnica especial EX, recupera 5 ptos. adicionales de energía de ronroneo.",
+                "3": "Cuando Nekomata golpea a un enemigo con un <color=#FFFFFF>contraataque</color> o un <color=#FFFFFF>apoyo rápido</color>, el daño que inflige Nekomata aumenta en un <color=#2BAD00>40 %</color> durante 40 s. La duración se reinicia con cada activación.\nAl entrar en el campo de batalla, Nekomata obtiene 40 ptos. de <Term:1000024>energía de ronroneo</Term>. En el modo expedición, este efecto se puede activar como máximo una vez cada 180 s.\nCuando Nekomata está en combate, obtiene 1 pto. de energía de ronroneo por segundo, hasta un máximo de 60 ptos. Al golpear a los enemigos con diferentes habilidades, Nekomata recupera diferentes cantidades de energía de ronroneo.\nCuando Nekomata tiene 40 ptos. o más de energía de ronroneo, tras activar una <color=#FFFFFF>evasión perfecta</color>, pulsa <IconMap:Icon_Evade> para consumir 30 ptos. de energía de ronroneo y ejecutar la evasión: Desaparición de la cola. A continuación, pulsa <IconMap:Icon_Normal> para ejecutar una instancia del contraataque: Garra peludita perforadora sin consumir energía de ronroneo.\nCuando Nekomata tiene 40 ptos. o más de energía de ronroneo, mantén pulsado <IconMap:Icon_Normal> para consumir 40 ptos. de energía de ronroneo y ejecutar el contraataque: Garra peludita perforadora.\nAl ejecutar el contraataque: Garra peludita perforadora, Nekomata entra en el estado de <Term:1000025>asalto de patitas</Term> durante 40 s. La duración se reinicia con cada activación. En el estado de asalto de patitas, cuando Nekomata golpea al enemigo con un ataque, se considera un ataque por la espalda.\nEn el estado de asalto de patitas, cuando Nekomata golpea a un enemigo con uno de sus ataques, activa el efecto de huella superferoz, lo que inflige una instancia de <color=#F0D12B>daño físico</color> equivalente al 30 % de su Ataque. Este efecto se puede activar como máximo una vez cada 1 s.\nAl ejecutar su técnica definitiva, Nekomata recupera 20 ptos. adicionales de energía de ronroneo. Al ejecutar su técnica en cadena, recupera 10 ptos. adicionales de energía de ronroneo. Al ejecutar su técnica especial EX, recupera 5 ptos. adicionales de energía de ronroneo.",
+                "4": "Cuando Nekomata golpea a un enemigo con un <color=#FFFFFF>contraataque</color> o un <color=#FFFFFF>apoyo rápido</color>, el daño que inflige Nekomata aumenta en un <color=#2BAD00>45 %</color> durante 40 s. La duración se reinicia con cada activación.\nAl entrar en el campo de batalla, Nekomata obtiene 40 ptos. de <Term:1000024>energía de ronroneo</Term>. En el modo expedición, este efecto se puede activar como máximo una vez cada 180 s.\nCuando Nekomata está en combate, obtiene 1 pto. de energía de ronroneo por segundo, hasta un máximo de 60 ptos. Al golpear a los enemigos con diferentes habilidades, Nekomata recupera diferentes cantidades de energía de ronroneo.\nCuando Nekomata tiene 40 ptos. o más de energía de ronroneo, tras activar una <color=#FFFFFF>evasión perfecta</color>, pulsa <IconMap:Icon_Evade> para consumir 30 ptos. de energía de ronroneo y ejecutar la evasión: Desaparición de la cola. A continuación, pulsa <IconMap:Icon_Normal> para ejecutar una instancia del contraataque: Garra peludita perforadora sin consumir energía de ronroneo.\nCuando Nekomata tiene 40 ptos. o más de energía de ronroneo, mantén pulsado <IconMap:Icon_Normal> para consumir 40 ptos. de energía de ronroneo y ejecutar el contraataque: Garra peludita perforadora.\nAl ejecutar el contraataque: Garra peludita perforadora, Nekomata entra en el estado de <Term:1000025>asalto de patitas</Term> durante 40 s. La duración se reinicia con cada activación. En el estado de asalto de patitas, cuando Nekomata golpea al enemigo con un ataque, se considera un ataque por la espalda.\nEn el estado de asalto de patitas, cuando Nekomata golpea a un enemigo con uno de sus ataques, activa el efecto de huella superferoz, lo que inflige una instancia de <color=#F0D12B>daño físico</color> equivalente al 30 % de su Ataque. Este efecto se puede activar como máximo una vez cada 1 s.\nAl ejecutar su técnica definitiva, Nekomata recupera 20 ptos. adicionales de energía de ronroneo. Al ejecutar su técnica en cadena, recupera 10 ptos. adicionales de energía de ronroneo. Al ejecutar su técnica especial EX, recupera 5 ptos. adicionales de energía de ronroneo.",
+                "5": "Cuando Nekomata golpea a un enemigo con un <color=#FFFFFF>contraataque</color> o un <color=#FFFFFF>apoyo rápido</color>, el daño que inflige Nekomata aumenta en un <color=#2BAD00>50 %</color> durante 40 s. La duración se reinicia con cada activación.\nAl entrar en el campo de batalla, Nekomata obtiene 40 ptos. de <Term:1000024>energía de ronroneo</Term>. En el modo expedición, este efecto se puede activar como máximo una vez cada 180 s.\nCuando Nekomata está en combate, obtiene 1 pto. de energía de ronroneo por segundo, hasta un máximo de 60 ptos. Al golpear a los enemigos con diferentes habilidades, Nekomata recupera diferentes cantidades de energía de ronroneo.\nCuando Nekomata tiene 40 ptos. o más de energía de ronroneo, tras activar una <color=#FFFFFF>evasión perfecta</color>, pulsa <IconMap:Icon_Evade> para consumir 30 ptos. de energía de ronroneo y ejecutar la evasión: Desaparición de la cola. A continuación, pulsa <IconMap:Icon_Normal> para ejecutar una instancia del contraataque: Garra peludita perforadora sin consumir energía de ronroneo.\nCuando Nekomata tiene 40 ptos. o más de energía de ronroneo, mantén pulsado <IconMap:Icon_Normal> para consumir 40 ptos. de energía de ronroneo y ejecutar el contraataque: Garra peludita perforadora.\nAl ejecutar el contraataque: Garra peludita perforadora, Nekomata entra en el estado de <Term:1000025>asalto de patitas</Term> durante 40 s. La duración se reinicia con cada activación. En el estado de asalto de patitas, cuando Nekomata golpea al enemigo con un ataque, se considera un ataque por la espalda.\nEn el estado de asalto de patitas, cuando Nekomata golpea a un enemigo con uno de sus ataques, activa el efecto de huella superferoz, lo que inflige una instancia de <color=#F0D12B>daño físico</color> equivalente al 30 % de su Ataque. Este efecto se puede activar como máximo una vez cada 1 s.\nAl ejecutar su técnica definitiva, Nekomata recupera 20 ptos. adicionales de energía de ronroneo. Al ejecutar su técnica en cadena, recupera 10 ptos. adicionales de energía de ronroneo. Al ejecutar su técnica especial EX, recupera 5 ptos. adicionales de energía de ronroneo.",
+                "6": "Cuando Nekomata golpea a un enemigo con un <color=#FFFFFF>contraataque</color> o un <color=#FFFFFF>apoyo rápido</color>, el daño que inflige Nekomata aumenta en un <color=#2BAD00>55 %</color> durante 40 s. La duración se reinicia con cada activación.\nAl entrar en el campo de batalla, Nekomata obtiene 40 ptos. de <Term:1000024>energía de ronroneo</Term>. En el modo expedición, este efecto se puede activar como máximo una vez cada 180 s.\nCuando Nekomata está en combate, obtiene 1 pto. de energía de ronroneo por segundo, hasta un máximo de 60 ptos. Al golpear a los enemigos con diferentes habilidades, Nekomata recupera diferentes cantidades de energía de ronroneo.\nCuando Nekomata tiene 40 ptos. o más de energía de ronroneo, tras activar una <color=#FFFFFF>evasión perfecta</color>, pulsa <IconMap:Icon_Evade> para consumir 30 ptos. de energía de ronroneo y ejecutar la evasión: Desaparición de la cola. A continuación, pulsa <IconMap:Icon_Normal> para ejecutar una instancia del contraataque: Garra peludita perforadora sin consumir energía de ronroneo.\nCuando Nekomata tiene 40 ptos. o más de energía de ronroneo, mantén pulsado <IconMap:Icon_Normal> para consumir 40 ptos. de energía de ronroneo y ejecutar el contraataque: Garra peludita perforadora.\nAl ejecutar el contraataque: Garra peludita perforadora, Nekomata entra en el estado de <Term:1000025>asalto de patitas</Term> durante 40 s. La duración se reinicia con cada activación. En el estado de asalto de patitas, cuando Nekomata golpea al enemigo con un ataque, se considera un ataque por la espalda.\nEn el estado de asalto de patitas, cuando Nekomata golpea a un enemigo con uno de sus ataques, activa el efecto de huella superferoz, lo que inflige una instancia de <color=#F0D12B>daño físico</color> equivalente al 30 % de su Ataque. Este efecto se puede activar como máximo una vez cada 1 s.\nAl ejecutar su técnica definitiva, Nekomata recupera 20 ptos. adicionales de energía de ronroneo. Al ejecutar su técnica en cadena, recupera 10 ptos. adicionales de energía de ronroneo. Al ejecutar su técnica especial EX, recupera 5 ptos. adicionales de energía de ronroneo.",
+                "7": "Cuando Nekomata golpea a un enemigo con un <color=#FFFFFF>contraataque</color> o un <color=#FFFFFF>apoyo rápido</color>, el daño que inflige Nekomata aumenta en un <color=#2BAD00>60 %</color> durante 40 s. La duración se reinicia con cada activación.\nAl entrar en el campo de batalla, Nekomata obtiene 40 ptos. de <Term:1000024>energía de ronroneo</Term>. En el modo expedición, este efecto se puede activar como máximo una vez cada 180 s.\nCuando Nekomata está en combate, obtiene 1 pto. de energía de ronroneo por segundo, hasta un máximo de 60 ptos. Al golpear a los enemigos con diferentes habilidades, Nekomata recupera diferentes cantidades de energía de ronroneo.\nCuando Nekomata tiene 40 ptos. o más de energía de ronroneo, tras activar una <color=#FFFFFF>evasión perfecta</color>, pulsa <IconMap:Icon_Evade> para consumir 30 ptos. de energía de ronroneo y ejecutar la evasión: Desaparición de la cola. A continuación, pulsa <IconMap:Icon_Normal> para ejecutar una instancia del contraataque: Garra peludita perforadora sin consumir energía de ronroneo.\nCuando Nekomata tiene 40 ptos. o más de energía de ronroneo, mantén pulsado <IconMap:Icon_Normal> para consumir 40 ptos. de energía de ronroneo y ejecutar el contraataque: Garra peludita perforadora.\nAl ejecutar el contraataque: Garra peludita perforadora, Nekomata entra en el estado de <Term:1000025>asalto de patitas</Term> durante 40 s. La duración se reinicia con cada activación. En el estado de asalto de patitas, cuando Nekomata golpea al enemigo con un ataque, se considera un ataque por la espalda.\nEn el estado de asalto de patitas, cuando Nekomata golpea a un enemigo con uno de sus ataques, activa el efecto de huella superferoz, lo que inflige una instancia de <color=#F0D12B>daño físico</color> equivalente al 30 % de su Ataque. Este efecto se puede activar como máximo una vez cada 1 s.\nAl ejecutar su técnica definitiva, Nekomata recupera 20 ptos. adicionales de energía de ronroneo. Al ejecutar su técnica en cadena, recupera 10 ptos. adicionales de energía de ronroneo. Al ejecutar su técnica especial EX, recupera 5 ptos. adicionales de energía de ronroneo."
+            }
+        },
+        "MathSkill": {
+            "Title": "Técnica adicional: Paso de gato",
+            "Description": "Cuando hay un personaje auxiliar u otro personaje del mismo atributo o afiliación en el equipo:\nDespués de que Nekomata ejecute la <color=#FFFFFF>evasión: Desaparición de la cola</color> o cualquier personaje del equipo provoque el efecto de <color=#F0D12B>embestida</color> a un enemigo, el daño que inflige Nekomata con su <color=#FFFFFF>técnica especial EX</color> o su <color=#FFFFFF>contraataque</color> al golpear a un enemigo aumenta en un 35 % durante 30 s. Pueden acumularse hasta 2 cargas de este efecto. La duración se reinicia con cada activación."
+        },
+        "AwakenAbility": {},
+        "BaseProps": [
+            {
+                "20101": 0,
+                "12101": 0
+            },
+            {
+                "20101": 480,
+                "12101": 0
+            },
+            {
+                "20101": 480,
+                "12101": 25
+            },
+            {
+                "20101": 960,
+                "12101": 25
+            },
+            {
+                "20101": 960,
+                "12101": 50
+            },
+            {
+                "20101": 1440,
+                "12101": 50
+            },
+            {
+                "20101": 1440,
+                "12101": 75
+            }
+        ]
+    },
+    "Terms": {
+        "1000024": {
+            "Title": "Energía de ronroneo",
+            "Description": "Cuando Nekomata entra en el campo de batalla, obtiene 40 ptos. de energía de ronroneo. Nekomata también recupera 1 pto. de <color=#FFFFFF>energía de ronroneo</color> por segundo. Además, cuando Nekomata golpea a un enemigo con diferentes habilidades, puede recuperar diferentes cantidades de energía de ronroneo.\nCuando la energía de ronroneo es igual o superior a 40 ptos., tras ejecutar una <color=#FFFFFF>evasión perfecta</color>, pulsa <IconMap:Icon_Evade> para consumir 30 ptos. de energía de ronroneo y activar la evasión: Desaparición de la cola.\nCuando la energía de ronroneo es igual o superior a 40 ptos., mantén pulsado <IconMap:Icon_Normal> para consumir 40 ptos. de energía de ronroneo y ejecutar directamente el contraataque: Garra peludita perforadora.",
+            "Source": "Técnica pasiva: Pisada felina"
+        },
+        "1000025": {
+            "Title": "Asalto de patitas",
+            "Description": "Cuando Nekomata ejecuta el contraataque: Garra peludita perforadora, entra en el estado de asalto de patitas durante 40 s. La duración se reinicia con cada activación.\nEn el estado de asalto de patitas, cuando Nekomata golpea al enemigo con un ataque, se considera un ataque por la espalda, y activa el efecto de huella superferoz, lo que inflige una instancia de <color=#F0D12B>daño físico</color> equivalente a un 30 % de su Ataque. Este efecto puede activarse como máximo una vez cada 1 s.",
+            "Source": "Técnica pasiva: Pisada felina"
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "102100002": {
+                "Title": "Ataque normal: Zarpazo felino",
+                "Description": "Pulsa <IconMap:Icon_Normal> para usarlo.\nEjecuta hasta cinco cortes hacia delante, lo que inflige <color=#F0D12B>daño físico</color>.\nAl ejecutar el último corte, si golpea a un enemigo afectado por Aturdimiento, repite el ataque tres veces."
+            },
+            "102100004": {
+                "Title": "Ataque normal: Filo carmesí",
+                "Description": "Mantén pulsado <IconMap:Icon_Normal> durante los tres primeros cortes del <color=#FFFFFF>ataque normal</color> para usarlo.\nEjecuta un corte hacia delante y pasa a través de los enemigos, lo que inflige <color=#F0D12B>daño físico</color>.\nAl ejecutar la habilidad, si golpea a un enemigo afectado por Aturdimiento, repite el ataque tres veces."
+            },
+            "102110001": {
+                "Title": "Ataque normal: Zarpazo felino"
+            },
+            "102110002": {
+                "Description": "Multiplicador de daño de 1.er golpe",
+                "Param": "{Skill:1021001, Prop:1001}"
+            },
+            "102110003": {
+                "Description": "Multiplicador de daño de 2.º golpe",
+                "Param": "{Skill:1021002, Prop:1001}"
+            },
+            "102110004": {
+                "Description": "Multiplicador de daño de 3.er golpe",
+                "Param": "{Skill:1021003, Prop:1001}"
+            },
+            "102110005": {
+                "Description": "Multiplicador de daño de 4.º golpe",
+                "Param": "{Skill:1021004, Prop:1001}"
+            },
+            "102110006": {
+                "Description": "Multiplicador de daño de 5.º golpe",
+                "Param": "{Skill:1021005, Prop:1001}"
+            },
+            "102110007": {
+                "Description": "Multiplicador de Aturdimiento de 1.er golpe",
+                "Param": "{Skill:1021001, Prop:1002}"
+            },
+            "102110008": {
+                "Description": "Multiplicador de Aturdimiento de 2.º golpe",
+                "Param": "{Skill:1021002, Prop:1002}"
+            },
+            "102110009": {
+                "Description": "Multiplicador de Aturdimiento de 3.er golpe",
+                "Param": "{Skill:1021003, Prop:1002}"
+            },
+            "102110010": {
+                "Description": "Multiplicador de Aturdimiento de 4.º golpe",
+                "Param": "{Skill:1021004, Prop:1002}"
+            },
+            "102110011": {
+                "Description": "Multiplicador de Aturdimiento de 5.º golpe",
+                "Param": "{Skill:1021005, Prop:1002}"
+            },
+            "102110012": {
+                "Title": "Ataque normal: Filo carmesí"
+            },
+            "102110013": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1021006, Prop:1001}"
+            },
+            "102110014": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1021006, Prop:1002}"
+            }
+        },
+        "1": {
+            "102100006": {
+                "Title": "Técnica especial: Ataque sorpresa",
+                "Description": "Pulsa <IconMap:Icon_Special> para usarla.\nEjecuta un golpe en picado hacia delante, lo que inflige <color=#F0D12B>daño físico</color>.\nDurante la ejecución de la habilidad, el nivel de resistencia a interrupción aumenta.\nEl efecto del ataque subsiguiente de la habilidad mejora."
+            },
+            "102100008": {
+                "Title": "Técnica especial EX: ¡Superataque sorpresa!",
+                "Description": "Al contar con Energía suficiente, pulsa <IconMap:Icon_SpecialReady> para usarla.\nEjecuta un poderoso corte descendente hacia delante, lo que inflige una gran cantidad de <color=#F0D12B>daño físico</color>.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable.\nEl efecto del ataque subsiguiente de la habilidad mejora."
+            },
+            "102110015": {
+                "Title": "Técnica especial: Ataque sorpresa"
+            },
+            "102110016": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1021007, Prop:1001}"
+            },
+            "102110017": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1021007, Prop:1002}"
+            },
+            "102110018": {
+                "Title": "Técnica especial EX: ¡Superataque sorpresa!"
+            },
+            "102110019": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1021008, Prop:1001}"
+            },
+            "102110020": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1021008, Prop:1002}"
+            },
+            "102110021": {
+                "Description": "Consumo de Energía",
+                "Param": "40 ptos."
+            }
+        },
+        "2": {
+            "102100009": {
+                "Title": "Evasión: ¡A que no miau alcanzas!",
+                "Description": "Pulsa <IconMap:Icon_Evade> para usarla.\nEjecuta un rápido esprint evasivo.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "102100010": {
+                "Title": "Evasión: Desaparición de la cola",
+                "Description": "Cuando Nekomata posee al menos 40 ptos. de <Term:1000024>energía de ronroneo</Term>, tras activar una <color=#FFFFFF>evasión perfecta</color>, pulsa <IconMap:Icon_Evade> para consumir 30 ptos. de energía de ronroneo y usarla.\nNekomata activa la visión extrema y se mueve rápidamente hasta situarse a espaldas del enemigo.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable. Esta habilidad no consume intentos de evasión."
+            },
+            "102100011": {
+                "Title": "Ataque rápido: ¡Por aquí!",
+                "Description": "Pulsa <IconMap:Icon_Normal> durante una evasión para usarlo.\nEjecuta un corte hacia delante, lo que inflige <color=#F0D12B>daño físico</color>."
+            },
+            "102100012": {
+                "Title": "Contraataque: Garras fantasma",
+                "Description": "Pulsa <IconMap:Icon_Normal> después de una <color=#FFFFFF>evasión perfecta</color> para usarlo.\nEjecuta un corte contra los enemigos frente a  ella, lo que inflige <color=#F0D12B>daño físico</color>.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "102100013": {
+                "Title": "Contraataque: Garra peludita perforadora",
+                "Description": "Tras ejecutar la <color=#FFFFFF>evasión: Desaparición de la cola</color>, pulsa <IconMap:Icon_Normal> o mantén pulsado <IconMap:Icon_Normal> si tienes 40 ptos. de <Term:1000024>energía de ronroneo</Term> o más para usarlo.\nEjecuta un poderoso corte contra los enemigos que hay en un área grande frente a ella, lo que inflige una gran cantidad de <color=#F0D12B>daño físico</color>.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "102110022": {
+                "Title": "Ataque rápido: ¡Por aquí!"
+            },
+            "102110023": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1021009, Prop:1001}"
+            },
+            "102110024": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1021009, Prop:1002}"
+            },
+            "102110025": {
+                "Title": "Contraataque: Garras fantasma"
+            },
+            "102110026": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1021010, Prop:1001}"
+            },
+            "102110027": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1021010, Prop:1002}"
+            },
+            "102110028": {
+                "Title": "Contraataque: Garra peludita perforadora"
+            },
+            "102110029": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1021019, Prop:1001}"
+            },
+            "102110030": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1021019, Prop:1002}"
+            },
+            "102110031": {
+                "Description": "Consumo de energía de ronroneo",
+                "Param": "40 ptos."
+            }
+        },
+        "3": {
+            "102100014": {
+                "Title": "Técnica en cadena: Ataque con garra",
+                "Description": "Elige el avatar de personaje al ejecutar una <color=#FFFFFF>técnica en cadena</color> para usarla.\nEjecuta un poderoso corte contra los enemigos que hay en un área grande frente a ella, lo que inflige una gran cantidad de <color=#F0D12B>daño físico</color>.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "102100015": {
+                "Title": "Técnica Definitiva: Zarpada letal",
+                "Description": "Cuando los dB llegan a su nivel <color=#FFFFFF>máximo</color>, pulsa <IconMap:Icon_UltimateReady> para usarla.\nEjecuta un poderoso corte contra los enemigos que hay en un área grande frente a ella, lo que inflige una gran cantidad de <color=#F0D12B>daño físico</color>.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "102110032": {
+                "Title": "Técnica en cadena: Ataque con garra"
+            },
+            "102110033": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1021011, Prop:1001}"
+            },
+            "102110034": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1021011, Prop:1002}"
+            },
+            "102110035": {
+                "Title": "Técnica Definitiva: Zarpada letal"
+            },
+            "102110036": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1021012, Prop:1001}"
+            },
+            "102110037": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1021012, Prop:1002}"
+            }
+        },
+        "6": {
+            "102100018": {
+                "Title": "Apoyo rápido: Te doy una pata",
+                "Description": "Pulsa <IconMap:Icon_Switch> para ejecutarlo cuando el personaje activo sea lanzado por los aires.\nEjecuta un corte contra los enemigos frente a ella, lo que inflige <color=#F0D12B>daño físico</color>.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "102100019": {
+                "Title": "Apoyo defensivo: Burbuja personal",
+                "Description": "Pulsa <IconMap:Icon_Switch> para usarlo cuando el personaje en el campo de batalla esté a punto de recibir un ataque.\nBloquea el ataque enemigo, lo que provoca una gran cantidad de Aturdimiento.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "102100020": {
+                "Title": "Ataque sucesivo: Sombra veloz",
+                "Description": "Pulsa <IconMap:Icon_Normal> después de un <color=#FFFFFF>apoyo defensivo</color> para usarlo.\nEjecuta un corte con impulso contra los enemigos frente a ella, lo que inflige <color=#F0D12B>daño físico</color>.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "102110038": {
+                "Title": "Apoyo rápido: Te doy una pata"
+            },
+            "102110039": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1021013, Prop:1001}"
+            },
+            "102110040": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1021013, Prop:1002}"
+            },
+            "102110041": {
+                "Title": "Apoyo defensivo: Burbuja personal"
+            },
+            "102110042": {
+                "Description": "Multiplicador de Aturdimiento defensivo ligero",
+                "Param": "{Skill:1021014, Prop:1002}"
+            },
+            "102110043": {
+                "Description": "Multiplicador de Aturdimiento defensivo fuerte",
+                "Param": "{Skill:1021015, Prop:1002}"
+            },
+            "102110044": {
+                "Description": "Multiplicador de Aturdimiento defensivo continuo",
+                "Param": "{Skill:1021016, Prop:1002}"
+            },
+            "102110045": {
+                "Title": "Ataque sucesivo: Sombra veloz"
+            },
+            "102110046": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1021017, Prop:1001}"
+            },
+            "102110047": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1021017, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1021001": {
+            "DamageValue": 5520,
+            "DamageGrowth": 510,
+            "DazeValue": 1800,
+            "DazeGrowth": 90
+        },
+        "1021002": {
+            "DamageValue": 6260,
+            "DamageGrowth": 570,
+            "DazeValue": 3710,
+            "DazeGrowth": 170
+        },
+        "1021003": {
+            "DamageValue": 7270,
+            "DamageGrowth": 670,
+            "DazeValue": 4670,
+            "DazeGrowth": 220
+        },
+        "1021004": {
+            "DamageValue": 17020,
+            "DamageGrowth": 1550,
+            "DazeValue": 10370,
+            "DazeGrowth": 480
+        },
+        "1021005": {
+            "DamageValue": 12360,
+            "DamageGrowth": 1130,
+            "DazeValue": 5890,
+            "DazeGrowth": 270
+        },
+        "1021006": {
+            "DamageValue": 7180,
+            "DamageGrowth": 660,
+            "DazeValue": 5890,
+            "DazeGrowth": 270
+        },
+        "1021007": {
+            "DamageValue": 4730,
+            "DamageGrowth": 430,
+            "DazeValue": 4730,
+            "DazeGrowth": 220
+        },
+        "1021008": {
+            "DamageValue": 53970,
+            "DamageGrowth": 4910,
+            "DazeValue": 45540,
+            "DazeGrowth": 2070
+        },
+        "1021009": {
+            "DamageValue": 3510,
+            "DamageGrowth": 320,
+            "DazeValue": 1760,
+            "DazeGrowth": 80
+        },
+        "1021010": {
+            "DamageValue": 22790,
+            "DamageGrowth": 2080,
+            "DazeValue": 19950,
+            "DazeGrowth": 910
+        },
+        "1021011": {
+            "DamageValue": 53620,
+            "DamageGrowth": 4880,
+            "DazeValue": 15920,
+            "DazeGrowth": 730
+        },
+        "1021012": {
+            "DamageValue": 157110,
+            "DamageGrowth": 14290,
+            "DazeValue": 11810,
+            "DazeGrowth": 540
+        },
+        "1021013": {
+            "DamageValue": 9450,
+            "DamageGrowth": 860,
+            "DazeValue": 9450,
+            "DazeGrowth": 430
+        },
+        "1021014": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 25900,
+            "DazeGrowth": 1180
+        },
+        "1021015": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 32730,
+            "DazeGrowth": 1490
+        },
+        "1021016": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 15930,
+            "DazeGrowth": 730
+        },
+        "1021017": {
+            "DamageValue": 30040,
+            "DamageGrowth": 2740,
+            "DazeValue": 25810,
+            "DazeGrowth": 1180
+        },
+        "1021019": {
+            "DamageValue": 126390,
+            "DamageGrowth": 11490,
+            "DazeValue": 16460,
+            "DazeGrowth": 750
+        }
+    }
+}
