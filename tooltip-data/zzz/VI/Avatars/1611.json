@@ -1,0 +1,616 @@
+{
+    "Name": "Claret",
+    "UpgradeLevel": 0,
+    "ElementTypes": [
+        "Elec"
+    ],
+    "Specialty": {
+        "Id": 7,
+        "Name": "Ngự Kích"
+    },
+    "Talents": {
+        "1": {
+            "Title": "Lâm Li Cổ Tịch",
+            "Description": "Khi Claret tấn công trúng kẻ địch và gây Nhuệ Bạo, hiệu suất tích lũy Vết Tích tăng 20%. Bội số sát thương gây ra khi Claret kích hoạt Hủy Hoại tăng đến 130% so với ban đầu.",
+            "Lore": "Thiếu nữ lật giở cuốn gia phả cổ xưa, những trang giấy thô ráp cứa vào lòng bàn tay cô.\nMột giọt máu rơi xuống trang đầu, muôn vàn giọt máu nhuốm đầy những chương còn lại."
+        },
+        "2": {
+            "Title": "Vương Miện Vinh Quang",
+            "Description": "Thời gian duy trì tối đa của Khắc Ấn Đỏ Thẫm kéo dài 2s. Khi Claret trong trạng thái Khắc Ấn Đỏ Thẫm hoặc trong thời gian phát động Liên Kích, Tuyệt Kỹ, Hỗ Trợ Chống Trả, Đột Kích Chi Viện, nếu đánh trúng sẽ bỏ qua 18% <color=#2EB6FF>Kháng DMG Điện</color> của mục tiêu.",
+            "Lore": "Thiên tài được huyết mạch lựa chọn bước vào sảnh đường, ánh sáng rực rỡ tỏa ra chiếu rọi lên khuôn mặt.\nCô lặng lẽ nhận lấy vương miện và quyền trượng, quay người hướng đến nơi rèn tiếp theo."
+        },
+        "3": {
+            "Title": "Tuyên Ngôn Phủ Đường",
+            "Description": "Cấp kỹ năng <color=#FFFFFF>Tấn Công Thường</color>, <color=#FFFFFF>Né</color>, <color=#FFFFFF>Kỹ Năng Chi Viện</color>, <color=#FFFFFF>Chiến Kỹ</color>, <color=#FFFFFF>Liên Kích</color> +2",
+            "Lore": "Lửa lò ngày đêm không ngừng nghỉ, gánh nặng gia tộc đè trĩu lên vai thiếu nữ.\nCô vốn không biết cách giải tỏa nỗi niềm, cho đến một ngày nọ, người trợ lý của thiên tài mang đến món tráng miệng tinh xảo, điểm thêm chút dư vị ngọt ngào cho những tháng ngày đắng cay."
+        },
+        "4": {
+            "Title": "Lạc Bước Trăng Đỏ",
+            "Description": "Trong thời gian phát động chiêu thức Tấn Công Thường: Huyết Hoa Thệ - Đúc Sao đòn 3, sẽ tăng thời gian duy trì chém liên tục. Sát thương do Tấn Công Thường: Huyết Hoa Thệ - Đúc Sao đòn 3, Liên Kích: Huyết Hoa Thệ - Huyết Khế Cộng Hưởng, Tuyệt Kỹ: Huyết Hoa Thệ - Thiên Chùy Bách Luyện gây ra tăng 20%.",
+            "Lore": "Tiếng búa dứt hẳn, đêm dài chỉ còn vầng trăng đỏ treo cao.\nThiếu nữ ngước lên với đôi mắt đỏ thẫm, ánh trăng tàn nhẫn giễu cợt tràn qua khung cửa sổ."
+        },
+        "5": {
+            "Title": "Lò Luyện Huyết Sắc",
+            "Description": "Cấp kỹ năng <color=#FFFFFF>Tấn Công Thường</color>, <color=#FFFFFF>Né</color>, <color=#FFFFFF>Kỹ Năng Chi Viện</color>, <color=#FFFFFF>Chiến Kỹ</color>, <color=#FFFFFF>Liên Kích</color> +2",
+            "Lore": "Các thế hệ thợ rèn đều dùng máu tươi nuôi dưỡng lò luyện, còn cô thề sẽ khiến ngọn lửa học được cách tự bùng cháy.\nTiếng búa lại vang vọng khắp xưởng, lửa lò vẫn sáng mãi, nhưng không cần dùng sinh mệnh làm củi đốt nữa."
+        },
+        "6": {
+            "Title": "Giấc Mộng Đêm Nóng",
+            "Description": "Khi Claret phát động Liên Kích: Huyết Hoa Thệ - Huyết Khế Cộng Hưởng, Tuyệt Kỹ: Huyết Hoa Thệ - Thiên Chùy Bách Luyện trọng kích đánh trúng kẻ địch, sẽ không tiêu hao Vết Tích, trực tiếp kích hoạt 1 lần Hủy Hoại cho cá thể.",
+            "Lore": "Thiếu nữ cuối cùng cũng chìm sâu vào giấc ngủ.\nCô mơ thấy một vầng trăng tròn, một vùng đất bao la vĩnh cửu.\nÁnh trăng đỏ rực từ lâu đã tan biến, bầu trời đêm sắc bạc tựa như ánh bình minh.\n"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Bị Động Cốt Lõi: Huyết Yến Nhợt Nhạt",
+            "DescriptionByLevel": {
+                "1": "Sát thương do Claret phát động chiêu thức gây ra đều là DMG Nhuệ Hóa, dùng Phòng Thủ làm bội số sát thương chiêu thức, một số DMG Nhuệ Hóa sẽ tích lũy Điểm Vết Tích, khi Điểm Vết Tích đầy, kẻ địch sẽ vào trạng thái Vết Tích, Vết Tích tối đa cộng dồn 3 tầng. Khi phát động Chiến Kỹ: Huyết Hoa Thệ - Trảm Kim Đoạn Thiết, Chiến Kỹ: Huyết Hoa Thệ - Táng Huyết Tập Kích đánh trúng kẻ địch đang trong trạng thái Vết Tích, sẽ tiêu hao một tầng Vết Tích, kích hoạt Hủy Hoại và gây một lần sát thương phạm vi.\nKhi kích hoạt bạo kích, DMG Nhuệ Hóa không nhận buff DMG Bạo Kích, mà chuyển sang tính buff DMG Nhuệ Bạo. Nếu Tỷ Lệ Bạo Kích vượt quá 100% và đã kích hoạt bạo kích, sẽ dựa trên Tỷ Lệ Bạo Kích vượt mức để tiến hành quyết định Nhuệ Bạo thêm một lần, kích hoạt Nhuệ Bạo sẽ tính thêm một lần buff DMG Nhuệ Bạo. Mỗi khi Claret có 1% DMG Bạo Kích ban đầu, Tỷ Lệ Bạo Kích ban đầu tăng 0,35%.\nKhi Claret vào trận sẽ hồi 60 điểm Nhuệ Năng, trong chế độ Thăm Dò, hiệu quả này tối đa kích hoạt một lần trong 180s.\nKhi Claret trong trạng thái <Term:1000036></Term>, sẽ tăng cấp Kháng Gián Đoạn, khi Claret phát động Liên Kích sẽ kéo dài thời gian duy trì Khắc Ấn Đỏ Thẫm thêm 2s.\nKhi Claret trong trạng thái Khắc Ấn Đỏ Thẫm, hoặc trong thời gian phát động Liên Kích, Tuyệt Kỹ, Hỗ Trợ Chống Trả, Đột Kích Chi Viện, Tỷ Lệ Bạo Kích tăng <color=#2BAD00>15%</color>, hiệu suất tích lũy Vết Tích tăng <color=#2BAD00>20%</color>, khi kích hoạt Né Hoàn Hảo trong thời gian tấn công của chiêu thức Tấn Công Thường: Huyết Hoa Thệ - Đúc Sao và Tấn Công Thường: Huyết Hoa Thệ - Hành Quyết, sẽ khiến sát thương gây ra trong thời gian còn lại của chiêu thức tăng 15%.",
+                "2": "Sát thương do Claret phát động chiêu thức gây ra đều là DMG Nhuệ Hóa, dùng Phòng Thủ làm bội số sát thương chiêu thức, một số DMG Nhuệ Hóa sẽ tích lũy Điểm Vết Tích, khi Điểm Vết Tích đầy, kẻ địch sẽ vào trạng thái Vết Tích, Vết Tích tối đa cộng dồn 3 tầng. Khi phát động Chiến Kỹ: Huyết Hoa Thệ - Trảm Kim Đoạn Thiết, Chiến Kỹ: Huyết Hoa Thệ - Táng Huyết Tập Kích đánh trúng kẻ địch đang trong trạng thái Vết Tích, sẽ tiêu hao một tầng Vết Tích, kích hoạt Hủy Hoại và gây một lần sát thương phạm vi.\nKhi kích hoạt bạo kích, DMG Nhuệ Hóa không nhận buff DMG Bạo Kích, mà chuyển sang tính buff DMG Nhuệ Bạo. Nếu Tỷ Lệ Bạo Kích vượt quá 100% và đã kích hoạt bạo kích, sẽ dựa trên Tỷ Lệ Bạo Kích vượt mức để tiến hành quyết định Nhuệ Bạo thêm một lần, kích hoạt Nhuệ Bạo sẽ tính thêm một lần buff DMG Nhuệ Bạo. Mỗi khi Claret có 1% DMG Bạo Kích ban đầu, Tỷ Lệ Bạo Kích ban đầu tăng 0,35%.\nKhi Claret vào trận sẽ hồi 60 điểm Nhuệ Năng, trong chế độ Thăm Dò, hiệu quả này tối đa kích hoạt một lần trong 180s.\nKhi Claret trong trạng thái <Term:1000036></Term>, sẽ tăng cấp Kháng Gián Đoạn, khi Claret phát động Liên Kích sẽ kéo dài thời gian duy trì Khắc Ấn Đỏ Thẫm thêm 2s.\nKhi Claret trong trạng thái Khắc Ấn Đỏ Thẫm, hoặc trong thời gian phát động Liên Kích, Tuyệt Kỹ, Hỗ Trợ Chống Trả, Đột Kích Chi Viện, Tỷ Lệ Bạo Kích tăng <color=#2BAD00>17,5%</color>, hiệu suất tích lũy Vết Tích tăng <color=#2BAD00>25%</color>, khi kích hoạt Né Hoàn Hảo trong thời gian tấn công của chiêu thức Tấn Công Thường: Huyết Hoa Thệ - Đúc Sao và Tấn Công Thường: Huyết Hoa Thệ - Hành Quyết, sẽ khiến sát thương gây ra trong thời gian còn lại của chiêu thức tăng 15%.",
+                "3": "Sát thương do Claret phát động chiêu thức gây ra đều là DMG Nhuệ Hóa, dùng Phòng Thủ làm bội số sát thương chiêu thức, một số DMG Nhuệ Hóa sẽ tích lũy Điểm Vết Tích, khi Điểm Vết Tích đầy, kẻ địch sẽ vào trạng thái Vết Tích, Vết Tích tối đa cộng dồn 3 tầng. Khi phát động Chiến Kỹ: Huyết Hoa Thệ - Trảm Kim Đoạn Thiết, Chiến Kỹ: Huyết Hoa Thệ - Táng Huyết Tập Kích đánh trúng kẻ địch đang trong trạng thái Vết Tích, sẽ tiêu hao một tầng Vết Tích, kích hoạt Hủy Hoại và gây một lần sát thương phạm vi.\nKhi kích hoạt bạo kích, DMG Nhuệ Hóa không nhận buff DMG Bạo Kích, mà chuyển sang tính buff DMG Nhuệ Bạo. Nếu Tỷ Lệ Bạo Kích vượt quá 100% và đã kích hoạt bạo kích, sẽ dựa trên Tỷ Lệ Bạo Kích vượt mức để tiến hành quyết định Nhuệ Bạo thêm một lần, kích hoạt Nhuệ Bạo sẽ tính thêm một lần buff DMG Nhuệ Bạo. Mỗi khi Claret có 1% DMG Bạo Kích ban đầu, Tỷ Lệ Bạo Kích ban đầu tăng 0,35%.\nKhi Claret vào trận sẽ hồi 60 điểm Nhuệ Năng, trong chế độ Thăm Dò, hiệu quả này tối đa kích hoạt một lần trong 180s.\nKhi Claret trong trạng thái <Term:1000036></Term>, sẽ tăng cấp Kháng Gián Đoạn, khi Claret phát động Liên Kích sẽ kéo dài thời gian duy trì Khắc Ấn Đỏ Thẫm thêm 2s.\nKhi Claret trong trạng thái Khắc Ấn Đỏ Thẫm, hoặc trong thời gian phát động Liên Kích, Tuyệt Kỹ, Hỗ Trợ Chống Trả, Đột Kích Chi Viện, Tỷ Lệ Bạo Kích tăng <color=#2BAD00>20%</color>, hiệu suất tích lũy Vết Tích tăng <color=#2BAD00>30%</color>, khi kích hoạt Né Hoàn Hảo trong thời gian tấn công của chiêu thức Tấn Công Thường: Huyết Hoa Thệ - Đúc Sao và Tấn Công Thường: Huyết Hoa Thệ - Hành Quyết, sẽ khiến sát thương gây ra trong thời gian còn lại của chiêu thức tăng 15%.",
+                "4": "Sát thương do Claret phát động chiêu thức gây ra đều là DMG Nhuệ Hóa, dùng Phòng Thủ làm bội số sát thương chiêu thức, một số DMG Nhuệ Hóa sẽ tích lũy Điểm Vết Tích, khi Điểm Vết Tích đầy, kẻ địch sẽ vào trạng thái Vết Tích, Vết Tích tối đa cộng dồn 3 tầng. Khi phát động Chiến Kỹ: Huyết Hoa Thệ - Trảm Kim Đoạn Thiết, Chiến Kỹ: Huyết Hoa Thệ - Táng Huyết Tập Kích đánh trúng kẻ địch đang trong trạng thái Vết Tích, sẽ tiêu hao một tầng Vết Tích, kích hoạt Hủy Hoại và gây một lần sát thương phạm vi.\nKhi kích hoạt bạo kích, DMG Nhuệ Hóa không nhận buff DMG Bạo Kích, mà chuyển sang tính buff DMG Nhuệ Bạo. Nếu Tỷ Lệ Bạo Kích vượt quá 100% và đã kích hoạt bạo kích, sẽ dựa trên Tỷ Lệ Bạo Kích vượt mức để tiến hành quyết định Nhuệ Bạo thêm một lần, kích hoạt Nhuệ Bạo sẽ tính thêm một lần buff DMG Nhuệ Bạo. Mỗi khi Claret có 1% DMG Bạo Kích ban đầu, Tỷ Lệ Bạo Kích ban đầu tăng 0,35%.\nKhi Claret vào trận sẽ hồi 60 điểm Nhuệ Năng, trong chế độ Thăm Dò, hiệu quả này tối đa kích hoạt một lần trong 180s.\nKhi Claret trong trạng thái <Term:1000036></Term>, sẽ tăng cấp Kháng Gián Đoạn, khi Claret phát động Liên Kích sẽ kéo dài thời gian duy trì Khắc Ấn Đỏ Thẫm thêm 2s.\nKhi Claret trong trạng thái Khắc Ấn Đỏ Thẫm, hoặc trong thời gian phát động Liên Kích, Tuyệt Kỹ, Hỗ Trợ Chống Trả, Đột Kích Chi Viện, Tỷ Lệ Bạo Kích tăng <color=#2BAD00>22,5%</color>, hiệu suất tích lũy Vết Tích tăng <color=#2BAD00>35%</color>, khi kích hoạt Né Hoàn Hảo trong thời gian tấn công của chiêu thức Tấn Công Thường: Huyết Hoa Thệ - Đúc Sao và Tấn Công Thường: Huyết Hoa Thệ - Hành Quyết, sẽ khiến sát thương gây ra trong thời gian còn lại của chiêu thức tăng 15%.",
+                "5": "Sát thương do Claret phát động chiêu thức gây ra đều là DMG Nhuệ Hóa, dùng Phòng Thủ làm bội số sát thương chiêu thức, một số DMG Nhuệ Hóa sẽ tích lũy Điểm Vết Tích, khi Điểm Vết Tích đầy, kẻ địch sẽ vào trạng thái Vết Tích, Vết Tích tối đa cộng dồn 3 tầng. Khi phát động Chiến Kỹ: Huyết Hoa Thệ - Trảm Kim Đoạn Thiết, Chiến Kỹ: Huyết Hoa Thệ - Táng Huyết Tập Kích đánh trúng kẻ địch đang trong trạng thái Vết Tích, sẽ tiêu hao một tầng Vết Tích, kích hoạt Hủy Hoại và gây một lần sát thương phạm vi.\nKhi kích hoạt bạo kích, DMG Nhuệ Hóa không nhận buff DMG Bạo Kích, mà chuyển sang tính buff DMG Nhuệ Bạo. Nếu Tỷ Lệ Bạo Kích vượt quá 100% và đã kích hoạt bạo kích, sẽ dựa trên Tỷ Lệ Bạo Kích vượt mức để tiến hành quyết định Nhuệ Bạo thêm một lần, kích hoạt Nhuệ Bạo sẽ tính thêm một lần buff DMG Nhuệ Bạo. Mỗi khi Claret có 1% DMG Bạo Kích ban đầu, Tỷ Lệ Bạo Kích ban đầu tăng 0,35%.\nKhi Claret vào trận sẽ hồi 60 điểm Nhuệ Năng, trong chế độ Thăm Dò, hiệu quả này tối đa kích hoạt một lần trong 180s.\nKhi Claret trong trạng thái <Term:1000036></Term>, sẽ tăng cấp Kháng Gián Đoạn, khi Claret phát động Liên Kích sẽ kéo dài thời gian duy trì Khắc Ấn Đỏ Thẫm thêm 2s.\nKhi Claret trong trạng thái Khắc Ấn Đỏ Thẫm, hoặc trong thời gian phát động Liên Kích, Tuyệt Kỹ, Hỗ Trợ Chống Trả, Đột Kích Chi Viện, Tỷ Lệ Bạo Kích tăng <color=#2BAD00>25%</color>, hiệu suất tích lũy Vết Tích tăng <color=#2BAD00>40%</color>, khi kích hoạt Né Hoàn Hảo trong thời gian tấn công của chiêu thức Tấn Công Thường: Huyết Hoa Thệ - Đúc Sao và Tấn Công Thường: Huyết Hoa Thệ - Hành Quyết, sẽ khiến sát thương gây ra trong thời gian còn lại của chiêu thức tăng 15%.",
+                "6": "Sát thương do Claret phát động chiêu thức gây ra đều là DMG Nhuệ Hóa, dùng Phòng Thủ làm bội số sát thương chiêu thức, một số DMG Nhuệ Hóa sẽ tích lũy Điểm Vết Tích, khi Điểm Vết Tích đầy, kẻ địch sẽ vào trạng thái Vết Tích, Vết Tích tối đa cộng dồn 3 tầng. Khi phát động Chiến Kỹ: Huyết Hoa Thệ - Trảm Kim Đoạn Thiết, Chiến Kỹ: Huyết Hoa Thệ - Táng Huyết Tập Kích đánh trúng kẻ địch đang trong trạng thái Vết Tích, sẽ tiêu hao một tầng Vết Tích, kích hoạt Hủy Hoại và gây một lần sát thương phạm vi.\nKhi kích hoạt bạo kích, DMG Nhuệ Hóa không nhận buff DMG Bạo Kích, mà chuyển sang tính buff DMG Nhuệ Bạo. Nếu Tỷ Lệ Bạo Kích vượt quá 100% và đã kích hoạt bạo kích, sẽ dựa trên Tỷ Lệ Bạo Kích vượt mức để tiến hành quyết định Nhuệ Bạo thêm một lần, kích hoạt Nhuệ Bạo sẽ tính thêm một lần buff DMG Nhuệ Bạo. Mỗi khi Claret có 1% DMG Bạo Kích ban đầu, Tỷ Lệ Bạo Kích ban đầu tăng 0,35%.\nKhi Claret vào trận sẽ hồi 60 điểm Nhuệ Năng, trong chế độ Thăm Dò, hiệu quả này tối đa kích hoạt một lần trong 180s.\nKhi Claret trong trạng thái <Term:1000036></Term>, sẽ tăng cấp Kháng Gián Đoạn, khi Claret phát động Liên Kích sẽ kéo dài thời gian duy trì Khắc Ấn Đỏ Thẫm thêm 2s.\nKhi Claret trong trạng thái Khắc Ấn Đỏ Thẫm, hoặc trong thời gian phát động Liên Kích, Tuyệt Kỹ, Hỗ Trợ Chống Trả, Đột Kích Chi Viện, Tỷ Lệ Bạo Kích tăng <color=#2BAD00>27,5%</color>, hiệu suất tích lũy Vết Tích tăng <color=#2BAD00>45%</color>, khi kích hoạt Né Hoàn Hảo trong thời gian tấn công của chiêu thức Tấn Công Thường: Huyết Hoa Thệ - Đúc Sao và Tấn Công Thường: Huyết Hoa Thệ - Hành Quyết, sẽ khiến sát thương gây ra trong thời gian còn lại của chiêu thức tăng 15%.",
+                "7": "Sát thương do Claret phát động chiêu thức gây ra đều là DMG Nhuệ Hóa, dùng Phòng Thủ làm bội số sát thương chiêu thức, một số DMG Nhuệ Hóa sẽ tích lũy Điểm Vết Tích, khi Điểm Vết Tích đầy, kẻ địch sẽ vào trạng thái Vết Tích, Vết Tích tối đa cộng dồn 3 tầng. Khi phát động Chiến Kỹ: Huyết Hoa Thệ - Trảm Kim Đoạn Thiết, Chiến Kỹ: Huyết Hoa Thệ - Táng Huyết Tập Kích đánh trúng kẻ địch đang trong trạng thái Vết Tích, sẽ tiêu hao một tầng Vết Tích, kích hoạt Hủy Hoại và gây một lần sát thương phạm vi.\nKhi kích hoạt bạo kích, DMG Nhuệ Hóa không nhận buff DMG Bạo Kích, mà chuyển sang tính buff DMG Nhuệ Bạo. Nếu Tỷ Lệ Bạo Kích vượt quá 100% và đã kích hoạt bạo kích, sẽ dựa trên Tỷ Lệ Bạo Kích vượt mức để tiến hành quyết định Nhuệ Bạo thêm một lần, kích hoạt Nhuệ Bạo sẽ tính thêm một lần buff DMG Nhuệ Bạo. Mỗi khi Claret có 1% DMG Bạo Kích ban đầu, Tỷ Lệ Bạo Kích ban đầu tăng 0,35%.\nKhi Claret vào trận sẽ hồi 60 điểm Nhuệ Năng, trong chế độ Thăm Dò, hiệu quả này tối đa kích hoạt một lần trong 180s.\nKhi Claret trong trạng thái <Term:1000036></Term>, sẽ tăng cấp Kháng Gián Đoạn, khi Claret phát động Liên Kích sẽ kéo dài thời gian duy trì Khắc Ấn Đỏ Thẫm thêm 2s.\nKhi Claret trong trạng thái Khắc Ấn Đỏ Thẫm, hoặc trong thời gian phát động Liên Kích, Tuyệt Kỹ, Hỗ Trợ Chống Trả, Đột Kích Chi Viện, Tỷ Lệ Bạo Kích tăng <color=#2BAD00>30%</color>, hiệu suất tích lũy Vết Tích tăng <color=#2BAD00>50%</color>, khi kích hoạt Né Hoàn Hảo trong thời gian tấn công của chiêu thức Tấn Công Thường: Huyết Hoa Thệ - Đúc Sao và Tấn Công Thường: Huyết Hoa Thệ - Hành Quyết, sẽ khiến sát thương gây ra trong thời gian còn lại của chiêu thức tăng 15%."
+            }
+        },
+        "MathSkill": {
+            "Title": "Năng Lực Thêm: Kế Thừa Huyết Duệ",
+            "Description": "Khi trong đội có nhân vật <color=#FFFFFF>Khống Chế</color>, nhân vật <color=#FFFFFF>Ngự Kích</color> khác hoặc nhân vật có cùng thuộc tính với bản thân sẽ kích hoạt:\nKhi Người Đại Diện toàn đội kích hoạt Xâm Nhiễm, Claret hồi 300 điểm Decibel, trong 18s tối đa kích hoạt 1 lần.\nKhi Claret hoặc đồng đội kích hoạt Hủy Hoại, Người Đại Diện Ngự Kích toàn đội tiến vào Tàn Phong, trong trạng thái Tàn Phong, DMG Nhuệ Bạo tăng <color=#FFFFFF>25%</color>, duy trì 40s. Khi vào lại trạng thái Tàn Phong, sẽ làm mới thời gian duy trì Tàn Phong."
+        },
+        "AwakenAbility": {},
+        "BaseProps": [
+            {
+                "20101": 0
+            },
+            {
+                "20101": 480
+            },
+            {
+                "20101": 960
+            },
+            {
+                "20101": 1440
+            },
+            {
+                "20101": 1920
+            },
+            {
+                "20101": 2400
+            },
+            {
+                "20101": 2880
+            }
+        ]
+    },
+    "Terms": {
+        "1000036": {
+            "Title": "Khắc Ấn Đỏ Thẫm",
+            "Description": "Biến vũ khí thành rìu máu, thay thế chiêu thức tấn công của bản thân thành chiêu thức Huyết Hoa Thệ, đồng thời tăng Tỷ Lệ Bạo Kích và hiệu suất tích lũy Vết Tích của bản thân.",
+            "Source": "Siêu Chiến Kỹ: Huyết Hoa Thệ - Bí Thuật Trui Rèn"
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "161100001": {
+                "Title": "Tấn Công Thường: Tứ Thức Huyết Rèn",
+                "Description": "Nhấn <IconMap:Icon_Normal> phát động:\nThực hiện tối đa 4 đòn đập búa về phía trước, gây <color=#2EB6FF>DMG Điện</color>."
+            },
+            "161100002": {
+                "Title": "Tấn Công Thường: Huyết Hoa Thệ - Đúc Sao",
+                "Description": "Trong trạng thái <Term:1000036></Term>, nhấn <IconMap:Icon_Normal> phát động:\nSử dụng rìu máu tung tối đa 3 đòn chém về phía trước, gây <color=#2EB6FF>DMG Điện</color>.\nKhi phát động chiêu thức tấn công đòn 2, Claret sẽ nhảy về sau và ném rìu máu, trong lúc lùi về có thể kích hoạt hiệu quả Né Hoàn Hảo.\nKhi phát động chiêu thức tấn công đòn 3, Claret sẽ chém liên tục sau đó nhảy lên bổ xuống, trong thời gian chém liên tục sẽ tăng cấp Kháng Gián Đoạn, sát thương phải chịu giảm 40%, nhấn liên tục hoặc nhấn giữ <IconMap:Icon_Normal> có thể kéo dài thời gian duy trì chém liên tục, khi ngừng nhấn liên tục hoặc thả <IconMap:Icon_Normal> Claret sẽ lập tức nhảy lên bổ xuống, trong lúc nhảy lên có thể kích hoạt hiệu quả Né Hoàn Hảo, sau khi kích hoạt thành công Né Hoàn Hảo, nhấn hoặc nhấn giữ <IconMap:Icon_Normal> có thể nối tiếp Tấn Công Thường: Huyết Hoa Thệ - Đúc Sao đòn 3.\nTrong thời gian phát động sẽ không thoát trạng thái Khắc Ấn Đỏ Thẫm."
+            },
+            "161100003": {
+                "Title": "Tấn Công Thường: Huyết Hoa Thệ - Hành Quyết",
+                "Description": "Trong trạng thái <Term:1000036></Term>, sau khi phát động Chiến Kỹ: Huyết Hoa Thệ - Trảm Kim Đoạn Thiết hoặc Chiến Kỹ: Huyết Hoa Thệ - Táng Huyết Tập Kích và kích hoạt Hủy Hoại thành công, nhấn hoặc nhấn giữ <IconMap:Icon_Normal> phát động:\nDùng rìu máu xoay vòng nhảy lên đập xuống và chém kẻ địch mục tiêu, gây <color=#2EB6FF>DMG Điện</color>, trong lúc nhảy lên có thể kích hoạt hiệu quả Né Hoàn Hảo.\nSau khi phát động chiêu thức, nhấn hoặc nhấn giữ <IconMap:Icon_Normal> có thể tiếp nối Tấn Công Thường: Huyết Hoa Thệ - Đúc Sao đòn 3.\nTrong thời gian phát động sẽ không thoát trạng thái Khắc Ấn Đỏ Thẫm."
+            },
+            "161110001": {
+                "Title": "Tấn Công Thường: Tứ Thức Huyết Rèn"
+            },
+            "161110002": {
+                "Description": "Bội Số DMG Đòn 1",
+                "Param": "{Skill:1611001, Prop:1001}"
+            },
+            "161110003": {
+                "Description": "Bội Số DMG Đòn 2",
+                "Param": "{Skill:1611002, Prop:1001}"
+            },
+            "161110004": {
+                "Description": "Bội Số DMG Đòn 3",
+                "Param": "{Skill:1611003, Prop:1001}"
+            },
+            "161110005": {
+                "Description": "Bội Số DMG Đòn 4",
+                "Param": "{Skill:1611004, Prop:1001}"
+            },
+            "161110006": {
+                "Description": "Bội Số Choáng Đòn 1",
+                "Param": "{Skill:1611001, Prop:1002}"
+            },
+            "161110007": {
+                "Description": "Bội Số Choáng Đòn 2",
+                "Param": "{Skill:1611002, Prop:1002}"
+            },
+            "161110008": {
+                "Description": "Bội Số Choáng Đòn 3",
+                "Param": "{Skill:1611003, Prop:1002}"
+            },
+            "161110009": {
+                "Description": "Bội Số Choáng Đòn 4",
+                "Param": "{Skill:1611004, Prop:1002}"
+            },
+            "161110010": {
+                "Title": "Tấn Công Thường: Huyết Hoa Thệ - Đúc Sao"
+            },
+            "161110011": {
+                "Description": "Bội Số DMG Đòn 1",
+                "Param": "{Skill:1611005, Prop:1001}"
+            },
+            "161110012": {
+                "Description": "Bội Số DMG Đòn 2",
+                "Param": "{Skill:1611006, Prop:1001}"
+            },
+            "161110013": {
+                "Description": "Bội Số DMG Chém Liên Tục Đòn 3",
+                "Param": "{Skill:1611007, Prop:1001}"
+            },
+            "161110014": {
+                "Description": "Bội Số DMG Đập Xuống Đòn 3",
+                "Param": "{Skill:1611029, Prop:1001}"
+            },
+            "161110015": {
+                "Description": "Bội Số Choáng Đòn 1",
+                "Param": "{Skill:1611005, Prop:1002}"
+            },
+            "161110016": {
+                "Description": "Bội Số Choáng Đòn 2",
+                "Param": "{Skill:1611006, Prop:1002}"
+            },
+            "161110017": {
+                "Description": "Bội Số Choáng Chém Liên Tục Đòn 3",
+                "Param": "{Skill:1611007, Prop:1002}"
+            },
+            "161110018": {
+                "Description": "Bội Số Choáng Đập Xuống Đòn 3",
+                "Param": "{Skill:1611029, Prop:1002}"
+            },
+            "161110019": {
+                "Title": "Tấn Công Thường: Huyết Hoa Thệ - Hành Quyết"
+            },
+            "161110020": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1611008, Prop:1001}"
+            },
+            "161110021": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1611008, Prop:1002}"
+            }
+        },
+        "1": {
+            "161100004": {
+                "Title": "Chiến Kỹ: Rạng Đông Cất Tiếng",
+                "Description": "Nhấn <IconMap:Icon_Special> phát động:\nPhát động 2 đòn búa đập về phía trước, gây <color=#2EB6FF>DMG Điện</color>.\nChiêu thức khi phát động sẽ tăng cấp Kháng Gián Đoạn."
+            },
+            "161100005": {
+                "Title": "Siêu Chiến Kỹ: Huyết Hoa Thệ - Bí Thuật Trui Rèn",
+                "Description": "Khi đủ Nhuệ Năng và không ở trong Khắc Ấn Đỏ Thẫm, nhấn <IconMap:Icon_SpecialReady_Ep> phát động:\nBiến búa rèn thành rìu máu và chém kẻ địch mục tiêu, gây <color=#2EB6FF>DMG Điện</color>.\nSau khi phát động chiêu thức, tiến vào Khắc Ấn Đỏ Thẫm, duy trì 16s. Khi ở vị trí dự bị, thời gian duy trì không giảm đi. Khi Claret đánh trúng kẻ địch, nếu kẻ địch bị đánh bại trong 0.5s và thời gian Khắc Ấn Đỏ Thẫm của bản thân không phải 0, sẽ kéo dài 3s thời gian duy trì Khắc Ấn Đỏ Thẫm, trong 3s tối đa kích hoạt 1 lần.\nKhi phát động chiêu thức, duy trì nhấn giữ <IconMap:Icon_SpecialReady_Ep>, có thể bỏ qua chém, nhanh chóng phái sinh Chiến Kỹ: Huyết Hoa Thệ - Trảm Kim Đoạn Thiết và Chiến Kỹ: Huyết Hoa Thệ - Táng Huyết Tập Kích.\nSau khi phát động chiêu thức, nhấn hoặc nhấn giữ <IconMap:Icon_Normal> có thể nối tiếp Tấn Công Thường: Huyết Hoa Thệ - Đúc Sao đòn 3.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "161100006": {
+                "Title": "Chiến Kỹ: Huyết Hoa Thệ - Trảm Kim Đoạn Thiết",
+                "Description": "Khi trong <Term:1000036></Term>, nhấn <IconMap:Icon_Special> hoặc <IconMap:Icon_SpecialReady_Ep> phát động:\nSau khi nhảy mạnh về phía trước, sẽ chém ngang, gây <color=#2EB6FF>DMG Điện</color>.\nKhi đòn chém ngang trúng kẻ địch mang Vết Tích, sẽ kích hoạt Hủy Hoại lên mục tiêu, gây thêm <color=#2EB6FF>DMG Điện</color> phạm vi.\nTrong thời gian phát động sẽ không thoát trạng thái Khắc Ấn Đỏ Thẫm.\nChiêu thức khi phát động sẽ tăng cấp Kháng Gián Đoạn, sau khi kích hoạt thành công Hủy Hoại, chiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "161100007": {
+                "Title": "Chiến Kỹ: Huyết Hoa Thệ - Táng Huyết Tập Kích",
+                "Description": "Khi trong <Term:1000036></Term>, lúc nhảy lên trong Chiến Kỹ: Huyết Hoa Thệ - Trảm Kim Đoạn Thiết, duy trì nhấn giữ <IconMap:Icon_Special> hoặc <IconMap:Icon_SpecialReady_Ep> phát động:\nLiên tục tung 3 lần chém ngang về phía trước, gây lượng lớn <color=#2EB6FF>DMG Điện</color>.\nMỗi khi đòn chém ngang trúng kẻ địch mang Vết Tích, sẽ kích hoạt Hủy Hoại lên mục tiêu, gây thêm <color=#2EB6FF>DMG Điện</color> phạm vi, trong chiêu thức tối đa có thể liên tục kích hoạt 3 lần Hủy Hoại, Hủy Hoại lần thứ 3 có cấp Gián Đoạn cao hơn.\nTrong thời gian phát động sẽ không thoát trạng thái <Term:1000036></Term>.\nChiêu thức khi phát động sẽ tăng cấp Kháng Gián Đoạn, sau khi kích hoạt thành công Hủy Hoại, chiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "161110022": {
+                "Title": "Chiến Kỹ: Rạng Đông Cất Tiếng"
+            },
+            "161110023": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1611009, Prop:1001}"
+            },
+            "161110024": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1611009, Prop:1002}"
+            },
+            "161110025": {
+                "Title": "Siêu Chiến Kỹ: Huyết Hoa Thệ - Bí Thuật Trui Rèn"
+            },
+            "161110026": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1611010, Prop:1001}"
+            },
+            "161110027": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1611010, Prop:1002}"
+            },
+            "161110028": {
+                "Description": "Tiêu hao Nhuệ Năng",
+                "Param": "60 điểm"
+            },
+            "161110029": {
+                "Title": "Chiến Kỹ: Huyết Hoa Thệ - Trảm Kim Đoạn Thiết"
+            },
+            "161110030": {
+                "Description": "Bội Số DMG Nhảy Lên Tấn Công",
+                "Param": "{Skill:1611011, Prop:1001}"
+            },
+            "161110031": {
+                "Description": "Bội Số DMG Chém Ngang",
+                "Param": "{Skill:1611012, Prop:1001}"
+            },
+            "161110032": {
+                "Description": "Bội Số Choáng Nhảy Lên Tấn Công",
+                "Param": "{Skill:1611011, Prop:1002}"
+            },
+            "161110033": {
+                "Description": "Bội Số Choáng Chém Ngang",
+                "Param": "{Skill:1611012, Prop:1002}"
+            },
+            "161110034": {
+                "Description": "Bội Số DMG Hủy Hoại",
+                "Param": "{Skill:1611013, Prop:1001}"
+            },
+            "161110035": {
+                "Title": "Chiến Kỹ: Huyết Hoa Thệ - Táng Huyết Tập Kích"
+            },
+            "161110036": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1611014, Prop:1001}"
+            },
+            "161110037": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1611014, Prop:1002}"
+            }
+        },
+        "2": {
+            "161100008": {
+                "Title": "Né: Dạ Quan",
+                "Description": "Nhấn <IconMap:Icon_Evade> phát động:\nNhanh chóng né tránh.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "161100009": {
+                "Title": "Tấn Công Lướt: Tôi Lửa",
+                "Description": "Khi né ngoài trạng thái <Term:1000036></Term>, nhấn <IconMap:Icon_Normal> phát động:\nNện búa về phía trước, gây <color=#2EB6FF>DMG Điện</color>."
+            },
+            "161100010": {
+                "Title": "Phản Kích Khi Né: Hồi Phong",
+                "Description": "Sau khi kích hoạt <color=#FFFFFF>Né Hoàn Hảo</color>, nhấn <IconMap:Icon_Normal> phát động:\nDùng cán búa phản công mạnh mẽ về phía trước, gây <color=#2EB6FF>DMG Điện</color>.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "161100011": {
+                "Title": "Phản Kích Khi Né: Huyết Hoa Thệ - Hồi Phong",
+                "Description": "Sau khi kích hoạt <color=#FFFFFF>Né Hoàn Hảo</color>, nhấn <IconMap:Icon_Normal> phát động:\nDùng rìu máu phản công mạnh mẽ về phía trước, gây <color=#2EB6FF>DMG Điện</color>.\nTrong thời gian phát động sẽ không thoát trạng thái <Term:1000036></Term>.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "161110038": {
+                "Title": "Tấn Công Lướt: Tôi Lửa"
+            },
+            "161110039": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1611016, Prop:1001}"
+            },
+            "161110040": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1611016, Prop:1002}"
+            },
+            "161110041": {
+                "Title": "Phản Kích Khi Né: Hồi Phong"
+            },
+            "161110042": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1611018, Prop:1001}"
+            },
+            "161110043": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1611018, Prop:1002}"
+            },
+            "161110044": {
+                "Title": "Phản Kích Khi Né: Huyết Hoa Thệ - Hồi Phong"
+            },
+            "161110045": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1611019, Prop:1001}"
+            },
+            "161110046": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1611019, Prop:1002}"
+            }
+        },
+        "3": {
+            "161100012": {
+                "Title": "Liên Kích: Huyết Hoa Thệ - Huyết Khế Cộng Hưởng",
+                "Description": "Khi kích hoạt <color=#FFFFFF>Liên Kích</color>, chọn nhân vật tương ứng phát động:\nChém liên tục vào kẻ địch phía trước, gây lượng lớn <color=#2EB6FF>DMG Điện</color>.\nTrong thời gian phát động, thời gian duy trì <Term:1000036></Term> sẽ không giảm, và không thoát trạng thái <Term:1000036></Term>.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "161100013": {
+                "Title": "Tuyệt Kỹ: Huyết Hoa Thệ - Thiên Chùy Bách Luyện",
+                "Description": "Khi Cấp Decibel đạt <color=#FFFFFF>Cực Hạn</color>, nhấn <IconMap:Icon_UltimateReady> phát động:\nChém liên tục vào kẻ địch phía trước, gây lượng lớn <color=#2EB6FF>DMG Điện</color>.\nTrong thời gian phát động, thời gian duy trì <Term:1000036></Term> sẽ không giảm, và không thoát trạng thái <Term:1000036></Term>.\nKhi phát động chiêu thức, sẽ hồi 10 điểm Nhuệ Năng.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "161110047": {
+                "Title": "Liên Kích: Huyết Hoa Thệ - Huyết Khế Cộng Hưởng"
+            },
+            "161110048": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1611020, Prop:1001}"
+            },
+            "161110049": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1611020, Prop:1002}"
+            },
+            "161110050": {
+                "Title": "Tuyệt Kỹ: Huyết Hoa Thệ - Thiên Chùy Bách Luyện"
+            },
+            "161110051": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1611021, Prop:1001}"
+            },
+            "161110052": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1611021, Prop:1002}"
+            }
+        },
+        "6": {
+            "161100015": {
+                "Title": "Hỗ Trợ Nhanh: Ách Nguyệt Tái Lâm",
+                "Description": "Khi nhân vật đang thao tác bị đánh bay, nhấn <IconMap:Icon_Switch> phát động:\nGây <color=#2EB6FF>DMG Điện</color>.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "161100016": {
+                "Title": "Hỗ Trợ Nhanh: Huyết Hoa Thệ - Ách Nguyệt Tái Lâm",
+                "Description": "Khi nhân vật đang thao tác bị đánh bay, nhấn <IconMap:Icon_Switch> phát động:\nGây <color=#2EB6FF>DMG Điện</color>.\nTrong thời gian phát động sẽ không thoát trạng thái <Term:1000036></Term>.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "161100017": {
+                "Title": "Hỗ Trợ Chống Đỡ: Tâm Lò Bất Khuất",
+                "Description": "Khi nhân vật trong sân sắp bị tấn công, nhấn <IconMap:Icon_Switch> phát động:\nChống đỡ tấn công của kẻ địch, tích lũy lượng lớn Điểm Choáng.\nTrong thời gian phát động, thời gian duy trì <Term:1000036></Term> sẽ không giảm.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "161100018": {
+                "Title": "Đột Kích Chi Viện: Huyết Hoa Thệ - Mũi Rèn Tinh Khiết",
+                "Description": "Sau khi phát động <color=#FFFFFF>Hỗ Trợ Chống Đỡ</color>, nhấn <IconMap:Icon_Normal> phát động:\nGây lượng lớn <color=#2EB6FF>DMG Điện</color>.\nTrong thời gian phát động sẽ không thoát trạng thái <Term:1000036></Term>.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "161100019": {
+                "Title": "Hỗ Trợ Chống Trả: Tấc Sắt Không Nhường",
+                "Description": "Khi bản thân hoặc nhân vật trong trận sắp bị Kỹ Năng Khống Chế của một số kẻ địch tấn công, nhấn <IconMap:Icon_Switch> phát động:\nĐọ sức với quái vật, sau khi đọ sức thành công, sẽ hóa giải Kỹ Năng Khống Chế của kẻ địch và gây <color=#2EB6FF>DMG Điện</color>.\nTrong thời gian phát động, thời gian duy trì <Term:1000036></Term> sẽ không giảm.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "161100020": {
+                "Title": "Đột Kích Chi Viện: Huyết Hoa Thệ - Đúc Hình",
+                "Description": "Sau khi phát động <color=#FFFFFF>Hỗ Trợ Chống Trả</color>, nhấn <IconMap:Icon_Normal> phát động:\nGây lượng lớn <color=#2EB6FF>DMG Điện</color>, khi trọng kích trúng kẻ địch, sẽ trực tiếp thêm 1 tầng Vết Tích cho mục tiêu.\nTrong thời gian phát động, thời gian duy trì <Term:1000036></Term> sẽ không giảm.\nChiêu thức khi phát động sẽ có hiệu quả Vô Địch."
+            },
+            "161110053": {
+                "Title": "Hỗ Trợ Nhanh: Ách Nguyệt Tái Lâm"
+            },
+            "161110054": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1611022, Prop:1001}"
+            },
+            "161110055": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1611022, Prop:1002}"
+            },
+            "161110056": {
+                "Title": "Hỗ Trợ Nhanh: Huyết Hoa Thệ - Ách Nguyệt Tái Lâm"
+            },
+            "161110057": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1611023, Prop:1001}"
+            },
+            "161110058": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1611023, Prop:1002}"
+            },
+            "161110059": {
+                "Title": "Hỗ Trợ Chống Đỡ: Tâm Lò Bất Khuất"
+            },
+            "161110060": {
+                "Description": "Bội Số Đỡ Choáng Nhẹ",
+                "Param": "{Skill:1611024, Prop:1002}"
+            },
+            "161110061": {
+                "Description": "Bội Số Đỡ Choáng Mạnh",
+                "Param": "{Skill:1611025, Prop:1002}"
+            },
+            "161110062": {
+                "Description": "Bội Số Đỡ Choáng Liên Tục",
+                "Param": "{Skill:1611026, Prop:1002}"
+            },
+            "161110063": {
+                "Title": "Đột Kích Chi Viện: Huyết Hoa Thệ - Mũi Rèn Tinh Khiết"
+            },
+            "161110064": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1611027, Prop:1001}"
+            },
+            "161110065": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1611027, Prop:1002}"
+            },
+            "161110066": {
+                "Title": "Hỗ Trợ Chống Trả: Tấc Sắt Không Nhường"
+            },
+            "161110067": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1611028, Prop:1001}"
+            },
+            "161110068": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1611028, Prop:1002}"
+            },
+            "161110069": {
+                "Title": "Đột Kích Chi Viện: Huyết Hoa Thệ - Đúc Hình"
+            },
+            "161110070": {
+                "Description": "Bội Số DMG",
+                "Param": "{Skill:1611030, Prop:1001}"
+            },
+            "161110071": {
+                "Description": "Bội Số Choáng",
+                "Param": "{Skill:1611030, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1611001": {
+            "DamageValue": 5440,
+            "DamageGrowth": 500,
+            "DazeValue": 3470,
+            "DazeGrowth": 160
+        },
+        "1611002": {
+            "DamageValue": 6720,
+            "DamageGrowth": 620,
+            "DazeValue": 4290,
+            "DazeGrowth": 200
+        },
+        "1611003": {
+            "DamageValue": 9520,
+            "DamageGrowth": 870,
+            "DazeValue": 6090,
+            "DazeGrowth": 280
+        },
+        "1611004": {
+            "DamageValue": 28950,
+            "DamageGrowth": 2640,
+            "DazeValue": 17880,
+            "DazeGrowth": 820
+        },
+        "1611005": {
+            "DamageValue": 10770,
+            "DamageGrowth": 980,
+            "DazeValue": 5500,
+            "DazeGrowth": 250
+        },
+        "1611006": {
+            "DamageValue": 28740,
+            "DamageGrowth": 2620,
+            "DazeValue": 14670,
+            "DazeGrowth": 670
+        },
+        "1611007": {
+            "DamageValue": 45210,
+            "DamageGrowth": 4110,
+            "DazeValue": 18700,
+            "DazeGrowth": 850
+        },
+        "1611008": {
+            "DamageValue": 32800,
+            "DamageGrowth": 2990,
+            "DazeValue": 13570,
+            "DazeGrowth": 620
+        },
+        "1611009": {
+            "DamageValue": 9010,
+            "DamageGrowth": 820,
+            "DazeValue": 3670,
+            "DazeGrowth": 170
+        },
+        "1611010": {
+            "DamageValue": 62480,
+            "DamageGrowth": 5680,
+            "DazeValue": 25850,
+            "DazeGrowth": 1180
+        },
+        "1611011": {
+            "DamageValue": 7660,
+            "DamageGrowth": 700,
+            "DazeValue": 3120,
+            "DazeGrowth": 150
+        },
+        "1611012": {
+            "DamageValue": 8770,
+            "DamageGrowth": 800,
+            "DazeValue": 3580,
+            "DazeGrowth": 170
+        },
+        "1611013": {
+            "DamageValue": 81270,
+            "DamageGrowth": 7390,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1611014": {
+            "DamageValue": 31280,
+            "DamageGrowth": 2850,
+            "DazeValue": 25490,
+            "DazeGrowth": 1160
+        },
+        "1611016": {
+            "DamageValue": 5290,
+            "DamageGrowth": 490,
+            "DazeValue": 4310,
+            "DazeGrowth": 200
+        },
+        "1611018": {
+            "DamageValue": 27250,
+            "DamageGrowth": 2480,
+            "DazeValue": 19620,
+            "DazeGrowth": 900
+        },
+        "1611019": {
+            "DamageValue": 33000,
+            "DamageGrowth": 3000,
+            "DazeValue": 19070,
+            "DazeGrowth": 870
+        },
+        "1611020": {
+            "DamageValue": 105800,
+            "DamageGrowth": 9620,
+            "DazeValue": 27690,
+            "DazeGrowth": 1260
+        },
+        "1611021": {
+            "DamageValue": 225200,
+            "DamageGrowth": 20480,
+            "DazeValue": 35380,
+            "DazeGrowth": 1610
+        },
+        "1611022": {
+            "DamageValue": 5290,
+            "DamageGrowth": 490,
+            "DazeValue": 4310,
+            "DazeGrowth": 200
+        },
+        "1611023": {
+            "DamageValue": 11580,
+            "DamageGrowth": 1060,
+            "DazeValue": 4040,
+            "DazeGrowth": 190
+        },
+        "1611024": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1611025": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1611026": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1611027": {
+            "DamageValue": 44620,
+            "DamageGrowth": 4060,
+            "DazeValue": 31580,
+            "DazeGrowth": 1440
+        },
+        "1611028": {
+            "DamageValue": 115300,
+            "DamageGrowth": 10490,
+            "DazeValue": 71490,
+            "DazeGrowth": 3250
+        },
+        "1611029": {
+            "DamageValue": 17730,
+            "DamageGrowth": 1620,
+            "DazeValue": 7340,
+            "DazeGrowth": 340
+        },
+        "1611030": {
+            "DamageValue": 85630,
+            "DamageGrowth": 7790,
+            "DazeValue": 52640,
+            "DazeGrowth": 2400
+        }
+    }
+}

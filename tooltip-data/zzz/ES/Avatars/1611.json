@@ -1,0 +1,616 @@
+{
+    "Name": "Claret",
+    "UpgradeLevel": 0,
+    "ElementTypes": [
+        "Elec"
+    ],
+    "Specialty": {
+        "Id": 7,
+        "Name": "Armero"
+    },
+    "Talents": {
+        "1": {
+            "Title": "Crónicas ensangrentadas",
+            "Description": "Cuando Claret golpea a un enemigo con un ataque y provoca laceración, la tasa de acumulación de tajo aumenta en un 20 %. El multiplicador de daño infligido cuando Claret provoca mutilación aumenta a un 130 % del valor original.",
+            "Lore": "La joven hojea la antigua crónica de la familia. Las ásperas páginas le rasgan la palma de la mano.\nUna gota de sangre cae sobre la portada e innumerables más tiñen las páginas que siguen."
+        },
+        "2": {
+            "Title": "Corona de la llama heredada",
+            "Description": "La duración máxima de epitafio escarlata aumenta en 2 s. Mientras Claret se encuentra en el estado de epitafio escarlata o durante la ejecución de la técnica en cadena, la técnica definitiva, el contraataque auxiliar o el ataque sucesivo, al golpear a un enemigo, ignora un 18 % de la <color=#2EB6FF>resistencia eléctrica</color> del objetivo.",
+            "Lore": "La genio elegida por su linaje entra en la gran sala, donde un resplandor desbordante ilumina su rostro.\nSin articular ni una palabra, acepta la corona y el cetro y se da la vuelta para dirigirse al siguiente terreno de forja."
+        },
+        "3": {
+            "Title": "Juramento grabado en glaseado",
+            "Description": "Nivel de <color=#FFFFFF>ataque normal</color>, <color=#FFFFFF>evasión</color>, <color=#FFFFFF>técnica de apoyo</color>, <color=#FFFFFF>técnica especial</color> y <color=#FFFFFF>técnica en cadena</color> +2.",
+            "Lore": "El horno arde día y noche y la pesada carga familiar recae en los hombros de la joven.\nElla nunca ha sabido cómo aliviar sus emociones, hasta que un día, su brillante ayudante le trae un postre exquisito que añade un toque dulce a sus amargos días."
+        },
+        "4": {
+            "Title": "Errante de la luna carmesí",
+            "Description": "Durante la ejecución del tercer movimiento del ataque normal: Pacto de sangre - Forja estelar, el tiempo durante el que se pueden prolongar los cortes continuos aumenta. El daño infligido por el tercer movimiento del ataque normal: Pacto de sangre - Forja estelar, la técnica en cadena: Pacto de sangre - Pacto de sangre resonante y la técnica definitiva: Pacto de sangre - Forjado en la adversidad aumenta en un 20 %.",
+            "Lore": "Cuando el sonido del martillo cesa y solo la luna carmesí ilumina el cielo nocturno, la joven alza sus ojos escarlata mientras la cruel luz de la luna parece burlarse de ella al colarse por la ventana."
+        },
+        "5": {
+            "Title": "Horno de sangre crepuscular",
+            "Description": "Nivel de <color=#FFFFFF>ataque normal</color>, <color=#FFFFFF>evasión</color>, <color=#FFFFFF>técnica de apoyo</color>, <color=#FFFFFF>técnica especial</color> y <color=#FFFFFF>técnica en cadena</color> +2.",
+            "Lore": "Durante generaciones, los artesanos alimentaron el horno con su sangre, pero ella juró hacer que las llamas ardan por sí solas.\nEl sonido de los martillos vuelve a resonar por el taller una vez más. Los hornos continúan ardiendo, pero ya no requieren de vida que sirva de combustible."
+        },
+        "6": {
+            "Title": "Sueño de noche ardiente",
+            "Description": "Cuando Claret golpea a un enemigo con el ataque pesado de la técnica en cadena: Pacto de sangre - Pacto de sangre resonante o la técnica definitiva: Pacto de sangre - Forjado en la adversidad, provoca directamente 1 instancia de mutilación a un objetivo único sin consumir tajo.",
+            "Lore": "La joven finalmente cae en un profundo letargo.\nSueña con una luna llena y un gran terreno que se extiende hasta el infinito.\nLa luz carmesí de la luna hace tiempo que se ha desvanecido, y el cielo nocturno plateado parece un amanecer."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Técnica pasiva: Banquete de sangre pálida",
+            "DescriptionByLevel": {
+                "1": "Todo el daño infligido por las habilidades de Claret es daño de afilado, el cual usa la Defensa como multiplicador de daño de sus habilidades. Parte del daño de afilado acumula valor de tajo. Cuando el valor de tajo esté al máximo, el enemigo entra en estado de tajo. Pueden acumularse hasta 3 cargas. Al golpear a un enemigo afectado por tajo con la técnica especial: Pacto de sangre - Corte de oro y hierro o la técnica especial: Pacto de sangre - Asalto de sangre sepulcral, consume una carga de tajo para provocar mutilación, lo que inflige una instancia de daño en área.\nAl ejecutar un golpe crítico, el daño de afilado no se ve afectado por el bono de Daño Crítico. En su lugar, aplica el bono de daño de laceración. Cuando la Probabilidad de Crítico es superior al 100 % y ya ha ejecutado un golpe crítico, se realiza una comprobación adicional del daño de laceración en función de la Probabilidad de Crítico excedente. Si se activa laceración, se aplica una vez más el bono de daño de laceración. Por cada 1 % de Daño Crítico inicial de Claret, su Probabilidad de Crítico inicial aumenta en un 0.35 %.\nAl entrar en el campo de batalla, Claret recupera 60 ptos. de afiladura. En el modo expedición, este efecto solo puede activarse un máximo de una vez cada 180 s.\nMientras Claret se encuentra en el estado de <Term:1000036>epitafio escarlata</Term>, su nivel de resistencia a interrupción aumenta. Al ejecutar una técnica en cadena, la duración de epitafio escarlata aumenta en 2 s.\nMientras Claret se encuentra en el estado de epitafio escarlata o durante la ejecución de la técnica en cadena, la técnica definitiva, el contraataque auxiliar o el ataque sucesivo, la Probabilidad de Crítico aumenta en un <color=#2BAD00>15 %</color> y la tasa de acumulación de tajo aumenta en un <color=#2BAD00>20 %</color>. Si ejecuta una evasión perfecta durante el ataque normal: Pacto de sangre - Forja estelar y el ataque normal: Pacto de sangre - Hacha subyugante, el daño infligido durante el tiempo restante de la habilidad aumenta en un 15 %.",
+                "2": "Todo el daño infligido por las habilidades de Claret es daño de afilado, el cual usa la Defensa como multiplicador de daño de sus habilidades. Parte del daño de afilado acumula valor de tajo. Cuando el valor de tajo esté al máximo, el enemigo entra en estado de tajo. Pueden acumularse hasta 3 cargas. Al golpear a un enemigo afectado por tajo con la técnica especial: Pacto de sangre - Corte de oro y hierro o la técnica especial: Pacto de sangre - Asalto de sangre sepulcral, consume una carga de tajo para provocar mutilación, lo que inflige una instancia de daño en área.\nAl ejecutar un golpe crítico, el daño de afilado no se ve afectado por el bono de Daño Crítico. En su lugar, aplica el bono de daño de laceración. Cuando la Probabilidad de Crítico es superior al 100 % y ya ha ejecutado un golpe crítico, se realiza una comprobación adicional del daño de laceración en función de la Probabilidad de Crítico excedente. Si se activa laceración, se aplica una vez más el bono de daño de laceración. Por cada 1 % de Daño Crítico inicial de Claret, su Probabilidad de Crítico inicial aumenta en un 0.35 %.\nAl entrar en el campo de batalla, Claret recupera 60 ptos. de afiladura. En el modo expedición, este efecto solo puede activarse un máximo de una vez cada 180 s.\nMientras Claret se encuentra en el estado de <Term:1000036>epitafio escarlata</Term>, su nivel de resistencia a interrupción aumenta. Al ejecutar una técnica en cadena, la duración de epitafio escarlata aumenta en 2 s.\nMientras Claret se encuentra en el estado de epitafio escarlata o durante la ejecución de la técnica en cadena, la técnica definitiva, el contraataque auxiliar o el ataque sucesivo, la Probabilidad de Crítico aumenta en un <color=#2BAD00>17.5 %</color> y la tasa de acumulación de tajo aumenta en un <color=#2BAD00>25 %</color>. Si ejecuta una evasión perfecta durante el ataque normal: Pacto de sangre - Forja estelar y el ataque normal: Pacto de sangre - Hacha subyugante, el daño infligido durante el tiempo restante de la habilidad aumenta en un 15 %.",
+                "3": "Todo el daño infligido por las habilidades de Claret es daño de afilado, el cual usa la Defensa como multiplicador de daño de sus habilidades. Parte del daño de afilado acumula valor de tajo. Cuando el valor de tajo esté al máximo, el enemigo entra en estado de tajo. Pueden acumularse hasta 3 cargas. Al golpear a un enemigo afectado por tajo con la técnica especial: Pacto de sangre - Corte de oro y hierro o la técnica especial: Pacto de sangre - Asalto de sangre sepulcral, consume una carga de tajo para provocar mutilación, lo que inflige una instancia de daño en área.\nAl ejecutar un golpe crítico, el daño de afilado no se ve afectado por el bono de Daño Crítico. En su lugar, aplica el bono de daño de laceración. Cuando la Probabilidad de Crítico es superior al 100 % y ya ha ejecutado un golpe crítico, se realiza una comprobación adicional del daño de laceración en función de la Probabilidad de Crítico excedente. Si se activa laceración, se aplica una vez más el bono de daño de laceración. Por cada 1 % de Daño Crítico inicial de Claret, su Probabilidad de Crítico inicial aumenta en un 0.35 %.\nAl entrar en el campo de batalla, Claret recupera 60 ptos. de afiladura. En el modo expedición, este efecto solo puede activarse un máximo de una vez cada 180 s.\nMientras Claret se encuentra en el estado de <Term:1000036>epitafio escarlata</Term>, su nivel de resistencia a interrupción aumenta. Al ejecutar una técnica en cadena, la duración de epitafio escarlata aumenta en 2 s.\nMientras Claret se encuentra en el estado de epitafio escarlata o durante la ejecución de la técnica en cadena, la técnica definitiva, el contraataque auxiliar o el ataque sucesivo, la Probabilidad de Crítico aumenta en un <color=#2BAD00>20 %</color> y la tasa de acumulación de tajo aumenta en un <color=#2BAD00>30 %</color>. Si ejecuta una evasión perfecta durante el ataque normal: Pacto de sangre - Forja estelar y el ataque normal: Pacto de sangre - Hacha subyugante, el daño infligido durante el tiempo restante de la habilidad aumenta en un 15 %.",
+                "4": "Todo el daño infligido por las habilidades de Claret es daño de afilado, el cual usa la Defensa como multiplicador de daño de sus habilidades. Parte del daño de afilado acumula valor de tajo. Cuando el valor de tajo esté al máximo, el enemigo entra en estado de tajo. Pueden acumularse hasta 3 cargas. Al golpear a un enemigo afectado por tajo con la técnica especial: Pacto de sangre - Corte de oro y hierro o la técnica especial: Pacto de sangre - Asalto de sangre sepulcral, consume una carga de tajo para provocar mutilación, lo que inflige una instancia de daño en área.\nAl ejecutar un golpe crítico, el daño de afilado no se ve afectado por el bono de Daño Crítico. En su lugar, aplica el bono de daño de laceración. Cuando la Probabilidad de Crítico es superior al 100 % y ya ha ejecutado un golpe crítico, se realiza una comprobación adicional del daño de laceración en función de la Probabilidad de Crítico excedente. Si se activa laceración, se aplica una vez más el bono de daño de laceración. Por cada 1 % de Daño Crítico inicial de Claret, su Probabilidad de Crítico inicial aumenta en un 0.35 %.\nAl entrar en el campo de batalla, Claret recupera 60 ptos. de afiladura. En el modo expedición, este efecto solo puede activarse un máximo de una vez cada 180 s.\nMientras Claret se encuentra en el estado de <Term:1000036>epitafio escarlata</Term>, su nivel de resistencia a interrupción aumenta. Al ejecutar una técnica en cadena, la duración de epitafio escarlata aumenta en 2 s.\nMientras Claret se encuentra en el estado de epitafio escarlata o durante la ejecución de la técnica en cadena, la técnica definitiva, el contraataque auxiliar o el ataque sucesivo, la Probabilidad de Crítico aumenta en un <color=#2BAD00>22.5 %</color> y la tasa de acumulación de tajo aumenta en un <color=#2BAD00>35 %</color>. Si ejecuta una evasión perfecta durante el ataque normal: Pacto de sangre - Forja estelar y el ataque normal: Pacto de sangre - Hacha subyugante, el daño infligido durante el tiempo restante de la habilidad aumenta en un 15 %.",
+                "5": "Todo el daño infligido por las habilidades de Claret es daño de afilado, el cual usa la Defensa como multiplicador de daño de sus habilidades. Parte del daño de afilado acumula valor de tajo. Cuando el valor de tajo esté al máximo, el enemigo entra en estado de tajo. Pueden acumularse hasta 3 cargas. Al golpear a un enemigo afectado por tajo con la técnica especial: Pacto de sangre - Corte de oro y hierro o la técnica especial: Pacto de sangre - Asalto de sangre sepulcral, consume una carga de tajo para provocar mutilación, lo que inflige una instancia de daño en área.\nAl ejecutar un golpe crítico, el daño de afilado no se ve afectado por el bono de Daño Crítico. En su lugar, aplica el bono de daño de laceración. Cuando la Probabilidad de Crítico es superior al 100 % y ya ha ejecutado un golpe crítico, se realiza una comprobación adicional del daño de laceración en función de la Probabilidad de Crítico excedente. Si se activa laceración, se aplica una vez más el bono de daño de laceración. Por cada 1 % de Daño Crítico inicial de Claret, su Probabilidad de Crítico inicial aumenta en un 0.35 %.\nAl entrar en el campo de batalla, Claret recupera 60 ptos. de afiladura. En el modo expedición, este efecto solo puede activarse un máximo de una vez cada 180 s.\nMientras Claret se encuentra en el estado de <Term:1000036>epitafio escarlata</Term>, su nivel de resistencia a interrupción aumenta. Al ejecutar una técnica en cadena, la duración de epitafio escarlata aumenta en 2 s.\nMientras Claret se encuentra en el estado de epitafio escarlata o durante la ejecución de la técnica en cadena, la técnica definitiva, el contraataque auxiliar o el ataque sucesivo, la Probabilidad de Crítico aumenta en un <color=#2BAD00>25 %</color> y la tasa de acumulación de tajo aumenta en un <color=#2BAD00>40 %</color>. Si ejecuta una evasión perfecta durante el ataque normal: Pacto de sangre - Forja estelar y el ataque normal: Pacto de sangre - Hacha subyugante, el daño infligido durante el tiempo restante de la habilidad aumenta en un 15 %.",
+                "6": "Todo el daño infligido por las habilidades de Claret es daño de afilado, el cual usa la Defensa como multiplicador de daño de sus habilidades. Parte del daño de afilado acumula valor de tajo. Cuando el valor de tajo esté al máximo, el enemigo entra en estado de tajo. Pueden acumularse hasta 3 cargas. Al golpear a un enemigo afectado por tajo con la técnica especial: Pacto de sangre - Corte de oro y hierro o la técnica especial: Pacto de sangre - Asalto de sangre sepulcral, consume una carga de tajo para provocar mutilación, lo que inflige una instancia de daño en área.\nAl ejecutar un golpe crítico, el daño de afilado no se ve afectado por el bono de Daño Crítico. En su lugar, aplica el bono de daño de laceración. Cuando la Probabilidad de Crítico es superior al 100 % y ya ha ejecutado un golpe crítico, se realiza una comprobación adicional del daño de laceración en función de la Probabilidad de Crítico excedente. Si se activa laceración, se aplica una vez más el bono de daño de laceración. Por cada 1 % de Daño Crítico inicial de Claret, su Probabilidad de Crítico inicial aumenta en un 0.35 %.\nAl entrar en el campo de batalla, Claret recupera 60 ptos. de afiladura. En el modo expedición, este efecto solo puede activarse un máximo de una vez cada 180 s.\nMientras Claret se encuentra en el estado de <Term:1000036>epitafio escarlata</Term>, su nivel de resistencia a interrupción aumenta. Al ejecutar una técnica en cadena, la duración de epitafio escarlata aumenta en 2 s.\nMientras Claret se encuentra en el estado de epitafio escarlata o durante la ejecución de la técnica en cadena, la técnica definitiva, el contraataque auxiliar o el ataque sucesivo, la Probabilidad de Crítico aumenta en un <color=#2BAD00>27.5 %</color> y la tasa de acumulación de tajo aumenta en un <color=#2BAD00>45 %</color>. Si ejecuta una evasión perfecta durante el ataque normal: Pacto de sangre - Forja estelar y el ataque normal: Pacto de sangre - Hacha subyugante, el daño infligido durante el tiempo restante de la habilidad aumenta en un 15 %.",
+                "7": "Todo el daño infligido por las habilidades de Claret es daño de afilado, el cual usa la Defensa como multiplicador de daño de sus habilidades. Parte del daño de afilado acumula valor de tajo. Cuando el valor de tajo esté al máximo, el enemigo entra en estado de tajo. Pueden acumularse hasta 3 cargas. Al golpear a un enemigo afectado por tajo con la técnica especial: Pacto de sangre - Corte de oro y hierro o la técnica especial: Pacto de sangre - Asalto de sangre sepulcral, consume una carga de tajo para provocar mutilación, lo que inflige una instancia de daño en área.\nAl ejecutar un golpe crítico, el daño de afilado no se ve afectado por el bono de Daño Crítico. En su lugar, aplica el bono de daño de laceración. Cuando la Probabilidad de Crítico es superior al 100 % y ya ha ejecutado un golpe crítico, se realiza una comprobación adicional del daño de laceración en función de la Probabilidad de Crítico excedente. Si se activa laceración, se aplica una vez más el bono de daño de laceración. Por cada 1 % de Daño Crítico inicial de Claret, su Probabilidad de Crítico inicial aumenta en un 0.35 %.\nAl entrar en el campo de batalla, Claret recupera 60 ptos. de afiladura. En el modo expedición, este efecto solo puede activarse un máximo de una vez cada 180 s.\nMientras Claret se encuentra en el estado de <Term:1000036>epitafio escarlata</Term>, su nivel de resistencia a interrupción aumenta. Al ejecutar una técnica en cadena, la duración de epitafio escarlata aumenta en 2 s.\nMientras Claret se encuentra en el estado de epitafio escarlata o durante la ejecución de la técnica en cadena, la técnica definitiva, el contraataque auxiliar o el ataque sucesivo, la Probabilidad de Crítico aumenta en un <color=#2BAD00>30 %</color> y la tasa de acumulación de tajo aumenta en un <color=#2BAD00>50 %</color>. Si ejecuta una evasión perfecta durante el ataque normal: Pacto de sangre - Forja estelar y el ataque normal: Pacto de sangre - Hacha subyugante, el daño infligido durante el tiempo restante de la habilidad aumenta en un 15 %."
+            }
+        },
+        "MathSkill": {
+            "Title": "Técnica adicional: Legado del linaje",
+            "Description": "Cuando en el equipo hay un personaje <color=#FFFFFF>aturdidor</color>, otro <color=#FFFFFF>armero</color> o del mismo atributo:\nCuando cualquier agente del equipo provoca contaminación, Claret recupera 300 dB. Puede activarse hasta un máximo de 1 vez cada 18 s.\nCuando Claret o un miembro del equipo provoca mutilación, los agentes armeros del equipo entran en el estado de filo remanente. En el estado de filo remanente, el daño de laceración aumenta en un <color=#FFFFFF>25 %</color> durante 40 s. La duración se reinicia cada vez que entra en el estado de filo remanente."
+        },
+        "AwakenAbility": {},
+        "BaseProps": [
+            {
+                "20101": 0
+            },
+            {
+                "20101": 480
+            },
+            {
+                "20101": 960
+            },
+            {
+                "20101": 1440
+            },
+            {
+                "20101": 1920
+            },
+            {
+                "20101": 2400
+            },
+            {
+                "20101": 2880
+            }
+        ]
+    },
+    "Terms": {
+        "1000036": {
+            "Title": "Epitafio escarlata",
+            "Description": "Transforma su arma en un hacha de sangre, reemplaza los ataques de Claret por habilidades de Pacto de sangre, y su Probabilidad de Crítico y su tasa de acumulación de tajo aumenta.",
+            "Source": "Técnica especial EX: Pacto de sangre - Técnicas secretas de forja"
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "161100001": {
+                "Title": "Ataque normal: Cuatro formas de forja sangrienta",
+                "Description": "Pulsa <IconMap:Icon_Normal> para usarlo.\nEjecuta hasta cuatro martillazos hacia delante, lo que inflige <color=#2EB6FF>daño eléctrico</color>."
+            },
+            "161100002": {
+                "Title": "Ataque normal: Pacto de sangre - Forja estelar",
+                "Description": "Durante el estado de <Term:1000036>epitafio escarlata</Term>, pulsa <IconMap:Icon_Normal> para usarlo.\nUsa el hacha de sangre para ejecutar hasta tres cortes hacia delante, lo que inflige <color=#2EB6FF>daño eléctrico</color>.\nAl ejecutar el segundo movimiento de ataque de la habilidad, Claret salta hacia atrás y lanza el hacha de sangre. Mientras retrocede, Claret puede activar una evasión perfecta.\nAl ejecutar el tercer movimiento de ataque de la habilidad, Claret ejecuta cortes continuos, salta y golpea con fuerza hacia abajo. Durante los cortes continuos, su nivel de resistencia a interrupción aumenta y el daño recibido se reduce en un 40 %. Pulsa repetidamente o mantén pulsado <IconMap:Icon_Normal> para extender la duración de los cortes continuos. Al dejar de pulsar o soltar <IconMap:Icon_Normal>, Claret salta y golpea con fuerza hacia abajo. Durante el salto, puede activar una evasión perfecta. Tras activar con éxito una evasión perfecta, pulsa o mantén pulsado <IconMap:Icon_Normal> para enlazar el tercer movimiento del ataque normal: Pacto de sangre - Forja estelar.\nDurante la ejecución no sale del estado de epitafio escarlata."
+            },
+            "161100003": {
+                "Title": "Ataque normal: Pacto de sangre - Hacha subyugante",
+                "Description": "Durante el estado de <Term:1000036>epitafio escarlata</Term>, tras ejecutar la técnica especial: Pacto de sangre - Corte de oro y hierro o la técnica especial: Pacto de sangre - Asalto de sangre sepulcral y provocar mutilación, pulsa o mantén pulsado <IconMap:Icon_Normal> para usarlo.\nUsa el hacha de sangre para girar, salta y golpea con fuerza hacia abajo. Después, ejecuta un corte contra el enemigo objetivo, lo que inflige <color=#2EB6FF>daño eléctrico</color>. Durante el salto, puede activar una evasión perfecta.\nTras la ejecución de la habilidad, pulsa o mantén pulsado <IconMap:Icon_Normal> para enlazar el tercer movimiento del ataque normal: Pacto de sangre - Forja estelar.\nDurante la ejecución no sale del estado de epitafio escarlata."
+            },
+            "161110001": {
+                "Title": "Ataque normal: Cuatro formas de forja sangrienta"
+            },
+            "161110002": {
+                "Description": "Multiplicador de daño de 1.er golpe",
+                "Param": "{Skill:1611001, Prop:1001}"
+            },
+            "161110003": {
+                "Description": "Multiplicador de daño de 2.º golpe",
+                "Param": "{Skill:1611002, Prop:1001}"
+            },
+            "161110004": {
+                "Description": "Multiplicador de daño de 3.er golpe",
+                "Param": "{Skill:1611003, Prop:1001}"
+            },
+            "161110005": {
+                "Description": "Multiplicador de daño de 4.º golpe",
+                "Param": "{Skill:1611004, Prop:1001}"
+            },
+            "161110006": {
+                "Description": "Multiplicador de Aturdimiento de 1.er golpe",
+                "Param": "{Skill:1611001, Prop:1002}"
+            },
+            "161110007": {
+                "Description": "Multiplicador de Aturdimiento de 2.º golpe",
+                "Param": "{Skill:1611002, Prop:1002}"
+            },
+            "161110008": {
+                "Description": "Multiplicador de Aturdimiento de 3.er golpe",
+                "Param": "{Skill:1611003, Prop:1002}"
+            },
+            "161110009": {
+                "Description": "Multiplicador de Aturdimiento de 4.º golpe",
+                "Param": "{Skill:1611004, Prop:1002}"
+            },
+            "161110010": {
+                "Title": "Ataque normal: Pacto de sangre - Forja estelar"
+            },
+            "161110011": {
+                "Description": "Multiplicador de daño de 1.er golpe",
+                "Param": "{Skill:1611005, Prop:1001}"
+            },
+            "161110012": {
+                "Description": "Multiplicador de daño de 2.º golpe",
+                "Param": "{Skill:1611006, Prop:1001}"
+            },
+            "161110013": {
+                "Description": "Multiplicador de daño de 3.er corte continuo",
+                "Param": "{Skill:1611007, Prop:1001}"
+            },
+            "161110014": {
+                "Description": "Multiplicador de daño de 3.er ataque descendente",
+                "Param": "{Skill:1611029, Prop:1001}"
+            },
+            "161110015": {
+                "Description": "Multiplicador de Aturdimiento de 1.er golpe",
+                "Param": "{Skill:1611005, Prop:1002}"
+            },
+            "161110016": {
+                "Description": "Multiplicador de Aturdimiento de 2.º golpe",
+                "Param": "{Skill:1611006, Prop:1002}"
+            },
+            "161110017": {
+                "Description": "Multiplicador de Aturdimiento de 3.er corte continuo",
+                "Param": "{Skill:1611007, Prop:1002}"
+            },
+            "161110018": {
+                "Description": "Multiplicador de Aturdimiento de 3.er ataque descendente",
+                "Param": "{Skill:1611029, Prop:1002}"
+            },
+            "161110019": {
+                "Title": "Ataque normal: Pacto de sangre - Hacha subyugante"
+            },
+            "161110020": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1611008, Prop:1001}"
+            },
+            "161110021": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1611008, Prop:1002}"
+            }
+        },
+        "1": {
+            "161100004": {
+                "Title": "Técnica especial: Primera llamada de porcelumen",
+                "Description": "Pulsa <IconMap:Icon_Special> para usarla.\nEjecuta dos martillazos hacia delante, lo que inflige <color=#2EB6FF>daño eléctrico</color>.\nDurante la ejecución de la habilidad, el nivel de resistencia a interrupción aumenta."
+            },
+            "161100005": {
+                "Title": "Técnica especial EX: Pacto de sangre - Técnicas secretas de forja",
+                "Description": "Al tener suficiente afiladura y cuando Claret no se encuentra en el estado de epitafio escarlata, pulsa <IconMap:Icon_SpecialReady_Ep> para usarlo.\nTransforma el martillo de forja en un hacha de sangre y realiza un corte contra el enemigo objetivo, lo que inflige <color=#2EB6FF>daño eléctrico</color>.\nTras la ejecución de la habilidad, Claret entra en el estado de epitafio escarlata durante 16 s. Cuando la agente es un personaje en reserva, la duración no se reduce. Cuando Claret golpea a un enemigo con un ataque, si el enemigo es derrotado en 0.5 s y la duración del estado de epitafio escarlata no es 0, la duración del estado de epitafio escarlata aumenta en 3 s. Este efecto puede activarse 1 vez cada 3 s.\nAl ejecutar la habilidad, mantén pulsado <IconMap:Icon_SpecialReady_Ep> para omitir el corte y usar rápidamente la forma alternativa de la técnica especial: Pacto de sangre - Corte de oro y hierro y la técnica especial: Pacto de sangre - Asalto de sangre sepulcral.\nTras la ejecución de la habilidad, pulsa o mantén pulsado <IconMap:Icon_Normal> para enlazar el tercer movimiento del ataque normal: Pacto de sangre - Forja estelar.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "161100006": {
+                "Title": "Técnica especial: Pacto de sangre - Corte de oro y hierro",
+                "Description": "Durante el estado de <Term:1000036>epitafio escarlata</Term>, pulsa <IconMap:Icon_Special> o <IconMap:Icon_SpecialReady_Ep> para usarla.\nEjecuta un poderoso corte ascendente hacia delante, seguido de un corte horizontal, lo que inflige <color=#2EB6FF>daño eléctrico</color>.\nSi el corte horizontal golpea a un enemigo con tajo, provoca mutilación al objetivo, lo que inflige <color=#2EB6FF>daño eléctrico</color> adicional en área.\nDurante la ejecución, no sale del estado de epitafio escarlata.\nDurante la ejecución de la habilidad, el nivel de resistencia a interrupción aumenta. Tras provocar mutilación, durante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "161100007": {
+                "Title": "Técnica especial: Pacto de sangre - Asalto de sangre sepulcral",
+                "Description": "Durante el estado de <Term:1000036>epitafio escarlata</Term> y el corte ascendente de la técnica especial: Pacto de sangre - Corte de oro y hierro, mantén pulsado <IconMap:Icon_Special> o <IconMap:Icon_SpecialReady_Ep> para usarla.\nEjecuta 3 cortes horizontales consecutivos hacia delante, lo que inflige una gran cantidad de <color=#2EB6FF>daño eléctrico</color>.\nCada vez que un corte horizontal golpea a un enemigo con tajo, provoca mutilación al objetivo, lo que inflige <color=#2EB6FF>daño eléctrico</color> adicional en área. Durante esta habilidad, se puede provocar mutilación hasta 3 veces consecutivas. La tercera instancia de mutilación tiene un mayor nivel de interrupción.\nDurante la ejecución, no se sale del estado de <Term:1000036>epitafio escarlata</Term>.\nDurante la ejecución de la habilidad, el nivel de resistencia a interrupción aumenta. Tras provocar mutilación, durante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "161110022": {
+                "Title": "Técnica especial: Primera llamada de porcelumen"
+            },
+            "161110023": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1611009, Prop:1001}"
+            },
+            "161110024": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1611009, Prop:1002}"
+            },
+            "161110025": {
+                "Title": "Técnica especial EX: Pacto de sangre - Técnicas secretas de forja"
+            },
+            "161110026": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1611010, Prop:1001}"
+            },
+            "161110027": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1611010, Prop:1002}"
+            },
+            "161110028": {
+                "Description": "Consumo de afiladura",
+                "Param": "60 ptos."
+            },
+            "161110029": {
+                "Title": "Técnica especial: Pacto de sangre - Corte de oro y hierro"
+            },
+            "161110030": {
+                "Description": "Multiplicador de daño de ataque ascendente",
+                "Param": "{Skill:1611011, Prop:1001}"
+            },
+            "161110031": {
+                "Description": "Multiplicador de daño de corte horizontal",
+                "Param": "{Skill:1611012, Prop:1001}"
+            },
+            "161110032": {
+                "Description": "Multiplicador de Aturdimiento de ataque ascendente",
+                "Param": "{Skill:1611011, Prop:1002}"
+            },
+            "161110033": {
+                "Description": "Multiplicador de Aturdimiento de corte horizontal",
+                "Param": "{Skill:1611012, Prop:1002}"
+            },
+            "161110034": {
+                "Description": "Multiplicador de daño de mutilación",
+                "Param": "{Skill:1611013, Prop:1001}"
+            },
+            "161110035": {
+                "Title": "Técnica especial: Pacto de sangre - Asalto de sangre sepulcral"
+            },
+            "161110036": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1611014, Prop:1001}"
+            },
+            "161110037": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1611014, Prop:1002}"
+            }
+        },
+        "2": {
+            "161100008": {
+                "Title": "Evasión: Visión nocturna",
+                "Description": "Pulsa <IconMap:Icon_Evade> para usarla.\nEjecuta un rápido esprint evasivo.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "161100009": {
+                "Title": "Ataque rápido: Temperado",
+                "Description": "Pulsa <IconMap:Icon_Normal> durante una evasión en un estado que no sea el estado de <Term:1000036>epitafio escarlata</Term> para usarlo.\nEjecuta un martillazo hacia delante, lo que inflige <color=#2EB6FF>daño eléctrico</color>."
+            },
+            "161100010": {
+                "Title": "Contraataque: Filo tornante",
+                "Description": "Pulsa <IconMap:Icon_Normal> después de una <color=#FFFFFF>evasión perfecta</color> para usarlo.\nUsa el martillo para desatar un poderoso contraataque, lo que inflige <color=#2EB6FF>daño eléctrico</color>.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "161100011": {
+                "Title": "Contraataque: Pacto de sangre - Filo tornante",
+                "Description": "Pulsa <IconMap:Icon_Normal> después de una <color=#FFFFFF>evasión perfecta</color> para usarlo.\nUsa el hacha de sangre para desatar un poderoso contraataque, lo que inflige <color=#2EB6FF>daño eléctrico</color>.\nDurante la ejecución, no sale del estado de <Term:1000036>epitafio escarlata</Term>.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "161110038": {
+                "Title": "Ataque rápido: Temperado"
+            },
+            "161110039": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1611016, Prop:1001}"
+            },
+            "161110040": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1611016, Prop:1002}"
+            },
+            "161110041": {
+                "Title": "Contraataque: Filo tornante"
+            },
+            "161110042": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1611018, Prop:1001}"
+            },
+            "161110043": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1611018, Prop:1002}"
+            },
+            "161110044": {
+                "Title": "Contraataque: Pacto de sangre - Filo tornante"
+            },
+            "161110045": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1611019, Prop:1001}"
+            },
+            "161110046": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1611019, Prop:1002}"
+            }
+        },
+        "3": {
+            "161100012": {
+                "Title": "Técnica en cadena: Pacto de sangre - Pacto de sangre resonante",
+                "Description": "Elige el avatar de personaje al ejecutar una <color=#FFFFFF>técnica en cadena</color> para usarla.\nEjecuta cortes continuos contra los enemigos frente a ella, lo que inflige una gran cantidad de <color=#2EB6FF>daño eléctrico</color> hacia delante.\nDurante la ejecución, la duración del estado de <Term:1000036>epitafio escarlata</Term> no se reduce y el estado de <Term:1000036>epitafio escarlata</Term> no concluye.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable"
+            },
+            "161100013": {
+                "Title": "Técnica definitiva: Pacto de sangre - Forjado en la adversidad",
+                "Description": "Cuando los dB llegan a su nivel <color=#FFFFFF>máximo</color>, pulsa <IconMap:Icon_UltimateReady> para usarla.\nEjecuta cortes continuos contra los enemigos frente a ella, lo que inflige una gran cantidad de <color=#2EB6FF>daño eléctrico</color> hacia delante.\nDurante la ejecución, la duración del estado de <Term:1000036>epitafio escarlata</Term> no se reduce y el estado de <Term:1000036>epitafio escarlata</Term> no concluye.\nAl ejecutar la habilidad, recupera 10 ptos. de afiladura.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "161110047": {
+                "Title": "Técnica en cadena: Pacto de sangre - Pacto de sangre resonante"
+            },
+            "161110048": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1611020, Prop:1001}"
+            },
+            "161110049": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1611020, Prop:1002}"
+            },
+            "161110050": {
+                "Title": "Técnica definitiva: Pacto de sangre - Forjado en la adversidad"
+            },
+            "161110051": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1611021, Prop:1001}"
+            },
+            "161110052": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1611021, Prop:1002}"
+            }
+        },
+        "6": {
+            "161100015": {
+                "Title": "Apoyo rápido: Retorno de la luna funesta",
+                "Description": "Pulsa <IconMap:Icon_Switch> para usarlo cuando el personaje activo sea lanzado por los aires.\nInflige <color=#2EB6FF>daño eléctrico</color>.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable"
+            },
+            "161100016": {
+                "Title": "Apoyo rápido: Pacto de sangre - Retorno de la luna funesta",
+                "Description": "Pulsa <IconMap:Icon_Switch> para usarlo cuando el personaje activo sea lanzado por los aires.\nInflige <color=#2EB6FF>daño eléctrico</color>.\nDurante la ejecución, no sale del estado de <Term:1000036>epitafio escarlata</Term>.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "161100017": {
+                "Title": "Apoyo defensivo: El corazón inquebrantable del horno",
+                "Description": "Pulsa <IconMap:Icon_Switch> para usarlo cuando el personaje en el campo de batalla esté a punto de recibir un ataque.\nBloquea el ataque enemigo, lo que provoca una gran cantidad de Aturdimiento.\nDurante la ejecución, la duración del estado de <Term:1000036>epitafio escarlata</Term> no se reduce.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "161100018": {
+                "Title": "Ataque sucesivo: Pacto de sangre - Cuchilla de forja pura",
+                "Description": "Pulsa <IconMap:Icon_Normal> después de un <color=#FFFFFF>apoyo defensivo</color> para usarlo.\nInflige una gran cantidad de <color=#2EB6FF>daño eléctrico</color>.\nDurante la ejecución, no sale del estado de <Term:1000036>epitafio escarlata</Term>.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "161100019": {
+                "Title": "Contraataque auxiliar: Ni un palmo de acero",
+                "Description": "Cuando Claret o un personaje en el campo de batalla está a punto de ser golpeado por una técnica de control de ciertos enemigos, pulsa <IconMap:Icon_Switch> para usarlo.\nRealiza un forcejeo con el enemigo. Si gana el forcejeo, puede neutralizar la técnica de control del enemigo, lo que inflige <color=#2EB6FF>daño eléctrico</color>.\nDurante la ejecución, la duración del estado de <Term:1000036>epitafio escarlata</Term> no se reduce.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "161100020": {
+                "Title": "Ataque sucesivo: Pacto de sangre - Tallado de orfebre",
+                "Description": "Pulsa <IconMap:Icon_Normal> después de un <color=#FFFFFF>contraataque auxiliar</color> para usarlo.\nInflige una gran cantidad de <color=#2EB6FF>daño eléctrico</color>. Al golpear al enemigo con un ataque pesado, aplica directamente 1 carga de tajo al objetivo.\nDurante la ejecución, la duración del estado de <Term:1000036>epitafio escarlata</Term> no se reduce.\nDurante la ejecución de la habilidad, la agente se vuelve invulnerable."
+            },
+            "161110053": {
+                "Title": "Apoyo rápido: Retorno de la luna funesta"
+            },
+            "161110054": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1611022, Prop:1001}"
+            },
+            "161110055": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1611022, Prop:1002}"
+            },
+            "161110056": {
+                "Title": "Apoyo rápido: Pacto de sangre - Retorno de la luna funesta"
+            },
+            "161110057": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1611023, Prop:1001}"
+            },
+            "161110058": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1611023, Prop:1002}"
+            },
+            "161110059": {
+                "Title": "Apoyo defensivo: El corazón inquebrantable del horno"
+            },
+            "161110060": {
+                "Description": "Multiplicador de Aturdimiento defensivo ligero",
+                "Param": "{Skill:1611024, Prop:1002}"
+            },
+            "161110061": {
+                "Description": "Multiplicador de Aturdimiento defensivo fuerte",
+                "Param": "{Skill:1611025, Prop:1002}"
+            },
+            "161110062": {
+                "Description": "Multiplicador de Aturdimiento defensivo continuo",
+                "Param": "{Skill:1611026, Prop:1002}"
+            },
+            "161110063": {
+                "Title": "Ataque sucesivo: Pacto de sangre - Cuchilla de forja pura"
+            },
+            "161110064": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1611027, Prop:1001}"
+            },
+            "161110065": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1611027, Prop:1002}"
+            },
+            "161110066": {
+                "Title": "Contraataque auxiliar: Ni un palmo de acero"
+            },
+            "161110067": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1611028, Prop:1001}"
+            },
+            "161110068": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1611028, Prop:1002}"
+            },
+            "161110069": {
+                "Title": "Ataque sucesivo: Pacto de sangre - Tallado de orfebre"
+            },
+            "161110070": {
+                "Description": "Multiplicador de daño",
+                "Param": "{Skill:1611030, Prop:1001}"
+            },
+            "161110071": {
+                "Description": "Multiplicador de Aturdimiento",
+                "Param": "{Skill:1611030, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1611001": {
+            "DamageValue": 5440,
+            "DamageGrowth": 500,
+            "DazeValue": 3470,
+            "DazeGrowth": 160
+        },
+        "1611002": {
+            "DamageValue": 6720,
+            "DamageGrowth": 620,
+            "DazeValue": 4290,
+            "DazeGrowth": 200
+        },
+        "1611003": {
+            "DamageValue": 9520,
+            "DamageGrowth": 870,
+            "DazeValue": 6090,
+            "DazeGrowth": 280
+        },
+        "1611004": {
+            "DamageValue": 28950,
+            "DamageGrowth": 2640,
+            "DazeValue": 17880,
+            "DazeGrowth": 820
+        },
+        "1611005": {
+            "DamageValue": 10770,
+            "DamageGrowth": 980,
+            "DazeValue": 5500,
+            "DazeGrowth": 250
+        },
+        "1611006": {
+            "DamageValue": 28740,
+            "DamageGrowth": 2620,
+            "DazeValue": 14670,
+            "DazeGrowth": 670
+        },
+        "1611007": {
+            "DamageValue": 45210,
+            "DamageGrowth": 4110,
+            "DazeValue": 18700,
+            "DazeGrowth": 850
+        },
+        "1611008": {
+            "DamageValue": 32800,
+            "DamageGrowth": 2990,
+            "DazeValue": 13570,
+            "DazeGrowth": 620
+        },
+        "1611009": {
+            "DamageValue": 9010,
+            "DamageGrowth": 820,
+            "DazeValue": 3670,
+            "DazeGrowth": 170
+        },
+        "1611010": {
+            "DamageValue": 62480,
+            "DamageGrowth": 5680,
+            "DazeValue": 25850,
+            "DazeGrowth": 1180
+        },
+        "1611011": {
+            "DamageValue": 7660,
+            "DamageGrowth": 700,
+            "DazeValue": 3120,
+            "DazeGrowth": 150
+        },
+        "1611012": {
+            "DamageValue": 8770,
+            "DamageGrowth": 800,
+            "DazeValue": 3580,
+            "DazeGrowth": 170
+        },
+        "1611013": {
+            "DamageValue": 81270,
+            "DamageGrowth": 7390,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1611014": {
+            "DamageValue": 31280,
+            "DamageGrowth": 2850,
+            "DazeValue": 25490,
+            "DazeGrowth": 1160
+        },
+        "1611016": {
+            "DamageValue": 5290,
+            "DamageGrowth": 490,
+            "DazeValue": 4310,
+            "DazeGrowth": 200
+        },
+        "1611018": {
+            "DamageValue": 27250,
+            "DamageGrowth": 2480,
+            "DazeValue": 19620,
+            "DazeGrowth": 900
+        },
+        "1611019": {
+            "DamageValue": 33000,
+            "DamageGrowth": 3000,
+            "DazeValue": 19070,
+            "DazeGrowth": 870
+        },
+        "1611020": {
+            "DamageValue": 105800,
+            "DamageGrowth": 9620,
+            "DazeValue": 27690,
+            "DazeGrowth": 1260
+        },
+        "1611021": {
+            "DamageValue": 225200,
+            "DamageGrowth": 20480,
+            "DazeValue": 35380,
+            "DazeGrowth": 1610
+        },
+        "1611022": {
+            "DamageValue": 5290,
+            "DamageGrowth": 490,
+            "DazeValue": 4310,
+            "DazeGrowth": 200
+        },
+        "1611023": {
+            "DamageValue": 11580,
+            "DamageGrowth": 1060,
+            "DazeValue": 4040,
+            "DazeGrowth": 190
+        },
+        "1611024": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1611025": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1611026": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1611027": {
+            "DamageValue": 44620,
+            "DamageGrowth": 4060,
+            "DazeValue": 31580,
+            "DazeGrowth": 1440
+        },
+        "1611028": {
+            "DamageValue": 115300,
+            "DamageGrowth": 10490,
+            "DazeValue": 71490,
+            "DazeGrowth": 3250
+        },
+        "1611029": {
+            "DamageValue": 17730,
+            "DamageGrowth": 1620,
+            "DazeValue": 7340,
+            "DazeGrowth": 340
+        },
+        "1611030": {
+            "DamageValue": 85630,
+            "DamageGrowth": 7790,
+            "DazeValue": 52640,
+            "DazeGrowth": 2400
+        }
+    }
+}

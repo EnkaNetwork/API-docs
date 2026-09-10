@@ -1,0 +1,616 @@
+{
+    "Name": "Claret",
+    "UpgradeLevel": 0,
+    "ElementTypes": [
+        "Elec"
+    ],
+    "Specialty": {
+        "Id": 7,
+        "Name": "Schmiedung"
+    },
+    "Talents": {
+        "1": {
+            "Title": "Blutbefleckte Chroniken",
+            "Description": "Wenn Claret Gegner mit ihren Angriffen trifft und dabei Lazeration auslöst, erhöht sich die Schnittwunde-Ansammlungsrate um 20 %. Der SCH-Multiplikator der von Claret ausgelösten „Verstümmelung“ erhöht sich auf 130 % des ursprünglichen Werts.",
+            "Lore": "Das Mädchen durchblättert die Seiten der oft gelesenen Familienchroniken. Das raue Papier kratzt ihre Handfläche.\nEin einzelner Tropfen Blut fällt auf die Titelseite, und viele weitere beflecken die Seiten, die nachfolgen."
+        },
+        "2": {
+            "Title": "Krone der Flammenerbin",
+            "Description": "Die maximale Dauer des Zustands „Scharlachrote Inschrift“ wird um 2 s verlängert. Während Claret im Zustand „Scharlachrote Inschrift“ ist, oder wenn sie einen Kettenangriff, einen Ultimate, eine Konterhilfe oder eine sukzessive Hilfe anwendet, ignorieren ihre Angriffe 18 % <color=#2EB6FF>Elektro-WDS</color> des Ziels.",
+            "Lore": "Das von ihrer Blutlinie auserwählte Wunderkind betritt die große Halle. Strahlendes Licht fließt über ihr Gesicht.\nOhne ein Wort nimmt sie Krone und Zepter entgegen, dann dreht sie sich um und begibt sich zur nächsten Schmiede."
+        },
+        "3": {
+            "Title": "Mit Zuckerguss geschriebener Eid",
+            "Description": "Fähigkeitsstufe von <color=#FFFFFF>Basisangriff</color>, <color=#FFFFFF>Ausweichen</color>, <color=#FFFFFF>Hilfe</color>, <color=#FFFFFF>Spezialangriff</color> und <color=#FFFFFF>Kettenangriff</color> +2",
+            "Lore": "Die Schmiede brennt Tag und Nacht, und die schwere Last der Familie fällt auf die Schultern der jungen Frau.\nSie wusste nie, wie sie diese Gefühle, die ihr Herz beschweren, lindern könnte, bis ihre brillante Assistentin ihr eines Tages ein vorzügliches Dessert servierte, das ihren bitteren Tagen einen süßen Nachgeschmack verlieh."
+        },
+        "4": {
+            "Title": "Karmesinrote Mondwandelnde",
+            "Description": "Beim Anwenden des 3. Angriffs von „Basisangriff: Eid der Blutblüte – Sternenschmiede“ verlängert sich die Dauer, in der aufeinanderfolgende Hiebe ausgeführt werden können. Der vom 3. Angriff von „Basisangriff: Eid der Blutblüte – Sternenschmiede“, von „Kettenangriff: Eid der Blutblüte – Nachhall des Blutpaktes“ und von „Ultimate: Eid der Blutblüte – Endlose Bewährung“ verursachte SCH erhöht sich um 20 %.",
+            "Lore": "Leise fällt der Hammer, und nur der karmesinrote Mond hängt hoch über der langen Nacht.\nDie junge Frau erhebt ihre scharlachroten Augen, während das gnadenlose Mondlicht sie zu verspotten scheint, während es über den Fensterrahmen kriecht."
+        },
+        "5": {
+            "Title": "Schmelzofen des Zwielichtbluts",
+            "Description": "Fähigkeitsstufe von <color=#FFFFFF>Basisangriff</color>, <color=#FFFFFF>Ausweichen</color>, <color=#FFFFFF>Hilfe</color>, <color=#FFFFFF>Spezialangriff</color> und <color=#FFFFFF>Kettenangriff</color> +2",
+            "Lore": "Generationen von Schmieden haben den Schmelzofen mit Blut genährt, doch sie schwor, dem Feuer beizubringen, von selbst zu brennen.\nDas Geräusch eines Hammers erklingt erneut in der Werkstatt. Der Schmelzofen brennt noch ewig weiter, doch benötigt als Brennstoff nicht länger das Leben selbst."
+        },
+        "6": {
+            "Title": "Traum einer warmen Nacht",
+            "Description": "Beim Treffen von Gegnern mit dem heftigen Schlag von „Kettenangriff: Eid der Blutblüte – Nachhall des Blutpaktes“ und „Ultimate: Eid der Blutblüte – Endlose Bewährung“ löst Claret direkt 1-mal „Verstümmelung“ auf Einzelziel aus, ohne „Schnittwunde“ zu verbrauchen.",
+            "Lore": "Die junge Frau schläft tief ein.\nSie träumt von einem Vollmond und einem sich ewig erstreckenden Land.\nDas karmesinrote Mondlicht ist längst verblasst und der silberne Nachthimmel erinnert an die Morgendämmerung."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passive Kernfähigkeit: Bankett der Blassblütigen",
+            "DescriptionByLevel": {
+                "1": "Aller von Clarets Fähigkeiten verursachter SCH wird als Scharf-SCH gewertet und Fähigkeit-SCH-Multiplikatoren basieren auf ihrer VTD. Einiger Scharf-SCH sammelt Schnittwunde-Wert an. Wenn der Schnittwunde-Wert voll ist, erleidet der Gegner den Effekt „Schnittwunde“, max. 3-fach stapelbar. Beim Treffen von Gegnern, die von „Schnittwunde“ betroffen sind, mit „Spezialangriff: Eid der Blutblüte – Spaltung von Gold und Eisen“ oder „Spezialangriff: Eid der Blutblüte – Sturmangriff des Blutbegräbnisses“ wird 1 Stapelung „Schnittwunde“ verbraucht, um „Verstümmelung“ auszulösen und einmal Flächenschaden zu verursachen.\nBeim Auslösen eines kritischen Treffers wird für Scharf-SCH nicht der KRIT-SCH-Bonus sondern der Lazeration-SCH-Bonus berechnet. Übersteigt die KRIT-Rate 100 %, wird mit einer Wahrscheinlichkeit basierend auf der überschüssigen KRIT-Rate beim Auslösen eines kritischen Treffers zusätzlich Lazeration ausgelöst. Wenn Lazeration ausgelöst wird, wird der Lazeration-SCH-Bonus ein weiteres Mal berechnet. Pro 1 % von Clarets anfänglichem KRIT-SCH erhöht sich ihre anfängliche KRIT-Rate um 0,35 %.\nBeim Betreten des Kampffelds erhält Claret 60 Pkt. Schärfe. Im Modus „Ermittlungszone“ kann dieser Effekt einmal alle 180 s ausgelöst werden.\nWährend Claret im Zustand „<Term:1000036></Term>“ ist, erhöht sich ihre Stufe des Unterbrechungs-WDS und beim Auslösen eines Kettenangriffs wird die Dauer des Zustands „Scharlachrote Inschrift“ um 2 s verlängert.\nWährend Claret im Zustand „Scharlachrote Inschrift“ ist, oder wenn sie einen Kettenangriff, einen Ultimate, eine Konterhilfe oder eine sukzessive Hilfe anwendet, erhöht sich ihre KRIT-Rate um <color=#2BAD00>15 %</color> und ihre Schnittwunde-Ansammlungsrate um <color=#2BAD00>20 %</color>. Beim Auslösen eines perfekten Ausweichens während „Basisangriff: Eid der Blutblüte – Sternenschmiede“ oder „Basisangriff: Eid der Blutblüte – Bändigungsaxt“ erhöht sich der verursachte SCH für die verbleibende Dauer dieser Fähigkeit um 15 %.",
+                "2": "Aller von Clarets Fähigkeiten verursachter SCH wird als Scharf-SCH gewertet und Fähigkeit-SCH-Multiplikatoren basieren auf ihrer VTD. Einiger Scharf-SCH sammelt Schnittwunde-Wert an. Wenn der Schnittwunde-Wert voll ist, erleidet der Gegner den Effekt „Schnittwunde“, max. 3-fach stapelbar. Beim Treffen von Gegnern, die von „Schnittwunde“ betroffen sind, mit „Spezialangriff: Eid der Blutblüte – Spaltung von Gold und Eisen“ oder „Spezialangriff: Eid der Blutblüte – Sturmangriff des Blutbegräbnisses“ wird 1 Stapelung „Schnittwunde“ verbraucht, um „Verstümmelung“ auszulösen und einmal Flächenschaden zu verursachen.\nBeim Auslösen eines kritischen Treffers wird für Scharf-SCH nicht der KRIT-SCH-Bonus sondern der Lazeration-SCH-Bonus berechnet. Übersteigt die KRIT-Rate 100 %, wird mit einer Wahrscheinlichkeit basierend auf der überschüssigen KRIT-Rate beim Auslösen eines kritischen Treffers zusätzlich Lazeration ausgelöst. Wenn Lazeration ausgelöst wird, wird der Lazeration-SCH-Bonus ein weiteres Mal berechnet. Pro 1 % von Clarets anfänglichem KRIT-SCH erhöht sich ihre anfängliche KRIT-Rate um 0,35 %.\nBeim Betreten des Kampffelds erhält Claret 60 Pkt. Schärfe. Im Modus „Ermittlungszone“ kann dieser Effekt einmal alle 180 s ausgelöst werden.\nWährend Claret im Zustand „<Term:1000036></Term>“ ist, erhöht sich ihre Stufe des Unterbrechungs-WDS und beim Auslösen eines Kettenangriffs wird die Dauer des Zustands „Scharlachrote Inschrift“ um 2 s verlängert.\nWährend Claret im Zustand „Scharlachrote Inschrift“ ist, oder wenn sie einen Kettenangriff, einen Ultimate, eine Konterhilfe oder eine sukzessive Hilfe anwendet, erhöht sich ihre KRIT-Rate um <color=#2BAD00>17,5 %</color> und ihre Schnittwunde-Ansammlungsrate um <color=#2BAD00>25 %</color>. Beim Auslösen eines perfekten Ausweichens während „Basisangriff: Eid der Blutblüte – Sternenschmiede“ oder „Basisangriff: Eid der Blutblüte – Bändigungsaxt“ erhöht sich der verursachte SCH für die verbleibende Dauer dieser Fähigkeit um 15 %.",
+                "3": "Aller von Clarets Fähigkeiten verursachter SCH wird als Scharf-SCH gewertet und Fähigkeit-SCH-Multiplikatoren basieren auf ihrer VTD. Einiger Scharf-SCH sammelt Schnittwunde-Wert an. Wenn der Schnittwunde-Wert voll ist, erleidet der Gegner den Effekt „Schnittwunde“, max. 3-fach stapelbar. Beim Treffen von Gegnern, die von „Schnittwunde“ betroffen sind, mit „Spezialangriff: Eid der Blutblüte – Spaltung von Gold und Eisen“ oder „Spezialangriff: Eid der Blutblüte – Sturmangriff des Blutbegräbnisses“ wird 1 Stapelung „Schnittwunde“ verbraucht, um „Verstümmelung“ auszulösen und einmal Flächenschaden zu verursachen.\nBeim Auslösen eines kritischen Treffers wird für Scharf-SCH nicht der KRIT-SCH-Bonus sondern der Lazeration-SCH-Bonus berechnet. Übersteigt die KRIT-Rate 100 %, wird mit einer Wahrscheinlichkeit basierend auf der überschüssigen KRIT-Rate beim Auslösen eines kritischen Treffers zusätzlich Lazeration ausgelöst. Wenn Lazeration ausgelöst wird, wird der Lazeration-SCH-Bonus ein weiteres Mal berechnet. Pro 1 % von Clarets anfänglichem KRIT-SCH erhöht sich ihre anfängliche KRIT-Rate um 0,35 %.\nBeim Betreten des Kampffelds erhält Claret 60 Pkt. Schärfe. Im Modus „Ermittlungszone“ kann dieser Effekt einmal alle 180 s ausgelöst werden.\nWährend Claret im Zustand „<Term:1000036></Term>“ ist, erhöht sich ihre Stufe des Unterbrechungs-WDS und beim Auslösen eines Kettenangriffs wird die Dauer des Zustands „Scharlachrote Inschrift“ um 2 s verlängert.\nWährend Claret im Zustand „Scharlachrote Inschrift“ ist, oder wenn sie einen Kettenangriff, einen Ultimate, eine Konterhilfe oder eine sukzessive Hilfe anwendet, erhöht sich ihre KRIT-Rate um <color=#2BAD00>20 %</color> und ihre Schnittwunde-Ansammlungsrate um <color=#2BAD00>30 %</color>. Beim Auslösen eines perfekten Ausweichens während „Basisangriff: Eid der Blutblüte – Sternenschmiede“ oder „Basisangriff: Eid der Blutblüte – Bändigungsaxt“ erhöht sich der verursachte SCH für die verbleibende Dauer dieser Fähigkeit um 15 %.",
+                "4": "Aller von Clarets Fähigkeiten verursachter SCH wird als Scharf-SCH gewertet und Fähigkeit-SCH-Multiplikatoren basieren auf ihrer VTD. Einiger Scharf-SCH sammelt Schnittwunde-Wert an. Wenn der Schnittwunde-Wert voll ist, erleidet der Gegner den Effekt „Schnittwunde“, max. 3-fach stapelbar. Beim Treffen von Gegnern, die von „Schnittwunde“ betroffen sind, mit „Spezialangriff: Eid der Blutblüte – Spaltung von Gold und Eisen“ oder „Spezialangriff: Eid der Blutblüte – Sturmangriff des Blutbegräbnisses“ wird 1 Stapelung „Schnittwunde“ verbraucht, um „Verstümmelung“ auszulösen und einmal Flächenschaden zu verursachen.\nBeim Auslösen eines kritischen Treffers wird für Scharf-SCH nicht der KRIT-SCH-Bonus sondern der Lazeration-SCH-Bonus berechnet. Übersteigt die KRIT-Rate 100 %, wird mit einer Wahrscheinlichkeit basierend auf der überschüssigen KRIT-Rate beim Auslösen eines kritischen Treffers zusätzlich Lazeration ausgelöst. Wenn Lazeration ausgelöst wird, wird der Lazeration-SCH-Bonus ein weiteres Mal berechnet. Pro 1 % von Clarets anfänglichem KRIT-SCH erhöht sich ihre anfängliche KRIT-Rate um 0,35 %.\nBeim Betreten des Kampffelds erhält Claret 60 Pkt. Schärfe. Im Modus „Ermittlungszone“ kann dieser Effekt einmal alle 180 s ausgelöst werden.\nWährend Claret im Zustand „<Term:1000036></Term>“ ist, erhöht sich ihre Stufe des Unterbrechungs-WDS und beim Auslösen eines Kettenangriffs wird die Dauer des Zustands „Scharlachrote Inschrift“ um 2 s verlängert.\nWährend Claret im Zustand „Scharlachrote Inschrift“ ist, oder wenn sie einen Kettenangriff, einen Ultimate, eine Konterhilfe oder eine sukzessive Hilfe anwendet, erhöht sich ihre KRIT-Rate um <color=#2BAD00>22,5 %</color> und ihre Schnittwunde-Ansammlungsrate um <color=#2BAD00>35 %</color>. Beim Auslösen eines perfekten Ausweichens während „Basisangriff: Eid der Blutblüte – Sternenschmiede“ oder „Basisangriff: Eid der Blutblüte – Bändigungsaxt“ erhöht sich der verursachte SCH für die verbleibende Dauer dieser Fähigkeit um 15 %.",
+                "5": "Aller von Clarets Fähigkeiten verursachter SCH wird als Scharf-SCH gewertet und Fähigkeit-SCH-Multiplikatoren basieren auf ihrer VTD. Einiger Scharf-SCH sammelt Schnittwunde-Wert an. Wenn der Schnittwunde-Wert voll ist, erleidet der Gegner den Effekt „Schnittwunde“, max. 3-fach stapelbar. Beim Treffen von Gegnern, die von „Schnittwunde“ betroffen sind, mit „Spezialangriff: Eid der Blutblüte – Spaltung von Gold und Eisen“ oder „Spezialangriff: Eid der Blutblüte – Sturmangriff des Blutbegräbnisses“ wird 1 Stapelung „Schnittwunde“ verbraucht, um „Verstümmelung“ auszulösen und einmal Flächenschaden zu verursachen.\nBeim Auslösen eines kritischen Treffers wird für Scharf-SCH nicht der KRIT-SCH-Bonus sondern der Lazeration-SCH-Bonus berechnet. Übersteigt die KRIT-Rate 100 %, wird mit einer Wahrscheinlichkeit basierend auf der überschüssigen KRIT-Rate beim Auslösen eines kritischen Treffers zusätzlich Lazeration ausgelöst. Wenn Lazeration ausgelöst wird, wird der Lazeration-SCH-Bonus ein weiteres Mal berechnet. Pro 1 % von Clarets anfänglichem KRIT-SCH erhöht sich ihre anfängliche KRIT-Rate um 0,35 %.\nBeim Betreten des Kampffelds erhält Claret 60 Pkt. Schärfe. Im Modus „Ermittlungszone“ kann dieser Effekt einmal alle 180 s ausgelöst werden.\nWährend Claret im Zustand „<Term:1000036></Term>“ ist, erhöht sich ihre Stufe des Unterbrechungs-WDS und beim Auslösen eines Kettenangriffs wird die Dauer des Zustands „Scharlachrote Inschrift“ um 2 s verlängert.\nWährend Claret im Zustand „Scharlachrote Inschrift“ ist, oder wenn sie einen Kettenangriff, einen Ultimate, eine Konterhilfe oder eine sukzessive Hilfe anwendet, erhöht sich ihre KRIT-Rate um <color=#2BAD00>25 %</color> und ihre Schnittwunde-Ansammlungsrate um <color=#2BAD00>40 %</color>. Beim Auslösen eines perfekten Ausweichens während „Basisangriff: Eid der Blutblüte – Sternenschmiede“ oder „Basisangriff: Eid der Blutblüte – Bändigungsaxt“ erhöht sich der verursachte SCH für die verbleibende Dauer dieser Fähigkeit um 15 %.",
+                "6": "Aller von Clarets Fähigkeiten verursachter SCH wird als Scharf-SCH gewertet und Fähigkeit-SCH-Multiplikatoren basieren auf ihrer VTD. Einiger Scharf-SCH sammelt Schnittwunde-Wert an. Wenn der Schnittwunde-Wert voll ist, erleidet der Gegner den Effekt „Schnittwunde“, max. 3-fach stapelbar. Beim Treffen von Gegnern, die von „Schnittwunde“ betroffen sind, mit „Spezialangriff: Eid der Blutblüte – Spaltung von Gold und Eisen“ oder „Spezialangriff: Eid der Blutblüte – Sturmangriff des Blutbegräbnisses“ wird 1 Stapelung „Schnittwunde“ verbraucht, um „Verstümmelung“ auszulösen und einmal Flächenschaden zu verursachen.\nBeim Auslösen eines kritischen Treffers wird für Scharf-SCH nicht der KRIT-SCH-Bonus sondern der Lazeration-SCH-Bonus berechnet. Übersteigt die KRIT-Rate 100 %, wird mit einer Wahrscheinlichkeit basierend auf der überschüssigen KRIT-Rate beim Auslösen eines kritischen Treffers zusätzlich Lazeration ausgelöst. Wenn Lazeration ausgelöst wird, wird der Lazeration-SCH-Bonus ein weiteres Mal berechnet. Pro 1 % von Clarets anfänglichem KRIT-SCH erhöht sich ihre anfängliche KRIT-Rate um 0,35 %.\nBeim Betreten des Kampffelds erhält Claret 60 Pkt. Schärfe. Im Modus „Ermittlungszone“ kann dieser Effekt einmal alle 180 s ausgelöst werden.\nWährend Claret im Zustand „<Term:1000036></Term>“ ist, erhöht sich ihre Stufe des Unterbrechungs-WDS und beim Auslösen eines Kettenangriffs wird die Dauer des Zustands „Scharlachrote Inschrift“ um 2 s verlängert.\nWährend Claret im Zustand „Scharlachrote Inschrift“ ist, oder wenn sie einen Kettenangriff, einen Ultimate, eine Konterhilfe oder eine sukzessive Hilfe anwendet, erhöht sich ihre KRIT-Rate um <color=#2BAD00>27,5 %</color> und ihre Schnittwunde-Ansammlungsrate um <color=#2BAD00>45 %</color>. Beim Auslösen eines perfekten Ausweichens während „Basisangriff: Eid der Blutblüte – Sternenschmiede“ oder „Basisangriff: Eid der Blutblüte – Bändigungsaxt“ erhöht sich der verursachte SCH für die verbleibende Dauer dieser Fähigkeit um 15 %.",
+                "7": "Aller von Clarets Fähigkeiten verursachter SCH wird als Scharf-SCH gewertet und Fähigkeit-SCH-Multiplikatoren basieren auf ihrer VTD. Einiger Scharf-SCH sammelt Schnittwunde-Wert an. Wenn der Schnittwunde-Wert voll ist, erleidet der Gegner den Effekt „Schnittwunde“, max. 3-fach stapelbar. Beim Treffen von Gegnern, die von „Schnittwunde“ betroffen sind, mit „Spezialangriff: Eid der Blutblüte – Spaltung von Gold und Eisen“ oder „Spezialangriff: Eid der Blutblüte – Sturmangriff des Blutbegräbnisses“ wird 1 Stapelung „Schnittwunde“ verbraucht, um „Verstümmelung“ auszulösen und einmal Flächenschaden zu verursachen.\nBeim Auslösen eines kritischen Treffers wird für Scharf-SCH nicht der KRIT-SCH-Bonus sondern der Lazeration-SCH-Bonus berechnet. Übersteigt die KRIT-Rate 100 %, wird mit einer Wahrscheinlichkeit basierend auf der überschüssigen KRIT-Rate beim Auslösen eines kritischen Treffers zusätzlich Lazeration ausgelöst. Wenn Lazeration ausgelöst wird, wird der Lazeration-SCH-Bonus ein weiteres Mal berechnet. Pro 1 % von Clarets anfänglichem KRIT-SCH erhöht sich ihre anfängliche KRIT-Rate um 0,35 %.\nBeim Betreten des Kampffelds erhält Claret 60 Pkt. Schärfe. Im Modus „Ermittlungszone“ kann dieser Effekt einmal alle 180 s ausgelöst werden.\nWährend Claret im Zustand „<Term:1000036></Term>“ ist, erhöht sich ihre Stufe des Unterbrechungs-WDS und beim Auslösen eines Kettenangriffs wird die Dauer des Zustands „Scharlachrote Inschrift“ um 2 s verlängert.\nWährend Claret im Zustand „Scharlachrote Inschrift“ ist, oder wenn sie einen Kettenangriff, einen Ultimate, eine Konterhilfe oder eine sukzessive Hilfe anwendet, erhöht sich ihre KRIT-Rate um <color=#2BAD00>30 %</color> und ihre Schnittwunde-Ansammlungsrate um <color=#2BAD00>50 %</color>. Beim Auslösen eines perfekten Ausweichens während „Basisangriff: Eid der Blutblüte – Sternenschmiede“ oder „Basisangriff: Eid der Blutblüte – Bändigungsaxt“ erhöht sich der verursachte SCH für die verbleibende Dauer dieser Fähigkeit um 15 %."
+            }
+        },
+        "MathSkill": {
+            "Title": "Zusatzfähigkeit: Vermächtnis der Blutlinie",
+            "Description": "Wenn sich in der Truppe eine <color=#FFFFFF>Durchbruch</color>-Figur, eine weitere <color=#FFFFFF>Schmiedung</color>-Figur oder eine Figur mit demselben Attribut befindet:\nWenn ein beliebiger Truppenagent „Kontamination“ auslöst, stellt Claret 300 Pkt. Dezibel wieder her. Dieser Effekt hat eine Abklingzeit von 18 s.\nWenn Claret oder ein anderer Truppenagent „Verstümmelung“ auslöst, treten alle Schmiedung-Agenten in der Truppe in den Zustand „Klingenrelikt“ ein.\nIm Zustand „Klingenrelikt“ erhöht sich der verursachte Lazeration-SCH um <color=#FFFFFF>25 %</color>, hält 40 s. Beim wiederholten Eintritt in den Zustand „Klingenrelikt“ wird die Dauer aktualisiert."
+        },
+        "AwakenAbility": {},
+        "BaseProps": [
+            {
+                "20101": 0
+            },
+            {
+                "20101": 480
+            },
+            {
+                "20101": 960
+            },
+            {
+                "20101": 1440
+            },
+            {
+                "20101": 1920
+            },
+            {
+                "20101": 2400
+            },
+            {
+                "20101": 2880
+            }
+        ]
+    },
+    "Terms": {
+        "1000036": {
+            "Title": "Scharlachrote Inschrift",
+            "Description": "Clarets Waffe wird zu einer Blutaxt, ihre Angriffe werden durch „Eid der Blutblüte“-Fähigkeiten ersetzt und ihre KRIT-Rate und Schnittwunde-Ansammlungsrate erhöhen sich.",
+            "Source": "Verstärkter Spezialangriff: Eid der Blutblüte – Geheime Schmiedetechniken"
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "161100001": {
+                "Title": "Basisangriff: Vier Formen der Blutschmiede",
+                "Description": "Drücke <IconMap:Icon_Normal> zum Anwenden:\nFührt bis zu 4 Schläge nach vorn aus und verursacht dabei <color=#2EB6FF>Elektro-SCH</color>."
+            },
+            "161100002": {
+                "Title": "Basisangriff: Eid der Blutblüte – Sternenschmiede",
+                "Description": "Drücke im Zustand „<Term:1000036></Term>“ <IconMap:Icon_Normal> zum Anwenden:\nVerwendet die Blutaxt, um bis zu 3 Hiebe nach vorn auszuführen, und verursacht dabei <color=#2EB6FF>Elektro-SCH</color>.\nBeim Ausführen des 2. Angriffs springt Claret nach hinten und wirft ihre Blutaxt. Während des Rückzugs kann ein perfektes Ausweichen ausgelöst werden.\nBeim Ausführen des 3. Angriffs entfesselt Claret eine Reihe von Hieben, ehe sie nach oben springt und einen Sturzangriff durchführt. Beim Ausführen der konsekutiven Hiebe erhöht sich die Stufe des Unterbrechungs-WDS, und der erlittene SCH verringert sich um 40 %. Drücke mehrfach oder halte <IconMap:Icon_Normal> gedrückt, um die Dauer der konsekutiven Hiebe zu verlängern. Lass <IconMap:Icon_Normal> los oder drücke nicht weiter, damit Claret sofort hochspringt und einen Sturzangriff ausführt. Während des Sprungs kann ein perfektes Ausweichen ausgelöst werden. Drücke oder halte nach erfolgreichem Auslösen des perfekten Ausweichens <IconMap:Icon_Normal> gedrückt, um im Anschluss den 3. Angriff von „Basisangriff: Eid der Blutblüte – Sternenschmiede“ auszuführen.\nBeim Anwenden der Fähigkeit wird der Zustand „Scharlachrote Inschrift“ nicht enden."
+            },
+            "161100003": {
+                "Title": "Basisangriff: Eid der Blutblüte – Bändigungsaxt",
+                "Description": "Drücke oder halte, nachdem im Zustand „<Term:1000036></Term>“ „Spezialangriff: Eid der Blutblüte – Spaltung von Gold und Eisen“ oder „Spezialangriff: Eid der Blutblüte – Sturmangriff des Blutbegräbnisses“ ausgeführt und erfolgreich „Verstümmelung“ ausgelöst wurde, <IconMap:Icon_Normal> gedrückt, zum Anwenden:\nDreht sich mit der Blutaxt und springt in die Luft, führt dann einen Sturzangriff und einen Hieb gegen den Zielgegner aus, um <color=#2EB6FF>Elektro-SCH</color> zu verursachen. Während des Sprungs kann ein perfektes Ausweichen ausgelöst werden.\nDrücke oder halte nach Anwenden der Fähigkeit <IconMap:Icon_Normal> gedrückt, um im Anschluss den 3. Angriff von „Basisangriff: Eid der Blutblüte – Sternenschmiede“ auszuführen.\nBeim Anwenden der Fähigkeit wird der Zustand „Scharlachrote Inschrift“ nicht enden."
+            },
+            "161110001": {
+                "Title": "Basisangriff: Vier Formen der Blutschmiede"
+            },
+            "161110002": {
+                "Description": "SCH-Multiplikator des 1. Angriffs",
+                "Param": "{Skill:1611001, Prop:1001}"
+            },
+            "161110003": {
+                "Description": "SCH-Multiplikator des 2. Angriffs",
+                "Param": "{Skill:1611002, Prop:1001}"
+            },
+            "161110004": {
+                "Description": "SCH-Multiplikator des 3. Angriffs",
+                "Param": "{Skill:1611003, Prop:1001}"
+            },
+            "161110005": {
+                "Description": "SCH-Multiplikator des 4. Angriffs",
+                "Param": "{Skill:1611004, Prop:1001}"
+            },
+            "161110006": {
+                "Description": "Benommenheit-Multiplikator des 1. Angriffs",
+                "Param": "{Skill:1611001, Prop:1002}"
+            },
+            "161110007": {
+                "Description": "Benommenheit-Multiplikator des 2. Angriffs",
+                "Param": "{Skill:1611002, Prop:1002}"
+            },
+            "161110008": {
+                "Description": "Benommenheit-Multiplikator des 3. Angriffs",
+                "Param": "{Skill:1611003, Prop:1002}"
+            },
+            "161110009": {
+                "Description": "Benommenheit-Multiplikator des 4. Angriffs",
+                "Param": "{Skill:1611004, Prop:1002}"
+            },
+            "161110010": {
+                "Title": "Basisangriff: Eid der Blutblüte – Sternenschmiede"
+            },
+            "161110011": {
+                "Description": "SCH-Multiplikator des 1. Angriffs",
+                "Param": "{Skill:1611005, Prop:1001}"
+            },
+            "161110012": {
+                "Description": "SCH-Multiplikator des 2. Angriffs",
+                "Param": "{Skill:1611006, Prop:1001}"
+            },
+            "161110013": {
+                "Description": "SCH-Multiplikator für 3 Hiebe in Folge",
+                "Param": "{Skill:1611007, Prop:1001}"
+            },
+            "161110014": {
+                "Description": "SCH-Multiplikator für 3 Sturzangriffe in Folge",
+                "Param": "{Skill:1611029, Prop:1001}"
+            },
+            "161110015": {
+                "Description": "Benommenheit-Multiplikator des 1. Angriffs",
+                "Param": "{Skill:1611005, Prop:1002}"
+            },
+            "161110016": {
+                "Description": "Benommenheit-Multiplikator des 2. Angriffs",
+                "Param": "{Skill:1611006, Prop:1002}"
+            },
+            "161110017": {
+                "Description": "Benommenheit-Multiplikator für 3 Hiebe in Folge",
+                "Param": "{Skill:1611007, Prop:1002}"
+            },
+            "161110018": {
+                "Description": "Benommenheit-Multiplikator für 3 Sturzangriffe in Folge",
+                "Param": "{Skill:1611029, Prop:1002}"
+            },
+            "161110019": {
+                "Title": "Basisangriff: Eid der Blutblüte – Bändigungsaxt"
+            },
+            "161110020": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1611008, Prop:1001}"
+            },
+            "161110021": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1611008, Prop:1002}"
+            }
+        },
+        "1": {
+            "161100004": {
+                "Title": "Spezialangriff: Porcelume-Vorrecht",
+                "Description": "Drücke <IconMap:Icon_Special> zum Anwenden:\nFührt 2 Schläge nach vorn aus und verursacht dabei <color=#2EB6FF>Elektro-SCH</color>.\nBeim Anwenden dieser Fähigkeit erhöht sich die Stufe des Unterbrechungs-WDS."
+            },
+            "161100005": {
+                "Title": "Verstärkter Spezialangriff: Eid der Blutblüte – Geheime Schmiedetechniken",
+                "Description": "Drücke bei ausreichend Schärfe, während Claret nicht im Zustand „Scharlachrote Inschrift“ ist, <IconMap:Icon_SpecialReady_Ep> zum Anwenden:\nDer Schmiedehammer verwandelt sich in die Blutaxt, um Hiebe gegen den Zielgegner auszuführen und dabei <color=#2EB6FF>Elektro-SCH</color> zu verursachen.\nNach Anwenden der Fähigkeit betritt Claret den Zustand „Scharlachrote Inschrift“, hält 16 s. Während sie im Hintergrund ist, wird die Dauer nicht verringert. Wenn Claret mit ihren Angriffen einen Gegner trifft und diesen innerhalb von 0,5 s besiegt, während die Dauer von „Scharlachrote Inschrift“ nicht 0 beträgt, wird die Dauer von „Scharlachrote Inschrift“ um 3 s verlängert. Dieser Effekt kann innerhalb von 3 s bis zu 1-mal ausgelöst werden.\nHalte beim Anwenden der Fähigkeit <IconMap:Icon_SpecialReady_Ep> weiter gedrückt, um den Hieb zu überspringen und im Anschluss rasch „Spezialangriff: Eid der Blutblüte – Spaltung von Gold und Eisen“ und „Spezialangriff: Eid der Blutblüte – Sturmangriff des Blutbegräbnisses“ auszuführen.\nDrücke oder halte nach Anwenden der Fähigkeit <IconMap:Icon_Normal> gedrückt, um im Anschluss den 3. Angriff von „Basisangriff: Eid der Blutblüte – Sternenschmiede“ auszuführen.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "161100006": {
+                "Title": "Spezialangriff: Eid der Blutblüte – Spaltung von Gold und Eisen",
+                "Description": "Drücke im Zustand „<Term:1000036></Term>“ <IconMap:Icon_Special> oder <IconMap:Icon_SpecialReady_Ep> zum Anwenden:\nFührt einen kraftvollen Aufwärtsschlag nach vorn aus, gefolgt von einem Querhieb, und verursacht dabei <color=#2EB6FF>Elektro-SCH</color>.\nBeim Treffen eines Gegners mit dem Querhieb, der von „Schnittwunde“ betroffen ist, wird beim Ziel „Verstümmelung“ ausgelöst und zusätzlicher <color=#2EB6FF>Elektro-Flächen-SCH</color> verursacht.\nBeim Anwenden der Fähigkeit wird der Zustand „Scharlachrote Inschrift“ nicht enden.\nBeim Anwenden dieser Fähigkeit erhöht sich die Stufe des Unterbrechungs-WDS. Nachdem „Verstümmelung“ erfolgreich ausgelöst wurde, ist die Figur beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "161100007": {
+                "Title": "Spezialangriff: Eid der Blutblüte – Sturmangriff des Blutbegräbnisses",
+                "Description": "Halte, wenn Claret im Zustand „<Term:1000036></Term>“ ist, während des Aufwärtsschlags von „Spezialangriff: Eid der Blutblüte – Spaltung von Gold und Eisen“ <IconMap:Icon_Special> oder <IconMap:Icon_SpecialReady_Ep> gedrückt zum Anwenden:\nFührt 3 aufeinanderfolgende Querhiebe nach vorn aus, die hohen <color=#2EB6FF>Elektro-SCH</color> verursachen.\nJedes Mal, wenn ein Querhieb einen Gegner trifft, der von „Schnittwunde“ betroffen ist, wird beim Ziel „Verstümmelung“ ausgelöst und zusätzlicher <color=#2EB6FF>Elektro-Flächen-SCH</color> verursacht. Beim Anwenden der Fähigkeit kann bis zu 3-mal hintereinander „Verstümmelung“ ausgelöst werden. Dabei hat die 3. Auslösung eine höhere Unterbrechungsstufe.\nBeim Anwenden der Fähigkeit wird der Zustand „<Term:1000036></Term>“ nicht enden.\nBeim Anwenden dieser Fähigkeit erhöht sich die Stufe des Unterbrechungs-WDS. Nachdem „Verstümmelung“ erfolgreich ausgelöst wurde, ist die Figur beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "161110022": {
+                "Title": "Spezialangriff: Porcelume-Vorrecht"
+            },
+            "161110023": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1611009, Prop:1001}"
+            },
+            "161110024": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1611009, Prop:1002}"
+            },
+            "161110025": {
+                "Title": "Verstärkter Spezialangriff: Eid der Blutblüte – Geheime Schmiedetechniken"
+            },
+            "161110026": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1611010, Prop:1001}"
+            },
+            "161110027": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1611010, Prop:1002}"
+            },
+            "161110028": {
+                "Description": "Schärfekosten",
+                "Param": "60 Pkt."
+            },
+            "161110029": {
+                "Title": "Spezialangriff: Eid der Blutblüte – Spaltung von Gold und Eisen"
+            },
+            "161110030": {
+                "Description": "SCH-Multiplikator für Aufwärtsschläge",
+                "Param": "{Skill:1611011, Prop:1001}"
+            },
+            "161110031": {
+                "Description": "SCH-Multiplikator für Querhiebe",
+                "Param": "{Skill:1611012, Prop:1001}"
+            },
+            "161110032": {
+                "Description": "Benommenheit-Multiplikator für Aufwärtsschläge",
+                "Param": "{Skill:1611011, Prop:1002}"
+            },
+            "161110033": {
+                "Description": "Benommenheit-Multiplikator für Querhiebe",
+                "Param": "{Skill:1611012, Prop:1002}"
+            },
+            "161110034": {
+                "Description": "SCH-Multiplikator für Verstümmelung",
+                "Param": "{Skill:1611013, Prop:1001}"
+            },
+            "161110035": {
+                "Title": "Spezialangriff: Eid der Blutblüte – Sturmangriff des Blutbegräbnisses"
+            },
+            "161110036": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1611014, Prop:1001}"
+            },
+            "161110037": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1611014, Prop:1002}"
+            }
+        },
+        "2": {
+            "161100008": {
+                "Title": "Ausweichen: Nachtsicht",
+                "Description": "Drücke <IconMap:Icon_Evade> zum Anwenden:\nEin blitzschnelles Sprintausweichen.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "161100009": {
+                "Title": "Sprintangriff: Temperierung",
+                "Description": "Drücke beim Ausweichen, wenn Claret nicht im Zustand „<Term:1000036></Term>“ ist, <IconMap:Icon_Normal> zum Anwenden:\nFührt einen Schlag nach vorn aus und verursacht dabei <color=#2EB6FF>Elektro-SCH</color>."
+            },
+            "161100010": {
+                "Title": "Ausweichkonter: Erwidernde Klinge",
+                "Description": "Drücke nach Auslösen eines <color=#FFFFFF>perfekten Ausweichens</color> <IconMap:Icon_Normal> zum Anwenden:\nFührt mit dem Hammergriff einen kraftvollen Gegenangriff nach vorn aus und verursacht dabei <color=#2EB6FF>Elektro-SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "161100011": {
+                "Title": "Ausweichkonter: Eid der Blutblüte – Erwidernde Klinge",
+                "Description": "Drücke nach Auslösen eines <color=#FFFFFF>perfekten Ausweichens</color> <IconMap:Icon_Normal> zum Anwenden:\nFührt mit der Blutaxt einen kraftvollen Gegenangriff nach vorn aus und verursacht dabei <color=#2EB6FF>Elektro-SCH</color>.\nBeim Anwenden der Fähigkeit wird der Zustand „<Term:1000036></Term>“ nicht enden.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "161110038": {
+                "Title": "Sprintangriff: Temperierung"
+            },
+            "161110039": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1611016, Prop:1001}"
+            },
+            "161110040": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1611016, Prop:1002}"
+            },
+            "161110041": {
+                "Title": "Ausweichkonter: Erwidernde Klinge"
+            },
+            "161110042": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1611018, Prop:1001}"
+            },
+            "161110043": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1611018, Prop:1002}"
+            },
+            "161110044": {
+                "Title": "Ausweichkonter: Eid der Blutblüte – Erwidernde Klinge"
+            },
+            "161110045": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1611019, Prop:1001}"
+            },
+            "161110046": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1611019, Prop:1002}"
+            }
+        },
+        "3": {
+            "161100012": {
+                "Title": "Kettenangriff: Eid der Blutblüte – Nachhall des Blutpaktes",
+                "Description": "Wähle beim Auslösen eines <color=#FFFFFF>Kettenangriffs</color> die entsprechende Figur zum Anwenden:\nFührt eine Reihe von Hieben gegen Gegner vor sich aus und verursacht dabei hohen <color=#2EB6FF>Elektro-SCH</color>.\nBeim Anwenden der Fähigkeit wird die Dauer des Zustands „<Term:1000036></Term>“ nicht verringert und der Zustand „<Term:1000036></Term>“ endet nicht.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "161100013": {
+                "Title": "Ultimate: Eid der Blutblüte – Endlose Bewährung",
+                "Description": "Drücke beim Erreichen der Dezibelstufe <color=#FFFFFF>Maximum</color> <IconMap:Icon_UltimateReady> zum Anwenden:\nFührt eine Reihe von Hieben gegen Gegner vor sich aus und verursacht dabei hohen <color=#2EB6FF>Elektro-SCH</color>.\nBeim Anwenden der Fähigkeit wird die Dauer des Zustands „<Term:1000036></Term>“ nicht verringert und der Zustand „<Term:1000036></Term>“ endet nicht.\nStellt beim Anwenden der Fähigkeit 10 Pkt. Schärfe wieder her.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "161110047": {
+                "Title": "Kettenangriff: Eid der Blutblüte – Nachhall des Blutpaktes"
+            },
+            "161110048": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1611020, Prop:1001}"
+            },
+            "161110049": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1611020, Prop:1002}"
+            },
+            "161110050": {
+                "Title": "Ultimate: Eid der Blutblüte – Endlose Bewährung"
+            },
+            "161110051": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1611021, Prop:1001}"
+            },
+            "161110052": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1611021, Prop:1002}"
+            }
+        },
+        "6": {
+            "161100015": {
+                "Title": "Schnelle Hilfe: Rückkehr des Düstermonds",
+                "Description": "Drücke, wenn die gesteuerte Figur weggeschleudert wird, <IconMap:Icon_Switch> zum Anwenden:\nVerursacht <color=#2EB6FF>Elektro-SCH</color>.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "161100016": {
+                "Title": "Schnelle Hilfe: Eid der Blutblüte – Rückkehr des Düstermonds",
+                "Description": "Drücke, wenn die gesteuerte Figur weggeschleudert wird, <IconMap:Icon_Switch> zum Anwenden:\nVerursacht <color=#2EB6FF>Elektro-SCH</color>.\nBeim Anwenden der Fähigkeit wird der Zustand „<Term:1000036></Term>“ nicht enden.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "161100017": {
+                "Title": "Defensivhilfe: Eisernes Herz des Schmelzofens",
+                "Description": "Drücke, wenn die Figur auf dem Feld gleich angegriffen wird, <IconMap:Icon_Switch> zum Anwenden:\nWehrt gegnerische Angriffe ab und verursacht eine große Menge Benommenheit.\nBeim Anwenden der Fähigkeit wird die Dauer des Zustands „<Term:1000036></Term>“ nicht verringert.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "161100018": {
+                "Title": "Sukzessive Hilfe: Eid der Blutblüte – Reingeschmiedete Klinge",
+                "Description": "Drücke nach einer <color=#FFFFFF>Defensivhilfe</color> <IconMap:Icon_Normal> zum Anwenden:\nVerursacht hohen <color=#2EB6FF>Elektro-SCH</color>.\nBeim Anwenden der Fähigkeit wird der Zustand „<Term:1000036></Term>“ nicht enden.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "161100019": {
+                "Title": "Konterhilfe: Um keinen Stahlbreit",
+                "Description": "Drücke, wenn Claret oder die Figur auf dem Feld gleich von einem Kontrollangriff bestimmter Gegner getroffen wird, <IconMap:Icon_Switch> zum Anwenden:\nTritt dem Gegner in einem Kräftemessen gegenüber. Ist das Kräftemessen erfolgreich, wird der Kontrollangriff des Gegners abgewehrt und <color=#2EB6FF>Elektro-SCH</color> verursacht.\nBeim Anwenden der Fähigkeit wird die Dauer des Zustands „<Term:1000036></Term>“ nicht verringert.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "161100020": {
+                "Title": "Sukzessive Hilfe: Eid der Blutblüte – Formung",
+                "Description": "Drücke nach einer <color=#FFFFFF>Konterhilfe</color> <IconMap:Icon_Normal> zum Anwenden:\nVerursacht hohen <color=#2EB6FF>Elektro-SCH</color>. Beim Treffen von Gegnern mit dem heftigen Schlag wird dem Ziel 1 Stapelung „Schnittwunde“ zugefügt.\nBeim Anwenden der Fähigkeit wird die Dauer des Zustands „<Term:1000036></Term>“ nicht verringert.\nDie Figur ist beim Anwenden dieser Fähigkeit unverwundbar."
+            },
+            "161110053": {
+                "Title": "Schnelle Hilfe: Rückkehr des Düstermonds"
+            },
+            "161110054": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1611022, Prop:1001}"
+            },
+            "161110055": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1611022, Prop:1002}"
+            },
+            "161110056": {
+                "Title": "Schnelle Hilfe: Eid der Blutblüte – Rückkehr des Düstermonds"
+            },
+            "161110057": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1611023, Prop:1001}"
+            },
+            "161110058": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1611023, Prop:1002}"
+            },
+            "161110059": {
+                "Title": "Defensivhilfe: Eisernes Herz des Schmelzofens"
+            },
+            "161110060": {
+                "Description": "Benommenheit-Multiplikator für leichte Defensive",
+                "Param": "{Skill:1611024, Prop:1002}"
+            },
+            "161110061": {
+                "Description": "Benommenheit-Multiplikator für schwere Defensive",
+                "Param": "{Skill:1611025, Prop:1002}"
+            },
+            "161110062": {
+                "Description": "Benommenheit-Multiplikator für Kettendefensive",
+                "Param": "{Skill:1611026, Prop:1002}"
+            },
+            "161110063": {
+                "Title": "Sukzessive Hilfe: Eid der Blutblüte – Reingeschmiedete Klinge"
+            },
+            "161110064": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1611027, Prop:1001}"
+            },
+            "161110065": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1611027, Prop:1002}"
+            },
+            "161110066": {
+                "Title": "Konterhilfe: Um keinen Stahlbreit"
+            },
+            "161110067": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1611028, Prop:1001}"
+            },
+            "161110068": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1611028, Prop:1002}"
+            },
+            "161110069": {
+                "Title": "Sukzessive Hilfe: Eid der Blutblüte – Formung"
+            },
+            "161110070": {
+                "Description": "SCH-Multiplikator",
+                "Param": "{Skill:1611030, Prop:1001}"
+            },
+            "161110071": {
+                "Description": "Benommenheit-Multiplikator",
+                "Param": "{Skill:1611030, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1611001": {
+            "DamageValue": 5440,
+            "DamageGrowth": 500,
+            "DazeValue": 3470,
+            "DazeGrowth": 160
+        },
+        "1611002": {
+            "DamageValue": 6720,
+            "DamageGrowth": 620,
+            "DazeValue": 4290,
+            "DazeGrowth": 200
+        },
+        "1611003": {
+            "DamageValue": 9520,
+            "DamageGrowth": 870,
+            "DazeValue": 6090,
+            "DazeGrowth": 280
+        },
+        "1611004": {
+            "DamageValue": 28950,
+            "DamageGrowth": 2640,
+            "DazeValue": 17880,
+            "DazeGrowth": 820
+        },
+        "1611005": {
+            "DamageValue": 10770,
+            "DamageGrowth": 980,
+            "DazeValue": 5500,
+            "DazeGrowth": 250
+        },
+        "1611006": {
+            "DamageValue": 28740,
+            "DamageGrowth": 2620,
+            "DazeValue": 14670,
+            "DazeGrowth": 670
+        },
+        "1611007": {
+            "DamageValue": 45210,
+            "DamageGrowth": 4110,
+            "DazeValue": 18700,
+            "DazeGrowth": 850
+        },
+        "1611008": {
+            "DamageValue": 32800,
+            "DamageGrowth": 2990,
+            "DazeValue": 13570,
+            "DazeGrowth": 620
+        },
+        "1611009": {
+            "DamageValue": 9010,
+            "DamageGrowth": 820,
+            "DazeValue": 3670,
+            "DazeGrowth": 170
+        },
+        "1611010": {
+            "DamageValue": 62480,
+            "DamageGrowth": 5680,
+            "DazeValue": 25850,
+            "DazeGrowth": 1180
+        },
+        "1611011": {
+            "DamageValue": 7660,
+            "DamageGrowth": 700,
+            "DazeValue": 3120,
+            "DazeGrowth": 150
+        },
+        "1611012": {
+            "DamageValue": 8770,
+            "DamageGrowth": 800,
+            "DazeValue": 3580,
+            "DazeGrowth": 170
+        },
+        "1611013": {
+            "DamageValue": 81270,
+            "DamageGrowth": 7390,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1611014": {
+            "DamageValue": 31280,
+            "DamageGrowth": 2850,
+            "DazeValue": 25490,
+            "DazeGrowth": 1160
+        },
+        "1611016": {
+            "DamageValue": 5290,
+            "DamageGrowth": 490,
+            "DazeValue": 4310,
+            "DazeGrowth": 200
+        },
+        "1611018": {
+            "DamageValue": 27250,
+            "DamageGrowth": 2480,
+            "DazeValue": 19620,
+            "DazeGrowth": 900
+        },
+        "1611019": {
+            "DamageValue": 33000,
+            "DamageGrowth": 3000,
+            "DazeValue": 19070,
+            "DazeGrowth": 870
+        },
+        "1611020": {
+            "DamageValue": 105800,
+            "DamageGrowth": 9620,
+            "DazeValue": 27690,
+            "DazeGrowth": 1260
+        },
+        "1611021": {
+            "DamageValue": 225200,
+            "DamageGrowth": 20480,
+            "DazeValue": 35380,
+            "DazeGrowth": 1610
+        },
+        "1611022": {
+            "DamageValue": 5290,
+            "DamageGrowth": 490,
+            "DazeValue": 4310,
+            "DazeGrowth": 200
+        },
+        "1611023": {
+            "DamageValue": 11580,
+            "DamageGrowth": 1060,
+            "DazeValue": 4040,
+            "DazeGrowth": 190
+        },
+        "1611024": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1611025": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1611026": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1611027": {
+            "DamageValue": 44620,
+            "DamageGrowth": 4060,
+            "DazeValue": 31580,
+            "DazeGrowth": 1440
+        },
+        "1611028": {
+            "DamageValue": 115300,
+            "DamageGrowth": 10490,
+            "DazeValue": 71490,
+            "DazeGrowth": 3250
+        },
+        "1611029": {
+            "DamageValue": 17730,
+            "DamageGrowth": 1620,
+            "DazeValue": 7340,
+            "DazeGrowth": 340
+        },
+        "1611030": {
+            "DamageValue": 85630,
+            "DamageGrowth": 7790,
+            "DazeValue": 52640,
+            "DazeGrowth": 2400
+        }
+    }
+}

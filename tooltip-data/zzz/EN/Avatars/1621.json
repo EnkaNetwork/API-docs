@@ -1,0 +1,539 @@
+{
+    "Name": "Roxy",
+    "UpgradeLevel": 0,
+    "ElementTypes": [
+        "Wind"
+    ],
+    "Specialty": {
+        "Id": 2,
+        "Name": "Stun"
+    },
+    "Talents": {
+        "1": {
+            "Title": "Versatile Attendant",
+            "Description": "When <color=#ffffff>EX Special Attack: Kindly Rest in Peace</color> hits, it reduces the enemy's All-Attribute RES by 15% for 50s. Repeated triggers reset the duration. CRIT DMG increases by 40%.",
+            "Lore": "Roxy always manages to keep everything perfectly in order, from the head of the household's daily needs to her frequent whims.\n\"If you insist on going, please take this guide with you. Yes, I knew you would make this decision, milady.\"\n\"You've changed your mind? That's fine. Here's another guide, just for this sort of situation.\""
+        },
+        "2": {
+            "Title": "Clocking Out Myth",
+            "Description": "<color=#ffffff>EX Special Attack: Don't Catch a Chill</color> deals 5% more Daze.\nFor each <color=#ffffff>Eye of the Storm</color> detonated, gain 1 stack of <color=#ffffff>Windflow</color>, up to 3 stacks.\nDuring <color=#ffffff>EX Special Attack: Don't Catch a Chill</color>, if Roxy switches out after entering the <color=#ffffff>Whirlwind</color> state, she consumes all <color=#ffffff>Windflow</color>. Each stack consumed sustains the <color=#ffffff>Whirlwind</color> state for 0.2s, during which no Energy is consumed, up to a maximum of 0.6s.\nWhen <color=#ffffff>EX Special Attack: Don't Catch a Chill</color> hits an enemy, that enemy's Stun DMG Multiplier increases by 30% until the target recovers from Stun.",
+            "Lore": "Roxy's pale complexion and ever-present dark circles speak to how much effort she pours into the workshop.\nShe is all too familiar with Vyrium at four in the morning, despite having no nocturnal habits.\nTo her, clocking out feels as distant as a myth.\n\"Ah... dawn again... It feels like getting off work will never become a reality.\""
+        },
+        "3": {
+            "Title": "Tales of Insomnia",
+            "Description": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2",
+            "Lore": "Roxy is used to making thorough plans, but whenever Claret is involved, those plans struggle to keep up with the changes. Countless schedule adjustments, countless revisions...\nEven the perfect assistant eventually starts to lose her patience until she reaches a certain breaking point — and snaps.\nFrom then on, Vyrium gains a terrifying figure who roams the streets late at night.\n\"I just want to go home... and get a good night's sleep—!\""
+        },
+        "4": {
+            "Title": "R.I.P.",
+            "Description": "When a <color=#ffffff>Defensive Assist</color> successfully parries an enemy attack, Roxy gains 1 Energy, up to once per skill. When <color=#ffffff>Dodge Counter: Returned Courtesy</color> hits an enemy, it grants 2 Energy, up to once per skill. <color=#ffffff>Ultimate: Requiem for the Night-Burial</color> deals 20% more DMG and 10% more Daze.",
+            "Lore": "Whenever Roxy brings out her weapon, her enemies are always left baffled: Who uses a coffin as a weapon?\nTheir confusion never lasts long, though.\nOnce they see the girl casually swing it around, tearing through the air with a heavy howl, they quickly understand: that thing definitely wasn't made for sleeping in.\n\"It's still daytime, but I'm afraid... it's time to say goodnight.\""
+        },
+        "5": {
+            "Title": "Second Heartbeat",
+            "Description": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2",
+            "Lore": "Roxy can barely remember the adventure she had as a child, and the pain of losing her heart has long since faded.\nBut she will never forget how the girl known as a genius once cried until her proud eyes were red, calling Roxy's name over and over.\nHer tears fell upon Roxy's cold chest, almost hot enough to burn a hole through her heart.\n\"Because of this Porcelloy Heart... I do get a little anemic sometimes, but with milady around, there's nothing to worry about.\""
+        },
+        "6": {
+            "Title": "Eternity and the Clockwork Doll",
+            "Description": "The DMG dealt by attacks ignores 15% of the target's <color=#A6C5FD>Wind RES</color>.\nWhen <color=#ffffff>Special Attack: Forgive Me for Not Seeing You Off</color> detonates <color=#ffffff>Eyes of the Storm</color> to generate a Giant Windstorm, the primary target is inflicted with <color=#ffffff>Afterecho</color>. A Giant Windstorm is generated at the target's location every 3s, for a total of 2 additional Giant Windstorms. Repeated triggers stack the number of additional Giant Windstorm instances generated and refresh the duration of <color=#ffffff>Afterecho</color>. The DMG dealt by the Giant Windstorm increases to 250% of its original value, and the Daze it inflicts increases by 20%.",
+            "Lore": "Some believe Roxy only remains by the head of the household's side to sustain her Porcelloy Heart: Flint Workshop used their bloodline to secure a capable assistant.\nRoxy has heard such claims so often that she no longer even bothers refuting them. The other person concerned, however, can't help but worry over it.\nOne day, during a brief lull in her busy schedule, she casually brought the matter up with her assistant, only to be met with a helpless sigh.\n\"No, I've never thought of it that way. Just being alive is already more than enough. I've always been grateful to you, milady.\"\n\"Besides... if I may be so bold, aren't you the one bound by bloodline here, milady?\"\n\"So this is what's been making you restless lately... Rather than some pointless rumor, I'd say that oversized Porcelloy order you boasted to the CCD about not long ago is far more worth worrying about.\""
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Core Passive: Warm Night's Embrace",
+            "DescriptionByLevel": {
+                "1": "Gain 1 point of <Term:1000039></Term> for every 25 Energy consumed, up to a maximum of 3 <color=#FFFFFF>Wind Energy</color>.\nWhen Roxy's initial <color=#FFFFFF>Energy Regen</color> exceeds 1.2, for every 0.01 above this value, ATK increases by 5, up to a maximum increase of <color=#2BAD00>480</color>, and Impact increases by 0.4, up to a maximum increase of <color=#2BAD00>40</color>.\nAfter <color=#FFFFFF>Special Attack: Forgive Me for Not Seeing You Off</color> hits an enemy affected by <color=#FFFFFF>Windswept</color>, it triggers <Term:1000038></Term>, reverting <color=#FFFFFF>Contamination</color> back to its original state.\nWhen any squad member triggers <color=#FFFFFF>Contamination</color> or <color=#FFFFFF>Cleanse</color>, Roxy provides all squad members with a buff based on the attribute of the <color=#FFFFFF>Contamination</color> or <color=#FFFFFF>Cleanse</color> effect: for every 1% CRIT Rate Roxy has, when non-<color=#FFFFFF>Armorer</color> characters deal DMG of the corresponding attribute or Wind DMG, their CRIT DMG increases by 0.4%, up to <color=#2BAD00>22%</color>. When <color=#FFFFFF>Armorer</color> characters deal DMG of the corresponding attribute or Wind DMG, their Laceration DMG increases by 0.2%, up to <color=#2BAD00>10%</color>. Each attribute's buff lasts 50s, and repeated triggers reset the duration.\nWhen <color=#FFFFFF>Windswept</color> is applied again to an enemy already in the <color=#FFFFFF>Windswept</color> state, all squad members can also gain this buff based on the <color=#FFFFFF>Contamination</color> attribute of the overwritten <color=#FFFFFF>Windswept</color> state and Wind attribute.",
+                "2": "Gain 1 point of <Term:1000039></Term> for every 25 Energy consumed, up to a maximum of 3 <color=#FFFFFF>Wind Energy</color>.\nWhen Roxy's initial <color=#FFFFFF>Energy Regen</color> exceeds 1.2, for every 0.01 above this value, ATK increases by 5, up to a maximum increase of <color=#2BAD00>560</color>, and Impact increases by 0.4, up to a maximum increase of <color=#2BAD00>46</color>.\nAfter <color=#FFFFFF>Special Attack: Forgive Me for Not Seeing You Off</color> hits an enemy affected by <color=#FFFFFF>Windswept</color>, it triggers <Term:1000038></Term>, reverting <color=#FFFFFF>Contamination</color> back to its original state.\nWhen any squad member triggers <color=#FFFFFF>Contamination</color> or <color=#FFFFFF>Cleanse</color>, Roxy provides all squad members with a buff based on the attribute of the <color=#FFFFFF>Contamination</color> or <color=#FFFFFF>Cleanse</color> effect: for every 1% CRIT Rate Roxy has, when non-<color=#FFFFFF>Armorer</color> characters deal DMG of the corresponding attribute or Wind DMG, their CRIT DMG increases by 0.4%, up to <color=#2BAD00>25%</color>. When <color=#FFFFFF>Armorer</color> characters deal DMG of the corresponding attribute or Wind DMG, their Laceration DMG increases by 0.2%, up to <color=#2BAD00>11.5%</color>. Each attribute's buff lasts 50s, and repeated triggers reset the duration.\nWhen <color=#FFFFFF>Windswept</color> is applied again to an enemy already in the <color=#FFFFFF>Windswept</color> state, all squad members can also gain this buff based on the <color=#FFFFFF>Contamination</color> attribute of the overwritten <color=#FFFFFF>Windswept</color> state and Wind attribute.",
+                "3": "Gain 1 point of <Term:1000039></Term> for every 25 Energy consumed, up to a maximum of 3 <color=#FFFFFF>Wind Energy</color>.\nWhen Roxy's initial <color=#FFFFFF>Energy Regen</color> exceeds 1.2, for every 0.01 above this value, ATK increases by 5, up to a maximum increase of <color=#2BAD00>640</color>, and Impact increases by 0.4, up to a maximum increase of <color=#2BAD00>52</color>.\nAfter <color=#FFFFFF>Special Attack: Forgive Me for Not Seeing You Off</color> hits an enemy affected by <color=#FFFFFF>Windswept</color>, it triggers <Term:1000038></Term>, reverting <color=#FFFFFF>Contamination</color> back to its original state.\nWhen any squad member triggers <color=#FFFFFF>Contamination</color> or <color=#FFFFFF>Cleanse</color>, Roxy provides all squad members with a buff based on the attribute of the <color=#FFFFFF>Contamination</color> or <color=#FFFFFF>Cleanse</color> effect: for every 1% CRIT Rate Roxy has, when non-<color=#FFFFFF>Armorer</color> characters deal DMG of the corresponding attribute or Wind DMG, their CRIT DMG increases by 0.4%, up to <color=#2BAD00>28%</color>. When <color=#FFFFFF>Armorer</color> characters deal DMG of the corresponding attribute or Wind DMG, their Laceration DMG increases by 0.2%, up to <color=#2BAD00>13%</color>. Each attribute's buff lasts 50s, and repeated triggers reset the duration.\nWhen <color=#FFFFFF>Windswept</color> is applied again to an enemy already in the <color=#FFFFFF>Windswept</color> state, all squad members can also gain this buff based on the <color=#FFFFFF>Contamination</color> attribute of the overwritten <color=#FFFFFF>Windswept</color> state and Wind attribute.",
+                "4": "Gain 1 point of <Term:1000039></Term> for every 25 Energy consumed, up to a maximum of 3 <color=#FFFFFF>Wind Energy</color>.\nWhen Roxy's initial <color=#FFFFFF>Energy Regen</color> exceeds 1.2, for every 0.01 above this value, ATK increases by 5, up to a maximum increase of <color=#2BAD00>720</color>, and Impact increases by 0.4, up to a maximum increase of <color=#2BAD00>58</color>.\nAfter <color=#FFFFFF>Special Attack: Forgive Me for Not Seeing You Off</color> hits an enemy affected by <color=#FFFFFF>Windswept</color>, it triggers <Term:1000038></Term>, reverting <color=#FFFFFF>Contamination</color> back to its original state.\nWhen any squad member triggers <color=#FFFFFF>Contamination</color> or <color=#FFFFFF>Cleanse</color>, Roxy provides all squad members with a buff based on the attribute of the <color=#FFFFFF>Contamination</color> or <color=#FFFFFF>Cleanse</color> effect: for every 1% CRIT Rate Roxy has, when non-<color=#FFFFFF>Armorer</color> characters deal DMG of the corresponding attribute or Wind DMG, their CRIT DMG increases by 0.4%, up to <color=#2BAD00>31%</color>. When <color=#FFFFFF>Armorer</color> characters deal DMG of the corresponding attribute or Wind DMG, their Laceration DMG increases by 0.2%, up to <color=#2BAD00>14.5%</color>. Each attribute's buff lasts 50s, and repeated triggers reset the duration.\nWhen <color=#FFFFFF>Windswept</color> is applied again to an enemy already in the <color=#FFFFFF>Windswept</color> state, all squad members can also gain this buff based on the <color=#FFFFFF>Contamination</color> attribute of the overwritten <color=#FFFFFF>Windswept</color> state and Wind attribute.",
+                "5": "Gain 1 point of <Term:1000039></Term> for every 25 Energy consumed, up to a maximum of 3 <color=#FFFFFF>Wind Energy</color>.\nWhen Roxy's initial <color=#FFFFFF>Energy Regen</color> exceeds 1.2, for every 0.01 above this value, ATK increases by 5, up to a maximum increase of <color=#2BAD00>800</color>, and Impact increases by 0.4, up to a maximum increase of <color=#2BAD00>64</color>.\nAfter <color=#FFFFFF>Special Attack: Forgive Me for Not Seeing You Off</color> hits an enemy affected by <color=#FFFFFF>Windswept</color>, it triggers <Term:1000038></Term>, reverting <color=#FFFFFF>Contamination</color> back to its original state.\nWhen any squad member triggers <color=#FFFFFF>Contamination</color> or <color=#FFFFFF>Cleanse</color>, Roxy provides all squad members with a buff based on the attribute of the <color=#FFFFFF>Contamination</color> or <color=#FFFFFF>Cleanse</color> effect: for every 1% CRIT Rate Roxy has, when non-<color=#FFFFFF>Armorer</color> characters deal DMG of the corresponding attribute or Wind DMG, their CRIT DMG increases by 0.4%, up to <color=#2BAD00>34%</color>. When <color=#FFFFFF>Armorer</color> characters deal DMG of the corresponding attribute or Wind DMG, their Laceration DMG increases by 0.2%, up to <color=#2BAD00>16%</color>. Each attribute's buff lasts 50s, and repeated triggers reset the duration.\nWhen <color=#FFFFFF>Windswept</color> is applied again to an enemy already in the <color=#FFFFFF>Windswept</color> state, all squad members can also gain this buff based on the <color=#FFFFFF>Contamination</color> attribute of the overwritten <color=#FFFFFF>Windswept</color> state and Wind attribute.",
+                "6": "Gain 1 point of <Term:1000039></Term> for every 25 Energy consumed, up to a maximum of 3 <color=#FFFFFF>Wind Energy</color>.\nWhen Roxy's initial <color=#FFFFFF>Energy Regen</color> exceeds 1.2, for every 0.01 above this value, ATK increases by 5, up to a maximum increase of <color=#2BAD00>880</color>, and Impact increases by 0.4, up to a maximum increase of <color=#2BAD00>70</color>.\nAfter <color=#FFFFFF>Special Attack: Forgive Me for Not Seeing You Off</color> hits an enemy affected by <color=#FFFFFF>Windswept</color>, it triggers <Term:1000038></Term>, reverting <color=#FFFFFF>Contamination</color> back to its original state.\nWhen any squad member triggers <color=#FFFFFF>Contamination</color> or <color=#FFFFFF>Cleanse</color>, Roxy provides all squad members with a buff based on the attribute of the <color=#FFFFFF>Contamination</color> or <color=#FFFFFF>Cleanse</color> effect: for every 1% CRIT Rate Roxy has, when non-<color=#FFFFFF>Armorer</color> characters deal DMG of the corresponding attribute or Wind DMG, their CRIT DMG increases by 0.4%, up to <color=#2BAD00>37%</color>. When <color=#FFFFFF>Armorer</color> characters deal DMG of the corresponding attribute or Wind DMG, their Laceration DMG increases by 0.2%, up to <color=#2BAD00>17.5%</color>. Each attribute's buff lasts 50s, and repeated triggers reset the duration.\nWhen <color=#FFFFFF>Windswept</color> is applied again to an enemy already in the <color=#FFFFFF>Windswept</color> state, all squad members can also gain this buff based on the <color=#FFFFFF>Contamination</color> attribute of the overwritten <color=#FFFFFF>Windswept</color> state and Wind attribute.",
+                "7": "Gain 1 point of <Term:1000039></Term> for every 25 Energy consumed, up to a maximum of 3 <color=#FFFFFF>Wind Energy</color>.\nWhen Roxy's initial <color=#FFFFFF>Energy Regen</color> exceeds 1.2, for every 0.01 above this value, ATK increases by 5, up to a maximum increase of <color=#2BAD00>960</color>, and Impact increases by 0.4, up to a maximum increase of <color=#2BAD00>76.8</color>.\nAfter <color=#FFFFFF>Special Attack: Forgive Me for Not Seeing You Off</color> hits an enemy affected by <color=#FFFFFF>Windswept</color>, it triggers <Term:1000038></Term>, reverting <color=#FFFFFF>Contamination</color> back to its original state.\nWhen any squad member triggers <color=#FFFFFF>Contamination</color> or <color=#FFFFFF>Cleanse</color>, Roxy provides all squad members with a buff based on the attribute of the <color=#FFFFFF>Contamination</color> or <color=#FFFFFF>Cleanse</color> effect: for every 1% CRIT Rate Roxy has, when non-<color=#FFFFFF>Armorer</color> characters deal DMG of the corresponding attribute or Wind DMG, their CRIT DMG increases by 0.4%, up to <color=#2BAD00>40%</color>. When <color=#FFFFFF>Armorer</color> characters deal DMG of the corresponding attribute or Wind DMG, their Laceration DMG increases by 0.2%, up to <color=#2BAD00>20%</color>. Each attribute's buff lasts 50s, and repeated triggers reset the duration.\nWhen <color=#FFFFFF>Windswept</color> is applied again to an enemy already in the <color=#FFFFFF>Windswept</color> state, all squad members can also gain this buff based on the <color=#FFFFFF>Contamination</color> attribute of the overwritten <color=#FFFFFF>Windswept</color> state and Wind attribute."
+            }
+        },
+        "MathSkill": {
+            "Title": "Additional Ability: Porcelloy Heart",
+            "Description": "When another character in your squad is an <color=#FFFFFF>Attack</color>, <color=#FFFFFF>Rupture</color>, or <color=#FFFFFF>Armorer</color> character:\nRoxy's DMG increases by 8%. This effect increases with character level, increasing by 1.2% per level, up to 80%.\nWhen any squad member's attack hits an enemy, it increases their Stun DMG Multiplier by 30%. When an enemy becomes Stunned, its Stun duration is extended by 2s. This Stun duration increase does not stack with similar effects. The effect is removed once the Stun ends.\nWhile an enemy is in the <color=#FFFFFF>Windswept</color> state applied by a squad member, the <color=#A6C5FD>direct Wind DMG</color> they take and the direct DMG they take of the attribute that triggered <color=#FFFFFF>Contamination</color> are increased by 8%.\nUpon entering the battlefield, restores 40 Energy. In Investigation Zone Mode, this effect can trigger once every 180s.\n<color=#FFFFFF>Windswept</color> applied by all squad members lasts 20s longer.\nWhen using an <color=#ffffff>EX Special Attack</color>, Roxy's Anomaly Buildup Rate increases by 30% for 50s. Repeated triggers reset the duration."
+        },
+        "AwakenAbility": {},
+        "BaseProps": [
+            {
+                "20101": 0,
+                "12101": 0
+            },
+            {
+                "20101": 480,
+                "12101": 0
+            },
+            {
+                "20101": 480,
+                "12101": 25
+            },
+            {
+                "20101": 960,
+                "12101": 25
+            },
+            {
+                "20101": 960,
+                "12101": 50
+            },
+            {
+                "20101": 1440,
+                "12101": 50
+            },
+            {
+                "20101": 1440,
+                "12101": 75
+            }
+        ]
+    },
+    "Terms": {
+        "1000040": {
+            "Title": "Eye of the Storm",
+            "Description": "<color=#FFFFFF>EX Special Attack: Kindly Rest in Peace</color> consumes all <Term:1000039></Term>, leaving the corresponding number of <color=#FFFFFF>Eyes of the Storm</color> on the field. When hit by <color=#FFFFFF>Special Attack: Forgive Me for Not Seeing You Off</color>, they detonate to generate Miniature Windstorms or Giant Windstorms.",
+            "Source": "Core Passive: Warm Night's Embrace"
+        },
+        "1000039": {
+            "Title": "Wind Energy",
+            "Description": "For every set amount of Energy consumed, gain 1 point of <color=#FFFFFF>Wind Energy</color>. <color=#FFFFFF>EX Special Attack: Kindly Rest in Peace</color> consumes all <color=#FFFFFF>Wind Energy</color> to generate the corresponding number of <Term:1000040>Eyes of the Storm</Term>.",
+            "Source": "Core Passive: Warm Night's Embrace"
+        },
+        "1000038": {
+            "Title": "Cleanse",
+            "Description": "Reverts the enemy's <color=#FFFFFF>Windswept</color> state to an uncontaminated <color=#FFFFFF>Windswept</color> state.",
+            "Source": ""
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "162100001": {
+                "Title": "Basic Attack: Do Stay a While",
+                "Description": "Press <IconMap:Icon_Normal> to activate:\nPerforms up to 4 strikes forward, dealing <color=#A6C5FD>Wind DMG</color>."
+            },
+            "162100017": {
+                "Title": "Basic Attack: Do Stay a While"
+            },
+            "162100018": {
+                "Description": "1st-Hit DMG Multiplier",
+                "Param": "{Skill:1621001, Prop:1001}"
+            },
+            "162100019": {
+                "Description": "2nd-Hit DMG Multiplier",
+                "Param": "{Skill:1621002, Prop:1001}"
+            },
+            "162100020": {
+                "Description": "3rd-Hit DMG Multiplier",
+                "Param": "{Skill:1621003, Prop:1001}"
+            },
+            "162100021": {
+                "Description": "4th-Hit DMG Multiplier",
+                "Param": "{Skill:1621004, Prop:1001}"
+            },
+            "162100022": {
+                "Description": "1st-Hit Daze Multiplier",
+                "Param": "{Skill:1621001, Prop:1002}"
+            },
+            "162100023": {
+                "Description": "2nd-Hit Daze Multiplier",
+                "Param": "{Skill:1621002, Prop:1002}"
+            },
+            "162100024": {
+                "Description": "3rd-Hit Daze Multiplier",
+                "Param": "{Skill:1621003, Prop:1002}"
+            },
+            "162100025": {
+                "Description": "4th-Hit Daze Multiplier",
+                "Param": "{Skill:1621004, Prop:1002}"
+            }
+        },
+        "1": {
+            "162100002": {
+                "Title": "Special Attack: Much Obliged",
+                "Description": "Press <IconMap:Icon_Special> to activate:\nPerforms a forward strike, dealing <color=#A6C5FD>Wind DMG</color>."
+            },
+            "162100003": {
+                "Title": "Special Attack: Forgive Me for Not Seeing You Off",
+                "Description": "After activating <color=#FFFFFF>EX Special Attack: Kindly Rest in Peace</color>, this attack is automatically activated when the total number of <Term:1000040>Eyes of the Storm</Term> on the field and Roxy's <Term:1000039></Term> reaches at least 3:\nThrows her hammer at enemies on the field, dealing <color=#A6C5FD>Wind DMG</color>.\n<color=#FFFFFF>Eyes of the Storm</color> hit by this attack are detonated, up to 3 <color=#FFFFFF>Eyes of the Storm</color> at a time. Based on the number detonated, a corresponding number of Miniature Windstorms are generated, dealing <color=#A6C5FD>Wind DMG</color>.\nIf 3 <color=#FFFFFF>Eyes of the Storm</color> are detonated at once, a Giant Windstorm is generated instead, dealing <color=#A6C5FD>Wind DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "162100004": {
+                "Title": "EX Special Attack: Don't Catch a Chill",
+                "Description": "With enough energy, press or hold <IconMap:Icon_SpecialReady> to activate:\nSlides forward, dealing <color=#A6C5FD>Wind DMG</color>.\nWhile sliding, press and hold <IconMap:Icon_SpecialReady> to have Roxy enter the <color=#FFFFFF>Whirlwind</color> state:\nWhile in the <color=#FFFFFF>Whirlwind</color> state, Roxy generates a tornado. Drag the joystick to control its direction. During this, Energy is continuously consumed, dealing <color=#A6C5FD>Wind DMG</color> to enemies along its path. When Energy is depleted, or when <IconMap:Icon_SpecialReady> is released while the joystick is not being moved, Roxy exits the <color=#FFFFFF>Whirlwind</color> state.\nWhen the slide ends or when exiting the <color=#FFFFFF>Whirlwind</color> state, automatically follows up with <color=#ffffff>EX Special Attack: Kindly Rest in Peace</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "162100005": {
+                "Title": "EX Special Attack: Kindly Rest in Peace",
+                "Description": "Automatically activates after <color=#FFFFFF>EX Special Attack: Don't Catch a Chill</color> ends:\nConsumes all <Term:1000039></Term> to fire a wind cannon forward, dealing <color=#A6C5FD>Wind DMG</color>.\nAfter the attack, for each point of <color=#FFFFFF>Wind Energy</color> consumed, deals an additional instance of <color=#A6C5FD>Wind DMG</color> and generates 1 <Term:1000040></Term> at the current position.\nCharacter is invulnerable while using this skill."
+            },
+            "162100006": {
+                "Title": "Eye of the Storm",
+                "Description": "Generated after <color=#FFFFFF>EX Special Attack: Kindly Rest in Peace</color> consumes <Term:1000039></Term>, and automatically detonates after 30s.\nUp to 9 <Term:1000040>Eyes of the Storm</Term> can exist at the same time. If this limit is exceeded, the earliest generated <color=#FFFFFF>Eye of the Storm</color> will automatically detonate.\nDetonates when hit by <color=#FFFFFF>Special Attack: Forgive Me for Not Seeing You Off</color>. If fewer than 3 are hit at the same time, 1 Miniature Windstorm is generated at the location of each <color=#FFFFFF>Eye of the Storm</color>, tracking enemies and dealing <color=#A6C5FD>Wind DMG</color> for 1s.\nIf 3 are hit at the same time, 1 Giant Windstorm is generated instead, dealing <color=#A6C5FD>Wind DMG</color> for 1s.\nWhen detonated by any means, an <color=#FFFFFF>Eye of the Storm</color> releases a blast, dealing 1 instance of <color=#A6C5FD>Wind DMG</color> to nearby enemies."
+            },
+            "162100026": {
+                "Title": "Special Attack: Much Obliged"
+            },
+            "162100027": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1621006, Prop:1001}"
+            },
+            "162100028": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1621006, Prop:1002}"
+            },
+            "162100029": {
+                "Title": "Special Attack: Forgive Me for Not Seeing You Off"
+            },
+            "162100030": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1621005, Prop:1001}"
+            },
+            "162100031": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1621005, Prop:1002}"
+            },
+            "162100032": {
+                "Title": "EX Special Attack: Don't Catch a Chill"
+            },
+            "162100033": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1621007, Prop:1001}"
+            },
+            "162100034": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1621007, Prop:1002}"
+            },
+            "162100035": {
+                "Description": "Energy Cost to Use",
+                "Param": "25"
+            },
+            "162100036": {
+                "Description": "Energy Cost",
+                "Param": "10"
+            },
+            "162100037": {
+                "Description": "Whirlwind DMG Multiplier Per Second",
+                "Param": "{Skill:1621008, Prop:1001}"
+            },
+            "162100038": {
+                "Description": "Whirlwind Daze Multiplier Per Second",
+                "Param": "{Skill:1621008, Prop:1002}"
+            },
+            "162100039": {
+                "Description": "Energy Cost Per Second",
+                "Param": "30"
+            },
+            "162100040": {
+                "Title": "EX Special Attack: Kindly Rest in Peace"
+            },
+            "162100041": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1621023, Prop:1001}"
+            },
+            "162100042": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1621023, Prop:1002}"
+            },
+            "162100043": {
+                "Description": "Additional Explosion DMG Multiplier",
+                "Param": "{Skill:1621021, Prop:1001}"
+            },
+            "162100044": {
+                "Title": "Eye of the Storm"
+            },
+            "162100045": {
+                "Description": "Detonation DMG Multiplier",
+                "Param": "{Skill:1621022, Prop:1001}"
+            },
+            "162100046": {
+                "Description": "Miniature Windstorm DMG Multiplier per Second",
+                "Param": "{Skill:1621019, Prop:1001}"
+            },
+            "162100047": {
+                "Description": "Miniature Windstorm Daze Multiplier per Second",
+                "Param": "{Skill:1621019, Prop:1002}"
+            },
+            "162100048": {
+                "Description": "Giant Windstorm DMG Multiplier per Second",
+                "Param": "{Skill:1621020, Prop:1001}"
+            },
+            "162100049": {
+                "Description": "Giant Windstorm Daze Multiplier per Second",
+                "Param": "{Skill:1621020, Prop:1002}"
+            }
+        },
+        "2": {
+            "162100007": {
+                "Title": "Dodge: Excuse Me",
+                "Description": "Press <IconMap:Icon_Evade> to activate:\nPerforms a quick dodge to the side."
+            },
+            "162100008": {
+                "Title": "Dash Attack: Forgive My Rudeness",
+                "Description": "Press <IconMap:Icon_Normal> during a dodge to activate:\nStrikes forward, dealing <color=#A6C5FD>Wind DMG</color>."
+            },
+            "162100009": {
+                "Title": "Dodge Counter: Returned Courtesy",
+                "Description": "Press <IconMap:Icon_Normal> during a Perfect Dodge to activate:\nStrikes enemies in front, dealing <color=#A6C5FD>Wind DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "162100050": {
+                "Title": "Dash Attack: Forgive My Rudeness"
+            },
+            "162100051": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1621009, Prop:1001}"
+            },
+            "162100052": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1621009, Prop:1002}"
+            },
+            "162100053": {
+                "Title": "Dodge Counter: Returned Courtesy"
+            },
+            "162100054": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1621010, Prop:1001}"
+            },
+            "162100055": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1621010, Prop:1002}"
+            }
+        },
+        "3": {
+            "162100010": {
+                "Title": "Chain Attack: Gale-Burial Great Hammer",
+                "Description": "When a <color=#ffffff>Chain Attack</color> is triggered, select the character to activate:\nUnleashes a powerful strike at enemies in front, dealing massive <color=#A6C5FD>Wind DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "162100011": {
+                "Title": "Ultimate: Requiem for the Night-Burial",
+                "Description": "When Decibel Rating is at Maximum, press <IconMap:Icon_UltimateReady> to activate:\nUnleashes a powerful strike at enemies in front in a large area, dealing massive <color=#A6C5FD>Wind DMG</color>.\nAfter the skill ends, gains 1 <Term:1000039></Term>.\nCharacter is invulnerable while using this skill."
+            },
+            "162100056": {
+                "Title": "Chain Attack: Gale-Burial Great Hammer"
+            },
+            "162100057": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1621011, Prop:1001}"
+            },
+            "162100058": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1621011, Prop:1002}"
+            },
+            "162100059": {
+                "Title": "Ultimate: Requiem for the Night-Burial"
+            },
+            "162100060": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1621012, Prop:1001}"
+            },
+            "162100061": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1621012, Prop:1002}"
+            }
+        },
+        "6": {
+            "162100012": {
+                "Title": "Assist: More Overtime?",
+                "Description": "After activating a <color=#FFFFFF>Defensive Assist</color>, press <IconMap:Icon_Switch> again to activate:\nRoxy stays on the field and strikes enemies ahead, dealing <color=#A6C5FD>Wind DMG</color>.\nThis skill is treated as activating a <color=#FFFFFF>Basic Attack</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "162100013": {
+                "Title": "Quick Assist: At Your Service",
+                "Description": "When the on-field character is launched, press <IconMap:Icon_Switch> to activate:\nStrikes enemies in front, dealing <color=#A6C5FD>Wind DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "162100014": {
+                "Title": "Defensive Assist: Allow Me to Assist",
+                "Description": "When the on-field character is about to be attacked, press <IconMap:Icon_Switch> to activate:\nParries the enemy's attack, dealing massive Daze.\nThis skill excels at parrying enemy attacks and reduces the consumption of <color=#FFFFFF>Assist Points</color> when the character is under intense attacks.\nCharacter is invulnerable while using this skill."
+            },
+            "162100015": {
+                "Title": "Assist Follow-Up: Midnight Code",
+                "Description": "Press <IconMap:Icon_Normal> after a <color=#ffffff>Defensive Assist</color> to activate:\nStrikes enemies ahead, dealing <color=#A6C5FD>Wind DMG</color>.\nCharacter is invulnerable while using this skill."
+            },
+            "162100062": {
+                "Title": "Assist: More Overtime?"
+            },
+            "162100063": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1621018, Prop:1001}"
+            },
+            "162100064": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1621018, Prop:1002}"
+            },
+            "162100065": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1621017, Prop:1002}"
+            },
+            "162100066": {
+                "Title": "Quick Assist: At Your Service"
+            },
+            "162100067": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1621013, Prop:1001}"
+            },
+            "162100068": {
+                "Description": "Daze Multiplier",
+                "Param": "{Skill:1621013, Prop:1002}"
+            },
+            "162100069": {
+                "Title": "Defensive Assist: Allow Me to Assist"
+            },
+            "162100070": {
+                "Description": "Light Defensive Daze Multiplier",
+                "Param": "{Skill:1621014, Prop:1002}"
+            },
+            "162100071": {
+                "Description": "Heavy Defensive Daze Multiplier",
+                "Param": "{Skill:1621015, Prop:1002}"
+            },
+            "162100072": {
+                "Description": "Chain Defensive Daze Multiplier",
+                "Param": "{Skill:1621016, Prop:1002}"
+            },
+            "162100073": {
+                "Title": "Assist Follow-Up: Midnight Code"
+            },
+            "162100074": {
+                "Description": "DMG Multiplier",
+                "Param": "{Skill:1621017, Prop:1001}"
+            }
+        }
+    },
+    "Skills": {
+        "1621001": {
+            "DamageValue": 5240,
+            "DamageGrowth": 480,
+            "DazeValue": 5930,
+            "DazeGrowth": 270
+        },
+        "1621002": {
+            "DamageValue": 10790,
+            "DamageGrowth": 990,
+            "DazeValue": 10210,
+            "DazeGrowth": 470
+        },
+        "1621003": {
+            "DamageValue": 17240,
+            "DamageGrowth": 1570,
+            "DazeValue": 14430,
+            "DazeGrowth": 660
+        },
+        "1621004": {
+            "DamageValue": 19250,
+            "DamageGrowth": 1750,
+            "DazeValue": 17190,
+            "DazeGrowth": 790
+        },
+        "1621005": {
+            "DamageValue": 25000,
+            "DamageGrowth": 2280,
+            "DazeValue": 7060,
+            "DazeGrowth": 330
+        },
+        "1621006": {
+            "DamageValue": 5090,
+            "DamageGrowth": 470,
+            "DazeValue": 6460,
+            "DazeGrowth": 300
+        },
+        "1621007": {
+            "DamageValue": 1370,
+            "DamageGrowth": 130,
+            "DazeValue": 1160,
+            "DazeGrowth": 60
+        },
+        "1621008": {
+            "DamageValue": 130400,
+            "DamageGrowth": 11860,
+            "DazeValue": 46300,
+            "DazeGrowth": 2110
+        },
+        "1621009": {
+            "DamageValue": 3560,
+            "DamageGrowth": 330,
+            "DazeValue": 3010,
+            "DazeGrowth": 140
+        },
+        "1621010": {
+            "DamageValue": 39200,
+            "DamageGrowth": 3570,
+            "DazeValue": 28050,
+            "DazeGrowth": 1280
+        },
+        "1621011": {
+            "DamageValue": 90220,
+            "DamageGrowth": 8210,
+            "DazeValue": 32450,
+            "DazeGrowth": 1480
+        },
+        "1621012": {
+            "DamageValue": 213150,
+            "DamageGrowth": 19380,
+            "DazeValue": 105430,
+            "DazeGrowth": 4800
+        },
+        "1621013": {
+            "DamageValue": 10080,
+            "DamageGrowth": 920,
+            "DazeValue": 8530,
+            "DazeGrowth": 390
+        },
+        "1621014": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1621015": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1621016": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1621017": {
+            "DamageValue": 61160,
+            "DamageGrowth": 5560,
+            "DazeValue": 45870,
+            "DazeGrowth": 2090
+        },
+        "1621018": {
+            "DamageValue": 3900,
+            "DamageGrowth": 360,
+            "DazeValue": 6600,
+            "DazeGrowth": 300
+        },
+        "1621019": {
+            "DamageValue": 5210,
+            "DamageGrowth": 480,
+            "DazeValue": 1770,
+            "DazeGrowth": 90
+        },
+        "1621020": {
+            "DamageValue": 20840,
+            "DamageGrowth": 1900,
+            "DazeValue": 7060,
+            "DazeGrowth": 330
+        },
+        "1621021": {
+            "DamageValue": 2610,
+            "DamageGrowth": 240,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1621022": {
+            "DamageValue": 5210,
+            "DamageGrowth": 480,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1621023": {
+            "DamageValue": 3190,
+            "DamageGrowth": 290,
+            "DazeValue": 2700,
+            "DazeGrowth": 130
+        }
+    }
+}

@@ -1,0 +1,616 @@
+{
+    "Name": "Claret",
+    "UpgradeLevel": 0,
+    "ElementTypes": [
+        "Elec"
+    ],
+    "Specialty": {
+        "Id": 7,
+        "Name": "Armorer"
+    },
+    "Talents": {
+        "1": {
+            "Title": "Bloodstained Chronicle",
+            "Description": "Saat serangan Claret mengenai musuh dan mengakibatkan Laceration, Gash Buildup Rate akan meningkat 20%. Kelipatan DMG yang diakibatkan dari Maim yang dipicu Claret meningkat menjadi 130% dari nilai awalnya.",
+            "Lore": "Gadis itu membolak-balik catatan klan yang tua, kertas kasarnya menggerogoti telapak tangannya.\nSetetes darah jatuh ke halaman depan, jutaan tetes darah memenuhi sisa lembarannya."
+        },
+        "2": {
+            "Title": "Crown of Inherited Flame",
+            "Description": "Durasi maksimum Crimson Inscription diperpanjang 2 detik. Saat Claret berada dalam status Crimson Inscription atau saat melancarkan Chain Attack, Ultimate, Counter Assist, Assist Follow-Up, serangan yang mengenai target akan mengabaikan 18% <color=#2EB6FF>Ketahanan Electric DMG</color> target.",
+            "Lore": "Sang jenius yang dipilih oleh garis darah melangkah memasuki aula, cahaya gemilang meluap menerangi wajahnya.\nTanpa sepatah kata pun, dia menerima mahkota dan tongkat, lalu berbalik menuju tempaan berikutnya."
+        },
+        "3": {
+            "Title": "Oath Written in Frosting",
+            "Description": "Level <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, dan <color=#FFFFFF>Chain Attack</color> +2.",
+            "Lore": "Api di tungku tak pernah padam siang dan malam, beban keluarga bertumpu di pundak sang gadis.\nDia tak pernah tahu bagaimana melepas penat, hingga suatu hari, sang asisten berbakat membawakan camilan manis yang indah, menambahkan sedikit rasa manis di hari-hari yang pahit."
+        },
+        "4": {
+            "Title": "Crimson Moon Wanderer",
+            "Description": "Saat melancarkan Basic Attack: Bloodbloom Oath - Starforging tahap ke-3, perpanjangan waktu dari Slash beruntun akan meningkat. DMG yang diakibatkan dari Basic Attack: Bloodbloom Oath - Starforging tahap ke-3, Chain Attack: Bloodbloom Oath - Resonant Blood Pact, dan Ultimate: Bloodbloom Oath - Trial After Trial meningkat 20%.",
+            "Lore": "Suara palu berhenti, dan malam panjang hanya menyisakan bulan merah yang menggantung tinggi.\nSang gadis mendongakkan matanya yang berwarna merah, sinar bulan yang kejam mengejek sembari menerobos masuk lewat celah jendela."
+        },
+        "5": {
+            "Title": "Duskblood Furnace",
+            "Description": "Level <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, dan <color=#FFFFFF>Chain Attack</color> +2.",
+            "Lore": "Para pandai besi dari generasi ke generasi selalu menyuburkan tungku dengan darah mereka, namun ia bersumpah akan membuat api tungku itu untuk belajar menyala dengan sendirinya.\nSuara palu kembali bergema di bengkel, api tungku tetap menyala abadi, namun tak lagi membutuhkan nyawa sebagai kayu bakarnya."
+        },
+        "6": {
+            "Title": "Warm Night's Dream",
+            "Description": "Saat serangan kuat dari Chain Attack: Bloodbloom Oath - Resonant Blood Pact dan Ultimate: Bloodbloom Oath - Trial After Trial yang dilancarkan Claret mengenai musuh, Claret akan memicu Maim 1 kali tanpa mengonsumsi Gash.",
+            "Lore": "Akhirnya, gadis itu pun terlelap dalam tidur yang dalam.\nDia bermimpi tentang bulan purnama, hamparan tanah yang abadi dan tak bertepi.\nCahaya bulan merah telah lama sirna, langit malam berwarna perak bagai fajar yang akan tiba.\n"
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Core Passive: Banquet of Pale Blood",
+            "DescriptionByLevel": {
+                "1": "Semua DMG yang diakibatkan dari skill yang dilancarkan Claret adalah Sharp DMG dan menggunakan DEF sebagai Kelipatan DMG. Sebagian Sharp DMG akan mengakumulasi nilai Gash. Saat Gash sudah penuh, musuh akan memasuki status \"Gash\". \"Gash\" dapat ditumpuk hingga 3 lapis. \nSaat melancarkan Special Attack: Bloodbloom Oath - Cleaving Gold atau Special Attack: Bloodbloom Oath - Blood Burial Assault dan mengenai musuh yang berada dalam status \"Gash\", akan mengonsumsi 1 lapis Gash, memicu Maim, dan mengakibatkan DMG area.\nSaat memicu CRIT, Sharp DMG tidak dipengaruhi oleh Bonus CRIT DMG, melainkan oleh Bonus Laceration DMG. Jika CRIT Rate melebihi 100% dan CRIT terpicu, penghitungan Laceration tambahan akan dilakukan berdasarkan CRIT Rate yang melebihinya. Jika Laceration terpicu, Bonus Laceration DMG akan diterapkan 1 kali. Untuk setiap 1% CRIT DMG awal yang dimiliki Claret, CRIT Rate awal meningkat 0,35%.\nSaat memulai pertarungan, Claret akan memulihkan 60 poin Sharpness. Di mode Eksplorasi Area, efek ini dapat dipicu sekali setiap 180 detik.\nSelama Claret berada dalam <Term:1000036></Term>, Level Anti-Interrupt akan meningkat. Saat Claret melancarkan Chain Attack, durasi Crimson Inscription akan diperpanjang selama 2 detik.\nSaat Claret dalam status \"Crimson Inscription\", atau saat melancarkan Chain Attack, Ultimate, Counter Assist, atau Assist Follow-Up, CRIT Rate akan meningkat <color=#2BAD00>15%</color> dan Gash Buildup Rate meningkat <color=#2BAD00>20%</color>. Saat memicu Perfect Dodge selama melancarkan Basic Attack: Bloodbloom Oath - Starforging atau Basic Attack: Bloodbloom Oath - Subduing Axe, DMG yang diakibatkan dari sisa durasi Skill tersebut meningkat 15%.",
+                "2": "Semua DMG yang diakibatkan dari skill yang dilancarkan Claret adalah Sharp DMG dan menggunakan DEF sebagai Kelipatan DMG. Sebagian Sharp DMG akan mengakumulasi nilai Gash. Saat Gash sudah penuh, musuh akan memasuki status \"Gash\". \"Gash\" dapat ditumpuk hingga 3 lapis. \nSaat melancarkan Special Attack: Bloodbloom Oath - Cleaving Gold atau Special Attack: Bloodbloom Oath - Blood Burial Assault dan mengenai musuh yang berada dalam status \"Gash\", akan mengonsumsi 1 lapis Gash, memicu Maim, dan mengakibatkan DMG area.\nSaat memicu CRIT, Sharp DMG tidak dipengaruhi oleh Bonus CRIT DMG, melainkan oleh Bonus Laceration DMG. Jika CRIT Rate melebihi 100% dan CRIT terpicu, penghitungan Laceration tambahan akan dilakukan berdasarkan CRIT Rate yang melebihinya. Jika Laceration terpicu, Bonus Laceration DMG akan diterapkan 1 kali. Untuk setiap 1% CRIT DMG awal yang dimiliki Claret, CRIT Rate awal meningkat 0,35%.\nSaat memulai pertarungan, Claret akan memulihkan 60 poin Sharpness. Di mode Eksplorasi Area, efek ini dapat dipicu sekali setiap 180 detik.\nSelama Claret berada dalam <Term:1000036></Term>, Level Anti-Interrupt akan meningkat. Saat Claret melancarkan Chain Attack, durasi Crimson Inscription akan diperpanjang selama 2 detik.\nSaat Claret dalam status \"Crimson Inscription\", atau saat melancarkan Chain Attack, Ultimate, Counter Assist, atau Assist Follow-Up, CRIT Rate akan meningkat <color=#2BAD00>17,5%</color> dan Gash Buildup Rate meningkat <color=#2BAD00>25%</color>. Saat memicu Perfect Dodge selama melancarkan Basic Attack: Bloodbloom Oath - Starforging atau Basic Attack: Bloodbloom Oath - Subduing Axe, DMG yang diakibatkan dari sisa durasi Skill tersebut meningkat 15%.",
+                "3": "Semua DMG yang diakibatkan dari skill yang dilancarkan Claret adalah Sharp DMG dan menggunakan DEF sebagai Kelipatan DMG. Sebagian Sharp DMG akan mengakumulasi nilai Gash. Saat Gash sudah penuh, musuh akan memasuki status \"Gash\". \"Gash\" dapat ditumpuk hingga 3 lapis. \nSaat melancarkan Special Attack: Bloodbloom Oath - Cleaving Gold atau Special Attack: Bloodbloom Oath - Blood Burial Assault dan mengenai musuh yang berada dalam status \"Gash\", akan mengonsumsi 1 lapis Gash, memicu Maim, dan mengakibatkan DMG area.\nSaat memicu CRIT, Sharp DMG tidak dipengaruhi oleh Bonus CRIT DMG, melainkan oleh Bonus Laceration DMG. Jika CRIT Rate melebihi 100% dan CRIT terpicu, penghitungan Laceration tambahan akan dilakukan berdasarkan CRIT Rate yang melebihinya. Jika Laceration terpicu, Bonus Laceration DMG akan diterapkan 1 kali. Untuk setiap 1% CRIT DMG awal yang dimiliki Claret, CRIT Rate awal meningkat 0,35%.\nSaat memulai pertarungan, Claret akan memulihkan 60 poin Sharpness. Di mode Eksplorasi Area, efek ini dapat dipicu sekali setiap 180 detik.\nSelama Claret berada dalam <Term:1000036></Term>, Level Anti-Interrupt akan meningkat. Saat Claret melancarkan Chain Attack, durasi Crimson Inscription akan diperpanjang selama 2 detik.\nSaat Claret dalam status \"Crimson Inscription\", atau saat melancarkan Chain Attack, Ultimate, Counter Assist, atau Assist Follow-Up, CRIT Rate akan meningkat <color=#2BAD00>20%</color> dan Gash Buildup Rate meningkat <color=#2BAD00>30%</color>. Saat memicu Perfect Dodge selama melancarkan Basic Attack: Bloodbloom Oath - Starforging atau Basic Attack: Bloodbloom Oath - Subduing Axe, DMG yang diakibatkan dari sisa durasi Skill tersebut meningkat 15%.",
+                "4": "Semua DMG yang diakibatkan dari skill yang dilancarkan Claret adalah Sharp DMG dan menggunakan DEF sebagai Kelipatan DMG. Sebagian Sharp DMG akan mengakumulasi nilai Gash. Saat Gash sudah penuh, musuh akan memasuki status \"Gash\". \"Gash\" dapat ditumpuk hingga 3 lapis. \nSaat melancarkan Special Attack: Bloodbloom Oath - Cleaving Gold atau Special Attack: Bloodbloom Oath - Blood Burial Assault dan mengenai musuh yang berada dalam status \"Gash\", akan mengonsumsi 1 lapis Gash, memicu Maim, dan mengakibatkan DMG area.\nSaat memicu CRIT, Sharp DMG tidak dipengaruhi oleh Bonus CRIT DMG, melainkan oleh Bonus Laceration DMG. Jika CRIT Rate melebihi 100% dan CRIT terpicu, penghitungan Laceration tambahan akan dilakukan berdasarkan CRIT Rate yang melebihinya. Jika Laceration terpicu, Bonus Laceration DMG akan diterapkan 1 kali. Untuk setiap 1% CRIT DMG awal yang dimiliki Claret, CRIT Rate awal meningkat 0,35%.\nSaat memulai pertarungan, Claret akan memulihkan 60 poin Sharpness. Di mode Eksplorasi Area, efek ini dapat dipicu sekali setiap 180 detik.\nSelama Claret berada dalam <Term:1000036></Term>, Level Anti-Interrupt akan meningkat. Saat Claret melancarkan Chain Attack, durasi Crimson Inscription akan diperpanjang selama 2 detik.\nSaat Claret dalam status \"Crimson Inscription\", atau saat melancarkan Chain Attack, Ultimate, Counter Assist, atau Assist Follow-Up, CRIT Rate akan meningkat <color=#2BAD00>22,5%</color> dan Gash Buildup Rate meningkat <color=#2BAD00>35%</color>. Saat memicu Perfect Dodge selama melancarkan Basic Attack: Bloodbloom Oath - Starforging atau Basic Attack: Bloodbloom Oath - Subduing Axe, DMG yang diakibatkan dari sisa durasi Skill tersebut meningkat 15%.",
+                "5": "Semua DMG yang diakibatkan dari skill yang dilancarkan Claret adalah Sharp DMG dan menggunakan DEF sebagai Kelipatan DMG. Sebagian Sharp DMG akan mengakumulasi nilai Gash. Saat Gash sudah penuh, musuh akan memasuki status \"Gash\". \"Gash\" dapat ditumpuk hingga 3 lapis. \nSaat melancarkan Special Attack: Bloodbloom Oath - Cleaving Gold atau Special Attack: Bloodbloom Oath - Blood Burial Assault dan mengenai musuh yang berada dalam status \"Gash\", akan mengonsumsi 1 lapis Gash, memicu Maim, dan mengakibatkan DMG area.\nSaat memicu CRIT, Sharp DMG tidak dipengaruhi oleh Bonus CRIT DMG, melainkan oleh Bonus Laceration DMG. Jika CRIT Rate melebihi 100% dan CRIT terpicu, penghitungan Laceration tambahan akan dilakukan berdasarkan CRIT Rate yang melebihinya. Jika Laceration terpicu, Bonus Laceration DMG akan diterapkan 1 kali. Untuk setiap 1% CRIT DMG awal yang dimiliki Claret, CRIT Rate awal meningkat 0,35%.\nSaat memulai pertarungan, Claret akan memulihkan 60 poin Sharpness. Di mode Eksplorasi Area, efek ini dapat dipicu sekali setiap 180 detik.\nSelama Claret berada dalam <Term:1000036></Term>, Level Anti-Interrupt akan meningkat. Saat Claret melancarkan Chain Attack, durasi Crimson Inscription akan diperpanjang selama 2 detik.\nSaat Claret dalam status \"Crimson Inscription\", atau saat melancarkan Chain Attack, Ultimate, Counter Assist, atau Assist Follow-Up, CRIT Rate akan meningkat <color=#2BAD00>25%</color> dan Gash Buildup Rate meningkat <color=#2BAD00>40%</color>. Saat memicu Perfect Dodge selama melancarkan Basic Attack: Bloodbloom Oath - Starforging atau Basic Attack: Bloodbloom Oath - Subduing Axe, DMG yang diakibatkan dari sisa durasi Skill tersebut meningkat 15%.",
+                "6": "Semua DMG yang diakibatkan dari skill yang dilancarkan Claret adalah Sharp DMG dan menggunakan DEF sebagai Kelipatan DMG. Sebagian Sharp DMG akan mengakumulasi nilai Gash. Saat Gash sudah penuh, musuh akan memasuki status \"Gash\". \"Gash\" dapat ditumpuk hingga 3 lapis. \nSaat melancarkan Special Attack: Bloodbloom Oath - Cleaving Gold atau Special Attack: Bloodbloom Oath - Blood Burial Assault dan mengenai musuh yang berada dalam status \"Gash\", akan mengonsumsi 1 lapis Gash, memicu Maim, dan mengakibatkan DMG area.\nSaat memicu CRIT, Sharp DMG tidak dipengaruhi oleh Bonus CRIT DMG, melainkan oleh Bonus Laceration DMG. Jika CRIT Rate melebihi 100% dan CRIT terpicu, penghitungan Laceration tambahan akan dilakukan berdasarkan CRIT Rate yang melebihinya. Jika Laceration terpicu, Bonus Laceration DMG akan diterapkan 1 kali. Untuk setiap 1% CRIT DMG awal yang dimiliki Claret, CRIT Rate awal meningkat 0,35%.\nSaat memulai pertarungan, Claret akan memulihkan 60 poin Sharpness. Di mode Eksplorasi Area, efek ini dapat dipicu sekali setiap 180 detik.\nSelama Claret berada dalam <Term:1000036></Term>, Level Anti-Interrupt akan meningkat. Saat Claret melancarkan Chain Attack, durasi Crimson Inscription akan diperpanjang selama 2 detik.\nSaat Claret dalam status \"Crimson Inscription\", atau saat melancarkan Chain Attack, Ultimate, Counter Assist, atau Assist Follow-Up, CRIT Rate akan meningkat <color=#2BAD00>27,5%</color> dan Gash Buildup Rate meningkat <color=#2BAD00>45%</color>. Saat memicu Perfect Dodge selama melancarkan Basic Attack: Bloodbloom Oath - Starforging atau Basic Attack: Bloodbloom Oath - Subduing Axe, DMG yang diakibatkan dari sisa durasi Skill tersebut meningkat 15%.",
+                "7": "Semua DMG yang diakibatkan dari skill yang dilancarkan Claret adalah Sharp DMG dan menggunakan DEF sebagai Kelipatan DMG. Sebagian Sharp DMG akan mengakumulasi nilai Gash. Saat Gash sudah penuh, musuh akan memasuki status \"Gash\". \"Gash\" dapat ditumpuk hingga 3 lapis. \nSaat melancarkan Special Attack: Bloodbloom Oath - Cleaving Gold atau Special Attack: Bloodbloom Oath - Blood Burial Assault dan mengenai musuh yang berada dalam status \"Gash\", akan mengonsumsi 1 lapis Gash, memicu Maim, dan mengakibatkan DMG area.\nSaat memicu CRIT, Sharp DMG tidak dipengaruhi oleh Bonus CRIT DMG, melainkan oleh Bonus Laceration DMG. Jika CRIT Rate melebihi 100% dan CRIT terpicu, penghitungan Laceration tambahan akan dilakukan berdasarkan CRIT Rate yang melebihinya. Jika Laceration terpicu, Bonus Laceration DMG akan diterapkan 1 kali. Untuk setiap 1% CRIT DMG awal yang dimiliki Claret, CRIT Rate awal meningkat 0,35%.\nSaat memulai pertarungan, Claret akan memulihkan 60 poin Sharpness. Di mode Eksplorasi Area, efek ini dapat dipicu sekali setiap 180 detik.\nSelama Claret berada dalam <Term:1000036></Term>, Level Anti-Interrupt akan meningkat. Saat Claret melancarkan Chain Attack, durasi Crimson Inscription akan diperpanjang selama 2 detik.\nSaat Claret dalam status \"Crimson Inscription\", atau saat melancarkan Chain Attack, Ultimate, Counter Assist, atau Assist Follow-Up, CRIT Rate akan meningkat <color=#2BAD00>30%</color> dan Gash Buildup Rate meningkat <color=#2BAD00>50%</color>. Saat memicu Perfect Dodge selama melancarkan Basic Attack: Bloodbloom Oath - Starforging atau Basic Attack: Bloodbloom Oath - Subduing Axe, DMG yang diakibatkan dari sisa durasi Skill tersebut meningkat 15%."
+            }
+        },
+        "MathSkill": {
+            "Title": "Additional Ability: Bloodline Legacy",
+            "Description": "Berlaku jika terdapat Agen <color=#FFFFFF>Stun</color>, Agen <color=#FFFFFF>Armorer</color> lain, atau Agen yang memiliki Atribut yang sama di dalam tim:\nSaat anggota tim mana pun memicu Contamination, Claret akan memulihkan 300 poin Decibel. Efek ini dapat dipicu sekali setiap 18 detik.\nSaat Claret atau Agen lain di dalam tim memicu Maim, semua Agen Armorer di dalam tim akan memasuki status Remnant Edge. Dalam status Remnant Edge, Laceration DMG akan meningkat <color=#FFFFFF>25%</color> selama 40 detik. Memasuki status Remnant Edge berulang kali akan memperbarui durasi Remnant Edge."
+        },
+        "AwakenAbility": {},
+        "BaseProps": [
+            {
+                "20101": 0
+            },
+            {
+                "20101": 480
+            },
+            {
+                "20101": 960
+            },
+            {
+                "20101": 1440
+            },
+            {
+                "20101": 1920
+            },
+            {
+                "20101": 2400
+            },
+            {
+                "20101": 2880
+            }
+        ]
+    },
+    "Terms": {
+        "1000036": {
+            "Title": "Crimson Inscription",
+            "Description": "Mengubah senjata menjadi Blood Axe, mengganti Skill Claret dengan Skill Bloodbloom Oath, serta meningkatkan CRIT Rate dan Gash Buildup Rate.",
+            "Source": "EX Special Attack: Bloodbloom Oath - Secret Forging Techniques"
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "161100001": {
+                "Title": "Basic Attack: Bloodforging Four Forms",
+                "Description": "Tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMelancarkan hingga empat tahap serangan ke depan dan mengakibatkan <color=#2EB6FF>Electric DMG</color>."
+            },
+            "161100002": {
+                "Title": "Basic Attack: Bloodbloom Oath - Starforging",
+                "Description": "Saat dalam status <Term:1000036></Term>, tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMelancarkan hingga tiga tahap Slash ke depan menggunakan Blood Axe, mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nSaat melancarkan serangan tahap ke-2, Claret akan melompat ke belakang dan melempar Blood Axe. Saat mundur ke belakang, Perfect Dodge dapat terpicu.\nSaat melancarkan serangan tahap ke-3, Claret akan melancarkan Slash beruntun lalu melompat dan menghantam ke bawah. Selama Slash beruntun berlangsung, Level Anti-Interrupt meningkat dan DMG yang diterima berkurang 40%. Tahan atau tekan <IconMap:Icon_Normal> berulang kali untuk memperpanjang durasi Slash beruntun. Saat berhenti menekan berulang kali atau melepas <IconMap:Icon_Normal>, Claret akan segera melompat dan menghantam ke bawah. Saat melompat, Perfect Dodge dapat terpicu. Jika berhasil memicu Perfect Dodge, tekan atau tahan <IconMap:Icon_Normal> untuk melanjutkan serangan dengan Basic Attack: Bloodbloom Oath - Starforging tahap ke-3.\nStatus \"Crimson Inscription\" tidak akan berakhir saat melancarkan Skill ini."
+            },
+            "161100003": {
+                "Title": "Basic Attack: Bloodbloom Oath - Subduing Axe",
+                "Description": "Saat dalam status <Term:1000036></Term>, tekan atau tahan <IconMap:Icon_Normal> setelah melancarkan Special Attack: Bloodbloom Oath - Cleaving Gold and Iron atau Special Attack: Bloodbloom Oath - Blood Burial Assault Maim dan berhasil memicu untuk melancarkan Skill ini.\nMenggunakan Blood Axe untuk melompat, berputar, lalu menghantam ke bawah, dan melakukan Slash terhadap target, mengakibatkan <color=#2EB6FF>Electric DMG</color>. Saat sedang melompat dapat memicu efek Perfect Dodge.\nSetelah melancarkan Skill ini, tekan atau tahan <IconMap:Icon_Normal> untuk melanjutkan serangan dengan Basic Attack: Bloodbloom Oath - Starforging tahap ke-3.\nStatus \"Crimson Inscription\" tidak akan berakhir saat melancarkan Skill ini."
+            },
+            "161110001": {
+                "Title": "Basic Attack: Bloodforging Four Forms"
+            },
+            "161110002": {
+                "Description": "Kelipatan DMG: Tahap 1",
+                "Param": "{Skill:1611001, Prop:1001}"
+            },
+            "161110003": {
+                "Description": "Kelipatan DMG: Tahap 2",
+                "Param": "{Skill:1611002, Prop:1001}"
+            },
+            "161110004": {
+                "Description": "Kelipatan DMG: Tahap 3",
+                "Param": "{Skill:1611003, Prop:1001}"
+            },
+            "161110005": {
+                "Description": "Kelipatan DMG: Tahap 4",
+                "Param": "{Skill:1611004, Prop:1001}"
+            },
+            "161110006": {
+                "Description": "Kelipatan Daze: Tahap 1",
+                "Param": "{Skill:1611001, Prop:1002}"
+            },
+            "161110007": {
+                "Description": "Kelipatan Daze: Tahap 2",
+                "Param": "{Skill:1611002, Prop:1002}"
+            },
+            "161110008": {
+                "Description": "Kelipatan Daze: Tahap 3",
+                "Param": "{Skill:1611003, Prop:1002}"
+            },
+            "161110009": {
+                "Description": "Kelipatan Daze: Tahap 4",
+                "Param": "{Skill:1611004, Prop:1002}"
+            },
+            "161110010": {
+                "Title": "Basic Attack: Bloodbloom Oath - Starforging"
+            },
+            "161110011": {
+                "Description": "Kelipatan DMG: Tahap 1",
+                "Param": "{Skill:1611005, Prop:1001}"
+            },
+            "161110012": {
+                "Description": "Kelipatan DMG: Tahap 2",
+                "Param": "{Skill:1611006, Prop:1001}"
+            },
+            "161110013": {
+                "Description": "Kelipatan DMG - Serangan Kombo: Tahap 3",
+                "Param": "{Skill:1611007, Prop:1001}"
+            },
+            "161110014": {
+                "Description": "Kelipatan DMG - Serangan ke Bawah: Tahap 3",
+                "Param": "{Skill:1611029, Prop:1001}"
+            },
+            "161110015": {
+                "Description": "Kelipatan Daze: Tahap 1",
+                "Param": "{Skill:1611005, Prop:1002}"
+            },
+            "161110016": {
+                "Description": "Kelipatan Daze: Tahap 2",
+                "Param": "{Skill:1611006, Prop:1002}"
+            },
+            "161110017": {
+                "Description": "Kelipatan Daze - Serangan Kombo: Tahap 3",
+                "Param": "{Skill:1611007, Prop:1002}"
+            },
+            "161110018": {
+                "Description": "Kelipatan Daze - Serangan ke Bawah: Tahap 3",
+                "Param": "{Skill:1611029, Prop:1002}"
+            },
+            "161110019": {
+                "Title": "Basic Attack: Bloodbloom Oath - Subduing Axe"
+            },
+            "161110020": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1611008, Prop:1001}"
+            },
+            "161110021": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1611008, Prop:1002}"
+            }
+        },
+        "1": {
+            "161100004": {
+                "Title": "Special Attack: Porcelume's First Call",
+                "Description": "Tekan <IconMap:Icon_Special> untuk melancarkan Skill ini.\nMelancarkan dua tahap serangan menghantam ke depan dan mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nLevel Anti-Interrupt akan meningkat selama melancarkan Skill ini."
+            },
+            "161100005": {
+                "Title": "EX Special Attack: Bloodbloom Oath - Secret Forging Techniques",
+                "Description": "Saat Sharpness mencukupi dan Claret tidak dalam status \"Crimson Inscription\", tekan <IconMap:Icon_SpecialReady_Ep> untuk melancarkan Skill ini.\nMengubah palu tempa menjadi Blood Axe dan melancarkan Slash terhadap musuh, mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nSetelah melancarkan Skill ini, Claret akan memasuki status \"Crimson Inscription\" selama 16 detik. Saat Agen tidak aktif, durasi status tidak akan berkurang. Saat serangan Claret mengenai musuh dan musuh dikalahkan dalam 0,5 detik, jika \"Crimson Inscription\" masih berlangsung, maka durasi \"Crimson Inscription\" akan diperpanjang selama 3 detik, efek ini dapat dipicu sekali setiap 3 detik.\nSaat melancarkan Skill ini, tahan <IconMap:Icon_SpecialReady_Ep> untuk melewati tahap serangan Slash dan langsung melancarkan alternatif Special Attack: Bloodbloom Oath - Cleaving Gold and Iron dan Special Attack: Bloodbloom Oath - Blood Burial Assault.\nSetelah melancarkan Skill ini, tekan atau tahan <IconMap:Icon_Normal> untuk melanjutkan serangan dengan Basic Attack: Bloodbloom Oath - Starforging tahap ke-3.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "161100006": {
+                "Title": "Special Attack: Bloodbloom Oath - Cleaving Gold and Iron",
+                "Description": "Saat dalam status <Term:1000036></Term>, tekan <IconMap:Icon_Special> atau <IconMap:Icon_SpecialReady_Ep> untuk melancarkan Skill ini.\nMelancarkan serangan ke atas yang kuat ke arah depan, lalu melakukan Slash secara horizontal, mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nSaat Slash horizontal mengenai musuh yang memiliki Gash, akan memicu Maim terhadap target dan mengakibatkan <color=#2EB6FF>Electric DMG</color> area tambahan.\nStatus \"Crimson Inscription\" tidak akan berakhir saat melancarkan Skill ini.\nLevel Anti-Interrupt akan meningkat selama melancarkan Skill ini. Setelah berhasil memicu Maim, Karakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "161100007": {
+                "Title": "Special Attack: Bloodbloom Oath - Blood Burial Assault",
+                "Description": "Saat dalam status <Term:1000036></Term> dan saat melancarkan serangan ke atas dari Special Attack: Bloodbloom Oath - Cleaving Gold and Iron, tahan <IconMap:Icon_Special> atau <IconMap:Icon_SpecialReady_Ep> untuk melancarkan Skill ini.\nMelancarkan 3 kali Slash horizontal berturut-turut ke depan, mengakibatkan <color=#2EB6FF>Electric DMG</color> dalam jumlah besar.\nSetiap kali Slash horizontal mengenai musuh yang memiliki Gash, akan memicu Maim pada target tersebut dan mengakibatkan <color=#2EB6FF>Electric DMG</color> area tambahan. Maksimum memicu 3 kali Maim secara berturut-turut dalam satu Skill. Maim ke-3 memiliki Level Interrupt yang lebih tinggi.\nStatus <Term:1000036></Term> tidak akan berakhir saat melancarkan Skill ini.\nLevel Anti-Interrupt akan meningkat selama melancarkan Skill ini. Setelah berhasil memicu Maim, Karakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "161110022": {
+                "Title": "Special Attack: Porcelume's First Call"
+            },
+            "161110023": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1611009, Prop:1001}"
+            },
+            "161110024": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1611009, Prop:1002}"
+            },
+            "161110025": {
+                "Title": "EX Special Attack: Bloodbloom Oath - Secret Forging Techniques"
+            },
+            "161110026": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1611010, Prop:1001}"
+            },
+            "161110027": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1611010, Prop:1002}"
+            },
+            "161110028": {
+                "Description": "Konsumsi Sharpness",
+                "Param": "60 poin"
+            },
+            "161110029": {
+                "Title": "Special Attack: Bloodbloom Oath - Cleaving Gold and Iron"
+            },
+            "161110030": {
+                "Description": "Kelipatan DMG - Serangan ke Atas",
+                "Param": "{Skill:1611011, Prop:1001}"
+            },
+            "161110031": {
+                "Description": "Kelipatan DMG - Slash Horizontal",
+                "Param": "{Skill:1611012, Prop:1001}"
+            },
+            "161110032": {
+                "Description": "Kelipatan Daze - Serangan ke Atas",
+                "Param": "{Skill:1611011, Prop:1002}"
+            },
+            "161110033": {
+                "Description": "Kelipatan Daze - Slash Horizontal",
+                "Param": "{Skill:1611012, Prop:1002}"
+            },
+            "161110034": {
+                "Description": "Kelipatan DMG Maim",
+                "Param": "{Skill:1611013, Prop:1001}"
+            },
+            "161110035": {
+                "Title": "Special Attack: Bloodbloom Oath - Blood Burial Assault"
+            },
+            "161110036": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1611014, Prop:1001}"
+            },
+            "161110037": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1611014, Prop:1002}"
+            }
+        },
+        "2": {
+            "161100008": {
+                "Title": "Dodge: Night Vision",
+                "Description": "Tekan <IconMap:Icon_Evade> untuk melakukan Dodge.\nMelakukan Dodge dengan cepat.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "161100009": {
+                "Title": "Dash Attack: Tempering",
+                "Description": "Jika tidak berada dalam status <Term:1000036></Term>, tekan <IconMap:Icon_Normal> saat melakukan Dodge untuk melancarkan Skill ini.\nMelancarkan serangan menghantam ke depan dan mengakibatkan <color=#2EB6FF>Electric DMG</color>."
+            },
+            "161100010": {
+                "Title": "Dodge Counter: Returning Edge",
+                "Description": "Tekan <IconMap:Icon_Normal> setelah melakukan <color=#FFFFFF>Perfect Dodge</color> untuk melancarkan Skill ini.\nMelancarkan serangan balik yang kuat menggunakan gagang palu ke depan dan mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "161100011": {
+                "Title": "Dodge Counter: Bloodbloom Oath - Returning Edge",
+                "Description": "Tekan <IconMap:Icon_Normal> setelah melakukan <color=#FFFFFF>Perfect Dodge</color> untuk melancarkan Skill ini.\nMelancarkan serangan balik yang kuat ke depan menggunakan Blood Axe dan mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nStatus <Term:1000036></Term> tidak akan berakhir saat melancarkan Skill ini.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "161110038": {
+                "Title": "Dash Attack: Tempering"
+            },
+            "161110039": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1611016, Prop:1001}"
+            },
+            "161110040": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1611016, Prop:1002}"
+            },
+            "161110041": {
+                "Title": "Dodge Counter: Returning Edge"
+            },
+            "161110042": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1611018, Prop:1001}"
+            },
+            "161110043": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1611018, Prop:1002}"
+            },
+            "161110044": {
+                "Title": "Dodge Counter: Bloodbloom Oath - Returning Edge"
+            },
+            "161110045": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1611019, Prop:1001}"
+            },
+            "161110046": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1611019, Prop:1002}"
+            }
+        },
+        "3": {
+            "161100012": {
+                "Title": "Chain Attack: Bloodbloom Oath - Resonant Blood Pact",
+                "Description": "Saat <color=#FFFFFF>Chain Attack</color> terpicu, pilih Claret untuk melancarkan Skill ini.\nMelancarkan Slash beruntun terhadap musuh di depan dan mengakibatkan <color=#2EB6FF>Electric DMG</color> dalam jumlah besar.\nSelama melancarkan Skill ini, durasi <Term:1000036></Term> tidak akan berkurang dan Claret tidak akan keluar dari status <Term:1000036></Term>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "161100013": {
+                "Title": "Ultimate: Bloodbloom Oath - Trial After Trial",
+                "Description": "Saat Decibel Rating mencapai <color=#FFFFFF>Maximum</color>, tekan <IconMap:Icon_UltimateReady> untuk melancarkan Skill ini.\nMelancarkan Slash beruntun terhadap musuh di depan dan mengakibatkan <color=#2EB6FF>Electric DMG</color> dalam jumlah besar.\nSelama melancarkan Skill ini, durasi <Term:1000036></Term> tidak akan berkurang dan Claret tidak akan keluar dari status <Term:1000036></Term>.\nSaat melancarkan Skill ini, akan memulihkan 10 poin Sharpness.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "161110047": {
+                "Title": "Chain Attack: Bloodbloom Oath - Resonant Blood Pact"
+            },
+            "161110048": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1611020, Prop:1001}"
+            },
+            "161110049": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1611020, Prop:1002}"
+            },
+            "161110050": {
+                "Title": "Ultimate: Bloodbloom Oath - Trial After Trial"
+            },
+            "161110051": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1611021, Prop:1001}"
+            },
+            "161110052": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1611021, Prop:1002}"
+            }
+        },
+        "6": {
+            "161100015": {
+                "Title": "Quick Assist: Return of the Dire Moon",
+                "Description": "Saat Agen yang Dikendalikan terhempas, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nMengakibatkan <color=#2EB6FF>Electric DMG</color>.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "161100016": {
+                "Title": "Quick Assist: Bloodbloom Oath - Return of the Dire Moon",
+                "Description": "Saat Agen yang Dikendalikan terhempas, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nMengakibatkan <color=#2EB6FF>Electric DMG</color>.\nStatus <Term:1000036></Term> tidak akan berakhir saat melancarkan Skill ini.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "161100017": {
+                "Title": "Defensive Assist: Unyielding Heart of the Furnace",
+                "Description": "Tepat sebelum Agen aktif diserang, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nMenangkis serangan musuh dan menghasilkan Daze dalam jumlah besar.\nSelama melancarkan Skill ini, durasi <Term:1000036></Term> tidak akan berkurang.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "161100018": {
+                "Title": "Assist Follow-Up: Bloodbloom Oath - Pureforged Edge",
+                "Description": "Setelah melancarkan <color=#FFFFFF>Defensive Assist</color>, tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMengakibatkan <color=#2EB6FF>Electric DMG</color>.\nStatus <Term:1000036></Term> tidak akan berakhir saat melancarkan Skill ini.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "161100019": {
+                "Title": "Counter Assist: Give Not an Inch of Steel",
+                "Description": "Saat Claret atau Agen aktif hampir akan terkena Control Skill dari musuh tertentu, tekan <IconMap:Icon_Switch> untuk melancarkan Skill ini.\nBeradu kekuatan dengan musuh. Setelah berhasil, Control Skill musuh akan dinetralisir, dan Claret akan mengakibatkan <color=#2EB6FF>Electric DMG</color>.\nSelama melancarkan Skill ini, durasi <Term:1000036></Term> tidak akan berkurang.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "161100020": {
+                "Title": "Assist Follow-Up: Bloodbloom Oath - Hammer Into Shape",
+                "Description": "Setelah melancarkan <color=#FFFFFF>Counter Assist</color>, tekan <IconMap:Icon_Normal> untuk melancarkan Skill ini.\nMengakibatkan <color=#2EB6FF>Electric DMG</color> dalam jumlah besar. Saat serangan kuat mengenai musuh, langsung menambahkan 1 lapis Gash pada target.\nSelama melancarkan Skill ini, durasi <Term:1000036></Term> tidak akan berkurang.\nKarakter akan menjadi kebal selama melancarkan Skill ini."
+            },
+            "161110053": {
+                "Title": "Quick Assist: Return of the Dire Moon"
+            },
+            "161110054": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1611022, Prop:1001}"
+            },
+            "161110055": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1611022, Prop:1002}"
+            },
+            "161110056": {
+                "Title": "Quick Assist: Bloodbloom Oath - Return of the Dire Moon"
+            },
+            "161110057": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1611023, Prop:1001}"
+            },
+            "161110058": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1611023, Prop:1002}"
+            },
+            "161110059": {
+                "Title": "Defensive Assist: Unyielding Heart of the Furnace"
+            },
+            "161110060": {
+                "Description": "Kelipatan Daze - Light Defensive",
+                "Param": "{Skill:1611024, Prop:1002}"
+            },
+            "161110061": {
+                "Description": "Kelipatan Daze - Heavy Defensive",
+                "Param": "{Skill:1611025, Prop:1002}"
+            },
+            "161110062": {
+                "Description": "Kelipatan Daze - Chain Defensive",
+                "Param": "{Skill:1611026, Prop:1002}"
+            },
+            "161110063": {
+                "Title": "Assist Follow-Up: Bloodbloom Oath - Pureforged Edge"
+            },
+            "161110064": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1611027, Prop:1001}"
+            },
+            "161110065": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1611027, Prop:1002}"
+            },
+            "161110066": {
+                "Title": "Counter Assist: Give Not an Inch of Steel"
+            },
+            "161110067": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1611028, Prop:1001}"
+            },
+            "161110068": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1611028, Prop:1002}"
+            },
+            "161110069": {
+                "Title": "Assist Follow-Up: Bloodbloom Oath - Hammer Into Shape"
+            },
+            "161110070": {
+                "Description": "Kelipatan DMG",
+                "Param": "{Skill:1611030, Prop:1001}"
+            },
+            "161110071": {
+                "Description": "Kelipatan Daze",
+                "Param": "{Skill:1611030, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1611001": {
+            "DamageValue": 5440,
+            "DamageGrowth": 500,
+            "DazeValue": 3470,
+            "DazeGrowth": 160
+        },
+        "1611002": {
+            "DamageValue": 6720,
+            "DamageGrowth": 620,
+            "DazeValue": 4290,
+            "DazeGrowth": 200
+        },
+        "1611003": {
+            "DamageValue": 9520,
+            "DamageGrowth": 870,
+            "DazeValue": 6090,
+            "DazeGrowth": 280
+        },
+        "1611004": {
+            "DamageValue": 28950,
+            "DamageGrowth": 2640,
+            "DazeValue": 17880,
+            "DazeGrowth": 820
+        },
+        "1611005": {
+            "DamageValue": 10770,
+            "DamageGrowth": 980,
+            "DazeValue": 5500,
+            "DazeGrowth": 250
+        },
+        "1611006": {
+            "DamageValue": 28740,
+            "DamageGrowth": 2620,
+            "DazeValue": 14670,
+            "DazeGrowth": 670
+        },
+        "1611007": {
+            "DamageValue": 45210,
+            "DamageGrowth": 4110,
+            "DazeValue": 18700,
+            "DazeGrowth": 850
+        },
+        "1611008": {
+            "DamageValue": 32800,
+            "DamageGrowth": 2990,
+            "DazeValue": 13570,
+            "DazeGrowth": 620
+        },
+        "1611009": {
+            "DamageValue": 9010,
+            "DamageGrowth": 820,
+            "DazeValue": 3670,
+            "DazeGrowth": 170
+        },
+        "1611010": {
+            "DamageValue": 62480,
+            "DamageGrowth": 5680,
+            "DazeValue": 25850,
+            "DazeGrowth": 1180
+        },
+        "1611011": {
+            "DamageValue": 7660,
+            "DamageGrowth": 700,
+            "DazeValue": 3120,
+            "DazeGrowth": 150
+        },
+        "1611012": {
+            "DamageValue": 8770,
+            "DamageGrowth": 800,
+            "DazeValue": 3580,
+            "DazeGrowth": 170
+        },
+        "1611013": {
+            "DamageValue": 81270,
+            "DamageGrowth": 7390,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1611014": {
+            "DamageValue": 31280,
+            "DamageGrowth": 2850,
+            "DazeValue": 25490,
+            "DazeGrowth": 1160
+        },
+        "1611016": {
+            "DamageValue": 5290,
+            "DamageGrowth": 490,
+            "DazeValue": 4310,
+            "DazeGrowth": 200
+        },
+        "1611018": {
+            "DamageValue": 27250,
+            "DamageGrowth": 2480,
+            "DazeValue": 19620,
+            "DazeGrowth": 900
+        },
+        "1611019": {
+            "DamageValue": 33000,
+            "DamageGrowth": 3000,
+            "DazeValue": 19070,
+            "DazeGrowth": 870
+        },
+        "1611020": {
+            "DamageValue": 105800,
+            "DamageGrowth": 9620,
+            "DazeValue": 27690,
+            "DazeGrowth": 1260
+        },
+        "1611021": {
+            "DamageValue": 225200,
+            "DamageGrowth": 20480,
+            "DazeValue": 35380,
+            "DazeGrowth": 1610
+        },
+        "1611022": {
+            "DamageValue": 5290,
+            "DamageGrowth": 490,
+            "DazeValue": 4310,
+            "DazeGrowth": 200
+        },
+        "1611023": {
+            "DamageValue": 11580,
+            "DamageGrowth": 1060,
+            "DazeValue": 4040,
+            "DazeGrowth": 190
+        },
+        "1611024": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1611025": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1611026": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1611027": {
+            "DamageValue": 44620,
+            "DamageGrowth": 4060,
+            "DazeValue": 31580,
+            "DazeGrowth": 1440
+        },
+        "1611028": {
+            "DamageValue": 115300,
+            "DamageGrowth": 10490,
+            "DazeValue": 71490,
+            "DazeGrowth": 3250
+        },
+        "1611029": {
+            "DamageValue": 17730,
+            "DamageGrowth": 1620,
+            "DazeValue": 7340,
+            "DazeGrowth": 340
+        },
+        "1611030": {
+            "DamageValue": 85630,
+            "DamageGrowth": 7790,
+            "DazeValue": 52640,
+            "DazeGrowth": 2400
+        }
+    }
+}

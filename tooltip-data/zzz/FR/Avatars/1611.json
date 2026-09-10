@@ -1,0 +1,616 @@
+{
+    "Name": "Clarette",
+    "UpgradeLevel": 0,
+    "ElementTypes": [
+        "Elec"
+    ],
+    "Specialty": {
+        "Id": 7,
+        "Name": "Forge"
+    },
+    "Talents": {
+        "1": {
+            "Title": "Chroniques ensanglantées",
+            "Description": "Lorsque les attaques de Clarette touchent des ennemis et déclenchent Lacération, le taux d'accumulation de Taillade augmente de 20 %. Le multiplicateur de DGT de l'effet Mutilation infligé par Clarette monte à 130 % de sa valeur d'origine.",
+            "Lore": "Alors que la jeune fille feuillette le tome poussiéreux des chroniques de sa famille, les pages rugueuses lui râpent les paumes.\nUne goutte de sang solitaire tombe sur la page du titre et vient rejoindre les innombrables taches de sang séché sur les pages suivantes."
+        },
+        "2": {
+            "Title": "Couronne de flammes héréditaire",
+            "Description": "La durée maximale de l'état Glyphe écarlate est prolongée de 2 s. Dans l'état Glyphe écarlate ou lorsque Clarette lance un enchaînement, un ultime, un soutien de contre ou un soutien de suivi, les attaques ignorent 18 % de la <color=#2EB6FF>RÉS électrique</color> de la cible.",
+            "Lore": "La prodige élue par sa lignée pénètre dans la grande salle, une lumière radieuse inonde son visage.\nSans mot dire, elle accepte la couronne et le sceptre, puis s'en retourne au terrain de forge suivant."
+        },
+        "3": {
+            "Title": "Serment gravé dans le glaçage",
+            "Description": "Niv. d'<color=#FFFFFF>attaque normale</color>, d'<color=#FFFFFF>esquive</color>, de <color=#FFFFFF>soutien</color>, d'<color=#FFFFFF>attaque spéciale</color> et d'<color=#FFFFFF>enchaînement</color> +2",
+            "Lore": "De jour comme de nuit, les fourneaux de la forge brûlent sans relâche et le fardeau de sa lignée pèse sur les épaules de la jeune femme.\nElle n'avait jamais réussi à alléger ce poids qui surcharge son cœur, jusqu'au jour où sa brillante assistante lui apporta un dessert au goût inouï, amenant ainsi une touche de douceur dans l'amertume de son quotidien."
+        },
+        "4": {
+            "Title": "Errant sous la lune écarlate",
+            "Description": "Lors du 3e coup d'Attaque normale : Pacte de sang - Forge stellaire, les entailles consécutives peuvent être prolongées davantage. Les DGT infligés par le 3e coup d'Attaque normale : Pacte de sang - Forge stellaire, Enchaînement : Pacte de sang - Résonance hématique du serment et Ultime : Pacte de sang - Forgée par les épreuves augmentent de 20 %.",
+            "Lore": "Lorsque le vacarme du martèlement prend fin, seule la lune de sang illumine la noirceur de la nuit.\nLa jeune femme lève ses yeux écarlates, tandis que le cruel clair de lune semble la railler alors qu'il se faufile à travers le cadre de la fenêtre."
+        },
+        "5": {
+            "Title": "Fourneaux de sang crépusculaire",
+            "Description": "Niv. d'<color=#FFFFFF>attaque normale</color>, d'<color=#FFFFFF>esquive</color>, de <color=#FFFFFF>soutien</color>, d'<color=#FFFFFF>attaque spéciale</color> et d'<color=#FFFFFF>enchaînement</color> +2",
+            "Lore": "De génération en génération, les artisans ont nourri ce fourneau avec leur sang. Cependant, elle a juré de trouver un moyen d'apprendre aux flammes à brûler d'elles-mêmes.\nAlors que le tintement des marteaux résonne à nouveau dans l'atelier, les flammes des fourneaux restent éternelles, mais ne sont plus alimentées par la vie elle-même."
+        },
+        "6": {
+            "Title": "Rêve d'une nuit embrasée",
+            "Description": "Lorsque les attaques lourdes d'Enchaînement : Pacte de sang - Résonance hématique du serment et Ultime : Pacte de sang - Forgée par les épreuves touchent un ennemi, Clarette déclenche immédiatement 1 effet Mutilation à cible unique sans consommer de cumul de Taillade.",
+            "Lore": "La jeune femme sombre enfin dans un sommeil profond.\nDans son rêve, elle voit une pleine lune au-dessus d'une vaste étendue de terre sans fin.\nLa lune écarlate a disparu depuis longtemps et le ciel argenté de la nuit ressemble presque à l'aube."
+        }
+    },
+    "CoreSkill": {
+        "UniqueSkill": {
+            "Title": "Passif principal : Banquet de sang pâle",
+            "DescriptionByLevel": {
+                "1": "Tous les DGT infligés par les compétences de Clarette sont considérés comme des DGT acérés, et les multiplicateurs de DGT des compétences sont basés sur sa DÉF. Certains DGT acérés infligent de l'accumulation de Taillade. Lorsque l'accumulation de Taillade atteint son maximum, la cible subit l'effet Taillade, cumulable jusqu'à 3 fois. Lorsque Attaque spéciale : Pacte de sang - Trancher l'or et l'acier ou Attaque spéciale : Pacte de sang - Assaut du sang enfoui touche un ennemi souffrant de l'effet Taillade, 1 cumul de Taillade est consommé pour déclencher Mutilation et infliger des DGT de zone.\nLorsqu'un coup critique est déclenché, les DGT acérés ne reçoivent pas de bonus de DGT CRIT, et reçoivent à la place un bonus de DGT de Lacération. Si le taux CRIT est supérieur à 100 % et qu'un coup critique a déjà été déclenché, Clarette peut infliger une Lacération supplémentaire en fonction de l'excédent. Si un effet de Lacération est déclenché ainsi, le bonus de DGT de Lacération est appliqué une fois de plus. Pour chaque 1 % de DGT CRIT initiaux de Clarette, son taux CRIT initial augmente de 0,35 %.\nLorsque Clarette entre sur le champ de bataille, elle gagne 60 pts d'Affûtage. En mode Expédition, cet effet peut être déclenché une fois toutes les 180 s.\nLorsque Clarette est dans l'état <Term:1000036></Term>, son niveau de RÉS à l'interruption augmente. Lorsque Clarette utilise un enchaînement, la durée de Glyphe écarlate est prolongée de 2 s.\nLorsque Clarette est dans l'état Glyphe écarlate, ou lors de l'utilisation d'un enchaînement, d'un ultime, d'un soutien de contre ou d'un soutien de suivi, le taux CRIT augmente de <color=#2BAD00>15 %</color> et le taux d'accumulation de Taillade augmente de <color=#2BAD00>20 %</color>. Déclencher une esquive parfaite lors d'Attaque normale : Pacte de sang - Forge stellaire ou d'Attaque normale : Pacte de sang - Hache de bourreau augmente les DGT infligés de 15 % pour le reste de la compétence.",
+                "2": "Tous les DGT infligés par les compétences de Clarette sont considérés comme des DGT acérés, et les multiplicateurs de DGT des compétences sont basés sur sa DÉF. Certains DGT acérés infligent de l'accumulation de Taillade. Lorsque l'accumulation de Taillade atteint son maximum, la cible subit l'effet Taillade, cumulable jusqu'à 3 fois. Lorsque Attaque spéciale : Pacte de sang - Trancher l'or et l'acier ou Attaque spéciale : Pacte de sang - Assaut du sang enfoui touche un ennemi souffrant de l'effet Taillade, 1 cumul de Taillade est consommé pour déclencher Mutilation et infliger des DGT de zone.\nLorsqu'un coup critique est déclenché, les DGT acérés ne reçoivent pas de bonus de DGT CRIT, et reçoivent à la place un bonus de DGT de Lacération. Si le taux CRIT est supérieur à 100 % et qu'un coup critique a déjà été déclenché, Clarette peut infliger une Lacération supplémentaire en fonction de l'excédent. Si un effet de Lacération est déclenché ainsi, le bonus de DGT de Lacération est appliqué une fois de plus. Pour chaque 1 % de DGT CRIT initiaux de Clarette, son taux CRIT initial augmente de 0,35 %.\nLorsque Clarette entre sur le champ de bataille, elle gagne 60 pts d'Affûtage. En mode Expédition, cet effet peut être déclenché une fois toutes les 180 s.\nLorsque Clarette est dans l'état <Term:1000036></Term>, son niveau de RÉS à l'interruption augmente. Lorsque Clarette utilise un enchaînement, la durée de Glyphe écarlate est prolongée de 2 s.\nLorsque Clarette est dans l'état Glyphe écarlate, ou lors de l'utilisation d'un enchaînement, d'un ultime, d'un soutien de contre ou d'un soutien de suivi, le taux CRIT augmente de <color=#2BAD00>17,5 %</color> et le taux d'accumulation de Taillade augmente de <color=#2BAD00>25 %</color>. Déclencher une esquive parfaite lors d'Attaque normale : Pacte de sang - Forge stellaire ou d'Attaque normale : Pacte de sang - Hache de bourreau augmente les DGT infligés de 15 % pour le reste de la compétence.",
+                "3": "Tous les DGT infligés par les compétences de Clarette sont considérés comme des DGT acérés, et les multiplicateurs de DGT des compétences sont basés sur sa DÉF. Certains DGT acérés infligent de l'accumulation de Taillade. Lorsque l'accumulation de Taillade atteint son maximum, la cible subit l'effet Taillade, cumulable jusqu'à 3 fois. Lorsque Attaque spéciale : Pacte de sang - Trancher l'or et l'acier ou Attaque spéciale : Pacte de sang - Assaut du sang enfoui touche un ennemi souffrant de l'effet Taillade, 1 cumul de Taillade est consommé pour déclencher Mutilation et infliger des DGT de zone.\nLorsqu'un coup critique est déclenché, les DGT acérés ne reçoivent pas de bonus de DGT CRIT, et reçoivent à la place un bonus de DGT de Lacération. Si le taux CRIT est supérieur à 100 % et qu'un coup critique a déjà été déclenché, Clarette peut infliger une Lacération supplémentaire en fonction de l'excédent. Si un effet de Lacération est déclenché ainsi, le bonus de DGT de Lacération est appliqué une fois de plus. Pour chaque 1 % de DGT CRIT initiaux de Clarette, son taux CRIT initial augmente de 0,35 %.\nLorsque Clarette entre sur le champ de bataille, elle gagne 60 pts d'Affûtage. En mode Expédition, cet effet peut être déclenché une fois toutes les 180 s.\nLorsque Clarette est dans l'état <Term:1000036></Term>, son niveau de RÉS à l'interruption augmente. Lorsque Clarette utilise un enchaînement, la durée de Glyphe écarlate est prolongée de 2 s.\nLorsque Clarette est dans l'état Glyphe écarlate, ou lors de l'utilisation d'un enchaînement, d'un ultime, d'un soutien de contre ou d'un soutien de suivi, le taux CRIT augmente de <color=#2BAD00>20 %</color> et le taux d'accumulation de Taillade augmente de <color=#2BAD00>30 %</color>. Déclencher une esquive parfaite lors d'Attaque normale : Pacte de sang - Forge stellaire ou d'Attaque normale : Pacte de sang - Hache de bourreau augmente les DGT infligés de 15 % pour le reste de la compétence.",
+                "4": "Tous les DGT infligés par les compétences de Clarette sont considérés comme des DGT acérés, et les multiplicateurs de DGT des compétences sont basés sur sa DÉF. Certains DGT acérés infligent de l'accumulation de Taillade. Lorsque l'accumulation de Taillade atteint son maximum, la cible subit l'effet Taillade, cumulable jusqu'à 3 fois. Lorsque Attaque spéciale : Pacte de sang - Trancher l'or et l'acier ou Attaque spéciale : Pacte de sang - Assaut du sang enfoui touche un ennemi souffrant de l'effet Taillade, 1 cumul de Taillade est consommé pour déclencher Mutilation et infliger des DGT de zone.\nLorsqu'un coup critique est déclenché, les DGT acérés ne reçoivent pas de bonus de DGT CRIT, et reçoivent à la place un bonus de DGT de Lacération. Si le taux CRIT est supérieur à 100 % et qu'un coup critique a déjà été déclenché, Clarette peut infliger une Lacération supplémentaire en fonction de l'excédent. Si un effet de Lacération est déclenché ainsi, le bonus de DGT de Lacération est appliqué une fois de plus. Pour chaque 1 % de DGT CRIT initiaux de Clarette, son taux CRIT initial augmente de 0,35 %.\nLorsque Clarette entre sur le champ de bataille, elle gagne 60 pts d'Affûtage. En mode Expédition, cet effet peut être déclenché une fois toutes les 180 s.\nLorsque Clarette est dans l'état <Term:1000036></Term>, son niveau de RÉS à l'interruption augmente. Lorsque Clarette utilise un enchaînement, la durée de Glyphe écarlate est prolongée de 2 s.\nLorsque Clarette est dans l'état Glyphe écarlate, ou lors de l'utilisation d'un enchaînement, d'un ultime, d'un soutien de contre ou d'un soutien de suivi, le taux CRIT augmente de <color=#2BAD00>22,5 %</color> et le taux d'accumulation de Taillade augmente de <color=#2BAD00>35 %</color>. Déclencher une esquive parfaite lors d'Attaque normale : Pacte de sang - Forge stellaire ou d'Attaque normale : Pacte de sang - Hache de bourreau augmente les DGT infligés de 15 % pour le reste de la compétence.",
+                "5": "Tous les DGT infligés par les compétences de Clarette sont considérés comme des DGT acérés, et les multiplicateurs de DGT des compétences sont basés sur sa DÉF. Certains DGT acérés infligent de l'accumulation de Taillade. Lorsque l'accumulation de Taillade atteint son maximum, la cible subit l'effet Taillade, cumulable jusqu'à 3 fois. Lorsque Attaque spéciale : Pacte de sang - Trancher l'or et l'acier ou Attaque spéciale : Pacte de sang - Assaut du sang enfoui touche un ennemi souffrant de l'effet Taillade, 1 cumul de Taillade est consommé pour déclencher Mutilation et infliger des DGT de zone.\nLorsqu'un coup critique est déclenché, les DGT acérés ne reçoivent pas de bonus de DGT CRIT, et reçoivent à la place un bonus de DGT de Lacération. Si le taux CRIT est supérieur à 100 % et qu'un coup critique a déjà été déclenché, Clarette peut infliger une Lacération supplémentaire en fonction de l'excédent. Si un effet de Lacération est déclenché ainsi, le bonus de DGT de Lacération est appliqué une fois de plus. Pour chaque 1 % de DGT CRIT initiaux de Clarette, son taux CRIT initial augmente de 0,35 %.\nLorsque Clarette entre sur le champ de bataille, elle gagne 60 pts d'Affûtage. En mode Expédition, cet effet peut être déclenché une fois toutes les 180 s.\nLorsque Clarette est dans l'état <Term:1000036></Term>, son niveau de RÉS à l'interruption augmente. Lorsque Clarette utilise un enchaînement, la durée de Glyphe écarlate est prolongée de 2 s.\nLorsque Clarette est dans l'état Glyphe écarlate, ou lors de l'utilisation d'un enchaînement, d'un ultime, d'un soutien de contre ou d'un soutien de suivi, le taux CRIT augmente de <color=#2BAD00>25 %</color> et le taux d'accumulation de Taillade augmente de <color=#2BAD00>40 %</color>. Déclencher une esquive parfaite lors d'Attaque normale : Pacte de sang - Forge stellaire ou d'Attaque normale : Pacte de sang - Hache de bourreau augmente les DGT infligés de 15 % pour le reste de la compétence.",
+                "6": "Tous les DGT infligés par les compétences de Clarette sont considérés comme des DGT acérés, et les multiplicateurs de DGT des compétences sont basés sur sa DÉF. Certains DGT acérés infligent de l'accumulation de Taillade. Lorsque l'accumulation de Taillade atteint son maximum, la cible subit l'effet Taillade, cumulable jusqu'à 3 fois. Lorsque Attaque spéciale : Pacte de sang - Trancher l'or et l'acier ou Attaque spéciale : Pacte de sang - Assaut du sang enfoui touche un ennemi souffrant de l'effet Taillade, 1 cumul de Taillade est consommé pour déclencher Mutilation et infliger des DGT de zone.\nLorsqu'un coup critique est déclenché, les DGT acérés ne reçoivent pas de bonus de DGT CRIT, et reçoivent à la place un bonus de DGT de Lacération. Si le taux CRIT est supérieur à 100 % et qu'un coup critique a déjà été déclenché, Clarette peut infliger une Lacération supplémentaire en fonction de l'excédent. Si un effet de Lacération est déclenché ainsi, le bonus de DGT de Lacération est appliqué une fois de plus. Pour chaque 1 % de DGT CRIT initiaux de Clarette, son taux CRIT initial augmente de 0,35 %.\nLorsque Clarette entre sur le champ de bataille, elle gagne 60 pts d'Affûtage. En mode Expédition, cet effet peut être déclenché une fois toutes les 180 s.\nLorsque Clarette est dans l'état <Term:1000036></Term>, son niveau de RÉS à l'interruption augmente. Lorsque Clarette utilise un enchaînement, la durée de Glyphe écarlate est prolongée de 2 s.\nLorsque Clarette est dans l'état Glyphe écarlate, ou lors de l'utilisation d'un enchaînement, d'un ultime, d'un soutien de contre ou d'un soutien de suivi, le taux CRIT augmente de <color=#2BAD00>27,5 %</color> et le taux d'accumulation de Taillade augmente de <color=#2BAD00>45 %</color>. Déclencher une esquive parfaite lors d'Attaque normale : Pacte de sang - Forge stellaire ou d'Attaque normale : Pacte de sang - Hache de bourreau augmente les DGT infligés de 15 % pour le reste de la compétence.",
+                "7": "Tous les DGT infligés par les compétences de Clarette sont considérés comme des DGT acérés, et les multiplicateurs de DGT des compétences sont basés sur sa DÉF. Certains DGT acérés infligent de l'accumulation de Taillade. Lorsque l'accumulation de Taillade atteint son maximum, la cible subit l'effet Taillade, cumulable jusqu'à 3 fois. Lorsque Attaque spéciale : Pacte de sang - Trancher l'or et l'acier ou Attaque spéciale : Pacte de sang - Assaut du sang enfoui touche un ennemi souffrant de l'effet Taillade, 1 cumul de Taillade est consommé pour déclencher Mutilation et infliger des DGT de zone.\nLorsqu'un coup critique est déclenché, les DGT acérés ne reçoivent pas de bonus de DGT CRIT, et reçoivent à la place un bonus de DGT de Lacération. Si le taux CRIT est supérieur à 100 % et qu'un coup critique a déjà été déclenché, Clarette peut infliger une Lacération supplémentaire en fonction de l'excédent. Si un effet de Lacération est déclenché ainsi, le bonus de DGT de Lacération est appliqué une fois de plus. Pour chaque 1 % de DGT CRIT initiaux de Clarette, son taux CRIT initial augmente de 0,35 %.\nLorsque Clarette entre sur le champ de bataille, elle gagne 60 pts d'Affûtage. En mode Expédition, cet effet peut être déclenché une fois toutes les 180 s.\nLorsque Clarette est dans l'état <Term:1000036></Term>, son niveau de RÉS à l'interruption augmente. Lorsque Clarette utilise un enchaînement, la durée de Glyphe écarlate est prolongée de 2 s.\nLorsque Clarette est dans l'état Glyphe écarlate, ou lors de l'utilisation d'un enchaînement, d'un ultime, d'un soutien de contre ou d'un soutien de suivi, le taux CRIT augmente de <color=#2BAD00>30 %</color> et le taux d'accumulation de Taillade augmente de <color=#2BAD00>50 %</color>. Déclencher une esquive parfaite lors d'Attaque normale : Pacte de sang - Forge stellaire ou d'Attaque normale : Pacte de sang - Hache de bourreau augmente les DGT infligés de 15 % pour le reste de la compétence."
+            }
+        },
+        "MathSkill": {
+            "Title": "Capacité supplémentaire : Héritage du sang",
+            "Description": "Lorsqu'il y a un autre personnage <color=#FFFFFF>Confusion</color>, <color=#FFFFFF>Forge</color> ou du même attribut que Clarette dans votre escouade :\nLorsqu'un agent de l'escouade déclenche Contamination, Clarette gagne 300 décibels. Cet effet peut être déclenché une fois toutes les 18 s.\nLorsque Clarette ou un autre membre de l'escouade inflige Mutilation, les agents Forge entrent dans l'état Lame rémanente. Dans l'état Lame rémanente, les DGT de Lacération augmentent de <color=#FFFFFF>25 %</color> pendant 40 s. Déclencher Lame rémanente à nouveau réinitialise sa durée."
+        },
+        "AwakenAbility": {},
+        "BaseProps": [
+            {
+                "20101": 0
+            },
+            {
+                "20101": 480
+            },
+            {
+                "20101": 960
+            },
+            {
+                "20101": 1440
+            },
+            {
+                "20101": 1920
+            },
+            {
+                "20101": 2400
+            },
+            {
+                "20101": 2880
+            }
+        ]
+    },
+    "Terms": {
+        "1000036": {
+            "Title": "Glyphe écarlate",
+            "Description": "L'arme de Clarette se transforme en Hache sanglante et ses attaques deviennent des compétences du Pacte de sang, augmentant ainsi son taux CRIT et son taux d'accumulation de Taillade.",
+            "Source": "Attaque spéciale EX : Pacte de sang - Techniques secrètes de forge"
+        }
+    },
+    "SkillDescriptions": {
+        "0": {
+            "161100001": {
+                "Title": "Attaque normale : Forgesang quadriforme",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pour activer :\nAssène jusqu'à 4 frappes frontales qui infligent des <color=#2EB6FF>DGT électriques</color>."
+            },
+            "161100002": {
+                "Title": "Attaque normale : Pacte de sang - Forge stellaire",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> dans l'état <Term:1000036></Term> pour activer :\nAssène jusqu'à 3 entailles frontales avec la Hache sanglante, infligeant des <color=#2EB6FF>DGT électriques</color>.\nLors du 2e coup, Clarette bondit en arrière et lance la Hache sanglante. Une esquive parfaite peut être déclenchée lors du bond en arrière.\nLors du 3e coup, Clarette assène une série d'entailles avant de bondir dans les airs et d'asséner une frappe descendante. Pendant la série d'entailles, le niveau de RÉS à l'interruption augmente et les DGT subis sont réduits de 40 %. Martelez <IconMap:Icon_Normal> ou maintenez le bouton enfoncé pour prolonger la durée de la série d'entailles. Arrêtez d'appuyer sur <IconMap:Icon_Normal> ou relâchez le bouton pour que Clarette bondisse immédiatement dans les airs et assène une frappe descendante. Une esquive parfaite peut être déclenchée pendant le saut. Après avoir déclenché une esquive parfaite de cette manière, appuyez sur <IconMap:Icon_Normal> ou maintenez le bouton enfoncé pour enchaîner avec le 3e coup d'Attaque normale : Pacte de sang - Forge stellaire.\nGlyphe écarlate ne prend pas fin pendant cette compétence."
+            },
+            "161100003": {
+                "Title": "Attaque normale : Pacte de sang - Hache de bourreau",
+                "Description": "Dans l'état <Term:1000036></Term>, après le lancement d'Attaque spéciale : Pacte de sang - Trancher l'or et l'acier ou Attaque spéciale : Pacte de sang - Assaut du sang enfoui pour infliger Mutilation, appuyez sur <IconMap:Icon_Normal> ou maintenez le bouton enfoncé pour activer :\nTournoie avec la Hache sanglante et bondit dans les airs, puis s'abat au sol et entaille la cible, infligeant des <color=#2EB6FF>DGT électriques</color>. Une esquive parfaite peut être déclenchée pendant le saut.\nAprès l'utilisation de la compétence, appuyez sur <IconMap:Icon_Normal> ou maintenez le bouton enfoncé pour enchaîner avec le 3e coup d'Attaque normale : Pacte de sang - Forge stellaire.\nGlyphe écarlate ne prend pas fin pendant cette compétence."
+            },
+            "161110001": {
+                "Title": "Attaque normale : Forgesang quadriforme"
+            },
+            "161110002": {
+                "Description": "Multiplicateur de DGT du 1er coup",
+                "Param": "{Skill:1611001, Prop:1001}"
+            },
+            "161110003": {
+                "Description": "Multiplicateur de DGT du 2e coup",
+                "Param": "{Skill:1611002, Prop:1001}"
+            },
+            "161110004": {
+                "Description": "Multiplicateur de DGT du 3e coup",
+                "Param": "{Skill:1611003, Prop:1001}"
+            },
+            "161110005": {
+                "Description": "Multiplicateur de DGT du 4e coup",
+                "Param": "{Skill:1611004, Prop:1001}"
+            },
+            "161110006": {
+                "Description": "Multiplicateur de confusion du 1er coup",
+                "Param": "{Skill:1611001, Prop:1002}"
+            },
+            "161110007": {
+                "Description": "Multiplicateur de confusion du 2e coup",
+                "Param": "{Skill:1611002, Prop:1002}"
+            },
+            "161110008": {
+                "Description": "Multiplicateur de confusion du 3e coup",
+                "Param": "{Skill:1611003, Prop:1002}"
+            },
+            "161110009": {
+                "Description": "Multiplicateur de confusion du 4e coup",
+                "Param": "{Skill:1611004, Prop:1002}"
+            },
+            "161110010": {
+                "Title": "Attaque normale : Pacte de sang - Forge stellaire"
+            },
+            "161110011": {
+                "Description": "Multiplicateur de DGT du 1er coup",
+                "Param": "{Skill:1611005, Prop:1001}"
+            },
+            "161110012": {
+                "Description": "Multiplicateur de DGT du 2e coup",
+                "Param": "{Skill:1611006, Prop:1001}"
+            },
+            "161110013": {
+                "Description": "Multiplicateur de DGT des entailles consécutives du 3e coup",
+                "Param": "{Skill:1611007, Prop:1001}"
+            },
+            "161110014": {
+                "Description": "Multiplicateur de DGT de la frappe descendante du 3e coup",
+                "Param": "{Skill:1611029, Prop:1001}"
+            },
+            "161110015": {
+                "Description": "Multiplicateur de confusion du 1er coup",
+                "Param": "{Skill:1611005, Prop:1002}"
+            },
+            "161110016": {
+                "Description": "Multiplicateur de confusion du 2e coup",
+                "Param": "{Skill:1611006, Prop:1002}"
+            },
+            "161110017": {
+                "Description": "Multiplicateur de confusion des entailles consécutives du 3e coup",
+                "Param": "{Skill:1611007, Prop:1002}"
+            },
+            "161110018": {
+                "Description": "Multiplicateur de confusion de la frappe descendante du 3e coup",
+                "Param": "{Skill:1611029, Prop:1002}"
+            },
+            "161110019": {
+                "Title": "Attaque normale : Pacte de sang - Hache de bourreau"
+            },
+            "161110020": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1611008, Prop:1001}"
+            },
+            "161110021": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1611008, Prop:1002}"
+            }
+        },
+        "1": {
+            "161100004": {
+                "Title": "Attaque spéciale : Premier appel du porcelume",
+                "Description": "Appuyez sur <IconMap:Icon_Special> pour activer :\nAssène 2 coups de marteau frontaux qui infligent des <color=#2EB6FF>DGT électriques</color>.\nLe niveau de RÉS à l'interruption augmente lors de l'utilisation de cette compétence."
+            },
+            "161100005": {
+                "Title": "Attaque spéciale EX : Pacte de sang - Techniques secrètes de forge",
+                "Description": "Avec suffisamment d'Affûtage, et lorsque Clarette n'est pas dans l'état Glyphe écarlate, appuyez sur <IconMap:Icon_SpecialReady_Ep> pour activer :\nLe marteau de forge se transforme en Hache sanglante pour entailler la cible ennemie, infligeant des <color=#2EB6FF>DGT électriques</color>.\nAprès cette compétence, Clarette entre dans l'état Glyphe écarlate pendant 16 s. En réserve, la durée de l'état se met en pause. Lorsque les attaques de Clarette touchent un ennemi, que celui-ci est éliminé en 0,5 s et que la durée de Glyphe écarlate n'est pas descendue à 0, la durée de Glyphe écarlate est prolongée de 3 s. Cet effet peut être déclenché une fois toutes les 3 s.\nLors de l'utilisation de cette compétence, maintenez <IconMap:Icon_SpecialReady_Ep> enfoncé pour ignorer l'entaille et lancer rapidement la compétence alternative Attaque spéciale : Pacte de sang - Trancher l'or et l'acier et Attaque spéciale : Pacte de sang - Assaut du sang enfoui.\nAprès cette compétence, appuyez sur <IconMap:Icon_Normal> ou maintenez le bouton enfoncé pour enchaîner avec le 3e coup d'Attaque normale : Pacte de sang - Forge stellaire.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "161100006": {
+                "Title": "Attaque spéciale : Pacte de sang - Trancher l'or et l'acier",
+                "Description": "Dans l'état <Term:1000036></Term>, appuyez sur <IconMap:Icon_Special> ou <IconMap:Icon_SpecialReady_Ep> pour activer :\nAssène une puissante entaille frontale ascendante, puis enchaîne avec une entaille horizontale, infligeant des <color=#2EB6FF>DGT électriques</color>.\nSi l'entaille horizontale touche un ennemi souffrant de Taillade, inflige Mutilation à la cible, ainsi que des <color=#2EB6FF>DGT électriques</color> de zone supplémentaires.\nGlyphe écarlate ne prend pas fin pendant l'utilisation de cette compétence.\nLa RÉS à l'interruption est augmentée lors de l'utilisation de cette compétence. Après avoir infligé Mutilation, le personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "161100007": {
+                "Title": "Attaque spéciale : Pacte de sang - Assaut du sang enfoui",
+                "Description": "Dans l'état <Term:1000036></Term>, lors de l'entaille ascendante d'Attaque spéciale : Pacte de sang - Trancher l'or et l'acier, maintenez <IconMap:Icon_Special> ou <IconMap:Icon_SpecialReady_Ep> enfoncé pour activer :\nAssène 3 entailles horizontales consécutives vers l'avant, infligeant d'importants <color=#2EB6FF>DGT électriques</color>.\nChaque entaille horizontale touchant un ennemi souffrant de Taillade inflige Mutilation à la cible, ainsi que des <color=#2EB6FF>DGT électriques</color> de zone supplémentaires. Cette compétence peut infliger jusqu'à 3 effets Mutilation consécutifs, le 3e ayant un niveau d'Interruption plus élevé.\n<Term:1000036></Term> ne prend pas fin pendant cette compétence.\nLe niveau de RÉS à l'interruption augmente lors de l'utilisation de cette compétence. Après avoir infligé Mutilation, le personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "161110022": {
+                "Title": "Attaque spéciale : Premier appel du porcelume"
+            },
+            "161110023": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1611009, Prop:1001}"
+            },
+            "161110024": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1611009, Prop:1002}"
+            },
+            "161110025": {
+                "Title": "Attaque spéciale EX : Pacte de sang - Techniques secrètes de forge"
+            },
+            "161110026": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1611010, Prop:1001}"
+            },
+            "161110027": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1611010, Prop:1002}"
+            },
+            "161110028": {
+                "Description": "Coût en Affûtage",
+                "Param": "60 pts"
+            },
+            "161110029": {
+                "Title": "Attaque spéciale : Pacte de sang - Trancher l'or et l'acier"
+            },
+            "161110030": {
+                "Description": "Multiplicateur de DGT de l'attaque ascendante",
+                "Param": "{Skill:1611011, Prop:1001}"
+            },
+            "161110031": {
+                "Description": "Multiplicateur de DGT de l'entaille horizontale",
+                "Param": "{Skill:1611012, Prop:1001}"
+            },
+            "161110032": {
+                "Description": "Multiplicateur de confusion de l'attaque ascendante",
+                "Param": "{Skill:1611011, Prop:1002}"
+            },
+            "161110033": {
+                "Description": "Multiplicateur de confusion d'entaille horizontale",
+                "Param": "{Skill:1611012, Prop:1002}"
+            },
+            "161110034": {
+                "Description": "Multiplicateur de DGT de Mutilation",
+                "Param": "{Skill:1611013, Prop:1001}"
+            },
+            "161110035": {
+                "Title": "Attaque spéciale : Pacte de sang - Assaut du sang enfoui"
+            },
+            "161110036": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1611014, Prop:1001}"
+            },
+            "161110037": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1611014, Prop:1002}"
+            }
+        },
+        "2": {
+            "161100008": {
+                "Title": "Esquive : Vision nocturne",
+                "Description": "Appuyez sur <IconMap:Icon_Evade> pour activer :\nUne esquive rapide.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "161100009": {
+                "Title": "Attaque de bond : Trempe",
+                "Description": "Hors de l'état <Term:1000036></Term>, appuyez sur <IconMap:Icon_Normal> pendant une esquive pour activer :\nAssène une frappe de marteau frontale, infligeant des <color=#2EB6FF>DGT électriques</color>."
+            },
+            "161100010": {
+                "Title": "Contre d'esquive : Retour de lame",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pendant une <color=#FFFFFF>esquive parfaite</color> pour activer :\nAssène une puissante contre-attaque vers l'avant à l'aide du manche du marteau, infligeant des <color=#2EB6FF>DGT électriques</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "161100011": {
+                "Title": "Contre d'esquive : Pacte de sang - Retour de lame",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> pendant une <color=#FFFFFF>esquive parfaite</color> pour activer :\nAssène une puissante contre-attaque frontale avec la Hache sanglante, infligeant des <color=#2EB6FF>DGT électriques</color>.\n<Term:1000036></Term> ne prend pas fin pendant cette compétence.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "161110038": {
+                "Title": "Attaque de bond : Trempe"
+            },
+            "161110039": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1611016, Prop:1001}"
+            },
+            "161110040": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1611016, Prop:1002}"
+            },
+            "161110041": {
+                "Title": "Contre d'esquive : Retour de lame"
+            },
+            "161110042": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1611018, Prop:1001}"
+            },
+            "161110043": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1611018, Prop:1002}"
+            },
+            "161110044": {
+                "Title": "Contre d'esquive : Pacte de sang - Retour de lame"
+            },
+            "161110045": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1611019, Prop:1001}"
+            },
+            "161110046": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1611019, Prop:1002}"
+            }
+        },
+        "3": {
+            "161100012": {
+                "Title": "Enchaînement : Pacte de sang - Résonance hématique du serment",
+                "Description": "Lors du déclenchement d'un <color=#FFFFFF>enchaînement</color>, sélectionnez le personnage pour activer :\nAssène une série d'entailles aux ennemis en face, infligeant d'importants <color=#2EB6FF>DGT électriques</color>.\nLa durée de <Term:1000036></Term> ne diminue pas et l'état ne prend pas fin pendant cette compétence.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "161100013": {
+                "Title": "Ultime : Pacte de sang - Forgée par les épreuves",
+                "Description": "Lorsque le niveau de décibels est au <color=#FFFFFF>Maximum</color>, appuyez sur <IconMap:Icon_UltimateReady> pour activer :\nAssène une série d'entailles aux ennemis en face, infligeant d'importants <color=#2EB6FF>DGT électriques</color>.\nLa durée de <Term:1000036></Term> ne diminue pas et l'état ne prend pas fin pendant cette compétence.\nÀ l'activation de la compétence, obtient 10 pts d'Affûtage.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "161110047": {
+                "Title": "Enchaînement : Pacte de sang - Résonance hématique du serment"
+            },
+            "161110048": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1611020, Prop:1001}"
+            },
+            "161110049": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1611020, Prop:1002}"
+            },
+            "161110050": {
+                "Title": "Ultime : Pacte de sang - Forgée par les épreuves"
+            },
+            "161110051": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1611021, Prop:1001}"
+            },
+            "161110052": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1611021, Prop:1002}"
+            }
+        },
+        "6": {
+            "161100015": {
+                "Title": "Soutien rapide : Retour de la lune funeste",
+                "Description": "Lorsque le personnage contrôlé est projeté, appuyez sur <IconMap:Icon_Switch> pour activer :\nInflige des <color=#2EB6FF>DGT électriques</color>.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "161100016": {
+                "Title": "Soutien rapide : Pacte de sang - Retour de la lune funeste",
+                "Description": "Lorsque le personnage contrôlé est projeté, appuyez sur <IconMap:Icon_Switch> pour activer :\nInflige des <color=#2EB6FF>DGT électriques</color>.\n<Term:1000036></Term> ne prend pas fin pendant cette compétence.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "161100017": {
+                "Title": "Soutien défensif : Foyer inébranlable de la fournaise",
+                "Description": "Lorsque le personnage sur le terrain est sur le point d'être attaqué, appuyez sur <IconMap:Icon_Switch> pour activer :\nPare l'attaque de l'ennemi et provoque une confusion importante.\nLa durée de <Term:1000036></Term> ne diminue pas pendant cette compétence.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "161100018": {
+                "Title": "Soutien de suivi : Pacte de sang - Lame de pureté forgée",
+                "Description": "Appuyez sur <IconMap:Icon_Normal> après un <color=#FFFFFF>soutien défensif</color> pour activer :\nInflige d'importants <color=#2EB6FF>DGT électriques</color>.\n<Term:1000036></Term> ne prend pas fin pendant cette compétence.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "161100019": {
+                "Title": "Soutien de contre : Volonté de fer",
+                "Description": "Lorsque Clarette ou le personnage sur le terrain est sur le point d'être touché par la compétence de contrôle de certains ennemis, appuyez sur <IconMap:Icon_Switch> pour activer :\nS'engage dans une épreuve de force avec l'ennemi. En remportant l'épreuve de force, vous neutralisez la compétence de contrôle de l'ennemi et infligez des <color=#2EB6FF>DGT électriques</color>.\nLa durée de <Term:1000036></Term> ne diminue pas pendant cette compétence.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "161100020": {
+                "Title": "Soutien de suivi : Pacte de sang - Taille d'orfèvre",
+                "Description": "Après un <color=#FFFFFF>soutien de contre</color>, appuyez sur <IconMap:Icon_Normal> pour activer :\nInflige d'importants <color=#2EB6FF>DGT électriques</color>. Lorsque l'attaque lourde touche un ennemi, applique 1 cumul de Taillade à la cible.\nLa durée de <Term:1000036></Term> ne diminue pas pendant cette compétence.\nLe personnage est invulnérable pendant l'utilisation de cette compétence."
+            },
+            "161110053": {
+                "Title": "Soutien rapide : Retour de la lune funeste"
+            },
+            "161110054": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1611022, Prop:1001}"
+            },
+            "161110055": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1611022, Prop:1002}"
+            },
+            "161110056": {
+                "Title": "Soutien rapide : Pacte de sang - Retour de la lune funeste"
+            },
+            "161110057": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1611023, Prop:1001}"
+            },
+            "161110058": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1611023, Prop:1002}"
+            },
+            "161110059": {
+                "Title": "Soutien défensif : Foyer inébranlable de la fournaise"
+            },
+            "161110060": {
+                "Description": "Multiplicateur de confusion de défense légère",
+                "Param": "{Skill:1611024, Prop:1002}"
+            },
+            "161110061": {
+                "Description": "Multiplicateur de confusion de défense lourde",
+                "Param": "{Skill:1611025, Prop:1002}"
+            },
+            "161110062": {
+                "Description": "Multiplicateur de confusion de défense en chaîne",
+                "Param": "{Skill:1611026, Prop:1002}"
+            },
+            "161110063": {
+                "Title": "Soutien de suivi : Pacte de sang - Lame de pureté forgée"
+            },
+            "161110064": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1611027, Prop:1001}"
+            },
+            "161110065": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1611027, Prop:1002}"
+            },
+            "161110066": {
+                "Title": "Soutien de contre : Volonté de fer"
+            },
+            "161110067": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1611028, Prop:1001}"
+            },
+            "161110068": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1611028, Prop:1002}"
+            },
+            "161110069": {
+                "Title": "Soutien de suivi : Pacte de sang - Taille d'orfèvre"
+            },
+            "161110070": {
+                "Description": "Multiplicateur de DGT",
+                "Param": "{Skill:1611030, Prop:1001}"
+            },
+            "161110071": {
+                "Description": "Multiplicateur de confusion",
+                "Param": "{Skill:1611030, Prop:1002}"
+            }
+        }
+    },
+    "Skills": {
+        "1611001": {
+            "DamageValue": 5440,
+            "DamageGrowth": 500,
+            "DazeValue": 3470,
+            "DazeGrowth": 160
+        },
+        "1611002": {
+            "DamageValue": 6720,
+            "DamageGrowth": 620,
+            "DazeValue": 4290,
+            "DazeGrowth": 200
+        },
+        "1611003": {
+            "DamageValue": 9520,
+            "DamageGrowth": 870,
+            "DazeValue": 6090,
+            "DazeGrowth": 280
+        },
+        "1611004": {
+            "DamageValue": 28950,
+            "DamageGrowth": 2640,
+            "DazeValue": 17880,
+            "DazeGrowth": 820
+        },
+        "1611005": {
+            "DamageValue": 10770,
+            "DamageGrowth": 980,
+            "DazeValue": 5500,
+            "DazeGrowth": 250
+        },
+        "1611006": {
+            "DamageValue": 28740,
+            "DamageGrowth": 2620,
+            "DazeValue": 14670,
+            "DazeGrowth": 670
+        },
+        "1611007": {
+            "DamageValue": 45210,
+            "DamageGrowth": 4110,
+            "DazeValue": 18700,
+            "DazeGrowth": 850
+        },
+        "1611008": {
+            "DamageValue": 32800,
+            "DamageGrowth": 2990,
+            "DazeValue": 13570,
+            "DazeGrowth": 620
+        },
+        "1611009": {
+            "DamageValue": 9010,
+            "DamageGrowth": 820,
+            "DazeValue": 3670,
+            "DazeGrowth": 170
+        },
+        "1611010": {
+            "DamageValue": 62480,
+            "DamageGrowth": 5680,
+            "DazeValue": 25850,
+            "DazeGrowth": 1180
+        },
+        "1611011": {
+            "DamageValue": 7660,
+            "DamageGrowth": 700,
+            "DazeValue": 3120,
+            "DazeGrowth": 150
+        },
+        "1611012": {
+            "DamageValue": 8770,
+            "DamageGrowth": 800,
+            "DazeValue": 3580,
+            "DazeGrowth": 170
+        },
+        "1611013": {
+            "DamageValue": 81270,
+            "DamageGrowth": 7390,
+            "DazeValue": 0,
+            "DazeGrowth": 0
+        },
+        "1611014": {
+            "DamageValue": 31280,
+            "DamageGrowth": 2850,
+            "DazeValue": 25490,
+            "DazeGrowth": 1160
+        },
+        "1611016": {
+            "DamageValue": 5290,
+            "DamageGrowth": 490,
+            "DazeValue": 4310,
+            "DazeGrowth": 200
+        },
+        "1611018": {
+            "DamageValue": 27250,
+            "DamageGrowth": 2480,
+            "DazeValue": 19620,
+            "DazeGrowth": 900
+        },
+        "1611019": {
+            "DamageValue": 33000,
+            "DamageGrowth": 3000,
+            "DazeValue": 19070,
+            "DazeGrowth": 870
+        },
+        "1611020": {
+            "DamageValue": 105800,
+            "DamageGrowth": 9620,
+            "DazeValue": 27690,
+            "DazeGrowth": 1260
+        },
+        "1611021": {
+            "DamageValue": 225200,
+            "DamageGrowth": 20480,
+            "DazeValue": 35380,
+            "DazeGrowth": 1610
+        },
+        "1611022": {
+            "DamageValue": 5290,
+            "DamageGrowth": 490,
+            "DazeValue": 4310,
+            "DazeGrowth": 200
+        },
+        "1611023": {
+            "DamageValue": 11580,
+            "DamageGrowth": 1060,
+            "DazeValue": 4040,
+            "DazeGrowth": 190
+        },
+        "1611024": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 27130,
+            "DazeGrowth": 1240
+        },
+        "1611025": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 34280,
+            "DazeGrowth": 1560
+        },
+        "1611026": {
+            "DamageValue": 0,
+            "DamageGrowth": 0,
+            "DazeValue": 16680,
+            "DazeGrowth": 760
+        },
+        "1611027": {
+            "DamageValue": 44620,
+            "DamageGrowth": 4060,
+            "DazeValue": 31580,
+            "DazeGrowth": 1440
+        },
+        "1611028": {
+            "DamageValue": 115300,
+            "DamageGrowth": 10490,
+            "DazeValue": 71490,
+            "DazeGrowth": 3250
+        },
+        "1611029": {
+            "DamageValue": 17730,
+            "DamageGrowth": 1620,
+            "DazeValue": 7340,
+            "DazeGrowth": 340
+        },
+        "1611030": {
+            "DamageValue": 85630,
+            "DamageGrowth": 7790,
+            "DazeValue": 52640,
+            "DazeGrowth": 2400
+        }
+    }
+}
