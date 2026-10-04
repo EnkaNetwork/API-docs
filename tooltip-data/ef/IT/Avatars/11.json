@@ -9,17 +9,17 @@
     "MainAttrId": 42,
     "SubAttrId": 40,
     "AttributeNodes": {
-        "chr_0012_avywen_5": {
-            "42": 15
-        },
-        "chr_0012_avywen_7": {
-            "42": 20
-        },
         "chr_0012_avywen_1": {
-            "42": 10
+            "42": 10.0
         },
         "chr_0012_avywen_3": {
-            "42": 15
+            "42": 15.0
+        },
+        "chr_0012_avywen_5": {
+            "42": 15.0
+        },
+        "chr_0012_avywen_7": {
+            "42": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "ATTIVAZIONE COMBO: quando l'operatore controllato esegue un <#ba.lastcombo>colpo finale</> su un bersaglio già sottoposto ad <#ba.pulseinflict>Afflizione da elettricità</> o <#ba.conduct>Elettrificazione</>. \nSalta a mezz'aria e lancia tre <@ba.key>Tuonolance</> al bersaglio, per poi sferrare un colpo che infligge <@ba.pulse>danni da elettricità</> ai nemici nell'area d'effetto.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 13,
+            "Cooldown": 13.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Tempo di recupero",
@@ -133,9 +133,9 @@
             "Desc": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>17</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Moltiplicatore SEQ ATTB 1",
@@ -272,26 +272,26 @@
             "Desc": "Balza in aria per scatenare un vortice con la sua lancia, infliggendo <@ba.pulse>danni da elettricità</> ai nemici vicini e attirando verso di sé tutte le <@ba.key>Tuonolance</> e <@ba.key>Tuonolance EX</> presenti sul campo di battaglia. \nLe <@ba.key>Tuonolance</> che ritornano trafiggono tutti i nemici lungo il loro percorso e infliggono <@ba.pulse>danni da elettricità</>, mentre le <@ba.key>Tuonolance EX</> che ritornano infliggono più <@ba.pulse>danni da elettricità</> e applicano anche <#ba.pulseinflict>Afflizione da elettricità</>.",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "Costo PA",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -411,26 +411,26 @@
             "Desc": "Scaglia una <@ba.key>Tuonolancia EX</> verso il bersaglio, infliggendo ingenti <@ba.pulse>danni da elettricità</> ai nemici nelle vicinanze.",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 10,
+            "Cooldown": 10.0,
             "CostType": "UltimateSp",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "Costo energia suprema",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -509,14 +509,6 @@
         }
     },
     "NodeSkillMap": {
-        "chr_0012_avywen_passive_skill_0_2": {
-            "Icon": "icon_talent_avywen_01",
-            "Level": 2,
-            "Index": 0,
-            "Name": "Consegna celere",
-            "Desc": "Dopo che una <@ba.key>Tuonolancia</> o una <@ba.key>Tuonolancia EX</> lanciata o recuperata colpisce il nemico, Avywenna ottiene <@ba.vup>4</> di energia suprema.",
-            "Type": 4
-        },
         "chr_0012_avywen_passive_skill_0_1": {
             "Icon": "icon_talent_avywen_01",
             "Level": 1,
@@ -525,11 +517,43 @@
             "Desc": "Dopo che una <@ba.key>Tuonolancia</> o una <@ba.key>Tuonolancia EX</> lanciata o recuperata colpisce il nemico, Avywenna ottiene <@ba.vup>3</> di energia suprema.",
             "Type": 4
         },
+        "chr_0012_avywen_passive_skill_0_2": {
+            "Icon": "icon_talent_avywen_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Consegna celere",
+            "Desc": "Dopo che una <@ba.key>Tuonolancia</> o una <@ba.key>Tuonolancia EX</> lanciata o recuperata colpisce il nemico, Avywenna ottiene <@ba.vup>4</> di energia suprema.",
+            "Type": 4
+        },
+        "chr_0012_avywen_passive_skill_1_1": {
+            "Icon": "icon_talent_avywen_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Approccio discreto",
+            "Desc": "Abilità suprema <@ba.key>Tuonolancia: scossa finale</> migliorata: applica anche un <@ba.vup>6%</> di <#ba.pulsevul>Suscettibilità all'elettricità</> per <@ba.vup>10</> s ai nemici che colpisce.",
+            "Type": 4
+        },
+        "chr_0012_avywen_passive_skill_1_2": {
+            "Icon": "icon_talent_avywen_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Approccio discreto",
+            "Desc": "Abilità suprema <@ba.key>Tuonolancia: scossa finale</> migliorata: applica anche un <@ba.vup>10%</> di <#ba.pulsevul>Suscettibilità all'elettricità</> per <@ba.vup>10</> s ai nemici che colpisce.",
+            "Type": 4
+        },
         "fac_chr_0012_avywen_0_1": {
             "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
             "Name": "Consulenza abitativa α",
             "Desc": "Assegna al Nexus di controllo per aumentare dell'8% la rigenerazione dell'umore di tutti gli operatori.",
             "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0012_avywen_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "Consulenza abitativa β",
+            "Desc": "Assegna al Nexus di controllo per aumentare del 12% la rigenerazione dell'umore di tutti gli operatori.",
+            "Level": 2,
             "Index": 2,
             "Type": 5
         },
@@ -541,14 +565,6 @@
             "Index": 3,
             "Type": 5
         },
-        "fac_chr_0012_avywen_0_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
-            "Name": "Consulenza abitativa β",
-            "Desc": "Assegna al Nexus di controllo per aumentare del 12% la rigenerazione dell'umore di tutti gli operatori.",
-            "Level": 2,
-            "Index": 2,
-            "Type": 5
-        },
         "fac_chr_0012_avywen_1_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
             "Name": "Segreto della messaggera β",
@@ -556,22 +572,6 @@
             "Level": 2,
             "Index": 3,
             "Type": 5
-        },
-        "chr_0012_avywen_passive_skill_1_2": {
-            "Icon": "icon_talent_avywen_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "Approccio discreto",
-            "Desc": "Abilità suprema <@ba.key>Tuonolancia: scossa finale</> migliorata: applica anche un <@ba.vup>10%</> di <#ba.pulsevul>Suscettibilità all'elettricità</> per <@ba.vup>10</> s ai nemici che colpisce.",
-            "Type": 4
-        },
-        "chr_0012_avywen_passive_skill_1_1": {
-            "Icon": "icon_talent_avywen_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "Approccio discreto",
-            "Desc": "Abilità suprema <@ba.key>Tuonolancia: scossa finale</> migliorata: applica anche un <@ba.vup>6%</> di <#ba.pulsevul>Suscettibilità all'elettricità</> per <@ba.vup>10</> s ai nemici che colpisce.",
-            "Type": 4
         }
     },
     "Potentials": {

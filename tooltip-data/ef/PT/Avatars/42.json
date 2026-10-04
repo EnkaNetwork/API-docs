@@ -10,19 +10,158 @@
     "SubAttrId": 42,
     "AttributeNodes": {
         "chr_0026_lastrite_1": {
-            "39": 10
+            "39": 10.0
         },
         "chr_0026_lastrite_3": {
-            "39": 15
+            "39": 15.0
         },
         "chr_0026_lastrite_5": {
-            "39": 15
+            "39": 15.0
         },
         "chr_0026_lastrite_7": {
-            "39": 20
+            "39": 20.0
         }
     },
     "SkillInfoMap": {
+        "chr_0026_lastrite_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_lastrite_01",
+            "Element": "Cryst",
+            "Name": "Devoradora Invernal",
+            "Desc": "ACIONADOR DO COMBO: Quando um inimigo tem 3 ou mais acúmulos de <#ba.crystinflict>Inflição Crio</>. \nEnvolve o inimigo alvo em estalactites de gelo e os fragmenta para <#ba.consume>consumir</> todos os acúmulos de <#ba.crystinflict>Inflição Crio</> do inimigo em questão. O número de acúmulos de <#ba.crystinflict>Inflição Crio</> <#ba.consume>consumidos</> determina a quantidade de <@ba.cryst>DNO Crio</> causado ao inimigo e a Energia Suprema ganha por Last Rite.",
+            "ConditionData": {},
+            "Type": 2,
+            "Cooldown": 9.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Tempo de Recarga",
+                    "ConditionId": "",
+                    "Values": [
+                        "9s",
+                        "9s",
+                        "9s",
+                        "9s",
+                        "9s",
+                        "9s",
+                        "9s",
+                        "9s",
+                        "9s",
+                        "9s",
+                        "9s",
+                        "9s"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador DNO Fragmento de Gelo",
+                    "ConditionId": "",
+                    "Values": [
+                        "71%",
+                        "78%",
+                        "85%",
+                        "92%",
+                        "99%",
+                        "107%",
+                        "114%",
+                        "121%",
+                        "128%",
+                        "137%",
+                        "147%",
+                        "160%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador DNO Base de Corte",
+                    "ConditionId": "",
+                    "Values": [
+                        "71%",
+                        "78%",
+                        "85%",
+                        "92%",
+                        "99%",
+                        "107%",
+                        "114%",
+                        "121%",
+                        "128%",
+                        "137%",
+                        "147%",
+                        "160%"
+                    ]
+                },
+                {
+                    "Text": "Desorientação de Corte",
+                    "ConditionId": "",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador DNO Bônus por Acúmulo de Inflição",
+                    "ConditionId": "",
+                    "Values": [
+                        "107%",
+                        "117%",
+                        "128%",
+                        "139%",
+                        "149%",
+                        "160%",
+                        "171%",
+                        "181%",
+                        "192%",
+                        "205%",
+                        "221%",
+                        "240%"
+                    ]
+                },
+                {
+                    "Text": "Ganho de Energia Suprema Base",
+                    "ConditionId": "",
+                    "Values": [
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40"
+                    ]
+                },
+                {
+                    "Text": "Ganho de Energia Suprema Adicional por Acúmulo de Inflição",
+                    "ConditionId": "",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                }
+            ]
+        },
         "chr_0026_lastrite_NormalAttack": {
             "Icon": "skillicon/icon_attack_claym",
             "Element": "Cryst",
@@ -30,9 +169,9 @@
             "Desc": "ATAQUE BÁSICO: \nAtaque em até 4 sequências que causa <@ba.cryst>DNO Crio</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>25</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.cryst>DNO Crio</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um finalizador que causa uma enorme quantidade de <@ba.cryst>DNO Crio</> e recupera PH.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Multiplicador SEQ 1 ATQB",
@@ -151,26 +290,26 @@
             "Desc": "Executa uma <@ba.key>Perfusão Hipotérmica</> na arma do operador controlado e <#ba.return>devolve</> algum PH. \nO próximo <#ba.lastcombo>Golpe Final</> desferido pelo operador controlado atual dentro de uma certa duração cria Miragens de Last Rite, as quais desencadeiam um ataque adicional contra o alvo. Esse ataque causa <@ba.cryst>DNO Crio</> e aplica <#ba.crystinflict>Inflição Crio</>. \nQuando Last Rite é a operadora controlada, conjurar essa habilidade de batalha não redefine sua respectiva sequência de ataque básico.",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "Custos de PH",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -254,26 +393,26 @@
             "Desc": "Last Rite se envolve em uma armadura de gelo, cria uma foice de gelo para desferir 3 golpes cortantes, tornando-se imune a todos os tipos de dano enquanto esse estado permanece ativo. \nCada golpe cortante causa <@ba.cryst>DNO Crio</> significativo. \n<@ba.info>Last Rite só pode obter Energia Suprema através de sua própria habilidade de batalha e seu próprio combo de habilidades.</>",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 20,
+            "Cooldown": 20.0,
             "CostType": "UltimateSp",
-            "CostValue": 240,
+            "CostValue": 240.0,
             "Params": [
                 {
                     "Text": "Custo de Energia Suprema",
                     "ConditionId": "",
                     "Values": [
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0
                     ]
                 },
                 {
@@ -403,163 +542,40 @@
                     ]
                 }
             ]
-        },
-        "chr_0026_lastrite_ComboSkill": {
-            "Icon": "skillicon/icon_combo_skill_lastrite_01",
-            "Element": "Cryst",
-            "Name": "Devoradora Invernal",
-            "Desc": "ACIONADOR DO COMBO: Quando um inimigo tem 3 ou mais acúmulos de <#ba.crystinflict>Inflição Crio</>. \nEnvolve o inimigo alvo em estalactites de gelo e os fragmenta para <#ba.consume>consumir</> todos os acúmulos de <#ba.crystinflict>Inflição Crio</> do inimigo em questão. O número de acúmulos de <#ba.crystinflict>Inflição Crio</> <#ba.consume>consumidos</> determina a quantidade de <@ba.cryst>DNO Crio</> causado ao inimigo e a Energia Suprema ganha por Last Rite.",
-            "ConditionData": {},
-            "Type": 2,
-            "Cooldown": 9,
-            "CostType": "UltimateSp",
-            "CostValue": 0,
-            "Params": [
-                {
-                    "Text": "Tempo de Recarga",
-                    "ConditionId": "",
-                    "Values": [
-                        "9s",
-                        "9s",
-                        "9s",
-                        "9s",
-                        "9s",
-                        "9s",
-                        "9s",
-                        "9s",
-                        "9s",
-                        "9s",
-                        "9s",
-                        "9s"
-                    ]
-                },
-                {
-                    "Text": "Multiplicador DNO Fragmento de Gelo",
-                    "ConditionId": "",
-                    "Values": [
-                        "71%",
-                        "78%",
-                        "85%",
-                        "92%",
-                        "99%",
-                        "107%",
-                        "114%",
-                        "121%",
-                        "128%",
-                        "137%",
-                        "147%",
-                        "160%"
-                    ]
-                },
-                {
-                    "Text": "Multiplicador DNO Base de Corte",
-                    "ConditionId": "",
-                    "Values": [
-                        "71%",
-                        "78%",
-                        "85%",
-                        "92%",
-                        "99%",
-                        "107%",
-                        "114%",
-                        "121%",
-                        "128%",
-                        "137%",
-                        "147%",
-                        "160%"
-                    ]
-                },
-                {
-                    "Text": "Desorientação de Corte",
-                    "ConditionId": "",
-                    "Values": [
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15"
-                    ]
-                },
-                {
-                    "Text": "Multiplicador DNO Bônus por Acúmulo de Inflição",
-                    "ConditionId": "",
-                    "Values": [
-                        "107%",
-                        "117%",
-                        "128%",
-                        "139%",
-                        "149%",
-                        "160%",
-                        "171%",
-                        "181%",
-                        "192%",
-                        "205%",
-                        "221%",
-                        "240%"
-                    ]
-                },
-                {
-                    "Text": "Ganho de Energia Suprema Base",
-                    "ConditionId": "",
-                    "Values": [
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40"
-                    ]
-                },
-                {
-                    "Text": "Ganho de Energia Suprema Adicional por Acúmulo de Inflição",
-                    "ConditionId": "",
-                    "Values": [
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15"
-                    ]
-                }
-            ]
         }
     },
     "NodeSkillMap": {
-        "fac_chr_0026_lastrite_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
-            "Name": "Fama das Cortes Reais α",
-            "Desc": "Atribua à Sala da Recepção para conceder aos operadores uma pequena Maior chance de Pista 7: Seš'qa (ativada na atribuição, efeitos do mesmo tipo não podem se acumular)",
+        "chr_0026_lastrite_passive_skill_0_1": {
+            "Icon": "icon_talent_lastrite_01",
             "Level": 1,
-            "Index": 3,
-            "Type": 5
+            "Index": 0,
+            "Name": "Hipotermia",
+            "Desc": "Após Last Rite <#ba.consume>consumir</> qualquer <#ba.spellinflict>Inflição de Artes</>, ela aplica <#ba.crystvul>Suscetibilidade Crio</> ao alvo com o efeito de [Número de acúmulos de <#ba.spellinflict>Inflição de Artes</> <#ba.consume>consumidos</> × <@ba.vup>2%</>] por <@ba.vup>15</> s. Esse efeito não pode se acumular.",
+            "Type": 4
         },
-        "fac_chr_0026_lastrite_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
-            "Name": "Fama das Cortes Reais β",
-            "Desc": "Atribua à Sala da Recepção para conceder aos operadores Maior chance de Pista 7: Seš'qa (ativada na atribuição, efeitos do mesmo tipo não podem se acumular)",
+        "chr_0026_lastrite_passive_skill_0_2": {
+            "Icon": "icon_talent_lastrite_01",
             "Level": 2,
-            "Index": 3,
-            "Type": 5
+            "Index": 0,
+            "Name": "Hipotermia",
+            "Desc": "Após Last Rite <#ba.consume>consumir</> qualquer <#ba.spellinflict>Inflição de Artes</>, ela aplica <#ba.crystvul>Suscetibilidade Crio</> ao alvo com o efeito de [Número de acúmulos de <#ba.spellinflict>Inflição de Artes</> <#ba.consume>consumidos</> × <@ba.vup>4%</>] por <@ba.vup>15</> s. Esse efeito não pode se acumular.",
+            "Type": 4
+        },
+        "chr_0026_lastrite_passive_skill_1_1": {
+            "Icon": "icon_talent_lastrite_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Fragilização Criogênica",
+            "Desc": "Habilidade suprema <@ba.key>Ritual de Despedida</> melhorada: quando a habilidade suprema causa DNO a um inimigo com <#ba.crystvul>Suscetibilidade Crio</>, o efeito dessa <#ba.crystvul>Suscetibilidade Crio</> é <@ba.vup>1.2</> vezes o original.",
+            "Type": 4
+        },
+        "chr_0026_lastrite_passive_skill_1_2": {
+            "Icon": "icon_talent_lastrite_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Fragilização Criogênica",
+            "Desc": "Habilidade suprema <@ba.key>Ritual de Despedida</> melhorada: quando a habilidade suprema causa DNO a um inimigo com <#ba.crystvul>Suscetibilidade Crio</>, o efeito dessa <#ba.crystvul>Suscetibilidade Crio</> é <@ba.vup>1.5</> vezes o original.",
+            "Type": 4
         },
         "fac_chr_0026_lastrite_0_1": {
             "Icon": "spaceshipskillicon/facskill_spaceship_plant_flower",
@@ -577,37 +593,21 @@
             "Index": 2,
             "Type": 5
         },
-        "chr_0026_lastrite_passive_skill_0_2": {
-            "Icon": "icon_talent_lastrite_01",
-            "Level": 2,
-            "Index": 0,
-            "Name": "Hipotermia",
-            "Desc": "Após Last Rite <#ba.consume>consumir</> qualquer <#ba.spellinflict>Inflição de Artes</>, ela aplica <#ba.crystvul>Suscetibilidade Crio</> ao alvo com o efeito de [Número de acúmulos de <#ba.spellinflict>Inflição de Artes</> <#ba.consume>consumidos</> × <@ba.vup>4%</>] por <@ba.vup>15</> s. Esse efeito não pode se acumular.",
-            "Type": 4
-        },
-        "chr_0026_lastrite_passive_skill_1_2": {
-            "Icon": "icon_talent_lastrite_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "Fragilização Criogênica",
-            "Desc": "Habilidade suprema <@ba.key>Ritual de Despedida</> melhorada: quando a habilidade suprema causa DNO a um inimigo com <#ba.crystvul>Suscetibilidade Crio</>, o efeito dessa <#ba.crystvul>Suscetibilidade Crio</> é <@ba.vup>1.5</> vezes o original.",
-            "Type": 4
-        },
-        "chr_0026_lastrite_passive_skill_0_1": {
-            "Icon": "icon_talent_lastrite_01",
+        "fac_chr_0026_lastrite_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
+            "Name": "Fama das Cortes Reais α",
+            "Desc": "Atribua à Sala da Recepção para conceder aos operadores uma pequena Maior chance de Pista 7: Seš'qa (ativada na atribuição, efeitos do mesmo tipo não podem se acumular)",
             "Level": 1,
-            "Index": 0,
-            "Name": "Hipotermia",
-            "Desc": "Após Last Rite <#ba.consume>consumir</> qualquer <#ba.spellinflict>Inflição de Artes</>, ela aplica <#ba.crystvul>Suscetibilidade Crio</> ao alvo com o efeito de [Número de acúmulos de <#ba.spellinflict>Inflição de Artes</> <#ba.consume>consumidos</> × <@ba.vup>2%</>] por <@ba.vup>15</> s. Esse efeito não pode se acumular.",
-            "Type": 4
+            "Index": 3,
+            "Type": 5
         },
-        "chr_0026_lastrite_passive_skill_1_1": {
-            "Icon": "icon_talent_lastrite_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "Fragilização Criogênica",
-            "Desc": "Habilidade suprema <@ba.key>Ritual de Despedida</> melhorada: quando a habilidade suprema causa DNO a um inimigo com <#ba.crystvul>Suscetibilidade Crio</>, o efeito dessa <#ba.crystvul>Suscetibilidade Crio</> é <@ba.vup>1.2</> vezes o original.",
-            "Type": 4
+        "fac_chr_0026_lastrite_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
+            "Name": "Fama das Cortes Reais β",
+            "Desc": "Atribua à Sala da Recepção para conceder aos operadores Maior chance de Pista 7: Seš'qa (ativada na atribuição, efeitos do mesmo tipo não podem se acumular)",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
         }
     },
     "Potentials": {

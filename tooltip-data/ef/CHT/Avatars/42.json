@@ -10,19 +10,158 @@
     "SubAttrId": 42,
     "AttributeNodes": {
         "chr_0026_lastrite_1": {
-            "39": 10
+            "39": 10.0
         },
         "chr_0026_lastrite_3": {
-            "39": 15
+            "39": 15.0
         },
         "chr_0026_lastrite_5": {
-            "39": 15
+            "39": 15.0
         },
         "chr_0026_lastrite_7": {
-            "39": 20
+            "39": 20.0
         }
     },
     "SkillInfoMap": {
+        "chr_0026_lastrite_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_lastrite_01",
+            "Element": "Cryst",
+            "Name": "噬冬",
+            "Desc": "當有敵人進入3層及以上<#ba.crystinflict>寒冷附著</>狀態時可以發動。\n在目標敵人身上凝結冰錐，隨後將其斬碎，<#ba.consume>消耗</>敵人身上的所有<#ba.crystinflict>寒冷附著</>，對其造成基於其<#ba.crystinflict>寒冷附著</>層數的<@ba.cryst>寒冷傷害</>，並且根據<#ba.consume>消耗</>的層數獲得終結技能量。",
+            "ConditionData": {},
+            "Type": 2,
+            "Cooldown": 9.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "冷卻時間",
+                    "ConditionId": "",
+                    "Values": [
+                        "9秒",
+                        "9秒",
+                        "9秒",
+                        "9秒",
+                        "9秒",
+                        "9秒",
+                        "9秒",
+                        "9秒",
+                        "9秒",
+                        "9秒",
+                        "9秒",
+                        "9秒"
+                    ]
+                },
+                {
+                    "Text": "冰刺傷害倍率",
+                    "ConditionId": "",
+                    "Values": [
+                        "71%",
+                        "78%",
+                        "85%",
+                        "92%",
+                        "99%",
+                        "107%",
+                        "114%",
+                        "121%",
+                        "128%",
+                        "137%",
+                        "147%",
+                        "160%"
+                    ]
+                },
+                {
+                    "Text": "斬擊基礎傷害倍率",
+                    "ConditionId": "",
+                    "Values": [
+                        "71%",
+                        "78%",
+                        "85%",
+                        "92%",
+                        "99%",
+                        "107%",
+                        "114%",
+                        "121%",
+                        "128%",
+                        "137%",
+                        "147%",
+                        "160%"
+                    ]
+                },
+                {
+                    "Text": "斬擊失衡值",
+                    "ConditionId": "",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                },
+                {
+                    "Text": "消耗每層附著額外傷害倍率",
+                    "ConditionId": "",
+                    "Values": [
+                        "107%",
+                        "117%",
+                        "128%",
+                        "139%",
+                        "149%",
+                        "160%",
+                        "171%",
+                        "181%",
+                        "192%",
+                        "205%",
+                        "221%",
+                        "240%"
+                    ]
+                },
+                {
+                    "Text": "基礎獲得終結技能量",
+                    "ConditionId": "",
+                    "Values": [
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40"
+                    ]
+                },
+                {
+                    "Text": "消耗每層附著額外獲得終結技能量",
+                    "ConditionId": "",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                }
+            ]
+        },
         "chr_0026_lastrite_NormalAttack": {
             "Icon": "skillicon/icon_attack_claym",
             "Element": "Cryst",
@@ -30,9 +169,9 @@
             "Desc": "普通攻擊：\n對敵人進行最多4段攻擊，造成<@ba.cryst>寒冷傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>25</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.cryst>寒冷傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.cryst>寒冷傷害</>並回復一定技力。",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "普攻第一段倍率",
@@ -151,26 +290,26 @@
             "Desc": "對主控幹員的武器進行<@ba.key>低溫灌注</>，並<#ba.return>返還</>一定技力。\n一段時間內，當下主控幹員接下來的1次<#ba.lastcombo>重擊</>會生成別禮的幻影，對目標進行追擊，造成<@ba.cryst>寒冷傷害</>，施加<#ba.crystinflict>寒冷附著</>。\n主控幹員為別禮時，施放該戰技不會中斷普通攻擊。",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "技力消耗",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -254,26 +393,26 @@
             "Desc": "披著霜鎧，凝結冰鐮，對前方進行三次斬擊，該狀態下免疫所有傷害。\n每次斬擊造成大量<@ba.cryst>寒冷傷害</>。\n<@ba.info>別禮只能從自身的戰技、連攜技中獲得終結技能量。</>",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 20,
+            "Cooldown": 20.0,
             "CostType": "UltimateSp",
-            "CostValue": 240,
+            "CostValue": 240.0,
             "Params": [
                 {
                     "Text": "所需終結技能量",
                     "ConditionId": "",
                     "Values": [
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0
                     ]
                 },
                 {
@@ -403,163 +542,40 @@
                     ]
                 }
             ]
-        },
-        "chr_0026_lastrite_ComboSkill": {
-            "Icon": "skillicon/icon_combo_skill_lastrite_01",
-            "Element": "Cryst",
-            "Name": "噬冬",
-            "Desc": "當有敵人進入3層及以上<#ba.crystinflict>寒冷附著</>狀態時可以發動。\n在目標敵人身上凝結冰錐，隨後將其斬碎，<#ba.consume>消耗</>敵人身上的所有<#ba.crystinflict>寒冷附著</>，對其造成基於其<#ba.crystinflict>寒冷附著</>層數的<@ba.cryst>寒冷傷害</>，並且根據<#ba.consume>消耗</>的層數獲得終結技能量。",
-            "ConditionData": {},
-            "Type": 2,
-            "Cooldown": 9,
-            "CostType": "UltimateSp",
-            "CostValue": 0,
-            "Params": [
-                {
-                    "Text": "冷卻時間",
-                    "ConditionId": "",
-                    "Values": [
-                        "9秒",
-                        "9秒",
-                        "9秒",
-                        "9秒",
-                        "9秒",
-                        "9秒",
-                        "9秒",
-                        "9秒",
-                        "9秒",
-                        "9秒",
-                        "9秒",
-                        "9秒"
-                    ]
-                },
-                {
-                    "Text": "冰刺傷害倍率",
-                    "ConditionId": "",
-                    "Values": [
-                        "71%",
-                        "78%",
-                        "85%",
-                        "92%",
-                        "99%",
-                        "107%",
-                        "114%",
-                        "121%",
-                        "128%",
-                        "137%",
-                        "147%",
-                        "160%"
-                    ]
-                },
-                {
-                    "Text": "斬擊基礎傷害倍率",
-                    "ConditionId": "",
-                    "Values": [
-                        "71%",
-                        "78%",
-                        "85%",
-                        "92%",
-                        "99%",
-                        "107%",
-                        "114%",
-                        "121%",
-                        "128%",
-                        "137%",
-                        "147%",
-                        "160%"
-                    ]
-                },
-                {
-                    "Text": "斬擊失衡值",
-                    "ConditionId": "",
-                    "Values": [
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15"
-                    ]
-                },
-                {
-                    "Text": "消耗每層附著額外傷害倍率",
-                    "ConditionId": "",
-                    "Values": [
-                        "107%",
-                        "117%",
-                        "128%",
-                        "139%",
-                        "149%",
-                        "160%",
-                        "171%",
-                        "181%",
-                        "192%",
-                        "205%",
-                        "221%",
-                        "240%"
-                    ]
-                },
-                {
-                    "Text": "基礎獲得終結技能量",
-                    "ConditionId": "",
-                    "Values": [
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40"
-                    ]
-                },
-                {
-                    "Text": "消耗每層附著額外獲得終結技能量",
-                    "ConditionId": "",
-                    "Values": [
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15"
-                    ]
-                }
-            ]
         }
     },
     "NodeSkillMap": {
-        "fac_chr_0026_lastrite_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
-            "Name": "王庭盛名·α",
-            "Desc": "進駐會客室時，幹員收集到線索7——塞什卡的機率小幅提升（進駐即生效，同類不可疊加）",
+        "chr_0026_lastrite_passive_skill_0_1": {
+            "Icon": "icon_talent_lastrite_01",
             "Level": 1,
-            "Index": 3,
-            "Type": 5
+            "Index": 0,
+            "Name": "失溫症",
+            "Desc": "當別禮<#ba.consume>消耗</>任何<#ba.spellinflict>法術附著</>後，對該目標施加<#ba.crystvul>寒冷脆弱</>，效果為被<#ba.consume>消耗</>的<#ba.spellinflict>法術附著</>層數×<@ba.vup>2%</>，持續<@ba.vup>15</>秒，該效果無法疊加。",
+            "Type": 4
         },
-        "fac_chr_0026_lastrite_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
-            "Name": "王庭盛名·β",
-            "Desc": "進駐會客室時，幹員收集到線索7——塞什卡的機率提升（進駐即生效，同類不可疊加）",
+        "chr_0026_lastrite_passive_skill_0_2": {
+            "Icon": "icon_talent_lastrite_01",
             "Level": 2,
-            "Index": 3,
-            "Type": 5
+            "Index": 0,
+            "Name": "失溫症",
+            "Desc": "當別禮<#ba.consume>消耗</>任何<#ba.spellinflict>法術附著</>後，對該目標施加<#ba.crystvul>寒冷脆弱</>，效果為被<#ba.consume>消耗</>的<#ba.spellinflict>法術附著</>層數×<@ba.vup>4%</>，持續<@ba.vup>15</>秒，該效果無法疊加。",
+            "Type": 4
+        },
+        "chr_0026_lastrite_passive_skill_1_1": {
+            "Icon": "icon_talent_lastrite_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "失溫脆性",
+            "Desc": "終結技<@ba.key>臨終別禮</>造成傷害時，如果敵人處於<#ba.crystvul>寒冷脆弱</>狀態，將其<#ba.crystvul>寒冷脆弱</>的效果視為原本的<@ba.vup>1.2</>倍。",
+            "Type": 4
+        },
+        "chr_0026_lastrite_passive_skill_1_2": {
+            "Icon": "icon_talent_lastrite_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "失溫脆性",
+            "Desc": "終結技<@ba.key>臨終別禮</>造成傷害時，如果敵人處於<#ba.crystvul>寒冷脆弱</>狀態，將其<#ba.crystvul>寒冷脆弱</>的效果視為原本的<@ba.vup>1.5</>倍。",
+            "Type": 4
         },
         "fac_chr_0026_lastrite_0_1": {
             "Icon": "spaceshipskillicon/facskill_spaceship_plant_flower",
@@ -577,37 +593,21 @@
             "Index": 2,
             "Type": 5
         },
-        "chr_0026_lastrite_passive_skill_0_2": {
-            "Icon": "icon_talent_lastrite_01",
-            "Level": 2,
-            "Index": 0,
-            "Name": "失溫症",
-            "Desc": "當別禮<#ba.consume>消耗</>任何<#ba.spellinflict>法術附著</>後，對該目標施加<#ba.crystvul>寒冷脆弱</>，效果為被<#ba.consume>消耗</>的<#ba.spellinflict>法術附著</>層數×<@ba.vup>4%</>，持續<@ba.vup>15</>秒，該效果無法疊加。",
-            "Type": 4
-        },
-        "chr_0026_lastrite_passive_skill_1_2": {
-            "Icon": "icon_talent_lastrite_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "失溫脆性",
-            "Desc": "終結技<@ba.key>臨終別禮</>造成傷害時，如果敵人處於<#ba.crystvul>寒冷脆弱</>狀態，將其<#ba.crystvul>寒冷脆弱</>的效果視為原本的<@ba.vup>1.5</>倍。",
-            "Type": 4
-        },
-        "chr_0026_lastrite_passive_skill_0_1": {
-            "Icon": "icon_talent_lastrite_01",
+        "fac_chr_0026_lastrite_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
+            "Name": "王庭盛名·α",
+            "Desc": "進駐會客室時，幹員收集到線索7——塞什卡的機率小幅提升（進駐即生效，同類不可疊加）",
             "Level": 1,
-            "Index": 0,
-            "Name": "失溫症",
-            "Desc": "當別禮<#ba.consume>消耗</>任何<#ba.spellinflict>法術附著</>後，對該目標施加<#ba.crystvul>寒冷脆弱</>，效果為被<#ba.consume>消耗</>的<#ba.spellinflict>法術附著</>層數×<@ba.vup>2%</>，持續<@ba.vup>15</>秒，該效果無法疊加。",
-            "Type": 4
+            "Index": 3,
+            "Type": 5
         },
-        "chr_0026_lastrite_passive_skill_1_1": {
-            "Icon": "icon_talent_lastrite_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "失溫脆性",
-            "Desc": "終結技<@ba.key>臨終別禮</>造成傷害時，如果敵人處於<#ba.crystvul>寒冷脆弱</>狀態，將其<#ba.crystvul>寒冷脆弱</>的效果視為原本的<@ba.vup>1.2</>倍。",
-            "Type": 4
+        "fac_chr_0026_lastrite_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
+            "Name": "王庭盛名·β",
+            "Desc": "進駐會客室時，幹員收集到線索7——塞什卡的機率提升（進駐即生效，同類不可疊加）",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
         }
     },
     "Potentials": {

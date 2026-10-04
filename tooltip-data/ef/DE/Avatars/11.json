@@ -9,17 +9,17 @@
     "MainAttrId": 42,
     "SubAttrId": 40,
     "AttributeNodes": {
-        "chr_0012_avywen_5": {
-            "42": 15
-        },
-        "chr_0012_avywen_7": {
-            "42": 20
-        },
         "chr_0012_avywen_1": {
-            "42": 10
+            "42": 10.0
         },
         "chr_0012_avywen_3": {
-            "42": 15
+            "42": 15.0
+        },
+        "chr_0012_avywen_5": {
+            "42": 15.0
+        },
+        "chr_0012_avywen_7": {
+            "42": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "KOMBOAUSLÖSER: Wenn der gesteuerte Operator den <#ba.lastcombo>Abschlussangriff</> auf ein Ziel mit aktiver <#ba.pulseinflict>Elektrik</> oder <#ba.conduct>Elektrifizierung</> durchführt. \nSpringt in die Luft, wirft 3 <@ba.key>Donnerlanzen</> auf das Ziel und fügt dann Gegnern im Wirkungsbereich 1 Treffer <@ba.pulse>Elektrischen SDN</> zu.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 13,
+            "Cooldown": 13.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Abklingzeit",
@@ -133,9 +133,9 @@
             "Desc": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>17</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlagangriffen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "STD-ANG-SEQ-1-Multiplikator",
@@ -272,26 +272,26 @@
             "Desc": "Steigt in die Luft, um mit ihrer Lanze einen Mahlstrom zu erzeugen, der Gegnern in der Nähe einigen <@ba.pulse>Elektrischen SDN</> zufügt, während sie alle <@ba.key>Donnerlanzen</> und <@ba.key>Donnerlanzen EX</> auf dem Schlachtfeld zu sich zurückzieht. \nDie zurückkehrenden <@ba.key>Donnerlanzen</> durchbohren alle Gegner auf ihrem Weg und fügen ihnen <@ba.pulse>Elektrischen SDN</> zu. Zurückkehrende <@ba.key>Donnerlanzen EX</> fügen noch mehr <@ba.pulse>Elektrischen SDN</> zu und belegen getroffene Gegner mit <#ba.pulseinflict>Elektrik</>.",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "FP-Kosten",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -411,26 +411,26 @@
             "Desc": "Wirft eine <@ba.key>Donnerlanze EX</> auf den Zielbereich, die allen Gegnern in der Nähe massiven <@ba.pulse>Elektrischen SDN</> zufügt.",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 10,
+            "Cooldown": 10.0,
             "CostType": "UltimateSp",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "Ultimative Energiekosten",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -509,14 +509,6 @@
         }
     },
     "NodeSkillMap": {
-        "chr_0012_avywen_passive_skill_0_2": {
-            "Icon": "icon_talent_avywen_01",
-            "Level": 2,
-            "Index": 0,
-            "Name": "Expresslieferung",
-            "Desc": "Wenn eine geworfene oder zurückkehrende <@ba.key>Donnerlanze</> oder <@ba.key>Donnerlanze EX</> den Gegner getroffen hat, erhält Avywenna <@ba.vup>4</> Ultimative Energie.",
-            "Type": 4
-        },
         "chr_0012_avywen_passive_skill_0_1": {
             "Icon": "icon_talent_avywen_01",
             "Level": 1,
@@ -525,11 +517,43 @@
             "Desc": "Wenn eine geworfene oder zurückkehrende <@ba.key>Donnerlanze</> oder <@ba.key>Donnerlanze EX</> den Gegner getroffen hat, erhält Avywenna <@ba.vup>3</> Ultimative Energie.",
             "Type": 4
         },
+        "chr_0012_avywen_passive_skill_0_2": {
+            "Icon": "icon_talent_avywen_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Expresslieferung",
+            "Desc": "Wenn eine geworfene oder zurückkehrende <@ba.key>Donnerlanze</> oder <@ba.key>Donnerlanze EX</> den Gegner getroffen hat, erhält Avywenna <@ba.vup>4</> Ultimative Energie.",
+            "Type": 4
+        },
+        "chr_0012_avywen_passive_skill_1_1": {
+            "Icon": "icon_talent_avywen_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Taktvolles Vorgehen",
+            "Desc": "Ultimative Fertigkeit <@ba.key>Donnerlanze: Finaler Schock</> verbessert: Belegt getroffene Gegner außerdem für <@ba.vup>10</> Sek. mit <@ba.vup>6%</> <#ba.pulsevul>Elektrik-Empfänglichkeit</>.",
+            "Type": 4
+        },
+        "chr_0012_avywen_passive_skill_1_2": {
+            "Icon": "icon_talent_avywen_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Taktvolles Vorgehen",
+            "Desc": "Ultimative Fertigkeit <@ba.key>Donnerlanze: Finaler Schock</> verbessert: Belegt getroffene Gegner außerdem für <@ba.vup>10</> Sek. mit <@ba.vup>10%</> <#ba.pulsevul>Elektrik-Empfänglichkeit</>.",
+            "Type": 4
+        },
         "fac_chr_0012_avywen_0_1": {
             "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
             "Name": "Wohnberaterin α",
             "Desc": "Dem Kontrollnexus zuweisen, um allen Operatoren Stimmungszunahme +8 % zu gewähren.",
             "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0012_avywen_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "Wohnberaterin β",
+            "Desc": "Dem Kontrollnexus zuweisen, um allen Operatoren Stimmungszunahme +12 % zu gewähren.",
+            "Level": 2,
             "Index": 2,
             "Type": 5
         },
@@ -541,14 +565,6 @@
             "Index": 3,
             "Type": 5
         },
-        "fac_chr_0012_avywen_0_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
-            "Name": "Wohnberaterin β",
-            "Desc": "Dem Kontrollnexus zuweisen, um allen Operatoren Stimmungszunahme +12 % zu gewähren.",
-            "Level": 2,
-            "Index": 2,
-            "Type": 5
-        },
         "fac_chr_0012_avywen_1_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
             "Name": "Botengeheimnis β",
@@ -556,22 +572,6 @@
             "Level": 2,
             "Index": 3,
             "Type": 5
-        },
-        "chr_0012_avywen_passive_skill_1_2": {
-            "Icon": "icon_talent_avywen_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "Taktvolles Vorgehen",
-            "Desc": "Ultimative Fertigkeit <@ba.key>Donnerlanze: Finaler Schock</> verbessert: Belegt getroffene Gegner außerdem für <@ba.vup>10</> Sek. mit <@ba.vup>10%</> <#ba.pulsevul>Elektrik-Empfänglichkeit</>.",
-            "Type": 4
-        },
-        "chr_0012_avywen_passive_skill_1_1": {
-            "Icon": "icon_talent_avywen_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "Taktvolles Vorgehen",
-            "Desc": "Ultimative Fertigkeit <@ba.key>Donnerlanze: Finaler Schock</> verbessert: Belegt getroffene Gegner außerdem für <@ba.vup>10</> Sek. mit <@ba.vup>6%</> <#ba.pulsevul>Elektrik-Empfänglichkeit</>.",
-            "Type": 4
         }
     },
     "Potentials": {

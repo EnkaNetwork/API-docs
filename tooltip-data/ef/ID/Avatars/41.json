@@ -9,17 +9,17 @@
     "MainAttrId": 40,
     "SubAttrId": 41,
     "AttributeNodes": {
-        "chr_0028_wulfa_7": {
-            "40": 20
-        },
-        "chr_0028_wulfa_5": {
-            "40": 15
-        },
         "chr_0028_wulfa_1": {
-            "40": 10
+            "40": 10.0
         },
         "chr_0028_wulfa_3": {
-            "40": 15
+            "40": 15.0
+        },
+        "chr_0028_wulfa_5": {
+            "40": 15.0
+        },
+        "chr_0028_wulfa_7": {
+            "40": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "PEMICU KOMBO: Saat musuh terkena tumpukan <#ba.noguard>Vulnerability</> dan <#ba.spellinflict>Arts Infliction</> sekaligus.\nSkill kombo Rossi punya 2 tahap berurutan. TAHAP KOMBO 1 akan menimbulkan <@ba.pd>Physical DMG</> kepada target.\nTAHAP KOMBO 2 akan <#ba.consume>memakai</> semua tumpukan <#ba.spellinflict>Arts Infliction</> dari target, menimbulkan <@ba.pd>Physical DMG</> berdasarkan jumlah tumpukan Arts Infliction yang <#ba.consume>dipakai</>, mengakibatkan 1 hantaman <#ba.airborne>Lift</>, dan akan memberikan buff untuk Critical Rate dan Critical DMG Dealt sekaligus untuk Rossi.\nJika TAHAP KOMBO 2 digunakan dengan <@ba.key>penentuan waktu yang tepat</>, tahap ini akan mengakibatkan 1 tumpuk <#ba.noguard>Vulnerability</> lagi.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Cooldown",
@@ -143,7 +143,7 @@
                     ]
                 },
                 {
-                    "Text": "Critical Rate Boost",
+                    "Text": "Critical Rate",
                     "ConditionId": "",
                     "Values": [
                         "15%",
@@ -223,9 +223,9 @@
             "Desc": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>18</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi serangan penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Pengganda BATK SEQ 1",
@@ -355,6 +355,109 @@
                 }
             ]
         },
+        "chr_0028_wulfa_NormalSkill": {
+            "Icon": "skillicon/icon_skill_wulfa_01",
+            "Element": "Physical",
+            "Name": "Crimson Shadow",
+            "Desc": "Menerjang target sehingga akan menimbulkan <@ba.pd>Physical DMG</> dan mengakibatkan <#ba.airborne>Lift</>.\nJika target sudah terkena tumpukan <#ba.noguard>Vulnerability</>, skill ini juga akan melepaskan <@ba.key>Bayangan Serigala</> yang akan menerjang target sehingga akan menimbulkan <@ba.fire>Heat DMG</>.",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "Biaya SP",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "Pengganda SEQ 1 DMG",
+                    "ConditionId": "",
+                    "Values": [
+                        "85%",
+                        "94%",
+                        "102%",
+                        "111%",
+                        "119%",
+                        "128%",
+                        "137%",
+                        "145%",
+                        "154%",
+                        "164%",
+                        "177%",
+                        "192%"
+                    ]
+                },
+                {
+                    "Text": "SEQ 1 Stagger",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "Pengganda SEQ 2 DMG",
+                    "ConditionId": "",
+                    "Values": [
+                        "128%",
+                        "141%",
+                        "153%",
+                        "166%",
+                        "179%",
+                        "192%",
+                        "204%",
+                        "217%",
+                        "230%",
+                        "246%",
+                        "265%",
+                        "288%"
+                    ]
+                },
+                {
+                    "Text": "SEQ 2 Stagger",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "12",
+                        "12",
+                        "12",
+                        "15"
+                    ]
+                }
+            ]
+        },
         "chr_0028_wulfa_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_wulfa_01",
             "Element": "Fire",
@@ -362,26 +465,26 @@
             "Desc": "Rossi akan mengibaskan jubahnya dan melepaskan rentetan tusukan yang akan menimbulkan beberapa tahap <@ba.fire>Heat DMG</> dengan cepat kepada target. Kemudian, dia akan melancarkan serangan tebas dua tahap dengan belatinya dan menimbulkan <@ba.fire>Heat DMG</> sangat besar dan mengakibatkan <#ba.fireinflict>Heat Infliction</>.\n<@ba.info>Jika menghasilkan critical hit, skill ini akan menimbulkan Critical DMG lebih besar.</>",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 10,
+            "Cooldown": 10.0,
             "CostType": "UltimateSp",
-            "CostValue": 110,
+            "CostValue": 110.0,
             "Params": [
                 {
                     "Text": "Biaya Energi Ultimate",
                     "ConditionId": "",
                     "Values": [
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0
                     ]
                 },
                 {
@@ -493,112 +596,17 @@
                     ]
                 }
             ]
-        },
-        "chr_0028_wulfa_NormalSkill": {
-            "Icon": "skillicon/icon_skill_wulfa_01",
-            "Element": "Physical",
-            "Name": "Crimson Shadow",
-            "Desc": "Menerjang target sehingga akan menimbulkan <@ba.pd>Physical DMG</> dan mengakibatkan <#ba.airborne>Lift</>.\nJika target sudah terkena tumpukan <#ba.noguard>Vulnerability</>, skill ini juga akan melepaskan <@ba.key>Bayangan Serigala</> yang akan menerjang target sehingga akan menimbulkan <@ba.fire>Heat DMG</>.",
-            "ConditionData": {},
-            "Type": 1,
-            "Cooldown": 0,
-            "CostType": "Atb",
-            "CostValue": 100,
-            "Params": [
-                {
-                    "Text": "Biaya SP",
-                    "ConditionId": "",
-                    "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
-                    ]
-                },
-                {
-                    "Text": "Pengganda SEQ 1 DMG",
-                    "ConditionId": "",
-                    "Values": [
-                        "85%",
-                        "94%",
-                        "102%",
-                        "111%",
-                        "119%",
-                        "128%",
-                        "137%",
-                        "145%",
-                        "154%",
-                        "164%",
-                        "177%",
-                        "192%"
-                    ]
-                },
-                {
-                    "Text": "SEQ 1 Stagger",
-                    "ConditionId": "",
-                    "Values": [
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5"
-                    ]
-                },
-                {
-                    "Text": "Pengganda SEQ 2 DMG",
-                    "ConditionId": "",
-                    "Values": [
-                        "128%",
-                        "141%",
-                        "153%",
-                        "166%",
-                        "179%",
-                        "192%",
-                        "204%",
-                        "217%",
-                        "230%",
-                        "246%",
-                        "265%",
-                        "288%"
-                    ]
-                },
-                {
-                    "Text": "SEQ 2 Stagger",
-                    "ConditionId": "",
-                    "Values": [
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "12",
-                        "12",
-                        "12",
-                        "15"
-                    ]
-                }
-            ]
         }
     },
     "NodeSkillMap": {
+        "chr_0028_wulfa_passive_skill_0_1": {
+            "Icon": "icon_talent_wulfa_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Nicks and Scratches",
+            "Desc": "Skill tarung meningkat: Setelah <@ba.key>Bayangan Serigala</> menimbulkan DMG, Rossi akan mengakibatkan <#ba.rossi>Razor Clawmark</> kepada target selama <@ba.vup>15</> dtk. Efek ini tidak bisa ditumpuk.\nSelama durasi <#ba.rossi>Razor Clawmark</>, target akan terkena <@ba.pd>Physical DMG</> sebesar <@ba.vup>25%</> ATK (Rossi) per detik dan akan terkena <@ba.pd>Physical DMG Taken</> dan <@ba.fire>Heat DMG Taken</> <@ba.vup>+6%</>.",
+            "Type": 4
+        },
         "chr_0028_wulfa_passive_skill_0_2": {
             "Icon": "icon_talent_wulfa_01",
             "Level": 2,
@@ -607,36 +615,12 @@
             "Desc": "Skill tarung meningkat: Setelah <@ba.key>Bayangan Serigala</> menimbulkan DMG, Rossi akan mengakibatkan <#ba.rossi>Razor Clawmark</> kepada target selama <@ba.vup>25</> dtk. Efek ini tidak bisa ditumpuk.\nSelama durasi <#ba.rossi>Razor Clawmark</>, target akan terkena <@ba.pd>Physical DMG</> sebesar <@ba.vup>30%</> ATK (Rossi) per detik dan akan terkena <@ba.pd>Physical DMG Taken</> dan <@ba.fire>Heat DMG Taken</> <@ba.vup>+12%</>.",
             "Type": 4
         },
-        "fac_chr_0028_wulfa_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
-            "Name": "Scent of the Hunt β",
-            "Desc": "Saat ditugaskan ke Ruang Resepsionis, efisiensi pengumpulan petunjuk operator akan meningkat sebesar +20%",
+        "chr_0028_wulfa_passive_skill_1_1": {
+            "Icon": "icon_talent_wulfa_02",
             "Level": 1,
-            "Index": 3,
-            "Type": 5
-        },
-        "fac_chr_0028_wulfa_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
-            "Name": "Clan Etiquette β",
-            "Desc": "Saat ditugaskan ke Ruang Resepsionis, Penurunan Suasana Hati semua operator di dalamnya akan melambat sebesar 14%",
-            "Level": 1,
-            "Index": 2,
-            "Type": 5
-        },
-        "fac_chr_0028_wulfa_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
-            "Name": "Scent of the Hunt γ",
-            "Desc": "Saat ditugaskan ke Ruang Resepsionis, efisiensi pengumpulan petunjuk operator akan meningkat sebesar +30%",
-            "Level": 2,
-            "Index": 3,
-            "Type": 5
-        },
-        "chr_0028_wulfa_passive_skill_0_1": {
-            "Icon": "icon_talent_wulfa_01",
-            "Level": 1,
-            "Index": 0,
-            "Name": "Nicks and Scratches",
-            "Desc": "Skill tarung meningkat: Setelah <@ba.key>Bayangan Serigala</> menimbulkan DMG, Rossi akan mengakibatkan <#ba.rossi>Razor Clawmark</> kepada target selama <@ba.vup>15</> dtk. Efek ini tidak bisa ditumpuk.\nSelama durasi <#ba.rossi>Razor Clawmark</>, target akan terkena <@ba.pd>Physical DMG</> sebesar <@ba.vup>25%</> ATK (Rossi) per detik dan akan terkena <@ba.pd>Physical DMG Taken</> dan <@ba.fire>Heat DMG Taken</> <@ba.vup>+6%</>.",
+            "Index": 1,
+            "Name": "Seething Blood",
+            "Desc": "Saat skill Rossi menimbulkan Critical DMG kepada musuh yang terkena <#ba.rossi>Razor Clawmark</>, skill itu akan mengaktifkan satu hantaman lagi yang akan menimbulkan <@ba.fire>Heat DMG</> sebesar <@ba.vup>12%</> ATK (Rossi) dan memulihkan HP Rossi sebesar <@ba.heal>[Intellect × 0.04]</>. Jika target itu juga terkena <#ba.burning>Combusted</>, DMG dan efek Pemulihan HP ini akan meningkat menjadi <@ba.vup>1.5</> kali.",
             "Type": 4
         },
         "chr_0028_wulfa_passive_skill_1_2": {
@@ -647,6 +631,14 @@
             "Desc": "Saat skill Rossi menimbulkan Critical DMG kepada musuh yang terkena <#ba.rossi>Razor Clawmark</>, skill itu akan mengaktifkan satu hantaman lagi yang akan menimbulkan <@ba.fire>Heat DMG</> sebesar <@ba.vup>24%</> ATK (Rossi) dan memulihkan HP Rossi sebesar <@ba.heal>[Intellect × 0.08]</>. Jika target itu juga terkena <#ba.burning>Combusted</>, DMG dan efek Pemulihan HP ini akan meningkat menjadi <@ba.vup>1.5</> kali.",
             "Type": 4
         },
+        "fac_chr_0028_wulfa_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
+            "Name": "Clan Etiquette β",
+            "Desc": "Saat ditugaskan ke Ruang Resepsionis, Penurunan Suasana Hati semua operator di dalamnya akan melambat sebesar 14%",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
         "fac_chr_0028_wulfa_0_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
             "Name": "Clan Etiquette γ",
@@ -655,13 +647,21 @@
             "Index": 2,
             "Type": 5
         },
-        "chr_0028_wulfa_passive_skill_1_1": {
-            "Icon": "icon_talent_wulfa_02",
+        "fac_chr_0028_wulfa_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
+            "Name": "Scent of the Hunt β",
+            "Desc": "Saat ditugaskan ke Ruang Resepsionis, efisiensi pengumpulan petunjuk operator akan meningkat sebesar +20%",
             "Level": 1,
-            "Index": 1,
-            "Name": "Seething Blood",
-            "Desc": "Saat skill Rossi menimbulkan Critical DMG kepada musuh yang terkena <#ba.rossi>Razor Clawmark</>, skill itu akan mengaktifkan satu hantaman lagi yang akan menimbulkan <@ba.fire>Heat DMG</> sebesar <@ba.vup>12%</> ATK (Rossi) dan memulihkan HP Rossi sebesar <@ba.heal>[Intellect × 0.04]</>. Jika target itu juga terkena <#ba.burning>Combusted</>, DMG dan efek Pemulihan HP ini akan meningkat menjadi <@ba.vup>1.5</> kali.",
-            "Type": 4
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0028_wulfa_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
+            "Name": "Scent of the Hunt γ",
+            "Desc": "Saat ditugaskan ke Ruang Resepsionis, efisiensi pengumpulan petunjuk operator akan meningkat sebesar +30%",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
         }
     },
     "Potentials": {

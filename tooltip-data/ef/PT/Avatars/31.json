@@ -9,17 +9,17 @@
     "MainAttrId": 42,
     "SubAttrId": 39,
     "AttributeNodes": {
-        "chr_0021_whiten_5": {
-            "42": 15
-        },
-        "chr_0021_whiten_7": {
-            "42": 20
-        },
         "chr_0021_whiten_1": {
-            "42": 10
+            "42": 10.0
         },
         "chr_0021_whiten_3": {
-            "42": 15
+            "42": 15.0
+        },
+        "chr_0021_whiten_5": {
+            "42": 15.0
+        },
+        "chr_0021_whiten_7": {
+            "42": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "ACIONADOR DO COMBO: Quando um inimigo sofre <#ba.frozen>Solidificação</>. \nMove-se rapidamente para o lado do inimigo para causar <@ba.pd>DNO Físico</> e <#ba.airborne>Levantar</> à força inimigos em uma pequena área. Se a habilidade atingir um alvo com <#ba.frozen>Solidificação</>, a habilidade causará DNO adicional e aplicará <#ba.physicalvul>Suscetibilidade Física</>.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 18,
+            "Cooldown": 18.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Tempo de Recarga",
@@ -162,158 +162,6 @@
                 }
             ]
         },
-        "chr_0021_whiten_NormalSkill": {
-            "Icon": "skillicon/icon_skill_whiten_01",
-            "Element": "Cryst",
-            "Name": "Onomatopeia",
-            "Desc": "Um arremesso de lança que dispara um fluxo de ondas sonoras congelantes que causam <@ba.cryst>DNO Crio</> e aplicam <#ba.crystinflict>Inflição Crio</> em todos os inimigos ao longo do caminho à sua frente.",
-            "ConditionData": {},
-            "Type": 1,
-            "Cooldown": 0,
-            "CostType": "Atb",
-            "CostValue": 100,
-            "Params": [
-                {
-                    "Text": "Custos de PH",
-                    "ConditionId": "",
-                    "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
-                    ]
-                },
-                {
-                    "Text": "Multiplicador DNO",
-                    "ConditionId": "",
-                    "Values": [
-                        "156%",
-                        "171%",
-                        "187%",
-                        "202%",
-                        "218%",
-                        "234%",
-                        "249%",
-                        "265%",
-                        "280%",
-                        "300%",
-                        "323%",
-                        "350%"
-                    ]
-                },
-                {
-                    "Text": "Desorientação",
-                    "ConditionId": "",
-                    "Values": [
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10"
-                    ]
-                }
-            ]
-        },
-        "chr_0021_whiten_UltimateSkill": {
-            "Icon": "skillicon/icon_ultimate_skill_whiten_01",
-            "Element": "Physical",
-            "Name": "Tremolo",
-            "Desc": "Estella usa toda a sua força para desferir um poderoso golpe com a haste da lança, causando <@ba.pd>DNO Físico</> a todos os inimigos em uma área circular ao seu redor. Em inimigos com <#ba.physicalvul>Suscetibilidade Física</>, a habilidade aplica <#ba.airborne>Levantar</> à força.",
-            "ConditionData": {},
-            "Type": 3,
-            "Cooldown": 10,
-            "CostType": "UltimateSp",
-            "CostValue": 70,
-            "Params": [
-                {
-                    "Text": "Custo de Energia Suprema",
-                    "ConditionId": "",
-                    "Values": [
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70
-                    ]
-                },
-                {
-                    "Text": "Tempo de Recarga",
-                    "ConditionId": "",
-                    "Values": [
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s"
-                    ]
-                },
-                {
-                    "Text": "Multiplicador DNO",
-                    "ConditionId": "",
-                    "Values": [
-                        "489%",
-                        "538%",
-                        "586%",
-                        "635%",
-                        "684%",
-                        "733%",
-                        "782%",
-                        "831%",
-                        "880%",
-                        "941%",
-                        "1014%",
-                        "1100%"
-                    ]
-                },
-                {
-                    "Text": "Desorientação",
-                    "ConditionId": "",
-                    "Values": [
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "20",
-                        "20",
-                        "20"
-                    ]
-                }
-            ]
-        },
         "chr_0021_whiten_NormalAttack": {
             "Icon": "skillicon/icon_attack_lance",
             "Element": "Physical",
@@ -321,9 +169,9 @@
             "Desc": "ATAQUE BÁSICO: \nAtaque em até 4 sequências que causa <@ba.pd>DNO Físico</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>17</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.pd>DNO Físico</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um finalizador que causa uma enorme quantidade de <@ba.pd>DNO Físico</> e recupera PH.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Multiplicador SEQ 1 ATQB",
@@ -434,9 +282,201 @@
                     ]
                 }
             ]
+        },
+        "chr_0021_whiten_NormalSkill": {
+            "Icon": "skillicon/icon_skill_whiten_01",
+            "Element": "Cryst",
+            "Name": "Onomatopeia",
+            "Desc": "Um arremesso de lança que dispara um fluxo de ondas sonoras congelantes que causam <@ba.cryst>DNO Crio</> e aplicam <#ba.crystinflict>Inflição Crio</> em todos os inimigos ao longo do caminho à sua frente.",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "Custos de PH",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "Multiplicador DNO",
+                    "ConditionId": "",
+                    "Values": [
+                        "156%",
+                        "171%",
+                        "187%",
+                        "202%",
+                        "218%",
+                        "234%",
+                        "249%",
+                        "265%",
+                        "280%",
+                        "300%",
+                        "323%",
+                        "350%"
+                    ]
+                },
+                {
+                    "Text": "Desorientação",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0021_whiten_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_whiten_01",
+            "Element": "Physical",
+            "Name": "Tremolo",
+            "Desc": "Estella usa toda a sua força para desferir um poderoso golpe com a haste da lança, causando <@ba.pd>DNO Físico</> a todos os inimigos em uma área circular ao seu redor. Em inimigos com <#ba.physicalvul>Suscetibilidade Física</>, a habilidade aplica <#ba.airborne>Levantar</> à força.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 10.0,
+            "CostType": "UltimateSp",
+            "CostValue": 70.0,
+            "Params": [
+                {
+                    "Text": "Custo de Energia Suprema",
+                    "ConditionId": "",
+                    "Values": [
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0
+                    ]
+                },
+                {
+                    "Text": "Tempo de Recarga",
+                    "ConditionId": "",
+                    "Values": [
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador DNO",
+                    "ConditionId": "",
+                    "Values": [
+                        "489%",
+                        "538%",
+                        "586%",
+                        "635%",
+                        "684%",
+                        "733%",
+                        "782%",
+                        "831%",
+                        "880%",
+                        "941%",
+                        "1014%",
+                        "1100%"
+                    ]
+                },
+                {
+                    "Text": "Desorientação",
+                    "ConditionId": "",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                }
+            ]
         }
     },
     "NodeSkillMap": {
+        "chr_0021_whiten_passive_skill_0_1": {
+            "Icon": "icon_talent_whiten_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Comiseração",
+            "Desc": "Quando <#ba.crystbreak>Fragmentar</> é acionada, a próxima conjuração da habilidade de batalha <@ba.key>Onomatopeia</> <#ba.return>devolve</> <@ba.vup>7.5</> de PH. Esse efeito não pode se acumular.",
+            "Type": 4
+        },
+        "chr_0021_whiten_passive_skill_0_2": {
+            "Icon": "icon_talent_whiten_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Comiseração",
+            "Desc": "Quando <#ba.crystbreak>Fragmentar</> é acionada, a próxima conjuração da habilidade de batalha <@ba.key>Onomatopeia</> <#ba.return>devolve</> <@ba.vup>15</> de PH. Esse efeito não pode se acumular.",
+            "Type": 4
+        },
+        "chr_0021_whiten_passive_skill_1_1": {
+            "Icon": "icon_talent_whiten_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "A Preguiça Agora Compensa",
+            "Desc": "Ignora a <#ba.crystonchar>Inflição Crio</> e recebe <@ba.vup>-10%</> de <@ba.cryst>DNO Crio</>.",
+            "Type": 4
+        },
+        "chr_0021_whiten_passive_skill_1_2": {
+            "Icon": "icon_talent_whiten_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "A Preguiça Agora Compensa",
+            "Desc": "Ignora a <#ba.crystonchar>Inflição Crio</> e recebe <@ba.vup>-20%</> de <@ba.cryst>DNO Crio</>.",
+            "Type": 4
+        },
+        "fac_chr_0021_whiten_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "Descanso Fragmentado α",
+            "Desc": "Atribua ao Nexus de Controle para conceder à Regeneração de Humor de todos os operadores + 8%",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
         "fac_chr_0021_whiten_0_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
             "Name": "Descanso Fragmentado β",
@@ -453,52 +493,12 @@
             "Index": 3,
             "Type": 5
         },
-        "chr_0021_whiten_passive_skill_0_1": {
-            "Icon": "icon_talent_whiten_01",
-            "Level": 1,
-            "Index": 0,
-            "Name": "Comiseração",
-            "Desc": "Quando <#ba.crystbreak>Fragmentar</> é acionada, a próxima conjuração da habilidade de batalha <@ba.key>Onomatopeia</> <#ba.return>devolve</> <@ba.vup>7.5</> de PH. Esse efeito não pode se acumular.",
-            "Type": 4
-        },
-        "chr_0021_whiten_passive_skill_1_1": {
-            "Icon": "icon_talent_whiten_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "A Preguiça Agora Compensa",
-            "Desc": "Ignora a <#ba.crystonchar>Inflição Crio</> e recebe <@ba.vup>-10%</> de <@ba.cryst>DNO Crio</>.",
-            "Type": 4
-        },
         "fac_chr_0021_whiten_1_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
             "Name": "Monitoramento de Frequência γ",
             "Desc": "Atribua à Sala da Recepção para conceder ao operador eficiência na coleta de pistas + 30%",
             "Level": 2,
             "Index": 3,
-            "Type": 5
-        },
-        "chr_0021_whiten_passive_skill_1_2": {
-            "Icon": "icon_talent_whiten_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "A Preguiça Agora Compensa",
-            "Desc": "Ignora a <#ba.crystonchar>Inflição Crio</> e recebe <@ba.vup>-20%</> de <@ba.cryst>DNO Crio</>.",
-            "Type": 4
-        },
-        "chr_0021_whiten_passive_skill_0_2": {
-            "Icon": "icon_talent_whiten_01",
-            "Level": 2,
-            "Index": 0,
-            "Name": "Comiseração",
-            "Desc": "Quando <#ba.crystbreak>Fragmentar</> é acionada, a próxima conjuração da habilidade de batalha <@ba.key>Onomatopeia</> <#ba.return>devolve</> <@ba.vup>15</> de PH. Esse efeito não pode se acumular.",
-            "Type": 4
-        },
-        "fac_chr_0021_whiten_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
-            "Name": "Descanso Fragmentado α",
-            "Desc": "Atribua ao Nexus de Controle para conceder à Regeneração de Humor de todos os operadores + 8%",
-            "Level": 1,
-            "Index": 2,
             "Type": 5
         }
     },

@@ -9,17 +9,17 @@
     "MainAttrId": 42,
     "SubAttrId": 40,
     "AttributeNodes": {
-        "chr_0012_avywen_5": {
-            "42": 15
-        },
-        "chr_0012_avywen_7": {
-            "42": 20
-        },
         "chr_0012_avywen_1": {
-            "42": 10
+            "42": 10.0
         },
         "chr_0012_avywen_3": {
-            "42": 15
+            "42": 15.0
+        },
+        "chr_0012_avywen_5": {
+            "42": 15.0
+        },
+        "chr_0012_avywen_7": {
+            "42": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "操作中のオペレーターが<#ba.pulseinflict>電磁付着</>または<#ba.conduct>感電</>状態の敵に<#ba.lastcombo>重攻撃</>を与えると発動可能。\nジャンプしながら敵に3本の<@ba.key>雷槍</>を投げ、範囲内の敵に1回<@ba.pulse>電磁ダメージ</>を与える。",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 13,
+            "Cooldown": 13.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "クールタイム",
@@ -133,9 +133,9 @@
             "Desc": "通常攻撃：\n最大5段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>17</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "通常攻撃1段目ダメージ倍率",
@@ -272,26 +272,26 @@
             "Desc": "ジャンプしてから槍で旋風を起こし、周囲の敵にわずかな<@ba.pulse>電磁ダメージ</>を与える。同時に、すべての<@ba.key>雷槍</>、<@ba.key>強雷槍</>を回収する。\n回収するときに<@ba.key>雷槍</>が敵を貫通すると、その敵に<@ba.pulse>電磁ダメージ</>を与える。<@ba.key>強雷槍</>はより高い<@ba.pulse>電磁ダメージ</>を与え、<#ba.pulseinflict>電磁付着</>を付与する。",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "SP消費",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -411,26 +411,26 @@
             "Desc": "目標エリアに<@ba.key>強雷槍</>を投げ、周囲の敵に高い<@ba.pulse>電磁ダメージ</>を与える。",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 10,
+            "Cooldown": 10.0,
             "CostType": "UltimateSp",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "必殺チャージ消費",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -509,14 +509,6 @@
         }
     },
     "NodeSkillMap": {
-        "chr_0012_avywen_passive_skill_0_2": {
-            "Icon": "icon_talent_avywen_01",
-            "Level": 2,
-            "Index": 0,
-            "Name": "配達の効率化",
-            "Desc": "投げてから回収するまでの<@ba.key>雷槍</>、<@ba.key>強雷槍</>が敵に命中すると、必殺チャージを<@ba.vup>4</>回復する",
-            "Type": 4
-        },
         "chr_0012_avywen_passive_skill_0_1": {
             "Icon": "icon_talent_avywen_01",
             "Level": 1,
@@ -525,11 +517,43 @@
             "Desc": "投げてから回収するまでの<@ba.key>雷槍</>、<@ba.key>強雷槍</>が敵に命中すると、必殺チャージを<@ba.vup>3</>回復する",
             "Type": 4
         },
+        "chr_0012_avywen_passive_skill_0_2": {
+            "Icon": "icon_talent_avywen_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "配達の効率化",
+            "Desc": "投げてから回収するまでの<@ba.key>雷槍</>、<@ba.key>強雷槍</>が敵に命中すると、必殺チャージを<@ba.vup>4</>回復する",
+            "Type": 4
+        },
+        "chr_0012_avywen_passive_skill_1_1": {
+            "Icon": "icon_talent_avywen_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "婉曲手段",
+            "Desc": "必殺技<@ba.key>「雷槍・決震」</>が敵に命中するとき、<@ba.vup>10</>秒間持続する<@ba.vup>6%</>の<#ba.pulsevul>電磁脆弱</>を付与する",
+            "Type": 4
+        },
+        "chr_0012_avywen_passive_skill_1_2": {
+            "Icon": "icon_talent_avywen_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "婉曲手段",
+            "Desc": "必殺技<@ba.key>「雷槍・決震」</>が敵に命中するとき、<@ba.vup>10</>秒間持続する<@ba.vup>10%</>の<#ba.pulsevul>電磁脆弱</>を付与する",
+            "Type": 4
+        },
         "fac_chr_0012_avywen_0_1": {
             "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
             "Name": "暮らしのアドバイザー・α",
             "Desc": "指揮中枢配属時、全員の体力回復+8%",
             "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0012_avywen_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "暮らしのアドバイザー・β",
+            "Desc": "指揮中枢配属時、全員の体力回復+12%",
+            "Level": 2,
             "Index": 2,
             "Type": 5
         },
@@ -541,14 +565,6 @@
             "Index": 3,
             "Type": 5
         },
-        "fac_chr_0012_avywen_0_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
-            "Name": "暮らしのアドバイザー・β",
-            "Desc": "指揮中枢配属時、全員の体力回復+12%",
-            "Level": 2,
-            "Index": 2,
-            "Type": 5
-        },
         "fac_chr_0012_avywen_1_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
             "Name": "トランスポーターの秘密・β",
@@ -556,22 +572,6 @@
             "Level": 2,
             "Index": 3,
             "Type": 5
-        },
-        "chr_0012_avywen_passive_skill_1_2": {
-            "Icon": "icon_talent_avywen_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "婉曲手段",
-            "Desc": "必殺技<@ba.key>「雷槍・決震」</>が敵に命中するとき、<@ba.vup>10</>秒間持続する<@ba.vup>10%</>の<#ba.pulsevul>電磁脆弱</>を付与する",
-            "Type": 4
-        },
-        "chr_0012_avywen_passive_skill_1_1": {
-            "Icon": "icon_talent_avywen_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "婉曲手段",
-            "Desc": "必殺技<@ba.key>「雷槍・決震」</>が敵に命中するとき、<@ba.vup>10</>秒間持続する<@ba.vup>6%</>の<#ba.pulsevul>電磁脆弱</>を付与する",
-            "Type": 4
         }
     },
     "Potentials": {

@@ -9,17 +9,17 @@
     "MainAttrId": 40,
     "SubAttrId": 39,
     "AttributeNodes": {
-        "chr_0027_tangtang_5": {
-            "40": 15
-        },
-        "chr_0027_tangtang_7": {
-            "40": 20
-        },
         "chr_0027_tangtang_1": {
-            "40": 10
+            "40": 10.0
         },
         "chr_0027_tangtang_3": {
-            "40": 15
+            "40": 15.0
+        },
+        "chr_0027_tangtang_5": {
+            "40": 15.0
+        },
+        "chr_0027_tangtang_7": {
+            "40": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "PEMICU KOMBO: Saat mengakibatkan <#ba.crystinflict>Cryo Infliction</> atau menimbulkan <#ba.spellburst>Arts Burst DMG</> kepada musuh.\nTangtang akan melepaskan arus semburan kuat yang akan menembus semua musuh di lintasannya sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> kepada mereka dan memunculkan <@ba.key>Pusaran Air</>.\n<@ba.info>Maksimum 2 Pusaran Air bisa ada sekaligus di medan pertarungan.</>",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 14,
+            "Cooldown": 14.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Cooldown",
@@ -133,9 +133,9 @@
             "Desc": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.cryst>Cryo DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>18</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.cryst>Cryo DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.cryst>Cryo DMG</> sangat besar dan memulihkan sebagian SP.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Pengganda BATK SEQ 1",
@@ -265,163 +265,6 @@
                 }
             ]
         },
-        "chr_0027_tangtang_UltimateSkill": {
-            "Icon": "skillicon/icon_ultimate_skill_tangtang_01",
-            "Element": "Cryst",
-            "Name": "DA CHIEF SEES YOU!",
-            "Desc": "Tangtang akan membuka penutup matanya dan melepaskan <@ba.key>TATAPAN MASA LALU</> dari matanya, yang akan mengunci, melumpuhkan, dan menimbulkan <@ba.cryst>Cryo DMG</> Over Time untuk sementara kepada musuh dalam area efeknya.\nSaat <@ba.key>TATAPAN MASA LALU</> berhenti berubah, gelombang ganas akan muncul dan menghantam sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> sangat besar kepada musuh di area efeknya.\nJika operator terkontrol melancarkan serangan menukik dalam pola <@ba.key>TATAPAN MASA LALU</>, evolusinya akan berakhir, dan gelombang ganas akan langsung muncul sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> yang lebih besar lagi.",
-            "ConditionData": {},
-            "Type": 3,
-            "Cooldown": 20,
-            "CostType": "UltimateSp",
-            "CostValue": 90,
-            "Params": [
-                {
-                    "Text": "Biaya Energi Ultimate",
-                    "ConditionId": "",
-                    "Values": [
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90
-                    ]
-                },
-                {
-                    "Text": "Cooldown",
-                    "ConditionId": "",
-                    "Values": [
-                        "20dtk",
-                        "20dtk",
-                        "20dtk",
-                        "20dtk",
-                        "20dtk",
-                        "20dtk",
-                        "20dtk",
-                        "20dtk",
-                        "20dtk",
-                        "20dtk",
-                        "20dtk",
-                        "20dtk"
-                    ]
-                },
-                {
-                    "Text": "Pengganda Total DMG Over Time",
-                    "ConditionId": "",
-                    "Values": [
-                        "142%",
-                        "156%",
-                        "171%",
-                        "185%",
-                        "199%",
-                        "213%",
-                        "228%",
-                        "242%",
-                        "256%",
-                        "274%",
-                        "295%",
-                        "320%"
-                    ]
-                },
-                {
-                    "Text": "Durasi TATAPAN MASA LALU (dtk)",
-                    "ConditionId": "",
-                    "Values": [
-                        "4",
-                        "4",
-                        "4",
-                        "4",
-                        "4",
-                        "4",
-                        "4",
-                        "4",
-                        "4",
-                        "4",
-                        "4",
-                        "4"
-                    ]
-                },
-                {
-                    "Text": "Pengganda DMG Gelombang Ganas",
-                    "ConditionId": "",
-                    "Values": [
-                        "178%",
-                        "196%",
-                        "213%",
-                        "231%",
-                        "249%",
-                        "267%",
-                        "284%",
-                        "302%",
-                        "320%",
-                        "342%",
-                        "369%",
-                        "400%"
-                    ]
-                },
-                {
-                    "Text": "Pengganda DMG Gelombang Ganas Dini",
-                    "ConditionId": "",
-                    "Values": [
-                        "311%",
-                        "342%",
-                        "373%",
-                        "404%",
-                        "436%",
-                        "467%",
-                        "498%",
-                        "529%",
-                        "560%",
-                        "599%",
-                        "646%",
-                        "700%"
-                    ]
-                },
-                {
-                    "Text": "Stagger Gelombang Ganas",
-                    "ConditionId": "",
-                    "Values": [
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15"
-                    ]
-                },
-                {
-                    "Text": "Stagger Gelombang Ganas Dini",
-                    "ConditionId": "",
-                    "Values": [
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20"
-                    ]
-                }
-            ]
-        },
         "chr_0027_tangtang_NormalSkill": {
             "Icon": "skillicon/icon_skill_tangtang_01",
             "Element": "Cryst",
@@ -429,26 +272,26 @@
             "Desc": "Tangtang akan melompat keluar dari air dan menembak dari jarak dekat sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> kepada musuh dan memunculkan <@ba.key>Topan Air</>.\nPenggunaan skill tarung ini juga akan memakai semua <@ba.key>Pusaran Air</> di sekitar untuk memunculkan <@ba.key>Topan Air</> lagi dan <#ba.return>mengembalikan</> sejumlah SP berdasarkan jumlah Topan Air yang muncul.\n<@ba.key>Topan Air</>: Mengakibatkan 1 tumpuk <#ba.crystinflict>Cryo Infliction</> kepada musuh dalam jangkauan dan menimbulkan <@ba.cryst>Cryo DMG</> Over Time. Jika skill tarung ini memunculkan beberapa <@ba.key>Topan Air</>, topan itu juga akan mengakibatkan <#ba.spellvul>Arts Susceptibility</> kepada musuh (tapi tidak mengakibatkan tumpukan <#ba.crystinflict>Cryo Infliction</> lagi).\n<@ba.info>DMG yang ditimbulkan oleh Topan Air akan dianggap sebagai DMG Skill Tarung.</>",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Biaya SP",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -596,14 +439,211 @@
                     ]
                 }
             ]
+        },
+        "chr_0027_tangtang_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_tangtang_01",
+            "Element": "Cryst",
+            "Name": "DA CHIEF SEES YOU!",
+            "Desc": "Tangtang akan membuka penutup matanya dan melepaskan <@ba.key>TATAPAN MASA LALU</> dari matanya, yang akan mengunci, melumpuhkan, dan menimbulkan <@ba.cryst>Cryo DMG</> Over Time untuk sementara kepada musuh dalam area efeknya.\nSaat <@ba.key>TATAPAN MASA LALU</> berhenti berubah, gelombang ganas akan muncul dan menghantam sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> sangat besar kepada musuh di area efeknya.\nJika operator terkontrol melancarkan serangan menukik dalam pola <@ba.key>TATAPAN MASA LALU</>, evolusinya akan berakhir, dan gelombang ganas akan langsung muncul sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> yang lebih besar lagi.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 20.0,
+            "CostType": "UltimateSp",
+            "CostValue": 90.0,
+            "Params": [
+                {
+                    "Text": "Biaya Energi Ultimate",
+                    "ConditionId": "",
+                    "Values": [
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0
+                    ]
+                },
+                {
+                    "Text": "Cooldown",
+                    "ConditionId": "",
+                    "Values": [
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk"
+                    ]
+                },
+                {
+                    "Text": "Pengganda Total DMG Over Time",
+                    "ConditionId": "",
+                    "Values": [
+                        "142%",
+                        "156%",
+                        "171%",
+                        "185%",
+                        "199%",
+                        "213%",
+                        "228%",
+                        "242%",
+                        "256%",
+                        "274%",
+                        "295%",
+                        "320%"
+                    ]
+                },
+                {
+                    "Text": "Durasi TATAPAN MASA LALU (dtk)",
+                    "ConditionId": "",
+                    "Values": [
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4"
+                    ]
+                },
+                {
+                    "Text": "Pengganda DMG Gelombang Ganas",
+                    "ConditionId": "",
+                    "Values": [
+                        "178%",
+                        "196%",
+                        "213%",
+                        "231%",
+                        "249%",
+                        "267%",
+                        "284%",
+                        "302%",
+                        "320%",
+                        "342%",
+                        "369%",
+                        "400%"
+                    ]
+                },
+                {
+                    "Text": "Pengganda DMG Gelombang Ganas Dini",
+                    "ConditionId": "",
+                    "Values": [
+                        "311%",
+                        "342%",
+                        "373%",
+                        "404%",
+                        "436%",
+                        "467%",
+                        "498%",
+                        "529%",
+                        "560%",
+                        "599%",
+                        "646%",
+                        "700%"
+                    ]
+                },
+                {
+                    "Text": "Stagger Gelombang Ganas",
+                    "ConditionId": "",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                },
+                {
+                    "Text": "Stagger Gelombang Ganas Dini",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                }
+            ]
         }
     },
     "NodeSkillMap": {
+        "chr_0027_tangtang_passive_skill_0_1": {
+            "Icon": "icon_talent_tangtang_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Fam of Honor",
+            "Desc": "Saat berada dalam radius <@ba.vup>5</> meter dari <@ba.key>Pusaran Air</>, operator rekan akan mendapatkan <@ba.vup>10%</> <#ba.speedup>Haste</>, sedangkan musuh akan terkena <@ba.vup>20%</> <#ba.slow>Slow</>. Efek ini bertahan hingga 3 dtk setelah keluar dari area efek.",
+            "Type": 4
+        },
+        "chr_0027_tangtang_passive_skill_0_2": {
+            "Icon": "icon_talent_tangtang_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Fam of Honor",
+            "Desc": "Saat berada dalam radius <@ba.vup>5</> meter dari <@ba.key>Pusaran Air</>, operator rekan akan mendapatkan <@ba.vup>20%</> <#ba.speedup>Haste</>, sedangkan musuh akan terkena <@ba.vup>40%</> <#ba.slow>Slow</>. Efek ini bertahan hingga 3 dtk setelah keluar dari area efek.",
+            "Type": 4
+        },
+        "chr_0027_tangtang_passive_skill_1_1": {
+            "Icon": "icon_talent_tangtang_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Riot Bringer",
+            "Desc": "Selama durasi <@ba.key>TATAPAN MASA LALU</>, jika melancarkan serangan menukik bersama operator terkontrol, evolusinya akan berakhir lebih awal dan akan memunculkan <@ba.key>Topan Air</>. Semua <@ba.key>Pusaran Air</> di sekitar juga akan dipakai dan diubah menjadi <@ba.key>Topan Air</> lagi.\n<@ba.key>Topan Air</> yang dihasilkan dengan cara ini akan punya efek yang sama dengan Topan Air yang dihasilkan oleh skill tarung <@ba.key>IMA WAVERIDAAH!</> dan akan mendapatkan DMG Dealt <@ba.vup>+40%</>.",
+            "Type": 4
+        },
+        "chr_0027_tangtang_passive_skill_1_2": {
+            "Icon": "icon_talent_tangtang_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Riot Bringer",
+            "Desc": "Selama durasi <@ba.key>TATAPAN MASA LALU</>, jika melancarkan serangan menukik bersama operator terkontrol, evolusinya akan berakhir lebih awal dan akan memunculkan <@ba.key>Topan Air</>. Semua <@ba.key>Pusaran Air</> di sekitar juga akan dipakai dan diubah menjadi <@ba.key>Topan Air</> lagi.\n<@ba.key>Topan Air</> yang dihasilkan dengan cara ini akan punya efek yang sama dengan Topan Air yang dihasilkan oleh skill tarung <@ba.key>IMA WAVERIDAAH!</> dan akan mendapatkan DMG Dealt <@ba.vup>+60%</>.",
+            "Type": 4
+        },
         "fac_chr_0027_tangtang_0_1": {
             "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
             "Name": "Supreme Chief β",
             "Desc": "Saat ditugaskan ke Ruang Pertumbuhan, Penurunan Suasana Hati semua operator di dalamnya akan melambat sebesar 14%",
             "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0027_tangtang_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
+            "Name": "Supreme Chief γ",
+            "Desc": "Saat ditugaskan ke Ruang Pertumbuhan, Penurunan Suasana Hati semua operator di dalamnya akan melambat sebesar 18%",
+            "Level": 2,
             "Index": 2,
             "Type": 5
         },
@@ -615,30 +655,6 @@
             "Index": 3,
             "Type": 5
         },
-        "chr_0027_tangtang_passive_skill_1_2": {
-            "Icon": "icon_talent_tangtang_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "Riot Bringer",
-            "Desc": "Selama durasi <@ba.key>TATAPAN MASA LALU</>, jika melancarkan serangan menukik bersama operator terkontrol, evolusinya akan berakhir lebih awal dan akan memunculkan <@ba.key>Topan Air</>. Semua <@ba.key>Pusaran Air</> di sekitar juga akan dipakai dan diubah menjadi <@ba.key>Topan Air</> lagi.\n<@ba.key>Topan Air</> yang dihasilkan dengan cara ini akan punya efek yang sama dengan Topan Air yang dihasilkan oleh skill tarung <@ba.key>IMA WAVERIDAAH!</> dan akan mendapatkan DMG Dealt <@ba.vup>+60%</>.",
-            "Type": 4
-        },
-        "fac_chr_0027_tangtang_0_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
-            "Name": "Supreme Chief γ",
-            "Desc": "Saat ditugaskan ke Ruang Pertumbuhan, Penurunan Suasana Hati semua operator di dalamnya akan melambat sebesar 18%",
-            "Level": 2,
-            "Index": 2,
-            "Type": 5
-        },
-        "chr_0027_tangtang_passive_skill_0_2": {
-            "Icon": "icon_talent_tangtang_01",
-            "Level": 2,
-            "Index": 0,
-            "Name": "Fam of Honor",
-            "Desc": "Saat berada dalam radius <@ba.vup>5</> meter dari <@ba.key>Pusaran Air</>, operator rekan akan mendapatkan <@ba.vup>20%</> <#ba.speedup>Haste</>, sedangkan musuh akan terkena <@ba.vup>40%</> <#ba.slow>Slow</>. Efek ini bertahan hingga 3 dtk setelah keluar dari area efek.",
-            "Type": 4
-        },
         "fac_chr_0027_tangtang_1_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_plant_flower",
             "Name": "River’s Daughter γ",
@@ -646,22 +662,6 @@
             "Level": 2,
             "Index": 3,
             "Type": 5
-        },
-        "chr_0027_tangtang_passive_skill_0_1": {
-            "Icon": "icon_talent_tangtang_01",
-            "Level": 1,
-            "Index": 0,
-            "Name": "Fam of Honor",
-            "Desc": "Saat berada dalam radius <@ba.vup>5</> meter dari <@ba.key>Pusaran Air</>, operator rekan akan mendapatkan <@ba.vup>10%</> <#ba.speedup>Haste</>, sedangkan musuh akan terkena <@ba.vup>20%</> <#ba.slow>Slow</>. Efek ini bertahan hingga 3 dtk setelah keluar dari area efek.",
-            "Type": 4
-        },
-        "chr_0027_tangtang_passive_skill_1_1": {
-            "Icon": "icon_talent_tangtang_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "Riot Bringer",
-            "Desc": "Selama durasi <@ba.key>TATAPAN MASA LALU</>, jika melancarkan serangan menukik bersama operator terkontrol, evolusinya akan berakhir lebih awal dan akan memunculkan <@ba.key>Topan Air</>. Semua <@ba.key>Pusaran Air</> di sekitar juga akan dipakai dan diubah menjadi <@ba.key>Topan Air</> lagi.\n<@ba.key>Topan Air</> yang dihasilkan dengan cara ini akan punya efek yang sama dengan Topan Air yang dihasilkan oleh skill tarung <@ba.key>IMA WAVERIDAAH!</> dan akan mendapatkan DMG Dealt <@ba.vup>+40%</>.",
-            "Type": 4
         }
     },
     "Potentials": {

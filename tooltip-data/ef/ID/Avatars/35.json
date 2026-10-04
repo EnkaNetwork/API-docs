@@ -9,17 +9,17 @@
     "MainAttrId": 39,
     "SubAttrId": 42,
     "AttributeNodes": {
-        "chr_0020_meurs_3": {
-            "39": 15
-        },
-        "chr_0020_meurs_7": {
-            "39": 20
-        },
         "chr_0020_meurs_1": {
-            "39": 10
+            "39": 10.0
+        },
+        "chr_0020_meurs_3": {
+            "39": 15.0
         },
         "chr_0020_meurs_5": {
-            "39": 15
+            "39": 15.0
+        },
+        "chr_0020_meurs_7": {
+            "39": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "PEMICU KOMBO: Saat musuh mulai mengisi kekuatan skill, atau saat operator terkontrol diserang dan HP turun hingga kurang dari 40%. \nPukulan keras ke bawah yang menimbulkan <@ba.pd>Physical DMG</> akan dilancarkan kepada musuh, serta memberikan <#ba.shield>perisai</> kepada diri sendiri dan satu rekan tim lain (prioritas kepada operator terkontrol).\nDEF bisa makin meningkatkan poin Perisai.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 35,
+            "Cooldown": 35.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Cooldown",
@@ -180,6 +180,127 @@
                 }
             ]
         },
+        "chr_0020_meurs_NormalAttack": {
+            "Icon": "skillicon/icon_attack_claym",
+            "Element": "Physical",
+            "Name": "Basic Tactics",
+            "Desc": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>22</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP.",
+            "ConditionData": {},
+            "Type": 0,
+            "Cooldown": 0.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Pengganda BATK SEQ 1",
+                    "ConditionId": "",
+                    "Values": [
+                        "35%",
+                        "39%",
+                        "42%",
+                        "46%",
+                        "49%",
+                        "53%",
+                        "56%",
+                        "60%",
+                        "63%",
+                        "67%",
+                        "73%",
+                        "79%"
+                    ]
+                },
+                {
+                    "Text": "Pengganda BATK SEQ 2",
+                    "ConditionId": "",
+                    "Values": [
+                        "39%",
+                        "42%",
+                        "46%",
+                        "50%",
+                        "54%",
+                        "58%",
+                        "62%",
+                        "65%",
+                        "69%",
+                        "74%",
+                        "80%",
+                        "87%"
+                    ]
+                },
+                {
+                    "Text": "Pengganda BATK SEQ 3",
+                    "ConditionId": "",
+                    "Values": [
+                        "54%",
+                        "59%",
+                        "65%",
+                        "70%",
+                        "76%",
+                        "81%",
+                        "86%",
+                        "92%",
+                        "97%",
+                        "104%",
+                        "112%",
+                        "122%"
+                    ]
+                },
+                {
+                    "Text": "Pengganda BATK SEQ 4",
+                    "ConditionId": "",
+                    "Values": [
+                        "71%",
+                        "78%",
+                        "85%",
+                        "92%",
+                        "99%",
+                        "107%",
+                        "114%",
+                        "121%",
+                        "128%",
+                        "137%",
+                        "147%",
+                        "160%"
+                    ]
+                },
+                {
+                    "Text": "Pengganda ATK Penuntas",
+                    "ConditionId": "",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Pengganda ATK Menukik",
+                    "ConditionId": "",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
         "chr_0020_meurs_NormalSkill": {
             "Icon": "skillicon/icon_skill_meurs_01",
             "Element": "Physical",
@@ -187,26 +308,26 @@
             "Desc": "Mengangkat perisai yang bisa menahan serangan, memberikan <#ba.guard>Protection</> kepada diri sendiri dan operator di sekitar, lalu langsung <#ba.return>mengembalikan</> sebagian SP. \nSaat diserang selagi perisai diangkat, dia akan melancarkan hantaman balasan yang akan menimbulkan <@ba.pd>Physical DMG</> dan mengakibatkan 1 tumpuk <#ba.noguard>Vulnerability</> kepada musuh yang menyerang.",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "Biaya SP",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -290,26 +411,26 @@
             "Desc": "Mengayunkan pedang besar untuk melancarkan 2 tebasan beruntun sehingga akan menimbulkan <@ba.pd>Physical DMG</> dan mengakibatkan <#ba.weak>Weakness</>, lalu menghantam kuat ke bawah sehingga akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan mengakibatkan <#ba.knockdown>Knock Down</> kepada semua musuh dalam area efek.",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 15,
+            "Cooldown": 15.0,
             "CostType": "UltimateSp",
-            "CostValue": 80,
+            "CostValue": 80.0,
             "Params": [
                 {
                     "Text": "Biaya Energi Ultimate",
                     "ConditionId": "",
                     "Values": [
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0
                     ]
                 },
                 {
@@ -475,145 +596,16 @@
                     ]
                 }
             ]
-        },
-        "chr_0020_meurs_NormalAttack": {
-            "Icon": "skillicon/icon_attack_claym",
-            "Element": "Physical",
-            "Name": "Basic Tactics",
-            "Desc": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>22</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP.",
-            "ConditionData": {},
-            "Type": 0,
-            "Cooldown": 0,
-            "CostType": "UltimateSp",
-            "CostValue": 0,
-            "Params": [
-                {
-                    "Text": "Pengganda BATK SEQ 1",
-                    "ConditionId": "",
-                    "Values": [
-                        "35%",
-                        "39%",
-                        "42%",
-                        "46%",
-                        "49%",
-                        "53%",
-                        "56%",
-                        "60%",
-                        "63%",
-                        "67%",
-                        "73%",
-                        "79%"
-                    ]
-                },
-                {
-                    "Text": "Pengganda BATK SEQ 2",
-                    "ConditionId": "",
-                    "Values": [
-                        "39%",
-                        "42%",
-                        "46%",
-                        "50%",
-                        "54%",
-                        "58%",
-                        "62%",
-                        "65%",
-                        "69%",
-                        "74%",
-                        "80%",
-                        "87%"
-                    ]
-                },
-                {
-                    "Text": "Pengganda BATK SEQ 3",
-                    "ConditionId": "",
-                    "Values": [
-                        "54%",
-                        "59%",
-                        "65%",
-                        "70%",
-                        "76%",
-                        "81%",
-                        "86%",
-                        "92%",
-                        "97%",
-                        "104%",
-                        "112%",
-                        "122%"
-                    ]
-                },
-                {
-                    "Text": "Pengganda BATK SEQ 4",
-                    "ConditionId": "",
-                    "Values": [
-                        "71%",
-                        "78%",
-                        "85%",
-                        "92%",
-                        "99%",
-                        "107%",
-                        "114%",
-                        "121%",
-                        "128%",
-                        "137%",
-                        "147%",
-                        "160%"
-                    ]
-                },
-                {
-                    "Text": "Pengganda ATK Penuntas",
-                    "ConditionId": "",
-                    "Values": [
-                        "400%",
-                        "440%",
-                        "480%",
-                        "520%",
-                        "560%",
-                        "600%",
-                        "640%",
-                        "680%",
-                        "720%",
-                        "770%",
-                        "830%",
-                        "900%"
-                    ]
-                },
-                {
-                    "Text": "Pengganda ATK Menukik",
-                    "ConditionId": "",
-                    "Values": [
-                        "80%",
-                        "88%",
-                        "96%",
-                        "104%",
-                        "112%",
-                        "120%",
-                        "128%",
-                        "136%",
-                        "144%",
-                        "154%",
-                        "166%",
-                        "180%"
-                    ]
-                }
-            ]
         }
     },
     "NodeSkillMap": {
-        "chr_0020_meurs_passive_skill_1_2": {
-            "Icon": "icon_talent_meurs_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "Comprehensive Mindset",
-            "Desc": "Ultimate <@ba.key>Textbook Assault</> meningkat: Hantaman terakhir akan menghasilkan 3 gelombang kejut, dan masing-masing akan menimbulkan 45% ATK dengan <@ba.pd>Physical DMG</>.",
-            "Type": 4
-        },
-        "fac_chr_0020_meurs_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
-            "Name": "Grounded Approach β",
-            "Desc": "Saat ditugaskan ke Ruang Pertumbuhan, Penurunan Suasana Hati semua operator di dalamnya akan melambat sebesar 14%",
+        "chr_0020_meurs_passive_skill_0_1": {
+            "Icon": "icon_talent_meurs_01",
             "Level": 1,
-            "Index": 3,
-            "Type": 5
+            "Index": 0,
+            "Name": "Resilient Defense",
+            "Desc": "Untuk setiap 10 Will, DEF akan meningkat sebesar <@ba.vup>+1.0</>.",
+            "Type": 4
         },
         "chr_0020_meurs_passive_skill_0_2": {
             "Icon": "icon_talent_meurs_01",
@@ -621,6 +613,22 @@
             "Index": 0,
             "Name": "Resilient Defense",
             "Desc": "Untuk setiap 10 Will, DEF akan meningkat sebesar <@ba.vup>+1.2</>.",
+            "Type": 4
+        },
+        "chr_0020_meurs_passive_skill_1_1": {
+            "Icon": "icon_talent_meurs_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Comprehensive Mindset",
+            "Desc": "Ultimate <@ba.key>Textbook Assault</> meningkat: Hantaman terakhir akan menghasilkan 2 gelombang kejut, dan masing-masing akan menimbulkan 30% ATK dengan <@ba.pd>Physical DMG</>.",
+            "Type": 4
+        },
+        "chr_0020_meurs_passive_skill_1_2": {
+            "Icon": "icon_talent_meurs_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Comprehensive Mindset",
+            "Desc": "Ultimate <@ba.key>Textbook Assault</> meningkat: Hantaman terakhir akan menghasilkan 3 gelombang kejut, dan masing-masing akan menimbulkan 45% ATK dengan <@ba.pd>Physical DMG</>.",
             "Type": 4
         },
         "fac_chr_0020_meurs_0_1": {
@@ -639,21 +647,13 @@
             "Index": 2,
             "Type": 5
         },
-        "chr_0020_meurs_passive_skill_1_1": {
-            "Icon": "icon_talent_meurs_02",
+        "fac_chr_0020_meurs_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
+            "Name": "Grounded Approach β",
+            "Desc": "Saat ditugaskan ke Ruang Pertumbuhan, Penurunan Suasana Hati semua operator di dalamnya akan melambat sebesar 14%",
             "Level": 1,
-            "Index": 1,
-            "Name": "Comprehensive Mindset",
-            "Desc": "Ultimate <@ba.key>Textbook Assault</> meningkat: Hantaman terakhir akan menghasilkan 2 gelombang kejut, dan masing-masing akan menimbulkan 30% ATK dengan <@ba.pd>Physical DMG</>.",
-            "Type": 4
-        },
-        "chr_0020_meurs_passive_skill_0_1": {
-            "Icon": "icon_talent_meurs_01",
-            "Level": 1,
-            "Index": 0,
-            "Name": "Resilient Defense",
-            "Desc": "Untuk setiap 10 Will, DEF akan meningkat sebesar <@ba.vup>+1</>.",
-            "Type": 4
+            "Index": 3,
+            "Type": 5
         },
         "fac_chr_0020_meurs_1_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
@@ -667,7 +667,7 @@
     "Potentials": {
         "1": {
             "Name": "Multi-layered Readiness",
-            "Desc": "Skill tarung <@ba.key>Rigid Interdiction</> dan ultimate <@ba.key>Textbook Assault</> meningkat: Setelah berhasil menghantam musuh, skill ini akan memberikan serangan lagi yang menimbulkan <@ba.vup>[300 + DEF ×5]</> yang setara dengan <@ba.phy>Physical DMG</>."
+            "Desc": "Skill tarung <@ba.key>Rigid Interdiction</> dan ultimate <@ba.key>Textbook Assault</> meningkat: Setelah berhasil menghantam musuh, skill ini akan memberikan serangan lagi yang menimbulkan <@ba.vup>[300 + DEF ×5.0]</> yang setara dengan <@ba.phy>Physical DMG</>."
         },
         "2": {
             "Name": "Bonus Spec Training",

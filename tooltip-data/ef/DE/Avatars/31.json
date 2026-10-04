@@ -9,17 +9,17 @@
     "MainAttrId": 42,
     "SubAttrId": 39,
     "AttributeNodes": {
-        "chr_0021_whiten_5": {
-            "42": 15
-        },
-        "chr_0021_whiten_7": {
-            "42": 20
-        },
         "chr_0021_whiten_1": {
-            "42": 10
+            "42": 10.0
         },
         "chr_0021_whiten_3": {
-            "42": 15
+            "42": 15.0
+        },
+        "chr_0021_whiten_5": {
+            "42": 15.0
+        },
+        "chr_0021_whiten_7": {
+            "42": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "KOMBOAUSLÖSER: Wenn ein Gegner mit <#ba.frozen>Erstarrung</> belegt wird. \nBewegt sich schnell zum betreffenden Gegner, fügt <@ba.pd>Physischen SDN</> zu und <#ba.airborne>hebt</> Gegner in einem kleinen Bereich <#ba.airborne>an</>. Wenn die Fertigkeit einen Gegner mit <#ba.frozen>Erstarrung</> trifft, verursacht er zusätzlichen SDN und belegt den Gegner mit <#ba.physicalvul>Physisch-Empfänglichkeit</>.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 18,
+            "Cooldown": 18.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Abklingzeit",
@@ -162,158 +162,6 @@
                 }
             ]
         },
-        "chr_0021_whiten_NormalSkill": {
-            "Icon": "skillicon/icon_skill_whiten_01",
-            "Element": "Cryst",
-            "Name": "Onomatopoesie",
-            "Desc": "Ein Lanzenstoß, der eisige Schallwellen entlang eines geraden Pfades ausstößt, die <@ba.cryst>Kryo-SDN</> verursachen und alle getroffenen Gegner mit <#ba.crystinflict>Kryo</> belegen.",
-            "ConditionData": {},
-            "Type": 1,
-            "Cooldown": 0,
-            "CostType": "Atb",
-            "CostValue": 100,
-            "Params": [
-                {
-                    "Text": "FP-Kosten",
-                    "ConditionId": "",
-                    "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
-                    ]
-                },
-                {
-                    "Text": "SDN-Multiplikator",
-                    "ConditionId": "",
-                    "Values": [
-                        "156%",
-                        "171%",
-                        "187%",
-                        "202%",
-                        "218%",
-                        "234%",
-                        "249%",
-                        "265%",
-                        "280%",
-                        "300%",
-                        "323%",
-                        "350%"
-                    ]
-                },
-                {
-                    "Text": "Taumeln",
-                    "ConditionId": "",
-                    "Values": [
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10"
-                    ]
-                }
-            ]
-        },
-        "chr_0021_whiten_UltimateSkill": {
-            "Icon": "skillicon/icon_ultimate_skill_whiten_01",
-            "Element": "Physical",
-            "Name": "Tremolo",
-            "Desc": "Estella schlägt mit all ihrer Kraft mit ihrem Speerschaft zu und fügt so allen Gegnern in einem kreisförmigen Bereich um sie herum <@ba.pd>Physischen SDN</> zu. Gegner mit <#ba.physicalvul>Physisch-Empfänglichkeit</> werden durch diesen Schlag <#ba.airborne>Angehoben</>.",
-            "ConditionData": {},
-            "Type": 3,
-            "Cooldown": 10,
-            "CostType": "UltimateSp",
-            "CostValue": 70,
-            "Params": [
-                {
-                    "Text": "Ultimative Energiekosten",
-                    "ConditionId": "",
-                    "Values": [
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70
-                    ]
-                },
-                {
-                    "Text": "Abklingzeit",
-                    "ConditionId": "",
-                    "Values": [
-                        "10Sek.",
-                        "10Sek.",
-                        "10Sek.",
-                        "10Sek.",
-                        "10Sek.",
-                        "10Sek.",
-                        "10Sek.",
-                        "10Sek.",
-                        "10Sek.",
-                        "10Sek.",
-                        "10Sek.",
-                        "10Sek."
-                    ]
-                },
-                {
-                    "Text": "SDN-Multiplikator",
-                    "ConditionId": "",
-                    "Values": [
-                        "489%",
-                        "538%",
-                        "586%",
-                        "635%",
-                        "684%",
-                        "733%",
-                        "782%",
-                        "831%",
-                        "880%",
-                        "941%",
-                        "1014%",
-                        "1100%"
-                    ]
-                },
-                {
-                    "Text": "Taumeln",
-                    "ConditionId": "",
-                    "Values": [
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "20",
-                        "20",
-                        "20"
-                    ]
-                }
-            ]
-        },
         "chr_0021_whiten_NormalAttack": {
             "Icon": "skillicon/icon_attack_lance",
             "Element": "Physical",
@@ -321,9 +169,9 @@
             "Desc": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>17</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "STD-ANG-SEQ-1-Multiplikator",
@@ -434,9 +282,201 @@
                     ]
                 }
             ]
+        },
+        "chr_0021_whiten_NormalSkill": {
+            "Icon": "skillicon/icon_skill_whiten_01",
+            "Element": "Cryst",
+            "Name": "Onomatopoesie",
+            "Desc": "Ein Lanzenstoß, der eisige Schallwellen entlang eines geraden Pfades ausstößt, die <@ba.cryst>Kryo-SDN</> verursachen und alle getroffenen Gegner mit <#ba.crystinflict>Kryo</> belegen.",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "FP-Kosten",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "SDN-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "156%",
+                        "171%",
+                        "187%",
+                        "202%",
+                        "218%",
+                        "234%",
+                        "249%",
+                        "265%",
+                        "280%",
+                        "300%",
+                        "323%",
+                        "350%"
+                    ]
+                },
+                {
+                    "Text": "Taumeln",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0021_whiten_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_whiten_01",
+            "Element": "Physical",
+            "Name": "Tremolo",
+            "Desc": "Estella schlägt mit all ihrer Kraft mit ihrem Speerschaft zu und fügt so allen Gegnern in einem kreisförmigen Bereich um sie herum <@ba.pd>Physischen SDN</> zu. Gegner mit <#ba.physicalvul>Physisch-Empfänglichkeit</> werden durch diesen Schlag <#ba.airborne>Angehoben</>.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 10.0,
+            "CostType": "UltimateSp",
+            "CostValue": 70.0,
+            "Params": [
+                {
+                    "Text": "Ultimative Energiekosten",
+                    "ConditionId": "",
+                    "Values": [
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0
+                    ]
+                },
+                {
+                    "Text": "Abklingzeit",
+                    "ConditionId": "",
+                    "Values": [
+                        "10Sek.",
+                        "10Sek.",
+                        "10Sek.",
+                        "10Sek.",
+                        "10Sek.",
+                        "10Sek.",
+                        "10Sek.",
+                        "10Sek.",
+                        "10Sek.",
+                        "10Sek.",
+                        "10Sek.",
+                        "10Sek."
+                    ]
+                },
+                {
+                    "Text": "SDN-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "489%",
+                        "538%",
+                        "586%",
+                        "635%",
+                        "684%",
+                        "733%",
+                        "782%",
+                        "831%",
+                        "880%",
+                        "941%",
+                        "1014%",
+                        "1100%"
+                    ]
+                },
+                {
+                    "Text": "Taumeln",
+                    "ConditionId": "",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                }
+            ]
         }
     },
     "NodeSkillMap": {
+        "chr_0021_whiten_passive_skill_0_1": {
+            "Icon": "icon_talent_whiten_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Mitgefühl",
+            "Desc": "Wenn <#ba.crystbreak>Zersplittern</> ausgelöst und als Nächstes <@ba.key>Onomatopoesie</> gewirkt wird, werden <@ba.vup>7.5</> FP <#ba.return>erstattet</>. Dieser Effekt kann nicht gestapelt werden.",
+            "Type": 4
+        },
+        "chr_0021_whiten_passive_skill_0_2": {
+            "Icon": "icon_talent_whiten_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Mitgefühl",
+            "Desc": "Wenn <#ba.crystbreak>Zersplittern</> ausgelöst und als Nächstes <@ba.key>Onomatopoesie</> gewirkt wird, werden <@ba.vup>15</> FP <#ba.return>erstattet</>. Dieser Effekt kann nicht gestapelt werden.",
+            "Type": 4
+        },
+        "chr_0021_whiten_passive_skill_1_1": {
+            "Icon": "icon_talent_whiten_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Faulheit zahlt sich jetzt aus",
+            "Desc": "Ignoriert <#ba.crystonchar>Kryo</> und erleidet <@ba.vup>-10%</> <@ba.cryst>Kryo-SDN</>.",
+            "Type": 4
+        },
+        "chr_0021_whiten_passive_skill_1_2": {
+            "Icon": "icon_talent_whiten_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Faulheit zahlt sich jetzt aus",
+            "Desc": "Ignoriert <#ba.crystonchar>Kryo</> und erleidet <@ba.vup>-20%</> <@ba.cryst>Kryo-SDN</>.",
+            "Type": 4
+        },
+        "fac_chr_0021_whiten_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "Fragmentierte Ruhepause α",
+            "Desc": "Dem Kontrollnexus zuweisen, um allen Operatoren Stimmungszunahme +8 % zu gewähren.",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
         "fac_chr_0021_whiten_0_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
             "Name": "Fragmentierte Ruhepause β",
@@ -453,52 +493,12 @@
             "Index": 3,
             "Type": 5
         },
-        "chr_0021_whiten_passive_skill_0_1": {
-            "Icon": "icon_talent_whiten_01",
-            "Level": 1,
-            "Index": 0,
-            "Name": "Mitgefühl",
-            "Desc": "Wenn <#ba.crystbreak>Zersplittern</> ausgelöst und als Nächstes <@ba.key>Onomatopoesie</> gewirkt wird, werden <@ba.vup>7.5</> FP <#ba.return>erstattet</>. Dieser Effekt kann nicht gestapelt werden.",
-            "Type": 4
-        },
-        "chr_0021_whiten_passive_skill_1_1": {
-            "Icon": "icon_talent_whiten_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "Faulheit zahlt sich jetzt aus",
-            "Desc": "Ignoriert <#ba.crystonchar>Kryo</> und erleidet <@ba.vup>-10%</> <@ba.cryst>Kryo-SDN</>.",
-            "Type": 4
-        },
         "fac_chr_0021_whiten_1_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
             "Name": "Frequenzüberwachung γ",
             "Desc": "Dem Empfang zuweisen, um die Operator-Hinweissammeleffizienz um 30 % zu steigern.",
             "Level": 2,
             "Index": 3,
-            "Type": 5
-        },
-        "chr_0021_whiten_passive_skill_1_2": {
-            "Icon": "icon_talent_whiten_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "Faulheit zahlt sich jetzt aus",
-            "Desc": "Ignoriert <#ba.crystonchar>Kryo</> und erleidet <@ba.vup>-20%</> <@ba.cryst>Kryo-SDN</>.",
-            "Type": 4
-        },
-        "chr_0021_whiten_passive_skill_0_2": {
-            "Icon": "icon_talent_whiten_01",
-            "Level": 2,
-            "Index": 0,
-            "Name": "Mitgefühl",
-            "Desc": "Wenn <#ba.crystbreak>Zersplittern</> ausgelöst und als Nächstes <@ba.key>Onomatopoesie</> gewirkt wird, werden <@ba.vup>15</> FP <#ba.return>erstattet</>. Dieser Effekt kann nicht gestapelt werden.",
-            "Type": 4
-        },
-        "fac_chr_0021_whiten_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
-            "Name": "Fragmentierte Ruhepause α",
-            "Desc": "Dem Kontrollnexus zuweisen, um allen Operatoren Stimmungszunahme +8 % zu gewähren.",
-            "Level": 1,
-            "Index": 2,
             "Type": 5
         }
     },

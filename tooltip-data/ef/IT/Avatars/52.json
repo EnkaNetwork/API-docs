@@ -1,0 +1,743 @@
+{
+    "StrId": "chr_0038_purrche",
+    "Name": "Purrchena",
+    "Rarity": 5,
+    "Element": "Physical",
+    "Profession": "DEFENDER",
+    "Conditions": {},
+    "WeaponType": "Sword",
+    "MainAttrId": 39,
+    "SubAttrId": 42,
+    "AttributeNodes": {
+        "chr_0038_purrche_1": {
+            "39": 10.0
+        },
+        "chr_0038_purrche_3": {
+            "39": 15.0
+        },
+        "chr_0038_purrche_5": {
+            "39": 15.0
+        },
+        "chr_0038_purrche_7": {
+            "39": 20.0
+        }
+    },
+    "SkillInfoMap": {
+        "chr_0038_purrche_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_purrche_01",
+            "Element": "Physical",
+            "Name": "TORTA O \"REGALINO\"",
+            "Desc": "ATTIVAZIONE COMBO: quando l'operatore controllato viene attaccato.\nLancia un <@ba.key>pacco regalo</> all'operatore controllato. Il <@ba.key>pacco regalo</> si apre dopo un breve intervallo, conferendo <@ba.heal>Cura PS</> agli operatori vicini, e rivela in modo causale uno dei seguenti elementi innescando gli effetti dell'elemento rivelato:\n<@ba.key>Bomba</> - Infligge <@ba.pd>danni fisici</> e Vacillamento aggiuntivo ai nemici nel raggio d'azione.\n<@ba.key>Lavoro artigianale</> - Attira continuamente i nemici vicini e infligge <@ba.pd>danni fisici</>.\n<@ba.key>Dolce gustoso</> - Conferisce <@ba.heal>Cura PS</> all'operatore controllato.\nL'attributo Volontà aumenta la quantità di cura PS.",
+            "ConditionData": {},
+            "Type": 2,
+            "Cooldown": 24.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Tempo di recupero",
+                    "ConditionId": "",
+                    "Values": [
+                        "24s",
+                        "24s",
+                        "24s",
+                        "24s",
+                        "24s",
+                        "24s",
+                        "24s",
+                        "24s",
+                        "24s",
+                        "24s",
+                        "24s",
+                        "24s"
+                    ]
+                },
+                {
+                    "Text": "Cura base",
+                    "ConditionId": "",
+                    "Values": [
+                        "216",
+                        "259",
+                        "302",
+                        "346",
+                        "367",
+                        "389",
+                        "410",
+                        "432",
+                        "454",
+                        "464",
+                        "475",
+                        "486"
+                    ]
+                },
+                {
+                    "Text": "Aumento Cura basato su Volontà",
+                    "ConditionId": "",
+                    "Values": [
+                        "0.5",
+                        "0.6",
+                        "0.71",
+                        "0.81",
+                        "0.86",
+                        "0.91",
+                        "0.96",
+                        "1.01",
+                        "1.06",
+                        "1.08",
+                        "1.11",
+                        "1.13"
+                    ]
+                },
+                {
+                    "Text": "Moltiplicatore danni da bomba",
+                    "ConditionId": "",
+                    "Values": [
+                        "133%",
+                        "147%",
+                        "160%",
+                        "173%",
+                        "187%",
+                        "200%",
+                        "213%",
+                        "227%",
+                        "240%",
+                        "257%",
+                        "277%",
+                        "300%"
+                    ]
+                },
+                {
+                    "Text": "Bomba: Vacillamento",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Lavoro artigianale: moltiplicatore danni",
+                    "ConditionId": "",
+                    "Values": [
+                        "66%",
+                        "72%",
+                        "79%",
+                        "85%",
+                        "95%",
+                        "101%",
+                        "108%",
+                        "114%",
+                        "120%",
+                        "127%",
+                        "138%",
+                        "150%"
+                    ]
+                },
+                {
+                    "Text": "Dolce gustoso: Cura base",
+                    "ConditionId": "",
+                    "Values": [
+                        "144",
+                        "173",
+                        "202",
+                        "230",
+                        "245",
+                        "259",
+                        "274",
+                        "288",
+                        "302",
+                        "310",
+                        "317",
+                        "324"
+                    ]
+                },
+                {
+                    "Text": "Dolce gustoso: Aumento Cura basato su Volontà",
+                    "ConditionId": "",
+                    "Values": [
+                        "0.34",
+                        "0.4",
+                        "0.47",
+                        "0.54",
+                        "0.57",
+                        "0.6",
+                        "0.64",
+                        "0.67",
+                        "0.71",
+                        "0.72",
+                        "0.74",
+                        "0.76"
+                    ]
+                },
+                {
+                    "Text": "Incremento Energia suprema",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0038_purrche_NormalAttack": {
+            "Icon": "skillicon/icon_attack_sword",
+            "Element": "Physical",
+            "Name": "DOLCE! MANGIALO!",
+            "Desc": "ATTACCO BASE: \nsequenza di massimo 3 attacchi che infliggono <@ba.pd>danni fisici</>. In caso di operatore controllato, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>21</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA.",
+            "ConditionData": {},
+            "Type": 0,
+            "Cooldown": 0.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Moltiplicatore SEQ ATTB 1",
+                    "ConditionId": "",
+                    "Values": [
+                        "48%",
+                        "53%",
+                        "58%",
+                        "62%",
+                        "67%",
+                        "72%",
+                        "77%",
+                        "82%",
+                        "86%",
+                        "92%",
+                        "100%",
+                        "108%"
+                    ]
+                },
+                {
+                    "Text": "Moltiplicatore SEQ ATTB 2",
+                    "ConditionId": "",
+                    "Values": [
+                        "52%",
+                        "57%",
+                        "62%",
+                        "67%",
+                        "72%",
+                        "77%",
+                        "82%",
+                        "88%",
+                        "93%",
+                        "99%",
+                        "107%",
+                        "116%"
+                    ]
+                },
+                {
+                    "Text": "Moltiplicatore SEQ ATTB 3",
+                    "ConditionId": "",
+                    "Values": [
+                        "102%",
+                        "112%",
+                        "122%",
+                        "133%",
+                        "143%",
+                        "153%",
+                        "163%",
+                        "173%",
+                        "184%",
+                        "196%",
+                        "212%",
+                        "230%"
+                    ]
+                },
+                {
+                    "Text": "Moltiplicatore ATT mossa letale",
+                    "ConditionId": "",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Moltiplicatore ATT dall'alto",
+                    "ConditionId": "",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "chr_0038_purrche_NormalSkill": {
+            "Icon": "skillicon/icon_skill_purrche_01",
+            "Element": "Natural",
+            "Name": "NON STO DORMENDO!",
+            "Desc": "Purrchena alza il suo scudo per bloccare un attacco e <#ba.return>recupera</> immediatamente PA. Finché tiene lo scudo alzato, conferisce <#ba.guard>Protezione</> a se stessa e agli operatori nelle vicinanze. Durante l'abilità di combattimento, il primo blocco riuscito estende la durata dello scudo alzato e le fa <#ba.return>recuperare</> PA aggiuntivi. Dopo l'attivazione, l'abilità di combattimento di Purrchena viene temporaneamente sostituita da <@ba.key>LASCIA IN PACE I MIEI AMICI!</>.\n<@ba.key>LASCIA IN PACE I MIEI AMICI!</>: Purrchena colpisce un bersaglio davanti a sé con una testata, infliggendo <@ba.natur>danni da natura</> e applicando <#ba.naturalinflict>Afflizione da natura</>.\n<@ba.info>La protezione conferita mentre lo scudo è alzato si riduce dopo ogni attacco bloccato.</>",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Costo PA",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "Protezione",
+                    "ConditionId": "",
+                    "Values": [
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%"
+                    ]
+                },
+                {
+                    "Text": "Durata scudo attivo (s)",
+                    "ConditionId": "",
+                    "Values": [
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3"
+                    ]
+                },
+                {
+                    "Text": "Durata scudo attivo dopo blocco riuscito (s)",
+                    "ConditionId": "",
+                    "Values": [
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3"
+                    ]
+                },
+                {
+                    "Text": "Moltiplicatore danni da testata",
+                    "ConditionId": "",
+                    "Values": [
+                        "178%",
+                        "195%",
+                        "213%",
+                        "231%",
+                        "249%",
+                        "266%",
+                        "284%",
+                        "302%",
+                        "320%",
+                        "342%",
+                        "369%",
+                        "400%"
+                    ]
+                },
+                {
+                    "Text": "Vacillamento da testata",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Restituzione PA",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Restituzione PA aggiuntiva",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                }
+            ]
+        },
+        "chr_0038_purrche_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_purrche_01",
+            "Element": "Physical",
+            "Name": "VIETATO FARE I CATTIVI!",
+            "Desc": "Purrchena apre 3 <@ba.key>Regalini della grande Felinar</>. Ogni <@ba.key>Regalino della grande Felinar</> rivela casualmente una <@ba.key>Bomba</> o un pezzo di <@ba.key>Lavoro artigianale</>.\nEsiste la possibilità che il Regalino riveli la <@ba.key>Specialità dell'ambasciatrice</> che applica <#ba.spellvul>Suscettibilità alle Arti</> e infligge <@ba.pd>danni fisici</> e Vacillamento aggiuntivo ai nemici.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 20.0,
+            "CostType": "UltimateSp",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "Costo energia suprema",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "Tempo di recupero",
+                    "ConditionId": "",
+                    "Values": [
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s"
+                    ]
+                },
+                {
+                    "Text": "Moltiplicatore danni da bomba",
+                    "ConditionId": "",
+                    "Values": [
+                        "133%",
+                        "147%",
+                        "160%",
+                        "173%",
+                        "187%",
+                        "200%",
+                        "213%",
+                        "227%",
+                        "240%",
+                        "257%",
+                        "277%",
+                        "300%"
+                    ]
+                },
+                {
+                    "Text": "Bomba: Vacillamento",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Lavoro artigianale: moltiplicatore danni",
+                    "ConditionId": "",
+                    "Values": [
+                        "66%",
+                        "72%",
+                        "79%",
+                        "85%",
+                        "95%",
+                        "101%",
+                        "108%",
+                        "114%",
+                        "120%",
+                        "127%",
+                        "138%",
+                        "150%"
+                    ]
+                },
+                {
+                    "Text": "Specialità dell'ambasciatrice: probabilità di base",
+                    "ConditionId": "",
+                    "Values": [
+                        "15%",
+                        "15%",
+                        "15%",
+                        "15%",
+                        "15%",
+                        "15%",
+                        "15%",
+                        "15%",
+                        "18%",
+                        "18%",
+                        "18%",
+                        "20%"
+                    ]
+                },
+                {
+                    "Text": "Specialità dell'ambasciatrice: moltiplicatore danni",
+                    "ConditionId": "",
+                    "Values": [
+                        "267%",
+                        "293%",
+                        "320%",
+                        "347%",
+                        "373%",
+                        "400%",
+                        "427%",
+                        "453%",
+                        "480%",
+                        "513%",
+                        "553%",
+                        "600%"
+                    ]
+                },
+                {
+                    "Text": "Specialità dell'ambasciatrice: Vacillamento",
+                    "ConditionId": "",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                },
+                {
+                    "Text": "Durata Suscettibilità (s)",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "Suscettibilità",
+                    "ConditionId": "",
+                    "Values": [
+                        "1.5%",
+                        "1.5%",
+                        "1.5%",
+                        "1.5%",
+                        "1.5%",
+                        "1.5%",
+                        "1.5%",
+                        "1.5%",
+                        "2%",
+                        "2%",
+                        "2%",
+                        "2.5%"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0038_purrche_passive_skill_0_1": {
+            "Icon": "icon_talent_purrche_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Le tue scuse sono ARRIVATE TARDI!",
+            "Desc": "Abilità di combattimento <@ba.key>NON STO DORMENDO!</> migliorata: dopo aver bloccato con successo un attacco nemico per la prima volta, l'abilità conferisce <@ba.vup>6</> energia suprema aggiuntiva. La probabilità di una <@ba.key>Specialità dell'ambasciatrice</> durante la prossima abilità suprema <@ba.key>VIETATO FARE I CATTIVI!</> è aumentata di un <@ba.vup>10%</>. Accumuli massimi: <@ba.vup>3</>.",
+            "Type": 4
+        },
+        "chr_0038_purrche_passive_skill_0_2": {
+            "Icon": "icon_talent_purrche_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Le tue scuse sono ARRIVATE TARDI!",
+            "Desc": "Abilità di combattimento <@ba.key>NON STO DORMENDO!</> migliorata: dopo aver bloccato con successo un attacco nemico per la prima volta, l'abilità conferisce <@ba.vup>10</> energia suprema aggiuntiva. La probabilità di una <@ba.key>Specialità dell'ambasciatrice</> durante la prossima abilità suprema <@ba.key>VIETATO FARE I CATTIVI!</> è aumentata di un <@ba.vup>10%</>. Accumuli massimi: <@ba.vup>3</>.",
+            "Type": 4
+        },
+        "chr_0038_purrche_passive_skill_1_1": {
+            "Icon": "icon_talent_purrche_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Dovere dell'ambasciatrice",
+            "Desc": "Quando vengono schierati in battaglia, tutti gli operatori nella squadra con PS massimi subiscono un <@ba.vup>50%</> di danni in meno dal prossimo colpo ricevuto.\nPer ogni operatore, questo effetto si attiva solo una volta ogni <@ba.vup>180</> s.",
+            "Type": 4
+        },
+        "chr_0038_purrche_passive_skill_1_2": {
+            "Icon": "icon_talent_purrche_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Dovere dell'ambasciatrice",
+            "Desc": "Quando vengono schierati in battaglia, tutti gli operatori nella squadra con PS massimi subiscono un <@ba.vup>50%</> di danni in meno dal prossimo colpo ricevuto.\nPer ogni operatore, questo effetto si attiva solo una volta ogni <@ba.vup>90</> s.",
+            "Type": 4
+        },
+        "fac_chr_0038_purrche_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
+            "Name": "Ambasciatore del marchio α",
+            "Desc": "Assegna alla sala di ricevimento per conferire agli operatori un piccolo indizio 2 UP: CCGT (si attiva all'assegnazione; non è possibile accumulare effetti dello stesso tipo).",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0038_purrche_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
+            "Name": "Ambasciatore del marchio β",
+            "Desc": "Assegna alla sala di ricevimento per conferire agli operatori l'indizio 2 UP: CCGT (si attiva all'assegnazione; non è possibile accumulare effetti dello stesso tipo).",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0038_purrche_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Dolci per il debrief β",
+            "Desc": "Assegna alla cabina di produzione per aumentare del 20% l'efficienza di produzione del materiale ESP operatore.",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0038_purrche_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Dolci per il debrief γ",
+            "Desc": "Assegna alla cabina di produzione per aumentare del 30% l'efficienza di produzione del materiale ESP operatore.",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        }
+    },
+    "Potentials": {
+        "1": {
+            "Name": "Caldo come il sole",
+            "Desc": "Abilità suprema <@ba.key>VIETATO FARE I CATTIVI!</> migliorata: la probabilità base di una <@ba.key>Specialità dell'ambasciatrice</> aumenta di <@ba.vup>1.5</> volte rispetto all'originale."
+        },
+        "2": {
+            "Name": "\"Super energica\"",
+            "Desc": "<@ba.vup>+20</> di Difesa, <@ba.vup>+20</> di Volontà."
+        },
+        "3": {
+            "Name": "\"Regalini\" utili",
+            "Desc": "L'abilità combo <@ba.key>TORTA O \"REGALINO\"</> è migliorata: \n<@ba.key>Bomba</> - Il moltiplicatore danni aumenta di <@ba.vup>1.2</> volte rispetto all'originale. \n<@ba.key>Lavoro artigianale</> - Raggio d'azione <@ba.vup>+20%</>. \n<@ba.key>Dolce gustoso</> - Cura PS aumenta di <@ba.vup>1.2</> volte rispetto all'originale."
+        },
+        "4": {
+            "Name": "Dopo la festa",
+            "Desc": "Abilità suprema <@ba.key>VIETATO FARE I CATTIVI!</> migliorata: <@ba.vup>-15%</> al costo di energia suprema."
+        },
+        "5": {
+            "Name": "Ardente come la brace",
+            "Desc": "Abilità suprema <@ba.key>VIETATO FARE I CATTIVI!</> migliorata: il moltiplicatore danni di \n<@ba.key>Specialità dell'ambasciatrice</> aumenta di <@ba.vup>1.2</> volte rispetto all'originale.\n<@ba.key>Specialità dell'ambasciatrice</>: <#ba.spellvul>Suscettibilità alle Arti</> aumenta di <@ba.vup>1.2</> volte rispetto all'originale."
+        }
+    }
+}

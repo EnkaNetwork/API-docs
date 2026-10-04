@@ -9,17 +9,17 @@
     "MainAttrId": 41,
     "SubAttrId": 39,
     "AttributeNodes": {
-        "chr_0023_antal_3": {
-            "41": 15
-        },
         "chr_0023_antal_1": {
-            "41": 10
+            "41": 10.0
+        },
+        "chr_0023_antal_3": {
+            "41": 15.0
         },
         "chr_0023_antal_5": {
-            "41": 15
+            "41": 15.0
         },
         "chr_0023_antal_7": {
-            "41": 20
+            "41": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "PEMICU KOMBO: Saat musuh yang sedang terkena <@ba.key>Focus</> terkena <#ba.physicalstatus>Status Fisik</> atau <#ba.spellinflict>Arts Infliction</>. \nMengaktifkan 1 ledakan energi kepada musuh yang akan menimbulkan <@ba.pulse>Electric DMG</> dan mengakibatkan tumpukan <#ba.physicalstatus>Status Fisik</> atau <#ba.spellinflict>Arts Infliction</> yang sama lagi.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 25,
+            "Cooldown": 25.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Cooldown",
@@ -115,9 +115,9 @@
             "Desc": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.pulse>Electric DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>15</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pulse>Electric DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pulse>Electric DMG</> sangat besar dan memulihkan sebagian SP.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Pengganda BATK SEQ 1",
@@ -229,109 +229,6 @@
                 }
             ]
         },
-        "chr_0023_antal_UltimateSkill": {
-            "Icon": "skillicon/icon_ultimate_skill_antal_01",
-            "Element": "Pulse",
-            "Name": "Overclocked Moment",
-            "Desc": "Memberikan <#ba.pulseenhance>Electric Amp</> dan <#ba.fireenhance>Heat Amp</> untuk sementara kepada seluruh tim.",
-            "ConditionData": {},
-            "Type": 3,
-            "Cooldown": 20,
-            "CostType": "UltimateSp",
-            "CostValue": 100,
-            "Params": [
-                {
-                    "Text": "Biaya Energi Ultimate",
-                    "ConditionId": "",
-                    "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
-                    ]
-                },
-                {
-                    "Text": "Cooldown",
-                    "ConditionId": "",
-                    "Values": [
-                        "20dtk",
-                        "20dtk",
-                        "20dtk",
-                        "20dtk",
-                        "20dtk",
-                        "20dtk",
-                        "20dtk",
-                        "20dtk",
-                        "20dtk",
-                        "20dtk",
-                        "20dtk",
-                        "20dtk"
-                    ]
-                },
-                {
-                    "Text": "Electric Amp",
-                    "ConditionId": "",
-                    "Values": [
-                        "8%",
-                        "9%",
-                        "10%",
-                        "11%",
-                        "12%",
-                        "13%",
-                        "14%",
-                        "15%",
-                        "16%",
-                        "17%",
-                        "18%",
-                        "20%"
-                    ]
-                },
-                {
-                    "Text": "Heat Amp",
-                    "ConditionId": "",
-                    "Values": [
-                        "8%",
-                        "9%",
-                        "10%",
-                        "11%",
-                        "12%",
-                        "13%",
-                        "14%",
-                        "15%",
-                        "16%",
-                        "17%",
-                        "18%",
-                        "20%"
-                    ]
-                },
-                {
-                    "Text": "Durasi (dtk)",
-                    "ConditionId": "",
-                    "Values": [
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12"
-                    ]
-                }
-            ]
-        },
         "chr_0023_antal_NormalSkill": {
             "Icon": "skillicon/icon_skill_antal_01",
             "Element": "Pulse",
@@ -339,26 +236,26 @@
             "Desc": "Mengakibatkan <@ba.key>Focus</> berdurasi panjang kepada musuh dan menimbulkan <@ba.pulse>Electric DMG</>. Musuh yang sedang terkena <@ba.key>Focus</> juga akan terkena <#ba.pulsevul>Electric Susceptibility</> dan <#ba.firevul>Heat Susceptibility</>. <@ba.key>Focus</> hanya bisa diakibatkan kepada 1 musuh setiap kalinya.",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "Biaya SP",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -434,55 +331,118 @@
                     ]
                 }
             ]
+        },
+        "chr_0023_antal_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_antal_01",
+            "Element": "Pulse",
+            "Name": "Overclocked Moment",
+            "Desc": "Memberikan <#ba.pulseenhance>Electric Amp</> dan <#ba.fireenhance>Heat Amp</> untuk sementara kepada seluruh tim.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 20.0,
+            "CostType": "UltimateSp",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "Biaya Energi Ultimate",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "Cooldown",
+                    "ConditionId": "",
+                    "Values": [
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk"
+                    ]
+                },
+                {
+                    "Text": "Electric Amp",
+                    "ConditionId": "",
+                    "Values": [
+                        "8%",
+                        "9%",
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "20%"
+                    ]
+                },
+                {
+                    "Text": "Heat Amp",
+                    "ConditionId": "",
+                    "Values": [
+                        "8%",
+                        "9%",
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "20%"
+                    ]
+                },
+                {
+                    "Text": "Durasi (dtk)",
+                    "ConditionId": "",
+                    "Values": [
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12"
+                    ]
+                }
+            ]
         }
     },
     "NodeSkillMap": {
-        "chr_0023_antal_passive_skill_1_2": {
-            "Icon": "icon_talent_antal_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "Subconscious Act",
-            "Desc": "Mendapatkan peluang kekebalan sebesar <@ba.vup>30%</> terhadap <@ba.pd>Physical DMG</> dan memulihkan HP diri sendiri sebesar <@ba.heal>[45 + Strength ×0.38]</>.",
-            "Type": 4
-        },
-        "fac_chr_0023_antal_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
-            "Name": "Pun-isher Studies β",
-            "Desc": "Saat ditugaskan ke Ruang Pertumbuhan, Penurunan Suasana Hati semua operator di dalamnya akan melambat sebesar 14%",
-            "Level": 1,
-            "Index": 3,
-            "Type": 5
-        },
         "chr_0023_antal_passive_skill_0_1": {
             "Icon": "icon_talent_antal_01",
             "Level": 1,
             "Index": 0,
             "Name": "Improviser",
             "Desc": "Setelah skill rekan tim yang punya <#ba.enhance>Amped</> menimbulkan DMG, Antal akan memulihkan HP rekan tim itu sebesar <@ba.heal>[72 + Strength × 0.6]</>. Efek pemulihan HP ini hanya aktif 1 kali setiap <@ba.vup>30</> dtk untuk setiap operator.",
-            "Type": 4
-        },
-        "fac_chr_0023_antal_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
-            "Name": "Experimental Arts Unit α",
-            "Desc": "Saat ditugaskan ke Kabin Manufaktur, efisiensi produksi material EXP Senjata akan meningkat sebesar +10%",
-            "Level": 1,
-            "Index": 2,
-            "Type": 5
-        },
-        "fac_chr_0023_antal_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
-            "Name": "Pun-isher Studies γ",
-            "Desc": "Saat ditugaskan ke Ruang Pertumbuhan, Penurunan Suasana Hati semua operator di dalamnya akan melambat sebesar 18%",
-            "Level": 2,
-            "Index": 3,
-            "Type": 5
-        },
-        "chr_0023_antal_passive_skill_1_1": {
-            "Icon": "icon_talent_antal_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "Subconscious Act",
-            "Desc": "Mendapatkan peluang kekebalan sebesar <@ba.vup>30%</> terhadap <@ba.pd>Physical DMG</> dan memulihkan HP diri sendiri sebesar <@ba.heal>[27 + Strength ×0.23]</>.",
             "Type": 4
         },
         "chr_0023_antal_passive_skill_0_2": {
@@ -493,12 +453,52 @@
             "Desc": "Setelah skill rekan tim yang punya <#ba.enhance>Amped</> menimbulkan DMG, Antal akan memulihkan HP rekan tim itu sebesar <@ba.heal>[108 + Strength × 0.9]</>. Efek pemulihan HP ini hanya aktif 1 kali setiap <@ba.vup>30</> dtk untuk setiap operator.",
             "Type": 4
         },
+        "chr_0023_antal_passive_skill_1_1": {
+            "Icon": "icon_talent_antal_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Subconscious Act",
+            "Desc": "Mendapatkan peluang kekebalan sebesar <@ba.vup>30%</> terhadap <@ba.pd>Physical DMG</> dan memulihkan HP diri sendiri sebesar <@ba.heal>[27 + Strength ×0.23]</>.",
+            "Type": 4
+        },
+        "chr_0023_antal_passive_skill_1_2": {
+            "Icon": "icon_talent_antal_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Subconscious Act",
+            "Desc": "Mendapatkan peluang kekebalan sebesar <@ba.vup>30%</> terhadap <@ba.pd>Physical DMG</> dan memulihkan HP diri sendiri sebesar <@ba.heal>[45 + Strength ×0.38]</>.",
+            "Type": 4
+        },
+        "fac_chr_0023_antal_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Experimental Arts Unit α",
+            "Desc": "Saat ditugaskan ke Kabin Manufaktur, efisiensi produksi material EXP Senjata akan meningkat sebesar +10%",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
         "fac_chr_0023_antal_0_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
             "Name": "Experimental Arts Unit β",
             "Desc": "Saat ditugaskan ke Kabin Manufaktur, efisiensi produksi material EXP Senjata akan meningkat sebesar +20%",
             "Level": 2,
             "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0023_antal_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
+            "Name": "Pun-isher Studies β",
+            "Desc": "Saat ditugaskan ke Ruang Pertumbuhan, Penurunan Suasana Hati semua operator di dalamnya akan melambat sebesar 14%",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0023_antal_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
+            "Name": "Pun-isher Studies γ",
+            "Desc": "Saat ditugaskan ke Ruang Pertumbuhan, Penurunan Suasana Hati semua operator di dalamnya akan melambat sebesar 18%",
+            "Level": 2,
+            "Index": 3,
             "Type": 5
         }
     },

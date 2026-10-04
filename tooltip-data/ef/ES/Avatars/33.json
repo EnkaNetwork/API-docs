@@ -9,17 +9,17 @@
     "MainAttrId": 41,
     "SubAttrId": 39,
     "AttributeNodes": {
-        "chr_0023_antal_3": {
-            "41": 15
-        },
         "chr_0023_antal_1": {
-            "41": 10
+            "41": 10.0
+        },
+        "chr_0023_antal_3": {
+            "41": 15.0
         },
         "chr_0023_antal_5": {
-            "41": 15
+            "41": 15.0
         },
         "chr_0023_antal_7": {
-            "41": 20
+            "41": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "ACTIVADOR DE COMBO: Cuando un enemigo con <@ba.key>enfoque activo</> sufre un <#ba.physicalstatus>Estado físico</> o <#ba.spellinflict>Imposición de artes</>. \nDesencadena una explosión de energía en el enemigo que inflige <@ba.pulse>DAÑ eléctrico</> y aplica una acumulación adicional del mismo <#ba.physicalstatus>Estado físico</> o <#ba.spellinflict>Imposición de artes</>.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 25,
+            "Cooldown": 25.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Tiempo de reutilización",
@@ -115,9 +115,9 @@
             "Desc": "ATAQUE BÁSICO: \nUn ataque con hasta 4 secuencias que inflige <@ba.pulse>DAÑ eléctrico</>. Como operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>15</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.pulse>DAÑ eléctrico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.pulse>DAÑ eléctrico</> y recupera algunos PH.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Multiplicador ATQB SEC 1",
@@ -229,109 +229,6 @@
                 }
             ]
         },
-        "chr_0023_antal_UltimateSkill": {
-            "Icon": "skillicon/icon_ultimate_skill_antal_01",
-            "Element": "Pulse",
-            "Name": "Momento sobreacelerado",
-            "Desc": "Aplica <#ba.pulseenhance>Amp eléctrica</> temporal y <#ba.fireenhance>Amp de calor</> temporal a todo el equipo.",
-            "ConditionData": {},
-            "Type": 3,
-            "Cooldown": 20,
-            "CostType": "UltimateSp",
-            "CostValue": 100,
-            "Params": [
-                {
-                    "Text": "Costo de energía máxima",
-                    "ConditionId": "",
-                    "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
-                    ]
-                },
-                {
-                    "Text": "Tiempo de reutilización",
-                    "ConditionId": "",
-                    "Values": [
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s"
-                    ]
-                },
-                {
-                    "Text": "Amp eléctrico",
-                    "ConditionId": "",
-                    "Values": [
-                        "8%",
-                        "9%",
-                        "10%",
-                        "11%",
-                        "12%",
-                        "13%",
-                        "14%",
-                        "15%",
-                        "16%",
-                        "17%",
-                        "18%",
-                        "20%"
-                    ]
-                },
-                {
-                    "Text": "Amp de calor",
-                    "ConditionId": "",
-                    "Values": [
-                        "8%",
-                        "9%",
-                        "10%",
-                        "11%",
-                        "12%",
-                        "13%",
-                        "14%",
-                        "15%",
-                        "16%",
-                        "17%",
-                        "18%",
-                        "20%"
-                    ]
-                },
-                {
-                    "Text": "Duración (s)",
-                    "ConditionId": "",
-                    "Values": [
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12"
-                    ]
-                }
-            ]
-        },
         "chr_0023_antal_NormalSkill": {
             "Icon": "skillicon/icon_skill_antal_01",
             "Element": "Pulse",
@@ -339,26 +236,26 @@
             "Desc": "Aplica <@ba.key>Enfoque</> de larga duración al enemigo e inflige <@ba.pulse>DAÑ eléctrico</>. Un enemigo con <@ba.key>Enfoque</> activo también sufre <#ba.pulsevul>Susceptibilidad eléctrica</> y <#ba.firevul>Susceptibilidad de calor</>. El <@ba.key>Enfoque</> solo puede aplicarse a 1 enemigo a la vez.",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "Costo de PH",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -434,55 +331,118 @@
                     ]
                 }
             ]
+        },
+        "chr_0023_antal_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_antal_01",
+            "Element": "Pulse",
+            "Name": "Momento sobreacelerado",
+            "Desc": "Aplica <#ba.pulseenhance>Amp eléctrica</> temporal y <#ba.fireenhance>Amp de calor</> temporal a todo el equipo.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 20.0,
+            "CostType": "UltimateSp",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "Costo de energía máxima",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "Tiempo de reutilización",
+                    "ConditionId": "",
+                    "Values": [
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s"
+                    ]
+                },
+                {
+                    "Text": "Amp eléctrica",
+                    "ConditionId": "",
+                    "Values": [
+                        "8%",
+                        "9%",
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "20%"
+                    ]
+                },
+                {
+                    "Text": "Amp de calor",
+                    "ConditionId": "",
+                    "Values": [
+                        "8%",
+                        "9%",
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "20%"
+                    ]
+                },
+                {
+                    "Text": "Duración (s)",
+                    "ConditionId": "",
+                    "Values": [
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12"
+                    ]
+                }
+            ]
         }
     },
     "NodeSkillMap": {
-        "chr_0023_antal_passive_skill_1_2": {
-            "Icon": "icon_talent_antal_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "Acto subconsciente",
-            "Desc": "Obtiene probabilidad de <@ba.vup>30%</> inmunidad a <@ba.pd>DAÑ físico</> y restaura sus propios PV en <@ba.heal>[45 + Fuerzax0.38]</>.",
-            "Type": 4
-        },
-        "fac_chr_0023_antal_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
-            "Name": "Estudios en juegos de palabras β",
-            "Desc": "Asignar a la Cámara de crecimiento para reducir la disminución del Estado de ánimo de todos los operadores en ella un 14 %",
-            "Level": 1,
-            "Index": 3,
-            "Type": 5
-        },
         "chr_0023_antal_passive_skill_0_1": {
             "Icon": "icon_talent_antal_01",
             "Level": 1,
             "Index": 0,
             "Name": "Improvisador",
             "Desc": "Después de que la habilidad de un compañero <#ba.enhance>Amplificado</> inflija DAÑ, Antal restaura los PV de ese compañero en <@ba.heal>[72 + Fuerza×0.6]</>. Este efecto de recuperación de los PV se activa 1 vez cada <@ba.vup>30</> s por cada operador.",
-            "Type": 4
-        },
-        "fac_chr_0023_antal_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
-            "Name": "Unidad de las Artes experimentales α",
-            "Desc": "Asignar a la Cabina de manufactura para otorgar eficiencia de producción de material de EXP de Arma en un +10 %",
-            "Level": 1,
-            "Index": 2,
-            "Type": 5
-        },
-        "fac_chr_0023_antal_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
-            "Name": "Estudios en juegos de palabras γ",
-            "Desc": "Asignar a la Cámara de crecimiento para reducir la disminución del Estado de ánimo de todos los operadores en ella un 18 %",
-            "Level": 2,
-            "Index": 3,
-            "Type": 5
-        },
-        "chr_0023_antal_passive_skill_1_1": {
-            "Icon": "icon_talent_antal_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "Acto subconsciente",
-            "Desc": "Obtiene probabilidad de <@ba.vup>30%</> inmunidad a <@ba.pd>DAÑ físico</> y restaura sus propios PV en <@ba.heal>[27 + Fuerzax0.23]</>.",
             "Type": 4
         },
         "chr_0023_antal_passive_skill_0_2": {
@@ -493,12 +453,52 @@
             "Desc": "Después de que la habilidad de un compañero <#ba.enhance>Amplificado</> inflija DAÑ, Antal restaura los PV de ese compañero en <@ba.heal>[108 + Fuerza×0.9]</>. Este efecto de recuperación de los PV se activa 1 vez cada <@ba.vup>30</> s por cada operador.",
             "Type": 4
         },
+        "chr_0023_antal_passive_skill_1_1": {
+            "Icon": "icon_talent_antal_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Acto subconsciente",
+            "Desc": "Obtiene probabilidad de <@ba.vup>30%</> inmunidad a <@ba.pd>DAÑ físico</> y restaura sus propios PV en <@ba.heal>[27 + Fuerzax0.23]</>.",
+            "Type": 4
+        },
+        "chr_0023_antal_passive_skill_1_2": {
+            "Icon": "icon_talent_antal_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Acto subconsciente",
+            "Desc": "Obtiene probabilidad de <@ba.vup>30%</> inmunidad a <@ba.pd>DAÑ físico</> y restaura sus propios PV en <@ba.heal>[45 + Fuerzax0.38]</>.",
+            "Type": 4
+        },
+        "fac_chr_0023_antal_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Unidad de las Artes experimentales α",
+            "Desc": "Asignar a la Cabina de manufactura para otorgar eficiencia de producción de material de EXP de Arma en un +10 %",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
         "fac_chr_0023_antal_0_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
             "Name": "Unidad de las Artes experimentales β",
             "Desc": "Asignar a la Cabina de manufactura para otorgar eficiencia de producción de materiales de EXP de Arma en un +20 %",
             "Level": 2,
             "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0023_antal_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
+            "Name": "Estudios en juegos de palabras β",
+            "Desc": "Asignar a la Cámara de crecimiento para reducir la disminución del Estado de ánimo de todos los operadores en ella un 14 %",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0023_antal_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
+            "Name": "Estudios en juegos de palabras γ",
+            "Desc": "Asignar a la Cámara de crecimiento para reducir la disminución del Estado de ánimo de todos los operadores en ella un 18 %",
+            "Level": 2,
+            "Index": 3,
             "Type": 5
         }
     },

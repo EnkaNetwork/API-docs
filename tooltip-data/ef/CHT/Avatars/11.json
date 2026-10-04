@@ -9,17 +9,17 @@
     "MainAttrId": 42,
     "SubAttrId": 40,
     "AttributeNodes": {
-        "chr_0012_avywen_5": {
-            "42": 15
-        },
-        "chr_0012_avywen_7": {
-            "42": 20
-        },
         "chr_0012_avywen_1": {
-            "42": 10
+            "42": 10.0
         },
         "chr_0012_avywen_3": {
-            "42": 15
+            "42": 15.0
+        },
+        "chr_0012_avywen_5": {
+            "42": 15.0
+        },
+        "chr_0012_avywen_7": {
+            "42": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "主控幹員對處於<#ba.pulseinflict>電磁附著</>或<#ba.conduct>導電</>狀態的目標<#ba.lastcombo>重擊</>後可以發動。\n躍起並向目標投擲出3支<@ba.key>雷槍</>，並對前方範圍內的敵人造成1次<@ba.pulse>電磁傷害</>。",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 13,
+            "Cooldown": 13.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "冷卻時間",
@@ -133,9 +133,9 @@
             "Desc": "普通攻擊：\n對敵人進行最多5段攻擊，造成<@ba.pd>物理傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>17</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.pd>物理傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.pd>物理傷害</>並回復一定技力。",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "普攻第一段倍率",
@@ -272,26 +272,26 @@
             "Desc": "躍起後用槍颳起旋風，對周圍的敵人造成少量<@ba.pulse>電磁傷害</>。同時召回全部<@ba.key>雷槍</>、<@ba.key>強雷槍</>。\n<@ba.key>雷槍</>被召回時若穿過敵人則對其造成<@ba.pulse>電磁傷害</>。<@ba.key>強雷槍</>造成更高的<@ba.pulse>電磁傷害</>，還會施加<#ba.pulseinflict>電磁附著</>。",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "技力消耗",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -411,26 +411,26 @@
             "Desc": "向目標區域投下一支<@ba.key>強雷槍</>，對附近敵人造成大量<@ba.pulse>電磁傷害</>。",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 10,
+            "Cooldown": 10.0,
             "CostType": "UltimateSp",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "所需終結技能量",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -509,14 +509,6 @@
         }
     },
     "NodeSkillMap": {
-        "chr_0012_avywen_passive_skill_0_2": {
-            "Icon": "icon_talent_avywen_01",
-            "Level": 2,
-            "Index": 0,
-            "Name": "高效運送",
-            "Desc": "擲出、召回<@ba.key>雷槍</>、<@ba.key>強雷槍</>命中敵人後，獲得<@ba.vup>4</>點終結技能量。",
-            "Type": 4
-        },
         "chr_0012_avywen_passive_skill_0_1": {
             "Icon": "icon_talent_avywen_01",
             "Level": 1,
@@ -525,11 +517,43 @@
             "Desc": "擲出、召回<@ba.key>雷槍</>、<@ba.key>強雷槍</>命中敵人後，獲得<@ba.vup>3</>點終結技能量。",
             "Type": 4
         },
+        "chr_0012_avywen_passive_skill_0_2": {
+            "Icon": "icon_talent_avywen_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "高效運送",
+            "Desc": "擲出、召回<@ba.key>雷槍</>、<@ba.key>強雷槍</>命中敵人後，獲得<@ba.vup>4</>點終結技能量。",
+            "Type": 4
+        },
+        "chr_0012_avywen_passive_skill_1_1": {
+            "Icon": "icon_talent_avywen_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "委婉手段",
+            "Desc": "終結技<@ba.key>雷槍·決顫</>命中敵人時對其施加<@ba.vup>6%</><#ba.pulsevul>電磁脆弱</>，持續<@ba.vup>10</>秒。",
+            "Type": 4
+        },
+        "chr_0012_avywen_passive_skill_1_2": {
+            "Icon": "icon_talent_avywen_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "委婉手段",
+            "Desc": "終結技<@ba.key>雷槍·決顫</>命中敵人時對其施加<@ba.vup>10%</><#ba.pulsevul>電磁脆弱</>，持續<@ba.vup>10</>秒。",
+            "Type": 4
+        },
         "fac_chr_0012_avywen_0_1": {
             "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
             "Name": "居家顧問·α",
             "Desc": "進駐總控中樞時，所有幹員心情恢復提升8%",
             "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0012_avywen_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "居家顧問·β",
+            "Desc": "進駐總控中樞時，所有幹員心情恢復提升12%",
+            "Level": 2,
             "Index": 2,
             "Type": 5
         },
@@ -541,14 +565,6 @@
             "Index": 3,
             "Type": 5
         },
-        "fac_chr_0012_avywen_0_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
-            "Name": "居家顧問·β",
-            "Desc": "進駐總控中樞時，所有幹員心情恢復提升12%",
-            "Level": 2,
-            "Index": 2,
-            "Type": 5
-        },
         "fac_chr_0012_avywen_1_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
             "Name": "信使的秘密·β",
@@ -556,22 +572,6 @@
             "Level": 2,
             "Index": 3,
             "Type": 5
-        },
-        "chr_0012_avywen_passive_skill_1_2": {
-            "Icon": "icon_talent_avywen_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "委婉手段",
-            "Desc": "終結技<@ba.key>雷槍·決顫</>命中敵人時對其施加<@ba.vup>10%</><#ba.pulsevul>電磁脆弱</>，持續<@ba.vup>10</>秒。",
-            "Type": 4
-        },
-        "chr_0012_avywen_passive_skill_1_1": {
-            "Icon": "icon_talent_avywen_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "委婉手段",
-            "Desc": "終結技<@ba.key>雷槍·決顫</>命中敵人時對其施加<@ba.vup>6%</><#ba.pulsevul>電磁脆弱</>，持續<@ba.vup>10</>秒。",
-            "Type": 4
         }
     },
     "Potentials": {

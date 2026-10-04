@@ -9,17 +9,17 @@
     "MainAttrId": 41,
     "SubAttrId": 42,
     "AttributeNodes": {
-        "chr_0025_ardelia_7": {
-            "41": 20
+        "chr_0025_ardelia_1": {
+            "41": 10.0
         },
         "chr_0025_ardelia_3": {
-            "41": 15
-        },
-        "chr_0025_ardelia_1": {
-            "41": 10
+            "41": 15.0
         },
         "chr_0025_ardelia_5": {
-            "41": 15
+            "41": 15.0
+        },
+        "chr_0025_ardelia_7": {
+            "41": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "操作中のオペレーターが<#ba.noguard>クラッシュ</>または<#ba.spellinflict>アーツ付着</>状態<@ba.key>でない</>敵に<#ba.lastcombo>重攻撃</>を与えると発動可能。\n敵に火山雲を放ち、接近後に<@ba.natur>自然ダメージ</>を与える。火山雲は敵を追尾し、一定時間後に爆発する。周囲の他の敵には、そのダメージの半分の<@ba.natur>自然ダメージ</>を与え、強制的に短時間<#ba.corrupt>腐食</>状態にする。",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 18,
+            "Cooldown": 18.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "クールタイム",
@@ -151,9 +151,9 @@
             "Desc": "通常攻撃：\n最大4段の攻撃で敵に<@ba.natur>自然ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>18</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.natur>自然ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.natur>自然ダメージ</>を与えてSPを一定量回復する。",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "通常攻撃1段目ダメージ倍率",
@@ -272,26 +272,26 @@
             "Desc": "ドリーさんに乗って敵に突進し、<@ba.natur>自然ダメージ</>を与える。<#ba.corrupt>腐食</>状態の敵に命中した場合、<#ba.corrupt>腐食</>状態を<#ba.consume>消費</>し、<#ba.physicalvul>物理脆弱</>と<#ba.spellvul>アーツ脆弱</>を付与する。",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "SP消費",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -375,26 +375,26 @@
             "Desc": "アルデリアは移動できる状態で持続的にアーツを放つ。ドリーさんの助けを呼び、周囲にドリーさんの分身を放つ。分身が敵に命中するたびに、<@ba.natur>自然ダメージ</>を与える。同じ敵は0.3秒に1回までダメージを受ける。",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 15,
+            "Cooldown": 15.0,
             "CostType": "UltimateSp",
-            "CostValue": 90,
+            "CostValue": 90.0,
             "Params": [
                 {
                     "Text": "必殺チャージ消費",
                     "ConditionId": "",
                     "Values": [
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0
                     ]
                 },
                 {
@@ -481,30 +481,6 @@
             "Desc": "戦技<@ba.key>「ドリーラッシュ」</>が敵に命中すると、<@ba.key>ドリーさんの影</>を3個生成する\n必殺技<@ba.key>「もふもふパーティー」</>で放たれたドリーさんの分身が着地するとき、10%の確率で<@ba.key>ドリーさんの影</>を生成する\n操作中のオペレーターが<@ba.key>ドリーさんの影</>に触れると、アルデリアがそのオペレーターのHPを<@ba.heal>[45+意志×0.38]</>回復させる\n<@ba.info>操作中のオペレーターのHPが100%のとき、チーム内でHPの割合が最も低いオペレーターを治療する</>\n<@ba.info>ドリーさんの影は10秒間持続し、同時に最大10個まで存在できる</>",
             "Type": 4
         },
-        "fac_chr_0025_ardelia_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
-            "Name": "大地の物語・β",
-            "Desc": "応接室配属時、手がかり捜索速度+20%",
-            "Level": 1,
-            "Index": 2,
-            "Type": 5
-        },
-        "chr_0025_ardelia_passive_skill_1_1": {
-            "Icon": "icon_talent_ardelia_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "山頂サーフィン",
-            "Desc": "アルデリアの戦技<@ba.key>「ドリーラッシュ」</>の追加効果が発動したとき、近くに他の<#ba.corrupt>腐食</>状態の敵がいる場合、その敵に戦技をもう1回発動する\n<@ba.info>この効果は戦技の発動1回につき、1回のみ発動可能</>",
-            "Type": 4
-        },
-        "fac_chr_0025_ardelia_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
-            "Name": "ドリーさんのゲーム・γ",
-            "Desc": "応接室配属時、船室内全員の体力消耗-18%",
-            "Level": 2,
-            "Index": 3,
-            "Type": 5
-        },
         "chr_0025_ardelia_passive_skill_0_2": {
             "Icon": "icon_talent_ardelia_01",
             "Level": 2,
@@ -512,14 +488,6 @@
             "Name": "友の面影",
             "Desc": "戦技<@ba.key>「ドリーラッシュ」</>が敵に命中すると、<@ba.key>ドリーさんの影</>を3個生成する\n必殺技<@ba.key>「もふもふパーティー」</>で放たれたドリーさんの分身が着地するとき、10%の確率で<@ba.key>ドリーさんの影</>を生成する\n操作中のオペレーターが<@ba.key>ドリーさんの影</>に触れると、アルデリアがそのオペレーターのHPを<@ba.heal>[63+意志×0.53]</>回復させる\n<@ba.info>操作中のオペレーターのHPが100%のとき、チーム内でHPの割合が最も低いオペレーターを治療する</>\n<@ba.info>ドリーさんの影は10秒間持続し、同時に最大10個まで存在できる</>",
             "Type": 4
-        },
-        "fac_chr_0025_ardelia_0_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
-            "Name": "大地の物語・γ",
-            "Desc": "応接室配属時、手がかり捜索速度+30%",
-            "Level": 2,
-            "Index": 2,
-            "Type": 5
         },
         "chr_0025_ardelia_passive_skill_0_3": {
             "Icon": "icon_talent_ardelia_01",
@@ -529,11 +497,43 @@
             "Desc": "戦技<@ba.key>「ドリーラッシュ」</>が敵に命中すると、<@ba.key>ドリーさんの影</>を3個生成する\n必殺技<@ba.key>「もふもふパーティー」</>で放たれたドリーさんの分身が着地するとき、10%の確率で<@ba.key>ドリーさんの影</>を生成する\n操作中のオペレーターが<@ba.key>ドリーさんの影</>に触れると、アルデリアがそのオペレーターのHPを<@ba.heal>[90+意志×0.75]</>回復させる\n<@ba.info>操作中のオペレーターのHPが100%のとき、チーム内でHPの割合が最も低いオペレーターを治療する</>\n<@ba.info>ドリーさんの影は10秒間持続し、同時に最大10個まで存在できる</>",
             "Type": 4
         },
+        "chr_0025_ardelia_passive_skill_1_1": {
+            "Icon": "icon_talent_ardelia_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "山頂サーフィン",
+            "Desc": "アルデリアの戦技<@ba.key>「ドリーラッシュ」</>の追加効果が発動したとき、近くに他の<#ba.corrupt>腐食</>状態の敵がいる場合、その敵に戦技をもう1回発動する\n<@ba.info>この効果は戦技の発動1回につき、1回のみ発動可能</>",
+            "Type": 4
+        },
+        "fac_chr_0025_ardelia_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
+            "Name": "大地の物語・β",
+            "Desc": "応接室配属時、手がかり捜索速度+20%",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0025_ardelia_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
+            "Name": "大地の物語・γ",
+            "Desc": "応接室配属時、手がかり捜索速度+30%",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
         "fac_chr_0025_ardelia_1_1": {
             "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
             "Name": "ドリーさんのゲーム・β",
             "Desc": "応接室配属時、船室内全員の体力消耗-14%",
             "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0025_ardelia_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
+            "Name": "ドリーさんのゲーム・γ",
+            "Desc": "応接室配属時、船室内全員の体力消耗-18%",
+            "Level": 2,
             "Index": 3,
             "Type": 5
         }

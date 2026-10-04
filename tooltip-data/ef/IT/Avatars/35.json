@@ -9,17 +9,17 @@
     "MainAttrId": 39,
     "SubAttrId": 42,
     "AttributeNodes": {
-        "chr_0020_meurs_3": {
-            "39": 15
-        },
-        "chr_0020_meurs_7": {
-            "39": 20
-        },
         "chr_0020_meurs_1": {
-            "39": 10
+            "39": 10.0
+        },
+        "chr_0020_meurs_3": {
+            "39": 15.0
         },
         "chr_0020_meurs_5": {
-            "39": 15
+            "39": 15.0
+        },
+        "chr_0020_meurs_7": {
+            "39": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "ATTIVAZIONE COMBO: quando un nemico inizia a caricare un'abilità, o quando l'operatore controllato viene attaccato e i suoi PS scendono sotto un 40%. \nEsegue un potente pugno verso il basso che infligge <@ba.pd>danni fisici</> al nemico, conferendo <#ba.shield>scudi</> a sé e a un altro compagno di squadra (con priorità all'operatore controllato).\nLa DIF può aumentare ulteriormente i punti scudo.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 35,
+            "Cooldown": 35.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Tempo di recupero",
@@ -180,6 +180,127 @@
                 }
             ]
         },
+        "chr_0020_meurs_NormalAttack": {
+            "Icon": "skillicon/icon_attack_claym",
+            "Element": "Physical",
+            "Name": "Strategia di base",
+            "Desc": "ATTACCO BASE: \nsequenza di massimo quattro attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>22</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA.",
+            "ConditionData": {},
+            "Type": 0,
+            "Cooldown": 0.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Moltiplicatore SEQ ATTB 1",
+                    "ConditionId": "",
+                    "Values": [
+                        "35%",
+                        "39%",
+                        "42%",
+                        "46%",
+                        "49%",
+                        "53%",
+                        "56%",
+                        "60%",
+                        "63%",
+                        "67%",
+                        "73%",
+                        "79%"
+                    ]
+                },
+                {
+                    "Text": "Moltiplicatore SEQ ATTB 2",
+                    "ConditionId": "",
+                    "Values": [
+                        "39%",
+                        "42%",
+                        "46%",
+                        "50%",
+                        "54%",
+                        "58%",
+                        "62%",
+                        "65%",
+                        "69%",
+                        "74%",
+                        "80%",
+                        "87%"
+                    ]
+                },
+                {
+                    "Text": "Moltiplicatore SEQ ATTB 3",
+                    "ConditionId": "",
+                    "Values": [
+                        "54%",
+                        "59%",
+                        "65%",
+                        "70%",
+                        "76%",
+                        "81%",
+                        "86%",
+                        "92%",
+                        "97%",
+                        "104%",
+                        "112%",
+                        "122%"
+                    ]
+                },
+                {
+                    "Text": "Moltiplicatore SEQ ATTB 4",
+                    "ConditionId": "",
+                    "Values": [
+                        "71%",
+                        "78%",
+                        "85%",
+                        "92%",
+                        "99%",
+                        "107%",
+                        "114%",
+                        "121%",
+                        "128%",
+                        "137%",
+                        "147%",
+                        "160%"
+                    ]
+                },
+                {
+                    "Text": "Moltiplicatore ATT mossa letale",
+                    "ConditionId": "",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Moltiplicatore ATT dall'alto",
+                    "ConditionId": "",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
         "chr_0020_meurs_NormalSkill": {
             "Icon": "skillicon/icon_skill_meurs_01",
             "Element": "Physical",
@@ -187,26 +308,26 @@
             "Desc": "Solleva uno scudo in grado di bloccare gli attacchi, conferisce <#ba.guard>Protezione</> a sé e agli operatori vicini e <#ba.return>ripristina</> immediatamente parte dei PA. \nSe riceve un attacco mentre lo scudo è sollevato, sferra un contrattacco che infligge <@ba.pd>danni fisici</> e applica 1 accumulo di <#ba.noguard>Vulnerabilità</> al nemico attaccante.",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "Costo PA",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -290,26 +411,26 @@
             "Desc": "Brandisce lo spadone per eseguire due fendenti consecutivi che infliggono <@ba.pd>danni fisici</> e applicano <#ba.weak>Debolezza</>, seguiti da un potente colpo dall'alto che infligge ingenti <@ba.pd>danni fisici</> e applica <#ba.knockdown>Abbattimento</> a tutti i nemici nell'area d'effetto.",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 15,
+            "Cooldown": 15.0,
             "CostType": "UltimateSp",
-            "CostValue": 80,
+            "CostValue": 80.0,
             "Params": [
                 {
                     "Text": "Costo energia suprema",
                     "ConditionId": "",
                     "Values": [
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0
                     ]
                 },
                 {
@@ -475,145 +596,16 @@
                     ]
                 }
             ]
-        },
-        "chr_0020_meurs_NormalAttack": {
-            "Icon": "skillicon/icon_attack_claym",
-            "Element": "Physical",
-            "Name": "Strategia di base",
-            "Desc": "ATTACCO BASE: \nsequenza di massimo quattro attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>22</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA.",
-            "ConditionData": {},
-            "Type": 0,
-            "Cooldown": 0,
-            "CostType": "UltimateSp",
-            "CostValue": 0,
-            "Params": [
-                {
-                    "Text": "Moltiplicatore SEQ ATTB 1",
-                    "ConditionId": "",
-                    "Values": [
-                        "35%",
-                        "39%",
-                        "42%",
-                        "46%",
-                        "49%",
-                        "53%",
-                        "56%",
-                        "60%",
-                        "63%",
-                        "67%",
-                        "73%",
-                        "79%"
-                    ]
-                },
-                {
-                    "Text": "Moltiplicatore SEQ ATTB 2",
-                    "ConditionId": "",
-                    "Values": [
-                        "39%",
-                        "42%",
-                        "46%",
-                        "50%",
-                        "54%",
-                        "58%",
-                        "62%",
-                        "65%",
-                        "69%",
-                        "74%",
-                        "80%",
-                        "87%"
-                    ]
-                },
-                {
-                    "Text": "Moltiplicatore SEQ ATTB 3",
-                    "ConditionId": "",
-                    "Values": [
-                        "54%",
-                        "59%",
-                        "65%",
-                        "70%",
-                        "76%",
-                        "81%",
-                        "86%",
-                        "92%",
-                        "97%",
-                        "104%",
-                        "112%",
-                        "122%"
-                    ]
-                },
-                {
-                    "Text": "Moltiplicatore SEQ ATTB 4",
-                    "ConditionId": "",
-                    "Values": [
-                        "71%",
-                        "78%",
-                        "85%",
-                        "92%",
-                        "99%",
-                        "107%",
-                        "114%",
-                        "121%",
-                        "128%",
-                        "137%",
-                        "147%",
-                        "160%"
-                    ]
-                },
-                {
-                    "Text": "Moltiplicatore ATT mossa letale",
-                    "ConditionId": "",
-                    "Values": [
-                        "400%",
-                        "440%",
-                        "480%",
-                        "520%",
-                        "560%",
-                        "600%",
-                        "640%",
-                        "680%",
-                        "720%",
-                        "770%",
-                        "830%",
-                        "900%"
-                    ]
-                },
-                {
-                    "Text": "Moltiplicatore ATT dall'alto",
-                    "ConditionId": "",
-                    "Values": [
-                        "80%",
-                        "88%",
-                        "96%",
-                        "104%",
-                        "112%",
-                        "120%",
-                        "128%",
-                        "136%",
-                        "144%",
-                        "154%",
-                        "166%",
-                        "180%"
-                    ]
-                }
-            ]
         }
     },
     "NodeSkillMap": {
-        "chr_0020_meurs_passive_skill_1_2": {
-            "Icon": "icon_talent_meurs_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "Mentalità completa",
-            "Desc": "Abilità suprema <@ba.key>Aggressione da manuale</> migliorata: il colpo finale crea un numero di onde d'urto pari a 3, ognuna delle quali infligge <@ba.pd>danni fisici</> pari a un 45% dell'ATT.",
-            "Type": 4
-        },
-        "fac_chr_0020_meurs_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
-            "Name": "Approccio cauto β",
-            "Desc": "Assegna alla camera di coltivazione per rallentare del 14% il calo dell'umore di tutti gli operatori al suo interno.",
+        "chr_0020_meurs_passive_skill_0_1": {
+            "Icon": "icon_talent_meurs_01",
             "Level": 1,
-            "Index": 3,
-            "Type": 5
+            "Index": 0,
+            "Name": "Difesa resiliente",
+            "Desc": "Per ogni 10 di Volontà, Difesa <@ba.vup>+1.0</>.",
+            "Type": 4
         },
         "chr_0020_meurs_passive_skill_0_2": {
             "Icon": "icon_talent_meurs_01",
@@ -621,6 +613,22 @@
             "Index": 0,
             "Name": "Difesa resiliente",
             "Desc": "Per ogni 10 di Volontà, Difesa <@ba.vup>+1.2</>.",
+            "Type": 4
+        },
+        "chr_0020_meurs_passive_skill_1_1": {
+            "Icon": "icon_talent_meurs_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Mentalità completa",
+            "Desc": "Abilità suprema <@ba.key>Aggressione da manuale</> migliorata: il colpo finale crea un numero di onde d'urto pari a 2, ognuna delle quali infligge <@ba.pd>danni fisici</> pari a un 30% dell'ATT.",
+            "Type": 4
+        },
+        "chr_0020_meurs_passive_skill_1_2": {
+            "Icon": "icon_talent_meurs_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Mentalità completa",
+            "Desc": "Abilità suprema <@ba.key>Aggressione da manuale</> migliorata: il colpo finale crea un numero di onde d'urto pari a 3, ognuna delle quali infligge <@ba.pd>danni fisici</> pari a un 45% dell'ATT.",
             "Type": 4
         },
         "fac_chr_0020_meurs_0_1": {
@@ -639,21 +647,13 @@
             "Index": 2,
             "Type": 5
         },
-        "chr_0020_meurs_passive_skill_1_1": {
-            "Icon": "icon_talent_meurs_02",
+        "fac_chr_0020_meurs_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
+            "Name": "Approccio cauto β",
+            "Desc": "Assegna alla camera di coltivazione per rallentare del 14% il calo dell'umore di tutti gli operatori al suo interno.",
             "Level": 1,
-            "Index": 1,
-            "Name": "Mentalità completa",
-            "Desc": "Abilità suprema <@ba.key>Aggressione da manuale</> migliorata: il colpo finale crea un numero di onde d'urto pari a 2, ognuna delle quali infligge <@ba.pd>danni fisici</> pari a un 30% dell'ATT.",
-            "Type": 4
-        },
-        "chr_0020_meurs_passive_skill_0_1": {
-            "Icon": "icon_talent_meurs_01",
-            "Level": 1,
-            "Index": 0,
-            "Name": "Difesa resiliente",
-            "Desc": "Per ogni 10 di Volontà, Difesa <@ba.vup>+1</>.",
-            "Type": 4
+            "Index": 3,
+            "Type": 5
         },
         "fac_chr_0020_meurs_1_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
@@ -667,7 +667,7 @@
     "Potentials": {
         "1": {
             "Name": "Prontezza sfaccettata",
-            "Desc": "Abilità di combattimento <@ba.key>Interdizione rigorosa</> e abilità suprema <@ba.key>Aggressione da manuale</> migliorate: dopo aver colpito un nemico, infligge un colpo aggiuntivo che provoca <@ba.phy>danni fisici</> pari a <@ba.vup>(300 + DIF x 5)</>."
+            "Desc": "Abilità di combattimento <@ba.key>Interdizione rigorosa</> e abilità suprema <@ba.key>Aggressione da manuale</> migliorate: dopo aver colpito un nemico, infligge un colpo aggiuntivo che provoca <@ba.phy>danni fisici</> pari a <@ba.vup>(300 + DIF x 5.0)</>."
         },
         "2": {
             "Name": "Addestramento speciale bonus",

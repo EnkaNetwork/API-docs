@@ -1,0 +1,661 @@
+{
+    "StrId": "chr_0034_typhoea",
+    "Name": "Typhoeus",
+    "Rarity": 6,
+    "Element": "Natural",
+    "Profession": "ASSAULT",
+    "Conditions": {},
+    "WeaponType": "Wand",
+    "MainAttrId": 40,
+    "SubAttrId": 42,
+    "AttributeNodes": {
+        "chr_0034_typhoea_1": {
+            "40": 10.0
+        },
+        "chr_0034_typhoea_3": {
+            "40": 15.0
+        },
+        "chr_0034_typhoea_5": {
+            "40": 15.0
+        },
+        "chr_0034_typhoea_7": {
+            "40": 20.0
+        }
+    },
+    "SkillInfoMap": {
+        "chr_0034_typhoea_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_typhoea_01",
+            "Element": "Natural",
+            "Name": "Ronces envahissantes",
+            "Desc": "DÉCLENCHEMENT DE COMBO : lorsque Typhoeus atteint le nombre maximum de <#ba.arrowenergy>signes</>.\nTyphoeus convertit tous ses <#ba.arrowenergy>signes</> en <#ba.arrownum>flèches de chasse</> et réinitialise ses tentatives d'attaque de base aérienne (ATQ-B-A).\nTyphoeus concentre son « Regard de chasseuse » et lance un barrage sur la cible, qui crée une <@ba.key>matrice de barrage</> dans la zone ciblée. Les ennemis dans la <@ba.key>matrice de barrage</> subissent des <@ba.natur>DÉG naturels</> continus, sont <#ba.slow>ralentis</> et subissent des DÉG accrus d'<#ba.naturalburst>explosion naturelle</>.\n<@ba.info>Il faut convertir 2 signes pour obtenir 1 flèche de chasse.</>",
+            "ConditionData": {},
+            "Type": 2,
+            "Cooldown": 21.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Temps de recharge",
+                    "ConditionId": "",
+                    "Values": [
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s"
+                    ]
+                },
+                {
+                    "Text": "DÉG de « Regard de chasseuse »",
+                    "ConditionId": "",
+                    "Values": [
+                        "89%",
+                        "98%",
+                        "107%",
+                        "116%",
+                        "125%",
+                        "134%",
+                        "142%",
+                        "151%",
+                        "160%",
+                        "171%",
+                        "185%",
+                        "200%"
+                    ]
+                },
+                {
+                    "Text": "Déséquilibre",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Gain d'énergie d'ultime",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "DÉG de zone continus",
+                    "ConditionId": "",
+                    "Values": [
+                        "45%",
+                        "49%",
+                        "54%",
+                        "58%",
+                        "62%",
+                        "67%",
+                        "71%",
+                        "76%",
+                        "80%",
+                        "86%",
+                        "93%",
+                        "100%"
+                    ]
+                },
+                {
+                    "Text": "Lenteur",
+                    "ConditionId": "",
+                    "Values": [
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%"
+                    ]
+                },
+                {
+                    "Text": "DÉG d'explosion naturelle accrus",
+                    "ConditionId": "",
+                    "Values": [
+                        "6%",
+                        "6%",
+                        "6%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "8%",
+                        "8%",
+                        "8%",
+                        "9%",
+                        "9%",
+                        "10%"
+                    ]
+                }
+            ]
+        },
+        "chr_0034_typhoea_NormalAttack": {
+            "Icon": "skillicon/icon_attack_funnel",
+            "Element": "Natural",
+            "Name": "Chasseuse des terres sauvages",
+            "Desc": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.natur>DÉG naturels</>. Si vous contrôlez l'opératrice, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>17</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.natur>DÉG naturels</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.natur>DÉG naturels</> et restaure quelques PC.",
+            "ConditionData": {},
+            "Type": 0,
+            "Cooldown": 0.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Multiplicateur d'ATQ-B SÉQ 1",
+                    "ConditionId": "",
+                    "Values": [
+                        "21%",
+                        "23%",
+                        "25%",
+                        "27%",
+                        "29%",
+                        "31%",
+                        "33%",
+                        "35%",
+                        "37%",
+                        "39%",
+                        "43%",
+                        "46%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur d'ATQ-B SÉQ 2",
+                    "ConditionId": "",
+                    "Values": [
+                        "25%",
+                        "28%",
+                        "30%",
+                        "33%",
+                        "35%",
+                        "38%",
+                        "40%",
+                        "43%",
+                        "45%",
+                        "48%",
+                        "52%",
+                        "56%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur d'ATQ-B SÉQ 3",
+                    "ConditionId": "",
+                    "Values": [
+                        "38%",
+                        "42%",
+                        "46%",
+                        "49%",
+                        "53%",
+                        "57%",
+                        "61%",
+                        "65%",
+                        "68%",
+                        "73%",
+                        "79%",
+                        "86%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur d'ATQ-B SÉQ 4",
+                    "ConditionId": "",
+                    "Values": [
+                        "42%",
+                        "46%",
+                        "50%",
+                        "55%",
+                        "59%",
+                        "63%",
+                        "67%",
+                        "71%",
+                        "76%",
+                        "81%",
+                        "87%",
+                        "95%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur d'ATQ-B SÉQ 5",
+                    "ConditionId": "",
+                    "Values": [
+                        "56%",
+                        "61%",
+                        "67%",
+                        "72%",
+                        "78%",
+                        "83%",
+                        "89%",
+                        "94%",
+                        "100%",
+                        "107%",
+                        "115%",
+                        "125%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur d'ATQ de coup fatal",
+                    "ConditionId": "",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur d'ATQ plongeante",
+                    "ConditionId": "",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "chr_0034_typhoea_NormalSkill": {
+            "Icon": "skillicon/icon_skill_typhoea_01",
+            "Element": "Natural",
+            "Name": "Flèches perforantes sylvestres",
+            "Desc": "Typhoeus bondit dans les airs et entre dans un état de <@ba.key>Surplomb</> de courte durée, pendant lequel elle peut lancer 5 attaques de base aériennes (ATQ-B-A). Chaque ATQ-B-A peut atteindre jusqu'à 2 ennemis et leur infliger des <@ba.natur>DÉG naturels</>. \nDès qu'une ATQ-B-A touche un ennemi victime d'une <#ba.naturalinflict>altération naturelle</>, elle consomme 1 cumul d'<#ba.naturalinflict>altération naturelle</> et octroie à Typhoeus 1 <#ba.arrowenergy>signe</> et de l'énergie d'ultime supplémentaire. \nSi Typhoeus possède des <#ba.arrownum>flèches de chasse</>, elle consomme 1 <#ba.arrownum>flèche de chasse</> et transforme l'ATQ-B-A en <@ba.key>Coup puissant</>. \n<@ba.key>Coup puissant</> : après avoir touché un ennemi, applique une <#ba.naturalburst>explosion naturelle</> de force ; si l'<#ba.naturalinflict>altération naturelle</> de la cible est consommée, les DÉG infligés par cette <#ba.naturalburst>explosion naturelle</> augmentent. \n<@ba.info>Si Typhoeus est l'opératrice contrôlée, sa 5e ATQ-B-A est considérée comme un Coup final et un Coup puissant, et ne consomme pas de flèche de chasse.</>",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Coût en PC",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur de DÉG de tir aérien initial",
+                    "ConditionId": "",
+                    "Values": [
+                        "22%",
+                        "25%",
+                        "27%",
+                        "29%",
+                        "31%",
+                        "33%",
+                        "36%",
+                        "38%",
+                        "40%",
+                        "43%",
+                        "46%",
+                        "50%"
+                    ]
+                },
+                {
+                    "Text": "DÉG D'ATQ-B-A",
+                    "ConditionId": "",
+                    "Values": [
+                        "29%",
+                        "32%",
+                        "35%",
+                        "37%",
+                        "40%",
+                        "43%",
+                        "46%",
+                        "49%",
+                        "52%",
+                        "55%",
+                        "60%",
+                        "65%"
+                    ]
+                },
+                {
+                    "Text": "DÉG de Coup final aérien",
+                    "ConditionId": "",
+                    "Values": [
+                        "44%",
+                        "49%",
+                        "53%",
+                        "58%",
+                        "62%",
+                        "66%",
+                        "71%",
+                        "75%",
+                        "80%",
+                        "85%",
+                        "92%",
+                        "100%"
+                    ]
+                },
+                {
+                    "Text": "Déséquilibre de Coup final aérien",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur de DÉG d'explosion naturelle de Coup puissant",
+                    "ConditionId": "",
+                    "Values": [
+                        "1.1",
+                        "1.1",
+                        "1.1",
+                        "1.15",
+                        "1.15",
+                        "1.15",
+                        "1.2",
+                        "1.2",
+                        "1.2",
+                        "1.25",
+                        "1.25",
+                        "1.3"
+                    ]
+                },
+                {
+                    "Text": "Énergie d'ultime supplémentaire",
+                    "ConditionId": "",
+                    "Values": [
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12"
+                    ]
+                }
+            ]
+        },
+        "chr_0034_typhoea_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_typhoea_01",
+            "Element": "Natural",
+            "Name": "Appel de la montagne glacée",
+            "Desc": "Typhoeus tire une flèche imprégnée qui explose après avoir touché l'ennemi et inflige d'importants <@ba.natur>DÉG naturels</> aux ennemis dans la zone d'effet. Elle entre ensuite dans un état de <@ba.key>Surplomb</> et ses tentatives d'attaque de base aérienne (ATQ-B-A) sont réinitialisées.\nPendant ses 5 prochaines ATQ-B-A, toucher un ennemi déclenche une <@ba.key>pluie de flèches</> qui inflige des <@ba.natur>DÉG naturels</> à l'emplacement de la cible. Sa 5e <@ba.key>pluie de flèches</> est une <@ba.key>pluie de flèches</> améliorée qui inflige plus de DÉG.\nLe lancement de l'ultime octroie immédiatement <@ba.vup>2</> <#ba.arrownum>flèches de chasse</>.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 20.0,
+            "CostType": "UltimateSp",
+            "CostValue": 200.0,
+            "Params": [
+                {
+                    "Text": "Coût en énergie d'ultime",
+                    "ConditionId": "",
+                    "Values": [
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0
+                    ]
+                },
+                {
+                    "Text": "Temps de recharge",
+                    "ConditionId": "",
+                    "Values": [
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s"
+                    ]
+                },
+                {
+                    "Text": "DÉG d'explosion de flèche imprégnée",
+                    "ConditionId": "",
+                    "Values": [
+                        "133%",
+                        "147%",
+                        "160%",
+                        "173%",
+                        "187%",
+                        "200%",
+                        "213%",
+                        "227%",
+                        "240%",
+                        "257%",
+                        "277%",
+                        "300%"
+                    ]
+                },
+                {
+                    "Text": "Déséquilibre de flèche imprégnée",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "DÉG de Pluie de flèches normale",
+                    "ConditionId": "",
+                    "Values": [
+                        "33%",
+                        "37%",
+                        "40%",
+                        "43%",
+                        "47%",
+                        "50%",
+                        "53%",
+                        "57%",
+                        "60%",
+                        "64%",
+                        "69%",
+                        "75%"
+                    ]
+                },
+                {
+                    "Text": "DÉG de Pluie de flèches chargée",
+                    "ConditionId": "",
+                    "Values": [
+                        "89%",
+                        "98%",
+                        "107%",
+                        "116%",
+                        "124%",
+                        "133%",
+                        "142%",
+                        "151%",
+                        "160%",
+                        "171%",
+                        "184%",
+                        "200%"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0034_typhoea_passive_skill_0_1": {
+            "Icon": "icon_talent_typhoea_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Liste des proies",
+            "Desc": "Chaque fois qu'une <#ba.naturalburst>explosion naturelle</> est déclenchée sur un ennemi, Typhoeus obtient 1 <#ba.arrowenergy>Signe</>. Les dégâts infligés par les attaques améliorées en consommant des <#ba.arrownum>flèches de chasse</> sont multipliés par <@ba.vup>1.2</>.\nLorsqu'elle entre au combat, Typhoeus obtient immédiatement <@ba.vup>1</> <#ba.arrowenergy>Signe(s)</>.\nTyphoeus peut posséder jusqu'à 4 <#ba.arrownum>flèches de chasse</> et 8 <#ba.arrowenergy>Signes</>.\n<@ba.info>Lorsqu'une explosion naturelle est déclenchée sur plusieurs ennemis, seul l'un d'eux est comptabilisé pour le calcul des Signes obtenus par Typhoeus.</>",
+            "Type": 4
+        },
+        "chr_0034_typhoea_passive_skill_0_2": {
+            "Icon": "icon_talent_typhoea_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Liste des proies",
+            "Desc": "Chaque fois qu'une <#ba.naturalburst>explosion naturelle</> est déclenchée sur un ennemi, Typhoeus obtient 1 <#ba.arrowenergy>Signe</>. Les dégâts infligés par les attaques améliorées en consommant des <#ba.arrownum>flèches de chasse</> sont multipliés par <@ba.vup>1.4</>.\nLorsqu'elle entre au combat, Typhoeus obtient immédiatement <@ba.vup>2</> <#ba.arrowenergy>Signe(s)</>.\nTyphoeus peut posséder jusqu'à 4 <#ba.arrownum>flèches de chasse</> et 8 <#ba.arrowenergy>Signes</>.\n<@ba.info>Lorsqu'une explosion naturelle est déclenchée sur plusieurs ennemis, seul l'un d'eux est comptabilisé pour le calcul des Signes obtenus par Typhoeus.</>",
+            "Type": 4
+        },
+        "chr_0034_typhoea_passive_skill_0_3": {
+            "Icon": "icon_talent_typhoea_01",
+            "Level": 3,
+            "Index": 0,
+            "Name": "Liste des proies",
+            "Desc": "Chaque fois qu'une <#ba.naturalburst>explosion naturelle</> est déclenchée sur un ennemi, Typhoeus obtient 1 <#ba.arrowenergy>Signe</>. Les dégâts infligés par les attaques améliorées en consommant des <#ba.arrownum>flèches de chasse</> sont multipliés par <@ba.vup>1.6</>.\nLorsqu'elle entre au combat, Typhoeus obtient immédiatement <@ba.vup>4</> <#ba.arrowenergy>Signe(s)</>.\nTyphoeus peut posséder jusqu'à 4 <#ba.arrownum>flèches de chasse</> et 8 <#ba.arrowenergy>Signes</>.\n<@ba.info>Lorsqu'une explosion naturelle est déclenchée sur plusieurs ennemis, seul l'un d'eux est comptabilisé pour le calcul des Signes obtenus par Typhoeus.</>",
+            "Type": 4
+        },
+        "chr_0034_typhoea_passive_skill_1_1": {
+            "Icon": "icon_talent_typhoea_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Concentration de la chasseuse",
+            "Desc": "Lorsqu'elle est en <@ba.key>Surplomb</>, Typhoeus active une <@ba.key>barrière protectrice</> qui réduit les DÉG subis de <@ba.vup>15%</> et la rend plus difficile à interrompre tant que la barrière est active. La <@ba.key>barrière protectrice</> se brise lorsque Typhoeus subit des DÉG et ne peut ensuite plus être activée pendant <@ba.vup>30</> s.",
+            "Type": 4
+        },
+        "chr_0034_typhoea_passive_skill_1_2": {
+            "Icon": "icon_talent_typhoea_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Concentration de la chasseuse",
+            "Desc": "Lorsqu'elle est en <@ba.key>Surplomb</>, Typhoeus active une <@ba.key>barrière protectrice</> qui réduit les DÉG subis de <@ba.vup>30%</> et la rend plus difficile à interrompre tant que la barrière est active. La <@ba.key>barrière protectrice</> se brise lorsque Typhoeus subit des DÉG et ne peut ensuite plus être activée pendant <@ba.vup>18</> s.",
+            "Type": 4
+        },
+        "fac_chr_0034_typhoea_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_mineral",
+            "Name": "Murmures lithiques β",
+            "Desc": "En l'affectant à la chambre de culture, augmente le taux de croissance des minerais rares de 20 %.",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0034_typhoea_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_mineral",
+            "Name": "Murmures lithiques γ",
+            "Desc": "En l'affectant à la chambre de culture, augmente le taux de croissance des minerais rares de 30 %.",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0034_typhoea_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_fungus",
+            "Name": "Spores de vie β",
+            "Desc": "En l'affectant à la chambre de culture, augmente le taux de croissance de la matière fongique de 20 %.",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0034_typhoea_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_fungus",
+            "Name": "Spores de vie γ",
+            "Desc": "En l'affectant à la chambre de culture, augmente le taux de croissance de la matière fongique de 30 %.",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        }
+    },
+    "Potentials": {
+        "1": {
+            "Name": "Empennage de Samifjod",
+            "Desc": "En <@ba.key>Surplomb</>, <@ba.vup>+18%</> d'ATQ et les DÉG D'ATQ-B-A infligés sont multipliés par <@ba.vup>1.2</>. \nRenforce le talent <@ba.key>Concentration de la chasseuse</> : temps de réactivation de la <@ba.key>barrière protectrice</> <@ba.vup>-3</> s."
+        },
+        "2": {
+            "Name": "Foulée de la chasseuse",
+            "Desc": "Octroie <@ba.vup>+20 points d'Agilité</> et <@ba.vup>+16 points d'intensité des Arts</>."
+        },
+        "3": {
+            "Name": "Piège épineux",
+            "Desc": "Renforce la compétence de combo <@ba.key>Ronces envahissantes</> : le temps de recharge est de <@ba.vup>-2</> s. Les ennemis présents dans la <@ba.key>matrice de barrage</> subissent une augmentation des DÉG d'<#ba.naturalburst>explosion naturelle</> de <@ba.vup>6%</>."
+        },
+        "4": {
+            "Name": "Sans issue",
+            "Desc": "Renforce l'ultime <@ba.key>Appel de la montagne glacée</> : coût en énergie d'ultime <@ba.vup>-15%</>."
+        },
+        "5": {
+            "Name": "Tir fatal",
+            "Desc": "Renforce l'ultime <@ba.key>Appel de la montagne glacée</> : <@ba.vup>+1</> <#ba.arrownum>flèches de chasse</> obtenues. Les DÉG d'ultime sont multipliés par <@ba.vup>1.1</>, tandis que le multiplicateur de DÉG de l'explosion naturelle du <@ba.key>Coup puissant</> passe à <@ba.vup>1.2</> fois sa valeur d'origine."
+        }
+    }
+}

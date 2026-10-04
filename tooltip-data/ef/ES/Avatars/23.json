@@ -9,20 +9,280 @@
     "MainAttrId": 41,
     "SubAttrId": 39,
     "AttributeNodes": {
-        "chr_0016_laevat_7": {
-            "41": 20
-        },
-        "chr_0016_laevat_5": {
-            "41": 15
+        "chr_0016_laevat_1": {
+            "41": 10.0
         },
         "chr_0016_laevat_3": {
-            "41": 15
+            "41": 15.0
         },
-        "chr_0016_laevat_1": {
-            "41": 10
+        "chr_0016_laevat_5": {
+            "41": 15.0
+        },
+        "chr_0016_laevat_7": {
+            "41": 20.0
         }
     },
     "SkillInfoMap": {
+        "chr_0016_laevat_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_laevat_01",
+            "Element": "Fire",
+            "Name": "Hervir",
+            "Desc": "ACTIVADOR DE COMBO: Cuando un enemigo sufre <#ba.burning>Combustión</> o <#ba.corrupt>Corrosión</>. \nEl fuego irrumpe bajo los pies de cualquier enemigo con <#ba.burning>Combustión</> o <#ba.corrupt>Corrosión</>, infligiéndoles <@ba.fire>DAÑ por calor</>. \nSi la habilidad impacta al enemigo, Laevatain obtiene 1 acumulación de <@ba.key>Fusión de llamas</> y además gana Energía máxima por cada enemigo golpeado.",
+            "ConditionData": {},
+            "Type": 2,
+            "Cooldown": 10.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Tiempo de reutilización",
+                    "ConditionId": "",
+                    "Values": [
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador de DAÑ",
+                    "ConditionId": "",
+                    "Values": [
+                        "240%",
+                        "264%",
+                        "288%",
+                        "312%",
+                        "336%",
+                        "360%",
+                        "384%",
+                        "408%",
+                        "432%",
+                        "462%",
+                        "498%",
+                        "540%"
+                    ]
+                },
+                {
+                    "Text": "Tambaleo",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Ganancia de Energía máxima al golpear a 1 enemigo",
+                    "ConditionId": "",
+                    "Values": [
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25",
+                        "25"
+                    ]
+                },
+                {
+                    "Text": "Ganancia de Energía máxima al golpear a 2 enemigos",
+                    "ConditionId": "",
+                    "Values": [
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30"
+                    ]
+                },
+                {
+                    "Text": "Ganancia de Energía máxima al golpear a 3 enemigos",
+                    "ConditionId": "",
+                    "Values": [
+                        "35",
+                        "35",
+                        "35",
+                        "35",
+                        "35",
+                        "35",
+                        "35",
+                        "35",
+                        "35",
+                        "35",
+                        "35",
+                        "35"
+                    ]
+                }
+            ]
+        },
+        "chr_0016_laevat_NormalAttack": {
+            "Icon": "skillicon/icon_attack_sword",
+            "Element": "Physical",
+            "Name": "Cenizas ardientes",
+            "Desc": "ATAQUE BÁSICO: \nUn ataque con hasta 5 secuencias que inflige <@ba.fire>DAÑ por calor</>. Como operador controlado, el <#ba.lastcombo>golpe final</> también inflige <@ba.poise>18</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.fire>DAÑ por calor</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.fire>DAÑ por calor</> y recupera algunos PH.",
+            "ConditionData": {},
+            "Type": 0,
+            "Cooldown": 0.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Multiplicador ATQB SEC 1",
+                    "ConditionId": "",
+                    "Values": [
+                        "16%",
+                        "18%",
+                        "19%",
+                        "21%",
+                        "22%",
+                        "24%",
+                        "26%",
+                        "27%",
+                        "29%",
+                        "31%",
+                        "33%",
+                        "36%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador ATQB SEC 2",
+                    "ConditionId": "",
+                    "Values": [
+                        "24%",
+                        "26%",
+                        "29%",
+                        "31%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "41%",
+                        "43%",
+                        "46%",
+                        "50%",
+                        "54%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador ATQB SEC 3",
+                    "ConditionId": "",
+                    "Values": [
+                        "25%",
+                        "28%",
+                        "30%",
+                        "33%",
+                        "35%",
+                        "38%",
+                        "40%",
+                        "43%",
+                        "45%",
+                        "48%",
+                        "52%",
+                        "56%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador ATQB SEC 4",
+                    "ConditionId": "",
+                    "Values": [
+                        "39%",
+                        "43%",
+                        "47%",
+                        "51%",
+                        "55%",
+                        "59%",
+                        "62%",
+                        "66%",
+                        "70%",
+                        "75%",
+                        "81%",
+                        "88%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador ATQB SEC 5",
+                    "ConditionId": "",
+                    "Values": [
+                        "53%",
+                        "58%",
+                        "64%",
+                        "69%",
+                        "74%",
+                        "80%",
+                        "85%",
+                        "90%",
+                        "95%",
+                        "102%",
+                        "110%",
+                        "119%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador ATQ Remate",
+                    "ConditionId": "",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador ATQ de Inmersión",
+                    "ConditionId": "",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
         "chr_0016_laevat_NormalSkill": {
             "Icon": "skillicon/icon_skill_laevat_01",
             "Element": "Fire",
@@ -30,26 +290,26 @@
             "Desc": "Invoca un Fragmento de magma que ataca continuamente a los enemigos e inflige <@ba.fire>DAÑ por calor</>. Golpear al enemigo otorga 1 acumulación de <@ba.key>Fusión de llamas</>. \nSi Laevatain ya tiene 4 acumulación(es) de <@ba.key>Fusión de llamas</> al lanzar la habilidad, consume todas las acumulaciones y realiza 1 ataque adicional que inflige <@ba.fire>DAÑ por calor</> y activa forzosamente <#ba.burning>Combustión</> temporal a todos los enemigos en un área amplia.\nCuando el ataque adicional impacta al enemigo, restaura Energía máxima adicional.\n<@ba.info>Los efectos de la habilidad de batalla se potencian mientras la máxima de Laevatain está activa.</>",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "Costo de PH",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -313,26 +573,26 @@
             "Desc": "Laevatain llama a su Sviga Lævi y se convierte en la operadora controlada. \nDurante un tiempo, sus ataques básicos (ATQB) se mejoran y la Sviga Lævi golpea junto con Laevatain, infligiendo <@ba.fire>DAÑ por calor</> con cada ataque. La secuencia 3 de ATQB también aplica <#ba.fireinflict>Imposición de calor</>.\n<@ba.info>Lanzar la habilidad de batalla, Fuego humeante, o la habilidad de combo, Hervir, no acorta la duración de la máxima, Crepúsculo.</>",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Costo de energía máxima",
                     "ConditionId": "",
                     "Values": [
-                        300,
-                        300,
-                        300,
-                        300,
-                        300,
-                        300,
-                        300,
-                        300,
-                        300,
-                        300,
-                        300,
-                        300
+                        300.0,
+                        300.0,
+                        300.0,
+                        300.0,
+                        300.0,
+                        300.0,
+                        300.0,
+                        300.0,
+                        300.0,
+                        300.0,
+                        300.0,
+                        300.0
                     ]
                 },
                 {
@@ -444,301 +704,9 @@
                     ]
                 }
             ]
-        },
-        "chr_0016_laevat_ComboSkill": {
-            "Icon": "skillicon/icon_combo_skill_laevat_01",
-            "Element": "Fire",
-            "Name": "Hervir",
-            "Desc": "ACTIVADOR DE COMBO: Cuando un enemigo sufre <#ba.burning>Combustión</> o <#ba.corrupt>Corrosión</>. \nEl fuego irrumpe bajo los pies de cualquier enemigo con <#ba.burning>Combustión</> o <#ba.corrupt>Corrosión</>, infligiéndoles <@ba.fire>DAÑ por calor</>. \nSi la habilidad impacta al enemigo, Laevatain obtiene 1 acumulación de <@ba.key>Fusión de llamas</> y además gana Energía máxima por cada enemigo golpeado.",
-            "ConditionData": {},
-            "Type": 2,
-            "Cooldown": 10,
-            "CostType": "UltimateSp",
-            "CostValue": 0,
-            "Params": [
-                {
-                    "Text": "Tiempo de reutilización",
-                    "ConditionId": "",
-                    "Values": [
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s"
-                    ]
-                },
-                {
-                    "Text": "Multiplicador de DAÑ",
-                    "ConditionId": "",
-                    "Values": [
-                        "240%",
-                        "264%",
-                        "288%",
-                        "312%",
-                        "336%",
-                        "360%",
-                        "384%",
-                        "408%",
-                        "432%",
-                        "462%",
-                        "498%",
-                        "540%"
-                    ]
-                },
-                {
-                    "Text": "Tambaleo",
-                    "ConditionId": "",
-                    "Values": [
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10"
-                    ]
-                },
-                {
-                    "Text": "Ganancia de Energía máxima al golpear a 1 enemigo",
-                    "ConditionId": "",
-                    "Values": [
-                        "25",
-                        "25",
-                        "25",
-                        "25",
-                        "25",
-                        "25",
-                        "25",
-                        "25",
-                        "25",
-                        "25",
-                        "25",
-                        "25"
-                    ]
-                },
-                {
-                    "Text": "Ganancia de Energía máxima al golpear a 2 enemigos",
-                    "ConditionId": "",
-                    "Values": [
-                        "30",
-                        "30",
-                        "30",
-                        "30",
-                        "30",
-                        "30",
-                        "30",
-                        "30",
-                        "30",
-                        "30",
-                        "30",
-                        "30"
-                    ]
-                },
-                {
-                    "Text": "Ganancia de Energía máxima al golpear a 3 enemigos",
-                    "ConditionId": "",
-                    "Values": [
-                        "35",
-                        "35",
-                        "35",
-                        "35",
-                        "35",
-                        "35",
-                        "35",
-                        "35",
-                        "35",
-                        "35",
-                        "35",
-                        "35"
-                    ]
-                }
-            ]
-        },
-        "chr_0016_laevat_NormalAttack": {
-            "Icon": "skillicon/icon_attack_sword",
-            "Element": "Physical",
-            "Name": "Cenizas ardientes",
-            "Desc": "ATAQUE BÁSICO: \nUn ataque con hasta 5 secuencias que inflige <@ba.fire>DAÑ por calor</>. Como operador controlado, el <#ba.lastcombo>golpe final</> también inflige <@ba.poise>18</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.fire>DAÑ por calor</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.fire>DAÑ por calor</> y recupera algunos PH.",
-            "ConditionData": {},
-            "Type": 0,
-            "Cooldown": 0,
-            "CostType": "UltimateSp",
-            "CostValue": 0,
-            "Params": [
-                {
-                    "Text": "Multiplicador ATQB SEC 1",
-                    "ConditionId": "",
-                    "Values": [
-                        "16%",
-                        "18%",
-                        "19%",
-                        "21%",
-                        "22%",
-                        "24%",
-                        "26%",
-                        "27%",
-                        "29%",
-                        "31%",
-                        "33%",
-                        "36%"
-                    ]
-                },
-                {
-                    "Text": "Multiplicador ATQB SEC 2",
-                    "ConditionId": "",
-                    "Values": [
-                        "24%",
-                        "26%",
-                        "29%",
-                        "31%",
-                        "34%",
-                        "36%",
-                        "38%",
-                        "41%",
-                        "43%",
-                        "46%",
-                        "50%",
-                        "54%"
-                    ]
-                },
-                {
-                    "Text": "Multiplicador ATQB SEC 3",
-                    "ConditionId": "",
-                    "Values": [
-                        "25%",
-                        "28%",
-                        "30%",
-                        "33%",
-                        "35%",
-                        "38%",
-                        "40%",
-                        "43%",
-                        "45%",
-                        "48%",
-                        "52%",
-                        "56%"
-                    ]
-                },
-                {
-                    "Text": "Multiplicador ATQB SEC 4",
-                    "ConditionId": "",
-                    "Values": [
-                        "39%",
-                        "43%",
-                        "47%",
-                        "51%",
-                        "55%",
-                        "59%",
-                        "62%",
-                        "66%",
-                        "70%",
-                        "75%",
-                        "81%",
-                        "88%"
-                    ]
-                },
-                {
-                    "Text": "Multiplicador ATQB SEC 5",
-                    "ConditionId": "",
-                    "Values": [
-                        "53%",
-                        "58%",
-                        "64%",
-                        "69%",
-                        "74%",
-                        "80%",
-                        "85%",
-                        "90%",
-                        "95%",
-                        "102%",
-                        "110%",
-                        "119%"
-                    ]
-                },
-                {
-                    "Text": "Multiplicador ATQ Remate",
-                    "ConditionId": "",
-                    "Values": [
-                        "400%",
-                        "440%",
-                        "480%",
-                        "520%",
-                        "560%",
-                        "600%",
-                        "640%",
-                        "680%",
-                        "720%",
-                        "770%",
-                        "830%",
-                        "900%"
-                    ]
-                },
-                {
-                    "Text": "Multiplicador ATQ de Inmersión",
-                    "ConditionId": "",
-                    "Values": [
-                        "80%",
-                        "88%",
-                        "96%",
-                        "104%",
-                        "112%",
-                        "120%",
-                        "128%",
-                        "136%",
-                        "144%",
-                        "154%",
-                        "166%",
-                        "180%"
-                    ]
-                }
-            ]
         }
     },
     "NodeSkillMap": {
-        "chr_0016_laevat_passive_skill_1_1": {
-            "Icon": "icon_talent_laevat_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "Reignición",
-            "Desc": "Cuando los PV bajan por debajo de 40%, obtiene <@ba.vup>90%</> <#ba.guard>Protección</> y restaura <@ba.heal>5%</> PV Máx. por segundo durante <@ba.vup>4</> s. Este efecto solo puede activarse una vez cada 120 s.",
-            "Type": 4
-        },
-        "fac_chr_0016_laevat_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
-            "Name": "Crisol de la memoria β",
-            "Desc": "Asignar a Cabina de manufactura para otorgar eficiencia de producción de materiales de EXP de operador en un +20 %",
-            "Level": 1,
-            "Index": 2,
-            "Type": 5
-        },
-        "fac_chr_0016_laevat_0_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
-            "Name": "Crisol de la memoria γ",
-            "Desc": "Asignar a Cabina de manufactura para otorgar eficiencia de producción de materiales de EXP de operador en un +30 %",
-            "Level": 2,
-            "Index": 2,
-            "Type": 5
-        },
-        "chr_0016_laevat_passive_skill_1_2": {
-            "Icon": "icon_talent_laevat_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "Reignición",
-            "Desc": "Cuando los PV bajan por debajo de 40%, obtiene <@ba.vup>90%</> <#ba.guard>Protección</> y restaura <@ba.heal>5%</> PV Máx. por segundo durante <@ba.vup>8</> s. Este efecto solo puede activarse una vez cada 120 s.",
-            "Type": 4
-        },
         "chr_0016_laevat_passive_skill_0_1": {
             "Icon": "icon_talent_laevat_01",
             "Level": 1,
@@ -762,6 +730,38 @@
             "Name": "Corazón abrasador",
             "Desc": "Después de que el <#ba.lastcombo>Golpe final</> o el Remate del operador controlado golpea al enemigo, Laevatain <#ba.absorb>absorbe</> la <#ba.fireinflict>Imposición de calor</> de los enemigos cercanos. \nCada acumulación de <#ba.fireinflict>Imposición de calor</> <#ba.absorb>absorbida</> otorga a Laevatain 1 acumulación de <@ba.key>Fusión de llamas</> (acumulaciones Máx: 4). \nDespués de conseguir 4 acumulaciones, el DAÑ infligido por Laevatain ignora <@ba.vup>20</> de la <@ba.fire>Resistencia al calor</> del enemigo durante 20 s. \n<@ba.info>Laevatain también absorbe la Imposición de calor de enemigos derrotados cercanos.</>",
             "Type": 4
+        },
+        "chr_0016_laevat_passive_skill_1_1": {
+            "Icon": "icon_talent_laevat_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Reignición",
+            "Desc": "Cuando los PV bajan por debajo de 40%, obtiene <@ba.vup>90%</> <#ba.guard>Protección</> y restaura <@ba.heal>5%</> PV Máx. por segundo durante <@ba.vup>4</> s. Este efecto solo puede activarse una vez cada 120 s.",
+            "Type": 4
+        },
+        "chr_0016_laevat_passive_skill_1_2": {
+            "Icon": "icon_talent_laevat_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Reignición",
+            "Desc": "Cuando los PV bajan por debajo de 40%, obtiene <@ba.vup>90%</> <#ba.guard>Protección</> y restaura <@ba.heal>5%</> PV Máx. por segundo durante <@ba.vup>8</> s. Este efecto solo puede activarse una vez cada 120 s.",
+            "Type": 4
+        },
+        "fac_chr_0016_laevat_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Crisol de la memoria β",
+            "Desc": "Asignar a Cabina de manufactura para otorgar eficiencia de producción de materiales de EXP de operador en un +20 %",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0016_laevat_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Crisol de la memoria γ",
+            "Desc": "Asignar a Cabina de manufactura para otorgar eficiencia de producción de materiales de EXP de operador en un +30 %",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
         },
         "fac_chr_0016_laevat_1_1": {
             "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",

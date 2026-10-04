@@ -9,17 +9,17 @@
     "MainAttrId": 40,
     "SubAttrId": 41,
     "AttributeNodes": {
-        "chr_0028_wulfa_7": {
-            "40": 20
-        },
-        "chr_0028_wulfa_5": {
-            "40": 15
-        },
         "chr_0028_wulfa_1": {
-            "40": 10
+            "40": 10.0
         },
         "chr_0028_wulfa_3": {
-            "40": 15
+            "40": 15.0
+        },
+        "chr_0028_wulfa_5": {
+            "40": 15.0
+        },
+        "chr_0028_wulfa_7": {
+            "40": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "KÍCH HOẠT LIÊN HOÀN: Khi kẻ địch trúng cả tầng <#ba.noguard>Trừ Giáp</> và <#ba.spellinflict>Nhiễm Thuật Pháp</>.\nKN liên hoàn của Rossi sẽ có 2 chuỗi đòn liên tiếp. CHUỖI LIÊN HOÀN 1 gây <@ba.pd>ST Vật Lý</> lên mục tiêu.\nCHUỖI LIÊN HOÀN 2 <#ba.consume>giải trừ</> hết số tầng <#ba.spellinflict>Nhiễm Thuật Pháp</> cho mục tiêu, gây <@ba.pd>ST Vật Lý</> tương ứng với số tầng Nhiễm Thuật Pháp <#ba.consume>đã giải trừ</>, gây 1 lần <#ba.airborne>Hất Tung</>, đồng thời cùng lúc buff Tỷ Lệ Bạo Kích và ST Bạo Kích của Rossi.\nNếu thi triển CHUỖI LIÊN HOÀN 2 bằng cách <@ba.key>căn chuẩn</> thì áp dụng thêm 1 tầng <#ba.noguard>Trừ Giáp</>.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Thời gian hồi chiêu",
@@ -143,7 +143,7 @@
                     ]
                 },
                 {
-                    "Text": "Tăng Cường Tỷ Lệ Bạo Kích",
+                    "Text": "Tỷ Lệ Bạo Kích",
                     "ConditionId": "",
                     "Values": [
                         "15%",
@@ -223,9 +223,9 @@
             "Desc": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.pd>ST Vật Lý</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>18</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi một phần Điểm KN.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Hệ Số Chuỗi Đòn Đánh Thường 1",
@@ -355,6 +355,109 @@
                 }
             ]
         },
+        "chr_0028_wulfa_NormalSkill": {
+            "Icon": "skillicon/icon_skill_wulfa_01",
+            "Element": "Physical",
+            "Name": "Huyết Ảnh",
+            "Desc": "Lao đến mục tiêu để gây <@ba.pd>ST Vật Lý</> và áp dụng <#ba.airborne>Hất Tung</>.\nNếu mục tiêu đã có một hoặc nhiều cộng dồn <#ba.noguard>Trừ Giáp</>, kỹ năng sẽ giải phóng thêm <@ba.key>Hổ Phách Sói</> lao đến mục tiêu để gây <@ba.fire>ST Nhiệt</>.",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "Điểm KN tiêu hao",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "Hệ Số ST Chuỗi Công 1",
+                    "ConditionId": "",
+                    "Values": [
+                        "85%",
+                        "94%",
+                        "102%",
+                        "111%",
+                        "119%",
+                        "128%",
+                        "137%",
+                        "145%",
+                        "154%",
+                        "164%",
+                        "177%",
+                        "192%"
+                    ]
+                },
+                {
+                    "Text": "Suy Sụp Chuỗi Công 1",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số ST Chuỗi Công 2",
+                    "ConditionId": "",
+                    "Values": [
+                        "128%",
+                        "141%",
+                        "153%",
+                        "166%",
+                        "179%",
+                        "192%",
+                        "204%",
+                        "217%",
+                        "230%",
+                        "246%",
+                        "265%",
+                        "288%"
+                    ]
+                },
+                {
+                    "Text": "Suy Sụp Chuỗi Công 2",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "12",
+                        "12",
+                        "12",
+                        "15"
+                    ]
+                }
+            ]
+        },
         "chr_0028_wulfa_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_wulfa_01",
             "Element": "Fire",
@@ -362,26 +465,26 @@
             "Desc": "Rossi tung áo choàng và phóng một loạt đòn đâm liên tiếp trong thời gian ngắn để gây nhiều chuỗi <@ba.fire>ST Nhiệt</> lên kẻ địch. Sau đó thi triển một đòn tấn công hai chuỗi bằng dao găm, gây <@ba.fire>ST Nhiệt</> lớn và <#ba.fireinflict>Nhiễm Nhiệt</>.\n<@ba.info>Khi kỹ năng này thành công đạt bạo kích sẽ gây ST Bạo Kích cao hơn.</>",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 10,
+            "Cooldown": 10.0,
             "CostType": "UltimateSp",
-            "CostValue": 110,
+            "CostValue": 110.0,
             "Params": [
                 {
                     "Text": "Phí Năng Lượng Tuyệt Kỹ",
                     "ConditionId": "",
                     "Values": [
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0
                     ]
                 },
                 {
@@ -493,112 +596,17 @@
                     ]
                 }
             ]
-        },
-        "chr_0028_wulfa_NormalSkill": {
-            "Icon": "skillicon/icon_skill_wulfa_01",
-            "Element": "Physical",
-            "Name": "Huyết Ảnh",
-            "Desc": "Lao đến mục tiêu để gây <@ba.pd>ST Vật Lý</> và áp dụng <#ba.airborne>Hất Tung</>.\nNếu mục tiêu đã có một hoặc nhiều cộng dồn <#ba.noguard>Trừ Giáp</>, kỹ năng sẽ giải phóng thêm <@ba.key>Hổ Phách Sói</> lao đến mục tiêu để gây <@ba.fire>ST Nhiệt</>.",
-            "ConditionData": {},
-            "Type": 1,
-            "Cooldown": 0,
-            "CostType": "Atb",
-            "CostValue": 100,
-            "Params": [
-                {
-                    "Text": "Điểm KN tiêu hao",
-                    "ConditionId": "",
-                    "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
-                    ]
-                },
-                {
-                    "Text": "Hệ Số ST Chuỗi Công 1",
-                    "ConditionId": "",
-                    "Values": [
-                        "85%",
-                        "94%",
-                        "102%",
-                        "111%",
-                        "119%",
-                        "128%",
-                        "137%",
-                        "145%",
-                        "154%",
-                        "164%",
-                        "177%",
-                        "192%"
-                    ]
-                },
-                {
-                    "Text": "Suy Sụp Chuỗi Công 1",
-                    "ConditionId": "",
-                    "Values": [
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5"
-                    ]
-                },
-                {
-                    "Text": "Hệ Số ST Chuỗi Công 2",
-                    "ConditionId": "",
-                    "Values": [
-                        "128%",
-                        "141%",
-                        "153%",
-                        "166%",
-                        "179%",
-                        "192%",
-                        "204%",
-                        "217%",
-                        "230%",
-                        "246%",
-                        "265%",
-                        "288%"
-                    ]
-                },
-                {
-                    "Text": "Suy Sụp Chuỗi Công 2",
-                    "ConditionId": "",
-                    "Values": [
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "12",
-                        "12",
-                        "12",
-                        "15"
-                    ]
-                }
-            ]
         }
     },
     "NodeSkillMap": {
+        "chr_0028_wulfa_passive_skill_0_1": {
+            "Icon": "icon_talent_wulfa_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Trầy Xước",
+            "Desc": "KN chiến đấu được cải thiện: Sau <@ba.key>Hổ Phách Sói</> gây ST, Rossi gây <#ba.rossi>Dấu Cào</> lên mục tiêu trong <@ba.vup>15</> giây. Hiệu ứng này không thể cộng dồn.\nTrong thời gian <#ba.rossi>Dấu Cào</> có hiệu lực, mục tiêu chịu <@ba.pd>ST Vật Lý</> mỗi giây bằng <@ba.vup>25%</> Tấn Công (của Rossi) đồng thời bị <@ba.vup>+6%</> <@ba.pd>ST Vật Lý</> và <@ba.fire>ST Nhiệt Phải Nhận</>.",
+            "Type": 4
+        },
         "chr_0028_wulfa_passive_skill_0_2": {
             "Icon": "icon_talent_wulfa_01",
             "Level": 2,
@@ -607,36 +615,12 @@
             "Desc": "KN chiến đấu được cải thiện: Sau <@ba.key>Hổ Phách Sói</> gây ST, Rossi gây <#ba.rossi>Dấu Cào</> lên mục tiêu trong <@ba.vup>25</> giây. Hiệu ứng này không thể cộng dồn.\nTrong thời gian <#ba.rossi>Dấu Cào</> có hiệu lực, mục tiêu chịu <@ba.pd>ST Vật Lý</> mỗi giây bằng <@ba.vup>30%</> Tấn Công (của Rossi) đồng thời bị <@ba.vup>+12%</> <@ba.pd>ST Vật Lý</> và <@ba.fire>ST Nhiệt Phải Nhận</>.",
             "Type": 4
         },
-        "fac_chr_0028_wulfa_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
-            "Name": "Mùi Săn β",
-            "Desc": "Khi phân công vào Phòng Tiếp Khách, hiệu suất thu thập manh mối của cán viên +20%",
+        "chr_0028_wulfa_passive_skill_1_1": {
+            "Icon": "icon_talent_wulfa_02",
             "Level": 1,
-            "Index": 3,
-            "Type": 5
-        },
-        "fac_chr_0028_wulfa_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
-            "Name": "Lễ Nghi Bộ Tộc β",
-            "Desc": "Khi phân công vào Phòng Tiếp Khách, làm chậm mức Giảm Tâm Trạng của tất cả các cán viên đi 14%",
-            "Level": 1,
-            "Index": 2,
-            "Type": 5
-        },
-        "fac_chr_0028_wulfa_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
-            "Name": "Mùi Săn γ",
-            "Desc": "Khi phân công vào Phòng Tiếp Khách, hiệu suất thu thập manh mối của cán viên +30%",
-            "Level": 2,
-            "Index": 3,
-            "Type": 5
-        },
-        "chr_0028_wulfa_passive_skill_0_1": {
-            "Icon": "icon_talent_wulfa_01",
-            "Level": 1,
-            "Index": 0,
-            "Name": "Trầy Xước",
-            "Desc": "KN chiến đấu được cải thiện: Sau <@ba.key>Hổ Phách Sói</> gây ST, Rossi gây <#ba.rossi>Dấu Cào</> lên mục tiêu trong <@ba.vup>15</> giây. Hiệu ứng này không thể cộng dồn.\nTrong thời gian <#ba.rossi>Dấu Cào</> có hiệu lực, mục tiêu chịu <@ba.pd>ST Vật Lý</> mỗi giây bằng <@ba.vup>25%</> Tấn Công (của Rossi) đồng thời bị <@ba.vup>+6%</> <@ba.pd>ST Vật Lý</> và <@ba.fire>ST Nhiệt Phải Nhận</>.",
+            "Index": 1,
+            "Name": "Máu Cuộn Trào",
+            "Desc": "Khi KN của Rossi gây ST Bạo Kích lên một kẻ địch bị gắn <#ba.rossi>Dấu Cào</> sẽ kích hoạt thêm một đòn gây <@ba.fire>ST Nhiệt bằng <@ba.vup>12%</></> Tấn Công (của Rossi) và hồi <@ba.heal>[Trí Tuệ × 0.04]</> HP cho Rossi. Nếu mục tiêu đồng thời cũng đang chịu <#ba.burning>Thiêu Đốt</> thì hiệu ứng ST và hồi HP nói trên sẽ được tăng lên đến <@ba.vup>1.5</> lần.",
             "Type": 4
         },
         "chr_0028_wulfa_passive_skill_1_2": {
@@ -647,21 +631,37 @@
             "Desc": "Khi KN của Rossi gây ST Bạo Kích lên một kẻ địch bị gắn <#ba.rossi>Dấu Cào</> sẽ kích hoạt thêm một đòn gây <@ba.fire>ST Nhiệt bằng <@ba.vup>24%</></> Tấn Công (của Rossi) và hồi <@ba.heal>[Trí Tuệ × 0.08]</> HP cho Rossi. Nếu mục tiêu đồng thời cũng đang chịu <#ba.burning>Thiêu Đốt</> thì hiệu ứng ST và hồi HP nói trên sẽ được tăng lên đến <@ba.vup>1.5</> lần.",
             "Type": 4
         },
+        "fac_chr_0028_wulfa_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
+            "Name": "Lễ Nghi Bộ Tộc β",
+            "Desc": "Khi phân công vào Phòng Tiếp Khách, làm chậm mức Giảm Tâm Trạng của tất cả các cán viên trong đó đi 14%",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
         "fac_chr_0028_wulfa_0_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
             "Name": "Lễ Nghi Bộ Tộc γ",
-            "Desc": "Khi phân công vào Phòng Tiếp Khách, làm chậm mức Giảm Tâm Trạng của tất cả cán viên đi 18%",
+            "Desc": "Khi phân công vào Phòng Tiếp Khách, làm chậm mức Giảm Tâm Trạng của tất cả cán viên trong đó đi 18%",
             "Level": 2,
             "Index": 2,
             "Type": 5
         },
-        "chr_0028_wulfa_passive_skill_1_1": {
-            "Icon": "icon_talent_wulfa_02",
+        "fac_chr_0028_wulfa_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
+            "Name": "Mùi Săn β",
+            "Desc": "Khi phân công vào Phòng Tiếp Khách, hiệu suất thu thập manh mối của cán viên +20%",
             "Level": 1,
-            "Index": 1,
-            "Name": "Máu Cuộn Trào",
-            "Desc": "Khi KN của Rossi gây ST Bạo Kích lên một kẻ địch bị gắn <#ba.rossi>Dấu Cào</> sẽ kích hoạt thêm một đòn gây <@ba.fire>ST Nhiệt bằng <@ba.vup>12%</></> Tấn Công (của Rossi) và hồi <@ba.heal>[Trí Tuệ × 0.04]</> HP cho Rossi. Nếu mục tiêu đồng thời cũng đang chịu <#ba.burning>Thiêu Đốt</> thì hiệu ứng ST và hồi HP nói trên sẽ được tăng lên đến <@ba.vup>1.5</> lần.",
-            "Type": 4
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0028_wulfa_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
+            "Name": "Mùi Săn γ",
+            "Desc": "Khi phân công vào Phòng Tiếp Khách, hiệu suất thu thập manh mối của cán viên +30%",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
         }
     },
     "Potentials": {

@@ -9,17 +9,17 @@
     "MainAttrId": 41,
     "SubAttrId": 39,
     "AttributeNodes": {
-        "chr_0023_antal_3": {
-            "41": 15
-        },
         "chr_0023_antal_1": {
-            "41": 10
+            "41": 10.0
+        },
+        "chr_0023_antal_3": {
+            "41": 15.0
         },
         "chr_0023_antal_5": {
-            "41": 15
+            "41": 15.0
         },
         "chr_0023_antal_7": {
-            "41": 20
+            "41": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "<@ba.key>포커싱</> 당한 적이 <#ba.physicalstatus>물리 이상</> 효과 혹은 <#ba.spellinflict>아츠 부착</> 상태일 때 사용할 수 있습니다.\n해당 적에게 에너지 폭발 1회를 일으켜 <@ba.pulse>전기 피해</>를 주고, 다시 대상에게 해당 <#ba.physicalstatus>물리 이상</> 효과 혹은 <#ba.spellinflict>아츠 부착</> 상태를 부여합니다.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 25,
+            "Cooldown": 25.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "쿨타임",
@@ -115,9 +115,9 @@
             "Desc": "일반 공격:\n적에게 최대 4단 공격을 하여 <@ba.pulse>전기 피해</>를 줍니다. 메인 컨트롤 오퍼레이터라면 <#ba.lastcombo>강력한 일격</>이 <@ba.poise>15</>포인트의 불균형 피해를 줍니다.\n\n낙하 공격:\n공중에 떴을 때, 일반 공격을 사용하면 낙하하며 주변의 적을 공격하고 <@ba.pulse>전기 피해</>를 줍니다.\n\n처형 공격:\n주변에 불균형 상태의 적이 있을 때, 일반 공격을 사용하면 해당 적을 처형하여 대량의 <@ba.pulse>전기 피해</>를 주고 일정량의 스킬 게이지를 회복합니다.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "일반 공격 제1단계 배율",
@@ -229,109 +229,6 @@
                 }
             ]
         },
-        "chr_0023_antal_UltimateSkill": {
-            "Icon": "skillicon/icon_ultimate_skill_antal_01",
-            "Element": "Pulse",
-            "Name": "오버클록 타임",
-            "Desc": "팀 전체에게 일정 시간 동안 <#ba.pulseenhance>전기 증폭</>과 <#ba.fireenhance>열기 증폭</>을 부여합니다.",
-            "ConditionData": {},
-            "Type": 3,
-            "Cooldown": 20,
-            "CostType": "UltimateSp",
-            "CostValue": 100,
-            "Params": [
-                {
-                    "Text": "필요한 궁극기 에너지",
-                    "ConditionId": "",
-                    "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
-                    ]
-                },
-                {
-                    "Text": "쿨타임",
-                    "ConditionId": "",
-                    "Values": [
-                        "20초",
-                        "20초",
-                        "20초",
-                        "20초",
-                        "20초",
-                        "20초",
-                        "20초",
-                        "20초",
-                        "20초",
-                        "20초",
-                        "20초",
-                        "20초"
-                    ]
-                },
-                {
-                    "Text": "전기 증폭 효과",
-                    "ConditionId": "",
-                    "Values": [
-                        "8%",
-                        "9%",
-                        "10%",
-                        "11%",
-                        "12%",
-                        "13%",
-                        "14%",
-                        "15%",
-                        "16%",
-                        "17%",
-                        "18%",
-                        "20%"
-                    ]
-                },
-                {
-                    "Text": "열기 증폭 효과",
-                    "ConditionId": "",
-                    "Values": [
-                        "8%",
-                        "9%",
-                        "10%",
-                        "11%",
-                        "12%",
-                        "13%",
-                        "14%",
-                        "15%",
-                        "16%",
-                        "17%",
-                        "18%",
-                        "20%"
-                    ]
-                },
-                {
-                    "Text": "지속 시간(초)",
-                    "ConditionId": "",
-                    "Values": [
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12"
-                    ]
-                }
-            ]
-        },
         "chr_0023_antal_NormalSkill": {
             "Icon": "skillicon/icon_skill_antal_01",
             "Element": "Pulse",
@@ -339,26 +236,26 @@
             "Desc": "적을 오랜 시간 <@ba.key>포커싱</>하여 <@ba.pulse>전기 피해</>를 줍니다. <@ba.key>포커싱</> 당한 적에게 <#ba.pulsevul>전기 취약</>과 <#ba.firevul>열기 취약</> 상태를 부여하고, 최대 1명의 적만 <@ba.key>포커싱</>할 수 있습니다.",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "스킬 게이지 소모",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -434,55 +331,118 @@
                     ]
                 }
             ]
+        },
+        "chr_0023_antal_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_antal_01",
+            "Element": "Pulse",
+            "Name": "오버클록 타임",
+            "Desc": "팀 전체에게 일정 시간 동안 <#ba.pulseenhance>전기 증폭</>과 <#ba.fireenhance>열기 증폭</>을 부여합니다.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 20.0,
+            "CostType": "UltimateSp",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "필요한 궁극기 에너지",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "쿨타임",
+                    "ConditionId": "",
+                    "Values": [
+                        "20초",
+                        "20초",
+                        "20초",
+                        "20초",
+                        "20초",
+                        "20초",
+                        "20초",
+                        "20초",
+                        "20초",
+                        "20초",
+                        "20초",
+                        "20초"
+                    ]
+                },
+                {
+                    "Text": "전기 증폭 효과",
+                    "ConditionId": "",
+                    "Values": [
+                        "8%",
+                        "9%",
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "20%"
+                    ]
+                },
+                {
+                    "Text": "열기 증폭 효과",
+                    "ConditionId": "",
+                    "Values": [
+                        "8%",
+                        "9%",
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "20%"
+                    ]
+                },
+                {
+                    "Text": "지속 시간(초)",
+                    "ConditionId": "",
+                    "Values": [
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12"
+                    ]
+                }
+            ]
         }
     },
     "NodeSkillMap": {
-        "chr_0023_antal_passive_skill_1_2": {
-            "Icon": "icon_talent_antal_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "무의식",
-            "Desc": "<@ba.vup>30%</>의 확률로 <@ba.pd>물리 피해</>에 면역되고, 자기 생명력을 <@ba.heal>[45+힘×0.38]</>포인트 회복합니다.",
-            "Type": 4
-        },
-        "fac_chr_0023_antal_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
-            "Name": "썰렁한 농담 배우기 · β",
-            "Desc": "재배실에 배치 시, 선실에 있는 오퍼레이터의 컨디션 소모 속도 14% 감소",
-            "Level": 1,
-            "Index": 3,
-            "Type": 5
-        },
         "chr_0023_antal_passive_skill_0_1": {
             "Icon": "icon_talent_antal_01",
             "Level": 1,
             "Index": 0,
             "Name": "즉흥적인 천재성",
             "Desc": "<#ba.enhance>증폭</> 상태의 팀원이 스킬 피해를 준 후, 안탈이 해당 오퍼레이터의 생명력을 <@ba.heal>[72+힘×0.6]</>포인트 회복시킵니다. 매 오퍼레이터마다 <@ba.vup>30</>초 동안 최대 1회만 회복시킵니다.",
-            "Type": 4
-        },
-        "fac_chr_0023_antal_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
-            "Name": "실험적 아츠 유닛 · α",
-            "Desc": "제조실에 배치 시, 무기 경험치 재료의 생산 효율 10% 증가",
-            "Level": 1,
-            "Index": 2,
-            "Type": 5
-        },
-        "fac_chr_0023_antal_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
-            "Name": "썰렁한 농담 배우기 · γ",
-            "Desc": "재배실에 배치 시, 선실에 있는 오퍼레이터의 컨디션 소모 속도 18% 감소",
-            "Level": 2,
-            "Index": 3,
-            "Type": 5
-        },
-        "chr_0023_antal_passive_skill_1_1": {
-            "Icon": "icon_talent_antal_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "무의식",
-            "Desc": "<@ba.vup>30%</>의 확률로 <@ba.pd>물리 피해</>에 면역되고, 자기 생명력을 <@ba.heal>[27+힘×0.23]</>포인트 회복합니다.",
             "Type": 4
         },
         "chr_0023_antal_passive_skill_0_2": {
@@ -493,12 +453,52 @@
             "Desc": "<#ba.enhance>증폭</> 상태의 팀원이 스킬 피해를 준 후, 안탈이 해당 오퍼레이터의 생명력을 <@ba.heal>[108+힘×0.9]</>포인트 회복시킵니다. 매 오퍼레이터마다 <@ba.vup>30</>초 동안 최대 1회만 회복시킵니다.",
             "Type": 4
         },
+        "chr_0023_antal_passive_skill_1_1": {
+            "Icon": "icon_talent_antal_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "무의식",
+            "Desc": "<@ba.vup>30%</>의 확률로 <@ba.pd>물리 피해</>에 면역되고, 자기 생명력을 <@ba.heal>[27+힘×0.23]</>포인트 회복합니다.",
+            "Type": 4
+        },
+        "chr_0023_antal_passive_skill_1_2": {
+            "Icon": "icon_talent_antal_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "무의식",
+            "Desc": "<@ba.vup>30%</>의 확률로 <@ba.pd>물리 피해</>에 면역되고, 자기 생명력을 <@ba.heal>[45+힘×0.38]</>포인트 회복합니다.",
+            "Type": 4
+        },
+        "fac_chr_0023_antal_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "실험적 아츠 유닛 · α",
+            "Desc": "제조실에 배치 시, 무기 경험치 재료의 생산 효율 10% 증가",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
         "fac_chr_0023_antal_0_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
             "Name": "실험적 아츠 유닛 · β",
             "Desc": "제조실에 배치 시, 무기 경험치 재료의 생산 효율 20% 증가",
             "Level": 2,
             "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0023_antal_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
+            "Name": "썰렁한 농담 배우기 · β",
+            "Desc": "재배실에 배치 시, 선실에 있는 오퍼레이터의 컨디션 소모 속도 14% 감소",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0023_antal_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
+            "Name": "썰렁한 농담 배우기 · γ",
+            "Desc": "재배실에 배치 시, 선실에 있는 오퍼레이터의 컨디션 소모 속도 18% 감소",
+            "Level": 2,
+            "Index": 3,
             "Type": 5
         }
     },

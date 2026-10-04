@@ -9,17 +9,17 @@
     "MainAttrId": 42,
     "SubAttrId": 40,
     "AttributeNodes": {
-        "chr_0012_avywen_5": {
-            "42": 15
-        },
-        "chr_0012_avywen_7": {
-            "42": 20
-        },
         "chr_0012_avywen_1": {
-            "42": 10
+            "42": 10.0
         },
         "chr_0012_avywen_3": {
-            "42": 15
+            "42": 15.0
+        },
+        "chr_0012_avywen_5": {
+            "42": 15.0
+        },
+        "chr_0012_avywen_7": {
+            "42": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "COMBO TRIGGER: When controlled operator performs a <#ba.lastcombo>Final Strike</> on a target with active <#ba.pulseinflict>Electric Infliction</> or <#ba.conduct>Electrification</>. \nLeaps into mid-air and throws 3 <@ba.key>Thunderlances</> at the target, then deals 1 hit of <@ba.pulse>Electric DMG</> to enemies in the area of effect.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 13,
+            "Cooldown": 13.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Cooldown",
@@ -133,9 +133,9 @@
             "Desc": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.pd>Physical DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>17</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pd>Physical DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher attack that deals massive <@ba.pd>Physical DMG</> and recovers some SP.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "BATK SEQ 1 Multiplier",
@@ -272,26 +272,26 @@
             "Desc": "Leaps into mid-air to stir up a maelstrom with her lance, dealing some <@ba.pulse>Electric DMG</> to nearby enemies while pulling back all <@ba.key>Thunderlances</> and <@ba.key>Thunderlance EX</> in the battlefield towards herself. \nThe returning <@ba.key>Thunderlances</> pierce through all enemies along their paths and deal <@ba.pulse>Electric DMG</>, while returning <@ba.key>Thunderlances EX</> deal more <@ba.pulse>Electric DMG</> and also apply <#ba.pulseinflict>Electric Infliction</>.",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "SP Cost",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -411,26 +411,26 @@
             "Desc": "Throws a <@ba.key>Thunderlance EX</> at the target area that deals massive <@ba.pulse>Electric DMG</> to enemies nearby.",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 10,
+            "Cooldown": 10.0,
             "CostType": "UltimateSp",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "Ultimate Energy Cost",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -509,14 +509,6 @@
         }
     },
     "NodeSkillMap": {
-        "chr_0012_avywen_passive_skill_0_2": {
-            "Icon": "icon_talent_avywen_01",
-            "Level": 2,
-            "Index": 0,
-            "Name": "Expedited Delivery",
-            "Desc": "After a thrown or returning <@ba.key>Thunderlance</> or <@ba.key>Thunderlance EX</> hits the enemy, Avywenna gains <@ba.vup>4</> Ultimate Energy.",
-            "Type": 4
-        },
         "chr_0012_avywen_passive_skill_0_1": {
             "Icon": "icon_talent_avywen_01",
             "Level": 1,
@@ -525,11 +517,43 @@
             "Desc": "After a thrown or returning <@ba.key>Thunderlance</> or <@ba.key>Thunderlance EX</> hits the enemy, Avywenna gains <@ba.vup>3</> Ultimate Energy.",
             "Type": 4
         },
+        "chr_0012_avywen_passive_skill_0_2": {
+            "Icon": "icon_talent_avywen_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Expedited Delivery",
+            "Desc": "After a thrown or returning <@ba.key>Thunderlance</> or <@ba.key>Thunderlance EX</> hits the enemy, Avywenna gains <@ba.vup>4</> Ultimate Energy.",
+            "Type": 4
+        },
+        "chr_0012_avywen_passive_skill_1_1": {
+            "Icon": "icon_talent_avywen_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Tactful Approach",
+            "Desc": "Ultimate <@ba.key>Thunderlance: Final Shock</> improved: Also applies <@ba.vup>6%</> <#ba.pulsevul>Electric Susceptibility</> for <@ba.vup>10</>s to enemies it hits.",
+            "Type": 4
+        },
+        "chr_0012_avywen_passive_skill_1_2": {
+            "Icon": "icon_talent_avywen_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Tactful Approach",
+            "Desc": "Ultimate <@ba.key>Thunderlance: Final Shock</> improved: Also applies <@ba.vup>10%</> <#ba.pulsevul>Electric Susceptibility</> for <@ba.vup>10</>s to enemies it hits.",
+            "Type": 4
+        },
         "fac_chr_0012_avywen_0_1": {
             "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
             "Name": "Residence Advisor α",
             "Desc": "Assign to Control Nexus to grant all operators' Mood Regen +8%",
             "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0012_avywen_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "Residence Advisor β",
+            "Desc": "Assign to Control Nexus to grant all operators' Mood Regen +12%",
+            "Level": 2,
             "Index": 2,
             "Type": 5
         },
@@ -541,14 +565,6 @@
             "Index": 3,
             "Type": 5
         },
-        "fac_chr_0012_avywen_0_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
-            "Name": "Residence Advisor β",
-            "Desc": "Assign to Control Nexus to grant all operators' Mood Regen +12%",
-            "Level": 2,
-            "Index": 2,
-            "Type": 5
-        },
         "fac_chr_0012_avywen_1_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
             "Name": "Messenger's Secret β",
@@ -556,22 +572,6 @@
             "Level": 2,
             "Index": 3,
             "Type": 5
-        },
-        "chr_0012_avywen_passive_skill_1_2": {
-            "Icon": "icon_talent_avywen_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "Tactful Approach",
-            "Desc": "Ultimate <@ba.key>Thunderlance: Final Shock</> improved: Also applies <@ba.vup>10%</> <#ba.pulsevul>Electric Susceptibility</> for <@ba.vup>10</>s to enemies it hits.",
-            "Type": 4
-        },
-        "chr_0012_avywen_passive_skill_1_1": {
-            "Icon": "icon_talent_avywen_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "Tactful Approach",
-            "Desc": "Ultimate <@ba.key>Thunderlance: Final Shock</> improved: Also applies <@ba.vup>6%</> <#ba.pulsevul>Electric Susceptibility</> for <@ba.vup>10</>s to enemies it hits.",
-            "Type": 4
         }
     },
     "Potentials": {

@@ -9,17 +9,17 @@
     "MainAttrId": 40,
     "SubAttrId": 41,
     "AttributeNodes": {
-        "chr_0028_wulfa_7": {
-            "40": 20
-        },
-        "chr_0028_wulfa_5": {
-            "40": 15
-        },
         "chr_0028_wulfa_1": {
-            "40": 10
+            "40": 10.0
         },
         "chr_0028_wulfa_3": {
-            "40": 15
+            "40": 15.0
+        },
+        "chr_0028_wulfa_5": {
+            "40": 15.0
+        },
+        "chr_0028_wulfa_7": {
+            "40": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "DÉCLENCHEMENT DE COMBO : lorsqu'un ennemi est victime à la fois de cumuls de <#ba.noguard>Vulnérabilité</> et d'<#ba.spellinflict>altération des Arts</>.\nLa compétence de combo de Rossi possède 2 séquences consécutives. SÉQ DE COMBO 1 : inflige des <@ba.pd>DÉG physiques</> à la cible.\nSÉQ DE COMBO 2 : <#ba.consume>consomme</> tous les cumuls d'<#ba.spellinflict>altération des Arts</> de la cible, lui inflige des <@ba.pd>DÉG physiques</> en fonction du nombre de cumuls d'altération des Arts <#ba.consume>consommés</>, applique <#ba.airborne>Soulèvement</> 1 fois et améliore à la fois le taux de coups critiques de Rossi et les DÉG critiques qu'elle inflige.\nLancer la SÉQ DE COMBO 2 selon un <@ba.key>timing parfait</> permet d'appliquer 1 cumul de <#ba.noguard>Vulnérabilité</> supplémentaire.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Temps de recharge",
@@ -143,7 +143,7 @@
                     ]
                 },
                 {
-                    "Text": "Taux de coups critiques accru",
+                    "Text": "Taux de coups critiques",
                     "ConditionId": "",
                     "Values": [
                         "15%",
@@ -220,12 +220,12 @@
             "Icon": "skillicon/icon_attack_sword",
             "Element": "Physical",
             "Name": "Sang de loup bouillonnant",
-            "Desc": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>18</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC.",
+            "Desc": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également <@ba.poise>18</> points de Déséquilibre. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Multiplicateur d'ATQ-B SÉQ 1",
@@ -355,6 +355,109 @@
                 }
             ]
         },
+        "chr_0028_wulfa_NormalSkill": {
+            "Icon": "skillicon/icon_skill_wulfa_01",
+            "Element": "Physical",
+            "Name": "Ombre pourpre",
+            "Desc": "Charge la cible pour infliger des <@ba.pd>DÉG physiques</> et appliquer un <#ba.airborne>Soulèvement</>.\nSi la cible a déjà un ou plusieurs cumuls de <#ba.noguard>Vulnérabilité</>, cette compétence libère aussi un <@ba.key>Ambre du loup</> qui charge la cible pour lui infliger des <@ba.fire>DÉG thermiques</>.",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "Coût en PC",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur de DÉG SÉQ 1",
+                    "ConditionId": "",
+                    "Values": [
+                        "85%",
+                        "94%",
+                        "102%",
+                        "111%",
+                        "119%",
+                        "128%",
+                        "137%",
+                        "145%",
+                        "154%",
+                        "164%",
+                        "177%",
+                        "192%"
+                    ]
+                },
+                {
+                    "Text": "Déséquilibre de SÉQ 1",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur de DÉG SÉQ 2",
+                    "ConditionId": "",
+                    "Values": [
+                        "128%",
+                        "141%",
+                        "153%",
+                        "166%",
+                        "179%",
+                        "192%",
+                        "204%",
+                        "217%",
+                        "230%",
+                        "246%",
+                        "265%",
+                        "288%"
+                    ]
+                },
+                {
+                    "Text": "Déséquilibre de SÉQ 2",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "12",
+                        "12",
+                        "12",
+                        "15"
+                    ]
+                }
+            ]
+        },
         "chr_0028_wulfa_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_wulfa_01",
             "Element": "Fire",
@@ -362,26 +465,26 @@
             "Desc": "Rossi agite sa cape et déclenche une tempête de coups qui inflige rapidement plusieurs séquences de <@ba.fire>DÉG thermiques</> à la cible. Elle exécute ensuite une attaque à deux séquences avec sa dague, qui inflige de lourds <@ba.fire>DÉG thermiques</> et applique une <#ba.fireinflict>altération thermique</>.\n<@ba.info>Lorsque cette compétence inflige un coup critique, ses DÉG critiques sont augmentés.</>",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 10,
+            "Cooldown": 10.0,
             "CostType": "UltimateSp",
-            "CostValue": 110,
+            "CostValue": 110.0,
             "Params": [
                 {
                     "Text": "Coût en énergie d'ultime",
                     "ConditionId": "",
                     "Values": [
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0
                     ]
                 },
                 {
@@ -493,112 +596,17 @@
                     ]
                 }
             ]
-        },
-        "chr_0028_wulfa_NormalSkill": {
-            "Icon": "skillicon/icon_skill_wulfa_01",
-            "Element": "Physical",
-            "Name": "Ombre pourpre",
-            "Desc": "Charge la cible pour infliger des <@ba.pd>DÉG physiques</> et appliquer un <#ba.airborne>Soulèvement</>.\nSi la cible a déjà un ou plusieurs cumuls de <#ba.noguard>Vulnérabilité</>, cette compétence libère aussi un <@ba.key>Ambre du loup</> qui charge la cible pour lui infliger des <@ba.fire>DÉG thermiques</>.",
-            "ConditionData": {},
-            "Type": 1,
-            "Cooldown": 0,
-            "CostType": "Atb",
-            "CostValue": 100,
-            "Params": [
-                {
-                    "Text": "Coût en PC",
-                    "ConditionId": "",
-                    "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
-                    ]
-                },
-                {
-                    "Text": "Multiplicateur de DÉG SÉQ 1",
-                    "ConditionId": "",
-                    "Values": [
-                        "85%",
-                        "94%",
-                        "102%",
-                        "111%",
-                        "119%",
-                        "128%",
-                        "137%",
-                        "145%",
-                        "154%",
-                        "164%",
-                        "177%",
-                        "192%"
-                    ]
-                },
-                {
-                    "Text": "Déséquilibre de SÉQ 1",
-                    "ConditionId": "",
-                    "Values": [
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5"
-                    ]
-                },
-                {
-                    "Text": "Multiplicateur de DÉG SÉQ 2",
-                    "ConditionId": "",
-                    "Values": [
-                        "128%",
-                        "141%",
-                        "153%",
-                        "166%",
-                        "179%",
-                        "192%",
-                        "204%",
-                        "217%",
-                        "230%",
-                        "246%",
-                        "265%",
-                        "288%"
-                    ]
-                },
-                {
-                    "Text": "Déséquilibre de SÉQ 2",
-                    "ConditionId": "",
-                    "Values": [
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "12",
-                        "12",
-                        "12",
-                        "15"
-                    ]
-                }
-            ]
         }
     },
     "NodeSkillMap": {
+        "chr_0028_wulfa_passive_skill_0_1": {
+            "Icon": "icon_talent_wulfa_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Entailles et éraflures",
+            "Desc": "Renforce la compétence de combat : après qu'<@ba.key>Ambre du loup</> inflige des dégâts, Rossi applique <#ba.rossi>Tranche-griffure</> à la cible pendant <@ba.vup>15</> s. L'effet ne peut pas être cumulé.\nPendant la durée du statut <#ba.rossi>griffé</>, la cible subit <@ba.vup>25%</> de l'ATQ (de Rossi) par seconde sous forme de <@ba.pd>DÉG physiques</> ainsi que <@ba.vup>+6%</> de <@ba.pd>DÉG physiques</> et de <@ba.fire>DÉG thermiques</>.",
+            "Type": 4
+        },
         "chr_0028_wulfa_passive_skill_0_2": {
             "Icon": "icon_talent_wulfa_01",
             "Level": 2,
@@ -607,36 +615,12 @@
             "Desc": "Renforce la compétence de combat : après qu'<@ba.key>Ambre du loup</> inflige des dégâts, Rossi applique <#ba.rossi>Tranche-griffure</> à la cible pendant <@ba.vup>25</> s. L'effet ne peut pas être cumulé.\nPendant la durée du statut <#ba.rossi>griffé</>, la cible subit <@ba.vup>30%</> de l'ATQ (de Rossi) par seconde sous forme de <@ba.pd>DÉG physiques</> ainsi que <@ba.vup>+12%</> de <@ba.pd>DÉG physiques</> et de <@ba.fire>DÉG thermiques</>.",
             "Type": 4
         },
-        "fac_chr_0028_wulfa_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
-            "Name": "Fumet de chasse β",
-            "Desc": "En l'affectant à la salle de réception, augmente l'efficacité des opérateurs en matière de collecte d'indices de 20 %.",
+        "chr_0028_wulfa_passive_skill_1_1": {
+            "Icon": "icon_talent_wulfa_02",
             "Level": 1,
-            "Index": 3,
-            "Type": 5
-        },
-        "fac_chr_0028_wulfa_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
-            "Name": "Protocole du clan β",
-            "Desc": "En l'affectant à la salle de réception, ralentit la baisse d'humeur de tous les opérateurs qui s'y trouvent de 14 %.",
-            "Level": 1,
-            "Index": 2,
-            "Type": 5
-        },
-        "fac_chr_0028_wulfa_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
-            "Name": "Fumet de chasse γ",
-            "Desc": "En l'affectant à la salle de réception, augmente l'efficacité des opérateurs en matière de collecte d'indices de 30 %.",
-            "Level": 2,
-            "Index": 3,
-            "Type": 5
-        },
-        "chr_0028_wulfa_passive_skill_0_1": {
-            "Icon": "icon_talent_wulfa_01",
-            "Level": 1,
-            "Index": 0,
-            "Name": "Entailles et éraflures",
-            "Desc": "Renforce la compétence de combat : après qu'<@ba.key>Ambre du loup</> inflige des dégâts, Rossi applique <#ba.rossi>Tranche-griffure</> à la cible pendant <@ba.vup>15</> s. L'effet ne peut pas être cumulé.\nPendant la durée du statut <#ba.rossi>griffé</>, la cible subit <@ba.vup>25%</> de l'ATQ (de Rossi) par seconde sous forme de <@ba.pd>DÉG physiques</> ainsi que <@ba.vup>+6%</> de <@ba.pd>DÉG physiques</> et de <@ba.fire>DÉG thermiques</>.",
+            "Index": 1,
+            "Name": "Sang bouillonnant",
+            "Desc": "Lorsque la compétence de Rossi inflige des DÉG critiques à un ennemi <#ba.rossi>griffé</>, cela déclenche un autre coup qui inflige <@ba.vup>12%</> de l'ATQ de Rossi sous forme de <@ba.fire>DÉG thermiques</> et restaure <@ba.heal>[Intelligence × 0.04]</> PV à Rossi. Si la cible est aussi en <#ba.burning>combustion</>, ces effets des DÉG et de régénération de PV sont multipliés par <@ba.vup>1.5</>.",
             "Type": 4
         },
         "chr_0028_wulfa_passive_skill_1_2": {
@@ -647,6 +631,14 @@
             "Desc": "Lorsque la compétence de Rossi inflige des DÉG critiques à un ennemi <#ba.rossi>griffé</>, cela déclenche un autre coup qui inflige <@ba.vup>24%</> de l'ATQ de Rossi sous forme de <@ba.fire>DÉG thermiques</> et restaure <@ba.heal>[Intelligence × 0.08]</> PV à Rossi. Si la cible est aussi en <#ba.burning>combustion</>, ces effets des DÉG et de régénération de PV sont multipliés par <@ba.vup>1.5</>.",
             "Type": 4
         },
+        "fac_chr_0028_wulfa_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
+            "Name": "Protocole du clan β",
+            "Desc": "En l'affectant à la salle de réception, ralentit la baisse d'humeur de tous les opérateurs qui s'y trouvent de 14 %.",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
         "fac_chr_0028_wulfa_0_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
             "Name": "Protocole du clan γ",
@@ -655,19 +647,27 @@
             "Index": 2,
             "Type": 5
         },
-        "chr_0028_wulfa_passive_skill_1_1": {
-            "Icon": "icon_talent_wulfa_02",
+        "fac_chr_0028_wulfa_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
+            "Name": "Fumet de chasse β",
+            "Desc": "En l'affectant à la salle de réception, augmente l'efficacité des opérateurs en matière de collecte d'indices de 20 %.",
             "Level": 1,
-            "Index": 1,
-            "Name": "Sang bouillonnant",
-            "Desc": "Lorsque la compétence de Rossi inflige des DÉG critiques à un ennemi <#ba.rossi>griffé</>, cela déclenche un autre coup qui inflige <@ba.vup>12%</> de l'ATQ de Rossi sous forme de <@ba.fire>DÉG thermiques</> et restaure <@ba.heal>[Intelligence × 0.04]</> PV à Rossi. Si la cible est aussi en <#ba.burning>combustion</>, ces effets des DÉG et de régénération de PV sont multipliés par <@ba.vup>1.5</>.",
-            "Type": 4
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0028_wulfa_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
+            "Name": "Fumet de chasse γ",
+            "Desc": "En l'affectant à la salle de réception, augmente l'efficacité des opérateurs en matière de collecte d'indices de 30 %.",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
         }
     },
     "Potentials": {
         "1": {
             "Name": "Source d'admiration",
-            "Desc": "Renforce la compétence de combat <@ba.key>Ombre pourpre</> et la compétence de combo <@ba.key>Moment d'ombre ardente</> : les multiplicateurs de DÉG de ces compétences passent à <@ba.vup>1.15</> fois leur valeur d'origine.\nL'<@ba.key>Ambre du loup</> de la compétence de combat permet également de <#ba.return>récupérer</> <@ba.vup>10</> PC après avoir touché l'ennemi."
+            "Desc": "Renforce la compétence de combat <@ba.key>Ombre pourpre</> et la compétence de combo <@ba.key>Moment d'ombre ardente</> : les multiplicateurs de DÉG de ces compétences passent à <@ba.vup>1.15</> fois leur valeur d'origine.\nL'<@ba.key>Ambre du loup</> de la compétence de combat permet également de <#ba.return>restituer</> <@ba.vup>10</> PC après avoir touché l'ennemi."
         },
         "2": {
             "Name": "Proche de la perfection",

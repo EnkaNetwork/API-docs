@@ -10,19 +10,158 @@
     "SubAttrId": 42,
     "AttributeNodes": {
         "chr_0026_lastrite_1": {
-            "39": 10
+            "39": 10.0
         },
         "chr_0026_lastrite_3": {
-            "39": 15
+            "39": 15.0
         },
         "chr_0026_lastrite_5": {
-            "39": 15
+            "39": 15.0
         },
         "chr_0026_lastrite_7": {
-            "39": 20
+            "39": 20.0
         }
     },
     "SkillInfoMap": {
+        "chr_0026_lastrite_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_lastrite_01",
+            "Element": "Cryst",
+            "Name": "Winter's Devourer",
+            "Desc": "COMBO TRIGGER: When an enemy has 3 or more <#ba.crystinflict>Cryo Infliction</> stacks. \nEncases the target enemy in icicles and shatters them to <#ba.consume>consume</> all <#ba.crystinflict>Cryo Infliction</> stacks of the said enemy. The number of <#ba.crystinflict>Cryo Infliction</> stacks <#ba.consume>consumed</> determines the amount of <@ba.cryst>Cryo DMG</> dealt to the said enemy and Ultimate Energy gained by Last Rite.",
+            "ConditionData": {},
+            "Type": 2,
+            "Cooldown": 9.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Cooldown",
+                    "ConditionId": "",
+                    "Values": [
+                        "9s",
+                        "9s",
+                        "9s",
+                        "9s",
+                        "9s",
+                        "9s",
+                        "9s",
+                        "9s",
+                        "9s",
+                        "9s",
+                        "9s",
+                        "9s"
+                    ]
+                },
+                {
+                    "Text": "Ice Shard DMG Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "71%",
+                        "78%",
+                        "85%",
+                        "92%",
+                        "99%",
+                        "107%",
+                        "114%",
+                        "121%",
+                        "128%",
+                        "137%",
+                        "147%",
+                        "160%"
+                    ]
+                },
+                {
+                    "Text": "Slash Base DMG Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "71%",
+                        "78%",
+                        "85%",
+                        "92%",
+                        "99%",
+                        "107%",
+                        "114%",
+                        "121%",
+                        "128%",
+                        "137%",
+                        "147%",
+                        "160%"
+                    ]
+                },
+                {
+                    "Text": "Slash Stagger",
+                    "ConditionId": "",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                },
+                {
+                    "Text": "Bonus DMG Multiplier per Infliction Stack",
+                    "ConditionId": "",
+                    "Values": [
+                        "107%",
+                        "117%",
+                        "128%",
+                        "139%",
+                        "149%",
+                        "160%",
+                        "171%",
+                        "181%",
+                        "192%",
+                        "205%",
+                        "221%",
+                        "240%"
+                    ]
+                },
+                {
+                    "Text": "Base Ultimate Energy Gain",
+                    "ConditionId": "",
+                    "Values": [
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40"
+                    ]
+                },
+                {
+                    "Text": "Additional Ultimate Energy Gain per Infliction Stack",
+                    "ConditionId": "",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                }
+            ]
+        },
         "chr_0026_lastrite_NormalAttack": {
             "Icon": "skillicon/icon_attack_claym",
             "Element": "Cryst",
@@ -30,9 +169,9 @@
             "Desc": "BASIC ATTACK: \nAn attack with up to 4 sequences that deals <@ba.cryst>Cryo DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>25</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.cryst>Cryo DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.cryst>Cryo DMG</> and recovers some SP.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "BATK SEQ 1 Multiplier",
@@ -151,26 +290,26 @@
             "Desc": "Performs a <@ba.key>Hypothermic Perfusion</> on the controlled operator's weapon and <#ba.return>returns</> some SP. \nThe next <#ba.lastcombo>Final Strike</> performed by the currently controlled operator within a certain duration creates Last Rite's Mirages that unleash an additional attack at the target. This attack deals <@ba.cryst>Cryo DMG</> and applies <#ba.crystinflict>Cryo Infliction</>. \nWhen the controlled operator is Last Rite herself, casting this battle skill does not reset her basic attack sequence.",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "SP Cost",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -254,26 +393,26 @@
             "Desc": "Last Rite encases herself in frost armor, creates an ice scythe to perform 3 slashes, and gains immunity to all damages while this state is active. \nEach slash deals massive <@ba.cryst>Cryo DMG</>. \n<@ba.info>Last Rite can only gain Ultimate Energy from her own battle skills and combo skills.</>",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 20,
+            "Cooldown": 20.0,
             "CostType": "UltimateSp",
-            "CostValue": 240,
+            "CostValue": 240.0,
             "Params": [
                 {
                     "Text": "Ultimate Energy Cost",
                     "ConditionId": "",
                     "Values": [
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0
                     ]
                 },
                 {
@@ -403,163 +542,40 @@
                     ]
                 }
             ]
-        },
-        "chr_0026_lastrite_ComboSkill": {
-            "Icon": "skillicon/icon_combo_skill_lastrite_01",
-            "Element": "Cryst",
-            "Name": "Winter's Devourer",
-            "Desc": "COMBO TRIGGER: When an enemy has 3 or more <#ba.crystinflict>Cryo Infliction</> stacks. \nEncases the target enemy in icicles and shatters them to <#ba.consume>consume</> all <#ba.crystinflict>Cryo Infliction</> stacks of the said enemy. The number of <#ba.crystinflict>Cryo Infliction</> stacks <#ba.consume>consumed</> determines the amount of <@ba.cryst>Cryo DMG</> dealt to the said enemy and Ultimate Energy gained by Last Rite.",
-            "ConditionData": {},
-            "Type": 2,
-            "Cooldown": 9,
-            "CostType": "UltimateSp",
-            "CostValue": 0,
-            "Params": [
-                {
-                    "Text": "Cooldown",
-                    "ConditionId": "",
-                    "Values": [
-                        "9s",
-                        "9s",
-                        "9s",
-                        "9s",
-                        "9s",
-                        "9s",
-                        "9s",
-                        "9s",
-                        "9s",
-                        "9s",
-                        "9s",
-                        "9s"
-                    ]
-                },
-                {
-                    "Text": "Ice Shard DMG Multiplier",
-                    "ConditionId": "",
-                    "Values": [
-                        "71%",
-                        "78%",
-                        "85%",
-                        "92%",
-                        "99%",
-                        "107%",
-                        "114%",
-                        "121%",
-                        "128%",
-                        "137%",
-                        "147%",
-                        "160%"
-                    ]
-                },
-                {
-                    "Text": "Slash Base DMG Multiplier",
-                    "ConditionId": "",
-                    "Values": [
-                        "71%",
-                        "78%",
-                        "85%",
-                        "92%",
-                        "99%",
-                        "107%",
-                        "114%",
-                        "121%",
-                        "128%",
-                        "137%",
-                        "147%",
-                        "160%"
-                    ]
-                },
-                {
-                    "Text": "Slash Stagger",
-                    "ConditionId": "",
-                    "Values": [
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15"
-                    ]
-                },
-                {
-                    "Text": "Bonus DMG Multiplier per Infliction Stack",
-                    "ConditionId": "",
-                    "Values": [
-                        "107%",
-                        "117%",
-                        "128%",
-                        "139%",
-                        "149%",
-                        "160%",
-                        "171%",
-                        "181%",
-                        "192%",
-                        "205%",
-                        "221%",
-                        "240%"
-                    ]
-                },
-                {
-                    "Text": "Base Ultimate Energy Gain",
-                    "ConditionId": "",
-                    "Values": [
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40"
-                    ]
-                },
-                {
-                    "Text": "Additional Ultimate Energy Gain per Infliction Stack",
-                    "ConditionId": "",
-                    "Values": [
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15"
-                    ]
-                }
-            ]
         }
     },
     "NodeSkillMap": {
-        "fac_chr_0026_lastrite_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
-            "Name": "Fame of the Royal Courts α",
-            "Desc": "Assign to Reception Room to grant operators a small Clue 7 Rate-UP: Seš'qa (activates upon assignment; effects of the same type cannot stack)",
+        "chr_0026_lastrite_passive_skill_0_1": {
+            "Icon": "icon_talent_lastrite_01",
             "Level": 1,
-            "Index": 3,
-            "Type": 5
+            "Index": 0,
+            "Name": "Hypothermia",
+            "Desc": "After Last Rite <#ba.consume>consumes</> any <#ba.spellinflict>Arts Infliction</>, she applies <#ba.crystvul>Cryo Susceptibility</> to the target with the effect of [Number of <#ba.spellinflict>Arts Infliction</> stacks <#ba.consume>consumed</> × <@ba.vup>2%</>] for <@ba.vup>15</>s. This effect cannot stack.",
+            "Type": 4
         },
-        "fac_chr_0026_lastrite_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
-            "Name": "Fame of the Royal Courts β",
-            "Desc": "Assign to Reception Room to grant operators Clue 7 Rate-UP: Seš'qa (activates upon assignment; effects of the same type cannot stack)",
+        "chr_0026_lastrite_passive_skill_0_2": {
+            "Icon": "icon_talent_lastrite_01",
             "Level": 2,
-            "Index": 3,
-            "Type": 5
+            "Index": 0,
+            "Name": "Hypothermia",
+            "Desc": "After Last Rite <#ba.consume>consumes</> any <#ba.spellinflict>Arts Infliction</>, she applies <#ba.crystvul>Cryo Susceptibility</> to the target with the effect of [Number of <#ba.spellinflict>Arts Infliction</> stacks <#ba.consume>consumed</> × <@ba.vup>4%</>] for <@ba.vup>15</>s. This effect cannot stack.",
+            "Type": 4
+        },
+        "chr_0026_lastrite_passive_skill_1_1": {
+            "Icon": "icon_talent_lastrite_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Cryogenic Embrittlement",
+            "Desc": "Ultimate <@ba.key>Vigil Services</> improved: When the ultimate deals DMG to an enemy with <#ba.crystvul>Cryo Susceptibility</>, the effect of that <#ba.crystvul>Cryo Susceptibility</> is <@ba.vup>1.2</> times the original.",
+            "Type": 4
+        },
+        "chr_0026_lastrite_passive_skill_1_2": {
+            "Icon": "icon_talent_lastrite_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Cryogenic Embrittlement",
+            "Desc": "Ultimate <@ba.key>Vigil Services</> improved: When the ultimate deals DMG to an enemy with <#ba.crystvul>Cryo Susceptibility</>, the effect of that <#ba.crystvul>Cryo Susceptibility</> is <@ba.vup>1.5</> times the original.",
+            "Type": 4
         },
         "fac_chr_0026_lastrite_0_1": {
             "Icon": "spaceshipskillicon/facskill_spaceship_plant_flower",
@@ -577,37 +593,21 @@
             "Index": 2,
             "Type": 5
         },
-        "chr_0026_lastrite_passive_skill_0_2": {
-            "Icon": "icon_talent_lastrite_01",
-            "Level": 2,
-            "Index": 0,
-            "Name": "Hypothermia",
-            "Desc": "After Last Rite <#ba.consume>consumes</> any <#ba.spellinflict>Arts Infliction</>, she applies <#ba.crystvul>Cryo Susceptibility</> to the target with the effect of [Number of <#ba.spellinflict>Arts Infliction</> stacks <#ba.consume>consumed</> × <@ba.vup>4%</>] for <@ba.vup>15</>s. This effect cannot stack.",
-            "Type": 4
-        },
-        "chr_0026_lastrite_passive_skill_1_2": {
-            "Icon": "icon_talent_lastrite_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "Cryogenic Embrittlement",
-            "Desc": "Ultimate <@ba.key>Vigil Services</> improved: When the ultimate deals DMG to an enemy with <#ba.crystvul>Cryo Susceptibility</>, the effect of that <#ba.crystvul>Cryo Susceptibility</> is <@ba.vup>1.5</> times the original.",
-            "Type": 4
-        },
-        "chr_0026_lastrite_passive_skill_0_1": {
-            "Icon": "icon_talent_lastrite_01",
+        "fac_chr_0026_lastrite_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
+            "Name": "Fame of the Royal Courts α",
+            "Desc": "Assign to Reception Room to grant operators a small Clue 7 Rate-UP: Seš'qa (activates upon assignment; effects of the same type cannot stack)",
             "Level": 1,
-            "Index": 0,
-            "Name": "Hypothermia",
-            "Desc": "After Last Rite <#ba.consume>consumes</> any <#ba.spellinflict>Arts Infliction</>, she applies <#ba.crystvul>Cryo Susceptibility</> to the target with the effect of [Number of <#ba.spellinflict>Arts Infliction</> stacks <#ba.consume>consumed</> × <@ba.vup>2%</>] for <@ba.vup>15</>s. This effect cannot stack.",
-            "Type": 4
+            "Index": 3,
+            "Type": 5
         },
-        "chr_0026_lastrite_passive_skill_1_1": {
-            "Icon": "icon_talent_lastrite_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "Cryogenic Embrittlement",
-            "Desc": "Ultimate <@ba.key>Vigil Services</> improved: When the ultimate deals DMG to an enemy with <#ba.crystvul>Cryo Susceptibility</>, the effect of that <#ba.crystvul>Cryo Susceptibility</> is <@ba.vup>1.2</> times the original.",
-            "Type": 4
+        "fac_chr_0026_lastrite_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
+            "Name": "Fame of the Royal Courts β",
+            "Desc": "Assign to Reception Room to grant operators Clue 7 Rate-UP: Seš'qa (activates upon assignment; effects of the same type cannot stack)",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
         }
     },
     "Potentials": {

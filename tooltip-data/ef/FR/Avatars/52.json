@@ -1,0 +1,743 @@
+{
+    "StrId": "chr_0038_purrche",
+    "Name": "Purrchena",
+    "Rarity": 5,
+    "Element": "Physical",
+    "Profession": "DEFENDER",
+    "Conditions": {},
+    "WeaponType": "Sword",
+    "MainAttrId": 39,
+    "SubAttrId": 42,
+    "AttributeNodes": {
+        "chr_0038_purrche_1": {
+            "39": 10.0
+        },
+        "chr_0038_purrche_3": {
+            "39": 15.0
+        },
+        "chr_0038_purrche_5": {
+            "39": 15.0
+        },
+        "chr_0038_purrche_7": {
+            "39": 20.0
+        }
+    },
+    "SkillInfoMap": {
+        "chr_0038_purrche_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_purrche_01",
+            "Element": "Physical",
+            "Name": "GÂTEAU OU « CADEAU »",
+            "Desc": "DÉCLENCHEMENT DE COMBO : lorsque l'opérateur contrôlé est attaqué.\nLance un <@ba.key>coffret cadeau</> à l'opérateur contrôlé. Le <@ba.key>coffret cadeau</> s'ouvre après un court délai. Il octroie des <@ba.heal>soins</> aux opérateurs proches et révèle aléatoirement l'un des objets suivants tout en déclenchant ses effets :\n<@ba.key>Bombe</> : inflige des <@ba.pd>DÉG physiques</> et un Déséquilibre supplémentaire aux ennemis dans la zone d'effet.\n<@ba.key>Objet artisanal</> : attire les ennemis proches en continu et inflige des <@ba.pd>DÉG physiques</>.\n<@ba.key>Délicieux dessert</> : octroie des <@ba.heal>soins</> à l'opérateur contrôlé.\nLe trait Volonté augmente la quantité de soins prodigués.",
+            "ConditionData": {},
+            "Type": 2,
+            "Cooldown": 24.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Temps de recharge",
+                    "ConditionId": "",
+                    "Values": [
+                        "24s",
+                        "24s",
+                        "24s",
+                        "24s",
+                        "24s",
+                        "24s",
+                        "24s",
+                        "24s",
+                        "24s",
+                        "24s",
+                        "24s",
+                        "24s"
+                    ]
+                },
+                {
+                    "Text": "Soins de base",
+                    "ConditionId": "",
+                    "Values": [
+                        "216",
+                        "259",
+                        "302",
+                        "346",
+                        "367",
+                        "389",
+                        "410",
+                        "432",
+                        "454",
+                        "464",
+                        "475",
+                        "486"
+                    ]
+                },
+                {
+                    "Text": "Augmentation des soins par Volonté",
+                    "ConditionId": "",
+                    "Values": [
+                        "0.5",
+                        "0.6",
+                        "0.71",
+                        "0.81",
+                        "0.86",
+                        "0.91",
+                        "0.96",
+                        "1.01",
+                        "1.06",
+                        "1.08",
+                        "1.11",
+                        "1.13"
+                    ]
+                },
+                {
+                    "Text": "Bombe : multiplicateur de DÉG",
+                    "ConditionId": "",
+                    "Values": [
+                        "133%",
+                        "147%",
+                        "160%",
+                        "173%",
+                        "187%",
+                        "200%",
+                        "213%",
+                        "227%",
+                        "240%",
+                        "257%",
+                        "277%",
+                        "300%"
+                    ]
+                },
+                {
+                    "Text": "Bombe : Déséquilibre",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Objet artisanal : multiplicateur de DÉG",
+                    "ConditionId": "",
+                    "Values": [
+                        "66%",
+                        "72%",
+                        "79%",
+                        "85%",
+                        "95%",
+                        "101%",
+                        "108%",
+                        "114%",
+                        "120%",
+                        "127%",
+                        "138%",
+                        "150%"
+                    ]
+                },
+                {
+                    "Text": "Délicieux dessert : soins de base",
+                    "ConditionId": "",
+                    "Values": [
+                        "144",
+                        "173",
+                        "202",
+                        "230",
+                        "245",
+                        "259",
+                        "274",
+                        "288",
+                        "302",
+                        "310",
+                        "317",
+                        "324"
+                    ]
+                },
+                {
+                    "Text": "Délicieux dessert : augmentation des soins par Volonté",
+                    "ConditionId": "",
+                    "Values": [
+                        "0.34",
+                        "0.4",
+                        "0.47",
+                        "0.54",
+                        "0.57",
+                        "0.6",
+                        "0.64",
+                        "0.67",
+                        "0.71",
+                        "0.72",
+                        "0.74",
+                        "0.76"
+                    ]
+                },
+                {
+                    "Text": "Gain d'énergie d'ultime",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0038_purrche_NormalAttack": {
+            "Icon": "skillicon/icon_attack_sword",
+            "Element": "Physical",
+            "Name": "ET VOILÀ LE DESSERT ! SERVEZ-VOUS !",
+            "Desc": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 3 séquences, qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opératrice, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>21</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC.",
+            "ConditionData": {},
+            "Type": 0,
+            "Cooldown": 0.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Multiplicateur d'ATQ-B SÉQ 1",
+                    "ConditionId": "",
+                    "Values": [
+                        "48%",
+                        "53%",
+                        "58%",
+                        "62%",
+                        "67%",
+                        "72%",
+                        "77%",
+                        "82%",
+                        "86%",
+                        "92%",
+                        "100%",
+                        "108%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur d'ATQ-B SÉQ 2",
+                    "ConditionId": "",
+                    "Values": [
+                        "52%",
+                        "57%",
+                        "62%",
+                        "67%",
+                        "72%",
+                        "77%",
+                        "82%",
+                        "88%",
+                        "93%",
+                        "99%",
+                        "107%",
+                        "116%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur d'ATQ-B SÉQ 3",
+                    "ConditionId": "",
+                    "Values": [
+                        "102%",
+                        "112%",
+                        "122%",
+                        "133%",
+                        "143%",
+                        "153%",
+                        "163%",
+                        "173%",
+                        "184%",
+                        "196%",
+                        "212%",
+                        "230%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur d'ATQ de coup fatal",
+                    "ConditionId": "",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur d'ATQ plongeante",
+                    "ConditionId": "",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "chr_0038_purrche_NormalSkill": {
+            "Icon": "skillicon/icon_skill_purrche_01",
+            "Element": "Natural",
+            "Name": "JE NE DORS PAS !",
+            "Desc": "Purrchena lève son bouclier pour bloquer une attaque et <#ba.return>régénère</> immédiatement quelques PC. Tant que le bouclier de Purrchena est levé, elle offre une <#ba.guard>protection</> à elle-même et aux opérateurs proches. Pendant la compétence de combat, le premier blocage réussi prolonge la durée du bouclier levé et <#ba.return>restitue</> des PC supplémentaires. Après activation, la compétence de combat de Purrchena est temporairement remplacée par <@ba.key>PAS TOUCHE À MES AMIS !</>.\n<@ba.key>PAS TOUCHE À MES AMIS !</> : Purrchena donne un coup de tête à une cible devant elle, lui infligeant des <@ba.natur>dégâts naturels</> et appliquant une <#ba.naturalinflict>altération naturelle</>.\n<@ba.info>La protection octroyée pendant que le bouclier est levé diminue après chaque attaque bloquée.</>",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Coût en PC",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "Protection",
+                    "ConditionId": "",
+                    "Values": [
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%"
+                    ]
+                },
+                {
+                    "Text": "Durée d'activation du bouclier (s)",
+                    "ConditionId": "",
+                    "Values": [
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3"
+                    ]
+                },
+                {
+                    "Text": "Durée d'activation du bouclier après un blocage réussi (s)",
+                    "ConditionId": "",
+                    "Values": [
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur de DÉG de coup de tête",
+                    "ConditionId": "",
+                    "Values": [
+                        "178%",
+                        "195%",
+                        "213%",
+                        "231%",
+                        "249%",
+                        "266%",
+                        "284%",
+                        "302%",
+                        "320%",
+                        "342%",
+                        "369%",
+                        "400%"
+                    ]
+                },
+                {
+                    "Text": "Déséquilibre de coup de tête",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Restitution de PC",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Restitution de PC supplémentaire",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                }
+            ]
+        },
+        "chr_0038_purrche_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_purrche_01",
+            "Element": "Physical",
+            "Name": "PAS DE BÊTISES !",
+            "Desc": "Purrchena ouvre 3 <@ba.key>cadeaux du Grand Feli</>. Chaque <@ba.key>cadeau du Grand Feli</> révèle aléatoirement une <@ba.key>bombe</> ou un <@ba.key>objet artisanal</>.\nIl est possible que le cadeau révèle une <@ba.key>spécialité de l'ambassadrice</> qui applique une <#ba.spellvul>sensibilité aux Arts</> et inflige des <@ba.pd>DÉG physiques</> ainsi qu'un Déséquilibre supplémentaire aux ennemis.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 20.0,
+            "CostType": "UltimateSp",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "Coût en énergie d'ultime",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "Temps de recharge",
+                    "ConditionId": "",
+                    "Values": [
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s"
+                    ]
+                },
+                {
+                    "Text": "Bombe : multiplicateur de DÉG",
+                    "ConditionId": "",
+                    "Values": [
+                        "133%",
+                        "147%",
+                        "160%",
+                        "173%",
+                        "187%",
+                        "200%",
+                        "213%",
+                        "227%",
+                        "240%",
+                        "257%",
+                        "277%",
+                        "300%"
+                    ]
+                },
+                {
+                    "Text": "Bombe : Déséquilibre",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Objet artisanal : multiplicateur de DÉG",
+                    "ConditionId": "",
+                    "Values": [
+                        "66%",
+                        "72%",
+                        "79%",
+                        "85%",
+                        "95%",
+                        "101%",
+                        "108%",
+                        "114%",
+                        "120%",
+                        "127%",
+                        "138%",
+                        "150%"
+                    ]
+                },
+                {
+                    "Text": "Spécialité de l'ambassadrice : probabilité de base",
+                    "ConditionId": "",
+                    "Values": [
+                        "15%",
+                        "15%",
+                        "15%",
+                        "15%",
+                        "15%",
+                        "15%",
+                        "15%",
+                        "15%",
+                        "18%",
+                        "18%",
+                        "18%",
+                        "20%"
+                    ]
+                },
+                {
+                    "Text": "Spécialité de l'ambassadrice : multiplicateur de DÉG",
+                    "ConditionId": "",
+                    "Values": [
+                        "267%",
+                        "293%",
+                        "320%",
+                        "347%",
+                        "373%",
+                        "400%",
+                        "427%",
+                        "453%",
+                        "480%",
+                        "513%",
+                        "553%",
+                        "600%"
+                    ]
+                },
+                {
+                    "Text": "Spécialité de l'ambassadrice : Déséquilibre",
+                    "ConditionId": "",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                },
+                {
+                    "Text": "Durée de sensibilité (s)",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "Sensibilité",
+                    "ConditionId": "",
+                    "Values": [
+                        "1.5%",
+                        "1.5%",
+                        "1.5%",
+                        "1.5%",
+                        "1.5%",
+                        "1.5%",
+                        "1.5%",
+                        "1.5%",
+                        "2%",
+                        "2%",
+                        "2%",
+                        "2.5%"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0038_purrche_passive_skill_0_1": {
+            "Icon": "icon_talent_purrche_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Ton excuse arrive TROP TARD !",
+            "Desc": "Renforce la compétence de combat <@ba.key>JE NE DORS PAS !</> : lorsque la compétence bloque une attaque ennemie pour la première fois, elle octroie <@ba.vup>6</> points d'énergie d'ultime supplémentaires. La probabilité d'obtenir une <@ba.key>spécialité de l'ambassadrice</> lors du prochain ultime <@ba.key>PAS DE BÊTISES !</> augmente de <@ba.vup>10%</>. Effet cumulable <@ba.vup>3</> fois.",
+            "Type": 4
+        },
+        "chr_0038_purrche_passive_skill_0_2": {
+            "Icon": "icon_talent_purrche_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Ton excuse arrive TROP TARD !",
+            "Desc": "Renforce la compétence de combat <@ba.key>JE NE DORS PAS !</> : lorsque la compétence bloque une attaque ennemie pour la première fois, elle octroie <@ba.vup>10</> points d'énergie d'ultime supplémentaires. La probabilité d'obtenir une <@ba.key>spécialité de l'ambassadrice</> lors du prochain ultime <@ba.key>PAS DE BÊTISES !</> augmente de <@ba.vup>10%</>. Effet cumulable <@ba.vup>3</> fois.",
+            "Type": 4
+        },
+        "chr_0038_purrche_passive_skill_1_1": {
+            "Icon": "icon_talent_purrche_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Devoir d'une ambassadrice",
+            "Desc": "Lorsqu'elle est envoyée au combat, tous les opérateurs dont les PV sont au max dans l'équipe subissent <@ba.vup>50%</> de DÉG en moins lors de la prochaine attaque subie.\nCet effet ne peut se déclencher qu'une fois toutes les <@ba.vup>180</> s pour chaque opérateur.",
+            "Type": 4
+        },
+        "chr_0038_purrche_passive_skill_1_2": {
+            "Icon": "icon_talent_purrche_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Devoir d'une ambassadrice",
+            "Desc": "Lorsqu'elle est envoyée au combat, tous les opérateurs dont les PV sont au max dans l'équipe subissent <@ba.vup>50%</> de DÉG en moins lors de la prochaine attaque subie.\nCet effet ne peut se déclencher qu'une fois toutes les <@ba.vup>90</> s pour chaque opérateur.",
+            "Type": 4
+        },
+        "fac_chr_0038_purrche_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
+            "Name": "Ambassadrice de marque α",
+            "Desc": "En l'affectant à la salle de réception, augmente légèrement les chances que les opérateurs obtiennent l'indice 2 : CCGT (s'active à l'affectation ; les effets d'un même type ne peuvent être cumulés)",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0038_purrche_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
+            "Name": "Ambassadrice de marque β",
+            "Desc": "En l'affectant à la salle de réception, augmente les chances que les opérateurs obtiennent l'indice 2 : CCGT (s'active à l'affectation ; les effets d'un même type ne peuvent être cumulés)",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0038_purrche_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Des desserts pour le débriefing β",
+            "Desc": "En l'affectant à la cabine de fabrication, augmente le rendement de production des matériaux d'EXP d'opérateur de 20 %.",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0038_purrche_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Des desserts pour le débriefing γ",
+            "Desc": "En l'affectant à la cabine de fabrication, augmente le rendement de production des matériaux d'EXP d'opérateur de 30 %.",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        }
+    },
+    "Potentials": {
+        "1": {
+            "Name": "Aussi chaleureuse que le soleil",
+            "Desc": "Renforce l'ultime <@ba.key>PAS DE BÊTISES</> : la probabilité de base d'obtenir une <@ba.key>spécialité de l'ambassadrice</> est multipliée par <@ba.vup>1.5</>."
+        },
+        "2": {
+            "Name": "« Super énergique »",
+            "Desc": "DÉF <@ba.vup>+20</>, Volonté <@ba.vup>+20</>."
+        },
+        "3": {
+            "Name": "« Petits cadeaux » utiles",
+            "Desc": "Renforce la compétence de combo <@ba.key>GÂTEAU OU « CADEAU »</> : \n<@ba.key>Bombe</> : le multiplicateur de DÉG passe à <@ba.vup>1.2</> fois sa valeur d'origine. \n<@ba.key>Objet artisanal</> : zone d'effet <@ba.vup>+20%</>. \n<@ba.key>Délicieux dessert</> : les soins sont multipliés par <@ba.vup>1.2</>."
+        },
+        "4": {
+            "Name": "Après le festin",
+            "Desc": "Renforce l'ultime <@ba.key>PAS DE BÊTISES !</> : coût en énergie d'ultime <@ba.vup>-15%</>."
+        },
+        "5": {
+            "Name": "Aussi brûlante que des flammes de barbecue",
+            "Desc": "Renforce l'ultime <@ba.key>PAS DE BÊTISES !</> :\nLe multiplicateur de DÉG de la <@ba.key>spécialité de l'ambassadrice</> passe à <@ba.vup>1.2</> fois sa valeur d'origine.\n<@ba.key>Spécialité de l'ambassadrice</> : la <#ba.spellvul>sensibilité aux Arts</> est multipliée par <@ba.vup>1.2</>."
+        }
+    }
+}

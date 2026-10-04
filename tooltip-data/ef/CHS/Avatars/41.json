@@ -9,17 +9,17 @@
     "MainAttrId": 40,
     "SubAttrId": 41,
     "AttributeNodes": {
-        "chr_0028_wulfa_7": {
-            "40": 20
-        },
-        "chr_0028_wulfa_5": {
-            "40": 15
-        },
         "chr_0028_wulfa_1": {
-            "40": 10
+            "40": 10.0
         },
         "chr_0028_wulfa_3": {
-            "40": 15
+            "40": 15.0
+        },
+        "chr_0028_wulfa_5": {
+            "40": 15.0
+        },
+        "chr_0028_wulfa_7": {
+            "40": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "当有敌人同时处于<#ba.noguard>破防</>和<#ba.spellinflict>法术附着</>状态时可以发动。\n洛茜的连携技可连续发动两次，第一次会对目标造成<@ba.pd>物理伤害</>。\n第二次将<#ba.consume>消耗</>目标全部的<#ba.spellinflict>法术附着</>，对其造成基于<#ba.consume>消耗</>层数的<@ba.pd>物理伤害</>并造成一次<#ba.airborne>击飞</>，同时在一段时间内提升自身的暴击率和暴击伤害。\n当第二次连携技<@ba.key>精准衔接</>时，可以额外施加1层<#ba.noguard>破防</>。",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "冷却时间",
@@ -223,9 +223,9 @@
             "Desc": "普通攻击：\n对敌人进行至多5段攻击，造成<@ba.pd>物理伤害</>。作为主控干员时，<#ba.lastcombo>重击</>会造成<@ba.poise>18</>点失衡。\n \n下落攻击：\n处于空中时使用普通攻击，会下落并攻击附近敌人，造成<@ba.pd>物理伤害</>。\n \n处决攻击：\n附近有敌人处于失衡状态时使用普通攻击，将处决该敌人，造成大量<@ba.pd>物理伤害</>并恢复一定技力。",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "普攻第一段倍率",
@@ -355,6 +355,109 @@
                 }
             ]
         },
+        "chr_0028_wulfa_NormalSkill": {
+            "Icon": "skillicon/icon_skill_wulfa_01",
+            "Element": "Physical",
+            "Name": "血红之影",
+            "Desc": "冲向目标，造成<@ba.pd>物理伤害</>并施加<#ba.airborne>击飞</>。\n若目标已经拥有<#ba.noguard>破防</>，则会额外释放<@ba.key>狼之珀</>冲向目标，造成<@ba.fire>灼热伤害</>。",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "技力消耗",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "第一段伤害倍率",
+                    "ConditionId": "",
+                    "Values": [
+                        "85%",
+                        "94%",
+                        "102%",
+                        "111%",
+                        "119%",
+                        "128%",
+                        "137%",
+                        "145%",
+                        "154%",
+                        "164%",
+                        "177%",
+                        "192%"
+                    ]
+                },
+                {
+                    "Text": "第一段失衡值",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "第二段伤害倍率",
+                    "ConditionId": "",
+                    "Values": [
+                        "128%",
+                        "141%",
+                        "153%",
+                        "166%",
+                        "179%",
+                        "192%",
+                        "204%",
+                        "217%",
+                        "230%",
+                        "246%",
+                        "265%",
+                        "288%"
+                    ]
+                },
+                {
+                    "Text": "第二段失衡值",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "12",
+                        "12",
+                        "12",
+                        "15"
+                    ]
+                }
+            ]
+        },
         "chr_0028_wulfa_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_wulfa_01",
             "Element": "Fire",
@@ -362,26 +465,26 @@
             "Desc": "挥动披风迅捷戳击，在短时间内对目标造成多段<@ba.fire>灼热伤害</>，之后使用匕首进行两段斩击，造成大量<@ba.fire>灼热伤害</>并施加<#ba.fireinflict>灼热附着</>。\n<@ba.info>本次技能将在暴击时造成更高的暴击伤害。</>",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 10,
+            "Cooldown": 10.0,
             "CostType": "UltimateSp",
-            "CostValue": 110,
+            "CostValue": 110.0,
             "Params": [
                 {
                     "Text": "所需终结技能量",
                     "ConditionId": "",
                     "Values": [
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0
                     ]
                 },
                 {
@@ -493,112 +596,17 @@
                     ]
                 }
             ]
-        },
-        "chr_0028_wulfa_NormalSkill": {
-            "Icon": "skillicon/icon_skill_wulfa_01",
-            "Element": "Physical",
-            "Name": "血红之影",
-            "Desc": "冲向目标，造成<@ba.pd>物理伤害</>并施加<#ba.airborne>击飞</>。\n若目标已经拥有<#ba.noguard>破防</>，则会额外释放<@ba.key>狼之珀</>冲向目标，造成<@ba.fire>灼热伤害</>。",
-            "ConditionData": {},
-            "Type": 1,
-            "Cooldown": 0,
-            "CostType": "Atb",
-            "CostValue": 100,
-            "Params": [
-                {
-                    "Text": "技力消耗",
-                    "ConditionId": "",
-                    "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
-                    ]
-                },
-                {
-                    "Text": "第一段伤害倍率",
-                    "ConditionId": "",
-                    "Values": [
-                        "85%",
-                        "94%",
-                        "102%",
-                        "111%",
-                        "119%",
-                        "128%",
-                        "137%",
-                        "145%",
-                        "154%",
-                        "164%",
-                        "177%",
-                        "192%"
-                    ]
-                },
-                {
-                    "Text": "第一段失衡值",
-                    "ConditionId": "",
-                    "Values": [
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5"
-                    ]
-                },
-                {
-                    "Text": "第二段伤害倍率",
-                    "ConditionId": "",
-                    "Values": [
-                        "128%",
-                        "141%",
-                        "153%",
-                        "166%",
-                        "179%",
-                        "192%",
-                        "204%",
-                        "217%",
-                        "230%",
-                        "246%",
-                        "265%",
-                        "288%"
-                    ]
-                },
-                {
-                    "Text": "第二段失衡值",
-                    "ConditionId": "",
-                    "Values": [
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "12",
-                        "12",
-                        "12",
-                        "15"
-                    ]
-                }
-            ]
         }
     },
     "NodeSkillMap": {
+        "chr_0028_wulfa_passive_skill_0_1": {
+            "Icon": "icon_talent_wulfa_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "斫痕",
+            "Desc": "战技的<@ba.key>狼之珀</>造成伤害后，会对目标施加<#ba.rossi>爪印斫痕</>状态，持续<@ba.vup>15</>秒，该效果无法叠加。\n<#ba.rossi>爪印斫痕</>持续期间，目标每秒受到洛茜攻击力<@ba.vup>25%</>的<@ba.pd>物理伤害</>，且受到的<@ba.pd>物理伤害</>和<@ba.fire>灼热伤害</><@ba.vup>+6%</>。",
+            "Type": 4
+        },
         "chr_0028_wulfa_passive_skill_0_2": {
             "Icon": "icon_talent_wulfa_01",
             "Level": 2,
@@ -607,36 +615,12 @@
             "Desc": "战技的<@ba.key>狼之珀</>造成伤害后，会对目标施加<#ba.rossi>爪印斫痕</>状态，持续<@ba.vup>25</>秒，该效果无法叠加。\n<#ba.rossi>爪印斫痕</>持续期间，目标每秒受到洛茜攻击力<@ba.vup>30%</>的<@ba.pd>物理伤害</>，且受到的<@ba.pd>物理伤害</>和<@ba.fire>灼热伤害</><@ba.vup>+12%</>。",
             "Type": 4
         },
-        "fac_chr_0028_wulfa_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
-            "Name": "狩猎嗅觉·β",
-            "Desc": "进驻会客室时，干员收集线索的效率提升20%",
+        "chr_0028_wulfa_passive_skill_1_1": {
+            "Icon": "icon_talent_wulfa_02",
             "Level": 1,
-            "Index": 3,
-            "Type": 5
-        },
-        "fac_chr_0028_wulfa_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
-            "Name": "氏族的礼仪·β",
-            "Desc": "进驻会客室时，舱室内干员心情消耗降低14%",
-            "Level": 1,
-            "Index": 2,
-            "Type": 5
-        },
-        "fac_chr_0028_wulfa_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
-            "Name": "狩猎嗅觉·γ",
-            "Desc": "进驻会客室时，干员收集线索的效率提升30%",
-            "Level": 2,
-            "Index": 3,
-            "Type": 5
-        },
-        "chr_0028_wulfa_passive_skill_0_1": {
-            "Icon": "icon_talent_wulfa_01",
-            "Level": 1,
-            "Index": 0,
-            "Name": "斫痕",
-            "Desc": "战技的<@ba.key>狼之珀</>造成伤害后，会对目标施加<#ba.rossi>爪印斫痕</>状态，持续<@ba.vup>15</>秒，该效果无法叠加。\n<#ba.rossi>爪印斫痕</>持续期间，目标每秒受到洛茜攻击力<@ba.vup>25%</>的<@ba.pd>物理伤害</>，且受到的<@ba.pd>物理伤害</>和<@ba.fire>灼热伤害</><@ba.vup>+6%</>。",
+            "Index": 1,
+            "Name": "沸血",
+            "Desc": "洛茜对处于<#ba.rossi>爪印斫痕</>状态的敌人施放技能造成暴击伤害时，会额外触发一次攻击力<@ba.vup>12%</>的<@ba.fire>灼热伤害</>，并且为自身回复<@ba.heal>[智识×0.04]</>点生命值。若目标同时处于<#ba.burning>燃烧</>状态，则上述伤害和治疗效果提升至<@ba.vup>1.5</>倍。",
             "Type": 4
         },
         "chr_0028_wulfa_passive_skill_1_2": {
@@ -647,6 +631,14 @@
             "Desc": "洛茜对处于<#ba.rossi>爪印斫痕</>状态的敌人施放技能造成暴击伤害时，会额外触发一次攻击力<@ba.vup>24%</>的<@ba.fire>灼热伤害</>，并且为自身回复<@ba.heal>[智识×0.08]</>点生命值。若目标同时处于<#ba.burning>燃烧</>状态，则上述伤害和治疗效果提升至<@ba.vup>1.5</>倍。",
             "Type": 4
         },
+        "fac_chr_0028_wulfa_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
+            "Name": "氏族的礼仪·β",
+            "Desc": "进驻会客室时，舱室内干员心情消耗降低14%",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
         "fac_chr_0028_wulfa_0_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
             "Name": "氏族的礼仪·γ",
@@ -655,13 +647,21 @@
             "Index": 2,
             "Type": 5
         },
-        "chr_0028_wulfa_passive_skill_1_1": {
-            "Icon": "icon_talent_wulfa_02",
+        "fac_chr_0028_wulfa_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
+            "Name": "狩猎嗅觉·β",
+            "Desc": "进驻会客室时，干员收集线索的效率提升20%",
             "Level": 1,
-            "Index": 1,
-            "Name": "沸血",
-            "Desc": "洛茜对处于<#ba.rossi>爪印斫痕</>状态的敌人施放技能造成暴击伤害时，会额外触发一次攻击力<@ba.vup>12%</>的<@ba.fire>灼热伤害</>，并且为自身回复<@ba.heal>[智识×0.04]</>点生命值。若目标同时处于<#ba.burning>燃烧</>状态，则上述伤害和治疗效果提升至<@ba.vup>1.5</>倍。",
-            "Type": 4
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0028_wulfa_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
+            "Name": "狩猎嗅觉·γ",
+            "Desc": "进驻会客室时，干员收集线索的效率提升30%",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
         }
     },
     "Potentials": {

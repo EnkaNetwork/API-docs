@@ -9,17 +9,17 @@
     "MainAttrId": 40,
     "SubAttrId": 39,
     "AttributeNodes": {
-        "chr_0027_tangtang_5": {
-            "40": 15
-        },
-        "chr_0027_tangtang_7": {
-            "40": 20
-        },
         "chr_0027_tangtang_1": {
-            "40": 10
+            "40": 10.0
         },
         "chr_0027_tangtang_3": {
-            "40": 15
+            "40": 15.0
+        },
+        "chr_0027_tangtang_5": {
+            "40": 15.0
+        },
+        "chr_0027_tangtang_7": {
+            "40": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "COMBO TRIGGER: When applying <#ba.crystinflict>Cryo Infliction</> or dealing <#ba.spellburst>Arts Burst DMG</> to an enemy.\nTangtang unleashes a powerful jet stream that penetrates all enemies in its path, deals <@ba.cryst>Cryo DMG</> to them, and creates a <@ba.key>Whirlpool</>.\n<@ba.info>Up to 2 Whirlpools can exist in the battlefield at any time.</>",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 14,
+            "Cooldown": 14.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Cooldown",
@@ -133,9 +133,9 @@
             "Desc": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.cryst>Cryo DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>18</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.cryst>Cryo DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.cryst>Cryo DMG</> and recovers some SP.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "BATK SEQ 1 Multiplier",
@@ -265,163 +265,6 @@
                 }
             ]
         },
-        "chr_0027_tangtang_UltimateSkill": {
-            "Icon": "skillicon/icon_ultimate_skill_tangtang_01",
-            "Element": "Cryst",
-            "Name": "DA CHIEF SEES YOU!",
-            "Desc": "Tangtang opens her eyepatch and unleashes an <@ba.key>OLDEN STARE</> from her eye that temporarily locks down, immobilizes, and deals <@ba.cryst>Cryo DMG</> over time to enemies within its area of effect.\nWhen the <@ba.key>OLDEN STARE</> stops evolving, a rogue wave comes crashing down to deal massive <@ba.cryst>Cryo DMG</> to enemies in its area of effect.\nIf the controlled operator performs a dive attack in the <@ba.key>OLDEN STARE</> pattern, its evolution ends and the rogue wave is summoned immediately to deal even more <@ba.cryst>Cryo DMG</>.",
-            "ConditionData": {},
-            "Type": 3,
-            "Cooldown": 20,
-            "CostType": "UltimateSp",
-            "CostValue": 90,
-            "Params": [
-                {
-                    "Text": "Ultimate Energy Cost",
-                    "ConditionId": "",
-                    "Values": [
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90
-                    ]
-                },
-                {
-                    "Text": "Cooldown",
-                    "ConditionId": "",
-                    "Values": [
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s"
-                    ]
-                },
-                {
-                    "Text": "DMG Over Time Total Multiplier",
-                    "ConditionId": "",
-                    "Values": [
-                        "142%",
-                        "156%",
-                        "171%",
-                        "185%",
-                        "199%",
-                        "213%",
-                        "228%",
-                        "242%",
-                        "256%",
-                        "274%",
-                        "295%",
-                        "320%"
-                    ]
-                },
-                {
-                    "Text": "OLDEN STARE Duration (s)",
-                    "ConditionId": "",
-                    "Values": [
-                        "4",
-                        "4",
-                        "4",
-                        "4",
-                        "4",
-                        "4",
-                        "4",
-                        "4",
-                        "4",
-                        "4",
-                        "4",
-                        "4"
-                    ]
-                },
-                {
-                    "Text": "Rogue Wave DMG Multiplier",
-                    "ConditionId": "",
-                    "Values": [
-                        "178%",
-                        "196%",
-                        "213%",
-                        "231%",
-                        "249%",
-                        "267%",
-                        "284%",
-                        "302%",
-                        "320%",
-                        "342%",
-                        "369%",
-                        "400%"
-                    ]
-                },
-                {
-                    "Text": "Early Rogue Wave DMG Multiplier",
-                    "ConditionId": "",
-                    "Values": [
-                        "311%",
-                        "342%",
-                        "373%",
-                        "404%",
-                        "436%",
-                        "467%",
-                        "498%",
-                        "529%",
-                        "560%",
-                        "599%",
-                        "646%",
-                        "700%"
-                    ]
-                },
-                {
-                    "Text": "Rogue Wave Stagger",
-                    "ConditionId": "",
-                    "Values": [
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15"
-                    ]
-                },
-                {
-                    "Text": "Early Rogue Wave Stagger",
-                    "ConditionId": "",
-                    "Values": [
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20"
-                    ]
-                }
-            ]
-        },
         "chr_0027_tangtang_NormalSkill": {
             "Icon": "skillicon/icon_skill_tangtang_01",
             "Element": "Cryst",
@@ -429,26 +272,26 @@
             "Desc": "Tangtang jumps out from the water and fires a point-blank shot that deals <@ba.cryst>Cryo DMG</> to the enemy and creates a <@ba.key>Waterspout</>.\nCasting the battle skill also consumes all nearby <@ba.key>Whirlpools</> to create additional <@ba.key>Waterspouts</> and <#ba.return>return</> some SP based on the number of Waterspouts created.\n<@ba.key>Waterspout</>: Applies 1 stack of <#ba.crystinflict>Cryo Infliction</> on enemies within range and deals <@ba.cryst>Cryo DMG</> over time. If the battle skill creates multiple <@ba.key>Waterspouts</>, they also apply <#ba.spellvul>Arts Susceptibility</> to enemies (but not another stack of <#ba.crystinflict>Cryo Infliction</>).\n<@ba.info>DMG dealt by the Waterspout is treated as Battle Skill DMG.</>",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "SP Cost",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -596,14 +439,211 @@
                     ]
                 }
             ]
+        },
+        "chr_0027_tangtang_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_tangtang_01",
+            "Element": "Cryst",
+            "Name": "DA CHIEF SEES YOU!",
+            "Desc": "Tangtang opens her eyepatch and unleashes an <@ba.key>OLDEN STARE</> from her eye that temporarily locks down, immobilizes, and deals <@ba.cryst>Cryo DMG</> over time to enemies within its area of effect.\nWhen the <@ba.key>OLDEN STARE</> stops evolving, a rogue wave comes crashing down to deal massive <@ba.cryst>Cryo DMG</> to enemies in its area of effect.\nIf the controlled operator performs a dive attack in the <@ba.key>OLDEN STARE</> pattern, its evolution ends and the rogue wave is summoned immediately to deal even more <@ba.cryst>Cryo DMG</>.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 20.0,
+            "CostType": "UltimateSp",
+            "CostValue": 90.0,
+            "Params": [
+                {
+                    "Text": "Ultimate Energy Cost",
+                    "ConditionId": "",
+                    "Values": [
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0
+                    ]
+                },
+                {
+                    "Text": "Cooldown",
+                    "ConditionId": "",
+                    "Values": [
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s"
+                    ]
+                },
+                {
+                    "Text": "DMG Over Time Total Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "142%",
+                        "156%",
+                        "171%",
+                        "185%",
+                        "199%",
+                        "213%",
+                        "228%",
+                        "242%",
+                        "256%",
+                        "274%",
+                        "295%",
+                        "320%"
+                    ]
+                },
+                {
+                    "Text": "OLDEN STARE Duration (s)",
+                    "ConditionId": "",
+                    "Values": [
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4"
+                    ]
+                },
+                {
+                    "Text": "Rogue Wave DMG Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "178%",
+                        "196%",
+                        "213%",
+                        "231%",
+                        "249%",
+                        "267%",
+                        "284%",
+                        "302%",
+                        "320%",
+                        "342%",
+                        "369%",
+                        "400%"
+                    ]
+                },
+                {
+                    "Text": "Early Rogue Wave DMG Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "311%",
+                        "342%",
+                        "373%",
+                        "404%",
+                        "436%",
+                        "467%",
+                        "498%",
+                        "529%",
+                        "560%",
+                        "599%",
+                        "646%",
+                        "700%"
+                    ]
+                },
+                {
+                    "Text": "Rogue Wave Stagger",
+                    "ConditionId": "",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                },
+                {
+                    "Text": "Early Rogue Wave Stagger",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                }
+            ]
         }
     },
     "NodeSkillMap": {
+        "chr_0027_tangtang_passive_skill_0_1": {
+            "Icon": "icon_talent_tangtang_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Fam of Honor",
+            "Desc": "When within a <@ba.vup>5</>-meter radius of a <@ba.key>Whirlpool</>, allied operators gain <@ba.vup>10%</> <#ba.speedup>Haste</> while enemies suffer <@ba.vup>20%</> <#ba.slow>Slow</>. These effects persist for 3s after leaving the area of effect.",
+            "Type": 4
+        },
+        "chr_0027_tangtang_passive_skill_0_2": {
+            "Icon": "icon_talent_tangtang_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Fam of Honor",
+            "Desc": "When within a <@ba.vup>5</>-meter radius of a <@ba.key>Whirlpool</>, allied operators gain <@ba.vup>20%</> <#ba.speedup>Haste</> while enemies suffer <@ba.vup>40%</> <#ba.slow>Slow</>. These effects persist for 3s after leaving the area of effect.",
+            "Type": 4
+        },
+        "chr_0027_tangtang_passive_skill_1_1": {
+            "Icon": "icon_talent_tangtang_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Riot Bringer",
+            "Desc": "During <@ba.key>OLDEN STARE</>, performing a dive attack with the controlled operator ends its evolution early and creates a <@ba.key>Waterspout</>. All nearby <@ba.key>Whirlpools</> are also consumed and converted into additional <@ba.key>Waterspouts</>.\n<@ba.key>Waterspouts</> created this way have the same effects as those created by the battle skill <@ba.key>IMA WAVERIDAAH!</> and gain DMG Dealt <@ba.vup>+40%</>.",
+            "Type": 4
+        },
+        "chr_0027_tangtang_passive_skill_1_2": {
+            "Icon": "icon_talent_tangtang_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Riot Bringer",
+            "Desc": "During <@ba.key>OLDEN STARE</>, performing a dive attack with the controlled operator ends its evolution early and creates a <@ba.key>Waterspout</>. All nearby <@ba.key>Whirlpools</> are also consumed and converted into additional <@ba.key>Waterspouts</>.\n<@ba.key>Waterspouts</> created this way have the same effects as those created by the battle skill <@ba.key>IMA WAVERIDAAH!</> and gain DMG Dealt <@ba.vup>+60%</>.",
+            "Type": 4
+        },
         "fac_chr_0027_tangtang_0_1": {
             "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
             "Name": "Supreme Chief β",
             "Desc": "Assign to Growth Chamber to slow Mood Drop of all operators in it by 14%",
             "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0027_tangtang_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
+            "Name": "Supreme Chief γ",
+            "Desc": "Assign to Growth Chamber to slow Mood Drop of all operators in it by 18%",
+            "Level": 2,
             "Index": 2,
             "Type": 5
         },
@@ -615,30 +655,6 @@
             "Index": 3,
             "Type": 5
         },
-        "chr_0027_tangtang_passive_skill_1_2": {
-            "Icon": "icon_talent_tangtang_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "Riot Bringer",
-            "Desc": "During <@ba.key>OLDEN STARE</>, performing a dive attack with the controlled operator ends its evolution early and creates a <@ba.key>Waterspout</>. All nearby <@ba.key>Whirlpools</> are also consumed and converted into additional <@ba.key>Waterspouts</>.\n<@ba.key>Waterspouts</> created this way have the same effects as those created by the battle skill <@ba.key>IMA WAVERIDAAH!</> and gain DMG Dealt <@ba.vup>+60%</>.",
-            "Type": 4
-        },
-        "fac_chr_0027_tangtang_0_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
-            "Name": "Supreme Chief γ",
-            "Desc": "Assign to Growth Chamber to slow Mood Drop of all operators in it by 18%",
-            "Level": 2,
-            "Index": 2,
-            "Type": 5
-        },
-        "chr_0027_tangtang_passive_skill_0_2": {
-            "Icon": "icon_talent_tangtang_01",
-            "Level": 2,
-            "Index": 0,
-            "Name": "Fam of Honor",
-            "Desc": "When within a <@ba.vup>5</>-meter radius of a <@ba.key>Whirlpool</>, allied operators gain <@ba.vup>20%</> <#ba.speedup>Haste</> while enemies suffer <@ba.vup>40%</> <#ba.slow>Slow</>. These effects persist for 3s after leaving the area of effect.",
-            "Type": 4
-        },
         "fac_chr_0027_tangtang_1_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_plant_flower",
             "Name": "River's Daughter γ",
@@ -646,22 +662,6 @@
             "Level": 2,
             "Index": 3,
             "Type": 5
-        },
-        "chr_0027_tangtang_passive_skill_0_1": {
-            "Icon": "icon_talent_tangtang_01",
-            "Level": 1,
-            "Index": 0,
-            "Name": "Fam of Honor",
-            "Desc": "When within a <@ba.vup>5</>-meter radius of a <@ba.key>Whirlpool</>, allied operators gain <@ba.vup>10%</> <#ba.speedup>Haste</> while enemies suffer <@ba.vup>20%</> <#ba.slow>Slow</>. These effects persist for 3s after leaving the area of effect.",
-            "Type": 4
-        },
-        "chr_0027_tangtang_passive_skill_1_1": {
-            "Icon": "icon_talent_tangtang_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "Riot Bringer",
-            "Desc": "During <@ba.key>OLDEN STARE</>, performing a dive attack with the controlled operator ends its evolution early and creates a <@ba.key>Waterspout</>. All nearby <@ba.key>Whirlpools</> are also consumed and converted into additional <@ba.key>Waterspouts</>.\n<@ba.key>Waterspouts</> created this way have the same effects as those created by the battle skill <@ba.key>IMA WAVERIDAAH!</> and gain DMG Dealt <@ba.vup>+40%</>.",
-            "Type": 4
         }
     },
     "Potentials": {

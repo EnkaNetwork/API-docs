@@ -9,17 +9,17 @@
     "MainAttrId": 42,
     "SubAttrId": 40,
     "AttributeNodes": {
-        "chr_0012_avywen_5": {
-            "42": 15
-        },
-        "chr_0012_avywen_7": {
-            "42": 20
-        },
         "chr_0012_avywen_1": {
-            "42": 10
+            "42": 10.0
         },
         "chr_0012_avywen_3": {
-            "42": 15
+            "42": 15.0
+        },
+        "chr_0012_avywen_5": {
+            "42": 15.0
+        },
+        "chr_0012_avywen_7": {
+            "42": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "ACTIVADOR DE COMBO: Cuando el operador controlado realiza un <#ba.lastcombo>Golpe final</> sobre un objetivo con <#ba.pulseinflict>Imposición eléctrica</> activa o <#ba.conduct>Electrificación</>. \nSalta al aire y lanza 3 <@ba.key>Lanzatrueno</> al objetivo, luego inflige 1 golpe de <@ba.pulse>DAÑ eléctrico</> a los enemigos en el área de efecto.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 13,
+            "Cooldown": 13.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Tiempo de reutilización",
@@ -133,9 +133,9 @@
             "Desc": "ATAQUE BÁSICO: \nUn ataque con hasta 5 secuencias que inflige <@ba.pd>DAÑ físico</>. Como de operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>17</> de Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige mucho <@ba.pd>DAÑ físico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.pd>DAÑ físico</> y recupera algunos PH.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Multiplicador ATQB SEC 1",
@@ -272,26 +272,26 @@
             "Desc": "Salta al aire para agitar un torbellino con su lanza, infligiendo algo de <@ba.pulse>DAÑ eléctrico</> a enemigos cercanos mientras atrae hacia sí todas las <@ba.key>Lanzatrueno</> y <@ba.key>Lanzatrueno EX</> en el campo de batalla. \nLas <@ba.key>Lanzatrueno</> que regresan perforan a todos los enemigos en su trayectoria e infligen <@ba.pulse>DAÑ eléctrico</>, mientras que las <@ba.key>Lanzatrueno EX</> que regresan infligen más <@ba.pulse>DAÑ eléctrico</> y además aplican <#ba.pulseinflict>Imposición eléctrica</>.",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "Costo de PH",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -411,26 +411,26 @@
             "Desc": "Lanza un <@ba.key>Lanzatrueno EX</> al área objetivo que inflige un gran <@ba.pulse>DAÑ eléctrico</> a los enemigos cercanos.",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 10,
+            "Cooldown": 10.0,
             "CostType": "UltimateSp",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "Costo de energía máxima",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -509,14 +509,6 @@
         }
     },
     "NodeSkillMap": {
-        "chr_0012_avywen_passive_skill_0_2": {
-            "Icon": "icon_talent_avywen_01",
-            "Level": 2,
-            "Index": 0,
-            "Name": "Entrega urgente",
-            "Desc": "Después de que un <@ba.key>Lanzatrueno</> o <@ba.key>Lanzatrueno EX</> lanzado o de regreso golpee al enemigo, Avywenna obtiene <@ba.vup>4</> de Energía máxima.",
-            "Type": 4
-        },
         "chr_0012_avywen_passive_skill_0_1": {
             "Icon": "icon_talent_avywen_01",
             "Level": 1,
@@ -525,11 +517,43 @@
             "Desc": "Después de que un <@ba.key>Lanzatrueno</> o <@ba.key>Lanzatrueno EX</> lanzado o de regreso golpee al enemigo, Avywenna obtiene <@ba.vup>3</> de Energía máxima.",
             "Type": 4
         },
+        "chr_0012_avywen_passive_skill_0_2": {
+            "Icon": "icon_talent_avywen_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Entrega urgente",
+            "Desc": "Después de que un <@ba.key>Lanzatrueno</> o <@ba.key>Lanzatrueno EX</> lanzado o de regreso golpee al enemigo, Avywenna obtiene <@ba.vup>4</> de Energía máxima.",
+            "Type": 4
+        },
+        "chr_0012_avywen_passive_skill_1_1": {
+            "Icon": "icon_talent_avywen_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Enfoque táctico",
+            "Desc": "Máxima <@ba.key>Lanzatrueno: impacto final</> mejorada: También aplica <@ba.vup>6%</> <#ba.pulsevul>Susceptibilidad eléctrica</> durante <@ba.vup>10</> s a los enemigos que golpea.",
+            "Type": 4
+        },
+        "chr_0012_avywen_passive_skill_1_2": {
+            "Icon": "icon_talent_avywen_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Enfoque táctico",
+            "Desc": "Máxima <@ba.key>Lanzatrueno: impacto final</> mejorada: También aplica <@ba.vup>10%</> <#ba.pulsevul>Susceptibilidad eléctrica</> durante <@ba.vup>10</> s a los enemigos que golpea.",
+            "Type": 4
+        },
         "fac_chr_0012_avywen_0_1": {
             "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
             "Name": "Consejero residencial α",
             "Desc": "Asignar al Nexus de control para otorgar a todos los operadores regeneración del Estado de ánimo de +8 %",
             "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0012_avywen_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "Consejero residencial β",
+            "Desc": "Asignar al Nexus de control para otorgar a todos los operadores regeneración del Estado de ánimo de +12 %",
+            "Level": 2,
             "Index": 2,
             "Type": 5
         },
@@ -541,14 +565,6 @@
             "Index": 3,
             "Type": 5
         },
-        "fac_chr_0012_avywen_0_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
-            "Name": "Consejero residencial β",
-            "Desc": "Asignar al Nexus de control para otorgar a todos los operadores regeneración del Estado de ánimo de +12 %",
-            "Level": 2,
-            "Index": 2,
-            "Type": 5
-        },
         "fac_chr_0012_avywen_1_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
             "Name": "Secreto de la mensajera β",
@@ -556,22 +572,6 @@
             "Level": 2,
             "Index": 3,
             "Type": 5
-        },
-        "chr_0012_avywen_passive_skill_1_2": {
-            "Icon": "icon_talent_avywen_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "Enfoque táctico",
-            "Desc": "Máxima <@ba.key>Lanzatrueno: impacto final</> mejorada: También aplica <@ba.vup>10%</> <#ba.pulsevul>Susceptibilidad eléctrica</> durante <@ba.vup>10</> s a los enemigos que golpea.",
-            "Type": 4
-        },
-        "chr_0012_avywen_passive_skill_1_1": {
-            "Icon": "icon_talent_avywen_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "Enfoque táctico",
-            "Desc": "Máxima <@ba.key>Lanzatrueno: impacto final</> mejorada: También aplica <@ba.vup>6%</> <#ba.pulsevul>Susceptibilidad eléctrica</> durante <@ba.vup>10</> s a los enemigos que golpea.",
-            "Type": 4
         }
     },
     "Potentials": {

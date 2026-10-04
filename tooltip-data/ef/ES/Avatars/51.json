@@ -1,0 +1,661 @@
+{
+    "StrId": "chr_0034_typhoea",
+    "Name": "Typhoeus",
+    "Rarity": 6,
+    "Element": "Natural",
+    "Profession": "ASSAULT",
+    "Conditions": {},
+    "WeaponType": "Wand",
+    "MainAttrId": 40,
+    "SubAttrId": 42,
+    "AttributeNodes": {
+        "chr_0034_typhoea_1": {
+            "40": 10.0
+        },
+        "chr_0034_typhoea_3": {
+            "40": 15.0
+        },
+        "chr_0034_typhoea_5": {
+            "40": 15.0
+        },
+        "chr_0034_typhoea_7": {
+            "40": 20.0
+        }
+    },
+    "SkillInfoMap": {
+        "chr_0034_typhoea_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_typhoea_01",
+            "Element": "Natural",
+            "Name": "Espinas desenfrenadas",
+            "Desc": "ACTIVADOR DE COMBO: Cuando Typhoeus alcanza el máximo de <#ba.arrowenergy>Signos</>.\nTyphoeus convierte todos sus <#ba.arrowenergy>Signos</> en <#ba.arrownum>Flechas de caza</> y restablece sus intentos de ataque básico aéreo (ATQBA).\nTyphoeus concentra su “Mirada de cazadora” y lanza una descarga contra el objetivo que crea una <@ba.key>Formación de disparos</> en la zona del objetivo. Los enemigos en la <@ba.key>Formación de disparos</> reciben <@ba.natur>DAÑ por naturaleza</> continuo, quedan <#ba.slow>ralentizados</> y reciben más DAÑ de <#ba.naturalburst>Ráfaga de naturaleza</>.\n<@ba.info>Cada 2 Signos se convierten en 1 Flecha de caza.</>",
+            "ConditionData": {},
+            "Type": 2,
+            "Cooldown": 21.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Tiempo de reutilización",
+                    "ConditionId": "",
+                    "Values": [
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s"
+                    ]
+                },
+                {
+                    "Text": "DAÑ de impacto de “Mirada de cazadora”",
+                    "ConditionId": "",
+                    "Values": [
+                        "89%",
+                        "98%",
+                        "107%",
+                        "116%",
+                        "125%",
+                        "134%",
+                        "142%",
+                        "151%",
+                        "160%",
+                        "171%",
+                        "185%",
+                        "200%"
+                    ]
+                },
+                {
+                    "Text": "Tambaleo",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Ganancia de Energía máxima",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "DAÑ de área continuo",
+                    "ConditionId": "",
+                    "Values": [
+                        "45%",
+                        "49%",
+                        "54%",
+                        "58%",
+                        "62%",
+                        "67%",
+                        "71%",
+                        "76%",
+                        "80%",
+                        "86%",
+                        "93%",
+                        "100%"
+                    ]
+                },
+                {
+                    "Text": "Ralentizar",
+                    "ConditionId": "",
+                    "Values": [
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%"
+                    ]
+                },
+                {
+                    "Text": "Aumento de DAÑ de Ráfaga de naturaleza",
+                    "ConditionId": "",
+                    "Values": [
+                        "6%",
+                        "6%",
+                        "6%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "8%",
+                        "8%",
+                        "8%",
+                        "9%",
+                        "9%",
+                        "10%"
+                    ]
+                }
+            ]
+        },
+        "chr_0034_typhoea_NormalAttack": {
+            "Icon": "skillicon/icon_attack_funnel",
+            "Element": "Natural",
+            "Name": "Cazadora de las tierras salvajes",
+            "Desc": "ATAQUE BÁSICO: \nUn ataque de hasta 5 secuencias que inflige <@ba.natur>DAÑ por naturaleza</>. Como operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>17</> de Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico realizado en el aire se convierte en un ataque de inmersión que inflige <@ba.natur>DAÑ por naturaleza</> a los enemigos cercanos. \n\nREMATE: \nUn ataque básico realizado cerca de un enemigo Tambaleado se convierte en un remate que inflige <@ba.natur>DAÑ por naturaleza</> masivo y recupera algo de PH.",
+            "ConditionData": {},
+            "Type": 0,
+            "Cooldown": 0.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Multiplicador ATQB SEC 1",
+                    "ConditionId": "",
+                    "Values": [
+                        "21%",
+                        "23%",
+                        "25%",
+                        "27%",
+                        "29%",
+                        "31%",
+                        "33%",
+                        "35%",
+                        "37%",
+                        "39%",
+                        "43%",
+                        "46%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador ATQB SEC 2",
+                    "ConditionId": "",
+                    "Values": [
+                        "25%",
+                        "28%",
+                        "30%",
+                        "33%",
+                        "35%",
+                        "38%",
+                        "40%",
+                        "43%",
+                        "45%",
+                        "48%",
+                        "52%",
+                        "56%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador ATQB SEC 3",
+                    "ConditionId": "",
+                    "Values": [
+                        "38%",
+                        "42%",
+                        "46%",
+                        "49%",
+                        "53%",
+                        "57%",
+                        "61%",
+                        "65%",
+                        "68%",
+                        "73%",
+                        "79%",
+                        "86%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador ATQB SEC 4",
+                    "ConditionId": "",
+                    "Values": [
+                        "42%",
+                        "46%",
+                        "50%",
+                        "55%",
+                        "59%",
+                        "63%",
+                        "67%",
+                        "71%",
+                        "76%",
+                        "81%",
+                        "87%",
+                        "95%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador ATQB SEC 5",
+                    "ConditionId": "",
+                    "Values": [
+                        "56%",
+                        "61%",
+                        "67%",
+                        "72%",
+                        "78%",
+                        "83%",
+                        "89%",
+                        "94%",
+                        "100%",
+                        "107%",
+                        "115%",
+                        "125%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador de ATQ de Remate",
+                    "ConditionId": "",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador ATQ de Inmersión",
+                    "ConditionId": "",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "chr_0034_typhoea_NormalSkill": {
+            "Icon": "skillicon/icon_skill_typhoea_01",
+            "Element": "Natural",
+            "Name": "Flechas perforantes del bosque",
+            "Desc": "Typhoeus salta por los aires y entra brevemente en estado <@ba.key>Flotante</>, durante el cual puede ejecutar 5 Ataques básicos aéreos (ATQBA). Cada ATQBA puede disparar flechas contra un máximo de 2 objetivos e infligir <@ba.natur>DAÑ por naturaleza</>. \nCuando un ATQBA alcanza a un enemigo con <#ba.naturalinflict>Imposición de Naturaleza</>, consume 1 acumulación de <#ba.naturalinflict>Imposición de Naturaleza</>, otorga a Typhoeus 1 <#ba.arrowenergy>Signo</> y concede Energía máxima adicional. \nSi Typhoeus tiene <#ba.arrownum>Flecha(s) de caza</>, consume 1 <#ba.arrownum>Flecha de caza</> y convierte el ATQBA en un <@ba.key>Disparo potente</>. \n<@ba.key>Disparo potente</>: Tras alcanzar a un enemigo, aplica a la fuerza 1 <#ba.naturalburst>Ráfaga de naturaleza</>; si se consume la <#ba.naturalinflict>Imposición de Naturaleza</> del objetivo, el DAÑ de esta <#ba.naturalburst>Ráfaga de naturaleza</> aumenta. \n<@ba.info>Si Typhoeus es la operadora controlada, su 5.º ATQBA se considera un Golpe final y un Disparo potente, y no consume Flechas de caza.</>",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Costo de PH",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "Multiplicador de DAÑ de disparo aéreo inicial",
+                    "ConditionId": "",
+                    "Values": [
+                        "22%",
+                        "25%",
+                        "27%",
+                        "29%",
+                        "31%",
+                        "33%",
+                        "36%",
+                        "38%",
+                        "40%",
+                        "43%",
+                        "46%",
+                        "50%"
+                    ]
+                },
+                {
+                    "Text": "DAÑ de ATQBA",
+                    "ConditionId": "",
+                    "Values": [
+                        "29%",
+                        "32%",
+                        "35%",
+                        "37%",
+                        "40%",
+                        "43%",
+                        "46%",
+                        "49%",
+                        "52%",
+                        "55%",
+                        "60%",
+                        "65%"
+                    ]
+                },
+                {
+                    "Text": "DAÑ de Golpe final aéreo",
+                    "ConditionId": "",
+                    "Values": [
+                        "44%",
+                        "49%",
+                        "53%",
+                        "58%",
+                        "62%",
+                        "66%",
+                        "71%",
+                        "75%",
+                        "80%",
+                        "85%",
+                        "92%",
+                        "100%"
+                    ]
+                },
+                {
+                    "Text": "Tambaleo por Golpe final aéreo",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador de DAÑ por Ráfaga de naturaleza de Disparo potente",
+                    "ConditionId": "",
+                    "Values": [
+                        "1.1",
+                        "1.1",
+                        "1.1",
+                        "1.15",
+                        "1.15",
+                        "1.15",
+                        "1.2",
+                        "1.2",
+                        "1.2",
+                        "1.25",
+                        "1.25",
+                        "1.3"
+                    ]
+                },
+                {
+                    "Text": "Energía máxima adicional",
+                    "ConditionId": "",
+                    "Values": [
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12"
+                    ]
+                }
+            ]
+        },
+        "chr_0034_typhoea_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_typhoea_01",
+            "Element": "Natural",
+            "Name": "Llamado de la montaña de hielo",
+            "Desc": "Typhoeus dispara una Flecha imbuida que explota tras golpear al enemigo e inflige una gran cantidad de <@ba.natur>DAÑ por naturaleza</> a los enemigos dentro del área de efecto (ADE). Después, entra en estado <@ba.key>Flotante</> y se restablecen sus intentos de ataque básico aéreo (ATQBA).\nDurante sus siguientes 5 ATQBA, alcanzar a un enemigo activa una <@ba.key>Lluvia de flechas</> que inflige <@ba.natur>DAÑ por naturaleza</> en la ubicación del objetivo. Su 5.ª <@ba.key>Lluvia de flechas</> es una <@ba.key>Lluvia de flechas</> potenciada que inflige más DAÑ.\nLanzar la máxima otorga <@ba.vup>2</> <#ba.arrownum>Flechas de caza</> inmediatamente.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 20.0,
+            "CostType": "UltimateSp",
+            "CostValue": 200.0,
+            "Params": [
+                {
+                    "Text": "Costo de energía máxima",
+                    "ConditionId": "",
+                    "Values": [
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0
+                    ]
+                },
+                {
+                    "Text": "Tiempo de reutilización",
+                    "ConditionId": "",
+                    "Values": [
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s"
+                    ]
+                },
+                {
+                    "Text": "DAÑ de explosión de Flecha imbuida",
+                    "ConditionId": "",
+                    "Values": [
+                        "133%",
+                        "147%",
+                        "160%",
+                        "173%",
+                        "187%",
+                        "200%",
+                        "213%",
+                        "227%",
+                        "240%",
+                        "257%",
+                        "277%",
+                        "300%"
+                    ]
+                },
+                {
+                    "Text": "Tambaleo por Flecha imbuida",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "DAÑ de Lluvia de flechas normal",
+                    "ConditionId": "",
+                    "Values": [
+                        "33%",
+                        "37%",
+                        "40%",
+                        "43%",
+                        "47%",
+                        "50%",
+                        "53%",
+                        "57%",
+                        "60%",
+                        "64%",
+                        "69%",
+                        "75%"
+                    ]
+                },
+                {
+                    "Text": "DAÑ de Lluvia de flechas potenciada",
+                    "ConditionId": "",
+                    "Values": [
+                        "89%",
+                        "98%",
+                        "107%",
+                        "116%",
+                        "124%",
+                        "133%",
+                        "142%",
+                        "151%",
+                        "160%",
+                        "171%",
+                        "184%",
+                        "200%"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0034_typhoea_passive_skill_0_1": {
+            "Icon": "icon_talent_typhoea_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Lista de presas",
+            "Desc": "Cuando se activa una <#ba.naturalburst>Ráfaga de naturaleza</> sobre un enemigo, Typhoeus obtiene 1 <#ba.arrowenergy>Signo</>. El DAÑ infligido por los ataques potenciados al consumir <#ba.arrownum>Flechas de caza</> aumenta a <@ba.vup>1.2</> veces el original.\nAl entrar en batalla, Typhoeus obtiene de inmediato <@ba.vup>1</> <#ba.arrowenergy>Signo(s)</>.\nTyphoeus puede tener hasta 4 <#ba.arrownum>Flechas de caza</> y 8 <#ba.arrowenergy>Signos</>.\n<@ba.info>Si la Ráfaga de naturaleza se activa simultáneamente sobre varios enemigos, solo cuenta como una activación al calcular los Signos obtenidos por Typhoeus.</>",
+            "Type": 4
+        },
+        "chr_0034_typhoea_passive_skill_0_2": {
+            "Icon": "icon_talent_typhoea_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Lista de presas",
+            "Desc": "Cuando se activa una <#ba.naturalburst>Ráfaga de naturaleza</> sobre un enemigo, Typhoeus obtiene 1 <#ba.arrowenergy>Signo</>. El DAÑ infligido por los ataques potenciados al consumir <#ba.arrownum>Flechas de caza</> aumenta a <@ba.vup>1.4</> veces el original.\nAl entrar en batalla, Typhoeus obtiene de inmediato <@ba.vup>2</> <#ba.arrowenergy>Signo(s)</>.\nTyphoeus puede tener hasta 4 <#ba.arrownum>Flechas de caza</> y 8 <#ba.arrowenergy>Signos</>.\n<@ba.info>Si la Ráfaga de naturaleza se activa simultáneamente sobre varios enemigos, solo cuenta como una activación al calcular los Signos obtenidos por Typhoeus.</>",
+            "Type": 4
+        },
+        "chr_0034_typhoea_passive_skill_0_3": {
+            "Icon": "icon_talent_typhoea_01",
+            "Level": 3,
+            "Index": 0,
+            "Name": "Lista de presas",
+            "Desc": "Cuando se activa una <#ba.naturalburst>Ráfaga de naturaleza</> sobre un enemigo, Typhoeus obtiene 1 <#ba.arrowenergy>Signo</>. El DAÑ infligido por los ataques potenciados al consumir <#ba.arrownum>Flechas de caza</> aumenta a <@ba.vup>1.6</> veces el original.\nAl entrar en batalla, Typhoeus obtiene de inmediato <@ba.vup>4</> <#ba.arrowenergy>Signo(s)</>.\nTyphoeus puede tener hasta 4 <#ba.arrownum>Flechas de caza</> y 8 <#ba.arrowenergy>Signos</>.\n<@ba.info>Si la Ráfaga de naturaleza se activa simultáneamente sobre varios enemigos, solo cuenta como una activación al calcular los Signos obtenidos por Typhoeus.</>",
+            "Type": 4
+        },
+        "chr_0034_typhoea_passive_skill_1_1": {
+            "Icon": "icon_talent_typhoea_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Enfoque de cazadora",
+            "Desc": "Mientras está en estado <@ba.key>Flotante</>, Typhoeus activa una <@ba.key>Barrera protectora</> que reduce el DAÑ recibido por <@ba.vup>15%</> y hace que sea más difícil de interrumpir mientras está activa. La <@ba.key>Barrera protectora</> se rompe cuando Typhoeus recibe DAÑ y no puede volver a activarse durante <@ba.vup>30</> s.",
+            "Type": 4
+        },
+        "chr_0034_typhoea_passive_skill_1_2": {
+            "Icon": "icon_talent_typhoea_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Enfoque de cazadora",
+            "Desc": "Mientras está en estado <@ba.key>Flotante</>, Typhoeus activa una <@ba.key>Barrera protectora</> que reduce el DAÑ recibido por <@ba.vup>30%</> y hace que sea más difícil de interrumpir mientras está activa. La <@ba.key>Barrera protectora</> se rompe cuando Typhoeus recibe DAÑ y no puede volver a activarse durante <@ba.vup>18</> s.",
+            "Type": 4
+        },
+        "fac_chr_0034_typhoea_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_mineral",
+            "Name": "Murmullos líticos β",
+            "Desc": "Asignar a la Cámara de crecimiento para otorgar una tasa de crecimiento de minerales raros del +20 %",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0034_typhoea_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_mineral",
+            "Name": "Murmullos líticos γ",
+            "Desc": "Asignar a la Cámara de crecimiento para otorgar una tasa de crecimiento de minerales raros del +30 %",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0034_typhoea_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_fungus",
+            "Name": "Vida en las esporas β",
+            "Desc": "Asignar a la Cámara de crecimiento para otorgar una tasa de crecimiento de materia fúngica del +20 %",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0034_typhoea_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_fungus",
+            "Name": "Vida en las esporas γ",
+            "Desc": "Asignar a la Cámara de crecimiento para otorgar una tasa de crecimiento de materia fúngica del +30 %",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        }
+    },
+    "Potentials": {
+        "1": {
+            "Name": "Emplumado de Samifjod",
+            "Desc": "Al usar <@ba.key>Flotante</>, el ATQ <@ba.vup>+18%</> y el DAÑ de ATQBA infligido aumenta a <@ba.vup>1.2</> veces el original. \nTalento <@ba.key>Enfoque de cazadora</> mejorado: tiempo de reactivación de <@ba.key>Barrera protectora</> <@ba.vup>-3</>s."
+        },
+        "2": {
+            "Name": "Zancada de la cazadora",
+            "Desc": "Agilidad: <@ba.vup>+20</>; Intensidad de artes: <@ba.vup>+16</>."
+        },
+        "3": {
+            "Name": "Trampa espinosa",
+            "Desc": "Habilidad de combo <@ba.key>Espinas desenfrenadas</> mejorada: Duración del Tiempo de reutilización <@ba.vup>-2</> s. Los enemigos dentro de la <@ba.key>Formación de disparos</> sufren DAÑ de <#ba.naturalburst>Ráfaga de naturaleza</> recibido <@ba.vup>+6%</>."
+        },
+        "4": {
+            "Name": "Sin escapatoria",
+            "Desc": "Máxima <@ba.key>Llamado de la montaña de hielo</> mejorada: Costo de Energía máxima <@ba.vup>-15%</>."
+        },
+        "5": {
+            "Name": "Disparo mortal",
+            "Desc": "Máxima <@ba.key>Llamado de la montaña de hielo</> mejorada: Obtiene <#ba.arrownum>Flechas de caza</> <@ba.vup>+1</>. El DAÑ infligido de la máxima aumenta a <@ba.vup>1.2</> veces el original, mientras que el Multiplicador de DAÑ de Ráfaga de naturaleza de <@ba.key>Disparo potente</> aumenta a <@ba.vup>1.1</> veces el original."
+        }
+    }
+}

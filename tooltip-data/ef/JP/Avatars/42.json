@@ -10,19 +10,158 @@
     "SubAttrId": 42,
     "AttributeNodes": {
         "chr_0026_lastrite_1": {
-            "39": 10
+            "39": 10.0
         },
         "chr_0026_lastrite_3": {
-            "39": 15
+            "39": 15.0
         },
         "chr_0026_lastrite_5": {
-            "39": 15
+            "39": 15.0
         },
         "chr_0026_lastrite_7": {
-            "39": 20
+            "39": 20.0
         }
     },
     "SkillInfoMap": {
+        "chr_0026_lastrite_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_lastrite_01",
+            "Element": "Cryst",
+            "Name": "冬喰",
+            "Desc": "敵の<#ba.crystinflict>寒冷付着</>状態が3段階以上になったときに発動可能。\n敵に氷柱を生成し、斬撃で砕く。敵の<#ba.crystinflict>寒冷付着</>をすべて<#ba.consume>消費</>し、<#ba.consume>消費</>した<#ba.crystinflict>寒冷付着</>段階に応じて<@ba.cryst>寒冷ダメージ</>を与え、必殺チャージを回復する。",
+            "ConditionData": {},
+            "Type": 2,
+            "Cooldown": 9.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "クールタイム",
+                    "ConditionId": "",
+                    "Values": [
+                        "9秒",
+                        "9秒",
+                        "9秒",
+                        "9秒",
+                        "9秒",
+                        "9秒",
+                        "9秒",
+                        "9秒",
+                        "9秒",
+                        "9秒",
+                        "9秒",
+                        "9秒"
+                    ]
+                },
+                {
+                    "Text": "氷柱ダメージ倍率",
+                    "ConditionId": "",
+                    "Values": [
+                        "71%",
+                        "78%",
+                        "85%",
+                        "92%",
+                        "99%",
+                        "107%",
+                        "114%",
+                        "121%",
+                        "128%",
+                        "137%",
+                        "147%",
+                        "160%"
+                    ]
+                },
+                {
+                    "Text": "斬撃基礎ダメージ倍率",
+                    "ConditionId": "",
+                    "Values": [
+                        "71%",
+                        "78%",
+                        "85%",
+                        "92%",
+                        "99%",
+                        "107%",
+                        "114%",
+                        "121%",
+                        "128%",
+                        "137%",
+                        "147%",
+                        "160%"
+                    ]
+                },
+                {
+                    "Text": "斬撃ブレイク値",
+                    "ConditionId": "",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                },
+                {
+                    "Text": "付着消費1段階ごとの追加ダメージ倍率",
+                    "ConditionId": "",
+                    "Values": [
+                        "107%",
+                        "117%",
+                        "128%",
+                        "139%",
+                        "149%",
+                        "160%",
+                        "171%",
+                        "181%",
+                        "192%",
+                        "205%",
+                        "221%",
+                        "240%"
+                    ]
+                },
+                {
+                    "Text": "必殺チャージ基礎回復量",
+                    "ConditionId": "",
+                    "Values": [
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40"
+                    ]
+                },
+                {
+                    "Text": "付着消費1段階ごとの必殺チャージ追加回復量",
+                    "ConditionId": "",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                }
+            ]
+        },
         "chr_0026_lastrite_NormalAttack": {
             "Icon": "skillicon/icon_attack_claym",
             "Element": "Cryst",
@@ -30,9 +169,9 @@
             "Desc": "通常攻撃：\n最大4段の攻撃で敵に<@ba.cryst>寒冷ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>25</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.cryst>寒冷ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.cryst>寒冷ダメージ</>を与えてSPを一定量回復する。",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "通常攻撃1段目ダメージ倍率",
@@ -151,26 +290,26 @@
             "Desc": "操作中のオペレーターの武器に<@ba.key>低温注入</>を行い、SPが一定量<#ba.return>返還</>される。\n一定時間内、操作中のオペレーターの次の<#ba.lastcombo>重攻撃</>はラストライトの幻影を生成し、目標を追撃して<@ba.cryst>寒冷ダメージ</>を与え、<#ba.crystinflict>寒冷付着</>を付与する。\n操作中のオペレーターがラストライトの場合、戦技を発動しても通常攻撃は中断されない。",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "SP消費",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -254,26 +393,26 @@
             "Desc": "霜の鎧を纏い、氷の鎌を生成して前方に斬撃を3回放つ。この状態で受けるダメージはすべて無効になる。\nそれぞれの斬撃で高い<@ba.cryst>寒冷ダメージ</>を与える。\n<@ba.info>ラストライトの必殺チャージは、自身の戦技および連携技でのみ回復可能。</>",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 20,
+            "Cooldown": 20.0,
             "CostType": "UltimateSp",
-            "CostValue": 240,
+            "CostValue": 240.0,
             "Params": [
                 {
                     "Text": "必殺チャージ消費",
                     "ConditionId": "",
                     "Values": [
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0
                     ]
                 },
                 {
@@ -403,163 +542,40 @@
                     ]
                 }
             ]
-        },
-        "chr_0026_lastrite_ComboSkill": {
-            "Icon": "skillicon/icon_combo_skill_lastrite_01",
-            "Element": "Cryst",
-            "Name": "冬喰",
-            "Desc": "敵の<#ba.crystinflict>寒冷付着</>状態が3段階以上になったときに発動可能。\n敵に氷柱を生成し、斬撃で砕く。敵の<#ba.crystinflict>寒冷付着</>をすべて<#ba.consume>消費</>し、<#ba.consume>消費</>した<#ba.crystinflict>寒冷付着</>段階に応じて<@ba.cryst>寒冷ダメージ</>を与え、必殺チャージを回復する。",
-            "ConditionData": {},
-            "Type": 2,
-            "Cooldown": 9,
-            "CostType": "UltimateSp",
-            "CostValue": 0,
-            "Params": [
-                {
-                    "Text": "クールタイム",
-                    "ConditionId": "",
-                    "Values": [
-                        "9秒",
-                        "9秒",
-                        "9秒",
-                        "9秒",
-                        "9秒",
-                        "9秒",
-                        "9秒",
-                        "9秒",
-                        "9秒",
-                        "9秒",
-                        "9秒",
-                        "9秒"
-                    ]
-                },
-                {
-                    "Text": "氷柱ダメージ倍率",
-                    "ConditionId": "",
-                    "Values": [
-                        "71%",
-                        "78%",
-                        "85%",
-                        "92%",
-                        "99%",
-                        "107%",
-                        "114%",
-                        "121%",
-                        "128%",
-                        "137%",
-                        "147%",
-                        "160%"
-                    ]
-                },
-                {
-                    "Text": "斬撃基礎ダメージ倍率",
-                    "ConditionId": "",
-                    "Values": [
-                        "71%",
-                        "78%",
-                        "85%",
-                        "92%",
-                        "99%",
-                        "107%",
-                        "114%",
-                        "121%",
-                        "128%",
-                        "137%",
-                        "147%",
-                        "160%"
-                    ]
-                },
-                {
-                    "Text": "斬撃ブレイク値",
-                    "ConditionId": "",
-                    "Values": [
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15"
-                    ]
-                },
-                {
-                    "Text": "付着消費1段階ごとの追加ダメージ倍率",
-                    "ConditionId": "",
-                    "Values": [
-                        "107%",
-                        "117%",
-                        "128%",
-                        "139%",
-                        "149%",
-                        "160%",
-                        "171%",
-                        "181%",
-                        "192%",
-                        "205%",
-                        "221%",
-                        "240%"
-                    ]
-                },
-                {
-                    "Text": "必殺チャージ基礎回復量",
-                    "ConditionId": "",
-                    "Values": [
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40"
-                    ]
-                },
-                {
-                    "Text": "付着消費1段階ごとの必殺チャージ追加回復量",
-                    "ConditionId": "",
-                    "Values": [
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15"
-                    ]
-                }
-            ]
         }
     },
     "NodeSkillMap": {
-        "fac_chr_0026_lastrite_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
-            "Name": "王庭の名声・α",
-            "Desc": "応接室配属時、手がかり7――セシュカの入手確率がわずかに上昇する（配属直後に発動、重複不可）",
+        "chr_0026_lastrite_passive_skill_0_1": {
+            "Icon": "icon_talent_lastrite_01",
             "Level": 1,
-            "Index": 3,
-            "Type": 5
+            "Index": 0,
+            "Name": "低体温症",
+            "Desc": "ラストライトが任意の<#ba.spellinflict>アーツ付着</>を<#ba.consume>消費</>すると、<@ba.vup>15</>秒間その敵に<#ba.consume>消費</>した<#ba.spellinflict>アーツ付着</>の段階数×<@ba.vup>2%</>の<#ba.crystvul>寒冷脆弱</>を付与する（重ね掛け不可）",
+            "Type": 4
         },
-        "fac_chr_0026_lastrite_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
-            "Name": "王庭の名声・β",
-            "Desc": "応接室配属時、手がかり7――セシュカの入手確率が上昇する（配属直後に発動、重複不可）",
+        "chr_0026_lastrite_passive_skill_0_2": {
+            "Icon": "icon_talent_lastrite_01",
             "Level": 2,
-            "Index": 3,
-            "Type": 5
+            "Index": 0,
+            "Name": "低体温症",
+            "Desc": "ラストライトが任意の<#ba.spellinflict>アーツ付着</>を<#ba.consume>消費</>すると、<@ba.vup>15</>秒間その敵に<#ba.consume>消費</>した<#ba.spellinflict>アーツ付着</>の段階数×<@ba.vup>4%</>の<#ba.crystvul>寒冷脆弱</>を付与する（重ね掛け不可）",
+            "Type": 4
+        },
+        "chr_0026_lastrite_passive_skill_1_1": {
+            "Icon": "icon_talent_lastrite_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "低温脆性",
+            "Desc": "必殺技<@ba.key>「終の別れ」</>で<#ba.crystvul>寒冷脆弱</>状態の敵にダメージを与えるとき、<#ba.crystvul>寒冷脆弱</>の効果が<@ba.vup>1.2</>倍と見なされる",
+            "Type": 4
+        },
+        "chr_0026_lastrite_passive_skill_1_2": {
+            "Icon": "icon_talent_lastrite_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "低温脆性",
+            "Desc": "必殺技<@ba.key>「終の別れ」</>で<#ba.crystvul>寒冷脆弱</>状態の敵にダメージを与えるとき、<#ba.crystvul>寒冷脆弱</>の効果が<@ba.vup>1.5</>倍と見なされる",
+            "Type": 4
         },
         "fac_chr_0026_lastrite_0_1": {
             "Icon": "spaceshipskillicon/facskill_spaceship_plant_flower",
@@ -577,37 +593,21 @@
             "Index": 2,
             "Type": 5
         },
-        "chr_0026_lastrite_passive_skill_0_2": {
-            "Icon": "icon_talent_lastrite_01",
-            "Level": 2,
-            "Index": 0,
-            "Name": "低体温症",
-            "Desc": "ラストライトが任意の<#ba.spellinflict>アーツ付着</>を<#ba.consume>消費</>すると、<@ba.vup>15</>秒間その敵に<#ba.consume>消費</>した<#ba.spellinflict>アーツ付着</>の段階数×<@ba.vup>4%</>の<#ba.crystvul>寒冷脆弱</>を付与する（重ね掛け不可）",
-            "Type": 4
-        },
-        "chr_0026_lastrite_passive_skill_1_2": {
-            "Icon": "icon_talent_lastrite_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "低温脆性",
-            "Desc": "必殺技<@ba.key>「終の別れ」</>で<#ba.crystvul>寒冷脆弱</>状態の敵にダメージを与えるとき、<#ba.crystvul>寒冷脆弱</>の効果が<@ba.vup>1.5</>倍と見なされる",
-            "Type": 4
-        },
-        "chr_0026_lastrite_passive_skill_0_1": {
-            "Icon": "icon_talent_lastrite_01",
+        "fac_chr_0026_lastrite_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
+            "Name": "王庭の名声・α",
+            "Desc": "応接室配属時、手がかり7――セシュカの入手確率がわずかに上昇する（配属直後に発動、重複不可）",
             "Level": 1,
-            "Index": 0,
-            "Name": "低体温症",
-            "Desc": "ラストライトが任意の<#ba.spellinflict>アーツ付着</>を<#ba.consume>消費</>すると、<@ba.vup>15</>秒間その敵に<#ba.consume>消費</>した<#ba.spellinflict>アーツ付着</>の段階数×<@ba.vup>2%</>の<#ba.crystvul>寒冷脆弱</>を付与する（重ね掛け不可）",
-            "Type": 4
+            "Index": 3,
+            "Type": 5
         },
-        "chr_0026_lastrite_passive_skill_1_1": {
-            "Icon": "icon_talent_lastrite_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "低温脆性",
-            "Desc": "必殺技<@ba.key>「終の別れ」</>で<#ba.crystvul>寒冷脆弱</>状態の敵にダメージを与えるとき、<#ba.crystvul>寒冷脆弱</>の効果が<@ba.vup>1.2</>倍と見なされる",
-            "Type": 4
+        "fac_chr_0026_lastrite_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
+            "Name": "王庭の名声・β",
+            "Desc": "応接室配属時、手がかり7――セシュカの入手確率が上昇する（配属直後に発動、重複不可）",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
         }
     },
     "Potentials": {

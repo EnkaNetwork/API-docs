@@ -9,65 +9,65 @@
     "MainAttrId": 41,
     "SubAttrId": 42,
     "AttributeNodes": {
-        "chr_0004_pelica_7": {
-            "41": 20
-        },
-        "chr_0004_pelica_5": {
-            "41": 15
+        "chr_0004_pelica_1": {
+            "41": 10.0
         },
         "chr_0004_pelica_3": {
-            "41": 15
+            "41": 15.0
         },
-        "chr_0004_pelica_1": {
-            "41": 10
+        "chr_0004_pelica_5": {
+            "41": 15.0
+        },
+        "chr_0004_pelica_7": {
+            "41": 20.0
         }
     },
     "SkillInfoMap": {
-        "chr_0004_pelica_NormalSkill": {
-            "Icon": "skillicon/icon_skill_pelica_01",
+        "chr_0004_pelica_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_pelica_01",
             "Element": "Pulse",
-            "Name": "Protocollo ω: impatto",
-            "Desc": "Scaglia un dardo di energia elettromagnetica che infligge <@ba.pulse>danni da elettricità</> e <#ba.pulseinflict>Afflizione da elettricità</> ai nemici in un piccola area.",
+            "Name": "Protocollo istantaneo: concatenazione",
+            "Desc": "ATTIVAZIONE COMBO: quando l'operatore che controlli esegue un <#ba.lastcombo>colpo finale</> su qualsiasi nemico. \nScatena l'energia elettromagnetica immagazzinata per bombardare il bersaglio, infliggendo <@ba.pulse>danni da elettricità</> e causando forzatamente <#ba.conduct>Elettrificazione</> temporanea.",
             "ConditionData": {},
-            "Type": 1,
-            "Cooldown": 0,
-            "CostType": "Atb",
-            "CostValue": 100,
+            "Type": 2,
+            "Cooldown": 20.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
             "Params": [
                 {
-                    "Text": "Costo PA",
+                    "Text": "Tempo di recupero",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s"
                     ]
                 },
                 {
                     "Text": "Moltiplicatore danni",
                     "ConditionId": "",
                     "Values": [
-                        "178%",
-                        "196%",
-                        "213%",
-                        "231%",
-                        "249%",
-                        "267%",
-                        "285%",
-                        "302%",
-                        "320%",
-                        "342%",
-                        "369%",
-                        "400%"
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
                     ]
                 },
                 {
@@ -87,90 +87,41 @@
                         "10",
                         "10"
                     ]
-                }
-            ]
-        },
-        "chr_0004_pelica_UltimateSkill": {
-            "Icon": "skillicon/icon_ultimate_skill_pelica_01",
-            "Element": "Pulse",
-            "Name": "Protocollo ε: 70,41K",
-            "Desc": "Fa comparire sul campo di battaglia un enorme detrito orbitale con un impatto devastante. Tutti i nemici nel raggio d'azione subiscono ingenti <@ba.pulse>danni da elettricità</>.",
-            "ConditionData": {},
-            "Type": 3,
-            "Cooldown": 10,
-            "CostType": "UltimateSp",
-            "CostValue": 80,
-            "Params": [
+                },
                 {
-                    "Text": "Costo energia suprema",
+                    "Text": "Durata Elettrificazione (s)",
                     "ConditionId": "",
                     "Values": [
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
                     ]
                 },
                 {
-                    "Text": "Tempo di recupero",
+                    "Text": "Incremento energia suprema",
                     "ConditionId": "",
                     "Values": [
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s"
-                    ]
-                },
-                {
-                    "Text": "Moltiplicatore danni",
-                    "ConditionId": "",
-                    "Values": [
-                        "445%",
-                        "489%",
-                        "534%",
-                        "578%",
-                        "622%",
-                        "667%",
-                        "711%",
-                        "756%",
-                        "800%",
-                        "856%",
-                        "923%",
-                        "1000%"
-                    ]
-                },
-                {
-                    "Text": "Vacillamento",
-                    "ConditionId": "",
-                    "Values": [
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20"
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
                     ]
                 }
             ]
@@ -182,9 +133,9 @@
             "Desc": "ATTACCO BASE: \nsequenza di massimo quattro attacchi che infliggono <@ba.pulse>danni da elettricità</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>15</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pulse>danni da elettricità</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pulse>danni da elettricità</> e ripristinano parzialmente i PA.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Moltiplicatore SEQ ATTB 1",
@@ -296,51 +247,51 @@
                 }
             ]
         },
-        "chr_0004_pelica_ComboSkill": {
-            "Icon": "skillicon/icon_combo_skill_pelica_01",
+        "chr_0004_pelica_NormalSkill": {
+            "Icon": "skillicon/icon_skill_pelica_01",
             "Element": "Pulse",
-            "Name": "Protocollo istantaneo: concatenazione",
-            "Desc": "ATTIVAZIONE COMBO: quando l'operatore che controlli esegue un <#ba.lastcombo>colpo finale</> su qualsiasi nemico. \nScatena l'energia elettromagnetica immagazzinata per bombardare il bersaglio, infliggendo <@ba.pulse>danni da elettricità</> e causando forzatamente <#ba.conduct>Elettrificazione</> temporanea.",
+            "Name": "Protocollo ω: impatto",
+            "Desc": "Scaglia un dardo di energia elettromagnetica che infligge <@ba.pulse>danni da elettricità</> e <#ba.pulseinflict>Afflizione da elettricità</> ai nemici in un piccola area.",
             "ConditionData": {},
-            "Type": 2,
-            "Cooldown": 20,
-            "CostType": "UltimateSp",
-            "CostValue": 0,
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 100.0,
             "Params": [
                 {
-                    "Text": "Tempo di recupero",
+                    "Text": "Costo PA",
                     "ConditionId": "",
                     "Values": [
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s"
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
                     "Text": "Moltiplicatore danni",
                     "ConditionId": "",
                     "Values": [
-                        "80%",
-                        "88%",
-                        "96%",
-                        "104%",
-                        "112%",
-                        "120%",
-                        "128%",
-                        "136%",
-                        "144%",
-                        "154%",
-                        "166%",
-                        "180%"
+                        "178%",
+                        "196%",
+                        "213%",
+                        "231%",
+                        "249%",
+                        "267%",
+                        "285%",
+                        "302%",
+                        "320%",
+                        "342%",
+                        "369%",
+                        "400%"
                     ]
                 },
                 {
@@ -360,69 +311,102 @@
                         "10",
                         "10"
                     ]
-                },
+                }
+            ]
+        },
+        "chr_0004_pelica_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_pelica_01",
+            "Element": "Pulse",
+            "Name": "Protocollo ε: 70,41K",
+            "Desc": "Fa comparire sul campo di battaglia un enorme detrito orbitale con un impatto devastante. Tutti i nemici nel raggio d'azione subiscono ingenti <@ba.pulse>danni da elettricità</>.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 10.0,
+            "CostType": "UltimateSp",
+            "CostValue": 80.0,
+            "Params": [
                 {
-                    "Text": "Durata Elettrificazione (s)",
+                    "Text": "Costo energia suprema",
                     "ConditionId": "",
                     "Values": [
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5"
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0
                     ]
                 },
                 {
-                    "Text": "Incremento energia suprema",
+                    "Text": "Tempo di recupero",
                     "ConditionId": "",
                     "Values": [
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10"
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s"
+                    ]
+                },
+                {
+                    "Text": "Moltiplicatore danni",
+                    "ConditionId": "",
+                    "Values": [
+                        "445%",
+                        "489%",
+                        "534%",
+                        "578%",
+                        "622%",
+                        "667%",
+                        "711%",
+                        "756%",
+                        "800%",
+                        "856%",
+                        "923%",
+                        "1000%"
+                    ]
+                },
+                {
+                    "Text": "Vacillamento",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
                     ]
                 }
             ]
         }
     },
     "NodeSkillMap": {
-        "fac_chr_0004_pelica_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
-            "Name": "Protocollo di ridistribuzione β",
-            "Desc": "Assegna alla cabina di produzione per aumentare del 20% l'efficienza di produzione dei materiali per l'ESP delle armi.",
+        "chr_0004_pelica_passive_skill_0_1": {
+            "Icon": "icon_talent_pelica_01",
             "Level": 1,
-            "Index": 3,
-            "Type": 5
-        },
-        "fac_chr_0004_pelica_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
-            "Name": "Protocollo di ridistribuzione γ",
-            "Desc": "Assegna alla cabina di produzione per aumentare del 30% l'efficienza di produzione dei materiali per l'ESP delle armi.",
-            "Level": 2,
-            "Index": 3,
-            "Type": 5
-        },
-        "chr_0004_pelica_passive_skill_1_1": {
-            "Icon": "icon_talent_pelica_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "Protocollo ciclico",
-            "Desc": "Abilità combo <@ba.key>Protocollo istantaneo: concatenazione</> migliorata: quando colpisce un <#ba.noguard>nemico soggetto a Vulnerabilità</>, il colpo si concatena 1 volta in più.",
+            "Index": 0,
+            "Name": "Protocollo di obliterazione",
+            "Desc": "<@ba.vup>+20%</> di danni inflitti ai nemici <@ba.poise>Vacillanti</>.",
             "Type": 4
         },
         "chr_0004_pelica_passive_skill_0_2": {
@@ -433,12 +417,12 @@
             "Desc": "<@ba.vup>+30%</> di danni inflitti ai nemici <@ba.poise>Vacillanti</>.",
             "Type": 4
         },
-        "chr_0004_pelica_passive_skill_0_1": {
-            "Icon": "icon_talent_pelica_01",
+        "chr_0004_pelica_passive_skill_1_1": {
+            "Icon": "icon_talent_pelica_02",
             "Level": 1,
-            "Index": 0,
-            "Name": "Protocollo di obliterazione",
-            "Desc": "<@ba.vup>+20%</> di danni inflitti ai nemici <@ba.poise>Vacillanti</>.",
+            "Index": 1,
+            "Name": "Protocollo ciclico",
+            "Desc": "Abilità combo <@ba.key>Protocollo istantaneo: concatenazione</> migliorata: quando colpisce un <#ba.noguard>nemico soggetto a Vulnerabilità</>, il colpo si concatena 1 volta in più.",
             "Type": 4
         },
         "fac_chr_0004_pelica_0_1": {
@@ -455,6 +439,22 @@
             "Desc": "Assegna al Nexus di controllo per aumentare del 12% la rigenerazione dell'umore di tutti gli operatori.",
             "Level": 2,
             "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0004_pelica_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Protocollo di ridistribuzione β",
+            "Desc": "Assegna alla cabina di produzione per aumentare del 20% l'efficienza di produzione dei materiali per l'ESP delle armi.",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0004_pelica_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Protocollo di ridistribuzione γ",
+            "Desc": "Assegna alla cabina di produzione per aumentare del 30% l'efficienza di produzione dei materiali per l'ESP delle armi.",
+            "Level": 2,
+            "Index": 3,
             "Type": 5
         }
     },

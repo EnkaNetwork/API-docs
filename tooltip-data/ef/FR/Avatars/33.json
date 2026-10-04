@@ -9,17 +9,17 @@
     "MainAttrId": 41,
     "SubAttrId": 39,
     "AttributeNodes": {
-        "chr_0023_antal_3": {
-            "41": 15
-        },
         "chr_0023_antal_1": {
-            "41": 10
+            "41": 10.0
+        },
+        "chr_0023_antal_3": {
+            "41": 15.0
         },
         "chr_0023_antal_5": {
-            "41": 15
+            "41": 15.0
         },
         "chr_0023_antal_7": {
-            "41": 20
+            "41": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "DÉCLENCHEMENT DE COMBO : lorsqu'un ennemi doté d'une <@ba.key>Concentration</> active subit un <#ba.physicalstatus>statut physique</> ou une <#ba.spellinflict>altération des Arts</>. \nDéclenche 1 explosion d'énergie sur l'ennemi, qui lui inflige des <@ba.pulse>DÉG électriques</> et applique un cumul supplémentaire du même <#ba.physicalstatus>statut physique</> ou de la même <#ba.spellinflict>altération des Arts</>.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 25,
+            "Cooldown": 25.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Temps de recharge",
@@ -112,12 +112,12 @@
             "Icon": "skillicon/icon_attack_funnel",
             "Element": "Pulse",
             "Name": "Courant d'échange",
-            "Desc": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.pulse>DÉG électriques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>15</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pulse>DÉG électriques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pulse>DÉG électriques</> et restaure quelques PC.",
+            "Desc": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.pulse>DÉG électriques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également <@ba.poise>15</> points de Déséquilibre. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pulse>DÉG électriques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pulse>DÉG électriques</> et restaure quelques PC.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Multiplicateur d'ATQ-B SÉQ 1",
@@ -229,109 +229,6 @@
                 }
             ]
         },
-        "chr_0023_antal_UltimateSkill": {
-            "Icon": "skillicon/icon_ultimate_skill_antal_01",
-            "Element": "Pulse",
-            "Name": "Surcadençage",
-            "Desc": "Octroie une <#ba.pulseenhance>amplification électrique</> et une <#ba.fireenhance>amplification thermique</> temporaires à toute l'équipe.",
-            "ConditionData": {},
-            "Type": 3,
-            "Cooldown": 20,
-            "CostType": "UltimateSp",
-            "CostValue": 100,
-            "Params": [
-                {
-                    "Text": "Coût en énergie d'ultime",
-                    "ConditionId": "",
-                    "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
-                    ]
-                },
-                {
-                    "Text": "Temps de recharge",
-                    "ConditionId": "",
-                    "Values": [
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s"
-                    ]
-                },
-                {
-                    "Text": "Amplification électrique",
-                    "ConditionId": "",
-                    "Values": [
-                        "8%",
-                        "9%",
-                        "10%",
-                        "11%",
-                        "12%",
-                        "13%",
-                        "14%",
-                        "15%",
-                        "16%",
-                        "17%",
-                        "18%",
-                        "20%"
-                    ]
-                },
-                {
-                    "Text": "Amplification thermique",
-                    "ConditionId": "",
-                    "Values": [
-                        "8%",
-                        "9%",
-                        "10%",
-                        "11%",
-                        "12%",
-                        "13%",
-                        "14%",
-                        "15%",
-                        "16%",
-                        "17%",
-                        "18%",
-                        "20%"
-                    ]
-                },
-                {
-                    "Text": "Durée (s)",
-                    "ConditionId": "",
-                    "Values": [
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12"
-                    ]
-                }
-            ]
-        },
         "chr_0023_antal_NormalSkill": {
             "Icon": "skillicon/icon_skill_antal_01",
             "Element": "Pulse",
@@ -339,26 +236,26 @@
             "Desc": "Applique un effet de <@ba.key>Concentration</> longue durée sur l'ennemi et lui inflige des <@ba.pulse>DÉG électriques</>. Un ennemi avec <@ba.key>Concentration</> souffre également de <#ba.pulsevul>sensibilité électrique</> et de <#ba.firevul>sensibilité thermique</>. L'effet de <@ba.key>Concentration</> ne peut être appliqué qu'à 1 ennemi à la fois.",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "Coût en PC",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -434,55 +331,118 @@
                     ]
                 }
             ]
+        },
+        "chr_0023_antal_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_antal_01",
+            "Element": "Pulse",
+            "Name": "Surcadençage",
+            "Desc": "Octroie une <#ba.pulseenhance>amplification électrique</> et une <#ba.fireenhance>amplification thermique</> temporaires à toute l'équipe.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 20.0,
+            "CostType": "UltimateSp",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "Coût en énergie d'ultime",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "Temps de recharge",
+                    "ConditionId": "",
+                    "Values": [
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s"
+                    ]
+                },
+                {
+                    "Text": "Amplification électrique",
+                    "ConditionId": "",
+                    "Values": [
+                        "8%",
+                        "9%",
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "20%"
+                    ]
+                },
+                {
+                    "Text": "Amplification thermique",
+                    "ConditionId": "",
+                    "Values": [
+                        "8%",
+                        "9%",
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "20%"
+                    ]
+                },
+                {
+                    "Text": "Durée (s)",
+                    "ConditionId": "",
+                    "Values": [
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12"
+                    ]
+                }
+            ]
         }
     },
     "NodeSkillMap": {
-        "chr_0023_antal_passive_skill_1_2": {
-            "Icon": "icon_talent_antal_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "Acte inconscient",
-            "Desc": "Octroie <@ba.vup>30%</> de chances d'immunité aux <@ba.pd>DÉG physiques</> et se soigne à hauteur de <@ba.heal>[45 + Force × 0.38]</> PV.",
-            "Type": 4
-        },
-        "fac_chr_0023_antal_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
-            "Name": "Étude de jeux de maux β",
-            "Desc": "En l'affectant à la chambre de culture, ralentit la baisse d'humeur de tous les opérateurs qui s'y trouvent de 14 %.",
-            "Level": 1,
-            "Index": 3,
-            "Type": 5
-        },
         "chr_0023_antal_passive_skill_0_1": {
             "Icon": "icon_talent_antal_01",
             "Level": 1,
             "Index": 0,
             "Name": "Improvisation",
             "Desc": "Quand un membre <#ba.enhance>amplifié</> de l'équipe inflige des DÉG de compétence, Antal soigne cette personne à hauteur de <@ba.heal>[72 + Force × 0.6]</> PV. Cet effet de soin se déclenche toutes les <@ba.vup>30</> s pour chaque opérateur.",
-            "Type": 4
-        },
-        "fac_chr_0023_antal_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
-            "Name": "Unité des Arts expérimentale α",
-            "Desc": "En l'affectant à la cabine de fabrication, augmente le rendement de production des matériaux d'EXP d'arme de +10 %.",
-            "Level": 1,
-            "Index": 2,
-            "Type": 5
-        },
-        "fac_chr_0023_antal_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
-            "Name": "Étude de jeux de maux γ",
-            "Desc": "En l'affectant à la chambre de culture, ralentit la baisse d'humeur de tous les opérateurs qui s'y trouvent de 18 %.",
-            "Level": 2,
-            "Index": 3,
-            "Type": 5
-        },
-        "chr_0023_antal_passive_skill_1_1": {
-            "Icon": "icon_talent_antal_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "Acte inconscient",
-            "Desc": "Octroie <@ba.vup>30%</> de chances d'immunité aux <@ba.pd>DÉG physiques</> et se soigne à hauteur de <@ba.heal>[27 + Force × 0.23]</> PV.",
             "Type": 4
         },
         "chr_0023_antal_passive_skill_0_2": {
@@ -493,12 +453,52 @@
             "Desc": "Quand un membre <#ba.enhance>amplifié</> de l'équipe inflige des DÉG de compétence, Antal soigne cette personne à hauteur de <@ba.heal>[108 + Force × 0.9]</> PV. Cet effet de soin se déclenche toutes les <@ba.vup>30</> s pour chaque opérateur.",
             "Type": 4
         },
+        "chr_0023_antal_passive_skill_1_1": {
+            "Icon": "icon_talent_antal_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Acte inconscient",
+            "Desc": "Octroie <@ba.vup>30%</> de chances d'immunité aux <@ba.pd>DÉG physiques</> et se soigne à hauteur de <@ba.heal>[27 + Force × 0.23]</> PV.",
+            "Type": 4
+        },
+        "chr_0023_antal_passive_skill_1_2": {
+            "Icon": "icon_talent_antal_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Acte inconscient",
+            "Desc": "Octroie <@ba.vup>30%</> de chances d'immunité aux <@ba.pd>DÉG physiques</> et se soigne à hauteur de <@ba.heal>[45 + Force × 0.38]</> PV.",
+            "Type": 4
+        },
+        "fac_chr_0023_antal_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Unité des Arts expérimentale α",
+            "Desc": "En l'affectant à la cabine de fabrication, augmente le rendement de production des matériaux d'EXP d'arme de +10 %.",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
         "fac_chr_0023_antal_0_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
             "Name": "Unité des Arts expérimentale β",
             "Desc": "En l'affectant à la cabine de fabrication, augmente le rendement de production des matériaux d'EXP d'arme de +20 %.",
             "Level": 2,
             "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0023_antal_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
+            "Name": "Étude de jeux de maux β",
+            "Desc": "En l'affectant à la chambre de culture, ralentit la baisse d'humeur de tous les opérateurs qui s'y trouvent de 14 %.",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0023_antal_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
+            "Name": "Étude de jeux de maux γ",
+            "Desc": "En l'affectant à la chambre de culture, ralentit la baisse d'humeur de tous les opérateurs qui s'y trouvent de 18 %.",
+            "Level": 2,
+            "Index": 3,
             "Type": 5
         }
     },
@@ -513,7 +513,7 @@
         },
         "3": {
             "Name": "Théorie d'originium appliquée",
-            "Desc": "Quand un ennemi avec un malus de <@ba.key>Concentration</> actif est vaincu, <#ba.return>restaure</> <@ba.vup>15</> PC."
+            "Desc": "Quand un ennemi avec un malus de <@ba.key>Concentration</> actif est vaincu, <#ba.return>restitue</> <@ba.vup>15</> PC."
         },
         "4": {
             "Name": "Rappel de mamie",

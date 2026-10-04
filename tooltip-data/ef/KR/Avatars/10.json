@@ -9,65 +9,65 @@
     "MainAttrId": 41,
     "SubAttrId": 42,
     "AttributeNodes": {
-        "chr_0004_pelica_7": {
-            "41": 20
-        },
-        "chr_0004_pelica_5": {
-            "41": 15
+        "chr_0004_pelica_1": {
+            "41": 10.0
         },
         "chr_0004_pelica_3": {
-            "41": 15
+            "41": 15.0
         },
-        "chr_0004_pelica_1": {
-            "41": 10
+        "chr_0004_pelica_5": {
+            "41": 15.0
+        },
+        "chr_0004_pelica_7": {
+            "41": 20.0
         }
     },
     "SkillInfoMap": {
-        "chr_0004_pelica_NormalSkill": {
-            "Icon": "skillicon/icon_skill_pelica_01",
+        "chr_0004_pelica_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_pelica_01",
             "Element": "Pulse",
-            "Name": "프로토콜ω · 뇌격",
-            "Desc": "하늘에서 전기 에너지를 떨어뜨려, 좁은 범위 내의 적에게 <@ba.pulse>전기 피해</>를 주고 <#ba.pulseinflict>전기 부착</> 상태를 부여합니다.",
+            "Name": "실시간 프로토콜 · 연쇄 섬광",
+            "Desc": "메인 컨트롤 오퍼레이터가 적에게 <#ba.lastcombo>강력한 일격</> 피해를 준 다음 사용할 수 있습니다.\n누적된 전기 에너지를 방출해 목표를 강타하며 <@ba.pulse>전기 피해</>를 주고, 짧은 강제 <#ba.conduct>감전</> 상태를 부여합니다.",
             "ConditionData": {},
-            "Type": 1,
-            "Cooldown": 0,
-            "CostType": "Atb",
-            "CostValue": 100,
+            "Type": 2,
+            "Cooldown": 20.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
             "Params": [
                 {
-                    "Text": "스킬 게이지 소모",
+                    "Text": "쿨타임",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        "20초",
+                        "20초",
+                        "20초",
+                        "20초",
+                        "20초",
+                        "20초",
+                        "20초",
+                        "20초",
+                        "20초",
+                        "20초",
+                        "20초",
+                        "20초"
                     ]
                 },
                 {
                     "Text": "피해 배율",
                     "ConditionId": "",
                     "Values": [
-                        "178%",
-                        "196%",
-                        "213%",
-                        "231%",
-                        "249%",
-                        "267%",
-                        "285%",
-                        "302%",
-                        "320%",
-                        "342%",
-                        "369%",
-                        "400%"
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
                     ]
                 },
                 {
@@ -87,90 +87,41 @@
                         "10",
                         "10"
                     ]
-                }
-            ]
-        },
-        "chr_0004_pelica_UltimateSkill": {
-            "Icon": "skillicon/icon_ultimate_skill_pelica_01",
-            "Element": "Pulse",
-            "Name": "프로토콜ε · 70.41κ",
-            "Desc": "즉시 거대한 궤도 부유물을 전송하여 목표 구역에 치명적인 타격을 줍니다. 구역 내의 적은 대량의 <@ba.pulse>전기 피해</>를 받습니다.",
-            "ConditionData": {},
-            "Type": 3,
-            "Cooldown": 10,
-            "CostType": "UltimateSp",
-            "CostValue": 80,
-            "Params": [
+                },
                 {
-                    "Text": "필요한 궁극기 에너지",
+                    "Text": "감전 시간(초)",
                     "ConditionId": "",
                     "Values": [
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
                     ]
                 },
                 {
-                    "Text": "쿨타임",
+                    "Text": "획득하는 궁극기 에너지",
                     "ConditionId": "",
                     "Values": [
-                        "10초",
-                        "10초",
-                        "10초",
-                        "10초",
-                        "10초",
-                        "10초",
-                        "10초",
-                        "10초",
-                        "10초",
-                        "10초",
-                        "10초",
-                        "10초"
-                    ]
-                },
-                {
-                    "Text": "피해 배율",
-                    "ConditionId": "",
-                    "Values": [
-                        "445%",
-                        "489%",
-                        "534%",
-                        "578%",
-                        "622%",
-                        "667%",
-                        "711%",
-                        "756%",
-                        "800%",
-                        "856%",
-                        "923%",
-                        "1000%"
-                    ]
-                },
-                {
-                    "Text": "불균형치",
-                    "ConditionId": "",
-                    "Values": [
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20"
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
                     ]
                 }
             ]
@@ -182,9 +133,9 @@
             "Desc": "일반 공격:\n적에게 최대 4단 공격을 하여 <@ba.pulse>전기 피해</>를 줍니다. 메인 컨트롤 오퍼레이터라면 <#ba.lastcombo>강력한 일격</>이 <@ba.poise>15</>포인트의 불균형 피해를 줍니다.\n\n낙하 공격:\n공중에 떴을 때, 일반 공격을 사용하면 낙하하며 주변의 적을 공격하고 <@ba.pulse>전기 피해</>를 줍니다.\n\n처형 공격:\n주변에 불균형 상태의 적이 있을 때, 일반 공격을 사용하면 해당 적을 처형하여 대량의 <@ba.pulse>전기 피해</>를 주고 일정량의 스킬 게이지를 회복합니다.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "일반 공격 제1단계 배율",
@@ -296,51 +247,51 @@
                 }
             ]
         },
-        "chr_0004_pelica_ComboSkill": {
-            "Icon": "skillicon/icon_combo_skill_pelica_01",
+        "chr_0004_pelica_NormalSkill": {
+            "Icon": "skillicon/icon_skill_pelica_01",
             "Element": "Pulse",
-            "Name": "실시간 프로토콜 · 연쇄 섬광",
-            "Desc": "메인 컨트롤 오퍼레이터가 적에게 <#ba.lastcombo>강력한 일격</> 피해를 준 다음 사용할 수 있습니다.\n누적된 전기 에너지를 방출해 목표를 강타하며 <@ba.pulse>전기 피해</>를 주고, 짧은 강제 <#ba.conduct>감전</> 상태를 부여합니다.",
+            "Name": "프로토콜ω · 뇌격",
+            "Desc": "하늘에서 전기 에너지를 떨어뜨려, 좁은 범위 내의 적에게 <@ba.pulse>전기 피해</>를 주고 <#ba.pulseinflict>전기 부착</> 상태를 부여합니다.",
             "ConditionData": {},
-            "Type": 2,
-            "Cooldown": 20,
-            "CostType": "UltimateSp",
-            "CostValue": 0,
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 100.0,
             "Params": [
                 {
-                    "Text": "쿨타임",
+                    "Text": "스킬 게이지 소모",
                     "ConditionId": "",
                     "Values": [
-                        "20초",
-                        "20초",
-                        "20초",
-                        "20초",
-                        "20초",
-                        "20초",
-                        "20초",
-                        "20초",
-                        "20초",
-                        "20초",
-                        "20초",
-                        "20초"
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
                     "Text": "피해 배율",
                     "ConditionId": "",
                     "Values": [
-                        "80%",
-                        "88%",
-                        "96%",
-                        "104%",
-                        "112%",
-                        "120%",
-                        "128%",
-                        "136%",
-                        "144%",
-                        "154%",
-                        "166%",
-                        "180%"
+                        "178%",
+                        "196%",
+                        "213%",
+                        "231%",
+                        "249%",
+                        "267%",
+                        "285%",
+                        "302%",
+                        "320%",
+                        "342%",
+                        "369%",
+                        "400%"
                     ]
                 },
                 {
@@ -360,69 +311,102 @@
                         "10",
                         "10"
                     ]
-                },
+                }
+            ]
+        },
+        "chr_0004_pelica_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_pelica_01",
+            "Element": "Pulse",
+            "Name": "프로토콜ε · 70.41κ",
+            "Desc": "즉시 거대한 궤도 부유물을 전송하여 목표 구역에 치명적인 타격을 줍니다. 구역 내의 적은 대량의 <@ba.pulse>전기 피해</>를 받습니다.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 10.0,
+            "CostType": "UltimateSp",
+            "CostValue": 80.0,
+            "Params": [
                 {
-                    "Text": "감전 시간(초)",
+                    "Text": "필요한 궁극기 에너지",
                     "ConditionId": "",
                     "Values": [
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5"
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0
                     ]
                 },
                 {
-                    "Text": "획득하는 궁극기 에너지",
+                    "Text": "쿨타임",
                     "ConditionId": "",
                     "Values": [
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10"
+                        "10초",
+                        "10초",
+                        "10초",
+                        "10초",
+                        "10초",
+                        "10초",
+                        "10초",
+                        "10초",
+                        "10초",
+                        "10초",
+                        "10초",
+                        "10초"
+                    ]
+                },
+                {
+                    "Text": "피해 배율",
+                    "ConditionId": "",
+                    "Values": [
+                        "445%",
+                        "489%",
+                        "534%",
+                        "578%",
+                        "622%",
+                        "667%",
+                        "711%",
+                        "756%",
+                        "800%",
+                        "856%",
+                        "923%",
+                        "1000%"
+                    ]
+                },
+                {
+                    "Text": "불균형치",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
                     ]
                 }
             ]
         }
     },
     "NodeSkillMap": {
-        "fac_chr_0004_pelica_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
-            "Name": "프로토콜 관리 · β",
-            "Desc": "제조실에 배치 시, 무기 경험치 재료의 생산 효율 20% 증가",
+        "chr_0004_pelica_passive_skill_0_1": {
+            "Icon": "icon_talent_pelica_01",
             "Level": 1,
-            "Index": 3,
-            "Type": 5
-        },
-        "fac_chr_0004_pelica_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
-            "Name": "프로토콜 관리 · γ",
-            "Desc": "제조실에 배치 시, 무기 경험치 재료의 생산 효율 30% 증가",
-            "Level": 2,
-            "Index": 3,
-            "Type": 5
-        },
-        "chr_0004_pelica_passive_skill_1_1": {
-            "Icon": "icon_talent_pelica_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "순환 프로토콜",
-            "Desc": "연계 스킬 <@ba.key>실시간 프로토콜 · 연쇄 섬광</>이 <#ba.noguard>방어 불능</> 상태의 적에게 명중했을 때, 스킬이 1회 더 튕깁니다.",
+            "Index": 0,
+            "Name": "오블리터레이션 프로토콜",
+            "Desc": "<@ba.poise>불균형</> 상태의 적에게 주는 피해 <@ba.vup>+20%</>",
             "Type": 4
         },
         "chr_0004_pelica_passive_skill_0_2": {
@@ -433,12 +417,12 @@
             "Desc": "<@ba.poise>불균형</> 상태의 적에게 주는 피해 <@ba.vup>+30%</>",
             "Type": 4
         },
-        "chr_0004_pelica_passive_skill_0_1": {
-            "Icon": "icon_talent_pelica_01",
+        "chr_0004_pelica_passive_skill_1_1": {
+            "Icon": "icon_talent_pelica_02",
             "Level": 1,
-            "Index": 0,
-            "Name": "오블리터레이션 프로토콜",
-            "Desc": "<@ba.poise>불균형</> 상태의 적에게 주는 피해 <@ba.vup>+20%</>",
+            "Index": 1,
+            "Name": "순환 프로토콜",
+            "Desc": "연계 스킬 <@ba.key>실시간 프로토콜 · 연쇄 섬광</>이 <#ba.noguard>방어 불능</> 상태의 적에게 명중했을 때, 스킬이 1회 더 튕깁니다.",
             "Type": 4
         },
         "fac_chr_0004_pelica_0_1": {
@@ -455,6 +439,22 @@
             "Desc": "핵심 제어 중추에 배치 시, 모든 오퍼레이터의 컨디션 회복 속도 12% 증가",
             "Level": 2,
             "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0004_pelica_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "프로토콜 관리 · β",
+            "Desc": "제조실에 배치 시, 무기 경험치 재료의 생산 효율 20% 증가",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0004_pelica_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "프로토콜 관리 · γ",
+            "Desc": "제조실에 배치 시, 무기 경험치 재료의 생산 효율 30% 증가",
+            "Level": 2,
+            "Index": 3,
             "Type": 5
         }
     },

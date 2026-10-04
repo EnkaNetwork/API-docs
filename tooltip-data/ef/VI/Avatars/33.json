@@ -9,17 +9,17 @@
     "MainAttrId": 41,
     "SubAttrId": 39,
     "AttributeNodes": {
-        "chr_0023_antal_3": {
-            "41": 15
-        },
         "chr_0023_antal_1": {
-            "41": 10
+            "41": 10.0
+        },
+        "chr_0023_antal_3": {
+            "41": 15.0
         },
         "chr_0023_antal_5": {
-            "41": 15
+            "41": 15.0
         },
         "chr_0023_antal_7": {
-            "41": 20
+            "41": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "KÍCH HOẠT LIÊN HOÀN: Khi một kẻ địch đang có <@ba.key>Tập Trung</> chịu một <#ba.physicalstatus>Trạng Thái Vật Lý</> hoặc <#ba.spellinflict>Nhiễm Thuật Pháp</>. \nKích hoạt một vụ nổ năng lượng trên kẻ địch, gây <@ba.pulse>ST Điện</> áp thêm một tích điểm cùng loại <#ba.physicalstatus>Trạng Thái Vật Lý</> hoặc <#ba.spellinflict>Nhiễm Thuật Pháp</>.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 25,
+            "Cooldown": 25.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Thời gian hồi chiêu",
@@ -115,9 +115,9 @@
             "Desc": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 4 chuỗi gây <@ba.pulse>ST Điện</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>15</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.pulse>ST Điện</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pulse>ST Điện</> và hồi một phần Điểm KN.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Hệ Số Chuỗi Đòn Đánh Thường 1",
@@ -229,6 +229,109 @@
                 }
             ]
         },
+        "chr_0023_antal_NormalSkill": {
+            "Icon": "skillicon/icon_skill_antal_01",
+            "Element": "Pulse",
+            "Name": "Đối Tượng Nghiên Cứu Cụ Thể",
+            "Desc": "Gây hiệu ứng <@ba.key>Tập Trung</> lên kẻ địch và gây <@ba.pulse>ST Điện</>. Kẻ địch đang chịu <@ba.key>Tập Trung</> sẽ chịu thêm <#ba.pulsevul>Yếu Hóa Điện</> và <#ba.firevul>Yếu Hóa Nhiệt</>. <@ba.key>Tập Trung</> chỉ có thể áp lên 1 mục tiêu tại một thời điểm.",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "Điểm KN tiêu hao",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "Hệ Số ST",
+                    "ConditionId": "",
+                    "Values": [
+                        "89%",
+                        "98%",
+                        "107%",
+                        "116%",
+                        "124%",
+                        "133%",
+                        "142%",
+                        "151%",
+                        "160%",
+                        "171%",
+                        "185%",
+                        "200%"
+                    ]
+                },
+                {
+                    "Text": "Hiệu Lực (giây)",
+                    "ConditionId": "",
+                    "Values": [
+                        "60",
+                        "60",
+                        "60",
+                        "60",
+                        "60",
+                        "60",
+                        "60",
+                        "60",
+                        "60",
+                        "60",
+                        "60",
+                        "60"
+                    ]
+                },
+                {
+                    "Text": "Yếu Hóa Điện",
+                    "ConditionId": "",
+                    "Values": [
+                        "5%",
+                        "5%",
+                        "6%",
+                        "6%",
+                        "7%",
+                        "7%",
+                        "8%",
+                        "8%",
+                        "8%",
+                        "9%",
+                        "9%",
+                        "10%"
+                    ]
+                },
+                {
+                    "Text": "Yếu Hóa Nhiệt",
+                    "ConditionId": "",
+                    "Values": [
+                        "5%",
+                        "5%",
+                        "6%",
+                        "6%",
+                        "7%",
+                        "7%",
+                        "8%",
+                        "8%",
+                        "8%",
+                        "9%",
+                        "9%",
+                        "10%"
+                    ]
+                }
+            ]
+        },
         "chr_0023_antal_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_antal_01",
             "Element": "Pulse",
@@ -236,26 +339,26 @@
             "Desc": "Áp dụng tạm thời <#ba.pulseenhance>Tăng ST Điện</> và <#ba.fireenhance>Tăng ST Nhiệt</> cho toàn đội.",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 20,
+            "Cooldown": 20.0,
             "CostType": "UltimateSp",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "Phí Năng Lượng Tuyệt Kỹ",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -313,7 +416,7 @@
                     ]
                 },
                 {
-                    "Text": "Thời Gian Hiệu Lực (giây)",
+                    "Text": "Hiệu Lực (giây)",
                     "ConditionId": "",
                     "Values": [
                         "12",
@@ -331,158 +434,15 @@
                     ]
                 }
             ]
-        },
-        "chr_0023_antal_NormalSkill": {
-            "Icon": "skillicon/icon_skill_antal_01",
-            "Element": "Pulse",
-            "Name": "Đối Tượng Nghiên Cứu Cụ Thể",
-            "Desc": "Gây hiệu ứng <@ba.key>Tập Trung</> lên kẻ địch và gây <@ba.pulse>ST Điện</>. Kẻ địch đang chịu <@ba.key>Tập Trung</> sẽ chịu thêm <#ba.pulsevul>Yếu Hóa Điện</> và <#ba.firevul>Yếu Hóa Nhiệt</>. <@ba.key>Tập Trung</> chỉ có thể áp lên 1 mục tiêu tại một thời điểm.",
-            "ConditionData": {},
-            "Type": 1,
-            "Cooldown": 0,
-            "CostType": "Atb",
-            "CostValue": 100,
-            "Params": [
-                {
-                    "Text": "Điểm KN tiêu hao",
-                    "ConditionId": "",
-                    "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
-                    ]
-                },
-                {
-                    "Text": "Hệ Số ST",
-                    "ConditionId": "",
-                    "Values": [
-                        "89%",
-                        "98%",
-                        "107%",
-                        "116%",
-                        "124%",
-                        "133%",
-                        "142%",
-                        "151%",
-                        "160%",
-                        "171%",
-                        "185%",
-                        "200%"
-                    ]
-                },
-                {
-                    "Text": "Thời Gian Hiệu Lực (giây)",
-                    "ConditionId": "",
-                    "Values": [
-                        "60",
-                        "60",
-                        "60",
-                        "60",
-                        "60",
-                        "60",
-                        "60",
-                        "60",
-                        "60",
-                        "60",
-                        "60",
-                        "60"
-                    ]
-                },
-                {
-                    "Text": "Yếu Hóa Điện",
-                    "ConditionId": "",
-                    "Values": [
-                        "5%",
-                        "5%",
-                        "6%",
-                        "6%",
-                        "7%",
-                        "7%",
-                        "8%",
-                        "8%",
-                        "8%",
-                        "9%",
-                        "9%",
-                        "10%"
-                    ]
-                },
-                {
-                    "Text": "Yếu Hóa Nhiệt",
-                    "ConditionId": "",
-                    "Values": [
-                        "5%",
-                        "5%",
-                        "6%",
-                        "6%",
-                        "7%",
-                        "7%",
-                        "8%",
-                        "8%",
-                        "8%",
-                        "9%",
-                        "9%",
-                        "10%"
-                    ]
-                }
-            ]
         }
     },
     "NodeSkillMap": {
-        "chr_0023_antal_passive_skill_1_2": {
-            "Icon": "icon_talent_antal_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "Phản Xạ Vô Thức",
-            "Desc": "Có <@ba.vup>30%</> tỷ lệ miễn <@ba.pd>ST Vật Lý</> và hồi HP bằng <@ba.heal>[45 + Sức Mạnh×0.38]</> HP của bản thân.",
-            "Type": 4
-        },
-        "fac_chr_0023_antal_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
-            "Name": "Nghiên Cứu Pun-isher β",
-            "Desc": "Khi phân công vào Buồng Phát Triển, làm chậm Giảm Tâm Trạng của tất cả các cán viên trong đó xuống 14%",
-            "Level": 1,
-            "Index": 3,
-            "Type": 5
-        },
         "chr_0023_antal_passive_skill_0_1": {
             "Icon": "icon_talent_antal_01",
             "Level": 1,
             "Index": 0,
             "Name": "Người Ứng Biến",
             "Desc": "Sau khi kỹ năng được <#ba.enhance>Tăng Cường</> của đồng đội gây ST, Antal sẽ hồi HP cho đồng đội đó một lượng bằng <@ba.heal>[72 + Sức Mạnh×0.6]</>. Hiệu ứng hồi HP này kích hoạt <@ba.vup>30</> giây 1 lần cho mỗi cán viên.",
-            "Type": 4
-        },
-        "fac_chr_0023_antal_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
-            "Name": "Đơn Vị Thuật Pháp Thử Nghiệm α",
-            "Desc": "Khi phân công vào Khoang Sản Xuất, hiệu suất sản xuất nguyên liệu EXP vũ khí +10%",
-            "Level": 1,
-            "Index": 2,
-            "Type": 5
-        },
-        "fac_chr_0023_antal_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
-            "Name": "Nghiên Cứu Pun-isher γ",
-            "Desc": "Khi phân công vào Buồng Phát Triển, làm chậm Giảm Tâm Trạng của tất cả các cán viên trong đó xuống 18%",
-            "Level": 2,
-            "Index": 3,
-            "Type": 5
-        },
-        "chr_0023_antal_passive_skill_1_1": {
-            "Icon": "icon_talent_antal_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "Phản Xạ Vô Thức",
-            "Desc": "Có <@ba.vup>30%</> tỷ lệ miễn <@ba.pd>ST Vật Lý</> và hồi HP bằng <@ba.heal>[27 + Sức Mạnh×0.23]</> HP của bản thân.",
             "Type": 4
         },
         "chr_0023_antal_passive_skill_0_2": {
@@ -493,12 +453,52 @@
             "Desc": "Sau khi kỹ năng được <#ba.enhance>Tăng Cường</> của đồng đội gây ST, Antal sẽ hồi HP cho đồng đội đó một lượng bằng <@ba.heal>[108 + Sức Mạnh×0.9]</>. Hiệu ứng hồi HP này kích hoạt <@ba.vup>30</> giây 1 lần cho mỗi cán viên.",
             "Type": 4
         },
+        "chr_0023_antal_passive_skill_1_1": {
+            "Icon": "icon_talent_antal_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Phản Xạ Vô Thức",
+            "Desc": "Có <@ba.vup>30%</> tỷ lệ miễn <@ba.pd>ST Vật Lý</> và hồi HP bằng <@ba.heal>[27 + Sức Mạnh×0.23]</> HP của bản thân.",
+            "Type": 4
+        },
+        "chr_0023_antal_passive_skill_1_2": {
+            "Icon": "icon_talent_antal_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Phản Xạ Vô Thức",
+            "Desc": "Có <@ba.vup>30%</> tỷ lệ miễn <@ba.pd>ST Vật Lý</> và hồi HP bằng <@ba.heal>[45 + Sức Mạnh×0.38]</> HP của bản thân.",
+            "Type": 4
+        },
+        "fac_chr_0023_antal_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Đơn Vị Thuật Pháp Thử Nghiệm α",
+            "Desc": "Khi phân công vào Khoang Sản Xuất, hiệu suất sản xuất nguyên liệu EXP vũ khí +10%",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
         "fac_chr_0023_antal_0_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
             "Name": "Đơn Vị Thuật Pháp Thử Nghiệm β",
             "Desc": "Khi phân công vào Khoang Sản Xuất, hiệu suất sản xuất nguyên liệu EXP vũ khí +20%",
             "Level": 2,
             "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0023_antal_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
+            "Name": "Nghiên Cứu Pun-isher β",
+            "Desc": "Khi phân công vào Buồng Phát Triển, làm chậm Giảm Tâm Trạng của tất cả các cán viên trong đó xuống 14%",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0023_antal_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
+            "Name": "Nghiên Cứu Pun-isher γ",
+            "Desc": "Khi phân công vào Buồng Phát Triển, làm chậm Giảm Tâm Trạng của tất cả các cán viên trong đó xuống 18%",
+            "Level": 2,
+            "Index": 3,
             "Type": 5
         }
     },

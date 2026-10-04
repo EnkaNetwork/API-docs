@@ -9,17 +9,17 @@
     "MainAttrId": 42,
     "SubAttrId": 39,
     "AttributeNodes": {
-        "chr_0021_whiten_5": {
-            "42": 15
-        },
-        "chr_0021_whiten_7": {
-            "42": 20
-        },
         "chr_0021_whiten_1": {
-            "42": 10
+            "42": 10.0
         },
         "chr_0021_whiten_3": {
-            "42": 15
+            "42": 15.0
+        },
+        "chr_0021_whiten_5": {
+            "42": 15.0
+        },
+        "chr_0021_whiten_7": {
+            "42": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "ACTIVADOR DE COMBO: Cuando un enemigo sufre <#ba.frozen>Solidificación</>. \nSe mueve rápidamente al lado del enemigo para infligir <@ba.pd>DAÑ físico</> y forzar <#ba.airborne>Levantar</> a los enemigos en un área pequeña. Si la habilidad impacta a un objetivo con <#ba.frozen>Solidificación</>, la habilidad inflige DAÑ adicional y aplica <#ba.physicalvul>Suscep. fís.</>.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 18,
+            "Cooldown": 18.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Tiempo de reutilización",
@@ -162,158 +162,6 @@
                 }
             ]
         },
-        "chr_0021_whiten_NormalSkill": {
-            "Icon": "skillicon/icon_skill_whiten_01",
-            "Element": "Cryst",
-            "Name": "Onomatopeya",
-            "Desc": "Una estocada de lanza que dispara una ráfaga de ondas sonoras heladas que infligen <@ba.cryst>DAÑ criogénico</> y aplican <#ba.crystinflict>Imp. crio.</> a todos los enemigos en su trayectoria recta.",
-            "ConditionData": {},
-            "Type": 1,
-            "Cooldown": 0,
-            "CostType": "Atb",
-            "CostValue": 100,
-            "Params": [
-                {
-                    "Text": "Costo de PH",
-                    "ConditionId": "",
-                    "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
-                    ]
-                },
-                {
-                    "Text": "Multiplicador de DAÑ",
-                    "ConditionId": "",
-                    "Values": [
-                        "156%",
-                        "171%",
-                        "187%",
-                        "202%",
-                        "218%",
-                        "234%",
-                        "249%",
-                        "265%",
-                        "280%",
-                        "300%",
-                        "323%",
-                        "350%"
-                    ]
-                },
-                {
-                    "Text": "Tambaleo",
-                    "ConditionId": "",
-                    "Values": [
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10"
-                    ]
-                }
-            ]
-        },
-        "chr_0021_whiten_UltimateSkill": {
-            "Icon": "skillicon/icon_ultimate_skill_whiten_01",
-            "Element": "Physical",
-            "Name": "Trémolo",
-            "Desc": "Estella gasta todas sus fuerzas para desatar un potente golpe con el asta de la lanza, infligiendo <@ba.pd>DAÑ físico</> a todos los enemigos en un área circular a su alrededor. A los enemigos con <#ba.physicalvul>Suscep. fís.</>, la habilidad les aplica forzosamente <#ba.airborne>Levantar</>.",
-            "ConditionData": {},
-            "Type": 3,
-            "Cooldown": 10,
-            "CostType": "UltimateSp",
-            "CostValue": 70,
-            "Params": [
-                {
-                    "Text": "Costo de energía máxima",
-                    "ConditionId": "",
-                    "Values": [
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70
-                    ]
-                },
-                {
-                    "Text": "Tiempo de reutilización",
-                    "ConditionId": "",
-                    "Values": [
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s"
-                    ]
-                },
-                {
-                    "Text": "Multiplicador de DAÑ",
-                    "ConditionId": "",
-                    "Values": [
-                        "489%",
-                        "538%",
-                        "586%",
-                        "635%",
-                        "684%",
-                        "733%",
-                        "782%",
-                        "831%",
-                        "880%",
-                        "941%",
-                        "1014%",
-                        "1100%"
-                    ]
-                },
-                {
-                    "Text": "Tambaleo",
-                    "ConditionId": "",
-                    "Values": [
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "20",
-                        "20",
-                        "20"
-                    ]
-                }
-            ]
-        },
         "chr_0021_whiten_NormalAttack": {
             "Icon": "skillicon/icon_attack_lance",
             "Element": "Physical",
@@ -321,9 +169,9 @@
             "Desc": "ATAQUE BÁSICO: \nUn ataque con hasta 4 secuencias que inflige <@ba.pd>DAÑ físico</>. Como operador controlado, el <#ba.lastcombo>golpe final</> también inflige <@ba.poise>17</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige mucho <@ba.pd>DAÑ físico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.pd>DAÑ físico</> y recupera algunos PH.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Multiplicador ATQB SEC 1",
@@ -434,9 +282,201 @@
                     ]
                 }
             ]
+        },
+        "chr_0021_whiten_NormalSkill": {
+            "Icon": "skillicon/icon_skill_whiten_01",
+            "Element": "Cryst",
+            "Name": "Onomatopeya",
+            "Desc": "Una estocada de lanza que dispara una ráfaga de ondas sonoras heladas que infligen <@ba.cryst>DAÑ criogénico</> y aplican <#ba.crystinflict>Imp. crio.</> a todos los enemigos en su trayectoria recta.",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "Costo de PH",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "Multiplicador de DAÑ",
+                    "ConditionId": "",
+                    "Values": [
+                        "156%",
+                        "171%",
+                        "187%",
+                        "202%",
+                        "218%",
+                        "234%",
+                        "249%",
+                        "265%",
+                        "280%",
+                        "300%",
+                        "323%",
+                        "350%"
+                    ]
+                },
+                {
+                    "Text": "Tambaleo",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0021_whiten_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_whiten_01",
+            "Element": "Physical",
+            "Name": "Trémolo",
+            "Desc": "Estella gasta todas sus fuerzas para desatar un potente golpe con el asta de la lanza, infligiendo <@ba.pd>DAÑ físico</> a todos los enemigos en un área circular a su alrededor. A los enemigos con <#ba.physicalvul>Suscep. fís.</>, la habilidad les aplica forzosamente <#ba.airborne>Levantar</>.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 10.0,
+            "CostType": "UltimateSp",
+            "CostValue": 70.0,
+            "Params": [
+                {
+                    "Text": "Costo de energía máxima",
+                    "ConditionId": "",
+                    "Values": [
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0
+                    ]
+                },
+                {
+                    "Text": "Tiempo de reutilización",
+                    "ConditionId": "",
+                    "Values": [
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador de DAÑ",
+                    "ConditionId": "",
+                    "Values": [
+                        "489%",
+                        "538%",
+                        "586%",
+                        "635%",
+                        "684%",
+                        "733%",
+                        "782%",
+                        "831%",
+                        "880%",
+                        "941%",
+                        "1014%",
+                        "1100%"
+                    ]
+                },
+                {
+                    "Text": "Tambaleo",
+                    "ConditionId": "",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                }
+            ]
         }
     },
     "NodeSkillMap": {
+        "chr_0021_whiten_passive_skill_0_1": {
+            "Icon": "icon_talent_whiten_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Conmiseración",
+            "Desc": "Al activar <#ba.crystbreak>Quebrar</>, la siguiente habilidad de batalla <@ba.key>Onomatopeya</> lanzada <#ba.return>devuelve</> <@ba.vup>7.5</> PH. Este efecto no se acumula.",
+            "Type": 4
+        },
+        "chr_0021_whiten_passive_skill_0_2": {
+            "Icon": "icon_talent_whiten_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Conmiseración",
+            "Desc": "Al activar <#ba.crystbreak>Quebrar</>, la siguiente habilidad de batalla <@ba.key>Onomatopeya</> lanzada <#ba.return>devuelve</> <@ba.vup>15</> PH. Este efecto no se acumula.",
+            "Type": 4
+        },
+        "chr_0021_whiten_passive_skill_1_1": {
+            "Icon": "icon_talent_whiten_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "La pereza da frutos ahora",
+            "Desc": "Ignora la <#ba.crystonchar>Imposición criogénica</> y recibe <@ba.vup>-10%</> de <@ba.cryst>DAÑ criogénico</>.",
+            "Type": 4
+        },
+        "chr_0021_whiten_passive_skill_1_2": {
+            "Icon": "icon_talent_whiten_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "La pereza da frutos ahora",
+            "Desc": "Ignora la <#ba.crystonchar>Imposición criogénica</> y recibe <@ba.vup>-20%</> de <@ba.cryst>DAÑ criogénico</>.",
+            "Type": 4
+        },
+        "fac_chr_0021_whiten_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "Descanso fragmentado α",
+            "Desc": "Asignar al Nexus de control para otorgar a todos los operadores regeneración del Estado de ánimo de +8 %",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
         "fac_chr_0021_whiten_0_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
             "Name": "Descanso fragmentado β",
@@ -453,52 +493,12 @@
             "Index": 3,
             "Type": 5
         },
-        "chr_0021_whiten_passive_skill_0_1": {
-            "Icon": "icon_talent_whiten_01",
-            "Level": 1,
-            "Index": 0,
-            "Name": "Conmiseración",
-            "Desc": "Al activar <#ba.crystbreak>Quebrar</>, la siguiente habilidad de batalla <@ba.key>Onomatopeya</> lanzada <#ba.return>devuelve</> <@ba.vup>7.5</> PH. Este efecto no se acumula.",
-            "Type": 4
-        },
-        "chr_0021_whiten_passive_skill_1_1": {
-            "Icon": "icon_talent_whiten_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "La pereza da frutos ahora",
-            "Desc": "Ignora la <#ba.crystonchar>Imposición criogénica</> y recibe <@ba.vup>-10%</> de <@ba.cryst>DAÑ criogénico</>.",
-            "Type": 4
-        },
         "fac_chr_0021_whiten_1_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
             "Name": "Monitoreo de frecuencia γ",
             "Desc": "Asignar a la Sala de recepción para otorgar al operador de eficiencia en recolección de pistas +30 %",
             "Level": 2,
             "Index": 3,
-            "Type": 5
-        },
-        "chr_0021_whiten_passive_skill_1_2": {
-            "Icon": "icon_talent_whiten_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "La pereza da frutos ahora",
-            "Desc": "Ignora la <#ba.crystonchar>Imposición criogénica</> y recibe <@ba.vup>-20%</> de <@ba.cryst>DAÑ criogénico</>.",
-            "Type": 4
-        },
-        "chr_0021_whiten_passive_skill_0_2": {
-            "Icon": "icon_talent_whiten_01",
-            "Level": 2,
-            "Index": 0,
-            "Name": "Conmiseración",
-            "Desc": "Al activar <#ba.crystbreak>Quebrar</>, la siguiente habilidad de batalla <@ba.key>Onomatopeya</> lanzada <#ba.return>devuelve</> <@ba.vup>15</> PH. Este efecto no se acumula.",
-            "Type": 4
-        },
-        "fac_chr_0021_whiten_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
-            "Name": "Descanso fragmentado α",
-            "Desc": "Asignar al Nexus de control para otorgar a todos los operadores regeneración del Estado de ánimo de +8 %",
-            "Level": 1,
-            "Index": 2,
             "Type": 5
         }
     },

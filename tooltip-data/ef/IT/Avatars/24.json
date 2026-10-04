@@ -10,122 +10,19 @@
     "SubAttrId": 42,
     "AttributeNodes": {
         "chr_0014_aurora_1": {
-            "39": 10
+            "39": 10.0
         },
         "chr_0014_aurora_3": {
-            "39": 15
+            "39": 15.0
         },
         "chr_0014_aurora_5": {
-            "39": 15
+            "39": 15.0
         },
         "chr_0014_aurora_7": {
-            "39": 20
+            "39": 20.0
         }
     },
     "SkillInfoMap": {
-        "chr_0014_aurora_NormalSkill": {
-            "Icon": "skillicon/icon_skill_aurora_01",
-            "Element": "Cryst",
-            "Name": "Difesa saturata",
-            "Desc": "Solleva uno scudo in grado di bloccare gli attacchi, conferisce <#ba.guard>Protezione</> a sé e agli operatori vicini e <#ba.return>ripristina</> immediatamente parte dei PA. \nSe riceve un attacco mentre lo scudo è sollevato, sferra un contrattacco che infligge <@ba.cryst>danni da ghiaccio</> e applica <#ba.crystinflict>Afflizione da ghiaccio</> all'attaccante.",
-            "ConditionData": {},
-            "Type": 1,
-            "Cooldown": 0,
-            "CostType": "Atb",
-            "CostValue": 100,
-            "Params": [
-                {
-                    "Text": "Costo PA",
-                    "ConditionId": "",
-                    "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
-                    ]
-                },
-                {
-                    "Text": "Moltiplicatore danni",
-                    "ConditionId": "",
-                    "Values": [
-                        "200%",
-                        "220%",
-                        "240%",
-                        "260%",
-                        "280%",
-                        "300%",
-                        "320%",
-                        "340%",
-                        "360%",
-                        "385%",
-                        "415%",
-                        "450%"
-                    ]
-                },
-                {
-                    "Text": "Vacillamento",
-                    "ConditionId": "",
-                    "Values": [
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20"
-                    ]
-                },
-                {
-                    "Text": "Protezione",
-                    "ConditionId": "",
-                    "Values": [
-                        "90%",
-                        "90%",
-                        "90%",
-                        "90%",
-                        "90%",
-                        "90%",
-                        "90%",
-                        "90%",
-                        "90%",
-                        "90%",
-                        "90%",
-                        "90%"
-                    ]
-                },
-                {
-                    "Text": "Restituzione PA",
-                    "ConditionId": "",
-                    "Values": [
-                        "30",
-                        "30",
-                        "30",
-                        "30",
-                        "30",
-                        "30",
-                        "30",
-                        "30",
-                        "30",
-                        "30",
-                        "30",
-                        "30"
-                    ]
-                }
-            ]
-        },
         "chr_0014_aurora_ComboSkill": {
             "Icon": "skillicon/icon_combo_skill_aurora_01",
             "Element": "Cryst",
@@ -133,9 +30,9 @@
             "Desc": "ATTIVAZIONE COMBO: dopo che l'operatore controllato viene attaccato e ha meno di un 60% di PS. \nSnowshine lancia un assistente della squadra di soccorso delle nevi all'operatore controllato. Al contatto con il bersaglio, l'assistente conferisce un'ingente quantità di <@ba.heal>Cura PS</> agli operatori vicini e <@ba.heal>Cura PS</> progressiva agli operatori nel raggio d'azione. \nL'attributo Volontà aumenta la quantità di PS ripristinati.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 25,
+            "Cooldown": 25.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Tempo di recupero",
@@ -290,9 +187,9 @@
             "Desc": "ATTACCO BASE: \nsequenza di massimo tre attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>23</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Moltiplicatore SEQ ATTB 1",
@@ -386,6 +283,109 @@
                 }
             ]
         },
+        "chr_0014_aurora_NormalSkill": {
+            "Icon": "skillicon/icon_skill_aurora_01",
+            "Element": "Cryst",
+            "Name": "Difesa saturata",
+            "Desc": "Solleva uno scudo in grado di bloccare gli attacchi, conferisce <#ba.guard>Protezione</> a sé e agli operatori vicini e <#ba.return>ripristina</> immediatamente parte dei PA. \nSe riceve un attacco mentre lo scudo è sollevato, sferra un contrattacco che infligge <@ba.cryst>danni da ghiaccio</> e applica <#ba.crystinflict>Afflizione da ghiaccio</> all'attaccante.",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "Costo PA",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "Moltiplicatore danni",
+                    "ConditionId": "",
+                    "Values": [
+                        "200%",
+                        "220%",
+                        "240%",
+                        "260%",
+                        "280%",
+                        "300%",
+                        "320%",
+                        "340%",
+                        "360%",
+                        "385%",
+                        "415%",
+                        "450%"
+                    ]
+                },
+                {
+                    "Text": "Vacillamento",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Protezione",
+                    "ConditionId": "",
+                    "Values": [
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%"
+                    ]
+                },
+                {
+                    "Text": "Restituzione PA",
+                    "ConditionId": "",
+                    "Values": [
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30"
+                    ]
+                }
+            ]
+        },
         "chr_0014_aurora_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_aurora_01",
             "Element": "Cryst",
@@ -393,26 +393,26 @@
             "Desc": "Si lancia in aria con un jetpack per poi colpire dall'alto con lo scudo, infliggendo ingenti <@ba.cryst>danni da ghiaccio</> ai nemici nel raggio d'azione. Inoltre, genera una <@ba.key>zona innevata</> della durata di qualche secondo che infligge <@ba.cryst>danni da ghiaccio</> nel tempo ai nemici. La <@ba.key>zona innevata</> applica forzatamente <#ba.frozen>Solidificazione</> ai nemici che vi rimangono intrappolati per un certo periodo di tempo.",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 20,
+            "Cooldown": 20.0,
             "CostType": "UltimateSp",
-            "CostValue": 80,
+            "CostValue": 80.0,
             "Params": [
                 {
                     "Text": "Costo energia suprema",
                     "ConditionId": "",
                     "Values": [
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0
                     ]
                 },
                 {
@@ -527,12 +527,12 @@
         }
     },
     "NodeSkillMap": {
-        "chr_0014_aurora_passive_skill_1_1": {
-            "Icon": "icon_talent_aurora_02",
+        "chr_0014_aurora_passive_skill_0_1": {
+            "Icon": "icon_talent_aurora_01",
             "Level": 1,
-            "Index": 1,
-            "Name": "Professionista del soccorso",
-            "Desc": "Abilità di combattimento <@ba.key>Difesa saturata</> migliorata: dopo aver contrattaccato con successo un attacco nemico, Snowshine ottiene <@ba.vup>6</> di energia suprema extra.",
+            "Index": 0,
+            "Name": "Sopravvivenza polare",
+            "Desc": "<@ba.heal>+15%</> di efficacia della Cura per i bersagli con PS uguali o minori a un 45%.",
             "Type": 4
         },
         "chr_0014_aurora_passive_skill_0_2": {
@@ -543,20 +543,28 @@
             "Desc": "<@ba.heal>+25%</> di efficacia della Cura per i bersagli con PS uguali o minori a un 55%.",
             "Type": 4
         },
-        "chr_0014_aurora_passive_skill_0_1": {
-            "Icon": "icon_talent_aurora_01",
+        "chr_0014_aurora_passive_skill_1_1": {
+            "Icon": "icon_talent_aurora_02",
             "Level": 1,
-            "Index": 0,
-            "Name": "Sopravvivenza polare",
-            "Desc": "<@ba.heal>+15%</> di efficacia della Cura per i bersagli con PS uguali o minori a un 45%.",
+            "Index": 1,
+            "Name": "Professionista del soccorso",
+            "Desc": "Abilità di combattimento <@ba.key>Difesa saturata</> migliorata: dopo aver contrattaccato con successo un attacco nemico, Snowshine ottiene <@ba.vup>6</> di energia suprema extra.",
             "Type": 4
         },
-        "fac_chr_0014_aurora_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
-            "Name": "Spensieratezza γ",
-            "Desc": "Assegna al Nexus di controllo per aumentare del 16% la rigenerazione dell'umore di tutti gli operatori.",
+        "chr_0014_aurora_passive_skill_1_2": {
+            "Icon": "icon_talent_aurora_02",
             "Level": 2,
-            "Index": 3,
+            "Index": 1,
+            "Name": "Professionista del soccorso",
+            "Desc": "Abilità di combattimento <@ba.key>Difesa saturata</> migliorata: dopo aver contrattaccato con successo un attacco nemico, Snowshine ottiene <@ba.vup>10</> di energia suprema extra.",
+            "Type": 4
+        },
+        "fac_chr_0014_aurora_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
+            "Name": "Perseveranza del soccorritore α",
+            "Desc": "Assegna alla cabina di produzione per rallentare del 10% il calo dell'umore di tutti gli operatori al suo interno.",
+            "Level": 1,
+            "Index": 2,
             "Type": 5
         },
         "fac_chr_0014_aurora_0_2": {
@@ -564,14 +572,6 @@
             "Name": "Perseveranza del soccorritore β",
             "Desc": "Assegna alla cabina di produzione per rallentare del 14% il calo dell'umore di tutti gli operatori al suo interno.",
             "Level": 2,
-            "Index": 2,
-            "Type": 5
-        },
-        "fac_chr_0014_aurora_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
-            "Name": "Perseveranza del soccorritore α",
-            "Desc": "Assegna alla cabina di produzione per rallentare del 10% il calo dell'umore di tutti gli operatori al suo interno.",
-            "Level": 1,
             "Index": 2,
             "Type": 5
         },
@@ -583,13 +583,13 @@
             "Index": 3,
             "Type": 5
         },
-        "chr_0014_aurora_passive_skill_1_2": {
-            "Icon": "icon_talent_aurora_02",
+        "fac_chr_0014_aurora_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "Spensieratezza γ",
+            "Desc": "Assegna al Nexus di controllo per aumentare del 16% la rigenerazione dell'umore di tutti gli operatori.",
             "Level": 2,
-            "Index": 1,
-            "Name": "Professionista del soccorso",
-            "Desc": "Abilità di combattimento <@ba.key>Difesa saturata</> migliorata: dopo aver contrattaccato con successo un attacco nemico, Snowshine ottiene <@ba.vup>10</> di energia suprema extra.",
-            "Type": 4
+            "Index": 3,
+            "Type": 5
         }
     },
     "Potentials": {

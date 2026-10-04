@@ -9,65 +9,65 @@
     "MainAttrId": 41,
     "SubAttrId": 42,
     "AttributeNodes": {
-        "chr_0004_pelica_7": {
-            "41": 20
-        },
-        "chr_0004_pelica_5": {
-            "41": 15
+        "chr_0004_pelica_1": {
+            "41": 10.0
         },
         "chr_0004_pelica_3": {
-            "41": 15
+            "41": 15.0
         },
-        "chr_0004_pelica_1": {
-            "41": 10
+        "chr_0004_pelica_5": {
+            "41": 15.0
+        },
+        "chr_0004_pelica_7": {
+            "41": 20.0
         }
     },
     "SkillInfoMap": {
-        "chr_0004_pelica_NormalSkill": {
-            "Icon": "skillicon/icon_skill_pelica_01",
+        "chr_0004_pelica_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_pelica_01",
             "Element": "Pulse",
-            "Name": "Protocol ω: Strike",
-            "Desc": "Melepaskan kilatan energi elektromagnetis yang akan menimbulkan <@ba.pulse>Electric DMG</> dan <#ba.pulseinflict>Electric Infliction</> kepada musuh dalam area kecil.",
+            "Name": "Instant Protocol: Chain",
+            "Desc": "PEMICU KOMBO: Saat operator terkontrol melancarkan <#ba.lastcombo>Final Strike</> kepada musuh mana pun. \nMelepaskan energi elektromagnetis yang tersimpan untuk membombardir target sehingga akan menimbulkan <@ba.pulse>Electric DMG</> dan mengakibatkan <#ba.conduct>Electrification</> secara paksa untuk sementara.",
             "ConditionData": {},
-            "Type": 1,
-            "Cooldown": 0,
-            "CostType": "Atb",
-            "CostValue": 100,
+            "Type": 2,
+            "Cooldown": 20.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
             "Params": [
                 {
-                    "Text": "Biaya SP",
+                    "Text": "Cooldown",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk"
                     ]
                 },
                 {
                     "Text": "Pengganda DMG",
                     "ConditionId": "",
                     "Values": [
-                        "178%",
-                        "196%",
-                        "213%",
-                        "231%",
-                        "249%",
-                        "267%",
-                        "285%",
-                        "302%",
-                        "320%",
-                        "342%",
-                        "369%",
-                        "400%"
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
                     ]
                 },
                 {
@@ -87,90 +87,41 @@
                         "10",
                         "10"
                     ]
-                }
-            ]
-        },
-        "chr_0004_pelica_UltimateSkill": {
-            "Icon": "skillicon/icon_ultimate_skill_pelica_01",
-            "Element": "Pulse",
-            "Name": "Protocol ε: 70.41K",
-            "Desc": "Melontarkan pecahan orbit sangat besar dengan daya hancur luar biasa melalui teleprotokol ke medan pertarungan. Semua musuh yang berada dalam area efek akan terkena <@ba.pulse>Electric DMG</> sangat besar.",
-            "ConditionData": {},
-            "Type": 3,
-            "Cooldown": 10,
-            "CostType": "UltimateSp",
-            "CostValue": 80,
-            "Params": [
+                },
                 {
-                    "Text": "Biaya Energi Ultimate",
+                    "Text": "Durasi Electrify (dtk)",
                     "ConditionId": "",
                     "Values": [
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
                     ]
                 },
                 {
-                    "Text": "Cooldown",
+                    "Text": "Perolehan Energi Ultimate",
                     "ConditionId": "",
                     "Values": [
-                        "10dtk",
-                        "10dtk",
-                        "10dtk",
-                        "10dtk",
-                        "10dtk",
-                        "10dtk",
-                        "10dtk",
-                        "10dtk",
-                        "10dtk",
-                        "10dtk",
-                        "10dtk",
-                        "10dtk"
-                    ]
-                },
-                {
-                    "Text": "Pengganda DMG",
-                    "ConditionId": "",
-                    "Values": [
-                        "445%",
-                        "489%",
-                        "534%",
-                        "578%",
-                        "622%",
-                        "667%",
-                        "711%",
-                        "756%",
-                        "800%",
-                        "856%",
-                        "923%",
-                        "1000%"
-                    ]
-                },
-                {
-                    "Text": "Stagger",
-                    "ConditionId": "",
-                    "Values": [
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20"
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
                     ]
                 }
             ]
@@ -182,9 +133,9 @@
             "Desc": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.pulse>Electric DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>15</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pulse>Electric DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pulse>Electric DMG</> sangat besar dan memulihkan sebagian SP.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Pengganda BATK SEQ 1",
@@ -296,51 +247,51 @@
                 }
             ]
         },
-        "chr_0004_pelica_ComboSkill": {
-            "Icon": "skillicon/icon_combo_skill_pelica_01",
+        "chr_0004_pelica_NormalSkill": {
+            "Icon": "skillicon/icon_skill_pelica_01",
             "Element": "Pulse",
-            "Name": "Instant Protocol: Chain",
-            "Desc": "PEMICU KOMBO: Saat operator terkontrol melancarkan <#ba.lastcombo>Final Strike</> kepada musuh mana pun. \nMelepaskan energi elektromagnetis yang tersimpan untuk membombardir target sehingga akan menimbulkan <@ba.pulse>Electric DMG</> dan mengakibatkan <#ba.conduct>Electrification</> secara paksa untuk sementara.",
+            "Name": "Protocol ω: Strike",
+            "Desc": "Melepaskan kilatan energi elektromagnetis yang akan menimbulkan <@ba.pulse>Electric DMG</> dan <#ba.pulseinflict>Electric Infliction</> kepada musuh dalam area kecil.",
             "ConditionData": {},
-            "Type": 2,
-            "Cooldown": 20,
-            "CostType": "UltimateSp",
-            "CostValue": 0,
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 100.0,
             "Params": [
                 {
-                    "Text": "Cooldown",
+                    "Text": "Biaya SP",
                     "ConditionId": "",
                     "Values": [
-                        "20dtk",
-                        "20dtk",
-                        "20dtk",
-                        "20dtk",
-                        "20dtk",
-                        "20dtk",
-                        "20dtk",
-                        "20dtk",
-                        "20dtk",
-                        "20dtk",
-                        "20dtk",
-                        "20dtk"
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
                     "Text": "Pengganda DMG",
                     "ConditionId": "",
                     "Values": [
-                        "80%",
-                        "88%",
-                        "96%",
-                        "104%",
-                        "112%",
-                        "120%",
-                        "128%",
-                        "136%",
-                        "144%",
-                        "154%",
-                        "166%",
-                        "180%"
+                        "178%",
+                        "196%",
+                        "213%",
+                        "231%",
+                        "249%",
+                        "267%",
+                        "285%",
+                        "302%",
+                        "320%",
+                        "342%",
+                        "369%",
+                        "400%"
                     ]
                 },
                 {
@@ -360,69 +311,102 @@
                         "10",
                         "10"
                     ]
-                },
+                }
+            ]
+        },
+        "chr_0004_pelica_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_pelica_01",
+            "Element": "Pulse",
+            "Name": "Protocol ε: 70.41K",
+            "Desc": "Melontarkan pecahan orbit sangat besar dengan daya hancur luar biasa melalui teleprotokol ke medan pertarungan. Semua musuh yang berada dalam area efek akan terkena <@ba.pulse>Electric DMG</> sangat besar.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 10.0,
+            "CostType": "UltimateSp",
+            "CostValue": 80.0,
+            "Params": [
                 {
-                    "Text": "Durasi Electrify (dtk)",
+                    "Text": "Biaya Energi Ultimate",
                     "ConditionId": "",
                     "Values": [
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5"
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0
                     ]
                 },
                 {
-                    "Text": "Perolehan Energi Ultimate",
+                    "Text": "Cooldown",
                     "ConditionId": "",
                     "Values": [
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10"
+                        "10dtk",
+                        "10dtk",
+                        "10dtk",
+                        "10dtk",
+                        "10dtk",
+                        "10dtk",
+                        "10dtk",
+                        "10dtk",
+                        "10dtk",
+                        "10dtk",
+                        "10dtk",
+                        "10dtk"
+                    ]
+                },
+                {
+                    "Text": "Pengganda DMG",
+                    "ConditionId": "",
+                    "Values": [
+                        "445%",
+                        "489%",
+                        "534%",
+                        "578%",
+                        "622%",
+                        "667%",
+                        "711%",
+                        "756%",
+                        "800%",
+                        "856%",
+                        "923%",
+                        "1000%"
+                    ]
+                },
+                {
+                    "Text": "Stagger",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
                     ]
                 }
             ]
         }
     },
     "NodeSkillMap": {
-        "fac_chr_0004_pelica_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
-            "Name": "Protocol Redistribution β",
-            "Desc": "Saat ditugaskan ke Kabin Manufaktur, efisiensi produksi material EXP Senjata akan meningkat sebesar +20%",
+        "chr_0004_pelica_passive_skill_0_1": {
+            "Icon": "icon_talent_pelica_01",
             "Level": 1,
-            "Index": 3,
-            "Type": 5
-        },
-        "fac_chr_0004_pelica_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
-            "Name": "Protocol Redistribution γ",
-            "Desc": "Saat ditugaskan ke Kabin Manufaktur, efisiensi produksi material EXP Senjata akan meningkat sebesar +30%",
-            "Level": 2,
-            "Index": 3,
-            "Type": 5
-        },
-        "chr_0004_pelica_passive_skill_1_1": {
-            "Icon": "icon_talent_pelica_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "Cycle Protocol",
-            "Desc": "Skill kombo <@ba.key>Instant Protocol: Chain</> meningkat: Saat berhasil menghantam <#ba.noguard>musuh yang terkena Vulnerable</>, hantaman ini akan menyambar secara berantai sebanyak 1 kali lagi.",
+            "Index": 0,
+            "Name": "Obliteration Protocol",
+            "Desc": "DMG Dealt <@ba.vup>+20%</> kepada musuh yang terkena <@ba.poise>Staggered</>.",
             "Type": 4
         },
         "chr_0004_pelica_passive_skill_0_2": {
@@ -433,12 +417,12 @@
             "Desc": "DMG Dealt <@ba.vup>+30%</> kepada musuh yang terkena <@ba.poise>Staggered</>.",
             "Type": 4
         },
-        "chr_0004_pelica_passive_skill_0_1": {
-            "Icon": "icon_talent_pelica_01",
+        "chr_0004_pelica_passive_skill_1_1": {
+            "Icon": "icon_talent_pelica_02",
             "Level": 1,
-            "Index": 0,
-            "Name": "Obliteration Protocol",
-            "Desc": "DMG Dealt <@ba.vup>+20%</> kepada musuh yang terkena <@ba.poise>Staggered</>.",
+            "Index": 1,
+            "Name": "Cycle Protocol",
+            "Desc": "Skill kombo <@ba.key>Instant Protocol: Chain</> meningkat: Saat berhasil menghantam <#ba.noguard>musuh yang terkena Vulnerable</>, hantaman ini akan menyambar secara berantai sebanyak 1 kali lagi.",
             "Type": 4
         },
         "fac_chr_0004_pelica_0_1": {
@@ -455,6 +439,22 @@
             "Desc": "Saat ditugaskan ke Nexus Kontrol, Regen Suasana Hati semua operator akan meningkat sebesar +12%",
             "Level": 2,
             "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0004_pelica_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Protocol Redistribution β",
+            "Desc": "Saat ditugaskan ke Kabin Manufaktur, efisiensi produksi material EXP Senjata akan meningkat sebesar +20%",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0004_pelica_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Protocol Redistribution γ",
+            "Desc": "Saat ditugaskan ke Kabin Manufaktur, efisiensi produksi material EXP Senjata akan meningkat sebesar +30%",
+            "Level": 2,
+            "Index": 3,
             "Type": 5
         }
     },

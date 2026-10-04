@@ -9,17 +9,17 @@
     "MainAttrId": 40,
     "SubAttrId": 41,
     "AttributeNodes": {
-        "chr_0007_ikut_3": {
-            "40": 15
-        },
         "chr_0007_ikut_1": {
-            "40": 10
+            "40": 10.0
         },
-        "chr_0007_ikut_7": {
-            "40": 20
+        "chr_0007_ikut_3": {
+            "40": 15.0
         },
         "chr_0007_ikut_5": {
-            "40": 15
+            "40": 15.0
+        },
+        "chr_0007_ikut_7": {
+            "40": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "KOMBOAUSLÖSER: Wenn ein Gegner <#ba.conduct>Elektrifizierung</> erleidet oder nachdem ein aktiver <#ba.conduct>Elektrifizierungs</>-Zustand eines Gegners <#ba.consume>verbraucht</> wird. \nSpringt an die Seite des Gegners und führt eine Reihe von Hieben aus, die <@ba.pd>Physischen SDN</> verursachen und einige FP wiederherstellen.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 3,
+            "Cooldown": 3.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Abklingzeit",
@@ -126,266 +126,6 @@
                 }
             ]
         },
-        "chr_0007_ikut_NormalSkill": {
-            "Icon": "skillicon/icon_skill_ikut_01",
-            "Element": "Pulse",
-            "Name": "Stürmischer Bogen",
-            "Desc": "Springt sofort an die Seite des Gegners, um 2 Hiebe zu entfesseln, die etwas <@ba.pd>Physischen SDN</> verursachen. Wenn der Gegner mit einer aktiven <#ba.conduct>Elektrifizierung</> belegt ist, wird seine <#ba.conduct>Elektrifizierung</> <#ba.consume>verbraucht</>, um einen zusätzlichen Angriff auszuführen, der <@ba.pulse>Elektrischen SDN</> verursacht und einige FP wiederherstellt.",
-            "ConditionData": {},
-            "Type": 1,
-            "Cooldown": 0,
-            "CostType": "Atb",
-            "CostValue": 100,
-            "Params": [
-                {
-                    "Text": "FP-Kosten",
-                    "ConditionId": "",
-                    "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
-                    ]
-                },
-                {
-                    "Text": "SEQ-1-SDN-Multiplikator",
-                    "ConditionId": "",
-                    "Values": [
-                        "45%",
-                        "50%",
-                        "54%",
-                        "59%",
-                        "63%",
-                        "68%",
-                        "72%",
-                        "77%",
-                        "81%",
-                        "87%",
-                        "93%",
-                        "101%"
-                    ]
-                },
-                {
-                    "Text": "SEQ-2-SDN-Multiplikator",
-                    "ConditionId": "",
-                    "Values": [
-                        "45%",
-                        "50%",
-                        "54%",
-                        "59%",
-                        "63%",
-                        "68%",
-                        "72%",
-                        "77%",
-                        "81%",
-                        "87%",
-                        "93%",
-                        "101%"
-                    ]
-                },
-                {
-                    "Text": "SEQ 2 – Taumeln",
-                    "ConditionId": "",
-                    "Values": [
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5"
-                    ]
-                },
-                {
-                    "Text": "Zusätzlicher ANG-SDN-Multiplikator",
-                    "ConditionId": "",
-                    "Values": [
-                        "180%",
-                        "198%",
-                        "216%",
-                        "234%",
-                        "252%",
-                        "270%",
-                        "288%",
-                        "306%",
-                        "324%",
-                        "347%",
-                        "374%",
-                        "405%"
-                    ]
-                },
-                {
-                    "Text": "Zusätzliches ANG-Taumeln",
-                    "ConditionId": "",
-                    "Values": [
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5"
-                    ]
-                },
-                {
-                    "Text": "FP-Wiederherstellung",
-                    "ConditionId": "",
-                    "Values": [
-                        "30",
-                        "30",
-                        "30",
-                        "30",
-                        "30",
-                        "35",
-                        "35",
-                        "35",
-                        "35",
-                        "35",
-                        "35",
-                        "40"
-                    ]
-                }
-            ]
-        },
-        "chr_0007_ikut_UltimateSkill": {
-            "Icon": "skillicon/icon_ultimate_skill_ikut_01",
-            "Element": "Pulse",
-            "Name": "Explodierender Blitz",
-            "Desc": "Führt einen kurzen Vorwärtssprint aus, während er von Elektrizitätsbögen umhüllt ist, um <@ba.pulse>Elektrischen SDN</> zu verursachen und allen getroffenen Gegnern <#ba.pulseinflict>Elektrik</> zuzufügen. Die Bögen explodieren nach kurzer Zeit und verursachen einen weiteren Treffer mit <@ba.pulse>Elektrischem SDN</>. Falls <#ba.pulseinflict>Elektrik</> auf dem Gegner aktiv ist, wird <#ba.pulseinflict>Elektrik</> <#ba.consume>verbraucht</> und <#ba.conduct>Elektrifizieren</> verursacht.",
-            "ConditionData": {},
-            "Type": 3,
-            "Cooldown": 15,
-            "CostType": "UltimateSp",
-            "CostValue": 90,
-            "Params": [
-                {
-                    "Text": "Ultimative Energiekosten",
-                    "ConditionId": "",
-                    "Values": [
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90
-                    ]
-                },
-                {
-                    "Text": "Abklingzeit",
-                    "ConditionId": "",
-                    "Values": [
-                        "15Sek.",
-                        "15Sek.",
-                        "15Sek.",
-                        "15Sek.",
-                        "15Sek.",
-                        "15Sek.",
-                        "15Sek.",
-                        "15Sek.",
-                        "15Sek.",
-                        "15Sek.",
-                        "15Sek.",
-                        "15Sek."
-                    ]
-                },
-                {
-                    "Text": "SEQ-1-SDN-Multiplikator",
-                    "ConditionId": "",
-                    "Values": [
-                        "156%",
-                        "171%",
-                        "187%",
-                        "202%",
-                        "218%",
-                        "234%",
-                        "249%",
-                        "265%",
-                        "280%",
-                        "300%",
-                        "323%",
-                        "350%"
-                    ]
-                },
-                {
-                    "Text": "SEQ 1 – Taumeln",
-                    "ConditionId": "",
-                    "Values": [
-                        "7",
-                        "7",
-                        "7",
-                        "7",
-                        "7",
-                        "7",
-                        "7",
-                        "7",
-                        "7",
-                        "10",
-                        "10",
-                        "10"
-                    ]
-                },
-                {
-                    "Text": "SEQ-2-SDN-Multiplikator",
-                    "ConditionId": "",
-                    "Values": [
-                        "244%",
-                        "269%",
-                        "293%",
-                        "318%",
-                        "342%",
-                        "367%",
-                        "391%",
-                        "415%",
-                        "440%",
-                        "470%",
-                        "507%",
-                        "550%"
-                    ]
-                },
-                {
-                    "Text": "SEQ 2 – Taumeln",
-                    "ConditionId": "",
-                    "Values": [
-                        "7",
-                        "7",
-                        "7",
-                        "7",
-                        "7",
-                        "7",
-                        "7",
-                        "7",
-                        "7",
-                        "10",
-                        "10",
-                        "10"
-                    ]
-                }
-            ]
-        },
         "chr_0007_ikut_NormalAttack": {
             "Icon": "skillicon/icon_attack_sword",
             "Element": "Physical",
@@ -393,9 +133,9 @@
             "Desc": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>16</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlagangriffen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "STD-ANG-SEQ-1-Multiplikator",
@@ -524,6 +264,266 @@
                     ]
                 }
             ]
+        },
+        "chr_0007_ikut_NormalSkill": {
+            "Icon": "skillicon/icon_skill_ikut_01",
+            "Element": "Pulse",
+            "Name": "Stürmischer Bogen",
+            "Desc": "Springt sofort an die Seite des Gegners, um 2 Hiebe zu entfesseln, die etwas <@ba.pd>Physischen SDN</> verursachen. Wenn der Gegner mit einer aktiven <#ba.conduct>Elektrifizierung</> belegt ist, wird seine <#ba.conduct>Elektrifizierung</> <#ba.consume>verbraucht</>, um einen zusätzlichen Angriff auszuführen, der <@ba.pulse>Elektrischen SDN</> verursacht und einige FP wiederherstellt.",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "FP-Kosten",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "SEQ-1-SDN-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "45%",
+                        "50%",
+                        "54%",
+                        "59%",
+                        "63%",
+                        "68%",
+                        "72%",
+                        "77%",
+                        "81%",
+                        "87%",
+                        "93%",
+                        "101%"
+                    ]
+                },
+                {
+                    "Text": "SEQ-2-SDN-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "45%",
+                        "50%",
+                        "54%",
+                        "59%",
+                        "63%",
+                        "68%",
+                        "72%",
+                        "77%",
+                        "81%",
+                        "87%",
+                        "93%",
+                        "101%"
+                    ]
+                },
+                {
+                    "Text": "SEQ 2 – Taumeln",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "Zusätzlicher ANG-SDN-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "180%",
+                        "198%",
+                        "216%",
+                        "234%",
+                        "252%",
+                        "270%",
+                        "288%",
+                        "306%",
+                        "324%",
+                        "347%",
+                        "374%",
+                        "405%"
+                    ]
+                },
+                {
+                    "Text": "Zusätzliches ANG-Taumeln",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "FP-Wiederherstellung",
+                    "ConditionId": "",
+                    "Values": [
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "35",
+                        "35",
+                        "35",
+                        "35",
+                        "35",
+                        "35",
+                        "40"
+                    ]
+                }
+            ]
+        },
+        "chr_0007_ikut_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_ikut_01",
+            "Element": "Pulse",
+            "Name": "Explodierender Blitz",
+            "Desc": "Führt einen kurzen Vorwärtssprint aus, während er von Elektrizitätsbögen umhüllt ist, um <@ba.pulse>Elektrischen SDN</> zu verursachen und allen getroffenen Gegnern <#ba.pulseinflict>Elektrik</> zuzufügen. Die Bögen explodieren nach kurzer Zeit und verursachen einen weiteren Treffer mit <@ba.pulse>Elektrischem SDN</>. Falls <#ba.pulseinflict>Elektrik</> auf dem Gegner aktiv ist, wird <#ba.pulseinflict>Elektrik</> <#ba.consume>verbraucht</> und <#ba.conduct>Elektrifizieren</> verursacht.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 15.0,
+            "CostType": "UltimateSp",
+            "CostValue": 90.0,
+            "Params": [
+                {
+                    "Text": "Ultimative Energiekosten",
+                    "ConditionId": "",
+                    "Values": [
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0
+                    ]
+                },
+                {
+                    "Text": "Abklingzeit",
+                    "ConditionId": "",
+                    "Values": [
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek."
+                    ]
+                },
+                {
+                    "Text": "SEQ-1-SDN-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "156%",
+                        "171%",
+                        "187%",
+                        "202%",
+                        "218%",
+                        "234%",
+                        "249%",
+                        "265%",
+                        "280%",
+                        "300%",
+                        "323%",
+                        "350%"
+                    ]
+                },
+                {
+                    "Text": "SEQ 1 – Taumeln",
+                    "ConditionId": "",
+                    "Values": [
+                        "7",
+                        "7",
+                        "7",
+                        "7",
+                        "7",
+                        "7",
+                        "7",
+                        "7",
+                        "7",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "SEQ-2-SDN-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "244%",
+                        "269%",
+                        "293%",
+                        "318%",
+                        "342%",
+                        "367%",
+                        "391%",
+                        "415%",
+                        "440%",
+                        "470%",
+                        "507%",
+                        "550%"
+                    ]
+                },
+                {
+                    "Text": "SEQ 2 – Taumeln",
+                    "ConditionId": "",
+                    "Values": [
+                        "7",
+                        "7",
+                        "7",
+                        "7",
+                        "7",
+                        "7",
+                        "7",
+                        "7",
+                        "7",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
         }
     },
     "NodeSkillMap": {
@@ -535,11 +535,43 @@
             "Desc": "Kampffertigkeit <@ba.key>Stürmischer Bogen</> verbessert: Wird der zusätzliche Effekt <@ba.key>3</>-mal ausgelöst, erhält das Team <@ba.vup>+0.05%</> verursachten <@ba.pulse>Elektrischen SDN</> für jeden Punkt Intellekt von Arclight. Dieser Effekt dauert <@ba.vup>15</> Sek. und kann nicht kumuliert werden.",
             "Type": 4
         },
+        "chr_0007_ikut_passive_skill_0_2": {
+            "Icon": "icon_talent_ikut_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Wildtrekker",
+            "Desc": "Kampffertigkeit <@ba.key>Stürmischer Bogen</> verbessert: Wird der zusätzliche Effekt <@ba.key>3</>-mal ausgelöst, erhält das Team <@ba.vup>+0.08%</> verursachten <@ba.pulse>Elektrischen SDN</> für jeden Punkt Intellekt von Arclight. Dieser Effekt dauert <@ba.vup>15</> Sek. und kann nicht kumuliert werden.",
+            "Type": 4
+        },
+        "chr_0007_ikut_passive_skill_1_1": {
+            "Icon": "icon_talent_ikut_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Hannabit-Weisheit",
+            "Desc": "<@ba.vup>30%</>-Chance, die <#ba.spellinflictonchar>Technikkumulierung</>, mit der sie belegt wird, zu ignorieren.",
+            "Type": 4
+        },
+        "chr_0007_ikut_passive_skill_1_2": {
+            "Icon": "icon_talent_ikut_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Hannabit-Weisheit",
+            "Desc": "<@ba.vup>50%</>-Chance, die <#ba.spellinflictonchar>Technikkumulierung</>, mit der sie belegt wird, zu ignorieren.",
+            "Type": 4
+        },
         "fac_chr_0007_ikut_0_1": {
             "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
             "Name": "Klinge der Wildnis α",
             "Desc": "Der Herstellungskabine zuweisen, um Waffen-EP-Materialproduktionseffizienz um +10 % zu erhöhen.",
             "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0007_ikut_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Klinge der Wildnis β",
+            "Desc": "Der Herstellungskabine zuweisen, um Waffen-EP-Materialproduktionseffizienz um +20 % zu erhöhen.",
+            "Level": 2,
             "Index": 2,
             "Type": 5
         },
@@ -558,38 +590,6 @@
             "Level": 2,
             "Index": 3,
             "Type": 5
-        },
-        "chr_0007_ikut_passive_skill_0_2": {
-            "Icon": "icon_talent_ikut_01",
-            "Level": 2,
-            "Index": 0,
-            "Name": "Wildtrekker",
-            "Desc": "Kampffertigkeit <@ba.key>Stürmischer Bogen</> verbessert: Wird der zusätzliche Effekt <@ba.key>3</>-mal ausgelöst, erhält das Team <@ba.vup>+0.08%</> verursachten <@ba.pulse>Elektrischen SDN</> für jeden Punkt Intellekt von Arclight. Dieser Effekt dauert <@ba.vup>15</> Sek. und kann nicht kumuliert werden.",
-            "Type": 4
-        },
-        "fac_chr_0007_ikut_0_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
-            "Name": "Klinge der Wildnis β",
-            "Desc": "Der Herstellungskabine zuweisen, um Waffen-EP-Materialproduktionseffizienz um +20 % zu erhöhen.",
-            "Level": 2,
-            "Index": 2,
-            "Type": 5
-        },
-        "chr_0007_ikut_passive_skill_1_1": {
-            "Icon": "icon_talent_ikut_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "Hannabit-Weisheit",
-            "Desc": "<@ba.vup>30%</>-Chance, die <#ba.spellinflictonchar>Technikkumulierung</>, mit der sie belegt wird, zu ignorieren.",
-            "Type": 4
-        },
-        "chr_0007_ikut_passive_skill_1_2": {
-            "Icon": "icon_talent_ikut_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "Hannabit-Weisheit",
-            "Desc": "<@ba.vup>50%</>-Chance, die <#ba.spellinflictonchar>Technikkumulierung</>, mit der sie belegt wird, zu ignorieren.",
-            "Type": 4
         }
     },
     "Potentials": {

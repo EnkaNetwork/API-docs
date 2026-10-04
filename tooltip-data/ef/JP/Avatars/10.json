@@ -9,65 +9,65 @@
     "MainAttrId": 41,
     "SubAttrId": 42,
     "AttributeNodes": {
-        "chr_0004_pelica_7": {
-            "41": 20
-        },
-        "chr_0004_pelica_5": {
-            "41": 15
+        "chr_0004_pelica_1": {
+            "41": 10.0
         },
         "chr_0004_pelica_3": {
-            "41": 15
+            "41": 15.0
         },
-        "chr_0004_pelica_1": {
-            "41": 10
+        "chr_0004_pelica_5": {
+            "41": 15.0
+        },
+        "chr_0004_pelica_7": {
+            "41": 20.0
         }
     },
     "SkillInfoMap": {
-        "chr_0004_pelica_NormalSkill": {
-            "Icon": "skillicon/icon_skill_pelica_01",
+        "chr_0004_pelica_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_pelica_01",
             "Element": "Pulse",
-            "Name": "協約ω：雷撃",
-            "Desc": "放出した電磁エネルギーを空中から落とし、一定範囲内の敵に<@ba.pulse>電磁ダメージ</>を与え、<#ba.pulseinflict>電磁付着</>を付与する。",
+            "Name": "即時協約：閃光鎖",
+            "Desc": "操作中のオペレーターが敵に<#ba.lastcombo>重攻撃</>を与えると発動可能。\n蓄積された電磁エネルギーを放出して敵を攻撃し、<@ba.pulse>電磁ダメージ</>を与え、強制的に短時間<#ba.conduct>感電</>状態にする。",
             "ConditionData": {},
-            "Type": 1,
-            "Cooldown": 0,
-            "CostType": "Atb",
-            "CostValue": 100,
+            "Type": 2,
+            "Cooldown": 20.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
             "Params": [
                 {
-                    "Text": "SP消費",
+                    "Text": "クールタイム",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒"
                     ]
                 },
                 {
                     "Text": "ダメージ倍率",
                     "ConditionId": "",
                     "Values": [
-                        "178%",
-                        "196%",
-                        "213%",
-                        "231%",
-                        "249%",
-                        "267%",
-                        "285%",
-                        "302%",
-                        "320%",
-                        "342%",
-                        "369%",
-                        "400%"
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
                     ]
                 },
                 {
@@ -87,90 +87,41 @@
                         "10",
                         "10"
                     ]
-                }
-            ]
-        },
-        "chr_0004_pelica_UltimateSkill": {
-            "Icon": "skillicon/icon_ultimate_skill_pelica_01",
-            "Element": "Pulse",
-            "Name": "協約ε：70.41κ",
-            "Desc": "巨大な軌道浮遊物を転送し、目標エリアに壊滅的な攻撃を行う。範囲内の敵に高い<@ba.pulse>電磁ダメージ</>を与える。",
-            "ConditionData": {},
-            "Type": 3,
-            "Cooldown": 10,
-            "CostType": "UltimateSp",
-            "CostValue": 80,
-            "Params": [
+                },
                 {
-                    "Text": "必殺チャージ消費",
+                    "Text": "感電時間（秒）",
                     "ConditionId": "",
                     "Values": [
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
                     ]
                 },
                 {
-                    "Text": "クールタイム",
+                    "Text": "必殺チャージ回復量",
                     "ConditionId": "",
                     "Values": [
-                        "10秒",
-                        "10秒",
-                        "10秒",
-                        "10秒",
-                        "10秒",
-                        "10秒",
-                        "10秒",
-                        "10秒",
-                        "10秒",
-                        "10秒",
-                        "10秒",
-                        "10秒"
-                    ]
-                },
-                {
-                    "Text": "ダメージ倍率",
-                    "ConditionId": "",
-                    "Values": [
-                        "445%",
-                        "489%",
-                        "534%",
-                        "578%",
-                        "622%",
-                        "667%",
-                        "711%",
-                        "756%",
-                        "800%",
-                        "856%",
-                        "923%",
-                        "1000%"
-                    ]
-                },
-                {
-                    "Text": "ブレイク値",
-                    "ConditionId": "",
-                    "Values": [
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20"
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
                     ]
                 }
             ]
@@ -182,9 +133,9 @@
             "Desc": "通常攻撃：\n最大4段の攻撃で敵に<@ba.pulse>電磁ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>15</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pulse>電磁ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pulse>電磁ダメージ</>を与えてSPを一定量回復する。",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "通常攻撃1段目ダメージ倍率",
@@ -296,51 +247,51 @@
                 }
             ]
         },
-        "chr_0004_pelica_ComboSkill": {
-            "Icon": "skillicon/icon_combo_skill_pelica_01",
+        "chr_0004_pelica_NormalSkill": {
+            "Icon": "skillicon/icon_skill_pelica_01",
             "Element": "Pulse",
-            "Name": "即時協約：閃光鎖",
-            "Desc": "操作中のオペレーターが敵に<#ba.lastcombo>重攻撃</>を与えると発動可能。\n蓄積された電磁エネルギーを放出して敵を攻撃し、<@ba.pulse>電磁ダメージ</>を与え、強制的に短時間<#ba.conduct>感電</>状態にする。",
+            "Name": "協約ω：雷撃",
+            "Desc": "放出した電磁エネルギーを空中から落とし、一定範囲内の敵に<@ba.pulse>電磁ダメージ</>を与え、<#ba.pulseinflict>電磁付着</>を付与する。",
             "ConditionData": {},
-            "Type": 2,
-            "Cooldown": 20,
-            "CostType": "UltimateSp",
-            "CostValue": 0,
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 100.0,
             "Params": [
                 {
-                    "Text": "クールタイム",
+                    "Text": "SP消費",
                     "ConditionId": "",
                     "Values": [
-                        "20秒",
-                        "20秒",
-                        "20秒",
-                        "20秒",
-                        "20秒",
-                        "20秒",
-                        "20秒",
-                        "20秒",
-                        "20秒",
-                        "20秒",
-                        "20秒",
-                        "20秒"
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
                     "Text": "ダメージ倍率",
                     "ConditionId": "",
                     "Values": [
-                        "80%",
-                        "88%",
-                        "96%",
-                        "104%",
-                        "112%",
-                        "120%",
-                        "128%",
-                        "136%",
-                        "144%",
-                        "154%",
-                        "166%",
-                        "180%"
+                        "178%",
+                        "196%",
+                        "213%",
+                        "231%",
+                        "249%",
+                        "267%",
+                        "285%",
+                        "302%",
+                        "320%",
+                        "342%",
+                        "369%",
+                        "400%"
                     ]
                 },
                 {
@@ -360,69 +311,102 @@
                         "10",
                         "10"
                     ]
-                },
+                }
+            ]
+        },
+        "chr_0004_pelica_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_pelica_01",
+            "Element": "Pulse",
+            "Name": "協約ε：70.41κ",
+            "Desc": "巨大な軌道浮遊物を転送し、目標エリアに壊滅的な攻撃を行う。範囲内の敵に高い<@ba.pulse>電磁ダメージ</>を与える。",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 10.0,
+            "CostType": "UltimateSp",
+            "CostValue": 80.0,
+            "Params": [
                 {
-                    "Text": "感電時間（秒）",
+                    "Text": "必殺チャージ消費",
                     "ConditionId": "",
                     "Values": [
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5"
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0
                     ]
                 },
                 {
-                    "Text": "必殺チャージ回復量",
+                    "Text": "クールタイム",
                     "ConditionId": "",
                     "Values": [
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10"
+                        "10秒",
+                        "10秒",
+                        "10秒",
+                        "10秒",
+                        "10秒",
+                        "10秒",
+                        "10秒",
+                        "10秒",
+                        "10秒",
+                        "10秒",
+                        "10秒",
+                        "10秒"
+                    ]
+                },
+                {
+                    "Text": "ダメージ倍率",
+                    "ConditionId": "",
+                    "Values": [
+                        "445%",
+                        "489%",
+                        "534%",
+                        "578%",
+                        "622%",
+                        "667%",
+                        "711%",
+                        "756%",
+                        "800%",
+                        "856%",
+                        "923%",
+                        "1000%"
+                    ]
+                },
+                {
+                    "Text": "ブレイク値",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
                     ]
                 }
             ]
         }
     },
     "NodeSkillMap": {
-        "fac_chr_0004_pelica_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
-            "Name": "協約調達・β",
-            "Desc": "製造室配属時、武器経験値素材の製造効率+20%",
+        "chr_0004_pelica_passive_skill_0_1": {
+            "Icon": "icon_talent_pelica_01",
             "Level": 1,
-            "Index": 3,
-            "Type": 5
-        },
-        "fac_chr_0004_pelica_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
-            "Name": "協約調達・γ",
-            "Desc": "製造室配属時、武器経験値素材の製造効率+30%",
-            "Level": 2,
-            "Index": 3,
-            "Type": 5
-        },
-        "chr_0004_pelica_passive_skill_1_1": {
-            "Icon": "icon_talent_pelica_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "循環協約",
-            "Desc": "連携技<@ba.key>「即時協約：閃光鎖」</>が<#ba.noguard>クラッシュ</>状態の敵に命中するとき、1回連鎖して攻撃する",
+            "Index": 0,
+            "Name": "殲滅協約",
+            "Desc": "<@ba.poise>ブレイク</>状態の敵へのダメージ<@ba.vup>+20%</>",
             "Type": 4
         },
         "chr_0004_pelica_passive_skill_0_2": {
@@ -433,12 +417,12 @@
             "Desc": "<@ba.poise>ブレイク</>状態の敵へのダメージ<@ba.vup>+30%</>",
             "Type": 4
         },
-        "chr_0004_pelica_passive_skill_0_1": {
-            "Icon": "icon_talent_pelica_01",
+        "chr_0004_pelica_passive_skill_1_1": {
+            "Icon": "icon_talent_pelica_02",
             "Level": 1,
-            "Index": 0,
-            "Name": "殲滅協約",
-            "Desc": "<@ba.poise>ブレイク</>状態の敵へのダメージ<@ba.vup>+20%</>",
+            "Index": 1,
+            "Name": "循環協約",
+            "Desc": "連携技<@ba.key>「即時協約：閃光鎖」</>が<#ba.noguard>クラッシュ</>状態の敵に命中するとき、1回連鎖して攻撃する",
             "Type": 4
         },
         "fac_chr_0004_pelica_0_1": {
@@ -455,6 +439,22 @@
             "Desc": "指揮中枢配属時、全員の体力回復+12%",
             "Level": 2,
             "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0004_pelica_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "協約調達・β",
+            "Desc": "製造室配属時、武器経験値素材の製造効率+20%",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0004_pelica_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "協約調達・γ",
+            "Desc": "製造室配属時、武器経験値素材の製造効率+30%",
+            "Level": 2,
+            "Index": 3,
             "Type": 5
         }
     },

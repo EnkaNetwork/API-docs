@@ -10,122 +10,19 @@
     "SubAttrId": 42,
     "AttributeNodes": {
         "chr_0014_aurora_1": {
-            "39": 10
+            "39": 10.0
         },
         "chr_0014_aurora_3": {
-            "39": 15
+            "39": 15.0
         },
         "chr_0014_aurora_5": {
-            "39": 15
+            "39": 15.0
         },
         "chr_0014_aurora_7": {
-            "39": 20
+            "39": 20.0
         }
     },
     "SkillInfoMap": {
-        "chr_0014_aurora_NormalSkill": {
-            "Icon": "skillicon/icon_skill_aurora_01",
-            "Element": "Cryst",
-            "Name": "Gesättigte Verteidigung",
-            "Desc": "Aktiviert einen Schild, der Angriffe abwehren kann, dem Operator und Operatoren in der Nähe <#ba.guard>Schutz</> gewährt und sofort einige FP <#ba.return>wiederherstellt</>. \nWenn du angegriffen wirst, während der Schild aktiv ist, führst du einen Vergeltungsschlag aus, der <@ba.cryst>Kryo-SDN</> verursacht und den angreifenden Gegner mit <#ba.crystinflict>Kryo</> belegt.",
-            "ConditionData": {},
-            "Type": 1,
-            "Cooldown": 0,
-            "CostType": "Atb",
-            "CostValue": 100,
-            "Params": [
-                {
-                    "Text": "FP-Kosten",
-                    "ConditionId": "",
-                    "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
-                    ]
-                },
-                {
-                    "Text": "SDN-Multiplikator",
-                    "ConditionId": "",
-                    "Values": [
-                        "200%",
-                        "220%",
-                        "240%",
-                        "260%",
-                        "280%",
-                        "300%",
-                        "320%",
-                        "340%",
-                        "360%",
-                        "385%",
-                        "415%",
-                        "450%"
-                    ]
-                },
-                {
-                    "Text": "Taumeln",
-                    "ConditionId": "",
-                    "Values": [
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20"
-                    ]
-                },
-                {
-                    "Text": "Schutz",
-                    "ConditionId": "",
-                    "Values": [
-                        "90%",
-                        "90%",
-                        "90%",
-                        "90%",
-                        "90%",
-                        "90%",
-                        "90%",
-                        "90%",
-                        "90%",
-                        "90%",
-                        "90%",
-                        "90%"
-                    ]
-                },
-                {
-                    "Text": "FP-Rückerstattung",
-                    "ConditionId": "",
-                    "Values": [
-                        "30",
-                        "30",
-                        "30",
-                        "30",
-                        "30",
-                        "30",
-                        "30",
-                        "30",
-                        "30",
-                        "30",
-                        "30",
-                        "30"
-                    ]
-                }
-            ]
-        },
         "chr_0014_aurora_ComboSkill": {
             "Icon": "skillicon/icon_combo_skill_aurora_01",
             "Element": "Cryst",
@@ -133,9 +30,9 @@
             "Desc": "KOMBOAUSLÖSER: Wenn der gesteuerte Operator angegriffen wird und auf weniger als 60% LP fällt. \nSnowshine wirft einen Schneefeld-R-Team-Assistenten zum gesteuerten Operator. Bei Kontakt bewirkt der Assistent bei nahen Operatoren sofort eine umfangreiche <@ba.heal>LP-Behandlung</> und bei Operatoren im Wirkungsbereich eine kontinuierliche <@ba.heal>LP-Behandlung</>. \nDie Wirksamkeit der LP-Behandlung erhöht sich durch das Wille-Attribut.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 25,
+            "Cooldown": 25.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Abklingzeit",
@@ -290,9 +187,9 @@
             "Desc": "STANDARDANGRIFF: \nEin Angriff mit bis zu 3 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>23</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlagangriffen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "STD-ANG-SEQ-1-Multiplikator",
@@ -386,6 +283,109 @@
                 }
             ]
         },
+        "chr_0014_aurora_NormalSkill": {
+            "Icon": "skillicon/icon_skill_aurora_01",
+            "Element": "Cryst",
+            "Name": "Gesättigte Verteidigung",
+            "Desc": "Aktiviert einen Schild, der Angriffe abwehren kann, dem Operator und Operatoren in der Nähe <#ba.guard>Schutz</> gewährt und sofort einige FP <#ba.return>wiederherstellt</>. \nWenn du angegriffen wirst, während der Schild aktiv ist, führst du einen Vergeltungsschlag aus, der <@ba.cryst>Kryo-SDN</> verursacht und den angreifenden Gegner mit <#ba.crystinflict>Kryo</> belegt.",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "FP-Kosten",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "SDN-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "200%",
+                        "220%",
+                        "240%",
+                        "260%",
+                        "280%",
+                        "300%",
+                        "320%",
+                        "340%",
+                        "360%",
+                        "385%",
+                        "415%",
+                        "450%"
+                    ]
+                },
+                {
+                    "Text": "Taumeln",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Schutz",
+                    "ConditionId": "",
+                    "Values": [
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%"
+                    ]
+                },
+                {
+                    "Text": "FP-Rückerstattung",
+                    "ConditionId": "",
+                    "Values": [
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30"
+                    ]
+                }
+            ]
+        },
         "chr_0014_aurora_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_aurora_01",
             "Element": "Cryst",
@@ -393,26 +393,26 @@
             "Desc": "Springt mit einem Raketenrucksack in die Luft und schlägt dann mit ihrem Schild auf, um Gegnern im Wirkungsbereich massiven <@ba.cryst>Kryo-SDN</> zuzufügen. Erzeugt außerdem eine <@ba.key>Schneezone</> (die mehrere Sekunden lang anhält), die Gegnern kontinuierlichen <@ba.cryst>Kryo-SDN</> zufügt. Die <@ba.key>Schneezone</> belegt Gegner, die darin gefangen sind, für einen bestimmten Zeitraum mit <#ba.frozen>Erstarrung</>.",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 20,
+            "Cooldown": 20.0,
             "CostType": "UltimateSp",
-            "CostValue": 80,
+            "CostValue": 80.0,
             "Params": [
                 {
                     "Text": "Ultimative Energiekosten",
                     "ConditionId": "",
                     "Values": [
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0
                     ]
                 },
                 {
@@ -527,12 +527,12 @@
         }
     },
     "NodeSkillMap": {
-        "chr_0014_aurora_passive_skill_1_1": {
-            "Icon": "icon_talent_aurora_02",
+        "chr_0014_aurora_passive_skill_0_1": {
+            "Icon": "icon_talent_aurora_01",
             "Level": 1,
-            "Index": 1,
-            "Name": "Rettungsprofi",
-            "Desc": "Kampffertigkeit <@ba.key>Gesättigte Verteidigung</> verbessert: Nach einem erfolgreiche Kontern eines gegnerischen Angriffs erhält Snowshine zusätzlich <@ba.vup>6</> Ultimative Energie.",
+            "Index": 0,
+            "Name": "Polares Überleben",
+            "Desc": "Behandlungseffekt <@ba.heal>+15%</> für Ziele mit maximal 45% LP.",
             "Type": 4
         },
         "chr_0014_aurora_passive_skill_0_2": {
@@ -543,20 +543,28 @@
             "Desc": "Behandlungseffekt <@ba.heal>+25%</> für Ziele mit maximal 55% LP.",
             "Type": 4
         },
-        "chr_0014_aurora_passive_skill_0_1": {
-            "Icon": "icon_talent_aurora_01",
+        "chr_0014_aurora_passive_skill_1_1": {
+            "Icon": "icon_talent_aurora_02",
             "Level": 1,
-            "Index": 0,
-            "Name": "Polares Überleben",
-            "Desc": "Behandlungseffekt <@ba.heal>+15%</> für Ziele mit maximal 45% LP.",
+            "Index": 1,
+            "Name": "Rettungsprofi",
+            "Desc": "Kampffertigkeit <@ba.key>Gesättigte Verteidigung</> verbessert: Nach einem erfolgreiche Kontern eines gegnerischen Angriffs erhält Snowshine zusätzlich <@ba.vup>6</> Ultimative Energie.",
             "Type": 4
         },
-        "fac_chr_0014_aurora_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
-            "Name": "Sorgenfrei γ",
-            "Desc": "Dem Kontrollnexus zuweisen, um allen Operatoren Stimmungszunahme +16 % zu gewähren.",
+        "chr_0014_aurora_passive_skill_1_2": {
+            "Icon": "icon_talent_aurora_02",
             "Level": 2,
-            "Index": 3,
+            "Index": 1,
+            "Name": "Rettungsprofi",
+            "Desc": "Kampffertigkeit <@ba.key>Gesättigte Verteidigung</> verbessert: Nach einem erfolgreiche Kontern eines gegnerischen Angriffs erhält Snowshine zusätzlich <@ba.vup>10</> Ultimative Energie.",
+            "Type": 4
+        },
+        "fac_chr_0014_aurora_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
+            "Name": "Rettungsausdauer α",
+            "Desc": "Der Herstellungskabine zuweisen, um Stimmungsverlust aller Operatoren in der Kabine um 10 % zu verlangsamen.",
+            "Level": 1,
+            "Index": 2,
             "Type": 5
         },
         "fac_chr_0014_aurora_0_2": {
@@ -564,14 +572,6 @@
             "Name": "Rettungsausdauer β",
             "Desc": "Der Herstellungskabine zuweisen, um Stimmungsverlust aller Operatoren in der Kabine um 14 % zu verlangsamen.",
             "Level": 2,
-            "Index": 2,
-            "Type": 5
-        },
-        "fac_chr_0014_aurora_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
-            "Name": "Rettungsausdauer α",
-            "Desc": "Der Herstellungskabine zuweisen, um Stimmungsverlust aller Operatoren in der Kabine um 10 % zu verlangsamen.",
-            "Level": 1,
             "Index": 2,
             "Type": 5
         },
@@ -583,13 +583,13 @@
             "Index": 3,
             "Type": 5
         },
-        "chr_0014_aurora_passive_skill_1_2": {
-            "Icon": "icon_talent_aurora_02",
+        "fac_chr_0014_aurora_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "Sorgenfrei γ",
+            "Desc": "Dem Kontrollnexus zuweisen, um allen Operatoren Stimmungszunahme +16 % zu gewähren.",
             "Level": 2,
-            "Index": 1,
-            "Name": "Rettungsprofi",
-            "Desc": "Kampffertigkeit <@ba.key>Gesättigte Verteidigung</> verbessert: Nach einem erfolgreiche Kontern eines gegnerischen Angriffs erhält Snowshine zusätzlich <@ba.vup>10</> Ultimative Energie.",
-            "Type": 4
+            "Index": 3,
+            "Type": 5
         }
     },
     "Potentials": {

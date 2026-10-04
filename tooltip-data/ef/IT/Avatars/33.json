@@ -9,17 +9,17 @@
     "MainAttrId": 41,
     "SubAttrId": 39,
     "AttributeNodes": {
-        "chr_0023_antal_3": {
-            "41": 15
-        },
         "chr_0023_antal_1": {
-            "41": 10
+            "41": 10.0
+        },
+        "chr_0023_antal_3": {
+            "41": 15.0
         },
         "chr_0023_antal_5": {
-            "41": 15
+            "41": 15.0
         },
         "chr_0023_antal_7": {
-            "41": 20
+            "41": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "ATTIVAZIONE COMBO: quando un nemico con <@ba.key>Concentrazione</> attiva subisce uno <#ba.physicalstatus>stato fisico</> o un'<#ba.spellinflict>Afflizione da Arti</>. \nAttiva 1 esplosione di energia sul nemico che infligge <@ba.pulse>danni da elettricità</> e applica un altro accumulo del medesimo <#ba.physicalstatus>stato fisico</> o <#ba.spellinflict>Afflizione da Arti</>.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 25,
+            "Cooldown": 25.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Tempo di recupero",
@@ -115,9 +115,9 @@
             "Desc": "ATTACCO BASE: \nsequenza di massimo quattro attacchi che infliggono <@ba.pulse>danni da elettricità</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>15</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pulse>danni da elettricità</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pulse>danni da elettricità</> e ripristinano parzialmente i PA.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Moltiplicatore SEQ ATTB 1",
@@ -229,109 +229,6 @@
                 }
             ]
         },
-        "chr_0023_antal_UltimateSkill": {
-            "Icon": "skillicon/icon_ultimate_skill_antal_01",
-            "Element": "Pulse",
-            "Name": "Momento ultraperformante",
-            "Desc": "Applica temporaneamente <#ba.pulseenhance>Amplificazione elettrica</> e <#ba.fireenhance>Amplificazione di fuoco</> all'intera squadra.",
-            "ConditionData": {},
-            "Type": 3,
-            "Cooldown": 20,
-            "CostType": "UltimateSp",
-            "CostValue": 100,
-            "Params": [
-                {
-                    "Text": "Costo energia suprema",
-                    "ConditionId": "",
-                    "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
-                    ]
-                },
-                {
-                    "Text": "Tempo di recupero",
-                    "ConditionId": "",
-                    "Values": [
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s"
-                    ]
-                },
-                {
-                    "Text": "Amplificazione elettrica",
-                    "ConditionId": "",
-                    "Values": [
-                        "8%",
-                        "9%",
-                        "10%",
-                        "11%",
-                        "12%",
-                        "13%",
-                        "14%",
-                        "15%",
-                        "16%",
-                        "17%",
-                        "18%",
-                        "20%"
-                    ]
-                },
-                {
-                    "Text": "Amplificazione di fuoco",
-                    "ConditionId": "",
-                    "Values": [
-                        "8%",
-                        "9%",
-                        "10%",
-                        "11%",
-                        "12%",
-                        "13%",
-                        "14%",
-                        "15%",
-                        "16%",
-                        "17%",
-                        "18%",
-                        "20%"
-                    ]
-                },
-                {
-                    "Text": "Durata (s)",
-                    "ConditionId": "",
-                    "Values": [
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12"
-                    ]
-                }
-            ]
-        },
         "chr_0023_antal_NormalSkill": {
             "Icon": "skillicon/icon_skill_antal_01",
             "Element": "Pulse",
@@ -339,26 +236,26 @@
             "Desc": "Applica <@ba.key>Concentrazione</> con una durata prolungata al nemico e infligge <@ba.pulse>danni da elettricità</>. Un nemico con <@ba.key>Concentrazione</> attiva subisce anche <#ba.pulsevul>Suscettibilità all'elettricità</> e <#ba.firevul>Suscettibilità al fuoco</>. <@ba.key>Concentrazione</> può essere applicata solo a un nemico per volta.",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "Costo PA",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -434,55 +331,118 @@
                     ]
                 }
             ]
+        },
+        "chr_0023_antal_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_antal_01",
+            "Element": "Pulse",
+            "Name": "Momento ultraperformante",
+            "Desc": "Applica temporaneamente <#ba.pulseenhance>Amplificazione elettrica</> e <#ba.fireenhance>Amplificazione di fuoco</> all'intera squadra.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 20.0,
+            "CostType": "UltimateSp",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "Costo energia suprema",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "Tempo di recupero",
+                    "ConditionId": "",
+                    "Values": [
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s"
+                    ]
+                },
+                {
+                    "Text": "Amplificazione elettrica",
+                    "ConditionId": "",
+                    "Values": [
+                        "8%",
+                        "9%",
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "20%"
+                    ]
+                },
+                {
+                    "Text": "Amplificazione di fuoco",
+                    "ConditionId": "",
+                    "Values": [
+                        "8%",
+                        "9%",
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "20%"
+                    ]
+                },
+                {
+                    "Text": "Durata (s)",
+                    "ConditionId": "",
+                    "Values": [
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12"
+                    ]
+                }
+            ]
         }
     },
     "NodeSkillMap": {
-        "chr_0023_antal_passive_skill_1_2": {
-            "Icon": "icon_talent_antal_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "Atto inconscio",
-            "Desc": "Ottiene un <@ba.vup>30%</> di probabilità di immunità ai <@ba.pd>danni fisici</> e si ripristina PS pari a <@ba.heal>(45 + Forza x0.38)</>.",
-            "Type": 4
-        },
-        "fac_chr_0023_antal_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
-            "Name": "Giocoleria di parole β",
-            "Desc": "Assegna alla camera di coltivazione per rallentare del 14% il calo dell'umore di tutti gli operatori al suo interno.",
-            "Level": 1,
-            "Index": 3,
-            "Type": 5
-        },
         "chr_0023_antal_passive_skill_0_1": {
             "Icon": "icon_talent_antal_01",
             "Level": 1,
             "Index": 0,
             "Name": "Improvvisazione",
             "Desc": "Dopo che l'abilità di un compagno di squadra soggetto ad <#ba.enhance>Amplificazione</> infligge danni, Antal ripristina a quel compagno PS pari a <@ba.heal>(72 + Forza x 0.6)</>. Questo effetto di ripristino di PS si attiva una sola volta ogni <@ba.vup>30</> s per ogni operatore.",
-            "Type": 4
-        },
-        "fac_chr_0023_antal_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
-            "Name": "Unità delle Arti sperimentali α",
-            "Desc": "Assegna alla cabina di produzione per aumentare del 10% l'efficienza di produzione dei materiali per l'ESP delle armi.",
-            "Level": 1,
-            "Index": 2,
-            "Type": 5
-        },
-        "fac_chr_0023_antal_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
-            "Name": "Giocoleria di parole γ",
-            "Desc": "Assegna alla camera di coltivazione per rallentare del 18% il calo dell'umore di tutti gli operatori al suo interno.",
-            "Level": 2,
-            "Index": 3,
-            "Type": 5
-        },
-        "chr_0023_antal_passive_skill_1_1": {
-            "Icon": "icon_talent_antal_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "Atto inconscio",
-            "Desc": "Ottiene un <@ba.vup>30%</> di probabilità di immunità ai <@ba.pd>danni fisici</> e si ripristina PS pari a <@ba.heal>(27 + Forza x0.23)</>.",
             "Type": 4
         },
         "chr_0023_antal_passive_skill_0_2": {
@@ -493,12 +453,52 @@
             "Desc": "Dopo che l'abilità di un compagno di squadra soggetto ad <#ba.enhance>Amplificazione</> infligge danni, Antal ripristina a quel compagno PS pari a <@ba.heal>(108 + Forza x 0.9)</>. Questo effetto di ripristino di PS si attiva una sola volta ogni <@ba.vup>30</> s per ogni operatore.",
             "Type": 4
         },
+        "chr_0023_antal_passive_skill_1_1": {
+            "Icon": "icon_talent_antal_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Atto inconscio",
+            "Desc": "Ottiene un <@ba.vup>30%</> di probabilità di immunità ai <@ba.pd>danni fisici</> e si ripristina PS pari a <@ba.heal>(27 + Forza x0.23)</>.",
+            "Type": 4
+        },
+        "chr_0023_antal_passive_skill_1_2": {
+            "Icon": "icon_talent_antal_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Atto inconscio",
+            "Desc": "Ottiene un <@ba.vup>30%</> di probabilità di immunità ai <@ba.pd>danni fisici</> e si ripristina PS pari a <@ba.heal>(45 + Forza x0.38)</>.",
+            "Type": 4
+        },
+        "fac_chr_0023_antal_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Unità delle Arti sperimentali α",
+            "Desc": "Assegna alla cabina di produzione per aumentare del 10% l'efficienza di produzione dei materiali per l'ESP delle armi.",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
         "fac_chr_0023_antal_0_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
             "Name": "Unità delle Arti sperimentali β",
             "Desc": "Assegna alla cabina di produzione per aumentare del 20% l'efficienza di produzione dei materiali per l'ESP delle armi.",
             "Level": 2,
             "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0023_antal_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
+            "Name": "Giocoleria di parole β",
+            "Desc": "Assegna alla camera di coltivazione per rallentare del 14% il calo dell'umore di tutti gli operatori al suo interno.",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0023_antal_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
+            "Name": "Giocoleria di parole γ",
+            "Desc": "Assegna alla camera di coltivazione per rallentare del 18% il calo dell'umore di tutti gli operatori al suo interno.",
+            "Level": 2,
+            "Index": 3,
             "Type": 5
         }
     },

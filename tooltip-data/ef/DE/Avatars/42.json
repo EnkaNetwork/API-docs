@@ -10,19 +10,158 @@
     "SubAttrId": 42,
     "AttributeNodes": {
         "chr_0026_lastrite_1": {
-            "39": 10
+            "39": 10.0
         },
         "chr_0026_lastrite_3": {
-            "39": 15
+            "39": 15.0
         },
         "chr_0026_lastrite_5": {
-            "39": 15
+            "39": 15.0
         },
         "chr_0026_lastrite_7": {
-            "39": 20
+            "39": 20.0
         }
     },
     "SkillInfoMap": {
+        "chr_0026_lastrite_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_lastrite_01",
+            "Element": "Cryst",
+            "Name": "Verschlinger des Winters",
+            "Desc": "KOMBOAUSLÖSER: Ein Gegner hat 3 aktive <#ba.crystinflict>Kryo</>-Kumulierungen. \nUmhüllt den Zielgegner mit Eiszapfen und zersplittert sie. Dabei werden alle <#ba.crystinflict>Kryo</>-Kumulierungen des Gegners <#ba.consume>verbraucht</>. Je mehr <#ba.crystinflict>Kryo</>-Kumulierungen <#ba.consume>verbraucht</> werden, desto mehr <@ba.cryst>Kryo-SDN</> erleidet der Gegner und desto mehr Ultimative Energie erhält Last Rite.",
+            "ConditionData": {},
+            "Type": 2,
+            "Cooldown": 9.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Abklingzeit",
+                    "ConditionId": "",
+                    "Values": [
+                        "9Sek.",
+                        "9Sek.",
+                        "9Sek.",
+                        "9Sek.",
+                        "9Sek.",
+                        "9Sek.",
+                        "9Sek.",
+                        "9Sek.",
+                        "9Sek.",
+                        "9Sek.",
+                        "9Sek.",
+                        "9Sek."
+                    ]
+                },
+                {
+                    "Text": "Eissplitter-SDN-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "71%",
+                        "78%",
+                        "85%",
+                        "92%",
+                        "99%",
+                        "107%",
+                        "114%",
+                        "121%",
+                        "128%",
+                        "137%",
+                        "147%",
+                        "160%"
+                    ]
+                },
+                {
+                    "Text": "Hieb-Standard-SDN-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "71%",
+                        "78%",
+                        "85%",
+                        "92%",
+                        "99%",
+                        "107%",
+                        "114%",
+                        "121%",
+                        "128%",
+                        "137%",
+                        "147%",
+                        "160%"
+                    ]
+                },
+                {
+                    "Text": "Hieb-Taumeln",
+                    "ConditionId": "",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                },
+                {
+                    "Text": "Bonus-SDN-Multiplikator pro Zufügungskumulierung",
+                    "ConditionId": "",
+                    "Values": [
+                        "107%",
+                        "117%",
+                        "128%",
+                        "139%",
+                        "149%",
+                        "160%",
+                        "171%",
+                        "181%",
+                        "192%",
+                        "205%",
+                        "221%",
+                        "240%"
+                    ]
+                },
+                {
+                    "Text": "Ultimativer Grund-Energieerhalt",
+                    "ConditionId": "",
+                    "Values": [
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40"
+                    ]
+                },
+                {
+                    "Text": "Zusätzlicher Ultimativer-Energieerhalt pro Zufügungskumulierung",
+                    "ConditionId": "",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                }
+            ]
+        },
         "chr_0026_lastrite_NormalAttack": {
             "Icon": "skillicon/icon_attack_claym",
             "Element": "Cryst",
@@ -30,9 +169,9 @@
             "Desc": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.cryst>Kryo-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>25</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.cryst>Kryo-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.cryst>Kryo-SDN</> zufügen und ein wenig FP wiederherstellen.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "STD-ANG-SEQ-1-Multiplikator",
@@ -151,26 +290,26 @@
             "Desc": "Führt eine <@ba.key>Hypothermische Durchblutung</> an der Waffe des gesteuerten Operators durch und <#ba.return>stellt einige FP wieder her</>. \nWenn der gesteuerte Operator innerhalb eines bestimmten Zeitraums einen <#ba.lastcombo>Abschlussangriff</> ausführt, ruft Last Rite Trugbilder herbei, die einen zusätzlichen Angriff auf das Ziel ausführen. Dieser Angriff verursacht <@ba.cryst>Kryo-SDN</> und belegt das Ziel mit <#ba.crystinflict>Kryo</>. \nWenn der gesteuerte Operator Last Rite selbst ist, wird ihre Standardangriffssequenz durch diese Kampffertigkeit nicht zurückgesetzt.",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "FP-Kosten",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -254,26 +393,26 @@
             "Desc": "Last Rite hüllt sich in eine Frostrüstung und erschafft eine Eissense, mit der sie drei Hiebe ausführt. Solange dieser Zustand aktiv ist, ist sie immun gegen alle Arten von Schaden. \nJeder Hieb verursacht massiven <@ba.cryst>Kryo-SDN</>. \n<@ba.info>Last Rite erhält Ultimative Energie ausschließlich durch ihre eigenen Kampf- und Kombofertigkeiten.</>",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 20,
+            "Cooldown": 20.0,
             "CostType": "UltimateSp",
-            "CostValue": 240,
+            "CostValue": 240.0,
             "Params": [
                 {
                     "Text": "Ultimative Energiekosten",
                     "ConditionId": "",
                     "Values": [
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0
                     ]
                 },
                 {
@@ -403,163 +542,40 @@
                     ]
                 }
             ]
-        },
-        "chr_0026_lastrite_ComboSkill": {
-            "Icon": "skillicon/icon_combo_skill_lastrite_01",
-            "Element": "Cryst",
-            "Name": "Verschlinger des Winters",
-            "Desc": "KOMBOAUSLÖSER: Ein Gegner hat 3 aktive <#ba.crystinflict>Kryo</>-Kumulierungen. \nUmhüllt den Zielgegner mit Eiszapfen und zersplittert sie. Dabei werden alle <#ba.crystinflict>Kryo</>-Kumulierungen des Gegners <#ba.consume>verbraucht</>. Je mehr <#ba.crystinflict>Kryo</>-Kumulierungen <#ba.consume>verbraucht</> werden, desto mehr <@ba.cryst>Kryo-SDN</> erleidet der Gegner und desto mehr Ultimative Energie erhält Last Rite.",
-            "ConditionData": {},
-            "Type": 2,
-            "Cooldown": 9,
-            "CostType": "UltimateSp",
-            "CostValue": 0,
-            "Params": [
-                {
-                    "Text": "Abklingzeit",
-                    "ConditionId": "",
-                    "Values": [
-                        "9Sek.",
-                        "9Sek.",
-                        "9Sek.",
-                        "9Sek.",
-                        "9Sek.",
-                        "9Sek.",
-                        "9Sek.",
-                        "9Sek.",
-                        "9Sek.",
-                        "9Sek.",
-                        "9Sek.",
-                        "9Sek."
-                    ]
-                },
-                {
-                    "Text": "Eissplitter-SDN-Multiplikator",
-                    "ConditionId": "",
-                    "Values": [
-                        "71%",
-                        "78%",
-                        "85%",
-                        "92%",
-                        "99%",
-                        "107%",
-                        "114%",
-                        "121%",
-                        "128%",
-                        "137%",
-                        "147%",
-                        "160%"
-                    ]
-                },
-                {
-                    "Text": "Hieb-Standard-SDN-Multiplikator",
-                    "ConditionId": "",
-                    "Values": [
-                        "71%",
-                        "78%",
-                        "85%",
-                        "92%",
-                        "99%",
-                        "107%",
-                        "114%",
-                        "121%",
-                        "128%",
-                        "137%",
-                        "147%",
-                        "160%"
-                    ]
-                },
-                {
-                    "Text": "Hieb-Taumeln",
-                    "ConditionId": "",
-                    "Values": [
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15"
-                    ]
-                },
-                {
-                    "Text": "Bonus-SDN-Multiplikator pro Zufügungskumulierung",
-                    "ConditionId": "",
-                    "Values": [
-                        "107%",
-                        "117%",
-                        "128%",
-                        "139%",
-                        "149%",
-                        "160%",
-                        "171%",
-                        "181%",
-                        "192%",
-                        "205%",
-                        "221%",
-                        "240%"
-                    ]
-                },
-                {
-                    "Text": "Ultimativer Grund-Energieerhalt",
-                    "ConditionId": "",
-                    "Values": [
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40"
-                    ]
-                },
-                {
-                    "Text": "Zusätzlicher Ultimativer-Energieerhalt pro Zufügungskumulierung",
-                    "ConditionId": "",
-                    "Values": [
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15"
-                    ]
-                }
-            ]
         }
     },
     "NodeSkillMap": {
-        "fac_chr_0026_lastrite_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
-            "Name": "Ruhm der Königshöfe α",
-            "Desc": "Dem Empfang zuweisen, um die Wahrscheinlichkeit geringfügig zu erhöhen, dass der Operator Hinweis 7: Seš’qa sammelt (wird bei Zuweisung aktiviert; Effekte derselben Art können nicht kombiniert werden).",
+        "chr_0026_lastrite_passive_skill_0_1": {
+            "Icon": "icon_talent_lastrite_01",
             "Level": 1,
-            "Index": 3,
-            "Type": 5
+            "Index": 0,
+            "Name": "Hypothermie",
+            "Desc": "Wenn Last Rite eine <#ba.spellinflict>Technikkumulierung</> <#ba.consume>verbraucht</> hat, belegt sie das Ziel für <@ba.vup>15</> Sek. in Höhe von [Menge an <#ba.consume>verbrauchten</> <#ba.spellinflict>Technikkumulierungen</> × <@ba.vup>2%</>] mit <#ba.crystvul>Kryo-Empfänglichkeit</>. Dieser Effekt kann nicht kumuliert werden.",
+            "Type": 4
         },
-        "fac_chr_0026_lastrite_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
-            "Name": "Ruhm der Königshöfe β",
-            "Desc": "Dem Empfang zuweisen, um die Wahrscheinlichkeit zu erhöhen, dass der Operator Hinweis 7: Seš’qa sammelt (wird bei Zuweisung aktiviert; Effekte derselben Art können nicht kombiniert werden).",
+        "chr_0026_lastrite_passive_skill_0_2": {
+            "Icon": "icon_talent_lastrite_01",
             "Level": 2,
-            "Index": 3,
-            "Type": 5
+            "Index": 0,
+            "Name": "Hypothermie",
+            "Desc": "Wenn Last Rite eine <#ba.spellinflict>Technikkumulierung</> <#ba.consume>verbraucht</> hat, belegt sie das Ziel für <@ba.vup>15</> Sek. in Höhe von [Menge an <#ba.consume>verbrauchten</> <#ba.spellinflict>Technikkumulierungen</> × <@ba.vup>4%</>] mit <#ba.crystvul>Kryo-Empfänglichkeit</>. Dieser Effekt kann nicht kumuliert werden.",
+            "Type": 4
+        },
+        "chr_0026_lastrite_passive_skill_1_1": {
+            "Icon": "icon_talent_lastrite_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Kälteversprödung",
+            "Desc": "Ultimative Fertigkeit <@ba.key>Wachdienst</> verbessert: Wenn die Ultimative Fertigkeit einem Gegner mit <#ba.crystvul>Kryo-Empfänglichkeit</> SDN zufügt, beträgt der Effekt dieser <#ba.crystvul>Kryo-Empfänglichkeit</> das <@ba.vup>1.2</>-Fache des ursprünglichen Werts.",
+            "Type": 4
+        },
+        "chr_0026_lastrite_passive_skill_1_2": {
+            "Icon": "icon_talent_lastrite_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Kälteversprödung",
+            "Desc": "Ultimative Fertigkeit <@ba.key>Wachdienst</> verbessert: Wenn die Ultimative Fertigkeit einem Gegner mit <#ba.crystvul>Kryo-Empfänglichkeit</> SDN zufügt, beträgt der Effekt dieser <#ba.crystvul>Kryo-Empfänglichkeit</> das <@ba.vup>1.5</>-Fache des ursprünglichen Werts.",
+            "Type": 4
         },
         "fac_chr_0026_lastrite_0_1": {
             "Icon": "spaceshipskillicon/facskill_spaceship_plant_flower",
@@ -577,37 +593,21 @@
             "Index": 2,
             "Type": 5
         },
-        "chr_0026_lastrite_passive_skill_0_2": {
-            "Icon": "icon_talent_lastrite_01",
-            "Level": 2,
-            "Index": 0,
-            "Name": "Hypothermie",
-            "Desc": "Wenn Last Rite eine <#ba.spellinflict>Technikkumulierung</> <#ba.consume>verbraucht</> hat, belegt sie das Ziel für <@ba.vup>15</> Sek. in Höhe von [Menge an <#ba.consume>verbrauchten</> <#ba.spellinflict>Technikkumulierungen</> × <@ba.vup>4%</>] mit <#ba.crystvul>Kryo-Empfänglichkeit</>. Dieser Effekt kann nicht kumuliert werden.",
-            "Type": 4
-        },
-        "chr_0026_lastrite_passive_skill_1_2": {
-            "Icon": "icon_talent_lastrite_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "Kälteversprödung",
-            "Desc": "Ultimative Fertigkeit <@ba.key>Wachdienst</> verbessert: Wenn die Ultimative Fertigkeit einem Gegner mit <#ba.crystvul>Kryo-Empfänglichkeit</> SDN zufügt, beträgt der Effekt dieser <#ba.crystvul>Kryo-Empfänglichkeit</> das <@ba.vup>1.5</>-Fache des ursprünglichen Werts.",
-            "Type": 4
-        },
-        "chr_0026_lastrite_passive_skill_0_1": {
-            "Icon": "icon_talent_lastrite_01",
+        "fac_chr_0026_lastrite_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
+            "Name": "Ruhm der Königshöfe α",
+            "Desc": "Dem Empfang zuweisen, um die Wahrscheinlichkeit geringfügig zu erhöhen, dass der Operator Hinweis 7: Seš’qa sammelt (wird bei Zuweisung aktiviert; Effekte derselben Art können nicht kombiniert werden).",
             "Level": 1,
-            "Index": 0,
-            "Name": "Hypothermie",
-            "Desc": "Wenn Last Rite eine <#ba.spellinflict>Technikkumulierung</> <#ba.consume>verbraucht</> hat, belegt sie das Ziel für <@ba.vup>15</> Sek. in Höhe von [Menge an <#ba.consume>verbrauchten</> <#ba.spellinflict>Technikkumulierungen</> × <@ba.vup>2%</>] mit <#ba.crystvul>Kryo-Empfänglichkeit</>. Dieser Effekt kann nicht kumuliert werden.",
-            "Type": 4
+            "Index": 3,
+            "Type": 5
         },
-        "chr_0026_lastrite_passive_skill_1_1": {
-            "Icon": "icon_talent_lastrite_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "Kälteversprödung",
-            "Desc": "Ultimative Fertigkeit <@ba.key>Wachdienst</> verbessert: Wenn die Ultimative Fertigkeit einem Gegner mit <#ba.crystvul>Kryo-Empfänglichkeit</> SDN zufügt, beträgt der Effekt dieser <#ba.crystvul>Kryo-Empfänglichkeit</> das <@ba.vup>1.2</>-Fache des ursprünglichen Werts.",
-            "Type": 4
+        "fac_chr_0026_lastrite_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
+            "Name": "Ruhm der Königshöfe β",
+            "Desc": "Dem Empfang zuweisen, um die Wahrscheinlichkeit zu erhöhen, dass der Operator Hinweis 7: Seš’qa sammelt (wird bei Zuweisung aktiviert; Effekte derselben Art können nicht kombiniert werden).",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
         }
     },
     "Potentials": {

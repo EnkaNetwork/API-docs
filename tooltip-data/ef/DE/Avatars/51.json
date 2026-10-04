@@ -1,0 +1,661 @@
+{
+    "StrId": "chr_0034_typhoea",
+    "Name": "Typhoeus",
+    "Rarity": 6,
+    "Element": "Natural",
+    "Profession": "ASSAULT",
+    "Conditions": {},
+    "WeaponType": "Wand",
+    "MainAttrId": 40,
+    "SubAttrId": 42,
+    "AttributeNodes": {
+        "chr_0034_typhoea_1": {
+            "40": 10.0
+        },
+        "chr_0034_typhoea_3": {
+            "40": 15.0
+        },
+        "chr_0034_typhoea_5": {
+            "40": 15.0
+        },
+        "chr_0034_typhoea_7": {
+            "40": 20.0
+        }
+    },
+    "SkillInfoMap": {
+        "chr_0034_typhoea_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_typhoea_01",
+            "Element": "Natural",
+            "Name": "Wuchernde Dornen",
+            "Desc": "KOMBOAUSLÖSER: Wenn Typhoeus die max. Anzahl an <#ba.arrowenergy>Zeichen</> erreicht.\nTyphoeus verwandelt all ihre <#ba.arrowenergy>Zeichen</> in <#ba.arrownum>Jagdpfeile</> und ihre Versuche für ihren Luft-Standardangriff (LSTDANG) werden zurückgesetzt.\nTyphoeus fokussiert ihren „Blick der Jägerin“ und verschießt ein Sperrfeuer auf den Gegner, das eine <@ba.key>Sperrfeuerreihe</> im Zielbereich erstellt. Gegner in der <@ba.key>Sperrfeuerreihe</> werden <#ba.slow>verlangsamt</> und erleiden kontinuierlichen <@ba.natur>Natur-SDN</> sowie erhöhten erlittenen <#ba.naturalburst>Naturexplosion</>-SDN.\n<@ba.info>Je 2 Zeichen werden in 1 Jagdpfeil verwandelt.</>",
+            "ConditionData": {},
+            "Type": 2,
+            "Cooldown": 21.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Abklingzeit",
+                    "ConditionId": "",
+                    "Values": [
+                        "21Sek.",
+                        "21Sek.",
+                        "21Sek.",
+                        "21Sek.",
+                        "21Sek.",
+                        "21Sek.",
+                        "21Sek.",
+                        "21Sek.",
+                        "21Sek.",
+                        "21Sek.",
+                        "21Sek.",
+                        "21Sek."
+                    ]
+                },
+                {
+                    "Text": "„Blick der Jägerin“-Treffer-SDN",
+                    "ConditionId": "",
+                    "Values": [
+                        "89%",
+                        "98%",
+                        "107%",
+                        "116%",
+                        "125%",
+                        "134%",
+                        "142%",
+                        "151%",
+                        "160%",
+                        "171%",
+                        "185%",
+                        "200%"
+                    ]
+                },
+                {
+                    "Text": "Taumeln",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Ultimative-Energie-Erhalt",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Kontinuierlicher Flächen-SDN",
+                    "ConditionId": "",
+                    "Values": [
+                        "45%",
+                        "49%",
+                        "54%",
+                        "58%",
+                        "62%",
+                        "67%",
+                        "71%",
+                        "76%",
+                        "80%",
+                        "86%",
+                        "93%",
+                        "100%"
+                    ]
+                },
+                {
+                    "Text": "Verlangsamen",
+                    "ConditionId": "",
+                    "Values": [
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%"
+                    ]
+                },
+                {
+                    "Text": "Naturexplosion-SDN-Boost",
+                    "ConditionId": "",
+                    "Values": [
+                        "6%",
+                        "6%",
+                        "6%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "8%",
+                        "8%",
+                        "8%",
+                        "9%",
+                        "9%",
+                        "10%"
+                    ]
+                }
+            ]
+        },
+        "chr_0034_typhoea_NormalAttack": {
+            "Icon": "skillicon/icon_attack_funnel",
+            "Element": "Natural",
+            "Name": "Wildnisjägerin",
+            "Desc": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.natur>Natur-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>17</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.natur>Natur-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.natur>Natur-SDN</> zufügen und ein wenig FP wiederherstellen.",
+            "ConditionData": {},
+            "Type": 0,
+            "Cooldown": 0.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "STD-ANG-SEQ-1-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "21%",
+                        "23%",
+                        "25%",
+                        "27%",
+                        "29%",
+                        "31%",
+                        "33%",
+                        "35%",
+                        "37%",
+                        "39%",
+                        "43%",
+                        "46%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-2-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "25%",
+                        "28%",
+                        "30%",
+                        "33%",
+                        "35%",
+                        "38%",
+                        "40%",
+                        "43%",
+                        "45%",
+                        "48%",
+                        "52%",
+                        "56%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-3-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "38%",
+                        "42%",
+                        "46%",
+                        "49%",
+                        "53%",
+                        "57%",
+                        "61%",
+                        "65%",
+                        "68%",
+                        "73%",
+                        "79%",
+                        "86%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-4-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "42%",
+                        "46%",
+                        "50%",
+                        "55%",
+                        "59%",
+                        "63%",
+                        "67%",
+                        "71%",
+                        "76%",
+                        "81%",
+                        "87%",
+                        "95%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-5-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "56%",
+                        "61%",
+                        "67%",
+                        "72%",
+                        "78%",
+                        "83%",
+                        "89%",
+                        "94%",
+                        "100%",
+                        "107%",
+                        "115%",
+                        "125%"
+                    ]
+                },
+                {
+                    "Text": "Wuchtschlag-ANG-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Sturz-ANG-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "chr_0034_typhoea_NormalSkill": {
+            "Icon": "skillicon/icon_skill_typhoea_01",
+            "Element": "Natural",
+            "Name": "Durchbohrende Pfeile des Waldes",
+            "Desc": "Typhoeus springt hoch und wechselt kurzzeitig in den Zustand <@ba.key>Schweben</>, in dem sie 5 Luft-Standardangriffe (LSTDANG) ausführen kann. Jeder LSTDANG kann Pfeile auf bis zu 2 Gegner verschießen und ihnen <@ba.natur>Natur-SDN</> zufügen. \nWann immer ein LSTDANG einen Gegner mit <#ba.naturalinflict>Natur-Kumulierung(en)</> trifft, verbraucht er 1 <#ba.naturalinflict>Natur</>-Kumulierung, gewährt Typhoeus 1 <#ba.arrowenergy>Zeichen</> und verleiht zusätzliche Ultimative Energie. \nWenn Typhoeus mindestens einen <#ba.arrownum>Jagdpfeil</> hat, verbraucht sie 1 <#ba.arrownum>Jagdpfeil</> und verwandelt den LSTDANG in einen <@ba.key>Energieschuss</>. \n<@ba.key>Energieschuss</>: Wenn Typhoeus einen Gegner mit einem Energieschuss trifft, wird dieser mit 1 Instanz von <#ba.naturalburst>Naturexplosion</> belegt. Wenn die <#ba.naturalinflict>Natur-Kumulierung</> des Gegners verbraucht wurde, erhöht sich der verursachte SDN durch die <#ba.naturalburst>Naturexplosion</>. \n<@ba.info>Wenn Typhoeus der gesteuerte Operator ist, wird ihr 5. LSTDANG zu einem Abschlussangriff und Energieschuss, der keine Jagdpfeile verbraucht.</>",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "FP-Kosten",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "Ausgangs-Luftschuss-SDN-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "22%",
+                        "25%",
+                        "27%",
+                        "29%",
+                        "31%",
+                        "33%",
+                        "36%",
+                        "38%",
+                        "40%",
+                        "43%",
+                        "46%",
+                        "50%"
+                    ]
+                },
+                {
+                    "Text": "LSTDANG-SDN",
+                    "ConditionId": "",
+                    "Values": [
+                        "29%",
+                        "32%",
+                        "35%",
+                        "37%",
+                        "40%",
+                        "43%",
+                        "46%",
+                        "49%",
+                        "52%",
+                        "55%",
+                        "60%",
+                        "65%"
+                    ]
+                },
+                {
+                    "Text": "Luft-Abschlussangriff-SDN",
+                    "ConditionId": "",
+                    "Values": [
+                        "44%",
+                        "49%",
+                        "53%",
+                        "58%",
+                        "62%",
+                        "66%",
+                        "71%",
+                        "75%",
+                        "80%",
+                        "85%",
+                        "92%",
+                        "100%"
+                    ]
+                },
+                {
+                    "Text": "Luft-Abschlussangriff-Taumeln",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Energieschuss-Naturexplosions-SDN-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "1.1",
+                        "1.1",
+                        "1.1",
+                        "1.15",
+                        "1.15",
+                        "1.15",
+                        "1.2",
+                        "1.2",
+                        "1.2",
+                        "1.25",
+                        "1.25",
+                        "1.3"
+                    ]
+                },
+                {
+                    "Text": "Zusätzliche Ultimative Energie",
+                    "ConditionId": "",
+                    "Values": [
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12"
+                    ]
+                }
+            ]
+        },
+        "chr_0034_typhoea_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_typhoea_01",
+            "Element": "Natural",
+            "Name": "Ruf des eisigen Berges",
+            "Desc": "Typhoeus feuert einen Aufgeladenen Pfeil ab, der nach dem Treffer an einem Gegner explodiert und Gegnern im Wirkungsbereich massiven <@ba.natur>Natur-SDN</> zufügt. Sie wechselt dann in den Zustand <@ba.key>Schweben</>, und die Versuche für ihren Luft-Standardangriff (LSTDANG) werden zurückgesetzt.\nIhre nächsten 5 LSTDANG lösen bei Treffern an Gegnern einen <@ba.key>Pfeilhagel</> aus, der <@ba.natur>Natur-SDN</> an der Position des Ziels verursacht. Ihr 5. <@ba.key>Pfeilhagel</> ist ein verstärkter <@ba.key>Pfeilhagel</>, der höheren SDN verursacht.\nDas Wirken der Ultimativen Fertigkeit verleiht sofort <@ba.vup>2</> <#ba.arrownum>Jagdpfeile</>.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 20.0,
+            "CostType": "UltimateSp",
+            "CostValue": 200.0,
+            "Params": [
+                {
+                    "Text": "Ultimative Energiekosten",
+                    "ConditionId": "",
+                    "Values": [
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0
+                    ]
+                },
+                {
+                    "Text": "Abklingzeit",
+                    "ConditionId": "",
+                    "Values": [
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek."
+                    ]
+                },
+                {
+                    "Text": "Aufgeladener-Pfeil-Explosions-SDN",
+                    "ConditionId": "",
+                    "Values": [
+                        "133%",
+                        "147%",
+                        "160%",
+                        "173%",
+                        "187%",
+                        "200%",
+                        "213%",
+                        "227%",
+                        "240%",
+                        "257%",
+                        "277%",
+                        "300%"
+                    ]
+                },
+                {
+                    "Text": "Aufgeladener-Pfeil-Taumeln",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Normaler-Pfeilhagel-SDN",
+                    "ConditionId": "",
+                    "Values": [
+                        "33%",
+                        "37%",
+                        "40%",
+                        "43%",
+                        "47%",
+                        "50%",
+                        "53%",
+                        "57%",
+                        "60%",
+                        "64%",
+                        "69%",
+                        "75%"
+                    ]
+                },
+                {
+                    "Text": "Verstärkter-Pfeilhagel-SDN",
+                    "ConditionId": "",
+                    "Values": [
+                        "89%",
+                        "98%",
+                        "107%",
+                        "116%",
+                        "124%",
+                        "133%",
+                        "142%",
+                        "151%",
+                        "160%",
+                        "171%",
+                        "184%",
+                        "200%"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0034_typhoea_passive_skill_0_1": {
+            "Icon": "icon_talent_typhoea_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Beute-Checkliste",
+            "Desc": "Wann immer eine <#ba.naturalburst>Naturexplosion</> bei einem Gegner ausgelöst wird, erhält Typhoeus 1 <#ba.arrowenergy>Zeichen</>. Von Angriffen verursachter SDN, der durch den Verbrauch von <#ba.arrownum>Jagdpfeilen</> verstärkt wurde, erhöht sich auf das <@ba.vup>1.2</>-Fache des Ursprungswertes.\nZu Kampfbeginn erhält Typhoeus sofort <@ba.vup>1</> <#ba.arrowenergy>Zeichen</>.\nTyphoeus kann bis zu 4 <#ba.arrownum>Jagdpfeile</> und bis zu 8 <#ba.arrowenergy>Zeichen</> haben.\n<@ba.info>Wird gleichzeitig bei mehreren Gegnern eine Naturexplosion ausgelöst, zählen diese Explosionen für die Berechnung der Zeichen, die Typhoeus erhält, nur als eine Naturexplosion.</>",
+            "Type": 4
+        },
+        "chr_0034_typhoea_passive_skill_0_2": {
+            "Icon": "icon_talent_typhoea_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Beute-Checkliste",
+            "Desc": "Wann immer eine <#ba.naturalburst>Naturexplosion</> bei einem Gegner ausgelöst wird, erhält Typhoeus 1 <#ba.arrowenergy>Zeichen</>. Von Angriffen verursachter SDN, der durch den Verbrauch von <#ba.arrownum>Jagdpfeilen</> verstärkt wurde, erhöht sich auf das <@ba.vup>1.4</>-Fache des Ursprungswertes.\nZu Kampfbeginn erhält Typhoeus sofort <@ba.vup>2</> <#ba.arrowenergy>Zeichen</>.\nTyphoeus kann bis zu 4 <#ba.arrownum>Jagdpfeile</> und bis zu 8 <#ba.arrowenergy>Zeichen</> haben.\n<@ba.info>Wird gleichzeitig bei mehreren Gegnern eine Naturexplosion ausgelöst, zählen diese Explosionen für die Berechnung der Zeichen, die Typhoeus erhält, nur als eine Naturexplosion.</>",
+            "Type": 4
+        },
+        "chr_0034_typhoea_passive_skill_0_3": {
+            "Icon": "icon_talent_typhoea_01",
+            "Level": 3,
+            "Index": 0,
+            "Name": "Beute-Checkliste",
+            "Desc": "Wann immer eine <#ba.naturalburst>Naturexplosion</> bei einem Gegner ausgelöst wird, erhält Typhoeus 1 <#ba.arrowenergy>Zeichen</>. Von Angriffen verursachter SDN, der durch den Verbrauch von <#ba.arrownum>Jagdpfeilen</> verstärkt wurde, erhöht sich auf das <@ba.vup>1.6</>-Fache des Ursprungswertes.\nZu Kampfbeginn erhält Typhoeus sofort <@ba.vup>4</> <#ba.arrowenergy>Zeichen</>.\nTyphoeus kann bis zu 4 <#ba.arrownum>Jagdpfeile</> und bis zu 8 <#ba.arrowenergy>Zeichen</> haben.\n<@ba.info>Wird gleichzeitig bei mehreren Gegnern eine Naturexplosion ausgelöst, zählen diese Explosionen für die Berechnung der Zeichen, die Typhoeus erhält, nur als eine Naturexplosion.</>",
+            "Type": 4
+        },
+        "chr_0034_typhoea_passive_skill_1_1": {
+            "Icon": "icon_talent_typhoea_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Fokus der Jägerin",
+            "Desc": "Wenn Typhoeus <@ba.key>schwebt</>, aktiviert sie eine <@ba.key>Schutzbarriere</>, die ihren Erlittenen SDN um <@ba.vup>15%</> senkt. Solange die Barriere aktiv ist, ist es zudem schwieriger, Typhoeus zu unterbrechen. Die <@ba.key>Schutzbarriere</> zersplittert, wenn Typhoeus SDN erleidet und kann anschließend für <@ba.vup>30</> Sek. nicht erneut aktiviert werden.",
+            "Type": 4
+        },
+        "chr_0034_typhoea_passive_skill_1_2": {
+            "Icon": "icon_talent_typhoea_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Fokus der Jägerin",
+            "Desc": "Wenn Typhoeus <@ba.key>schwebt</>, aktiviert sie eine <@ba.key>Schutzbarriere</>, die ihren Erlittenen SDN um <@ba.vup>30%</> senkt. Solange die Barriere aktiv ist, ist es zudem schwieriger, Typhoeus zu unterbrechen. Die <@ba.key>Schutzbarriere</> zersplittert, wenn Typhoeus SDN erleidet und kann anschließend für <@ba.vup>18</> Sek. nicht erneut aktiviert werden.",
+            "Type": 4
+        },
+        "fac_chr_0034_typhoea_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_mineral",
+            "Name": "Das Raunen der Steine β",
+            "Desc": "Wachstumskammer zuweisen, um Wachstumsrate von seltenen Mineralien um +20 % zu erhöhen.",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0034_typhoea_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_mineral",
+            "Name": "Das Raunen der Steine γ",
+            "Desc": "Wachstumskammer zuweisen, um Wachstumsrate von seltenen Mineralien um +30 % zu erhöhen.",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0034_typhoea_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_fungus",
+            "Name": "Leben in den Sporen β",
+            "Desc": "Wachstumskammer zuweisen, um Wachstumsrate von Pilzmaterial um +20 % zu erhöhen.",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0034_typhoea_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_fungus",
+            "Name": "Leben in den Sporen γ",
+            "Desc": "Wachstumskammer zuweisen, um Wachstumsrate von Pilzmaterial um +30 % zu erhöhen.",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        }
+    },
+    "Potentials": {
+        "1": {
+            "Name": "Samifjod-Pfeilkunst",
+            "Desc": "Während des <@ba.key>Schwebens</>: ANG <@ba.vup>+18%</> und Verursachter LSTDANG-SDN wird auf das <@ba.vup>1.2</>-fache des Ursprungswertes erhöht. \nTalent <@ba.key>Fokus der Jägerin</> verbessert: Reaktivierungszeit von <@ba.key>Schutzbarriere</> <@ba.vup>-3</> Sek."
+        },
+        "2": {
+            "Name": "Schreiten der Jägerin",
+            "Desc": "Beweglichkeit <@ba.vup>+20</>, Technik-Intensität <@ba.vup>+16</>."
+        },
+        "3": {
+            "Name": "Dornenfalle",
+            "Desc": "Kombofertigkeit <@ba.key>Wuchernde Dornen</> verbessert. Abklingzeit: <@ba.vup>-2</> Sek. Gegner in der <@ba.key>Sperrfeuerreihe</> erleiden <#ba.naturalburst>Naturexplosion</>-SDN <@ba.vup>+6%</>."
+        },
+        "4": {
+            "Name": "Kein Entkommen",
+            "Desc": "Ultimative Fertigkeit <@ba.key>Ruf des eisigen Berges</> verbessert: Ultimative Energiekosten <@ba.vup>-15%</>."
+        },
+        "5": {
+            "Name": "Tödlicher Schuss",
+            "Desc": "Ultimative Fertigkeit <@ba.key>Ruf des eisigen Berges</> verbessert: Erzeugt jetzt <@ba.vup>+1</> <#ba.arrownum>Jagdpfeile</>. Der Multiplikator für den verursachten SDN der Ultimativen Fertigkeit erhöht sich auf das <@ba.vup>1.2</>-Fache des Ursprungswertes und der SDN-Multiplikator der durch den <@ba.key>Energieschuss</> ausgelösten Naturexplosion erhöht sich auf das <@ba.vup>1.1</>-Fache des Ursprungswertes."
+        }
+    }
+}

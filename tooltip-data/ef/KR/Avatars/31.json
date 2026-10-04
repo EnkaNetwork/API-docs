@@ -9,17 +9,17 @@
     "MainAttrId": 42,
     "SubAttrId": 39,
     "AttributeNodes": {
-        "chr_0021_whiten_5": {
-            "42": 15
-        },
-        "chr_0021_whiten_7": {
-            "42": 20
-        },
         "chr_0021_whiten_1": {
-            "42": 10
+            "42": 10.0
         },
         "chr_0021_whiten_3": {
-            "42": 15
+            "42": 15.0
+        },
+        "chr_0021_whiten_5": {
+            "42": 15.0
+        },
+        "chr_0021_whiten_7": {
+            "42": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "적이 <#ba.frozen>동결</> 상태일 때 사용할 수 있습니다.\n빠르게 적에게 접근하여 좁은 범위 내의 적에게 <@ba.pd>물리 피해</>와 강제 <#ba.airborne>띄우기</> 피해를 줍니다. <#ba.frozen>동결</> 상태의 적에게 명중했을 경우, 추가로 피해를 주고 <#ba.physicalvul>물리 취약</>을 부여합니다.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 18,
+            "Cooldown": 18.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "쿨타임",
@@ -162,158 +162,6 @@
                 }
             ]
         },
-        "chr_0021_whiten_NormalSkill": {
-            "Icon": "skillicon/icon_skill_whiten_01",
-            "Element": "Cryst",
-            "Name": "서스테인",
-            "Desc": "전방으로 장창을 찔러 냉기 음파를 방출합니다. 일직선상의 적에게 <@ba.cryst>냉기 피해</>를 주고 <#ba.crystinflict>냉기 부착</> 상태를 부여합니다.",
-            "ConditionData": {},
-            "Type": 1,
-            "Cooldown": 0,
-            "CostType": "Atb",
-            "CostValue": 100,
-            "Params": [
-                {
-                    "Text": "스킬 게이지 소모",
-                    "ConditionId": "",
-                    "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
-                    ]
-                },
-                {
-                    "Text": "피해 배율",
-                    "ConditionId": "",
-                    "Values": [
-                        "156%",
-                        "171%",
-                        "187%",
-                        "202%",
-                        "218%",
-                        "234%",
-                        "249%",
-                        "265%",
-                        "280%",
-                        "300%",
-                        "323%",
-                        "350%"
-                    ]
-                },
-                {
-                    "Text": "불균형치",
-                    "ConditionId": "",
-                    "Values": [
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10"
-                    ]
-                }
-            ]
-        },
-        "chr_0021_whiten_UltimateSkill": {
-            "Icon": "skillicon/icon_ultimate_skill_whiten_01",
-            "Element": "Physical",
-            "Name": "트레몰로",
-            "Desc": "모든 힘을 쏟아 창을 힘껏 내려찍어 주변 원형 범위 내의 적에게 <@ba.pd>물리 피해</>를 줍니다. 적이 <#ba.physicalvul>물리 취약</> 상태라면, 대상에게 강제 <#ba.airborne>띄우기</> 피해를 줍니다.",
-            "ConditionData": {},
-            "Type": 3,
-            "Cooldown": 10,
-            "CostType": "UltimateSp",
-            "CostValue": 70,
-            "Params": [
-                {
-                    "Text": "필요한 궁극기 에너지",
-                    "ConditionId": "",
-                    "Values": [
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70
-                    ]
-                },
-                {
-                    "Text": "쿨타임",
-                    "ConditionId": "",
-                    "Values": [
-                        "10초",
-                        "10초",
-                        "10초",
-                        "10초",
-                        "10초",
-                        "10초",
-                        "10초",
-                        "10초",
-                        "10초",
-                        "10초",
-                        "10초",
-                        "10초"
-                    ]
-                },
-                {
-                    "Text": "피해 배율",
-                    "ConditionId": "",
-                    "Values": [
-                        "489%",
-                        "538%",
-                        "586%",
-                        "635%",
-                        "684%",
-                        "733%",
-                        "782%",
-                        "831%",
-                        "880%",
-                        "941%",
-                        "1014%",
-                        "1100%"
-                    ]
-                },
-                {
-                    "Text": "불균형치",
-                    "ConditionId": "",
-                    "Values": [
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "20",
-                        "20",
-                        "20"
-                    ]
-                }
-            ]
-        },
         "chr_0021_whiten_NormalAttack": {
             "Icon": "skillicon/icon_attack_lance",
             "Element": "Physical",
@@ -321,9 +169,9 @@
             "Desc": "일반 공격:\n적에게 최대 4단 공격을 하여 <@ba.pd>물리 피해</>를 줍니다. 메인 컨트롤 오퍼레이터라면 <#ba.lastcombo>강력한 일격</>이 <@ba.poise>17</>포인트의 불균형 피해를 줍니다.\n\n낙하 공격:\n공중에 떴을 때, 일반 공격을 사용하면 낙하하며 주변의 적을 공격하고 <@ba.pd>물리 피해</>를 줍니다.\n\n처형 공격:\n주변에 불균형 상태의 적이 있을 때, 일반 공격을 사용하면 해당 적을 처형하여 대량의 <@ba.pd>물리 피해</>를 주고 일정량의 스킬 게이지를 회복합니다.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "일반 공격 제1단계 배율",
@@ -434,9 +282,201 @@
                     ]
                 }
             ]
+        },
+        "chr_0021_whiten_NormalSkill": {
+            "Icon": "skillicon/icon_skill_whiten_01",
+            "Element": "Cryst",
+            "Name": "서스테인",
+            "Desc": "전방으로 장창을 찔러 냉기 음파를 방출합니다. 일직선상의 적에게 <@ba.cryst>냉기 피해</>를 주고 <#ba.crystinflict>냉기 부착</> 상태를 부여합니다.",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "스킬 게이지 소모",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "피해 배율",
+                    "ConditionId": "",
+                    "Values": [
+                        "156%",
+                        "171%",
+                        "187%",
+                        "202%",
+                        "218%",
+                        "234%",
+                        "249%",
+                        "265%",
+                        "280%",
+                        "300%",
+                        "323%",
+                        "350%"
+                    ]
+                },
+                {
+                    "Text": "불균형치",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0021_whiten_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_whiten_01",
+            "Element": "Physical",
+            "Name": "트레몰로",
+            "Desc": "모든 힘을 쏟아 창을 힘껏 내려찍어 주변 원형 범위 내의 적에게 <@ba.pd>물리 피해</>를 줍니다. 적이 <#ba.physicalvul>물리 취약</> 상태라면, 대상에게 강제 <#ba.airborne>띄우기</> 피해를 줍니다.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 10.0,
+            "CostType": "UltimateSp",
+            "CostValue": 70.0,
+            "Params": [
+                {
+                    "Text": "필요한 궁극기 에너지",
+                    "ConditionId": "",
+                    "Values": [
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0
+                    ]
+                },
+                {
+                    "Text": "쿨타임",
+                    "ConditionId": "",
+                    "Values": [
+                        "10초",
+                        "10초",
+                        "10초",
+                        "10초",
+                        "10초",
+                        "10초",
+                        "10초",
+                        "10초",
+                        "10초",
+                        "10초",
+                        "10초",
+                        "10초"
+                    ]
+                },
+                {
+                    "Text": "피해 배율",
+                    "ConditionId": "",
+                    "Values": [
+                        "489%",
+                        "538%",
+                        "586%",
+                        "635%",
+                        "684%",
+                        "733%",
+                        "782%",
+                        "831%",
+                        "880%",
+                        "941%",
+                        "1014%",
+                        "1100%"
+                    ]
+                },
+                {
+                    "Text": "불균형치",
+                    "ConditionId": "",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                }
+            ]
         }
     },
     "NodeSkillMap": {
+        "chr_0021_whiten_passive_skill_0_1": {
+            "Icon": "icon_talent_whiten_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "공감",
+            "Desc": "매번 <#ba.crystbreak>쇄빙</> 효과를 발동한 후, 다음에 사용한 배틀 스킬 <@ba.key>서스테인</>이 스킬 게이지를 <@ba.vup>7.5</>포인트 <#ba.return>반환</>합니다. 해당 효과는 중첩되지 않습니다.",
+            "Type": 4
+        },
+        "chr_0021_whiten_passive_skill_0_2": {
+            "Icon": "icon_talent_whiten_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "공감",
+            "Desc": "매번 <#ba.crystbreak>쇄빙</> 효과를 발동한 후, 다음에 사용한 배틀 스킬 <@ba.key>서스테인</>이 스킬 게이지를 <@ba.vup>15</>포인트 <#ba.return>반환</>합니다. 해당 효과는 중첩되지 않습니다.",
+            "Type": 4
+        },
+        "chr_0021_whiten_passive_skill_1_1": {
+            "Icon": "icon_talent_whiten_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "이유 있는 게으름",
+            "Desc": "<#ba.crystonchar>냉기 부착</> 상태에 면역되며 받는 <@ba.cryst>냉기 피해</> <@ba.vup>-10%</>",
+            "Type": 4
+        },
+        "chr_0021_whiten_passive_skill_1_2": {
+            "Icon": "icon_talent_whiten_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "이유 있는 게으름",
+            "Desc": "<#ba.crystonchar>냉기 부착</> 상태에 면역되며 받는 <@ba.cryst>냉기 피해</> <@ba.vup>-20%</>",
+            "Type": 4
+        },
+        "fac_chr_0021_whiten_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "조각화 휴식 · α",
+            "Desc": "핵심 제어 중추에 배치 시, 모든 오퍼레이터의 컨디션 회복 속도 8% 증가",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
         "fac_chr_0021_whiten_0_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
             "Name": "조각화 휴식 · β",
@@ -453,52 +493,12 @@
             "Index": 3,
             "Type": 5
         },
-        "chr_0021_whiten_passive_skill_0_1": {
-            "Icon": "icon_talent_whiten_01",
-            "Level": 1,
-            "Index": 0,
-            "Name": "공감",
-            "Desc": "매번 <#ba.crystbreak>쇄빙</> 효과를 발동한 후, 다음에 사용한 배틀 스킬 <@ba.key>서스테인</>이 스킬 게이지를 <@ba.vup>7.5</>포인트 <#ba.return>반환</>합니다. 해당 효과는 중첩되지 않습니다.",
-            "Type": 4
-        },
-        "chr_0021_whiten_passive_skill_1_1": {
-            "Icon": "icon_talent_whiten_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "이유 있는 게으름",
-            "Desc": "<#ba.crystonchar>냉기 부착</> 상태에 면역되며 받는 <@ba.cryst>냉기 피해</> <@ba.vup>-10%</>",
-            "Type": 4
-        },
         "fac_chr_0021_whiten_1_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
             "Name": "감청 주파수 · γ",
             "Desc": "응접실에 배치 시, 오퍼레이터의 단서 수집 기본 효율 30% 증가",
             "Level": 2,
             "Index": 3,
-            "Type": 5
-        },
-        "chr_0021_whiten_passive_skill_1_2": {
-            "Icon": "icon_talent_whiten_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "이유 있는 게으름",
-            "Desc": "<#ba.crystonchar>냉기 부착</> 상태에 면역되며 받는 <@ba.cryst>냉기 피해</> <@ba.vup>-20%</>",
-            "Type": 4
-        },
-        "chr_0021_whiten_passive_skill_0_2": {
-            "Icon": "icon_talent_whiten_01",
-            "Level": 2,
-            "Index": 0,
-            "Name": "공감",
-            "Desc": "매번 <#ba.crystbreak>쇄빙</> 효과를 발동한 후, 다음에 사용한 배틀 스킬 <@ba.key>서스테인</>이 스킬 게이지를 <@ba.vup>15</>포인트 <#ba.return>반환</>합니다. 해당 효과는 중첩되지 않습니다.",
-            "Type": 4
-        },
-        "fac_chr_0021_whiten_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
-            "Name": "조각화 휴식 · α",
-            "Desc": "핵심 제어 중추에 배치 시, 모든 오퍼레이터의 컨디션 회복 속도 8% 증가",
-            "Level": 1,
-            "Index": 2,
             "Type": 5
         }
     },

@@ -9,17 +9,17 @@
     "MainAttrId": 40,
     "SubAttrId": 39,
     "AttributeNodes": {
-        "chr_0002_endminm_7": {
-            "40": 20
-        },
         "chr_0002_endminm_1": {
-            "40": 10
-        },
-        "chr_0002_endminm_5": {
-            "40": 15
+            "40": 10.0
         },
         "chr_0002_endminm_3": {
-            "40": 15
+            "40": 15.0
+        },
+        "chr_0002_endminm_5": {
+            "40": 15.0
+        },
+        "chr_0002_endminm_7": {
+            "40": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "ACIONADOR DO COMBO: Quando outro operador na equipe causa DNO com combos de habilidades. \nCorre para o lado do inimigo para causar <@ba.pd>DNO Físico</> e anexar <@ba.key>Cristais de Originium</> que selam os inimigos temporariamente. Aplicar <#ba.physicalstatus>Status Físico</> ou <#ba.noguard>Vulnerabilidade</> ao inimigo selado fragmenta os <@ba.key>Cristais de Originium</> e causa <@ba.pd>DNO Físico</> adicional.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 16,
+            "Cooldown": 16.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Tempo de Recarga",
@@ -151,9 +151,9 @@
             "Desc": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.pd>DNO Físico</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>18</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.pd>DNO Físico</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um ataque finalizador que causa uma enorme quantidade de <@ba.pd>DNO Físico</> e recupera PH.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Multiplicador SEQ 1 ATQB",
@@ -290,26 +290,26 @@
             "Desc": "Uma explosão forçada de <@ba.key>Cristais de Originium</> que ataca inimigos dentro da área de efeito. Causa <@ba.pd>DNO Físico</> e aplica <#ba.crush>Esmagar</>.",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "Custos de PH",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -357,26 +357,26 @@
             "Desc": "Bombardeia o solo com <@ba.key>Cristais de Originium</>, causando <@ba.pd>DNO Físico</> significativo a todos os inimigos dentro de uma área em forma de leque. Se o inimigo já tiver <@ba.key>Cristais de Originium</>, essa habilidade fragmentará os <@ba.key>Cristais de Originium</> e causará mais 1 acerto de <@ba.pd>DNO Físico</>.",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 10,
+            "Cooldown": 10.0,
             "CostType": "UltimateSp",
-            "CostValue": 80,
+            "CostValue": 80.0,
             "Params": [
                 {
                     "Text": "Custo de Energia Suprema",
                     "ConditionId": "",
                     "Values": [
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0
                     ]
                 },
                 {
@@ -463,20 +463,20 @@
             "Desc": "Acertar pelo menos 2 alvos com a habilidade de batalha ou suprema reduz o Tempo de Recarga do combo de habilidades em 0 s.",
             "Type": 4
         },
-        "chr_0002_endminm_passive_skill_1_1": {
-            "Icon": "icon_talent_endminm_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "Estase do Espaço Real",
-            "Desc": "Os inimigos selados por <#ba.originium>Cristais de Originium</> recebem <@ba.vup>0%</> mais DNO Físico.",
-            "Type": 4
-        },
         "chr_0002_endminm_passive_skill_0_2": {
             "Icon": "icon_talent_endminm_01",
             "Level": 2,
             "Index": 0,
             "Name": "Desintegração da Essência",
             "Desc": "Acertar pelo menos 2 alvos com a habilidade de batalha ou suprema reduz o Tempo de Recarga do combo de habilidades em 0 s.",
+            "Type": 4
+        },
+        "chr_0002_endminm_passive_skill_1_1": {
+            "Icon": "icon_talent_endminm_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Estase do Espaço Real",
+            "Desc": "Os inimigos selados por <#ba.originium>Cristais de Originium</> recebem <@ba.vup>0%</> mais DNO Físico.",
             "Type": 4
         },
         "chr_0002_endminm_passive_skill_1_2": {

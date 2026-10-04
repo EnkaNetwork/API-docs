@@ -10,16 +10,16 @@
     "SubAttrId": 41,
     "AttributeNodes": {
         "chr_0033_camille_1": {
-            "40": 10
-        },
-        "chr_0033_camille_7": {
-            "40": 20
-        },
-        "chr_0033_camille_5": {
-            "40": 15
+            "40": 10.0
         },
         "chr_0033_camille_3": {
-            "40": 15
+            "40": 15.0
+        },
+        "chr_0033_camille_5": {
+            "40": 15.0
+        },
+        "chr_0033_camille_7": {
+            "40": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "ACTIVADOR DE COMBO: Cuando la <#ba.fireinflict>Imposición de calor</> del enemigo se <#ba.consume>consume</> o es <#ba.absorb>absorbida</>.\nRealiza un desplazamiento de regreso que inflige <@ba.fire>DAÑ por calor</> y recupera algo de PH.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Tiempo de reutilización",
@@ -143,7 +143,7 @@
                     ]
                 },
                 {
-                    "Text": "Recuperación de PH. por Persecución del cazador",
+                    "Text": "Recuperación de PH por Persecución del cazador",
                     "ConditionId": "",
                     "Values": [
                         "32",
@@ -182,18 +182,18 @@
                     "Text": "Costo de PH",
                     "ConditionId": "",
                     "Values": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
                     ]
                 }
             ]
@@ -205,9 +205,9 @@
             "Desc": "ATAQUE BÁSICO: \nUn ataque con hasta 5 secuencias que inflige <@ba.fire>DAÑ por calor</>. Como operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>18</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.fire>DAÑ por calor</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un remate que inflige mucho <@ba.fire>DAÑ por calor</> y recupera algunos PH.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Multiplicador ATQB SEC 1",
@@ -344,26 +344,26 @@
             "Desc": "Camille invoca <@ba.key>Vesperalas de colmillo ígneo</> que vuelan hacia el enemigo para infligir <@ba.fire>DAÑ por calor</> y aplicar <#ba.fireinflict>Imposición de calor</> a los enemigos en una pequeña área de efecto. Las <@ba.key>Vesperalas de colmillo ígneo</> luego <@ba.key>flotan</> temporalmente alrededor del objetivo y aplican <#ba.weak>Debilidad</> y <#ba.firevul>Susceptibilidad al calor</> a dicho objetivo mientras floten. Cuando el objetivo es derrotado, las <@ba.key>Vesperalas de colmillo ígneo</> vuelan hacia otro enemigo cercano, infligen <@ba.fire>DAÑ por calor</> y aplican <#ba.fireinflict>Imposición de calor</>, <#ba.weak>Debilidad</> y <#ba.firevul>Susceptibilidad al calor</> al nuevo objetivo.\nGolpear a un enemigo con <@ba.key>Vesperalas de colmillo ígneo</> <@ba.key>flotantes</> con la habilidad de combo de Camille provoca una explosión tras un breve retraso. Esta explosión inflige <@ba.fire>DAÑ por calor</> adicional.",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "Costo de PH",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -421,7 +421,7 @@
                     ]
                 },
                 {
-                    "Text": "Efecto de debilidad",
+                    "Text": "Debilidad",
                     "ConditionId": "",
                     "Values": [
                         "5%",
@@ -483,26 +483,26 @@
             "Desc": "Camille vuela hacia el cielo, desata una lluvia de lanzas y remata con un ataque de barrido. Esto inflige <@ba.fire>DAÑ por calor</> y aplica <#ba.fireinflict>Imposición de calor</> a los objetivos golpeados mientras recupera algo de PH. \nDespués de lanzar la máxima, la habilidad de batalla de Camille se transforma temporalmente en <@ba.key>Persecución del cazador</>.\n<@ba.key>Persecución del cazador</>: Se considera una habilidad de combo y no cuesta PH. Es un ataque de desplazamiento que inflige <@ba.fire>DAÑ por calor</> y recupera algo de PH.",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 20,
+            "Cooldown": 20.0,
             "CostType": "UltimateSp",
-            "CostValue": 130,
+            "CostValue": 130.0,
             "Params": [
                 {
                     "Text": "Costo de energía máxima",
                     "ConditionId": "",
                     "Values": [
-                        130,
-                        130,
-                        130,
-                        130,
-                        130,
-                        130,
-                        130,
-                        130,
-                        130,
-                        130,
-                        130,
-                        130
+                        130.0,
+                        130.0,
+                        130.0,
+                        130.0,
+                        130.0,
+                        130.0,
+                        130.0,
+                        130.0,
+                        130.0,
+                        130.0,
+                        130.0,
+                        130.0
                     ]
                 },
                 {
@@ -599,36 +599,12 @@
         }
     },
     "NodeSkillMap": {
-        "chr_0033_camille_passive_skill_1_2": {
-            "Icon": "icon_talent_camille_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "Resurgimiento de la fuente de sangre",
-            "Desc": "Cada vez que Camille restaura PV con una habilidad, obtiene <@ba.fire>DAÑ por calor infligido</> <@ba.vup>+4%</> (Máx. acumulaciones: 5) durante 40 s, mientras que los demás operadores del equipo obtienen <@ba.vup>25%</> de este efecto. Este efecto puede alcanzar 5 acumulaciones. \n<@ba.info>Si Camille ya tiene sus PV Máx., cada activación otorga 2 acumulaciones del efecto.</>",
-            "Type": 4
-        },
         "chr_0033_camille_passive_skill_0_1": {
             "Icon": "icon_talent_camille_01",
             "Level": 1,
             "Index": 0,
             "Name": "Cazador de transgresiones",
             "Desc": "Habilidad de combo <@ba.key>Espina clavacorazones</> mejorada: Al golpear a un enemigo con <@ba.key>Vesperalas de colmillo ígneo</><@ba.key> flotantes</>, Camille restaura <@ba.heal>[30 + Intelecto × 0]</> PV para sí y otorga un incremento de <#ba.combo>Enlace</> durante 15 s. Al usar <@ba.key>Persecución del cazador</>, este efecto puede activarse incluso al golpear a un objetivo sin Vesperalas <@ba.key>flotantes</>.",
-            "Type": 4
-        },
-        "fac_chr_0033_camille_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
-            "Name": "Manual de Agaš'mekanaz γ",
-            "Desc": "Asignar a la Cabina de manufactura para otorgar eficiencia de producción de materiales de EXP de operador en un +30 %",
-            "Level": 2,
-            "Index": 3,
-            "Type": 5
-        },
-        "chr_0033_camille_passive_skill_1_1": {
-            "Icon": "icon_talent_camille_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "Resurgimiento de la fuente de sangre",
-            "Desc": "Cada vez que Camille restaura PV con una habilidad, obtiene <@ba.fire>DAÑ por calor infligido</> <@ba.vup>+2%</> (Máx. acumulaciones: 5) durante 40 s, mientras que los demás operadores del equipo obtienen <@ba.vup>25%</> de este efecto. Este efecto puede alcanzar 5 acumulaciones. \n<@ba.info>Si Camille ya tiene sus PV Máx., cada activación otorga 2 acumulaciones del efecto.</>",
             "Type": 4
         },
         "chr_0033_camille_passive_skill_0_2": {
@@ -638,6 +614,30 @@
             "Name": "Cazador de transgresiones",
             "Desc": "Habilidad de combo <@ba.key>Espina clavacorazones</> mejorada: Al golpear a un enemigo con <@ba.key>Vesperalas de colmillo ígneo</><@ba.key> flotantes</>, Camille restaura <@ba.heal>[60 + Intelecto × 0]</> PV para sí y otorga un incremento de <#ba.combo>Enlace</> durante 15 s. Al usar <@ba.key>Persecución del cazador</>, este efecto puede activarse incluso al golpear a un objetivo sin Vesperalas <@ba.key>flotantes</>.",
             "Type": 4
+        },
+        "chr_0033_camille_passive_skill_1_1": {
+            "Icon": "icon_talent_camille_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Resurgimiento de la fuente de sangre",
+            "Desc": "Cada vez que Camille restaura PV con una habilidad, obtiene <@ba.fire>DAÑ por calor infligido</> <@ba.vup>+2%</> (Máx. acumulaciones: 5) durante 40 s, mientras que los demás operadores del equipo obtienen <@ba.vup>25%</> de este efecto. Este efecto puede alcanzar 5 acumulaciones. \n<@ba.info>Si Camille ya tiene sus PV Máx., cada activación otorga 2 acumulaciones del efecto.</>",
+            "Type": 4
+        },
+        "chr_0033_camille_passive_skill_1_2": {
+            "Icon": "icon_talent_camille_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Resurgimiento de la fuente de sangre",
+            "Desc": "Cada vez que Camille restaura PV con una habilidad, obtiene <@ba.fire>DAÑ por calor infligido</> <@ba.vup>+4%</> (Máx. acumulaciones: 5) durante 40 s, mientras que los demás operadores del equipo obtienen <@ba.vup>25%</> de este efecto. Este efecto puede alcanzar 5 acumulaciones. \n<@ba.info>Si Camille ya tiene sus PV Máx., cada activación otorga 2 acumulaciones del efecto.</>",
+            "Type": 4
+        },
+        "fac_chr_0033_camille_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_flower",
+            "Name": "Hemovitreografía β",
+            "Desc": "Asignar a la Cámara de crecimiento para otorgar una tasa de crecimiento de plantas vitrificadas del +20 %",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
         },
         "fac_chr_0033_camille_0_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_plant_flower",
@@ -655,12 +655,12 @@
             "Index": 3,
             "Type": 5
         },
-        "fac_chr_0033_camille_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_plant_flower",
-            "Name": "Hemovitreografía β",
-            "Desc": "Asignar a la Cámara de crecimiento para otorgar una tasa de crecimiento de plantas vitrificadas del +20 %",
-            "Level": 1,
-            "Index": 2,
+        "fac_chr_0033_camille_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Manual de Agaš'mekanaz γ",
+            "Desc": "Asignar a la Cabina de manufactura para otorgar eficiencia de producción de materiales de EXP de operador en un +30 %",
+            "Level": 2,
+            "Index": 3,
             "Type": 5
         }
     },

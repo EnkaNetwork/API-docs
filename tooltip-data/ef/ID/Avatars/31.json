@@ -9,17 +9,17 @@
     "MainAttrId": 42,
     "SubAttrId": 39,
     "AttributeNodes": {
-        "chr_0021_whiten_5": {
-            "42": 15
-        },
-        "chr_0021_whiten_7": {
-            "42": 20
-        },
         "chr_0021_whiten_1": {
-            "42": 10
+            "42": 10.0
         },
         "chr_0021_whiten_3": {
-            "42": 15
+            "42": 15.0
+        },
+        "chr_0021_whiten_5": {
+            "42": 15.0
+        },
+        "chr_0021_whiten_7": {
+            "42": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "PEMICU KOMBO: Saat musuh terkena <#ba.frozen>Solidification</>. \nBerpindah cepat ke samping musuh dan menimbulkan <@ba.pd>Physical DMG</> serta secara paksa mengakibatkan <#ba.airborne>Lift</> kepada musuh di area kecil. Jika mengenai target yang sedang terkena <#ba.frozen>Solidification</>, skill ini akan menimbulkan DMG tambahan dan mengakibatkan <#ba.physicalvul>Physical Susceptibility</>.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 18,
+            "Cooldown": 18.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Cooldown",
@@ -162,158 +162,6 @@
                 }
             ]
         },
-        "chr_0021_whiten_NormalSkill": {
-            "Icon": "skillicon/icon_skill_whiten_01",
-            "Element": "Cryst",
-            "Name": "Onomatopoeia",
-            "Desc": "Tusukan tombak yang menembakkan gelombang suara beku sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> dan mengakibatkan <#ba.crystinflict>Cryo Infliction</> kepada semua musuh yang berada di lintasan lurusnya.",
-            "ConditionData": {},
-            "Type": 1,
-            "Cooldown": 0,
-            "CostType": "Atb",
-            "CostValue": 100,
-            "Params": [
-                {
-                    "Text": "Biaya SP",
-                    "ConditionId": "",
-                    "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
-                    ]
-                },
-                {
-                    "Text": "Pengganda DMG",
-                    "ConditionId": "",
-                    "Values": [
-                        "156%",
-                        "171%",
-                        "187%",
-                        "202%",
-                        "218%",
-                        "234%",
-                        "249%",
-                        "265%",
-                        "280%",
-                        "300%",
-                        "323%",
-                        "350%"
-                    ]
-                },
-                {
-                    "Text": "Stagger",
-                    "ConditionId": "",
-                    "Values": [
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10"
-                    ]
-                }
-            ]
-        },
-        "chr_0021_whiten_UltimateSkill": {
-            "Icon": "skillicon/icon_ultimate_skill_whiten_01",
-            "Element": "Physical",
-            "Name": "Tremolo",
-            "Desc": "Estella akan mengerahkan seluruh kekuatannya untuk menghantamkan batang tombaknya dengan kuat sehingga akan menimbulkan <@ba.pd>Physical DMG</> kepada semua musuh di area melingkar di sekitarnya. Skill ini secara paksa akan mengakibatkan <#ba.airborne>Lift</> kepada musuh yang sedang terkena <#ba.physicalvul>Physical Susceptibility</>.",
-            "ConditionData": {},
-            "Type": 3,
-            "Cooldown": 10,
-            "CostType": "UltimateSp",
-            "CostValue": 70,
-            "Params": [
-                {
-                    "Text": "Biaya Energi Ultimate",
-                    "ConditionId": "",
-                    "Values": [
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70
-                    ]
-                },
-                {
-                    "Text": "Cooldown",
-                    "ConditionId": "",
-                    "Values": [
-                        "10dtk",
-                        "10dtk",
-                        "10dtk",
-                        "10dtk",
-                        "10dtk",
-                        "10dtk",
-                        "10dtk",
-                        "10dtk",
-                        "10dtk",
-                        "10dtk",
-                        "10dtk",
-                        "10dtk"
-                    ]
-                },
-                {
-                    "Text": "Pengganda DMG",
-                    "ConditionId": "",
-                    "Values": [
-                        "489%",
-                        "538%",
-                        "586%",
-                        "635%",
-                        "684%",
-                        "733%",
-                        "782%",
-                        "831%",
-                        "880%",
-                        "941%",
-                        "1014%",
-                        "1100%"
-                    ]
-                },
-                {
-                    "Text": "Stagger",
-                    "ConditionId": "",
-                    "Values": [
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "20",
-                        "20",
-                        "20"
-                    ]
-                }
-            ]
-        },
         "chr_0021_whiten_NormalAttack": {
             "Icon": "skillicon/icon_attack_lance",
             "Element": "Physical",
@@ -321,9 +169,9 @@
             "Desc": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>17</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Pengganda BATK SEQ 1",
@@ -434,9 +282,201 @@
                     ]
                 }
             ]
+        },
+        "chr_0021_whiten_NormalSkill": {
+            "Icon": "skillicon/icon_skill_whiten_01",
+            "Element": "Cryst",
+            "Name": "Onomatopoeia",
+            "Desc": "Tusukan tombak yang menembakkan gelombang suara beku sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> dan mengakibatkan <#ba.crystinflict>Cryo Infliction</> kepada semua musuh yang berada di lintasan lurusnya.",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "Biaya SP",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "Pengganda DMG",
+                    "ConditionId": "",
+                    "Values": [
+                        "156%",
+                        "171%",
+                        "187%",
+                        "202%",
+                        "218%",
+                        "234%",
+                        "249%",
+                        "265%",
+                        "280%",
+                        "300%",
+                        "323%",
+                        "350%"
+                    ]
+                },
+                {
+                    "Text": "Stagger",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0021_whiten_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_whiten_01",
+            "Element": "Physical",
+            "Name": "Tremolo",
+            "Desc": "Estella akan mengerahkan seluruh kekuatannya untuk menghantamkan batang tombaknya dengan kuat sehingga akan menimbulkan <@ba.pd>Physical DMG</> kepada semua musuh di area melingkar di sekitarnya. Skill ini secara paksa akan mengakibatkan <#ba.airborne>Lift</> kepada musuh yang sedang terkena <#ba.physicalvul>Physical Susceptibility</>.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 10.0,
+            "CostType": "UltimateSp",
+            "CostValue": 70.0,
+            "Params": [
+                {
+                    "Text": "Biaya Energi Ultimate",
+                    "ConditionId": "",
+                    "Values": [
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0
+                    ]
+                },
+                {
+                    "Text": "Cooldown",
+                    "ConditionId": "",
+                    "Values": [
+                        "10dtk",
+                        "10dtk",
+                        "10dtk",
+                        "10dtk",
+                        "10dtk",
+                        "10dtk",
+                        "10dtk",
+                        "10dtk",
+                        "10dtk",
+                        "10dtk",
+                        "10dtk",
+                        "10dtk"
+                    ]
+                },
+                {
+                    "Text": "Pengganda DMG",
+                    "ConditionId": "",
+                    "Values": [
+                        "489%",
+                        "538%",
+                        "586%",
+                        "635%",
+                        "684%",
+                        "733%",
+                        "782%",
+                        "831%",
+                        "880%",
+                        "941%",
+                        "1014%",
+                        "1100%"
+                    ]
+                },
+                {
+                    "Text": "Stagger",
+                    "ConditionId": "",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                }
+            ]
         }
     },
     "NodeSkillMap": {
+        "chr_0021_whiten_passive_skill_0_1": {
+            "Icon": "icon_talent_whiten_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Commiseration",
+            "Desc": "Saat mengaktifkan <#ba.crystbreak>Shatter</>, skill tarung <@ba.key>Onomatopoeia</> berikutnya yang digunakan akan <#ba.return>mengembalikan</> <@ba.vup>7.5</> SP. Efek ini tidak bisa ditumpuk.",
+            "Type": 4
+        },
+        "chr_0021_whiten_passive_skill_0_2": {
+            "Icon": "icon_talent_whiten_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Commiseration",
+            "Desc": "Saat mengaktifkan <#ba.crystbreak>Shatter</>, skill tarung <@ba.key>Onomatopoeia</> berikutnya yang digunakan akan <#ba.return>mengembalikan</> <@ba.vup>15</> SP. Efek ini tidak bisa ditumpuk.",
+            "Type": 4
+        },
+        "chr_0021_whiten_passive_skill_1_1": {
+            "Icon": "icon_talent_whiten_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Laziness Pays Off Now",
+            "Desc": "Mengabaikan <#ba.crystonchar>Cryo Infliction</> dan terkena <@ba.vup>-10%</> <@ba.cryst>Cryo DMG</>.",
+            "Type": 4
+        },
+        "chr_0021_whiten_passive_skill_1_2": {
+            "Icon": "icon_talent_whiten_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Laziness Pays Off Now",
+            "Desc": "Mengabaikan <#ba.crystonchar>Cryo Infliction</> dan terkena <@ba.vup>-20%</> <@ba.cryst>Cryo DMG</>.",
+            "Type": 4
+        },
+        "fac_chr_0021_whiten_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "Fragmented Rest α",
+            "Desc": "Saat ditugaskan ke Nexus Kontrol, Regen Suasana Hati semua operator akan meningkat sebesar +8%",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
         "fac_chr_0021_whiten_0_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
             "Name": "Fragmented Rest β",
@@ -453,52 +493,12 @@
             "Index": 3,
             "Type": 5
         },
-        "chr_0021_whiten_passive_skill_0_1": {
-            "Icon": "icon_talent_whiten_01",
-            "Level": 1,
-            "Index": 0,
-            "Name": "Commiseration",
-            "Desc": "Saat mengaktifkan <#ba.crystbreak>Shatter</>, skill tarung <@ba.key>Onomatopoeia</> berikutnya yang digunakan akan <#ba.return>mengembalikan</> <@ba.vup>7.5</> SP. Efek ini tidak bisa ditumpuk.",
-            "Type": 4
-        },
-        "chr_0021_whiten_passive_skill_1_1": {
-            "Icon": "icon_talent_whiten_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "Laziness Pays Off Now",
-            "Desc": "Mengabaikan <#ba.crystonchar>Cryo Infliction</> dan terkena <@ba.vup>-10%</> <@ba.cryst>Cryo DMG</>.",
-            "Type": 4
-        },
         "fac_chr_0021_whiten_1_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
             "Name": "Frequency Monitoring γ",
             "Desc": "Saat ditugaskan ke Ruang Resepsionis, efisiensi pengumpulan petunjuk operator akan meningkat sebesar +30%",
             "Level": 2,
             "Index": 3,
-            "Type": 5
-        },
-        "chr_0021_whiten_passive_skill_1_2": {
-            "Icon": "icon_talent_whiten_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "Laziness Pays Off Now",
-            "Desc": "Mengabaikan <#ba.crystonchar>Cryo Infliction</> dan terkena <@ba.vup>-20%</> <@ba.cryst>Cryo DMG</>.",
-            "Type": 4
-        },
-        "chr_0021_whiten_passive_skill_0_2": {
-            "Icon": "icon_talent_whiten_01",
-            "Level": 2,
-            "Index": 0,
-            "Name": "Commiseration",
-            "Desc": "Saat mengaktifkan <#ba.crystbreak>Shatter</>, skill tarung <@ba.key>Onomatopoeia</> berikutnya yang digunakan akan <#ba.return>mengembalikan</> <@ba.vup>15</> SP. Efek ini tidak bisa ditumpuk.",
-            "Type": 4
-        },
-        "fac_chr_0021_whiten_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
-            "Name": "Fragmented Rest α",
-            "Desc": "Saat ditugaskan ke Nexus Kontrol, Regen Suasana Hati semua operator akan meningkat sebesar +8%",
-            "Level": 1,
-            "Index": 2,
             "Type": 5
         }
     },

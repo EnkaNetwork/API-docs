@@ -9,17 +9,17 @@
     "MainAttrId": 40,
     "SubAttrId": 41,
     "AttributeNodes": {
-        "chr_0028_wulfa_7": {
-            "40": 20
-        },
-        "chr_0028_wulfa_5": {
-            "40": 15
-        },
         "chr_0028_wulfa_1": {
-            "40": 10
+            "40": 10.0
         },
         "chr_0028_wulfa_3": {
-            "40": 15
+            "40": 15.0
+        },
+        "chr_0028_wulfa_5": {
+            "40": 15.0
+        },
+        "chr_0028_wulfa_7": {
+            "40": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "ATTIVAZIONE COMBO: quando un nemico ha sia <#ba.noguard>Vulnerabilità</> sia accumuli di <#ba.spellinflict>Afflizione da Arti</>.\nL'abilità combo di Rossi ha due sequenze consecutive. SEQUENZA COMBO 1: infligge <@ba.pd>danni fisici</> al bersaglio.\nSEQUENZA COMBO 2: <#ba.consume>consuma</> tutti gli accumuli di <#ba.spellinflict>Afflizione da Arti</> del bersaglio, infligge <@ba.pd>danni fisici</> in base al numero di accumuli di Afflizione da Arti <#ba.consume>consumati</>, applica 1 unità di <#ba.airborne>Sospensione</> e potenzia le probabilità di critico e i danni critici inflitti di Rossi contemporaneamente.\nEseguire la SEQUENZA COMBO 2 con <@ba.key>tempismo perfetto</> applica un ulteriore accumulo di <#ba.noguard>Vulnerabilità</>.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Tempo di recupero",
@@ -143,7 +143,7 @@
                     ]
                 },
                 {
-                    "Text": "Potenziamento probabilità di critico",
+                    "Text": "Probabilità di critico",
                     "ConditionId": "",
                     "Values": [
                         "15%",
@@ -223,9 +223,9 @@
             "Desc": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>18</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Moltiplicatore SEQ ATTB 1",
@@ -355,6 +355,109 @@
                 }
             ]
         },
+        "chr_0028_wulfa_NormalSkill": {
+            "Icon": "skillicon/icon_skill_wulfa_01",
+            "Element": "Physical",
+            "Name": "Ombra cremisi",
+            "Desc": "Si lancia alla carica contro il bersaglio per infliggere <@ba.pd>danni fisici</> e applicare <#ba.airborne>Sospensione</>.\nSe il bersaglio ha già uno o più accumuli di <#ba.noguard>Vulnerabilità</>, l'abilità scatena anche un <@ba.key>Balzo di lupo</> sul bersaglio che infligge <@ba.fire>danni da fuoco</>.",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "Costo PA",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "Moltiplicatore danni SEQ 1",
+                    "ConditionId": "",
+                    "Values": [
+                        "85%",
+                        "94%",
+                        "102%",
+                        "111%",
+                        "119%",
+                        "128%",
+                        "137%",
+                        "145%",
+                        "154%",
+                        "164%",
+                        "177%",
+                        "192%"
+                    ]
+                },
+                {
+                    "Text": "Vacillamento SEQ 1",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "Moltiplicatore danni SEQ 2",
+                    "ConditionId": "",
+                    "Values": [
+                        "128%",
+                        "141%",
+                        "153%",
+                        "166%",
+                        "179%",
+                        "192%",
+                        "204%",
+                        "217%",
+                        "230%",
+                        "246%",
+                        "265%",
+                        "288%"
+                    ]
+                },
+                {
+                    "Text": "Vacillamento SEQ 2",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "12",
+                        "12",
+                        "12",
+                        "15"
+                    ]
+                }
+            ]
+        },
         "chr_0028_wulfa_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_wulfa_01",
             "Element": "Fire",
@@ -362,26 +465,26 @@
             "Desc": "Rossi fa svolazzare il mantello e scatena una raffica di colpi che infliggono rapidamente una serie di <@ba.fire>danni da fuoco</> al bersaglio, quindi esegue una sequenza di due attacchi con il suo pugnale, infliggendo ingenti <@ba.fire>danni da fuoco</> e applicando <#ba.fireinflict>Afflizione da fuoco</>.\n<@ba.info>Se l'abilità mette a segno un colpo critico, infligge danni critici maggiori.</>",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 10,
+            "Cooldown": 10.0,
             "CostType": "UltimateSp",
-            "CostValue": 110,
+            "CostValue": 110.0,
             "Params": [
                 {
                     "Text": "Costo energia suprema",
                     "ConditionId": "",
                     "Values": [
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0
                     ]
                 },
                 {
@@ -493,112 +596,17 @@
                     ]
                 }
             ]
-        },
-        "chr_0028_wulfa_NormalSkill": {
-            "Icon": "skillicon/icon_skill_wulfa_01",
-            "Element": "Physical",
-            "Name": "Ombra cremisi",
-            "Desc": "Si lancia alla carica contro il bersaglio per infliggere <@ba.pd>danni fisici</> e applicare <#ba.airborne>Sospensione</>.\nSe il bersaglio ha già uno o più accumuli di <#ba.noguard>Vulnerabilità</>, l'abilità scatena anche un <@ba.key>Balzo di lupo</> sul bersaglio che infligge <@ba.fire>danni da fuoco</>.",
-            "ConditionData": {},
-            "Type": 1,
-            "Cooldown": 0,
-            "CostType": "Atb",
-            "CostValue": 100,
-            "Params": [
-                {
-                    "Text": "Costo PA",
-                    "ConditionId": "",
-                    "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
-                    ]
-                },
-                {
-                    "Text": "Moltiplicatore danni SEQ 1",
-                    "ConditionId": "",
-                    "Values": [
-                        "85%",
-                        "94%",
-                        "102%",
-                        "111%",
-                        "119%",
-                        "128%",
-                        "137%",
-                        "145%",
-                        "154%",
-                        "164%",
-                        "177%",
-                        "192%"
-                    ]
-                },
-                {
-                    "Text": "Vacillamento SEQ 1",
-                    "ConditionId": "",
-                    "Values": [
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5"
-                    ]
-                },
-                {
-                    "Text": "Moltiplicatore danni SEQ 2",
-                    "ConditionId": "",
-                    "Values": [
-                        "128%",
-                        "141%",
-                        "153%",
-                        "166%",
-                        "179%",
-                        "192%",
-                        "204%",
-                        "217%",
-                        "230%",
-                        "246%",
-                        "265%",
-                        "288%"
-                    ]
-                },
-                {
-                    "Text": "Vacillamento SEQ 2",
-                    "ConditionId": "",
-                    "Values": [
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "12",
-                        "12",
-                        "12",
-                        "15"
-                    ]
-                }
-            ]
         }
     },
     "NodeSkillMap": {
+        "chr_0028_wulfa_passive_skill_0_1": {
+            "Icon": "icon_talent_wulfa_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Morsi e graffi",
+            "Desc": "Abilità di combattimento migliorata: dopo che <@ba.key>Balzi di lupo</> infligge danni, Rossi applica <#ba.rossi>Marchio dell'artiglio affilato</> al bersaglio per <@ba.vup>15</> s. Questo effetto non si accumula.\nPer tutta la durata di <#ba.rossi>Marchio dell'artiglio affilato</>, il bersaglio subisce <@ba.pd>danni fisici</> pari a un <@ba.vup>25%</> dell'ATT di Rossi al secondo e <@ba.vup>+6%</> di <@ba.pd>danni fisici</> e <@ba.fire>danni da fuoco</>.",
+            "Type": 4
+        },
         "chr_0028_wulfa_passive_skill_0_2": {
             "Icon": "icon_talent_wulfa_01",
             "Level": 2,
@@ -607,36 +615,12 @@
             "Desc": "Abilità di combattimento migliorata: dopo che <@ba.key>Balzi di lupo</> infligge danni, Rossi applica <#ba.rossi>Marchio dell'artiglio affilato</> al bersaglio per <@ba.vup>25</> s. Questo effetto non si accumula.\nPer tutta la durata di <#ba.rossi>Marchio dell'artiglio affilato</>, il bersaglio subisce <@ba.pd>danni fisici</> pari a un <@ba.vup>30%</> dell'ATT di Rossi al secondo e <@ba.vup>+12%</> di <@ba.pd>danni fisici</> e <@ba.fire>danni da fuoco</>.",
             "Type": 4
         },
-        "fac_chr_0028_wulfa_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
-            "Name": "Profumo di caccia β",
-            "Desc": "Assegna alla sala di ricevimento per aumentare del 20% l'efficienza di raccolta indizi degli operatori.",
+        "chr_0028_wulfa_passive_skill_1_1": {
+            "Icon": "icon_talent_wulfa_02",
             "Level": 1,
-            "Index": 3,
-            "Type": 5
-        },
-        "fac_chr_0028_wulfa_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
-            "Name": "Galateo del clan β",
-            "Desc": "Assegna alla sala di ricevimento per rallentare il calo dell'umore di tutti gli operatori al suo interno del 14%.",
-            "Level": 1,
-            "Index": 2,
-            "Type": 5
-        },
-        "fac_chr_0028_wulfa_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
-            "Name": "Profumo di caccia γ",
-            "Desc": "Assegna alla sala di ricevimento per aumentare del 30% l'efficienza di raccolta indizi degli operatori.",
-            "Level": 2,
-            "Index": 3,
-            "Type": 5
-        },
-        "chr_0028_wulfa_passive_skill_0_1": {
-            "Icon": "icon_talent_wulfa_01",
-            "Level": 1,
-            "Index": 0,
-            "Name": "Morsi e graffi",
-            "Desc": "Abilità di combattimento migliorata: dopo che <@ba.key>Balzi di lupo</> infligge danni, Rossi applica <#ba.rossi>Marchio dell'artiglio affilato</> al bersaglio per <@ba.vup>15</> s. Questo effetto non si accumula.\nPer tutta la durata di <#ba.rossi>Marchio dell'artiglio affilato</>, il bersaglio subisce <@ba.pd>danni fisici</> pari a un <@ba.vup>25%</> dell'ATT di Rossi al secondo e <@ba.vup>+6%</> di <@ba.pd>danni fisici</> e <@ba.fire>danni da fuoco</>.",
+            "Index": 1,
+            "Name": "Furore incontenibile",
+            "Desc": "Quando l'abilità di Rossi infligge danni critici a un nemico con il <#ba.rossi>Marchio dell'artiglio affilato</>, attiva un altro colpo che infligge <@ba.fire>danni da fuoco</> pari a un <@ba.vup>12%</> dell'ATT di Rossi e ripristina PS a Rossi pari a <@ba.heal>(Intelletto x 0.04)</>. Se il bersaglio è anche affetto da <#ba.burning>Combustione</>, i danni e il ripristino dei PS aumentano a <@ba.vup>1.5</> volte.",
             "Type": 4
         },
         "chr_0028_wulfa_passive_skill_1_2": {
@@ -647,6 +631,14 @@
             "Desc": "Quando l'abilità di Rossi infligge danni critici a un nemico con il <#ba.rossi>Marchio dell'artiglio affilato</>, attiva un altro colpo che infligge <@ba.fire>danni da fuoco</> pari a un <@ba.vup>24%</> dell'ATT di Rossi e ripristina PS a Rossi pari a <@ba.heal>(Intelletto x 0.08)</>. Se il bersaglio è anche affetto da <#ba.burning>Combustione</>, i danni e il ripristino dei PS aumentano a <@ba.vup>1.5</> volte.",
             "Type": 4
         },
+        "fac_chr_0028_wulfa_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
+            "Name": "Galateo del clan β",
+            "Desc": "Assegna alla sala di ricevimento per rallentare il calo dell'umore di tutti gli operatori al suo interno del 14%.",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
         "fac_chr_0028_wulfa_0_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
             "Name": "Galateo del clan γ",
@@ -655,13 +647,21 @@
             "Index": 2,
             "Type": 5
         },
-        "chr_0028_wulfa_passive_skill_1_1": {
-            "Icon": "icon_talent_wulfa_02",
+        "fac_chr_0028_wulfa_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
+            "Name": "Profumo di caccia β",
+            "Desc": "Assegna alla sala di ricevimento per aumentare del 20% l'efficienza di raccolta indizi degli operatori.",
             "Level": 1,
-            "Index": 1,
-            "Name": "Furore incontenibile",
-            "Desc": "Quando l'abilità di Rossi infligge danni critici a un nemico con il <#ba.rossi>Marchio dell'artiglio affilato</>, attiva un altro colpo che infligge <@ba.fire>danni da fuoco</> pari a un <@ba.vup>12%</> dell'ATT di Rossi e ripristina PS a Rossi pari a <@ba.heal>(Intelletto x 0.04)</>. Se il bersaglio è anche affetto da <#ba.burning>Combustione</>, i danni e il ripristino dei PS aumentano a <@ba.vup>1.5</> volte.",
-            "Type": 4
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0028_wulfa_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
+            "Name": "Profumo di caccia γ",
+            "Desc": "Assegna alla sala di ricevimento per aumentare del 30% l'efficienza di raccolta indizi degli operatori.",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
         }
     },
     "Potentials": {

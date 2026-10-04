@@ -1,0 +1,743 @@
+{
+    "StrId": "chr_0038_purrche",
+    "Name": "Purrchena",
+    "Rarity": 5,
+    "Element": "Physical",
+    "Profession": "DEFENDER",
+    "Conditions": {},
+    "WeaponType": "Sword",
+    "MainAttrId": 39,
+    "SubAttrId": 42,
+    "AttributeNodes": {
+        "chr_0038_purrche_1": {
+            "39": 10.0
+        },
+        "chr_0038_purrche_3": {
+            "39": 15.0
+        },
+        "chr_0038_purrche_5": {
+            "39": 15.0
+        },
+        "chr_0038_purrche_7": {
+            "39": 20.0
+        }
+    },
+    "SkillInfoMap": {
+        "chr_0038_purrche_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_purrche_01",
+            "Element": "Physical",
+            "Name": "CAKE OR “PREZZIE”",
+            "Desc": "PEMICU KOMBO: Saat operator terkontrol diserang.\nMelempar <@ba.key>Kotak Hadiah</> ke arah operator terkontrol. <@ba.key>Kotak Hadiah</> akan terbuka setelah beberapa saat, lalu memberikan <@ba.heal>HP Treatment</> kepada operator di sekitarnya, secara acak memberikan salah satu item berikut, dan mengaktifkan efek dari item yang diberikan itu:\n<@ba.key>Bom</>: Menimbulkan <@ba.pd>Physical DMG</> dan Stagger tambahan kepada musuh di dalam area efek (AOE).\n<@ba.key>Karya Tangan</>: Terus-menerus menarik musuh di sekitarnya dan menimbulkan <@ba.pd>Physical DMG</>.\n<@ba.key>Makanan Penutup Lezat</>: Memberikan <@ba.heal>HP treatment</> kepada operator terkontrol.\nAtribut Will akan meningkatkan jumlah HP treatment.",
+            "ConditionData": {},
+            "Type": 2,
+            "Cooldown": 24.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Cooldown",
+                    "ConditionId": "",
+                    "Values": [
+                        "24dtk",
+                        "24dtk",
+                        "24dtk",
+                        "24dtk",
+                        "24dtk",
+                        "24dtk",
+                        "24dtk",
+                        "24dtk",
+                        "24dtk",
+                        "24dtk",
+                        "24dtk",
+                        "24dtk"
+                    ]
+                },
+                {
+                    "Text": "Treatment Dasar",
+                    "ConditionId": "",
+                    "Values": [
+                        "216",
+                        "259",
+                        "302",
+                        "346",
+                        "367",
+                        "389",
+                        "410",
+                        "432",
+                        "454",
+                        "464",
+                        "475",
+                        "486"
+                    ]
+                },
+                {
+                    "Text": "Peningkatan Treatment per Will",
+                    "ConditionId": "",
+                    "Values": [
+                        "0.5",
+                        "0.6",
+                        "0.71",
+                        "0.81",
+                        "0.86",
+                        "0.91",
+                        "0.96",
+                        "1.01",
+                        "1.06",
+                        "1.08",
+                        "1.11",
+                        "1.13"
+                    ]
+                },
+                {
+                    "Text": "Pengganda DMG Bom",
+                    "ConditionId": "",
+                    "Values": [
+                        "133%",
+                        "147%",
+                        "160%",
+                        "173%",
+                        "187%",
+                        "200%",
+                        "213%",
+                        "227%",
+                        "240%",
+                        "257%",
+                        "277%",
+                        "300%"
+                    ]
+                },
+                {
+                    "Text": "Stagger Bom",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Karya Tangan: Pengganda DMG",
+                    "ConditionId": "",
+                    "Values": [
+                        "66%",
+                        "72%",
+                        "79%",
+                        "85%",
+                        "95%",
+                        "101%",
+                        "108%",
+                        "114%",
+                        "120%",
+                        "127%",
+                        "138%",
+                        "150%"
+                    ]
+                },
+                {
+                    "Text": "Makanan Penutup Lezat: Treatment Dasar",
+                    "ConditionId": "",
+                    "Values": [
+                        "144",
+                        "173",
+                        "202",
+                        "230",
+                        "245",
+                        "259",
+                        "274",
+                        "288",
+                        "302",
+                        "310",
+                        "317",
+                        "324"
+                    ]
+                },
+                {
+                    "Text": "Makanan Penutup Lezat: Peningkatan Treatment per Will",
+                    "ConditionId": "",
+                    "Values": [
+                        "0.34",
+                        "0.4",
+                        "0.47",
+                        "0.54",
+                        "0.57",
+                        "0.6",
+                        "0.64",
+                        "0.67",
+                        "0.71",
+                        "0.72",
+                        "0.74",
+                        "0.76"
+                    ]
+                },
+                {
+                    "Text": "Perolehan Energi Ultimate",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0038_purrche_NormalAttack": {
+            "Icon": "skillicon/icon_attack_sword",
+            "Element": "Physical",
+            "Name": "DESSERT! HAVE SOME!",
+            "Desc": "SERANGAN DASAR: \nSerangan dengan maksimum 3 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>21</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP.",
+            "ConditionData": {},
+            "Type": 0,
+            "Cooldown": 0.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Pengganda BATK SEQ 1",
+                    "ConditionId": "",
+                    "Values": [
+                        "48%",
+                        "53%",
+                        "58%",
+                        "62%",
+                        "67%",
+                        "72%",
+                        "77%",
+                        "82%",
+                        "86%",
+                        "92%",
+                        "100%",
+                        "108%"
+                    ]
+                },
+                {
+                    "Text": "Pengganda BATK SEQ 2",
+                    "ConditionId": "",
+                    "Values": [
+                        "52%",
+                        "57%",
+                        "62%",
+                        "67%",
+                        "72%",
+                        "77%",
+                        "82%",
+                        "88%",
+                        "93%",
+                        "99%",
+                        "107%",
+                        "116%"
+                    ]
+                },
+                {
+                    "Text": "Pengganda BATK SEQ 3",
+                    "ConditionId": "",
+                    "Values": [
+                        "102%",
+                        "112%",
+                        "122%",
+                        "133%",
+                        "143%",
+                        "153%",
+                        "163%",
+                        "173%",
+                        "184%",
+                        "196%",
+                        "212%",
+                        "230%"
+                    ]
+                },
+                {
+                    "Text": "Pengganda ATK Penuntas",
+                    "ConditionId": "",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Pengganda ATK Menukik",
+                    "ConditionId": "",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "chr_0038_purrche_NormalSkill": {
+            "Icon": "skillicon/icon_skill_purrche_01",
+            "Element": "Natural",
+            "Name": "I’M NOT SLEEPING!",
+            "Desc": "Purrchena akan mengangkat perisainya untuk memblokir serangan dan langsung <#ba.return>mengembalikan</> sejumlah SP. Saat perisai Purrchena terangkat, dia akan memberikan <#ba.guard>Protection</> kepada dirinya sendiri dan operator di sekitarnya. Selama skill tarung aktif, pemblokiran serangan pertama yang berhasil dilakukan akan memperpanjang durasi perisai aktif dan <#ba.return>mengembalikan</> SP lagi. Setelah dilancarkan, skill tarung Purrchena akan diubah menjadi <@ba.key>LEAVE MY FRIENDS ALONE!</> untuk sementara.\n<@ba.key>LEAVE MY FRIENDS ALONE!</>: Purrchena akan menyeruduk target di depannya untuk menimbulkan <@ba.natur>Nature DMG</> dan mengakibatkan <#ba.naturalinflict>Nature Infliction</>.\n<@ba.info>Protection yang diberikan selama mengangkat perisai akan berkurang setiap kali berhasil memblokir serangan.</>",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Biaya SP",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "Protection",
+                    "ConditionId": "",
+                    "Values": [
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%",
+                        "90%"
+                    ]
+                },
+                {
+                    "Text": "Durasi Perisai Aktif (dtk)",
+                    "ConditionId": "",
+                    "Values": [
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3"
+                    ]
+                },
+                {
+                    "Text": "Durasi Perisai Aktif Setelah Berhasil Memblokir (dtk)",
+                    "ConditionId": "",
+                    "Values": [
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3",
+                        "3"
+                    ]
+                },
+                {
+                    "Text": "Pengganda DMG Serudukan",
+                    "ConditionId": "",
+                    "Values": [
+                        "178%",
+                        "195%",
+                        "213%",
+                        "231%",
+                        "249%",
+                        "266%",
+                        "284%",
+                        "302%",
+                        "320%",
+                        "342%",
+                        "369%",
+                        "400%"
+                    ]
+                },
+                {
+                    "Text": "Stagger Serudukan",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Pengembalian SP",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Tambahan Pengembalian SP",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                }
+            ]
+        },
+        "chr_0038_purrche_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_purrche_01",
+            "Element": "Physical",
+            "Name": "NAUGHTY IS BANNED!",
+            "Desc": "Purrchena akan membuka 3 <@ba.key>Hadiah Feline Besar</>. Setiap <@ba.key>Hadiah Feline Besar</> akan secara acak memberikan <@ba.key>Bom</> atau sebuah <@ba.key>Karya Tangan</>.\nAda peluang bahwa Hadiah ini akan memberikan <@ba.key>Spesial sang Duta</> yang akan mengakibatkan <#ba.spellvul>Arts Susceptibility</> dan menimbulkan <@ba.pd>Physical DMG</> serta Stagger tambahan kepada musuh.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 20.0,
+            "CostType": "UltimateSp",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "Biaya Energi Ultimate",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "Cooldown",
+                    "ConditionId": "",
+                    "Values": [
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk",
+                        "20dtk"
+                    ]
+                },
+                {
+                    "Text": "Pengganda DMG Bom",
+                    "ConditionId": "",
+                    "Values": [
+                        "133%",
+                        "147%",
+                        "160%",
+                        "173%",
+                        "187%",
+                        "200%",
+                        "213%",
+                        "227%",
+                        "240%",
+                        "257%",
+                        "277%",
+                        "300%"
+                    ]
+                },
+                {
+                    "Text": "Stagger Bom",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Karya Tangan: Pengganda DMG",
+                    "ConditionId": "",
+                    "Values": [
+                        "66%",
+                        "72%",
+                        "79%",
+                        "85%",
+                        "95%",
+                        "101%",
+                        "108%",
+                        "114%",
+                        "120%",
+                        "127%",
+                        "138%",
+                        "150%"
+                    ]
+                },
+                {
+                    "Text": "Spesial sang Duta: Peluang Dasar",
+                    "ConditionId": "",
+                    "Values": [
+                        "15%",
+                        "15%",
+                        "15%",
+                        "15%",
+                        "15%",
+                        "15%",
+                        "15%",
+                        "15%",
+                        "18%",
+                        "18%",
+                        "18%",
+                        "20%"
+                    ]
+                },
+                {
+                    "Text": "Spesial sang Duta: Pengganda DMG",
+                    "ConditionId": "",
+                    "Values": [
+                        "267%",
+                        "293%",
+                        "320%",
+                        "347%",
+                        "373%",
+                        "400%",
+                        "427%",
+                        "453%",
+                        "480%",
+                        "513%",
+                        "553%",
+                        "600%"
+                    ]
+                },
+                {
+                    "Text": "Stagger Spesial sang Duta",
+                    "ConditionId": "",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                },
+                {
+                    "Text": "Durasi Susceptibility (dtk)",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "Susceptibility",
+                    "ConditionId": "",
+                    "Values": [
+                        "1.5%",
+                        "1.5%",
+                        "1.5%",
+                        "1.5%",
+                        "1.5%",
+                        "1.5%",
+                        "1.5%",
+                        "1.5%",
+                        "2%",
+                        "2%",
+                        "2%",
+                        "2.5%"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0038_purrche_passive_skill_0_1": {
+            "Icon": "icon_talent_purrche_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Your Sorry Came LATE!",
+            "Desc": "Skill tarung <@ba.key>I’M NOT SLEEPING!</> meningkat: Setelah berhasil memblokir serangan musuh untuk pertama kalinya, skill ini akan memberikan tambahan <@ba.vup>6</> Energi Ultimate. Peluang bahwa <@ba.key>Spesial sang Duta</> dari ultimate berikutnya, <@ba.key>NAUGHTY IS BANNED!</>, meningkat sebesar <@ba.vup>10%</>. Efek ini bisa mencapai <@ba.vup>3</> tumpuk.",
+            "Type": 4
+        },
+        "chr_0038_purrche_passive_skill_0_2": {
+            "Icon": "icon_talent_purrche_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Your Sorry Came LATE!",
+            "Desc": "Skill tarung <@ba.key>I’M NOT SLEEPING!</> meningkat: Setelah berhasil memblokir serangan musuh untuk pertama kalinya, skill ini akan memberikan tambahan <@ba.vup>10</> Energi Ultimate. Peluang bahwa <@ba.key>Spesial sang Duta</> dari ultimate berikutnya, <@ba.key>NAUGHTY IS BANNED!</>, meningkat sebesar <@ba.vup>10%</>. Efek ini bisa mencapai <@ba.vup>3</> tumpuk.",
+            "Type": 4
+        },
+        "chr_0038_purrche_passive_skill_1_1": {
+            "Icon": "icon_talent_purrche_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Ambassador’s Duty",
+            "Desc": "Saat dikerahkan ke dalam pertarungan, semua operator HP Maks dalam tim akan terkena DMG <@ba.vup>50%</> lebih sedikit dari hantaman berikutnya yang diterima.\nUntuk setiap operator, efek ini hanya bisa diaktifkan satu kali setiap <@ba.vup>180</> dtk.",
+            "Type": 4
+        },
+        "chr_0038_purrche_passive_skill_1_2": {
+            "Icon": "icon_talent_purrche_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Ambassador’s Duty",
+            "Desc": "Saat dikerahkan ke dalam pertarungan, semua operator HP Maks dalam tim akan terkena DMG <@ba.vup>50%</> lebih sedikit dari hantaman berikutnya yang diterima.\nUntuk setiap operator, efek ini hanya bisa diaktifkan satu kali setiap <@ba.vup>90</> dtk.",
+            "Type": 4
+        },
+        "fac_chr_0038_purrche_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
+            "Name": "Brand Ambassador α",
+            "Desc": "Saat ditugaskan ke Ruang Resepsionis, operator akan mendapatkan sedikit Peningkatan Peluang Petunjuk 2: TGCC (aktif saat ditugaskan; efek yang tipenya sama tidak bisa ditumpuk)",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0038_purrche_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
+            "Name": "Brand Ambassador β",
+            "Desc": "Saat ditugaskan ke Ruang Resepsionis, operator akan mendapatkan Peningkatan Peluang Petunjuk 2: TGCC (aktif saat ditugaskan; efek yang tipenya sama tidak bisa ditumpuk)",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0038_purrche_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Desserts for the Debrief β",
+            "Desc": "Saat ditugaskan ke Kabin Manufaktur, efisiensi produksi material EXP operator akan meningkat sebesar +20%",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0038_purrche_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Desserts for the Debrief γ",
+            "Desc": "Saat ditugaskan ke Kabin Manufaktur, efisiensi produksi material EXP operator akan meningkat sebesar +30%",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        }
+    },
+    "Potentials": {
+        "1": {
+            "Name": "Warm Like the Sun",
+            "Desc": "Ultimate <@ba.key>NAUGHTY IS BANNED!</> meningkat: Peluang dasar <@ba.key>Spesial sang Duta</> meningkat menjadi <@ba.vup>1.5</> kali nilai aslinya."
+        },
+        "2": {
+            "Name": "“Super Energetic”",
+            "Desc": "DEF <@ba.vup>+20</>, Will <@ba.vup>+20</>."
+        },
+        "3": {
+            "Name": "Useful “Prezzies”",
+            "Desc": "Skill kombo <@ba.key>CAKE OR “PREZZIE”</> meningkat: \n<@ba.key>Bom</>: Pengganda DMG meningkat menjadi <@ba.vup>1.2</> kali nilai aslinya. \n<@ba.key>Karya Tangan</>: Radius efek <@ba.vup>+20%</>. \n<@ba.key>Makanan Penutup Lezat</>: HP treatment meningkat menjadi <@ba.vup>1.2</> kali nilai aslinya."
+        },
+        "4": {
+            "Name": "After the Feast",
+            "Desc": "Ultimate <@ba.key>NAUGHTY IS BANNED!</> meningkat: Biaya energi ultimate <@ba.vup>-15%</>."
+        },
+        "5": {
+            "Name": "Hot Like a BBQ Fire",
+            "Desc": "Ultimate <@ba.key>NAUGHTY IS BANNED!</> meningkat:\nPengganda DMG <@ba.key>Spesial sang Duta</> meningkat menjadi <@ba.vup>1.2</> kali nilai aslinya.\n<@ba.key>Spesial sang Duta</>: <#ba.spellvul>Arts Susceptibility</> meningkat menjadi <@ba.vup>1.2</> kali nilai aslinya."
+        }
+    }
+}

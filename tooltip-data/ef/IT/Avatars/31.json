@@ -9,17 +9,17 @@
     "MainAttrId": 42,
     "SubAttrId": 39,
     "AttributeNodes": {
-        "chr_0021_whiten_5": {
-            "42": 15
-        },
-        "chr_0021_whiten_7": {
-            "42": 20
-        },
         "chr_0021_whiten_1": {
-            "42": 10
+            "42": 10.0
         },
         "chr_0021_whiten_3": {
-            "42": 15
+            "42": 15.0
+        },
+        "chr_0021_whiten_5": {
+            "42": 15.0
+        },
+        "chr_0021_whiten_7": {
+            "42": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "ATTIVAZIONE COMBO: quando un nemico subisce <#ba.frozen>Solidificazione</>. \nSi sposta rapidamente al fianco del nemico per infliggere <@ba.pd>danni fisici</> e usa forzatamente <#ba.airborne>Sospensione</> contro i nemici in una piccola area. Se l'abilità colpisce un bersaglio con <#ba.frozen>Solidificazione</>, infligge danni aggiuntivi e applica <#ba.physicalvul>Suscettibilità fisica</>.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 18,
+            "Cooldown": 18.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Tempo di recupero",
@@ -162,158 +162,6 @@
                 }
             ]
         },
-        "chr_0021_whiten_NormalSkill": {
-            "Icon": "skillicon/icon_skill_whiten_01",
-            "Element": "Cryst",
-            "Name": "Onomatopea",
-            "Desc": "Una stoccata con la lancia che scaglia un flusso di onde sonore gelide, che infliggono <@ba.cryst>danni da ghiaccio</> e applicano <#ba.crystinflict>Afflizione da ghiaccio</> a tutti i nemici lungo il suo percorso rettilineo.",
-            "ConditionData": {},
-            "Type": 1,
-            "Cooldown": 0,
-            "CostType": "Atb",
-            "CostValue": 100,
-            "Params": [
-                {
-                    "Text": "Costo PA",
-                    "ConditionId": "",
-                    "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
-                    ]
-                },
-                {
-                    "Text": "Moltiplicatore danni",
-                    "ConditionId": "",
-                    "Values": [
-                        "156%",
-                        "171%",
-                        "187%",
-                        "202%",
-                        "218%",
-                        "234%",
-                        "249%",
-                        "265%",
-                        "280%",
-                        "300%",
-                        "323%",
-                        "350%"
-                    ]
-                },
-                {
-                    "Text": "Vacillamento",
-                    "ConditionId": "",
-                    "Values": [
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10"
-                    ]
-                }
-            ]
-        },
-        "chr_0021_whiten_UltimateSkill": {
-            "Icon": "skillicon/icon_ultimate_skill_whiten_01",
-            "Element": "Physical",
-            "Name": "Tremolio",
-            "Desc": "Estella usa tutta la sua forza per sferrare un potente colpo con l'asta della lancia, infliggendo <@ba.pd>danni fisici</> a tutti i nemici in un'area circolare attorno a sé. Ai nemici con <#ba.physicalvul>Suscettibilità fisica</>, l'abilità applica forzatamente <#ba.airborne>Sospensione</>.",
-            "ConditionData": {},
-            "Type": 3,
-            "Cooldown": 10,
-            "CostType": "UltimateSp",
-            "CostValue": 70,
-            "Params": [
-                {
-                    "Text": "Costo energia suprema",
-                    "ConditionId": "",
-                    "Values": [
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70
-                    ]
-                },
-                {
-                    "Text": "Tempo di recupero",
-                    "ConditionId": "",
-                    "Values": [
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s",
-                        "10s"
-                    ]
-                },
-                {
-                    "Text": "Moltiplicatore danni",
-                    "ConditionId": "",
-                    "Values": [
-                        "489%",
-                        "538%",
-                        "586%",
-                        "635%",
-                        "684%",
-                        "733%",
-                        "782%",
-                        "831%",
-                        "880%",
-                        "941%",
-                        "1014%",
-                        "1100%"
-                    ]
-                },
-                {
-                    "Text": "Vacillamento",
-                    "ConditionId": "",
-                    "Values": [
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "20",
-                        "20",
-                        "20"
-                    ]
-                }
-            ]
-        },
         "chr_0021_whiten_NormalAttack": {
             "Icon": "skillicon/icon_attack_lance",
             "Element": "Physical",
@@ -321,9 +169,9 @@
             "Desc": "ATTACCO BASE: \nsequenza di massimo quattro attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>17</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Moltiplicatore SEQ ATTB 1",
@@ -434,9 +282,201 @@
                     ]
                 }
             ]
+        },
+        "chr_0021_whiten_NormalSkill": {
+            "Icon": "skillicon/icon_skill_whiten_01",
+            "Element": "Cryst",
+            "Name": "Onomatopea",
+            "Desc": "Una stoccata con la lancia che scaglia un flusso di onde sonore gelide, che infliggono <@ba.cryst>danni da ghiaccio</> e applicano <#ba.crystinflict>Afflizione da ghiaccio</> a tutti i nemici lungo il suo percorso rettilineo.",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "Costo PA",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "Moltiplicatore danni",
+                    "ConditionId": "",
+                    "Values": [
+                        "156%",
+                        "171%",
+                        "187%",
+                        "202%",
+                        "218%",
+                        "234%",
+                        "249%",
+                        "265%",
+                        "280%",
+                        "300%",
+                        "323%",
+                        "350%"
+                    ]
+                },
+                {
+                    "Text": "Vacillamento",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0021_whiten_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_whiten_01",
+            "Element": "Physical",
+            "Name": "Tremolio",
+            "Desc": "Estella usa tutta la sua forza per sferrare un potente colpo con l'asta della lancia, infliggendo <@ba.pd>danni fisici</> a tutti i nemici in un'area circolare attorno a sé. Ai nemici con <#ba.physicalvul>Suscettibilità fisica</>, l'abilità applica forzatamente <#ba.airborne>Sospensione</>.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 10.0,
+            "CostType": "UltimateSp",
+            "CostValue": 70.0,
+            "Params": [
+                {
+                    "Text": "Costo energia suprema",
+                    "ConditionId": "",
+                    "Values": [
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0
+                    ]
+                },
+                {
+                    "Text": "Tempo di recupero",
+                    "ConditionId": "",
+                    "Values": [
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s",
+                        "10s"
+                    ]
+                },
+                {
+                    "Text": "Moltiplicatore danni",
+                    "ConditionId": "",
+                    "Values": [
+                        "489%",
+                        "538%",
+                        "586%",
+                        "635%",
+                        "684%",
+                        "733%",
+                        "782%",
+                        "831%",
+                        "880%",
+                        "941%",
+                        "1014%",
+                        "1100%"
+                    ]
+                },
+                {
+                    "Text": "Vacillamento",
+                    "ConditionId": "",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                }
+            ]
         }
     },
     "NodeSkillMap": {
+        "chr_0021_whiten_passive_skill_0_1": {
+            "Icon": "icon_talent_whiten_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Commiserazione",
+            "Desc": "All'attivazione di <#ba.crystbreak>Infrangimento</>, l'abilità di combattimento <@ba.key>Onomatopea</> successiva <#ba.return>ripristina</> <@ba.vup>7.5</> PA. Questo effetto non si accumula.",
+            "Type": 4
+        },
+        "chr_0021_whiten_passive_skill_0_2": {
+            "Icon": "icon_talent_whiten_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Commiserazione",
+            "Desc": "All'attivazione di <#ba.crystbreak>Infrangimento</>, l'abilità di combattimento <@ba.key>Onomatopea</> successiva <#ba.return>ripristina</> <@ba.vup>15</> PA. Questo effetto non si accumula.",
+            "Type": 4
+        },
+        "chr_0021_whiten_passive_skill_1_1": {
+            "Icon": "icon_talent_whiten_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Pigrizia vincente",
+            "Desc": "Ignora <#ba.crystonchar>Afflizione da ghiaccio</> e subisce un <@ba.vup>-10%</> di <@ba.cryst>danni da ghiaccio</>.",
+            "Type": 4
+        },
+        "chr_0021_whiten_passive_skill_1_2": {
+            "Icon": "icon_talent_whiten_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Pigrizia vincente",
+            "Desc": "Ignora <#ba.crystonchar>Afflizione da ghiaccio</> e subisce un <@ba.vup>-20%</> di <@ba.cryst>danni da ghiaccio</>.",
+            "Type": 4
+        },
+        "fac_chr_0021_whiten_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "Riposo frammentato α",
+            "Desc": "Assegna al Nexus di controllo per aumentare dell'8% la rigenerazione dell'umore di tutti gli operatori.",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
         "fac_chr_0021_whiten_0_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
             "Name": "Riposo frammentato β",
@@ -453,52 +493,12 @@
             "Index": 3,
             "Type": 5
         },
-        "chr_0021_whiten_passive_skill_0_1": {
-            "Icon": "icon_talent_whiten_01",
-            "Level": 1,
-            "Index": 0,
-            "Name": "Commiserazione",
-            "Desc": "All'attivazione di <#ba.crystbreak>Infrangimento</>, l'abilità di combattimento <@ba.key>Onomatopea</> successiva <#ba.return>ripristina</> <@ba.vup>7.5</> PA. Questo effetto non si accumula.",
-            "Type": 4
-        },
-        "chr_0021_whiten_passive_skill_1_1": {
-            "Icon": "icon_talent_whiten_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "Pigrizia vincente",
-            "Desc": "Ignora <#ba.crystonchar>Afflizione da ghiaccio</> e subisce un <@ba.vup>-10%</> di <@ba.cryst>danni da ghiaccio</>.",
-            "Type": 4
-        },
         "fac_chr_0021_whiten_1_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
             "Name": "Monitoraggio frequenza γ",
             "Desc": "Assegna alla sala di ricevimento per aumentare del 30% l'efficienza di raccolta indizi degli operatori.",
             "Level": 2,
             "Index": 3,
-            "Type": 5
-        },
-        "chr_0021_whiten_passive_skill_1_2": {
-            "Icon": "icon_talent_whiten_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "Pigrizia vincente",
-            "Desc": "Ignora <#ba.crystonchar>Afflizione da ghiaccio</> e subisce un <@ba.vup>-20%</> di <@ba.cryst>danni da ghiaccio</>.",
-            "Type": 4
-        },
-        "chr_0021_whiten_passive_skill_0_2": {
-            "Icon": "icon_talent_whiten_01",
-            "Level": 2,
-            "Index": 0,
-            "Name": "Commiserazione",
-            "Desc": "All'attivazione di <#ba.crystbreak>Infrangimento</>, l'abilità di combattimento <@ba.key>Onomatopea</> successiva <#ba.return>ripristina</> <@ba.vup>15</> PA. Questo effetto non si accumula.",
-            "Type": 4
-        },
-        "fac_chr_0021_whiten_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
-            "Name": "Riposo frammentato α",
-            "Desc": "Assegna al Nexus di controllo per aumentare dell'8% la rigenerazione dell'umore di tutti gli operatori.",
-            "Level": 1,
-            "Index": 2,
             "Type": 5
         }
     },

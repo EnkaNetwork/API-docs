@@ -10,19 +10,158 @@
     "SubAttrId": 42,
     "AttributeNodes": {
         "chr_0026_lastrite_1": {
-            "39": 10
+            "39": 10.0
         },
         "chr_0026_lastrite_3": {
-            "39": 15
+            "39": 15.0
         },
         "chr_0026_lastrite_5": {
-            "39": 15
+            "39": 15.0
         },
         "chr_0026_lastrite_7": {
-            "39": 20
+            "39": 20.0
         }
     },
     "SkillInfoMap": {
+        "chr_0026_lastrite_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_lastrite_01",
+            "Element": "Cryst",
+            "Name": "Divoratrice dell'inverno",
+            "Desc": "ATTIVAZIONE COMBO: quando un nemico ha 3 o più accumuli di <#ba.crystinflict>Afflizione da ghiaccio</>. \nIntrappola il nemico bersaglio in uno spuntone di ghiaccio e lo frantuma, <#ba.consume>consumando</> tutti gli accumuli di <#ba.crystinflict>Afflizione da ghiaccio</> di quel nemico. Il numero di accumuli di <#ba.crystinflict>Afflizione da ghiaccio</> <#ba.consume>consumati</> determina la quantità di <@ba.cryst>danni da ghiaccio</> inflitta al nemico e l'energia suprema che ottiene Last Rite.",
+            "ConditionData": {},
+            "Type": 2,
+            "Cooldown": 9.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Tempo di recupero",
+                    "ConditionId": "",
+                    "Values": [
+                        "9s",
+                        "9s",
+                        "9s",
+                        "9s",
+                        "9s",
+                        "9s",
+                        "9s",
+                        "9s",
+                        "9s",
+                        "9s",
+                        "9s",
+                        "9s"
+                    ]
+                },
+                {
+                    "Text": "Moltiplicatore danni Frammento di ghiaccio",
+                    "ConditionId": "",
+                    "Values": [
+                        "71%",
+                        "78%",
+                        "85%",
+                        "92%",
+                        "99%",
+                        "107%",
+                        "114%",
+                        "121%",
+                        "128%",
+                        "137%",
+                        "147%",
+                        "160%"
+                    ]
+                },
+                {
+                    "Text": "Moltiplicatore danni fendente base",
+                    "ConditionId": "",
+                    "Values": [
+                        "71%",
+                        "78%",
+                        "85%",
+                        "92%",
+                        "99%",
+                        "107%",
+                        "114%",
+                        "121%",
+                        "128%",
+                        "137%",
+                        "147%",
+                        "160%"
+                    ]
+                },
+                {
+                    "Text": "Vacillamento fendente",
+                    "ConditionId": "",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                },
+                {
+                    "Text": "Moltiplicatore danni bonus per accumulo di Afflizione",
+                    "ConditionId": "",
+                    "Values": [
+                        "107%",
+                        "117%",
+                        "128%",
+                        "139%",
+                        "149%",
+                        "160%",
+                        "171%",
+                        "181%",
+                        "192%",
+                        "205%",
+                        "221%",
+                        "240%"
+                    ]
+                },
+                {
+                    "Text": "Incremento energia suprema base",
+                    "ConditionId": "",
+                    "Values": [
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40",
+                        "40"
+                    ]
+                },
+                {
+                    "Text": "Incremento energia suprema per accumulo di Afflizione aggiuntivo",
+                    "ConditionId": "",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                }
+            ]
+        },
         "chr_0026_lastrite_NormalAttack": {
             "Icon": "skillicon/icon_attack_claym",
             "Element": "Cryst",
@@ -30,9 +169,9 @@
             "Desc": "ATTACCO BASE: \nsequenza di massimo quattro attacchi che infliggono <@ba.cryst>danni da ghiaccio</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>25</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.cryst>danni da ghiaccio</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.cryst>danni da ghiaccio</> e ripristinano parzialmente i PA.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Moltiplicatore SEQ ATTB 1",
@@ -151,26 +290,26 @@
             "Desc": "Esegue una <@ba.key>Perfusione ipotermica</> sull'arma dell'operatore controllato e <#ba.return>restituisce</> parte dei PA. \nIl successivo <#ba.lastcombo>Colpo finale</> eseguito dall'operatore controllato, entro un certo periodo di tempo, evoca i Miraggi di Last Rite, scatenando un attacco aggiuntivo contro il bersaglio. Questo attacco infligge <@ba.cryst>danni da ghiaccio</> e applica <#ba.crystinflict>Afflizione da ghiaccio</>. \nQuando l'operatore controllato è Last Rite stessa, l'uso di questa abilità di combattimento non ripristina la sequenza dei suoi attacchi base.",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "Costo PA",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -254,26 +393,26 @@
             "Desc": "Last Rite indossa un'armatura di ghiaccio e crea una falce ghiacciata per eseguire 3 sferzate. Mentre questo stato è attivo, ottiene l'immunità a tutti i danni. \nOgni sferzata infligge ingenti <@ba.cryst>danni da ghiaccio</>. \n<@ba.info>Last Rite può ottenere energia suprema solo grazie alle proprie abilità di combattimento e abilità combo.</>",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 20,
+            "Cooldown": 20.0,
             "CostType": "UltimateSp",
-            "CostValue": 240,
+            "CostValue": 240.0,
             "Params": [
                 {
                     "Text": "Costo energia suprema",
                     "ConditionId": "",
                     "Values": [
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240,
-                        240
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0,
+                        240.0
                     ]
                 },
                 {
@@ -403,163 +542,40 @@
                     ]
                 }
             ]
-        },
-        "chr_0026_lastrite_ComboSkill": {
-            "Icon": "skillicon/icon_combo_skill_lastrite_01",
-            "Element": "Cryst",
-            "Name": "Divoratrice dell'inverno",
-            "Desc": "ATTIVAZIONE COMBO: quando un nemico ha 3 o più accumuli di <#ba.crystinflict>Afflizione da ghiaccio</>. \nIntrappola il nemico bersaglio in uno spuntone di ghiaccio e lo frantuma, <#ba.consume>consumando</> tutti gli accumuli di <#ba.crystinflict>Afflizione da ghiaccio</> di quel nemico. Il numero di accumuli di <#ba.crystinflict>Afflizione da ghiaccio</> <#ba.consume>consumati</> determina la quantità di <@ba.cryst>danni da ghiaccio</> inflitta al nemico e l'energia suprema che ottiene Last Rite.",
-            "ConditionData": {},
-            "Type": 2,
-            "Cooldown": 9,
-            "CostType": "UltimateSp",
-            "CostValue": 0,
-            "Params": [
-                {
-                    "Text": "Tempo di recupero",
-                    "ConditionId": "",
-                    "Values": [
-                        "9s",
-                        "9s",
-                        "9s",
-                        "9s",
-                        "9s",
-                        "9s",
-                        "9s",
-                        "9s",
-                        "9s",
-                        "9s",
-                        "9s",
-                        "9s"
-                    ]
-                },
-                {
-                    "Text": "Moltiplicatore danni Frammento di ghiaccio",
-                    "ConditionId": "",
-                    "Values": [
-                        "71%",
-                        "78%",
-                        "85%",
-                        "92%",
-                        "99%",
-                        "107%",
-                        "114%",
-                        "121%",
-                        "128%",
-                        "137%",
-                        "147%",
-                        "160%"
-                    ]
-                },
-                {
-                    "Text": "Moltiplicatore danni fendente base",
-                    "ConditionId": "",
-                    "Values": [
-                        "71%",
-                        "78%",
-                        "85%",
-                        "92%",
-                        "99%",
-                        "107%",
-                        "114%",
-                        "121%",
-                        "128%",
-                        "137%",
-                        "147%",
-                        "160%"
-                    ]
-                },
-                {
-                    "Text": "Vacillamento fendente",
-                    "ConditionId": "",
-                    "Values": [
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15"
-                    ]
-                },
-                {
-                    "Text": "Moltiplicatore danni bonus per accumulo di Afflizione",
-                    "ConditionId": "",
-                    "Values": [
-                        "107%",
-                        "117%",
-                        "128%",
-                        "139%",
-                        "149%",
-                        "160%",
-                        "171%",
-                        "181%",
-                        "192%",
-                        "205%",
-                        "221%",
-                        "240%"
-                    ]
-                },
-                {
-                    "Text": "Incremento energia suprema base",
-                    "ConditionId": "",
-                    "Values": [
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40",
-                        "40"
-                    ]
-                },
-                {
-                    "Text": "Incremento energia suprema per accumulo di Afflizione aggiuntivo",
-                    "ConditionId": "",
-                    "Values": [
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15"
-                    ]
-                }
-            ]
         }
     },
     "NodeSkillMap": {
-        "fac_chr_0026_lastrite_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
-            "Name": "Fama delle Corti Reali α",
-            "Desc": "Assegna alla sala di ricevimento per conferire agli operatori un piccolo indizio 7 UP: Seš'qa (si attiva all'assegnazione; non è possibile accumulare effetti dello stesso tipo).",
+        "chr_0026_lastrite_passive_skill_0_1": {
+            "Icon": "icon_talent_lastrite_01",
             "Level": 1,
-            "Index": 3,
-            "Type": 5
+            "Index": 0,
+            "Name": "Ipotermia",
+            "Desc": "Dopo aver <#ba.consume>consumato</> una qualunque <#ba.spellinflict>Afflizione da Arti</>, Last Rite applica <#ba.crystvul>Suscettibilità al ghiaccio</> al bersaglio con un effetto pari a (numero di accumuli di <#ba.spellinflict>Afflizioni da Arti</> <#ba.consume>consumati</> x <@ba.vup>2%</>) per <@ba.vup>15</> s. Questo effetto non si accumula.",
+            "Type": 4
         },
-        "fac_chr_0026_lastrite_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
-            "Name": "Fama delle Corti Reali β",
-            "Desc": "Assegna alla sala di ricevimento per conferire agli operatori l'indizio 7 UP: Seš'qa (si attiva all'assegnazione; non è possibile accumulare effetti dello stesso tipo).",
+        "chr_0026_lastrite_passive_skill_0_2": {
+            "Icon": "icon_talent_lastrite_01",
             "Level": 2,
-            "Index": 3,
-            "Type": 5
+            "Index": 0,
+            "Name": "Ipotermia",
+            "Desc": "Dopo aver <#ba.consume>consumato</> una qualunque <#ba.spellinflict>Afflizione da Arti</>, Last Rite applica <#ba.crystvul>Suscettibilità al ghiaccio</> al bersaglio con un effetto pari a (numero di accumuli di <#ba.spellinflict>Afflizioni da Arti</> <#ba.consume>consumati</> x <@ba.vup>4%</>) per <@ba.vup>15</> s. Questo effetto non si accumula.",
+            "Type": 4
+        },
+        "chr_0026_lastrite_passive_skill_1_1": {
+            "Icon": "icon_talent_lastrite_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Infragilimento criogenico",
+            "Desc": "Abilità suprema <@ba.key>Servizi di sorveglianza</> migliorata: quando l'abilità suprema infligge danni a un nemico con <#ba.crystvul>Suscettibilità al ghiaccio</>, l'effetto di quella <#ba.crystvul>Suscettibilità al ghiaccio</> è pari a <@ba.vup>1.2</> volte rispetto all'originale.",
+            "Type": 4
+        },
+        "chr_0026_lastrite_passive_skill_1_2": {
+            "Icon": "icon_talent_lastrite_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Infragilimento criogenico",
+            "Desc": "Abilità suprema <@ba.key>Servizi di sorveglianza</> migliorata: quando l'abilità suprema infligge danni a un nemico con <#ba.crystvul>Suscettibilità al ghiaccio</>, l'effetto di quella <#ba.crystvul>Suscettibilità al ghiaccio</> è pari a <@ba.vup>1.5</> volte rispetto all'originale.",
+            "Type": 4
         },
         "fac_chr_0026_lastrite_0_1": {
             "Icon": "spaceshipskillicon/facskill_spaceship_plant_flower",
@@ -577,37 +593,21 @@
             "Index": 2,
             "Type": 5
         },
-        "chr_0026_lastrite_passive_skill_0_2": {
-            "Icon": "icon_talent_lastrite_01",
-            "Level": 2,
-            "Index": 0,
-            "Name": "Ipotermia",
-            "Desc": "Dopo aver <#ba.consume>consumato</> una qualunque <#ba.spellinflict>Afflizione da Arti</>, Last Rite applica <#ba.crystvul>Suscettibilità al ghiaccio</> al bersaglio con un effetto pari a (numero di accumuli di <#ba.spellinflict>Afflizioni da Arti</> <#ba.consume>consumati</> x <@ba.vup>4%</>) per <@ba.vup>15</> s. Questo effetto non si accumula.",
-            "Type": 4
-        },
-        "chr_0026_lastrite_passive_skill_1_2": {
-            "Icon": "icon_talent_lastrite_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "Infragilimento criogenico",
-            "Desc": "Abilità suprema <@ba.key>Servizi di sorveglianza</> migliorata: quando l'abilità suprema infligge danni a un nemico con <#ba.crystvul>Suscettibilità al ghiaccio</>, l'effetto di quella <#ba.crystvul>Suscettibilità al ghiaccio</> è pari a <@ba.vup>1.5</> volte rispetto all'originale.",
-            "Type": 4
-        },
-        "chr_0026_lastrite_passive_skill_0_1": {
-            "Icon": "icon_talent_lastrite_01",
+        "fac_chr_0026_lastrite_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
+            "Name": "Fama delle Corti Reali α",
+            "Desc": "Assegna alla sala di ricevimento per conferire agli operatori un piccolo indizio 7 UP: Seš'qa (si attiva all'assegnazione; non è possibile accumulare effetti dello stesso tipo).",
             "Level": 1,
-            "Index": 0,
-            "Name": "Ipotermia",
-            "Desc": "Dopo aver <#ba.consume>consumato</> una qualunque <#ba.spellinflict>Afflizione da Arti</>, Last Rite applica <#ba.crystvul>Suscettibilità al ghiaccio</> al bersaglio con un effetto pari a (numero di accumuli di <#ba.spellinflict>Afflizioni da Arti</> <#ba.consume>consumati</> x <@ba.vup>2%</>) per <@ba.vup>15</> s. Questo effetto non si accumula.",
-            "Type": 4
+            "Index": 3,
+            "Type": 5
         },
-        "chr_0026_lastrite_passive_skill_1_1": {
-            "Icon": "icon_talent_lastrite_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "Infragilimento criogenico",
-            "Desc": "Abilità suprema <@ba.key>Servizi di sorveglianza</> migliorata: quando l'abilità suprema infligge danni a un nemico con <#ba.crystvul>Suscettibilità al ghiaccio</>, l'effetto di quella <#ba.crystvul>Suscettibilità al ghiaccio</> è pari a <@ba.vup>1.2</> volte rispetto all'originale.",
-            "Type": 4
+        "fac_chr_0026_lastrite_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
+            "Name": "Fama delle Corti Reali β",
+            "Desc": "Assegna alla sala di ricevimento per conferire agli operatori l'indizio 7 UP: Seš'qa (si attiva all'assegnazione; non è possibile accumulare effetti dello stesso tipo).",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
         }
     },
     "Potentials": {

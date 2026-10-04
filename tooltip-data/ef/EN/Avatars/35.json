@@ -9,17 +9,17 @@
     "MainAttrId": 39,
     "SubAttrId": 42,
     "AttributeNodes": {
-        "chr_0020_meurs_3": {
-            "39": 15
-        },
-        "chr_0020_meurs_7": {
-            "39": 20
-        },
         "chr_0020_meurs_1": {
-            "39": 10
+            "39": 10.0
+        },
+        "chr_0020_meurs_3": {
+            "39": 15.0
         },
         "chr_0020_meurs_5": {
-            "39": 15
+            "39": 15.0
+        },
+        "chr_0020_meurs_7": {
+            "39": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "COMBO TRIGGER: When an enemy starts charging up a skill, or when the controlled operator is attacked and falls below 40% HP. \nA powerful downward punch that deals <@ba.pd>Physical DMG</> to the enemy, while granting <#ba.shield>shields</> to self and another teammate (controlled operator prioritized).\nDEF can further increase Shield points.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 35,
+            "Cooldown": 35.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Cooldown",
@@ -180,6 +180,127 @@
                 }
             ]
         },
+        "chr_0020_meurs_NormalAttack": {
+            "Icon": "skillicon/icon_attack_claym",
+            "Element": "Physical",
+            "Name": "Basic Tactics",
+            "Desc": "BASIC ATTACK: \nAn attack with up to 4 sequences that deals <@ba.pd>Physical DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>22</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pd>Physical DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.pd>Physical DMG</> and recovers some SP.",
+            "ConditionData": {},
+            "Type": 0,
+            "Cooldown": 0.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "BATK SEQ 1 Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "35%",
+                        "39%",
+                        "42%",
+                        "46%",
+                        "49%",
+                        "53%",
+                        "56%",
+                        "60%",
+                        "63%",
+                        "67%",
+                        "73%",
+                        "79%"
+                    ]
+                },
+                {
+                    "Text": "BATK SEQ 2 Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "39%",
+                        "42%",
+                        "46%",
+                        "50%",
+                        "54%",
+                        "58%",
+                        "62%",
+                        "65%",
+                        "69%",
+                        "74%",
+                        "80%",
+                        "87%"
+                    ]
+                },
+                {
+                    "Text": "BATK SEQ 3 Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "54%",
+                        "59%",
+                        "65%",
+                        "70%",
+                        "76%",
+                        "81%",
+                        "86%",
+                        "92%",
+                        "97%",
+                        "104%",
+                        "112%",
+                        "122%"
+                    ]
+                },
+                {
+                    "Text": "BATK SEQ 4 Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "71%",
+                        "78%",
+                        "85%",
+                        "92%",
+                        "99%",
+                        "107%",
+                        "114%",
+                        "121%",
+                        "128%",
+                        "137%",
+                        "147%",
+                        "160%"
+                    ]
+                },
+                {
+                    "Text": "Finisher ATK Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Dive ATK Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
         "chr_0020_meurs_NormalSkill": {
             "Icon": "skillicon/icon_skill_meurs_01",
             "Element": "Physical",
@@ -187,26 +308,26 @@
             "Desc": "Raises a shield that can block attacks, grants <#ba.guard>Protection</> to self and nearby operators, and immediately <#ba.return>returns</> some SP. \nWhen attacked while the said shield is raised, perform a retaliation bash that deals <@ba.pd>Physical DMG</> and applies 1 stack of <#ba.noguard>Vulnerability</> to the attacking enemy.",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "SP Cost",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -290,26 +411,26 @@
             "Desc": "Swings the greatsword to perform 2 consecutive slashes to deal <@ba.pd>Physical DMG</> and apply <#ba.weak>Weakness</>, followed by a powerful downward slam that deals massive <@ba.pd>Physical DMG</> and applies <#ba.knockdown>Knock Down</> to all enemies within the area of effect.",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 15,
+            "Cooldown": 15.0,
             "CostType": "UltimateSp",
-            "CostValue": 80,
+            "CostValue": 80.0,
             "Params": [
                 {
                     "Text": "Ultimate Energy Cost",
                     "ConditionId": "",
                     "Values": [
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0
                     ]
                 },
                 {
@@ -475,145 +596,16 @@
                     ]
                 }
             ]
-        },
-        "chr_0020_meurs_NormalAttack": {
-            "Icon": "skillicon/icon_attack_claym",
-            "Element": "Physical",
-            "Name": "Basic Tactics",
-            "Desc": "BASIC ATTACK: \nAn attack with up to 4 sequences that deals <@ba.pd>Physical DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>22</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pd>Physical DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.pd>Physical DMG</> and recovers some SP.",
-            "ConditionData": {},
-            "Type": 0,
-            "Cooldown": 0,
-            "CostType": "UltimateSp",
-            "CostValue": 0,
-            "Params": [
-                {
-                    "Text": "BATK SEQ 1 Multiplier",
-                    "ConditionId": "",
-                    "Values": [
-                        "35%",
-                        "39%",
-                        "42%",
-                        "46%",
-                        "49%",
-                        "53%",
-                        "56%",
-                        "60%",
-                        "63%",
-                        "67%",
-                        "73%",
-                        "79%"
-                    ]
-                },
-                {
-                    "Text": "BATK SEQ 2 Multiplier",
-                    "ConditionId": "",
-                    "Values": [
-                        "39%",
-                        "42%",
-                        "46%",
-                        "50%",
-                        "54%",
-                        "58%",
-                        "62%",
-                        "65%",
-                        "69%",
-                        "74%",
-                        "80%",
-                        "87%"
-                    ]
-                },
-                {
-                    "Text": "BATK SEQ 3 Multiplier",
-                    "ConditionId": "",
-                    "Values": [
-                        "54%",
-                        "59%",
-                        "65%",
-                        "70%",
-                        "76%",
-                        "81%",
-                        "86%",
-                        "92%",
-                        "97%",
-                        "104%",
-                        "112%",
-                        "122%"
-                    ]
-                },
-                {
-                    "Text": "BATK SEQ 4 Multiplier",
-                    "ConditionId": "",
-                    "Values": [
-                        "71%",
-                        "78%",
-                        "85%",
-                        "92%",
-                        "99%",
-                        "107%",
-                        "114%",
-                        "121%",
-                        "128%",
-                        "137%",
-                        "147%",
-                        "160%"
-                    ]
-                },
-                {
-                    "Text": "Finisher ATK Multiplier",
-                    "ConditionId": "",
-                    "Values": [
-                        "400%",
-                        "440%",
-                        "480%",
-                        "520%",
-                        "560%",
-                        "600%",
-                        "640%",
-                        "680%",
-                        "720%",
-                        "770%",
-                        "830%",
-                        "900%"
-                    ]
-                },
-                {
-                    "Text": "Dive ATK Multiplier",
-                    "ConditionId": "",
-                    "Values": [
-                        "80%",
-                        "88%",
-                        "96%",
-                        "104%",
-                        "112%",
-                        "120%",
-                        "128%",
-                        "136%",
-                        "144%",
-                        "154%",
-                        "166%",
-                        "180%"
-                    ]
-                }
-            ]
         }
     },
     "NodeSkillMap": {
-        "chr_0020_meurs_passive_skill_1_2": {
-            "Icon": "icon_talent_meurs_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "Comprehensive Mindset",
-            "Desc": "Ultimate <@ba.key>Textbook Assault</> improved: Final hit creates 3 shockwave(s), each dealing 45% ATK of <@ba.pd>Physical DMG</>.",
-            "Type": 4
-        },
-        "fac_chr_0020_meurs_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
-            "Name": "Grounded Approach β",
-            "Desc": "Assign to Growth Chamber to slow Mood Drop of all operators in it by 14%",
+        "chr_0020_meurs_passive_skill_0_1": {
+            "Icon": "icon_talent_meurs_01",
             "Level": 1,
-            "Index": 3,
-            "Type": 5
+            "Index": 0,
+            "Name": "Resilient Defense",
+            "Desc": "For every 10 Will, DEF <@ba.vup>+1.0</>.",
+            "Type": 4
         },
         "chr_0020_meurs_passive_skill_0_2": {
             "Icon": "icon_talent_meurs_01",
@@ -621,6 +613,22 @@
             "Index": 0,
             "Name": "Resilient Defense",
             "Desc": "For every 10 Will, DEF <@ba.vup>+1.2</>.",
+            "Type": 4
+        },
+        "chr_0020_meurs_passive_skill_1_1": {
+            "Icon": "icon_talent_meurs_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Comprehensive Mindset",
+            "Desc": "Ultimate <@ba.key>Textbook Assault</> improved: Final hit creates 2 shockwave(s), each dealing 30% ATK of <@ba.pd>Physical DMG</>.",
+            "Type": 4
+        },
+        "chr_0020_meurs_passive_skill_1_2": {
+            "Icon": "icon_talent_meurs_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Comprehensive Mindset",
+            "Desc": "Ultimate <@ba.key>Textbook Assault</> improved: Final hit creates 3 shockwave(s), each dealing 45% ATK of <@ba.pd>Physical DMG</>.",
             "Type": 4
         },
         "fac_chr_0020_meurs_0_1": {
@@ -639,21 +647,13 @@
             "Index": 2,
             "Type": 5
         },
-        "chr_0020_meurs_passive_skill_1_1": {
-            "Icon": "icon_talent_meurs_02",
+        "fac_chr_0020_meurs_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
+            "Name": "Grounded Approach β",
+            "Desc": "Assign to Growth Chamber to slow Mood Drop of all operators in it by 14%",
             "Level": 1,
-            "Index": 1,
-            "Name": "Comprehensive Mindset",
-            "Desc": "Ultimate <@ba.key>Textbook Assault</> improved: Final hit creates 2 shockwave(s), each dealing 30% ATK of <@ba.pd>Physical DMG</>.",
-            "Type": 4
-        },
-        "chr_0020_meurs_passive_skill_0_1": {
-            "Icon": "icon_talent_meurs_01",
-            "Level": 1,
-            "Index": 0,
-            "Name": "Resilient Defense",
-            "Desc": "For every 10 Will, DEF <@ba.vup>+1</>.",
-            "Type": 4
+            "Index": 3,
+            "Type": 5
         },
         "fac_chr_0020_meurs_1_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
@@ -667,7 +667,7 @@
     "Potentials": {
         "1": {
             "Name": "Multi-layered Readiness",
-            "Desc": "Battle skill <@ba.key>Rigid Interdiction</> and ultimate <@ba.key>Textbook Assault</> improved: After hitting the enemy, deals another strike that deals <@ba.vup>[300 + DEF×5]</> of <@ba.phy>Physical DMG</>."
+            "Desc": "Battle skill <@ba.key>Rigid Interdiction</> and ultimate <@ba.key>Textbook Assault</> improved: After hitting the enemy, deals another strike that deals <@ba.vup>[300 + DEF×5.0]</> of <@ba.phy>Physical DMG</>."
         },
         "2": {
             "Name": "Bonus Spec Training",

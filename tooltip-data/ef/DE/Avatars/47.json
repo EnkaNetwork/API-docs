@@ -9,226 +9,20 @@
     "MainAttrId": 39,
     "SubAttrId": 42,
     "AttributeNodes": {
-        "chr_0031_mifu_3": {
-            "39": 15
-        },
         "chr_0031_mifu_1": {
-            "39": 10
+            "39": 10.0
         },
-        "chr_0031_mifu_7": {
-            "39": 20
+        "chr_0031_mifu_3": {
+            "39": 15.0
         },
         "chr_0031_mifu_5": {
-            "39": 15
+            "39": 15.0
+        },
+        "chr_0031_mifu_7": {
+            "39": 20.0
         }
     },
     "SkillInfoMap": {
-        "chr_0031_mifu_NormalSkill": {
-            "Icon": "skillicon/icon_skill_mifu_01",
-            "Element": "Physical",
-            "Name": "Qingbo-Triplex",
-            "Desc": "Wirke Mi Fus Kampffertigkeit mehrmals, um 3 verschiedene Moves zu entfesseln. Zuerst wird die Kampffertigkeit <@ba.key>Wolkenfänger</> gewirkt.\n<@ba.key>MOVE 1 – Wolkenfänger</>: Kostet <@ba.vup>100</> FP und <#ba.return>gewährt</><@ba.vup> 50</> FP nach dem Wirken. Mi Fu feuert eine Greifkette aus ihren Fingerhandschuhen ab, die dem Ziel und Gegnern in seiner Nähe <@ba.pd>Physischen SDN</> zufügt und dann versucht, diese Ziele in ihre Richtung zu ziehen. Nach dem Wirken von MOVE 1 wird die nächste Kampffertigkeit vorübergehend durch <@ba.key>Pfad des Fetzens</> ersetzt.\n<@ba.key>MOVE 2 – Pfad des Fetzens</>: Kostet <@ba.vup>50</> FP. Mi Fu entfesselt eine Salve aus Schlägen, die <@ba.pd>Physischen SDN</> verursachen, wobei der letzte Schlag das Ziel mit <#ba.crush>Zertrümmern</> belegt. <#ba.consume>Verbraucht</> dieses Zertrümmern mindestens 3 Kumulierungen <#ba.noguard>Anfälligkeit</> eines Ziels, wird die nächste Kampffertigkeit vorübergehend durch <@ba.key>Weltenspalter</> ersetzt.\n<@ba.key>MOVE 3 – Weltenspalter</>: Kostet <@ba.vup>50</> FP. Mi Fu verursacht innerhalb des angegebenen Bereichs massiven <@ba.pd>Physischen SDN</>, wobei der verursachte SDN nicht als Kampffertigkeits-SDN, sondern als <#ba.crush>Zertrümmern</>-SDN behandelt wird.",
-            "ConditionData": {},
-            "Type": 1,
-            "Cooldown": 0,
-            "CostType": "Atb",
-            "CostValue": 50,
-            "Params": [
-                {
-                    "Text": "FP-Kosten",
-                    "ConditionId": "",
-                    "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
-                    ]
-                },
-                {
-                    "Text": "Wolkenfänger-SDN-Multiplikator",
-                    "ConditionId": "",
-                    "Values": [
-                        "67%",
-                        "73%",
-                        "80%",
-                        "87%",
-                        "93%",
-                        "100%",
-                        "107%",
-                        "113%",
-                        "120%",
-                        "128%",
-                        "138%",
-                        "150%"
-                    ]
-                },
-                {
-                    "Text": "Pfad-des-Fetzens-SDN-Multiplikator",
-                    "ConditionId": "",
-                    "Values": [
-                        "89%",
-                        "98%",
-                        "107%",
-                        "116%",
-                        "125%",
-                        "134%",
-                        "143%",
-                        "151%",
-                        "160%",
-                        "172%",
-                        "185%",
-                        "200%"
-                    ]
-                },
-                {
-                    "Text": "Pfad-des-Fetzens-Taumeln",
-                    "ConditionId": "",
-                    "Values": [
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5"
-                    ]
-                },
-                {
-                    "Text": "Weltenspalter-SDN-Multiplikator",
-                    "ConditionId": "",
-                    "Values": [
-                        "400%",
-                        "416%",
-                        "432%",
-                        "448%",
-                        "464%",
-                        "480%",
-                        "496%",
-                        "512%",
-                        "528%",
-                        "548%",
-                        "572%",
-                        "600%"
-                    ]
-                },
-                {
-                    "Text": "Weltenspalter-Taumeln",
-                    "ConditionId": "",
-                    "Values": [
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10"
-                    ]
-                }
-            ]
-        },
-        "chr_0031_mifu_UltimateSkill": {
-            "Icon": "skillicon/icon_ultimate_skill_mifu_01",
-            "Element": "Physical",
-            "Name": "Wirbelbrecher",
-            "Desc": "Nach einer kurzen Aufladung sprintet Mi Fu auf ein Ziel zu, <#ba.airborne>Hebt</> es gewaltsam <#ba.airborne>an</> und rammt es dann in den Boden, um ihm <@ba.pd>Physischen SDN</> zuzufügen. Nach dem Wirken dieser Fertigkeit wird die nächste Kampffertigkeit vorübergehend durch <@ba.key>Pfad des Fetzens</> ersetzt.",
-            "ConditionData": {},
-            "Type": 3,
-            "Cooldown": 15,
-            "CostType": "UltimateSp",
-            "CostValue": 80,
-            "Params": [
-                {
-                    "Text": "Ultimative Energiekosten",
-                    "ConditionId": "",
-                    "Values": [
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80,
-                        80
-                    ]
-                },
-                {
-                    "Text": "Abklingzeit",
-                    "ConditionId": "",
-                    "Values": [
-                        "15Sek.",
-                        "15Sek.",
-                        "15Sek.",
-                        "15Sek.",
-                        "15Sek.",
-                        "15Sek.",
-                        "15Sek.",
-                        "15Sek.",
-                        "15Sek.",
-                        "15Sek.",
-                        "15Sek.",
-                        "15Sek."
-                    ]
-                },
-                {
-                    "Text": "SDN-Multiplikator",
-                    "ConditionId": "",
-                    "Values": [
-                        "311%",
-                        "342%",
-                        "373%",
-                        "404%",
-                        "435%",
-                        "466%",
-                        "498%",
-                        "529%",
-                        "560%",
-                        "599%",
-                        "645%",
-                        "700%"
-                    ]
-                },
-                {
-                    "Text": "Taumeln",
-                    "ConditionId": "",
-                    "Values": [
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20"
-                    ]
-                }
-            ]
-        },
         "chr_0031_mifu_ComboSkill": {
             "Icon": "skillicon/icon_combo_skill_mifu_01",
             "Element": "Physical",
@@ -236,9 +30,9 @@
             "Desc": "KOMBOAUSLÖSER: Wenn ein Gegner mindestens 3 Kumulierungen <#ba.noguard>Anfälligkeit</> hat.\nMi Fu führt einen zerstörerischen Aufwärtshieb gegen den Gegner durch, fügt ihm <@ba.pd>Physischen SDN</> zu und belegt ihn vorübergehend mit <#ba.physicalvul>Physisch-Empfänglichkeit</>. Nach dem Wirken dieser Fertigkeit wird die nächste Kampffertigkeit vorübergehend durch <@ba.key>Pfad des Fetzens</> ersetzt.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 20,
+            "Cooldown": 20.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Abklingzeit",
@@ -357,9 +151,9 @@
             "Desc": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>25</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "STD-ANG-SEQ-1-Multiplikator",
@@ -470,44 +264,226 @@
                     ]
                 }
             ]
+        },
+        "chr_0031_mifu_NormalSkill": {
+            "Icon": "skillicon/icon_skill_mifu_01",
+            "Element": "Physical",
+            "Name": "Qingbo-Triplex",
+            "Desc": "Wirke Mi Fus Kampffertigkeit mehrmals, um 3 verschiedene Moves zu entfesseln. Zuerst wird die Kampffertigkeit <@ba.key>Wolkenfänger</> gewirkt.\n<@ba.key>MOVE 1 – Wolkenfänger</>: Kostet <@ba.vup>100</> FP und <#ba.return>gewährt</><@ba.vup> 50</> FP nach dem Wirken. Mi Fu feuert eine Greifkette aus ihren Fingerhandschuhen ab, die dem Ziel und Gegnern in seiner Nähe <@ba.pd>Physischen SDN</> zufügt und dann versucht, diese Ziele in ihre Richtung zu ziehen. Nach dem Wirken von MOVE 1 wird die nächste Kampffertigkeit vorübergehend durch <@ba.key>Pfad des Fetzens</> ersetzt.\n<@ba.key>MOVE 2 – Pfad des Fetzens</>: Kostet <@ba.vup>50</> FP. Mi Fu entfesselt eine Salve aus Schlägen, die <@ba.pd>Physischen SDN</> verursachen, wobei der letzte Schlag das Ziel mit <#ba.crush>Zertrümmern</> belegt. <#ba.consume>Verbraucht</> dieses Zertrümmern mindestens 3 Kumulierungen <#ba.noguard>Anfälligkeit</> eines Ziels, wird die nächste Kampffertigkeit vorübergehend durch <@ba.key>Weltenspalter</> ersetzt.\n<@ba.key>MOVE 3 – Weltenspalter</>: Kostet <@ba.vup>50</> FP. Mi Fu verursacht innerhalb des angegebenen Bereichs massiven <@ba.pd>Physischen SDN</>, wobei der verursachte SDN nicht als Kampffertigkeits-SDN, sondern als <#ba.crush>Zertrümmern</>-SDN behandelt wird.",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 50.0,
+            "Params": [
+                {
+                    "Text": "FP-Kosten",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "Wolkenfänger-SDN-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "67%",
+                        "73%",
+                        "80%",
+                        "87%",
+                        "93%",
+                        "100%",
+                        "107%",
+                        "113%",
+                        "120%",
+                        "128%",
+                        "138%",
+                        "150%"
+                    ]
+                },
+                {
+                    "Text": "Pfad-des-Fetzens-SDN-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "89%",
+                        "98%",
+                        "107%",
+                        "116%",
+                        "125%",
+                        "134%",
+                        "143%",
+                        "151%",
+                        "160%",
+                        "172%",
+                        "185%",
+                        "200%"
+                    ]
+                },
+                {
+                    "Text": "Pfad-des-Fetzens-Taumeln",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "Weltenspalter-SDN-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "400%",
+                        "416%",
+                        "432%",
+                        "448%",
+                        "464%",
+                        "480%",
+                        "496%",
+                        "512%",
+                        "528%",
+                        "548%",
+                        "572%",
+                        "600%"
+                    ]
+                },
+                {
+                    "Text": "Weltenspalter-Taumeln",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0031_mifu_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_mifu_01",
+            "Element": "Physical",
+            "Name": "Wirbelbrecher",
+            "Desc": "Nach einer kurzen Aufladung sprintet Mi Fu auf ein Ziel zu, <#ba.airborne>Hebt</> es gewaltsam <#ba.airborne>an</> und rammt es dann in den Boden, um ihm <@ba.pd>Physischen SDN</> zuzufügen. Nach dem Wirken dieser Fertigkeit wird die nächste Kampffertigkeit vorübergehend durch <@ba.key>Pfad des Fetzens</> ersetzt.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 15.0,
+            "CostType": "UltimateSp",
+            "CostValue": 80.0,
+            "Params": [
+                {
+                    "Text": "Ultimative Energiekosten",
+                    "ConditionId": "",
+                    "Values": [
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0
+                    ]
+                },
+                {
+                    "Text": "Abklingzeit",
+                    "ConditionId": "",
+                    "Values": [
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek."
+                    ]
+                },
+                {
+                    "Text": "SDN-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "311%",
+                        "342%",
+                        "373%",
+                        "404%",
+                        "435%",
+                        "466%",
+                        "498%",
+                        "529%",
+                        "560%",
+                        "599%",
+                        "645%",
+                        "700%"
+                    ]
+                },
+                {
+                    "Text": "Taumeln",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                }
+            ]
         }
     },
     "NodeSkillMap": {
-        "fac_chr_0031_mifu_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_plant_fungus",
-            "Name": "Esoterischer Kräutertee β",
-            "Desc": "Wachstumskammer zuweisen, um Wachstumsrate von Pilzmaterial um +20 % zu erhöhen.",
-            "Level": 1,
-            "Index": 3,
-            "Type": 5
-        },
-        "fac_chr_0031_mifu_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_plant_fungus",
-            "Name": "Esoterischer Kräutertee γ",
-            "Desc": "Wachstumskammer zuweisen, um Wachstumsrate von Pilzmaterial um +30 % zu erhöhen.",
-            "Level": 2,
-            "Index": 3,
-            "Type": 5
-        },
-        "fac_chr_0031_mifu_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
-            "Name": "Geheime Informanten α",
-            "Desc": "Dem Empfang zuweisen, um die Wahrscheinlichkeit geringfügig zu erhöhen, dass der Operator Hinweis 3: Hongshan-Akademie der Wissenschaften (HAW) sammelt (wird bei Zuweisung aktiviert; Effekte derselben Art können nicht kombiniert werden).",
-            "Level": 1,
-            "Index": 2,
-            "Type": 5
-        },
-        "fac_chr_0031_mifu_0_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
-            "Name": "Geheime Informanten β",
-            "Desc": "Dem Empfang zuweisen, um die Wahrscheinlichkeit zu erhöhen, dass der Operator Hinweis 3: Hongshan-Akademie der Wissenschaften (HAW) sammelt (wird bei Zuweisung aktiviert; Effekte derselben Art können nicht kombiniert werden).",
-            "Level": 2,
-            "Index": 2,
-            "Type": 5
-        },
         "chr_0031_mifu_passive_skill_0_1": {
             "Icon": "icon_talent_mifu_01",
             "Level": 1,
+            "Index": 0,
+            "Name": "Hartes Durchgreifen",
+            "Desc": "Kampffertigkeit-Move <@ba.key>Weltenspalter</> verbessert: Wenn das getroffene Ziel mit <#ba.physicalvul>Physisch-Empfänglichkeit</> oder <@ba.poise>Taumelnd</> belegt ist, wird der SDN-Multiplikator auf das <@ba.vup>1</>-Fache des Originalwerts erhöht.",
+            "Type": 4
+        },
+        "chr_0031_mifu_passive_skill_0_2": {
+            "Icon": "icon_talent_mifu_01",
+            "Level": 2,
             "Index": 0,
             "Name": "Hartes Durchgreifen",
             "Desc": "Kampffertigkeit-Move <@ba.key>Weltenspalter</> verbessert: Wenn das getroffene Ziel mit <#ba.physicalvul>Physisch-Empfänglichkeit</> oder <@ba.poise>Taumelnd</> belegt ist, wird der SDN-Multiplikator auf das <@ba.vup>1</>-Fache des Originalwerts erhöht.",
@@ -529,13 +505,37 @@
             "Desc": "Kombofertigkeit verbessert: Das Wirken der Kombo erzeugt einen <#ba.shield>Schild</> mit <@ba.vup>30%</> max. LP und einer Dauer von 10 Sek. Mi Fu ist schwieriger zu unterbrechen, solange der Schild aktiv ist.\nDieser Effekt kann nur einmal alle 60 Sek. ausgelöst werden.",
             "Type": 4
         },
-        "chr_0031_mifu_passive_skill_0_2": {
-            "Icon": "icon_talent_mifu_01",
+        "fac_chr_0031_mifu_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
+            "Name": "Geheime Informanten α",
+            "Desc": "Dem Empfang zuweisen, um die Wahrscheinlichkeit geringfügig zu erhöhen, dass der Operator Hinweis 3: Hongshan-Akademie der Wissenschaften (HAW) sammelt (wird bei Zuweisung aktiviert; Effekte derselben Art können nicht kombiniert werden).",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0031_mifu_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
+            "Name": "Geheime Informanten β",
+            "Desc": "Dem Empfang zuweisen, um die Wahrscheinlichkeit zu erhöhen, dass der Operator Hinweis 3: Hongshan-Akademie der Wissenschaften (HAW) sammelt (wird bei Zuweisung aktiviert; Effekte derselben Art können nicht kombiniert werden).",
             "Level": 2,
-            "Index": 0,
-            "Name": "Hartes Durchgreifen",
-            "Desc": "Kampffertigkeit-Move <@ba.key>Weltenspalter</> verbessert: Wenn das getroffene Ziel mit <#ba.physicalvul>Physisch-Empfänglichkeit</> oder <@ba.poise>Taumelnd</> belegt ist, wird der SDN-Multiplikator auf das <@ba.vup>1</>-Fache des Originalwerts erhöht.",
-            "Type": 4
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0031_mifu_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_fungus",
+            "Name": "Esoterischer Kräutertee β",
+            "Desc": "Wachstumskammer zuweisen, um Wachstumsrate von Pilzmaterial um +20 % zu erhöhen.",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0031_mifu_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_fungus",
+            "Name": "Esoterischer Kräutertee γ",
+            "Desc": "Wachstumskammer zuweisen, um Wachstumsrate von Pilzmaterial um +30 % zu erhöhen.",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
         }
     },
     "Potentials": {

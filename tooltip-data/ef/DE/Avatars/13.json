@@ -9,17 +9,17 @@
     "MainAttrId": 40,
     "SubAttrId": 39,
     "AttributeNodes": {
-        "chr_0005_chen_5": {
-            "40": 15
-        },
-        "chr_0005_chen_7": {
-            "40": 20
-        },
         "chr_0005_chen_1": {
-            "40": 10
+            "40": 10.0
         },
         "chr_0005_chen_3": {
-            "40": 15
+            "40": 15.0
+        },
+        "chr_0005_chen_5": {
+            "40": 15.0
+        },
+        "chr_0005_chen_7": {
+            "40": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "KOMBOAUSLÖSER: Wenn ein Gegner <#ba.noguard>Anfällig</> erleidet. \nEin Schlitzersprint, der durch einen Gegner sprintet und allen Gegnern im Weg <@ba.pd>Physischen SDN</> zufügt und diese <#ba.airborne>Anhebt</>.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 16,
+            "Cooldown": 16.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Abklingzeit",
@@ -97,9 +97,9 @@
             "Desc": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>16</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlagangriffen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "STD-ANG-SEQ-1-Multiplikator",
@@ -236,26 +236,26 @@
             "Desc": "Führt einen Aufwärtshieb beim gegnerischen Ziel durch, der <@ba.pd>Physischen SDN</> verursacht und das Ziel <#ba.airborne>anhebt</>.",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "FP-Kosten",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -321,26 +321,26 @@
             "Desc": "Ein 7-Sequenz-Hiebangriff, der dem gegnerischen Ziel <@ba.pd>Physischen SDN</> pro Sequenz zufügt. Die Sequenz des finalen Hiebs fügt noch mehr SDN zu.",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 10,
+            "Cooldown": 10.0,
             "CostType": "UltimateSp",
-            "CostValue": 70,
+            "CostValue": 70.0,
             "Params": [
                 {
                     "Text": "Ultimative Energiekosten",
                     "ConditionId": "",
                     "Values": [
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0
                     ]
                 },
                 {
@@ -445,20 +445,20 @@
             "Desc": "Wenn Chen mit Fertigkeiten einen Gegner trifft, erhält sie für 10 Sek. ANG <@ba.vup>+4%</>. Dieser Effekt kann 5-mal kumuliert werden.",
             "Type": 4
         },
-        "chr_0005_chen_passive_skill_1_1": {
-            "Icon": "icon_talent_chen_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "Schwungbrecher",
-            "Desc": "Wird ein Gegner beim Aufladen unterbrochen, erleidet er zusätzlich <@ba.poise>5</> Taumeln.",
-            "Type": 4
-        },
         "chr_0005_chen_passive_skill_0_2": {
             "Icon": "icon_talent_chen_01",
             "Level": 2,
             "Index": 0,
             "Name": "Schlitzerschneide",
             "Desc": "Wenn Chen mit Fertigkeiten einen Gegner trifft, erhält sie für 10 Sek. ANG <@ba.vup>+8%</>. Dieser Effekt kann 5-mal kumuliert werden.",
+            "Type": 4
+        },
+        "chr_0005_chen_passive_skill_1_1": {
+            "Icon": "icon_talent_chen_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Schwungbrecher",
+            "Desc": "Wird ein Gegner beim Aufladen unterbrochen, erleidet er zusätzlich <@ba.poise>5</> Taumeln.",
             "Type": 4
         },
         "chr_0005_chen_passive_skill_1_2": {
@@ -469,12 +469,12 @@
             "Desc": "Wird ein Gegner beim Aufladen unterbrochen, erleidet er zusätzlich <@ba.poise>10</> Taumeln.",
             "Type": 4
         },
-        "fac_chr_0005_chen_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_plant_mineral",
-            "Name": "Jadefleiß γ",
-            "Desc": "Wachstumskammer zuweisen, um Wachstumsrate von seltenen Mineralien um +30 % zu erhöhen.",
-            "Level": 2,
-            "Index": 3,
+        "fac_chr_0005_chen_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Klingenkritik α",
+            "Desc": "Der Herstellungskabine zuweisen, um Waffen-EP-Materialproduktionseffizienz um +10 % zu erhöhen.",
+            "Level": 1,
+            "Index": 2,
             "Type": 5
         },
         "fac_chr_0005_chen_0_2": {
@@ -485,19 +485,19 @@
             "Index": 2,
             "Type": 5
         },
-        "fac_chr_0005_chen_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
-            "Name": "Klingenkritik α",
-            "Desc": "Der Herstellungskabine zuweisen, um Waffen-EP-Materialproduktionseffizienz um +10 % zu erhöhen.",
-            "Level": 1,
-            "Index": 2,
-            "Type": 5
-        },
         "fac_chr_0005_chen_1_1": {
             "Icon": "spaceshipskillicon/facskill_spaceship_plant_mineral",
             "Name": "Jadefleiß β",
             "Desc": "Wachstumskammer zuweisen, um Wachstumsrate von seltenen Mineralien um +20 % zu erhöhen.",
             "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0005_chen_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_mineral",
+            "Name": "Jadefleiß γ",
+            "Desc": "Wachstumskammer zuweisen, um Wachstumsrate von seltenen Mineralien um +30 % zu erhöhen.",
+            "Level": 2,
             "Index": 3,
             "Type": 5
         }

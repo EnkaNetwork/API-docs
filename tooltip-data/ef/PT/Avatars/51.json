@@ -1,0 +1,661 @@
+{
+    "StrId": "chr_0034_typhoea",
+    "Name": "Typhoeus",
+    "Rarity": 6,
+    "Element": "Natural",
+    "Profession": "ASSAULT",
+    "Conditions": {},
+    "WeaponType": "Wand",
+    "MainAttrId": 40,
+    "SubAttrId": 42,
+    "AttributeNodes": {
+        "chr_0034_typhoea_1": {
+            "40": 10.0
+        },
+        "chr_0034_typhoea_3": {
+            "40": 15.0
+        },
+        "chr_0034_typhoea_5": {
+            "40": 15.0
+        },
+        "chr_0034_typhoea_7": {
+            "40": 20.0
+        }
+    },
+    "SkillInfoMap": {
+        "chr_0034_typhoea_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_typhoea_01",
+            "Element": "Natural",
+            "Name": "Espinhos Desenfreados",
+            "Desc": "ACIONADOR DO COMBO: Quando Typhoeus atinge o máximo de <#ba.arrowenergy>Sinais</>.\nTyphoeus converte todos os <#ba.arrowenergy>Sinais</> que possui em <#ba.arrownum>Flechas de Caça</> e reinicia suas tentativas de Ataque Básico Aéreo (ATQBA).\nTyphoeus concentra seu \"Olhar da Caçadora\" e lança uma saraivada de golpes contra o alvo, criando uma <@ba.key>Saraivada em Formação</> na área do alvo. Os inimigos na <@ba.key>Saraivada em Formação</> recebem <@ba.natur>DNO Natureza</> ao longo do tempo, ficam mais <#ba.slow>lentos</> e sofrem mais DNO <#ba.naturalburst>Explosão da Natureza</> Recebido.\n<@ba.info>Cada 2 Sinais são convertidos em 1 Flecha de Caça.</>",
+            "ConditionData": {},
+            "Type": 2,
+            "Cooldown": 21.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Tempo de Recarga",
+                    "ConditionId": "",
+                    "Values": [
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s"
+                    ]
+                },
+                {
+                    "Text": "DNO Acerto \"Olhar da Caçadora\"",
+                    "ConditionId": "",
+                    "Values": [
+                        "89%",
+                        "98%",
+                        "107%",
+                        "116%",
+                        "125%",
+                        "134%",
+                        "142%",
+                        "151%",
+                        "160%",
+                        "171%",
+                        "185%",
+                        "200%"
+                    ]
+                },
+                {
+                    "Text": "Desorientação",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Ganho de Energia Suprema",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "DNO Área ao Longo do Tempo",
+                    "ConditionId": "",
+                    "Values": [
+                        "45%",
+                        "49%",
+                        "54%",
+                        "58%",
+                        "62%",
+                        "67%",
+                        "71%",
+                        "76%",
+                        "80%",
+                        "86%",
+                        "93%",
+                        "100%"
+                    ]
+                },
+                {
+                    "Text": "Desacelerar",
+                    "ConditionId": "",
+                    "Values": [
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%"
+                    ]
+                },
+                {
+                    "Text": "Potencialização de DNO de Explosão da Natureza",
+                    "ConditionId": "",
+                    "Values": [
+                        "6%",
+                        "6%",
+                        "6%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "8%",
+                        "8%",
+                        "8%",
+                        "9%",
+                        "9%",
+                        "10%"
+                    ]
+                }
+            ]
+        },
+        "chr_0034_typhoea_NormalAttack": {
+            "Icon": "skillicon/icon_attack_funnel",
+            "Element": "Natural",
+            "Name": "Caçadora das Terras Selvagens",
+            "Desc": "ATAQUE BÁSICO: \nUm ataque com até 5 sequências que causa <@ba.natur>DNO Natureza</>. Como o operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>17</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.natur>DNO Natureza</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um finalizador que causa uma enorme quantidade de <@ba.natur>DNO Natureza</> e recupera PH.",
+            "ConditionData": {},
+            "Type": 0,
+            "Cooldown": 0.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Multiplicador SEQ 1 ATQB",
+                    "ConditionId": "",
+                    "Values": [
+                        "21%",
+                        "23%",
+                        "25%",
+                        "27%",
+                        "29%",
+                        "31%",
+                        "33%",
+                        "35%",
+                        "37%",
+                        "39%",
+                        "43%",
+                        "46%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador SEQ 2 ATQB",
+                    "ConditionId": "",
+                    "Values": [
+                        "25%",
+                        "28%",
+                        "30%",
+                        "33%",
+                        "35%",
+                        "38%",
+                        "40%",
+                        "43%",
+                        "45%",
+                        "48%",
+                        "52%",
+                        "56%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador SEQ 3 ATQB",
+                    "ConditionId": "",
+                    "Values": [
+                        "38%",
+                        "42%",
+                        "46%",
+                        "49%",
+                        "53%",
+                        "57%",
+                        "61%",
+                        "65%",
+                        "68%",
+                        "73%",
+                        "79%",
+                        "86%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador SEQ 4 ATQB",
+                    "ConditionId": "",
+                    "Values": [
+                        "42%",
+                        "46%",
+                        "50%",
+                        "55%",
+                        "59%",
+                        "63%",
+                        "67%",
+                        "71%",
+                        "76%",
+                        "81%",
+                        "87%",
+                        "95%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador SEQ 5 ATQB",
+                    "ConditionId": "",
+                    "Values": [
+                        "56%",
+                        "61%",
+                        "67%",
+                        "72%",
+                        "78%",
+                        "83%",
+                        "89%",
+                        "94%",
+                        "100%",
+                        "107%",
+                        "115%",
+                        "125%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador ATQ Finalizador",
+                    "ConditionId": "",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador ATQ Mergulho",
+                    "ConditionId": "",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "chr_0034_typhoea_NormalSkill": {
+            "Icon": "skillicon/icon_skill_typhoea_01",
+            "Element": "Natural",
+            "Name": "Flechas Perfurantes da Floresta",
+            "Desc": "Typhoeus salta no ar e entra em um breve estado <@ba.key>Pairando</> durante o qual ela pode desferir 5 Ataques Básicos Aéreos (ATQBA). Cada ATQBA pode disparar flechas em até 2 alvos e causar <@ba.natur>DNO Natureza</>. \nSempre que um ATQBA atinge um inimigo com <#ba.naturalinflict>Inflição da Natureza</>, consome 1 acúmulo de <#ba.naturalinflict>Inflição da Natureza</>, concede a Typhoeus 1 <#ba.arrowenergy>Sinal</> e fornece Energia Suprema adicional. \nSe Typhoeus tiver <#ba.arrownum>Flechas de Caça</>, ela consumirá 1 <#ba.arrownum>Flecha de Caça</> e converterá o ATQBA em um <@ba.key>Disparo Poderoso</>. \n<@ba.key>Disparo Poderoso</>: ao atingir um inimigo, Disparo Poderoso aplica à força 1 instância de <#ba.naturalburst>Explosão da Natureza</>; se a <#ba.naturalinflict>Inflição da Natureza</> do alvo tiver sido consumida, então aumenta o DNO causado por essa <#ba.naturalburst>Explosão da Natureza</>. \n<@ba.info>Se Typhoeus for a operadora controlada, seu 5º ATQBA será um Golpe Final e um Disparo Poderoso que não consomem Flechas de Caça.</>",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Custos de PH",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "Multiplicador DNO Disparo Aéreo Inicial",
+                    "ConditionId": "",
+                    "Values": [
+                        "22%",
+                        "25%",
+                        "27%",
+                        "29%",
+                        "31%",
+                        "33%",
+                        "36%",
+                        "38%",
+                        "40%",
+                        "43%",
+                        "46%",
+                        "50%"
+                    ]
+                },
+                {
+                    "Text": "DNO ATQBA",
+                    "ConditionId": "",
+                    "Values": [
+                        "29%",
+                        "32%",
+                        "35%",
+                        "37%",
+                        "40%",
+                        "43%",
+                        "46%",
+                        "49%",
+                        "52%",
+                        "55%",
+                        "60%",
+                        "65%"
+                    ]
+                },
+                {
+                    "Text": "DNO Golpe Final Aéreo",
+                    "ConditionId": "",
+                    "Values": [
+                        "44%",
+                        "49%",
+                        "53%",
+                        "58%",
+                        "62%",
+                        "66%",
+                        "71%",
+                        "75%",
+                        "80%",
+                        "85%",
+                        "92%",
+                        "100%"
+                    ]
+                },
+                {
+                    "Text": "Desorientação do Golpe Final Aéreo",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Multiplicador DNO de Explosão da Natureza Disparo Poderoso",
+                    "ConditionId": "",
+                    "Values": [
+                        "1.1",
+                        "1.1",
+                        "1.1",
+                        "1.15",
+                        "1.15",
+                        "1.15",
+                        "1.2",
+                        "1.2",
+                        "1.2",
+                        "1.25",
+                        "1.25",
+                        "1.3"
+                    ]
+                },
+                {
+                    "Text": "Energia Suprema Adicional",
+                    "ConditionId": "",
+                    "Values": [
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12"
+                    ]
+                }
+            ]
+        },
+        "chr_0034_typhoea_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_typhoea_01",
+            "Element": "Natural",
+            "Name": "Chamado da Montanha de Gelo",
+            "Desc": "Typhoeus dispara uma Flecha Imbuída que explode ao atingir o inimigo, causando <@ba.natur>DNO Natureza</> significativo aos inimigos dentro da área de efeito (AOE). Ela então entra em um estado <@ba.key>Pairando</> e suas tentativas de Ataque Básico Aéreo (ATQBA) são reiniciadas.\nEm seus próximos 5 ATQBAs, atingir um inimigo aciona uma <@ba.key>Saraivada de Flechas</> que causa <@ba.natur>DNO Natureza</> no local do alvo. Sua 5ª <@ba.key>Saraivada de Flechas</> é uma <@ba.key>Saraivada de Flechas</> potencializada que causa ainda mais DNO.\nConjurar a habilidade suprema fornece imediatamente <@ba.vup>2</> <#ba.arrownum>Flechas de Caça</>.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 20.0,
+            "CostType": "UltimateSp",
+            "CostValue": 200.0,
+            "Params": [
+                {
+                    "Text": "Custo de Energia Suprema",
+                    "ConditionId": "",
+                    "Values": [
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0
+                    ]
+                },
+                {
+                    "Text": "Tempo de Recarga",
+                    "ConditionId": "",
+                    "Values": [
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s"
+                    ]
+                },
+                {
+                    "Text": "DNO Explosão Flecha Imbuída",
+                    "ConditionId": "",
+                    "Values": [
+                        "133%",
+                        "147%",
+                        "160%",
+                        "173%",
+                        "187%",
+                        "200%",
+                        "213%",
+                        "227%",
+                        "240%",
+                        "257%",
+                        "277%",
+                        "300%"
+                    ]
+                },
+                {
+                    "Text": "Desorientação da Flecha Imbuída",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "DNO Saraivada de Flechas Normal",
+                    "ConditionId": "",
+                    "Values": [
+                        "33%",
+                        "37%",
+                        "40%",
+                        "43%",
+                        "47%",
+                        "50%",
+                        "53%",
+                        "57%",
+                        "60%",
+                        "64%",
+                        "69%",
+                        "75%"
+                    ]
+                },
+                {
+                    "Text": "DNO Saraivada de Flechas Potencializada",
+                    "ConditionId": "",
+                    "Values": [
+                        "89%",
+                        "98%",
+                        "107%",
+                        "116%",
+                        "124%",
+                        "133%",
+                        "142%",
+                        "151%",
+                        "160%",
+                        "171%",
+                        "184%",
+                        "200%"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0034_typhoea_passive_skill_0_1": {
+            "Icon": "icon_talent_typhoea_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Lista de Verificação de Presas",
+            "Desc": "Sempre que uma <#ba.naturalburst>Explosão da Natureza</> é acionada em um inimigo, Typhoeus ganha 1 <#ba.arrowenergy>Sinal</>. O DNO causado por ataques fortalecidos pelo consumo de <#ba.arrownum>Flechas de Caça</> é aumentado para <@ba.vup>1.2</> vezes o original.\nAo entrar em batalha, Typhoeus ganha imediatamente <@ba.vup>1</> <#ba.arrowenergy>Sinal(is)</>.\nTyphoeus pode ter até 4 <#ba.arrownum>Flechas de Caça</> e 8 <#ba.arrowenergy>Sinais</>.\n<@ba.info>Se a Explosão da Natureza for ativada simultaneamente em vários inimigos, isso contará apenas como uma instância de Explosão da Natureza ao contabilizar os Sinais obtidos por Typhoeus.</>",
+            "Type": 4
+        },
+        "chr_0034_typhoea_passive_skill_0_2": {
+            "Icon": "icon_talent_typhoea_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Lista de Verificação de Presas",
+            "Desc": "Sempre que uma <#ba.naturalburst>Explosão da Natureza</> é acionada em um inimigo, Typhoeus ganha 1 <#ba.arrowenergy>Sinal</>. O DNO causado por ataques fortalecidos pelo consumo de <#ba.arrownum>Flechas de Caça</> é aumentado para <@ba.vup>1.4</> vezes o original.\nAo entrar em batalha, Typhoeus ganha imediatamente <@ba.vup>2</> <#ba.arrowenergy>Sinal(is)</>.\nTyphoeus pode ter até 4 <#ba.arrownum>Flechas de Caça</> e 8 <#ba.arrowenergy>Sinais</>.\n<@ba.info>Se a Explosão da Natureza for ativada simultaneamente em vários inimigos, isso contará apenas como uma instância de Explosão da Natureza ao contabilizar os Sinais obtidos por Typhoeus.</>",
+            "Type": 4
+        },
+        "chr_0034_typhoea_passive_skill_0_3": {
+            "Icon": "icon_talent_typhoea_01",
+            "Level": 3,
+            "Index": 0,
+            "Name": "Lista de Verificação de Presas",
+            "Desc": "Sempre que uma <#ba.naturalburst>Explosão da Natureza</> é acionada em um inimigo, Typhoeus ganha 1 <#ba.arrowenergy>Sinal</>. O DNO causado por ataques fortalecidos pelo consumo de <#ba.arrownum>Flechas de Caça</> é aumentado para <@ba.vup>1.6</> vezes o original.\nAo entrar em batalha, Typhoeus ganha imediatamente <@ba.vup>4</> <#ba.arrowenergy>Sinal(is)</>.\nTyphoeus pode ter até 4 <#ba.arrownum>Flechas de Caça</> e 8 <#ba.arrowenergy>Sinais</>.\n<@ba.info>Se a Explosão da Natureza for ativada simultaneamente em vários inimigos, isso contará apenas como uma instância de Explosão da Natureza ao contabilizar os Sinais obtidos por Typhoeus.</>",
+            "Type": 4
+        },
+        "chr_0034_typhoea_passive_skill_1_1": {
+            "Icon": "icon_talent_typhoea_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Foco da Caçadora",
+            "Desc": "Enquanto está <@ba.key>Pairando</>, Typhoeus ativa uma <@ba.key>Barreira Protetora</> que reduz o DNO Recebido por ela em <@ba.vup>15%</> e a torna mais difícil de interromper enquanto a barreira está ativa. A <@ba.key>Barreira Protetora</> é fragmentada quando Typhoeus recebe DNO e não pode ser ativada novamente pelos próximos <@ba.vup>30</> s.",
+            "Type": 4
+        },
+        "chr_0034_typhoea_passive_skill_1_2": {
+            "Icon": "icon_talent_typhoea_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Foco da Caçadora",
+            "Desc": "Enquanto está <@ba.key>Pairando</>, Typhoeus ativa uma <@ba.key>Barreira Protetora</> que reduz o DNO Recebido por ela em <@ba.vup>30%</> e a torna mais difícil de interromper enquanto a barreira está ativa. A <@ba.key>Barreira Protetora</> é fragmentada quando Typhoeus recebe DNO e não pode ser ativada novamente pelos próximos <@ba.vup>18</> s.",
+            "Type": 4
+        },
+        "fac_chr_0034_typhoea_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_mineral",
+            "Name": "Murmúrios Líticos β",
+            "Desc": "Atribua à Câmara de Crescimento para conceder taxa de crescimento de minerais raros + 20%",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0034_typhoea_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_mineral",
+            "Name": "Murmúrios Líticos γ",
+            "Desc": "Atribua à Câmara de Crescimento para conceder taxa de crescimento de minerais raros + 30%",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0034_typhoea_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_fungus",
+            "Name": "Vida nos Esporos β",
+            "Desc": "Atribua à Câmara de Crescimento para conceder taxa de crescimento de matéria fúngica + 20%",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0034_typhoea_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_fungus",
+            "Name": "Vida nos Esporos γ",
+            "Desc": "Atribua à Câmara de Crescimento para conceder taxa de crescimento de matéria fúngica + 30%",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        }
+    },
+    "Potentials": {
+        "1": {
+            "Name": "Emplumagem de Samifjod",
+            "Desc": "Durante está <@ba.key>Pairando</>, o DNO Causado por ATQ <@ba.vup>+ 18%</> e ATQBA é aumentado para <@ba.vup>1.2</> vezes o original. \nTalento <@ba.key>Foco da Caçadora</> melhorado: o tempo de reativação da <@ba.key>Barreira Protetora</> é <@ba.vup>-3</> s."
+        },
+        "2": {
+            "Name": "Caminhada da Caçadora",
+            "Desc": "Agilidade <@ba.vup>+20</>, Intensidade das Artes <@ba.vup>+16</>."
+        },
+        "3": {
+            "Name": "Armadilha Espinhosa",
+            "Desc": "Combo de habilidades <@ba.key>Espinhos Desenfreados</> melhorado: duração do tempo de recarga é de <@ba.vup>-2</> s. Os inimigos na <@ba.key>Saraivada em Formação</> sofrem DNO Recebido de <#ba.naturalburst>Explosão da Natureza</> <@ba.vup>+ 6%</>."
+        },
+        "4": {
+            "Name": "Sem Escapatória",
+            "Desc": "Habilidade suprema <@ba.key>Chamado da Montanha de Gelo</> melhorada: custo da Energia Suprema <@ba.vup>- 15%</>."
+        },
+        "5": {
+            "Name": "Disparo Fatal",
+            "Desc": "Habilidade suprema <@ba.key>Chamado da Montanha de Gelo</> melhorada: ganha <#ba.arrownum>Flechas de Caça</> <@ba.vup>+ 1</>. O DNO da Habilidade Suprema Causado é aumentado para <@ba.vup>1.2</> vezes o original, enquanto o Multiplicador DNO de Explosão da Natureza de <@ba.key>Disparo Poderoso</> é aumentado para <@ba.vup>1.1</> vezes o original."
+        }
+    }
+}

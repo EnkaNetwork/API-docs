@@ -9,17 +9,17 @@
     "MainAttrId": 40,
     "SubAttrId": 41,
     "AttributeNodes": {
-        "chr_0007_ikut_3": {
-            "40": 15
-        },
         "chr_0007_ikut_1": {
-            "40": 10
+            "40": 10.0
         },
-        "chr_0007_ikut_7": {
-            "40": 20
+        "chr_0007_ikut_3": {
+            "40": 15.0
         },
         "chr_0007_ikut_5": {
-            "40": 15
+            "40": 15.0
+        },
+        "chr_0007_ikut_7": {
+            "40": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "当有敌人进入<#ba.conduct>导电</>状态或<#ba.conduct>导电</>状态被<#ba.consume>消耗</>后可以发动。\n瞬闪至敌人身边进行多次斩击，造成<@ba.pd>物理伤害</>，并恢复一定技力。",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 3,
+            "Cooldown": 3.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "冷却时间",
@@ -126,266 +126,6 @@
                 }
             ]
         },
-        "chr_0007_ikut_NormalSkill": {
-            "Icon": "skillicon/icon_skill_ikut_01",
-            "Element": "Pulse",
-            "Name": "疾风迅雷",
-            "Desc": "瞬闪至敌人身边进行2次斩击，造成少量<@ba.pd>物理伤害</>。若敌人处于<#ba.conduct>导电</>状态，<#ba.consume>消耗</>其<#ba.conduct>导电</>状态并追加一次攻击，造成<@ba.pulse>电磁伤害</>，然后恢复一定技力。",
-            "ConditionData": {},
-            "Type": 1,
-            "Cooldown": 0,
-            "CostType": "Atb",
-            "CostValue": 100,
-            "Params": [
-                {
-                    "Text": "技力消耗",
-                    "ConditionId": "",
-                    "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
-                    ]
-                },
-                {
-                    "Text": "第一段伤害倍率",
-                    "ConditionId": "",
-                    "Values": [
-                        "45%",
-                        "50%",
-                        "54%",
-                        "59%",
-                        "63%",
-                        "68%",
-                        "72%",
-                        "77%",
-                        "81%",
-                        "87%",
-                        "93%",
-                        "101%"
-                    ]
-                },
-                {
-                    "Text": "第二段伤害倍率",
-                    "ConditionId": "",
-                    "Values": [
-                        "45%",
-                        "50%",
-                        "54%",
-                        "59%",
-                        "63%",
-                        "68%",
-                        "72%",
-                        "77%",
-                        "81%",
-                        "87%",
-                        "93%",
-                        "101%"
-                    ]
-                },
-                {
-                    "Text": "第二段失衡值",
-                    "ConditionId": "",
-                    "Values": [
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5"
-                    ]
-                },
-                {
-                    "Text": "追加伤害倍率",
-                    "ConditionId": "",
-                    "Values": [
-                        "180%",
-                        "198%",
-                        "216%",
-                        "234%",
-                        "252%",
-                        "270%",
-                        "288%",
-                        "306%",
-                        "324%",
-                        "347%",
-                        "374%",
-                        "405%"
-                    ]
-                },
-                {
-                    "Text": "追加失衡值",
-                    "ConditionId": "",
-                    "Values": [
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5"
-                    ]
-                },
-                {
-                    "Text": "恢复技力",
-                    "ConditionId": "",
-                    "Values": [
-                        "30",
-                        "30",
-                        "30",
-                        "30",
-                        "30",
-                        "35",
-                        "35",
-                        "35",
-                        "35",
-                        "35",
-                        "35",
-                        "40"
-                    ]
-                }
-            ]
-        },
-        "chr_0007_ikut_UltimateSkill": {
-            "Icon": "skillicon/icon_ultimate_skill_ikut_01",
-            "Element": "Pulse",
-            "Name": "轰雷掣电",
-            "Desc": "用电弧包裹自身后向前方冲刺一段距离，对路径上的敌人造成<@ba.pulse>电磁伤害</>并施加<#ba.pulseinflict>电磁附着</>。一段时间后，引爆留下的电弧，再次造成<@ba.pulse>电磁伤害</>，若敌人处于<#ba.pulseinflict>电磁附着</>状态，则会<#ba.consume>消耗</>其<#ba.pulseinflict>电磁附着</>并强制施加<#ba.conduct>导电</>。",
-            "ConditionData": {},
-            "Type": 3,
-            "Cooldown": 15,
-            "CostType": "UltimateSp",
-            "CostValue": 90,
-            "Params": [
-                {
-                    "Text": "所需终结技能量",
-                    "ConditionId": "",
-                    "Values": [
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90
-                    ]
-                },
-                {
-                    "Text": "冷却时间",
-                    "ConditionId": "",
-                    "Values": [
-                        "15秒",
-                        "15秒",
-                        "15秒",
-                        "15秒",
-                        "15秒",
-                        "15秒",
-                        "15秒",
-                        "15秒",
-                        "15秒",
-                        "15秒",
-                        "15秒",
-                        "15秒"
-                    ]
-                },
-                {
-                    "Text": "第一段伤害倍率",
-                    "ConditionId": "",
-                    "Values": [
-                        "156%",
-                        "171%",
-                        "187%",
-                        "202%",
-                        "218%",
-                        "234%",
-                        "249%",
-                        "265%",
-                        "280%",
-                        "300%",
-                        "323%",
-                        "350%"
-                    ]
-                },
-                {
-                    "Text": "第一段失衡值",
-                    "ConditionId": "",
-                    "Values": [
-                        "7",
-                        "7",
-                        "7",
-                        "7",
-                        "7",
-                        "7",
-                        "7",
-                        "7",
-                        "7",
-                        "10",
-                        "10",
-                        "10"
-                    ]
-                },
-                {
-                    "Text": "第二段伤害倍率",
-                    "ConditionId": "",
-                    "Values": [
-                        "244%",
-                        "269%",
-                        "293%",
-                        "318%",
-                        "342%",
-                        "367%",
-                        "391%",
-                        "415%",
-                        "440%",
-                        "470%",
-                        "507%",
-                        "550%"
-                    ]
-                },
-                {
-                    "Text": "第二段失衡值",
-                    "ConditionId": "",
-                    "Values": [
-                        "7",
-                        "7",
-                        "7",
-                        "7",
-                        "7",
-                        "7",
-                        "7",
-                        "7",
-                        "7",
-                        "10",
-                        "10",
-                        "10"
-                    ]
-                }
-            ]
-        },
         "chr_0007_ikut_NormalAttack": {
             "Icon": "skillicon/icon_attack_sword",
             "Element": "Physical",
@@ -393,9 +133,9 @@
             "Desc": "普通攻击：\n对敌人进行至多5段攻击，造成<@ba.pd>物理伤害</>。作为主控干员时，<#ba.lastcombo>重击</>会造成<@ba.poise>16</>点失衡。\n\n下落攻击：\n处于空中时使用普通攻击，会下落并攻击附近敌人，造成<@ba.pd>物理伤害</>。\n\n处决攻击：\n附近有敌人处于失衡状态时使用普通攻击，将处决该敌人，造成大量<@ba.pd>物理伤害</>并恢复一定技力。",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "普攻第一段倍率",
@@ -524,6 +264,266 @@
                     ]
                 }
             ]
+        },
+        "chr_0007_ikut_NormalSkill": {
+            "Icon": "skillicon/icon_skill_ikut_01",
+            "Element": "Pulse",
+            "Name": "疾风迅雷",
+            "Desc": "瞬闪至敌人身边进行2次斩击，造成少量<@ba.pd>物理伤害</>。若敌人处于<#ba.conduct>导电</>状态，<#ba.consume>消耗</>其<#ba.conduct>导电</>状态并追加一次攻击，造成<@ba.pulse>电磁伤害</>，然后恢复一定技力。",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "技力消耗",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "第一段伤害倍率",
+                    "ConditionId": "",
+                    "Values": [
+                        "45%",
+                        "50%",
+                        "54%",
+                        "59%",
+                        "63%",
+                        "68%",
+                        "72%",
+                        "77%",
+                        "81%",
+                        "87%",
+                        "93%",
+                        "101%"
+                    ]
+                },
+                {
+                    "Text": "第二段伤害倍率",
+                    "ConditionId": "",
+                    "Values": [
+                        "45%",
+                        "50%",
+                        "54%",
+                        "59%",
+                        "63%",
+                        "68%",
+                        "72%",
+                        "77%",
+                        "81%",
+                        "87%",
+                        "93%",
+                        "101%"
+                    ]
+                },
+                {
+                    "Text": "第二段失衡值",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "追加伤害倍率",
+                    "ConditionId": "",
+                    "Values": [
+                        "180%",
+                        "198%",
+                        "216%",
+                        "234%",
+                        "252%",
+                        "270%",
+                        "288%",
+                        "306%",
+                        "324%",
+                        "347%",
+                        "374%",
+                        "405%"
+                    ]
+                },
+                {
+                    "Text": "追加失衡值",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "恢复技力",
+                    "ConditionId": "",
+                    "Values": [
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "35",
+                        "35",
+                        "35",
+                        "35",
+                        "35",
+                        "35",
+                        "40"
+                    ]
+                }
+            ]
+        },
+        "chr_0007_ikut_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_ikut_01",
+            "Element": "Pulse",
+            "Name": "轰雷掣电",
+            "Desc": "用电弧包裹自身后向前方冲刺一段距离，对路径上的敌人造成<@ba.pulse>电磁伤害</>并施加<#ba.pulseinflict>电磁附着</>。一段时间后，引爆留下的电弧，再次造成<@ba.pulse>电磁伤害</>，若敌人处于<#ba.pulseinflict>电磁附着</>状态，则会<#ba.consume>消耗</>其<#ba.pulseinflict>电磁附着</>并强制施加<#ba.conduct>导电</>。",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 15.0,
+            "CostType": "UltimateSp",
+            "CostValue": 90.0,
+            "Params": [
+                {
+                    "Text": "所需终结技能量",
+                    "ConditionId": "",
+                    "Values": [
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0
+                    ]
+                },
+                {
+                    "Text": "冷却时间",
+                    "ConditionId": "",
+                    "Values": [
+                        "15秒",
+                        "15秒",
+                        "15秒",
+                        "15秒",
+                        "15秒",
+                        "15秒",
+                        "15秒",
+                        "15秒",
+                        "15秒",
+                        "15秒",
+                        "15秒",
+                        "15秒"
+                    ]
+                },
+                {
+                    "Text": "第一段伤害倍率",
+                    "ConditionId": "",
+                    "Values": [
+                        "156%",
+                        "171%",
+                        "187%",
+                        "202%",
+                        "218%",
+                        "234%",
+                        "249%",
+                        "265%",
+                        "280%",
+                        "300%",
+                        "323%",
+                        "350%"
+                    ]
+                },
+                {
+                    "Text": "第一段失衡值",
+                    "ConditionId": "",
+                    "Values": [
+                        "7",
+                        "7",
+                        "7",
+                        "7",
+                        "7",
+                        "7",
+                        "7",
+                        "7",
+                        "7",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "第二段伤害倍率",
+                    "ConditionId": "",
+                    "Values": [
+                        "244%",
+                        "269%",
+                        "293%",
+                        "318%",
+                        "342%",
+                        "367%",
+                        "391%",
+                        "415%",
+                        "440%",
+                        "470%",
+                        "507%",
+                        "550%"
+                    ]
+                },
+                {
+                    "Text": "第二段失衡值",
+                    "ConditionId": "",
+                    "Values": [
+                        "7",
+                        "7",
+                        "7",
+                        "7",
+                        "7",
+                        "7",
+                        "7",
+                        "7",
+                        "7",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
         }
     },
     "NodeSkillMap": {
@@ -535,11 +535,43 @@
             "Desc": "使用战技<@ba.key>疾风迅雷</>成功触发<@ba.key>3</>次额外效果后，根据自身的智识，提升全队造成的<@ba.pulse>电磁伤害</>，每点智识<@ba.vup>+0.05%</>，持续<@ba.vup>15</>秒，该效果无法叠加。",
             "Type": 4
         },
+        "chr_0007_ikut_passive_skill_0_2": {
+            "Icon": "icon_talent_ikut_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "荒野游人",
+            "Desc": "使用战技<@ba.key>疾风迅雷</>成功触发<@ba.key>3</>次额外效果后，根据自身的智识，提升全队造成的<@ba.pulse>电磁伤害</>，每点智识<@ba.vup>+0.08%</>，持续<@ba.vup>15</>秒，该效果无法叠加。",
+            "Type": 4
+        },
+        "chr_0007_ikut_passive_skill_1_1": {
+            "Icon": "icon_talent_ikut_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "众生智慧",
+            "Desc": "被施加<#ba.spellinflictonchar>法术附着</>时，有<@ba.vup>30%</>的概率忽略该效果。",
+            "Type": 4
+        },
+        "chr_0007_ikut_passive_skill_1_2": {
+            "Icon": "icon_talent_ikut_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "众生智慧",
+            "Desc": "被施加<#ba.spellinflictonchar>法术附着</>时，有<@ba.vup>50%</>的概率忽略该效果。",
+            "Type": 4
+        },
         "fac_chr_0007_ikut_0_1": {
             "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
             "Name": "荒野锋刃·α",
             "Desc": "进驻制造舱时，武器经验素材的生产效率提升10%",
             "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0007_ikut_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "荒野锋刃·β",
+            "Desc": "进驻制造舱时，武器经验素材的生产效率提升20%",
+            "Level": 2,
             "Index": 2,
             "Type": 5
         },
@@ -558,38 +590,6 @@
             "Level": 2,
             "Index": 3,
             "Type": 5
-        },
-        "chr_0007_ikut_passive_skill_0_2": {
-            "Icon": "icon_talent_ikut_01",
-            "Level": 2,
-            "Index": 0,
-            "Name": "荒野游人",
-            "Desc": "使用战技<@ba.key>疾风迅雷</>成功触发<@ba.key>3</>次额外效果后，根据自身的智识，提升全队造成的<@ba.pulse>电磁伤害</>，每点智识<@ba.vup>+0.08%</>，持续<@ba.vup>15</>秒，该效果无法叠加。",
-            "Type": 4
-        },
-        "fac_chr_0007_ikut_0_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
-            "Name": "荒野锋刃·β",
-            "Desc": "进驻制造舱时，武器经验素材的生产效率提升20%",
-            "Level": 2,
-            "Index": 2,
-            "Type": 5
-        },
-        "chr_0007_ikut_passive_skill_1_1": {
-            "Icon": "icon_talent_ikut_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "众生智慧",
-            "Desc": "被施加<#ba.spellinflictonchar>法术附着</>时，有<@ba.vup>30%</>的概率忽略该效果。",
-            "Type": 4
-        },
-        "chr_0007_ikut_passive_skill_1_2": {
-            "Icon": "icon_talent_ikut_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "众生智慧",
-            "Desc": "被施加<#ba.spellinflictonchar>法术附着</>时，有<@ba.vup>50%</>的概率忽略该效果。",
-            "Type": 4
         }
     },
     "Potentials": {

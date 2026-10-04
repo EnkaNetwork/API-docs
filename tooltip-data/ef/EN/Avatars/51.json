@@ -1,0 +1,661 @@
+{
+    "StrId": "chr_0034_typhoea",
+    "Name": "Typhoeus",
+    "Rarity": 6,
+    "Element": "Natural",
+    "Profession": "ASSAULT",
+    "Conditions": {},
+    "WeaponType": "Wand",
+    "MainAttrId": 40,
+    "SubAttrId": 42,
+    "AttributeNodes": {
+        "chr_0034_typhoea_1": {
+            "40": 10.0
+        },
+        "chr_0034_typhoea_3": {
+            "40": 15.0
+        },
+        "chr_0034_typhoea_5": {
+            "40": 15.0
+        },
+        "chr_0034_typhoea_7": {
+            "40": 20.0
+        }
+    },
+    "SkillInfoMap": {
+        "chr_0034_typhoea_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_typhoea_01",
+            "Element": "Natural",
+            "Name": "Rampant Thorns",
+            "Desc": "COMBO TRIGGER: When Typhoeus reaches max <#ba.arrowenergy>Signs</>.\nTyphoeus converts all her <#ba.arrowenergy>Signs</> to <#ba.arrownum>Hunting Arrows</> and resets her Aerial Basic Attack (ABATK) attempts.\nTyphoeus focuses her \"Huntress's Gaze\" and launches a barrage at the target that creates a <@ba.key>Barrage Array</> at the target area. Enemies in the <@ba.key>Barrage Array</> take <@ba.natur>Nature DMG</> over time, are <#ba.slow>slowed</>, and suffer increased <#ba.naturalburst>Nature Burst</> DMG Taken.\n<@ba.info>Every 2 Signs convert to 1 Hunting Arrow.</>",
+            "ConditionData": {},
+            "Type": 2,
+            "Cooldown": 21.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Cooldown",
+                    "ConditionId": "",
+                    "Values": [
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s",
+                        "21s"
+                    ]
+                },
+                {
+                    "Text": "\"Huntress's Gaze\" Hit DMG",
+                    "ConditionId": "",
+                    "Values": [
+                        "89%",
+                        "98%",
+                        "107%",
+                        "116%",
+                        "125%",
+                        "134%",
+                        "142%",
+                        "151%",
+                        "160%",
+                        "171%",
+                        "185%",
+                        "200%"
+                    ]
+                },
+                {
+                    "Text": "Stagger",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Ultimate Energy Gain",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Area DMG Over Time",
+                    "ConditionId": "",
+                    "Values": [
+                        "45%",
+                        "49%",
+                        "54%",
+                        "58%",
+                        "62%",
+                        "67%",
+                        "71%",
+                        "76%",
+                        "80%",
+                        "86%",
+                        "93%",
+                        "100%"
+                    ]
+                },
+                {
+                    "Text": "Slow",
+                    "ConditionId": "",
+                    "Values": [
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%",
+                        "60%"
+                    ]
+                },
+                {
+                    "Text": "Nature Burst DMG Boost",
+                    "ConditionId": "",
+                    "Values": [
+                        "6%",
+                        "6%",
+                        "6%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "8%",
+                        "8%",
+                        "8%",
+                        "9%",
+                        "9%",
+                        "10%"
+                    ]
+                }
+            ]
+        },
+        "chr_0034_typhoea_NormalAttack": {
+            "Icon": "skillicon/icon_attack_funnel",
+            "Element": "Natural",
+            "Name": "Wildlands Huntress",
+            "Desc": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.natur>Nature DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>17</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.natur>Nature DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.natur>Nature DMG</> and recovers some SP.",
+            "ConditionData": {},
+            "Type": 0,
+            "Cooldown": 0.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "BATK SEQ 1 Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "21%",
+                        "23%",
+                        "25%",
+                        "27%",
+                        "29%",
+                        "31%",
+                        "33%",
+                        "35%",
+                        "37%",
+                        "39%",
+                        "43%",
+                        "46%"
+                    ]
+                },
+                {
+                    "Text": "BATK SEQ 2 Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "25%",
+                        "28%",
+                        "30%",
+                        "33%",
+                        "35%",
+                        "38%",
+                        "40%",
+                        "43%",
+                        "45%",
+                        "48%",
+                        "52%",
+                        "56%"
+                    ]
+                },
+                {
+                    "Text": "BATK SEQ 3 Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "38%",
+                        "42%",
+                        "46%",
+                        "49%",
+                        "53%",
+                        "57%",
+                        "61%",
+                        "65%",
+                        "68%",
+                        "73%",
+                        "79%",
+                        "86%"
+                    ]
+                },
+                {
+                    "Text": "BATK SEQ 4 Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "42%",
+                        "46%",
+                        "50%",
+                        "55%",
+                        "59%",
+                        "63%",
+                        "67%",
+                        "71%",
+                        "76%",
+                        "81%",
+                        "87%",
+                        "95%"
+                    ]
+                },
+                {
+                    "Text": "BATK SEQ 5 Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "56%",
+                        "61%",
+                        "67%",
+                        "72%",
+                        "78%",
+                        "83%",
+                        "89%",
+                        "94%",
+                        "100%",
+                        "107%",
+                        "115%",
+                        "125%"
+                    ]
+                },
+                {
+                    "Text": "Finisher ATK Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Dive ATK Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "chr_0034_typhoea_NormalSkill": {
+            "Icon": "skillicon/icon_skill_typhoea_01",
+            "Element": "Natural",
+            "Name": "Piercing Arrows of the Woods",
+            "Desc": "Typhoeus leaps into the air and enters a short <@ba.key>Hovering</> state, during which she can unleash 5 Aerial Basic Attacks (ABATK). Each ABATK can shoot arrows at up to 2 targets and deal <@ba.natur>Nature DMG</>.\nWhenever an ABATK hits an enemy with <#ba.naturalinflict>Nature Infliction</>, it consumes 1 stack of <#ba.naturalinflict>Nature Infliction</>, grants Typhoeus 1 <#ba.arrowenergy>Sign</>, and gives additional Ultimate Energy.\nIf Typhoeus has <#ba.arrownum>Hunting Arrow(s)</>, she consumes 1 <#ba.arrownum>Hunting Arrow</> and converts the ABATK into a <@ba.key>Power Shot</>.\n<@ba.key>Power Shot</>: After hitting an enemy, Power Shot forcibly applies 1 instance of <#ba.naturalburst>Nature Burst</>; if the target's <#ba.naturalinflict>Nature Infliction</> is consumed, then the DMG dealt by this <#ba.naturalburst>Nature Burst</> will be increased.\n<@ba.info>If Typhoeus is the controlled operator, her 5th ABATK is regarded as a Final Strike and a Power Shot, and does not consume Hunting Arrows.</>",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "SP Cost",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "Initial Aerial Shot DMG Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "22%",
+                        "25%",
+                        "27%",
+                        "29%",
+                        "31%",
+                        "33%",
+                        "36%",
+                        "38%",
+                        "40%",
+                        "43%",
+                        "46%",
+                        "50%"
+                    ]
+                },
+                {
+                    "Text": "ABATK DMG",
+                    "ConditionId": "",
+                    "Values": [
+                        "29%",
+                        "32%",
+                        "35%",
+                        "37%",
+                        "40%",
+                        "43%",
+                        "46%",
+                        "49%",
+                        "52%",
+                        "55%",
+                        "60%",
+                        "65%"
+                    ]
+                },
+                {
+                    "Text": "Aerial Final Strike DMG",
+                    "ConditionId": "",
+                    "Values": [
+                        "44%",
+                        "49%",
+                        "53%",
+                        "58%",
+                        "62%",
+                        "66%",
+                        "71%",
+                        "75%",
+                        "80%",
+                        "85%",
+                        "92%",
+                        "100%"
+                    ]
+                },
+                {
+                    "Text": "Aerial Final Strike Stagger",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Power Shot Nature Burst DMG Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "1.1",
+                        "1.1",
+                        "1.1",
+                        "1.15",
+                        "1.15",
+                        "1.15",
+                        "1.2",
+                        "1.2",
+                        "1.2",
+                        "1.25",
+                        "1.25",
+                        "1.3"
+                    ]
+                },
+                {
+                    "Text": "Additional Ultimate Energy",
+                    "ConditionId": "",
+                    "Values": [
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12"
+                    ]
+                }
+            ]
+        },
+        "chr_0034_typhoea_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_typhoea_01",
+            "Element": "Natural",
+            "Name": "Call of Ice Mountain",
+            "Desc": "Typhoeus fires an Imbued Arrow that explodes after hitting the enemy and deals massive <@ba.natur>Nature DMG</> to enemies within the area of effect (AOE). She then enters a <@ba.key>Hovering</> state and her Aerial Basic Attack (ABATK) attempts are reset.\nFor her next 5 ABATKs, hitting an enemy triggers a <@ba.key>Hail of Arrows</> that deals <@ba.natur>Nature DMG</> at the target's location. Her 5th <@ba.key>Hail of Arrows</> is an empowered <@ba.key>Hail of Arrows</> that deals higher DMG.\nCasting the ultimate gives <@ba.vup>2</> <#ba.arrownum>Hunting Arrows</> immediately.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 20.0,
+            "CostType": "UltimateSp",
+            "CostValue": 200.0,
+            "Params": [
+                {
+                    "Text": "Ultimate Energy Cost",
+                    "ConditionId": "",
+                    "Values": [
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0,
+                        200.0
+                    ]
+                },
+                {
+                    "Text": "Cooldown",
+                    "ConditionId": "",
+                    "Values": [
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s"
+                    ]
+                },
+                {
+                    "Text": "Imbued Arrow Explosion DMG",
+                    "ConditionId": "",
+                    "Values": [
+                        "133%",
+                        "147%",
+                        "160%",
+                        "173%",
+                        "187%",
+                        "200%",
+                        "213%",
+                        "227%",
+                        "240%",
+                        "257%",
+                        "277%",
+                        "300%"
+                    ]
+                },
+                {
+                    "Text": "Imbued Arrow Stagger",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Normal Hail of Arrows DMG",
+                    "ConditionId": "",
+                    "Values": [
+                        "33%",
+                        "37%",
+                        "40%",
+                        "43%",
+                        "47%",
+                        "50%",
+                        "53%",
+                        "57%",
+                        "60%",
+                        "64%",
+                        "69%",
+                        "75%"
+                    ]
+                },
+                {
+                    "Text": "Empowered Hail of Arrows DMG",
+                    "ConditionId": "",
+                    "Values": [
+                        "89%",
+                        "98%",
+                        "107%",
+                        "116%",
+                        "124%",
+                        "133%",
+                        "142%",
+                        "151%",
+                        "160%",
+                        "171%",
+                        "184%",
+                        "200%"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0034_typhoea_passive_skill_0_1": {
+            "Icon": "icon_talent_typhoea_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Prey Checklist",
+            "Desc": "Whenever a <#ba.naturalburst>Nature Burst</> is triggered on an enemy, Typhoeus gains 1 <#ba.arrowenergy>Sign</>. DMG dealt by attacks empowered by consuming <#ba.arrownum>Hunting Arrows</> is increased to <@ba.vup>1.2</> times the original.\nWhen entering battle, Typhoeus immediately gains <@ba.vup>1</> <#ba.arrowenergy>Sign(s)</>.\nTyphoeus can have up to 4 <#ba.arrownum>Hunting Arrows</> and 8 <#ba.arrowenergy>Signs</>.\n<@ba.info>If Nature Burst is simultaneously triggered on multiple enemies, this only counts as one instance of Nature Burst when tallying the Signs gained by Typhoeus.</>",
+            "Type": 4
+        },
+        "chr_0034_typhoea_passive_skill_0_2": {
+            "Icon": "icon_talent_typhoea_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Prey Checklist",
+            "Desc": "Whenever a <#ba.naturalburst>Nature Burst</> is triggered on an enemy, Typhoeus gains 1 <#ba.arrowenergy>Sign</>. DMG dealt by attacks empowered by consuming <#ba.arrownum>Hunting Arrows</> is increased to <@ba.vup>1.4</> times the original.\nWhen entering battle, Typhoeus immediately gains <@ba.vup>2</> <#ba.arrowenergy>Sign(s)</>.\nTyphoeus can have up to 4 <#ba.arrownum>Hunting Arrows</> and 8 <#ba.arrowenergy>Signs</>.\n<@ba.info>If Nature Burst is simultaneously triggered on multiple enemies, this only counts as one instance of Nature Burst when tallying the Signs gained by Typhoeus.</>",
+            "Type": 4
+        },
+        "chr_0034_typhoea_passive_skill_0_3": {
+            "Icon": "icon_talent_typhoea_01",
+            "Level": 3,
+            "Index": 0,
+            "Name": "Prey Checklist",
+            "Desc": "Whenever a <#ba.naturalburst>Nature Burst</> is triggered on an enemy, Typhoeus gains 1 <#ba.arrowenergy>Sign</>. DMG dealt by attacks empowered by consuming <#ba.arrownum>Hunting Arrows</> is increased to <@ba.vup>1.6</> times the original.\nWhen entering battle, Typhoeus immediately gains <@ba.vup>4</> <#ba.arrowenergy>Sign(s)</>.\nTyphoeus can have up to 4 <#ba.arrownum>Hunting Arrows</> and 8 <#ba.arrowenergy>Signs</>.\n<@ba.info>If Nature Burst is simultaneously triggered on multiple enemies, this only counts as one instance of Nature Burst when tallying the Signs gained by Typhoeus.</>",
+            "Type": 4
+        },
+        "chr_0034_typhoea_passive_skill_1_1": {
+            "Icon": "icon_talent_typhoea_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Huntress's Focus",
+            "Desc": "When <@ba.key>Hovering</>, Typhoeus activates a <@ba.key>Protective Barrier</> that reduces her DMG Taken by <@ba.vup>15%</> and makes her harder to interrupt while it is active. The <@ba.key>Protective Barrier</> is shattered when Typhoeus takes DMG, and cannot be activated again for <@ba.vup>30</>s afterwards.",
+            "Type": 4
+        },
+        "chr_0034_typhoea_passive_skill_1_2": {
+            "Icon": "icon_talent_typhoea_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Huntress's Focus",
+            "Desc": "When <@ba.key>Hovering</>, Typhoeus activates a <@ba.key>Protective Barrier</> that reduces her DMG Taken by <@ba.vup>30%</> and makes her harder to interrupt while it is active. The <@ba.key>Protective Barrier</> is shattered when Typhoeus takes DMG, and cannot be activated again for <@ba.vup>18</>s afterwards.",
+            "Type": 4
+        },
+        "fac_chr_0034_typhoea_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_mineral",
+            "Name": "Lithic Murmurs β",
+            "Desc": "Assign to Growth Chamber to grant rare mineral growth rate +20%",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0034_typhoea_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_mineral",
+            "Name": "Lithic Murmurs γ",
+            "Desc": "Assign to Growth Chamber to grant rare mineral growth rate +30%",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0034_typhoea_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_fungus",
+            "Name": "Life in the Spores β",
+            "Desc": "Assign to Growth Chamber to grant fungal matter growth rate +20%",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0034_typhoea_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_fungus",
+            "Name": "Life in the Spores γ",
+            "Desc": "Assign to Growth Chamber to grant fungal matter growth rate +30%",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        }
+    },
+    "Potentials": {
+        "1": {
+            "Name": "Samifjod Fletching",
+            "Desc": "When <@ba.key>Hovering</>, ATK <@ba.vup>+18%</> and ABATK DMG Dealt is increased to <@ba.vup>1.2</> times the original. \nTalent <@ba.key>Huntress's Focus</> improved: <@ba.key>Protective Barrier</> reactivation time <@ba.vup>-3</>s."
+        },
+        "2": {
+            "Name": "Huntress's Stride",
+            "Desc": "Agility <@ba.vup>+20</>, Arts Intensity <@ba.vup>+16</>."
+        },
+        "3": {
+            "Name": "Thorny Trap",
+            "Desc": "Combo skill <@ba.key>Rampant Thorns</> improved: Length of cooldown <@ba.vup>-2</>s. Enemies in the <@ba.key>Barrage Array</> suffer <#ba.naturalburst>Nature Burst</> DMG Taken <@ba.vup>+6%</>."
+        },
+        "4": {
+            "Name": "No Escape",
+            "Desc": "Ultimate <@ba.key>Call of Ice Mountain</> improved: Ultimate Energy cost <@ba.vup>-15%</>."
+        },
+        "5": {
+            "Name": "Fatal Shot",
+            "Desc": "Ultimate <@ba.key>Call of Ice Mountain</> improved: Gains <#ba.arrownum>Hunting Arrows</> <@ba.vup>+1</>. Ultimate DMG Dealt is increased to <@ba.vup>1.2</> times the original, while Nature Burst DMG Multiplier of <@ba.key>Power Shot</> is increased to <@ba.vup>1.1</> times the original."
+        }
+    }
+}

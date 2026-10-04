@@ -9,17 +9,17 @@
     "MainAttrId": 40,
     "SubAttrId": 41,
     "AttributeNodes": {
-        "chr_0028_wulfa_7": {
-            "40": 20
-        },
-        "chr_0028_wulfa_5": {
-            "40": 15
-        },
         "chr_0028_wulfa_1": {
-            "40": 10
+            "40": 10.0
         },
         "chr_0028_wulfa_3": {
-            "40": 15
+            "40": 15.0
+        },
+        "chr_0028_wulfa_5": {
+            "40": 15.0
+        },
+        "chr_0028_wulfa_7": {
+            "40": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "COMBO TRIGGER: When an enemy has both <#ba.noguard>Vulnerability</> and <#ba.spellinflict>Arts Infliction</> stacks.\nRossi's combo skill has 2 consecutive sequences. COMBO SEQUENCE 1 deals <@ba.pd>Physical DMG</> to the target.\nCOMBO SEQUENCE 2 <#ba.consume>consumes</> all <#ba.spellinflict>Arts Infliction</> stacks from the target, deals <@ba.pd>Physical DMG</> based on the number of Arts Infliction stacks <#ba.consume>consumed</>, applies 1 instance of <#ba.airborne>Lift</>, and buffs Rossi's Critical Rate and Critical DMG Dealt at the same time.\nIf COMBO SEQUENCE 2 is cast with <@ba.key>perfect timing</>, it applies 1 more stack of <#ba.noguard>Vulnerability</>.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Cooldown",
@@ -143,7 +143,7 @@
                     ]
                 },
                 {
-                    "Text": "Critical Rate Boost",
+                    "Text": "Critical Rate",
                     "ConditionId": "",
                     "Values": [
                         "15%",
@@ -223,9 +223,9 @@
             "Desc": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.pd>Physical DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>18</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pd>Physical DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher attack that deals massive <@ba.pd>Physical DMG</> and recovers some SP.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "BATK SEQ 1 Multiplier",
@@ -355,6 +355,109 @@
                 }
             ]
         },
+        "chr_0028_wulfa_NormalSkill": {
+            "Icon": "skillicon/icon_skill_wulfa_01",
+            "Element": "Physical",
+            "Name": "Crimson Shadow",
+            "Desc": "Charges to the target to deal <@ba.pd>Physical DMG</> and apply <#ba.airborne>Lift</>.\nIf the target already has <#ba.noguard>Vulnerability</> stack(s), the skill also unleashes a <@ba.key>Wolven Ambrage</> that charges at the target to deal <@ba.fire>Heat DMG</>.",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "SP Cost",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "SEQ 1 DMG Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "85%",
+                        "94%",
+                        "102%",
+                        "111%",
+                        "119%",
+                        "128%",
+                        "137%",
+                        "145%",
+                        "154%",
+                        "164%",
+                        "177%",
+                        "192%"
+                    ]
+                },
+                {
+                    "Text": "SEQ 1 Stagger",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "SEQ 2 DMG Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "128%",
+                        "141%",
+                        "153%",
+                        "166%",
+                        "179%",
+                        "192%",
+                        "204%",
+                        "217%",
+                        "230%",
+                        "246%",
+                        "265%",
+                        "288%"
+                    ]
+                },
+                {
+                    "Text": "SEQ 2 Stagger",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "12",
+                        "12",
+                        "12",
+                        "15"
+                    ]
+                }
+            ]
+        },
         "chr_0028_wulfa_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_wulfa_01",
             "Element": "Fire",
@@ -362,26 +465,26 @@
             "Desc": "Rossi flutters her cape and unleashes a flurry of stabs that quickly deals multiple sequences of <@ba.fire>Heat DMG</> to the target. She then performs a two-sequence slash attack with her dagger that deals massive <@ba.fire>Heat DMG</> and applies <#ba.fireinflict>Heat Infliction</>.\n<@ba.info>When this skill successfully scores a critical hit, it deals higher Critical DMG.</>",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 10,
+            "Cooldown": 10.0,
             "CostType": "UltimateSp",
-            "CostValue": 110,
+            "CostValue": 110.0,
             "Params": [
                 {
                     "Text": "Ultimate Energy Cost",
                     "ConditionId": "",
                     "Values": [
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0
                     ]
                 },
                 {
@@ -493,112 +596,17 @@
                     ]
                 }
             ]
-        },
-        "chr_0028_wulfa_NormalSkill": {
-            "Icon": "skillicon/icon_skill_wulfa_01",
-            "Element": "Physical",
-            "Name": "Crimson Shadow",
-            "Desc": "Charges to the target to deal <@ba.pd>Physical DMG</> and apply <#ba.airborne>Lift</>.\nIf the target already has <#ba.noguard>Vulnerability</> stack(s), the skill also unleashes a <@ba.key>Wolven Ambrage</> that charges at the target to deal <@ba.fire>Heat DMG</>.",
-            "ConditionData": {},
-            "Type": 1,
-            "Cooldown": 0,
-            "CostType": "Atb",
-            "CostValue": 100,
-            "Params": [
-                {
-                    "Text": "SP Cost",
-                    "ConditionId": "",
-                    "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
-                    ]
-                },
-                {
-                    "Text": "SEQ 1 DMG Multiplier",
-                    "ConditionId": "",
-                    "Values": [
-                        "85%",
-                        "94%",
-                        "102%",
-                        "111%",
-                        "119%",
-                        "128%",
-                        "137%",
-                        "145%",
-                        "154%",
-                        "164%",
-                        "177%",
-                        "192%"
-                    ]
-                },
-                {
-                    "Text": "SEQ 1 Stagger",
-                    "ConditionId": "",
-                    "Values": [
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5"
-                    ]
-                },
-                {
-                    "Text": "SEQ 2 DMG Multiplier",
-                    "ConditionId": "",
-                    "Values": [
-                        "128%",
-                        "141%",
-                        "153%",
-                        "166%",
-                        "179%",
-                        "192%",
-                        "204%",
-                        "217%",
-                        "230%",
-                        "246%",
-                        "265%",
-                        "288%"
-                    ]
-                },
-                {
-                    "Text": "SEQ 2 Stagger",
-                    "ConditionId": "",
-                    "Values": [
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "12",
-                        "12",
-                        "12",
-                        "15"
-                    ]
-                }
-            ]
         }
     },
     "NodeSkillMap": {
+        "chr_0028_wulfa_passive_skill_0_1": {
+            "Icon": "icon_talent_wulfa_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Nicks and Scratches",
+            "Desc": "Battle skill improved: After <@ba.key>Wolven Ambrage</> deals DMG, Rossi applies <#ba.rossi>Razor Clawmark</> to the target for <@ba.vup>15</>s. This effect cannot stack.\nFor the duration of <#ba.rossi>Razor Clawmark</>, the target takes <@ba.vup>25%</> ATK (Rossi's) of <@ba.pd>Physical DMG</> per second and suffers <@ba.pd>Physical DMG Taken</> and <@ba.fire>Heat DMG Taken</> <@ba.vup>+6%</>.",
+            "Type": 4
+        },
         "chr_0028_wulfa_passive_skill_0_2": {
             "Icon": "icon_talent_wulfa_01",
             "Level": 2,
@@ -607,36 +615,12 @@
             "Desc": "Battle skill improved: After <@ba.key>Wolven Ambrage</> deals DMG, Rossi applies <#ba.rossi>Razor Clawmark</> to the target for <@ba.vup>25</>s. This effect cannot stack.\nFor the duration of <#ba.rossi>Razor Clawmark</>, the target takes <@ba.vup>30%</> ATK (Rossi's) of <@ba.pd>Physical DMG</> per second and suffers <@ba.pd>Physical DMG Taken</> and <@ba.fire>Heat DMG Taken</> <@ba.vup>+12%</>.",
             "Type": 4
         },
-        "fac_chr_0028_wulfa_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
-            "Name": "Scent of the Hunt β",
-            "Desc": "Assign to Reception Room to grant operator clue collecting efficiency +20%",
+        "chr_0028_wulfa_passive_skill_1_1": {
+            "Icon": "icon_talent_wulfa_02",
             "Level": 1,
-            "Index": 3,
-            "Type": 5
-        },
-        "fac_chr_0028_wulfa_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
-            "Name": "Clan Etiquette β",
-            "Desc": "Assign to Reception Room to slow Mood Drop of all operators in it by 14%",
-            "Level": 1,
-            "Index": 2,
-            "Type": 5
-        },
-        "fac_chr_0028_wulfa_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
-            "Name": "Scent of the Hunt γ",
-            "Desc": "Assign to Reception Room to grant operator clue collecting efficiency +30%",
-            "Level": 2,
-            "Index": 3,
-            "Type": 5
-        },
-        "chr_0028_wulfa_passive_skill_0_1": {
-            "Icon": "icon_talent_wulfa_01",
-            "Level": 1,
-            "Index": 0,
-            "Name": "Nicks and Scratches",
-            "Desc": "Battle skill improved: After <@ba.key>Wolven Ambrage</> deals DMG, Rossi applies <#ba.rossi>Razor Clawmark</> to the target for <@ba.vup>15</>s. This effect cannot stack.\nFor the duration of <#ba.rossi>Razor Clawmark</>, the target takes <@ba.vup>25%</> ATK (Rossi's) of <@ba.pd>Physical DMG</> per second and suffers <@ba.pd>Physical DMG Taken</> and <@ba.fire>Heat DMG Taken</> <@ba.vup>+6%</>.",
+            "Index": 1,
+            "Name": "Seething Blood",
+            "Desc": "When Rossi's skill deals Critical DMG to a <#ba.rossi>Razor Clawmarked</> enemy, trigger another hit that deals <@ba.vup>12%</> ATK (Rossi's) of <@ba.fire>Heat DMG</> and restores <@ba.heal>[Intellect × 0.04]</> HP to Rossi. If the target is also <#ba.burning>Combusted</>, then the aforementioned DMG and HP Restoration effects are increased to <@ba.vup>1.5</> times.",
             "Type": 4
         },
         "chr_0028_wulfa_passive_skill_1_2": {
@@ -647,6 +631,14 @@
             "Desc": "When Rossi's skill deals Critical DMG to a <#ba.rossi>Razor Clawmarked</> enemy, trigger another hit that deals <@ba.vup>24%</> ATK (Rossi's) of <@ba.fire>Heat DMG</> and restores <@ba.heal>[Intellect × 0.08]</> HP to Rossi. If the target is also <#ba.burning>Combusted</>, then the aforementioned DMG and HP Restoration effects are increased to <@ba.vup>1.5</> times.",
             "Type": 4
         },
+        "fac_chr_0028_wulfa_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
+            "Name": "Clan Etiquette β",
+            "Desc": "Assign to Reception Room to slow Mood Drop of all operators in it by 14%",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
         "fac_chr_0028_wulfa_0_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
             "Name": "Clan Etiquette γ",
@@ -655,13 +647,21 @@
             "Index": 2,
             "Type": 5
         },
-        "chr_0028_wulfa_passive_skill_1_1": {
-            "Icon": "icon_talent_wulfa_02",
+        "fac_chr_0028_wulfa_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
+            "Name": "Scent of the Hunt β",
+            "Desc": "Assign to Reception Room to grant operator clue collecting efficiency +20%",
             "Level": 1,
-            "Index": 1,
-            "Name": "Seething Blood",
-            "Desc": "When Rossi's skill deals Critical DMG to a <#ba.rossi>Razor Clawmarked</> enemy, trigger another hit that deals <@ba.vup>12%</> ATK (Rossi's) of <@ba.fire>Heat DMG</> and restores <@ba.heal>[Intellect × 0.04]</> HP to Rossi. If the target is also <#ba.burning>Combusted</>, then the aforementioned DMG and HP Restoration effects are increased to <@ba.vup>1.5</> times.",
-            "Type": 4
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0028_wulfa_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
+            "Name": "Scent of the Hunt γ",
+            "Desc": "Assign to Reception Room to grant operator clue collecting efficiency +30%",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
         }
     },
     "Potentials": {

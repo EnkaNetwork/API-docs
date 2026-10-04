@@ -9,17 +9,17 @@
     "MainAttrId": 42,
     "SubAttrId": 40,
     "AttributeNodes": {
-        "chr_0012_avywen_5": {
-            "42": 15
-        },
-        "chr_0012_avywen_7": {
-            "42": 20
-        },
         "chr_0012_avywen_1": {
-            "42": 10
+            "42": 10.0
         },
         "chr_0012_avywen_3": {
-            "42": 15
+            "42": 15.0
+        },
+        "chr_0012_avywen_5": {
+            "42": 15.0
+        },
+        "chr_0012_avywen_7": {
+            "42": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "ACIONADOR DO COMBO: Quando o operador controlado aplica um <#ba.lastcombo>Golpe Final</> em um alvo com <#ba.pulseinflict>Inflição Elétrica</> ou <#ba.conduct>Eletrificação</> ativa. \nSalta no meio do ar e arremessa 3 <@ba.key>Lanças do Trovão</> no alvo. Em seguida, causa 1 acerto de <@ba.pulse>DNO Elétrico</> aos inimigos na área de efeito.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 13,
+            "Cooldown": 13.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Tempo de Recarga",
@@ -133,9 +133,9 @@
             "Desc": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.pd>DNO Físico</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>17</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.pd>DNO Físico</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um ataque finalizador que causa uma enorme quantidade de <@ba.pd>DNO Físico</> e recupera PH.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Multiplicador SEQ 1 ATQB",
@@ -272,26 +272,26 @@
             "Desc": "Salta no ar para provocar um turbilhão com sua lança, causando <@ba.pulse>DNO Elétrico</> aos inimigos próximos e atraindo todas as <@ba.key>Lanças do Trovão</> e <@ba.key>Lanças do Trovão EX</> no campo de batalha para si. \nAs <@ba.key>Lanças do Trovão</> que voltam atravessam todos os inimigos em seu caminho e causam <@ba.pulse>DNO Elétrico</> a eles, enquanto as <@ba.key>Lanças do Trovão EX</> que voltam causam mais <@ba.pulse>DNO Elétrico</> e também aplicam <#ba.pulseinflict>Inflição Elétrica</>.",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "Custos de PH",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -411,26 +411,26 @@
             "Desc": "Arremessa uma <@ba.key>Lança do Trovão EX</> na área do alvo que causa <@ba.pulse>DNO Elétrico</> significativo aos inimigos nas proximidades.",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 10,
+            "Cooldown": 10.0,
             "CostType": "UltimateSp",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "Custo de Energia Suprema",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -509,14 +509,6 @@
         }
     },
     "NodeSkillMap": {
-        "chr_0012_avywen_passive_skill_0_2": {
-            "Icon": "icon_talent_avywen_01",
-            "Level": 2,
-            "Index": 0,
-            "Name": "Entrega Urgente",
-            "Desc": "Após uma <@ba.key>Lança do Trovão</> ou <@ba.key>Lança do Trovão EX</> arremessada ou que está retornando atingir o inimigo, Avywenna ganhará <@ba.vup>4</> de Energia Suprema.",
-            "Type": 4
-        },
         "chr_0012_avywen_passive_skill_0_1": {
             "Icon": "icon_talent_avywen_01",
             "Level": 1,
@@ -525,11 +517,43 @@
             "Desc": "Após uma <@ba.key>Lança do Trovão</> ou <@ba.key>Lança do Trovão EX</> arremessada ou que está retornando atingir o inimigo, Avywenna ganhará <@ba.vup>3</> de Energia Suprema.",
             "Type": 4
         },
+        "chr_0012_avywen_passive_skill_0_2": {
+            "Icon": "icon_talent_avywen_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Entrega Urgente",
+            "Desc": "Após uma <@ba.key>Lança do Trovão</> ou <@ba.key>Lança do Trovão EX</> arremessada ou que está retornando atingir o inimigo, Avywenna ganhará <@ba.vup>4</> de Energia Suprema.",
+            "Type": 4
+        },
+        "chr_0012_avywen_passive_skill_1_1": {
+            "Icon": "icon_talent_avywen_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Abordagem Diplomática",
+            "Desc": "Habilidade suprema <@ba.key>Lança do Trovão: Choque Final</> melhorada: também aplica <@ba.vup>6%</> de <#ba.pulsevul>Suscetibilidade Elétrica</> por <@ba.vup>10</> s aos inimigos atingidos.",
+            "Type": 4
+        },
+        "chr_0012_avywen_passive_skill_1_2": {
+            "Icon": "icon_talent_avywen_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Abordagem Diplomática",
+            "Desc": "Habilidade suprema <@ba.key>Lança do Trovão: Choque Final</> melhorada: também aplica <@ba.vup>10%</> de <#ba.pulsevul>Suscetibilidade Elétrica</> por <@ba.vup>10</> s aos inimigos atingidos.",
+            "Type": 4
+        },
         "fac_chr_0012_avywen_0_1": {
             "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
             "Name": "Conselheira Residencial α",
             "Desc": "Atribua ao Nexus de Controle para conceder à Regeneração de Humor de todos os operadores + 8%",
             "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0012_avywen_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "Conselheira Residencial β",
+            "Desc": "Atribua ao Nexus de Controle para conceder à Regeneração de Humor de todos os operadores + 12%",
+            "Level": 2,
             "Index": 2,
             "Type": 5
         },
@@ -541,14 +565,6 @@
             "Index": 3,
             "Type": 5
         },
-        "fac_chr_0012_avywen_0_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
-            "Name": "Conselheira Residencial β",
-            "Desc": "Atribua ao Nexus de Controle para conceder à Regeneração de Humor de todos os operadores + 12%",
-            "Level": 2,
-            "Index": 2,
-            "Type": 5
-        },
         "fac_chr_0012_avywen_1_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
             "Name": "Segredo da Mensageira β",
@@ -556,22 +572,6 @@
             "Level": 2,
             "Index": 3,
             "Type": 5
-        },
-        "chr_0012_avywen_passive_skill_1_2": {
-            "Icon": "icon_talent_avywen_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "Abordagem Diplomática",
-            "Desc": "Habilidade suprema <@ba.key>Lança do Trovão: Choque Final</> melhorada: também aplica <@ba.vup>10%</> de <#ba.pulsevul>Suscetibilidade Elétrica</> por <@ba.vup>10</> s aos inimigos atingidos.",
-            "Type": 4
-        },
-        "chr_0012_avywen_passive_skill_1_1": {
-            "Icon": "icon_talent_avywen_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "Abordagem Diplomática",
-            "Desc": "Habilidade suprema <@ba.key>Lança do Trovão: Choque Final</> melhorada: também aplica <@ba.vup>6%</> de <#ba.pulsevul>Suscetibilidade Elétrica</> por <@ba.vup>10</> s aos inimigos atingidos.",
-            "Type": 4
         }
     },
     "Potentials": {

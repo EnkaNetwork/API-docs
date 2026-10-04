@@ -9,17 +9,17 @@
     "MainAttrId": 40,
     "SubAttrId": 41,
     "AttributeNodes": {
-        "chr_0028_wulfa_7": {
-            "40": 20
-        },
-        "chr_0028_wulfa_5": {
-            "40": 15
-        },
         "chr_0028_wulfa_1": {
-            "40": 10
+            "40": 10.0
         },
         "chr_0028_wulfa_3": {
-            "40": 15
+            "40": 15.0
+        },
+        "chr_0028_wulfa_5": {
+            "40": 15.0
+        },
+        "chr_0028_wulfa_7": {
+            "40": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "적이 동시에 <#ba.noguard>방어 불능</>과 <#ba.spellinflict>아츠 부착</> 상태일 때 사용할 수 있습니다.\n로시의 연계 스킬은 연속으로 2회 사용할 수 있습니다. 첫 공격은 목표에 <@ba.pd>물리 피해</>를 줍니다.\n두 번째 공격은 목표의 <#ba.spellinflict>아츠 부착</>을 모두 <#ba.consume>소모</>한 뒤, 대상에게 <#ba.consume>소모</>한 스택 수치에 따른 <@ba.pd>물리 피해</>와 <#ba.airborne>띄우기</> 피해를 주고, 일정 시간 동안 자신의 치명타 확률과 치명타 피해를 증가시킵니다.\n연계 스킬의 두 번째 공격이 <@ba.key>정확하게 연계</>되면, 추가로 <#ba.noguard>방어 불능</> 1스택을 쌓습니다.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "쿨타임",
@@ -223,9 +223,9 @@
             "Desc": "일반 공격:\n적에게 최대 5단 공격을 하여 <@ba.pd>물리 피해</>를 줍니다. 메인 컨트롤 오퍼레이터라면 <#ba.lastcombo>강력한 일격</>이 <@ba.poise>18</>포인트의 불균형 피해를 줍니다.\n\n낙하 공격:\n공중에 떴을 때, 일반 공격을 사용하면 낙하하며 주변의 적을 공격하고 <@ba.pd>물리 피해</>를 줍니다.\n\n처형 공격:\n주변에 불균형 상태의 적이 있을 때, 일반 공격을 사용하면 해당 적을 처형하여 대량의 <@ba.pd>물리 피해</>를 주고 일정량의 스킬 게이지를 회복합니다.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "일반 공격 제1단계 배율",
@@ -355,6 +355,109 @@
                 }
             ]
         },
+        "chr_0028_wulfa_NormalSkill": {
+            "Icon": "skillicon/icon_skill_wulfa_01",
+            "Element": "Physical",
+            "Name": "붉은색의 그림자",
+            "Desc": "목표를 향해 돌진하여 <@ba.pd>물리 피해</>를 주고 <#ba.airborne>띄우기</> 피해를 줍니다.\n만약 목표가 이미 <#ba.noguard>방어 불능</> 상태를 보유하고 있으면, 추가로 <@ba.key>울프팀의 진주</>가 발동해 목표에 돌진하며 <@ba.fire>열기 피해</>를 줍니다.",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "스킬 게이지 소모",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "제1단계 피해 배율",
+                    "ConditionId": "",
+                    "Values": [
+                        "85%",
+                        "94%",
+                        "102%",
+                        "111%",
+                        "119%",
+                        "128%",
+                        "137%",
+                        "145%",
+                        "154%",
+                        "164%",
+                        "177%",
+                        "192%"
+                    ]
+                },
+                {
+                    "Text": "제1단계 불균형치",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "제2단계 피해 배율",
+                    "ConditionId": "",
+                    "Values": [
+                        "128%",
+                        "141%",
+                        "153%",
+                        "166%",
+                        "179%",
+                        "192%",
+                        "204%",
+                        "217%",
+                        "230%",
+                        "246%",
+                        "265%",
+                        "288%"
+                    ]
+                },
+                {
+                    "Text": "제2단계 불균형치",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "12",
+                        "12",
+                        "12",
+                        "15"
+                    ]
+                }
+            ]
+        },
         "chr_0028_wulfa_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_wulfa_01",
             "Element": "Fire",
@@ -362,26 +465,26 @@
             "Desc": "망토를 휘날리며 재빠르게 찌릅니다. 짧은 시간 동안 목표에 여러 차례 <@ba.fire>열기 피해</>를 준 후, 즉시 단검으로 2단 베기를 하여 대량의 <@ba.fire>열기 피해</>를 주고 <#ba.fireinflict>열기 부착</>을 부여합니다.\n<@ba.info>이번 스킬이 만약 치명타 피해를 줬을 경우, 더 강한 치명타 피해를 줍니다.</>",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 10,
+            "Cooldown": 10.0,
             "CostType": "UltimateSp",
-            "CostValue": 110,
+            "CostValue": 110.0,
             "Params": [
                 {
                     "Text": "필요한 궁극기 에너지",
                     "ConditionId": "",
                     "Values": [
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110,
-                        110
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0,
+                        110.0
                     ]
                 },
                 {
@@ -493,112 +596,17 @@
                     ]
                 }
             ]
-        },
-        "chr_0028_wulfa_NormalSkill": {
-            "Icon": "skillicon/icon_skill_wulfa_01",
-            "Element": "Physical",
-            "Name": "붉은색의 그림자",
-            "Desc": "목표를 향해 돌진하여 <@ba.pd>물리 피해</>를 주고 <#ba.airborne>띄우기</> 피해를 줍니다.\n만약 목표가 이미 <#ba.noguard>방어 불능</> 상태를 보유하고 있으면, 추가로 <@ba.key>울프팀의 진주</>가 발동해 목표에 돌진하며 <@ba.fire>열기 피해</>를 줍니다.",
-            "ConditionData": {},
-            "Type": 1,
-            "Cooldown": 0,
-            "CostType": "Atb",
-            "CostValue": 100,
-            "Params": [
-                {
-                    "Text": "스킬 게이지 소모",
-                    "ConditionId": "",
-                    "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
-                    ]
-                },
-                {
-                    "Text": "제1단계 피해 배율",
-                    "ConditionId": "",
-                    "Values": [
-                        "85%",
-                        "94%",
-                        "102%",
-                        "111%",
-                        "119%",
-                        "128%",
-                        "137%",
-                        "145%",
-                        "154%",
-                        "164%",
-                        "177%",
-                        "192%"
-                    ]
-                },
-                {
-                    "Text": "제1단계 불균형치",
-                    "ConditionId": "",
-                    "Values": [
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5",
-                        "5"
-                    ]
-                },
-                {
-                    "Text": "제2단계 피해 배율",
-                    "ConditionId": "",
-                    "Values": [
-                        "128%",
-                        "141%",
-                        "153%",
-                        "166%",
-                        "179%",
-                        "192%",
-                        "204%",
-                        "217%",
-                        "230%",
-                        "246%",
-                        "265%",
-                        "288%"
-                    ]
-                },
-                {
-                    "Text": "제2단계 불균형치",
-                    "ConditionId": "",
-                    "Values": [
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "12",
-                        "12",
-                        "12",
-                        "15"
-                    ]
-                }
-            ]
         }
     },
     "NodeSkillMap": {
+        "chr_0028_wulfa_passive_skill_0_1": {
+            "Icon": "icon_talent_wulfa_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "절흔",
+            "Desc": "배틀 스킬 <@ba.key>울프팀의 진주</>가 피해를 준 후, 목표에게 <#ba.rossi>늑대의 발톱</> 상태를 부여합니다. <@ba.vup>15</>초 동안 지속되며, 해당 효과는 중첩되지 않습니다.\n<#ba.rossi>늑대의 발톱</>이 지속되는 동안, 목표는 매초 로시 공격력 <@ba.vup>25%</>의 <@ba.pd>물리 피해</>를 받고, 받는 <@ba.pd>물리 피해</>와 <@ba.fire>열기 피해</> <@ba.vup>+6%</>.",
+            "Type": 4
+        },
         "chr_0028_wulfa_passive_skill_0_2": {
             "Icon": "icon_talent_wulfa_01",
             "Level": 2,
@@ -607,36 +615,12 @@
             "Desc": "배틀 스킬 <@ba.key>울프팀의 진주</>가 피해를 준 후, 목표에게 <#ba.rossi>늑대의 발톱</> 상태를 부여합니다. <@ba.vup>25</>초 동안 지속되며, 해당 효과는 중첩되지 않습니다.\n<#ba.rossi>늑대의 발톱</>이 지속되는 동안, 목표는 매초 로시 공격력 <@ba.vup>30%</>의 <@ba.pd>물리 피해</>를 받고, 받는 <@ba.pd>물리 피해</>와 <@ba.fire>열기 피해</> <@ba.vup>+12%</>.",
             "Type": 4
         },
-        "fac_chr_0028_wulfa_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
-            "Name": "사냥꾼의 후각 · β",
-            "Desc": "응접실에 배치 시, 오퍼레이터의 단서 수집 기본 효율 20% 증가",
+        "chr_0028_wulfa_passive_skill_1_1": {
+            "Icon": "icon_talent_wulfa_02",
             "Level": 1,
-            "Index": 3,
-            "Type": 5
-        },
-        "fac_chr_0028_wulfa_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
-            "Name": "집단의 의례 · β",
-            "Desc": "응접실에 배치 시, 선실에 있는 오퍼레이터의 컨디션 소모 속도 14% 감소",
-            "Level": 1,
-            "Index": 2,
-            "Type": 5
-        },
-        "fac_chr_0028_wulfa_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
-            "Name": "사냥꾼의 후각 · γ",
-            "Desc": "응접실에 배치 시, 오퍼레이터의 단서 수집 기본 효율 30% 증가",
-            "Level": 2,
-            "Index": 3,
-            "Type": 5
-        },
-        "chr_0028_wulfa_passive_skill_0_1": {
-            "Icon": "icon_talent_wulfa_01",
-            "Level": 1,
-            "Index": 0,
-            "Name": "절흔",
-            "Desc": "배틀 스킬 <@ba.key>울프팀의 진주</>가 피해를 준 후, 목표에게 <#ba.rossi>늑대의 발톱</> 상태를 부여합니다. <@ba.vup>15</>초 동안 지속되며, 해당 효과는 중첩되지 않습니다.\n<#ba.rossi>늑대의 발톱</>이 지속되는 동안, 목표는 매초 로시 공격력 <@ba.vup>25%</>의 <@ba.pd>물리 피해</>를 받고, 받는 <@ba.pd>물리 피해</>와 <@ba.fire>열기 피해</> <@ba.vup>+6%</>.",
+            "Index": 1,
+            "Name": "끓어오르는 피",
+            "Desc": "로시가 <#ba.rossi>늑대의 발톱</> 상태의 적에게 스킬을 사용해 치명타 피해를 주면, 추가로 공격력 <@ba.vup>12%</>의 <@ba.fire>열기 피해</>를 1회 주고, <@ba.heal>[지능×0.04]</>만큼 자신의 생명력을 회복합니다. 목표가 <#ba.burning>연소</> 상태도 보유하고 있다면, 위의 피해 및 치유 효과가 <@ba.vup>1.5</>배로 증가합니다.",
             "Type": 4
         },
         "chr_0028_wulfa_passive_skill_1_2": {
@@ -647,6 +631,14 @@
             "Desc": "로시가 <#ba.rossi>늑대의 발톱</> 상태의 적에게 스킬을 사용해 치명타 피해를 주면, 추가로 공격력 <@ba.vup>24%</>의 <@ba.fire>열기 피해</>를 1회 주고, <@ba.heal>[지능×0.08]</>만큼 자신의 생명력을 회복합니다. 목표가 <#ba.burning>연소</> 상태도 보유하고 있다면, 위의 피해 및 치유 효과가 <@ba.vup>1.5</>배로 증가합니다.",
             "Type": 4
         },
+        "fac_chr_0028_wulfa_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
+            "Name": "집단의 의례 · β",
+            "Desc": "응접실에 배치 시, 선실에 있는 오퍼레이터의 컨디션 소모 속도 14% 감소",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
         "fac_chr_0028_wulfa_0_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
             "Name": "집단의 의례 · γ",
@@ -655,13 +647,21 @@
             "Index": 2,
             "Type": 5
         },
-        "chr_0028_wulfa_passive_skill_1_1": {
-            "Icon": "icon_talent_wulfa_02",
+        "fac_chr_0028_wulfa_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
+            "Name": "사냥꾼의 후각 · β",
+            "Desc": "응접실에 배치 시, 오퍼레이터의 단서 수집 기본 효율 20% 증가",
             "Level": 1,
-            "Index": 1,
-            "Name": "끓어오르는 피",
-            "Desc": "로시가 <#ba.rossi>늑대의 발톱</> 상태의 적에게 스킬을 사용해 치명타 피해를 주면, 추가로 공격력 <@ba.vup>12%</>의 <@ba.fire>열기 피해</>를 1회 주고, <@ba.heal>[지능×0.04]</>만큼 자신의 생명력을 회복합니다. 목표가 <#ba.burning>연소</> 상태도 보유하고 있다면, 위의 피해 및 치유 효과가 <@ba.vup>1.5</>배로 증가합니다.",
-            "Type": 4
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0028_wulfa_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
+            "Name": "사냥꾼의 후각 · γ",
+            "Desc": "응접실에 배치 시, 오퍼레이터의 단서 수집 기본 효율 30% 증가",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
         }
     },
     "Potentials": {

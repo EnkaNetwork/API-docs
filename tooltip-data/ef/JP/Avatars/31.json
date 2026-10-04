@@ -9,17 +9,17 @@
     "MainAttrId": 42,
     "SubAttrId": 39,
     "AttributeNodes": {
-        "chr_0021_whiten_5": {
-            "42": 15
-        },
-        "chr_0021_whiten_7": {
-            "42": 20
-        },
         "chr_0021_whiten_1": {
-            "42": 10
+            "42": 10.0
         },
         "chr_0021_whiten_3": {
-            "42": 15
+            "42": 15.0
+        },
+        "chr_0021_whiten_5": {
+            "42": 15.0
+        },
+        "chr_0021_whiten_7": {
+            "42": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "敵が<#ba.frozen>凍結</>状態になったときに発動可能。\nすばやく敵の近くに移動し、一定範囲内の敵に<@ba.pd>物理ダメージ</>を与え、強制的に<#ba.airborne>浮遊</>させる。<#ba.frozen>凍結</>状態の敵に命中した場合、追加でダメージを与え、<#ba.physicalvul>物理脆弱</>を付与する。",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 18,
+            "Cooldown": 18.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "クールタイム",
@@ -162,158 +162,6 @@
                 }
             ]
         },
-        "chr_0021_whiten_NormalSkill": {
-            "Icon": "skillicon/icon_skill_whiten_01",
-            "Element": "Cryst",
-            "Name": "オノマトペ",
-            "Desc": "前方に槍を突き出し、氷の音波を放つ。直線上の敵に<@ba.cryst>寒冷ダメージ</>を与え、<#ba.crystinflict>寒冷付着</>を付与する。",
-            "ConditionData": {},
-            "Type": 1,
-            "Cooldown": 0,
-            "CostType": "Atb",
-            "CostValue": 100,
-            "Params": [
-                {
-                    "Text": "SP消費",
-                    "ConditionId": "",
-                    "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
-                    ]
-                },
-                {
-                    "Text": "ダメージ倍率",
-                    "ConditionId": "",
-                    "Values": [
-                        "156%",
-                        "171%",
-                        "187%",
-                        "202%",
-                        "218%",
-                        "234%",
-                        "249%",
-                        "265%",
-                        "280%",
-                        "300%",
-                        "323%",
-                        "350%"
-                    ]
-                },
-                {
-                    "Text": "ブレイク値",
-                    "ConditionId": "",
-                    "Values": [
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10"
-                    ]
-                }
-            ]
-        },
-        "chr_0021_whiten_UltimateSkill": {
-            "Icon": "skillicon/icon_ultimate_skill_whiten_01",
-            "Element": "Physical",
-            "Name": "トレモロ",
-            "Desc": "全力で槍の柄を地面に叩きつけ、周囲の敵に<@ba.pd>物理ダメージ</>を与える。<#ba.physicalvul>物理脆弱</>状態の敵を強制的に<#ba.airborne>浮遊</>させる。",
-            "ConditionData": {},
-            "Type": 3,
-            "Cooldown": 10,
-            "CostType": "UltimateSp",
-            "CostValue": 70,
-            "Params": [
-                {
-                    "Text": "必殺チャージ消費",
-                    "ConditionId": "",
-                    "Values": [
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70,
-                        70
-                    ]
-                },
-                {
-                    "Text": "クールタイム",
-                    "ConditionId": "",
-                    "Values": [
-                        "10秒",
-                        "10秒",
-                        "10秒",
-                        "10秒",
-                        "10秒",
-                        "10秒",
-                        "10秒",
-                        "10秒",
-                        "10秒",
-                        "10秒",
-                        "10秒",
-                        "10秒"
-                    ]
-                },
-                {
-                    "Text": "ダメージ倍率",
-                    "ConditionId": "",
-                    "Values": [
-                        "489%",
-                        "538%",
-                        "586%",
-                        "635%",
-                        "684%",
-                        "733%",
-                        "782%",
-                        "831%",
-                        "880%",
-                        "941%",
-                        "1014%",
-                        "1100%"
-                    ]
-                },
-                {
-                    "Text": "ブレイク値",
-                    "ConditionId": "",
-                    "Values": [
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "20",
-                        "20",
-                        "20"
-                    ]
-                }
-            ]
-        },
         "chr_0021_whiten_NormalAttack": {
             "Icon": "skillicon/icon_attack_lance",
             "Element": "Physical",
@@ -321,9 +169,9 @@
             "Desc": "通常攻撃：\n最大4段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>17</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "通常攻撃1段目ダメージ倍率",
@@ -434,9 +282,201 @@
                     ]
                 }
             ]
+        },
+        "chr_0021_whiten_NormalSkill": {
+            "Icon": "skillicon/icon_skill_whiten_01",
+            "Element": "Cryst",
+            "Name": "オノマトペ",
+            "Desc": "前方に槍を突き出し、氷の音波を放つ。直線上の敵に<@ba.cryst>寒冷ダメージ</>を与え、<#ba.crystinflict>寒冷付着</>を付与する。",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "SP消費",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "ダメージ倍率",
+                    "ConditionId": "",
+                    "Values": [
+                        "156%",
+                        "171%",
+                        "187%",
+                        "202%",
+                        "218%",
+                        "234%",
+                        "249%",
+                        "265%",
+                        "280%",
+                        "300%",
+                        "323%",
+                        "350%"
+                    ]
+                },
+                {
+                    "Text": "ブレイク値",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0021_whiten_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_whiten_01",
+            "Element": "Physical",
+            "Name": "トレモロ",
+            "Desc": "全力で槍の柄を地面に叩きつけ、周囲の敵に<@ba.pd>物理ダメージ</>を与える。<#ba.physicalvul>物理脆弱</>状態の敵を強制的に<#ba.airborne>浮遊</>させる。",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 10.0,
+            "CostType": "UltimateSp",
+            "CostValue": 70.0,
+            "Params": [
+                {
+                    "Text": "必殺チャージ消費",
+                    "ConditionId": "",
+                    "Values": [
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0
+                    ]
+                },
+                {
+                    "Text": "クールタイム",
+                    "ConditionId": "",
+                    "Values": [
+                        "10秒",
+                        "10秒",
+                        "10秒",
+                        "10秒",
+                        "10秒",
+                        "10秒",
+                        "10秒",
+                        "10秒",
+                        "10秒",
+                        "10秒",
+                        "10秒",
+                        "10秒"
+                    ]
+                },
+                {
+                    "Text": "ダメージ倍率",
+                    "ConditionId": "",
+                    "Values": [
+                        "489%",
+                        "538%",
+                        "586%",
+                        "635%",
+                        "684%",
+                        "733%",
+                        "782%",
+                        "831%",
+                        "880%",
+                        "941%",
+                        "1014%",
+                        "1100%"
+                    ]
+                },
+                {
+                    "Text": "ブレイク値",
+                    "ConditionId": "",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                }
+            ]
         }
     },
     "NodeSkillMap": {
+        "chr_0021_whiten_passive_skill_0_1": {
+            "Icon": "icon_talent_whiten_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "類は友を呼ぶ",
+            "Desc": "<#ba.crystbreak>粉砕</>を与えたあと、次に発動する戦技<@ba.key>「オノマトペ」</>でSPが<@ba.vup>7.5</><#ba.return>返還</>される（重ね掛け不可）",
+            "Type": 4
+        },
+        "chr_0021_whiten_passive_skill_0_2": {
+            "Icon": "icon_talent_whiten_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "類は友を呼ぶ",
+            "Desc": "<#ba.crystbreak>粉砕</>を与えたあと、次に発動する戦技<@ba.key>「オノマトペ」</>でSPが<@ba.vup>15</><#ba.return>返還</>される（重ね掛け不可）",
+            "Type": 4
+        },
+        "chr_0021_whiten_passive_skill_1_1": {
+            "Icon": "icon_talent_whiten_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "惰性",
+            "Desc": "<#ba.crystonchar>寒冷付着</>を受けなくなり、受ける<@ba.cryst>寒冷ダメージ</><@ba.vup>-10%</>",
+            "Type": 4
+        },
+        "chr_0021_whiten_passive_skill_1_2": {
+            "Icon": "icon_talent_whiten_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "惰性",
+            "Desc": "<#ba.crystonchar>寒冷付着</>を受けなくなり、受ける<@ba.cryst>寒冷ダメージ</><@ba.vup>-20%</>",
+            "Type": 4
+        },
+        "fac_chr_0021_whiten_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "こまめに休憩・α",
+            "Desc": "指揮中枢配属時、全員の体力回復+8%",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
         "fac_chr_0021_whiten_0_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
             "Name": "こまめに休憩・β",
@@ -453,52 +493,12 @@
             "Index": 3,
             "Type": 5
         },
-        "chr_0021_whiten_passive_skill_0_1": {
-            "Icon": "icon_talent_whiten_01",
-            "Level": 1,
-            "Index": 0,
-            "Name": "類は友を呼ぶ",
-            "Desc": "<#ba.crystbreak>粉砕</>を与えたあと、次に発動する戦技<@ba.key>「オノマトペ」</>でSPが<@ba.vup>7.5</><#ba.return>返還</>される（重ね掛け不可）",
-            "Type": 4
-        },
-        "chr_0021_whiten_passive_skill_1_1": {
-            "Icon": "icon_talent_whiten_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "惰性",
-            "Desc": "<#ba.crystonchar>寒冷付着</>を受けなくなり、受ける<@ba.cryst>寒冷ダメージ</><@ba.vup>-10%</>",
-            "Type": 4
-        },
         "fac_chr_0021_whiten_1_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
             "Name": "チャンネル傍受・γ",
             "Desc": "応接室配属時、手がかり捜索速度+30%",
             "Level": 2,
             "Index": 3,
-            "Type": 5
-        },
-        "chr_0021_whiten_passive_skill_1_2": {
-            "Icon": "icon_talent_whiten_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "惰性",
-            "Desc": "<#ba.crystonchar>寒冷付着</>を受けなくなり、受ける<@ba.cryst>寒冷ダメージ</><@ba.vup>-20%</>",
-            "Type": 4
-        },
-        "chr_0021_whiten_passive_skill_0_2": {
-            "Icon": "icon_talent_whiten_01",
-            "Level": 2,
-            "Index": 0,
-            "Name": "類は友を呼ぶ",
-            "Desc": "<#ba.crystbreak>粉砕</>を与えたあと、次に発動する戦技<@ba.key>「オノマトペ」</>でSPが<@ba.vup>15</><#ba.return>返還</>される（重ね掛け不可）",
-            "Type": 4
-        },
-        "fac_chr_0021_whiten_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
-            "Name": "こまめに休憩・α",
-            "Desc": "指揮中枢配属時、全員の体力回復+8%",
-            "Level": 1,
-            "Index": 2,
             "Type": 5
         }
     },

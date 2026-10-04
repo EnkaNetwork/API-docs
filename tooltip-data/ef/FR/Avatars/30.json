@@ -10,16 +10,16 @@
     "SubAttrId": 41,
     "AttributeNodes": {
         "chr_0019_karin_1": {
-            "40": 10
-        },
-        "chr_0019_karin_5": {
-            "40": 15
+            "40": 10.0
         },
         "chr_0019_karin_3": {
-            "40": 15
+            "40": 15.0
+        },
+        "chr_0019_karin_5": {
+            "40": 15.0
         },
         "chr_0019_karin_7": {
-            "40": 20
+            "40": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "DÉCLENCHEMENT DE COMBO : lorsqu'un ennemi est déséquilibré ou touche un <#ba.poiseknot>nœud de déséquilibre</>. \nPermet d'effectuer une ruée de contre avec 2 séquences de poussée. Chaque séquence inflige des <@ba.pd>DÉG physiques</> et restaure des PC.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 10,
+            "Cooldown": 10.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Temps de recharge",
@@ -130,12 +130,12 @@
             "Icon": "skillicon/icon_attack_sword",
             "Element": "Physical",
             "Name": "Épée d'aspiration",
-            "Desc": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>17</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC.",
+            "Desc": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également <@ba.poise>17</> points de Déséquilibre. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Multiplicateur d'ATQ-B SÉQ 1",
@@ -254,26 +254,26 @@
             "Desc": "Une entaille frontale qui inflige des <@ba.fire>DÉG thermiques</> et applique une <#ba.fireinflict>altération thermique</>.",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "Coût en PC",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -321,26 +321,26 @@
             "Desc": "Entre dans un état de canalisation et tire 3 fusées de ralliement. Chaque tir restaure quelques PC.",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 20,
+            "Cooldown": 20.0,
             "CostType": "UltimateSp",
-            "CostValue": 120,
+            "CostValue": 120.0,
             "Params": [
                 {
                     "Text": "Coût en énergie d'ultime",
                     "ConditionId": "",
                     "Values": [
-                        120,
-                        120,
-                        120,
-                        120,
-                        120,
-                        120,
-                        120,
-                        120,
-                        120,
-                        120,
-                        120,
-                        120
+                        120.0,
+                        120.0,
+                        120.0,
+                        120.0,
+                        120.0,
+                        120.0,
+                        120.0,
+                        120.0,
+                        120.0,
+                        120.0,
+                        120.0,
+                        120.0
                     ]
                 },
                 {
@@ -383,14 +383,6 @@
         }
     },
     "NodeSkillMap": {
-        "chr_0019_karin_passive_skill_0_2": {
-            "Icon": "icon_talent_karin_01",
-            "Level": 2,
-            "Index": 0,
-            "Name": "Cri de victoire",
-            "Desc": "Renforce la compétence de combo <@ba.key>Ruée éclair</> : pour chaque tranche de 10 point(s) d'Intelligence, récupération de PC <@ba.vup>+1.5%</> (max. : <@ba.vup>75%</>).",
-            "Type": 4
-        },
         "chr_0019_karin_passive_skill_0_1": {
             "Icon": "icon_talent_karin_01",
             "Level": 1,
@@ -399,21 +391,13 @@
             "Desc": "Renforce la compétence de combo <@ba.key>Ruée éclair</> : pour chaque tranche de 10 point(s) d'Intelligence, récupération de PC <@ba.vup>+1.0%</> (max. : <@ba.vup>50%</>).",
             "Type": 4
         },
-        "fac_chr_0019_karin_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
-            "Name": "Brise-glace γ",
-            "Desc": "En l'affectant à la salle de réception, ralentit la baisse d'humeur de tous les opérateurs qui s'y trouvent de 18 %.",
+        "chr_0019_karin_passive_skill_0_2": {
+            "Icon": "icon_talent_karin_01",
             "Level": 2,
-            "Index": 3,
-            "Type": 5
-        },
-        "fac_chr_0019_karin_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
-            "Name": "Brise-glace β",
-            "Desc": "En l'affectant à la salle de réception, ralentit la baisse d'humeur de tous les opérateurs qui s'y trouvent de 14 %.",
-            "Level": 1,
-            "Index": 3,
-            "Type": 5
+            "Index": 0,
+            "Name": "Cri de victoire",
+            "Desc": "Renforce la compétence de combo <@ba.key>Ruée éclair</> : pour chaque tranche de 10 point(s) d'Intelligence, récupération de PC <@ba.vup>+1.5%</> (max. : <@ba.vup>75%</>).",
+            "Type": 4
         },
         "chr_0019_karin_passive_skill_1_1": {
             "Icon": "icon_talent_karin_02",
@@ -437,6 +421,22 @@
             "Desc": "En l'affectant à la cabine de fabrication, ralentit la baisse d'humeur de tous les opérateurs qui s'y trouvent de 14 %.",
             "Level": 2,
             "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0019_karin_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
+            "Name": "Brise-glace β",
+            "Desc": "En l'affectant à la salle de réception, ralentit la baisse d'humeur de tous les opérateurs qui s'y trouvent de 14 %.",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0019_karin_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
+            "Name": "Brise-glace γ",
+            "Desc": "En l'affectant à la salle de réception, ralentit la baisse d'humeur de tous les opérateurs qui s'y trouvent de 18 %.",
+            "Level": 2,
+            "Index": 3,
             "Type": 5
         }
     },

@@ -9,17 +9,17 @@
     "MainAttrId": 41,
     "SubAttrId": 39,
     "AttributeNodes": {
-        "chr_0023_antal_3": {
-            "41": 15
-        },
         "chr_0023_antal_1": {
-            "41": 10
+            "41": 10.0
+        },
+        "chr_0023_antal_3": {
+            "41": 15.0
         },
         "chr_0023_antal_5": {
-            "41": 15
+            "41": 15.0
         },
         "chr_0023_antal_7": {
-            "41": 20
+            "41": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "当被<@ba.key>聚焦</>的敌人进入<#ba.physicalstatus>物理异常</>或<#ba.spellinflict>法术附着</>状态时可以发动。\n在该敌人身上引发1次能量爆炸，造成<@ba.pulse>电磁伤害</>并再次对其施加该<#ba.physicalstatus>物理异常</>或<#ba.spellinflict>法术附着</>。",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 25,
+            "Cooldown": 25.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "冷却时间",
@@ -115,9 +115,9 @@
             "Desc": "普通攻击：\n对敌人进行至多4段攻击，造成<@ba.pulse>电磁伤害</>。作为主控干员时，<#ba.lastcombo>重击</>会造成<@ba.poise>15</>点失衡。\n\n下落攻击：\n处于空中时使用普通攻击，会下落并攻击附近敌人，造成<@ba.pulse>电磁伤害</>。\n\n处决攻击：\n附近有敌人处于失衡状态时使用普通攻击，将处决该敌人，造成大量<@ba.pulse>电磁伤害</>并恢复一定技力。",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "普攻第一段倍率",
@@ -229,109 +229,6 @@
                 }
             ]
         },
-        "chr_0023_antal_UltimateSkill": {
-            "Icon": "skillicon/icon_ultimate_skill_antal_01",
-            "Element": "Pulse",
-            "Name": "超频时刻",
-            "Desc": "对全队施加一段时间的<#ba.pulseenhance>电磁增幅</>和<#ba.fireenhance>灼热增幅</>。",
-            "ConditionData": {},
-            "Type": 3,
-            "Cooldown": 20,
-            "CostType": "UltimateSp",
-            "CostValue": 100,
-            "Params": [
-                {
-                    "Text": "所需终结技能量",
-                    "ConditionId": "",
-                    "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
-                    ]
-                },
-                {
-                    "Text": "冷却时间",
-                    "ConditionId": "",
-                    "Values": [
-                        "20秒",
-                        "20秒",
-                        "20秒",
-                        "20秒",
-                        "20秒",
-                        "20秒",
-                        "20秒",
-                        "20秒",
-                        "20秒",
-                        "20秒",
-                        "20秒",
-                        "20秒"
-                    ]
-                },
-                {
-                    "Text": "电磁增幅效果",
-                    "ConditionId": "",
-                    "Values": [
-                        "8%",
-                        "9%",
-                        "10%",
-                        "11%",
-                        "12%",
-                        "13%",
-                        "14%",
-                        "15%",
-                        "16%",
-                        "17%",
-                        "18%",
-                        "20%"
-                    ]
-                },
-                {
-                    "Text": "灼热增幅效果",
-                    "ConditionId": "",
-                    "Values": [
-                        "8%",
-                        "9%",
-                        "10%",
-                        "11%",
-                        "12%",
-                        "13%",
-                        "14%",
-                        "15%",
-                        "16%",
-                        "17%",
-                        "18%",
-                        "20%"
-                    ]
-                },
-                {
-                    "Text": "持续时间（秒）",
-                    "ConditionId": "",
-                    "Values": [
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12"
-                    ]
-                }
-            ]
-        },
         "chr_0023_antal_NormalSkill": {
             "Icon": "skillicon/icon_skill_antal_01",
             "Element": "Pulse",
@@ -339,26 +236,26 @@
             "Desc": "对敌人施加长时间<@ba.key>聚焦</>，造成<@ba.pulse>电磁伤害</>，被<@ba.key>聚焦</>的敌人受到<#ba.pulsevul>电磁脆弱</>和<#ba.firevul>灼热脆弱</>，同时最多<@ba.key>聚焦</>1个敌人。",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "技力消耗",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -434,55 +331,118 @@
                     ]
                 }
             ]
+        },
+        "chr_0023_antal_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_antal_01",
+            "Element": "Pulse",
+            "Name": "超频时刻",
+            "Desc": "对全队施加一段时间的<#ba.pulseenhance>电磁增幅</>和<#ba.fireenhance>灼热增幅</>。",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 20.0,
+            "CostType": "UltimateSp",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "所需终结技能量",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "冷却时间",
+                    "ConditionId": "",
+                    "Values": [
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒",
+                        "20秒"
+                    ]
+                },
+                {
+                    "Text": "电磁增幅效果",
+                    "ConditionId": "",
+                    "Values": [
+                        "8%",
+                        "9%",
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "20%"
+                    ]
+                },
+                {
+                    "Text": "灼热增幅效果",
+                    "ConditionId": "",
+                    "Values": [
+                        "8%",
+                        "9%",
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "20%"
+                    ]
+                },
+                {
+                    "Text": "持续时间（秒）",
+                    "ConditionId": "",
+                    "Values": [
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12"
+                    ]
+                }
+            ]
         }
     },
     "NodeSkillMap": {
-        "chr_0023_antal_passive_skill_1_2": {
-            "Icon": "icon_talent_antal_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "下意识",
-            "Desc": "有<@ba.vup>30%</>的概率免疫<@ba.pd>物理伤害</>，并回复自身<@ba.heal>[45+力量×0.38]</>点生命值。",
-            "Type": 4
-        },
-        "fac_chr_0023_antal_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
-            "Name": "冷笑话学习·β",
-            "Desc": "进驻培养舱时，舱室内干员心情消耗降低14%",
-            "Level": 1,
-            "Index": 3,
-            "Type": 5
-        },
         "chr_0023_antal_passive_skill_0_1": {
             "Icon": "icon_talent_antal_01",
             "Level": 1,
             "Index": 0,
             "Name": "即兴发挥",
             "Desc": "队伍中处于<#ba.enhance>增幅</>状态的干员造成技能伤害后，安塔尔为其回复<@ba.heal>[72+力量×0.6]</>点生命值，每个干员每<@ba.vup>30</>秒最多受到1次该回复效果。",
-            "Type": 4
-        },
-        "fac_chr_0023_antal_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
-            "Name": "实验性施术单元·α",
-            "Desc": "进驻制造舱时，武器经验素材的生产效率提升10%",
-            "Level": 1,
-            "Index": 2,
-            "Type": 5
-        },
-        "fac_chr_0023_antal_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
-            "Name": "冷笑话学习·γ",
-            "Desc": "进驻培养舱时，舱室内干员心情消耗降低18%",
-            "Level": 2,
-            "Index": 3,
-            "Type": 5
-        },
-        "chr_0023_antal_passive_skill_1_1": {
-            "Icon": "icon_talent_antal_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "下意识",
-            "Desc": "有<@ba.vup>30%</>的概率免疫<@ba.pd>物理伤害</>，并回复自身<@ba.heal>[27+力量×0.23]</>点生命值。",
             "Type": 4
         },
         "chr_0023_antal_passive_skill_0_2": {
@@ -493,12 +453,52 @@
             "Desc": "队伍中处于<#ba.enhance>增幅</>状态的干员造成技能伤害后，安塔尔为其回复<@ba.heal>[108+力量×0.9]</>点生命值，每个干员每<@ba.vup>30</>秒最多受到1次该回复效果。",
             "Type": 4
         },
+        "chr_0023_antal_passive_skill_1_1": {
+            "Icon": "icon_talent_antal_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "下意识",
+            "Desc": "有<@ba.vup>30%</>的概率免疫<@ba.pd>物理伤害</>，并回复自身<@ba.heal>[27+力量×0.23]</>点生命值。",
+            "Type": 4
+        },
+        "chr_0023_antal_passive_skill_1_2": {
+            "Icon": "icon_talent_antal_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "下意识",
+            "Desc": "有<@ba.vup>30%</>的概率免疫<@ba.pd>物理伤害</>，并回复自身<@ba.heal>[45+力量×0.38]</>点生命值。",
+            "Type": 4
+        },
+        "fac_chr_0023_antal_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "实验性施术单元·α",
+            "Desc": "进驻制造舱时，武器经验素材的生产效率提升10%",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
         "fac_chr_0023_antal_0_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
             "Name": "实验性施术单元·β",
             "Desc": "进驻制造舱时，武器经验素材的生产效率提升20%",
             "Level": 2,
             "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0023_antal_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
+            "Name": "冷笑话学习·β",
+            "Desc": "进驻培养舱时，舱室内干员心情消耗降低14%",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0023_antal_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
+            "Name": "冷笑话学习·γ",
+            "Desc": "进驻培养舱时，舱室内干员心情消耗降低18%",
+            "Level": 2,
+            "Index": 3,
             "Type": 5
         }
     },

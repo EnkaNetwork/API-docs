@@ -10,158 +10,19 @@
     "SubAttrId": 39,
     "AttributeNodes": {
         "chr_0015_lifeng_1": {
-            "40": 10
-        },
-        "chr_0015_lifeng_7": {
-            "40": 20
-        },
-        "chr_0015_lifeng_5": {
-            "40": 15
+            "40": 10.0
         },
         "chr_0015_lifeng_3": {
-            "40": 15
+            "40": 15.0
+        },
+        "chr_0015_lifeng_5": {
+            "40": 15.0
+        },
+        "chr_0015_lifeng_7": {
+            "40": 20.0
         }
     },
     "SkillInfoMap": {
-        "chr_0015_lifeng_NormalSkill": {
-            "Icon": "skillicon/icon_skill_lifeng_01",
-            "Element": "Physical",
-            "Name": "Turbid Avatar",
-            "Desc": "Swings the polearm multiple times to deal 2 hits of <@ba.pd>Physical DMG</>, then slams the ground to deal <@ba.pd>Physical DMG</> and <#ba.knockdown>Knock Down</> to all enemies in the area of effect. \nIf the enemy struck by the last hit of this skill has no <#ba.noguard>Vulnerability</> stacks, apply <#ba.physicalvul>Physical Susceptibility</> to the said enemy as well.",
-            "ConditionData": {},
-            "Type": 1,
-            "Cooldown": 0,
-            "CostType": "Atb",
-            "CostValue": 100,
-            "Params": [
-                {
-                    "Text": "SP Cost",
-                    "ConditionId": "",
-                    "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
-                    ]
-                },
-                {
-                    "Text": "SEQ 1 DMG Multiplier",
-                    "ConditionId": "",
-                    "Values": [
-                        "38%",
-                        "42%",
-                        "46%",
-                        "50%",
-                        "53%",
-                        "57%",
-                        "61%",
-                        "65%",
-                        "69%",
-                        "73%",
-                        "79%",
-                        "86%"
-                    ]
-                },
-                {
-                    "Text": "SEQ 2 DMG Multiplier",
-                    "ConditionId": "",
-                    "Values": [
-                        "38%",
-                        "42%",
-                        "46%",
-                        "50%",
-                        "53%",
-                        "57%",
-                        "61%",
-                        "65%",
-                        "69%",
-                        "73%",
-                        "79%",
-                        "86%"
-                    ]
-                },
-                {
-                    "Text": "SEQ 3 DMG Multiplier",
-                    "ConditionId": "",
-                    "Values": [
-                        "119%",
-                        "131%",
-                        "143%",
-                        "155%",
-                        "167%",
-                        "178%",
-                        "190%",
-                        "202%",
-                        "214%",
-                        "229%",
-                        "247%",
-                        "268%"
-                    ]
-                },
-                {
-                    "Text": "SEQ 3 Stagger",
-                    "ConditionId": "",
-                    "Values": [
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10",
-                        "10"
-                    ]
-                },
-                {
-                    "Text": "Physical Susceptibility",
-                    "ConditionId": "",
-                    "Values": [
-                        "5%",
-                        "5%",
-                        "5%",
-                        "5%",
-                        "5%",
-                        "7%",
-                        "7%",
-                        "7%",
-                        "9%",
-                        "10%",
-                        "10%",
-                        "12%"
-                    ]
-                },
-                {
-                    "Text": "Physical Susceptibility Duration (s)",
-                    "ConditionId": "",
-                    "Values": [
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12"
-                    ]
-                }
-            ]
-        },
         "chr_0015_lifeng_ComboSkill": {
             "Icon": "skillicon/icon_combo_skill_lifeng_01",
             "Element": "Physical",
@@ -169,9 +30,9 @@
             "Desc": "COMBO TRIGGER: When the controlled operator performs a <#ba.lastcombo>Final Strike</> on an enemy with <#ba.physicalvul>Physical Susceptibility</> or <#ba.fracture>Breach</>. \nUnleashes an aspect that performs a spear thrust to deal <@ba.pd>Physical DMG</> and grants <#ba.combo>Link</>.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 16,
+            "Cooldown": 16.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Cooldown",
@@ -290,9 +151,9 @@
             "Desc": "BASIC ATTACK: \nAn attack with up to 4 sequences that deals <@ba.pd>Physical DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>19</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pd>Physical DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.pd>Physical DMG</> and recovers some SP.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "BATK SEQ 1 Multiplier",
@@ -404,6 +265,145 @@
                 }
             ]
         },
+        "chr_0015_lifeng_NormalSkill": {
+            "Icon": "skillicon/icon_skill_lifeng_01",
+            "Element": "Physical",
+            "Name": "Turbid Avatar",
+            "Desc": "Swings the polearm multiple times to deal 2 hits of <@ba.pd>Physical DMG</>, then slams the ground to deal <@ba.pd>Physical DMG</> and <#ba.knockdown>Knock Down</> to all enemies in the area of effect. \nIf the enemy struck by the last hit of this skill has no <#ba.noguard>Vulnerability</> stacks, apply <#ba.physicalvul>Physical Susceptibility</> to the said enemy as well.",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "SP Cost",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "SEQ 1 DMG Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "38%",
+                        "42%",
+                        "46%",
+                        "50%",
+                        "53%",
+                        "57%",
+                        "61%",
+                        "65%",
+                        "69%",
+                        "73%",
+                        "79%",
+                        "86%"
+                    ]
+                },
+                {
+                    "Text": "SEQ 2 DMG Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "38%",
+                        "42%",
+                        "46%",
+                        "50%",
+                        "53%",
+                        "57%",
+                        "61%",
+                        "65%",
+                        "69%",
+                        "73%",
+                        "79%",
+                        "86%"
+                    ]
+                },
+                {
+                    "Text": "SEQ 3 DMG Multiplier",
+                    "ConditionId": "",
+                    "Values": [
+                        "119%",
+                        "131%",
+                        "143%",
+                        "155%",
+                        "167%",
+                        "178%",
+                        "190%",
+                        "202%",
+                        "214%",
+                        "229%",
+                        "247%",
+                        "268%"
+                    ]
+                },
+                {
+                    "Text": "SEQ 3 Stagger",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Physical Susceptibility",
+                    "ConditionId": "",
+                    "Values": [
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "5%",
+                        "7%",
+                        "7%",
+                        "7%",
+                        "9%",
+                        "10%",
+                        "10%",
+                        "12%"
+                    ]
+                },
+                {
+                    "Text": "Physical Susceptibility Duration (s)",
+                    "ConditionId": "",
+                    "Values": [
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12"
+                    ]
+                }
+            ]
+        },
         "chr_0015_lifeng_UltimateSkill": {
             "Icon": "skillicon/icon_ultimate_skill_lifeng_01",
             "Element": "Physical",
@@ -411,26 +411,26 @@
             "Desc": "Unleashes an aspect that performs an Immovable Vajra Slam. The Slam deals <@ba.pd>Physical DMG</> and applies <#ba.knockdown>Knock Down</> to all enemies in a large area of effect (AOE), and pulls enemies towards the center of the AOE. After a while, the Slam unleashes one more hit that deals massive <@ba.pd>Physical DMG</> and applies another <#ba.knockdown>Knock Down</> to enemies still within its AOE.\nIf the skill <#ba.consume>consumes</> a <#ba.combo>Link</>, then it deals an additional hit of massive <@ba.pd>Physical DMG</>.",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 15,
+            "Cooldown": 15.0,
             "CostType": "UltimateSp",
-            "CostValue": 90,
+            "CostValue": 90.0,
             "Params": [
                 {
                     "Text": "Ultimate Energy Cost",
                     "ConditionId": "",
                     "Values": [
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0
                     ]
                 },
                 {
@@ -571,12 +571,36 @@
             "Desc": "Every point of Intellect and Will further grants ATK <@ba.vup>+0.1%</>.",
             "Type": 4
         },
-        "fac_chr_0015_lifeng_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
-            "Name": "Laddie Reliable β",
-            "Desc": "Assign to Reception Room to grant operators Clue 3 Rate-UP: HAS (activates upon assignment; effects of the same type cannot stack)",
+        "chr_0015_lifeng_passive_skill_0_2": {
+            "Icon": "icon_talent_lifeng_01",
             "Level": 2,
-            "Index": 3,
+            "Index": 0,
+            "Name": "Illumination",
+            "Desc": "Every point of Intellect and Will further grants ATK <@ba.vup>+0.15%</>.",
+            "Type": 4
+        },
+        "chr_0015_lifeng_passive_skill_1_1": {
+            "Icon": "icon_talent_lifeng_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Subduer of Evil",
+            "Desc": "Applying <#ba.knockdown>Knock Down</> also deals <@ba.vup>50%</> ATK of <@ba.pd>Physical DMG</>.",
+            "Type": 4
+        },
+        "chr_0015_lifeng_passive_skill_1_2": {
+            "Icon": "icon_talent_lifeng_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Subduer of Evil",
+            "Desc": "Applying <#ba.knockdown>Knock Down</> also deals <@ba.vup>100%</> ATK of <@ba.pd>Physical DMG</>.",
+            "Type": 4
+        },
+        "fac_chr_0015_lifeng_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
+            "Name": "Youthful Ambition β",
+            "Desc": "Assign to Control Nexus to grant all operators' Mood Regen +12%",
+            "Level": 1,
+            "Index": 2,
             "Type": 5
         },
         "fac_chr_0015_lifeng_0_2": {
@@ -584,14 +608,6 @@
             "Name": "Youthful Ambition γ",
             "Desc": "Assign to Control Nexus to grant all operators' Mood Regen +16%",
             "Level": 2,
-            "Index": 2,
-            "Type": 5
-        },
-        "fac_chr_0015_lifeng_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_physical_power",
-            "Name": "Youthful Ambition β",
-            "Desc": "Assign to Control Nexus to grant all operators' Mood Regen +12%",
-            "Level": 1,
             "Index": 2,
             "Type": 5
         },
@@ -603,29 +619,13 @@
             "Index": 3,
             "Type": 5
         },
-        "chr_0015_lifeng_passive_skill_1_2": {
-            "Icon": "icon_talent_lifeng_02",
+        "fac_chr_0015_lifeng_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_clue",
+            "Name": "Laddie Reliable β",
+            "Desc": "Assign to Reception Room to grant operators Clue 3 Rate-UP: HAS (activates upon assignment; effects of the same type cannot stack)",
             "Level": 2,
-            "Index": 1,
-            "Name": "Subduer of Evil",
-            "Desc": "Applying <#ba.knockdown>Knock Down</> also deals <@ba.vup>100%</> ATK of <@ba.pd>Physical DMG</>.",
-            "Type": 4
-        },
-        "chr_0015_lifeng_passive_skill_1_1": {
-            "Icon": "icon_talent_lifeng_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "Subduer of Evil",
-            "Desc": "Applying <#ba.knockdown>Knock Down</> also deals <@ba.vup>50%</> ATK of <@ba.pd>Physical DMG</>.",
-            "Type": 4
-        },
-        "chr_0015_lifeng_passive_skill_0_2": {
-            "Icon": "icon_talent_lifeng_01",
-            "Level": 2,
-            "Index": 0,
-            "Name": "Illumination",
-            "Desc": "Every point of Intellect and Will further grants ATK <@ba.vup>+0.15%</>.",
-            "Type": 4
+            "Index": 3,
+            "Type": 5
         }
     },
     "Potentials": {

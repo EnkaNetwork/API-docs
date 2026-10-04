@@ -9,17 +9,17 @@
     "MainAttrId": 40,
     "SubAttrId": 39,
     "AttributeNodes": {
-        "chr_0027_tangtang_5": {
-            "40": 15
-        },
-        "chr_0027_tangtang_7": {
-            "40": 20
-        },
         "chr_0027_tangtang_1": {
-            "40": 10
+            "40": 10.0
         },
         "chr_0027_tangtang_3": {
-            "40": 15
+            "40": 15.0
+        },
+        "chr_0027_tangtang_5": {
+            "40": 15.0
+        },
+        "chr_0027_tangtang_7": {
+            "40": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "DÉCLENCHEMENT DE COMBO : lorsqu'un ennemi est victime d'une <#ba.crystinflict>altération cryogénique</> ou qu'il subit des <#ba.spellburst>DÉG d'explosion des Arts</>.\nTangtang libère un jet d'eau puissant qui transperce tous les ennemis sur son passage en leur infligeant des <@ba.cryst>DÉG cryogéniques</> et crée un <@ba.key>tourbillon</>.\n<@ba.info>Jusqu'à 2 tourbillons peuvent coexister sur le champ de bataille.</>",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 14,
+            "Cooldown": 14.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Temps de recharge",
@@ -130,12 +130,12 @@
             "Icon": "skillicon/icon_attack_pistol",
             "Element": "Cryst",
             "Name": "TU NE VAS PAS T'EN REMETTRE !",
-            "Desc": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.cryst>DÉG cryogéniques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>18</> fois.\n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.cryst>DÉG cryogéniques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.cryst>DÉG cryogéniques</> et restaure quelques PC.",
+            "Desc": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.cryst>DÉG cryogéniques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également <@ba.poise>18</> points de Déséquilibre.\n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.cryst>DÉG cryogéniques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.cryst>DÉG cryogéniques</> et restaure quelques PC.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Multiplicateur d'ATQ-B SÉQ 1",
@@ -265,190 +265,33 @@
                 }
             ]
         },
-        "chr_0027_tangtang_UltimateSkill": {
-            "Icon": "skillicon/icon_ultimate_skill_tangtang_01",
-            "Element": "Cryst",
-            "Name": "LA CHEFFE TE VOIT !",
-            "Desc": "Tangtang lève son cache-œil et se sert de cet œil pour libérer un <@ba.key>REGARD ANCIEN</> qui immobilise temporairement les ennemis dans la zone d'effet et leur inflige des <@ba.cryst>DÉG cryogéniques</> continus.\nLorsque l'évolution du <@ba.key>REGARD ANCIEN</> cesse, une vague déferlante frappe violemment les ennemis dans la zone d'effet en leur infligeant des <@ba.cryst>DÉG cryogéniques</>.\nSi l'opérateur contrôlé exécute une attaque plongeante dans le motif du <@ba.key>REGARD ANCIEN</>, cela fait cesser son évolution et invoque immédiatement la vague déferlante pour infliger davantage de <@ba.cryst>DÉG cryogéniques</>.",
-            "ConditionData": {},
-            "Type": 3,
-            "Cooldown": 20,
-            "CostType": "UltimateSp",
-            "CostValue": 90,
-            "Params": [
-                {
-                    "Text": "Coût en énergie d'ultime",
-                    "ConditionId": "",
-                    "Values": [
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90
-                    ]
-                },
-                {
-                    "Text": "Temps de recharge",
-                    "ConditionId": "",
-                    "Values": [
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s",
-                        "20s"
-                    ]
-                },
-                {
-                    "Text": "Multiplicateur total de DÉG continus",
-                    "ConditionId": "",
-                    "Values": [
-                        "142%",
-                        "156%",
-                        "171%",
-                        "185%",
-                        "199%",
-                        "213%",
-                        "228%",
-                        "242%",
-                        "256%",
-                        "274%",
-                        "295%",
-                        "320%"
-                    ]
-                },
-                {
-                    "Text": "Durée de REGARD ANCIEN (s)",
-                    "ConditionId": "",
-                    "Values": [
-                        "4",
-                        "4",
-                        "4",
-                        "4",
-                        "4",
-                        "4",
-                        "4",
-                        "4",
-                        "4",
-                        "4",
-                        "4",
-                        "4"
-                    ]
-                },
-                {
-                    "Text": "Multiplicateur de DÉG de Vague déferlante",
-                    "ConditionId": "",
-                    "Values": [
-                        "178%",
-                        "196%",
-                        "213%",
-                        "231%",
-                        "249%",
-                        "267%",
-                        "284%",
-                        "302%",
-                        "320%",
-                        "342%",
-                        "369%",
-                        "400%"
-                    ]
-                },
-                {
-                    "Text": "Multiplicateur de DÉG de Vague déferlante anticipée",
-                    "ConditionId": "",
-                    "Values": [
-                        "311%",
-                        "342%",
-                        "373%",
-                        "404%",
-                        "436%",
-                        "467%",
-                        "498%",
-                        "529%",
-                        "560%",
-                        "599%",
-                        "646%",
-                        "700%"
-                    ]
-                },
-                {
-                    "Text": "Déséquilibre de Vague déferlante",
-                    "ConditionId": "",
-                    "Values": [
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15",
-                        "15"
-                    ]
-                },
-                {
-                    "Text": "Déséquilibre de Vague déferlante anticipée",
-                    "ConditionId": "",
-                    "Values": [
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20",
-                        "20"
-                    ]
-                }
-            ]
-        },
         "chr_0027_tangtang_NormalSkill": {
             "Icon": "skillicon/icon_skill_tangtang_01",
             "Element": "Cryst",
             "Name": "JE SURFE SUR LA VAAAGUE !",
-            "Desc": "Tangtang bondit hors de l'eau et tire à bout portant pour infliger des <@ba.cryst>DÉG cryogéniques</> à l'ennemi et créer une <@ba.key>trombe</>.\nLancer la compétence de combat consomme aussi tous les <@ba.key>tourbillons</> à proximité pour créer d'autres <@ba.key>trombes</> et <#ba.return>restaure</> quelques PC en fonction du nombre de trombes créées.\n<@ba.key>Trombe</> : applique 1 cumul d'<#ba.crystinflict>altération cryogénique</> aux ennemis à portée, et inflige des <@ba.cryst>DÉG cryogéniques</> continus. Si la compétence de combat crée plusieurs <@ba.key>trombes</>, ces dernières appliquent aussi une <#ba.spellvul>sensibilité aux Arts</> aux ennemis (mais pas d'autre cumul d'<#ba.crystinflict>altération cryogénique</>).\n<@ba.info>Les DÉG infligés par la trombe sont considérés comme des DÉG de compétence de combat.</>",
+            "Desc": "Tangtang bondit hors de l'eau et tire à bout portant pour infliger des <@ba.cryst>DÉG cryogéniques</> à l'ennemi et créer une <@ba.key>trombe</>.\nLancer la compétence de combat consomme aussi tous les <@ba.key>tourbillons</> à proximité pour créer d'autres <@ba.key>trombes</> et <#ba.return>restitue</> quelques PC en fonction du nombre de trombes créées.\n<@ba.key>Trombe</> : applique 1 cumul d'<#ba.crystinflict>altération cryogénique</> aux ennemis à portée, et inflige des <@ba.cryst>DÉG cryogéniques</> continus. Si la compétence de combat crée plusieurs <@ba.key>trombes</>, ces dernières appliquent aussi une <#ba.spellvul>sensibilité aux Arts</> aux ennemis (mais pas d'autre cumul d'<#ba.crystinflict>altération cryogénique</>).\n<@ba.info>Les DÉG infligés par la trombe sont considérés comme des DÉG de compétence de combat.</>",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Coût en PC",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -596,14 +439,211 @@
                     ]
                 }
             ]
+        },
+        "chr_0027_tangtang_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_tangtang_01",
+            "Element": "Cryst",
+            "Name": "LA CHEFFE TE VOIT !",
+            "Desc": "Tangtang lève son cache-œil et se sert de cet œil pour libérer un <@ba.key>REGARD ANCIEN</> qui immobilise temporairement les ennemis dans la zone d'effet et leur inflige des <@ba.cryst>DÉG cryogéniques</> continus.\nLorsque l'évolution du <@ba.key>REGARD ANCIEN</> cesse, une vague déferlante frappe violemment les ennemis dans la zone d'effet en leur infligeant des <@ba.cryst>DÉG cryogéniques</>.\nSi l'opérateur contrôlé exécute une attaque plongeante dans le motif du <@ba.key>REGARD ANCIEN</>, cela fait cesser son évolution et invoque immédiatement la vague déferlante pour infliger davantage de <@ba.cryst>DÉG cryogéniques</>.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 20.0,
+            "CostType": "UltimateSp",
+            "CostValue": 90.0,
+            "Params": [
+                {
+                    "Text": "Coût en énergie d'ultime",
+                    "ConditionId": "",
+                    "Values": [
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0
+                    ]
+                },
+                {
+                    "Text": "Temps de recharge",
+                    "ConditionId": "",
+                    "Values": [
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s",
+                        "20s"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur total de DÉG continus",
+                    "ConditionId": "",
+                    "Values": [
+                        "142%",
+                        "156%",
+                        "171%",
+                        "185%",
+                        "199%",
+                        "213%",
+                        "228%",
+                        "242%",
+                        "256%",
+                        "274%",
+                        "295%",
+                        "320%"
+                    ]
+                },
+                {
+                    "Text": "Durée de REGARD ANCIEN (s)",
+                    "ConditionId": "",
+                    "Values": [
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4",
+                        "4"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur de DÉG de Vague déferlante",
+                    "ConditionId": "",
+                    "Values": [
+                        "178%",
+                        "196%",
+                        "213%",
+                        "231%",
+                        "249%",
+                        "267%",
+                        "284%",
+                        "302%",
+                        "320%",
+                        "342%",
+                        "369%",
+                        "400%"
+                    ]
+                },
+                {
+                    "Text": "Multiplicateur de DÉG de Vague déferlante anticipée",
+                    "ConditionId": "",
+                    "Values": [
+                        "311%",
+                        "342%",
+                        "373%",
+                        "404%",
+                        "436%",
+                        "467%",
+                        "498%",
+                        "529%",
+                        "560%",
+                        "599%",
+                        "646%",
+                        "700%"
+                    ]
+                },
+                {
+                    "Text": "Déséquilibre de Vague déferlante",
+                    "ConditionId": "",
+                    "Values": [
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15",
+                        "15"
+                    ]
+                },
+                {
+                    "Text": "Déséquilibre de Vague déferlante anticipée",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                }
+            ]
         }
     },
     "NodeSkillMap": {
+        "chr_0027_tangtang_passive_skill_0_1": {
+            "Icon": "icon_talent_tangtang_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Famille honorable",
+            "Desc": "Dans un rayon de <@ba.vup>5</> mètres d'un <@ba.key>tourbillon</>, les opérateurs alliés gagnent <@ba.vup>10%</> de <#ba.speedup>Vitesse</> tandis que les ennemis subissent <@ba.vup>20%</> de <#ba.slow>Lenteur</>. Ces effets perdurent pendant 3 s après avoir quitté la zone d'effet.",
+            "Type": 4
+        },
+        "chr_0027_tangtang_passive_skill_0_2": {
+            "Icon": "icon_talent_tangtang_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Famille honorable",
+            "Desc": "Dans un rayon de <@ba.vup>5</> mètres d'un <@ba.key>tourbillon</>, les opérateurs alliés gagnent <@ba.vup>20%</> de <#ba.speedup>Vitesse</> tandis que les ennemis subissent <@ba.vup>40%</> de <#ba.slow>Lenteur</>. Ces effets perdurent pendant 3 s après avoir quitté la zone d'effet.",
+            "Type": 4
+        },
+        "chr_0027_tangtang_passive_skill_1_1": {
+            "Icon": "icon_talent_tangtang_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Héraut des émeutes",
+            "Desc": "Pendant le <@ba.key>REGARD ANCIEN</>, quand l'opérateur contrôlé exécute une attaque plongeante, cela fait cesser précocement son évolution et crée une <@ba.key>trombe</>. Tous les <@ba.key>tourbillons</> à proximité sont aussi consommés pour être transformés en <@ba.key>trombes</> supplémentaires. Les \n<@ba.key>trombes</> ainsi créées ont les mêmes effets que ceux de la compétence de combat <@ba.key>JE SURFE SUR LA VAAAGUE !</> et infligent <@ba.vup>+40%</> de DÉG.",
+            "Type": 4
+        },
+        "chr_0027_tangtang_passive_skill_1_2": {
+            "Icon": "icon_talent_tangtang_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Héraut des émeutes",
+            "Desc": "Pendant le <@ba.key>REGARD ANCIEN</>, quand l'opérateur contrôlé exécute une attaque plongeante, cela fait cesser précocement son évolution et crée une <@ba.key>trombe</>. Tous les <@ba.key>tourbillons</> à proximité sont aussi consommés pour être transformés en <@ba.key>trombes</> supplémentaires. Les \n<@ba.key>trombes</> ainsi créées ont les mêmes effets que ceux de la compétence de combat <@ba.key>JE SURFE SUR LA VAAAGUE !</> et infligent <@ba.vup>+60%</> de DÉG.",
+            "Type": 4
+        },
         "fac_chr_0027_tangtang_0_1": {
             "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
             "Name": "Cheffe suprême β",
             "Desc": "En l'affectant à la chambre de culture, ralentit la baisse d'humeur de tous les opérateurs qui s'y trouvent de 14 %.",
             "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0027_tangtang_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
+            "Name": "Cheffe suprême γ",
+            "Desc": "En l'affectant à la chambre de culture, ralentit la baisse d'humeur de tous les opérateurs qui s'y trouvent de 18 %.",
+            "Level": 2,
             "Index": 2,
             "Type": 5
         },
@@ -615,30 +655,6 @@
             "Index": 3,
             "Type": 5
         },
-        "chr_0027_tangtang_passive_skill_1_2": {
-            "Icon": "icon_talent_tangtang_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "Héraut des émeutes",
-            "Desc": "Pendant le <@ba.key>REGARD ANCIEN</>, quand l'opérateur contrôlé exécute une attaque plongeante, cela fait cesser précocement son évolution et crée une <@ba.key>trombe</>. Tous les <@ba.key>tourbillons</> à proximité sont aussi consommés pour être transformés en <@ba.key>trombes</> supplémentaires. Les \n<@ba.key>trombes</> ainsi créées ont les mêmes effets que ceux de la compétence de combat <@ba.key>JE SURFE SUR LA VAAAGUE !</> et infligent <@ba.vup>+60%</> de DÉG.",
-            "Type": 4
-        },
-        "fac_chr_0027_tangtang_0_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
-            "Name": "Cheffe suprême γ",
-            "Desc": "En l'affectant à la chambre de culture, ralentit la baisse d'humeur de tous les opérateurs qui s'y trouvent de 18 %.",
-            "Level": 2,
-            "Index": 2,
-            "Type": 5
-        },
-        "chr_0027_tangtang_passive_skill_0_2": {
-            "Icon": "icon_talent_tangtang_01",
-            "Level": 2,
-            "Index": 0,
-            "Name": "Famille honorable",
-            "Desc": "Dans un rayon de <@ba.vup>5</> mètres d'un <@ba.key>tourbillon</>, les opérateurs alliés gagnent <@ba.vup>20%</> de <#ba.speedup>Vitesse</> tandis que les ennemis subissent <@ba.vup>40%</> de <#ba.slow>Lenteur</>. Ces effets perdurent pendant 3 s après avoir quitté la zone d'effet.",
-            "Type": 4
-        },
         "fac_chr_0027_tangtang_1_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_plant_flower",
             "Name": "Fille de la rivière γ",
@@ -646,28 +662,12 @@
             "Level": 2,
             "Index": 3,
             "Type": 5
-        },
-        "chr_0027_tangtang_passive_skill_0_1": {
-            "Icon": "icon_talent_tangtang_01",
-            "Level": 1,
-            "Index": 0,
-            "Name": "Famille honorable",
-            "Desc": "Dans un rayon de <@ba.vup>5</> mètres d'un <@ba.key>tourbillon</>, les opérateurs alliés gagnent <@ba.vup>10%</> de <#ba.speedup>Vitesse</> tandis que les ennemis subissent <@ba.vup>20%</> de <#ba.slow>Lenteur</>. Ces effets perdurent pendant 3 s après avoir quitté la zone d'effet.",
-            "Type": 4
-        },
-        "chr_0027_tangtang_passive_skill_1_1": {
-            "Icon": "icon_talent_tangtang_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "Héraut des émeutes",
-            "Desc": "Pendant le <@ba.key>REGARD ANCIEN</>, quand l'opérateur contrôlé exécute une attaque plongeante, cela fait cesser précocement son évolution et crée une <@ba.key>trombe</>. Tous les <@ba.key>tourbillons</> à proximité sont aussi consommés pour être transformés en <@ba.key>trombes</> supplémentaires. Les \n<@ba.key>trombes</> ainsi créées ont les mêmes effets que ceux de la compétence de combat <@ba.key>JE SURFE SUR LA VAAAGUE !</> et infligent <@ba.vup>+40%</> de DÉG.",
-            "Type": 4
         }
     },
     "Potentials": {
         "1": {
             "Name": "Réserve secrète",
-            "Desc": "Renforce la compétence de combo <@ba.key>RIVIÈRE, VIENS À MOI !</> : le multiplicateur de DÉG est multiplié par <@ba.vup>1.2</>. Temps de recharge : <@ba.vup>-2</> s.\nRenforce la compétence de combat <@ba.key>JE SURFE SUR LA VAAAGUE !</> : pour chaque <@ba.key>tourbillon</> consommé et transformé en <@ba.key>trombe</>, <#ba.return>restaure</> <@ba.vup>5</> PC supplémentaires."
+            "Desc": "Renforce la compétence de combo <@ba.key>RIVIÈRE, VIENS À MOI !</> : le multiplicateur de DÉG est multiplié par <@ba.vup>1.2</>. Temps de recharge : <@ba.vup>-2</> s.\nRenforce la compétence de combat <@ba.key>JE SURFE SUR LA VAAAGUE !</> : pour chaque <@ba.key>tourbillon</> consommé et transformé en <@ba.key>trombe</>, <#ba.return>restitue</> <@ba.vup>5</> PC supplémentaires."
         },
         "2": {
             "Name": "Fille de la rivière",

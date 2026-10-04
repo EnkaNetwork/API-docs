@@ -9,17 +9,17 @@
     "MainAttrId": 41,
     "SubAttrId": 39,
     "AttributeNodes": {
-        "chr_0023_antal_3": {
-            "41": 15
-        },
         "chr_0023_antal_1": {
-            "41": 10
+            "41": 10.0
+        },
+        "chr_0023_antal_3": {
+            "41": 15.0
         },
         "chr_0023_antal_5": {
-            "41": 15
+            "41": 15.0
         },
         "chr_0023_antal_7": {
-            "41": 20
+            "41": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "KOMBOAUSLÖSER: Ein Gegner mit aktivem <@ba.key>Fokus</> erleidet einen <#ba.physicalstatus>Physischen Zustand</> oder eine <#ba.spellinflict>Technikkumulierung</>. \nLöst eine Energieexplosion aus, die dem Gegner <@ba.pulse>Elektrischen SDN</> zufügt und ihn mit einer weiteren Kumulierung desselben <#ba.physicalstatus>Physischen Zustands</> oder derselben <#ba.spellinflict>Technikkumulierung</> belegt.",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 25,
+            "Cooldown": 25.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "Abklingzeit",
@@ -115,9 +115,9 @@
             "Desc": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.pulse>Elektrischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>15</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pulse>Elektrischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.pulse>Elektrischen SDN</> zufügen und ein wenig FP wiederherstellen.",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "STD-ANG-SEQ-1-Multiplikator",
@@ -229,109 +229,6 @@
                 }
             ]
         },
-        "chr_0023_antal_UltimateSkill": {
-            "Icon": "skillicon/icon_ultimate_skill_antal_01",
-            "Element": "Pulse",
-            "Name": "Übertakteter Moment",
-            "Desc": "Gewährt dem gesamten Team vorübergehend <#ba.pulseenhance>Elektrik-</> und <#ba.fireenhance>Hitze-Verstärkung</>.",
-            "ConditionData": {},
-            "Type": 3,
-            "Cooldown": 20,
-            "CostType": "UltimateSp",
-            "CostValue": 100,
-            "Params": [
-                {
-                    "Text": "Ultimative Energiekosten",
-                    "ConditionId": "",
-                    "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
-                    ]
-                },
-                {
-                    "Text": "Abklingzeit",
-                    "ConditionId": "",
-                    "Values": [
-                        "20Sek.",
-                        "20Sek.",
-                        "20Sek.",
-                        "20Sek.",
-                        "20Sek.",
-                        "20Sek.",
-                        "20Sek.",
-                        "20Sek.",
-                        "20Sek.",
-                        "20Sek.",
-                        "20Sek.",
-                        "20Sek."
-                    ]
-                },
-                {
-                    "Text": "Elektrik-Verstärkung",
-                    "ConditionId": "",
-                    "Values": [
-                        "8%",
-                        "9%",
-                        "10%",
-                        "11%",
-                        "12%",
-                        "13%",
-                        "14%",
-                        "15%",
-                        "16%",
-                        "17%",
-                        "18%",
-                        "20%"
-                    ]
-                },
-                {
-                    "Text": "Hitze-Verstärkung",
-                    "ConditionId": "",
-                    "Values": [
-                        "8%",
-                        "9%",
-                        "10%",
-                        "11%",
-                        "12%",
-                        "13%",
-                        "14%",
-                        "15%",
-                        "16%",
-                        "17%",
-                        "18%",
-                        "20%"
-                    ]
-                },
-                {
-                    "Text": "Dauer (Sek.)",
-                    "ConditionId": "",
-                    "Values": [
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12",
-                        "12"
-                    ]
-                }
-            ]
-        },
         "chr_0023_antal_NormalSkill": {
             "Icon": "skillicon/icon_skill_antal_01",
             "Element": "Pulse",
@@ -339,26 +236,26 @@
             "Desc": "Belegt Gegner für eine lange Dauer mit <@ba.key>Fokus</> und verursacht <@ba.pulse>Elektrischen SDN</>. Ein Gegner mit aktivem <@ba.key>Fokus</> erleidet auch <#ba.pulsevul>Elektrik-</> und <#ba.firevul>Hitze-Empfänglichkeit</>. Zu jeder Zeit kann nur jeweils 1 Gegner mit <@ba.key>Fokus</> belegt sein.",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "FP-Kosten",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -434,55 +331,118 @@
                     ]
                 }
             ]
+        },
+        "chr_0023_antal_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_antal_01",
+            "Element": "Pulse",
+            "Name": "Übertakteter Moment",
+            "Desc": "Gewährt dem gesamten Team vorübergehend <#ba.pulseenhance>Elektrik-</> und <#ba.fireenhance>Hitze-Verstärkung</>.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 20.0,
+            "CostType": "UltimateSp",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "Ultimative Energiekosten",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "Abklingzeit",
+                    "ConditionId": "",
+                    "Values": [
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek.",
+                        "20Sek."
+                    ]
+                },
+                {
+                    "Text": "Elektrik-Verstärkung",
+                    "ConditionId": "",
+                    "Values": [
+                        "8%",
+                        "9%",
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "20%"
+                    ]
+                },
+                {
+                    "Text": "Hitze-Verstärkung",
+                    "ConditionId": "",
+                    "Values": [
+                        "8%",
+                        "9%",
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "20%"
+                    ]
+                },
+                {
+                    "Text": "Dauer (Sek.)",
+                    "ConditionId": "",
+                    "Values": [
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12"
+                    ]
+                }
+            ]
         }
     },
     "NodeSkillMap": {
-        "chr_0023_antal_passive_skill_1_2": {
-            "Icon": "icon_talent_antal_02",
-            "Level": 2,
-            "Index": 1,
-            "Name": "Unterbewusste Handlung",
-            "Desc": "Erhält eine <@ba.vup>30%</>-Chance auf <@ba.pd>Physischer-SDN</>-Immunität und regeneriert die eigenen LP um <@ba.heal>[45 + Stärke × 0.38]</>.",
-            "Type": 4
-        },
-        "fac_chr_0023_antal_1_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
-            "Name": "Wortspiel-Studien β",
-            "Desc": "Wachstumskammer zuweisen, um Stimmungsverlust aller Operatoren in der Kammer um 14 % zu verlangsamen.",
-            "Level": 1,
-            "Index": 3,
-            "Type": 5
-        },
         "chr_0023_antal_passive_skill_0_1": {
             "Icon": "icon_talent_antal_01",
             "Level": 1,
             "Index": 0,
             "Name": "Improvisationskünstler",
             "Desc": "Nachdem ein <#ba.enhance>Verstärktes</> Teammitglied Fertigkeits-SDN verursacht hat, regeneriert Antal die LP dieses Teammitglieds um <@ba.heal>[72 + Stärke ×0.6]</>. Dieser LP-Wiederherstellungseffekt wird für jeden Operator einmal alle <@ba.vup>30</> Sek. ausgelöst.",
-            "Type": 4
-        },
-        "fac_chr_0023_antal_0_1": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
-            "Name": "Experimentelle Tech-Einheit α",
-            "Desc": "Der Herstellungskabine zuweisen, um Waffen-EP-Materialproduktionseffizienz um +10 % zu erhöhen.",
-            "Level": 1,
-            "Index": 2,
-            "Type": 5
-        },
-        "fac_chr_0023_antal_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
-            "Name": "Wortspiel-Studien γ",
-            "Desc": "Wachstumskammer zuweisen, um Stimmungsverlust aller Operatoren in der Kammer um 18 % zu verlangsamen.",
-            "Level": 2,
-            "Index": 3,
-            "Type": 5
-        },
-        "chr_0023_antal_passive_skill_1_1": {
-            "Icon": "icon_talent_antal_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "Unterbewusste Handlung",
-            "Desc": "Erhält eine <@ba.vup>30%</>-Chance auf <@ba.pd>Physischer-SDN</>-Immunität und regeneriert die eigenen LP um <@ba.heal>[27 + Stärke × 0.23]</>.",
             "Type": 4
         },
         "chr_0023_antal_passive_skill_0_2": {
@@ -493,12 +453,52 @@
             "Desc": "Nachdem ein <#ba.enhance>Verstärktes</> Teammitglied Fertigkeits-SDN verursacht hat, regeneriert Antal die LP dieses Teammitglieds um <@ba.heal>[108 + Stärke ×0.9]</>. Dieser LP-Wiederherstellungseffekt wird für jeden Operator einmal alle <@ba.vup>30</> Sek. ausgelöst.",
             "Type": 4
         },
+        "chr_0023_antal_passive_skill_1_1": {
+            "Icon": "icon_talent_antal_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Unterbewusste Handlung",
+            "Desc": "Erhält eine <@ba.vup>30%</>-Chance auf <@ba.pd>Physischer-SDN</>-Immunität und regeneriert die eigenen LP um <@ba.heal>[27 + Stärke × 0.23]</>.",
+            "Type": 4
+        },
+        "chr_0023_antal_passive_skill_1_2": {
+            "Icon": "icon_talent_antal_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Unterbewusste Handlung",
+            "Desc": "Erhält eine <@ba.vup>30%</>-Chance auf <@ba.pd>Physischer-SDN</>-Immunität und regeneriert die eigenen LP um <@ba.heal>[45 + Stärke × 0.38]</>.",
+            "Type": 4
+        },
+        "fac_chr_0023_antal_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Experimentelle Tech-Einheit α",
+            "Desc": "Der Herstellungskabine zuweisen, um Waffen-EP-Materialproduktionseffizienz um +10 % zu erhöhen.",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
         "fac_chr_0023_antal_0_2": {
             "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
             "Name": "Experimentelle Tech-Einheit β",
             "Desc": "Der Herstellungskabine zuweisen, um Waffen-EP-Materialproduktionseffizienz um +20 % zu erhöhen.",
             "Level": 2,
             "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0023_antal_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
+            "Name": "Wortspiel-Studien β",
+            "Desc": "Wachstumskammer zuweisen, um Stimmungsverlust aller Operatoren in der Kammer um 14 % zu verlangsamen.",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0023_antal_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_plant_power_consume",
+            "Name": "Wortspiel-Studien γ",
+            "Desc": "Wachstumskammer zuweisen, um Stimmungsverlust aller Operatoren in der Kammer um 18 % zu verlangsamen.",
+            "Level": 2,
+            "Index": 3,
             "Type": 5
         }
     },

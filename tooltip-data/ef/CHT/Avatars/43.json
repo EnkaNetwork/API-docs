@@ -9,17 +9,17 @@
     "MainAttrId": 42,
     "SubAttrId": 40,
     "AttributeNodes": {
-        "chr_0029_pograni_5": {
-            "42": 15
-        },
-        "chr_0029_pograni_7": {
-            "42": 20
+        "chr_0029_pograni_1": {
+            "42": 10.0
         },
         "chr_0029_pograni_3": {
-            "42": 15
+            "42": 15.0
         },
-        "chr_0029_pograni_1": {
-            "42": 10
+        "chr_0029_pograni_5": {
+            "42": 15.0
+        },
+        "chr_0029_pograni_7": {
+            "42": 20.0
         }
     },
     "SkillInfoMap": {
@@ -30,9 +30,9 @@
             "Desc": "當有敵人被<#ba.crush>猛擊</>或者<#ba.fracture>碎甲</><#ba.consume>消耗</><#ba.noguard>破防</>層數後可以發動。\n根據<#ba.consume>消耗</>的最高<#ba.noguard>破防</>層數，對敵人進行相同段數的斬擊（最多3段），造成<@ba.pd>物理傷害</>並回復一定技力，每一擊的傷害和技力回復效果都更強。\n<@ba.info>若消耗4層破防，第3段斬擊將獲得強化。</>",
             "ConditionData": {},
             "Type": 2,
-            "Cooldown": 18,
+            "Cooldown": 18.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "冷卻時間",
@@ -295,9 +295,9 @@
             "Desc": "普通攻擊：\n對敵人進行最多5段攻擊，造成<@ba.pd>物理傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>18</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.pd>物理傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.pd>物理傷害</>並回復一定技力。",
             "ConditionData": {},
             "Type": 0,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "UltimateSp",
-            "CostValue": 0,
+            "CostValue": 0.0,
             "Params": [
                 {
                     "Text": "普攻第一段倍率",
@@ -434,26 +434,26 @@
             "Desc": "對前方範圍的敵人進行兩段斬擊，造成<@ba.pd>物理傷害</>並施加<#ba.fracture>碎甲</>，同時基於<#ba.consume>消耗</>的破防層數回復技力，命中多名目標時僅回復1次。",
             "ConditionData": {},
             "Type": 1,
-            "Cooldown": 0,
+            "Cooldown": 0.0,
             "CostType": "Atb",
-            "CostValue": 100,
+            "CostValue": 100.0,
             "Params": [
                 {
                     "Text": "技力消耗",
                     "ConditionId": "",
                     "Values": [
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
                     ]
                 },
                 {
@@ -609,26 +609,26 @@
             "Desc": "以目標為中心，召喚四名盾衛向目標進軍，並將進軍途中的敵人往目標方向推動，造成<@ba.pd>物理傷害</>的同時生成5點<@ba.key>鐵誓</>。當有敵人受到<#ba.physicalstatus>物理異常</>效果或駿衛的連攜技傷害後，消耗1點<@ba.key>鐵誓</>召喚一名盾衛對其發動襲擾，造成<@ba.pd>物理傷害</>並回復一定技力。當消耗的<@ba.key>鐵誓</>是最後一點時，四名盾衛發動決勝，對其造成大量<@ba.pd>物理傷害</>並回復大量技力。",
             "ConditionData": {},
             "Type": 3,
-            "Cooldown": 10,
+            "Cooldown": 10.0,
             "CostType": "UltimateSp",
-            "CostValue": 90,
+            "CostValue": 90.0,
             "Params": [
                 {
                     "Text": "所需終結技能量",
                     "ConditionId": "",
                     "Values": [
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90,
-                        90
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0,
+                        90.0
                     ]
                 },
                 {
@@ -797,28 +797,28 @@
         }
     },
     "NodeSkillMap": {
-        "fac_chr_0029_pograni_0_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
-            "Name": "先利其器·γ",
-            "Desc": "進駐製造艙時，武器經驗材料的生產效率提升30%",
-            "Level": 2,
-            "Index": 2,
-            "Type": 5
-        },
-        "fac_chr_0029_pograni_1_2": {
-            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
-            "Name": "鼓舞士氣·γ",
-            "Desc": "進駐製造艙時，艙室內幹員心情消耗降低18%",
-            "Level": 2,
-            "Index": 3,
-            "Type": 5
-        },
         "chr_0029_pograni_passive_skill_0_1": {
             "Icon": "icon_talent_pograni_01",
             "Level": 1,
             "Index": 0,
             "Name": "活著的旗幟",
             "Desc": "戰鬥中，透過自身技能每回復<@ba.vup>80</>點技力後，獲得持續<@ba.vup>20</>秒的<@ba.key>士氣激昂</>。\n<@ba.key>士氣激昂</>效果：攻擊力<@ba.vup>+4%</>，源石技藝強度<@ba.vup>+4</>。\n<@ba.info>該效果最多疊加3層，每層單獨計算時間。</>",
+            "Type": 4
+        },
+        "chr_0029_pograni_passive_skill_0_2": {
+            "Icon": "icon_talent_pograni_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "活著的旗幟",
+            "Desc": "戰鬥中，透過自身技能每回復<@ba.vup>80</>點技力後，獲得持續<@ba.vup>20</>秒的<@ba.key>士氣激昂</>。\n<@ba.key>士氣激昂</>效果：攻擊力<@ba.vup>+8%</>，源石技藝強度<@ba.vup>+8</>。\n<@ba.info>該效果最多疊加3層，每層單獨計算時間。</>",
+            "Type": 4
+        },
+        "chr_0029_pograni_passive_skill_1_1": {
+            "Icon": "icon_talent_pograni_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "戰術教導",
+            "Desc": "當任意幹員觸發終結技<@ba.key>盾衛旗隊，上前</>的後續效果後，也會獲得持續<@ba.vup>5</>秒的<@ba.key>士氣激昂</>。\n<@ba.info>需要觸發天賦活著的旗幟。</>",
             "Type": 4
         },
         "chr_0029_pograni_passive_skill_1_2": {
@@ -837,6 +837,14 @@
             "Index": 2,
             "Type": 5
         },
+        "fac_chr_0029_pograni_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "先利其器·γ",
+            "Desc": "進駐製造艙時，武器經驗材料的生產效率提升30%",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
         "fac_chr_0029_pograni_1_1": {
             "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
             "Name": "鼓舞士氣·β",
@@ -845,21 +853,13 @@
             "Index": 3,
             "Type": 5
         },
-        "chr_0029_pograni_passive_skill_0_2": {
-            "Icon": "icon_talent_pograni_01",
+        "fac_chr_0029_pograni_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
+            "Name": "鼓舞士氣·γ",
+            "Desc": "進駐製造艙時，艙室內幹員心情消耗降低18%",
             "Level": 2,
-            "Index": 0,
-            "Name": "活著的旗幟",
-            "Desc": "戰鬥中，透過自身技能每回復<@ba.vup>80</>點技力後，獲得持續<@ba.vup>20</>秒的<@ba.key>士氣激昂</>。\n<@ba.key>士氣激昂</>效果：攻擊力<@ba.vup>+8%</>，源石技藝強度<@ba.vup>+8</>。\n<@ba.info>該效果最多疊加3層，每層單獨計算時間。</>",
-            "Type": 4
-        },
-        "chr_0029_pograni_passive_skill_1_1": {
-            "Icon": "icon_talent_pograni_02",
-            "Level": 1,
-            "Index": 1,
-            "Name": "戰術教導",
-            "Desc": "當任意幹員觸發終結技<@ba.key>盾衛旗隊，上前</>的後續效果後，也會獲得持續<@ba.vup>5</>秒的<@ba.key>士氣激昂</>。\n<@ba.info>需要觸發天賦活著的旗幟。</>",
-            "Type": 4
+            "Index": 3,
+            "Type": 5
         }
     },
     "Potentials": {
