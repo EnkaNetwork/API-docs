@@ -1,0 +1,635 @@
+{
+    "StrId": "chr_0036_jsspsi",
+    "Name": "Si",
+    "Rarity": 6,
+    "Element": "Cryst",
+    "Profession": "SUPPORTER",
+    "Conditions": {},
+    "WeaponType": "Claymores",
+    "MainAttrId": 41,
+    "SubAttrId": 39,
+    "AttributeNodes": {
+        "chr_0036_jsspsi_1": {
+            "41": 10.0
+        },
+        "chr_0036_jsspsi_3": {
+            "41": 15.0
+        },
+        "chr_0036_jsspsi_5": {
+            "41": 15.0
+        },
+        "chr_0036_jsspsi_7": {
+            "41": 20.0
+        }
+    },
+    "SkillInfoMap": {
+        "chr_0036_jsspsi_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_jsspsi_01",
+            "Element": "Cryst",
+            "Name": "Vision vor Auge",
+            "Desc": "KOMBOAUSLÖSER: Wenn die <#ba.crystinflict>Kryo-</> oder <#ba.fireinflict>Hitzekumulierung</> eines Gegners <#ba.consume>verbraucht</> oder <#ba.absorb>absorbiert</> wird.\nSi beschwört einen <@ba.key>Tinten-Lung</>, der <@ba.cryst>Kryo-SDN</> verursacht. Je mehr Technikkumulierungen von nur einem Ziel <#ba.consume>verbraucht</> oder <#ba.absorb>absorbiert</> wurden, desto höher der SDN.",
+            "ConditionData": {},
+            "Type": 2,
+            "Cooldown": 16.0,
+            "CostType": "Atb",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "FP-Kosten",
+                    "ConditionId": "",
+                    "Values": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "Text": "Abklingzeit",
+                    "ConditionId": "",
+                    "Values": [
+                        "16Sek.",
+                        "16Sek.",
+                        "16Sek.",
+                        "16Sek.",
+                        "16Sek.",
+                        "16Sek.",
+                        "16Sek.",
+                        "16Sek.",
+                        "16Sek.",
+                        "16Sek.",
+                        "16Sek.",
+                        "16Sek."
+                    ]
+                },
+                {
+                    "Text": "SDN-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "333%",
+                        "367%",
+                        "400%",
+                        "433%",
+                        "467%",
+                        "500%",
+                        "533%",
+                        "567%",
+                        "600%",
+                        "642%",
+                        "692%",
+                        "750%"
+                    ]
+                },
+                {
+                    "Text": "Multiplikator-Steigerung pro verbrauchter oder absorbierter Kumulierung",
+                    "ConditionId": "",
+                    "Values": [
+                        "44%",
+                        "49%",
+                        "53%",
+                        "58%",
+                        "62%",
+                        "67%",
+                        "71%",
+                        "76%",
+                        "80%",
+                        "86%",
+                        "92%",
+                        "100%"
+                    ]
+                },
+                {
+                    "Text": "Taumeln",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Ultimative-Energie-Erhalt",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0036_jsspsi_NormalAttack": {
+            "Icon": "skillicon/icon_attack_claym",
+            "Element": "Cryst",
+            "Name": "Schaffensdrang",
+            "Desc": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.cryst>Kryo-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>18</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.cryst>Kryo-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.cryst>Kryo-SDN</> zufügen und ein wenig FP wiederherstellen.",
+            "ConditionData": {},
+            "Type": 0,
+            "Cooldown": 0.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "STD-ANG-SEQ-1-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "20%",
+                        "22%",
+                        "24%",
+                        "26%",
+                        "28%",
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "39%",
+                        "42%",
+                        "45%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-2-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "32%",
+                        "35%",
+                        "38%",
+                        "42%",
+                        "45%",
+                        "48%",
+                        "51%",
+                        "54%",
+                        "58%",
+                        "62%",
+                        "66%",
+                        "72%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-3-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "29%",
+                        "32%",
+                        "35%",
+                        "38%",
+                        "41%",
+                        "44%",
+                        "47%",
+                        "50%",
+                        "53%",
+                        "56%",
+                        "61%",
+                        "66%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-4-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "24%",
+                        "26%",
+                        "29%",
+                        "31%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "41%",
+                        "43%",
+                        "46%",
+                        "50%",
+                        "54%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-5-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "64%",
+                        "70%",
+                        "77%",
+                        "83%",
+                        "90%",
+                        "96%",
+                        "102%",
+                        "109%",
+                        "115%",
+                        "123%",
+                        "133%",
+                        "144%"
+                    ]
+                },
+                {
+                    "Text": "Sturz-ANG-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                },
+                {
+                    "Text": "Wuchtschlag-ANG-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                }
+            ]
+        },
+        "chr_0036_jsspsi_NormalSkill": {
+            "Icon": "skillicon/icon_skill_jsspsi_01",
+            "Element": "Cryst",
+            "Name": "Dimension der Pinselkunst",
+            "Desc": "Si verursacht <@ba.cryst>Kryo-SDN</> und bewirkt <@ba.key>Künstlerische Absicht</>, <#ba.static>Bewegungsunfähigkeit</> und <#ba.crystinflict>Kryo</> (oder <#ba.fireinflict>Hitze</>, falls sich ein Operator mit dem Element <@ba.fire>Hitze</> in <@ba.key>Team-Position 01</> befindet). Wenn ein Ziel mit <@ba.key>Künstlerische Absicht</> SDN erleidet, wird ein Teil des erlittenen SDN gespeichert. Wenn die Dauer von <@ba.key>Künstlerische Absicht</> abläuft, explodiert der Effekt und verursacht <#ba.fixeddamage>Fix-SDN</> in Höhe des gespeicherten SDN. Nach dem Wirken der Fertigkeit wird Sis Kampffertigkeit vorübergehend zu <@ba.key>Erster Pinselstrich</> geändert.\n<@ba.key>Erster Pinselstrich</>: Kostet <@ba.vup>15</> FP. Si zieht eine <@ba.key>Tintenseele</> aus einem mit <@ba.key>Künstlerische Absicht</> belegten Ziel. Alle Arten von SDN und alle Effekte, die der <@ba.key>Tintenseele</> zugefügt werden bzw. mit der sie belegt wird, werden auch dem ursprünglichen Ziel zugefügt. Die <@ba.key>Tintenseele</> bleibt so lange bestehen, bis die verbleibende Dauer von <@ba.key>Künstlerische Absicht</> abgelaufen ist. Nach dem Wirken der Fertigkeit wird Sis Kampffertigkeit vorübergehend zu <@ba.key>Letzter Pinselstrich</> geändert.\n<@ba.key>Letzter Pinselstrich</>: Kostet keine FP. Lässt die <@ba.key>Tintenseele</> frühzeitig verschwinden. Wenn die <@ba.key>Tintenseele</> verschwindet, kehrt sie zum ursprünglichen Ziel zurück und löst eine Explosion aus, die jener am Ende von <@ba.key>Künstlerische Absicht</> ähnelt.\n<@ba.info>Beim Verursachen von Schaden oder beim Anwenden von Effekten auf sowohl die Tintenseele als auch das ursprüngliche Ziel wird jeweils nur eine Instanz des Schadens oder Effekts verursacht/angewendet. Wenn das ursprüngliche Ziel während der Dauer der Tintenseele besiegt wird, verbindet sie sich mit einem anderen Gegner im Kampf und belegt diesen mit Künstlerische Absicht. Dadurch wird die Dauer von Künstlerische Absicht nicht zurückgesetzt. Wenn ein Ziel mit Künstlerische Absicht besiegt wird, ohne dass ihm seine Tintenseele entzogen wurde, hinterlässt das besiegte Ziel an seiner Position eine Tintenseele.</>",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 15.0,
+            "Params": [
+                {
+                    "Text": "FP-Kosten",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "SDN-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "44%",
+                        "49%",
+                        "53%",
+                        "58%",
+                        "62%",
+                        "67%",
+                        "71%",
+                        "76%",
+                        "80%",
+                        "86%",
+                        "92%",
+                        "100%"
+                    ]
+                },
+                {
+                    "Text": "Dauer: Bewegungsunfähigkeit (Sek.)",
+                    "ConditionId": "",
+                    "Values": [
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1"
+                    ]
+                },
+                {
+                    "Text": "Dauer: Künstlerische Absicht (Sek.)",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "SDN-Aufzeichnungs-Verhältnis",
+                    "ConditionId": "",
+                    "Values": [
+                        "8%",
+                        "8%",
+                        "8%",
+                        "9%",
+                        "9%",
+                        "9%",
+                        "10%",
+                        "10%",
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%"
+                    ]
+                },
+                {
+                    "Text": "Taumeln",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "„Künstlerische Absicht“-Explosions-Taumeln",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                }
+            ]
+        },
+        "chr_0036_jsspsi_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_jsspsi_01",
+            "Element": "Cryst",
+            "Name": "Spielverderber verboten",
+            "Desc": "Si beschwört einen <@ba.key>Riesigen Tinten-Lung</> aus ihrem Gemälde. Dieser verursacht <@ba.cryst>Kryo-SDN</> und verleiht dem gesamten Team vorübergehend <#ba.crystenhance>Kryo-Verstärkung</> und <#ba.fireenhance>Hitze-Verstärkung</>.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 30.0,
+            "CostType": "UltimateSp",
+            "CostValue": 80.0,
+            "Params": [
+                {
+                    "Text": "Ultimative Energiekosten",
+                    "ConditionId": "",
+                    "Values": [
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0
+                    ]
+                },
+                {
+                    "Text": "Abklingzeit",
+                    "ConditionId": "",
+                    "Values": [
+                        "30Sek.",
+                        "30Sek.",
+                        "30Sek.",
+                        "30Sek.",
+                        "30Sek.",
+                        "30Sek.",
+                        "30Sek.",
+                        "30Sek.",
+                        "30Sek.",
+                        "30Sek.",
+                        "30Sek.",
+                        "30Sek."
+                    ]
+                },
+                {
+                    "Text": "SDN-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "222%",
+                        "244%",
+                        "267%",
+                        "289%",
+                        "311%",
+                        "333%",
+                        "355%",
+                        "378%",
+                        "400%",
+                        "428%",
+                        "461%",
+                        "500%"
+                    ]
+                },
+                {
+                    "Text": "Taumeln",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Verstärkung",
+                    "ConditionId": "",
+                    "Values": [
+                        "20%",
+                        "21%",
+                        "22%",
+                        "24%",
+                        "25%",
+                        "26%",
+                        "28%",
+                        "29%",
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%"
+                    ]
+                },
+                {
+                    "Text": "Dauer: Verstärkung (Sek.)",
+                    "ConditionId": "",
+                    "Values": [
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12",
+                        "12"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0036_jsspsi_passive_skill_0_1": {
+            "Icon": "icon_talent_jsspsi_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Gönnerschaft der Proxy",
+            "Desc": "Ultimative Fertigkeit <@ba.key>Spielverderber verboten</> verbessert: Nach dem Wirken beträgt die Kombofertigkeit-Abklingzeit des Operators auf <@ba.key>Teamposition 1</> <@ba.vup>-10</> Sek.",
+            "Type": 4
+        },
+        "chr_0036_jsspsi_passive_skill_0_2": {
+            "Icon": "icon_talent_jsspsi_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Gönnerschaft der Proxy",
+            "Desc": "Ultimative Fertigkeit <@ba.key>Spielverderber verboten</> verbessert: Nach dem Wirken beträgt die Kombofertigkeit-Abklingzeit des Operators auf <@ba.key>Teamposition 1</> <@ba.vup>-20</> Sek.",
+            "Type": 4
+        },
+        "chr_0036_jsspsi_passive_skill_1_1": {
+            "Icon": "icon_talent_jsspsi_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Blütenreiner Pinsel",
+            "Desc": "Wenn die <@ba.key>Tintenseele</> verschwindet, erhalten verbündete Operatoren <@ba.vup>15%</> <#ba.speedup>Hast</> für 5 Sek.",
+            "Type": 4
+        },
+        "chr_0036_jsspsi_passive_skill_1_2": {
+            "Icon": "icon_talent_jsspsi_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Blütenreiner Pinsel",
+            "Desc": "Wenn die <@ba.key>Tintenseele</> verschwindet, erhalten verbündete Operatoren <@ba.vup>30%</> <#ba.speedup>Hast</> für 5 Sek.",
+            "Type": 4
+        },
+        "fac_chr_0036_jsspsi_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
+            "Name": "Ob’s wohl die Geister waren β",
+            "Desc": "Dem Empfang zuweisen, um die Operator-Hinweissammeleffizienz um 20 % zu steigern.",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0036_jsspsi_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_efficiency",
+            "Name": "Ob’s wohl die Geister waren γ",
+            "Desc": "Dem Empfang zuweisen, um die Operator-Hinweissammeleffizienz um 30 % zu steigern.",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0036_jsspsi_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
+            "Name": "Tintengeist-Gehilfe β",
+            "Desc": "Dem Empfang zuweisen, um Stimmungsverlust aller Operatoren in der Kammer um 14 % zu verlangsamen.",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0036_jsspsi_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_guestroom_power_consume",
+            "Name": "Tintengeist-Gehilfe γ",
+            "Desc": "Dem Empfang zuweisen, um Stimmungsverlust aller Operatoren in der Kammer um 18 % zu verlangsamen.",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        }
+    },
+    "Potentials": {
+        "1": {
+            "Name": "Frühling und Herbst in Tinte",
+            "Desc": "Kampffertigkeit <@ba.key>Dimension der Pinselkunst</> verbessert: Dauer der bewirkten <#ba.static>Bewegungsunfähigkeit</> <@ba.vup>+50%</>; SDN-Aufzeichnungs-Verhältnis <@ba.key>Künstlerische Absicht</> <@ba.vup>+7%</> und Explosionsradius <@ba.vup>+40%</>."
+        },
+        "2": {
+            "Name": "Drei tiefe Zeichen im Holz",
+            "Desc": "Kombofertigkeit <@ba.key>Vision vor Auge</> verbessert: Beim Wirken erhält Si für <@ba.vup>10</> Sek. ANG <@ba.vup>+[8% + 3% × (höchste Anzahl <#ba.consume>verbrauchter</> oder <#ba.absorb>absorbierter</> Kumulierungen von Technikkumulierung eines einzelnen Ziels)]</>. Dieser Effekt kann nicht kumuliert werden."
+        },
+        "3": {
+            "Name": "Über Muskeln und Knochen",
+            "Desc": "Ultimative Fertigkeit <@ba.key>Spielverderber verboten</> verbessert: Der verursachte SDN wird auf das <@ba.vup>1.2</>-Fache des ursprünglichen Werts erhöht, der <#ba.enhance>Verstärkungs</>-Effekt wird auf das <@ba.vup>1.2</>-Fache des ursprünglichen Werts erhöht."
+        },
+        "4": {
+            "Name": "Perfekte geistige Ruhe",
+            "Desc": "Ultimative Fertigkeit <@ba.key>Spielverderber verboten</> verbessert: Ultimative Energiekosten <@ba.vup>-15%</>."
+        },
+        "5": {
+            "Name": "Pinseltupfer in der Pupille",
+            "Desc": "Kombofertigkeit <@ba.key>Vision vor Auge</> verbessert: Länge der Kombofertigkeit-Abklingzeit <@ba.vup>-2</> Sek. und der verursachte SDN steigt auf das <@ba.vup>1.15</>-Fache des ursprünglichen Werts. Wenn ausgelöst, wird die Kombofertigkeit so behandelt, als wäre 1 zusätzliche Kumulierung <#ba.consume>verbraucht</>/<#ba.absorb>absorbiert</> worden."
+        }
+    }
+}
