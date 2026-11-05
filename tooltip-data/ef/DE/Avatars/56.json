@@ -1,0 +1,581 @@
+{
+    "StrId": "chr_0037_minghe",
+    "Name": "Silberfluss",
+    "Rarity": 6,
+    "Element": "Pulse",
+    "Profession": "GUARD",
+    "Conditions": {},
+    "WeaponType": "Sword",
+    "MainAttrId": 42,
+    "SubAttrId": 39,
+    "AttributeNodes": {
+        "chr_0037_minghe_1": {
+            "42": 10.0
+        },
+        "chr_0037_minghe_3": {
+            "42": 15.0
+        },
+        "chr_0037_minghe_5": {
+            "42": 15.0
+        },
+        "chr_0037_minghe_7": {
+            "42": 20.0
+        }
+    },
+    "SkillInfoMap": {
+        "chr_0037_minghe_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_minghe_01",
+            "Element": "Pulse",
+            "Name": "Verschobene Sterne",
+            "Desc": "KOMBOAUSLÖSER: Wenn ein Gegner mit <#ba.noguard>Anfällig</> belegt wird.\nSilberfluss führt einen blitzschnellen Angriff aus mehreren Sequenzen aus, der Gegnern entlang des Angriffspfads <@ba.pulse>Elektrischen SDN</> zufügt. Wenn die letzte Sequenz einen Treffer erzielt, fügt sie zudem <#ba.pulseinflict>Elektrik</> zu. Die Kampffertigkeit von Silberfluss wird dann vorübergehend zu <@ba.key>Blitzsturm</> geändert.",
+            "ConditionData": {},
+            "Type": 2,
+            "Cooldown": 19.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Abklingzeit",
+                    "ConditionId": "",
+                    "Values": [
+                        "19Sek.",
+                        "19Sek.",
+                        "19Sek.",
+                        "19Sek.",
+                        "19Sek.",
+                        "19Sek.",
+                        "19Sek.",
+                        "19Sek.",
+                        "19Sek.",
+                        "19Sek.",
+                        "19Sek.",
+                        "19Sek."
+                    ]
+                },
+                {
+                    "Text": "SDN-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "160%",
+                        "176%",
+                        "192%",
+                        "208%",
+                        "224%",
+                        "240%",
+                        "256%",
+                        "272%",
+                        "288%",
+                        "308%",
+                        "332%",
+                        "360%"
+                    ]
+                },
+                {
+                    "Text": "Taumeln",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Dauer: Kampffertigkeits-Wechsel (Sek.)",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Ultimative-Energie-Erhalt",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0037_minghe_NormalAttack": {
+            "Icon": "skillicon/icon_attack_sword",
+            "Element": "Physical",
+            "Name": "Strahlender Staub",
+            "Desc": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>23</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlagangriffen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen.",
+            "ConditionData": {},
+            "Type": 0,
+            "Cooldown": 0.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "STD-ANG-SEQ-1-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "22%",
+                        "24%",
+                        "27%",
+                        "29%",
+                        "31%",
+                        "33%",
+                        "36%",
+                        "38%",
+                        "40%",
+                        "43%",
+                        "46%",
+                        "50%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-2-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "24%",
+                        "27%",
+                        "29%",
+                        "32%",
+                        "34%",
+                        "37%",
+                        "39%",
+                        "42%",
+                        "44%",
+                        "47%",
+                        "51%",
+                        "55%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-3-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "45%",
+                        "49%",
+                        "53%",
+                        "58%",
+                        "62%",
+                        "67%",
+                        "71%",
+                        "76%",
+                        "80%",
+                        "86%",
+                        "92%",
+                        "100%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-4-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "62%",
+                        "68%",
+                        "75%",
+                        "81%",
+                        "87%",
+                        "93%",
+                        "100%",
+                        "106%",
+                        "112%",
+                        "120%",
+                        "129%",
+                        "140%"
+                    ]
+                },
+                {
+                    "Text": "STD-ANG-SEQ-5-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "60%",
+                        "66%",
+                        "72%",
+                        "78%",
+                        "84%",
+                        "90%",
+                        "96%",
+                        "102%",
+                        "108%",
+                        "116%",
+                        "125%",
+                        "135%"
+                    ]
+                },
+                {
+                    "Text": "Wuchtschlag-ANG-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Sturz-ANG-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "chr_0037_minghe_NormalSkill": {
+            "Icon": "skillicon/icon_skill_minghe_01",
+            "Element": "Pulse",
+            "Name": "Gebändigte Dunkelheit",
+            "Desc": "Silberfluss schwingt seine Lanze, fügt Gegnern in der Nähe <@ba.pd>Physischen SDN</> zu und belegt Ziele vor ihm mit <#ba.airborne>Anheben</>.\nNachdem Silberfluss seine Kombofertigkeit eingesetzt hat, wird seine Kampffertigkeit vorübergehend zu <@ba.key>Blitzsturm</> geändert.\n<@ba.key>Blitzsturm</>: Silberfluss besteigt seinen Galopper Nuli, springt in die Luft, lädt kurz auf und stürmt dann auf das Ziel zu, um es mit <#ba.conduct>Elektrifizierung</> zu belegen und Gegnern in einem großen Bereich vor ihm <@ba.pulse>Elektrischen SDN</> zuzufügen. Wenn ein Ziel <#ba.conduct>Elektrifiziert</> wird, das bereits mit <#ba.pulseinflict>Elektrik</> belegt ist, werden alle <#ba.pulseinflict>Elektrik</>-Kumulierungen des Ziels <#ba.consume>verbraucht</>. Silberfluss erhält pro verbrauchter Kumulierung <#ba.statuslevel>Zustandslevel +1</> <#ba.conduct>Elektrifizierung</>. Nachdem Silberfluss die <#ba.pulseinflict>Elektrik</>-Kumulierungen des Ziels <#ba.consume>verbraucht</> hat, verursacht er außerdem 1 Kumulierung <#ba.noguard>Anfälligkeit</>.",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "FP-Kosten",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "Standard-SDN-Multiplikator",
+                    "ConditionId": "",
+                    "Values": [
+                        "156%",
+                        "171%",
+                        "187%",
+                        "202%",
+                        "218%",
+                        "233%",
+                        "249%",
+                        "264%",
+                        "280%",
+                        "299%",
+                        "323%",
+                        "350%"
+                    ]
+                },
+                {
+                    "Text": "Standard-Taumeln",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "SDN-Multiplikator bei Blitzsturm",
+                    "ConditionId": "",
+                    "Values": [
+                        "311%",
+                        "342%",
+                        "373%",
+                        "404%",
+                        "436%",
+                        "467%",
+                        "498%",
+                        "529%",
+                        "560%",
+                        "599%",
+                        "646%",
+                        "700%"
+                    ]
+                },
+                {
+                    "Text": "Blitzsturm-Taumeln",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "chr_0037_minghe_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_minghe_01",
+            "Element": "Pulse",
+            "Name": "Gespaltener Himmel",
+            "Desc": "Silberfluss besteigt Nuli und stürmt mit seiner Lanze nach vorn. Dabei fügt er Zielen vor sich fortwährend <@ba.pulse>Elektrischen SDN</> zu, spießt schwache Gegner vor ihm auf und nimmt sie während seines ganzen Ansturms mit. Sobald der Ansturm endet, springt Silberfluss in die Luft, stürzt hinab und entfesselt am Boden eine Reinigende Spaltung. Der Hieb verursacht <@ba.pulse>Elektrischen SDN</> und fügt 1 Kumulierung <#ba.pulseinflict>Elektrik</> zu. Anschließend sticht Silberfluss seine Lanze in den Boden. Dabei belegt er Gegner in einem großen Bereich mit <#ba.crush>Zertrümmern</> und fügt ihnen <@ba.pulse>Elektrischen SDN</> zu.\n<@ba.info>Falls Silberfluss während seiner Ultimativen Fertigkeit auf einen Gegner zustürmt, der nicht schwach ist (und deshalb nicht aufgespießt und gestoßen werden kann), endet sein Ansturm vorzeitig.</>",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 15.0,
+            "CostType": "UltimateSp",
+            "CostValue": 80.0,
+            "Params": [
+                {
+                    "Text": "Ultimative Energiekosten",
+                    "ConditionId": "",
+                    "Values": [
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0,
+                        80.0
+                    ]
+                },
+                {
+                    "Text": "Abklingzeit",
+                    "ConditionId": "",
+                    "Values": [
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek.",
+                        "15Sek."
+                    ]
+                },
+                {
+                    "Text": "SDN-Multiplikator bei Ansturm",
+                    "ConditionId": "",
+                    "Values": [
+                        "78%",
+                        "86%",
+                        "93%",
+                        "101%",
+                        "109%",
+                        "117%",
+                        "124%",
+                        "132%",
+                        "140%",
+                        "150%",
+                        "161%",
+                        "175%"
+                    ]
+                },
+                {
+                    "Text": "SDN-Multiplikator bei Reinigende Spaltung",
+                    "ConditionId": "",
+                    "Values": [
+                        "222%",
+                        "244%",
+                        "267%",
+                        "289%",
+                        "311%",
+                        "333%",
+                        "356%",
+                        "378%",
+                        "400%",
+                        "428%",
+                        "461%",
+                        "500%"
+                    ]
+                },
+                {
+                    "Text": "SDN-Multiplikator bei Durchbohren",
+                    "ConditionId": "",
+                    "Values": [
+                        "333%",
+                        "367%",
+                        "400%",
+                        "433%",
+                        "467%",
+                        "500%",
+                        "533%",
+                        "567%",
+                        "600%",
+                        "642%",
+                        "692%",
+                        "750%"
+                    ]
+                },
+                {
+                    "Text": "Taumeln",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0037_minghe_passive_skill_0_1": {
+            "Icon": "icon_talent_minghe_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Gipfel der Elektromantie",
+            "Desc": "Wenn Silberfluss ein Ziel mit <#ba.conduct>Elektrifizierung</> belegt, erhöht diese <#ba.conduct>Elektrifizierung</> während ihrer Wirkungsdauer außerdem alle Arten von erlittenem SDN für das Ziel. Weiterhin belegt er das Ziel mit Kumulierungen von <@ba.key>Trennen</>. Die Anzahl dieser Kumulierungen entspricht dem <#ba.statuslevel>Zustandslevel</> der <#ba.conduct>Elektrifizierung</> (max. 12). <@ba.key>Trennen</> bleibt 60 Sek. lang aktiv.\nWird einem Ziel mit <@ba.key>Trennen</> <#ba.crush>Zertrümmern</>-SDN zugefügt, wird der zugefügte <#ba.crush>Zertrümmern-SDN</> auf das <@ba.vup>1.2</>-Fache des ursprünglichen Werts erhöht und alle Kumulierungen <@ba.key>Trennen</> explodieren. Die Explosion fügt dem Ziel <@ba.pulse>Elektrischen SDN</> in Höhe von <@ba.vup>[Anzahl der Trennen-Kumulierungen × 220% ANG]</> zu. Andere Gegner in der Nähe des Ziels erleiden 40% dieses SDNs.\n<@ba.info>Wird der SDN der Trennen-Explosion einem anderen Gegner zugefügt, der ebenfalls mit Trennen belegt ist, explodieren auch alle Trennen-Kumulierungen dieses Gegners.</>",
+            "Type": 4
+        },
+        "chr_0037_minghe_passive_skill_0_2": {
+            "Icon": "icon_talent_minghe_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Gipfel der Elektromantie",
+            "Desc": "Wenn Silberfluss ein Ziel mit <#ba.conduct>Elektrifizierung</> belegt, erhöht diese <#ba.conduct>Elektrifizierung</> während ihrer Wirkungsdauer außerdem alle Arten von erlittenem SDN für das Ziel. Weiterhin belegt er das Ziel mit Kumulierungen von <@ba.key>Trennen</>. Die Anzahl dieser Kumulierungen entspricht dem <#ba.statuslevel>Zustandslevel</> der <#ba.conduct>Elektrifizierung</> (max. 12). <@ba.key>Trennen</> bleibt 60 Sek. lang aktiv.\nWird einem Ziel mit <@ba.key>Trennen</> <#ba.crush>Zertrümmern</>-SDN zugefügt, wird der zugefügte <#ba.crush>Zertrümmern-SDN</> auf das <@ba.vup>1.2</>-Fache des ursprünglichen Werts erhöht und alle Kumulierungen <@ba.key>Trennen</> explodieren. Die Explosion fügt dem Ziel <@ba.pulse>Elektrischen SDN</> in Höhe von <@ba.vup>[Anzahl der Trennen-Kumulierungen × 330% ANG]</> zu. Andere Gegner in der Nähe des Ziels erleiden 40% dieses SDNs.\n<@ba.info>Wird der SDN der Trennen-Explosion einem anderen Gegner zugefügt, der ebenfalls mit Trennen belegt ist, explodieren auch alle Trennen-Kumulierungen dieses Gegners.</>",
+            "Type": 4
+        },
+        "chr_0037_minghe_passive_skill_1_1": {
+            "Icon": "icon_talent_minghe_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Übersprudelnde Stromquelle",
+            "Desc": "Kampffertigkeit <@ba.key>Blitzsturm</> verbessert: Das gesamte Team erhält Technik-Intensität <@ba.vup>+30</> für 20 Sek.\nFür jeden Punkt Technik-Intensität, den Silberfluss besitzt, steigt der Explosions-SDN von <@ba.key>Trennen</> um weitere <@ba.vup>0.4%</>.",
+            "Type": 4
+        },
+        "chr_0037_minghe_passive_skill_1_2": {
+            "Icon": "icon_talent_minghe_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Übersprudelnde Stromquelle",
+            "Desc": "Kampffertigkeit <@ba.key>Blitzsturm</> verbessert: Das gesamte Team erhält Technik-Intensität <@ba.vup>+45</> für 20 Sek.\nFür jeden Punkt Technik-Intensität, den Silberfluss besitzt, steigt der Explosions-SDN von <@ba.key>Trennen</> um weitere <@ba.vup>0.6%</>.",
+            "Type": 4
+        },
+        "fac_chr_0037_minghe_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Axiom des Kampfes β",
+            "Desc": "Herstellungskabine zuweisen, um Operator-EP-Materialproduktionseffizienz um +20 % zu erhöhen.",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0037_minghe_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Axiom des Kampfes γ",
+            "Desc": "Herstellungskabine zuweisen, um Operator-EP-Materialproduktionseffizienz um +30 % zu erhöhen.",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0037_minghe_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
+            "Name": "Werkzeuge des Schwungs β",
+            "Desc": "Der Herstellungskabine zuweisen, um Stimmungsverlust aller Operatoren in der Kabine um 14 % zu verlangsamen.",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0037_minghe_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
+            "Name": "Werkzeuge des Schwungs γ",
+            "Desc": "Der Herstellungskabine zuweisen, um Stimmungsverlust aller Operatoren in der Kabine um 18 % zu verlangsamen.",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        }
+    },
+    "Potentials": {
+        "1": {
+            "Name": "Wildheit des Sturms",
+            "Desc": "Talent <@ba.key>Gipfel der Elektromantie</> verbessert: Wird einem Ziel mit <@ba.key>Trennen</> <#ba.crush>Zertrümmern</> zugefügt, wird der durch dieses <#ba.crush>Zertrümmern</> verursachte SDN auf das <@ba.vup>1.4</>-Fache des ursprünglichen Werts erhöht. Der Anteil des SDNs der <@ba.key>Trennen</>-Explosion, den andere Gegner in der Nähe des Ziels erleiden, steigt auf <@ba.vup>50%</>."
+        },
+        "2": {
+            "Name": "Elektrifizierter Frühling",
+            "Desc": "Wille <@ba.vup>+20</>, Technik-Intensität <@ba.vup>+16</>."
+        },
+        "3": {
+            "Name": "Sturmblitz",
+            "Desc": "Kampffertigkeit <@ba.key>Blitzsturm</> verbessert: Für jede <#ba.consume>verbrauchte</> Kumulierung <#ba.pulseonchar>Elektrik</> erhält Silberfluss für <@ba.vup>25</> Sek. <@ba.pulse>Verursachter Elektrischer SDN</> <@ba.vup>+6%</>. Dieser Effekt kann bis zu <@ba.vup>6</>-mal kumuliert werden. Die Dauer der einzelnen Kumulierungen wird separat gezählt."
+        },
+        "4": {
+            "Name": "Leuchtender Fluss der Sterne",
+            "Desc": "Ultimative Fertigkeit <@ba.key>Gespaltener Himmel</> verbessert: Ultimative Energiekosten <@ba.vup>-15%</>."
+        },
+        "5": {
+            "Name": "Einladung der Himmelslichter",
+            "Desc": "Talent <@ba.key>Übersprudelnde Stromquelle</> verbessert: Beim Wirken der Kampffertigkeit <@ba.key>Blitzsturm</> erhält das gesamte Team zusätzlich Technik-Intensität <@ba.vup>+15</>.\nDer Bonus-SDN der Explosion von <@ba.key>Trennen</> pro Punkt Technik-Intensität von Silberfluss wird auf das <@ba.vup>1.2</>-Fache des Ursprungswertes erhöht."
+        }
+    }
+}
