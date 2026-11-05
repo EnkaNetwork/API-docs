@@ -1,6 +1,6 @@
 # Enka.Network API - Zenless Zone Zero 
 
-## Table of Content
+## Table of Contents
 
 - [Important Notes](#important-notes)
 - [Data Structure](#data-structure)
@@ -91,7 +91,7 @@ Note: If the agent has unlocked mindscape 3, increase all skill levels by 2. If 
 
 #### Weapon
 
-Check [Formulas](#formulas) to see how to get actual values from base values
+Check [Formulas](#formulas) to see how to calculate actual values from base values.
 For more info, refer to [store/zzz/weapons.json](https://raw.githubusercontent.com/EnkaNetwork/API-docs/refs/heads/master/store/zzz/weapons.json)
 
 | Name | Description |
@@ -135,8 +135,8 @@ Check [Formulas](#formulas) to see how to get actual values from base values
 | Name | Description |
 | :--- | :---------- | 
 | PropertyValue | Property Base Value |
-| PropertyId | Property ID, check the [definitions](#property-id) for IDs |
-| PropertyLevel | Amount of rolls, only matters if substat |
+| PropertyId | Property ID; check the [definitions](#property-id) for IDs |
+| PropertyLevel | Number of rolls, only matters if its a substat |
 
 ---
 
@@ -238,7 +238,7 @@ To calculate the base stats of an Agent, you need to use
 
 #### W-Engine  
 
-To work with W-Engine stats, you need to use:  
+To work with W-Engine stats, you need to use the following:  
   \- [WeaponLevelTemplateTb.json](https://git.mero.moe/dimbreath/ZenlessData/src/branch/master/FileCfg/WeaponLevelTemplateTb.json)  
   \- [WeaponStarTemplateTb.json](https://git.mero.moe/dimbreath/ZenlessData/src/branch/master/FileCfg/WeaponStarTemplateTb.json)  
 
@@ -258,7 +258,7 @@ To work with W-Engine stats, you need to use:
 #### Drive Disc  
 
 To work with Drive Disc stats, you need to use [EquipmentLevelTemplateTb.json](https://git.mero.moe/dimbreath/ZenlessData/src/branch/master/FileCfg/EquipmentLevelTemplateTb.json)  
-This file determines the Drive Disc value based on its level and rarity.  
+This file determines the Drive Disc's value based on its level and rarity.  
 
 - **Main Stat:**  
   `Result = MainStat.PropertyValue * (1 + EquipmentLevel.Field_XXX / 10000)`  
@@ -298,7 +298,7 @@ For any additional info, check the [ZenlessData](https://git.mero.moe/dimbreath/
 
 For the names used in Enka.Network, refer to [store/zzz/locs.json](https://raw.githubusercontent.com/EnkaNetwork/API-docs/refs/heads/master/store/zzz/locs.json)
 
-For any additional info about names, descriptions, etc., check the [TextMap Data](https://git.mero.moe/dimbreath/ZenlessData/src/branch/master/TextMap), only includes languages supported by the game.
+For any additional info about names, descriptions, etc., check the [TextMap Data](https://git.mero.moe/dimbreath/ZenlessData/src/branch/master/TextMap) which only includes languages supported by the game.
 
 ---
 
