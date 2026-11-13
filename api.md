@@ -1,6 +1,7 @@
 # Enka.Network - API
 
 ## Game API Docs
+
 - [Genshin Impact](docs/gi/api.md)
 - [Zenless Zone Zero](docs/zzz/api.md)
 
@@ -34,6 +35,7 @@ If you have difficulties working with the data, hop on the [Discord server](http
 
 The response will contain `playerInfo` and `avatarInfoList`. `playerInfo` is the basic data about the game account. If `avatarInfoList` is missing, that means the Showcase of this account is either closed or not populated with characters.
 
+For some Genshin Impact players, MHY returns their character showcase but not their profile. If the showcase has characters, the response then has `"profileUnavailable": true`: `avatarInfoList` is populated, and `playerInfo` is replaced with placeholders (nickname `???`, Lumine, level 1) for data non-nullability. Without characters, you get a `404` with `profile_unavailable` instead to disambiguate from `not_found` (see below).
 
 #### Get only player info
 
@@ -52,15 +54,24 @@ More info on user accounts below.
 
 #### HTTP response codes
 
-Please make sure to handle these in your app appropriately.
+Please make sure to handle these in your app appropriately. Errors are returned in JSON with a `code` you can switch on, and a `message`:
+
+```json
+{ "code": "not_found", "message": "Player not found." }
 ```
-400 = Wrong UID format
-404 = Player does not exist (MHY server said that)
-424 = Game maintenance / everything is broken after the game update
-429 = Rate-limited (either by my server or by MHY server)
-500 = General server error
-503 = I screwed up massively
-```
+
+| Status | `code`                | Meaning                                                                                                                                                                                           |
+| ------ | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 400    | `wrong_uid`           | Wrong UID format for this game                                                                                                                                                                    |
+| 404    | `not_found`           | Player does not exist (the game server said so)                                                                                                                                                   |
+| 404    | `profile_unavailable` | The player exists, but the game doesn't return their profile, and they have no characters on display. This sometimes happens with frozen accounts and accounts that dropped off the social cache. |
+| 424    | `maintenance`         | Game maintenance / everything is broken after the game update                                                                                                                                     |
+| 429    | `upstream_busy`       | The game servers are rate-limiting us; try again later                                                                                                                                            |
+| 500    | `upstream_fail`       | Fetching the data failed                                                                                                                                                                          |
+| 503    |                       | I screwed up massively                                                                                                                                                                            |
+| 504    | `upstream_timeout`    | The game servers didn't answer in time; try again later                                                                                                                                           |
+
+Rate limiting happens before your request reaches the API, so a 429 may come without a JSON body.
 
 ### Profile endpoints
 
@@ -89,7 +100,6 @@ If a build has a `live: true` field, that means it's not a "saved" build, but si
 As outlined in [UID endpoints](#uid-endpoints), when you make a UID request, you could get an `owner` object. You can construct the URL using these fields in the object:
 
 `https://enka.network/api/profile/{owner.username}/hoyos/{owner.hash}/builds/`
-
 
 ## Wrappers
 
