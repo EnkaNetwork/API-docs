@@ -1,6 +1,6 @@
 # Enka.Network - API documentation
 
-Enka.Network is a service that allows to fetch (full) player data using an easy web API. The data is fetched from the Character Showcase.
+Enka.Network is a service that allows users to fetch (full) player data using an easy web API. The data is fetched from the Character Showcase.
 
 The responses will have the original data structure of the showcase, with some additional fields to provide more data or context.
 
