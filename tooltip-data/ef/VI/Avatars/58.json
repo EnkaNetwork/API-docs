@@ -1,0 +1,679 @@
+{
+    "StrId": "chr_0040_sweetpie",
+    "Name": "Kay",
+    "Rarity": 6,
+    "Element": "Natural",
+    "Profession": "VANGUARD",
+    "Conditions": {},
+    "WeaponType": "Lance",
+    "MainAttrId": 39,
+    "SubAttrId": 40,
+    "AttributeNodes": {
+        "chr_0040_sweetpie_1": {
+            "39": 10.0
+        },
+        "chr_0040_sweetpie_3": {
+            "39": 15.0
+        },
+        "chr_0040_sweetpie_5": {
+            "39": 15.0
+        },
+        "chr_0040_sweetpie_7": {
+            "39": 20.0
+        }
+    },
+    "SkillInfoMap": {
+        "chr_0040_sweetpie_ComboSkill": {
+            "Icon": "skillicon/icon_combo_skill_sweetpie_01",
+            "Element": "Natural",
+            "Name": "\"Cú Đập Siêu Nhanh\"",
+            "Desc": "KÍCH HOẠT LIÊN HOÀN: Khi Kay có ≥ 1 <@ba.key>Vũ Khí</> và kẻ địch bị <#ba.naturalinflict>Nhiễm Tự Nhiên</> hoặc chịu ST <#ba.spellburst>Bùng Nổ Thuật Pháp</>.\nKay ném một <@ba.key>Vũ Khí</> vào mục tiêu để gây <@ba.natur>ST Tự Nhiên</>. Khi trúng kẻ địch, Kay hồi một lượng ĐKN và đồng thời cưỡng chế kích hoạt <#ba.naturalburst>Bùng Nổ Tự Nhiên</>. Sau đó, <@ba.key>Vũ Khí</> sẽ rơi xuống một vị trí ngẫu nhiên trên chiến trường. Kay <@ba.key>thu hồi</> <@ba.key>Vũ Khí</> đó khi cán viên đang điều khiển chạm vào.",
+            "ConditionData": {},
+            "Type": 2,
+            "Cooldown": 7.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Thời gian hồi chiêu",
+                    "ConditionId": "",
+                    "Values": [
+                        "7giây",
+                        "7giây",
+                        "7giây",
+                        "7giây",
+                        "7giây",
+                        "7giây",
+                        "7giây",
+                        "7giây",
+                        "7giây",
+                        "7giây",
+                        "7giây",
+                        "7giây"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số ST",
+                    "ConditionId": "",
+                    "Values": [
+                        "31%",
+                        "34%",
+                        "37%",
+                        "40%",
+                        "44%",
+                        "47%",
+                        "50%",
+                        "53%",
+                        "56%",
+                        "60%",
+                        "65%",
+                        "70%"
+                    ]
+                },
+                {
+                    "Text": "Suy Sụp",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "Tăng Năng Lượng Tuyệt Kỹ",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                },
+                {
+                    "Text": "Hồi Điểm KN",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "11",
+                        "11",
+                        "11",
+                        "12"
+                    ]
+                }
+            ]
+        },
+        "chr_0040_sweetpie_NormalAttack": {
+            "Icon": "skillicon/icon_attack_lance",
+            "Element": "Physical",
+            "Name": "Hoang Dại Đập Loạn",
+            "Desc": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.pd>ST Vật Lý</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>17</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi một phần Điểm KN.",
+            "ConditionData": {},
+            "Type": 0,
+            "Cooldown": 0.0,
+            "CostType": "UltimateSp",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Hệ Số Trình Tự Đòn Đánh Thường 1",
+                    "ConditionId": "",
+                    "Values": [
+                        "21%",
+                        "23%",
+                        "26%",
+                        "28%",
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "41%",
+                        "44%",
+                        "48%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số Trình Tự Đòn Đánh Thường 2",
+                    "ConditionId": "",
+                    "Values": [
+                        "24%",
+                        "26%",
+                        "28%",
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "40%",
+                        "42%",
+                        "44%",
+                        "48%",
+                        "52%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số Trình Tự Đòn Đánh Thường 3",
+                    "ConditionId": "",
+                    "Values": [
+                        "28%",
+                        "28%",
+                        "32%",
+                        "36%",
+                        "36%",
+                        "40%",
+                        "44%",
+                        "44%",
+                        "48%",
+                        "52%",
+                        "56%",
+                        "60%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số Trình Tự Đòn Đánh Thường 4",
+                    "ConditionId": "",
+                    "Values": [
+                        "42%",
+                        "42%",
+                        "48%",
+                        "54%",
+                        "54%",
+                        "60%",
+                        "66%",
+                        "66%",
+                        "72%",
+                        "78%",
+                        "84%",
+                        "90%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số Trình Tự Đòn Đánh Thường 5",
+                    "ConditionId": "",
+                    "Values": [
+                        "59%",
+                        "65%",
+                        "70%",
+                        "76%",
+                        "82%",
+                        "88%",
+                        "94%",
+                        "100%",
+                        "106%",
+                        "113%",
+                        "122%",
+                        "132%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số Đòn Kết Liễu",
+                    "ConditionId": "",
+                    "Values": [
+                        "400%",
+                        "440%",
+                        "480%",
+                        "520%",
+                        "560%",
+                        "600%",
+                        "640%",
+                        "680%",
+                        "720%",
+                        "770%",
+                        "830%",
+                        "900%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số Đòn Bổ Nhào",
+                    "ConditionId": "",
+                    "Values": [
+                        "80%",
+                        "88%",
+                        "96%",
+                        "104%",
+                        "112%",
+                        "120%",
+                        "128%",
+                        "136%",
+                        "144%",
+                        "154%",
+                        "166%",
+                        "180%"
+                    ]
+                }
+            ]
+        },
+        "chr_0040_sweetpie_NormalSkill": {
+            "Icon": "skillicon/icon_skill_sweetpie_01",
+            "Element": "Natural",
+            "Name": "\"Cú Nện Đau Thiệt Đau\"",
+            "Desc": "Kay nhảy lên không trung và tụ lực trong thời gian ngắn, thu hồi toàn bộ <@ba.key>Vũ Khí</>, sau đó dùng chiếc búa nặng giáng một cú nện cực mạnh xuống đất. Cú nện gây <@ba.natur>ST Tự Nhiên</> (dựa trên số tầng <@ba.key>Ngây Thơ Rực Lửa</>), áp dụng <#ba.naturalinflict>Nhiễm Tự Nhiên</> lên kẻ địch trong khu vực ảnh hưởng và tiêu hao toàn bộ tầng <@ba.key>Ngây Thơ Rực Lửa</>. Nếu Kay tiêu hao 3 tầng <@ba.key>Ngây Thơ Rực Lửa</>, cô cũng sẽ cưỡng chế áp dụng <#ba.burning>Thiêu Đốt</> lên kẻ địch.\n<@ba.info>Nếu tiêu hao > 3 tầng Ngây Thơ Rực Lửa, hiệu ứng sẽ giống như khi tiêu hao 3 tầng.</>",
+            "ConditionData": {},
+            "Type": 1,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 100.0,
+            "Params": [
+                {
+                    "Text": "Điểm KN tiêu hao",
+                    "ConditionId": "",
+                    "Values": [
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "Text": "Hệ Số ST",
+                    "ConditionId": "",
+                    "Values": [
+                        "133%",
+                        "147%",
+                        "160%",
+                        "173%",
+                        "187%",
+                        "200%",
+                        "213%",
+                        "227%",
+                        "240%",
+                        "257%",
+                        "277%",
+                        "300%"
+                    ]
+                },
+                {
+                    "Text": "Suy Sụp",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số ST Cộng Thêm mỗi Ngây Thơ Rực Lửa",
+                    "ConditionId": "",
+                    "Values": [
+                        "44%",
+                        "49%",
+                        "53%",
+                        "58%",
+                        "62%",
+                        "67%",
+                        "71%",
+                        "76%",
+                        "80%",
+                        "86%",
+                        "92%",
+                        "100%"
+                    ]
+                },
+                {
+                    "Text": "Hiệu Lực Thiêu Đốt (giây)",
+                    "ConditionId": "",
+                    "Values": [
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5",
+                        "5"
+                    ]
+                }
+            ]
+        },
+        "chr_0040_sweetpie_UltimateSkill": {
+            "Icon": "skillicon/icon_ultimate_skill_sweetpie_01",
+            "Element": "Natural",
+            "Name": "\"Cây Đập Tổ Hợp Ngọt Ơi Là Ngọt!\"",
+            "Desc": "Kay chắp ghép một cây đập tổ hợp, vung nó nhiều lần rồi ném ra để gây một vụ nổ, gây <@ba.natur>ST Tự Nhiên</> và áp dụng <#ba.naturalinflict>Nhiễm Tự Nhiên</> lên kẻ địch trong khu vực ảnh hưởng, hồi một phần ĐKN, đồng thời để lại nhiều <@ba.key>Món Nhẹ Dã Ngoại</>. Khi cán viên đang điều khiển chạm vào <@ba.key>Món Nhẹ Dã Ngoại</> và nhặt nó lên, Kay sẽ trao Hồi Phục HP cho cán viên đó và hồi một phần ĐKN. Thuộc tính Nhanh Nhẹn giúp tăng lượng Hồi HP.",
+            "ConditionData": {},
+            "Type": 3,
+            "Cooldown": 0.0,
+            "CostType": "Atb",
+            "CostValue": 0.0,
+            "Params": [
+                {
+                    "Text": "Phí Năng Lượng Tuyệt Kỹ",
+                    "ConditionId": "",
+                    "Values": [
+                        150.0,
+                        150.0,
+                        150.0,
+                        150.0,
+                        150.0,
+                        150.0,
+                        150.0,
+                        150.0,
+                        150.0,
+                        150.0,
+                        150.0,
+                        150.0
+                    ]
+                },
+                {
+                    "Text": "Thời gian hồi chiêu",
+                    "ConditionId": "",
+                    "Values": [
+                        "20giây",
+                        "20giây",
+                        "20giây",
+                        "20giây",
+                        "20giây",
+                        "20giây",
+                        "20giây",
+                        "20giây",
+                        "20giây",
+                        "20giây",
+                        "20giây",
+                        "20giây"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số ST Trình Tự 1",
+                    "ConditionId": "",
+                    "Values": [
+                        "71%",
+                        "78%",
+                        "85%",
+                        "92%",
+                        "100%",
+                        "107%",
+                        "114%",
+                        "121%",
+                        "128%",
+                        "137%",
+                        "148%",
+                        "160%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số ST Trình Tự 2",
+                    "ConditionId": "",
+                    "Values": [
+                        "89%",
+                        "98%",
+                        "107%",
+                        "116%",
+                        "124%",
+                        "133%",
+                        "142%",
+                        "151%",
+                        "160%",
+                        "171%",
+                        "184%",
+                        "200%"
+                    ]
+                },
+                {
+                    "Text": "Hệ Số ST Trình Tự 3",
+                    "ConditionId": "",
+                    "Values": [
+                        "107%",
+                        "117%",
+                        "128%",
+                        "139%",
+                        "149%",
+                        "160%",
+                        "171%",
+                        "181%",
+                        "192%",
+                        "205%",
+                        "221%",
+                        "240%"
+                    ]
+                },
+                {
+                    "Text": "Suy Sụp",
+                    "ConditionId": "",
+                    "Values": [
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "Text": "Hồi Điểm KN",
+                    "ConditionId": "",
+                    "Values": [
+                        "24",
+                        "24",
+                        "24",
+                        "24",
+                        "24",
+                        "24",
+                        "24",
+                        "24",
+                        "27",
+                        "27",
+                        "27",
+                        "30"
+                    ]
+                },
+                {
+                    "Text": "Hồi Phục Cơ Bản",
+                    "ConditionId": "",
+                    "Values": [
+                        "180",
+                        "216",
+                        "252",
+                        "288",
+                        "306",
+                        "324",
+                        "342",
+                        "360",
+                        "378",
+                        "387",
+                        "396",
+                        "405"
+                    ]
+                },
+                {
+                    "Text": "Tăng Hồi Phục Theo Nhanh Nhẹn",
+                    "ConditionId": "",
+                    "Values": [
+                        "0.42",
+                        "0.5",
+                        "0.59",
+                        "0.67",
+                        "0.71",
+                        "0.76",
+                        "0.8",
+                        "0.84",
+                        "0.88",
+                        "0.9",
+                        "0.92",
+                        "0.95"
+                    ]
+                },
+                {
+                    "Text": "Hồi Điểm KN mỗi Món Nhẹ Dã Ngoại",
+                    "ConditionId": "",
+                    "Values": [
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10",
+                        "10"
+                    ]
+                },
+                {
+                    "Text": "Điểm KN tiêu hao",
+                    "ConditionId": "",
+                    "Values": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                }
+            ]
+        }
+    },
+    "NodeSkillMap": {
+        "chr_0040_sweetpie_passive_skill_0_1": {
+            "Icon": "icon_talent_sweetpie_01",
+            "Level": 1,
+            "Index": 0,
+            "Name": "Kho Vũ Khí Vô Tận",
+            "Desc": "Kay bắt đầu với 3 <@ba.key>Vũ Khí</>. Khi trận chiến kết thúc, Kay thu hồi toàn bộ <@ba.key>Vũ Khí</> đã ném.\nThu hồi 1 <@ba.key>Vũ Khí</> sẽ giúp Kay nhận 1 tầng <@ba.key>Ngây Thơ Rực Lửa</>.",
+            "Type": 4
+        },
+        "chr_0040_sweetpie_passive_skill_0_2": {
+            "Icon": "icon_talent_sweetpie_01",
+            "Level": 2,
+            "Index": 0,
+            "Name": "Kho Vũ Khí Vô Tận",
+            "Desc": "Kay bắt đầu với 3 <@ba.key>Vũ Khí</>. Khi trận chiến kết thúc, Kay thu hồi toàn bộ <@ba.key>Vũ Khí</> đã ném.\nThu hồi 1 <@ba.key>Vũ Khí</> sẽ giúp Kay nhận 1 tầng <@ba.key>Ngây Thơ Rực Lửa</>, đồng thời toàn đội nhận thêm <#ba.spelldmg>ST Thuật Pháp Gây Ra</> <@ba.vup>+1%</>, riêng <@ba.natur>ST Tự Nhiên Gây Ra</> được tăng thêm <@ba.vup>+1%</>. Hiệu Lực: <@ba.vup>15</> giây. Số tầng tối đa của hiệu ứng này: 3.",
+            "Type": 4
+        },
+        "chr_0040_sweetpie_passive_skill_0_3": {
+            "Icon": "icon_talent_sweetpie_01",
+            "Level": 3,
+            "Index": 0,
+            "Name": "Kho Vũ Khí Vô Tận",
+            "Desc": "Kay bắt đầu với 3 <@ba.key>Vũ Khí</>. Khi trận chiến kết thúc, Kay thu hồi toàn bộ <@ba.key>Vũ Khí</> đã ném.\nThu hồi 1 <@ba.key>Vũ Khí</> sẽ giúp Kay nhận 1 tầng <@ba.key>Ngây Thơ Rực Lửa</>, đồng thời toàn đội nhận thêm <#ba.spelldmg>ST Thuật Pháp Gây Ra</> <@ba.vup>+1.5%</>, riêng <@ba.natur>ST Tự Nhiên Gây Ra</> được tăng thêm <@ba.vup>+1.5%</>. Hiệu Lực: <@ba.vup>15</> giây. Số tầng tối đa của hiệu ứng này: 3.",
+            "Type": 4
+        },
+        "chr_0040_sweetpie_passive_skill_1_1": {
+            "Icon": "icon_talent_sweetpie_02",
+            "Level": 1,
+            "Index": 1,
+            "Name": "Bón Waffle Nào!",
+            "Desc": "Khi kẻ địch rơi vào trạng thái <@ba.poise>Suy Sụp</> hoặc kích hoạt <#ba.poiseknot>Điểm Suy Sụp</>, chúng sẽ rơi ra 1 <@ba.key>Waffle Dã Ngoại</>. Hiệu ứng này chỉ kích hoạt 1 lần mỗi 30 giây.\n<@ba.info>Waffle Dã Ngoại có hiệu ứng tương tự Món Nhẹ Dã Ngoại.</>",
+            "Type": 4
+        },
+        "chr_0040_sweetpie_passive_skill_1_2": {
+            "Icon": "icon_talent_sweetpie_02",
+            "Level": 2,
+            "Index": 1,
+            "Name": "Bón Waffle Nào!",
+            "Desc": "Khi kẻ địch rơi vào trạng thái <@ba.poise>Suy Sụp</> hoặc kích hoạt <#ba.poiseknot>Điểm Suy Sụp</>, chúng sẽ rơi ra 1 <@ba.key>Waffle Dã Ngoại</>. Hiệu ứng này chỉ kích hoạt 1 lần mỗi 20 giây.\n<@ba.info>Waffle Dã Ngoại có hiệu ứng tương tự Món Nhẹ Dã Ngoại.</>",
+            "Type": 4
+        },
+        "fac_chr_0040_sweetpie_0_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Rèn Đồ Hoang Dã Thứ Thiệt β",
+            "Desc": "Khi phân công vào Khoang Sản Xuất, hiệu suất sản xuất nguyên liệu EXP vũ khí +20%",
+            "Level": 1,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0040_sweetpie_0_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_efficiency",
+            "Name": "Rèn Đồ Hoang Dã Thứ Thiệt γ",
+            "Desc": "Khi phân công vào Khoang Sản Xuất, hiệu suất sản xuất nguyên liệu EXP vũ khí +30%",
+            "Level": 2,
+            "Index": 2,
+            "Type": 5
+        },
+        "fac_chr_0040_sweetpie_1_1": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
+            "Name": "Giờ Nghỉ Waffle Mật Ong β",
+            "Desc": "Khi phân công vào Khoang Sản Xuất, làm chậm mức Giảm Tâm Trạng của tất cả cán viên trong đó đi 14%",
+            "Level": 1,
+            "Index": 3,
+            "Type": 5
+        },
+        "fac_chr_0040_sweetpie_1_2": {
+            "Icon": "spaceshipskillicon/facskill_spaceship_manufacture_power_consume",
+            "Name": "Giờ Nghỉ Waffle Mật Ong γ",
+            "Desc": "Khi phân công vào Khoang Sản Xuất, làm chậm mức Giảm Tâm Trạng của tất cả cán viên trong đó đi 18%",
+            "Level": 2,
+            "Index": 3,
+            "Type": 5
+        }
+    },
+    "Potentials": {
+        "1": {
+            "Name": "Hoang Dại Bùng Cháy",
+            "Desc": "Khi vào trận, Kay nhận 1 tầng <@ba.key>Ngây Thơ Rực Lửa</>.\nThiên phú <@ba.key>Kho Vũ Khí Vô Tận</> được cường hóa: Mỗi lần thu hồi <@ba.key>Vũ Khí</> sẽ giúp toàn đội nhận thêm <#ba.spelldmg>ST Thuật Pháp Gây Ra</> <@ba.vup>+2.0%</>, đồng thời <@ba.natur>ST Tự Nhiên Gây Ra</> được tăng thêm <@ba.vup>+2.0%</> và thời gian hiệu lực kéo dài thêm <@ba.vup>+10</> giây."
+        },
+        "2": {
+            "Name": "Lãng Khách Lão Luyện",
+            "Desc": "Sức Mạnh <@ba.vup>+20</>, <@ba.natur>ST Tự Nhiên Gây Ra</> <@ba.vup>+10%</>."
+        },
+        "3": {
+            "Name": "Chuẩn Bị Dã Ngoại",
+            "Desc": "KN chiến đấu <@ba.key>\"Cú Nện Đau Thiệt Đau\"</> được cường hóa: Hệ Số ST cộng thêm từ mỗi tầng <@ba.key>Ngây Thơ Rực Lửa</> tăng lên <@ba.vup>1.2</> lần so với ban đầu. Tuyệt kỹ <@ba.key>\"Cây Đập Tổ Hợp Ngọt Ơi Là Ngọt!\"</> được cường hóa: Hệ Số ST tăng lên <@ba.vup>1.2</> lần so với ban đầu."
+        },
+        "4": {
+            "Name": "\"Cây Đập Tự Làm\"",
+            "Desc": "Tuyệt kỹ <@ba.key>\"Cây Đập Tổ Hợp Ngọt Ơi Là Ngọt!\"</> được cường hóa: Tiêu hao Năng Lượng Tuyệt Kỹ <@ba.vup>-15%</>."
+        },
+        "5": {
+            "Name": "\"Đập Siêu Nhanh Hơn\"",
+            "Desc": "KN liên hoàn <@ba.key>\"Cú Đập Siêu Nhanh\"</> được cường hóa: Thời gian hồi <@ba.vup>-1</> giây. Hệ Số ST tăng lên <@ba.vup>1.2</> lần so với ban đầu. Hồi Điểm KN tăng lên <@ba.vup>1.3</> lần so với ban đầu."
+        }
+    }
+}
